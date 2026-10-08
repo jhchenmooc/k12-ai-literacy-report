@@ -42,6 +42,8 @@ jobs:
         run: node --test research/validate-primary-source-screening.test.js
       - name: Validate sixty-case provisional semantic screening completeness
         run: node --test research/validate-semantic-remaining40.test.js
+      - name: Verify documentary contradiction probes and provenance
+        run: node --test research/validate-documentary-probes.test.js
       - name: Validate issue manifests and claim metadata
         run: node research/validate-publication.js .
   deploy:
