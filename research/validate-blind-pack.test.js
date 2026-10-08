@@ -1,0 +1,10 @@
+"use strict";
+const {test}=require("node:test"),assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
+const {inspect,inspectAdjudications}=require("./validate-blind-pack.js");
+const pack=JSON.parse(fs.readFileSync(path.join(__dirname,"benchmarks/blind-review-candidates-60.json"),"utf8"));
+test("60 unique unlabeled candidates and ten balanced themes",()=>{const r=inspect(pack);assert.equal(r.ok,true);assert.equal(r.count,60);assert.equal(new Set(pack.cases.map(c=>c.case_id)).size,60)});
+test("cannot distribute draft as verified blind test",()=>{const r=inspect(pack,true);assert.equal(r.ok,false);assert.ok(r.errors.some(e=>e.includes("not reviewed")))});
+test("answer keys cannot appear in reviewer-facing cases",()=>{const p=structuredClone(pack);p.cases[0].expected="unsupported";assert.equal(inspect(p).ok,false)});
+test("missing source identifier blocks pack",()=>{const p=structuredClone(pack);p.cases[0].source_url="";assert.equal(inspect(p).ok,false)});
+test("duplicate candidate ID blocks pack",()=>{const p=structuredClone(pack);p.cases[1].case_id=p.cases[0].case_id;assert.equal(inspect(p).ok,false)});
+test("adjudication requires two distinct documented reviewers per case",()=>{const bad=[{case_id:pack.cases[0].case_id,verdict:"unsupported",reviewer_id:"r1",reviewed_at:"2026-10-08",source_locator:"original paragraph",reasoning:"limited"}];assert.equal(inspectAdjudications(pack,bad).ok,false)});

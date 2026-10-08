@@ -80,3 +80,9 @@ GitHub Pages：Settings → Pages → Deploy from a branch → `main` / `(root)`
 - [30 筆合成誤讀測試與初步結果](research/benchmarks/semantic-evaluation-v0.1.md)：涵蓋 5 個新聞與 5 個研究主題；20 個暫定不支持的敘述中，關鍵字規則漏警示 2 個（10%）；這是合成案例的漏警示比例，不是實際週報錯誤率。
 - [案例 JSON](research/benchmarks/semantic-cases-2026-10.json)、[警示評估程式](research/benchmark-semantic.js)、[回歸測試](research/benchmark-semantic.test.js)。所有案例均標示暫定編輯標籤，尚非真人獨立審閱的黃金標準。
 - 語意警示工具一律輸出 `review`，不自動放行新聞或論文。真正的語意審核仍須原始文章全文與不同真人審閱者確認。
+
+## 60 題新聞／論文語意盲測：審閱準備中
+
+- [未標記答案的 60 題候選資料](research/benchmarks/blind-review-candidates-60.json)、[兩位真人獨立審查／仲裁規範](research/benchmarks/blind-review-protocol-v0.1.md)、[題庫完整性與準備狀態驗證](research/validate-blind-pack.js)。
+- 目前 60 題尚未填妥逐題原始摘錄及定位，屬 **PREPARATION_ONLY_NOT_READY_FOR_BLIND_JUDGING**；CI 只會確認題庫完整，不認證原始研究或允許直接評分。
+- 待各題從原始來源補齊證據、再由兩名不同真人獨立判讀與第三人仲裁後，才能建立正式黃金標準及評估真實語意漏判率。答案與專家個別標註在完成盲測前不得公布在公開 GitHub。
