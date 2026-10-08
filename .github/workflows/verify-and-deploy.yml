@@ -22,6 +22,10 @@ jobs:
           node-version: '22'
       - name: Run publication validation regression tests
         run: node --test research/validate-publication.test.js
+      - name: Test semantic warning benchmark (diagnostic only)
+        run: |
+          node --test research/benchmark-semantic.test.js
+          node research/benchmark-semantic.js research/benchmarks/semantic-cases-2026-10.json
       - name: Validate issue manifests and claim metadata
         run: node research/validate-publication.js .
   deploy:
