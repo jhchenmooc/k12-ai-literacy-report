@@ -86,3 +86,7 @@ GitHub Pages：Settings → Pages → Deploy from a branch → `main` / `(root)`
 - [未標記答案的 60 題候選資料](research/benchmarks/blind-review-candidates-60.json)、[兩位真人獨立審查／仲裁規範](research/benchmarks/blind-review-protocol-v0.1.md)、[題庫完整性與準備狀態驗證](research/validate-blind-pack.js)。
 - 目前 60 題尚未填妥逐題原始摘錄及定位，屬 **PREPARATION_ONLY_NOT_READY_FOR_BLIND_JUDGING**；CI 只會確認題庫完整，不認證原始研究或允許直接評分。
 - 待各題從原始來源補齊證據、再由兩名不同真人獨立判讀與第三人仲裁後，才能建立正式黃金標準及評估真實語意漏判率。答案與專家個別標註在完成盲測前不得公布在公開 GitHub。
+
+## 低人力發布：低／中風險自動查核、高風險暫緩
+
+參閱 [低人力審查與發布門檻](research/low-human-review-policy.md)。低風險書目消息依原始來源核對後可發布；中風險需要限定敘述、原文摘錄與兩輪隔離式 AI 交叉查核紀錄；**高風險結論無法以 AI 角色模擬自行核准**，預設保留在候選池。60 題盲測資料維持研究用途，不要求日常編輯逐篇取得兩位真人標註。
