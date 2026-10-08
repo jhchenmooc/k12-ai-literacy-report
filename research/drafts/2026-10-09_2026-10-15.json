@@ -105,6 +105,51 @@
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
       "screening_note": "Outside 10/09–10/15 publication-date window and marginal K–12 applicability. Deprioritized; do not spend additional verification effort absent a specific editorial need."
+    },
+    {
+      "candidate_id": "W2026-10-09-A05",
+      "category": "research",
+      "source_url": "https://www.mdpi.com/2076-3417/16/19/9907",
+      "source_title": "Teachers’ Perceptions of Generative Artificial Intelligence in Early Childhood and Primary Education: Barriers, Ethical Concerns, and Perceived Impacts",
+      "source_organization": "Applied Sciences (MDPI)",
+      "source_publication_date": "2026-10-07",
+      "source_locator": "Abstract; 2.2 Participants",
+      "original_excerpt": "An interpretive qualitative design was adopted using an open-ended questionnaire completed by 183 teachers from 15 Spanish autonomous communities.",
+      "source_checked": false,
+      "claim_text": "西班牙183名幼教與國小教師的開放式問卷質性研究探討生成式AI融入教學時的培訓障礙、倫理與感知影響；屬教師觀點研究，不能推論學生學習成效已被因果驗證。",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "10月7日已發表，較本期起始日早2天，僅作延伸閱讀；非10/9–10/15新刊文獻。便利抽樣、教師感受與實際學生能力不同，全文方法與編碼品質仍需按重要性核對。",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "screening_note": "High K–12 relevance; publisher-indexed abstract confirms 183 teachers across 15 Spanish regions and qualitative open-ended questionnaire, original date October 7. Background carry-over only. No student learning causal effect."
+    },
+    {
+      "candidate_id": "W2026-10-09-A06",
+      "category": "news_policy",
+      "source_url": "https://www.oise.utoronto.ca/about/events/10-09-26-online-panel-equity-diversity-context-critical-ai-literacy",
+      "source_title": "Online panel: Equity & Diversity in the Context of Critical AI Literacy",
+      "source_organization": "Ontario Institute for Studies in Education, University of Toronto",
+      "source_publication_date": "unknown",
+      "event_date": "2026-10-09",
+      "source_locator": "Official OISE event detail / Date and description",
+      "original_excerpt": "This panel explores how Critical AI Literacy can centre Indigenous and equity-deserving knowledges while moving educators beyond critique toward refusal, resistance, agency, and action.",
+      "source_checked": false,
+      "claim_text": "多倫多大學教育研究所公告於10月9日中午12至下午2時舉行批判AI素養與平等多元議題線上座談，討論原住民族及其他需重視公平性的知識觀點；這是預定活動，不代表研究或政策已獲成效驗證。",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "為加拿大教育研究機構的公開座談，非特定K–12學生介入研究或官方強制課程政策；首次公告日未確認。",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "screening_note": "Official institution event page confirms Oct 9, 12–2 pm local time online and topic, but original posting date unknown. Keep as this-week event, not this-week new news."
     }
   ],
   "item_template": {
@@ -128,15 +173,16 @@
     "ai_crosscheck_record": ""
   },
   "screening_summary": {
-    "candidate_count": 4,
+    "candidate_count": 6,
     "ready_to_publish": 0,
     "verified_for_publication": 0,
     "screened_on": "2026-10-09",
     "source_types": "institutional event announcements or government training calendar",
     "warnings": [
-      "Penn State's Oct 9 activity time/audience verified on official event page; original announcement date unknown.",
-      "Hong Kong calendar search snippets are not a substitute for stable detailed records.",
-      "None are verified news publications or student-outcome studies; all remain hold."
+      "Do not confuse event dates with first publication dates.",
+      "Spain early-childhood/primary teacher perceptions paper is published Oct 7: carry-over background only, not new this-week research.",
+      "University of Toronto OISE Oct 9 is a scheduled panel rather than completed research.",
+      "All entries remain hold; October 9–15 reporting window is still in progress."
     ]
   }
 }
