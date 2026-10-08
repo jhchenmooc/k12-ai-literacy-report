@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "period": {
+    "start": "2026-10-09",
+    "end": "2026-10-15"
+  },
+  "status": "draft_pending_source_verification",
+  "notice": "Candidate worksheet only. NOT published, reviewed, source-verified, or registered in publication/issues.json.",
+  "editorial_rules": {
+    "target_items": "3–5, fewer when evidence is insufficient",
+    "high_risk": "hold",
+    "source_required": true
+  },
+  "items": [],
+  "item_template": {
+    "candidate_id": "",
+    "category": "news_policy_or_research",
+    "source_url": "",
+    "source_title": "",
+    "source_publication_date": "",
+    "source_locator": "",
+    "original_excerpt": "",
+    "source_checked": false,
+    "claim_text": "",
+    "claim_class": "bibliographic_or_descriptive_or_high_impact",
+    "risk_tier": "low_or_medium_or_high",
+    "scope_limitation": "",
+    "translation_reviewed": false,
+    "conflict_unresolved": null,
+    "decision": "hold",
+    "ai_crosscheck_status": "not_started",
+    "ai_crosscheck_passes": 0,
+    "ai_crosscheck_record": ""
+  }
+}
