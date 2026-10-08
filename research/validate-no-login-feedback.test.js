@@ -22,7 +22,7 @@ test("no-login endpoint uses HTTPS allowlist and blocks empty/unknown services",
  assert.match(page,/docs\\.google\\.com/);
  assert.match(page,/forms\\.gle/);
  assert.match(page,/!allowed/);
- assert.match(page,/!\^https:/);
+ assert.ok(page.includes("!/^https:"));
  assert.match(page,/noopener noreferrer/);
  assert.ok(!page.includes("localStorage"));
  assert.ok(!page.includes("document.cookie"));
