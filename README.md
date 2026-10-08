@@ -50,3 +50,10 @@ GitHub Pages：Settings → Pages → Deploy from a branch → `main` / `(root)`
 - [新聞／政策原始來源與解讀查核 SOP（N1–N8）](research/news-policy-verification.md)：查核公布、更新、實施日期及效力，逐項追溯、檢查例外和原文翻譯，避免誤將評論、新聞稿或試辦當成法律。
 - [學術研究證據查核 SOP（G1–G6）](research/evidence-safety-gates.md)：核實樣本、方法、結果、因果與跨學段外推。
 - 同一來源同時包含研究與政策主張時兩套均須通過適用關卡。未取得原文證據的解讀保留在候選池，不以多次 AI 角色模擬代替獨立確認。
+
+## 經多專業檢視的雙軌查核及機器測試
+
+- [新聞政策查核規範 v1.1](research/news-policy-verification.md)：以事件與個別主張為單位；確認政策效力、日期、適用範圍與獨立核查要求。
+- [研究證據查核規範 v1.1](research/evidence-safety-gates.md)：學段、結果變項、因果限制與重要數字原文定位。
+- [發布檢核欄位與合成情境](research/publication-check-spec.md)；[結構驗證程式](research/validate-claims.js)：測試可刊／暫緩邏輯，並非網頁原文與新聞真實性驗證。
+- 執行方式：`node research/validate-claims.js claims.json`。實際公開前必須提供真實查核紀錄；未核實內容應暫緩，不能僅以程式回傳 allow=true 當出版許可。
