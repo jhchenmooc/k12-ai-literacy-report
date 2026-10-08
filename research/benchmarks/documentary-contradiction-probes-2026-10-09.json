@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "created": "2026-10-09",
+  "type": "TARGETED_FACT_CONTRADICTION_REGRESSION_NOT_INDEPENDENT_GOLD",
+  "limitations": [
+    "Two publisher search-index excerpts only; original full articles not independently downloaded",
+    "Cases authored after viewing excerpts; not independent hold-out or unbiased model benchmark",
+    "Expected findings encode local specific source facts and are not general semantic accuracy evidence"
+  ],
+  "sources": [
+    {
+      "source_id": "STEM_RCT_METHODS",
+      "url": "https://link.springer.com/article/10.1186/s40594-026-00652-9",
+      "source_kind": "open_access_journal",
+      "locator": "Methods / Research design and participants",
+      "accessible_as": "publisher_search_index_methods_excerpt",
+      "retrieved_fact": {
+        "initial_recruited": 116,
+        "completed_analysed": 95,
+        "control": 45,
+        "experimental": 50,
+        "population": "university STEM sophomores",
+        "task": "electromagnetism revision"
+      },
+      "source_excerpt": "initially recruited 116 sophomore STEM students",
+      "full_text_downloaded": false,
+      "sha256_archived": false
+    },
+    {
+      "source_id": "UNESCO_DESIGN_TRAINING",
+      "url": "https://www.unesco.org/en/articles/start-defining-problem-not-algorithm-designing-ai-education",
+      "source_kind": "organization_news",
+      "locator": "Starting with the problem, not the technology",
+      "accessible_as": "publisher_search_index_full_article_text_in_result",
+      "retrieved_fact": {
+        "participants_from_more_than_countries": 20,
+        "event_type": "hands-on design training",
+        "legal_mandate": false,
+        "rct_learning_outcome_reported": false
+      },
+      "source_excerpt": "gathering participants from over 20 countries",
+      "full_text_downloaded": false,
+      "sha256_archived": false
+    }
+  ],
+  "cases": [
+    {
+      "id": "PROBE-RCT-001",
+      "source_id": "STEM_RCT_METHODS",
+      "claim": "研究最初招募116名學生。",
+      "expected_document_relation": "supported_on_excerpt",
+      "basis": "Methods says initially recruited 116."
+    },
+    {
+      "id": "PROBE-RCT-002",
+      "source_id": "STEM_RCT_METHODS",
+      "claim": "研究最初招募116人，全部都完成並納入分析。",
+      "expected_document_relation": "contradicted_by_excerpt",
+      "basis": "Methods says only 95 completed and provided complete data."
+    },
+    {
+      "id": "PROBE-RCT-003",
+      "source_id": "STEM_RCT_METHODS",
+      "claim": "該試驗最後納入95人，其中50人實驗組、45人對照組。",
+      "expected_document_relation": "supported_on_excerpt",
+      "basis": "Methods specifies final 95, experimental 50, control 45."
+    },
+    {
+      "id": "PROBE-RCT-004",
+      "source_id": "STEM_RCT_METHODS",
+      "claim": "該研究受試者全是國小學生。",
+      "expected_document_relation": "contradicted_by_excerpt",
+      "basis": "Methods says university STEM sophomores."
+    },
+    {
+      "id": "PROBE-UNESCO-001",
+      "source_id": "UNESCO_DESIGN_TRAINING",
+      "claim": "有來自20多個國家的參與者參加設計培訓。",
+      "expected_document_relation": "supported_on_excerpt",
+      "basis": "Article refers to training participants from over 20 countries."
+    },
+    {
+      "id": "PROBE-UNESCO-002",
+      "source_id": "UNESCO_DESIGN_TRAINING",
+      "claim": "參與者來自20多個國家，因此各國都已制定共同AI課程法規。",
+      "expected_document_relation": "unwarranted_inference",
+      "basis": "Participation in training is not national law enactment."
+    },
+    {
+      "id": "PROBE-UNESCO-003",
+      "source_id": "UNESCO_DESIGN_TRAINING",
+      "claim": "此活動已完成隨機試驗，證明各國國小學力提升。",
+      "expected_document_relation": "unwarranted_inference",
+      "basis": "Event report does not provide randomized student outcomes."
+    },
+    {
+      "id": "PROBE-UNESCO-004",
+      "source_id": "UNESCO_DESIGN_TRAINING",
+      "claim": "研習參與者對課程的滿意度為何？",
+      "expected_document_relation": "cannot_determine_from_excerpt",
+      "basis": "No satisfaction survey measure documented in retrieved excerpt."
+    }
+  ]
+}
