@@ -44,6 +44,10 @@ jobs:
         run: node --test research/validate-semantic-remaining40.test.js
       - name: Verify documentary contradiction probes and provenance
         run: node --test research/validate-documentary-probes.test.js
+      - name: Validate structured source fact matching and abstentions
+        run: |
+          node --test research/compare-source-facts.test.js
+          node research/compare-source-facts.js research/benchmarks/structured-source-fact-probes-2026-10-09.json
       - name: Validate issue manifests and claim metadata
         run: node research/validate-publication.js .
   deploy:
