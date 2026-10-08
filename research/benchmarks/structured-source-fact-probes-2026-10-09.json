@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "created": "2026-10-09",
+  "mode": "MANUALLY_STRUCTURED_EXCERPT_FACTS_NOT_GOLD_NOT_PUBLISHABLE",
+  "notice": "Source fact values were manually transcribed from prior publisher-indexed excerpts and methods summaries; no independently stored original full text. Assertions here are manual semantic encodings, not automatic Chinese prose parsing.",
+  "cards": [
+    {
+      "card_id": "STEM_RCT_METHODS",
+      "source_url": "https://link.springer.com/article/10.1186/s40594-026-00652-9",
+      "evidence_level": "publisher_index_excerpt",
+      "full_text_verified": false,
+      "facts": [
+        {
+          "key": "sample.initial_recruited",
+          "value": 116,
+          "locator": "Methods / participants",
+          "excerpt": "initially recruited 116 sophomore STEM students",
+          "evidence_checked": false
+        },
+        {
+          "key": "sample.analysed",
+          "value": 95,
+          "locator": "Methods / completed data",
+          "excerpt": "95 students completed all procedures and provided complete data",
+          "evidence_checked": false
+        },
+        {
+          "key": "sample.experimental",
+          "value": 50,
+          "locator": "Methods / experimental group",
+          "excerpt": "experimental group (n = 50)",
+          "evidence_checked": false
+        },
+        {
+          "key": "sample.control",
+          "value": 45,
+          "locator": "Methods / control group",
+          "excerpt": "control group (n = 45)",
+          "evidence_checked": false
+        },
+        {
+          "key": "sample.population",
+          "value": "university STEM sophomores",
+          "locator": "Methods / participant population",
+          "excerpt": "initially recruited 116 sophomore STEM students",
+          "evidence_checked": false
+        }
+      ]
+    },
+    {
+      "card_id": "UNESCO_DESIGN_TRAINING",
+      "source_url": "https://www.unesco.org/en/articles/start-defining-problem-not-algorithm-designing-ai-education",
+      "evidence_level": "publisher_index_excerpt",
+      "full_text_verified": false,
+      "facts": [
+        {
+          "key": "event.kind",
+          "value": "hands-on design training",
+          "locator": "Opening / Digital Learning Week 2026",
+          "excerpt": "A training at Digital Learning Week 2026",
+          "evidence_checked": false
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "FACT-RCT-001",
+      "source_id": "STEM_RCT_METHODS",
+      "claim": "研究最初招募116名學生。",
+      "assertions": [
+        {
+          "key": "sample.initial_recruited",
+          "op": "eq",
+          "value": 116
+        }
+      ],
+      "expected_triage": "consistent_with_entered_evidence"
+    },
+    {
+      "case_id": "FACT-RCT-002",
+      "source_id": "STEM_RCT_METHODS",
+      "claim": "研究最初招募116人，全部都完成並納入分析。",
+      "assertions": [
+        {
+          "key": "sample.initial_recruited",
+          "op": "eq",
+          "value": 116
+        },
+        {
+          "key": "sample.analysed",
+          "op": "eq",
+          "value": 116
+        }
+      ],
+      "expected_triage": "conflict_with_entered_evidence"
+    },
+    {
+      "case_id": "FACT-RCT-003",
+      "source_id": "STEM_RCT_METHODS",
+      "claim": "該試驗最後納入95人，其中50人實驗組、45人對照組。",
+      "assertions": [
+        {
+          "key": "sample.analysed",
+          "op": "eq",
+          "value": 95
+        },
+        {
+          "key": "sample.experimental",
+          "op": "eq",
+          "value": 50
+        },
+        {
+          "key": "sample.control",
+          "op": "eq",
+          "value": 45
+        }
+      ],
+      "expected_triage": "consistent_with_entered_evidence"
+    },
+    {
+      "case_id": "FACT-RCT-004",
+      "source_id": "STEM_RCT_METHODS",
+      "claim": "該研究受試者全是國小學生。",
+      "assertions": [
+        {
+          "key": "sample.population",
+          "op": "eq",
+          "value": "primary school pupils"
+        }
+      ],
+      "expected_triage": "conflict_with_entered_evidence"
+    },
+    {
+      "case_id": "FACT-UNESCO-001",
+      "source_id": "UNESCO_DESIGN_TRAINING",
+      "claim": "UNESCO 報導設計培訓活動。",
+      "assertions": [
+        {
+          "key": "event.kind",
+          "op": "eq",
+          "value": "hands-on design training"
+        }
+      ],
+      "expected_triage": "consistent_with_entered_evidence"
+    },
+    {
+      "case_id": "FACT-UNESCO-002",
+      "source_id": "UNESCO_DESIGN_TRAINING",
+      "claim": "參與者來自20多國，因此各國已經制定共同強制法規。",
+      "assertions": [
+        {
+          "key": "policy.binding_mandate",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "expected_triage": "cannot_determine"
+    },
+    {
+      "case_id": "FACT-UNESCO-003",
+      "source_id": "UNESCO_DESIGN_TRAINING",
+      "claim": "此活動已完成隨機試驗，證明各國國小學力提升。",
+      "assertions": [
+        {
+          "key": "outcome.randomized_learning_result_reported",
+          "op": "eq",
+          "value": true
+        }
+      ],
+      "expected_triage": "cannot_determine"
+    },
+    {
+      "case_id": "FACT-UNESCO-004",
+      "source_id": "UNESCO_DESIGN_TRAINING",
+      "claim": "研習參與者滿意度達90%。",
+      "assertions": [
+        {
+          "key": "outcome.satisfaction_percent",
+          "op": "eq",
+          "value": 90
+        }
+      ],
+      "expected_triage": "cannot_determine"
+    }
+  ]
+}
