@@ -53,3 +53,11 @@
 ## 免 GitHub 登入渠道（尚未啟用）
 
 已準備 [免登入回饋入口](../feedback/no-login/) 和 [外部收件服務啟用／自檢清單](no-login-feedback-launch-checklist.md)。由於 GitHub Pages 無後端收件，尚未設定 Google Forms 的公開填答網址與隱私說明頁，入口會顯示「尚未開放」，並**不處理或儲存表單資料**。啟用後私有表單回饋不會自動匯入原有 GitHub Issue 每週統計，也不得將私有文字公開轉貼；真正開放須先以未登入的瀏覽器做一筆測試提交並由收件端確認。
+
+## Google Forms 表單連結已提供（2026-10-09，端到端驗收未完成）
+
+使用者已提供 Google Forms 公開填答網址；網站 `feedback/no-login/` 透過 `feedback/no-login-config.js` 連向該表單，並提供 [資料處理與隱私說明](../feedback/privacy/)。
+
+**尚未確認**：未登入 Google／GitHub 時是否能正常進入並送出、Google 表單是否強制收集電子郵件、真正收件端是否收到測試回覆。這些均不可能只靠 GitHub CI 證明。網站狀態保留 `receiptVerified: false`，並明示「待驗收」，不得宣稱已經完成免登入可用性測試。
+
+後續請表單管理者在無痕／登出狀態送出不含真實個資的一筆測試資料，於 Google Forms「回覆」面板確認，再核對不收集電子郵件、無機構限制、不要求登入；只有實際測試成功，才將 `receiptVerified` 改成 true。之後若需每週彙整 Google Forms 的回饋，須另外建立最小權限的聚合管道；**目前 GitHub Issues 每週整理並不統計 Google Forms 回覆**。
