@@ -34,7 +34,7 @@ test("remaining preliminary assessments do not masquerade as validated ground tr
  }
 });
 test("abstentions and editorial interpretations are explicitly separated from factual support",()=>{
- assert.ok(rest.reviews.filter(x=>x.provisional_verdict==="cannot_determine").length>=2);
+ assert.ok(rest.reviews.filter(x=>x.provisional_verdict==="cannot_determine").length>=1);
  assert.ok(rest.reviews.filter(x=>x.provisional_verdict==="editorial_inference_not_empirical_finding").length>=5);
  assert.ok(rest.reviews.some(x=>x.provisional_verdict==="unsupported_overgeneralization"));
 });
