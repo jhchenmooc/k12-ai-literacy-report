@@ -102,3 +102,7 @@ GitHub Pages：Settings → Pages → Source = GitHub Actions。正式更新經 
 ## 60 題語意審查：初步資料覆蓋，不是正式驗證
 
 [60題第一階段初篩報告](research/benchmarks/semantic-screening-60-progress-2026-10-09.md)；[後40題資料](research/benchmarks/semantic-screening-remaining40-2026-10-09.json)。已涵蓋60/60題並註記來源與暫定判讀，但**沒有全文逐題原始證據快照、獨立真人金標籤或可宣稱的真實模型漏判率**。所有資料維持 hold；不得把結構測試通過當作新聞或論文語意已正確核實。60題已經經過暫定判讀，不應再冒充真正未見過答案的獨立盲測。
+
+## 語意審查：原始方法數據交叉核對（2026-10-09）
+
+[8條來源具體數據與推論反例](research/benchmarks/documentary-contradiction-notes-2026-10-09.md)，核對發現特定 RCT 最初招募 116 人、最後分析 95 人，已更新先前誤列「無法判定」的候選題。此批資料只來自出版社／原機構可檢索頁面，**並未取得與封存完整原文**；不認證全文、真人金標或可泛化的模型誤判率。
