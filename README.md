@@ -15,7 +15,7 @@
 ## 編輯原則
 優先原始資料，按事件鏈去重，核實發布日期、事件發生日期、適用學段、政策效力、研究限制及重要數字。區分外部來源事實與臺灣 K-12 AI 素養政策分析；禁止將國際觀點宣稱為本地架構的直接實證驗證。
 
-GitHub Pages：Settings → Pages → Deploy from a branch → `main` / `(root)`。
+GitHub Pages：Settings → Pages → Source = GitHub Actions。正式更新經 PR、必要 `verify` 及 Pages 部署。
 
 
 ## 每週來源多元性與證據品質檢核（2026-10-08 起）
@@ -86,3 +86,7 @@ GitHub Pages：Settings → Pages → Deploy from a branch → `main` / `(root)`
 - [未標記答案的 60 題候選資料](research/benchmarks/blind-review-candidates-60.json)、[兩位真人獨立審查／仲裁規範](research/benchmarks/blind-review-protocol-v0.1.md)、[題庫完整性與準備狀態驗證](research/validate-blind-pack.js)。
 - 目前 60 題尚未填妥逐題原始摘錄及定位，屬 **PREPARATION_ONLY_NOT_READY_FOR_BLIND_JUDGING**；CI 只會確認題庫完整，不認證原始研究或允許直接評分。
 - 待各題從原始來源補齊證據、再由兩名不同真人獨立判讀與第三人仲裁後，才能建立正式黃金標準及評估真實語意漏判率。答案與專家個別標註在完成盲測前不得公布在公開 GitHub。
+
+## 讀者評鑑 v1.1：多專業模擬審查改善
+
+讀者可由 [公開評鑑入口](feedback/) 提交可信度感受與易讀性評分或具體勘誤。純評分僅需報告網址等必要欄位，不強制長篇說明；公開週整理不再複製讀者自填標題，並顯示評分有效樣本數與未評分數。請參閱 [讀者回饋改善 SOP](research/reader-feedback-policy.md)。這是 AI 模擬多專業檢查與程式測試，不是外部真人專家審核。GitHub 登入和公開姓名仍是限制，未建匿名表單前不宣稱無帳號即可提交。
