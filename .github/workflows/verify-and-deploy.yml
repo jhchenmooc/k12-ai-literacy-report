@@ -36,6 +36,8 @@ jobs:
           node --test research/summarize-reader-feedback.test.js
       - name: Self-test no-login feedback fallback safety
         run: node --test research/validate-no-login-feedback.test.js
+      - name: Test safe weekly draft scaffold
+        run: node --test research/scaffold-weekly.test.js
       - name: Validate issue manifests and claim metadata
         run: node research/validate-publication.js .
   deploy:
