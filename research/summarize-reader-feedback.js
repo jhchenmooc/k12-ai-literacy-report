@@ -13,18 +13,36 @@ function aggregate(issues,start,end){
  const selected=issues.filter(i=>!i.pull_request&&typeof i.title==="string"&&i.title.startsWith(PREFIX)&&Date.parse(i.created_at)>=Date.parse(start)&&Date.parse(i.created_at)<Date.parse(end));
  const categories={},accuracies={},clarities={};
  for(const i of selected){
-  const type=field(i.body,"回饋類別"),acc=field(i.body,"正確性評分"),clarity=field(i.body,"易讀性與解讀清晰度");
+  const type=field(i.body,"回饋類別"),acc=field(i.body,"內容可信度感受（不是事實查核結果）")||field(i.body,"正確性評分"),clarity=field(i.body,"易讀性與解讀清晰度");
   const a=LABELS.includes(type)?type:"未分類";
   categories[a]=(categories[a]||0)+1;
   if(/^[1-5] - /.test(acc))accuracies[acc[0]]=(accuracies[acc[0]]||0)+1;
   if(/^[1-5] - /.test(clarity))clarities[clarity[0]]=(clarities[clarity[0]]||0)+1;
  }
- return {count:selected.length,categories,accuracies,clarities,issues:selected.map(x=>({number:x.number,url:x.html_url,title:String(x.title).slice(0,130)}))};
+ return {count:selected.length,categories,accuracies,clarities,accuracy_n:Object.values(accuracies).reduce((a,b)=>a+b,0),clarity_n:Object.values(clarities).reduce((a,b)=>a+b,0),issues:selected.map(x=>({number:x.number,url:x.html_url,state:x.state==="closed"?"closed":"open"}))};
 }
 function render(a,start,end){
- const rows=(o)=>Object.entries(o).sort((x,y)=>y[1]-x[1]).map(([k,v])=>"- "+k+"："+v+" 筆").join("\n")||"- 本週無回饋";
- return ["## 讀者回饋週整理","資料窗口（UTC）："+start+" 至 "+end+"（不含結束日）","本週收到 **"+a.count+"** 筆讀者回饋。以下評分僅代表自願參與的讀者觀感，不代表新聞或論文經正式驗證。","","### 回饋類別",rows(a.categories),"","### 正確性評分（有填數字者）",rows(a.accuracies),"","### 易讀性評分（有填數字者）",rows(a.clarities),"","### 待核對回饋單",...a.issues.map(x=>"- [#"+x.number+"]("+x.url+") "+x.title.replace(/[\r\n]/g," ")),"","### 編輯改善流程","1. 先核對讀者指出的原始來源、日期、效力及學段。","2. 來源不足或高風險推論先標示待查，不以讀者意見直接取代證據。","3. 真正需要更正的內容經 PR、required verify、Pages 部署後回覆原 Issue 並記錄更正。","4. 本摘要為自動整理，尚未判定每則回饋的真偽，也不表示所有改善已完成。"].join("\n");
+ const rows=o=>Object.entries(o).sort((x,y)=>y[1]-x[1]).map(([k,v])=>"- "+k+"："+v+" 筆").join("\n")||"- 無有效分數";
+ const safe=issue=>/^https:\/\/github\.com\/[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+\/issues\/[0-9]+$/.test(issue.url||"")?"[#"+issue.number+"]("+issue.url+")":"#"+issue.number;
+ const open=a.issues.filter(i=>i.state==="open").length,closed=a.issues.length-open;
+ return ["## 讀者回饋週整理",
+  "資料窗口（UTC）："+start+" 至 "+end+"（不含結束日）",
+  "新增讀者回饋："+a.count+" 筆。這是自願、自選樣本，非代表性調查；回饋不是已確認錯誤，評分不是事實查核結果。","",
+  "### 問題類別（回饋筆數）",rows(a.categories),"",
+  "### 內容可信度感受（有評分 n="+a.accuracy_n+"，未評分 n="+(a.count-a.accuracy_n)+"）",rows(a.accuracies),"",
+  "### 易讀性（有評分 n="+a.clarity_n+"，未評分 n="+(a.count-a.clarity_n)+"）",rows(a.clarities),"",
+  "### Issue 狀態（不是更正完成率）",
+  "- 開啟中："+open+" 筆；關閉："+closed+" 筆（關閉不代表已驗證或修正）","",
+  "### 原始回饋連結（僅列 Issue 編號，不二次轉貼讀者文字）",
+  ...a.issues.map(i=>"- "+safe(i)+"（"+(i.state==="closed"?"已關閉":"開啟中")+"）"),"",
+  "### 後續核查與更正",
+  "1. 優先處理可核對的來源錯誤、政策效力、因果／跨學段解讀；重大安全或隱私疑慮應即時處理，不等待週報。",
+  "2. 查核原始來源前不認定讀者主張為真；未能核實則標示待查。",
+  "3. 真正修正時以 PR、CI、正式部署及原 Issue 連結留下更正紀錄。",
+  "4. 本報表不複製 Issue 內文或標題；它仍會公開連結至原本已公開的回饋，不適合存放兒少及他人個資。"
+ ].join("\n");
 }
+
 async function api(method,url,token,body){
  const r=await fetch(url,{method,headers:{"Authorization":"Bearer "+token,"Accept":"application/vnd.github+json","X-GitHub-Api-Version":"2022-11-28","User-Agent":"K12-Reader-Feedback-Digest"},body:body?JSON.stringify(body):undefined});
  if(!r.ok)throw Error("GitHub API "+r.status+" "+(await r.text()).slice(0,300));
