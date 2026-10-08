@@ -48,6 +48,8 @@ jobs:
         run: |
           node --test research/compare-source-facts.test.js
           node research/compare-source-facts.js research/benchmarks/structured-source-fact-probes-2026-10-09.json
+      - name: Validate Chinese claim coverage and missing assertion warnings
+        run: node --test research/audit-chinese-claim-coverage.test.js
       - name: Validate issue manifests and claim metadata
         run: node research/validate-publication.js .
   deploy:

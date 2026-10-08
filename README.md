@@ -110,3 +110,7 @@ GitHub Pages：Settings → Pages → Source = GitHub Actions。正式更新經 
 ## 結構化證據卡與中文主張核對 v0.1
 
 已新增 [證據卡比對規格與限制](research/benchmarks/structured-source-fact-gate-notes.md)、[8 個對照案例](research/benchmarks/structured-source-fact-probes-2026-10-09.json)及 `research/compare-source-facts.js`。它只核對**事先明確結構化**的招募／分析人數、研究族群、活動類型等欄位，區分矛盾、已填欄位相容、證據不足與無效資料；所有結果一律 `hold`。未涵蓋任意中文自然語言解析，也未取得出版社全文原始快照，不能視為完成獨立語意有效性驗證或准予正式發布。
+
+## 中文主張拆解完整性警示（v0.1）
+
+已新增 [中文主張覆蓋性警示程式](research/audit-chinese-claim-coverage.js) 及 [限制與回歸測試說明](research/benchmarks/chinese-claim-coverage-audit-notes.md)。針對數字、研究對象、因果效果與政策強制效力等明顯詞語檢查是否漏做結構化主張映射；不完整時 `incomplete_claim_mapping`，來源缺值時 `cannot_determine`。這只是保守規則，不能真正證明句子已完整解析，所有結果保持 `hold`。
