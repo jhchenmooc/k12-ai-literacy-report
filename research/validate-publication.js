@@ -11,7 +11,7 @@ function scan(root,folder){
 
 /**
  * Conservative text-to-claim binding for future HTML reports. Every visible
- * <p>, <h3>, <h4>, <li>, <blockquote>, <figcaption>, <td> and <th> INSIDE
+ * <p>, <h1>, <h2>, <h3>, <h4>, <li>, <blockquote>, <figcaption>, <td> and <th> INSIDE
  * <main> must have a data-claim-id and identical text in the evidence file.
  *
  * This is intentionally limited to static HTML. Text generated with JS and
@@ -29,7 +29,7 @@ function matchBody(html,claims){
  if(matches.length!==1)return ["expected exactly one static main region"];
  const body=matches[0][1];
  if(/<script\b/i.test(body)||/\bcontenteditable\s*=/i.test(body))errors.push("dynamic script/contenteditable unsupported within main");
- const nodes=[...body.matchAll(/<(p|h3|h4|li|blockquote|figcaption|td|th)\b([^>]*)>([\s\S]*?)<\/\1>/gi)];
+ const nodes=[...body.matchAll(/<(p|h1|h2|h3|h4|li|blockquote|figcaption|td|th)\b([^>]*)>([\s\S]*?)<\/\1>/gi)];
  if(nodes.length===0)errors.push("no inspectable substantive content nodes in main");
  const counts=new Map(),map=new Map(claims.filter(x=>x&&typeof x.claim_id==="string").map(x=>[x.claim_id,x]));
  for(const [,tag,attrs,raw] of nodes){
