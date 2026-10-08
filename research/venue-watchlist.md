@@ -43,7 +43,7 @@
 | J29 | 背景 | Frontiers in Education | 教育創新、AI素養、教師 | [期刊頁](https://www.frontiersin.org/journals/education) |
 | J30 | 背景 | International Review of Research in Open and Distributed Learning | 數位公平、線上教育與AI | [期刊頁](https://www.irrodl.org/) |
 
-## 3. 國際會議池（20 個系列／類別）
+## 3. 國際會議池（19 個會議系列）
 
 **重要**：同一會議的 full paper、short paper、workshop、poster、demo、doctoral consortium 等不能混為同等證據。會議網站與論文集為不同入口；2026 年會議可能已有 proceedings，但沒有論文集的活動公告不能當作正式論文。
 
@@ -67,7 +67,6 @@
 | C16 | 擴充 | CSCW | ACM Conference on Computer-Supported Cooperative Work | 人機協作、教師工作流程 | [系列／論文庫](https://cscw.acm.org/) |
 | C17 | 擴充 | AERA Annual Meeting | American Educational Research Association Annual Meeting | 教育政策、測量、教師、K-12學習 | [系列／論文庫](https://www.aera.net/Events-Meetings/Annual-Meeting) |
 | C18 | 背景 | ICALT | IEEE International Conference on Advanced Learning Technologies | AI技術、教育應用 | [系列／論文庫](https://tc.computer.org/tclt/) |
-| C19 | 背景 | ICALT/EDM workshops | 關聯會議Workshop、Poster、Demo | 早期訊號，與正式長篇論文分開 | [系列／論文庫](https://educationaldatamining.org/conferences/) |
 | C20 | 背景 | SITE Interactive | Online Society for Information Technology and Teacher Education | 教師培力與新工具早期應用 | [系列／論文庫](https://aace.org/conf/site-interactive/) |
 
 ## 4. 跨庫學術索引及角色
