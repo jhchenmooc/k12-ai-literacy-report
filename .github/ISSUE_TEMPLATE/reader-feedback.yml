@@ -1,0 +1,90 @@
+name: 讀者評鑑、勘誤與建議
+description: 評估 K-12 AI 素養週報／月報的正確性、證據與易讀性，或提出具體錯誤與改善建議
+title: "[讀者回饋] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝協助提升報告品質。送出後內容會顯示在**公開 GitHub Issues**，請勿填寫學生、未成年人或任何人的姓名、聯絡資訊等個資。若涉及敏感資料，請只說明問題並避免公開原文。
+        **提交需要登入 GitHub 帳號。** 本表不會自動改動已發布的報告；編輯將進行來源核查及定期整理。
+  - type: dropdown
+    id: category
+    attributes:
+      label: 回饋類別
+      description: 選擇最符合的類型
+      options:
+        - 事實錯誤／日期或數字錯誤
+        - 新聞或政策解讀過度
+        - 論文研究方法／因果推論問題
+        - 引用來源錯誤／連結失效
+        - 學段或臺灣政策適用性問題
+        - 文章清晰度與易讀性
+        - 建議新增重要來源／議題
+        - 一般使用體驗或其他建議
+    validations:
+      required: true
+  - type: dropdown
+    id: accuracy
+    attributes:
+      label: 正確性評分
+      description: 依您閱讀的該篇報告評估；沒看足夠內容可選未評分
+      options:
+        - 未評分／不確定
+        - 5 - 非常可靠
+        - 4 - 大致可靠
+        - 3 - 尚可、但有疑問
+        - 2 - 存在明顯問題
+        - 1 - 嚴重錯誤
+    validations:
+      required: true
+  - type: dropdown
+    id: clarity
+    attributes:
+      label: 易讀性與解讀清晰度
+      options:
+        - 未評分
+        - 5 - 非常清晰
+        - 4 - 清晰
+        - 3 - 普通
+        - 2 - 不易理解
+        - 1 - 很難理解
+    validations:
+      required: true
+  - type: input
+    id: report_url
+    attributes:
+      label: 報告頁面網址
+      description: 請貼上週報或月報的網址；亦可填首頁
+      placeholder: https://jhchenmooc.github.io/k12-ai-literacy-report/weekly/...
+    validations:
+      required: true
+  - type: textarea
+    id: excerpt
+    attributes:
+      label: 有疑問的段落或位置
+      description: 請指出標題、段落或簡短原句；若是純評分可填「整體評價」
+      placeholder: 例如：第 2 則新聞、研究成果段落、第 3 個表格
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: 具體問題與改善建議
+      description: 哪裡不正確、不清楚？您建議如何修訂？
+      placeholder: 請分別描述「觀察到的問題」與「希望修改的內容」
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: 可供核對的原始來源連結（選填）
+      placeholder: https://...
+    validations:
+      required: false
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: 公開回饋確認
+      options:
+        - label: 我了解本回饋將公開顯示，不會附上學生或其他人的個人資料
+          required: true
