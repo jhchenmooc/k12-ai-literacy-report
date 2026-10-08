@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         感謝協助提升報告品質。送出後內容會顯示在**公開 GitHub Issues**，請勿填寫學生、未成年人或任何人的姓名、聯絡資訊等個資。若涉及敏感資料，請只說明問題並避免公開原文。
-        **提交需要登入 GitHub 帳號。** 本表不會自動改動已發布的報告；編輯將進行來源核查及定期整理。
+        **提交需要登入 GitHub 帳號。** GitHub 帳號名稱及回饋會公開，請勿填入姓名、學校、電話、電子郵件、學生作品或未公開文件。\n        只想評分也可以：類別請選「文章清晰度與易讀性」或「一般使用體驗或其他建議」，後面的具體問題可留白。\n        讀者評分是主觀感受，不表示報告內容已獲正式查核。
   - type: dropdown
     id: category
     attributes:
@@ -26,7 +26,7 @@ body:
   - type: dropdown
     id: accuracy
     attributes:
-      label: 正確性評分
+      label: 內容可信度感受（不是事實查核結果）
       description: 依您閱讀的該篇報告評估；沒看足夠內容可選未評分
       options:
         - 未評分／不確定
@@ -62,18 +62,18 @@ body:
     id: excerpt
     attributes:
       label: 有疑問的段落或位置
-      description: 請指出標題、段落或簡短原句；若是純評分可填「整體評價」
+      description: 有明確勘誤時請指出標題、段落或簡短原句；純評分可留空
       placeholder: 例如：第 2 則新聞、研究成果段落、第 3 個表格
     validations:
-      required: true
+      required: false
   - type: textarea
     id: feedback
     attributes:
       label: 具體問題與改善建議
-      description: 哪裡不正確、不清楚？您建議如何修訂？
+      description: 勘誤時請說明問題與修訂建議；僅評分可留空
       placeholder: 請分別描述「觀察到的問題」與「希望修改的內容」
     validations:
-      required: true
+      required: false
   - type: input
     id: evidence
     attributes:
@@ -86,5 +86,5 @@ body:
     attributes:
       label: 公開回饋確認
       options:
-        - label: 我了解本回饋將公開顯示，不會附上學生或其他人的個人資料
+        - label: 我了解回饋及 GitHub 帳號名稱會公開，並確認未附上兒少或他人個資
           required: true
