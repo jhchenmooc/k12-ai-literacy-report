@@ -1,5 +1,7 @@
 # GitHub Pages 部署確認：最小操作指引（2026-10-09）
 
+> **2026-10-09 更新：本部署問題已結案。** [正式驗收紀錄](pages-deployment-acceptance-2026-10-09.md)記錄主分支工作流程 `verify=success`、`deploy=success`，及使用者確認的三項網站實際顯示結果。以下原排查流程僅保留作歷史參考，**目前不需要再變更部署變數**。
+
 目前最後一次 `main` GitHub Actions 工作流程中的 `verify=success`，但 `deploy=skipped`。參見 [部署工作流程](../.github/workflows/verify-and-deploy.yml)。
 
 **原因目前能確定到的範圍：** `deploy` 有條件 `vars.ENABLE_VERIFIED_PAGES_DEPLOY == 'true'`，且 PR 不執行 deploy；在主分支的驗證已成功而 deploy 仍跳過，代表啟用條件未成立。**不能因此斷言 GitHub Pages 完全沒更新**，因為 GitHub Pages 也可以透過「Deploy from a branch」直接發布，此設定目前無法透過現有連接器可靠讀取。
