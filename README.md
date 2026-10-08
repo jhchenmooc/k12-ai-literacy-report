@@ -44,3 +44,9 @@ GitHub Pages：Settings → Pages → Deploy from a branch → `main` / `(root)`
 
 - [來源優先、逐項追溯及發布閘門 SOP](research/evidence-safety-gates.md)：建立 G1–G6 檢查、U/V1/V2/V3 驗證狀態、重大結論獨立核對與修訂流程。
 - 2026/09/29–10/08 六篇學術文獻先列**候選**；尚未完成逐句原文證據鏈前，不可作為已審定的政策證據或自動導入公開週報。
+
+## 新聞、政策與研究的雙軌防誤判
+
+- [新聞／政策原始來源與解讀查核 SOP（N1–N8）](research/news-policy-verification.md)：查核公布、更新、實施日期及效力，逐項追溯、檢查例外和原文翻譯，避免誤將評論、新聞稿或試辦當成法律。
+- [學術研究證據查核 SOP（G1–G6）](research/evidence-safety-gates.md)：核實樣本、方法、結果、因果與跨學段外推。
+- 同一來源同時包含研究與政策主張時兩套均須通過適用關卡。未取得原文證據的解讀保留在候選池，不以多次 AI 角色模擬代替獨立確認。
