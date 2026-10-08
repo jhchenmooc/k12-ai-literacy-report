@@ -74,3 +74,9 @@ GitHub Pages：Settings → Pages → Deploy from a branch → `main` / `(root)`
 ## 原文快照與中文解讀核驗（新期刊）
 
 新週報與月報的實質性主張，除了正文與 claim_id 對照，須附可逐字比對的原文摘錄、具 SHA-256 的來源快照、來源 URL 及解讀／適用範圍說明。參閱 [來源證據與人工語意審查 SOP](research/source-to-claim-review.md)。程式只檢查資料鏈及檔案一致性；不能保證原始快照真實、譯文解讀正確，亦不能替代不同真人的高影響內容複核。
+
+## 新聞／研究誤讀壓力測試（初步合成基準）
+
+- [30 筆合成誤讀測試與初步結果](research/benchmarks/semantic-evaluation-v0.1.md)：涵蓋 5 個新聞與 5 個研究主題；20 個暫定不支持的敘述中，關鍵字規則漏警示 2 個（10%）；這是合成案例的漏警示比例，不是實際週報錯誤率。
+- [案例 JSON](research/benchmarks/semantic-cases-2026-10.json)、[警示評估程式](research/benchmark-semantic.js)、[回歸測試](research/benchmark-semantic.test.js)。所有案例均標示暫定編輯標籤，尚非真人獨立審閱的黃金標準。
+- 語意警示工具一律輸出 `review`，不自動放行新聞或論文。真正的語意審核仍須原始文章全文與不同真人審閱者確認。
