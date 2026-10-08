@@ -1,4 +1,4 @@
-# K-12 AI 素養學術期刊與會議監測清單 v1.0
+# K-12 AI 素養學術期刊與會議監測清單 v1.1
 
 > 建立日期：2026-10-08。目標：服務臺灣 K-12 AI 素養政策、教師與學生能力框架、課程和評量研究。這是**監測來源池**，不是期刊等級排名，也不表示來源中的每一篇文章都適用 K-12。清單包含部分以高等教育為主的來源，必須逐篇依學段篩選。
 
@@ -42,7 +42,6 @@
 | J28 | 背景 | IEEE Transactions on Education | 工程與資訊教育（注意學段） | [期刊頁](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=13) |
 | J29 | 背景 | Frontiers in Education | 教育創新、AI素養、教師 | [期刊頁](https://www.frontiersin.org/journals/education) |
 | J30 | 背景 | International Review of Research in Open and Distributed Learning | 數位公平、線上教育與AI | [期刊頁](https://www.irrodl.org/) |
-
 | J31 | 核心 | International Journal of STEM Education | K-12 AI/STEM、師資教育與人機協作 | [期刊頁](https://link.springer.com/journal/40594) |
 | J32 | 擴充 | Discover Education | 中小學AI教育與跨國學段研究 | [期刊頁](https://link.springer.com/journal/44217) |
 | J33 | 擴充 | Humanities and Social Sciences Communications | AI素養、青少年與教育認知 | [期刊頁](https://www.nature.com/hsscomms/) |
@@ -139,9 +138,18 @@ framework_alignment,duplicate_group,weekly_priority,notes
 - [ACM SIGCSE conference and proceedings index](https://sigcse.org/about/update.html)
 - [SITE 教師教育會議介紹](https://site.aace.org/conf/call/)
 
-## 9. 維護提醒
+## 9. 多專業審查新增守則
+
+- **書目核驗**：來源池只代表值得搜索；單篇論文需從 DOI／官方期刊頁驗證題名、作者、first online 日期、文章類型與同儕審查狀態。
+- **學段及人群**：先判 K-12 學生／K-12 教師／師資生／高教／成人；會議研究不因名稱含 Education 即視為 K-12。
+- **證據強度**：研究重要性 A/B/C 與方法品質分開；自陳、橫斷 SEM、量表驗證及 RCT 不可用同一因果語言。
+- **會議索引**：以每篇論文 DOI／論文集正式上線日為時間判準，非僅會議活動日期；Full、Short、Poster、Workshop 各自標記。
+- **監測範圍**：收錄 34 種期刊與 19 個會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
+- **品質確認**：監測候選池要記錄 `verification_status`（verified / partial / pending）、`population_level`、`evidence_design`、`publication_status`，不可僅以期刊名稱推斷研究品質。
+
+## 10. 維護提醒
 
 本清單是先行建立的候選監測名單；已抽查重要會議／論文集官方入口，其他期刊與會議連結在第一次自動化蒐集前需逐項連線／識別校驗。出版社 URL 可能改版，應以 DOI 與期刊官方網站交叉驗證。學術收錄、索引和審查型態必須逐篇或依出版當年公告判斷，不能以本清單保證。
-## 10. 2026/9/29–10/8 學術回查
+## 11. 2026/9/29–10/8 學術回查
 
-[候選及日期／學段核對檔](retrospective-2026-09-29_10-08.md)。本期發現監測池遺漏的四種期刊，故擴充至 34 種期刊、19 個會議系列。第一期正常七日週報為 2026/10/09–10/15，10/16 發布。
+[候選及日期／學段核對檔](retrospective-2026-09-29_10-08.md)。本期依論文回查補入四種期刊，已核對樣本學段與部分研究方法；不將高教研究誤列為 K-12 直接實證。第一期正常七日週報為 2026/10/09–10/15，10/16 發布。
