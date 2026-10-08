@@ -12,7 +12,8 @@ test("configured public form is staged, never claims verified receipt",()=>{
  const config=read("feedback/no-login-config.js");
  const page=read("feedback/no-login/index.html");
  assert.match(config,/publicFormUrl:\s*"https:\/\/docs\.google\.com\/forms\/d\/e\//);
- assert.match(config,/privacyNoticeUrl:\s*"https:\/\/jhchenmooc\.github\.io\//);\n assert.match(config,/receiptVerified:\s*false/);
+ assert.match(config,/privacyNoticeUrl:\s*"https:\/\/jhchenmooc\.github\.io\//);
+ assert.match(config,/receiptVerified:\s*false/);
  assert.match(page,/收件功能待驗收/);
  assert.match(page,/是否能實際送出/);
  assert.ok(!/<form\b/i.test(page),"External collection must never look like an internal fake form");
