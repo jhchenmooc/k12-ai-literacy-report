@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="K-12 AI 素養讀者回饋：免 GitHub 登入入口（須待安全的收件表單設定完成）。">
+<title>免 GitHub 登入回饋｜K-12 AI 素養國際動態</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;color:#17354a;background:#f5f8fb}
+*{box-sizing:border-box}body{margin:0;line-height:1.75}
+.wrap{max-width:800px;margin:auto;padding:26px 20px}
+header{background:#103452;color:#fff}header a{color:#e9f4ff}h1{margin:12px 0;font-size:clamp(1.6rem,4vw,2.4rem)}
+main{padding-top:8px}section{background:#fff;border:1px solid #d6e2ec;border-radius:14px;padding:20px;margin:20px 0}
+.notice{border-left:4px solid #ad6b12;background:#fff7ec}
+.btn{display:inline-block;background:#155b93;color:#fff;text-decoration:none;font-weight:700;border-radius:9px;padding:12px 20px}
+.btn:hover,.btn:focus-visible{background:#0b4070;text-decoration:underline}
+a{color:#155b93}a:focus-visible{outline:3px solid #ffbd55;outline-offset:3px}
+small{font-size:.92rem;color:#48647c}footer{padding-bottom:30px}
+</style></head><body>
+<header><div class="wrap"><a href="../">← 返回讀者評鑑</a><h1>免 GitHub 登入回饋</h1><p>讓教師、家長及一般讀者不必註冊 GitHub，也能參與報告改善。</p></div></header>
+<main class="wrap">
+<section id="setup-status" class="notice" role="status" aria-live="polite">
+<h2>免登入表單尚未開放</h2>
+<p>目前尚未設定表單接收服務，因此這個頁面不會收集或送出您的資料，也不會顯示假的「提交成功」。</p>
+<p>如有需要立即提出公開勘誤，請使用 <a href="https://github.com/jhchenmooc/k12-ai-literacy-report/issues/new?template=reader-feedback.yml">GitHub 讀者回饋表單（需登入）</a>。</p>
+</section>
+<section><h2>正式開放後可以回饋什麼？</h2>
+<p>可以針對特定報告提供可信度感受、易讀性評分，或指出日期、政策效力、因果推論、學段適用性、原始來源與連結問題。</p>
+<p>建議只附報告網址與問題所在段落；<strong>不要提供學生姓名、個人聯絡資料、班級名單、未公開文件或可識別他人的截圖。</strong></p>
+<p>讀者評分是自選樣本，不代表報告的客觀正確率。未經原始來源查核的勘誤不會被當成已確認事實。</p></section>
+<section><h2>回饋會如何處理？</h2><p>日後啟用的第三方表單將明確揭露提供者與資料處理說明。不同於公開 GitHub Issues，免登入表單內容原則上不直接公開；定期報告只應使用去識別化、彙總後的統計。</p>
+<p>若尚未同意第三方資料處理條件，請不要在外部表單輸入資訊。</p></section>
+</main>
+<footer class="wrap"><small>本站為 GitHub Pages 靜態頁面；目前不設 Cookie 或自行接收表單內容。真正送出需另接服務，開放前須測試成功收件及防濫用設定。</small></footer>
+<script src="../no-login-config.js"></script>
+<script>
+(function(){
+"use strict";
+const cfg=window.K12_FEEDBACK_CONFIG||{},link=cfg.publicFormUrl,privacy=cfg.privacyNoticeUrl;
+const allowed=typeof link==="string" && /^https:\/\/(?:docs\.google\.com\/forms\/d\/(?:e\/)?[^/?#]+\/viewform|forms\.gle\/[A-Za-z0-9_-]+)(?:[?#][^\s]*)?$/.test(link);
+const notice=document.getElementById("setup-status");
+if(!notice || !allowed || typeof privacy!=="string" || !/^https:\/\//.test(privacy)) return;
+// Only trusted hard-coded markup; untrusted URL assigned through DOM property.
+notice.className="";
+notice.textContent="";
+const h=document.createElement("h2");h.textContent="免 GitHub 登入表單已開放";
+const p=document.createElement("p");p.textContent="將開啟 Google Forms 收件頁。送出前請先閱讀第三方隱私說明；本站不會在此頁儲存表單內容。";
+const a=document.createElement("a");a.href=link;a.className="btn";a.rel="noopener noreferrer";a.target="_blank";a.textContent="開啟免登入回饋表單 ↗";
+const q=document.createElement("p"),b=document.createElement("a");b.href=privacy;b.target="_blank";b.rel="noopener noreferrer";b.textContent="資料與隱私說明";q.append(b);
+notice.append(h,p,a,q);
+})();
+</script>
+</body></html>
