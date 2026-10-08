@@ -40,12 +40,12 @@
     {
       "candidate_id": "W2026-10-09-A02",
       "category": "news_policy",
-      "source_url": "https://tcs.edb.gov.hk/tcs/portal/publiccalendar/searchPublicCal/search.htm?fromMenu=Y&pdType=2",
+      "source_url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_literacy_Sec.html",
       "source_title": "Webinar on AI Literacy and Safeguarding Students' Cyber Security - Secondary Schools (New)",
       "source_organization": "Hong Kong Education Bureau - Training Calendar System",
       "source_publication_date": "unknown",
       "event_date": "2026-10-09",
-      "source_locator": "Training Calendar / ITED20260520",
+      "source_locator": "Digital Education Professional Development Programmes - AI Literacy (Secondary School) / October 2026 / 09/10/2026 / ITED20260520",
       "original_excerpt": "Webinar on AI Literacy and Safeguarding Students' Cyber Security - Secondary Schools (New)",
       "source_checked": false,
       "claim_text": "香港教育局教師培訓行事曆列有10月9日面向中學教師的AI素養與學生網路安全網路研討會，屬專業發展活動資訊，尚不能視為成效評估。",
@@ -58,17 +58,17 @@
       "ai_crosscheck_status": "not_started",
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
-      "screening_note": "Search-indexed EDB training calendar suggests 2026-10-09, but opened calendar pagination does not expose stable detailed course record. Keep event date tentative, publication date unknown and claim held pending detail verification."
+      "screening_note": "Hong Kong Education Bureau official secondary AI literacy professional-development timetable directly lists 09/10/2026 and ITED20260520. Event date/course ID/title corroborated by EDB's own category page; original posting date, attendance, and outcome remain unknown. Event, not new Oct 9 policy announcement."
     },
     {
       "candidate_id": "W2026-10-09-A03",
       "category": "news_policy",
-      "source_url": "https://tcs.edb.gov.hk/tcs/portal/publiccalendar/searchPublicCal/search.htm?fromMenu=Y&pdType=2",
+      "source_url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_Subjects_Pri.html",
       "source_title": "Digital Education AI in Education Series - AI+Subjects: Leveraging Generative AI to Enhance Learning and Teaching for Primary English Language (Basic Level)",
       "source_organization": "Hong Kong Education Bureau - Training Calendar System",
       "source_publication_date": "unknown",
       "event_date": "2026-10-09",
-      "source_locator": "Training Calendar / ITED20260476",
+      "source_locator": "Digital Education Professional Development Programmes - AI + Subject (Primary School) / October 2026 / 09/10/2026 / ITED20260476",
       "original_excerpt": "Digital Education AI in Education Series - AI+Subjects: Leveraging Generative AI to Enhance Learning and Teaching for Primary English Language (Basic Level)",
       "source_checked": false,
       "claim_text": "香港教育局培訓行事曆列有10月9日的小學英語教師生成式AI融入學與教課程，可追蹤教師AI應用能力發展，但未證實學生成績改善。",
@@ -81,7 +81,7 @@
       "ai_crosscheck_status": "not_started",
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
-      "screening_note": "Search-indexed EDB training calendar suggests 2026-10-09, but opened calendar pagination does not expose stable detailed course record. Keep event date tentative, publication date unknown and claim held pending detail verification."
+      "screening_note": "Hong Kong Education Bureau official primary AI+Subjects professional-development timetable directly lists 09/10/2026, English, and ITED20260476. Event date/course ID/title corroborated by EDB category page; original posting date, attendance, and student outcomes remain unknown. Event, not new Oct 9 policy announcement."
     },
     {
       "candidate_id": "W2026-10-09-A04",
@@ -179,10 +179,9 @@
     "screened_on": "2026-10-09",
     "source_types": "institutional event announcements or government training calendar",
     "warnings": [
-      "Do not confuse event dates with first publication dates.",
-      "Spain early-childhood/primary teacher perceptions paper is published Oct 7: carry-over background only, not new this-week research.",
-      "University of Toronto OISE Oct 9 is a scheduled panel rather than completed research.",
-      "All entries remain hold; October 9–15 reporting window is still in progress."
+      "Hong Kong EDB primary/secondary professional development timetable independently lists date/course IDs for A02 and A03; original posting dates still unknown.",
+      "Do not confuse verified scheduled event dates with new publication dates, attendance or outcomes.",
+      "No qualifying newly published Oct 9 primary-source research/policy yet established; all candidates remain hold."
     ]
   }
 }

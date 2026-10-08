@@ -5,8 +5,15 @@
 | 優先 | 主題／來源 | 目前卡住的原因 | 下一個最小查核動作 |
 |---|---|---|---|
 | 中 | [Nature AI Detectives 青少年活動（W2026-10-09-A01）](https://arboretum.psu.edu/events/nature-ai-detectives-an-outdoor-ai-literacy-adventure-2/) | 官方活動頁確認10/09 13:00–14:30，12–15歲與家長；初次公告日仍未知，亦無學習效果資料 | 有公告日期再補；否則僅稱「本週活動」，不當成新公告或成效 |
-| 中 | [香港中學教師 AI 素養及網路安全研討會（W2026-10-09-A02）](https://tcs.edb.gov.hk/tcs/portal/publiccalendar/searchPublicCal/search.htm?fromMenu=Y&pdType=2) | 搜尋索引顯示10/09與課程編號，但可展開頁面未穩定顯示該筆完整課程細節 | 查看課程編號 ITED20260520 的細節；若不能確認日期，保留候選 |
-| 中 | [香港小學英語教師 GenAI 課程（W2026-10-09-A03）](https://tcs.edb.gov.hk/tcs/portal/publiccalendar/searchPublicCal/search.htm?fromMenu=Y&pdType=2) | 索引顯示10/09及小學英語教師對象，仍缺可穩定核對的完整課程詳細頁 | 核對課程編號 ITED20260476，確認後只報導教師培訓，不外推成效 |
+
+## 本輪結案：香港兩項教師培訓活動日期與課程編號
+
+香港教育局另外提供官方按學段分類的專業發展課程列表：
+
+- [中學人工智能素養課程頁](https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_literacy_Sec.html)：**2026-10-09，ITED20260520**，主題為 AI 素養與學生網路安全。
+- [小學人工智能＋學科課程頁](https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_Subjects_Pri.html)：**2026-10-09，ITED20260476**，小學英語運用生成式 AI。
+
+官方分類頁的搜尋索引已直接列出日期、課程編號及名稱，足以解決原先「只有不穩定行事曆頁面」的待查問題；不額外耗費時間找報名頁。**但沒有證實活動實際出席情況、培訓成效、首次公告日期或當日新發布消息**，因此仍只列為本週活動候選，不列作本週新政策新聞。
 
 ## 本輪結案：教師自主權統計主張
 
