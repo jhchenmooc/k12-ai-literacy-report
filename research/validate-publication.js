@@ -7,6 +7,42 @@ function scan(root,folder){
  const base=path.join(root,folder);if(!fs.existsSync(base))return [];
  return fs.readdirSync(base,{withFileTypes:true}).filter(x=>x.isDirectory()).map(x=>folder+"/"+x.name+"/index.html").filter(p=>fs.existsSync(path.join(root,p)));
 }
+
+/**
+ * Conservative text-to-claim binding for future HTML reports. Every visible
+ * <p>, <h3>, <h4>, <li>, <blockquote>, <figcaption>, <td> and <th> INSIDE
+ * <main> must have a data-claim-id and identical text in the evidence file.
+ *
+ * This is intentionally limited to static HTML. Text generated with JS and
+ * content in other tags are not fully audited; human review remains necessary.
+ */
+function plain(html){
+ const entities={amp:"&",lt:"<",gt:">",quot:'"',apos:"'",nbsp:" "};
+ return html.replace(/<[^>]*>/g,"").replace(/&(#x[0-9a-f]+|#[0-9]+|[a-z]+);/gi,(_,e)=>{
+  const t=e.toLowerCase();if(t[0]==="#"){const n=t[1]==="x"?parseInt(t.slice(2),16):parseInt(t.slice(1),10);return Number.isFinite(n)&&n>0&&n<=0x10ffff?String.fromCodePoint(n):" "}
+  return Object.prototype.hasOwnProperty.call(entities,t)?entities[t]:"&"+e+";";
+ }).replace(/\s+/g," ").trim();
+}
+function matchBody(html,claims){
+ const errors=[],matches=[...html.matchAll(/<main\b[^>]*>([\s\S]*?)<\/main>/gi)];
+ if(matches.length!==1)return ["expected exactly one static main region"];
+ const body=matches[0][1];
+ if(/<script\b/i.test(body)||/\bcontenteditable\s*=/i.test(body))errors.push("dynamic script/contenteditable unsupported within main");
+ const nodes=[...body.matchAll(/<(p|h3|h4|li|blockquote|figcaption|td|th)\b([^>]*)>([\s\S]*?)<\/\1>/gi)];
+ if(nodes.length===0)errors.push("no inspectable substantive content nodes in main");
+ const counts=new Map(),map=new Map(claims.filter(x=>x&&typeof x.claim_id==="string").map(x=>[x.claim_id,x]));
+ for(const [,tag,attrs,raw] of nodes){
+  const t=plain(raw);if(!t)continue;
+  const id=(attrs.match(/\bdata-claim-id\s*=\s*["']([^"']+)["']/i)||[])[1];
+  if(!id){errors.push("unbound content <"+tag+">: "+t.slice(0,70));continue}
+  counts.set(id,(counts.get(id)||0)+1);
+  if(!map.has(id)){errors.push("unknown body claim "+id);continue}
+  if(plain(map.get(id).claim_text)!==t)errors.push("body text differs from claim_text: "+id);
+ }
+ for(const c of claims){if(!c||typeof c.claim_id!=="string")continue;const count=counts.get(c.claim_id)||0;if(count!==1)errors.push("claim must appear exactly once in HTML: "+c.claim_id+" ("+count+")")}
+ return errors;
+}
+
 function validate(root){
  const errors=[],warnings=[],entry=path.join(root,"publication/issues.json");
  if(!fs.existsSync(entry))return {ok:false,errors:["publication/issues.json missing"],warnings};
@@ -25,6 +61,7 @@ function validate(root){
   const f=path.join(root,q);if(!fs.existsSync(f)){errors.push("claims JSON missing "+q);continue}
   let data;try{data=JSON.parse(fs.readFileSync(f,"utf8"))}catch(e){errors.push("invalid claims JSON "+q);continue}
   if(!Array.isArray(data)||data.length===0){errors.push("edition must have non-empty claims "+p);continue}
+  errors.push(...matchBody(fs.readFileSync(path.join(root,p),"utf8"),data).map(e=>p+": "+e));
   const claimIds=new Set();
   for(const c of data){
    if(!c||typeof c!=="object"){errors.push("invalid claim in "+q);continue}
