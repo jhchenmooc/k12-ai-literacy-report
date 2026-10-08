@@ -66,3 +66,7 @@ GitHub Pages：Settings → Pages → Deploy from a branch → `main` / `(root)`
 - **目前 GitHub Pages 舊的分支部署仍能繞過此檢查。** 為避免部署衝突，新工作流程的 Pages 部署步驟預設停用，只有專案變數 ENABLE_VERIFIED_PAGES_DEPLOY 設為 true 才會開啟。
 - 啟用真正的受檢部署：由有管理權限者進入 Settings → Pages，將 Source 改成 GitHub Actions，接著於 Settings → Secrets and variables → Actions → Variables 設 ENABLE_VERIFIED_PAGES_DEPLOY=true。另建議設定 main 的 branch protection 和必要檢查，限制未審查的直接推送。
 - 程式只能檢查欄位與狀態邏輯，不能辨別使用者是否真的正確閱讀原文，也不能取代真人領域審核。上線前仍須獨立查核來源及主要結論。
+
+## 新期正文與證據逐項對照（開發分支）
+
+新建週報與月報除原本 `publication/issues.json` 與 `publication/claims/*.json` 外，須讓 `<main>` 內具實質內容的 p、h3/h4、li、blockquote、figcaption、td/th 逐項標記 `data-claim-id`，CI 對照 JSON 中 `claim_text`；請參閱 [正文綁定操作說明](research/body-claim-binding-guide.md)。這項功能僅能檢查格式與文字一致，不能判斷原始資料真偽；legacy 期刊不自動追認通過。
