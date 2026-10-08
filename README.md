@@ -114,3 +114,7 @@ GitHub Pages：Settings → Pages → Source = GitHub Actions。正式更新經 
 ## 中文主張拆解完整性警示（v0.1）
 
 已新增 [中文主張覆蓋性警示程式](research/audit-chinese-claim-coverage.js) 及 [限制與回歸測試說明](research/benchmarks/chinese-claim-coverage-audit-notes.md)。針對數字、研究對象、因果效果與政策強制效力等明顯詞語檢查是否漏做結構化主張映射；不完整時 `incomplete_claim_mapping`，來源缺值時 `cannot_determine`。這只是保守規則，不能真正證明句子已完整解析，所有結果保持 `hold`。
+
+## 重要但無法判定的待查事項
+
+[重要待查列表](research/important-unresolved-watchlist.md)集中存放高價值、尚缺原始證據或日期定位的項目。維持待查／補證據結案／低優先移出即可，不增加模型、評分指標或自動化。清單不構成發布認證；Google 表單持續停用。
