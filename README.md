@@ -118,3 +118,8 @@ GitHub Pages：Settings → Pages → Source = GitHub Actions。正式更新經 
 ## 重要但無法判定的待查事項
 
 [重要待查列表](research/important-unresolved-watchlist.md)集中存放高價值、尚缺原始證據或日期定位的項目。維持待查／補證據結案／低優先移出即可，不增加模型、評分指標或自動化。清單不構成發布認證；Google 表單持續停用。
+
+## 首期正式週報交付（2026-10-09 至 10-15）
+
+- [現有候選的最小入選短名單及 10/16 出刊工作安排](research/drafts/2026-10-09_2026-10-15-shortlist.md)：重點查真正本週新發布資料；活動日與發布日分開，保留未經驗證的 hold 狀態。
+- [GitHub Pages 部署狀態一次性確認指引](research/pages-deploy-check.md)：目前 verify 成功，但 workflow deploy skipped；須先辨認 Pages 是分支發布還是 Actions 發布，再設定或驗證，不貿然切換。
