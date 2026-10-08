@@ -23,6 +23,7 @@ function check(c){
   if(need>=2&&c.scope_checked!==true)reasons.push("scope not checked");
   if(need>=3&&c.outcome_checked!==true)reasons.push("outcome not checked");
   if(need>=3&&c.independent_review!==true)reasons.push("independent human review missing");
+  if(!["publish","hold"].includes(c.decision))reasons.push("invalid or missing decision");
   if(c.conflict_unresolved!==false)reasons.push("unresolved or unknown conflict");
   const allow=reasons.length===0;
   if(c.decision==="publish"&&!allow)reasons.push("invalid publication decision");
