@@ -2,6 +2,7 @@
 /* Build-time publication gate. Structural only; cannot verify evidence truth. */
 const fs=require("node:fs"),path=require("node:path");
 const {check}=require("./validate-claims.js");
+const {sourceTrace}=require("./validate-source-trace.js");
 const LEGACY=new Set(["weekly/2026-09-29_10-08/index.html","monthly/2026-09/index.html"]);
 function scan(root,folder){
  const base=path.join(root,folder);if(!fs.existsSync(base))return [];
@@ -69,6 +70,7 @@ function validate(root){
    if(c.decision!=="publish"){errors.push("edition contains unpublished/held claim "+q+" "+c.claim_id);continue}
    const result=check(c);
    if(!result.allow)errors.push(q+" "+c.claim_id+": "+result.reasons.join("; "));
+   errors.push(...sourceTrace(root,c).map(e=>q+" "+c.claim_id+": "+e));
    if(c.claim_class==="high_impact"&&(!c.reviewer_id||!c.reviewer_evidence))errors.push(q+" "+c.claim_id+": reviewer record missing");
   }
  }
