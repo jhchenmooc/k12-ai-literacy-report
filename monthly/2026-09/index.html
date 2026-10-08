@@ -22,7 +22,39 @@ a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}.so
 a:focus-visible,button:focus-visible{outline:3px solid #f59e0b;outline-offset:4px;text-decoration:underline}
 a{text-underline-offset:3px} .skip-link{position:absolute;left:-9999px;top:8px;z-index:100;background:#fff;color:#102a43;padding:12px;border:2px solid #102a43}.skip-link:focus{left:12px} .site-nav{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 20px}.site-nav a{font-weight:650;text-decoration:underline}.site-nav a:hover{text-decoration:none} .source a{text-decoration:underline;overflow-wrap:anywhere}.sources a{overflow-wrap:anywhere;text-decoration:underline} .revision-note{font-size:13px;color:#475467;border-top:1px solid #e5e7eb;padding-top:12px;margin-top:25px}
 @media(max-width:380px){.hero h1{font-size:27px}.content,.hero,.footer{padding-left:16px;padding-right:16px}.card{padding:16px}.summary{padding:14px}.wrap{padding-left:16px;padding-right:16px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important}}</style></head><body><a class="skip-link" href="#main-content">跳至主要內容</a><main class="page" id="main-content">
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important}}
+/* v1.3 shared reading system: larger type, accessible responsive reading */
+body{font-size:19px;line-height:1.85}
+h1,h2,h3{text-wrap:balance}
+.content{font-size:19px;line-height:1.85}
+.hero h1{font-size:clamp(35px,4.5vw,51px);line-height:1.24}
+.hero p{font-size:20px;line-height:1.65}
+.content h2{font-size:clamp(25px,3vw,33px);line-height:1.35;scroll-margin-top:20px}
+.lead{font-size:22px;line-height:1.85}
+.summary{padding:27px 30px;line-height:1.8;border-radius:14px}
+.grid{gap:24px}
+.card{border-radius:19px;padding:26px;box-shadow:0 8px 23px rgba(25,52,83,.06)}
+.card h3{font-size:23px;line-height:1.42}
+.card p{margin:13px 0}
+.meta,.source{font-size:15px}
+.tag,.priority{font-size:13px;padding:5px 10px}
+.insight{font-size:17px;line-height:1.78}
+.quote{font-size:17px;line-height:1.7;padding:19px 22px}
+.delta{padding:20px 22px;font-size:18px}
+.trend{padding:24px;font-size:17px}
+.trend b{font-size:19px}
+.sources{font-size:17px;line-height:1.75}
+.footer{font-size:15px;line-height:1.7}
+.site-nav{gap:11px;margin-bottom:28px}
+.site-nav a{display:inline-block;background:#edf5ff;color:#164a93;border:1px solid #d8e7fa;border-radius:10px;text-decoration:none;padding:7px 13px;font-size:16px}
+.site-nav a:hover{text-decoration:underline;background:#e1eefc}
+.site-nav a:focus-visible{outline:3px solid #f59e0b;outline-offset:3px}
+.revision-note{font-size:14px}
+.page{box-shadow:0 16px 48px rgba(16,24,40,.07)}
+@media(max-width:760px){body,.content{font-size:18px}.hero,.content,.footer{padding-left:23px;padding-right:23px}.hero{padding-top:44px;padding-bottom:40px}.hero p{font-size:18px}.lead{font-size:20px}.grid,.trends{grid-template-columns:1fr}.card{padding:21px}.card h3{font-size:22px}.summary{padding:21px}.insight{font-size:17px}.site-nav{gap:8px}.site-nav a{font-size:15px}.delta{font-size:17px}}
+@media(max-width:380px){body,.content{font-size:17px}.hero,.content,.footer{padding-left:18px;padding-right:18px}.card{padding:18px}.hero h1{font-size:32px}.card h3{font-size:21px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body><a class="skip-link" href="#main-content">跳至主要內容</a><main class="page" id="main-content">
 <header class="hero"><div class="kicker">K-12 AI LITERACY · MONTHLY BRIEF</div><h1>K-12 AI 素養國際動態月報</h1>
 <p>2026 年 9 月｜政策、研究與學校實施趨勢<br/>觀察期間：2026/08/29–2026/09/29</p></header>
 <div class="content"><nav aria-label="月報導覽" class="site-nav"><a href="../../">← 返回網站首頁</a><a href="#focus">本月焦點</a><a href="#signals">五個訊號</a><a href="#updates">十項動態</a><a href="#trends">趨勢觀察</a><a href="#sources">原始來源</a></nav>
@@ -45,6 +77,6 @@ a{text-underline-offset:3px} .skip-link{position:absolute;left:-9999px;top:8px;z
 </div>
 <h2 id="sources">延伸閱讀與原始來源</h2>
 <ol class="sources"><li><a href="https://pads.moe.edu.tw/download2.php" rel="noopener noreferrer" target="_blank">教育部｜115 年中小學數位與 AI 教學指引及 AI 學習應用手冊 ↗</a></li><li><a href="https://www.oecd.org/en/blogs/2026/09/pisa-findings-on-artificial-intelligence-use-reading-skills-and-learning.html" rel="noopener noreferrer" target="_blank">OECD｜PISA findings on AI use, reading skills and learning ↗</a></li><li><a href="https://www.coe.int/en/web/education/-/recommendation-cm/rec-2026-12-of-the-committee-of-ministers-to-member-states-on-artificial-intelligence-literacy" rel="noopener noreferrer" target="_blank">Council of Europe｜Recommendation CM/Rec(2026)12 ↗</a></li><li><a href="https://www.nsw.gov.au/education-and-training/nesa/news/all/new-take-home-assessment-rules" rel="noopener noreferrer" target="_blank">NSW NESA｜2026/08/31 原始公告 ↗</a></li><li><a href="https://www.nyc.gov/mayors-office/news/2026/09/mayor-mamdani-and-chancellor-samuels-put-students-first-with-nat" rel="noopener noreferrer" target="_blank">NYC Mayor's Office｜2026–27 AI education policy ↗</a></li><li><a href="https://www.unesco.org/en/weeks/digital-learning?hub=66369" rel="noopener noreferrer" target="_blank">UNESCO｜Digital Learning Week 2026 ↗</a></li><li><a href="https://www.utwente.nl/en/about-us/news-events-ceremonies/news/2026/9/1159710/ut-contributes-to-new-ai-literacy-framework-for-schools" rel="noopener noreferrer" target="_blank">University of Twente｜AI literacy framework for schools ↗</a></li><li><a href="https://www.unicef.org/innocenti/reports/skills-ai-world" rel="noopener noreferrer" target="_blank">UNICEF Innocenti｜Skills for an AI World ↗</a></li><li><a href="https://www.sydney.edu.au/news-opinion/news/2026/09/03/australia-lacks-evidence-on-genai-in-schools--landmark-global-re.html" rel="noopener noreferrer" target="_blank">University of Sydney｜Global review of GenAI in schools ↗</a></li><li><a href="https://www.unesco.org/en/articles/ict-ai-competency-framework-primary-teachers-and-evaluation-report-dped-piloting-programme-presented?hub=701" rel="noopener noreferrer" target="_blank">UNESCO｜ICT-AI Competency Framework for Primary Teachers ↗</a></li><li><a href="https://questions-statements.parliament.uk/written-questions/detail/2026-09-08/27912" rel="noopener noreferrer" target="_blank">UK Parliament｜AI literacy in education ↗</a></li><li><a href="https://www.nsw.gov.au/education-and-training/nesa/news/all/changes-ace-rules-take-home-tasks-artifical-intelligence" rel="noopener noreferrer" target="_blank">NSW NESA｜2026/09/16 ACE Rules 變更公告 ↗</a></li><li><a href="https://www.nsw.gov.au/education-and-training/nesa/news/all/limits-take-home-assessments-faqs" rel="noopener noreferrer" target="_blank">NSW NESA｜2026/09/24 實施 FAQ ↗</a></li><li><a href="https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/pdp-ited.html" rel="noopener noreferrer" target="_blank">香港教育局｜教師資訊科技教育專業發展課程 ↗</a></li></ol>
-<p class="revision-note">網站版本 v1.1｜2026-10-08 修訂來源對應、導覽與閱讀體驗；原始觀察期間維持 2026/08/29–2026/09/29。</p><p><a href="../../">← 返回月報網站首頁</a>　<a href="#main-content">↑ 返回頁首</a></p></div>
+<p class="revision-note">網站呈現版本 v1.3｜2026-10-08 改善字級、卡片間距與行動閱讀；2026 年 9 月月報的觀察期間及事件內容保留，不將版面修訂當成新事件。</p><p><a href="../../">← 返回月報網站首頁</a>　<a href="#main-content">↑ 返回頁首</a></p></div>
 <footer class="footer">K-12 AI 素養國際動態月報 · 2026 年 9 月｜資料整理至 2026-09-29<br/>本月報用於政策與課程設計參考；各國制度與學段脈絡不同，具體措施仍應依臺灣教育現場調整。</footer>
 </main></body></html>
