@@ -6,6 +6,15 @@
 |---|---|---|---|
 | 中 | [Nature AI Detectives 青少年活動（W2026-10-09-A01）](https://arboretum.psu.edu/events/nature-ai-detectives-an-outdoor-ai-literacy-adventure-2/) | 官方活動頁確認10/09 13:00–14:30，12–15歲與家長；初次公告日仍未知，亦無學習效果資料 | 有公告日期再補；否則僅稱「本週活動」，不當成新公告或成效 |
 
+## 2026 年 9 月月報：重要但尚未確定的細節
+
+以下兩項已經[新版流程初步回查](september-2026-retro-workflow-review.md)，原刊仍未獲獨立全文認證；只保留真正可能影響臺灣政策比較的細節，不把未確認視為來源錯誤：
+
+| 優先 | 主題／來源 | 未能判定的細節 | 最小下一步 |
+|---|---|---|---|
+| 高 | [臺灣 115 年中小學 AI 指引及三學段手冊](https://pads.moe.edu.tw/download2.php) | 官方確有各指引與手冊，但月報所寫「國中提問—查證—應用、高中資訊判讀—倫理—反思、AI Agent」的精確段落尚未逐份核對 | 僅在需正式引用這些學段能力文字時，下載對應國中／高中／教師版核對頁次；未核對前以「本刊對照建議」表述 |
+| 中 | [孟加拉小學教師 ICT-AI 能力框架](https://www.unesco.org/en/articles/ict-ai-competency-framework-primary-teachers-and-evaluation-report-dped-piloting-programme-presented) | UNESCO 證實能力框架及研討會曾「呈現」，但尚不能據此認定全國已生效、具法定強制效力或精確能力向度 | 原文有公開正式框架或政府發布命令時再查；現階段僅當作教師專業發展案例 |
+
 ## 本輪結案：香港兩項教師培訓活動日期與課程編號
 
 香港教育局另外提供官方按學段分類的專業發展課程列表：
