@@ -106,3 +106,7 @@ GitHub Pages：Settings → Pages → Source = GitHub Actions。正式更新經 
 ## 語意審查：原始方法數據交叉核對（2026-10-09）
 
 [8條來源具體數據與推論反例](research/benchmarks/documentary-contradiction-notes-2026-10-09.md)，核對發現特定 RCT 最初招募 116 人、最後分析 95 人，已更新先前誤列「無法判定」的候選題。此批資料只來自出版社／原機構可檢索頁面，**並未取得與封存完整原文**；不認證全文、真人金標或可泛化的模型誤判率。
+
+## 結構化證據卡與中文主張核對 v0.1
+
+已新增 [證據卡比對規格與限制](research/benchmarks/structured-source-fact-gate-notes.md)、[8 個對照案例](research/benchmarks/structured-source-fact-probes-2026-10-09.json)及 `research/compare-source-facts.js`。它只核對**事先明確結構化**的招募／分析人數、研究族群、活動類型等欄位，區分矛盾、已填欄位相容、證據不足與無效資料；所有結果一律 `hold`。未涵蓋任意中文自然語言解析，也未取得出版社全文原始快照，不能視為完成獨立語意有效性驗證或准予正式發布。
