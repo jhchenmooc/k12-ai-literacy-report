@@ -11,6 +11,12 @@ function check(c){
   if(!["news_policy","research"].includes(c.kind))reasons.push("invalid kind");
   if(!["bibliographic","descriptive","high_impact"].includes(c.claim_class))reasons.push("invalid claim class");
   if(typeof c.claim_text!=="string"||!c.claim_text.trim())reasons.push("missing claim");
+  if(!["low","medium","high"].includes(c.risk_tier))reasons.push("missing or invalid risk_tier");
+  if(c.claim_class==="high_impact"&&c.risk_tier!=="high")reasons.push("high-impact must be high risk");
+  if(c.claim_class==="descriptive"&&c.risk_tier==="low")reasons.push("descriptive claim cannot be low risk");
+  if(c.risk_tier==="high")reasons.push("high-risk claim requires separate editorial review and cannot be auto-published");
+  // Conservative surface-level flags; not a semantic truth or risk assessment.
+  if(c.risk_tier!=="high"&&/(全國.*(強制|必須|上路|生效)|已.*(生效|強制)|證明.*(成效|提升)|證實.*(因果|提高|提升)|顯著(提高|改善|提升)|RCT.*(證明|有效)|因果效果|長期.*(提升|改善)|所有.*(學生|教師).*(有效|提升))/.test(c.claim_text||""))reasons.push("potential high-risk assertion must be held for review");
   for(const field of ["claim_id","source_url","source_locator","checked_at","publication_date","source_type"]){
     if(typeof c[field]!=="string"||!c[field].trim())reasons.push("missing "+field);
   }
@@ -23,6 +29,14 @@ function check(c){
   if(need>=2&&c.scope_checked!==true)reasons.push("scope not checked");
   if(need>=3&&c.outcome_checked!==true)reasons.push("outcome not checked");
   if(need>=3&&c.independent_review!==true)reasons.push("independent human review missing");
+  // Two isolated AI passes are metadata and cannot prove genuine independence.
+  // Do not require human labels for low/medium; never allow their absence to
+  // silently upgrade a claim to a high-risk finding.
+  if(c.risk_tier==="medium"){
+    if(c.ai_crosscheck_status!=="concordant")reasons.push("medium risk needs two-pass agreement");
+    if(c.ai_crosscheck_passes!==2)reasons.push("medium risk needs two review passes");
+    if(typeof c.ai_crosscheck_record!=="string"||c.ai_crosscheck_record.trim().length<12)reasons.push("medium risk crosscheck trace missing");
+  }
   if(!["publish","hold"].includes(c.decision))reasons.push("invalid or missing decision");
   if(c.conflict_unresolved!==false)reasons.push("unresolved or unknown conflict");
   const allow=reasons.length===0;
