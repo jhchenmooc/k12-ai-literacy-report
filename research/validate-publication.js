@@ -18,7 +18,7 @@ function scan(root,folder){
  */
 function plain(html){
  const entities={amp:"&",lt:"<",gt:">",quot:'"',apos:"'",nbsp:" "};
- return html.replace(/<[^>]*>/g," ").replace(/&(#x[0-9a-f]+|#[0-9]+|[a-z]+);/gi,(_,e)=>{
+ return html.replace(/<[^>]*>/g,"").replace(/&(#x[0-9a-f]+|#[0-9]+|[a-z]+);/gi,(_,e)=>{
   const t=e.toLowerCase();if(t[0]==="#"){const n=t[1]==="x"?parseInt(t.slice(2),16):parseInt(t.slice(1),10);return Number.isFinite(n)&&n>0&&n<=0x10ffff?String.fromCodePoint(n):" "}
   return Object.prototype.hasOwnProperty.call(entities,t)?entities[t]:"&"+e+";";
  }).replace(/\s+/g," ").trim();
