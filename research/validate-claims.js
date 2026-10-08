@@ -15,6 +15,8 @@ function check(c){
   if(c.claim_class==="high_impact"&&c.risk_tier!=="high")reasons.push("high-impact must be high risk");
   if(c.claim_class==="descriptive"&&c.risk_tier==="low")reasons.push("descriptive claim cannot be low risk");
   if(c.risk_tier==="high")reasons.push("high-risk claim requires separate editorial review and cannot be auto-published");
+  // Conservative surface-level flags; not a semantic truth or risk assessment.
+  if(c.risk_tier!=="high"&&/(全國.*(強制|必須|上路|生效)|已.*(生效|強制)|證明.*(成效|提升)|證實.*(因果|提高|提升)|顯著(提高|改善|提升)|RCT.*(證明|有效)|因果效果|長期.*(提升|改善)|所有.*(學生|教師).*(有效|提升))/.test(c.claim_text||""))reasons.push("potential high-risk assertion must be held for review");
   for(const field of ["claim_id","source_url","source_locator","checked_at","publication_date","source_type"]){
     if(typeof c[field]!=="string"||!c[field].trim())reasons.push("missing "+field);
   }
