@@ -70,3 +70,7 @@ GitHub Pages：Settings → Pages → Deploy from a branch → `main` / `(root)`
 ## 新期正文與證據逐項對照（開發分支）
 
 新建週報與月報除原本 `publication/issues.json` 與 `publication/claims/*.json` 外，須讓 `<main>` 內具實質內容的 p、h3/h4、li、blockquote、figcaption、td/th 逐項標記 `data-claim-id`，CI 對照 JSON 中 `claim_text`；請參閱 [正文綁定操作說明](research/body-claim-binding-guide.md)。這項功能僅能檢查格式與文字一致，不能判斷原始資料真偽；legacy 期刊不自動追認通過。
+
+## 原文快照與中文解讀核驗（新期刊）
+
+新週報與月報的實質性主張，除了正文與 claim_id 對照，須附可逐字比對的原文摘錄、具 SHA-256 的來源快照、來源 URL 及解讀／適用範圍說明。參閱 [來源證據與人工語意審查 SOP](research/source-to-claim-review.md)。程式只檢查資料鏈及檔案一致性；不能保證原始快照真實、譯文解讀正確，亦不能替代不同真人的高影響內容複核。
