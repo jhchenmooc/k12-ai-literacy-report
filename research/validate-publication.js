@@ -21,19 +21,19 @@ function plain(html){
  return html.replace(/<[^>]*>/g," ").replace(/&(#x[0-9a-f]+|#[0-9]+|[a-z]+);/gi,(_,e)=>{
   const t=e.toLowerCase();if(t[0]==="#"){const n=t[1]==="x"?parseInt(t.slice(2),16):parseInt(t.slice(1),10);return Number.isFinite(n)&&n>0&&n<=0x10ffff?String.fromCodePoint(n):" "}
   return Object.prototype.hasOwnProperty.call(entities,t)?entities[t]:"&"+e+";";
- }).replace(/\\s+/g," ").trim();
+ }).replace(/\s+/g," ").trim();
 }
 function matchBody(html,claims){
- const errors=[],matches=[...html.matchAll(/<main\\b[^>]*>([\\s\\S]*?)<\\/main>/gi)];
+ const errors=[],matches=[...html.matchAll(/<main\b[^>]*>([\s\S]*?)<\/main>/gi)];
  if(matches.length!==1)return ["expected exactly one static main region"];
  const body=matches[0][1];
- if(/<script\\b/i.test(body)||/\\bcontenteditable\\s*=/i.test(body))errors.push("dynamic script/contenteditable unsupported within main");
- const nodes=[...body.matchAll(/<(p|h3|h4|li|blockquote|figcaption|td|th)\\b([^>]*)>([\\s\\S]*?)<\\/\\1>/gi)];
+ if(/<script\b/i.test(body)||/\bcontenteditable\s*=/i.test(body))errors.push("dynamic script/contenteditable unsupported within main");
+ const nodes=[...body.matchAll(/<(p|h3|h4|li|blockquote|figcaption|td|th)\b([^>]*)>([\s\S]*?)<\/\1>/gi)];
  if(nodes.length===0)errors.push("no inspectable substantive content nodes in main");
  const counts=new Map(),map=new Map(claims.filter(x=>x&&typeof x.claim_id==="string").map(x=>[x.claim_id,x]));
  for(const [,tag,attrs,raw] of nodes){
   const t=plain(raw);if(!t)continue;
-  const id=(attrs.match(/\\bdata-claim-id\\s*=\\s*["']([^"']+)["']/i)||[])[1];
+  const id=(attrs.match(/\bdata-claim-id\s*=\s*["']([^"']+)["']/i)||[])[1];
   if(!id){errors.push("unbound content <"+tag+">: "+t.slice(0,70));continue}
   counts.set(id,(counts.get(id)||0)+1);
   if(!map.has(id)){errors.push("unknown body claim "+id);continue}
