@@ -21,7 +21,7 @@ test("digest schedule aggregates issues rather than writing unverified correctio
  assert.ok(workflow.includes("summarize-reader-feedback.js"));
  const code=read("research/summarize-reader-feedback.js");
  assert.ok(code.includes('startsWith(PREFIX)'));
- assert.ok(code.includes("不代表新聞或論文經正式驗證"));
+ assert.ok(code.includes("評分不是事實查核結果"));
 });
 
 test("pure rating without narrative is allowed",()=>{const s=read(".github/ISSUE_TEMPLATE/reader-feedback.yml");for(const id of ["id: excerpt","id: feedback"]){const section=s.slice(s.indexOf(id),s.indexOf("  - type:",s.indexOf(id)));assert.match(section,/required: false/) }});
