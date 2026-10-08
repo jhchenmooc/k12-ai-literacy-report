@@ -48,3 +48,7 @@ id,type,tier,name,scope,url
 "C17","conference","擴充","AERA Annual Meeting — American Educational Research Association Annual Meeting","教育政策、測量、教師、K-12學習","https://www.aera.net/Events-Meetings/Annual-Meeting"
 "C18","conference","背景","ICALT — IEEE International Conference on Advanced Learning Technologies","AI技術、教育應用","https://tc.computer.org/tclt/"
 "C20","conference","背景","SITE Interactive — Online Society for Information Technology and Teacher Education","教師培力與新工具早期應用","https://aace.org/conf/site-interactive/"
+"J31","journal","核心","International Journal of STEM Education","K-12 AI/STEM、師資教育與人機協作","https://link.springer.com/journal/40594"
+"J32","journal","擴充","Discover Education","中小學AI教育與跨國學段研究","https://link.springer.com/journal/44217"
+"J33","journal","擴充","Humanities and Social Sciences Communications","AI素養、青少年與教育認知","https://www.nature.com/hsscomms/"
+"J34","journal","擴充","Canadian Journal of Science, Mathematics and Technology Education","STEM、師資生、AI教學","https://link.springer.com/journal/42330"
