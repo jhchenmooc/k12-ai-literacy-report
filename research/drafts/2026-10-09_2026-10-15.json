@@ -33,7 +33,9 @@
       "ai_crosscheck_status": "not_started",
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
-      "screening_note": "Primary institutional event page seen; event occurs in period; original publication date not established."
+      "screening_note": "2026-10-09 13:00–14:30, youth aged 12–15 and guardians, and training/verification activities are explicitly shown on Penn State's official event page. Original posting date and any outcome evaluation remain unknown; classify as this-week event rather than this-week news.",
+      "event_local_time": "13:00–14:30 America/New_York",
+      "event_audience": "Children aged 12–15 accompanied by parent or guardian"
     },
     {
       "candidate_id": "W2026-10-09-A02",
@@ -56,7 +58,7 @@
       "ai_crosscheck_status": "not_started",
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
-      "screening_note": "Government training-calendar listing, but detailed date mapping and original posting date need verification."
+      "screening_note": "Search-indexed EDB training calendar suggests 2026-10-09, but opened calendar pagination does not expose stable detailed course record. Keep event date tentative, publication date unknown and claim held pending detail verification."
     },
     {
       "candidate_id": "W2026-10-09-A03",
@@ -79,7 +81,7 @@
       "ai_crosscheck_status": "not_started",
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
-      "screening_note": "Government training-calendar listing, calendar dates require detailed verification."
+      "screening_note": "Search-indexed EDB training calendar suggests 2026-10-09, but opened calendar pagination does not expose stable detailed course record. Keep event date tentative, publication date unknown and claim held pending detail verification."
     },
     {
       "candidate_id": "W2026-10-09-A04",
@@ -102,7 +104,7 @@
       "ai_crosscheck_status": "not_started",
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
-      "screening_note": "Clearly outside period by publication date and outside K-12 direct population; background-only low priority."
+      "screening_note": "Outside 10/09–10/15 publication-date window and marginal K–12 applicability. Deprioritized; do not spend additional verification effort absent a specific editorial need."
     }
   ],
   "item_template": {
@@ -132,9 +134,9 @@
     "screened_on": "2026-10-09",
     "source_types": "institutional event announcements or government training calendar",
     "warnings": [
-      "These are event dates, not verified first-publication dates.",
-      "Candidate summaries are not evidence-certified news claims.",
-      "All items remain hold; do not register or publish."
+      "Penn State's Oct 9 activity time/audience verified on official event page; original announcement date unknown.",
+      "Hong Kong calendar search snippets are not a substitute for stable detailed records.",
+      "None are verified news publications or student-outcome studies; all remain hold."
     ]
   }
 }

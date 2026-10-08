@@ -4,10 +4,13 @@
 
 | 優先 | 主題／來源 | 目前卡住的原因 | 下一個最小查核動作 |
 |---|---|---|---|
-| 高 | [教師自主權是否有跨國統計證據（BLIND-N01-04）](https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor) | 目前檢索到評論及政策文本分析，無法確認是否有具代表性的教師自主權實地統計；涉及政策誤讀風險 | 查文章所引用研究的方法、樣本與統計表；無法取得就保留「未確認」，不要當成各國現況 |
-| 中 | [Nature AI Detectives 青少年活動（W2026-10-09-A01）](https://arboretum.psu.edu/events/nature-ai-detectives-an-outdoor-ai-literacy-adventure-2/) | 活動日期落在本期，但初次公告日尚未確認，亦無學習效果資料 | 核對活動頁的公告日期；若無，標明「本週活動／非本週新公告」 |
-| 中 | [香港中學教師 AI 素養及網路安全研討會（W2026-10-09-A02）](https://tcs.edb.gov.hk/tcs/portal/publiccalendar/searchPublicCal/search.htm?fromMenu=Y&pdType=2) | 行事曆列表尚缺可定位的詳細頁及準確課程日期 | 查看課程編號 ITED20260520 的細節；若不能確認日期，保留候選 |
-| 中 | [香港小學英語教師 GenAI 課程（W2026-10-09-A03）](https://tcs.edb.gov.hk/tcs/portal/publiccalendar/searchPublicCal/search.htm?fromMenu=Y&pdType=2) | 同樣需要課程詳細頁確認日期和適用對象 | 核對課程編號 ITED20260476，確認後只報導教師培訓，不外推成效 |
+| 中 | [Nature AI Detectives 青少年活動（W2026-10-09-A01）](https://arboretum.psu.edu/events/nature-ai-detectives-an-outdoor-ai-literacy-adventure-2/) | 官方活動頁確認10/09 13:00–14:30，12–15歲與家長；初次公告日仍未知，亦無學習效果資料 | 有公告日期再補；否則僅稱「本週活動」，不當成新公告或成效 |
+| 中 | [香港中學教師 AI 素養及網路安全研討會（W2026-10-09-A02）](https://tcs.edb.gov.hk/tcs/portal/publiccalendar/searchPublicCal/search.htm?fromMenu=Y&pdType=2) | 搜尋索引顯示10/09與課程編號，但可展開頁面未穩定顯示該筆完整課程細節 | 查看課程編號 ITED20260520 的細節；若不能確認日期，保留候選 |
+| 中 | [香港小學英語教師 GenAI 課程（W2026-10-09-A03）](https://tcs.edb.gov.hk/tcs/portal/publiccalendar/searchPublicCal/search.htm?fromMenu=Y&pdType=2) | 索引顯示10/09及小學英語教師對象，仍缺可穩定核對的完整課程詳細頁 | 核對課程編號 ITED20260476，確認後只報導教師培訓，不外推成效 |
+
+## 本輪結案：教師自主權統計主張
+
+原 [Education International 作者評論](https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor) 已可閱讀正文。文中方法描述是**三份 AI 能力框架文件的質性政策分析、文本探勘與網絡分析**，論點是文件如何呈現教師能動性；**不是各國教師實際失去自主權的跨國代表性實地調查統計**。因此 BLIND-N01-04 這項「原文提供各國教師失去自主權的統計證據」不宜採用，從待查清單移出。這只否定「該篇評論提供這類統計」的說法，不能推論世界上完全不存在相關研究；原引用期刊論文若日後需要可再另查，暫不擴大。
 
 ## 簡化處理原則
 
