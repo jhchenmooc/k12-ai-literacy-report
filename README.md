@@ -57,3 +57,12 @@ GitHub Pages：Settings → Pages → Deploy from a branch → `main` / `(root)`
 - [研究證據查核規範 v1.1](research/evidence-safety-gates.md)：學段、結果變項、因果限制與重要數字原文定位。
 - [發布檢核欄位與合成情境](research/publication-check-spec.md)；[結構驗證程式](research/validate-claims.js)：測試可刊／暫緩邏輯，並非網頁原文與新聞真實性驗證。
 - 執行方式：`node research/validate-claims.js claims.json`。實際公開前必須提供真實查核紀錄；未核實內容應暫緩，不能僅以程式回傳 allow=true 當出版許可。
+
+## GitHub Actions 發布查核（試行）
+
+- [驗證 workflow](.github/workflows/verify-and-deploy.yml)：於推送與 PR 進行 Node.js 合成測試，以及掃描週報、月報目錄和發布紀錄。
+- [未來期別登記](publication/issues.json)：每個新出版的 weekly 或 monthly HTML 必須列入清單，並附 publication/claims/ 下對應的逐項查核 JSON；缺少或列出 hold 主張會使檢查失敗。
+- [創刊特刊 13 筆歷史查核資料](publication/audits/2026-09-29_10-08.json)：均保留為 hold、未經獨立驗證，**不屬於已放行證據**；9 月歷史月報同樣保留為未經此 CI 認證的 legacy 內容。
+- **目前 GitHub Pages 舊的分支部署仍能繞過此檢查。** 為避免部署衝突，新工作流程的 Pages 部署步驟預設停用，只有專案變數 ENABLE_VERIFIED_PAGES_DEPLOY 設為 true 才會開啟。
+- 啟用真正的受檢部署：由有管理權限者進入 Settings → Pages，將 Source 改成 GitHub Actions，接著於 Settings → Secrets and variables → Actions → Variables 設 ENABLE_VERIFIED_PAGES_DEPLOY=true。另建議設定 main 的 branch protection 和必要檢查，限制未審查的直接推送。
+- 程式只能檢查欄位與狀態邏輯，不能辨別使用者是否真的正確閱讀原文，也不能取代真人領域審核。上線前仍須獨立查核來源及主要結論。
