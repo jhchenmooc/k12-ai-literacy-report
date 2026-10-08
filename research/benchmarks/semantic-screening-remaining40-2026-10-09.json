@@ -683,11 +683,11 @@
       "group": "R04",
       "domain": "research",
       "claim": "原始招募人數與實際納入分析人數永遠相同。",
-      "provisional_verdict": "cannot_determine",
-      "reason": "摘要交代分析 N=95 和兩組人數，但未完整核查招募、排除、流失與實際納入分析流程，不能宣稱永遠相同。",
+      "provisional_verdict": "contradicted_by_explicit_methods",
+      "reason": "出版社研究方法段落已列明最初招募116名大學STEM學生，最後只有95人完成程序並納入分析，因此「原始招募人數與實際分析人數永遠相同」與這篇研究的具體數據相矛盾。此為索引方法段落核對，不代表完成整篇全文快照。",
       "source_url": "https://link.springer.com/article/10.1186/s40594-026-00652-9",
-      "source_locator": "abstract / recruitment flow not audited",
-      "source_excerpt_short": "The experimental group (n = 50)",
+      "source_locator": "Methods / Research design and participants / initial recruitment and completed procedures",
+      "source_excerpt_short": "initially recruited 116 sophomore STEM students",
       "source_access_level": "publisher_search_index_excerpts_and_sections",
       "original_claim_source_url": "https://doi.org/10.1186/s40594-026-00652-9",
       "limits": "電磁學任務修訂的特定短期實驗，不能宣稱全臺K–12長期批判思考成效。",
@@ -695,7 +695,8 @@
       "verbatim_snapshot_archived": false,
       "is_independent_human_gold": false,
       "decision": "hold",
-      "note": "Publisher page indexed text was inspected, not an independently archived full primary source; labels are not gold."
+      "note": "Publisher page indexed text was inspected, not an independently archived full primary source; labels are not gold.",
+      "evidence_detail": "The publisher-indexed methods state 116 recruited and 95 with complete data; 21 did not complete all procedures."
     },
     {
       "candidate_id": "BLIND-R05-03",
