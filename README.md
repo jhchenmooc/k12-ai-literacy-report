@@ -98,3 +98,7 @@ GitHub Pages：Settings → Pages → Source = GitHub Actions。正式更新經 
 ## 首期標準週報建稿（不預填未查核內容）
 
 已建立 [2026/10/09–10/15 週報候選工作表](research/drafts/2026-10-09_2026-10-15.json)。初始 `items` 為空，狀態為 `draft_pending_source_verification`，並不是已發布的新聞、已審核的論文或 `publication/issues.json` 中的正式報告。可以用 `node research/scaffold-weekly.js 2026-10-16` 在本地建立下一期候選檔；只接受合法週五起始日期，既有檔案不得覆寫。填入真實來源與逐條核對資料後，仍須另外依 [風險分級規範](research/low-human-review-policy.md) 產生正式 HTML／查核 JSON，通過必要 CI 才能發布。暫停的 Google Forms 不在本流程內。
+
+## 60 題語意審查：初步資料覆蓋，不是正式驗證
+
+[60題第一階段初篩報告](research/benchmarks/semantic-screening-60-progress-2026-10-09.md)；[後40題資料](research/benchmarks/semantic-screening-remaining40-2026-10-09.json)。已涵蓋60/60題並註記來源與暫定判讀，但**沒有全文逐題原始證據快照、獨立真人金標籤或可宣稱的真實模型漏判率**。所有資料維持 hold；不得把結構測試通過當作新聞或論文語意已正確核實。60題已經經過暫定判讀，不應再冒充真正未見過答案的獨立盲測。
