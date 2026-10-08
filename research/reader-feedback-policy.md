@@ -61,3 +61,7 @@
 **尚未確認**：未登入 Google／GitHub 時是否能正常進入並送出、Google 表單是否強制收集電子郵件、真正收件端是否收到測試回覆。這些均不可能只靠 GitHub CI 證明。網站狀態保留 `receiptVerified: false`，並明示「待驗收」，不得宣稱已經完成免登入可用性測試。
 
 後續請表單管理者在無痕／登出狀態送出不含真實個資的一筆測試資料，於 Google Forms「回覆」面板確認，再核對不收集電子郵件、無機構限制、不要求登入；只有實際測試成功，才將 `receiptVerified` 改成 true。之後若需每週彙整 Google Forms 的回饋，須另外建立最小權限的聚合管道；**目前 GitHub Issues 每週整理並不統計 Google Forms 回覆**。
+
+## Google 表單暫停（2026-10-09）
+
+依管理者要求，已取消網站對外 Google Forms 的連結及收件配置。`feedback/no-login/` 舊網址顯示暫停說明並導回 GitHub Issues，不收件。既有 Google 表單由 Google 帳戶持有人自行管理；本次不刪除表單或其原始回覆。週報／月報評鑑與每週公開 Issue 彙整維持不變。未來重啟需另行確認需求、隱私與收件測試並透過 PR 啟用。
