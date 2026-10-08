@@ -8,7 +8,7 @@
 - **擴充**：每週關鍵字跨庫檢索＋每月集中巡覽，強化學習科學、政策、教育公平及測量學。
 - **背景**：每月或重大事件觸發搜尋；適合補充方法、技術或倫理，但需特別檢查是否具有 K-12 適用性。
 
-## 2. 期刊池（30 種）
+## 2. 期刊池（34 種）
 
 | ID | 級別 | 期刊 | 適用主題 | 查核入口 |
 |---|---|---|---|---|
@@ -42,6 +42,11 @@
 | J28 | 背景 | IEEE Transactions on Education | 工程與資訊教育（注意學段） | [期刊頁](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=13) |
 | J29 | 背景 | Frontiers in Education | 教育創新、AI素養、教師 | [期刊頁](https://www.frontiersin.org/journals/education) |
 | J30 | 背景 | International Review of Research in Open and Distributed Learning | 數位公平、線上教育與AI | [期刊頁](https://www.irrodl.org/) |
+
+| J31 | 核心 | International Journal of STEM Education | K-12 AI/STEM、師資教育與人機協作 | [期刊頁](https://link.springer.com/journal/40594) |
+| J32 | 擴充 | Discover Education | 中小學AI教育與跨國學段研究 | [期刊頁](https://link.springer.com/journal/44217) |
+| J33 | 擴充 | Humanities and Social Sciences Communications | AI素養、青少年與教育認知 | [期刊頁](https://www.nature.com/hsscomms/) |
+| J34 | 擴充 | Canadian Journal of Science, Mathematics and Technology Education | STEM、師資生、AI教學 | [期刊頁](https://link.springer.com/journal/42330) |
 
 ## 3. 國際會議池（19 個會議系列）
 
@@ -137,3 +142,6 @@ framework_alignment,duplicate_group,weekly_priority,notes
 ## 9. 維護提醒
 
 本清單是先行建立的候選監測名單；已抽查重要會議／論文集官方入口，其他期刊與會議連結在第一次自動化蒐集前需逐項連線／識別校驗。出版社 URL 可能改版，應以 DOI 與期刊官方網站交叉驗證。學術收錄、索引和審查型態必須逐篇或依出版當年公告判斷，不能以本清單保證。
+## 10. 2026/9/29–10/8 學術回查
+
+[候選及日期／學段核對檔](retrospective-2026-09-29_10-08.md)。本期發現監測池遺漏的四種期刊，故擴充至 34 種期刊、19 個會議系列。第一期正常七日週報為 2026/10/09–10/15，10/16 發布。
