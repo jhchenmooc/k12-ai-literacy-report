@@ -1,0 +1,22 @@
+name: Weekly public reader feedback digest
+on:
+  schedule:
+    - cron: '20 7 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test feedback parsing and aggregation
+        run: node --test research/summarize-reader-feedback.test.js
+      - name: Summarize verified submissions as a public tracking issue
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node research/summarize-reader-feedback.js

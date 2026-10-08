@@ -30,6 +30,10 @@ jobs:
         run: |
           node --test research/validate-blind-pack.test.js
           node research/validate-blind-pack.js research/benchmarks/blind-review-candidates-60.json
+      - name: Validate reader feedback form and public entry points
+        run: |
+          node --test research/validate-reader-feedback.test.js
+          node --test research/summarize-reader-feedback.test.js
       - name: Validate issue manifests and claim metadata
         run: node research/validate-publication.js .
   deploy:
