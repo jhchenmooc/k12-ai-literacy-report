@@ -2,6 +2,11 @@
 
 以 GitHub Pages 公開發布 K-12 AI 素養國際政策、研究及學校實務資訊。採每日蒐集、每週發布、月底跨週趨勢總結的編輯流程。
 
+## 新 Session 接手入口
+
+- [**固定工作交接檔（SESSION-HANDOFF）**](research/SESSION-HANDOFF.md)：最後確認的 GitHub 證據、重要決策、完成／待辦、已知疏漏及最短接續步驟。接手先重新查最新主分支狀態。
+- [完整編輯與出版主控 SOP](research/editorial-workflow-master.md)：資料搜尋、來源查核、主張驗證、PR／CI、Pages、勘誤。
+
 ## 已發布
 - 網站首頁：`index.html`
 - 創刊特刊（2026/09/29–10/08，10 天過渡期）：`weekly/2026-09-29_10-08/index.html`
