@@ -56,6 +56,9 @@ https://api.openalex.org/works?filter=primary_location.source.id:S4210183364,fro
 - **當天新登記的 DOI 尚未收錄**（逐 DOI 查回 404），隔幾天再查。
 - **會議**：AIED 沒有自己的來源，併在 Springer LNCS 書系（S106296714）且幾乎無摘要；EDM 會議來源幾乎沒收錄。會議請先用 3.3 的方法定位。
 - 兒童 HCI 期刊（J35 IJCCI）多用 children／youth 而不是學段詞，主查詢要補這類詞。
+- **大型 OA 期刊**（J29 Frontiers in Education、J32 Discover Education、J33 HSSC，範圍內各 1,700–4,800 篇）：只用片語查詢、設細讀上限，超過者列待判；查詢涵蓋不完整要寫進 notes（B1 批，2026-10-09）。
+- **缺摘要高**（B1 實測）：J20 49%、J23 54%、J24 55%、J28 55%、J34 76%、J39 56%；IEEE TLT 在 Crossref 無 `published-online`。AI & Society（J24）幾乎整本與 AI 有關，題名查詢需再用教育／學段詞過濾。
+- Frontiers 的卷號對應年份（vol 10＝2025、vol 11＝2026）；issued 日可能落在下一年，`year_basis=issue_year` 依卷號年並註明。
 
 ### 3.2 Crossref（https://api.crossref.org）
 
@@ -85,6 +88,13 @@ https://api.crossref.org/works?filter=isbn:978-3-031-98414-3&rows=200
 | C02 EDM | 自行出版、Zenodo DOI（10.5281/zenodo.*，DataCite，不在 Crossref）；OpenAlex 幾乎沒有。從 `educationaldatamining.org/edm2025/proceedings/`、`/edm2026/proceedings/` 目錄列舉後自行比對。workshop 另外出版，未涵蓋 |
 | C21 WiPSCE | ACM，DOI `10.1145/3801749.*`，OpenAlex 來源 S7407087161 |
 | C22 EAAI | AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI-26 在 vol 40 no 47–48；用期次頁分節標題區分 EAAI 與主會議／IAAI。**「Resources for Teaching AI in K-12」分軌產量最高** |
+| C13 CHI | ACM。OpenAlex 主論文集 S4363607743、Extended Abstracts S7407087610；DOI 前綴 10.1145/3706598（2025 主）、3772318（2026 主）、3706599（2025 EA）、3772363（2026 EA）。Crossref `filter=isbn:` 只命中論文集本身，逐篇列舉要用 `container-title` 精確 filter。2025 卷大量無摘要 |
+| C14 IDC | ACM。OpenAlex 每年一個來源：S4306418951（2025）、S7407086122（2026）；DOI 10.1145/3713043、3773077 |
+| C15 FAccT | ACM。OpenAlex S4363608463；DOI 10.1145/3715275、3805689。卷名含逗號，Crossref `container-title` filter 回 HTTP 400，改用 OpenAlex |
+| C16 CSCW | 主論文登在 PACM HCI（OpenAlex S4210183893，期刊型）；CSCW 期次（如 vol 9 issue 2／7）依 ACM 慣例推定，需 ACM DL 確認。Companion 2025 為 S7407086786（10.1145/3715070）；2026 Companion 截至 2026-10-09 未登記 |
+| C17 AERA | Crossref 有 DOI（10.3102/<7 位數>，container「Proceedings of the 2025/2026 AERA Annual Meeting」）；OpenAlex S4363608631 幾乎無摘要、日期為佔位 YYYY-01-01；摘要可讀官方線上議程頁。**多為 session 層級 DOI，同一論文常有多個議程 DOI**；篇型含 paper／poster／roundtable |
+| C18 ICALT | IEEE。2025：Crossref container 列舉 118 筆（10.1109/icalt64023.2025.*），OpenAlex S4363608377 只收 82 筆。2026 截至 2026-10-09 未登記 |
+| C20 SITE Interactive | **unavailable**（2026-10-09）：OpenAlex 無此來源（SITE 年會只到 2021）、Crossref 無紀錄；LearnTechLib 對自動請求回 HTTP 202 空白，疑似機器人驗證，不得繞過 |
 
 找不到可靠入口就記 `unavailable` 與原因，不得記零命中。
 
