@@ -56,7 +56,8 @@ function validate(records,relations,runs,candidates){
   if(x.object_namespace==="source")check(/^(J(?:0[1-9]|[12][0-9]|3[0-9])|C(?:0[1-9]|1[0-8]|20|21|22)|O-[A-Z0-9-]+)$/.test(x.object_id),"invalid source ID: "+x.object_id);
   check(x.verification_status==="discovered_unverified"||x.verification_status==="bibliographic_checked"||x.verification_status==="content_checked","invalid relation status: "+x.relation_id);
   if(x.predicate==="has_category")check(x.object_namespace==="vocabulary"&&vocab.includes(x.object_id),"invalid category relation: "+x.relation_id);
-  if(x.predicate==="published_in")check(x.object_namespace==="source","invalid venue relation: "+x.relation_id);
+  if(x.predicate==="published_in")check(x.object_namespace==="source"&&/^[JC]/.test(x.object_id),"invalid venue relation: "+x.relation_id);
+  if(x.predicate==="issued_by")check(x.object_namespace==="source"&&x.object_id.startsWith("O-"),"invalid issuing agency: "+x.relation_id);
  }
  const runIds=new Set();
  for(const x of runs){
@@ -78,7 +79,7 @@ function index(records,relations){
   add("by-year/"+(x.year_value||"unknown")+"/"+(x.year_basis||"unknown"),x.record_id);
   add("by-type/"+x.record_type,x.record_id);
  }
- const relationsIndex={has_category:"by-category",applies_to_country:"by-country",studies_country:"by-country",published_in:"by-source",has_topic:"by-topic"};
+ const relationsIndex={has_category:"by-category",applies_to_country:"by-country",studies_country:"by-country",published_in:"by-source",issued_by:"by-source",has_topic:"by-topic"};
  for(const rel of relations){
   const p=relationsIndex[rel.predicate];
   if(p){
