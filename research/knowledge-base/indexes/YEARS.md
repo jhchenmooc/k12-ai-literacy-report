@@ -58,6 +58,16 @@
 | KB-2025-0030 — [Supporting AI Literacy Teaching Through the Development of Assessments for Classroom Use](https://doi.org/10.1609/aaai.v39i28.35191) | conference_paper | 未知 | discovered_unverified |
 | KB-2025-0031 — [Learning About Algorithm Auditing in Five Steps: Scaffolding How High School Youth Can Systematically and Critically Evaluate Machine Learning Applications](https://doi.org/10.1609/aaai.v39i28.35192) | conference_paper | 未知 | discovered_unverified |
 | KB-2025-0032 — [What Can Youth Learn About Artificial Intelligence and Machine Learning in One Hour? Examining How Hour of Code Activities Address the Five Big Ideas of AI](https://doi.org/10.1609/aaai.v39i28.35193) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0033 — [Free word association analysis of students' perception of artificial intelligence](https://doi.org/10.3389/feduc.2025.1543746) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0034 — [Exploring artificial intelligence literacy among basic school teachers in Ghana](https://doi.org/10.1007/s44217-025-00630-3) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0035 — [Introducing AI Without Computers: Hands-On Literacy and Ethical Sense-Making for Young Learners](https://doi.org/10.1145/3706599.3719876) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0036 — [Briteller: Shining a Light on AI Recommendations for Children](https://doi.org/10.1145/3706598.3714106) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0037 — ["How can we learn and use AI at the same time?": Participatory Design of GenAI with High School Students](https://doi.org/10.1145/3713043.3727057) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0038 — [Investigating Youth AI Auditing](https://doi.org/10.1145/3715275.3732142) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0039 — [Learning AI Auditing: A Case Study of Teenagers Auditing a Generative AI Model](https://doi.org/10.1145/3757620) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0040 — [Enhancing AI Literacy for Minority High School Students: Mixed Outcomes and Insights for Effective Teaching Strategies](https://doi.org/10.3102/2194735) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0041 — [High School Teachers’ Emergent AI Literacy Goals During Professional Learning About Lesson Co-Design (Poster 17)](https://doi.org/10.3102/2186733) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0042 — [Black Middle Schoolers’ AI Self-Efficacy and Outcome Expectations in a Summer Camp](https://doi.org/10.3102/2186946) | conference_paper | 未知 | discovered_unverified |
 
 ## 2026｜first_publication
 
@@ -109,6 +119,42 @@
 | KB-2026-0048 — [Catching the First Light of Tomorrow: A Hackathon-Based Framework for Introducing High School Students to AI Agents](https://doi.org/10.1609/aaai.v40i47.41527) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0049 — [Co-Designing Unplugged Learning Activities with K-2 Teachers for Early AI Literacy Education](https://doi.org/10.1609/aaai.v40i47.41529) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0050 — [From Embeddings to Chatbots: Playful NLP Activities for Middle School AI Literacy](https://doi.org/10.1609/aaai.v40i47.41530) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0052 — [Teaching with and about GenAI: A video study of English and Norwegian lessons in secondary classrooms in Norway](https://doi.org/10.1016/j.tate.2026.105517) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0054 — [AI in rural classrooms: digital discretion, teacher agency, and student engagement in Vermont high schools](https://doi.org/10.1080/17439884.2026.2698577) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0055 — [Leveraging Generative AI Agent to Promote Teaching Reflection in a K–12 AI Course: Effects on Teachers’ Reflection Self-Efficacy, Instructional Design, and Reflective Thinking](https://doi.org/10.1109/tlt.2026.3668051) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0056 — [Interdisciplinary Integration: The Connotation and Methods of Cultivating Artificial Intelligence Talents in K-12 Education](https://doi.org/10.1109/tlt.2026.3672830) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0057 — [Developing an AI literacy competency model for primary school Chinese language teachers: a pilot study](https://doi.org/10.3389/feduc.2026.1831415) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0058 — [From learners to contributors: how an AI-infused STEM program shaped youth identity and initiated them to an AI-future](https://doi.org/10.3389/feduc.2026.1811339) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0059 — [Preparing teachers for the age of artificial intelligence: understanding the challenges and needs of AI-TPACK in Indonesian elementary education](https://doi.org/10.3389/feduc.2026.1769204) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0060 — [Current status of responsible use of generative AI in senior high school science teaching in China](https://doi.org/10.3389/feduc.2026.1800516) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0061 — [Anchored to the text, owned by the student: a policy & practice review for generative AI in literature education](https://doi.org/10.3389/feduc.2026.1805617) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0062 — [Bringing Artificial Intelligence Literacy Into Online Education: Machine-Learning Integration Through Geometry in K–12 Teacher Professional Development](https://doi.org/10.19173/irrodl.v27i2.9140) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0063 — [AI literacy functions as cultural capital in stratified Egyptian schools](https://doi.org/10.1007/s44217-026-01695-4) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0064 — [AI competence domains and experience-based differences among science and technology teachers investigated using structural equation modeling](https://doi.org/10.1007/s44217-026-01403-2) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0065 — [Determinants of AI teachers’ behavioural intention to use virtual simulation platforms: an integrated SEM and fsQCA study](https://doi.org/10.1057/s41599-026-07392-9) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0066 — [Once Upon AI Time: Combining Narrative and Games for Early AI Literacy](https://doi.org/10.1145/3772318.3790471) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0067 — [When AI Gets It Wrong: Scaffolding AI Hallucination Detection for Children Through Chatbot Creation](https://doi.org/10.1145/3772318.3791480) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0068 — ["Rules or Data? Gotta Catch 'Em All!": A Tangible Game for Youth AI Literacy](https://doi.org/10.1145/3772363.3799163) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0069 — [Teaching AI by Hand in Underserved Contexts: Framework and Insights from Nigerian Educators](https://doi.org/10.1145/3772363.3798847) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0070 — [BiasViz: A Project-Based, Narrative-Centered Learning Tool for Engaging Middle School Students in Critical Thinking about AI Biases](https://doi.org/10.1145/3772318.3791555) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0071 — [Supporting Holistic AI Ethics Literacy Education Through Critical Reflection: Three Recommendations for Fostering Children's Ethical Growth](https://doi.org/10.1145/3772318.3791477) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0072 — [Emergent Technology, Emergent Critique: Students and Teachers Developing Critical AI Literacy Through Participatory Design Around Generative AI](https://doi.org/10.1145/3773077.3812170) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0073 — [AI Literacy in Action: Develop Informed AI “Use” Through an ELA Debate and Argumentation Curriculum](https://doi.org/10.1145/3773077.3812139) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0074 — [Parse: Teaching How AI Learns Through Tangible Unplugged Modules](https://doi.org/10.1145/3773077.3812137) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0075 — [Addressing the NLP in the Classroom: Empowering High School Teachers through Participatory Design of Hands-on NLP Activities](https://doi.org/10.1145/3773077.3806141) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0076 — [Expert Perspectives on AI Literacy for K–12 with an Emphasis on Assessment](https://doi.org/10.3102/2279866) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0077 — [Developing AI Literacy Through Teacher Professional Development in STEM: Design Principles for Equitable Integration in K-12 Contexts](https://doi.org/10.3102/2287154) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0078 — [AI Education for Young Children: Considerations for Designing an AI Curriculum and Strategies in Early Childhood Education](https://doi.org/10.3102/2273521) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0079 — [Fostering Elementary Students’ AI Literacy in a Learning Environment Empowered by Generative AI (Poster 22)](https://doi.org/10.3102/2276758) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0080 — [AI by 8: Embedding AI Literacy in K-2 Language Arts in Rural North Carolina Communities (Poster 2)](https://doi.org/10.3102/2282134) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0081 — [Impact of Computing Education by School Type and County on K12 Students’ AI Literacy](https://doi.org/10.3102/2283563) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0082 — [Governance, Privacy, and Integrity: A Comparative Analysis of Generative AI Platform Policies in K–12 Education](https://doi.org/10.3102/2277136) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0083 — [How Are School Districts in California Responding to ChatGPT? A Policy Analysis of Five K–12 Guidelines](https://doi.org/10.3102/2275753) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0084 — [Responsible AI in K–12 Education: A Policy Review (Poster 3)](https://doi.org/10.3102/2283932) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0085 — [Learning to Code, Learning to Care: Promoting Ethics and Agency in Elementary AI Curriculum](https://doi.org/10.3102/2279151) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0086 — [A Systematic Review on How to Design K-12 Artificial Intelligence Education (Poster 24)](https://doi.org/10.3102/2276835) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0087 — [How States Conceptualize AI and Equity in Education: A Policy Analysis of Emerging K–12 Guidance](https://doi.org/10.3102/2280516) | conference_paper | 未知 | discovered_unverified |
 
 ## 2027｜issue_year
 
