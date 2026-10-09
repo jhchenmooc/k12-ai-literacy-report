@@ -170,3 +170,7 @@ Pages 目前從 Repo 根目錄 `.` 上傳，Public Repo 的 `research/`、`publi
 將每一批結果以 JSON 傳入 \`node research/ingest-candidates.js 2026-10-09 batch.json\`。批次需要 \`batch_id\`、\`searched_on\`、\`sources:[{group,query,status}]\` 與 \`candidates\`（每件最少 HTTPS \`source_url\`、\`source_title\`、\`source_locator\`；建議另外附首發日、DOI、\`event_key\`）。原始 URL、DOI 及明示的同事件鍵用於**保守去重**；不以相似題名自動合併不同事件。工具在原每週 JSON 中累積 \`items\` 及 \`search_runs\`，既有核查欄位不被提升；新增一律 \`hold\`。30 天回查中首發早於本週者留為背景，不能當成當週新研究。無法判定首發日者保留待查。出刊前依本 SOP 的 N1–N8／G1–G6 重查，**週五集中作一次編輯決策**，仍須真實編輯核准才可建立正式 claims 及出刊。匯入工具不連網、不自行排程、不出刊。
 
 實務搜尋與批次匯入可以依需要人工啟動，或另行安排 ChatGPT 定時提醒／搜尋；GitHub 自身現有排程並未因此增加每日自動執行。
+
+## 每日快訊待審包 v1.5（正式發布尚未啟用）
+
+每日實際搜尋結果沿用每週候選 JSON（`ingest-candidates.js`），供週報同時選稿，不以日報刊登消耗候選。新候選 `discovered_on`、`discovery_batch_id` 僅記錄實際搜尋批次；跨週 DOI／URL／事件鍵可參照既有候選，重要更新保留短摘要待重新查核。執行 `node research/prepare-daily-brief.js 2026-10-10` 會讀 10/09 搜尋批次，輸出 Markdown 待審包；0 則是正常結果。舊研究列背景、未核證列待查，不會產生正式可刊清單。**此工具不做網路搜尋、不提供真人核准、不能建立 `daily/` 或登錄 issues**。正式日報需另行設計並驗證 PR Review、對應最終版本的真人核准與部署安全；不得把待審包當作正式發布。每週仍須獨立核對來源、反證及編輯決策。
