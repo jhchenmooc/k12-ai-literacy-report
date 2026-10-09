@@ -1,7 +1,7 @@
 # K–12 AI 素養國際動態｜固定 Session 工作交接檔
 
 > **固定檔案：`research/SESSION-HANDOFF.md`**  
-> 基準時間：2026-10-09（臺灣）；本次查核的是 GitHub `main`，本次更新基準為 v1.6 自檢修復分支（main 基準 f1cfa33d58a2；合併後以 Actions 核定新版 SHA）。  
+> 基準時間：2026-10-09（臺灣）；階段 A 以 main `823614bd4d71` 為檢查起點；PR 合併後以最新 main/Actions 為準。現行唯一流程入口：[v1.6 主控 SOP](editorial-workflow-master.md)、[首發查核表](first-disclosure-checklist-v16.md)及[九筆候選審核](drafts/2026-10-09-candidate-audit-v16.md)。  
 > **性質：工作交接和可追溯進度紀錄，不是刊物、不是對所有來源的認證。** 下次工作開始必須先檢查最新 `main`、PR、Actions 與工作表，**不能把此檔的歷史快照當作最新狀態**。
 
 ## 0. 新 Session 先讀這一段
