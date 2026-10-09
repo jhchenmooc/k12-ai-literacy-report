@@ -41,7 +41,7 @@ test("real knowledge classifications retain unverified status and journal links"
  assert.deepEqual(listed["by-journal/J02"],["KB-2026-0009"]);
  assert.deepEqual(listed["by-source/O-HK-EDB"],["KB-2026-0002","KB-2026-0003"]);
  assert.equal(listed["by-year/unknown/unknown"].length,9);
- assert.equal(listed["by-year/2026/first_publication"],undefined);
+ assert.deepEqual(listed["by-year/2026/first_publication"],["KB-2026-0010"]);
  assert.ok(relations.every(x=>x.verification_status==="discovered_unverified"));
 });
 test("synthetic country, topic and conference view is typed and deterministic",()=>{
