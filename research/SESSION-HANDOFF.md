@@ -1,7 +1,7 @@
 # K–12 AI 素養國際動態｜固定 Session 工作交接檔
 
 > **固定檔案：`research/SESSION-HANDOFF.md`**  
-> 基準時間：2026-10-09（臺灣）；本次查核的是 GitHub `main`，最近查得 commit `97180bf134187e6fd50ac446b4327053f3b4ff65`。  
+> 基準時間：2026-10-09（臺灣）；本次查核的是 GitHub `main`，本次接手查得 commit `1dadc18814bdd966b3db571c0c92995462c0ebc8`（PR #32 合併後）。  
 > **性質：工作交接和可追溯進度紀錄，不是刊物、不是對所有來源的認證。** 下次工作開始必須先檢查最新 `main`、PR、Actions 與工作表，**不能把此檔的歷史快照當作最新狀態**。
 
 ## 0. 新 Session 先讀這一段
@@ -55,7 +55,7 @@
 | 完整主控 SOP 與 README 入口 | [PR #31](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/31)、[成功 Run](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37899084578) | 主要內容、連結與程式對齊已檢查；不等於真實新刊端到端驗收 |
 | 歷史 Pages 部署已通過 | [部署驗收紀錄](pages-deployment-acceptance-2026-10-09.md) | 成功部署不代表每條來源與文字獲真實性認證 |
 
-**最近實際確認**：GitHub Actions `37899084578`（主分支 commit `97180bf`）的 `verify=success`、`deploy=success`。這證明該次建置與部署成功，並不證明之後不存在新的改動。
+**最近實際確認**：GitHub Actions [Run #37900505465](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37900505465)（主分支 commit `1dadc188`）整體成功；請依 GitHub job 紀錄核對 verify／deploy。這證明該次建置與部署成功，並不證明之後不存在新的改動。
 
 ## 4. 第一期間編輯進度：不是正式出刊
 
@@ -66,7 +66,7 @@
 - A04 UNESCO 技職活動：前期公告且偏 TVET，不列當期 K–12 新政策。
 - A05 西班牙幼教與國小教師研究：10/7 前期發表，僅跨期延伸閱讀，不能當學生因果研究。
 - A06 多倫多大學批判 AI 素養座談：活動備選，首發日期未明。
-- **A07 UNESCO 墨西哥校園裝置規範與素養建議**：UNESCO 10/9 發文。墨西哥 SEP 規範 **9/22** 早已公告、**11/3** 是宣布的起始適用日；本週新事件是 UNESCO **評論／建議**，不是墨西哥新頒法。已做初篩及原始政策事件鏈核對；**缺正式證據快照、可稽核第二輪中文查核與編輯發布簽核**，仍 `hold`。
+- **A07 UNESCO 墨西哥校園裝置規範與素養建議**：UNESCO 10/9 發文。墨西哥 SEP 規範 **9/22** 早已公告、**11/3** 是宣布的起始適用日；本週新事件是 UNESCO **評論／建議**，不是墨西哥新頒法。已做初篩及原始政策事件鏈核對；本次另在[短名單](drafts/2026-10-09_2026-10-15-shortlist.md)記錄 UNESCO 原文及 SEP 官方索引的反證（SEP 直接讀取受限）；**仍缺正式證據快照、完整第二輪核證與編輯簽核**，保持 `hold`。
 - **切勿**為使進度看起來較快而把 A07 的 `source_checked` 強制改為 true：目前首期固定 [scaffold-weekly.test.js](scaffold-weekly.test.js) 預期所有候選仍未認證。正式核證應在出版階段另建立 `publication/claims/` 與來源快照。
 
 ## 5. 明確未完成與後續次序
@@ -78,12 +78,12 @@
 5. **PR → CI → 合併 → 部署驗收**：PR `verify` 通過後合併；主分支 `verify` 和 `deploy` 成功，再核對網站首頁、正式內文、手機、來源連結與讀者可見更正。
 6. **出刊後回饋與月報**：既有 GitHub Issues，月底跨週綜整；不重啟 Google Forms。
 
-## 6. 已知問題／疏漏：屬待判斷事項，不等於已經修好
+## 6. 本次對齊的舊文件描述與仍存限制
 
-- **README 中的歷史文字可能過期**：例如舊的 Pages 排障連結段落仍提到 `deploy skipped`；後續曾有成功部署的官方紀錄。以最近成功 Run 和[部署驗收記錄](pages-deployment-acceptance-2026-10-09.md)為準。README 先列為**文件精準度改善候選**，不得因此判斷實際網站故障。
-- **首期短名單有過時句**：一處仍寫「既有六項候選」，但目前 JSON 已有 A07、共 **七項**。應在下一次編輯短名單時同步更正，避免新 Session 誤讀；目前所有七項仍 `hold`，不影響發布安全。
-- **正文綁定指南舊敘述**可能寫 `h1/h2` 未涵蓋，但 [實際程式](validate-publication.js)已包含 `h1/h2`。應以程式與後續 PR #23 的修正為準，整理指南即可；不新增測試。
-- **`publication-check-spec.md` 的合成案例 T9** 假設高影響 V3+獨立審查可 publish，但目前 `validate-claims.js` 對所有 `risk_tier=high` 強制拒絕。主控 SOP 已正確註明此落差；日後若改文件，必須將 T9 改成現行阻擋的預期，不應修改程式以迎合測試文字。
+- **README 舊部署文字**：本次已對齊最近成功 CI／部署的紀錄；舊排查文件僅供歷史參考，不代表現在仍故障。
+- **首期短名單候選數**：本次已統一為七項，全部 `hold`；未更動 JSON 的正式核證旗標。
+- **正文綁定指南**：本次已依 [實際程式](validate-publication.js) 對齊 h1/h2 及唯一靜態 main；未新增功能或測試。
+- **發布規格 T9 舊期待**：本次已改為 high 一律 hold，與程式一致；未放寬風險門檻。
 - **候選資料不等於完整原始核查**：目前首期測試把候選 `source_checked=false` 固定成安全假設。若將來真正要讓候選表保留更深入階段，應另行設計與明確核准；**現階段沿用正式 claims 的驗證管道，不改程式**。
 - **出刊前品質風險**：除了 GitHub 綠燈，仍需實際編輯者核對原始資料與完整網頁。系統目前不能保證全自動原文真偽、真人獨立複審或全球新聞窮盡搜尋。
 

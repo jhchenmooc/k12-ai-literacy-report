@@ -21,7 +21,7 @@
 1. 兩類資料均需來源 URL、原文位置、查核日與 `source_checked=true`。沒有上述欄位，禁止把 `decision` 設為 publish。
 2. 純書目事件 `bibliographic`：最低新聞 N-V1、研究 V1。
 3. 一般事實摘要 `descriptive`：新聞最低 N-V2、研究最低 V2，且 `scope_checked=true`。
-4. 高影響主張 `high_impact`：新聞最低 N-V3、研究最低 V3，並要求 `scope_checked`、`outcome_checked`、`independent_review` 均為 true。
+4. 高影響主張 `high_impact`：新聞最低 N-V3、研究最低 V3，並要求 `scope_checked`、`outcome_checked`、`independent_review` 均為 true；但**現行 `risk_tier=high` 仍一律禁止經自動路徑發布**，上述條件必要但不構成放行例外。
 5. 任一未解決原始衝突、沒有明確來源或狀態 U/N-U，一律 hold。
 6. `decision=hold` 不代表來源不存在；可能只是本刊沒有足夠資料。違規的 `decision=publish` 應被程式拒絕。
 7. 同時包含政策及研究因果結論的主張，不能把兩種型態混成單筆已核准資料：須拆成各自 claim_id，分別通過門檻。
@@ -44,7 +44,7 @@
 | T6 | V1 論文書目消息 | publish |
 | T7 | V1 論文卻寫因果成效 | hold |
 | T8 | 大學實驗卻寫 K-12 直接有效且範圍未核對 | hold |
-| T9 | V3 研究結果且有獨立複核、無衝突 | publish |
+| T9 | V3 高影響研究結果，且已獨立複核、無衝突 | hold（high 不允許自動發布） |
 | T10 | 缺原文定位的任何等級資料 | hold |
 
 ## 對已有資料的處置

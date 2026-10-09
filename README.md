@@ -72,13 +72,13 @@ GitHub Pages：Settings → Pages → Source = GitHub Actions。正式更新經 
 - [驗證 workflow](.github/workflows/verify-and-deploy.yml)：於推送與 PR 進行 Node.js 合成測試，以及掃描週報、月報目錄和發布紀錄。
 - [未來期別登記](publication/issues.json)：每個新出版的 weekly 或 monthly HTML 必須列入清單，並附 publication/claims/ 下對應的逐項查核 JSON；缺少或列出 hold 主張會使檢查失敗。
 - [創刊特刊 13 筆歷史查核資料](publication/audits/2026-09-29_10-08.json)：均保留為 hold、未經獨立驗證，**不屬於已放行證據**；9 月歷史月報同樣保留為未經此 CI 認證的 legacy 內容。
-- **目前 GitHub Pages 舊的分支部署仍能繞過此檢查。** 為避免部署衝突，新工作流程的 Pages 部署步驟預設停用，只有專案變數 ENABLE_VERIFIED_PAGES_DEPLOY 設為 true 才會開啟。
-- 啟用真正的受檢部署：由有管理權限者進入 Settings → Pages，將 Source 改成 GitHub Actions，接著於 Settings → Secrets and variables → Actions → Variables 設 ENABLE_VERIFIED_PAGES_DEPLOY=true。另建議設定 main 的 branch protection 和必要檢查，限制未審查的直接推送。
+- **歷史部署風險已處理（2026-10-09）：**先前曾因發布來源與條件未確認而暫停 Actions 部署；其後主分支 [Run #37900505465](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37900505465) 已成功。CI／部署成功僅證明技術流程，並非文章來源真實性的認證。
+- **現行設定不須重做**：GitHub Actions 與 ENABLE_VERIFIED_PAGES_DEPLOY 條件已有成功部署紀錄；仍建議單獨檢查 main 的 branch protection 與必要檢查是否確實強制執行。
 - 程式只能檢查欄位與狀態邏輯，不能辨別使用者是否真的正確閱讀原文，也不能取代真人領域審核。上線前仍須獨立查核來源及主要結論。
 
-## 新期正文與證據逐項對照（開發分支）
+## 新期正文與證據逐項對照（已合併 main）
 
-新建週報與月報除原本 `publication/issues.json` 與 `publication/claims/*.json` 外，須讓 `<main>` 內具實質內容的 p、h3/h4、li、blockquote、figcaption、td/th 逐項標記 `data-claim-id`，CI 對照 JSON 中 `claim_text`；請參閱 [正文綁定操作說明](research/body-claim-binding-guide.md)。這項功能僅能檢查格式與文字一致，不能判斷原始資料真偽；legacy 期刊不自動追認通過。
+新建週報與月報除原本 `publication/issues.json` 與 `publication/claims/*.json` 外，須讓 `<main>` 內具實質內容的 p、h1/h2/h3/h4、li、blockquote、figcaption、td/th 逐項標記 `data-claim-id`，CI 對照 JSON 中 `claim_text`；請參閱 [正文綁定操作說明](research/body-claim-binding-guide.md)。這項功能僅能檢查格式與文字一致，不能判斷原始資料真偽；legacy 期刊不自動追認通過。
 
 ## 原文快照與中文解讀核驗（新期刊）
 
@@ -106,7 +106,7 @@ GitHub Pages：Settings → Pages → Source = GitHub Actions。正式更新經 
 
 ## 首期標準週報建稿（不預填未查核內容）
 
-已建立 [2026/10/09–10/15 週報候選工作表](research/drafts/2026-10-09_2026-10-15.json)。初始 `items` 為空，狀態為 `draft_pending_source_verification`，並不是已發布的新聞、已審核的論文或 `publication/issues.json` 中的正式報告。可以用 `node research/scaffold-weekly.js 2026-10-16` 在本地建立下一期候選檔；只接受合法週五起始日期，既有檔案不得覆寫。填入真實來源與逐條核對資料後，仍須另外依 [風險分級規範](research/low-human-review-policy.md) 產生正式 HTML／查核 JSON，通過必要 CI 才能發布。暫停的 Google Forms 不在本流程內。
+已建立 [2026/10/09–10/15 週報候選工作表](research/drafts/2026-10-09_2026-10-15.json)。目前已有 7 筆候選且全數 `hold`，狀態仍為 `draft_pending_source_verification`，並不是已發布的新聞、已審核的論文或 `publication/issues.json` 中的正式報告。可以用 `node research/scaffold-weekly.js 2026-10-16` 在本地建立下一期候選檔；只接受合法週五起始日期，既有檔案不得覆寫。填入真實來源與逐條核對資料後，仍須另外依 [風險分級規範](research/low-human-review-policy.md) 產生正式 HTML／查核 JSON，通過必要 CI 才能發布。暫停的 Google Forms 不在本流程內。
 
 ## 60 題語意審查：初步資料覆蓋，不是正式驗證
 
@@ -131,4 +131,4 @@ GitHub Pages：Settings → Pages → Source = GitHub Actions。正式更新經 
 ## 首期正式週報交付（2026-10-09 至 10-15）
 
 - [現有候選的最小入選短名單及 10/16 出刊工作安排](research/drafts/2026-10-09_2026-10-15-shortlist.md)：重點查真正本週新發布資料；活動日與發布日分開，保留未經驗證的 hold 狀態。
-- [GitHub Pages 部署狀態一次性確認指引](research/pages-deploy-check.md)：目前 verify 成功，但 workflow deploy skipped；須先辨認 Pages 是分支發布還是 Actions 發布，再設定或驗證，不貿然切換。
+- [GitHub Pages 歷史部署排查](research/pages-deploy-check.md)：早期曾發生 deploy skipped；後續主分支 verify／deploy 已成功，毋須再次切換既有部署設定。

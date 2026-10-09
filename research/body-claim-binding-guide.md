@@ -1,23 +1,23 @@
-# 新期週報／月報：正文與證據逐項綁定（提案）
+# 新期週報／月報：正文與證據逐項綁定（現行）
 
 此規範僅適用於 **新建立** 的 `weekly/<期別>/index.html` 或 `monthly/<月份>/index.html`；2026/9/29–10/8 創刊特刊及 2026/9 月歷史月報維持 legacy，不得冒稱已通過。
 
 ## 必須一起提交的三項檔案
 
-1. 新期靜態 HTML（至少一個 `<main>`）。
+1. 新期靜態 HTML（恰好一個靜態 `<main>`）。
 2. `publication/claims/<unique-id>.json`：逐條、已完成核查的 publish 主張；禁止 hold 與偽造核查。
 3. `publication/issues.json`：登記 HTML 相對路徑與 claims_file。
 
 ## HTML 標記方法
 
-每個 `<main>` 內的 `p, h3, h4, li, blockquote, figcaption, td, th` 可見敘述要以 `data-claim-id` 綁定唯一主張；同一 `claim_id` 在當期只出現一次。當正文被修改，JSON 中的 `claim_text` 也須對齊並重新查核；**不得單純為了 CI 綠燈而修改查核紀錄**。
+每個 `<main>` 內的 `p, h1, h2, h3, h4, li, blockquote, figcaption, td, th` 可見敘述要以 `data-claim-id` 綁定唯一主張；同一 `claim_id` 在當期只出現一次。當正文被修改，JSON 中的 `claim_text` 也須對齊並重新查核；**不得單純為了 CI 綠燈而修改查核紀錄**。
 
 示意（僅為合成測試，並非真正的已核實新聞）：
 
 ```html
 <main>
   <section>
-    <h2>重要國際動態</h2>
+    <h2 data-claim-id="DEMO-0">重要國際動態</h2>
     <article>
       <h3 data-claim-id="DEMO-1">某機構公開了一份教育指引</h3>
       <p data-claim-id="DEMO-2">該指引目前仍屬非拘束性建議。</p>
@@ -26,7 +26,7 @@
 </main>
 ```
 
-兩句敘述都要各自建立 JSON 主張及原文定位，才能正式發布。具有影響的標題也應標記：目前檢查 h3/h4，但**尚未涵蓋 h1/h2、圖片說明以外的圖中文字、JavaScript 產生內容或 CSS pseudo-content**，這些屬仍待加強的風險範圍。
+以上三個示意節點均需個別 JSON 主張；示例不是已驗證的新聞。現行已檢查 h1/h2/h3/h4，但**尚無法完整查核圖片中的字、JavaScript 產生內容或 CSS pseudo-content**。
 
 ## 程式會拒絕
 
