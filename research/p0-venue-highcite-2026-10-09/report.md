@@ -73,5 +73,5 @@
 
 - 已在清單的 19 人（Ng、Chu、Su、Chiu、Breazeal 團隊、Kong、Vartiainen、劉晨鐘等）在監測期刊中同樣高被引，兩種選法結果一致。
 - 新增者多為 K-12 AI 教育的實證研究者：幼兒 AI 教育（Weipeng Yang）、教師準備度（Ayanwale、Oyelere）、中學 AI 課程（Ching Sing Chai）、兒童與 AI 對話代理（Ying Xu、Warschauer）、科學教育中的 AI（Zhai、Antonenko）、K-12 AI 素養倡議（Lester）等。
-- 臺灣單位學者 3 位：Hung-Ming Lin（明新科技大學）、Tzu-Yu Tai（臺北醫學大學）、Chih-Hung Wu（國立清華大學）；中文姓名待確認，不自行推測。
+- 臺灣學者 3 位（中文姓名與現職由管理者 2026-10-09 告知）：林鴻銘（長庚科技大學化妝品應用系教授兼研發長，曾任明新科技大學）、戴孜伃（臺北醫學大學語言中心助理教授）、吳智鴻（國立清華大學數理教育研究所教授）。
 - 7 人的 OpenAlex 單位與 ORCID 現職不同（可能為轉職或作者檔案混入），依作者檢索時須逐篇看作者單位；Helen Crompton 的 OpenAlex 單位為土耳其 Anadolu University，疑似混入。
