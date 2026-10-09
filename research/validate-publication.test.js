@@ -121,6 +121,18 @@ function dailyFixture(d,c){
 }
 const dailyLow={...claim,claim_class:"bibliographic",risk_tier:"low",level:"N-V1",checked_at:"2026-10-10",source_title:"Synthetic school AI announcement",source_organization:"Example Institution",daily_fact_kind:"official_notice",source_document_type:"official_guidance",first_disclosed_on:"2026-10-10",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。"};
 const reviewedMain='<main><p data-claim-id="C1">合成案例：某機構公告</p></main>';
+test('P3 metadata regression: unreviewed search and social text is rejected',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ for(const meta of ['<meta name="description" content="UNVERIFIED: 臺灣全面強制 AI 考試">','<meta property="og:title" content="UNVERIFIED">','<meta name="twitter:description" content="UNVERIFIED">','<meta name="viewport" content="width=device-width,initial-scale=1" property="og:title">','<meta name="viewport" content="width=1,initial-scale=100">','<meta charset="utf-8" name="description" content="UNVERIFIED">']){
+  updateHtml(d,'<head><title>週報 2026-10-09_10-15｜K-12 AI 素養國際動態</title>'+meta+'</head>'+reviewedMain);assert.equal(validate(d).ok,false,meta);
+ }
+});
+test('P3 metadata control: fixed viewport and neutral description are accepted',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ for(const meta of ['<meta name="viewport" content="width=device-width,initial-scale=1">','<meta name="description" content="週報 2026-10-09_10-15｜K-12 AI 素養國際動態">','<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">']){
+  updateHtml(d,'<head>'+meta+'</head>'+reviewedMain);assert.equal(validate(d).ok,true,meta);
+ }
+});
 test('P3 regression: unreviewed tooltips on claims and links are rejected',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
  for(const html of [reviewedMain.replace('<p ','<p title="UNVERIFIED: 全面強制" '),reviewedMain.replace('合成案例：某機構公告','<a href="https://example.org/official" title="UNVERIFIED">合成案例：某機構公告</a>')]){

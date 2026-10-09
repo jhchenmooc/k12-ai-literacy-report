@@ -65,6 +65,15 @@ function registeredShell(document,main,issueDate,issuePath){
   const [channel,period]=issuePath.split("/"),label={daily:"每日短訊",weekly:"週報",monthly:"月報"}[channel];
   const expectedTitle=label+" "+period+"｜K-12 AI 素養國際動態";
   for(const node of nodes.filter(n=>n.tagName==="title"))if(normalized(text(node))!==expectedTitle)errors.push("bare report title must be the neutral issue title: "+expectedTitle);
+  for(const node of nodes.filter(n=>n.tagName==="meta")){
+   // No arbitrary search snippets or social-card text, including attributes
+   // mixed into an otherwise valid charset/viewport declaration.
+   const only=names=>(node.attrs||[]).length===names.length&&(node.attrs||[]).every(a=>!a.namespace&&names.includes(a.name));
+   const charset=only(["charset"])&&String(attr(node,"charset")).trim().toLowerCase()==="utf-8";
+   const named=only(["name","content"])&&((attr(node,"name")==="viewport"&&attr(node,"content")==="width=device-width,initial-scale=1")||(attr(node,"name")==="description"&&attr(node,"content")===expectedTitle));
+   const legacyEncoding=only(["http-equiv","content"])&&String(attr(node,"http-equiv")).trim().toLowerCase()==="content-type"&&/^text\/html\s*;\s*charset\s*=\s*utf-8\s*$/i.test(attr(node,"content"));
+   if(!charset&&!named&&!legacyEncoding)errors.push("bare report unsupported or unreviewed metadata");
+  }
  }else if(issueDate){
   const expected=parse5.parse(require("./render-site.js").renderDailyEdition({date:issueDate,claims:[]}));
   if(JSON.stringify(shellShape(document))!==JSON.stringify(shellShape(expected)))errors.push("registered daily shell differs from trusted renderer outside main");

@@ -21,3 +21,4 @@ research/audits/2026-10-10/baseline/** -text !eol -whitespace
 research/audits/2026-10-10/fixes/** -text !eol -whitespace
 research/audits/2026-10-10/claude-followup/** -text !eol -whitespace
 research/audits/2026-10-10/p3-followup/** -text !eol -whitespace
+research/audits/2026-10-10/metadata-followup/** -text !eol -whitespace

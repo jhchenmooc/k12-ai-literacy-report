@@ -1,5 +1,7 @@
 # 可直接交給 Claude 的 prompt
 
+本次最新任務：你對 6360e2148b68208412f09c88c2671a396291db8b 未發現阻擋問題，指出最小頁面任意 description／Open Graph／Twitter metadata 的 P3 缺口。請先比較該 SHA 到分支最新 HEAD，獨立檢查完整 meta 白名單、混合屬性、合法 viewport／中性 description、原日報 renderer 與 UTF-8 Content-Type 相容性。讀取 `metadata-followup/REPORT.md` 及貢獻契約，重新執行 verifier（預期 290 項測試、80 份佐證）；不要接受舊版本驗證作為最新提交證據。既有 main B1 入庫更新尚未整合，請將該整合需求與本次安全修正分開評估。僅審查，不建 PR、不合併、不部署。下方各輪說明為歷史脈絡。
+
 請對以下 GitHub 分支做一次獨立、多角度程式碼審查。這是對已有修正的驗證，請不要直接接受 Codex 報告的結論；檢查實作、重現反例、尋找回歸及未涵蓋的繞過。
 
 最新狀態：你對 e37ec618d1c58198957751e6ee4729d0879fb7b9 已確認 P1-1／P2-1 修正、無阻擋事項。本輪為 P3 收尾，先比較該 SHA 到最新 HEAD，驗證 tooltip 禁止、最小頁面中性期別 title、charset／Content-Type 的 UTF-8 規則與合法控制組。讀取 `p3-followup/REPORT.md` 與 `research/PUBLICATION-CONTRIBUTING.md`，確認 P3-2 的保守語法限制已記錄，P3-3 的週／月報 renderer 是明確待辦而非冒稱完成。重新執行 portable verifier，預期 288 項測試與 75 份佐證。請勿建立 PR、合併或部署。

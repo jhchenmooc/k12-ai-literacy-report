@@ -447,6 +447,36 @@
       "phase": "p3-followup",
       "bytes": 2575,
       "sha256": "e12f0ebc3021a682c191b2215d9fe2783f04a508e832826182b1447dc9b75bf9"
+    },
+    {
+      "path": "metadata-followup/REPORT.md",
+      "phase": "metadata-followup",
+      "bytes": 2071,
+      "sha256": "671de84677a781af58586d3182ac9c148a31c0c2a022ff09054726e1e5425b79"
+    },
+    {
+      "path": "metadata-followup/node22-tests.log",
+      "phase": "metadata-followup",
+      "bytes": 55371,
+      "sha256": "ca76958971a20f687c02862691ae4cdd520acdd47e239a8ff2fbcb3be6438197"
+    },
+    {
+      "path": "metadata-followup/node24-tests.log",
+      "phase": "metadata-followup",
+      "bytes": 22527,
+      "sha256": "42d65de62e4e8d2cba66458e49a3c81f90a9187eaa0aff3bd474e6e294c63b00"
+    },
+    {
+      "path": "metadata-followup/red-tests.log",
+      "phase": "metadata-followup",
+      "bytes": 1296,
+      "sha256": "c268fb670c03cd0c1b4aa6ec18a5dce9f76c6619db51957624f3177946d98743"
+    },
+    {
+      "path": "metadata-followup/working-tree-verification.json",
+      "phase": "metadata-followup",
+      "bytes": 2581,
+      "sha256": "8e0a03b71b3b311a5d99e4c7f4d2c976b4c7369ad87f582a9fa20e9c617b68f1"
     }
   ],
   "followup": {
@@ -456,6 +486,11 @@
   },
   "p3Followup": {
     "reviewedOriginalHead": "e37ec618d1c58198957751e6ee4729d0879fb7b9",
+    "currentFixTarget": "actual branch HEAD",
+    "files": 5
+  },
+  "metadataFollowup": {
+    "reviewedOriginalHead": "6360e2148b68208412f09c88c2671a396291db8b",
     "currentFixTarget": "actual branch HEAD",
     "files": 5
   }
