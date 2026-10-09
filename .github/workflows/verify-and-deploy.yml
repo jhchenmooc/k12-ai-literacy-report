@@ -58,6 +58,7 @@ jobs:
         run: |
           node --test research/validate-knowledge-base.test.js
           node --test research/knowledge-base-utils.test.js
+          node --test research/knowledge-base-import-preview.test.js
           node research/validate-knowledge-base.js .
       - name: Validate issue manifests and claim metadata
         run: node research/validate-publication.js .
