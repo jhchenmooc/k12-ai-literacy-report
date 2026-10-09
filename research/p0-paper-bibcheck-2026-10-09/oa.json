@@ -1,0 +1,2217 @@
+{
+ "started_utc": "2026-10-09T18:38:15Z",
+ "ended_utc": "2026-10-09T18:45:48Z",
+ "requests": [
+  {
+   "utc": "2026-10-09T18:38Z",
+   "kind": "pilot",
+   "url": "https://doi.org/10.1186/s40594-025-00543-5",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:38Z",
+   "kind": "pilot",
+   "url": "https://doi.org/10.1609/aaai.v39i28.35181",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:38Z",
+   "kind": "pilot",
+   "url": "https://doi.org/10.3389/feduc.2026.1831415",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:38Z",
+   "kind": "pilot",
+   "url": "https://doi.org/10.19173/irrodl.v27i2.9140",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:38Z",
+   "kind": "pilot",
+   "url": "https://doi.org/10.1007/s44217-026-01695-4",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:38Z",
+   "kind": "pilot",
+   "url": "https://doi.org/10.1057/s41599-026-07392-9",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:38Z",
+   "kind": "pilot",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/view/35181",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:38Z",
+   "kind": "pilot",
+   "url": "https://stemeducationjournal.springeropen.com/articles/10.1186/s40594-025-00543-5",
+   "http": "200",
+   "final_url": "https://link.springer.com/article/10.1186/s40594-025-00543-5"
+  },
+  {
+   "utc": "2026-10-09T18:39:00Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1186/s40594-025-00543-5",
+   "http": "200",
+   "final_url": "https://link.springer.com/article/10.1186/s40594-025-00543-5"
+  },
+  {
+   "utc": "2026-10-09T18:39:01Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1186/s40594-025-00543-5",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:02Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1186/s40594-026-00604-3",
+   "http": "200",
+   "final_url": "https://link.springer.com/10.1186/s40594-026-00604-3"
+  },
+  {
+   "utc": "2026-10-09T18:39:03Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1186/s40594-026-00604-3",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:04Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1186/s40594-026-00629-8",
+   "http": "200",
+   "final_url": "https://link.springer.com/10.1186/s40594-026-00629-8"
+  },
+  {
+   "utc": "2026-10-09T18:39:05Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1186/s40594-026-00629-8",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:06Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1186/s40594-026-00637-8",
+   "http": "200",
+   "final_url": "https://link.springer.com/10.1186/s40594-026-00637-8"
+  },
+  {
+   "utc": "2026-10-09T18:39:07Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1186/s40594-026-00637-8",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:08Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v39i28.35181",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35181"
+  },
+  {
+   "utc": "2026-10-09T18:39:09Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v39i28.35181",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:10Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v39i28.35183",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35183"
+  },
+  {
+   "utc": "2026-10-09T18:39:11Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v39i28.35183",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:13Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v39i28.35185",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35185"
+  },
+  {
+   "utc": "2026-10-09T18:39:14Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v39i28.35185",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:16Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v39i28.35186",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35186"
+  },
+  {
+   "utc": "2026-10-09T18:39:17Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v39i28.35186",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:18Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v39i28.35188",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35188"
+  },
+  {
+   "utc": "2026-10-09T18:39:19Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v39i28.35188",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:20Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v39i28.35191",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35191"
+  },
+  {
+   "utc": "2026-10-09T18:39:21Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v39i28.35191",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:22Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v39i28.35192",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35192"
+  },
+  {
+   "utc": "2026-10-09T18:39:23Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v39i28.35192",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:24Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v39i28.35193",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35193"
+  },
+  {
+   "utc": "2026-10-09T18:39:25Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v39i28.35193",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:27Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v40i47.41499",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41499"
+  },
+  {
+   "utc": "2026-10-09T18:39:27Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v40i47.41499",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:28Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v40i47.41501",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41501"
+  },
+  {
+   "utc": "2026-10-09T18:39:29Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v40i47.41501",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:30Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v40i47.41504",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41504"
+  },
+  {
+   "utc": "2026-10-09T18:39:31Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v40i47.41504",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:32Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v40i47.41507",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41507"
+  },
+  {
+   "utc": "2026-10-09T18:39:33Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v40i47.41507",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:34Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v40i47.41511",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41511"
+  },
+  {
+   "utc": "2026-10-09T18:39:35Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v40i47.41511",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:36Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v40i47.41518",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41518"
+  },
+  {
+   "utc": "2026-10-09T18:39:36Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v40i47.41518",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:38Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v40i47.41520",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41520"
+  },
+  {
+   "utc": "2026-10-09T18:39:38Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v40i47.41520",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:40Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v40i47.41524",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41524"
+  },
+  {
+   "utc": "2026-10-09T18:39:40Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v40i47.41524",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:42Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v40i47.41525",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41525"
+  },
+  {
+   "utc": "2026-10-09T18:39:42Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v40i47.41525",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:44Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v40i47.41527",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41527"
+  },
+  {
+   "utc": "2026-10-09T18:39:45Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v40i47.41527",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:46Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v40i47.41529",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41529"
+  },
+  {
+   "utc": "2026-10-09T18:39:47Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v40i47.41529",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:48Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1609/aaai.v40i47.41530",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41530"
+  },
+  {
+   "utc": "2026-10-09T18:39:49Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1609/aaai.v40i47.41530",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:50Z",
+   "kind": "page",
+   "url": "https://doi.org/10.3389/feduc.2026.1831415",
+   "http": "200",
+   "final_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1831415/full"
+  },
+  {
+   "utc": "2026-10-09T18:39:52Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1831415",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:53Z",
+   "kind": "page",
+   "url": "https://doi.org/10.3389/feduc.2026.1811339",
+   "http": "200",
+   "final_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1811339/full"
+  },
+  {
+   "utc": "2026-10-09T18:39:55Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1811339",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:39:56Z",
+   "kind": "page",
+   "url": "https://doi.org/10.3389/feduc.2026.1769204",
+   "http": "200",
+   "final_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1769204/full"
+  },
+  {
+   "utc": "2026-10-09T18:39:58Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1769204",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:40:00Z",
+   "kind": "page",
+   "url": "https://doi.org/10.3389/feduc.2025.1543746",
+   "http": "200",
+   "final_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1543746/full"
+  },
+  {
+   "utc": "2026-10-09T18:40:02Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.3389/feduc.2025.1543746",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:40:04Z",
+   "kind": "page",
+   "url": "https://doi.org/10.3389/feduc.2026.1800516",
+   "http": "200",
+   "final_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1800516/full"
+  },
+  {
+   "utc": "2026-10-09T18:40:05Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1800516",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:40:06Z",
+   "kind": "page",
+   "url": "https://doi.org/10.3389/feduc.2026.1805617",
+   "http": "200",
+   "final_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1805617/full"
+  },
+  {
+   "utc": "2026-10-09T18:40:08Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1805617",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:40:09Z",
+   "kind": "page",
+   "url": "https://doi.org/10.19173/irrodl.v27i2.9140",
+   "http": "200",
+   "final_url": "https://www.irrodl.org/index.php/irrodl/article/view/9140"
+  },
+  {
+   "utc": "2026-10-09T18:40:11Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.19173/irrodl.v27i2.9140",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:40:12Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1007/s44217-026-01695-4",
+   "http": "200",
+   "final_url": "https://link.springer.com/10.1007/s44217-026-01695-4"
+  },
+  {
+   "utc": "2026-10-09T18:40:13Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1007/s44217-026-01695-4",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:40:14Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1007/s44217-026-01403-2",
+   "http": "200",
+   "final_url": "https://link.springer.com/10.1007/s44217-026-01403-2"
+  },
+  {
+   "utc": "2026-10-09T18:40:14Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1007/s44217-026-01403-2",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:40:15Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1007/s44217-025-00630-3",
+   "http": "200",
+   "final_url": "https://link.springer.com/10.1007/s44217-025-00630-3"
+  },
+  {
+   "utc": "2026-10-09T18:40:16Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1007/s44217-025-00630-3",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:40:18Z",
+   "kind": "page",
+   "url": "https://doi.org/10.1057/s41599-026-07392-9",
+   "http": "200",
+   "final_url": "https://www.nature.com/articles/s41599-026-07392-9"
+  },
+  {
+   "utc": "2026-10-09T18:40:19Z",
+   "kind": "crossref",
+   "url": "https://api.crossref.org/works/10.1057/s41599-026-07392-9",
+   "http": "200"
+  },
+  {
+   "utc": "2026-10-09T18:41:03Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/35181/37336",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/35181/37336"
+  },
+  {
+   "utc": "2026-10-09T18:41:05Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/35183/37338",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/35183/37338"
+  },
+  {
+   "utc": "2026-10-09T18:41:07Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/35185/37340",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/35185/37340"
+  },
+  {
+   "utc": "2026-10-09T18:41:11Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/35186/37341",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/35186/37341"
+  },
+  {
+   "utc": "2026-10-09T18:41:13Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/35188/37343",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/35188/37343"
+  },
+  {
+   "utc": "2026-10-09T18:41:15Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/35191/37346",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/35191/37346"
+  },
+  {
+   "utc": "2026-10-09T18:41:17Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/35192/37347",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/35192/37347"
+  },
+  {
+   "utc": "2026-10-09T18:41:19Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/35193/37348",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/35193/37348"
+  },
+  {
+   "utc": "2026-10-09T18:41:21Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41499/45460",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41499/45460"
+  },
+  {
+   "utc": "2026-10-09T18:41:23Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41501/45462",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41501/45462"
+  },
+  {
+   "utc": "2026-10-09T18:41:25Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41504/45465",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41504/45465"
+  },
+  {
+   "utc": "2026-10-09T18:41:26Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41507/45468",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41507/45468"
+  },
+  {
+   "utc": "2026-10-09T18:41:28Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41511/45472",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41511/45472"
+  },
+  {
+   "utc": "2026-10-09T18:41:30Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41518/45479",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41518/45479"
+  },
+  {
+   "utc": "2026-10-09T18:41:32Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41520/45481",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41520/45481"
+  },
+  {
+   "utc": "2026-10-09T18:41:34Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41524/45485",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41524/45485"
+  },
+  {
+   "utc": "2026-10-09T18:41:36Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41525/45486",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41525/45486"
+  },
+  {
+   "utc": "2026-10-09T18:41:39Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41527/45488",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41527/45488"
+  },
+  {
+   "utc": "2026-10-09T18:41:40Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41529/45490",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41529/45490"
+  },
+  {
+   "utc": "2026-10-09T18:41:42Z",
+   "kind": "fulltext",
+   "url": "https://ojs.aaai.org/index.php/AAAI/article/download/41530/45491",
+   "http": "200",
+   "final_url": "https://ojs.aaai.org/index.php/AAAI/article/download/41530/45491"
+  },
+  {
+   "utc": "2026-10-09T18:41:45Z",
+   "kind": "fulltext",
+   "url": "https://www.irrodl.org/index.php/irrodl/article/view/9140/6401",
+   "http": "200",
+   "final_url": "https://www.irrodl.org/index.php/irrodl/article/view/9140/6401"
+  },
+  {
+   "utc": "2026-10-09T18:42:00Z",
+   "kind": "fulltext",
+   "url": "https://www.irrodl.org/index.php/irrodl/article/download/9140/6413",
+   "http": "200",
+   "final_url": "https://www.irrodl.org/index.php/irrodl/article/download/9140/6413"
+  }
+ ],
+ "items": [
+  {
+   "record_id": "KB-2025-0022",
+   "doi": "10.1186/s40594-025-00543-5",
+   "published_in": [
+    "J31"
+   ],
+   "year_value": "2025",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": {
+     "status": "unverifiable",
+     "note": "出版者頁回 Client Challenge（需 JavaScript），未繞過；Crossref 題名相符但不算核對"
+    },
+    "authors": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref 作者數 7（僅供參考）"
+    },
+    "venue": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref container-title 為 International Journal of STEM Education"
+    },
+    "issue_year": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref issued [[2025, 4, 19]]"
+    },
+    "doi_url": {
+     "status": "unverifiable",
+     "note": "DOI 轉址至 link.springer.com（正確網域），但頁面為驗證頁，無法確認是同一篇；primary_url 格式正確"
+    }
+   },
+   "publisher_page_url": "https://link.springer.com/article/10.1186/s40594-025-00543-5",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "g2g4": null,
+   "unverifiable_reason": "Springer link.springer.com 回 HTTP 200 但內容為「Client Challenge」JavaScript 驗證頁（含 BMC/SpringerOpen 期刊網域亦轉址至此）；依規定不繞過",
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:00Z"
+  },
+  {
+   "record_id": "KB-2026-0027",
+   "doi": "10.1186/s40594-026-00604-3",
+   "published_in": [
+    "J31"
+   ],
+   "year_value": "2026",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": {
+     "status": "unverifiable",
+     "note": "出版者頁回 Client Challenge（需 JavaScript），未繞過；Crossref 題名相符但不算核對"
+    },
+    "authors": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref 作者數 2（僅供參考）"
+    },
+    "venue": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref container-title 為 International Journal of STEM Education"
+    },
+    "issue_year": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref issued [[2026, 3, 16]]"
+    },
+    "doi_url": {
+     "status": "unverifiable",
+     "note": "DOI 轉址至 link.springer.com（正確網域），但頁面為驗證頁，無法確認是同一篇；primary_url 格式正確"
+    }
+   },
+   "publisher_page_url": "https://link.springer.com/10.1186/s40594-026-00604-3",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "g2g4": null,
+   "unverifiable_reason": "Springer link.springer.com 回 HTTP 200 但內容為「Client Challenge」JavaScript 驗證頁（含 BMC/SpringerOpen 期刊網域亦轉址至此）；依規定不繞過",
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:02Z"
+  },
+  {
+   "record_id": "KB-2026-0028",
+   "doi": "10.1186/s40594-026-00629-8",
+   "published_in": [
+    "J31"
+   ],
+   "year_value": "2026",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": {
+     "status": "unverifiable",
+     "note": "出版者頁回 Client Challenge（需 JavaScript），未繞過；Crossref 題名相符但不算核對"
+    },
+    "authors": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref 作者數 7（僅供參考）"
+    },
+    "venue": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref container-title 為 International Journal of STEM Education"
+    },
+    "issue_year": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref issued [[2026, 6, 29]]"
+    },
+    "doi_url": {
+     "status": "unverifiable",
+     "note": "DOI 轉址至 link.springer.com（正確網域），但頁面為驗證頁，無法確認是同一篇；primary_url 格式正確"
+    }
+   },
+   "publisher_page_url": "https://link.springer.com/10.1186/s40594-026-00629-8",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "g2g4": null,
+   "unverifiable_reason": "Springer link.springer.com 回 HTTP 200 但內容為「Client Challenge」JavaScript 驗證頁（含 BMC/SpringerOpen 期刊網域亦轉址至此）；依規定不繞過",
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:04Z"
+  },
+  {
+   "record_id": "KB-2026-0029",
+   "doi": "10.1186/s40594-026-00637-8",
+   "published_in": [
+    "J31"
+   ],
+   "year_value": "2026",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": {
+     "status": "unverifiable",
+     "note": "出版者頁回 Client Challenge（需 JavaScript），未繞過；Crossref 題名相符但不算核對"
+    },
+    "authors": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref 作者數 2（僅供參考）"
+    },
+    "venue": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref container-title 為 International Journal of STEM Education"
+    },
+    "issue_year": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref issued [[2026, 7, 17]]"
+    },
+    "doi_url": {
+     "status": "unverifiable",
+     "note": "DOI 轉址至 link.springer.com（正確網域），但頁面為驗證頁，無法確認是同一篇；primary_url 格式正確"
+    }
+   },
+   "publisher_page_url": "https://link.springer.com/10.1186/s40594-026-00637-8",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "g2g4": null,
+   "unverifiable_reason": "Springer link.springer.com 回 HTTP 200 但內容為「Client Challenge」JavaScript 驗證頁（含 BMC/SpringerOpen 期刊網域亦轉址至此）；依規定不繞過",
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:06Z"
+  },
+  {
+   "record_id": "KB-2025-0025",
+   "doi": "10.1609/aaai.v39i28.35181",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2025",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 2 位、Crossref 2 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」、頁面 Published 2025/04/11；年份 2025 = year_value 2025"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v39i28.35181 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35181",
+   "publisher_date_text": "Published 2025-04-11",
+   "proposed_first_published_on": "2025-04-11",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "資源論文；文中摘述作者先前已發表研究：小學 3–5 年級 6 班共 138 名；另述大學課程三年約 250 名",
+    "outcomes_measured": "摘述之前後測：學生 AI 知識與後設認知題項答對／同意比例",
+    "design": "工具／教學資源描述＋摘述先前單組前後測",
+    "limitations": "前後測結果引自另篇研究、本文未完整報告統計；單組前後測無對照（本代理判斷）",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:08Z"
+  },
+  {
+   "record_id": "KB-2025-0026",
+   "doi": "10.1609/aaai.v39i28.35183",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2025",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 3 位、Crossref 3 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」、頁面 Published 2025/04/11；年份 2025 = year_value 2025"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v39i28.35183 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35183",
+   "publisher_date_text": "Published 2025-04-11",
+   "proposed_first_published_on": "2025-04-11",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "K-12 教師 n=34（高中約 53%、國中約 32%、小學約 18%）",
+    "outcomes_measured": "AI 熟悉度、對 AI 的興趣、專業發展需求與偏好",
+    "design": "線上問卷橫斷調查（描述統計、卡方、ANOVA、開放題質性分析）",
+    "limitations": "作者述撰稿時資料仍在收集、n=34；社群媒體與郵件名單招募之便利樣本（本代理判斷）",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:10Z"
+  },
+  {
+   "record_id": "KB-2025-0027",
+   "doi": "10.1609/aaai.v39i28.35185",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2025",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 6 位、Crossref 6 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」、頁面 Published 2025/04/11；年份 2025 = year_value 2025"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v39i28.35185 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35185",
+   "publisher_date_text": "Published 2025-04-11",
+   "proposed_first_published_on": "2025-04-11",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "小學生 9–12 歲，校外 STEM 夏令營 5 天工作坊；正文未明列人數",
+    "outcomes_measured": "以觀察、提問與作品檢視了解學生對監督式 ML 概念的理解",
+    "design": "先導工作坊；錄影觀察為主的質性分析",
+    "limitations": "作者自述：校外夏令營情境、參與人數少、同意錄影者有限",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:13Z"
+  },
+  {
+   "record_id": "KB-2025-0028",
+   "doi": "10.1609/aaai.v39i28.35186",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2025",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 4 位、Crossref 4 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」、頁面 Published 2025/04/11；年份 2025 = year_value 2025"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v39i28.35186 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35186",
+   "publisher_date_text": "Published 2025-04-11",
+   "proposed_first_published_on": "2025-04-11",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "參與者 6 名（4 名國中教師＋2 名教學輔導員）",
+    "outcomes_measured": "共同設計過程中的需求主題",
+    "design": "三次共同設計會議；conjecture mapping 與 memo 質性分析",
+    "limitations": "作者明言目的不在提供實證證據；樣本小（本代理判斷）",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:16Z"
+  },
+  {
+   "record_id": "KB-2025-0029",
+   "doi": "10.1609/aaai.v39i28.35188",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2025",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 6 位、Crossref 6 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」、頁面 Published 2025/04/11；年份 2025 = year_value 2025"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v39i28.35188 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35188",
+   "publisher_date_text": "Published 2025-04-11",
+   "proposed_first_published_on": "2025-04-11",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "美國鄉村 2 所國中 6–8 年級（資優班），約 90 名參與、前後問卷分析 n=60（性別分析 59）；另 2 名教師訪談",
+    "outcomes_measured": "AI 興趣（態度）與臉部辨識相關概念題；性別比較；教師訪談",
+    "design": "單組前後問卷＋教師訪談",
+    "limitations": "作者自述：樣本小（後測流失）、學生皆來自同一學區兩校",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:18Z"
+  },
+  {
+   "record_id": "KB-2025-0030",
+   "doi": "10.1609/aaai.v39i28.35191",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2025",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 11 位、Crossref 11 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」、頁面 Published 2025/04/11；年份 2025 = year_value 2025"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v39i28.35191 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35191",
+   "publisher_date_text": "Published 2025-04-11",
+   "proposed_first_published_on": "2025-04-11",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "國中（11–14 歲）課程 beta 測試：9 名教師、282 名學生；評分規準使用者 n=98",
+    "outcomes_measured": "出場單（形成性評量）回應、評分規準使用、教師使用資料與回饋",
+    "design": "評量工具的設計本位迭代（beta 測試＋1 名教師訪談）",
+    "limitations": "作者自述：樣本與情境特定，結果不可推論",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:20Z"
+  },
+  {
+   "record_id": "KB-2025-0031",
+   "doi": "10.1609/aaai.v39i28.35192",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2025",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 5 位、Crossref 5 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」、頁面 Published 2025/04/11；年份 2025 = year_value 2025"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v39i28.35192 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35192",
+   "publisher_date_text": "Published 2025-04-11",
+   "proposed_first_published_on": "2025-04-11",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "青少年 n=16（14–15 歲），兩週校外工作坊；案例聚焦其中一組",
+    "outcomes_measured": "學生作品、錄影與螢幕錄製中參與五步驟演算法稽核的情形",
+    "design": "先導性質化案例研究",
+    "limitations": "單一小組案例、校外情境（本代理判斷）",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:22Z"
+  },
+  {
+   "record_id": "KB-2025-0032",
+   "doi": "10.1609/aaai.v39i28.35193",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2025",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 4 位、Crossref 4 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 39 No. 28: IAAI-25, EAAI-25, AAAI-25 Student Abstracts, Undergraduate Consortium and Demonstrations」、頁面 Published 2025/04/11；年份 2025 = year_value 2025"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v39i28.35193 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/35193",
+   "publisher_date_text": "Published 2025-04-11",
+   "proposed_first_published_on": "2025-04-11",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "無受試者；分析 Hour of Code 國高中（6–8、9 年級以上）初階 AI/ML 活動 50 餘個",
+    "outcomes_measured": "活動與 AI4K12 五大概念及 ML 概念的對應",
+    "design": "內容分析",
+    "limitations": "作者指出未觀察活動的實際實施情形",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:24Z"
+  },
+  {
+   "record_id": "KB-2026-0039",
+   "doi": "10.1609/aaai.v40i47.41499",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 5 位、Crossref 5 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Main track」；期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」、頁面 Published 2026/03/14；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v40i47.41499 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41499",
+   "publisher_date_text": "Published 2026-03-14",
+   "proposed_first_published_on": "2026-03-14",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "國中教師 n=12（奈及利亞 6、美國 6）；素材為學生 AI 主題作文",
+    "outcomes_measured": "教師對學生 AI 作文的詮釋與文化脈絡連結",
+    "design": "半結構訪談＋主題分析（跨文化比較）",
+    "limitations": "作者自述：樣本非代表性；以作文為素材可能不利寫作能力較弱的學生",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:27Z"
+  },
+  {
+   "record_id": "KB-2026-0040",
+   "doi": "10.1609/aaai.v40i47.41501",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 9 位、Crossref 9 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Main track」；期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」、頁面 Published 2026/03/14；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v40i47.41501 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41501",
+   "publisher_date_text": "Published 2026-03-14",
+   "proposed_first_published_on": "2026-03-14",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "義大利 9–12 歲兒童，課外活動；完整前後測 n=104",
+    "outcomes_measured": "對 ML 系統的心智狀態歸因（AMS 問卷五類別）",
+    "design": "單組前後測（混合重複量數 ANOVA）＋質性回饋",
+    "limitations": "作者自述：僅在義大利進行；課外情境問卷可部分填答；無對照組（本代理判斷）",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:28Z"
+  },
+  {
+   "record_id": "KB-2026-0041",
+   "doi": "10.1609/aaai.v40i47.41504",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 7 位、Crossref 7 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Main track」；期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」、頁面 Published 2026/03/14；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v40i47.41504 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41504",
+   "publisher_date_text": "Published 2026-03-14",
+   "proposed_first_published_on": "2026-03-14",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "無 K-12 受試；師資培育多層級案例（含一門約 30 名大學部學生的課程案例）",
+    "outcomes_measured": "不適用（框架與案例描述）",
+    "design": "立場／框架論文＋實施案例描述",
+    "limitations": "未擷取到作者自述限制段；案例描述非系統評估（本代理判斷）",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:30Z"
+  },
+  {
+   "record_id": "KB-2026-0042",
+   "doi": "10.1609/aaai.v40i47.41507",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 3 位、Crossref 3 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Main track」；期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」、頁面 Published 2026/03/14；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v40i47.41507 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41507",
+   "publisher_date_text": "Published 2026-03-14",
+   "proposed_first_published_on": "2026-03-14",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "賽普勒斯 7 所公立小學 4–6 年級（9–12 歲）n=233",
+    "outcomes_measured": "對 AI 的認知（含繪圖）、DigComp 數位能力自評，及依性別、年級、訓練經驗之差異",
+    "design": "橫斷問卷調查（Mann-Whitney U、ANOVA）",
+    "limitations": "作者自述：未分析年齡差異、學生可能誤解題目；受邀 180 校僅 7 校參與（本代理判斷）",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:32Z"
+  },
+  {
+   "record_id": "KB-2026-0043",
+   "doi": "10.1609/aaai.v40i47.41511",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 3 位、Crossref 3 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Main track」；期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」、頁面 Published 2026/03/14；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v40i47.41511 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41511",
+   "publisher_date_text": "Published 2026-03-14",
+   "proposed_first_published_on": "2026-03-14",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "德國 9 年級 n=83",
+    "outcomes_measured": "ML 概念量表（CIML）兩情境（臉部辨識、文字生成）；前測概念對學習的迴歸",
+    "design": "單組前後測＋迴歸分析",
+    "limitations": "作者自述：結論僅限此特定介入，無比較組，不能推論資料驅動取向整體",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:34Z"
+  },
+  {
+   "record_id": "KB-2026-0044",
+   "doi": "10.1609/aaai.v40i47.41518",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 8 位、Crossref 8 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Main track」；期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」、頁面 Published 2026/03/14；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v40i47.41518 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41518",
+   "publisher_date_text": "Published 2026-03-14",
+   "proposed_first_published_on": "2026-03-14",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "學員 n=63（51 名大專生、12 名 K-12 教師）；外展觸及 230 名以上 K-12 學習者（未直接施測）",
+    "outcomes_measured": "學生計算態度、教師 AI 教學自我效能前後問卷；訪談；外展報告",
+    "design": "經驗報告：前後問卷＋訪談＋專案報告",
+    "limitations": "未擷取到作者自述限制段；K-12 學習者未直接評量、自陳量表（本代理判斷）",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:36Z"
+  },
+  {
+   "record_id": "KB-2026-0045",
+   "doi": "10.1609/aaai.v40i47.41520",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 7 位、Crossref 7 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Main track」；期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」、頁面 Published 2026/03/14；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v40i47.41520 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41520",
+   "publisher_date_text": "Published 2026-03-14",
+   "proposed_first_published_on": "2026-03-14",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "東亞中學 11 個班兩輪部署；第一輪有效 n=111（第二輪人數未擷取）",
+    "outcomes_measured": "AI 自動評分與人工評分一致性、提示寫作表現、用 AI 學習的信心、評量題目品質",
+    "design": "兩輪教室部署的設計本位研究；單組前後測",
+    "limitations": "作者指出需更廣泛研究評估學習成效；自動評分在部分向度仍有誤差",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:38Z"
+  },
+  {
+   "record_id": "KB-2026-0046",
+   "doi": "10.1609/aaai.v40i47.41524",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 4 位、Crossref 4 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」、頁面 Published 2026/03/14；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v40i47.41524 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41524",
+   "publisher_date_text": "Published 2026-03-14",
+   "proposed_first_published_on": "2026-03-14",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "夏令營 6–9 年級 n=9",
+    "outcomes_measured": "七題開放式推薦系統理解測驗、可用性量表、訪談",
+    "design": "單組前後測＋半結構訪談",
+    "limitations": "作者自述後測平均仍只達部分掌握；n=9（本代理判斷）",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:40Z"
+  },
+  {
+   "record_id": "KB-2026-0047",
+   "doi": "10.1609/aaai.v40i47.41525",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 7 位、Crossref 7 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」、頁面 Published 2026/03/14；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v40i47.41525 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41525",
+   "publisher_date_text": "Published 2026-03-14",
+   "proposed_first_published_on": "2026-03-14",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "無受試；設計對象為 4–9 年級（10–15 歲）",
+    "outcomes_measured": "未測量（作者表示學習成效評估留待未來）",
+    "design": "教學資源（教室遊戲）描述",
+    "limitations": "作者自述尚未進行實證評估",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:42Z"
+  },
+  {
+   "record_id": "KB-2026-0048",
+   "doi": "10.1609/aaai.v40i47.41527",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 17 位、Crossref 17 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」、頁面 Published 2026/03/14；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v40i47.41527 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41527",
+   "publisher_date_text": "Published 2026-03-14",
+   "proposed_first_published_on": "2026-03-14",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "越南高中生 AI agent 黑客松；比較參與者、同校未參與者、他校未參與者；人數未在正文明寫（見補充材料）",
+    "outcomes_measured": "對應 Bloom 層次的平行前後測（學習目標分項）",
+    "design": "框架描述＋非隨機比較組前後測",
+    "limitations": "未擷取到作者自述限制段；自願參與的選擇偏誤、正文未列 n（本代理判斷）",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:44Z"
+  },
+  {
+   "record_id": "KB-2026-0049",
+   "doi": "10.1609/aaai.v40i47.41529",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 8 位、Crossref 8 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」、頁面 Published 2026/03/14；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v40i47.41529 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41529",
+   "publisher_date_text": "Published 2026-03-14",
+   "proposed_first_published_on": "2026-03-14",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "K–2 教師 8 名（美國東南某州，2025 年 7 月 PD）",
+    "outcomes_measured": "教師回饋與共同設計的不插電活動",
+    "design": "專業發展＋共同設計；回饋質性主題分析",
+    "limitations": "未擷取到作者自述限制段；小樣本、無學生資料（本代理判斷）",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:46Z"
+  },
+  {
+   "record_id": "KB-2026-0050",
+   "doi": "10.1609/aaai.v40i47.41530",
+   "published_in": [
+    "C22"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 6 位、Crossref 6 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "Proceedings of the AAAI Conference on Artificial Intelligence；分節「EAAI Symposium: Resources for Teaching AI in K-12」；期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "期次「Vol. 40 No. 47: AAAI-26 New Faculty Highlights, Journal Track, IAAI-26 and EAAI-26 Main Track」、頁面 Published 2026/03/14；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1609/aaai.v40i47.41530 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://ojs.aaai.org/index.php/AAAI/article/view/41530",
+   "publisher_date_text": "Published 2026-03-14",
+   "proposed_first_published_on": "2026-03-14",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "國中（11–14 歲）：2024 夏令營 23 名、2025 春季課堂 40 名；另有教師 PD 場次",
+    "outcomes_measured": "學習結果與可用性問卷、遊戲參與",
+    "design": "迭代設計與多場域實施描述（無對照）",
+    "limitations": "未擷取到作者自述限制段；多場域小樣本、無對照（本代理判斷）",
+    "oa_basis": "AAAI OJS 公開免費下載 PDF（非 CC 授權，著作權屬 AAAI）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:48Z"
+  },
+  {
+   "record_id": "KB-2026-0057",
+   "doi": "10.3389/feduc.2026.1831415",
+   "published_in": [
+    "J29"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 5 位、Crossref 5 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "出版者頁期刊名「Frontiers in Education」對應 J29"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "Volume 11 - 2026；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.3389/feduc.2026.1831415 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1831415/full",
+   "publisher_date_text": "Published 05 June 2026",
+   "proposed_first_published_on": "2026-06-05",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "中國小學語文教師 n=104",
+    "outcomes_measured": "32 題 AI 素養問卷的因素結構與內部一致性",
+    "design": "量表發展（探索性因素分析）",
+    "limitations": "作者自述：樣本小、便利抽樣、僅做 EFA",
+    "oa_basis": "CC BY 4.0（出版者頁標示 citation_fulltext_world_readable=yes）",
+    "fulltext_read": "出版者官方全文（HTML）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:50Z"
+  },
+  {
+   "record_id": "KB-2026-0058",
+   "doi": "10.3389/feduc.2026.1811339",
+   "published_in": [
+    "J29"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 7 位、Crossref 7 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "出版者頁期刊名「Frontiers in Education」對應 J29"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "Volume 11 - 2026；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.3389/feduc.2026.1811339 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1811339/full",
+   "publisher_date_text": "Published 31 July 2026",
+   "proposed_first_published_on": "2026-07-31",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "美國高中生 n=42（三時間點問卷）；其中 17 名訪談與研究作品分析",
+    "outcomes_measured": "AI 態度／認知問卷、ML 知識技能（訪談與作品）、身分認同",
+    "design": "混合方法時間序列（無對照）",
+    "limitations": "作者指出雙極量表無法捕捉矛盾態度，問卷未偵測到變化",
+    "oa_basis": "CC BY 4.0（出版者頁標示 citation_fulltext_world_readable=yes）",
+    "fulltext_read": "出版者官方全文（HTML）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:53Z"
+  },
+  {
+   "record_id": "KB-2026-0059",
+   "doi": "10.3389/feduc.2026.1769204",
+   "published_in": [
+    "J29"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 3 位、Crossref 3 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "出版者頁期刊名「Frontiers in Education」對應 J29"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "Volume 11 - 2026；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.3389/feduc.2026.1769204 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1769204/full",
+   "publisher_date_text": "Published 29 June 2026",
+   "proposed_first_published_on": "2026-06-29",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "印尼小學教師：問卷 n=468，訪談 22 名",
+    "outcomes_measured": "自評 AI-TPACK、整合 AI 的挑戰、專業發展需求",
+    "design": "混合方法橫斷調查",
+    "limitations": "作者自述：便利抽樣、自陳量表的社會期許偏誤",
+    "oa_basis": "CC BY 4.0（出版者頁標示 citation_fulltext_world_readable=yes）",
+    "fulltext_read": "出版者官方全文（HTML）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:56Z"
+  },
+  {
+   "record_id": "KB-2025-0033",
+   "doi": "10.3389/feduc.2025.1543746",
+   "published_in": [
+    "J29"
+   ],
+   "year_value": "2025",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 4 位、Crossref 4 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "出版者頁期刊名「Frontiers in Education」對應 J29"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "Volume 10 - 2025；年份 2025 = year_value 2025"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.3389/feduc.2025.1543746 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1543746/full",
+   "publisher_date_text": "Published 21 May 2025",
+   "proposed_first_published_on": "2025-05-21",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "德國中學生（10–20 歲）n=836",
+    "outcomes_measured": "對 AI 的自由詞聯想；ChatGPT 發布前後兩波比較",
+    "design": "兩波橫斷自由聯想測驗；歸類與語意網絡分析",
+    "limitations": "作者自述：限於特定學生群體、質性分析方法有限",
+    "oa_basis": "CC BY 4.0（出版者頁標示 citation_fulltext_world_readable=yes）",
+    "fulltext_read": "出版者官方全文（HTML）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:00Z"
+  },
+  {
+   "record_id": "KB-2026-0060",
+   "doi": "10.3389/feduc.2026.1800516",
+   "published_in": [
+    "J29"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 3 位、Crossref 3 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "出版者頁期刊名「Frontiers in Education」對應 J29"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "Volume 11 - 2026；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.3389/feduc.2026.1800516 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1800516/full",
+   "publisher_date_text": "Published 28 April 2026",
+   "proposed_first_published_on": "2026-04-28",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "無受試；中國高中科學教學 GenAI 使用之文獻（99 篇文章＋2 堂示範課）",
+    "outcomes_measured": "不適用",
+    "design": "快速回顧（mini review）",
+    "limitations": "未擷取到作者自述限制段；快速回顧、限一年期中國期刊（本代理判斷）",
+    "oa_basis": "CC BY 4.0（出版者頁標示 citation_fulltext_world_readable=yes）",
+    "fulltext_read": "出版者官方全文（HTML）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:04Z"
+  },
+  {
+   "record_id": "KB-2026-0061",
+   "doi": "10.3389/feduc.2026.1805617",
+   "published_in": [
+    "J29"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 4 位、Crossref 4 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "出版者頁期刊名「Frontiers in Education」對應 J29"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "Volume 11 - 2026；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.3389/feduc.2026.1805617 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1805617/full",
+   "publisher_date_text": "Published 29 April 2026",
+   "proposed_first_published_on": "2026-04-29",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "無受試；文學教育（小學至高中）",
+    "outcomes_measured": "不適用",
+    "design": "政策與實務回顧（框架）",
+    "limitations": "作者自述：非因果評估、非系統回顧、框架未經驗證",
+    "oa_basis": "CC BY 4.0（出版者頁標示 citation_fulltext_world_readable=yes）",
+    "fulltext_read": "出版者官方全文（HTML）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:06Z"
+  },
+  {
+   "record_id": "KB-2026-0062",
+   "doi": "10.19173/irrodl.v27i2.9140",
+   "published_in": [
+    "J30"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 2 位、Crossref 2 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "出版者頁期刊名「The International Review of Research in Open and Distributed Learning」對應 J30"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "Vol. 27 No. 2 (2026)（頁面期次）；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.19173/irrodl.v27i2.9140 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://www.irrodl.org/index.php/irrodl/article/view/9140",
+   "publisher_date_text": "Published 2026-05-06",
+   "proposed_first_published_on": "2026-05-06",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "K-12 教育者 n=10（含 8 名公立學校教師：小學 6、國中 1、中學 1）",
+    "outcomes_measured": "AI 自我效能、對 AI 的觀感（詞語情感分析）、開放題反思",
+    "design": "線上 PD 單組前後調查＋質性主題分析",
+    "limitations": "作者自述：樣本小、時間不足有人感到倉促",
+    "oa_basis": "CC BY 4.0（Crossref license）",
+    "fulltext_read": "出版者官方全文（PDF）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:09Z"
+  },
+  {
+   "record_id": "KB-2026-0063",
+   "doi": "10.1007/s44217-026-01695-4",
+   "published_in": [
+    "J32"
+   ],
+   "year_value": "2026",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": {
+     "status": "unverifiable",
+     "note": "出版者頁回 Client Challenge（需 JavaScript），未繞過；Crossref 題名相符但不算核對"
+    },
+    "authors": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref 作者數 2（僅供參考）"
+    },
+    "venue": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref container-title 為 Discover Education"
+    },
+    "issue_year": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref issued [[2026, 5, 29]]"
+    },
+    "doi_url": {
+     "status": "unverifiable",
+     "note": "DOI 轉址至 link.springer.com（正確網域），但頁面為驗證頁，無法確認是同一篇；primary_url 格式正確"
+    }
+   },
+   "publisher_page_url": "https://link.springer.com/10.1007/s44217-026-01695-4",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "g2g4": null,
+   "unverifiable_reason": "Springer link.springer.com 回 HTTP 200 但內容為「Client Challenge」JavaScript 驗證頁（含 BMC/SpringerOpen 期刊網域亦轉址至此）；依規定不繞過",
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:12Z"
+  },
+  {
+   "record_id": "KB-2026-0064",
+   "doi": "10.1007/s44217-026-01403-2",
+   "published_in": [
+    "J32"
+   ],
+   "year_value": "2026",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": {
+     "status": "unverifiable",
+     "note": "出版者頁回 Client Challenge（需 JavaScript），未繞過；Crossref 題名相符但不算核對"
+    },
+    "authors": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref 作者數 4（僅供參考）"
+    },
+    "venue": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref container-title 為 Discover Education"
+    },
+    "issue_year": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref issued [[2026, 3, 24]]"
+    },
+    "doi_url": {
+     "status": "unverifiable",
+     "note": "DOI 轉址至 link.springer.com（正確網域），但頁面為驗證頁，無法確認是同一篇；primary_url 格式正確"
+    }
+   },
+   "publisher_page_url": "https://link.springer.com/10.1007/s44217-026-01403-2",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "g2g4": null,
+   "unverifiable_reason": "Springer link.springer.com 回 HTTP 200 但內容為「Client Challenge」JavaScript 驗證頁（含 BMC/SpringerOpen 期刊網域亦轉址至此）；依規定不繞過",
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:14Z"
+  },
+  {
+   "record_id": "KB-2025-0034",
+   "doi": "10.1007/s44217-025-00630-3",
+   "published_in": [
+    "J32"
+   ],
+   "year_value": "2025",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": {
+     "status": "unverifiable",
+     "note": "出版者頁回 Client Challenge（需 JavaScript），未繞過；Crossref 題名相符但不算核對"
+    },
+    "authors": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref 作者數 10（僅供參考）"
+    },
+    "venue": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref container-title 為 Discover Education"
+    },
+    "issue_year": {
+     "status": "unverifiable",
+     "note": "出版者頁不可讀；Crossref issued [[2025, 7, 28]]"
+    },
+    "doi_url": {
+     "status": "unverifiable",
+     "note": "DOI 轉址至 link.springer.com（正確網域），但頁面為驗證頁，無法確認是同一篇；primary_url 格式正確"
+    }
+   },
+   "publisher_page_url": "https://link.springer.com/10.1007/s44217-025-00630-3",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "g2g4": null,
+   "unverifiable_reason": "Springer link.springer.com 回 HTTP 200 但內容為「Client Challenge」JavaScript 驗證頁（含 BMC/SpringerOpen 期刊網域亦轉址至此）；依規定不繞過",
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:15Z"
+  },
+  {
+   "record_id": "KB-2026-0065",
+   "doi": "10.1057/s41599-026-07392-9",
+   "published_in": [
+    "J33"
+   ],
+   "year_value": "2026",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "出版者頁 citation_title 與紀錄題名正規化後一致"
+    },
+    "authors": {
+     "status": "ok",
+     "note": "出版者頁 3 位、Crossref 3 位，依序姓氏一致（不記姓名）"
+    },
+    "venue": {
+     "status": "ok",
+     "note": "出版者頁期刊名「Humanities and Social Sciences Communications」對應 J33"
+    },
+    "issue_year": {
+     "status": "ok",
+     "note": "dc.source「Humanities and Social Sciences Communications 2026 13:1」；年份 2026 = year_value 2026"
+    },
+    "doi_url": {
+     "status": "ok",
+     "note": "https://doi.org/10.1057/s41599-026-07392-9 轉址至出版者頁，頁面 DOI 中繼資料相同；primary_url 為 https://doi.org/<DOI>"
+    }
+   },
+   "publisher_page_url": "https://www.nature.com/articles/s41599-026-07392-9",
+   "publisher_date_text": "Published: 27 April 2026；同頁另標「Version of record : 02 July 2026」",
+   "proposed_first_published_on": "2026-04-27",
+   "differences": [],
+   "g2g4": {
+    "school_level_and_n": "中國廣州中小學 AI 課程教師，有效 n=266",
+    "outcomes_measured": "使用 AI 虛擬模擬平台的行為意圖及其預測因子",
+    "design": "橫斷問卷：SEM＋fsQCA",
+    "limitations": "作者自述：橫斷設計無法確立因果",
+    "oa_basis": "Open access, CC BY-NC-ND 4.0（Crossref license；頁面標 Open access）",
+    "fulltext_read": "出版者官方全文（HTML）"
+   },
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:18Z"
+  }
+ ],
+ "counts": {
+  "match": 28,
+  "mismatch": 0,
+  "unverifiable": 7,
+  "g2g4_notes": 28
+ },
+ "limits": [
+  "Springer（link.springer.com）對 IJSTEM 4 筆與 Discover Education 3 筆回 Client Challenge（JavaScript 驗證頁），依規定不繞過、未改 UA 或停用 TLS；判 unverifiable，Crossref 相符不算核對完成。",
+  "作者核對以出版者頁 citation_author 與 Crossref author 的人數及依序姓氏比對（去重音、忽略大小寫標點）；未比對名字縮寫細節，未將姓名寫入輸出。",
+  "題名核對以 citation_title／DC.Title 正規化（去大小寫、標點、空白、重音）後完全相等為準。",
+  "proposed_first_published_on 只取出版者頁可見文字「Published」日期；未使用 Crossref created/indexed/deposited。Frontiers 頁 meta citation_online_date 等於 Accepted 日，非頁面明寫的 Published，未採用。HSSC 頁同時標 Published 27 April 2026 與 Version of record 02 July 2026，建議取 Published 日，供人工決定。AAAI OJS 的 Published 日為論文集上線日，非會議發表日或預印本日。",
+  "出版者頁的「Published」是出版者 manifestation 日，不保證是全球最早公開（可能有預印本），僅為建議值，不自行改資料。",
+  "G2–G4 摘記以關鍵詞擷取全文段落後人工閱讀撰寫，非逐字精讀全文；標「未擷取到作者自述限制段」者表示本次擷取未找到，不代表原文沒有；「（本代理判斷）」為明顯限制推論，非作者原話。摘記不是成效主張，前後測均未做 G2–G4 正式評估。",
+  "AAAI EAAI 論文為出版者公開免費 PDF，但非 CC 授權；僅寫短轉述。",
+  "全文與出版者頁快取已於完成後刪除；保留 facts.json（中繼資料摘要，不含全文、不含姓名）與 requests.tsv。",
+  "試跑請求（kind=pilot，8 筆）只記到分鐘；其中 springeropen 期刊網域同樣轉址到 link.springer.com 驗證頁。",
+  "同一模型的核對不算獨立真人審閱。"
+ ]
+}

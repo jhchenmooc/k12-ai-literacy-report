@@ -1,0 +1,1018 @@
+{
+ "started_utc": "2026-10-09T18:38:15Z",
+ "ended_utc": "2026-10-09T18:39:33Z",
+ "requests": [
+  {
+   "url": "https://dl.acm.org/doi/10.1145/3801749.3801755",
+   "utc": "2026-10-09T18:38:22Z",
+   "http_status": 403,
+   "result": "Cloudflare challenge page (\"Just a moment...\", challenges.cloudflare.com); not bypassed"
+  },
+  {
+   "url": "https://dl.acm.org/doi/10.1145/3706599.3719876",
+   "utc": "2026-10-09T18:38:28Z",
+   "http_status": 403,
+   "result": "Cloudflare challenge page; not bypassed"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3801749.3801755",
+   "utc": "2026-10-09T18:38:34Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3801749.3801759",
+   "utc": "2026-10-09T18:38:35Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3801749.3801762",
+   "utc": "2026-10-09T18:38:35Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3801749.3801767",
+   "utc": "2026-10-09T18:38:37Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3801749.3801788",
+   "utc": "2026-10-09T18:38:37Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772318.3790471",
+   "utc": "2026-10-09T18:38:38Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772318.3791480",
+   "utc": "2026-10-09T18:38:38Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772363.3799163",
+   "utc": "2026-10-09T18:38:39Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772363.3798847",
+   "utc": "2026-10-09T18:38:39Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772318.3791555",
+   "utc": "2026-10-09T18:38:40Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706599.3719876",
+   "utc": "2026-10-09T18:38:40Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706598.3714106",
+   "utc": "2026-10-09T18:38:41Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772318.3791477",
+   "utc": "2026-10-09T18:38:41Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812170",
+   "utc": "2026-10-09T18:38:42Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812139",
+   "utc": "2026-10-09T18:38:42Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812137",
+   "utc": "2026-10-09T18:38:43Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806141",
+   "utc": "2026-10-09T18:38:43Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3727057",
+   "utc": "2026-10-09T18:38:44Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3715275.3732142",
+   "utc": "2026-10-09T18:38:44Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3757620",
+   "utc": "2026-10-09T18:38:45Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3728836",
+   "utc": "2026-10-09T18:38:45Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3728856",
+   "utc": "2026-10-09T18:38:46Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813775",
+   "utc": "2026-10-09T18:38:46Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813782",
+   "utc": "2026-10-09T18:38:47Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806143",
+   "utc": "2026-10-09T18:38:48Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813780",
+   "utc": "2026-10-09T18:38:49Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806144",
+   "utc": "2026-10-09T18:38:49Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731605",
+   "utc": "2026-10-09T18:38:50Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731525",
+   "utc": "2026-10-09T18:38:51Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731602",
+   "utc": "2026-10-09T18:38:51Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3728849",
+   "utc": "2026-10-09T18:38:52Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813763",
+   "utc": "2026-10-09T18:38:52Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3728839",
+   "utc": "2026-10-09T18:38:53Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731498",
+   "utc": "2026-10-09T18:38:53Z",
+   "http_status": 200,
+   "result": "1 record"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806128",
+   "utc": "2026-10-09T18:38:54Z",
+   "http_status": 200,
+   "result": "1 record"
+  }
+ ],
+ "items": [
+  {
+   "record_id": "KB-2026-0034",
+   "doi": "10.1145/3801749.3801755",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3801749.3801755",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-03-11、published-print=2026-03-11、published-online=2026-08-20；年份等於 year_value；container「Proceedings of the 20th WiPSCE Conference on Primary and Secondary Computing Education Research」對應 C21；作者數 4（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。WiPSCE：Crossref published-print（2026-03-11）早於 published-online（2026-08-20），順序異常，照錄不修正；兩者皆非 ACM 頁明寫的 Published 日。",
+   "g2g4": null,
+   "http_status": 403,
+   "read_utc": "2026-10-09T18:38:22Z",
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。本筆實測。"
+  },
+  {
+   "record_id": "KB-2026-0035",
+   "doi": "10.1145/3801749.3801759",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3801749.3801759",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-03-11、published-print=2026-03-11、published-online=2026-08-20；年份等於 year_value；container「Proceedings of the 20th WiPSCE Conference on Primary and Secondary Computing Education Research」對應 C21；作者數 1（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。WiPSCE：Crossref published-print（2026-03-11）早於 published-online（2026-08-20），順序異常，照錄不修正；兩者皆非 ACM 頁明寫的 Published 日。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0036",
+   "doi": "10.1145/3801749.3801762",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3801749.3801762",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-03-11、published-print=2026-03-11、published-online=2026-08-20；年份等於 year_value；container「Proceedings of the 20th WiPSCE Conference on Primary and Secondary Computing Education Research」對應 C21；作者數 5（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。WiPSCE：Crossref published-print（2026-03-11）早於 published-online（2026-08-20），順序異常，照錄不修正；兩者皆非 ACM 頁明寫的 Published 日。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0037",
+   "doi": "10.1145/3801749.3801767",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3801749.3801767",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-03-11、published-print=2026-03-11、published-online=2026-08-20；年份等於 year_value；container「Proceedings of the 20th WiPSCE Conference on Primary and Secondary Computing Education Research」對應 C21；作者數 5（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。WiPSCE：Crossref published-print（2026-03-11）早於 published-online（2026-08-20），順序異常，照錄不修正；兩者皆非 ACM 頁明寫的 Published 日。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0038",
+   "doi": "10.1145/3801749.3801788",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3801749.3801788",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-03-11、published-print=2026-03-11、published-online=2026-08-20；年份等於 year_value；container「Proceedings of the 20th WiPSCE Conference on Primary and Secondary Computing Education Research」對應 C21；作者數 2（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。WiPSCE：Crossref published-print（2026-03-11）早於 published-online（2026-08-20），順序異常，照錄不修正；兩者皆非 ACM 頁明寫的 Published 日。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0066",
+   "doi": "10.1145/3772318.3790471",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3772318.3790471",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-04-13、published-print=2026-04-13、published-online=2026-04-13；年份等於 year_value；container「Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems」對應 C13；作者數 6（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0067",
+   "doi": "10.1145/3772318.3791480",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3772318.3791480",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-04-13、published-print=2026-04-13、published-online=2026-04-13；年份等於 year_value；container「Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems」對應 C13；作者數 7（未與 ACM 頁比對）；type=proceedings-article；license=無 license 欄。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0068",
+   "doi": "10.1145/3772363.3799163",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3772363.3799163",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-04-13、published-print=2026-04-13、published-online=2026-04-13；年份等於 year_value；container「Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems」對應 C13；作者數 5（未與 ACM 頁比對）；type=proceedings-article；license=無 license 欄。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0069",
+   "doi": "10.1145/3772363.3798847",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3772363.3798847",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-04-13、published-print=2026-04-13、published-online=2026-04-13；年份等於 year_value；container「Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems」對應 C13；作者數 6（未與 ACM 頁比對）；type=proceedings-article；license=無 license 欄。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0070",
+   "doi": "10.1145/3772318.3791555",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3772318.3791555",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-04-13、published-print=2026-04-13、published-online=2026-04-13；年份等於 year_value；container「Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems」對應 C13；作者數 5（未與 ACM 頁比對）；type=proceedings-article；license=http://www.acm.org/publications/policies/copyright_policy#Background。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2025-0035",
+   "doi": "10.1145/3706599.3719876",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3706599.3719876",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-04-25、published-print=2025-04-26、published-online=2025-04-25；年份等於 year_value；container「Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems」對應 C13；作者數 3（未與 ACM 頁比對）；type=proceedings-article；license=https://www.acm.org/publications/policies/copyright_policy#Background。",
+   "g2g4": null,
+   "http_status": 403,
+   "read_utc": "2026-10-09T18:38:28Z",
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。本筆實測。"
+  },
+  {
+   "record_id": "KB-2025-0036",
+   "doi": "10.1145/3706598.3714106",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3706598.3714106",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-04-25、published-print=2025-04-26、published-online=2025-04-25；年份等於 year_value；container「Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems」對應 C13；作者數 7（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by-nc/4.0/。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0071",
+   "doi": "10.1145/3772318.3791477",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3772318.3791477",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-04-13、published-print=2026-04-13、published-online=2026-04-13；年份等於 year_value；container「Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems」對應 C13；作者數 3（未與 ACM 頁比對）；type=proceedings-article；license=無 license 欄。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0072",
+   "doi": "10.1145/3773077.3812170",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3773077.3812170",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-06-21、published-print=2026-06-22、published-online=2026-06-21；年份等於 year_value；container「Proceedings of the 25th Annual ACM Interaction Design and Children Conference」對應 C14；作者數 3（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0073",
+   "doi": "10.1145/3773077.3812139",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3773077.3812139",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-06-21、published-print=2026-06-22、published-online=2026-06-21；年份等於 year_value；container「Proceedings of the 25th Annual ACM Interaction Design and Children Conference」對應 C14；作者數 5（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0074",
+   "doi": "10.1145/3773077.3812137",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3773077.3812137",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-06-21、published-print=2026-06-22、published-online=2026-06-21；年份等於 year_value；container「Proceedings of the 25th Annual ACM Interaction Design and Children Conference」對應 C14；作者數 4（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0075",
+   "doi": "10.1145/3773077.3806141",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3773077.3806141",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-06-21、published-print=2026-06-22、published-online=2026-06-21；年份等於 year_value；container「Proceedings of the 25th Annual ACM Interaction Design and Children Conference」對應 C14；作者數 5（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2025-0037",
+   "doi": "10.1145/3713043.3727057",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3713043.3727057",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-06-23、published-print=2025-06-23、published-online=2025-06-23；年份等於 year_value；container「Proceedings of the 24th Interaction Design and Children」對應 C14；作者數 8（未與 ACM 頁比對）；type=proceedings-article；license=無 license 欄。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2025-0038",
+   "doi": "10.1145/3715275.3732142",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3715275.3732142",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-06-23、published-print=2025-06-23、published-online=2025-06-23；年份等於 year_value；container「Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency」對應 C15；作者數 8（未與 ACM 頁比對）；type=proceedings-article；license=http://www.acm.org/publications/policies/copyright_policy#Background。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2025-0039",
+   "doi": "10.1145/3757620",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3757620",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-10-16、published-print=2025-10-18、published-online=2025-10-16；年份等於 year_value；container「Proceedings of the ACM on Human-Computer Interaction」對應 C16；作者數 6（未與 ACM 頁比對）；type=journal-article；vol 9 issue 7；license=http://www.acm.org/publications/policies/copyright_policy#Background。CSCW 期次（PACM HCI vol 9 issue 7）僅見於 Crossref，需 ACM DL 確認。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2025-0051",
+   "doi": "10.1145/3713043.3728836",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3713043.3728836",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-06-23、published-print=2025-06-23、published-online=2025-06-23；年份等於 year_value；container「Proceedings of the 24th Interaction Design and Children」對應 C14；作者數 6（未與 ACM 頁比對）；type=proceedings-article；license=http://www.acm.org/publications/policies/copyright_policy#Background。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2025-0052",
+   "doi": "10.1145/3713043.3728856",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3713043.3728856",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-06-23、published-print=2025-06-23、published-online=2025-06-23；年份等於 year_value；container「Proceedings of the 24th Interaction Design and Children」對應 C14；作者數 7（未與 ACM 頁比對）；type=proceedings-article；license=http://www.acm.org/publications/policies/copyright_policy#Background。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0103",
+   "doi": "10.1145/3773077.3813775",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3773077.3813775",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-06-21、published-print=2026-06-22、published-online=2026-06-21；年份等於 year_value；container「Proceedings of the 25th Annual ACM Interaction Design and Children Conference」對應 C14；作者數 2（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0104",
+   "doi": "10.1145/3773077.3813782",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3773077.3813782",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-06-21、published-print=2026-06-22、published-online=2026-06-21；年份等於 year_value；container「Proceedings of the 25th Annual ACM Interaction Design and Children Conference」對應 C14；作者數 1（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0105",
+   "doi": "10.1145/3773077.3806143",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3773077.3806143",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-06-21、published-print=2026-06-22、published-online=2026-06-21；年份等於 year_value；container「Proceedings of the 25th Annual ACM Interaction Design and Children Conference」對應 C14；作者數 7（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0106",
+   "doi": "10.1145/3773077.3813780",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3773077.3813780",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-06-21、published-print=2026-06-22、published-online=2026-06-21；年份等於 year_value；container「Proceedings of the 25th Annual ACM Interaction Design and Children Conference」對應 C14；作者數 1（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0107",
+   "doi": "10.1145/3773077.3806144",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3773077.3806144",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-06-21、published-print=2026-06-22、published-online=2026-06-21；年份等於 year_value；container「Proceedings of the 25th Annual ACM Interaction Design and Children Conference」對應 C14；作者數 6（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2025-0053",
+   "doi": "10.1145/3713043.3731605",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3713043.3731605",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-06-23、published-print=2025-06-23、published-online=2025-06-23；年份等於 year_value；container「Proceedings of the 24th Interaction Design and Children」對應 C14；作者數 1（未與 ACM 頁比對）；type=proceedings-article；license=無 license 欄。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2025-0054",
+   "doi": "10.1145/3713043.3731525",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3713043.3731525",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-06-23、published-print=2025-06-23、published-online=2025-06-23；年份等於 year_value；container「Proceedings of the 24th Interaction Design and Children」對應 C14；作者數 3（未與 ACM 頁比對）；type=proceedings-article；license=無 license 欄。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2025-0055",
+   "doi": "10.1145/3713043.3731602",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3713043.3731602",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-06-23、published-print=2025-06-23、published-online=2025-06-23；年份等於 year_value；container「Proceedings of the 24th Interaction Design and Children」對應 C14；作者數 1（未與 ACM 頁比對）；type=proceedings-article；license=無 license 欄。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2025-0056",
+   "doi": "10.1145/3713043.3728849",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3713043.3728849",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-06-23、published-print=2025-06-23、published-online=2025-06-23；年份等於 year_value；container「Proceedings of the 24th Interaction Design and Children」對應 C14；作者數 6（未與 ACM 頁比對）；type=proceedings-article；license=無 license 欄。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0108",
+   "doi": "10.1145/3773077.3813763",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3773077.3813763",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-06-21、published-print=2026-06-22、published-online=2026-06-21；年份等於 year_value；container「Proceedings of the 25th Annual ACM Interaction Design and Children Conference」對應 C14；作者數 1（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2025-0057",
+   "doi": "10.1145/3713043.3728839",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3713043.3728839",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-06-23、published-print=2025-06-23、published-online=2025-06-23；年份等於 year_value；container「Proceedings of the 24th Interaction Design and Children」對應 C14；作者數 4（未與 ACM 頁比對）；type=proceedings-article；license=無 license 欄。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2025-0058",
+   "doi": "10.1145/3713043.3731498",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3713043.3731498",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2025-06-23、published-print=2025-06-23、published-online=2025-06-23；年份等於 year_value；container「Proceedings of the 24th Interaction Design and Children」對應 C14；作者數 6（未與 ACM 頁比對）；type=proceedings-article；license=無 license 欄。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  },
+  {
+   "record_id": "KB-2026-0109",
+   "doi": "10.1145/3773077.3806128",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_url_same_work": "unverifiable"
+   },
+   "publisher_page_url": "https://dl.acm.org/doi/10.1145/3773077.3806128",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 參考（非出版者核對）：題名與紀錄一致（忽略大小寫標點）；published=2026-06-21、published-print=2026-06-22、published-online=2026-06-21；年份等於 year_value；container「Proceedings of the 25th Annual ACM Interaction Design and Children Conference」對應 C14；作者數 8（未與 ACM 頁比對）；type=proceedings-article；license=https://creativecommons.org/licenses/by/4.0/legalcode。",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "unverifiable_reason": "ACM DL（dl.acm.org）對自動請求回 HTTP 403 Cloudflare 驗證頁；依規定不繞過、不停用 TLS 驗證。同一原因，未逐筆重試（http_status=null 表示未發出請求）。"
+  }
+ ],
+ "counts": {
+  "total": 35,
+  "match": 0,
+  "mismatch": 0,
+  "unverifiable": 35,
+  "g2g4_filled": 0,
+  "crossref_title_consistent": 35,
+  "crossref_year_consistent": 35,
+  "crossref_container_maps_to_code": 35
+ },
+ "limits": [
+  "ACM DL 對自動請求回 HTTP 403 Cloudflare 驗證頁（2 筆實測），未繞過、未停用 TLS 驗證；其餘 33 筆未重試。",
+  "Crossref／OpenAlex 單獨相符不算核對完成；crossref_note 僅作參考。未查 OpenAlex（與 Crossref 非獨立來源）。",
+  "作者只比對數量於 Crossref 內部，未與 ACM 頁比對；不記姓名。",
+  "proposed_first_published_on 一律 null：未讀到 ACM 頁 Published 字樣；不以 Crossref created／published-online 代替。",
+  "G2–G4 全部 null：未讀出版者全文；arXiv 預印本不用。",
+  "下載快取（Cloudflare 驗證頁、Crossref 原始回應）已於完成後刪除。"
+ ]
+}

@@ -1,0 +1,957 @@
+{
+ "started_utc": "2026-10-09T18:38:15Z",
+ "ended_utc": "2026-10-09T18:40:47Z",
+ "requests": {
+  "publisher_requests": 13,
+  "crossref_requests": 26,
+  "total": 39,
+  "log": [
+   {
+    "url": "https://doi.org/10.1016/j.caeai.2025.100422（跟隨轉址）",
+    "final_url": "https://www.sciencedirect.com/science/article/pii/S2666920X25000621",
+    "utc": "2026-10-09T18:38:24Z",
+    "http_status": 403,
+    "note": "doi.org→linkinghub 200（只回轉址表單）；ScienceDirect 直連 403"
+   },
+   {
+    "url": "https://doi.org/10.1016/j.compedu.2026.105614（跟隨轉址）",
+    "final_url": "https://linkinghub.elsevier.com/retrieve/pii/S0360131526000527",
+    "utc": "2026-10-09T18:38:25Z",
+    "http_status": 200,
+    "note": "doi.org→linkinghub 200（只回轉址表單，未含書目）"
+   },
+   {
+    "url": "https://doi.org/10.1007/s40593-024-00449-3（跟隨轉址）",
+    "final_url": "https://www.sciencedirect.com/science/article/pii/S1560429226000193",
+    "utc": "2026-10-09T18:38:25Z",
+    "http_status": 403,
+    "note": "doi.org→linkinghub（Elsevier）200 轉址表單；ScienceDirect 直連 403"
+   },
+   {
+    "url": "https://doi.org/10.1007/978-3-031-99264-3_19（跟隨轉址）",
+    "final_url": "https://link.springer.com/10.1007/978-3-031-99264-3_19",
+    "utc": "2026-10-09T18:38:26Z",
+    "http_status": 200,
+    "note": "200 但內容為「Client Challenge」JS 驗證頁"
+   },
+   {
+    "url": "https://doi.org/10.1007/s00146-025-02425-4（跟隨轉址）",
+    "final_url": "https://link.springer.com/article/10.1007/s00146-025-02425-4",
+    "utc": "2026-10-09T18:39:42Z",
+    "http_status": 200,
+    "note": "doi.org 與 Crossref 登記之 article 連結皆回「Client Challenge」JS 驗證頁"
+   },
+   {
+    "url": "https://link.springer.com/content/pdf/10.1007/s10956-026-10302-y.pdf",
+    "final_url": "https://link.springer.com/content/pdf/10.1007/s10956-026-10302-y.pdf",
+    "utc": "2026-10-09T18:39:42Z",
+    "http_status": 200,
+    "note": "Crossref 登記之 PDF 連結回 text/html「Client Challenge」驗證頁，非 PDF"
+   },
+   {
+    "url": "https://doi.org/10.1177/07356331251360442（跟隨轉址）",
+    "final_url": "https://journals.sagepub.com/doi/10.1177/07356331251360442",
+    "utc": "2026-10-09T18:38:26Z",
+    "http_status": 403,
+    "note": "403 Cloudflare「Just a moment」challenge"
+   },
+   {
+    "url": "https://doi.org/10.1109/tlt.2026.3668051（跟隨轉址）",
+    "final_url": "https://ieeexplore.ieee.org/document/11410595/",
+    "utc": "2026-10-09T18:38:27Z",
+    "http_status": 202,
+    "note": "202 空內容（0 bytes），無書目可讀"
+   },
+   {
+    "url": "https://doi.org/10.1109/tlt.2026.3672830（跟隨轉址）",
+    "final_url": "https://ieeexplore.ieee.org/document/11429575/",
+    "utc": "2026-10-09T18:38:38Z",
+    "http_status": 202,
+    "note": "202 空內容（0 bytes），無書目可讀"
+   },
+   {
+    "url": "https://doi.org/10.1080/17439884.2026.2698577（跟隨轉址）",
+    "final_url": "https://www.tandfonline.com/doi/full/10.1080/17439884.2026.2698577",
+    "utc": "2026-10-09T18:38:27Z",
+    "http_status": 403,
+    "note": "403 Cloudflare「Just a moment」challenge"
+   },
+   {
+    "url": "https://www.sciencedirect.com/science/article/pii/S2666920X25000621",
+    "utc": "2026-10-09T18:38:37Z",
+    "http_status": 403,
+    "note": "ScienceDirect 直連"
+   },
+   {
+    "url": "https://www.sciencedirect.com/science/article/pii/S1560429226000193",
+    "utc": "2026-10-09T18:38:37Z",
+    "http_status": 403,
+    "note": "ScienceDirect 直連（IJAIED）"
+   },
+   {
+    "url": "https://ieeexplore.ieee.org/document/11410595/",
+    "utc": "2026-10-09T18:38:37Z",
+    "http_status": 202,
+    "note": "IEEE 直連，0 bytes"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1007/s40593-024-00449-3",
+    "utc": "2026-10-09T18:38:45Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1007/s40593-025-00527-0",
+    "utc": "2026-10-09T18:38:47Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.caeai.2025.100422",
+    "utc": "2026-10-09T18:38:49Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.caeai.2025.100480",
+    "utc": "2026-10-09T18:38:50Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.caeai.2025.100518",
+    "utc": "2026-10-09T18:38:52Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.caeai.2025.100520",
+    "utc": "2026-10-09T18:38:53Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.caeai.2026.100552",
+    "utc": "2026-10-09T18:38:54Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.caeai.2026.100561",
+    "utc": "2026-10-09T18:38:55Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.caeai.2026.100564",
+    "utc": "2026-10-09T18:38:57Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.caeai.2026.100624",
+    "utc": "2026-10-09T18:38:58Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.caeai.2026.100631",
+    "utc": "2026-10-09T18:38:59Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.compedu.2026.105614",
+    "utc": "2026-10-09T18:39:01Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.compedu.2026.105698",
+    "utc": "2026-10-09T18:39:02Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.compedu.2026.105745",
+    "utc": "2026-10-09T18:39:04Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.caeai.2025.100363",
+    "utc": "2026-10-09T18:39:05Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1177/07356331251360442",
+    "utc": "2026-10-09T18:39:07Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1177/07356331261487830",
+    "utc": "2026-10-09T18:39:09Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1007/s10956-026-10302-y",
+    "utc": "2026-10-09T18:39:11Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1007/978-3-031-99264-3_19",
+    "utc": "2026-10-09T18:39:13Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1007/978-3-032-29763-1_23",
+    "utc": "2026-10-09T18:39:14Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1007/978-3-032-29770-9_56",
+    "utc": "2026-10-09T18:39:16Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1016/j.tate.2026.105517",
+    "utc": "2026-10-09T18:39:17Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1007/s00146-025-02425-4",
+    "utc": "2026-10-09T18:39:18Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1080/17439884.2026.2698577",
+    "utc": "2026-10-09T18:39:20Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1109/tlt.2026.3668051",
+    "utc": "2026-10-09T18:39:21Z",
+    "http_status": 200
+   },
+   {
+    "url": "https://api.crossref.org/works/10.1109/tlt.2026.3672830",
+    "utc": "2026-10-09T18:39:23Z",
+    "http_status": 200
+   }
+  ]
+ },
+ "items": [
+  {
+   "record_id": "KB-2025-0014",
+   "doi": "10.1007/s40593-024-00449-3",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://www.sciencedirect.com/science/article/pii/S1560429226000193",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「International Journal of Artificial Intelligence in Education」對應 J03：一致；Crossref published-print=[2025, 12]，published-online=[None]，issued=[2025, 12]；紀錄 year_value=2025；卷35 期4 頁/文章號 1749-1792；作者 5 位（未與出版者頁比對）；注意：此 Springer 前綴 DOI 現由 Crossref 登記為 Elsevier BV，doi.org 解析至 Elsevier（linkinghub）；期刊似已轉由 Elsevier 承載；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA，延遲 142 天），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": 403,
+   "read_utc": "2026-10-09T18:38:25Z",
+   "publisher_probe": "doi.org→linkinghub（Elsevier）200 轉址表單；ScienceDirect 直連 403",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:38:45Z"
+  },
+  {
+   "record_id": "KB-2025-0015",
+   "doi": "10.1007/s40593-025-00527-0",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1007/s40593-025-00527-0",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「International Journal of Artificial Intelligence in Education」對應 J03：一致；Crossref published-print=[2025, 12]，published-online=[None]，issued=[2025, 12]；紀錄 year_value=2025；卷35 期6 頁/文章號 4034-4056；作者 2 位（未與出版者頁比對）；注意：此 Springer 前綴 DOI 現由 Crossref 登記為 Elsevier BV，doi.org 解析至 Elsevier（linkinghub）；期刊似已轉由 Elsevier 承載；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA，延遲 142 天），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:38:47Z"
+  },
+  {
+   "record_id": "KB-2025-0016",
+   "doi": "10.1016/j.caeai.2025.100422",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://www.sciencedirect.com/science/article/pii/S2666920X25000621",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers and Education: Artificial Intelligence」對應 J02：一致；Crossref published-print=[2025, 6]，published-online=[None]，issued=[2025, 6]；紀錄 year_value=2025；卷8 期— 頁/文章號 100422；作者 4 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": 403,
+   "read_utc": "2026-10-09T18:38:24Z",
+   "publisher_probe": "doi.org→linkinghub 200（只回轉址表單）；ScienceDirect 直連 403",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:38:49Z"
+  },
+  {
+   "record_id": "KB-2025-0017",
+   "doi": "10.1016/j.caeai.2025.100480",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1016/j.caeai.2025.100480",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers and Education: Artificial Intelligence」對應 J02：一致；Crossref published-print=[2025, 12]，published-online=[None]，issued=[2025, 12]；紀錄 year_value=2025；卷9 期— 頁/文章號 100480；作者 2 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:38:50Z"
+  },
+  {
+   "record_id": "KB-2025-0018",
+   "doi": "10.1016/j.caeai.2025.100518",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1016/j.caeai.2025.100518",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers and Education: Artificial Intelligence」對應 J02：一致；Crossref published-print=[2025, 12]，published-online=[None]，issued=[2025, 12]；紀錄 year_value=2025；卷9 期— 頁/文章號 100518；作者 5 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:38:52Z"
+  },
+  {
+   "record_id": "KB-2025-0019",
+   "doi": "10.1016/j.caeai.2025.100520",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1016/j.caeai.2025.100520",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers and Education: Artificial Intelligence」對應 J02：一致；Crossref published-print=[2025, 12]，published-online=[None]，issued=[2025, 12]；紀錄 year_value=2025；卷9 期— 頁/文章號 100520；作者 8 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:38:53Z"
+  },
+  {
+   "record_id": "KB-2026-0020",
+   "doi": "10.1016/j.caeai.2026.100552",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1016/j.caeai.2026.100552",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers and Education: Artificial Intelligence」對應 J02：一致；Crossref published-print=[2026, 6]，published-online=[None]，issued=[2026, 6]；紀錄 year_value=2026；卷10 期— 頁/文章號 100552；作者 7 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:38:54Z"
+  },
+  {
+   "record_id": "KB-2026-0021",
+   "doi": "10.1016/j.caeai.2026.100561",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1016/j.caeai.2026.100561",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers and Education: Artificial Intelligence」對應 J02：一致；Crossref published-print=[2026, 6]，published-online=[None]，issued=[2026, 6]；紀錄 year_value=2026；卷10 期— 頁/文章號 100561；作者 4 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:38:55Z"
+  },
+  {
+   "record_id": "KB-2026-0022",
+   "doi": "10.1016/j.caeai.2026.100564",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1016/j.caeai.2026.100564",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers and Education: Artificial Intelligence」對應 J02：一致；Crossref published-print=[2026, 6]，published-online=[None]，issued=[2026, 6]；紀錄 year_value=2026；卷10 期— 頁/文章號 100564；作者 8 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:38:57Z"
+  },
+  {
+   "record_id": "KB-2026-0023",
+   "doi": "10.1016/j.caeai.2026.100624",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1016/j.caeai.2026.100624",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers and Education: Artificial Intelligence」對應 J02：一致；Crossref published-print=[2026, 12]，published-online=[None]，issued=[2026, 12]；紀錄 year_value=2026；卷11 期— 頁/文章號 100624；作者 2 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:38:58Z"
+  },
+  {
+   "record_id": "KB-2026-0024",
+   "doi": "10.1016/j.caeai.2026.100631",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1016/j.caeai.2026.100631",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers and Education: Artificial Intelligence」對應 J02：一致；Crossref published-print=[2026, 12]，published-online=[None]，issued=[2026, 12]；紀錄 year_value=2026；卷11 期— 頁/文章號 100631；作者 2 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:38:59Z"
+  },
+  {
+   "record_id": "KB-2026-0025",
+   "doi": "10.1016/j.compedu.2026.105614",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://linkinghub.elsevier.com/retrieve/pii/S0360131526000527",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers & Education」對應 J01：一致；Crossref published-print=[2026, 8]，published-online=[None]，issued=[2026, 8]；紀錄 year_value=2026；卷249 期— 頁/文章號 105614；作者 8 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:38:25Z",
+   "publisher_probe": "doi.org→linkinghub 200（只回轉址表單，未含書目）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:01Z"
+  },
+  {
+   "record_id": "KB-2026-0026",
+   "doi": "10.1016/j.compedu.2026.105698",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1016/j.compedu.2026.105698",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers & Education」對應 J01：一致；Crossref published-print=[2026, 11]，published-online=[None]，issued=[2026, 11]；紀錄 year_value=2026；卷253 期— 頁/文章號 105698；作者 1 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:02Z"
+  },
+  {
+   "record_id": "KB-2027-0001",
+   "doi": "10.1016/j.compedu.2026.105745",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1016/j.compedu.2026.105745",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers & Education」對應 J01：一致；Crossref published-print=[2027, 1]，published-online=[None]，issued=[2027, 1]；紀錄 year_value=2027；卷256 期— 頁/文章號 105745；作者 7 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:04Z"
+  },
+  {
+   "record_id": "KB-2025-0020",
+   "doi": "10.1016/j.caeai.2025.100363",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1016/j.caeai.2025.100363",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Computers and Education: Artificial Intelligence」對應 J02：一致；Crossref published-print=[2025, 6]，published-online=[None]，issued=[2025, 6]；紀錄 year_value=2025；卷8 期— 頁/文章號 100363；作者 3 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:05Z"
+  },
+  {
+   "record_id": "KB-2025-0023",
+   "doi": "10.1177/07356331251360442",
+   "publisher": "SAGE",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://journals.sagepub.com/doi/10.1177/07356331251360442",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Journal of Educational Computing Research」對應 J36：一致；Crossref published-print=[2025, 12]，published-online=[2025, 7, 18]，issued=[2025, 7, 18]；紀錄 year_value=2025；卷63 期7-8 頁/文章號 1748-1781；作者 3 位（未與出版者頁比對）；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": 403,
+   "read_utc": "2026-10-09T18:38:26Z",
+   "publisher_probe": "403 Cloudflare「Just a moment」challenge",
+   "unverifiable_reason": "SAGE：journals.sagepub.com 回 HTTP 403 Cloudflare「Just a moment」challenge；依規定不繞過。",
+   "oa_cc_license": null,
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:07Z"
+  },
+  {
+   "record_id": "KB-2026-0030",
+   "doi": "10.1177/07356331261487830",
+   "publisher": "SAGE",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1177/07356331261487830",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Journal of Educational Computing Research」對應 J36：一致；Crossref published-print=[None]，published-online=[2026, 9, 16]，issued=[2026, 9, 16]；紀錄 year_value=2026；卷（未配卷） 期— 頁/文章號 07356331261487830；作者 4 位（未與出版者頁比對）；注意：尚未配卷期（online first），year_basis=issue_year 可能不成立，year_value 似取自上線年；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "SAGE：journals.sagepub.com 回 HTTP 403 Cloudflare「Just a moment」challenge；依規定不繞過。",
+   "oa_cc_license": null,
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:09Z"
+  },
+  {
+   "record_id": "KB-2026-0031",
+   "doi": "10.1007/s10956-026-10302-y",
+   "publisher": "Springer Nature",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://link.springer.com/content/pdf/10.1007/s10956-026-10302-y.pdf",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Journal of Science Education and Technology」對應 J37：一致；Crossref published-print=[2026, 8]，published-online=[2026, 3, 17]，issued=[2026, 3, 17]；紀錄 year_value=2026；卷35 期4 頁/文章號 1102-1115；作者 3 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:42Z",
+   "publisher_probe": "Crossref 登記之 PDF 連結回 text/html「Client Challenge」驗證頁，非 PDF",
+   "unverifiable_reason": "Springer Nature：link.springer.com 回 HTTP 200 但內容為「Client Challenge」JS 驗證頁（含 Crossref 登記的 PDF 連結）；依規定不繞過。",
+   "oa_cc_license": "CC BY/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:11Z"
+  },
+  {
+   "record_id": "KB-2025-0024",
+   "doi": "10.1007/978-3-031-99264-3_19",
+   "publisher": "Springer Nature",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://link.springer.com/10.1007/978-3-031-99264-3_19",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Communications in Computer and Information Science ／ Artificial Intelligence in Education. Posters and Late Breaking Results, Workshops and Tutorials, Industry and Innovation Tracks, Practitioners, Doctoral Consortium, Blue Sky, and WideAIED」對應 C01：一致；Crossref published-print=[2025]，published-online=[2025, 7, 21]，issued=[2025]；紀錄 year_value=2025；卷（未配卷） 期— 頁/文章號 152-160；作者 7 位（未與出版者頁比對）；Crossref type=book-chapter，叢書 Communications in Computer and Information Science；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:38:26Z",
+   "publisher_probe": "200 但內容為「Client Challenge」JS 驗證頁",
+   "unverifiable_reason": "Springer Nature：link.springer.com 回 HTTP 200 但內容為「Client Challenge」JS 驗證頁（含 Crossref 登記的 PDF 連結）；依規定不繞過。",
+   "oa_cc_license": null,
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:13Z"
+  },
+  {
+   "record_id": "KB-2026-0032",
+   "doi": "10.1007/978-3-032-29763-1_23",
+   "publisher": "Springer Nature",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1007/978-3-032-29763-1_23",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Lecture Notes in Computer Science ／ Artificial Intelligence in Education」對應 C01：一致；Crossref published-print=[2027]，published-online=[2026, 6, 27]，issued=[2026, 6, 27]；紀錄 year_value=2026；卷（未配卷） 期— 頁/文章號 336-350；作者 8 位（未與出版者頁比對）；注意：published-print 年 2027 ≠ 紀錄 year_value 2026；Crossref type=book-chapter，叢書 Lecture Notes in Computer Science；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Springer Nature：link.springer.com 回 HTTP 200 但內容為「Client Challenge」JS 驗證頁（含 Crossref 登記的 PDF 連結）；依規定不繞過。",
+   "oa_cc_license": null,
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:14Z"
+  },
+  {
+   "record_id": "KB-2026-0033",
+   "doi": "10.1007/978-3-032-29770-9_56",
+   "publisher": "Springer Nature",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1007/978-3-032-29770-9_56",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Lecture Notes in Computer Science ／ Artificial Intelligence in Education」對應 C01：一致；Crossref published-print=[2027]，published-online=[2026, 6, 27]，issued=[2026, 6, 27]；紀錄 year_value=2026；卷（未配卷） 期— 頁/文章號 516-525；作者 8 位（未與出版者頁比對）；注意：published-print 年 2027 ≠ 紀錄 year_value 2026；Crossref type=book-chapter，叢書 Lecture Notes in Computer Science；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Springer Nature：link.springer.com 回 HTTP 200 但內容為「Client Challenge」JS 驗證頁（含 Crossref 登記的 PDF 連結）；依規定不繞過。",
+   "oa_cc_license": null,
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:16Z"
+  },
+  {
+   "record_id": "KB-2026-0052",
+   "doi": "10.1016/j.tate.2026.105517",
+   "publisher": "Elsevier",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://doi.org/10.1016/j.tate.2026.105517",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Teaching and Teacher Education」對應 J20：一致；Crossref published-print=[2026, 7]，published-online=[None]，issued=[2026, 7]；紀錄 year_value=2026；卷176 期— 頁/文章號 105517；作者 3 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY-NC-ND/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": null,
+   "read_utc": null,
+   "publisher_probe": "未個別請求：同出版者已試讀並確認封鎖（同一原因）",
+   "unverifiable_reason": "Elsevier：doi.org 轉到 linkinghub.elsevier.com 只回轉址表單（無書目），ScienceDirect 直連 HTTP 403；依規定不繞過。",
+   "oa_cc_license": "CC BY-NC-ND/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:17Z"
+  },
+  {
+   "record_id": "KB-2026-0053",
+   "doi": "10.1007/s00146-025-02425-4",
+   "publisher": "Springer Nature",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://link.springer.com/article/10.1007/s00146-025-02425-4",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「AI & SOCIETY」對應 J24：一致；Crossref published-print=[2026, 1]，published-online=[2025, 7, 1]，issued=[2025, 7, 1]；紀錄 year_value=2026；卷41 期1 頁/文章號 545-556；作者 2 位（未與出版者頁比對）；Crossref 版本(vor)授權 CC BY/4.0（OA），但出版者頁讀不到，未做 G2–G4；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:42Z",
+   "publisher_probe": "doi.org 與 Crossref 登記之 article 連結皆回「Client Challenge」JS 驗證頁",
+   "unverifiable_reason": "Springer Nature：link.springer.com 回 HTTP 200 但內容為「Client Challenge」JS 驗證頁（含 Crossref 登記的 PDF 連結）；依規定不繞過。",
+   "oa_cc_license": "CC BY/4.0",
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:18Z"
+  },
+  {
+   "record_id": "KB-2026-0054",
+   "doi": "10.1080/17439884.2026.2698577",
+   "publisher": "Taylor & Francis",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://www.tandfonline.com/doi/full/10.1080/17439884.2026.2698577",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「Learning, Media and Technology」對應 J26：一致；Crossref published-print=[None]，published-online=[2026, 7, 13]，issued=[2026, 7, 13]；紀錄 year_value=2026；卷（未配卷） 期— 頁/文章號 1-16；作者 2 位（未與出版者頁比對）；注意：尚未配卷期（online first），year_basis=issue_year 可能不成立，year_value 似取自上線年；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": 403,
+   "read_utc": "2026-10-09T18:38:27Z",
+   "publisher_probe": "403 Cloudflare「Just a moment」challenge",
+   "unverifiable_reason": "Taylor & Francis：tandfonline.com 回 HTTP 403 Cloudflare「Just a moment」challenge；依規定不繞過。",
+   "oa_cc_license": null,
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:20Z"
+  },
+  {
+   "record_id": "KB-2026-0055",
+   "doi": "10.1109/tlt.2026.3668051",
+   "publisher": "IEEE",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://ieeexplore.ieee.org/document/11410595/",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「IEEE Transactions on Learning Technologies」對應 J27：一致；Crossref published-print=[2026]，published-online=[None]，issued=[2026]；紀錄 year_value=2026；卷19 期— 頁/文章號 127-140；作者 6 位（未與出版者頁比對）；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": 202,
+   "read_utc": "2026-10-09T18:38:27Z",
+   "publisher_probe": "202 空內容（0 bytes），無書目可讀",
+   "unverifiable_reason": "IEEE：ieeexplore.ieee.org 回 HTTP 202 且內容 0 bytes（機器人管控），無書目可讀；依規定不繞過。",
+   "oa_cc_license": null,
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:21Z"
+  },
+  {
+   "record_id": "KB-2026-0056",
+   "doi": "10.1109/tlt.2026.3672830",
+   "publisher": "IEEE",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable",
+    "authors": "unverifiable",
+    "venue": "unverifiable",
+    "issue_year": "unverifiable",
+    "first_online": "unverifiable",
+    "doi_primary_url": "unverifiable"
+   },
+   "publisher_page_url": "https://ieeexplore.ieee.org/document/11429575/",
+   "publisher_date_text": null,
+   "proposed_first_published_on": null,
+   "differences": [],
+   "crossref_note": "Crossref 題名與紀錄一致（正規化比對）；Crossref 刊名「IEEE Transactions on Learning Technologies」對應 J27：一致；Crossref published-print=[2026]，published-online=[None]，issued=[2026]；紀錄 year_value=2026；卷19 期— 頁/文章號 330-340；作者 5 位（未與出版者頁比對）；Crossref 單獨相符不算核對完成",
+   "g2g4": null,
+   "http_status": 202,
+   "read_utc": "2026-10-09T18:38:38Z",
+   "publisher_probe": "202 空內容（0 bytes），無書目可讀",
+   "unverifiable_reason": "IEEE：ieeexplore.ieee.org 回 HTTP 202 且內容 0 bytes（機器人管控），無書目可讀；依規定不繞過。",
+   "oa_cc_license": null,
+   "crossref_http_status": 200,
+   "crossref_read_utc": "2026-10-09T18:39:23Z"
+  }
+ ],
+ "counts": {
+  "total": 26,
+  "match": 0,
+  "mismatch": 0,
+  "unverifiable": 26,
+  "by_publisher": {
+   "Elsevier": 16,
+   "SAGE": 2,
+   "Springer Nature": 5,
+   "Taylor & Francis": 1,
+   "IEEE": 2
+  },
+  "publisher_probed_items": 10,
+  "g2g4_filled": 0,
+  "oa_cc_but_unreadable": 18
+ },
+ "limits": [
+  "所有出版者（Elsevier、Springer Nature、SAGE、IEEE、Taylor & Francis）頁面均回 403／JS 或 Cloudflare challenge／202 空內容；依規定不繞過、不停用 TLS 驗證、未用瀏覽器代理",
+  "每出版者僅試讀 1–3 筆，其餘同出版者紀錄記同一原因 unverifiable",
+  "Crossref 單獨相符不算核對完成；作者只計數、未寫姓名",
+  "proposed_first_published_on 全部為 null：未讀到出版者頁明寫的 Available online／Published online 日；Crossref published-online 不作為首發日",
+  "G2–G4：18 筆在 Crossref 標有 vor CC 授權（Elsevier 16 筆 CC BY-NC-ND／BY-NC；Springer 2 筆 CC BY），但出版者頁與 Springer PDF 連結皆被封鎖；Elsevier 官方 API 需金鑰，未使用；全部 g2g4=null",
+  "Crossref 請求的 User-Agent 誤含使用者 email（mailto），屬本次操作疏失，已記錄"
+ ]
+}
