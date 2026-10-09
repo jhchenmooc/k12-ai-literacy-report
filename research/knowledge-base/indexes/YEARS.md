@@ -237,6 +237,15 @@
 | KB-2026-0127 — [Understanding Educators’ Perceptions of AI-generated Non-consensual Intimate Imagery](https://doi.org/10.1145/3772318.3790584) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0128 — [Understanding AI Mechanisms Supports Disciplinary Reasoning and Ethical Judgment in K–12 AI Literacy Education](https://doi.org/10.15388/infedu.2601.025) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0129 — [Teachers' Navigation of Assessing Written Work in Times of Generative AI](https://doi.org/10.33422/ejte.v8i3.1872) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0130 — [AI Unplugged: Exploring Pathways from Physical Simulation to Conceptualization of AI Reasoning Processes](https://doi.org/10.1145/3786761) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0131 — [Constructing and Validating the AIPACK Scale: Measuring Teachers' AI Pedagogical Content Knowledge](https://doi.org/10.1111/ejed.70464) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0132 — [Unleashing human potential: An artificial intelligence competency framework for K–12 education](https://doi.org/10.1016/j.caeai.2026.100556) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0133 — [Teacher education for artificial intelligence literacy through a self-determination theory perspective](https://doi.org/10.1080/02619768.2026.2621848) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0134 — [Introducing AI education in school contexts: a 3D-literacy analysis of the Swedish AI subject](https://doi.org/10.1080/1475939x.2026.2619458) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0135 — [Designing and Evaluating Museum Exhibit Prototypes to Foster Middle Schoolers’ AI Literacy through Creativity and Embodiment](https://doi.org/10.1145/3731459.3773305) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0136 — [Games of Representation: Developing Card-Based Activities to Teach About Representation and Bias in AI Datasets](https://doi.org/10.1609/aaai.v40i47.41526) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0137 — [Situating Youth Agency in Designing AI & Art Policies](https://doi.org/10.1609/aaai.v40i47.41522) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0138 — [From disengaged to self-determined: A latent transition analysis of students’ AI learning motivation](https://doi.org/10.1007/s10639-026-13998-y) | journal_article | 未知 | discovered_unverified |
 
 ## 2027｜issue_year
 
