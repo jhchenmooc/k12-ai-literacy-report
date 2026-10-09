@@ -1,0 +1,41 @@
+[
+  {
+    "claim_id": "C1",
+    "kind": "news_policy",
+    "claim_class": "descriptive",
+    "risk_tier": "medium",
+    "level": "N-V2",
+    "daily_fact_kind": "official_attributed_summary",
+    "source_document_type": "official_commentary",
+    "source_title": "UNESCO calls for pairing school screen regulation in Mexico with digital literacy and continuous monitoring",
+    "source_organization": "UNESCO",
+    "source_url": "https://www.unesco.org/en/articles/unesco-calls-pairing-school-screen-regulation-mexico-digital-literacy-and-continuous-monitoring",
+    "source_locator": "Official article date and paragraphs 1, 7: school device policy and literacy",
+    "publication_date": "2026-10-09",
+    "first_disclosed_on": "2026-10-09",
+    "checked_at": "2026-10-09",
+    "source_type": "official",
+    "source_checked": true,
+    "scope_checked": true,
+    "outcome_checked": false,
+    "independent_review": false,
+    "conflict_unresolved": false,
+    "decision": "publish",
+    "assertion_type": "direct_statement",
+    "translation_reviewed": true,
+    "ai_crosscheck_status": "concordant",
+    "ai_crosscheck_passes": 2,
+    "ai_crosscheck_record": "Pass 1: read UNESCO article dated 2026-10-09, confirm attributed literacy and monitoring recommendation. Pass 2: contrast article's reference to prior SEP-Conaedu agreement and prior 2026-09-22 announcement; reject framing as new binding regulation or first announcement of the policy.",
+    "attributed_summary": "UNESCO 墨西哥代表指出，校園裝置管理除具體指引外，仍須搭配數位、演算法、媒體及資訊素養，讓社會理解平台及科技的運作與影響；這是對既有政策的補充倡議，並非宣布新法規生效。",
+    "summary_evidence_spans": [
+      "The UNESCO Representative stated that the Organization will continue to support the SEP and Mexico in this process, which, in addition to specific guidelines, must be backed by digital, algorithmic, media and information literacy (MIL) processes, so that society as a whole can better understand how technologies and platforms work and what their impacts are."
+    ],
+    "evidence_path": "publication/sources/daily-2026-10-09-unesco.txt",
+    "evidence_sha256": "9d3aaf9f99b59490d4b9e56d30fa605e6d75af4e22c9895eddd7341a9e3736ac",
+    "evidence_source_url": "https://www.unesco.org/en/articles/unesco-calls-pairing-school-screen-regulation-mexico-digital-literacy-and-continuous-monitoring",
+    "original_excerpt": "The UNESCO Representative stated that the Organization will continue to support the SEP and Mexico in this process, which, in addition to specific guidelines, must be backed by digital, algorithmic, media and information literacy (MIL) processes, so that society as a whole can better understand how technologies and platforms work and what their impacts are.",
+    "interpretation_note": "UNESCO Oct 9 official representative commentary expands on an earlier Mexico SEP-Conaedu policy. Do not imply a new binding regulation or an independently demonstrated implementation effect.",
+    "scope_limitation": "Mexico only; UNESCO official commentary, not a law, causal evaluation, or policy governing Taiwan.",
+    "claim_text": "來源機構：UNESCO；資料標題：UNESCO calls for pairing school screen regulation in Mexico with digital literacy and continuous monitoring；來源刊登日：2026-10-09。官方文件表示：UNESCO 墨西哥代表指出，校園裝置管理除具體指引外，仍須搭配數位、演算法、媒體及資訊素養，讓社會理解平台及科技的運作與影響；這是對既有政策的補充倡議，並非宣布新法規生效。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）"
+  }
+]

@@ -1,4 +1,10 @@
 {
   "schema_version": 1,
-  "editions": []
+  "editions": [
+    {
+      "path": "daily/2026-10-09/index.html",
+      "claims_file": "publication/claims/daily-2026-10-09.json",
+      "publication_mode": "ai_low_risk_source_facts"
+    }
+  ]
 }
