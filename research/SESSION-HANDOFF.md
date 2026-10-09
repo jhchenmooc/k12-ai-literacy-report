@@ -10,6 +10,8 @@
 
 **目前不可當作完成的事項**：第一期正式週報尚未製作及登錄；`publication/issues.json` 仍為 `{"schema_version":1,"editions":[]}`；九個候選都在 `hold`，不能宣稱已經獲獨立來源認證。新版 CI 能檢查結構，**不能自動證明來源真實**。
 
+**論文搜尋與核對工具**：2026-10-09 起的可用性、適用步驟與限制見本檔末段「論文搜尋與核對工具現況（2026-10-09 起）」；僅人工輔助、不構成認證。
+
 **下一步**：不要再擴充系統；先針對 10/9–10/15 新發布的真正 K–12 政策／研究做查證，完成少量合格主張的正式來源證據、中文對讀與編輯核准，再按既有 PR → CI → Pages 流程出刊。高風險不能為趕期限而假降級。
 
 ## 1. 既有重要決策：後續工作不可隨意推翻
@@ -311,3 +313,31 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 - Pages 實站抽查（Composio 抓取文字，非瀏覽器實測）：首頁、`/design-system/`、`/assets/design-system.css` 可讀；`/research/SESSION-HANDOFF.md` 回 404（研究目錄未公開）。**未做**：手機版／無障礙的瀏覽器實測、首頁頁尾設計系統連結的視覺確認（抓取文字未含頁尾）。
 - 部署後若新增公開目錄，須同步 `verify-and-deploy.yml` 的打包清單（本次已加入 `assets`、`design-system`）。
 - 提醒：Composio 規劃（`composio/README.md`）僅文件，未建任何蒐集程式、排程或憑證；啟用前須先決定結果存放處與 toolkit，並維持候選一律 hold、不自動發刊。
+
+### 論文搜尋與核對工具現況（2026-10-09 起）
+
+> **僅為人工搜尋輔助，不構成新功能、排程、爬蟲或獨立認證。** 工具結果一律回到既有 P0／v1.6 SOP 與 G1–G6／N1–N8 閘門；同一模型的搜尋＋核對不是真人或跨模型獨立審閱。試跑細節、完整查詢、UTC 與逐篇裁決見 [tool-trial-2026-10-09/report.md](tool-trial-2026-10-09/report.md)、[screening.csv](tool-trial-2026-10-09/screening.csv)。
+
+| 工具 | 可用性（2026-10-09 實測） | 適用流程步驟 | 已知限制 |
+|---|---|---|---|
+| Research Desk 本機 `verify_reference`／`verify_bibtex`／`lookup_reference`（需 ToolSearch 載入） | 可用 | **G1 書目核對**：DOI↔題名↔作者↔年份、抓 DOI 錯配 | 只查 OpenAlex／arXiv；副標題會偽陰性（KB-2026-0010 OECD 實例，Crossref 證實無誤）；年份差一年不標記；不核首發日、版本、學段、內容；主表無作者欄，舊紀錄最多得 `partial` |
+| paper-search（OpenAlex；key 由 proxy 帶上，勿讀取／印出） | 可用 | **P0 補漏**：按期刊 source ID＋日期定向查詢；DOI 去重 | 外掛腳本無 filter，需直呼 API；萬用字元要用 `.exact` 欄位，否則 HTTP 400；J01 Elsevier 範圍內 193／329 篇無摘要；`publication_date` 不是首發日；不等於出版社全量 |
+| Crossref API | 可用 | G1 補副標題、卷期日、DOI 歸屬 | 本批 Elsevier／Springer DOI 無 `published-online` |
+| arXiv API／abs 頁 | 可用 | **首發日期佐證**（Submission history） | submission 時戳 ≠ announce／公開可讀時間 |
+| alphaXiv | 可用 | 預印本**發現**（可按日期過濾；抽 3 篇日期與 arXiv v1 同日） | `get_paper_content` 是 AI 摘要、無版本／日期，不得當證據 |
+| Research Desk 雲端版 | 連得上但回 OpenAlex **HTTP 429** | 暫不用 | 以本機版替代 |
+| SciSpace、LR-AI、Citation Needed | 本次未試 | — | LR-AI 依賴 Semantic Scholar（曾 429） |
+| **連不上／不可用**：Exa、Liner、Wiley Scholar Gateway（本 session 顯示需 OAuth 授權）；ScienceDirect（403）、Springer（303 cookie 轉址）出版社頁 | — | — | 不得以模擬或編造結果頂替；需授權者到 claude.ai connector 設定 |
+
+**本批已完成（證據在本分支檔案；PR／CI 結果以實際 GitHub 為準，此處不預寫）**：
+- A1 書目核對：九筆 `discovered_unverified`（任務單寫 8 筆，實為 9 筆）中 3 篇論文 `partial`、6 筆網頁不適用；`bibliographic_checked` 有 DOI 的 22 筆：21 `partial`、1 偽陰性 `not_found`（OECD）；負控制 `mismatch` 正確。**未發現真正錯誤書目，九筆欄位未改。**
+- A2 J01／J02／J03 首次定向查詢：q1、q2b、q3 三組成功，q2 HTTP 400 不記零命中；81 篇不重複作品，主表重複 1（A09）、既有 audit 重訪 0。
+- 入庫 16 筆（KB-2025-0014～0021、KB-2026-0020～0026、KB-2027-0001），全部 `discovered_unverified`、首發日 unknown、`year_basis=issue_year`（KB-2027-0001 為 2027 卷期年，非公開年）；records 38→54、relations 87→128、search runs 42→49。索引經既有 `--write-index`／`--write` 重建。
+- 測試：`validate-knowledge-base.test.js` 兩處 J02／J03 期刊清單由精確相等改為「既有紀錄仍在」（同 #95、5edf5bc 先例），其餘斷言不變；本機 `node --test research/*.test.js` 195／195 通過，CI 的 benchmark、blind-pack、source-facts、知識庫、YEARS 與 publication 檢查本機均通過。
+- A3 alphaXiv 試用；arXiv API 顯示 C08 預印本 2503.00079 查詢當下最新為 v3（wave3 記「v4 歷程未解」可據此補註，主表不改）。
+
+**尚未完成／下一步**：
+1. 16 筆新紀錄需讀出版社或作者頁（Available online、學段細節）後才可評估升 `bibliographic_checked`；G2–G4 方法核查未做，效果量／單組前後測不得寫成成效主張。
+2. 是否接受「Crossref＋OpenAlex 一致」為 G1 書目核對，需管理者決定；決定前不升級。
+3. J01–J03 仍是 `items_screened`／`partial`；其餘 J20–J39、C01／C02、C13–C22 依 watchlist 優先級續做，可用同一 OpenAlex source-ID 查法。
+4. 九筆候選 hold／`source_checked=false`、`issues.json` 零期別、無自動搜尋或發刊——均未變。
