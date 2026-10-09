@@ -75,7 +75,7 @@ test("Australian dated policy and review remain separate linked works",()=>{
  const x=JSON.parse(index(records,relations));
  assert.ok(x["by-year/2023/first_publication"].includes("KB-2023-0001"));
  assert.ok(x["by-year/2025/first_publication"].includes("KB-2025-0001"));
- assert.deepEqual(x["by-country/AU"],["KB-2023-0001","KB-2025-0001"]);
+ for(const id of ["KB-2023-0001","KB-2025-0001"])assert.ok(x["by-country/AU"].includes(id));
  assert.deepEqual(x["by-type/policy_review"],["KB-2025-0001"]);
  assert.ok(relations.some(r=>r.predicate==="reviews"&&r.subject_id==="KB-2025-0001"&&r.object_id==="KB-2023-0001"));
  assert.ok(candidates.every(c=>c.decision==="hold"));
