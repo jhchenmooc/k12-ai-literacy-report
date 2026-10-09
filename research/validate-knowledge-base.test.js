@@ -90,3 +90,10 @@ test("dated Springer studies map to monitored J03/J32 and original years",()=>{
  for(const country of ["GB","GR","BR"])assert.deepEqual(x["by-country/"+country],["KB-2025-0002"]);
  assert.ok(candidates.every(x=>x.decision==="hold"));
 });
+
+test("LAK conference papers have dated C03 source links",()=>{
+ const x=JSON.parse(index(records,relations));
+ assert.deepEqual(x["by-conference/C03"],["KB-2026-0012","KB-2026-0013"]);
+ assert.deepEqual(x["by-type/conference_paper"],["KB-2026-0012","KB-2026-0013"]);
+ assert.ok(candidates.every(x=>x.decision==="hold"));
+});
