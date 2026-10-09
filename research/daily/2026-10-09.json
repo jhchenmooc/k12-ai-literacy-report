@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "report_date_taiwan": "2026-10-09",
+  "monitoring_window": {
+    "start": "2026-10-08T08:00:00+08:00",
+    "end": "2026-10-09T08:00:00+08:00",
+    "note": "Source calendar dates are not precise publication timestamps. Do not claim minute-accurate 24-hour inclusion where publisher provides date only."
+  },
+  "weekly_boundary": {
+    "current_week_start": "2026-10-09",
+    "current_week_end": "2026-10-15",
+    "note": "An item officially dated October 8 in its own locality is not a newly published October 9–15 item; retain as daily/prior-period lead and October monthly source, not a first-week new policy item."
+  },
+  "screening": {
+    "primary_source_scans": [
+      "Taiwan MOE and K12EA",
+      "UNESCO education news",
+      "UNICEF and OECD",
+      "US education agency and university releases",
+      "K–12 research/publisher sources"
+    ],
+    "major_new_primary_source_items": 1,
+    "approved_weekly_publications": 0,
+    "comment": "One noteworthy source-dated October 8 K–12 teacher AI capacity announcement; no newly released Oct 8 K–12 causal research with method/results verified in this pass. Search is not exhaustive."
+  },
+  "items": [
+    {
+      "event_id": "D2026-10-09-US-FL-LEAPAI",
+      "category": "news_policy",
+      "subtype": "agency_and_university_program_announcement",
+      "importance": "B",
+      "country": "United States",
+      "jurisdiction": "Florida, Broward County; participating schools, not all Florida K–12",
+      "audience": "K–12 teachers and assistant principals; teacher apprenticeship pipeline",
+      "original_source_url": "https://www.fldoe.org/newsroom/latest-news/icymi-florida-department-of-education-and-fau-partner-to-boost-literacy-and-prepare-educators-for-ai.stml",
+      "corroborating_first_party_url": "https://www.fau.edu/newsdesk/articles/leapai2026.php",
+      "source_title": "ICYMI: Florida Department of Education and FAU Partner to Boost Literacy and Prepare Educators for AI",
+      "source_publication_date": "2026-10-08",
+      "source_publication_timezone": "US Eastern, source date only",
+      "source_update_date": "unknown",
+      "decision_date": "unknown",
+      "event_date": "2026-10-08 (date of agency/university announcement, not verified award decision date)",
+      "effective_date": "unknown; project duration stated as three years",
+      "checked_date": "2026-10-09",
+      "exact_24h_inclusion": "uncertain_without_time_of_publication",
+      "event_chain": [
+        {
+          "date": "2026-10-08",
+          "kind": "university_announcement",
+          "url": "https://www.fau.edu/newsdesk/articles/leapai2026.php",
+          "note": "FAU bylined release dated 10/8/2026"
+        },
+        {
+          "date": "2026-10-08",
+          "kind": "agency_republication_or_joint_release",
+          "url": "https://www.fldoe.org/newsroom/latest-news/icymi-florida-department-of-education-and-fau-partner-to-boost-literacy-and-prepare-educators-for-ai.stml",
+          "note": "FDOE ICYMI release dated 10/8/2026; substantially same text as FAU, not independent confirmation of outcomes"
+        }
+      ],
+      "source_locator": "Both official pages: dated header; paragraphs introducing LEAP-AI; 'The work concentrates on 18 high-need Broward schools'; 'The project runs three tracks'; 'At least 100 educators are expected...'",
+      "claims": [
+        {
+          "claim_id": "D2026-10-09-FL-C01",
+          "zh": "佛羅里達州教育廳與 Florida Atlantic University 於 2026-10-08 公布 LEAP-AI 教師與校長 AI 培力合作計畫。",
+          "evidence_locator": "FDOE heading/date + first two paragraphs; FAU title/date + opening paragraphs",
+          "level": "N-V2",
+          "risk": "medium",
+          "status": "limited_source_supported"
+        },
+        {
+          "claim_id": "D2026-10-09-FL-C02",
+          "zh": "公告稱計畫為期三年、規模 570 萬美元，聚焦 Broward 郡 18 所高需求學校，含教師 AI／閱讀微證書、助理校長領導培力及師資學徒途徑。",
+          "evidence_locator": "FAU and FDOE opening paragraph; 'The work concentrates on 18 high-need Broward schools'; 'The project runs three tracks'",
+          "level": "N-V2",
+          "risk": "medium",
+          "status": "limited_source_supported_as_announced_plan_only"
+        },
+        {
+          "claim_id": "D2026-10-09-FL-C03",
+          "zh": "至少 100 名教育工作者取得微證書、18 名助理校長完成培訓等均是預期目標，不是已實現成果。",
+          "evidence_locator": "FAU/FDOE last paragraph: 'At least 100 educators are expected to complete...' and 'Eighteen assistant principals will complete...'",
+          "level": "N-V2",
+          "risk": "medium",
+          "status": "limited_source_supported_as_projection_only"
+        },
+        {
+          "claim_id": "D2026-10-09-FL-C04",
+          "zh": "計畫已證實提升學生閱讀、數學或 AI 素養表現。",
+          "evidence_locator": "No post-intervention evaluation or outcome table in either official release",
+          "level": "N-U",
+          "risk": "high",
+          "status": "reject_no_outcome_evidence"
+        }
+      ],
+      "policy_force": "Announcement of partnership/project, not statute, statewide mandatory curriculum, or demonstrated effect.",
+      "exclusions": "Do not infer universal Florida adoption, already-trained staff, completed 100 certifications, or K–12 learning gains. Pre-existing 2026 grade-3 ELA percentages in press release are baseline context, not LEAP-AI causal effects.",
+      "translation_status": "editorial_summary_checked_against_primary_text; not independently human-reviewed",
+      "human_independent_review": false,
+      "conflict_status": "No contradiction in the two first-party releases; they reproduce same narrative, not independent evidence",
+      "daily_display_decision": "include_limited_factual_brief",
+      "weekly_2026_10_09_15_decision": "exclude_as_october_8_publication",
+      "monthly_2026_10_decision": "candidate",
+      "editorial_taiwan": "可作教師 AI 素養「專業判斷、學科教學、持續培力」分層設計的比較案例；僅為本刊分析，不能說已驗證臺灣 PAK、雙途徑鷹架或學生學習成效。",
+      "reviewer": "AI-assisted primary-source check; no independent human reviewer",
+      "publication_status": "daily_limited_brief_only; not certified weekly/monthly publication"
+    }
+  ],
+  "screened_out": [
+    {
+      "url": "https://institute.commonsensemedia.org/risk-assessments/chatgpt-teens",
+      "source_date": "2026-10-07 (last update)",
+      "reason": "Potentially important under-18 product safety assessment, but outside source-date window; product risk evaluation, not a K–12 government policy or student achievement causal study. Retain as separate cross-period follow-up if relevant.",
+      "verification": "Publisher page date and methodological summary visible; full methodological audit not performed",
+      "importance": "A",
+      "level": "N-V1 existence only"
+    },
+    {
+      "url": "https://www.mdpi.com/2075-4698/16/10/331",
+      "source_date": "2026-10-08",
+      "reason": "Peer-reviewed media/AI literacy paper on UAE university students, not K–12; exclude direct K–12 effect interpretation.",
+      "verification": "Publisher title/date/DOI only",
+      "importance": "C",
+      "level": "V1 bibliographic only"
+    },
+    {
+      "url": "https://nationalhumanitiescenter.org/event/webinars/critical-ai-literacy-humanities/",
+      "source_date": "unknown; event 2026-10-08",
+      "reason": "Event date is not first publication date; secondary/postsecondary educator webinar, not new policy or impact research.",
+      "verification": "Official event page",
+      "importance": "C",
+      "level": "N-V1 event existence only"
+    },
+    {
+      "url": "https://www.unesco.org/en/education/news",
+      "source_date": "2026-10-08 for other listed stories",
+      "reason": "Latest listed UNESCO education news on gender gaps and teacher recovery does not establish a new K–12 AI literacy policy or AI learning research result.",
+      "verification": "Official index",
+      "importance": "C",
+      "level": "N-V1 index scan"
+    }
+  ],
+  "notes": [
+    "A/B/C means editorial priority, never evidence level.",
+    "N-V1/N-V2/N-V3 and research U/V1/V2/V3 remain distinct.",
+    "No unverified causal or nationwide-mandate claims allowed.",
+    "Neither GitHub CI nor two copied first-party press releases count as independent semantic or impact verification.",
+    "Do not add this Oct 8 event to the Oct 9–15 weekly new-publication count."
+  ]
+}
