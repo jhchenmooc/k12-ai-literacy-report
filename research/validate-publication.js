@@ -61,7 +61,7 @@ function dailyFact(c,issueDate){
  if(attributed){
   if(c.claim_class!=="descriptive"||c.risk_tier!=="medium")errors.push("attributed summary requires descriptive medium risk");
   if(c.assertion_type!=="direct_statement")errors.push("attributed summary must reflect a directly sourced statement");
-  if(typeof c.attributed_summary!=="string"||c.attributed_summary.length<15||c.attributed_summary.length>180||/[<>\\r\\n]/.test(c.attributed_summary))errors.push("invalid attributed_summary");
+  if(typeof c.attributed_summary!=="string"||c.attributed_summary.length<15||c.attributed_summary.length>180||/[<>\r\n]/.test(c.attributed_summary))errors.push("invalid attributed_summary");
   if(!c.evidence_path||!c.evidence_sha256||!c.original_excerpt||c.translation_reviewed!==true)errors.push("attributed summary needs original excerpt, pinned evidence and translation crosscheck");
   if(c.ai_crosscheck_passes!==2||c.ai_crosscheck_status!=="concordant")errors.push("attributed summary needs recorded two-pass crosscheck");
  }else if(c.claim_class!=="bibliographic"||c.risk_tier!=="low")errors.push("daily AI channel permits low-risk bibliographic claims only");
@@ -75,7 +75,8 @@ function dailyFact(c,issueDate){
   if(c.claim_text!==expected)errors.push("daily claim must use exact source-attributed or bibliographic template");
  }
  if(c.checked_at>issueDate||c.publication_date>issueDate)errors.push("source or review date occurs after daily issue date");
- if(c.first_disclosed_on!==undefined&&c.first_disclosed_on!==null&&c.first_disclosed_on!==c.publication_date)errors.push("first disclosure and publication date differ: hold for manual review");
+ if(typeof c.first_disclosed_on!=="string"||c.first_disclosed_on!==c.publication_date)errors.push("verified first disclosure required");
+ if(attributed&&(!Array.isArray(c.summary_evidence_spans)||c.summary_evidence_spans.length===0||c.summary_evidence_spans.some(v=>typeof v!=="string"||v.length<16||!String(c.original_excerpt||"").includes(v))))errors.push("source-aligned evidence spans required");
  if(c.assertion_type&&c.assertion_type!=="direct_statement")errors.push("daily AI channel excludes editorial interpretation");
  if(attributed&&/(已證實|證明|因果|必然|全面強制|所有學生|所有教師|保證有效|應在臺灣推動)/.test(c.attributed_summary||""))errors.push("attributed summary contains disallowed inference or high-impact wording");
  return errors;
