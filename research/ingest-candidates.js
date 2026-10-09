@@ -2,14 +2,14 @@
 /* Offline, append-only source-discovery batches. No network, publishing or approval. */
 const fs=require("node:fs"),path=require("node:path");
 function day(s){if(typeof s!=="string"||!/^\d{4}-\d\d-\d\d$/.test(s))throw Error("invalid ISO date");const d=new Date(s+"T00:00:00Z");if(!Number.isFinite(+d)||d.toISOString().slice(0,10)!==s)throw Error("invalid calendar date");return d}
-function canonical(url){if(typeof url!=="string")return "";try{const u=new URL(url);if(u.protocol!=="https:")return "";u.hash="";u.search="";return u.origin.toLowerCase()+u.pathname.replace(/\/+$/,"").toLowerCase()}catch{return ""}}
+function canonical(url){if(typeof url!=="string")return "";try{const u=new URL(url);if(u.protocol!=="https:")return "";u.hash="";for(const k of [...u.searchParams.keys()])if(/^(utm_|fbclid$|gclid$)/i.test(k))u.searchParams.delete(k);u.searchParams.sort();return u.origin.toLowerCase()+u.pathname.replace(/\/+$/,"").toLowerCase()+u.search}catch{return ""}}
 function key(c){return [c.doi&&"doi:"+String(c.doi).toLowerCase().replace(/^https?:\/\/doi.org\//,"").trim(),c.event_key&&"event:"+String(c.event_key).trim().toLowerCase(),canonical(c.source_url)&&"url:"+canonical(c.source_url)].filter(Boolean)}
 function merge(worksheet,batch,history=[]){
  if(!Array.isArray(history))throw Error("invalid history");
  if(!worksheet||!Array.isArray(worksheet.items)||!worksheet.period)throw Error("invalid worksheet");
  if(!batch||!Array.isArray(batch.candidates)||!Array.isArray(batch.sources)||!batch.sources.length)throw Error("batch requires candidates and source-coverage records");
  const today=day(batch.searched_on),start=day(worksheet.period.start),end=day(worksheet.period.end);
- if(today<start)throw Error("search date precedes week");
+ if(today<start||today>end)throw Error("search date outside selected week");
  for(const source of batch.sources)if(!source||!source.group||!source.query||!["ok","unavailable"].includes(source.status))throw Error("coverage requires group/query/status");
  const result=structuredClone(worksheet),existing=new Set(result.items.flatMap(key)),prior=new Map(),seen=new Set(),added=[],duplicates=[];
  for(const item of history.flatMap(w=>w.items||[]))for(const k of key(item))if(!prior.has(k))prior.set(k,item.candidate_id);
@@ -20,6 +20,7 @@ function merge(worksheet,batch,history=[]){
    duplicates.push(c.source_url);
    const match=result.items.find(item=>key(item).some(k=>keys.includes(k)));
    const ref=match?.candidate_id||keys.map(k=>prior.get(k)).find(Boolean);
+   if(!c.update_note)result.unresolved_duplicate_discoveries=[...(result.unresolved_duplicate_discoveries||[]),{searched_on:batch.searched_on,batch_id:batch.batch_id,source_url:c.source_url,related_candidate_id:ref||null,review_required:true}];
    if(c.update_note&&typeof c.update_note==="string"){
      const update={discovered_on:batch.searched_on,batch_id:batch.batch_id,source_url:c.source_url,related_candidate_id:ref||null,note:c.update_note.slice(0,350),review_required:true};
      if(match)match.source_updates=[...(match.source_updates||[]),update];
