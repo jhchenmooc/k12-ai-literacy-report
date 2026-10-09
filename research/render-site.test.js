@@ -64,6 +64,11 @@ test("journals and conferences are split by record type and every quick-index li
   const html=files[rel];assert.ok(html.includes('id="index"'),rel);
   const ids=new Set([...html.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]));
   for(const m of html.matchAll(/href="#([^"]+)"/g))assert.ok(ids.has(m[1]),rel+" missing anchor "+m[1]);
+  const head=html.match(/<table class="index-table"><thead><tr>([\s\S]*?)<\/tr>/)[1];
+  const years=[...head.matchAll(/<th scope="col">(\d{4})<\/th>/g)].map(m=>Number(m[1]));
+  assert.ok(years.length&&years.at(-1)<=2023,rel+" year columns must reach back to 2023");
+  for(let i=1;i<years.length;i++)assert.equal(years[i],years[i-1]-1,rel+" year columns must be contiguous");
+  assert.ok(html.includes('assets/site.css?v='),rel+" stylesheet must carry a version query");
  }
  assert.ok(files["archive/research/index.html"].includes("../journals/")&&files["archive/research/index.html"].includes("../conferences/"));
 });

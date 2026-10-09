@@ -65,10 +65,13 @@ body{background:var(--bg)}
 
 .quick-index{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:20px 22px;margin:0 0 24px}
 .quick-index h2{font-size:20px;margin:0 0 2px}
-.index-table{border-collapse:collapse;font-size:15px;width:100%}
-.index-table th,.index-table td{padding:8px 10px;border-bottom:1px solid #edf2fa;text-align:center;white-space:nowrap}
-.index-table thead th{font-size:13px;color:#425a75;border-bottom:1px solid var(--border)}
-.index-table tbody th{text-align:left;font-weight:700;white-space:normal;min-width:180px}
+.index-table{border-collapse:collapse;font-size:15px;width:100%;border:1px solid #c9d6e6}
+.index-table th,.index-table td{padding:8px 10px;border:1px solid #dbe4f0;text-align:center;white-space:nowrap}
+.index-table thead th{font-size:13px;color:#425a75;background:var(--tint-blue);border-bottom:2px solid #c9d6e6}
+.index-table .name{text-align:left;font-weight:700;white-space:normal;min-width:160px;position:sticky;left:0;background:var(--surface);z-index:1}
+.index-table thead .name{background:var(--tint-blue)}
+.index-table .name a{overflow-wrap:normal;word-break:normal}
+.index-table tbody tr:nth-child(even) td,.index-table tbody tr:nth-child(even) .name{background:#f8fafd}
 .index-table td a{display:inline-block;min-width:32px;min-height:32px;line-height:32px;border-radius:8px;background:var(--tint-blue);font-weight:700;text-decoration:none}
 .index-table td a:hover{background:#d8e8f8}
 .index-table td.none{color:#a5b3c4}
@@ -89,6 +92,10 @@ body{background:var(--bg)}
   .page-head{padding-top:28px}
   .group,.panel{padding:18px}
   .group h2{font-size:19px}
+  .index-table{font-size:14px}
+  .index-table th,.index-table td{padding:6px 7px}
+  .index-table .name{min-width:110px;max-width:150px}
+  .index-table .name .long{display:none}
   .rec-table{min-width:0}
   .rec-table thead{position:absolute;left:-9999px}
   .rec-table tr{display:block;padding:10px 0;border-bottom:1px solid #edf2fa}
