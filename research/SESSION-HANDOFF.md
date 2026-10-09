@@ -169,3 +169,12 @@
 ### 下一個 Session 開工順序與安全閘門
 
 先查 main／open PR／CI，核對 `records.csv`、`relations.csv`、`indexes/index.json`、`indexes/YEARS.md`、首週候選 JSON 及 `publication/issues.json`；再依序 **政策版本 → 逐源學術查核及覆蓋紀錄 → 歷年分類品質 → 真實端到端驗收**。每批資料與程式透過 PR，`verify` 通過才合併，合併後再核對 `main verify/deploy`；不得更動九筆 `hold`，不得將歷史書目當成當期新聞。更新本 handoff 時修改同一檔案，避免平行交接檔。
+
+### 2026-10-09 P0 接續批次核查進度（#76–#78）
+
+- PR #76 日本／韓國／英格蘭／新加坡政策初核，verify 成功 Actions 37934019555，已合併 ca738c55431e407ac3ce9b54e7df2cc69386bc08。證據見 research/p0-policy-version-audit-2026-10-09.md。
+- PR #77 政策版本補核，verify 成功 Actions 37934338466，已合併 a196a5763bdf6f78a1bcdffd8825fdcb62e4a1cd。新加坡 MOE 頁面受 robot/JavaScript 限制，仍 partial/unavailable。證據見 research/p0-policy-version-audit-b-2026-10-09.md。
+- PR #78 J01–J03、C01–C02 入口層查核，verify 成功 Actions 37934548017，已合併 de4f880e62779dbc9298dda4b7779bbeee274da7。證據見 research/p0-academic-entry-a-2026-10-09.md。J01/J02 官方直接存取 403，不代表零命中；C01/02 尚未逐篇 DOI 篩選。
+- J03 重要監測來源變動：官方 Springer 頁明列 2026-01-01 起由 Elsevier 出版，本修正 PR 更新 research/venue-watchlist.md 的 Elsevier 新入口與 Springer 歷史入口。這只是來源入口維護，尚非逐篇搜尋完成。
+- 仍未完成 39 期刊／21 會議全面覆蓋與 search_runs.csv 逐源條件搜尋；九筆候選 hold、正式出版新期別 0。不能把入口檢查當 full_text_checked 或本週新刊內容。
+- 下一批：優先逐源實際 query_scoped 查核、記錄可重現搜尋式/日期/DOI/學段/例外；依次 P0→P1→P2。任何合併前確認最新 PR HEAD verify，合併後確認 main verify/deploy；維持 v1.6 出版安全閘門。
