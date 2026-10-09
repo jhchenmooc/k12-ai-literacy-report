@@ -38,3 +38,8 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-0037","KB-2025-0002","studies_country","vocabulary","GB","https://link.springer.com/article/10.1007/s40593-025-00458-w","bibliographic_checked"
 "KR-0038","KB-2025-0002","studies_country","vocabulary","GR","https://link.springer.com/article/10.1007/s40593-025-00458-w","bibliographic_checked"
 "KR-0039","KB-2025-0002","studies_country","vocabulary","BR","https://link.springer.com/article/10.1007/s40593-025-00458-w","bibliographic_checked"
+"KR-0040","KB-2026-0012","has_category","vocabulary","K2","https://doi.org/10.1145/3785022.3785043","bibliographic_checked"
+"KR-0041","KB-2026-0012","published_in","source","C03","https://doi.org/10.1145/3785022.3785043","bibliographic_checked"
+"KR-0042","KB-2026-0013","has_category","vocabulary","K2","https://doi.org/10.1145/3785022.3785088","bibliographic_checked"
+"KR-0043","KB-2026-0013","published_in","source","C03","https://doi.org/10.1145/3785022.3785088","bibliographic_checked"
+"KR-0044","KB-2026-0013","has_category","vocabulary","K3","https://doi.org/10.1145/3785022.3785088","bibliographic_checked"
