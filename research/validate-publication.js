@@ -28,7 +28,14 @@ function matchBody(html,claims){
  const errors=[],matches=[...html.matchAll(/<main\b[^>]*>([\s\S]*?)<\/main>/gi)];
  if(matches.length!==1)return ["expected exactly one static main region"];
  const body=matches[0][1];
- if(/<script\b/i.test(body)||/\bcontenteditable\s*=/i.test(body))errors.push("dynamic script/contenteditable unsupported within main");
+ // Fail closed on HTML features this small static matcher cannot audit.
+ if(/<!--[\s\S]*?-->|<![^>]*>|<\?/i.test(body))errors.push("comments/declarations unsupported within main");
+ if(/<\/?(script|style|template|noscript|iframe|svg|math|canvas|object|embed|form|input|button|textarea|select|picture|video|audio)\b/i.test(body))errors.push("dynamic/embedded elements unsupported within main");
+ if(/\s(?:on[a-z]+|style|hidden|srcdoc|contenteditable)\s*(?:=|(?=[\s>]))/i.test(body))errors.push("dynamic/hidden HTML attributes unsupported within main");
+ // Only well-understood static presentation tags may surround claim-bound text.
+ const safeTags=new Set(["main","article","section","div","header","footer","p","h1","h2","h3","h4","li","ul","ol","blockquote","figcaption","figure","table","thead","tbody","tfoot","tr","td","th","strong","b","em","i","span","a","small","code","br","hr","sup","sub","time"]);
+ for(const tag of body.matchAll(/<\/?([a-z][a-z0-9-]*)\b/gi))
+   if(!safeTags.has(tag[1].toLowerCase()))errors.push("unsupported HTML tag in main: "+tag[1].toLowerCase());
  const nodes=[...body.matchAll(/<(p|h1|h2|h3|h4|li|blockquote|figcaption|td|th)\b([^>]*)>([\s\S]*?)<\/\1>/gi)];
  if(nodes.length===0)errors.push("no inspectable substantive content nodes in main");
  const counts=new Map(),map=new Map(claims.filter(x=>x&&typeof x.claim_id==="string").map(x=>[x.claim_id,x]));
@@ -57,12 +64,14 @@ function validate(root){
   if(typeof p!=="string"||!(/^(weekly|monthly)\/[a-zA-Z0-9_-]+\/index\.html$/.test(p))){errors.push("invalid edition path");continue}
   if(encountered.has(p))errors.push("duplicate edition "+p);encountered.add(p);
   if(LEGACY.has(p)){errors.push("legacy issue must not be reclassified "+p);continue}
-  if(!fs.existsSync(path.join(root,p)))errors.push("edition HTML missing "+p);
+  const htmlPath=path.join(root,p);
+  if(!fs.existsSync(htmlPath)){errors.push("edition HTML missing "+p);continue}
   if(typeof q!=="string"||!/^publication\/claims\/[a-zA-Z0-9_-]+\.json$/.test(q)){errors.push("invalid claims file path "+p);continue}
   const f=path.join(root,q);if(!fs.existsSync(f)){errors.push("claims JSON missing "+q);continue}
   let data;try{data=JSON.parse(fs.readFileSync(f,"utf8"))}catch(e){errors.push("invalid claims JSON "+q);continue}
   if(!Array.isArray(data)||data.length===0){errors.push("edition must have non-empty claims "+p);continue}
-  errors.push(...matchBody(fs.readFileSync(path.join(root,p),"utf8"),data).map(e=>p+": "+e));
+  let html;try{html=fs.readFileSync(htmlPath,"utf8")}catch(e){errors.push("edition HTML unreadable "+p+": "+e.message);continue}
+  errors.push(...matchBody(html,data).map(e=>p+": "+e));
   const claimIds=new Set();
   for(const c of data){
    if(!c||typeof c!=="object"){errors.push("invalid claim in "+q);continue}

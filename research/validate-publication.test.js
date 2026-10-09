@@ -47,3 +47,25 @@ test("high risk remains held despite purported human review fields",t=>{const d=
 test("risk classification cannot hide impact behind low tier",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[{...claim,risk_tier:"low",claim_class:"high_impact"}]);assert.equal(validate(d).ok,false)});
 test("missing risk tier blocks release",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));const x={...claim};delete x.risk_tier;issue(d,[x]);assert.equal(validate(d).ok,false)});
 test("low-risk bibliographic item can publish without expert labels",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));const x={...claim,risk_tier:"low",claim_class:"bibliographic",level:"N-V1",ai_crosscheck_status:"not_required",ai_crosscheck_passes:0};issue(d,[x]);assert.equal(validate(d).ok,true)});
+
+test("missing registered HTML returns validation error, not exception",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ fs.rmSync(path.join(d,"weekly","2026-10-09_10-15","index.html"));
+ const result=validate(d);assert.equal(result.ok,false);
+ assert.ok(result.errors.some(e=>e.includes("edition HTML missing")));
+});
+test("HTML comment pretending to contain a bound claim is rejected",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ updateHtml(d,'<main><!-- <p data-claim-id="C1">合成案例：某機構公告</p> --><article><div>未驗證內容</div></article></main>');
+ assert.equal(validate(d).ok,false);
+});
+test("unsupported visible content tag cannot bypass claim binding",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ updateHtml(d,'<main><p data-claim-id="C1">合成案例：某機構公告</p><aside>未經核對的政策公告</aside></main>');
+ assert.equal(validate(d).ok,false);
+});
+test("inline event handlers and hidden attributes are blocked",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ updateHtml(d,'<main><p data-claim-id="C1" onclick="x()">合成案例：某機構公告</p></main>');
+ assert.equal(validate(d).ok,false);
+});
