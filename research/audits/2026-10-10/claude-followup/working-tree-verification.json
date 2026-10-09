@@ -1,0 +1,88 @@
+{
+  "reviewedHead": "c015a5c5b608c0c2622fcea11dc4a0120d67f0dd",
+  "baseline": "2329a91d1e5af66da00848fa72daca2c230edb47",
+  "fixCommit": "a1b686dd64a10cd759ea195c17c4c857a46c313e",
+  "node": "v22.23.3",
+  "platform": "win32",
+  "evidenceFiles": 63,
+  "preservedSourceFiles": 27,
+  "checks": [
+    {
+      "args": [
+        "--test",
+        "research/audit-chinese-claim-coverage.test.js",
+        "research/benchmark-semantic.test.js",
+        "research/compare-source-facts.test.js",
+        "research/ingest-candidates.test.js",
+        "research/knowledge-base-import-preview.test.js",
+        "research/knowledge-base-quality.test.js",
+        "research/knowledge-base-utils.test.js",
+        "research/prepare-daily-brief.test.js",
+        "research/render-site.test.js",
+        "research/scaffold-weekly.test.js",
+        "research/summarize-reader-feedback.test.js",
+        "research/validate-blind-pack.test.js",
+        "research/validate-documentary-probes.test.js",
+        "research/validate-knowledge-base.test.js",
+        "research/validate-no-login-feedback.test.js",
+        "research/validate-primary-source-screening.test.js",
+        "research/validate-publication-security.test.js",
+        "research/validate-publication.test.js",
+        "research/validate-reader-feedback.test.js",
+        "research/validate-semantic-remaining40.test.js"
+      ],
+      "exitCode": 0
+    },
+    {
+      "args": [
+        "research/benchmark-semantic.js",
+        "research/benchmarks/semantic-cases-2026-10.json"
+      ],
+      "exitCode": 0
+    },
+    {
+      "args": [
+        "research/validate-blind-pack.js",
+        "research/benchmarks/blind-review-candidates-60.json"
+      ],
+      "exitCode": 0
+    },
+    {
+      "args": [
+        "research/compare-source-facts.js",
+        "research/benchmarks/structured-source-fact-probes-2026-10-09.json"
+      ],
+      "exitCode": 0
+    },
+    {
+      "args": [
+        "research/validate-knowledge-base.js",
+        "."
+      ],
+      "exitCode": 0
+    },
+    {
+      "args": [
+        "research/render-knowledge-base-years.js"
+      ],
+      "exitCode": 0
+    },
+    {
+      "args": [
+        "research/validate-publication.js",
+        "."
+      ],
+      "exitCode": 0
+    },
+    {
+      "args": [
+        "research/render-site.js"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "artifactFiles": 22,
+  "localReferences": 434,
+  "output": "C:\\Users\\user\\AppData\\Local\\Temp\\k12-independent-review-FyofiT",
+  "executionState": "c015a5c with uncommitted Claude-followup source/test changes; not verification of that unchanged commit"
+}

@@ -2,13 +2,15 @@
 
 請對以下 GitHub 分支做一次獨立、多角度程式碼審查。這是對已有修正的驗證，請不要直接接受 Codex 報告的結論；檢查實作、重現反例、尋找回歸及未涵蓋的繞過。
 
+本次為你先前指出 P1-1（main 外內容／隱藏正文）與 P2-1（SVG animate／set）的補修複審。先記錄最新 HEAD，比較 `c015a5c5b608c0c2622fcea11dc4a0120d67f0dd..HEAD`；再檢查完整基準差異。讀取 `claude-followup/claude-review.txt`、`claude-followup/REPORT.md` 與新增測試，獨立確認正文直接位於 HTML body、正文外固定 shell、共享 CSS／renderer 信任邊界、foreign namespace 阻擋及合法內容相容性。對 shared CSS 被修改、head metadata、任意屬性與新的 parser 重建反例提出明確範圍判斷，不能把 283 項通過當成安全證明。
+
 Repository：https://github.com/jhchenmooc/k12-ai-literacy-report
 審查分支：`review/claude-audit-20261010`
 原始基準：`2329a91d1e5af66da00848fa72daca2c230edb47`
 程式修正提交：`a1b686dd64a10cd759ea195c17c4c857a46c313e`
 交接入口：`research/audits/2026-10-10/README.md`
 
-開始先取得並記錄此分支的實際 HEAD，確認上述兩個提交存在於歷史，使用固定基準比較；不要把之後可能變動的 main 當成原始基準。程式修正與審查文件分為兩個提交，可分開檢視。
+開始先取得並記錄此分支的實際 HEAD，確認上述兩個提交及被審查的 c015a5c 存在於歷史，使用固定基準比較；不要把之後可能變動的 main 當成原始基準。a1b686d 是第一輪程式修正，最新 HEAD 才包含本輪補修。
 
 先讀交接入口、`baseline/REPORT.md`、`baseline/COVERAGE.md`、`baseline/FIX-ORDER.md`、`fixes/REPORT.md` 及相關證據。封存文件中的 Windows 路徑、舊分支、未提交狀態與先前測試失敗是歷史紀錄。基準的 GitHub CI 成功不代表修正分支已通過遠端 CI。
 

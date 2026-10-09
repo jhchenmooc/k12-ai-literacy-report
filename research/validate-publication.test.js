@@ -120,6 +120,59 @@ function dailyFixture(d,c){
  fs.writeFileSync(path.join(d,"publication","issues.json"),JSON.stringify({schema_version:1,editions:[{path:"daily/2026-10-10/index.html",claims_file:"publication/claims/daily-2026-10-10.json",publication_mode:"ai_low_risk_source_facts"}]}));
 }
 const dailyLow={...claim,claim_class:"bibliographic",risk_tier:"low",level:"N-V1",checked_at:"2026-10-10",source_title:"Synthetic school AI announcement",source_organization:"Example Institution",daily_fact_kind:"official_notice",source_document_type:"official_guidance",first_disclosed_on:"2026-10-10",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。"};
+const reviewedMain='<main><p data-claim-id="C1">合成案例：某機構公告</p></main>';
+const shellAttacks={
+ "outside heading":reviewedMain+'<h1>未審核結論</h1>',
+ "outside aside":reviewedMain+'<aside>未審核結論</aside>',
+ "outside text":reviewedMain+'未審核結論',
+ "hidden class ancestor":'<div class="skip">'+reviewedMain+'</div>',
+ "closed dialog":'<dialog>'+reviewedMain+'</dialog>',
+ "closed details":'<details>'+reviewedMain+'</details>',
+ "inert ancestor":'<div inert>'+reviewedMain+'</div>',
+ "aria hidden ancestor":'<div aria-hidden="true">'+reviewedMain+'</div>',
+ "hidden html":'<html class="skip">'+reviewedMain+'</html>',
+ "hidden body":'<body inert>'+reviewedMain+'</body>',
+ "inline stylesheet":'<style>main{display:none}body::after{content:"unreviewed"}</style>'+reviewedMain,
+ "external stylesheet":'<link rel="stylesheet" href="https://example.org/hide.css">'+reviewedMain,
+ "alternate stylesheet":'<link rel="alternate stylesheet" href="../../assets/other.css">'+reviewedMain,
+ "main class":reviewedMain.replace('<main>','<main class="skip">'),
+ "hidden claim class":reviewedMain.replace('<p ','<p class="skip" '),
+ "claim inert":reviewedMain.replace('<p ','<p inert '),
+ "claim aria hidden":reviewedMain.replace('<p ','<p aria-hidden="true" '),
+ "claim slot":reviewedMain.replace('<p ','<p slot="hidden" '),
+ "svg namespace main":'<svg><main><td data-claim-id="C1">合成案例：某機構公告</td></main></svg>',
+ "svg animate":reviewedMain+'<svg><a><animate attributeName="href" values="javascript:void(document.title=\'PWNED\')"/><text>click</text></a></svg>',
+ "svg set":reviewedMain+'<svg><a><set attributeName="href" to="javascript:void(document.title=\'PWNED\')"/><text>click</text></a></svg>',
+ "math namespace":reviewedMain+'<math><mtext>unreviewed</mtext></math>'
+};
+for(const [name,html] of Object.entries(shellAttacks))test('external-review regression: '+name,t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);updateHtml(d,html);
+ assert.equal(validate(d).ok,false,name);
+});
+test('external-review control: exact daily renderer shell is accepted',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const html=require('./render-site.js').renderDailyEdition({date:'2026-10-10',claims:[dailyLow]});
+ const file=path.join(d,'daily','2026-10-10','index.html');fs.writeFileSync(file,html);
+ assert.equal(validate(d).ok,true);
+ for(const changed of [html.replace('跳至主要內容','未審核結論'),html.replace('2026-10-10 每日短訊</h1>','未審核結論</h1>'),html.replace('<body>','<body class="skip">'),html.replace('</footer>','<p>未審核結論</p></footer>')]){
+  fs.writeFileSync(file,changed);assert.equal(validate(d).ok,false);
+ }
+});
+test('external-review control: bare reports accept only reviewed local stylesheets',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ for(const href of ['../../assets/design-system.css','../../assets/site.css?v=0123456789']){
+  updateHtml(d,'<head><link rel="stylesheet" href="'+href+'"></head>'+reviewedMain);assert.equal(validate(d).ok,true);
+ }
+});
+test('external-review regression: legacy CSS stays allowed but SVG animation is blocked',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ fs.rmSync(path.join(d,'weekly','2026-10-09_10-15'),{recursive:true});
+ const folder=path.join(d,'weekly','2026-09-29_10-08');fs.mkdirSync(folder,{recursive:true});
+ const file=path.join(folder,'index.html');
+ fs.writeFileSync(file,'<style>p{color:red}</style><p>Historical, uncertified report</p>');assert.equal(validate(d).ok,true);
+ fs.appendFileSync(file,'<svg><a><set attributeName="href" to="javascript:void(0)"/><text>click</text></a></svg>');
+ const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes('foreign namespaces')));
+});
 test("opt-in daily fixed low-risk source record passes structural validation",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);assert.equal(validate(d).ok,true)});
 test("daily descriptive or high risk cannot bypass structural gate",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,claim_class:"descriptive",risk_tier:"medium"});assert.equal(validate(d).ok,false)});
 test("daily prose policy analysis cannot be disguised as a bibliographic claim",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,claim_text:"學校已全面強制導入AI課程"});assert.equal(validate(d).ok,false)});

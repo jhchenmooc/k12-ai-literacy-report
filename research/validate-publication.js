@@ -18,8 +18,9 @@ function scan(root,folder){
  * <p>, <h1>, <h2>, <h3>, <h4>, <li>, <blockquote>, <figcaption>, <td> and <th> INSIDE
  * <main> must have a data-claim-id and identical text in the evidence file.
  *
- * This is intentionally limited to static HTML. Text generated with JS and
- * content in other tags are not fully audited; human review remains necessary.
+ * Registered reports accept a bare main-only body or the exact daily renderer
+ * shell. Shared repository CSS and the renderer are trusted, reviewed code;
+ * this structural gate does not establish source truth or accessibility.
  */
 const substantive=new Set(["p","h1","h2","h3","h4","li","blockquote","figcaption","td","th"]);
 const safeTags=new Set(["main","article","section","div","header","footer","p","h1","h2","h3","h4","li","ul","ol","blockquote","figcaption","figure","table","thead","tbody","tfoot","tr","td","th","strong","b","em","i","span","a","small","code","br","hr","sup","sub","time"]);
@@ -30,10 +31,43 @@ const normalized=s=>s.replace(/\s+/g," ").trim();
 function plain(html){return normalized(text(parse5.parseFragment(String(html??""))))}
 const attr=(node,name)=>(node.attrs||[]).find(a=>a.name===name)?.value;
 function parsed(html){const errors=[];const document=parse5.parse(html,{onParseError:e=>{if(e.code==="duplicate-attribute")errors.push("duplicate HTML attribute")}});return {document,errors}}
-function matchBody(document,claims){
+const HTML_NS="http://www.w3.org/1999/xhtml";
+// Compare browser-parsed structure, ignoring formatting whitespace and attribute
+// order. Only the single main's contents are omitted, never its attributes.
+function shellShape(node){
+ if(node.nodeName==="#text")return normalized(node.value)?["text",normalized(node.value)]:null;
+ return [node.nodeName,node.namespaceURI||"",(node.attrs||[]).map(a=>[a.namespace||"",a.name,a.value]).sort((a,b)=>JSON.stringify(a)<JSON.stringify(b)?-1:1),
+  node.tagName==="main"?[]:children(node).map(shellShape).filter(x=>x!==null)];
+}
+function registeredShell(document,main,issueDate){
+ const errors=[],nodes=all(document),body=nodes.find(n=>n.tagName==="body"&&n.namespaceURI===HTML_NS);
+ if(main.namespaceURI!==HTML_NS||main.parentNode!==body)errors.push("main must be an HTML element directly inside body");
+ for(const node of nodes){
+  if(node.tagName==="style")errors.push("registered report inline stylesheet forbidden");
+  if(node.tagName==="link"){
+   const rel=attr(node,"rel"),href=attr(node,"href")||"";
+   if(rel==="stylesheet"&&!/^\.\.\/\.\.\/assets\/(?:design-system\.css|site\.css(?:\?v=[a-f0-9]{10})?)$/.test(href))errors.push("registered report stylesheet must be a reviewed shared local asset");
+   if(!["stylesheet","icon"].includes(rel))errors.push("registered report unsupported link relation");
+  }
+ }
+ const bare=body&&children(body).every(n=>n===main||(n.nodeName==="#text"&&!normalized(n.value)));
+ if(bare){
+  for(const node of nodes.filter(n=>["html","body"].includes(n.tagName))){
+   if((node.attrs||[]).some(a=>node.tagName!=="html"||a.name!=="lang"))errors.push("bare report html/body attributes unsupported");
+  }
+  const head=nodes.find(n=>n.tagName==="head");
+  for(const node of all(head||{}))if(node.tagName&&!["head","meta","title","link"].includes(node.tagName))errors.push("bare report unsupported head element");
+ }else if(issueDate){
+  const expected=parse5.parse(require("./render-site.js").renderDailyEdition({date:issueDate,claims:[]}));
+  if(JSON.stringify(shellShape(document))!==JSON.stringify(shellShape(expected)))errors.push("registered daily shell differs from trusted renderer outside main");
+ }else errors.push("registered report body outside main requires an approved renderer shell");
+ return errors;
+}
+function matchBody(document,claims,issueDate){
  const errors=[],mains=all(document).filter(n=>n.tagName==="main");
  if(mains.length!==1)return ["expected exactly one static main region"];
  const main=mains[0],nodes=all(main),content=nodes.filter(n=>substantive.has(n.tagName));
+ errors.push(...registeredShell(document,main,issueDate));
  for(let ancestor=main.parentNode;ancestor;ancestor=ancestor.parentNode){
   if((ancestor.attrs||[]).some(a=>["hidden","style","srcdoc","contenteditable"].includes(a.name)))errors.push("dynamic/hidden ancestor of main unsupported");
  }
@@ -42,7 +76,8 @@ function matchBody(document,claims){
  for(const node of nodes){
   if(node.nodeName==="#comment"||node.nodeName==="#documentType")errors.push("comments/declarations unsupported within main");
   if(node.tagName&&!safeTags.has(node.tagName))errors.push("unsupported HTML tag in main: "+node.tagName);
-  if((node.attrs||[]).some(a=>/^on[a-z]+$/.test(a.name)||["style","hidden","srcdoc","contenteditable"].includes(a.name)))errors.push("dynamic/hidden HTML attributes unsupported within main");
+  if(node.tagName&&node.namespaceURI!==HTML_NS)errors.push("non-HTML namespace unsupported within main");
+  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","title","datetime","colspan","rowspan","scope"].includes(a.name))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
  }
  for(const node of content){
   const t=normalized(text(node));if(!t)continue;
@@ -64,7 +99,7 @@ function matchBody(document,claims){
 function staticHtmlSafety(document,label){
  const errors=[];
  for(const node of all(document)){
-  if(["script","iframe","object","embed","base","form","template"].includes(node.tagName))errors.push(label+": active or redirect-capable HTML forbidden (including inert templates)");
+  if(["script","iframe","object","embed","base","form","template","svg","math"].includes(node.tagName)||(node.tagName&&node.namespaceURI!==HTML_NS))errors.push(label+": active or redirect-capable HTML forbidden (including inert templates and foreign namespaces)");
   if((node.attrs||[]).some(a=>/^on[a-z]+$/.test(a.name)))errors.push(label+": inline event handler forbidden");
   if(node.tagName==="meta"&&String(attr(node,"http-equiv")||"").toLowerCase()==="refresh")errors.push(label+": meta refresh redirect forbidden");
   for(const a of node.attrs||[]){
@@ -159,7 +194,7 @@ function validate(root){
   let html;try{html=fs.readFileSync(htmlPath,"utf8")}catch(e){errors.push("edition HTML unreadable "+p+": "+e.message);continue}
   const dom=parsed(html);errors.push(...dom.errors.map(e=>p+": "+e));
   errors.push(...staticHtmlSafety(dom.document,p));
-  errors.push(...matchBody(dom.document,data).map(e=>p+": "+e));
+  errors.push(...matchBody(dom.document,data,issueDate).map(e=>p+": "+e));
   const claimIds=new Set();
   for(const c of data){
    if(!c||typeof c!=="object"){errors.push("invalid claim in "+q);continue}

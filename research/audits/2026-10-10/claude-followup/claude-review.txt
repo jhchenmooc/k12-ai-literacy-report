@@ -1,0 +1,94 @@
+Clean checkout in a worktree in scratchpad.
+
+Running checks: verify script passed on Node 22. Now reading the remaining diffs (feedback, render-site, diagnostics) before writing counterexamples.
+
+Chromium probes running; rechecking the SVG `animate` result with an unambiguous payload.
+
+Confirmed: SVG `<animate>`/`<set>` turns a link into an executable `javascript:` link in Chromium, and the gate passes it. Now checking data/cross-week flows on real drafts.
+
+Layout: no horizontal overflow on all 16 pages at 256/320/375/1280px. Now trying Node 24 and a locale cross-check.
+
+## 結論
+
+**目前不建議建立 PR。** 修正提交沒有造成資料遺失，14 項中多數已確實修好。但 S1（發布正文綁定）只是部分修正：用另一種隱藏方式就能重現原本的 P1 情境，而且同一套閘門目前還放行一種在 Chromium 實測可執行的 `javascript:` 連結。以下兩項須先修：
+
+### 阻止合併的問題
+
+**P1-1：主張可以藏起來，可見的未查核正文仍然通過閘門（信心：高，已實測）**
+- 位置：`research/validate-publication.js:33-49`（`matchBody`）。祖先檢查只看 `hidden/style/srcdoc/contenteditable` 屬性；殘餘文字檢查只看 `<main>` 內部。
+- 觸發條件：把合法 `<main>` 包在 `<div class="skip">` 裡（用網站自己的 `design-system.css`，`.skip{position:absolute;left:-999px}`），再把未查核的 `<h1>` 放在 main 外面。
+- 實際結果：`validate()` 回 `ok:true`。Chromium 量測主張在 x=-999 不可見，未查核標題在畫面上可見。預期結果應為拒絕。
+- 同類變體也都通過，基準版本同樣通過，所以不是回歸：
+  - `<dialog>`、關閉的 `<details>`、`inert` 祖先
+  - SVG 命名空間的 `<svg><main><td data-claim-id>`（parse5 的 `tagName==="main"` 沒有檢查 namespace）
+  - main 外的 `<style>main{display:none}</style>` 或 `::after{content:…}`
+  - 純粹在 main 外加入 `<div>` 或 `<aside>` 文字
+- 影響：與原 S1 相同，CI 會核可正文與主張不一致的期別。新增的測試名稱「cannot certify unrelated visible content」實際上沒有被保證。
+- 最小修正：
+  1. 要求唯一的 main 是 HTML namespace，並且是 `body` 的直接子元素；
+  2. main 及其祖先禁止 `class`（或只允許 `content`）、`inert`、`aria-hidden`；
+  3. 已登錄頁面禁止 `<style>`，也禁止網站兩個 CSS 以外的 stylesheet；
+  4. main 外的文字只允許在 `render-site.js:38-42` 的 `shell()` 產生的 header、footer 和 skip link 中，最好直接與 shell 輸出比對；
+  5. 上述每個變體各補一個反例測試。
+
+**P2-1：SVG `<animate>`／`<set>` 可繞過 URL 協定檢查（信心：高，已實測）**
+- 位置：`validate-publication.js:64-77`。檢查只看 `href/src/action/formaction` 屬性。
+- 重現：在 main 外放 `<svg><a><animate attributeName="href" values="javascript:void(document.title='PWNED')"/><text>click</text></a></svg>`。閘門通過；Chromium 點擊後 title 變成 PWNED。`<set to=…>` 也一樣。
+- 這是 S2 沒有涵蓋的繞過，基準版本同樣存在。
+- 最小修正：在 `staticHtmlSafety` 的禁止清單加入 `svg`、`math`。目前所有 HTML 都沒有使用 svg 或 math，不會誤拒現有內容。
+
+### P3 與相容性（不阻擋合併）
+- **P3-1 claims CLI 行為改變**（`validate-claims.js:67`）：`decision` 為 `exclude`、`pending` 或缺漏時，退出碼從 0 變成 1（已實測）。README:71 的用法可能受影響，請確認這是預期行為，再更新文件或把條件收斂。
+- **P3-2 `mailto:` 和 `tel:` 現在一律被拒**（第 74 行）：目前沒有內容使用，但這是新的誤拒範圍。
+- **P3-3 URL 去重鍵更細**：`/a` 與 `/a/`、`?` 與無 query 現在是不同鍵，可能重複匯入同一頁。這是刻意的取捨，記錄下來即可。
+- **P3-4 讀者回饋分頁**：分頁途中有 Issue 被刪除或轉移時，可能無聲漏掉一筆。新增 Issue 會使程式失敗並停止（偏保守，可接受）。
+- **P3-5 中文診斷 CLI 錯誤訊息**：兩張沒有 `card_id` 的卡會被報成「duplicate card IDs」，只是訊息不精確。
+- **相容性**：`validate-publication.js` 現在需要先 `npm ci` 才能執行（需要 parse5），否則直接出現 MODULE_NOT_FOUND。本機 `public-site` 會因 `.DS_Store` 這類雜檔而拒絕建置。
+- **非功能性（舊有問題）**：feedback 三頁的第一個 Tab 停在返回連結，這幾頁沒有 skip link。
+
+## 原 14 項
+
+| ID | 判定 | 理由與證據 |
+|---|---|---|
+| S1 | **部分修正** | 註解、template 和 `hidden` 已被擋下；但 P1-1 的變體可以重現同一個影響 |
+| S2 | **部分修正** | Tab、NewLine、反斜線和 entity 已擋下；SVG animate 仍可繞過（P2-1） |
+| S3 | 已修正 | gate 與 builder 共用同一份清單；22 個產物位元組相同；未知檔案、巢狀檔案、符號連結的測試都通過 |
+| S4 | 已修正 | 重複 ID 會讓退出碼非零；附帶 P3-1 的行為改變 |
+| DATA-01 | 已修正 | 路徑大小寫、參數順序保留；`utm_`、大寫、編碼後的鍵都會移除（已實測） |
+| DATA-02 | 已修正 | 非字串整批拒絕；空白內容列為未解決 |
+| DATA-03 | 已修正 | scaffold 已含 `search_runs`；舊版空白 scaffold 相容 |
+| DATA-04 | 已修正 | 已實測：閉引號後夾字、重複表頭被拒；BOM、引號內換行、空值保留 |
+| DATA-05 | 已修正 | 已知的數量兩兩比較 |
+| DATA-06 | 已修正 | 舊週項目只列為背景，不會提升為發布建議；以真實 drafts 執行 `create()` 正常 |
+| SF-01 | 已修正 | 我用 Chromium 量測 16 頁 × 256、320、375、1280px，都沒有水平溢出 |
+| SF-02 | 已修正 | 1001 筆、空頁、失敗頁、重複頁、PR 同名都有 mock 測試，不會發 POST |
+| SF-03 | 已修正 | 會先做型別檢查 |
+| SF-04 | 已修正 | 已測 Node 22、24，zh_TW、C、tr_TR locale，以及 Linux 上模擬 autocrlf=true 的 checkout |
+
+**第二輪 6 類**：跨週修正阻擋、manifest 型別、工作表內部型別、反斜線、快照符號連結與原始位元組雜湊、重複 card_id，這 6 類都判定為**已修正**。依據是讀過程式碼並跑過測試；Windows junction 我無法驗證。補充一點限制：較早未解決的修正，只有在候選本來會被建議發布時才會列入待審包。
+
+## 資料保全
+- 27 個受保護檔案與 `2329a91` **逐位元組相同**。修正提交沒有更動任何 drafts、KB CSV、publication 或 reference 路徑。
+- 32 個 AERA 網址：我獨立重算，得到相同結果（191 個出現位置、73 個不同網址，32 個 AERA URL 在舊鍵下會碰撞，新鍵下各自不同）。這些網址只出現在 `research/p0-*` JSON，不在 drafts 或 KB CSV，表示從未經過 `merge()`。所以這是**誤合併風險，不是已丟失的資料**。
+- 補充：該掃描只計算 `source_url` 欄位。同一個 p0 檔案在其他欄位還有更多 AERA 網址字串，掃描範圍比全部網址窄。
+
+## 執行紀錄
+- **HEAD**：`c015a5c5b608c0c2622fcea11dc4a0120d67f0dd`。已確認 `2329a91` 與 `a1b686d` 都在歷史中，以固定 SHA 比較。
+- **Linux, Node 22.22.0**：`npm ci --ignore-scripts --no-audit --no-fund` 後執行 `verify-review.cjs`，結果 exit 0：258/258、22 個產物、434 個本機參照。
+- **Node 24.21.0**（透過 npx 取得）：同一腳本 exit 0。
+- **極端時區**：258/258 通過。
+- **模擬 autocrlf=true 的 clone**：測試、render 和 verify 全部通過。
+- **反例探針**：暫存 fixture 對基準與修正版各 21 個 HTML 案例；Chromium 1194 跑 XSS、隱藏內容、版面和 Tab 檢查；另做 CSV、URL 和 CLI 探針。
+
+**未驗證的範圍**：
+- Windows 實機與 junction；
+- 修正提交的 GitHub Actions 遠端 CI；
+- Pages environment 的分支規則，以及 `workflow_dispatch` 能否在非 main 分支部署；
+- 真實 GitHub API；
+- 斷電或磁碟滿；
+- 螢幕閱讀器；
+- 來源內容的真實性與翻譯。
+
+我沒有 commit、push、建立 PR 或發布 Issue。為了建立 autocrlf 的 clone，我在本機 repo 短暫建立一個暫時分支，用完已刪除，暫存 worktree 也已移除。
+
+**建立 PR 前須先修正**：P1-1 與 P2-1，並補上對應的反例測試。兩者在基準版本就存在，不是這次修正造成的，但 P1-1 正是 S1 宣稱已修好的那一類問題。請確認是否要我依上面的最小修正方案實作，也可以先把這份報告整理成一個網頁供轉傳。
