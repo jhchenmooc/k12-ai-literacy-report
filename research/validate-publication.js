@@ -55,6 +55,29 @@ function matchBody(html,claims){
  return errors;
 }
 
+function staticHtmlSafety(html,label){
+ const errors=[];
+ if(/<\/?(?:script|iframe|object|embed|base|form)\b/i.test(html))errors.push(label+": active or redirect-capable HTML forbidden");
+ if(/\son[a-z]+\s*=/i.test(html))errors.push(label+": inline event handler forbidden");
+ if(/<meta\b[^>]*http-equiv\s*=\s*["']?refresh/i.test(html))errors.push(label+": meta refresh redirect forbidden");
+ for(const m of html.matchAll(/\b(?:href|src|action|formaction)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/gi)){
+  const raw=m[1]??m[2]??m[3]??"";
+  const decoded=raw.replace(/&#(?:x([0-9a-f]+)|([0-9]+));?/gi,(_,h,n)=>String.fromCodePoint(parseInt(h||n,h?16:10))).replace(/&colon;/gi,":").replace(/[\u0000-\u0020\u007f]+/g,"").toLowerCase();
+  if(/^(javascript|data|vbscript|file):/.test(decoded)||decoded.startsWith("//"))errors.push(label+": unsafe URL scheme in registered HTML");
+ }
+ return errors;
+}
+function dailySourceLink(html,c){
+ const body=(html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)||[])[1]||"";
+ const nodes=[...body.matchAll(/<(p|li|blockquote|td)\b([^>]*)>([\s\S]*?)<\/\1>/gi)];
+ for(const [,tag,attrs,inner] of nodes){
+  const id=(attrs.match(/\bdata-claim-id\s*=\s*["']([^"']+)["']/i)||[])[1];
+  if(id!==c.claim_id)continue;
+  const hrefs=[...inner.matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["'][^>]*>/gi)].map(m=>m[1].replace(/&amp;/gi,"&"));
+  if(hrefs.includes(c.source_url))return true;
+ }
+ return false;
+}
 function dailyFact(c,issueDate){
  const errors=[];
  const attributed=c.daily_fact_kind==="official_attributed_summary"||c.daily_fact_kind==="research_abstract_attributed_summary";
@@ -66,6 +89,9 @@ function dailyFact(c,issueDate){
   if(c.ai_crosscheck_passes!==2||c.ai_crosscheck_status!=="concordant")errors.push("attributed summary needs recorded two-pass crosscheck");
  }else if(c.claim_class!=="bibliographic"||c.risk_tier!=="low")errors.push("daily AI channel permits low-risk bibliographic claims only");
  if(!["official_notice","research_bibliography","official_attributed_summary","research_abstract_attributed_summary"].includes(c.daily_fact_kind))errors.push("invalid daily_fact_kind");
+ if(c.kind==="news_policy"&&!["binding_policy","official_guidance","draft","official_commentary","training_event"].includes(c.source_document_type))errors.push("missing or invalid policy document type");
+ if(c.kind==="research"&&!["peer_reviewed_article","preprint"].includes(c.source_document_type))errors.push("missing or invalid research document type");
+ if(c.source_document_type==="draft"&&c.daily_fact_kind==="official_notice"&&c.claim_class!=="bibliographic")errors.push("draft cannot masquerade as enacted policy");
  if(c.kind==="news_policy"&&!["official_notice","official_attributed_summary"].includes(c.daily_fact_kind))errors.push("policy source cannot use research daily category");
  if(c.kind==="research"&&!["research_bibliography","research_abstract_attributed_summary"].includes(c.daily_fact_kind))errors.push("research source cannot use policy daily category");
  if(typeof c.source_title!=="string"||!c.source_title.trim()||c.source_title.length>300||/[\r\n<>]/.test(c.source_title))errors.push("invalid source_title");
@@ -105,7 +131,9 @@ function validate(root){
   if(daily&&(!issueDate||!Number.isFinite(Date.parse(issueDate+"T00:00:00Z"))||new Date(issueDate+"T00:00:00Z").toISOString().slice(0,10)!==issueDate))errors.push("daily path must contain real ISO issue date");
   if(daily&&issue.publication_mode!=="ai_low_risk_source_facts")errors.push("daily publication mode not explicitly authorized");
   if(daily&&q!==("publication/claims/daily-"+issueDate+".json"))errors.push("daily claims filename must match daily issue date");
-  if(LEGACY.has(p)){errors.push("legacy issue must not be reclassified "+p);continue}
+  if(LEGACY.has(p)){
+   errors.push("legacy issue must not be reclassified "+p);continue;
+  }
   const htmlPath=path.join(root,p);
   if(!fs.existsSync(htmlPath)){errors.push("edition HTML missing "+p);continue}
   if(typeof q!=="string"||!/^publication\/claims\/[a-zA-Z0-9_-]+\.json$/.test(q)){errors.push("invalid claims file path "+p);continue}
@@ -113,14 +141,7 @@ function validate(root){
   let data;try{data=JSON.parse(fs.readFileSync(f,"utf8"))}catch(e){errors.push("invalid claims JSON "+q);continue}
   if(!Array.isArray(data)||data.length===0){errors.push("edition must have non-empty claims "+p);continue}
   let html;try{html=fs.readFileSync(htmlPath,"utf8")}catch(e){errors.push("edition HTML unreadable "+p+": "+e.message);continue}
-  if(/<\/?(?:script|iframe|object|embed)\b/i.test(html)||/\son[a-z]+\s*=/i.test(html))errors.push(p+": active HTML content outside claim-bound main is forbidden");
-  // Static pages cannot carry executable or protocol-relative URL attributes.
-  for(const m of html.matchAll(/\b(?:href|src|action|formaction)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/gi)){
-   const raw=m[1]??m[2]??m[3]??"";
-   const decoded=raw.replace(/&#(?:x([0-9a-f]+)|([0-9]+));?/gi,(_,h,n)=>String.fromCodePoint(parseInt(h||n,h?16:10))).replace(/&colon;/gi,":").replace(/[\u0000-\u0020\u007f]+/g,"").toLowerCase();
-   if(/^(javascript|data|vbscript|file):/.test(decoded)||decoded.startsWith("//"))
-    errors.push(p+": unsafe URL scheme in registered HTML");
-  }
+  errors.push(...staticHtmlSafety(html,p));
   errors.push(...matchBody(html,data).map(e=>p+": "+e));
   const claimIds=new Set();
   for(const c of data){
@@ -128,6 +149,7 @@ function validate(root){
    if(claimIds.has(c.claim_id))errors.push("duplicate claim_id in "+q+": "+c.claim_id);claimIds.add(c.claim_id);
    if(c.decision!=="publish"){errors.push("edition contains unpublished/held claim "+q+" "+c.claim_id);continue}
    if(daily)errors.push(...dailyFact(c,issueDate||"0000-00-00").map(e=>q+" "+c.claim_id+": "+e));
+   if(daily&&!dailySourceLink(html,c))errors.push(q+" "+c.claim_id+": original source URL must be visible as a direct anchor");
    const result=check(c);
    if(!result.allow)errors.push(q+" "+c.claim_id+": "+result.reasons.join("; "));
    errors.push(...sourceTrace(root,c,{requireBibliographicSnapshot:daily}).map(e=>q+" "+c.claim_id+": "+e));
@@ -135,7 +157,9 @@ function validate(root){
   }
  }
  const issues=[...scan(root,"weekly"),...scan(root,"monthly"),...scan(root,"daily")];
- for(const p of issues){if(LEGACY.has(p)){warnings.push("Legacy issue not certified by this gate: "+p);continue}if(!encountered.has(p))errors.push("Unregistered issue (blocked): "+p)}
+ for(const p of issues){if(LEGACY.has(p)){warnings.push("Legacy issue not certified by this gate: "+p);
+    const legacyHtml=fs.readFileSync(path.join(root,p),"utf8");errors.push(...staticHtmlSafety(legacyHtml,p));continue;
+   }if(!encountered.has(p))errors.push("Unregistered issue (blocked): "+p)}
  for(const p of encountered)if(!issues.includes(p))errors.push("Listed issue not found "+p);
  return {ok:errors.length===0,errors,warnings,checked_editions:encountered.size,legacy_editions:issues.filter(p=>LEGACY.has(p)).length};
 }

@@ -115,11 +115,11 @@ function dailyFixture(d,c){
  const dailyDir=path.join(d,"daily","2026-10-10");fs.mkdirSync(dailyDir,{recursive:true});
  const old=path.join(d,"weekly","2026-10-09_10-15","index.html");
  if(fs.existsSync(old))fs.rmSync(old);
- fs.writeFileSync(path.join(dailyDir,"index.html"),'<html><main><p data-claim-id="C1">'+c.claim_text+'</p></main></html>');
+ fs.writeFileSync(path.join(dailyDir,"index.html"),'<html><main><p data-claim-id="C1"><a href="'+c.source_url+'">'+c.claim_text+'</a></p></main></html>');
  fs.writeFileSync(path.join(d,"publication","claims","daily-2026-10-10.json"),JSON.stringify([c]));
  fs.writeFileSync(path.join(d,"publication","issues.json"),JSON.stringify({schema_version:1,editions:[{path:"daily/2026-10-10/index.html",claims_file:"publication/claims/daily-2026-10-10.json",publication_mode:"ai_low_risk_source_facts"}]}));
 }
-const dailyLow={...claim,claim_class:"bibliographic",risk_tier:"low",level:"N-V1",checked_at:"2026-10-10",source_title:"Synthetic school AI announcement",source_organization:"Example Institution",daily_fact_kind:"official_notice",first_disclosed_on:"2026-10-10",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。"};
+const dailyLow={...claim,claim_class:"bibliographic",risk_tier:"low",level:"N-V1",checked_at:"2026-10-10",source_title:"Synthetic school AI announcement",source_organization:"Example Institution",daily_fact_kind:"official_notice",source_document_type:"official_guidance",first_disclosed_on:"2026-10-10",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。"};
 test("opt-in daily fixed low-risk source record passes structural validation",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);assert.equal(validate(d).ok,true)});
 test("daily descriptive or high risk cannot bypass structural gate",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,claim_class:"descriptive",risk_tier:"medium"});assert.equal(validate(d).ok,false)});
 test("daily prose policy analysis cannot be disguised as a bibliographic claim",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,claim_text:"學校已全面強制導入AI課程"});assert.equal(validate(d).ok,false)});
@@ -133,7 +133,7 @@ test("attributed official summary with pinned excerpt and two passes passes stru
 });
 test("research abstracts are explicitly attributed to their authors",t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
- const c={...attributed,kind:"research",level:"V2",daily_fact_kind:"research_abstract_attributed_summary",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。作者摘要報告："+summaryText+"（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）"};
+ const c={...attributed,kind:"research",level:"V2",daily_fact_kind:"research_abstract_attributed_summary",source_document_type:"peer_reviewed_article",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。作者摘要報告："+summaryText+"（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）"};
  dailyFixture(d,c);assert.equal(validate(d).ok,true);
 });
 test("freeform claims and unsupported causal policy wording fail closed",t=>{
@@ -206,4 +206,55 @@ test("safe HTTPS static claim anchor is still permitted",t=>{
  issue(d,[claim]);
  updateHtml(d,'<html><main><p data-claim-id="C1"><a href="https://example.org/official">合成案例：某機構公告</a></p></main></html>');
  assert.equal(validate(d).ok,true);
+});
+
+test("daily issue cannot omit reader-visible primary source",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ fs.writeFileSync(path.join(d,"daily","2026-10-10","index.html"),'<html><main><p data-claim-id="C1">'+dailyLow.claim_text+'</p></main></html>');
+ assert.ok(validate(d).errors.some(x=>x.includes("original source URL")));
+});
+test("daily issue cannot substitute an unrelated source link",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const f=path.join(d,"daily","2026-10-10","index.html");
+ fs.writeFileSync(f,fs.readFileSync(f,"utf8").replace(dailyLow.source_url,"https://unrelated.example/path"));
+ assert.ok(validate(d).errors.some(x=>x.includes("original source URL")));
+});
+test("legacy files retain noncertified warning but reject malicious script",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ fs.rmSync(path.join(d,"weekly"),{recursive:true,force:true});
+ const dir=path.join(d,"monthly","2026-09");fs.mkdirSync(dir,{recursive:true});
+ fs.writeFileSync(path.join(dir,"index.html"),'<html><script>alert(1)</script><main></main></html>');
+ const v=validate(d);assert.equal(v.ok,false);assert.ok(v.errors.some(x=>x.includes("active or redirect-capable")));
+ assert.ok(v.warnings.some(x=>x.includes("Legacy issue not certified")));
+});
+test("legacy benign static content remains exempt from retrospective claim recertification",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ fs.rmSync(path.join(d,"weekly"),{recursive:true,force:true});
+ const dir=path.join(d,"monthly","2026-09");fs.mkdirSync(dir,{recursive:true});
+ fs.writeFileSync(path.join(dir,"index.html"),'<html><main><p>Archived report</p></main></html>');
+ const v=validate(d);assert.equal(v.ok,true);assert.ok(v.warnings.some(x=>x.includes("Legacy issue not certified")));
+});
+
+test("deployed-site historical monthly reports do not link to excluded research directory",()=>{
+ const html=fs.readFileSync(path.join(__dirname,"..","monthly","2026-09","index.html"),"utf8");
+ assert.doesNotMatch(html,/href=["']\.\.\/\.\.\/research\//);
+ assert.match(html,/github\.com\/jhchenmooc\/k12-ai-literacy-report\/blob\/main\/research\/legacy-editions-review/);
+});
+
+test("daily policy must identify formal policy, guidance, draft, commentary or event",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ dailyFixture(d,{...dailyLow,source_document_type:undefined});
+ assert.ok(validate(d).errors.some(e=>e.includes("document type")));
+});
+test("daily research cannot be mislabelled as an official guidance document",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ dailyFixture(d,{...dailyLow,kind:"research",daily_fact_kind:"research_bibliography",source_document_type:"official_guidance",level:"V1"});
+ assert.ok(validate(d).errors.some(e=>e.includes("document type")));
+});
+
+test("daily original source link outside its claim does not count",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const file=path.join(d,"daily","2026-10-10","index.html");
+ fs.writeFileSync(file,'<html><nav><a href="'+dailyLow.source_url+'">Reference</a></nav><main><p data-claim-id="C1">'+dailyLow.claim_text+'</p></main></html>');
+ const res=validate(d);assert.equal(res.ok,false);assert.ok(res.errors.some(e=>e.includes("original source URL")));
 });
