@@ -150,6 +150,30 @@
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
       "screening_note": "Official institution event page confirms Oct 9, 12–2 pm local time online and topic, but original posting date unknown. Keep as this-week event, not this-week new news."
+    },
+    {
+      "candidate_id": "W2026-10-09-A07",
+      "category": "news_policy",
+      "source_url": "https://www.unesco.org/en/articles/unesco-calls-pairing-school-screen-regulation-mexico-digital-literacy-and-continuous-monitoring",
+      "source_title": "UNESCO calls for pairing school screen regulation in Mexico with digital literacy and continuous monitoring",
+      "source_organization": "UNESCO",
+      "source_publication_date": "2026-10-09",
+      "source_locator": "Title; publication date; opening three paragraphs; remarks on digital, algorithmic and media and information literacy",
+      "original_excerpt": "Governance measures for technological and digital platforms and devices in Mexico must be supported by comprehensive literacy, monitoring and evaluation processes, as well as by identifying the cases in which technology can be key to inclusion.",
+      "source_checked": true,
+      "claim_text": "UNESCO於2026年10月9日報導墨西哥校園行動裝置管制，並建議配合數位／演算法／媒體資訊素養、持續監測與教育包容；墨西哥既有規範由SEP於9月22日公布、預定11月3日起適用，並非10月9日新通過的AI素養法規。",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "UNESCO在墨西哥的政策評論及官方報導，不是UNESCO新訂拘束性法令，也不是學生學習成效研究；SEP既有規範約束對象與教學／緊急例外需依原始法規核對；不得把手機使用限制說成禁止一切AI教學。",
+      "translation_reviewed": false,
+      "conflict_unresolved": false,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "policy_context_url": "https://www.gob.mx/sep/prensa/boletin-304-publica-sep-acuerdo-para-garantizar-el-uso-responsable-seguro-y-educativo-de-dispositivos-digitales-en-las-escuelas",
+      "policy_start_source_url": "https://www.gob.mx/sep/prensa/boletin-309-a-partir-del-3-de-noviembre-entra-en-vigor-regulacion-del-uso-de-celulares-durante-la-jornada-escolar-en-educacion-basica-mario-delgado",
+      "screening_note": "First new-dated 2026-10-09 UNESCO primary-source K12-related item. Cross-checked against earlier Mexican SEP 9/22 regulatory announcement and 9/25 Nov 3 effective-date statement. New event is UNESCO commentary; policy pre-existed. Keep HOLD until genuine independent second original-language check, Chinese translation signoff and pinned excerpt/snapshot; not a law newly issued Oct 9."
     }
   ],
   "item_template": {
@@ -173,15 +197,15 @@
     "ai_crosscheck_record": ""
   },
   "screening_summary": {
-    "candidate_count": 6,
+    "candidate_count": 7,
     "ready_to_publish": 0,
     "verified_for_publication": 0,
     "screened_on": "2026-10-09",
-    "source_types": "institutional event announcements or government training calendar",
+    "source_types": "official UNESCO policy commentary; institutional event announcements; government training calendars; prior-window research",
     "warnings": [
       "Hong Kong EDB primary/secondary professional development timetable independently lists date/course IDs for A02 and A03; original posting dates still unknown.",
       "Do not confuse verified scheduled event dates with new publication dates, attendance or outcomes.",
-      "No qualifying newly published Oct 9 primary-source research/policy yet established; all candidates remain hold."
+      "A07 is the first date-qualified 9 Oct UNESCO K12 policy commentary with SEP independent historical-context check; remains HOLD until full source trace and second-pass record. Mexico SEP regulation was issued 22 Sep, with announced 3 Nov applicability; do not claim it is new on 9 Oct."
     ]
   }
 }
