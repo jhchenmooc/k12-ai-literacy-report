@@ -18,7 +18,7 @@
 | O-UNICEF | 國際 | https://www.unicef.org/ | 兒少 AI、安全、兒童權利 | 非教育行政法規不稱法規 |
 | O-EU-EC | 超國家 | https://education.ec.europa.eu/ | AI 素養、教育指引 | 分辨提案、指引、法規及各國適用 |
 | O-COE | 區域國際 | https://www.coe.int/en/web/education | 兒權、數位公民與 AI 教育 | 分辨建議及拘束性文書 |
-| O-TW-MOE | 臺灣中央 | https://www.edu.tw/ | 課綱、AI 教育、教師 | 區分中央政策與學校實施 |
+| O-TW-MOE | 臺灣中央 | https://www.edu.tw/ | 課綱、AI 教育、教師 | 區分中央政策與學校實施；AI 人才方舟計畫下載站 `pads.moe.edu.tw`（含 AI 素養框架）未送中繼憑證，工具讀取不得停用 TLS 驗證（見 [reference/README.md](reference/README.md)） |
 | O-JP-MEXT | 日本中央 | https://www.mext.go.jp/ | 學校 AI 指引及修訂 | 須查日文原始版 |
 | O-KR-MOE | 韓國中央 | https://www.moe.go.kr/ | AI 教育、課程、教師政策 | 須查韓文原始版 |
 | O-SG-MOE | 新加坡中央 | https://www.moe.gov.sg/ | AI／數位學習、課程 | 不把公告活動日當首發日 |

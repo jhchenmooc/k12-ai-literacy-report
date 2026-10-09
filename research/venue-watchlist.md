@@ -114,20 +114,27 @@
 
 ## 5. 主題檢索組（週週執行，與來源池取交集）
 
-篩選字詞採 OR 分組，再以 AND 交叉，避免僅查詢 `AI literacy` 而漏掉教師專業與學生評量研究：
+篩選字詞採 OR 分組，再以 AND 交叉，避免僅查詢 `AI literacy` 而漏掉教師專業與學生評量研究。檢索範圍依[AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)：A 核心與 B 相關（AI 賦能教與學）都要查得到；C（AI 只是研究方法或系統後端）不收進刊物，不必為它設查詢。
 
 - **概念**：`AI literacy` / `artificial intelligence literacy` / `generative AI literacy` / `critical AI literacy` / `algorithmic literacy` / `AI competencies` / `AI competency framework` / `AI agency` / `human agency` / `AI ethics` / `responsible AI`。
+- **AI 賦能教與學（B 類，對應 T-TEA、S-LRN）**：`generative AI` / `GenAI` / `ChatGPT` / `large language model` / `chatbot` / `intelligent tutoring` / `AI-assisted learning` / `AI-assisted teaching` / `AI in education` / `AI integration`。
+- **AI 課程與系統設計（S-BAS、S-SYS）**：`AI education` / `AI curriculum` / `machine learning education` / `teaching machine learning` / `AI project` / `computational thinking`（須與 AI 詞交叉）。
 - **K-12 學段**：`K-12` / `K12` / `primary school` / `elementary school` / `secondary school` / `middle school` / `high school` / `school student` / `children` / `adolescents`。
-- **教師**：`teacher AI literacy` / `teacher education` / `pre-service teachers` / `in-service teachers` / `professional development` / `teacher agency`。
-- **評量與學習機制**：`assessment validity` / `learning evidence` / `AI-assisted assessment` / `critical thinking` / `verification` / `fact checking` / `scaffolding` / `cognitive offloading` / `metacognition` / `self-regulated learning` / `human-AI collaboration`。
-- **治理與公平**：`age appropriateness` / `child rights` / `privacy` / `data governance` / `educational equity` / `rural schools` / `AI policy education` / `algorithmic bias`。
-- **中文補查**：人工智慧素養、生成式 AI 素養、教師 AI 素養、國小／國中／高中 AI 教育、學習證據、數位落差、人工智慧倫理。
+- **教師**：`teacher AI literacy` / `teacher education` / `pre-service teachers` / `in-service teachers` / `professional development` / `teacher agency` / `TPACK` / `AI-TPACK` / `teacher training` / `workshop`（教師 AI-TPACK 與生成式 AI 教學培訓判 A）。
+- **評量與學習機制**（本組多為一般教育詞，**必須與 AI 詞以 AND 交叉**，單獨使用會抓到大量非 AI 研究）：`assessment validity` / `learning evidence` / `AI-assisted assessment` / `critical thinking` / `verification` / `fact checking` / `scaffolding` / `cognitive offloading` / `metacognition` / `self-regulated learning` / `human-AI collaboration`。
+- **治理與公平**：`age appropriateness` / `child rights` / `privacy` / `data governance` / `educational equity` / `rural schools` / `AI policy education` / `algorithmic bias` / `academic integrity` / `AI use policy`。
+- **中文補查**：人工智慧素養、生成式 AI 素養、教師 AI 素養、國小／國中／高中 AI 教育、生成式 AI 教學、AI 融入教學、AI-TPACK、AI 教師研習、學習證據、數位落差、人工智慧倫理。
 
 **範例布林式**（依各資料庫語法調整）：
 ```text
+# A 類（AI 素養本身）
 ('AI literacy' OR 'artificial intelligence literacy' OR 'generative AI literacy' OR 'AI competency')
 AND ('K-12' OR 'primary school' OR 'secondary school' OR 'high school' OR teacher*)
+# B 類（AI 賦能教與學）；OpenAlex 布林運算子約 5 個以上會被限流，拆成多組短查詢
+('generative AI' OR 'ChatGPT' OR 'chatbot' OR 'intelligent tutoring')
+AND ('primary school' OR 'secondary school' OR 'high school' OR teacher*)
 ```
+OpenAlex `title_and_abstract.search` 不支援萬用字元（`teacher*` 會 HTTP 400），改寫完整詞形；見 [工具指南](research-tools-guide.md) 3.1。
 
 ## 6. 每週作業 SOP
 
@@ -135,10 +142,11 @@ AND ('K-12' OR 'primary school' OR 'secondary school' OR 'high school' OR teache
 2. **書目標準化**：記錄 `DOI`、標題、作者、期刊／會議、URL、`first_online_date`、`issue_date`、`indexed_date`、`venue_type`、`peer_review_status`；未能查明者標示未知。
 3. **去重與版本鏈**：preprint、accepted manuscript、online first、issue version、conference-to-journal extension 須視作版本關聯，不自動視為獨立研究；同 DOI 優先去重。
 4. **篩選學段**：區分 K-12 學生、K-12 教師、師資生、大學生、成人與跨學段；不因有 AI literacy 關鍵字就當作 K-12 證據。
-5. **評估證據**：方法（RCT／準實驗／橫斷／質性／系統綜述／概念分析）、樣本、對照、測量工具、偏差風險、推論侷限；會議海報及早期研究另註明。
-6. **政策對照**：與提示／脈絡—駕馭—代理、應用／驗證雙途徑、教師必備／建議／加深、PAK、AI 摩擦學習、學段與評量規準對照；不可宣稱文獻直接驗證自建架構。
-7. **週報入選**：A 立即關注、B 趨勢佐證、C 留存；週報擇具有政策價值的論文，不硬性規定篇數；月底整合約 3–6 篇重要研究。
-8. **出版前**：研究首次網路發表日期、期刊出版日、索引更新日分開；對可點擊的正式 publisher/proceedings 頁核對，確定內容才引用。
+5. **判 AI 素養範圍**：依[AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)判 A 核心／B 相關／C 非屬／不明，記 `ai_lit_class`、`ai_lit_dims`（教育部框架代碼，如 `T-TEA`、`S-LRN`）、`ai_lit_note`。A、B 可進刊物候選；C 不進刊物；邊界案例列給管理者決定。
+6. **評估證據**：方法（RCT／準實驗／橫斷／質性／系統綜述／概念分析）、樣本、對照、測量工具、偏差風險、推論侷限；會議海報及早期研究另註明。
+7. **政策對照**：先對照教育部《臺灣中小學教師與學生 AI 素養框架》（2026-04-17 核定）的面向代碼與層級（取得理解、深化應用、創造轉型），記入 `framework_alignment`；本刊自建的分析架構只用於臺灣政策分析：提示／脈絡—駕馭—代理、應用／驗證雙途徑、教師必備／建議／加深、PAK、AI 摩擦學習、學段與評量規準對照；不可宣稱文獻直接驗證自建架構。
+8. **週報入選**：閱讀優先級 P1 立即關注、P2 趨勢佐證、P3 留存（2026-10-09 起由 A/B/C 改名，避免與 AI 素養範圍 A/B/C 混淆；先前紀錄中的 A/B/C 重要性即對應 P1/P2/P3）；週報擇具有政策價值的論文，不硬性規定篇數；月底整合約 3–6 篇重要研究。
+9. **出版前**：研究首次網路發表日期、期刊出版日、索引更新日分開；對可點擊的正式 publisher/proceedings 頁核對，確定內容才引用。
 
 ## 7. 文獻候選紀錄欄位
 
@@ -147,8 +155,13 @@ record_id,title,authors,doi,landing_url,venue_name,venue_id,venue_type,
 paper_type,first_online_date,issue_date,indexed_date,peer_review_status,
 k12_population,country,study_design,sample_size,intervention,comparison,
 outcomes,limitations,evidence_level,source_verified,policy_relevance,
-framework_alignment,duplicate_group,weekly_priority,notes
+framework_alignment,duplicate_group,weekly_priority,notes,
+ai_lit_class,ai_lit_dims,ai_lit_note
 ```
+
+- `framework_alignment`：教育部 AI 素養框架代碼與層級（如 `S-LRN/深化應用`）。
+- `weekly_priority`：閱讀優先級 P1／P2／P3。
+- `ai_lit_class`／`ai_lit_dims`／`ai_lit_note`：依[AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)第 3 節。
 
 ## 8. 官方論文集核對依據（抽查入口）
 
@@ -163,7 +176,8 @@ framework_alignment,duplicate_group,weekly_priority,notes
 
 - **書目核驗**：來源池只代表值得搜索；單篇論文需從 DOI／官方期刊頁驗證題名、作者、first online 日期、文章類型與同儕審查狀態。
 - **學段及人群**：先判 K-12 學生／K-12 教師／師資生／高教／成人；會議研究不因名稱含 Education 即視為 K-12。
-- **證據強度**：研究重要性 A/B/C 與方法品質分開；自陳、橫斷 SEM、量表驗證及 RCT 不可用同一因果語言。
+- **AI 素養範圍**：學段之外另判 A／B／C（[AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)）；期刊或會議名稱含 AI 不等於屬 A 或 B，AI 只作研究方法或系統後端者為 C。
+- **證據強度**：閱讀優先級 P1/P2/P3 與方法品質分開；自陳、橫斷 SEM、量表驗證及 RCT 不可用同一因果語言。
 - **會議索引**：以每篇論文 DOI／論文集正式上線日為時間判準，非僅會議活動日期；Full、Short、Poster、Workshop 各自標記。
 - **監測範圍**：收錄 47 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
 - **品質確認**：監測候選池要記錄 `verification_status`（verified / partial / pending）、`population_level`、`evidence_design`、`publication_status`，不可僅以期刊名稱推斷研究品質。
