@@ -191,3 +191,9 @@
 - 已區分 BJET 2025 first published 與 2026 卷期；LAK 正式發表日與會議日、short paper、既有 KB-2026-0012 同 DOI；J07 高教研究排除 K–12 直接證據。
 - coverage 僅限列出項目 items_screened，絕非 39＋21 全面查核；search_runs.csv 尚無可據實填寫的完整命中總數。不得虛構零結果，也不得將搜尋日當首次出版日期。
 - 下次先核對 main verify/deploy 與本交接檔，再依 P0 補記可稽核、允許未知命中之覆蓋批次及後續監測來源；完成 P0 才推進 P1、P2。九筆 hold／正式新期別零／v1.6 出版規則不變。
+
+### 2026-10-09 P0 實際搜尋覆蓋對帳（待本 PR 驗收）
+
+- 本次僅回填先前已留原始 DOI／查詢式記錄的 J04、J05、J06、J07、C03 **五個定向查詢批次**至 `research/knowledge-base/data/search_runs.csv`，合計**15 個逐篇初篩樣本**（含重複已知 DOI、非 K–12 排除），不是 15 篇新增知識庫主紀錄，也不是全部檢索命中。對應原文參照見 `research/p0-j04-j07-c03-audit-2026-10-09.md`、`research/p0-j05-query-audit-2026-10-09.md`、`research/p0-j06-query-audit-2026-10-09.md`。
+- 每批 `results_seen` 留空表示**未知搜尋引擎總命中數**、`results_screened` 為列出樣本數、`results_recorded=0` 表示本次沒有新增主紀錄；`status=partial`。如果校驗器不接受留空，**不可改填 0**，必須先修正資料編碼策略並以 CI 驗收。
+- 尚未補齊 J01–J03/C01–C02 入口型、其他 52 個未完成來源的正式檢索；未核查的來源不得視為搜尋零命中。已刊內容、九筆 `hold`、正式期別仍完全不動。下一步 P0 繼續來源 ID 覆蓋及補證，P1/P2 不提前。
