@@ -35,7 +35,7 @@
 | 低人力門檻 | [`research/low-human-review-policy.md`](low-human-review-policy.md) |
 | 來源中文對讀 | [`research/source-to-claim-review.md`](source-to-claim-review.md) |
 | 搜尋來源池 | [`research/venue-watchlist.md`](venue-watchlist.md)：34 期刊、19 會議 |
-| 學者監測（草稿 v0.3，2026-10-09） | [`research/scholar-watchlist.md`](scholar-watchlist.md)：A1 國際講者 5、A2 臺灣學術講者 8、B 擴充 11、C 政策與實務窗口 7；源自使用者提供的 IFDE 2026 論壇整理（未公開、未入 repo），職稱依[論壇官網](https://sites.google.com/view/idif2026/home)。作者身分已以 ORCID／OpenAlex 確認（見清單「確認」欄）。管理者決定：論壇發表學者一律納入，不論研究對象學段；入刊候選仍逐篇篩 K-12。OpenAlex 作者 ID 為候選、著作未核。由搜尋 session 使用與維護 |
+| 學者監測（草稿 v0.4，2026-10-09） | [`research/scholar-watchlist.md`](scholar-watchlist.md)：2026 論壇 A1 國際 5、A2 臺灣 8；2023–2025 歷屆 A3 國際 8、A4 臺灣 20；B 擴充 11；C 政策與實務窗口 26；源自使用者提供的 IFDE 2026 論壇整理（未公開、未入 repo），職稱依[論壇官網](https://sites.google.com/view/idif2026/home)。作者身分已以 ORCID／OpenAlex 確認（見清單「確認」欄）。管理者決定：論壇發表學者一律納入，不論研究對象學段；入刊候選仍逐篇篩 K-12。OpenAlex 作者 ID 為候選、著作未核。由搜尋 session 使用與維護 |
 | 來源與主張欄位 | [`research/publication-check-spec.md`](publication-check-spec.md) |
 | 本期編輯短名單 | [`research/drafts/2026-10-09_2026-10-15-shortlist.md`](drafts/2026-10-09_2026-10-15-shortlist.md) |
 | 本期候選資料 | [`research/drafts/2026-10-09_2026-10-15.json`](drafts/2026-10-09_2026-10-15.json) |
