@@ -1,0 +1,95 @@
+[
+  {
+    "candidate_id": "W2026-10-09-A01",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "S-BAS",
+      "S-ETH"
+    ],
+    "ai_lit_note": "12至15歲青少年與家長的戶外AI素養活動，練習查證AI產生的資訊，對應S-BAS「覺察AI的世界並產生好奇心」與S-ETH「具備對AI的批判思考」。",
+    "audience": "k12"
+  },
+  {
+    "candidate_id": "W2026-10-09-A02",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-PD",
+      "T-ETH"
+    ],
+    "ai_lit_note": "香港教育局為中學教師辦的AI素養與學生網絡安全研討會，對應T-PD「評估教師AI素養以規劃專業增能」與T-ETH「辨識AI風險與安全防範」。",
+    "audience": "k12"
+  },
+  {
+    "candidate_id": "W2026-10-09-A03",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-TEA",
+      "T-PD"
+    ],
+    "ai_lit_note": "香港小學英文教師的生成式AI教學培訓（準則：生成式AI教學培訓判A），對應T-TEA「設計AI與教學法整合的策略」與T-PD。",
+    "audience": "k12"
+  },
+  {
+    "candidate_id": "W2026-10-09-A04",
+    "ai_lit_class": "C",
+    "ai_lit_dims": [],
+    "ai_lit_note": "非洲TVET綠色技能教學增能系列，AI只出現在一門課名，主題不在師生AI素養內涵（42筆邊界案例決定判C）。",
+    "audience": "adult"
+  },
+  {
+    "candidate_id": "W2026-10-09-A05",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-ETH",
+      "T-PD"
+    ],
+    "ai_lit_note": "西班牙幼教與小學教師對生成式AI的障礙、倫理顧慮與培訓需求，對應T-ETH「辨識AI風險與安全防範」與T-PD「評估教師AI素養以規劃專業增能」。",
+    "audience": "k12"
+  },
+  {
+    "candidate_id": "W2026-10-09-A06",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-ETH"
+    ],
+    "ai_lit_note": "批判性AI素養線上座談，對象為一般教育工作者，對應T-ETH「融入倫理思辨於AI問題解決教學」；依42筆邊界案例決定記為其他教育關係人。",
+    "audience": "other_stakeholders"
+  },
+  {
+    "candidate_id": "W2026-10-09-A07",
+    "ai_lit_class": "C",
+    "ai_lit_dims": [],
+    "ai_lit_note": "墨西哥校園行動裝置規範與一般數位素養，未涉及AI，不對應任何內涵（42筆邊界案例決定判C）。",
+    "audience": "k12"
+  },
+  {
+    "candidate_id": "W2026-10-09-A08",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "S-BAS",
+      "S-ETH"
+    ],
+    "ai_lit_note": "K-12 AI教育提升學生AI素養的統合分析，對應S-BAS「理解AI運作原理與限制」與S-ETH。",
+    "audience": "k12"
+  },
+  {
+    "candidate_id": "W2026-10-09-A09",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "S-BAS",
+      "S-ETH"
+    ],
+    "ai_lit_note": "K-12師生對分齡AI素養指引手冊的接受度，對應S-BAS「理解AI運作原理與限制」等學生AI素養內涵（僅依題名，摘要未讀）。",
+    "audience": "k12"
+  },
+  {
+    "candidate_id": "W2026-10-09-A10",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-TEA",
+      "T-PD"
+    ],
+    "ai_lit_note": "職業教育教師的AI教學自我效能與職業福祉，對應T-PD「評估教師AI素養以規劃專業增能」；樣本中職378人、高職以上390人，主要對象不明。",
+    "audience": "unknown"
+  }
+]
