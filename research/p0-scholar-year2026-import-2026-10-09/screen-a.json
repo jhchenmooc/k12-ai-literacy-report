@@ -1,0 +1,766 @@
+{
+ "batch": "A",
+ "screened_on_utc": "2026-10-09T19:29:11Z",
+ "items": [
+  {
+   "openalex_id": "W7202087438",
+   "doi": "10.1007/978-3-032-26816-7_8",
+   "title": "The Use of Intelligent Tutoring Systems in the Context of General Education: Country-Specific Approaches, Impacts, Challenges and Opportunities",
+   "scholars": [
+    "S03"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "general education / school context",
+   "topic_fit": "tool_only",
+   "version": "formal_doi",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": null,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": [],
+   "note": "ORCID 對到，Radboud 一致；主題為智慧家教系統（ITS）在普通教育之導入政策比較，AI 為學習工具，非學習關於 AI；書籍章節"
+  },
+  {
+   "openalex_id": "W7215575453",
+   "doi": null,
+   "title": "The Core of Teaching Cannot Be Outsourced: Teachers’ Perspectives on Artificial Intelligence in Everyday School Work",
+   "scholars": [
+    "S04"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "lower secondary school teachers",
+   "topic_fit": "fit",
+   "version": "preprint_only",
+   "formal_doi": null,
+   "recommendation": "pending",
+   "known_duplicate": null,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": [],
+   "note": "ORCID 對到（OpenAlex 無單位，UEF 機構典藏與清單單位一致）；教師對 AI 分工之看法，主題屬邊界（教師與 AI／治理）；僅機構典藏 submittedVersion（OpenAlex 標 conference-paper，無 DOI），Crossref 題名查無正式版"
+  },
+  {
+   "openalex_id": "W7165676960",
+   "doi": "10.70725/748674ovwknd",
+   "title": "Enhancing Teacher Competency for Creative Problem Solving with Generative AI",
+   "scholars": [
+    "S23"
+   ],
+   "attribution": "valid",
+   "k12": "unclear",
+   "population": "unclear",
+   "k12_phrase": null,
+   "topic_fit": "tool_only",
+   "version": "formal_doi",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": null,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": [],
+   "note": "ORCID 對到，梨花女大一致；教師以 GenAI 進行創意問題解決之專業發展，AI 為教學工具；在職＋職前教師混合，未寫任教學段"
+  },
+  {
+   "openalex_id": "W7133520779",
+   "doi": "10.71741/4pyxmbnjaq.31302475",
+   "title": "Artificial intelligence, cognitive offloading and implications for education",
+   "scholars": [
+    "S09"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "schooling / school students",
+   "topic_fit": "fit",
+   "version": "grey_report",
+   "formal_doi": null,
+   "recommendation": "pending",
+   "known_duplicate": null,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": [],
+   "note": "ORCID 對到，OpenAlex 無單位（UTS Figshare 報告，與清單所載 UQ 不同，但主題一致，判 valid 並註記）；K-12 生成式 AI 風險（認知卸載）；非期刊／會議，屬機構報告（灰色文獻），版本欄記 grey_report，由管理者決定是否以報告類型入庫"
+  },
+  {
+   "openalex_id": "W7130729456",
+   "doi": "10.2139/ssrn.6278616",
+   "title": "Operationalizing Child Rights in Educational Technology Design: A Case Example of Two AI Education Tools for K–12 Classrooms",
+   "scholars": [
+    "S10"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "K–12 classrooms（題名）",
+   "topic_fit": "fit",
+   "version": "preprint_only",
+   "formal_doi": null,
+   "recommendation": "pending",
+   "known_duplicate": null,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": [],
+   "note": "ORCID 對到，OpenAlex 無單位；SSRN 預印本、無摘要；Crossref 另有同作者群 2025 MIPRO 會議論文 10.1109/mipro65660.2025.11131841（題名不同，是否同一研究未確認，且為 2025 年）與較早 SSRN 版 10.2139/ssrn.5314368；兩者均不在知識庫"
+  },
+  {
+   "openalex_id": "W7134190273",
+   "doi": "10.1007/978-981-96-6435-1_47",
+   "title": "Correction to: Generative AI for School Leaders",
+   "scholars": [
+    "H02"
+   ],
+   "attribution": "valid",
+   "k12": "unclear",
+   "population": "unclear",
+   "k12_phrase": null,
+   "topic_fit": "unrelated",
+   "version": "erratum",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": null,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": [],
+   "note": "ORCID 對到，教大一致；類型為勘誤（Correction to），非研究論文；原章節（Generative AI for School Leaders）未在本批，可另查"
+  },
+  {
+   "openalex_id": "W7118074451",
+   "doi": "10.1145/3786761",
+   "title": "AI Unplugged: Exploring Pathways from Physical Simulation to Conceptualization of AI Reasoning Processes",
+   "scholars": [
+    "H01"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "middle-school-age participants / young adolescents",
+   "topic_fit": "fit",
+   "version": "formal_doi",
+   "formal_doi": "10.1145/3786761",
+   "recommendation": "import",
+   "known_duplicate": null,
+   "crossref_title": "AI Unplugged: Exploring Pathways from Physical Simulation to Conceptualization of AI Reasoning Processes",
+   "container": "ACM Transactions on Computing Education",
+   "issue_year": 2026,
+   "category_suggestion": "K6",
+   "countries": [],
+   "note": "ORCID 對到，Northwestern 一致；不插電具身活動學習 AI 推理（20 名國中年齡參與者），AI 素養"
+  },
+  {
+   "openalex_id": [
+    "W7123809803",
+    "W7124118417"
+   ],
+   "doi": "10.48550/arxiv.2601.06101",
+   "title": "How to Assess AI Literacy: Misalignment Between Self-Reported and Objective-Based Measures",
+   "scholars": [
+    "H11"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "teachers' AI literacy … K-12 education",
+   "topic_fit": "fit",
+   "version": "formal_doi",
+   "formal_doi": "10.1145/3785022.3785088",
+   "recommendation": "import",
+   "known_duplicate": "KB-2026-0013",
+   "crossref_title": "How to Assess AI Literacy: Misalignment Between Self-Reported and Objective-Based Measures",
+   "container": "Proceedings of the LAK26: 16th International Learning Analytics and Knowledge Conference",
+   "issue_year": 2026,
+   "category_suggestion": "K3",
+   "countries": [],
+   "note": "ORCID 對到（arXiv 無單位）；arXiv 2601.06101 兩筆 OpenAlex 紀錄為同一預印本；Crossref 題名同之 LAK26 會議正式版 10.1145/3785022.3785088 已在知識庫（KB-2026-0013），不需新增，僅可補記預印本為其版本"
+  },
+  {
+   "openalex_id": "W7124827140",
+   "doi": "10.1111/ejed.70464",
+   "title": "Constructing and Validating the AIPACK Scale: Measuring Teachers' AI Pedagogical Content Knowledge",
+   "scholars": [
+    "T01"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "primary and secondary school teachers in Taiwan",
+   "topic_fit": "fit",
+   "version": "formal_doi",
+   "formal_doi": "10.1111/ejed.70464",
+   "recommendation": "import",
+   "known_duplicate": null,
+   "crossref_title": "Constructing and Validating the AIPACK Scale: Measuring Teachers' AI Pedagogical Content Knowledge",
+   "container": "European Journal of Education",
+   "issue_year": 2026,
+   "category_suggestion": "K3",
+   "countries": [
+    "TW"
+   ],
+   "note": "ORCID 對到，臺中教大一致；教師 AI 教學內容知識量表（AIPACK）編製與驗證，含職前／在職比較但對象界定為中小學教師；類別亦可 K4"
+  },
+  {
+   "openalex_id": "W7124953109",
+   "doi": "10.1016/j.tate.2026.105384",
+   "title": "Developing teacher AI competence: A systematic review of beliefs, professional learning, and cultural factors",
+   "scholars": [
+    "H11"
+   ],
+   "attribution": "valid",
+   "k12": "unclear",
+   "population": "unclear",
+   "k12_phrase": null,
+   "topic_fit": "fit",
+   "version": "formal_doi",
+   "formal_doi": "10.1016/j.tate.2026.105384",
+   "recommendation": "pending",
+   "known_duplicate": null,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": [],
+   "note": "ORCID 對到，港中大一致；教師 AI 能力系統性回顧（42 篇，職前＋在職、AI Education 與 AI in Education），摘要未寫學段"
+  },
+  {
+   "openalex_id": "W7125128377",
+   "doi": "10.1016/j.caeai.2026.100551",
+   "title": "Artificial intelligence literacy at school: A systematic review with a focus on psychological foundations",
+   "scholars": [
+    "H18"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "AI literacy … in school education（teachers, students）",
+   "topic_fit": "fit",
+   "version": "formal_doi",
+   "formal_doi": "10.1016/j.caeai.2026.100551",
+   "recommendation": "import",
+   "known_duplicate": null,
+   "crossref_title": "Artificial intelligence literacy at school: A systematic review with a focus on psychological foundations",
+   "container": "Computers and Education: Artificial Intelligence",
+   "issue_year": 2026,
+   "category_suggestion": "K2",
+   "countries": [],
+   "note": "ORCID 對到，Würzburg 一致；學校教育 AI 素養定義與心理向度之系統性回顧（58 篇）"
+  },
+  {
+   "openalex_id": "W7125931104",
+   "doi": "10.1080/02619768.2026.2621848",
+   "title": "Teacher education for artificial intelligence literacy through a self-determination theory perspective",
+   "scholars": [
+    "H11"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "382 secondary school teachers",
+   "topic_fit": "fit",
+   "version": "formal_doi",
+   "formal_doi": "10.1080/02619768.2026.2621848",
+   "recommendation": "import",
+   "known_duplicate": null,
+   "crossref_title": "Teacher education for artificial intelligence literacy through a self-determination theory perspective",
+   "container": "European Journal of Teacher Education",
+   "issue_year": 2026,
+   "category_suggestion": "K4",
+   "countries": [],
+   "note": "ORCID 對到，港中大一致；以自我決定論設計教師 AI 素養專業發展與線上專業學習社群；摘要未寫國別"
+  },
+  {
+   "openalex_id": [
+    "W7126278405",
+    "W7126282049"
+   ],
+   "doi": "10.48550/arxiv.2601.21631",
+   "title": "Turning Language Model Training from Black Box into a Sandbox",
+   "scholars": [
+    "S10"
+   ],
+   "attribution": "valid",
+   "k12": "not_k12",
+   "population": "non_k12",
+   "k12_phrase": "CS1 course（大學）",
+   "topic_fit": "fit",
+   "version": "formal_doi",
+   "formal_doi": "10.1109/educon67543.2026.11574425",
+   "recommendation": "not_k12_fit",
+   "known_duplicate": null,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": [],
+   "note": "ORCID 對到，UEF 一致；學生自行訓練小型語言模型以理解 LLM 訓練（大學 CS1，162 人），僅於結論提及對 K-12 AI 素養之意涵；Crossref 有同題 EDUCON 2026 正式版（作者姓氏兩位全同）"
+  },
+  {
+   "openalex_id": "W7126439177",
+   "doi": "10.3390/asi9020038",
+   "title": "Exploring Problem-Solving Strategies in Gifted and Regular Students: Education Insights from Eye-Tracking Analysis",
+   "scholars": [
+    "T19"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "high school students",
+   "topic_fit": "unrelated",
+   "version": "formal_doi",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": null,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": [],
+   "note": "ORCID 對到，臺師大一致（另列印尼單位）；資優與一般高中生科學解題眼動研究，機器學習僅為分析方法"
+  },
+  {
+   "openalex_id": "W7128364361",
+   "doi": "10.1016/j.caeai.2026.100555",
+   "title": "Exploring the relationship between empowerment in using artificial intelligence for problem-solving and artificial intelligence ethical awareness: Multi-group structural equation modelling",
+   "scholars": [
+    "H21"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "unclear",
+   "k12_phrase": "students from secondary schools and a university in Hong Kong",
+   "topic_fit": "fit",
+   "version": "formal_doi",
+   "formal_doi": "10.1016/j.caeai.2026.100555",
+   "recommendation": "import",
+   "known_duplicate": null,
+   "crossref_title": "Exploring the relationship between empowerment in using artificial intelligence for problem-solving and artificial intelligence ethical awareness: Multi-group structural equation modelling",
+   "container": "Computers and Education: Artificial Intelligence",
+   "issue_year": 2026,
+   "category_suggestion": "K2",
+   "countries": [
+    "HK"
+   ],
+   "note": "ORCID 對到，教大一致；AI 解題賦能與 AI 倫理意識之結構方程模型；樣本為中學＋大學混合、未寫主要對象（population=unclear），依 k12 明寫仍建議 import，管理者可改 pending"
+  },
+  {
+   "openalex_id": "W7137011452",
+   "doi": "10.5061/dryad.h9w0vt4tw",
+   "title": "Data from: Improving access to essential medicines via decision-aware machine learning",
+   "scholars": [
+    "S15"
+   ],
+   "attribution": "valid",
+   "k12": "not_k12",
+   "population": "non_k12",
+   "k12_phrase": null,
+   "topic_fit": "unrelated",
+   "version": "dataset",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": null,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": [],
+   "note": "ORCID 對到，Wharton 一致；Dryad 資料集，主題為醫藥配送機器學習，與教育無關"
+  },
+  {
+   "openalex_id": "W7128510365",
+   "doi": "10.1016/j.caeai.2026.100556",
+   "title": "Unleashing human potential: An artificial intelligence competency framework for K–12 education",
+   "scholars": [
+    "H21"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "K–12 education（題名）",
+   "topic_fit": "fit",
+   "version": "formal_doi",
+   "formal_doi": "10.1016/j.caeai.2026.100556",
+   "recommendation": "import",
+   "known_duplicate": null,
+   "crossref_title": "Unleashing human potential: An artificial intelligence competency framework for K–12 education",
+   "container": "Computers and Education: Artificial Intelligence",
+   "issue_year": 2026,
+   "category_suggestion": "K2",
+   "countries": [],
+   "note": "ORCID 對到，教大一致；K-12 AI 能力框架範疇回顧（54 篇）並提出三成分框架；類別亦可 K1"
+  },
+  {
+   "openalex_id": "W7128785936",
+   "doi": "10.1080/1475939x.2026.2619458",
+   "title": "Introducing AI education in school contexts: a 3D-literacy analysis of the Swedish AI subject",
+   "scholars": [
+    "H12"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "Swedish upper secondary school policy documents",
+   "topic_fit": "fit",
+   "version": "formal_doi",
+   "formal_doi": "10.1080/1475939x.2026.2619458",
+   "recommendation": "import",
+   "known_duplicate": null,
+   "crossref_title": "Introducing AI education in school contexts: a 3D-literacy analysis of the Swedish AI subject",
+   "container": "Technology, Pedagogy and Education",
+   "issue_year": 2026,
+   "category_suggestion": "K1",
+   "countries": [
+    "SE"
+   ],
+   "note": "ORCID 對到，Linköping 一致；瑞典高中 AI 科目課綱與支援材料之 3D 素養分析"
+  },
+  {
+   "openalex_id": "W7131642718",
+   "doi": "10.1007/s10639-026-13928-y",
+   "title": "A virtual 3D metaverse learning mode based on WebQuest to facilitate primary school students’ media literacy",
+   "scholars": [
+    "T22"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "primary school students",
+   "topic_fit": "unrelated",
+   "version": "formal_doi",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": null,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": [],
+   "note": "ORCID 對到（OpenAlex 作者 A5102019604，即清單註記之正確檔案），政大一致；元宇宙 WebQuest 媒體素養，生成式 AI 僅為背景，非 AI 教育"
+  },
+  {
+   "openalex_id": "W7133346734",
+   "doi": "10.3390/educsci16030384",
+   "title": "Designing and Evaluating a 5E-Structured GenAI Coach for Guided Inquiry: A Pedagogy-to-Prompt Engineering Framework",
+   "scholars": [
+    "T02"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "middle school chemistry",
+   "topic_fit": "tool_only",
+   "version": "formal_doi",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": null,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": [],
+   "note": "ORCID 對到，臺中教大一致；GenAI 化學探究教練，AI 為學習工具"
+  },
+  {
+   "openalex_id": "W7134187230",
+   "doi": "10.1145/3731459.3773305",
+   "title": "Designing and Evaluating Museum Exhibit Prototypes to Foster Middle Schoolers’ AI Literacy through Creativity and Embodiment",
+   "scholars": [
+    "H01"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "middle schoolers（題名與摘要）",
+   "topic_fit": "fit",
+   "version": "formal_doi",
+   "formal_doi": "10.1145/3731459.3773305",
+   "recommendation": "import",
+   "known_duplicate": null,
+   "crossref_title": "Designing and Evaluating Museum Exhibit Prototypes to Foster Middle Schoolers’ AI Literacy through Creativity and Embodiment",
+   "container": "Proceedings of the Twentieth International Conference on Tangible, Embedded, and Embodied Interaction",
+   "issue_year": 2026,
+   "category_suggestion": "K6",
+   "countries": [],
+   "note": "ORCID 對到，Northwestern 一致；博物館 AI 素養展品原型設計研究（TEI 2026 會議論文）"
+  },
+  {
+   "openalex_id": "W7135096875",
+   "doi": "10.1007/s44436-026-00028-4",
+   "title": "Framing early childhood AI literacy: What did the literature review tell us?",
+   "scholars": [
+    "H02"
+   ],
+   "attribution": "valid",
+   "k12": "explicit",
+   "population": "k12",
+   "k12_phrase": "early childhood（幼兒教育）",
+   "topic_fit": "fit",
+   "version": "formal_doi",
+   "formal_doi": "10.1007/s44436-026-00028-4",
+   "recommendation": "import",
+   "known_duplicate": null,
+   "crossref_title": "Framing early childhood AI literacy: What did the literature review tell us?",
+   "container": "AI, Brain and Child",
+   "issue_year": 2026,
+   "category_suggestion": "K2",
+   "countries": [],
+   "note": "ORCID 對到，教大一致；幼兒 AI 素養三級回顧（11 篇回顧）；依整合者補充規則幼兒園納入 k12，但 early childhood 可能含 0–3 歲，管理者可改 pending"
+  }
+ ],
+ "counts": {
+  "total": 22,
+  "recommendation": {
+   "exclude": 7,
+   "pending": 4,
+   "import": 10,
+   "not_k12_fit": 1,
+   "teacher_ed_fit": 0
+  },
+  "population": {
+   "k12": 16,
+   "unclear": 4,
+   "non_k12": 2,
+   "teacher_ed": 0
+  },
+  "attribution": {
+   "valid": 22
+  },
+  "topic_fit": {
+   "tool_only": 3,
+   "fit": 15,
+   "unrelated": 4
+  },
+  "k12": {
+   "explicit": 17,
+   "unclear": 3,
+   "not_k12": 2
+  },
+  "known_duplicate": 1,
+  "import_new": 9
+ },
+ "requests": [
+  {
+   "url": "https://api.openalex.org/works/W7202087438?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:01Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7215575453?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:02Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7165676960?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:03Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7133520779?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:04Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7130729456?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:05Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7134190273?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:06Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7118074451?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:07Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7123809803?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:08Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7124118417?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:09Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7124827140?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:10Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7124953109?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:11Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7125128377?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:12Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7125931104?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:13Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7126278405?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:14Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7126282049?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:15Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7126439177?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:16Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7128364361?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:17Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7137011452?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:18Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7128510365?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:19Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7128785936?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:20Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7131642718?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:21Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7133346734?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:22Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7134187230?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:23Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7135096875?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:26:24Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3786761",
+   "utc": "2026-10-09T19:27:28Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1111/ejed.70464",
+   "utc": "2026-10-09T19:27:30Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1016/j.caeai.2026.100551",
+   "utc": "2026-10-09T19:27:31Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1080/02619768.2026.2621848",
+   "utc": "2026-10-09T19:27:33Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1016/j.caeai.2026.100555",
+   "utc": "2026-10-09T19:27:34Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1016/j.caeai.2026.100556",
+   "utc": "2026-10-09T19:27:35Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1080/1475939x.2026.2619458",
+   "utc": "2026-10-09T19:27:37Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3731459.3773305",
+   "utc": "2026-10-09T19:27:38Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/s44436-026-00028-4",
+   "utc": "2026-10-09T19:27:39Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3785022.3785088",
+   "utc": "2026-10-09T19:27:40Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works?rows=5&select=DOI,title,type,container-title,issued&query.bibliographic=The%20Core%20of%20Teaching%20Cannot%20Be%20Outsourced%3A%20Teachers%27%20Perspectives%20on%20Artificial%20Intelligence%20in%20Everyday%20School%20Work",
+   "utc": "2026-10-09T19:27:53Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works?rows=5&select=DOI,title,type,container-title,issued&query.bibliographic=Operationalizing%20Child%20Rights%20in%20Educational%20Technology%20Design%3A%20A%20Case%20Example%20of%20Two%20AI%20Education%20Tools%20for%20K-12%20Classrooms",
+   "utc": "2026-10-09T19:27:55Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works?rows=5&select=DOI,title,type,container-title,issued&query.bibliographic=Turning%20Language%20Model%20Training%20from%20Black%20Box%20into%20a%20Sandbox",
+   "utc": "2026-10-09T19:27:56Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works?rows=5&select=DOI,title,type,container-title,issued&query.bibliographic=Artificial%20intelligence%2C%20cognitive%20offloading%20and%20implications%20for%20education",
+   "utc": "2026-10-09T19:27:58Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1109/educon67543.2026.11574425",
+   "utc": "2026-10-09T19:28:07Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1109/mipro65660.2025.11131841",
+   "utc": "2026-10-09T19:28:09Z",
+   "http": 200
+  }
+ ],
+ "limits": [
+  "只讀 OpenAlex 摘要與 Crossref 書目，未讀出版社頁與全文；學段、國別只依摘要明寫。",
+  "3 篇無摘要或摘要不完整：W7130729456（SSRN）、W7134190273（勘誤）無摘要；其餘摘要可讀。",
+  "正式版查找只用 Crossref query.bibliographic 題名相關度查詢（讀前 5 筆），可能漏掉改題名的正式版；未查 arXiv 頁與 Google Scholar。",
+  "去重只比對 kb-titles.tsv 的 DOI 與正規化題名。",
+  "歸屬判斷依 OpenAlex 作者 ORCID 與機構；3 篇 OpenAlex 無機構資料（W7215575453、W7133520779、W7130729456），以 ORCID 與主題一致判 valid。",
+  "成效相關結論（如前後測、效果量）未納入判斷，入庫時仍標高風險待 G2–G4。",
+  "K1–K6 類別建議依 repo 既有用法推定（K1 政策框架、K2 學術研究、K3 素養評量、K4 教學師培、K5 工具治理、K6 活動實踐），未見正式定義檔。"
+ ]
+}
