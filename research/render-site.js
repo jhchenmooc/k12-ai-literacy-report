@@ -9,7 +9,7 @@ const {parseCsv}=require("./validate-knowledge-base.js");
 const LEGACY_WEEKLY=[{path:"weekly/2026-09-29_10-08/",title:"創刊特刊：2026/9/29–10/8",note:"10 天過渡期特刊；早期版本，未經獨立認證，保留公開更正說明。"}];
 const LEGACY_MONTHLY=[{path:"monthly/2026-09/",title:"2026 年 9 月月報",note:"跨週趨勢整合；早期版本，未經獨立認證，保留公開更正說明。"}];
 const POLICY_TYPES={framework:"框架",official_guidance:"官方指引",government_announcement:"政府公告",policy_review:"政策檢討",binding_policy:"正式政策",draft:"草案",consultation:"意見徵詢"};
-const RESEARCH_TYPES={journal_article:"期刊論文",conference_paper:"會議論文"};
+const RESEARCH_TYPES={journal_article:"期刊論文",conference_paper:"會議論文",book_chapter:"專書章節"};
 const INTERNATIONAL={"O-UNESCO":"UNESCO","O-OECD":"OECD","O-EU-EC":"歐盟執委會","O-COE":"歐洲理事會","O-UNICEF":"UNICEF"};
 const COUNTRY={AU:"澳洲",JP:"日本",KR:"韓國","GB-ENG":"英格蘭",GB:"英國",US:"美國",SG:"新加坡",CN:"中國",HK:"香港",TW:"臺灣",CA:"加拿大",NZ:"紐西蘭",DE:"德國",FR:"法國",FI:"芬蘭",EE:"愛沙尼亞",IN:"印度",AE:"阿聯",MX:"墨西哥"};
 const ORG_COUNTRY={"O-AU-EDU":"AU","O-JP-MEXT":"JP","O-KR-MOE":"KR","O-UK-DFE":"GB-ENG","O-US-ED":"US","O-SG-MOE":"SG","O-CN-MOE":"CN","O-HK-EDB":"HK","O-TW-MOE":"TW","O-NZ-MOE":"NZ"};
@@ -122,6 +122,8 @@ function archiveData(records,relations,venues,hidden=[]){
    else{const c=country||ORG_COUNTRY[org];if(c)add(policy,"1-"+c,COUNTRY[c]||c,org?org:"",r);else add(policy,"9-other","其他／未標國別","",r)}
   }else if(RESEARCH_TYPES[r.record_type]){
    const src=(rs.find(x=>x.predicate==="published_in")||{}).object_id;
+   /* Book chapters have no monitored venue code; they sit in their own group on the journals page. */
+   if(r.record_type==="book_chapter"){add(journals,"8-book","專書章節","收錄於專書的章節，非期刊論文",r);continue}
    const m=r.record_type==="conference_paper"?conferences:journals,label=m===conferences?"會議":"期刊";
    if(src)add(m,"1-"+src,venueName.get(src)||src,label+" "+src,r);
    else add(m,"9-other","其他"+label,"尚未對應到監測來源",r);
@@ -161,7 +163,7 @@ function groupTable(g){
 }
 const LISTS={
  policy:{title:"國別 × 年份政策年表",short:"國別政策年表",group:"國別／組織",note:"依國別或國際組織分組",desc:"政策年表"},
- journals:{title:"期刊 × 年份論文清單",short:"期刊論文清單",group:"期刊",note:"依期刊分組",desc:"期刊論文清單"},
+ journals:{title:"期刊 × 年份論文清單",short:"期刊論文清單",group:"期刊",note:"依期刊分組（專書章節另列一組）",desc:"期刊論文清單"},
  conferences:{title:"會議 × 年份論文清單",short:"會議論文清單",group:"會議",note:"依會議分組",desc:"會議論文清單"}};
 function archiveTabs(active){
  return '<nav class="tabs" aria-label="清單類型">'+Object.entries(LISTS).map(([k,v])=>'<a href="../'+k+'/"'+(active===k?' aria-current="page"':"")+">"+v.short+"</a>").join("")+"</nav>";
@@ -178,15 +180,16 @@ function renderArchiveList(kind,groups){
 function renderResearchMoved(data){
  const n=counts(data);
  const head='<div class="kicker">歷年資料庫</div><h1>研究清單已分為期刊與會議兩頁</h1>'+ARCHIVE_LEAD;
- const main='<div class="grid-cards"><section class="panel"><div class="label">期刊</div><h2><a href="../journals/">期刊 × 年份論文清單</a></h2><p>'+n.journals+' 筆期刊論文。</p></section><section class="panel"><div class="label">會議</div><h2><a href="../conferences/">會議 × 年份論文清單</a></h2><p>'+n.conferences+" 筆會議論文。</p></section></div>";
+ const main='<div class="grid-cards"><section class="panel"><div class="label">期刊</div><h2><a href="../journals/">期刊 × 年份論文清單</a></h2><p>'+journalText(n)+'。</p></section><section class="panel"><div class="label">會議</div><h2><a href="../conferences/">會議 × 年份論文清單</a></h2><p>'+n.conferences+" 筆會議論文。</p></section></div>";
  return shell({depth:2,current:"archive",title:"研究清單",description:"K-12 AI 素養歷年資料庫：研究清單已分為期刊與會議兩頁",head,main});
 }
-function counts(data){const c=g=>g.reduce((s,x)=>s+x.rows.length,0);return {policy:c(data.policy),journals:c(data.journals),conferences:c(data.conferences)}}
+function counts(data){const c=g=>g.reduce((s,x)=>s+x.rows.length,0);return {policy:c(data.policy),journals:c(data.journals),conferences:c(data.conferences),books:c(data.journals.filter(g=>g.key==="8-book"))}}
+const journalText=n=>(n.journals-n.books)+" 筆期刊論文"+(n.books?"、"+n.books+" 筆專書章節":"");
 function renderArchiveIndex(data){
  const n=counts(data);
  const head='<div class="kicker">歷年資料庫</div><h1>K–12 AI 素養：政策年表與研究清單</h1>'+ARCHIVE_LEAD+LEGEND;
  const panel=(k,label,text)=>'<section class="panel"><div class="label">'+label+'</div><h2><a href="'+k+'/">'+LISTS[k].title+"</a></h2><p>"+text+"</p></section>";
- const main='<div class="grid-cards">'+panel("policy","政策",n.policy+" 筆官方政策、框架與指引，依國別或國際組織分組。")+panel("journals","期刊",n.journals+" 筆期刊論文，依期刊分組。")+panel("conferences","會議",n.conferences+" 筆會議論文，依會議分組。")+"</div>";
+ const main='<div class="grid-cards">'+panel("policy","政策",n.policy+" 筆官方政策、框架與指引，依國別或國際組織分組。")+panel("journals","期刊",journalText(n)+"，依期刊分組。")+panel("conferences","會議",n.conferences+" 筆會議論文，依會議分組。")+"</div>";
  return shell({depth:1,current:"archive",title:"歷年資料庫",description:"K-12 AI 素養歷年資料庫",head,main});
 }
 
@@ -206,7 +209,7 @@ function renderAbout(){
 const BLOCKS={"daily-latest":(days,data)=>{
   const items=days.flatMap(d=>d.claims.map(c=>({c,date:d.date}))).slice(0,3);
   return items.length?'<ul class="item-list">'+items.map(x=>dailyItem(x.c,0,x.date)).join("")+"</ul>":'<p class="empty">尚無已發布的每日短訊。沒有合格項目的日子不發刊。</p>';
- },"archive-stats":(days,data)=>{const n=counts(data);return '<div class="stats"><div class="stat"><strong>'+n.policy+"</strong><span>政策與框架</span></div>"+'<div class="stat"><strong>'+n.journals+"</strong><span>期刊論文</span></div>"+'<div class="stat"><strong>'+n.conferences+"</strong><span>會議論文</span></div></div>"}};
+ },"archive-stats":(days,data)=>{const n=counts(data);return '<div class="stats"><div class="stat"><strong>'+n.policy+"</strong><span>政策與框架</span></div>"+'<div class="stat"><strong>'+n.journals+"</strong><span>"+(n.books?"期刊論文與專書章節":"期刊論文")+"</span></div>"+'<div class="stat"><strong>'+n.conferences+"</strong><span>會議論文</span></div></div>"}};
 function fillHomepage(html,days,data){
  let out=html;
  for(const [name,fn] of Object.entries(BLOCKS)){

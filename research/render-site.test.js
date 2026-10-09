@@ -73,6 +73,19 @@ test("journals and conferences are split by record type and every quick-index li
  }
  assert.ok(files["archive/research/index.html"].includes("../journals/")&&files["archive/research/index.html"].includes("../conferences/"));
 });
+
+test("book chapters are listed in their own group on the journals page, labelled 專書章節",()=>{
+ const records=[
+  {record_id:"KB-2026-9201",title:"Book chapter",primary_url:"https://example.org/b",record_type:"book_chapter",year_value:"2026",year_basis:"issue_year",first_published_on:"",verification_status:"discovered_unverified",source_candidate_id:""},
+  {record_id:"KB-2026-9202",title:"Journal article",primary_url:"https://example.org/j",record_type:"journal_article",year_value:"2026",year_basis:"issue_year",first_published_on:"",verification_status:"discovered_unverified",source_candidate_id:""}];
+ const d=archiveData(records,[],[]);
+ const book=d.journals.find(g=>g.key==="8-book");
+ assert.ok(book&&book.name==="專書章節");
+ assert.deepEqual(book.rows.map(r=>[r.id,r.type]),[["KB-2026-9201","專書章節"]]);
+ assert.ok(!d.journals.some(g=>g.key!=="8-book"&&g.rows.some(r=>r.id==="KB-2026-9201")));
+ assert.equal(d.conferences.length,0);
+});
+
 test("AI literacy scope C records are hidden from the archive and every listed record exists",()=>{
  const records=[
   {record_id:"KB-2026-9101",title:"In scope",primary_url:"https://example.org/a",record_type:"journal_article",year_value:"2026",year_basis:"issue_year",first_published_on:"",verification_status:"discovered_unverified",source_candidate_id:""},
