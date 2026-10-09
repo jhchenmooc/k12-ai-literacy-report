@@ -20,12 +20,15 @@
 | 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
 |---|---|---|---|
 | KB-2025-0001 — [2024 Review of the Australian Framework for Generative Artificial Intelligence in Schools](https://www.education.gov.au/schooling/announcements/2024-review-australian-framework-generative-artificial-intelligence-schools) | policy_review | 2025-06-17 | bibliographic_checked |
+| KB-2025-0002 — [Fostering Transversal Skills Through Open Schooling Supported by the CARE-KNOW-DO Pedagogical Model and the UNESCO AI Competencies Framework](https://link.springer.com/article/10.1007/s40593-025-00458-w) | journal_article | 2025-03-05 | bibliographic_checked |
+| KB-2025-0003 — [A Case Study of Integrating AI Literacy Education in a Biology Class](https://link.springer.com/article/10.1007/s40593-025-00476-8) | journal_article | 2025-04-07 | bibliographic_checked |
 
 ## 2026｜first_publication
 
 | 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
 |---|---|---|---|
 | KB-2026-0010 — [Empowering Learners for the Age of AI: An AI Literacy Framework for Primary and Secondary Education](https://www.oecd.org/en/publications/empowering-learners-for-the-age-of-ai_65cd27d4-en.html) | framework | 2026-06-18 | bibliographic_checked |
+| KB-2026-0011 — [Cultivating AI literacy among high school students through generative AI as a collaborative partner](https://link.springer.com/article/10.1007/s44217-026-02092-7) | journal_article | 2026-08-29 | bibliographic_checked |
 
 ## unknown｜unknown
 
