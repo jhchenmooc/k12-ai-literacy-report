@@ -9,7 +9,7 @@
 | 環境 | 能用什麼 | 注意 |
 |---|---|---|
 | Claude Code 雲端 session（本文件實測環境） | Bash／curl、MCP 工具（需先用 ToolSearch 載入）、Agent 子代理平行、GitHub MCP（**沒有 `gh` CLI**） | OpenAlex 的 API key 由網路 proxy 自動帶上，**不要尋找、印出或寫入 key**；環境裡沒有 key 變數 |
-| ChatGPT（含程式碼執行／瀏覽）或其他 AI | 通常只有 HTTP 請求或瀏覽；沒有本文的 MCP 工具 | 用第 3 節的「通用 HTTP 呼叫」；OpenAlex 沒 key 也能用（加 `mailto=` 參數，速率較低）；若沒有網路，照實說明，**不得用記憶或模擬結果頂替搜尋** |
+| ChatGPT（含程式碼執行／瀏覽）或其他 AI | 通常只有 HTTP 請求或瀏覽；沒有本文的 MCP 工具 | 用第 3 節的「通用 HTTP 呼叫」；OpenAlex 沒 key 也能用（速率較低；是否加 `mailto=` 見第 3 節說明）；若沒有網路，照實說明，**不得用記憶或模擬結果頂替搜尋** |
 | 真人 | 瀏覽器可讀出版社頁（AI 常被擋） | 出版社頁的 Available online 日期與學段細節，最終多半需要真人或可讀頁面確認 |
 
 ## 2. 工具總表（2026-10-09 實測）
@@ -43,7 +43,7 @@ https://api.openalex.org/works?filter=primary_location.source.id:S4210183364,fro
 # 3) 查某來源有多少篇缺摘要
 ...&filter=primary_location.source.id:SXXXX,has_abstract:false&per_page=1   → 看 meta.count
 ```
-沒有 proxy 帶 key 的環境請加 `&mailto=<你的聯絡信箱>`，不要把信箱寫進 repo。
+沒有 proxy 帶 key 的環境，OpenAlex 與 Crossref 不加 `mailto` 也能用（速率較低）。**未經管理者明確同意，不得在任何請求（網址參數、User-Agent、標頭）中放入管理者或任何人的電子郵件**；2026-10-09 曾有子代理在 Crossref 請求的 User-Agent 帶出管理者信箱（見 PR #115），平行子代理的提示要明寫此規則。信箱也不寫進 repo。
 
 **已知坑**：
 - **萬用字元 `*`／`?` 在 `title_and_abstract.search` 會 HTTP 400**（欄位會做詞幹處理）。改寫完整詞形，或用 `title_and_abstract.search.exact`。
@@ -131,13 +131,16 @@ AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只�
 | 英格蘭 DfE | 可讀 | GOV.UK Search API：`https://www.gov.uk/api/search.json?filter_organisations=department-for-education&order=-public_timestamp&count=40`（關鍵詞與時間排序同時用時篩選效果差） |
 | OECD | 403 | WebSearch |
 | 歐盟執委會（教育） | antibot 表單、列表未渲染 | WebSearch |
+| 歐洲理事會（coe.int、rm.coe.int） | Cloudflare 403，建議全文 PDF 亦同 | 請管理者用瀏覽器開啟另存（9 月月報引文即如此核對） |
 | 澳洲 Department of Education／部長新聞 | 503、HTTP/2 錯誤 | WebSearch |
-| 新加坡 MOE | 轉址 JS 頁、空內容 | WebSearch；國會答覆另查 |
+| 新加坡 MOE | 2026-10-09 B-POL 實測 moe.gov.sg 可讀；新聞列表偶為轉址 JS 頁、空內容 | WebSearch；國會答覆另查 |
 | 加拿大 BC／Ontario | SSL 憑證錯誤（**不得停用 TLS 驗證**）／需 JS | WebSearch |
-| 香港 EDB 通告 | 需表單／JS | 香港政府新聞公報可讀 |
-| 日本 MEXT、中國教育部、韓國 MOE、臺灣教育部 | 大致可讀（韓國偶發 connection reset） | — |
+| 香港 EDB 通告 | 列表需表單／JS；**通告 PDF 可直接讀** | 香港政府新聞公報可讀 |
+| 日本 MEXT、中國教育部、韓國 MOE、臺灣教育部 | 大致可讀；韓國 moe.go.kr 常 connection reset（需重試）；臺灣 `pads.moe.edu.tw`（AI 人才方舟計畫下載頁）伺服器未送中繼憑證，curl 驗證失敗（rc=60，**不得停用 TLS 驗證**），一般瀏覽器可開 | 臺灣 pads 頁請管理者以瀏覽器確認 |
+| OECD 出版品全文（含 PISA 報告章節） | Cloudflare 403 | 請管理者以瀏覽器開啟另存或截圖（PISA 2025 引文即如此核對） |
 
 - WebSearch 索引有延遲，當天新頁常未收錄；WebSearch 摘要與 WebFetch 內容都是模型轉述，**只能當線索**，日期與摘錄要回到可讀的原頁核對。
+- 書目核對時的出版者頁（PR #115 實測）：ACM DL Cloudflare 403；Elsevier、Springer、SAGE、T&F、IEEE 常擋自動讀取；Springer／BMC 有 JS 驗證頁；AERA 2025 議程頁回驗證頁。讀不到者記 `unverifiable`，不以 Crossref 單獨相符代替。
 - 時區：亞洲機構當天已近日終時，美洲仍在上班；當天稍後的發布要隔天重查。週報期間建議每天重查一次。
 - 會議預告、活動報導、家庭宣導不是政策；更新日、活動日不是首發日（見 [首發查核表](first-disclosure-checklist-v16.md)）。
 

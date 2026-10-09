@@ -430,3 +430,26 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 - `archive/journals/`（期刊 × 年份）與 `archive/conferences/`（會議 × 年份）由 `render-site.js` 依 `record_type` 分流產生；原 `archive/research/` 改為轉介頁，舊連結不失效。三個清單頁（政策／期刊／會議）共用分頁導覽。
 - 快速索引：頁首「來源 × 年份」矩陣，點名稱跳到該組、點數字跳到該年份第一筆；每組有「回到索引 ↑」。無 JavaScript；`:target` 會標示跳到的那一列。手機上清單改為每筆一張卡片，不需左右捲動。
 - 測試新增：期刊／會議依類型分流、三頁所有頁內連結都有對應錨點。
+
+### 2026-10-09｜知識庫擴充與核對（#108、#113–#115）、編輯 session 網站與查核（#106、#107、#109–#112、#116）
+
+數字以 main `1bfb742` 實際檔案為準：records 202、relations 527、search runs 103；論文 已核 74／未核 75，政策類 已核 37／未核 16。各 PR 的 verify 與 main deploy 皆成功（以 GitHub 實際 Run 為準）。
+
+**文獻搜尋 session**（摘要依各 PR「交接檔摘要」，數字已對 main 核過）：
+- **B-POL／B-IDX**（[PR #108](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/108)）：三組平行搜尋官方 K–12 AI 政策，入庫 39 筆（日 2、中 2、韓 5、港 5、星 4、臺 1、美 9、英格蘭 4、澳 NSW 1、國際 6），全部 `discovered_unverified`；版本關係只記官方明示；新增 9 個發布機關代碼；B-IDX 新增 4 筆研究國別。records 135→174。待判 24 件（臺灣教育部 TLS、ED 403、OECD 403、UNESCO captcha 等）。`validate-knowledge-base.test.js` 4 條改寫為保留同等保護（逐條列於 PR）。
+- **B1 待判複核：IDC、AERA**（[PR #113](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/113)）：IDC 37、AERA 33 件逐件重讀，入庫 28 筆（KB-2025-0051～0058、KB-2026-0103～0122），皆未核。records 174→202。仍待判 33 件（AERA 2025 議程頁需驗證 12 件等）；B1 其餘待判（J20、J21、J24–J26、J29、J32、J34、CHI、FAccT、CSCW、ICALT）尚未複核。
+- **政策紀錄書目核對**（[PR #114](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/114)）：B-POL 39 筆對官方原頁／API 核對，match 29 升 `bibliographic_checked`、mismatch 10 維持未核（其中 7 筆依原頁修正首發日或標題）。PR 寫「已核政策 7→36」；以 main 計所有非論文類型為 8→37（差 1 筆為計算範圍不同，非資料錯誤）。
+- **論文書目核對**（[PR #115](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/115)）：124 筆未核論文對出版者頁核對，match 53 升已核、mismatch 0、unverifiable 71（ACM 35、Elsevier 16、Springer 12、AERA 2025 3 等，出版者擋自動讀取）；28 筆補出版者 Published 日、`year_basis` 改 `first_publication`；G2–G4 摘記 28 筆只在 `oa.md`，**無任何紀錄升 `content_checked`**。PR 寫「已核論文 0→53」指該批範圍；以 main 全部論文計為 21→74。
+- **操作疏失**（#115 自行揭露）：一組子代理對 Crossref 的 26 次請求在 User-Agent 帶出管理者電子郵件，請求已送出無法撤回；repo 與輸出檔不含該信箱。已在工具指南第 3 節加規則：未經管理者同意，任何請求不得帶任何人的電子郵件。
+
+**編輯 session**：
+- 歷年資料庫期刊／會議分頁與快速索引（[#106](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/106)）；快速索引名稱欄靠左、格線、年份欄固定自 2023 起，CSS 連結加內容雜湊版本號避免讀者快取舊樣式（[#107](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/107)）。
+- 9 月月報英國國會連結名稱更正（書面質詢 27912 正式題目），頁首加註更正；5 個 Cloudflare／TLS 連結由管理者瀏覽器確認皆可開（[#109](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/109)）。月報兩則英文引文逐字核對相符：歐洲理事會 CM/Rec(2026)12 序言（[#110](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/110)）、OECD PISA 2025 第一冊 Box I.4.2（[#112](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/112)）。紀錄見 `research/pages-browser-acceptance-2026-10-09.md` 第 4 節；管理者提供的另存檔未入 repo。
+- 網站圖示 `assets/favicon.svg` 與首期週報出刊決定草稿 `research/drafts/2026-10-09_2026-10-15-decision-draft.md`（A 不發刊只留紀錄／B 另加首頁狀態說明，10/15 填數字後由管理者選）（[#111](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/111)）。
+- 學者監測清單 `research/scholar-watchlist.md` v0.5（[#116](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/116)），見本檔開頭索引表。
+- 工具指南第 3.7 節依 #108 與本 session 實測更新（新加坡 MOE 可讀、香港 EDB 通告 PDF 可讀、臺灣 pads TLS、歐洲理事會與 OECD 全文 403、出版者頁擋自動讀取）。
+
+**進行中與下一步**：
+- 文獻搜尋 session：依作者檢索試跑（`scholar-watchlist.md` 已確認學者、近 90 天，只評估不入庫），完成後向管理者報告。
+- 未核：論文 75（多為出版者頁讀不到，需可讀環境或真人）、政策 16（含 #114 mismatch 10）。
+- 編輯 session：10/10 08:22（臺灣）首次每日短訊例行作業；10/15 填週報決定草稿交管理者選 A／B；10/29 製作 10 月月報。
