@@ -41,7 +41,7 @@ test("real knowledge classifications retain unverified status and journal links"
  assert.deepEqual(listed["by-journal/J02"],["KB-2026-0009"]);
  assert.deepEqual(listed["by-source/O-HK-EDB"],["KB-2026-0002","KB-2026-0003"]);
  assert.equal(listed["by-year/unknown/unknown"].length,9);
- assert.deepEqual(listed["by-year/2026/first_publication"],["KB-2026-0010"]);
+ assert.deepEqual(listed["by-year/2026/first_publication"],["KB-2026-0010","KB-2026-0011"]);
  const originalIds=new Set(records.filter(x=>x.source_candidate_id).map(x=>x.record_id));
  assert.ok(relations.filter(x=>originalIds.has(x.subject_id)).every(x=>x.verification_status==="discovered_unverified"));
 });
