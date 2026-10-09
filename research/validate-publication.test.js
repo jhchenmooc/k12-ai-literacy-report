@@ -115,7 +115,7 @@ function dailyFixture(d,c){
  const dailyDir=path.join(d,"daily","2026-10-10");fs.mkdirSync(dailyDir,{recursive:true});
  const old=path.join(d,"weekly","2026-10-09_10-15","index.html");
  if(fs.existsSync(old))fs.rmSync(old);
- fs.writeFileSync(path.join(dailyDir,"index.html"),'<html><main><p data-claim-id="C1">'+c.claim_text+'</p></main></html>');
+ fs.writeFileSync(path.join(dailyDir,"index.html"),'<html><main><p data-claim-id="C1"><a href="'+c.source_url+'">'+c.claim_text+'</a></p></main></html>');
  fs.writeFileSync(path.join(d,"publication","claims","daily-2026-10-10.json"),JSON.stringify([c]));
  fs.writeFileSync(path.join(d,"publication","issues.json"),JSON.stringify({schema_version:1,editions:[{path:"daily/2026-10-10/index.html",claims_file:"publication/claims/daily-2026-10-10.json",publication_mode:"ai_low_risk_source_facts"}]}));
 }
@@ -206,4 +206,31 @@ test("safe HTTPS static claim anchor is still permitted",t=>{
  issue(d,[claim]);
  updateHtml(d,'<html><main><p data-claim-id="C1"><a href="https://example.org/official">合成案例：某機構公告</a></p></main></html>');
  assert.equal(validate(d).ok,true);
+});
+
+test("daily issue cannot omit reader-visible primary source",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ fs.writeFileSync(path.join(d,"daily","2026-10-10","index.html"),'<html><main><p data-claim-id="C1">'+dailyLow.claim_text+'</p></main></html>');
+ assert.ok(validate(d).errors.some(x=>x.includes("original source URL")));
+});
+test("daily issue cannot substitute an unrelated source link",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const f=path.join(d,"daily","2026-10-10","index.html");
+ fs.writeFileSync(f,fs.readFileSync(f,"utf8").replace(dailyLow.source_url,"https://unrelated.example/path"));
+ assert.ok(validate(d).errors.some(x=>x.includes("original source URL")));
+});
+test("legacy files retain noncertified warning but reject malicious script",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ fs.rmSync(path.join(d,"weekly"),{recursive:true,force:true});
+ const dir=path.join(d,"monthly","2026-09");fs.mkdirSync(dir,{recursive:true});
+ fs.writeFileSync(path.join(dir,"index.html"),'<html><script>alert(1)</script><main></main></html>');
+ const v=validate(d);assert.equal(v.ok,false);assert.ok(v.errors.some(x=>x.includes("active or redirect-capable")));
+ assert.ok(v.warnings.some(x=>x.includes("Legacy issue not certified")));
+});
+test("legacy benign static content remains exempt from retrospective claim recertification",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ fs.rmSync(path.join(d,"weekly"),{recursive:true,force:true});
+ const dir=path.join(d,"monthly","2026-09");fs.mkdirSync(dir,{recursive:true});
+ fs.writeFileSync(path.join(dir,"index.html"),'<html><main><p>Archived report</p></main></html>');
+ const v=validate(d);assert.equal(v.ok,true);assert.ok(v.warnings.some(x=>x.includes("Legacy issue not certified")));
 });
