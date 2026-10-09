@@ -142,3 +142,30 @@
 ## 2026-10-09 多角色模擬審查修復接手狀態
 
 本輪以 main `72e1eef77a6a78d62190c7e704b6d23cb6d0c0e4` 為起點，修復舊刊 HTML 安全豁免、月報研究相對連結，以及每日正式 claims 必須顯示對應原始 source_url 的問題；亦補合成正負向測試。舊刊仍不宣稱新版內容認證。另已將 AI/政策/研究來源忠實轉述的最小人力檢查程序納入主控 SOP。**九筆候選仍 hold，正式新期別 0；真實來源正向出刊與網頁點擊驗收未完成，不能以此 PR 的綠燈冒充實站認證。**
+
+
+## 2026-10-09｜v1.7 知識庫最新狀態與尚待完成（新 Session 以此段為準）
+
+> 此段優先於上面歷史的「7 筆候選」「PR 仍進行中」或早期 v1.5 說明。資料狀態一律依最新 main、Actions 與主表重新確認。
+
+### 已完成且有 GitHub 證據
+
+- **來源監測池**：39 本期刊、21 個正式會議，NARST 僅觀察；官方來源登錄與每季輕量、每年完整及重大事件即時檢閱的規則已寫入 `research/venue-watchlist.md`、`research/source-registry-and-review-policy-v17.md`（PR #63）。
+- **v1.7-R5 最小知識庫**：`research/knowledge-base/data/{records,relations,search_runs}.csv`、`schema.md`、`indexes/index.json`；校驗器、保守 DOI／URL 相似訊號、安全 CSV 衍生匯出、唯讀新來源匯入預覽及 T01–T12 類測試已併入 CI（PR #64–#69）。
+- **歷年索引與真實書目種子**：`research/knowledge-base/indexes/YEARS.md` 由程式產生並經 CI 一致性檢驗。PR #70 澳洲框架／檢討、#71 三篇 Springer K–12 研究、#72 兩篇 LAK ACM 會議論文、#73 日本／韓國／英格蘭官方文件、#74 兩篇 Discover Education 研究已合併。官網書目日期與學段等限於各報告記載的實際核查範圍。
+- **最新 main**：`7cc5fd274ec9e8237f9553e64946c3316e47f09f`；PR [#74](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/74) 已於 2026-10-09 合併；合併後 [Actions #37932072973](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37932072973) 成功。現有 **24 筆知識庫主紀錄**（其中原九筆仍 `discovered_unverified`）、正式新期別 **0**。PR 曾有失敗測試，後經修正並以最新成功 CI 為準；不得把歷史失敗視為主分支現況。
+
+### 尚待完成｜下次依序執行
+
+1. **P0：官方政策與版本**：繼續核實新加坡 MOE 確切原文及發布日期；日本指引初版、Ver.2.0 與後續版本關係；韓國 AI 數位教科書政策 2024 公告後的法定地位及修訂；英格蘭 DfE 2023 初版及後續更新。逐件記錄發布日、生效日、更新日、適用地區及文件效力，不猜測現行狀態。
+2. **P0：39 期刊、21 會議逐源搜尋**：按 `venue-watchlist.md` 的來源 ID 和優先級逐批檢索正式出版社／論文集，記錄真實搜尋範圍、檢索式、學段、DOI、Online First／Published 日期、無法取得內容與去重。現有來源紀錄**不是 39＋21 的全面覆蓋**；避免將只開首頁誤標逐篇審核。
+3. **P0：搜尋覆蓋對帳**：`search_runs.csv` 仍須依實際可重現搜尋批次填寫；目前主要是查核報告，不能冒稱零命中或完整查核。建立可稽核的分層覆蓋報告，區分 `entry_only`、`query_scoped`、`items_screened`、`full_text_checked` 及 `partial/unavailable`。
+4. **P1：歷年知識庫深度與分類**：逐步補政策版本、國別角色、學段、教師／學生能力與評量構念、期刊／會議關係，建立更完整的「各年×各國政策、各年×各期刊／會議論文」閱讀索引；未知首發日維持 `unknown`。同 DOI、版本、事件用保守關聯，不自動合併或把卷期日期當首發。
+5. **P1：真實軟體與使用者端驗收**：用 Excel／Google Sheets 實際開啟安全匯出，檢查公式字串與編碼；公開 GitHub Pages 的首頁、手機、來源連結、讀者更正入口需真正瀏覽器實測。CI／Actions 成功**不等於**外部頁面已逐項驗收。
+6. **P1：v1.6 真實新訊正向端到端驗收**：只有查到 **10/09–10/15 同事件當期首次公開**、K–12 直接相關、正式證據鏈完整的新來源才能走 claims／HTML／PR／CI／部署與實站驗收。現有首週九筆候選均 `hold`；A07 UNESCO 墨西哥報導有 10/07–08 更早事件反證，已撤稿，**禁止以 10/09 文章日期重新出刊**。無合格來源就零則。
+7. **P2：來源池檢閱**：每季檢查來源可達、獨特 K–12 產出與維護負擔；每年決定增加、核心／擴充／背景調級、降頻、暫停或移出主動監測；重大停刊、更名、主辦及政策主管機關變更立即檢閱。保留歷史資料與決定理由。**制度已文件化，尚未排程或自動執行**。
+8. **P2：排程／自動化最後才啟用**：在真正正向出刊、逐源覆蓋與公開實站驗收完成前，不啟用每日自動發布；任何候選只進入待審、不可讓知識庫的 `bibliographic_checked` 取代 v1.6 編輯及首發驗證。
+
+### 下一個 Session 開工順序與安全閘門
+
+先查 main／open PR／CI，核對 `records.csv`、`relations.csv`、`indexes/index.json`、`indexes/YEARS.md`、首週候選 JSON 及 `publication/issues.json`；再依序 **政策版本 → 逐源學術查核及覆蓋紀錄 → 歷年分類品質 → 真實端到端驗收**。每批資料與程式透過 PR，`verify` 通過才合併，合併後再核對 `main verify/deploy`；不得更動九筆 `hold`，不得將歷史書目當成當期新聞。更新本 handoff 時修改同一檔案，避免平行交接檔。
