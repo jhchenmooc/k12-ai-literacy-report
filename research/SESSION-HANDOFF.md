@@ -348,7 +348,7 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 
 **管理者決定（2026-10-09）**：新紀錄一律 `discovered_unverified`（Crossref＋OpenAlex 一致不升 `bibliographic_checked`）；**學段必須由摘要明示，只憑題名者列待判**（N16 因此撤回，KB-2025-0021 不重用）；EAAI「Resources for Teaching AI in K-12」列 C22 固定監測分軌（已寫入 `venue-watchlist.md`）；A 組週報候選不入知識庫。
 
-**本批已完成（PR／CI 結果以實際 GitHub 為準，此處不預寫）**：
+**本批已完成**（[PR #98](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/98) HEAD `073e01a` 的 [verify Run 37961139429](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37961139429) 成功，核對 HEAD 後 squash 合併為 main `cab5577`；[main Run 37961226735](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37961226735) verify 與 deploy 均成功。Pages 實站未另做瀏覽器驗收）：
 - 三組平行（UTC 16:10:39 派工，牆鐘約 18 分）：A 本週新發表 3 候選／19 排除；B J31、J35–J38 7 候選／3 待判／46 排除；C AIED、EDM、WiPSCE、EAAI 28 候選／43 待判／25 排除。跨組與對主表 DOI 重複 0；開工雜湊於完成後核對一致；整合者另以 Crossref 抽查 4 筆相符。
 - 入庫 35 筆（期刊 7、會議 28；KB-2025-0022～0032、KB-2026-0027～0050），首發日 unknown、`year_basis=issue_year`；records 54→88、relations 128→205、search runs 49→58（每來源一筆 `P0-20261009-TOOLWAVE-*`）。至此 J01–J03、J31、J35–J38、C01、C02、C21、C22 有搜尋紀錄（皆 `partial`）。
 - 新增 `research/research-tools-guide.md`：各工具的 HTTP 呼叫方式、限制（萬用字元 400、>5 布林運算子 429、`from_created_date` 需付費、登記日≠上線日、Crossref 題名含換行／JATS、出版社頁 403 等）、四個核心會議的索引定位、平行化時機與實測耗時、Git 注意事項。
