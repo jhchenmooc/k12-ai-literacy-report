@@ -68,8 +68,15 @@ function staticHtmlSafety(html,label){
  return errors;
 }
 function dailySourceLink(html,c){
- const hrefs=[...html.matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["'][^>]*>/gi)].map(m=>m[1].replace(/&amp;/gi,"&"));
- return hrefs.includes(c.source_url);
+ const body=(html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)||[])[1]||"";
+ const nodes=[...body.matchAll(/<(p|li|blockquote|td)\b([^>]*)>([\s\S]*?)<\/\1>/gi)];
+ for(const [,tag,attrs,inner] of nodes){
+  const id=(attrs.match(/\bdata-claim-id\s*=\s*["']([^"']+)["']/i)||[])[1];
+  if(id!==c.claim_id)continue;
+  const hrefs=[...inner.matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["'][^>]*>/gi)].map(m=>m[1].replace(/&amp;/gi,"&"));
+  if(hrefs.includes(c.source_url))return true;
+ }
+ return false;
 }
 function dailyFact(c,issueDate){
  const errors=[];
