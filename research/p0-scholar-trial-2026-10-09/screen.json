@@ -1,0 +1,1992 @@
+{
+ "window": "2026-07-11～2026-10-09",
+ "screened": "2026-10-09",
+ "items": [
+  {
+   "scholar": "S01",
+   "work": "W7204746454",
+   "doi": "10.5281/zenodo.22199907",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "UCL；教師端 AI 系統性回顧，未寫學段"
+  },
+  {
+   "scholar": "S01",
+   "work": "W7205005667",
+   "doi": "10.1002/jcal.70317",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "UCL；大學生線上討論"
+  },
+  {
+   "scholar": "S01",
+   "work": "W7211886607",
+   "doi": "10.1038/s41598-026-70854-2",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "UCL；全國高中入學考試學生成績預測（教育資料探勘）"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7171822902",
+   "doi": "10.1016/j.caeai.2026.100655",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "港大／Monash；醫學與護理學生"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7204957647",
+   "doi": "10.1016/j.compedu.2026.105747",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "港大／Monash；題名寫小學數學；無摘要"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7125259411",
+   "doi": "10.1038/s41597-026-08054-w",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "港大；澳洲大學生資料集"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7153057309",
+   "doi": "10.1016/j.caeai.2026.100684",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "港大；學習理論，未寫學段"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7160504600",
+   "doi": "10.1016/j.caeai.2026.100680",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "Monash（過渡期單位）；AI 學伴設計框架，跨學段案例"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7168108145",
+   "doi": "10.5281/zenodo.21319936",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "港大／Monash；醫學教育 AI 模擬病人（軟體）"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7171362791",
+   "doi": "10.1002/jcal.70300",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "港大／Monash；作文修改，87 名參與者未寫學段"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7172254328",
+   "doi": "10.21203/rs.3.rs-10472890/v1",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "港大；醫學教育；無摘要"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7196945462",
+   "doi": "10.1145/3770855.3818637",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "Monash；KDD 會議場次介紹，跨學段"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7203926372",
+   "doi": "10.1016/j.caeai.2026.100671",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "單位缺，主題與其研究一致；探究社群理論"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7204005753",
+   "doi": "10.1002/jcal.70310",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "港大／Monash；大學生"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7204490523",
+   "doi": "10.18608/jla.2026.9145",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "Monash；健康專業教育"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7213886153",
+   "doi": "10.1002/jcal.70331",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "港大／Monash；中學生多文本寫作"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7213988584",
+   "doi": "10.1007/978-3-032-37979-5_31",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "Monash；學習分析視覺化；無摘要"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7214145520",
+   "doi": "10.1080/10447318.2026.2731321",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "港大／Monash；醫護模擬"
+  },
+  {
+   "scholar": "S02",
+   "work": "W7220443719",
+   "doi": "10.1007/978-3-032-37982-5_24",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "Monash；無摘要，與健康照護模擬系列相關"
+  },
+  {
+   "scholar": "S03",
+   "work": "W7172215497",
+   "doi": "10.31234/osf.io/s7dvk_v2",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "單位缺，主題一致；後設認知與人機互動觀點文"
+  },
+  {
+   "scholar": "S03",
+   "work": "W7201856018",
+   "doi": "10.1016/j.tate.2026.105768",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "Radboud；小學教師資料使用回顧"
+  },
+  {
+   "scholar": "S03",
+   "work": "W7220844460",
+   "doi": "10.1080/0144929x.2026.2740744",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "Radboud；教育中的人機協作，未寫學段"
+  },
+  {
+   "scholar": "S04",
+   "work": "W7214097358",
+   "doi": "10.1016/j.caeo.2026.100422",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "東芬蘭大學；跨學段情境含中小學，並論師培"
+  },
+  {
+   "scholar": "S04",
+   "work": "W7214976805",
+   "doi": "10.15388/infedu.2601.025",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "東芬蘭大學（OpenAlex 誤標 Finland University）；K-12 AI 素養"
+  },
+  {
+   "scholar": "T01",
+   "work": "W7204957647",
+   "doi": "10.1016/j.compedu.2026.105747",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "臺中教大；與 S02 共著，小學數學；無摘要"
+  },
+  {
+   "scholar": "T02",
+   "work": "W7168294435",
+   "doi": "10.3389/fpsyg.2026.1877695",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "臺中教大；小學五年級情緒教育"
+  },
+  {
+   "scholar": "T02",
+   "work": "W7204249255",
+   "doi": "10.5281/zenodo.22108724",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "臺中教大；小學五年級 GenAI 數學資料集"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7171626001",
+   "doi": "10.1007/s11423-026-10667-2",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "臺中教大／臺科大；題名寫小學生；無摘要"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7211956451",
+   "doi": "10.1504/ijmlo.2028.10080944",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致（遊戲式學習）；無摘要"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7213929609",
+   "doi": "10.1007/s44163-026-02234-8",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "臺中教大／臺科大；高教評量"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7207525809",
+   "doi": "10.1007/s11423-026-10709-9",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "臺中教大／臺科大；GenAI 遊戲式科學學習；無摘要"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7170760729",
+   "doi": "10.1186/s12909-026-10000-8",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "臺中教大／臺科大；護理實習"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7172533075",
+   "doi": "10.1007/s10956-026-10353-1",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "臺中教大／臺科大；機器人化學學習；無摘要"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7169727871",
+   "doi": "10.1002/jcal.70296",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "臺中教大／臺科大；六年級虛擬博物館"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7212683916",
+   "doi": "10.1016/j.tsc.2026.102378",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致；大學生"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7203890741",
+   "doi": "10.1177/07356331261479576",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "臺中教大／臺科大；護理系學生"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7203719885",
+   "doi": "10.1007/s11423-026-10694-z",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "臺中教大／臺科大；元宇宙；無摘要"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7219629398",
+   "doi": "10.1007/s10639-026-14165-z",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "臺中教大／臺科大；幼兒教育程式設計，可能屬學前；無摘要"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7203491779",
+   "doi": "10.1177/07356331261477592",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "臺中教大／臺科大；大學表演藝術"
+  },
+  {
+   "scholar": "T03",
+   "work": "W7201988286",
+   "doi": "10.1111/bjet.70083",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "臺中教大／臺科大；小學六年級情緒代理（是否 AI 未明）"
+  },
+  {
+   "scholar": "T06",
+   "work": "W7204581279",
+   "doi": "10.1016/j.compedu.2026.105744",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "中央大學；GenAI 教學代理人框架；無摘要"
+  },
+  {
+   "scholar": "T06",
+   "work": "W7171934085",
+   "doi": "10.1007/s10956-025-10290-5",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "中央大學；GenAI 科學模擬回饋；無摘要"
+  },
+  {
+   "scholar": "T06",
+   "work": "W7214167213",
+   "doi": "10.1007/s11423-026-10723-x",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "中央大學；GenAI 閱讀活動；無摘要"
+  },
+  {
+   "scholar": "S18",
+   "work": "W7169688586",
+   "doi": "10.1007/978-3-032-34157-0_13",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "京都大學；日本 EFL 寫作聊天機器人，未寫學段"
+  },
+  {
+   "scholar": "S18",
+   "work": "W7171525181",
+   "doi": "10.1016/j.caeo.2026.100402",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "京都大學；大學閱讀課"
+  },
+  {
+   "scholar": "S18",
+   "work": "W7202202692",
+   "doi": "10.48550/arxiv.2608.09289",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "京都大學；國中生英文寫作，LLM 修正"
+  },
+  {
+   "scholar": "S18",
+   "work": "W7211956722",
+   "doi": "10.58459/rptel.2027.22030",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "京都大學；國中八年級"
+  },
+  {
+   "scholar": "S18",
+   "work": "W7213557113",
+   "doi": "10.1007/s10758-026-10031-6",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "京都大學；線上同儕輔導，未寫學段"
+  },
+  {
+   "scholar": "S18",
+   "work": "W7220410081",
+   "doi": "10.48550/arxiv.2610.02720",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致（學習分析資料共享）；研究生與大學生"
+  },
+  {
+   "scholar": "S20",
+   "work": "W7172207433",
+   "doi": "10.35542/osf.io/59ryn_v1",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "單位缺，主題一致；研究所師培課程"
+  },
+  {
+   "scholar": "S24",
+   "work": "W7170800849",
+   "doi": "10.1007/s13178-026-01396-5",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "理大；批判思考與偏見；無摘要"
+  },
+  {
+   "scholar": "S24",
+   "work": "W7204946642",
+   "doi": "10.1186/s40359-026-05500-7",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "理大；大學生"
+  },
+  {
+   "scholar": "T10",
+   "work": "W7204072437",
+   "doi": "10.1016/j.caeai.2026.100661",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "單位缺，主題一致；K-12 AI 素養手冊；知識庫已有"
+  },
+  {
+   "scholar": "T14",
+   "work": "W7204581279",
+   "doi": "10.1016/j.compedu.2026.105744",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "臺師大；與 T06 共著；無摘要"
+  },
+  {
+   "scholar": "T14",
+   "work": "W7171087609",
+   "doi": "10.17605/osf.io/da6sz",
+   "attribution": "uncertain",
+   "k12": null,
+   "ai_literacy_topic": "no",
+   "note": "單位缺、僅有簡短預註冊說明（香港計畫），無法確認是否本人"
+  },
+  {
+   "scholar": "T14",
+   "work": "W7214720750",
+   "doi": "10.1016/j.compedu.2026.105755",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "臺師大；期刊 50 年主題與 AI 書目計量"
+  },
+  {
+   "scholar": "T14",
+   "work": "W7214997051",
+   "doi": "10.1016/j.compedu.2026.105756",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "臺師大；科學數學教育 50 年回顧，跨學段"
+  },
+  {
+   "scholar": "T19",
+   "work": "W7168267228",
+   "doi": "10.1080/10494820.2026.2691906",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "中原／臺師大；印度職前教師"
+  },
+  {
+   "scholar": "T19",
+   "work": "W7171301771",
+   "doi": "10.29333/pr/19019",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "臺師大；STEM 教師專業發展，未寫學段"
+  },
+  {
+   "scholar": "T19",
+   "work": "W7172203962",
+   "doi": "10.1016/j.ssaho.2026.103342",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "臺師大；印尼高中生"
+  },
+  {
+   "scholar": "T19",
+   "work": "W7204140364",
+   "doi": "10.1016/j.ssaho.2026.103488",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題與科學教育／心理生理研究一致；無摘要"
+  },
+  {
+   "scholar": "T19",
+   "work": "W7211987137",
+   "doi": "10.1016/j.bios.2026.119215",
+   "attribution": "excluded_same_name_or_mixed",
+   "k12": null,
+   "ai_literacy_topic": "no",
+   "note": "單位為臺灣大學且主題為微流體血型檢測，屬同名混入"
+  },
+  {
+   "scholar": "T19",
+   "work": "W7213555713",
+   "doi": "10.29333/ejmste/19279",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "臺師大；科學教育 AI 介入回顧"
+  },
+  {
+   "scholar": "T19",
+   "work": "W7214128017",
+   "doi": "10.1007/s10763-026-10730-7",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "中原／臺師大；十年級學生"
+  },
+  {
+   "scholar": "T21",
+   "work": "W7220393590",
+   "doi": "10.3389/fpsyg.2026.1950695",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "臺科大；遊戲式學習鷹架觀點文"
+  },
+  {
+   "scholar": "S06",
+   "work": "W7213988584",
+   "doi": "10.1007/978-3-032-37979-5_31",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "清華；與 S02 共著；無摘要"
+  },
+  {
+   "scholar": "S06",
+   "work": "W7160504600",
+   "doi": "10.1016/j.caeai.2026.100680",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "清華；與 S02 共著"
+  },
+  {
+   "scholar": "S06",
+   "work": "W7153057309",
+   "doi": "10.1016/j.caeai.2026.100684",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "清華；與 S02 共著"
+  },
+  {
+   "scholar": "S06",
+   "work": "W7172215497",
+   "doi": "10.31234/osf.io/s7dvk_v2",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "單位缺，與 S02/S03 共著觀點文"
+  },
+  {
+   "scholar": "S06",
+   "work": "W7214221190",
+   "doi": "10.6084/m9.figshare.33980812",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "單位缺；同題期刊論文的 Figshare 資料集；醫護模擬"
+  },
+  {
+   "scholar": "S06",
+   "work": "W7214145520",
+   "doi": "10.1080/10447318.2026.2731321",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "清華；醫護模擬"
+  },
+  {
+   "scholar": "S06",
+   "work": "W7204005753",
+   "doi": "10.1002/jcal.70310",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "清華／Monash；大學生"
+  },
+  {
+   "scholar": "S06",
+   "work": "W7171822902",
+   "doi": "10.1016/j.caeai.2026.100655",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "清華；醫學與護理學生"
+  },
+  {
+   "scholar": "S07",
+   "work": "W7168108145",
+   "doi": "10.5281/zenodo.21319936",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "北大；醫學教育"
+  },
+  {
+   "scholar": "S07",
+   "work": "W7171362791",
+   "doi": "10.1002/jcal.70300",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "Monash／北大；作文修改，未寫學段"
+  },
+  {
+   "scholar": "S07",
+   "work": "W7172215497",
+   "doi": "10.31234/osf.io/s7dvk_v2",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "單位缺，共著觀點文"
+  },
+  {
+   "scholar": "S07",
+   "work": "W7172254328",
+   "doi": "10.21203/rs.3.rs-10472890/v1",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "北大；醫學教育；無摘要"
+  },
+  {
+   "scholar": "S07",
+   "work": "W7204970079",
+   "doi": "10.48550/arxiv.2608.28619",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "北大；高教醫學教育"
+  },
+  {
+   "scholar": "S08",
+   "work": "W7169613397",
+   "doi": "10.1007/s10648-026-10202-y",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "TUM；AI 作為學習認知模型的回顧"
+  },
+  {
+   "scholar": "S08",
+   "work": "W7171928816",
+   "doi": "10.1016/j.lindif.2026.102978",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "TUM；創造力；無摘要"
+  },
+  {
+   "scholar": "S08",
+   "work": "W7172215497",
+   "doi": "10.31234/osf.io/s7dvk_v2",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "單位缺，共著觀點文"
+  },
+  {
+   "scholar": "S08",
+   "work": "W7201923738",
+   "doi": "",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致（心理計量）；無摘要"
+  },
+  {
+   "scholar": "S08",
+   "work": "W7202189114",
+   "doi": "10.31219/osf.io/st985_v3",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致（教育心理）；六至九年級學生家長"
+  },
+  {
+   "scholar": "S08",
+   "work": "W7203855572",
+   "doi": "10.18452/38313",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "單位缺（德文書章），主題一致；GenAI 與教學"
+  },
+  {
+   "scholar": "S08",
+   "work": "W7211924208",
+   "doi": "10.1016/j.intell.2026.102060",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "TUM；期刊 AI 使用揭露政策（社論）"
+  },
+  {
+   "scholar": "S08",
+   "work": "W7213541668",
+   "doi": "10.1016/j.lindif.2026.102975",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "TUM；特刊導言，含 AI 生態"
+  },
+  {
+   "scholar": "S08",
+   "work": "W7214563106",
+   "doi": "10.1186/s40536-026-00321-x",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "TUM；PISA 與學校成績"
+  },
+  {
+   "scholar": "S08",
+   "work": "W7214649716",
+   "doi": "10.6084/m9.figshare.34007498",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "TUM；上一篇的附加檔（Figshare）"
+  },
+  {
+   "scholar": "S09",
+   "work": "W7202344627",
+   "doi": "10.48550/arxiv.2608.11625",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "昆士蘭大學；AI 回饋大規模研究，未寫學段"
+  },
+  {
+   "scholar": "S10",
+   "work": "W7214976805",
+   "doi": "10.15388/infedu.2601.025",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "東芬蘭大學；與 S04 共著，K-12 AI 素養"
+  },
+  {
+   "scholar": "S11",
+   "work": "W7214976805",
+   "doi": "10.15388/infedu.2601.025",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "東芬蘭大學；與 S04 共著，K-12 AI 素養"
+  },
+  {
+   "scholar": "S13",
+   "work": "W7172383670",
+   "doi": "10.1007/s40138-026-00359-9",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "UCF；兒科急救臨床人員"
+  },
+  {
+   "scholar": "S13",
+   "work": "W7172493639",
+   "doi": "10.1080/00405841.2026.2714714",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "UCF；AI 教學代理人與自主學習，課堂未寫學段"
+  },
+  {
+   "scholar": "S13",
+   "work": "W7202050467",
+   "doi": "10.1007/s10648-026-10196-7",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "UCF；自我調節概念框架"
+  },
+  {
+   "scholar": "S13",
+   "work": "W7203884447",
+   "doi": "10.18260/1-2--61134",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "UCF；研究所模擬教育 LLM；無摘要"
+  },
+  {
+   "scholar": "S13",
+   "work": "W7213373544",
+   "doi": "",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "UCF；遊戲式學習 RAG 代理"
+  },
+  {
+   "scholar": "S14",
+   "work": "W7208738451",
+   "doi": "10.3205/26gma243",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "TUM；醫學教育 AI 模擬"
+  },
+  {
+   "scholar": "S14",
+   "work": "W7213886153",
+   "doi": "10.1002/jcal.70331",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "TUM；與 S02 共著，中學生"
+  },
+  {
+   "scholar": "S14",
+   "work": "W7220446830",
+   "doi": "10.1007/s11409-026-09500-1",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "TUM；中學生自主學習訓練"
+  },
+  {
+   "scholar": "S15",
+   "work": "W3153841848",
+   "doi": "10.1287/mnsc.2022.01740",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "UPenn；詞向量方法（非教育研究；正式卷期出版，作品較早）"
+  },
+  {
+   "scholar": "H02",
+   "work": "W7169557922",
+   "doi": "10.1007/978-3-032-32112-1_7",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "教大；創業課程 AI 素養；無摘要"
+  },
+  {
+   "scholar": "H02",
+   "work": "W7170149039",
+   "doi": "10.1080/13803611.2026.2698571",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "教大；AI 用於系統性回顧方法；無摘要"
+  },
+  {
+   "scholar": "H03",
+   "work": "W7169557922",
+   "doi": "10.1007/978-3-032-32112-1_7",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "科大；同上共著；無摘要"
+  },
+  {
+   "scholar": "H05",
+   "work": "W7204560163",
+   "doi": "10.5281/zenodo.22139875",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "清華；XAI 實驗資料集；無摘要"
+  },
+  {
+   "scholar": "H05",
+   "work": "W7212074828",
+   "doi": "10.1016/j.ijhcs.2026.103939",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "清華；XAI 與 AI 素養；無摘要"
+  },
+  {
+   "scholar": "H08",
+   "work": "W7202187169",
+   "doi": "10.3389/frsen.2026.1931285",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "UF；遙測社論（非教育研究，屬本人地理領域）"
+  },
+  {
+   "scholar": "H08",
+   "work": "W7204486276",
+   "doi": "10.3390/land15091579",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "UF；土地覆蓋機器學習（非教育研究）"
+  },
+  {
+   "scholar": "H08",
+   "work": "W7220655232",
+   "doi": "10.1016/j.envadv.2026.100765",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "UF；綠地與失智（非教育研究）"
+  },
+  {
+   "scholar": "H09",
+   "work": "W7204495842",
+   "doi": "10.1007/s40670-026-02866-6",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "波昂大學醫院；醫學教育 AI 出題"
+  },
+  {
+   "scholar": "H09",
+   "work": "W7208746625",
+   "doi": "10.3205/26gma225",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "波昂大學醫院；放射腫瘤教學 GenAI 出題"
+  },
+  {
+   "scholar": "H09",
+   "work": "W7208771838",
+   "doi": "10.3205/26gma226",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "波昂；醫學生對 AI 題目"
+  },
+  {
+   "scholar": "H09",
+   "work": "W7214605398",
+   "doi": "10.3389/feduc.2026.1885959",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "波昂大學；數學教師 AI 信念量表（職前與在職，未寫學段）"
+  },
+  {
+   "scholar": "H10",
+   "work": "W7204495842",
+   "doi": "10.1007/s40670-026-02866-6",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "波昂；醫學教育 AI 出題"
+  },
+  {
+   "scholar": "H10",
+   "work": "W7208745397",
+   "doi": "10.3205/26gma048",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "波昂；臨床教學評鑑"
+  },
+  {
+   "scholar": "H10",
+   "work": "W7208746625",
+   "doi": "10.3205/26gma225",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "波昂；放射腫瘤教學 GenAI 出題"
+  },
+  {
+   "scholar": "H10",
+   "work": "W7208771838",
+   "doi": "10.3205/26gma226",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "波昂；醫學生對 AI 題目"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7168079889",
+   "doi": "10.1080/09588221.2026.2699241",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "中大；日本大學生 AI 語言學習"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7169593628",
+   "doi": "10.1080/03075079.2026.2699815",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "中大；中亞高教"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7170177558",
+   "doi": "10.1111/ijal.70320",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "中大；中學生 GenAI 寫作"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7171435150",
+   "doi": "10.1080/20590776.2026.2708689",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "中大；大學生與 AI"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7172532737",
+   "doi": "10.1080/10494820.2026.2685803",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "中大；STEM 研究回顧（AI 方法分析）；無摘要"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7202142090",
+   "doi": "10.48550/arxiv.2608.06932",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "中大；教育短影音書目計量"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7204128107",
+   "doi": "10.1080/15366367.2026.2717599",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "中大；大學生 GenAI 自主學習"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7204533813",
+   "doi": "10.1016/j.compedu.2026.105745",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "中大；香港中學 AI 教育；知識庫已有"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7204990898",
+   "doi": "10.1080/1475939x.2026.2721466",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "中大；GenAI 聊天機器人語言學習；無摘要"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7212006881",
+   "doi": "10.1080/14790718.2026.2730662",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "中大；大學生 AI 聊天機器人"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7213527283",
+   "doi": "10.5281/zenodo.22806883",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "中大；數學教師 AI-TPACK 回顧（資料集）；無摘要"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7214586492",
+   "doi": "10.1186/s40594-026-00648-5",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "中大；STEM 評量與 GenAI 評論"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7215033904",
+   "doi": "10.1111/bjet.70091",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "中大；心理網絡方法回顧"
+  },
+  {
+   "scholar": "H11",
+   "work": "W7220919634",
+   "doi": "10.1080/10494820.2026.2744403",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "中大；題名寫 K-12 學校 AI 教育；無摘要"
+  },
+  {
+   "scholar": "H17",
+   "work": "W7216064691",
+   "doi": "10.1145/3776591.3832522",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "MIT；成人與兒童情感推論（非學校情境）"
+  },
+  {
+   "scholar": "H17",
+   "work": "W7220922775",
+   "doi": "10.48550/arxiv.2610.09155",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致（人機共創）；非專業成人創作者"
+  },
+  {
+   "scholar": "H17",
+   "work": "W7221043301",
+   "doi": "10.1109/ro-man72286.2026.11714744",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "MIT；兒童對機器人外觀知覺（非學校情境）；無摘要"
+  },
+  {
+   "scholar": "H18",
+   "work": "W7168970900",
+   "doi": "10.31234/osf.io/csjad_v1",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致（AI 心理）；AI 諂媚理論，非教育研究"
+  },
+  {
+   "scholar": "H18",
+   "work": "W7202055169",
+   "doi": "10.31234/osf.io/csjad_v3",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "單位缺；與上一筆同題的另一版本"
+  },
+  {
+   "scholar": "H18",
+   "work": "W7213619452",
+   "doi": "10.1016/j.chbah.2026.100402",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "單位缺，主題一致；教師 AI 心態框架，未寫學段"
+  },
+  {
+   "scholar": "H19",
+   "work": "W7171451486",
+   "doi": "10.1007/s12599-026-01009-w",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "聖加侖；企業資訊系統"
+  },
+  {
+   "scholar": "H19",
+   "work": "W7211998666",
+   "doi": "10.1111/isj.70063",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "聖加侖；企業採購"
+  },
+  {
+   "scholar": "H19",
+   "work": "W7220370105",
+   "doi": "10.1365/s40702-026-01331-7",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "聖加侖；企業 Agentic AI"
+  },
+  {
+   "scholar": "H21",
+   "work": "W7203693943",
+   "doi": "10.1016/j.heliyon.2026.e45268",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "教大；小學生運算思維"
+  },
+  {
+   "scholar": "H25",
+   "work": "W7201847843",
+   "doi": "10.1007/s10734-026-01728-9",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "Masaryk；高教網絡"
+  },
+  {
+   "scholar": "H25",
+   "work": "W7203562360",
+   "doi": "",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致（青少年心理）；小學升高中"
+  },
+  {
+   "scholar": "H25",
+   "work": "W7204738281",
+   "doi": "10.1186/s40536-026-00318-6",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "Masaryk；PISA 學生學業韌性"
+  },
+  {
+   "scholar": "H25",
+   "work": "W7212011025",
+   "doi": "10.6084/m9.figshare.33472832",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "Masaryk；上一篇的附加檔（Figshare）"
+  },
+  {
+   "scholar": "H25",
+   "work": "W7215071183",
+   "doi": "10.1080/13645579.2026.2736850",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "Masaryk；質性研究方法論"
+  },
+  {
+   "scholar": "H25",
+   "work": "W7215895593",
+   "doi": "10.31234/osf.io/afuq2_v1",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "單位缺，主題一致；中學生與教師 AI 素養測驗"
+  },
+  {
+   "scholar": "H26",
+   "work": "W7171317694",
+   "doi": "10.63223/jphe.2026.59393",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "單位缺，主題一致；師培生論文使用 GenAI"
+  },
+  {
+   "scholar": "H26",
+   "work": "W7214171837",
+   "doi": "10.5617/nordina.12498",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "林雪平；科學中心非正式學習"
+  },
+  {
+   "scholar": "H26",
+   "work": "W7214376605",
+   "doi": "10.5617/nordina.11791",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "林雪平；科學師培者"
+  },
+  {
+   "scholar": "H26",
+   "work": "W7215055574",
+   "doi": "10.33422/ejte.v8i3.1872",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "林雪平；中學教師 GenAI 評量"
+  },
+  {
+   "scholar": "H26",
+   "work": "W7220855403",
+   "doi": "10.23865/hu.v16.8303",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "林雪平；高教書評"
+  },
+  {
+   "scholar": "H27",
+   "work": "W7168236037",
+   "doi": "10.1080/03043797.2026.2694549",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "林雪平；高中工程課程"
+  },
+  {
+   "scholar": "H27",
+   "work": "W7214586492",
+   "doi": "10.1186/s40594-026-00648-5",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "林雪平；與 H11 共著，STEM 評量與 GenAI"
+  },
+  {
+   "scholar": "H29",
+   "work": "W7171472096",
+   "doi": "10.48550/arxiv.2607.21777",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "yes",
+   "note": "UGA；依 NGSS 的科學探究與學科 AI 素養"
+  },
+  {
+   "scholar": "H29",
+   "work": "W7211951528",
+   "doi": "10.1080/09500693.2026.2727692",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "yes",
+   "note": "UGA；GenAI 科學教育特刊社論，跨學段"
+  },
+  {
+   "scholar": "H30",
+   "work": "W7169794366",
+   "doi": "10.1016/j.caeo.2026.100396",
+   "attribution": "valid",
+   "k12": "explicit",
+   "ai_literacy_topic": "no",
+   "note": "Oulu；K-12 教師數位能力"
+  },
+  {
+   "scholar": "H30",
+   "work": "W7202264655",
+   "doi": "10.1080/10494820.2026.2703281",
+   "attribution": "valid",
+   "k12": "unclear",
+   "ai_literacy_topic": "no",
+   "note": "Oulu；教師虛擬學習環境，未寫學段"
+  },
+  {
+   "scholar": "H30",
+   "work": "W7203968316",
+   "doi": "10.1177/07356331261479569",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "Oulu；芬蘭職前教師"
+  },
+  {
+   "scholar": "H30",
+   "work": "W7218767332",
+   "doi": "10.1111/bjet.70092",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "Oulu；高教課堂"
+  },
+  {
+   "scholar": "H30",
+   "work": "W7220729024",
+   "doi": "10.1007/978-3-032-37979-5_9",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "Oulu；師培 AI 素養；無摘要"
+  },
+  {
+   "scholar": "H31",
+   "work": "W7203724179",
+   "doi": "10.1016/j.iref.2026.105762",
+   "attribution": "excluded_same_name_or_mixed",
+   "k12": null,
+   "ai_literacy_topic": "no",
+   "note": "單位缺且主題為地緣政治經濟，與教育科技研究不符"
+  },
+  {
+   "scholar": "H31",
+   "work": "W7204596643",
+   "doi": "10.1109/lra.2026.3728326",
+   "attribution": "excluded_same_name_or_mixed",
+   "k12": null,
+   "ai_literacy_topic": "no",
+   "note": "單位為長春工業大學且主題為仿生致動器，屬同名混入"
+  },
+  {
+   "scholar": "H32",
+   "work": "W7161619116",
+   "doi": "10.5283/epub.80293",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致（資訊系統 XAI）；非教育研究"
+  },
+  {
+   "scholar": "H32",
+   "work": "W7202030201",
+   "doi": "10.17605/osf.io/ay23c",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致；演算法管理計畫（預註冊）"
+  },
+  {
+   "scholar": "H32",
+   "work": "W7202083378",
+   "doi": "10.1287/isre.2024.0927",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "達姆施塔特；平台工作者"
+  },
+  {
+   "scholar": "H32",
+   "work": "W7202426679",
+   "doi": "",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致；Uber 司機重製研究"
+  },
+  {
+   "scholar": "H32",
+   "work": "W7202429502",
+   "doi": "",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致；Uber 司機重製研究"
+  },
+  {
+   "scholar": "H32",
+   "work": "W7202430918",
+   "doi": "",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "單位缺，主題一致；工作者重製研究"
+  },
+  {
+   "scholar": "H32",
+   "work": "W7204860538",
+   "doi": "",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "達姆施塔特；企業 OKR 軟體"
+  },
+  {
+   "scholar": "H32",
+   "work": "W7211952082",
+   "doi": "10.1016/j.bushor.2026.09.002",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "yes",
+   "note": "達姆施塔特；組織內 AI 素養"
+  },
+  {
+   "scholar": "H32",
+   "work": "W7213314719",
+   "doi": "10.1080/0960085x.2026.2723258",
+   "attribution": "valid",
+   "k12": "not_k12",
+   "ai_literacy_topic": "no",
+   "note": "達姆施塔特；銀行業企業 AI"
+  }
+ ],
+ "per_scholar": [
+  {
+   "id": "S01",
+   "tier": "A1",
+   "hits": 3,
+   "valid": 3,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 1,
+   "ai_topic": 2
+  },
+  {
+   "id": "S02",
+   "tier": "A1",
+   "hits": 16,
+   "valid": 16,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 2,
+   "ai_topic": 13
+  },
+  {
+   "id": "S03",
+   "tier": "A1",
+   "hits": 3,
+   "valid": 3,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 1,
+   "ai_topic": 2
+  },
+  {
+   "id": "S04",
+   "tier": "A1",
+   "hits": 2,
+   "valid": 2,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 2,
+   "ai_topic": 2
+  },
+  {
+   "id": "T01",
+   "tier": "A2",
+   "hits": 1,
+   "valid": 1,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 1,
+   "ai_topic": 0
+  },
+  {
+   "id": "T02",
+   "tier": "A2",
+   "hits": 2,
+   "valid": 2,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 2,
+   "ai_topic": 1
+  },
+  {
+   "id": "T03",
+   "tier": "A2",
+   "hits": 13,
+   "valid": 13,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 3,
+   "ai_topic": 2
+  },
+  {
+   "id": "T06",
+   "tier": "A2",
+   "hits": 3,
+   "valid": 3,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 3
+  },
+  {
+   "id": "S18",
+   "tier": "A3",
+   "hits": 6,
+   "valid": 6,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 2,
+   "ai_topic": 2
+  },
+  {
+   "id": "S20",
+   "tier": "A3",
+   "hits": 1,
+   "valid": 1,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 1
+  },
+  {
+   "id": "S24",
+   "tier": "A3",
+   "hits": 2,
+   "valid": 2,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 0
+  },
+  {
+   "id": "T10",
+   "tier": "A4",
+   "hits": 1,
+   "valid": 1,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 1,
+   "ai_topic": 1
+  },
+  {
+   "id": "T14",
+   "tier": "A4",
+   "hits": 4,
+   "valid": 3,
+   "excluded": 0,
+   "uncertain": 1,
+   "k12_explicit": 0,
+   "ai_topic": 2
+  },
+  {
+   "id": "T19",
+   "tier": "A4",
+   "hits": 7,
+   "valid": 6,
+   "excluded": 1,
+   "uncertain": 0,
+   "k12_explicit": 2,
+   "ai_topic": 2
+  },
+  {
+   "id": "T21",
+   "tier": "A4",
+   "hits": 1,
+   "valid": 1,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 0
+  },
+  {
+   "id": "S06",
+   "tier": "B",
+   "hits": 8,
+   "valid": 8,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 7
+  },
+  {
+   "id": "S07",
+   "tier": "B",
+   "hits": 5,
+   "valid": 5,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 5
+  },
+  {
+   "id": "S08",
+   "tier": "B",
+   "hits": 10,
+   "valid": 10,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 3,
+   "ai_topic": 4
+  },
+  {
+   "id": "S09",
+   "tier": "B",
+   "hits": 1,
+   "valid": 1,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 1
+  },
+  {
+   "id": "S10",
+   "tier": "B",
+   "hits": 1,
+   "valid": 1,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 1,
+   "ai_topic": 1
+  },
+  {
+   "id": "S11",
+   "tier": "B",
+   "hits": 1,
+   "valid": 1,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 1,
+   "ai_topic": 1
+  },
+  {
+   "id": "S13",
+   "tier": "B",
+   "hits": 5,
+   "valid": 5,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 3
+  },
+  {
+   "id": "S14",
+   "tier": "B",
+   "hits": 3,
+   "valid": 3,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 2,
+   "ai_topic": 1
+  },
+  {
+   "id": "S15",
+   "tier": "B",
+   "hits": 1,
+   "valid": 1,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 0
+  },
+  {
+   "id": "H02",
+   "tier": "H",
+   "hits": 2,
+   "valid": 2,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 1
+  },
+  {
+   "id": "H03",
+   "tier": "H",
+   "hits": 1,
+   "valid": 1,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 1
+  },
+  {
+   "id": "H05",
+   "tier": "H",
+   "hits": 2,
+   "valid": 2,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 1
+  },
+  {
+   "id": "H08",
+   "tier": "H",
+   "hits": 3,
+   "valid": 3,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 0
+  },
+  {
+   "id": "H09",
+   "tier": "H",
+   "hits": 4,
+   "valid": 4,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 4
+  },
+  {
+   "id": "H10",
+   "tier": "H",
+   "hits": 4,
+   "valid": 4,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 3
+  },
+  {
+   "id": "H11",
+   "tier": "H",
+   "hits": 14,
+   "valid": 14,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 3,
+   "ai_topic": 10
+  },
+  {
+   "id": "H17",
+   "tier": "H",
+   "hits": 3,
+   "valid": 3,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 0
+  },
+  {
+   "id": "H18",
+   "tier": "H",
+   "hits": 3,
+   "valid": 3,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 1
+  },
+  {
+   "id": "H19",
+   "tier": "H",
+   "hits": 3,
+   "valid": 3,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 0
+  },
+  {
+   "id": "H21",
+   "tier": "H",
+   "hits": 1,
+   "valid": 1,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 1,
+   "ai_topic": 0
+  },
+  {
+   "id": "H25",
+   "tier": "H",
+   "hits": 6,
+   "valid": 6,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 4,
+   "ai_topic": 1
+  },
+  {
+   "id": "H26",
+   "tier": "H",
+   "hits": 5,
+   "valid": 5,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 1,
+   "ai_topic": 2
+  },
+  {
+   "id": "H27",
+   "tier": "H",
+   "hits": 2,
+   "valid": 2,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 1,
+   "ai_topic": 1
+  },
+  {
+   "id": "H29",
+   "tier": "H",
+   "hits": 2,
+   "valid": 2,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 1,
+   "ai_topic": 2
+  },
+  {
+   "id": "H30",
+   "tier": "H",
+   "hits": 5,
+   "valid": 5,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 1,
+   "ai_topic": 2
+  },
+  {
+   "id": "H31",
+   "tier": "H",
+   "hits": 2,
+   "valid": 0,
+   "excluded": 2,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 0
+  },
+  {
+   "id": "H32",
+   "tier": "H",
+   "hits": 9,
+   "valid": 9,
+   "excluded": 0,
+   "uncertain": 0,
+   "k12_explicit": 0,
+   "ai_topic": 1
+  }
+ ],
+ "totals": {
+  "hits": 171,
+  "scholars_with_hits": 42,
+  "scholars_total": 62,
+  "scholars_zero_hits": 20,
+  "hit_valid": 167,
+  "hit_excluded": 3,
+  "hit_uncertain": 1,
+  "unique_works": 149,
+  "multi_scholar_works": 19,
+  "valid_works": 145,
+  "k12_explicit_works": 32,
+  "k12_explicit_ratio": 0.221,
+  "k12_not_k12_works": 59,
+  "k12_unclear_works": 54,
+  "ai_topic_valid_works": 67,
+  "k12_explicit_and_ai_topic_works": 11,
+  "kb_duplicate_works": 2,
+  "kb_duplicate_ids": [
+   "KB-2026-0009",
+   "KB-2027-0001"
+  ],
+  "supplementary_or_version_records": 4,
+  "note": "去重以 OpenAlex work ID 為準；另有 4 筆為同一研究的資料集／附加檔或重複版本（W7214221190、W7214649716、W7212011025、W7202055169），未再合併。"
+ }
+}

@@ -1,0 +1,2729 @@
+[
+ {
+  "scholar": "S01",
+  "tier": "A1",
+  "expected_affiliation": "University College London 教授（Learning and Artificial Intelligence）；*British Journal of Educational Technology* 主編；UNESCO",
+  "work": "W7204746454",
+  "doi": "10.5281/zenodo.22199907",
+  "title": "Teacher-Facing AI in Education: A Systematic Review of Impact and A Taxonomy of Teacher-AI Teaming",
+  "date": "2026-08-31",
+  "type": "preprint",
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "matched_author_institutions": [
+   "University College London"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S01",
+  "tier": "A1",
+  "expected_affiliation": "University College London 教授（Learning and Artificial Intelligence）；*British Journal of Educational Technology* 主編；UNESCO",
+  "work": "W7205005667",
+  "doi": "10.1002/jcal.70317",
+  "title": "Enhancing Peer Exposure and Creating Opportunities for Bridging Social Capital Through an AI ‐Generated Summary‐Driven Learning Design in Online Discussion Forums",
+  "date": "2026-09-01",
+  "type": "article",
+  "venue": "Journal of Computer Assisted Learning",
+  "matched_author_institutions": [
+   "University College London"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S01",
+  "tier": "A1",
+  "expected_affiliation": "University College London 教授（Learning and Artificial Intelligence）；*British Journal of Educational Technology* 主編；UNESCO",
+  "work": "W7211886607",
+  "doi": "10.1038/s41598-026-70854-2",
+  "title": "A personalized federated deep learning framework predicts student performance in large-scale examinations across heterogeneous regional distributions",
+  "date": "2026-09-07",
+  "type": "article",
+  "venue": "Scientific Reports",
+  "matched_author_institutions": [
+   "University College London"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7171822902",
+  "doi": "10.1016/j.caeai.2026.100655",
+  "title": "The agency gap in AI-supported writing: How reactive and proactive agent designs shape multimodal reasoning",
+  "date": "2026-07-30",
+  "type": "article",
+  "venue": "Computers and Education Artificial Intelligence",
+  "matched_author_institutions": [
+   "Monash University",
+   "University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7204957647",
+  "doi": "10.1016/j.compedu.2026.105747",
+  "title": "Trace-based measurement of self-regulated learning in primary mathematics: Implementation and validation within an adaptive learning platform",
+  "date": "2026-09-01",
+  "type": "article",
+  "venue": "Computers & Education",
+  "matched_author_institutions": [
+   "Monash University",
+   "University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7125259411",
+  "doi": "10.1038/s41597-026-08054-w",
+  "title": "Dataset of GenAI-Assisted Information Problem Solving in Education",
+  "date": "2026-08-12",
+  "type": "data-paper",
+  "venue": "Scientific Data",
+  "matched_author_institutions": [
+   "University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7153057309",
+  "doi": "10.1016/j.caeai.2026.100684",
+  "title": "Agentivism: a learning theory for the age of artificial intelligence",
+  "date": "2026-09-22",
+  "type": "article",
+  "venue": "Computers and Education Artificial Intelligence",
+  "matched_author_institutions": [
+   "University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7160504600",
+  "doi": "10.1016/j.caeai.2026.100680",
+  "title": "Building AI companions that prioritise learning over performance",
+  "date": "2026-09-18",
+  "type": "article",
+  "venue": "Computers and Education Artificial Intelligence",
+  "matched_author_institutions": [
+   "Monash University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7168108145",
+  "doi": "10.5281/zenodo.21319936",
+  "title": "Dynamic prediction of final diagnostic outcomes to support formative triage in AI-simulated patient encounters",
+  "date": "2026-07-12",
+  "type": "software",
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "matched_author_institutions": [
+   "Monash University",
+   "University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7171362791",
+  "doi": "10.1002/jcal.70300",
+  "title": "Human or GenAI Support? Conditions Impacting Students' Strategy Choices in an Essay Revision Task",
+  "date": "2026-07-27",
+  "type": "article",
+  "venue": "Journal of Computer Assisted Learning",
+  "matched_author_institutions": [
+   "Monash University",
+   "University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7172254328",
+  "doi": "10.21203/rs.3.rs-10472890/v1",
+  "title": "Beyond Socratic Questioning: Designing GenAI-mediated Metacognitive Scaffolding for Clinical Reasoning in Medical Education",
+  "date": "2026-08-03",
+  "type": "preprint",
+  "venue": "Research Square",
+  "matched_author_institutions": [
+   "University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7196945462",
+  "doi": "10.1145/3770855.3818637",
+  "title": "KDD 2026 Special Day on AI for Education",
+  "date": "2026-08-06",
+  "type": "conference-paper",
+  "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+  "matched_author_institutions": [
+   "Monash University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7203926372",
+  "doi": "10.1016/j.caeai.2026.100671",
+  "title": "Reconceptualizing community of inquiry in the age of generative artificial intelligence",
+  "date": "2026-08-21",
+  "type": "article",
+  "venue": "Computers and Education Artificial Intelligence",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7204005753",
+  "doi": "10.1002/jcal.70310",
+  "title": "Emergent Learner Agency in Implicit Human– AI Collaboration: How Supportive and Contrarian AI Personas Reshape Interaction",
+  "date": "2026-08-22",
+  "type": "article",
+  "venue": "Journal of Computer Assisted Learning",
+  "matched_author_institutions": [
+   "Monash University",
+   "University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7204490523",
+  "doi": "10.18608/jla.2026.9145",
+  "title": "Applying Generative AI to the Learning Analytics Cycle to Support Competency Development in Health Professions Education",
+  "date": "2026-08-27",
+  "type": "article",
+  "venue": "Journal of Learning Analytics",
+  "matched_author_institutions": [
+   "Monash University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7213886153",
+  "doi": "10.1002/jcal.70331",
+  "title": "Trace Data of Secondary Students and Linguistic Analysis to Predict Learner Performance in a Multi‐Text Writing Task",
+  "date": "2026-09-21",
+  "type": "article",
+  "venue": "Journal of Computer Assisted Learning",
+  "matched_author_institutions": [
+   "Monash University",
+   "University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7213988584",
+  "doi": "10.1007/978-3-032-37979-5_31",
+  "title": "Decoding the Dashboard: Data Comics to Support Students’ Understanding of Learning Analytics Visualisations",
+  "date": "2026-10-06",
+  "type": "conference-paper",
+  "venue": "Lecture notes in computer science",
+  "matched_author_institutions": [
+   "Monash University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7214145520",
+  "doi": "10.1080/10447318.2026.2731321",
+  "title": "Comparing GenAI Summaries Versus Chatbots for Supporting Reflection in Healthcare Simulation",
+  "date": "2026-09-24",
+  "type": "article",
+  "venue": "International Journal of Human-Computer Interaction",
+  "matched_author_institutions": [
+   "Monash University",
+   "University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S02",
+  "tier": "A1",
+  "expected_affiliation": "香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件）",
+  "work": "W7220443719",
+  "doi": "10.1007/978-3-032-37982-5_24",
+  "title": "Designing Support for Written Reflections Using GenAI Summaries and Chatbots",
+  "date": "2026-10-05",
+  "type": "conference-paper",
+  "venue": "Lecture notes in computer science",
+  "matched_author_institutions": [
+   "Monash University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "S03",
+  "tier": "A1",
+  "expected_affiliation": "Radboud University 教授；荷蘭國家教育 AI 實驗室（NOLAI）主任",
+  "work": "W7172215497",
+  "doi": "10.31234/osf.io/s7dvk_v2",
+  "title": "A Metacognitive Approach to Learning and Performance in Human-AI Interaction",
+  "date": "2026-08-02",
+  "type": "preprint",
+  "venue": null,
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S03",
+  "tier": "A1",
+  "expected_affiliation": "Radboud University 教授；荷蘭國家教育 AI 實驗室（NOLAI）主任",
+  "work": "W7201856018",
+  "doi": "10.1016/j.tate.2026.105768",
+  "title": "From data to action: a systematic review of what teachers need to act on static and real-time student data in primary education",
+  "date": "2026-08-07",
+  "type": "review",
+  "venue": "Teaching and Teacher Education",
+  "matched_author_institutions": [
+   "Radboud University Nijmegen"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S03",
+  "tier": "A1",
+  "expected_affiliation": "Radboud University 教授；荷蘭國家教育 AI 實驗室（NOLAI）主任",
+  "work": "W7220844460",
+  "doi": "10.1080/0144929x.2026.2740744",
+  "title": "Different lenses on human-AI collaboration: towards a comprehensive view on hybrid intelligence in education",
+  "date": "2026-10-07",
+  "type": "article",
+  "venue": "Behaviour and Information Technology",
+  "matched_author_institutions": [
+   "Radboud University Nijmegen"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S04",
+  "tier": "A1",
+  "expected_affiliation": "東芬蘭大學副教授；Generation AI 專案工作包主持人（議程場次：Towards Transformative AI Education in Finland；整理文件未收錄其簡報）",
+  "work": "W7214097358",
+  "doi": "10.1016/j.caeo.2026.100422",
+  "title": "Navigating AI’s educational future: expert scenarios and implications for teaching and teacher preparation",
+  "date": "2026-09-23",
+  "type": "article",
+  "venue": "Computers and Education Open",
+  "matched_author_institutions": [
+   "University of Eastern Finland"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S04",
+  "tier": "A1",
+  "expected_affiliation": "東芬蘭大學副教授；Generation AI 專案工作包主持人（議程場次：Towards Transformative AI Education in Finland；整理文件未收錄其簡報）",
+  "work": "W7214976805",
+  "doi": "10.15388/infedu.2601.025",
+  "title": "Understanding AI Mechanisms Supports Disciplinary Reasoning and Ethical Judgment in K–12 AI Literacy Education",
+  "date": "2026-09-30",
+  "type": "article",
+  "venue": "Informatics in Education",
+  "matched_author_institutions": [
+   "Finland University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T01",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼校長；教育部 AI 人才方舟計畫推動營運中心主持人",
+  "work": "W7204957647",
+  "doi": "10.1016/j.compedu.2026.105747",
+  "title": "Trace-based measurement of self-regulated learning in primary mathematics: Implementation and validation within an adaptive learning platform",
+  "date": "2026-09-01",
+  "type": "article",
+  "venue": "Computers & Education",
+  "matched_author_institutions": [
+   "National Taichung University of Education"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T02",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼校務中心主任；AI 人才方舟計畫推動營運中心協同主持人",
+  "work": "W7168294435",
+  "doi": "10.3389/fpsyg.2026.1877695",
+  "title": "Educational escape games in emotion education: effects on learning achievement, emotion regulation strategies, and achievement emotions among upper elementary students",
+  "date": "2026-07-14",
+  "type": "article",
+  "venue": "Frontiers in Psychology",
+  "matched_author_institutions": [
+   "National Taichung University of Education"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T02",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼校務中心主任；AI 人才方舟計畫推動營運中心協同主持人",
+  "work": "W7204249255",
+  "doi": "10.5281/zenodo.22108724",
+  "title": "Anonymized Phase II Learning Outcomes for a GenAI-Supported Elementary Mathematics Study",
+  "date": "2026-08-26",
+  "type": "dataset",
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "matched_author_institutions": [
+   "National Taichung University of Education"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7171626001",
+  "doi": "10.1007/s11423-026-10667-2",
+  "title": "A robot-assisted multimodal health education model for primary school students based on the ARCS framework",
+  "date": "2026-07-29",
+  "type": "article",
+  "venue": "Educational Technology Research and Development",
+  "matched_author_institutions": [
+   "National Taichung University of Education",
+   "National Taiwan University of Science and Technology",
+   "Yuan Ze University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7211956451",
+  "doi": "10.1504/ijmlo.2028.10080944",
+  "title": "Enhancing student outcomes and teacher-parent-student interaction through a digital game-based CQPF framework: comprehension, questioning, patterning and feedback",
+  "date": "2026-09-08",
+  "type": "article",
+  "venue": "International Journal of Mobile Learning and Organisation",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7213929609",
+  "doi": "10.1007/s44163-026-02234-8",
+  "title": "AI supported doodling and gallery walk defence provide visible evidence of student reasoning in higher education assessment",
+  "date": "2026-09-21",
+  "type": "article",
+  "venue": "Discover Artificial Intelligence",
+  "matched_author_institutions": [
+   "National Taichung University of Education",
+   "National Taiwan University of Science and Technology",
+   "Yuan Ze University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7207525809",
+  "doi": "10.1007/s11423-026-10709-9",
+  "title": "Differentiated impacts of GenAI-supported self-regulated game-based science learning: a behavioural and epistemic network analysis of high- and low-achieving students",
+  "date": "2026-09-03",
+  "type": "article",
+  "venue": "Educational Technology Research and Development",
+  "matched_author_institutions": [
+   "National Taichung University of Education",
+   "National Taiwan University of Science and Technology",
+   "Yuan Ze University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7170760729",
+  "doi": "10.1186/s12909-026-10000-8",
+  "title": "Effects of an embodied cognitive learning-based inductive venipuncture arm simulator on nursing internship trainees’ learning achievement, motivation, self-efficacy, and anxiety",
+  "date": "2026-07-24",
+  "type": "article",
+  "venue": "BMC Medical Education",
+  "matched_author_institutions": [
+   "National Taichung University of Education",
+   "National Taiwan University of Science and Technology",
+   "Yuan Ze University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7172533075",
+  "doi": "10.1007/s10956-026-10353-1",
+  "title": "Robotic Enactment of Scientific History: Supporting Contextual Chemistry Learning through Embodied Storytelling",
+  "date": "2026-08-05",
+  "type": "article",
+  "venue": "Journal of Science Education and Technology",
+  "matched_author_institutions": [
+   "National Taichung University of Education",
+   "National Taiwan University of Science and Technology",
+   "Yuan Ze University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7169727871",
+  "doi": "10.1002/jcal.70296",
+  "title": "Self‐Explanation‐Guided Virtual Museum Learning for Knowledge Co‐Construction Based on the Constructivist Framework: A Randomised Control Study",
+  "date": "2026-07-19",
+  "type": "article",
+  "venue": "Journal of Computer Assisted Learning",
+  "matched_author_institutions": [
+   "National Taichung University of Education",
+   "National Taiwan University of Science and Technology",
+   "Yuan Ze University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7212683916",
+  "doi": "10.1016/j.tsc.2026.102378",
+  "title": "Enhancing college students’ reflective thinking through online visualized collaborative argumentation: An exploratory study",
+  "date": "2026-09-14",
+  "type": "article",
+  "venue": "Thinking Skills and Creativity",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7203890741",
+  "doi": "10.1177/07356331261479576",
+  "title": "Co-Reflection Versus Self-Reflection in Graphic Organizer-Facilitated Training in the Metaverse: Evidence From Students’ Knowledge Gains, Perceptions, and Case-Handling Performances",
+  "date": "2026-08-21",
+  "type": "article",
+  "venue": "Journal of Educational Computing Research",
+  "matched_author_institutions": [
+   "National Taichung University of Education",
+   "National Taiwan University of Science and Technology",
+   "Yuan Ze University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7203719885",
+  "doi": "10.1007/s11423-026-10694-z",
+  "title": "Investigating students’ self-efficacy, cognitive load, and emotions across motivational clusters in the metaverse project-supported ICAP model approach",
+  "date": "2026-08-18",
+  "type": "article",
+  "venue": "Educational Technology Research and Development",
+  "matched_author_institutions": [
+   "National Taichung University of Education",
+   "National Taiwan University of Science and Technology",
+   "Yuan Ze University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7219629398",
+  "doi": "10.1007/s10639-026-14165-z",
+  "title": "Physical, virtual, and hybrid programming modalities in early childhood education: a randomized controlled study of computational thinking and programming behaviors",
+  "date": "2026-10-05",
+  "type": "article",
+  "venue": "Education and Information Technologies",
+  "matched_author_institutions": [
+   "National Taichung University of Education",
+   "National Taiwan University of Science and Technology",
+   "Yuan Ze University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7203491779",
+  "doi": "10.1177/07356331261477592",
+  "title": "Virtual Reality-Facilitated Creative Thinking Mapping to Enhance Performance Skills, Choreographic Creative Expression, and Collective Self-Efficacy in Performing Arts Programs: An Experiential Learning Theory Perspective",
+  "date": "2026-08-13",
+  "type": "article",
+  "venue": "Journal of Educational Computing Research",
+  "matched_author_institutions": [
+   "National Taichung University of Education",
+   "National Taiwan University of Science and Technology",
+   "National Yunlin University of Science and Technology",
+   "Yuan Ze University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T03",
+  "tier": "A2",
+  "expected_affiliation": "國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授）",
+  "work": "W7201988286",
+  "doi": "10.1111/bjet.70083",
+  "title": "From emotion regulation to academic success: A self‐determination theory‐based emotional agent‐mediated approach",
+  "date": "2026-08-07",
+  "type": "article",
+  "venue": "British Journal of Educational Technology",
+  "matched_author_institutions": [
+   "National Taichung University of Education",
+   "National Taiwan University of Science and Technology"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T06",
+  "tier": "A2",
+  "expected_affiliation": "國立中央大學資訊工程學系講座教授、網路學習科技研究所教授",
+  "work": "W7204581279",
+  "doi": "10.1016/j.compedu.2026.105744",
+  "title": "The design framework for pedagogical agents supporting constructivist learning with generative AI",
+  "date": "2026-08-01",
+  "type": "article",
+  "venue": "Computers & Education",
+  "matched_author_institutions": [
+   "National Central University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T06",
+  "tier": "A2",
+  "expected_affiliation": "國立中央大學資訊工程學系講座教授、網路學習科技研究所教授",
+  "work": "W7171934085",
+  "doi": "10.1007/s10956-025-10290-5",
+  "title": "Enhancing Science Simulation-Based Learning with Dialogic Feedback from Generative AI Agents",
+  "date": "2026-07-31",
+  "type": "article",
+  "venue": "Journal of Science Education and Technology",
+  "matched_author_institutions": [
+   "National Central University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T06",
+  "tier": "A2",
+  "expected_affiliation": "國立中央大學資訊工程學系講座教授、網路學習科技研究所教授",
+  "work": "W7214167213",
+  "doi": "10.1007/s11423-026-10723-x",
+  "title": "Operationalizing IDC-based reading activities with GenAI pedagogical agents to foster reading interest and narrative performance",
+  "date": "2026-09-24",
+  "type": "article",
+  "venue": "Educational Technology Research and Development",
+  "matched_author_institutions": [
+   "National Central University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "S18",
+  "tier": "A3",
+  "expected_affiliation": "京都大學學術情報媒體中心教授",
+  "work": "W7169688586",
+  "doi": "10.1007/978-3-032-34157-0_13",
+  "title": "Penny: Transition Network Analysis of Learner-Chatbot Interactions in Scaffolded EFL Writing",
+  "date": "2026-07-16",
+  "type": "preprint",
+  "venue": "arXiv (Cornell University)",
+  "matched_author_institutions": [
+   "Academic Center for Computing and Media Studies, Kyoto University",
+   "Kyoto University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S18",
+  "tier": "A3",
+  "expected_affiliation": "京都大學學術情報媒體中心教授",
+  "work": "W7171525181",
+  "doi": "10.1016/j.caeo.2026.100402",
+  "title": "Which factors matter in data-driven peer learning: Social intimacy, proficiency gaps, or selection autonomy?",
+  "date": "2026-07-28",
+  "type": "article",
+  "venue": "Computers and Education Open",
+  "matched_author_institutions": [
+   "Academic Center for Computing and Media Studies, Kyoto University",
+   "Kyoto University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S18",
+  "tier": "A3",
+  "expected_affiliation": "京都大學學術情報媒體中心教授",
+  "work": "W7202202692",
+  "doi": "10.48550/arxiv.2608.09289",
+  "title": "Accurate but Natural? Diagnosing Grammatical and Idiomatic Gaps in Japanese EFL Writing",
+  "date": "2026-08-10",
+  "type": "preprint",
+  "venue": "arXiv (Cornell University)",
+  "matched_author_institutions": [
+   "Academic Center for Computing and Media Studies, Kyoto University",
+   "Kyoto University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S18",
+  "tier": "A3",
+  "expected_affiliation": "京都大學學術情報媒體中心教授",
+  "work": "W7211956722",
+  "doi": "10.58459/rptel.2027.22030",
+  "title": "Social process awareness and its preliminary data analysis of regular assessment results",
+  "date": "2026-09-08",
+  "type": "article",
+  "venue": "Research and Practice in Technology Enhanced Learning",
+  "matched_author_institutions": [
+   "Academic Center for Computing and Media Studies, Kyoto University",
+   "Kyoto University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S18",
+  "tier": "A3",
+  "expected_affiliation": "京都大學學術情報媒體中心教授",
+  "work": "W7213557113",
+  "doi": "10.1007/s10758-026-10031-6",
+  "title": "Interaction Behaviors and Social Network Expansion in Online Cross-Class Peer Tutoring: An Empirical Study",
+  "date": "2026-09-18",
+  "type": "article",
+  "venue": "Technology Knowledge and Learning",
+  "matched_author_institutions": [
+   "Academic Center for Computing and Media Studies, Kyoto University",
+   "Kyoto University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S18",
+  "tier": "A3",
+  "expected_affiliation": "京都大學學術情報媒體中心教授",
+  "work": "W7220410081",
+  "doi": "10.48550/arxiv.2610.02720",
+  "title": "ReLEAF: A Socio-Technical Framework Bridging Custodians and Researchers for Trustworthy Data Sharing",
+  "date": "2026-10-02",
+  "type": "preprint",
+  "venue": "arXiv (Cornell University)",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S20",
+  "tier": "A3",
+  "expected_affiliation": "南洋理工大學（論壇所載 Doctor）",
+  "work": "W7172207433",
+  "doi": "10.35542/osf.io/59ryn_v1",
+  "title": "Reconfiguring Assessment in the Age of AI: Making Learning Visible through Meta-Task Awareness (MTA)",
+  "date": "2026-08-03",
+  "type": "preprint",
+  "venue": null,
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S24",
+  "tier": "A3",
+  "expected_affiliation": "香港理工大學講座教授、高等教育研究及發展院院長",
+  "work": "W7170800849",
+  "doi": "10.1007/s13178-026-01396-5",
+  "title": "Targeted Critical Thinking Intervention Reduces Prejudice Against Lesbians and Gay Men: The Moderating Role of Internalized Motivation to Respond Without Prejudice",
+  "date": "2026-07-24",
+  "type": "article",
+  "venue": "Sexuality Research and Social Policy",
+  "matched_author_institutions": [
+   "Hong Kong Polytechnic University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "S24",
+  "tier": "A3",
+  "expected_affiliation": "香港理工大學講座教授、高等教育研究及發展院院長",
+  "work": "W7204946642",
+  "doi": "10.1186/s40359-026-05500-7",
+  "title": "Effects of a brief sexual-orientation-focused instructional intervention incorporating critical-thinking elements on immediate self-reported prejudice against lesbians and gay men: Baseline-adjusted evidence from a randomized experiment",
+  "date": "2026-09-01",
+  "type": "article",
+  "venue": "BMC Psychology",
+  "matched_author_institutions": [
+   "Hong Kong Polytechnic University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T10",
+  "tier": "A4",
+  "expected_affiliation": "2023 國立中央大學教授；2025 教育部資訊及科技教育司司長",
+  "work": "W7204072437",
+  "doi": "10.1016/j.caeai.2026.100661",
+  "title": "Measuring Acceptance of Age-Tiered AI Literacy Guidebooks: A Developmentally Informed Study of K-12 Students and Teachers",
+  "date": "2026-08-01",
+  "type": "article",
+  "venue": "Computers and Education Artificial Intelligence",
+  "matched_author_institutions": [],
+  "kb_duplicate": "KB-2026-0009",
+  "has_abstract": false
+ },
+ {
+  "scholar": "T14",
+  "tier": "A4",
+  "expected_affiliation": "國立臺灣師範大學講座教授",
+  "work": "W7204581279",
+  "doi": "10.1016/j.compedu.2026.105744",
+  "title": "The design framework for pedagogical agents supporting constructivist learning with generative AI",
+  "date": "2026-08-01",
+  "type": "article",
+  "venue": "Computers & Education",
+  "matched_author_institutions": [
+   "National Taiwan Normal University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T14",
+  "tier": "A4",
+  "expected_affiliation": "國立臺灣師範大學講座教授",
+  "work": "W7171087609",
+  "doi": "10.17605/osf.io/da6sz",
+  "title": "Registration A – AIVTA-HK Measurement Readines",
+  "date": "2026-07-22",
+  "type": "preprint",
+  "venue": null,
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T14",
+  "tier": "A4",
+  "expected_affiliation": "國立臺灣師範大學講座教授",
+  "work": "W7214720750",
+  "doi": "10.1016/j.compedu.2026.105755",
+  "title": "Fifty Years of Topic Development, Thematic Combination, and AI’s Evolving Reach in Computers & Education",
+  "date": "2026-09-01",
+  "type": "article",
+  "venue": "Computers & Education",
+  "matched_author_institutions": [
+   "National Taiwan Normal University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T14",
+  "tier": "A4",
+  "expected_affiliation": "國立臺灣師範大學講座教授",
+  "work": "W7214997051",
+  "doi": "10.1016/j.compedu.2026.105756",
+  "title": "Mapping fifty years of technology-enhanced science and mathematics education in Computers & Education: Trends and connections with technologies, functions, and theories",
+  "date": "2026-09-01",
+  "type": "article",
+  "venue": "Computers & Education",
+  "matched_author_institutions": [
+   "National Taiwan Normal University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T19",
+  "tier": "A4",
+  "expected_affiliation": "國立臺灣師範大學講座教授",
+  "work": "W7168267228",
+  "doi": "10.1080/10494820.2026.2691906",
+  "title": "Preparing preservice teachers for generative AI: the role of conceptual instruction in shaping epistemic beliefs and self-regulated learning",
+  "date": "2026-07-13",
+  "type": "article",
+  "venue": "Interactive Learning Environments",
+  "matched_author_institutions": [
+   "Chung Yuan Christian University",
+   "National Taiwan Normal University",
+   "State University of Malang"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T19",
+  "tier": "A4",
+  "expected_affiliation": "國立臺灣師範大學講座教授",
+  "work": "W7171301771",
+  "doi": "10.29333/pr/19019",
+  "title": "Teachers’ views on web-based tools to support STEM education: A case study on the CloudClassRoom platform",
+  "date": "2026-07-26",
+  "type": "article",
+  "venue": "Pedagogical Research",
+  "matched_author_institutions": [
+   "National Taiwan Normal University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T19",
+  "tier": "A4",
+  "expected_affiliation": "國立臺灣師範大學講座教授",
+  "work": "W7172203962",
+  "doi": "10.1016/j.ssaho.2026.103342",
+  "title": "Development and validation of the student nature connection scale for assessing pro-biodiversity conservation behavior among Indonesian high school students",
+  "date": "2026-08-02",
+  "type": "article",
+  "venue": "Social Sciences & Humanities Open",
+  "matched_author_institutions": [
+   "National Taiwan Normal University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T19",
+  "tier": "A4",
+  "expected_affiliation": "國立臺灣師範大學講座教授",
+  "work": "W7204140364",
+  "doi": "10.1016/j.ssaho.2026.103488",
+  "title": "Learning and emotional changes during case-based learning: A multimethod study with exploratory psychobiological outcomes",
+  "date": "2026-08-24",
+  "type": "article",
+  "venue": "Social Sciences & Humanities Open",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T19",
+  "tier": "A4",
+  "expected_affiliation": "國立臺灣師範大學講座教授",
+  "work": "W7211987137",
+  "doi": "10.1016/j.bios.2026.119215",
+  "title": "Hand-powered micro-slit–gated microfluidics for concurrent blood typing and hematocrit estimation",
+  "date": "2026-09-09",
+  "type": "article",
+  "venue": "Biosensors and Bioelectronics",
+  "matched_author_institutions": [
+   "National Taiwan University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "T19",
+  "tier": "A4",
+  "expected_affiliation": "國立臺灣師範大學講座教授",
+  "work": "W7213555713",
+  "doi": "10.29333/ejmste/19279",
+  "title": "Artificial intelligence in science education for SDG 4: A systematic review of AI interventions for ESD and 21st-century competencies",
+  "date": "2026-09-18",
+  "type": "review",
+  "venue": "Eurasia Journal of Mathematics Science and Technology Education",
+  "matched_author_institutions": [
+   "National Taiwan Normal University",
+   "State University of Malang"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T19",
+  "tier": "A4",
+  "expected_affiliation": "國立臺灣師範大學講座教授",
+  "work": "W7214128017",
+  "doi": "10.1007/s10763-026-10730-7",
+  "title": "From Content Knowledge to Informal Reasoning: The Mediation of Modeling Competence in Socio-scientific Issues",
+  "date": "2026-09-23",
+  "type": "article",
+  "venue": "International Journal of Science and Mathematics Education",
+  "matched_author_institutions": [
+   "Chung Yuan Christian University",
+   "National Taiwan Normal University",
+   "State University of Malang"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "T21",
+  "tier": "A4",
+  "expected_affiliation": "國立臺灣科技大學特聘教授",
+  "work": "W7220393590",
+  "doi": "10.3389/fpsyg.2026.1950695",
+  "title": "Beyond single scaffolding: a multidimensional scaffolding framework for flow-driven Game-Based Learning",
+  "date": "2026-10-05",
+  "type": "article",
+  "venue": "Frontiers in Psychology",
+  "matched_author_institutions": [
+   "National Taiwan University of Science and Technology"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S06",
+  "tier": "B",
+  "expected_affiliation": "清華大學助理教授（ORCID；Monash 研究員任職於 2025 年結束）",
+  "work": "W7213988584",
+  "doi": "10.1007/978-3-032-37979-5_31",
+  "title": "Decoding the Dashboard: Data Comics to Support Students’ Understanding of Learning Analytics Visualisations",
+  "date": "2026-10-06",
+  "type": "conference-paper",
+  "venue": "Lecture notes in computer science",
+  "matched_author_institutions": [
+   "Tsinghua University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "S06",
+  "tier": "B",
+  "expected_affiliation": "清華大學助理教授（ORCID；Monash 研究員任職於 2025 年結束）",
+  "work": "W7160504600",
+  "doi": "10.1016/j.caeai.2026.100680",
+  "title": "Building AI companions that prioritise learning over performance",
+  "date": "2026-09-18",
+  "type": "article",
+  "venue": "Computers and Education Artificial Intelligence",
+  "matched_author_institutions": [
+   "Tsinghua University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S06",
+  "tier": "B",
+  "expected_affiliation": "清華大學助理教授（ORCID；Monash 研究員任職於 2025 年結束）",
+  "work": "W7153057309",
+  "doi": "10.1016/j.caeai.2026.100684",
+  "title": "Agentivism: a learning theory for the age of artificial intelligence",
+  "date": "2026-09-22",
+  "type": "article",
+  "venue": "Computers and Education Artificial Intelligence",
+  "matched_author_institutions": [
+   "Tsinghua University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S06",
+  "tier": "B",
+  "expected_affiliation": "清華大學助理教授（ORCID；Monash 研究員任職於 2025 年結束）",
+  "work": "W7172215497",
+  "doi": "10.31234/osf.io/s7dvk_v2",
+  "title": "A Metacognitive Approach to Learning and Performance in Human-AI Interaction",
+  "date": "2026-08-02",
+  "type": "preprint",
+  "venue": null,
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S06",
+  "tier": "B",
+  "expected_affiliation": "清華大學助理教授（ORCID；Monash 研究員任職於 2025 年結束）",
+  "work": "W7214221190",
+  "doi": "10.6084/m9.figshare.33980812",
+  "title": "Comparing GenAI Summaries Versus Chatbots for Supporting Reflection in Healthcare Simulation",
+  "date": "2026-09-24",
+  "type": "dataset",
+  "venue": "Figshare",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S06",
+  "tier": "B",
+  "expected_affiliation": "清華大學助理教授（ORCID；Monash 研究員任職於 2025 年結束）",
+  "work": "W7214145520",
+  "doi": "10.1080/10447318.2026.2731321",
+  "title": "Comparing GenAI Summaries Versus Chatbots for Supporting Reflection in Healthcare Simulation",
+  "date": "2026-09-24",
+  "type": "article",
+  "venue": "International Journal of Human-Computer Interaction",
+  "matched_author_institutions": [
+   "Tsinghua University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S06",
+  "tier": "B",
+  "expected_affiliation": "清華大學助理教授（ORCID；Monash 研究員任職於 2025 年結束）",
+  "work": "W7204005753",
+  "doi": "10.1002/jcal.70310",
+  "title": "Emergent Learner Agency in Implicit Human– AI Collaboration: How Supportive and Contrarian AI Personas Reshape Interaction",
+  "date": "2026-08-22",
+  "type": "article",
+  "venue": "Journal of Computer Assisted Learning",
+  "matched_author_institutions": [
+   "Monash University",
+   "Tsinghua University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S06",
+  "tier": "B",
+  "expected_affiliation": "清華大學助理教授（ORCID；Monash 研究員任職於 2025 年結束）",
+  "work": "W7171822902",
+  "doi": "10.1016/j.caeai.2026.100655",
+  "title": "The agency gap in AI-supported writing: How reactive and proactive agent designs shape multimodal reasoning",
+  "date": "2026-07-30",
+  "type": "article",
+  "venue": "Computers and Education Artificial Intelligence",
+  "matched_author_institutions": [
+   "Tsinghua University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S07",
+  "tier": "B",
+  "expected_affiliation": "Peking University",
+  "work": "W7168108145",
+  "doi": "10.5281/zenodo.21319936",
+  "title": "Dynamic prediction of final diagnostic outcomes to support formative triage in AI-simulated patient encounters",
+  "date": "2026-07-12",
+  "type": "software",
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "matched_author_institutions": [
+   "Peking University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S07",
+  "tier": "B",
+  "expected_affiliation": "Peking University",
+  "work": "W7171362791",
+  "doi": "10.1002/jcal.70300",
+  "title": "Human or GenAI Support? Conditions Impacting Students' Strategy Choices in an Essay Revision Task",
+  "date": "2026-07-27",
+  "type": "article",
+  "venue": "Journal of Computer Assisted Learning",
+  "matched_author_institutions": [
+   "Monash University",
+   "Peking University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S07",
+  "tier": "B",
+  "expected_affiliation": "Peking University",
+  "work": "W7172215497",
+  "doi": "10.31234/osf.io/s7dvk_v2",
+  "title": "A Metacognitive Approach to Learning and Performance in Human-AI Interaction",
+  "date": "2026-08-02",
+  "type": "preprint",
+  "venue": null,
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S07",
+  "tier": "B",
+  "expected_affiliation": "Peking University",
+  "work": "W7172254328",
+  "doi": "10.21203/rs.3.rs-10472890/v1",
+  "title": "Beyond Socratic Questioning: Designing GenAI-mediated Metacognitive Scaffolding for Clinical Reasoning in Medical Education",
+  "date": "2026-08-03",
+  "type": "preprint",
+  "venue": "Research Square",
+  "matched_author_institutions": [
+   "Peking University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "S07",
+  "tier": "B",
+  "expected_affiliation": "Peking University",
+  "work": "W7204970079",
+  "doi": "10.48550/arxiv.2608.28619",
+  "title": "From GenAI Virtual Patient Dialogue Logs to Teacher-Interpretable Process Evidence: A Learning Analytics Study in Higher Education",
+  "date": "2026-07-29",
+  "type": "preprint",
+  "venue": "arXiv (Cornell University)",
+  "matched_author_institutions": [
+   "Peking University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S08",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7169613397",
+  "doi": "10.1007/s10648-026-10202-y",
+  "title": "When Can AI Models Explain Learning? Validity Criteria for AI as Cognitive Models in Education",
+  "date": "2026-07-18",
+  "type": "article",
+  "venue": "Educational Psychology Review",
+  "matched_author_institutions": [
+   "Technical University of Munich"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S08",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7171928816",
+  "doi": "10.1016/j.lindif.2026.102978",
+  "title": "Creativity from individual differences perspectives: A systemic approach",
+  "date": "2026-07-31",
+  "type": "article",
+  "venue": "Learning and Individual Differences",
+  "matched_author_institutions": [
+   "Technical University of Munich"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "S08",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7172215497",
+  "doi": "10.31234/osf.io/s7dvk_v2",
+  "title": "A Metacognitive Approach to Learning and Performance in Human-AI Interaction",
+  "date": "2026-08-02",
+  "type": "preprint",
+  "venue": null,
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S08",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7201923738",
+  "doi": "",
+  "title": "Chapter 08: Wording Effects Associated with Negatively Phrased Items",
+  "date": "2026-08-05",
+  "type": "preprint",
+  "venue": "OSF Preprints (OSF Preprints)",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "S08",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7202189114",
+  "doi": "10.31219/osf.io/st985_v3",
+  "title": "Child-Focused Reappraisal and Rumination: Associations with Parental Health, Adolescent Academic Achievement, and Parent and Adolescent Gender",
+  "date": "2026-08-11",
+  "type": "preprint",
+  "venue": null,
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S08",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7203855572",
+  "doi": "10.18452/38313",
+  "title": "Generative Künstliche Intelligenz im Kontext von Lehren, Lernen und Beraten",
+  "date": "2026-07-21",
+  "type": "article",
+  "venue": "edoc Publication server (Humboldt University of Berlin)",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S08",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7211924208",
+  "doi": "10.1016/j.intell.2026.102060",
+  "title": "Declaring the machine: A disclosure policy on artificial intelligence for authors and reviewers",
+  "date": "2026-09-08",
+  "type": "editorial",
+  "venue": "Intelligence",
+  "matched_author_institutions": [
+   "Technical University of Munich"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "S08",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7213541668",
+  "doi": "10.1016/j.lindif.2026.102975",
+  "title": "The road ahead: How the future of learning is shaped through individual differences",
+  "date": "2026-09-18",
+  "type": "article",
+  "venue": "Learning and Individual Differences",
+  "matched_author_institutions": [
+   "Technical University of Munich"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S08",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7214563106",
+  "doi": "10.1186/s40536-026-00321-x",
+  "title": "Crossing metrics: are PISA, national tests, and grades measuring the same?",
+  "date": "2026-09-27",
+  "type": "article",
+  "venue": "Large-scale Assessments in Education",
+  "matched_author_institutions": [
+   "Technical University of Munich"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S08",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7214649716",
+  "doi": "10.6084/m9.figshare.34007498",
+  "title": "Additional file 1 of Crossing metrics: are PISA, national tests, and grades measuring the same?",
+  "date": "2026-09-27",
+  "type": "article",
+  "venue": "Figshare",
+  "matched_author_institutions": [
+   "Technical University of Munich"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S09",
+  "tier": "B",
+  "expected_affiliation": "The University of Queensland",
+  "work": "W7202344627",
+  "doi": "10.48550/arxiv.2608.11625",
+  "title": "Making AI-Generated Feedback Matter: A Large-Scale Study of Feedback Workflows and Student Enactment",
+  "date": "2026-08-12",
+  "type": "preprint",
+  "venue": "arXiv (Cornell University)",
+  "matched_author_institutions": [
+   "The University of Queensland"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S10",
+  "tier": "B",
+  "expected_affiliation": "University of Eastern Finland",
+  "work": "W7214976805",
+  "doi": "10.15388/infedu.2601.025",
+  "title": "Understanding AI Mechanisms Supports Disciplinary Reasoning and Ethical Judgment in K–12 AI Literacy Education",
+  "date": "2026-09-30",
+  "type": "article",
+  "venue": "Informatics in Education",
+  "matched_author_institutions": [
+   "Finland University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S11",
+  "tier": "B",
+  "expected_affiliation": "University of Eastern Finland",
+  "work": "W7214976805",
+  "doi": "10.15388/infedu.2601.025",
+  "title": "Understanding AI Mechanisms Supports Disciplinary Reasoning and Ethical Judgment in K–12 AI Literacy Education",
+  "date": "2026-09-30",
+  "type": "article",
+  "venue": "Informatics in Education",
+  "matched_author_institutions": [
+   "Finland University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S13",
+  "tier": "B",
+  "expected_affiliation": "University of Central Florida",
+  "work": "W7172383670",
+  "doi": "10.1007/s40138-026-00359-9",
+  "title": "Adaptive Technologies for Pediatric Emergency Readiness: Cognitive State Sensing, Augmented Reality Guidance, and the Evidence Gap",
+  "date": "2026-08-04",
+  "type": "article",
+  "venue": "Current Emergency and Hospital Medicine Reports",
+  "matched_author_institutions": [
+   "University of Central Florida"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S13",
+  "tier": "B",
+  "expected_affiliation": "University of Central Florida",
+  "work": "W7172493639",
+  "doi": "10.1080/00405841.2026.2714714",
+  "title": "Intelligent pedagogical agents for self-regulated learning: Balancing learner, teacher, and AI agency",
+  "date": "2026-08-05",
+  "type": "article",
+  "venue": "Theory Into Practice",
+  "matched_author_institutions": [
+   "University of Central Florida"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S13",
+  "tier": "B",
+  "expected_affiliation": "University of Central Florida",
+  "work": "W7202050467",
+  "doi": "10.1007/s10648-026-10196-7",
+  "title": "A Conceptual Framework to Integrate Research Programs on Self-Regulation in Education",
+  "date": "2026-08-10",
+  "type": "article",
+  "venue": "Educational Psychology Review",
+  "matched_author_institutions": [
+   "University of Central Florida"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S13",
+  "tier": "B",
+  "expected_affiliation": "University of Central Florida",
+  "work": "W7203884447",
+  "doi": "10.18260/1-2--61134",
+  "title": "WIP: Scaffolding Graduate Simulation Education Through Structured LLM Integration and Metacognition: A Preliminary Investigation",
+  "date": "2026-08-21",
+  "type": "conference-paper",
+  "venue": "ASEE Annual Conference & Exposition",
+  "matched_author_institutions": [
+   "University of Central Florida"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "S13",
+  "tier": "B",
+  "expected_affiliation": "University of Central Florida",
+  "work": "W7213373544",
+  "doi": "",
+  "title": "Oops, Not Now: PEARL, a RAG-Based Support Agent for Gameplay and What Players Want from AI Help",
+  "date": "2026-09-12",
+  "type": "preprint",
+  "venue": "arXiv (Cornell University)",
+  "matched_author_institutions": [
+   "University of Central Florida"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S14",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7208738451",
+  "doi": "10.3205/26gma243",
+  "title": "Entwicklung einer KI-gestützten, personalisierten Simulation zur Modellierung und Förderung von kollaborativem Intervention Reasoning im Rahmen der interprofessionellen Visite",
+  "date": "2026-09-04",
+  "type": "conference-paper",
+  "venue": "German Medical Science (German Research Foundation)",
+  "matched_author_institutions": [
+   "Technical University of Munich"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S14",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7213886153",
+  "doi": "10.1002/jcal.70331",
+  "title": "Trace Data of Secondary Students and Linguistic Analysis to Predict Learner Performance in a Multi‐Text Writing Task",
+  "date": "2026-09-21",
+  "type": "article",
+  "venue": "Journal of Computer Assisted Learning",
+  "matched_author_institutions": [
+   "Technical University of Munich"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S14",
+  "tier": "B",
+  "expected_affiliation": "Technical University of Munich",
+  "work": "W7220446830",
+  "doi": "10.1007/s11409-026-09500-1",
+  "title": "Effects of a self-regulated learning training on adolescents’ metacognitive awareness, learning processes and outcomes: a multi-method perspective",
+  "date": "2026-10-05",
+  "type": "article",
+  "venue": "Metacognition and Learning",
+  "matched_author_institutions": [
+   "Technical University of Munich"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "S15",
+  "tier": "B",
+  "expected_affiliation": "University of Pennsylvania Wharton School",
+  "work": "W3153841848",
+  "doi": "10.1287/mnsc.2022.01740",
+  "title": "Group-Sparse Matrix Factorization for Transfer Learning of Word Embeddings",
+  "date": "2026-09-01",
+  "type": "article",
+  "venue": "Management Science",
+  "matched_author_institutions": [
+   "University of Pennsylvania"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H02",
+  "tier": "H",
+  "expected_affiliation": "The Education University of Hong Kong/Assistant Professor",
+  "work": "W7169557922",
+  "doi": "10.1007/978-3-032-32112-1_7",
+  "title": "Evaluating Students’ AI Literacy and Reflective Capacity in an Entrepreneurship Course Using Professor E",
+  "date": "2026-07-17",
+  "type": "conference-paper",
+  "venue": "Lecture notes in computer science",
+  "matched_author_institutions": [
+   "Education University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H02",
+  "tier": "H",
+  "expected_affiliation": "The Education University of Hong Kong/Assistant Professor",
+  "work": "W7170149039",
+  "doi": "10.1080/13803611.2026.2698571",
+  "title": "Artificial intelligence in systematic reviews and meta-analyses: capabilities and methodological and ethical considerations",
+  "date": "2026-07-22",
+  "type": "review",
+  "venue": "Educational Research and Evaluation",
+  "matched_author_institutions": [
+   "Education University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H03",
+  "tier": "H",
+  "expected_affiliation": "Hong Kong University of Science and Technology/Lecturer I, Division of Integrative Systems and Design",
+  "work": "W7169557922",
+  "doi": "10.1007/978-3-032-32112-1_7",
+  "title": "Evaluating Students’ AI Literacy and Reflective Capacity in an Entrepreneurship Course Using Professor E",
+  "date": "2026-07-17",
+  "type": "conference-paper",
+  "venue": "Lecture notes in computer science",
+  "matched_author_institutions": [
+   "Hong Kong University of Science and Technology"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H05",
+  "tier": "H",
+  "expected_affiliation": "Tsinghua University",
+  "work": "W7204560163",
+  "doi": "10.5281/zenodo.22139875",
+  "title": "De-identified dataset: More is Less in Multimodal XAI: How Explanation Strategy and Modality Combine in XAI-Assisted Visual Classification",
+  "date": "2026-08-28",
+  "type": "dataset",
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "matched_author_institutions": [
+   "Tsinghua University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H05",
+  "tier": "H",
+  "expected_affiliation": "Tsinghua University",
+  "work": "W7212074828",
+  "doi": "10.1016/j.ijhcs.2026.103939",
+  "title": "XAI in the human-agent-environment loop: how do task, explanation strategy, and AI literacy shape user engagement?",
+  "date": "2026-09-09",
+  "type": "article",
+  "venue": "International Journal of Human-Computer Studies",
+  "matched_author_institutions": [
+   "Tsinghua University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H08",
+  "tier": "H",
+  "expected_affiliation": "University of Florida/Professor",
+  "work": "W7202187169",
+  "doi": "10.3389/frsen.2026.1931285",
+  "title": "Editorial: Rising stars in remote sensing 2025: advancements in time series analysis",
+  "date": "2026-08-11",
+  "type": "editorial",
+  "venue": "Frontiers in Remote Sensing",
+  "matched_author_institutions": [
+   "University of Florida"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H08",
+  "tier": "H",
+  "expected_affiliation": "University of Florida/Professor",
+  "work": "W7204486276",
+  "doi": "10.3390/land15091579",
+  "title": "Land-Cover Dynamics in a Miombo Woodland Landscape: A Multi-Scale Machine Learning Analysis of the Niassa Special Reserve (2000–2024)",
+  "date": "2026-08-27",
+  "type": "article",
+  "venue": "Land",
+  "matched_author_institutions": [
+   "University of Florida"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H08",
+  "tier": "H",
+  "expected_affiliation": "University of Florida/Professor",
+  "work": "W7220655232",
+  "doi": "10.1016/j.envadv.2026.100765",
+  "title": "Spatial and Temporal Scale Sensitivity in NDVI-Based Greenness Exposure Assessment for Alzheimer’s Disease Incidence: A Miami-Dade County Medicare Cohort Study",
+  "date": "2026-10-01",
+  "type": "article",
+  "venue": "Environmental Advances",
+  "matched_author_institutions": [
+   "University of Florida"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H09",
+  "tier": "H",
+  "expected_affiliation": "Universitätsklinikum Bonn/Research Assistant",
+  "work": "W7204495842",
+  "doi": "10.1007/s40670-026-02866-6",
+  "title": "Algorithm Aversion Towards AI-Generated Multiple-Choice Questions",
+  "date": "2026-08-28",
+  "type": "article",
+  "venue": "Medical Science Educator",
+  "matched_author_institutions": [
+   "University Hospital Bonn",
+   "University of Bonn"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H09",
+  "tier": "H",
+  "expected_affiliation": "Universitätsklinikum Bonn/Research Assistant",
+  "work": "W7208746625",
+  "doi": "10.3205/26gma225",
+  "title": "Einsatz von generativer künstlicher Intelligenz (KI) in der radioonkologischen Lehre: Erreichen KI-generierte Prüfungsfragen Expert*innenqualität?",
+  "date": "2026-09-04",
+  "type": "conference-paper",
+  "venue": "German Medical Science (German Research Foundation)",
+  "matched_author_institutions": [
+   "University Hospital Bonn"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H09",
+  "tier": "H",
+  "expected_affiliation": "Universitätsklinikum Bonn/Research Assistant",
+  "work": "W7208771838",
+  "doi": "10.3205/26gma226",
+  "title": "Zeigen Medizinstudierende eine Algorithm Aversion gegenüber KI-generierten Multiple-Choice-Fragen? Eine psychometrische und wahrnehmungspsychologische Analyse",
+  "date": "2026-09-04",
+  "type": "conference-paper",
+  "venue": "German Medical Science (German Research Foundation)",
+  "matched_author_institutions": [
+   "University Hospital Bonn",
+   "University of Bonn"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H09",
+  "tier": "H",
+  "expected_affiliation": "Universitätsklinikum Bonn/Research Assistant",
+  "work": "W7214605398",
+  "doi": "10.3389/feduc.2026.1885959",
+  "title": "The B-AIMT: development and initial validation of a domain-specific instrument for assessing mathematics teachers’ beliefs about artificial intelligence",
+  "date": "2026-09-28",
+  "type": "article",
+  "venue": "Frontiers in Education",
+  "matched_author_institutions": [
+   "University of Bonn"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H10",
+  "tier": "H",
+  "expected_affiliation": "University of Bonn/Director",
+  "work": "W7204495842",
+  "doi": "10.1007/s40670-026-02866-6",
+  "title": "Algorithm Aversion Towards AI-Generated Multiple-Choice Questions",
+  "date": "2026-08-28",
+  "type": "article",
+  "venue": "Medical Science Educator",
+  "matched_author_institutions": [
+   "University Hospital Bonn",
+   "University of Bonn"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H10",
+  "tier": "H",
+  "expected_affiliation": "University of Bonn/Director",
+  "work": "W7208745397",
+  "doi": "10.3205/26gma048",
+  "title": "Von der Pilotierung zur Anwendung – lernzielbasierte Evaluation klinischer und digitaler Lehrformate",
+  "date": "2026-09-04",
+  "type": "conference-paper",
+  "venue": "German Medical Science (German Research Foundation)",
+  "matched_author_institutions": [
+   "University Hospital Bonn",
+   "University of Bonn"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H10",
+  "tier": "H",
+  "expected_affiliation": "University of Bonn/Director",
+  "work": "W7208746625",
+  "doi": "10.3205/26gma225",
+  "title": "Einsatz von generativer künstlicher Intelligenz (KI) in der radioonkologischen Lehre: Erreichen KI-generierte Prüfungsfragen Expert*innenqualität?",
+  "date": "2026-09-04",
+  "type": "conference-paper",
+  "venue": "German Medical Science (German Research Foundation)",
+  "matched_author_institutions": [
+   "University Hospital Bonn"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H10",
+  "tier": "H",
+  "expected_affiliation": "University of Bonn/Director",
+  "work": "W7208771838",
+  "doi": "10.3205/26gma226",
+  "title": "Zeigen Medizinstudierende eine Algorithm Aversion gegenüber KI-generierten Multiple-Choice-Fragen? Eine psychometrische und wahrnehmungspsychologische Analyse",
+  "date": "2026-09-04",
+  "type": "conference-paper",
+  "venue": "German Medical Science (German Research Foundation)",
+  "matched_author_institutions": [
+   "University Hospital Bonn",
+   "University of Bonn"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7168079889",
+  "doi": "10.1080/09588221.2026.2699241",
+  "title": "Engagement without attainment? Exploring AI-assisted language learning through SLA theories",
+  "date": "2026-07-12",
+  "type": "article",
+  "venue": "Computer Assisted Language Learning",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7169593628",
+  "doi": "10.1080/03075079.2026.2699815",
+  "title": "Constructivist pedagogy as a post-socialist modernization project: insights from higher education in Kazakhstan, Kyrgyzstan and Mongolia",
+  "date": "2026-07-16",
+  "type": "article",
+  "venue": "Studies in Higher Education",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7170177558",
+  "doi": "10.1111/ijal.70320",
+  "title": "Using Generative Artificial Intelligence to Support Secondary Students’ Cognitive Processes in Writing",
+  "date": "2026-07-23",
+  "type": "article",
+  "venue": "International Journal of Applied Linguistics",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7171435150",
+  "doi": "10.1080/20590776.2026.2708689",
+  "title": "How latent personality profiles shape student engagement with artificial intelligence from a facet-level five-factor model analysis",
+  "date": "2026-07-27",
+  "type": "article",
+  "venue": "The Educational and Developmental Psychologist",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7172532737",
+  "doi": "10.1080/10494820.2026.2685803",
+  "title": "A review of reviews on unveiling the dynamics of STEM education research from an artificial intelligence analysis approach",
+  "date": "2026-08-05",
+  "type": "article",
+  "venue": "Interactive Learning Environments",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7202142090",
+  "doi": "10.48550/arxiv.2608.06932",
+  "title": "Educational Short Videos: Bibliometric Trends, Thematic Structure, and Operationalisation",
+  "date": "2026-08-07",
+  "type": "preprint",
+  "venue": "arXiv (Cornell University)",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7204128107",
+  "doi": "10.1080/15366367.2026.2717599",
+  "title": "How Are Self-Determination Theory Needs Satisfaction and Personality Traits Associated with Self-Regulated Learning Using Generative Artificial Intelligence?",
+  "date": "2026-08-24",
+  "type": "article",
+  "venue": "Measurement Interdisciplinary Research and Perspectives",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7204533813",
+  "doi": "10.1016/j.compedu.2026.105745",
+  "title": "Does school-based AI education narrow readiness gaps? The role of prior agency-related learning",
+  "date": "2026-08-28",
+  "type": "article",
+  "venue": "Computers & Education",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": "KB-2027-0001",
+  "has_abstract": true
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7204990898",
+  "doi": "10.1080/1475939x.2026.2721466",
+  "title": "The moderating effects of gender and teacher support on student engagement in language learning with a generative artificial intelligence (GenAI) chatbot",
+  "date": "2026-09-02",
+  "type": "article",
+  "venue": "Technology Pedagogy and Education",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7212006881",
+  "doi": "10.1080/14790718.2026.2730662",
+  "title": "How performance expectancy and autonomy satisfaction influence translanguaging interactions with AI chatbots",
+  "date": "2026-09-09",
+  "type": "article",
+  "venue": "International Journal of Multilingualism",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7213527283",
+  "doi": "10.5281/zenodo.22806883",
+  "title": "A Systematic Review of Conceptualizations, Competences, and Developmental Factors for Teachers' AI-TPACK in Mathematics Education",
+  "date": "2026-09-17",
+  "type": "dataset",
+  "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7214586492",
+  "doi": "10.1186/s40594-026-00648-5",
+  "title": "The shifting landscape of assessment in STEM education in the age of generative AI",
+  "date": "2026-09-28",
+  "type": "article",
+  "venue": "International Journal of STEM Education",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7215033904",
+  "doi": "10.1111/bjet.70091",
+  "title": "Connecting the dots to understand complex systems in education: A systematic review of psychological networks",
+  "date": "2026-09-30",
+  "type": "review",
+  "venue": "British Journal of Educational Technology",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H11",
+  "tier": "H",
+  "expected_affiliation": "Chinese University of Hong Kong/Professor",
+  "work": "W7220919634",
+  "doi": "10.1080/10494820.2026.2744403",
+  "title": "Integrating artificial intelligence into K-12 school education through self-determination theory from a longitudinal study: opportunities, challenges, and future direction",
+  "date": "2026-10-08",
+  "type": "article",
+  "venue": "Interactive Learning Environments",
+  "matched_author_institutions": [
+   "Chinese University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H17",
+  "tier": "H",
+  "expected_affiliation": "Massachusetts Institute of Technology",
+  "work": "W7216064691",
+  "doi": "10.1145/3776591.3832522",
+  "title": "Can Vision-Language Models Extract Relevant Multimodal Cues for Post-Inference Cue Integration? A Comparison of Affective Judgments on Adult and Child Interaction Data",
+  "date": "2026-10-02",
+  "type": "conference-paper",
+  "venue": "Companion Publication of the International Conference on Multimodal Interaction (ICMI Companion)",
+  "matched_author_institutions": [
+   "MIT Media Lab",
+   "Massachusetts Institute of Technology"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H17",
+  "tier": "H",
+  "expected_affiliation": "Massachusetts Institute of Technology",
+  "work": "W7220922775",
+  "doi": "10.48550/arxiv.2610.09155",
+  "title": "Drawing the Line: Where AI Guidance and Human Creativity Meet in Emotion-Driven Comic Storyboarding",
+  "date": "2026-10-06",
+  "type": "preprint",
+  "venue": "arXiv (Cornell University)",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H17",
+  "tier": "H",
+  "expected_affiliation": "Massachusetts Institute of Technology",
+  "work": "W7221043301",
+  "doi": "10.1109/ro-man72286.2026.11714744",
+  "title": "Don't Judge a Robot by Its Cover: How Aesthetic Cues Shape Traits, Roles, and Authority Perception in Children",
+  "date": "2026-08-01",
+  "type": "conference-paper",
+  "venue": "IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)",
+  "matched_author_institutions": [
+   "Massachusetts Institute of Technology"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H18",
+  "tier": "H",
+  "expected_affiliation": "Julius-Maximilians-Universität Würzburg",
+  "work": "W7168970900",
+  "doi": "10.31234/osf.io/csjad_v1",
+  "title": "Theoretical Foundations of AI-Sycophancy: Linking Ingratiation and Flattery Research to Conversational AI",
+  "date": "2026-07-16",
+  "type": "preprint",
+  "venue": null,
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H18",
+  "tier": "H",
+  "expected_affiliation": "Julius-Maximilians-Universität Würzburg",
+  "work": "W7202055169",
+  "doi": "10.31234/osf.io/csjad_v3",
+  "title": "Theoretical Foundations of AI-Sycophancy: Linking Ingratiation and Flattery Research to Conversational AI",
+  "date": "2026-08-09",
+  "type": "preprint",
+  "venue": null,
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H18",
+  "tier": "H",
+  "expected_affiliation": "Julius-Maximilians-Universität Würzburg",
+  "work": "W7213619452",
+  "doi": "10.1016/j.chbah.2026.100402",
+  "title": "AI Mindset – An empirically tested theoretical framework on the psychological factors shaping AI competence and AI use",
+  "date": "2026-09-19",
+  "type": "article",
+  "venue": "Computers in Human Behavior Artificial Humans",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H19",
+  "tier": "H",
+  "expected_affiliation": "University of St. Gallen/Chair Professor, Director",
+  "work": "W7171451486",
+  "doi": "10.1007/s12599-026-01009-w",
+  "title": "Agentic AI",
+  "date": "2026-07-27",
+  "type": "article",
+  "venue": "Business & Information Systems Engineering",
+  "matched_author_institutions": [
+   "University of Kassel",
+   "University of St.Gallen"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H19",
+  "tier": "H",
+  "expected_affiliation": "University of St. Gallen/Chair Professor, Director",
+  "work": "W7211998666",
+  "doi": "10.1111/isj.70063",
+  "title": "Data‐Driven Procurement for Managing Crises: Lessons From a European Automotive Manufacturer",
+  "date": "2026-09-09",
+  "type": "article",
+  "venue": "Information Systems Journal",
+  "matched_author_institutions": [
+   "University of St.Gallen"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H19",
+  "tier": "H",
+  "expected_affiliation": "University of St. Gallen/Chair Professor, Director",
+  "work": "W7220370105",
+  "doi": "10.1365/s40702-026-01331-7",
+  "title": "Agentic AI in der Unternehmenspraxis: Vom Werkzeug zum Akteur",
+  "date": "2026-10-05",
+  "type": "article",
+  "venue": "HMD Praxis der Wirtschaftsinformatik",
+  "matched_author_institutions": [
+   "University of Kassel",
+   "University of St.Gallen"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H21",
+  "tier": "H",
+  "expected_affiliation": "The Education University of Hong Kong/Research Chair Professor of e-Learning and Digital Competency",
+  "work": "W7203693943",
+  "doi": "10.1016/j.heliyon.2026.e45268",
+  "title": "The development of primary school students’ concepts, practices, and perspectives in computational thinking education",
+  "date": "2026-08-18",
+  "type": "article",
+  "venue": "Heliyon",
+  "matched_author_institutions": [
+   "Education University of Hong Kong"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H25",
+  "tier": "H",
+  "expected_affiliation": "Masaryk University/Assistant Professor",
+  "work": "W7201847843",
+  "doi": "10.1007/s10734-026-01728-9",
+  "title": "Integration or stratification? Cumulative advantage and prestige homophily in the CEEPUS inter-university network",
+  "date": "2026-08-08",
+  "type": "article",
+  "venue": "Higher Education",
+  "matched_author_institutions": [
+   "Masaryk University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H25",
+  "tier": "H",
+  "expected_affiliation": "Masaryk University/Assistant Professor",
+  "work": "W7203562360",
+  "doi": "",
+  "title": "The Moment of Change: How Peer-relationships Become Toxic and Healthy Again Using a Catastrophe Theory.",
+  "date": "2026-08-13",
+  "type": "preprint",
+  "venue": "OSF Preprints (OSF Preprints)",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H25",
+  "tier": "H",
+  "expected_affiliation": "Masaryk University/Assistant Professor",
+  "work": "W7204738281",
+  "doi": "10.1186/s40536-026-00318-6",
+  "title": "Academic resilience in 75 education systems: how operationalization and threshold choices shape findings on protective factors",
+  "date": "2026-09-08",
+  "type": "article",
+  "venue": "Large-scale Assessments in Education",
+  "matched_author_institutions": [
+   "Masaryk University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H25",
+  "tier": "H",
+  "expected_affiliation": "Masaryk University/Assistant Professor",
+  "work": "W7212011025",
+  "doi": "10.6084/m9.figshare.33472832",
+  "title": "Additional file 1 of Academic resilience in 75 education systems: how operationalization and threshold choices shape findings on protective factors",
+  "date": "2026-09-08",
+  "type": "article",
+  "venue": "Figshare",
+  "matched_author_institutions": [
+   "Masaryk University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H25",
+  "tier": "H",
+  "expected_affiliation": "Masaryk University/Assistant Professor",
+  "work": "W7215071183",
+  "doi": "10.1080/13645579.2026.2736850",
+  "title": "When discovery is mistaken for applicability: a warning on practice implications drawn from purely qualitative research",
+  "date": "2026-10-01",
+  "type": "article",
+  "venue": "International Journal of Social Research Methodology",
+  "matched_author_institutions": [
+   "Masaryk University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H25",
+  "tier": "H",
+  "expected_affiliation": "Masaryk University/Assistant Professor",
+  "work": "W7215895593",
+  "doi": "10.31234/osf.io/afuq2_v1",
+  "title": "TAIL: A Test of AI Literacy for Adolescents and Teachers",
+  "date": "2026-09-29",
+  "type": "preprint",
+  "venue": null,
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H26",
+  "tier": "H",
+  "expected_affiliation": "Linköping University/Senior associate professor",
+  "work": "W7171317694",
+  "doi": "10.63223/jphe.2026.59393",
+  "title": "Student teachers' interactions with generative artificial intelligence in their final thesis projects",
+  "date": "2026-07-26",
+  "type": "article",
+  "venue": "Journal of Praxis in Higher Education",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H26",
+  "tier": "H",
+  "expected_affiliation": "Linköping University/Senior associate professor",
+  "work": "W7214171837",
+  "doi": "10.5617/nordina.12498",
+  "title": "Experience, Emotions and Educational content for all:",
+  "date": "2026-09-24",
+  "type": "article",
+  "venue": "Nordic Studies in Science Education",
+  "matched_author_institutions": [
+   "Linköping University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H26",
+  "tier": "H",
+  "expected_affiliation": "Linköping University/Senior associate professor",
+  "work": "W7214376605",
+  "doi": "10.5617/nordina.11791",
+  "title": "Building research literacy for science teaching:",
+  "date": "2026-09-24",
+  "type": "article",
+  "venue": "Nordic Studies in Science Education",
+  "matched_author_institutions": [
+   "Linköping University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H26",
+  "tier": "H",
+  "expected_affiliation": "Linköping University/Senior associate professor",
+  "work": "W7215055574",
+  "doi": "10.33422/ejte.v8i3.1872",
+  "title": "Teachers' Navigation of Assessing Written Work in Times of Generative AI",
+  "date": "2026-10-01",
+  "type": "article",
+  "venue": "European Journal of Teaching and Education",
+  "matched_author_institutions": [
+   "Linköping University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H26",
+  "tier": "H",
+  "expected_affiliation": "Linköping University/Senior associate professor",
+  "work": "W7220855403",
+  "doi": "10.23865/hu.v16.8303",
+  "title": "Bokrecension: Medelklassfabriken: Perspektiv på breddad rekrytering och breddat deltagande i högre utbildning",
+  "date": "2026-10-07",
+  "type": "article",
+  "venue": "Högre utbildning",
+  "matched_author_institutions": [
+   "Linköping University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H27",
+  "tier": "H",
+  "expected_affiliation": "Linköping University/Full Professor of Technology Education",
+  "work": "W7168236037",
+  "doi": "10.1080/03043797.2026.2694549",
+  "title": "Can role-play play a role in authentic learning? Investigating two pre-university engineering education design projects",
+  "date": "2026-07-13",
+  "type": "article",
+  "venue": "European Journal of Engineering Education",
+  "matched_author_institutions": [
+   "Linköping University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H27",
+  "tier": "H",
+  "expected_affiliation": "Linköping University/Full Professor of Technology Education",
+  "work": "W7214586492",
+  "doi": "10.1186/s40594-026-00648-5",
+  "title": "The shifting landscape of assessment in STEM education in the age of generative AI",
+  "date": "2026-09-28",
+  "type": "article",
+  "venue": "International Journal of STEM Education",
+  "matched_author_institutions": [
+   "Linköping University"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H29",
+  "tier": "H",
+  "expected_affiliation": "University of Georgia",
+  "work": "W7171472096",
+  "doi": "10.48550/arxiv.2607.21777",
+  "title": "AI-Integrated Scientific Inquiry: A Practice-Centered Vision for Science Education",
+  "date": "2026-07-23",
+  "type": "preprint",
+  "venue": "arXiv (Cornell University)",
+  "matched_author_institutions": [
+   "University of Georgia"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H29",
+  "tier": "H",
+  "expected_affiliation": "University of Georgia",
+  "work": "W7211951528",
+  "doi": "10.1080/09500693.2026.2727692",
+  "title": "Human-in-the-loop: leveraging generative artificial intelligence to transform disciplinary learning in science",
+  "date": "2026-09-08",
+  "type": "article",
+  "venue": "International Journal of Science Education",
+  "matched_author_institutions": [
+   "University of Georgia"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H30",
+  "tier": "H",
+  "expected_affiliation": "University of Oulu/Academy Research Fellow, Docent",
+  "work": "W7169794366",
+  "doi": "10.1016/j.caeo.2026.100396",
+  "title": "Assessing digital competence of K1-12 teachers in Kosovo: A study through the lens of DigCompEdu and TPACK",
+  "date": "2026-07-20",
+  "type": "article",
+  "venue": "Computers and Education Open",
+  "matched_author_institutions": [
+   "University of Oulu"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H30",
+  "tier": "H",
+  "expected_affiliation": "University of Oulu/Academy Research Fellow, Docent",
+  "work": "W7202264655",
+  "doi": "10.1080/10494820.2026.2703281",
+  "title": "Predicting teachers’ pedagogical knowledge in virtual learning environments: the roles of motivation, technology knowledge, and engagement",
+  "date": "2026-08-12",
+  "type": "article",
+  "venue": "Interactive Learning Environments",
+  "matched_author_institutions": [
+   "University of Oulu"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H30",
+  "tier": "H",
+  "expected_affiliation": "University of Oulu/Academy Research Fellow, Docent",
+  "work": "W7203968316",
+  "doi": "10.1177/07356331261479569",
+  "title": "Beyond AI Literacy: Exploring Pre-Service Teachers’ Pedagogical and Ethical Reasoning in Generative AI Integration in Education",
+  "date": "2026-08-22",
+  "type": "article",
+  "venue": "Journal of Educational Computing Research",
+  "matched_author_institutions": [
+   "University of Oulu"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H30",
+  "tier": "H",
+  "expected_affiliation": "University of Oulu/Academy Research Fellow, Docent",
+  "work": "W7218767332",
+  "doi": "10.1111/bjet.70092",
+  "title": "Catching the spark: The role of electrodermal activity in understanding teacher enthusiasm and students' lesson enjoyment",
+  "date": "2026-10-03",
+  "type": "article",
+  "venue": "British Journal of Educational Technology",
+  "matched_author_institutions": [
+   "University of Oulu"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H30",
+  "tier": "H",
+  "expected_affiliation": "University of Oulu/Academy Research Fellow, Docent",
+  "work": "W7220729024",
+  "doi": "10.1007/978-3-032-37979-5_9",
+  "title": "How Trust and Fear Mediate the Relationship between AI Literacy and Intelligent-TPACK: Evidence from Teacher Education",
+  "date": "2026-10-06",
+  "type": "conference-paper",
+  "venue": "Lecture notes in computer science",
+  "matched_author_institutions": [
+   "University of Oulu"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H31",
+  "tier": "H",
+  "expected_affiliation": "Central China Normal University/Professor",
+  "work": "W7203724179",
+  "doi": "10.1016/j.iref.2026.105762",
+  "title": "Geopolitical risk and climate resilience: A nonlinear global perspective",
+  "date": "2026-08-18",
+  "type": "article",
+  "venue": "International Review of Economics & Finance",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H31",
+  "tier": "H",
+  "expected_affiliation": "Central China Normal University/Professor",
+  "work": "W7204596643",
+  "doi": "10.1109/lra.2026.3728326",
+  "title": "A Bioinspired Tensegrity Actuator Inspired by Sarcomeres",
+  "date": "2026-08-28",
+  "type": "article",
+  "venue": "IEEE Robotics and Automation Letters",
+  "matched_author_institutions": [
+   "Changchun University of Technology"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": false
+ },
+ {
+  "scholar": "H32",
+  "tier": "H",
+  "expected_affiliation": "Technische Universitat Darmstadt/Professor",
+  "work": "W7161619116",
+  "doi": "10.5283/epub.80293",
+  "title": "Understanding Uncertainties in Explainable AI: A Structured Literature Review and Research Agenda",
+  "date": "2026-07-30",
+  "type": "conference-paper",
+  "venue": "TUbilio (Technical University of Darmstadt)",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H32",
+  "tier": "H",
+  "expected_affiliation": "Technische Universitat Darmstadt/Professor",
+  "work": "W7202030201",
+  "doi": "10.17605/osf.io/ay23c",
+  "title": "AlgoWork (DFG 461985572)",
+  "date": "2026-08-09",
+  "type": "preprint",
+  "venue": null,
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H32",
+  "tier": "H",
+  "expected_affiliation": "Technische Universitat Darmstadt/Professor",
+  "work": "W7202083378",
+  "doi": "10.1287/isre.2024.0927",
+  "title": "How Platform Workers Contest Algorithmic Management: Theorizing the Dynamics of Algoactivistic Practices",
+  "date": "2026-08-10",
+  "type": "article",
+  "venue": "Information Systems Research",
+  "matched_author_institutions": [
+   "Technische Universität Darmstadt"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H32",
+  "tier": "H",
+  "expected_affiliation": "Technische Universitat Darmstadt/Professor",
+  "work": "W7202426679",
+  "doi": "",
+  "title": "Algorithmic Control and Uber Drivers' Technostress (Cram et al., 2022)",
+  "date": "2026-08-11",
+  "type": "preprint",
+  "venue": "OSF Preprints (OSF Preprints)",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H32",
+  "tier": "H",
+  "expected_affiliation": "Technische Universitat Darmstadt/Professor",
+  "work": "W7202429502",
+  "doi": "",
+  "title": "Algorithmic Control and Uber Drivers' Legitimacy Judgments (Wiener et al., 2023)",
+  "date": "2026-08-11",
+  "type": "preprint",
+  "venue": "OSF Preprints (OSF Preprints)",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H32",
+  "tier": "H",
+  "expected_affiliation": "Technische Universitat Darmstadt/Professor",
+  "work": "W7202430918",
+  "doi": "",
+  "title": "Algorithmic Control Systems and Workers' Legitimacy Judgments (Alizadeh et al., 2026)",
+  "date": "2026-08-11",
+  "type": "preprint",
+  "venue": "OSF Preprints (OSF Preprints)",
+  "matched_author_institutions": [],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H32",
+  "tier": "H",
+  "expected_affiliation": "Technische Universitat Darmstadt/Professor",
+  "work": "W7204860538",
+  "doi": "",
+  "title": "Using Specialized OKR Software to Embed Organization-Wide Strategic Execution Enhancements",
+  "date": "2026-08-30",
+  "type": "article",
+  "venue": "Journal of the Association for Information Systems",
+  "matched_author_institutions": [
+   "Technische Universität Darmstadt"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H32",
+  "tier": "H",
+  "expected_affiliation": "Technische Universitat Darmstadt/Professor",
+  "work": "W7211952082",
+  "doi": "10.1016/j.bushor.2026.09.002",
+  "title": "Scaling AI literacy in organizations: A framework and roadmap for managers",
+  "date": "2026-09-01",
+  "type": "article",
+  "venue": "Business Horizons",
+  "matched_author_institutions": [
+   "Technische Universität Darmstadt"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ },
+ {
+  "scholar": "H32",
+  "tier": "H",
+  "expected_affiliation": "Technische Universitat Darmstadt/Professor",
+  "work": "W7213314719",
+  "doi": "10.1080/0960085x.2026.2723258",
+  "title": "Scaling data management capabilities for enterprise AI: a maturity model for the banking industry",
+  "date": "2026-09-16",
+  "type": "article",
+  "venue": "European Journal of Information Systems",
+  "matched_author_institutions": [
+   "Technische Universität Darmstadt"
+  ],
+  "kb_duplicate": null,
+  "has_abstract": true
+ }
+]
