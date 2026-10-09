@@ -65,10 +65,20 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - name: Build public-only Pages artifact
+        run: |
+          mkdir -p _public_site/publication
+          cp index.html .nojekyll _public_site/
+          for dir in feedback weekly monthly daily; do
+            if [ -d "$dir" ]; then cp -R "$dir" "_public_site/$dir"; fi
+          done
+          cp publication/issues.json _public_site/publication/issues.json
+          test ! -e _public_site/research
+          test -f _public_site/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _public_site
       - name: Deploy verified Pages artifact
         id: deployment
         uses: actions/deploy-pages@v4
