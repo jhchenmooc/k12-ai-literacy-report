@@ -234,3 +234,9 @@ test("legacy benign static content remains exempt from retrospective claim recer
  fs.writeFileSync(path.join(dir,"index.html"),'<html><main><p>Archived report</p></main></html>');
  const v=validate(d);assert.equal(v.ok,true);assert.ok(v.warnings.some(x=>x.includes("Legacy issue not certified")));
 });
+
+test("deployed-site historical monthly reports do not link to excluded research directory",()=>{
+ const html=fs.readFileSync(path.join(__dirname,"..","monthly","2026-09","index.html"),"utf8");
+ assert.doesNotMatch(html,/href=["']\.\.\/\.\.\/research\//);
+ assert.match(html,/github\.com\/jhchenmooc\/k12-ai-literacy-report\/blob\/main\/research\/legacy-editions-review/);
+});
