@@ -34,6 +34,8 @@
 | KB-2026-0011 — [Cultivating AI literacy among high school students through generative AI as a collaborative partner](https://link.springer.com/article/10.1007/s44217-026-02092-7) | journal_article | 2026-08-29 | bibliographic_checked |
 | KB-2026-0012 — [Do All Roads Lead to AI Literacy? Clustering Behavioral Patterns and Examining Outcomes in an Online AI Literacy Module for Secondary School Students](https://doi.org/10.1145/3785022.3785043) | conference_paper | 2026-04-26 | bibliographic_checked |
 | KB-2026-0013 — [How to Assess AI Literacy: Misalignment Between Self-Reported and Objective-Based Measures](https://doi.org/10.1145/3785022.3785088) | conference_paper | 2026-04-26 | bibliographic_checked |
+| KB-2026-0014 — [Exploring AI literacy, reliance, and ethical practices of secondary level students in using generative AI](https://link.springer.com/article/10.1007/s44217-026-01890-3) | journal_article | 2026-07-09 | bibliographic_checked |
+| KB-2026-0015 — [Perspectives of secondary school students toward using generative AI as a summative assessment tool of social studies courses in Thailand](https://link.springer.com/article/10.1007/s44217-026-01565-z) | journal_article | 2026-05-05 | bibliographic_checked |
 
 ## unknown｜unknown
 
