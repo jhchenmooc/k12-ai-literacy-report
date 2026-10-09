@@ -7,6 +7,7 @@
 | 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
 |---|---|---|---|
 | KB-2023-0001 — [The Australian Framework for Generative Artificial Intelligence (AI) in Schools](https://www.education.gov.au/schooling/announcements/australian-framework-generative-artificial-intelligence-ai-schools) | framework | 2023-12-01 | bibliographic_checked |
+| KB-2023-0002 — [Generative artificial intelligence (AI) in education](https://www.gov.uk/government/publications/generative-artificial-intelligence-in-education) | official_guidance | 2023-03-29 | bibliographic_checked |
 
 ## 2024｜first_publication
 
@@ -14,6 +15,8 @@
 |---|---|---|---|
 | KB-2024-0001 — [AI competency framework for teachers](https://www.unesco.org/en/articles/ai-competency-framework-teachers) | framework | 2024-08-08 | bibliographic_checked |
 | KB-2024-0002 — [AI competency framework for students](https://www.unesco.org/en/articles/ai-competency-framework-students) | framework | 2024-08-08 | bibliographic_checked |
+| KB-2024-0003 — [Guideline for the Use of Generative AI in Primary and Secondary Education (Ver.2.0)](https://www.mext.go.jp/zyoukatsu/ai/index.html) | official_guidance | 2024-12-26 | bibliographic_checked |
+| KB-2024-0004 — [AI Digital Textbooks for 2025 to Realize Personalized Education for All](https://english.moe.go.kr/boardCnts/viewRenewal.do?boardID=265&boardSeq=102075&lev=0&m=0201&opType=N&page=1&s=english) | government_announcement | 2024-11-29 | bibliographic_checked |
 
 ## 2025｜first_publication
 

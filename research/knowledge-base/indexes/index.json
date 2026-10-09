@@ -1,8 +1,11 @@
 {
   "by-category/K1": [
     "KB-2023-0001",
+    "KB-2023-0002",
     "KB-2024-0001",
     "KB-2024-0002",
+    "KB-2024-0003",
+    "KB-2024-0004",
     "KB-2025-0001",
     "KB-2026-0010"
   ],
@@ -48,8 +51,17 @@
   "by-country/GB": [
     "KB-2025-0002"
   ],
+  "by-country/GB-ENG": [
+    "KB-2023-0002"
+  ],
   "by-country/GR": [
     "KB-2025-0002"
+  ],
+  "by-country/JP": [
+    "KB-2024-0003"
+  ],
+  "by-country/KR": [
+    "KB-2024-0004"
   ],
   "by-journal/J02": [
     "KB-2026-0009"
@@ -89,8 +101,17 @@
     "KB-2026-0002",
     "KB-2026-0003"
   ],
+  "by-source/O-JP-MEXT": [
+    "KB-2024-0003"
+  ],
+  "by-source/O-KR-MOE": [
+    "KB-2024-0004"
+  ],
   "by-source/O-OECD": [
     "KB-2026-0010"
+  ],
+  "by-source/O-UK-DFE": [
+    "KB-2023-0002"
   ],
   "by-source/O-UNESCO": [
     "KB-2024-0001",
@@ -107,6 +128,9 @@
     "KB-2024-0002",
     "KB-2026-0010"
   ],
+  "by-type/government_announcement": [
+    "KB-2024-0004"
+  ],
   "by-type/journal_article": [
     "KB-2025-0002",
     "KB-2025-0003",
@@ -114,6 +138,10 @@
     "KB-2026-0008",
     "KB-2026-0009",
     "KB-2026-0011"
+  ],
+  "by-type/official_guidance": [
+    "KB-2023-0002",
+    "KB-2024-0003"
   ],
   "by-type/policy_review": [
     "KB-2025-0001"
@@ -127,11 +155,14 @@
     "KB-2026-0007"
   ],
   "by-year/2023/first_publication": [
-    "KB-2023-0001"
+    "KB-2023-0001",
+    "KB-2023-0002"
   ],
   "by-year/2024/first_publication": [
     "KB-2024-0001",
-    "KB-2024-0002"
+    "KB-2024-0002",
+    "KB-2024-0003",
+    "KB-2024-0004"
   ],
   "by-year/2025/first_publication": [
     "KB-2025-0001",
