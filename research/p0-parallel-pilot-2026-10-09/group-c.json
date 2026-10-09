@@ -1,0 +1,350 @@
+{
+  "group_id": "C",
+  "venue_ids": [
+    "C05",
+    "C06",
+    "C07",
+    "C08"
+  ],
+  "started_at": "2026-10-09T13:40:17Z",
+  "finished_at": "2026-10-09T13:45:54Z",
+  "requested_window": "2025-01-01/2026-10-09",
+  "actual_item_years": [
+    2025
+  ],
+  "status": "partial",
+  "total_search_hits": null,
+  "safety": "Historical bibliography only; nine publication candidates remain hold; no publication or shared CSV mutation.",
+  "queries": [
+    {
+      "venue_id": "C05",
+      "exact_queries": [
+        "site.repository.isls.org CSCL 2025 artificial intelligence teachers",
+        "site:repository.isls.org \"cscl2026\" \"AI\"",
+        "site:repository.isls.org \"11843\" \"dc.date\"",
+        "site:repository.isls.org \"11944\" \"dc.date\"",
+        "\"Toward Teacher-Centered AI Design\" site:repository.isls.org",
+        "\"10.22318/cscl2025.817482\" \"pdf\"",
+        "\"10.22318/cscl2025.107218\" \"pdf\""
+      ]
+    },
+    {
+      "venue_id": "C06",
+      "exact_queries": [
+        "site:dl.acm.org SIGCSE TS 2025 K-12 artificial intelligence literacy",
+        "site:dl.acm.org/doi \"SIGCSE TS 2025\" \"AI\" \"K-12\"",
+        "SIGCSE 2025 artificial intelligence literacy K-12 DOI",
+        "site:dl.acm.org \"2025\" \"K-12\" \"SIGCSETS\"",
+        "site:dl.acm.org \"2026\" \"SIGCSETS\" \"AI literacy\"",
+        "site:dl.acm.org \"Building Global AI Literacy\"",
+        "\"Building Global AI Literacy\" \"10.1145\"",
+        "\"10.1145/3641555.3705158\"",
+        "\"10.1145/3641555.3705101\" site:dl.acm.org",
+        "site:sigcse2025.sigcse.org \"Day of AI Australia\"",
+        "site:sigcse2025.sigcse.org/details \"Day of AI Australia\"",
+        "site:dl.acm.org \"3705158\" \"Published\"",
+        "site:dl.acm.org \"3705101\" \"Published\""
+      ]
+    },
+    {
+      "venue_id": "C07",
+      "exact_queries": [
+        "site:dl.acm.org ITiCSE 2025 K-12 artificial intelligence",
+        "site:dl.acm.org/doi \"ITiCSE 2025\" \"AI\" \"school\"",
+        "ITiCSE 2025 artificial intelligence literacy school DOI",
+        "site:dl.acm.org \"ITiCSE '25\" \"teachers\" \"AI\"",
+        "\"10.1145/3724389.3730776\"",
+        "\"From Teachers to Students: Evaluating Canvas City as a Path to AI Literacy\"",
+        "\"10.1145/3724363.3729069\" site:dl.acm.org",
+        "site:iticse.acm.org/2025 \"Canvas City\"",
+        "site:conf.researchr.org \"ITiCSE 2025\" \"Canvas City\"",
+        "site:dl.acm.org \"ITiCSE 2026\" \"AI\" \"school\"",
+        "site:dl.acm.org \"3729069\" \"Published\""
+      ]
+    },
+    {
+      "venue_id": "C08",
+      "exact_queries": [
+        "site:dl.acm.org ICER 2025 K-12 artificial intelligence literacy",
+        "site:dl.acm.org/doi \"ICER 2025\" \"AI\" \"school\"",
+        "ICER 2025 artificial intelligence literacy school DOI",
+        "site:dl.acm.org \"ICER 2026\" \"AI literacy\"",
+        "site:dl.acm.org/doi \"3702652.3744217\""
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "venue_id": "C05",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "results_seen": null,
+      "results_screened": 2,
+      "full_text_checked": 0,
+      "entry_url": "https://repository.isls.org/",
+      "limitations": "Indexed official ISLS metadata available; direct handle and PDF attempts failed (403/unavailable). No 2026 item verified; this does not establish nonexistence."
+    },
+    {
+      "venue_id": "C06",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "results_seen": null,
+      "results_screened": 2,
+      "full_text_checked": 0,
+      "entry_url": "https://sigcse2025.sigcse.org/",
+      "limitations": "Official conference abstracts and track readable. ACM DOI fetch 403; DOI independently matched in author institutional bibliography, date not verified at publisher. 2026 scoped query inconclusive."
+    },
+    {
+      "venue_id": "C07",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "results_seen": null,
+      "results_screened": 2,
+      "full_text_checked": 0,
+      "entry_url": "https://iticse.acm.org/2025/program/",
+      "limitations": "Official main program plus author institution metadata; ACM direct access blocked. No 2026 item verified; no zero-hit inference. Working-group proposals are not completed proceedings papers."
+    },
+    {
+      "venue_id": "C08",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "results_seen": null,
+      "results_screened": 1,
+      "full_text_checked": 0,
+      "entry_url": "https://icer2025.acm.org/track/icer-2025-papers",
+      "limitations": "Official program and indexed ACM publication history plus arXiv v3 methodology sections read. Formal ACM full text unavailable; preprint section review cannot be promoted to formal full_text_checked."
+    }
+  ],
+  "items": [
+    {
+      "item_id": "C05-01",
+      "venue_id": "C05",
+      "title": "Toward Teacher-Centered AI Design: Exploring the Role of Pedagogical Values and Contextual Factors in K-12 Teachers' Perceptions of Responsible AI",
+      "doi": "10.22318/cscl2025.817482",
+      "doi_status": "official_ISLS_metadata",
+      "official_url": "https://repository.isls.org/handle/1/11843",
+      "proceedings_type": "Long Paper",
+      "pages": "196-204",
+      "first_public_on": null,
+      "date_precision": "unknown",
+      "formal_year": 2025,
+      "date_evidence": "ISLS Issue Date 2025 only; earliest publication day not verified.",
+      "event_date": "2025-06-10/2025-06-13",
+      "event_source": "https://2025.isls.org/proceedings/",
+      "access": "indexed_official_abstract_only; direct handle 403; advertised CSCL2025_196-204_v2.pdf unavailable",
+      "school_level": "K-12 teachers",
+      "method": "Survey of 98 K-12 teachers about responsible AI priorities and pedagogical values; abstract-level only.",
+      "decision": "retain_partial_historical_bibliography",
+      "reasons": [
+        "Direct K-12 teacher relevance",
+        "No causal effects inferred from survey",
+        "First-public day unknown; excluded as current-week news"
+      ],
+      "risk_cautions": [
+        "v2 PDF implies possible revision; do not equate file version/repository deposit with original first disclosure",
+        "Second round needed for sample/design against original paper"
+      ]
+    },
+    {
+      "item_id": "C05-02",
+      "venue_id": "C05",
+      "title": "Utilizing LLMs to Support Teacher Understanding of AI Literacy",
+      "doi": "10.22318/cscl2025.107218",
+      "doi_status": "official_ISLS_metadata",
+      "official_url": "https://repository.isls.org/handle/1/11944",
+      "proceedings_type": "Poster",
+      "pages": "646-648",
+      "first_public_on": null,
+      "date_precision": "unknown",
+      "formal_year": 2025,
+      "date_evidence": "ISLS Issue Date 2025 only; no first-online day.",
+      "event_date": "2025-06-10/2025-06-13",
+      "access": "indexed_official_abstract_only; direct handle and CSCL2025_646-648.pdf 403",
+      "school_level": "K-12 teacher integration aim; participant school levels unknown",
+      "method": "Work-in-progress design of LLM-generated AI literacy reports for teachers; sample/design details unknown.",
+      "decision": "retain_partial_historical_bibliography",
+      "reasons": [
+        "Relevant teacher-support aim",
+        "Poster, not full paper",
+        "No verified learning-effect study or current-week first publication"
+      ],
+      "risk_cautions": [
+        "Do not turn work-in-progress anticipated findings into completed intervention outcomes"
+      ]
+    },
+    {
+      "item_id": "C06-01",
+      "venue_id": "C06",
+      "title": "Day of AI Australia: Teacher Insights from a Nation-Wide AI Literacy Program for K-12 Students",
+      "doi": "10.1145/3641555.3705158",
+      "doi_status": "author_institution_corrob; ACM direct blocked",
+      "official_url": "https://dl.acm.org/doi/10.1145/3641555.3705158",
+      "evidence_urls": [
+        "https://sigcse2025.sigcse.org/details/sigcse-ts-2025-posters/55/Day-of-AI-Australia-Teacher-Insights-from-a-Nation-Wide-AI-Literacy-Program-for-K-12",
+        "https://research.unsw.edu.au/people/dr-jake-renzella/publications"
+      ],
+      "proceedings_type": "Poster; SIGCSE TS 2025 V.2",
+      "pages": "1375-1376",
+      "first_public_on": null,
+      "date_precision": "unknown",
+      "reported_formal_published_on": "2025-02-18",
+      "date_evidence": "ORCID Crossref-fed work metadata reports 2025-02-18; publisher first-public day not read; retained unknown.",
+      "event_date": "2025-02-28",
+      "access": "official_program_abstract_read; formal_ACM_fulltext_unavailable_403",
+      "school_level": "Upper primary and early secondary ages 10-16; teachers provide feedback",
+      "method": "Post-lesson feedback from over 60 school teachers according to official program abstract; no controlled student-outcome trial established.",
+      "decision": "retain_partial_pending_publisher_check",
+      "reasons": [
+        "Direct K-12 relevant",
+        "Poster only",
+        "Teacher feedback is not measured student causal gain",
+        "Historical, not week news"
+      ],
+      "risk_cautions": [
+        "Second-round check: over 60 is teachers, not student test sample",
+        "DOI/publication date require publisher original second round"
+      ]
+    },
+    {
+      "item_id": "C06-02",
+      "venue_id": "C06",
+      "title": "Building Global AI Literacy: Preparing Teachers for the Future of AI-Driven Classrooms",
+      "doi": "10.1145/3641555.3705101",
+      "doi_status": "author_institution_corrob; ACM direct blocked",
+      "official_url": "https://dl.acm.org/doi/10.1145/3641555.3705101",
+      "evidence_urls": [
+        "https://sigcse2025.sigcse.org/details/sigcse-ts-2025-birds-of-a-feather/19/Building-Global-AI-Literacy-Preparing-Teachers-for-the-Future-of-AI-Driven-Classroom",
+        "https://research.unsw.edu.au/people/dr-jake-renzella/publications"
+      ],
+      "proceedings_type": "Birds of a Feather; V.2 single-page session contribution",
+      "pages": "1727",
+      "first_public_on": null,
+      "date_precision": "unknown",
+      "reported_formal_published_on": "2025-02-18",
+      "date_evidence": "ORCID reports date; ACM original blocked. Event 2025-02-27 is separate.",
+      "event_date": "2025-02-27",
+      "access": "official_program_abstract_read; ACM_403",
+      "school_level": "K-12 teacher development discussion",
+      "method": "Interactive discussion session; no empirical effectiveness design verified.",
+      "decision": "exclude_empirical_research_evidence",
+      "reasons": [
+        "BOF, not main research paper",
+        "No measured student or teacher outcome study",
+        "Historical"
+      ],
+      "risk_cautions": [
+        "Program reach statements are organizer claims, not independently audited causal evidence"
+      ]
+    },
+    {
+      "item_id": "C07-01",
+      "venue_id": "C07",
+      "title": "From Teachers to Students: Evaluating Canvas City as a Path to AI Literacy",
+      "doi": "10.1145/3724363.3729069",
+      "doi_status": "author_institution_repository_corrob; ACM_403",
+      "official_url": "https://dl.acm.org/doi/10.1145/3724363.3729069",
+      "evidence_urls": [
+        "https://iticse.acm.org/2025/program/",
+        "https://kypseli.ouc.ac.cy/entities/publication/7ac4b4cb-42fe-4ff3-b7d3-a0540a9b70af"
+      ],
+      "proceedings_type": "Main proceedings V.1 research paper, not workgroup",
+      "pages": "16-22",
+      "first_public_on": null,
+      "date_precision": "unknown",
+      "reported_formal_published_on": "2025-06-27",
+      "date_evidence": "Author institution repository Date Issued 2025-06-27; publisher original inaccessible and not established as earliest public version.",
+      "event_date": "2025-06-30",
+      "access": "official_program_read; author_institution_indexed_abstract; ACM_403",
+      "school_level": "Teachers; primary/secondary not independently verified in original",
+      "method": "Crowdsourcing experiment with 90 teachers on Prolific according to author institution abstract.",
+      "decision": "retain_partial_pending_school_level_and_publisher_check",
+      "reasons": [
+        "Teacher AI literacy relevance",
+        "No student outcomes verified despite title",
+        "K-12 participant eligibility not original-fulltext verified",
+        "Historical"
+      ],
+      "risk_cautions": [
+        "CyCAT event page truncates DOI to 372906; institution metadata supplies 3729069; do not import malformed DOI",
+        "Second-round confirm actual teacher sampling, design, school levels and formal publication date"
+      ]
+    },
+    {
+      "item_id": "C07-02",
+      "venue_id": "C07",
+      "title": "'AI Training Should Be for Everyone': Informal training on AI",
+      "doi": "10.1145/3724389.3730776",
+      "doi_status": "author_institution_repository_corrob; ACM_unavailable",
+      "official_url": "https://dl.acm.org/doi/10.1145/3724389.3730776",
+      "evidence_urls": [
+        "https://kypseli.ouc.ac.cy/entities/publication/e6532977-8876-4839-a94d-e543b8ab60f8",
+        "https://www.cycat.io/events/30th-acm-conference-on-innovation-and-technology-in-computer-science-education-iticse-2025/"
+      ],
+      "proceedings_type": "Poster; V.2 single-page contribution",
+      "pages": "778",
+      "first_public_on": null,
+      "date_precision": "unknown",
+      "reported_formal_published_on": "2025-06-27",
+      "date_evidence": "Institution Date Issued only; publisher inaccessible.",
+      "event_date": "2025-06-30/2025-07-02",
+      "access": "institution_indexed_abstract; direct_ACM_unavailable",
+      "school_level": "Adult/informal youth exchange ages 18-30; not K-12 sample",
+      "method": "AI training with 36 adults; detailed outcome design not verified.",
+      "decision": "exclude_direct_K12_evidence",
+      "reasons": [
+        "Adult sample",
+        "Poster only",
+        "Teacher/K-12 effectiveness not established",
+        "Historical"
+      ],
+      "risk_cautions": [
+        "Do not infer K-12 relevance from general AI training topic"
+      ]
+    },
+    {
+      "item_id": "C08-01",
+      "venue_id": "C08",
+      "title": "AI Literacy in K-12 and Higher Education in the Wake of Generative AI: An Integrative Review",
+      "doi": "10.1145/3702652.3744217",
+      "doi_status": "indexed_ACM_metadata_and_arxiv_related_DOI",
+      "official_url": "https://dl.acm.org/doi/10.1145/3702652.3744217",
+      "evidence_urls": [
+        "https://icer2025.acm.org/track/icer-2025-papers",
+        "https://arxiv.org/abs/2503.00079",
+        "https://arxiv.org/html/2503.00079v3"
+      ],
+      "proceedings_type": "Research paper; ICER 2025 V.1",
+      "first_public_on": "2025-02-27",
+      "date_precision": "day",
+      "first_public_basis": "arXiv v1 submission timestamp; earlier than formal ACM version",
+      "formal_published_on": "2025-08-02",
+      "date_evidence": "Indexed ACM Publication History Published 02 August 2025. arXiv submission history v1 Thu 27 Feb 2025 23:32:03 UTC explicitly links related ACM DOI. Same-work earliest verified disclosure, not proof no earlier disclosure exists.",
+      "event_date": "2025-08-03/2025-08-06",
+      "access": "indexed_ACM_history; official_program; arXiv_abstract_and_v3_methodology_sections_read; formal_ACM_fulltext_403",
+      "school_level": "Mixed K-12 and undergraduate literature; not exclusively K-12",
+      "method": "Integrative review; preprint v3 methodology specifies ERIC/Scopus plus purposive citation searching for 2020-July 2024 literature; 124 included studies.",
+      "decision": "retain_partial_historical_review_with_version_relation",
+      "reasons": [
+        "K-12 relevant mixed-population review",
+        "Not meta-analysis of intervention causal effects",
+        "Earlier preprint prevents interpreting ACM publication as first disclosure"
+      ],
+      "risk_cautions": [
+        "Second round independently verify earlier preprint and relation; preserve version distinction",
+        "124 are reviewed studies, not participants or K-12-only studies",
+        "Review excludes teacher literacy studies in v3 EC1; do not claim complete teacher-literacy synthesis"
+      ]
+    }
+  ],
+  "internal_doi_duplicates": 0,
+  "existing_records_doi_duplicates": 0,
+  "dedupe_scope": "Compared seven DOI strings with read records.csv only; central integrator must recheck latest main and all groups.",
+  "second_round_required": [
+    "C05-01",
+    "C05-02",
+    "C06-01",
+    "C07-01",
+    "C08-01"
+  ],
+  "next_steps": "Independent original-source access/date/sample/type checks before claiming validated full text; 2026 query failures never mean absent proceedings."
+}

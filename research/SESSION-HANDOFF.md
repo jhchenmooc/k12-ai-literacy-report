@@ -228,3 +228,17 @@
 8. **階段順序**：**目前仍是 P0**；補完政策版本、逐源查核與覆蓋對帳後才啟動 P1 歷年知識庫深化、試算表及網站真實驗收；最後 P2 定期來源池檢閱／排程。九筆首週候選維持 `hold`、正式新期別保持零；不可用歷年文獻冒充 10/09–10/15 當週首次公開新聞，不啟用自動發刊。
 
 **下一個 Session**：先讀本段及上方 P0 歷史；重新檢查 main、open PR、已完成來源與 `search_runs.csv`，再依上述三組開始試行；先查原始來源、自檢、整合 PR，CI 通過才合併。
+
+### 2026-10-09｜P0 三組平行試行已執行：整合與下一批
+
+**已完成**：從 main `e8adfb508890d77712268a0fc68a4323b8a01991`（#89）接手，當時無 open PR；[基準 Run 37937913130](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37937913130) verify/deploy 都成功。三個真實子任務互不重疊：A J10/J11、B J12/J13/J14、C C05–C08；各自只寫[獨立暫存](p0-parallel-pilot-2026-10-09/)，不是三個 worktree。正式三表與候選／manifest在平行搜尋期間雜湊未變，整合者才獨占更新。
+
+- [可重用流程](p0-parallel-search-workflow.md)與[整合裁決／評估](p0-parallel-pilot-2026-10-09/integration.md)：九來源18個逐篇樣本、18個DOI，組間與既有主表重複0；J12/J13四筆舊audit補核不算新發現。七筆只作歷史書目新增，records 24→31、relations 58→72、search runs 10→19，唯一來源覆蓋17/60。44是累積列出樣本出現次數，包含重訪／排除，不能寫44篇獨特文章或全來源完成。所有新批次partial、總命中留空unknown；三筆新主紀錄首發仍unknown、以issue_year索引。
+- [第二輪獨立原始來源核查](p0-parallel-pilot-2026-10-09/second-round.md)：核查者未讀第一輪結論，重新檢索八筆，另兩筆原文unknown。拒絕網絡／MASEM因果、low-tech因果優效、五教師全國／現行政策、作品數當學生分母等外推；同模型AI不等於真人複審。正式全文完整核读0，未升content_checked。
+- 日期反證：ACM3816694 Online AM 2026-05-25早於7/15 Published／12月issue；ICER3744217正式版8/2，但同研究arXiv v1於2025-02-27更早公開。主表C08日期僅指正式ACM manifestation，**不能當同作品首次公開或本週新聞**。JLA9127文章2/25、issue3/30分開；J13兩篇2025 online不改成2026；J10 108779原版footer10/9與institutional export10/27日期衝突未解。
+
+**尚待完成**：C06/C07出版社原文、教師學段／方法、日期；C05首發／PDF v2歷程；J10日期衝突；未窮盡預印本與2026會議分冊。18樣本都未完整讀正式全文；官方indexed片段僅partial。P0整體未完成，不推進P1/P2。九候選仍hold、source_checked=false、正式新期別零，無自動搜尋／發刊。
+
+**三→六組決策**：暫不擴充。B/C有99秒／183秒有界搜尋觀察且重疊81秒，但A開始未留存，完整牆鐘／串行基準與費用unknown；不能報實證加速倍數。來源直接讀取受阻及整合／第二輪補查仍是瓶頸。下一批維持三組並完整記dispatch至交付及整合工時；先补C06/C07/J10/C05/C08，再沿優先級J15–J19/C09–C12，未查來源不得報零命中。
+
+**本整合[PR #90](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/90)的GitHub閘門**：本地195/195既有tests、CSV安全與知識庫／年度索引／出版驗證皆通過；僅修正主表固定總數、固定conference集合及Windows測試路徑假設，未改出版程式。PR最新HEAD verify、合併及main verify/deploy須由實際GitHub結果另行核對，不預寫成功。合併後以本PR的merge SHA與Actions為準，下一session先核對該鏈；CI通過不等於來源真實或正式出刊。基準Run不是本次整合的最終部署證據。

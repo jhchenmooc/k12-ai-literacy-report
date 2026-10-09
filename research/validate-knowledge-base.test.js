@@ -6,7 +6,7 @@ const read=n=>parseCsv(fs.readFileSync(path.join(dir,n+".csv"),"utf8"));
 const records=read("records"),relations=read("relations"),runs=read("search_runs");
 const candidates=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8")).items;
 test("actual nine held candidates remain discovery-only",()=>{
- assert.equal(records.length,24);assert.equal(candidates.length,9);
+ assert.equal(records.filter(x=>x.source_candidate_id).length,9);assert.equal(candidates.length,9);
  assert.ok(candidates.every(x=>x.decision==="hold"&&x.source_checked===false));
  assert.ok(records.filter(x=>x.source_candidate_id).every(x=>x.verification_status==="discovered_unverified"&&x.first_published_on===""&&x.year_basis==="unknown"));
  assert.deepEqual(validate(records,relations,runs,candidates),[]);
@@ -94,7 +94,7 @@ test("dated Springer studies map to monitored J03/J32 and original years",()=>{
 test("LAK conference papers have dated C03 source links",()=>{
  const x=JSON.parse(index(records,relations));
  assert.deepEqual(x["by-conference/C03"],["KB-2026-0012","KB-2026-0013"]);
- assert.deepEqual(x["by-type/conference_paper"],["KB-2026-0012","KB-2026-0013"]);
+ assert.deepEqual(x["by-type/conference_paper"],records.filter(r=>r.record_type==="conference_paper").map(r=>r.record_id).sort());
  assert.ok(candidates.every(x=>x.decision==="hold"));
 });
 
