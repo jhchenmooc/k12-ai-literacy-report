@@ -66,6 +66,8 @@ function dailyFact(c,issueDate){
   if(c.ai_crosscheck_passes!==2||c.ai_crosscheck_status!=="concordant")errors.push("attributed summary needs recorded two-pass crosscheck");
  }else if(c.claim_class!=="bibliographic"||c.risk_tier!=="low")errors.push("daily AI channel permits low-risk bibliographic claims only");
  if(!["official_notice","research_bibliography","official_attributed_summary","research_abstract_attributed_summary"].includes(c.daily_fact_kind))errors.push("invalid daily_fact_kind");
+ if(c.kind==="news_policy"&&!["official_notice","official_attributed_summary"].includes(c.daily_fact_kind))errors.push("policy source cannot use research daily category");
+ if(c.kind==="research"&&!["research_bibliography","research_abstract_attributed_summary"].includes(c.daily_fact_kind))errors.push("research source cannot use policy daily category");
  if(typeof c.source_title!=="string"||!c.source_title.trim()||c.source_title.length>300||/[\r\n<>]/.test(c.source_title))errors.push("invalid source_title");
  if(typeof c.source_organization!=="string"||!c.source_organization.trim()||c.source_organization.length>150||/[\r\n<>]/.test(c.source_organization))errors.push("invalid source_organization");
  if(typeof c.source_title==="string"&&typeof c.source_organization==="string"){
@@ -76,6 +78,7 @@ function dailyFact(c,issueDate){
  }
  if(c.checked_at>issueDate||c.publication_date>issueDate)errors.push("source or review date occurs after daily issue date");
  if(typeof c.first_disclosed_on!=="string"||c.first_disclosed_on!==c.publication_date)errors.push("verified first disclosure required");
+ if(c.first_disclosed_on&&c.first_disclosed_on>issueDate)errors.push("first disclosure occurs after daily issue date");
  if(attributed&&(!Array.isArray(c.summary_evidence_spans)||c.summary_evidence_spans.length===0||c.summary_evidence_spans.some(v=>typeof v!=="string"||v.length<16||!String(c.original_excerpt||"").includes(v))))errors.push("source-aligned evidence spans required");
  if(c.assertion_type&&c.assertion_type!=="direct_statement")errors.push("daily AI channel excludes editorial interpretation");
  if(attributed&&/(已證實|證明|因果|必然|全面強制|所有學生|所有教師|保證有效|應在臺灣推動)/.test(c.attributed_summary||""))errors.push("attributed summary contains disallowed inference or high-impact wording");
@@ -97,6 +100,7 @@ function validate(root){
   const issueDate=daily?(p.match(/^daily\/(\d{4}-\d{2}-\d{2})\/index\.html$/)||[])[1]:null;
   if(daily&&(!issueDate||!Number.isFinite(Date.parse(issueDate+"T00:00:00Z"))||new Date(issueDate+"T00:00:00Z").toISOString().slice(0,10)!==issueDate))errors.push("daily path must contain real ISO issue date");
   if(daily&&issue.publication_mode!=="ai_low_risk_source_facts")errors.push("daily publication mode not explicitly authorized");
+  if(daily&&q!==("publication/claims/daily-"+issueDate+".json"))errors.push("daily claims filename must match daily issue date");
   if(LEGACY.has(p)){errors.push("legacy issue must not be reclassified "+p);continue}
   const htmlPath=path.join(root,p);
   if(!fs.existsSync(htmlPath)){errors.push("edition HTML missing "+p);continue}
