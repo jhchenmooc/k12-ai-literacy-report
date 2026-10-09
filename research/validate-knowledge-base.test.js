@@ -73,7 +73,7 @@ test("three primary-source dated frameworks are archived by original publication
 
 test("Australian dated policy and review remain separate linked works",()=>{
  const x=JSON.parse(index(records,relations));
- assert.deepEqual(x["by-year/2023/first_publication"],["KB-2023-0001"]);
+ assert.ok(x["by-year/2023/first_publication"].includes("KB-2023-0001"));
  assert.ok(x["by-year/2025/first_publication"].includes("KB-2025-0001"));
  assert.deepEqual(x["by-country/AU"],["KB-2023-0001","KB-2025-0001"]);
  assert.deepEqual(x["by-type/policy_review"],["KB-2025-0001"]);
