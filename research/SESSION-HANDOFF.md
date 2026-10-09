@@ -391,3 +391,19 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 - **A10 原文核對（G1／G2）**：讀出版社接受稿 PDF，確認回收 812／有效 768、中職 378（49.2%）、橫斷面自陳、剖面結果未分學段；`source_checked` 仍 `false`，G3 數字未逐表核對。見 [查證紀錄](drafts/2026-10-09-weekly-research-a-verification.md)。
 - **政策背景回原頁核日期**：MEXT 公眾意見徵集 2026-10-06（至 11/05，AI 內容未核，e-Gov 403）、中國《人工智能+教育行动计划》4/2 落款 4/10 發布、香港數字教育藍圖 6/17（將制定中小學 AI 素養學習框架，需追蹤）；皆非本期首發，已寫入 [待查清單](important-unresolved-watchlist.md)。
 - **0 則記錄方式**：出版閘門要求正式期別 claims 非空，「只有狀態摘要」不能登記為期別；若本週 0 則，建議不出刊、只在 `research/drafts/` 留決定紀錄（草稿未提交，10/15 前交管理者決定）。
+
+### 2026-10-09｜網站新版面 v1、每日短訊啟用與分類清單（管理者決定）
+
+**管理者決定**：啟用每日短訊（臺灣時間每日 09:00；只發書目型或來源歸屬型、閘門全過；**daily PR 由編輯 session 在 verify 成功後自行 squash 合併並事後回報**，其他類型 PR 仍需管理者同意）；歷年資料庫公開到網站；新版面依[示意頁](https://claude.ai/artifact/LyanStNqiSEESyBJ9i3zUZ)實作（4 畫面：首頁、每日短訊、歷年資料庫、查核方法）。
+
+**網站結構**：首頁（`index.html`，手寫＋兩個產生區塊）、`daily/`、`weekly/`、`monthly/` 列表頁、`archive/`（`policy/` 國別 × 年份、`research/` 期刊／會議 × 年份）、`about/` 查核方法。共用樣式 `assets/site.css`（沿用設計系統 tokens）。創刊特刊與 9 月月報**原檔未改**，只列入列表頁。
+
+**產生程式 `research/render-site.js`**：
+- `node research/render-site.js --write` 由 `publication/issues.json` 與知識庫重新產生列表頁、歷年資料庫、查核方法、已登記的每日短訊單頁，以及首頁「今日短訊」「資料庫筆數」兩個區塊；不帶參數為檢查模式，CI verify 會檢查並跑 `research/render-site.test.js`。
+- 每日短訊頁由 claims 產生：導覽與說明放在 `<main>` 外，`<main>` 內只有綁定 claim 的段落，來源標題即原文連結；測試確認產出的頁面能原樣通過 `validate-publication.js`。
+- 歷年資料庫**不列週報審查中的候選**（有 `source_candidate_id` 者）；每筆標示核對程度，首發日未核者標「卷期年（首發日未知）」。
+- deploy 打包清單加入 `archive`、`about`。
+
+**分工更新**：知識庫或 `issues.json` 一有變動，衍生頁面就會過期而讓 CI 失敗。因此**兩個 session 改完資料後都要執行 `node research/render-site.js --write` 並一起提交**；但網站檔案的手動修改（首頁文字、`site.css`、`render-site.js` 本身）仍只由編輯 session 做。
+
+**每日短訊例行作業**：已設定每日 08:22（臺灣）觸發本 session 的 Routine，流程：重查 → 合格才建 claims／快照／登記 → `render-site.js --write` 產生頁面 → 測試 → PR → verify 成功後合併 → 確認 Pages → 中文回報。沒有合格項目不發刊、只留紀錄。注意：同一來源在候選池中若仍為 hold，閘門會擋下 daily（`daily claim contradicts held/unverified cumulative candidate`）。
