@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="K-12 AI 素養國際動態網站的設計系統：色彩、字體與元件。">
+<title>設計系統｜K-12 AI 素養國際動態</title>
+<link rel="stylesheet" href="../assets/design-system.css">
+<style>
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
+.sw{border:1px solid var(--border);border-radius:var(--radius-md);overflow:hidden;background:#fff;font-size:15px}
+.sw i{display:block;height:56px}.sw b,.sw code{display:block;padding:2px 12px}.sw code{padding-bottom:10px;color:var(--muted)}
+.demo{background:#fff;border:1px dashed var(--border);border-radius:var(--radius-md);padding:24px;margin:16px 0}
+</style>
+</head>
+<body>
+<a class="skip" href="#content">跳至主要內容</a>
+<header class="hero"><div class="wrap">
+<div class="eyebrow">DESIGN SYSTEM · v0.1</div>
+<h1>設計系統</h1>
+<p>統一首頁、週報、月報與讀者評鑑頁的色彩、字體與元件。樣式來源：<code>assets/design-system.css</code>。</p>
+</div></header>
+<main class="wrap" id="content">
+<section class="section"><h2>色彩</h2>
+<div class="swatches">
+<div class="sw"><i style="background:var(--navy)"></i><b>Navy</b><code>#10243d</code></div>
+<div class="sw"><i style="background:var(--blue-strong)"></i><b>Blue</b><code>#1e55b9</code></div>
+<div class="sw"><i style="background:var(--teal)"></i><b>Teal</b><code>#087b78</code></div>
+<div class="sw"><i style="background:var(--ink)"></i><b>Ink</b><code>#16263e</code></div>
+<div class="sw"><i style="background:var(--muted)"></i><b>Muted</b><code>#53647b</code></div>
+<div class="sw"><i style="background:var(--bg)"></i><b>Background</b><code>#f3f7fc</code></div>
+<div class="sw"><i style="background:var(--tint-amber)"></i><b>Editor note</b><code>#fff9e9</code></div>
+<div class="sw"><i style="background:var(--focus)"></i><b>Focus ring</b><code>#ffb629</code></div>
+</div></section>
+<section class="section"><h2>字體與閱讀</h2>
+<p class="meta">System UI + Noto Sans TC · 內文 19px／行高 1.8 · 行寬上限 80ch</p>
+<div class="demo"><h3>三級標題示例</h3><p>這是內文段落。優先使用原始資料，保留日期、發布機構與證據層級，並以足夠的行距支援長文閱讀。<a href="#content">連結範例</a></p></div></section>
+<section class="section"><h2>元件</h2>
+<div class="demo"><span class="chip" style="background:#10243d">Chip</span> <span class="evidence">官方文件</span> <span class="evidence">研究論文</span></div>
+<div class="demo"><a class="button" href="#content">主要按鈕</a> <a class="button outline" href="#content">次要按鈕</a></div>
+<div class="demo"><div class="strip"><span>政策</span><span>研究</span><span>臺灣啟示</span></div></div>
+<div class="demo cards"><article class="card feature"><div class="tag">卡片 · FEATURE</div><h3>特色卡片</h3><p>用於最新一期。</p></article><article class="card"><div class="tag">卡片</div><h3>一般卡片</h3><p>用於次要資訊。</p></article></div>
+<div class="demo"><div class="callout">重點摘要（callout）</div><br><div class="editor-note">編輯註記：來源侷限與證據限制。</div><br><div class="hint">臺灣啟示（hint）</div></div>
+<div class="demo"><article class="news"><div class="meta">2026/10/09 · 發布機構</div><h3>新聞卡片標題</h3><p>每張新聞卡片至少一個直接支持核心敘述的原始連結。</p></article></div>
+</section>
+<section class="section"><h2>使用原則</h2>
+<ul><li>新頁面引用 <code>assets/design-system.css</code>，勿再複製內嵌樣式。</li><li>對比、焦點框與鍵盤導覽不得退步；手機寬度不橫向捲動。</li><li>既有已發布期別暫不遷移，避免改動已查核內容。</li></ul></section>
+</main>
+<footer class="wrap foot">K-12 AI 素養國際動態 · 設計系統 v0.1</footer>
+</body>
+</html>
