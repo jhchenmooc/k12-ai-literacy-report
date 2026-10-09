@@ -6,7 +6,7 @@ const read=n=>parseCsv(fs.readFileSync(path.join(dir,n+".csv"),"utf8"));
 const records=read("records"),relations=read("relations"),runs=read("search_runs");
 const candidates=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8")).items;
 test("actual nine held candidates remain discovery-only",()=>{
- assert.equal(records.length,14);assert.equal(candidates.length,9);
+ assert.equal(records.length,17);assert.equal(candidates.length,9);
  assert.ok(candidates.every(x=>x.decision==="hold"&&x.source_checked===false));
  assert.ok(records.filter(x=>x.source_candidate_id).every(x=>x.verification_status==="discovered_unverified"&&x.first_published_on===""&&x.year_basis==="unknown"));
  assert.deepEqual(validate(records,relations,runs,candidates),[]);
@@ -79,4 +79,14 @@ test("Australian dated policy and review remain separate linked works",()=>{
  assert.deepEqual(x["by-type/policy_review"],["KB-2025-0001"]);
  assert.ok(relations.some(r=>r.predicate==="reviews"&&r.subject_id==="KB-2025-0001"&&r.object_id==="KB-2023-0001"));
  assert.ok(candidates.every(c=>c.decision==="hold"));
+});
+
+test("dated Springer studies map to monitored J03/J32 and original years",()=>{
+ const x=JSON.parse(index(records,relations));
+ assert.deepEqual(x["by-journal/J03"],["KB-2025-0002","KB-2025-0003"]);
+ assert.deepEqual(x["by-journal/J32"],["KB-2026-0011"]);
+ assert.ok(x["by-year/2025/first_publication"].includes("KB-2025-0002"));
+ assert.ok(x["by-year/2026/first_publication"].includes("KB-2026-0011"));
+ for(const country of ["GB","GR","BR"])assert.deepEqual(x["by-country/"+country],["KB-2025-0002"]);
+ assert.ok(candidates.every(x=>x.decision==="hold"));
 });
