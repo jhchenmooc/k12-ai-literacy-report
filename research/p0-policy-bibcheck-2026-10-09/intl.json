@@ -1,0 +1,345 @@
+{
+ "started_utc": "2026-10-09T18:26:28Z",
+ "ended_utc": "2026-10-09T18:32:10Z",
+ "group": "intl",
+ "requests": [
+  {
+   "utc": "2026-10-09T18:26:36Z",
+   "url": "https://iite.unesco.org/publications/unesco-releases-report-on-the-mapping-of-k-12-artificial-intelligence-curricula/",
+   "http": "200",
+   "user_agent": "瀏覽器字串"
+  },
+  {
+   "utc": "2026-10-09T18:26:38Z",
+   "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+   "http": "000 (curl error/timeout)",
+   "user_agent": "瀏覽器字串",
+   "note": "瀏覽器 UA 時 curl 回傳錯誤（未取得 HTTP 碼），改用 curl 預設 UA 重試成功"
+  },
+  {
+   "utc": "2026-10-09T18:26:39Z",
+   "url": "https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en",
+   "http": "403",
+   "user_agent": "瀏覽器字串",
+   "note": "Azure WAF 403（瀏覽器 UA）；改用 curl 預設 UA 重試 200，未繞過任何驗證頁"
+  },
+  {
+   "utc": "2026-10-09T18:26:39Z",
+   "url": "https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators",
+   "http": "200",
+   "user_agent": "瀏覽器字串"
+  },
+  {
+   "utc": "2026-10-09T18:26:41Z",
+   "url": "https://www.unicef.org/innocenti/reports/policy-guidance-ai-children",
+   "http": "200",
+   "user_agent": "瀏覽器字串"
+  },
+  {
+   "utc": "2026-10-09T18:26:53Z",
+   "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+   "http": "200",
+   "user_agent": "curl 預設"
+  },
+  {
+   "utc": "2026-10-09T18:26:54Z",
+   "url": "https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en",
+   "http": "200",
+   "user_agent": "curl 預設"
+  },
+  {
+   "utc": "2026-10-09T18:27:11Z",
+   "url": "https://unesdoc.unesco.org/ark:/48223/pf0000380602",
+   "http": "403",
+   "user_agent": "curl 預設",
+   "note": "Cloudflare『Just a moment...』挑戰頁，依規定不繞過"
+  },
+  {
+   "utc": "2026-10-09T18:27:54Z",
+   "url": "https://publications.europa.eu/webapi/rdf/sparql (title contains 'ethical use of artificial intelligence and data in teaching')",
+   "http": "000 (curl error/timeout)",
+   "user_agent": "curl 預設",
+   "note": "OP SPARQL 全文篩選逾時 120 秒，無結果（失敗查詢，非零命中）"
+  },
+  {
+   "utc": "2026-10-09T18:30:10Z",
+   "url": "https://op.europa.eu/lastedition/d81a0d54-5348-11ed-92ed-01aa75ed71a1",
+   "http": "200",
+   "final_url": "https://op.europa.eu/en/publication-detail/-/publication/f692aa0b-17a7-11f1-8870-01aa75ed71a1",
+   "user_agent": "curl 預設"
+  },
+  {
+   "utc": "2026-10-09T18:30:33Z",
+   "url": "https://api.crossref.org/works/10.2766/153756",
+   "http": "404",
+   "user_agent": "curl 預設",
+   "note": "Crossref 無此 DOI（EU 出版局 DOI 非 Crossref 登記），失敗查詢"
+  },
+  {
+   "utc": "2026-10-09T18:30:33Z",
+   "url": "https://api.crossref.org/works/10.2766/7967834",
+   "http": "404",
+   "user_agent": "curl 預設",
+   "note": "同上"
+  },
+  {
+   "utc": "2026-10-09T18:30:49Z",
+   "url": "https://www.unicef.org/innocenti/media/1341/file/UNICEF-Global-Insight-policy-guidance-AI-children-2.0-2021.pdf",
+   "http": "200",
+   "user_agent": "curl 預設"
+  },
+  {
+   "utc": "2026-10-09T18:31:06Z",
+   "url": "https://www.unicef.org/globalinsight/reports/policy-guidance-ai-children",
+   "http": "200",
+   "final_url": "https://www.unicef.org/innocenti/",
+   "user_agent": "curl 預設",
+   "note": "舊 Global Insight 網址轉址至 Innocenti 首頁，無獨立 2.0 版本頁"
+  },
+  {
+   "utc": "2026-10-09T18:31:19Z",
+   "url": "https://www.unicef.org/innocenti/media/11991/file/UNICEF-Innocenti-Guidance-on-AI-and-Children-3-2025.pdf",
+   "http": "200",
+   "user_agent": "curl 預設"
+  }
+ ],
+ "items": [
+  {
+   "record_id": "KB-2022-0002",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "IITE 頁內報告名「K-12 AI Curricula: A mapping of government-endorsed AI curricula」，下載連結文字「K-12 AI curricula: a mapping of government-endorsed AI curricula」，僅大小寫差異。"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "頁面寫「UNESCO has released …」；發布頁位於 UNESCO 下屬 IITE（iite.unesco.org），視為 UNESCO。報告本體在 UNESDOC（pf0000380602），該頁 Cloudflare 挑戰未讀。"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "全球 K-12 AI 課程盤點，無國別；紀錄為空陣列。"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "頁面「Publication year: 2022」，公告日「5 September 2022」；紀錄 2022（年精度）相符。5 September 2022 是 IITE 公告日，UNESDOC 首發日未能讀取。"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "政府認可 AI 課程的全球盤點報告，policy_review 合理。"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "官方網域 iite.unesco.org；但為 IITE 公告頁，非 UNESDOC 出版品原頁（https://unesdoc.unesco.org/ark:/48223/pf0000380602，curl 403 挑戰頁）。"
+    }
+   },
+   "page_date_text": "Publication year: 2022；5 September 2022（公告日）；article:modified_time 2022-09-05T19:45:48+00:00",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:26:36Z",
+   "method": "curl 讀 primary_url HTML，抽純文字與 meta；試讀 UNESDOC 記錄頁遇 Cloudflare 挑戰（403），未繞過。"
+  },
+  {
+   "record_id": "KB-2023-0010",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "原頁標題「Guidance for generative AI in education and research」，完全相符。"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "原頁出版者 UNESCO（作者 Miao, Fengchun; Holmes, Wayne），JSON-LD publisher UNESCO。"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "全球指引，無國別。"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "頁面「7 September 2023」，JSON-LD datePublished 2023-09-07T13:59:40+0200；另有「Last update: 16 January 2026」（更新日，非首發）。紀錄採 2023-09-07 首發日，日精度相符。出版品欄位另列年「2023」。"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "UNESCO 全球指引，official_guidance 合理。"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "官方網域 www.unesco.org 的出版品介紹頁（article 類型，標示 Publication），非新聞稿；頁面另連到新聞稿。"
+    }
+   },
+   "page_date_text": "7 September 2023；Last update: 16 January 2026；datePublished 2023-09-07T13:59:40+0200；dateModified 2026-01-16T14:38:25+0100",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:26:53Z",
+   "method": "curl（預設 UA）讀 primary_url HTML，抽純文字與 JSON-LD；首次以瀏覽器 UA 請求 curl 出錯，未遇 captcha。"
+  },
+  {
+   "record_id": "KB-2022-0003",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "原頁標題「Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators」，完全相符。"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "Corporate author(s): Directorate-General for Education, Youth, Sport and Culture (European Commission)，屬歐盟執委會。"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "歐盟出版品，紀錄 EU。"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "「Released on EU publications website: 2022-10-25」，meta dc.date／book:release_date 2022-10-25；「Published: 2022」。紀錄採出版局網站上線日（日精度）相符；是否早於執委會其他管道首發，未另查。"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "執委會教師倫理指引，official_guidance 合理。"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "官方網域 op.europa.eu 出版品原頁。頁面標示「There is a newer edition of this publication.」（指向 2026 年版）。"
+    }
+   },
+   "page_date_text": "Published: 2022；Released on EU publications website: 2022-10-25；PDF DOI 10.2766/153756，ISBN 978-92-76-54190-5",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:26:54Z",
+   "method": "curl 讀 op.europa.eu 出版品頁（瀏覽器 UA 遭 Azure WAF 403，改 curl 預設 UA 200），抽純文字與 meta。Crossref 查 DOI 404（非 Crossref DOI）。"
+  },
+  {
+   "record_id": "KB-2026-0102",
+   "verdict": "mismatch",
+   "checks": {
+    "title": {
+     "status": "mismatch",
+     "note": "基本題名相符，但「(2026 edition)」字樣在 EAC 原頁與 OP 頁都找不到；EAC 頁寫「The latest edition of the guidelines」，OP 頁標「Latest edition」「Published: 2026」。"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "EAC 頁「This site is managed by the European Commission, Directorate-General for Education, Youth, Sport and Culture」；OP 頁 Corporate author(s) 為 DG EAC (European Commission)。"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "歐盟指引，紀錄 EU。"
+    },
+    "first_published_on": {
+     "status": "mismatch",
+     "note": "EAC 原頁無任何發布日字樣（HTML 與 meta 皆無）。官方元資料 OP 新版頁「Released on EU publications website: 2026-06-12」（dc.date 2026-06-12）、「Published: 2026」。紀錄值 2026-03-05 在已讀官方頁面均未出現。另：OP Cellar 識別碼 f692aa0b-17a7-11f1 為 UUIDv1，解碼時間戳 2026-03-04 08:55 UTC，屬系統建檔時間、非明寫發布日，僅供線索。EAC 是否早於 6 月首發未能從原頁確認。"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "執委會教師倫理指引新版，official_guidance 合理。"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "官方網域 education.ec.europa.eu 文件庫頁，但無日期、無版次標示；含日期與 ISBN/DOI 的 OP 出版品頁為 https://op.europa.eu/en/publication-detail/-/publication/f692aa0b-17a7-11f1-8870-01aa75ed71a1。"
+    }
+   },
+   "page_date_text": "EAC 頁：無日期；OP 新版頁：Published: 2026；Released on EU publications website: 2026-06-12；PDF DOI 10.2766/7967834，ISBN 978-92-68-33189-7，Catalogue NC-01-25-186-EN-N",
+   "differences": [
+    {
+     "field": "first_published_on",
+     "record_value": "2026-03-05 (day)",
+     "source_value": "2026-06-12（OP 網站上線日）；EAC 原頁無日期",
+     "source_text": "Released on EU publications website: 2026-06-12"
+    },
+    {
+     "field": "title",
+     "record_value": "Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators (2026 edition)",
+     "source_value": "Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators（無『2026 edition』）",
+     "source_text": "The latest edition of the guidelines …／Latest edition／Published: 2026"
+    }
+   ],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:26:39Z",
+   "method": "curl 讀 primary_url（EAC Drupal 頁，無日期）；由 2022 年版 OP 頁「newer edition」連結（op.europa.eu/lastedition/…）讀到 2026 年版 OP 出版品頁（2026-10-09T18:30:10Z，HTTP 200）。OP SPARQL 逾時；Crossref 404。"
+  },
+  {
+   "record_id": "KB-2021-0001",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "原頁寫「version 2.0 (2021)」並連結英文 PDF；PDF 封面「Policy guidance on AI for children 2.0 | NOVEMBER 2021」，與紀錄題名及版本號相符。原頁主標題現為 3.0 的「Guidance on AI and children」。"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "PDF「© United Nations Children's Fund (UNICEF), November 2021」，Office of Global Insight and Policy 編製。"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "全球指引，無國別。"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "原頁「version 2.0 (2021)」，PDF「November 2021」；紀錄 2021（年精度）相符，可細化到 2021-11。meta article:published_time 2021-11-19 為頁面建立時間，與 2.0 發布月份一致但非明寫發布日。"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "UNICEF 政策指引，official_guidance 合理；PDF 自述為「working document」。"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "官方網域 unicef.org；同一頁明示 version 1.0（2020 草案）、2.0（2021）、3.0（2025），但頁面主標題與「Publication date: December 2025」屬 3.0。2.0 無獨立版本頁（舊 globalinsight 網址轉址到 Innocenti 首頁），版本專屬定位為 PDF https://www.unicef.org/innocenti/media/1341/file/UNICEF-Global-Insight-policy-guidance-AI-children-2.0-2021.pdf。"
+    }
+   },
+   "page_date_text": "原頁：version 2.0 (2021)；PDF：2.0 | NOVEMBER 2021、© UNICEF, November 2021；meta article:published_time 2021-11-19T00:16:25+0000",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:26:41Z",
+   "method": "curl 讀 primary_url HTML；下載頁內連結的 2.0 英文 PDF，以 pdftotext 讀封面與版權頁；查舊 globalinsight 網址轉址。"
+  },
+  {
+   "record_id": "KB-2025-0050",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "原頁「Guidance on AI and children」＋「Version 3.0 | Recommendations for AI policies and systems that uphold child rights」，相符。"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "UNICEF Innocenti（Office of Strategy and Evidence）頁面與 PDF「UNICEF Guidance on AI and Children 3.0」。"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "頁面 Related topics 標「Global」，無國別。"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "原頁「Publication date December 2025」，PDF 封面「3.0 | DECEMBER 2025」；紀錄 2025-12（月精度）相符。meta article:modified_time 2026-01-09 為更新時間。"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "UNICEF 指引第三版，official_guidance 合理。"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "官方網域 unicef.org 原頁，主內容即 3.0；與 KB-2021-0001 共用同一 URL（見該筆說明）。"
+    }
+   },
+   "page_date_text": "Publication date December 2025；PDF 封面 3.0 | DECEMBER 2025；article:modified_time 2026-01-09T09:34:16+0000",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:26:41Z",
+   "method": "curl 讀 primary_url HTML；下載頁內 3.0 PDF（media/11991）以 pdftotext 讀封面。"
+  }
+ ],
+ "counts": {
+  "total": 6,
+  "match": 5,
+  "mismatch": 1,
+  "unverifiable": 0
+ },
+ "limits": [
+  "UNESDOC（unesdoc.unesco.org）回 Cloudflare 挑戰頁 403，依規定未繞過；KB-2022-0002 的 UNESDOC 出版品元資料未讀，以 IITE 官方公告頁核對。",
+  "op.europa.eu 以瀏覽器 UA 請求遭 Azure WAF 403，改 curl 預設 UA 成功；未繞過驗證頁、未停用 TLS。",
+  "EU 出版局 SPARQL 端點全文篩選逾時；Crossref 不收錄 10.2766 前綴這兩個 DOI（404）。",
+  "EU 出版局『Released on EU publications website』是出版局網站上線日，未必等於執委會首次發布日；KB-2022-0003 未另查其他管道。",
+  "KB-2026-0102 的 2026-03-05 來源未能在任何已讀官方頁面找到；Cellar UUID 解碼時間（2026-03-04）僅為線索，不作證據。",
+  "未使用 WebSearch／WebFetch；未讀 research/p0-bpol-2026-10-09/。下載檔僅存於 scratchpad/pv/work-intl/dl/，未寫入 repo。"
+ ]
+}
