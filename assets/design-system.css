@@ -1,0 +1,68 @@
+/* K-12 AI 素養國際動態 · Design System v0.1
+   Tokens and components extracted from the inline styles of index.html and the weekly/monthly editions.
+   Existing published pages are NOT yet migrated; new pages should link this file. */
+
+/* ---------- Tokens ---------- */
+:root{
+  --navy:#10243d; --blue:#2457c6; --blue-strong:#1e55b9; --teal:#087b78;
+  --ink:#16263e; --muted:#53647b; --border:#dce5f1; --bg:#f3f7fc; --surface:#fff;
+  --link:#1549ab; --focus:#ffb629;
+  --tint-blue:#ecf5fc; --tint-teal:#f1f7f8; --tint-amber:#fff9e9; --amber:#ad7a12;
+  --radius-sm:8px; --radius-md:12px; --radius-lg:20px;
+  --shadow-card:0 12px 32px #162c520a; --shadow-hover:0 18px 40px #162c521c;
+  --font:system-ui,-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;
+  --measure:80ch; --wrap:1100px; --article:1020px;
+  --fs-body:19px; --fs-lead:22px; --fs-small:15px;
+  color-scheme:light;
+}
+
+/* ---------- Base ---------- */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);font-size:var(--fs-body);line-height:1.8;color:var(--ink);background:var(--bg)}
+p{max-width:var(--measure)}
+h1,h2,h3{text-wrap:balance}
+a{color:var(--link);text-underline-offset:4px;text-decoration-thickness:1.5px;overflow-wrap:anywhere}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:4px;border-radius:3px}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:14px;top:14px;z-index:10;background:#fff;padding:9px 15px}
+.wrap{width:min(var(--wrap),calc(100% - 44px));margin:auto}
+
+/* ---------- Components ---------- */
+.hero{position:relative;overflow:hidden;color:#fff;padding:70px 0 76px;
+  background:radial-gradient(circle at 85% 25%,#367bc3 0,transparent 33%),linear-gradient(128deg,#10243d,#153e72 70%,#14636a)}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(37px,5.6vw,63px);line-height:1.18;letter-spacing:-.025em;margin:14px 0 20px}
+.eyebrow{font-size:14px;letter-spacing:.13em;font-weight:750;color:#b7e8ff}
+.chip{font-size:15px;background:#ffffff20;border:1px solid #ffffff4b;padding:5px 13px;border-radius:30px}
+.section{padding:49px 0 42px}
+.section h2{font-size:clamp(26px,3vw,34px);letter-spacing:-.02em;line-height:1.32;margin:0 0 20px}
+.cards{display:grid;grid-template-columns:1.35fr 1fr;gap:20px}
+.card{border:1px solid var(--border);background:var(--surface);border-radius:var(--radius-lg);padding:30px;box-shadow:var(--shadow-card);transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-hover)}
+.card.feature{background:linear-gradient(160deg,#fff,#edf6ff)}
+.tag{font-size:15px;font-weight:800;letter-spacing:.03em;color:#07596d}
+.button{display:inline-block;text-decoration:none;background:var(--blue-strong);color:#fff;font-size:17px;font-weight:750;padding:12px 20px;border-radius:var(--radius-md);margin-top:12px}
+.button:hover{background:#123e8c}
+.button.outline{background:#fff;color:#174c9e;border:2px solid #bbd1ee}
+.button.outline:hover{background:#edf6ff}
+.strip{display:flex;gap:16px;flex-wrap:wrap}
+.strip span{background:#e6edf7;color:#34516f;padding:9px 15px;border-radius:var(--radius-md);font-size:var(--fs-small)}
+.callout{background:var(--tint-blue);border-left:5px solid #2673b6;padding:25px 28px;border-radius:var(--radius-md)}
+.editor-note{background:var(--tint-amber);border-left:5px solid var(--amber);padding:20px 24px;border-radius:9px}
+.hint{background:#f2f8f7;border-left:4px solid #24808c;padding:15px 19px;border-radius:7px}
+.evidence{display:inline-block;background:#eff3f7;border:1px solid #d5e0eb;border-radius:var(--radius-sm);font-size:14px;font-weight:750;color:#28465f;padding:3px 10px;margin:4px 8px 6px 0}
+.news{border:1px solid var(--border);border-radius:16px;padding:27px;margin:22px 0;background:#fff}
+.meta{color:#425a75;font-size:16px;font-weight:700}
+.foot{border-top:1px solid var(--border);color:var(--muted);font-size:var(--fs-small);padding:30px 0 55px}
+
+/* ---------- Responsive / a11y / print ---------- */
+@media(max-width:780px){
+  body{font-size:18px}
+  .hero{padding:44px 0}
+  .cards{grid-template-columns:1fr}
+  .card{padding:24px}
+  .wrap{width:min(100% - 32px,var(--wrap))}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.card{transition:none}.card:hover{transform:none}}
+@media print{body{background:#fff}.card,.news{break-inside:avoid}.skip{display:none}}
