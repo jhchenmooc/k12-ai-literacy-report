@@ -6,9 +6,9 @@ const read=n=>parseCsv(fs.readFileSync(path.join(dir,n+".csv"),"utf8"));
 const records=read("records"),relations=read("relations"),runs=read("search_runs");
 const candidates=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8")).items;
 test("actual nine held candidates remain discovery-only",()=>{
- assert.equal(records.length,9);assert.equal(candidates.length,9);
+ assert.equal(records.length,12);assert.equal(candidates.length,9);
  assert.ok(candidates.every(x=>x.decision==="hold"&&x.source_checked===false));
- assert.ok(records.every(x=>x.verification_status==="discovered_unverified"&&x.first_published_on===""&&x.year_basis==="unknown"));
+ assert.ok(records.filter(x=>x.source_candidate_id).every(x=>x.verification_status==="discovered_unverified"&&x.first_published_on===""&&x.year_basis==="unknown"));
  assert.deepEqual(validate(records,relations,runs,candidates),[]);
 });
 test("indexes remain deterministic",()=>{
@@ -41,8 +41,8 @@ test("real knowledge classifications retain unverified status and journal links"
  assert.deepEqual(listed["by-journal/J02"],["KB-2026-0009"]);
  assert.deepEqual(listed["by-source/O-HK-EDB"],["KB-2026-0002","KB-2026-0003"]);
  assert.equal(listed["by-year/unknown/unknown"].length,9);
- assert.equal(listed["by-year/2026/first_publication"],undefined);
- assert.ok(relations.every(x=>x.verification_status==="discovered_unverified"));
+ assert.deepEqual(listed["by-year/2026/first_publication"],["KB-2026-0010"]);
+ assert.ok(relations.filter(x=>x.subject_id!=="KB-2024-0001"&&x.subject_id!=="KB-2024-0002"&&x.subject_id!=="KB-2026-0010").every(x=>x.verification_status==="discovered_unverified"));
 });
 test("synthetic country, topic and conference view is typed and deterministic",()=>{
  const x=[{relation_id:"T1",subject_id:"KB-2026-0001",predicate:"studies_country",object_namespace:"vocabulary",object_id:"TW",verification_status:"discovered_unverified"},
@@ -56,4 +56,16 @@ test("synthetic country, topic and conference view is typed and deterministic",(
 test("venue/agency relation mix-up is invalid",()=>{
  const x=[{relation_id:"ERR",subject_id:"KB-2026-0001",predicate:"published_in",object_namespace:"source",object_id:"O-UNESCO",verification_status:"discovered_unverified"}];
  assert.ok(validate(records,x,runs,candidates).some(v=>v.includes("invalid venue relation")));
+});
+
+test("three primary-source dated frameworks are archived by original publication year only",()=>{
+ const x=JSON.parse(index(records,relations));
+ assert.deepEqual(x["by-year/2024/first_publication"],["KB-2024-0001","KB-2024-0002"]);
+ assert.deepEqual(x["by-year/2026/first_publication"],["KB-2026-0010"]);
+ assert.equal(x["by-year/unknown/unknown"].length,9);
+ assert.equal(x["by-type/framework"].length,3);
+ assert.equal(x["by-category/K1"].length,3);
+ assert.equal(x["by-category/K3"].length,3);
+ assert.ok(records.filter(r=>r.record_type==="framework").every(r=>r.verification_status==="bibliographic_checked"));
+ assert.ok(candidates.every(c=>c.decision==="hold"));
 });
