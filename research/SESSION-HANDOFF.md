@@ -203,3 +203,8 @@
 - PR #86 查核 J08／J09 六個正式出版社 DOI 樣本，將 2025 first-online/2026 issue、K–12 教師／校長與大學生樣本分離；verify run 37936333111 成功，合併 a614e85c7ceeafd6e7d7fe215bc75110914a40c9。
 - 本 PR 補登兩筆 J08/J09 scoped 批次至 `search_runs.csv`，未知總命中仍空白，樣本計數 2＋4。累積七個查詢批次共 21 個樣本（含排除與重複），不等於 21 篇新增論文或已覆蓋全部 60 個來源。v1.6 正式出版／九筆 hold 不變。
 - 下一步 P0 按監測優先級繼續 J10–J14、C04 等來源；核查來源官方全文／索引、DOI、首發日期、學段及排除。完成 P0 之前不提前 P1/P2；每批 verify 通過才合併，合併後 main Actions 須另核對。
+
+### P0 J12/J13/C04 scoped evidence and coverage (2026-10-09; current PR pending CI)
+- Scoped primary-source audit in `research/p0-j12-j13-c04-audit-2026-10-09.md`: five listed item samples (J12 2, J13 2, C04 1), journals' online vs issue dates, higher education exclusion, and ICLS proceedings year without invented first-online day. J10/J11/J14 remain unverified; no zero-hit conclusion.
+- Append three partial `search_runs.csv` batches with unknown `results_seen` left blank; cumulative ten logged search runs and 26 item-level samples, not 26 unique papers or whole-venue coverage. No new knowledge-base master records or publication approval.
+- Next P0: verify J10/J11/J14 official journal article records, then other journal/conference series; reconcile coverage honestly. Maintain v1.6 publication gate, nine hold candidates, zero new editions, no automation.
