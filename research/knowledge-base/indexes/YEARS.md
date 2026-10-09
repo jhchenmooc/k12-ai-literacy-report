@@ -115,6 +115,22 @@
 | KB-2025-0056 — [Youth as Advisors in Participatory Design: Situating Teens’ Expertise in Everyday Algorithm Auditing with Teachers and Researchers](https://doi.org/10.1145/3713043.3728849) | conference_paper | 未知 | discovered_unverified |
 | KB-2025-0057 — [Behind the Scenes: Unpacking Students' Experience during a Collaborative AI Workshop using Multi-Modal Data](https://doi.org/10.1145/3713043.3728839) | conference_paper | 未知 | discovered_unverified |
 | KB-2025-0058 — [If anybody finds out you are in BIG TROUBLE”: Understanding Children’s Hopes, Fears, and Evaluations of Generative AI](https://doi.org/10.1145/3713043.3731498) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0059 — [Towards a model for primary students’ behavioral intention to learn AI: programming ability, AI literacy and ethics as three fundamental pillars](https://doi.org/10.1080/10494820.2025.2450658) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0060 — [Unveiling AI literacy in K-12 education: a systematic literature review of empirical research](https://doi.org/10.1080/10494820.2025.2482586) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0061 — [Defining, enhancing, and assessing artificial intelligence literacy and competency in K-12 education from a systematic review](https://doi.org/10.1080/10494820.2025.2487538) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0062 — [Exploring the influential factors and key dimensions of AI information literacy among high school students: a social-ecological perspective](https://doi.org/10.1080/10494820.2025.2575016) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0063 — [Friend, tool, or threat? High school students’ and teachers’ perspectives on AI in learning](https://doi.org/10.1080/10494820.2025.2591858) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0064 — [Navigating GenAI: A participatory narrative inquiry into a teenager's experiences with ChatGPT in informal learning environments](https://doi.org/10.1080/10494820.2025.2606836) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0065 — [Artificial intelligence in Ethiopian school curriculum: Educators' practices, challenges, and recommendations](https://doi.org/10.1016/j.caeo.2025.100251) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0066 — [Rethinking artificial-intelligence literacy through the lens of teacher educators: The adaptive AI model](https://doi.org/10.1016/j.caeo.2025.100291) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0067 — [Relationship between pre-service teachers’ perceived competencies, affective dispositions, and readiness to use artificial intelligence: A study informed by the intelligent-TPACK](https://doi.org/10.1016/j.caeo.2025.100305) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0068 — [Intelligent‑TPACK in practice: design and evidence from a three‑week teacher preparation module](https://doi.org/10.1016/j.caeo.2025.100306) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0069 — [Intelligent-TPACK in teacher education: Examining preservice elementary teachers’ emerging views about AI classroom use](https://doi.org/10.1016/j.caeo.2025.100307) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0070 — [Fostering Intelligent-TPACK through AI-assistance: A multi-method study in pre-service teacher education](https://doi.org/10.1016/j.caeo.2025.100314) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0071 — [Understanding pre-service teachers’ needs for integrating AI-based tools in instruction through intelligent TPACK framework](https://doi.org/10.1016/j.caeo.2025.100317) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0072 — [Constructing AI Literacy: A Hands-On Approach for School Children](https://doi.org/10.15388/infedu.2025.26) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0073 — [Ethical Thinking: Integration and Measurement in an AI Curriculum for Middle-High School Students](https://doi.org/10.15388/infedu.2025.29) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0074 — [Investigating Preservice STEM Teachers’ AI Literacy and Self-Efficacy Beliefs: Are They Ready for AI?](https://doi.org/10.15388/infedu.2025.22) | journal_article | 未知 | discovered_unverified |
 
 ## 2026｜first_publication
 
@@ -246,6 +262,31 @@
 | KB-2026-0136 — [Games of Representation: Developing Card-Based Activities to Teach About Representation and Bias in AI Datasets](https://doi.org/10.1609/aaai.v40i47.41526) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0137 — [Situating Youth Agency in Designing AI & Art Policies](https://doi.org/10.1609/aaai.v40i47.41522) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0138 — [From disengaged to self-determined: A latent transition analysis of students’ AI learning motivation](https://doi.org/10.1007/s10639-026-13998-y) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0139 — [AI literacy for K–12 education: an international Delphi study](https://doi.org/10.1080/10494820.2026.2649553) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0140 — [How organizational support enhances teachers’ AI literacy: the chain mediating effects of innovation capability and technology acceptance](https://doi.org/10.1080/10494820.2026.2658209) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0141 — [Playfulness and social–emotional support as predictors of elementary students’ AI self-efficacy](https://doi.org/10.1080/10494820.2026.2667458) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0142 — [Turkish adaptation of the artificial intelligence literacy and generative artificial intelligence competency scales](https://doi.org/10.1080/10494820.2026.2668027) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0143 — [An AI-enhanced computational thinking program: effects on children’s computational thinking, self-regulation, and representations of AI robots](https://doi.org/10.1080/10494820.2026.2672559) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0144 — [English language teachers’ acceptance of artificial intelligence predicted by AI literacy and intelligent TPACK within an extended TAM framework](https://doi.org/10.1080/10494820.2026.2677729) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0145 — [Interaction-Rich instructional design in AI-Supported teacher education: Learning processes and educational implications for instructional readiness](https://doi.org/10.1080/10494820.2026.2631728) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0146 — [Cultivating pre-service teachers’ design thinking and generative artificial intelligence literacy through an LLM-based educational website design task](https://doi.org/10.1080/10494820.2026.2642871) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0147 — [Exploring pre-service teachers’ AI ethics and application strategies in a generative AI-supported knowledge-building community](https://doi.org/10.1080/10494820.2026.2690473) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0148 — [Preparing preservice teachers for generative AI: the role of conceptual instruction in shaping epistemic beliefs and self-regulated learning](https://doi.org/10.1080/10494820.2026.2691906) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0149 — [Cultivating preservice teachers’ GenAI competencies in a grammar methodology course](https://doi.org/10.1080/10494820.2026.2715568) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0151 — [Beyond operational skills: Teachers’ AI knowledge and interactions with generative AI in lesson planning](https://doi.org/10.1016/j.caeo.2026.100371) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0152 — [Science educators’ AI literacy and AI usage in teaching: Implications for post-qualification programs](https://doi.org/10.1016/j.caeo.2026.100376) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0153 — [Levels of AI awareness and pedagogical skills among Nigerian teachers: The differentials of gender and teachers’ experience](https://doi.org/10.1016/j.caeo.2026.100401) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0154 — [Ethical principles of AI in education: Exploring teachers’ contextual ethical reasoning through an STS lens](https://doi.org/10.1016/j.caeo.2026.100423) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0155 — [Conceptualizing pre-service teachers' readiness for AI integration into teaching practices: An intelligent-TPACK approach](https://doi.org/10.1016/j.caeo.2025.100320) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0156 — [Coding, robots, computational concepts, and machine learning using the microbit card and the Maqueen and Nezha kits. A study in initial teacher training](https://doi.org/10.1016/j.caeo.2026.100366) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0157 — [Teaching the teachers: A systematic review of genAI-specific technological pedagogical knowledge (TPK) in teacher education](https://doi.org/10.1016/j.caeo.2026.100367) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0158 — [Assessing AI-TPACK readiness in mathematics teacher education: The role of self-efficacy and teaching beliefs](https://doi.org/10.1016/j.caeo.2026.100375) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0159 — [Human-centered AI for teacher educators: Designing professional learning for critical AI literacy](https://doi.org/10.1016/j.caeo.2026.100399) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0160 — [AI training and science student teachers’ TPACK in campus-based and distance education: a comparative study](https://doi.org/10.1016/j.caeo.2026.100410) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0161 — [Can Teacher AI Literacy Reach Those Who Need It Most? Professional Learning, Realised Access, and Cumulative Advantage in TALIS 2024](https://doi.org/10.15388/infedu.2605.036) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0162 — [Pedagogical Noise in GenAI-Supported Algorithmisation: Scaffolding and Substitution in Upper-Secondary Informatics](https://doi.org/10.15388/infedu.2606.033) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0163 — [Measuring the Data Agency of Pre-Service Teachers: A Six-Factor Model](https://doi.org/10.15388/infedu.2506.023) | journal_article | 未知 | discovered_unverified |
 
 ## 2027｜issue_year
 
