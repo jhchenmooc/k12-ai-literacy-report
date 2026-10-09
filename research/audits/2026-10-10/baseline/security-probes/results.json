@@ -1,0 +1,124 @@
+{
+  "control": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "checked_editions": 1,
+    "legacy_editions": 0
+  },
+  "source_trace_checks": {
+    "valid": [],
+    "wrong_hash": [
+      "snapshot SHA256 absent or incorrect"
+    ],
+    "missing_excerpt": [
+      "original_excerpt too short/missing"
+    ],
+    "wrong_url": [
+      "evidence source URL not matched to claim"
+    ],
+    "path_traversal": [
+      "missing/invalid evidence_path"
+    ],
+    "translation_not_reviewed": [
+      "translation not reviewed"
+    ]
+  },
+  "claim_checks": {
+    "valid": {
+      "allow": true,
+      "reasons": []
+    },
+    "high_risk": {
+      "allow": false,
+      "reasons": [
+        "high-risk claim requires separate editorial review and cannot be auto-published",
+        "invalid publication decision"
+      ]
+    },
+    "unknown_conflict": {
+      "allow": false,
+      "reasons": [
+        "unresolved or unknown conflict",
+        "invalid publication decision"
+      ]
+    },
+    "invalid_date": {
+      "allow": false,
+      "reasons": [
+        "invalid publication_date date",
+        "invalid publication decision"
+      ]
+    },
+    "unsafe_source": {
+      "allow": false,
+      "reasons": [
+        "invalid https source url",
+        "invalid publication decision"
+      ]
+    },
+    "medium_no_crosscheck": {
+      "allow": false,
+      "reasons": [
+        "medium risk needs two review passes",
+        "invalid publication decision"
+      ]
+    }
+  },
+  "named_entity_Tab": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "checked_editions": 1,
+    "legacy_editions": 0
+  },
+  "named_entity_NewLine": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "checked_editions": 1,
+    "legacy_editions": 0
+  },
+  "literal_javascript": {
+    "ok": false,
+    "errors": [
+      "weekly/2026-10-09_10-15/index.html: unsafe URL scheme in registered HTML"
+    ],
+    "warnings": [],
+    "checked_editions": 1,
+    "legacy_editions": 0
+  },
+  "comment_fake_main": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "checked_editions": 1,
+    "legacy_editions": 0
+  },
+  "unregistered_file": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "checked_editions": 1,
+    "legacy_editions": 0
+  },
+  "extraneous_binding_attr": {
+    "ok": false,
+    "errors": [
+      "weekly/2026-10-09_10-15/index.html: unbound content <p>: Synthetic notice",
+      "weekly/2026-10-09_10-15/index.html: claim must appear exactly once in HTML: C1 (0)"
+    ],
+    "warnings": [],
+    "checked_editions": 1,
+    "legacy_editions": 0
+  },
+  "duplicate_id_cli": {
+    "exit_status": 0,
+    "stdout": "[\n  {\n    \"id\": \"C1\",\n    \"allow\": true,\n    \"reasons\": []\n  },\n  {\n    \"id\": \"C1\",\n    \"allow\": false,\n    \"reasons\": [\n      \"high-risk claim requires separate editorial review and cannot be auto-published\",\n      \"insufficient level\",\n      \"outcome not checked\",\n      \"independent human review missing\",\n      \"invalid publication decision\"\n    ]\n  }\n]\n",
+    "stderr": ""
+  },
+  "held_valid_cli": {
+    "exit_status": 0,
+    "stdout": "[\n  {\n    \"id\": \"C1\",\n    \"allow\": true,\n    \"reasons\": []\n  }\n]\n"
+  }
+}

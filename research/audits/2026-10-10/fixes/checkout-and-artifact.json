@@ -1,0 +1,52 @@
+{
+  "checkout": {
+    "autocrlf": true,
+    "textFiles": 300,
+    "crlfViolations": [],
+    "protectedByteChecks": [
+      {
+        "file": "research/knowledge-base/data/records.csv",
+        "unchanged": true
+      },
+      {
+        "file": "research/knowledge-base/data/relations.csv",
+        "unchanged": true
+      },
+      {
+        "file": "research/knowledge-base/data/search_runs.csv",
+        "unchanged": true
+      },
+      {
+        "file": "research/reference/README.md",
+        "unchanged": true
+      },
+      {
+        "file": "research/reference/tw-k12-ai-literacy-framework-2026-04-17.pdf",
+        "unchanged": true
+      },
+      {
+        "file": "research/reference/tw-k12-ai-literacy-framework-2026-04-17.txt",
+        "unchanged": true
+      },
+      {
+        "file": "research/retrospective-2026-09-29_10-08.csv",
+        "unchanged": true
+      },
+      {
+        "file": "research/tool-trial-2026-10-09/screening.csv",
+        "unchanged": true
+      },
+      {
+        "file": "research/venue-watchlist.csv",
+        "unchanged": true
+      }
+    ],
+    "renderExit": 0,
+    "renderOutput": "site pages consistent 10\n"
+  },
+  "artifact": {
+    "files": 22,
+    "missingOrChanged": [],
+    "brokenLocalLinks": []
+  }
+}

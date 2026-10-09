@@ -1,0 +1,37 @@
+✔ detects hidden population and causal overclaim despite matching N=95 (2.9408ms)
+✔ 116 recruited and analyzed contradiction remains blocked with mapped numbers (0.6139ms)
+✔ unmapped number and policy implication force incomplete even if subset matches (1.934ms)
+✔ a fully mapped typed statement remains held and not certified (0.541ms)
+✔ number shown as context-only never counted as verified (0.5412ms)
+✔ made-up annotations do not bypass coverage (0.3473ms)
+✔ unknown mandatory field never silently treated as false (0.2883ms)
+✔ missing or malformed claim text fails closed (0.2564ms)
+✔ malformed coverage collections return the existing invalid format and keep publication held (1.2811ms)
+✔ eight typed probes produce conservative reproducible outcomes (5.7085ms)
+✔ 116 initially recruited cannot support 116 analyzed (0.7268ms)
+✔ unknown legal mandates and learning outcomes remain unknown, not false (0.7883ms)
+✔ partial matches cannot hide a contradiction (0.3562ms)
+✔ missing facts do not become a negative conclusion (0.2845ms)
+✔ fact provenance is fail closed on missing locator and pretend verification (0.4646ms)
+✔ invalid schema and fake source mapping never pass as evidence (0.2666ms)
+✔ not a natural language validator, and no automatic publication even when values agree (0.414ms)
+✔ malformed fact collections and assertion elements return invalid input without throwing (0.5157ms)
+✔ form labels are extracted correctly (1.963ms)
+✔ only actual reader issues in period count (2.1299ms)
+✔ aggregation excludes empty or malformed scores (1.2993ms)
+✔ render explains ratings are not factual certification (3.2009ms)
+✔ supports renamed reader-perceived credibility rating (0.6702ms)
+✔ denominators show opt-outs and closed does not mean corrected (1.0546ms)
+✔ all 1001 reader submissions are collected before publishing (41.0997ms)
+✔ an existing summary after page ten prevents duplicate publication (14.0936ms)
+✔ a pull request with the digest title is not an existing summary issue (2.1069ms)
+✔ failed or malformed later pages never publish partial summaries (5.4745ms)
+✔ an exactly full page requests the empty last page and an empty window does not post (5.0348ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 387.1606

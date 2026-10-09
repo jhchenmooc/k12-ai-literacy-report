@@ -1,0 +1,24 @@
+"use strict";
+const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process');
+const repo=path.resolve(__dirname,'../../audit-repo-20261010'),site=path.join(__dirname,'full-extra-site');
+fs.cpSync(repo,site,{recursive:true,filter:src=>!src.split(path.sep).includes('.git')});
+const {validate}=require(path.join(repo,'research/validate-publication.js'));
+const results={baseline_gate:validate(site)};
+const extra='weekly/2026-09-29_10-08/extra.html';
+fs.writeFileSync(path.join(site,extra),'<html><main><p>Unreviewed extra publication</p></main></html>');
+results.extra_gate=validate(site);
+const render=cp.spawnSync(process.execPath,[path.join(repo,'research/render-site.js'),site],{encoding:'utf8'});
+results.generated_page_check={exit_status:render.status,stdout:render.stdout,stderr:render.stderr};
+// Normalize existing stale generated pages only inside this isolated fixture.
+const rebuild=cp.spawnSync(process.execPath,[path.join(repo,'research/render-site.js'),site,'--write'],{encoding:'utf8'});
+const recheck=cp.spawnSync(process.execPath,[path.join(repo,'research/render-site.js'),site],{encoding:'utf8'});
+results.isolated_rebuild={exit_status:rebuild.status,stdout:rebuild.stdout,stderr:rebuild.stderr};
+results.normalized_generated_page_check={exit_status:recheck.status,stdout:recheck.stdout,stderr:recheck.stderr};
+results.normalized_gate=validate(site);
+const artifact=path.join(__dirname,'public-artifact');fs.mkdirSync(path.join(artifact,'publication'),{recursive:true});
+for(const file of ['index.html','.nojekyll'])fs.copyFileSync(path.join(site,file),path.join(artifact,file));
+for(const dir of ['feedback','weekly','monthly','daily','archive','about','assets','design-system'])if(fs.existsSync(path.join(site,dir)))fs.cpSync(path.join(site,dir),path.join(artifact,dir),{recursive:true});
+fs.copyFileSync(path.join(site,'publication/issues.json'),path.join(artifact,'publication/issues.json'));
+results.extra_in_artifact=fs.existsSync(path.join(artifact,extra));
+results.research_excluded=!fs.existsSync(path.join(artifact,'research'));
+fs.writeFileSync(path.join(__dirname,'full-artifact-results.json'),JSON.stringify(results,null,2));console.log(JSON.stringify(results,null,2));

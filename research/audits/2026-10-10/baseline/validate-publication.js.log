@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "errors": [],
+  "warnings": [
+    "Legacy issue not certified by this gate: weekly/2026-09-29_10-08/index.html",
+    "Legacy issue not certified by this gate: monthly/2026-09/index.html"
+  ],
+  "checked_editions": 0,
+  "legacy_editions": 2
+}
+
+STDERR:

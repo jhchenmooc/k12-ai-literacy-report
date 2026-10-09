@@ -1,0 +1,19 @@
+{
+  "baseline": "2329a91d1e5af66da00848fa72daca2c230edb47",
+  "branch": "fix/audit-findings-20261010",
+  "status": " M .github/workflows/verify-and-deploy.yml\n M README.md\n M about/index.html\n M archive/conferences/index.html\n M archive/index.html\n M archive/journals/index.html\n M archive/policy/index.html\n M archive/research/index.html\n M assets/site.css\n M daily/index.html\n M index.html\n M monthly/index.html\n M research/audit-chinese-claim-coverage.js\n M research/audit-chinese-claim-coverage.test.js\n M research/compare-source-facts.js\n M research/compare-source-facts.test.js\n M research/ingest-candidates.js\n M research/ingest-candidates.test.js\n M research/prepare-daily-brief.js\n M research/prepare-daily-brief.test.js\n M research/render-site.js\n M research/render-site.test.js\n M research/scaffold-weekly.js\n M research/summarize-reader-feedback.js\n M research/summarize-reader-feedback.test.js\n M research/validate-claims.js\n M research/validate-knowledge-base.js\n M research/validate-knowledge-base.test.js\n M research/validate-publication.js\n M research/validate-publication.test.js\n M research/validate-source-trace.js\n M weekly/index.html\n?? .gitattributes\n?? .gitignore\n?? package-lock.json\n?? package.json\n?? research/local-validation.md\n?? research/public-site.js\n?? research/source-review-state.js\n?? research/validate-publication-security.test.js\n",
+  "trackedDiffStat": " .github/workflows/verify-and-deploy.yml       |  29 +++---\n README.md                                     |   1 +\n about/index.html                              |   2 +-\n archive/conferences/index.html                |   4 +-\n archive/index.html                            |   2 +-\n archive/journals/index.html                   |   4 +-\n archive/policy/index.html                     |   4 +-\n archive/research/index.html                   |   2 +-\n assets/site.css                               |   2 +-\n daily/index.html                              |   2 +-\n index.html                                    |   2 +-\n monthly/index.html                            |   2 +-\n research/audit-chinese-claim-coverage.js      |  12 ++-\n research/audit-chinese-claim-coverage.test.js |  22 +++++\n research/compare-source-facts.js              |  15 ++--\n research/compare-source-facts.test.js         |  16 ++++\n research/ingest-candidates.js                 |  25 +++++-\n research/ingest-candidates.test.js            |  36 +++++++-\n research/prepare-daily-brief.js               |  51 ++++++++++-\n research/prepare-daily-brief.test.js          |  76 +++++++++++++++-\n research/render-site.js                       |  12 +--\n research/render-site.test.js                  |  19 ++++\n research/scaffold-weekly.js                   |   2 +-\n research/summarize-reader-feedback.js         |  12 ++-\n research/summarize-reader-feedback.test.js    |  54 +++++++++++\n research/validate-claims.js                   |  15 +++-\n research/validate-knowledge-base.js           |  20 +++--\n research/validate-knowledge-base.test.js      |  19 ++++\n research/validate-publication.js              | 124 ++++++++++++++------------\n research/validate-publication.test.js         |  25 ++++++\n research/validate-source-trace.js             |   5 +-\n weekly/index.html                             |   2 +-\n 32 files changed, 488 insertions(+), 130 deletions(-)\n",
+  "addedFiles": [
+    ".gitattributes",
+    ".gitignore",
+    "package-lock.json",
+    "package.json",
+    "research/local-validation.md",
+    "research/public-site.js",
+    "research/source-review-state.js",
+    "research/validate-publication-security.test.js"
+  ],
+  "patchBytes": 492867,
+  "patchCheckAgainstBaseline": 0,
+  "patchCheckOutput": ""
+}
