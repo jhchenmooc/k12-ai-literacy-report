@@ -1,0 +1,160 @@
+{
+  "group": "wave3-A (J10 / C05+poster / C08)",
+  "utc_start": "2026-10-09T15:09:20Z",
+  "utc_end": "2026-10-09T15:18:37Z",
+  "phases": [
+    {"phase": "read SOP/wave1 files + records.csv rows", "utc_start": "2026-10-09T15:09:20Z", "utc_end": "unknown (not separately clocked; before first Composio call)"},
+    {"phase": "Exa fetch/search via COMPOSIO (HTML pages, crossref JSON, aggregators)", "utc_start": "unknown (after tool-schema load)", "utc_end": "about 2026-10-09T15:13:41Z (Composio time_info at next phase start)"},
+    {"phase": "cloud browser tasks (arXiv history, ScienceDirect, ACM, ISLS full records + PDFs)", "utc_start": "after 2026-10-09T15:13:41Z", "utc_end": "before 2026-10-09T15:17:15Z (last watch result observed; date -u checked then)"},
+    {"phase": "write outputs", "utc_start": "2026-10-09T15:17:15Z", "utc_end": "2026-10-09T15:18:37Z"}
+  ],
+  "queries": [
+    "FETCH arxiv.org/abs/2409.16708{,v1,v2,v3,?context=cs}, arxiv.org/html/2409.16708v1, arxiv.org/pdf/2409.16708",
+    "FETCH sciencedirect.com/science/article/pii/S0747563225002262; doi.org/10.1016/j.chb.2025.108779; research.aalto.fi portal page; aaltodoc item 3b3fcbba",
+    "FETCH ui.adsabs.harvard.edu/abs/2024arXiv240916708F; alphaxiv.org/abs/2409.16708 and /2503.00079; emergentmind.com/papers/2503.00079",
+    "FETCH api.crossref.org/works/ for 10.1016/j.chb.2025.108779, 10.1145/3702652.3744217, 10.22318/cscl2025.817482",
+    "FETCH arxiv.org/abs/2503.00079{,v1..v4}; arxiv.org/html/2503.00079v1; dl.acm.org/doi/10.1145/3702652.3744217; icer2025.acm.org paper details",
+    "FETCH repository.isls.org/handle/1/11843 and /11944 (+?show=full); doi.org/10.22318/cscl2025.817482 and .107218",
+    "SEARCH_WEB: arXiv 2409.16708 Performance and Metacognition Disconnect ... submitted v1 September 2024",
+    "SEARCH_WEB: Gu Ericson AI Literacy in K-12 and Higher Education ... arXiv 2503.00079 submitted",
+    "BROWSER task 1: arxiv abs 2409.16708v1 + 2503.00079 submission history",
+    "BROWSER task 2: ScienceDirect pii S0747563225002262 Article info dates (Show more)",
+    "BROWSER task 3: ACM DL Publication History + Crossmark",
+    "BROWSER task 4/5: ISLS 11843 and 11944 ?mode=full records + PDF read",
+    "BROWSER task 6/7: re-read of both ISLS PDFs for participant numbers (second pass)"
+  ],
+  "urls_attempted": [
+    {"url": "https://arxiv.org/abs/2409.16708v1", "tool": "Exa fetch", "status": "success (cached; text shows only 'Published: 2024-09-25' aggregator-style header, no Submission history block)", "error": null},
+    {"url": "https://arxiv.org/abs/2409.16708v1", "tool": "cloud browser", "status": "success (Submission history read)", "error": null},
+    {"url": "https://arxiv.org/abs/2503.00079", "tool": "cloud browser", "status": "success (Submission history read)", "error": null},
+    {"url": "https://arxiv.org/abs/2409.16708, /v2, /v3, ?context=cs, /html/2409.16708v1, /pdf/2409.16708", "tool": "Exa fetch", "status": "success (full text; no version-date block)", "error": null},
+    {"url": "https://www.sciencedirect.com/science/article/pii/S0747563225002262", "tool": "Exa fetch", "status": "success (cached text: Volume 175, February 2026, 108779; no Received/Available online lines in first 60000 chars)", "error": null},
+    {"url": "https://www.sciencedirect.com/science/article/pii/S0747563225002262", "tool": "cloud browser", "status": "success after a Cloudflare 'Are you a robot?' interstitial; the cloud-browser agent itself attempted to click the challenge checkbox before the page loaded (not instructed by me; disclosed in notes). Dates read from 'Show more' panel.", "error": "Cloudflare challenge first shown (no HTTP code reported)"},
+    {"url": "https://research.aalto.fi/en/publications/ai-makes-you-smarter-but-none-the-wiser-the-disconnect-between-pe/", "tool": "Exa fetch", "status": "success", "error": null},
+    {"url": "https://aaltodoc.aalto.fi/items/3b3fcbba-72ed-476f-be59-6ec892b9dd96", "tool": "Exa fetch", "status": "success", "error": null},
+    {"url": "https://doi.org/10.1016/j.chb.2025.108779", "tool": "Exa fetch", "status": "returned the ARXIV preprint record (Exa mis-resolution; not the publisher page)", "error": null},
+    {"url": "https://api.crossref.org/works/10.1016/j.chb.2025.108779", "tool": "Exa fetch", "status": "success", "error": null},
+    {"url": "https://api.crossref.org/works/10.1145/3702652.3744217", "tool": "Exa fetch", "status": "success", "error": null},
+    {"url": "https://api.crossref.org/works/10.22318/cscl2025.817482", "tool": "Exa fetch", "status": "success", "error": null},
+    {"url": "https://export.arxiv.org/api/query?id_list=2409.16708", "tool": "Exa fetch", "status": "error", "error": "HTTP 500 CRAWL_UNEXPECTED_CONTENT_TYPE"},
+    {"url": "https://export.arxiv.org/api/query?id_list=2503.00079", "tool": "Exa fetch", "status": "error", "error": "HTTP 500 CRAWL_UNEXPECTED_CONTENT_TYPE"},
+    {"url": "https://www.semanticscholar.org/arxiv/2409.16708", "tool": "Exa fetch", "status": "error", "error": "HTTP 404 CRAWL_NOT_FOUND"},
+    {"url": "https://deepblue.lib.umich.edu/handle/2027.42/198869", "tool": "Exa fetch", "status": "error", "error": "HTTP 500 CRAWL_EMPTY_CONTENT"},
+    {"url": "https://ui.adsabs.harvard.edu/abs/2025arXiv250300079G/abstract", "tool": "Exa fetch", "status": "error", "error": "HTTP 405 CRAWL_HTTP_405"},
+    {"url": "https://ui.adsabs.harvard.edu/abs/2024arXiv240916708F/abstract", "tool": "Exa fetch", "status": "success", "error": null},
+    {"url": "https://www.alphaxiv.org/abs/2409.16708 ; /2503.00079 ; https://www.emergentmind.com/papers/2503.00079", "tool": "Exa fetch", "status": "success (aggregators, not primary)", "error": null},
+    {"url": "https://dl.acm.org/doi/10.1145/3702652.3744217", "tool": "Exa fetch", "status": "success (cached abstract + full text; Published: 02 August 2025)", "error": null},
+    {"url": "https://dl.acm.org/doi/10.1145/3702652.3744217", "tool": "cloud browser", "status": "success; Publication History + Crossmark popup read; Accepted/Received not shown", "error": null},
+    {"url": "https://icer2025.acm.org/details/icer-2025-papers/16/AI-Literacy-in-K-12-and-Higher-Education-in-the-Wake-of-Generative-AI-An-Integrative", "tool": "Exa fetch", "status": "success", "error": null},
+    {"url": "https://arxiv.org/abs/2503.00079 {v1..v4}, https://arxiv.org/html/2503.00079v1", "tool": "Exa fetch", "status": "success (content, no version-date block)", "error": null},
+    {"url": "https://repository.isls.org/handle/1/11843 ; /11944 ; ?show=full variants", "tool": "Exa fetch", "status": "success (no dc.date rows in Exa text)", "error": null},
+    {"url": "https://repository.isls.org/handle/1/11843?mode=full", "tool": "cloud browser", "status": "success (dc.date rows read)", "error": null},
+    {"url": "https://repository.isls.org/handle/1/11944?mode=full", "tool": "cloud browser", "status": "success (dc.date rows read)", "error": null},
+    {"url": "https://repository.isls.org/bitstream/1/11843/2/CSCL2025_196-204_v2.pdf", "tool": "cloud browser", "status": "success (read twice, by two separate browser sessions)", "error": null},
+    {"url": "https://repository.isls.org/bitstream/1/11944/1/CSCL2025_646-648.pdf", "tool": "cloud browser", "status": "success (read twice)", "error": null},
+    {"url": "https://doi.org/10.22318/cscl2025.817482 ; .107218", "tool": "Exa fetch", "status": "success (OpenAlex-style records: Published 2025-06-10, aggregator)", "error": null}
+  ],
+  "items": [
+    {
+      "doi": "10.1016/j.chb.2025.108779",
+      "title": "AI makes you smarter but none the wiser: The disconnect between performance and metacognition (publisher); preprint title: Performance and Metacognition Disconnect when Reasoning in Human-AI Interaction (arXiv:2409.16708)",
+      "source_id": "J10 (not found as a row in records.csv at time of check; no KB id)",
+      "findings": [
+        {"claim": "arXiv preprint v1 submitted 2024-09-25 07:54:29 UTC; v2 2025-01-05 16:07:52 UTC (arXiv Submission history, browser-read). Comments line: 20 pages, 6 figures, 4 tables. Preprint title differs from the publisher title.", "evidence_quote_short": "[v1] Wed, 25 Sep 2024 07:54:29 UTC (2,249 KB); [v2] Sun, 5 Jan 2025 16:07:52 UTC", "url": "https://arxiv.org/abs/2409.16708v1", "date_type": "preprint_submission", "confidence": "high for submission timestamp (primary arXiv page, relayed by browser agent); exact public-visible moment not stated"},
+        {"claim": "Publisher page (ScienceDirect, pii S0747563225002262) Article-history panel: Received 13 March 2025, Revised 5 August 2025, Accepted 20 August 2025, Available online 9 October 2025, Version of Record 27 October 2025.", "evidence_quote_short": "Available online 9 October 2025; Version of Record 27 October 2025", "url": "https://www.sciencedirect.com/science/article/pii/S0747563225002262", "date_type": "publisher_online (accepted-manuscript/available-online) and version_of_record", "confidence": "medium-high: read by a cloud-browser agent from the Show more panel, not independently re-read by a second pass; Exa cached text did not contain these lines"},
+        {"claim": "Aalto portal 'Early online date 27 Oct 2025' equals the ScienceDirect Version of Record date, not the Available online date. The author-PDF footer '10/9' equals Available online 9 Oct 2025 (also matches Crossref 'created' 2025-10-09T16:38:44Z, which is DOI-deposit time, not a publication claim). The conflict is therefore explained by two different Elsevier milestones, not an error.", "evidence_quote_short": "Early online date | 27 Oct 2025", "url": "https://research.aalto.fi/en/publications/ai-makes-you-smarter-but-none-the-wiser-the-disconnect-between-pe/", "date_type": "institutional_repository_early_online", "confidence": "medium-high (inference combining two primary pages)"},
+        {"claim": "Issue/volume: Computers in Human Behavior Volume 175, February 2026, article 108779 (ScienceDirect header); Crossref published-print/issued 2026-02, volume 175, no specific issue day; Aalto portal 'Published - Feb 2026'. The aggregator '2026-05-27' is not supported by any primary page read; it is not the issue date.", "evidence_quote_short": "Volume 175, February 2026, 108779", "url": "https://www.sciencedirect.com/science/article/pii/S0747563225002262", "date_type": "issue_volume", "confidence": "high for volume/month; issue number null/not displayed"},
+        {"claim": "Earliest public date for the work is the arXiv preprint (2024-09-25, v1 submission); publisher manifestation first available online 2025-10-09. Do not merge versions; preprint v2 and publisher version have different titles and abstracts (publisher abstract says 'associated with' and 'two large-scale studies').", "evidence_quote_short": "In two large-scale studies, we investigate how AI usage is associated with users' metacognitive", "url": "https://aaltodoc.aalto.fi/items/3b3fcbba-72ed-476f-be59-6ec892b9dd96", "date_type": "version_distinction", "confidence": "high for existence of two manifestations; global-earliest still not exhaustively searched"},
+        {"claim": "Population: studies are online adult samples solving LSAT items (Study 1 N=246, Study 2 N=452), not K-12 students; association/correlational claims on AI literacy vs metacognitive accuracy. Stays out of K-12 evidence.", "evidence_quote_short": "participants (N = 246) used AI to solve 20 logical reasoning problems", "url": "https://research.aalto.fi/en/publications/ai-makes-you-smarter-but-none-the-wiser-the-disconnect-between-pe/", "date_type": "n/a", "confidence": "high (abstract); full-text sample details not read in full"}
+      ],
+      "resolved": true,
+      "remaining_gaps": [
+        "ScienceDirect dates were read once by a cloud-browser agent after a Cloudflare interstitial; second independent read (human or another session) recommended before the KB writes them as day-precision.",
+        "Issue number not displayed; only volume/month.",
+        "Exhaustive earlier-than-arXiv public sources not searched; arXiv v1 submission time is not proof of exact first-visible time.",
+        "No full formal text read of the publisher PDF; only abstract and selected sections via Exa text."
+      ],
+      "proposed_kb_changes": [
+        "If J10 is ever imported: separate rows/fields for preprint (arXiv v1 2024-09-25, type preprint_submission) vs publisher (online 2025-10-09; VoR 2025-10-27; CHB vol 175, 2026-02). Do not use 2025-10-27 or 2026-05-27 as first_publication.",
+        "Keep out of K-12 student evidence (adult online samples).",
+        "Mark wave-1 'conflict unresolved' as explained: 10/9 = Available online, 10/27 = Version of Record (Aalto 'Early online')."
+      ]
+    },
+    {
+      "doi": "10.22318/cscl2025.817482",
+      "title": "Toward Teacher-Centered AI Design: Exploring the Role of Pedagogical Values and Contextual Factors in K-12 Teachers' Perceptions of Responsible AI",
+      "source_id": "KB-2025-0006 (C05)",
+      "findings": [
+        {"claim": "The official ISLS repository PDF CSCL2025_196-204_v2.pdf states N=98 in the abstract and Method ('total of 98 valid responses') while the per-scenario table lists SciAI 23, OrchestrateAI 22, GradeAI 23 (sum 68). So the 98 vs 68 inconsistency is present in the OFFICIAL v2 version too, not only in the author preprint. Source of the gap (e.g., responses not assigned) not explained in text read.", "evidence_quote_short": "we obtained a total of 98 valid responses from K-12 teachers", "url": "https://repository.isls.org/bitstream/1/11843/2/CSCL2025_196-204_v2.pdf", "date_type": "n/a (version content)", "confidence": "medium-high: two separate browser sessions returned identical numbers; relayed by agents, not by me reading the PDF directly"},
+        {"claim": "Official PDF is 9 pages (printed pp. 196-204); the author-site preprint was 10 pages (wave-1). Different versions; the author file was not diffed against v2.", "evidence_quote_short": "Total pages: 9 (printed 196 to 204)", "url": "https://repository.isls.org/bitstream/1/11843/2/CSCL2025_196-204_v2.pdf", "date_type": "n/a", "confidence": "medium-high"},
+        {"claim": "Repository full record dc fields: dc.date.accessioned 2024-11-26T16:03:00Z; dc.date.available 2024-11-26T16:03:00Z and 2025-01-31; dc.date.issued 2025; dc.description 'CSCL2025_196-204_v2.pdf'. These are repository record dates (the 2024-11 date predates the conference acceptance and is likely a record/stub creation); they do not show when the v2 PDF became publicly readable and give no v1 history.", "evidence_quote_short": "dc.date.accessioned 2024-11-26T16:03:00Z; dc.date.available 2025-01-31", "url": "https://repository.isls.org/handle/1/11843?mode=full", "date_type": "repository_record_dates (not first-public)", "confidence": "medium (browser-agent relay of metadata rows)"},
+        {"claim": "Crossref: published-online 2025-06-10, deposit created 2025-06-13, pages 196-204, event CSCL 2025. This is DOI/registry manifestation date, not proof of first public availability.", "evidence_quote_short": "published-online 2025-06-10", "url": "https://api.crossref.org/works/10.22318/cscl2025.817482", "date_type": "doi_registry_published_online", "confidence": "high for what Crossref says; not first-public"},
+        {"claim": "Method: survey of K-12 teachers (teacher self-report, association between pedagogical values and Responsible-AI priorities). No student outcome; no basis for causal or student-learning conclusions.", "evidence_quote_short": "we recruited K-12 teachers (N=98) from internal lists", "url": "https://repository.isls.org/bitstream/1/11843/2/CSCL2025_196-204_v2.pdf", "date_type": "n/a", "confidence": "medium-high"}
+      ],
+      "resolved": false,
+      "remaining_gaps": [
+        "The sentence/definition explaining 98 vs 68 (excluded/unassigned) was not found; cause unknown. Never fill missing 30.",
+        "v2 public-availability date and whether a v1 existed publicly: unknown (only filename 'v2' and repository dates). Author-site 'Mar 2025 accepted' remains acceptance news.",
+        "No byte-level diff between author preprint (10 pp, N98) and official v2 (9 pp); not stated which text differs.",
+        "Official PDF read via cloud-browser agent excerpts, not a full line-by-line read by me."
+      ],
+      "proposed_kb_changes": [
+        "Keep first_publication unknown for KB-2025-0006; optionally add Crossref published-online 2025-06-10 as publisher_online field only (type doi_registry), not first_public.",
+        "Add a data-quality note: 98 teachers reported but scenario groups sum to 68 in both author preprint and official v2; do not use group sizes or proportions as results.",
+        "Source remains partial / bibliographic_checked; do not upgrade to full_text_checked."
+      ]
+    },
+    {
+      "doi": "10.22318/cscl2025.107218",
+      "title": "Utilizing LLMs to Support Teacher Understanding of AI Literacy",
+      "source_id": "KB-2025-0007 (C05 companion poster)",
+      "findings": [
+        {"claim": "Repository full record: dc.date.accessioned 2025-06-13T03:01:26Z; dc.date.available 2025-06-12T22:54:42Z and 2025-06-13T03:01:26Z; dc.date.issued 2025; dc.description 'Poster'; pages 646-648; ISBN 979-8-9906980-4-8. Earliest repository availability stamp is 2025-06-12 22:54:42 UTC (repository record, not necessarily public access time).", "evidence_quote_short": "dc.date.available 2025-06-12T22:54:42Z", "url": "https://repository.isls.org/handle/1/11944?mode=full", "date_type": "repository_record_dates", "confidence": "medium (browser-agent relay)"},
+        {"claim": "Crossref/OpenAlex-style record shows Published 2025-06-10 (DOI registry). Together: registry 2025-06-10 vs repository availability 2025-06-12; neither proves first public; conference-event date not independently read here.", "evidence_quote_short": "Published: 2025-06-10", "url": "https://doi.org/10.22318/cscl2025.107218", "date_type": "doi_registry (aggregator-sourced)", "confidence": "low-medium (Exa aggregator text, not Crossref JSON)"},
+        {"claim": "Poster PDF (3 pages) text: work-in-progress; research question on whether LLM-embedded solutions generate accurate reports on text-based AI curricular materials; it reports preliminary ratings (Experiment 1 outputs primarily inaccurate; Experiment 2 improved); also a user survey with 100 K-12 educators to solicit feedback. Teachers' feedback and rated LLM output accuracy are not student outcomes.", "evidence_quote_short": "we also conducted a user survey with 100 K-12 educators to solicit feedback", "url": "https://repository.isls.org/bitstream/1/11944/1/CSCL2025_646-648.pdf", "date_type": "n/a", "confidence": "medium-high (two independent browser sessions agree on 100 educators and 3 pages)"},
+        {"claim": "Wave-1 note 'poster full text unreadable, participants unknown' is now partially updated: educators surveyed N=100 (K-12 educators, grade band not further specified); method = environmental scan, qualitative coding of 126 excerpts, rubric evaluation of LLM outputs.", "evidence_quote_short": "qualitatively coded 126 relevant excerpts", "url": "https://repository.isls.org/bitstream/1/11944/1/CSCL2025_646-648.pdf", "date_type": "n/a", "confidence": "medium (single-pass paraphrase by browser agent for the 126 detail)"}
+      ],
+      "resolved": false,
+      "remaining_gaps": [
+        "First-public date unknown; poster original text version history unknown (only one PDF 'CSCL2025_646-648.pdf').",
+        "Survey instrument, educators' grade levels and what exactly the 100 educators rated: not extracted.",
+        "Conference event date (CSCL 2025, Jun 2025) not independently confirmed in this batch."
+      ],
+      "proposed_kb_changes": [
+        "Keep first_publication unknown; add notes: repository available 2025-06-12 UTC, Crossref/aggregator 2025-06-10, type=poster, work-in-progress, K-12 educators (n about 100) feedback only.",
+        "No student-effect claims."
+      ]
+    },
+    {
+      "doi": "10.1145/3702652.3744217",
+      "title": "AI Literacy in K-12 and Higher Education in the Wake of Generative AI: An Integrative Review",
+      "source_id": "KB-2025-0008 (C08)",
+      "findings": [
+        {"claim": "arXiv:2503.00079 submission history: v1 Thu 27 Feb 2025 23:32:03 UTC (1,048 KB); v2 Tue 4 Mar 2025 17:01:11 UTC; v3 Fri 28 Mar 2025 16:54:27 UTC (1,071 KB). Comments: '25 pages, 7 figures; submitted to ICER 2025'. v4 exists in Exa fetch (a crawled v4 page returned content), but the browser-read history lists only v1 to v3; discrepancy not resolved. The aggregator 'Submitted 28 Mar 2025' (alphaXiv) is the v3 date, not v1.", "evidence_quote_short": "[v1] Thu, 27 Feb 2025 23:32:03 UTC (1,048 KB)", "url": "https://arxiv.org/abs/2503.00079", "date_type": "preprint_submission", "confidence": "high for v1 timestamp (primary arXiv page via browser agent)"},
+        {"claim": "Current arXiv page lists Related DOI 10.1145/3702652.3744217, linking preprint to the ACM version (same work, different manifestations).", "evidence_quote_short": "related_doi: https://doi.org/10.1145/3702652.3744217", "url": "https://arxiv.org/abs/2503.00079", "date_type": "version_relation", "confidence": "high"},
+        {"claim": "ACM DL: Published 02 August 2025; Crossmark: Published Online 2025-08-02, Published Print 2025-08-03; pages 125-140; 'Document is current'. No Accepted/Received history shown. Crossref JSON: published-online 2025-08-02, published-print 2025-08-03, created 2025-07-31T09:39:27Z (DOI-deposit, not a publication date). ICER 2025 talk scheduled Mon 4 Aug 2025 16:05 (event date, separate).", "evidence_quote_short": "Published: 02 August 2025", "url": "https://dl.acm.org/doi/10.1145/3702652.3744217", "date_type": "publisher_online (ACM manifestation); conference_event 2025-08-04", "confidence": "high"},
+        {"claim": "The ACM date (2025-08-02) is therefore a publisher manifestation date only; the earlier arXiv v1 (2025-02-27 submission, about 5 months earlier) shows ACM date is NOT global first public. arXiv submission timestamp is not proof of the exact moment it became readable (arXiv announcement typically follows submission; not read here).", "evidence_quote_short": "submitted to ICER 2025", "url": "https://arxiv.org/abs/2503.00079", "date_type": "first_public_candidate (preprint)", "confidence": "high that preprint predates ACM; medium on precise public time"},
+        {"claim": "Preprint vs official differences readable from metadata: arXiv v3 is 25 pages; ACM version pp. 125-140 (16 pages). Abstract text is nearly identical but the ACM abstract adds 'to identify shifting definitions and emerging trends in AI literacy around the public introduction of generative AI' while v1/v3 arXiv listing abstract omits it (arXiv listing abstract vs PDF text differ; the arXiv PDF text v3/v4 does contain that clause). Content-level body differences between arXiv versions and the ACM PDF were not diffed.", "evidence_quote_short": "published since 2020, to identify shifting definitions and emerging trends", "url": "https://dl.acm.org/doi/10.1145/3702652.3744217", "date_type": "version_difference", "confidence": "medium (abstract-level only)"},
+        {"claim": "Scope: integrative review of 124 studies since 2020 across K-12 and higher education (mixed levels); not an intervention-effect study.", "evidence_quote_short": "In synthesizing the 124 reviewed studies", "url": "https://dl.acm.org/doi/10.1145/3702652.3744217", "date_type": "n/a", "confidence": "high (abstract)"}
+      ],
+      "resolved": true,
+      "remaining_gaps": [
+        "Exact public-visibility instant of arXiv v1 (announcement time) not established.",
+        "arXiv v4: Exa fetched a v4 URL (status success) but browser-read Submission history showed only v1 to v3; unresolved, possibly crawler resolving to latest.",
+        "No body-level diff of preprint vs ACM PDF; ACM PDF full text not read in this batch (Exa returned ACM full-text page of 60000 chars but it was not reviewed line by line).",
+        "Earlier-than-arXiv sources (e.g., author sites, ICER submission archive) not searched."
+      ],
+      "proposed_kb_changes": [
+        "KB-2025-0008: keep first_publication 2025-08-02 only as publisher_online (ACM), and add relation/field 'earlier_preprint: arXiv:2503.00079 v1 submitted 2025-02-27T23:32:03Z, v3 2025-03-28'. Do not describe ACM date as global first public.",
+        "Record page counts: arXiv v3 25 pp vs ACM 16 pp (pp. 125-140); conference talk 2025-08-04."
+      ]
+    }
+  ],
+  "unresolved": [
+    "C05 817482: cause of 98 vs 68; v2 public-availability date/history; author-preprint vs official diff.",
+    "C05 poster 107218: first-public date, instrument, grade band of the 100 educators.",
+    "C08: exact public time of arXiv v1; arXiv v4 existence; body diff preprint vs ACM.",
+    "J10: second independent confirmation of ScienceDirect article-history dates; issue number."
+  ],
+  "notes": "Exa publishedDate and aggregators (alphaXiv, emergentmind, ADS) used only as pointers; dates above come from arXiv/ScienceDirect/ACM/ISLS/Crossref pages. Cloud-browser results are agent relays of page text; I did not view the raw pages myself. During the ScienceDirect task the cloud-browser agent met a Cloudflare 'Are you a robot?' interstitial and clicked its checkbox on its own initiative; I did not instruct that, and it should be considered when deciding whether to rely on that source (the same dates were not obtainable from Exa cache). No git operations; no files other than these two outputs written. Timing: only measured stamps are given (start 15:09:20Z; Composio time_info 15:13:41Z; date -u 15:17:15Z); per-phase starts not separately clocked, no durations or speedups claimed."
+}
