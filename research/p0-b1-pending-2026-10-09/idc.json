@@ -1,0 +1,1515 @@
+{
+ "started_utc": "2026-10-09T18:05:06Z",
+ "ended_utc": "2026-10-09T18:20:33Z",
+ "queries": [
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731495?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:20Z",
+   "http": 200,
+   "result": "abstract_ok(86 words)；DOI 10.1145/3713043.3731495"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731495",
+   "utc": "2026-10-09T18:05:21Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3731495"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731513?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:21Z",
+   "http": 200,
+   "result": "abstract_ok(62 words)；DOI 10.1145/3713043.3731513"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731513",
+   "utc": "2026-10-09T18:05:22Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3731513"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812156?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:23Z",
+   "http": 200,
+   "result": "abstract_ok(125 words)；DOI 10.1145/3773077.3812156"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812156",
+   "utc": "2026-10-09T18:05:23Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3812156"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806125?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:24Z",
+   "http": 200,
+   "result": "abstract_ok(127 words)；DOI 10.1145/3773077.3806125"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806125",
+   "utc": "2026-10-09T18:05:24Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3806125"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3728853?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:25Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3728853"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3728853",
+   "utc": "2026-10-09T18:05:26Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3728853"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3728836?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:26Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3728836"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3728836",
+   "utc": "2026-10-09T18:05:27Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3728836"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3728856?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:28Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3728856"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3728856",
+   "utc": "2026-10-09T18:05:29Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3728856"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3727052?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:30Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3727052"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3727052",
+   "utc": "2026-10-09T18:05:30Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3727052"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731520?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:31Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3731520"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731520",
+   "utc": "2026-10-09T18:05:32Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3731520"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812183?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:32Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3812183"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812183",
+   "utc": "2026-10-09T18:05:33Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3812183"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813778?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:33Z",
+   "http": 200,
+   "result": "abstract_ok(133 words)；DOI 10.1145/3773077.3813778"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813778",
+   "utc": "2026-10-09T18:05:34Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3813778"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3816198?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:34Z",
+   "http": 200,
+   "result": "abstract_ok(102 words)；DOI 10.1145/3773077.3816198"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3816198",
+   "utc": "2026-10-09T18:05:35Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3816198"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813775?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:36Z",
+   "http": 200,
+   "result": "abstract_ok(124 words)；DOI 10.1145/3773077.3813775"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813775",
+   "utc": "2026-10-09T18:05:36Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3813775"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813782?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:37Z",
+   "http": 200,
+   "result": "abstract_ok(175 words)；DOI 10.1145/3773077.3813782"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813782",
+   "utc": "2026-10-09T18:05:38Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3813782"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806143?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:38Z",
+   "http": 200,
+   "result": "abstract_ok(145 words)；DOI 10.1145/3773077.3806143"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806143",
+   "utc": "2026-10-09T18:05:39Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3806143"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731604?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:39Z",
+   "http": 200,
+   "result": "abstract_ok(157 words)；DOI 10.1145/3713043.3731604"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731604",
+   "utc": "2026-10-09T18:05:40Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3731604"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813780?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:41Z",
+   "http": 200,
+   "result": "abstract_ok(99 words)；DOI 10.1145/3773077.3813780"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813780",
+   "utc": "2026-10-09T18:05:41Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3813780"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806144?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:42Z",
+   "http": 200,
+   "result": "abstract_ok(148 words)；DOI 10.1145/3773077.3806144"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806144",
+   "utc": "2026-10-09T18:05:42Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3806144"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731605?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:43Z",
+   "http": 200,
+   "result": "abstract_ok(141 words)；DOI 10.1145/3713043.3731605"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731605",
+   "utc": "2026-10-09T18:05:44Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3731605"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731525?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:44Z",
+   "http": 200,
+   "result": "abstract_ok(118 words)；DOI 10.1145/3713043.3731525"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731525",
+   "utc": "2026-10-09T18:05:45Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3731525"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731602?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:46Z",
+   "http": 200,
+   "result": "abstract_ok(277 words)；DOI 10.1145/3713043.3731602"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731602",
+   "utc": "2026-10-09T18:05:47Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3731602"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806107?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:47Z",
+   "http": 200,
+   "result": "abstract_ok(146 words)；DOI 10.1145/3773077.3806107"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806107",
+   "utc": "2026-10-09T18:05:48Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3806107"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3728849?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:48Z",
+   "http": 200,
+   "result": "abstract_ok(145 words)；DOI 10.1145/3713043.3728849"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3728849",
+   "utc": "2026-10-09T18:05:49Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3728849"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813783?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:50Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3813783"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813783",
+   "utc": "2026-10-09T18:05:50Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3813783"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813763?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:51Z",
+   "http": 200,
+   "result": "abstract_ok(89 words)；DOI 10.1145/3773077.3813763"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813763",
+   "utc": "2026-10-09T18:05:52Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3813763"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813772?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:52Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3813772"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813772",
+   "utc": "2026-10-09T18:05:53Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3813772"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812166?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:53Z",
+   "http": 200,
+   "result": "abstract_ok(146 words)；DOI 10.1145/3773077.3812166"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812166",
+   "utc": "2026-10-09T18:05:54Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3812166"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806146?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:55Z",
+   "http": 200,
+   "result": "abstract_ok(145 words)；DOI 10.1145/3773077.3806146"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806146",
+   "utc": "2026-10-09T18:05:55Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3806146"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812189?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:56Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3812189"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812189",
+   "utc": "2026-10-09T18:05:57Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3812189"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806124?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:57Z",
+   "http": 200,
+   "result": "abstract_ok(150 words)；DOI 10.1145/3773077.3806124"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806124",
+   "utc": "2026-10-09T18:05:58Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3806124"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3728839?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:05:58Z",
+   "http": 200,
+   "result": "abstract_ok(145 words)；DOI 10.1145/3713043.3728839"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3728839",
+   "utc": "2026-10-09T18:05:59Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3728839"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812142?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:06:00Z",
+   "http": 200,
+   "result": "abstract_ok(150 words)；DOI 10.1145/3773077.3812142"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812142",
+   "utc": "2026-10-09T18:06:00Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3812142"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806104?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:06:01Z",
+   "http": 200,
+   "result": "abstract_ok(149 words)；DOI 10.1145/3773077.3806104"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806104",
+   "utc": "2026-10-09T18:06:02Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3806104"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3728857?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:06:02Z",
+   "http": 200,
+   "result": "abstract_ok(65 words)；DOI 10.1145/3713043.3728857"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3728857",
+   "utc": "2026-10-09T18:06:03Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3728857"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812130?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:06:04Z",
+   "http": 200,
+   "result": "abstract_ok(137 words)；DOI 10.1145/3773077.3812130"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812130",
+   "utc": "2026-10-09T18:06:04Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3812130"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731498?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:06:05Z",
+   "http": 200,
+   "result": "abstract_ok(132 words)；DOI 10.1145/3713043.3731498"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731498",
+   "utc": "2026-10-09T18:06:06Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3713043.3731498"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806128?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:06:07Z",
+   "http": 200,
+   "result": "abstract_ok(123 words)；DOI 10.1145/3773077.3806128"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806128",
+   "utc": "2026-10-09T18:06:07Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3773077.3806128"
+  },
+  {
+   "url": "http://export.arxiv.org/api/query?search_query=ti:Just+AND+ti:Machine+AND+ti:that+AND+ti:Predicts+AND+ti:Demystifying+AND+ti:Artificial+AND+ti:Intelligence+AND+ti:Machine&max_results=5",
+   "utc": "2026-10-09T18:06:16Z",
+   "http": 429,
+   "result": "arXiv API 第 1 輪：429 速率限制，未取得結果；DOI 10.1145/3713043.3728853"
+  },
+  {
+   "url": "http://export.arxiv.org/api/query?search_query=ti:just+AND+ti:keeps+AND+ti:guessing+AND+ti:Using+AND+ti:Puzzles+AND+ti:Help+AND+ti:Children+AND+ti:Identify&max_results=5",
+   "utc": "2026-10-09T18:06:51Z",
+   "http": 429,
+   "result": "arXiv API 第 1 輪：429 速率限制，未取得結果；DOI 10.1145/3713043.3728836"
+  },
+  {
+   "url": "http://export.arxiv.org/api/query?search_query=ti:Children+AND+ti:Mental+AND+ti:Models+AND+ti:Reasoning+AND+ti:Implications+AND+ti:Literacy+AND+ti:Education&max_results=5",
+   "utc": "2026-10-09T18:07:25Z",
+   "http": 429,
+   "result": "arXiv API 第 1 輪：429 速率限制，未取得結果；DOI 10.1145/3713043.3728856"
+  },
+  {
+   "url": "http://export.arxiv.org/api/query?search_query=ti:Beyond+AND+ti:Algorithm+AND+ti:Speculative+AND+ti:Approaches+AND+ti:Critical+AND+ti:Literacies+AND+ti:with+AND+ti:Diverse&max_results=5",
+   "utc": "2026-10-09T18:07:29Z",
+   "http": 429,
+   "result": "arXiv API 第 1 輪：429 速率限制，未取得結果；DOI 10.1145/3713043.3727052"
+  },
+  {
+   "url": "http://export.arxiv.org/api/query?search_query=ti:Empowering+AND+ti:Children+AND+ti:Literacy+AND+ti:Through+AND+ti:Creating+AND+ti:Stories+AND+ti:with&max_results=5",
+   "utc": "2026-10-09T18:07:33Z",
+   "http": 429,
+   "result": "arXiv API 第 1 輪：429 速率限制，未取得結果；DOI 10.1145/3713043.3731520"
+  },
+  {
+   "url": "http://export.arxiv.org/api/query?search_query=ti:Literacy+AND+ti:with+AND+ti:Teenagers+AND+ti:Exploring+AND+ti:Large+AND+ti:Language+AND+ti:Models+AND+ti:Beneath&max_results=5",
+   "utc": "2026-10-09T18:07:37Z",
+   "http": 429,
+   "result": "arXiv API 第 1 輪：429 速率限制，未取得結果；DOI 10.1145/3773077.3812183"
+  },
+  {
+   "url": "http://export.arxiv.org/api/query?search_query=ti:Investigating+AND+ti:Hands+AND+ti:Literacy+AND+ti:Activities+AND+ti:Empowering+AND+ti:Youth+AND+ti:with+AND+ti:Technological&max_results=5",
+   "utc": "2026-10-09T18:08:27Z",
+   "http": "ERR:TimeoutError",
+   "result": "arXiv API 第 1 輪：逾時；DOI 10.1145/3773077.3813783"
+  },
+  {
+   "url": "http://export.arxiv.org/api/query?search_query=ti:Shadows+AND+ti:Doodles+AND+ti:Dice+AND+ti:Three+AND+ti:Demos+AND+ti:Inter+AND+ti:generational+AND+ti:Interactions&max_results=5",
+   "utc": "2026-10-09T18:09:31Z",
+   "http": "ERR:TimeoutError",
+   "result": "arXiv API 第 1 輪：逾時；DOI 10.1145/3773077.3813772"
+  },
+  {
+   "url": "http://export.arxiv.org/api/query?search_query=ti:Youth+AND+ti:Evaluators+AND+ti:Designing+AND+ti:Participatory+AND+ti:Instruments+AND+ti:Appropriate+AND+ti:Governance&max_results=5",
+   "utc": "2026-10-09T18:10:35Z",
+   "http": 429,
+   "result": "arXiv API 第 1 輪：429 速率限制，未取得結果；DOI 10.1145/3773077.3812189"
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti:Just+AND+ti:Machine+AND+ti:that+AND+ti:Predicts+AND+ti:Demystifying+AND+ti:Artificial+AND+ti:Intelligence+AND+ti:Machine&max_results=5",
+   "utc": "2026-10-09T18:11:02Z",
+   "http": 429,
+   "result": "arXiv API 第 2 輪（https、放慢）：429 速率限制，未取得結果；DOI 10.1145/3713043.3728853"
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti:just+AND+ti:keeps+AND+ti:guessing+AND+ti:Using+AND+ti:Puzzles+AND+ti:Help+AND+ti:Children+AND+ti:Identify&max_results=5",
+   "utc": "2026-10-09T18:11:30Z",
+   "http": 429,
+   "result": "arXiv API 第 2 輪（https、放慢）：429 速率限制，未取得結果；DOI 10.1145/3713043.3728836"
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti:Children+AND+ti:Mental+AND+ti:Models+AND+ti:Reasoning+AND+ti:Implications+AND+ti:Literacy+AND+ti:Education&max_results=5",
+   "utc": "2026-10-09T18:12:13Z",
+   "http": 429,
+   "result": "arXiv API 第 2 輪（https、放慢）：429 速率限制，未取得結果；DOI 10.1145/3713043.3728856"
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti:Beyond+AND+ti:Algorithm+AND+ti:Speculative+AND+ti:Approaches+AND+ti:Critical+AND+ti:Literacies+AND+ti:with+AND+ti:Diverse&max_results=5",
+   "utc": "2026-10-09T18:12:41Z",
+   "http": 429,
+   "result": "arXiv API 第 2 輪（https、放慢）：429 速率限制，未取得結果；DOI 10.1145/3713043.3727052"
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti:Empowering+AND+ti:Children+AND+ti:Literacy+AND+ti:Through+AND+ti:Creating+AND+ti:Stories+AND+ti:with&max_results=5",
+   "utc": "2026-10-09T18:13:39Z",
+   "http": 429,
+   "result": "arXiv API 第 2 輪（https、放慢）：429 速率限制，未取得結果；DOI 10.1145/3713043.3731520"
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti:Literacy+AND+ti:with+AND+ti:Teenagers+AND+ti:Exploring+AND+ti:Large+AND+ti:Language+AND+ti:Models+AND+ti:Beneath&max_results=5",
+   "utc": "2026-10-09T18:13:51Z",
+   "http": 429,
+   "result": "arXiv API 第 2 輪（https、放慢）：429 速率限制，未取得結果；DOI 10.1145/3773077.3812183"
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti:Investigating+AND+ti:Hands+AND+ti:Literacy+AND+ti:Activities+AND+ti:Empowering+AND+ti:Youth+AND+ti:with+AND+ti:Technological&max_results=5",
+   "utc": "2026-10-09T18:14:04Z",
+   "http": 429,
+   "result": "arXiv API 第 2 輪（https、放慢）：429 速率限制，未取得結果；DOI 10.1145/3773077.3813783"
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti:Shadows+AND+ti:Doodles+AND+ti:Dice+AND+ti:Three+AND+ti:Demos+AND+ti:Inter+AND+ti:generational+AND+ti:Interactions&max_results=5",
+   "utc": "2026-10-09T18:14:16Z",
+   "http": 429,
+   "result": "arXiv API 第 2 輪（https、放慢）：429 速率限制，未取得結果；DOI 10.1145/3773077.3813772"
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti:Youth+AND+ti:Evaluators+AND+ti:Designing+AND+ti:Participatory+AND+ti:Instruments+AND+ti:Appropriate+AND+ti:Governance&max_results=5",
+   "utc": "2026-10-09T18:14:44Z",
+   "http": 429,
+   "result": "arXiv API 第 2 輪（https、放慢）：429 速率限制，未取得結果；DOI 10.1145/3773077.3812189"
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=title.search:It%20s%20Just%20a%20Machine%20that%20Predicts%20-%20Demystifying%20Artificial%20Intelligence%20Machine%20Learning%20with%20Teenagers&select=id,doi,display_name,publication_date,primary_location,locations,abstract_inverted_index&per_page=10",
+   "utc": "2026-10-09T18:15:22Z",
+   "http": 200,
+   "result": "OpenAlex 題名檢索找預印本：0 hits; with_abstract=0（只命中 ACM 本身，無摘要）；DOI 10.1145/3713043.3728853"
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=title.search:AI%20just%20keeps%20guessing%20Using%20ARC%20Puzzles%20to%20Help%20Children%20Identify%20Reasoning%20Errors%20in%20Generative%20AI&select=id,doi,display_name,publication_date,primary_location,locations,abstract_inverted_index&per_page=10",
+   "utc": "2026-10-09T18:15:24Z",
+   "http": 200,
+   "result": "OpenAlex 題名檢索找預印本：1 hits; with_abstract=0（只命中 ACM 本身，無摘要）；DOI 10.1145/3713043.3728836"
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=title.search:Children%20s%20Mental%20Models%20of%20AI%20Reasoning%20Implications%20for%20AI%20Literacy%20Education&select=id,doi,display_name,publication_date,primary_location,locations,abstract_inverted_index&per_page=10",
+   "utc": "2026-10-09T18:15:25Z",
+   "http": 200,
+   "result": "OpenAlex 題名檢索找預印本：0 hits; with_abstract=0（只命中 ACM 本身，無摘要）；DOI 10.1145/3713043.3728856"
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=title.search:Beyond%20the%20Algorithm%20Speculative%20Approaches%20to%20Critical%20AI%20Literacies%20with%20Diverse%20Youth&select=id,doi,display_name,publication_date,primary_location,locations,abstract_inverted_index&per_page=10",
+   "utc": "2026-10-09T18:15:26Z",
+   "http": 200,
+   "result": "OpenAlex 題名檢索找預印本：1 hits; with_abstract=0（只命中 ACM 本身，無摘要）；DOI 10.1145/3713043.3727052"
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=title.search:Empowering%20Children%20s%20AI%20Literacy%20Through%20Co-Creating%20Stories%20with%20LLM&select=id,doi,display_name,publication_date,primary_location,locations,abstract_inverted_index&per_page=10",
+   "utc": "2026-10-09T18:15:26Z",
+   "http": 200,
+   "result": "OpenAlex 題名檢索找預印本：0 hits; with_abstract=0（只命中 ACM 本身，無摘要）；DOI 10.1145/3713043.3731520"
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=title.search:AI%20Literacy%20with%20Teenagers%20Exploring%20Large%20Language%20Models%20Beneath%20the%20Surface&select=id,doi,display_name,publication_date,primary_location,locations,abstract_inverted_index&per_page=10",
+   "utc": "2026-10-09T18:15:27Z",
+   "http": 200,
+   "result": "OpenAlex 題名檢索找預印本：1 hits; with_abstract=0（只命中 ACM 本身，無摘要）；DOI 10.1145/3773077.3812183"
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=title.search:Investigating%20Hands-on%20AI%20Literacy%20Activities%20for%20Empowering%20Youth%20with%20Technological%20Agency%20for%20the%20Future%20of%20Work&select=id,doi,display_name,publication_date,primary_location,locations,abstract_inverted_index&per_page=10",
+   "utc": "2026-10-09T18:15:28Z",
+   "http": 200,
+   "result": "OpenAlex 題名檢索找預印本：1 hits; with_abstract=0（只命中 ACM 本身，無摘要）；DOI 10.1145/3773077.3813783"
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=title.search:Shadows%20Doodles%20and%20Dice%20Three%20Demos%20for%20Inter-generational%20Interactions%20around%20AI%20Literacy&select=id,doi,display_name,publication_date,primary_location,locations,abstract_inverted_index&per_page=10",
+   "utc": "2026-10-09T18:15:29Z",
+   "http": 200,
+   "result": "OpenAlex 題名檢索找預印本：1 hits; with_abstract=0（只命中 ACM 本身，無摘要）；DOI 10.1145/3773077.3813772"
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=title.search:Youth%20as%20Evaluators%20Designing%20Participatory%20Instruments%20for%20Age-Appropriate%20AI%20Governance&select=id,doi,display_name,publication_date,primary_location,locations,abstract_inverted_index&per_page=10",
+   "utc": "2026-10-09T18:15:30Z",
+   "http": 200,
+   "result": "OpenAlex 題名檢索找預印本：1 hits; with_abstract=0（只命中 ACM 本身，無摘要）；DOI 10.1145/3773077.3812189"
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti:ARC+AND+ti:Puzzles+AND+ti:Children&max_results=3",
+   "utc": "2026-10-09T18:15:35Z",
+   "http": 429,
+   "result": "arXiv API 單次探測，仍 429；改用 alphaXiv MCP 與 arxiv.org 網站"
+  },
+  {
+   "url": "alphaXiv MCP discover_papers（IDC 題名 5 篇：ARC Puzzles／Mental Models／Co-Creating Stories／LLM Beneath the Surface／Demystifying AI/ML）",
+   "utc": "2026-10-09T18:15:40Z",
+   "http": "MCP ok",
+   "result": "命中 2505.16031（Children's Mental Models of AI Reasoning）；另見 2604.22959、2603.25852 為已有 OpenAlex 摘要者之預印本"
+  },
+  {
+   "url": "alphaXiv MCP discover_papers（IDC 題名 4 篇：Speculative Critical AI Literacies／Youth as Evaluators／Shadows Doodles Dice／Hands-on AI Literacy Future of Work）",
+   "utc": "2026-10-09T18:15:40Z",
+   "http": "MCP ok",
+   "result": "無同題預印本"
+  },
+  {
+   "url": "https://arxiv.org/abs/2505.16031",
+   "utc": "2026-10-09T18:15:52Z",
+   "http": 200,
+   "result": "讀到摘要（grades 3-8）；DOI 10.1145/3713043.3728856"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Demystifying+Machine+Learning+with+Teenagers&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T18:16:02Z",
+   "http": 200,
+   "result": "arxiv.org 題名搜尋：0 hits；DOI 10.1145/3713043.3728853"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=ARC+Puzzles+Children+Reasoning+Errors&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T18:16:22Z",
+   "http": 200,
+   "result": "arxiv.org 題名搜尋：1 hits；DOI 10.1145/3713043.3728836"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Speculative+Approaches+Critical+AI+Literacies+Diverse+Youth&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T18:16:42Z",
+   "http": 200,
+   "result": "arxiv.org 題名搜尋：0 hits；DOI 10.1145/3713043.3727052"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Children+AI+Literacy+Co-Creating+Stories&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T18:17:04Z",
+   "http": 200,
+   "result": "arxiv.org 題名搜尋：0 hits；DOI 10.1145/3713043.3731520"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=AI+Literacy+with+Teenagers+Large+Language+Models+Beneath+the+Surface&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T18:17:25Z",
+   "http": 200,
+   "result": "arxiv.org 題名搜尋：0 hits；DOI 10.1145/3773077.3812183"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Hands-on+AI+Literacy+Activities+Youth+Future+of+Work&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T18:17:43Z",
+   "http": 200,
+   "result": "arxiv.org 題名搜尋：0 hits；DOI 10.1145/3773077.3813783"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Shadows+Doodles+Dice&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T18:18:01Z",
+   "http": 200,
+   "result": "arxiv.org 題名搜尋：0 hits；DOI 10.1145/3773077.3813772"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Youth+as+Evaluators+Age-Appropriate+AI+Governance&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T18:18:17Z",
+   "http": 200,
+   "result": "arxiv.org 題名搜尋：0 hits；DOI 10.1145/3773077.3812189"
+  },
+  {
+   "url": "https://arxiv.org/abs/2505.16034",
+   "utc": "2026-10-09T18:18:40Z",
+   "http": 200,
+   "result": "讀到摘要（ages 6-11）；DOI 10.1145/3713043.3728836"
+  },
+  {
+   "url": "https://arxiv.org/abs/2603.25852",
+   "utc": "2026-10-09T18:19:22Z",
+   "http": 200,
+   "result": "預印本摘要仍只寫 teenagers；DOI 10.1145/3773077.3806107"
+  },
+  {
+   "url": "https://arxiv.org/abs/2604.22959",
+   "utc": "2026-10-09T18:19:26Z",
+   "http": 200,
+   "result": "預印本摘要仍只寫 teenagers；DOI 10.1145/3773077.3812156"
+  }
+ ],
+ "items": [
+  {
+   "doi": "10.1145/3713043.3731495",
+   "title": "Experts Unite, Kids Delight: Co-Designing an Inclusive AI Literacy Educational Tool for Children",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 852-857",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要只寫 children，未明示學段／年齡",
+   "abstract_source": "openalex",
+   "school_level": "children（未寫年齡／學段）",
+   "countries": [],
+   "topic": "與專家共同設計包容性生成式 AI 素養工具（性別刻板印象）",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "pending",
+   "reason": "摘要只寫 children，未明示學段或年齡；主題相關",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:20Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3713043.3731513",
+   "title": "Creat’AI: Using Tangible Storytelling to Teach AI to Children",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 955-960",
+   "crossref_issue_year": 2025,
+   "previous_reason": "OpenAlex 摘要為圖說；只見 young children，學段未明",
+   "abstract_source": "openalex",
+   "school_level": "young children（未寫年齡／學段）",
+   "countries": [],
+   "topic": "Creat'AI：實體說故事原型教幼童 AI 概念",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "pending",
+   "reason": "OpenAlex 摘要欄實為圖說；只見 young children，學段／年齡未明",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:21Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3812156",
+   "title": "Understanding teens’ self-beliefs when learning to construct and deconstruct AI/ML systems: Developing a survey instrument",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1198-1202",
+   "crossref_issue_year": 2026,
+   "previous_reason": "摘要明示 124 名 teenagers 與 AI literacy 量表，但未明示在學／年級",
+   "abstract_source": "openalex",
+   "school_level": "124 teenagers（未寫在學／年級）",
+   "countries": [],
+   "topic": "青少年建構／解構 AI/ML 的自我信念量表發展與驗證",
+   "category_suggestion": "K3 素養評量",
+   "decision": "pending",
+   "reason": "只寫 teenagers，未明示學段或年齡（arXiv 2604.22959 版亦同）；量表信效度",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:23Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3806125",
+   "title": "\"Are you biased right now, AI?\": Investigating Supporting Youths' Systematic Evaluation of GenAI",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 537-553",
+   "crossref_issue_year": 2026,
+   "previous_reason": "摘要明示 AI literacy camp、teens N=16，未明示在學／年級",
+   "abstract_source": "openalex",
+   "school_level": "teens N=16（AI literacy camp，未寫年級）",
+   "countries": [],
+   "topic": "AI 素養營隊中青少年系統性評估文生圖 GenAI",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "pending",
+   "reason": "只寫 teens／youth 與營隊，未明示學段或年齡",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:24Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3713043.3728853",
+   "title": "\"It’s Just a Machine that Predicts\" - Demystifying Artificial Intelligence / Machine Learning with Teenagers",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 168-182",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 teenagers）",
+   "countries": [],
+   "topic": "以青少年為對象揭開 AI/ML 神秘面紗（僅題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract、arXiv 題名檢索無對應；ACM DL 未嘗試）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:25Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3713043.3728836",
+   "title": "“AI just keeps guessing”: Using ARC Puzzles to Help Children Identify Reasoning Errors in Generative AI",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 444-464",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認",
+   "abstract_source": "arxiv:2505.16034",
+   "school_level": "ages 6–11",
+   "countries": [],
+   "topic": "AI Puzzlers：以 ARC 謎題幫助兒童辨識 GenAI 推理錯誤、校準過度信任",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "candidate",
+   "reason": "arXiv 預印本摘要明示 6–11 歲兒童、兩場參與式設計；主題為辨識 GenAI 錯誤（AI 素養）。via_arxiv，須以 ACM 官方版複核",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:18:40Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200,
+    "arxiv_abs": 200
+   },
+   "via_arxiv": true,
+   "note": "摘要取自 arXiv 預印本，須以 ACM 官方版複核"
+  },
+  {
+   "doi": "10.1145/3713043.3728856",
+   "title": "Children's Mental Models of AI Reasoning: Implications for AI Literacy Education",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 106-123",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認",
+   "abstract_source": "arxiv:2505.16031",
+   "school_level": "grades 3–8",
+   "countries": [],
+   "topic": "兒童對 AI 推理的心智模式與 AI 素養教育意涵",
+   "category_suggestion": "K2 學術研究",
+   "decision": "candidate",
+   "reason": "arXiv 預印本摘要明示 3–8 年級兒童（共同設計＋106 人田野研究）；主題為對 AI 推理的理解。via_arxiv，須以 ACM 官方版複核",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:15:52Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200,
+    "arxiv_abs": 200
+   },
+   "via_arxiv": true,
+   "note": "摘要取自 arXiv 預印本，須以 ACM 官方版複核"
+  },
+  {
+   "doi": "10.1145/3713043.3727052",
+   "title": "Beyond the Algorithm: Speculative Approaches to Critical AI Literacies with Diverse Youth",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 89-105",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 diverse youth）",
+   "countries": [],
+   "topic": "以思辨設計培養多元青年批判 AI 素養（僅題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract、arXiv 題名檢索無對應）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:30Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3713043.3731520",
+   "title": "Empowering Children’s AI Literacy Through Co-Creating Stories with LLM",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 994-999",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 children）",
+   "countries": [],
+   "topic": "與 LLM 共創故事提升兒童 AI 素養（僅題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract、arXiv 題名檢索無對應）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:31Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3812183",
+   "title": "AI Literacy with Teenagers: Exploring Large Language Models Beneath the Surface",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1251-1256",
+   "crossref_issue_year": 2026,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 teenagers）",
+   "countries": [],
+   "topic": "與青少年探究 LLM 內部運作的 AI 素養（僅題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract、arXiv 題名檢索無對應）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:32Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3813778",
+   "title": "Resisting \"Cheesy\" AI: Hybrid and Situated Critical AI Literacy With Youth-Envisioned Futures",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1375-1378",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "youth（K-12 只出現在背景敘述）",
+   "countries": [],
+   "topic": "以實體製作與參與式未來設計培養青年批判 AI 素養（博士生論壇）",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "pending",
+   "reason": "參與者只寫 youth 與社區情境；K-12 只見於背景敘述，未明示研究對象學段／年齡",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:33Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3816198",
+   "title": "Growing Up with AI: Approaches to Community-centered AI Literacy",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1426-1428",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "early childhood education (ages 3–8)",
+   "countries": [],
+   "topic": "社區中心的幼兒 AI 素養（工作坊提案）",
+   "category_suggestion": "K2 學術研究",
+   "decision": "pending",
+   "reason": "年齡 3–8 橫跨學前與小學低年級，是否算 K–12 需管理者定；且為工作坊提案、無研究對象",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:34Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3813775",
+   "title": "Eco-AI Campus: A Cooperative Digital Game for Reasoning About the Sustainable and Ethical Deployment of AI",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1329-1332",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "middle-school students",
+   "countries": [],
+   "topic": "Eco-AI Campus：合作式數位遊戲，探討 AI 部署的環境與倫理取捨",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "candidate",
+   "reason": "摘要明示 middle-school students 與 AI 素養活動；主題為 AI 資源成本與倫理（學習關於 AI）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:36Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3813782",
+   "title": "Navigating the AI Era: A Multi-Step Approach to Family AI Literacy and Mediation for Young Children",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1391-1393",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "children (ages 5 to 10)",
+   "countries": [],
+   "topic": "家庭 AI 素養與家長中介（博士論文計畫，三研究）",
+   "category_suggestion": "K2 學術研究",
+   "decision": "candidate",
+   "reason": "摘要明示 5–10 歲兒童的 AI 素養發展；家庭情境，Study 1 對象為家長（N=974），Study 2–3 尚在規劃；主題仍為兒童學習關於 AI。介入成效屬規劃，若後續報成效：高風險，待 G2–G4",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:37Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3806143",
+   "title": "Orbiting the VirtueVerse: A Game for Practicing and Reflecting on AI Ethics",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 464-475",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "middle-school students; aged 13–14",
+   "countries": [],
+   "topic": "VirtueVerse：情境式 AI 倫理（德性倫理）遊戲",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "candidate",
+   "reason": "摘要明示 K-12、middle-school、22 名 13–14 歲學生；AI 倫理學習",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:38Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3713043.3731604",
+   "title": "Beyond Users: Supporting Children in Interpreting, Resisting, and Collaborating with AI",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1180-1184",
+   "crossref_issue_year": 2025,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "children（KidsTeam UW、classroom deployments；未寫年齡／年級）",
+   "countries": [],
+   "topic": "支持兒童詮釋、抵抗、協作 AI（博士生論壇）",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "pending",
+   "reason": "只寫 children 與 classroom deployments，未明示學校／年級／年齡；KidsTeam UW 為大學共同設計團隊",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:39Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3813780",
+   "title": "Exploring children’s visions for an AI-enabled education",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1398-1401",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "children aged 7–11",
+   "countries": [],
+   "topic": "兒童在基礎 AI 素養支持下想像 AI 賦能的教育（博士計畫）",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "candidate",
+   "reason": "摘要明示 7–11 歲兒童、以工作坊進行 AI 概念與思辨設計",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:41Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3806144",
+   "title": "Where Does AI Leave a Footprint? Children’s Reasoning About AI’s Environmental Costs",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 19-33",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "children ages 6–12",
+   "countries": [],
+   "topic": "EcoPrompt：兒童推理 AI 環境成本（系統思考）",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "candidate",
+   "reason": "摘要明示 16 名 6–12 歲兒童、兩場參與式設計；主題為 AI 環境影響（擴充 AI 素養）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:42Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3713043.3731605",
+   "title": "Taking the Magic Out of the Machine: Children as Creators of Real-World AI-Powered Tools for Education",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1185-1187",
+   "crossref_issue_year": 2025,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "students aged 11–13（at their school）",
+   "countries": [],
+   "topic": "兒童設計、開發並部署校內 AI 工具的課程（博士生論壇）",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "candidate",
+   "reason": "摘要明示 11–13 歲學生、為其學校實作 AI 工具；學習打造 AI（學習關於 AI）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:43Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3713043.3731525",
+   "title": "Building babyGPTs: Youth engaging in data practices and ethical considerations through the construction of generative language models",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1021-1026",
+   "crossref_issue_year": 2025,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "three teenagers (ages 14–15)",
+   "countries": [],
+   "topic": "babyGPT：青少年建構生成式語言模型中的資料實踐與倫理",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "candidate",
+   "reason": "摘要明示 14–15 歲青少年（案例 3 人）；建構 GLM 學習 AI/ML 與倫理",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:44Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3713043.3731602",
+   "title": "Investigating Youth’s Technical and Ethical Understanding of Generative Language Models When Engaging in Construction and Deconstruction Activities",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1172-1175",
+   "crossref_issue_year": 2025,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "sixteen ninth graders (ages 14–15)",
+   "countries": [],
+   "topic": "青年建構與稽核 GLM 的技術與倫理理解（博士生論壇）",
+   "category_suggestion": "K2 學術研究",
+   "decision": "candidate",
+   "reason": "摘要明示 9 年級、14–15 歲；建構與稽核 GLM 的理解",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:46Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3806107",
+   "title": "Building to Understand: Examining Teens’ Technical and Socio-Ethical Pieces of Understanding in the Construction of Small Generative Language Models",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 262-280",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "sixteen teenagers（未寫年齡／年級）",
+   "countries": [],
+   "topic": "青少年建構小型生成式 LM 的技術與社會倫理理解",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "pending",
+   "reason": "只寫 teenagers，未明示學段或年齡（arXiv 2603.25852 版亦同）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:47Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3713043.3728849",
+   "title": "Youth as Advisors in Participatory Design: Situating Teens’ Expertise in Everyday Algorithm Auditing with Teachers and Researchers",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 415-428",
+   "crossref_issue_year": 2025,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "three teenagers (16–18 years)；high school CS teachers",
+   "countries": [],
+   "topic": "青少年擔任顧問，協助高中 CS 教師設計 GenAI 演算法稽核課程",
+   "category_suggestion": "K4 教學師培",
+   "decision": "candidate",
+   "reason": "摘要明示 16–18 歲青少年與高中資訊教師共同設計課堂課程；主題為 GenAI 演算法稽核教學（18 歲屬邊界）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:48Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3813783",
+   "title": "Investigating Hands-on AI Literacy Activities for Empowering Youth with Technological Agency for the Future of Work",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1371-1374",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 youth）",
+   "countries": [],
+   "topic": "動手做 AI 素養活動、未來工作的技術能動性（僅題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract、arXiv 題名檢索無對應）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:50Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3813763",
+   "title": "UnboxAI: Towards Sustainable Family AI Literacy Through Tangible Interaction",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1307-1310",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "children (ages 8–11) and parents",
+   "countries": [],
+   "topic": "UnboxAI：親子實體互動培養 AI 評估與校準信任（展示）",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "candidate",
+   "reason": "摘要明示 8–11 歲兒童與家長；家庭情境但主題為 AI 素養（評估 AI、過度信任）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:51Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3813772",
+   "title": "Shadows, Doodles and Dice: Three Demos for Inter-generational Interactions around AI Literacy",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1303-1306",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "none",
+   "school_level": "unknown（題名僅 inter-generational）",
+   "countries": [],
+   "topic": "跨世代 AI 素養互動三個展示（僅題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract、arXiv 題名檢索無對應）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:52Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3812166",
+   "title": "Youth Prompting in Microsoft Copilot: Learning with Generative AI at 4-H STEM Camps",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1022-1027",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "students in grades 7–12",
+   "countries": [],
+   "topic": "4-H STEM 營隊學生以 Copilot 做學習任務的提示語分析",
+   "category_suggestion": "K5 工具治理",
+   "decision": "exclude",
+   "reason": "學段明確（7–12 年級），但主題為以 Copilot 當學習工具的提示行為，AI 素養只作為意涵；屬 AI 當學習工具。摘要只寫 Tennessee（州名），國別不記",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:53Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3806146",
+   "title": "“Should AI Be Used At All?”: Examining How Youth Decenter AI Solutionism",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 281-298",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "youth；minoritized youth（未寫年齡／年級）",
+   "countries": [],
+   "topic": "批判 AI 流暢度課程與青年拒絕 AI 解決主義",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "pending",
+   "reason": "只寫 youth／young people，未明示學段或年齡；主題相關",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:55Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3812189",
+   "title": "Youth as Evaluators: Designing Participatory Instruments for Age-Appropriate AI Governance",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1016-1021",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 youth）",
+   "countries": [],
+   "topic": "青年作為評估者：適齡 AI 治理的參與式工具（僅題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract、arXiv 題名檢索無對應）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:56Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3806124",
+   "title": "Protection or Empowerment? Perspectives on Youth-Inclusive Responsible AI",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 245-261",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "16 teens, 11 parents（未寫年齡／年級）",
+   "countries": [],
+   "topic": "青年參與負責任 AI 的保護與賦權觀點",
+   "category_suggestion": "K5 工具治理",
+   "decision": "pending",
+   "reason": "只寫 teens／youth，未明示學段或年齡；主題為青年與負責任 AI 治理",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:57Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3713043.3728839",
+   "title": "Behind the Scenes: Unpacking Students' Experience during a Collaborative AI Workshop using Multi-Modal Data",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 276-295",
+   "crossref_issue_year": 2025,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "K-12；63 students aged 11 to 15",
+   "countries": [],
+   "topic": "設計思考 AI 工作坊中學生行為與情意的多模態學習分析",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "candidate",
+   "reason": "摘要明示 K-12、11–15 歲學生、AI 設計思考工作坊；以多模態資料預測表現：高風險，待 G2–G4",
+   "high_risk": true,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:05:58Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3812142",
+   "title": "The Transparency Trade-off in AI Governance Simulations: Balancing Adolescent Civic Learning and Trust",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 892-895",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "117 high school students",
+   "countries": [],
+   "topic": "LLM 多代理鎮議會模擬的透明度呈現對公民學習與信任的影響",
+   "category_suggestion": "K5 工具治理",
+   "decision": "exclude",
+   "reason": "學段明確（高中生），但 LLM 模擬是公民教育的教學工具，主要結果為公民學習與對系統的信任，非學習關於 AI；屬邊界案例。另有實驗組間學習成效比較（高風險，待 G2–G4）",
+   "high_risk": true,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:06:00Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3806104",
+   "title": "Kumu Connect: Culturally-Authentic AI Tools to Enable Educator Agency and Data Sovereignty for Hawaiian K-12 CS Education",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 49-67",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "K-12（題名）；Native Hawaiian educators",
+   "countries": [],
+   "topic": "Kumu Connect：LLM 輔助的夏威夷文化 CS 教案產生器",
+   "category_suggestion": "K5 工具治理",
+   "decision": "exclude",
+   "reason": "LLM 為教師備課工具，主題為文化回應 CS 課程與資料主權，非教 AI 或學習關於 AI。摘要提及 Hawaiʻi（州），國別不記",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:06:01Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3713043.3728857",
+   "title": "From Automation to Integration: Designing Opportunities for Students and Teachers to Act Skillfully Around AI in Existing K-12 Subjects",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 221-235",
+   "crossref_issue_year": 2025,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "school subjects；teachers and students（摘要欄為圖說；題名 K-12）",
+   "countries": [],
+   "topic": "將 AI 活動整合進既有 K-12 學科（數學課教案中的 ML 活動）",
+   "category_suggestion": "K4 教學師培",
+   "decision": "pending",
+   "reason": "OpenAlex 摘要欄實為圖說，非正式摘要；圖說提及教師、學生、學校學科與數學課 ML 教案，傾向 candidate，需讀到正式摘要確認",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:06:02Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3812130",
+   "title": "The Everything Tool Problem: A Scoping Review of Empirical Research with Young People and Generative AI",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 1011-1015",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "young people aged 13–14（CAISE 研究）",
+   "countries": [
+    "GB"
+   ],
+   "topic": "青年與生成式 AI 實證研究範圍回顧＋CAISE 縱貫研究（校內外）",
+   "category_suggestion": "K2 學術研究",
+   "decision": "candidate",
+   "reason": "範圍回顧本身只寫 young people；所提 CAISE（Children and AI in School and Elsewhere）研究明示 13–14 歲、英國；主題含 GenAI 傷害與法規脈絡（K–12 GenAI 風險／治理）。國別依 CAISE 研究地 UK 記 GB；回顧文獻集中於美國不記",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:06:04Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3713043.3731498",
+   "title": "If anybody finds out you are in BIG TROUBLE”: Understanding Children’s Hopes, Fears, and Evaluations of Generative AI",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 872-877",
+   "crossref_issue_year": 2025,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "37 fifth-graders (ages 9–10)",
+   "countries": [],
+   "topic": "五年級學生對生成式 AI 的期待、恐懼與評估",
+   "category_suggestion": "K2 學術研究",
+   "decision": "candidate",
+   "reason": "摘要明示 5 年級、9–10 歲；主題為兒童對 GenAI 的理解與過度依賴風險",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:06:05Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3773077.3806128",
+   "title": "Children Envision Future GenAI Chatbots that are Bounded, Helpful, and Safe",
+   "paper_type": "IDC 論文集（full／short／demo／workshop 細類待官方頁）；頁 229-244",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "32 children (ages 9–12)",
+   "countries": [
+    "VN",
+    "FI",
+    "JP"
+   ],
+   "topic": "兒童想像未來 GenAI 聊天機器人：有界、有幫助、安全",
+   "category_suggestion": "K2 學術研究",
+   "decision": "candidate",
+   "reason": "摘要明示 9–12 歲兒童、越南／芬蘭／日本工作坊；主題為兒童對 GenAI 聊天機器人的認知與安全想像",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:06:07Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  }
+ ],
+ "limits": [
+  "arXiv export API 全程回 429（第 1 輪 6 次 429＋2 次逾時、第 2 輪 9 次 429、再探測 1 次 429），未能以 API 檢索；改用 alphaXiv MCP 搜尋與 arxiv.org 網站題名搜尋／abs 頁（皆 HTTP 200），找到 2 篇同題預印本（2505.16031、2505.16034）。",
+  "Crossref 37 篇皆無 abstract 欄；ACM DL 未嘗試讀取（依指示不繞過驗證頁）。",
+  "仍有 7 篇摘要不可得（OpenAlex 無摘要、無 arXiv 同題版）：維持 pending。",
+  "OpenAlex 摘要欄有 2 篇實為圖說（3731513、3728857），不視為正式摘要。",
+  "via_arxiv 的 2 篇 candidate 須以 ACM 官方版摘要複核學段／年齡。",
+  "邊界判斷交管理者：3816198（3–8 歲橫跨學前）、3728849（16–18 歲，18 歲在邊界）、3813782 與 3813763（家庭情境）、3812142（LLM 模擬為公民學習工具，判 exclude）、3812130（年齡出自所提 CAISE 研究而非回顧本身）。",
+  "paper_type 的 full／short／demo／DC 細類未讀官方頁，沿用前輪描述加頁碼；類別為建議值。",
+  "國別只記摘要明寫國名；州名（Tennessee、Hawaiʻi）不記。"
+ ],
+ "counts": {
+  "total": 37,
+  "candidate": 16,
+  "pending": 18,
+  "exclude": 3,
+  "abstract_source": {
+   "openalex": 28,
+   "none": 7,
+   "arxiv": 2
+  },
+  "known_duplicate": 0
+ }
+}
