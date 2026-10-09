@@ -1,0 +1,351 @@
+[
+  {
+    "no": 1,
+    "doi": "10.3102/2197285",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-PD",
+      "T-ETH",
+      "T-BAS"
+    ],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "資源不足學校在職教師的AI專業發展需求；只寫schools，未寫學段，照「只寫 schools 者待判」；摘要來自機構典藏，未與 DOI 核對"
+  },
+  {
+    "no": 2,
+    "doi": "10.3102/2194864",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "原件摘要未取得；相關期刊文章版本關係未確認，不能代用"
+  },
+  {
+    "no": 3,
+    "doi": "10.3102/2185074",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "未取得摘要"
+  },
+  {
+    "no": 4,
+    "doi": "10.3102/2193015",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "未取得摘要"
+  },
+  {
+    "no": 5,
+    "doi": "10.3102/2183399",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "未取得摘要"
+  },
+  {
+    "no": 6,
+    "doi": "10.3102/2184589",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "未取得摘要"
+  },
+  {
+    "no": 7,
+    "doi": "10.3102/2195238",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "只有書目，未取得摘要"
+  },
+  {
+    "no": 8,
+    "doi": "10.3102/2190458",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "原件摘要未取得；相關期刊文章（Education Sciences 10.3390/educsci16060987）版本關係未確認"
+  },
+  {
+    "no": 9,
+    "doi": "10.3102/2186829",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "未取得摘要"
+  },
+  {
+    "no": 10,
+    "doi": "10.3102/2190722",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "原件摘要未取得；相關期刊文章（CEDTECH 2024）版本關係未確認"
+  },
+  {
+    "no": 11,
+    "doi": "10.3102/2194056",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "未取得摘要"
+  },
+  {
+    "no": 12,
+    "doi": "10.3102/2198280",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "未取得摘要"
+  },
+  {
+    "no": 13,
+    "doi": "10.1016/j.tate.2026.105707",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-PD",
+      "T-BAS",
+      "T-TEA"
+    ],
+    "audience": "k12",
+    "recommendation": "import",
+    "ai_lit_note": "K-12在職教師AI素養的系統性回顧（43件實證研究），對應T-PD「評估教師AI素養以規劃專業增能」"
+  },
+  {
+    "no": 14,
+    "doi": "10.1016/j.tate.2025.105286",
+    "ai_lit_class": "B",
+    "ai_lit_dims": [
+      "S-LRN",
+      "T-TEA"
+    ],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "ChatGPT於學校數學教育的系統性回顧；只寫school，未列學段"
+  },
+  {
+    "no": 15,
+    "doi": "10.1016/j.tate.2025.105375",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-TEA",
+      "T-PD"
+    ],
+    "audience": "k12",
+    "recommendation": "import",
+    "ai_lit_note": "13名在職教師以ChatGPT重做K-12教案的體驗式學習，屬生成式AI教學培訓（準則判A），對應T-TEA「整合AI與教學法」"
+  },
+  {
+    "no": 16,
+    "doi": "10.1016/j.tate.2025.105270",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-TEA",
+      "T-ETH"
+    ],
+    "audience": "k12",
+    "recommendation": "import",
+    "ai_lit_note": "中國中小學2,166名在職教師AI-TPACK（準則：AI-TPACK判A），AI倫理為重要預測因子，對應T-TEA與T-ETH"
+  },
+  {
+    "no": 17,
+    "doi": "10.1016/j.tate.2026.105435",
+    "ai_lit_class": "B",
+    "ai_lit_dims": [
+      "T-TEA"
+    ],
+    "audience": "k12",
+    "recommendation": "import",
+    "ai_lit_note": "韓國國中教師與校長對AI數位教科書導入的想像，重點在AI工具導入教學，對應T-TEA「評估AI工具輔助教學的適用性」"
+  },
+  {
+    "no": 18,
+    "doi": "10.1016/j.tate.2025.105032",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-PD",
+      "T-TEA"
+    ],
+    "audience": "k12",
+    "recommendation": "import",
+    "ai_lit_note": "鄉村國中電腦科學教師實施AI課程的專業認同發展，對應T-PD與T-TEA"
+  },
+  {
+    "no": 19,
+    "doi": "10.1016/j.tate.2026.105739",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-PD",
+      "T-BAS",
+      "T-ETH"
+    ],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "土耳其BİLSEM資優教育教師AI專業發展（判A）；摘要未寫所服務學段，暫不推定"
+  },
+  {
+    "no": 20,
+    "doi": "10.1016/j.tate.2026.105433",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-PD",
+      "T-ETH"
+    ],
+    "audience": "k12",
+    "recommendation": "import",
+    "ai_lit_note": "中國424名在職教師AI準備度（小學133、國中202，其餘截斷），主要對象為中小學，對應T-PD「評估教師AI素養以規劃專業增能」"
+  },
+  {
+    "no": 21,
+    "doi": "10.3389/feduc.2025.1716353",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "S-ETH",
+      "S-LRN"
+    ],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "批判AI素養的科學教育觀點文章；只以高中生物為例，未界定學段"
+  },
+  {
+    "no": 22,
+    "doi": "10.3389/feduc.2025.1610836",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "S-ETH"
+    ],
+    "audience": "higher_ed",
+    "recommendation": "exclude",
+    "ai_lit_note": "學校與大學學生GenAI學術誠信通報的概念架構，刊於Higher Education分區，主要對象非K-12"
+  },
+  {
+    "no": 23,
+    "doi": "10.3389/feduc.2025.1609518",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "S-ETH",
+      "S-LRN"
+    ],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "AI時代作業的觀點文章；只寫學校，未界定學段"
+  },
+  {
+    "no": 24,
+    "doi": "10.1109/tlt.2025.3575030",
+    "ai_lit_class": "B",
+    "ai_lit_dims": [
+      "S-LRN",
+      "T-TEA"
+    ],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "AI與科學教育的論述文章；只寫學校，未界定學段"
+  },
+  {
+    "no": 25,
+    "doi": "10.1007/s00146-025-02749-1",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "S-ETH"
+    ],
+    "audience": "k12",
+    "recommendation": "import",
+    "ai_lit_note": "主張早期學校AI教育先建立兒童道德與倫理基礎的跨文化論述，對應S-ETH「理解AI倫理困境」"
+  },
+  {
+    "no": 26,
+    "doi": "10.1007/s00146-025-02570-w",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-BAS"
+    ],
+    "audience": "other_stakeholders",
+    "recommendation": "import",
+    "ai_lit_note": "土耳其324名中小學校長對AI、大數據與機器人教師的看法與科技素養，對應T-BAS「參與AI校園治理部署與決策」"
+  },
+  {
+    "no": 27,
+    "doi": "10.1007/s00146-025-02609-y",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "未取得摘要或正文"
+  },
+  {
+    "no": 28,
+    "doi": "10.1007/s00146-025-02606-1",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "未取得摘要或正文"
+  },
+  {
+    "no": 29,
+    "doi": "10.1007/s00146-026-03227-y",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "S-ETH"
+    ],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "生成式AI時代理解證據的理論文章；不限學段"
+  },
+  {
+    "no": 30,
+    "doi": "10.1007/s00146-025-02266-1",
+    "ai_lit_class": "B",
+    "ai_lit_dims": [
+      "S-LRN"
+    ],
+    "audience": "higher_ed",
+    "recommendation": "exclude",
+    "ai_lit_note": "以高等教育為核心的AI依賴評論，主要對象非K-12"
+  },
+  {
+    "no": 31,
+    "doi": "10.1007/s00146-025-02458-9",
+    "ai_lit_class": "unknown",
+    "ai_lit_dims": [],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "未取得摘要或正文"
+  },
+  {
+    "no": 32,
+    "doi": "10.1007/s00146-026-03216-1",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "S-LRN"
+    ],
+    "audience": "unknown",
+    "recommendation": "pending",
+    "ai_lit_note": "AI隨時回答的課堂之反思評論；未界定學段"
+  },
+  {
+    "no": 33,
+    "doi": "10.1007/s00146-025-02530-4",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-ETH"
+    ],
+    "audience": "adult",
+    "recommendation": "exclude",
+    "ai_lit_note": "醫療專業人員教育的AI素養評論，非K-12"
+  }
+]
