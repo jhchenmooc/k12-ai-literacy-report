@@ -146,7 +146,7 @@ AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只�
 
 ## 4. 實用流程（照做即可）
 
-1. **P0 期刊補漏**：ISSN→OpenAlex 來源 ID → 查缺摘要比例 → 兩組布林查詢（≤5 個運算子）＋缺摘要多時加題名查詢 → 逐題名初篩 → 入選者讀摘要判學段 → Crossref 取書目 → `verify_bibtex`（或手動比對）→ 小寫 DOI 對主表與 `research/` 既有 DOI 去重。
+1. **P0 期刊補漏**：ISSN→OpenAlex 來源 ID → 查缺摘要比例 → 兩組布林查詢（≤5 個運算子）＋缺摘要多時加題名查詢 → 逐題名初篩 → 入選者讀摘要判學段與 AI 素養範圍 A/B/C（[準則](ai-literacy-scope-criteria.md)）→ Crossref 取書目 → `verify_bibtex`（或手動比對）→ 小寫 DOI 對主表與 `research/` 既有 DOI 去重。
 2. **會議補漏**：先依 3.3 定位，再同上。
 3. **本週新發表（週報）**：Crossref 登記日 filter＋關鍵詞 → 逐筆查 `published-online` → 只要上線日可能早於窗口就標「日期邊界風險」→ 預印本用 alphaXiv／arXiv，週內重查。全部只是「待查證」，要過 v1.6 首發查核才可能進週報。
 4. **書目抽查**：既有紀錄整批跑 `verify_bibtex`，加一筆故意錯配的負控制確認工具在工作。
@@ -157,6 +157,7 @@ AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只�
 - **失敗不記零命中**；失敗查詢寫進稽核檔，不寫進 `search_runs.csv`（該表只記實際完成且可追溯的搜尋）。
 - `first_published_on` 只在讀到可靠首發證據時填；否則留空／unknown，`year_basis=issue_year` 用卷期年。**不能用發現日、登記日或 OpenAlex 日期冒充首發日。**
 - 學段、國別只依摘要／原文明寫的；不明就 unknown 或 pending。
+- 每篇記 `ai_lit_class`（A／B／C／unknown）、`ai_lit_dims`（教育部框架代碼）、`ai_lit_note`（對應內涵的一句理由），依 [AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)；疑問先查 `research/reference/` 的框架全文。
 - 成效、效果量、前後測一律標「高風險，待 G2–G4」，不寫成成效主張。
 - 不把摘要全文、未授權全文、個資或金鑰寫進 repo。
 - 新紀錄的 `verification_status`：未讀出版社頁 → `discovered_unverified`（管理者 2026-10-09 決定，Crossref＋OpenAlex 一致不升級）。
@@ -205,7 +206,7 @@ AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只�
 
 ## 7. 開工檢查清單
 
-- [ ] 讀 `SESSION-HANDOFF.md` 最新段落與本文件
+- [ ] 讀 `SESSION-HANDOFF.md` 最新段落、本文件與 [AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)
 - [ ] 查最新 main、open PR、Actions；記錄正式檔雜湊
 - [ ] 用一個小請求確認 OpenAlex／Crossref／arXiv 可連；Claude 環境另確認 MCP 工具可載入
 - [ ] 決定是否平行：來源能否切成互不重疊的組？誰是唯一整合者？

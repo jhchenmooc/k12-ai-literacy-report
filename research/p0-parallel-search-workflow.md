@@ -17,7 +17,7 @@
 
 1. 每組先確認來源 ID、既有樣本與 DOI。J12/J13 已有初篩，只補缺日期、版本或新樣本，避免無目的重查。
 2. 以 2025-01-01 至 2026-10-09 為定向發現範圍，優先官方出版頁／正式會議論文集。實際命中較早文獻可作背景，但須說明範圍外。這不是完整年度系統性回顧。
-3. 留下 UTC 開始／結束、完整查詢、來源 ID、實際讀取範圍與失敗網址；每篇保存原題、官方 URL、DOI 或 unknown、日期證據、學段、方法、排除／保留原因。分清 full/short/poster/companion/workgroup。
+3. 留下 UTC 開始／結束、完整查詢、來源 ID、實際讀取範圍與失敗網址；每篇保存原題、官方 URL、DOI 或 unknown、日期證據、學段、AI 素養範圍（`ai_lit_class`／`ai_lit_dims`／`ai_lit_note`，依 [準則](ai-literacy-scope-criteria.md)）、方法、排除／保留原因。分清 full/short/poster/companion/workgroup。
 4. 分開記錄最早公開、預印本、出版社 online、issue、會議活動與發現日期。官方 Published 日期只證明該頁的出版資訊；未查更早版本不能認證全球最早公開日。
 5. 搜尋引擎總命中未知用 null／unknown，正式 `results_seen` 留空。`results_screened` 只計逐篇列出且實際初篩的樣本；0 新增主紀錄不等於0命中。原文／日期受阻保留 partial/unavailable；不得以搜尋摘要冒充全文閱讀。
 6. 原文只作必要短轉述與定位資訊，不上傳未授權全文、個資、秘密。高風險效果／因果／代表性結論單獨標記待二輪，不能只靠多角色同意。
