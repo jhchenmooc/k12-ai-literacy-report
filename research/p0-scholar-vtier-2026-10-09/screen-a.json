@@ -1,0 +1,637 @@
+{
+ "batch": "A",
+ "generated_utc": "2026-10-09T19:55:19Z",
+ "items": [
+  {
+   "openalex_id": "W7201899982",
+   "doi": "10.1007/978-3-032-34157-0_8",
+   "title": "Sequence Vs Transition Network Analysis: Complementary Insights Into Students’ Learning Patterns",
+   "scholars": [
+    "V02"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "unrelated",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "六年級學生數位課本日誌之學習分析方法比較；AI 僅為背景字眼"
+  },
+  {
+   "openalex_id": "W7127583750",
+   "doi": "10.5040/9781350518810",
+   "title": "Child-Friendly Computer Science",
+   "scholars": [
+    "V03"
+   ],
+   "attribution": "uncertain",
+   "population": "k12",
+   "topic_fit": "fit",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "pending",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "幼兒 CS／AI 素養專書（ages 3-8）；OpenAlex 與 Crossref 均無作者單位，歸屬未能以單位核實"
+  },
+  {
+   "openalex_id": "W7127085868",
+   "doi": "10.1007/978-3-032-15743-0_3",
+   "title": "Block-Based Programming vs Prompt-Based Programming: An Exploratory Study on the Potential of Generative AI to Facilitate Learning CT Skills in K-12",
+   "scholars": [
+    "V10"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "tool_only",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "無摘要；依題名為以生成式 AI（prompt-based）學習運算思維，AI 為工具"
+  },
+  {
+   "openalex_id": "W7203901795",
+   "doi": "10.2139/ssrn.7330465",
+   "title": "What 5,000 Questions to AI Reveal About Children’s Curiosity and Information-Seeking Behavior",
+   "scholars": [
+    "V18"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "fit",
+   "version": "preprint_only",
+   "formal_doi": null,
+   "recommendation": "pending",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "SSRN 預印本；Crossref 摘要寫兒童 aged 8 to 10 在家使用生成式 AI 並評估回應；OpenAlex 單位為前任職機構（合理延續）；無正式版；主題屬兒童評估 AI 資訊，邊界"
+  },
+  {
+   "openalex_id": "W7154960891",
+   "doi": "10.1007/978-3-032-06565-0_3",
+   "title": "Generative AI-Based Automated Assessment Generation",
+   "scholars": [
+    "V21"
+   ],
+   "attribution": "valid",
+   "population": "unclear",
+   "topic_fit": "tool_only",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "生成式 AI 自動出題（K-12 科學與醫學生理兩案例），AI 為工具"
+  },
+  {
+   "openalex_id": "W7211988711",
+   "doi": "10.3102/2283935",
+   "title": "Interactive Machine Learning and Conversational Agents for Supporting Scientific Inquiry in Secondary Education (Poster 6)",
+   "scholars": [
+    "V21"
+   ],
+   "attribution": "uncertain",
+   "population": "k12",
+   "topic_fit": "fit",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "pending",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "AERA 海報，無摘要、無作者單位；題名 secondary education；互動式機器學習是否屬學習關於 AI 未能判定"
+  },
+  {
+   "openalex_id": "W7125790831",
+   "doi": "10.3389/feduc.2025.1737928",
+   "title": "Generative AI use and self-learning in higher education: the role of learning difficulties",
+   "scholars": [
+    "V12"
+   ],
+   "attribution": "valid",
+   "population": "non_k12",
+   "topic_fit": "tool_only",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "大學生使用生成式 AI 自學"
+  },
+  {
+   "openalex_id": "W7127352390",
+   "doi": "10.58459/rptel.2026.21041",
+   "title": "Preparing educators for the AI-enhanced future: Insights from a teacher professional development for K-12 education in Singapore",
+   "scholars": [
+    "V10"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "fit",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "import",
+   "known_duplicate": false,
+   "crossref_title": "Preparing educators for the AI-enhanced future: Insights from a teacher professional development for K-12 education in Singapore",
+   "container": "Research and Practice in Technology Enhanced Learning",
+   "issue_year": 2026,
+   "category_suggestion": "K4",
+   "countries": [
+    "SG"
+   ],
+   "high_risk": true,
+   "note": "在職教師 AI 素養專業發展（K-12 education in Singapore）；前後測 i-TPACK"
+  },
+  {
+   "openalex_id": "W7128818320",
+   "doi": "10.1145/3770762.3772634",
+   "title": "Boosting Coding Confidence in Elementary Students: The Impact of ELA-Integrated Computational Thinking Curriculum",
+   "scholars": [
+    "V19"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "unrelated",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "grades 3-5 語文整合 Scratch 運算思維課程，未涉 AI 學習內容"
+  },
+  {
+   "openalex_id": "W7131398936",
+   "doi": "10.4018/979-8-3373-6546-6",
+   "title": "Pedagogical Innovations in Computer Science Education",
+   "scholars": [
+    "V13"
+   ],
+   "attribution": "valid",
+   "population": "unclear",
+   "topic_fit": "unrelated",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "資訊教育教學創新專書，摘要僅導論，AI 為背景；個別章節未逐章檢查"
+  },
+  {
+   "openalex_id": "W7134185006",
+   "doi": "10.1002/jcal.70214",
+   "title": "Promoting Interdisciplinary Learning With Generative AI Through Self‐Regulated Scaffolding",
+   "scholars": [
+    "V15"
+   ],
+   "attribution": "valid",
+   "population": "non_k12",
+   "topic_fit": "tool_only",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "大學生生成式 AI 鷹架學習準實驗"
+  },
+  {
+   "openalex_id": "W7131659753",
+   "doi": "10.30935/cedtech/17983",
+   "title": "AI transformation in education: Examining teachers’ perceptions using an integrated TAM-TPACK-GenAI framework",
+   "scholars": [
+    "V12"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "tool_only",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "中小學在職教師（teachers of grades 4-9）對教學中整合 AI 的接受度（TAM-TPACK），AI 為教學工具；邊界"
+  },
+  {
+   "openalex_id": "W7131784494",
+   "doi": "10.1016/j.wss.2026.100375",
+   "title": "The association between ethical AI use and well-being among young adults in the UAE: a structural equation modeling approach",
+   "scholars": [
+    "V12"
+   ],
+   "attribution": "valid",
+   "population": "non_k12",
+   "topic_fit": "fit",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "not_k12_fit",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "大學生（young adults, university students）倫理 AI 使用與身心福祉"
+  },
+  {
+   "openalex_id": "W7153097176",
+   "doi": "10.1080/08872376.2026.2632617",
+   "title": "Exploring Bias and Building AI Models: Data Science for Middle Schoolers",
+   "scholars": [
+    "V24",
+    "V25"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "fit",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "import",
+   "known_duplicate": false,
+   "crossref_title": "Exploring Bias and Building AI Models: Data Science for Middle Schoolers",
+   "container": "Science Scope",
+   "issue_year": 2026,
+   "category_suggestion": "K4",
+   "countries": [],
+   "high_risk": false,
+   "note": "7th grade／middle school 學生建立 AI 模型並探討偏誤的課程（Shark AI）；出版社登錄 ORCID 與 V24、V25 相符，無單位資料，以 ORCID 與主題延續判定"
+  },
+  {
+   "openalex_id": "W7134926158",
+   "doi": "10.4324/9781003607304-10",
+   "title": "Using Social Robots to Teach AI to Preschool Children",
+   "scholars": [
+    "V11"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "fit",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "import",
+   "known_duplicate": false,
+   "crossref_title": "Using Social Robots to Teach AI to Preschool Children",
+   "container": "Exploring the Potential of Artificial Intelligence in Early Childhood Education",
+   "issue_year": 2026,
+   "category_suggestion": "K2",
+   "countries": [],
+   "high_risk": true,
+   "note": "preschool children aged 4–6 以社交機器人學 AI（PopBots）；出版社登錄 ORCID 相符，無單位資料；摘要稱評估有效"
+  },
+  {
+   "openalex_id": "W7135082490",
+   "doi": "10.1080/09588221.2026.2640087",
+   "title": "ChatGPT-assisted EFL learning beyond the classroom: impact on oral proficiency, enjoyment, and grit",
+   "scholars": [
+    "V08"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "tool_only",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "高中 EFL 學生以 ChatGPT 練口說，AI 為工具"
+  },
+  {
+   "openalex_id": [
+    "W7138898835",
+    "W7128716336"
+   ],
+   "doi": "10.1609/aaai.v40i48.42116",
+   "title": "A Dialogue-Based Learning Analytics Framework for Collaborative Game-Based Learning",
+   "scholars": [
+    "V26"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "tool_only",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "中學生合作對話之 LLM 學習分析框架；另一 OpenAlex ID 為 Underline 影音版"
+  },
+  {
+   "openalex_id": "W7155016777",
+   "doi": "10.1111/bjet.70069",
+   "title": "Step‐by‐step towards understanding artificial intelligence: A scaffolded learning progression for young learners",
+   "scholars": [
+    "V26"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "fit",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "import",
+   "known_duplicate": false,
+   "crossref_title": "Step‐by‐step towards understanding artificial intelligence: A scaffolded learning progression for young learners",
+   "container": "British Journal of Educational Technology",
+   "issue_year": 2026,
+   "category_suggestion": "K2",
+   "countries": [],
+   "high_risk": false,
+   "note": "fourth and fifth graders (9–11 years) AI 基礎概念學習進程與動態評量；Crossref 單位含 NC State；亦可歸 K3"
+  },
+  {
+   "openalex_id": "W4414790180",
+   "doi": "10.1145/3785022.3785094",
+   "title": "From Wandering to Collaboration: Discourse Patterns in Middle School Generative AI Use",
+   "scholars": [
+    "V19"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "tool_only",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "中學生使用生成式 AI 寫作家教的對話型態分析，AI 為工具"
+  },
+  {
+   "openalex_id": "W7155649524",
+   "doi": "10.1145/3785022.3785065",
+   "title": "Collaborative Dialogue Analysis for Productive Problem Solving",
+   "scholars": [
+    "V26"
+   ],
+   "attribution": "valid",
+   "population": "k12",
+   "topic_fit": "tool_only",
+   "version": "formal",
+   "formal_doi": null,
+   "recommendation": "exclude",
+   "known_duplicate": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": null,
+   "high_risk": null,
+   "note": "以 LLM 分類中學生合作問題解決對話，AI 為工具"
+  }
+ ],
+ "counts": {
+  "total": 20,
+  "recommendation": {
+   "exclude": 12,
+   "pending": 3,
+   "import": 4,
+   "not_k12_fit": 1
+  },
+  "population": {
+   "k12": 15,
+   "teacher_ed": 0,
+   "non_k12": 3,
+   "unclear": 2
+  },
+  "attribution": {
+   "valid": 18,
+   "uncertain": 2
+  },
+  "topic_fit": {
+   "unrelated": 3,
+   "fit": 8,
+   "tool_only": 9
+  },
+  "version": {
+   "formal": 19,
+   "preprint_only": 1
+  },
+  "known_duplicate": 0
+ },
+ "requests": [
+  {
+   "url": "https://api.openalex.org/works/W7201899982?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:09Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7127583750?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:10Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7127085868?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:11Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7203901795?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:12Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7154960891?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:12Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7211988711?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:13Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7125790831?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:14Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7127352390?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:15Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7128818320?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:16Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7131398936?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:16Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7134185006?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:17Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7131659753?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:18Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7131784494?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:19Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7153097176?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:20Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7134926158?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:20Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7135082490?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:21Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7138898835?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:22Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7128716336?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:23Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7155016777?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:24Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W4414790180?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:24Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/W7155649524?select=id,doi,title,type,publication_date,primary_location,locations,authorships,abstract_inverted_index",
+   "utc": "2026-10-09T19:53:25Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.5040/9781350518810",
+   "utc": "2026-10-09T19:54:22Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2283935",
+   "utc": "2026-10-09T19:54:23Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1080/08872376.2026.2632617",
+   "utc": "2026-10-09T19:54:23Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.4324/9781003607304-10",
+   "utc": "2026-10-09T19:54:24Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.58459/rptel.2026.21041",
+   "utc": "2026-10-09T19:54:24Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1111/bjet.70069",
+   "utc": "2026-10-09T19:54:25Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.2139/ssrn.7330465",
+   "utc": "2026-10-09T19:54:26Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/978-3-032-15743-0_3",
+   "utc": "2026-10-09T19:54:26Z",
+   "http": 200
+  }
+ ],
+ "limits": [
+  "判讀依 OpenAlex 摘要（必要時 Crossref 摘要），未讀全文；書籍（#1、#9）僅有導論或簡介，個別章節未逐章檢查",
+  "#2、#5 無摘要，#2 依題名判 tool_only，#5 列 pending",
+  "#1、#5 OpenAlex 與 Crossref 均無作者單位，歸屬記 uncertain；#13、#14 無單位，但出版社在 Crossref 登錄的 ORCID 相符，記 valid",
+  "#3 OpenAlex 單位為學者前任職機構，視為合理延續；OpenAlex locations 與 Crossref relation 均無正式版，未另以題名搜尋正式版",
+  "topic_fit 邊界案例：#3（兒童評估 AI 資訊）、#11（教師對教學用 AI 的接受度），判斷可能需人工複核",
+  "去重以 DOI 子字串與正規化題名前 60 字元比對 kb-titles.tsv（259 列，206 列有 DOI）；20 篇皆未重複",
+  "countries 只記摘要明寫國名；#13 摘要提 NGSS 但未寫國名，記空"
+ ]
+}
