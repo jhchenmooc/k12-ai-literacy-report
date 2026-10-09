@@ -20,7 +20,7 @@
 4. **主張而非整篇決策**：未核實、高影響、矛盾主張保留 `hold` 或刪句；已充分證實的低、中風險內容可單獨處理。
 5. **嚴守高風險規則**：目前 `validate-claims.js` 對 `risk_tier=high` **一律阻擋自動發布**；即使 N-V3/V3 或真人複核也不是 CI 放行例外。不能改風險標籤來繞過。
 6. **舊刊編輯結案但未認證**：2026/09 月報與 9/29–10/8 創刊特刊已作重點追溯檢查、公開勘誤；仍保留 legacy／非獨立認證警示，不應重建全篇認證以延誤新刊。
-7. **Google Forms 暫停**：目前只使用 GitHub Issues 讀者回饋，勿重啟 Google Forms 或增加匿名表單。
+7. **Google Forms 暫停**：目前只使用 GitHub Issues 讀者回饋，勿重啟 Google Forms 或增加匿名表單；[回饋 SOP](reader-feedback-policy.md) 與 [啟用清單](no-login-feedback-launch-checklist.md) 的歷史狀態說明已對齊。
 8. **Public Repo 保持現況**：未核實草稿、來源短摘錄只在符合公開／版權／隱私條件下提交；不得放入個資、秘密、未授權全文或機密政策資料。Pages 從 Repo 根目錄 `.` 打包。
 
 ## 2. 主控文件與檔案所在（以實際 main 為準）
@@ -78,7 +78,12 @@
 5. **PR → CI → 合併 → 部署驗收**：PR `verify` 通過後合併；主分支 `verify` 和 `deploy` 成功，再核對網站首頁、正式內文、手機、來源連結與讀者可見更正。
 6. **出刊後回饋與月報**：既有 GitHub Issues，月底跨週綜整；不重啟 Google Forms。
 
-## 6. 本次對齊的舊文件描述與仍存限制
+## 6. 第二輪跨文件一致性結論與仍存限制
+
+- **本輪核對**：既有 `scaffold-weekly.test.js` 仍要求本期草稿 `source_checked:false`；主控 SOP 明確區分候選初查與正式 claims 認證，不改測試、候選狀態或出刊清單。
+- **Google Forms 文件**：已釐清原有啟用敘述只是 10/09 的歷史配置，現行 `feedback/no-login-config.js` 的 URL、provider 均為 `null`，`receiptVerified:false`。相關文件不再暗示目前可收件。
+- **新聞 N1–N8／研究 G1–G6／發布規則／CI**：就現行文件可直接交叉核對的風險分級、原文限制、AI 查核邊界與正式發布資料鏈，未發現需修改程式或 CI 的新阻斷差異。此結論僅為文件／程式一致性審視，不認證任何真實內容。
+
 
 - **README 舊部署文字**：本次已對齊最近成功 CI／部署的紀錄；舊排查文件僅供歷史參考，不代表現在仍故障。
 - **首期短名單候選數**：本次已統一為七項，全部 `hold`；未更動 JSON 的正式核證旗標。

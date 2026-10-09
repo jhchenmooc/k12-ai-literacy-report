@@ -50,17 +50,17 @@
 4. **狀態可追溯**：保留「待來源核對／確認問題／修正 PR 中／已部署／不採納附理由」五個編輯處理階段；如無建置 Issue Labels 的管理權限，可先用 Issue 留言與連結記錄，不假稱 Labels 已實裝。
 5. **保護報告修訂**：更正須經受保護分支 PR、必須 CI、正式部署；重大勘誤另在報告中刊出修正日期與簡述。
 
-## 免 GitHub 登入渠道（尚未啟用）
+## 免 GitHub 登入渠道（已暫停；下列啟用資訊為歷史記錄）
 
-已準備 [免登入回饋入口](../feedback/no-login/) 和 [外部收件服務啟用／自檢清單](no-login-feedback-launch-checklist.md)。由於 GitHub Pages 無後端收件，尚未設定 Google Forms 的公開填答網址與隱私說明頁，入口會顯示「尚未開放」，並**不處理或儲存表單資料**。啟用後私有表單回饋不會自動匯入原有 GitHub Issue 每週統計，也不得將私有文字公開轉貼；真正開放須先以未登入的瀏覽器做一筆測試提交並由收件端確認。
+已準備 [免登入回饋入口](../feedback/no-login/) 和 [外部收件服務啟用／自檢清單](no-login-feedback-launch-checklist.md)。GitHub Pages 無後端收件；**目前網站配置 `publicFormUrl:null`、`receiptVerified:false`，免登入入口為暫停狀態，不會處理或儲存此渠道的填答資料**。若日後經另案核准重啟，私有表單回饋亦不會自動匯入既有 GitHub Issue 每週統計；需先以未登入的瀏覽器實測收件並確認隱私。
 
-## Google Forms 表單連結已提供（2026-10-09，端到端驗收未完成）
+## Google Forms 曾提供連結（2026-10-09 歷史過程，已由下節停用決策取代）
 
-使用者已提供 Google Forms 公開填答網址；網站 `feedback/no-login/` 透過 `feedback/no-login-config.js` 連向該表單，並提供 [資料處理與隱私說明](../feedback/privacy/)。
+使用者當時曾提供 Google Forms 公開填答網址，網站也曾暫時連向表單並提供 [資料處理與隱私說明](../feedback/privacy/)；**此描述僅為歷史配置，不是目前運作狀態**。
 
 **尚未確認**：未登入 Google／GitHub 時是否能正常進入並送出、Google 表單是否強制收集電子郵件、真正收件端是否收到測試回覆。這些均不可能只靠 GitHub CI 證明。網站狀態保留 `receiptVerified: false`，並明示「待驗收」，不得宣稱已經完成免登入可用性測試。
 
-後續請表單管理者在無痕／登出狀態送出不含真實個資的一筆測試資料，於 Google Forms「回覆」面板確認，再核對不收集電子郵件、無機構限制、不要求登入；只有實際測試成功，才將 `receiptVerified` 改成 true。之後若需每週彙整 Google Forms 的回饋，須另外建立最小權限的聚合管道；**目前 GitHub Issues 每週整理並不統計 Google Forms 回覆**。
+原先未完成的免登入測試不屬於現行待辦；**未經另案授權不得進行填答測試、修改 `receiptVerified` 或建立 Google Forms 彙整管道**。現行 GitHub Issues 週整理不統計 Google Forms 回覆。
 
 ## Google 表單暫停（2026-10-09）
 
