@@ -1,4 +1,4 @@
-# K-12 AI 素養學者監測清單 v0.5（草稿）
+# K-12 AI 素養學者監測清單 v0.6（草稿）
 
 > 建立日期：2026-10-09。用途：搜尋時可**依作者追蹤**，補足依期刊會議（[venue-watchlist](venue-watchlist.md)）與關鍵字的檢索。這是**監測來源池**，不是學者排名或推薦，也不表示他們的每篇著作都適用 K-12；入選理由只代表與本刊主題的關聯。
 >
@@ -22,6 +22,7 @@
 - **A 核心**：2026 年論壇的學術講者與主持人，分為國際（A1）與臺灣（A2）。每週依作者檢索新作。
 - **A 歷屆**：2023–2025 年論壇的學術講者、引言人與與談人，分為國際（A3）與臺灣（A4）。每月依作者檢索。
 - **H 高被引**：AI 素養高被引論文的作者（選取方式見第 3b 節）。每月依作者檢索。
+- **V 監測期刊高被引**：監測期刊中高被引 K-12 AI 論文的作者（選取方式見第 3c 節）。每月依作者檢索。
 - **B 擴充**：A 級學者的主要共同作者，或論壇中被多位講者引用的研究者。每月檢索。
 - **C 政策與實務窗口**：論壇的政策官員與學校實務講者，不是學術作者。追蹤其所屬機構的發布（併入政策來源搜尋），不依作者檢索論文。
 
@@ -136,6 +137,52 @@
 | H32 | Alexander Benlian | Technische Universitat Darmstadt/Professor | #29 2024〈AI literacy for users – A comprehensive review and future re…〉Computers in Human Behavior Artificial Humans，被引 236 | A5082912598；ORCID 0000-0002-7294-3097。**已確認** |
 | H33 | Ahlam Mohammed Al-Abdullatif | King Faisal University/Associate Professor | #40 2024〈Modeling Teachers’ Acceptance of Generative Artificial Intel…〉Education Sciences，被引 162；#60 2024〈ChatGPT in Learning: Assessing Students’ Use Intentions thro…〉Behavioral Sciences，被引 121 | A5078581123；ORCID 0000-0003-2815-1137。**已確認** |
 
+## 3c. V 監測期刊高被引 K-12 AI 論文作者（26 位，只列已確認）
+
+> 選取方式（2026-10-09，OpenAlex；紀錄見 [p0-venue-highcite-2026-10-09](p0-venue-highcite-2026-10-09/report.md)）：在 [venue-watchlist](venue-watchlist.md) 的 39 本期刊中，查 2019 年起題名或摘要含 "artificial intelligence"、"AI literacy"、"generative AI" 或 ChatGPT 的論文，每刊取被引前 25 篇；以關鍵字標出涉及 K-12 者（133 篇），依被引次數取前 60 篇，編輯 session 目視排除 7 篇非 K-12 AI 研究（成人與高教、哲學、一般師資數位能力、線上考試誠信等）。納入前 30 篇的第一或最後作者，以及在前 60 篇中出現 2 篇以上者；已在本清單（含附錄）的 19 人不重列。ORCID 有公開現職者列為**已確認**，其餘列附錄。被引數為查詢當日 OpenAlex 數值；這是機械篩選，不代表研究品質。每月依作者檢索。
+
+| ID | 學者 | ORCID 現職 | 監測期刊中的高被引 K-12 AI 論文（名次、年份、題名、期刊 ID、被引數） | OpenAlex／ORCID 與確認 |
+|---|---|---|---|---|
+| V01 | Irene‐Angelica Chounta | University of Duisburg-Essen/Professor | #4 2021〈Exploring Teachers’ Perceptions of Artificial Intellige…〉J03，被引 441 | A5062632351；ORCID 0000-0001-9159-0664。**已確認** |
+| V02 | Margus Pedaste | University of Tartu/Professor of Educational Technology | #4 2021〈Exploring Teachers’ Perceptions of Artificial Intellige…〉J03，被引 441 | A5039916308；ORCID 0000-0002-5087-9637。**已確認** |
+| V03 | Weipeng Yang | The Education University of Hong Kong/Associate Professor | #5 2022〈Artificial Intelligence education for young children: W…〉J02，被引 433；#36 2023〈AI literacy curriculum and its relation to children's p…〉J06，被引 111；#38 2023〈Artificial intelligence education for young children: A…〉J06，被引 98 | A5018039023；ORCID 0000-0002-8057-2863。**已確認**；OpenAlex 單位（Education University of Hong Kong）與 ORCID 不同，依作者找到的論文須看作者單位 |
+| V04 | Musa Adekunle Ayanwale | University of Pretoria/Senior Lecturer | #7 2022〈Teachers’ readiness and intention to teach artificial i…〉J02，被引 398 | A5050963174；ORCID 0000-0001-7640-9898。**已確認** |
+| V05 | Solomon Sunday Oyelere | University of Exeter/Professor | #7 2022〈Teachers’ readiness and intention to teach artificial i…〉J02，被引 398；#43 2024〈Advancing AI education: Assessing Kenyan in-service tea…〉J11，被引 79 | A5031929045；ORCID 0000-0001-9895-6796。**已確認** |
+| V06 | Ching Sing Chai | Chinese University of Hong Kong/Professor | #9 2021〈Creation and Evaluation of a Pretertiary Artificial Int…〉J28，被引 371；#12 2022〈Modeling English teachers’ behavioral intention to use …〉J05，被引 288；#21 2023〈The mediating effects of needs satisfaction on the rela…〉J04，被引 198 | A5035167001；ORCID 0000-0002-6298-4813。**已確認** |
+| V07 | Hung‐Ming Lin | Minghsin University of Science and Technology | #13 2022〈An analysis of children’ interaction with an AI chatbot…〉J01，被引 238 | A5059286632；ORCID 0000-0002-3250-003X。**已確認**；OpenAlex 單位（Chang Gung University of Science and Technology）與 ORCID 不同，依作者找到的論文須看作者單位 |
+| V08 | Tzu‐Yu Tai | Taipei Medical University/Assistant Professor | #14 2024〈Improving elementary EFL speaking skills with generativ…〉J01，被引 226 | A5067604629；ORCID 0000-0003-0506-9579。**已確認** |
+| V09 | Teemu Valtonen | University of Eastern Finland/Professor | #16 2020〈Learning machine learning with very young children: Who…〉J35，被引 221 | A5053463604；ORCID 0000-0002-1803-9865。**已確認** |
+| V10 | Marcelo Milrad | Linneaus University /Professor  | #17 2023〈Artificial Intelligence in K-12 Education: eliciting an…〉J05，被引 208 | A5038027124；ORCID 0000-0002-6937-345X。**已確認**；OpenAlex 單位（Linnaeus University）與 ORCID 不同，依作者找到的論文須看作者單位 |
+| V11 | Randi Williams | Carnegie Mellon University/Assistant Research Professor | #18 2022〈AI + Ethics Curricula for Middle School Youth: Lessons …〉J03，被引 205 | A5055884793；ORCID 0000-0002-7740-5749。**已確認** |
+| V12 | Areej ElSayary | Zayed University/Associate Professor | #19 2023〈An investigation of teachers' perceptions of using Chat…〉J06，被引 204 | A5001636312；ORCID 0000-0002-5554-0069。**已確認** |
+| V13 | Helen Crompton | Old Dominion University/Professor | #20 2022〈Affordances and challenges of artificial intelligence i…〉J08，被引 201 | A5032778716；ORCID 0000-0002-1775-8219。**已確認**；OpenAlex 單位（Anadolu University）與 ORCID 不同，依作者找到的論文須看作者單位 |
+| V14 | Diane Burke | Keuka College/Emerita Professor | #20 2022〈Affordances and challenges of artificial intelligence i…〉J08，被引 201 | A5045059551；ORCID 0000-0002-8214-0386。**已確認** |
+| V15 | Qi Xia | Zhejiang University/Assistant Professor | #21 2023〈The mediating effects of needs satisfaction on the rela…〉J04，被引 198 | A5101579222；ORCID 0000-0003-0538-7665。**已確認** |
+| V16 | Kui Xie | University of Missouri–Columbia/Dean & Joanne H. Hook Dean's Chair in Educational Renewal | #21 2023〈The mediating effects of needs satisfaction on the rela…〉J04，被引 198 | A5043309132；ORCID 0000-0002-7173-4859。**已確認** |
+| V17 | Yin Ping Yang | Education University of Hong Kong/Research Assistant Professor | #22 2024〈A Human-Centered Learning and Teaching Framework Using …〉J27，被引 195 | A5061103584；ORCID 0000-0002-9966-248X。**已確認** |
+| V18 | Ying Xu | Harvard University/Assistant Professor | #23 2020〈Same benefits, different communication patterns: Compar…〉J01，被引 177 | A5027471083；ORCID 0000-0003-2079-2394。**已確認** |
+| V19 | Mark Warschauer | University of California, Irvine/Professor | #23 2020〈Same benefits, different communication patterns: Compar…〉J01，被引 177 | A5074661038；ORCID 0000-0002-6817-4416。**已確認** |
+| V20 | Xiaoqing Gu | Changzhou University | #24 2024〈Exploring the effects of AI literacy in teacher learnin…〉J33，被引 168 | A5090932123；ORCID 0000-0001-9942-0651。**已確認** |
+| V21 | Xiaoming Zhaı | University of Georgia/Assistant Professor | #25 2024〈Using ChatGPT for Science Learning: A Study on Pre-serv…〉J27，被引 166 | A5013379229；ORCID 0000-0003-4519-1931。**已確認** |
+| V22 | Murod Ismailov | University of Tsukuba/Associate Professor | #27 2024〈A self-determination theory approach to teacher digital…〉J01，被引 146 | A5032548859；ORCID 0000-0003-2441-1640。**已確認** |
+| V23 | Chih‐Hung Wu | National Tsing Hua University/Professor | #28 2022〈The exploration of continuous learning intention in STE…〉J31，被引 144 | A5004066253；ORCID 0000-0003-3804-0852。**已確認** |
+| V24 | Pavlo Antonenko | University of Florida | #30 2022〈In-service teachers’ (mis)conceptions of artificial int…〉J08，被引 142 | A5084689835；ORCID 0000-0001-8565-123X。**已確認** |
+| V25 | Brian Abramowitz | Florida Museum of Natural History/K-12 Education and Outreach Coordinator | #30 2022〈In-service teachers’ (mis)conceptions of artificial int…〉J08，被引 142 | A5065566581；ORCID 0000-0001-8681-0853。**已確認** |
+| V26 | James C. Lester | North Carolina State University/Goodnight Distinguished University Professor in Artificial Intelligence and Machine Learning | #31 2023〈K-12 Education in the Age of AI: A Call to Action for K…〉J03，被引 136；#34 2022〈Lessons Learned for AI Education with Elementary Studen…〉J03，被引 118 | A5074470380；ORCID 0000-0003-1481-6601。**已確認** |
+
+## 3d. 維護紀錄：2026 年無作品者的近五年檢查（2026-10-09）
+
+管理者決定：2026 全年在 OpenAlex 查無作品者，再查近五年（2021-01-01～2026-10-09）；若無相關論文就從名單移除。「相關」以題名或摘要同時涉及 AI 與教育判斷（關鍵字粗分，另經編輯 session 目視）。ORCID 與作者 ID 兩種查法結果相同。
+
+| ID | 學者 | 2026 作品 | 近五年作品 | AI＋教育相關 | 最近一篇相關 | 結果 |
+|---|---|---|---|---|---|---|
+| T12 | 楊子奇 | 0 | 6 | 3 | 2025-01 高中生以 ChatGPT 輔助程式學習 | 保留 |
+| H07 | Senén Barro | 0 | 18 | 1（目視；關鍵字另抓到 5 篇機器學習方法論文，非教育） | 2023-04 K-12 AI 素養系統性回顧 | 保留，但相關產出少，下次維護時再評估 |
+| H24 | Omaima Almatrafi | 0 | 14 | 5 | 2025-04 以生成式 AI 分類課程學習成果 | 保留 |
+| H33 | Ahlam Mohammed Al-Abdullatif | 0 | 19 | 6 | 2025-06 K-12 AI 素養能力稽核 | 保留 |
+
+結果：4 人近五年都有相關論文，無人移除。2026 年查無作品可能是 OpenAlex 收錄延遲。V 級（第 3c 節）新增者尚未做 2026 年作品檢查。
+
 ## 4. C 政策與實務窗口（不依作者檢索）
 
 ### 4a. 2026 年
@@ -245,3 +292,18 @@
 | Peter Wilson Cardon（A5034996327） | #30 | ORCID 無公開現職紀錄 |
 | Jeanette Heidewald（A5092054609） | #30 | OpenAlex 檔案無 ORCID |
 | Olson Tsang（A5012410522） | #42, #58 | OpenAlex 檔案無 ORCID |
+
+### 監測期刊高被引 K-12 AI 論文作者（未確認）
+
+| 姓名 | 前 60 名內的論文名次 | 未列入原因 |
+|---|---|---|
+| Yeung Yam（A5057214563） | #9 | ORCID 無公開現職紀錄 |
+| Xin An（A5071093011） | #12 | ORCID 無公開現職紀錄 |
+| Mengyuan Chen（A5100737257） | #12 | ORCID 無公開現職紀錄 |
+| Johanna Velander（A5016690178） | #17 | ORCID 無公開現職紀錄 |
+| Hua Du（A5110738288） | #24 | ORCID 無公開現職紀錄 |
+| Gyeong-Geon Lee（A5005042692） | #25 | ORCID 無公開現職紀錄 |
+| Gabriele Biagini（A5013593792） | #26 | ORCID 無公開現職紀錄 |
+| Yueh‐Min Huang（A5071574103） | #28 | ORCID 無公開現職紀錄 |
+
+另有 5 人只出現在被排除的非 K-12 AI 論文中，未列入：Ragnar Fjelland, Sabine Seufert, Michael Sailer, Veronika Bogina, Avital Shulner Tal。
