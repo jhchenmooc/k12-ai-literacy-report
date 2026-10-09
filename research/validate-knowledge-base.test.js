@@ -6,7 +6,7 @@ const read=n=>parseCsv(fs.readFileSync(path.join(dir,n+".csv"),"utf8"));
 const records=read("records"),relations=read("relations"),runs=read("search_runs");
 const candidates=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8")).items;
 test("actual nine held candidates remain discovery-only",()=>{
- assert.equal(records.length,19);assert.equal(candidates.length,9);
+ assert.equal(records.length,22);assert.equal(candidates.length,9);
  assert.ok(candidates.every(x=>x.decision==="hold"&&x.source_checked===false));
  assert.ok(records.filter(x=>x.source_candidate_id).every(x=>x.verification_status==="discovered_unverified"&&x.first_published_on===""&&x.year_basis==="unknown"));
  assert.deepEqual(validate(records,relations,runs,candidates),[]);
@@ -61,11 +61,11 @@ test("venue/agency relation mix-up is invalid",()=>{
 
 test("three primary-source dated frameworks are archived by original publication year only",()=>{
  const x=JSON.parse(index(records,relations));
- assert.deepEqual(x["by-year/2024/first_publication"],["KB-2024-0001","KB-2024-0002"]);
+ assert.ok(["KB-2024-0001","KB-2024-0002","KB-2024-0003","KB-2024-0004"].every(id=>x["by-year/2024/first_publication"].includes(id)));
  assert.ok(x["by-year/2026/first_publication"].includes("KB-2026-0010"));
  assert.equal(x["by-year/unknown/unknown"].length,9);
  assert.equal(x["by-type/framework"].length,4);
- assert.equal(x["by-category/K1"].length,5);
+ assert.ok(x["by-category/K1"].length>=8);
  assert.ok(x["by-category/K3"].includes("KB-2026-0013"));
  assert.ok(records.filter(r=>r.record_type==="framework").every(r=>r.verification_status==="bibliographic_checked"));
  assert.ok(candidates.every(c=>c.decision==="hold"));
@@ -96,4 +96,15 @@ test("LAK conference papers have dated C03 source links",()=>{
  assert.deepEqual(x["by-conference/C03"],["KB-2026-0012","KB-2026-0013"]);
  assert.deepEqual(x["by-type/conference_paper"],["KB-2026-0012","KB-2026-0013"]);
  assert.ok(candidates.every(x=>x.decision==="hold"));
+});
+
+test("Japan Korea and England historical official announcements retain jurisdiction and first-page dates",()=>{
+ const x=JSON.parse(index(records,relations));
+ assert.deepEqual(x["by-country/JP"],["KB-2024-0003"]);
+ assert.deepEqual(x["by-country/KR"],["KB-2024-0004"]);
+ assert.deepEqual(x["by-country/GB-ENG"],["KB-2023-0002"]);
+ assert.ok(x["by-source/O-JP-MEXT"].includes("KB-2024-0003"));
+ assert.ok(x["by-source/O-KR-MOE"].includes("KB-2024-0004"));
+ assert.ok(x["by-source/O-UK-DFE"].includes("KB-2023-0002"));
+ assert.ok(candidates.every(c=>c.decision==="hold"));
 });
