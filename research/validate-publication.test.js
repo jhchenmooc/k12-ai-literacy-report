@@ -102,11 +102,26 @@ test("unregistered daily HTML is blocked, not silently deployed",t=>{
  fs.writeFileSync(path.join(folder,"index.html"),'<main><p>not registered</p></main>');
  const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("Unregistered issue")&&e.includes("daily/")));
 });
-test("registered daily HTML is blocked pending real editorial approval enforcement",t=>{
+test("registered daily HTML without explicit narrow channel is blocked",t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
  const pathToWeekly=path.join(d,"weekly","2026-10-09_10-15","index.html"),dailyDir=path.join(d,"daily","2026-10-10");
  fs.mkdirSync(dailyDir,{recursive:true});fs.renameSync(pathToWeekly,path.join(dailyDir,"index.html"));
  const manifestPath=path.join(d,"publication","issues.json"),manifest=JSON.parse(fs.readFileSync(manifestPath,"utf8"));manifest.editions[0].path="daily/2026-10-10/index.html";
  fs.writeFileSync(manifestPath,JSON.stringify(manifest));
- const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("editorial approval")));
+ const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("publication mode")));
 });
+
+function dailyFixture(d,c){
+ const dailyDir=path.join(d,"daily","2026-10-10");fs.mkdirSync(dailyDir,{recursive:true});
+ const old=path.join(d,"weekly","2026-10-09_10-15","index.html");
+ if(fs.existsSync(old))fs.rmSync(old);
+ fs.writeFileSync(path.join(dailyDir,"index.html"),'<html><main><p data-claim-id="C1">'+c.claim_text+'</p></main></html>');
+ fs.writeFileSync(path.join(d,"publication","claims","daily.json"),JSON.stringify([c]));
+ fs.writeFileSync(path.join(d,"publication","issues.json"),JSON.stringify({schema_version:1,editions:[{path:"daily/2026-10-10/index.html",claims_file:"publication/claims/daily.json",publication_mode:"ai_low_risk_source_facts"}]}));
+}
+const dailyLow={...claim,claim_class:"bibliographic",risk_tier:"low",level:"N-V1",checked_at:"2026-10-10",source_title:"Synthetic school AI announcement",source_organization:"Example Institution",daily_fact_kind:"official_notice",first_disclosed_on:"2026-10-10",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。"};
+test("opt-in daily fixed low-risk source record passes structural validation",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);assert.equal(validate(d).ok,true)});
+test("daily descriptive or high risk cannot bypass structural gate",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,claim_class:"descriptive",risk_tier:"medium"});assert.equal(validate(d).ok,false)});
+test("daily prose policy analysis cannot be disguised as a bibliographic claim",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,claim_text:"學校已全面強制導入AI課程"});assert.equal(validate(d).ok,false)});
+test("daily issue future source date is blocked",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,checked_at:"2026-10-12"});assert.equal(validate(d).ok,false)});
+test("daily does not allow fabricated wrong first-disclosure date",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,first_disclosed_on:"2026-10-09"});assert.equal(validate(d).ok,false)});

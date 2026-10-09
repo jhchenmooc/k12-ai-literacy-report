@@ -178,3 +178,9 @@ Pages 目前從 Repo 根目錄 `.` 上傳，Public Repo 的 `research/`、`publi
 ## 正式每日出版（PR C 前置安全護欄；尚未啟用）
 
 `validate-publication.js` 現在掃描 `daily/*/index.html`，未登錄的每日頁面會報錯；即使已登錄且 claims／HTML 結構合法，**每日期別一律 fail-closed**，直到另案完成真正可強制的授權與版本綁定核准，並實測未核准不得合併及部署。這不是已完成的正式 daily 功能，不能以 GitHub `verify` 成功或自填 `approved` 作為授權。現有 `main` ruleset 必要 Review 為 0、未啟用 stale review dismissal，不足以支持正式 daily 自動上線。網站首頁不連結尚不存在／未核准的每日期別；也不建立空白 daily 目錄。根目錄 Pages 打包仍含公有 repo 檔案，禁止提交私密審稿內容。正式開放前需重新檢查 branch/ruleset 權限與 repo/Pages 公開資料邊界。
+
+## 無每日真人審稿之每日快訊：有限事實通道（2026-10-09）
+
+使用者已同意以 AI 整理、無逐日真人審稿方式，**僅對外發布低風險來源書目／公告存在事實**；不是正式政策解釋、研究結果、成效數字或臺灣政策建議。每期 `publication/issues.json` 的 daily 項目必須明示 `publication_mode: ai_low_risk_source_facts`；日報主張限定 `bibliographic`／`low`，`daily_fact_kind` 為 `official_notice` 或 `research_bibliography`，正文明確採固定格式「來源機構：…；資料標題：…；來源刊登日：YYYY-MM-DD。」。原始來源、日期、主張及衝突需核實，仍須符合現有 claims／HTML／CI 閘門。自填旗標與字串比對**不等於真正的來源認證**；發布頁須顯示 AI 輔助整理、無真人逐則審稿，留有勘誤方式，重大疑慮一律 hold。原新聞文字不能只是挑選高風險敘事貼入標題；若真實來源或首次公開日期不明，應不刊。
+
+這是最小技術通道，不等於已啟用每天搜尋、排程、自動建 PR 或自動合併。`weekly/`／`monthly/` 仍維持原有核查與編輯規範。人工無力審稿時，週報、月報保持待審而非冒稱真人已核准。

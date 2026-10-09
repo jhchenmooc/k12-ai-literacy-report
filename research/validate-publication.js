@@ -55,6 +55,21 @@ function matchBody(html,claims){
  return errors;
 }
 
+function dailyFact(c,issueDate){
+ const errors=[];
+ if(c.claim_class!=="bibliographic"||c.risk_tier!=="low")errors.push("daily AI channel permits low-risk bibliographic claims only");
+ if(!["official_notice","research_bibliography"].includes(c.daily_fact_kind))errors.push("invalid daily_fact_kind");
+ if(typeof c.source_title!=="string"||!c.source_title.trim()||c.source_title.length>300||/[\r\n<>]/.test(c.source_title))errors.push("invalid source_title");
+ if(typeof c.source_organization!=="string"||!c.source_organization.trim()||c.source_organization.length>150||/[\r\n<>]/.test(c.source_organization))errors.push("invalid source_organization");
+ if(typeof c.source_title==="string"&&typeof c.source_organization==="string"){
+  const expected="來源機構："+c.source_organization+"；資料標題："+c.source_title+"；來源刊登日："+c.publication_date+"。";
+  if(c.claim_text!==expected)errors.push("daily claim must use fixed bibliographic-only template");
+ }
+ if(c.checked_at>issueDate||c.publication_date>issueDate)errors.push("source or review date occurs after daily issue date");
+ if(c.first_disclosed_on!==undefined&&c.first_disclosed_on!==null&&c.first_disclosed_on!==c.publication_date)errors.push("first disclosure and publication date differ: hold for manual review");
+ if(c.assertion_type&&c.assertion_type!=="direct_statement")errors.push("daily AI channel excludes interpretation/research outcomes");
+ return errors;
+}
 function validate(root){
  const errors=[],warnings=[],entry=path.join(root,"publication/issues.json");
  if(!fs.existsSync(entry))return {ok:false,errors:["publication/issues.json missing"],warnings};
@@ -67,7 +82,10 @@ function validate(root){
   const p=issue.path,q=issue.claims_file;
   if(typeof p!=="string"||!(/^(weekly|monthly|daily)\/[a-zA-Z0-9_-]+\/index\.html$/.test(p))){errors.push("invalid edition path");continue}
   if(encountered.has(p))errors.push("duplicate edition "+p);encountered.add(p);
-  if(p.startsWith("daily/"))errors.push("daily publication blocked until enforceable editorial approval is independently verified");
+  const daily=p.startsWith("daily/");
+  const issueDate=daily?(p.match(/^daily\/(\d{4}-\d{2}-\d{2})\/index\.html$/)||[])[1]:null;
+  if(daily&&(!issueDate||!Number.isFinite(Date.parse(issueDate+"T00:00:00Z"))||new Date(issueDate+"T00:00:00Z").toISOString().slice(0,10)!==issueDate))errors.push("daily path must contain real ISO issue date");
+  if(daily&&issue.publication_mode!=="ai_low_risk_source_facts")errors.push("daily publication mode not explicitly authorized");
   if(LEGACY.has(p)){errors.push("legacy issue must not be reclassified "+p);continue}
   const htmlPath=path.join(root,p);
   if(!fs.existsSync(htmlPath)){errors.push("edition HTML missing "+p);continue}
@@ -82,6 +100,7 @@ function validate(root){
    if(!c||typeof c!=="object"){errors.push("invalid claim in "+q);continue}
    if(claimIds.has(c.claim_id))errors.push("duplicate claim_id in "+q+": "+c.claim_id);claimIds.add(c.claim_id);
    if(c.decision!=="publish"){errors.push("edition contains unpublished/held claim "+q+" "+c.claim_id);continue}
+   if(daily)errors.push(...dailyFact(c,issueDate||"0000-00-00").map(e=>q+" "+c.claim_id+": "+e));
    const result=check(c);
    if(!result.allow)errors.push(q+" "+c.claim_id+": "+result.reasons.join("; "));
    errors.push(...sourceTrace(root,c).map(e=>q+" "+c.claim_id+": "+e));
