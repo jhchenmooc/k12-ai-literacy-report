@@ -163,3 +163,14 @@ test("daily rejects claims path borrowed from unrelated issue",t=>{
  fs.writeFileSync(p,JSON.stringify(m));
  assert.equal(validate(d).ok,false);
 });
+
+test("registered report refuses script injected outside main",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ updateHtml(d,'<html><head><script>document.cookie</script></head><main><p data-claim-id="C1">合成案例：某機構公告</p></main></html>');
+ assert.equal(validate(d).ok,false);
+});
+test("registered daily source facts refuse inline handlers outside main",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ fs.writeFileSync(path.join(d,"daily","2026-10-10","index.html"),'<html><nav><a onclick="run()">link</a></nav><main><p data-claim-id="C1">'+dailyLow.claim_text+'</p></main></html>');
+ assert.equal(validate(d).ok,false);
+});
