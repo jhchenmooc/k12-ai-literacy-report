@@ -459,12 +459,13 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 數字以 main `fb2a0d7` 實際檔案為準：records 283、relations 725、search runs 269；論文（期刊＋會議）已核 74／未核 153，其他類型（政策、框架、書章等）已核 38／未核 18。各 PR 的 verify 與 main deploy 皆成功（以 GitHub 實際 Run 為準）。
 
 **管理者本輪規則決定（後續 session 必須遵守）**
-- **學段**：中小學（含幼兒園至高中）在職教師研究算 K-12；職前教師與師培課程另標「師培」（知識庫關聯 `has_population` → `TEACHER_ED`，#128 起），可入庫但不進週報、每日短訊候選；對象混合者依主要對象判斷，不明記「不明」。
+- **學段**：中小學（含幼兒園至高中）在職教師研究算 K-12；職前教師與師培課程另標「師培」（知識庫關聯 `has_population` → `TEACHER_ED`，#128 起），可入庫但不進週報、每日短訊候選，月報可收（管理者 2026-10-09 確認）；對象混合者依主要對象判斷，不明記「不明」。
 - **AI 素養範圍**：依 [ai-literacy-scope-criteria.md](ai-literacy-scope-criteria.md)（v0.4，以教育部《臺灣中小學教師與學生 AI 素養框架》表 1、表 2 為準）。A 核心（師生 AI 素養本身）、B 相關（AI 工具於教學或學習的使用或成效）**都在範圍內**，同可入庫、進刊物候選；C（AI 僅為研究方法或系統後端）不進刊物。教師 AI-TPACK 與生成式 AI 教學培訓研究一律判 A。判定有疑問先查全文 `research/reference/tw-k12-ai-literacy-framework-2026-04-17.pdf`（有函號版，與官方直接連結下載檔雜湊相同），報告寫引用頁碼。
 - **學者清單**：列入不論研究對象學段；只列身分已確認者（ORCID 現職或管理者告知），未確認者放附錄不檢索；2026 年無作品者查近五年，無相關論文才移除。
 - **框架版本日期**：教育部 AI 素養框架一律用有函號版、版本日期 2026-04-17（115-04-17 臺教資（一）字第 1152701134 號核定）；換封面版（封面「2026 年 3 月」、無文號）內容相同，不另存。核定日不等於首發日，知識庫 `first_published_on` 仍依首發證據。
 - **邊界案例新規則（#135）**：家長、校長、教育行政主管為對象的 AI 素養研究與 AI 素養活動公告判 A 並註記「對象為其他教育關係人」，日報、週報、月報候選都可進（管理者 2026-10-09 修正 #135 的「不進週報」）；只談資料或演算法、未提 AI 者判 C。已寫入準則 v0.4。
-- **AI 素養範圍 gate**（管理者 2026-10-09 核准）：新期別刊出主張須帶 `ai_lit_class`（A/B）、`ai_lit_dims`、`ai_lit_note`，否則 `validate-publication.js` 擋下；`ingest-candidates.js` 接受這三欄（未填記 unknown）。對象排除也已進 gate：`audience` 欄位，每日短訊與週報只收 `k12`、`other_stakeholders`，月報另收 `teacher_ed`、`higher_ed`、`adult`，`unknown` 擋下。
+- **AI 素養範圍 gate**（管理者 2026-10-09 核准）：新期別刊出主張須帶 `ai_lit_class`（A/B）、`ai_lit_dims`、`ai_lit_note`，否則 `validate-publication.js` 擋下；`ingest-candidates.js` 接受這三欄（未填記 unknown）。對象排除也已進 gate：`audience` 欄位，每日短訊與週報只收 `k12`、`other_stakeholders`，月報另收 `teacher_ed`、`higher_ed`、`adult`（管理者確認月報可收），`unknown` 擋下。
+- **C 類不上網站**：`research/ai-literacy-c-records.json` 列出的 C 類紀錄（目前 KB-2026-0004、0007、0163）不在網站資料庫顯示，仍留知識庫；新判 C 者要加入名單並重新產生頁面。每日待審包的建議清單也只列 A/B 且對象可進短訊者。
 - **判準對齊與 P1/P2/P3**：搜尋、篩選與出刊各文件已對齊 AI 素養準則（A、B 可進刊物，C 不進）；舊「研究重要性 A/B/C」改稱閱讀優先級 P1/P2/P3（管理者 2026-10-09 同意），寫報告時「A/B/C」只指 AI 素養範圍。
 - **電子郵件**：任何請求不得帶任何人的 email 或 mailto（工具指南第 3 節）。
 

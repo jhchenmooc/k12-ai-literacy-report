@@ -1,0 +1,20 @@
+{
+  "note": "Knowledge-base records judged AI literacy scope C (not AI literacy). They stay in the knowledge base but are hidden from the public site archive (manager decision 2026-10-09). Add a record here only with the screening report that decided it.",
+  "records": [
+    {
+      "record_id": "KB-2026-0004",
+      "decided_in": "research/p0-ailit-boundary-2026-10-09/decisions.json",
+      "reason": "UNESCO TVET 綠色技能系列，AI 只出現在一門課名"
+    },
+    {
+      "record_id": "KB-2026-0007",
+      "decided_in": "research/p0-ailit-classify-2026-10-09/step3-kb-part1.json",
+      "reason": "墨西哥校園螢幕／行動裝置規範與一般數位素養，未涉及 AI"
+    },
+    {
+      "record_id": "KB-2026-0163",
+      "decided_in": "research/p0-ailit-boundary-2026-10-09/decisions.json",
+      "reason": "資料素養量表，摘要未提到 AI"
+    }
+  ]
+}

@@ -85,3 +85,18 @@ test("book chapters are listed in their own group on the journals page, labelled
  assert.ok(!d.journals.some(g=>g.key!=="8-book"&&g.rows.some(r=>r.id==="KB-2026-9201")));
  assert.equal(d.conferences.length,0);
 });
+
+test("AI literacy scope C records are hidden from the archive and every listed record exists",()=>{
+ const records=[
+  {record_id:"KB-2026-9101",title:"In scope",primary_url:"https://example.org/a",record_type:"journal_article",year_value:"2026",year_basis:"issue_year",first_published_on:"",verification_status:"discovered_unverified",source_candidate_id:""},
+  {record_id:"KB-2026-9102",title:"Scope C",primary_url:"https://example.org/b",record_type:"journal_article",year_value:"2026",year_basis:"issue_year",first_published_on:"",verification_status:"discovered_unverified",source_candidate_id:""}];
+ const relations=[{subject_id:"KB-2026-9101",predicate:"published_in",object_id:"J02"},{subject_id:"KB-2026-9102",predicate:"published_in",object_id:"J02"}];
+ const d=archiveData(records,relations,[{id:"J02",name:"Journal Two"}],["KB-2026-9102"]);
+ assert.deepEqual(d.journals.flatMap(g=>g.rows).map(r=>r.id),["KB-2026-9101"]);
+ const list=JSON.parse(fs.readFileSync(path.join(__dirname,"ai-literacy-c-records.json"),"utf8")).records;
+ const urls=new Map(fs.readFileSync(path.join(__dirname,"knowledge-base","data","records.csv"),"utf8").split("\n").map(l=>l.match(/^"(KB-\d{4}-\d{4})","[^"]*","[^"]*","(?:[^"]|"")*","([^"]*)"/)).filter(Boolean).map(m=>[m[1],m[2]]));
+ for(const x of list){assert.ok(urls.has(x.record_id),x.record_id);assert.ok(fs.existsSync(path.join(__dirname,"..",x.decided_in)),x.decided_in)}
+ const pages=["archive/journals/index.html","archive/conferences/index.html","archive/policy/index.html"].map(p=>fs.readFileSync(path.join(__dirname,"..",p),"utf8"));
+ assert.ok(pages[0].includes('href="https://doi.org/'),"archive pages render record URLs");
+ for(const x of list){const u=urls.get(x.record_id).replace(/&/g,"&amp;");for(const page of pages)assert.ok(!page.includes('"'+u+'"'),x.record_id+" still listed")}
+});

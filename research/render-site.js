@@ -58,7 +58,10 @@ function load(root){
   try{claims=JSON.parse(fs.readFileSync(path.join(root,e.claims_file),"utf8"))}catch{claims=[]}
   return {...e,claims:Array.isArray(claims)?claims:[]};
  });
- return {records:read("records"),relations:read("relations"),venues,editions};
+ // AI literacy scope C records stay in the knowledge base but are not listed on the site.
+ const cFile=path.join(root,"research","ai-literacy-c-records.json");
+ const hidden=fs.existsSync(cFile)?JSON.parse(fs.readFileSync(cFile,"utf8")).records.map(x=>x.record_id):[];
+ return {records:read("records"),relations:read("relations"),venues,editions,hidden};
 }
 
 /* ---------- daily ---------- */
@@ -99,10 +102,10 @@ function renderPeriodIndex(kind,editions){
 }
 
 /* ---------- archive ---------- */
-function archiveData(records,relations,venues){
+function archiveData(records,relations,venues,hidden=[]){
  const rel=new Map();for(const r of relations){if(!rel.has(r.subject_id))rel.set(r.subject_id,[]);rel.get(r.subject_id).push(r)}
  const venueName=new Map(venues.map(v=>[v.id,v.name]));
- const kept=records.filter(r=>!r.source_candidate_id);
+ const skip=new Set(hidden),kept=records.filter(r=>!r.source_candidate_id&&!skip.has(r.record_id));
  const row=r=>{
   const basis=r.year_basis;
   const date=basis==="first_publication"?r.first_published_on+" 首發":basis==="issue_year"?"卷期年（首發日未知）":basis==="event_year"?"會議年（首發日未知）":"未知";
@@ -219,8 +222,8 @@ function fillHomepage(html,days,data){
 
 /* ---------- build ---------- */
 function build(root){
- const {records,relations,venues,editions}=load(root);
- const days=dailyEditions(editions),data=archiveData(records,relations,venues);
+ const {records,relations,venues,editions,hidden}=load(root);
+ const days=dailyEditions(editions),data=archiveData(records,relations,venues,hidden);
  const files={
   "daily/index.html":renderDailyIndex(days),
   "weekly/index.html":renderPeriodIndex("weekly",editions),
