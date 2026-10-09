@@ -1,0 +1,560 @@
+[
+ {
+  "id": "S01",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-5843-4854%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:27Z",
+  "ended_utc": "2026-10-09T19:04:28Z",
+  "http_status": 200,
+  "count": 3,
+  "topic_terms": false
+ },
+ {
+  "id": "S02",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-9265-1908%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:28Z",
+  "ended_utc": "2026-10-09T19:04:29Z",
+  "http_status": 200,
+  "count": 16,
+  "topic_terms": false
+ },
+ {
+  "id": "S03",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-4639-2524%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:29Z",
+  "ended_utc": "2026-10-09T19:04:29Z",
+  "http_status": 200,
+  "count": 3,
+  "topic_terms": false
+ },
+ {
+  "id": "S04",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-6005-907X%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:30Z",
+  "ended_utc": "2026-10-09T19:04:30Z",
+  "http_status": 200,
+  "count": 2,
+  "topic_terms": false
+ },
+ {
+  "id": "T01",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-1741-2450%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:30Z",
+  "ended_utc": "2026-10-09T19:04:31Z",
+  "http_status": 200,
+  "count": 1,
+  "topic_terms": false
+ },
+ {
+  "id": "T02",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-5059-8256%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:31Z",
+  "ended_utc": "2026-10-09T19:04:32Z",
+  "http_status": 200,
+  "count": 2,
+  "topic_terms": false
+ },
+ {
+  "id": "T03",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-5155-276X%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28education+OR+learning+OR+teacher+OR+student+OR+school%29&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:32Z",
+  "ended_utc": "2026-10-09T19:04:32Z",
+  "http_status": 200,
+  "count": 13,
+  "topic_terms": true
+ },
+ {
+  "id": "T05",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-6504-9540%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:33Z",
+  "ended_utc": "2026-10-09T19:04:33Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "T06",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-6128-0227%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:33Z",
+  "ended_utc": "2026-10-09T19:04:34Z",
+  "http_status": 200,
+  "count": 3,
+  "topic_terms": false
+ },
+ {
+  "id": "T07",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-2545-8910%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28education+OR+learning+OR+teacher+OR+student+OR+school%29&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:34Z",
+  "ended_utc": "2026-10-09T19:04:35Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": true
+ },
+ {
+  "id": "S18",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-5216-1576%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:35Z",
+  "ended_utc": "2026-10-09T19:04:35Z",
+  "http_status": 200,
+  "count": 6,
+  "topic_terms": false
+ },
+ {
+  "id": "S20",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-0402-9199%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:36Z",
+  "ended_utc": "2026-10-09T19:04:36Z",
+  "http_status": 200,
+  "count": 1,
+  "topic_terms": false
+ },
+ {
+  "id": "S23",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-1713-9653%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:37Z",
+  "ended_utc": "2026-10-09T19:04:37Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "S24",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-9045-4070%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:37Z",
+  "ended_utc": "2026-10-09T19:04:38Z",
+  "http_status": 200,
+  "count": 2,
+  "topic_terms": false
+ },
+ {
+  "id": "T10",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-9494-2848%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:38Z",
+  "ended_utc": "2026-10-09T19:04:39Z",
+  "http_status": 200,
+  "count": 1,
+  "topic_terms": false
+ },
+ {
+  "id": "T12",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-7721-5902%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:39Z",
+  "ended_utc": "2026-10-09T19:04:40Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "T14",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-7744-9971%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:40Z",
+  "ended_utc": "2026-10-09T19:04:40Z",
+  "http_status": 200,
+  "count": 4,
+  "topic_terms": false
+ },
+ {
+  "id": "T19",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-2373-2004%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:41Z",
+  "ended_utc": "2026-10-09T19:04:41Z",
+  "http_status": 200,
+  "count": 7,
+  "topic_terms": false
+ },
+ {
+  "id": "T21",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-1783-8830%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:42Z",
+  "ended_utc": "2026-10-09T19:04:42Z",
+  "http_status": 200,
+  "count": 1,
+  "topic_terms": false
+ },
+ {
+  "id": "T22",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-7088-5516%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:42Z",
+  "ended_utc": "2026-10-09T19:04:43Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "S06",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-3818-045X%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28education+OR+learning+OR+teacher+OR+student+OR+school%29&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:43Z",
+  "ended_utc": "2026-10-09T19:04:44Z",
+  "http_status": 200,
+  "count": 8,
+  "topic_terms": true
+ },
+ {
+  "id": "S07",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-2777-1705%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:44Z",
+  "ended_utc": "2026-10-09T19:04:45Z",
+  "http_status": 200,
+  "count": 5,
+  "topic_terms": false
+ },
+ {
+  "id": "S08",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-2900-3734%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:45Z",
+  "ended_utc": "2026-10-09T19:04:46Z",
+  "http_status": 200,
+  "count": 10,
+  "topic_terms": false
+ },
+ {
+  "id": "S09",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-6330-6160%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:46Z",
+  "ended_utc": "2026-10-09T19:04:47Z",
+  "http_status": 200,
+  "count": 1,
+  "topic_terms": false
+ },
+ {
+  "id": "S10",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-1037-3313%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:47Z",
+  "ended_utc": "2026-10-09T19:04:48Z",
+  "http_status": 200,
+  "count": 1,
+  "topic_terms": false
+ },
+ {
+  "id": "S11",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-9913-0627%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:48Z",
+  "ended_utc": "2026-10-09T19:04:48Z",
+  "http_status": 200,
+  "count": 1,
+  "topic_terms": false
+ },
+ {
+  "id": "S13",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-5018-6232%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:49Z",
+  "ended_utc": "2026-10-09T19:04:49Z",
+  "http_status": 200,
+  "count": 5,
+  "topic_terms": false
+ },
+ {
+  "id": "S14",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-7045-2764%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:50Z",
+  "ended_utc": "2026-10-09T19:04:50Z",
+  "http_status": 200,
+  "count": 3,
+  "topic_terms": false
+ },
+ {
+  "id": "S15",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-8793-4732%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:50Z",
+  "ended_utc": "2026-10-09T19:04:51Z",
+  "http_status": 200,
+  "count": 1,
+  "topic_terms": false
+ },
+ {
+  "id": "H01",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-7613-0029%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:51Z",
+  "ended_utc": "2026-10-09T19:04:52Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H02",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-2380-7814%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:52Z",
+  "ended_utc": "2026-10-09T19:04:53Z",
+  "http_status": 200,
+  "count": 2,
+  "topic_terms": false
+ },
+ {
+  "id": "H03",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-6490-7005%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:53Z",
+  "ended_utc": "2026-10-09T19:04:53Z",
+  "http_status": 200,
+  "count": 1,
+  "topic_terms": false
+ },
+ {
+  "id": "H04",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-8268-4802%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:54Z",
+  "ended_utc": "2026-10-09T19:04:54Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H05",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-7134-130X%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:54Z",
+  "ended_utc": "2026-10-09T19:04:55Z",
+  "http_status": 200,
+  "count": 2,
+  "topic_terms": false
+ },
+ {
+  "id": "H06",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-0906-4321%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:55Z",
+  "ended_utc": "2026-10-09T19:04:56Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H07",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-6035-540X%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:56Z",
+  "ended_utc": "2026-10-09T19:04:57Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H08",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-7246-7879%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:57Z",
+  "ended_utc": "2026-10-09T19:04:57Z",
+  "http_status": 200,
+  "count": 3,
+  "topic_terms": false
+ },
+ {
+  "id": "H09",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-3104-1123%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:58Z",
+  "ended_utc": "2026-10-09T19:04:58Z",
+  "http_status": 200,
+  "count": 4,
+  "topic_terms": false
+ },
+ {
+  "id": "H10",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-2555-8097%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:59Z",
+  "ended_utc": "2026-10-09T19:04:59Z",
+  "http_status": 200,
+  "count": 4,
+  "topic_terms": false
+ },
+ {
+  "id": "H11",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-2887-5477%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:04:59Z",
+  "ended_utc": "2026-10-09T19:05:00Z",
+  "http_status": 200,
+  "count": 14,
+  "topic_terms": false
+ },
+ {
+  "id": "H12",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-0664-3640%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:00Z",
+  "ended_utc": "2026-10-09T19:05:01Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H13",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-3115-9060%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:01Z",
+  "ended_utc": "2026-10-09T19:05:02Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H14",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-8495-6920%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:02Z",
+  "ended_utc": "2026-10-09T19:05:02Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H15",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-1543-6301%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:03Z",
+  "ended_utc": "2026-10-09T19:05:03Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H16",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-4762-2838%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:04Z",
+  "ended_utc": "2026-10-09T19:05:04Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H17",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-0587-2065%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:04Z",
+  "ended_utc": "2026-10-09T19:05:05Z",
+  "http_status": 200,
+  "count": 3,
+  "topic_terms": false
+ },
+ {
+  "id": "H18",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-2206-2715%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:05Z",
+  "ended_utc": "2026-10-09T19:05:06Z",
+  "http_status": 200,
+  "count": 3,
+  "topic_terms": false
+ },
+ {
+  "id": "H19",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-1990-2894%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:06Z",
+  "ended_utc": "2026-10-09T19:05:07Z",
+  "http_status": 200,
+  "count": 3,
+  "topic_terms": false
+ },
+ {
+  "id": "H20",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0001-5198-7261%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:07Z",
+  "ended_utc": "2026-10-09T19:05:07Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H21",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-8691-3016%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:08Z",
+  "ended_utc": "2026-10-09T19:05:08Z",
+  "http_status": 200,
+  "count": 1,
+  "topic_terms": false
+ },
+ {
+  "id": "H22",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-8576-6464%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:09Z",
+  "ended_utc": "2026-10-09T19:05:09Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H23",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-2370-381X%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:09Z",
+  "ended_utc": "2026-10-09T19:05:10Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H24",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-2105-2275%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:10Z",
+  "ended_utc": "2026-10-09T19:05:11Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H25",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-1448-4064%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:11Z",
+  "ended_utc": "2026-10-09T19:05:12Z",
+  "http_status": 200,
+  "count": 6,
+  "topic_terms": false
+ },
+ {
+  "id": "H26",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-6859-1420%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:12Z",
+  "ended_utc": "2026-10-09T19:05:12Z",
+  "http_status": 200,
+  "count": 5,
+  "topic_terms": false
+ },
+ {
+  "id": "H27",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-0829-3349%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:13Z",
+  "ended_utc": "2026-10-09T19:05:13Z",
+  "http_status": 200,
+  "count": 2,
+  "topic_terms": false
+ },
+ {
+  "id": "H28",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0009-0006-3682-2358%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:13Z",
+  "ended_utc": "2026-10-09T19:05:14Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ },
+ {
+  "id": "H29",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-9725-268X%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:14Z",
+  "ended_utc": "2026-10-09T19:05:15Z",
+  "http_status": 200,
+  "count": 2,
+  "topic_terms": false
+ },
+ {
+  "id": "H30",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-5027-8284%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:15Z",
+  "ended_utc": "2026-10-09T19:05:16Z",
+  "http_status": 200,
+  "count": 5,
+  "topic_terms": false
+ },
+ {
+  "id": "H31",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-6551-8885%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:16Z",
+  "ended_utc": "2026-10-09T19:05:17Z",
+  "http_status": 200,
+  "count": 2,
+  "topic_terms": false
+ },
+ {
+  "id": "H32",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0002-7294-3097%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:17Z",
+  "ended_utc": "2026-10-09T19:05:17Z",
+  "http_status": 200,
+  "count": 9,
+  "topic_terms": false
+ },
+ {
+  "id": "H33",
+  "query_url": "https://api.openalex.org/works?filter=author.orcid%3A0000-0003-2815-1137%2Cfrom_publication_date%3A2026-07-11%2Cto_publication_date%3A2026-10-09&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date%2Ctype%2Cprimary_location%2Cauthorships%2Cabstract_inverted_index",
+  "started_utc": "2026-10-09T19:05:18Z",
+  "ended_utc": "2026-10-09T19:05:18Z",
+  "http_status": 200,
+  "count": 0,
+  "topic_terms": false
+ }
+]
