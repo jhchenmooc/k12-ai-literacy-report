@@ -107,6 +107,14 @@
 | KB-2025-0040 — [Enhancing AI Literacy for Minority High School Students: Mixed Outcomes and Insights for Effective Teaching Strategies](https://doi.org/10.3102/2194735) | conference_paper | 未知 | discovered_unverified |
 | KB-2025-0041 — [High School Teachers’ Emergent AI Literacy Goals During Professional Learning About Lesson Co-Design (Poster 17)](https://doi.org/10.3102/2186733) | conference_paper | 未知 | discovered_unverified |
 | KB-2025-0042 — [Black Middle Schoolers’ AI Self-Efficacy and Outcome Expectations in a Summer Camp](https://doi.org/10.3102/2186946) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0051 — [“AI just keeps guessing”: Using ARC Puzzles to Help Children Identify Reasoning Errors in Generative AI](https://doi.org/10.1145/3713043.3728836) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0052 — [Children's Mental Models of AI Reasoning: Implications for AI Literacy Education](https://doi.org/10.1145/3713043.3728856) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0053 — [Taking the Magic Out of the Machine: Children as Creators of Real-World AI-Powered Tools for Education](https://doi.org/10.1145/3713043.3731605) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0054 — [Building babyGPTs: Youth engaging in data practices and ethical considerations through the construction of generative language models](https://doi.org/10.1145/3713043.3731525) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0055 — [Investigating Youth’s Technical and Ethical Understanding of Generative Language Models When Engaging in Construction and Deconstruction Activities](https://doi.org/10.1145/3713043.3731602) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0056 — [Youth as Advisors in Participatory Design: Situating Teens’ Expertise in Everyday Algorithm Auditing with Teachers and Researchers](https://doi.org/10.1145/3713043.3728849) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0057 — [Behind the Scenes: Unpacking Students' Experience during a Collaborative AI Workshop using Multi-Modal Data](https://doi.org/10.1145/3713043.3728839) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0058 — [If anybody finds out you are in BIG TROUBLE”: Understanding Children’s Hopes, Fears, and Evaluations of Generative AI](https://doi.org/10.1145/3713043.3731498) | conference_paper | 未知 | discovered_unverified |
 
 ## 2026｜first_publication
 
@@ -203,6 +211,26 @@
 | KB-2026-0085 — [Learning to Code, Learning to Care: Promoting Ethics and Agency in Elementary AI Curriculum](https://doi.org/10.3102/2279151) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0086 — [A Systematic Review on How to Design K-12 Artificial Intelligence Education (Poster 24)](https://doi.org/10.3102/2276835) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0087 — [How States Conceptualize AI and Equity in Education: A Policy Analysis of Emerging K–12 Guidance](https://doi.org/10.3102/2280516) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0103 — [Eco-AI Campus: A Cooperative Digital Game for Reasoning About the Sustainable and Ethical Deployment of AI](https://doi.org/10.1145/3773077.3813775) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0104 — [Navigating the AI Era: A Multi-Step Approach to Family AI Literacy and Mediation for Young Children](https://doi.org/10.1145/3773077.3813782) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0105 — [Orbiting the VirtueVerse: A Game for Practicing and Reflecting on AI Ethics](https://doi.org/10.1145/3773077.3806143) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0106 — [Exploring children’s visions for an AI-enabled education](https://doi.org/10.1145/3773077.3813780) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0107 — [Where Does AI Leave a Footprint? Children’s Reasoning About AI’s Environmental Costs](https://doi.org/10.1145/3773077.3806144) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0108 — [UnboxAI: Towards Sustainable Family AI Literacy Through Tangible Interaction](https://doi.org/10.1145/3773077.3813763) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0109 — [Children Envision Future GenAI Chatbots that are Bounded, Helpful, and Safe](https://doi.org/10.1145/3773077.3806128) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0110 — [AI Literacy for Educational Leaders: Imagining Futures in K–12 Policy and Practice](https://doi.org/10.3102/2280689) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0111 — [Co-creating Knowledge with GenAI: Shared Epistemic Agency and Critical AI Literacy in K-12 Lesson Planning](https://doi.org/10.3102/2288539) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0112 — [Understanding Public K-12 Indigenous Student Interest and Access to CS and AI Education through Teacher Perspectives and National CS Data (Poster 5)](https://doi.org/10.3102/2282137) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0113 — [Generative AI Disruption in K-12 Education: Balancing Skepticism and Opportunity](https://doi.org/10.3102/2276914) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0114 — [Constructive Controversy with AI: Elementary Students Engage in Ethical Reasoning and Debate (Poster 15)](https://doi.org/10.3102/2277717) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0115 — [Latinx Youth as AI Designers: Building Their Communities' Present and Future (Stage 3, 12:08 PM)](https://doi.org/10.3102/2353011) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0116 — [From Uncertainty to Understanding: A YPAR Study Co-Investigating AI Readiness Across a High School Campus](https://doi.org/10.3102/2279932) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0117 — [Framework for AI Professional Development: Insights from Needs and Challenges of K-12 Educators](https://doi.org/10.3102/2288639) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0118 — [Co-Occurrence Network Analysis to Guide Responsible AI Policy Development in K-12 Education](https://doi.org/10.3102/2289481) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0119 — [Educational Leaders Navigating AI: Policy Challenges and Opportunities in K-12 Implementation](https://doi.org/10.3102/2279837) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0120 — [Integrating AI Literacy into Math Education: A Study on AI Self-Efficacy and Math Motivation](https://doi.org/10.3102/2281139) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0121 — [Exploring AI Literacy: Student Perceptions of Learning, Ethics, and Use in the Classroom](https://doi.org/10.3102/2273778) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0122 — [Imagining Culturally and Linguistically Sustaining AI Literacy with In-Service Educators through Design-Based Research (Poster 29)](https://doi.org/10.3102/2288275) | conference_paper | 未知 | discovered_unverified |
 
 ## 2027｜issue_year
 
