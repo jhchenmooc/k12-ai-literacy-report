@@ -185,3 +185,9 @@
 - [PR #81](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/81)：J05 Education and Information Technologies 四篇 Springer 出版商文章的範圍限定初篩；不將 SEM、質性或數位能力研究冒稱 AI 素養教學因果。`verify` 成功 [Run #37935252331](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37935252331)，合併 commit `c9d29339c240a66718344a82a88702ea0cf61abb`。
 - 這些都是**定向搜尋的少量文章初篩**，不是完整來源索引覆蓋、全文查核或真實 10/09–10/15 首發新聞。`search_runs.csv` 仍未同步新增驗證器格式的批次列，必須以真正實行的查詢及覆蓋範圍補記，不填假零結果。
 - 下一順序：P0 對 J04、J07、C03 等依來源 ID 執行可重現搜尋並核對正式 DOI、Online First、學段；核對索引分層及歷年資料去重，最後才進 P1 與 P2。九筆候選 hold 與正式新期別零則維持；v1.6 出版安全規則不變。
+
+### 2026-10-09 P0 J04/J07/C03 來源初篩續報
+- [PR #83](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/83) 已在 [verify run #37935730529](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37935730529) 通過後合併（commit b738d479772ab6415b6a06b0ca9d3653f59f0128）。新增 research/p0-j04-j07-c03-audit-2026-10-09.md，記錄三來源七篇正式 DOI 頁之有限初篩。
+- 已區分 BJET 2025 first published 與 2026 卷期；LAK 正式發表日與會議日、short paper、既有 KB-2026-0012 同 DOI；J07 高教研究排除 K–12 直接證據。
+- coverage 僅限列出項目 items_screened，絕非 39＋21 全面查核；search_runs.csv 尚無可據實填寫的完整命中總數。不得虛構零結果，也不得將搜尋日當首次出版日期。
+- 下次先核對 main verify/deploy 與本交接檔，再依 P0 補記可稽核、允許未知命中之覆蓋批次及後續監測來源；完成 P0 才推進 P1、P2。九筆 hold／正式新期別零／v1.6 出版規則不變。
