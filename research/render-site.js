@@ -31,7 +31,7 @@ function shell({depth,current,title,description,head,main}){
  const links=nav.map(([href,label,key])=>'<a href="'+p+href+'"'+(current===key?' aria-current="page"':"")+">"+label+"</a>").join("");
  return '<!doctype html>\n<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+
   '<meta name="description" content="'+esc(description)+'"><title>'+esc(title)+"｜K-12 AI 素養國際動態</title>"+
-  '<link rel="stylesheet" href="'+p+'assets/design-system.css"><link rel="stylesheet" href="'+cssHref(p)+'"></head>\n<body>'+
+  '<link rel="stylesheet" href="'+p+'assets/design-system.css"><link rel="stylesheet" href="'+cssHref(p)+'"><link rel="icon" href="'+p+'assets/favicon.svg" type="image/svg+xml"></head>\n<body>'+
   '<a class="skip" href="#content">跳至主要內容</a>'+
   '<header class="site-header"><nav class="site-nav" aria-label="主要導覽"><a class="brand" href="'+p+'">K-12 AI 素養國際動態</a>'+links+
   '<a class="nav-feedback" href="'+p+'feedback/">讀者勘誤</a></nav></header>\n'+
