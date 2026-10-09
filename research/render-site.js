@@ -3,7 +3,7 @@
    Usage: node research/render-site.js          check generated pages are up to date (CI)
           node research/render-site.js --write  regenerate them
    Never registers editions, changes claims or certifies sources: it only renders what is already recorded. */
-const fs=require("node:fs"),path=require("node:path");
+const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
 const {parseCsv}=require("./validate-knowledge-base.js");
 
 const LEGACY_WEEKLY=[{path:"weekly/2026-09-29_10-08/",title:"創刊特刊：2026/9/29–10/8",note:"10 天過渡期特刊；早期版本，未經獨立認證，保留公開更正說明。"}];
@@ -16,6 +16,12 @@ const ORG_COUNTRY={"O-AU-EDU":"AU","O-JP-MEXT":"JP","O-KR-MOE":"KR","O-UK-DFE":"
 const STATUS={discovered_unverified:["unverified","僅發現・未核"],bibliographic_checked:["checked","書目已核"],content_checked:["fulltext","原文已核"]};
 const DAILY_KIND={official_notice:["policy","官方文件"],official_attributed_summary:["policy","官方文件摘要"],research_bibliography:["research","研究書目"],research_abstract_attributed_summary:["research","研究摘要"]};
 
+/* Quick-index year columns always run from the newest year back to at least this year, so later backfill keeps the layout stable. */
+const INDEX_FIRST_YEAR=2023;
+/* Cache-busting query from the stylesheet content, so readers do not keep an outdated layout after an update. */
+const CSS_VERSION=crypto.createHash("sha256").update(fs.readFileSync(path.join(__dirname,"..","assets","site.css"))).digest("hex").slice(0,10);
+const cssHref=p=>p+"assets/site.css?v="+CSS_VERSION;
+
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const up=depth=>depth?"../".repeat(depth):"./";
 
@@ -25,7 +31,7 @@ function shell({depth,current,title,description,head,main}){
  const links=nav.map(([href,label,key])=>'<a href="'+p+href+'"'+(current===key?' aria-current="page"':"")+">"+label+"</a>").join("");
  return '<!doctype html>\n<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+
   '<meta name="description" content="'+esc(description)+'"><title>'+esc(title)+"｜K-12 AI 素養國際動態</title>"+
-  '<link rel="stylesheet" href="'+p+'assets/design-system.css"><link rel="stylesheet" href="'+p+'assets/site.css"></head>\n<body>'+
+  '<link rel="stylesheet" href="'+p+'assets/design-system.css"><link rel="stylesheet" href="'+cssHref(p)+'"></head>\n<body>'+
   '<a class="skip" href="#content">跳至主要內容</a>'+
   '<header class="site-header"><nav class="site-nav" aria-label="主要導覽"><a class="brand" href="'+p+'">K-12 AI 素養國際動態</a>'+links+
   '<a class="nav-feedback" href="'+p+'feedback/">讀者勘誤</a></nav></header>\n'+
@@ -102,7 +108,7 @@ function archiveData(records,relations,venues){
   const date=basis==="first_publication"?r.first_published_on+" 首發":basis==="issue_year"?"卷期年（首發日未知）":basis==="event_year"?"會議年（首發日未知）":"未知";
   return {id:r.record_id,year:r.year_value||"未知",title:r.title,url:r.primary_url,date,type:POLICY_TYPES[r.record_type]||RESEARCH_TYPES[r.record_type]||r.record_type,status:STATUS[r.verification_status]||STATUS.discovered_unverified};
  };
- const policy=new Map(),research=new Map();
+ const policy=new Map(),journals=new Map(),conferences=new Map();
  const add=(m,key,name,sub,r)=>{if(!m.has(key))m.set(key,{key,name,sub,rows:[]});m.get(key).rows.push(row(r))};
  for(const r of kept){
   const rs=rel.get(r.record_id)||[];
@@ -113,38 +119,71 @@ function archiveData(records,relations,venues){
    else{const c=country||ORG_COUNTRY[org];if(c)add(policy,"1-"+c,COUNTRY[c]||c,org?org:"",r);else add(policy,"9-other","其他／未標國別","",r)}
   }else if(RESEARCH_TYPES[r.record_type]){
    const src=(rs.find(x=>x.predicate==="published_in")||{}).object_id;
-   if(src)add(research,(src[0]==="J"?"1-":"2-")+src,venueName.get(src)||src,(src[0]==="J"?"期刊 ":"會議 ")+src,r);
-   else add(research,"9-other","其他期刊與會議","尚未對應到監測來源",r);
+   const m=r.record_type==="conference_paper"?conferences:journals,label=m===conferences?"會議":"期刊";
+   if(src)add(m,"1-"+src,venueName.get(src)||src,label+" "+src,r);
+   else add(m,"9-other","其他"+label,"尚未對應到監測來源",r);
   }
  }
- const sortRows=g=>{g.rows.sort((a,b)=>b.year.localeCompare(a.year)||a.title.localeCompare(b.title));return g};
+ const sortRows=g=>{g.rows.sort((a,b)=>yearOrder(a.year,b.year)||a.title.localeCompare(b.title));return g};
  const sortGroups=m=>[...m.values()].map(sortRows).sort((a,b)=>a.key.localeCompare(b.key,"en",{numeric:true}));
- return {policy:sortGroups(policy),research:sortGroups(research)};
+ return {policy:sortGroups(policy),journals:sortGroups(journals),conferences:sortGroups(conferences)};
 }
+/* Newest year first; "未知" last. */
+function yearOrder(a,b){if(a===b)return 0;if(a==="未知")return 1;if(b==="未知")return -1;return b.localeCompare(a)}
+const slug=s=>String(s).replace(/[^A-Za-z0-9]+/g,"-").replace(/^-|-$/g,"").toLowerCase()||"x";
+const groupId=g=>"g-"+slug(g.key);
+const yearId=(g,y)=>groupId(g)+"-y"+(y==="未知"?"unknown":y);
 const LEGEND='<div class="legend"><span><span class="badge checked">書目已核</span> 題名、出處、日期已對過出版者或官方原頁</span><span><span class="badge unverified">僅發現・未核</span> 只核過登記資料，原頁或首發日未核</span><span><span class="badge fulltext">原文已核</span> 內容逐段核對</span></div>';
+/* "AIED — International Conference …": the long part is hidden on narrow screens; the full name stays in title and the group heading. */
+function indexName(name){const i=name.indexOf(" — ");return i<0?esc(name):esc(name.slice(0,i))+'<span class="long">'+esc(name.slice(i))+"</span>"}
+/* Quick index without scripts: groups × years matrix of in-page links. */
+function quickIndex(groups,label){
+ const known=groups.flatMap(g=>g.rows.map(r=>r.year)).filter(y=>/^\d{4}$/.test(y)).map(Number);
+ const hi=Math.max(INDEX_FIRST_YEAR,...known),lo=Math.min(INDEX_FIRST_YEAR,...known);
+ const years=Array.from({length:hi-lo+1},(_,i)=>String(hi-i));
+ if(groups.some(g=>g.rows.some(r=>r.year==="未知")))years.push("未知");
+ const head='<tr><th scope="col" class="name">'+label+'</th><th scope="col">合計</th>'+years.map(y=>'<th scope="col">'+esc(y)+"</th>").join("")+"</tr>";
+ const body=groups.map(g=>{
+  const by=new Map();for(const r of g.rows)by.set(r.year,(by.get(r.year)||0)+1);
+  return '<tr><th scope="row" class="name"><a href="#'+groupId(g)+'" title="'+esc(g.name)+'">'+indexName(g.name)+"</a></th><td>"+g.rows.length+"</td>"+years.map(y=>by.has(y)?'<td><a href="#'+yearId(g,y)+'" aria-label="'+esc(g.name)+" "+esc(y)+" 年 "+by.get(y)+' 筆">'+by.get(y)+"</a></td>":'<td class="none">—</td>').join("")+"</tr>";
+ }).join("");
+ return '<section class="quick-index" id="index" aria-labelledby="index-h"><h2 id="index-h">快速索引</h2><p class="sub">點名稱跳到該組；點數字直接跳到該年份的第一筆。</p><div class="table-wrap"><table class="index-table"><thead>'+head+"</thead><tbody>"+body+"</tbody></table></div></section>";
+}
 function groupTable(g){
- return '<section class="group"><h2>'+esc(g.name)+"</h2>"+(g.sub?'<p class="sub">'+esc(g.sub)+"・"+g.rows.length+" 筆</p>":'<p class="sub">'+g.rows.length+" 筆</p>")+
+ const seen=new Set();
+ return '<section class="group" id="'+groupId(g)+'"><div class="group-head"><h2>'+esc(g.name)+'</h2><a class="to-index" href="#index">回到索引 ↑</a></div>'+(g.sub?'<p class="sub">'+esc(g.sub)+"・"+g.rows.length+" 筆</p>":'<p class="sub">'+g.rows.length+" 筆</p>")+
   '<div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody>'+
-  g.rows.map(r=>'<tr><td class="year">'+esc(r.year)+'</td><td><a href="'+esc(r.url)+'">'+esc(r.title)+'</a><div class="type">'+esc(r.type)+"</div></td><td>"+esc(r.date)+'</td><td><span class="badge '+r.status[0]+'">'+r.status[1]+"</span></td></tr>").join("")+
+  g.rows.map(r=>{const first=!seen.has(r.year);seen.add(r.year);return "<tr"+(first?' id="'+yearId(g,r.year)+'"':"")+'><td class="year">'+esc(r.year)+'</td><td><a href="'+esc(r.url)+'">'+esc(r.title)+'</a><div class="type">'+esc(r.type)+"</div></td><td>"+esc(r.date)+'</td><td><span class="badge '+r.status[0]+'">'+r.status[1]+"</span></td></tr>"}).join("")+
   "</tbody></table></div></section>";
 }
+const LISTS={
+ policy:{title:"國別 × 年份政策年表",short:"國別政策年表",group:"國別／組織",note:"依國別或國際組織分組",desc:"政策年表"},
+ journals:{title:"期刊 × 年份論文清單",short:"期刊論文清單",group:"期刊",note:"依期刊分組",desc:"期刊論文清單"},
+ conferences:{title:"會議 × 年份論文清單",short:"會議論文清單",group:"會議",note:"依會議分組",desc:"會議論文清單"}};
 function archiveTabs(active){
- return '<nav class="tabs" aria-label="清單類型"><a href="../policy/"'+(active==="policy"?' aria-current="page"':"")+'>國別 × 年份政策年表</a><a href="../research/"'+(active==="research"?' aria-current="page"':"")+">期刊／會議 × 年份論文清單</a></nav>";
+ return '<nav class="tabs" aria-label="清單類型">'+Object.entries(LISTS).map(([k,v])=>'<a href="../'+k+'/"'+(active===k?' aria-current="page"':"")+">"+v.short+"</a>").join("")+"</nav>";
 }
 const ARCHIVE_LEAD='<p class="lead">這是可追溯的<strong>書目索引</strong>，不是政策效力或研究結論的認證。每筆標示核對程度；首發日未核實時，以卷期年歸類並註明。週報審查中的候選不列入。</p>';
+const SOURCE_NOTE='<div class="info"><p>資料來源：本刊知識庫（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/tree/main/research/knowledge-base">GitHub 公開</a>）。清單由程式自知識庫產生；發現錯誤請透過<a href="../../feedback/">讀者勘誤</a>回報。</p></div>';
 function renderArchiveList(kind,groups){
- const isPolicy=kind==="policy",n=groups.reduce((s,g)=>s+g.rows.length,0);
- const head='<div class="kicker">歷年資料庫</div><h1>'+(isPolicy?"國別 × 年份政策年表":"期刊／會議 × 年份論文清單")+"</h1>"+ARCHIVE_LEAD+LEGEND+archiveTabs(kind);
- const main='<p class="sub">共 '+n+" 筆，"+(isPolicy?"依國別或國際組織分組":"依期刊或會議分組")+"，組內依年份由新到舊。</p>"+(groups.length?groups.map(groupTable).join(""):'<p class="empty">尚無紀錄。</p>')+
-  '<div class="info"><p>資料來源：本刊知識庫（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/tree/main/research/knowledge-base">GitHub 公開</a>）。清單由程式自知識庫產生；發現錯誤請透過<a href="../../feedback/">讀者勘誤</a>回報。</p></div>';
- return shell({depth:2,current:"archive",title:isPolicy?"國別政策年表":"期刊與會議論文清單",description:"K-12 AI 素養歷年資料庫："+(isPolicy?"政策年表":"研究清單"),head,main});
+ const L=LISTS[kind],n=groups.reduce((s,g)=>s+g.rows.length,0);
+ const head='<div class="kicker">歷年資料庫</div><h1>'+L.title+"</h1>"+ARCHIVE_LEAD+LEGEND+archiveTabs(kind);
+ const main='<p class="sub">共 '+n+" 筆、"+groups.length+" 組，"+L.note+"，組內依年份由新到舊。</p>"+(groups.length?quickIndex(groups,L.group)+groups.map(groupTable).join(""):'<p class="empty">尚無紀錄。</p>')+SOURCE_NOTE;
+ return shell({depth:2,current:"archive",title:L.short,description:"K-12 AI 素養歷年資料庫："+L.desc,head,main});
 }
-function counts(data){const c=g=>g.reduce((s,x)=>s+x.rows.length,0);return {policy:c(data.policy),research:c(data.research)}}
+/* The former combined research list now points to the two split pages so old links keep working. */
+function renderResearchMoved(data){
+ const n=counts(data);
+ const head='<div class="kicker">歷年資料庫</div><h1>研究清單已分為期刊與會議兩頁</h1>'+ARCHIVE_LEAD;
+ const main='<div class="grid-cards"><section class="panel"><div class="label">期刊</div><h2><a href="../journals/">期刊 × 年份論文清單</a></h2><p>'+n.journals+' 筆期刊論文。</p></section><section class="panel"><div class="label">會議</div><h2><a href="../conferences/">會議 × 年份論文清單</a></h2><p>'+n.conferences+" 筆會議論文。</p></section></div>";
+ return shell({depth:2,current:"archive",title:"研究清單",description:"K-12 AI 素養歷年資料庫：研究清單已分為期刊與會議兩頁",head,main});
+}
+function counts(data){const c=g=>g.reduce((s,x)=>s+x.rows.length,0);return {policy:c(data.policy),journals:c(data.journals),conferences:c(data.conferences)}}
 function renderArchiveIndex(data){
  const n=counts(data);
  const head='<div class="kicker">歷年資料庫</div><h1>K–12 AI 素養：政策年表與研究清單</h1>'+ARCHIVE_LEAD+LEGEND;
- const main='<div class="grid-cards"><section class="panel"><div class="label">政策</div><h2><a href="policy/">國別 × 年份政策年表</a></h2><p>'+n.policy+" 筆官方政策、框架與指引，依國別或國際組織分組。</p></section>"+
-  '<section class="panel"><div class="label">研究</div><h2><a href="research/">期刊／會議 × 年份論文清單</a></h2><p>'+n.research+" 筆 K–12 AI 素養研究書目，依期刊或會議分組。</p></section></div>";
+ const panel=(k,label,text)=>'<section class="panel"><div class="label">'+label+'</div><h2><a href="'+k+'/">'+LISTS[k].title+"</a></h2><p>"+text+"</p></section>";
+ const main='<div class="grid-cards">'+panel("policy","政策",n.policy+" 筆官方政策、框架與指引，依國別或國際組織分組。")+panel("journals","期刊",n.journals+" 筆期刊論文，依期刊分組。")+panel("conferences","會議",n.conferences+" 筆會議論文，依會議分組。")+"</div>";
  return shell({depth:1,current:"archive",title:"歷年資料庫",description:"K-12 AI 素養歷年資料庫",head,main});
 }
 
@@ -164,7 +203,7 @@ function renderAbout(){
 const BLOCKS={"daily-latest":(days,data)=>{
   const items=days.flatMap(d=>d.claims.map(c=>({c,date:d.date}))).slice(0,3);
   return items.length?'<ul class="item-list">'+items.map(x=>dailyItem(x.c,0,x.date)).join("")+"</ul>":'<p class="empty">尚無已發布的每日短訊。沒有合格項目的日子不發刊。</p>';
- },"archive-stats":(days,data)=>{const n=counts(data);return '<div class="stats"><div class="stat"><strong>'+n.policy+"</strong><span>政策與框架紀錄</span></div>"+'<div class="stat"><strong>'+n.research+"</strong><span>研究書目紀錄</span></div></div>"}};
+ },"archive-stats":(days,data)=>{const n=counts(data);return '<div class="stats"><div class="stat"><strong>'+n.policy+"</strong><span>政策與框架</span></div>"+'<div class="stat"><strong>'+n.journals+"</strong><span>期刊論文</span></div>"+'<div class="stat"><strong>'+n.conferences+"</strong><span>會議論文</span></div></div>"}};
 function fillHomepage(html,days,data){
  let out=html;
  for(const [name,fn] of Object.entries(BLOCKS)){
@@ -172,7 +211,7 @@ function fillHomepage(html,days,data){
   if(!re.test(out))throw Error("homepage marker missing: "+name);
   out=out.replace(re,(_,a,b)=>a+fn(days,data)+b);
  }
- return out;
+ return out.replace(/href="\.\/assets\/site\.css(\?v=[0-9a-f]*)?"/,'href="'+cssHref("./")+'"');
 }
 
 /* ---------- build ---------- */
@@ -185,7 +224,9 @@ function build(root){
   "monthly/index.html":renderPeriodIndex("monthly",editions),
   "archive/index.html":renderArchiveIndex(data),
   "archive/policy/index.html":renderArchiveList("policy",data.policy),
-  "archive/research/index.html":renderArchiveList("research",data.research),
+  "archive/journals/index.html":renderArchiveList("journals",data.journals),
+  "archive/conferences/index.html":renderArchiveList("conferences",data.conferences),
+  "archive/research/index.html":renderResearchMoved(data),
   "about/index.html":renderAbout()
  };
  for(const d of days)files["daily/"+d.date+"/index.html"]=renderDailyEdition(d);

@@ -407,3 +407,25 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 **分工更新**：知識庫或 `issues.json` 一有變動，衍生頁面就會過期而讓 CI 失敗。因此**兩個 session 改完資料後都要執行 `node research/render-site.js --write` 並一起提交**；但網站檔案的手動修改（首頁文字、`site.css`、`render-site.js` 本身）仍只由編輯 session 做。
 
 **每日短訊例行作業**：已設定每日 08:22（臺灣）觸發本 session 的 Routine，流程：重查 → 合格才建 claims／快照／登記 → `render-site.js --write` 產生頁面 → 測試 → PR → verify 成功後合併 → 確認 Pages → 中文回報。沒有合格項目不發刊、只留紀錄。注意：同一來源在候選池中若仍為 hold，閘門會擋下 daily（`daily claim contradicts held/unverified cumulative candidate`）。
+
+### 2026-10-09｜P0 第 B1 批（文獻搜尋 session）與網站 v1 驗收
+
+**P0 第 B1 批**（[PR #103](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/103)，摘要照該 PR「交接檔摘要」）：
+- 完成：J20–J30、J32–J34、J39、C13–C18 三組平行搜尋（UTC 16:58–17:20，牆鐘約 21 分），入庫 46 筆（期刊 16、會議 30，含 AERA 議程 15），KB-2025-0033～0042、KB-2026-0052～0087，全部 `discovered_unverified`、首發日 unknown、`issue_year`。
+- 數字：records 89→135、relations 207→307、search runs 58→79；待判 139（只在 group JSON）；C20 SITE Interactive unavailable（LearnTechLib 擋自動請求）、ICALT 2026／CSCW 2026 Companion 未登記。
+- 證據：`research/p0-b1-2026-10-09/integration.md`、`group-b1-{1,2,3}.{json,md}`、`baseline-sha256.txt`。
+- 未解：46 筆出版社頁與 G2–G4 方法核查未做（17 筆含成效敘述標高風險）；待判優先 IDC 27、AERA 31、J29 9、J20 `tate.2025.105032`；CSCW 期次歸屬為推定；AERA 多個議程 DOI 未全面去重；`verify_bibtex` 在該 session 環境不可用；J20／J23／J24／J28／J34／J39 缺摘要比例高。
+- 驗收：PR HEAD `c4ef42c` verify 成功，squash 合併為 main `5ef41e0`；[main Run 37966463817](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37966463817) verify 與 deploy 均成功。
+
+**網站新版面 v1**（[PR #104](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/104)）：#103 合併後先把 main 併入並以 `render-site.js --write` 重新產生（研究書目 71→117），HEAD `997f088` verify 成功，squash 合併為 main `fb53ab1`；[main Run 37966600130](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37966600130) verify 與 deploy 均成功。線上 8 個新頁面與 `assets/site.css` 皆 200，抽查 5 檔與 main 雜湊一致。
+
+**下一步**：
+- 文獻搜尋 session：已通知「改知識庫須執行 `render-site.js --write`」新規則；B-POL（各國官方 K–12 AI 政策歷年紀錄，估 30–60 筆、1 批）與 B-IDX（既有紀錄國別／分類／來源關聯補強，約 135 筆；清單格式已定案上線）依序進行，入庫前與開 PR 前先向管理者回報。
+- 編輯 session：10/10 08:22（臺灣）起每日短訊例行作業；10/15 01:00 UTC 整理第一期出刊決定。
+
+### 2026-10-09｜歷年資料庫：期刊與會議分頁、快速索引
+
+- 管理者要求：會議論文多，期刊與會議分成兩頁，並讓讀者快速索引。
+- `archive/journals/`（期刊 × 年份）與 `archive/conferences/`（會議 × 年份）由 `render-site.js` 依 `record_type` 分流產生；原 `archive/research/` 改為轉介頁，舊連結不失效。三個清單頁（政策／期刊／會議）共用分頁導覽。
+- 快速索引：頁首「來源 × 年份」矩陣，點名稱跳到該組、點數字跳到該年份第一筆；每組有「回到索引 ↑」。無 JavaScript；`:target` 會標示跳到的那一列。手機上清單改為每筆一張卡片，不需左右捲動。
+- 測試新增：期刊／會議依類型分流、三頁所有頁內連結都有對應錨點。
