@@ -127,7 +127,7 @@ test("daily issue future source date is blocked",t=>{const d=setup();t.after(()=
 test("daily does not allow fabricated wrong first-disclosure date",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,first_disclosed_on:"2026-10-09"});assert.equal(validate(d).ok,false)});
 
 const summaryText="文件說明面向中學教師的非強制性建議，並未提出實施成效的資料。";
-const attributed={...dailyLow,claim_class:"descriptive",risk_tier:"medium",level:"N-V2",daily_fact_kind:"official_attributed_summary",attributed_summary:summaryText,assertion_type:"direct_statement",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。官方文件表示："+summaryText+"（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）"};
+const attributed={...dailyLow,claim_class:"descriptive",risk_tier:"medium",level:"N-V2",daily_fact_kind:"official_attributed_summary",attributed_summary:summaryText,summary_evidence_spans:[excerpt],assertion_type:"direct_statement",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。官方文件表示："+summaryText+"（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）"};
 test("attributed official summary with pinned excerpt and two passes passes structural gate",t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,attributed);assert.equal(validate(d).ok,true);
 });
@@ -145,3 +145,7 @@ test("summary without two reviews or pinned source cannot publish",t=>{
 test("no silent expansion to weekly and monthly publishing policy",t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[{...claim,decision:"hold"}]);assert.equal(validate(d).ok,false);
 });
+
+test("daily rejects missing first disclosure",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,first_disclosed_on:null});assert.equal(validate(d).ok,false)});
+test("daily summary rejects missing source-aligned spans",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...attributed,summary_evidence_spans:[]});assert.equal(validate(d).ok,false)});
+test("daily summary rejects raw newline",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...attributed,attributed_summary:summaryText+"\\nExtra"});assert.equal(validate(d).ok,false)});
