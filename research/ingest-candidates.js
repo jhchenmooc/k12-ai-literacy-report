@@ -45,10 +45,10 @@ function merge(worksheet,batch,history=[]){
 function ingest(root,friday,batchFile){
  const {filename}=require("./scaffold-weekly.js").makeDraft(friday),file=path.join(root,"research","drafts",filename);
  const batch=JSON.parse(fs.readFileSync(batchFile,"utf8")),worksheet=JSON.parse(fs.readFileSync(file,"utf8"));
- const dir=path.dirname(file),history=fs.readdirSync(dir).filter(n=>/^\\d{4}-\\d{2}-\\d{2}_\\d{4}-\\d{2}-\\d{2}\\.json$/.test(n)&&n!==filename).map(n=>JSON.parse(fs.readFileSync(path.join(dir,n),"utf8")));
+ const dir=path.dirname(file),history=fs.readdirSync(dir).filter(n=>/^\d{4}-\d{2}-\d{2}_\d{4}-\d{2}-\d{2}\.json$/.test(n)&&n!==filename).map(n=>JSON.parse(fs.readFileSync(path.join(dir,n),"utf8")));
  const result=merge(worksheet,batch,history);
  const tmp=file+".tmp-"+process.pid;
- try{fs.writeFileSync(tmp,JSON.stringify(result.worksheet,null,2)+"\\n",{flag:"wx"});fs.renameSync(tmp,file)}
+ try{fs.writeFileSync(tmp,JSON.stringify(result.worksheet,null,2)+"\n",{flag:"wx"});fs.renameSync(tmp,file)}
  finally{if(fs.existsSync(tmp))fs.unlinkSync(tmp)}
  return {file,added:result.added,duplicate_count:result.duplicates.length};
 }
