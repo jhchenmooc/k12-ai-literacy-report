@@ -26,7 +26,7 @@ Bash／WebFetch 無法連出版社。三組使用 Composio（Exa 抓取、搜尋
 J17 不是 K-12 專屬；C06／C07 為教師回饋；C11 單組前後；J10 為成人樣本。出版社版本日不等於全球最早公開日。全部書目僅 `bibliographic_checked`，無 `content_checked`／`full_text_checked`。
 
 ## 數字
-records 36→38、relations 82→87、search runs 34→42（新增 8 批，全部 partial、總命中留空）；唯一來源 ID 26→27（新增 J17；C06 先前已有紀錄，J10/C05/C07/C08/C11/C09 重訪）。測試把 AU 國別索引的寫死集合放寬為「包含兩筆政策紀錄」（因新增澳洲研究紀錄），未改出版閘門。
+records 36→38、relations 82→87、search runs 34→42（新增 8 批，全部 partial、總命中留空）；唯一來源 ID 仍為 26/60（本批八個來源 ID 先前皆已有搜尋紀錄，均為重訪或加深，沒有新增來源 ID）。測試把 AU 國別索引的寫死集合放寬為「包含兩筆政策紀錄」（因新增澳洲研究紀錄），未改出版閘門。
 
 ## 仍未解
 J10 issue 號與 ScienceDirect 日期的第二位真人讀取；C05 98/68 原因與 v2 公開日；C08 arXiv v4 與正文差異；C06 無獨立限制章節（局限來自文中敘述）；C07/J17 是否有更早預印本；C09 DOI／上線日；MOE 約束性文件與 Ver.2.1；韓國法條原文；DfE 初版比對。其餘 J20–J39／C13–C22 與 40 個以上來源尚未覆蓋。
