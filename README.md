@@ -5,7 +5,7 @@
 ## 新 Session 接手入口
 
 - [**固定工作交接檔（SESSION-HANDOFF）**](research/SESSION-HANDOFF.md)：最後確認的 GitHub 證據、重要決策、完成／待辦、已知疏漏及最短接續步驟。接手先重新查最新主分支狀態。
-- [完整編輯與出版主控 SOP](research/editorial-workflow-master.md)：資料搜尋、來源查核、主張驗證、PR／CI、Pages、勘誤。
+- [完整編輯與出版主控 SOP v1.1](research/editorial-workflow-master.md)：資料搜尋、來源查核、主張驗證、PR／CI、Pages、勘誤。
 
 ## 已發布
 - 網站首頁：`index.html`
@@ -106,7 +106,7 @@ GitHub Pages：Settings → Pages → Source = GitHub Actions。正式更新經 
 
 ## 首期標準週報建稿（不預填未查核內容）
 
-已建立 [2026/10/09–10/15 週報候選工作表](research/drafts/2026-10-09_2026-10-15.json)。目前已有 7 筆候選且全數 `hold`，狀態仍為 `draft_pending_source_verification`，並不是已發布的新聞、已審核的論文或 `publication/issues.json` 中的正式報告。可以用 `node research/scaffold-weekly.js 2026-10-16` 在本地建立下一期候選檔；只接受合法週五起始日期，既有檔案不得覆寫。填入真實來源與逐條核對資料後，仍須另外依 [風險分級規範](research/low-human-review-policy.md) 產生正式 HTML／查核 JSON，通過必要 CI 才能發布。暫停的 Google Forms 不在本流程內。
+已建立 [2026/10/09–10/15 週報候選工作表](research/drafts/2026-10-09_2026-10-15.json)。目前已有 7 筆候選且全數 `hold`；A07 雖有 UNESCO 官網 10/9 文章，同事件 10/7–10/8 已公開報導，僅供背景、不符合本週新事件首發條件。狀態仍為 `draft_pending_source_verification`，並不是已發布的新聞、已審核的論文或 `publication/issues.json` 中的正式報告。可以用 `node research/scaffold-weekly.js 2026-10-16` 在本地建立下一期候選檔；只接受合法週五起始日期，既有檔案不得覆寫。填入真實來源與逐條核對資料後，仍須另外依 [風險分級規範](research/low-human-review-policy.md) 產生正式 HTML／查核 JSON，通過必要 CI 才能發布。暫停的 Google Forms 不在本流程內。
 
 ## 60 題語意審查：初步資料覆蓋，不是正式驗證
 
