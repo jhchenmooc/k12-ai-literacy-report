@@ -69,3 +69,29 @@ test("inline event handlers and hidden attributes are blocked",t=>{
  updateHtml(d,'<main><p data-claim-id="C1" onclick="x()">合成案例：某機構公告</p></main>');
  assert.equal(validate(d).ok,false);
 });
+
+test("unbound direct div text is rejected",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ updateHtml(d,'<main><p data-claim-id="C1">合成案例：某機構公告</p><div>未核准的政策結論</div></main>');
+ assert.equal(validate(d).ok,false);
+});
+test("unbound text inside section outside paragraphs is rejected",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ updateHtml(d,'<main><section>額外主張<p data-claim-id="C1">合成案例：某機構公告</p></section></main>');
+ assert.equal(validate(d).ok,false);
+});
+test("bound content in wrapper elements remains valid",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ updateHtml(d,'<main><section><div><p data-claim-id="C1">合成案例：某機構公告</p></div></section></main>');
+ assert.equal(validate(d).ok,true);
+});
+test("invalid calendar dates and malformed source URLs are rejected",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[{...claim,publication_date:"2026-02-30",checked_at:"2026-13-01",source_url:"https://"}]);
+ assert.equal(validate(d).ok,false);
+});
+test("offline full-issue fixture fails closed when evidence is tampered with",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ assert.equal(validate(d).ok,true);
+ fs.appendFileSync(path.join(d,"publication","sources","fixture.txt"),"tampered");
+ assert.equal(validate(d).ok,false);
+});

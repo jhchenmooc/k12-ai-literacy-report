@@ -20,7 +20,15 @@ function check(c){
   for(const field of ["claim_id","source_url","source_locator","checked_at","publication_date","source_type"]){
     if(typeof c[field]!=="string"||!c[field].trim())reasons.push("missing "+field);
   }
-  if(typeof c.source_url==="string"&&!/^https:\/\//.test(c.source_url))reasons.push("source url must be https");
+  if(typeof c.source_url==="string"){
+    try{const url=new URL(c.source_url);if(url.protocol!=="https:"||!url.hostname||url.username||url.password||/\s/.test(c.source_url))reasons.push("invalid https source url")}
+    catch{reasons.push("invalid https source url")}
+  }
+  for(const dateField of ["checked_at","publication_date"]){
+    if(typeof c[dateField]!=="string"||!/^\d{4}-\d{2}-\d{2}$/.test(c[dateField])){reasons.push("invalid "+dateField+" date");continue}
+    const d=new Date(c[dateField]+"T00:00:00Z");
+    if(!Number.isFinite(d.getTime())||d.toISOString().slice(0,10)!==c[dateField])reasons.push("invalid "+dateField+" date");
+  }
   if(c.source_checked!==true)reasons.push("original source not checked");
   const allowed=c.kind==="news_policy"?["N-U","N-V1","N-V2","N-V3"]:["U","V1","V2","V3"];
   if(!allowed.includes(c.level))reasons.push("invalid verification level");

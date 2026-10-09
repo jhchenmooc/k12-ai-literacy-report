@@ -47,6 +47,10 @@ function matchBody(html,claims){
   if(!map.has(id)){errors.push("unknown body claim "+id);continue}
   if(plain(map.get(id).claim_text)!==t)errors.push("body text differs from claim_text: "+id);
  }
+ // Strip all matched claim-bearing nodes, then reject any residual visible text.
+ // This catches bare text in div/section/aside-like containers that the node list misses.
+ const remaining=body.replace(/<(p|h1|h2|h3|h4|li|blockquote|figcaption|td|th)\b[^>]*>[\s\S]*?<\/\1>/gi,"");
+ if(plain(remaining))errors.push("unbound text outside claim elements: "+plain(remaining).slice(0,70));
  for(const c of claims){if(!c||typeof c.claim_id!=="string")continue;const count=counts.get(c.claim_id)||0;if(count!==1)errors.push("claim must appear exactly once in HTML: "+c.claim_id+" ("+count+")")}
  return errors;
 }
