@@ -268,3 +268,31 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 尚待：C09正式論文集可核樣本；J17全文學段/設計；第一波J10日期、C05分母與v2/首發、C06原文、C07/C08正式版本；政策版本與其餘J20–J39/C13–C22依優先級。P0未完，不進P1/P2，不再擴六個同時執行者。第二波後usage5小時96%、每週27%，不啟第三批或額度重置。九候選hold/source_checked=false、零正式期別與v1.6不變，無自動發刊。
 
 本批整合[PR #92](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/92)最新HEAD verify成功才合併，main verify/deploy另核；提交時不預寫成功，最終結果以該PR描述/Actions為準。
+
+### 2026-10-09｜Claude 接手入口（優先閱讀本段）
+
+**最新已驗收資料基準**：main `36c4d879bb37ac62d81d96b74c45edbae396ff10`，第二波[PR #92](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/92)已合併。最新PR HEAD `ecc910d037405b462e0242eef4125400a5fedeeb` 的[verify Run37945471117](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37945471117)成功，實際核對head_sha、pull_request event及verify job後以expected_head_sha合併；合併後[main Run37945558725](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37945558725) verify/deploy均成功。這补正上段提交時尚待確認的結果；更晚main以GitHub重新讀取為準。此交接文件PR的結果以其PR／Actions為準，不把資料基準當交接PR驗收。
+
+**已完成、不要重做**：PR #90初次三組試行；#91第一波補核；#92第二波九來源少量樣本搜尋、四筆獨立核查與中央整合。正式表目前36 records、82 relations、34 search runs；26/60是已有搜尋紀錄的唯一來源ID（含不同深度），不是26來源普查完成。本地195/195既有tests通過；來源完整正式全文未被全面閱讀，沒有新的content_checked。三批完整queries、逐篇裁決、存取失敗與時間證據都在各自資料夾，不能把重訪樣本或累積出現次数當独特新論文。
+
+**必讀文件**：本檔最新段落；`research/editorial-workflow-master.md`、`research/first-disclosure-checklist-v16.md`、`research/p0-parallel-search-workflow.md`、`research/venue-watchlist.md`、`research/knowledge-base/schema.md`；`research/p0-parallel-pilot-2026-10-09/`及兩份`research/p0-followup-wave{1,2}-2026-10-09/integration.md`、`second-round.{json,md}`。既有正式表／索引／九候選／publication manifest須一起對帳。
+
+**建議下一個有界P0批次（先三組，不自動六組）**：
+- A 日期／版本補核：J10 `10.1016/j.chb.2025.108779`（10/9原文footer vs 10/27機構Early online）；C05 `10.22318/cscl2025.817482`（作者稿98 vs 分組68、作者10頁 vs 正式9頁、v2歷程）及 `.107218`（首發／poster原文）；C08 `10.1145/3702652.3744217`（正式版與預印本差異／公開歷程）。只補缺口，避免重查已核基本書目。
+- B 方法／學段補核：J17 `10.1016/j.edurev.2026.100813`（各學段、設計、偏差）；C06 `10.1145/3641555.3705158`（正式poster原文、日期、instrument）；C07 `10.1145/3724363.3729069`（publisher及作者版本歷程，教師學段／單組自評已核）；C11 `10.58459/icce.2025.6011`（配對分析分母、遺失資料／篇型）。來源責任不得與A/C重疊。
+- C 覆蓋／政策：優先C09 SITE/AACE正式論文集可核樣本；再核新加坡MOE存取受限的原始政策日期／版本及既有政策audit未解項。其餘J20–J39及後續會議按現行watchlist優先級另開下一批，不在同批無限制擴範圍。需確認政策現行性時重新讀當時官方版本，不用歷史文獻當現行法規證據。
+
+**可讀證據邊界與不可猜補**：
+- J16 online8/4由中央官方indexed頁確認，但獨立核查該次日期受阻unknown；不能寫雙輪日期都直接確認。
+- C05作者preprint分母矛盾不能自行修正，也不能說正式v2一定有同一錯誤。
+- C08 arXiv2/27是submission timestamp，精確公開可讀日未核；出版社manifestation日不是同作品全球最早首發。其他arXiv timestamp同樣分開。
+- C07教師感受不是學生效果；C11單組前後變化不是因果效果；J17平均效果／非顯著moderator不是普遍K–12優效。Publisher索引／作者選定段落不能冒認正式全文完整核讀。
+- 搜尋總命中未知留空/null/unknown；query失敗或0入庫不能填0命中。記錄entry_only/query_scoped/items_screened/full_text_checked與partial/unavailable，不虛構查全。
+
+**平行及交付契約**：先重新核main/open PR/CI與本機git status；鎖定讀取基準及正式三表／候選／manifest雜湊。三組只寫各自新暫存檔，不得同時改正式CSV、索引、候選、claims、issues、本handoff或網站。中央整合者才核DOI／同版本／日期／來源一致性並入庫；不同版本不自動合併。高風險命題由未讀第一輪結論的獨立任務重新核原始來源，原文受阻保留未解，不以角色投票或同模型雙輪冒稱真人審稿。每組在開始讀檔前記真實UTC，分開查詢、查核、寫檔、交付及整合時間；缺時戳仍unknown，不報沒有實測的串行加速／成本。
+
+**驗證與合併**：沿用現有CLI／CI，先schema／CSV安全／round-trip／DOI／索引一致性及v1.6 regression；195是此基準既有測試數，不硬編碼未来數量。單批一個整合PR；核最新HEAD SHA對應verify成功後expected_head_sha合併，改HEAD就重新等；合併後分別確認main verify/deploy。不改出版閘門讓資料過關、不開新服務／爬蟲／排程。若Claude環境不能開平行agent、查來源或存取GitHub，要明示真實限制，採有界替代，不能模擬已完成。
+
+**工作目錄提醒**：本機`D:/codex/ai/k12-ai-literacy-report`、`...-next`、`...-wave2`仍有此前自己產生、已透過GitHub提交的工作差異，checkout HEAD可能落後；先查git status，不hard reset／清除／覆寫他人或未知修改。可另建乾淨clone從最新main續接。`D:/codex/ai/*integrate.cjs`等是本次本機單次輔助，不是repository必要依賴；GitHub版證據與既有工具足夠接手。Windows CRLF可能令生成索引字串比對失敗，先核LF／生成結果，勿直接改測試期待值。
+
+**安全及範圍**：九筆候選繼續hold/source_checked=false、正式新期別零；歷史學術書目不當當週首次發布新聞，v1.6不放寬、不自動發刊。P0未完，不提前P1/P2。之前Codex usage5小時96%／每週27%是查詢當時帳號快照，並非Claude額度；按接手環境實際額度安排有界批次，不自行使用額度重置。每批更新同一份本檔的完成／未完／下一批及實際PR/Run證據，不另建平行handoff。
