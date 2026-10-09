@@ -2,7 +2,7 @@
 /* Offline, append-only source-discovery batches. No network, publishing or approval. */
 const fs=require("node:fs"),path=require("node:path");
 function day(s){if(typeof s!=="string"||!/^\d{4}-\d\d-\d\d$/.test(s))throw Error("invalid ISO date");const d=new Date(s+"T00:00:00Z");if(!Number.isFinite(+d)||d.toISOString().slice(0,10)!==s)throw Error("invalid calendar date");return d}
-function canonical(url){if(typeof url!=="string")return "";try{const u=new URL(url);if(u.protocol!=="https:")return "";u.hash="";for(const k of [...u.searchParams.keys()])if(!/^(id|doc|document|file|article_id|paper_id)$/i.test(k))u.searchParams.delete(k);u.searchParams.sort();return u.origin.toLowerCase()+u.pathname.replace(/\/+$/,"").toLowerCase()+u.search}catch{return ""}}
+function canonical(url){if(typeof url!=="string")return "";try{const u=new URL(url);if(u.protocol!=="https:"||u.username||u.password)return "";u.hash="";for(const k of [...u.searchParams.keys()])if(!/^(id|doc|document|file|article_id|paper_id)$/i.test(k))u.searchParams.delete(k);u.searchParams.sort();return u.origin.toLowerCase()+u.pathname.replace(/\/+$/,"").toLowerCase()+u.search}catch{return ""}}
 function key(c){return [c.doi&&"doi:"+String(c.doi).toLowerCase().replace(/^https?:\/\/doi.org\//,"").trim(),c.event_key&&"event:"+String(c.event_key).trim().toLowerCase(),canonical(c.source_url)&&"url:"+canonical(c.source_url)].filter(Boolean)}
 function merge(worksheet,batch,history=[]){
  if(!Array.isArray(history))throw Error("invalid history");
@@ -13,7 +13,7 @@ function merge(worksheet,batch,history=[]){
  for(const source of batch.sources)if(!source||!source.group||!source.query||!["ok","unavailable"].includes(source.status))throw Error("coverage requires group/query/status");
  const result=structuredClone(worksheet),existing=new Set(result.items.flatMap(key)),prior=new Map(),seen=new Set(),added=[],duplicates=[];
  for(const item of history.flatMap(w=>w.items||[]))for(const k of key(item))if(!prior.has(k))prior.set(k,item.candidate_id);
- if(typeof batch.batch_id!=="string"||!batch.batch_id.trim()||(result.search_runs||[]).some(x=>x.batch_id===batch.batch_id))throw Error("batch_id missing or already ingested");
+ if(typeof batch.batch_id!=="string"||!batch.batch_id.trim()||[result,...history].some(w=>(w.search_runs||[]).some(x=>x.batch_id===batch.batch_id)))throw Error("batch_id missing or already ingested");
  for(const c of batch.candidates){
   if(!c||!canonical(c.source_url)||!c.source_title||!c.source_locator)throw Error("candidate needs https original URL/title/locator");
   const keys=key(c);if(keys.some(k=>existing.has(k)||seen.has(k)||prior.has(k))){
@@ -29,6 +29,7 @@ function merge(worksheet,batch,history=[]){
    continue
   }
   const published=c.source_publication_date||"unknown";
+  if(published!=="unknown"&&day(published)>today)throw Error("source publication date is in the future");
   if(published!=="unknown")day(published);
   const backfill=published!=="unknown"&&day(published)<start;
   const uncertain=published==="unknown";
@@ -38,20 +39,26 @@ function merge(worksheet,batch,history=[]){
  }
  const searchRuns=result.search_runs||[];
  
- searchRuns.push({batch_id:batch.batch_id,searched_on:batch.searched_on,lookback_days:30,sources:batch.sources,discovered:batch.candidates.length,added:added.length,duplicates:duplicates.length});
+ searchRuns.push({batch_id:batch.batch_id,searched_on:batch.searched_on,lookback_days:Number.isInteger(batch.lookback_days)&&batch.lookback_days>=0?batch.lookback_days:null,lookback_days_target:30,sources:batch.sources,discovered:batch.candidates.length,added:added.length,duplicates:duplicates.length});
  result.search_runs=searchRuns;
- if(result.screening_summary){result.screening_summary.candidate_count=result.items.length;result.screening_summary.ready_to_publish=0;result.screening_summary.verified_for_publication=0}
+ if(result.screening_summary){result.screening_summary.candidate_count=result.items.length}
  return {worksheet:result,added,duplicates};
 }
 function ingest(root,friday,batchFile){
- const {filename}=require("./scaffold-weekly.js").makeDraft(friday),file=path.join(root,"research","drafts",filename);
- const batch=JSON.parse(fs.readFileSync(batchFile,"utf8")),worksheet=JSON.parse(fs.readFileSync(file,"utf8"));
- const dir=path.dirname(file),history=fs.readdirSync(dir).filter(n=>/^\d{4}-\d{2}-\d{2}_\d{4}-\d{2}-\d{2}\.json$/.test(n)&&n!==filename).map(n=>JSON.parse(fs.readFileSync(path.join(dir,n),"utf8")));
- const result=merge(worksheet,batch,history);
- const tmp=file+".tmp-"+process.pid;
- try{fs.writeFileSync(tmp,JSON.stringify(result.worksheet,null,2)+"\n",{flag:"wx"});fs.renameSync(tmp,file)}
- finally{if(fs.existsSync(tmp))fs.unlinkSync(tmp)}
- return {file,added:result.added,duplicate_count:result.duplicates.length};
+ const {filename}=require("./scaffold-weekly.js").makeDraft(friday),file=path.join(root,"research","drafts",filename),dir=path.dirname(file);
+ const lock=file+".lock";let handle;
+ // Exclusive writer lock protects read/merge/replace, not just atomic renaming.
+ try{
+  handle=fs.openSync(lock,"wx");
+  const batch=JSON.parse(fs.readFileSync(batchFile,"utf8")),worksheet=JSON.parse(fs.readFileSync(file,"utf8"));
+  const history=fs.readdirSync(dir).filter(n=>/^\d{4}-\d{2}-\d{2}_\d{4}-\d{2}-\d{2}\.json$/.test(n)&&n!==filename).map(n=>JSON.parse(fs.readFileSync(path.join(dir,n),"utf8")));
+  const result=merge(worksheet,batch,history),tmp=file+".tmp-"+process.pid;
+  try{fs.writeFileSync(tmp,JSON.stringify(result.worksheet,null,2)+"\n",{flag:"wx"});fs.renameSync(tmp,file)}
+  finally{if(fs.existsSync(tmp))fs.unlinkSync(tmp)}
+  return {file,added:result.added,duplicate_count:result.duplicates.length};
+ }finally{
+  if(handle!==undefined){fs.closeSync(handle);fs.unlinkSync(lock)}
+ }
 }
 if(require.main===module)try{const [friday,batchFile,root="."]=process.argv.slice(2);if(!friday||!batchFile)throw Error("Usage: node research/ingest-candidates.js FRIDAY batch.json [root]");console.log(JSON.stringify(ingest(path.resolve(root),friday,batchFile)))}catch(e){console.error(e.message);process.exitCode=1}
 module.exports={merge,ingest};
