@@ -109,7 +109,7 @@ function validate(root){
   let data;try{data=JSON.parse(fs.readFileSync(f,"utf8"))}catch(e){errors.push("invalid claims JSON "+q);continue}
   if(!Array.isArray(data)||data.length===0){errors.push("edition must have non-empty claims "+p);continue}
   let html;try{html=fs.readFileSync(htmlPath,"utf8")}catch(e){errors.push("edition HTML unreadable "+p+": "+e.message);continue}
-  if(/<\\/?(?:script|iframe|object|embed)\\b/i.test(html)||/\\son[a-z]+\\s*=/i.test(html))errors.push(p+": active HTML content outside claim-bound main is forbidden");
+  if(/<\/?(?:script|iframe|object|embed)\b/i.test(html)||/\son[a-z]+\s*=/i.test(html))errors.push(p+": active HTML content outside claim-bound main is forbidden");
   errors.push(...matchBody(html,data).map(e=>p+": "+e));
   const claimIds=new Set();
   for(const c of data){
