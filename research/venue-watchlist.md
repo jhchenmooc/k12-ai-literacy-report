@@ -1,4 +1,4 @@
-# K-12 AI 素養學術期刊與會議監測清單 v1.2
+# K-12 AI 素養學術期刊與會議監測清單 v1.3
 
 > 建立日期：2026-10-08。目標：服務臺灣 K-12 AI 素養政策、教師與學生能力框架、課程和評量研究。這是**監測來源池**，不是期刊等級排名，也不表示來源中的每一篇文章都適用 K-12。清單包含部分以高等教育為主的來源，必須逐篇依學段篩選。
 
@@ -10,9 +10,9 @@
 
 ### 實際搜尋順序（A）
 
-不改34種期刊、19個會議及搜尋頻率。先查教育主管機關／國際機構，再查核心期刊／正式論文集，最後跨庫補漏。**先篩首次公開日期、K–12學段、重複事件及內容價值，再查原文**；低價值候選只記排除原因。活動日不能冒稱本週新發布日。
+保留既有34種期刊、19個會議的原監測設定；新增5種期刊、2個正式會議。先查教育主管機關／國際機構，再查核心期刊／正式論文集，最後跨庫補漏。**先篩首次公開日期、K–12學段、重複事件及內容價值，再查原文**；低價值候選只記排除原因。活動日不能冒稱本週新發布日。
 
-## 2. 期刊池（34 種）
+## 2. 期刊池（39 種）
 
 | ID | 級別 | 期刊 | 適用主題 | 查核入口 |
 |---|---|---|---|---|
@@ -51,7 +51,13 @@
 | J33 | 擴充 | Humanities and Social Sciences Communications | AI素養、青少年與教育認知 | [期刊頁](https://www.nature.com/hsscomms/) |
 | J34 | 擴充 | Canadian Journal of Science, Mathematics and Technology Education | STEM、師資生、AI教學 | [期刊頁](https://link.springer.com/journal/42330) |
 
-## 3. 國際會議池（19 個會議系列）
+| J35 | 核心 | International Journal of Child-Computer Interaction | 兒童與青少年 AI 互動、批判 AI 素養 | [期刊頁](https://www.sciencedirect.com/journal/international-journal-of-child-computer-interaction) |
+| J36 | 核心 | Journal of Educational Computing Research | K–12 AI 素養、驗證與教育科技評量 | [期刊頁](https://journals.sagepub.com/home/JEC) |
+| J37 | 核心 | Journal of Science Education and Technology | AI × STEM、科學推理及評量 | [期刊頁](https://link.springer.com/journal/10956) |
+| J38 | 核心 | Educational Psychology Review | 認知卸載、後設認知、鷹架與學習機制 | [期刊頁](https://link.springer.com/journal/10648) |
+| J39 | 擴充 | International Journal of Computer-Supported Collaborative Learning | 生成式 AI、人機協作、共同知識建構 | [期刊頁](https://link.springer.com/journal/11412) |
+
+## 3. 國際會議池（21 個正式系列）
 
 **重要**：同一會議的 full paper、short paper、workshop、poster、demo、doctoral consortium 等不能混為同等證據。會議網站與論文集為不同入口；2026 年會議可能已有 proceedings，但沒有論文集的活動公告不能當作正式論文。
 
@@ -76,6 +82,9 @@
 | C17 | 擴充 | AERA Annual Meeting | American Educational Research Association Annual Meeting | 教育政策、測量、教師、K-12學習 | [系列／論文庫](https://www.aera.net/Events-Meetings/Annual-Meeting) |
 | C18 | 背景 | ICALT | IEEE International Conference on Advanced Learning Technologies | AI技術、教育應用 | [系列／論文庫](https://tc.computer.org/tclt/) |
 | C20 | 背景 | SITE Interactive | Online Society for Information Technology and Teacher Education | 教師培力與新工具早期應用 | [系列／論文庫](https://aace.org/conf/site-interactive/) |
+
+| C21 | 核心 | WiPSCE | International Conference on Primary and Secondary Computing Education Research | 國小至高中運算／AI 教育及教師研究 | [2026 官方會議](https://www.wipsce.org/2026/) |
+| C22 | 核心 | EAAI | Symposium on Educational Advances in Artificial Intelligence | AI 教育與 K–12 課程；須逐篇確認學段 | [AAAI 官方](https://aaai.org/conference/aaai/aaai-26/eaai-26/) |
 
 ## 4. 跨庫學術索引及角色
 
@@ -148,7 +157,7 @@ framework_alignment,duplicate_group,weekly_priority,notes
 - **學段及人群**：先判 K-12 學生／K-12 教師／師資生／高教／成人；會議研究不因名稱含 Education 即視為 K-12。
 - **證據強度**：研究重要性 A/B/C 與方法品質分開；自陳、橫斷 SEM、量表驗證及 RCT 不可用同一因果語言。
 - **會議索引**：以每篇論文 DOI／論文集正式上線日為時間判準，非僅會議活動日期；Full、Short、Poster、Workshop 各自標記。
-- **監測範圍**：收錄 34 種期刊與 19 個會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
+- **監測範圍**：收錄 39 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
 - **品質確認**：監測候選池要記錄 `verification_status`（verified / partial / pending）、`population_level`、`evidence_design`、`publication_status`，不可僅以期刊名稱推斷研究品質。
 
 ## 10. 維護提醒
@@ -169,4 +178,10 @@ framework_alignment,duplicate_group,weekly_priority,notes
 
 **每週入選的最低驗證門檻**：出版者或官方 proceedings 能支持『論文存在、日期、對象、性質及主張』才可公開；若重要效果量、統計表或 DOI 無法核對，刪去數字或清楚標示尚待核實。A/B/C 是政策重要性，V1/V2/V3/U 是驗證深度，兩套尺度不得混用。
 
-**來源驗證狀態**：目前 34 期刊與 19 會議為監測候選清單，不是逐一連線驗證完成的封閉名單。網站 URL 可用不代表正確的論文收錄；每季重新核對期刊更名、停刊、會議年份／proceedings 出版者。
+**來源驗證狀態**：目前 39 期刊與 21 會議為監測候選清單，不是逐一連線驗證完成的封閉名單。網站 URL 可用不代表正確的論文收錄；每季重新核對期刊更名、停刊、會議年份／proceedings 出版者。
+
+## 13. v1.7 來源池擴充及定期檢閱（2026-10-09）
+
+- 新增 J35–J39 五本期刊、C21–C22 兩個正式會議；既有 J01–J34、C01–C18、C20 代碼不重新編碼。正式池共 39 期刊／21 會議。**NARST 僅列觀察池**，見 [來源登錄與治理](source-registry-and-review-policy-v17.md)。
+- **每季輕量複核、每年完整檢閱，遇停刊、失聯、主辦／出版社重大變動則即時複核**；升降級與移除主動監測不得刪除歷史資料。是否增加或移除來源依 K–12 直接關聯、獨特研究發現、書目與出版日期可核性、搜尋負擔及來源穩定度，不能只看期刊指標。
+- 2026-10-09 的擴充只確認監測入口與主題關聯，**並非全部新增來源的歷年論文均已核證**；正式論文仍以個別 DOI／官方論文集及 Online First 實證查核。原 v1.6 出版閘門不變。
