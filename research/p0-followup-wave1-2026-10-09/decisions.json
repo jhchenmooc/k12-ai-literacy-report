@@ -1,0 +1,12 @@
+{
+  "_base_sha": "ade85459b2f2809787866bfca258190c0a007aa9",
+  "10.1016/j.chb.2025.108779": {"action":"retain_staging","reason":"Institutional Early online October27 and author-formatted footer October9 conflict remains unresolved; K-12 sample not verified."},
+  "10.1016/j.chbr.2026.101041": {"action":"update_date","date":"2026-04-02","reason":"Author-uploaded publisher-formatted original footer, independently read by integrator, identifies Available online April2. Date refers to publisher manifestation; earlier public versions remain unknown. Preserve bibliographic_checked; tracked panel 2573 differs from wave pools; no causal instruction claim."},
+  "10.1016/j.chbr.2025.100833": {"action":"retain_staging","reason":"No new original subgroup-method or date evidence; mixed-stage intention model cannot substantiate K-12 teaching efficacy."},
+  "10.1145/3641555.3705158": {"action":"retain_staging","reason":"Official poster/program and author institution bibliography accessible but original instrument/design and publisher chronology still unavailable; do not import unverified date."},
+  "10.1145/3724363.3729069": {"action":"add_bibliography","year":"2025","date":"","reason":"Official author institution confirms DOI/title/ACM V.1; author original selected methods confirms primary/secondary teachers. Add historical bibliographic record only, date unknown, issue-year index. Teacher self-report is not student efficacy; no formal fulltext certification."},
+  "10.1145/3641555.3705101": {"action":"retain_staging","reason":"Official Birds of a Feather discussion, excluded from empirical outcome evidence."},
+  "10.22318/cscl2025.817482": {"action":"retain_existing","reason":"Author preprint N98 vs scenario groups total68 and ten-page vs formal nine-page versions unresolved. Formal date/v2 history unknown; retain existing bibliography only."},
+  "10.22318/cscl2025.107218": {"action":"retain_existing","reason":"Formal poster abstract only; first-public date, participant methods and version history still unknown."},
+  "10.1145/3702652.3744217": {"action":"retain_existing","reason":"Formal ACM manifestation date August2 unchanged. arXiv February27 is submission timestamp, not verified exact public-availability day. Related DOI establishes same-work version link; retain earlier-version warning and mixed-stage review limits, do not merge versions or adopt efficacy claims."}
+}

@@ -1,0 +1,277 @@
+{
+  "group": "C",
+  "source_ids": [
+    "C05",
+    "C08"
+  ],
+  "dispatched_at_utc": "2026-10-09T14:08:42Z",
+  "started_at_utc": "2026-10-09T14:09:27Z",
+  "finished_at_utc": "2026-10-09T14:13:16Z",
+  "scope_start": "2025-01-01",
+  "scope_end": "2026-10-09",
+  "results_seen": null,
+  "queries": [
+    {
+      "source_id": "C05",
+      "query": "\"10.22318/cscl2025.817482\" \"date\"",
+      "searched_at_utc": "2026-10-09T14:09:27Z"
+    },
+    {
+      "source_id": "C05",
+      "query": "\"10.22318/cscl2025.107218\" \"date\"",
+      "searched_at_utc": "2026-10-09T14:09:27Z"
+    },
+    {
+      "source_id": "C05",
+      "query": "\"Toward Teacher-Centered AI Design\" pdf",
+      "searched_at_utc": "2026-10-09T14:09:27Z"
+    },
+    {
+      "source_id": "C05",
+      "query": "\"Utilizing LLMs to Support Teacher Understanding of AI Literacy\" pdf",
+      "searched_at_utc": "2026-10-09T14:09:27Z"
+    },
+    {
+      "source_id": "C05",
+      "query": "site:repository.isls.org/handle/1/11843?mode=full",
+      "searched_at_utc": "2026-10-09T14:10:13Z"
+    },
+    {
+      "source_id": "C05",
+      "query": "site:repository.isls.org/handle/1/11944?mode=full",
+      "searched_at_utc": "2026-10-09T14:10:13Z"
+    },
+    {
+      "source_id": "C05",
+      "query": "site:sri.com \"Utilizing LLMs\" ",
+      "searched_at_utc": "2026-10-09T14:10:13Z"
+    },
+    {
+      "source_id": "C05",
+      "query": "site:stemandcs.org \"107218\"",
+      "searched_at_utc": "2026-10-09T14:10:13Z"
+    },
+    {
+      "source_id": "C08",
+      "query": "\"3702652.3744217\" \"Published\"",
+      "searched_at_utc": "2026-10-09T14:10:13Z"
+    },
+    {
+      "source_id": "C08",
+      "query": "site:deepblue.lib.umich.edu \"3702652.3744217\" \"EC1\"",
+      "searched_at_utc": "2026-10-09T14:10:45Z"
+    },
+    {
+      "source_id": "C08",
+      "query": "site:deepblue.lib.umich.edu \"3702652.3744217\" \"Limitations\"",
+      "searched_at_utc": "2026-10-09T14:10:45Z"
+    },
+    {
+      "source_id": "C05",
+      "query": "site:repository.isls.org \"11843\" \"accessioned\"",
+      "searched_at_utc": "2026-10-09T14:10:45Z"
+    },
+    {
+      "source_id": "C05",
+      "query": "site:repository.isls.org \"11944\" \"accessioned\"",
+      "searched_at_utc": "2026-10-09T14:10:45Z"
+    }
+  ],
+  "access_attempts": [
+    {
+      "url": "https://repository.isls.org/handle/1/11843?mode=full",
+      "status": "unavailable",
+      "read_scope": "No direct metadata read; search-indexed official simple metadata available"
+    },
+    {
+      "url": "https://repository.isls.org/handle/1/11944?mode=full",
+      "status": "unavailable",
+      "read_scope": "No direct metadata read; search-indexed official simple metadata available"
+    },
+    {
+      "url": "https://repository.isls.org/bitstream/1/11843/1/CSCL2025_196-204_v2.pdf",
+      "status": "unavailable",
+      "read_scope": "none"
+    },
+    {
+      "url": "https://repository.isls.org/bitstream/1/11944/1/CSCL2025_646-648.pdf",
+      "status": "403",
+      "read_scope": "none"
+    },
+    {
+      "url": "https://2025.isls.org/proceedings/",
+      "status": "403",
+      "read_scope": "none"
+    },
+    {
+      "url": "https://shellyyin96.github.io/",
+      "status": "readable",
+      "read_scope": "Author-selected publication DOI/PDF links and March 2025 acceptance news"
+    },
+    {
+      "url": "https://shellyyin96.github.io/paper/CSCL25_RAI.pdf",
+      "status": "readable",
+      "read_scope": "10-page author PDF; methods, recruitment, sample table, scenario counts, results selected sections; not certified equal to ISLS v2"
+    },
+    {
+      "url": "https://doi.org/10.22318/cscl2025.817482",
+      "status": "fetch_error",
+      "read_scope": "none"
+    },
+    {
+      "url": "https://dl.acm.org/doi/10.1145/3702652.3744217",
+      "status": "unavailable",
+      "read_scope": "No direct content; indexed publication history and DOI metadata"
+    },
+    {
+      "url": "https://doi.org/10.1145/3702652.3744217",
+      "status": "403",
+      "read_scope": "none"
+    },
+    {
+      "url": "https://deepblue.lib.umich.edu/bitstream/handle/2027.42/198869/3702652.3744217.pdf?isAllowed=y&sequence=1",
+      "status": "403",
+      "read_scope": "Indexed first-page fragment only; CC BY 4.0 formal-format DOI document; not read full text"
+    },
+    {
+      "url": "https://arxiv.org/abs/2503.00079",
+      "status": "readable",
+      "read_scope": "Version history and related ACM DOI"
+    },
+    {
+      "url": "https://arxiv.org/abs/2503.00079v1",
+      "status": "readable",
+      "read_scope": "v1 timestamp, authors/title/abstract; v1 metadata does not itself show related ACM DOI"
+    },
+    {
+      "url": "https://arxiv.org/html/2503.00079v3",
+      "status": "readable",
+      "read_scope": "Sections 3 methodology, Table 2 exclusions, Section 6 limitations; partial section read"
+    }
+  ],
+  "samples": [
+    {
+      "source_id": "C05",
+      "title": "Toward Teacher-Centered AI Design: Exploring the Role of Pedagogical Values and Contextual Factors in K-12 Teachers' Perceptions of Responsible AI",
+      "doi": "10.22318/cscl2025.817482",
+      "official_url": "https://repository.isls.org/handle/1/11843",
+      "dates": {
+        "first_public": null,
+        "online": null,
+        "issue": "2025",
+        "preprint": null
+      },
+      "date_evidence": [
+        {
+          "url": "https://repository.isls.org/handle/1/11843",
+          "evidence": "Indexed ISLS issue year 2025 and v2 filename only; no original first-public day."
+        },
+        {
+          "url": "https://shellyyin96.github.io/",
+          "evidence": "Author March 2025 acceptance news links paper, but current page proves neither link existence in March nor PDF first-public date; do not use acceptance as disclosure date."
+        }
+      ],
+      "school_stage": "K-12 teachers; author draft table covers K-5,6-8,9-12",
+      "method": "Author draft: regional US teacher survey; Pearson correlations and regressions, hypothetical AI scenarios. Abstract/recruitment N=98 but scenario groups 23+22+23=68; unresolved denominator/version inconsistency.",
+      "decision": "retain_existing_bibliographic_checked; partial content evidence; no first-date update",
+      "exclusion_reason": "Excluded from causal student-learning or nationally representative evidence and current-week news",
+      "read_scope": "Author draft selected methods/results; official ISLS indexed metadata only",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "high_risk_questions": [
+        "Is author 10-page draft identical to nine-page ISLS v2? No comparison possible.",
+        "Does 68 scenario allocation vs 98 recruitment reflect missingness, typo or older version? Unknown; independent formal-PDF check required.",
+        "What changed between ISLS original and v2, and when did each become public? Unknown.",
+        "Survey pedagogical associations are not intervention causal effects."
+      ],
+      "prior_record_id": "KB-2025-0006"
+    },
+    {
+      "source_id": "C05",
+      "title": "Utilizing LLMs to Support Teacher Understanding of AI Literacy",
+      "doi": "10.22318/cscl2025.107218",
+      "official_url": "https://repository.isls.org/handle/1/11944",
+      "dates": {
+        "first_public": null,
+        "online": null,
+        "issue": "2025",
+        "preprint": null
+      },
+      "date_evidence": [
+        {
+          "url": "https://repository.isls.org/handle/1/11944",
+          "evidence": "Official indexed year 2025; Poster and 646-648. Full metadata and PDF unavailable. No date inferred from crawl/upload."
+        }
+      ],
+      "school_stage": "K-12 teacher-support aim; actual participants and grade stages unknown",
+      "method": "Work-in-progress LLM support design, per indexed official abstract; original method section unread.",
+      "decision": "retain_existing_unknown_dates_partial",
+      "exclusion_reason": "Cannot use anticipated findings as measured effectiveness; no current-week first-public evidence",
+      "read_scope": "Official indexed abstract only",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "high_risk_questions": [
+        "No participant or outcome inference without original poster.",
+        "Original first-public timestamp and any repository update history unresolved."
+      ],
+      "prior_record_id": "KB-2025-0007"
+    },
+    {
+      "source_id": "C08",
+      "title": "AI Literacy in K-12 and Higher Education in the Wake of Generative AI: An Integrative Review",
+      "doi": "10.1145/3702652.3744217",
+      "official_url": "https://dl.acm.org/doi/10.1145/3702652.3744217",
+      "dates": {
+        "first_public": null,
+        "online": "2025-08-02",
+        "issue": "2025-08",
+        "preprint": "2025-02-27"
+      },
+      "date_evidence": [
+        {
+          "url": "https://arxiv.org/abs/2503.00079v1",
+          "evidence": "Version-specific v1 submission 2025-02-27 23:32:03 UTC; same title/authors. Timestamp is arXiv submission, not asserted exact availability instant."
+        },
+        {
+          "url": "https://arxiv.org/abs/2503.00079",
+          "evidence": "Current metadata explicitly links related DOI 10.1145/3702652.3744217; v2 2025-03-04, v3 2025-03-28. Defines same-work relation, not identical manifestation."
+        },
+        {
+          "url": "https://doi.org/10.1145/3702652.3744217",
+          "evidence": "Indexed ACM Publication History Published 02 August 2025; formal publisher manifestation, distinct from earlier preprint."
+        },
+        {
+          "url": "https://deepblue.lib.umich.edu/bitstream/handle/2027.42/198869/3702652.3744217.pdf?isAllowed=y&sequence=1",
+          "evidence": "Indexed first page DOI, ACM ICER 2025 V.1 reference format and CC BY 4.0 copyright notice. Repository deposit/crawl date not used as first-public."
+        }
+      ],
+      "school_stage": "Mixed K-12 and undergraduate literature; teacher education excluded by preprint Table 2 EC1",
+      "method": "Preprint v3 integrative conceptual review, Scopus/ERIC plus purposive searches; 124 studies; 2020-July2024 window with influential 2019 exception. Section 6 expressly does not evaluate intervention effectiveness. Formal PDF methods not completely readable.",
+      "decision": "retain_formal_date_as_manifestation_only; preserve_earlier_preprint_relation; no content_checked",
+      "exclusion_reason": "Not K-12-only, not teacher-literacy comprehensive review, not intervention effectiveness meta-analysis, not first disclosed August or current week",
+      "read_scope": "arXiv metadata plus v3 methodology/exclusion/limitations sections; indexed ACM publication history and legal-deposit first-page fragment; no complete formal text",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "high_risk_questions": [
+        "Independent verifier should confirm related DOI and v1 timestamp without merging versions.",
+        "Current records.csv first_publication 2025-08-02 represents ACM manifestation only; any work-level first-public consumer must use earlier-version warning.",
+        "Formal 16-page publication versus preprint v1 29 pages/v3 25 pages must not be treated as content-identical.",
+        "124 denotes literature count; intervention effectiveness explicitly outside review aims."
+      ],
+      "prior_record_id": "KB-2025-0008"
+    }
+  ],
+  "newly_resolved": [
+    "Legal author PDF for C05-01 located and selected sections read.",
+    "New C05 author-draft scenario denominator inconsistency and draft/formal page-count mismatch identified.",
+    "Lawful C08 University of Michigan deposit located; formal first-page identity/license visible in index but direct full text 403.",
+    "Version-specific arXiv v1 timestamp reconfirmed, current metadata explicitly supplies ACM related DOI."
+  ],
+  "remaining": [
+    "C05 original first-public days and v2 revision histories",
+    "C05 poster full-text method",
+    "C08 complete formal version reading and exact textual version differences"
+  ],
+  "safety": "No shared tables, indexes, candidates, handoff, git or publication changes; nine holds and zero publications remain.",
+  "central_correction": "Integrator: first_public changed to null; February27 is verified submission timestamp only. Original agent narrative already records availability uncertainty."
+}
