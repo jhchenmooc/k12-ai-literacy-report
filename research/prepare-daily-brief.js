@@ -3,6 +3,7 @@
 const fs=require("node:fs"),path=require("node:path");
 const {makeDraft}=require("./scaffold-weekly.js");
 function dailyBrief(worksheet,issueDate){
+ if(typeof issueDate!=="string")throw Error("invalid issue date");
  const date=new Date(issueDate+"T00:00:00Z");
  if(!/^\d{4}-\d{2}-\d{2}$/.test(issueDate)||!Number.isFinite(+date)||date.toISOString().slice(0,10)!==issueDate)throw Error("invalid issue date");
  const yesterday=new Date(+date-86400000).toISOString().slice(0,10);
@@ -18,7 +19,7 @@ function dailyBrief(worksheet,issueDate){
   else if(c.screening_disposition==="exclude"){o.reason="Marked excluded at screening";excluded.push(o)}
   else pending.push(o);
  }
- return {issue_date:issueDate,collection_date:yesterday,status:"editorial_review_only_not_for_publication",suggested_for_publication:items.filter(c=>c.decision==="publish"&&c.source_checked===true&&c.conflict_unresolved===false&&c.first_disclosed_on===c.source_publication_date&&c.verification_completed_on===yesterday&&c.screening_disposition!=="exclude"&&c.source_publication_date>=worksheet.period.start).map(c=>({candidate_id:c.candidate_id,source_url:c.source_url,review_only:true})),pending,background,excluded,source_updates:related,coverage:runs.map(x=>({batch_id:x.batch_id,sources:x.sources,discovered:x.discovered,added:x.added})),notice:"AI shortlist is not actual source verification, editorial approval, or permission to publish."};
+ return {issue_date:issueDate,collection_date:yesterday,status:"editorial_review_only_not_for_publication",suggested_for_publication:items.filter(c=>c.decision==="publish"&&c.source_checked===true&&c.conflict_unresolved===false&&c.first_disclosed_on===c.source_publication_date&&c.verification_completed_on===yesterday&&c.screening_disposition!=="exclude"&&c.source_publication_date>=worksheet.period.start&&c.source_publication_date<=yesterday&&!(c.source_updates||[]).some(u=>u.review_required===true)&&!(worksheet.unresolved_duplicate_discoveries||[]).some(u=>u.related_candidate_id===c.candidate_id&&u.review_required===true)&&!(worksheet.cross_week_updates||[]).some(u=>u.related_candidate_id===c.candidate_id&&u.review_required===true)).map(c=>({candidate_id:c.candidate_id,source_url:c.source_url,review_only:true})),pending,background,excluded,source_updates:related,coverage:runs.map(x=>({batch_id:x.batch_id,sources:x.sources,discovered:x.discovered,added:x.added})),notice:"AI shortlist is not actual source verification, editorial approval, or permission to publish."};
 }
 function markdown(x){
  const rows=(xs)=>xs.length?xs.map(v=>"- "+v.candidate_id+"｜"+v.title+"｜"+v.source_publication_date+"｜"+v.reason+"｜"+v.source_url).join("\n"):"（無）";
