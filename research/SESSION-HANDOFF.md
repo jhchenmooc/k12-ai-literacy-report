@@ -460,8 +460,9 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 
 **管理者本輪規則決定（後續 session 必須遵守）**
 - **學段**：中小學（含幼兒園至高中）在職教師研究算 K-12；職前教師與師培課程另標「師培」（知識庫關聯 `has_population` → `TEACHER_ED`，#128 起），可入庫但不進週報、每日短訊候選；對象混合者依主要對象判斷，不明記「不明」。
-- **AI 素養範圍**：依 [ai-literacy-scope-criteria.md](ai-literacy-scope-criteria.md)（v0.3，以教育部《臺灣中小學教師與學生 AI 素養框架》表 1、表 2 為準）。A 核心（師生 AI 素養本身）、B 相關（AI 工具於教學或學習的使用或成效）**都在範圍內**，同可入庫、進刊物候選；C（AI 僅為研究方法或系統後端）不進刊物。教師 AI-TPACK 與生成式 AI 教學培訓研究一律判 A。判定有疑問先查全文 `research/reference/tw-k12-ai-literacy-framework-2026-07.pdf`（七月正式版；與四月版表 1、表 2 逐字一致，四月版另載 115-04-17 臺教資（一）字第 1152701134 號核定），報告寫引用頁碼。
+- **AI 素養範圍**：依 [ai-literacy-scope-criteria.md](ai-literacy-scope-criteria.md)（v0.3，以教育部《臺灣中小學教師與學生 AI 素養框架》表 1、表 2 為準）。A 核心（師生 AI 素養本身）、B 相關（AI 工具於教學或學習的使用或成效）**都在範圍內**，同可入庫、進刊物候選；C（AI 僅為研究方法或系統後端）不進刊物。教師 AI-TPACK 與生成式 AI 教學培訓研究一律判 A。判定有疑問先查全文 `research/reference/tw-k12-ai-literacy-framework-2026-04-17.pdf`（有函號版，與官方直接連結下載檔雜湊相同），報告寫引用頁碼。
 - **學者清單**：列入不論研究對象學段；只列身分已確認者（ORCID 現職或管理者告知），未確認者放附錄不檢索；2026 年無作品者查近五年，無相關論文才移除。
+- **框架版本日期**：教育部 AI 素養框架一律用有函號版、版本日期 2026-04-17（115-04-17 臺教資（一）字第 1152701134 號核定）；換封面版（封面「2026 年 3 月」、無文號）內容相同，不另存。核定日不等於首發日，知識庫 `first_published_on` 仍依首發證據。
 - **電子郵件**：任何請求不得帶任何人的 email 或 mailto（工具指南第 3 節）。
 
 **文獻搜尋 session**（摘要依各 PR「交接檔摘要」，數字已對 main 核過）
@@ -482,7 +483,7 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 - 依作者檢索 2026 全年概覽與期刊會議反查（[#121](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/121)）。
 - 學者監測清單 v0.6 與後續（[#123](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/123)、[#125](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/125)、[#127](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/127)、[#129](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/129)）：新增 V 級（監測期刊高被引 K-12 AI 論文作者）26 位；2026 年無作品者近五年檢查（無人移除）；臺灣學者姓名與現職補正（林鴻銘、戴孜伃、吳智鴻、陳浩然、劉遠楨、葉家宏）；V17 Yin Ping Yang 的 ORCID 混入同名者，改用作者 ID 檢索。
 - 知識庫驗證接受 J40–J47（[#125](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/125)，含新測試）。
-- AI 素養範圍判斷準則（[#131](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/131)）與框架參考全文（[#132](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/132) 四月版、[#133](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/133) 改七月正式版）；`research/` 未部署到網站（線上路徑 404 已確認）。
+- AI 素養範圍判斷準則（[#131](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/131)）與框架參考全文（[#132](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/132) 四月版、[#133](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/133) 曾改換封面版，管理者 2026-10-09 定回有函號版）；`research/` 未部署到網站（線上路徑 404 已確認）。
 - 學者追蹤結果運用規格草稿（候選管道、月報段落、趨勢素材，含兩輪自檢）**未合併**，暫存於編輯 session，待依入庫結果與 AI 素養準則調整後交管理者決定。
 
 **待辦**
