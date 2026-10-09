@@ -241,4 +241,4 @@
 
 **三→六組決策**：暫不擴充。B/C有99秒／183秒有界搜尋觀察且重疊81秒，但A開始未留存，完整牆鐘／串行基準與費用unknown；不能報實證加速倍數。來源直接讀取受阻及整合／第二輪補查仍是瓶頸。下一批維持三組並完整記dispatch至交付及整合工時；先补C06/C07/J10/C05/C08，再沿優先級J15–J19/C09–C12，未查來源不得報零命中。
 
-**本整合PR的GitHub閘門**：本地195/195既有tests、CSV安全與知識庫／年度索引／出版驗證皆通過；僅修正主表固定總數、固定conference集合及Windows測試路徑假設，未改出版程式。PR最新HEAD verify、合併及main verify/deploy須由實際GitHub結果另行核對，不預寫成功。合併後以本PR的merge SHA與Actions為準，下一session先核對該鏈；CI通過不等於來源真實或正式出刊。基準Run不是本次整合的最終部署證據。
+**本整合[PR #90](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/90)的GitHub閘門**：本地195/195既有tests、CSV安全與知識庫／年度索引／出版驗證皆通過；僅修正主表固定總數、固定conference集合及Windows測試路徑假設，未改出版程式。PR最新HEAD verify、合併及main verify/deploy須由實際GitHub結果另行核對，不預寫成功。合併後以本PR的merge SHA與Actions為準，下一session先核對該鏈；CI通過不等於來源真實或正式出刊。基準Run不是本次整合的最終部署證據。
