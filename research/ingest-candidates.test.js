@@ -57,3 +57,13 @@ test("exclusive writer lock prevents losing concurrent candidate writes",t=>{
  assert.equal(fs.existsSync(target+".lock"),false);
  assert.equal(JSON.parse(fs.readFileSync(target,"utf8")).items.length,2);
 });
+test("candidates record AI literacy scope, defaulting to unknown and staying on hold",()=>{
+ const w=merge(original(),{...batch,candidates:[{...batch.candidates[0],ai_lit_class:"B",ai_lit_dims:["S-LRN"],ai_lit_note:"學生以生成式 AI 練習口說"},batch.candidates[2]]}).worksheet;
+ const [a,b]=w.items.slice(1);
+ assert.deepEqual([a.ai_lit_class,a.ai_lit_dims,a.decision],["B",["S-LRN"],"hold"]);
+ assert.deepEqual([b.ai_lit_class,b.ai_lit_dims,b.ai_lit_note],["unknown",[],""]);
+});
+test("malformed AI literacy scope on a candidate fails closed",()=>{
+ for(const bad of [{ai_lit_class:"D"},{ai_lit_dims:["X-1"]},{ai_lit_dims:"S-LRN"},{ai_lit_note:"a\nb"}])
+  assert.throws(()=>merge(original(),{...batch,candidates:[{...batch.candidates[0],...bad}]}),/ai_lit/,JSON.stringify(bad));
+});

@@ -9,7 +9,7 @@ function setup(){
  fs.writeFileSync(path.join(dir,"publication","issues.json"),JSON.stringify({editions:[]}));
  return dir;
 }
-const claim={evidence_path:"publication/sources/fixture.txt",evidence_sha256:crypto.createHash("sha256").update(excerpt+"\n").digest("hex"),original_excerpt:excerpt,evidence_source_url:"https://example.org/official",interpretation_note:"合成公告僅表明提出非拘束性建議，不包含成效評估。",scope_limitation:"此合成示例不涉及全國法規之效力。",assertion_type:"direct_statement",translation_reviewed:true,claim_id:"C1",kind:"news_policy",claim_class:"descriptive",risk_tier:"medium",ai_crosscheck_status:"concordant",ai_crosscheck_passes:2,ai_crosscheck_record:"two isolated original-source cross-check records",claim_text:"合成案例：某機構公告",source_url:"https://example.org/official",source_locator:"公告第2段",checked_at:"2026-10-16",publication_date:"2026-10-10",source_type:"official",source_checked:true,scope_checked:true,outcome_checked:false,independent_review:false,conflict_unresolved:false,decision:"publish",level:"N-V2"};
+const claim={ai_lit_class:"A",ai_lit_dims:["T-PD"],ai_lit_note:"合成示例：教師 AI 素養建議",evidence_path:"publication/sources/fixture.txt",evidence_sha256:crypto.createHash("sha256").update(excerpt+"\n").digest("hex"),original_excerpt:excerpt,evidence_source_url:"https://example.org/official",interpretation_note:"合成公告僅表明提出非拘束性建議，不包含成效評估。",scope_limitation:"此合成示例不涉及全國法規之效力。",assertion_type:"direct_statement",translation_reviewed:true,claim_id:"C1",kind:"news_policy",claim_class:"descriptive",risk_tier:"medium",ai_crosscheck_status:"concordant",ai_crosscheck_passes:2,ai_crosscheck_record:"two isolated original-source cross-check records",claim_text:"合成案例：某機構公告",source_url:"https://example.org/official",source_locator:"公告第2段",checked_at:"2026-10-16",publication_date:"2026-10-10",source_type:"official",source_checked:true,scope_checked:true,outcome_checked:false,independent_review:false,conflict_unresolved:false,decision:"publish",level:"N-V2"};
 function issue(d,claims){fs.writeFileSync(path.join(d,"publication","issues.json"),JSON.stringify({editions:[{path:"weekly/2026-10-09_10-15/index.html",claims_file:"publication/claims/a.json"}]}));fs.writeFileSync(path.join(d,"publication","claims","a.json"),JSON.stringify(claims))}
 test("unregistered new week fails closed",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));assert.equal(validate(d).ok,false)});
 test("registered synthetic descriptive claim passes structural checks",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);assert.equal(validate(d).ok,true)});
@@ -288,4 +288,26 @@ test("real A07 source URL remains blocked by existing held candidate despite val
  const result=validate(d);
  assert.equal(result.ok,false);
  assert.ok(result.errors.some(e=>e.includes("contradicts held/unverified cumulative candidate")));
+});
+
+test("weekly claim outside AI literacy scope (C, unknown or missing) is blocked",t=>{
+ for(const bad of [{ai_lit_class:"C"},{ai_lit_class:"unknown"},{ai_lit_class:undefined}]){
+  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[{...claim,...bad}]);
+  const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("AI literacy scope must be A or B")));
+ }
+});
+test("AI literacy scope needs valid framework codes and a reason",t=>{
+ for(const bad of [{ai_lit_dims:[]},{ai_lit_dims:["T-XYZ"]},{ai_lit_dims:"T-PD"},{ai_lit_dims:["T-PD","T-PD"]},{ai_lit_note:""},{ai_lit_note:"短"},{ai_lit_note:undefined}]){
+  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[{...claim,...bad}]);
+  assert.equal(validate(d).ok,false,JSON.stringify(bad));
+ }
+});
+test("class B with a framework code publishes like class A",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[{...claim,ai_lit_class:"B",ai_lit_dims:["S-LRN"]}]);assert.equal(validate(d).ok,true)});
+test("daily channel also requires A or B scope",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,ai_lit_class:"C"});const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("AI literacy scope must be A or B")))});
+test("daily claim cannot relabel the scope of its cumulative candidate",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const dir=path.join(d,"research","drafts");fs.mkdirSync(dir,{recursive:true});
+ const sheet={items:[{candidate_id:"W2026-10-09-A07",source_url:dailyLow.source_url,decision:"publish",source_checked:true,first_disclosed_on:"2026-10-10",ai_lit_class:"C"}]};
+ fs.writeFileSync(path.join(dir,"2026-10-09_2026-10-15.json"),JSON.stringify(sheet));
+ const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("AI literacy scope differs from cumulative candidate")));
 });

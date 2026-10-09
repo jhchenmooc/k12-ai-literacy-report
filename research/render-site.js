@@ -189,7 +189,7 @@ function renderArchiveIndex(data){
 
 /* ---------- about ---------- */
 function renderAbout(){
- const head='<div class="kicker">查核方法</div><h1>每一種內容，查到什麼程度</h1><p class="lead">本刊以低人力、可追溯為原則：先篩日期、學段與重複，再核原文；寧可少發，不為湊數放寬門檻。</p>';
+ const head='<div class="kicker">查核方法</div><h1>每一種內容，查到什麼程度</h1><p class="lead">本刊以低人力、可追溯為原則：先篩日期、學段與重複，並依教育部《臺灣中小學教師與學生 AI 素養框架》判斷是否屬 AI 素養，再核原文；寧可少發，不為湊數放寬門檻。</p>';
  const main='<div class="grid-cards">'+
   '<section class="panel"><div class="label">每日短訊</div><h2>來源存在事實</h2><ul><li>只寫「誰在哪天發布了什麼」或來源原文的歸屬摘要</li><li>首次公開日須在 7 天內，附原文短摘錄與連結</li><li>AI 兩輪對照；未經逐則真人審稿</li><li>不含解讀、成效數字或對臺灣的建議</li></ul></section>'+
   '<section class="panel"><div class="label">週報與月報</div><h2>逐句對回原文</h2><ul><li>政策依 N1–N8、研究依 G1–G6 查核</li><li>首次公開日、學段、樣本與限制逐項核對</li><li>高風險主張（成效、因果、跨學段推論）一律不自動發布</li><li>本刊分析與原始發現分開標示</li></ul></section>'+

@@ -1,6 +1,7 @@
 "use strict";
 /* Offline, append-only source-discovery batches. No network, publishing or approval. */
 const fs=require("node:fs"),path=require("node:path");
+const {candidateScope}=require("./ai-literacy-scope.js");
 function day(s){if(typeof s!=="string"||!/^\d{4}-\d\d-\d\d$/.test(s))throw Error("invalid ISO date");const d=new Date(s+"T00:00:00Z");if(!Number.isFinite(+d)||d.toISOString().slice(0,10)!==s)throw Error("invalid calendar date");return d}
 function canonical(url){if(typeof url!=="string")return "";try{const u=new URL(url);if(u.protocol!=="https:"||u.username||u.password)return "";u.hash="";for(const k of [...u.searchParams.keys()])if(!/^(id|doc|document|file|article_id|paper_id)$/i.test(k))u.searchParams.delete(k);u.searchParams.sort();return u.origin.toLowerCase()+u.pathname.replace(/\/+$/,"").toLowerCase()+u.search}catch{return ""}}
 function key(c){return [c.doi&&"doi:"+String(c.doi).toLowerCase().replace(/^https?:\/\/doi.org\//,"").trim(),c.event_key&&"event:"+String(c.event_key).trim().toLowerCase(),canonical(c.source_url)&&"url:"+canonical(c.source_url)].filter(Boolean)}
@@ -28,13 +29,14 @@ function merge(worksheet,batch,history=[]){
    }
    continue
   }
+  const scope=candidateScope(c);
   const published=c.source_publication_date||"unknown";
   if(published!=="unknown"&&day(published)>today)throw Error("source publication date is in the future");
   if(published!=="unknown")day(published);
   const backfill=published!=="unknown"&&day(published)<start;
   const uncertain=published==="unknown";
   const nextId="W"+worksheet.period.start+"-A"+String(result.items.length+1).padStart(2,"0");
-  result.items.push({candidate_id:nextId,category:c.category||"news_policy",source_url:c.source_url,source_title:c.source_title,source_organization:c.source_organization||"unknown",source_publication_date:published,source_locator:c.source_locator,discovered_on:batch.searched_on,discovery_batch_id:batch.batch_id,first_disclosed_on:null,source_updates:[],original_excerpt:c.original_excerpt||"",source_checked:false,claim_text:c.claim_text||"",claim_class:"descriptive",risk_tier:"medium",scope_limitation:c.scope_limitation||"Source not independently verified; not for publication.",translation_reviewed:false,conflict_unresolved:null,decision:"hold",ai_crosscheck_status:"not_started",ai_crosscheck_passes:0,ai_crosscheck_record:"",...(c.doi?{doi:c.doi}:{}),...(c.event_key?{event_key:c.event_key}:{}),screening_note:(backfill?"30-day backfill/background: earlier than issue period; ":"")+(uncertain?"Original publication date unknown; ":"")+"Discovery only, hold pending first-disclosure check."});
+  result.items.push({candidate_id:nextId,category:c.category||"news_policy",source_url:c.source_url,source_title:c.source_title,source_organization:c.source_organization||"unknown",source_publication_date:published,source_locator:c.source_locator,discovered_on:batch.searched_on,discovery_batch_id:batch.batch_id,first_disclosed_on:null,source_updates:[],original_excerpt:c.original_excerpt||"",source_checked:false,claim_text:c.claim_text||"",claim_class:"descriptive",risk_tier:"medium",scope_limitation:c.scope_limitation||"Source not independently verified; not for publication.",translation_reviewed:false,conflict_unresolved:null,decision:"hold",ai_crosscheck_status:"not_started",ai_crosscheck_passes:0,ai_crosscheck_record:"",...scope,...(c.doi?{doi:c.doi}:{}),...(c.event_key?{event_key:c.event_key}:{}),screening_note:(backfill?"30-day backfill/background: earlier than issue period; ":"")+(uncertain?"Original publication date unknown; ":"")+"Discovery only, hold pending first-disclosure check."});
   keys.forEach(k=>seen.add(k));keys.forEach(k=>existing.add(k));added.push(nextId);
  }
  const searchRuns=result.search_runs||[];

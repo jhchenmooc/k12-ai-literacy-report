@@ -3,6 +3,7 @@
 const fs=require("node:fs"),path=require("node:path");
 const {check}=require("./validate-claims.js");
 const {sourceTrace}=require("./validate-source-trace.js");
+const {publicationScopeErrors}=require("./ai-literacy-scope.js");
 const LEGACY=new Set(["weekly/2026-09-29_10-08/index.html","monthly/2026-09/index.html"]);
 function scan(root,folder){
  const base=path.join(root,folder);if(!fs.existsSync(base))return [];
@@ -165,9 +166,12 @@ function validate(root){
     for(const prior of matchingCumulativeCandidates(root,c.source_url)){
      if(prior.decision!=="publish"||prior.source_checked!==true||prior.first_disclosed_on!==c.first_disclosed_on)
       errors.push(q+" "+c.claim_id+": daily claim contradicts held/unverified cumulative candidate "+prior.candidate_id);
+     if(prior.ai_lit_class!==undefined&&prior.ai_lit_class!==c.ai_lit_class)
+      errors.push(q+" "+c.claim_id+": AI literacy scope differs from cumulative candidate "+prior.candidate_id);
     }
    }
    if(daily&&!dailySourceLink(html,c))errors.push(q+" "+c.claim_id+": original source URL must be visible as a direct anchor");
+   errors.push(...publicationScopeErrors(c).map(e=>q+" "+c.claim_id+": "+e));
    const result=check(c);
    if(!result.allow)errors.push(q+" "+c.claim_id+": "+result.reasons.join("; "));
    errors.push(...sourceTrace(root,c,{requireBibliographicSnapshot:daily}).map(e=>q+" "+c.claim_id+": "+e));
