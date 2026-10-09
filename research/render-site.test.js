@@ -13,6 +13,7 @@ test("generated pages contain no scripts, inline handlers or unsafe URL schemes"
   assert.ok(!/<\/?(script|iframe|object|embed|form)\b/i.test(text),rel);
   assert.ok(!/\son[a-z]+\s*=/i.test(text),rel);
   assert.ok(!/(href|src)\s*=\s*["']\s*(javascript|data|vbscript|file):/i.test(text),rel);
+  if(rel.endsWith(".html"))assert.ok(text.includes('assets/favicon.svg" type="image/svg+xml"'),rel+" must link the site icon");
  }
 });
 
