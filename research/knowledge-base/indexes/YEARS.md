@@ -25,6 +25,16 @@
 | KB-2025-0001 — [2024 Review of the Australian Framework for Generative Artificial Intelligence in Schools](https://www.education.gov.au/schooling/announcements/2024-review-australian-framework-generative-artificial-intelligence-schools) | policy_review | 2025-06-17 | bibliographic_checked |
 | KB-2025-0002 — [Fostering Transversal Skills Through Open Schooling Supported by the CARE-KNOW-DO Pedagogical Model and the UNESCO AI Competencies Framework](https://link.springer.com/article/10.1007/s40593-025-00458-w) | journal_article | 2025-03-05 | bibliographic_checked |
 | KB-2025-0003 — [A Case Study of Integrating AI Literacy Education in a Biology Class](https://link.springer.com/article/10.1007/s40593-025-00476-8) | journal_article | 2025-04-07 | bibliographic_checked |
+| KB-2025-0004 — [ReVEAL model and its application to revealing viewpoints on educational approaches to learning about data and AI](https://www.tandfonline.com/doi/abs/10.1080/08993408.2025.2516957) | journal_article | 2025-06-30 | bibliographic_checked |
+| KB-2025-0005 — [Barriers to integrating artificial intelligence education: implications from five early adopters in South Korea](https://www.tandfonline.com/doi/abs/10.1080/08993408.2025.2565199) | journal_article | 2025-09-29 | bibliographic_checked |
+| KB-2025-0008 — [AI Literacy in K-12 and Higher Education in the Wake of Generative AI: An Integrative Review](https://dl.acm.org/doi/10.1145/3702652.3744217) | conference_paper | 2025-08-02 | bibliographic_checked |
+
+## 2025｜issue_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2025-0006 — [Toward Teacher-Centered AI Design: Exploring the Role of Pedagogical Values and Contextual Factors in K-12 Teachers' Perceptions of Responsible AI](https://repository.isls.org/handle/1/11843) | conference_paper | 未知 | bibliographic_checked |
+| KB-2025-0007 — [Utilizing LLMs to Support Teacher Understanding of AI Literacy](https://repository.isls.org/handle/1/11944) | conference_paper | 未知 | bibliographic_checked |
 
 ## 2026｜first_publication
 
@@ -36,6 +46,13 @@
 | KB-2026-0013 — [How to Assess AI Literacy: Misalignment Between Self-Reported and Objective-Based Measures](https://doi.org/10.1145/3785022.3785088) | conference_paper | 2026-04-26 | bibliographic_checked |
 | KB-2026-0014 — [Exploring AI literacy, reliance, and ethical practices of secondary level students in using generative AI](https://link.springer.com/article/10.1007/s44217-026-01890-3) | journal_article | 2026-07-09 | bibliographic_checked |
 | KB-2026-0015 — [Perspectives of secondary school students toward using generative AI as a summative assessment tool of social studies courses in Thailand](https://link.springer.com/article/10.1007/s44217-026-01565-z) | journal_article | 2026-05-05 | bibliographic_checked |
+| KB-2026-0017 — [Using Design Projects to Understand Youths’ Experiences with AI](https://dl.acm.org/doi/10.1145/3816694) | journal_article | 2026-05-25 | bibliographic_checked |
+
+## 2026｜issue_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2026-0016 — [Key elements in student AI literacy development: Insights from psychometric network analyses](https://doi.org/10.1016/j.chbr.2026.101041) | journal_article | 未知 | bibliographic_checked |
 
 ## unknown｜unknown
 

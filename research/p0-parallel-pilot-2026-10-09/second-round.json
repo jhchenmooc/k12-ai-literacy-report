@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "task": "independent-second-round-original-source-check",
+  "started_at_utc": "2026-10-09T13:45:15Z",
+  "ended_at_utc": "2026-10-09T13:48:15Z",
+  "independence": "Did not read group-a/b/c reports or conclusions. Received DOI identifiers and risk propositions only.",
+  "search_total_hits": "unknown",
+  "retrieval_note": "All attempted publisher direct opens returned Internal Error. Original publisher/domain-indexed extracts were independently inspected; arXiv submission history opened successfully. No record is certified as a complete original full-text read. Indexed extracts must remain partial.",
+  "exact_queries": [
+    "\"10.1016/j.chbr.2026.101041\"",
+    "\"10.1016/j.chbr.2025.100833\"",
+    "\"10.1145/3816694\"",
+    "\"10.1145/3702652.3744217\"",
+    "\"10.1080/08993408.2025.2565199\"",
+    "site.sciencedirect.com \"100833\" \"Participants\"",
+    "site.sciencedirect.com \"100833\" \"Available online\"",
+    "site.tandfonline.com/doi/full/10.1080/08993408.2025.2565199 \"2021\"",
+    "site.dl.acm.org/doi/10.1145/3816694 \"Publication History\"",
+    "\"Integrating AI literacy into the TAM-TPB\" \"ScienceDirect\"",
+    "\"AI Literacy in K-12 and Higher Education in the Wake\" arxiv",
+    "\"10.1016/j.chb.2025.108779\"",
+    "\"Barriers to integrating artificial intelligence education\" \"data\" \"2021\"",
+    "\"Using Design Projects to Understand\" \"Accepted\" \"2026\"",
+    "\"Integrating AI literacy into the TAM-TPB\" \"Available online\"",
+    "\"Barriers to integrating artificial intelligence education\" \"2022\" \"collected\"",
+    "\"Key elements in student AI literacy development\" \"limitation\"",
+    "\"10.22318/cscl2025.817482\"",
+    "\"10.22318/cscl2025.107218\"",
+    "\"10.1145/3641555.3705158\"",
+    "\"10.1145/3724363.3729069\"",
+    "\"Key elements in student AI literacy development\" \"causal\"",
+    "\"From Teachers to Students: Evaluating Canvas City\" \"ACM\"",
+    "\"Day of AI Australia\" \"ACM\" \"teacher\"",
+    "\"Barriers to integrating artificial intelligence education\" \"2023\" \"interviews\"",
+    "\"Utilizing LLMs to Support Teacher Understanding of AI Literacy\" \"Poster\"",
+    "\"From Teachers to Students\" \"Canvas City\" \"teachers\" site:dl.acm.org",
+    "\"Day of AI Australia\" site:dl.acm.org/doi/10.1145/3641555.3705158",
+    "\"Integrating AI literacy into the TAM-TPB\" \"2025\" \"November\""
+  ],
+  "records": [
+    {
+      "doi": "10.1016/j.chbr.2026.101041",
+      "status": "partial",
+      "official_url": "https://doi.org/10.1016/j.chbr.2026.101041",
+      "locators": [
+        "Abstract",
+        "3.1 Backgrounds and participants",
+        "3.3 Analytic strategy",
+        "5.2 Crucial effects"
+      ],
+      "verified": "Publisher-indexed original reports 2,573 Hong Kong Grades 7–9 students, tests in 2023 and 2024, cross-sectional and cross-lagged networks; the source itself uses causal terminology for CLPN.",
+      "rejected_claim": "Network edge direction or observed score change establishes causal curriculum efficacy.",
+      "reason": "Independent methodological judgment: observational two-wave network association lacks a verified controlled intervention contrast; authors' causal vocabulary alone does not establish instructional treatment effects.",
+      "unknown": [
+        "earliest public date",
+        "full original text and supplements independently read"
+      ],
+      "publication_hold": true
+    },
+    {
+      "doi": "10.1016/j.chbr.2025.100833",
+      "status": "partial",
+      "official_url": "https://www.sciencedirect.com/science/article/pii/S2451958825002489",
+      "locators": [
+        "Abstract",
+        "Highlights",
+        "Volume header"
+      ],
+      "verified": "Official indexed abstract describes MASEM synthesizing 166 studies and academic-stage moderation, with both K-12 and higher-education implications. It estimates intention to adopt educational AI.",
+      "rejected_claim": "K-12-only evidence proves teaching AI literacy causes learning gains.",
+      "reason": "Mixed academic stages and modeled adoption intention cannot be equated with a K-12 learning-effect trial.",
+      "unknown": [
+        "earliest public date",
+        "complete included-study composition",
+        "full original text"
+      ],
+      "publication_hold": true
+    },
+    {
+      "doi": "10.1145/3816694",
+      "status": "partial",
+      "official_url": "https://doi.org/10.1145/3816694",
+      "locators": [
+        "Publication History",
+        "Abstract Participants and Study Method",
+        "3.1 Project Context",
+        "Introduction"
+      ],
+      "verified": "Official indexed history: Online AM 2026-05-25, Published 2026-07-15, accepted 2026-04-30. Dataset: 301 student projects; twelve middle-school teachers plus a high-school after-school instructor; thematic analysis, fall 2021–spring 2024. Teachers chose modalities.",
+      "rejected_claim": "Randomized causal evidence shows low-tech design improves student AI literacy more than high-tech design.",
+      "reason": "Teacher-selected modalities and qualitative project analysis do not provide a randomized modality contrast. 301 projects are not verified as 301 middle-school-only learners.",
+      "unknown": [
+        "earlier author/preprint release before Online AM",
+        "complete original text directly retrieved"
+      ],
+      "publication_hold": true
+    },
+    {
+      "doi": "10.1145/3702652.3744217",
+      "status": "partial",
+      "official_url": "https://doi.org/10.1145/3702652.3744217",
+      "additional_url": "https://arxiv.org/abs/2503.00079",
+      "locators": [
+        "ACM Publication History",
+        "ACM Abstract and 3 Integrative Review Methodology",
+        "arXiv Submission history lines 26–31"
+      ],
+      "verified": "ACM official indexed publication: 2025-08-02. Author-deposited arXiv v1: 2025-02-27 23:32:03 UTC, v2 March 4, v3 March 28. Integrative review of 124 empirical/theoretical studies, mixed K-12/post-secondary, 2020–July 2024 search window.",
+      "rejected_claim": "August 2025 is the first public disclosure of this work; review establishes K-12-specific causal instructional effects.",
+      "reason": "Earlier author preprint is documented; mixed-stage integrative review is not a causal K-12 effect estimate.",
+      "unknown": [
+        "complete publisher original directly retrieved",
+        "whether an even earlier public version exists"
+      ],
+      "publication_hold": true
+    },
+    {
+      "doi": "10.1080/08993408.2025.2565199",
+      "status": "partial",
+      "official_url": "https://www.tandfonline.com/doi/abs/10.1080/08993408.2025.2565199",
+      "additional_url": "https://www.tandfonline.com/doi/full/10.1080/08993408.2025.2565199",
+      "locators": [
+        "header Published online",
+        "Methodology",
+        "Research context and participants",
+        "Data collection"
+      ],
+      "verified": "Official indexed original says data collection Fall 2022; five male public-school AI education-core teachers, purposive/peer-recommended case selection; virtual Korean semi-structured interviews, open coding and thematic analysis. Published online 2025-09-29.",
+      "rejected_claim": "These interviews demonstrate South Korea's current October 2026 policy implementation or population-wide teacher conditions.",
+      "reason": "Historic qualitative cases cannot substantiate current policy status or national prevalence; requires separate current official policy verification.",
+      "unknown": [
+        "complete original directly retrieved",
+        "earlier preprint release"
+      ],
+      "publication_hold": true
+    },
+    {
+      "doi": "10.1016/j.chb.2025.108779",
+      "status": "partial",
+      "official_url": "https://aaltodoc.aalto.fi/server/api/core/bitstreams/37e73890-d0cf-48fe-8b3a-fbb1de9abd85/content",
+      "additional_url": "https://research.aalto.fi/en/publications/ai-makes-you-smarter-but-none-the-wiser-the-disconnect-between-pe/",
+      "locators": [
+        "legal institutional published-version first page",
+        "Aalto citation export"
+      ],
+      "verified": "Author institution's indexed final published version prints Available online 9 October 2025; institutional citation export also lists Epub October 27, 2025 and February 2026 issue.",
+      "rejected_claim": "Treat February 2026 issue date or October 27 export as confirmed first public disclosure.",
+      "reason": "Earliest visible original-version date is October 9; export conflict must remain explicit pending publisher history verification.",
+      "unknown": [
+        "publisher-direct confirmation of first online date",
+        "earlier preprint existence"
+      ],
+      "date_conflict": "2025-10-09 original-version footer versus 2025-10-27 institutional citation export",
+      "publication_hold": true
+    },
+    {
+      "doi": "10.22318/cscl2025.817482",
+      "status": "partial",
+      "official_url": "https://repository.isls.org/handle/1/11843",
+      "locators": [
+        "Description",
+        "Abstract",
+        "URI"
+      ],
+      "verified": "Formal ISLS repository indexed item labels Long Paper; original abstract describes survey of 98 K-12 teachers and responsible-AI/pedagogical-value associations.",
+      "rejected_claim": "Survey establishes student learning effects.",
+      "reason": "Teacher perception associations are not learner efficacy measurements.",
+      "unknown": [
+        "precise first-public day",
+        "full paper directly read"
+      ],
+      "publication_hold": true
+    },
+    {
+      "doi": "10.22318/cscl2025.107218",
+      "status": "partial",
+      "official_url": "https://repository.isls.org/handle/1/11944",
+      "locators": [
+        "Description",
+        "Citation",
+        "Abstract"
+      ],
+      "verified": "Formal ISLS indexed item labels Poster, CSCL 2025 pp.646–648, work-in-progress exploration of LLM-generated reports to support teachers' AI literacy.",
+      "rejected_claim": "Mature controlled student-effect evidence.",
+      "reason": "Poster abstract describes teacher support work in progress.",
+      "unknown": [
+        "precise first-public day",
+        "full original directly read",
+        "sample and effect measures"
+      ],
+      "publication_hold": true
+    }
+  ],
+  "unresolved_optional": [
+    {
+      "doi": "10.1145/3641555.3705158",
+      "status": "unknown",
+      "reason": "Exact DOI/title searches yielded secondary listings but no readable original publisher text; no teacher-feedback/student-effect claim adopted."
+    },
+    {
+      "doi": "10.1145/3724363.3729069",
+      "status": "unknown",
+      "reason": "Exact DOI/title searches located institutional item, but no original text read within timebox; actual teacher stages and effects unknown."
+    }
+  ],
+  "disposition": "All eight checked records retain publication hold; optional two unknown. No historical bibliography is current-week news. No publication action authorized."
+}

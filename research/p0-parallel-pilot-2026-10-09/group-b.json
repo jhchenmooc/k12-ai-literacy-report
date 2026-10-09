@@ -1,0 +1,252 @@
+{
+  "group_id": "B",
+  "assigned_venues": [
+    "J12",
+    "J13",
+    "J14"
+  ],
+  "started_at": "2026-10-09T13:39:59Z",
+  "finished_at": "2026-10-09T13:41:38Z",
+  "timing_note": "UTC observations bracket source investigation; initial handoff/skill reading before first timestamp and artifact serialization afterward are not included.",
+  "searched_on": "2026-10-09",
+  "scope": {
+    "from": "2025-01-01",
+    "to": "2026-10-09",
+    "method": "Public web-index source-scoped queries; primary publisher metadata/abstract and selected methods sections. Date filtering performed at item screening, not an exhaustive venue database search.",
+    "publication_use": "Historical bibliography only; nine candidates remain hold; no automated publication."
+  },
+  "exact_queries": [
+    "site:dl.acm.org/doi \"Transactions on Computing Education\" \"2025\" \"AI literacy\"",
+    "site:dl.acm.org/doi \"Transactions on Computing Education\" \"2026\" \"artificial intelligence\" school",
+    "site:learning-analytics.info/index.php/JLA/article/view/9127",
+    "site:tandfonline.com/doi 08993408.2025.2565199",
+    "site:dl.acm.org \"toce\" \"AI literacy\"",
+    "\"ACM Transactions on Computing Education\" \"2025\" \"K-12\"",
+    "\"ACM Transactions on Computing Education\" \"2026\" \"Generative AI\"",
+    "site:tandfonline.com \"08993408.2025.2516957\"",
+    "site:tandfonline.com \"08993408.2025.2565199\" interviews",
+    "site:learning-analytics.info \"9127\" \"Published\"",
+    "site:dl.acm.org/doi/10.1145/3816694 \"Methods\" \"students\"",
+    "site:dl.acm.org/doi/10.1145/3816694 \"Participants\"",
+    "site:dl.acm.org/doi/10.1145/3816694 \"Online AM\"",
+    "site:learning-analytics.info/index.php/JLA/article/view/9127 \"2026-03-30\"",
+    "\"Using Design Projects to Understand Youths’ Experiences with AI\"",
+    "\"3816694\" \"Methods\"",
+    "\"3816694\" \"participants\"",
+    "site:dl.acm.org \"Using Design Projects\" \"Methods\""
+  ],
+  "venues": [
+    {
+      "venue_id": "J12",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "hit_total": "unknown",
+      "results_screened": 2,
+      "new_samples": 0,
+      "purpose": "Resolve existing article 9127 publication date; re-use two earlier samples rather than claim new discovery.",
+      "limitations": "Two earlier examples only; PDF/full-text reading not completed; earliest preprint/early-access history beyond visible metadata unknown."
+    },
+    {
+      "venue_id": "J13",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "hit_total": "unknown",
+      "results_screened": 2,
+      "new_samples": 0,
+      "purpose": "Resolve existing samples' access/method and issue distinctions.",
+      "limitations": "Direct full/abs/PDF open returned Internal Error; publisher-indexed text provided selected methods and metadata. Not complete original-text reading."
+    },
+    {
+      "venue_id": "J14",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "hit_total": "unknown",
+      "results_screened": 2,
+      "new_samples": 2,
+      "purpose": "First individually attributable official TOCE samples in this pilot.",
+      "limitations": "Direct ACM/DOI opens returned Internal Error; publisher-indexed metadata/selected text readable. Full text not completely checked."
+    }
+  ],
+  "items": [
+    {
+      "venue_id": "J12",
+      "doi": "10.18608/jla.2026.9743",
+      "title": "Advancing 21st-Century Professional Competencies with Learning Analytics in the Age of Generative AI",
+      "official_url": "https://learning-analytics.info/index.php/JLA/article/view/9743",
+      "dates": {
+        "first_public_observed": "2026-03-30",
+        "first_public_complete_history": "unknown",
+        "published": "2026-03-30",
+        "issue": "2026-03-30",
+        "online_am": "unknown"
+      },
+      "date_evidence": "Article Published field; issue 13(1) separately dated 2026-03-30 at https://www.learning-analytics.info/index.php/JLA/issue/view/517",
+      "access": "publisher landing page/abstract read; full PDF not read",
+      "school_level": "higher education / workforce readiness",
+      "method": "Editorial synthesis of special issue; no new K-12 intervention.",
+      "decision": "exclude_direct_k12",
+      "reasons": [
+        "Not K-12 student evidence",
+        "Editorial rather than intervention"
+      ],
+      "risk_cautions": [
+        "No causal learning claim",
+        "Published metadata is not exhaustive earliest disclosure proof"
+      ],
+      "previous_audit_sample": true
+    },
+    {
+      "venue_id": "J12",
+      "doi": "10.18608/jla.2026.9127",
+      "title": "Evaluating 21st-Century Competencies in Postsecondary Curricula with Large Language Models: Performance Benchmarking and Reasoning-Based Prompting Strategies",
+      "official_url": "https://learning-analytics.info/index.php/JLA/article/view/9127",
+      "dates": {
+        "first_public_observed": "2026-02-25",
+        "first_public_complete_history": "unknown",
+        "published": "2026-02-25",
+        "issue": "2026-03-30",
+        "online_am": "unknown"
+      },
+      "date_evidence": "Article Published field shows 2026-02-25; issue 13(1) separately Published 2026-03-30. Corrects previous audit's unknown item day, not an issue-day substitution.",
+      "access": "publisher landing page/abstract read; PDF not read",
+      "school_level": "postsecondary curriculum documents",
+      "method": "LLM curriculum mapping benchmark using manually annotated alignment scores; no K-12 instructional experiment.",
+      "decision": "exclude_direct_k12",
+      "reasons": [
+        "Postsecondary corpus",
+        "Model benchmarking is not student literacy improvement"
+      ],
+      "risk_cautions": [
+        "Article/issue date distinction requires independent second check"
+      ],
+      "previous_audit_sample": true
+    },
+    {
+      "venue_id": "J13",
+      "doi": "10.1080/08993408.2025.2516957",
+      "title": "ReVEAL model and its application to revealing viewpoints on educational approaches to learning about data and AI",
+      "official_url": "https://www.tandfonline.com/doi/abs/10.1080/08993408.2025.2516957",
+      "dates": {
+        "first_public_observed": "2025-06-30",
+        "first_public_complete_history": "unknown",
+        "published_online": "2025-06-30",
+        "issue": "2026",
+        "issue_number": "36(3)",
+        "online_am": "unknown"
+      },
+      "date_evidence": "Publisher indexed article metadata and official PDF cover both Published online 30 Jun 2025; metadata Volume 36 Issue 3 (2026). Issue day unknown.",
+      "access": "Direct full open Internal Error; publisher-indexed abstract and selected text accessible, complete full text/PDF not read",
+      "school_level": "K-12 conceptual computing education",
+      "method": "Theory-based model development and literature comparison, labelled Review Article.",
+      "decision": "include_bibliographic_background",
+      "reasons": [
+        "Direct K-12 AI/data literacy conceptual relevance"
+      ],
+      "risk_cautions": [
+        "No empirical causal efficacy",
+        "2026 issue is not first publication"
+      ],
+      "previous_audit_sample": true
+    },
+    {
+      "venue_id": "J13",
+      "doi": "10.1080/08993408.2025.2565199",
+      "title": "Barriers to integrating artificial intelligence education: implications from five early adopters in South Korea",
+      "official_url": "https://www.tandfonline.com/doi/abs/10.1080/08993408.2025.2565199",
+      "dates": {
+        "first_public_observed": "2025-09-29",
+        "first_public_complete_history": "unknown",
+        "published_online": "2025-09-29",
+        "issue": "2026",
+        "issue_number": "36(2)",
+        "data_collection": "Fall 2022",
+        "online_am": "unknown"
+      },
+      "date_evidence": "Publisher indexed metadata Published online 29 Sep 2025; Volume 36 Issue 2 (2026); selected Methodology says Fall 2022 interviews.",
+      "access": "Direct full/abs/PDF opens Internal Error; official publisher-indexed methods/date text accessible, complete original text not read",
+      "school_level": "K-12 teachers, South Korea (including elementary)",
+      "method": "Qualitative case study; purposive/peer recommendation sample of five male teachers, semi-structured interviews, open coding/thematic analysis.",
+      "decision": "include_bibliographic_background",
+      "reasons": [
+        "Direct K-12 AI teacher implementation evidence"
+      ],
+      "risk_cautions": [
+        "Not nationally representative",
+        "2022 interviews do not verify current Korean policy",
+        "No causal literacy gain"
+      ],
+      "previous_audit_sample": true
+    },
+    {
+      "venue_id": "J14",
+      "doi": "10.1145/3816694",
+      "title": "Using Design Projects to Understand Youths’ Experiences with AI",
+      "official_url": "https://dl.acm.org/doi/10.1145/3816694",
+      "dates": {
+        "first_public_observed": "2026-05-25",
+        "first_public_complete_history": "unknown",
+        "online_am": "2026-05-25",
+        "published": "2026-07-15",
+        "issue": "2026-12",
+        "issue_number": "26(4)",
+        "data_collection": "Fall 2021 to Spring 2024"
+      },
+      "date_evidence": "Official ACM indexed Publication History: Online AM 25 May 2026; Published 15 July 2026; issue December 2026. No earlier preprint search certification.",
+      "access": "Direct ACM/DOI open Internal Error; official ACM indexed abstract/Methods/limitations/publication history readable; complete full text not checked",
+      "school_level": "Middle school and high-school after-school program, southeastern US state",
+      "method": "Thematic analysis of 301 student design projects plus teacher/student interviews and observations; twelve middle-school teachers and one high-school program instructor.",
+      "decision": "include_bibliographic_background",
+      "reasons": [
+        "Direct youth AI education and curriculum evidence"
+      ],
+      "risk_cautions": [
+        "Online AM predates published/issue dates",
+        "301 projects are not 301 high-school participants",
+        "Qualitative observational design cannot establish low-tech causal superiority",
+        "Single-state/sample limits"
+      ],
+      "previous_audit_sample": false
+    },
+    {
+      "venue_id": "J14",
+      "doi": "10.1145/3779296",
+      "title": "LLMs Integration in Software Engineering Team Projects: Roles, Impact, and a Pedagogical Design Space for AI Tools in Computing Education",
+      "official_url": "https://dl.acm.org/doi/10.1145/3779296",
+      "dates": {
+        "first_public_observed": "2025-12-04",
+        "first_public_complete_history": "unknown",
+        "online_am": "2025-12-04",
+        "published": "2026-01-17",
+        "issue": "2026-06",
+        "issue_number": "26(2)"
+      },
+      "date_evidence": "Official ACM indexed Publication History: Online AM 04 December 2025; Published 17 January 2026; issue June 2026.",
+      "access": "Direct ACM/DOI open Internal Error; publisher indexed abstract and publication history readable; full text not read",
+      "school_level": "Second-year undergraduate software engineering",
+      "method": "Semester-long team project qualitative survey/interview study.",
+      "decision": "exclude_direct_k12",
+      "reasons": [
+        "Undergraduate population",
+        "GenAI teamwork study does not directly test K-12 AI literacy"
+      ],
+      "risk_cautions": [
+        "First available accepted manuscript is 2025, not 2026 issue date",
+        "No K-12 efficacy extrapolation"
+      ],
+      "previous_audit_sample": false
+    }
+  ],
+  "dedup": {
+    "within_group_duplicate_doi_count": 0,
+    "previous_audit_overlap_count": 4,
+    "existing_master_doi_overlap_count": 0,
+    "master_checked": "research/knowledge-base/data/records.csv 24 rows at initial read; central integrator must recheck merged state"
+  },
+  "independent_second_round_needed": [
+    "10.18608/jla.2026.9127: item day vs issue date",
+    "10.1145/3816694: Online AM/Published/future issue distinction and observational claims",
+    "10.1145/3779296: 2025 AM vs 2026 Published",
+    "10.1080/08993408.2025.2565199: 2022 data vs current policy and sample limits"
+  ],
+  "write_policy": "Only group-b JSON/Markdown staging files written. No CSV, handoff, candidates, claims, publication files modified."
+}
