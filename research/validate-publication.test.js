@@ -174,3 +174,36 @@ test("registered daily source facts refuse inline handlers outside main",t=>{
  fs.writeFileSync(path.join(d,"daily","2026-10-10","index.html"),'<html><nav><a onclick="run()">link</a></nav><main><p data-claim-id="C1">'+dailyLow.claim_text+'</p></main></html>');
  assert.equal(validate(d).ok,false);
 });
+
+test("daily bibliography requires actual pinned source checksum",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ dailyFixture(d,{...dailyLow,evidence_sha256:""});
+ const out=validate(d);assert.equal(out.ok,false);
+ assert.ok(out.errors.some(x=>x.includes("snapshot SHA256")));
+});
+test("older-than-seven-days bibliographic data cannot masquerade as daily breaking news",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const c={...dailyLow,publication_date:"2026-09-29",first_disclosed_on:"2026-09-29"};
+ c.claim_text="來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-09-29。";
+ dailyFixture(d,c);
+ const out=validate(d);assert.equal(out.ok,false);
+ assert.ok(out.errors.some(x=>x.includes("recent 7-day")));
+});
+test("scriptable https-looking claim anchor is blocked on the full static page",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ issue(d,[claim]);
+ updateHtml(d,'<html><main><p data-claim-id="C1"><a href="javascript:alert(1)">合成案例：某機構公告</a></p></main></html>');
+ assert.ok(validate(d).errors.some(x=>x.includes("unsafe URL scheme")));
+});
+test("HTML numeric entity obfuscation of unsafe href is blocked",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ issue(d,[claim]);
+ updateHtml(d,'<html><main><p data-claim-id="C1"><a href="&#x6a;avascript:alert(1)">合成案例：某機構公告</a></p></main></html>');
+ assert.ok(validate(d).errors.some(x=>x.includes("unsafe URL scheme")));
+});
+test("safe HTTPS static claim anchor is still permitted",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ issue(d,[claim]);
+ updateHtml(d,'<html><main><p data-claim-id="C1"><a href="https://example.org/official">合成案例：某機構公告</a></p></main></html>');
+ assert.equal(validate(d).ok,true);
+});

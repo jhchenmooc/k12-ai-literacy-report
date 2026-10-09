@@ -21,7 +21,7 @@
 5. **嚴守高風險規則**：目前 `validate-claims.js` 對 `risk_tier=high` **一律阻擋自動發布**；即使 N-V3/V3 或真人複核也不是 CI 放行例外。不能改風險標籤來繞過。
 6. **舊刊編輯結案但未認證**：2026/09 月報與 9/29–10/8 創刊特刊已作重點追溯檢查、公開勘誤；仍保留 legacy／非獨立認證警示，不應重建全篇認證以延誤新刊。
 7. **Google Forms 暫停**：目前只使用 GitHub Issues 讀者回饋，勿重啟 Google Forms 或增加匿名表單；[回饋 SOP](reader-feedback-policy.md) 與 [啟用清單](no-login-feedback-launch-checklist.md) 的歷史狀態說明已對齊。
-8. **Public Repo 保持現況**：未核實草稿、來源短摘錄只在符合公開／版權／隱私條件下提交；不得放入個資、秘密、未授權全文或機密政策資料。Pages 從 Repo 根目錄 `.` 打包。
+8. **Public Repo 保持現況**：未核實草稿、來源短摘錄只在符合公開／版權／隱私條件下提交；不得放入個資、秘密、未授權全文或機密政策資料。Pages 現從 `_public_site` 只打包公開網站目錄，Public GitHub 原始儲存庫仍公開。
 
 ## 2. 主控文件與檔案所在（以實際 main 為準）
 
@@ -55,12 +55,12 @@
 | 完整主控 SOP 與 README 入口 | [PR #31](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/31)、[成功 Run](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37899084578) | 主要內容、連結與程式對齊已檢查；不等於真實新刊端到端驗收 |
 | 歷史 Pages 部署已通過 | [部署驗收紀錄](pages-deployment-acceptance-2026-10-09.md) | 成功部署不代表每條來源與文字獲真實性認證 |
 
-**最近實際確認**：GitHub Actions [Run #37900505465](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37900505465)（主分支 commit `1dadc188`）整體成功；請依 GitHub job 紀錄核對 verify／deploy。這證明該次建置與部署成功，並不證明之後不存在新的改動。
+**歷史部署紀錄（非當前最新）**：GitHub Actions [Run #37900505465](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37900505465)（主分支 commit `1dadc188`）整體成功；請依 GitHub job 紀錄核對 verify／deploy。這證明該次建置與部署成功，並不證明之後不存在新的改動。
 
 ## 4. 第一期間編輯進度：不是正式出刊
 
 - 報導區間：**2026-10-09（週五）至 2026-10-15（週四）**；預定出刊 **2026-10-16**。
-- 候選 **7 項 A01–A07**，`decision:"hold"` 與 `source_checked:false` 均維持；`ready_to_publish=0`，`verified_for_publication=0`。
+- 候選 **9 項 A01–A09**（A08–A09 為跨期學術背景），`decision:"hold"` 與 `source_checked:false` 均維持；`ready_to_publish=0`，`verified_for_publication=0`。
 - A01 賓州州立青少年 AI 查證活動：活動日 10/9；首發公告日不明，非政策成效研究。
 - A02+A03 香港教育局小／中學教師課程：官方課表日 10/9；應合併觀察，首發日期不明。
 - A04 UNESCO 技職活動：前期公告且偏 TVET，不列當期 K–12 新政策。
@@ -132,3 +132,9 @@
 ## 2026-10-09 v1.6 自檢修復狀態（現行說明）
 
 舊文「daily 一律禁止」及「需要真人逐日 Review」為歷史 v1.5 決策，不再代表現行低風險、來源歸屬摘要通道。現行無逐日真人審稿，但需有可追溯原文、首次公開日期、實際兩輪交叉核對與內容限制。此修復分支補上每日首發日期必填、摘要原文片段、重複來源待查記錄、重要 URL 參數保留、跨日完成核查待審，以及回歸測試。**現有正式期別依舊 0、9 筆候選均 hold、未啟用自動搜尋和出刊**。實際 GitHub main 與部署驗收以 PR 合併之後最新 Actions 為準。請勿將測試旗標當作原文認證；本修復不保證所有語意錯誤皆會自動攔截。
+
+### v1.6 第三輪多角度自檢：提交與接手提醒（2026-10-09）
+
+本輪核查基準為 main `2f2b87a8682440340bc279034a4177c1e43edd81`。發現：正式 daily 的書目型內容原可跳過來源快照驗證、HTML 危險 href 未完整攔截、匯入候選無併發鎖、匯入時會把既有 ready/verified 數量清零、搜尋批次固定宣稱 30 天查回、以及跨週重複 batch ID 等風險。本修復分支追加 fail-closed 證據檢核、排他鎖、URL/日期反例、可信資料狀態保護和更誠實的回查資訊。最終修復狀態須以該 PR 最後 HEAD 的 verify 和合併後 main deploy 為準，不能以早期歷史 Actions 綠燈或此段文字宣稱已驗收。
+
+持續不可宣稱的事項：正式新期別目前 0、九筆候選仍 hold、沒有每日自動網路搜尋或自動出刊；來源中文摘要語意一致、首次公開日及真實官方頁面，需要實際來源核證，光看 JSON/CI 無法證明。
