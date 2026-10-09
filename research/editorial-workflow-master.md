@@ -184,3 +184,7 @@ Pages 目前從 Repo 根目錄 `.` 上傳，Public Repo 的 `research/`、`publi
 使用者已同意以 AI 整理、無逐日真人審稿方式，**僅對外發布低風險來源書目／公告存在事實**；不是正式政策解釋、研究結果、成效數字或臺灣政策建議。每期 `publication/issues.json` 的 daily 項目必須明示 `publication_mode: ai_low_risk_source_facts`；日報主張限定 `bibliographic`／`low`，`daily_fact_kind` 為 `official_notice` 或 `research_bibliography`，正文明確採固定格式「來源機構：…；資料標題：…；來源刊登日：YYYY-MM-DD。」。原始來源、日期、主張及衝突需核實，仍須符合現有 claims／HTML／CI 閘門。自填旗標與字串比對**不等於真正的來源認證**；發布頁須顯示 AI 輔助整理、無真人逐則審稿，留有勘誤方式，重大疑慮一律 hold。原新聞文字不能只是挑選高風險敘事貼入標題；若真實來源或首次公開日期不明，應不刊。
 
 這是最小技術通道，不等於已啟用每天搜尋、排程、自動建 PR 或自動合併。`weekly/`／`monthly/` 仍維持原有核查與編輯規範。人工無力審稿時，週報、月報保持待審而非冒稱真人已核准。
+
+## v1.6 日報來源歸屬型摘要（無每日真人逐則審稿）
+
+每日快訊可引用**官方原始文件**或**學術出版者原文摘要**，使用 `daily_fact_kind: official_attributed_summary` 或 `research_abstract_attributed_summary`。需 `claim_class: descriptive`、`risk_tier: medium`、既有 N-V2／V2、`scope_checked:true`、兩次原文查核一致且有實際紀錄、原始短摘錄與完整來源快照雜湊、`translation_reviewed:true`、無未解衝突。出版正文固定顯示機構／標題／來源日期後，再以「官方文件表示」或「作者摘要報告」歸屬來源，結尾揭露「AI 輔助摘要，未經真人逐則審稿；請參閱原文」。`attributed_summary` 15–180 字，拒絕部分明顯高風險詞；**字串、雜湊、旗標和 AI 雙輪一致並不能保證語意忠實或確保網頁真實**。沒有原始全文可核對、首次公開日不明、資料過期、版本衝突及過度延伸的內容一律保留 `hold`。避免大量逐字轉載受著作權保護的摘要；使用有來源歸屬的有限中文轉述。此更動僅限 `daily/`，週報／月報不放寬；不自動建立正式日報、不啟用每日搜尋或合併排程。

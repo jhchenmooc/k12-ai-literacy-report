@@ -57,17 +57,27 @@ function matchBody(html,claims){
 
 function dailyFact(c,issueDate){
  const errors=[];
- if(c.claim_class!=="bibliographic"||c.risk_tier!=="low")errors.push("daily AI channel permits low-risk bibliographic claims only");
- if(!["official_notice","research_bibliography"].includes(c.daily_fact_kind))errors.push("invalid daily_fact_kind");
+ const attributed=c.daily_fact_kind==="official_attributed_summary"||c.daily_fact_kind==="research_abstract_attributed_summary";
+ if(attributed){
+  if(c.claim_class!=="descriptive"||c.risk_tier!=="medium")errors.push("attributed summary requires descriptive medium risk");
+  if(c.assertion_type!=="direct_statement")errors.push("attributed summary must reflect a directly sourced statement");
+  if(typeof c.attributed_summary!=="string"||c.attributed_summary.length<15||c.attributed_summary.length>180||/[<>\\r\\n]/.test(c.attributed_summary))errors.push("invalid attributed_summary");
+  if(!c.evidence_path||!c.evidence_sha256||!c.original_excerpt||c.translation_reviewed!==true)errors.push("attributed summary needs original excerpt, pinned evidence and translation crosscheck");
+  if(c.ai_crosscheck_passes!==2||c.ai_crosscheck_status!=="concordant")errors.push("attributed summary needs recorded two-pass crosscheck");
+ }else if(c.claim_class!=="bibliographic"||c.risk_tier!=="low")errors.push("daily AI channel permits low-risk bibliographic claims only");
+ if(!["official_notice","research_bibliography","official_attributed_summary","research_abstract_attributed_summary"].includes(c.daily_fact_kind))errors.push("invalid daily_fact_kind");
  if(typeof c.source_title!=="string"||!c.source_title.trim()||c.source_title.length>300||/[\r\n<>]/.test(c.source_title))errors.push("invalid source_title");
  if(typeof c.source_organization!=="string"||!c.source_organization.trim()||c.source_organization.length>150||/[\r\n<>]/.test(c.source_organization))errors.push("invalid source_organization");
  if(typeof c.source_title==="string"&&typeof c.source_organization==="string"){
-  const expected="來源機構："+c.source_organization+"；資料標題："+c.source_title+"；來源刊登日："+c.publication_date+"。";
-  if(c.claim_text!==expected)errors.push("daily claim must use fixed bibliographic-only template");
+  const prefix="來源機構："+c.source_organization+"；資料標題："+c.source_title+"；來源刊登日："+c.publication_date+"。";
+  const attribution=c.daily_fact_kind==="research_abstract_attributed_summary"?"作者摘要報告：":"官方文件表示：";
+  const expected=attributed?prefix+attribution+c.attributed_summary+"（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）":prefix;
+  if(c.claim_text!==expected)errors.push("daily claim must use exact source-attributed or bibliographic template");
  }
  if(c.checked_at>issueDate||c.publication_date>issueDate)errors.push("source or review date occurs after daily issue date");
  if(c.first_disclosed_on!==undefined&&c.first_disclosed_on!==null&&c.first_disclosed_on!==c.publication_date)errors.push("first disclosure and publication date differ: hold for manual review");
- if(c.assertion_type&&c.assertion_type!=="direct_statement")errors.push("daily AI channel excludes interpretation/research outcomes");
+ if(c.assertion_type&&c.assertion_type!=="direct_statement")errors.push("daily AI channel excludes editorial interpretation");
+ if(attributed&&/(已證實|證明|因果|必然|全面強制|所有學生|所有教師|保證有效|應在臺灣推動)/.test(c.attributed_summary||""))errors.push("attributed summary contains disallowed inference or high-impact wording");
  return errors;
 }
 function validate(root){
