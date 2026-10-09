@@ -1,0 +1,160 @@
+# K–12 AI 素養國際動態｜搜尋、查核、編輯與發布主控 SOP
+
+> **v1.0｜2026-10-09**。本文件整合既有作法，供往後檢查與修訂；**不新增功能、規則、資料表、排程、CI 或簽核門檻**。新聞政策、研究、K–12教學、週報、月報、勘誤均適用。
+>
+> 核心原則：**先篩後查、來源與中文主張逐條對齊、有反證就暫緩、以最小工時留下可信證據、不為湊篇數放寬發布門檻。**
+
+## 0. 文件定位與衝突解決
+
+本文件是可依循的「單一流程導覽」，不代替原始專項規範：[新聞 N1–N8](news-policy-verification.md)、[學術 G1–G6](evidence-safety-gates.md)、[低人力發布](low-human-review-policy.md)、[原文語意對讀](source-to-claim-review.md)及[通用欄位規格](publication-check-spec.md)。
+
+實際機械規則以 [validate-claims.js](validate-claims.js)、[validate-source-trace.js](validate-source-trace.js)、[validate-publication.js](validate-publication.js)、[GitHub Actions](../.github/workflows/verify-and-deploy.yml)為準；**事實真偽仍以原始來源及真實編輯核對為準**。兩者不能互相取代。若有不一致，先查實作與原始文獻，修正文件中的誤述，**不因方便寫作而偷偷調整現有 CI**。
+
+## 1. 完整工作流與責任
+
+```text
+官方政策／研究期刊／會議／教育實務來源
+ → 搜尋與初篩（首發日、K–12關聯、價值、事件去重）
+ → 草稿 JSON（預設 hold）
+ → 原始文件核對（政策 N1–N8、研究 G1–G6）
+ → 第一輪事實提取 → 第二輪反向找例外、版本、反證
+ → 中文逐項主張／風險／證據等級
+    ├─ 無法判定或高風險 → hold 或刪除該句；必要時待查
+    └─ 核實的有限低／中風險主張 → 中文撰稿與編輯放行
+        → 來源短快照 + claims JSON + 正式 HTML + issues.json
+        → PR verify → 合併 main → main verify/deploy
+        → 公開網站實際驗收 → 讀者回饋／勘誤／月報
+```
+
+AI 可找資料、提取、整理、擬稿、反向核查；**不能冒稱獨立真人專家簽核**。編輯者決定是否刊出及是否需真人方法／政策專家。CI 測試程式條件，Pages 負責靜態部署，**都不證明來源語意真實**。
+
+## 2. 搜尋來源、頻率與先篩後查（A）
+
+**來源優先序**：教育部門及 UNESCO、OECD、UNICEF、歐盟／歐洲理事會等官方原文 → [34種期刊與19個會議](venue-watchlist.md)核心池 → ERIC／Crossref／OpenAlex／正式論文集補漏及擴充來源 → 學校實務、教師培訓及活動線索。來源監測池不是完整資料庫，也不是已自動逐站抓取。
+
+**節奏**：規劃每日蒐集線索，週五整理週五至隔週週四的報導區間，月底跨週歸納；**每日全自動網路搜尋目前未實作**。2026/10/09–10/15 為第一期標準窗口，10/16 為預定出刊日，不代表已正式刊出。
+
+**五項初篩**：1. 首次公開日期（非活動日、更新日或生效日）；2. K–12學生／在職教師／教育行政直接適用；3. 政策或研究價值；4. 與舊公告／FAQ／同 DOI 多版本去重；5. 有可回原文核對的主張。先排除低價值或跨期項目，只對值得進一步查核者做完整證據卡。日期不確定但可能重要者列[待查清單](important-unresolved-watchlist.md)；學校活動可列活動欄，**不能假稱本週新法或新研究**。目標 3–5 則，不足可少刊、暫緩，不能湊數。
+
+## 3. 候選工作表與狀態（A、F）
+
+透過 [scaffold-weekly.js](scaffold-weekly.js) 的 `node research/scaffold-weekly.js YYYY-MM-DD` 建立星期五起始的空白候選 JSON，存 `research/drafts/YYYY-MM-DD_YYYY-MM-DD.json`。已存在檔案不能被覆寫；建稿程式**不會搜尋、核准或刊登新聞**。
+
+既有候選欄位：`candidate_id`、`source_url`、`source_publication_date`、`source_locator`、`original_excerpt`、`claim_text`、`scope_limitation`、`risk_tier`、`source_checked`、`translation_reviewed`、`ai_crosscheck_status`／`ai_crosscheck_passes`、`decision`。
+
+區分「初步讀到原始網頁」、「逐條原文快照與譯意已核對」、「已符合正式出版」**三種不同層次**。新候選一律先設 `hold`。首期現有 [scaffold-weekly.test.js](scaffold-weekly.test.js) 要求全部候選 `source_checked:false`、`translation_reviewed:false`、`hold`；即使已讀官網，可在 `screening_note` 紀錄，但**不得為表現進度而任意提升正式驗證旗標**。真正完成發稿查核後使用獨立的 `publication/claims/` 正式主張記錄，而非將初篩表充當出版認證。
+
+## 4. 新聞與政策 N1–N8
+
+| 步驟 | 必須問的事 |
+|---|---|
+| N1 事件 | 法律／政策／倡議／研究／活動／評論？與既有公告是否同事件？ |
+| N2 原始來源 | 是否看到正式條文或原發布機構？媒體摘要只是線索 |
+| N3 時間 | 首發、更新、活動、決策、生效和核查日期是否各自正確？ |
+| N4 效力與適用 | 誰決定、何地與哪些學段、是否強制、試辦／例外／過渡期？ |
+| N5 主張定位 | 中文每項重要政策數字、效力和限制可對應原始段落？ |
+| N6 推論 | 公告不代表執行效果，個案不代表全球成效 |
+| N7 反證 | 更新版本、FAQ、相反原始資料是否推翻初稿？ |
+| N8 出刊前 | 重大政策解讀／成效必須有足夠原文與必要真正獨立複核，否則 hold |
+
+快速提問：**誰決定、何時何地、適用誰、是否強制、有何例外？** UNESCO 某天就既有墨西哥校園手機政策發表新評論，不能寫作「墨西哥同天頒布新 AI 法」。
+
+## 5. 研究 G1–G6
+
+| 步驟 | 必須問的事 |
+|---|---|
+| G1 書目 | 出版者、DOI、首次線上日與期刊／會議版本是否可定位？ |
+| G2 樣本 | K–12／教師／師資生／大學生？招募、完成、納入分析的分母及設計？ |
+| G3 結果 | 測了什麼 outcome？p 值、效果量、百分比及表格位置？ |
+| G4 限制 | 相關不是因果；主觀感受不是學力；短期效果不是長期遷移 |
+| G5 臺灣政策 | 本刊對 PAK／雙途徑／AI 摩擦學習的推論，是否與原論文結果分開？ |
+| G6 核准 | 重大效果與政策判斷是否有必要的獨立核實？缺少即 hold |
+
+「A/B/C 重要性」與「U/V1/V2/V3 查核深度」不是同一尺度；只看摘要不能說已核實原始結果表。關鍵數字與分母查不到就不刊該數字。
+
+## 6. 兩輪原文查核與中文對齊（B、C）
+
+**第一輪**從原始資料提取發布主體、日期、條文／方法、重要數值、適用對象與限制。
+
+**第二輪**儘量獨立回原文，專找推翻中文主張的**反例、例外、不同版本、更新公告、研究分母、真正測量的變項**。兩輪共用同一不完整摘要或同一 AI 多角色重述，不等於真人獨立核證；不能假填 `ai_crosscheck_*` 記錄。
+
+必須核對原始引用的**確切作品**及關鍵段落附近完整脈絡：影片／官方新聞稿／PISA 正式報告不一定分析同樣的測量變項。[九月 OECD PISA 二次勘誤](september-2026-retro-workflow-review.md)即為提醒；不可以另一份同主題的真實文件取代原引來源。未解矛盾仍 `hold`，同篇可保留其他已核實的有限敘述。
+
+## 7. 風險分級與發布決策（D、E）
+
+| 風險 | 適用 | 現行處理 |
+|---|---|---|
+| `low` | `bibliographic` 來源、日期、書目；新聞 N-V1／研究 V1 | 原始來源確認、無矛盾，才可能通過技術檢查 |
+| `medium` | `descriptive` 限定性政策摘要、研究方法；新聞 N-V2／研究 V2 | 需原文短快照、範圍、譯意核對、兩輪一致及紀錄 |
+| `high` | `high_impact` 強制法規、因果、精確效果、跨學段外推 | **現有 `validate-claims.js` 無條件拒絕 high 自動發表**，真人／V3 不構成程式例外 |
+
+主張查核等級不是整期「已認證」標記。沒有證據或重大衝突的內容保留 `decision:hold`；可只刊經核實的其他句子，但不可純粹修改 `risk_tier`、措辭或來源旗標以迴避高風險。真正變成另項有限主張，仍需重新核查與編輯放行。
+
+## 8. 正式中文稿與來源證據（F）
+
+每則約 200–300 字為編輯目標，分三部分：**（1）來源可核實事實（2）限制與例外（3）本刊臺灣 K–12 啟示**。來源機構的立場、作者評論、本刊政策設計假設必須分開；任何國外研究不自動證明臺灣自建框架有效。
+
+每個重要 `claim_id` 沿用同一證據鏈，不額外複製多套審查報告。非書目主張須依 [validate-source-trace.js](validate-source-trace.js) 建立 `publication/sources/<id>.txt`／`.md`（短原文）、`evidence_path`、`evidence_sha256`（本地 UTF-8 檔案）、`original_excerpt`、`evidence_source_url=source_url`、`assertion_type`、`interpretation_note`、`scope_limitation`、`translation_reviewed:true`。原文摘錄必須逐字出現於快照且檔案雜湊正確。
+
+**快照與 SHA-256 只驗證倉庫內部一致，不證明網頁內容確實來自發布機構。** 不公開未授權全文。
+
+## 9. 正式刊物 HTML、claims 與登錄
+
+至少一起提交：
+```text
+weekly/<期別>/index.html  （或 monthly/<期別>/index.html）
+publication/claims/<期別>.json
+publication/sources/<證據id>.txt  （非書目主張有需要）
+publication/issues.json
+```
+
+`issues.json` 登記新期 `path` 與 `claims_file`；正式的 claims JSON 不得含 `hold`。現有 [validate-publication.js](validate-publication.js) 要求只有一個靜態 `<main>`，其中有文字的 `p,h1,h2,h3,h4,li,blockquote,figcaption,td,th` 必須以 `data-claim-id` 對應 JSON 完全相同的 `claim_text`，每個 ID 恰對應一個節點。未登錄的新期 HTML 也被阻擋。
+
+這是有限的靜態字串比對，非完整 DOM 及自然語意判讀；不能用沒被比對的動態內容偷渡主張。2026/09 月報與 9/29–10/8 創刊特刊為 **legacy**，維持未認證警示，不可因後來 CI 成功就追認為新版正式期別。
+
+## 10. 編輯核准、PR／CI、Pages 發布與公開安全（D、G）
+
+**三個不同狀態**：
+1. **內容核准**：由編輯確認來源及中文敘述真的符合，未解的 `hold`／高風險不刊。
+2. **CI 驗證**：PR `verify` 成功代表現有程式化資料與回歸測試過關，**不是內容真實性或翻譯認證**。
+3. **網站交付**：合併 `main`，主分支 `verify`、`deploy` 成功後仍須實際檢查公開網站。
+
+[GitHub Actions](../.github/workflows/verify-and-deploy.yml) 的 `deploy` 以 `verify` 成功為前提；PR 階段跳過，主分支還需 `ENABLE_VERIFIED_PAGES_DEPLOY == 'true'`。此 SOP 不宣稱目前已設定強制分支保護。
+
+Pages 目前從 Repo 根目錄 `.` 上傳，Public Repo 的 `research/`、`publication/` 檔案也可能被公開讀取。PR 前檢查金鑰、個資、兒少資料、非公開審查意見、未授權全文、內部政策草案；不宜公開者不得提交。刪掉敏感檔仍可能留下 Git 歷史。
+
+## 11. 網站驗收、回饋與勘誤
+
+部署後檢查首頁／最新刊物連結、正文與核准稿、來源網址、手機版、無 `hold` 混入、來源事實與本刊分析區分，保存 PR、merge SHA、Actions run、公開網站驗收紀錄。
+
+讀者回饋使用既有 GitHub Issues；Google Forms 暫停。自願讀者評分不等於文章準確率。已刊勘誤應先查原來引用的確切來源，公開說明舊說法、新說法、日期與更正原因，PR／CI／部署後再驗收；重要但無法判定的只記入[既有待查表](important-unresolved-watchlist.md)。
+
+## 12. 截至 2026-10-09 的實際狀態與未自動化事項
+
+| 工作 | 實際情況 |
+|---|---|
+| 搜尋池、SOP、建稿工具、主張結構與 CI | 已有；仍需人工或 AI 執行真實搜尋及核證 |
+| 每日全域自動搜尋與官方網站語意真偽審查 | **尚未自動化** |
+| 10/09–10/15 首期工作表 | 目前 7 則候選，包含 UNESCO 墨西哥 A07，均 `hold` |
+| `publication/issues.json` | `{"schema_version":1,"editions":[]}`；尚無新版正式登錄刊物 |
+| 九月舊刊 | 必要追溯修正已完成，仍非新版獨立認證 |
+| Pages | 已有成功部署紀錄；特定期別的實際網站驗收不可用單一 CI 綠燈替代 |
+
+## 13. 最小操作／自檢表（不設新欄位）
+
+- [ ] 首次發布日、K–12 適用、來源類型與事件去重已核對。
+- [ ] 原始來源上下文、不同版本與第二輪反證／例外已實際查過。
+- [ ] 政策強制性、研究設計、樣本分母、效果、譯文與外推都不過度宣稱。
+- [ ] 所有無證據或高風險的確定性主張仍 `hold`／刪除，不能重標規避。
+- [ ] 正式 claims、來源快照、SHA-256、靜態 HTML、issues 登錄完全對應。
+- [ ] PR 公開安全檢查、內容核准、CI、主分支部署及實際網頁驗收分開完成。
+- [ ] 重大勘誤保留紀錄；不為追求流程完整而新增低價值功能。
+
+## 14. 後續修訂檢查的四個問題
+
+1. 主控文件與**實際**程式、GitHub Actions、資料欄位是否一致？
+2. 有沒有違反新聞 N1–N8、研究 G1–G6 的證據與限制要求？
+3. 有沒有把 AI 同意、原文快照雜湊、CI 成功、Pages 部署錯寫成真人專家認證？
+4. 有沒有重複建立資料／增加工時，而沒有顯著提升真實內容品質？
+
+原則上只修訂錯誤說法、必要既有文件或實際流程；新增功能必須另外得到明確核准。
