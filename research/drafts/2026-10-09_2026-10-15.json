@@ -160,7 +160,7 @@
       "source_publication_date": "2026-10-09",
       "source_locator": "Title; publication date; opening three paragraphs; remarks on digital, algorithmic and media and information literacy",
       "original_excerpt": "Governance measures for technological and digital platforms and devices in Mexico must be supported by comprehensive literacy, monitoring and evaluation processes, as well as by identifying the cases in which technology can be key to inclusion.",
-      "source_checked": true,
+      "source_checked": false,
       "claim_text": "UNESCO於2026年10月9日報導墨西哥校園行動裝置管制，並建議配合數位／演算法／媒體資訊素養、持續監測與教育包容；墨西哥既有規範由SEP於9月22日公布、預定11月3日起適用，並非10月9日新通過的AI素養法規。",
       "claim_class": "descriptive",
       "risk_tier": "medium",
@@ -173,7 +173,7 @@
       "ai_crosscheck_record": "",
       "policy_context_url": "https://www.gob.mx/sep/prensa/boletin-304-publica-sep-acuerdo-para-garantizar-el-uso-responsable-seguro-y-educativo-de-dispositivos-digitales-en-las-escuelas",
       "policy_start_source_url": "https://www.gob.mx/sep/prensa/boletin-309-a-partir-del-3-de-noviembre-entra-en-vigor-regulacion-del-uso-de-celulares-durante-la-jornada-escolar-en-educacion-basica-mario-delgado",
-      "screening_note": "First new-dated 2026-10-09 UNESCO primary-source K12-related item. Cross-checked against earlier Mexican SEP 9/22 regulatory announcement and 9/25 Nov 3 effective-date statement. New event is UNESCO commentary; policy pre-existed. Keep HOLD until genuine independent second original-language check, Chinese translation signoff and pinned excerpt/snapshot; not a law newly issued Oct 9."
+      "screening_note": "First new-dated 2026-10-09 UNESCO primary-source K12-related item. Cross-checked against earlier Mexican SEP 9/22 regulatory announcement and 9/25 Nov 3 effective-date statement. New event is UNESCO commentary; policy pre-existed. Keep HOLD until genuine independent second original-language check, Chinese translation signoff and pinned excerpt/snapshot; not a law newly issued Oct 9. Existing scaffold test assumes all draft candidates remain source_checked=false until publication-level documentary trace is completed; original public pages inspected, but formal snapshot and semantic review remain unfinished."
     }
   ],
   "item_template": {
@@ -205,7 +205,8 @@
     "warnings": [
       "Hong Kong EDB primary/secondary professional development timetable independently lists date/course IDs for A02 and A03; original posting dates still unknown.",
       "Do not confuse verified scheduled event dates with new publication dates, attendance or outcomes.",
-      "A07 is the first date-qualified 9 Oct UNESCO K12 policy commentary with SEP independent historical-context check; remains HOLD until full source trace and second-pass record. Mexico SEP regulation was issued 22 Sep, with announced 3 Nov applicability; do not claim it is new on 9 Oct."
+      "A07 is the first date-qualified 9 Oct UNESCO K12 policy commentary with SEP independent historical-context check; remains HOLD until full source trace and second-pass record. Mexico SEP regulation was issued 22 Sep, with announced 3 Nov applicability; do not claim it is new on 9 Oct.",
+      "A07 public webpages were read for screening; source_checked=false is conservatively retained because publication-grade snapshot/semantic checks are unfinished and the existing scaffold safety test requires held draft status."
     ]
   }
 }
