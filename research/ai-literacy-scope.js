@@ -7,7 +7,7 @@ const PUBLISHABLE=["A","B"];
 const DIMS=["T-ETH","T-BAS","T-TEA","T-PD","S-ETH","S-BAS","S-LRN","S-SYS"];
 // Main audience (mixed audiences are judged by the main one). k12 = kindergarten to
 // high-school students and in-service teachers; other_stakeholders = parents,
-// principals, education administrators.
+// principals, education administrators and general educators (manager decision 2026-10-09).
 const AUDIENCES=["k12","other_stakeholders","teacher_ed","higher_ed","adult","unknown"];
 // Which audiences each channel may publish. teacher_ed/higher_ed/adult are kept out
 // of daily and weekly candidates; monthly may carry them (manager decision 2026-10-09).
