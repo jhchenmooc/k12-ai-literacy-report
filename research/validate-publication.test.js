@@ -251,3 +251,10 @@ test("daily research cannot be mislabelled as an official guidance document",t=>
  dailyFixture(d,{...dailyLow,kind:"research",daily_fact_kind:"research_bibliography",source_document_type:"official_guidance",level:"V1"});
  assert.ok(validate(d).errors.some(e=>e.includes("document type")));
 });
+
+test("daily original source link outside its claim does not count",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const file=path.join(d,"daily","2026-10-10","index.html");
+ fs.writeFileSync(file,'<html><nav><a href="'+dailyLow.source_url+'">Reference</a></nav><main><p data-claim-id="C1">'+dailyLow.claim_text+'</p></main></html>');
+ const res=validate(d);assert.equal(res.ok,false);assert.ok(res.errors.some(e=>e.includes("original source URL")));
+});
