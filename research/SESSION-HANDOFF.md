@@ -376,4 +376,18 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 - 兩邊各用自己的分支與 PR，合併前都要管理者確認。搜尋 session 的 PR 說明要附「交接檔摘要」，由編輯 session 統一寫入本檔。
 - 搜尋 session 在本段所在 PR 合併後才從最新 main 開工；第一批 B1：J20–J26、J27–J30＋J32–J34＋J39、C13–C18＋C20 三組平行。
 
-**尚未完成（編輯 session）**：政策來源搜尋整合（進行中）；10/10 00:00 UTC 後重查預印本，10/10–10/15 每日 Crossref 新登記 DOI；候選首發查核；10/15 前決定出刊或 0 則。
+**驗收與後續（同日）**：
+- [PR #100](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/100) HEAD `56559ad` verify 成功，squash 合併為 main `0aa9287`；[main Run 37962656959](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37962656959) verify 與 deploy 均成功。
+- **文獻搜尋 session 已開**：`session_01EdyajNQzH5bBmza4TgNoff`（標題「K12 AI 素養：文獻搜尋 session（P0 B1）」），依上表分工執行 B1；其 PR 的「交接檔摘要」由編輯 session 寫入本檔。
+- **政策來源搜尋（10/09）**：子代理查 42 個官方來源／頁面（成功 26、失敗或讀不到 16），**候選 0**、背景 10（皆 10/09 前公開）、排除 4；美國 ED、OECD、歐盟執委會、澳洲、新加坡 MOE、加拿大各省、香港 EDB 通告列表讀不到，只能說「搜尋未見」。紀錄：[drafts/2026-10-09-weekly-policy-search.md](drafts/2026-10-09-weekly-policy-search.md)；各來源取用方式已寫入 [工具指南 3.7](research-tools-guide.md)。
+- **本週現況**：學術候選只有 A10（hold），政策 0；10/16 很可能 0 則或極少則，依規則可接受，不為湊數出刊。
+
+**尚未完成（編輯 session）**：10/10–10/15 每日重查（10/10 00:00 UTC 後的預印本、Crossref 新登記 DOI、官方政策列表）；候選首發查核與逐句原文；10/15 前決定出刊或 0 則並照實記錄。
+
+### 2026-10-09｜編輯 session：Pages 實測、A10 原文核對、政策背景核日期
+
+- PR #101 已合併為 main `0024d15`，[main Run 37963020348](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37963020348) verify 與 deploy 均成功。
+- **Pages 瀏覽器實測**（[紀錄](pages-browser-acceptance-2026-10-09.md)）：8 個公開網址 × 桌面／手機皆 200、無水平溢出；9 個公開檔與 main 雜湊一致；`research/` 未公開。45 個連結：40 可開、4 個 Cloudflare 驗證頁無法自動判斷、1 個有問題（月報的臺灣教育部 `pads.moe.edu.tw/download2.php`：伺服器未送中繼憑證、網址無參數）。**未修改網站**，待真人確認。
+- **A10 原文核對（G1／G2）**：讀出版社接受稿 PDF，確認回收 812／有效 768、中職 378（49.2%）、橫斷面自陳、剖面結果未分學段；`source_checked` 仍 `false`，G3 數字未逐表核對。見 [查證紀錄](drafts/2026-10-09-weekly-research-a-verification.md)。
+- **政策背景回原頁核日期**：MEXT 公眾意見徵集 2026-10-06（至 11/05，AI 內容未核，e-Gov 403）、中國《人工智能+教育行动计划》4/2 落款 4/10 發布、香港數字教育藍圖 6/17（將制定中小學 AI 素養學習框架，需追蹤）；皆非本期首發，已寫入 [待查清單](important-unresolved-watchlist.md)。
+- **0 則記錄方式**：出版閘門要求正式期別 claims 非空，「只有狀態摘要」不能登記為期別；若本週 0 則，建議不出刊、只在 `research/drafts/` 留決定紀錄（草稿未提交，10/15 前交管理者決定）。

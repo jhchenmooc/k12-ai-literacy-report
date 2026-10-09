@@ -120,6 +120,27 @@ https://arxiv.org/abs/2503.00079                              → Submission his
 
 AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只回轉址腳本、Springer 303／JS challenge、T&F 403。**不要嘗試繞過驗證頁**（之前雲端瀏覽器代理曾自行點擊驗證頁，已列為禁止）。讀不到就把紀錄留在 `discovered_unverified`、日期 unknown，交給可讀的環境或真人。
 
+### 3.7 官方政策來源（週報；2026-10-09 實測，由編輯 session 維護）
+
+學術 API 幫不上政策來源。政策發現改用官方新聞列表、少數官方 API 與 WebSearch／WebFetch（Claude）；**讀不到的來源只能寫「搜尋未見」，不能寫「當天沒有發布」**。紀錄見 [drafts/2026-10-09-weekly-policy-search.md](drafts/2026-10-09-weekly-policy-search.md)。
+
+| 來源 | curl 直接讀 | 替代方式 |
+|---|---|---|
+| UNESCO newsroom | captcha（**不得繞過**） | WebFetch 可讀（內容為模型轉述） |
+| 美國 ED | 403 | Federal Register API 可查 ED 公報文件（網址含方括號，**curl 要加 `-g`**，否則報 bad range）：`https://www.federalregister.gov/api/v1/documents.json?conditions[agencies][]=education-department&conditions[term]=artificial+intelligence&conditions[publication_date][gte]=YYYY-MM-DD` |
+| 英格蘭 DfE | 可讀 | GOV.UK Search API：`https://www.gov.uk/api/search.json?filter_organisations=department-for-education&order=-public_timestamp&count=40`（關鍵詞與時間排序同時用時篩選效果差） |
+| OECD | 403 | WebSearch |
+| 歐盟執委會（教育） | antibot 表單、列表未渲染 | WebSearch |
+| 澳洲 Department of Education／部長新聞 | 503、HTTP/2 錯誤 | WebSearch |
+| 新加坡 MOE | 轉址 JS 頁、空內容 | WebSearch；國會答覆另查 |
+| 加拿大 BC／Ontario | SSL 憑證錯誤（**不得停用 TLS 驗證**）／需 JS | WebSearch |
+| 香港 EDB 通告 | 需表單／JS | 香港政府新聞公報可讀 |
+| 日本 MEXT、中國教育部、韓國 MOE、臺灣教育部 | 大致可讀（韓國偶發 connection reset） | — |
+
+- WebSearch 索引有延遲，當天新頁常未收錄；WebSearch 摘要與 WebFetch 內容都是模型轉述，**只能當線索**，日期與摘錄要回到可讀的原頁核對。
+- 時區：亞洲機構當天已近日終時，美洲仍在上班；當天稍後的發布要隔天重查。週報期間建議每天重查一次。
+- 會議預告、活動報導、家庭宣導不是政策；更新日、活動日不是首發日（見 [首發查核表](first-disclosure-checklist-v16.md)）。
+
 ## 4. 實用流程（照做即可）
 
 1. **P0 期刊補漏**：ISSN→OpenAlex 來源 ID → 查缺摘要比例 → 兩組布林查詢（≤5 個運算子）＋缺摘要多時加題名查詢 → 逐題名初篩 → 入選者讀摘要判學段 → Crossref 取書目 → `verify_bibtex`（或手動比對）→ 小寫 DOI 對主表與 `research/` 既有 DOI 去重。
