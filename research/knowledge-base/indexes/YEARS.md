@@ -230,6 +230,11 @@
 | KB-2026-0120 — [Integrating AI Literacy into Math Education: A Study on AI Self-Efficacy and Math Motivation](https://doi.org/10.3102/2281139) | conference_paper | 未知 | bibliographic_checked |
 | KB-2026-0121 — [Exploring AI Literacy: Student Perceptions of Learning, Ethics, and Use in the Classroom](https://doi.org/10.3102/2273778) | conference_paper | 未知 | bibliographic_checked |
 | KB-2026-0122 — [Imagining Culturally and Linguistically Sustaining AI Literacy with In-Service Educators through Design-Based Research (Poster 29)](https://doi.org/10.3102/2288275) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0123 — [K-12 in-service teachers' beliefs about generative AI in classrooms: insights from the United States, India, Qatar, Colombia, and the Philippines](https://doi.org/10.3389/feduc.2026.1929017) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0124 — [Do Teachers Dream of GenAI Widening Educational (In)equality? Envisioning the Future of K-12 GenAI Education from Global Teachers’ Perspectives](https://doi.org/10.1145/3772318.3790908) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0125 — [Thinking, Making, Enacting --- A Multi-Modal Approach to Children's Conception of AI](https://doi.org/10.1145/3772363.3798981) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0126 — [AI Kitchen: Child-Readable Ingredient Labels and Transparency Stickers for Failure Anticipation and Reliance Calibration](https://doi.org/10.1145/3772363.3799047) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0127 — [Understanding Educators’ Perceptions of AI-generated Non-consensual Intimate Imagery](https://doi.org/10.1145/3772318.3790584) | conference_paper | 未知 | discovered_unverified |
 
 ## 2027｜issue_year
 
