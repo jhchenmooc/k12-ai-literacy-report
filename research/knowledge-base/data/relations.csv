@@ -52,3 +52,8 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-0051","KB-2023-0002","has_category","vocabulary","K1","https://www.gov.uk/government/publications/generative-artificial-intelligence-in-education","bibliographic_checked"
 "KR-0052","KB-2023-0002","issued_by","source","O-UK-DFE","https://www.gov.uk/government/publications/generative-artificial-intelligence-in-education","bibliographic_checked"
 "KR-0053","KB-2023-0002","applies_to_country","vocabulary","GB-ENG","https://www.gov.uk/government/publications/generative-artificial-intelligence-in-education","bibliographic_checked"
+"KR-0054","KB-2026-0014","has_category","vocabulary","K2","https://link.springer.com/article/10.1007/s44217-026-01890-3","bibliographic_checked"
+"KR-0055","KB-2026-0014","published_in","source","J32","https://link.springer.com/article/10.1007/s44217-026-01890-3","bibliographic_checked"
+"KR-0056","KB-2026-0015","has_category","vocabulary","K2","https://link.springer.com/article/10.1007/s44217-026-01565-z","bibliographic_checked"
+"KR-0057","KB-2026-0015","published_in","source","J32","https://link.springer.com/article/10.1007/s44217-026-01565-z","bibliographic_checked"
+"KR-0058","KB-2026-0015","studies_country","vocabulary","TH","https://link.springer.com/article/10.1007/s44217-026-01565-z","bibliographic_checked"
