@@ -33,3 +33,27 @@ test("unavailable searches must not claim zero hits",()=>{
  const x=[{run_id:"x",searched_on:"2026-10-09",source_id:"J01",query:"AI",coverage_level:"entry_only",status:"unavailable",results_seen:"0",results_screened:"0",results_recorded:"0"}];
  assert.ok(validate(records,relations,x,candidates).some(e=>e.includes("cannot claim zero")));
 });
+
+test("real knowledge classifications retain unverified status and journal links",()=>{
+ const listed=JSON.parse(index(records,relations));
+ assert.deepEqual(listed["by-category/K2"],["KB-2026-0005","KB-2026-0008","KB-2026-0009"]);
+ assert.deepEqual(listed["by-journal/J06"],["KB-2026-0008"]);
+ assert.deepEqual(listed["by-journal/J02"],["KB-2026-0009"]);
+ assert.deepEqual(listed["by-source/O-HK-EDB"],["KB-2026-0002","KB-2026-0003"]);
+ assert.equal(listed["by-year/unknown/unknown"].length,9);
+ assert.equal(listed["by-year/2026/first_publication"],undefined);
+ assert.ok(relations.every(x=>x.verification_status==="discovered_unverified"));
+});
+test("synthetic country, topic and conference view is typed and deterministic",()=>{
+ const x=[{relation_id:"T1",subject_id:"KB-2026-0001",predicate:"studies_country",object_namespace:"vocabulary",object_id:"TW",verification_status:"discovered_unverified"},
+ {relation_id:"T2",subject_id:"KB-2026-0001",predicate:"has_topic",object_namespace:"vocabulary",object_id:"AI_LITERACY",verification_status:"discovered_unverified"},
+ {relation_id:"T3",subject_id:"KB-2026-0001",predicate:"published_in",object_namespace:"source",object_id:"C21",verification_status:"discovered_unverified"}];
+ const i=JSON.parse(index(records,x));
+ assert.deepEqual(i["by-country/TW"],["KB-2026-0001"]);
+ assert.deepEqual(i["by-topic/AI_LITERACY"],["KB-2026-0001"]);
+ assert.deepEqual(i["by-conference/C21"],["KB-2026-0001"]);
+});
+test("venue/agency relation mix-up is invalid",()=>{
+ const x=[{relation_id:"ERR",subject_id:"KB-2026-0001",predicate:"published_in",object_namespace:"source",object_id:"O-UNESCO",verification_status:"discovered_unverified"}];
+ assert.ok(validate(records,x,runs,candidates).some(v=>v.includes("invalid venue relation")));
+});
