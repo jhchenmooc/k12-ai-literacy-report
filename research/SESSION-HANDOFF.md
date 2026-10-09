@@ -453,3 +453,39 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 - 文獻搜尋 session：依作者檢索試跑（`scholar-watchlist.md` 已確認學者、近 90 天，只評估不入庫），完成後向管理者報告。
 - 未核：論文 75（多為出版者頁讀不到，需可讀環境或真人）、政策 16（含 #114 mismatch 10）。
 - 編輯 session：10/10 08:22（臺灣）首次每日短訊例行作業；10/15 填週報決定草稿交管理者選 A／B；10/29 製作 10 月月報。
+
+### 2026-10-09｜學者追蹤、AI 素養準則與知識庫擴充（#118–#134）
+
+數字以 main `fb2a0d7` 實際檔案為準：records 283、relations 725、search runs 269；論文（期刊＋會議）已核 74／未核 153，其他類型（政策、框架、書章等）已核 38／未核 18。各 PR 的 verify 與 main deploy 皆成功（以 GitHub 實際 Run 為準）。
+
+**管理者本輪規則決定（後續 session 必須遵守）**
+- **學段**：中小學（含幼兒園至高中）在職教師研究算 K-12；職前教師與師培課程另標「師培」（知識庫關聯 `has_population` → `TEACHER_ED`，#128 起），可入庫但不進週報、每日短訊候選；對象混合者依主要對象判斷，不明記「不明」。
+- **AI 素養範圍**：依 [ai-literacy-scope-criteria.md](ai-literacy-scope-criteria.md)（v0.3，以教育部《臺灣中小學教師與學生 AI 素養框架》表 1、表 2 為準）。A 核心（師生 AI 素養本身）、B 相關（AI 工具於教學或學習的使用或成效）**都在範圍內**，同可入庫、進刊物候選；C（AI 僅為研究方法或系統後端）不進刊物。教師 AI-TPACK 與生成式 AI 教學培訓研究一律判 A。判定有疑問先查全文 `research/reference/tw-k12-ai-literacy-framework-2026-04-17.pdf`（有函號版，與官方直接連結下載檔雜湊相同），報告寫引用頁碼。
+- **學者清單**：列入不論研究對象學段；只列身分已確認者（ORCID 現職或管理者告知），未確認者放附錄不檢索；2026 年無作品者查近五年，無相關論文才移除。
+- **框架版本日期**：教育部 AI 素養框架一律用有函號版、版本日期 2026-04-17（115-04-17 臺教資（一）字第 1152701134 號核定）；換封面版（封面「2026 年 3 月」、無文號）內容相同，不另存。核定日不等於首發日，知識庫 `first_published_on` 仍依首發證據。
+- **電子郵件**：任何請求不得帶任何人的 email 或 mailto（工具指南第 3 節）。
+
+**文獻搜尋 session**（摘要依各 PR「交接檔摘要」，數字已對 main 核過）
+- **B1 其餘待判**（[#118](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/118)）：69 件重讀，入庫 5 筆（KB-2026-0123～0127），仍待判 48 件（多為出版者頁讀不到）。B1 待判全部複核過一輪。
+- **依作者檢索試跑**（[#119](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/119) 報告、[#120](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/120) 入庫 2 筆 KB-2026-0128、0129，寫入 62 筆 search runs）。
+- **2026 全年依作者檢索入庫**（[#122](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/122)）：60 篇篩選，入庫 9 筆（KB-2026-0130～0138），待判 14 篇。
+- **監測清單 v1.4**（[#124](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/124)）：新增 J40 ILE、J41 CAEO、J42 Informatics in Education（擴充）、J43–J47（背景，含 MDPI Education Sciences 須特別檢查審稿品質）；觀察池 EJE、IJTDE、ICITL、TEI、Emerald AIiE。
+- **J40+ 代碼連結**（[#126](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/126)）：KB-2026-0128→J42、0133→J44、0134→J45。
+- **擴充三刊 J40–J42 補搜 2025 年至今**（[#128](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/128)）：142 篇篩選，入庫 41 筆（K-12 22、師培 19），待判 36 篇；新增 `has_population` → `TEACHER_ED` 標記。
+- **V 級學者 2026 依作者檢索**（[#130](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/130)）：入庫 9 筆（KB-2026-0164～0172）；新增紀錄類型 `book_chapter`（2 筆），**網站研究清單目前不顯示此類型**。
+- **AI 素養準則補判與框架入庫**（[#134](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/134)）：
+  - 教育部框架入庫為 KB-2026-0173（`framework`、`bibliographic_checked`、首發日 unknown）。pads.moe.edu.tw 少送中繼憑證，搜尋 session 經管理者同意，從 AIA 取得 TWCA 中繼憑證並以 `openssl verify` 驗證後補入 CA bundle，TLS 驗證全程開啟。
+  - 依作者檢索 100 篇套用準則：A 41、B 23、C 25、不明 11；入庫 14 篇（KB-2026-0174～0187）；4 篇改回待判。
+  - 知識庫既有 269 筆補判：A 256、B 9、C 2、不明 2；邊界案例 42 筆待管理者決定；判斷依據中只看題名者 65 筆。結果在 `research/p0-ailit-classify-2026-10-09/`，知識庫結構未改。
+  - `validate-knowledge-base.test.js` 將 J06、C03 的完全相符檢查改為既有紀錄仍在（比照先前做法，容許新入庫）。
+
+**編輯 session**
+- 依作者檢索 2026 全年概覽與期刊會議反查（[#121](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/121)）。
+- 學者監測清單 v0.6 與後續（[#123](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/123)、[#125](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/125)、[#127](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/127)、[#129](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/129)）：新增 V 級（監測期刊高被引 K-12 AI 論文作者）26 位；2026 年無作品者近五年檢查（無人移除）；臺灣學者姓名與現職補正（林鴻銘、戴孜伃、吳智鴻、陳浩然、劉遠楨、葉家宏）；V17 Yin Ping Yang 的 ORCID 混入同名者，改用作者 ID 檢索。
+- 知識庫驗證接受 J40–J47（[#125](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/125)，含新測試）。
+- AI 素養範圍判斷準則（[#131](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/131)）與框架參考全文（[#132](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/132) 四月版、[#133](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/133) 曾改換封面版，管理者 2026-10-09 定回有函號版）；`research/` 未部署到網站（線上路徑 404 已確認）。
+- 學者追蹤結果運用規格草稿（候選管道、月報段落、趨勢素材，含兩輪自檢）**未合併**，暫存於編輯 session，待依入庫結果與 AI 素養準則調整後交管理者決定。
+
+**待辦**
+- 管理者：#134 的 42 筆邊界案例；各批待判（B1 48、全年 14、J40–J42 36 等）多需可讀出版者頁或真人。
+- 編輯 session：網站研究清單加「專書章節」分類（#130 留下）；週報、每日短訊選材排除 `TEACHER_ED` 與 C 類（是否在 `render-site` 或候選流程加過濾，須管理者同意）；學者運用規格草稿；10/10 08:22（臺灣）首次每日短訊；10/15 週報決定；10/29 10 月月報。
