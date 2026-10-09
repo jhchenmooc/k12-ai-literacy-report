@@ -42,7 +42,8 @@ test("real knowledge classifications retain unverified status and journal links"
  assert.deepEqual(listed["by-source/O-HK-EDB"],["KB-2026-0002","KB-2026-0003"]);
  assert.equal(listed["by-year/unknown/unknown"].length,9);
  assert.deepEqual(listed["by-year/2026/first_publication"],["KB-2026-0010"]);
- assert.ok(relations.filter(x=>x.subject_id!=="KB-2024-0001"&&x.subject_id!=="KB-2024-0002"&&x.subject_id!=="KB-2026-0010").every(x=>x.verification_status==="discovered_unverified"));
+ const originalIds=new Set(records.filter(x=>x.source_candidate_id).map(x=>x.record_id));
+ assert.ok(relations.filter(x=>originalIds.has(x.subject_id)).every(x=>x.verification_status==="discovered_unverified"));
 });
 test("synthetic country, topic and conference view is typed and deterministic",()=>{
  const x=[{relation_id:"T1",subject_id:"KB-2026-0001",predicate:"studies_country",object_namespace:"vocabulary",object_id:"TW",verification_status:"discovered_unverified"},
