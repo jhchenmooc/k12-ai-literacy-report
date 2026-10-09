@@ -1,0 +1,510 @@
+{
+ "results": {
+  "ILE": {
+   "source": "Interactive Learning Environments",
+   "openalex": "S90466346",
+   "publisher": "Taylor & Francis",
+   "issn_l": "1049-4820",
+   "total": 670,
+   "no_abstract": 34,
+   "ai": 132,
+   "ai_k12": 19
+  },
+  "RPTEL": {
+   "source": "Research and Practice in Technology Enhanced Learning",
+   "openalex": "S119620556",
+   "publisher": "Springer Nature",
+   "issn_l": "1793-2068",
+   "total": 88,
+   "no_abstract": 0,
+   "ai": 10,
+   "ai_k12": 2
+  },
+  "CAEO": {
+   "source": "Computers and Education Open",
+   "openalex": "S4210232537",
+   "publisher": "Elsevier BV",
+   "issn_l": "2666-5573",
+   "total": 181,
+   "no_abstract": 3,
+   "ai": 31,
+   "ai_k12": 6
+  },
+  "IJTDE": {
+   "source": "International Journal of Technology and Design Education",
+   "openalex": "S196057155",
+   "publisher": "Springer Science+Business Media",
+   "issn_l": "0957-7572",
+   "total": 172,
+   "no_abstract": 84,
+   "ai": 14,
+   "ai_k12": 2
+  },
+  "IJSE": {
+   "source": "International Journal of Science Education",
+   "openalex": "S54332258",
+   "publisher": "Taylor & Francis",
+   "issn_l": "0950-0693",
+   "total": 256,
+   "no_abstract": 10,
+   "ai": 10,
+   "ai_k12": 4
+  },
+  "EDUSCI": {
+   "source": "Education Sciences",
+   "openalex": "S2738008561",
+   "publisher": "Multidisciplinary Digital Publishing Institute",
+   "issn_l": "2227-7102",
+   "total": 3335,
+   "no_abstract": 1,
+   "ai": 206,
+   "ai_k12": 25
+  },
+  "INFEDU": {
+   "source": "Informatics in Education",
+   "openalex": "S2764653341",
+   "publisher": "Vilnius University",
+   "issn_l": "1648-5831",
+   "total": 41,
+   "no_abstract": 0,
+   "ai": 9,
+   "ai_k12": 5
+  },
+  "TPE": {
+   "source": "Technology Pedagogy and Education",
+   "openalex": "S84989246",
+   "publisher": "Taylor & Francis",
+   "issn_l": "0962-029X",
+   "total": 106,
+   "no_abstract": 7,
+   "ai": 4,
+   "ai_k12": 2
+  },
+  "TSC": {
+   "source": "Thinking Skills and Creativity",
+   "openalex": "S42886211",
+   "publisher": "Elsevier BV",
+   "issn_l": "1871-1871",
+   "total": 545,
+   "no_abstract": 381,
+   "ai": 20,
+   "ai_k12": 2
+  },
+  "IJAL": {
+   "source": "International Journal of Applied Linguistics",
+   "openalex": "S174221484",
+   "publisher": "Wiley",
+   "issn_l": "0802-6106",
+   "total": 579,
+   "no_abstract": 14,
+   "ai": 21,
+   "ai_k12": 4
+  },
+  "EJE": {
+   "source": "European Journal of Education",
+   "openalex": "S71191459",
+   "publisher": "Wiley",
+   "issn_l": "0141-8211",
+   "total": 931,
+   "no_abstract": 20,
+   "ai": 53,
+   "ai_k12": 3
+  },
+  "EJTE": {
+   "source": "European Journal of Teacher Education",
+   "openalex": "S36385850",
+   "publisher": "Taylor & Francis",
+   "issn_l": "0261-9768",
+   "total": 162,
+   "no_abstract": 6,
+   "ai": 12,
+   "ai_k12": 2
+  }
+ },
+ "requests": [
+  {
+   "venue": "ILE",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS90466346%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:16Z",
+   "http": 200,
+   "count": 670
+  },
+  {
+   "venue": "ILE",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS90466346%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:17Z",
+   "http": 200,
+   "count": 34
+  },
+  {
+   "venue": "ILE",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS90466346%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:18Z",
+   "http": 200,
+   "count": 132
+  },
+  {
+   "venue": "ILE",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS90466346%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:19Z",
+   "http": 200,
+   "count": 19
+  },
+  {
+   "venue": "RPTEL",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS119620556%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:20Z",
+   "http": 200,
+   "count": 88
+  },
+  {
+   "venue": "RPTEL",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS119620556%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:21Z",
+   "http": 200,
+   "count": 0
+  },
+  {
+   "venue": "RPTEL",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS119620556%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:21Z",
+   "http": 200,
+   "count": 10
+  },
+  {
+   "venue": "RPTEL",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS119620556%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:22Z",
+   "http": 200,
+   "count": 2
+  },
+  {
+   "venue": "CAEO",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210232537%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:23Z",
+   "http": 200,
+   "count": 181
+  },
+  {
+   "venue": "CAEO",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210232537%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:24Z",
+   "http": 200,
+   "count": 3
+  },
+  {
+   "venue": "CAEO",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210232537%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:25Z",
+   "http": 200,
+   "count": 31
+  },
+  {
+   "venue": "CAEO",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210232537%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:25Z",
+   "http": 200,
+   "count": 6
+  },
+  {
+   "venue": "IJTDE",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS196057155%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:26Z",
+   "http": 200,
+   "count": 172
+  },
+  {
+   "venue": "IJTDE",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS196057155%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:27Z",
+   "http": 200,
+   "count": 84
+  },
+  {
+   "venue": "IJTDE",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS196057155%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:28Z",
+   "http": 200,
+   "count": 14
+  },
+  {
+   "venue": "IJTDE",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS196057155%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:29Z",
+   "http": 200,
+   "count": 2
+  },
+  {
+   "venue": "IJSE",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS54332258%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:29Z",
+   "http": 200,
+   "count": 256
+  },
+  {
+   "venue": "IJSE",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS54332258%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:30Z",
+   "http": 200,
+   "count": 10
+  },
+  {
+   "venue": "IJSE",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS54332258%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:31Z",
+   "http": 200,
+   "count": 10
+  },
+  {
+   "venue": "IJSE",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS54332258%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:32Z",
+   "http": 200,
+   "count": 4
+  },
+  {
+   "venue": "EDUSCI",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2738008561%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:33Z",
+   "http": 200,
+   "count": 3335
+  },
+  {
+   "venue": "EDUSCI",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2738008561%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:34Z",
+   "http": 200,
+   "count": 1
+  },
+  {
+   "venue": "EDUSCI",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2738008561%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:35Z",
+   "http": 200,
+   "count": 206
+  },
+  {
+   "venue": "EDUSCI",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2738008561%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:35Z",
+   "http": 200,
+   "count": 25
+  },
+  {
+   "venue": "INFEDU",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2764653341%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:36Z",
+   "http": 200,
+   "count": 41
+  },
+  {
+   "venue": "INFEDU",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2764653341%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:37Z",
+   "http": 200,
+   "count": 0
+  },
+  {
+   "venue": "INFEDU",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2764653341%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:38Z",
+   "http": 200,
+   "count": 9
+  },
+  {
+   "venue": "INFEDU",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2764653341%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:39Z",
+   "http": 200,
+   "count": 5
+  },
+  {
+   "venue": "TPE",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS84989246%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:39Z",
+   "http": 200,
+   "count": 106
+  },
+  {
+   "venue": "TPE",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS84989246%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:40Z",
+   "http": 200,
+   "count": 7
+  },
+  {
+   "venue": "TPE",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS84989246%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:41Z",
+   "http": 200,
+   "count": 4
+  },
+  {
+   "venue": "TPE",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS84989246%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:42Z",
+   "http": 200,
+   "count": 2
+  },
+  {
+   "venue": "TSC",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS42886211%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:43Z",
+   "http": 200,
+   "count": 545
+  },
+  {
+   "venue": "TSC",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS42886211%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:44Z",
+   "http": 200,
+   "count": 381
+  },
+  {
+   "venue": "TSC",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS42886211%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:45Z",
+   "http": 200,
+   "count": 20
+  },
+  {
+   "venue": "TSC",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS42886211%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:45Z",
+   "http": 200,
+   "count": 2
+  },
+  {
+   "venue": "IJAL",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS174221484%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:46Z",
+   "http": 200,
+   "count": 579
+  },
+  {
+   "venue": "IJAL",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS174221484%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:47Z",
+   "http": 200,
+   "count": 14
+  },
+  {
+   "venue": "IJAL",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS174221484%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:48Z",
+   "http": 200,
+   "count": 21
+  },
+  {
+   "venue": "IJAL",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS174221484%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:49Z",
+   "http": 200,
+   "count": 4
+  },
+  {
+   "venue": "EJE",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS71191459%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:49Z",
+   "http": 200,
+   "count": 931
+  },
+  {
+   "venue": "EJE",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS71191459%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:50Z",
+   "http": 200,
+   "count": 20
+  },
+  {
+   "venue": "EJE",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS71191459%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:51Z",
+   "http": 200,
+   "count": 53
+  },
+  {
+   "venue": "EJE",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS71191459%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:52Z",
+   "http": 200,
+   "count": 3
+  },
+  {
+   "venue": "EJTE",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS36385850%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:53Z",
+   "http": 200,
+   "count": 162
+  },
+  {
+   "venue": "EJTE",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS36385850%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:53Z",
+   "http": 200,
+   "count": 6
+  },
+  {
+   "venue": "EJTE",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS36385850%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:54Z",
+   "http": 200,
+   "count": 12
+  },
+  {
+   "venue": "EJTE",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS36385850%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-09%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-09T19:33:55Z",
+   "http": 200,
+   "count": 2
+  }
+ ]
+}

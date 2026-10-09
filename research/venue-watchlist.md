@@ -1,4 +1,4 @@
-# K-12 AI 素養學術期刊與會議監測清單 v1.3
+# K-12 AI 素養學術期刊與會議監測清單 v1.4
 
 > 建立日期：2026-10-08。目標：服務臺灣 K-12 AI 素養政策、教師與學生能力框架、課程和評量研究。這是**監測來源池**，不是期刊等級排名，也不表示來源中的每一篇文章都適用 K-12。清單包含部分以高等教育為主的來源，必須逐篇依學段篩選。
 
@@ -12,7 +12,7 @@
 
 保留既有34種期刊、19個會議的原監測設定；新增5種期刊、2個正式會議。先查教育主管機關／國際機構，再查核心期刊／正式論文集，最後跨庫補漏。**先篩首次公開日期、K–12學段、重複事件及內容價值，再查原文**；低價值候選只記排除原因。活動日不能冒稱本週新發布日。
 
-## 2. 期刊池（39 種）
+## 2. 期刊池（47 種）
 
 | ID | 級別 | 期刊 | 適用主題 | 查核入口 |
 |---|---|---|---|---|
@@ -56,6 +56,14 @@
 | J37 | 核心 | Journal of Science Education and Technology | AI × STEM、科學推理及評量 | [期刊頁](https://link.springer.com/journal/10956) |
 | J38 | 核心 | Educational Psychology Review | 認知卸載、後設認知、鷹架與學習機制 | [期刊頁](https://link.springer.com/journal/10648) |
 | J39 | 擴充 | International Journal of Computer-Supported Collaborative Learning | 生成式 AI、人機協作、共同知識建構 | [期刊頁](https://link.springer.com/journal/11412) |
+| J40 | 擴充 | Interactive Learning Environments | 教育科技、生成式 AI、K–12 AI 教育（量大，須逐篇確認學段） | [期刊頁](https://www.tandfonline.com/journals/nile20) |
+| J41 | 擴充 | Computers and Education Open | AI 素養回顧、教師與學生 AI 能力（開放取用） | [期刊頁](https://www.sciencedirect.com/journal/computers-and-education-open) |
+| J42 | 擴充 | Informatics in Education | K–12 運算與 AI 教育、AI 素養課程 | [期刊頁](https://infedu.vu.lt/) |
+| J43 | 背景 | Research and Practice in Technology Enhanced Learning | 亞太教育科技、學習分析與 AI | [期刊頁](https://rptel.apsce.net/) |
+| J44 | 背景 | European Journal of Teacher Education | 教師教育、教師 AI 素養（注意職前／在職） | [期刊頁](https://www.tandfonline.com/journals/cete20) |
+| J45 | 背景 | Technology, Pedagogy and Education | 學校情境的 AI 教育與教學 | [期刊頁](https://www.tandfonline.com/journals/rtpe20) |
+| J46 | 背景 | International Journal of Science Education | 科學教育中的 AI（K–12 比例高、AI 篇數少） | [期刊頁](https://www.tandfonline.com/journals/tsed20) |
+| J47 | 背景 | Education Sciences | K–12 AI 教育命中多；量大且須特別檢查審稿與研究品質 | [期刊頁](https://www.mdpi.com/journal/education) |
 
 ## 3. 國際會議池（21 個正式系列）
 
@@ -157,7 +165,7 @@ framework_alignment,duplicate_group,weekly_priority,notes
 - **學段及人群**：先判 K-12 學生／K-12 教師／師資生／高教／成人；會議研究不因名稱含 Education 即視為 K-12。
 - **證據強度**：研究重要性 A/B/C 與方法品質分開；自陳、橫斷 SEM、量表驗證及 RCT 不可用同一因果語言。
 - **會議索引**：以每篇論文 DOI／論文集正式上線日為時間判準，非僅會議活動日期；Full、Short、Poster、Workshop 各自標記。
-- **監測範圍**：收錄 39 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
+- **監測範圍**：收錄 47 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
 - **品質確認**：監測候選池要記錄 `verification_status`（verified / partial / pending）、`population_level`、`evidence_design`、`publication_status`，不可僅以期刊名稱推斷研究品質。
 
 ## 10. 維護提醒
@@ -178,7 +186,7 @@ framework_alignment,duplicate_group,weekly_priority,notes
 
 **每週入選的最低驗證門檻**：出版者或官方 proceedings 能支持『論文存在、日期、對象、性質及主張』才可公開；若重要效果量、統計表或 DOI 無法核對，刪去數字或清楚標示尚待核實。A/B/C 是政策重要性，V1/V2/V3/U 是驗證深度，兩套尺度不得混用。
 
-**來源驗證狀態**：目前 39 期刊與 21 會議為監測候選清單，不是逐一連線驗證完成的封閉名單。網站 URL 可用不代表正確的論文收錄；每季重新核對期刊更名、停刊、會議年份／proceedings 出版者。
+**來源驗證狀態**：目前 47 期刊與 21 會議為監測候選清單，不是逐一連線驗證完成的封閉名單。網站 URL 可用不代表正確的論文收錄；每季重新核對期刊更名、停刊、會議年份／proceedings 出版者。
 
 ## 13. v1.7 來源池擴充及定期檢閱（2026-10-09）
 
@@ -193,3 +201,25 @@ Springer 官方期刊頁明示本刊自 **2026-01-01** 起改由 Elsevier 出版
 ### C22 EAAI 固定監測分軌（2026-10-09 管理者決定）
 
 EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI-26 在 vol 40 no 47–48。期次頁的分節標題可把 EAAI 與 AAAI 主會議、IAAI 分開。**「Resources for Teaching AI in K-12」分軌列為 C22 的固定監測分軌**：2025–2026 年 28 筆會議候選中有 20 筆來自 EAAI，產量最高；同一 C22 的「EAAI Symposium: Main track」仍照常逐篇確認學段。這是監測入口的補充，不代表該分軌論文已核證，也不改 C22 代碼。證據：[p0-tool-wave-2026-10-09/group-c.md](p0-tool-wave-2026-10-09/group-c.md)。
+
+### v1.4 期刊擴充（2026-10-09 管理者決定）
+
+依清單學者 2026 年作品反查出處（[#121 報告](p0-scholar-year2026-2026-10-09/report.md)）與作者檢索入庫結果，以 OpenAlex 統計各候選出處 2025-01-01～2026-10-09 的總篇數、AI 相關篇數（AI literacy／AI education／generative AI）與 AI × K-12 篇數（AI literacy 或 generative AI，且 K-12 或 school），再依第 13 節標準評估。數字為關鍵字粗估，只供排序；查詢紀錄見 [p0-venue-v14-2026-10-09](p0-venue-v14-2026-10-09/counts.json)。
+
+| ID | 級別 | 期刊 | 總篇數 | AI 相關 | AI × K-12 | 缺摘要 |
+|---|---|---|---|---|---|---|
+| J40 | 擴充 | Interactive Learning Environments | 670 | 132 | 19 | 34 |
+| J41 | 擴充 | Computers and Education Open | 181 | 31 | 6 | 3 |
+| J42 | 擴充 | Informatics in Education | 41 | 9 | 5 | 0 |
+| J43 | 背景 | Research and Practice in Technology Enhanced Learning | 88 | 10 | 2 | 0 |
+| J44 | 背景 | European Journal of Teacher Education | 162 | 12 | 2 | 6 |
+| J45 | 背景 | Technology, Pedagogy and Education | 106 | 4 | 2 | 7 |
+| J46 | 背景 | International Journal of Science Education | 256 | 10 | 4 | 10 |
+| J47 | 背景 | Education Sciences（MDPI） | 3335 | 206 | 25 | 1 |
+
+- **擴充三刊（J40–J42）**：一次補搜 2025-01-01 至今（照 P0 方法），之後依擴充級頻率檢索。**背景（J43–J47）**不補搜，每月巡覽。
+- **觀察池（不給正式 ID）**：European Journal of Education（931 篇中 AI × K-12 僅 3）、International Journal of Technology and Design Education（近半缺摘要）、ICITL（LNCS「Innovative Technologies and Learning」）、TEI（ACM Tangible, Embedded, and Embodied Interaction；已入庫 KB-2026-0135）、Emerald *Artificial Intelligence in Education*（新刊）。
+- **不收**：Thinking Skills and Creativity（七成缺摘要，數字不可靠）、International Journal of Applied Linguistics（AI 多為語言學習工具）、The Internet and Higher Education（高教專刊）、IAFOR 論文集（審查程度不明）、Lecture Notes in Networks and Systems（ICICT）、專書手冊。
+- **叢書拆分**：LNCS「Mindful TEL: Learning Technologies Shaped with Intention」為 EC-TEL 2026 論文集，屬既有 C10，查核入口加上 ISBN 9783032379788、9783032379818。
+- **技術限制**：`research/validate-knowledge-base.js` 目前只接受 J01–J39、C01–C22 作為 `published_in` 代碼；J40 以後要等驗證程式放寬後，才能把已入庫論文（KB-2026-0128 Informatics in Education、KB-2026-0133 EJTE、KB-2026-0134 TPE）連到新代碼。本次只改清單，不改驗證程式。
+
