@@ -196,3 +196,7 @@ Pages 目前從 Repo 根目錄 `.` 上傳，Public Repo 的 `research/`、`publi
 每週候選仍為單一共享資料來源。當 URL 含有重要 `id`／`document` 查詢參數時不得合併；追蹤參數可略；重複來源沒有更新理由也應記為「更新待核對」，不能當作沒有新訊。跨週關聯與當期首發應分開檢查。每日候選輸出只是提名，不是自動出刊；正式出刊仍需雙輪語意來源對照、證據快照與出刊登錄。跨週或日期不明只做背景。正式新日報尚無正向真實來源出刊，CI 通過亦不等於網站內容真實。
 
 此修復不啟用每日排程、自動合併或無人監督發布。公有 GitHub 原始碼與 Pages 根目錄上傳內容目前仍可能公開研究紀錄，因此不得提交機密審稿內容；後續須逐步縮小 Pages 成品範圍並完成實站抽查。
+
+## v1.6 第二輪多角度自檢補充（2026-10-09）
+
+新期別 daily claims 必須使用與期別日期一致的 `publication/claims/daily-YYYY-MM-DD.json`，而且 `kind` 必須對應來源分類（官方公告為 news_policy，學術研究為 research）；錯置分類採 fail-closed。每日待審包同時顯示週內 item.source_updates 與跨週更新，不得將之前的研究背景當成當天新訊。正式期別靜態 HTML 全頁禁止 script／iframe／object／embed 與 inline event handler，避免在 `main` 以外埋入動態主張或不安全程式碼。新增反例測試通過不能替代人工或 AI 真正讀原始文件的語意核對；仍沒有任何正式 daily 期別或每日自動搜尋排程。

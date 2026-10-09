@@ -18,3 +18,15 @@ test("uncertified held candidates never enter publishable list",()=>{const a=mer
 
 test("late verified items remain visible for daily editorial selection",()=>{const w=makeDraft("2026-10-09").data;w.items=[{candidate_id:"late",source_url:"https://example.org/late",source_title:"Late",source_publication_date:"2026-10-09",discovered_on:"2026-10-09",verification_completed_on:"2026-10-11",decision:"hold",source_checked:true,first_disclosed_on:"2026-10-09",conflict_unresolved:false}];w.search_runs=[];const z=dailyBrief(w,"2026-10-12");assert.equal(z.pending.length,1);assert.equal(z.suggested_for_publication.length,0)});
 test("duplicate discovery remains visible even without an update note",()=>{const w=makeDraft("2026-10-09").data;w.search_runs=[];w.unresolved_duplicate_discoveries=[{searched_on:"2026-10-09",source_url:"https://example.org/old",review_required:true}];const z=dailyBrief(w,"2026-10-10");assert.equal(z.source_updates.length,1);assert.match(markdown(z),/待核對/)});
+
+test("same-week updated original sources surface in the next daily review pack",()=>{
+ const w=makeDraft("2026-10-09").data;w.search_runs=[];
+ w.items=[{candidate_id:"a",source_updates:[{discovered_on:"2026-10-09",source_url:"https://example.org/a",note:"new version",review_required:true}]}];
+ assert.equal(dailyBrief(w,"2026-10-10").source_updates.length,1);
+});
+test("old verified background never enters publication suggestion",()=>{
+ const w=makeDraft("2026-10-09").data;w.search_runs=[];
+ w.items=[{candidate_id:"old",source_url:"https://example.org/a",source_title:"old",
+ source_publication_date:"2026-09-01",first_disclosed_on:"2026-09-01",verification_completed_on:"2026-10-09",source_checked:true,conflict_unresolved:false,decision:"publish"}];
+ assert.equal(dailyBrief(w,"2026-10-10").suggested_for_publication.length,0);
+});
