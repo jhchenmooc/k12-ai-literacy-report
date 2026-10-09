@@ -35,7 +35,14 @@
       "ai_crosscheck_record": "",
       "screening_note": "2026-10-09 13:00–14:30, youth aged 12–15 and guardians, and training/verification activities are explicitly shown on Penn State's official event page. Original posting date and any outcome evaluation remain unknown; classify as this-week event rather than this-week news.",
       "event_local_time": "13:00–14:30 America/New_York",
-      "event_audience": "Children aged 12–15 accompanied by parent or guardian"
+      "event_audience": "Children aged 12–15 accompanied by parent or guardian",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS",
+        "S-ETH"
+      ],
+      "ai_lit_note": "12至15歲青少年與家長的戶外AI素養活動，練習查證AI產生的資訊，對應S-BAS「覺察AI的世界並產生好奇心」與S-ETH「具備對AI的批判思考」。",
+      "audience": "k12"
     },
     {
       "candidate_id": "W2026-10-09-A02",
@@ -58,7 +65,14 @@
       "ai_crosscheck_status": "not_started",
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
-      "screening_note": "Hong Kong Education Bureau official secondary AI literacy professional-development timetable directly lists 09/10/2026 and ITED20260520. Event date/course ID/title corroborated by EDB's own category page; original posting date, attendance, and outcome remain unknown. Event, not new Oct 9 policy announcement."
+      "screening_note": "Hong Kong Education Bureau official secondary AI literacy professional-development timetable directly lists 09/10/2026 and ITED20260520. Event date/course ID/title corroborated by EDB's own category page; original posting date, attendance, and outcome remain unknown. Event, not new Oct 9 policy announcement.",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-PD",
+        "T-ETH"
+      ],
+      "ai_lit_note": "香港教育局為中學教師辦的AI素養與學生網絡安全研討會，對應T-PD「評估教師AI素養以規劃專業增能」與T-ETH「辨識AI風險與安全防範」。",
+      "audience": "k12"
     },
     {
       "candidate_id": "W2026-10-09-A03",
@@ -81,7 +95,14 @@
       "ai_crosscheck_status": "not_started",
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
-      "screening_note": "Hong Kong Education Bureau official primary AI+Subjects professional-development timetable directly lists 09/10/2026, English, and ITED20260476. Event date/course ID/title corroborated by EDB category page; original posting date, attendance, and student outcomes remain unknown. Event, not new Oct 9 policy announcement."
+      "screening_note": "Hong Kong Education Bureau official primary AI+Subjects professional-development timetable directly lists 09/10/2026, English, and ITED20260476. Event date/course ID/title corroborated by EDB category page; original posting date, attendance, and student outcomes remain unknown. Event, not new Oct 9 policy announcement.",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-TEA",
+        "T-PD"
+      ],
+      "ai_lit_note": "香港小學英文教師的生成式AI教學培訓（準則：生成式AI教學培訓判A），對應T-TEA「設計AI與教學法整合的策略」與T-PD。",
+      "audience": "k12"
     },
     {
       "candidate_id": "W2026-10-09-A04",
@@ -104,7 +125,11 @@
       "ai_crosscheck_status": "not_started",
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
-      "screening_note": "Outside 10/09–10/15 publication-date window and marginal K–12 applicability. Deprioritized; do not spend additional verification effort absent a specific editorial need."
+      "screening_note": "Outside 10/09–10/15 publication-date window and marginal K–12 applicability. Deprioritized; do not spend additional verification effort absent a specific editorial need.",
+      "ai_lit_class": "C",
+      "ai_lit_dims": [],
+      "ai_lit_note": "非洲TVET綠色技能教學增能系列，AI只出現在一門課名，主題不在師生AI素養內涵（42筆邊界案例決定判C）。",
+      "audience": "adult"
     },
     {
       "candidate_id": "W2026-10-09-A05",
@@ -126,7 +151,14 @@
       "ai_crosscheck_status": "not_started",
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
-      "screening_note": "High K–12 relevance; publisher-indexed abstract confirms 183 teachers across 15 Spanish regions and qualitative open-ended questionnaire, original date October 7. Background carry-over only. No student learning causal effect."
+      "screening_note": "High K–12 relevance; publisher-indexed abstract confirms 183 teachers across 15 Spanish regions and qualitative open-ended questionnaire, original date October 7. Background carry-over only. No student learning causal effect.",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-ETH",
+        "T-PD"
+      ],
+      "ai_lit_note": "西班牙幼教與小學教師對生成式AI的障礙、倫理顧慮與培訓需求，對應T-ETH「辨識AI風險與安全防範」與T-PD「評估教師AI素養以規劃專業增能」。",
+      "audience": "k12"
     },
     {
       "candidate_id": "W2026-10-09-A06",
@@ -149,7 +181,13 @@
       "ai_crosscheck_status": "not_started",
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
-      "screening_note": "Official institution event page confirms Oct 9, 12–2 pm local time online and topic, but original posting date unknown. Keep as this-week event, not this-week new news."
+      "screening_note": "Official institution event page confirms Oct 9, 12–2 pm local time online and topic, but original posting date unknown. Keep as this-week event, not this-week new news.",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-ETH"
+      ],
+      "ai_lit_note": "批判性AI素養線上座談，對象為一般教育工作者，對應T-ETH「融入倫理思辨於AI問題解決教學」；依42筆邊界案例決定記為其他教育關係人。",
+      "audience": "other_stakeholders"
     },
     {
       "candidate_id": "W2026-10-09-A07",
@@ -173,7 +211,11 @@
       "ai_crosscheck_record": "",
       "policy_context_url": "https://www.gob.mx/sep/prensa/boletin-304-publica-sep-acuerdo-para-garantizar-el-uso-responsable-seguro-y-educativo-de-dispositivos-digitales-en-las-escuelas",
       "policy_start_source_url": "https://www.gob.mx/sep/prensa/boletin-309-a-partir-del-3-de-noviembre-entra-en-vigor-regulacion-del-uso-de-celulares-durante-la-jornada-escolar-en-educacion-basica-mario-delgado",
-      "screening_note": "UNESCO English article posted 9 Oct, but corresponding remarks at the 7 Oct forum were already reported publicly on 7 and 8 Oct (see screening shortlist for URLs). Same-event first-publication requirement for the 9–15 Oct weekly window is NOT satisfied; background-only candidate, held. SEP regulation previously announced in Sep with Nov 3 planned start and teaching/emergency exceptions. Do not expend publication snapshot work unless editorially justified as background. Draft verification fields conservatively unchanged."
+      "screening_note": "UNESCO English article posted 9 Oct, but corresponding remarks at the 7 Oct forum were already reported publicly on 7 and 8 Oct (see screening shortlist for URLs). Same-event first-publication requirement for the 9–15 Oct weekly window is NOT satisfied; background-only candidate, held. SEP regulation previously announced in Sep with Nov 3 planned start and teaching/emergency exceptions. Do not expend publication snapshot work unless editorially justified as background. Draft verification fields conservatively unchanged.",
+      "ai_lit_class": "C",
+      "ai_lit_dims": [],
+      "ai_lit_note": "墨西哥校園行動裝置規範與一般數位素養，未涉及AI，不對應任何內涵（42筆邊界案例決定判C）。",
+      "audience": "k12"
     },
     {
       "candidate_id": "W2026-10-09-A08",
@@ -200,7 +242,14 @@
       "discovery_batch_id": "2026-10-09-research-rehearsal-1",
       "first_disclosed_on": null,
       "source_updates": [],
-      "screening_note": "30-day backfill/background: earlier than issue period; publication history confirmed on publisher page, not full original-text verification. Hold."
+      "screening_note": "30-day backfill/background: earlier than issue period; publication history confirmed on publisher page, not full original-text verification. Hold.",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS",
+        "S-ETH"
+      ],
+      "ai_lit_note": "K-12 AI教育提升學生AI素養的統合分析，對應S-BAS「理解AI運作原理與限制」與S-ETH。",
+      "audience": "k12"
     },
     {
       "candidate_id": "W2026-10-09-A09",
@@ -227,7 +276,14 @@
       "discovery_batch_id": "2026-10-09-research-rehearsal-1",
       "first_disclosed_on": null,
       "source_updates": [],
-      "screening_note": "30-day backfill/background: earlier than issue period; publication history confirmed on publisher page, not full original-text verification. Hold."
+      "screening_note": "30-day backfill/background: earlier than issue period; publication history confirmed on publisher page, not full original-text verification. Hold.",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS",
+        "S-ETH"
+      ],
+      "ai_lit_note": "K-12師生對分齡AI素養指引手冊的接受度，對應S-BAS「理解AI運作原理與限制」等學生AI素養內涵（僅依題名，摘要未讀）。",
+      "audience": "k12"
     },
     {
       "candidate_id": "W2026-10-09-A10",
@@ -254,7 +310,14 @@
       "ai_crosscheck_passes": 0,
       "ai_crosscheck_record": "",
       "doi": "10.1186/s40359-026-05721-w",
-      "screening_note": "Discovery only, hold pending first-disclosure check."
+      "screening_note": "Discovery only, hold pending first-disclosure check.",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-TEA",
+        "T-PD"
+      ],
+      "ai_lit_note": "職業教育教師的AI教學自我效能與職業福祉，對應T-PD「評估教師AI素養以規劃專業增能」；樣本中職378人、高職以上390人，主要對象不明。",
+      "audience": "unknown"
     }
   ],
   "item_template": {
