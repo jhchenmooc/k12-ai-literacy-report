@@ -1,0 +1,1424 @@
+[
+ {
+  "record_id": "KB-2025-0085",
+  "doi": "10.3389/feduc.2025.1688092",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J29",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "S-LRN",
+   "S-ETH"
+  ],
+  "ai_lit_note": "學生 AI 工具使用目的與對 AI 風險、倫理的態度，對應 S-LRN「理解AI輔助學習的角色功能」與 S-ETH「具備對AI的批判思考」。",
+  "container": "Frontiers in Education",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0086",
+  "doi": "10.1109/icalt64023.2025.00084",
+  "batch": "B1",
+  "type": "conference_paper",
+  "source": "C18",
+  "category": "K4",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-PD"
+  ],
+  "ai_lit_note": "教師對將 GAI 融入教學的關注與專業發展需求，對應 T-TEA「評估AI工具輔助教學的適用性」與 T-PD「評估教師AI素養以規劃專業增能」。",
+  "container": "2025 IEEE International Conference on Advanced Learning Technologies (ICALT)",
+  "year": 2025,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0194",
+  "doi": "10.3389/feduc.2026.1935733",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J29",
+  "category": "K4",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "T-TEA"
+  ],
+  "ai_lit_note": "K-12 教師以 GenAI 備課、評量等用途之系統性回顧，對應 T-TEA「評估AI工具輔助教學的適用性」「設計AI與教學法整合的策略」。",
+  "container": "Frontiers in Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0087",
+  "doi": "10.1057/s41599-025-04846-4",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J33",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "S-BAS"
+  ],
+  "ai_lit_note": "七年級學生以心智圖結合 GenAI 聊天機器人學程式，對應 S-LRN「應用AI工具強化領域學習」與 S-BAS「實踐AI強化運算思維」。",
+  "container": "Humanities and Social Sciences Communications",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0195",
+  "doi": "10.3389/feduc.2026.1783236",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J29",
+  "category": "K4",
+  "countries": [],
+  "population": "teacher_ed",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-BAS"
+  ],
+  "ai_lit_note": "師資生 AI 導向 TPACK 培訓需求，依 AI-TPACK 規則判 A，對應 T-TEA「整合AI與教學法」。",
+  "container": "Frontiers in Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0196",
+  "doi": "10.1007/s44217-026-01611-w",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J32",
+  "category": "K4",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-BAS"
+  ],
+  "ai_lit_note": "K-12 教師採用 GenAI 的意向與知覺風險，對應 T-TEA「評估AI工具輔助教學的適用性」與 T-BAS「選用適性適規之AI工具」。",
+  "container": "Discover Education",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0088",
+  "doi": "10.1177/00224871251325058",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J21",
+  "category": "K4",
+  "countries": [],
+  "population": "teacher_ed",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-ETH",
+   "T-TEA"
+  ],
+  "ai_lit_note": "為師資培育建構 GenAI 融入 SEL 的倫理與人類監督框架，對應 T-ETH「辨識AI風險與安全防範」與 T-TEA「評估AI與教學法整合的適切性」。",
+  "container": "Journal of Teacher Education",
+  "year": 2025,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0197",
+  "doi": "10.1057/s41599-026-09066-y",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J33",
+  "category": "K4",
+  "countries": [],
+  "population": "teacher_ed",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-PD",
+   "T-TEA"
+  ],
+  "ai_lit_note": "師資生 AI 素養作為機構支持與教學創新的中介，對應 T-PD「評估教師AI素養以規劃專業增能」。",
+  "container": "Humanities and Social Sciences Communications",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0198",
+  "doi": "10.1145/3773077.3812142",
+  "batch": "B1",
+  "type": "conference_paper",
+  "source": "C14",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "S-ETH"
+  ],
+  "ai_lit_note": "高中生在 LLM 多代理人模擬中學習公民議題並形成對 AI 決策的信任，對應 S-LRN「應用AI工具強化領域學習」與 S-ETH「具備對AI的批判思考」。",
+  "container": "Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0199",
+  "doi": "10.3389/feduc.2026.1870536",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J29",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "T-TEA"
+  ],
+  "ai_lit_note": "AI 融入課程對中學生自主學習的關聯，對應 S-LRN「構思AI協作的自主學習計畫」；教師 AI 素養為調節變項。",
+  "container": "Frontiers in Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0200",
+  "doi": "10.3389/feduc.2026.1754080",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J29",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "中小學遊戲化 AI 學習環境成效統合分析，對應 S-LRN「應用AI工具強化領域學習」。",
+  "container": "Frontiers in Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0201",
+  "doi": "10.1007/s44217-026-01911-1",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J32",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "閱讀障礙學童以 ChatGPT 支架進行探究式英語學習，對應 S-LRN「應用AI工具強化領域學習」。",
+  "container": "Discover Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0202",
+  "doi": "10.1016/j.caeo.2026.100330",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J41",
+  "category": "K4",
+  "countries": [],
+  "population": "teacher_ed",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "T-PD",
+   "T-TEA"
+  ],
+  "ai_lit_note": "AI 用於師資生專業發展之範疇回顧，對應 T-PD「善用AI模擬工具支持專業發展」。",
+  "container": "Computers and Education Open",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0203",
+  "doi": "10.1080/10494820.2026.2679063",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J40",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "T-TEA"
+  ],
+  "ai_lit_note": "回顧 AI 工具支持 K-12 神經多樣學習者，屬「應用AI工具強化領域學習」與「評估AI工具輔助教學的適用性」。",
+  "container": "Interactive Learning Environments",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0204",
+  "doi": "10.1016/j.caeo.2026.100332",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J41",
+  "category": "K4",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-BAS"
+  ],
+  "ai_lit_note": "中學教師使用生成式 AI 備課、評量等的問卷，屬「整合AI與教學法」與「選用適性適規之AI工具」。",
+  "container": "Computers and Education Open",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0205",
+  "doi": "10.1080/10494820.2026.2641762",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J40",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "T-TEA",
+   "S-BAS"
+  ],
+  "ai_lit_note": "高中程式課整合生成式 AI 教學模式，屬「應用AI工具強化領域學習」與「設計AI與教學法整合的策略」。",
+  "container": "Interactive Learning Environments",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0206",
+  "doi": "10.1609/aaai.v40i48.42117",
+  "batch": "TOOL-WAVE",
+  "type": "conference_paper",
+  "source": "C22",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "中學生使用 AI 辯論導師平台，屬「應用AI工具強化領域學習」。",
+  "container": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0207",
+  "doi": "10.1007/s10648-026-10133-8",
+  "batch": "TOOL-WAVE",
+  "type": "journal_article",
+  "source": "J38",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "生成式 AI 支持中學生自我調節學習，屬「AI轉化自我、共同與社會調節」。",
+  "container": "Educational Psychology Review",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0089",
+  "doi": "10.1177/07356331241312363",
+  "batch": "TOOL-WAVE",
+  "type": "journal_article",
+  "source": "J36",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "高中生以 AI 聊天機器人練習英文寫作的使用模式與成效，屬「應用AI工具強化領域學習」。",
+  "container": "Journal of Educational Computing Research",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0208",
+  "doi": "10.1016/j.tate.2026.105698",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J20",
+  "category": "K4",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-BAS"
+  ],
+  "ai_lit_note": "在職中小學教師持續使用 GenAI 教學的知覺價值、風險與障礙，對應 T-TEA「評估AI工具輔助教學的適用性」與 T-BAS「選用適性適規之AI工具」。",
+  "container": "Teaching and Teacher Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0209",
+  "doi": "10.3389/feduc.2026.1869961",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J29",
+  "category": "K2",
+  "countries": [
+   "GH"
+  ],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "T-TEA"
+  ],
+  "ai_lit_note": "高中生接受生成式 AI 支援的幾何證明教學之成效，對應 S-LRN「應用AI工具強化領域學習」與 T-TEA「分析AI工具輔助教學的有效性」。",
+  "container": "Frontiers in Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0090",
+  "doi": "10.3389/feduc.2025.1700268",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J29",
+  "category": "K4",
+  "countries": [],
+  "population": "teacher_ed",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-BAS"
+  ],
+  "ai_lit_note": "師資生在師培碩士課程學習以 GenAI 寫作與設計教學方案，屬生成式 AI 教學培訓，對應 T-TEA「整合AI與教學法」與 T-BAS「優化提示以實踐AI協作」。",
+  "container": "Frontiers in Education",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0210",
+  "doi": "10.1007/s44217-026-02278-z",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J32",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "九年級學生以 ChatGPT 模組練習英語口說之成效，對應 S-LRN「應用AI工具強化領域學習」。",
+  "container": "Discover Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0091",
+  "doi": "10.1057/s41599-025-06265-x",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J33",
+  "category": "K2",
+  "countries": [
+   "TR"
+  ],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "S-BAS"
+  ],
+  "ai_lit_note": "四年級學生以自己的提示讓 ChatGPT-4 生成閱讀文本，對應 S-LRN「應用AI工具強化領域學習」與 S-BAS「運用提示詞優化AI互動」。",
+  "container": "Humanities and Social Sciences Communications",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0092",
+  "doi": "10.1109/icalt64023.2025.00069",
+  "batch": "B1",
+  "type": "conference_paper",
+  "source": "C18",
+  "category": "K4",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-PD"
+  ],
+  "ai_lit_note": "小學教師使用 AI 工具於教學與評量的經驗與培訓不足，對應 T-TEA「評估AI工具輔助教學的適用性」與 T-PD「評估教師AI素養以規劃專業增能」。",
+  "container": "2025 IEEE International Conference on Advanced Learning Technologies (ICALT)",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0093",
+  "doi": "10.1080/10494820.2025.2508323",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J40",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "T-TEA"
+  ],
+  "ai_lit_note": "中學物理中 AI（自適應系統、智慧家教）應用的系統性回顧，對應 S-LRN「應用AI工具強化領域學習」與 T-TEA「分析AI工具輔助教學的有效性」。",
+  "container": "Interactive Learning Environments",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0094",
+  "doi": "10.1080/10494820.2025.2604648",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J40",
+  "category": "K4",
+  "countries": [],
+  "population": "teacher_ed",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-BAS",
+   "T-ETH"
+  ],
+  "ai_lit_note": "師資生 AI 依賴的影響因素，重點在依賴行為，依準則判 A，對應 T-BAS「執行監督以檢核AI產出」與 T-ETH「辨識AI風險與安全防範」。",
+  "container": "Interactive Learning Environments",
+  "year": 2025,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0095",
+  "doi": "10.1177/07356331251333874",
+  "batch": "TOOL-WAVE",
+  "type": "journal_article",
+  "source": "J36",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "S-BAS"
+  ],
+  "ai_lit_note": "高中生以 ChatGPT 對話式程式學習對投入度的影響，對應 S-LRN「應用AI工具強化領域學習」與 S-BAS「實踐AI強化運算思維」。",
+  "container": "Journal of Educational Computing Research",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0096",
+  "doi": "10.1609/aaai.v39i28.35144",
+  "batch": "TOOL-WAVE",
+  "type": "conference_paper",
+  "source": null,
+  "category": "K5",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "以 LLM 虛擬教師分析小學數學錯誤並與學生對話，學生直接使用，對應 S-LRN「應用AI工具強化領域學習」，但重點在系統準確度。",
+  "container": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "year": 2025,
+  "boundary": true,
+  "integrator_note": "管理者 2026-10-09：IAAI 分軌依內容判斷，入庫；成效為業者平台自評、高風險"
+ },
+ {
+  "record_id": "KB-2025-0097",
+  "doi": "10.1177/00224871251325079",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J21",
+  "category": "K4",
+  "countries": [],
+  "population": "teacher_ed",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-BAS",
+   "T-TEA"
+  ],
+  "ai_lit_note": "師資生建構提示並即時評估ChatGPT產出以備課，對應T-BAS「優化提示以實踐AI協作」「執行監督以檢核AI產出」。",
+  "container": "Journal of Teacher Education",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0098",
+  "doi": "10.1109/tlt.2025.3539104",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J27",
+  "category": "K2",
+  "countries": [
+   "CA"
+  ],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "S-BAS"
+  ],
+  "ai_lit_note": "高中生以ChatGPT提示框架提升文本分析能力，對應S-LRN「應用AI工具強化領域學習」及S-BAS「運用提示詞優化AI互動」。",
+  "container": "IEEE Transactions on Learning Technologies",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0099",
+  "doi": "10.3389/feduc.2025.1647573",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J29",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "T-TEA"
+  ],
+  "ai_lit_note": "回顧K-12中生成式AI用於教學與學習的用途與成效，對應S-LRN「應用AI工具強化領域學習」與T-TEA「分析AI工具輔助教學的有效性」。",
+  "container": "Frontiers in Education",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0211",
+  "doi": "10.3389/feduc.2026.1755301",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J29",
+  "category": "K2",
+  "countries": [
+   "CN"
+  ],
+  "population": "k12",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-BAS",
+   "T-TEA"
+  ],
+  "ai_lit_note": "K-12教師持續使用生成式AI意向及其TPACK等因素，對應T-BAS「選用適性適規之AI工具」與T-TEA。",
+  "container": "Frontiers in Education",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0100",
+  "doi": "10.1080/10494820.2025.2556811",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J40",
+  "category": "K4",
+  "countries": [
+   "GH"
+  ],
+  "population": "k12",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-PD"
+  ],
+  "ai_lit_note": "教師以生成式AI支持自主專業學習及過度依賴風險，對應T-PD「善用AI模擬工具支持專業發展」與「活用AI人機協作轉化專業實踐」。",
+  "container": "Interactive Learning Environments",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0101",
+  "doi": "10.1080/10494820.2025.2608191",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J40",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "S-ETH"
+  ],
+  "ai_lit_note": "高中生以生成式AI學程式及其疑慮，對應S-LRN「應用AI工具強化領域學習」與S-ETH「思辨AI中的應用與取捨」。",
+  "container": "Interactive Learning Environments",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0102",
+  "doi": "10.1016/j.caeo.2025.100315",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J41",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "九年級學生使用數學領域AI聊天機器人之成效，對應S-LRN「應用AI工具強化領域學習」。",
+  "container": "Computers and Education Open",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0103",
+  "doi": "10.15388/infedu.2025.24",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J42",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "T-TEA"
+  ],
+  "ai_lit_note": "回顧AI於小學教與學的成效，對應S-LRN「應用AI工具強化領域學習」與T-TEA，並提及教師AI-TPACK。",
+  "container": "Informatics in Education",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0104",
+  "doi": "10.1177/07356331251336154",
+  "batch": "TOOL-WAVE",
+  "type": "journal_article",
+  "source": "J36",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "S-BAS"
+  ],
+  "ai_lit_note": "高中生以生成式AI人機協作學程式提升運算思維，對應S-BAS「實踐AI強化運算思維」與S-LRN。",
+  "container": "Journal of Educational Computing Research",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0105",
+  "doi": "10.1007/s10956-025-10240-1",
+  "batch": "TOOL-WAVE",
+  "type": "journal_article",
+  "source": "J37",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "S-ETH"
+  ],
+  "ai_lit_note": "高中生與客製生成式AI聊天機器人對話學習科學論證，對應S-LRN「應用AI工具強化領域學習」。",
+  "container": "Journal of Science Education and Technology",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0106",
+  "doi": "10.1177/00224871251325109",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J21",
+  "category": "K4",
+  "countries": [],
+  "population": "teacher_ed",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-PD",
+   "T-TEA",
+   "T-BAS"
+  ],
+  "ai_lit_note": "職前教師以多代理生成式AI系統學習個人化教學設計並反思AI建議的包容性，對應「善用AI模擬工具支持專業發展」與「執行監督以檢核AI產出」。",
+  "container": "Journal of Teacher Education",
+  "year": 2025,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0212",
+  "doi": "10.1109/tlt.2026.3718805",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J27",
+  "category": "K5",
+  "countries": [
+   "KR"
+  ],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "T-TEA",
+   "S-LRN"
+  ],
+  "ai_lit_note": "教師評估學生使用生成式AI解積木程式時所需的歷程證據與護欄，對應「評估AI工具輔助教學的適用性」。",
+  "container": "IEEE Transactions on Learning Technologies",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0213",
+  "doi": "10.1007/s44217-026-02109-1",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J32",
+  "category": "K2",
+  "countries": [
+   "MA"
+  ],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "S-ETH"
+  ],
+  "ai_lit_note": "中學生對AI輔助學習成效、動機與自我調節的知覺，對應「理解AI輔助學習的角色功能」，並涉及交叉查證與過度依賴。",
+  "container": "Discover Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0214",
+  "doi": "10.1145/3772318.3790489",
+  "batch": "B1",
+  "type": "conference_paper",
+  "source": "C13",
+  "category": "K4",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-PD"
+  ],
+  "ai_lit_note": "高中教師使用生成式AI簡化教學工作及整合障礙（含缺乏AI素養培訓），對應「評估AI工具輔助教學的適用性」。",
+  "container": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0107",
+  "doi": "10.1080/10494820.2025.2482590",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J40",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "中學生在程式課以AI輔助專題學習的滿意度，對應「應用AI工具強化領域學習」。",
+  "container": "Interactive Learning Environments",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0108",
+  "doi": "10.1080/10494820.2025.2511238",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J40",
+  "category": "K2",
+  "countries": [
+   "VN"
+  ],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "十年級學生在程式學習中使用ChatGPT的決策因素，對應「辨識適合個人學習的AI工具」。",
+  "container": "Interactive Learning Environments",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0109",
+  "doi": "10.1080/10494820.2025.2559930",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J40",
+  "category": "K2",
+  "countries": [
+   "TR"
+  ],
+  "population": "teacher_ed",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-BAS",
+   "T-ETH"
+  ],
+  "ai_lit_note": "職前教師的AI焦慮（含社會技術盲點、工作取代）與AI自我效能，對應「識別AI的侷限與風險」。",
+  "container": "Interactive Learning Environments",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0215",
+  "doi": "10.1016/j.caeo.2025.100325",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J41",
+  "category": "K4",
+  "countries": [],
+  "population": "teacher_ed",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-BAS"
+  ],
+  "ai_lit_note": "職前教師以生成式AI進行教學設計時的能動性（Intelligent-TPACK），對應「設計AI與教學法整合的策略」與「執行監督以檢核AI產出」。",
+  "container": "Computers and Education Open",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0216",
+  "doi": "10.1186/s40594-026-00630-1",
+  "batch": "TOOL-WAVE",
+  "type": "journal_article",
+  "source": "J31",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "六年級學生使用適性AI STEM教學方案的深度學習成效，對應「應用AI工具強化領域學習」。",
+  "container": "International Journal of STEM Education",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0110",
+  "doi": "10.1177/07356331251337991",
+  "batch": "TOOL-WAVE",
+  "type": "journal_article",
+  "source": "J36",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "中學生使用AI強化動態體育教材的學習成效，對應「應用AI工具強化領域學習」。",
+  "container": "Journal of Educational Computing Research",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0111",
+  "doi": "10.1080/17439884.2025.2550502",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J26",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-PD",
+   "T-TEA"
+  ],
+  "ai_lit_note": "中學教師共同設想AI如何改變備課、評量與專業角色，對應「理解AI時代教師專業自主與責任」。",
+  "container": "Learning, Media and Technology",
+  "year": 2025,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0217",
+  "doi": "10.1007/s44217-026-01153-1",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J32",
+  "category": "K2",
+  "countries": [
+   "VN"
+  ],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "S-ETH"
+  ],
+  "ai_lit_note": "高中生以ChatGPT輔助論說文寫作並出現過度依賴，對應「應用AI工具強化領域學習」。",
+  "container": "Discover Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0112",
+  "doi": "10.1145/3757476",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": null,
+  "category": "K4",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "S-BAS"
+  ],
+  "ai_lit_note": "小學生以GenAI介面AskArt進行美術專題並遇提問困難，對應「應用AI工具強化領域學習」。",
+  "container": "Proceedings of the ACM on Human-Computer Interaction",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0218",
+  "doi": "10.1145/3773077.3812166",
+  "batch": "B1",
+  "type": "conference_paper",
+  "source": "C14",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "S-BAS",
+   "S-LRN"
+  ],
+  "ai_lit_note": "分析7–12年級學生對Copilot的提示行為，對應「運用提示詞優化AI互動」。",
+  "container": "Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0219",
+  "doi": "10.3389/feduc.2026.1875856",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J29",
+  "category": "K4",
+  "countries": [
+   "DE"
+  ],
+  "population": "k12",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-PD",
+   "T-TEA",
+   "T-BAS"
+  ],
+  "ai_lit_note": "在職教師參加LLM教學研習後的接受度前後測，屬生成式AI教學培訓，對應「評估教師AI素養以規劃專業增能」。",
+  "container": "Frontiers in Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0113",
+  "doi": "10.1080/10494820.2025.2488143",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J40",
+  "category": "K4",
+  "countries": [
+   "TR",
+   "AE"
+  ],
+  "population": "teacher_ed",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-BAS"
+  ],
+  "ai_lit_note": "職前教師對教學用AI的採用意圖與自我效能，對應「選用適性適規之AI工具」。",
+  "container": "Interactive Learning Environments",
+  "year": 2025,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0220",
+  "doi": "10.1016/j.caeo.2026.100349",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J41",
+  "category": "K4",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-BAS"
+  ],
+  "ai_lit_note": "中小學與職前教師採用AI工具意圖之活動理論模型，對應「選用適性適規之AI工具」。",
+  "container": "Computers and Education Open",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0221",
+  "doi": "10.1186/s40594-026-00631-0",
+  "batch": "TOOL-WAVE",
+  "type": "journal_article",
+  "source": "J31",
+  "category": "K2",
+  "countries": [
+   "CN"
+  ],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "三年級學生以GenAI聊天機器人進行探究提問，對應「應用AI工具強化領域學習」。",
+  "container": "International Journal of STEM Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0222",
+  "doi": "10.3389/feduc.2026.1846955",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J29",
+  "category": "K3",
+  "countries": [],
+  "population": "teacher_ed",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-BAS",
+   "T-ETH"
+  ],
+  "ai_lit_note": "以 MAILS 量表評量師資生 AI 素養（理解、應用、倫理等），對應「區分AI的定義與類別」「理解AI運作與倫理原則」。",
+  "container": "Frontiers in Education",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0223",
+  "doi": "10.1007/s44217-025-01083-4",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J32",
+  "category": "K4",
+  "countries": [
+   "GH"
+  ],
+  "population": "k12",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-PD"
+  ],
+  "ai_lit_note": "在職中學數學教師對 ChatGPT 的覺知、觀感與使用挑戰，對應「評估AI工具輔助教學的適用性」與「評估教師AI素養以規劃專業增能」。",
+  "container": "Discover Education",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0114",
+  "doi": "10.1145/3711026",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": null,
+  "category": "K4",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-BAS",
+   "T-TEA"
+  ],
+  "ai_lit_note": "在職 K-12 教師以 ChatGPT 完成備課任務的提示模式，對應「優化提示以實踐AI協作」與「設計AI與教學法整合的策略」。",
+  "container": "Proceedings of the ACM on Human-Computer Interaction",
+  "year": 2025,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0224",
+  "doi": "10.1016/j.caeo.2026.100387",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J41",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "國中生在音樂歌詞學習中使用 ChatGPT 的接受度，對應「應用AI工具強化領域學習」。",
+  "container": "Computers and Education Open",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0115",
+  "doi": "10.1177/07356331251365187",
+  "batch": "TOOL-WAVE",
+  "type": "journal_article",
+  "source": "J36",
+  "category": "K2",
+  "countries": [
+   "TR"
+  ],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "小學四年級在教師引導下使用 ChatGPT 回饋提升創意寫作，對應「應用AI工具強化領域學習」。",
+  "container": "Journal of Educational Computing Research",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0225",
+  "doi": "10.1007/s10956-026-10363-z",
+  "batch": "TOOL-WAVE",
+  "type": "journal_article",
+  "source": "J37",
+  "category": "K2",
+  "countries": [
+   "ID"
+  ],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "高二學生使用 AR 與 AI 電子模組學習化學反應速率，對應「應用AI工具強化領域學習」。",
+  "container": "Journal of Science Education and Technology",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0226",
+  "doi": "10.1609/aaai.v40i48.42127",
+  "batch": "TOOL-WAVE",
+  "type": "conference_paper",
+  "source": "C22",
+  "category": "K5",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "T-TEA"
+  ],
+  "ai_lit_note": "高中生使用 LLM 回饋代理完成課堂練習，對應「應用AI工具強化領域學習」。",
+  "container": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0227",
+  "doi": "10.1007/s00146-026-03187-3",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J24",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "S-ETH",
+   "S-LRN"
+  ],
+  "ai_lit_note": "研究高中藝術學生對 AI 創作角色、作者身分與著作權倫理的看法，對應「思辨AI中的應用與取捨」與「具備對AI的批判思考」。",
+  "container": "AI & SOCIETY",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0228",
+  "doi": "10.3389/feduc.2026.1701597",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": "J29",
+  "category": "K4",
+  "countries": [
+   "IT"
+  ],
+  "population": "teacher_ed",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-ETH"
+  ],
+  "ai_lit_note": "調查師資生對 AI 寫作工具支援學生自評的看法與實踐，對應「評估AI工具輔助教學的適用性」並涉及過度依賴風險。",
+  "container": "Frontiers in Education",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0229",
+  "doi": "10.1145/3816972",
+  "batch": "B1",
+  "type": "journal_article",
+  "source": null,
+  "category": "K2",
+  "countries": [
+   "DE"
+  ],
+  "population": "k12",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "S-LRN",
+   "T-ETH"
+  ],
+  "ai_lit_note": "比較師生對學生與 AI 決策控制權及信任的看法，對應「理解AI輔助學習的角色功能」與「探究AI問題責任歸屬」。",
+  "container": "Proceedings of the ACM on Human-Computer Interaction",
+  "year": 2026,
+  "boundary": true,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0116",
+  "doi": "10.1080/10494820.2025.2589942",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J40",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "小學生與 GenAI AR 虛擬科學家互動學習，對應「應用AI工具強化領域學習」。",
+  "container": "Interactive Learning Environments",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2026-0230",
+  "doi": "10.1016/j.caeo.2026.100424",
+  "batch": "BF-J40-42",
+  "type": "journal_article",
+  "source": "J41",
+  "category": "K2",
+  "countries": [],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN",
+   "T-TEA"
+  ],
+  "ai_lit_note": "回顧小學語言教育中的 AI 應用與成效，對應「應用AI工具強化領域學習」。",
+  "container": "Computers and Education Open",
+  "year": 2026,
+  "boundary": false,
+  "integrator_note": ""
+ },
+ {
+  "record_id": "KB-2025-0117",
+  "doi": "10.1177/07356331251409998",
+  "batch": "TOOL-WAVE",
+  "type": "journal_article",
+  "source": "J36",
+  "category": "K2",
+  "countries": [
+   "TR"
+  ],
+  "population": "k12",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "四年級學生以 ChatGPT 進行創意寫作，對應「應用AI工具強化領域學習」。",
+  "container": "Journal of Educational Computing Research",
+  "year": 2025,
+  "boundary": false,
+  "integrator_note": ""
+ }
+]
