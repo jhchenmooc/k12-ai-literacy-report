@@ -235,6 +235,8 @@
 | KB-2026-0125 — [Thinking, Making, Enacting --- A Multi-Modal Approach to Children's Conception of AI](https://doi.org/10.1145/3772363.3798981) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0126 — [AI Kitchen: Child-Readable Ingredient Labels and Transparency Stickers for Failure Anticipation and Reliance Calibration](https://doi.org/10.1145/3772363.3799047) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0127 — [Understanding Educators’ Perceptions of AI-generated Non-consensual Intimate Imagery](https://doi.org/10.1145/3772318.3790584) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0128 — [Understanding AI Mechanisms Supports Disciplinary Reasoning and Ethical Judgment in K–12 AI Literacy Education](https://doi.org/10.15388/infedu.2601.025) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0129 — [Teachers' Navigation of Assessing Written Work in Times of Generative AI](https://doi.org/10.33422/ejte.v8i3.1872) | journal_article | 未知 | discovered_unverified |
 
 ## 2027｜issue_year
 

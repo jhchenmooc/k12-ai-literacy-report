@@ -545,3 +545,6 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-0544","KB-2026-0127","has_category","vocabulary","K5","https://doi.org/10.1145/3772318.3790584","discovered_unverified"
 "KR-0545","KB-2026-0127","published_in","source","C13","https://doi.org/10.1145/3772318.3790584","discovered_unverified"
 "KR-0546","KB-2026-0127","studies_country","vocabulary","US","https://doi.org/10.1145/3772318.3790584","discovered_unverified"
+"KR-0547","KB-2026-0128","has_category","vocabulary","K2","https://doi.org/10.15388/infedu.2601.025","discovered_unverified"
+"KR-0548","KB-2026-0129","has_category","vocabulary","K5","https://doi.org/10.33422/ejte.v8i3.1872","discovered_unverified"
+"KR-0549","KB-2026-0129","studies_country","vocabulary","SE","https://doi.org/10.33422/ejte.v8i3.1872","discovered_unverified"
