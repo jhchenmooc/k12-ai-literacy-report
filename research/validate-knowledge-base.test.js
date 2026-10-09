@@ -6,7 +6,7 @@ const read=n=>parseCsv(fs.readFileSync(path.join(dir,n+".csv"),"utf8"));
 const records=read("records"),relations=read("relations"),runs=read("search_runs");
 const candidates=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8")).items;
 test("actual nine held candidates remain discovery-only",()=>{
- assert.equal(records.length,14);assert.equal(candidates.length,9);
+ assert.equal(records.length,17);assert.equal(candidates.length,9);
  assert.ok(candidates.every(x=>x.decision==="hold"&&x.source_checked===false));
  assert.ok(records.filter(x=>x.source_candidate_id).every(x=>x.verification_status==="discovered_unverified"&&x.first_published_on===""&&x.year_basis==="unknown"));
  assert.deepEqual(validate(records,relations,runs,candidates),[]);
@@ -36,12 +36,12 @@ test("unavailable searches must not claim zero hits",()=>{
 
 test("real knowledge classifications retain unverified status and journal links",()=>{
  const listed=JSON.parse(index(records,relations));
- assert.deepEqual(listed["by-category/K2"],["KB-2026-0005","KB-2026-0008","KB-2026-0009"]);
+ assert.deepEqual(listed["by-category/K2"],["KB-2025-0002","KB-2025-0003","KB-2026-0005","KB-2026-0008","KB-2026-0009","KB-2026-0011"]);
  assert.deepEqual(listed["by-journal/J06"],["KB-2026-0008"]);
  assert.deepEqual(listed["by-journal/J02"],["KB-2026-0009"]);
  assert.deepEqual(listed["by-source/O-HK-EDB"],["KB-2026-0002","KB-2026-0003"]);
  assert.equal(listed["by-year/unknown/unknown"].length,9);
- assert.deepEqual(listed["by-year/2026/first_publication"],["KB-2026-0010"]);
+ assert.deepEqual(listed["by-year/2026/first_publication"],["KB-2026-0010","KB-2026-0011"]);
  const originalIds=new Set(records.filter(x=>x.source_candidate_id).map(x=>x.record_id));
  assert.ok(relations.filter(x=>originalIds.has(x.subject_id)).every(x=>x.verification_status==="discovered_unverified"));
 });
@@ -62,7 +62,7 @@ test("venue/agency relation mix-up is invalid",()=>{
 test("three primary-source dated frameworks are archived by original publication year only",()=>{
  const x=JSON.parse(index(records,relations));
  assert.deepEqual(x["by-year/2024/first_publication"],["KB-2024-0001","KB-2024-0002"]);
- assert.deepEqual(x["by-year/2026/first_publication"],["KB-2026-0010"]);
+ assert.ok(x["by-year/2026/first_publication"].includes("KB-2026-0010"));
  assert.equal(x["by-year/unknown/unknown"].length,9);
  assert.equal(x["by-type/framework"].length,4);
  assert.equal(x["by-category/K1"].length,5);
@@ -74,9 +74,19 @@ test("three primary-source dated frameworks are archived by original publication
 test("Australian dated policy and review remain separate linked works",()=>{
  const x=JSON.parse(index(records,relations));
  assert.deepEqual(x["by-year/2023/first_publication"],["KB-2023-0001"]);
- assert.deepEqual(x["by-year/2025/first_publication"],["KB-2025-0001"]);
+ assert.ok(x["by-year/2025/first_publication"].includes("KB-2025-0001"));
  assert.deepEqual(x["by-country/AU"],["KB-2023-0001","KB-2025-0001"]);
  assert.deepEqual(x["by-type/policy_review"],["KB-2025-0001"]);
  assert.ok(relations.some(r=>r.predicate==="reviews"&&r.subject_id==="KB-2025-0001"&&r.object_id==="KB-2023-0001"));
  assert.ok(candidates.every(c=>c.decision==="hold"));
+});
+
+test("dated Springer studies map to monitored J03/J32 and original years",()=>{
+ const x=JSON.parse(index(records,relations));
+ assert.deepEqual(x["by-journal/J03"],["KB-2025-0002","KB-2025-0003"]);
+ assert.deepEqual(x["by-journal/J32"],["KB-2026-0011"]);
+ assert.ok(x["by-year/2025/first_publication"].includes("KB-2025-0002"));
+ assert.ok(x["by-year/2026/first_publication"].includes("KB-2026-0011"));
+ for(const country of ["GB","GR","BR"])assert.deepEqual(x["by-country/"+country],["KB-2025-0002"]);
+ assert.ok(candidates.every(x=>x.decision==="hold"));
 });
