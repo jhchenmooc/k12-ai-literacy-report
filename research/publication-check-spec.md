@@ -12,7 +12,7 @@
 - `source_checked`：人工確認確實取用原始文件（true/false）。
 - `scope_checked`：是否有檢查學段、地域、規範效力或研究對象（true/false）。這是**主張的適用範圍**，不是 AI 素養範圍。
 - `ai_lit_class`（A／B／C／unknown）、`ai_lit_dims`（教育部框架代碼陣列）、`ai_lit_note`（8–300 字，指出對應的內涵）：**AI 素養範圍**，依 [AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)。
-- `audience`：主要對象，`k12`（幼兒園至高中學生、在職教師）／`other_stakeholders`（家長、校長、教育行政主管）／`teacher_ed`（職前教師、師培）／`higher_ed`／`adult`／`unknown`；對象混合者依主要對象。
+- `audience`：主要對象，`k12`（幼兒園至高中學生、在職教師）／`other_stakeholders`（家長、校長、教育行政主管、未限定學段的一般教育工作者）／`teacher_ed`（職前教師、師培）／`higher_ed`／`adult`／`unknown`；對象混合者依主要對象。
 - `outcome_checked`：效果及數值是否有原文方法／結果依據（true/false）。
 - `independent_review`：是否經**真人且不同核查者**核對高影響結論（true/false）。
 - `conflict_unresolved`、`contradiction_type`：是否仍有未解決的原文／日期／樣本／效果數據衝突。
