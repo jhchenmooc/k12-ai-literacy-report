@@ -18,7 +18,7 @@
 |---|---|---|---|---|
 | J01 | 核心 | Computers & Education | 教育科技介入、學習成效、K-12實證 | [期刊頁](https://www.sciencedirect.com/journal/computers-and-education) |
 | J02 | 核心 | Computers & Education: Artificial Intelligence | AI教學、生成式AI、智能輔導 | [期刊頁](https://www.sciencedirect.com/journal/computers-and-education-artificial-intelligence) |
-| J03 | 核心 | International Journal of Artificial Intelligence in Education | AIED、模型、學生與教師AI互動 | [期刊頁](https://link.springer.com/journal/40593) |
+| J03 | 核心 | International Journal of Artificial Intelligence in Education | AIED、模型、學生與教師AI互動 | [2026 起 Elsevier 期刊頁](https://www.sciencedirect.com/journal/international-journal-of-artificial-intelligence-in-education)／[2025 前 Springer 歷史頁](https://link.springer.com/journal/40593) |
 | J04 | 核心 | British Journal of Educational Technology | 教師、學習科技與實證教學 | [期刊頁](https://bera-journals.onlinelibrary.wiley.com/journal/14678535) |
 | J05 | 核心 | Education and Information Technologies | AI素養、校園科技、教師與學生 | [期刊頁](https://link.springer.com/journal/10639) |
 | J06 | 核心 | Journal of Computer Assisted Learning | 人機互動、學習科學、科技增能 | [期刊頁](https://onlinelibrary.wiley.com/journal/13652729) |
@@ -185,3 +185,7 @@ framework_alignment,duplicate_group,weekly_priority,notes
 - 新增 J35–J39 五本期刊、C21–C22 兩個正式會議；既有 J01–J34、C01–C18、C20 代碼不重新編碼。正式池共 39 期刊／21 會議。**NARST 僅列觀察池**，見 [來源登錄與治理](source-registry-and-review-policy-v17.md)。
 - **每季輕量複核、每年完整檢閱，遇停刊、失聯、主辦／出版社重大變動則即時複核**；升降級與移除主動監測不得刪除歷史資料。是否增加或移除來源依 K–12 直接關聯、獨特研究發現、書目與出版日期可核性、搜尋負擔及來源穩定度，不能只看期刊指標。
 - 2026-10-09 的擴充只確認監測入口與主題關聯，**並非全部新增來源的歷年論文均已核證**；正式論文仍以個別 DOI／官方論文集及 Online First 實證查核。原 v1.6 出版閘門不變。
+
+### J03 出版社移轉紀錄（2026-10-09 核對）
+
+Springer 官方期刊頁明示本刊自 **2026-01-01** 起改由 Elsevier 出版；Elsevier 2026 Volume 36 文章頁可追至 DOI `10.1016/j.ijaied.2026.100001`。保留 Springer 作為歷史版入口；不得把出版社移轉當作論文首次公開日期。此處更正**監測入口**，不是宣稱已完成 J03 逐篇 2026 搜尋。來源：[Springer 官方移轉說明](https://link.springer.com/journal/40593)、[Elsevier 2026 文章](https://www.sciencedirect.com/science/article/pii/S1560429226000028)。
