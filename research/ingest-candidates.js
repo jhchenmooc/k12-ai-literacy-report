@@ -2,7 +2,7 @@
 /* Offline, append-only source-discovery batches. No network, publishing or approval. */
 const fs=require("node:fs"),path=require("node:path");
 function day(s){if(typeof s!=="string"||!/^\d{4}-\d\d-\d\d$/.test(s))throw Error("invalid ISO date");const d=new Date(s+"T00:00:00Z");if(!Number.isFinite(+d)||d.toISOString().slice(0,10)!==s)throw Error("invalid calendar date");return d}
-function canonical(url){if(typeof url!=="string")return "";try{const u=new URL(url);if(u.protocol!=="https:")return "";u.hash="";for(const k of [...u.searchParams.keys()])if(/^(utm_|fbclid$|gclid$)/i.test(k))u.searchParams.delete(k);u.searchParams.sort();return u.origin.toLowerCase()+u.pathname.replace(/\/+$/,"").toLowerCase()+u.search}catch{return ""}}
+function canonical(url){if(typeof url!=="string")return "";try{const u=new URL(url);if(u.protocol!=="https:")return "";u.hash="";for(const k of [...u.searchParams.keys()])if(!/^(id|doc|document|file|article_id|paper_id)$/i.test(k))u.searchParams.delete(k);u.searchParams.sort();return u.origin.toLowerCase()+u.pathname.replace(/\/+$/,"").toLowerCase()+u.search}catch{return ""}}
 function key(c){return [c.doi&&"doi:"+String(c.doi).toLowerCase().replace(/^https?:\/\/doi.org\//,"").trim(),c.event_key&&"event:"+String(c.event_key).trim().toLowerCase(),canonical(c.source_url)&&"url:"+canonical(c.source_url)].filter(Boolean)}
 function merge(worksheet,batch,history=[]){
  if(!Array.isArray(history))throw Error("invalid history");
