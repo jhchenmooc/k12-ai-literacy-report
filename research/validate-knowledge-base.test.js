@@ -6,7 +6,7 @@ const read=n=>parseCsv(fs.readFileSync(path.join(dir,n+".csv"),"utf8"));
 const records=read("records"),relations=read("relations"),runs=read("search_runs");
 const candidates=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8")).items;
 test("actual nine held candidates remain discovery-only",()=>{
- assert.equal(records.length,22);assert.equal(candidates.length,9);
+ assert.equal(records.length,24);assert.equal(candidates.length,9);
  assert.ok(candidates.every(x=>x.decision==="hold"&&x.source_checked===false));
  assert.ok(records.filter(x=>x.source_candidate_id).every(x=>x.verification_status==="discovered_unverified"&&x.first_published_on===""&&x.year_basis==="unknown"));
  assert.deepEqual(validate(records,relations,runs,candidates),[]);
@@ -107,4 +107,12 @@ test("Japan Korea and England historical official announcements retain jurisdict
  assert.ok(x["by-source/O-KR-MOE"].includes("KB-2024-0004"));
  assert.ok(x["by-source/O-UK-DFE"].includes("KB-2023-0002"));
  assert.ok(candidates.every(c=>c.decision==="hold"));
+});
+
+test("Discover Education July and May 2026 studies keep exact online dates",()=>{
+ const x=JSON.parse(index(records,relations));
+ assert.deepEqual(x["by-journal/J32"],["KB-2026-0011","KB-2026-0014","KB-2026-0015"]);
+ assert.deepEqual(x["by-country/TH"],["KB-2026-0015"]);
+ assert.ok(x["by-year/2026/first_publication"].includes("KB-2026-0014"));
+ assert.ok(candidates.every(y=>y.decision==="hold"));
 });
