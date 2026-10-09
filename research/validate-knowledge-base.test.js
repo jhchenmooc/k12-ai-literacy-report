@@ -36,7 +36,7 @@ test("unavailable searches must not claim zero hits",()=>{
 
 test("real knowledge classifications retain unverified status and journal links",()=>{
  const listed=JSON.parse(index(records,relations));
- assert.deepEqual(listed["by-category/K2"],["KB-2026-0005","KB-2026-0008","KB-2026-0009"]);
+ assert.deepEqual(listed["by-category/K2"],["KB-2025-0002","KB-2025-0003","KB-2026-0005","KB-2026-0008","KB-2026-0009","KB-2026-0011"]);
  assert.deepEqual(listed["by-journal/J06"],["KB-2026-0008"]);
  assert.deepEqual(listed["by-journal/J02"],["KB-2026-0009"]);
  assert.deepEqual(listed["by-source/O-HK-EDB"],["KB-2026-0002","KB-2026-0003"]);
