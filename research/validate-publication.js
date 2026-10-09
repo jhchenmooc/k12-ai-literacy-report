@@ -114,6 +114,18 @@ function dailyFact(c,issueDate){
  if(attributed&&/(已證實|證明|因果|必然|全面強制|所有學生|所有教師|保證有效|應在臺灣推動)/.test(c.attributed_summary||""))errors.push("attributed summary contains disallowed inference or high-impact wording");
  return errors;
 }
+function matchingCumulativeCandidates(root,sourceUrl){
+ const dir=path.join(root,"research","drafts");
+ if(!fs.existsSync(dir))return [];
+ const hits=[];
+ for(const name of fs.readdirSync(dir)){
+  if(!/^\d{4}-\d{2}-\d{2}_\d{4}-\d{2}-\d{2}\.json$/.test(name))continue;
+  let sheet;try{sheet=JSON.parse(fs.readFileSync(path.join(dir,name),"utf8"))}
+  catch(e){throw Error("invalid cumulative candidate file "+name+": "+e.message)}
+  for(const item of sheet.items||[])if(item&&item.source_url===sourceUrl)hits.push(item);
+ }
+ return hits;
+}
 function validate(root){
  const errors=[],warnings=[],entry=path.join(root,"publication/issues.json");
  if(!fs.existsSync(entry))return {ok:false,errors:["publication/issues.json missing"],warnings};
@@ -149,6 +161,12 @@ function validate(root){
    if(claimIds.has(c.claim_id))errors.push("duplicate claim_id in "+q+": "+c.claim_id);claimIds.add(c.claim_id);
    if(c.decision!=="publish"){errors.push("edition contains unpublished/held claim "+q+" "+c.claim_id);continue}
    if(daily)errors.push(...dailyFact(c,issueDate||"0000-00-00").map(e=>q+" "+c.claim_id+": "+e));
+   if(daily){
+    for(const prior of matchingCumulativeCandidates(root,c.source_url)){
+     if(prior.decision!=="publish"||prior.source_checked!==true||prior.first_disclosed_on!==c.first_disclosed_on)
+      errors.push(q+" "+c.claim_id+": daily claim contradicts held/unverified cumulative candidate "+prior.candidate_id);
+    }
+   }
    if(daily&&!dailySourceLink(html,c))errors.push(q+" "+c.claim_id+": original source URL must be visible as a direct anchor");
    const result=check(c);
    if(!result.allow)errors.push(q+" "+c.claim_id+": "+result.reasons.join("; "));
