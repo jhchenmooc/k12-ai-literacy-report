@@ -3,9 +3,9 @@
  * local source snapshot. This does not certify translation, context or truth. */
 const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
 const SAFE=/^publication\/sources\/[a-zA-Z0-9_-]+\.(txt|md)$/;
-function sourceTrace(root,c){
+function sourceTrace(root,c,options={}){
  const errors=[],claim=c||{};
- if(claim.claim_class==="bibliographic")return errors;
+ if(claim.claim_class==="bibliographic"&&!options.requireBibliographicSnapshot)return errors;
  if(typeof claim.evidence_path!=="string"||!SAFE.test(claim.evidence_path))return ["missing/invalid evidence_path"];
  const full=path.resolve(root,claim.evidence_path),rootSources=path.resolve(root,"publication/sources");
  if(!full.startsWith(rootSources+path.sep))return ["evidence_path outside allowed directory"];
