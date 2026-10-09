@@ -64,6 +64,10 @@ jobs:
           node research/render-knowledge-base-years.js
       - name: Validate issue manifests and claim metadata
         run: node research/validate-publication.js .
+      - name: Verify generated site pages (lists, archive, about, homepage blocks)
+        run: |
+          node --test research/render-site.test.js
+          node research/render-site.js
   deploy:
     needs: verify
     if: github.event_name != 'pull_request' && vars.ENABLE_VERIFIED_PAGES_DEPLOY == 'true'
@@ -77,12 +81,14 @@ jobs:
         run: |
           mkdir -p _public_site/publication
           cp index.html .nojekyll _public_site/
-          for dir in feedback weekly monthly daily assets design-system; do
+          for dir in feedback weekly monthly daily archive about assets design-system; do
             if [ -d "$dir" ]; then cp -R "$dir" "_public_site/$dir"; fi
           done
           cp publication/issues.json _public_site/publication/issues.json
           test ! -e _public_site/research
           test -f _public_site/index.html
+          test -f _public_site/archive/index.html
+          test -f _public_site/about/index.html
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
