@@ -121,6 +121,35 @@ function dailyFixture(d,c){
 }
 const dailyLow={...claim,claim_class:"bibliographic",risk_tier:"low",level:"N-V1",checked_at:"2026-10-10",source_title:"Synthetic school AI announcement",source_organization:"Example Institution",daily_fact_kind:"official_notice",source_document_type:"official_guidance",first_disclosed_on:"2026-10-10",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。"};
 const reviewedMain='<main><p data-claim-id="C1">合成案例：某機構公告</p></main>';
+test('P3 regression: unreviewed tooltips on claims and links are rejected',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ for(const html of [reviewedMain.replace('<p ','<p title="UNVERIFIED: 全面強制" '),reviewedMain.replace('合成案例：某機構公告','<a href="https://example.org/official" title="UNVERIFIED">合成案例：某機構公告</a>')]){
+  updateHtml(d,html);assert.equal(validate(d).ok,false);
+ }
+});
+test('P3 regression: arbitrary bare report tab titles are rejected',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ updateHtml(d,'<head><title>UNVERIFIED: 全面強制</title></head>'+reviewedMain);assert.equal(validate(d).ok,false);
+});
+test('P3 control: bare report neutral issue title is accepted',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ updateHtml(d,'<head><title>週報 2026-10-09_10-15｜K-12 AI 素養國際動態</title></head>'+reviewedMain);assert.equal(validate(d).ok,true);
+});
+test('P3 regression: non-UTF-8 or empty charset declarations are rejected',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ for(const charset of ['big5','windows-1252','utf-16','']){
+  updateHtml(d,'<head><meta charset="'+charset+'"></head>'+reviewedMain);assert.equal(validate(d).ok,false,charset);
+ }
+ for(const content of ['text/html; charset=big5','text/html; charset="utf-16"']){
+  updateHtml(d,'<head><meta http-equiv="Content-Type" content=\''+content+'\'></head>'+reviewedMain);assert.equal(validate(d).ok,false,content);
+ }
+});
+test('P3 control: absent and UTF-8 charset declarations are accepted',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ for(const meta of ['', '<meta charset="utf-8">','<meta charset="UTF-8">','<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">']){
+  updateHtml(d,'<head>'+meta+'</head>'+reviewedMain);assert.equal(validate(d).ok,true,meta);
+ }
+});
 const shellAttacks={
  "outside heading":reviewedMain+'<h1>未審核結論</h1>',
  "outside aside":reviewedMain+'<aside>未審核結論</aside>',

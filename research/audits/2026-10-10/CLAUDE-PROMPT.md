@@ -2,6 +2,8 @@
 
 請對以下 GitHub 分支做一次獨立、多角度程式碼審查。這是對已有修正的驗證，請不要直接接受 Codex 報告的結論；檢查實作、重現反例、尋找回歸及未涵蓋的繞過。
 
+最新狀態：你對 e37ec618d1c58198957751e6ee4729d0879fb7b9 已確認 P1-1／P2-1 修正、無阻擋事項。本輪為 P3 收尾，先比較該 SHA 到最新 HEAD，驗證 tooltip 禁止、最小頁面中性期別 title、charset／Content-Type 的 UTF-8 規則與合法控制組。讀取 `p3-followup/REPORT.md` 與 `research/PUBLICATION-CONTRIBUTING.md`，確認 P3-2 的保守語法限制已記錄，P3-3 的週／月報 renderer 是明確待辦而非冒稱完成。重新執行 portable verifier，預期 288 項測試與 75 份佐證。請勿建立 PR、合併或部署。
+
 本次為你先前指出 P1-1（main 外內容／隱藏正文）與 P2-1（SVG animate／set）的補修複審。先記錄最新 HEAD，比較 `c015a5c5b608c0c2622fcea11dc4a0120d67f0dd..HEAD`；再檢查完整基準差異。讀取 `claude-followup/claude-review.txt`、`claude-followup/REPORT.md` 與新增測試，獨立確認正文直接位於 HTML body、正文外固定 shell、共享 CSS／renderer 信任邊界、foreign namespace 阻擋及合法內容相容性。對 shared CSS 被修改、head metadata、任意屬性與新的 parser 重建反例提出明確範圍判斷，不能把 283 項通過當成安全證明。
 
 Repository：https://github.com/jhchenmooc/k12-ai-literacy-report

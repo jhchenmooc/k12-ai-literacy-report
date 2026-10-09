@@ -4,6 +4,8 @@
 
 **Claude 審查後更新**：原 S1／S2 仍有繞過，已獨立重現並補修。最新說明見 [補修報告](claude-followup/REPORT.md) 與 [原始外部回覆](claude-followup/claude-review.txt)。新增 25 個測試，Windows Node 22／24 各 283/283 通過；以分支實際 HEAD 檢查本輪修正，不要只檢查下表的第一輪程式提交。27 個保全資料檔案仍不變。
 
+**最新複審與 P3 收尾**：Claude 對 e37ec61 確認 P1-1／P2-1 已修正，無阻擋合併問題。本輪再處理 tooltip、最小頁面標題與編碼宣告，新增 [貢獻契約](../../PUBLICATION-CONTRIBUTING.md) 和 [P3 報告](p3-followup/REPORT.md)。Windows Node 22／24 各 288/288 通過。週／月報完整 renderer 仍是首次正式出刊前待辦；遠端 CI 尚未跑過修正提交。
+
 | 項目 | 固定值 |
 |---|---|
 | Repository | `jhchenmooc/k12-ai-literacy-report` |
@@ -11,7 +13,7 @@
 | 原始稽核基準 | `2329a91d1e5af66da00848fa72daca2c230edb47` |
 | 程式修正提交 | `a1b686dd64a10cd759ea195c17c4c857a46c313e` |
 | 審查範圍 | 基準到上述程式提交的 40 個檔案差異；本包與入口連結是其後的文件提交 |
-| 最新本機測試 | Windows：Node 22.23.3 與 24.16.0 各 283/283，0 skipped；封存時為補修 working tree |
+| 最新本機測試 | Windows：Node 22.23.3 與 24.16.0 各 288/288，0 skipped；封存時為 P3 補修 working tree |
 | 資料保全 | 27 個來源、CSV、工作表、publication JSON 及既有刊物檔案 SHA-256 不變 |
 
 ## 閱讀順序
@@ -27,7 +29,7 @@
 - `fixes/` 是本機修正完成時的歷史紀錄，最新全測為 `self-review-node22-tests.log` 與 `self-review-node24-tests.log`；較早的 `all-node*-tests.log` 為 250 項版本。`self-review-*-red-tests.log` 保存修正前反例，不是最終失敗。
 - `fixes/REPORT.md`、`change-summary.json` 內「未 commit／未 push」、舊分支與 Windows 絕對路徑，描述的是封存時的狀態。本分支已將程式提交並整理交接；以本入口、Git commit 和自行取得的 HEAD 為審查依據。
 - `baseline` 的 GitHub CI 是基準 SHA 的紀錄，不能當作修正提交通過 CI 的證據。本審查分支未建立 PR；既有 workflow 的 push 觸發只包含 main，推送此分支不會自動執行該 CI 或部署。
-- 本包的歷史檔案保持原始位元組；[evidence-manifest.json](evidence-manifest.json) 記錄原 63 份佐證及本輪 7 份外部審查／補修佐證，共 70 份檔案的大小及 SHA-256。排除可重建的 Node 安裝包、node_modules、npm cache、完整 repository 壓縮副本及重複產物。未帶入憑證。
+- 本包的歷史檔案保持原始位元組；[evidence-manifest.json](evidence-manifest.json) 記錄原 63 份、第一輪外部審查補修 7 份及 P3 收尾 5 份，共 75 份檔案的大小及 SHA-256。排除可重建的 Node 安裝包、node_modules、npm cache、完整 repository 壓縮副本及重複產物。未帶入憑證。
 
 ## 重現檢查
 

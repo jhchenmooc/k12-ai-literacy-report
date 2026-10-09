@@ -39,11 +39,16 @@ function shellShape(node){
  return [node.nodeName,node.namespaceURI||"",(node.attrs||[]).map(a=>[a.namespace||"",a.name,a.value]).sort((a,b)=>JSON.stringify(a)<JSON.stringify(b)?-1:1),
   node.tagName==="main"?[]:children(node).map(shellShape).filter(x=>x!==null)];
 }
-function registeredShell(document,main,issueDate){
+function registeredShell(document,main,issueDate,issuePath){
  const errors=[],nodes=all(document),body=nodes.find(n=>n.tagName==="body"&&n.namespaceURI===HTML_NS);
  if(main.namespaceURI!==HTML_NS||main.parentNode!==body)errors.push("main must be an HTML element directly inside body");
  for(const node of nodes){
   if(node.tagName==="style")errors.push("registered report inline stylesheet forbidden");
+  if(node.tagName==="meta"){
+   const charset=attr(node,"charset");
+   if(charset!==undefined&&charset.trim().toLowerCase()!=="utf-8")errors.push("registered report charset must be UTF-8");
+   if(String(attr(node,"http-equiv")||"").trim().toLowerCase()==="content-type"&&!/^text\/html\s*;\s*charset\s*=\s*utf-8\s*$/i.test(attr(node,"content")||""))errors.push("registered report content-type declaration must specify UTF-8");
+  }
   if(node.tagName==="link"){
    const rel=attr(node,"rel"),href=attr(node,"href")||"";
    if(rel==="stylesheet"&&!/^\.\.\/\.\.\/assets\/(?:design-system\.css|site\.css(?:\?v=[a-f0-9]{10})?)$/.test(href))errors.push("registered report stylesheet must be a reviewed shared local asset");
@@ -57,17 +62,20 @@ function registeredShell(document,main,issueDate){
   }
   const head=nodes.find(n=>n.tagName==="head");
   for(const node of all(head||{}))if(node.tagName&&!["head","meta","title","link"].includes(node.tagName))errors.push("bare report unsupported head element");
+  const [channel,period]=issuePath.split("/"),label={daily:"每日短訊",weekly:"週報",monthly:"月報"}[channel];
+  const expectedTitle=label+" "+period+"｜K-12 AI 素養國際動態";
+  for(const node of nodes.filter(n=>n.tagName==="title"))if(normalized(text(node))!==expectedTitle)errors.push("bare report title must be the neutral issue title: "+expectedTitle);
  }else if(issueDate){
   const expected=parse5.parse(require("./render-site.js").renderDailyEdition({date:issueDate,claims:[]}));
   if(JSON.stringify(shellShape(document))!==JSON.stringify(shellShape(expected)))errors.push("registered daily shell differs from trusted renderer outside main");
  }else errors.push("registered report body outside main requires an approved renderer shell");
  return errors;
 }
-function matchBody(document,claims,issueDate){
+function matchBody(document,claims,issueDate,issuePath){
  const errors=[],mains=all(document).filter(n=>n.tagName==="main");
  if(mains.length!==1)return ["expected exactly one static main region"];
  const main=mains[0],nodes=all(main),content=nodes.filter(n=>substantive.has(n.tagName));
- errors.push(...registeredShell(document,main,issueDate));
+ errors.push(...registeredShell(document,main,issueDate,issuePath));
  for(let ancestor=main.parentNode;ancestor;ancestor=ancestor.parentNode){
   if((ancestor.attrs||[]).some(a=>["hidden","style","srcdoc","contenteditable"].includes(a.name)))errors.push("dynamic/hidden ancestor of main unsupported");
  }
@@ -77,7 +85,7 @@ function matchBody(document,claims,issueDate){
   if(node.nodeName==="#comment"||node.nodeName==="#documentType")errors.push("comments/declarations unsupported within main");
   if(node.tagName&&!safeTags.has(node.tagName))errors.push("unsupported HTML tag in main: "+node.tagName);
   if(node.tagName&&node.namespaceURI!==HTML_NS)errors.push("non-HTML namespace unsupported within main");
-  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","title","datetime","colspan","rowspan","scope"].includes(a.name))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
+  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
  }
  for(const node of content){
   const t=normalized(text(node));if(!t)continue;
@@ -194,7 +202,7 @@ function validate(root){
   let html;try{html=fs.readFileSync(htmlPath,"utf8")}catch(e){errors.push("edition HTML unreadable "+p+": "+e.message);continue}
   const dom=parsed(html);errors.push(...dom.errors.map(e=>p+": "+e));
   errors.push(...staticHtmlSafety(dom.document,p));
-  errors.push(...matchBody(dom.document,data,issueDate).map(e=>p+": "+e));
+  errors.push(...matchBody(dom.document,data,issueDate,p).map(e=>p+": "+e));
   const claimIds=new Set();
   for(const c of data){
    if(!c||typeof c!=="object"){errors.push("invalid claim in "+q);continue}
