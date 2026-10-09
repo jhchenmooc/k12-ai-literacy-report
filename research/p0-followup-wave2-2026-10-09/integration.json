@@ -1,0 +1,137 @@
+{
+  "base_sha": "6afbbfea5faf6891f4af21a9fe0bfcb91d1a6807",
+  "integrated_at_utc": "2026-10-09T14:34:24.931Z",
+  "formal_tables_unchanged_during_search": true,
+  "baseline": [
+    {
+      "path": "research/knowledge-base/data/records.csv",
+      "sha256": "BD52D53E8CD26536854C7601794D7CB213A1ABFF066228D24B34700473643E04"
+    },
+    {
+      "path": "research/knowledge-base/data/relations.csv",
+      "sha256": "F1C170F1F3FAE79C9989BA62D6E7208F7C99AA6A0754D641AD10CC2DB65DC888"
+    },
+    {
+      "path": "research/knowledge-base/data/search_runs.csv",
+      "sha256": "C67D4569AAD27879A47483026EE0A9AF59D7E5A233B52E43537253227EC56B70"
+    },
+    {
+      "path": "research/drafts/2026-10-09_2026-10-15.json",
+      "sha256": "67468D0C5315358C0C30A6F6B8CC0E87CF78B5E483C991ABA33B5B227D15109E"
+    },
+    {
+      "path": "publication/issues.json",
+      "sha256": "96D2717FA58338E5A232FFFE115F40CD97BE07367E8ABA58F3217AA463869BC1"
+    }
+  ],
+  "initial": {
+    "records": 32,
+    "relations": 74,
+    "runs": 25
+  },
+  "after": {
+    "records": 36,
+    "relations": 82,
+    "runs": 34,
+    "source_ids": 26
+  },
+  "listed_samples": 8,
+  "unique_dois": 8,
+  "duplicate_sample_occurrences": 0,
+  "existing_master_revisits": 0,
+  "timings": [
+    {
+      "group": "A",
+      "dispatched": "2026-10-09T14:25:47Z",
+      "started": "2026-10-09T14:26:13Z",
+      "finished": "2026-10-09T14:28:55Z"
+    },
+    {
+      "group": "B",
+      "dispatched": "2026-10-09T14:25:47Z",
+      "started": "2026-10-09T14:26:32Z",
+      "finished": "2026-10-09T14:29:17Z"
+    },
+    {
+      "group": "C",
+      "dispatched": "2026-10-09T14:25:47Z",
+      "started": "2026-10-09T14:26:49Z",
+      "finished": "2026-10-09T14:30:21Z"
+    }
+  ],
+  "ledger": [
+    {
+      "source_id": "J15",
+      "doi": "10.1016/j.learninstruc.2026.102435",
+      "action": "retain_staging",
+      "record_id": null,
+      "reason": "Known historical audit sample, undergraduate population; exclude K-12 direct evidence. Online date unknown; 2026 issue does not prove first release.",
+      "read_scope": "Official publisher search-index abstract and selected section snippets; entire formal text not read."
+    },
+    {
+      "source_id": "J16",
+      "doi": "10.1080/10508406.2026.2686084",
+      "action": "add_bibliography",
+      "record_id": "KB-2026-0018",
+      "reason": "Official publisher indexed article and latest-articles metadata pair DOI/title with Published online August4. Historical qualitative secondary ELA study only; 62 essays is not verified student count. Date belongs to publisher manifestation; no earliest-version or causal efficacy certification.",
+      "read_scope": "Official publisher indexed selected framework, writing analysis, focal-student and limitation passages plus journal metadata; full formal article not read."
+    },
+    {
+      "source_id": "J17",
+      "doi": "10.1016/j.edurev.2026.100813",
+      "action": "retain_staging",
+      "record_id": null,
+      "reason": "Formal meta-analysis identity supported but K-12 composition/design/bias and exact online date require deeper original inspection; no pooled or moderator efficacy claim adopted.",
+      "read_scope": "Official publisher indexed abstract/highlights and metadata; entire formal text not read."
+    },
+    {
+      "source_id": "J18",
+      "doi": "10.3102/00346543241293424",
+      "action": "retain_staging",
+      "record_id": null,
+      "reason": "Publisher first online December6 2024 precedes planned discovery window. 2026 issue cannot reset date; disability-specific AI-mediated intervention outcomes are not direct AI-literacy teaching evidence.",
+      "read_scope": "publisher abstract, selected introduction, date metadata; not whole text"
+    },
+    {
+      "source_id": "J19",
+      "doi": "10.3102/0013189x251385537",
+      "action": "add_bibliography",
+      "record_id": "KB-2025-0010",
+      "reason": "Integrator directly read SAGE original DOI/title, First published online October30 2025 and Review article designation. Mixed K-12/higher-education conceptual synthesis/proposed model, not causal intervention or binding policy. 2026 issue separate; no complete full-text certification.",
+      "read_scope": "publisher title/DOI/abstract/date metadata; not whole text"
+    },
+    {
+      "source_id": "C10",
+      "doi": "10.1007/978-3-032-03873-9_13",
+      "action": "add_bibliography",
+      "record_id": "KB-2025-0011",
+      "reason": "Integrator directly read Springer original First Online September2 2025, DOI/title and five middle-school teachers focus-group abstract. Poster placement in EC-TEL2025 proceedings; 2026 citation/copyright year not first-online. Teacher perceptions, no student efficacy claim.",
+      "read_scope": "publisher_abstract_metadata"
+    },
+    {
+      "source_id": "C11",
+      "doi": "10.58459/icce.2025.6011",
+      "action": "add_bibliography",
+      "record_id": "KB-2025-0012",
+      "reason": "Formal APSCE DOI/title/publication metadata directly read; selected formal PDF methods support single-school Grade6 course pre/post. Preserve no-control and recruited-versus-analysed denominator limits; full/short classification unconfirmed. Bibliographic only, publisher manifestation date not global earliest-version proof.",
+      "read_scope": "formal_pdf_partial_sections_3_4_5_table1_text_extraction"
+    },
+    {
+      "source_id": "C12",
+      "doi": "10.1145/3698205.3733948",
+      "action": "retain_staging",
+      "record_id": null,
+      "reason": "Author bibliography/preprint system demonstration; formal ACM date/type inaccessible and no verified recruited K-12 study. Illustrative algebra scenario is not empirical student efficacy. arXiv submission dates not exact first-public dates.",
+      "read_scope": "author_preprint_v2_partial_text_and_submission_metadata; formal publisher none"
+    }
+  ],
+  "validation": {
+    "tests": 195,
+    "passed": 195
+  },
+  "independent_verification": {
+    "started": "2026-10-09T14:29:58Z",
+    "ended": "2026-10-09T14:32:59Z",
+    "checks": 4
+  }
+}

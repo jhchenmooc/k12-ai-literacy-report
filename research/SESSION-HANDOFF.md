@@ -255,4 +255,16 @@
 
 **尚待完成**：上述衝突、C05 first-public/v2歷程、C06正式原文與日期、C07正式publisher／作者版本歷程、C08正式版與preprint逐段差異，完整正式全文仍未核讀。B初始repo閱讀／各查詢精確時間未留存，以null與觀測窗記錄；321秒dispatch參考至最後交付可證平行批次牆鐘，但沒有實測串行／費用，不報加速倍數。
 
-**下一波與GitHub閘門**：第一波整合[PR #91](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/91)須核對最新HEAD verify，合併後核main verify/deploy；本段提交時不預寫這一波GitHub成功，實際結果隨PR描述補上。完成後重新查看usage，再按授權接A J15–J17、B J18–J19/C09、C C10–C12，每組來源責任隔離。政策版本補核、其餘39期刊／21會議覆蓋及P0對帳仍待完成；不提前P1/P2。九筆候選hold/source_checked=false、正式新期別零、不自動搜尋／發刊及v1.6規則保持不變。
+**第一波GitHub實際驗收**：[PR #91](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/91)最新HEAD `1a5591bdb83f2092ad3b4c8f1830f45a7837af16`的[Run37943747596](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37943747596) verify成功，核對head_sha/event後以expected_head_sha合併。main `6afbbfea5faf6891f4af21a9fe0bfcb91d1a6807`的[Run37943852243](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37943852243) verify/deploy均成功。本段於下一波補正，不以早期CI代替最新HEAD驗收。
+
+**下一波與額度**：完成第一波後帳號5小時使用74%、每週23%，因此第二波按授權維持三組，但每來源最多一筆代表樣本、少量條件查詢，保留核查／整合額度；不是九來源全文普查。A J15–J17、B J18–J19/C09、C C10–C12，每組來源責任隔離。政策版本補核、其餘39期刊／21會議覆蓋及P0對帳仍待完成；不提前P1/P2。九筆候選hold/source_checked=false、正式新期別零、不自動搜尋／發刊及v1.6規則保持不變。
+
+### 2026-10-09｜P0第二波完成搜尋／獨立核查與整合
+
+三組local按上述來源責任實際平行，產物見[p0-followup-wave2](p0-followup-wave2-2026-10-09/integration.md)。九來源八樣本／八DOI；組間及既有主表重複0，J15為旧audit重訪，不能報八篇全新發現。四筆歷史書目J16/J19/C10/C11入庫，records32→36、relations74→82、runs25→34、唯一來源ID26/60；C09僅query_scoped，其餘items_screened，全批partial／命中unknown，不代表全面覆蓋。四筆獨立核查未讀第一輪結論；所有書目保持bibliographic_checked，無完整正式全文認證。
+
+J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026-03；C10 online2025-09-02而citation2026。J16中央以官方indexed DOI頁及latest-articles確認8/4，但獨立核查該次直接存取受阻、日期unknown，不能宣稱兩輪日期都直接確認。C11單校小六無已核對照組，145招募不等已確認配對分析分母；J17學段分布/研究品質仍待原文；C12示例不是學生實驗。高風險成效未採納，未知日期/版本/方法不猜補。
+
+尚待：C09正式論文集可核樣本；J17全文學段/設計；第一波J10日期、C05分母與v2/首發、C06原文、C07/C08正式版本；政策版本與其餘J20–J39/C13–C22依優先級。P0未完，不進P1/P2，不再擴六個同時執行者。第二波後usage5小時96%、每週27%，不啟第三批或額度重置。九候選hold/source_checked=false、零正式期別與v1.6不變，無自動發刊。
+
+本批整合PR最新HEAD verify成功才合併，main verify/deploy另核；提交時不預寫成功，最終結果以該PR描述/Actions為準。

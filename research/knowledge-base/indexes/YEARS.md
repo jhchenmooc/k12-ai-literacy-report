@@ -28,6 +28,9 @@
 | KB-2025-0004 — [ReVEAL model and its application to revealing viewpoints on educational approaches to learning about data and AI](https://www.tandfonline.com/doi/abs/10.1080/08993408.2025.2516957) | journal_article | 2025-06-30 | bibliographic_checked |
 | KB-2025-0005 — [Barriers to integrating artificial intelligence education: implications from five early adopters in South Korea](https://www.tandfonline.com/doi/abs/10.1080/08993408.2025.2565199) | journal_article | 2025-09-29 | bibliographic_checked |
 | KB-2025-0008 — [AI Literacy in K-12 and Higher Education in the Wake of Generative AI: An Integrative Review](https://dl.acm.org/doi/10.1145/3702652.3744217) | conference_paper | 2025-08-02 | bibliographic_checked |
+| KB-2025-0010 — [The AI3 Model: Future Directions for Artificial Intelligence, Assessment Innovation, and Academic Integrity](https://journals.sagepub.com/doi/10.3102/0013189X251385537) | journal_article | 2025-10-30 | bibliographic_checked |
+| KB-2025-0011 — [Teacher Agency in Implementing Automated Writing Evaluation Systems in a Science Classroom: A Focus Group Study](https://link.springer.com/chapter/10.1007/978-3-032-03873-9_13) | conference_paper | 2025-09-02 | bibliographic_checked |
+| KB-2025-0012 — [Teaching Machine Learning to Senior Primary Students: Evaluating a Course for AI Literacy in a Hong Kong Primary School](https://library.apsce.net/index.php/ICCE/article/view/6011) | conference_paper | 2025-12-01 | bibliographic_checked |
 
 ## 2025｜issue_year
 
@@ -49,6 +52,7 @@
 | KB-2026-0015 — [Perspectives of secondary school students toward using generative AI as a summative assessment tool of social studies courses in Thailand](https://link.springer.com/article/10.1007/s44217-026-01565-z) | journal_article | 2026-05-05 | bibliographic_checked |
 | KB-2026-0016 — [Key elements in student AI literacy development: Insights from psychometric network analyses](https://doi.org/10.1016/j.chbr.2026.101041) | journal_article | 2026-04-02 | bibliographic_checked |
 | KB-2026-0017 — [Using Design Projects to Understand Youths’ Experiences with AI](https://dl.acm.org/doi/10.1145/3816694) | journal_article | 2026-05-25 | bibliographic_checked |
+| KB-2026-0018 — [Leveraging Onto-Epistemic Heterogeneity for “Outward” Exploration: Cultivating Critical AI Awareness in the ELA Classroom](https://www.tandfonline.com/doi/full/10.1080/10508406.2026.2686084) | journal_article | 2026-08-04 | bibliographic_checked |
 
 ## unknown｜unknown
 

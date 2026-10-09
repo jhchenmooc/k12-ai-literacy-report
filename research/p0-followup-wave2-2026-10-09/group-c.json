@@ -1,0 +1,250 @@
+{
+  "group": "C",
+  "source_ids": [
+    "C10",
+    "C11",
+    "C12"
+  ],
+  "dispatched_at_utc": "2026-10-09T14:25:47Z",
+  "started_at_utc": "2026-10-09T14:26:49Z",
+  "source_review_ended_at_utc": "2026-10-09T14:28:38Z",
+  "finished_at_utc": "2026-10-09T14:30:21Z",
+  "scope_start": "2025-01-01",
+  "scope_end": "2026-10-09",
+  "base_sha": "6afbbfea5faf6891f4af21a9fe0bfcb91d1a6807",
+  "queries": [
+    {
+      "source_id": "C10",
+      "query": "site.link.springer.com EC-TEL 2025 \"AI literacy\"",
+      "searched_at_utc": null,
+      "observed_utc_window": [
+        "2026-10-09T14:26:49Z",
+        "2026-10-09T14:27:32Z"
+      ]
+    },
+    {
+      "source_id": "C10",
+      "query": "site.link.springer.com EC-TEL 2026 \"school\" artificial intelligence",
+      "searched_at_utc": null,
+      "observed_utc_window": [
+        "2026-10-09T14:26:49Z",
+        "2026-10-09T14:27:32Z"
+      ]
+    },
+    {
+      "source_id": "C11",
+      "query": "site.apsce.net ICCE 2025 \"AI literacy\"",
+      "searched_at_utc": null,
+      "observed_utc_window": [
+        "2026-10-09T14:26:49Z",
+        "2026-10-09T14:27:32Z"
+      ]
+    },
+    {
+      "source_id": "C10",
+      "query": "site.link.springer.com/chapter \"2025\" \"EC-TEL\" \"teachers\"",
+      "searched_at_utc": null,
+      "observed_utc_window": [
+        "2026-10-09T14:27:32Z",
+        "2026-10-09T14:28:25Z"
+      ]
+    },
+    {
+      "source_id": "C11",
+      "query": "site.library.apsce.net \"Teaching Machine Learning to Senior Primary Students\"",
+      "searched_at_utc": null,
+      "observed_utc_window": [
+        "2026-10-09T14:27:32Z",
+        "2026-10-09T14:28:25Z"
+      ]
+    },
+    {
+      "source_id": "C12",
+      "query": "site.dl.acm.org \"2025\" \"Learning at Scale\" \"K-12\"",
+      "searched_at_utc": null,
+      "observed_utc_window": [
+        "2026-10-09T14:27:32Z",
+        "2026-10-09T14:28:25Z"
+      ]
+    },
+    {
+      "source_id": "C12",
+      "query": "site.dl.acm.org \"2026\" \"Learning at Scale\" \"AI literacy\"",
+      "searched_at_utc": null,
+      "observed_utc_window": [
+        "2026-10-09T14:27:32Z",
+        "2026-10-09T14:28:25Z"
+      ]
+    },
+    {
+      "source_id": "C12",
+      "query": "\"Learning\" \"Scale\" \"2025\" \"Predicting Teacher Interventions\" ACM DOI",
+      "searched_at_utc": null,
+      "observed_utc_window": [
+        "2026-10-09T14:27:32Z",
+        "2026-10-09T14:28:25Z"
+      ]
+    }
+  ],
+  "timing_limitation": "Precise per-query instants were not captured; actual clock-observed bounds retained instead of fabricated timestamps.",
+  "access_attempts": [
+    {
+      "url": "https://link.springer.com/book/10.1007/978-3-032-03873-9",
+      "status": "read",
+      "read_scope": "TOC Poster section and bibliographic dates"
+    },
+    {
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-03873-9_13",
+      "status": "read_subscription_preview",
+      "read_scope": "publisher abstract and metadata only; no chapter full text"
+    },
+    {
+      "url": "https://library.apsce.net/index.php/ICCE/article/view/6011",
+      "status": "read",
+      "read_scope": "official abstract DOI Published date"
+    },
+    {
+      "url": "https://library.apsce.net/index.php/ICCE/article/download/6011/5941/7183",
+      "status": "read",
+      "read_scope": "official PDF text extraction sections 3-5 and Table 1; no complete page visual audit"
+    },
+    {
+      "url": "https://dl.acm.org/doi/10.1145/3698205.3733948",
+      "status": "403_forbidden",
+      "read_scope": "none; one attempt no retry"
+    },
+    {
+      "url": "https://cborchers.com/publications/",
+      "status": "read",
+      "read_scope": "author publication list VTutor citation/DOI/PDF link"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2505.07736",
+      "status": "read_author_preprint",
+      "read_scope": "v2 title abstract architecture example scenario discussion; formal ACM version not read"
+    },
+    {
+      "url": "https://arxiv.org/abs/2505.07736",
+      "status": "read",
+      "read_scope": "title and v1/v2 submission history; no journal reference displayed"
+    }
+  ],
+  "samples": [
+    {
+      "source_id": "C10",
+      "title": "Teacher Agency in Implementing Automated Writing Evaluation Systems in a Science Classroom: A Focus Group Study",
+      "doi": "10.1007/978-3-032-03873-9_13",
+      "official_url": "https://link.springer.com/chapter/10.1007/978-3-032-03873-9_13",
+      "dates": {
+        "first_public": null,
+        "online": "2025-09-02",
+        "issue": "2026 (publisher citation/copyright year; EC-TEL 2025 proceedings)",
+        "preprint": null,
+        "event": "2025-09-15/2025-09-19"
+      },
+      "date_evidence": [
+        {
+          "url": "https://link.springer.com/chapter/10.1007/978-3-032-03873-9_13",
+          "locator": "First Online; About this paper",
+          "evidence": "First Online 02 September 2025; citation year 2026."
+        },
+        {
+          "url": "https://link.springer.com/book/10.1007/978-3-032-03873-9",
+          "locator": "Bibliographic information / TOC Poster",
+          "evidence": "eBook Published 02 September 2025; print 03 September 2025; chapter under Poster."
+        }
+      ],
+      "school_stage": "Five middle-school science teachers (publisher abstract)",
+      "method": "Focus group and thematic analysis; perceived tool benefits/constraints, not student learning experiment.",
+      "decision": "retain_historical_bibliographic_candidate_hold",
+      "exclusion_reason": "Not current-week first-public evidence; no causal student outcomes; full text unavailable in preview.",
+      "read_scope": "publisher_abstract_metadata",
+      "coverage_level": "query_scoped_partial",
+      "status": "partial",
+      "high_risk_questions": [
+        "Verify citation year 2026 versus online/event 2025 without replacing dates.",
+        "Do not infer national teacher agency or student learning gains from five co-designing teachers."
+      ],
+      "prior_record_id": null,
+      "paper_type": "poster"
+    },
+    {
+      "source_id": "C11",
+      "title": "Teaching Machine Learning to Senior Primary Students: Evaluating a Course for AI Literacy in a Hong Kong Primary School",
+      "doi": "10.58459/icce.2025.6011",
+      "official_url": "https://library.apsce.net/index.php/ICCE/article/view/6011",
+      "dates": {
+        "first_public": null,
+        "online": "2025-12-01",
+        "issue": "2025",
+        "preprint": null,
+        "event": "2025-12-01/2025-12-05"
+      },
+      "date_evidence": [
+        {
+          "url": "https://library.apsce.net/index.php/ICCE/article/view/6011",
+          "locator": "DOI / Published / Conference Proceedings Volume",
+          "evidence": "10.58459/icce.2025.6011; Published 2025-12-01; ICCE 2025."
+        }
+      ],
+      "school_stage": "Grade 6; one Hong Kong primary school.",
+      "method": "Convenience sample 145 pupils; six-hour course; pre/post concepts test and 15-pupil focus groups; Wilcoxon and thematic analysis. Single group; no comparator described in inspected methods.",
+      "decision": "retain_historical_bibliographic_candidate_hold",
+      "exclusion_reason": "Not current-week news; single-school pre/post supports descriptive change, not causal efficacy or broad transfer.",
+      "read_scope": "formal_pdf_partial_sections_3_4_5_table1_text_extraction",
+      "coverage_level": "query_scoped_partial",
+      "status": "partial",
+      "high_risk_questions": [
+        "Independently verify analysed denominator/missing data rather than treat recruited 145 as all analysed.",
+        "Check test reliability and no-control limitation before any effects claim.",
+        "Full/short classification not confirmed by Articles label or six-page length.",
+        "PDF prose calling Teachable Machine GPT-like needs technical caution, not adoption as fact."
+      ],
+      "prior_record_id": null,
+      "paper_type": "main_proceedings_article_full_or_short_unconfirmed"
+    },
+    {
+      "source_id": "C12",
+      "title": "VTutor for High-Impact Tutoring at Scale: Managing Engagement and Real-Time Multi-Screen Monitoring with P2P Connections",
+      "doi": "10.1145/3698205.3733948",
+      "official_url": "https://dl.acm.org/doi/10.1145/3698205.3733948",
+      "dates": {
+        "first_public": null,
+        "online": null,
+        "issue": "2025 (author bibliography only; ACM inaccessible)",
+        "preprint": "2025-05-12 v1 submission; 2025-05-13 v2 submission",
+        "event": null
+      },
+      "date_evidence": [
+        {
+          "url": "https://arxiv.org/abs/2505.07736",
+          "locator": "Submission history",
+          "evidence": "v1 12 May 2025 16:46:11 UTC; v2 13 May 2025 11:09:27 UTC. Submission not precise first-public date."
+        },
+        {
+          "url": "https://cborchers.com/publications/",
+          "locator": "Conference Proceedings VTutor citation",
+          "evidence": "Author lists ACM L@S 2025 and DOI 10.1145/3698205.3733948."
+        }
+      ],
+      "school_stage": "Author preprint includes illustrative middle-school algebra scenario; no verified recruited K-12 intervention sample.",
+      "method": "System architecture and interface demonstration; impact measurement proposed as future work.",
+      "decision": "hold_pending_formal_publisher_verification",
+      "exclusion_reason": "Formal ACM record/date/type not readable; author-preprint design demonstration cannot establish efficacy.",
+      "read_scope": "author_preprint_v2_partial_text_and_submission_metadata; formal publisher none",
+      "coverage_level": "query_scoped_partial",
+      "status": "partial",
+      "high_risk_questions": [
+        "Confirm title/DOI/version and ACM publication date/type directly.",
+        "Do not convert illustrative algebra scenario into observed participant study.",
+        "arXiv comments six pages versus retrieved PDF five pages: version/layout must not be silently equated.",
+        "Do not imply avatar design has demonstrated learning gains."
+      ],
+      "prior_record_id": null,
+      "paper_type": "author_preprint_system_demo; formal_full_short_demo_type_unconfirmed"
+    }
+  ],
+  "results_seen": null,
+  "results_screened": 3,
+  "publication_guard": "Nine existing candidates hold; zero new issues; v1.6; no automatic publication; no shared-file mutations."
+}
