@@ -1,0 +1,569 @@
+{
+ "decided_on": "2026-10-09",
+ "decided_by": "管理者（依整合者建議）",
+ "items": [
+  {
+   "record_id": "KB-2024-0004",
+   "title": "AI Digital Textbooks for 2025 to Realize Personalized Education for All",
+   "group": "G1 A/B 標籤",
+   "subagent_class": "B",
+   "final_class": "B",
+   "ai_lit_dims": [
+    "S-LRN:應用",
+    "T-TEA:應用"
+   ],
+   "changed": false,
+   "decision_note": "照子代理標籤；A、B 皆在範圍內",
+   "boundary_reason": "政策重點是AI工具（AI數位教科書）導入課堂，非師生AI素養本身；個人化功能是否屬師生直接與AI互動需管理者確認。"
+  },
+  {
+   "record_id": "KB-2025-0002",
+   "title": "Fostering Transversal Skills Through Open Schooling Supported by the CARE-KNOW-DO Pedagogical Model and the UNESCO AI Competencies Framework",
+   "group": "G1 A/B 標籤",
+   "subagent_class": "B",
+   "final_class": "B",
+   "ai_lit_dims": [
+    "S-LRN:應用",
+    "S-BAS:應用"
+   ],
+   "changed": false,
+   "decision_note": "照子代理標籤；A、B 皆在範圍內",
+   "boundary_reason": "活動依UNESCO AI能力框架設計，但測量的是一般跨領域能力而非AI素養，A／B之間。"
+  },
+  {
+   "record_id": "KB-2025-0011",
+   "title": "Teacher Agency in Implementing Automated Writing Evaluation Systems in a Science Classroom: A Focus Group Study",
+   "group": "G1 A/B 標籤",
+   "subagent_class": "B",
+   "final_class": "B",
+   "ai_lit_dims": [
+    "T-TEA:理解"
+   ],
+   "changed": false,
+   "decision_note": "照子代理標籤；A、B 皆在範圍內",
+   "boundary_reason": "僅憑標題：自動寫作評量是否為 AI、重點是工具使用（B）還是教師能動性與素養（A）無法從標題確定。"
+  },
+  {
+   "record_id": "KB-2025-0063",
+   "title": "Friend, tool, or threat? High school students’ and teachers’ perspectives on AI in learning",
+   "group": "G1 A/B 標籤",
+   "subagent_class": "B",
+   "final_class": "B",
+   "ai_lit_dims": [
+    "S-LRN:理解",
+    "S-ETH:理解"
+   ],
+   "changed": false,
+   "decision_note": "照子代理標籤；A、B 皆在範圍內",
+   "boundary_reason": "以TAM為主的採用態度研究；態度可算素養（A），暫判B。"
+  },
+  {
+   "record_id": "KB-2026-0015",
+   "title": "Perspectives of secondary school students toward using generative AI as a summative assessment tool of social studies courses in Thailand",
+   "group": "G1 A/B 標籤",
+   "subagent_class": "B",
+   "final_class": "B",
+   "ai_lit_dims": [
+    "S-LRN:應用",
+    "S-ETH:應用"
+   ],
+   "changed": false,
+   "decision_note": "照子代理標籤；A、B 皆在範圍內",
+   "boundary_reason": "重點是AI輔助評量的使用知覺（B），但含學術誠信與過度依賴的討論，可能判A。"
+  },
+  {
+   "record_id": "KB-2026-0162",
+   "title": "Pedagogical Noise in GenAI-Supported Algorithmisation: Scaffolding and Substitution in Upper-Secondary Informatics",
+   "group": "G1 A/B 標籤",
+   "subagent_class": "B",
+   "final_class": "B",
+   "ai_lit_dims": [
+    "S-LRN:理解"
+   ],
+   "changed": false,
+   "decision_note": "照子代理標籤；A、B 皆在範圍內",
+   "boundary_reason": "研究重點在 AI 協助對學習的影響（B），但也涉及認知外包與依賴（可判 A）；屬 A/B 邊界。"
+  },
+  {
+   "record_id": "KB-2025-0024",
+   "title": "LLMs to Support K–12 Teachers in Culturally Relevant Pedagogy: An AI Literacy Example",
+   "group": "G1 A/B 標籤",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-TEA:應用"
+   ],
+   "changed": false,
+   "decision_note": "照子代理標籤；A、B 皆在範圍內",
+   "boundary_reason": "僅憑標題；兼具教師使用LLM工具（B）與AI素養教學（A），依兼有判A。"
+  },
+  {
+   "record_id": "KB-2026-0021",
+   "title": "Potential risks of generative artificial intelligence integration into K-12 education: A scoping review",
+   "group": "G1 A/B 標籤",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:理解",
+    "S-LRN",
+    "S-ETH"
+   ],
+   "changed": false,
+   "decision_note": "照子代理標籤；A、B 皆在範圍內",
+   "boundary_reason": "主體為工具使用風險的綜整而非素養培養，可能屬B；依「依賴行為為重點可判A」暫判A。"
+  },
+  {
+   "record_id": "KB-2026-0029",
+   "title": "Navigating AI in STEM: what secondary students actually do with generative AI-driven tools",
+   "group": "G1 A/B 標籤",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-LRN:應用",
+    "S-BAS:應用",
+    "S-ETH:應用"
+   ],
+   "changed": false,
+   "decision_note": "照子代理標籤；A、B 皆在範圍內",
+   "boundary_reason": "研究工具使用行為；依準則重點在提問、查證、依賴行為時可判A，亦可視為B。"
+  },
+  {
+   "record_id": "KB-2026-0065",
+   "title": "Determinants of AI teachers’ behavioural intention to use virtual simulation platforms: an integrated SEM and fsQCA study",
+   "group": "G1 A/B 標籤",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-BAS:應用",
+    "T-TEA:理解"
+   ],
+   "changed": false,
+   "decision_note": "照子代理標籤；A、B 皆在範圍內",
+   "boundary_reason": "主題是AI教育用虛擬模擬平台的科技接受度，平台本身未必是AI工具；AI素養僅為預測變項，A／B之間。"
+  },
+  {
+   "record_id": "KB-2026-0114",
+   "title": "Constructive Controversy with AI: Elementary Students Engage in Ethical Reasoning and Debate (Poster 15)",
+   "group": "G1 A/B 標籤",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:理解"
+   ],
+   "changed": false,
+   "decision_note": "照子代理標籤；A、B 皆在範圍內",
+   "boundary_reason": "僅憑標題判斷；「with AI」可能指以 AI 為辯論對手（偏 B）或辯論 AI 議題（A）。"
+  },
+  {
+   "record_id": "KB-2026-0172",
+   "title": "AI transformation in education: Examining teachers’ perceptions using an integrated TAM-TPACK-GenAI framework",
+   "group": "G1 A/B 標籤",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-TEA:理解"
+   ],
+   "changed": false,
+   "decision_note": "照子代理標籤；A、B 皆在範圍內",
+   "boundary_reason": "主要為科技接受度，TPACK成分有限，亦可判B。"
+  },
+  {
+   "record_id": "KB-2020-0001",
+   "title": "인공지능 시대 교육정책방향과 핵심과제（제19차 사회관계장관회의 안건）",
+   "group": "G2 廣泛政策",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "T-PD"
+   ],
+   "changed": false,
+   "decision_note": "判 A；AI 素養只占一部分",
+   "boundary_reason": "僅憑標題判斷；為 AI 時代整體教育政策，可能含人才培育等非素養內容。"
+  },
+  {
+   "record_id": "KB-2025-0043",
+   "title": "모두를 위한 인공지능(AI) 인재양성 방안（AI for All）",
+   "group": "G2 廣泛政策",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "T-PD"
+   ],
+   "changed": false,
+   "decision_note": "判 A；AI 素養只占一部分",
+   "boundary_reason": "僅憑標題判斷；以 AI 人才培育為主，K-12 AI 素養只是其中一部分。"
+  },
+  {
+   "record_id": "KB-2025-0045",
+   "title": "Proposed Priority and Definitions—Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education",
+   "group": "G2 廣泛政策",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "T-PD"
+   ],
+   "changed": false,
+   "decision_note": "判 A；AI 素養只占一部分",
+   "boundary_reason": "原始頁面以CAPTCHA阻擋，僅依標題；為補助優先事項草案，AI素養內容比重未核對。"
+  },
+  {
+   "record_id": "KB-2026-0088",
+   "title": "教育部等五部门关于印发《“人工智能+教育”行动计划》的通知（教科信〔2026〕1号）",
+   "group": "G2 廣泛政策",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-BAS:創造",
+    "S-BAS",
+    "T-TEA"
+   ],
+   "changed": false,
+   "decision_note": "判 A；AI 素養只占一部分",
+   "boundary_reason": "網頁取用失敗（503）僅憑標題；為綜合國家計畫，素養只是其中一部分。"
+  },
+  {
+   "record_id": "KB-2026-0089",
+   "title": "Blueprint for Digital Education Development in Primary and Secondary Schools",
+   "group": "G2 廣泛政策",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用",
+    "T-TEA:應用",
+    "S-BAS"
+   ],
+   "changed": false,
+   "decision_note": "判 A；AI 素養只占一部分",
+   "boundary_reason": "主體為一般數位教育，AI 素養內容在附冊；傾向 A。"
+  },
+  {
+   "record_id": "KB-2026-0094",
+   "title": "MOE Committee of Supply Debate 2026 Response by Minister of State for Education Jasmin Lau",
+   "group": "G2 廣泛政策",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解",
+    "S-LRN:應用"
+   ],
+   "changed": false,
+   "decision_note": "判 A；AI 素養只占一部分",
+   "boundary_reason": "演說涵蓋多項教育政策，AI素養只是其中主要主題之一。"
+  },
+  {
+   "record_id": "KB-2023-0009",
+   "title": "Generative artificial intelligence in education call for evidence",
+   "group": "G2 廣泛政策",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用"
+   ],
+   "changed": false,
+   "decision_note": "判 A；AI 素養只占一部分",
+   "boundary_reason": "屬徵求意見文件，本身不是規範或指引；傾向 A。"
+  },
+  {
+   "record_id": "KB-2021-0001",
+   "title": "Policy guidance on AI for children (Version 2.0)",
+   "group": "G2 廣泛政策",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:理解",
+    "S-BAS:理解"
+   ],
+   "changed": false,
+   "decision_note": "判 A；AI 素養只占一部分",
+   "boundary_reason": "僅憑標題判斷；為兒童權利與 AI 治理的一般政策，非專指教育，素養內容只占一部分。"
+  },
+  {
+   "record_id": "KB-2025-0050",
+   "title": "Guidance on AI and children (Version 3.0): Recommendations for AI policies and systems that uphold child rights",
+   "group": "G2 廣泛政策",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:理解",
+    "S-BAS:理解"
+   ],
+   "changed": false,
+   "decision_note": "判 A；AI 素養只占一部分",
+   "boundary_reason": "主要對象為政府與企業AI治理（兒童權利），非學校教學；僅部分要求涉及兒童AI素養。"
+  },
+  {
+   "record_id": "KB-2026-0004",
+   "title": "Digital Transformation and Green Skills in TVET: Building Pedagogical Capacity – Africa Regional Series",
+   "group": "G3 可能 C",
+   "subagent_class": "C",
+   "final_class": "C",
+   "ai_lit_dims": [],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "課程名含「ICT and AI」，但主體為TVET綠色技能與教學法；若管理者視之為教師AI增能可改A（T-PD）。"
+  },
+  {
+   "record_id": "KB-2023-0008",
+   "title": "More Support for Schools and Students to Shape the Future of Learning（Launch of EdTech Masterplan 2030 “Transforming Education through Technology”）",
+   "group": "G3 可能 C",
+   "subagent_class": "B",
+   "final_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "主體為一般教育科技與21世紀能力，AI只是其中一項；可能屬C。"
+  },
+  {
+   "record_id": "KB-2025-0048",
+   "title": "Generative AI: product safety standards",
+   "group": "G3 可能 C",
+   "subagent_class": "B",
+   "final_class": "B",
+   "ai_lit_dims": [
+    "T-BAS:應用"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "屬產品規範而非師生能力；判B取「學校選用工具」關聯，亦可視為C。"
+  },
+  {
+   "record_id": "KB-2026-0053",
+   "title": "The phenomenon of deep nudes—a new threat to children and adults",
+   "group": "G3 可能 C",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:應用"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "主體為AI濫用現象與盛行率調查，非素養教學；判A取倫理內涵，亦可視為範圍外，請管理者決定。"
+  },
+  {
+   "record_id": "KB-2026-0127",
+   "title": "Understanding Educators’ Perceptions of AI-generated Non-consensual Intimate Imagery",
+   "group": "G3 可能 C",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "主題為AI濫用造成的校園傷害與因應，與AI素養相關但偏校園安全。"
+  },
+  {
+   "record_id": "KB-2026-0156",
+   "title": "Coding, robots, computational concepts, and machine learning using the microbit card and the Maqueen and Nezha kits. A study in initial teacher training",
+   "group": "G3 可能 C",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-BAS:理解"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "以程式與機器人為主，機器學習只是部分內容；AI比重有限。"
+  },
+  {
+   "record_id": "KB-2026-0161",
+   "title": "Can Teacher AI Literacy Reach Those Who Need It Most? Professional Learning, Realised Access, and Cumulative Advantage in TALIS 2024",
+   "group": "G3 可能 C",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-PD"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "研究明言不直接測量教師AI素養，只看AI專業學習參與。"
+  },
+  {
+   "record_id": "KB-2025-0057",
+   "title": "Behind the Scenes: Unpacking Students' Experience during a Collaborative AI Workshop using Multi-Modal Data",
+   "group": "G3 可能 C",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-SYS:應用"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "研究重點為多模態學習分析方法與情意狀態，AI素養工作坊僅為情境。"
+  },
+  {
+   "record_id": "KB-2025-0004",
+   "title": "ReVEAL model and its application to revealing viewpoints on educational approaches to learning about data and AI",
+   "group": "G3 可能 C",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "主題同時涵蓋資料素養與資料能動性，AI 素養只是其中之一；傾向 A。"
+  },
+  {
+   "record_id": "KB-2025-0006",
+   "title": "Toward Teacher-Centered AI Design: Exploring the Role of Pedagogical Values and Contextual Factors in K-12 Teachers' Perceptions of Responsible AI",
+   "group": "G3 可能 C",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:理解"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "研究目的偏向以教師價值引導 AI 系統設計，而非教師 AI 素養本身；傾向 A。"
+  },
+  {
+   "record_id": "KB-2025-0010",
+   "title": "The AI3 Model: Future Directions for Artificial Intelligence, Assessment Innovation, and Academic Integrity",
+   "group": "G3 可能 C",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:應用",
+    "T-ETH:應用"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "重點在評量政策與學術誠信，非直接培養師生AI素養；判A取其學術誠信規範內涵，請管理者確認。"
+  },
+  {
+   "record_id": "KB-2026-0129",
+   "title": "Teachers' Navigation of Assessing Written Work in Times of Generative AI",
+   "group": "G3 可能 C",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用",
+    "T-TEA:應用"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "重點為教師評量實踐因應學生用 AI，教師本身未必使用 AI；傾向 A。"
+  },
+  {
+   "record_id": "KB-2026-0082",
+   "title": "Governance, Privacy, and Integrity: A Comparative Analysis of Generative AI Platform Policies in K–12 Education",
+   "group": "G3 可能 C",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "僅依標題；分析對象可能是廠商平台政策而非學校規範。"
+  },
+  {
+   "record_id": "KB-2026-0112",
+   "title": "Understanding Public K-12 Indigenous Student Interest and Access to CS and AI Education through Teacher Perspectives and National CS Data (Poster 5)",
+   "group": "G3 可能 C",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解"
+   ],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "僅依標題；可能以資訊科學（CS）為主，AI比重不明。"
+  },
+  {
+   "record_id": "KB-2026-0104",
+   "title": "Navigating the AI Era: A Multi-Step Approach to Family AI Literacy and Mediation for Young Children",
+   "group": "G4 對象非師生",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-BAS"
+   ],
+   "changed": false,
+   "decision_note": "判 A；對象為其他教育關係人（家長、教育領導者或活動公告），可進刊物、不進週報候選",
+   "boundary_reason": "主要對象為家長，不在框架師生對象內；內容與兒童AI素養相關。"
+  },
+  {
+   "record_id": "KB-2026-0108",
+   "title": "UnboxAI: Towards Sustainable Family AI Literacy Through Tangible Interaction",
+   "group": "G4 對象非師生",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解",
+    "S-ETH:理解"
+   ],
+   "changed": false,
+   "decision_note": "判 A；對象為其他教育關係人（家長、教育領導者或活動公告），可進刊物、不進週報候選",
+   "boundary_reason": "情境為親子共學工具，非教學或學習課程本身；內容屬A。"
+  },
+  {
+   "record_id": "KB-2026-0110",
+   "title": "AI Literacy for Educational Leaders: Imagining Futures in K–12 Policy and Practice",
+   "group": "G4 對象非師生",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-BAS:創造",
+    "T-ETH:應用"
+   ],
+   "changed": false,
+   "decision_note": "判 A；對象為其他教育關係人（家長、教育領導者或活動公告），可進刊物、不進週報候選",
+   "boundary_reason": "對象為教育領導者，非框架的教師或學生。"
+  },
+  {
+   "record_id": "KB-2026-0119",
+   "title": "Educational Leaders Navigating AI: Policy Challenges and Opportunities in K-12 Implementation",
+   "group": "G4 對象非師生",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用"
+   ],
+   "changed": false,
+   "decision_note": "判 A；對象為其他教育關係人（家長、教育領導者或活動公告），可進刊物、不進週報候選",
+   "boundary_reason": "對象為教育領導者，非框架的教師或學生。"
+  },
+  {
+   "record_id": "KB-2026-0006",
+   "title": "Online panel: Equity & Diversity in the Context of Critical AI Literacy",
+   "group": "G4 對象非師生",
+   "subagent_class": "A",
+   "final_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:創造"
+   ],
+   "changed": false,
+   "decision_note": "判 A；對象為其他教育關係人（家長、教育領導者或活動公告），可進刊物、不進週報候選",
+   "boundary_reason": "資料性質為活動公告（線上座談），非政策或研究；內容屬批判性AI素養。"
+  },
+  {
+   "record_id": "KB-2026-0113",
+   "title": "Generative AI Disruption in K-12 Education: Balancing Skepticism and Opportunity",
+   "group": "G5 不明",
+   "subagent_class": "unknown",
+   "final_class": "unknown",
+   "ai_lit_dims": [],
+   "changed": false,
+   "decision_note": "",
+   "boundary_reason": "摘要無法取得，標題不足以判斷。"
+  },
+  {
+   "record_id": "KB-2026-0163",
+   "title": "Measuring the Data Agency of Pre-Service Teachers: A Six-Factor Model",
+   "group": "G5 不明",
+   "subagent_class": "unknown",
+   "final_class": "C",
+   "ai_lit_dims": [],
+   "changed": true,
+   "decision_note": "",
+   "boundary_reason": "演算法／數據素養是否算AI素養（T-BAS「理解AI的數據與運作」）需管理者決定；否則屬C。"
+  }
+ ]
+}
