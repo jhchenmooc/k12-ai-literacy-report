@@ -77,7 +77,7 @@ jobs:
         run: |
           mkdir -p _public_site/publication
           cp index.html .nojekyll _public_site/
-          for dir in feedback weekly monthly daily; do
+          for dir in feedback weekly monthly daily assets design-system; do
             if [ -d "$dir" ]; then cp -R "$dir" "_public_site/$dir"; fi
           done
           cp publication/issues.json _public_site/publication/issues.json
