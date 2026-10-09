@@ -30,9 +30,9 @@ test("archive excludes weekly candidates, escapes titles and keeps unknown dates
   {record_id:"KB-2024-9003",title:"National framework",primary_url:"https://example.org/c",record_type:"framework",year_value:"2024",year_basis:"first_publication",first_published_on:"2024-05-01",verification_status:"bibliographic_checked",source_candidate_id:""}];
  const relations=[{subject_id:"KB-2026-9002",predicate:"published_in",object_id:"J02"},{subject_id:"KB-2024-9003",predicate:"applies_to_country",object_id:"JP"}];
  const d=archiveData(records,relations,[{id:"J02",name:"Journal Two"}]);
- const all=[...d.policy,...d.research].flatMap(g=>g.rows);
+ const all=[...d.policy,...d.journals,...d.conferences].flatMap(g=>g.rows);
  assert.equal(all.length,2);assert.ok(!all.some(r=>r.id==="KB-2026-9001"));
- assert.equal(d.research[0].rows[0].date,"卷期年（首發日未知）");
+ assert.equal(d.journals[0].rows[0].date,"卷期年（首發日未知）");assert.equal(d.conferences.length,0);
  assert.equal(d.policy[0].name,"日本");assert.equal(d.policy[0].rows[0].date,"2024-05-01 首發");
 });
 
@@ -51,4 +51,19 @@ test("a generated daily edition page passes the publication gate unchanged",t=>{
  // Navigation, title and notice sit outside <main>; altering the claim text in HTML still fails.
  fs.writeFileSync(path.join(dir,"daily","2026-10-10","index.html"),renderDailyEdition({date:"2026-10-10",claims:[{...c,claim_text:c.claim_text+"另有成效"}]}));
  assert.equal(validate(dir).ok,false);
+});
+
+test("journals and conferences are split by record type and every quick-index link has a target",()=>{
+ const records=[
+  {record_id:"KB-2026-9101",title:"Conference paper",primary_url:"https://example.org/c",record_type:"conference_paper",year_value:"2026",year_basis:"issue_year",first_published_on:"",verification_status:"discovered_unverified",source_candidate_id:""},
+  {record_id:"KB-2025-9102",title:"Journal article",primary_url:"https://example.org/j",record_type:"journal_article",year_value:"2025",year_basis:"issue_year",first_published_on:"",verification_status:"discovered_unverified",source_candidate_id:""}];
+ const d=archiveData(records,[{subject_id:"KB-2026-9101",predicate:"published_in",object_id:"C22"}],[{id:"C22",name:"EAAI"}]);
+ assert.equal(d.conferences[0].name,"EAAI");assert.equal(d.journals[0].name,"其他期刊");
+ const files=build(root);
+ for(const rel of ["archive/policy/index.html","archive/journals/index.html","archive/conferences/index.html"]){
+  const html=files[rel];assert.ok(html.includes('id="index"'),rel);
+  const ids=new Set([...html.matchAll(/\sid="([^"]+)"/g)].map(m=>m[1]));
+  for(const m of html.matchAll(/href="#([^"]+)"/g))assert.ok(ids.has(m[1]),rel+" missing anchor "+m[1]);
+ }
+ assert.ok(files["archive/research/index.html"].includes("../journals/")&&files["archive/research/index.html"].includes("../conferences/"));
 });
