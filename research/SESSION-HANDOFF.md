@@ -267,4 +267,4 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 
 尚待：C09正式論文集可核樣本；J17全文學段/設計；第一波J10日期、C05分母與v2/首發、C06原文、C07/C08正式版本；政策版本與其餘J20–J39/C13–C22依優先級。P0未完，不進P1/P2，不再擴六個同時執行者。第二波後usage5小時96%、每週27%，不啟第三批或額度重置。九候選hold/source_checked=false、零正式期別與v1.6不變，無自動發刊。
 
-本批整合PR最新HEAD verify成功才合併，main verify/deploy另核；提交時不預寫成功，最終結果以該PR描述/Actions為準。
+本批整合[PR #92](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/92)最新HEAD verify成功才合併，main verify/deploy另核；提交時不預寫成功，最終結果以該PR描述/Actions為準。
