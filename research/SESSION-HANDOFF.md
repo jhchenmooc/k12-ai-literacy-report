@@ -208,3 +208,23 @@
 - Scoped primary-source audit in `research/p0-j12-j13-c04-audit-2026-10-09.md`: five listed item samples (J12 2, J13 2, C04 1), journals' online vs issue dates, higher education exclusion, and ICLS proceedings year without invented first-online day. J10/J11/J14 remain unverified; no zero-hit conclusion.
 - Append three partial `search_runs.csv` batches with unknown `results_seen` left blank; cumulative ten logged search runs and 26 item-level samples, not 26 unique papers or whole-venue coverage. No new knowledge-base master records or publication approval.
 - Next P0: verify J10/J11/J14 official journal article records, then other journal/conference series; reconcile coverage honestly. Maintain v1.6 publication gate, nine hold candidates, zero new editions, no automation.
+
+
+### 2026-10-09｜後續 P0 加速執行決策：Codex 三組平行搜尋試行（尚未啟動）
+
+**目的**：加速 39 本期刊／21 個會議的逐源搜尋，保留真實原始來源、日期與 DOI 核查品質，不降低 v1.6 出版安全標準。此段是**工作交接／試行計畫**，不是已建立 Agent、已完成搜尋或已核准自動出版的宣稱。
+
+1. **優先平台**：先在具備 GitHub repo 存取的 Codex 環境啟動三個可隔離的搜尋任務（獨立分支或 worktree）；ChatGPT Work 可用於受阻網頁的瀏覽器核證、人工 UI／Google Sheets 驗收。若未提供真正多 Agent 平行執行能力，改用獨立平行工作任務，不得假稱已啟動子 Agent；暫不開發 Agents API 的自動編排系統。
+2. **試行分工（先核對目前 main，避免重複）**：
+   - 搜尋組 A：J10、J11（Computers in Human Behavior／Reports），必要時延伸同刊最新卷期。
+   - 搜尋組 B：J14（ACM TOCE）及待補核 J12／J13 中仍未釐清的原始來源；已有逐篇資料不能無目的重查。
+   - 搜尋組 C：C05–C08 正式會議論文集（先以 `venue-watchlist.md` 確認名稱、年份、主會／短篇／補充集分類）。
+   - C04 已有一筆 ISLS 初篩，但首次公開日不詳，另列整合者待查；已核對的 J12/J13/C04 不能被誤報為零篇或全來源完成。
+3. **搜尋產物**：各組各自交付可回溯的查詢字串、搜尋執行日期、檢索時段／範圍、期刊／會議 ID、官方出版社或正式論文集 URL、DOI（無則明註）、first online／issue／event 日期分離、K–12 學段與方法、排除／不確定原因、實際 `coverage_level` 與無法讀取的原始頁面。區分 `entry_only`／`query_scoped`／`items_screened`／`full_text_checked`／`partial/unavailable`；未完整查閱不得升級。
+4. **隔離規範**：並行組只修改各自的暫存工作檔，不得同時寫入 `research/knowledge-base/data/search_runs.csv`、`records.csv`、`relations.csv`、年度索引、正式候選／claims／issues 或共用 handoff，避免競爭覆寫與重複 DOI。
+5. **中央整合**：完成來源正式性、DOI／版本去重、首發日反證、K–12 適用性、研究設計與因果用語核查，區分真實搜尋總命中數和**僅列出之初篩樣本數**。未知總命中數留空／unknown，查詢失敗不能填 0；對高風險結論安排第二輪獨立原文交叉查證。整合者獨占正式 CSV／索引／本 handoff 寫入。
+6. **品質與 GitHub 閘門**：先執行 schema、CSV 安全、去重、日期／跨來源一致性及 v1.6 regression；整批合併成**單一整合 PR**，只有最新 PR HEAD 的 `verify` 成功才可合併。合併後再核查 main verify/deploy，必要時檢查公開 GitHub Pages；不能把 PR CI 當實站通過。
+7. **試行評估**：比較平行與串行的來源處理時間、每來源可核查文章數、重複／漏查／無法讀取比例、日期及學段錯誤、人工補查負擔、PR／CI 失敗與實際成本。通過品質標準後才考慮由 3 組擴展至 6 組搜尋加獨立驗證者；不為了速度犧牲可追溯性。
+8. **階段順序**：**目前仍是 P0**；補完政策版本、逐源查核與覆蓋對帳後才啟動 P1 歷年知識庫深化、試算表及網站真實驗收；最後 P2 定期來源池檢閱／排程。九筆首週候選維持 `hold`、正式新期別保持零；不可用歷年文獻冒充 10/09–10/15 當週首次公開新聞，不啟用自動發刊。
+
+**下一個 Session**：先讀本段及上方 P0 歷史；重新檢查 main、open PR、已完成來源與 `search_runs.csv`，再依上述三組開始試行；先查原始來源、自檢、整合 PR，CI 通過才合併。
