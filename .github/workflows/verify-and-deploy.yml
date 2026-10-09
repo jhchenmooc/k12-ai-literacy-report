@@ -61,6 +61,7 @@ jobs:
           node --test research/knowledge-base-import-preview.test.js
           node --test research/knowledge-base-quality.test.js
           node research/validate-knowledge-base.js .
+          node research/render-knowledge-base-years.js
       - name: Validate issue manifests and claim metadata
         run: node research/validate-publication.js .
   deploy:

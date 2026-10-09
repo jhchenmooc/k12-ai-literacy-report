@@ -1,7 +1,9 @@
 {
   "by-category/K1": [
+    "KB-2023-0001",
     "KB-2024-0001",
     "KB-2024-0002",
+    "KB-2025-0001",
     "KB-2026-0010"
   ],
   "by-category/K2": [
@@ -26,6 +28,10 @@
     "KB-2026-0004",
     "KB-2026-0006"
   ],
+  "by-country/AU": [
+    "KB-2023-0001",
+    "KB-2025-0001"
+  ],
   "by-journal/J02": [
     "KB-2026-0009"
   ],
@@ -37,6 +43,10 @@
   ],
   "by-source/J06": [
     "KB-2026-0008"
+  ],
+  "by-source/O-AU-EDU": [
+    "KB-2023-0001",
+    "KB-2025-0001"
   ],
   "by-source/O-HK-EDB": [
     "KB-2026-0002",
@@ -51,6 +61,7 @@
     "KB-2026-0007"
   ],
   "by-type/framework": [
+    "KB-2023-0001",
     "KB-2024-0001",
     "KB-2024-0002",
     "KB-2026-0010"
@@ -60,6 +71,9 @@
     "KB-2026-0008",
     "KB-2026-0009"
   ],
+  "by-type/policy_review": [
+    "KB-2025-0001"
+  ],
   "by-type/source_document": [
     "KB-2026-0001",
     "KB-2026-0002",
@@ -68,9 +82,15 @@
     "KB-2026-0006",
     "KB-2026-0007"
   ],
+  "by-year/2023/first_publication": [
+    "KB-2023-0001"
+  ],
   "by-year/2024/first_publication": [
     "KB-2024-0001",
     "KB-2024-0002"
+  ],
+  "by-year/2025/first_publication": [
+    "KB-2025-0001"
   ],
   "by-year/2026/first_publication": [
     "KB-2026-0010"
