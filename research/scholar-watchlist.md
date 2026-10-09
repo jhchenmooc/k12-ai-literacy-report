@@ -1,13 +1,13 @@
-# K-12 AI 素養學者監測清單 v0.2（草稿）
+# K-12 AI 素養學者監測清單 v0.3（草稿）
 
 > 建立日期：2026-10-09。用途：搜尋時可**依作者追蹤**，補足依期刊會議（[venue-watchlist](venue-watchlist.md)）與關鍵字的檢索。這是**監測來源池**，不是學者排名或推薦，也不表示他們的每篇著作都適用 K-12；入選理由只代表與本刊主題的關聯。
 >
-> 來源：使用者提供的「2026 數位學習國際論壇（IFDE 2026，2026/8/6–8/7，高雄，教育部資訊及科技教育司主辦）」整理文件兩份。這兩份是內部文件，未公開，也**未放入 repo**；本清單只摘錄學者姓名、公開職稱與單位，以及其公開著作的書目。
+> 來源：使用者提供的「2026 數位學習國際論壇（IFDE 2026，2026/8/6–8/7，高雄，教育部資訊及科技教育司主辦）」整理文件兩份。這兩份是內部文件，未公開，也**未放入 repo**；本清單只摘錄學者姓名、公開職稱與單位，以及其公開著作的書目。講者職稱與單位以論壇官方網站為準：[2026 數位學習國際論壇](https://sites.google.com/view/idif2026/home)（講者陣容與議程，2026-10-09 查閱）。
 
 ## 0. 使用規則
 
 - **只收公開的專業資訊**：姓名、公開職稱與單位、研究主題、公開著作書目。不收電子郵件、電話或其他個人資料（論壇文件中出現的聯絡信箱一律不錄）。
-- **職稱、單位**依論壇資料（2026 年 8 月）所載；人會異動，使用前以機構頁為準。
+- **職稱、單位**依論壇官方網站所載（2026 年 8 月論壇時）；人會異動，使用前以機構頁為準。
 - **作者確認（2026-10-09）**：以 ORCID 公開任職紀錄、OpenAlex 檔案的 ORCID 與機構，以及近期著作主題交叉比對；臺灣學者的單位另依管理者告知。結果見各表「確認」欄：
   - **已確認**：ORCID 現職與論壇所載（或管理者告知）一致，且 OpenAlex 檔案的 ORCID 相同。
   - **大致確認**：單位與研究領域相符，但缺 ORCID 任職紀錄或 OpenAlex 檔案混入他人作品。
@@ -19,7 +19,7 @@
 
 ## 1. 優先級
 
-- **A 核心**：論壇的學術講者，分為國際（A1）與臺灣（A2）。每週依作者檢索新作。
+- **A 核心**：論壇的學術講者與主持人，分為國際（A1）與臺灣（A2）。每週依作者檢索新作。
 - **B 擴充**：A 級學者的主要共同作者，或論壇中被多位講者引用的研究者。每月檢索。
 - **C 政策與實務窗口**：論壇的政策官員與學校實務講者，不是學術作者。追蹤其所屬機構的發布（併入政策來源搜尋），不依作者檢索論文。
 
@@ -27,25 +27,26 @@
 
 | ID | 學者 | 單位與角色（論壇所載） | 與本刊相關的主題 | 論壇所列代表著作（未核） | OpenAlex／ORCID 與確認 |
 |---|---|---|---|---|---|
-| S01 | Mutlu Cukurova | UCL Knowledge Lab；*British Journal of Educational Technology* 總編輯；UNESCO、OECD、歐盟外部專家 | 人機協作三典範（取代、互補、綜效）、教師與 AI 組隊、教師 AI 能力框架 | Miao & Cukurova (2024) UNESCO AI Competency Framework for Teachers；Cukurova (2025) BJET 56(2) hybrid intelligence；Nazaretsky et al. (2022) BJET 53(4) 教師對 AI 的信任 | A5010726815；ORCID 0000-0001-5843-4854。**已確認**（ORCID 現職 UCL） |
-| S02 | Dragan Gašević | 論壇所載為香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯 | 表現增益不等於學習、後設認知怠惰、Agentivism 學習理論、FLoRA、CELLA 跨國研究 | Yan, Greiff, Teuber & Gašević (2024) Nature Human Behaviour 8(10)；Fan et al. (2025) BJET 56(2) DOI 10.1111/bjet.13544；Yan, Greiff, Lodge & Gašević (2025) Nature Reviews Psychology 4；Gašević & Yan (2026) OECD Digital Education Outlook 2026 | A5036855560；ORCID 0000-0001-9265-1908。**已確認**（ORCID 現職香港大學講座教授；Monash 任職於 2026 年結束）。OpenAlex 另有零星分裂檔案，建議用 ORCID 檢索 |
-| S03 | Inge Molenaar | Radboud University；荷蘭國家教育 AI 實驗室（NOLAI）主持人 | 偵測、診斷、行動框架；六層自動化模型；混合人機調節；低年齡學習者的自主學習 | Molenaar (2022) European Journal of Education 57(4) DOI 10.1111/ejed.12527；Molenaar (2022) Computers and Education: AI 3, 100070；Lim et al. (2024) BJET 55(4) DOI 10.1111/bjet.13414 | A5037990414；ORCID 0000-0003-4639-2524。**已確認**（ORCID 現職 Radboud） |
-| S04 | Henriikka Vartiainen | 東芬蘭大學；Generation AI 專案工作包主持人（議程有列，簡報未收錄） | 兒少 AI 素養教學、資料能動性、共同設計；Generation AI 開放教具（4–8 年級實證） | Vartiainen et al. (2025) New Media & Society DOI 10.1177/14614448241252820（7 年級 N=209）；Kahila et al. (2024) Informatics in Education DOI 10.15388/infedu.2024.15；Pope et al. (2025) IEEE TLT DOI 10.1109/TLT.2025.3529994 | A5083898518；ORCID 0000-0001-6005-907X。**已確認**（ORCID 現職東芬蘭大學） |
-| S05 | Yasushi Mori | 茨城大學 | 日本 Society 5.0 下的中小學 AI 與 ICT 教育、教師研習 | 論壇引用日本 ICT 教育首長協議會 2026 全國調查（非期刊論文） | **未找到**：OpenAlex 以茨城大學篩選查無此人（同名者分屬岡山大學等，均非本人）。日文姓名與 researchmap 頁待查；可能主要以日文發表 |
+| S01 | Mutlu Cukurova | University College London 教授（Learning and Artificial Intelligence）；*British Journal of Educational Technology* 主編；UNESCO、IAEA、歐盟專家 | 人機協作三典範（取代、互補、綜效）、教師與 AI 組隊、教師 AI 能力框架 | Miao & Cukurova (2024) UNESCO AI Competency Framework for Teachers；Cukurova (2025) BJET 56(2) hybrid intelligence；Nazaretsky et al. (2022) BJET 53(4) 教師對 AI 的信任 | A5010726815；ORCID 0000-0001-5843-4854。**已確認**（ORCID 現職 UCL） |
+| S02 | Dragan Gašević | 香港大學講座教授；學習分析研究學會創辦人；*Computers & Education: AI* 總編輯（後二項依論壇整理文件） | 表現增益不等於學習、後設認知怠惰、Agentivism 學習理論、FLoRA、CELLA 跨國研究 | Yan, Greiff, Teuber & Gašević (2024) Nature Human Behaviour 8(10)；Fan et al. (2025) BJET 56(2) DOI 10.1111/bjet.13544；Yan, Greiff, Lodge & Gašević (2025) Nature Reviews Psychology 4；Gašević & Yan (2026) OECD Digital Education Outlook 2026 | A5036855560；ORCID 0000-0001-9265-1908。**已確認**（ORCID 現職香港大學講座教授；Monash 任職於 2026 年結束）。OpenAlex 另有零星分裂檔案，建議用 ORCID 檢索 |
+| S03 | Inge Molenaar | Radboud University 教授；荷蘭國家教育 AI 實驗室（NOLAI）主任 | 偵測、診斷、行動框架；六層自動化模型；混合人機調節；低年齡學習者的自主學習 | Molenaar (2022) European Journal of Education 57(4) DOI 10.1111/ejed.12527；Molenaar (2022) Computers and Education: AI 3, 100070；Lim et al. (2024) BJET 55(4) DOI 10.1111/bjet.13414 | A5037990414；ORCID 0000-0003-4639-2524。**已確認**（ORCID 現職 Radboud） |
+| S04 | Henriikka Vartiainen | 東芬蘭大學副教授；Generation AI 專案工作包主持人（議程場次：Towards Transformative AI Education in Finland；整理文件未收錄其簡報） | 兒少 AI 素養教學、資料能動性、共同設計；Generation AI 開放教具（4–8 年級實證） | Vartiainen et al. (2025) New Media & Society DOI 10.1177/14614448241252820（7 年級 N=209）；Kahila et al. (2024) Informatics in Education DOI 10.15388/infedu.2024.15；Pope et al. (2025) IEEE TLT DOI 10.1109/TLT.2025.3529994 | A5083898518；ORCID 0000-0001-6005-907X。**已確認**（ORCID 現職東芬蘭大學） |
+| S05 | Yasushi Mori | 茨城大學教育學部教授 | 日本 Society 5.0 下的中小學 AI 與 ICT 教育、教師研習 | 論壇引用日本 ICT 教育首長協議會 2026 全國調查（非期刊論文） | **未找到**：OpenAlex 以茨城大學篩選查無此人（同名者分屬岡山大學等，均非本人）。日文姓名與 researchmap 頁待查；可能主要以日文發表 |
 
-## 2b. A2 核心：論壇臺灣學術講者（7 位）
+## 2b. A2 核心：論壇臺灣學術講者（8 位）
 
-> 英文姓名依 ORCID 與 OpenAlex 檔案所用拼法。單位：郭伯臣、李政軒、黃國禎為國立臺中教育大學（管理者告知，與 ORCID 一致）；劉遠楨為國立臺北教育大學資訊科學系特聘教授兼副校長（管理者告知）。劉晨鐘為國立中央大學資訊工程學系講座教授、網路學習科技研究所教授（管理者告知，與 ORCID 一致）。
+> 英文姓名依 ORCID 與 OpenAlex 檔案所用拼法。職稱依論壇官方網站。單位：郭伯臣、李政軒、黃國禎為國立臺中教育大學（管理者告知，與 ORCID 一致）；劉遠楨為國立臺北教育大學資訊科學系特聘教授兼副校長（管理者告知）。劉晨鐘為國立中央大學資訊工程學系講座教授、網路學習科技研究所教授（管理者告知，與 ORCID 一致）。
 
 | ID | 學者 | 單位與角色 | 論壇場次與主題 | OpenAlex／ORCID 與確認 |
 |---|---|---|---|---|
-| T01 | 郭伯臣 | 國立臺中教育大學校長、講座教授 | Day 1 專題：AI 人才方舟計畫核心支柱、因材網 TALP 與 e度實證 | Bor-Chen Kuo：A5054302891；ORCID 0000-0003-1741-2450。**已確認**（ORCID：臺中教大講座教授、校長）。另有分裂檔案 A5111888041 等，用 ORCID 檢索較完整 |
-| T02 | 李政軒 | 國立臺中教育大學教授 | Day 2 專題：e度從 AI 學伴到人機協作；座談二主持 | Cheng-Hsuan Li：A5006434175；ORCID 0000-0001-5059-8256。**已確認**（ORCID：臺中教大教授）。同名者多（臺大醫院等），務必用此 ID 或 ORCID |
-| T03 | 黃國禎 | 國立臺中教育大學講座教授（ORCID 另列國立臺灣科技大學講座教授） | 座談一主持：深化教師 AI 素養與專業發展 | Gwo-Jen Hwang：A5049547394；ORCID 0000-0001-5155-276X。**已確認**。OpenAlex 另有分裂檔案（A5102430538、A5112411994、A5110313723），用 ORCID 檢索較完整；著作量大（600 篇以上），檢索須加主題詞 |
+| T01 | 郭伯臣 | 國立臺中教育大學講座教授兼校長；教育部 AI 人才方舟計畫推動營運中心主持人 | Day 1 專題：AI 人才方舟計畫核心支柱、因材網 TALP 與 e度實證 | Bor-Chen Kuo：A5054302891；ORCID 0000-0003-1741-2450。**已確認**（ORCID：臺中教大講座教授、校長）。另有分裂檔案 A5111888041 等，用 ORCID 檢索較完整 |
+| T02 | 李政軒 | 國立臺中教育大學講座教授兼校務中心主任；AI 人才方舟計畫推動營運中心協同主持人 | Day 2 專題：e度從 AI 學伴到人機協作；座談二主持 | Cheng-Hsuan Li：A5006434175；ORCID 0000-0001-5059-8256。**已確認**（ORCID：臺中教大教授）。同名者多（臺大醫院等），務必用此 ID 或 ORCID |
+| T03 | 黃國禎 | 國立臺中教育大學講座教授兼副校長（ORCID 另列國立臺灣科技大學講座教授） | 座談一主持：深化教師 AI 素養與專業發展 | Gwo-Jen Hwang：A5049547394；ORCID 0000-0001-5155-276X。**已確認**。OpenAlex 另有分裂檔案（A5102430538、A5112411994、A5110313723），用 ORCID 檢索較完整；著作量大（600 篇以上），檢索須加主題詞 |
 | T04 | 劉遠楨 | 國立臺北教育大學資訊科學系特聘教授兼副校長 | 座談一：教師 AI 素養四面向、風險與紅線 | Yuan-Chen Liu：A5029607042（北教大）。**大致確認**：單位與資訊、教育領域相符；無公開 ORCID（管理者確認），只能用 OpenAlex 檔案，檔案混有醫學影像等論文（可能是本人的資訊研究，也可能混入同名者）；另有小檔案 A5017336861、A5024743533、A5093536863。依作者找到的論文須逐篇看單位 |
 | T05 | 許庭嘉 | 國立臺灣師範大學特聘教授 | 座談一：AI 倫理三件事、學習歷程可見 | Ting-Chia Hsu：A5017170544；ORCID 0000-0001-6504-9540。**已確認**（ORCID：臺師大教授）。另有小型分裂檔案 |
 | T06 | 劉晨鐘 | 國立中央大學資訊工程學系講座教授、網路學習科技研究所教授 | 座談二：四條保護原則 | Chen-Chung Liu：A5103076432；ORCID 0000-0001-6128-0227。**已確認**（ORCID：中央大學；近期著作為生成式 AI 教學代理人）。另有同名臺大醫院作者 A5058832950，勿混用 |
-| T07 | 張耀中 | 國立臺東大學資訊工程學系教授兼研發長 | 座談二：從「會用 AI」到「會驗證」 | Yao-Chung Chang：A5032462085（臺東大學；檔案所附 ORCID 0000-0002-2545-8910）。**大致確認**：單位與資訊工程領域相符；著作以網路通訊為主，2026 年有生成式 AI 教育論文。管理者提供的 ORCID 為 0000-0001-5174-8586，但該 ORCID 公開頁只有姓名、無任職與著作，OpenAlex 又把它連到美國德州大學阿靈頓分校的化學論文 2 篇（A5111332695），兩組 ORCID 不一致，**暫不以 ORCID 檢索**，改用 A5032462085 加教育主題詞 |
+| T07 | 張耀中 | 國立臺東大學資訊工程學系教授兼研發長 | 座談二：從「會用 AI」到「會驗證」 | Yao-Chung Chang：A5032462085；ORCID 0000-0002-2545-8910。**已確認**（管理者確認此臺東大學檔案為本人；ORCID 無公開任職紀錄）。著作以網路通訊為主，2026 年有生成式 AI 教育論文，檢索須加教育主題詞。另一組 ORCID 0000-0001-5174-8586 在 OpenAlex 對到化學論文，不是本人，勿用 |
+| T08 | 葉家宏 | 教育部資訊及科技教育司司長；國立臺灣師範大學特聘教授（論壇官網並列） | Day 1 開場：AI 人才方舟計畫的推動方向與未來展望 | Chia-Hung Yeh：A5012962861；ORCID 0000-0002-2837-6662。**大致確認**：ORCID 現職為臺師大電機系特聘教授、科技與工程學院副院長，與官網「臺師大特聘教授」相符，但 ORCID 未列教育部職務，英文拼法為推測。研究以影像與視訊處理為主，檢索須加教育主題詞 |
 
 ## 3. B 擴充（11 位）
 
@@ -67,13 +68,13 @@
 
 | ID | 人物 | 機構 | 追蹤方式 |
 |---|---|---|---|
-| P01 | Hai Siang Chia | 新加坡教育部（Student Learning Space） | 追 MOE Rapid Research 專頁、EdTech Masterplan 2030 |
-| P02 | Jongwon Seo | 韓國教育學術情報院（KERIS） | 追韓國教育部、KERIS 的教師 AI 與數位素養框架修訂 |
-| P03 | Liina Kanter | 愛沙尼亞教育及青年局（HARNO） | 追 AI Leap（AI 躍進）計畫與 HARNO 公告 |
-| P04 | 葉家宏 | 教育部資訊及科技教育司司長 | 追 AI 人才方舟計畫與資科司公告 |
-| P05 | 林瑋茹 | 教育部師資培育及藝術教育司 | 追智慧教育師培聯盟（子計畫六）與師藝司公告 |
+| P01 | Hai Siang Chia | 新加坡教育部 Principal Specialist（Student Learning Space） | 追 MOE Rapid Research 專頁、EdTech Masterplan 2030 |
+| P02 | Jongwon Seo | 韓國教育學術情報院（KERIS）Director | 追韓國教育部、KERIS 的教師 AI 與數位素養框架修訂 |
+| P03 | Liina Kanter | 愛沙尼亞教育及青年局（HARNO）教育創新部主任 | 追 AI Leap（AI 躍進）計畫與 HARNO 公告 |
+| P05 | 林瑋茹 | 教育部師資培育及藝術教育司專門委員 | 追智慧教育師培聯盟（子計畫六）與師藝司公告 |
 | P06 | 徐臺屏 | 臺北市日新國小 | 學校實務講者（座談二）。OpenAlex 有一檔案可能是本人：Tai-Ping Hsu，A5067092156，ORCID 0000-0003-1787-9173，臺師大，主題為 AI 教育與遊戲式學習；ORCID 無任職紀錄，**待確認** |
-| P07 | 施信源 | 新北市鳳鳴國小 | 學校實務講者（座談一）：萬人 Gemini Pro 導入問卷 |
+| P07 | 施信源 | 新北市鳳鳴國小教師 | 學校實務講者（座談一）：萬人 Gemini Pro 導入問卷 |
+| P08 | 蔡明貴 | 新北市永福國小校長 | 學校實務講者（座談二）；論壇官網有列，整理文件未見其內容 |
 
 ## 5. 檢索方式
 
@@ -84,6 +85,6 @@
 
 ## 6. 待辦
 
-1. 尚未解決：S05 Yasushi Mori 的日文姓名與 researchmap；P06 徐臺屏的 OpenAlex 檔案是否為本人；T07 兩組 ORCID 不一致（T04 確認無公開 ORCID）。
+1. 尚未解決：S05 Yasushi Mori 的日文姓名與 researchmap；P06 徐臺屏的 OpenAlex 檔案是否為本人；（T04 確認無公開 ORCID；T07 已確認）。
 2. 核對第 2 節論壇所列著作的書目（DOI、卷期、預印本編號），符合者依知識庫流程入庫，並逐篇判斷學段。
 3. 試跑一次依作者檢索（建議 A1 五位與 ID 已確認的 A2、近 90 天），評估命中數與 K-12 比例，再決定每週或每月的頻率。
