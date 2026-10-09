@@ -56,6 +56,11 @@ test("synthetic country, topic and conference view is typed and deterministic",(
  assert.deepEqual(i["by-topic/AI_LITERACY"],["KB-2026-0001"]);
  assert.deepEqual(i["by-conference/C21"],["KB-2026-0001"]);
 });
+test("source IDs follow venue-watchlist v1.4 (J01-J47, C01-C18, C20-C22) and reject unlisted codes",()=>{
+ const rel=id=>[{relation_id:"S-"+id,subject_id:"KB-2026-0001",predicate:"published_in",object_namespace:"source",object_id:id,verification_status:"discovered_unverified"}];
+ for(const id of ["J01","J39","J40","J47","C22"])assert.ok(!validate(records,rel(id),runs,candidates).some(v=>v.includes("invalid source ID")),id);
+ for(const id of ["J00","J48","J99","C19","C23"])assert.ok(validate(records,rel(id),runs,candidates).some(v=>v.includes("invalid source ID")),id);
+});
 test("venue/agency relation mix-up is invalid",()=>{
  const x=[{relation_id:"ERR",subject_id:"KB-2026-0001",predicate:"published_in",object_namespace:"source",object_id:"O-UNESCO",verification_status:"discovered_unverified"}];
  assert.ok(validate(records,x,runs,candidates).some(v=>v.includes("invalid venue relation")));

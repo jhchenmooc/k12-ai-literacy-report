@@ -53,7 +53,7 @@ function validate(records,relations,runs,candidates){
   if(x.object_namespace==="record")check(ids.has(x.object_id),"unknown target record: "+x.object_id);
   if(x.object_namespace==="work")check(groups.has(x.object_id),"unknown work group: "+x.object_id);
   if(x.object_namespace==="vocabulary"&&x.predicate==="has_category")check(vocab.includes(x.object_id),"unknown category: "+x.object_id);
-  if(x.object_namespace==="source")check(/^(J(?:0[1-9]|[12][0-9]|3[0-9])|C(?:0[1-9]|1[0-8]|20|21|22)|O-[A-Z0-9-]+)$/.test(x.object_id),"invalid source ID: "+x.object_id);
+  if(x.object_namespace==="source")check(/^(J(?:0[1-9]|[1-3][0-9]|4[0-7])|C(?:0[1-9]|1[0-8]|20|21|22)|O-[A-Z0-9-]+)$/.test(x.object_id),"invalid source ID: "+x.object_id);
   check(x.verification_status==="discovered_unverified"||x.verification_status==="bibliographic_checked"||x.verification_status==="content_checked","invalid relation status: "+x.relation_id);
   if(x.predicate==="has_category")check(x.object_namespace==="vocabulary"&&vocab.includes(x.object_id),"invalid category relation: "+x.relation_id);
   if(x.predicate==="published_in")check(x.object_namespace==="source"&&/^[JC]/.test(x.object_id),"invalid venue relation: "+x.relation_id);

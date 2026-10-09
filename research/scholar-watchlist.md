@@ -70,7 +70,7 @@
 | S23 | Hyo-Jeong So | 梨花女子大學教授 | 2024：韓國數位學習軌跡 | A5026147191；ORCID 0000-0002-1713-9653。**已確認**（ORCID 現職梨花女大教授）。另有分裂檔案 A5104011861 |
 | S24 | 胡祥恩（Xiangen Hu） | 香港理工大學講座教授、高等教育研究及發展院院長 | 2024 專題（人類智慧遇見人工智慧）、2025 座談（生成式 AI 於教育現場） | A5015950959；ORCID 0000-0001-9045-4070。**已確認**（ORCID 現職香港理工大學講座教授） |
 
-## 2e. A4 歷屆臺灣學術講者（2023–2025，6 位，只列已確認）
+## 2e. A4 歷屆臺灣學術講者（2023–2025，7 位，只列已確認）
 
 > 英文姓名為推測拼法，依 OpenAlex 檔案與單位比對。
 
@@ -79,6 +79,7 @@
 | T10 | 吳穎沺 | 2023 國立中央大學教授；2025 教育部資訊及科技教育司司長 | 2023 與談；2025 專題（國小教師 AI-TPACK）與座談主持 | Ying-Tien Wu：A5062421922；ORCID 0000-0001-9494-2848。**已確認**（ORCID 現職中央大學） |
 | T12 | 楊子奇 | 國立陽明交通大學副教授 | 2025 座談：教育大數據分析 | Tzu-Chi Yang：A5070980933；ORCID 0000-0002-7721-5902。**已確認**（ORCID 現職陽明交大副教授） |
 | T14 | 蔡今中 | 國立臺灣師範大學講座教授 | 2024 專題：以 PISA 2022 看臺灣數位學習 | Chin-Chung Tsai：A5018045318；ORCID 0000-0001-7744-9971。**已確認**（ORCID 現職臺師大） |
+| T15 | 陳浩然（Hao-Jan Howard Chen） | 國立臺灣師範大學英語學系特聘教授（管理者告知，依臺師大學者簡介） | 2023 與談；2024 座談主持（雙語數位學習）。研究：電腦與科技輔助語言學習、語料庫語言學、生成式 AI 與 LLM 用於英語寫作與口說回饋 | Howard Hao-Jan Chen：A5004951634；ORCID 0000-0002-8943-5689。**已確認**（管理者依臺師大學者簡介確認現職；ORCID 無公開任職紀錄）。另有分裂檔案 A5070985356 等 |
 | T19 | 張俊彥 | 國立臺灣師範大學講座教授 | 2023 與談：全球視野下數位學習政策 | Chun-Yen Chang：A5033782932；ORCID 0000-0003-2373-2004。**已確認**（ORCID 現職臺師大講座教授）。檔案混有半導體論文；另有同名臺大教授 A5101477936，勿混用 |
 | T21 | 侯惠澤 | 國立臺灣科技大學特聘教授 | 2023 與談：新時代數位學習教學法 | Huei-Tse Hou：A5085454224；ORCID 0000-0003-1783-8830。**已確認**（ORCID 現職臺科大）。另有分裂檔案 A5059055927 |
 | T22 | 陳志銘 | 國立政治大學特聘教授 | 2023 與談：應用學習分析提升學習成效 | Chih-Ming Chen：A5102019604；ORCID 0000-0002-7088-5516。**已確認**（ORCID 現職政大）。同名者多（中興大學材料、推薦系統），勿混用；A5009476853 同 ORCID 但混入大氣科學論文 |
@@ -149,8 +150,8 @@
 | V04 | Musa Adekunle Ayanwale | University of Pretoria/Senior Lecturer | #7 2022〈Teachers’ readiness and intention to teach artificial i…〉J02，被引 398 | A5050963174；ORCID 0000-0001-7640-9898。**已確認** |
 | V05 | Solomon Sunday Oyelere | University of Exeter/Professor | #7 2022〈Teachers’ readiness and intention to teach artificial i…〉J02，被引 398；#43 2024〈Advancing AI education: Assessing Kenyan in-service tea…〉J11，被引 79 | A5031929045；ORCID 0000-0001-9895-6796。**已確認** |
 | V06 | Ching Sing Chai | Chinese University of Hong Kong/Professor | #9 2021〈Creation and Evaluation of a Pretertiary Artificial Int…〉J28，被引 371；#12 2022〈Modeling English teachers’ behavioral intention to use …〉J05，被引 288；#21 2023〈The mediating effects of needs satisfaction on the rela…〉J04，被引 198 | A5035167001；ORCID 0000-0002-6298-4813。**已確認** |
-| V07 | Hung‐Ming Lin | Minghsin University of Science and Technology | #13 2022〈An analysis of children’ interaction with an AI chatbot…〉J01，被引 238 | A5059286632；ORCID 0000-0002-3250-003X。**已確認**；OpenAlex 單位（Chang Gung University of Science and Technology）與 ORCID 不同，依作者找到的論文須看作者單位 |
-| V08 | Tzu‐Yu Tai | Taipei Medical University/Assistant Professor | #14 2024〈Improving elementary EFL speaking skills with generativ…〉J01，被引 226 | A5067604629；ORCID 0000-0003-0506-9579。**已確認** |
+| V07 | 林鴻銘（Hung-Ming Lin） | 長庚科技大學化妝品應用系教授兼研發長（管理者告知；曾任明新科技大學企業管理系教授兼研發長，ORCID 仍列明新） | #13 2022〈An analysis of children’ interaction with an AI chatbot…〉J01，被引 238 | A5059286632；ORCID 0000-0002-3250-003X。**已確認**。管理者確認現職與 OpenAlex 單位一致（ORCID 未更新）。主要領域非教育，檢索須加教育主題詞 |
+| V08 | 戴孜伃（Tzu-Yu Tai） | 臺北醫學大學語言中心助理教授、教務處雙語教育推動中心副主任（管理者告知） | #14 2024〈Improving elementary EFL speaking skills with generativ…〉J01，被引 226 | A5067604629；ORCID 0000-0003-0506-9579。**已確認**。管理者確認；代表論文與陳浩然（附錄 T15）合著 |
 | V09 | Teemu Valtonen | University of Eastern Finland/Professor | #16 2020〈Learning machine learning with very young children: Who…〉J35，被引 221 | A5053463604；ORCID 0000-0002-1803-9865。**已確認** |
 | V10 | Marcelo Milrad | Linneaus University /Professor  | #17 2023〈Artificial Intelligence in K-12 Education: eliciting an…〉J05，被引 208 | A5038027124；ORCID 0000-0002-6937-345X。**已確認**；OpenAlex 單位（Linnaeus University）與 ORCID 不同，依作者找到的論文須看作者單位 |
 | V11 | Randi Williams | Carnegie Mellon University/Assistant Research Professor | #18 2022〈AI + Ethics Curricula for Middle School Youth: Lessons …〉J03，被引 205 | A5055884793；ORCID 0000-0002-7740-5749。**已確認** |
@@ -165,7 +166,7 @@
 | V20 | Xiaoqing Gu | Changzhou University | #24 2024〈Exploring the effects of AI literacy in teacher learnin…〉J33，被引 168 | A5090932123；ORCID 0000-0001-9942-0651。**已確認** |
 | V21 | Xiaoming Zhaı | University of Georgia/Assistant Professor | #25 2024〈Using ChatGPT for Science Learning: A Study on Pre-serv…〉J27，被引 166 | A5013379229；ORCID 0000-0003-4519-1931。**已確認** |
 | V22 | Murod Ismailov | University of Tsukuba/Associate Professor | #27 2024〈A self-determination theory approach to teacher digital…〉J01，被引 146 | A5032548859；ORCID 0000-0003-2441-1640。**已確認** |
-| V23 | Chih‐Hung Wu | National Tsing Hua University/Professor | #28 2022〈The exploration of continuous learning intention in STE…〉J31，被引 144 | A5004066253；ORCID 0000-0003-3804-0852。**已確認** |
+| V23 | 吳智鴻（Chih-Hung Wu） | 國立清華大學數理教育研究所教授（合聘數位內容教學碩士學位學程等；管理者告知） | #28 2022〈The exploration of continuous learning intention in STE…〉J31，被引 144 | A5004066253；ORCID 0000-0003-3804-0852。**已確認**。管理者確認 |
 | V24 | Pavlo Antonenko | University of Florida | #30 2022〈In-service teachers’ (mis)conceptions of artificial int…〉J08，被引 142 | A5084689835；ORCID 0000-0001-8565-123X。**已確認** |
 | V25 | Brian Abramowitz | Florida Museum of Natural History/K-12 Education and Outreach Coordinator | #30 2022〈In-service teachers’ (mis)conceptions of artificial int…〉J08，被引 142 | A5065566581；ORCID 0000-0001-8681-0853。**已確認** |
 | V26 | James C. Lester | North Carolina State University/Goodnight Distinguished University Professor in Artificial Intelligence and Machine Learning | #31 2023〈K-12 Education in the Age of AI: A Call to Action for K…〉J03，被引 136；#34 2022〈Lessons Learned for AI Education with Elementary Studen…〉J03，被引 118 | A5074470380；ORCID 0000-0003-1481-6601。**已確認** |
@@ -251,7 +252,6 @@
 | T09 | 莫慕貞 | Magdalena Mo Ching Mok：A5017750244；ORCID 0000-0002-6503-8152。**大致確認**（臺中教大、測驗與教育主題相符；ORCID 無任職紀錄） |
 | T11 | 陳世文 | **待確認**：東華大學只找到 1 篇的小檔案 A5135839118（Shih-Wen Chen） |
 | T13 | 張道宜 | **未找到** |
-| T15 | 陳浩然 | Howard Hao-Jan Chen：A5004951634；ORCID 0000-0002-8943-5689。**大致確認**（英語教學主題相符；ORCID 無任職紀錄）。另有分裂檔案 |
 | T16 | 吳慧珉 | **待確認**：臺中教大有 Huey-Min Wu（A5015947753），但主題為兒童動作發展，未必是本人 |
 | T17 | 王雅茵 | **未找到** |
 | T18 | 楊鎮華 | Stephen J.H. Yang：A5039275245；ORCID 0000-0003-1059-620X。**大致確認**（中央大學、學習分析主題相符；ORCID 無任職紀錄） |
