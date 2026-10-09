@@ -174,6 +174,9 @@
 | KB-2025-0115 — [Integration of Artificial Intelligence (AI) into Primary School Students’ Writing Skills: The Impact of ChatGPT on Creative Writing and Writing Self-Efficacy](https://doi.org/10.1177/07356331251365187) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0116 — [Generative AI + AR: a novel embodied conversational agent in an interactive learning environment](https://doi.org/10.1080/10494820.2025.2589942) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0117 — [The Effects of Artificial Intelligence-Assisted Creative Writing on Students’ Writing Motivation, Writing Anxiety, and Creative Writing Skills](https://doi.org/10.1177/07356331251409998) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0118 — [Unveiling teacher identity development: A case study of AI curriculum implementation in a rural middle school computer science class](https://doi.org/10.1016/j.tate.2025.105032) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0119 — [Moral grounding before algorithms: a cross-cultural critique of AI education in schools](https://doi.org/10.1007/s00146-025-02749-1) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0120 — [Shaping the future of education: school principals’ views on AI, big data and robot teachers](https://doi.org/10.1007/s00146-025-02570-w) | journal_article | 未知 | discovered_unverified |
 
 ## 2026｜first_publication
 
@@ -396,6 +399,11 @@
 | KB-2026-0228 — [Use of AI-assisted writing tools for student self-assessment at school: survey on teachers’ perceptions and practices](https://doi.org/10.3389/feduc.2026.1701597) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0229 — [Mind the Trust Gap: Identifying (Mis)alignments in Teacher-Student Views Toward Control and Agency in K-12 Classroom AI](https://doi.org/10.1145/3816972) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0230 — [Artificial Intelligence (AI) in elementary language education: A systematic review](https://doi.org/10.1016/j.caeo.2026.100424) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0231 — [Mapping in-service teacher AI literacy: A systematic review of empirical studies](https://doi.org/10.1016/j.tate.2026.105707) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0232 — [From surface to substance: Experiential learning to promote understanding of ChatGPT for K-12 lesson planning](https://doi.org/10.1016/j.tate.2025.105375) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0233 — [Teachers’ AI-TPACK as a tangible outcome in the digital transformation of education: A machine learning-based multilevel approach](https://doi.org/10.1016/j.tate.2025.105270) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0234 — [Anticipating AI panacea? Teacher imaginaries of AI digital textbooks in South Korea](https://doi.org/10.1016/j.tate.2026.105435) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0235 — [Predicting in-service teachers’ AI readiness from emotions in teaching and mindsets about teaching ability: Testing the direct and moderating effects](https://doi.org/10.1016/j.tate.2026.105433) | journal_article | 未知 | discovered_unverified |
 
 ## 2027｜issue_year
 
