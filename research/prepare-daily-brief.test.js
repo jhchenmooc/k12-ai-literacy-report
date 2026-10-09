@@ -33,7 +33,7 @@ test("old verified background never enters publication suggestion",()=>{
 
 test("daily recommendation never overrides a pending same-week source correction",()=>{
  const w=makeDraft("2026-10-09").data;w.search_runs=[];
- const item={candidate_id:"verified",source_url:"https://example.org/v",source_title:"Verified",source_publication_date:"2026-10-09",first_disclosed_on:"2026-10-09",verification_completed_on:"2026-10-09",source_checked:true,conflict_unresolved:false,decision:"publish",source_updates:[{review_required:true,discovered_on:"2026-10-09",source_url:"https://example.org/v",note:"Unresolved correction"}]};
+ const item={ai_lit_class:"A",audience:"k12",candidate_id:"verified",source_url:"https://example.org/v",source_title:"Verified",source_publication_date:"2026-10-09",first_disclosed_on:"2026-10-09",verification_completed_on:"2026-10-09",source_checked:true,conflict_unresolved:false,decision:"publish",source_updates:[{review_required:true,discovered_on:"2026-10-09",source_url:"https://example.org/v",note:"Unresolved correction"}]};
  w.items=[item];
  assert.deepEqual(dailyBrief(w,"2026-10-10").suggested_for_publication,[]);
  item.source_updates[0].review_required=false;
@@ -67,4 +67,10 @@ test("real first-week nine candidates remain held and never auto-promote",()=>{
  assert.equal(w.items.length,count);
  assert.equal(w.screening_summary.ready_to_publish,0);
  assert.equal(w.screening_summary.verified_for_publication,0);
+});
+test("daily suggestions require AI literacy scope A/B and a daily audience",()=>{
+ const base={candidate_id:"v",source_url:"https://example.org/v",source_title:"V",source_publication_date:"2026-10-09",first_disclosed_on:"2026-10-09",verification_completed_on:"2026-10-09",source_checked:true,conflict_unresolved:false,decision:"publish",ai_lit_class:"A",audience:"k12"};
+ const count=extra=>{const w=makeDraft("2026-10-09").data;w.search_runs=[];w.items=[{...base,...extra}];return dailyBrief(w,"2026-10-10").suggested_for_publication.length};
+ assert.equal(count({}),1);assert.equal(count({ai_lit_class:"B",audience:"other_stakeholders"}),1);
+ for(const bad of [{ai_lit_class:"C"},{ai_lit_class:"unknown"},{ai_lit_class:undefined},{audience:"teacher_ed"},{audience:"unknown"},{audience:undefined}])assert.equal(count(bad),0,JSON.stringify(bad));
 });

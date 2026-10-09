@@ -184,7 +184,7 @@ Pages 現行部署從 `_public_site` 打包公開目錄，不再把研究工作�
 
 ## 每日快訊待審包 v1.5（正式發布尚未啟用）
 
-每日實際搜尋結果沿用每週候選 JSON（`ingest-candidates.js`），供週報同時選稿，不以日報刊登消耗候選。新候選 `discovered_on`、`discovery_batch_id` 僅記錄實際搜尋批次；跨週 DOI／URL／事件鍵可參照既有候選，重要更新保留短摘要待重新查核。執行 `node research/prepare-daily-brief.js 2026-10-10` 會讀 10/09 搜尋批次，輸出 Markdown 待審包；0 則是正常結果。舊研究列背景、未核證列待查，不會產生正式可刊清單。**此工具不做網路搜尋、不提供真人核准、不能建立 `daily/` 或登錄 issues**。正式日報需另行設計並驗證 PR Review、對應最終版本的真人核准與部署安全；不得把待審包當作正式發布。每週仍須獨立核對來源、反證及編輯決策。
+每日實際搜尋結果沿用每週候選 JSON（`ingest-candidates.js`），供週報同時選稿，不以日報刊登消耗候選。新候選 `discovered_on`、`discovery_batch_id` 僅記錄實際搜尋批次；跨週 DOI／URL／事件鍵可參照既有候選，重要更新保留短摘要待重新查核。執行 `node research/prepare-daily-brief.js 2026-10-10` 會讀 10/09 搜尋批次，輸出 Markdown 待審包（「建議可刊」只列 AI 素養範圍 A/B 且對象為 `k12`／`other_stakeholders` 者）；0 則是正常結果。舊研究列背景、未核證列待查，不會產生正式可刊清單。**此工具不做網路搜尋、不提供真人核准、不能建立 `daily/` 或登錄 issues**。正式日報需另行設計並驗證 PR Review、對應最終版本的真人核准與部署安全；不得把待審包當作正式發布。每週仍須獨立核對來源、反證及編輯決策。
 
 ## 正式每日出版（PR C 前置安全護欄；尚未啟用）
 
