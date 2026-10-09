@@ -29,6 +29,15 @@
 | O-US-ED | 美國聯邦 | https://www.ed.gov/ | AI 教育政策、研究與通知 | 聯邦與州政策分開 |
 | O-CA-EDU | 加拿大各省 | 以各省官方教育部網址另建來源 ID | K–12 AI 政策與隱私 | **尚未列單一全國教育部**，需逐省核對 |
 | O-NZ-MOE | 紐西蘭中央 | https://www.education.govt.nz/ | 學校 AI 指引與教師資源 | 版本及日期逐件核對 |
+| O-US-WH | 美國聯邦（總統） | https://www.whitehouse.gov/ | 涉 K–12 AI 教育的行政命令 | 行政命令與 ED 執行文件分開；Federal Register 刊登日與簽署日分欄 |
+| O-US-CA-CDE | 美國加州 | https://www.cde.ca.gov/ | 州 K–12 AI 指引 | 州法（立法機關）與教育廳指引分開 |
+| O-US-NC-DPI | 美國北卡 | https://www.dpi.nc.gov/ | 州 K–12 生成式 AI 建議 | 新聞稿「recently released」不是首發日 |
+| O-US-WA-OSPI | 美國華盛頓州 | https://ospi.k12.wa.us/ | 州 K–12 AI 指引與補充文件 | 補充文件與主指引分開 |
+| O-US-OR-ODE | 美國奧勒岡 | https://www.oregon.gov/ode/ | 州 K–12 生成式 AI 指引（版本制） | 網頁版版本日期需逐版核對 |
+| O-US-OH-DEW | 美國俄亥俄 | https://education.ohio.gov/ | 州 AI 模範政策 | 州法期限不是文件施行日 |
+| O-US-GA-DOE | 美國喬治亞 | https://www.gadoe.org/ | 州 K–12 AI 指引 | 文件頁 Date Published 只證明該頁 |
+| O-AU-NSW-DOE | 澳洲新南威爾斯州 | https://education.nsw.gov.au/ | 州學校生成式 AI 指引 | 與聯邦框架（O-AU-EDU）分開 |
+| O-TW-EY | 臺灣中央（行政院） | https://www.ey.gov.tw/ | 院會核定之教育 AI 計畫 | 計畫主管機關可能為教育部；院會日不等於教育部發布日 |
 
 表內入口為起始監測位置，**不是每個入口都已完成可達性、歷年文件或法律效力查證**。加拿大及美國州／澳洲州政策應按主管機關分別登錄，避免假裝統一全國政策；地方單位採需求驅動擴充。
 

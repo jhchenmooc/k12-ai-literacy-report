@@ -1,0 +1,1484 @@
+{
+  "group": "C（國際組織與歐盟）",
+  "started_utc": "2026-10-09T17:28:20Z",
+  "ended_utc": "2026-10-09T17:36:54Z",
+  "scope": {
+    "window": "2019-01-01 至 2026-10-09",
+    "orgs": [
+      "O-UNESCO",
+      "O-OECD",
+      "O-EU-EC",
+      "O-COE",
+      "O-UNICEF"
+    ],
+    "note": "只收官方政策／框架／指引／報告／法規；不收研討會、新聞、活動。known_duplicate 不重列為新項。"
+  },
+  "searches": [
+    {
+      "tool": "curl",
+      "query_or_url": "https://unesdoc.unesco.org/ark:/48223/pf0000368303",
+      "utc": "2026-10-09T17:28:32Z",
+      "status": "403",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+      "utc": "2026-10-09T17:28:33Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en",
+      "utc": "2026-10-09T17:28:34Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/works/10.1787/c74f03de-en",
+      "utc": "2026-10-09T17:28:35Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.unicef.org/innocenti/reports/policy-guidance-ai-children",
+      "utc": "2026-10-09T17:28:36Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.coe.int/en/web/education/artificial-intelligence",
+      "utc": "2026-10-09T17:28:36Z",
+      "status": "403",
+      "result_count": null
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "European Commission guidelines AI and data in education teaching update 2025 2026 schools AI literacy",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 10,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "UNESCO guidance K-12 AI curricula mapping government-endorsed DOI 10.54675",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 9,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "OECD PISA 2029 Media and Artificial Intelligence Literacy framework draft",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 10,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "op.europa.eu guidelines ethical use of artificial intelligence and data in teaching and learning 2026",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 10,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "European Commission 5 March 2026 guidelines teachers AI disinformation informatics digital education content press",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 10,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "unesco.org Beijing Consensus on artificial intelligence and education 2019 document",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 9,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "unesco.org \"AI and education: guidance for policy-makers\" 2021",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 10,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "UNICEF Guidance on AI and children 2025 updated version 3.0 Innocenti",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 9,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "Council conclusions teachers in the era of artificial intelligence May 2026 Official Journal C",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 10,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "European Commission 2026 roadmap digital education skills AI in schools communication \"AI literacy\" Union of Skills",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 9,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "Council of Europe Committee of Ministers recommendation artificial intelligence education adopted 2025 2026 schools",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 10,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "site:unesco.org K-12 AI curricula mapping government-endorsed article",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 9,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebSearch",
+      "query_or_url": "UNESCO 2025 2026 new guidance AI education schools publication launch",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok",
+      "result_count": 18,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebFetch",
+      "query_or_url": "https://www.coe.int/en/web/portal/-/new-council-of-europe-recommendation-places-education-at-the-heart-of-response-to-ai",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "HTTP 403",
+      "result_count": null,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "WebFetch",
+      "query_or_url": "https://www.eunews.it/en/2026/09/04/council-of-europe-places-education-at-the-heart-of-response-to-artificial-intelligence/",
+      "utc": "2026-10-09T17:28:40Z–17:34:10Z（WebSearch／WebFetch 未逐筆打時間戳，僅記此區間）",
+      "status": "ok（模型轉述，僅線索）",
+      "result_count": 1,
+      "note": "WebSearch 摘要／WebFetch 內容為模型轉述，只當線索"
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+      "utc": "2026-10-09T17:29:08Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.unesco.org/en/articles/beijing-consensus-artificial-intelligence-and-education",
+      "utc": "2026-10-09T17:29:08Z",
+      "status": "000（curl: (52) Empty reply from server）",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://iite.unesco.org/publications/unesco-releases-report-on-the-mapping-of-k-12-artificial-intelligence-curricula",
+      "utc": "2026-10-09T17:29:09Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://education.ec.europa.eu/node/1566",
+      "utc": "2026-10-09T17:29:10Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://education.ec.europa.eu/focus-topics/digital-education/actions/ethical-guidelines-on-the-use-of-artificial-intelligence-ai-and-data-in-teaching-and-learning-for-educators",
+      "utc": "2026-10-09T17:29:12Z",
+      "status": "404",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://learning-corner.learning.europa.eu/news-and-competitions/building-ai-literacy-future-2026-06-19_en",
+      "utc": "2026-10-09T17:29:13Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.oecd.org/en/publications/empowering-learners-for-the-age-of-ai_65cd27d4-en.html",
+      "utc": "2026-10-09T17:29:15Z",
+      "status": "403",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://ailiteracyframework.org/",
+      "utc": "2026-10-09T17:29:15Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.unicef.org/innocenti/reports/policy-guidance-ai-children-2025",
+      "utc": "2026-10-09T17:29:16Z",
+      "status": "404",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/prefixes/10.54675/works?query.bibliographic=artificial+intelligence+education&rows=60&select=DOI,title,published,issued,created,type",
+      "utc": "2026-10-09T17:29:17Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/prefixes/10.54675/works?query.bibliographic=K-12+AI+curricula+mapping+government-endorsed&rows=5&select=DOI,title,published,created",
+      "utc": "2026-10-09T17:29:29Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/prefixes/10.54675/works?query.bibliographic=Beijing+Consensus+artificial+intelligence+education&rows=5&select=DOI,title,published,created",
+      "utc": "2026-10-09T17:29:29Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/prefixes/10.54675/works?query.bibliographic=AI+competency+framework&rows=8&select=DOI,title,published,created",
+      "utc": "2026-10-09T17:29:30Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/prefixes/10.54675/works?query.bibliographic=artificial+intelligence+teachers+school+children&rows=15&select=DOI,title,published,created",
+      "utc": "2026-10-09T17:29:31Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators",
+      "utc": "2026-10-09T17:30:26Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://education.ec.europa.eu/node/3489",
+      "utc": "2026-10-09T17:30:27Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://education.ec.europa.eu/event/empowering-learners-for-the-age-of-ai-launch-of-the-draft-ai-literacy-framework-and-stakeholder-consultations",
+      "utc": "2026-10-09T17:30:48Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/prefixes/10.1787/works?query.bibliographic=Empowering+learners+for+the+age+of+AI+literacy+framework&rows=6&select=DOI,title,published,created,type",
+      "utc": "2026-10-09T17:30:49Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/prefixes/10.1787/works?query.bibliographic=PISA+2029+media+artificial+intelligence+literacy&rows=6&select=DOI,title,published,created,type",
+      "utc": "2026-10-09T17:30:50Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/prefixes/10.1787/works?query.bibliographic=Digital+Education+Outlook&rows=10&select=DOI,title,published,created,type",
+      "utc": "2026-10-09T17:30:51Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/prefixes/10.1787/works?query.bibliographic=generative+AI+education+schools+students+teachers&filter=from-pub-date:2023-01-01&rows=15&select=DOI,title,published,created,type",
+      "utc": "2026-10-09T17:30:52Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/works/10.1787/062a7394-en",
+      "utc": "2026-10-09T17:31:03Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/works/10.1787/589b283f-en",
+      "utc": "2026-10-09T17:31:03Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/works/10.1787/c74f03de-en",
+      "utc": "2026-10-09T17:31:04Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/works/10.1787/ca56c7d6-en",
+      "utc": "2026-10-09T17:31:04Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/works/10.1787/65cd27d4-en",
+      "utc": "2026-10-09T17:31:04Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html",
+      "utc": "2026-10-09T17:31:13Z",
+      "status": "403",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.oecd-ilibrary.org/education/oecd-digital-education-outlook-2026_062a7394-en",
+      "utc": "2026-10-09T17:31:13Z",
+      "status": "403",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.oecd.org/en/about/projects/pisa-2029-media-and-artificial-intelligence-literacy.html",
+      "utc": "2026-10-09T17:31:13Z",
+      "status": "403",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://pisa-framework.oecd.org/",
+      "utc": "2026-10-09T17:31:13Z",
+      "status": "403",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.oecd.org/",
+      "utc": "2026-10-09T17:31:14Z",
+      "status": "404",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R1689",
+      "utc": "2026-10-09T17:31:31Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32026R1744",
+      "utc": "2026-10-09T17:31:50Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.consilium.europa.eu/en/meetings/eycs/2026/05/11/",
+      "utc": "2026-10-09T17:32:18Z",
+      "status": "403",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://data.consilium.europa.eu/doc/document/ST-8262-2026-INIT/en/pdf",
+      "utc": "2026-10-09T17:32:18Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://eur-lex.europa.eu/search.html?scope=EURLEX&text=%22teachers+in+the+era+of+artificial+intelligence%22&lang=en&type=quick&qid=1",
+      "utc": "2026-10-09T17:32:19Z",
+      "status": "202",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.coe.int/en/web/portal/-/new-council-of-europe-recommendation-places-education-at-the-heart-of-response-to-ai",
+      "utc": "2026-10-09T17:32:43Z",
+      "status": "403",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.coe.int/en/web/education/-/the-steering-committee-for-education-cdedu-approves-a-landmark-framework-on-ai-literacy",
+      "utc": "2026-10-09T17:32:43Z",
+      "status": "403",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://rm.coe.int/dgii-edu-aied-2025-04-artificial-intelligence-and-education-3rd-workin/4880289ac5",
+      "utc": "2026-10-09T17:32:44Z",
+      "status": "403",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://search.coe.int/cm/",
+      "utc": "2026-10-09T17:32:44Z",
+      "status": "404",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.unesco.org/en/digital-education/artificial-intelligence",
+      "utc": "2026-10-09T17:33:16Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.unesco.org/en/articles/beijing-consensus-artificial-intelligence-and-education",
+      "utc": "2026-10-09T17:33:18Z",
+      "status": "000（curl: (52) Empty reply from server）",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://en.unesco.org/news/first-ever-consensus-artificial-intelligence-and-education-published-unesco",
+      "utc": "2026-10-09T17:33:29Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.unesco.org/en/articles/ai-and-education-guidance-policy-makers",
+      "utc": "2026-10-09T17:33:31Z",
+      "status": "000（curl: (52) Empty reply from server）",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.unesco.org/en/articles/ai-and-education-guidance-policy-makers-0",
+      "utc": "2026-10-09T17:33:32Z",
+      "status": "000（curl: (52) Empty reply from server）",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.unesco.org/en/articles/ai-and-education-protecting-rights-learners",
+      "utc": "2026-10-09T17:33:32Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://www.unesco.org/en/articles/international-conference-artificial-intelligence-and-education",
+      "utc": "2026-10-09T17:33:33Z",
+      "status": "000（curl: (52) Empty reply from server）",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/works/10.54675/pcsp7350",
+      "utc": "2026-10-09T17:33:34Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/works/10.54675/elyf6010",
+      "utc": "2026-10-09T17:33:34Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/works/10.54675/ewzm9535",
+      "utc": "2026-10-09T17:33:34Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://api.crossref.org/works/10.54675/roqh4287",
+      "utc": "2026-10-09T17:33:35Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52020DC0624",
+      "utc": "2026-10-09T17:34:03Z",
+      "status": "202",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52020DC0624",
+      "utc": "2026-10-09T17:34:07Z",
+      "status": "202",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://education.ec.europa.eu/focus-topics/digital-education/action-plan",
+      "utc": "2026-10-09T17:34:15Z",
+      "status": "200",
+      "result_count": null
+    },
+    {
+      "tool": "curl",
+      "query_or_url": "https://op.europa.eu/lastedition/d81a0d54-5348-11ed-92ed-01aa75ed71a1",
+      "utc": "2026-10-09T17:34:38Z",
+      "status": "200",
+      "result_count": null
+    }
+  ],
+  "items": [
+    {
+      "title": "Beijing Consensus on Artificial Intelligence and Education",
+      "official_url": "https://unesdoc.unesco.org/ark:/48223/pf0000368303",
+      "doi": null,
+      "issued_by": "O-UNESCO",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "建議（國際會議成果文件／共識；非拘束性）——依據僅來自 WebSearch 線索，原頁未讀",
+      "record_type_suggestion": "framework",
+      "k12_scope_evidence": "原頁不可讀，無法以原文確認學段；線索稱涵蓋教育政策規劃、教師與終身學習，未見 K–12 明寫。",
+      "category_suggestion": [
+        "K1"
+      ],
+      "first_published_on": null,
+      "date_precision": "unknown",
+      "date_evidence": "UNESDOC 為 Cloudflare 驗證頁（HTTP 403，「Just a moment...」）不得繞過；unesco.org 文章頁空回應（curl 52）；en.unesco.org 舊新聞網址轉址至首頁；Crossref 10.54675 前綴查無此件。線索（WebSearch）稱 2019 年 5 月北京會議通過，未核。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": null,
+      "known_duplicate": false,
+      "decision": "pending",
+      "reason": "原頁不可讀（UNESDOC captcha；unesco.org 空回應）；首發日與學段均無官方可讀證據。",
+      "access_log": [
+        {
+          "url": "https://unesdoc.unesco.org/ark:/48223/pf0000368303",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "403",
+          "utc": "2026-10-09T17:28:32Z",
+          "note": ""
+        },
+        {
+          "url": "https://www.unesco.org/en/articles/beijing-consensus-artificial-intelligence-and-education",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "000",
+          "utc": "2026-10-09T17:29:08Z",
+          "note": "curl: (52) Empty reply from server"
+        },
+        {
+          "url": "https://www.unesco.org/en/articles/beijing-consensus-artificial-intelligence-and-education",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "000",
+          "utc": "2026-10-09T17:33:18Z",
+          "note": "curl: (52) Empty reply from server"
+        },
+        {
+          "url": "https://en.unesco.org/news/first-ever-consensus-artificial-intelligence-and-education-published-unesco",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:33:29Z",
+          "note": ""
+        },
+        {
+          "url": "https://api.crossref.org/prefixes/10.54675/works?query.bibliographic=Beijing+Consensus+artificial+intelligence+education&rows=5&select=DOI,title,published,created",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:29:29Z",
+          "note": ""
+        }
+      ],
+      "id": "C-01"
+    },
+    {
+      "title": "AI and education: guidance for policy-makers",
+      "official_url": "https://unesdoc.unesco.org/ark:/48223/pf0000376709",
+      "doi": "10.54675/pcsp7350",
+      "issued_by": "O-UNESCO",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "正式指引（UNESCO 出版之政策指引；非拘束性）",
+      "record_type_suggestion": "official_guidance",
+      "k12_scope_evidence": "原頁不可讀；Crossref 無摘要。學段僅能由線索推知為跨學段教育政策，未見原文明寫 K–12。",
+      "category_suggestion": [
+        "K1",
+        "K5"
+      ],
+      "first_published_on": "2021",
+      "date_precision": "year",
+      "date_evidence": "Crossref works/10.54675/pcsp7350 欄位 published.date-parts=[[2021]]（出版社 manifestation 年；Crossref created 2023-04-26 為補登記日，不採）；ISBN 9789231004476；resource.primary.URL 指向 UNESDOC pf0000376709。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": null,
+      "known_duplicate": false,
+      "decision": "pending",
+      "reason": "原頁不可讀（UNESDOC captcha；unesco.org 文章頁空回應）；僅有 Crossref 年份，K–12 範圍未經原文確認。",
+      "access_log": [
+        {
+          "url": "https://api.crossref.org/works/10.54675/pcsp7350",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:33:34Z",
+          "note": ""
+        },
+        {
+          "url": "https://www.unesco.org/en/articles/ai-and-education-guidance-policy-makers",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "000",
+          "utc": "2026-10-09T17:33:31Z",
+          "note": "curl: (52) Empty reply from server"
+        },
+        {
+          "url": "https://www.unesco.org/en/articles/ai-and-education-guidance-policy-makers-0",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "000",
+          "utc": "2026-10-09T17:33:32Z",
+          "note": "curl: (52) Empty reply from server"
+        }
+      ],
+      "id": "C-02"
+    },
+    {
+      "title": "K-12 AI curricula: a mapping of government-endorsed AI curricula",
+      "official_url": "https://iite.unesco.org/publications/unesco-releases-report-on-the-mapping-of-k-12-artificial-intelligence-curricula/",
+      "doi": "10.54675/elyf6010",
+      "issued_by": "O-UNESCO",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "報告（全球課程盤點報告；非拘束性）",
+      "record_type_suggestion": "policy_review",
+      "k12_scope_evidence": "UNESCO IITE 頁寫明為「the first report on the global status of K-12 AI curricula」，題名即 K-12。",
+      "category_suggestion": [
+        "K1",
+        "K4"
+      ],
+      "first_published_on": "2022",
+      "date_precision": "year",
+      "date_evidence": "UNESCO IITE 頁字樣「Publication year: 2022」（讀取 2026-10-09T17:29:09Z）；Crossref works/10.54675/elyf6010 published=[[2022]]。IITE 頁另標 5 September 2022（article:modified_time 2022-09-05），為該機構公告日，非可證首發日，不採為日精度。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": "Crossref 另有越南文版 10.54675/ohdi3731（2025）——僅為譯本登記，非官方明示之新版。",
+      "known_duplicate": false,
+      "decision": "candidate",
+      "reason": "UNESCO 機構（IITE）官方頁可讀並明寫 K-12 與出版年；UNESDOC 主頁不可讀，故只到年精度。",
+      "access_log": [
+        {
+          "url": "https://iite.unesco.org/publications/unesco-releases-report-on-the-mapping-of-k-12-artificial-intelligence-curricula",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:29:09Z",
+          "note": ""
+        },
+        {
+          "url": "https://api.crossref.org/works/10.54675/elyf6010",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:33:34Z",
+          "note": ""
+        }
+      ],
+      "id": "C-03"
+    },
+    {
+      "title": "Guidance for generative AI in education and research",
+      "official_url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+      "doi": "10.54675/ewzm9535",
+      "issued_by": "O-UNESCO",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "正式指引（UNESCO 全球指引；非拘束性）",
+      "record_type_suggestion": "official_guidance",
+      "k12_scope_evidence": "原頁：提出「setting an age limit for the independent conversations with GenAI platforms」及「age-appropriate approach」，涉兒少使用；未明寫 K–12 一詞。",
+      "category_suggestion": [
+        "K1",
+        "K5"
+      ],
+      "first_published_on": "2023-09-07",
+      "date_precision": "day",
+      "date_evidence": "unesco.org 原頁顯示「7 September 2023 / Last update: 16 January 2026」，JSON-LD datePublished 2023-09-07T13:59:40+0200（讀取 2026-10-09T17:29:08Z）。Crossref published=[[2023]] 一致。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": "原頁列多語版本（含 Arabic、Chinese、French 等）；官方未標新版本。2026-01-16 為頁面更新日，非新版。",
+      "known_duplicate": false,
+      "decision": "candidate",
+      "reason": "官方原頁可讀，首發日明寫；學段以年齡限制／適齡設計為依據（兒少），K–12 一詞未明寫，彙整時可再判。",
+      "access_log": [
+        {
+          "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:29:08Z",
+          "note": ""
+        },
+        {
+          "url": "https://api.crossref.org/works/10.54675/ewzm9535",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:33:34Z",
+          "note": ""
+        }
+      ],
+      "id": "C-04"
+    },
+    {
+      "title": "AI and education: protecting the rights of learners",
+      "official_url": "https://www.unesco.org/en/articles/ai-and-education-protecting-rights-learners",
+      "doi": "10.54675/roqh4287",
+      "issued_by": "O-UNESCO",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "報告（權利取向政策報告；非拘束性）",
+      "record_type_suggestion": "policy_review",
+      "k12_scope_evidence": "原頁摘要只寫「all learners」、受教權，未明寫中小學或兒童學段。",
+      "category_suggestion": [
+        "K1",
+        "K5"
+      ],
+      "first_published_on": "2025-09-04",
+      "date_precision": "day",
+      "date_evidence": "unesco.org 原頁「4 September 2025 / Last update: 25 September 2025」，JSON-LD datePublished 2025-09-04T10:35:24+0200（讀取 2026-10-09T17:33:32Z）；Crossref published=[[2025]]、ISBN 9789231007859。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": null,
+      "known_duplicate": false,
+      "decision": "pending",
+      "reason": "日期證據完整，但原頁未明寫 K–12／兒童學段，學段待判。",
+      "access_log": [
+        {
+          "url": "https://www.unesco.org/en/articles/ai-and-education-protecting-rights-learners",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:33:32Z",
+          "note": ""
+        },
+        {
+          "url": "https://api.crossref.org/works/10.54675/roqh4287",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:33:35Z",
+          "note": ""
+        }
+      ],
+      "id": "C-05"
+    },
+    {
+      "title": "AI competency framework for teachers",
+      "official_url": "https://www.unesco.org/en/articles/ai-competency-framework-teachers",
+      "doi": "10.54675/zjte2084",
+      "issued_by": "O-UNESCO",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "框架",
+      "record_type_suggestion": "framework",
+      "k12_scope_evidence": "既有紀錄，本組未重核。",
+      "category_suggestion": [
+        "K4"
+      ],
+      "first_published_on": "2024-08-08",
+      "date_precision": "day",
+      "date_evidence": "沿用知識庫既有紀錄 KB-2024-0001；本組僅以 Crossref 查到 DOI 10.54675/zjte2084（published=[[2024]]，created 2024-09-09），未改動首發日。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": "Crossref 另見越南文（10.54675/mdku1457，2025）、阿拉伯文（10.54675/kaox9398，2025）、泰文（10.54675/fndz1956，2026）譯本登記；非官方明示新版。",
+      "known_duplicate": "KB-2024-0001",
+      "decision": "exclude",
+      "reason": "known_duplicate，不重列為新項；僅補 DOI 與譯本線索。",
+      "access_log": [
+        {
+          "url": "https://api.crossref.org/prefixes/10.54675/works?query.bibliographic=AI+competency+framework&rows=8&select=DOI,title,published,created",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:29:30Z",
+          "note": ""
+        }
+      ],
+      "id": "C-06"
+    },
+    {
+      "title": "AI competency framework for students",
+      "official_url": "https://www.unesco.org/en/articles/ai-competency-framework-students",
+      "doi": "10.54675/jkjb9835",
+      "issued_by": "O-UNESCO",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "框架",
+      "record_type_suggestion": "framework",
+      "k12_scope_evidence": "既有紀錄，本組未重核。",
+      "category_suggestion": [
+        "K1",
+        "K3"
+      ],
+      "first_published_on": "2024-08-08",
+      "date_precision": "day",
+      "date_evidence": "沿用知識庫既有紀錄 KB-2024-0002；Crossref DOI 10.54675/jkjb9835（published=[[2024]]，created 2024-09-09）。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": "Crossref 另見越南文（10.54675/sbdh4858，2025）、阿拉伯文（10.54675/booq5604，2025）、泰文（10.54675/ernu5863，2026）譯本登記。",
+      "known_duplicate": "KB-2024-0002",
+      "decision": "exclude",
+      "reason": "known_duplicate，不重列為新項。",
+      "access_log": [
+        {
+          "url": "https://api.crossref.org/prefixes/10.54675/works?query.bibliographic=AI+competency+framework&rows=8&select=DOI,title,published,created",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:29:30Z",
+          "note": ""
+        }
+      ],
+      "id": "C-07"
+    },
+    {
+      "title": "Empowering Learners for the Age of AI: An AI Literacy Framework for Primary and Secondary Education",
+      "official_url": "https://www.oecd.org/en/publications/empowering-learners-for-the-age-of-ai_65cd27d4-en.html",
+      "doi": "10.1787/65cd27d4-en",
+      "issued_by": "O-OECD",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "框架（OECD 與歐盟執委會聯合）",
+      "record_type_suggestion": "framework",
+      "k12_scope_evidence": "副題「for Primary and Secondary Education」（Crossref subtitle；ailiteracyframework.org 首頁同）。",
+      "category_suggestion": [
+        "K1",
+        "K3"
+      ],
+      "first_published_on": "2026-06-18",
+      "date_precision": "day",
+      "date_evidence": "沿用 KB-2026-0010；Crossref works/10.1787/65cd27d4-en published-online 2026-06-18 與既有紀錄一致。歐盟 Learning Corner 新聞頁標 19 June 2026（另一官方 manifestation，晚一日）。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": "官方明示草案版：歐盟執委會活動頁寫「The draft version of the AI literacy framework is now available」，草案於 2025-05-22 線上發表活動展示，並寫「scheduled for final release in 2026」（頁面 Last updated 26 August 2025）。草案 22 項能力、四領域（engage/create/manage/design AI）。ailiteracyframework.org（©2026 OECD）稱本框架「contributes to the Innovative Domain of the PISA 2029 Assessment」。草案日為活動頁所載發表活動日，與檔案上線日是否同日未獨立核對。",
+      "known_duplicate": "KB-2026-0010",
+      "decision": "exclude",
+      "reason": "known_duplicate（正式版已在庫）；本列只補草案版本關係與跨機構（EC 共同發布）資訊。",
+      "access_log": [
+        {
+          "url": "https://www.oecd.org/en/publications/empowering-learners-for-the-age-of-ai_65cd27d4-en.html",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "403",
+          "utc": "2026-10-09T17:29:15Z",
+          "note": ""
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1787/65cd27d4-en",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:31:04Z",
+          "note": ""
+        },
+        {
+          "url": "https://education.ec.europa.eu/event/empowering-learners-for-the-age-of-ai-launch-of-the-draft-ai-literacy-framework-and-stakeholder-consultations",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:30:48Z",
+          "note": ""
+        },
+        {
+          "url": "https://learning-corner.learning.europa.eu/news-and-competitions/building-ai-literacy-future-2026-06-19_en",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:29:13Z",
+          "note": ""
+        },
+        {
+          "url": "https://ailiteracyframework.org/",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:29:15Z",
+          "note": ""
+        }
+      ],
+      "id": "C-08"
+    },
+    {
+      "title": "PISA 2029 Media & Artificial Intelligence Literacy (MAIL) assessment framework (draft)",
+      "official_url": "https://www.oecd.org/en/about/projects/pisa-2029-media-and-artificial-intelligence-literacy.html",
+      "doi": null,
+      "issued_by": "O-OECD",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "草案（評量框架草案）——依線索，原頁未讀",
+      "record_type_suggestion": "framework",
+      "k12_scope_evidence": "PISA 對象為 15 歲學生（一般知識，原頁未讀未核）。",
+      "category_suggestion": [
+        "K3"
+      ],
+      "first_published_on": null,
+      "date_precision": "unknown",
+      "date_evidence": "oecd.org 與 pisa-framework.oecd.org 皆 HTTP 403；Crossref 10.1787 前綴查無 PISA 2029 MAIL 條目。WebSearch 線索稱已發布第一版草案（標題 Navigating an Evolving Digital World），日期未核。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": null,
+      "known_duplicate": false,
+      "decision": "pending",
+      "reason": "原頁不可讀（OECD 403），無官方元資料；首發日與版本未知。",
+      "access_log": [
+        {
+          "url": "https://www.oecd.org/en/about/projects/pisa-2029-media-and-artificial-intelligence-literacy.html",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "403",
+          "utc": "2026-10-09T17:31:13Z",
+          "note": ""
+        },
+        {
+          "url": "https://pisa-framework.oecd.org/",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "403",
+          "utc": "2026-10-09T17:31:13Z",
+          "note": ""
+        },
+        {
+          "url": "https://api.crossref.org/prefixes/10.1787/works?query.bibliographic=PISA+2029+media+artificial+intelligence+literacy&rows=6&select=DOI,title,published,created,type",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:30:50Z",
+          "note": ""
+        }
+      ],
+      "id": "C-09"
+    },
+    {
+      "title": "OECD Digital Education Outlook 2021: Pushing the Frontiers with Artificial Intelligence, Blockchain and Robots",
+      "official_url": "https://www.oecd.org/en/publications/oecd-digital-education-outlook-2021_589b283f-en.html",
+      "doi": "10.1787/589b283f-en",
+      "issued_by": "O-OECD",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "報告",
+      "record_type_suggestion": "policy_review",
+      "k12_scope_evidence": "原頁 403、Crossref 無摘要，未能確認含 K–12 章節。",
+      "category_suggestion": [
+        "K1",
+        "K5"
+      ],
+      "first_published_on": "2021-06-08",
+      "date_precision": "day",
+      "date_evidence": "Crossref works/10.1787/589b283f-en published-online date-parts [2021,6,8]（OECD Publishing manifestation 日）。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": null,
+      "known_duplicate": false,
+      "decision": "pending",
+      "reason": "原頁不可讀（OECD 403）；K–12 章節範圍未經原文確認。",
+      "access_log": [
+        {
+          "url": "https://api.crossref.org/works/10.1787/589b283f-en",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:31:03Z",
+          "note": ""
+        }
+      ],
+      "id": "C-10"
+    },
+    {
+      "title": "OECD Digital Education Outlook 2026: Exploring Effective Uses of Generative AI in Education",
+      "official_url": "https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html",
+      "doi": "10.1787/062a7394-en",
+      "issued_by": "O-OECD",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "報告",
+      "record_type_suggestion": "policy_review",
+      "k12_scope_evidence": "原頁 403、Crossref 無摘要，未能確認 K–12 章節。",
+      "category_suggestion": [
+        "K4",
+        "K5"
+      ],
+      "first_published_on": "2026-01-19",
+      "date_precision": "day",
+      "date_evidence": "Crossref works/10.1787/062a7394-en published-online [2026,1,19]（created 2026-01-15 為登記日，不採）。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": "同系列前版：DEO 2023（10.1787/c74f03de-en，2023-12-13）、DEO 2021（10.1787/589b283f-en）；屬系列年刊，非同一文件之修訂。",
+      "known_duplicate": false,
+      "decision": "pending",
+      "reason": "原頁不可讀（OECD 403，oecd-ilibrary 亦 403）；K–12 範圍未經原文確認。",
+      "access_log": [
+        {
+          "url": "https://api.crossref.org/works/10.1787/062a7394-en",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:31:03Z",
+          "note": ""
+        },
+        {
+          "url": "https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "403",
+          "utc": "2026-10-09T17:31:13Z",
+          "note": ""
+        },
+        {
+          "url": "https://www.oecd-ilibrary.org/education/oecd-digital-education-outlook-2026_062a7394-en",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "403",
+          "utc": "2026-10-09T17:31:13Z",
+          "note": ""
+        }
+      ],
+      "id": "C-11"
+    },
+    {
+      "title": "What should teachers teach and students learn in a future of powerful AI?",
+      "official_url": "https://www.oecd.org/en/publications/what-should-teachers-teach-and-students-learn-in-a-future-of-powerful-ai_ca56c7d6-en.html",
+      "doi": "10.1787/ca56c7d6-en",
+      "issued_by": "O-OECD",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "報告（政策短文；Crossref type=report）",
+      "record_type_suggestion": "policy_review",
+      "k12_scope_evidence": "僅題名涉教師與學生；原頁未讀，學段未確認。",
+      "category_suggestion": [
+        "K1",
+        "K4"
+      ],
+      "first_published_on": "2025-05-23",
+      "date_precision": "day",
+      "date_evidence": "Crossref works/10.1787/ca56c7d6-en published-online [2025,5,23]。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": null,
+      "known_duplicate": false,
+      "decision": "pending",
+      "reason": "原頁不可讀（OECD 403）；學段未確認。",
+      "access_log": [
+        {
+          "url": "https://api.crossref.org/works/10.1787/ca56c7d6-en",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:31:04Z",
+          "note": ""
+        }
+      ],
+      "id": "C-12"
+    },
+    {
+      "title": "Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators",
+      "official_url": "https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en",
+      "doi": "10.2766/153756",
+      "issued_by": "O-EU-EC",
+      "proposed_new_code": null,
+      "applies_to_country": "EU",
+      "applies_scope": "EU",
+      "doc_force": "正式指引（執委會 DG EAC 出版；非拘束性）",
+      "record_type_suggestion": "official_guidance",
+      "k12_scope_evidence": "執委會指引頁（node/1566）寫「mainly working in primary and secondary levels of education」（該頁現為 2026 更新版說明）；OP 2022 版摘要只寫 educators。",
+      "category_suggestion": [
+        "K4",
+        "K5"
+      ],
+      "first_published_on": "2022-10-25",
+      "date_precision": "day",
+      "date_evidence": "Publications Office 頁「Released on EU publications website: 2022-10-25」、「Published: 2022」（讀取 2026-10-09T17:28:34Z）；PDF ISBN 978-92-76-54190-5，DOI 10.2766/153756，目錄號 NC-07-22-649-EN-N。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": "OP 頁標「There is a newer edition of this publication」，lastedition 轉至 2026 版（見 C-14）；執委會指引頁 Timeline：「2022 - first publication」「2026 - guidelines update」。",
+      "known_duplicate": false,
+      "decision": "candidate",
+      "reason": "官方元資料可讀，日精度；學段依執委會頁「primary and secondary」。",
+      "access_log": [
+        {
+          "url": "https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:28:34Z",
+          "note": ""
+        },
+        {
+          "url": "https://education.ec.europa.eu/node/1566",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:29:10Z",
+          "note": ""
+        }
+      ],
+      "id": "C-13"
+    },
+    {
+      "title": "Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators (2026 edition)",
+      "official_url": "https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators",
+      "doi": "10.2766/7967834",
+      "issued_by": "O-EU-EC",
+      "proposed_new_code": null,
+      "applies_to_country": "EU",
+      "applies_scope": "EU",
+      "doc_force": "正式指引（更新版；非拘束性）",
+      "record_type_suggestion": "official_guidance",
+      "k12_scope_evidence": "執委會新聞頁：四套指引協助「primary and secondary school educators」；指引頁「mainly working in primary and secondary levels」；OP 摘要提及 schools and teachers 須考量 AI Act 風險分類。",
+      "category_suggestion": [
+        "K4",
+        "K5"
+      ],
+      "first_published_on": "2026-03-05",
+      "date_precision": "day",
+      "date_evidence": "European Education Area 新聞頁「Published: 5 Mar 2026」（Last updated 23 July 2026），寫明執委會已 released 四套指引含 AI 倫理指引（讀取 2026-10-09T17:30:27Z）。另：OP 紀錄「Released on EU publications website: 2026-06-12」、「Published: 2026」（PDF ISBN 978-92-68-33189-7，DOI 10.2766/7967834，NC-01-25-186-EN-N；讀取 17:34:38Z），為 OP manifestation 日，晚於新聞頁；指引頁寫英文先出、其他語言後補。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": "官方明示更新 2022 版（指引頁 Timeline「2026 - guidelines update」；OP 2022 版頁「newer edition」轉至本版）。由 European Digital Education Hub 工作小組準備。",
+      "known_duplicate": false,
+      "decision": "candidate",
+      "reason": "官方新聞頁明寫發布日；與 OP 上架日（2026-06-12）不一致，已分記。",
+      "access_log": [
+        {
+          "url": "https://education.ec.europa.eu/node/3489",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:30:27Z",
+          "note": ""
+        },
+        {
+          "url": "https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:30:26Z",
+          "note": ""
+        },
+        {
+          "url": "https://op.europa.eu/lastedition/d81a0d54-5348-11ed-92ed-01aa75ed71a1",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:34:38Z",
+          "note": ""
+        },
+        {
+          "url": "https://education.ec.europa.eu/node/1566",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:29:10Z",
+          "note": ""
+        }
+      ],
+      "id": "C-14"
+    },
+    {
+      "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act) — Article 4 AI literacy; Annex III point 3 education",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R1689",
+      "doi": null,
+      "issued_by": "O-EU-EC",
+      "proposed_new_code": "O-EU-LEG（歐洲議會與理事會共同立法；O-EU-EC 只涵蓋執委會，建議另設）",
+      "applies_to_country": "EU",
+      "applies_scope": "EU",
+      "doc_force": "法規（Regulation，具拘束力，直接適用）",
+      "record_type_suggestion": "source_document",
+      "k12_scope_evidence": "Annex III 第 3 點「Education and vocational training」：用於決定入學、評量學習成果等之 AI 系統列高風險，適用「educational and vocational training institutions at all levels」；第 4 條 AI literacy 對 providers/deployers 之人員（學校作為 deployer 時涉及），未特指中小學。",
+      "category_suggestion": [
+        "K5",
+        "K1"
+      ],
+      "first_published_on": "2024-07-12",
+      "date_precision": "day",
+      "date_evidence": "EUR-Lex：「OJ L, 2024/1689, 12.7.2024」；「Date of document: 13/06/2024; Date of signature」（讀取 2026-10-09T17:31:31Z）。",
+      "effective_on": "2024-08-01",
+      "legal_dates": {
+        "adopted_signed_on": "2024-06-13",
+        "published_oj_on": "2024-07-12",
+        "entry_into_force_on": "2024-08-01",
+        "application_dates": {
+          "2025-02-02": "partial application, Art 113(a)（含第 1–2 章，第 4 條在內）",
+          "2025-08-02": "partial application, Art 113(b)",
+          "2026-08-02": "general application, Art 113",
+          "2027-08-02": "partial application, Art 113(c)"
+        }
+      },
+      "version_relation": "EUR-Lex：「This act has been changed. Current consolidated version: 27/07/2026」；第 4 條由 Regulation (EU) 2026/1744「Replacement article 4」（27/07/2026）取代（見 C-16）。第 4 條自 2025-02-02 適用係依 Art 113(a) 之一般知識，EUR-Lex 頁只列「Partial application See Art 113(a)」。",
+      "known_duplicate": false,
+      "decision": "candidate",
+      "reason": "EUR-Lex 官方元資料可讀；屬通用 AI 法規，K–12 相關性在 Annex III 教育高風險類與第 4 條，彙整時可視為背景法源。",
+      "access_log": [
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:28:33Z",
+          "note": ""
+        },
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32024R1689",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:31:31Z",
+          "note": ""
+        }
+      ],
+      "id": "C-15"
+    },
+    {
+      "title": "Regulation (EU) 2026/1744 (Digital Omnibus on AI) — replacement of AI Act Article 4 (AI literacy)",
+      "official_url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32026R1744",
+      "doi": null,
+      "issued_by": "O-EU-EC",
+      "proposed_new_code": "O-EU-LEG（同 C-15）",
+      "applies_to_country": "EU",
+      "applies_scope": "EU",
+      "doc_force": "法規（修正規則，具拘束力）",
+      "record_type_suggestion": "source_document",
+      "k12_scope_evidence": "前言第 (8) 點：「Development of AI literacy starting from education and training and continuing in a lifelong learning manner is crucial」；新第 4 條改為提供者／部署者「support the development of AI literacy」，並「does not require ... to guarantee any specific level」。未特指中小學。",
+      "category_suggestion": [
+        "K5",
+        "K1"
+      ],
+      "first_published_on": "2026-07-24",
+      "date_precision": "day",
+      "date_evidence": "EUR-Lex：「OJ L, 2026/1744, 24.7.2026」；「Date of document: 08/07/2026; Date of signature」；「Date of effect: 27/07/2026; Entry into force Date pub. +3」（讀取 2026-10-09T17:31:50Z）。",
+      "effective_on": "2026-07-27",
+      "legal_dates": {
+        "adopted_signed_on": "2026-07-08",
+        "published_oj_on": "2026-07-24",
+        "entry_into_force_on": "2026-07-27"
+      },
+      "version_relation": "修正 Regulation (EU) 2024/1689；EUR-Lex 2024/1689 頁列「Modified by 32026R1744 Replacement article 4 27/07/2026」。",
+      "known_duplicate": false,
+      "decision": "candidate",
+      "reason": "EUR-Lex 原文與元資料可讀；直接修改 AI 素養條文。K–12 為間接關聯，彙整時可判是否只作背景。",
+      "access_log": [
+        {
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32026R1744",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:31:50Z",
+          "note": ""
+        }
+      ],
+      "id": "C-16"
+    },
+    {
+      "title": "Council conclusions on teachers in the era of artificial intelligence (AI)",
+      "official_url": "https://data.consilium.europa.eu/doc/document/ST-8262-2026-INIT/en/pdf",
+      "doi": null,
+      "issued_by": null,
+      "proposed_new_code": "O-EU-COUNCIL（歐盟理事會；現有 O-EU-EC 不涵蓋）",
+      "applies_to_country": "EU",
+      "applies_scope": "EU",
+      "doc_force": "建議性政策文件（理事會結論，非拘束性）；本組只讀到送核草案",
+      "record_type_suggestion": "official_guidance",
+      "k12_scope_evidence": "理事會文件 8262/26 附件：適用於「teaching learners at the pre-primary, primary, lower and upper secondary levels」及初始 VET 之教師與校長。",
+      "category_suggestion": [
+        "K4",
+        "K1"
+      ],
+      "first_published_on": null,
+      "date_precision": "unknown",
+      "date_evidence": "可讀官方文件為 2026-04-24 秘書處說明「Draft Council conclusions ... - Approval」（8262/26），寫明擬於 2026-05-11 EYCS 會議核准並刊登公報。核准日（線索：2026-05-11）之理事會會議頁 HTTP 403；OJ C 刊登未查得（EUR-Lex 搜尋回 202 空內容）。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": "8262/26 為送核草案；正式通過版與 OJ 版未讀。",
+      "known_duplicate": false,
+      "decision": "pending",
+      "reason": "只讀到草案（2026-04-24），通過日與公報刊登日之官方頁不可讀；且需新 O-代碼。",
+      "access_log": [
+        {
+          "url": "https://data.consilium.europa.eu/doc/document/ST-8262-2026-INIT/en/pdf",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:32:18Z",
+          "note": ""
+        },
+        {
+          "url": "https://www.consilium.europa.eu/en/meetings/eycs/2026/05/11/",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "403",
+          "utc": "2026-10-09T17:32:18Z",
+          "note": ""
+        },
+        {
+          "url": "https://eur-lex.europa.eu/search.html?scope=EURLEX&text=%22teachers+in+the+era+of+artificial+intelligence%22&lang=en&type=quick&qid=1",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "202",
+          "utc": "2026-10-09T17:32:19Z",
+          "note": ""
+        }
+      ],
+      "id": "C-17"
+    },
+    {
+      "title": "Committee of Ministers Recommendation on Artificial Intelligence Literacy (2026)",
+      "official_url": "https://www.coe.int/en/web/portal/-/new-council-of-europe-recommendation-places-education-at-the-heart-of-response-to-ai",
+      "doi": null,
+      "issued_by": "O-COE",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "建議（部長委員會建議；非拘束性）——依線索",
+      "record_type_suggestion": "official_guidance",
+      "k12_scope_evidence": "原頁不可讀；線索（Eunews 轉述）稱對象含 students、teachers、parents，並有課程與教學評量建議。",
+      "category_suggestion": [
+        "K1",
+        "K4"
+      ],
+      "first_published_on": null,
+      "date_precision": "unknown",
+      "date_evidence": "coe.int 新聞頁、教育部門頁及 rm.coe.int 均 Cloudflare 403（不得繞過）；WebFetch 亦 403。線索：Eunews 稱 2026-09-04 通過；CDEDU 2026-03 通過草案。皆未核。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": null,
+      "known_duplicate": false,
+      "decision": "pending",
+      "reason": "原頁不可讀；正式編號、通過日均無官方可讀證據。",
+      "access_log": [
+        {
+          "url": "https://www.coe.int/en/web/portal/-/new-council-of-europe-recommendation-places-education-at-the-heart-of-response-to-ai",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "403",
+          "utc": "2026-10-09T17:32:43Z",
+          "note": ""
+        },
+        {
+          "url": "https://www.coe.int/en/web/education/-/the-steering-committee-for-education-cdedu-approves-a-landmark-framework-on-ai-literacy",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "403",
+          "utc": "2026-10-09T17:32:43Z",
+          "note": ""
+        },
+        {
+          "url": "https://www.coe.int/en/web/education/artificial-intelligence",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "403",
+          "utc": "2026-10-09T17:28:36Z",
+          "note": ""
+        },
+        {
+          "url": "https://rm.coe.int/dgii-edu-aied-2025-04-artificial-intelligence-and-education-3rd-workin/4880289ac5",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "403",
+          "utc": "2026-10-09T17:32:44Z",
+          "note": ""
+        }
+      ],
+      "id": "C-18"
+    },
+    {
+      "title": "Policy guidance on AI for children (Version 2.0)",
+      "official_url": "https://www.unicef.org/innocenti/reports/policy-guidance-ai-children",
+      "doi": null,
+      "issued_by": "O-UNICEF",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "正式指引（政策指引；非拘束性、非教育行政法規）",
+      "record_type_suggestion": "official_guidance",
+      "k12_scope_evidence": "以兒童權利（CRC）為本之 AI 政策指引；配套「AI guide for teens」「AI guide for parents」。非專指學校。",
+      "category_suggestion": [
+        "K5",
+        "K1"
+      ],
+      "first_published_on": "2021",
+      "date_precision": "year",
+      "date_evidence": "UNICEF Innocenti 原頁「This input was analysed and incorporated into version 2.0 (2021)」；PDF 檔名「...policy-guidance-AI-children-2.0-2021.pdf」（讀取 2026-10-09T17:28:36Z）。頁面 article:published_time 2021-11-19 為頁面中繼資料，未明示為 2.0 發布日，不採。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": "原頁明示：draft version 1.0 於 2020 年 9 月發布 → 2.0（2021）→ 3.0（2025，見 C-20）。",
+      "known_duplicate": false,
+      "decision": "candidate",
+      "reason": "官方原頁可讀，年精度；學段為兒童（非學校專屬），符合「涉兒童」條件。",
+      "access_log": [
+        {
+          "url": "https://www.unicef.org/innocenti/reports/policy-guidance-ai-children",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:28:36Z",
+          "note": ""
+        }
+      ],
+      "id": "C-19"
+    },
+    {
+      "title": "Guidance on AI and children (Version 3.0): Recommendations for AI policies and systems that uphold child rights",
+      "official_url": "https://www.unicef.org/innocenti/reports/policy-guidance-ai-children",
+      "doi": null,
+      "issued_by": "O-UNICEF",
+      "proposed_new_code": null,
+      "applies_to_country": null,
+      "applies_scope": "international",
+      "doc_force": "正式指引（非拘束性）",
+      "record_type_suggestion": "official_guidance",
+      "k12_scope_evidence": "原頁：因應「increased adoption of AI systems by children」更新；十項要求含兒童技能等。非專指學校。",
+      "category_suggestion": [
+        "K5",
+        "K1"
+      ],
+      "first_published_on": "2025-12",
+      "date_precision": "month",
+      "date_evidence": "UNICEF Innocenti 原頁「Publication date December 2025」、「Version 3 (2025)」；HTML 另有 datetime=\"2025-12-04T12:00:00Z\" 屬性，但頁面文字未明寫日，故取月精度（讀取 2026-10-09T17:28:36Z）。",
+      "effective_on": null,
+      "legal_dates": null,
+      "version_relation": "原頁明示為「third edition」，更新 2.0（2021）；1.0 草案 2020 年 9 月。",
+      "known_duplicate": false,
+      "decision": "candidate",
+      "reason": "官方原頁可讀，月精度。",
+      "access_log": [
+        {
+          "url": "https://www.unicef.org/innocenti/reports/policy-guidance-ai-children",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "200",
+          "utc": "2026-10-09T17:28:36Z",
+          "note": ""
+        },
+        {
+          "url": "https://www.unicef.org/innocenti/reports/policy-guidance-ai-children-2025",
+          "method": "curl GET (-L, TLS 驗證開啟)",
+          "http_status": "404",
+          "utc": "2026-10-09T17:29:16Z",
+          "note": ""
+        }
+      ],
+      "id": "C-20"
+    }
+  ],
+  "limits": [
+    "UNESDOC（unesdoc.unesco.org）為 Cloudflare 驗證頁（HTTP 403），未繞過；UNESCO 主站部分文章頁 curl 空回應（52）。UNESCO 出版品只能用 unesco.org 可讀文章頁、IITE 頁與 Crossref（10.54675，多為年精度且多為 2023 年後補登記）。",
+    "OECD 全站（oecd.org、oecd-ilibrary.org、pisa-framework.oecd.org）HTTP 403；OECD 日期只來自 Crossref published-online（出版社 manifestation 日），學段無法以原文確認，故多列 pending。",
+    "歐洲理事會 coe.int／rm.coe.int 全為 Cloudflare 403，WebFetch 亦 403；COE 項目只能 pending。",
+    "EUR-Lex 前兩次讀取成功（AI Act、2026/1744），之後回 HTTP 202 空內容（疑為反爬挑戰），Digital Education Action Plan（COM(2020)624）與理事會結論 OJ 版未能讀取；未繞過。",
+    "歐盟理事會會議頁 consilium.europa.eu 403；只讀到理事會登錄文件 8262/26（草案）。",
+    "WebSearch／WebFetch 未逐筆記錄 UTC，只記總區間；其內容只當線索，未用於填 first_published_on。",
+    "未收：研討會／活動（如 Digital Learning Week、AILit 發表活動本身）、新聞、2026-07 啟動之歐盟教育包諮詢（Quality education for all: 2040 roadmap，線索稱 2026-11 才提出）、DigComp 3.0、UNESCO 2021 AI 倫理建議（非 K–12 特定）、OECD DEO 2023（AI 非主題）、COE 2022 AI 與教育報告（未查）。",
+    "AI Act 與 2026/1744 由歐洲議會與理事會通過，現行 O-EU-EC 不合適，建議新代碼 O-EU-LEG；理事會結論建議 O-EU-COUNCIL。"
+  ]
+}

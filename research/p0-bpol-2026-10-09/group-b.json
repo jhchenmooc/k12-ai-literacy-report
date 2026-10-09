@@ -1,0 +1,1932 @@
+{
+ "group": "B（美國、英格蘭、澳洲）",
+ "started_utc": "2026-10-09T17:28:20Z",
+ "ended_utc": "2026-10-09T17:36:36Z",
+ "scope": {
+  "window": "2019-01-01 至 2026-10-09",
+  "jurisdictions": [
+   "US 聯邦（ED、白宮）",
+   "US 州：CA、NC、WA、OR、OH、GA",
+   "GB-ENG（DfE）",
+   "AU 聯邦",
+   "AU-NSW"
+  ],
+  "exclusions": "研習、新聞宣導、比賽、單一學區不收"
+ },
+ "searches": [
+  {
+   "n": 1,
+   "tool": "curl",
+   "query_or_url": "https://www.gov.uk/api/content/government/publications/generative-artificial-intelligence-in-education",
+   "utc": "2026-10-09T17:28:33Z",
+   "status": "200",
+   "bytes": "11903",
+   "note": null
+  },
+  {
+   "n": 2,
+   "tool": "curl",
+   "query_or_url": "https://www.gov.uk/api/search.json?q=artificial+intelligence&filter_organisations=department-for-education&count=60&fields=title,link,public_timestamp,content_store_document_type",
+   "utc": "2026-10-09T17:28:33Z",
+   "status": "200",
+   "bytes": "25400",
+   "note": null
+  },
+  {
+   "n": 3,
+   "tool": "curl",
+   "query_or_url": "https://www.federalregister.gov/api/v1/documents.json?conditions[agencies][]=education-department&conditions[term]=artificial+intelligence&conditions[publication_date][gte]=2019-01-01&per_page=100&fields[]=title&fields[]=publication_date&fields[]=type&fields[]=html_url&fields[]=document_number",
+   "utc": "2026-10-09T17:28:34Z",
+   "status": "200",
+   "bytes": "21623",
+   "note": null
+  },
+  {
+   "n": 4,
+   "tool": "curl",
+   "query_or_url": "https://www.ed.gov/sites/ed/files/documents/ai-report/ai-report.pdf",
+   "utc": "2026-10-09T17:28:35Z",
+   "status": "403",
+   "bytes": "11673",
+   "note": null
+  },
+  {
+   "n": 5,
+   "tool": "curl",
+   "query_or_url": "https://www.federalregister.gov/api/v1/documents.json?conditions[type][]=PRESDOCU&conditions[term]=artificial+intelligence+education&conditions[publication_date][gte]=2019-01-01&per_page=50&fields[]=title&fields[]=publication_date&fields[]=signing_date&fields[]=executive_order_number&fields[]=html_url&fields[]=document_number&fields[]=presidential_document_type",
+   "utc": "2026-10-09T17:28:46Z",
+   "status": "400",
+   "bytes": "71",
+   "note": "API 參數錯誤（欄位 presidential_document_type 無效），已修正後重查（第15列）"
+  },
+  {
+   "n": 6,
+   "tool": "curl",
+   "query_or_url": "https://www.federalregister.gov/api/v1/documents/2025-13650.json",
+   "utc": "2026-10-09T17:28:46Z",
+   "status": "200",
+   "bytes": "4143",
+   "note": null
+  },
+  {
+   "n": 7,
+   "tool": "curl",
+   "query_or_url": "https://www.federalregister.gov/api/v1/documents/2026-07087.json",
+   "utc": "2026-10-09T17:28:47Z",
+   "status": "200",
+   "bytes": "4322",
+   "note": null
+  },
+  {
+   "n": 8,
+   "tool": "curl",
+   "query_or_url": "https://www.gov.uk/api/content/government/publications/generative-ai-product-safety-standards",
+   "utc": "2026-10-09T17:28:47Z",
+   "status": "200",
+   "bytes": "9980",
+   "note": null
+  },
+  {
+   "n": 9,
+   "tool": "curl",
+   "query_or_url": "https://www.gov.uk/api/content/government/collections/using-ai-in-education-settings-support-materials",
+   "utc": "2026-10-09T17:28:47Z",
+   "status": "200",
+   "bytes": "16250",
+   "note": null
+  },
+  {
+   "n": 10,
+   "tool": "curl",
+   "query_or_url": "https://www.gov.uk/api/content/government/publications/using-ai-in-education-support-for-school-and-college-leaders",
+   "utc": "2026-10-09T17:28:48Z",
+   "status": "200",
+   "bytes": "12989",
+   "note": null
+  },
+  {
+   "n": 11,
+   "tool": "curl",
+   "query_or_url": "https://www.gov.uk/api/content/guidance/data-protection-in-schools/generative-artificial-intelligence-ai-and-data-protection-in-schools",
+   "utc": "2026-10-09T17:28:49Z",
+   "status": "200",
+   "bytes": "16763",
+   "note": null
+  },
+  {
+   "n": 12,
+   "tool": "curl",
+   "query_or_url": "https://www.gov.uk/api/content/government/publications/understanding-ai-in-education-module-1",
+   "utc": "2026-10-09T17:28:49Z",
+   "status": "200",
+   "bytes": "12582",
+   "note": null
+  },
+  {
+   "n": 13,
+   "tool": "curl",
+   "query_or_url": "https://www.gov.uk/api/content/government/calls-for-evidence/generative-artificial-intelligence-in-education-call-for-evidence",
+   "utc": "2026-10-09T17:28:49Z",
+   "status": "200",
+   "bytes": "11089",
+   "note": null
+  },
+  {
+   "n": 14,
+   "tool": "curl",
+   "query_or_url": "https://www.gov.uk/api/content/government/publications/generative-ai-in-education-user-research-and-technical-report",
+   "utc": "2026-10-09T17:28:50Z",
+   "status": "200",
+   "bytes": "19977",
+   "note": null
+  },
+  {
+   "n": 15,
+   "tool": "curl",
+   "query_or_url": "https://www.federalregister.gov/api/v1/documents.json?conditions[type][]=PRESDOCU&conditions[term]=artificial+intelligence+education&conditions[publication_date][gte]=2019-01-01&per_page=50&fields[]=title&fields[]=publication_date&fields[]=signing_date&fields[]=executive_order_number&fields[]=html_url&fields[]=document_number",
+   "utc": "2026-10-09T17:29:04Z",
+   "status": "200",
+   "bytes": "6955",
+   "note": null
+  },
+  {
+   "n": 16,
+   "tool": "curl",
+   "query_or_url": "https://www.gov.uk/api/search.json?q=generative+AI+schools&filter_organisations=department-for-education&count=40&order=-public_timestamp&fields=title,link,public_timestamp,content_store_document_type",
+   "utc": "2026-10-09T17:29:04Z",
+   "status": "200",
+   "bytes": "16184",
+   "note": null
+  },
+  {
+   "n": 17,
+   "tool": "curl",
+   "query_or_url": "https://www.gov.uk/api/search.json?q=AI&filter_organisations=department-for-education&filter_content_store_document_type=guidance&count=40&fields=title,link,public_timestamp,content_store_document_type",
+   "utc": "2026-10-09T17:29:05Z",
+   "status": "200",
+   "bytes": "12226",
+   "note": null
+  },
+  {
+   "n": 18,
+   "tool": "curl",
+   "query_or_url": "https://www.federalregister.gov/api/v1/documents/2025-07368.json",
+   "utc": "2026-10-09T17:29:13Z",
+   "status": "200",
+   "bytes": "2772",
+   "note": null
+  },
+  {
+   "n": 19,
+   "tool": "curl",
+   "query_or_url": "https://www.ed.gov/about/ed-overview/artificial-intelligence-ai-guidance",
+   "utc": "2026-10-09T17:29:14Z",
+   "status": "403",
+   "bytes": "1484",
+   "note": null
+  },
+  {
+   "n": 20,
+   "tool": "curl",
+   "query_or_url": "https://tech.ed.gov/ai/",
+   "utc": "2026-10-09T17:29:14Z",
+   "status": "403",
+   "bytes": "11504",
+   "note": null
+  },
+  {
+   "n": 21,
+   "tool": "curl",
+   "query_or_url": "https://www.ed.gov/media/document/guidance-artificial-intelligence-use-schools-112052.pdf",
+   "utc": "2026-10-09T17:29:15Z",
+   "status": "403",
+   "bytes": "11676",
+   "note": null
+  },
+  {
+   "n": 22,
+   "tool": "curl",
+   "query_or_url": "https://api.ies.ed.gov/eric/?search=publisher:%22Office%20of%20Educational%20Technology%22&fields=id,title,publicationdateyear,publisher,url&rows=50",
+   "utc": "2026-10-09T17:29:15Z",
+   "status": "200",
+   "bytes": "20532",
+   "note": null
+  },
+  {
+   "n": 23,
+   "tool": "curl",
+   "query_or_url": "https://api.ies.ed.gov/eric/?search=title:%22Artificial%20Intelligence%20and%20the%20Future%20of%20Teaching%20and%20Learning%22&fields=id,title,publicationdateyear,publisher,url,author&rows=10",
+   "utc": "2026-10-09T17:29:16Z",
+   "status": "200",
+   "bytes": "516",
+   "note": null
+  },
+  {
+   "n": 24,
+   "tool": "curl",
+   "query_or_url": "https://api.ies.ed.gov/eric/?search=publisher:%22Office%20of%20Educational%20Technology%22%20AND%20(artificial%20intelligence)&fields=id,title,publicationdateyear,publicationdate,publisher,url,description&rows=50",
+   "utc": "2026-10-09T17:29:22Z",
+   "status": "200",
+   "bytes": "10673",
+   "note": null
+  },
+  {
+   "n": 25,
+   "tool": "curl",
+   "query_or_url": "https://api.ies.ed.gov/eric/?search=ED631097&fields=id,title,publicationdateyear,publicationdate,publisher,url,peerreviewed,educationlevel,publicationtype&rows=5",
+   "utc": "2026-10-09T17:29:22Z",
+   "status": "200",
+   "bytes": "75",
+   "note": null
+  },
+  {
+   "n": 26,
+   "tool": "curl",
+   "query_or_url": "https://www.federalregister.gov/documents/full_text/text/2025/07/21/2025-13650.txt",
+   "utc": "2026-10-09T17:29:33Z",
+   "status": "200",
+   "bytes": "10596",
+   "note": "HTTP 200 但內容為 Federal Register「Request Access」驗證頁，未繞過，未取得全文"
+  },
+  {
+   "n": 27,
+   "tool": "curl",
+   "query_or_url": "https://www.federalregister.gov/documents/full_text/text/2026/04/13/2026-07087.txt",
+   "utc": "2026-10-09T17:29:33Z",
+   "status": "200",
+   "bytes": "10596",
+   "note": "同上，驗證頁"
+  },
+  {
+   "n": 28,
+   "tool": "curl",
+   "query_or_url": "https://www.federalregister.gov/documents/full_text/text/2025/04/28/2025-07368.txt",
+   "utc": "2026-10-09T17:29:34Z",
+   "status": "200",
+   "bytes": "10596",
+   "note": "同上，驗證頁"
+  },
+  {
+   "n": 29,
+   "tool": "curl",
+   "query_or_url": "https://www.govinfo.gov/content/pkg/FR-2025-04-28/html/2025-07368.htm",
+   "utc": "2026-10-09T17:29:41Z",
+   "status": "200",
+   "bytes": "17927",
+   "note": null
+  },
+  {
+   "n": 30,
+   "tool": "curl",
+   "query_or_url": "https://www.govinfo.gov/content/pkg/FR-2025-07-21/html/2025-13650.htm",
+   "utc": "2026-10-09T17:29:42Z",
+   "status": "200",
+   "bytes": "20177",
+   "note": null
+  },
+  {
+   "n": 31,
+   "tool": "curl",
+   "query_or_url": "https://www.govinfo.gov/content/pkg/FR-2026-04-13/html/2026-07087.htm",
+   "utc": "2026-10-09T17:29:42Z",
+   "status": "200",
+   "bytes": "47978",
+   "note": null
+  },
+  {
+   "n": 32,
+   "tool": "curl",
+   "query_or_url": "https://www.cde.ca.gov/ci/pl/aiincalifornia.asp",
+   "utc": "2026-10-09T17:30:15Z",
+   "status": "200",
+   "bytes": "170021",
+   "note": null
+  },
+  {
+   "n": 33,
+   "tool": "curl",
+   "query_or_url": "https://www.cde.ca.gov/ci/pl/aiincalifornia2023.asp",
+   "utc": "2026-10-09T17:30:17Z",
+   "status": "200",
+   "bytes": "15064",
+   "note": "HTTP 200 但內容為 Radware Captcha 頁，未繞過"
+  },
+  {
+   "n": 34,
+   "tool": "curl",
+   "query_or_url": "https://ospi.k12.wa.us/about-ospi/news-center/news-releases/superintendent-reykdal-introduces-guidance-integration-human-centered-ai-washingtons-public-schools",
+   "utc": "2026-10-09T17:30:18Z",
+   "status": "200",
+   "bytes": "331086",
+   "note": null
+  },
+  {
+   "n": 35,
+   "tool": "curl",
+   "query_or_url": "https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools",
+   "utc": "2026-10-09T17:30:20Z",
+   "status": "200",
+   "bytes": "443145",
+   "note": null
+  },
+  {
+   "n": 36,
+   "tool": "curl",
+   "query_or_url": "https://www.oregon.gov/ode/educator-resources/teachingcontent/Pages/Generative-Artificial-Intelligence-%28AI%29-for-K-12-Schools.aspx",
+   "utc": "2026-10-09T17:30:26Z",
+   "status": "200",
+   "bytes": "258462",
+   "note": null
+  },
+  {
+   "n": 37,
+   "tool": "curl",
+   "query_or_url": "https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy",
+   "utc": "2026-10-09T17:30:27Z",
+   "status": "200",
+   "bytes": "30648",
+   "note": null
+  },
+  {
+   "n": 38,
+   "tool": "curl",
+   "query_or_url": "https://education.ohio.gov/Media/Ed-Connection/Jan-6-2026/Department-releases-model-policy-for-artificial-in",
+   "utc": "2026-10-09T17:30:28Z",
+   "status": "200",
+   "bytes": "39858",
+   "note": null
+  },
+  {
+   "n": 39,
+   "tool": "curl",
+   "query_or_url": "https://www.dpi.nc.gov/districts-schools/digital-teaching-and-learning/artificial-intelligence",
+   "utc": "2026-10-09T17:30:28Z",
+   "status": "404",
+   "bytes": "57867",
+   "note": "404（猜測網址錯誤）"
+  },
+  {
+   "n": 40,
+   "tool": "curl",
+   "query_or_url": "https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/guidelines-regarding-use-of-generative-ai",
+   "utc": "2026-10-09T17:30:29Z",
+   "status": "200",
+   "bytes": "106400",
+   "note": null
+  },
+  {
+   "n": 41,
+   "tool": "curl",
+   "query_or_url": "https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/artificial-intelligence-in-education",
+   "utc": "2026-10-09T17:30:31Z",
+   "status": "000",
+   "bytes": null,
+   "note": "curl exit 92 HTTP/2 stream error（首次嘗試；錯誤訊息被後續覆寫，依當時輸出記為 000）"
+  },
+  {
+   "n": 42,
+   "tool": "curl",
+   "query_or_url": "https://www.education.gov.au/schooling/announcements/australian-framework-generative-artificial-intelligence-ai-schools",
+   "utc": "2026-10-09T17:30:38Z",
+   "status": "000",
+   "bytes": null,
+   "note": "連線失敗（000；HTTP/2 錯誤／空回應）"
+  },
+  {
+   "n": 43,
+   "tool": "curl",
+   "query_or_url": "https://education.ohio.gov/Media/Media-Releases/2025-Media-Releases/Ohio-Department-of-Education-and-Workforce-Release",
+   "utc": "2026-10-09T17:31:15Z",
+   "status": "200",
+   "bytes": "39163",
+   "note": null
+  },
+  {
+   "n": 44,
+   "tool": "curl",
+   "query_or_url": "https://www.dpi.nc.gov/news/press-releases/2024/01/16/ncdpi-releases-guidance-use-artificial-intelligence-schools",
+   "utc": "2026-10-09T17:31:29Z",
+   "status": "200",
+   "bytes": "62338",
+   "note": null
+  },
+  {
+   "n": 45,
+   "tool": "curl",
+   "query_or_url": "https://www.dpi.nc.gov/districts-schools/districts-schools-support/digital-teaching-and-learning/ai-resources",
+   "utc": "2026-10-09T17:31:31Z",
+   "status": "200",
+   "bytes": "91433",
+   "note": null
+  },
+  {
+   "n": 46,
+   "tool": "curl",
+   "query_or_url": "https://gadoe.org/learning/artificial-intelligence/",
+   "utc": "2026-10-09T17:31:32Z",
+   "status": "200",
+   "bytes": "156796",
+   "note": "HTTP 200，頁面為前端渲染，未解析出內容"
+  },
+  {
+   "n": 47,
+   "tool": "curl",
+   "query_or_url": "https://login.community.gadoe.org/documents/leveraging-ai-in-the-k-12-setting",
+   "utc": "2026-10-09T17:31:32Z",
+   "status": "200",
+   "bytes": "14373",
+   "note": null
+  },
+  {
+   "n": 48,
+   "tool": "curl",
+   "query_or_url": "https://www.education.gov.au/schooling/announcements/australian-framework-generative-artificial-intelligence-ai-schools",
+   "utc": "2026-10-09T17:31:49Z",
+   "status": "000",
+   "bytes": null,
+   "note": "--http1.1 重試：curl (52) Empty reply from server"
+  },
+  {
+   "n": 49,
+   "tool": "curl",
+   "query_or_url": "https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/artificial-intelligence-in-education",
+   "utc": "2026-10-09T17:32:20Z",
+   "status": "200",
+   "bytes": "103311",
+   "note": null
+  },
+  {
+   "n": 50,
+   "tool": "curl",
+   "query_or_url": "https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation",
+   "utc": "2026-10-09T17:32:38Z",
+   "status": "000",
+   "bytes": null,
+   "note": "curl (92) HTTP/2 stream INTERNAL_ERROR"
+  },
+  {
+   "n": 51,
+   "tool": "curl",
+   "query_or_url": "https://ministers.education.gov.au/clare/ai-framework-schools-released",
+   "utc": "2026-10-09T17:32:39Z",
+   "status": "000",
+   "bytes": null,
+   "note": "curl (92) HTTP/2 stream INTERNAL_ERROR"
+  },
+  {
+   "n": 52,
+   "tool": "curl",
+   "query_or_url": "https://www.education.gov.au/download/20276/study-buddy-or-influencer-inquiry-use-generative-artificial-intelligence-australian-education-system/44382/document/pdf",
+   "utc": "2026-10-09T17:32:41Z",
+   "status": "000",
+   "bytes": null,
+   "note": "連線失敗（000）"
+  },
+  {
+   "n": 53,
+   "tool": "curl",
+   "query_or_url": "https://www.aph.gov.au/Parliamentary_Business/Committees/House/Employment_Education_and_Training/AIineducation",
+   "utc": "2026-10-09T17:32:41Z",
+   "status": "403",
+   "bytes": "411",
+   "note": "403"
+  },
+  {
+   "n": 54,
+   "tool": "curl",
+   "query_or_url": "https://education.nsw.gov.au/schooling/parents-and-carers/artificial-intelligence/student-use-of-nsweduchat.html",
+   "utc": "2026-10-09T17:32:53Z",
+   "status": "200",
+   "bytes": "113021",
+   "note": null
+  },
+  {
+   "n": 55,
+   "tool": "curl",
+   "query_or_url": "https://www.ed.gov/about/news/press-release/us-department-of-education-issues-guidance-artificial-intelligence-use-schools-proposes-additional-supplemental-priority",
+   "utc": "2026-10-09T17:33:11Z",
+   "status": "403",
+   "bytes": "1484",
+   "note": null
+  },
+  {
+   "n": 56,
+   "tool": "curl",
+   "query_or_url": "https://www.education.gov.au/node/20276",
+   "utc": "2026-10-09T17:33:11Z",
+   "status": "000",
+   "bytes": null,
+   "note": "--http1.1：curl (52) Empty reply"
+  },
+  {
+   "n": 57,
+   "tool": "curl",
+   "query_or_url": "https://files.eric.ed.gov/fulltext/ED631097.pdf",
+   "utc": "2026-10-09T17:33:43Z",
+   "status": "200",
+   "bytes": "2141206",
+   "note": null
+  },
+  {
+   "n": 58,
+   "tool": "curl",
+   "query_or_url": "https://files.eric.ed.gov/fulltext/ED661949.pdf",
+   "utc": "2026-10-09T17:33:54Z",
+   "status": "200",
+   "bytes": "1595812",
+   "note": null
+  },
+  {
+   "n": 59,
+   "tool": "curl",
+   "query_or_url": "https://files.eric.ed.gov/fulltext/ED661924.pdf",
+   "utc": "2026-10-09T17:33:54Z",
+   "status": "200",
+   "bytes": "2045112",
+   "note": null
+  },
+  {
+   "n": 60,
+   "tool": "curl",
+   "query_or_url": "https://go.ncdpi.gov/AI_Guidelines",
+   "utc": "2026-10-09T17:34:19Z",
+   "status": "200",
+   "bytes": "3853911",
+   "note": "go.ncdpi.gov 短網址轉向 Google Docs 文件（標題可讀，正文為 JS 渲染未解析）"
+  },
+  {
+   "n": 61,
+   "tool": "curl",
+   "query_or_url": "https://url.gadoe.org/bl775",
+   "utc": "2026-10-09T17:34:21Z",
+   "status": "200",
+   "bytes": "752712",
+   "note": null
+  },
+  {
+   "n": 62,
+   "tool": "curl",
+   "query_or_url": "https://education.ohio.gov/getattachment/Topics/AI-in-Ohio-s-Education/Model-Policy/AI-In-Education-Model-Policy.pdf.aspx?lang=en-US",
+   "utc": "2026-10-09T17:34:22Z",
+   "status": "200",
+   "bytes": "196196",
+   "note": null
+  },
+  {
+   "tool": "WebSearch（模型轉述，只當線索）",
+   "query_or_url": "state department of education K-12 generative AI guidance North Carolina DPI Washington OSPI Oregon ODE California CDE",
+   "utc": "2026-10-09T17:30:05Z（約略，未逐筆打點）",
+   "status": "ok",
+   "result_count": 39
+  },
+  {
+   "tool": "WebSearch（模型轉述，只當線索）",
+   "query_or_url": "Ohio Department of Education and Workforce AI model policy districts 2026",
+   "utc": "2026-10-09T17:30:05Z（約略，未逐筆打點）",
+   "status": "ok",
+   "result_count": 10
+  },
+  {
+   "tool": "WebSearch（模型轉述，只當線索）",
+   "query_or_url": "NSW Department of Education generative AI schools guidelines NSWEduChat policy",
+   "utc": "2026-10-09T17:30:05Z（約略，未逐筆打點）",
+   "status": "ok",
+   "result_count": 9
+  },
+  {
+   "tool": "WebSearch（模型轉述，只當線索）",
+   "query_or_url": "NCDPI generative AI guidebook public schools (allowed_domains=dpi.nc.gov)",
+   "utc": "2026-10-09T17:31:20Z（約略，未逐筆打點）",
+   "status": "ok",
+   "result_count": 10
+  },
+  {
+   "tool": "WebSearch（模型轉述，只當線索）",
+   "query_or_url": "Georgia Department of Education artificial intelligence K-12 guidance (allowed_domains=gadoe.org)",
+   "utc": "2026-10-09T17:31:20Z（約略，未逐筆打點）",
+   "status": "ok",
+   "result_count": 10
+  },
+  {
+   "tool": "WebSearch（模型轉述，只當線索）",
+   "query_or_url": "education.gov.au generative AI schools 2025 2026 framework update (allowed_domains=education.gov.au, ministers.education.gov.au)",
+   "utc": "2026-10-09T17:32:25Z（約略，未逐筆打點）",
+   "status": "ok",
+   "result_count": 10
+  },
+  {
+   "tool": "WebSearch（模型轉述，只當線索）",
+   "query_or_url": "Department of Education July 22 2025 Dear Colleague letter guidance use of federal grant funds artificial intelligence",
+   "utc": "2026-10-09T17:33:00Z（約略，未逐筆打點）",
+   "status": "ok",
+   "result_count": 10
+  },
+  {
+   "tool": "WebSearch（模型轉述，只當線索）",
+   "query_or_url": "Australian Government response \"Study Buddy or Influencer\" inquiry generative AI education tabled date",
+   "utc": "2026-10-09T17:33:00Z（約略，未逐筆打點）",
+   "status": "ok",
+   "result_count": 10
+  }
+ ],
+ "items": [
+  {
+   "title": "Artificial Intelligence and the Future of Teaching and Learning: Insights and Recommendations",
+   "official_url": "https://eric.ed.gov/?id=ED631097",
+   "issued_by": "O-US-ED",
+   "proposed_new_code": null,
+   "applies_to_country": "US",
+   "applies_to_subdivision": null,
+   "doc_force": "報告",
+   "doc_force_basis": "ED 教育科技辦公室（OET）政策報告，封面註明「Examples Are Not Endorsements」，非拘束性",
+   "record_type_suggestion": "source_document",
+   "k12_scope_evidence": "待核：原 ed.gov 頁 403；ERIC 副本前頁未見學段字樣（只讀前3頁）",
+   "category_suggestion": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "note": "ERIC（ED/IES 營運）副本封面字樣「May 2023」；ERIC API publicationdate=2023-05-00。屬文件署期／索引欄位，非原頁首發日，故不填 first_published_on",
+    "urls": [
+     "https://files.eric.ed.gov/fulltext/ED631097.pdf",
+     "https://api.ies.ed.gov/eric/"
+    ],
+    "read_utc": "2026-10-09T17:33:43Z"
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": null,
+   "known_duplicate": null,
+   "decision": "pending",
+   "reason": "原頁不可讀（ed.gov 403）；官方網址未經 curl 驗證，暫以 ERIC 條目代替",
+   "summary_zh": "ED 對 AI 與教學的洞察與建議報告（2023 年署期）。",
+   "access_log": [
+    {
+     "url": "https://www.ed.gov/sites/ed/files/documents/ai-report/ai-report.pdf",
+     "method": "curl GET",
+     "http_status": 403,
+     "utc": "2026-10-09T17:28:35Z"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title:%22Artificial%20Intelligence%20and%20the%20Future%20of%20Teaching%20and%20Learning%22&fields=id,title,publicationdateyear,publisher,url,author&rows=10",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:16Z"
+    },
+    {
+     "url": "https://files.eric.ed.gov/fulltext/ED631097.pdf",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:33:43Z"
+    }
+   ],
+   "jurisdiction": "US-federal"
+  },
+  {
+   "title": "Designing for Education with Artificial Intelligence: An Essential Guide for Developers",
+   "official_url": "https://eric.ed.gov/?id=ED661949",
+   "issued_by": "O-US-ED",
+   "proposed_new_code": null,
+   "applies_to_country": "US",
+   "applies_to_subdivision": null,
+   "doc_force": "正式指引",
+   "doc_force_basis": "ED/OET 對教育科技開發者的非拘束性指引（封面「Examples Are Not Endorsements」）",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "待核：原頁不可讀，ERIC 副本未逐頁核學段",
+   "category_suggestion": [
+    "K5"
+   ],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "note": "ERIC 副本封面「July 2024」；ERIC API publicationdate=2024-07-00。非原頁首發日",
+    "urls": [
+     "https://files.eric.ed.gov/fulltext/ED661949.pdf"
+    ],
+    "read_utc": "2026-10-09T17:33:54Z"
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": null,
+   "known_duplicate": null,
+   "decision": "pending",
+   "reason": "原頁不可讀（tech.ed.gov/ed.gov 403）；學段待核",
+   "summary_zh": "給 AI 教育產品開發者的設計責任指引。",
+   "access_log": [
+    {
+     "url": "https://tech.ed.gov/ai/",
+     "method": "curl GET",
+     "http_status": 403,
+     "utc": "2026-10-09T17:29:14Z"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=publisher:%22Office%20of%20Educational%20Technology%22%20AND%20(artificial%20intelligence)&fields=id,title,publicationdateyear,publicationdate,publisher,url,description&rows=50",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:22Z"
+    },
+    {
+     "url": "https://files.eric.ed.gov/fulltext/ED661949.pdf",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:33:54Z"
+    }
+   ],
+   "jurisdiction": "US-federal"
+  },
+  {
+   "title": "Empowering Education Leaders: A Toolkit for Safe, Ethical, and Equitable AI Integration",
+   "official_url": "https://eric.ed.gov/?id=ED661924",
+   "issued_by": "O-US-ED",
+   "proposed_new_code": null,
+   "applies_to_country": "US",
+   "applies_to_subdivision": null,
+   "doc_force": "正式指引",
+   "doc_force_basis": "副本前頁自述「non-regulatory, education-specific guidance」",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "待核：對象為教育領導者，原頁不可讀，學段未逐頁核",
+   "category_suggestion": [
+    "K1",
+    "K5"
+   ],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "note": "ERIC 副本封面「October 2024」；ERIC API publicationdate=2024-10-00。非原頁首發日",
+    "urls": [
+     "https://files.eric.ed.gov/fulltext/ED661924.pdf"
+    ],
+    "read_utc": "2026-10-09T17:33:54Z"
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": null,
+   "known_duplicate": null,
+   "decision": "pending",
+   "reason": "原頁不可讀（ed.gov 403）；學段待核",
+   "summary_zh": "協助教育領導者安全導入 AI 的工具包。",
+   "access_log": [
+    {
+     "url": "https://tech.ed.gov/ai/",
+     "method": "curl GET",
+     "http_status": 403,
+     "utc": "2026-10-09T17:29:14Z"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=publisher:%22Office%20of%20Educational%20Technology%22%20AND%20(artificial%20intelligence)&fields=id,title,publicationdateyear,publicationdate,publisher,url,description&rows=50",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:22Z"
+    },
+    {
+     "url": "https://files.eric.ed.gov/fulltext/ED661924.pdf",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:33:54Z"
+    }
+   ],
+   "jurisdiction": "US-federal"
+  },
+  {
+   "title": "Executive Order 14277: Advancing Artificial Intelligence Education for American Youth",
+   "official_url": "https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth",
+   "issued_by": null,
+   "proposed_new_code": {
+    "code": "O-US-WH",
+    "label": "美國白宮／總統行政命令",
+    "reason": "行政命令由總統發布，非 ED；與 O-US-ED 分開以免混淆發布機關"
+   },
+   "applies_to_country": "US",
+   "applies_to_subdivision": null,
+   "doc_force": "行政命令",
+   "doc_force_basis": "Federal Register API executive_order_number=14277，type Presidential Document（90 FR 17519）",
+   "record_type_suggestion": "source_document",
+   "k12_scope_evidence": "GovInfo 全文 Sec. 6(a)「To provide resources for K-12 AI education…」，並提及 K-12 AI literacy 線上資源",
+   "category_suggestion": [
+    "K1",
+    "K4"
+   ],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "note": "Federal Register API：signing_date=2025-04-23、publication_date=2025-04-28（FR 刊登日）。白宮網站首發頁未讀，簽署日與 FR 刊登日均非可證首發日，故留空",
+    "urls": [
+     "https://www.federalregister.gov/api/v1/documents/2025-07368.json",
+     "https://www.govinfo.gov/content/pkg/FR-2025-04-28/html/2025-07368.htm"
+    ],
+    "read_utc": "2026-10-09T17:29:13Z"
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": null,
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "官方 API 與 GovInfo 原文可讀；K-12 範圍明確。federalregister.gov 全文頁為驗證頁，改讀 GovInfo",
+   "summary_zh": "設白宮 AI 教育工作小組與總統 AI 挑戰賽，要求各機關推動 K-12 AI 素養資源與師培。",
+   "access_log": [
+    {
+     "url": "https://www.federalregister.gov/api/v1/documents.json?conditions[type][]=PRESDOCU&conditions[term]=artificial+intelligence+education&conditions[publication_date][gte]=2019-01-01&per_page=50&fields[]=title&fields[]=publication_date&fields[]=signing_date&fields[]=executive_order_number&fields[]=html_url&fields[]=document_number",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:04Z"
+    },
+    {
+     "url": "https://www.federalregister.gov/api/v1/documents/2025-07368.json",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:13Z"
+    },
+    {
+     "url": "https://www.federalregister.gov/documents/full_text/text/2025/04/28/2025-07368.txt",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:34Z",
+     "note": "同上，驗證頁"
+    },
+    {
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-04-28/html/2025-07368.htm",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:41Z"
+    }
+   ],
+   "jurisdiction": "US-federal",
+   "signed_on": "2025-04-23",
+   "fr_publication_date": "2025-04-28"
+  },
+  {
+   "title": "Guidance on the Use of Federal Grant Funds to Improve Education Outcomes Using Artificial Intelligence (AI)（Dear Colleague Letter）",
+   "official_url": null,
+   "issued_by": "O-US-ED",
+   "proposed_new_code": null,
+   "applies_to_country": "US",
+   "applies_to_subdivision": null,
+   "doc_force": "正式指引",
+   "doc_force_basis": "依 FR 2026-07087 文字稱其為 Department's July 2025 Guidance；原件未讀",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "待核（原件未讀）",
+   "category_suggestion": [
+    "K1",
+    "K5"
+   ],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "note": "官方 FR 最終優先事項（2026-07087，GovInfo 全文）提及「the Department's July 2025 Guidance on the Use of Federal Grant Funds to Improve Education Outcomes Using Artificial Intelligence (AI)」→ 月精度旁證；WebSearch 線索稱 2025-07-22，未經原頁核對",
+    "urls": [
+     "https://www.govinfo.gov/content/pkg/FR-2026-04-13/html/2026-07087.htm"
+    ],
+    "read_utc": "2026-10-09T17:29:42Z"
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": null,
+   "known_duplicate": null,
+   "decision": "pending",
+   "reason": "原頁不可讀（ed.gov 新聞稿 403）；官方網址未確認",
+   "summary_zh": "說明聯邦補助款可用於負責任 AI 應用（線索稱含 AI 教材、輔導、升學就業諮詢）。",
+   "access_log": [
+    {
+     "url": "https://www.ed.gov/media/document/guidance-artificial-intelligence-use-schools-112052.pdf",
+     "method": "curl GET",
+     "http_status": 403,
+     "utc": "2026-10-09T17:29:15Z"
+    },
+    {
+     "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-issues-guidance-artificial-intelligence-use-schools-proposes-additional-supplemental-priority",
+     "method": "curl GET",
+     "http_status": 403,
+     "utc": "2026-10-09T17:33:11Z"
+    },
+    {
+     "url": "https://www.govinfo.gov/content/pkg/FR-2026-04-13/html/2026-07087.htm",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:42Z"
+    }
+   ],
+   "jurisdiction": "US-federal"
+  },
+  {
+   "title": "Proposed Priority and Definitions—Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education",
+   "official_url": "https://www.federalregister.gov/documents/2025/07/21/2025-13650/proposed-priority-and-definitions-secretarys-supplemental-priority-and-definitions-on-advancing",
+   "issued_by": "O-US-ED",
+   "proposed_new_code": null,
+   "applies_to_country": "US",
+   "applies_to_subdivision": null,
+   "doc_force": "草案",
+   "doc_force_basis": "FR API type=Proposed Rule；公開徵詢至 2025-08-20（comments_close_on）",
+   "record_type_suggestion": "source_document",
+   "k12_scope_evidence": "GovInfo 全文：「Expand offerings of AI and computer science education in K-12 education」等",
+   "category_suggestion": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "first_published_on": "2025-07-21",
+   "date_precision": "day",
+   "date_evidence": {
+    "note": "Federal Register API publication_date=2025-07-21（FR 為此類公告原始刊登處）",
+    "urls": [
+     "https://www.federalregister.gov/api/v1/documents/2025-13650.json"
+    ],
+    "read_utc": "2026-10-09T17:28:46Z"
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": null,
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "官方 API 與 GovInfo 原文可讀，屬 K-12 AI 補助優先事項草案",
+   "summary_zh": "ED 擬定補助競賽的 AI 優先事項（AI 素養、K-12 AI 課程、教師培訓等）。",
+   "access_log": [
+    {
+     "url": "https://www.federalregister.gov/api/v1/documents.json?conditions[agencies][]=education-department&conditions[term]=artificial+intelligence&conditions[publication_date][gte]=2019-01-01&per_page=100&fields[]=title&fields[]=publication_date&fields[]=type&fields[]=html_url&fields[]=document_number",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:34Z"
+    },
+    {
+     "url": "https://www.federalregister.gov/api/v1/documents/2025-13650.json",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:46Z"
+    },
+    {
+     "url": "https://www.federalregister.gov/documents/full_text/text/2025/07/21/2025-13650.txt",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:33Z",
+     "note": "HTTP 200 但內容為 Federal Register「Request Access」驗證頁，未繞過，未取得全文"
+    },
+    {
+     "url": "https://www.govinfo.gov/content/pkg/FR-2025-07-21/html/2025-13650.htm",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:42Z"
+    }
+   ],
+   "jurisdiction": "US-federal"
+  },
+  {
+   "title": "Final Priority and Definitions—Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education",
+   "official_url": "https://www.federalregister.gov/documents/2026/04/13/2026-07087/final-priority-and-definitions-secretarys-supplemental-priority-and-definitions-on-advancing",
+   "issued_by": "O-US-ED",
+   "proposed_new_code": null,
+   "applies_to_country": "US",
+   "applies_to_subdivision": null,
+   "doc_force": "法規",
+   "doc_force_basis": "FR API type=Rule（Rules and Regulations）；效力限於 ED 裁量補助競賽的優先事項，非直接規範學校",
+   "record_type_suggestion": "source_document",
+   "k12_scope_evidence": "GovInfo 全文多處 K-12（如 age-appropriate AI literacy teaching in K-12 education）",
+   "category_suggestion": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "first_published_on": "2026-04-13",
+   "date_precision": "day",
+   "date_evidence": {
+    "note": "Federal Register API publication_date=2026-04-13",
+    "urls": [
+     "https://www.federalregister.gov/api/v1/documents/2026-07087.json"
+    ],
+    "read_utc": "2026-10-09T17:28:47Z"
+   },
+   "updated_on": null,
+   "effective_on": "2026-05-13",
+   "version_relation": "finalizes FR 2025-13650（原文：「On July 21, 2025, the Department published a notice of proposed supplemental priority… (90 FR 34203)」）",
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "官方 API 與 GovInfo 原文可讀",
+   "summary_zh": "ED 定案 AI 補助優先事項，回應意見後強化 K-12 適齡 AI 素養。",
+   "access_log": [
+    {
+     "url": "https://www.federalregister.gov/api/v1/documents/2026-07087.json",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:47Z"
+    },
+    {
+     "url": "https://www.federalregister.gov/documents/full_text/text/2026/04/13/2026-07087.txt",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:33Z",
+     "note": "同上，驗證頁"
+    },
+    {
+     "url": "https://www.govinfo.gov/content/pkg/FR-2026-04-13/html/2026-07087.htm",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:42Z"
+    }
+   ],
+   "jurisdiction": "US-federal"
+  },
+  {
+   "title": "Guidance for the Safe and Effective Use of Artificial Intelligence in California Public Schools: Learning With AI, Learning About AI",
+   "official_url": "https://www.cde.ca.gov/ci/pl/aiincalifornia.asp",
+   "issued_by": null,
+   "proposed_new_code": {
+    "code": "O-US-CA-CDE",
+    "label": "California Department of Education",
+    "reason": "州教育廳須分別登錄"
+   },
+   "applies_to_country": "US",
+   "applies_to_subdivision": "US-CA",
+   "doc_force": "正式指引",
+   "doc_force_basis": "原頁：「in no way required to be followed… informative rather than prescriptive」（非拘束）；由 SB 1288（2024）設立之工作小組參與",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "原頁「California Public Schools」，引用 AI Learning Priorities for All K–12 Students",
+   "category_suggestion": [
+    "K1",
+    "K3",
+    "K4",
+    "K5"
+   ],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "note": "原頁未見首發日；頁尾「Last Reviewed: Friday, October 02, 2026」為檢閱日",
+    "urls": [
+     "https://www.cde.ca.gov/ci/pl/aiincalifornia.asp"
+    ],
+    "read_utc": "2026-10-09T17:30:15Z"
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": "原頁另列「2023 Guidance (Archive)」— 官方示意有 2023 舊版；舊版頁遇 captcha 未讀",
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "原頁可讀；首發日未知",
+   "summary_zh": "加州 K-12 AI 指引（學習用 AI、學習關於 AI），含 AI 素養定義與工具治理問題。",
+   "access_log": [
+    {
+     "url": "https://www.cde.ca.gov/ci/pl/aiincalifornia.asp",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:30:15Z"
+    },
+    {
+     "url": "https://www.cde.ca.gov/ci/pl/aiincalifornia2023.asp",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:30:17Z",
+     "note": "HTTP 200 但內容為 Radware Captcha 頁，未繞過"
+    }
+   ],
+   "jurisdiction": "US-CA",
+   "last_reviewed_on": "2026-10-02"
+  },
+  {
+   "title": "NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools",
+   "official_url": "https://go.ncdpi.gov/AI_Guidelines",
+   "issued_by": null,
+   "proposed_new_code": {
+    "code": "O-US-NC-DPI",
+    "label": "North Carolina Department of Public Instruction",
+    "reason": "州教育廳須分別登錄"
+   },
+   "applies_to_country": "US",
+   "applies_to_subdivision": "US-NC",
+   "doc_force": "正式指引",
+   "doc_force_basis": "官方新聞稿稱 guidebook/guidance，鼓勵學區另訂在地指引（非拘束）",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "文件標題「PK-13 Public Schools」",
+   "category_suggestion": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "note": "NCDPI 新聞稿（Tuesday, January 16, 2024）稱「recently released a guidebook」，未給確切發布日，故不填首發日；新聞稿日 2024-01-16 另記",
+    "urls": [
+     "https://www.dpi.nc.gov/news/press-releases/2024/01/16/ncdpi-releases-guidance-use-artificial-intelligence-schools"
+    ],
+    "read_utc": "2026-10-09T17:31:29Z"
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": "新聞稿稱「This resource will be updated regularly」；未見明示版本號",
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "官方新聞稿可讀；指引本文為 Google Docs（標題可讀，正文 JS 未解析）",
+   "summary_zh": "北卡 PK-13 生成式 AI 實施建議與考量。",
+   "access_log": [
+    {
+     "url": "https://www.dpi.nc.gov/districts-schools/digital-teaching-and-learning/artificial-intelligence",
+     "method": "curl GET",
+     "http_status": 404,
+     "utc": "2026-10-09T17:30:28Z",
+     "note": "404（猜測網址錯誤）"
+    },
+    {
+     "url": "https://www.dpi.nc.gov/news/press-releases/2024/01/16/ncdpi-releases-guidance-use-artificial-intelligence-schools",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:31:29Z"
+    },
+    {
+     "url": "https://www.dpi.nc.gov/districts-schools/districts-schools-support/digital-teaching-and-learning/ai-resources",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:31:31Z"
+    },
+    {
+     "url": "https://go.ncdpi.gov/AI_Guidelines",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:34:19Z",
+     "note": "go.ncdpi.gov 短網址轉向 Google Docs 文件（標題可讀，正文為 JS 渲染未解析）"
+    }
+   ],
+   "jurisdiction": "US-NC",
+   "announcement_on": "2024-01-16"
+  },
+  {
+   "title": "Human-Centered AI Guidance for K-12 Public Schools",
+   "official_url": "https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools",
+   "issued_by": null,
+   "proposed_new_code": {
+    "code": "O-US-WA-OSPI",
+    "label": "Washington Office of Superintendent of Public Instruction",
+    "reason": "州教育主管機關須分別登錄"
+   },
+   "applies_to_country": "US",
+   "applies_to_subdivision": "US-WA",
+   "doc_force": "正式指引",
+   "doc_force_basis": "官方新聞稿稱 roadmap/guidance",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "文件名「human-centered-ai-guidance-k-12」；新聞稿指 Washington’s schools",
+   "category_suggestion": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "first_published_on": "2024-01-18",
+   "date_precision": "day",
+   "date_evidence": {
+    "note": "OSPI 新聞稿日期「January 18, 2024」，內文「Today, the Office of Superintendent of Public Instruction (OSPI) published a roadmap…」",
+    "urls": [
+     "https://ospi.k12.wa.us/about-ospi/news-center/news-releases/superintendent-reykdal-introduces-guidance-integration-human-centered-ai-washingtons-public-schools"
+    ],
+    "read_utc": "2026-10-09T17:30:18Z"
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": "資源頁另列 2024-05～2024-08 路徑的補充文件（Leadership Checklist、FAQ、Comprehensive AI Guidance 等）；edition 2 存在（WebSearch 線索，原頁未明列版本日）",
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "原頁與新聞稿可讀，首發日有原字樣",
+   "summary_zh": "華盛頓州「人—AI—人」框架的 K-12 AI 指引。",
+   "access_log": [
+    {
+     "url": "https://ospi.k12.wa.us/about-ospi/news-center/news-releases/superintendent-reykdal-introduces-guidance-integration-human-centered-ai-washingtons-public-schools",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:30:18Z"
+    },
+    {
+     "url": "https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:30:20Z"
+    }
+   ],
+   "jurisdiction": "US-WA"
+  },
+  {
+   "title": "Generative Artificial Intelligence (AI) in K-12 Classrooms Guidance (v3.0, web-based)",
+   "official_url": "https://www.oregon.gov/ode/educator-resources/teachingcontent/Pages/Generative-Artificial-Intelligence-%28AI%29-for-K-12-Schools.aspx",
+   "issued_by": null,
+   "proposed_new_code": {
+    "code": "O-US-OR-ODE",
+    "label": "Oregon Department of Education",
+    "reason": "州教育廳須分別登錄"
+   },
+   "applies_to_country": "US",
+   "applies_to_subdivision": "US-OR",
+   "doc_force": "正式指引",
+   "doc_force_basis": "原頁稱 guidance，鼓勵學區自行評估是否／如何使用",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "標題「K-12 Classrooms」",
+   "category_suggestion": [
+    "K1",
+    "K4",
+    "K5"
+   ],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "note": "原頁未見首發或更新日",
+    "urls": [
+     "https://www.oregon.gov/ode/educator-resources/teachingcontent/Pages/Generative-Artificial-Intelligence-%28AI%29-for-K-12-Schools.aspx"
+    ],
+    "read_utc": "2026-10-09T17:30:26Z"
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": "原頁明示由 v2.0 文件轉為現行 v3.0 網頁版（「moving the previous … guidance document (v2.0) into the current v3.0 web-based interactive guide」）",
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "原頁可讀；首發日未知",
+   "summary_zh": "奧勒岡 K-12 生成式 AI 指引 v3.0，新增指導原則與教師 AI 核心能力。",
+   "access_log": [
+    {
+     "url": "https://www.oregon.gov/ode/educator-resources/teachingcontent/Pages/Generative-Artificial-Intelligence-%28AI%29-for-K-12-Schools.aspx",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:30:26Z"
+    }
+   ],
+   "jurisdiction": "US-OR"
+  },
+  {
+   "title": "AI in Education: Model Policy for Ohio Districts and Schools",
+   "official_url": "https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy",
+   "issued_by": null,
+   "proposed_new_code": {
+    "code": "O-US-OH-DEW",
+    "label": "Ohio Department of Education and Workforce",
+    "reason": "州教育主管機關須分別登錄"
+   },
+   "applies_to_country": "US",
+   "applies_to_subdivision": "US-OH",
+   "doc_force": "正式指引",
+   "doc_force_basis": "模範政策，學校「may choose to adopt」；但依 House Bill 96，學區須於 2026-07-01 前採行正式 AI 政策（法定義務在州法，非本文件）",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "適用 traditional public school districts, community schools, STEM schools",
+   "category_suggestion": [
+    "K1",
+    "K5"
+   ],
+   "first_published_on": "2025-12-30",
+   "date_precision": "day",
+   "date_evidence": {
+    "note": "ODEW 新聞稿「Release date: 12/30/2025 … today announced the release of a model policy」",
+    "urls": [
+     "https://education.ohio.gov/Media/Media-Releases/2025-Media-Releases/Ohio-Department-of-Education-and-Workforce-Release"
+    ],
+    "read_utc": "2026-10-09T17:31:15Z"
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": "原頁說明以 2024-02 Ohio AI Toolkit 與 2024-11 Ohio AI in Education Coalition AI Strategy 為基礎（非同文件版本）",
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "原頁、新聞稿、PDF 均可讀",
+   "summary_zh": "俄亥俄州供學區採用或改寫的 AI 模範政策。",
+   "access_log": [
+    {
+     "url": "https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:30:27Z"
+    },
+    {
+     "url": "https://education.ohio.gov/Media/Ed-Connection/Jan-6-2026/Department-releases-model-policy-for-artificial-in",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:30:28Z"
+    },
+    {
+     "url": "https://education.ohio.gov/Media/Media-Releases/2025-Media-Releases/Ohio-Department-of-Education-and-Workforce-Release",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:31:15Z"
+    },
+    {
+     "url": "https://education.ohio.gov/getattachment/Topics/AI-in-Ohio-s-Education/Model-Policy/AI-In-Education-Model-Policy.pdf.aspx?lang=en-US",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:34:22Z"
+    }
+   ],
+   "jurisdiction": "US-OH",
+   "related_deadline": "2026-07-01（HB 96 學區採行期限，非本文件施行日）"
+  },
+  {
+   "title": "Leveraging AI in the K-12 Setting",
+   "official_url": "https://login.community.gadoe.org/documents/leveraging-ai-in-the-k-12-setting",
+   "issued_by": null,
+   "proposed_new_code": {
+    "code": "O-US-GA-DOE",
+    "label": "Georgia Department of Education",
+    "reason": "州教育廳須分別登錄"
+   },
+   "applies_to_country": "US",
+   "applies_to_subdivision": "US-GA",
+   "doc_force": "正式指引",
+   "doc_force_basis": "原頁「Document Type: Guidance」",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "PDF 首頁「use of AI in K-12 public schools in Georgia」",
+   "category_suggestion": [
+    "K1",
+    "K5"
+   ],
+   "first_published_on": "2025-01-21",
+   "date_precision": "day",
+   "date_evidence": {
+    "note": "GaDOE 文件頁「Date Published: Jan 21, 2025」；PDF 封面「January 2025」",
+    "urls": [
+     "https://login.community.gadoe.org/documents/leveraging-ai-in-the-k-12-setting",
+     "https://url.gadoe.org/bl775"
+    ],
+    "read_utc": "2026-10-09T17:31:32Z"
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": null,
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "原頁與 PDF 可讀，首發日有原字樣",
+   "summary_zh": "喬治亞州 K-12 AI 倫理、有效與安全使用指引。",
+   "access_log": [
+    {
+     "url": "https://gadoe.org/learning/artificial-intelligence/",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:31:32Z",
+     "note": "HTTP 200，頁面為前端渲染，未解析出內容"
+    },
+    {
+     "url": "https://login.community.gadoe.org/documents/leveraging-ai-in-the-k-12-setting",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:31:32Z"
+    },
+    {
+     "url": "https://url.gadoe.org/bl775",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:34:21Z"
+    }
+   ],
+   "jurisdiction": "US-GA"
+  },
+  {
+   "title": "Generative artificial intelligence (AI) in education",
+   "official_url": "https://www.gov.uk/government/publications/generative-artificial-intelligence-in-education",
+   "issued_by": "O-UK-DFE",
+   "proposed_new_code": null,
+   "applies_to_country": "GB-ENG",
+   "applies_to_subdivision": null,
+   "doc_force": "正式指引",
+   "doc_force_basis": "GOV.UK document_type=guidance",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "既有 KB 紀錄",
+   "category_suggestion": [
+    "K1",
+    "K5"
+   ],
+   "first_published_on": "2023-03-29",
+   "date_precision": "day",
+   "date_evidence": {
+    "note": "GOV.UK Content API first_published_at=2023-03-29T00:00:00+01:00",
+    "urls": [
+     "https://www.gov.uk/api/content/government/publications/generative-artificial-intelligence-in-education"
+    ],
+    "read_utc": "2026-10-09T17:28:33Z"
+   },
+   "updated_on": "2025-08-12",
+   "effective_on": null,
+   "version_relation": "同一頁持續更新（非新版文件）：change_history 2023-10-26（資料隱私與智財）、2025-01-22（智財；連到 product safety expectations）、2025-06-10（連到 support materials）、2025-08-12（Ofsted 指引摘要）；public_updated_at=2025-08-12",
+   "known_duplicate": "KB-2023-0002",
+   "decision": "exclude",
+   "reason": "known_duplicate，不重列；僅補充更新歷程",
+   "summary_zh": null,
+   "access_log": [
+    {
+     "url": "https://www.gov.uk/api/content/government/publications/generative-artificial-intelligence-in-education",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:33Z"
+    }
+   ],
+   "jurisdiction": "GB-ENG"
+  },
+  {
+   "title": "Generative artificial intelligence in education call for evidence",
+   "official_url": "https://www.gov.uk/government/calls-for-evidence/generative-artificial-intelligence-in-education-call-for-evidence",
+   "issued_by": "O-UK-DFE",
+   "proposed_new_code": null,
+   "applies_to_country": "GB-ENG",
+   "applies_to_subdivision": null,
+   "doc_force": "諮詢",
+   "doc_force_basis": "GOV.UK document_type=call_for_evidence_outcome",
+   "record_type_suggestion": "source_document",
+   "k12_scope_evidence": "描述「across education in England」（含學校，但非僅 K-12）",
+   "category_suggestion": [
+    "K1"
+   ],
+   "first_published_on": "2023-06-14",
+   "date_precision": "day",
+   "date_evidence": {
+    "note": "GOV.UK Content API first_published_at=2023-06-14T09:44:19+01:00；change_history「First published.」2023-06-13（UTC 表示差）",
+    "urls": [
+     "https://www.gov.uk/api/content/government/calls-for-evidence/generative-artificial-intelligence-in-education-call-for-evidence"
+    ],
+    "read_utc": "2026-10-09T17:28:49Z"
+   },
+   "updated_on": "2023-11-28",
+   "effective_on": null,
+   "version_relation": "2023-11-28 加入回應摘要（change_history）",
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "官方 API 可讀；範圍涵蓋全教育階段，學段需標注",
+   "summary_zh": "DfE 就生成式 AI 在教育的使用徵集證據並發布回應摘要。",
+   "access_log": [
+    {
+     "url": "https://www.gov.uk/api/search.json?q=artificial+intelligence&filter_organisations=department-for-education&count=60&fields=title,link,public_timestamp,content_store_document_type",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:33Z"
+    },
+    {
+     "url": "https://www.gov.uk/api/content/government/calls-for-evidence/generative-artificial-intelligence-in-education-call-for-evidence",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:49Z"
+    }
+   ],
+   "jurisdiction": "GB-ENG"
+  },
+  {
+   "title": "Generative artificial intelligence (AI) and data protection in schools",
+   "official_url": "https://www.gov.uk/guidance/data-protection-in-schools/generative-artificial-intelligence-ai-and-data-protection-in-schools",
+   "issued_by": "O-UK-DFE",
+   "proposed_new_code": null,
+   "applies_to_country": "GB-ENG",
+   "applies_to_subdivision": null,
+   "doc_force": "正式指引",
+   "doc_force_basis": "GOV.UK manual_section（Data protection in schools 指引手冊章節）",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "標題「in schools」",
+   "category_suggestion": [
+    "K5"
+   ],
+   "first_published_on": "2024-02-07",
+   "date_precision": "day",
+   "date_evidence": {
+    "note": "GOV.UK Content API first_published_at=2024-02-07T16:35:44+00:00",
+    "urls": [
+     "https://www.gov.uk/api/content/guidance/data-protection-in-schools/generative-artificial-intelligence-ai-and-data-protection-in-schools"
+    ],
+    "read_utc": "2026-10-09T17:28:49Z"
+   },
+   "updated_on": "2026-03-23",
+   "effective_on": null,
+   "version_relation": "change_history：2024-12-10 更新、2025-09-16 加連結、2026-03-23 刪除「Open and closed generative AI」一節",
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "官方 API 可讀",
+   "summary_zh": "學校使用生成式 AI 的資料保護風險處理指引。",
+   "access_log": [
+    {
+     "url": "https://www.gov.uk/api/search.json?q=artificial+intelligence&filter_organisations=department-for-education&count=60&fields=title,link,public_timestamp,content_store_document_type",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:33Z"
+    },
+    {
+     "url": "https://www.gov.uk/api/content/guidance/data-protection-in-schools/generative-artificial-intelligence-ai-and-data-protection-in-schools",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:49Z"
+    }
+   ],
+   "jurisdiction": "GB-ENG"
+  },
+  {
+   "title": "Generative AI in education: user research and technical report",
+   "official_url": "https://www.gov.uk/government/publications/generative-ai-in-education-user-research-and-technical-report",
+   "issued_by": "O-UK-DFE",
+   "proposed_new_code": null,
+   "applies_to_country": "GB-ENG",
+   "applies_to_subdivision": null,
+   "doc_force": "報告",
+   "doc_force_basis": "GOV.UK document_type=research",
+   "record_type_suggestion": "source_document",
+   "k12_scope_evidence": "描述含 teachers, leaders and pupils",
+   "category_suggestion": [
+    "K4",
+    "K5"
+   ],
+   "first_published_on": "2024-08-28",
+   "date_precision": "day",
+   "date_evidence": {
+    "note": "GOV.UK Content API first_published_at=2024-08-28T00:00:00+01:00",
+    "urls": [
+     "https://www.gov.uk/api/content/government/publications/generative-ai-in-education-user-research-and-technical-report"
+    ],
+    "read_utc": "2026-10-09T17:28:50Z"
+   },
+   "updated_on": "2024-10-17",
+   "effective_on": null,
+   "version_relation": "2024-10-17 技術報告補充學生資料使用說明",
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "官方 API 可讀；屬研究報告，政策效力低",
+   "summary_zh": "DfE 委託的教師、學校領導與學生生成式 AI 使用者研究與技術報告。",
+   "access_log": [
+    {
+     "url": "https://www.gov.uk/api/search.json?q=artificial+intelligence&filter_organisations=department-for-education&count=60&fields=title,link,public_timestamp,content_store_document_type",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:33Z"
+    },
+    {
+     "url": "https://www.gov.uk/api/content/government/publications/generative-ai-in-education-user-research-and-technical-report",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:50Z"
+    }
+   ],
+   "jurisdiction": "GB-ENG"
+  },
+  {
+   "title": "Generative AI: product safety standards（2025 首發名稱為 product safety expectations）",
+   "official_url": "https://www.gov.uk/government/publications/generative-ai-product-safety-standards",
+   "issued_by": "O-UK-DFE",
+   "proposed_new_code": null,
+   "applies_to_country": "GB-ENG",
+   "applies_to_subdivision": null,
+   "doc_force": "正式指引",
+   "doc_force_basis": "GOV.UK document_type=guidance",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "描述「products and systems developed for use in educational settings」（學校與學院）",
+   "category_suggestion": [
+    "K5"
+   ],
+   "first_published_on": "2025-01-22",
+   "date_precision": "day",
+   "date_evidence": {
+    "note": "GOV.UK Content API first_published_at=2025-01-22T00:00:00+00:00；主指引 change_history 2025-01-22 稱「Generative AI: product safety expectations」",
+    "urls": [
+     "https://www.gov.uk/api/content/government/publications/generative-ai-product-safety-standards"
+    ],
+    "read_utc": "2026-10-09T17:28:47Z"
+   },
+   "updated_on": "2026-01-19",
+   "effective_on": null,
+   "version_relation": "change_history 2026-01-19：新增認知發展、情緒與社會發展、心理健康、操弄等標準；標題現為 standards",
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "官方 API 可讀",
+   "summary_zh": "教育用生成式 AI 產品應達的安全標準（過濾、監控、隱私等）。",
+   "access_log": [
+    {
+     "url": "https://www.gov.uk/api/search.json?q=artificial+intelligence&filter_organisations=department-for-education&count=60&fields=title,link,public_timestamp,content_store_document_type",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:33Z"
+    },
+    {
+     "url": "https://www.gov.uk/api/content/government/publications/generative-ai-product-safety-standards",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:47Z"
+    },
+    {
+     "url": "https://www.gov.uk/api/search.json?q=AI&filter_organisations=department-for-education&filter_content_store_document_type=guidance&count=40&fields=title,link,public_timestamp,content_store_document_type",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:05Z"
+    }
+   ],
+   "jurisdiction": "GB-ENG"
+  },
+  {
+   "title": "Using AI in education settings: support materials（collection；含 modules 1–4 與 leaders 材料）",
+   "official_url": "https://www.gov.uk/government/collections/using-ai-in-education-settings-support-materials",
+   "issued_by": "O-UK-DFE",
+   "proposed_new_code": null,
+   "applies_to_country": "GB-ENG",
+   "applies_to_subdivision": null,
+   "doc_force": "正式指引",
+   "doc_force_basis": "GOV.UK document_collection；子文件 document_type=guidance",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "描述「help schools and colleges」",
+   "category_suggestion": [
+    "K4",
+    "K5"
+   ],
+   "first_published_on": "2025-06-10",
+   "date_precision": "day",
+   "date_evidence": {
+    "note": "GOV.UK Content API first_published_at=2025-06-10T10:18:00+01:00（collection）；子文件 module 1 與 leaders 皆 2025-06-10",
+    "urls": [
+     "https://www.gov.uk/api/content/government/collections/using-ai-in-education-settings-support-materials",
+     "https://www.gov.uk/api/content/government/publications/understanding-ai-in-education-module-1",
+     "https://www.gov.uk/api/content/government/publications/using-ai-in-education-support-for-school-and-college-leaders"
+    ],
+    "read_utc": "2026-10-09T17:28:47Z"
+   },
+   "updated_on": "2026-05-19",
+   "effective_on": null,
+   "version_relation": "2026-05-19「Updated all documents for 2026 to 2027」（子文件 change_history）",
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "官方 API 可讀；以 collection 為一件，子模組不分列",
+   "summary_zh": "DfE 給學校與學院全體教職員及領導者的 AI 安全有效使用培訓材料。",
+   "access_log": [
+    {
+     "url": "https://www.gov.uk/api/content/government/collections/using-ai-in-education-settings-support-materials",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:47Z"
+    },
+    {
+     "url": "https://www.gov.uk/api/content/government/publications/using-ai-in-education-support-for-school-and-college-leaders",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:48Z"
+    },
+    {
+     "url": "https://www.gov.uk/api/content/government/publications/understanding-ai-in-education-module-1",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:28:49Z"
+    },
+    {
+     "url": "https://www.gov.uk/api/search.json?q=AI&filter_organisations=department-for-education&filter_content_store_document_type=guidance&count=40&fields=title,link,public_timestamp,content_store_document_type",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:29:05Z"
+    }
+   ],
+   "jurisdiction": "GB-ENG"
+  },
+  {
+   "title": "The Australian Framework for Generative Artificial Intelligence (AI) in Schools",
+   "official_url": "https://www.education.gov.au/schooling/announcements/australian-framework-generative-artificial-intelligence-ai-schools",
+   "issued_by": "O-AU-EDU",
+   "proposed_new_code": null,
+   "applies_to_country": "AU",
+   "applies_to_subdivision": null,
+   "doc_force": "框架",
+   "doc_force_basis": null,
+   "record_type_suggestion": "framework",
+   "k12_scope_evidence": null,
+   "category_suggestion": [],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": null,
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": null,
+   "known_duplicate": "KB-2023-0001",
+   "decision": "exclude",
+   "reason": "known_duplicate；本次原頁不可讀（連線失敗），未能查其後續更新",
+   "summary_zh": null,
+   "access_log": [
+    {
+     "url": "https://www.education.gov.au/schooling/announcements/australian-framework-generative-artificial-intelligence-ai-schools",
+     "method": "curl GET",
+     "http_status": 0,
+     "utc": "2026-10-09T17:30:38Z",
+     "note": "連線失敗（000；HTTP/2 錯誤／空回應）"
+    },
+    {
+     "url": "https://www.education.gov.au/schooling/announcements/australian-framework-generative-artificial-intelligence-ai-schools",
+     "method": "curl GET(http1.1)",
+     "http_status": 0,
+     "utc": "2026-10-09T17:31:49Z",
+     "note": "--http1.1 重試：curl (52) Empty reply from server"
+    }
+   ],
+   "jurisdiction": "AU-federal"
+  },
+  {
+   "title": "2024 Review of the Australian Framework for Generative Artificial Intelligence in Schools",
+   "official_url": "https://www.education.gov.au/schooling/announcements/2024-review-australian-framework-generative-artificial-intelligence-schools",
+   "issued_by": "O-AU-EDU",
+   "proposed_new_code": null,
+   "applies_to_country": "AU",
+   "applies_to_subdivision": null,
+   "doc_force": "報告",
+   "doc_force_basis": null,
+   "record_type_suggestion": "policy_review",
+   "k12_scope_evidence": null,
+   "category_suggestion": [],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": null,
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": "reviews KB-2023-0001（依既有紀錄）",
+   "known_duplicate": "KB-2025-0001",
+   "decision": "exclude",
+   "reason": "known_duplicate；本次未重讀（同站連線失敗）",
+   "summary_zh": null,
+   "access_log": [],
+   "jurisdiction": "AU-federal"
+  },
+  {
+   "title": "Australian Government response to Study Buddy or Influencer: Inquiry into the use of generative artificial intelligence in the Australian education system",
+   "official_url": "https://www.education.gov.au/download/20276/study-buddy-or-influencer-inquiry-use-generative-artificial-intelligence-australian-education-system/44382/document/pdf",
+   "issued_by": "O-AU-EDU",
+   "proposed_new_code": null,
+   "applies_to_country": "AU",
+   "applies_to_subdivision": null,
+   "doc_force": "報告",
+   "doc_force_basis": "政府對眾議院委員會報告之回應（線索）；原件未讀",
+   "record_type_suggestion": "policy_review",
+   "k12_scope_evidence": "待核（涵蓋全教育體系，學校部分待讀原文）",
+   "category_suggestion": [
+    "K1",
+    "K5"
+   ],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "note": "WebSearch 線索稱 2026 年 4 月提交國會；未經原頁核對",
+    "urls": [],
+    "read_utc": null
+   },
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": null,
+   "known_duplicate": null,
+   "decision": "pending",
+   "reason": "原頁不可讀（education.gov.au 連線失敗、aph.gov.au 403）",
+   "summary_zh": null,
+   "access_log": [
+    {
+     "url": "https://www.education.gov.au/download/20276/study-buddy-or-influencer-inquiry-use-generative-artificial-intelligence-australian-education-system/44382/document/pdf",
+     "method": "curl GET",
+     "http_status": 0,
+     "utc": "2026-10-09T17:32:41Z",
+     "note": "連線失敗（000）"
+    },
+    {
+     "url": "https://www.aph.gov.au/Parliamentary_Business/Committees/House/Employment_Education_and_Training/AIineducation",
+     "method": "curl GET",
+     "http_status": 403,
+     "utc": "2026-10-09T17:32:41Z",
+     "note": "403"
+    },
+    {
+     "url": "https://www.education.gov.au/node/20276",
+     "method": "curl GET(http1.1)",
+     "http_status": 0,
+     "utc": "2026-10-09T17:33:11Z",
+     "note": "--http1.1：curl (52) Empty reply"
+    }
+   ],
+   "jurisdiction": "AU-federal"
+  },
+  {
+   "title": "Draft schools AI framework open for consultation（教育部長新聞稿）",
+   "official_url": "https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation",
+   "issued_by": "O-AU-EDU",
+   "proposed_new_code": null,
+   "applies_to_country": "AU",
+   "applies_to_subdivision": null,
+   "doc_force": "諮詢",
+   "doc_force_basis": "標題稱 consultation（線索）",
+   "record_type_suggestion": "government_announcement",
+   "k12_scope_evidence": "待核",
+   "category_suggestion": [
+    "K1"
+   ],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": null,
+   "updated_on": null,
+   "effective_on": null,
+   "version_relation": "疑為 KB-2023-0001 之草案諮詢階段（未經原頁核對，不作版本關係主張）",
+   "known_duplicate": null,
+   "decision": "pending",
+   "reason": "原頁不可讀（ministers.education.gov.au HTTP/2 錯誤）",
+   "summary_zh": null,
+   "access_log": [
+    {
+     "url": "https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation",
+     "method": "curl GET",
+     "http_status": 0,
+     "utc": "2026-10-09T17:32:38Z",
+     "note": "curl (92) HTTP/2 stream INTERNAL_ERROR"
+    },
+    {
+     "url": "https://ministers.education.gov.au/clare/ai-framework-schools-released",
+     "method": "curl GET",
+     "http_status": 0,
+     "utc": "2026-10-09T17:32:39Z",
+     "note": "curl (92) HTTP/2 stream INTERNAL_ERROR"
+    }
+   ],
+   "jurisdiction": "AU-federal"
+  },
+  {
+   "title": "Guidelines regarding the use of generative AI",
+   "official_url": "https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/guidelines-regarding-use-of-generative-ai",
+   "issued_by": null,
+   "proposed_new_code": {
+    "code": "O-AU-NSW-DOE",
+    "label": "NSW Department of Education",
+    "reason": "澳洲州教育主管機關須分別登錄"
+   },
+   "applies_to_country": "AU",
+   "applies_to_subdivision": "AU-NSW",
+   "doc_force": "正式指引",
+   "doc_force_basis": "原頁 guidelines，自述高層次建議，詳細員工指引在內網",
+   "record_type_suggestion": "official_guidance",
+   "k12_scope_evidence": "NSW public schools",
+   "category_suggestion": [
+    "K1",
+    "K5"
+   ],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "note": "原頁未見首發日；「Last updated: 01-Apr-2026」、meta dcterms.modified=2026-04-01",
+    "urls": [
+     "https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/guidelines-regarding-use-of-generative-ai"
+    ],
+    "read_utc": "2026-10-09T17:30:29Z"
+   },
+   "updated_on": "2026-04-01",
+   "effective_on": null,
+   "version_relation": "原頁稱以國家框架（KB-2023-0001）為指導框架（引用關係，非版本關係）",
+   "known_duplicate": null,
+   "decision": "candidate",
+   "reason": "原頁可讀；首發日未知",
+   "summary_zh": "NSW 公立學校生成式 AI 使用指引，推薦部屬工具 NSWEduChat 與最低安全做法。",
+   "access_log": [
+    {
+     "url": "https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/guidelines-regarding-use-of-generative-ai",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:30:29Z"
+    }
+   ],
+   "jurisdiction": "AU-NSW"
+  },
+  {
+   "title": "Student use of NSWEduChat",
+   "official_url": "https://education.nsw.gov.au/schooling/parents-and-carers/artificial-intelligence/student-use-of-nsweduchat.html",
+   "issued_by": null,
+   "proposed_new_code": {
+    "code": "O-AU-NSW-DOE",
+    "label": "NSW Department of Education",
+    "reason": "同上"
+   },
+   "applies_to_country": "AU",
+   "applies_to_subdivision": "AU-NSW",
+   "doc_force": "公告",
+   "doc_force_basis": "家長／照顧者資訊頁，說明學生使用部屬 AI 工具範圍",
+   "record_type_suggestion": "government_announcement",
+   "k12_scope_evidence": "原頁「Students from Year 5 to Year 12 have access to NSWEduChat」",
+   "category_suggestion": [
+    "K5"
+   ],
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "note": "原頁未見首發日；「Last updated: 05-Jun-2026」",
+    "urls": [
+     "https://education.nsw.gov.au/schooling/parents-and-carers/artificial-intelligence/student-use-of-nsweduchat.html"
+    ],
+    "read_utc": "2026-10-09T17:32:53Z"
+   },
+   "updated_on": "2026-06-05",
+   "effective_on": null,
+   "version_relation": null,
+   "known_duplicate": null,
+   "decision": "pending",
+   "reason": "原頁可讀，但屬家長資訊頁，是否屬政策文件（相對於家庭宣導）待人工判定",
+   "summary_zh": "說明 NSWEduChat 學生模式開放 5–12 年級使用。",
+   "access_log": [
+    {
+     "url": "https://education.nsw.gov.au/schooling/parents-and-carers/artificial-intelligence/student-use-of-nsweduchat.html",
+     "method": "curl GET",
+     "http_status": 200,
+     "utc": "2026-10-09T17:32:53Z"
+    },
+    {
+     "url": "https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/artificial-intelligence-in-education",
+     "method": "curl GET(http1.1)",
+     "http_status": 200,
+     "utc": "2026-10-09T17:32:20Z"
+    }
+   ],
+   "jurisdiction": "AU-NSW"
+  }
+ ],
+ "limits": [
+  "ed.gov 與 tech.ed.gov 一律 403，ED 自發文件只能以 ERIC 副本與 FR 旁證，均列 pending",
+  "federalregister.gov 全文頁回驗證頁（未繞過），全文改讀 GovInfo；FR API 正常",
+  "education.gov.au 與 ministers.education.gov.au 連線失敗（HTTP/2 錯誤、空回應），澳洲聯邦無法查 2025–26 新文件；已在庫兩件未能重核",
+  "CDE 2023 舊版頁出現 Radware captcha，未繞過",
+  "WebSearch 只搜 8 次，州層只取 6 州代表，非全美普查；其他州（如維吉尼亞、印第安納等）未查",
+  "州議會法律（如加州 AB 2876、SB 1288、俄亥俄 HB 96）非教育廳文件，未列為項目，僅在相關項目備註",
+  "Ofsted（英格蘭）AI 文件不屬 DfE，未收；DfE support materials 子模組合併為一件",
+  "WebSearch 時間戳為約略值"
+ ]
+}
