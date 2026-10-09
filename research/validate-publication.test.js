@@ -95,3 +95,18 @@ test("offline full-issue fixture fails closed when evidence is tampered with",t=
  fs.appendFileSync(path.join(d,"publication","sources","fixture.txt"),"tampered");
  assert.equal(validate(d).ok,false);
 });
+
+test("unregistered daily HTML is blocked, not silently deployed",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const folder=path.join(d,"daily","2026-10-10");fs.mkdirSync(folder,{recursive:true});
+ fs.writeFileSync(path.join(folder,"index.html"),'<main><p>not registered</p></main>');
+ const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("Unregistered issue")&&e.includes("daily/")));
+});
+test("registered daily HTML is blocked pending real editorial approval enforcement",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ const pathToWeekly=path.join(d,"weekly","2026-10-09_10-15","index.html"),dailyDir=path.join(d,"daily","2026-10-10");
+ fs.mkdirSync(dailyDir,{recursive:true});fs.renameSync(pathToWeekly,path.join(dailyDir,"index.html"));
+ const manifestPath=path.join(d,"publication","issues.json"),manifest=JSON.parse(fs.readFileSync(manifestPath,"utf8"));manifest.editions[0].path="daily/2026-10-10/index.html";
+ fs.writeFileSync(manifestPath,JSON.stringify(manifest));
+ const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("editorial approval")));
+});

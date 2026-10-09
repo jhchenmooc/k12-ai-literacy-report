@@ -174,3 +174,7 @@ Pages 目前從 Repo 根目錄 `.` 上傳，Public Repo 的 `research/`、`publi
 ## 每日快訊待審包 v1.5（正式發布尚未啟用）
 
 每日實際搜尋結果沿用每週候選 JSON（`ingest-candidates.js`），供週報同時選稿，不以日報刊登消耗候選。新候選 `discovered_on`、`discovery_batch_id` 僅記錄實際搜尋批次；跨週 DOI／URL／事件鍵可參照既有候選，重要更新保留短摘要待重新查核。執行 `node research/prepare-daily-brief.js 2026-10-10` 會讀 10/09 搜尋批次，輸出 Markdown 待審包；0 則是正常結果。舊研究列背景、未核證列待查，不會產生正式可刊清單。**此工具不做網路搜尋、不提供真人核准、不能建立 `daily/` 或登錄 issues**。正式日報需另行設計並驗證 PR Review、對應最終版本的真人核准與部署安全；不得把待審包當作正式發布。每週仍須獨立核對來源、反證及編輯決策。
+
+## 正式每日出版（PR C 前置安全護欄；尚未啟用）
+
+`validate-publication.js` 現在掃描 `daily/*/index.html`，未登錄的每日頁面會報錯；即使已登錄且 claims／HTML 結構合法，**每日期別一律 fail-closed**，直到另案完成真正可強制的授權與版本綁定核准，並實測未核准不得合併及部署。這不是已完成的正式 daily 功能，不能以 GitHub `verify` 成功或自填 `approved` 作為授權。現有 `main` ruleset 必要 Review 為 0、未啟用 stale review dismissal，不足以支持正式 daily 自動上線。網站首頁不連結尚不存在／未核准的每日期別；也不建立空白 daily 目錄。根目錄 Pages 打包仍含公有 repo 檔案，禁止提交私密審稿內容。正式開放前需重新檢查 branch/ruleset 權限與 repo/Pages 公開資料邊界。

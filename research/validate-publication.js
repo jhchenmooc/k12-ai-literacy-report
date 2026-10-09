@@ -65,8 +65,9 @@ function validate(root){
  for(const issue of editions){
   if(!issue||typeof issue!=="object"){errors.push("invalid edition");continue}
   const p=issue.path,q=issue.claims_file;
-  if(typeof p!=="string"||!(/^(weekly|monthly)\/[a-zA-Z0-9_-]+\/index\.html$/.test(p))){errors.push("invalid edition path");continue}
+  if(typeof p!=="string"||!(/^(weekly|monthly|daily)\/[a-zA-Z0-9_-]+\/index\.html$/.test(p))){errors.push("invalid edition path");continue}
   if(encountered.has(p))errors.push("duplicate edition "+p);encountered.add(p);
+  if(p.startsWith("daily/"))errors.push("daily publication blocked until enforceable editorial approval is independently verified");
   if(LEGACY.has(p)){errors.push("legacy issue must not be reclassified "+p);continue}
   const htmlPath=path.join(root,p);
   if(!fs.existsSync(htmlPath)){errors.push("edition HTML missing "+p);continue}
@@ -87,7 +88,7 @@ function validate(root){
    if(c.claim_class==="high_impact"&&(!c.reviewer_id||!c.reviewer_evidence))errors.push(q+" "+c.claim_id+": reviewer record missing");
   }
  }
- const issues=[...scan(root,"weekly"),...scan(root,"monthly")];
+ const issues=[...scan(root,"weekly"),...scan(root,"monthly"),...scan(root,"daily")];
  for(const p of issues){if(LEGACY.has(p)){warnings.push("Legacy issue not certified by this gate: "+p);continue}if(!encountered.has(p))errors.push("Unregistered issue (blocked): "+p)}
  for(const p of encountered)if(!issues.includes(p))errors.push("Listed issue not found "+p);
  return {ok:errors.length===0,errors,warnings,checked_editions:encountered.size,legacy_editions:issues.filter(p=>LEGACY.has(p)).length};
