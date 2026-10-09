@@ -67,3 +67,8 @@ test("malformed AI literacy scope on a candidate fails closed",()=>{
  for(const bad of [{ai_lit_class:"D"},{ai_lit_dims:["X-1"]},{ai_lit_dims:"S-LRN"},{ai_lit_note:"a\nb"}])
   assert.throws(()=>merge(original(),{...batch,candidates:[{...batch.candidates[0],...bad}]}),/ai_lit/,JSON.stringify(bad));
 });
+test("candidates record the main audience, defaulting to unknown; invalid audience fails closed",()=>{
+ const w=merge(original(),{...batch,candidates:[{...batch.candidates[0],audience:"teacher_ed"},batch.candidates[2]]}).worksheet;
+ assert.deepEqual(w.items.slice(1).map(x=>x.audience),["teacher_ed","unknown"]);
+ assert.throws(()=>merge(original(),{...batch,candidates:[{...batch.candidates[0],audience:"pupils"}]}),/audience/);
+});
