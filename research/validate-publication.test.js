@@ -9,7 +9,7 @@ function setup(){
  fs.writeFileSync(path.join(dir,"publication","issues.json"),JSON.stringify({editions:[]}));
  return dir;
 }
-const claim={ai_lit_class:"A",ai_lit_dims:["T-PD"],ai_lit_note:"合成示例：教師 AI 素養建議",evidence_path:"publication/sources/fixture.txt",evidence_sha256:crypto.createHash("sha256").update(excerpt+"\n").digest("hex"),original_excerpt:excerpt,evidence_source_url:"https://example.org/official",interpretation_note:"合成公告僅表明提出非拘束性建議，不包含成效評估。",scope_limitation:"此合成示例不涉及全國法規之效力。",assertion_type:"direct_statement",translation_reviewed:true,claim_id:"C1",kind:"news_policy",claim_class:"descriptive",risk_tier:"medium",ai_crosscheck_status:"concordant",ai_crosscheck_passes:2,ai_crosscheck_record:"two isolated original-source cross-check records",claim_text:"合成案例：某機構公告",source_url:"https://example.org/official",source_locator:"公告第2段",checked_at:"2026-10-16",publication_date:"2026-10-10",source_type:"official",source_checked:true,scope_checked:true,outcome_checked:false,independent_review:false,conflict_unresolved:false,decision:"publish",level:"N-V2"};
+const claim={audience:"k12",ai_lit_class:"A",ai_lit_dims:["T-PD"],ai_lit_note:"合成示例：教師 AI 素養建議",evidence_path:"publication/sources/fixture.txt",evidence_sha256:crypto.createHash("sha256").update(excerpt+"\n").digest("hex"),original_excerpt:excerpt,evidence_source_url:"https://example.org/official",interpretation_note:"合成公告僅表明提出非拘束性建議，不包含成效評估。",scope_limitation:"此合成示例不涉及全國法規之效力。",assertion_type:"direct_statement",translation_reviewed:true,claim_id:"C1",kind:"news_policy",claim_class:"descriptive",risk_tier:"medium",ai_crosscheck_status:"concordant",ai_crosscheck_passes:2,ai_crosscheck_record:"two isolated original-source cross-check records",claim_text:"合成案例：某機構公告",source_url:"https://example.org/official",source_locator:"公告第2段",checked_at:"2026-10-16",publication_date:"2026-10-10",source_type:"official",source_checked:true,scope_checked:true,outcome_checked:false,independent_review:false,conflict_unresolved:false,decision:"publish",level:"N-V2"};
 function issue(d,claims){fs.writeFileSync(path.join(d,"publication","issues.json"),JSON.stringify({editions:[{path:"weekly/2026-10-09_10-15/index.html",claims_file:"publication/claims/a.json"}]}));fs.writeFileSync(path.join(d,"publication","claims","a.json"),JSON.stringify(claims))}
 test("unregistered new week fails closed",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));assert.equal(validate(d).ok,false)});
 test("registered synthetic descriptive claim passes structural checks",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);assert.equal(validate(d).ok,true)});
@@ -310,4 +310,33 @@ test("daily claim cannot relabel the scope of its cumulative candidate",t=>{
  const sheet={items:[{candidate_id:"W2026-10-09-A07",source_url:dailyLow.source_url,decision:"publish",source_checked:true,first_disclosed_on:"2026-10-10",ai_lit_class:"C"}]};
  fs.writeFileSync(path.join(dir,"2026-10-09_2026-10-15.json"),JSON.stringify(sheet));
  const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("AI literacy scope differs from cumulative candidate")));
+});
+
+function monthlyIssue(d,claims){
+ const dir=path.join(d,"monthly","2026-10");fs.mkdirSync(dir,{recursive:true});
+ fs.renameSync(path.join(d,"weekly","2026-10-09_10-15","index.html"),path.join(dir,"index.html"));
+ fs.writeFileSync(path.join(d,"publication","issues.json"),JSON.stringify({editions:[{path:"monthly/2026-10/index.html",claims_file:"publication/claims/m.json"}]}));
+ fs.writeFileSync(path.join(d,"publication","claims","m.json"),JSON.stringify(claims));
+}
+test("weekly edition blocks teacher-education, higher-education, adult, unknown or missing audience",t=>{
+ for(const audience of ["teacher_ed","higher_ed","adult","unknown",undefined,"students"]){
+  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[{...claim,audience}]);
+  const result=validate(d);assert.equal(result.ok,false,String(audience));assert.ok(result.errors.some(e=>e.includes("audience")),String(audience));
+ }
+});
+test("other education stakeholders may publish in weekly and daily editions",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[{...claim,audience:"other_stakeholders"}]);assert.equal(validate(d).ok,true);
+ const e=setup();t.after(()=>fs.rmSync(e,{recursive:true,force:true}));dailyFixture(e,{...dailyLow,audience:"other_stakeholders"});assert.equal(validate(e).ok,true);
+});
+test("daily edition blocks teacher-education audience",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,audience:"teacher_ed"});const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("not allowed in daily")))});
+test("monthly edition may carry teacher-education items but never an unknown audience",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));monthlyIssue(d,[{...claim,audience:"teacher_ed"}]);assert.equal(validate(d).ok,true);
+ const e=setup();t.after(()=>fs.rmSync(e,{recursive:true,force:true}));monthlyIssue(e,[{...claim,audience:"unknown"}]);assert.equal(validate(e).ok,false);
+});
+test("daily claim cannot relabel the audience of its cumulative candidate",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const dir=path.join(d,"research","drafts");fs.mkdirSync(dir,{recursive:true});
+ const sheet={items:[{candidate_id:"W2026-10-09-A07",source_url:dailyLow.source_url,decision:"publish",source_checked:true,first_disclosed_on:"2026-10-10",audience:"teacher_ed"}]};
+ fs.writeFileSync(path.join(dir,"2026-10-09_2026-10-15.json"),JSON.stringify(sheet));
+ const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("audience differs from cumulative candidate")));
 });

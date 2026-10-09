@@ -56,7 +56,7 @@
 ## 3. 怎麼記錄（不改資料結構）
 
 - 篩選報告（各 `p0-*` 資料夾的 JSON 與 MD）每筆加三欄：`ai_lit_class`（A／B／C／unknown）、`ai_lit_dims`（代碼陣列）、`ai_lit_note`（一句對應理由，指出對應的內涵）。
-- **出版 gate 已檢查（2026-10-09，管理者核准）**：新期別每則刊出主張須帶這三欄，且為 A 或 B、至少一個有效代碼、有理由，否則 `validate-publication.js` 擋下（實作在 `research/ai-literacy-scope.js`）。`ingest-candidates.js` 接受候選帶這三欄；未填記為 `unknown`，格式錯誤即拒絕匯入，候選仍一律 hold。欄位是自填，gate 只防漏判，不保證判得對。
+- **出版 gate 已檢查（2026-10-09，管理者核准）**：新期別每則刊出主張須帶這三欄，且為 A 或 B、至少一個有效代碼、有理由，否則 `validate-publication.js` 擋下（實作在 `research/ai-literacy-scope.js`）。`ingest-candidates.js` 接受候選帶這三欄；未填記為 `unknown`，格式錯誤即拒絕匯入，候選仍一律 hold。**對象也進 gate**：主張與候選另帶 `audience`（`k12`／`other_stakeholders`／`teacher_ed`／`higher_ed`／`adult`／`unknown`），每日短訊與週報只收 `k12`、`other_stakeholders`，月報另收師培、大學、成人（準則只排除週報與每日短訊），`unknown` 一律擋下。欄位是自填，gate 只防漏判，不保證判得對。
 - 知識庫三表目前**不新增欄位或關係類型**；若日後要在知識庫或網站以面向分類，須管理者同意後另案修改 schema 與驗證規則。
 - 進入刊物時，claim 文字不寫「本研究屬於 AI 素養某面向」這類本刊判斷；面向對應只用於選材與內部統計。
 

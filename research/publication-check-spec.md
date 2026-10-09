@@ -12,6 +12,7 @@
 - `source_checked`：人工確認確實取用原始文件（true/false）。
 - `scope_checked`：是否有檢查學段、地域、規範效力或研究對象（true/false）。這是**主張的適用範圍**，不是 AI 素養範圍。
 - `ai_lit_class`（A／B／C／unknown）、`ai_lit_dims`（教育部框架代碼陣列）、`ai_lit_note`（8–300 字，指出對應的內涵）：**AI 素養範圍**，依 [AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)。
+- `audience`：主要對象，`k12`（幼兒園至高中學生、在職教師）／`other_stakeholders`（家長、校長、教育行政主管）／`teacher_ed`（職前教師、師培）／`higher_ed`／`adult`／`unknown`；對象混合者依主要對象。
 - `outcome_checked`：效果及數值是否有原文方法／結果依據（true/false）。
 - `independent_review`：是否經**真人且不同核查者**核對高影響結論（true/false）。
 - `conflict_unresolved`、`contradiction_type`：是否仍有未解決的原文／日期／樣本／效果數據衝突。
@@ -24,7 +25,7 @@
 3. 一般事實摘要 `descriptive`：新聞最低 N-V2、研究最低 V2，且 `scope_checked=true`。
 4. 高影響主張 `high_impact`：新聞最低 N-V3、研究最低 V3，並要求 `scope_checked`、`outcome_checked`、`independent_review` 均為 true；但**現行 `risk_tier=high` 仍一律禁止經自動路徑發布**，上述條件必要但不構成放行例外。
 5. 任一未解決原始衝突、沒有明確來源或狀態 U/N-U，一律 hold。
-6. **AI 素養範圍（2026-10-09 起，`research/ai-literacy-scope.js`）**：已登錄的新期別（週報、月報、每日短訊；九月兩份舊刊不追溯）中每則 publish 主張，`ai_lit_class` 須為 A 或 B，`ai_lit_dims` 至少一個有效代碼且不重複，`ai_lit_note` 須有理由；C、unknown 或缺欄位即擋下。每日短訊若候選池已有同一來源且記有 `ai_lit_class`，兩者須一致。欄位由篩選者自填，程式只防漏判，不能保證判得對。
+6. **AI 素養範圍（2026-10-09 起，`research/ai-literacy-scope.js`）**：已登錄的新期別（週報、月報、每日短訊；九月兩份舊刊不追溯）中每則 publish 主張，`ai_lit_class` 須為 A 或 B，`ai_lit_dims` 至少一個有效代碼且不重複，`ai_lit_note` 須有理由；C、unknown 或缺欄位即擋下。每日短訊若候選池已有同一來源且記有 `ai_lit_class`，兩者須一致。`audience` 須為有效值且符合頻道：每日短訊與週報只收 `k12`、`other_stakeholders`；月報另可收 `teacher_ed`、`higher_ed`、`adult`；`unknown` 或缺欄位一律擋下；每日短訊的對象也須與候選池一致。欄位由篩選者自填，程式只防漏判，不能保證判得對。
 7. `decision=hold` 不代表來源不存在；可能只是本刊沒有足夠資料。違規的 `decision=publish` 應被程式拒絕。
 7. 同時包含政策及研究因果結論的主張，不能把兩種型態混成單筆已核准資料：須拆成各自 claim_id，分別通過門檻。
 
