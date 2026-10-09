@@ -275,3 +275,17 @@ test("an approved matching candidate permits the unchanged structured daily chec
  fs.writeFileSync(path.join(dir,"2026-10-09_2026-10-15.json"),JSON.stringify(sheet));
  assert.equal(validate(d).ok,true);
 });
+
+test("real A07 source URL remains blocked by existing held candidate despite valid synthetic source structure",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const w=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8"));
+ const a07=w.items.find(c=>c.candidate_id==="W2026-10-09-A07");
+ assert.ok(a07&&a07.decision==="hold");
+ const c={...dailyLow,source_url:a07.source_url,evidence_source_url:a07.source_url};
+ dailyFixture(d,c);
+ const dir=path.join(d,"research","drafts");fs.mkdirSync(dir,{recursive:true});
+ fs.writeFileSync(path.join(dir,"2026-10-09_2026-10-15.json"),JSON.stringify(w));
+ const result=validate(d);
+ assert.equal(result.ok,false);
+ assert.ok(result.errors.some(e=>e.includes("contradicts held/unverified cumulative candidate")));
+});
