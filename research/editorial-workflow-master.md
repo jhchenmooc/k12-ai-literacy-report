@@ -121,7 +121,7 @@ publication/issues.json
 
 [GitHub Actions](../.github/workflows/verify-and-deploy.yml) 的 `deploy` 以 `verify` 成功為前提；PR 階段跳過，主分支還需 `ENABLE_VERIFIED_PAGES_DEPLOY == 'true'`。此 SOP 不宣稱目前已設定強制分支保護。
 
-Pages 目前從 Repo 根目錄 `.` 上傳，Public Repo 的 `research/`、`publication/` 檔案也可能被公開讀取。PR 前檢查金鑰、個資、兒少資料、非公開審查意見、未授權全文、內部政策草案；不宜公開者不得提交。刪掉敏感檔仍可能留下 Git 歷史。
+Pages 現行部署從 `_public_site` 打包公開目錄，不再把研究工作目錄直接上傳；但 Public Repo 的 `research/`、`publication/` 檔案仍可由 GitHub 公開讀取。PR 前檢查金鑰、個資、兒少資料、非公開審查意見、未授權全文、內部政策草案；不宜公開者不得提交。刪掉敏感檔仍可能留下 Git 歷史。
 
 ## 11. 網站驗收、回饋與勘誤
 
@@ -135,7 +135,7 @@ Pages 目前從 Repo 根目錄 `.` 上傳，Public Repo 的 `research/`、`publi
 |---|---|
 | 搜尋池、SOP、建稿工具、主張結構與 CI | 已有；仍需人工或 AI 執行真實搜尋及核證 |
 | 每日全域自動搜尋與官方網站語意真偽審查 | **尚未自動化** |
-| 10/09–10/15 首期工作表 | 目前 7 則候選，均 `hold`；A07 官網 10/9 上架，但其論壇評論 10/7–10/8 已見公開報導，不符當週首發事件門檻、僅供背景 |
+| 10/09–10/15 首期工作表 | 目前 9 則候選，均 `hold`；A07 官網 10/9 上架，但其論壇評論 10/7–10/8 已見公開報導，不符當週首發事件門檻、僅供背景 |
 | `publication/issues.json` | `{"schema_version":1,"editions":[]}`；尚無新版正式登錄刊物 |
 | 九月舊刊 | 必要追溯修正已完成，仍非新版獨立認證 |
 | Pages | 已有成功部署紀錄；特定期別的實際網站驗收不可用單一 CI 綠燈替代 |
@@ -177,7 +177,7 @@ Pages 目前從 Repo 根目錄 `.` 上傳，Public Repo 的 `research/`、`publi
 
 ## 正式每日出版（PR C 前置安全護欄；尚未啟用）
 
-`validate-publication.js` 現在掃描 `daily/*/index.html`，未登錄的每日頁面會報錯；即使已登錄且 claims／HTML 結構合法，**每日期別一律 fail-closed**，直到另案完成真正可強制的授權與版本綁定核准，並實測未核准不得合併及部署。這不是已完成的正式 daily 功能，不能以 GitHub `verify` 成功或自填 `approved` 作為授權。現有 `main` ruleset 必要 Review 為 0、未啟用 stale review dismissal，不足以支持正式 daily 自動上線。網站首頁不連結尚不存在／未核准的每日期別；也不建立空白 daily 目錄。根目錄 Pages 打包仍含公有 repo 檔案，禁止提交私密審稿內容。正式開放前需重新檢查 branch/ruleset 權限與 repo/Pages 公開資料邊界。
+`validate-publication.js` 現在掃描 `daily/*/index.html`，未登錄的每日頁面會報錯；即使已登錄且 claims／HTML 結構合法，**每日期別曾一律 fail-closed（此為 v1.5 歷史決策，已被下文 v1.6 限定通道取代）**，直到另案完成真正可強制的授權與版本綁定核准，並實測未核准不得合併及部署。這不是已完成的正式 daily 功能，不能以 GitHub `verify` 成功或自填 `approved` 作為授權。現有 `main` ruleset 必要 Review 為 0、未啟用 stale review dismissal，不足以支持正式 daily 自動上線。網站首頁不連結尚不存在／未核准的每日期別；也不建立空白 daily 目錄。根目錄 Pages 打包仍含公有 repo 檔案，禁止提交私密審稿內容。正式開放前需重新檢查 branch/ruleset 權限與 repo/Pages 公開資料邊界。
 
 ## 無每日真人審稿之每日快訊：有限事實通道（2026-10-09）
 
@@ -200,3 +200,13 @@ Pages 目前從 Repo 根目錄 `.` 上傳，Public Repo 的 `research/`、`publi
 ## v1.6 第二輪多角度自檢補充（2026-10-09）
 
 新期別 daily claims 必須使用與期別日期一致的 `publication/claims/daily-YYYY-MM-DD.json`，而且 `kind` 必須對應來源分類（官方公告為 news_policy，學術研究為 research）；錯置分類採 fail-closed。每日待審包同時顯示週內 item.source_updates 與跨週更新，不得將之前的研究背景當成當天新訊。正式期別靜態 HTML 全頁禁止 script／iframe／object／embed 與 inline event handler，避免在 `main` 以外埋入動態主張或不安全程式碼。新增反例測試通過不能替代人工或 AI 真正讀原始文件的語意核對；仍沒有任何正式 daily 期別或每日自動搜尋排程。
+
+## v1.6 第三輪自檢修正：真實證據與候選安全（現行規範）
+
+- **每日書目也須有證據**：即使 `claim_class=bibliographic`、`risk_tier=low`，也須有 `publication/sources/` 原文短快照、雜湊、原文摘錄、來源 URL 對照、翻譯與限制等欄位；正式 daily 逐則驗證，週報與月報既有規則不變。自填檔案與 SHA **不證明**來源本身真實，需實際檢查官方或出版社原始頁面。
+- **日期與資料型態**：Daily 首次公開日須和已確認來源發表日一致，並且不得距日報期別超過 7 天；更舊內容即使最近發現或最近完成查核，都歸背景／週報材料，不能當每日新訊。若原始來源有修訂，應另以可追溯的**真實新版本事件**記錄，不能改舊版首發日期來湊新訊。
+- **靜態出版安全**：正式新期別除了原本禁止 script/inline handler，也不得藏可執行的 `javascript:`／`data:`／`vbscript:`／`file:` 或協定相對 URL；合法 HTTPS 連結可保留。
+- **候選池一致性**：執行 `ingest-candidates.js` 時使用排他檔鎖保護「讀取、合併、寫入」；若 `.lock` 尚存在表示已有程序或前次中斷，應先查明再人工移除，不強制忽略。跨週搜尋 `batch_id` 不得重用；官方來源網址若含帳號密碼一律拒絕。匯入不得重設既有 verified/ready 計數或主張狀態；計數仍由編輯流程確認，並非匯入程式自動背書。
+- **搜尋覆蓋誠實記錄**：`lookback_days_target=30` 只是計畫回查目標；`lookback_days` 沒有填報時為 `null`。即使填報也只是該批資料宣稱已查的天數，不能當作自動驗證全球搜尋範圍。既有歷史批次的舊值不追溯猜改。
+
+此修復只補安全／一致性，不自動搜尋、不自行提升 hold、不建立正式 daily 出刊或授權宣稱。
