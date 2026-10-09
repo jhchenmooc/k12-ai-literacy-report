@@ -40,6 +40,14 @@
 | KB-2025-0006 — [Toward Teacher-Centered AI Design: Exploring the Role of Pedagogical Values and Contextual Factors in K-12 Teachers' Perceptions of Responsible AI](https://repository.isls.org/handle/1/11843) | conference_paper | 未知 | bibliographic_checked |
 | KB-2025-0007 — [Utilizing LLMs to Support Teacher Understanding of AI Literacy](https://repository.isls.org/handle/1/11944) | conference_paper | 未知 | bibliographic_checked |
 | KB-2025-0009 — [From Teachers to Students: Evaluating Canvas City as a Path to AI Literacy](https://dl.acm.org/doi/10.1145/3724363.3729069) | conference_paper | 未知 | bibliographic_checked |
+| KB-2025-0014 — [From Lecture Hall to Homeroom: Co-Designing an AI Elective with Middle School CS Teachers](https://doi.org/10.1007/s40593-024-00449-3) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0015 — [Expanding Access To AI Education for Middle School Students and Bridging Gender Gaps with Constructionism-Social Emotional Learning Approach](https://doi.org/10.1007/s40593-025-00527-0) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0016 — [Fostering responsible AI literacy: A systematic review of K-12 AI ethics education](https://doi.org/10.1016/j.caeai.2025.100422) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0017 — [AI literacy development in middle school: Profiles and demographic predictors from an ABCE perspective](https://doi.org/10.1016/j.caeai.2025.100480) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0018 — [Why don't teachers teach AI ethics? Understanding teachers' beliefs and intentions in Chinese AI curriculum implementation through the theory of planned behaviour](https://doi.org/10.1016/j.caeai.2025.100518) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0019 — [Epistemic network analysis of in-service teachers’ competency to teach artificial intelligence for secondary education](https://doi.org/10.1016/j.caeai.2025.100520) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0020 — [Integrating generative artificial intelligence in K-12 education: Examining teachers’ preparedness, practices, and barriers](https://doi.org/10.1016/j.caeai.2025.100363) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0021 — [K-12 teachers’ ethical competencies for AI literacy: Insights from a systematic literature review](https://doi.org/10.1016/j.compedu.2025.105435) | journal_article | 未知 | discovered_unverified |
 
 ## 2026｜first_publication
 
@@ -55,6 +63,24 @@
 | KB-2026-0017 — [Using Design Projects to Understand Youths’ Experiences with AI](https://dl.acm.org/doi/10.1145/3816694) | journal_article | 2026-05-25 | bibliographic_checked |
 | KB-2026-0018 — [Leveraging Onto-Epistemic Heterogeneity for “Outward” Exploration: Cultivating Critical AI Awareness in the ELA Classroom](https://www.tandfonline.com/doi/full/10.1080/10508406.2026.2686084) | journal_article | 2026-08-04 | bibliographic_checked |
 | KB-2026-0019 — [AI literacy interventions in education: A meta-analysis of effects and moderators](https://doi.org/10.1016/j.edurev.2026.100813) | journal_article | 2026-07-02 | bibliographic_checked |
+
+## 2026｜issue_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2026-0020 — [Design of a science integrated secondary school AI literacy curriculum: A youth & AI expert guided design-based research approach](https://doi.org/10.1016/j.caeai.2026.100552) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0021 — [Potential risks of generative artificial intelligence integration into K-12 education: A scoping review](https://doi.org/10.1016/j.caeai.2026.100561) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0022 — [Pedagogy first, technology second: Cross-level relationships between teacher professional knowledge and student learning in artificial intelligence (AI) education](https://doi.org/10.1016/j.caeai.2026.100564) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0023 — [Enhancing AI literacy course satisfaction through empowerment in AI problem-solving and ethical awareness: Development and validation of an AI project-based learning scale](https://doi.org/10.1016/j.caeai.2026.100624) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0024 — [Fostering machine learning literacy in senior primary education: Evaluating a structured pedagogical course design](https://doi.org/10.1016/j.caeai.2026.100631) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0025 — [Longitudinal relationships between student ethical considerations, behavioral intention, and perceived knowledge in artificial intelligence education](https://doi.org/10.1016/j.compedu.2026.105614) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0026 — [Cheating or not cheating? Rethinking AI-giarism and academic integrity through secondary students’ ethical reasoning](https://doi.org/10.1016/j.compedu.2026.105698) | journal_article | 未知 | discovered_unverified |
+
+## 2027｜issue_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 未知 | discovered_unverified |
 
 ## unknown｜unknown
 
