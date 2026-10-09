@@ -1,0 +1,32 @@
+# 教育部《臺灣中小學教師與學生AI素養框架》入庫紀錄（2026-10-09）
+
+> **性質：人工搜尋輔助的書目紀錄，不是認證。** 管理者決定（2026-10-09）：依政策紀錄流程把本框架補入知識庫；首發日只採官方頁明載的日期，官方頁讀不到就記無法核對，不關閉 TLS 驗證。
+
+## 入庫
+
+- `KB-2026-0173`，類型 `framework`，題名「臺灣中小學教師與學生AI素養框架」。
+- 主要網址：教育部推動中小學數位學習精進方案入口網（pads.moe.edu.tw）的下載連結。
+- 關聯：`issued_by` O-TW-MOE、`applies_to_country` TW、`has_category` K1、K3。
+- **`discovered_unverified`**；首發日空白、`date_precision=unknown`、年份空白、`year_basis=unknown`。
+
+## 核對嘗試（2026-10-09 UTC）
+
+| 方式 | 結果 |
+|---|---|
+| curl（TLS 驗證開啟） | 失敗：`SSL certificate problem: unable to get local issuer certificate`。openssl 檢查顯示伺服器送出的憑證鏈缺少中繼憑證（TWCA SSL Certification Authority），屬伺服器設定問題 |
+| WebFetch 下載頁與首頁 | HTTP 503 |
+| 網頁搜尋（限 edu.tw 網域） | 只找到各校轉知公告與 2025 年較早的教育部新聞稿，沒有教育部官方頁明載的發布日期 |
+
+**未核對項目：** 以下四項都只見於管理者提供的 PDF 與搜尋摘要，沒有從官方頁讀到，所以不記入 `first_published_on`：
+
+- 標題
+- 發布機關
+- 封面日期（中華民國 115 年 3 月）
+- 核定日期與文號（115 年 4 月 17 日臺教資（一）字第 1152701134 號）
+
+範圍判斷準則 `research/ai-literacy-scope-criteria.md` 所引用的頁碼，則是依管理者提供的 PDF 核對。
+
+## 後續
+
+- 官方頁可讀時，再核對標題、機關、核定日期與文號；核對後才改 `bibliographic_checked`，並依官方頁明載日期填首發日。
+- 可行做法（須管理者同意）：從 TWCA 官方網站取得缺少的中繼憑證，補成完整憑證鏈後**仍開啟 TLS 驗證**讀取。這做法不是關閉驗證，但不在原指示範圍內，所以本次沒有做。

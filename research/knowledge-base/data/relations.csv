@@ -695,3 +695,7 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-0694","KB-2026-0171","studies_country","vocabulary","AE","https://doi.org/10.1007/s44163-026-01456-0","discovered_unverified"
 "KR-0695","KB-2026-0172","has_category","vocabulary","K4","https://doi.org/10.30935/cedtech/17983","discovered_unverified"
 "KR-0696","KB-2026-0172","studies_country","vocabulary","AE","https://doi.org/10.30935/cedtech/17983","discovered_unverified"
+"KR-0697","KB-2026-0173","has_category","vocabulary","K1","https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&old=upload","discovered_unverified"
+"KR-0698","KB-2026-0173","has_category","vocabulary","K3","https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&old=upload","discovered_unverified"
+"KR-0699","KB-2026-0173","issued_by","source","O-TW-MOE","https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&old=upload","discovered_unverified"
+"KR-0700","KB-2026-0173","applies_to_country","vocabulary","TW","https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&old=upload","discovered_unverified"
