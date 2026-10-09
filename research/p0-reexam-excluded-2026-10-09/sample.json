@@ -1,0 +1,594 @@
+[
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.3389/feduc.2025.1688092",
+  "title": "Student engagement with AI tools in learning: evidence from a large-scale Estonian survey",
+  "previous_reason": "題名初篩：AI 作為學習工具；學段未讀（命中 q4，可能含學校學生）",
+  "source_id": "J29"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-3.json",
+  "doi": "10.1109/icalt64023.2025.00084",
+  "title": "Obstacles or Opportunities: Teachers' Concerns About Adopting Generative AI in Learning and Teaching",
+  "previous_reason": "摘要明示 K-12、83 名香港教師；主題為採用 GAI 作教學工具之關注，非教 AI 能力",
+  "source_id": "C18"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.3389/feduc.2025.1554444",
+  "title": "The impact of ChatGPT on academic integrity in medical education: a developing nation perspective",
+  "previous_reason": "題名初篩：醫學教育",
+  "source_id": "J29"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-1.json",
+  "doi": "10.1007/s00146-026-03130-6",
+  "title": "Who speaks for culture? Generative AI, epistemic authority, and narrative negotiation in an intercultural classroom",
+  "previous_reason": "無摘要；學段未明且偏 GenAI 作為課堂工具，可人工複核",
+  "source_id": "J24"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.3389/feduc.2026.1935733",
+  "title": "Teachers’ use of generative artificial intelligence in K–12 education: a systematic review",
+  "previous_reason": "學段明示，但主題為教師以 GenAI 備課、評量等工具用途，依規則排除",
+  "source_id": "J29"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-1.json",
+  "doi": "10.1016/j.stueduc.2026.101656",
+  "title": "Artificial intelligence for online and hybrid teaching, learning, and assessment: Systematic review",
+  "previous_reason": "無摘要；題名顯示 AI 作為教學評量工具",
+  "source_id": "J23"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.1109/tlt.2026.3739765",
+  "title": "From Craftsmen to Curators: Navigating Cognitive Friction in Generative AI Filmmaking Education",
+  "previous_reason": "無摘要；題名顯示為影視教育中使用 GenAI 工具，學段未明，主題非 AI 素養",
+  "source_id": "J27"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.1057/s41599-026-08471-7",
+  "title": "How Teacher–Learner–AI collaboration empowers AI literacy of older adults: a case study of an older adult school in China",
+  "previous_reason": "題名初篩：高齡者／成人",
+  "source_id": "J33"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.1057/s41599-025-04846-4",
+  "title": "Improving students’ programming performance: an integrated mind mapping and generative AI chatbot learning approach",
+  "previous_reason": "題名初篩：AI 為學習工具",
+  "source_id": "J33"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.3389/feduc.2026.1783236",
+  "title": "Developing AI-enhanced workforce skills in EFL education: integrating TPACK-oriented models for professional success",
+  "previous_reason": "題名初篩：職場技能，非 K-12",
+  "source_id": "J29"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-pending2-2026-10-09/j2.json",
+  "doi": "10.1007/s44217-026-01611-w",
+  "title": "Understanding K-12 teachers’ adoption of generative AI through an integrated technology acceptance and perceived risk framework",
+  "previous_reason": "學段明示；依變項為使用意向，知覺風險僅為預測變項，主題為工具採用，依規則 exclude",
+  "source_id": "J32"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-3.json",
+  "doi": "10.1145/3710966",
+  "title": "Equality Engine: Fostering Critical Machine Learning Bias Literacy Through a Transformational Game",
+  "previous_reason": "摘要明示 post-secondary students；只有高教",
+  "source_id": "C16"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-3.json",
+  "doi": "10.1109/icalt64023.2025.00067",
+  "title": "SHIELD-ing Education: On-Device AI for Equitable, Offline Computing Education",
+  "previous_reason": "摘要明示 rural Indian school 學生；AI 為家教工具；有前後問卷（高風險）",
+  "source_id": "C18"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-3.json",
+  "doi": "10.1145/3805689.3812325",
+  "title": "Operationalizing Governance for Youth-Facing LLM Well-being Support: A Community-Based Participatory Study",
+  "previous_reason": "摘要為 youth 使用 LLM 作身心支持之治理（青少年、家長、照護者），非教育／學校情境，亦非學習關於 AI",
+  "source_id": "C15"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.1109/tlt.2026.3731978",
+  "title": "A TextGrad-Inspired Optimization Pipeline for AI-Assisted Generation of Lecture Notes and Problem Sets",
+  "previous_reason": "題名初篩：AI 工具，講義（lecture notes）偏高教",
+  "source_id": "J27"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-1.json",
+  "doi": "10.1007/s00146-026-03306-0",
+  "title": "Investigating human-AI partnership in early childhood STEM teaching: evidence from Vietnamese preschool teachers",
+  "previous_reason": "無摘要；題名為學前且 AI 作為教學夥伴，不在 K-12 範圍",
+  "source_id": "J24"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-pending2-2026-10-09/j1.json",
+  "doi": "10.1177/00224871251325058",
+  "title": "Social-Emotional Learning and Generative AI: A Critical Literature Review and Framework for Teacher Education",
+  "previous_reason": "主題為 GenAI 作為 SEL 增能工具之應用與風險（偏誤、隱私），屬工具使用面向，非教關於 AI；摘要亦未明示中小學學段",
+  "source_id": "J21"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.1057/s41599-026-09066-y",
+  "title": "From institutional support to pedagogical innovation: AI literacy as a mediator and boundary conditions in pre-service teacher education",
+  "previous_reason": "摘要讀畢：師資生，未明示教中小學 AI 素養，依規則排除",
+  "source_id": "J33"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-pending-2026-10-09/idc.json",
+  "doi": "10.1145/3773077.3812142",
+  "title": "The Transparency Trade-off in AI Governance Simulations: Balancing Adolescent Civic Learning and Trust",
+  "previous_reason": "學段明確（高中生），但 LLM 模擬是公民教育的教學工具，主要結果為公民學習與對系統的信任，非學習關於 AI；屬邊界案例。另有實驗組間學習成效比較（高風險，待 G2–G4）",
+  "source_id": null
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-pending2-2026-10-09/j2.json",
+  "doi": "10.3389/feduc.2025.1632990",
+  "title": "From tools to co-learners: entangled humanism and the co-evolution of intelligence in AI education",
+  "previous_reason": "Frontiers Opinion 類文章，無正式摘要；出版社頁 citation_abstract 欄為正文首段（OpenAlex 摘要欄同為正文）；正文首段以 AI 為學習工具／共同學習者，所引例證含高教與 MOOC，未明示 K–12，亦非學習「關於」AI；依正文首段判斷，管理者可複核",
+  "source_id": "J29"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.1109/tlt.2026.3713908",
+  "title": "Enhancing Collaborative Problem Solving Through AI Personal Assistant Interactions: Insights From Diverse Prior Knowledge Groups",
+  "previous_reason": "題名初篩：AI 工具",
+  "source_id": "J27"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-pending2-2026-10-09/j2.json",
+  "doi": "10.1007/s42330-025-00404-x",
+  "title": "From TV to AI: Evolving Challenges and Enduring Questions in STEM Education",
+  "previous_reason": "Springer 頁可讀（Commentary）；AI 作為教學科技之一，非學習關於 AI，亦未明示中小學學段",
+  "source_id": "J34"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.3389/feduc.2026.1871035",
+  "title": "Editorial: Digital learning innovations: trends emerging scenario, challenges and opportunities",
+  "previous_reason": "題名初篩：社論",
+  "source_id": "J29"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.3389/feduc.2026.1826863",
+  "title": "Editorial: Emerging technologies and digital innovations: recent research and practices in technology-enhanced learning environments",
+  "previous_reason": "題名初篩：專題社論",
+  "source_id": "J29"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-pending2-2026-10-09/j2.json",
+  "doi": "10.3389/feduc.2026.1870536",
+  "title": "Curriculum innovation through artificial intelligence and its influence on pupils’ independent learning in Azerbaijan",
+  "previous_reason": "學段明示；但 AI 為課程／學習工具，教師 AI 素養僅為調節變項，主題為工具融入成效，依規則 exclude；迴歸／中介係數不得作因果，高風險，待 G2–G4",
+  "source_id": "J29"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.3389/feduc.2026.1902381",
+  "title": "Associations of metacognition, self-directed learning ability, and AI literacy with academic achievement among university students predominantly enrolled in health-related majors: a cross-sectional study",
+  "previous_reason": "題名初篩：大學生",
+  "source_id": "J29"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-3.json",
+  "doi": "10.1145/3715275.3732175",
+  "title": "Difficult Lessons on Social Prediction from Wisconsin Public Schools",
+  "previous_reason": "摘要明示公立學校預測系統（EWS）；屬演算法治理但非 AI 素養、亦非生成式 AI",
+  "source_id": "C15"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.3389/feduc.2026.1754080",
+  "title": "The effects of gamified AI-supported digital learning environments on personalized learning and student engagement in school education: a systematic review and meta-analysis",
+  "previous_reason": "題名初篩：AI 為學習工具（成效統合）",
+  "source_id": "J29"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.1007/s44217-026-01911-1",
+  "title": "AI enhanced inquiry based learning for English language development in a dyslexic learner a mixed methods case study from Lebanon",
+  "previous_reason": "題名初篩：AI 為學習工具",
+  "source_id": "J32"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-1.json",
+  "doi": "10.1016/j.tate.2025.105253",
+  "title": "Teachers’ perceptions of value-sensitive AI in education: A case study of AI tutor",
+  "previous_reason": "無摘要；題名顯示 AI 家教工具",
+  "source_id": "J20"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-2026-10-09/group-b1-2.json",
+  "doi": "10.3389/feduc.2024.1504503",
+  "title": "Enhancing EFL writing skills for adult Deaf and hard of hearing individuals",
+  "previous_reason": "題名初篩：成人",
+  "source_id": "J29"
+ },
+ {
+  "batch": "B1",
+  "file": "p0-b1-pending-2026-10-09/aera.json",
+  "doi": "10.3102/2273564",
+  "title": "Punctuating AI in the Classroom: A Design Case for Empowering Students with AI Literacy (Poster 18)",
+  "previous_reason": "對象為研究所教育學生（高教），摘要未寫 K–12",
+  "source_id": null
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1016/j.caeo.2026.100330",
+  "title": "Harnessing artificial intelligence for preservice teachers’ development: A scoping review of applications, benefits, and challenges",
+  "previous_reason": "AI 為培育工具",
+  "source_id": "J41"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1080/10494820.2025.2554997",
+  "title": "AI competency as a catalyst for creativity and entrepreneurship: Insights from the Big Five personality traits",
+  "previous_reason": "高教",
+  "source_id": "J40"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1080/10494820.2026.2638486",
+  "title": "Exploring potential profiles and characteristics of AI literacy among teachers in Chinese higher vocational colleges",
+  "previous_reason": "對象為高等職業院校教師，屬高教",
+  "source_id": "J40"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1080/10494820.2026.2634138",
+  "title": "Aligning generative AI with hierarchical K-12 curricula: a RAG and multi-agent framework for EFL content generation",
+  "previous_reason": "AI 僅為內容生成工具",
+  "source_id": "J40"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.15388/infedu.2607.030",
+  "title": "Why and what do students want to learn about AI? Investigating motivations and learning interests among undergraduates across disciplines",
+  "previous_reason": "高教",
+  "source_id": "J42"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1080/10494820.2026.2685311",
+  "title": "Regulating AI in STEAM education: content validation of an ethical and pedagogical framework for transparent automated co-design",
+  "previous_reason": "主題為自動評量工具",
+  "source_id": "J40"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1080/10494820.2026.2679063",
+  "title": "Artificial intelligence for engaging neurodiverse learners in K-12 education: a systematic review",
+  "previous_reason": "AI 為學習工具",
+  "source_id": "J40"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1016/j.caeo.2026.100359",
+  "title": "Talking mathematics with AI: Understanding teachers’ motivation for utilizing chatbots",
+  "previous_reason": "工具採用",
+  "source_id": "J41"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1080/10494820.2025.2583196",
+  "title": "Development and validation of generative artificial intelligence attitude scale for EFL teachers (GenAIAS-EFL teachers form)",
+  "previous_reason": "對 GenAI 工具態度，未示學段",
+  "source_id": "J40"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1016/j.caeo.2026.100332",
+  "title": "Design and validation of a questionnaire on teachers' uses of generative artificial intelligence",
+  "previous_reason": "主題為教師以 GAI 作為工作工具",
+  "source_id": "J41"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1080/10494820.2026.2707308",
+  "title": "Between awareness and compliance: AI usage patterns and ethical orientation among EFL students",
+  "previous_reason": "高教",
+  "source_id": "J40"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1016/j.caeo.2025.100264",
+  "title": "“Teaching is basically feeling”: Unpacking EFL Teachers’ perceived emotions and regulatory strategies in AI-Powered L2 speaking and writing skills instruction",
+  "previous_reason": "AI 為教學工具",
+  "source_id": "J41"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1080/10494820.2025.2605487",
+  "title": "Bridging AI chatbot use and critical thinking: the mediating role of AI literacy",
+  "previous_reason": "高教",
+  "source_id": "J40"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1080/10494820.2026.2681829",
+  "title": "The formation of teacher-student relationship alienation in AI-assisted education: a triadic analytical framework based on technology-agent-environment",
+  "previous_reason": "AI 為教學工具，未示學段",
+  "source_id": "J40"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1080/10494820.2026.2641762",
+  "title": "Integrating generative artificial intelligence into secondary school programming education: model design and empirical evidence",
+  "previous_reason": "AI 為學習工具",
+  "source_id": "J40"
+ },
+ {
+  "batch": "BF-J40-42",
+  "file": "p0-backfill-j40-42-2026-10-09/bf.json",
+  "doi": "10.1080/10494820.2025.2611124",
+  "title": "Generative artificial intelligence in assessment: a missing discourse on integrity, originality, and validity",
+  "previous_reason": "高教",
+  "source_id": "J40"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-b.json",
+  "doi": "10.1007/s10648-026-10201-z",
+  "title": "Unveiling Patterns of Generative AI Integration That Enhance Learning: A Systematic Review of Empirical Studies",
+  "previous_reason": "題名初篩：AI 作學習、評量或研究工具，或跨學段後設分析，非 K-12 AI 素養／AI 教育／治理主題",
+  "source_id": "J38"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-b.json",
+  "doi": "10.1007/s10956-025-10260-x",
+  "title": "Chatbots in Science Education: A Scoping Review of Early Empirical Evidence",
+  "previous_reason": "題名初篩：AI 作學習、評量或研究工具，或跨學段後設分析，非 K-12 AI 素養／AI 教育／治理主題",
+  "source_id": "J37"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-c.json",
+  "doi": "10.1145/3801749.3801786",
+  "title": "Flemish Learning Objective: Pupils to Analyse the Impact of Digital Systems on Society through Computational Thinking",
+  "previous_reason": "排除：數位系統社會影響，未聚焦 AI",
+  "source_id": "C21"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-c.json",
+  "doi": "10.1007/978-3-032-29788-4_47",
+  "title": "Translating Game-Based AI Literacy Activities Across Age Groups: A Pilot Study in Undergraduate Computer Science",
+  "previous_reason": "題名排除：大學資工 AI 素養遊戲",
+  "source_id": "C01"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-b.json",
+  "doi": "10.1177/07356331251349620",
+  "title": "Effects of GenAI Interventions on Student Academic Performance: A Meta-Analysis",
+  "previous_reason": "題名初篩：AI 作學習、評量或研究工具，或跨學段後設分析，非 K-12 AI 素養／AI 教育／治理主題",
+  "source_id": "J36"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-b.json",
+  "doi": "10.1007/s10956-025-10289-y",
+  "title": "Can Large Language Models Develop High-Stakes Physics Exam Items? A Comprehensive Study of Cognitive and Psychometric Efficacy",
+  "previous_reason": "題名初篩：AI 作學習、評量或研究工具，或跨學段後設分析，非 K-12 AI 素養／AI 教育／治理主題",
+  "source_id": "J37"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-c.json",
+  "doi": "10.1145/3801749.3801782",
+  "title": "Proposing an AI-Assistant to Help Teachers Analyse and Modify Computational Problem Solving Activities",
+  "previous_reason": "排除：協助教師分析活動之 AI 助理（AI 為工具）",
+  "source_id": "C21"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-b.json",
+  "doi": "10.1007/s10648-026-10217-5",
+  "title": "Effects of AI Interventions Across Cognitive, Social-emotional, and Academic Outcomes: a Meta-analysis of Randomized Controlled Trials with Nonlinear Dose–response Evidence",
+  "previous_reason": "題名初篩：AI 作學習、評量或研究工具，或跨學段後設分析，非 K-12 AI 素養／AI 教育／治理主題",
+  "source_id": "J38"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-c.json",
+  "doi": "10.1609/aaai.v39i28.35168",
+  "title": "Artificial Intelligence for Future Presidents: Teaching AI Literacy to Everyone",
+  "previous_reason": "排除：面向所有人之大學 AI 素養",
+  "source_id": "C22"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-b.json",
+  "doi": "10.1007/s10956-026-10333-5",
+  "title": "Exploring the Capacity of Large Language Models to Simulate Students’ Scientific Thinking: Insights for Responsive Teaching",
+  "previous_reason": "AI 作教師備課工具，非 AI 教育",
+  "source_id": "J37"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-c.json",
+  "doi": "10.1609/aaai.v40i48.42117",
+  "title": "“Debate Guru”: Honing Public Speaking Skills Among Secondary School Students with AI Tutoring Systems",
+  "previous_reason": "排除：中學生 AI 辯論導師，AI 為學習工具",
+  "source_id": "C22"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-b.json",
+  "doi": "10.1007/s10648-026-10133-8",
+  "title": "Enhancing School Students’ Self-Regulated Learning through Generative AI Support: A Randomized Controlled Trial",
+  "previous_reason": "AI 只作 SRL 支援工具",
+  "source_id": "J38"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-b.json",
+  "doi": "10.1177/07356331241312363",
+  "title": "An AI Chatbot for EFL Writing: Students’ Usage Tendencies, Writing Performance, and Perceptions",
+  "previous_reason": "題名初篩：AI 作學習、評量或研究工具，或跨學段後設分析，非 K-12 AI 素養／AI 教育／治理主題",
+  "source_id": "J36"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-c.json",
+  "doi": "10.1007/978-3-032-29773-0_21",
+  "title": "Mapping AI Literacy in Medical Education: A Review of Concepts and Teaching Practices",
+  "previous_reason": "題名排除：醫學教育 AI 素養回顧",
+  "source_id": "C01"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-c.json",
+  "doi": "10.1609/aaai.v40i47.41515",
+  "title": "AI Unplugged: Embodied Interactions for AI Literacy in Higher Education",
+  "previous_reason": "排除：高教 AI 素養",
+  "source_id": "C22"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-b.json",
+  "doi": "10.1007/s10956-025-10286-1",
+  "title": "Use of AI-Powered Feedback Systems for Assessing both Practical and Theoretical Knowledge Base of General Chemistry II Students",
+  "previous_reason": "題名初篩：高教／專業訓練樣本",
+  "source_id": "J37"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-b.json",
+  "doi": "10.1177/07356331251329185",
+  "title": "Effects of Generative Artificial Intelligence on K-12 and Higher Education Students’ Learning Outcomes: A Meta-Analysis",
+  "previous_reason": "AI 只作學習工具；學段混合",
+  "source_id": "J36"
+ },
+ {
+  "batch": "TOOL-WAVE",
+  "file": "p0-tool-wave-2026-10-09/group-c.json",
+  "doi": "10.1145/3801749.3801761",
+  "title": "\"It's important, but...\" -- Secondary Computing Teachers’ Beliefs and Self-Efficacy about Teaching Social Issues",
+  "previous_reason": "排除：中學運算教師教社會議題之信念，摘要未聚焦 AI",
+  "source_id": "C21"
+ },
+ {
+  "batch": "PILOT",
+  "file": "p0-parallel-pilot-2026-10-09/group-c.json",
+  "doi": "10.1145/3641555.3705101",
+  "title": "Building Global AI Literacy: Preparing Teachers for the Future of AI-Driven Classrooms",
+  "previous_reason": null,
+  "source_id": null
+ },
+ {
+  "batch": "PILOT",
+  "file": "p0-parallel-pilot-2026-10-09/group-b.json",
+  "doi": "10.18608/jla.2026.9127",
+  "title": "Evaluating 21st-Century Competencies in Postsecondary Curricula with Large Language Models: Performance Benchmarking and Reasoning-Based Prompting Strategies",
+  "previous_reason": null,
+  "source_id": null
+ },
+ {
+  "batch": "PILOT",
+  "file": "p0-parallel-pilot-2026-10-09/group-a.json",
+  "doi": "10.1016/j.chb.2025.108779",
+  "title": "AI makes you smarter but none the wiser: The disconnect between performance and metacognition",
+  "previous_reason": null,
+  "source_id": null
+ },
+ {
+  "batch": "SCHOLAR-TRIAL",
+  "file": "p0-scholar-trial-2026-10-09/screen.json",
+  "doi": "10.6084/m9.figshare.34007498",
+  "title": null,
+  "previous_reason": "TUM；上一篇的附加檔（Figshare）",
+  "source_id": null
+ },
+ {
+  "batch": "SCHOLAR-TRIAL",
+  "file": "p0-scholar-trial-2026-10-09/screen.json",
+  "doi": "10.1007/s11409-026-09500-1",
+  "title": null,
+  "previous_reason": "TUM；中學生自主學習訓練",
+  "source_id": null
+ },
+ {
+  "batch": "SCHOLAR-TRIAL",
+  "file": "p0-scholar-trial-2026-10-09/screen.json",
+  "doi": "10.6084/m9.figshare.33472832",
+  "title": null,
+  "previous_reason": "Masaryk；上一篇的附加檔（Figshare）",
+  "source_id": null
+ },
+ {
+  "batch": "SCHOLAR-TRIAL",
+  "file": "p0-scholar-trial-2026-10-09/screen.json",
+  "doi": "10.1002/jcal.70296",
+  "title": null,
+  "previous_reason": "臺中教大／臺科大；六年級虛擬博物館",
+  "source_id": null
+ },
+ {
+  "batch": "SCHOLAR-TRIAL",
+  "file": "p0-scholar-trial-2026-10-09/screen.json",
+  "doi": "10.1038/s41598-026-70854-2",
+  "title": null,
+  "previous_reason": "UCL；全國高中入學考試學生成績預測（教育資料探勘）",
+  "source_id": null
+ }
+]
