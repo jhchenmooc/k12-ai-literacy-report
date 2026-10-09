@@ -119,7 +119,7 @@ function dailyFixture(d,c){
  fs.writeFileSync(path.join(d,"publication","claims","daily-2026-10-10.json"),JSON.stringify([c]));
  fs.writeFileSync(path.join(d,"publication","issues.json"),JSON.stringify({schema_version:1,editions:[{path:"daily/2026-10-10/index.html",claims_file:"publication/claims/daily-2026-10-10.json",publication_mode:"ai_low_risk_source_facts"}]}));
 }
-const dailyLow={...claim,claim_class:"bibliographic",risk_tier:"low",level:"N-V1",checked_at:"2026-10-10",source_title:"Synthetic school AI announcement",source_organization:"Example Institution",daily_fact_kind:"official_notice",first_disclosed_on:"2026-10-10",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。"};
+const dailyLow={...claim,claim_class:"bibliographic",risk_tier:"low",level:"N-V1",checked_at:"2026-10-10",source_title:"Synthetic school AI announcement",source_organization:"Example Institution",daily_fact_kind:"official_notice",source_document_type:"official_guidance",first_disclosed_on:"2026-10-10",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。"};
 test("opt-in daily fixed low-risk source record passes structural validation",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);assert.equal(validate(d).ok,true)});
 test("daily descriptive or high risk cannot bypass structural gate",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,claim_class:"descriptive",risk_tier:"medium"});assert.equal(validate(d).ok,false)});
 test("daily prose policy analysis cannot be disguised as a bibliographic claim",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,claim_text:"學校已全面強制導入AI課程"});assert.equal(validate(d).ok,false)});
@@ -133,7 +133,7 @@ test("attributed official summary with pinned excerpt and two passes passes stru
 });
 test("research abstracts are explicitly attributed to their authors",t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
- const c={...attributed,kind:"research",level:"V2",daily_fact_kind:"research_abstract_attributed_summary",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。作者摘要報告："+summaryText+"（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）"};
+ const c={...attributed,kind:"research",level:"V2",daily_fact_kind:"research_abstract_attributed_summary",source_document_type:"peer_reviewed_article",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。作者摘要報告："+summaryText+"（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）"};
  dailyFixture(d,c);assert.equal(validate(d).ok,true);
 });
 test("freeform claims and unsupported causal policy wording fail closed",t=>{
@@ -239,4 +239,15 @@ test("deployed-site historical monthly reports do not link to excluded research 
  const html=fs.readFileSync(path.join(__dirname,"..","monthly","2026-09","index.html"),"utf8");
  assert.doesNotMatch(html,/href=["']\.\.\/\.\.\/research\//);
  assert.match(html,/github\.com\/jhchenmooc\/k12-ai-literacy-report\/blob\/main\/research\/legacy-editions-review/);
+});
+
+test("daily policy must identify formal policy, guidance, draft, commentary or event",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ dailyFixture(d,{...dailyLow,source_document_type:undefined});
+ assert.ok(validate(d).errors.some(e=>e.includes("document type")));
+});
+test("daily research cannot be mislabelled as an official guidance document",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ dailyFixture(d,{...dailyLow,kind:"research",daily_fact_kind:"research_bibliography",source_document_type:"official_guidance",level:"V1"});
+ assert.ok(validate(d).errors.some(e=>e.includes("document type")));
 });
