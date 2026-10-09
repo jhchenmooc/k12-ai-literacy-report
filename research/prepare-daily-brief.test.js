@@ -30,3 +30,26 @@ test("old verified background never enters publication suggestion",()=>{
  source_publication_date:"2026-09-01",first_disclosed_on:"2026-09-01",verification_completed_on:"2026-10-09",source_checked:true,conflict_unresolved:false,decision:"publish"}];
  assert.equal(dailyBrief(w,"2026-10-10").suggested_for_publication.length,0);
 });
+
+test("daily recommendation never overrides a pending same-week source correction",()=>{
+ const w=makeDraft("2026-10-09").data;w.search_runs=[];
+ const item={candidate_id:"verified",source_url:"https://example.org/v",source_title:"Verified",source_publication_date:"2026-10-09",first_disclosed_on:"2026-10-09",verification_completed_on:"2026-10-09",source_checked:true,conflict_unresolved:false,decision:"publish",source_updates:[{review_required:true,discovered_on:"2026-10-09",source_url:"https://example.org/v",note:"Unresolved correction"}]};
+ w.items=[item];
+ assert.deepEqual(dailyBrief(w,"2026-10-10").suggested_for_publication,[]);
+ item.source_updates[0].review_required=false;
+ assert.equal(dailyBrief(w,"2026-10-10").suggested_for_publication.length,1);
+});
+test("unresolved duplicate discoveries block recommendation for associated candidate",()=>{
+ const w=makeDraft("2026-10-09").data;w.search_runs=[];
+ w.items=[{candidate_id:"c",source_url:"https://example.org/v",source_title:"V",source_publication_date:"2026-10-09",first_disclosed_on:"2026-10-09",verification_completed_on:"2026-10-09",source_checked:true,conflict_unresolved:false,decision:"publish"}];
+ w.unresolved_duplicate_discoveries=[{related_candidate_id:"c",searched_on:"2026-10-09",review_required:true}];
+ assert.equal(dailyBrief(w,"2026-10-10").suggested_for_publication.length,0);
+});
+test("cannot recommend a future-dated source in yesterday's daily pack",()=>{
+ const w=makeDraft("2026-10-09").data;w.search_runs=[];
+ w.items=[{candidate_id:"future",source_url:"https://example.org/v",source_publication_date:"2026-10-12",first_disclosed_on:"2026-10-12",verification_completed_on:"2026-10-09",source_checked:true,conflict_unresolved:false,decision:"publish"}];
+ assert.deepEqual(dailyBrief(w,"2026-10-10").suggested_for_publication,[]);
+});
+test("invalid date input fails with clear error",()=>{
+ assert.throws(()=>dailyBrief(makeDraft("2026-10-09").data,null),/invalid issue date/);
+});
