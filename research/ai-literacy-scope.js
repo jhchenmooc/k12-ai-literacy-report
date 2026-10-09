@@ -10,7 +10,7 @@ const DIMS=["T-ETH","T-BAS","T-TEA","T-PD","S-ETH","S-BAS","S-LRN","S-SYS"];
 // principals, education administrators.
 const AUDIENCES=["k12","other_stakeholders","teacher_ed","higher_ed","adult","unknown"];
 // Which audiences each channel may publish. teacher_ed/higher_ed/adult are kept out
-// of daily and weekly candidates; the criteria name no monthly exclusion.
+// of daily and weekly candidates; monthly may carry them (manager decision 2026-10-09).
 const CHANNEL_AUDIENCES={daily:["k12","other_stakeholders"],weekly:["k12","other_stakeholders"],monthly:["k12","other_stakeholders","teacher_ed","higher_ed","adult"]};
 function dimsErrors(dims){
  if(!Array.isArray(dims))return ["ai_lit_dims must be an array"];
