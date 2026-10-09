@@ -116,8 +116,8 @@ function dailyFixture(d,c){
  const old=path.join(d,"weekly","2026-10-09_10-15","index.html");
  if(fs.existsSync(old))fs.rmSync(old);
  fs.writeFileSync(path.join(dailyDir,"index.html"),'<html><main><p data-claim-id="C1">'+c.claim_text+'</p></main></html>');
- fs.writeFileSync(path.join(d,"publication","claims","daily.json"),JSON.stringify([c]));
- fs.writeFileSync(path.join(d,"publication","issues.json"),JSON.stringify({schema_version:1,editions:[{path:"daily/2026-10-10/index.html",claims_file:"publication/claims/daily.json",publication_mode:"ai_low_risk_source_facts"}]}));
+ fs.writeFileSync(path.join(d,"publication","claims","daily-2026-10-10.json"),JSON.stringify([c]));
+ fs.writeFileSync(path.join(d,"publication","issues.json"),JSON.stringify({schema_version:1,editions:[{path:"daily/2026-10-10/index.html",claims_file:"publication/claims/daily-2026-10-10.json",publication_mode:"ai_low_risk_source_facts"}]}));
 }
 const dailyLow={...claim,claim_class:"bibliographic",risk_tier:"low",level:"N-V1",checked_at:"2026-10-10",source_title:"Synthetic school AI announcement",source_organization:"Example Institution",daily_fact_kind:"official_notice",first_disclosed_on:"2026-10-10",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。"};
 test("opt-in daily fixed low-risk source record passes structural validation",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);assert.equal(validate(d).ok,true)});
@@ -149,3 +149,17 @@ test("no silent expansion to weekly and monthly publishing policy",t=>{
 test("daily rejects missing first disclosure",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,first_disclosed_on:null});assert.equal(validate(d).ok,false)});
 test("daily summary rejects missing source-aligned spans",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...attributed,summary_evidence_spans:[]});assert.equal(validate(d).ok,false)});
 test("daily summary rejects raw newline",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...attributed,attributed_summary:summaryText+"\\nExtra"});assert.equal(validate(d).ok,false)});
+
+test("daily rejects cross-category source misrepresentation",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ dailyFixture(d,{...dailyLow,kind:"research",level:"V1",daily_fact_kind:"official_notice"});
+ assert.equal(validate(d).ok,false);
+});
+test("daily rejects claims path borrowed from unrelated issue",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const p=path.join(d,"publication","issues.json"),m=JSON.parse(fs.readFileSync(p,"utf8"));
+ m.editions[0].claims_file="publication/claims/other.json";
+ fs.writeFileSync(path.join(d,"publication","claims","other.json"),JSON.stringify([dailyLow]));
+ fs.writeFileSync(p,JSON.stringify(m));
+ assert.equal(validate(d).ok,false);
+});
