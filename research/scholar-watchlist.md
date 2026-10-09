@@ -160,7 +160,7 @@
 | V14 | Diane Burke | Keuka College/Emerita Professor | #20 2022〈Affordances and challenges of artificial intelligence i…〉J08，被引 201 | A5045059551；ORCID 0000-0002-8214-0386。**已確認** |
 | V15 | Qi Xia | Zhejiang University/Assistant Professor | #21 2023〈The mediating effects of needs satisfaction on the rela…〉J04，被引 198 | A5101579222；ORCID 0000-0003-0538-7665。**已確認** |
 | V16 | Kui Xie | University of Missouri–Columbia/Dean & Joanne H. Hook Dean's Chair in Educational Renewal | #21 2023〈The mediating effects of needs satisfaction on the rela…〉J04，被引 198 | A5043309132；ORCID 0000-0002-7173-4859。**已確認** |
-| V17 | Yin Ping Yang | Education University of Hong Kong/Research Assistant Professor | #22 2024〈A Human-Centered Learning and Teaching Framework Using …〉J27，被引 195 | A5061103584；ORCID 0000-0002-9966-248X。**已確認** |
+| V17 | Yin Ping Yang | Education University of Hong Kong/Research Assistant Professor | #22 2024〈A Human-Centered Learning and Teaching Framework Using …〉J27，被引 195 | A5061103584；ORCID 0000-0002-9966-248X。**已確認**。**ORCID 查詢混入大量同名者的電腦圖學論文，依作者檢索改用作者 ID A5061103584** |
 | V18 | Ying Xu | Harvard University/Assistant Professor | #23 2020〈Same benefits, different communication patterns: Compar…〉J01，被引 177 | A5027471083；ORCID 0000-0003-2079-2394。**已確認** |
 | V19 | Mark Warschauer | University of California, Irvine/Professor | #23 2020〈Same benefits, different communication patterns: Compar…〉J01，被引 177 | A5074661038；ORCID 0000-0002-6817-4416。**已確認** |
 | V20 | Xiaoqing Gu | Changzhou University | #24 2024〈Exploring the effects of AI literacy in teacher learnin…〉J33，被引 168 | A5090932123；ORCID 0000-0001-9942-0651。**已確認** |
@@ -182,7 +182,43 @@
 | H24 | Omaima Almatrafi | 0 | 14 | 5 | 2025-04 以生成式 AI 分類課程學習成果 | 保留 |
 | H33 | Ahlam Mohammed Al-Abdullatif | 0 | 19 | 6 | 2025-06 K-12 AI 素養能力稽核 | 保留 |
 
-結果：4 人近五年都有相關論文，無人移除。2026 年查無作品可能是 OpenAlex 收錄延遲。V 級（第 3c 節）新增者尚未做 2026 年作品檢查。
+結果：4 人近五年都有相關論文，無人移除。2026 年查無作品可能是 OpenAlex 收錄延遲。
+
+**V 級 26 人的 2026 年作品檢查（2026-10-09）**：查詢紀錄見 [v-2026-runs.json](p0-venue-highcite-2026-10-09/v-2026-runs.json)。分類為關鍵字粗分，未逐篇判讀。
+
+| ID | 學者 | 2026 作品（ORCID 查詢） | 作者 ID 查詢 | 教育相關 | AI＋教育 | K-12＋AI | 已在知識庫 |
+|---|---|---|---|---|---|---|---|
+| V01 | Irene‐Angelica Chounta | 13 | 13 | 8 | 4 | 0 | 0 |
+| V02 | Margus Pedaste | 8 | 8 | 6 | 1 | 1 | 0 |
+| V03 | Weipeng Yang | 16 | 16 | 14 | 4 | 4 | 0 |
+| V04 | Musa Adekunle Ayanwale | 21 | 19 | 16 | 13 | 1 | 0 |
+| V05 | Solomon Sunday Oyelere | 19 | 18 | 15 | 13 | 0 | 0 |
+| V06 | Ching Sing Chai | 16 | 12 | 16 | 10 | 6 | 5 |
+| V07 | 林鴻銘（Hung-Ming Lin） | 0 | 0 | 0 | 0 | 0 | 0 |
+| V08 | 戴孜伃（Tzu-Yu Tai） | 3 | 3 | 2 | 1 | 1 | 0 |
+| V09 | Teemu Valtonen | 14 | 14 | 14 | 7 | 2 | 0 |
+| V10 | Marcelo Milrad | 4 | 4 | 3 | 3 | 2 | 0 |
+| V11 | Randi Williams | 1 | 1 | 1 | 1 | 1 | 0 |
+| V12 | Areej ElSayary | 22 | 22 | 22 | 15 | 6 | 0 |
+| V13 | Helen Crompton | 12 | 12 | 12 | 8 | 2 | 0 |
+| V14 | Diane Burke | 7 | 7 | 7 | 3 | 1 | 0 |
+| V15 | Qi Xia | 12 | 12 | 12 | 10 | 3 | 0 |
+| V16 | Kui Xie | 6 | 6 | 6 | 2 | 1 | 0 |
+| V17 | Yin Ping Yang | 28（多數為同名者作品） | 5 | 8 | 5 | 0 | 0 |
+| V18 | Ying Xu | 6 | 6 | 4 | 3 | 2 | 0 |
+| V19 | Mark Warschauer | 19 | 19 | 13 | 13 | 5 | 0 |
+| V20 | Xiaoqing Gu | 3 | 2 | 1 | 0 | 0 | 0 |
+| V21 | Xiaoming Zhaı | 50 | 50 | 38 | 29 | 4 | 0 |
+| V22 | Murod Ismailov | 9 | 9 | 8 | 1 | 0 | 0 |
+| V23 | 吳智鴻（Chih-Hung Wu） | 2 | 2 | 2 | 1 | 0 | 0 |
+| V24 | Pavlo Antonenko | 4 | 3 | 4 | 3 | 1 | 0 |
+| V25 | Brian Abramowitz | 1 | 1 | 1 | 1 | 1 | 0 |
+| V26 | James C. Lester | 31 | 21 | 28 | 20 | 7 | 0 |
+
+- 25 人 2026 年有作品；不重複作品約 303 篇，K-12＋AI 約 48 篇（依題名去重），其中 43 篇不在知識庫。
+- **V07 林鴻銘** 2026 年查無作品；近五年 10 篇，AI＋教育 2 篇（最近 2024-02〈Teachable Q&A Agent: The Effect of Chatbot Training by Students on Reading Interest…〉），依規則**保留**。另有材料工程等非教育論文，檢索須加教育主題詞。
+- **V17 Yin Ping Yang**：ORCID 查詢得 28 篇，但其中多數為電腦圖學、物理模擬論文，是同名者的作品被連到此 ORCID；作者 ID A5061103584 查詢只有 5 篇，皆為教育研究。**此人改用作者 ID 檢索，不用 ORCID。**
+- V04、V05、V06、V24、V26 的 ORCID 命中比作者 ID 多 1–10 篇，屬 OpenAlex 作者檔案分裂；照清單規則以 ORCID 為主、逐篇看單位。
 
 ## 4. C 政策與實務窗口（不依作者檢索）
 
