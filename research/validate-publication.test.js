@@ -258,3 +258,20 @@ test("daily original source link outside its claim does not count",t=>{
  fs.writeFileSync(file,'<html><nav><a href="'+dailyLow.source_url+'">Reference</a></nav><main><p data-claim-id="C1">'+dailyLow.claim_text+'</p></main></html>');
  const res=validate(d);assert.equal(res.ok,false);assert.ok(res.errors.some(e=>e.includes("original source URL")));
 });
+
+test("a new daily issue cannot override a held matching candidate in the shared weekly pool",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const dir=path.join(d,"research","drafts");fs.mkdirSync(dir,{recursive:true});
+ const sheet={items:[{candidate_id:"W2026-10-09-A07",source_url:dailyLow.source_url,decision:"hold",source_checked:false,first_disclosed_on:null}]};
+ fs.writeFileSync(path.join(dir,"2026-10-09_2026-10-15.json"),JSON.stringify(sheet));
+ const result=validate(d);
+ assert.equal(result.ok,false);
+ assert.ok(result.errors.some(e=>e.includes("contradicts held/unverified cumulative candidate")));
+});
+test("an approved matching candidate permits the unchanged structured daily checks",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const dir=path.join(d,"research","drafts");fs.mkdirSync(dir,{recursive:true});
+ const sheet={items:[{candidate_id:"W2026-10-09-A07",source_url:dailyLow.source_url,decision:"publish",source_checked:true,first_disclosed_on:"2026-10-10"}]};
+ fs.writeFileSync(path.join(dir,"2026-10-09_2026-10-15.json"),JSON.stringify(sheet));
+ assert.equal(validate(d).ok,true);
+});
