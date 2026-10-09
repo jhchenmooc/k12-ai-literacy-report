@@ -1,0 +1,1019 @@
+{
+ "started_utc": "2026-10-09T18:38:28Z",
+ "ended_utc": "2026-10-09T18:41:52Z",
+ "requests": {
+  "total_http_calls": 82,
+  "program_pages_aera26": 25,
+  "session_pages_aera26": 25,
+  "crossref_works": 28,
+  "aera26_home_and_probe": 4,
+  "aera25_requests": 0,
+  "log": [
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+Load+Focus&program_focus=main (earlier, 2 calls)",
+    "status": "302->200",
+    "utc": "2026-10-09T18:38:28Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279866 (earlier, structure probe, 2 calls)",
+    "status": "302/200",
+    "utc": "2026-10-09T18:38:28Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2279866",
+    "status": "200",
+    "utc": "2026-10-09T18:38:55Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279866",
+    "status": "200",
+    "utc": "2026-10-09T18:38:56Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2309939",
+    "status": "200",
+    "utc": "2026-10-09T18:38:58Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2287154",
+    "status": "200",
+    "utc": "2026-10-09T18:39:01Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2287154",
+    "status": "200",
+    "utc": "2026-10-09T18:39:01Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2305096",
+    "status": "200",
+    "utc": "2026-10-09T18:39:03Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2194735",
+    "status": "200",
+    "utc": "2026-10-09T18:39:06Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2186733",
+    "status": "200",
+    "utc": "2026-10-09T18:39:06Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2273521",
+    "status": "200",
+    "utc": "2026-10-09T18:39:06Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273521",
+    "status": "200",
+    "utc": "2026-10-09T18:39:06Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2273517",
+    "status": "200",
+    "utc": "2026-10-09T18:39:08Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2276758",
+    "status": "200",
+    "utc": "2026-10-09T18:39:11Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276758",
+    "status": "200",
+    "utc": "2026-10-09T18:39:11Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2304766",
+    "status": "200",
+    "utc": "2026-10-09T18:39:14Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2282134",
+    "status": "200",
+    "utc": "2026-10-09T18:39:16Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2282134",
+    "status": "200",
+    "utc": "2026-10-09T18:39:17Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2282132",
+    "status": "200",
+    "utc": "2026-10-09T18:39:19Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2283563",
+    "status": "200",
+    "utc": "2026-10-09T18:39:21Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2283563",
+    "status": "200",
+    "utc": "2026-10-09T18:39:22Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2304852",
+    "status": "200",
+    "utc": "2026-10-09T18:39:24Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2277136",
+    "status": "200",
+    "utc": "2026-10-09T18:39:26Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2277136",
+    "status": "200",
+    "utc": "2026-10-09T18:39:27Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2304840",
+    "status": "200",
+    "utc": "2026-10-09T18:39:29Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2275753",
+    "status": "200",
+    "utc": "2026-10-09T18:39:31Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2275753",
+    "status": "200",
+    "utc": "2026-10-09T18:39:31Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2305686",
+    "status": "200",
+    "utc": "2026-10-09T18:39:34Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2283932",
+    "status": "200",
+    "utc": "2026-10-09T18:39:36Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2283932",
+    "status": "200",
+    "utc": "2026-10-09T18:39:37Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2283929",
+    "status": "200",
+    "utc": "2026-10-09T18:39:39Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2279151",
+    "status": "200",
+    "utc": "2026-10-09T18:39:41Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279151",
+    "status": "200",
+    "utc": "2026-10-09T18:39:42Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2313161",
+    "status": "200",
+    "utc": "2026-10-09T18:39:44Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2186946",
+    "status": "200",
+    "utc": "2026-10-09T18:39:46Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2276835",
+    "status": "200",
+    "utc": "2026-10-09T18:39:46Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276835",
+    "status": "200",
+    "utc": "2026-10-09T18:39:46Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2305219",
+    "status": "200",
+    "utc": "2026-10-09T18:39:49Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2280516",
+    "status": "200",
+    "utc": "2026-10-09T18:39:51Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2280516",
+    "status": "200",
+    "utc": "2026-10-09T18:39:51Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2308205",
+    "status": "200",
+    "utc": "2026-10-09T18:39:53Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2280689",
+    "status": "200",
+    "utc": "2026-10-09T18:39:56Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2280689",
+    "status": "200",
+    "utc": "2026-10-09T18:39:56Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2303621",
+    "status": "200",
+    "utc": "2026-10-09T18:39:58Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2288539",
+    "status": "200",
+    "utc": "2026-10-09T18:40:00Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288539",
+    "status": "200",
+    "utc": "2026-10-09T18:40:00Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2309967",
+    "status": "200",
+    "utc": "2026-10-09T18:40:02Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2282137",
+    "status": "200",
+    "utc": "2026-10-09T18:40:05Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2282137",
+    "status": "200",
+    "utc": "2026-10-09T18:40:05Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2282132",
+    "status": "200",
+    "utc": "2026-10-09T18:40:08Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2276914",
+    "status": "200",
+    "utc": "2026-10-09T18:40:10Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276914",
+    "status": "200",
+    "utc": "2026-10-09T18:40:10Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2310506",
+    "status": "200",
+    "utc": "2026-10-09T18:40:12Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2277717",
+    "status": "200",
+    "utc": "2026-10-09T18:40:14Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2277717",
+    "status": "200",
+    "utc": "2026-10-09T18:40:14Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2305352",
+    "status": "200",
+    "utc": "2026-10-09T18:40:17Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2353011",
+    "status": "200",
+    "utc": "2026-10-09T18:40:19Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2353011",
+    "status": "200",
+    "utc": "2026-10-09T18:40:19Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2352965",
+    "status": "200",
+    "utc": "2026-10-09T18:40:21Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2279932",
+    "status": "200",
+    "utc": "2026-10-09T18:40:23Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279932",
+    "status": "200",
+    "utc": "2026-10-09T18:40:24Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2305463",
+    "status": "200",
+    "utc": "2026-10-09T18:40:26Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2288639",
+    "status": "200",
+    "utc": "2026-10-09T18:40:28Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288639",
+    "status": "200",
+    "utc": "2026-10-09T18:40:28Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2305017",
+    "status": "200",
+    "utc": "2026-10-09T18:40:31Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2289481",
+    "status": "200",
+    "utc": "2026-10-09T18:40:33Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2289481",
+    "status": "200",
+    "utc": "2026-10-09T18:40:33Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2303619",
+    "status": "200",
+    "utc": "2026-10-09T18:40:35Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2279837",
+    "status": "200",
+    "utc": "2026-10-09T18:40:37Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279837",
+    "status": "200",
+    "utc": "2026-10-09T18:40:38Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2327231",
+    "status": "200",
+    "utc": "2026-10-09T18:40:40Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2281139",
+    "status": "200",
+    "utc": "2026-10-09T18:40:42Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2281139",
+    "status": "200",
+    "utc": "2026-10-09T18:40:43Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2310688",
+    "status": "200",
+    "utc": "2026-10-09T18:40:45Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2273778",
+    "status": "200",
+    "utc": "2026-10-09T18:40:47Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273778",
+    "status": "200",
+    "utc": "2026-10-09T18:40:48Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2309992",
+    "status": "200",
+    "utc": "2026-10-09T18:40:50Z"
+   },
+   {
+    "url": "https://api.crossref.org/works/10.3102/2288275",
+    "status": "200",
+    "utc": "2026-10-09T18:40:52Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288275",
+    "status": "200",
+    "utc": "2026-10-09T18:40:52Z"
+   },
+   {
+    "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Session&selected_session_id=2305355",
+    "status": "200",
+    "utc": "2026-10-09T18:40:54Z"
+   }
+  ]
+ },
+ "items": [
+  {
+   "record_id": "KB-2026-0076",
+   "doi": "10.3102/2279866",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 6 位、Crossref 6 位；人數與姓氏順序全同）；另 3 位作者議程頁有中間名或中間名縮寫、Crossref 省略，屬詳略差異非不一致",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2279866 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2279866）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279866",
+   "session_type": "Paper Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:38:56Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0077",
+   "doi": "10.3102/2287154",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 1 位、Crossref 1 位；人數與姓氏順序全同）；另 1 位作者議程頁有中間名或中間名縮寫、Crossref 省略，屬詳略差異非不一致",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2287154 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2287154）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2287154",
+   "session_type": "Roundtable Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:01Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2025-0040",
+   "doi": "10.3102/2194735",
+   "g2g4": null,
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable（議程頁未讀；Crossref 題名與紀錄一致）",
+    "authors": "unverifiable（議程頁未讀；Crossref 列 1 位作者）",
+    "venue": "unverifiable（議程頁未讀；Crossref container 為 Proceedings of the 2025 AERA Annual Meeting、event 2025 AERA Annual Meeting）",
+    "issue_year": "unverifiable（議程頁未讀；Crossref issued 2025 = year_value）",
+    "first_online": null,
+    "doi_url": "Crossref DOI 存在、type proceedings-article；primary_url = https://doi.org/<DOI> 相符；resource 指向 research.allacademic.com（只轉首頁）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera25/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2194735",
+   "session_type": null,
+   "differences": [],
+   "http_status": null,
+   "read_utc": null,
+   "title_tag": null,
+   "unverifiable_reason": "AERA 2025（aera25）線上議程 View Paper 頁回驗證頁（\"please complete the following\"；前輪 research/p0-b1-pending-2026-10-09 於 2026-10-09T18:06:03Z 試讀 2184589 得 HTTP 200 驗證頁）；依指示不繞過，本輪未再請求 aera25 頁。Crossref 單獨相符不算核對完成。"
+  },
+  {
+   "record_id": "KB-2025-0041",
+   "doi": "10.3102/2186733",
+   "g2g4": null,
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable（議程頁未讀；Crossref 題名與紀錄一致）",
+    "authors": "unverifiable（議程頁未讀；Crossref 列 1 位作者）",
+    "venue": "unverifiable（議程頁未讀；Crossref container 為 Proceedings of the 2025 AERA Annual Meeting、event 2025 AERA Annual Meeting）",
+    "issue_year": "unverifiable（議程頁未讀；Crossref issued 2025 = year_value）",
+    "first_online": null,
+    "doi_url": "Crossref DOI 存在、type proceedings-article；primary_url = https://doi.org/<DOI> 相符；resource 指向 research.allacademic.com（只轉首頁）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera25/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2186733",
+   "session_type": null,
+   "differences": [],
+   "http_status": null,
+   "read_utc": null,
+   "title_tag": "Poster 17",
+   "unverifiable_reason": "AERA 2025（aera25）線上議程 View Paper 頁回驗證頁（\"please complete the following\"；前輪 research/p0-b1-pending-2026-10-09 於 2026-10-09T18:06:03Z 試讀 2184589 得 HTTP 200 驗證頁）；依指示不繞過，本輪未再請求 aera25 頁。Crossref 單獨相符不算核對完成。"
+  },
+  {
+   "record_id": "KB-2026-0078",
+   "doi": "10.3102/2273521",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 1 位、Crossref 1 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2273521 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2273521）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273521",
+   "session_type": "Symposium",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:06Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0079",
+   "doi": "10.3102/2276758",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符；含場次標記「(Poster 22)」，紀錄、Crossref、議程頁三方皆帶此標記）",
+    "authors": "一致（議程頁 4 位、Crossref 4 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2276758 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2276758）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276758",
+   "session_type": "Poster Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:11Z",
+   "title_tag": "Poster 22",
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0080",
+   "doi": "10.3102/2282134",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符；含場次標記「(Poster 2)」，紀錄、Crossref、議程頁三方皆帶此標記）",
+    "authors": "一致（議程頁 8 位、Crossref 8 位；人數與姓氏順序全同）；另 2 位作者議程頁有中間名或中間名縮寫、Crossref 省略，屬詳略差異非不一致",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2282134 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2282134）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2282134",
+   "session_type": "Structured Poster Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:17Z",
+   "title_tag": "Poster 2",
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0081",
+   "doi": "10.3102/2283563",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 2 位、Crossref 2 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2283563 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2283563）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2283563",
+   "session_type": "Paper Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:22Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0082",
+   "doi": "10.3102/2277136",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 2 位、Crossref 2 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2277136 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2277136）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2277136",
+   "session_type": "Roundtable Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:27Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0083",
+   "doi": "10.3102/2275753",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 2 位、Crossref 2 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2275753 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2275753）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2275753",
+   "session_type": "Roundtable Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:31Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0084",
+   "doi": "10.3102/2283932",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符；含場次標記「(Poster 3)」，紀錄、Crossref、議程頁三方皆帶此標記）",
+    "authors": "一致（議程頁 8 位、Crossref 8 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2283932 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2283932）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2283932",
+   "session_type": "Structured Poster Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:37Z",
+   "title_tag": "Poster 3",
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0085",
+   "doi": "10.3102/2279151",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 2 位、Crossref 2 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2279151 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2279151）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279151",
+   "session_type": "Roundtable Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:42Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2025-0042",
+   "doi": "10.3102/2186946",
+   "g2g4": null,
+   "verdict": "unverifiable",
+   "checks": {
+    "title": "unverifiable（議程頁未讀；Crossref 題名與紀錄一致）",
+    "authors": "unverifiable（議程頁未讀；Crossref 列 1 位作者）",
+    "venue": "unverifiable（議程頁未讀；Crossref container 為 Proceedings of the 2025 AERA Annual Meeting、event 2025 AERA Annual Meeting）",
+    "issue_year": "unverifiable（議程頁未讀；Crossref issued 2025 = year_value）",
+    "first_online": null,
+    "doi_url": "Crossref DOI 存在、type proceedings-article；primary_url = https://doi.org/<DOI> 相符；resource 指向 research.allacademic.com（只轉首頁）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera25/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2186946",
+   "session_type": null,
+   "differences": [],
+   "http_status": null,
+   "read_utc": null,
+   "title_tag": null,
+   "unverifiable_reason": "AERA 2025（aera25）線上議程 View Paper 頁回驗證頁（\"please complete the following\"；前輪 research/p0-b1-pending-2026-10-09 於 2026-10-09T18:06:03Z 試讀 2184589 得 HTTP 200 驗證頁）；依指示不繞過，本輪未再請求 aera25 頁。Crossref 單獨相符不算核對完成。"
+  },
+  {
+   "record_id": "KB-2026-0086",
+   "doi": "10.3102/2276835",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符；含場次標記「(Poster 24)」，紀錄、Crossref、議程頁三方皆帶此標記）",
+    "authors": "一致（議程頁 5 位、Crossref 5 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2276835 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2276835）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276835",
+   "session_type": "Poster Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:46Z",
+   "title_tag": "Poster 24",
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0087",
+   "doi": "10.3102/2280516",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 3 位、Crossref 3 位；人數與姓氏順序全同）；另 2 位作者議程頁有中間名或中間名縮寫、Crossref 省略，屬詳略差異非不一致",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2280516 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2280516）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2280516",
+   "session_type": "Paper Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:51Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0110",
+   "doi": "10.3102/2280689",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 2 位、Crossref 2 位；人數與姓氏順序全同）；另 2 位作者議程頁有中間名或中間名縮寫、Crossref 省略，屬詳略差異非不一致",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2280689 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2280689）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2280689",
+   "session_type": "Roundtable Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:39:56Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0111",
+   "doi": "10.3102/2288539",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 5 位、Crossref 5 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2288539 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2288539）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288539",
+   "session_type": "Paper Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:00Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0112",
+   "doi": "10.3102/2282137",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符；含場次標記「(Poster 5)」，紀錄、Crossref、議程頁三方皆帶此標記）",
+    "authors": "一致（議程頁 3 位、Crossref 3 位；人數與姓氏順序全同）；另 2 位作者議程頁有中間名或中間名縮寫、Crossref 省略，屬詳略差異非不一致",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2282137 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2282137）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2282137",
+   "session_type": "Structured Poster Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:05Z",
+   "title_tag": "Poster 5",
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0113",
+   "doi": "10.3102/2276914",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 1 位、Crossref 1 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2276914 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2276914）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276914",
+   "session_type": "Roundtable Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:10Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0114",
+   "doi": "10.3102/2277717",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符；含場次標記「(Poster 15)」，紀錄、Crossref、議程頁三方皆帶此標記）",
+    "authors": "一致（議程頁 2 位、Crossref 2 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2277717 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2277717）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2277717",
+   "session_type": "Poster Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:14Z",
+   "title_tag": "Poster 15",
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0115",
+   "doi": "10.3102/2353011",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符；含場次標記「(Stage 3, 12:08 PM)」，紀錄、Crossref、議程頁三方皆帶此標記）",
+    "authors": "一致（議程頁 1 位、Crossref 1 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2353011 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2353011）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2353011",
+   "session_type": "AERA Ed Talk",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:19Z",
+   "title_tag": "Stage 3, 12:08 PM",
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0116",
+   "doi": "10.3102/2279932",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 3 位、Crossref 3 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2279932 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2279932）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279932",
+   "session_type": "Roundtable Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:24Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0117",
+   "doi": "10.3102/2288639",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 2 位、Crossref 2 位；人數與姓氏順序全同）；另 1 位作者議程頁有中間名或中間名縮寫、Crossref 省略，屬詳略差異非不一致",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2288639 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2288639）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288639",
+   "session_type": "Paper Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:28Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0118",
+   "doi": "10.3102/2289481",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 1 位、Crossref 1 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2289481 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2289481）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2289481",
+   "session_type": "Roundtable Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:33Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0119",
+   "doi": "10.3102/2279837",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 2 位、Crossref 2 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2279837 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2279837）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279837",
+   "session_type": "Virtual iPresentation Only",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:38Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0120",
+   "doi": "10.3102/2281139",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 8 位、Crossref 8 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2281139 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2281139）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2281139",
+   "session_type": "Roundtable Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:43Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0121",
+   "doi": "10.3102/2273778",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符）",
+    "authors": "一致（議程頁 3 位、Crossref 3 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2273778 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2273778）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273778",
+   "session_type": "Paper Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:48Z",
+   "title_tag": null,
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  },
+  {
+   "record_id": "KB-2026-0122",
+   "doi": "10.3102/2288275",
+   "g2g4": null,
+   "verdict": "match",
+   "checks": {
+    "title": "相符（議程頁題名與紀錄、Crossref 逐字相符；含場次標記「(Poster 29)」，紀錄、Crossref、議程頁三方皆帶此標記）",
+    "authors": "一致（議程頁 1 位、Crossref 1 位；人數與姓氏順序全同）",
+    "venue": "相符（議程頁為 AERA 2026 Annual Meeting 線上議程 aera26，結構化資料 \"AERA Annual Meeting 2026 Annual Conference\"，對應 C17；所屬場次頁列有本篇）",
+    "issue_year": "相符（會議 2026 年 4 月，洛杉磯；= year_value 2026；Crossref issued 2026）",
+    "first_online": null,
+    "doi_url": "相符（Crossref works/10.3102/2288275 存在、type proceedings-article、container \"Proceedings of the 2026 AERA Annual Meeting\"，DOI 尾碼 = 議程 selected_paper_id；primary_url = https://doi.org/10.3102/2288275）"
+   },
+   "program_page_url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288275",
+   "session_type": "Poster Session",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:40:52Z",
+   "title_tag": "Poster 29",
+   "first_online_note": "議程頁未載上線日；未以 Crossref created 日代替"
+  }
+ ],
+ "counts": {
+  "total": 28,
+  "match": 25,
+  "mismatch": 0,
+  "unverifiable": 3
+ },
+ "limits": [
+  "AERA 2025 議程頁回驗證頁，依指示不繞過；3 筆 2025 紀錄只能記 unverifiable，本輪未對 aera25 發請求（依前輪紀錄）",
+  "AERA 2026 讀取方式：先造訪 aera26 議程首頁取得一般 session cookie，再讀 Online Program View Paper 與 View Session 頁；全部 HTTP 200，未遇驗證頁",
+  "Crossref resource URL（research.allacademic.com/meta/p<id>_index.html）只會轉首頁，未用作核對來源",
+  "作者核對以人數、姓氏順序、全名正規化比對；輸出不含姓名。中間名／縮寫詳略差異不算不一致",
+  "議程頁皆未載上線日，first_online 全為 null；未以 Crossref created 日代替",
+  "AERA 議程只有摘要、無合法全文，不做 G2–G4 摘記，g2g4 全為 null；輸出不含摘要原文",
+  "題名比對容許標點、大小寫、破折號與引號字形差異"
+ ]
+}
