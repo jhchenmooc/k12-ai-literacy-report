@@ -10,7 +10,7 @@
 
 **目前不可當作完成的事項**：第一期正式週報尚未製作及登錄；`publication/issues.json` 仍為 `{"schema_version":1,"editions":[]}`；九個候選都在 `hold`，不能宣稱已經獲獨立來源認證。新版 CI 能檢查結構，**不能自動證明來源真實**。
 
-**論文搜尋與核對工具**：2026-10-09 起的可用性、適用步驟與限制見本檔末段「論文搜尋與核對工具現況（2026-10-09 起）」；僅人工輔助、不構成認證。
+**論文搜尋與核對工具**：怎麼調用、踩過的坑、何時平行化，見 [research-tools-guide.md](research-tools-guide.md)（Claude 與 ChatGPT 通用）；現況摘要見本檔末段「論文搜尋與核對工具現況（2026-10-09 起）」。僅人工輔助、不構成認證。
 
 **下一步**：不要再擴充系統；先針對 10/9–10/15 新發布的真正 K–12 政策／研究做查證，完成少量合格主張的正式來源證據、中文對讀與編輯核准，再按既有 PR → CI → Pages 流程出刊。高風險不能為趕期限而假降級。
 
@@ -329,15 +329,33 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 | SciSpace、LR-AI、Citation Needed | 本次未試 | — | LR-AI 依賴 Semantic Scholar（曾 429） |
 | **連不上／不可用**：Exa、Liner、Wiley Scholar Gateway（本 session 顯示需 OAuth 授權）；ScienceDirect（403）、Springer（303 cookie 轉址）出版社頁 | — | — | 不得以模擬或編造結果頂替；需授權者到 claude.ai connector 設定 |
 
-**本批已完成（證據在本分支檔案；PR／CI 結果以實際 GitHub 為準，此處不預寫）**：
+**本批已完成**（[PR #97](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/97) HEAD `ce20604` verify 成功，squash 合併為 main `f35c5e2`；[main Run 37960845032](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37960845032) verify 與 deploy 均成功）：
 - A1 書目核對：九筆 `discovered_unverified`（任務單寫 8 筆，實為 9 筆）中 3 篇論文 `partial`、6 筆網頁不適用；`bibliographic_checked` 有 DOI 的 22 筆：21 `partial`、1 偽陰性 `not_found`（OECD）；負控制 `mismatch` 正確。**未發現真正錯誤書目，九筆欄位未改。**
 - A2 J01／J02／J03 首次定向查詢：q1、q2b、q3 三組成功，q2 HTTP 400 不記零命中；81 篇不重複作品，主表重複 1（A09）、既有 audit 重訪 0。
-- 入庫 16 筆（KB-2025-0014～0021、KB-2026-0020～0026、KB-2027-0001），全部 `discovered_unverified`、首發日 unknown、`year_basis=issue_year`（KB-2027-0001 為 2027 卷期年，非公開年）；records 38→54、relations 87→128、search runs 42→49。索引經既有 `--write-index`／`--write` 重建。
+- 入庫 16 筆（**其後 N16 KB-2025-0021 依「學段須摘要明示」撤回為待判，實際 15 筆；見下一段**；KB-2025-0014～0021、KB-2026-0020～0026、KB-2027-0001），全部 `discovered_unverified`、首發日 unknown、`year_basis=issue_year`（KB-2027-0001 為 2027 卷期年，非公開年）；records 38→54、relations 87→128、search runs 42→49。索引經既有 `--write-index`／`--write` 重建。
 - 測試：`validate-knowledge-base.test.js` 兩處 J02／J03 期刊清單由精確相等改為「既有紀錄仍在」（同 #95、5edf5bc 先例），其餘斷言不變；本機 `node --test research/*.test.js` 195／195 通過，CI 的 benchmark、blind-pack、source-facts、知識庫、YEARS 與 publication 檢查本機均通過。
 - A3 alphaXiv 試用；arXiv API 顯示 C08 預印本 2503.00079 查詢當下最新為 v3（wave3 記「v4 歷程未解」可據此補註，主表不改）。
 
 **尚未完成／下一步**：
-1. 16 筆新紀錄需讀出版社或作者頁（Available online、學段細節）後才可評估升 `bibliographic_checked`；G2–G4 方法核查未做，效果量／單組前後測不得寫成成效主張。
+1. 15 筆新紀錄需讀出版社或作者頁（Available online、學段細節）後才可評估升 `bibliographic_checked`；G2–G4 方法核查未做，效果量／單組前後測不得寫成成效主張。
 2. 是否接受「Crossref＋OpenAlex 一致」為 G1 書目核對，需管理者決定；決定前不升級。
 3. J01–J03 仍是 `items_screened`／`partial`；其餘 J20–J39、C01／C02、C13–C22 依 watchlist 優先級續做，可用同一 OpenAlex source-ID 查法。
 4. 九筆候選 hold／`source_checked=false`、`issues.json` 零期別、無自動搜尋或發刊——均未變。
+
+### 2026-10-09｜P0 工具平行搜尋（三組）與 35 筆入庫
+
+> 細節：[p0-tool-wave-2026-10-09/integration.md](p0-tool-wave-2026-10-09/integration.md)；調用與平行化方法：[research-tools-guide.md](research-tools-guide.md)。三組皆同一 Claude session 的子代理，**不算獨立審閱**。
+
+**管理者決定（2026-10-09）**：新紀錄一律 `discovered_unverified`（Crossref＋OpenAlex 一致不升 `bibliographic_checked`）；**學段必須由摘要明示，只憑題名者列待判**（N16 因此撤回，KB-2025-0021 不重用）；EAAI「Resources for Teaching AI in K-12」列 C22 固定監測分軌（已寫入 `venue-watchlist.md`）；A 組週報候選不入知識庫。
+
+**本批已完成（PR／CI 結果以實際 GitHub 為準，此處不預寫）**：
+- 三組平行（UTC 16:10:39 派工，牆鐘約 18 分）：A 本週新發表 3 候選／19 排除；B J31、J35–J38 7 候選／3 待判／46 排除；C AIED、EDM、WiPSCE、EAAI 28 候選／43 待判／25 排除。跨組與對主表 DOI 重複 0；開工雜湊於完成後核對一致；整合者另以 Crossref 抽查 4 筆相符。
+- 入庫 35 筆（期刊 7、會議 28；KB-2025-0022～0032、KB-2026-0027～0050），首發日 unknown、`year_basis=issue_year`；records 54→88、relations 128→205、search runs 49→58（每來源一筆 `P0-20261009-TOOLWAVE-*`）。至此 J01–J03、J31、J35–J38、C01、C02、C21、C22 有搜尋紀錄（皆 `partial`）。
+- 新增 `research/research-tools-guide.md`：各工具的 HTTP 呼叫方式、限制（萬用字元 400、>5 布林運算子 429、`from_created_date` 需付費、登記日≠上線日、Crossref 題名含換行／JATS、出版社頁 403 等）、四個核心會議的索引定位、平行化時機與實測耗時、Git 注意事項。
+
+**尚未完成／下一步**：
+1. **週報（10/09–10/15）**：A 組 3 筆待查證（T&F 那篇 online 10/08 很可能出窗）；預印本需週內重查；正式出刊仍須 v1.6 首發查核、中文對讀與編輯放行。
+2. 46 筆待判：優先讀 EAAI K-12 分軌 13 筆摘要；AIED 28 筆需可讀官方摘要；B 組 3 筆無摘要。
+3. 50 筆（15＋35）新紀錄的出版社頁、Available online 日與 G2–G4 方法核查未做；高風險成效數字不得寫成主張。
+4. 其餘未搜尋來源：J20–J30、J32–J34、J39、C13–C18、C20；可照指南的期刊／會議流程再分三組。
+5. 九筆候選 hold／`source_checked=false`、`issues.json` 零期別、無自動搜尋或發刊——均未變。

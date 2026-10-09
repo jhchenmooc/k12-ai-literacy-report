@@ -1,0 +1,639 @@
+{
+ "group": "A",
+ "started_utc": "2026-10-09T16:11:35Z",
+ "ended_utc": "2026-10-09T16:16:56Z",
+ "queries": [
+  {
+   "id": "A-oa1",
+   "tool": "OpenAlex API",
+   "query": "https://api.openalex.org/works?per_page=50&select=id,doi,title,publication_date,created_date,type,primary_location&filter=from_created_date:2026-10-09,title_and_abstract.search:(\"AI literacy\" OR \"artificial intelligence literacy\" OR \"AI education\" OR \"AI competency\" OR \"AI competence\") AND (\"K-12\" OR \"K12\" OR \"primary school\" OR \"elementary school\" OR \"secondary school\" OR \"middle school\" OR \"high school\" OR \"schoolchildren\" OR \"school students\" OR \"school teachers\")",
+   "started_utc": "2026-10-09T16:11:57Z",
+   "ended_utc": "2026-10-09T16:11:58Z",
+   "http_status": 429,
+   "total_hits": null,
+   "items_read": 0,
+   "status": "failed",
+   "notes": "錯誤訊息：\"Plan upgrade required\"——from_created_date filter 需 Premium/Institutional/Partner 方案。與任務單「已實測可用」不符；不記零命中。"
+  },
+  {
+   "id": "A-oa2",
+   "tool": "OpenAlex API",
+   "query": "https://api.openalex.org/works?per_page=100&select=id,doi,title,publication_date,created_date,type,primary_location&filter=from_created_date:2026-10-09,title_and_abstract.search:(\"generative AI\" OR \"ChatGPT\" OR \"large language model\" OR \"artificial intelligence\") AND (\"K-12\" OR \"K12\" OR \"primary school\" OR \"elementary school\" OR \"secondary school\" OR \"middle school\" OR \"high school\" OR \"schoolchildren\" OR \"school students\" OR \"school teachers\") AND (teacher OR teachers OR policy OR guideline OR guidelines OR governance OR curriculum OR literacy)",
+   "started_utc": "2026-10-09T16:11:58Z",
+   "ended_utc": "2026-10-09T16:11:58Z",
+   "http_status": 429,
+   "total_hits": null,
+   "items_read": 0,
+   "status": "failed",
+   "notes": "同 A-oa1：Plan upgrade required（from_created_date 付費限定）。改用 from_publication_date 替代（A-oa3/oa4/oa5b），但 publication_date 不是建立日也不是首發日。"
+  },
+  {
+   "id": "A-oa3",
+   "tool": "OpenAlex API",
+   "query": "https://api.openalex.org/works?per_page=100&select=id,doi,title,publication_date,created_date,type,primary_location&filter=from_publication_date:2026-10-09,title_and_abstract.search:(\"AI literacy\" OR \"artificial intelligence literacy\" OR \"generative AI\" OR \"artificial intelligence\") AND (\"K-12\" OR \"K12\" OR \"primary school\" OR \"elementary school\" OR \"secondary school\" OR \"middle school\" OR \"high school\" OR \"schoolchildren\" OR \"school students\" OR \"school teachers\")",
+   "started_utc": "2026-10-09T16:11:58Z",
+   "ended_utc": "2026-10-09T16:11:59Z",
+   "http_status": 200,
+   "total_hits": 5,
+   "items_read": 5,
+   "status": "ok",
+   "notes": "5 筆的 OpenAlex created_date 均早於 10/09（2026-01-08～10-05）；publication_date 多為未來卷期日（10-18、12-31）。無一符合窗口。"
+  },
+  {
+   "id": "A-oa4",
+   "tool": "OpenAlex API",
+   "query": "https://api.openalex.org/works?per_page=100&select=id,doi,title,publication_date,created_date,type,primary_location&filter=from_publication_date:2026-10-09,title_and_abstract.search:(\"generative AI\" OR \"ChatGPT\" OR \"large language model\" OR \"chatbot\" OR \"AI\") AND (\"K-12\" OR \"K12\" OR \"primary school\" OR \"elementary school\" OR \"secondary school\" OR \"middle school\" OR \"high school\" OR \"schoolchildren\" OR \"school students\" OR \"school teachers\") AND (teacher OR teachers OR policy OR guideline OR guidelines OR governance OR curriculum OR literacy OR competency OR ethics)",
+   "started_utc": "2026-10-09T16:12:09Z",
+   "ended_utc": "2026-10-09T16:12:10Z",
+   "http_status": 200,
+   "total_hits": 4,
+   "items_read": 4,
+   "status": "ok",
+   "notes": "3 筆與 A-oa3 重疊；1 筆 created 2026-10-09（10.67207/mrj.2026.15.11）。"
+  },
+  {
+   "id": "A-oa5a",
+   "tool": "OpenAlex API",
+   "query": "https://api.openalex.org/works?per_page=100&select=id,doi,title,publication_date,created_date,type,primary_location&filter=from_publication_date:2026-10-09,title.search:(\"artificial intelligence\" OR \"AI\" OR \"generative\" OR \"ChatGPT\" OR \"chatbot\" OR \"large language model\"),title.search:(school OR schools OR students OR teachers OR children OR adolescents OR K-12 OR classroom)",
+   "started_utc": "2026-10-09T16:12:10Z",
+   "ended_utc": "2026-10-09T16:12:10Z",
+   "http_status": 429,
+   "total_hits": null,
+   "items_read": 0,
+   "status": "failed",
+   "notes": "錯誤訊息：\"Rate limit exceeded\"——布林運算子 >5 個的查詢限每秒 5 次（緊接前查詢觸發）。縮小後改跑 A-oa5b。"
+  },
+  {
+   "id": "A-oa5b",
+   "tool": "OpenAlex API",
+   "query": "https://api.openalex.org/works?per_page=100&select=id,doi,title,publication_date,created_date,type,primary_location&filter=from_publication_date:2026-10-09,title.search:(\"artificial intelligence\" OR \"AI\" OR \"ChatGPT\"),title.search:(school OR students OR teachers)",
+   "started_utc": "2026-10-09T16:12:30Z",
+   "ended_utc": "2026-10-09T16:12:30Z",
+   "http_status": 200,
+   "total_hits": 22,
+   "items_read": 22,
+   "status": "ok",
+   "notes": "22 筆逐題名初篩；created_date=2026-10-09 者 3 筆（lmot.2026.102370、selt.v14n4p10、edumaspul.v10i2.512），後兩者題名即為大學生 → 題名排除；其餘 created 早於 10/09 或為高教。"
+  },
+  {
+   "id": "A-cr1",
+   "tool": "Crossref API",
+   "query": "https://api.crossref.org/works?filter=from-created-date:2026-10-09,until-created-date:2026-10-09,type:journal-article&query.bibliographic=AI literacy K-12 school students teachers artificial intelligence education&rows=40&select=DOI,title,container-title,created,published-online,published-print,published,type,abstract",
+   "started_utc": "2026-10-09T16:12:19Z",
+   "ended_utc": "2026-10-09T16:12:20Z",
+   "http_status": 200,
+   "total_hits": 2029,
+   "items_read": 40,
+   "status": "ok",
+   "notes": "total-results=2029 是 10/09 登記且與任一詞相關的全部 journal-article（相關度排序，非精確匹配）；只讀前 40 筆題名。"
+  },
+  {
+   "id": "A-cr2",
+   "tool": "Crossref API",
+   "query": "https://api.crossref.org/works?filter=from-created-date:2026-10-09,until-created-date:2026-10-09&query.bibliographic=generative AI ChatGPT secondary primary school teachers classroom policy guidelines&rows=40&select=DOI,title,container-title,created,published-online,published-print,published,type,abstract",
+   "started_utc": "2026-10-09T16:12:27Z",
+   "ended_utc": "2026-10-09T16:12:28Z",
+   "http_status": 200,
+   "total_hits": 162,
+   "items_read": 40,
+   "status": "ok",
+   "notes": "不限 type；含 SSRN posted-content 與書章。只讀前 40 筆題名。"
+  },
+  {
+   "id": "A-axv1",
+   "tool": "alphaXiv discover_papers",
+   "query": "keywords=[\"AI literacy\",\"K-12\"]; question=\"AI literacy in K-12 education, teachers' AI competence, generative AI policy in schools\"; published_after=2026-10-09; prioritize=recency; difficulty=4",
+   "started_utc": "2026-10-09T16:12:35Z",
+   "ended_utc": "2026-10-09T16:12:46Z",
+   "http_status": null,
+   "total_hits": 0,
+   "items_read": 0,
+   "status": "ok",
+   "notes": "MCP 工具回傳 \"No papers found for the given query.\"（工具不回 HTTP 狀態；結束時間以下一個 date -u 為上限）。"
+  },
+  {
+   "id": "A-ax1",
+   "tool": "arXiv API",
+   "query": "https://export.arxiv.org/api/query?search_query=(abs:\"AI literacy\" OR abs:\"K-12\" OR abs:\"high school\" OR abs:\"middle school\" OR abs:\"primary school\" OR abs:\"secondary school\") AND submittedDate:[202610080000 TO 202610092359]&max_results=50&sortBy=submittedDate",
+   "started_utc": "2026-10-09T16:12:46Z",
+   "ended_utc": "2026-10-09T16:12:46Z",
+   "http_status": 200,
+   "total_hits": 0,
+   "items_read": 0,
+   "status": "ok",
+   "notes": "0 命中；以 A-ax2 驗證語法有效。查詢當下 10/08–10/09 送件可能尚未 announce，0 不代表本週無預印本。"
+  },
+  {
+   "id": "A-ax2",
+   "tool": "arXiv API",
+   "query": "同 A-ax1，submittedDate:[202610010000 TO 202610092359]（語法健全性對照）",
+   "started_utc": "2026-10-09T16:12:52Z",
+   "ended_utc": "2026-10-09T16:12:52Z",
+   "http_status": 200,
+   "total_hits": 11,
+   "items_read": 11,
+   "status": "ok",
+   "notes": "11 筆 v1 送件均在 2026-10-01～10-07，全部早於窗口，未列入 items；其中 2610.10743（critical AI literacy，10-07）已見於工具試跑報告。"
+  },
+  {
+   "id": "A-cr3",
+   "tool": "Crossref API",
+   "query": "https://api.crossref.org/works?filter=from-created-date:2026-10-09,until-created-date:2026-10-09,issn:0747-5632,issn:2451-9588&rows=100&select=DOI,title,container-title,created,published-online,published-print",
+   "started_utc": "2026-10-09T16:16:46Z",
+   "ended_utc": "2026-10-09T16:16:47Z",
+   "http_status": 200,
+   "total_hits": 5,
+   "items_read": 5,
+   "status": "ok",
+   "notes": "J10 Computers in Human Behavior／J11 CHB Reports 於 10/09 登記的全部 DOI（ISSN 過濾，非關鍵詞）。5 筆題名皆無 K–12（線上約會、醫療 AI 信任、VR、職涯媒體），題名排除，未列入 items。"
+  },
+  {
+   "id": "A-meta-cr",
+   "tool": "Crossref API（逐 DOI）",
+   "query": "https://api.crossref.org/works/{DOI}，22 個 DOI（見 items）",
+   "started_utc": "2026-10-09T16:13:09Z",
+   "ended_utc": "2026-10-09T16:13:25Z",
+   "http_status": "17×200；4×404（3 個 Zenodo/DataCite DOI 及 maslahah.13721）；1×連線重設後重試 404（maslahah.13720）",
+   "total_hits": null,
+   "items_read": 22,
+   "status": "partial",
+   "notes": "書目、日期、摘要對帳用；Zenodo DOI 屬 DataCite，Crossref 404 屬預期。"
+  },
+  {
+   "id": "A-meta-oa",
+   "tool": "OpenAlex API（逐 DOI）",
+   "query": "https://api.openalex.org/works/doi:{DOI}，9 個 DOI",
+   "started_utc": "2026-10-09T16:13:52Z",
+   "ended_utc": "2026-10-09T16:13:59Z",
+   "http_status": "4×200；5×404",
+   "total_hits": null,
+   "items_read": 9,
+   "status": "partial",
+   "notes": "404 者為 OpenAlex 尚未收錄的 10/09 新 DOI（索引延遲）。"
+  },
+  {
+   "id": "A-meta-pub",
+   "tool": "出版社頁（doi.org 轉址）",
+   "query": "https://doi.org/{DOI}，7 個 DOI",
+   "started_utc": "2026-10-09T16:14:05Z",
+   "ended_utc": "2026-10-09T16:14:16Z",
+   "http_status": "Taylor & Francis 403；Springer/BMC 2 頁回 200 但為 JS challenge 無內容；Elsevier linkinghub 200 但僅轉址腳本；DergiPark、Atlantic Press(OJS)、ISTS 3 頁可讀",
+   "total_hits": null,
+   "items_read": 3,
+   "status": "partial",
+   "notes": "只在可讀頁面讀取日期欄與摘要；未下載全文。"
+  }
+ ],
+ "items": [
+  {
+   "doi_or_arxiv": "10.1080/1475939x.2026.2739390",
+   "title": "Trending use of Generative Artificial Intelligence (GenAI) tools in K–12 school settings",
+   "venue": "Technology, Pedagogy and Education",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T05:21:31Z",
+    "crossref_online": "2026-10-08",
+    "crossref_print": null,
+    "openalex_publication_date": "not_indexed (OpenAlex 404)",
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "K–12（僅依題名；Crossref 無摘要，T&F 頁 403）",
+   "topic": "K–12 情境中生成式 AI 工具使用趨勢",
+   "decision": "candidate",
+   "reason": "題名明示 K–12 與 GenAI，主題相符。邊界風險高：Crossref published-online=2026-10-08（早於窗口一天）；若出版社頁證實 10/08 上線則應改 exclude。摘要未讀，方法與學段細節未核。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "not_found（OpenAlex 尚未收錄；Crossref 有 DOI 紀錄，屬索引延遲）"
+  },
+  {
+   "doi_or_arxiv": "10.53850/joltida.1893531",
+   "title": "Exploring Vocational School Students' Conceptualizations of Artificial Intelligence Through Metaphors",
+   "venue": "Journal of Learning and Teaching in Digital Age",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T09:30:14Z",
+    "crossref_online": "2026-10-09",
+    "crossref_print": null,
+    "openalex_publication_date": "not_indexed (OpenAlex 404)",
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "unknown（摘要只寫 vocational school students、198 名、作者在土耳其；未寫是職業高中或高教層級職業學校，需讀全文）",
+   "topic": "學生對 AI 的隱喻式概念理解（AI 素養相關的認知面）",
+   "decision": "candidate",
+   "reason": "出版社頁（DergiPark）實際讀到 Publication Date October 9, 2026（非 Available online 欄位，故 first_public_date 仍 unknown）；主題屬學生 AI 概念/素養。若全文證實為高教層級職業學校（MYO）則排除。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "not_found（OpenAlex 尚未收錄）"
+  },
+  {
+   "doi_or_arxiv": "10.1186/s40359-026-05721-w",
+   "title": "Latent profiles of AI teaching self-efficacy and their associations with occupational well-being among vocational education teachers in China: the moderating role of AI anxiety",
+   "venue": "BMC Psychology",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T11:15:28Z",
+    "crossref_online": "2026-10-09",
+    "crossref_print": null,
+    "openalex_publication_date": "not_indexed (OpenAlex 404)",
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "unknown（vocational education teachers，未知為中職或高職院校；Crossref 無摘要，Springer 頁為 JS challenge 無法讀）",
+   "topic": "教師 AI 教學自我效能與職業幸福感",
+   "decision": "candidate",
+   "reason": "主題屬教師 AI 能力；學段不明，低優先。屬相關性研究，不得作因果解讀。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "not_found（OpenAlex 尚未收錄）"
+  },
+  {
+   "doi_or_arxiv": "10.70767/jmetp.v3i7.1312",
+   "title": "Construction of an Indicator System and Enhancement Strategies for Artificial Intelligence Literacy of Primary and Secondary School Teachers",
+   "venue": "Journal of Modern Educational Theory and Practice",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T07:17:10Z",
+    "crossref_online": "2026-10-08",
+    "crossref_print": null,
+    "openalex_publication_date": "not_indexed (OpenAlex 404)",
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "中小學教師（摘要明示 primary and secondary school teachers）",
+   "topic": "中小學教師 AI 素養五維度指標體系",
+   "decision": "exclude",
+   "reason": "主題與學段高度相符，但出版社頁（OJS）實際讀到 Published 2026-10-08、DC.Date.created 2026-10-08，早於 10/09 窗口。可留作背景，不作本期首發。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.3389/feduc.2026.1968743",
+   "title": "Teachers' perceptions of artificial intelligence integration in education: a multi-campus cross-sectional study from Riphah International University, Pakistan",
+   "venue": "Frontiers in Education",
+   "source_id_if_watchlist": "J29",
+   "dates": {
+    "doi_registered": "2026-10-09T04:27:15Z",
+    "crossref_online": "2026-10-09",
+    "crossref_print": null,
+    "openalex_publication_date": null,
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "高教（大學教師，BS 至 PhD）",
+   "topic": "教師對 AI 整合的看法",
+   "decision": "exclude",
+   "reason": "摘要明示大學教師，非 K–12。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.1007/s44217-026-01898-9",
+   "title": "A comprehensive mixed-methods investigation of role conflict among female secondary school teachers across locales",
+   "venue": "Discover Education",
+   "source_id_if_watchlist": "J32",
+   "dates": {
+    "doi_registered": "2026-10-09T14:16:35Z",
+    "crossref_online": "2026-10-09",
+    "crossref_print": null,
+    "openalex_publication_date": null,
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "中學教師（題名）",
+   "topic": "女性中學教師角色衝突",
+   "decision": "exclude",
+   "reason": "題名無 AI；Crossref 無摘要、Springer 頁 JS challenge 讀不到，依題名判定主題不符（由相關度排序帶入）。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.3389/frai.2026.1926666",
+   "title": "Between policy and pedagogy: writing teachers' perspectives on institutional AI policies and expectations",
+   "venue": "Frontiers in Artificial Intelligence",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T05:33:30Z",
+    "crossref_online": "2026-10-09",
+    "crossref_print": null,
+    "openalex_publication_date": null,
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "高教（摘要：higher education，沙烏地 10 名寫作教師）",
+   "topic": "機構 AI 政策",
+   "decision": "exclude",
+   "reason": "高教。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.32674/5xhcsr85",
+   "title": "Bridging the AI use–competence gap",
+   "venue": "American Journal of STEM Education",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T03:35:52Z",
+    "crossref_online": "2026-10-09",
+    "crossref_print": null,
+    "openalex_publication_date": null,
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "高教（研究生）",
+   "topic": "AI 素養框架",
+   "decision": "exclude",
+   "reason": "研究生樣本，非 K–12。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.3991/ijim.v20i19.63209",
+   "title": "Mobile Generative AI Literacy and English Writing Self-Efficacy: The Role of AI Feedback Engagement in Higher Education",
+   "venue": "International Journal of Interactive Mobile Technologies",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T15:16:04Z",
+    "crossref_online": "2026-10-09",
+    "crossref_print": null,
+    "openalex_publication_date": null,
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "高教（大學生）",
+   "topic": "GenAI 素養與寫作自我效能",
+   "decision": "exclude",
+   "reason": "高教。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.70767/jmetp.v3i7.1304",
+   "title": "Research on the Path of Artificial Intelligence Empowering the Development of Digital Literacy of College English Teachers",
+   "venue": "Journal of Modern Educational Theory and Practice",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T07:17:18Z",
+    "crossref_online": "2026-10-08",
+    "crossref_print": null,
+    "openalex_publication_date": null,
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "高教（大學英語教師）",
+   "topic": "教師數位素養",
+   "decision": "exclude",
+   "reason": "高教；且 Crossref online 2026-10-08 早於窗口。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.52710/ijse.6754",
+   "title": "Governance and academic integrity in the era of artificial intelligence: comparative documentary analysis in Latin American universities",
+   "venue": "International Journal of Special Education",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T09:13:48Z",
+    "crossref_online": "2026 (year only)",
+    "crossref_print": null,
+    "openalex_publication_date": null,
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "高教（題名：universities）",
+   "topic": "AI 治理與學術誠信",
+   "decision": "exclude",
+   "reason": "高教（依題名；無摘要）。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.1007/s11218-026-10295-x",
+   "title": "Attitudes toward artificial intelligence as a distal predictor of psychological distress: statistical mediation through perceived future employability and psychological resilience among university students",
+   "venue": "Social Psychology of Education",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T08:55:15Z",
+    "crossref_online": "2026-10-09",
+    "crossref_print": null,
+    "openalex_publication_date": null,
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "高教（題名：university students）",
+   "topic": "AI 態度與心理困擾",
+   "decision": "exclude",
+   "reason": "高教。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.67229/stemer.26080017",
+   "title": "Artificial Intelligence and Geography Education in Nigeria: A Multi-Dimensional Framework for Sustainable Teacher Training and Curriculum Innovation",
+   "venue": "STEM Education Review",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T03:43:52Z",
+    "crossref_online": "2026 (year only)",
+    "crossref_print": "2026 (year only)",
+    "openalex_publication_date": "2026-01-01",
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "師資培育（Colleges of Education 職前教師，未來任教中小學）",
+   "topic": "AI 與地理科師資培育",
+   "decision": "exclude",
+   "reason": "出版社頁實際讀到 Published 05 Aug 2026，早於窗口；DOI 雖 10/09 登記，不代表首發。摘要含前後測控制組成效 → 高風險，待 G2–G4（若日後作背景）。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.35896/ijecie.v10i1.1206",
+   "title": "The Utilization of Artificial Intelligence (AI) Based Digital Media to Realize Joyful Learning",
+   "venue": "Al Hikmah Indonesian Journal of Early Childhood Islamic Education",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T01:10:52Z",
+    "crossref_online": "2026-06-30",
+    "crossref_print": null,
+    "openalex_publication_date": null,
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "幼兒園（TK，17 名幼兒）",
+   "topic": "AI 數位媒體作教學工具",
+   "decision": "exclude",
+   "reason": "Crossref online 2026-06-30 早於窗口；學前階段且 AI 僅作教學工具。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.2139/ssrn.7589242",
+   "title": "A Competency Evaluation Index System for Primary and Secondary School Teachers in Dual-Line Blended Teaching",
+   "venue": "SSRN（posted-content 預印本）",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T12:58:00Z",
+    "crossref_online": null,
+    "crossref_print": null,
+    "openalex_publication_date": null,
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "中小學教師",
+   "topic": "線上線下雙線混合教學能力指標",
+   "decision": "exclude",
+   "reason": "摘要未以 AI 為主題（混合教學/資訊素養），不屬 AI 素養或教師 AI 能力。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.46793/uzdanica23.1.035m",
+   "title": "Ставови ученика гимназије о ChatGPT-у као подршци у учењу математике（高中生對 ChatGPT 作為數學學習支援的態度）",
+   "venue": "Uzdanica",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T11:38:51Z",
+    "crossref_online": "2026-10-07",
+    "crossref_print": null,
+    "openalex_publication_date": null,
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "高中（塞爾維亞 gimnazija，99 名學生）",
+   "topic": "ChatGPT 作學習工具的接受度",
+   "decision": "exclude",
+   "reason": "Crossref online 2026-10-07 早於窗口；主題為 AI 作學習工具的科技接受，非 AI 素養/政策。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.67207/mrj.2026.15.11",
+   "title": "STUDENTS' PERSPECTIVES AND SIGNIFICANCE OF \"WRITE AND IMPROVE\" WEB APP",
+   "venue": "Mandakh Research Journal",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T02:54:05Z",
+    "crossref_online": "2026-10-09",
+    "crossref_print": null,
+    "openalex_publication_date": "2026-10-09",
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "高中 12 年級（24 名，蒙古 Mandakh Lyceum）",
+   "topic": "AI 寫作回饋 app 作學習工具",
+   "decision": "exclude",
+   "reason": "學段為 K–12 且日期落在窗口，但 AI 只作英語寫作學習工具，非 AI 素養/教師 AI 能力/治理；摘要含百分比 → 高風險，待 G2–G4（若改判納入）。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.1016/j.lmot.2026.102370",
+   "title": "Achievement goal theory in AI-supported learning: Psychological pathways and configurations leading to student engagement",
+   "venue": "Learning and Motivation",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "2026-10-09T01:25:35Z",
+    "crossref_online": null,
+    "crossref_print": "2026-11",
+    "openalex_publication_date": "2026-10-09",
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "unknown（無摘要；Elsevier 頁只回轉址腳本）",
+   "topic": "AI 支援學習中的成就目標與投入",
+   "decision": "exclude",
+   "reason": "依題名屬 AI 作學習工具的動機研究，非本刊四主題；學段未知。若整合者認為應納入需先讀 ScienceDirect 頁。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.56114/maslahah.v7i3.13720",
+   "title": "Improving Teachers' Competence In Designing AI-Assisted Learning Media At Yayasan Rahmat Islamiyah Medan",
+   "venue": "Maslahah（社區服務期刊）",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "unknown（Crossref 404）",
+    "crossref_online": null,
+    "crossref_print": null,
+    "openalex_publication_date": "2026-10-20",
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "unknown（伊斯蘭教育基金會教師、young learners；未明示學段）",
+   "topic": "教師 AI 輔助教材設計能力（社區服務方案）",
+   "decision": "exclude",
+   "reason": "OpenAlex created_date 2026-10-06，早於窗口（OpenAlex 10/06 已收錄即表示 10/09 前已有公開紀錄跡象）；屬社區服務報告。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.56114/maslahah.v7i3.13721",
+   "title": "Empowerment of Islamic Religious Education Teachers through Generative AI Training for the Development of Islamic Value-Based Learning Media",
+   "venue": "Maslahah（社區服務期刊）",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "unknown（Crossref 404）",
+    "crossref_online": null,
+    "crossref_print": null,
+    "openalex_publication_date": "2026-10-20",
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "國中（SMP Negeri 35 Medan 教師）",
+   "topic": "教師生成式 AI 培訓（社區服務方案）",
+   "decision": "exclude",
+   "reason": "OpenAlex created_date 2026-10-06，早於窗口。主題相符（中學教師 GenAI 能力），可作背景。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.5281/zenodo.23138253",
+   "title": "A Dataset for AI Literacy in Secondary Schools in Tanzania:",
+   "venue": "Zenodo",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "unknown（DataCite DOI，Crossref 404）",
+    "crossref_online": null,
+    "crossref_print": null,
+    "openalex_publication_date": "2026-10-18",
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "中學（題名）",
+   "topic": "坦尚尼亞中學 AI 素養資料集",
+   "decision": "exclude",
+   "reason": "OpenAlex created_date 2026-10-05 早於窗口；publication_date 2026-10-18 為未來日期不可信。屬資料集而非論文。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  },
+  {
+   "doi_or_arxiv": "10.5281/zenodo.18161737",
+   "title": "ETHICAL CONSIDERATIONS AND POLICY FRAMEWORKS FOR TEACHING WITH ARTIFICIAL INTELLIGENCE IN SECONDARY SCHOOL SET…",
+   "venue": "Zenodo",
+   "source_id_if_watchlist": null,
+   "dates": {
+    "doi_registered": "unknown（DataCite DOI，Crossref 404）",
+    "crossref_online": null,
+    "crossref_print": null,
+    "openalex_publication_date": "2026-12-31",
+    "arxiv_v1": null
+   },
+   "first_public_date": "unknown",
+   "school_level": "中學（題名）",
+   "topic": "中學 AI 教學倫理與政策框架",
+   "decision": "exclude",
+   "reason": "OpenAlex created_date 2026-01-08，遠早於窗口。",
+   "known_duplicate": false,
+   "verify_bibtex_status": "未查（已排除）"
+  }
+ ],
+ "limits": [
+  "OpenAlex from_created_date 需付費方案（HTTP 429 Plan upgrade required），與任務單「已實測可用」不符；只能改用 from_publication_date，而 publication_date 常為未來卷期日（10-18、12-31），既非建立日也非首發日。",
+  "OpenAlex 對 10/09 新登記 DOI 尚未收錄（逐 DOI 查 5/9 回 404），因此 OpenAlex 查詢對本窗口召回極低；Research Desk verify_bibtex 3 筆候選均 not_found，屬索引延遲而非書目錯誤。",
+  "OpenAlex 布林運算子 >5 時限每秒 5 次（HTTP 429 Rate limit exceeded），連續查詢需間隔。",
+  "Crossref query.bibliographic 為相關度排序，total-results（2029、162）不是精確主題命中數；只讀各前 40 筆題名，深層結果未讀。Crossref created 只是 DOI 登記日，多筆 10/09 登記之 DOI 其 published-online 或出版社頁日期早於窗口（10-07、10-08、08-05、06-30）。",
+  "alphaXiv published_after=2026-10-09 回 0；arXiv API 10/08–10/09 送件 0（語法經 10/01–10/09 對照驗證有效）。查詢在 10/09 16:12 UTC，當日送件尚未 announce，預印本須於週內重查。",
+  "出版社頁：Taylor & Francis 403；Springer/BMC 回 JS challenge；Elsevier linkinghub 只回轉址腳本。三筆候選中僅 joltida 出版社頁可讀。",
+  "窗口實際只涵蓋 10/09 當天（查詢當下），本組結果不代表 10/09–10/15 全週。",
+  "J10／J11 只以 Crossref ISSN＋10/09 登記日補查（A-cr3，5 筆皆不相關）；其他監測期刊未逐一 ISSN 定向查詢，僅靠關鍵詞查詢覆蓋。"
+ ]
+}

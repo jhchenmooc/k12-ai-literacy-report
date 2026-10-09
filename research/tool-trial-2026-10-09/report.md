@@ -38,6 +38,8 @@
 
 **裁決**：入庫 16、重複 1、讀摘要後排除 6、題名排除 58。入庫條件：摘要（或 N16 題名）明示 K-12／中小學學段，且主題為 AI 素養、AI 教育、教師教 AI 的能力，或 K-12 生成式 AI 風險治理。排除：非 K-12 專屬、AI 只作學習工具、無摘要且學段不明。
 
+> **同日更正（PR #97 合併後）**：管理者決定學段一律須由摘要明示，不再只憑題名入選。N16 `10.1016/j.compedu.2025.105435`（KB-2025-0021，OpenAlex 無摘要）已撤回為待判，其 records／relations 移除、`P0-20261009-TOOLQ1-J01` 的 recorded 由 4 改為 3；**本批實際入庫 15 筆**，KB-2025-0021 不再重用。詳見 [p0-tool-wave-2026-10-09/integration.md](../p0-tool-wave-2026-10-09/integration.md)。
+
 ### 入庫方式（依 schema.md）
 
 - 16 筆 `journal_article`，`verification_status=discovered_unverified`。**未升 `bibliographic_checked`**：既有該級紀錄均讀過出版社頁，本批只核 Crossref／OpenAlex metadata，出版社頁不可讀。
