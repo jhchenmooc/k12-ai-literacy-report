@@ -131,6 +131,16 @@
 | KB-2025-0072 — [Constructing AI Literacy: A Hands-On Approach for School Children](https://doi.org/10.15388/infedu.2025.26) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0073 — [Ethical Thinking: Integration and Measurement in an AI Curriculum for Middle-High School Students](https://doi.org/10.15388/infedu.2025.29) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0074 — [Investigating Preservice STEM Teachers’ AI Literacy and Self-Efficacy Beliefs: Are They Ready for AI?](https://doi.org/10.15388/infedu.2025.22) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0075 — [GenAI as a cognitive mediator: a critical-constructivist inquiry into computational thinking in pre-university education](https://doi.org/10.3389/feduc.2025.1597249) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0076 — [Creat’AI: Using Tangible Storytelling to Teach AI to Children](https://doi.org/10.1145/3713043.3731513) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0077 — ["It’s Just a Machine that Predicts" - Demystifying Artificial Intelligence / Machine Learning with Teenagers](https://doi.org/10.1145/3713043.3728853) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0078 — [Beyond the Algorithm: Speculative Approaches to Critical AI Literacies with Diverse Youth](https://doi.org/10.1145/3713043.3727052) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0079 — [Empowering Children’s AI Literacy Through Co-Creating Stories with LLM](https://doi.org/10.1145/3713043.3731520) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0080 — [From Automation to Integration: Designing Opportunities for Students and Teachers to Act Skillfully Around AI in Existing K-12 Subjects](https://doi.org/10.1145/3713043.3728857) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0081 — [Fairness by Design: Cross-Cultural Perspectives from Children on AI and Fair Data Processing in their Education Futures](https://doi.org/10.1145/3706598.3714402) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0082 — [From Pre-Conceptions to Theories: How Middle School Student Ideas about Predictive Text Evolve after Interaction with a New Software Tool](https://doi.org/10.1145/3706599.3719789) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0083 — [Escape or D13: Understanding Youth Perspectives of AI through Educational Game Co-design](https://doi.org/10.1145/3706598.3714037) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0084 — [Responsible AI in Education: Understanding Teachers’ Priorities and Contextual Challenges](https://doi.org/10.1145/3715275.3732176) | conference_paper | 未知 | discovered_unverified |
 
 ## 2026｜first_publication
 
@@ -310,6 +320,12 @@
 | KB-2026-0185 — [From emotion regulation to academic success: A self‐determination theory‐based emotional agent‐mediated approach](https://doi.org/10.1111/bjet.70083) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0186 — [Beyond AI Literacy: Exploring Pre-Service Teachers’ Pedagogical and Ethical Reasoning in Generative AI Integration in Education](https://doi.org/10.1177/07356331261479569) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0187 — [Dialogue Act Patterns in GenAI-Mediated L2 Oral Practice: A Sequential Analysis of Learner–Chatbot Interactions](https://doi.org/10.1007/978-3-032-29763-1_38) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0188 — [Beyond adoption: Teachers’ pedagogical reasoning about generative artificial intelligence in schooling](https://doi.org/10.1016/j.tate.2026.105746) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0189 — [A framework for integrating large language models in secondary physics education: practical design, opportunities, risks, and pedagogical principles](https://doi.org/10.3389/feduc.2026.1874510) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0190 — [Teacher technophobia toward Generative AI: evidence from an Italian survey](https://doi.org/10.3389/feduc.2026.1825182) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0191 — [AI Literacy with Teenagers: Exploring Large Language Models Beneath the Surface](https://doi.org/10.1145/3773077.3812183) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0192 — [Investigating ChatGPT Usage in High Schools: Student Perspectives on Policy and Practice](https://doi.org/10.1145/3805689.3812305) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0193 — [When AI Breaks, Teachers Repair: Pedagogical Repair Work in Situated Classroom Practice](https://doi.org/10.1145/3805689.3812281) | conference_paper | 未知 | discovered_unverified |
 
 ## 2027｜issue_year
 

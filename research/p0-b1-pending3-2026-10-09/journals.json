@@ -1,0 +1,1603 @@
+{
+ "items": [
+  {
+   "group": "J1",
+   "source_id": "J20",
+   "doi": "10.1016/j.tate.2026.105707",
+   "title": "Mapping in-service teacher AI literacy: A systematic review of empirical studies",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J20",
+   "doi": "10.1016/j.tate.2025.105286",
+   "title": "ChatGPT in school mathematics education: A systematic review of opportunities, challenges, and pedagogical implications",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J20",
+   "doi": "10.1016/j.tate.2025.105375",
+   "title": "From surface to substance: Experiential learning to promote understanding of ChatGPT for K-12 lesson planning",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J20",
+   "doi": "10.1016/j.tate.2026.105746",
+   "title": "Beyond adoption: Teachers’ pedagogical reasoning about generative artificial intelligence in schooling",
+   "previous_decision": "pending",
+   "abstract_source": "openalex",
+   "population": "k12",
+   "population_evidence": "interviews with 24 middle-school teachers",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA",
+    "T-ETH"
+   ],
+   "ai_lit_note": "國中教師在備課與教學中權衡 GenAI 的教學推理（含為保留學生認知投入而封鎖），對應 T-TEA「評估AI與教學法整合的適切性」。",
+   "new_decision": "import",
+   "reason": "學段明示（middle-school teachers）；研究對象為教師如何把 GenAI 納入或排除於教學的推理，屬教師 AI 素養（A）；依 v0.3，A/B 皆在範圍內，原「治理邊界」疑慮已不適用",
+   "boundary": false,
+   "crossref_title": "Beyond adoption: Teachers’ pedagogical reasoning about generative artificial intelligence in schooling",
+   "container": "Teaching and Teacher Education",
+   "issue_year": 2026,
+   "category_suggestion": "K4",
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J20",
+   "doi": "10.1016/j.tate.2025.105270",
+   "title": "Teachers’ AI-TPACK as a tangible outcome in the digital transformation of education: A machine learning-based multilevel approach",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J20",
+   "doi": "10.1016/j.tate.2026.105435",
+   "title": "Anticipating AI panacea? Teacher imaginaries of AI digital textbooks in South Korea",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J20",
+   "doi": "10.1016/j.tate.2025.105032",
+   "title": "Unveiling teacher identity development: A case study of AI curriculum implementation in a rural middle school computer science class",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J20",
+   "doi": "10.1016/j.tate.2026.105739",
+   "title": "Empowering teachers for artificial intelligence integration in gifted education: Evidence from a professional development program",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J20",
+   "doi": "10.1016/j.tate.2026.105433",
+   "title": "Predicting in-service teachers’ AI readiness from emotions in teaching and mindsets about teaching ability: Testing the direct and moderating effects",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J21",
+   "doi": "10.1177/00224871251325073",
+   "title": "Uncovering the Hidden Curriculum in Generative AI: A Reflective Technology Audit for Teacher Educators",
+   "previous_decision": "pending",
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "implications of these findings for teacher education, policy, and research",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH"
+   ],
+   "ai_lit_note": "以技術稽核揭示 LLM 對學生寫作評分的隱性偏誤，供師培反思，對應 T-ETH「辨識AI風險與安全防範」。",
+   "new_decision": "pending",
+   "reason": "學段不明：研究為 LLM 稽核，“inner-city school” 只是操弄的學生描述；對象只提 teacher education/policy，未明示師資生或中小學",
+   "boundary": true,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J21",
+   "doi": "10.1177/00224871251325083",
+   "title": "AI Literacy in Teacher Education: Empowering Educators Through Critical Co-Discovery",
+   "previous_decision": "pending",
+   "abstract_source": "openalex",
+   "population": "teacher_ed",
+   "population_evidence": "online AI in Education (AIEd) course to enhance educators’ AI literacy",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS",
+    "T-ETH",
+    "T-PD"
+   ],
+   "ai_lit_note": "以批判共同探索提升教育工作者 AI 素養，對應 T-BAS「理解AI的數據與運作」、T-ETH「理解AI運作與倫理原則」。",
+   "new_decision": "import",
+   "reason": "依「teacher education = 師培」規則判 teacher_ed；摘要寫 teacher education program 中的 AIEd 課程；但參與者只稱 educators，未說明是否含在職教師，列邊界供管理者覆核",
+   "boundary": true,
+   "crossref_title": "AI Literacy in Teacher Education: Empowering Educators Through Critical Co-Discovery",
+   "container": "Journal of Teacher Education",
+   "issue_year": 2025,
+   "category_suggestion": "K4",
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J24",
+   "doi": "10.1007/s00146-025-02749-1",
+   "title": "Moral grounding before algorithms: a cross-cultural critique of AI education in schools",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J24",
+   "doi": "10.1007/s00146-025-02570-w",
+   "title": "Shaping the future of education: school principals’ views on AI, big data and robot teachers",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J24",
+   "doi": "10.1007/s00146-025-02609-y",
+   "title": "Where are the children? The missing piece of AI ethics",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J24",
+   "doi": "10.1007/s00146-025-02606-1",
+   "title": "Curiosity killed? Blame schools, not AI",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J24",
+   "doi": "10.1007/s00146-026-03227-y",
+   "title": "Epistemia in the classroom: the problem of evidence of understanding in education in the age of generative AI",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J24",
+   "doi": "10.1007/s00146-025-02266-1",
+   "title": "AI in education: A shortcut or a roadblock to foundational knowledge?",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J24",
+   "doi": "10.1007/s00146-025-02458-9",
+   "title": "Not just a plus: rethinking the “AI + Education” illusion",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J24",
+   "doi": "10.1007/s00146-026-02961-7",
+   "title": "Hard to find, harder to understand: examining transparency in educational generative AI",
+   "previous_decision": "pending",
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "GenAI tools for teachers",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS",
+    "T-ETH"
+   ],
+   "ai_lit_note": "分析 20 個教師用 GenAI 工具的透明度，使教師能批判評估工具，對應 T-BAS「選用適性適規之AI工具」。",
+   "new_decision": "pending",
+   "reason": "學段不明：只寫 teachers/educators，未明示中小學",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J24",
+   "doi": "10.1007/s00146-026-03216-1",
+   "title": "Reflections on the Always-Answering Classroom: AI, Uncertainty, and Pedagogical Silence",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J24",
+   "doi": "10.1007/s00146-025-02530-4",
+   "title": "When knowing becomes compliance: reframing AI literacy in a measured world",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J25",
+   "doi": "10.1177/14749041261473066",
+   "title": "Turning schools into AI testing grounds and sites of extraction: The strategic selectivities of IOs AI literacy frameworks",
+   "previous_decision": "candidate",
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "schools become both testing grounds and sites of extraction",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "T-PD"
+   ],
+   "ai_lit_note": "批判分析 OECD 與 UNESCO 文件如何框定 AI literacy，對應框架層級之 AI 素養定義（學生與教師角色）。",
+   "new_decision": "pending",
+   "reason": "主題為國際組織 AI 素養框架（A），但摘要只寫 schools/classrooms/students，未明示年級或學段；依現行規則為 unclear。若管理者認可 OECD/EC 框架本身即 K-12，可改 import（K1）",
+   "boundary": true,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J26",
+   "doi": "10.1080/17439884.2025.2517335",
+   "title": "Using ethical scenarios to explore the future of artificial intelligence in primary and secondary education",
+   "previous_decision": "pending",
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "may change before they are widely deployed in schools",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH"
+   ],
+   "ai_lit_note": "以未來情境法探討 AIED 傳遞內容與管理學生的倫理衝突，勉強對應 T-ETH「探究AI問題責任歸屬」。",
+   "new_decision": "pending",
+   "reason": "學段只見於題名（primary and secondary），摘要只寫 schools；且主題是 AIED 工具的倫理預期而非師生 AI 素養，A/C 分界亦屬邊界",
+   "boundary": true,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J26",
+   "doi": "10.1080/17439884.2026.2717578",
+   "title": "Structured participation pathways in AI-driven education governance: the case of South Korea’s AI digital textbook initiative",
+   "previous_decision": "pending",
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "pilot programs, procurement systems, teacher professional development",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS"
+   ],
+   "ai_lit_note": "分析南韓 AI 數位教科書計畫的治理參與路徑，可對應 T-BAS「參與AI校園治理部署與決策」（對象為其他教育關係人）。",
+   "new_decision": "pending",
+   "reason": "摘要未明寫學校或年級；主題為國家 EdTech 治理參與，是否屬 AI 素養（對象為其他教育關係人）亦為邊界",
+   "boundary": true,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J1",
+   "source_id": "J26",
+   "doi": "10.1080/17439884.2024.2438933",
+   "title": "Conflicting motives: challenges of generative AI in education",
+   "previous_decision": "candidate",
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "educational actors in a school development activity",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH",
+    "T-BAS"
+   ],
+   "ai_lit_note": "學校發展活動中學生、教師、校長管理 GenAI 的動機衝突，對應 T-ETH「健全校園AI使用規範」。",
+   "new_decision": "pending",
+   "reason": "摘要只寫 school development activity 與 students/teachers/principals，未明示學段（瑞典 Sweden 有明寫，若改 import 國別 SE）",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J2",
+   "source_id": "J27",
+   "doi": "10.1109/tlt.2025.3575030",
+   "title": "Science Education in the Age of Artificial Intelligence: Opportunities, Challenges, and Research",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "new_decision": "pending",
+   "reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J2",
+   "source_id": "J29",
+   "doi": "10.3389/feduc.2025.1716353",
+   "title": "Learning with, rather than through, AI: co-designing science education for critical AI literacy",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無正式摘要，不判內涵。",
+   "new_decision": "pending",
+   "reason": "Frontiers Opinion 類文章無正式摘要；OpenAlex 摘要欄為正文首段，不作為摘要依據；正文首段談課堂中學生使用 ChatGPT 與批判性 AI 素養，題名切合（可能 A：S-ETH/S-LRN），但無正式摘要且未明示學段",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J2",
+   "source_id": "J29",
+   "doi": "10.3389/feduc.2026.1874510",
+   "title": "A framework for integrating large language models in secondary physics education: practical design, opportunities, risks, and pedagogical principles",
+   "previous_decision": "pending",
+   "abstract_source": "openalex",
+   "population": "k12",
+   "population_evidence": "36 secondary school students (ages 14–16)",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "T-TEA",
+    "S-LRN",
+    "S-ETH"
+   ],
+   "ai_lit_note": "提出在中學物理教學整合 LLM 的框架並試行，對應 T-TEA「設計AI與教學法整合的策略」、S-LRN「應用AI工具強化領域學習」。",
+   "new_decision": "import",
+   "reason": "學段明示；主體為 LLM 作為教學工具之整合框架（B），另含 AI 使用防護與倫理鷹架（S-ETH「落實AI使用規範與責任」）；單組前後測僅為可行性試行，成效主張需降調",
+   "boundary": false,
+   "crossref_title": "A framework for integrating large language models in secondary physics education: practical design, opportunities, risks, and pedagogical principles",
+   "container": "Frontiers in Education",
+   "issue_year": 2026,
+   "category_suggestion": "K4",
+   "countries": []
+  },
+  {
+   "group": "J2",
+   "source_id": "J29",
+   "doi": "10.3389/feduc.2025.1597249",
+   "title": "GenAI as a cognitive mediator: a critical-constructivist inquiry into computational thinking in pre-university education",
+   "previous_decision": "pending",
+   "abstract_source": "openalex",
+   "population": "k12",
+   "population_evidence": "how high school students engage with generative artificial intelligence",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-LRN",
+    "S-ETH"
+   ],
+   "ai_lit_note": "高中生撰寫提示、評估並修正 AI 回應以發展運算思維，對應 S-BAS「運用提示詞優化AI互動」、「實踐AI強化運算思維」。",
+   "new_decision": "import",
+   "reason": "學段明示（high school / secondary level）；研究重點為學生與 GenAI 互動的策略、查證與認知警覺，依「兼有判 A」規則判 A",
+   "boundary": false,
+   "crossref_title": "GenAI as a cognitive mediator: a critical-constructivist inquiry into computational thinking in pre-university education",
+   "container": "Frontiers in Education",
+   "issue_year": 2025,
+   "category_suggestion": "K2",
+   "countries": []
+  },
+  {
+   "group": "J2",
+   "source_id": "J29",
+   "doi": "10.3389/feduc.2025.1610836",
+   "title": "Addressing student use of generative AI in schools and universities through academic integrity reporting",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無正式摘要，不判內涵。",
+   "new_decision": "pending",
+   "reason": "Frontiers Opinion 類文章無正式摘要；OpenAlex 摘要欄為正文首段，不作為摘要依據；正文首段只寫 academic environment，並引述大學政策分析，偏高教；無正式摘要，無法判學段",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J2",
+   "source_id": "J29",
+   "doi": "10.3389/feduc.2026.1792351",
+   "title": "Text features associated with students’ generative AI use: Norwegian teachers’ perspectives",
+   "previous_decision": "pending",
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "129 Norwegian teachers ... school writing",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH",
+    "S-ETH"
+   ],
+   "ai_lit_note": "教師辨識學生寫作中疑似 GenAI 使用的文本特徵並需支持落實 AI literacy policies，對應 S-ETH「正用AI符合學術誠信」。",
+   "new_decision": "pending",
+   "reason": "學段不明：只寫 teachers 與 school writing，未明示年級或中小學",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J2",
+   "source_id": "J29",
+   "doi": "10.3389/feduc.2025.1609518",
+   "title": "Homework in the AI era: cheating, challenge, or change?",
+   "previous_decision": "pending",
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無正式摘要，不判內涵。",
+   "new_decision": "pending",
+   "reason": "Frontiers Opinion 類文章無正式摘要；OpenAlex 摘要欄為正文首段，不作為摘要依據；正文首段只寫 students/young minds 與 homework，未明示學段；無正式摘要",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J2",
+   "source_id": "J29",
+   "doi": "10.3389/feduc.2026.1825182",
+   "title": "Teacher technophobia toward Generative AI: evidence from an Italian survey",
+   "previous_decision": "pending",
+   "abstract_source": "openalex",
+   "population": "teacher_ed",
+   "population_evidence": "898 Italian teachers in preservice training",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH",
+    "T-PD"
+   ],
+   "ai_lit_note": "師資培育中教師對生成式 AI 的態度、恐懼與評量疑慮，對應 T-PD「理解AI時代教師專業自主與責任」。",
+   "new_decision": "import",
+   "reason": "摘要明寫 teachers in preservice training，依規則判 teacher_ed；主題為教師對 GAI 的態度與信念（教師 AI 素養之態度面），判 A；Italian 為形容詞，國別不記",
+   "boundary": false,
+   "crossref_title": "Teacher technophobia toward Generative AI: evidence from an Italian survey",
+   "container": "Frontiers in Education",
+   "issue_year": 2026,
+   "category_suggestion": "K2",
+   "countries": []
+  },
+  {
+   "group": "J2",
+   "source_id": "J29",
+   "doi": "10.3389/feduc.2026.1790642",
+   "title": "Exploring the IntelligentTPACK gap: a qualitative analysis of teachers’ AI competencies and AI self-reported classroom uses",
+   "previous_decision": "pending",
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "211 in-service teachers in Slovakia ... AI adoption in schools",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA",
+    "T-BAS"
+   ],
+   "ai_lit_note": "在職教師 AI 工具知識與教學整合間的 IntelligentTPACK 落差，對應 T-TEA「整合AI與教學法」（AI-TPACK 依規則判 A）。",
+   "new_decision": "pending",
+   "reason": "內容為 A（AI-TPACK），但摘要只寫 in-service teachers 與 schools，未明示中小學學段；若管理者確認可 import（K2，國別 SK）",
+   "boundary": false,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J2",
+   "source_id": "J32",
+   "doi": "10.1007/s44217-025-00924-6",
+   "title": "Landscape of AI literacy in education: approaches, impacts, and challenges for student preparedness—a narrative review",
+   "previous_decision": "candidate",
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "differing needs of students from K-12 to higher and professional education",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "敘事回顧 AI 素養發展取徑、影響與挑戰，對應 S-BAS「理解AI運作原理與限制」。",
+   "new_decision": "pending",
+   "reason": "跨學段回顧（K-12 至高教與專業教育），未陳述以 K-12 為主要對象，依規則為 unclear",
+   "boundary": true,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  },
+  {
+   "group": "J2",
+   "source_id": "J32",
+   "doi": "10.1007/s44217-026-01688-3",
+   "title": "A mixed methods study of the three low trap in high school information technology teaching in underdeveloped China in the AI era",
+   "previous_decision": "pending",
+   "abstract_source": "openalex",
+   "population": "k12",
+   "population_evidence": "high school information technology teaching in underdeveloped regions of China",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "摘要以基礎設施、教師態度與政策落實解釋「AI 落差」，看不出是否涉及師生 AI 素養內涵或課堂中使用 AI 工具，記不明。",
+   "new_decision": "pending",
+   "reason": "學段明示，但 AI 素養歸類不明：「AI education settings」語意模糊，構念為一般資訊科技教學條件；BERT 情緒分析僅為研究方法",
+   "boundary": true,
+   "crossref_title": null,
+   "container": null,
+   "issue_year": null,
+   "category_suggestion": null,
+   "countries": []
+  }
+ ],
+ "counts": {
+  "total": 36,
+  "new_decision": {
+   "pending": 31,
+   "import": 5
+  },
+  "ai_lit_class": {
+   "unknown": 22,
+   "A": 13,
+   "B": 1
+  },
+  "population": {
+   "unknown": 21,
+   "k12": 4,
+   "unclear": 9,
+   "teacher_ed": 2
+  },
+  "abstract_source": {
+   "none": 21,
+   "openalex": 15
+  },
+  "boundary": 7,
+  "requests": 154,
+  "requests_http": {
+   "200": 153,
+   "429": 1
+  }
+ },
+ "requests": [
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731495",
+   "utc": "2026-10-09T20:39:14Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731495",
+   "utc": "2026-10-09T20:39:16Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3713043.3731495?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:39:17Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731513",
+   "utc": "2026-10-09T20:39:19Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731513",
+   "utc": "2026-10-09T20:39:20Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3713043.3731513?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:39:22Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812156",
+   "utc": "2026-10-09T20:39:23Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812156",
+   "utc": "2026-10-09T20:39:25Z",
+   "http": 429
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3812156?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:39:26Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806125",
+   "utc": "2026-10-09T20:39:28Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806125",
+   "utc": "2026-10-09T20:39:29Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3806125?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:39:30Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3728853",
+   "utc": "2026-10-09T20:39:32Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3728853",
+   "utc": "2026-10-09T20:39:34Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3713043.3728853?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:39:35Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3727052",
+   "utc": "2026-10-09T20:39:36Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3727052",
+   "utc": "2026-10-09T20:39:38Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3713043.3727052?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:39:39Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731520",
+   "utc": "2026-10-09T20:39:41Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731520",
+   "utc": "2026-10-09T20:39:42Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3713043.3731520?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:39:44Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812183",
+   "utc": "2026-10-09T20:39:45Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812183",
+   "utc": "2026-10-09T20:39:47Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3812183?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:39:48Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813778",
+   "utc": "2026-10-09T20:39:50Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813778",
+   "utc": "2026-10-09T20:39:51Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3813778?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:39:53Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3816198",
+   "utc": "2026-10-09T20:39:54Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3816198",
+   "utc": "2026-10-09T20:39:55Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3816198?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:39:57Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731604",
+   "utc": "2026-10-09T20:39:58Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3731604",
+   "utc": "2026-10-09T20:40:00Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3713043.3731604?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:01Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806107",
+   "utc": "2026-10-09T20:40:03Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806107",
+   "utc": "2026-10-09T20:40:04Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3806107?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:06Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813783",
+   "utc": "2026-10-09T20:40:07Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813783",
+   "utc": "2026-10-09T20:40:09Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3813783?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:10Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813772",
+   "utc": "2026-10-09T20:40:11Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3813772",
+   "utc": "2026-10-09T20:40:13Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3813772?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:14Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806146",
+   "utc": "2026-10-09T20:40:16Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806146",
+   "utc": "2026-10-09T20:40:17Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3806146?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:19Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812189",
+   "utc": "2026-10-09T20:40:20Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812189",
+   "utc": "2026-10-09T20:40:21Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3812189?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:23Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806124",
+   "utc": "2026-10-09T20:40:24Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3806124",
+   "utc": "2026-10-09T20:40:26Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3806124?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:27Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3728857",
+   "utc": "2026-10-09T20:40:28Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3713043.3728857",
+   "utc": "2026-10-09T20:40:30Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3713043.3728857?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:31Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812130",
+   "utc": "2026-10-09T20:40:33Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3773077.3812130",
+   "utc": "2026-10-09T20:40:34Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3812130?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:35Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2197285",
+   "utc": "2026-10-09T20:40:37Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2197285",
+   "utc": "2026-10-09T20:40:38Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2197285?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:40Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2194864",
+   "utc": "2026-10-09T20:40:42Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2194864",
+   "utc": "2026-10-09T20:40:43Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2194864?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:45Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2185074",
+   "utc": "2026-10-09T20:40:46Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2185074",
+   "utc": "2026-10-09T20:40:47Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2185074?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:49Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2193015",
+   "utc": "2026-10-09T20:40:51Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2193015",
+   "utc": "2026-10-09T20:40:52Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2193015?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:54Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2183399",
+   "utc": "2026-10-09T20:40:56Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2183399",
+   "utc": "2026-10-09T20:40:57Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2183399?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:40:59Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2184589",
+   "utc": "2026-10-09T20:41:00Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2184589",
+   "utc": "2026-10-09T20:41:02Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2184589?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:03Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2195238",
+   "utc": "2026-10-09T20:41:04Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2195238",
+   "utc": "2026-10-09T20:41:06Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2195238?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:07Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2190458",
+   "utc": "2026-10-09T20:41:09Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2190458",
+   "utc": "2026-10-09T20:41:10Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2190458?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:12Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2288144",
+   "utc": "2026-10-09T20:41:13Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2288144",
+   "utc": "2026-10-09T20:41:15Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2288144?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:16Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2186829",
+   "utc": "2026-10-09T20:41:17Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2186829",
+   "utc": "2026-10-09T20:41:19Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2186829?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:21Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2272689",
+   "utc": "2026-10-09T20:41:22Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2272689",
+   "utc": "2026-10-09T20:41:24Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2272689?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:25Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2276315",
+   "utc": "2026-10-09T20:41:27Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2276315",
+   "utc": "2026-10-09T20:41:28Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2276315?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:31Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2190722",
+   "utc": "2026-10-09T20:41:32Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2190722",
+   "utc": "2026-10-09T20:41:34Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2190722?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:35Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2194056",
+   "utc": "2026-10-09T20:41:37Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2194056",
+   "utc": "2026-10-09T20:41:38Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2194056?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:39Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2198280",
+   "utc": "2026-10-09T20:41:41Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2198280",
+   "utc": "2026-10-09T20:41:42Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2198280?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:44Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2281719",
+   "utc": "2026-10-09T20:41:45Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2281719",
+   "utc": "2026-10-09T20:41:47Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2281719?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:48Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706598.3714402",
+   "utc": "2026-10-09T20:41:49Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706598.3714402",
+   "utc": "2026-10-09T20:41:51Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3706598.3714402?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:53Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772363.3778682",
+   "utc": "2026-10-09T20:41:54Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772363.3778682",
+   "utc": "2026-10-09T20:41:55Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3772363.3778682?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:41:57Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706598.3713443",
+   "utc": "2026-10-09T20:41:59Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706598.3713443",
+   "utc": "2026-10-09T20:42:00Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3706598.3713443?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:02Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706599.3719789",
+   "utc": "2026-10-09T20:42:03Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706599.3719789",
+   "utc": "2026-10-09T20:42:04Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3706599.3719789?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:06Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706598.3713173",
+   "utc": "2026-10-09T20:42:07Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706598.3713173",
+   "utc": "2026-10-09T20:42:09Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3706598.3713173?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:10Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706598.3714037",
+   "utc": "2026-10-09T20:42:11Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706598.3714037",
+   "utc": "2026-10-09T20:42:13Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3706598.3714037?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:14Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706599.3719844",
+   "utc": "2026-10-09T20:42:16Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706599.3719844",
+   "utc": "2026-10-09T20:42:17Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3706599.3719844?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:19Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706598.3713510",
+   "utc": "2026-10-09T20:42:20Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706598.3713510",
+   "utc": "2026-10-09T20:42:22Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3706598.3713510?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:23Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772363.3798673",
+   "utc": "2026-10-09T20:42:25Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772363.3798673",
+   "utc": "2026-10-09T20:42:26Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3772363.3798673?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:28Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772318.3791346",
+   "utc": "2026-10-09T20:42:29Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772318.3791346",
+   "utc": "2026-10-09T20:42:31Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3772318.3791346?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:32Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772318.3791483",
+   "utc": "2026-10-09T20:42:33Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772318.3791483",
+   "utc": "2026-10-09T20:42:35Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3772318.3791483?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:36Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3805689.3812305",
+   "utc": "2026-10-09T20:42:38Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3805689.3812305",
+   "utc": "2026-10-09T20:42:39Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3805689.3812305?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:41Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3715275.3732176",
+   "utc": "2026-10-09T20:42:42Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3715275.3732176",
+   "utc": "2026-10-09T20:42:44Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3715275.3732176?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:45Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3805689.3812281",
+   "utc": "2026-10-09T20:42:47Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3805689.3812281",
+   "utc": "2026-10-09T20:42:48Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3805689.3812281?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:50Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3715070.3748294",
+   "utc": "2026-10-09T20:42:51Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3715070.3748294",
+   "utc": "2026-10-09T20:42:53Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3715070.3748294?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:54Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1109/icalt64023.2025.00035",
+   "utc": "2026-10-09T20:42:55Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1109/icalt64023.2025.00035",
+   "utc": "2026-10-09T20:42:57Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/icalt64023.2025.00035?fields=title,abstract,year,venue,externalIds",
+   "utc": "2026-10-09T20:42:59Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1177/14749041261473066",
+   "utc": "2026-10-09T20:42:09Z",
+   "http": 200
+  }
+ ],
+ "note": "同一模型判讀（與整合者同模型），非獨立審閱。不含全文摘要、個資或電子郵件。"
+}
