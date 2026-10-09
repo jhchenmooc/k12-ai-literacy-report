@@ -1,5 +1,5 @@
 "use strict";
-const {test}=require("node:test"),assert=require("node:assert/strict");
+const {test}=require("node:test"),assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
 const {makeDraft}=require("./scaffold-weekly.js"),{merge}=require("./ingest-candidates.js"),{dailyBrief,markdown}=require("./prepare-daily-brief.js");
 test("daily import remains fully visible to weekly selection",()=>{
  const week=makeDraft("2026-10-09").data;
@@ -52,4 +52,19 @@ test("cannot recommend a future-dated source in yesterday's daily pack",()=>{
 });
 test("invalid date input fails with clear error",()=>{
  assert.throws(()=>dailyBrief(makeDraft("2026-10-09").data,null),/invalid issue date/);
+});
+
+test("real first-week nine candidates remain held and never auto-promote",()=>{
+ const w=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8"));
+ assert.equal(w.items.length,9);
+ assert.equal(w.items.filter(c=>c.decision==="hold").length,9);
+ const a07=w.items.find(c=>c.candidate_id==="W2026-10-09-A07");
+ assert.ok(a07);
+ assert.equal(a07.source_checked,false);
+ assert.match(a07.screening_note,/7 and 8 Oct/);
+ const brief=dailyBrief(w,"2026-10-10");
+ assert.deepEqual(brief.suggested_for_publication,[]);
+ assert.equal(w.items.length,9);
+ assert.equal(w.screening_summary.ready_to_publish,0);
+ assert.equal(w.screening_summary.verified_for_publication,0);
 });
