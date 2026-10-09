@@ -178,3 +178,10 @@
 - J03 重要監測來源變動：官方 Springer 頁明列 2026-01-01 起由 Elsevier 出版，本修正 PR 更新 research/venue-watchlist.md 的 Elsevier 新入口與 Springer 歷史入口。這只是來源入口維護，尚非逐篇搜尋完成。
 - 仍未完成 39 期刊／21 會議全面覆蓋與 search_runs.csv 逐源條件搜尋；九筆候選 hold、正式出版新期別 0。不能把入口檢查當 full_text_checked 或本週新刊內容。
 - 下一批：優先逐源實際 query_scoped 查核、記錄可重現搜尋式/日期/DOI/學段/例外；依次 P0→P1→P2。任何合併前確認最新 PR HEAD verify，合併後確認 main verify/deploy；維持 v1.6 出版安全閘門。
+
+### 2026-10-09 P0 學術主題搜尋接續（PR #80–#81）
+
+- [PR #80](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/80)：J06 Journal of Computer Assisted Learning 四篇 Wiley 出版商文章 DOI、首次上線日、K–12 學段與方法初篩；既有 A08 同 DOI 去重，未提升候選狀態。`verify` 成功 [Run #37935071997](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37935071997)，合併 commit `bba05dd4b52a5725d291863ea346c567dc1b3d95`。
+- [PR #81](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/81)：J05 Education and Information Technologies 四篇 Springer 出版商文章的範圍限定初篩；不將 SEM、質性或數位能力研究冒稱 AI 素養教學因果。`verify` 成功 [Run #37935252331](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37935252331)，合併 commit `c9d29339c240a66718344a82a88702ea0cf61abb`。
+- 這些都是**定向搜尋的少量文章初篩**，不是完整來源索引覆蓋、全文查核或真實 10/09–10/15 首發新聞。`search_runs.csv` 仍未同步新增驗證器格式的批次列，必須以真正實行的查詢及覆蓋範圍補記，不填假零結果。
+- 下一順序：P0 對 J04、J07、C03 等依來源 ID 執行可重現搜尋並核對正式 DOI、Online First、學段；核對索引分層及歷年資料去重，最後才進 P1 與 P2。九筆候選 hold 與正式新期別零則維持；v1.6 出版安全規則不變。
