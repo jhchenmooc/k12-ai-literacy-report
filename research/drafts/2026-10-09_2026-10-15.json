@@ -174,6 +174,60 @@
       "policy_context_url": "https://www.gob.mx/sep/prensa/boletin-304-publica-sep-acuerdo-para-garantizar-el-uso-responsable-seguro-y-educativo-de-dispositivos-digitales-en-las-escuelas",
       "policy_start_source_url": "https://www.gob.mx/sep/prensa/boletin-309-a-partir-del-3-de-noviembre-entra-en-vigor-regulacion-del-uso-de-celulares-durante-la-jornada-escolar-en-educacion-basica-mario-delgado",
       "screening_note": "UNESCO English article posted 9 Oct, but corresponding remarks at the 7 Oct forum were already reported publicly on 7 and 8 Oct (see screening shortlist for URLs). Same-event first-publication requirement for the 9–15 Oct weekly window is NOT satisfied; background-only candidate, held. SEP regulation previously announced in Sep with Nov 3 planned start and teaching/emergency exceptions. Do not expend publication snapshot work unless editorially justified as background. Draft verification fields conservatively unchanged."
+    },
+    {
+      "candidate_id": "W2026-10-09-A08",
+      "category": "research",
+      "source_url": "https://onlinelibrary.wiley.com/doi/10.1002/jcal.70308",
+      "source_title": "The Effects of K-12 Artificial Intelligence Education in Enhancing AI Literacy: A Meta-Analysis",
+      "source_organization": "Journal of Computer Assisted Learning / Wiley",
+      "source_publication_date": "2026-08-03",
+      "source_locator": "Publication History / First published",
+      "original_excerpt": "",
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "August publication; background only, not a new October result.",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "doi": "10.1002/jcal.70308",
+      "discovered_on": "2026-10-09",
+      "discovery_batch_id": "2026-10-09-research-rehearsal-1",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "screening_note": "30-day backfill/background: earlier than issue period; publication history confirmed on publisher page, not full original-text verification. Hold."
+    },
+    {
+      "candidate_id": "W2026-10-09-A09",
+      "category": "research",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S2666920X26001232",
+      "source_title": "Measuring Acceptance of Age-Tiered AI Literacy Guidebooks: A Developmentally Informed Study of K-12 Students and Teachers",
+      "source_organization": "Computers and Education: Artificial Intelligence / Elsevier",
+      "source_publication_date": "2026-08-24",
+      "source_locator": "Article header / Available online",
+      "original_excerpt": "",
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "August publication; background only, not a new October result.",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "doi": "10.1016/j.caeai.2026.100661",
+      "discovered_on": "2026-10-09",
+      "discovery_batch_id": "2026-10-09-research-rehearsal-1",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "screening_note": "30-day backfill/background: earlier than issue period; publication history confirmed on publisher page, not full original-text verification. Hold."
     }
   ],
   "item_template": {
@@ -197,7 +251,7 @@
     "ai_crosscheck_record": ""
   },
   "screening_summary": {
-    "candidate_count": 7,
+    "candidate_count": 9,
     "ready_to_publish": 0,
     "verified_for_publication": 0,
     "screened_on": "2026-10-09",
@@ -208,5 +262,32 @@
       "A07 UNESCO English article is dated 9 Oct, but public reporting on the same 7 Oct forum remarks exists from 7 and 8 Oct. Therefore it is NOT confirmed as a first-publication 9–15 Oct event; keep HOLD and treat only as background unless genuinely new distinct primary-source development is found. Mexico SEP policy dates to Sep, with Nov 3 announced application.",
       "A07 public webpages were read for screening; source_checked=false is conservatively retained because publication-grade snapshot/semantic checks are unfinished and the existing scaffold safety test requires held draft status."
     ]
-  }
+  },
+  "search_runs": [
+    {
+      "batch_id": "2026-10-09-research-rehearsal-1",
+      "searched_on": "2026-10-09",
+      "lookback_days": 30,
+      "sources": [
+        {
+          "group": "official-policy",
+          "query": "HK Education Bureau October 9 secondary AI literacy professional development",
+          "status": "ok"
+        },
+        {
+          "group": "research",
+          "query": "K-12 AI literacy journal research site:sciencedirect.com OR site:onlinelibrary.wiley.com",
+          "status": "ok"
+        },
+        {
+          "group": "multilingual-backfill",
+          "query": "K12 artificial intelligence literacy policy research October 2026 earlier releases",
+          "status": "ok"
+        }
+      ],
+      "discovered": 2,
+      "added": 2,
+      "duplicates": 0
+    }
+  ]
 }
