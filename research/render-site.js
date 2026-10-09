@@ -3,7 +3,7 @@
    Usage: node research/render-site.js          check generated pages are up to date (CI)
           node research/render-site.js --write  regenerate them
    Never registers editions, changes claims or certifies sources: it only renders what is already recorded. */
-const fs=require("node:fs"),path=require("node:path");
+const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
 const {parseCsv}=require("./validate-knowledge-base.js");
 
 const LEGACY_WEEKLY=[{path:"weekly/2026-09-29_10-08/",title:"創刊特刊：2026/9/29–10/8",note:"10 天過渡期特刊；早期版本，未經獨立認證，保留公開更正說明。"}];
@@ -16,6 +16,12 @@ const ORG_COUNTRY={"O-AU-EDU":"AU","O-JP-MEXT":"JP","O-KR-MOE":"KR","O-UK-DFE":"
 const STATUS={discovered_unverified:["unverified","僅發現・未核"],bibliographic_checked:["checked","書目已核"],content_checked:["fulltext","原文已核"]};
 const DAILY_KIND={official_notice:["policy","官方文件"],official_attributed_summary:["policy","官方文件摘要"],research_bibliography:["research","研究書目"],research_abstract_attributed_summary:["research","研究摘要"]};
 
+/* Quick-index year columns always run from the newest year back to at least this year, so later backfill keeps the layout stable. */
+const INDEX_FIRST_YEAR=2023;
+/* Cache-busting query from the stylesheet content, so readers do not keep an outdated layout after an update. */
+const CSS_VERSION=crypto.createHash("sha256").update(fs.readFileSync(path.join(__dirname,"..","assets","site.css"))).digest("hex").slice(0,10);
+const cssHref=p=>p+"assets/site.css?v="+CSS_VERSION;
+
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const up=depth=>depth?"../".repeat(depth):"./";
 
@@ -25,7 +31,7 @@ function shell({depth,current,title,description,head,main}){
  const links=nav.map(([href,label,key])=>'<a href="'+p+href+'"'+(current===key?' aria-current="page"':"")+">"+label+"</a>").join("");
  return '<!doctype html>\n<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+
   '<meta name="description" content="'+esc(description)+'"><title>'+esc(title)+"｜K-12 AI 素養國際動態</title>"+
-  '<link rel="stylesheet" href="'+p+'assets/design-system.css"><link rel="stylesheet" href="'+p+'assets/site.css"></head>\n<body>'+
+  '<link rel="stylesheet" href="'+p+'assets/design-system.css"><link rel="stylesheet" href="'+cssHref(p)+'"></head>\n<body>'+
   '<a class="skip" href="#content">跳至主要內容</a>'+
   '<header class="site-header"><nav class="site-nav" aria-label="主要導覽"><a class="brand" href="'+p+'">K-12 AI 素養國際動態</a>'+links+
   '<a class="nav-feedback" href="'+p+'feedback/">讀者勘誤</a></nav></header>\n'+
@@ -128,13 +134,18 @@ const slug=s=>String(s).replace(/[^A-Za-z0-9]+/g,"-").replace(/^-|-$/g,"").toLow
 const groupId=g=>"g-"+slug(g.key);
 const yearId=(g,y)=>groupId(g)+"-y"+(y==="未知"?"unknown":y);
 const LEGEND='<div class="legend"><span><span class="badge checked">書目已核</span> 題名、出處、日期已對過出版者或官方原頁</span><span><span class="badge unverified">僅發現・未核</span> 只核過登記資料，原頁或首發日未核</span><span><span class="badge fulltext">原文已核</span> 內容逐段核對</span></div>';
+/* "AIED — International Conference …": the long part is hidden on narrow screens; the full name stays in title and the group heading. */
+function indexName(name){const i=name.indexOf(" — ");return i<0?esc(name):esc(name.slice(0,i))+'<span class="long">'+esc(name.slice(i))+"</span>"}
 /* Quick index without scripts: groups × years matrix of in-page links. */
 function quickIndex(groups,label){
- const years=[...new Set(groups.flatMap(g=>g.rows.map(r=>r.year)))].sort(yearOrder);
- const head='<tr><th scope="col">'+label+'</th><th scope="col">合計</th>'+years.map(y=>'<th scope="col">'+esc(y)+"</th>").join("")+"</tr>";
+ const known=groups.flatMap(g=>g.rows.map(r=>r.year)).filter(y=>/^\d{4}$/.test(y)).map(Number);
+ const hi=Math.max(INDEX_FIRST_YEAR,...known),lo=Math.min(INDEX_FIRST_YEAR,...known);
+ const years=Array.from({length:hi-lo+1},(_,i)=>String(hi-i));
+ if(groups.some(g=>g.rows.some(r=>r.year==="未知")))years.push("未知");
+ const head='<tr><th scope="col" class="name">'+label+'</th><th scope="col">合計</th>'+years.map(y=>'<th scope="col">'+esc(y)+"</th>").join("")+"</tr>";
  const body=groups.map(g=>{
   const by=new Map();for(const r of g.rows)by.set(r.year,(by.get(r.year)||0)+1);
-  return '<tr><th scope="row"><a href="#'+groupId(g)+'">'+esc(g.name)+"</a></th><td>"+g.rows.length+"</td>"+years.map(y=>by.has(y)?'<td><a href="#'+yearId(g,y)+'" aria-label="'+esc(g.name)+" "+esc(y)+" 年 "+by.get(y)+' 筆">'+by.get(y)+"</a></td>":'<td class="none">—</td>').join("")+"</tr>";
+  return '<tr><th scope="row" class="name"><a href="#'+groupId(g)+'" title="'+esc(g.name)+'">'+indexName(g.name)+"</a></th><td>"+g.rows.length+"</td>"+years.map(y=>by.has(y)?'<td><a href="#'+yearId(g,y)+'" aria-label="'+esc(g.name)+" "+esc(y)+" 年 "+by.get(y)+' 筆">'+by.get(y)+"</a></td>":'<td class="none">—</td>').join("")+"</tr>";
  }).join("");
  return '<section class="quick-index" id="index" aria-labelledby="index-h"><h2 id="index-h">快速索引</h2><p class="sub">點名稱跳到該組；點數字直接跳到該年份的第一筆。</p><div class="table-wrap"><table class="index-table"><thead>'+head+"</thead><tbody>"+body+"</tbody></table></div></section>";
 }
@@ -200,7 +211,7 @@ function fillHomepage(html,days,data){
   if(!re.test(out))throw Error("homepage marker missing: "+name);
   out=out.replace(re,(_,a,b)=>a+fn(days,data)+b);
  }
- return out;
+ return out.replace(/href="\.\/assets\/site\.css(\?v=[0-9a-f]*)?"/,'href="'+cssHref("./")+'"');
 }
 
 /* ---------- build ---------- */
