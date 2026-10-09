@@ -1,0 +1,150 @@
+{
+  "base_sha": "ade85459b2f2809787866bfca258190c0a007aa9",
+  "integrated_at_utc": "2026-10-09T14:19:52.027Z",
+  "formal_tables_unchanged_during_search": true,
+  "baseline": [
+    {
+      "path": "research/knowledge-base/data/records.csv",
+      "sha256": "DF16C5F815425186753B3156F44A7D1E5DEAD430AA20ADA1FD0B6FA447CD1BB4"
+    },
+    {
+      "path": "research/knowledge-base/data/relations.csv",
+      "sha256": "F8B31BC33DEF41DA10819734E5BDE9B6D4A215CD2841976AE14BC585C0C53B29"
+    },
+    {
+      "path": "research/knowledge-base/data/search_runs.csv",
+      "sha256": "67DD7A885CB72461932D6320AE60D9644F5BEFEC788506CB3C69A79BC916ECE0"
+    },
+    {
+      "path": "research/drafts/2026-10-09_2026-10-15.json",
+      "sha256": "67468D0C5315358C0C30A6F6B8CC0E87CF78B5E483C991ABA33B5B227D15109E"
+    },
+    {
+      "path": "publication/issues.json",
+      "sha256": "96D2717FA58338E5A232FFFE115F40CD97BE07367E8ABA58F3217AA463869BC1"
+    }
+  ],
+  "initial": {
+    "records": 31,
+    "relations": 72,
+    "runs": 19
+  },
+  "after": {
+    "records": 32,
+    "relations": 74,
+    "runs": 25,
+    "source_ids": 17
+  },
+  "listed_samples": 9,
+  "unique_dois": 9,
+  "duplicate_sample_occurrences": 0,
+  "existing_master_revisits": 4,
+  "timings": [
+    {
+      "group": "A",
+      "dispatched": "2026-10-09T14:08:42Z",
+      "started": "2026-10-09T14:09:11Z",
+      "finished": "2026-10-09T14:13:23Z"
+    },
+    {
+      "group": "B",
+      "dispatched": "2026-10-09T14:08:42Z",
+      "started": "2026-10-09T14:09:47Z",
+      "finished": "2026-10-09T14:14:03Z",
+      "evidence_review_ended": "2026-10-09T14:11:23Z",
+      "start_limitation": "First clock only; initial repo reading began earlier, exact start unknown"
+    },
+    {
+      "group": "C",
+      "dispatched": "2026-10-09T14:08:42Z",
+      "started": "2026-10-09T14:09:27Z",
+      "finished": "2026-10-09T14:13:16Z"
+    }
+  ],
+  "ledger": [
+    {
+      "source_id": "J10",
+      "doi": "10.1016/j.chb.2025.108779",
+      "action": "retain_staging",
+      "record_id": null,
+      "reason": "Institutional Early online October27 and author-formatted footer October9 conflict remains unresolved; K-12 sample not verified.",
+      "read_scope": "Institutional bibliographic HTML directly read; publisher/direct PDFs unavailable; footer indexed only"
+    },
+    {
+      "source_id": "J11",
+      "doi": "10.1016/j.chbr.2026.101041",
+      "action": "update_date",
+      "record_id": "KB-2026-0016",
+      "reason": "Author-uploaded publisher-formatted original footer, independently read by integrator, identifies Available online April2. Date refers to publisher manifestation; earlier public versions remain unknown. Preserve bibliographic_checked; tracked panel 2573 differs from wave pools; no causal instruction claim.",
+      "read_scope": "Selected original author-uploaded text directly read: provenance/license/footer, 3.1/3.2, 2.3, 7; not full article or supplementary data"
+    },
+    {
+      "source_id": "J11",
+      "doi": "10.1016/j.chbr.2025.100833",
+      "action": "retain_staging",
+      "record_id": null,
+      "reason": "No new original subgroup-method or date evidence; mixed-stage intention model cannot substantiate K-12 teaching efficacy.",
+      "read_scope": "Official indexed abstract only; direct publisher Internal Error"
+    },
+    {
+      "source_id": "C06",
+      "doi": "10.1145/3641555.3705158",
+      "action": "retain_staging",
+      "record_id": null,
+      "reason": "Official poster/program and author institution bibliography accessible but original instrument/design and publisher chronology still unavailable; do not import unverified date.",
+      "read_scope": "official_program_abstract_and_institution_bibliography; ACM fulltext unavailable"
+    },
+    {
+      "source_id": "C07",
+      "doi": "10.1145/3724363.3729069",
+      "action": "add_bibliography",
+      "record_id": "KB-2025-0009",
+      "reason": "Official author institution confirms DOI/title/ACM V.1; author original selected methods confirms primary/secondary teachers. Add historical bibliographic record only, date unknown, issue-year index. Teacher self-report is not student efficacy; no formal fulltext certification.",
+      "read_scope": "author_uploaded_original_text DOI/title, sections3.3/3.4, results and limitations; rendered PDF and publisher formal text not verified"
+    },
+    {
+      "source_id": "C06",
+      "doi": "10.1145/3641555.3705101",
+      "action": "retain_staging",
+      "record_id": null,
+      "reason": "Official Birds of a Feather discussion, excluded from empirical outcome evidence.",
+      "read_scope": "official_program_abstract_and_UNSW_bibliography"
+    },
+    {
+      "source_id": "C05",
+      "doi": "10.22318/cscl2025.817482",
+      "action": "retain_existing",
+      "record_id": "KB-2025-0006",
+      "reason": "Author preprint N98 vs scenario groups total68 and ten-page vs formal nine-page versions unresolved. Formal date/v2 history unknown; retain existing bibliography only.",
+      "read_scope": "Author draft selected methods/results; official ISLS indexed metadata only"
+    },
+    {
+      "source_id": "C05",
+      "doi": "10.22318/cscl2025.107218",
+      "action": "retain_existing",
+      "record_id": "KB-2025-0007",
+      "reason": "Formal poster abstract only; first-public date, participant methods and version history still unknown.",
+      "read_scope": "Official indexed abstract only"
+    },
+    {
+      "source_id": "C08",
+      "doi": "10.1145/3702652.3744217",
+      "action": "retain_existing",
+      "record_id": "KB-2025-0008",
+      "reason": "Formal ACM manifestation date August2 unchanged. arXiv February27 is submission timestamp, not verified exact public-availability day. Related DOI establishes same-work version link; retain earlier-version warning and mixed-stage review limits, do not merge versions or adopt efficacy claims.",
+      "read_scope": "arXiv metadata plus v3 methodology/exclusion/limitations sections; indexed ACM publication history and legal-deposit first-page fragment; no complete formal text",
+      "work_first_public_on": null
+    }
+  ],
+  "independent_verification": {
+    "started": "2026-10-09T14:14:09Z",
+    "source_review_ended": "2026-10-09T14:18:49Z",
+    "records": 6,
+    "status": "partial"
+  },
+  "validation": {
+    "tests": 195,
+    "passed": 195,
+    "publication_editions": 0
+  }
+}

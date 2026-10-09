@@ -1,0 +1,285 @@
+{
+  "group": "B",
+  "source_ids": [
+    "C06",
+    "C07"
+  ],
+  "dispatched_at_utc": "2026-10-09T14:08:42Z",
+  "started_at_utc": "2026-10-09T14:09:47Z",
+  "finished_at_utc": "2026-10-09T14:11:23Z",
+  "scope_start": "2025-01-01",
+  "scope_end": "2026-10-09",
+  "results_seen": null,
+  "status": "partial",
+  "baseline_main_sha": "ade85459b2f2809787866bfca258190c0a007aa9",
+  "queries": [
+    {
+      "source_id": "C06",
+      "query": "\"10.1145/3641555.3705158\"",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C07",
+      "query": "\"10.1145/3724363.3729069\"",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C06",
+      "query": "\"Day of AI Australia\" \"Teacher Insights\" pdf",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C07",
+      "query": "\"From Teachers to Students\" \"Canvas City\" pdf",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C06",
+      "query": "site:dl.acm.org/doi \"3641555.3705158\" \"Published\"",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C07",
+      "query": "site:dl.acm.org/doi \"3724363.3729069\" \"Published\"",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C07",
+      "query": "\"Canvas City\" \"teachers\" \"primary\" Prolific",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C07",
+      "query": "\"Canvas City\" \"3729069\" filetype:pdf",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C07",
+      "query": "\"From Teachers to Students: Evaluating Canvas City\" site:academia.edu",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C07",
+      "query": "\"3729069\" \"27 June\"",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C06",
+      "query": "\"3705158\" \"18 February\"",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C06",
+      "query": "\"Day of AI Australia\" \"Teacher Insights\" site:dl.acm.org",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C07",
+      "query": "\"From Teachers to Students\" site:dl.acm.org \"2025\"",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C06",
+      "query": "\"Day of AI Australia\" \"3705158\" site:arxiv.org",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    },
+    {
+      "source_id": "C07",
+      "query": "\"From Teachers to Students\" \"Canvas City\" site:arxiv.org",
+      "searched_at_utc": null,
+      "observed_window_utc": "2026-10-09T14:09:47Z/2026-10-09T14:11:11Z"
+    }
+  ],
+  "access_attempts": [
+    {
+      "url": "https://dl.acm.org/doi/10.1145/3641555.3705158",
+      "status": "unavailable_internal_error",
+      "read_scope": "none"
+    },
+    {
+      "url": "https://dl.acm.org/doi/10.1145/3724363.3729069",
+      "status": "unavailable_internal_error",
+      "read_scope": "none"
+    },
+    {
+      "url": "https://kypseli.ouc.ac.cy/entities/publication/7ac4b4cb-42fe-4ff3-b7d3-a0540a9b70af",
+      "status": "direct_unavailable_indexed_available",
+      "read_scope": "indexed_institution_metadata_abstract"
+    },
+    {
+      "url": "https://research.unsw.edu.au/people/dr-jake-renzella/publications",
+      "status": "readable",
+      "read_scope": "institution_bibliography"
+    },
+    {
+      "url": "https://sigcse2025.sigcse.org/details/sigcse-ts-2025-posters/55/Day-of-AI-Australia-Teacher-Insights-from-a-Nation-Wide-AI-Literacy-Program-for-K-12",
+      "status": "readable",
+      "read_scope": "official_program_abstract_track_event"
+    },
+    {
+      "url": "https://iticse.acm.org/2025/program/",
+      "status": "readable",
+      "read_scope": "program_overview"
+    },
+    {
+      "url": "https://ouc.academia.edu/mariakasinidou",
+      "status": "readable",
+      "read_scope": "author_profile_link_to_uploaded_paper"
+    },
+    {
+      "url": "https://www.academia.edu/166234533/From_Teachers_to_Students_Evaluating_Canvas_City_as_a_Path_to_AI_Literacy",
+      "status": "readable",
+      "read_scope": "author_uploaded_paper_html_text_DOI_method_results_limitations"
+    },
+    {
+      "url": "https://www.academia.edu/166234533/From_Teachers_to_Students_Evaluating_Canvas_City_as_a_Path_to_AI_Literacy",
+      "status": "download_link_internal_error",
+      "read_scope": "PDF_not_read"
+    },
+    {
+      "url": "https://sigcse2025.sigcse.org/details/sigcse-ts-2025-birds-of-a-feather/19/Building-Global-AI-Literacy-Preparing-Teachers-for-the-Future-of-AI-Driven-Classroom",
+      "status": "readable",
+      "read_scope": "official_BOF_program_abstract"
+    }
+  ],
+  "samples": [
+    {
+      "source_id": "C06",
+      "title": "Day of AI Australia: Teacher Insights from a Nation-Wide AI Literacy Program for K-12 Students",
+      "doi": "10.1145/3641555.3705158",
+      "official_url": "https://dl.acm.org/doi/10.1145/3641555.3705158",
+      "dates": {
+        "first_public": null,
+        "online": null,
+        "issue": "2025",
+        "preprint": null
+      },
+      "date_evidence": [
+        {
+          "url": "https://orcid.org/0000-0002-9587-1196",
+          "reported_date": "2025-02-18",
+          "role": "indexed_ORCID_Crossref_fed_not_publisher_original"
+        },
+        {
+          "url": "https://sigcse2025.sigcse.org/details/sigcse-ts-2025-posters/55/Day-of-AI-Australia-Teacher-Insights-from-a-Nation-Wide-AI-Literacy-Program-for-K-12",
+          "reported_date": "2025-02-28",
+          "role": "event_not_online_or_first_public"
+        }
+      ],
+      "school_stage": "Upper primary/early secondary ages 10–16 curriculum target; participating school teachers; breakdown unknown.",
+      "method": "Official poster abstract reports post-lesson feedback from over 60 teachers; original instruments/design remain unknown.",
+      "decision": "retain_partial_historical_bibliography_pending_publisher",
+      "exclusion_reason": "Exclude causal student gains, nationwide representative efficacy, and current-week news.",
+      "read_scope": "official_program_abstract_and_institution_bibliography; ACM fulltext unavailable",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "high_risk_questions": [
+        "Does original poster support only teacher feedback, rather than measured student learning or causal efficacy?",
+        "Can publisher history or lawful original establish online date and earlier versions?"
+      ],
+      "prior_record_id": null,
+      "prior_sample_id": "C06-01"
+    },
+    {
+      "source_id": "C07",
+      "title": "From Teachers to Students: Evaluating Canvas City as a Path to AI Literacy",
+      "doi": "10.1145/3724363.3729069",
+      "official_url": "https://dl.acm.org/doi/10.1145/3724363.3729069",
+      "dates": {
+        "first_public": null,
+        "online": null,
+        "issue": "2025",
+        "preprint": null
+      },
+      "date_evidence": [
+        {
+          "url": "https://kypseli.ouc.ac.cy/entities/publication/7ac4b4cb-42fe-4ff3-b7d3-a0540a9b70af",
+          "reported_date": "2025-06-27",
+          "role": "institution_Date_Issued_not_verified_first_online"
+        },
+        {
+          "url": "https://www.academia.edu/166234533/From_Teachers_to_Students_Evaluating_Canvas_City_as_a_Path_to_AI_Literacy",
+          "reported_date": "2025-06-27/2025-07-02",
+          "role": "paper_ACM_reference_conference_range_not_release_date"
+        }
+      ],
+      "school_stage": "Primary and secondary in-service teachers confirmed in original author-uploaded sections 3.3–3.4; no student participants.",
+      "method": "Prolific single-group survey: 96 recruited, six non-current teachers excluded, final 90. Self-reported knowledge before/after lesson/tool, tool Likert ratings, two open questions, thematic analysis; no student learning trial or controlled causal design established.",
+      "decision": "retain_historical_teacher_study; school_stage_and_design_resolved_from_author_original",
+      "exclusion_reason": "Exclude measured student outcomes and causal effects; teachers evaluated potential classroom use; direct student feedback is future work.",
+      "read_scope": "author_uploaded_original_text DOI/title, sections3.3/3.4, results and limitations; rendered PDF and publisher formal text not verified",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "high_risk_questions": [
+        "Independently read original sections3.3/3.4 and Limitations to verify teacher eligibility and absence of student outcomes.",
+        "Distinguish teacher self-report pre/post from objective literacy tests or causal effects.",
+        "Verify publisher online date and author-upload version/deposit history separately."
+      ],
+      "prior_record_id": null,
+      "prior_sample_id": "C07-01",
+      "original_evidence_url": "https://www.academia.edu/166234533/From_Teachers_to_Students_Evaluating_Canvas_City_as_a_Path_to_AI_Literacy",
+      "newly_resolved": [
+        "DOI/title independently visible in author-uploaded paper",
+        "actual primary/secondary teacher participant eligibility",
+        "single-group self-report design",
+        "student feedback explicitly future work"
+      ]
+    },
+    {
+      "source_id": "C06",
+      "title": "Building Global AI Literacy: Preparing Teachers for the Future of AI-Driven Classrooms",
+      "doi": "10.1145/3641555.3705101",
+      "official_url": "https://dl.acm.org/doi/10.1145/3641555.3705101",
+      "dates": {
+        "first_public": null,
+        "online": null,
+        "issue": "2025",
+        "preprint": null
+      },
+      "date_evidence": [
+        {
+          "url": "https://sigcse2025.sigcse.org/details/sigcse-ts-2025-birds-of-a-feather/19/Building-Global-AI-Literacy-Preparing-Teachers-for-the-Future-of-AI-Driven-Classroom",
+          "reported_date": "2025-02-27",
+          "role": "session_event"
+        }
+      ],
+      "school_stage": "K–12 teacher development discussion",
+      "method": "Birds of a Feather interactive discussion, not an empirical outcome study.",
+      "decision": "exclude_empirical_research_evidence",
+      "exclusion_reason": "Organizer program reach statements do not constitute independently audited teacher/student causal evidence.",
+      "read_scope": "official_program_abstract_and_UNSW_bibliography",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "high_risk_questions": [
+        "Do not convert organizer outreach totals into study sample or efficacy."
+      ],
+      "prior_record_id": null,
+      "prior_sample_id": "C06-02"
+    }
+  ],
+  "formal_full_text_checked": 0,
+  "author_original_sections_checked": 1,
+  "new_unique_doi": 0,
+  "prior_audit_revisits": 3,
+  "remaining": [
+    "C06 poster original methods/instruments",
+    "C06/C07 publisher date histories and earliest-public versions",
+    "C07 author upload date/version and formatted PDF integrity"
+  ],
+  "timing_note": "Exact first-read start and per-query server timestamps not recorded; null retained. First recorded clock14:09:47; evidence-review completion clock14:11:23. Integrator records delivery.",
+  "started_at_basis": "first recorded clock; initial repo read had begun; earlier exact start unknown"
+}

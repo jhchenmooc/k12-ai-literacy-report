@@ -71,3 +71,5 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-0070","KB-2025-0007","published_in","source","C05","https://repository.isls.org/handle/1/11944","bibliographic_checked"
 "KR-0071","KB-2025-0008","has_category","vocabulary","K2","https://dl.acm.org/doi/10.1145/3702652.3744217","bibliographic_checked"
 "KR-0072","KB-2025-0008","published_in","source","C08","https://dl.acm.org/doi/10.1145/3702652.3744217","bibliographic_checked"
+"KR-0073","KB-2025-0009","has_category","vocabulary","K2","https://dl.acm.org/doi/10.1145/3724363.3729069","bibliographic_checked"
+"KR-0074","KB-2025-0009","published_in","source","C07","https://dl.acm.org/doi/10.1145/3724363.3729069","bibliographic_checked"

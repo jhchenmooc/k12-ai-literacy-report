@@ -242,3 +242,17 @@
 **三→六組決策**：暫不擴充。B/C有99秒／183秒有界搜尋觀察且重疊81秒，但A開始未留存，完整牆鐘／串行基準與費用unknown；不能報實證加速倍數。來源直接讀取受阻及整合／第二輪補查仍是瓶頸。下一批維持三組並完整記dispatch至交付及整合工時；先补C06/C07/J10/C05/C08，再沿優先級J15–J19/C09–C12，未查來源不得報零命中。
 
 **本整合[PR #90](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/90)的GitHub閘門**：本地195/195既有tests、CSV安全與知識庫／年度索引／出版驗證皆通過；僅修正主表固定總數、固定conference集合及Windows測試路徑假設，未改出版程式。PR最新HEAD verify、合併及main verify/deploy須由實際GitHub結果另行核對，不預寫成功。合併後以本PR的merge SHA與Actions為準，下一session先核對該鏈；CI通過不等於來源真實或正式出刊。基準Run不是本次整合的最終部署證據。
+
+### 2026-10-09｜P0第一波補核：三組local平行與下一波
+
+**已確認上批驗收**：PR #90最新HEAD `e61e236634a25b05e5e148b92841f6bcfd9060ff` 的[verify Run37940604564](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37940604564)成功；合併main `ade85459b2f2809787866bfca258190c0a007aa9`，本次開工再次確認[Run37940711049](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37940711049) verify/deploy成功，無open PR。這補正上段提交時尚未寫入的GitHub結果。
+
+**第一波實際工作與證據**：使用者已同意六個工作組分兩波、同時三組，而非六個同時執行者；電腦持續開機，維持local。乾淨checkout中A J10/J11、B C06/C07、C C05/C08各寫[獨立暫存](p0-followup-wave1-2026-10-09/)，中央核對正式表與出版檔雜湊後獨占整合。六來源九個舊樣本，組間DOI重複0，四筆既有主表重訪、五筆旧audit/staging；沒有新發現DOI。新增一筆C07歷史書目、補一筆J11出版社版本日期；records31→32、relations72→74、search runs19→25，唯一來源ID仍17/60，總命中unknown、全批partial。具體裁決、原文可讀範圍及獨立核查見[整合報告](p0-followup-wave1-2026-10-09/integration.md)。
+
+- J11 `101041`作者上傳出版稿footer確認2026-04-02 Available online；既有書目補該出版社manifestation日期，並非已窮盡同作品更早公開。兩波連結2573與T1/T2大池分開；不採網絡教學因果。C07 `3729069`作者原文與獨立核查支持現職小學／中學教師單組自評，沒有直接學生成效；新主表首發unknown、issue_year2025。全部保留bibliographic_checked，不升content_checked。
+- J10 `108779`機構10/27明標Early online，與作者稿footer10/9仍衝突，非單純無關匯出。C05 `817482`作者preprint N98與情境分組合计68、10頁與正式9頁，不能自行修補數字或冒認正式v2也有同一問題。C05另一poster與C06原始方法／日期仍受阻。
+- **日期用語補正**：C08 arXiv2/27是submission時戳，不是已核證精確公開可讀日；上批把它直接寫公開日過度確定。current metadata的related DOI支持較早同作品預印本，仍不得以ACM8/2正式版日期冒稱全球首次公開；正式／作者版本不得自動合併。
+
+**尚待完成**：上述衝突、C05 first-public/v2歷程、C06正式原文與日期、C07正式publisher／作者版本歷程、C08正式版與preprint逐段差異，完整正式全文仍未核讀。B初始repo閱讀／各查詢精確時間未留存，以null與觀測窗記錄；321秒dispatch參考至最後交付可證平行批次牆鐘，但沒有實測串行／費用，不報加速倍數。
+
+**下一波與GitHub閘門**：第一波整合[PR #91](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/91)須核對最新HEAD verify，合併後核main verify/deploy；本段提交時不預寫這一波GitHub成功，實際結果隨PR描述補上。完成後重新查看usage，再按授權接A J15–J17、B J18–J19/C09、C C10–C12，每組來源責任隔離。政策版本補核、其餘39期刊／21會議覆蓋及P0對帳仍待完成；不提前P1/P2。九筆候選hold/source_checked=false、正式新期別零、不自動搜尋／發刊及v1.6規則保持不變。
