@@ -1,0 +1,928 @@
+{
+ "scope": "政策紀錄書目核對：亞洲組（日本、中國、韓國、香港、新加坡、臺灣），19 筆",
+ "started_utc": "2026-10-09T18:26:27Z",
+ "ended_utc": "2026-10-09T18:32:28Z",
+ "requests": [
+  {
+   "url": "https://www.mext.go.jp/a_menu/other/mext_02412.html",
+   "utc": "2026-10-09T18:26:43Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html",
+   "utc": "2026-10-09T18:26:44Z",
+   "http": null,
+   "curl_exit": 35,
+   "error": "curl: (35) Recv failure: Connection reset by peer"
+  },
+  {
+   "url": "https://www.moe.gov.cn/srcsite/A16/s3342/202604/t20260410_1433240.html",
+   "utc": "2026-10-09T18:26:52Z",
+   "http": null,
+   "curl_exit": 35,
+   "error": "curl: (35) Recv failure: Connection reset by peer"
+  },
+  {
+   "url": "https://applications.edb.gov.hk/circular/upload/EDBCM/EDBCM23109E.pdf",
+   "utc": "2026-10-09T18:27:00Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/debp.html",
+   "utc": "2026-10-09T18:27:03Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementAILiteracyLearningFramework(PrimaryAndSecondarySchools)_EN.pdf",
+   "utc": "2026-10-09T18:27:05Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementIIGuideToUsingAIInTeaching(PrimaryAndSecondarySchools)_EN.pdf",
+   "utc": "2026-10-09T18:27:13Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://applications.edb.gov.hk/circular/upload/EDBCM/EDBCM26113E.pdf",
+   "utc": "2026-10-09T18:27:22Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.moe.gov.sg/news/parliamentary-replies/20230207-managing-the-use-of-artificial-intelligence-bots-such-as-chatgpt-in-schools",
+   "utc": "2026-10-09T18:27:24Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.moe.gov.sg/news/press-releases/20230920-more-support-for-schools-and-students-to-shape-the-future-of-learning",
+   "utc": "2026-10-09T18:27:25Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.moe.gov.sg/education-in-sg/educational-technology-journey/edtech-masterplan/artificial-intelligence-in-education",
+   "utc": "2026-10-09T18:27:26Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.moe.gov.sg/news/speeches/20260303-moe-committee-of-supply-debate-2026-response-by-minister-of-state-for-education-jasmin-lau",
+   "utc": "2026-10-09T18:27:26Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.ey.gov.tw/Page/448DE008087A1971/69349d8a-b2be-406c-a997-8bf919259f85",
+   "utc": "2026-10-09T18:27:27Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=82674&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+   "utc": "2026-10-09T18:27:33Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=92297&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+   "utc": "2026-10-09T18:27:35Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=95261&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+   "utc": "2026-10-09T18:27:39Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=104462&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+   "utc": "2026-10-09T18:27:43Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=104984&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+   "utc": "2026-10-09T18:27:45Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html",
+   "utc": "2026-10-09T18:27:49Z",
+   "http": null,
+   "curl_exit": 35,
+   "error": "curl: (35) Recv failure: Connection reset by peer"
+  },
+  {
+   "url": "https://www.moe.gov.cn/srcsite/A16/s3342/202604/t20260410_1433240.html",
+   "utc": "2026-10-09T18:27:56Z",
+   "http": null,
+   "curl_exit": 35,
+   "error": "curl: (35) Recv failure: Connection reset by peer"
+  },
+  {
+   "url": "https://www.mext.go.jp/content/20230710-mxt_shuukyo02-000030823_004.pdf",
+   "utc": "2026-10-09T18:28:22Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.mext.go.jp/content/20230710-mxt_shuukyo02-000030823_005.pdf",
+   "utc": "2026-10-09T18:28:29Z",
+   "http": 200,
+   "curl_exit": 0
+  },
+  {
+   "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html",
+   "utc": "2026-10-09T18:30:26Z",
+   "http": 200,
+   "curl_exit": 0,
+   "effective_url": "http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html"
+  },
+  {
+   "url": "https://www.moe.gov.cn/srcsite/A16/s3342/202604/t20260410_1433240.html",
+   "utc": "2026-10-09T18:30:31Z",
+   "http": null,
+   "curl_exit": 35,
+   "error": "curl: (35) Recv failure: Connection reset by peer"
+  },
+  {
+   "url": "https://www.moe.gov.cn/",
+   "utc": "2026-10-09T18:30:38Z",
+   "http": 200,
+   "curl_exit": 0,
+   "effective_url": "http://www.moe.gov.cn/"
+  },
+  {
+   "url": "https://www.moe.gov.cn/srcsite/A16/s3342/202604/t20260410_1433240.html",
+   "utc": "2026-10-09T18:30:56Z",
+   "http": null,
+   "curl_exit": 35,
+   "error": "curl: (35) Recv failure: Connection reset by peer"
+  }
+ ],
+ "items": [
+  {
+   "record_id": "KB-2023-0003",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "原頁連結文字「Chat GPT 等の生成AI の学校現場…」僅 ChatGPT／Chat GPT 空白差異；列於「教育委員会等向け事務連絡」欄，PDF 首頁標「事務連絡」"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "文部科学省網站；PDF 署名文部科学省初等中等教育局学校デジタル化プロジェクトチーム"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "對日本各都道府縣教育委員會等"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "原頁「(令和5年5月19日)」＝2023-05-19；PDF 首頁同"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "事務連絡（通知性質）→ government_announcement 合理"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "mext.go.jp 官方「生成AIの利用について」彙整頁，文件 PDF 由此頁連出"
+    }
+   },
+   "page_date_text": "(令和5年5月19日)Chat GPT 等の生成AI の学校現場の利用に向けた今後の対応について；PDF：令和５年５月１９日",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:26:43Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字；另讀該頁連出之 PDF（/content/20230710-mxt_shuukyo02-000030823_005.pdf，HTTP 200，2026-10-09T18:28:29Z）",
+   "notes": [
+    "primary_url 為彙整頁而非文件本身；該頁目前主推 Ver.2.0（令和6年12月26日）"
+   ]
+  },
+  {
+   "record_id": "KB-2023-0004",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "原頁「「初等中等教育段階における生成AIの利用に関する暫定的なガイドライン」の 作成について(通知)」含紀錄題名（生成AI／生成 AI 空白差異）"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "文部科学省；PDF 署名文部科学省初等中等教育局長（文號 ５文科初第 758 号）"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "日本初等中等教育"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "原頁「(令和5年7月4日)」＝2023-07-04；另有「令和5年7月に公表した暫定的なガイドライン」；PDF 首頁「令和５年７月４日」"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "暫定ガイドライン → official_guidance"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "mext.go.jp 官方彙整頁，連出通知 PDF"
+    }
+   },
+   "page_date_text": "(令和5年7月4日)…作成について(通知)；PDF：令和５年７月４日",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:26:43Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字；另讀 PDF（/content/20230710-mxt_shuukyo02-000030823_004.pdf，HTTP 200，2026-10-09T18:28:22Z）",
+   "notes": [
+    "primary_url 與 KB-2023-0003 相同（彙整頁）；頁面標題為「生成AIの利用について：文部科学省」"
+   ]
+  },
+  {
+   "record_id": "KB-2024-0005",
+   "verdict": "mismatch",
+   "checks": {
+    "title": {
+     "status": "mismatch",
+     "note": "原頁標題為「教育部部署加强中小学人工智能教育」（與紀錄括號內官方新聞題名相符），但紀錄主題名「教育部办公厅关于加强中小学人工智能教育的通知」在原頁未以此字樣出現，原頁僅寫「教育部办公厅印发通知」"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "原頁「来源：教育部」，moe.gov.cn"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "中國中小學"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "原頁「2024-12-02　来源：教育部」；為新聞發布日，通知本身原頁僅寫「近日」印發，未寫通知簽發日"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "官方新聞稿 → government_announcement"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "moe.gov.cn 官方新聞頁（伺服器將 https 轉址至 http 同路徑）"
+    }
+   },
+   "page_date_text": "2024-12-02　来源：教育部",
+   "differences": [
+    {
+     "field": "title",
+     "record_value": "教育部办公厅关于加强中小学人工智能教育的通知（官方新闻：教育部部署加强中小学人工智能教育）",
+     "page_value": "教育部部署加强中小学人工智能教育",
+     "page_text": "近日，教育部办公厅印发通知，探索中小学人工智能教育实施途径，加强中小学人工智能教育。"
+    }
+   ],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:30:26Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字；前兩次（18:26:44Z、18:27:49Z）connection reset，第 3 次成功；effective URL 為 http://www.moe.gov.cn/…（伺服器轉址）",
+   "notes": [
+    "日期 2024-12-02 為新聞發布日；原頁未明寫通知本身的發布日"
+   ]
+  },
+  {
+   "record_id": "KB-2026-0088",
+   "verdict": "unverifiable",
+   "checks": {
+    "title": {
+     "status": "unverifiable",
+     "note": "原頁讀不到"
+    },
+    "issued_by": {
+     "status": "unverifiable",
+     "note": "原頁讀不到"
+    },
+    "applies_to_country": {
+     "status": "unverifiable",
+     "note": "原頁讀不到"
+    },
+    "first_published_on": {
+     "status": "unverifiable",
+     "note": "原頁讀不到"
+    },
+    "record_type": {
+     "status": "unverifiable",
+     "note": "原頁讀不到"
+    },
+    "primary_url": {
+     "status": "unverifiable",
+     "note": "網域為 moe.gov.cn（官方），但頁面內容讀不到"
+    }
+   },
+   "page_date_text": "",
+   "differences": [],
+   "http_status": null,
+   "read_utc": null,
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字；4 次嘗試（18:26:52Z、18:27:56Z、18:30:31Z、18:30:56Z）皆 curl (35) Recv failure: Connection reset by peer；agent proxy 狀態頁記錄 www.moe.gov.cn:443 tunnel closed (code 1006)。未改走 http、未停用 TLS 驗證",
+   "notes": [
+    "同網域另一頁（KB-2024-0005）第 3 次可讀，屬間歇性 reset"
+   ]
+  },
+  {
+   "record_id": "KB-2020-0001",
+   "verdict": "match",
+   "checks": {
+    "issued_by": {
+     "status": "ok",
+     "note": "moe.go.kr 教育部보도자료，頁面署「교육부」"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "韓國教育政策"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "moe.go.kr 官方보도자료原頁（boardID=294）"
+    },
+    "title": {
+     "status": "ok",
+     "note": "頁面標題「제19차 사회관계장관회의 (인공지능시대 교육정책 등)」，正文小標「인공지능 시대 교육정책방향과 핵심과제」，附件「[별첨.1호안건] 인공지능시대 교육정책방향과 핵심과제.pdf」，括號補充（제19차 사회관계장관회의 안건）可對應"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "頁面登記日「2020-11-20」，附件名「11-20(금) 10시30분보도자료」"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "部會會議案之政策方向與核心課題 → official_guidance 可接受"
+    }
+   },
+   "page_date_text": "2020-11-20；附件「[교육부 11-20(금) 10시30분보도자료]」",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:33Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字",
+   "notes": [
+    "primary_url 為新聞稿頁，政策文件為其附件 PDF（未下載）"
+   ]
+  },
+  {
+   "record_id": "KB-2022-0001",
+   "verdict": "match",
+   "checks": {
+    "issued_by": {
+     "status": "ok",
+     "note": "moe.go.kr 教育部보도자료，頁面署「교육부」"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "韓國教育政策"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "moe.go.kr 官方보도자료原頁（boardID=294）"
+    },
+    "title": {
+     "status": "ok",
+     "note": "頁面副題「- 교육분야 인공지능 윤리원칙 최초 마련 -」；頁面主標題為「인공지능, 교육현장에서 안전하게 활용해요!」"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "頁面「2022-08-11」，正文「교육부는 8월 11일(목)…」"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "윤리원칙（規範原則）→ framework"
+    }
+   },
+   "page_date_text": "2022-08-11；正文「8월 11일(목)」",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:35Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字"
+  },
+  {
+   "record_id": "KB-2023-0005",
+   "verdict": "match",
+   "checks": {
+    "issued_by": {
+     "status": "ok",
+     "note": "moe.go.kr 教育部보도자료，頁面署「교육부」"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "韓國教育政策"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "moe.go.kr 官方보도자료原頁（boardID=294）"
+    },
+    "title": {
+     "status": "ok",
+     "note": "副題「「인공지능(AI) 디지털교과서 추진방안」 발표」"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "頁面「2023-06-08」，附件「06-08(목) 브리핑시(14시) 보도자료」"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "推動方案發表新聞稿 → government_announcement"
+    }
+   },
+   "page_date_text": "2023-06-08",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:39Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字"
+  },
+  {
+   "record_id": "KB-2025-0043",
+   "verdict": "match",
+   "checks": {
+    "issued_by": {
+     "status": "ok",
+     "note": "moe.go.kr 教育部보도자료，頁面署「교육부」"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "韓國教育政策"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "moe.go.kr 官方보도자료原頁（boardID=294）"
+    },
+    "title": {
+     "status": "ok",
+     "note": "頁面標題「모두를 위한 인공지능(AI) 인재양성 방안 발표」，副題含「(AI for All)」"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "頁面「2025-11-10」，附件「11-10(월) 브리핑시(14시) 보도자료」"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "人才培育方案（附件別添方案本文）→ official_guidance 可接受"
+    }
+   },
+   "page_date_text": "2025-11-10",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:43Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字"
+  },
+  {
+   "record_id": "KB-2025-0044",
+   "verdict": "mismatch",
+   "checks": {
+    "issued_by": {
+     "status": "ok",
+     "note": "moe.go.kr 教育部보도자료，頁面署「교육부」"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "韓國教育政策"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "moe.go.kr 官方보도자료原頁（boardID=294）"
+    },
+    "title": {
+     "status": "ok",
+     "note": "頁面標題「교육부와 교육청이 함께 ‘수행평가 시, 인공지능(AI) 활용 관리 방안’을 마련하였습니다」含紀錄題名"
+    },
+    "first_published_on": {
+     "status": "mismatch",
+     "note": "紀錄為月精度 2025-12；原頁明寫日精度登記日「2025-12-23」（class reg-date），附件名另標「12-24(수) 조간보도자료」，兩者差一天"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "評量管理方案 → official_guidance"
+    }
+   },
+   "page_date_text": "2025-12-23；附件「[교육부 12-24(수) 조간보도자료]」",
+   "differences": [
+    {
+     "field": "first_published_on／date_precision",
+     "record_value": "2025-12（month）",
+     "page_value": "2025-12-23（頁面登記日）；附件標 12-24(수) 조간",
+     "page_text": "2025-12-23；[교육부 12-24(수) 조간보도자료]"
+    }
+   ],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:45Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字",
+   "notes": [
+    "原頁日精度日期有兩個（登記日 12-23 與報紙早報禁發日 12-24），若紀錄因此刻意取月精度，需在紀錄附註說明；本核對不判定取哪一天"
+   ]
+  },
+  {
+   "record_id": "KB-2023-0006",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "PDF「EDUCATION BUREAU CIRCULAR MEMORANDUM NO. 109 /2023」＋「Curriculum Modules on Innovation and Technology Education - “Enriched Module on Coding Education for Upper Primary Level” and “Module on Artificial Intelligence for Junior Secondary Level”」（僅空白、破折號差異）"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "From: Secretary for Education；Education Bureau"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "香港公營學校"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "PDF「Date : 19 June 2023」"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "通告公布課程單元供學校採用；以 framework 記錄可接受（載體為通告）"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "applications.edb.gov.hk 官方通告 PDF"
+    }
+   },
+   "page_date_text": "Date : 19 June 2023",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:00Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字",
+   "notes": [
+    "record_type 判斷依據：通告本身為公告性質，內容為兩套課程單元；如專案規則要求以載體分類，可再議"
+   ]
+  },
+  {
+   "record_id": "KB-2026-0089",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "頁面標題「Blueprint for Digital Education Development in Primary and Secondary Schools - Education Bureau」"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "edb.gov.hk；頁面述 EDB 委託課程發展議會編撰"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "香港中小學"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "頁面 EDBC/EDBCM 欄「17/06/2026 [EDBC No. 11/2026] The release of the Blueprint for Digital Education Development in Primary and Secondary Schools」；頁面另有政府新聞公報連結 P2026061700342（2026-06-17）"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "藍圖 → official_guidance"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "edb.gov.hk 官方藍圖專頁"
+    }
+   },
+   "page_date_text": "17/06/2026 [EDBC No. 11/2026] The release of the Blueprint…",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:03Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字",
+   "notes": [
+    "頁尾「Last revision date: 01 July 2019」為版型殘留，非發布日；日期依據為頁面列出的 EDBC No. 11/2026 發布通告日期"
+   ]
+  },
+  {
+   "record_id": "KB-2026-0090",
+   "verdict": "mismatch",
+   "checks": {
+    "issued_by": {
+     "status": "ok",
+     "note": "封面「Published by the Education Bureau, HKSARG」"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "香港中小學"
+    },
+    "title": {
+     "status": "ok",
+     "note": "封面「Supplement I / AI Literacy Learning Framework for Primary and Secondary Schools」"
+    },
+    "first_published_on": {
+     "status": "mismatch",
+     "note": "PDF 封面只寫「2026」（年精度）；PDF 內未見日精度發布日。紀錄 2026-06-17 為日精度"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "學習框架 → framework"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "edb.gov.hk 官方附件 PDF，由藍圖專頁連出"
+    }
+   },
+   "page_date_text": "封面「Prepared by the Curriculum Development Council / Published by the Education Bureau, HKSARG / 2026」",
+   "differences": [
+    {
+     "field": "first_published_on／date_precision",
+     "record_value": "2026-06-17（day）",
+     "page_value": "2026（year）",
+     "page_text": "封面：2026"
+    }
+   ],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:05Z",
+   "method": "curl 讀官方 PDF（27.8 MB）；PDF 為圖像無文字層，pdftotext 無輸出，以 pdftoppm 50 dpi 轉第 1–3 頁與末頁影像目視；中間頁未逐頁檢視",
+   "notes": [
+    "2026-06-17 可在藍圖專頁（KB-2026-0089 primary_url）的 EDBC No. 11/2026 日期找到，但不在本筆 primary_url 上",
+    "因只目視封面、前兩頁與末頁，不能排除內頁另有日期"
+   ]
+  },
+  {
+   "record_id": "KB-2026-0091",
+   "verdict": "mismatch",
+   "checks": {
+    "issued_by": {
+     "status": "ok",
+     "note": "封面「Published by the Education Bureau, HKSARG」"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "香港中小學"
+    },
+    "title": {
+     "status": "ok",
+     "note": "封面「Supplement II / Guide to Using AI in Teaching in Primary and Secondary Schools」"
+    },
+    "first_published_on": {
+     "status": "mismatch",
+     "note": "PDF 封面只寫「2026」（年精度）；紀錄 2026-06-17 為日精度"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "教學使用指南 → official_guidance"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "edb.gov.hk 官方附件 PDF，由藍圖專頁連出"
+    }
+   },
+   "page_date_text": "封面「Published by the Education Bureau, HKSARG / 2026」",
+   "differences": [
+    {
+     "field": "first_published_on／date_precision",
+     "record_value": "2026-06-17（day）",
+     "page_value": "2026（year）",
+     "page_text": "封面：2026"
+    }
+   ],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:13Z",
+   "method": "curl 讀官方 PDF（30.4 MB）；PDF 為圖像無文字層，以 pdftoppm 50 dpi 轉第 1–3 頁與末頁影像目視；中間頁未逐頁檢視",
+   "notes": [
+    "同 KB-2026-0090：日精度日期只見於藍圖專頁",
+    "不能排除內頁另有日期"
+   ]
+  },
+  {
+   "record_id": "KB-2026-0092",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "PDF「EDUCATION BUREAU CIRCULAR MEMORANDUM NO. 113/2026」＋「“Preliminary Study of Artificial Intelligence” Strand (Pilot Version) of the Information and Innovation Technology Curriculum Framework for Primary Schools」"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "From : Secretary for Education；Education Bureau"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "香港小學"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "PDF「Date : 21 July 2026」"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "通告發放課程框架之一環（試行版）；framework 可接受（載體為通告）"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "applications.edb.gov.hk 官方通告 PDF"
+    }
+   },
+   "page_date_text": "Date : 21 July 2026",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:22Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字",
+   "notes": [
+    "藍圖專頁註明該 Strand 文件本身「Chinese version only」；本筆 primary_url 為英文通告"
+   ]
+  },
+  {
+   "record_id": "KB-2023-0007",
+   "verdict": "match",
+   "checks": {
+    "issued_by": {
+     "status": "ok",
+     "note": "moe.gov.sg「A Singapore Government Agency Website」，MOE"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "新加坡學校"
+    },
+    "title": {
+     "status": "ok",
+     "note": "頁面標題「Managing the use of artificial intelligence (AI) bots such as ChatGPT in schools」，分類「Parliamentary replies」"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "「Published on: 07 Feb 2023」"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "國會書面答覆 → government_announcement"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "moe.gov.sg 原頁（curl 可讀，非 JS 空頁）"
+    }
+   },
+   "page_date_text": "Published on: 07 Feb 2023",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:24Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字"
+  },
+  {
+   "record_id": "KB-2023-0008",
+   "verdict": "match",
+   "checks": {
+    "issued_by": {
+     "status": "ok",
+     "note": "moe.gov.sg「A Singapore Government Agency Website」，MOE"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "新加坡學校"
+    },
+    "title": {
+     "status": "ok",
+     "note": "頁面標題「More Support for Schools and Students to Shape the Future of Learning」；正文小標「Launch of EdTech Masterplan 2030」及「MOE's \"Transforming Education through Technology\" Masterplan 2030」"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "「Published on: 20 Sep 2023」，正文「Schools Work Plan Seminar on 20 September 2023」"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "新聞稿 → government_announcement"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "moe.gov.sg press release 原頁"
+    }
+   },
+   "page_date_text": "Published on: 20 Sep 2023",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:25Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字"
+  },
+  {
+   "record_id": "KB-2026-0093",
+   "verdict": "match",
+   "checks": {
+    "issued_by": {
+     "status": "ok",
+     "note": "moe.gov.sg「A Singapore Government Agency Website」，MOE"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "新加坡學校"
+    },
+    "title": {
+     "status": "ok",
+     "note": "頁面標題「Artificial intelligence in education」；頁內摺疊段標題「MOE's position on AI use in education and assessment」（Next.js 資料內）與紀錄相符"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "原頁無「Published on」；僅「Last Updated: 31 Jul 2026」（更新日，非發布日），紀錄留空正確"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "立場／使用原則 → official_guidance"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "moe.gov.sg 官方頁"
+    }
+   },
+   "page_date_text": "Last Updated: 31 Jul 2026（更新日）",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:26Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字；另以 Python -I 解析頁內 self.__next_f 資料取得摺疊段內容",
+   "notes": [
+    "紀錄題名為頁內段落標題，非頁面標題"
+   ]
+  },
+  {
+   "record_id": "KB-2026-0094",
+   "verdict": "mismatch",
+   "checks": {
+    "issued_by": {
+     "status": "ok",
+     "note": "moe.gov.sg「A Singapore Government Agency Website」，MOE"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "新加坡學校"
+    },
+    "title": {
+     "status": "mismatch",
+     "note": "頁面標題為「MOE Committee of Supply Debate 2026 Response by Minister of State for Education Jasmin Lau」；紀錄主題名「“Four Learns” approach to strengthen students' AI literacy」及括號內「COS 2026 announcements」原頁未見此字樣；原頁有「learn about AI, learn to use AI, learn with AI, and most importantly, learn beyond AI」與「four important ways」"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "「Published on: 03 Mar 2026」"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "部長級國會辯論發言 → government_announcement 可接受"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "moe.gov.sg speeches 原頁"
+    }
+   },
+   "page_date_text": "Published on: 03 Mar 2026",
+   "differences": [
+    {
+     "field": "title",
+     "record_value": "MOE Committee of Supply Debate 2026: “Four Learns” approach to strengthen students' AI literacy（Response by MOS Jasmin Lau; COS 2026 announcements）",
+     "page_value": "MOE Committee of Supply Debate 2026 Response by Minister of State for Education Jasmin Lau",
+     "page_text": "grep「Four Learns」0 筆；「announcement」0 筆；原頁有 We want every student to \"learn about AI, learn to use AI, learn with AI, and most importantly, learn beyond AI\"."
+    }
+   ],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:26Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字"
+  },
+  {
+   "record_id": "KB-2026-0095",
+   "verdict": "match",
+   "checks": {
+    "title": {
+     "status": "ok",
+     "note": "頁面標題「打造AI智慧教育新生態─AI人才方舟計畫」；正文「將於115至118年編列117.55億元推動「AI人才方舟計畫」」可對應括號（115–118年）"
+    },
+    "issued_by": {
+     "status": "ok",
+     "note": "行政院全球資訊網「院會議案」；正文述計畫由教育部推動（O-TW-EY 註記已預期此情形）"
+    },
+    "applies_to_country": {
+     "status": "ok",
+     "note": "臺灣中小學"
+    },
+    "first_published_on": {
+     "status": "ok",
+     "note": "「日期：115-05-21」＝2026-05-21"
+    },
+    "record_type": {
+     "status": "ok",
+     "note": "院會議案新聞 → government_announcement"
+    },
+    "primary_url": {
+     "status": "ok",
+     "note": "ey.gov.tw 官方原頁"
+    }
+   },
+   "page_date_text": "日期：115-05-21",
+   "differences": [],
+   "http_status": 200,
+   "read_utc": "2026-10-09T18:27:27Z",
+   "method": "curl（-L，瀏覽器 UA，經 agent proxy、TLS 驗證開啟）讀官方原頁；HTML 以 Python -I 去標籤；PDF 以 pdftotext 抽文字",
+   "notes": [
+    "院會日不等於教育部發布日；本筆紀錄的 issued_by 為行政院，與原頁一致"
+   ]
+  }
+ ],
+ "counts": {
+  "total": 19,
+  "match": 13,
+  "mismatch": 5,
+  "unverifiable": 1
+ },
+ "limits": [
+  "只讀 primary_url 原頁（日本另讀該頁連出的兩份通知 PDF 作為補充）；未使用 WebSearch／WebFetch；未讀 research/p0-bpol-2026-10-09/。",
+  "中國教育部 www.moe.gov.cn 間歇性 connection reset（agent proxy 記錄 tunnel closed code 1006）；KB-2026-0088 四次皆失敗，未改走 http、未停用 TLS 驗證。KB-2024-0005 第 3 次成功，伺服器將 https 轉址至 http 同路徑。",
+  "香港 Supplement I／II PDF 為圖像無文字層，環境無 OCR；僅以低解析度影像目視封面、前 2 頁與末頁，不能排除內頁有其他日期。",
+  "韓國 moe.go.kr 本次 5 頁皆一次成功（HTTP 200）。新加坡 MOE 本次 curl 可讀到伺服器端渲染內容（與工具指南 3.7 所記「JS 空頁」不同）。",
+  "record_type 是否「合理」屬判斷；HK 兩筆以通告為 primary_url 但記為 framework，判為可接受並附註。",
+  "原頁含聯絡人姓名、電話等個資，未寫入本檔；未存全文。"
+ ]
+}
