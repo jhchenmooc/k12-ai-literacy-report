@@ -37,7 +37,7 @@ test("unavailable searches must not claim zero hits",()=>{
 test("real knowledge classifications retain unverified status and journal links",()=>{
  const listed=JSON.parse(index(records,relations));
  assert.ok(["KB-2026-0012","KB-2026-0013"].every(id=>listed["by-category/K2"].includes(id)));
- assert.deepEqual(listed["by-journal/J06"],["KB-2026-0008"]);
+ assert.ok(listed["by-journal/J06"].includes("KB-2026-0008"));
  assert.ok(listed["by-journal/J02"].includes("KB-2026-0009"));
  for(const id of ["KB-2026-0002","KB-2026-0003"])assert.ok(listed["by-source/O-HK-EDB"].includes(id));
  const candIds=records.filter(r=>r.source_candidate_id).map(r=>r.record_id);
@@ -103,7 +103,7 @@ test("dated Springer studies map to monitored J03/J32 and original years",()=>{
 
 test("LAK conference papers have dated C03 source links",()=>{
  const x=JSON.parse(index(records,relations));
- assert.deepEqual(x["by-conference/C03"],["KB-2026-0012","KB-2026-0013"]);
+ assert.ok(["KB-2026-0012","KB-2026-0013"].every(id=>x["by-conference/C03"].includes(id)));
  assert.deepEqual(x["by-type/conference_paper"],records.filter(r=>r.record_type==="conference_paper").map(r=>r.record_id).sort());
  assert.ok(candidates.every(x=>x.decision==="hold"));
 });

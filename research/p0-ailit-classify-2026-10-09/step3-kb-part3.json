@@ -1,0 +1,1753 @@
+{
+ "items": [
+  {
+   "record_id": "KB-2026-0003",
+   "type": "source_document",
+   "title": "Digital Education AI in Education Series - AI+Subjects: Leveraging Generative AI to Enhance Learning and Teaching for Primary English Language (Basic Level)",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA:應用",
+    "T-PD:應用"
+   ],
+   "ai_lit_note": "教育局為小學英文教師開設的生成式AI教學培訓課程，對應「整合AI與教學法」「設計AI與教學法整合的策略」（依準則補充，生成式AI教學培訓判A）。",
+   "basis": "page",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0006",
+   "type": "source_document",
+   "title": "Online panel: Equity & Diversity in the Context of Critical AI Literacy",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:創造"
+   ],
+   "ai_lit_note": "批判性AI素養座談，探討AI如何複製不平等並引導教育者行動，對應「融入倫理思辨於AI問題解決教學」。",
+   "basis": "page",
+   "boundary": true,
+   "boundary_reason": "資料性質為活動公告（線上座談），非政策或研究；內容屬批判性AI素養。"
+  },
+  {
+   "record_id": "KB-2026-0009",
+   "type": "journal_article",
+   "title": "Measuring Acceptance of Age-Tiered AI Literacy Guidebooks: A Developmentally Informed Study of K-12 Students and Teachers",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解",
+    "S-ETH:理解"
+   ],
+   "ai_lit_note": "K-12師生對分齡AI素養指引手冊的接受度，對應「理解AI運作原理與限制」等學生AI素養內涵。",
+   "basis": "title_only",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0010",
+   "type": "framework",
+   "title": "Empowering Learners for the Age of AI: An AI Literacy Framework for Primary and Secondary Education",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-BAS",
+    "S-LRN",
+    "S-SYS"
+   ],
+   "ai_lit_note": "OECD與歐盟中小學AI素養框架（本框架參考來源），對應學生框架四面向，如「理解AI運作原理與限制」。",
+   "basis": "title_only",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0002",
+   "type": "journal_article",
+   "title": "Fostering Transversal Skills Through Open Schooling Supported by the CARE-KNOW-DO Pedagogical Model and the UNESCO AI Competencies Framework",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN:應用",
+    "S-BAS:應用"
+   ],
+   "ai_lit_note": "以UNESCO AI能力框架設計AI開放學校活動，但成效指標為跨領域能力，屬「應用AI工具強化領域學習」。",
+   "basis": "abstract",
+   "boundary": true,
+   "boundary_reason": "活動依UNESCO AI能力框架設計，但測量的是一般跨領域能力而非AI素養，A／B之間。"
+  },
+  {
+   "record_id": "KB-2026-0012",
+   "type": "conference_paper",
+   "title": "Do All Roads Lead to AI Literacy? Clustering Behavioral Patterns and Examining Outcomes in an Online AI Literacy Module for Secondary School Students",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解",
+    "S-LRN:應用"
+   ],
+   "ai_lit_note": "中學生線上AI素養模組的學習行為與AI素養成效，對應「理解AI運作原理與限制」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2024-0004",
+   "type": "government_announcement",
+   "title": "AI Digital Textbooks for 2025 to Realize Personalized Education for All",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN:應用",
+    "T-TEA:應用"
+   ],
+   "ai_lit_note": "韓國核定AI數位教科書供學生於英數與程式課使用並培訓教師，對應「應用AI工具強化領域學習」。",
+   "basis": "page",
+   "boundary": true,
+   "boundary_reason": "政策重點是AI工具（AI數位教科書）導入課堂，非師生AI素養本身；個人化功能是否屬師生直接與AI互動需管理者確認。"
+  },
+  {
+   "record_id": "KB-2026-0015",
+   "type": "journal_article",
+   "title": "Perspectives of secondary school students toward using generative AI as a summative assessment tool of social studies courses in Thailand",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN:應用",
+    "S-ETH:應用"
+   ],
+   "ai_lit_note": "高中生對以ChatGPT進行社會科總結性評量的看法，對應「應用AI工具強化領域學習」，並涉及準確性與倫理指引。",
+   "basis": "abstract",
+   "boundary": true,
+   "boundary_reason": "重點是AI輔助評量的使用知覺（B），但含學術誠信與過度依賴的討論，可能判A。"
+  },
+  {
+   "record_id": "KB-2025-0005",
+   "type": "journal_article",
+   "title": "Barriers to integrating artificial intelligence education: implications from five early adopters in South Korea",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA:應用",
+    "T-PD:理解"
+   ],
+   "ai_lit_note": "韓國AI教育核心教師推動AI教育的障礙，對應「評估AI與教學法整合的適切性」與教師專業角色。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0007",
+   "type": "conference_paper",
+   "title": "Utilizing LLMs to Support Teacher Understanding of AI Literacy",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD:理解",
+    "T-BAS:理解"
+   ],
+   "ai_lit_note": "以大型語言模型產出報告支持教師理解AI素養，對應「辨識與選用促進教師專業發展的AI教練」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0018",
+   "type": "journal_article",
+   "title": "Leveraging Onto-Epistemic Heterogeneity for “Outward” Exploration: Cultivating Critical AI Awareness in the ELA Classroom",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:理解"
+   ],
+   "ai_lit_note": "英文課培養學生批判性AI覺察、探究演算法偏見，對應「具備對AI的批判思考」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0012",
+   "type": "conference_paper",
+   "title": "Teaching Machine Learning to Senior Primary Students: Evaluating a Course for AI Literacy in a Hong Kong Primary School",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "小學六年級機器學習課程提升AI素養，對應「理解AI運作原理與限制」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0014",
+   "type": "journal_article",
+   "title": "From Lecture Hall to Homeroom: Co-Designing an AI Elective with Middle School CS Teachers",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解",
+    "T-TEA:應用"
+   ],
+   "ai_lit_note": "與中學教師共同設計並實施AI選修課程，對應「理解AI運作原理與限制」與「設計AI與教學法整合的策略」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0017",
+   "type": "journal_article",
+   "title": "AI literacy development in middle school: Profiles and demographic predictors from an ABCE perspective",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "以ABCE架構與量表評量國中生AI素養剖面，對應「理解AI運作原理與限制」「具備對AI的批判思考」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0020",
+   "type": "journal_article",
+   "title": "Design of a science integrated secondary school AI literacy curriculum: A youth & AI expert guided design-based research approach",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解",
+    "S-SYS:應用"
+   ],
+   "ai_lit_note": "以設計本位研究發展科學整合的高中機器學習課程，對應「理解AI運作原理與限制」與AI系統開發。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0023",
+   "type": "journal_article",
+   "title": "Enhancing AI literacy course satisfaction through empowerment in AI problem-solving and ethical awareness: Development and validation of an AI project-based learning scale",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:創造",
+    "S-ETH:理解"
+   ],
+   "ai_lit_note": "AI素養課程中以AI解決問題的賦能感、倫理覺察與課程滿意度，對應「活用AI解決在地問題」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0026",
+   "type": "journal_article",
+   "title": "Cheating or not cheating? Rethinking AI-giarism and academic integrity through secondary students’ ethical reasoning",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:應用"
+   ],
+   "ai_lit_note": "中學生對以AI完成作業是否作弊的倫理推理，對應「正用AI符合學術誠信」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0022",
+   "type": "journal_article",
+   "title": "Study of an effective machine learning-integrated science curriculum for high school youth in an informal learning setting",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解",
+    "S-SYS:應用"
+   ],
+   "ai_lit_note": "博物館高中機器學習整合科學課程的知識、技能與自我效能，對應「理解AI運作原理與限制」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0029",
+   "type": "journal_article",
+   "title": "Navigating AI in STEM: what secondary students actually do with generative AI-driven tools",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-LRN:應用",
+    "S-BAS:應用",
+    "S-ETH:應用"
+   ],
+   "ai_lit_note": "中學生在STEM科目使用生成式AI的提示、查證與依賴行為，對應「運用提示詞優化AI互動」與「應用AI工具強化領域學習」。",
+   "basis": "abstract",
+   "boundary": true,
+   "boundary_reason": "研究工具使用行為；依準則重點在提問、查證、依賴行為時可判A，亦可視為B。"
+  },
+  {
+   "record_id": "KB-2026-0031",
+   "type": "journal_article",
+   "title": "Science Educators’ Attitudes and Perspectives on Artificial Intelligence (SEAP-AI) Scale",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA:理解",
+    "T-ETH:理解"
+   ],
+   "ai_lit_note": "科學教師對AI融入教學的態度量表，對應「評估AI工具輔助教學的適用性」與「辨識AI風險與安全防範」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0033",
+   "type": "conference_paper",
+   "title": "Democratizing Foundations of Problem-Solving with AI: A Breadth-First Search Curriculum for Middle School Students",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "以廣度優先搜尋為基礎的AI問題解決國中課程，對應「理解AI運作原理與限制」。",
+   "basis": "title_only",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0036",
+   "type": "conference_paper",
+   "title": "Teaching Machine Learning and Computational Thinking in Secondary Education: Hands-On vs. Video-Based Approaches",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:應用"
+   ],
+   "ai_lit_note": "比較動手與影片教學對高中生機器學習與運算思維理解的影響，對應「實踐AI強化運算思維」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0025",
+   "type": "conference_paper",
+   "title": "“AlphAI”: Teaching AI Algorithms to K12 by Training Learning Robots and Visualizing How It Works",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "以訓練學習機器人視覺化AI演算法的K-12教學資源，對應「理解AI運作原理與限制」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0028",
+   "type": "conference_paper",
+   "title": "Empowering Educators in AI: Insights from Co-Designing an AI Microcredential with and for K-12 Educators",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD:應用",
+    "T-BAS:應用"
+   ],
+   "ai_lit_note": "與K-12教師共同設計AI微證書專業發展課程，對應「評估教師AI素養以規劃專業增能」「選用適性適規之AI工具」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0031",
+   "type": "conference_paper",
+   "title": "Learning About Algorithm Auditing in Five Steps: Scaffolding How High School Youth Can Systematically and Critically Evaluate Machine Learning Applications",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:理解",
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "高中生以五步驟稽核機器學習應用，對應「具備對AI的批判思考」與「理解AI運作原理與限制」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0040",
+   "type": "conference_paper",
+   "title": "Unplugged Activities on Machine Learning and Their Evaluation Through Mental States Attribution",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "不插電機器學習活動並以心智狀態歸因評估兒童對AI的理解，對應「理解AI運作原理與限制」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0043",
+   "type": "conference_paper",
+   "title": "Impact of a Data-driven Teaching Approach on 9th Graders Conceptual Understanding of Machine Learning",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "資料導向教學對九年級學生機器學習概念理解的影響，對應「理解AI運作原理與限制」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0046",
+   "type": "conference_paper",
+   "title": "Beetrap-MC: A Minecraft-Based AI Literacy Tool for Teaching Filter Bubbles to Middle School Students",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解",
+    "S-ETH:理解"
+   ],
+   "ai_lit_note": "以Minecraft遊戲教國中生推薦系統與同溫層，對應「連結AI服務與資料來源」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0049",
+   "type": "conference_paper",
+   "title": "Co-Designing Unplugged Learning Activities with K-2 Teachers for Early AI Literacy Education",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD:應用",
+    "T-TEA:創造"
+   ],
+   "ai_lit_note": "K-2教師專業發展並共同設計不插電AI素養活動，對應「客製AI教學工具與資源」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0052",
+   "type": "journal_article",
+   "title": "Teaching with and about GenAI: A video study of English and Norwegian lessons in secondary classrooms in Norway",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA:應用",
+    "S-ETH:應用"
+   ],
+   "ai_lit_note": "挪威中學語言課以生成式AI教學及教AI的課堂錄影研究，對應「整合AI與教學法」與負責任使用。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0055",
+   "type": "journal_article",
+   "title": "Leveraging Generative AI Agent to Promote Teaching Reflection in a K–12 AI Course: Effects on Teachers’ Reflection Self-Efficacy, Instructional Design, and Reflective Thinking",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD:應用"
+   ],
+   "ai_lit_note": "以客製生成式AI代理支持AI課程教師教學反思，對應「善用AI模擬工具支持專業發展」與反思自我效能。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0058",
+   "type": "journal_article",
+   "title": "From learners to contributors: how an AI-infused STEM program shaped youth identity and initiated them to an AI-future",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:應用",
+    "S-SYS:應用"
+   ],
+   "ai_lit_note": "課外STEM計畫融入機器學習素養與研究實習，對應「理解AI運作原理與限制」與AI系統開發。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0060",
+   "type": "journal_article",
+   "title": "Current status of responsible use of generative AI in senior high school science teaching in China",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用",
+    "T-TEA:應用"
+   ],
+   "ai_lit_note": "中國高中科學教學負責任使用生成式AI的快速回顧與國家指引，對應「深化AI安全負責應用」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0063",
+   "type": "journal_article",
+   "title": "AI literacy functions as cultural capital in stratified Egyptian schools",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:理解",
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "埃及分層學校中AI素養如何被定義、取得與轉換為優勢，對應學生AI素養內涵如「具備對AI的批判思考」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0065",
+   "type": "journal_article",
+   "title": "Determinants of AI teachers’ behavioural intention to use virtual simulation platforms: an integrated SEM and fsQCA study",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS:應用",
+    "T-TEA:理解"
+   ],
+   "ai_lit_note": "AI教師採用虛擬模擬平台的意向，AI素養為必要核心條件，對應「選用適性適規之AI工具」。",
+   "basis": "abstract",
+   "boundary": true,
+   "boundary_reason": "主題是AI教育用虛擬模擬平台的科技接受度，平台本身未必是AI工具；AI素養僅為預測變項，A／B之間。"
+  },
+  {
+   "record_id": "KB-2026-0068",
+   "type": "conference_paper",
+   "title": "\"Rules or Data? Gotta Catch 'Em All!\": A Tangible Game for Youth AI Literacy",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解",
+    "S-ETH:理解"
+   ],
+   "ai_lit_note": "實體桌遊讓青少年比較規則式與資料驅動AI及偏誤，對應「理解AI運作原理與限制」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0035",
+   "type": "conference_paper",
+   "title": "Introducing AI Without Computers: Hands-On Literacy and Ethical Sense-Making for Young Learners",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解",
+    "S-ETH:理解"
+   ],
+   "ai_lit_note": "為國中生設計不插電AI活動，涵蓋辨識AI、AI能力與倫理推理，對應「思辨AI中的應用與取捨」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0072",
+   "type": "conference_paper",
+   "title": "Emergent Technology, Emergent Critique: Students and Teachers Developing Critical AI Literacy Through Participatory Design Around Generative AI",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:創造",
+    "T-ETH:創造"
+   ],
+   "ai_lit_note": "師生以參與式設計共同發展批判性AI素養實踐，對應「共構師生AI倫理實踐準則」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0075",
+   "type": "conference_paper",
+   "title": "Addressing the NLP in the Classroom: Empowering High School Teachers through Participatory Design of Hands-on NLP Activities",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA:創造",
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "與高中教師參與式設計自然語言處理動手活動，對應「客製AI教學工具與資源」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0039",
+   "type": "conference_paper",
+   "title": "Learning AI Auditing: A Case Study of Teenagers Auditing a Generative AI Model",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:理解",
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "青少年稽核生成式AI模型的偏誤，對應「具備對AI的批判思考」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0040",
+   "type": "conference_paper",
+   "title": "Enhancing AI Literacy for Minority High School Students: Mixed Outcomes and Insights for Effective Teaching Strategies",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS"
+   ],
+   "ai_lit_note": "提升少數族裔高中生AI素養的教學策略與成效，對應學生AI基礎內涵。",
+   "basis": "title_only",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0079",
+   "type": "conference_paper",
+   "title": "Fostering Elementary Students’ AI Literacy in a Learning Environment Empowered by Generative AI (Poster 22)",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-LRN"
+   ],
+   "ai_lit_note": "在生成式AI賦能的學習環境中培養小學生AI素養，對應「理解AI輔助學習的角色功能」。",
+   "basis": "title_only",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0082",
+   "type": "conference_paper",
+   "title": "Governance, Privacy, and Integrity: A Comparative Analysis of Generative AI Platform Policies in K–12 Education",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用"
+   ],
+   "ai_lit_note": "比較K-12生成式AI平台政策的治理、隱私與誠信，對應「保護個資與AI數據隱私」「健全校園AI使用規範」。",
+   "basis": "title_only",
+   "boundary": true,
+   "boundary_reason": "僅依標題；分析對象可能是廠商平台政策而非學校規範。"
+  },
+  {
+   "record_id": "KB-2026-0085",
+   "type": "conference_paper",
+   "title": "Learning to Code, Learning to Care: Promoting Ethics and Agency in Elementary AI Curriculum",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:理解",
+    "S-BAS"
+   ],
+   "ai_lit_note": "小學AI課程促進倫理與能動性，對應「覺察AI倫理展現人類價值」。",
+   "basis": "title_only",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0087",
+   "type": "conference_paper",
+   "title": "How States Conceptualize AI and Equity in Education: A Policy Analysis of Emerging K–12 Guidance",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用"
+   ],
+   "ai_lit_note": "分析美國各州K-12 AI指引中的AI與公平概念，對應「健全校園AI使用規範」。",
+   "basis": "title_only",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2024-0005",
+   "type": "government_announcement",
+   "title": "教育部部署加强中小学人工智能教育",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-SYS:創造",
+    "T-PD:應用"
+   ],
+   "ai_lit_note": "教育部通知建構中小學AI教育課程體系並培訓教師，對應「理解AI運作原理與限制」與教師專業增能。",
+   "basis": "page",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2022-0001",
+   "type": "framework",
+   "title": "교육분야 인공지능 윤리원칙",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用"
+   ],
+   "ai_lit_note": "韓國教育部公布教育領域AI倫理原則，對應「健全校園AI使用規範」。",
+   "basis": "page",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0044",
+   "type": "official_guidance",
+   "title": "수행평가 시, 인공지능(AI) 활용 관리 방안",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用",
+    "S-ETH:應用"
+   ],
+   "ai_lit_note": "韓國教育部訂定執行評量中AI使用範圍、標註與個資保護規範，對應「健全校園AI使用規範」「正用AI符合學術誠信」。",
+   "basis": "page",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0090",
+   "type": "framework",
+   "title": "Supplement I: AI Literacy Learning Framework for Primary and Secondary Schools",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-BAS",
+    "S-LRN",
+    "S-SYS"
+   ],
+   "ai_lit_note": "香港中小學AI素養學習架構，對應學生AI素養各面向如「理解AI運作原理與限制」。",
+   "basis": "title_only",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2023-0007",
+   "type": "government_announcement",
+   "title": "Managing the use of artificial intelligence (AI) bots such as ChatGPT in schools（Parliamentary reply）",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用",
+    "S-ETH:應用"
+   ],
+   "ai_lit_note": "新加坡國會答覆學校如何管理ChatGPT等AI工具使用與防範誤用，對應「健全校園AI使用規範」「正用AI符合學術誠信」。",
+   "basis": "page",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0094",
+   "type": "government_announcement",
+   "title": "MOE Committee of Supply Debate 2026 Response by Minister of State for Education Jasmin Lau",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解",
+    "S-LRN:應用"
+   ],
+   "ai_lit_note": "新加坡教育部施政答詢提出學生學習AI、使用AI並具備基礎AI素養，對應「理解AI運作原理與限制」。",
+   "basis": "page",
+   "boundary": true,
+   "boundary_reason": "演說涵蓋多項教育政策，AI素養只是其中主要主題之一。"
+  },
+  {
+   "record_id": "KB-2025-0045",
+   "type": "draft",
+   "title": "Proposed Priority and Definitions—Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "T-PD"
+   ],
+   "ai_lit_note": "美國教育部推動AI教育的補充優先事項與定義草案，對應學生AI基礎與教師專業發展（頁面擋自動存取，僅依標題）。",
+   "basis": "title_only",
+   "boundary": true,
+   "boundary_reason": "原始頁面以CAPTCHA阻擋，僅依標題；為補助優先事項草案，AI素養內容比重未核對。"
+  },
+  {
+   "record_id": "KB-2026-0099",
+   "type": "official_guidance",
+   "title": "NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用"
+   ],
+   "ai_lit_note": "北卡州PK-13生成式AI實施建議，對應「健全校園AI使用規範」（Google文件無法讀取，僅依標題）。",
+   "basis": "title_only",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0046",
+   "type": "official_guidance",
+   "title": "AI in Education: Model Policy for Ohio Districts and Schools",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用"
+   ],
+   "ai_lit_note": "俄亥俄州要求學區訂定AI使用政策並提供範本，對應「健全校園AI使用規範」。",
+   "basis": "page",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2024-0007",
+   "type": "official_guidance",
+   "title": "Generative artificial intelligence (AI) and data protection in schools",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:理解"
+   ],
+   "ai_lit_note": "英國學校使用生成式AI的資料保護指引，對應「保護個資與AI數據隱私」。",
+   "basis": "page",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0101",
+   "type": "official_guidance",
+   "title": "Guidelines regarding the use of generative AI",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用",
+    "S-ETH:應用"
+   ],
+   "ai_lit_note": "新南威爾斯州教育部生成式AI使用指引，對應「健全校園AI使用規範」「落實AI使用規範與責任」。",
+   "basis": "page",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2022-0003",
+   "type": "official_guidance",
+   "title": "Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:理解"
+   ],
+   "ai_lit_note": "歐盟給教育者的AI與資料教學倫理指引，對應「理解AI運作與倫理原則」。",
+   "basis": "page",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0050",
+   "type": "official_guidance",
+   "title": "Guidance on AI and children (Version 3.0): Recommendations for AI policies and systems that uphold child rights",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:理解",
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "UNICEF兒童與AI指引第3版，含保護兒童資料隱私及培養兒童面對AI的能力，對應「堅持AI的隱私保護」。",
+   "basis": "page",
+   "boundary": true,
+   "boundary_reason": "主要對象為政府與企業AI治理（兒童權利），非學校教學；僅部分要求涉及兒童AI素養。"
+  },
+  {
+   "record_id": "KB-2026-0103",
+   "type": "conference_paper",
+   "title": "Eco-AI Campus: A Cooperative Digital Game for Reasoning About the Sustainable and Ethical Deployment of AI",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:理解"
+   ],
+   "ai_lit_note": "合作數位遊戲讓國中生思辨AI部署的環境與倫理取捨，對應「思辨AI中的應用與取捨」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0106",
+   "type": "conference_paper",
+   "title": "Exploring children’s visions for an AI-enabled education",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-LRN:理解",
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "兒童在AI基礎素養支持下構想AI賦能教育，對應「理解AI輔助學習的角色功能」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0054",
+   "type": "conference_paper",
+   "title": "Building babyGPTs: Youth engaging in data practices and ethical considerations through the construction of generative language models",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-SYS:創造",
+    "S-ETH:創造"
+   ],
+   "ai_lit_note": "青少年自建小型生成式語言模型並處理資料與倫理議題，對應「構思AI設計倫理內涵」與AI系統設計。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0108",
+   "type": "conference_paper",
+   "title": "UnboxAI: Towards Sustainable Family AI Literacy Through Tangible Interaction",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解",
+    "S-ETH:理解"
+   ],
+   "ai_lit_note": "親子實體互動系統培養兒童對AI的評估與適度信任，對應「具備對AI的批判思考」。",
+   "basis": "abstract",
+   "boundary": true,
+   "boundary_reason": "情境為親子共學工具，非教學或學習課程本身；內容屬A。"
+  },
+  {
+   "record_id": "KB-2026-0109",
+   "type": "conference_paper",
+   "title": "Children Envision Future GenAI Chatbots that are Bounded, Helpful, and Safe",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-LRN:理解",
+    "S-ETH:理解"
+   ],
+   "ai_lit_note": "兒童使用並構想未來生成式AI聊天機器人，對應「理解AI輔助學習的角色功能」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0112",
+   "type": "conference_paper",
+   "title": "Understanding Public K-12 Indigenous Student Interest and Access to CS and AI Education through Teacher Perspectives and National CS Data (Poster 5)",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "從教師觀點與全國資料探討原住民學生對CS與AI教育的興趣與機會，對應「覺察AI的世界並產生好奇心」。",
+   "basis": "title_only",
+   "boundary": true,
+   "boundary_reason": "僅依標題；可能以資訊科學（CS）為主，AI比重不明。"
+  },
+  {
+   "record_id": "KB-2026-0115",
+   "type": "conference_paper",
+   "title": "Latinx Youth as AI Designers: Building Their Communities' Present and Future (Stage 3, 12:08 PM)",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-SYS:創造",
+    "S-BAS:創造"
+   ],
+   "ai_lit_note": "拉丁裔青少年作為AI設計者為社區設計，對應「活用AI解決在地問題」。",
+   "basis": "title_only",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0118",
+   "type": "conference_paper",
+   "title": "Co-Occurrence Network Analysis to Guide Responsible AI Policy Development in K-12 Education",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用"
+   ],
+   "ai_lit_note": "以共現網絡分析引導K-12負責任AI政策制定，對應「健全校園AI使用規範」。",
+   "basis": "title_only",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0121",
+   "type": "conference_paper",
+   "title": "Exploring AI Literacy: Student Perceptions of Learning, Ethics, and Use in the Classroom",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-LRN"
+   ],
+   "ai_lit_note": "學生對AI學習、倫理與課堂使用的知覺，對應「理解AI輔助學習的角色功能」與AI倫理。",
+   "basis": "title_only",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0124",
+   "type": "conference_paper",
+   "title": "Do Teachers Dream of GenAI Widening Educational (In)equality? Envisioning the Future of K-12 GenAI Education from Global Teachers’ Perspectives",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:理解",
+    "T-TEA:理解"
+   ],
+   "ai_lit_note": "多國K-12教師對生成式AI教育與教育不平等的觀點與實踐，對應「辨識AI風險與安全防範」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0127",
+   "type": "conference_paper",
+   "title": "Understanding Educators’ Perceptions of AI-generated Non-consensual Intimate Imagery",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用"
+   ],
+   "ai_lit_note": "教育者對AI生成非自願親密影像的態度與學校支持需求，對應「辨識AI風險與安全防範」「健全校園AI使用規範」。",
+   "basis": "abstract",
+   "boundary": true,
+   "boundary_reason": "主題為AI濫用造成的校園傷害與因應，與AI素養相關但偏校園安全。"
+  },
+  {
+   "record_id": "KB-2026-0130",
+   "type": "journal_article",
+   "title": "AI Unplugged: Exploring Pathways from Physical Simulation to Conceptualization of AI Reasoning Processes",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "不插電身體模擬活動幫助青少年理解AI推理歷程，對應「理解AI運作原理與限制」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0133",
+   "type": "journal_article",
+   "title": "Teacher education for artificial intelligence literacy through a self-determination theory perspective",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD:應用"
+   ],
+   "ai_lit_note": "自我決定理論觀點的教師專業發展提升中學教師AI素養與社群參與，對應「參與社群共學反思AI時代教師角色」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0136",
+   "type": "conference_paper",
+   "title": "Games of Representation: Developing Card-Based Activities to Teach About Representation and Bias in AI Datasets",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:理解",
+    "S-BAS:理解"
+   ],
+   "ai_lit_note": "卡牌活動教青少年AI資料集的代表性與偏誤，對應「連結AI服務與資料來源」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0059",
+   "type": "journal_article",
+   "title": "Towards a model for primary students’ behavioral intention to learn AI: programming ability, AI literacy and ethics as three fundamental pillars",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "小學生程式能力、AI素養與AI倫理對學習AI意向的模型，對應「覺察AI的世界並產生好奇心」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0062",
+   "type": "journal_article",
+   "title": "Exploring the influential factors and key dimensions of AI information literacy among high school students: a social-ecological perspective",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-LRN"
+   ],
+   "ai_lit_note": "高中生AI資訊素養的影響因素與向度，對應學生AI基礎與學習內涵。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0139",
+   "type": "journal_article",
+   "title": "AI literacy for K–12 education: an international Delphi study",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH",
+    "S-SYS"
+   ],
+   "ai_lit_note": "國際德懷術界定K-12 AI素養核心成分，對應「理解AI運作原理與限制」「構思AI人文方案」等。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0142",
+   "type": "journal_article",
+   "title": "Turkish adaptation of the artificial intelligence literacy and generative artificial intelligence competency scales",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS",
+    "T-ETH"
+   ],
+   "ai_lit_note": "教師AI素養與生成式AI能力量表的土耳其版改編，對應「評估教師AI素養以規劃專業增能」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0145",
+   "type": "journal_article",
+   "title": "Interaction-Rich instructional design in AI-Supported teacher education: Learning processes and educational implications for instructional readiness",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA:應用",
+    "T-ETH:應用"
+   ],
+   "ai_lit_note": "職前教師在生成式AI融入教學設計課程中發展Intelligent-TPACK，對應「整合AI與教學法」（依準則補充，AI-TPACK判A）。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0148",
+   "type": "journal_article",
+   "title": "Preparing preservice teachers for generative AI: the role of conceptual instruction in shaping epistemic beliefs and self-regulated learning",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS:理解",
+    "T-PD:應用"
+   ],
+   "ai_lit_note": "職前教師生成式AI概念教學與AI-TPACK培訓對知識信念與自我調節的影響，對應「理解AI的數據與運作」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0150",
+   "type": "journal_article",
+   "title": "Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:理解"
+   ],
+   "ai_lit_note": "在職教師Intelligent-TPACK倫理面向與對AI的信任，對應「理解AI運作與倫理原則」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0153",
+   "type": "journal_article",
+   "title": "Levels of AI awareness and pedagogical skills among Nigerian teachers: The differentials of gender and teachers’ experience",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS:理解",
+    "T-TEA:理解"
+   ],
+   "ai_lit_note": "奈及利亞中學教師AI覺知與AI教學技能（EDAIL量表），對應「評估教師AI素養以規劃專業增能」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0067",
+   "type": "journal_article",
+   "title": "Relationship between pre-service teachers’ perceived competencies, affective dispositions, and readiness to use artificial intelligence: A study informed by the intelligent-TPACK",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA:理解",
+    "T-ETH:理解"
+   ],
+   "ai_lit_note": "職前教師AI能力（含TPACK與倫理）、情意與使用意向，對應「評估AI工具輔助教學的適用性」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0070",
+   "type": "journal_article",
+   "title": "Fostering Intelligent-TPACK through AI-assistance: A multi-method study in pre-service teacher education",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA:應用",
+    "T-ETH:理解"
+   ],
+   "ai_lit_note": "職前教師以Intelligent-TPACK設計並評估生成式AI輔助教學，對應「設計AI與教學法整合的策略」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0156",
+   "type": "journal_article",
+   "title": "Coding, robots, computational concepts, and machine learning using the microbit card and the Maqueen and Nezha kits. A study in initial teacher training",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS:理解"
+   ],
+   "ai_lit_note": "師培課程以程式、機器人與機器學習活動培養職前小學教師，對應「理解AI的數據與運作」。",
+   "basis": "abstract",
+   "boundary": true,
+   "boundary_reason": "以程式與機器人為主，機器學習只是部分內容；AI比重有限。"
+  },
+  {
+   "record_id": "KB-2026-0159",
+   "type": "journal_article",
+   "title": "Human-centered AI for teacher educators: Designing professional learning for critical AI literacy",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD:創造",
+    "T-ETH:應用"
+   ],
+   "ai_lit_note": "以人為中心AI與批判性AI素養設計師培者專業學習課程，對應「重塑教學創新建立AI協作指引」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0073",
+   "type": "journal_article",
+   "title": "Ethical Thinking: Integration and Measurement in an AI Curriculum for Middle-High School Students",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH:理解"
+   ],
+   "ai_lit_note": "專題式AI素養課程整合並測量中學生倫理思考，對應「思辨AI中的應用與取捨」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2025-0074",
+   "type": "journal_article",
+   "title": "Investigating Preservice STEM Teachers’ AI Literacy and Self-Efficacy Beliefs: Are They Ready for AI?",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS:理解",
+    "T-PD:理解"
+   ],
+   "ai_lit_note": "職前STEM教師AI素養與自我效能，對應「區分AI的定義與類別」與「評估教師AI素養以規劃專業增能」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0165",
+   "type": "journal_article",
+   "title": "A framework for generative AI policy and guidelines in K-12 education",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH:應用",
+    "T-BAS:創造"
+   ],
+   "ai_lit_note": "德懷術建立K-12生成式AI政策與指引框架，對應「健全校園AI使用規範」「參與AI校園治理部署與決策」。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0168",
+   "type": "book_chapter",
+   "title": "Writing Coach, Reading Tutor, and Conversation Partner",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-LRN:應用",
+    "S-ETH:應用"
+   ],
+   "ai_lit_note": "主張將AI素養融入語言學習並以課程平台個案說明，對應「應用AI工具強化領域學習」與負責任使用。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  },
+  {
+   "record_id": "KB-2026-0171",
+   "type": "journal_article",
+   "title": "The impact of generative AI training on teachers’ curriculum adaptation using reflective practices",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD:應用",
+    "T-TEA:應用"
+   ],
+   "ai_lit_note": "在職教師生成式AI課程調整培訓及反思實踐成效，對應「設計AI與教學法整合的策略」（依準則補充，生成式AI教學培訓判A）。",
+   "basis": "abstract",
+   "boundary": false,
+   "boundary_reason": ""
+  }
+ ],
+ "counts": {
+  "total": 89,
+  "by_class": {
+   "A": 86,
+   "B": 3,
+   "C": 0,
+   "unknown": 0
+  },
+  "by_dimension": {
+   "S-BAS": 41,
+   "S-ETH": 32,
+   "S-LRN": 14,
+   "S-SYS": 9,
+   "T-BAS": 9,
+   "T-ETH": 24,
+   "T-PD": 13,
+   "T-TEA": 16
+  },
+  "by_basis": {
+   "page": 13,
+   "title_only": 15,
+   "abstract": 61
+  },
+  "boundary": 14
+ },
+ "requests": [
+  {
+   "url": "https://api.openalex.org/works/doi:10.1016/j.caeai.2026.100661",
+   "utc": "2026-10-09T20:14:43Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1016/j.caeai.2026.100661",
+   "utc": "2026-10-09T20:14:44Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1007/s40593-025-00458-w",
+   "utc": "2026-10-09T20:14:45Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3785022.3785043",
+   "utc": "2026-10-09T20:14:46Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1007/s44217-026-01565-z",
+   "utc": "2026-10-09T20:14:47Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1080/08993408.2025.2565199",
+   "utc": "2026-10-09T20:14:48Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.22318/cscl2025.107218",
+   "utc": "2026-10-09T20:14:49Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1080/10508406.2026.2686084",
+   "utc": "2026-10-09T20:14:50Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.58459/icce.2025.6011",
+   "utc": "2026-10-09T20:14:51Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1007/s40593-024-00449-3",
+   "utc": "2026-10-09T20:14:52Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1016/j.caeai.2025.100480",
+   "utc": "2026-10-09T20:14:53Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1016/j.caeai.2026.100552",
+   "utc": "2026-10-09T20:14:54Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1016/j.caeai.2026.100624",
+   "utc": "2026-10-09T20:14:55Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1016/j.compedu.2026.105698",
+   "utc": "2026-10-09T20:14:56Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1186/s40594-025-00543-5",
+   "utc": "2026-10-09T20:14:57Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1186/s40594-026-00637-8",
+   "utc": "2026-10-09T20:14:58Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1007/s10956-026-10302-y",
+   "utc": "2026-10-09T20:14:59Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1007/978-3-032-29770-9_56",
+   "utc": "2026-10-09T20:15:00Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/978-3-032-29770-9_56",
+   "utc": "2026-10-09T20:15:01Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3801749.3801762",
+   "utc": "2026-10-09T20:15:01Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1609/aaai.v39i28.35181",
+   "utc": "2026-10-09T20:15:02Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1609/aaai.v39i28.35186",
+   "utc": "2026-10-09T20:15:03Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1609/aaai.v39i28.35192",
+   "utc": "2026-10-09T20:15:04Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1609/aaai.v40i47.41501",
+   "utc": "2026-10-09T20:15:05Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1609/aaai.v40i47.41511",
+   "utc": "2026-10-09T20:15:06Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1609/aaai.v40i47.41524",
+   "utc": "2026-10-09T20:15:07Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1609/aaai.v40i47.41529",
+   "utc": "2026-10-09T20:15:08Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1016/j.tate.2026.105517",
+   "utc": "2026-10-09T20:15:09Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1109/tlt.2026.3668051",
+   "utc": "2026-10-09T20:15:10Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1811339",
+   "utc": "2026-10-09T20:15:11Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1800516",
+   "utc": "2026-10-09T20:15:12Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1007/s44217-026-01695-4",
+   "utc": "2026-10-09T20:15:13Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1057/s41599-026-07392-9",
+   "utc": "2026-10-09T20:15:14Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772363.3799163",
+   "utc": "2026-10-09T20:15:14Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706599.3719876",
+   "utc": "2026-10-09T20:15:15Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812170",
+   "utc": "2026-10-09T20:15:16Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806141",
+   "utc": "2026-10-09T20:15:17Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3757620",
+   "utc": "2026-10-09T20:15:18Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2194735",
+   "utc": "2026-10-09T20:15:19Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2194735",
+   "utc": "2026-10-09T20:15:20Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2276758",
+   "utc": "2026-10-09T20:15:21Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2276758",
+   "utc": "2026-10-09T20:15:22Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2277136",
+   "utc": "2026-10-09T20:15:23Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2277136",
+   "utc": "2026-10-09T20:15:24Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2279151",
+   "utc": "2026-10-09T20:15:25Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2279151",
+   "utc": "2026-10-09T20:15:26Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2280516",
+   "utc": "2026-10-09T20:15:26Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2280516",
+   "utc": "2026-10-09T20:15:27Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813775",
+   "utc": "2026-10-09T20:15:28Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813780",
+   "utc": "2026-10-09T20:15:29Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731525",
+   "utc": "2026-10-09T20:15:30Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813763",
+   "utc": "2026-10-09T20:15:31Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806128",
+   "utc": "2026-10-09T20:15:32Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2282137",
+   "utc": "2026-10-09T20:15:33Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2282137",
+   "utc": "2026-10-09T20:15:34Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2353011",
+   "utc": "2026-10-09T20:15:34Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2353011",
+   "utc": "2026-10-09T20:15:35Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2289481",
+   "utc": "2026-10-09T20:15:36Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2289481",
+   "utc": "2026-10-09T20:15:37Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3102/2273778",
+   "utc": "2026-10-09T20:15:38Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3102/2273778",
+   "utc": "2026-10-09T20:15:39Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772318.3790908",
+   "utc": "2026-10-09T20:15:39Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772318.3790584",
+   "utc": "2026-10-09T20:15:40Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3786761",
+   "utc": "2026-10-09T20:15:41Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1080/02619768.2026.2621848",
+   "utc": "2026-10-09T20:15:42Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1609/aaai.v40i47.41526",
+   "utc": "2026-10-09T20:15:43Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1080/10494820.2025.2450658",
+   "utc": "2026-10-09T20:15:44Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1080/10494820.2025.2575016",
+   "utc": "2026-10-09T20:15:45Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1080/10494820.2026.2649553",
+   "utc": "2026-10-09T20:15:46Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1080/10494820.2026.2668027",
+   "utc": "2026-10-09T20:15:47Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1080/10494820.2026.2631728",
+   "utc": "2026-10-09T20:15:48Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1080/10494820.2026.2691906",
+   "utc": "2026-10-09T20:15:49Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1016/j.caeo.2025.100321",
+   "utc": "2026-10-09T20:15:50Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1016/j.caeo.2026.100401",
+   "utc": "2026-10-09T20:15:51Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1016/j.caeo.2025.100305",
+   "utc": "2026-10-09T20:15:52Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1016/j.caeo.2025.100314",
+   "utc": "2026-10-09T20:15:53Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1016/j.caeo.2026.100366",
+   "utc": "2026-10-09T20:15:54Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1016/j.caeo.2026.100399",
+   "utc": "2026-10-09T20:15:55Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.15388/infedu.2025.29",
+   "utc": "2026-10-09T20:15:56Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.15388/infedu.2025.22",
+   "utc": "2026-10-09T20:15:57Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1080/15391523.2026.2661641",
+   "utc": "2026-10-09T20:15:58Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.4324/9781003661443-5",
+   "utc": "2026-10-09T20:15:59Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1007/s44163-026-01456-0",
+   "utc": "2026-10-09T20:15:59Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_Subjects_Pri.html",
+   "utc": "2026-10-09T20:16:14Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.oise.utoronto.ca/about/events/10-09-26-online-panel-equity-diversity-context-critical-ai-literacy",
+   "utc": "2026-10-09T20:16:17Z",
+   "http": 200
+  },
+  {
+   "url": "https://english.moe.go.kr/boardCnts/viewRenewal.do?boardID=265&boardSeq=102075&lev=0&m=0201&opType=N&page=1&s=english",
+   "utc": "2026-10-09T20:16:18Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html",
+   "utc": "2026-10-09T20:16:21Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=92297&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+   "utc": "2026-10-09T20:16:27Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=104984&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+   "utc": "2026-10-09T20:16:31Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementAILiteracyLearningFramework(PrimaryAndSecondarySchools)_EN.pdf",
+   "utc": "2026-10-09T20:16:35Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.moe.gov.sg/news/parliamentary-replies/20230207-managing-the-use-of-artificial-intelligence-bots-such-as-chatgpt-in-schools",
+   "utc": "2026-10-09T20:16:44Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.moe.gov.sg/news/speeches/20260303-moe-committee-of-supply-debate-2026-response-by-minister-of-state-for-education-jasmin-lau",
+   "utc": "2026-10-09T20:16:45Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.federalregister.gov/documents/2025/07/21/2025-13650/proposed-priority-and-definitions-secretarys-supplemental-priority-and-definitions-on-advancing",
+   "utc": "2026-10-09T20:16:46Z",
+   "http": 200
+  },
+  {
+   "url": "https://go.ncdpi.gov/AI_Guidelines",
+   "utc": "2026-10-09T20:16:47Z",
+   "http": 200
+  },
+  {
+   "url": "https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy",
+   "utc": "2026-10-09T20:16:50Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.gov.uk/guidance/data-protection-in-schools/generative-artificial-intelligence-ai-and-data-protection-in-schools",
+   "utc": "2026-10-09T20:16:51Z",
+   "http": 200
+  },
+  {
+   "url": "https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/guidelines-regarding-use-of-generative-ai",
+   "utc": "2026-10-09T20:16:52Z",
+   "http": 200
+  },
+  {
+   "url": "https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en",
+   "utc": "2026-10-09T20:16:54Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.unicef.org/innocenti/reports/policy-guidance-ai-children",
+   "utc": "2026-10-09T20:16:56Z",
+   "http": 200
+  }
+ ],
+ "note": "同一模型判讀，非獨立審閱；僅範圍判斷，未判學段或驗證狀態。"
+}

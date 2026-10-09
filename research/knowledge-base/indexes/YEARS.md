@@ -296,6 +296,20 @@
 | KB-2026-0170 — [Preparing educators for the AI-enhanced future: Insights from a teacher professional development for K-12 education in Singapore](https://doi.org/10.58459/rptel.2026.21041) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0171 — [The impact of generative AI training on teachers’ curriculum adaptation using reflective practices](https://doi.org/10.1007/s44163-026-01456-0) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0172 — [AI transformation in education: Examining teachers’ perceptions using an integrated TAM-TPACK-GenAI framework](https://doi.org/10.30935/cedtech/17983) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0174 — [Designing and Evaluating a 5E-Structured GenAI Coach for Guided Inquiry: A Pedagogy-to-Prompt Engineering Framework](https://doi.org/10.3390/educsci16030384) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0175 — [Enhancing Emotional Intelligence Through Generative AI ‐Supported Digital Storytelling: A Mixed Methods Study Using Epistemic Network Analysis](https://doi.org/10.1002/jcal.70245) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0176 — [Interweaving Generative AI technological and pedagogical design: enhancing students’ motivation, intentions, and AI literacy for feedback seeking](https://doi.org/10.1080/01443410.2026.2668683) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0177 — [How L2 Learners Negotiate Meaning in GenAI‐Supported Creative Writing](https://doi.org/10.1111/ijal.70256) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0178 — [Understanding How Technology Acceptance Relates to Programming Self-Efficacy in AI-Supported Programming Learning: The Roles of Learning Interest, Engagement, and Reflective Use](https://doi.org/10.3390/educsci16060972) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0179 — [ChatGPT-assisted EFL learning beyond the classroom: impact on oral proficiency, enjoyment, and grit](https://doi.org/10.1080/09588221.2026.2640087) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0180 — [From Wandering to Collaboration: Discourse Patterns in Middle School Generative AI Use](https://doi.org/10.1145/3785022.3785094) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0181 — [Designing Conversational Agents for Young Children: Comparing Disembodied, Embodied, and Customizable Agents](https://doi.org/10.1145/3773077.3812151) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0182 — [A community of inquiry perspective on human–AI co-facilitation within micro-blended learning](https://doi.org/10.1016/j.compedu.2026.105707) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0183 — [Bidirectional relations of epistemic beliefs and their impact on student engagement across GenAI platforms: a longitudinal quasi-experiment in middle school programming](https://doi.org/10.1080/10494820.2026.2685798) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0184 — [Using Generative Artificial Intelligence to Support Secondary Students’ Cognitive Processes in Writing](https://doi.org/10.1111/ijal.70320) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0185 — [From emotion regulation to academic success: A self‐determination theory‐based emotional agent‐mediated approach](https://doi.org/10.1111/bjet.70083) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0186 — [Beyond AI Literacy: Exploring Pre-Service Teachers’ Pedagogical and Ethical Reasoning in Generative AI Integration in Education](https://doi.org/10.1177/07356331261479569) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0187 — [Dialogue Act Patterns in GenAI-Mediated L2 Oral Practice: A Sequential Analysis of Learner–Chatbot Interactions](https://doi.org/10.1007/978-3-032-29763-1_38) | conference_paper | 未知 | discovered_unverified |
 
 ## 2027｜issue_year
 
@@ -324,5 +338,6 @@
 | KB-2026-0100 — [Generative Artificial Intelligence (AI) in K-12 Classrooms Guidance (v3.0, web-based)](https://www.oregon.gov/ode/educator-resources/teachingcontent/Pages/Generative-Artificial-Intelligence-%28AI%29-for-K-12-Schools.aspx) | official_guidance | 未知 | bibliographic_checked |
 | KB-2026-0101 — [Guidelines regarding the use of generative AI](https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/guidelines-regarding-use-of-generative-ai) | official_guidance | 未知 | bibliographic_checked |
 | KB-2026-0102 — [Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators](https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators) | official_guidance | 未知 | discovered_unverified |
+| KB-2026-0173 — [臺灣中小學教師與學生AI素養框架](https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&old=upload) | framework | 未知 | bibliographic_checked |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
