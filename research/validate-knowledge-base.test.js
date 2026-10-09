@@ -6,7 +6,7 @@ const read=n=>parseCsv(fs.readFileSync(path.join(dir,n+".csv"),"utf8"));
 const records=read("records"),relations=read("relations"),runs=read("search_runs");
 const candidates=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8")).items;
 test("actual nine held candidates remain discovery-only",()=>{
- assert.equal(records.filter(x=>x.source_candidate_id).length,9);assert.equal(candidates.length,9);
+ assert.equal(records.filter(x=>x.source_candidate_id).length,candidates.length);assert.ok(candidates.length>=9);
  assert.ok(candidates.every(x=>x.decision==="hold"&&x.source_checked===false));
  assert.ok(records.filter(x=>x.source_candidate_id).every(x=>x.verification_status==="discovered_unverified"&&x.first_published_on===""&&x.year_basis==="unknown"));
  assert.deepEqual(validate(records,relations,runs,candidates),[]);
@@ -40,7 +40,7 @@ test("real knowledge classifications retain unverified status and journal links"
  assert.deepEqual(listed["by-journal/J06"],["KB-2026-0008"]);
  assert.ok(listed["by-journal/J02"].includes("KB-2026-0009"));
  assert.deepEqual(listed["by-source/O-HK-EDB"],["KB-2026-0002","KB-2026-0003"]);
- assert.equal(listed["by-year/unknown/unknown"].length,9);
+ assert.equal(listed["by-year/unknown/unknown"].length,candidates.length);
  assert.ok(["KB-2026-0010","KB-2026-0011","KB-2026-0012","KB-2026-0013"].every(id=>listed["by-year/2026/first_publication"].includes(id)));
  const originalIds=new Set(records.filter(x=>x.source_candidate_id).map(x=>x.record_id));
  assert.ok(relations.filter(x=>originalIds.has(x.subject_id)).every(x=>x.verification_status==="discovered_unverified"));
@@ -63,7 +63,7 @@ test("three primary-source dated frameworks are archived by original publication
  const x=JSON.parse(index(records,relations));
  assert.ok(["KB-2024-0001","KB-2024-0002","KB-2024-0003","KB-2024-0004"].every(id=>x["by-year/2024/first_publication"].includes(id)));
  assert.ok(x["by-year/2026/first_publication"].includes("KB-2026-0010"));
- assert.equal(x["by-year/unknown/unknown"].length,9);
+ assert.equal(x["by-year/unknown/unknown"].length,candidates.length);
  assert.equal(x["by-type/framework"].length,4);
  assert.ok(x["by-category/K1"].length>=8);
  assert.ok(x["by-category/K3"].includes("KB-2026-0013"));

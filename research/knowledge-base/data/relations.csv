@@ -204,3 +204,5 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-0203","KB-2026-0049","published_in","source","C22","https://doi.org/10.1609/aaai.v40i47.41529","discovered_unverified"
 "KR-0204","KB-2026-0050","has_category","vocabulary","K2","https://doi.org/10.1609/aaai.v40i47.41530","discovered_unverified"
 "KR-0205","KB-2026-0050","published_in","source","C22","https://doi.org/10.1609/aaai.v40i47.41530","discovered_unverified"
+"KR-0206","KB-2026-0051","has_category","vocabulary","K4","https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-026-05721-w","discovered_unverified"
+"KR-0207","KB-2026-0051","studies_country","vocabulary","CN","https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-026-05721-w","discovered_unverified"
