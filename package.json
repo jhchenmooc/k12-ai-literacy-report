@@ -1,0 +1,9 @@
+{
+  "name": "k12-ai-literacy-report",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static report validation and public artifact tools",
+  "dependencies": {
+    "parse5": "7.3.0"
+  }
+}

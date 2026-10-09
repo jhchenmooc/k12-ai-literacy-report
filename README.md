@@ -4,6 +4,7 @@
 
 ## 新 Session 接手入口
 
+- [本機驗證與公開產物](research/local-validation.md)：Node.js 22、鎖定套件安裝、回歸測試與部署檔案清單。
 - [**固定工作交接檔（SESSION-HANDOFF）**](research/SESSION-HANDOFF.md)：最後確認的 GitHub 證據、重要決策、完成／待辦、已知疏漏及最短接續步驟。接手先重新查最新主分支狀態。
 - [完整編輯與出版主控 SOP v1.1](research/editorial-workflow-master.md)：資料搜尋、來源查核、主張驗證、PR／CI、Pages、勘誤。
 

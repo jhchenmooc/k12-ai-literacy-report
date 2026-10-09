@@ -11,7 +11,7 @@ function makeDraft(friday){
   schema_version:1,period:{start:friday,end},status:"draft_pending_source_verification",
   notice:"Planning worksheet only. NOT registered in publication/issues.json, NOT certified or published.",
   editorial_rules:{target_items:"3–5, fewer when evidence is insufficient",high_risk:"hold",source_required:true},
-  items:[],item_template:{
+  items:[],search_runs:[],item_template:{
    candidate_id:"",category:"news_policy_or_research",source_url:"",source_title:"",source_publication_date:"",
    source_locator:"",original_excerpt:"",source_checked:false,
    claim_text:"",claim_class:"bibliographic_or_descriptive_or_high_impact",risk_tier:"low_or_medium_or_high",

@@ -4,6 +4,25 @@ const {build,archiveData,renderDailyEdition,fillHomepage}=require("./render-site
 const {validate}=require("./validate-publication.js");
 const root=path.join(__dirname,"..");
 
+test("archive ordering is independent of host locale and input order, with stable ID ties",()=>{
+ const records=[
+  {record_id:"KB-2026-0003",title:"初等中等教育段階",record_type:"journal_article",year_value:"2026"},
+  {record_id:"KB-2026-0002",title:"ChatGPT",record_type:"journal_article",year_value:"2026"},
+  {record_id:"KB-2026-0001",title:"ChatGPT",record_type:"journal_article",year_value:"2026"}
+ ];
+ const ids=xs=>archiveData(xs,[],[]).journals[0].rows.map(r=>r.id);
+ assert.deepEqual(ids(records),["KB-2026-0001","KB-2026-0002","KB-2026-0003"]);
+ assert.deepEqual(ids(records.slice().reverse()),ids(records));
+ const native=String.prototype.localeCompare;
+ try{
+  String.prototype.localeCompare=function(other,locale,options){
+   assert.ok(locale,"build must not use the machine's default collation");
+   return native.call(this,other,locale,options);
+  };
+  assert.deepEqual(ids(records),["KB-2026-0001","KB-2026-0002","KB-2026-0003"]);
+ }finally{String.prototype.localeCompare=native}
+});
+
 test("generated site pages in the repository are up to date",()=>{
  for(const [rel,text] of Object.entries(build(root)))assert.equal(fs.readFileSync(path.join(root,rel),"utf8"),text,rel);
 });

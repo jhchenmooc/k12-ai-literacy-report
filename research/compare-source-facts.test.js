@@ -42,3 +42,19 @@ test("not a natural language validator, and no automatic publication even when v
  assert.equal(r.publication_decision,"hold");
  assert.match(r.note,/not original source truth/);
 });
+
+test("malformed fact collections and assertion elements return invalid input without throwing",()=>{
+ const card=d.cards[0];
+ for(const facts of [{},"bad",[null],[[]],[{key:"__proto__"}],[{key:{toString:null}}]]){
+  const bad={...card,facts};
+  assert.ok(validateCard(bad).length);
+  assert.equal(compare(bad,d.cases[0]).status,"invalid_input");
+ }
+ for(const assertions of [{},[null],[7],[[]]]){
+  const result=compare(card,{source_id:card.card_id,assertions});
+  assert.equal(result.status,"invalid_input");
+  assert.equal(result.publication_decision,"hold");
+ }
+ const result=evaluate({cards:[null],cases:[null]});
+ assert.equal(result[0].status,"invalid_input");
+});

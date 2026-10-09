@@ -54,15 +54,23 @@ async function run(){
  const end=new Date();end.setUTCHours(0,0,0,0);
  const start=new Date(end.getTime()-7*86400000);
  const startISO=start.toISOString(),endISO=end.toISOString();
- const all=[];for(let page=1;page<=10;page++){
+ // A full page is not proof of completeness. Finish retrieval before any POST;
+ // network/API failures leave the digest unpublished instead of counting a prefix.
+ const all=[],seen=new Set();for(let page=1;;page++){
   const chunk=await api("GET","https://api.github.com/repos/"+repo+"/issues?state=all&per_page=100&page="+page+"&since="+encodeURIComponent(startISO),token);
+  if(!Array.isArray(chunk))throw Error("GitHub issues response must be an array (page "+page+")");
+  for(const issue of chunk){
+   if(!issue||typeof issue!=="object"||Array.isArray(issue)||!Number.isSafeInteger(issue.number)||issue.number<=0||typeof issue.title!=="string"||typeof issue.created_at!=="string"||!Number.isFinite(Date.parse(issue.created_at))||!["open","closed"].includes(issue.state))throw Error("GitHub invalid issue item (page "+page+")");
+   if(seen.has(issue.number))throw Error("GitHub duplicate issue number during pagination; retry before publishing");
+   seen.add(issue.number);
+  }
   all.push(...chunk);if(chunk.length<100)break;
  }
  const data=aggregate(all,startISO,endISO);
  console.log("Reader-feedback issues: "+data.count);
  if(!data.count)return;
  const title="讀者回饋週整理｜"+startISO.slice(0,10)+"–"+new Date(end.getTime()-86400000).toISOString().slice(0,10);
- const old=all.find(x=>x.title===title);
+ const old=all.find(x=>!x.pull_request&&x.title===title);
  if(old){console.log("Existing summary issue #"+old.number+", skip duplicate");return}
  const issue=await api("POST","https://api.github.com/repos/"+repo+"/issues",token,{title,body:render(data,startISO,endISO)});
  console.log("Published summary issue "+issue.html_url);

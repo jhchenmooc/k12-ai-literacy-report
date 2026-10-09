@@ -3,7 +3,7 @@ const {test}=require("node:test"),assert=require("node:assert/strict");
 const {makeDraft}=require("./scaffold-weekly.js"),{merge,ingest}=require("./ingest-candidates.js");
 const fs=require("node:fs"),os=require("node:os"),path=require("node:path");
 const original=()=>({...makeDraft("2026-10-09").data,items:[{candidate_id:"W2026-10-09-A01",source_url:"https://example.org/existing",source_title:"Existing",decision:"hold",source_checked:false}],screening_summary:{candidate_count:1,ready_to_publish:0,verified_for_publication:0}});
-const batch={batch_id:"2026-10-09-policies-1",searched_on:"2026-10-09",sources:[{group:"official-policy",query:"K12 AI education",status:"ok"}],candidates:[{source_url:"https://example.org/NEW?tracking=1",source_title:"New",source_locator:"page",source_publication_date:"2026-10-09",event_key:"policy-a"},{source_url:"https://example.org/new#copy",source_title:"Repeated",source_locator:"page",source_publication_date:"2026-10-09"},{source_url:"https://example.org/old",source_title:"Old",source_locator:"page",source_publication_date:"2026-09-23",doi:"10.1234/test"}]};
+const batch={batch_id:"2026-10-09-policies-1",searched_on:"2026-10-09",sources:[{group:"official-policy",query:"K12 AI education",status:"ok"}],candidates:[{source_url:"https://example.org/new?utm_source=1",source_title:"New",source_locator:"page",source_publication_date:"2026-10-09",event_key:"policy-a"},{source_url:"https://example.org/new#copy",source_title:"Repeated",source_locator:"page",source_publication_date:"2026-10-09"},{source_url:"https://example.org/old",source_title:"Old",source_locator:"page",source_publication_date:"2026-09-23",doi:"10.1234/test"}]};
 test("cumulative import de-duplicates and preserves existing hold",()=>{const r=merge(original(),batch);assert.equal(r.added.length,2);assert.equal(r.duplicates.length,1);assert.equal(r.worksheet.items[0].source_checked,false);assert.equal(r.worksheet.items[1].decision,"hold");assert.match(r.worksheet.items[2].screening_note,/backfill/);assert.equal(r.worksheet.screening_summary.candidate_count,3);assert.equal(r.worksheet.search_runs[0].sources[0].group,"official-policy")});
 test("duplicate batch rejected and original untouched",()=>{const first=merge(original(),batch).worksheet;const before=JSON.stringify(first);assert.throws(()=>merge(first,batch),/already ingested/);assert.equal(JSON.stringify(first),before)});
 test("invalid coverage and source date fail closed",()=>{assert.throws(()=>merge(original(),{...batch,sources:[]}),/source-coverage/);assert.throws(()=>merge(original(),{...batch,candidates:[{source_url:"https://example.org/b",source_title:"bad",source_locator:"x",source_publication_date:"2026-02-30"}]}),/calendar/)});
@@ -71,4 +71,38 @@ test("candidates record the main audience, defaulting to unknown; invalid audien
  const w=merge(original(),{...batch,candidates:[{...batch.candidates[0],audience:"teacher_ed"},batch.candidates[2]]}).worksheet;
  assert.deepEqual(w.items.slice(1).map(x=>x.audience),["teacher_ed","unknown"]);
  assert.throws(()=>merge(original(),{...batch,candidates:[{...batch.candidates[0],audience:"pupils"}]}),/audience/);
+});
+
+test("URL identity preserves case, unknown queries, trailing slash and query order",()=>{
+ for(const urls of [["https://example.org/Doc","https://example.org/doc"],["https://example.org/read?item=10","https://example.org/read?item=11"],["https://example.org/doc","https://example.org/doc/"],["https://example.org/doc?key=1&key=2","https://example.org/doc?key=2&key=1"],["https://example.org/doc?item=a%20b&utm_source=x","https://example.org/doc?item=a+b"]]){
+  const r=merge(makeDraft("2026-10-09").data,{...batch,candidates:urls.map(source_url=>({source_url,source_title:"Distinct",source_locator:"page"}))});
+  assert.equal(r.added.length,2,urls.join(" vs "));assert.equal(r.duplicates.length,0);
+ }
+});
+test("known tracking parameters do not create a new source",()=>{
+ const r=merge(makeDraft("2026-10-09").data,{...batch,candidates:["https://example.org/Doc?item=10&utm_source=a&fbclid=x","https://example.org/Doc?item=10&utm_source=b"].map(source_url=>({source_url,source_title:"Same",source_locator:"page"}))});
+ assert.equal(r.added.length,1);assert.equal(r.duplicates.length,1);assert.equal(r.worksheet.unresolved_duplicate_discoveries.length,1);
+});
+test("all update notes are validated before merging, including duplicates",()=>{
+ for(const note of [{text:"correction"},42,true,[],null]){
+  const w=original(),before=JSON.stringify(w);
+  assert.throws(()=>merge(w,{...batch,candidates:[{source_url:"https://example.org/new",source_title:"New",source_locator:"page"},{source_url:w.items[0].source_url,source_title:"Update",source_locator:"page",update_note:note}]}),/update_note/);
+  assert.equal(JSON.stringify(w),before);
+ }
+});
+test("whitespace-only correction stays unresolved and blocks daily recommendation",()=>{
+ const {dailyBrief}=require("./prepare-daily-brief.js"),w=original();
+ Object.assign(w.items[0],{ai_lit_class:"A",audience:"k12",source_publication_date:"2026-10-09",first_disclosed_on:"2026-10-09",verification_completed_on:"2026-10-09",source_checked:true,conflict_unresolved:false,decision:"publish"});
+ const r=merge(w,{...batch,candidates:[{source_url:w.items[0].source_url,source_title:"Update",source_locator:"page",update_note:"   "}]}).worksheet;
+ assert.equal(r.unresolved_duplicate_discoveries.length,1);
+ assert.deepEqual(dailyBrief(r,"2026-10-10").suggested_for_publication,[]);
+});
+test("failed rename preserves the original and a retry can complete",t=>{
+ const root=fs.mkdtempSync(path.join(os.tmpdir(),"ingest-recovery-"));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const draft=makeDraft("2026-10-09"),dir=path.join(root,"research","drafts");fs.mkdirSync(dir,{recursive:true});
+ const file=path.join(dir,draft.filename),batchFile=path.join(root,"batch.json");fs.writeFileSync(file,JSON.stringify(draft.data));fs.writeFileSync(batchFile,JSON.stringify(batch));
+ const before=fs.readFileSync(file,"utf8"),rename=fs.renameSync;
+ try{fs.renameSync=()=>{throw Error("synthetic rename failure")};assert.throws(()=>ingest(root,"2026-10-09",batchFile),/synthetic rename failure/)}finally{fs.renameSync=rename}
+ assert.equal(fs.readFileSync(file,"utf8"),before);assert.deepEqual(fs.readdirSync(dir),[draft.filename]);
+ assert.equal(ingest(root,"2026-10-09",batchFile).added.length,2);
 });

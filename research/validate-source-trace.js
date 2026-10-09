@@ -2,6 +2,7 @@
 /* Source trace gate: checks whether a source excerpt is really in a pinned
  * local source snapshot. This does not certify translation, context or truth. */
 const fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
+const {safeFile}=require("./public-site.js");
 const SAFE=/^publication\/sources\/[a-zA-Z0-9_-]+\.(txt|md)$/;
 function sourceTrace(root,c,options={}){
  const errors=[],claim=c||{};
@@ -10,8 +11,8 @@ function sourceTrace(root,c,options={}){
  const full=path.resolve(root,claim.evidence_path),rootSources=path.resolve(root,"publication/sources");
  if(!full.startsWith(rootSources+path.sep))return ["evidence_path outside allowed directory"];
  if(!fs.existsSync(full))return ["source snapshot missing"];
- const source=fs.readFileSync(full,"utf8");
- const sha=crypto.createHash("sha256").update(source,"utf8").digest("hex");
+ let bytes;try{bytes=fs.readFileSync(safeFile(root,claim.evidence_path))}catch(e){return ["source snapshot unreadable: "+e.message]}
+ const source=bytes.toString("utf8"),sha=crypto.createHash("sha256").update(bytes).digest("hex");
  if(typeof claim.evidence_sha256!=="string"||claim.evidence_sha256!==sha)errors.push("snapshot SHA256 absent or incorrect");
  if(typeof claim.original_excerpt!=="string"||claim.original_excerpt.trim().length<16)errors.push("original_excerpt too short/missing");
  else if(!source.includes(claim.original_excerpt))errors.push("original_excerpt not verbatim in source snapshot");

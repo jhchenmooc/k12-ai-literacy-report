@@ -3,20 +3,24 @@
 const fs=require("node:fs"),path=require("node:path");
 const base=path.join(__dirname,"knowledge-base");
 function parseCsv(s){
- const rows=[];let row=[],value="",q=false;
+ if(typeof s!=="string")throw Error("CSV input must be text");
+ s=s.replace(/^\uFEFF/,"");
+ const rows=[];let row=[],value="",q=false,closed=false;
  for(let i=0;i<s.length;i++){const c=s[i];
-  if(q){if(c==='"'&&s[i+1]==='"'){value+='"';i++}else if(c==='"')q=false;else value+=c}
+  if(q){if(c==='"'&&s[i+1]==='"'){value+='"';i++}else if(c==='"'){q=false;closed=true}else value+=c}
+  else if(closed&&c!==","&&c!=="\n"&&c!=="\r")throw Error("malformed CSV text after closing quote");
   else if(c==='"'){if(value!=="")throw Error("malformed CSV quote");q=true}
-  else if(c===","){row.push(value);value=""}
-  else if(c==="\n"){row.push(value);rows.push(row);row=[];value=""}
-  else if(c==="\r"){if(s[i+1]!=="\n")throw Error("invalid CR")}
+  else if(c===","){row.push(value);value="";closed=false}
+  else if(c==="\n"){row.push(value);rows.push(row);row=[];value="";closed=false}
+  else if(c==="\r"){if(s[i+1]!=="\n")throw Error("invalid CSV CR")}
   else value+=c;
  }
  if(q)throw Error("unclosed CSV quote");
- if(value!==""||row.length){row.push(value);rows.push(row)}
+ if(value!==""||row.length||closed){row.push(value);rows.push(row)}
  if(!rows.length)throw Error("empty CSV");
  const keys=rows.shift();
- return rows.filter(x=>x.some(Boolean)).map(x=>{if(x.length!==keys.length)throw Error("CSV width mismatch");return Object.fromEntries(keys.map((k,i)=>[k,x[i]]))});
+ if(keys.some(k=>!k.trim())||new Set(keys).size!==keys.length)throw Error("CSV headers must be nonempty and unique");
+ return rows.filter(x=>x.length!==1||x[0]!=="").map(x=>{if(x.length!==keys.length)throw Error("CSV width mismatch");return Object.fromEntries(keys.map((k,i)=>[k,x[i]]))});
 }
 function read(name){return parseCsv(fs.readFileSync(path.join(base,"data",name+".csv"),"utf8"))}
 function dateOk(s,p){
@@ -67,7 +71,7 @@ function validate(records,relations,runs,candidates){
   check(["ok","partial","unavailable"].includes(x.status),"bad search status");
   const nums=[x.results_seen,x.results_screened,x.results_recorded].map(v=>v===""?null:Number(v));
   check(nums.every(v=>v===null||(Number.isInteger(v)&&v>=0)),"invalid search count");
-  if(nums.every(v=>v!==null))check(nums[2]<=nums[1]&&nums[1]<=nums[0],"inconsistent search counts");
+  for(const [earlier,later] of [[0,1],[1,2],[0,2]])if(nums[earlier]!==null&&nums[later]!==null)check(nums[later]<=nums[earlier],"inconsistent search counts");
   if(x.status==="unavailable")check(nums.every(v=>v===null),"unavailable source cannot claim zero results");
  }
  return errors;

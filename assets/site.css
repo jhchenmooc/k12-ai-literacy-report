@@ -21,7 +21,7 @@ body{background:var(--bg)}
 .info p{margin:0}
 
 .content{width:min(var(--wrap),calc(100% - 44px));margin:auto;padding:12px 0 56px}
-.grid-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
 .panel{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:24px}
 .panel h2{font-size:21px;margin:4px 0 10px}
 .panel .label{font-size:14px;font-weight:800;color:var(--teal)}

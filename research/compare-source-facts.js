@@ -27,10 +27,10 @@ function validateCard(card){
  if(typeof card.source_url!=="string"||!/^https:\/\/[^ /]+/.test(card.source_url))errors.push("invalid source_url");
  if(!["publisher_index_excerpt","saved_primary_excerpt","full_primary_snapshot"].includes(card.evidence_level))errors.push("invalid evidence_level");
  if(card.evidence_level==="full_primary_snapshot"&&card.full_text_verified!==true)errors.push("full_snapshot level cannot be claimed without full_text_verified");
- if(!Array.isArray(card.facts)||!card.facts.length)errors.push("no facts");
+ if(!Array.isArray(card.facts)||!card.facts.length){errors.push("no facts");return errors;}
  const seen=new Set();
- for(const fact of card.facts||[]){
-  if(!fact||!FIELDS[fact.key]){errors.push("unrecognized fact key");continue;}
+ for(const fact of card.facts){
+  if(!fact||typeof fact!=="object"||Array.isArray(fact)||typeof fact.key!=="string"||!Object.hasOwn(FIELDS,fact.key)){errors.push("unrecognized fact key");continue;}
   if(seen.has(fact.key))errors.push("duplicate fact key "+fact.key);seen.add(fact.key);
   if(!validValue(FIELDS[fact.key].type,fact.value))errors.push("invalid value "+fact.key);
   if(typeof fact.locator!=="string"||fact.locator.trim().length<8)errors.push("missing locator "+fact.key);
@@ -41,14 +41,15 @@ function validateCard(card){
 }
 function compare(card,claim){
  const errors=validateCard(card);
- if(!claim||typeof claim!=="object")errors.push("invalid claim");
+ if(!claim||typeof claim!=="object"||Array.isArray(claim))errors.push("invalid claim");
+ else if(claim.assertions!==undefined&&(!Array.isArray(claim.assertions)||claim.assertions.some(a=>!a||typeof a!=="object"||Array.isArray(a)||typeof a.key!=="string")))errors.push("invalid assertions");
  if(errors.length)return {status:"invalid_input",reason:errors,publication_decision:"hold"};
  if(claim.source_id!==card.card_id)return {status:"invalid_input",reason:["source/card mismatch"],publication_decision:"hold"};
  if(!Array.isArray(claim.assertions)||!claim.assertions.length)return {status:"cannot_determine",reason:["no structured assertions"],publication_decision:"hold"};
  const matches=[],conflicts=[],unknowns=[];
  const factMap=new Map(card.facts.map(f=>[f.key,f]));
  for(const a of claim.assertions){
-  const info=FIELDS[a?.key];
+  const info=Object.hasOwn(FIELDS,a.key)?FIELDS[a.key]:undefined;
   if(!info||!OPS.has(a.op)||!validValue(info.type,a.value)||(info.type!=="integer"&&a.op!=="eq")){
    unknowns.push({key:a?.key||"",reason:"invalid_or_unsupported_assertion"});continue;
   }
@@ -68,9 +69,9 @@ function compare(card,claim){
 }
 function evaluate(data){
  if(!data||!Array.isArray(data.cards)||!Array.isArray(data.cases))throw Error("cards and cases required");
- const map=new Map(data.cards.map(x=>[x.card_id,x]));
+ const map=new Map(data.cards.map(x=>[x?.card_id,x]));
  if(map.size!==data.cards.length)throw Error("duplicate card IDs");
- return data.cases.map(c=>({case_id:c.case_id,...compare(map.get(c.source_id),c)}));
+ return data.cases.map(c=>({case_id:c?.case_id,...compare(map.get(c?.source_id),c)}));
 }
 if(require.main===module){
  try{

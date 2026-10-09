@@ -3,12 +3,29 @@
 const fs=require("node:fs"),path=require("node:path");
 const {candidateScope}=require("./ai-literacy-scope.js");
 function day(s){if(typeof s!=="string"||!/^\d{4}-\d\d-\d\d$/.test(s))throw Error("invalid ISO date");const d=new Date(s+"T00:00:00Z");if(!Number.isFinite(+d)||d.toISOString().slice(0,10)!==s)throw Error("invalid calendar date");return d}
-function canonical(url){if(typeof url!=="string")return "";try{const u=new URL(url);if(u.protocol!=="https:"||u.username||u.password)return "";u.hash="";for(const k of [...u.searchParams.keys()])if(!/^(id|doc|document|file|article_id|paper_id)$/i.test(k))u.searchParams.delete(k);u.searchParams.sort();return u.origin.toLowerCase()+u.pathname.replace(/\/+$/,"").toLowerCase()+u.search}catch{return ""}}
+function canonical(url){
+ if(typeof url!=="string")return "";
+ try{
+  const u=new URL(url);if(u.protocol!=="https:"||u.username||u.password)return "";
+  u.hash="";
+  // Preserve path case, trailing slash, unknown parameters and their order.
+  // Only these explicitly identified tracking parameters lack source identity.
+  const parts=u.search.slice(1).split("&"),kept=parts.filter(part=>{
+   let key=part.split("=",1)[0];try{key=decodeURIComponent(key.replace(/\+/g," "))}catch{return true}
+   return !/^(utm_[a-z0-9_]+|fbclid|gclid|dclid|msclkid|mc_cid|mc_eid)$/i.test(key);
+  });
+  // Avoid URLSearchParams re-encoding identity parameters while removing tracking.
+  if(kept.length!==parts.length)u.search=kept.length?"?"+kept.join("&"):"";
+  return u.toString();
+ }catch{return ""}
+}
 function key(c){return [c.doi&&"doi:"+String(c.doi).toLowerCase().replace(/^https?:\/\/doi.org\//,"").trim(),c.event_key&&"event:"+String(c.event_key).trim().toLowerCase(),canonical(c.source_url)&&"url:"+canonical(c.source_url)].filter(Boolean)}
 function merge(worksheet,batch,history=[]){
  if(!Array.isArray(history))throw Error("invalid history");
  if(!worksheet||!Array.isArray(worksheet.items)||!worksheet.period)throw Error("invalid worksheet");
  if(!batch||!Array.isArray(batch.candidates)||!Array.isArray(batch.sources)||!batch.sources.length)throw Error("batch requires candidates and source-coverage records");
+ // Validate the entire batch before a duplicate branch can discard bad input.
+ for(const c of batch.candidates)if(c&&Object.hasOwn(c,"update_note")&&typeof c.update_note!=="string")throw Error("update_note must be a string when provided");
  const today=day(batch.searched_on),start=day(worksheet.period.start),end=day(worksheet.period.end);
  if(today<start||today>end)throw Error("search date outside selected week");
  for(const source of batch.sources)if(!source||!source.group||!source.query||!["ok","unavailable"].includes(source.status))throw Error("coverage requires group/query/status");
@@ -21,8 +38,8 @@ function merge(worksheet,batch,history=[]){
    duplicates.push(c.source_url);
    const match=result.items.find(item=>key(item).some(k=>keys.includes(k)));
    const ref=match?.candidate_id||keys.map(k=>prior.get(k)).find(Boolean);
-   if(!c.update_note)result.unresolved_duplicate_discoveries=[...(result.unresolved_duplicate_discoveries||[]),{searched_on:batch.searched_on,batch_id:batch.batch_id,source_url:c.source_url,related_candidate_id:ref||null,review_required:true}];
-   if(c.update_note&&typeof c.update_note==="string"){
+   if(!c.update_note?.trim())result.unresolved_duplicate_discoveries=[...(result.unresolved_duplicate_discoveries||[]),{searched_on:batch.searched_on,batch_id:batch.batch_id,source_url:c.source_url,related_candidate_id:ref||null,review_required:true}];
+   if(c.update_note?.trim()){
      const update={discovered_on:batch.searched_on,batch_id:batch.batch_id,source_url:c.source_url,related_candidate_id:ref||null,note:c.update_note.slice(0,350),review_required:true};
      if(match)match.source_updates=[...(match.source_updates||[]),update];
      else result.cross_week_updates=[...(result.cross_week_updates||[]),update];
@@ -63,4 +80,4 @@ function ingest(root,friday,batchFile){
  }
 }
 if(require.main===module)try{const [friday,batchFile,root="."]=process.argv.slice(2);if(!friday||!batchFile)throw Error("Usage: node research/ingest-candidates.js FRIDAY batch.json [root]");console.log(JSON.stringify(ingest(path.resolve(root),friday,batchFile)))}catch(e){console.error(e.message);process.exitCode=1}
-module.exports={merge,ingest};
+module.exports={merge,ingest,canonical};

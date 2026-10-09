@@ -276,6 +276,31 @@ test("an approved matching candidate permits the unchanged structured daily chec
  assert.equal(validate(d).ok,true);
 });
 
+test("pending corrections in any cumulative worksheet veto daily publication",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const dir=path.join(d,"research","drafts");fs.mkdirSync(dir,{recursive:true});
+ const file=path.join(dir,"2026-10-02_2026-10-08.json"),candidate={candidate_id:"prior",source_url:dailyLow.source_url+"?utm_source=archive",decision:"publish",source_checked:true,first_disclosed_on:"2026-10-10"};
+ for(const field of ["source_updates","cross_week_updates","unresolved_duplicate_discoveries"]){
+  const row={related_candidate_id:"prior",review_required:true};
+  const sheet=field==="source_updates"?{items:[{...candidate,source_updates:[row]}]}:{items:[candidate],[field]:[row]};
+  fs.writeFileSync(file,JSON.stringify(sheet));const blocked=validate(d);assert.equal(blocked.ok,false);assert.ok(blocked.errors.some(x=>x.includes("unresolved cumulative source review")));
+  row.review_required=false;fs.writeFileSync(file,JSON.stringify(sheet));assert.equal(validate(d).ok,true);
+ }
+ fs.writeFileSync(file,JSON.stringify({items:[null]}));const malformed=validate(d);assert.equal(malformed.ok,false);assert.ok(malformed.errors.some(x=>x.includes("2026-10-02_2026-10-08.json")));
+});
+
+test("source snapshots must be regular repository files and hash raw bytes",t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ const sourceDir=path.join(d,"publication","sources"),file=path.join(sourceDir,"fixture.txt");
+ fs.writeFileSync(file,Buffer.concat([Buffer.from(excerpt+"\n"),Buffer.from([0xff])]));
+ issue(d,[{...claim,evidence_sha256:crypto.createHash("sha256").update(fs.readFileSync(file,"utf8")).digest("hex")}]);
+ assert.equal(validate(d).ok,false);
+ issue(d,[claim]);fs.unlinkSync(file);fs.rmdirSync(sourceDir);
+ const outside=fs.mkdtempSync(path.join(os.tmpdir(),"source-outside-"));t.after(()=>fs.rmSync(outside,{recursive:true,force:true}));fs.writeFileSync(path.join(outside,"fixture.txt"),excerpt+"\n");
+ fs.symlinkSync(outside,sourceDir,process.platform==="win32"?"junction":"dir");
+ const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(x=>x.includes("symbolic link")));
+});
+
 test("real A07 source URL remains blocked by existing held candidate despite valid synthetic source structure",t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
  const w=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8"));

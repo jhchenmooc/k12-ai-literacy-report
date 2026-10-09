@@ -17,7 +17,10 @@ const CUES=[
 ];
 const NUM_RE=/(?<![A-Za-z0-9])\d+(?:,\d{3})*(?:\.\d+)?/g;
 function auditCoverage(claim){
- if(!claim||typeof claim.claim!=="string"||!claim.claim.trim())return {coverage:"invalid_input",reason:["missing Chinese claim"],numbers:[],warnings:[]};
+ const invalid=reason=>({coverage:"invalid_input",reason:[reason],numbers:[],warnings:[]});
+ if(!claim||typeof claim!=="object"||Array.isArray(claim)||typeof claim.claim!=="string"||!claim.claim.trim())return invalid("missing Chinese claim");
+ if(claim.assertions!==undefined&&(!Array.isArray(claim.assertions)||claim.assertions.some(a=>!a||typeof a!=="object"||Array.isArray(a)||typeof a.key!=="string")))return invalid("invalid assertions");
+ if(claim.number_annotations!==undefined&&(!Array.isArray(claim.number_annotations)||claim.number_annotations.some(a=>!a||typeof a!=="object"||Array.isArray(a)||typeof a.text!=="string"||!Number.isSafeInteger(a.start)||!Number.isSafeInteger(a.end)||a.start<0||a.end<a.start)))return invalid("invalid number annotations");
  const assertions=Array.isArray(claim.assertions)?claim.assertions:[],keys=new Set(assertions.map(x=>x.key));
  const warnings=[];
  // Presence of a numeric token does not identify its meaning. Require explicit
@@ -54,9 +57,10 @@ function auditCase(card,claim){
 if(require.main===module){
  try{
   const filename=process.argv[2];if(!filename)throw Error("Usage: node research/audit-chinese-claim-coverage.js case-pack.json");
-  const pack=JSON.parse(fs.readFileSync(filename,"utf8"));if(!Array.isArray(pack.cards)||!Array.isArray(pack.cases))throw Error("cards and cases required");
-  const cards=new Map(pack.cards.map(x=>[x.card_id,x]));
-  const results=pack.cases.map(c=>({case_id:c.case_id,...auditCase(cards.get(c.source_id),c)}));
+  const pack=JSON.parse(fs.readFileSync(filename,"utf8"));if(!pack||!Array.isArray(pack.cards)||!Array.isArray(pack.cases))throw Error("cards and cases required");
+  const cards=new Map(pack.cards.map(x=>[x?.card_id,x]));
+  if(cards.size!==pack.cards.length)throw Error("duplicate card IDs");
+  const results=pack.cases.map(c=>({case_id:c?.case_id,...auditCase(cards.get(c?.source_id),c)}));
   console.log(JSON.stringify({disclaimer:"HEURISTIC COVERAGE, NOT VALIDATED SEMANTIC REVIEW",results},null,2));
   if(results.some(r=>r.status==="invalid_input"))process.exitCode=1;
  }catch(e){console.error(e.message);process.exitCode=1;}

@@ -4,7 +4,10 @@ const fs=require("node:fs"),path=require("node:path");
 const {check}=require("./validate-claims.js");
 const {sourceTrace}=require("./validate-source-trace.js");
 const {publicationScopeErrors,audienceErrors}=require("./ai-literacy-scope.js");
-const LEGACY=new Set(["weekly/2026-09-29_10-08/index.html","monthly/2026-09/index.html"]);
+const parse5=require("parse5");
+const {LEGACY,inventory}=require("./public-site.js");
+const {canonical}=require("./ingest-candidates.js");
+const {reviewStateErrors,pendingReviews}=require("./source-review-state.js");
 function scan(root,folder){
  const base=path.join(root,folder);if(!fs.existsSync(base))return [];
  return fs.readdirSync(base,{withFileTypes:true}).filter(x=>x.isDirectory()).map(x=>folder+"/"+x.name+"/index.html").filter(p=>fs.existsSync(path.join(root,p)));
@@ -18,66 +21,64 @@ function scan(root,folder){
  * This is intentionally limited to static HTML. Text generated with JS and
  * content in other tags are not fully audited; human review remains necessary.
  */
-function plain(html){
- const entities={amp:"&",lt:"<",gt:">",quot:'"',apos:"'",nbsp:" "};
- return html.replace(/<[^>]*>/g,"").replace(/&(#x[0-9a-f]+|#[0-9]+|[a-z]+);/gi,(_,e)=>{
-  const t=e.toLowerCase();if(t[0]==="#"){const n=t[1]==="x"?parseInt(t.slice(2),16):parseInt(t.slice(1),10);return Number.isFinite(n)&&n>0&&n<=0x10ffff?String.fromCodePoint(n):" "}
-  return Object.prototype.hasOwnProperty.call(entities,t)?entities[t]:"&"+e+";";
- }).replace(/\s+/g," ").trim();
-}
-function matchBody(html,claims){
- const errors=[],matches=[...html.matchAll(/<main\b[^>]*>([\s\S]*?)<\/main>/gi)];
- if(matches.length!==1)return ["expected exactly one static main region"];
- const body=matches[0][1];
- // Fail closed on HTML features this small static matcher cannot audit.
- if(/<!--[\s\S]*?-->|<![^>]*>|<\?/i.test(body))errors.push("comments/declarations unsupported within main");
- if(/<\/?(script|style|template|noscript|iframe|svg|math|canvas|object|embed|form|input|button|textarea|select|picture|video|audio)\b/i.test(body))errors.push("dynamic/embedded elements unsupported within main");
- if(/\s(?:on[a-z]+|style|hidden|srcdoc|contenteditable)\s*(?:=|(?=[\s>]))/i.test(body))errors.push("dynamic/hidden HTML attributes unsupported within main");
- // Only well-understood static presentation tags may surround claim-bound text.
- const safeTags=new Set(["main","article","section","div","header","footer","p","h1","h2","h3","h4","li","ul","ol","blockquote","figcaption","figure","table","thead","tbody","tfoot","tr","td","th","strong","b","em","i","span","a","small","code","br","hr","sup","sub","time"]);
- for(const tag of body.matchAll(/<\/?([a-z][a-z0-9-]*)\b/gi))
-   if(!safeTags.has(tag[1].toLowerCase()))errors.push("unsupported HTML tag in main: "+tag[1].toLowerCase());
- const nodes=[...body.matchAll(/<(p|h1|h2|h3|h4|li|blockquote|figcaption|td|th)\b([^>]*)>([\s\S]*?)<\/\1>/gi)];
- if(nodes.length===0)errors.push("no inspectable substantive content nodes in main");
+const substantive=new Set(["p","h1","h2","h3","h4","li","blockquote","figcaption","td","th"]);
+const safeTags=new Set(["main","article","section","div","header","footer","p","h1","h2","h3","h4","li","ul","ol","blockquote","figcaption","figure","table","thead","tbody","tfoot","tr","td","th","strong","b","em","i","span","a","small","code","br","hr","sup","sub","time"]);
+function children(node){return [...(node.childNodes||[]),...(node.content?[node.content]:[])]}
+function all(node){return [node,...children(node).flatMap(all)]}
+function text(node){if(node.nodeName==="#text")return node.value;return children(node).map(text).join("")}
+const normalized=s=>s.replace(/\s+/g," ").trim();
+function plain(html){return normalized(text(parse5.parseFragment(String(html??""))))}
+const attr=(node,name)=>(node.attrs||[]).find(a=>a.name===name)?.value;
+function parsed(html){const errors=[];const document=parse5.parse(html,{onParseError:e=>{if(e.code==="duplicate-attribute")errors.push("duplicate HTML attribute")}});return {document,errors}}
+function matchBody(document,claims){
+ const errors=[],mains=all(document).filter(n=>n.tagName==="main");
+ if(mains.length!==1)return ["expected exactly one static main region"];
+ const main=mains[0],nodes=all(main),content=nodes.filter(n=>substantive.has(n.tagName));
+ for(let ancestor=main.parentNode;ancestor;ancestor=ancestor.parentNode){
+  if((ancestor.attrs||[]).some(a=>["hidden","style","srcdoc","contenteditable"].includes(a.name)))errors.push("dynamic/hidden ancestor of main unsupported");
+ }
+ if(!content.length)errors.push("no inspectable substantive content nodes in main");
  const counts=new Map(),map=new Map(claims.filter(x=>x&&typeof x.claim_id==="string").map(x=>[x.claim_id,x]));
- for(const [,tag,attrs,raw] of nodes){
-  const t=plain(raw);if(!t)continue;
-  const id=(attrs.match(/\bdata-claim-id\s*=\s*["']([^"']+)["']/i)||[])[1];
-  if(!id){errors.push("unbound content <"+tag+">: "+t.slice(0,70));continue}
+ for(const node of nodes){
+  if(node.nodeName==="#comment"||node.nodeName==="#documentType")errors.push("comments/declarations unsupported within main");
+  if(node.tagName&&!safeTags.has(node.tagName))errors.push("unsupported HTML tag in main: "+node.tagName);
+  if((node.attrs||[]).some(a=>/^on[a-z]+$/.test(a.name)||["style","hidden","srcdoc","contenteditable"].includes(a.name)))errors.push("dynamic/hidden HTML attributes unsupported within main");
+ }
+ for(const node of content){
+  const t=normalized(text(node));if(!t)continue;
+  const id=attr(node,"data-claim-id");
+  if(!id){errors.push("unbound content <"+node.tagName+">: "+t.slice(0,70));continue}
   counts.set(id,(counts.get(id)||0)+1);
   if(!map.has(id)){errors.push("unknown body claim "+id);continue}
   if(plain(map.get(id).claim_text)!==t)errors.push("body text differs from claim_text: "+id);
  }
- // Strip all matched claim-bearing nodes, then reject any residual visible text.
- // This catches bare text in div/section/aside-like containers that the node list misses.
- const remaining=body.replace(/<(p|h1|h2|h3|h4|li|blockquote|figcaption|td|th)\b[^>]*>[\s\S]*?<\/\1>/gi,"");
- if(plain(remaining))errors.push("unbound text outside claim elements: "+plain(remaining).slice(0,70));
+ function residual(node,covered=false){
+  const bound=covered||substantive.has(node.tagName);
+  if(node.nodeName==="#text"&&!bound&&normalized(node.value))errors.push("unbound text outside claim elements: "+normalized(node.value).slice(0,70));
+  for(const child of children(node))residual(child,bound);
+ }
+ residual(main);
  for(const c of claims){if(!c||typeof c.claim_id!=="string")continue;const count=counts.get(c.claim_id)||0;if(count!==1)errors.push("claim must appear exactly once in HTML: "+c.claim_id+" ("+count+")")}
  return errors;
 }
-
-function staticHtmlSafety(html,label){
+function staticHtmlSafety(document,label){
  const errors=[];
- if(/<\/?(?:script|iframe|object|embed|base|form)\b/i.test(html))errors.push(label+": active or redirect-capable HTML forbidden");
- if(/\son[a-z]+\s*=/i.test(html))errors.push(label+": inline event handler forbidden");
- if(/<meta\b[^>]*http-equiv\s*=\s*["']?refresh/i.test(html))errors.push(label+": meta refresh redirect forbidden");
- for(const m of html.matchAll(/\b(?:href|src|action|formaction)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/gi)){
-  const raw=m[1]??m[2]??m[3]??"";
-  const decoded=raw.replace(/&#(?:x([0-9a-f]+)|([0-9]+));?/gi,(_,h,n)=>String.fromCodePoint(parseInt(h||n,h?16:10))).replace(/&colon;/gi,":").replace(/[\u0000-\u0020\u007f]+/g,"").toLowerCase();
-  if(/^(javascript|data|vbscript|file):/.test(decoded)||decoded.startsWith("//"))errors.push(label+": unsafe URL scheme in registered HTML");
+ for(const node of all(document)){
+  if(["script","iframe","object","embed","base","form","template"].includes(node.tagName))errors.push(label+": active or redirect-capable HTML forbidden (including inert templates)");
+  if((node.attrs||[]).some(a=>/^on[a-z]+$/.test(a.name)))errors.push(label+": inline event handler forbidden");
+  if(node.tagName==="meta"&&String(attr(node,"http-equiv")||"").toLowerCase()==="refresh")errors.push(label+": meta refresh redirect forbidden");
+  for(const a of node.attrs||[]){
+   if(!["href","src","action","formaction"].includes(a.name))continue;
+   const decoded=a.value.replace(/[\u0000-\u0020\u007f]+/g,"");
+   // Attributes are already decoded by the same HTML parser a browser uses.
+   if(decoded.replace(/\\/g,"/").startsWith("//")||(/^[a-z][a-z0-9+.-]*:/i.test(decoded)&&!/^https?:/i.test(decoded)))errors.push(label+": unsafe URL scheme in registered HTML");
+  }
  }
  return errors;
 }
-function dailySourceLink(html,c){
- const body=(html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/i)||[])[1]||"";
- const nodes=[...body.matchAll(/<(p|li|blockquote|td)\b([^>]*)>([\s\S]*?)<\/\1>/gi)];
- for(const [,tag,attrs,inner] of nodes){
-  const id=(attrs.match(/\bdata-claim-id\s*=\s*["']([^"']+)["']/i)||[])[1];
-  if(id!==c.claim_id)continue;
-  const hrefs=[...inner.matchAll(/<a\b[^>]*\bhref\s*=\s*["']([^"']+)["'][^>]*>/gi)].map(m=>m[1].replace(/&amp;/gi,"&"));
-  if(hrefs.includes(c.source_url))return true;
- }
- return false;
+function dailySourceLink(document,c){
+ const mains=all(document).filter(n=>n.tagName==="main");if(mains.length!==1)return false;
+ return all(mains[0]).filter(n=>["p","li","blockquote","td"].includes(n.tagName)&&attr(n,"data-claim-id")===c.claim_id).some(n=>all(n).some(a=>a.tagName==="a"&&attr(a,"href")===c.source_url));
 }
 function dailyFact(c,issueDate){
  const errors=[];
@@ -115,24 +116,26 @@ function dailyFact(c,issueDate){
  if(attributed&&/(已證實|證明|因果|必然|全面強制|所有學生|所有教師|保證有效|應在臺灣推動)/.test(c.attributed_summary||""))errors.push("attributed summary contains disallowed inference or high-impact wording");
  return errors;
 }
-function matchingCumulativeCandidates(root,sourceUrl){
+function cumulativeWorksheets(root){
  const dir=path.join(root,"research","drafts");
  if(!fs.existsSync(dir))return [];
- const hits=[];
+ const sheets=[];
  for(const name of fs.readdirSync(dir)){
   if(!/^\d{4}-\d{2}-\d{2}_\d{4}-\d{2}-\d{2}\.json$/.test(name))continue;
   let sheet;try{sheet=JSON.parse(fs.readFileSync(path.join(dir,name),"utf8"))}
   catch(e){throw Error("invalid cumulative candidate file "+name+": "+e.message)}
-  for(const item of sheet.items||[])if(item&&item.source_url===sourceUrl)hits.push(item);
+  const malformed=reviewStateErrors(sheet);if(malformed.length)throw Error("invalid cumulative candidate file "+name+": "+malformed.join("; "));
+  sheets.push(sheet);
  }
- return hits;
+ return sheets;
 }
 function validate(root){
  const errors=[],warnings=[],entry=path.join(root,"publication/issues.json");
  if(!fs.existsSync(entry))return {ok:false,errors:["publication/issues.json missing"],warnings};
  let manifest;try{manifest=JSON.parse(fs.readFileSync(entry,"utf8"))}catch(e){return {ok:false,errors:["Invalid issues JSON: "+e.message],warnings}};
- if(!Array.isArray(manifest.editions))errors.push("editions array missing");
+ if(!manifest||typeof manifest!=="object"||Array.isArray(manifest)||!Array.isArray(manifest.editions))return {ok:false,errors:["Invalid issues manifest: editions array required"],warnings};
  const editions=Array.isArray(manifest.editions)?manifest.editions:[];
+ const publicFiles=inventory(root,manifest);errors.push(...publicFiles.errors);
  const encountered=new Set();
  for(const issue of editions){
   if(!issue||typeof issue!=="object"){errors.push("invalid edition");continue}
@@ -154,8 +157,9 @@ function validate(root){
   let data;try{data=JSON.parse(fs.readFileSync(f,"utf8"))}catch(e){errors.push("invalid claims JSON "+q);continue}
   if(!Array.isArray(data)||data.length===0){errors.push("edition must have non-empty claims "+p);continue}
   let html;try{html=fs.readFileSync(htmlPath,"utf8")}catch(e){errors.push("edition HTML unreadable "+p+": "+e.message);continue}
-  errors.push(...staticHtmlSafety(html,p));
-  errors.push(...matchBody(html,data).map(e=>p+": "+e));
+  const dom=parsed(html);errors.push(...dom.errors.map(e=>p+": "+e));
+  errors.push(...staticHtmlSafety(dom.document,p));
+  errors.push(...matchBody(dom.document,data).map(e=>p+": "+e));
   const claimIds=new Set();
   for(const c of data){
    if(!c||typeof c!=="object"){errors.push("invalid claim in "+q);continue}
@@ -163,7 +167,9 @@ function validate(root){
    if(c.decision!=="publish"){errors.push("edition contains unpublished/held claim "+q+" "+c.claim_id);continue}
    if(daily)errors.push(...dailyFact(c,issueDate||"0000-00-00").map(e=>q+" "+c.claim_id+": "+e));
    if(daily){
-    for(const prior of matchingCumulativeCandidates(root,c.source_url)){
+    let sheets;try{sheets=cumulativeWorksheets(root)}catch(e){errors.push(e.message);continue}
+    if(pendingReviews(sheets,c).length)errors.push(q+" "+c.claim_id+": unresolved cumulative source review blocks daily publication");
+    for(const prior of sheets.flatMap(sheet=>sheet.items).filter(item=>canonical(item.source_url)===canonical(c.source_url))){
      if(prior.decision!=="publish"||prior.source_checked!==true||prior.first_disclosed_on!==c.first_disclosed_on)
       errors.push(q+" "+c.claim_id+": daily claim contradicts held/unverified cumulative candidate "+prior.candidate_id);
      if(prior.ai_lit_class!==undefined&&prior.ai_lit_class!==c.ai_lit_class)
@@ -172,7 +178,7 @@ function validate(root){
       errors.push(q+" "+c.claim_id+": audience differs from cumulative candidate "+prior.candidate_id);
     }
    }
-   if(daily&&!dailySourceLink(html,c))errors.push(q+" "+c.claim_id+": original source URL must be visible as a direct anchor");
+   if(daily&&!dailySourceLink(dom.document,c))errors.push(q+" "+c.claim_id+": original source URL must be visible as a direct anchor");
    errors.push(...publicationScopeErrors(c).map(e=>q+" "+c.claim_id+": "+e));
    errors.push(...audienceErrors(c,p.split("/")[0]).map(e=>q+" "+c.claim_id+": "+e));
    const result=check(c);
@@ -183,7 +189,7 @@ function validate(root){
  }
  const issues=[...scan(root,"weekly"),...scan(root,"monthly"),...scan(root,"daily")];
  for(const p of issues){if(LEGACY.has(p)){warnings.push("Legacy issue not certified by this gate: "+p);
-    const legacyHtml=fs.readFileSync(path.join(root,p),"utf8");errors.push(...staticHtmlSafety(legacyHtml,p));continue;
+    const legacyHtml=fs.readFileSync(path.join(root,p),"utf8"),dom=parsed(legacyHtml);errors.push(...dom.errors.map(e=>p+": "+e),...staticHtmlSafety(dom.document,p));continue;
    }if(!encountered.has(p))errors.push("Unregistered issue (blocked): "+p)}
  for(const p of encountered)if(!issues.includes(p))errors.push("Listed issue not found "+p);
  return {ok:errors.length===0,errors,warnings,checked_editions:encountered.size,legacy_editions:issues.filter(p=>LEGACY.has(p)).length};
