@@ -297,10 +297,17 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 
 **安全及範圍**：九筆候選繼續hold/source_checked=false、正式新期別零；歷史學術書目不當當週首次發布新聞，v1.6不放寬、不自動發刊。P0未完，不提前P1/P2。之前Codex usage5小時96%／每週27%是查詢當時帳號快照，並非Claude額度；按接手環境實際額度安排有界批次，不自行使用額度重置。每批更新同一份本檔的完成／未完／下一批及實際PR/Run證據，不另建平行handoff。
 
-### 2026-10-09｜P0 第三波補核（Composio 讀取；待本 PR 驗收）
+### 2026-10-09｜P0 第三波補核（Composio 讀取；已合併並部署）
 
 - 基準 main `819c493`（#93）。三組 A（J10/C05/C08）、B（J17/C06/C07/C11）、C（C09/MOE/政策版本）平行，另有未讀結論的獨立核查；細節見 [integration.md](p0-followup-wave3-2026-10-09/integration.md)。環境限制：Bash／WebFetch 連不到出版社，改用 Composio（Exa、雲端瀏覽器）；多為快取文字。
 - 新增 2 筆書目（KB-2026-0019 J17 meta-analysis；KB-2025-0013 C06 Day of AI Australia）；records 38、relations 87、search runs 42。J10 日期衝突已解釋（Available online 10/9、VoR 10/27），但為成人樣本，不入庫。C05 98/68 矛盾在正式 v2 仍在。
 - 提醒：雲端瀏覽器代理曾自行點擊驗證頁（A 組），獨立核查不互動並取得一致結果；之後不要指示或容許繞過驗證頁。
 - 未變：九筆候選 hold／source_checked=false、`issues.json` 零期別、無自動搜尋或發刊。PR 與 main 的 verify／deploy 結果以實際 GitHub 為準，此處不預寫成功。
 - 下一批：未解項見 integration.md；再依優先級 J20–J39、C13–C22；P0 未完，不進 P1/P2。
+
+**第三波與設計系統的 GitHub 驗收（2026-10-09）**：
+- [PR #94](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/94) 設計系統 v0.1（`assets/design-system.css`、`design-system/`、`composio/README.md` 規劃文件）：PR HEAD `8abc532` verify 成功，squash 合併為 main `2647819`；[main Run 37954446852](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37954446852) 成功。
+- [PR #95](https://github.com/jhchenmooc/k12-ai-literacy-report/pull/95) P0 第三波：首次合併被必要檢查 `verify` 規則擋下（main 因 #94 前進），將 main 併入分支後新 HEAD `c2b3355` verify 成功，squash 合併為 main `fbb9582`；[main Run 37954601280](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37954601280) 的 verify 與 deploy job 均成功。
+- Pages 實站抽查（Composio 抓取文字，非瀏覽器實測）：首頁、`/design-system/`、`/assets/design-system.css` 可讀；`/research/SESSION-HANDOFF.md` 回 404（研究目錄未公開）。**未做**：手機版／無障礙的瀏覽器實測、首頁頁尾設計系統連結的視覺確認（抓取文字未含頁尾）。
+- 部署後若新增公開目錄，須同步 `verify-and-deploy.yml` 的打包清單（本次已加入 `assets`、`design-system`）。
+- 提醒：Composio 規劃（`composio/README.md`）僅文件，未建任何蒐集程式、排程或憑證；啟用前須先決定結果存放處與 toolkit，並維持候選一律 hold、不自動發刊。
