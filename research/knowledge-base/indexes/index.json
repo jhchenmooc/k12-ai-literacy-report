@@ -1,5 +1,54 @@
 {
-  "by-year/unknown": [
+  "by-category/K2": [
+    "KB-2026-0005",
+    "KB-2026-0008",
+    "KB-2026-0009"
+  ],
+  "by-category/K4": [
+    "KB-2026-0002",
+    "KB-2026-0003"
+  ],
+  "by-category/K5": [
+    "KB-2026-0007"
+  ],
+  "by-category/K6": [
+    "KB-2026-0001",
+    "KB-2026-0004",
+    "KB-2026-0006"
+  ],
+  "by-journal/J02": [
+    "KB-2026-0009"
+  ],
+  "by-journal/J06": [
+    "KB-2026-0008"
+  ],
+  "by-source/J02": [
+    "KB-2026-0009"
+  ],
+  "by-source/J06": [
+    "KB-2026-0008"
+  ],
+  "by-source/O-HK-EDB": [
+    "KB-2026-0002",
+    "KB-2026-0003"
+  ],
+  "by-source/O-UNESCO": [
+    "KB-2026-0007"
+  ],
+  "by-type/journal_article": [
+    "KB-2026-0005",
+    "KB-2026-0008",
+    "KB-2026-0009"
+  ],
+  "by-type/source_document": [
+    "KB-2026-0001",
+    "KB-2026-0002",
+    "KB-2026-0003",
+    "KB-2026-0004",
+    "KB-2026-0006",
+    "KB-2026-0007"
+  ],
+  "by-year/unknown/unknown": [
     "KB-2026-0001",
     "KB-2026-0002",
     "KB-2026-0003",
