@@ -1,0 +1,735 @@
+{
+  "started_utc": "2026-10-09T16:49:21Z",
+  "ended_utc": "2026-10-09T16:52:56Z",
+  "tool_status": {
+    "WebSearch": "可用（Q01 測試成功；ToolSearch 載入）",
+    "WebFetch": "可用（ToolSearch 載入）；部分站點 403/503/空內容",
+    "curl": "可用；多個官方站點 403、captcha、HTTP/2 錯誤、SSL 錯誤或需 JS",
+    "GOVUK_search_API": "可用（HTTP 200）",
+    "FederalRegister_API": "可用（HTTP 200）",
+    "exa_liner": "不可用（需 OAuth；未使用）"
+  },
+  "queries": [
+    {
+      "id": "Q01",
+      "source": "O-UNESCO",
+      "query_or_url": "WebSearch: UNESCO AI competency framework students teachers October 2026",
+      "started_utc": "2026-10-09T16:49:29Z",
+      "ended_utc": "2026-10-09T16:49:41Z",
+      "status": "ok (WebSearch 可用性測試)",
+      "items_seen": 9,
+      "notes": "僅見 2024 年框架與轉載；無 2026-10 新件。"
+    },
+    {
+      "id": "Q02",
+      "source": "O-UK-DFE",
+      "query_or_url": "https://www.gov.uk/api/search.json?filter_organisations=department-for-education&order=-public_timestamp&count=40",
+      "started_utc": "2026-10-09T16:49:42Z",
+      "ended_utc": "2026-10-09T16:49:43Z",
+      "status": "HTTP 200",
+      "items_seen": 40,
+      "notes": "讀 40 筆（10/05–10/09 public_timestamp）；無 AI 相關。public_timestamp 為更新時戳，非首發日。"
+    },
+    {
+      "id": "Q03",
+      "source": "O-UK-DFE",
+      "query_or_url": "https://www.gov.uk/api/search.json?q=artificial+intelligence+schools&filter_organisations=department-for-education&order=-public_timestamp&count=20",
+      "started_utc": "2026-10-09T16:49:47Z",
+      "ended_utc": "2026-10-09T16:49:47Z",
+      "status": "HTTP 200（查詢設計受限）",
+      "items_seen": 20,
+      "notes": "API 回 total=6325；依時間排序時關鍵詞未有效篩選，前 20 筆與 Q02 相同，無 AI 文件。不能據此宣稱 DfE 全無 AI 文件，只能說 10/06–10/09 最新清單無。"
+    },
+    {
+      "id": "Q04",
+      "source": "O-UNESCO",
+      "query_or_url": "curl https://www.unesco.org/en/newsroom",
+      "started_utc": "2026-10-09T16:49:58Z",
+      "ended_utc": "2026-10-09T16:49:59Z",
+      "status": "HTTP 200 但為人機驗證頁（captcha）→ unavailable",
+      "items_seen": 0,
+      "notes": "未嘗試繞過；改用 Q34 WebFetch。不記為零命中。"
+    },
+    {
+      "id": "Q05",
+      "source": "O-US-ED",
+      "query_or_url": "curl https://www.ed.gov/about/news/press-release",
+      "started_utc": "2026-10-09T16:49:59Z",
+      "ended_utc": "2026-10-09T16:49:59Z",
+      "status": "HTTP 403 → failed",
+      "items_seen": 0,
+      "notes": "失敗，非零命中。"
+    },
+    {
+      "id": "Q06",
+      "source": "O-AU-EDU",
+      "query_or_url": "curl https://www.education.gov.au/news",
+      "started_utc": "2026-10-09T16:49:59Z",
+      "ended_utc": "2026-10-09T16:50:00Z",
+      "status": "curl error 92 (HTTP/2 stream INTERNAL_ERROR) → failed",
+      "items_seen": 0,
+      "notes": "失敗，非零命中。"
+    },
+    {
+      "id": "Q07",
+      "source": "O-SG-MOE",
+      "query_or_url": "curl https://www.moe.gov.sg/news/press-releases",
+      "started_utc": "2026-10-09T16:50:00Z",
+      "ended_utc": "2026-10-09T16:50:01Z",
+      "status": "HTTP 404 → failed",
+      "items_seen": 0,
+      "notes": "失敗，非零命中。"
+    },
+    {
+      "id": "Q08",
+      "source": "O-JP-MEXT",
+      "query_or_url": "curl https://www.mext.go.jp/b_menu/news/index.html（新着情報 最新1か月）",
+      "started_utc": "2026-10-09T16:50:01Z",
+      "ended_utc": "2026-10-09T16:50:03Z",
+      "status": "HTTP 200",
+      "items_seen": 44,
+      "notes": "逐列閱讀 10/01–10/09 約 44 列；無以 AI／生成 AI 為題的新件。10/06 有次期學習指導要領審議まとめ公眾意見徵集（見 items）。"
+    },
+    {
+      "id": "Q09",
+      "source": "O-KR-MOE",
+      "query_or_url": "curl https://www.moe.go.kr/boardCnts/listRenew.do?boardID=294&m=020402&s=moe",
+      "started_utc": "2026-10-09T16:50:03Z",
+      "ended_utc": "2026-10-09T16:50:10Z",
+      "status": "curl error 35 (connection reset) → failed",
+      "items_seen": 0,
+      "notes": "首次失敗；Q21 重試成功。"
+    },
+    {
+      "id": "Q10",
+      "source": "O-HK-EDB（經 HKSAR 政府新聞公報）",
+      "query_or_url": "curl https://www.info.gov.hk/gia/general/today.htm",
+      "started_utc": "2026-10-09T16:50:10Z",
+      "ended_utc": "2026-10-09T16:50:11Z",
+      "status": "HTTP 200",
+      "items_seen": 1,
+      "notes": "頁面已是 10-10-2026（HKT）只 1 則，與教育無關；10/09 清單見 Q16。"
+    },
+    {
+      "id": "Q11",
+      "source": "O-CN-MOE",
+      "query_or_url": "curl http://www.moe.gov.cn/jyb_xwfb/s5147/（媒体聚焦）",
+      "started_utc": "2026-10-09T16:50:11Z",
+      "ended_utc": "2026-10-09T16:50:12Z",
+      "status": "HTTP 200",
+      "items_seen": 20,
+      "notes": "媒體聚焦欄目（轉載），最新 10/07；無 AI 教育新件。此欄非官方政策原文。"
+    },
+    {
+      "id": "Q12",
+      "source": "O-TW-MOE（本地來源）",
+      "query_or_url": "curl https://www.edu.tw/News.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F（即時新聞）",
+      "started_utc": "2026-10-09T16:50:12Z",
+      "ended_utc": "2026-10-09T16:50:14Z",
+      "status": "HTTP 200",
+      "items_seen": 20,
+      "notes": "讀 20 列（115-10-03～115-10-09）；10/09 兩則與 AI 無關；10/05 有 AI 為題的教務主任工作會議（見 items）。"
+    },
+    {
+      "id": "Q13",
+      "source": "O-OECD",
+      "query_or_url": "curl https://www.oecd.org/en/about/news.html",
+      "started_utc": "2026-10-09T16:50:14Z",
+      "ended_utc": "2026-10-09T16:50:15Z",
+      "status": "HTTP 403 → failed",
+      "items_seen": 0,
+      "notes": "失敗，非零命中；改用 Q24 WebSearch。"
+    },
+    {
+      "id": "Q14",
+      "source": "O-EU-EC",
+      "query_or_url": "curl https://education.ec.europa.eu/news",
+      "started_utc": "2026-10-09T16:50:15Z",
+      "ended_utc": "2026-10-09T16:50:16Z",
+      "status": "HTTP 200 但含 antibot 表單、清單未渲染 → unavailable",
+      "items_seen": 0,
+      "notes": "頁標題顯示 SELFIE for TEACHERS news，無新聞列；Q35 WebFetch 亦無列表。"
+    },
+    {
+      "id": "Q15",
+      "source": "O-CA-EDU（Ontario）",
+      "query_or_url": "curl https://news.ontario.ca/en/ministry/ministry-of-education",
+      "started_utc": "2026-10-09T16:50:16Z",
+      "ended_utc": "2026-10-09T16:50:17Z",
+      "status": "HTTP 200 但需 JavaScript → unavailable",
+      "items_seen": 0,
+      "notes": "失敗，非零命中。"
+    },
+    {
+      "id": "Q16",
+      "source": "O-HK-EDB（經 HKSAR 政府新聞公報）",
+      "query_or_url": "curl https://www.info.gov.hk/gia/general/202610/09.htm",
+      "started_utc": "2026-10-09T16:50:29Z",
+      "ended_utc": "2026-10-09T16:50:30Z",
+      "status": "HTTP 200",
+      "items_seen": 28,
+      "notes": "10/09（HKT）新聞公報約 28 則；無教育局 AI 相關公告。"
+    },
+    {
+      "id": "Q17",
+      "source": "O-CN-MOE",
+      "query_or_url": "curl http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/（工作动态）",
+      "started_utc": "2026-10-09T16:50:30Z",
+      "ended_utc": "2026-10-09T16:50:32Z",
+      "status": "HTTP 200",
+      "items_seen": 20,
+      "notes": "最新 10/09『任友群访问德国』、10/08 兩則教師計畫；無 AI 教育政策新件。"
+    },
+    {
+      "id": "Q18",
+      "source": "O-CN-MOE",
+      "query_or_url": "curl http://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/（中央文件）",
+      "started_utc": "2026-10-09T16:50:32Z",
+      "ended_utc": "2026-10-09T16:50:33Z",
+      "status": "HTTP 200",
+      "items_seen": 20,
+      "notes": "最新 2026-08-17；窗口內無新件。"
+    },
+    {
+      "id": "Q19",
+      "source": "O-SG-MOE",
+      "query_or_url": "curl https://www.moe.gov.sg/news",
+      "started_utc": "2026-10-09T16:50:33Z",
+      "ended_utc": "2026-10-09T16:50:34Z",
+      "status": "HTTP 200 但轉址至 JS 搜尋頁、無清單 → unavailable",
+      "items_seen": 0,
+      "notes": "失敗，非零命中。"
+    },
+    {
+      "id": "Q20",
+      "source": "O-AU-EDU",
+      "query_or_url": "curl https://www.education.gov.au/newsroom",
+      "started_utc": "2026-10-09T16:50:34Z",
+      "ended_utc": "2026-10-09T16:50:35Z",
+      "status": "curl error 92 → failed",
+      "items_seen": 0,
+      "notes": "失敗，非零命中。"
+    },
+    {
+      "id": "Q21",
+      "source": "O-KR-MOE",
+      "query_or_url": "curl（重試）https://www.moe.go.kr/boardCnts/listRenew.do?boardID=294&m=020402&s=moe（보도자료）",
+      "started_utc": "2026-10-09T16:50:35Z",
+      "ended_utc": "2026-10-09T16:50:39Z",
+      "status": "HTTP 200",
+      "items_seen": 10,
+      "notes": "10 列（09-29～10-08）；無 AI 教育新件；10/09 無新稿（10/09 為韓國韓文日公休，此為推測背景，未查證）。"
+    },
+    {
+      "id": "Q22",
+      "source": "O-CA-EDU（BC）",
+      "query_or_url": "curl https://news.gov.bc.ca/ministries/education-and-child-care",
+      "started_utc": "2026-10-09T16:50:39Z",
+      "ended_utc": "2026-10-09T16:50:39Z",
+      "status": "curl error 60 (SSL certificate) → failed",
+      "items_seen": 0,
+      "notes": "未停用 TLS 驗證；失敗，非零命中。"
+    },
+    {
+      "id": "Q23",
+      "source": "O-UNESCO",
+      "query_or_url": "WebSearch(allowed: unesco.org): UNESCO artificial intelligence education schools announcement 9 October 2026",
+      "started_utc": "2026-10-09T16:50:58Z",
+      "ended_utc": "2026-10-09T16:51:11Z",
+      "status": "ok",
+      "items_seen": 10,
+      "notes": "批次時間窗（平行呼叫，個別時戳不可分）；最新相關為 10/02 部落格文章、9/28 IITE 教師 AI 能力框架報告；無 10/09 新件。"
+    },
+    {
+      "id": "Q24",
+      "source": "O-OECD",
+      "query_or_url": "WebSearch(allowed: oecd.org): OECD AI literacy schools October 2026",
+      "started_utc": "2026-10-09T16:50:58Z",
+      "ended_utc": "2026-10-09T16:51:11Z",
+      "status": "ok",
+      "items_seen": 10,
+      "notes": "批次時間窗（平行呼叫，個別時戳不可分）；最新為 2026-06 OECD/EC 框架、2026-09 PISA 部落格；無 10 月新件。"
+    },
+    {
+      "id": "Q25",
+      "source": "O-US-ED",
+      "query_or_url": "WebSearch(allowed: ed.gov): Department of Education artificial intelligence K-12 guidance October 2026",
+      "started_utc": "2026-10-09T16:50:58Z",
+      "ended_utc": "2026-10-09T16:51:11Z",
+      "status": "ok",
+      "items_seen": 20,
+      "notes": "批次時間窗（平行呼叫，個別時戳不可分）；最新實質指引為 2025-07-22 Dear Colleague Letter；無 10 月新件。"
+    },
+    {
+      "id": "Q26",
+      "source": "O-EU-EC",
+      "query_or_url": "WebSearch(allowed: ec.europa.eu 等): European Commission AI literacy schools teachers guidelines October 2026",
+      "started_utc": "2026-10-09T16:50:58Z",
+      "ended_utc": "2026-10-09T16:51:11Z",
+      "status": "ok",
+      "items_seen": 10,
+      "notes": "批次時間窗（平行呼叫，個別時戳不可分）；最新為 2026-03 教師指引；Education Package 仍稱『今年稍後』。"
+    },
+    {
+      "id": "Q27",
+      "source": "O-AU-EDU",
+      "query_or_url": "WebSearch(allowed: education.gov.au, ministers.education.gov.au): generative AI schools framework October 2026",
+      "started_utc": "2026-10-09T16:51:12Z",
+      "ended_utc": "2026-10-09T16:51:27Z",
+      "status": "ok",
+      "items_seen": 10,
+      "notes": "批次時間窗；最新為 2025-06 框架檢討；無 10 月新件。"
+    },
+    {
+      "id": "Q28",
+      "source": "O-SG-MOE",
+      "query_or_url": "WebSearch(allowed: moe.gov.sg): artificial intelligence schools students teachers October 2026",
+      "started_utc": "2026-10-09T16:51:12Z",
+      "ended_utc": "2026-10-09T16:51:27Z",
+      "status": "ok",
+      "items_seen": 10,
+      "notes": "批次時間窗；最新為 2026-05-06 國會答覆、2026-06-02 部長演講。"
+    },
+    {
+      "id": "Q29",
+      "source": "O-CA-EDU",
+      "query_or_url": "WebSearch(allowed: 各省政府網域): ministry of education province AI K-12 guidance October 2026 Canada",
+      "started_utc": "2026-10-09T16:51:12Z",
+      "ended_utc": "2026-10-09T16:51:27Z",
+      "status": "ok",
+      "items_seen": 10,
+      "notes": "批次時間窗；BC 既有指引、Manitoba 制定中、Ontario PA days；均非 10/09 首發。"
+    },
+    {
+      "id": "Q30",
+      "source": "O-CN-MOE",
+      "query_or_url": "WebSearch(allowed: moe.gov.cn, gov.cn): 教育部 人工智能教育 中小学 2026年10月",
+      "started_utc": "2026-10-09T16:51:12Z",
+      "ended_utc": "2026-10-09T16:51:27Z",
+      "status": "ok",
+      "items_seen": 10,
+      "notes": "批次時間窗；最新為 2026-04-10《人工智能+教育行动计划》。"
+    },
+    {
+      "id": "Q31",
+      "source": "跨來源掃描",
+      "query_or_url": "WebSearch(extended): government announces AI guidance schools students teachers \"October 9, 2026\" OR \"9 October 2026\"",
+      "started_utc": "2026-10-09T16:51:28Z",
+      "ended_utc": "2026-10-09T16:51:48Z",
+      "status": "ok",
+      "items_seen": 9,
+      "notes": "批次時間窗；無 10/09 官方新件；NYC/Utah 為較早地方案例。"
+    },
+    {
+      "id": "Q32",
+      "source": "O-EU-EC",
+      "query_or_url": "WebSearch(allowed: ec.europa.eu): Education Package 2030 Roadmap digital education skills adopted",
+      "started_utc": "2026-10-09T16:51:28Z",
+      "ended_utc": "2026-10-09T16:51:48Z",
+      "status": "ok",
+      "items_seen": 20,
+      "notes": "批次時間窗；未見已通過之證據，狀態待查。"
+    },
+    {
+      "id": "Q33",
+      "source": "O-HK-EDB",
+      "query_or_url": "WebSearch(allowed: edb.gov.hk, info.gov.hk): AI literacy primary secondary curriculum 2026 press release",
+      "started_utc": "2026-10-09T16:51:28Z",
+      "ended_utc": "2026-10-09T16:51:48Z",
+      "status": "ok",
+      "items_seen": 10,
+      "notes": "批次時間窗；最新為 2026-06-17 數字教育藍圖及相關通告。"
+    },
+    {
+      "id": "Q34",
+      "source": "O-UNESCO",
+      "query_or_url": "WebFetch https://www.unesco.org/en/newsroom",
+      "started_utc": "2026-10-09T16:51:49Z",
+      "ended_utc": "2026-10-09T16:51:54Z",
+      "status": "ok（WebFetch 可讀，curl 為 captcha）",
+      "items_seen": 30,
+      "notes": "10/09 共 4 則 News；其中 Cameroon 一則提及生成式 AI（見 items），其餘與 AI 無關。WebFetch 由小模型摘要，非原始 HTML。"
+    },
+    {
+      "id": "Q35",
+      "source": "O-EU-EC",
+      "query_or_url": "WebFetch https://education.ec.europa.eu/news",
+      "started_utc": "2026-10-09T16:51:49Z",
+      "ended_utc": "2026-10-09T16:51:54Z",
+      "status": "ok 但頁面無新聞列 → unavailable",
+      "items_seen": 0,
+      "notes": "失敗，非零命中。"
+    },
+    {
+      "id": "Q36",
+      "source": "O-HK-EDB",
+      "query_or_url": "curl https://applications.edb.gov.hk/circular/circular.aspx?langno=1",
+      "started_utc": "2026-10-09T16:51:54Z",
+      "ended_utc": "2026-10-09T16:51:56Z",
+      "status": "HTTP 200 但通告列表需表單/JS → unavailable",
+      "items_seen": 0,
+      "notes": "未取得通告列表；失敗，非零命中。"
+    },
+    {
+      "id": "Q37",
+      "source": "O-US-ED",
+      "query_or_url": "WebFetch https://www.ed.gov/about/news/press-release",
+      "started_utc": "2026-10-09T16:52:12Z",
+      "ended_utc": "2026-10-09T16:52:20Z",
+      "status": "HTTP 403 → failed",
+      "items_seen": 0,
+      "notes": "失敗，非零命中；改用 Q40–Q41 Federal Register。"
+    },
+    {
+      "id": "Q38",
+      "source": "O-AU-EDU",
+      "query_or_url": "WebFetch https://ministers.education.gov.au/",
+      "started_utc": "2026-10-09T16:52:12Z",
+      "ended_utc": "2026-10-09T16:52:20Z",
+      "status": "HTTP 503 → failed",
+      "items_seen": 0,
+      "notes": "失敗，非零命中。"
+    },
+    {
+      "id": "Q39",
+      "source": "O-SG-MOE",
+      "query_or_url": "WebFetch https://www.moe.gov.sg/news/press-releases",
+      "started_utc": "2026-10-09T16:52:12Z",
+      "ended_utc": "2026-10-09T16:52:20Z",
+      "status": "空內容 → failed",
+      "items_seen": 0,
+      "notes": "失敗，非零命中。"
+    },
+    {
+      "id": "Q40",
+      "source": "O-US-ED（Federal Register）",
+      "query_or_url": "https://www.federalregister.gov/api/v1/documents.json?conditions[agencies][]=education-department&conditions[term]=artificial+intelligence&conditions[publication_date][gte]=2026-09-25",
+      "started_utc": "2026-10-09T16:52:21Z",
+      "ended_utc": "2026-10-09T16:52:21Z",
+      "status": "HTTP 200",
+      "items_seen": 0,
+      "notes": "API count=0（真實零命中）：2026-09-25 起無 ED 提及 AI 之聯邦公報文件。"
+    },
+    {
+      "id": "Q41",
+      "source": "O-US-ED（Federal Register）",
+      "query_or_url": "https://www.federalregister.gov/api/v1/documents.json?conditions[agencies][]=education-department&conditions[publication_date][gte]=2026-10-05",
+      "started_utc": "2026-10-09T16:52:21Z",
+      "ended_utc": "2026-10-09T16:52:21Z",
+      "status": "HTTP 200",
+      "items_seen": 6,
+      "notes": "6 筆（資訊蒐集通知、Impact Aid 規則），均與 AI 無關。"
+    },
+    {
+      "id": "Q42",
+      "source": "O-UNESCO",
+      "query_or_url": "WebFetch https://www.unesco.org/en/articles/unesco-supports-family-awareness-raising-protecting-girls-digital-environment-cameroon",
+      "started_utc": "2026-10-09T16:52:37Z",
+      "ended_utc": "2026-10-09T16:52:37Z",
+      "status": "ok",
+      "items_seen": 1,
+      "notes": "讀取單篇以判斷性質與日期（含 Q34 追加取 URL 的一次 WebFetch，時戳未單獨記錄）。"
+    }
+  ],
+  "items": [
+    {
+      "title": "UNESCO Supports Family Awareness Raising on Protecting Girls in the Digital Environment in Cameroon",
+      "organization": "UNESCO（雅溫得區域辦事處）；主辦為喀麥隆婦女與家庭部",
+      "country": "喀麥隆",
+      "url": "https://www.unesco.org/en/articles/unesco-supports-family-awareness-raising-protecting-girls-digital-environment-cameroon",
+      "doc_type": "新聞稿／活動報導（非政策、非指引）",
+      "dates": {
+        "event_or_effective": "2026-10-07 前後（國際女孩日相關儀式；儀式確切日 unknown）",
+        "earliest_public_same_event": "unknown（未查其他語言或喀麥隆政府報導）",
+        "document_first_published": "2026-10-09（UNESCO 英文頁標示日期）",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "未完成更早反證查詢；所介紹之家長指南『The All-Screen Family』首發日 unknown。",
+      "school_level": "未針對學校／K–12（對象為家庭與家長）",
+      "topic": "兒少數位安全；順帶提及生成式 AI",
+      "short_excerpt": "WebFetch 摘要：指南內容涵蓋螢幕時間、社群媒體、網路暴力與 generative artificial intelligence。（摘要轉述，非原文逐字）",
+      "decision": "exclude",
+      "reason": "屬家庭宣導活動報導，非 K–12 AI 政策／指引；活動日早於發布日；AI 僅為附帶主題。",
+      "duplicate_of": null
+    },
+    {
+      "title": "Burundi Adopts a National Strategy to Use Assessment as a Tool for Improving Learning Outcomes",
+      "organization": "UNESCO（報導）；布隆迪政府",
+      "country": "布隆迪",
+      "url": "https://www.unesco.org/en/articles/burundi-adopts-national-strategy-use-assessment-tool-improving-learning-outcomes",
+      "doc_type": "新聞報導（僅讀標題）",
+      "dates": {
+        "event_or_effective": "unknown",
+        "earliest_public_same_event": "unknown",
+        "document_first_published": "2026-10-09（UNESCO newsroom 列表日期）",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "未查",
+      "school_level": "unknown",
+      "topic": "學習評量國家策略（標題未見 AI）",
+      "short_excerpt": "僅標題：Burundi Adopts a National Strategy to Use Assessment as a Tool for Improving Learning Outcomes",
+      "decision": "exclude",
+      "reason": "標題顯示主題為學習評量，非 AI 教育；未讀全文。",
+      "duplicate_of": null
+    },
+    {
+      "title": "「次期学習指導要領等に向けた審議まとめ」に関するパブリック・コメント（意見公募手続）を実施します",
+      "organization": "文部科學省（MEXT）",
+      "country": "日本",
+      "url": "https://www.mext.go.jp/b_menu/houdou/mext_01690.html",
+      "doc_type": "公眾意見徵集（諮詢）公告",
+      "dates": {
+        "event_or_effective": "徵集期間 unknown（未讀全文）",
+        "earliest_public_same_event": "2026-10-06（MEXT 新着情報列表）",
+        "document_first_published": "2026-10-06（列表日期；本文未讀）",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "列表日期 10/06 早於窗口；審議まとめ本身的中教審會議版本可能更早公開（未查）。",
+      "school_level": "初等中等教育（學習指導要領）",
+      "topic": "課程修訂；是否含 AI／資訊活用能力內容未核對",
+      "short_excerpt": "列表標題：「次期学習指導要領等に向けた審議まとめ」に関するパブリック・コメント（意見公募手続）を実施します",
+      "decision": "background",
+      "reason": "10/06 已公開，早於 10/09；AI 相關性未核對。若後續編輯需要，須讀日文原文，屬高風險（課程政策），待 N 系列核查。",
+      "duplicate_of": null
+    },
+    {
+      "title": "中央教育審議会初等中等教育分科会教育課程部会教育課程企画特別部会（第20回）を開催します",
+      "organization": "文部科學省（MEXT）",
+      "country": "日本",
+      "url": "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/kaisai/mext_00155.html",
+      "doc_type": "會議開催通知",
+      "dates": {
+        "event_or_effective": "會議日 unknown（未讀）",
+        "earliest_public_same_event": "2026-10-08（列表日期）",
+        "document_first_published": "2026-10-08",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "—",
+      "school_level": "初等中等",
+      "topic": "課程審議會議",
+      "short_excerpt": "列表標題：教育課程企画特別部会（第20回）を開催します",
+      "decision": "exclude",
+      "reason": "會議預告，非政策文件；且早於 10/09。",
+      "duplicate_of": null
+    },
+    {
+      "title": "AI數位領航鏈全球！115學年度全國高級中等學校教務主任工作會議",
+      "organization": "教育部國民及學前教育署（臺灣，本地來源）",
+      "country": "臺灣",
+      "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=3D7FE34DED5F4884",
+      "doc_type": "新聞稿（會議報導）",
+      "dates": {
+        "event_or_effective": "unknown（未讀內文）",
+        "earliest_public_same_event": "115-10-05（即時新聞列表）",
+        "document_first_published": "115-10-05（2026-10-05）",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "列表日期即早於窗口。",
+      "school_level": "高級中等學校",
+      "topic": "教務行政會議以 AI 為主題（僅據標題）",
+      "short_excerpt": "僅標題：AI數位領航鏈全球！115學年度全國高級中等學校教務主任工作會議",
+      "decision": "exclude",
+      "reason": "本地來源、會議活動報導、10/05 已發布，早於窗口。",
+      "duplicate_of": null
+    },
+    {
+      "title": "中华人民共和国教育部等五部门《“人工智能+教育”行动计划》（教科信〔2026〕1号）",
+      "organization": "教育部等五部门",
+      "country": "中國",
+      "url": "http://www.moe.gov.cn/srcsite/A16/s3342/202604/t20260410_1433240.html",
+      "doc_type": "正式政策文件（行動計畫通知）",
+      "dates": {
+        "event_or_effective": "落款 2026-04-02（據搜尋摘要，未讀原文）",
+        "earliest_public_same_event": "2026-04-10",
+        "document_first_published": "2026-04-10（URL 路徑與搜尋摘要）",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "2026-04-10 已由教育部及多個地方政府網站轉發。",
+      "school_level": "中小學及其他學段",
+      "topic": "AI 通識教育、教師",
+      "short_excerpt": "搜尋摘要：持續完善《中小學人工智能通識教育指南》，開齊開足開好相關課程。（WebSearch 摘要轉述）",
+      "decision": "background",
+      "reason": "2026-04 首發，非窗口內新訊；可作背景。高風險，待 N 系列核查。",
+      "duplicate_of": null
+    },
+    {
+      "title": "EDB announces Blueprint for Digital Education Development in Primary and Secondary Schools",
+      "organization": "香港教育局（經政府新聞公報）",
+      "country": "中國香港",
+      "url": "https://www.info.gov.hk/gia/general/202606/17/P2026061700342p.htm",
+      "doc_type": "政府新聞稿＋藍圖（正式指引性政策）",
+      "dates": {
+        "event_or_effective": "2026/27 學年起（據搜尋摘要，未核對）",
+        "earliest_public_same_event": "2026-06-17",
+        "document_first_published": "2026-06-17",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "2026-06-17 新聞公報；教育局通告 107/2026、113/2026 為後續文件。",
+      "school_level": "小學、中學",
+      "topic": "AI 素養學習框架、教師培訓",
+      "short_excerpt": "搜尋摘要：藍圖第一策略提出中小學 AI 素養學習框架。（WebSearch 摘要轉述）",
+      "decision": "background",
+      "reason": "2026-06 首發，非窗口內新訊。既有候選 A02、A03（教育局培訓行事曆）屬同一政策脈絡下的活動，但事件不同。",
+      "duplicate_of": "W2026-10-09-A02/A03（脈絡相關，非同事件）"
+    },
+    {
+      "title": "Empowering Learners for the Age of AI（AI literacy framework for primary and secondary education）",
+      "organization": "OECD 與 European Commission",
+      "country": "國際／歐盟",
+      "url": "https://www.oecd.org/en/publications/empowering-learners-for-the-age-of-ai_65cd27d4-en.html",
+      "doc_type": "非拘束性框架／報告",
+      "dates": {
+        "event_or_effective": "不適用（非拘束性）",
+        "earliest_public_same_event": "2026-06-18（據搜尋摘要）；評審草稿 2025 已公開",
+        "document_first_published": "2026-06（PDF 路徑 reports/2026/06）",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "2025 年已有 review draft 公開（據 EC 頁面摘要，未讀）。",
+      "school_level": "小學、中學",
+      "topic": "AI 素養框架",
+      "short_excerpt": "搜尋摘要：文件自述為非拘束性，對象為教師、學校領導與教育主管機關。（WebSearch 摘要轉述）",
+      "decision": "background",
+      "reason": "2026-06 首發，非窗口內新訊。",
+      "duplicate_of": null
+    },
+    {
+      "title": "New guidelines to help teachers lead Europe’s digital education（含更新版 AI 與資料倫理使用指引）",
+      "organization": "European Commission（EAC）",
+      "country": "歐盟",
+      "url": "https://education.ec.europa.eu/whats-new/news/new-guidelines-to-help-teachers-lead-europes-digital-education",
+      "doc_type": "正式（非拘束性）教師指引＋新聞",
+      "dates": {
+        "event_or_effective": "不適用",
+        "earliest_public_same_event": "2026-03-17（EACEA 同事件新聞 URL 日期）",
+        "document_first_published": "2026-03（據搜尋摘要）",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "EACEA 2026-03-17 同事件新聞。",
+      "school_level": "中小學教師",
+      "topic": "教師 AI／資料倫理、數位素養",
+      "short_excerpt": "搜尋摘要：四套指引涵蓋 AI 與資料倫理使用、數位素養、數位教育內容與資訊學。（WebSearch 摘要轉述）",
+      "decision": "background",
+      "reason": "2026-03 首發。另：EC『Education Package／2030 數位教育與技能路線圖』搜尋未見已通過證據，列入後續監看，不作候選。",
+      "duplicate_of": null
+    },
+    {
+      "title": "U.S. Department of Education Issues Guidance on Artificial Intelligence Use in Schools, Proposes Additional Supplemental Priority",
+      "organization": "U.S. Department of Education",
+      "country": "美國（聯邦）",
+      "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-issues-guidance-artificial-intelligence-use-schools-proposes-additional-supplemental-priority",
+      "doc_type": "新聞稿＋Dear Colleague Letter（指引）＋擬議補充優先項目",
+      "dates": {
+        "event_or_effective": "unknown（最終優先項目是否已發布未確認）",
+        "earliest_public_same_event": "2025-07-22（DCL 日期）",
+        "document_first_published": "2025-07-22",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "Federal Register API（Q40）2026-09-25 起無 ED 提及 AI 之文件。",
+      "school_level": "K–12 為主",
+      "topic": "聯邦經費可用於 AI；AI 素養優先項目",
+      "short_excerpt": "搜尋摘要：指引說明 AI 可用於教學教材、家教與升學就業輔導等並屬既有計畫允許用途。（WebSearch 摘要轉述）",
+      "decision": "background",
+      "reason": "2025 年首發；ed.gov 直接讀取 403，無法確認後續。",
+      "duplicate_of": null
+    },
+    {
+      "title": "Australian Framework for Generative Artificial Intelligence (AI) in Schools（含 2024 Review）",
+      "organization": "Australian Government Department of Education／Education Ministers Meeting",
+      "country": "澳洲（聯邦／全國框架）",
+      "url": "https://www.education.gov.au/schooling/resources/australian-framework-generative-artificial-intelligence-ai-schools",
+      "doc_type": "全國框架（部長會議核可）",
+      "dates": {
+        "event_or_effective": "2024 Term 1 起實施（據搜尋摘要）",
+        "earliest_public_same_event": "2023-10（核可）；檢討 2025-06 核可",
+        "document_first_published": "2023（首版）",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "頁面修改日 2025-06-17（據摘要；更新日不等於首發日）。",
+      "school_level": "中小學",
+      "topic": "學校生成式 AI 使用規範",
+      "short_excerpt": "搜尋摘要：框架旨在引導學校負責任且合乎倫理地使用生成式 AI。（WebSearch 摘要轉述）",
+      "decision": "background",
+      "reason": "早年首發；部會新聞頁 curl/WebFetch 失敗，無法排除 10/09 有未索引新件。",
+      "duplicate_of": null
+    },
+    {
+      "title": "AI usage in schools（Parliamentary reply）",
+      "organization": "Ministry of Education Singapore",
+      "country": "新加坡",
+      "url": "https://www.moe.gov.sg/news/parliamentary-replies/20260506-ai-usage-in-schools",
+      "doc_type": "國會書面答覆",
+      "dates": {
+        "event_or_effective": "不適用",
+        "earliest_public_same_event": "2026-05-06（URL 日期）",
+        "document_first_published": "2026-05-06",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "—",
+      "school_level": "小學、中學",
+      "topic": "學校 AI 使用規範",
+      "short_excerpt": "搜尋摘要：小一至小三不指派需直接使用 AI 的作業；小四起在教師督導下使用教育專用 AI 工具。（WebSearch 摘要轉述，未核對是否出自此頁）",
+      "decision": "background",
+      "reason": "2026-05 首發；MOE 新聞列表無法讀取（Q07/Q19/Q39 失敗）。",
+      "duplicate_of": null
+    },
+    {
+      "title": "UNESCO IITE report on teacher AI competency frameworks（題名未確認）",
+      "organization": "UNESCO IITE",
+      "country": "國際",
+      "url": "unknown（WebSearch 摘要提及，未取得 URL）",
+      "doc_type": "報告",
+      "dates": {
+        "event_or_effective": "不適用",
+        "earliest_public_same_event": "2026-09-28（據搜尋摘要，未核對）",
+        "document_first_published": "unknown",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "—",
+      "school_level": "教師",
+      "topic": "教師 AI 能力框架分析",
+      "short_excerpt": "無（未讀原文）",
+      "decision": "background",
+      "reason": "據摘要為 9/28 發布，早於窗口；未核對題名與 URL，不得引用。",
+      "duplicate_of": null
+    },
+    {
+      "title": "Mandatory Professional Activity Days for the 2026-27 School Year（含 AI 安全負責使用專業學習）",
+      "organization": "Ontario Ministry of Education",
+      "country": "加拿大（安大略省）",
+      "url": "https://www.ontario.ca/document/education-ontario-policy-and-program-direction/mandatory-professional-activity-days",
+      "doc_type": "政策與計畫指令（Policy/Program Direction）",
+      "dates": {
+        "event_or_effective": "2026-27 學年",
+        "earliest_public_same_event": "unknown",
+        "document_first_published": "unknown",
+        "discovered_on": "2026-10-09"
+      },
+      "earlier_evidence": "非 10/09 首發（搜尋結果未標日期；省新聞頁 JS-only 無法讀取）。",
+      "school_level": "K–12 教師",
+      "topic": "教師 AI 專業學習",
+      "short_excerpt": "搜尋摘要：規劃活動包括安全且負責任使用 AI 的專業學習。（WebSearch 摘要轉述）",
+      "decision": "background",
+      "reason": "首發日 unknown，但屬 2026-27 學年既定安排，無 10/09 新公告證據。",
+      "duplicate_of": null
+    }
+  ],
+  "limits": [
+    "WebSearch、WebFetch 可用；curl 可用但多個官方站點阻擋（US ED 403、OECD 403、UNESCO captcha、澳洲 HTTP/2 錯誤、BC SSL 錯誤、新加坡 MOE／Ontario／EC 教育新聞頁需 JS）。",
+    "未能直接讀取新聞列表的來源：US ED（改以 Federal Register 補）、OECD、European Commission 教育新聞、澳洲 Department of Education／部長新聞、新加坡 MOE、加拿大 Ontario／BC 新聞、香港教育局通告列表（改以政府新聞公報補）。這些來源只能說『搜尋未見』，不能說『當日無發布』。",
+    "WebSearch 為搜尋引擎索引加 AI 摘要，當日（10/09）新頁常未收錄；摘要內容不是原文證據，items 中所有『搜尋摘要』摘錄需回原文核對。",
+    "WebFetch 由小模型轉述頁面內容，非原始 HTML；UNESCO newsroom 項目日期與 URL 據此取得。",
+    "時區：10/09 對亞洲（HKT/JST/KST）已近日終，對美洲仍在工作日中；美洲來源 10/09 後續發布未涵蓋。韓國 10/09 為公休日（未查證）。",
+    "批次平行呼叫的查詢共用一個時間窗，個別起訖時戳不可分。",
+    "Q03 GOV.UK 關鍵詞查詢在依時間排序時未有效篩選；DfE 判斷依據為 Q02 最新 40 筆清單（10/05–10/09）。",
+    "更早反證：本批無 candidate，故未對任何候選做跨語言／較早版本的完整反證；background 項目的日期多據搜尋摘要或 URL，未讀原文。",
+    "未修改 repo、未提交；未保存整頁全文（raw/ 僅為 scratchpad 暫存原始抓取，可刪除）。"
+  ],
+  "summary": {
+    "queries_total": 42,
+    "queries_ok": 26,
+    "queries_failed_or_unavailable": 16,
+    "candidate": 0,
+    "background": 10,
+    "exclude": 4
+  }
+}
