@@ -170,6 +170,19 @@
 | V25 | Brian Abramowitz | Florida Museum of Natural History/K-12 Education and Outreach Coordinator | #30 2022〈In-service teachers’ (mis)conceptions of artificial int…〉J08，被引 142 | A5065566581；ORCID 0000-0001-8681-0853。**已確認** |
 | V26 | James C. Lester | North Carolina State University/Goodnight Distinguished University Professor in Artificial Intelligence and Machine Learning | #31 2023〈K-12 Education in the Age of AI: A Call to Action for K…〉J03，被引 136；#34 2022〈Lessons Learned for AI Education with Elementary Studen…〉J03，被引 118 | A5074470380；ORCID 0000-0003-1481-6601。**已確認** |
 
+## 3d. 維護紀錄：2026 年無作品者的近五年檢查（2026-10-09）
+
+管理者決定：2026 全年在 OpenAlex 查無作品者，再查近五年（2021-01-01～2026-10-09）；若無相關論文就從名單移除。「相關」以題名或摘要同時涉及 AI 與教育判斷（關鍵字粗分，另經編輯 session 目視）。ORCID 與作者 ID 兩種查法結果相同。
+
+| ID | 學者 | 2026 作品 | 近五年作品 | AI＋教育相關 | 最近一篇相關 | 結果 |
+|---|---|---|---|---|---|---|
+| T12 | 楊子奇 | 0 | 6 | 3 | 2025-01 高中生以 ChatGPT 輔助程式學習 | 保留 |
+| H07 | Senén Barro | 0 | 18 | 1（目視；關鍵字另抓到 5 篇機器學習方法論文，非教育） | 2023-04 K-12 AI 素養系統性回顧 | 保留，但相關產出少，下次維護時再評估 |
+| H24 | Omaima Almatrafi | 0 | 14 | 5 | 2025-04 以生成式 AI 分類課程學習成果 | 保留 |
+| H33 | Ahlam Mohammed Al-Abdullatif | 0 | 19 | 6 | 2025-06 K-12 AI 素養能力稽核 | 保留 |
+
+結果：4 人近五年都有相關論文，無人移除。2026 年查無作品可能是 OpenAlex 收錄延遲。V 級（第 3c 節）新增者尚未做 2026 年作品檢查。
+
 ## 4. C 政策與實務窗口（不依作者檢索）
 
 ### 4a. 2026 年
