@@ -1,0 +1,149 @@
+{
+  "group": "wave3-B",
+  "utc_start": "2026-10-09T15:09:20Z",
+  "utc_end": "2026-10-09T15:18:53Z",
+  "phases_utc": [
+    {"phase": "setup: read repo files, load Composio tools", "start": "2026-10-09T15:09:20Z", "end": "2026-10-09T15:09:35Z"},
+    {"phase": "phase1: Exa fetch of J17 / C06 / C07 / C11 primary and mirror pages; started J17 cloud browser task", "start": "2026-10-09T15:09:35Z", "end": "2026-10-09T15:10:34Z"},
+    {"phase": "phase2: Exa search + mirror fetch (ResearchGate J17 author/publisher PDF text, ACM dlnext pages, EdUHK repository)", "start": "2026-10-09T15:10:34Z", "end": "2026-10-09T15:14:28Z"},
+    {"phase": "phase3: cloud-browser tasks (ACM C06 poster PDF, ACM C07 page, Academia, ScienceDirect J17) and result reading", "start": "2026-10-09T15:14:28Z", "end": "2026-10-09T15:18:53Z"}
+  ],
+  "queries": [
+    "AI literacy interventions in education: A meta-analysis of effects and moderators 59 studies 172 effect sizes educational level primary secondary",
+    "Day of AI Australia Teacher Insights Nation-Wide AI Literacy Program K-12 Students Banks Renzella poster",
+    "From Teachers to Students: Evaluating Canvas City as a Path to AI Literacy ITiCSE 2025",
+    "Canvas City teachers Prolific AI decision-making crowdsourcing Ioannou Kasinidou Kleanthous arXiv OR preprint OR repository",
+    "Teaching Machine Learning to Senior Primary Students AlphAI robots Hong Kong Kong Yang Chow ICCE 2025 sixth-grade 145",
+    "(first attempt of 4 searches with highlights/domain filters failed: managed Exa allows only auto search, <=10 results, no content add-ons)"
+  ],
+  "urls_attempted": [
+    {"url": "https://www.sciencedirect.com/science/article/pii/S1747938X26000527", "tool": "EXA_GET_CONTENTS_ACTION", "status": "error", "error": "HTTP 400 CRAWL_HTTP_400"},
+    {"url": "https://www.sciencedirect.com/science/article/pii/S1747938X26000527", "tool": "BROWSER_TOOL_CREATE_TASK/WATCH_TASK (cloud browser)", "status": "success", "error": "agent-summarised output (LLM paraphrase of page); dates/level counts independently matched by ResearchGate full-text copy"},
+    {"url": "https://research.cuhk.edu.hk/en/publications/ai-literacy-interventions-in-education-a-meta-analysis-of-effects/", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": null},
+    {"url": "https://www.researchgate.net/publication/408371227_AI_Literacy_Interventions_in_Education_A_Meta-Analysis_of_Effects_and_Moderators", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": "first call with maxAgeHours=-1 returned 404 CONTENT_NOT_CACHED; livecrawl call succeeded (first 100000 chars, full article body incl. Appendix A)"},
+    {"url": "https://edtechdev.github.io/aied/articles/liu-ai-literacy-interventions-meta-analysis-2026/", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": "third-party summary; used only as pointer, not as evidence"},
+    {"url": "https://www.semanticscholar.org/paper/AI-literacy-interventions-in-education%3A-A-of-and-Liu-Lin/fbdbc332dfffd931d4b5bb8782c44f17285f4fad", "tool": "EXA_GET_CONTENTS_ACTION", "status": "error", "error": "HTTP 500 CRAWL_EMPTY_CONTENT"},
+    {"url": "https://sigcse2025.sigcse.org/details/sigcse-ts-2025-posters/55/Day-of-AI-Australia-Teacher-Insights-from-a-Nation-Wide-AI-Literacy-Program-for-K-12", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": null},
+    {"url": "https://dl.acm.org/doi/10.1145/3641555.3705158", "tool": "EXA_GET_CONTENTS_ACTION", "status": "error", "error": "HTTP 504 CRAWL_LIVECRAWL_TIMEOUT"},
+    {"url": "https://dlnext.acm.org/doi/10.1145/3641555.3705158", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": "abstract/metadata only, no poster body"},
+    {"url": "https://dl.acm.org/doi/10.1145/3641555.3705158 (+ /doi/epdf/...)", "tool": "BROWSER_TOOL_CREATE_TASK/WATCH_TASK", "status": "success", "error": "Cloudflare check initially shown then passed; poster text was extracted by browser agent (LLM-summarised, not a raw dump)"},
+    {"url": "https://researchr.org/publication/BanksR25", "tool": "EXA_GET_CONTENTS_ACTION", "status": "error", "error": "HTTP 504 CRAWL_TIMEOUT"},
+    {"url": "https://www.researchgate.net/publication/389114686_Day_of_AI_Australia_Teacher_Insights_from_a_Nation-Wide_AI_Literacy_Program_for_K-12_Students", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": "Request-PDF stub only; shows 'February 2025'"},
+    {"url": "https://dl.acm.org/doi/10.1145/3724363.3729069", "tool": "EXA_GET_CONTENTS_ACTION", "status": "error", "error": "HTTP 504 CRAWL_LIVECRAWL_TIMEOUT"},
+    {"url": "https://dlnext.acm.org/doi/10.1145/3724363.3729069", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": "metadata, abstract, references; Publication History collapsed"},
+    {"url": "https://dl.acm.org/doi/10.1145/3724363.3729069", "tool": "BROWSER_TOOL_CREATE_TASK (2 tasks)", "status": "partial", "error": "task 1 stopped at Cloudflare 'Performing security verification'; task 2 (via dlnext) passed after retries and returned Published 17 June 2025 only"},
+    {"url": "https://www.academia.edu/166234533/From_Teachers_to_Students_Evaluating_Canvas_City_as_a_Path_to_AI_Literacy", "tool": "EXA_GET_CONTENTS_ACTION + BROWSER_TOOL", "status": "success", "error": "no upload date label visible; year 2025, 7 pages"},
+    {"url": "https://www.researchgate.net/publication/392794721_From_Teachers_to_Students_Evaluating_Canvas_City_as_a_Path_to_AI_Literacy", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": "Request-PDF stub, 'June 2025'"},
+    {"url": "https://dblp1.uni-trier.de/rec/conf/iticse/IoannouKIK25.html", "tool": "EXA_GET_CONTENTS_ACTION", "status": "error", "error": "HTTP 403 SOURCE_NOT_AVAILABLE"},
+    {"url": "https://researchr.org/publication/IoannouKIK25", "tool": "EXA_GET_CONTENTS_ACTION", "status": "error", "error": "HTTP 504 CRAWL_TIMEOUT"},
+    {"url": "https://sah.borca.ai/papers/279406885", "tool": "EXA_GET_CONTENTS_ACTION", "status": "error", "error": "HTTP 500 CRAWL_UNKNOWN_ERROR"},
+    {"url": "https://library.apsce.net/index.php/ICCE/article/view/6011", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": null},
+    {"url": "https://library.apsce.net/index.php/ICCE/article/download/6011/5941/7183", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": "extracted PDF text (~20k chars) covers whole paper through References; no page images, page count not given in extracted text"},
+    {"url": "https://library.apsce.net/index.php/ICCE/issue/view/31", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": "issue page: Published 2025-12-01, conference 1-5 Dec 2025"},
+    {"url": "https://repository.eduhk.hk/en/publications/teaching-machine-learning-to-senior-primary-students-evaluating-a/", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": "'Published - 2025'; type listed as Chapter in proceedings"},
+    {"url": "https://library.iated.org/view/KONG2025TEA", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": "different paper (teacher focus groups, ICERI 2025), companion not the same study"},
+    {"url": "https://www.researchgate.net/publication/412462360_Teaching_Machine_Learning_to_Senior_Primary_Students_Evaluating_a_Course_for_AI_Literacy_in_a_Hong_Kong_Primary_School", "tool": "EXA_GET_CONTENTS_ACTION", "status": "success", "error": "Request-PDF stub"}
+  ],
+  "items": [
+    {
+      "doi": "10.1016/j.edurev.2026.100813",
+      "title": "AI literacy interventions in education: A meta-analysis of effects and moderators",
+      "source_id": "J17",
+      "findings": [
+        {"claim": "Bibliographic dates: received 2025-10-27, revised 2026-05-29, accepted 2026-06-27, available online 2026-07-02; ScienceDirect browser agent also reported Version of Record 2026-07-03; volume 52, August 2026, article 100813. CUHK repository lists 'Published - Aug 2026'. First-public of any preprint not searched/verified.", "evidence_quote_short": "Received 27 October 2025; ... Accepted 27 June 2026 ... Available online 2 July 2026", "url": "https://www.researchgate.net/publication/408371227_AI_Literacy_Interventions_in_Education_A_Meta-Analysis_of_Effects_and_Moderators", "date_type": "publisher_online; issue; accepted; received", "confidence": "high for online/accepted/received (two independent reads: RG copy of article front matter and ScienceDirect browser agent); medium for Version of Record 2026-07-03 (browser agent only)"},
+        {"claim": "School-level distribution of the 59 included studies is elementary 12 (32 effect sizes), secondary 20 (68 ES), higher education 23 (63 ES), mixed 4 (9 ES). Secondary is NOT split into lower/upper secondary. Higher education is the largest group (38.98%); so the pool is not K-12 only (K-12 elementary+secondary = 32 of 59 studies).", "evidence_quote_short": "most studies targeted higher education (n = 23, 38.98%) and secondary school students (n = 20, 33.90%)", "url": "https://www.researchgate.net/publication/408371227_AI_Literacy_Interventions_in_Education_A_Meta-Analysis_of_Effects_and_Moderators", "date_type": "n/a", "confidence": "high (article Section 4 text and Table of subgroup results read in extracted full text; elementary/mixed counts also from Table; browser agent concurred)"},
+        {"claim": "Educational level is a non-significant moderator: F(3,168)=1.174, p=.321. Mixed-level subgroup is descriptively largest (g=1.041, k=9 ES) but flagged by authors as cautious; secondary g=0.663, higher ed g=0.952, elementary g=0.845. No stage-based superiority can be claimed.", "evidence_quote_short": "No significant differences in effect sizes were found across educational levels (F (3, 168) = 1.174, p =.321)", "url": "https://www.researchgate.net/publication/408371227_AI_Literacy_Interventions_in_Education_A_Meta-Analysis_of_Effects_and_Moderators", "date_type": "n/a", "confidence": "high"},
+        {"claim": "Included designs: inclusion required '(quasi-)experimental designs'; effect sizes were computed for both independent-groups posttest designs and single-group pretest-posttest designs (Hedges' g, three-level model). Single-group pre-post are not controlled comparisons; they were pooled with controlled posttest designs. Eight outlying effect sizes excluded; with them retained the pooled estimate was larger (g=1.270).", "evidence_quote_short": "calculated for both independent-groups posttest designs and single-group pretest-posttest designs", "url": "https://www.researchgate.net/publication/408371227_AI_Literacy_Interventions_in_Education_A_Meta-Analysis_of_Effects_and_Moderators", "date_type": "n/a", "confidence": "high"},
+        {"claim": "Bias / quality assessment: no formal risk-of-bias tool is described in the text searched; authors state study quality was not incorporated into weighting and that varying internal validity may have contributed to variation. The review was not preregistered. Absence of a tool was established by keyword search of the extracted body (first 100000 chars) plus the browser agent's page search, not by a line-by-line audit of the Methods; cautiously 'not found', not 'confirmed none'.", "evidence_quote_short": "study quality was not explicitly incorporated into the weighting", "url": "https://www.researchgate.net/publication/408371227_AI_Literacy_Interventions_in_Education_A_Meta-Analysis_of_Effects_and_Moderators", "date_type": "n/a", "confidence": "medium-high"},
+        {"claim": "Effect-size scope: overall g=0.837 (p<.001), 59 studies, 172 ES, 7211 participants, 95% prediction interval [-0.292, 1.966] crossing zero; authors state effects may not generalize uniformly. Significant moderators only region and learning-outcome focus; larger descriptive effects for mixed/reflective pedagogy, GenAI tools, performance tasks are non-significant. Outcomes are mostly AI knowledge (46 of the coded outcomes), instruments include self-report (44.87%) and performance tasks (52.56%). Not a universal K-12 or causal-superiority finding.", "evidence_quote_short": "may not generalize uniformly across contexts", "url": "https://research.cuhk.edu.hk/en/publications/ai-literacy-interventions-in-education-a-meta-analysis-of-effects/", "date_type": "n/a", "confidence": "high"},
+        {"claim": "Search scope: authors restricted to English peer-reviewed journal articles and conference proceedings; included studies published 2020-2024 (with 2024 n=28, 47.46%); participants must be students. So K-12 relevance is limited to the elementary and secondary subgroups; it would be wrong to relabel the pooled effect as K-12.", "evidence_quote_short": "published between 2020 and 2024, with a notable increase in 2024 (n = 28, 47.46%)", "url": "https://www.researchgate.net/publication/408371227_AI_Literacy_Interventions_in_Education_A_Meta-Analysis_of_Effects_and_Moderators", "date_type": "n/a", "confidence": "high"}
+      ],
+      "resolved": true,
+      "remaining_gaps": [
+        "Primary vs lower-secondary vs upper-secondary split is not reported (single 'Secondary' code); Appendix A per-study table could allow manual recount but was only partially read (first part of 100000 chars).",
+        "Formal risk-of-bias tool absence not line-audited; ScienceDirect direct crawl via Exa HTTP 400, full text read via ResearchGate copy (provenance of RG PDF = article front matter shows ScienceDirect header; treated as the published version but not verified as publisher PDF).",
+        "Earliest preprint / first public version not searched (publisher online 2026-07-02 only).",
+        "Version of Record 2026-07-03 reported by cloud-browser agent summary only."
+      ],
+      "proposed_kb_changes": [
+        "Set publisher_online date 2026-07-02 (day precision), issue Aug 2026 vol 52 art. 100813; mark first_publication still online-first not global earliest.",
+        "Add scope note: 'meta-analysis of AI literacy interventions across elementary (12), secondary (20), higher education (23), mixed (4) studies; not K-12 only; includes single-group pre-post; no formal RoB tool found; prediction interval crosses zero'.",
+        "Keep content_checked unpromoted unless the integrator accepts the RG-text read; claim wording must not say 'K-12 effect g=0.837'."
+      ]
+    },
+    {
+      "doi": "10.1145/3641555.3705158",
+      "title": "Day of AI Australia: Teacher Insights from a Nation-Wide AI Literacy Program for K-12 Students",
+      "source_id": "C06",
+      "findings": [
+        {"claim": "Dates: ACM publication date 2025-02-18; poster session at SIGCSE TS 2025 on Fri 28 Feb 2025, 15:00-17:00, Exhibit Hall C Posters #3; conference 26 Feb-1 Mar 2025, Pittsburgh. ACM Publication History shows a single entry (browser agent). Type Poster, 2 pages (pp. 1375-1376 per browser agent), proceedings V.2. No earlier public version found (not exhaustively searched).", "evidence_quote_short": "Published: 18 February 2025", "url": "https://dlnext.acm.org/doi/10.1145/3641555.3705158", "date_type": "publisher_online (ACM); conference_event 2025-02-28", "confidence": "high for ACM date and event date (two sources: ACM page via Exa, SIGCSE event page); medium for pages 1375-1376 (browser agent only)"},
+        {"claim": "Instrument/sample (from poster text via browser agent): per-lesson anonymous teacher feedback in the Day of AI Australia learning management system, 5-point Likert (1 Strongly Disagree to 5 Strongly Agree) on student knowledge change, lesson appropriateness and likelihood to teach again; 61 teachers responded, representing about 2,946 students; whole program 64,000 students and 370 teachers. This is teacher-perceived student knowledge change, not student assessment.", "evidence_quote_short": "61 teachers responded to the forms", "url": "https://dl.acm.org/doi/10.1145/3641555.3705158", "date_type": "n/a", "confidence": "medium (single cloud-browser read of the ACM ePDF; output is an agent paraphrase with short quotes, not independently confirmed; 61 is consistent with the abstract's 'over 60')"},
+        {"claim": "School level: upper primary and early secondary (ages 10 to 16) per abstract (official SIGCSE page and ACM page).", "evidence_quote_short": "upper primary and early secondary school (ages 10 to 16)", "url": "https://sigcse2025.sigcse.org/details/sigcse-ts-2025-posters/55/Day-of-AI-Australia-Teacher-Insights-from-a-Nation-Wide-AI-Literacy-Program-for-K-12", "date_type": "n/a", "confidence": "high"},
+        {"claim": "Limitations reported (via browser agent): 89.7% of students from Major cities; Independent and Catholic schools over-represented; data only available as high-level aggregations to protect teacher anonymity. Evidence is teacher feedback on a national program; no student-level outcomes, no comparison group.", "evidence_quote_short": "89.7% of students came from Major cities", "url": "https://dl.acm.org/doi/10.1145/3641555.3705158", "date_type": "n/a", "confidence": "medium (single agent read)"}
+      ],
+      "resolved": false,
+      "remaining_gaps": [
+        "Poster body read only through a cloud-browser agent summary; exact quotes and the numbers (61, 2,946, 64,000, 370, 89.7%) should be re-read from the ePDF by a second reader before use in public text.",
+        "No direct Exa/WebFetch read of poster PDF (HTML only). Local original poster file not obtained.",
+        "Earlier non-ACM public versions (Day of AI Australia site, UNSW) not searched in depth."
+      ],
+      "proposed_kb_changes": [
+        "Fill dates: ACM publication 2025-02-18 (publisher_online, day), conference_event 2025-02-28 poster session, type poster, 2 pages, region Australia, level upper primary/early secondary ages 10-16.",
+        "Add scope: teacher post-lesson Likert feedback (n=61 of 370 teachers), no student outcome measurement; do not use as evidence of student efficacy.",
+        "Keep partial until second-reader confirmation of the PDF numbers."
+      ]
+    },
+    {
+      "doi": "10.1145/3724363.3729069",
+      "title": "From Teachers to Students: Evaluating Canvas City as a Path to AI Literacy",
+      "source_id": "C07",
+      "findings": [
+        {"claim": "ACM publication date: Published 17 June 2025 (ITiCSE 2025 V.1, pp. 16-22, 7 pages); conference 27 June-2 July 2025 Nijmegen. Publication History on the ACM page lists only 'Published: 17 June 2025' (Accepted/Received not listed). Type label research-article (browser agent), 'Free access'. Issue year remains 2025.", "evidence_quote_short": "Published: 17 June 2025", "url": "https://dlnext.acm.org/doi/10.1145/3724363.3729069", "date_type": "publisher_online (ACM); conference_event 2025-06-27/07-02", "confidence": "high for Published date (ACM page via Exa and a cloud-browser read); medium for 'only one history entry' (browser agent only)"},
+        {"claim": "Author-uploaded version on Academia.edu has the same title, authors and DOI and carries the ACM reference format; it is the ACM-format camera-ready (7 pages, copyright notice 'Publication rights licensed to ACM'). No upload date or version label visible on the page, so no earlier public version date was established.", "evidence_quote_short": "7 pages", "url": "https://www.academia.edu/166234533/From_Teachers_to_Students_Evaluating_Canvas_City_as_a_Path_to_AI_Literacy", "date_type": "author_upload_date unknown", "confidence": "medium"},
+        {"claim": "ResearchGate stub dates the item June 2025; no arXiv/preprint hit surfaced in the Exa query. This is absence in one search, not proof of no earlier version.", "evidence_quote_short": "June 2025", "url": "https://www.researchgate.net/publication/392794721_From_Teachers_to_Students_Evaluating_Canvas_City_as_a_Path_to_AI_Literacy", "date_type": "discovery/aggregator", "confidence": "low-medium"},
+        {"claim": "Reconfirmed (no new analysis): participants are teachers on Prolific (90 teachers), tool evaluation by teacher perception; no student outcomes. Title says 'Path' only.", "evidence_quote_short": "A crowdsourcing experiment conducted with 90 teachers on Prolific", "url": "https://dlnext.acm.org/doi/10.1145/3724363.3729069", "date_type": "n/a", "confidence": "high"}
+      ],
+      "resolved": true,
+      "remaining_gaps": [
+        "Earlier public versions (preprint/repository) not exhaustively searched; only one Exa query and aggregator stubs.",
+        "Academia upload date not displayed; ACM Accepted/Received dates not listed.",
+        "Full vs short paper status inferred only from ACM 'research-article' label and 7 pages, not from proceedings TOC."
+      ],
+      "proposed_kb_changes": [
+        "Set date 2025-06-17 (day) type publisher_online; add conference_event 2025-06-27/07-02; keep first-public as 'unknown/not earlier found'.",
+        "Keep scope: teacher level, single-group self-report; no student outcome."
+      ]
+    },
+    {
+      "doi": "10.58459/icce.2025.6011",
+      "title": "Teaching Machine Learning to Senior Primary Students: Evaluating a Course for AI Literacy in a Hong Kong Primary School",
+      "source_id": "C11",
+      "findings": [
+        {"claim": "Design: six-hour ML course with AlphAI robots; convenience sample of 145 sixth-grade students (94 boys, 51 girls; ages 10-13; M=10.94) from five classes in ONE primary school; pre/post 13-item concept test (Cronbach alpha 0.656) plus five focus groups of three students (15 students). No comparison or control group is described anywhere in the extracted paper.", "evidence_quote_short": "convenience sample of 145 sixth-grade students", "url": "https://library.apsce.net/index.php/ICCE/article/download/6011/5941/7183", "date_type": "n/a", "confidence": "high (full extracted PDF text read: abstract, sections 1-5, references)"},
+        {"claim": "Matched-analysis denominator: the paper never states the number of pre/post pairs analysed. 145 is the recruited/consented sample; the Wilcoxon result (Z=5.860, pre M=5.03 SD=2.072 to post M=7.07 SD=2.790, p<.001) and the boys/girls Mann-Whitney (U=1769.50) have no N reported. Missing data, attrition, absences, and handling of incomplete pairs are not mentioned. Matched N therefore remains unknown; do not write 'n=145 matched'.", "evidence_quote_short": "Z = 5.860, p < 0.001", "url": "https://library.apsce.net/index.php/ICCE/article/download/6011/5941/7183", "date_type": "n/a", "confidence": "high that N matched and missing-data info are absent from the extracted text; medium that nothing is lost in extraction (no page images)"},
+        {"claim": "Paper type: ICCE 2025 proceedings article in the main proceedings; PDF header 'Proceedings of the 33rd ICCE'; the text is short (about 4-6 printed pages by length; page count not shown in extraction) and the APSCE page and EdUHK repository do not label it full/short/workshop. Full vs short therefore unverified.", "evidence_quote_short": "Published - 2025", "url": "https://repository.eduhk.hk/en/publications/teaching-machine-learning-to-senior-primary-students-evaluating-a/", "date_type": "n/a", "confidence": "medium for 'type unlabelled', high that label could not be found"},
+        {"claim": "Dates: APSCE article page and issue page show Published 2025-12-01 (issue/proceedings volume); ICCE 2025 held 1-5 December 2025 in Chennai (main conference from 3 Dec). 2025-12-01 is the proceedings publication stamp and coincides with the first day of the conference; presentation day of this paper not established. Pre-event versions not found.", "evidence_quote_short": "Published: 2025-12-01", "url": "https://library.apsce.net/index.php/ICCE/issue/view/31", "date_type": "proceedings_publication; conference_event 2025-12-01/05", "confidence": "high for 2025-12-01 stamp; presentation date unknown"},
+        {"claim": "Conclusion language overstates ('demonstrated the effectiveness') relative to design; authors themselves note limited generalisability due to small sample and one school. Pre-post gain in a one-group design cannot support causal attribution or Hong Kong-wide generalisation. A companion teacher-focus-group paper (IATED ICERI 2025, Yang, Chow, Kong) is a different study with 16 teachers, not the same data.", "evidence_quote_short": "generalisability of this study is limited by its small sample size", "url": "https://library.apsce.net/index.php/ICCE/article/download/6011/5941/7183", "date_type": "n/a", "confidence": "high"}
+      ],
+      "resolved": true,
+      "remaining_gaps": [
+        "Matched pre/post N, missing data/attrition: not reported in the paper (unknown, not zero).",
+        "Full vs short paper status unlabelled; page count not seen.",
+        "Presentation date within ICCE 2025 unknown; possible earlier preprint not searched.",
+        "Read via extracted text, not page images."
+      ],
+      "proposed_kb_changes": [
+        "Record sample as 'recruited/consented 145 grade-6, single school, convenience sample; matched analysis N not reported'.",
+        "Set design to single-group pre-post plus focus groups (n=15), no comparison group; claim strength: descriptive learning gain in one school only.",
+        "Keep paper_type unknown; date 2025-12-01 (proceedings_publication) with conference_event 2025-12-01/05."
+      ]
+    }
+  ],
+  "unresolved": [
+    "J17: exact primary / lower-secondary / upper-secondary split (not reported; only Elementary, Secondary, Higher education, Mixed); formal risk-of-bias tool not found (not line-audited); first-public preprint not searched.",
+    "C06: poster body numbers read via a single cloud-browser agent summary; needs second reader of the ePDF; earlier versions not searched.",
+    "C07: earlier public version/upload date not found (not exhaustively searched); full vs short label not confirmed.",
+    "C11: matched-analysis N, missing data, full vs short paper type, presentation date, preprint all unknown/unreported."
+  ],
+  "notes": "Tools: Composio EXA_GET_CONTENTS_ACTION / EXA_SEARCH (the named slug COMPOSIO_SEARCH_FETCH_URL_CONTENT was not offered; the Exa toolkit slugs actually returned by COMPOSIO_SEARCH_TOOLS were used) and BROWSER_TOOL_CREATE_TASK/WATCH_TASK. Browser-agent outputs are LLM-written summaries of live pages; they are marked medium confidence unless matched by a second source. Exa publishedDate values were not used as evidence. Durations: overall window 2026-10-09T15:09:20Z to 15:18:53Z (wall clock 9 min 33 s); phase windows are in phases_utc; no speedup claimed. No repo files other than these two outputs were written; no git commands issued."
+}

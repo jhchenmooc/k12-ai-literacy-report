@@ -1,0 +1,107 @@
+{
+  "utc_start": "2026-10-09T15:21:55Z",
+  "utc_end": "2026-10-09T15:45:53Z",
+  "answers": {
+    "Q1": {
+      "values": {
+        "title": "AI makes you smarter but none the wiser: The disconnect between performance and metacognition",
+        "received": "13 March 2025",
+        "revised": ["5 August 2025"],
+        "accepted": "20 August 2025",
+        "available_online": "9 October 2025",
+        "version_of_record": "27 October 2025",
+        "publication_date": "1 February 2026",
+        "volume": "175",
+        "month_year": "February 2026",
+        "issue": "unknown: ScienceDirect shows 'Volume 175' and 'Article 108779' with no issue number; Crossref issue is null",
+        "article_number": "108779",
+        "crossref": {"published": "2026-02", "issued": "2026-02", "published-print": "2026-02", "published-online": null, "created": "2025-10-09T16:38:44Z", "assertion_has_received_accepted_dates": false}
+      },
+      "date_sources": {
+        "received_revised_accepted_available_online_VoR": "ScienceDirect article-history JSON embedded in page HTML (dates object), fetched via Firecrawl rawHtml",
+        "available_online_cross_check": "ScienceDirect meta citation_online_date 2025/10/09; Crossref created 2025-10-09",
+        "volume_month": "ScienceDirect page header (Date: February 2026, Volume 175), meta citation_publication_date 2026/02/01, citation_volume 175; Crossref volume 175 and issued 2026-02"
+      },
+      "sources": [
+        {"url": "https://api.crossref.org/works/10.1016/j.chb.2025.108779", "tool": "TINYFISH_FETCH_URLS", "status": "ok"},
+        {"url": "https://doi.org/10.1016/j.chb.2025.108779 (resolves to https://www.sciencedirect.com/science/article/pii/S0747563225002262)", "tool": "FIRECRAWL_SCRAPE (rawHtml + markdown)", "status": "ok"},
+        {"url": "https://doi.org/10.1016/j.chb.2025.108779", "tool": "TINYFISH_FETCH_URLS", "status": "blocked: returned 'Are you a robot?' captcha page; not interacted with"}
+      ],
+      "confidence": "high",
+      "unresolved": ["Issue number not displayed by publisher or Crossref."]
+    },
+    "Q2": {
+      "values": {
+        "title": "Day of AI Australia: Teacher Insights from a Nation-Wide AI Literacy Program for K-12 Students (Banks and Renzella; pp. 1375-1376; published 2025-02-18 per Crossref)",
+        "teachers_who_gave_feedback": 61,
+        "teachers_in_program": "370 teachers from 260 schools (2024 DoAIA); the poster does not give a number of 'classes'",
+        "students_in_program": "over 64,000 students in 2024",
+        "students_represented_by_respondents": "around 2,946 students (the 61 responding teachers' classes)",
+        "rating_scale": "Likert 1 = Strongly Disagree, 5 = Strongly Agree; per-lesson means 4.08-4.75",
+        "other_stats": "78% reported increased teaching confidence; 85% reported high engagement; 92% willing to teach again",
+        "derived_not_in_poster": "61/370 = about 16.5% of teachers (my arithmetic)",
+        "stated_limitations": "No dedicated limitations section. Poster itself states: 'preliminary data'; participation skewed ('89.7% of students came from Major cities'; independent and Catholic schools 'over-represented'; lower engagement from regional and public schools). Feedback is teacher self-report, anonymous, aggregated. No explicit statement about the response rate or non-response bias of the 61 teachers.",
+        "quotes": [
+          "Over 64,000 students and 370 teachers from 260 schools across Australia participated in the 2024 DoAIA.",
+          "61 teachers responded to the forms, representing around 2,946 students.",
+          "Likert rating scale where 1 = Strongly Disagree, and 5 = Strongly Agree",
+          "89.7% of students came from Major cities."
+        ]
+      },
+      "sources": [
+        {"url": "https://dl.acm.org/doi/pdf/10.1145/3641555.3705158", "tool": "FIRECRAWL_SCRAPE (PDF returned base64, decoded and pdftotext)", "status": "ok"},
+        {"url": "https://dl.acm.org/doi/10.1145/3641555.3705158", "tool": "FIRECRAWL_SCRAPE (abstract 'over 60 participating school teachers')", "status": "ok"},
+        {"url": "https://api.crossref.org/works/10.1145/3641555.3705158", "tool": "TINYFISH_FETCH_URLS", "status": "ok"},
+        {"url": "https://dl.acm.org/doi/10.1145/3641555.3705158", "tool": "TINYFISH_FETCH_URLS", "status": "blocked: bot_blocked, not retried by solving"}
+      ],
+      "confidence": "high for numbers; medium for the limitations reading (inferred from Lessons Learned text, no formal limitations section)",
+      "unresolved": ["Number of 'classes' not stated.", "Response rate not stated by the authors."]
+    },
+    "Q3": {
+      "values": {
+        "title": "AI literacy interventions in education: A meta-analysis of effects and moderators (Liu, Lin, Ng, Yang, Dai)",
+        "included_studies": 59,
+        "effect_sizes": 172,
+        "participants": 7211,
+        "overall_hedges_g": 0.837,
+        "overall_se": 0.073,
+        "overall_95CI": [0.692, 0.982],
+        "prediction_interval_95": [-0.292, 1.966],
+        "by_educational_level": {
+          "elementary": {"studies": 12, "effect_sizes": 32, "g": 0.845},
+          "secondary": {"studies": 20, "effect_sizes": 68, "g": 0.663},
+          "higher_education": {"studies": 23, "effect_sizes": 63, "g": 0.952},
+          "mixed": {"studies": 4, "effect_sizes": 9, "g": 1.041},
+          "moderator_test": "F(3,168)=1.174, p=.321 (not significant)",
+          "check": "12+20+23+4 = 59 studies; 32+68+63+9 = 172 effect sizes"
+        },
+        "received": "27 October 2025",
+        "revised": ["29 May 2026"],
+        "accepted": "27 June 2026",
+        "available_online": "2 July 2026",
+        "version_of_record": "3 July 2026",
+        "publication_date": "1 August 2026",
+        "volume": "52",
+        "month_year": "August 2026",
+        "issue": "unknown: no issue number shown; Crossref issue is null",
+        "article_number": "100813",
+        "crossref": {"published": "2026-08", "issued": "2026-08", "published-online": null, "created": "2026-07-02T16:36:33Z"}
+      },
+      "sources": [
+        {"url": "https://api.crossref.org/works/10.1016/j.edurev.2026.100813", "tool": "TINYFISH_FETCH_URLS", "status": "ok"},
+        {"url": "https://doi.org/10.1016/j.edurev.2026.100813 (resolves to https://www.sciencedirect.com/science/article/pii/S1747938X26000527)", "tool": "FIRECRAWL_SCRAPE (rawHtml full text: abstract, Table 7, Section 4.2)", "status": "ok"},
+        {"url": "https://doi.org/10.1016/j.edurev.2026.100813", "tool": "TINYFISH_FETCH_URLS", "status": "blocked: captcha page, not interacted with"}
+      ],
+      "confidence": "high",
+      "unresolved": ["Issue number not shown. Elementary/secondary/higher-education counts come from Table 7 (n and k); the text only quotes higher education n=23 and secondary n=20 in Section 4.2."]
+    }
+  },
+  "blocked_urls": [
+    "https://doi.org/10.1016/j.chb.2025.108779 (TinyFish: captcha page)",
+    "https://doi.org/10.1016/j.edurev.2026.100813 (TinyFish: captcha page)",
+    "https://dl.acm.org/doi/10.1145/3641555.3705158 (TinyFish: bot_blocked)",
+    "https://dl.acm.org/doi/pdf/10.1145/3641555.3705158 (TinyFish: bot_blocked)",
+    "https://www.sciencedirect.com/science/article/pii/S0747563225003437 (my guessed PII, not a valid source; bot_blocked; no evidence used)"
+  ],
+  "notes": "No captcha was clicked or solved. Firecrawl returned the real publisher pages, and every value above comes from those pages or Crossref. No Exa/aggregator dates were used. I read no repository files and ran no git commands. The Crossref records carry no received/accepted dates (assertion list has none), so those come from the ScienceDirect article-history data only. Crossref 'published-online' is null for both Elsevier articles; the Available online date is corroborated by ScienceDirect citation_online_date and the Crossref created date. ScienceDirect lists Version of Record two to one days after Available online for both articles."
+}
