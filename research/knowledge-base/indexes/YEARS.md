@@ -287,6 +287,15 @@
 | KB-2026-0161 — [Can Teacher AI Literacy Reach Those Who Need It Most? Professional Learning, Realised Access, and Cumulative Advantage in TALIS 2024](https://doi.org/10.15388/infedu.2605.036) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0162 — [Pedagogical Noise in GenAI-Supported Algorithmisation: Scaffolding and Substitution in Upper-Secondary Informatics](https://doi.org/10.15388/infedu.2606.033) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0163 — [Measuring the Data Agency of Pre-Service Teachers: A Six-Factor Model](https://doi.org/10.15388/infedu.2506.023) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0164 — [Step‐by‐step towards understanding artificial intelligence: A scaffolded learning progression for young learners](https://doi.org/10.1111/bjet.70069) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0165 — [A framework for generative AI policy and guidelines in K-12 education](https://doi.org/10.1080/15391523.2026.2661641) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0166 — [Exploring Bias and Building AI Models: Data Science for Middle Schoolers](https://doi.org/10.1080/08872376.2026.2632617) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0167 — [Using Social Robots to Teach AI to Preschool Children](https://doi.org/10.4324/9781003607304-10) | book_chapter | 未知 | discovered_unverified |
+| KB-2026-0168 — [Writing Coach, Reading Tutor, and Conversation Partner](https://doi.org/10.4324/9781003661443-5) | book_chapter | 未知 | discovered_unverified |
+| KB-2026-0169 — [A Theory-Informed Narrative-Centered Model to Foster AI Literacy and Biomedical Career Interest](https://doi.org/10.1145/3815598.3815638) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0170 — [Preparing educators for the AI-enhanced future: Insights from a teacher professional development for K-12 education in Singapore](https://doi.org/10.58459/rptel.2026.21041) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0171 — [The impact of generative AI training on teachers’ curriculum adaptation using reflective practices](https://doi.org/10.1007/s44163-026-01456-0) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0172 — [AI transformation in education: Examining teachers’ perceptions using an integrated TAM-TPACK-GenAI framework](https://doi.org/10.30935/cedtech/17983) | journal_article | 未知 | discovered_unverified |
 
 ## 2027｜issue_year
 

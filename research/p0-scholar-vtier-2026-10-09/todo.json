@@ -1,0 +1,685 @@
+[
+ {
+  "openalex_ids": [
+   "W7201899982"
+  ],
+  "doi": "10.1007/978-3-032-34157-0_8",
+  "title": "Sequence Vs Transition Network Analysis: Complementary Insights Into Students’ Learning Patterns",
+  "openalex_publication_date": "2026-01-01",
+  "source": "Communications in computer and information science",
+  "scholars": [
+   "V02"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1007/978-3-032-34157-0_8"
+ },
+ {
+  "openalex_ids": [
+   "W7127583750"
+  ],
+  "doi": "10.5040/9781350518810",
+  "title": "Child-Friendly Computer Science",
+  "openalex_publication_date": "2026-01-01",
+  "source": "Bloomsbury Publishing Plc eBooks",
+  "scholars": [
+   "V03"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.5040/9781350518810"
+ },
+ {
+  "openalex_ids": [
+   "W7127085868"
+  ],
+  "doi": "10.1007/978-3-032-15743-0_3",
+  "title": "Block-Based Programming vs Prompt-Based Programming: An Exploratory Study on the Potential of Generative AI to Facilitate Learning CT Skills in K-12",
+  "openalex_publication_date": "2026-01-01",
+  "source": "Lecture notes in networks and systems",
+  "scholars": [
+   "V10"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1007/978-3-032-15743-0_3"
+ },
+ {
+  "openalex_ids": [
+   "W7203901795"
+  ],
+  "doi": "10.2139/ssrn.7330465",
+  "title": "What 5,000 Questions to AI Reveal About Children’s Curiosity and Information-Seeking Behavior",
+  "openalex_publication_date": "2026-01-01",
+  "source": "SSRN Electronic Journal",
+  "scholars": [
+   "V18"
+  ],
+  "preprint_only": true,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.2139/ssrn.7330465"
+ },
+ {
+  "openalex_ids": [
+   "W7154960891"
+  ],
+  "doi": "10.1007/978-3-032-06565-0_3",
+  "title": "Generative AI-Based Automated Assessment Generation",
+  "openalex_publication_date": "2026-01-01",
+  "source": "Springer eBooks",
+  "scholars": [
+   "V21"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1007/978-3-032-06565-0_3"
+ },
+ {
+  "openalex_ids": [
+   "W7211988711"
+  ],
+  "doi": "10.3102/2283935",
+  "title": "Interactive Machine Learning and Conversational Agents for Supporting Scientific Inquiry in Secondary Education (Poster 6)",
+  "openalex_publication_date": "2026-01-01",
+  "source": "American Educational Research Association Annual Meeting (AERA)",
+  "scholars": [
+   "V21"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.3102/2283935"
+ },
+ {
+  "openalex_ids": [
+   "W7125790831"
+  ],
+  "doi": "10.3389/feduc.2025.1737928",
+  "title": "Generative AI use and self-learning in higher education: the role of learning difficulties",
+  "openalex_publication_date": "2026-01-27",
+  "source": "Frontiers in Education",
+  "scholars": [
+   "V12"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.3389/feduc.2025.1737928"
+ },
+ {
+  "openalex_ids": [
+   "W7127352390"
+  ],
+  "doi": "10.58459/rptel.2026.21041",
+  "title": "Preparing educators for the AI-enhanced future: Insights from a teacher professional development for K-12 education in Singapore",
+  "openalex_publication_date": "2026-02-03",
+  "source": "Research and Practice in Technology Enhanced Learning",
+  "scholars": [
+   "V10"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.58459/rptel.2026.21041"
+ },
+ {
+  "openalex_ids": [
+   "W7128818320"
+  ],
+  "doi": "10.1145/3770762.3772634",
+  "title": "Boosting Coding Confidence in Elementary Students: The Impact of ELA-Integrated Computational Thinking Curriculum",
+  "openalex_publication_date": "2026-02-13",
+  "source": "ACM Technical Symposium on Computer Science Education (SIGCSE)",
+  "scholars": [
+   "V19"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1145/3770762.3772634"
+ },
+ {
+  "openalex_ids": [
+   "W7131398936"
+  ],
+  "doi": "10.4018/979-8-3373-6546-6",
+  "title": "Pedagogical Innovations in Computer Science Education",
+  "openalex_publication_date": "2026-02-25",
+  "source": "IGI Global eBooks",
+  "scholars": [
+   "V13"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.4018/979-8-3373-6546-6"
+ },
+ {
+  "openalex_ids": [
+   "W7134185006"
+  ],
+  "doi": "10.1002/jcal.70214",
+  "title": "Promoting Interdisciplinary Learning With Generative AI Through Self‐Regulated Scaffolding",
+  "openalex_publication_date": "2026-02-25",
+  "source": "Journal of Computer Assisted Learning",
+  "scholars": [
+   "V15"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1002/jcal.70214"
+ },
+ {
+  "openalex_ids": [
+   "W7131659753"
+  ],
+  "doi": "10.30935/cedtech/17983",
+  "title": "AI transformation in education: Examining teachers’ perceptions using an integrated TAM-TPACK-GenAI framework",
+  "openalex_publication_date": "2026-02-26",
+  "source": "Contemporary Educational Technology",
+  "scholars": [
+   "V12"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.30935/cedtech/17983"
+ },
+ {
+  "openalex_ids": [
+   "W7131784494"
+  ],
+  "doi": "10.1016/j.wss.2026.100375",
+  "title": "The association between ethical AI use and well-being among young adults in the UAE: a structural equation modeling approach",
+  "openalex_publication_date": "2026-02-27",
+  "source": "Wellbeing Space and Society",
+  "scholars": [
+   "V12"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1016/j.wss.2026.100375"
+ },
+ {
+  "openalex_ids": [
+   "W7153097176"
+  ],
+  "doi": "10.1080/08872376.2026.2632617",
+  "title": "Exploring Bias and Building AI Models: Data Science for Middle Schoolers",
+  "openalex_publication_date": "2026-03-04",
+  "source": "Science Scope",
+  "scholars": [
+   "V24",
+   "V25"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1080/08872376.2026.2632617"
+ },
+ {
+  "openalex_ids": [
+   "W7134926158"
+  ],
+  "doi": "10.4324/9781003607304-10",
+  "title": "Using Social Robots to Teach AI to Preschool Children",
+  "openalex_publication_date": "2026-03-11",
+  "source": "Routledge eBooks",
+  "scholars": [
+   "V11"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.4324/9781003607304-10"
+ },
+ {
+  "openalex_ids": [
+   "W7135082490"
+  ],
+  "doi": "10.1080/09588221.2026.2640087",
+  "title": "ChatGPT-assisted EFL learning beyond the classroom: impact on oral proficiency, enjoyment, and grit",
+  "openalex_publication_date": "2026-03-12",
+  "source": "Computer Assisted Language Learning",
+  "scholars": [
+   "V08"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1080/09588221.2026.2640087"
+ },
+ {
+  "openalex_ids": [
+   "W7138898835",
+   "W7128716336"
+  ],
+  "doi": "10.1609/aaai.v40i48.42116",
+  "title": "A Dialogue-Based Learning Analytics Framework for Collaborative Game-Based Learning",
+  "openalex_publication_date": "2026-03-14",
+  "source": "Proceedings of the AAAI Conference on Artificial Intelligence",
+  "scholars": [
+   "V26"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1609/aaai.v40i48.42116"
+ },
+ {
+  "openalex_ids": [
+   "W7155016777"
+  ],
+  "doi": "10.1111/bjet.70069",
+  "title": "Step‐by‐step towards understanding artificial intelligence: A scaffolded learning progression for young learners",
+  "openalex_publication_date": "2026-04-20",
+  "source": "British Journal of Educational Technology",
+  "scholars": [
+   "V26"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1111/bjet.70069"
+ },
+ {
+  "openalex_ids": [
+   "W4414790180"
+  ],
+  "doi": "10.1145/3785022.3785094",
+  "title": "From Wandering to Collaboration: Discourse Patterns in Middle School Generative AI Use",
+  "openalex_publication_date": "2026-04-25",
+  "source": "International Learning Analytics and Knowledge Conference (LAK)",
+  "scholars": [
+   "V19"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1145/3785022.3785094"
+ },
+ {
+  "openalex_ids": [
+   "W7155649524"
+  ],
+  "doi": "10.1145/3785022.3785065",
+  "title": "Collaborative Dialogue Analysis for Productive Problem Solving",
+  "openalex_publication_date": "2026-04-25",
+  "source": "International Learning Analytics and Knowledge Conference (LAK)",
+  "scholars": [
+   "V26"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1145/3785022.3785065"
+ },
+ {
+  "openalex_ids": [
+   "W7160030797"
+  ],
+  "doi": "10.1080/15391523.2026.2661641",
+  "title": "A framework for generative AI policy and guidelines in K-12 education",
+  "openalex_publication_date": "2026-05-01",
+  "source": "Journal of Research on Technology in Education",
+  "scholars": [
+   "V13",
+   "V14"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1080/15391523.2026.2661641"
+ },
+ {
+  "openalex_ids": [
+   "W7160238686"
+  ],
+  "doi": "10.1016/j.asw.2026.101053",
+  "title": "Anchor is the key: Toward accessible automated essay scoring with large language model through prompting",
+  "openalex_publication_date": "2026-05-05",
+  "source": "Assessing Writing",
+  "scholars": [
+   "V19"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1016/j.asw.2026.101053"
+ },
+ {
+  "openalex_ids": [
+   "W7160487259"
+  ],
+  "doi": "10.1080/10409289.2026.2669922",
+  "title": "Using Generative Artificial Intelligence to Facilitate Early STEM Learning: A Case Study in a Chinese Kindergarten",
+  "openalex_publication_date": "2026-05-06",
+  "source": "Early Education and Development",
+  "scholars": [
+   "V03"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1080/10409289.2026.2669922"
+ },
+ {
+  "openalex_ids": [
+   "W7160544296"
+  ],
+  "doi": "10.1016/j.caeai.2026.100599",
+  "title": "From proficiency to pedagogy: A mixed-methods study of in-service teachers’ TPACK-GenAI and the mediating role of pedagogical knowledge",
+  "openalex_publication_date": "2026-05-07",
+  "source": "Computers and Education Artificial Intelligence",
+  "scholars": [
+   "V12"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1016/j.caeai.2026.100599"
+ },
+ {
+  "openalex_ids": [
+   "W7162467038"
+  ],
+  "doi": "10.1016/j.caeo.2026.100383",
+  "title": "Protecting teacher agency in times of strong technology push: grounding decisions in Biesta's educational purposes",
+  "openalex_publication_date": "2026-05-26",
+  "source": "Computers and Education Open",
+  "scholars": [
+   "V09"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1016/j.caeo.2026.100383"
+ },
+ {
+  "openalex_ids": [
+   "W7163018347"
+  ],
+  "doi": "10.1007/s44163-026-01456-0",
+  "title": "The impact of generative AI training on teachers’ curriculum adaptation using reflective practices",
+  "openalex_publication_date": "2026-06-01",
+  "source": "Discover Artificial Intelligence",
+  "scholars": [
+   "V12"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1007/s44163-026-01456-0"
+ },
+ {
+  "openalex_ids": [
+   "W7164811294"
+  ],
+  "doi": "10.4324/9781003661443-5",
+  "title": "Writing Coach, Reading Tutor, and Conversation Partner",
+  "openalex_publication_date": "2026-06-15",
+  "source": "Routledge eBooks",
+  "scholars": [
+   "V19"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.4324/9781003661443-5"
+ },
+ {
+  "openalex_ids": [
+   "W7165025033"
+  ],
+  "doi": "10.35542/osf.io/62qsn_v1",
+  "title": "Artificial Intelligence in Toys: Implications for Child Development and Play",
+  "openalex_publication_date": "2026-06-17",
+  "source": null,
+  "scholars": [
+   "V18"
+  ],
+  "preprint_only": true,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.35542/osf.io/62qsn_v1"
+ },
+ {
+  "openalex_ids": [
+   "W7165394810"
+  ],
+  "doi": "10.1145/3773077.3812151",
+  "title": "Designing Conversational Agents for Young Children: Comparing Disembodied, Embodied, and Customizable Agents",
+  "openalex_publication_date": "2026-06-20",
+  "source": "ACM Interaction Design and Children Conference (IDC)",
+  "scholars": [
+   "V19"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1145/3773077.3812151"
+ },
+ {
+  "openalex_ids": [
+   "W7166118352"
+  ],
+  "doi": "10.1007/978-3-032-29770-9_55",
+  "title": "AI Evaluation and Feedback to Support Middle-School Students’ Scientific Argumentation and Reasoning",
+  "openalex_publication_date": "2026-06-26",
+  "source": "Lecture notes in computer science",
+  "scholars": [
+   "V21"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1007/978-3-032-29770-9_55"
+ },
+ {
+  "openalex_ids": [
+   "W7166012550"
+  ],
+  "doi": "10.1007/978-3-032-29773-0_25",
+  "title": "Introducing Adolescents to the Social Dimensions of AI Through Story-Driven Game-Based Learning",
+  "openalex_publication_date": "2026-06-26",
+  "source": "Lecture notes in computer science",
+  "scholars": [
+   "V26"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1007/978-3-032-29773-0_25"
+ },
+ {
+  "openalex_ids": [
+   "W7166823997"
+  ],
+  "doi": "10.1016/j.compedu.2026.105707",
+  "title": "A community of inquiry perspective on human–AI co-facilitation within micro-blended learning",
+  "openalex_publication_date": "2026-07-01",
+  "source": "Computers & Education",
+  "scholars": [
+   "V16"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1016/j.compedu.2026.105707"
+ },
+ {
+  "openalex_ids": [
+   "W7167103066"
+  ],
+  "doi": "10.1080/10494820.2026.2685798",
+  "title": "Bidirectional relations of epistemic beliefs and their impact on student engagement across GenAI platforms: a longitudinal quasi-experiment in middle school programming",
+  "openalex_publication_date": "2026-07-02",
+  "source": "Interactive Learning Environments",
+  "scholars": [
+   "V15"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1080/10494820.2026.2685798"
+ },
+ {
+  "openalex_ids": [
+   "W7169861271"
+  ],
+  "doi": "10.4324/9781003657590",
+  "title": "Digital Identities, AI Ethics, and Mental Health",
+  "openalex_publication_date": "2026-07-21",
+  "source": "Routledge eBooks",
+  "scholars": [
+   "V12"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.4324/9781003657590"
+ },
+ {
+  "openalex_ids": [
+   "W7171692395"
+  ],
+  "doi": "10.1145/3815598.3815638",
+  "title": "A Theory-Informed Narrative-Centered Model to Foster AI Literacy and Biomedical Career Interest",
+  "openalex_publication_date": "2026-07-30",
+  "source": "International Conference on the Foundations of Digital Games (FDG)",
+  "scholars": [
+   "V26"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1145/3815598.3815638"
+ },
+ {
+  "openalex_ids": [
+   "W7214524865"
+  ],
+  "doi": "10.14742/ajet.10934",
+  "title": "Artificial intelligence in interdisciplinary higher education: A systematic review on opportunities, challenges and future directions",
+  "openalex_publication_date": "2026-08-22",
+  "source": "Australasian Journal of Educational Technology",
+  "scholars": [
+   "V15"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.14742/ajet.10934"
+ },
+ {
+  "openalex_ids": [
+   "W7205001413"
+  ],
+  "doi": "10.1007/s44436-026-00043-5",
+  "title": "Fostering SCALE habits of mind through AI-empowered arts-based pedagogy",
+  "openalex_publication_date": "2026-09-02",
+  "source": "AI Brain and Child",
+  "scholars": [
+   "V03"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1007/s44436-026-00043-5"
+ },
+ {
+  "openalex_ids": [
+   "W7212988735"
+  ],
+  "doi": "10.1007/s44436-026-00044-4",
+  "title": "Reimagining K-12 education in the era of artificial intelligence: a critical paradigm shift toward human-machine symbiosis",
+  "openalex_publication_date": "2026-09-14",
+  "source": "AI Brain and Child",
+  "scholars": [
+   "V03"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1007/s44436-026-00044-4"
+ },
+ {
+  "openalex_ids": [
+   "W7213469721"
+  ],
+  "doi": "10.1007/s11528-026-01223-z",
+  "title": "Narrative-centered Learning Environments for Science: A Scoping Review",
+  "openalex_publication_date": "2026-09-17",
+  "source": "TechTrends",
+  "scholars": [
+   "V26"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1007/s11528-026-01223-z"
+ },
+ {
+  "openalex_ids": [
+   "W7214649799"
+  ],
+  "doi": "10.1016/j.ssaho.2026.103755",
+  "title": "Enhancing educational equity through citizen engagement: A governance-oriented framework for sustainable AI adoption in rural Nigeria",
+  "openalex_publication_date": "2026-09-28",
+  "source": "Social Sciences & Humanities Open",
+  "scholars": [
+   "V04"
+  ],
+  "preprint_only": false,
+  "in_kb": false,
+  "heuristic": "keyword: education+K-12+AI in title/abstract; not screened",
+  "status": "not_screened",
+  "doi_norm": "10.1016/j.ssaho.2026.103755"
+ }
+]
