@@ -79,6 +79,10 @@ function dailyFact(c,issueDate){
  if(c.checked_at>issueDate||c.publication_date>issueDate)errors.push("source or review date occurs after daily issue date");
  if(typeof c.first_disclosed_on!=="string"||c.first_disclosed_on!==c.publication_date)errors.push("verified first disclosure required");
  if(c.first_disclosed_on&&c.first_disclosed_on>issueDate)errors.push("first disclosure occurs after daily issue date");
+ if(typeof c.first_disclosed_on==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(c.first_disclosed_on)){
+  const delta=Date.parse(issueDate+"T00:00:00Z")-Date.parse(c.first_disclosed_on+"T00:00:00Z");
+  if(!Number.isFinite(delta)||delta<0||delta>7*86400000)errors.push("daily source first disclosed outside recent 7-day window; background only");
+ }
  if(attributed&&(!Array.isArray(c.summary_evidence_spans)||c.summary_evidence_spans.length===0||c.summary_evidence_spans.some(v=>typeof v!=="string"||v.length<16||!String(c.original_excerpt||"").includes(v))))errors.push("source-aligned evidence spans required");
  if(c.assertion_type&&c.assertion_type!=="direct_statement")errors.push("daily AI channel excludes editorial interpretation");
  if(attributed&&/(已證實|證明|因果|必然|全面強制|所有學生|所有教師|保證有效|應在臺灣推動)/.test(c.attributed_summary||""))errors.push("attributed summary contains disallowed inference or high-impact wording");
@@ -110,6 +114,13 @@ function validate(root){
   if(!Array.isArray(data)||data.length===0){errors.push("edition must have non-empty claims "+p);continue}
   let html;try{html=fs.readFileSync(htmlPath,"utf8")}catch(e){errors.push("edition HTML unreadable "+p+": "+e.message);continue}
   if(/<\/?(?:script|iframe|object|embed)\b/i.test(html)||/\son[a-z]+\s*=/i.test(html))errors.push(p+": active HTML content outside claim-bound main is forbidden");
+  // Static pages cannot carry executable or protocol-relative URL attributes.
+  for(const m of html.matchAll(/\b(?:href|src|action|formaction)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/gi)){
+   const raw=m[1]??m[2]??m[3]??"";
+   const decoded=raw.replace(/&#(?:x([0-9a-f]+)|([0-9]+));?/gi,(_,h,n)=>String.fromCodePoint(parseInt(h||n,h?16:10))).replace(/&colon;/gi,":").replace(/[\u0000-\u0020\u007f]+/g,"").toLowerCase();
+   if(/^(javascript|data|vbscript|file):/.test(decoded)||decoded.startsWith("//"))
+    errors.push(p+": unsafe URL scheme in registered HTML");
+  }
   errors.push(...matchBody(html,data).map(e=>p+": "+e));
   const claimIds=new Set();
   for(const c of data){
@@ -119,7 +130,7 @@ function validate(root){
    if(daily)errors.push(...dailyFact(c,issueDate||"0000-00-00").map(e=>q+" "+c.claim_id+": "+e));
    const result=check(c);
    if(!result.allow)errors.push(q+" "+c.claim_id+": "+result.reasons.join("; "));
-   errors.push(...sourceTrace(root,c).map(e=>q+" "+c.claim_id+": "+e));
+   errors.push(...sourceTrace(root,c,{requireBibliographicSnapshot:daily}).map(e=>q+" "+c.claim_id+": "+e));
    if(c.claim_class==="high_impact"&&(!c.reviewer_id||!c.reviewer_evidence))errors.push(q+" "+c.claim_id+": reviewer record missing");
   }
  }
