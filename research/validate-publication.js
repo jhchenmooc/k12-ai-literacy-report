@@ -82,6 +82,9 @@ function dailyFact(c,issueDate){
   if(c.ai_crosscheck_passes!==2||c.ai_crosscheck_status!=="concordant")errors.push("attributed summary needs recorded two-pass crosscheck");
  }else if(c.claim_class!=="bibliographic"||c.risk_tier!=="low")errors.push("daily AI channel permits low-risk bibliographic claims only");
  if(!["official_notice","research_bibliography","official_attributed_summary","research_abstract_attributed_summary"].includes(c.daily_fact_kind))errors.push("invalid daily_fact_kind");
+ if(c.kind==="news_policy"&&!["binding_policy","official_guidance","draft","official_commentary","training_event"].includes(c.source_document_type))errors.push("missing or invalid policy document type");
+ if(c.kind==="research"&&!["peer_reviewed_article","preprint"].includes(c.source_document_type))errors.push("missing or invalid research document type");
+ if(c.source_document_type==="draft"&&c.daily_fact_kind==="official_notice"&&c.claim_class!=="bibliographic")errors.push("draft cannot masquerade as enacted policy");
  if(c.kind==="news_policy"&&!["official_notice","official_attributed_summary"].includes(c.daily_fact_kind))errors.push("policy source cannot use research daily category");
  if(c.kind==="research"&&!["research_bibliography","research_abstract_attributed_summary"].includes(c.daily_fact_kind))errors.push("research source cannot use policy daily category");
  if(typeof c.source_title!=="string"||!c.source_title.trim()||c.source_title.length>300||/[\r\n<>]/.test(c.source_title))errors.push("invalid source_title");
