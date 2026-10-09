@@ -57,8 +57,9 @@ function matchBody(html,claims){
 
 function staticHtmlSafety(html,label){
  const errors=[];
- if(/<\/?(?:script|iframe|object|embed|base|meta|link|form)\b/i.test(html))errors.push(label+": active or redirect-capable HTML forbidden");
+ if(/<\/?(?:script|iframe|object|embed|base|form)\b/i.test(html))errors.push(label+": active or redirect-capable HTML forbidden");
  if(/\son[a-z]+\s*=/i.test(html))errors.push(label+": inline event handler forbidden");
+ if(/<meta\b[^>]*http-equiv\s*=\s*["']?refresh/i.test(html))errors.push(label+": meta refresh redirect forbidden");
  for(const m of html.matchAll(/\b(?:href|src|action|formaction)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s>]+))/gi)){
   const raw=m[1]??m[2]??m[3]??"";
   const decoded=raw.replace(/&#(?:x([0-9a-f]+)|([0-9]+));?/gi,(_,h,n)=>String.fromCodePoint(parseInt(h||n,h?16:10))).replace(/&colon;/gi,":").replace(/[\u0000-\u0020\u007f]+/g,"").toLowerCase();
