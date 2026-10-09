@@ -47,7 +47,17 @@
 | KB-2025-0018 — [Why don't teachers teach AI ethics? Understanding teachers' beliefs and intentions in Chinese AI curriculum implementation through the theory of planned behaviour](https://doi.org/10.1016/j.caeai.2025.100518) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0019 — [Epistemic network analysis of in-service teachers’ competency to teach artificial intelligence for secondary education](https://doi.org/10.1016/j.caeai.2025.100520) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0020 — [Integrating generative artificial intelligence in K-12 education: Examining teachers’ preparedness, practices, and barriers](https://doi.org/10.1016/j.caeai.2025.100363) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0021 — [K-12 teachers’ ethical competencies for AI literacy: Insights from a systematic literature review](https://doi.org/10.1016/j.compedu.2025.105435) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0022 — [Study of an effective machine learning-integrated science curriculum for high school youth in an informal learning setting](https://doi.org/10.1186/s40594-025-00543-5) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0023 — [Constructionism in K-12 AI Literacy Education: A Systematic Review of Pedagogical Designs, Student Outcomes, and Learning Mechanisms](https://doi.org/10.1177/07356331251360442) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0024 — [LLMs to Support K–12 Teachers in Culturally Relevant Pedagogy: An AI Literacy Example](https://doi.org/10.1007/978-3-031-99264-3_19) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0025 — [“AlphAI”: Teaching AI Algorithms to K12 by Training Learning Robots and Visualizing How It Works](https://doi.org/10.1609/aaai.v39i28.35181) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0026 — [Understanding K-12 Teachers’ Needs for AI Education: A Survey-Based Study](https://doi.org/10.1609/aaai.v39i28.35183) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0027 — [Smart Motor: A Low-Cost Hardware and Software Toolkit for Introducing Supervised Machine Learning to Elementary School Students](https://doi.org/10.1609/aaai.v39i28.35185) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0028 — [Empowering Educators in AI: Insights from Co-Designing an AI Microcredential with and for K-12 Educators](https://doi.org/10.1609/aaai.v39i28.35186) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0029 — [Shaping AI Interest in Rural Middle Schools with Unplugged Learning: Gender Differences and Teacher Insights](https://doi.org/10.1609/aaai.v39i28.35188) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0030 — [Supporting AI Literacy Teaching Through the Development of Assessments for Classroom Use](https://doi.org/10.1609/aaai.v39i28.35191) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0031 — [Learning About Algorithm Auditing in Five Steps: Scaffolding How High School Youth Can Systematically and Critically Evaluate Machine Learning Applications](https://doi.org/10.1609/aaai.v39i28.35192) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0032 — [What Can Youth Learn About Artificial Intelligence and Machine Learning in One Hour? Examining How Hour of Code Activities Address the Five Big Ideas of AI](https://doi.org/10.1609/aaai.v39i28.35193) | conference_paper | 未知 | discovered_unverified |
 
 ## 2026｜first_publication
 
@@ -75,6 +85,30 @@
 | KB-2026-0024 — [Fostering machine learning literacy in senior primary education: Evaluating a structured pedagogical course design](https://doi.org/10.1016/j.caeai.2026.100631) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0025 — [Longitudinal relationships between student ethical considerations, behavioral intention, and perceived knowledge in artificial intelligence education](https://doi.org/10.1016/j.compedu.2026.105614) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0026 — [Cheating or not cheating? Rethinking AI-giarism and academic integrity through secondary students’ ethical reasoning](https://doi.org/10.1016/j.compedu.2026.105698) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0027 — [Enact-Examine-Extract (E3): an epistemic tool to scaffold upper elementary students’ conceptual and epistemic understanding of artificial intelligence](https://doi.org/10.1186/s40594-026-00604-3) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0028 — [STEAM education for AI literacy: a systematic literature review](https://doi.org/10.1186/s40594-026-00629-8) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0029 — [Navigating AI in STEM: what secondary students actually do with generative AI-driven tools](https://doi.org/10.1186/s40594-026-00637-8) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0030 — [Measuring Secondary School Students’ Verification Capability in GenAI-Supported Learning: Development and Application of the α − v − M Framework](https://doi.org/10.1177/07356331261487830) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0031 — [Science Educators’ Attitudes and Perspectives on Artificial Intelligence (SEAP-AI) Scale](https://doi.org/10.1007/s10956-026-10302-y) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0032 — [Analyzing Middle School Students’ Dialogue and Behaviors During Collaborative AI Chatbot Development Using Ordered Network Analysis](https://doi.org/10.1007/978-3-032-29763-1_23) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0033 — [Democratizing Foundations of Problem-Solving with AI: A Breadth-First Search Curriculum for Middle School Students](https://doi.org/10.1007/978-3-032-29770-9_56) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0034 — [Turning Students into Neurons — Evaluating an Embodied CS Unplugged Learning Activity on Neural Networks](https://doi.org/10.1145/3801749.3801755) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0035 — [Towards a Conceptual Change of 7th Grade Students regarding Artificial Intelligence](https://doi.org/10.1145/3801749.3801759) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0036 — [Teaching Machine Learning and Computational Thinking in Secondary Education: Hands-On vs. Video-Based Approaches](https://doi.org/10.1145/3801749.3801762) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0037 — [Exploring Preservice Teachers’ Conceptual Trajectories While Teaching an AI and STEM Integrated Unit: A Research-in-Practice Report](https://doi.org/10.1145/3801749.3801767) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0038 — [Should we open the Black Box? Investigating Transparency in K-12 Machine Learning Education](https://doi.org/10.1145/3801749.3801788) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0039 — [Exploring Cross-Cultural Perspectives on AI Education: Insights from Teachers in Nigeria and the USA](https://doi.org/10.1609/aaai.v40i47.41499) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0040 — [Unplugged Activities on Machine Learning and Their Evaluation Through Mental States Attribution](https://doi.org/10.1609/aaai.v40i47.41501) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0041 — [Integrating AI Competencies into Teacher Education Programs](https://doi.org/10.1609/aaai.v40i47.41504) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0042 — [‘What Do Children Think About AI?’: Insights and Educational Implications from Primary School Students’ Perceptions of AI](https://doi.org/10.1609/aaai.v40i47.41507) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0043 — [Impact of a Data-driven Teaching Approach on 9th Graders Conceptual Understanding of Machine Learning](https://doi.org/10.1609/aaai.v40i47.41511) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0044 — [AI Scholars Program: Scaling AI Literacy Through K-12 Outreach](https://doi.org/10.1609/aaai.v40i47.41518) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0045 — [Learning to Use AI for Learning: Teaching Responsible Use of AI Chatbot to K-12 Students Through an AI Literacy Module](https://doi.org/10.1609/aaai.v40i47.41520) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0046 — [Beetrap-MC: A Minecraft-Based AI Literacy Tool for Teaching Filter Bubbles to Middle School Students](https://doi.org/10.1609/aaai.v40i47.41524) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0047 — [Breakable Machine: A K–12 Classroom Game for Transformative AI Literacy Through Spoofing and eXplainable AI (XAI)](https://doi.org/10.1609/aaai.v40i47.41525) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0048 — [Catching the First Light of Tomorrow: A Hackathon-Based Framework for Introducing High School Students to AI Agents](https://doi.org/10.1609/aaai.v40i47.41527) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0049 — [Co-Designing Unplugged Learning Activities with K-2 Teachers for Early AI Literacy Education](https://doi.org/10.1609/aaai.v40i47.41529) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0050 — [From Embeddings to Chatbots: Playful NLP Activities for Middle School AI Literacy](https://doi.org/10.1609/aaai.v40i47.41530) | conference_paper | 未知 | discovered_unverified |
 
 ## 2027｜issue_year
 

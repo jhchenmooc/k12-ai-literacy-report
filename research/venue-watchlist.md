@@ -189,3 +189,7 @@ framework_alignment,duplicate_group,weekly_priority,notes
 ### J03 出版社移轉紀錄（2026-10-09 核對）
 
 Springer 官方期刊頁明示本刊自 **2026-01-01** 起改由 Elsevier 出版；Elsevier 2026 Volume 36 文章頁可追至 DOI `10.1016/j.ijaied.2026.100001`。保留 Springer 作為歷史版入口；不得把出版社移轉當作論文首次公開日期。此處更正**監測入口**，不是宣稱已完成 J03 逐篇 2026 搜尋。來源：[Springer 官方移轉說明](https://link.springer.com/journal/40593)、[Elsevier 2026 文章](https://www.sciencedirect.com/science/article/pii/S1560429226000028)。
+
+### C22 EAAI 固定監測分軌（2026-10-09 管理者決定）
+
+EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI-26 在 vol 40 no 47–48。期次頁的分節標題可把 EAAI 與 AAAI 主會議、IAAI 分開。**「Resources for Teaching AI in K-12」分軌列為 C22 的固定監測分軌**：2025–2026 年 28 筆會議候選中有 20 筆來自 EAAI，產量最高；同一 C22 的「EAAI Symposium: Main track」仍照常逐篇確認學段。這是監測入口的補充，不代表該分軌論文已核證，也不改 C22 代碼。證據：[p0-tool-wave-2026-10-09/group-c.md](p0-tool-wave-2026-10-09/group-c.md)。
