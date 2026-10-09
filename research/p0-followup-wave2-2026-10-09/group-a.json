@@ -1,0 +1,217 @@
+{
+  "group": "A",
+  "source_ids": [
+    "J15",
+    "J16",
+    "J17"
+  ],
+  "dispatched_at_utc": "2026-10-09T14:25:47Z",
+  "started_at_utc": "2026-10-09T14:26:13Z",
+  "source_review_ended_at_utc": "2026-10-09T14:27:21Z",
+  "finished_at_utc": "2026-10-09T14:28:55Z",
+  "scope_start": "2025-01-01",
+  "scope_end": "2026-10-09",
+  "base_sha": "6afbbfea5faf6891f4af21a9fe0bfcb91d1a6807",
+  "results_seen": null,
+  "status": "partial",
+  "coverage_level": "query_scoped",
+  "queries": [
+    {
+      "source_id": "J15",
+      "query": "site.sciencedirect.com \"Learning and Instruction\" \"artificial intelligence\" \"2025\" school",
+      "searched_at_utc": "2026-10-09T14:26:36Z",
+      "timestamp_basis": "Clock observed immediately before shared web-call batch; not exact engine execution time."
+    },
+    {
+      "source_id": "J15",
+      "query": "site.sciencedirect.com \"Learning and Instruction\" \"AI literacy\" 2026",
+      "searched_at_utc": "2026-10-09T14:26:36Z",
+      "timestamp_basis": "Clock observed immediately before shared web-call batch; not exact engine execution time."
+    },
+    {
+      "source_id": "J16",
+      "query": "site.tandfonline.com \"Journal of the Learning Sciences\" \"artificial intelligence\" 2025",
+      "searched_at_utc": "2026-10-09T14:26:36Z",
+      "timestamp_basis": "Clock observed immediately before shared web-call batch; not exact engine execution time."
+    },
+    {
+      "source_id": "J16",
+      "query": "site.tandfonline.com \"Journal of the Learning Sciences\" \"AI\" \"2026\"",
+      "searched_at_utc": "2026-10-09T14:26:36Z",
+      "timestamp_basis": "Clock observed immediately before shared web-call batch; not exact engine execution time."
+    },
+    {
+      "source_id": "J17",
+      "query": "site.sciencedirect.com \"Educational Research Review\" \"artificial intelligence\" \"2025\"",
+      "searched_at_utc": "2026-10-09T14:26:46Z",
+      "timestamp_basis": "Clock observed immediately before shared web-call batch; not exact engine execution time."
+    },
+    {
+      "source_id": "J17",
+      "query": "site.sciencedirect.com \"Educational Research Review\" \"AI literacy\" \"2026\"",
+      "searched_at_utc": "2026-10-09T14:26:46Z",
+      "timestamp_basis": "Clock observed immediately before shared web-call batch; not exact engine execution time."
+    },
+    {
+      "source_id": "J16",
+      "query": "site.tandfonline.com \"Leveraging Onto-Epistemic Heterogeneity\"",
+      "searched_at_utc": "2026-10-09T14:26:46Z",
+      "timestamp_basis": "Clock observed immediately before shared web-call batch; not exact engine execution time."
+    },
+    {
+      "source_id": "J15",
+      "query": "site.sciencedirect.com/science/article \"Prompting strategies with generative AI during learning from multiple sources\" sample online",
+      "searched_at_utc": "2026-10-09T14:26:55Z",
+      "timestamp_basis": "Clock observed immediately before shared web-call batch; not exact engine execution time."
+    },
+    {
+      "source_id": "J17",
+      "query": "site.sciencedirect.com/science/article/pii/S1747938X26000527 \"school\" \"Available online\"",
+      "searched_at_utc": "2026-10-09T14:27:07Z",
+      "timestamp_basis": "Clock observed immediately before shared web-call batch; not exact engine execution time."
+    }
+  ],
+  "access_attempts": [
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0959475226001209",
+      "status": "unavailable_internal_error",
+      "read_scope": "Direct open returned no article text."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S0959475226001209",
+      "status": "partial_search_index",
+      "read_scope": "Official publisher indexed abstract, sample/method, participant and discussion snippets."
+    },
+    {
+      "url": "https://www.tandfonline.com/hlns20",
+      "status": "partial_search_index",
+      "read_scope": "Official journal latest-article title and online date."
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/full/10.1080/10508406.2026.2686084",
+      "status": "unavailable_direct_open_partial_search_index",
+      "read_scope": "Direct open failed; official indexed theoretical framework, writing-analysis and focal-student/limitation passages only."
+    },
+    {
+      "url": "https://www.tandfonline.com/doi/abs/10.1080/10508406.2026.2686084",
+      "status": "unavailable_internal_error",
+      "read_scope": "One alternate abstract route attempted; no text. No repeated retries."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/pii/S1747938X26000527",
+      "status": "unavailable_direct_open_partial_search_index",
+      "read_scope": "Direct open failed; official indexed metadata, abstract and highlights only."
+    }
+  ],
+  "samples": [
+    {
+      "source_id": "J15",
+      "title": "Prompting strategies with generative AI during learning from multiple sources",
+      "doi": "10.1016/j.learninstruc.2026.102435",
+      "official_url": "https://www.sciencedirect.com/science/article/pii/S0959475226001209",
+      "dates": {
+        "first_public": null,
+        "online": null,
+        "issue": "2026-10",
+        "preprint": null
+      },
+      "date_evidence": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S0959475226001209",
+          "locator": "Journal header",
+          "evidence": "Volume 105, October 2026, 102435; no precise online day read. Search-engine relative publication label not used as date evidence."
+        }
+      ],
+      "school_stage": "Higher education: 293 undergraduates, adults, northeastern United States; not K–12.",
+      "method": "Qualitative coding of ChatGPT-3.5 conversation logs and regression linking prompting strategy frequency to essay dimensions.",
+      "decision": "exclude_k12_direct_evidence",
+      "exclusion_reason": "Undergraduate population. May be cross-stage methodological background only.",
+      "read_scope": "Official publisher search-index abstract and selected section snippets; entire formal text not read.",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "high_risk_questions": [
+        "Regression associations do not establish prompting strategy causality or K–12 learning benefit.",
+        "First online and earlier manifestations remain unknown."
+      ],
+      "prior_record_id": null,
+      "prior_audit_reference": "research/drafts/2026-10-09-stage-b-c-publication-date-venue-audit.md; known audit sample, no master DOI match.",
+      "evidence_level": "VI observational descriptive study",
+      "coi": "Indexed publisher declaration reports no conflicts or study funding; not independently verified."
+    },
+    {
+      "source_id": "J16",
+      "title": "Leveraging Onto-Epistemic Heterogeneity for “Outward” Exploration: Cultivating Critical AI Awareness in the ELA Classroom",
+      "doi": "10.1080/10508406.2026.2686084",
+      "official_url": "https://www.tandfonline.com/doi/full/10.1080/10508406.2026.2686084",
+      "dates": {
+        "first_public": null,
+        "online": "2026-08-04",
+        "issue": null,
+        "preprint": null
+      },
+      "date_evidence": [
+        {
+          "url": "https://www.tandfonline.com/hlns20",
+          "locator": "Latest articles list / matching exact title",
+          "evidence": "Research Article; Published online: 4 Aug 2026. Global first-public date and issue not verified."
+        }
+      ],
+      "school_stage": "K–12 secondary ELA: indexed methods/focal-student passage identifies 12th-grade students.",
+      "method": "Qualitative student-writing analysis with deductive/inductive coding of 62 essays and focused journal trajectories of two students; 62 essays is not a verified student denominator.",
+      "decision": "retain_historical_bibliographic_candidate",
+      "exclusion_reason": null,
+      "read_scope": "Official publisher indexed selected framework, writing analysis, focal-student and limitation passages plus journal metadata; full formal article not read.",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "high_risk_questions": [
+        "Qualitative trajectories cannot establish causal improvement or population-wide effectiveness.",
+        "Verify school/sample denominator, researcher-teacher roles and selection before interpreting generalizability.",
+        "Online date does not establish earliest same-work public manifestation."
+      ],
+      "prior_record_id": null,
+      "evidence_level": "VI qualitative study",
+      "coi": "Indexed declaration reports no conflict; full disclosure context not checked."
+    },
+    {
+      "source_id": "J17",
+      "title": "AI literacy interventions in education: A meta-analysis of effects and moderators",
+      "doi": "10.1016/j.edurev.2026.100813",
+      "official_url": "https://www.sciencedirect.com/science/article/pii/S1747938X26000527",
+      "dates": {
+        "first_public": null,
+        "online": null,
+        "issue": "2026-08",
+        "preprint": null
+      },
+      "date_evidence": [
+        {
+          "url": "https://www.sciencedirect.com/science/article/pii/S1747938X26000527",
+          "locator": "Journal header",
+          "evidence": "Volume 52, August 2026, article 100813. Precise online day not read."
+        }
+      ],
+      "school_stage": "Unknown/mixed education; K–12 proportion and stage-separated estimates not verified from available abstract.",
+      "method": "Three-level meta-analysis: 59 studies, 172 effect sizes, 7211 participants; indexed abstract only.",
+      "decision": "retain_conditional_bibliographic_candidate",
+      "exclusion_reason": "Do not treat pooled estimate as direct K–12 evidence until stage distribution, comparator/design and risk of bias verified.",
+      "read_scope": "Official publisher indexed abstract/highlights and metadata; entire formal text not read.",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "high_risk_questions": [
+        "Pooled g=0.837 is not a universal K–12 causal effect; indexed prediction interval crosses zero.",
+        "Non-significant moderators do not support GenAI or mixed-pedagogy superiority.",
+        "Verify stage distribution, dependency, study bias and earlier versions."
+      ],
+      "prior_record_id": null,
+      "evidence_level": "I meta-analysis label; primary-study quality unassessed",
+      "coi": "Unknown; disclosure not read."
+    }
+  ],
+  "limitations": [
+    "Bounded search, three queries/source, one representative sample/source; not an exhaustive venue census.",
+    "Unknown engine totals remain null; direct-page failure is not a zero-result finding.",
+    "No full_text_checked/content_checked; primary evidence is publisher-indexed content.",
+    "No semantic-scholar/API verification run; primary publisher indexing used under scoped authorization.",
+    "Historical bibliography only; nine holds and publication gates untouched."
+  ]
+}

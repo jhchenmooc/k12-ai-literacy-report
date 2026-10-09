@@ -1,0 +1,176 @@
+{
+  "group": "B",
+  "source_ids": [
+    "J18",
+    "J19",
+    "C09"
+  ],
+  "dispatched_at_utc": "2026-10-09T14:25:47Z",
+  "started_at_utc": "2026-10-09T14:26:32Z",
+  "source_review_ended_at_utc": "2026-10-09T14:27:48Z",
+  "finished_at_utc": "2026-10-09T14:29:17Z",
+  "scope_start": "2025-01-01",
+  "scope_end": "2026-10-09",
+  "base_commit": "6afbbfea5faf6891f4af21a9fe0bfcb91d1a6807",
+  "queries": [
+    {
+      "source_id": "J18",
+      "query": "site:journals.sagepub.com \"Review of Educational Research\" \"artificial intelligence\" 2025 2026",
+      "searched_at_utc": null
+    },
+    {
+      "source_id": "J19",
+      "query": "site:journals.sagepub.com \"Educational Researcher\" \"AI literacy\" 2025 2026",
+      "searched_at_utc": null
+    },
+    {
+      "source_id": "C09",
+      "query": "site:learntechlib.org \"SITE 2025\" \"AI literacy\"",
+      "searched_at_utc": null
+    },
+    {
+      "source_id": "J18",
+      "query": "site:journals.sagepub.com/doi/10.3102/00346543 \"artificial intelligence\" \"2025\"",
+      "searched_at_utc": "2026-10-09T14:27:06Z"
+    },
+    {
+      "source_id": "J19",
+      "query": "site:journals.sagepub.com/doi/10.3102/0013189X \"AI\" \"2025\"",
+      "searched_at_utc": "2026-10-09T14:27:06Z"
+    },
+    {
+      "source_id": "C09",
+      "query": "site:learntechlib.org \"SITE 2025\" \"artificial intelligence\" teachers",
+      "searched_at_utc": "2026-10-09T14:27:06Z"
+    },
+    {
+      "source_id": "C09",
+      "query": "site:learntechlib.org/p/ \"2025\" \"SITE\" \"AI Literacy\"",
+      "searched_at_utc": "2026-10-09T14:27:18Z"
+    }
+  ],
+  "access_attempts": [
+    {
+      "url": "https://journals.sagepub.com/doi/10.3102/00346543241293424",
+      "status": "readable",
+      "read_scope": "publisher rendered HTML excerpts: title/DOI/abstract/pre-K-12 introductory sentence/date metadata; not whole text"
+    },
+    {
+      "url": "https://journals.sagepub.com/doi/10.3102/0013189X251385537",
+      "status": "readable",
+      "read_scope": "publisher rendered HTML excerpts: title/DOI/abstract/date metadata; not whole text"
+    },
+    {
+      "url": "https://doi.org/10.3102/00346543241293424",
+      "status": "resolved_to_matching_SAGE_title",
+      "read_scope": "DOI resolution and matching publisher metadata"
+    },
+    {
+      "url": "https://doi.org/10.3102/0013189X251385537",
+      "status": "internal_error",
+      "read_scope": "no content; publisher DOI/title association separately readable"
+    },
+    {
+      "url": "https://site.aace.org/conf/",
+      "status": "readable",
+      "read_scope": "conference landing page currently advertises SITE 2027; not 2025/2026 proceedings"
+    },
+    {
+      "url": "https://learntechlib.org/",
+      "status": "internal_error",
+      "read_scope": "no content"
+    }
+  ],
+  "samples": [
+    {
+      "source_id": "J18",
+      "title": "Let’s CHAT About Artificial Intelligence for Students With Disabilities: A Systematic Literature Review and Meta-Analysis",
+      "doi": "10.3102/00346543241293424",
+      "official_url": "https://journals.sagepub.com/doi/10.3102/00346543241293424",
+      "dates": {
+        "first_public": null,
+        "online": "2024-12-06",
+        "issue": "2026-02",
+        "preprint": null
+      },
+      "date_evidence": [
+        {
+          "url": "https://journals.sagepub.com/doi/10.3102/00346543241293424",
+          "locator": "Information / Published In, rendered lines 910–918; Article versions 939",
+          "evidence": "Publisher identifies online publication on 2024-12-06 and issue publication in February 2026 (96(1), 215–257)."
+        }
+      ],
+      "school_stage": "pre-K–12 students with disabilities; introductory scope sentence, rendered line 40",
+      "method": "Systematic literature review/meta-analysis of 29 (quasi-)experimental studies; abstract only for method appraisal. Evidence level I in form; risk-of-bias and pooled estimate not independently assessed.",
+      "decision": "exclude_from_in_scope_online_discovery; background_only",
+      "exclusion_reason": "Online publication precedes 2025-01-01; issue is within scope but cannot reset online date. AI-mediated learning outcomes are not direct evidence of AI literacy instruction.",
+      "read_scope": "publisher abstract, selected introduction, date metadata; not whole text",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "high_risk_questions": [
+        "Independent checker should verify pre-K–12 inclusion and study-design quality before any pooled-effect claim.",
+        "Do not infer improved AI literacy or generalize disability-specific heterogeneous interventions to all K–12 learners.",
+        "Earlier public versions were not exhaustively searched."
+      ],
+      "prior_record_id": null
+    },
+    {
+      "source_id": "J19",
+      "title": "The AI3 Model: Future Directions for Artificial Intelligence, Assessment Innovation, and Academic Integrity",
+      "doi": "10.3102/0013189X251385537",
+      "official_url": "https://journals.sagepub.com/doi/10.3102/0013189X251385537",
+      "dates": {
+        "first_public": null,
+        "online": "2025-10-30",
+        "issue": "2026-03",
+        "preprint": null
+      },
+      "date_evidence": [
+        {
+          "url": "https://journals.sagepub.com/doi/10.3102/0013189X251385537",
+          "locator": "Information / Published In, rendered lines 419–427; Article versions 443",
+          "evidence": "Publisher separates 2025-10-30 online from March 2026 issue (55(2), 125–133)."
+        }
+      ],
+      "school_stage": "K–12 and higher education, mixed scope per abstract; no direct student sample verified",
+      "method": "Publisher labels Review article; abstract describes cross-national research synthesis leading to proposed assessment model. Not an intervention effect study.",
+      "decision": "retain_as_historical_bibliographic_candidate_pending_independent_check",
+      "exclusion_reason": null,
+      "read_scope": "publisher title/DOI/abstract/date metadata; not whole text",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "high_risk_questions": [
+        "Independent checker should confirm title/DOI association and synthesis methodology in original methods before master-record inclusion.",
+        "Mixed K–12/higher-education synthesis must not be presented as a K–12 causal intervention.",
+        "Proposed model is not verified evidence of assessment effectiveness or current binding policy.",
+        "Earlier public versions and preprints remain unsearched."
+      ],
+      "prior_record_id": null
+    }
+  ],
+  "results_seen": null,
+  "source_outcomes": [
+    {
+      "source_id": "J18",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "results_screened": 1
+    },
+    {
+      "source_id": "J19",
+      "coverage_level": "items_screened",
+      "status": "partial",
+      "results_screened": 1
+    },
+    {
+      "source_id": "C09",
+      "coverage_level": "query_scoped",
+      "status": "partial",
+      "results_screened": 0,
+      "reason": "Three query-scoped attempts did not yield an identifiable official 2025/2026 paper. Total hits unknown; no zero-hit inference."
+    }
+  ],
+  "timing_note": "Initial three queries executed after started_at and before 14:27:06 UTC but no immediately pre-query clock was recorded; their searched_at is null rather than invented.",
+  "dedup_note": "Read-only case-insensitive master DOI search found no match for these two DOIs; prior_record_id null means no master match, not global novelty.",
+  "publication_note": "Historical bibliography only. Nine holds, zero formal issues, no automatic publication preserved. Shared files untouched."
+}
