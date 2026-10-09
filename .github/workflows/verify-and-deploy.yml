@@ -57,6 +57,7 @@ jobs:
       - name: Verify v1.7 historical knowledge base without publishing
         run: |
           node --test research/validate-knowledge-base.test.js
+          node --test research/knowledge-base-utils.test.js
           node research/validate-knowledge-base.js .
       - name: Validate issue manifests and claim metadata
         run: node research/validate-publication.js .
