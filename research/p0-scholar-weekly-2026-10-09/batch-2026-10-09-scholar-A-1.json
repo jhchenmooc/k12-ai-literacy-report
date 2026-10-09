@@ -1,0 +1,273 @@
+{
+ "batch_id": "2026-10-09-scholar-A-1",
+ "searched_on": "2026-10-09",
+ "lookback_days": 30,
+ "sources": [
+  {
+   "group": "scholar-watch",
+   "query": "S01 author.orcid:0000-0001-5843-4854 from:2026-09-09 to:2026-10-15 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S02 author.orcid:0000-0001-9265-1908 from:2026-09-09 to:2026-10-15 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S03 author.orcid:0000-0003-4639-2524 from:2026-09-09 to:2026-10-15 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S04 author.orcid:0000-0001-6005-907X from:2026-09-09 to:2026-10-15 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T01 author.orcid:0000-0003-1741-2450 from:2026-09-09 to:2026-10-15 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T02 author.orcid:0000-0001-5059-8256 from:2026-09-09 to:2026-10-15 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T03 author.orcid:0000-0001-5155-276X from:2026-09-09 to:2026-10-15 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T05 author.orcid:0000-0001-6504-9540 from:2026-09-09 to:2026-10-15 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T06 author.orcid:0000-0001-6128-0227 from:2026-09-09 to:2026-10-15 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T07 author.id:A5032462085 from:2026-09-09 to:2026-10-15 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T04 author.id:A5029607042 from:2026-09-09 to:2026-10-15 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T08 author.orcid:0000-0002-2837-6662 from:2026-09-09 to:2026-10-15 (OpenAlex works)",
+   "status": "ok"
+  }
+ ],
+ "candidates": [
+  {
+   "source_url": "https://doi.org/10.1016/j.caeai.2026.100684",
+   "source_title": "Agentivism: a learning theory for the age of artificial intelligence",
+   "source_organization": "Computers and Education: Artificial Intelligence",
+   "source_publication_date": "2026-04-09",
+   "source_locator": "arXiv abs 頁 / Submitted on（預印本首次公開；正式版見 DOI）",
+   "doi": "10.1016/j.caeai.2026.100684",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Computers and Education: Artificial Intelligence），另有 arXiv 預印本較早公開；對象：摘要未寫學段；泛指學習者與教師；首發依據：arXiv:2604.07813 abs 頁「Submitted on 9 Apr 2026」（v1；v2 2026-05-21）；正式版 Elsevier 頁未讀（linkinghub 轉址，未繞過）；Crossref 無 published-online；屬 30 天背景回補，非本週窗口；依作者檢索發現；不代表研究結論已核",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-LRN",
+    "S-ETH",
+    "T-TEA"
+   ],
+   "ai_lit_note": "提出學習者對AI選擇性委派、監控與查核AI產出的學習理論，對應 S-LRN「開創人機協作賦能自主學習」與「AI轉化自我、共同與社會調節」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.caeai.2026.100680",
+   "source_title": "Building AI companions that prioritise learning over performance",
+   "source_organization": "Computers and Education: Artificial Intelligence",
+   "source_publication_date": "2026-05-06",
+   "source_locator": "arXiv abs 頁 / Submitted on（預印本首次公開；正式版見 DOI）",
+   "doi": "10.1016/j.caeai.2026.100680",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Computers and Education: Artificial Intelligence），另有 arXiv 預印本較早公開；對象：五個跨學段案例，摘要未限定學段；首發依據：arXiv:2605.04816 abs 頁「Submitted on 6 May 2026」（v1；v2 2026-05-15）；正式版 Elsevier 頁未讀；屬 30 天背景回補，非本週窗口；依作者檢索發現；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN",
+    "T-TEA"
+   ],
+   "ai_lit_note": "提出 AI 學伴系統設計框架，重點在工具設計與使用，對應 S-LRN「應用AI工具強化領域學習」及 T-TEA「客製AI教學工具與資源」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1002/jcal.70331",
+   "source_title": "Trace Data of Secondary Students and Linguistic Analysis to Predict Learner Performance in a Multi‐Text Writing Task",
+   "source_organization": "Journal of Computer Assisted Learning",
+   "source_publication_date": "unknown",
+   "source_locator": "DOI 正式版；首次線上日未核（出版者頁不可讀；Crossref 登錄日僅供參考）",
+   "doi": "10.1002/jcal.70331",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Journal of Computer Assisted Learning）；對象：四國 257 名中學生（摘要）；預測準確度屬研究方法結果，非成效主張；首發依據：Crossref published-online 2026-09-21（Wiley 登錄 assertion published 2026-09-21）；出版者頁 403，未核；屬 30 天背景回補，非本週窗口；依作者檢索發現；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "以機器學習預測中學生寫作表現，AI 僅為研究方法，師生未直接與AI互動，不對應任何內涵",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/978-3-032-37979-5_31",
+   "source_title": "Decoding the Dashboard: Data Comics to Support Students’ Understanding of Learning Analytics Visualisations",
+   "source_organization": "Lecture Notes in Computer Science; Mindful TEL: Learning Technologies Shaped with Intention",
+   "source_publication_date": "2026-09-17",
+   "source_locator": "arXiv abs 頁 / Submitted on（預印本首次公開；正式版見 DOI）",
+   "doi": "10.1007/978-3-032-37979-5_31",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Lecture Notes in Computer Science; Mindful TEL: Learning Technologies Shaped with Intention），另有 arXiv 預印本較早公開；對象：18 名護理學生與 4 名教師（arXiv 摘要）；首發依據：arXiv:2609.21141 abs 頁「Submitted on 17 Sep 2026」（Comments: Accepted to ECTEL 2026）；Crossref first_online 2026-10-07（Springer 頁 Client Challenge，未繞過）；屬 30 天背景回補，非本週窗口；依作者檢索發現；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "以資料漫畫輔助學生解讀學習分析儀表板，摘要未提到AI，依資料素養規則判C，不對應任何內涵",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1080/10447318.2026.2731321",
+   "source_title": "Comparing GenAI Summaries Versus Chatbots for Supporting Reflection in Healthcare Simulation",
+   "source_organization": "International Journal of Human–Computer Interaction",
+   "source_publication_date": "unknown",
+   "source_locator": "DOI 正式版；首次線上日未核（出版者頁不可讀；Crossref 登錄日僅供參考）",
+   "doi": "10.1080/10447318.2026.2731321",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（International Journal of Human–Computer Interaction）；對象：41 名護理學生（摘要）；高風險：成效主張，不得寫成成效；首發依據：Crossref published-online 2026-09-24（T&F 登錄 assertion published 2026-09-24）；出版者頁 403，未核；屬 30 天背景回補，非本週窗口；依作者檢索發現；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "比較生成式AI摘要與聊天機器人支援護理學生反思，屬工具使用研究，對應 S-LRN「應用AI工具強化領域學習」",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/978-3-032-37982-5_24",
+   "source_title": "Designing Support for Written Reflections Using GenAI Summaries and Chatbots",
+   "source_organization": "Lecture Notes in Computer Science; Mindful TEL: Learning Technologies Shaped with Intention",
+   "source_publication_date": "unknown",
+   "source_locator": "DOI 正式版；首次線上日未核（出版者頁不可讀；Crossref 登錄日僅供參考）",
+   "doi": "10.1007/978-3-032-37982-5_24",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Lecture Notes in Computer Science; Mindful TEL: Learning Technologies Shaped with Intention）；對象：無摘要；學段不明（同系列研究為護理模擬）；無摘要，可能含比較結果，使用前查核；首發依據：Crossref first_online 2026-10-06（Springer 登錄）；Springer 頁 Client Challenge，未繞過；查無 arXiv 版；屬 30 天背景回補，非本週窗口；依作者檢索發現；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "僅依題名：以生成式AI摘要與聊天機器人支援學生書面反思，屬工具使用，暫對應 S-LRN「應用AI工具強化領域學習」，待摘要確認",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1080/0144929x.2026.2740744",
+   "source_title": "Different lenses on human-AI collaboration: towards a comprehensive view on hybrid intelligence in education",
+   "source_organization": "Behaviour &amp; Information Technology",
+   "source_publication_date": "unknown",
+   "source_locator": "DOI 正式版；首次線上日未核（出版者頁不可讀；Crossref 登錄日僅供參考）",
+   "doi": "10.1080/0144929x.2026.2740744",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Behaviour &amp; Information Technology）；對象：四個教育實務案例，教師與AI協作；摘要未寫學段；首發依據：Crossref published-online 2026-10-07（T&F 登錄 assertion published 2026-10-07）；出版者頁 403，未核；屬 30 天背景回補，非本週窗口；依作者檢索發現；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "T-TEA",
+    "T-BAS"
+   ],
+   "ai_lit_note": "分析教師與AI工具的任務分工與教師詮釋、查核AI產出，對應 T-TEA「促進教師與AI教學協作的正向循環」與 T-BAS「執行監督以檢核AI產出」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.caeo.2026.100422",
+   "source_title": "Navigating AI’s educational future: expert scenarios and implications for teaching and teacher preparation",
+   "source_organization": "Computers and Education Open",
+   "source_publication_date": "unknown",
+   "source_locator": "DOI 正式版；首次線上日未核（出版者頁不可讀；Crossref 登錄日僅供參考）",
+   "doi": "10.1016/j.caeo.2026.100422",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Computers and Education Open）；對象：13 國 18 機構專家情境（EDUsummIT 2025），涵蓋中小學、技職與高教，結論指向職前師培；首發依據：Crossref created 2026-09-23、無 published-online；Semantic Scholar publicationDate 2026-09-01（未核）；Elsevier 頁未讀；屬 30 天背景回補，非本週窗口；依作者檢索發現；不代表研究結論已核；對象改記 unknown：管理者 2026-10-09 在 B1 重判已決定此篇涵蓋多學段、維持待判（見 research/p0-b1-pending3-2026-10-09/integration.md）",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD",
+    "T-TEA",
+    "S-LRN"
+   ],
+   "ai_lit_note": "專家情境研究指向職前與在職教師的AI專業學習，對應 T-PD「覺知AI時代的專業角色實踐終身學習」與 T-TEA「整合AI與教學法」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.tsc.2026.102378",
+   "source_title": "Enhancing college students’ reflective thinking through online visualized collaborative argumentation: An exploratory study",
+   "source_organization": "Thinking Skills and Creativity",
+   "source_publication_date": "unknown",
+   "source_locator": "DOI 正式版；首次線上日未核（出版者頁不可讀；Crossref 登錄日僅供參考）",
+   "doi": "10.1016/j.tsc.2026.102378",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Thinking Skills and Creativity）；對象：大學生（題名）；首發依據：Crossref created 2026-09-14、published 2027-03；Elsevier 頁未讀；無摘要；屬 30 天背景回補，非本週窗口；依作者檢索發現；不代表研究結論已核",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，題名為大學生線上視覺化協作論證，未提及AI，無法判斷是否涉及AI內涵，記不明",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/s44163-026-02234-8",
+   "source_title": "AI supported doodling and gallery walk defence provide visible evidence of student reasoning in higher education assessment",
+   "source_organization": "Discover Artificial Intelligence",
+   "source_publication_date": "unknown",
+   "source_locator": "DOI 正式版；首次線上日未核（出版者頁不可讀；Crossref 登錄日僅供參考）",
+   "doi": "10.1007/s44163-026-02234-8",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Discover Artificial Intelligence）；對象：阿曼某公立大學 3 屆教育科技課 76 名大學生（摘要）；高風險：成效主張，不得寫成成效；首發依據：Crossref first_online 2026-09-21（Springer 登錄）；Springer 頁 Client Challenge，未繞過；屬 30 天背景回補，非本週窗口；依作者檢索發現；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN",
+    "S-ETH",
+    "T-TEA"
+   ],
+   "ai_lit_note": "設計限定AI只用於構思的評量流程以保留學生推理證據，對應 S-ETH「正用AI符合學術誠信」與 S-LRN「理解AI在學習的角色與界線」",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/s10639-026-14165-z",
+   "source_title": "Physical, virtual, and hybrid programming modalities in early childhood education: a randomized controlled study of computational thinking and programming behaviors",
+   "source_organization": "Education and Information Technologies",
+   "source_publication_date": "unknown",
+   "source_locator": "DOI 正式版；首次線上日未核（出版者頁不可讀；Crossref 登錄日僅供參考）",
+   "doi": "10.1007/s10639-026-14165-z",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Education and Information Technologies）；對象：幼兒教育兒童（題名；Crossref 倫理聲明提及家長同意），年齡未核；高風險：成效主張，不得寫成成效（題名為隨機對照研究）；首發依據：Crossref first_online 2026-10-05（Springer 登錄）；Springer 頁 Client Challenge，未繞過；無摘要；屬 30 天背景回補，非本週窗口；依作者檢索發現；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "依題名為幼兒程式設計模式與運算思維比較，未涉及AI，屬一般資訊科技而非AI素養，不對應任何內涵",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/s11423-026-10723-x",
+   "source_title": "Operationalizing IDC-based reading activities with GenAI pedagogical agents to foster reading interest and narrative performance",
+   "source_organization": "Educational technology research and development",
+   "source_publication_date": "unknown",
+   "source_locator": "DOI 正式版；首次線上日未核（出版者頁不可讀；Crossref 登錄日僅供參考）",
+   "doi": "10.1007/s11423-026-10723-x",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Educational technology research and development）；對象：無摘要；學段不明；高風險：成效主張，不得寫成成效（題名含 foster reading interest and narrative performance）；首發依據：Crossref first_online 2026-09-24（Springer 登錄）；Springer 頁 Client Challenge，未繞過；無摘要；屬 30 天背景回補，非本週窗口；依作者檢索發現；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "依題名以生成式AI教學代理人支援閱讀活動，屬AI工具輔助學習，對應 S-LRN「應用AI工具強化領域學習」，待摘要確認",
+   "audience": "unknown"
+  }
+ ]
+}

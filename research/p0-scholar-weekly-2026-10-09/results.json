@@ -1,0 +1,803 @@
+{
+ "window": {
+  "weekly": "2026-10-09..2026-10-15",
+  "background_30d": "2026-09-09..2026-10-08",
+  "openalex_query_range": "2026-09-09..2026-10-15",
+  "searched_on": "2026-10-09",
+  "note": "OpenAlex publication_date 不是首發日"
+ },
+ "runs": [
+  {
+   "scholar_id": "S01",
+   "query": "https://api.openalex.org/works?filter=author.orcid:0000-0001-5843-4854,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:21Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "education_related": 0,
+   "screened": 0
+  },
+  {
+   "scholar_id": "S02",
+   "query": "https://api.openalex.org/works?filter=author.orcid:0000-0001-9265-1908,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:23Z",
+   "http": 200,
+   "status": "ok",
+   "total": 6,
+   "education_related": 6,
+   "screened": 6
+  },
+  {
+   "scholar_id": "S03",
+   "query": "https://api.openalex.org/works?filter=author.orcid:0000-0003-4639-2524,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:24Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "education_related": 1,
+   "screened": 1
+  },
+  {
+   "scholar_id": "S04",
+   "query": "https://api.openalex.org/works?filter=author.orcid:0000-0001-6005-907X,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:26Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "education_related": 2,
+   "screened": 2
+  },
+  {
+   "scholar_id": "T01",
+   "query": "https://api.openalex.org/works?filter=author.orcid:0000-0003-1741-2450,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:28Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "education_related": 0,
+   "screened": 0
+  },
+  {
+   "scholar_id": "T02",
+   "query": "https://api.openalex.org/works?filter=author.orcid:0000-0001-5059-8256,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:29Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "education_related": 0,
+   "screened": 0
+  },
+  {
+   "scholar_id": "T03",
+   "query": "https://api.openalex.org/works?filter=author.orcid:0000-0001-5155-276X,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:31Z",
+   "http": 200,
+   "status": "ok",
+   "total": 3,
+   "education_related": 3,
+   "screened": 3
+  },
+  {
+   "scholar_id": "T05",
+   "query": "https://api.openalex.org/works?filter=author.orcid:0000-0001-6504-9540,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:32Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "education_related": 0,
+   "screened": 0
+  },
+  {
+   "scholar_id": "T06",
+   "query": "https://api.openalex.org/works?filter=author.orcid:0000-0001-6128-0227,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:34Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "education_related": 1,
+   "screened": 1
+  },
+  {
+   "scholar_id": "T07",
+   "query": "https://api.openalex.org/works?filter=author.id:A5032462085,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:35Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "education_related": 0,
+   "screened": 0
+  },
+  {
+   "scholar_id": "T04",
+   "query": "https://api.openalex.org/works?filter=author.id:A5029607042,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:37Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "education_related": 0,
+   "screened": 0
+  },
+  {
+   "scholar_id": "T08",
+   "query": "https://api.openalex.org/works?filter=author.orcid:0000-0002-2837-6662,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:38Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "education_related": 0,
+   "screened": 0
+  }
+ ],
+ "items": [
+  {
+   "scholar_ids": [
+    "S02"
+   ],
+   "openalex_id": "W7153057309",
+   "doi": "10.1016/j.caeai.2026.100684",
+   "title": "Agentivism: a learning theory for the age of artificial intelligence",
+   "container": "Computers and Education: Artificial Intelligence",
+   "crossref_type": "journal-article",
+   "openalex_publication_date": "2026-09-22",
+   "first_public_date": "2026-04-09",
+   "first_public_basis": "arXiv:2604.07813 abs 頁「Submitted on 9 Apr 2026」（v1；v2 2026-05-21）；正式版 Elsevier 頁未讀（linkinghub 轉址，未繞過）；Crossref 無 published-online",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "摘要未寫學段；泛指學習者與教師",
+   "education_related": true,
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-LRN",
+    "S-ETH",
+    "T-TEA"
+   ],
+   "ai_lit_note": "提出學習者對AI選擇性委派、監控與查核AI產出的學習理論，對應 S-LRN「開創人機協作賦能自主學習」與「AI轉化自我、共同與社會調節」",
+   "audience": "unknown",
+   "in_kb": false,
+   "in_candidate_pool": false,
+   "recommendation": "kb_import_suggestion",
+   "reason": "A 類理論論文，正式版開放取用且不在庫；學段未限定（audience unknown），不進週報；預印本 2026-04 已公開，非本週新訊",
+   "risk": "",
+   "abstract_source": "OpenAlex"
+  },
+  {
+   "scholar_ids": [
+    "S02"
+   ],
+   "openalex_id": "W7160504600",
+   "doi": "10.1016/j.caeai.2026.100680",
+   "title": "Building AI companions that prioritise learning over performance",
+   "container": "Computers and Education: Artificial Intelligence",
+   "crossref_type": "journal-article",
+   "openalex_publication_date": "2026-09-18",
+   "first_public_date": "2026-05-06",
+   "first_public_basis": "arXiv:2605.04816 abs 頁「Submitted on 6 May 2026」（v1；v2 2026-05-15）；正式版 Elsevier 頁未讀",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "五個跨學段案例，摘要未限定學段",
+   "education_related": true,
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN",
+    "T-TEA"
+   ],
+   "ai_lit_note": "提出 AI 學伴系統設計框架，重點在工具設計與使用，對應 S-LRN「應用AI工具強化領域學習」及 T-TEA「客製AI教學工具與資源」",
+   "audience": "unknown",
+   "in_kb": false,
+   "in_candidate_pool": false,
+   "recommendation": "kb_import_suggestion",
+   "reason": "B 類設計框架論文，不在庫；學段未限定，不進週報；預印本 2026-05 已公開",
+   "risk": "",
+   "abstract_source": "OpenAlex"
+  },
+  {
+   "scholar_ids": [
+    "S02"
+   ],
+   "openalex_id": "W7213886153",
+   "doi": "10.1002/jcal.70331",
+   "title": "Trace Data of Secondary Students and Linguistic Analysis to Predict Learner Performance in a Multi‐Text Writing Task",
+   "container": "Journal of Computer Assisted Learning",
+   "crossref_type": "journal-article",
+   "openalex_publication_date": "2026-09-21",
+   "first_public_date": "unknown",
+   "first_public_basis": "Crossref published-online 2026-09-21（Wiley 登錄 assertion published 2026-09-21）；出版者頁 403，未核",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "四國 257 名中學生（摘要）",
+   "education_related": true,
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "以機器學習預測中學生寫作表現，AI 僅為研究方法，師生未直接與AI互動，不對應任何內涵",
+   "audience": "k12",
+   "in_kb": false,
+   "in_candidate_pool": false,
+   "recommendation": "exclude",
+   "reason": "C 類（AI 為研究方法）；不進刊物，可依知識庫流程以 C 入庫並列入 C 名單",
+   "risk": "預測準確度屬研究方法結果，非成效主張",
+   "abstract_source": "OpenAlex"
+  },
+  {
+   "scholar_ids": [
+    "S02"
+   ],
+   "openalex_id": "W7213988584",
+   "doi": "10.1007/978-3-032-37979-5_31",
+   "title": "Decoding the Dashboard: Data Comics to Support Students’ Understanding of Learning Analytics Visualisations",
+   "container": "Lecture Notes in Computer Science; Mindful TEL: Learning Technologies Shaped with Intention",
+   "crossref_type": "book-chapter",
+   "openalex_publication_date": "2026-10-06",
+   "first_public_date": "2026-09-17",
+   "first_public_basis": "arXiv:2609.21141 abs 頁「Submitted on 17 Sep 2026」（Comments: Accepted to ECTEL 2026）；Crossref first_online 2026-10-07（Springer 頁 Client Challenge，未繞過）",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "18 名護理學生與 4 名教師（arXiv 摘要）",
+   "education_related": true,
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "以資料漫畫輔助學生解讀學習分析儀表板，摘要未提到AI，依資料素養規則判C，不對應任何內涵",
+   "audience": "higher_ed",
+   "in_kb": false,
+   "in_candidate_pool": false,
+   "recommendation": "exclude",
+   "reason": "C 類（摘要未提 AI）；護理高教",
+   "risk": "",
+   "abstract_source": "arXiv"
+  },
+  {
+   "scholar_ids": [
+    "S02"
+   ],
+   "openalex_id": "W7214145520",
+   "doi": "10.1080/10447318.2026.2731321",
+   "title": "Comparing GenAI Summaries Versus Chatbots for Supporting Reflection in Healthcare Simulation",
+   "container": "International Journal of Human–Computer Interaction",
+   "crossref_type": "journal-article",
+   "openalex_publication_date": "2026-09-24",
+   "first_public_date": "unknown",
+   "first_public_basis": "Crossref published-online 2026-09-24（T&F 登錄 assertion published 2026-09-24）；出版者頁 403，未核",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "41 名護理學生（摘要）",
+   "education_related": true,
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "比較生成式AI摘要與聊天機器人支援護理學生反思，屬工具使用研究，對應 S-LRN「應用AI工具強化領域學習」",
+   "audience": "higher_ed",
+   "in_kb": false,
+   "in_candidate_pool": false,
+   "recommendation": "kb_import_suggestion",
+   "reason": "B 類、高教對象，不進週報；月報可收（須出版者頁首次線上日）",
+   "risk": "高風險：成效主張，不得寫成成效",
+   "abstract_source": "OpenAlex"
+  },
+  {
+   "scholar_ids": [
+    "S02"
+   ],
+   "openalex_id": "W7220443719",
+   "doi": "10.1007/978-3-032-37982-5_24",
+   "title": "Designing Support for Written Reflections Using GenAI Summaries and Chatbots",
+   "container": "Lecture Notes in Computer Science; Mindful TEL: Learning Technologies Shaped with Intention",
+   "crossref_type": "book-chapter",
+   "openalex_publication_date": "2026-10-05",
+   "first_public_date": "unknown",
+   "first_public_basis": "Crossref first_online 2026-10-06（Springer 登錄）；Springer 頁 Client Challenge，未繞過；查無 arXiv 版",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "無摘要；學段不明（同系列研究為護理模擬）",
+   "education_related": true,
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "僅依題名：以生成式AI摘要與聊天機器人支援學生書面反思，屬工具使用，暫對應 S-LRN「應用AI工具強化領域學習」，待摘要確認",
+   "audience": "unknown",
+   "in_kb": false,
+   "in_candidate_pool": false,
+   "recommendation": "background",
+   "reason": "無摘要，類別依題名暫判，學段不明；EC-TEL 2026 會議論文",
+   "risk": "無摘要，可能含比較結果，使用前查核",
+   "abstract_source": "none"
+  },
+  {
+   "scholar_ids": [
+    "S03"
+   ],
+   "openalex_id": "W7220844460",
+   "doi": "10.1080/0144929x.2026.2740744",
+   "title": "Different lenses on human-AI collaboration: towards a comprehensive view on hybrid intelligence in education",
+   "container": "Behaviour &amp; Information Technology",
+   "crossref_type": "journal-article",
+   "openalex_publication_date": "2026-10-07",
+   "first_public_date": "unknown",
+   "first_public_basis": "Crossref published-online 2026-10-07（T&F 登錄 assertion published 2026-10-07）；出版者頁 403，未核",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "四個教育實務案例，教師與AI協作；摘要未寫學段",
+   "education_related": true,
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "T-TEA",
+    "T-BAS"
+   ],
+   "ai_lit_note": "分析教師與AI工具的任務分工與教師詮釋、查核AI產出，對應 T-TEA「促進教師與AI教學協作的正向循環」與 T-BAS「執行監督以檢核AI產出」",
+   "audience": "unknown",
+   "in_kb": false,
+   "in_candidate_pool": false,
+   "recommendation": "kb_import_suggestion",
+   "reason": "A/B 邊界（教師與 AI 協作）；不在庫；登錄日 10-07 僅早於週窗 2 天；學段未寫，不進週報",
+   "risk": "",
+   "abstract_source": "OpenAlex"
+  },
+  {
+   "scholar_ids": [
+    "S04"
+   ],
+   "openalex_id": "W7214097358",
+   "doi": "10.1016/j.caeo.2026.100422",
+   "title": "Navigating AI’s educational future: expert scenarios and implications for teaching and teacher preparation",
+   "container": "Computers and Education Open",
+   "crossref_type": "journal-article",
+   "openalex_publication_date": "2026-09-23",
+   "first_public_date": "unknown",
+   "first_public_basis": "Crossref created 2026-09-23、無 published-online；Semantic Scholar publicationDate 2026-09-01（未核）；Elsevier 頁未讀",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "13 國 18 機構專家情境（EDUsummIT 2025），涵蓋中小學、技職與高教，結論指向職前師培",
+   "education_related": true,
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD",
+    "T-TEA",
+    "S-LRN"
+   ],
+   "ai_lit_note": "專家情境研究指向職前與在職教師的AI專業學習，對應 T-PD「覺知AI時代的專業角色實踐終身學習」與 T-TEA「整合AI與教學法」",
+   "audience": "unknown",
+   "in_kb": false,
+   "in_candidate_pool": false,
+   "recommendation": "kb_import_suggestion",
+   "reason": "A 類（師培）；不在庫；試跑曾列「待判、非 AI 素養」，本次依準則改判 A，屬邊界案例；整合者依管理者先前決定改對象為 unknown",
+   "risk": "",
+   "abstract_source": "OpenAlex"
+  },
+  {
+   "scholar_ids": [
+    "S04"
+   ],
+   "openalex_id": "W7214976805",
+   "doi": "10.15388/infedu.2601.025",
+   "title": "Understanding AI Mechanisms Supports Disciplinary Reasoning and Ethical Judgment in K–12 AI Literacy Education",
+   "container": "Informatics in Education",
+   "crossref_type": "journal-article",
+   "openalex_publication_date": "2026-09-30",
+   "first_public_date": "2026-09-30",
+   "first_public_basis": "出版者頁 infedu.vu.lt citation_publication_date 2026/09/30（頁面可讀）；Crossref published-online 2026-09-30",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "6、9 年級 40 名學生（摘要）",
+   "education_related": true,
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "學生運用AI概念解釋分類器與推薦機制並進行倫理思辨，對應 S-BAS「理解AI運作原理與限制」與 S-ETH「具備對AI的批判思考」",
+   "audience": "k12",
+   "in_kb": "KB-2026-0128",
+   "in_candidate_pool": false,
+   "recommendation": "exclude",
+   "reason": "已在知識庫 KB-2026-0128（重複，不入候選）；可補 first_published_on 2026-09-30（出版者頁可讀）",
+   "risk": "質性研究，非成效；摘要自述與短期成效研究區隔",
+   "abstract_source": "OpenAlex"
+  },
+  {
+   "scholar_ids": [
+    "T03"
+   ],
+   "openalex_id": "W7212683916",
+   "doi": "10.1016/j.tsc.2026.102378",
+   "title": "Enhancing college students’ reflective thinking through online visualized collaborative argumentation: An exploratory study",
+   "container": "Thinking Skills and Creativity",
+   "crossref_type": "journal-article",
+   "openalex_publication_date": "2026-09-14",
+   "first_public_date": "unknown",
+   "first_public_basis": "Crossref created 2026-09-14、published 2027-03；Elsevier 頁未讀；無摘要",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "大學生（題名）",
+   "education_related": true,
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，題名為大學生線上視覺化協作論證，未提及AI，無法判斷是否涉及AI內涵，記不明",
+   "audience": "higher_ed",
+   "in_kb": false,
+   "in_candidate_pool": false,
+   "recommendation": "exclude",
+   "reason": "高教、題名未提 AI；無摘要不勉強歸類",
+   "risk": "",
+   "abstract_source": "none"
+  },
+  {
+   "scholar_ids": [
+    "T03"
+   ],
+   "openalex_id": "W7213929609",
+   "doi": "10.1007/s44163-026-02234-8",
+   "title": "AI supported doodling and gallery walk defence provide visible evidence of student reasoning in higher education assessment",
+   "container": "Discover Artificial Intelligence",
+   "crossref_type": "journal-article",
+   "openalex_publication_date": "2026-09-21",
+   "first_public_date": "unknown",
+   "first_public_basis": "Crossref first_online 2026-09-21（Springer 登錄）；Springer 頁 Client Challenge，未繞過",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "阿曼某公立大學 3 屆教育科技課 76 名大學生（摘要）",
+   "education_related": true,
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN",
+    "S-ETH",
+    "T-TEA"
+   ],
+   "ai_lit_note": "設計限定AI只用於構思的評量流程以保留學生推理證據，對應 S-ETH「正用AI符合學術誠信」與 S-LRN「理解AI在學習的角色與界線」",
+   "audience": "higher_ed",
+   "in_kb": false,
+   "in_candidate_pool": false,
+   "recommendation": "kb_import_suggestion",
+   "reason": "B 類（A/B 邊界：學術誠信）；高教，不進週報；月報可收",
+   "risk": "高風險：成效主張，不得寫成成效",
+   "abstract_source": "OpenAlex"
+  },
+  {
+   "scholar_ids": [
+    "T03"
+   ],
+   "openalex_id": "W7219629398",
+   "doi": "10.1007/s10639-026-14165-z",
+   "title": "Physical, virtual, and hybrid programming modalities in early childhood education: a randomized controlled study of computational thinking and programming behaviors",
+   "container": "Education and Information Technologies",
+   "crossref_type": "journal-article",
+   "openalex_publication_date": "2026-10-05",
+   "first_public_date": "unknown",
+   "first_public_basis": "Crossref first_online 2026-10-05（Springer 登錄）；Springer 頁 Client Challenge，未繞過；無摘要",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "幼兒教育兒童（題名；Crossref 倫理聲明提及家長同意），年齡未核",
+   "education_related": true,
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "依題名為幼兒程式設計模式與運算思維比較，未涉及AI，屬一般資訊科技而非AI素養，不對應任何內涵",
+   "audience": "unknown",
+   "in_kb": false,
+   "in_candidate_pool": false,
+   "recommendation": "exclude",
+   "reason": "C 類（依題名，無摘要）；幼兒年齡是否屬幼兒園未核",
+   "risk": "高風險：成效主張，不得寫成成效（題名為隨機對照研究）",
+   "abstract_source": "none"
+  },
+  {
+   "scholar_ids": [
+    "T06"
+   ],
+   "openalex_id": "W7214167213",
+   "doi": "10.1007/s11423-026-10723-x",
+   "title": "Operationalizing IDC-based reading activities with GenAI pedagogical agents to foster reading interest and narrative performance",
+   "container": "Educational technology research and development",
+   "crossref_type": "journal-article",
+   "openalex_publication_date": "2026-09-24",
+   "first_public_date": "unknown",
+   "first_public_basis": "Crossref first_online 2026-09-24（Springer 登錄）；Springer 頁 Client Challenge，未繞過；無摘要",
+   "in_weekly_window": false,
+   "version": "formal",
+   "population_evidence": "無摘要；學段不明",
+   "education_related": true,
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "依題名以生成式AI教學代理人支援閱讀活動，屬AI工具輔助學習，對應 S-LRN「應用AI工具強化領域學習」，待摘要確認",
+   "audience": "unknown",
+   "in_kb": false,
+   "in_candidate_pool": false,
+   "recommendation": "kb_import_suggestion",
+   "reason": "B 類（依題名）；不在庫；學段待摘要確認（IDC 理論研究多以小學生為對象，未核）",
+   "risk": "高風險：成效主張，不得寫成成效（題名含 foster reading interest and narrative performance）",
+   "abstract_source": "none"
+  }
+ ],
+ "requests": [
+  {
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-5843-4854,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:21Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-9265-1908,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:23Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-4639-2524,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:24Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-6005-907X,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:26Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-1741-2450,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:28Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-5059-8256,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:29Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-5155-276X,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:31Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-6504-9540,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:32Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-6128-0227,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:34Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=author.id:A5032462085,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:35Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=author.id:A5029607042,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:37Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-2837-6662,from_publication_date:2026-09-09,to_publication_date:2026-10-15&per_page=200",
+   "utc": "2026-10-09T21:18:38Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.caeai.2026.100684?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:19:09Z",
+   "http": 404
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1016/j.caeai.2026.100684",
+   "utc": "2026-10-09T21:19:11Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.1016/j.caeai.2026.100684",
+   "utc": "2026-10-09T21:19:13Z",
+   "http": 200
+  },
+  {
+   "url": "https://arxiv.org/abs/2604.07813",
+   "utc": "2026-10-09T21:19:14Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.caeai.2026.100680?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:19:16Z",
+   "http": 404
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1016/j.caeai.2026.100680",
+   "utc": "2026-10-09T21:19:17Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.1016/j.caeai.2026.100680",
+   "utc": "2026-10-09T21:19:18Z",
+   "http": 200
+  },
+  {
+   "url": "https://arxiv.org/abs/2605.04816",
+   "utc": "2026-10-09T21:19:20Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1002/jcal.70331?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:19:21Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1002/jcal.70331",
+   "utc": "2026-10-09T21:19:23Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.1002/jcal.70331",
+   "utc": "2026-10-09T21:19:24Z",
+   "http": 403
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/978-3-032-37979-5_31?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:19:26Z",
+   "http": 404
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/978-3-032-37979-5_31",
+   "utc": "2026-10-09T21:19:27Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.1007/978-3-032-37979-5_31",
+   "utc": "2026-10-09T21:19:28Z",
+   "http": 200
+  },
+  {
+   "url": "https://arxiv.org/abs/2609.21141",
+   "utc": "2026-10-09T21:19:30Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/10447318.2026.2731321?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:19:31Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1080/10447318.2026.2731321",
+   "utc": "2026-10-09T21:19:32Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.1080/10447318.2026.2731321",
+   "utc": "2026-10-09T21:19:34Z",
+   "http": 403
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/978-3-032-37982-5_24?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:19:35Z",
+   "http": 404
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/978-3-032-37982-5_24",
+   "utc": "2026-10-09T21:19:36Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.1007/978-3-032-37982-5_24",
+   "utc": "2026-10-09T21:19:38Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/0144929x.2026.2740744?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:19:39Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1080/0144929x.2026.2740744",
+   "utc": "2026-10-09T21:19:41Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.1080/0144929x.2026.2740744",
+   "utc": "2026-10-09T21:19:42Z",
+   "http": 403
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.caeo.2026.100422?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:19:44Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1016/j.caeo.2026.100422",
+   "utc": "2026-10-09T21:19:45Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.1016/j.caeo.2026.100422",
+   "utc": "2026-10-09T21:19:47Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.15388/infedu.2601.025?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:19:48Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.15388/infedu.2601.025",
+   "utc": "2026-10-09T21:19:50Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.15388/infedu.2601.025",
+   "utc": "2026-10-09T21:19:51Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.tsc.2026.102378?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:19:55Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1016/j.tsc.2026.102378",
+   "utc": "2026-10-09T21:19:57Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.1016/j.tsc.2026.102378",
+   "utc": "2026-10-09T21:19:58Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s44163-026-02234-8?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:20:00Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/s44163-026-02234-8",
+   "utc": "2026-10-09T21:20:01Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.1007/s44163-026-02234-8",
+   "utc": "2026-10-09T21:20:03Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s10639-026-14165-z?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:20:04Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/s10639-026-14165-z",
+   "utc": "2026-10-09T21:20:06Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.1007/s10639-026-14165-z",
+   "utc": "2026-10-09T21:20:07Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s11423-026-10723-x?fields=title,abstract,year,venue,externalIds,publicationDate",
+   "utc": "2026-10-09T21:20:09Z",
+   "http": 200
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/s11423-026-10723-x",
+   "utc": "2026-10-09T21:20:10Z",
+   "http": 200
+  },
+  {
+   "url": "https://doi.org/10.1007/s11423-026-10723-x",
+   "utc": "2026-10-09T21:20:11Z",
+   "http": 200
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Designing+Support+for+Written+Reflections+Using+GenAI+Summaries+and+Chatbots%22&max_results=3",
+   "utc": "2026-10-09T21:20:50Z",
+   "http": 200
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Enhancing+college+students+reflective+thinking+through+online+visualized+collaborative+argumentation%22&max_results=3",
+   "utc": "2026-10-09T21:20:54Z",
+   "http": 200
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Physical+virtual+and+hybrid+programming+modalities+in+early+childhood+education%22&max_results=3",
+   "utc": "2026-10-09T21:20:57Z",
+   "http": 200
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22IDC-based+reading+activities+with+GenAI+pedagogical+agents%22&max_results=3",
+   "utc": "2026-10-09T21:21:00Z",
+   "http": 200
+  }
+ ]
+}
