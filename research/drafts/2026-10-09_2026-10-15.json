@@ -228,6 +228,33 @@
       "first_disclosed_on": null,
       "source_updates": [],
       "screening_note": "30-day backfill/background: earlier than issue period; publication history confirmed on publisher page, not full original-text verification. Hold."
+    },
+    {
+      "candidate_id": "W2026-10-09-A10",
+      "category": "research",
+      "source_url": "https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-026-05721-w",
+      "source_title": "Latent profiles of AI teaching self-efficacy and their associations with occupational well-being among vocational education teachers in China: the moderating role of AI anxiety",
+      "source_organization": "BMC Psychology / Springer Nature",
+      "source_publication_date": "2026-10-09",
+      "source_locator": "Article page: 'Published: 09 October 2026' and citation_online_date 2026/10/09; Abstract > Methods",
+      "discovered_on": "2026-10-09",
+      "discovery_batch_id": "2026-10-09-tool-wave-a-1",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "original_excerpt": "A regionally stratified online survey was conducted with 768 in-service teachers (378 from secondary vocational schools, 390 from higher vocational colleges)",
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "Accepted manuscript shared early (to be replaced by Version of Record). Mixed school levels: only 378/768 teachers are from secondary vocational schools; cross-sectional correlational survey in mainland China; effect sizes are high-risk numbers pending G2–G4. No earlier preprint found in one Crossref title query (not exhaustive). Not for publication.",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "doi": "10.1186/s40359-026-05721-w",
+      "screening_note": "Discovery only, hold pending first-disclosure check."
     }
   ],
   "item_template": {
@@ -251,7 +278,7 @@
     "ai_crosscheck_record": ""
   },
   "screening_summary": {
-    "candidate_count": 9,
+    "candidate_count": 10,
     "ready_to_publish": 0,
     "verified_for_publication": 0,
     "screened_on": "2026-10-09",
@@ -287,6 +314,32 @@
       ],
       "discovered": 2,
       "added": 2,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-09-tool-wave-a-1",
+      "searched_on": "2026-10-09",
+      "lookback_days": 0,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-new-doi",
+          "query": "Crossref filter from-created-date:2026-10-09 + query.bibliographic AI literacy / generative AI x school terms (research/p0-tool-wave-2026-10-09/group-a.json)",
+          "status": "ok"
+        },
+        {
+          "group": "research-new-doi",
+          "query": "OpenAlex filter from_created_date:2026-10-09 (requires paid plan, HTTP 429)",
+          "status": "unavailable"
+        },
+        {
+          "group": "preprints",
+          "query": "alphaXiv discover_papers published_after 2026-10-09 + arXiv API submittedDate 2026-10-08..09 (0 results; 10/09 not yet announced)",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ]

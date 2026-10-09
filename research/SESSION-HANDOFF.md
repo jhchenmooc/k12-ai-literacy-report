@@ -358,4 +358,22 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 2. 46 筆待判：優先讀 EAAI K-12 分軌 13 筆摘要；AIED 28 筆需可讀官方摘要；B 組 3 筆無摘要。
 3. 50 筆（15＋35）新紀錄的出版社頁、Available online 日與 G2–G4 方法核查未做；高風險成效數字不得寫成主張。
 4. 其餘未搜尋來源：J20–J30、J32–J34、J39、C13–C18、C20；可照指南的期刊／會議流程再分三組。
-5. 九筆候選 hold／`source_checked=false`、`issues.json` 零期別、無自動搜尋或發刊——均未變。
+5. 候選全部 hold／`source_checked=false`（其後新增 A10，現為 10 筆，見下一段）、`issues.json` 零期別、無自動搜尋或發刊——均未變。
+
+### 2026-10-09｜週報學術候選查證與雙 session 分工（新 Session 以此段為準）
+
+**已完成**：
+- PR #99 已合併為 main `0c27fd1`，[main Run 37961779468](https://github.com/jhchenmooc/k12-ai-literacy-report/actions/runs/37961779468) verify 與 deploy 均成功。
+- A 組三筆本週學術線索查證：T&F `1475939x.2026.2739390` 出版社存入日期 2026-10-08，**出窗排除**；JOLTIDA `joltida.1893531` 為大學附設職業學院，**高教排除**；BMC Psychology `s40359-026-05721-w`（10/09 上線、中職＋高職教師混合、相關研究、接受稿）以既有 `ingest-candidates.js` 加入為 **W2026-10-09-A10，hold**，知識庫對應 KB-2026-0051。見 [查證紀錄](drafts/2026-10-09-weekly-research-a-verification.md)。
+- **候選池現為 10 筆，全部 hold／`source_checked=false`**。原寫死「9 筆」的 5 個測試檔改為不固定數量但保留同樣保護（全部 hold 且未核、每筆有對應知識庫紀錄、每日摘要不改數量）。
+
+**雙 session 分工（管理者 2026-10-09 決定）**：
+| | 編輯 session（本 session） | 文獻搜尋 session（新開） |
+|---|---|---|
+| 負責 | 週報候選發現與首發查核、出刊或 0 則決定、`SESSION-HANDOFF.md` | P0 未搜來源逐源搜尋、待判書目、知識庫入庫 |
+| 可寫 | `research/drafts/`、`publication/`、週報網站檔、`SESSION-HANDOFF.md` | `research/knowledge-base/data/*`、`indexes/`、`venue-watchlist.md`、新的 `research/p0-*` 稽核資料夾、`research-tools-guide.md`（補坑） |
+| 不可寫 | 知識庫三表與索引（候選對應紀錄除外，需先在交接檔註明） | `research/drafts/`、`publication/`、`SESSION-HANDOFF.md`、出版閘門 |
+- 兩邊各用自己的分支與 PR，合併前都要管理者確認。搜尋 session 的 PR 說明要附「交接檔摘要」，由編輯 session 統一寫入本檔。
+- 搜尋 session 在本段所在 PR 合併後才從最新 main 開工；第一批 B1：J20–J26、J27–J30＋J32–J34＋J39、C13–C18＋C20 三組平行。
+
+**尚未完成（編輯 session）**：政策來源搜尋整合（進行中）；10/10 00:00 UTC 後重查預印本，10/10–10/15 每日 Crossref 新登記 DOI；候選首發查核；10/15 前決定出刊或 0 則。

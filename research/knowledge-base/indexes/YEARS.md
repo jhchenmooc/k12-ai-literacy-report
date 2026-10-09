@@ -129,5 +129,6 @@
 | KB-2026-0007 — [UNESCO calls for pairing school screen regulation in Mexico with digital literacy and continuous monitoring](https://www.unesco.org/en/articles/unesco-calls-pairing-school-screen-regulation-mexico-digital-literacy-and-continuous-monitoring) | source_document | 未知 | discovered_unverified |
 | KB-2026-0008 — [The Effects of K-12 Artificial Intelligence Education in Enhancing AI Literacy: A Meta-Analysis](https://onlinelibrary.wiley.com/doi/10.1002/jcal.70308) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0009 — [Measuring Acceptance of Age-Tiered AI Literacy Guidebooks: A Developmentally Informed Study of K-12 Students and Teachers](https://www.sciencedirect.com/science/article/pii/S2666920X26001232) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0051 — [Latent profiles of AI teaching self-efficacy and their associations with occupational well-being among vocational education teachers in China: the moderating role of AI anxiety](https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-026-05721-w) | journal_article | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
