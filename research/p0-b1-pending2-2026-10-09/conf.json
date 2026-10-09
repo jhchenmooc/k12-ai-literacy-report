@@ -1,0 +1,919 @@
+{
+ "started_utc": "2026-10-09T18:59:15Z",
+ "ended_utc": "2026-10-09T19:05:25Z",
+ "queries": [
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772318.3790908?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:33Z",
+   "http": 200,
+   "result": "abstract_ok(147 words)；DOI 10.1145/3772318.3790908"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772318.3790908",
+   "utc": "2026-10-09T18:59:35Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3772318.3790908"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706598.3714402?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:35Z",
+   "http": 200,
+   "result": "abstract_ok(147 words)；DOI 10.1145/3706598.3714402"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706598.3714402",
+   "utc": "2026-10-09T18:59:36Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3706598.3714402"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772363.3798981?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:38Z",
+   "http": 200,
+   "result": "abstract_ok(132 words)；DOI 10.1145/3772363.3798981"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772363.3798981",
+   "utc": "2026-10-09T18:59:39Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3772363.3798981"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772363.3778682?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:40Z",
+   "http": 200,
+   "result": "abstract_ok(244 words)；DOI 10.1145/3772363.3778682"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772363.3778682",
+   "utc": "2026-10-09T18:59:41Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3772363.3778682"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706598.3713443?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:41Z",
+   "http": 200,
+   "result": "abstract_field_not_abstract(17 words)；DOI 10.1145/3706598.3713443"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706598.3713443",
+   "utc": "2026-10-09T18:59:42Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3706598.3713443"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706599.3719789?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:43Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3706599.3719789"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706599.3719789",
+   "utc": "2026-10-09T18:59:44Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3706599.3719789"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706598.3713173?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:45Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3706598.3713173"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706598.3713173",
+   "utc": "2026-10-09T18:59:47Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3706598.3713173"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706598.3714037?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:47Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3706598.3714037"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706598.3714037",
+   "utc": "2026-10-09T18:59:48Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3706598.3714037"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706599.3719844?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:49Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3706599.3719844"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706599.3719844",
+   "utc": "2026-10-09T18:59:50Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3706599.3719844"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3706598.3713510?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:51Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3706598.3713510"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3706598.3713510",
+   "utc": "2026-10-09T18:59:52Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3706598.3713510"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772363.3798673?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:53Z",
+   "http": 200,
+   "result": "abstract_ok(144 words)；DOI 10.1145/3772363.3798673"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772363.3798673",
+   "utc": "2026-10-09T18:59:54Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3772363.3798673"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772318.3791346?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:55Z",
+   "http": 200,
+   "result": "abstract_ok(150 words)；DOI 10.1145/3772318.3791346"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772318.3791346",
+   "utc": "2026-10-09T18:59:57Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3772318.3791346"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772363.3799047?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:58Z",
+   "http": 200,
+   "result": "abstract_ok(161 words)；DOI 10.1145/3772363.3799047"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772363.3799047",
+   "utc": "2026-10-09T18:59:59Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3772363.3799047"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772318.3790584?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T19:00:00Z",
+   "http": 200,
+   "result": "abstract_ok(155 words)；DOI 10.1145/3772318.3790584"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772318.3790584",
+   "utc": "2026-10-09T19:00:04Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3772318.3790584"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3772318.3791483?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T19:00:05Z",
+   "http": 200,
+   "result": "abstract_ok(152 words)；DOI 10.1145/3772318.3791483"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3772318.3791483",
+   "utc": "2026-10-09T19:00:06Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3772318.3791483"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3805689.3812305?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T19:00:07Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3805689.3812305"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3805689.3812305",
+   "utc": "2026-10-09T19:00:08Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3805689.3812305"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3715275.3732176?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T19:00:09Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3715275.3732176"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3715275.3732176",
+   "utc": "2026-10-09T19:00:10Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3715275.3732176"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3805689.3812281?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T19:00:11Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3805689.3812281"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3805689.3812281",
+   "utc": "2026-10-09T19:00:12Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3805689.3812281"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3816972?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T19:00:13Z",
+   "http": 200,
+   "result": "abstract_ok(178 words)；DOI 10.1145/3816972"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3816972",
+   "utc": "2026-10-09T19:00:14Z",
+   "http": 200,
+   "result": "abstract_ok；DOI 10.1145/3816972"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1145/3715070.3748294?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T19:00:15Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3715070.3748294"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1145/3715070.3748294",
+   "utc": "2026-10-09T19:00:17Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1145/3715070.3748294"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1109/icalt64023.2025.00035?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T19:00:18Z",
+   "http": 200,
+   "result": "abstract_ok(125 words)；DOI 10.1109/icalt64023.2025.00035"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1109/icalt64023.2025.00035",
+   "utc": "2026-10-09T19:00:19Z",
+   "http": 200,
+   "result": "no_abstract；DOI 10.1109/icalt64023.2025.00035"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Technologies+for+Children+s+AI+Learning&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:00:35Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 4；前列結果 0 筆，無同題"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=From+Pre-Conceptions+to+Theories&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:00:42Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 5；前列結果 0 筆，無同題"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=AI+Literacy+for+Underserved+Students&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:01:02Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 6；前列結果 0 筆，無同題"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Escape+or+D13+Understanding+Youth+Perspectives+of+AI+through+Educational+Game+Co-design&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:01:20Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 7；前列結果 0 筆，無同題"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=ImaginAItion+Promoting+Generative+AI+Literacy+Through+Game-Based+Learning&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:01:38Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 8；前列結果 0 筆，無同題"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Ethics+is+not+neutral+Understanding+Ethical+and+Responsible+AI+Design+from+the&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:01:51Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 9；前列結果 0 筆，無同題"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Investigating+ChatGPT+Usage+in+High+Schools&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:01:56Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 15；前列結果 0 筆，無同題"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Responsible+AI+in+Education&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:02:07Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 16；前列結果 5 筆，無同題（僅不同論文）"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=When+AI+Breaks+Teachers+Repair&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:02:13Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 17；前列結果 0 筆，無同題"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Bridging+Expertise+and+Participation+in+AI&searchtype=title&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:02:20Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 19；前列結果 0 筆，無同題"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=children+AI+learning+technologies+design+features&searchtype=all&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:02:34Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 4；前列結果 2 筆，無同題（僅不同論文）"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=middle+school+predictive+text&searchtype=all&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:02:39Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 5；前列結果 5 筆，無同題（僅不同論文）"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=AI+literacy+underserved+students+cultural+capital&searchtype=all&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:02:44Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 6；前列結果 0 筆，無同題"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=youth+perspectives+AI+educational+game+co-design&searchtype=all&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:02:48Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 7；前列結果 0 筆，無同題"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=ImaginAItion&searchtype=all&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:02:53Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 8；前列結果 1 筆，無同題（僅不同論文）"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Black+youth+responsible+AI+design&searchtype=all&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:02:58Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 9；前列結果 2 筆，無同題（僅不同論文）"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=ChatGPT+high+schools+policy&searchtype=all&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:03:02Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 15；前列結果 1 筆，無同題（僅不同論文）"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=Responsible+AI+in+Education+teachers+priorities&searchtype=all&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:03:07Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 16；前列結果 1 筆，無同題（僅不同論文）"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=pedagogical+repair&searchtype=all&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:03:25Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 17；前列結果 9 筆，無同題（僅不同論文）"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=multistakeholder+youth+online+safety&searchtype=all&abstracts=hide&size=25",
+   "utc": "2026-10-09T19:03:43Z",
+   "http": 200,
+   "result": "arXiv 網站搜尋；item 19；前列結果 0 筆，無同題"
+  },
+  {
+   "url": "alphaXiv MCP discover_papers ×2（題名關鍵詞；僅線索）",
+   "utc": "未精確記錄（約 19:02–19:04Z，介於 arXiv 搜尋與輸出之間）",
+   "http": "n/a",
+   "result": "10 篇缺摘要者皆無同題預印本；見到 Mind the Trust Gap 同題 2607.01506（已有 Crossref 摘要，未使用）"
+  }
+ ],
+ "items": [
+  {
+   "doi": "10.1145/3772318.3790908",
+   "title": "Do Teachers Dream of GenAI Widening Educational (In)equality? Envisioning the Future of K-12 GenAI Education from Global Teachers’ Perspectives",
+   "source_id": "C13",
+   "container": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI 主論文集 paper；21 頁",
+   "crossref_issue_year": 2026,
+   "previous_reason": "摘要明示 K-12 teachers；但「GenAI education」偏 GenAI 進入課堂（使用）與不平等，未明確為教學關於 AI；主題是否屬 K-12 GenAI 治理待管理者判",
+   "abstract_source": "openalex",
+   "school_level": "30 K-12 teachers",
+   "countries": [
+    "US",
+    "ZA",
+    "TW"
+   ],
+   "topic": "跨國 K-12 教師對 GenAI 進入課堂與教育（不）平等的實踐、系統障礙（含師培不足）與願景",
+   "category_suggestion": "K5 工具治理",
+   "decision": "candidate",
+   "reason": "摘要明示 K-12 classrooms 與 30 名 K-12 教師（美、南非、臺灣）；主題為 GenAI 在 K-12 加劇或緩解不平等之風險與所需制度支持，屬 K-12 生成式 AI 風險／治理。邊界：非教學關於 AI，請管理者複核",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:33Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3706598.3714402",
+   "title": "Fairness by Design: Cross-Cultural Perspectives from Children on AI and Fair Data Processing in their Education Futures",
+   "source_id": "C13",
+   "container": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI 主論文集 paper；20 頁",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要明示 10–12 歲兒童與教師（蘇格蘭、土耳其）；主題為 AI-EdTech 資料治理，非生成式 AI、非學習關於 AI；是否納入 K5 待管理者判",
+   "abstract_source": "openalex",
+   "school_level": "72 children (aged 10–12) and 4 teachers",
+   "countries": [
+    "GB",
+    "TR"
+   ],
+   "topic": "兒童觀點的 AI-EdTech 資料處理公平性（fairness by design）與法律／設計建議",
+   "category_suggestion": "K5 工具治理",
+   "decision": "pending",
+   "reason": "學段年齡明確（10–12 歲，Scotland 與 Türkiye；Scotland 記為 GB）；但主題為 AI-EdTech 資料保護與公平，非生成式 AI、非學習關於 AI，是否屬入選主題須管理者判（不自行放寬）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:35Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3772363.3798981",
+   "title": "Thinking, Making, Enacting --- A Multi-Modal Approach to Children's Conception of AI",
+   "source_id": "C13",
+   "container": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI Extended Abstracts（LBW／case study／workshop 提案等細類待官方頁）；7 頁",
+   "crossref_issue_year": 2026,
+   "previous_reason": "摘要明示 primary-school children 6–11 歲；主題為兒童 AI 概念理解，未明示 AI 素養教學；屬 AI 素養基礎研究與否待判；Extended Abstract",
+   "abstract_source": "openalex",
+   "school_level": "50 primary-school children aged 6–11",
+   "countries": [],
+   "topic": "以討論、貼紙、手作原型、戲劇等多模態方法探究兒童對 AI 的概念",
+   "category_suggestion": "K2 學術研究",
+   "decision": "candidate",
+   "reason": "摘要明示 primary-school、6–11 歲；主題為兒童對 AI 的理解（AI 素養基礎研究，比照 IDC 輪同類判 candidate）；CHI Extended Abstract、7 頁",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:38Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3772363.3778682",
+   "title": "Developmentally Safe Generative AI Environment for Youth",
+   "source_id": "C13",
+   "container": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI Extended Abstracts（LBW／case study／workshop 提案等細類待官方頁）；5 頁",
+   "crossref_issue_year": 2026,
+   "previous_reason": "摘要為 workshop 提案，談 youth 使用 GenAI 之發展風險；未明示學校／年級，非實證論文",
+   "abstract_source": "openalex",
+   "school_level": "youth（未寫學段／年齡）",
+   "countries": [],
+   "topic": "CHI 2026 workshop 提案：青少年使用 GenAI 的發展安全與研究議程",
+   "category_suggestion": "K5 工具治理",
+   "decision": "pending",
+   "reason": "摘要只寫 youth／young people，未明示學段或年齡；且為 workshop 提案非實證論文",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:40Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3706598.3713443",
+   "title": "Technologies for Children's AI Learning: Design Features and Future Opportunities",
+   "source_id": "C13",
+   "container": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI 主論文集 paper；22 頁",
+   "crossref_issue_year": 2025,
+   "previous_reason": "OpenAlex 摘要欄為會議資訊而非摘要，摘要實質不可得；題名相關",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 children）",
+   "countries": [],
+   "topic": "兒童 AI 學習科技的設計特徵（題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "OpenAlex 摘要欄僅為會議資訊（非摘要），摘要不可得（OpenAlex 無摘要、Crossref 無 abstract 欄、arXiv 網站題名與關鍵詞搜尋無同題預印本、alphaXiv 線索亦無；ACM DL 未嘗試）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:41Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3706599.3719789",
+   "title": "From Pre-Conceptions to Theories: How Middle School Student Ideas about Predictive Text Evolve after Interaction with a New Software Tool",
+   "source_id": "C13",
+   "container": "Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI Extended Abstracts（LBW／case study／workshop 提案等細類待官方頁）；7 頁",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 middle school）",
+   "countries": [],
+   "topic": "中學生對預測文字的先備概念與理論演變（題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract 欄、arXiv 網站題名與關鍵詞搜尋無同題預印本、alphaXiv 線索亦無；ACM DL 未嘗試）；學段僅見於題名，依規則須摘要明示",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:43Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3706598.3713173",
+   "title": "AI Literacy for Underserved Students: Leveraging Cultural Capital from Underserved Communities for AI Education Research",
+   "source_id": "C13",
+   "container": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI 主論文集 paper；15 頁",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認",
+   "abstract_source": "none",
+   "school_level": "unknown",
+   "countries": [],
+   "topic": "弱勢學生 AI 素養與社群文化資本（題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract 欄、arXiv 網站題名與關鍵詞搜尋無同題預印本、alphaXiv 線索亦無；ACM DL 未嘗試）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:45Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3706598.3714037",
+   "title": "Escape or D13: Understanding Youth Perspectives of AI through Educational Game Co-design",
+   "source_id": "C13",
+   "container": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI 主論文集 paper；17 頁",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 youth）",
+   "countries": [],
+   "topic": "以教育遊戲共同設計理解青少年 AI 觀點（題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract 欄、arXiv 網站題名與關鍵詞搜尋無同題預印本、alphaXiv 線索亦無；ACM DL 未嘗試）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:47Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3706599.3719844",
+   "title": "ImaginAItion: Promoting Generative AI Literacy Through Game-Based Learning",
+   "source_id": "C13",
+   "container": "Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI Extended Abstracts（LBW／case study／workshop 提案等細類待官方頁）；9 頁",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認；學段亦可能非 K-12",
+   "abstract_source": "none",
+   "school_level": "unknown",
+   "countries": [],
+   "topic": "遊戲式學習促進生成式 AI 素養（題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract 欄、arXiv 網站題名與關鍵詞搜尋無同題預印本、alphaXiv 線索亦無；ACM DL 未嘗試）；學段亦可能非 K-12",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:49Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3706598.3713510",
+   "title": "\"Ethics is not neutral\": Understanding Ethical and Responsible AI Design from the Lenses of Black Youth",
+   "source_id": "C13",
+   "container": "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI 主論文集 paper；20 頁",
+   "crossref_issue_year": 2025,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要（且 OpenAlex 無摘要）",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 Black youth）",
+   "countries": [],
+   "topic": "黑人青少年視角下的倫理與負責任 AI 設計（題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract 欄、arXiv 網站題名與關鍵詞搜尋無同題預印本、alphaXiv 線索亦無；ACM DL 未嘗試）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:51Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3772363.3798673",
+   "title": "A Systematic Literature Review of Generative AI Risks and Harms for Youth",
+   "source_id": "C13",
+   "container": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI Extended Abstracts（LBW／case study／workshop 提案等細類待官方頁）；22 頁",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "youth（未寫學段／年齡）",
+   "countries": [],
+   "topic": "青少年 GenAI 風險與傷害系統性回顧（95 篇）與治理／設計意涵",
+   "category_suggestion": "K5 工具治理",
+   "decision": "pending",
+   "reason": "摘要只寫 youth，未明示學段或年齡；主題為 GenAI 風險治理（相關）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:53Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3772318.3791346",
+   "title": "Who Gets to Define Safety? A Systematic Review of How Generative AI Research Addresses Youth Online Safety",
+   "source_id": "C13",
+   "container": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI 主論文集 paper；19 頁",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "youth／young people（未寫學段／年齡）",
+   "countries": [],
+   "topic": "GenAI 研究如何處理青少年線上安全之系統性回顧（N=30）",
+   "category_suggestion": "K5 工具治理",
+   "decision": "pending",
+   "reason": "摘要只寫 youth／young people，未明示學段或年齡；主題為 GenAI 青少年安全（相關）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:55Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3772363.3799047",
+   "title": "AI Kitchen: Child-Readable Ingredient Labels and Transparency Stickers for Failure Anticipation and Reliance Calibration",
+   "source_id": "C13",
+   "container": "Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI Extended Abstracts（LBW／case study／workshop 提案等細類待官方頁）；4 頁",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "children; planned study ages 8–12",
+   "countries": [],
+   "topic": "AI Kitchen：兒童可讀的模型「成分標籤」與透明貼紙，支持預期失敗與校準信任",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "candidate",
+   "reason": "摘要明示 8–12 歲（規劃中的形成性研究，N=10）；主題為兒童理解模型訓練資料覆蓋、信心不等於正確（學習關於 AI）。僅原型＋規劃研究、4 頁 EA，非校內情境",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:58Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3772318.3790584",
+   "title": "Understanding Educators’ Perceptions of AI-generated Non-consensual Intimate Imagery",
+   "source_id": "C13",
+   "container": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI 主論文集 paper；17 頁",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要；學段未知",
+   "abstract_source": "openalex",
+   "school_level": "middle and high schools; 20 educators",
+   "countries": [
+    "US"
+   ],
+   "topic": "教育人員對 AI 生成未經同意私密影像（AIG-NCII）的態度、經驗與學校因應（訓練、政策缺口）",
+   "category_suggestion": "K5 工具治理",
+   "decision": "candidate",
+   "reason": "摘要明示 middle and high schools 事件與學校所需支持、20 名美國教育人員；主題為 K-12 生成式 AI 風險／治理（政策、訓練、課程設計意涵）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:00Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3772318.3791483",
+   "title": "Talking About Brainrot: Youth Engagement with AI-Generated Content and the Dynamics of Intergenerational Communication",
+   "source_id": "C13",
+   "container": "Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+   "paper_type": "CHI 主論文集 paper；13 頁",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀；題名相關，待細讀摘要；可能為家庭／校外情境",
+   "abstract_source": "openalex",
+   "school_level": "89 adolescents aged 12–14",
+   "countries": [],
+   "topic": "12–14 歲青少年對 AI 生成迷因（Italian Brainrot）的認知與跨世代溝通，及對 AI 媒體批判意識的意涵",
+   "category_suggestion": "K2 學術研究",
+   "decision": "candidate",
+   "reason": "摘要明示 12–14 歲；主題為青少年對 GenAI 生成內容的認知與批判意識（比照 IDC 輪「兒童對 GenAI 理解」判 candidate）。邊界：非學校情境、AI 素養只在結論提及，請管理者複核。\"Italian\" 為迷因名稱，非受試國別，不記",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:05Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3805689.3812305",
+   "title": "Investigating ChatGPT Usage in High Schools: Student Perspectives on Policy and Practice",
+   "source_id": "C15",
+   "container": "Proceedings of the 2026 ACM Conference on Fairness, Accountability, and Transparency",
+   "paper_type": "FAccT 論文集 paper（細類待官方頁）；25 頁",
+   "crossref_issue_year": 2026,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 high schools）",
+   "countries": [],
+   "topic": "高中生對 ChatGPT 使用政策與實務的觀點（題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract 欄、arXiv 網站題名與關鍵詞搜尋無同題預印本、alphaXiv 線索亦無；ACM DL 未嘗試）；學段僅見於題名",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:07Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3715275.3732176",
+   "title": "Responsible AI in Education: Understanding Teachers’ Priorities and Contextual Challenges",
+   "source_id": "C15",
+   "container": "Proceedings of the 2025 ACM Conference on Fairness, Accountability, and Transparency",
+   "paper_type": "FAccT 論文集 paper（細類待官方頁）；23 頁",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 teachers）",
+   "countries": [],
+   "topic": "教師對教育中負責任 AI 的優先事項與脈絡挑戰（題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract 欄、arXiv 網站題名與關鍵詞搜尋無同題預印本、alphaXiv 線索亦無；ACM DL 未嘗試）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:09Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3805689.3812281",
+   "title": "When AI Breaks, Teachers Repair: Pedagogical Repair Work in Situated Classroom Practice",
+   "source_id": "C15",
+   "container": "Proceedings of the 2026 ACM Conference on Fairness, Accountability, and Transparency",
+   "paper_type": "FAccT 論文集 paper（細類待官方頁）；19 頁",
+   "crossref_issue_year": 2026,
+   "previous_reason": "摘要不可得（OpenAlex 無摘要、arXiv 標題檢索無對應；ACM DL 不嘗試），題名相關但學段未由摘要確認",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 classroom）",
+   "countries": [],
+   "topic": "AI 失誤時教師的教學修補工作（題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract 欄、arXiv 網站題名與關鍵詞搜尋無同題預印本、alphaXiv 線索亦無；ACM DL 未嘗試）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:11Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1145/3816972",
+   "title": "Mind the Trust Gap: Identifying (Mis)alignments in Teacher-Student Views Toward Control and Agency in K-12 Classroom AI",
+   "source_id": "C16",
+   "container": "Proceedings of the ACM on Human-Computer Interaction vol 10 issue 6",
+   "paper_type": "PACM HCI 期刊論文（Crossref vol 10 issue 6；是否為 CSCW 期次未經 ACM DL 確認）；頁 1-31",
+   "crossref_issue_year": 2026,
+   "previous_reason": "摘要明示 K-12 classroom、school students 與 teachers（德國）；主題為課堂 AI 決策控制權，非 AI 素養、非明確生成式 AI；且 PACM HCI 10(6) 是否屬 CSCW 期次未確認",
+   "abstract_source": "openalex",
+   "school_level": "16 school students and 15 school teachers; K-12 classroom",
+   "countries": [
+    "DE"
+   ],
+   "topic": "師生對 K-12 課堂 AI 決策控制權與信任的看法（不）一致（storyboard speed-dating）",
+   "category_suggestion": "K5 工具治理",
+   "decision": "exclude",
+   "reason": "學段明確（K-12 classroom、德國師生）；但主題為課堂 AI（學習科技）之師生控制權偏好，AI 屬學習工具，非 AI 素養／學習關於 AI、亦未指明生成式 AI 風險治理。邊界案例，管理者可覆核。arXiv 2607.01506 為同題預印本（僅線索，未用作判定）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:13Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": "Crossref 亦提供相同摘要（JATS）"
+  },
+  {
+   "doi": "10.1145/3715070.3748294",
+   "title": "Bridging Expertise and Participation in AI: Multistakeholder Approaches to Safer AI Systems for Youth Online Safety",
+   "source_id": "C16",
+   "container": "Companion Publication of the 2025 Conference on Computer-Supported Cooperative Work and Social Computing",
+   "paper_type": "CSCW 2025 Companion（workshop／poster 等細類待官方頁）；頁 150-155",
+   "crossref_issue_year": 2025,
+   "previous_reason": "OpenAlex 無摘要、未細讀；題名為青少年網路安全，教育情境不明",
+   "abstract_source": "none",
+   "school_level": "unknown（題名 youth）",
+   "countries": [],
+   "topic": "多方利害關係人參與打造更安全的青少年 AI 系統（題名）",
+   "category_suggestion": "待判",
+   "decision": "pending",
+   "reason": "摘要不可得（OpenAlex 無摘要、Crossref 無 abstract 欄、arXiv 網站題名與關鍵詞搜尋無同題預印本、alphaXiv 線索亦無；ACM DL 未嘗試）；教育情境不明",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:15Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  },
+  {
+   "doi": "10.1109/icalt64023.2025.00035",
+   "title": "WekiMusic: Machine Learning Music Activities to Foster Constructionist AI Education",
+   "source_id": "C18",
+   "container": "2025 IEEE International Conference on Advanced Learning Technologies (ICALT)",
+   "paper_type": "IEEE ICALT 論文集（≤3 頁，多為 short／poster，推估待核）；3 頁",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要為學習關於 AI 之音樂活動，但只寫 students，未明示學段",
+   "abstract_source": "openalex",
+   "school_level": "students（未寫學段／年齡）",
+   "countries": [],
+   "topic": "WekiMusic：以機器學習音樂活動進行建構主義 AI 教育，分析點擊軌跡",
+   "category_suggestion": "K6 活動實踐",
+   "decision": "pending",
+   "reason": "主題為學習關於 AI，但摘要只寫 students，未明示學段或年齡；提及學習成效與點擊軌跡分析（若報成效：高風險，待 G2–G4）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:18Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   }
+  }
+ ],
+ "counts": {
+  "total": 21,
+  "candidate": 5,
+  "pending": 15,
+  "exclude": 1,
+  "by_source": {
+   "C13": {
+    "candidate": 5,
+    "pending": 10
+   },
+   "C15": {
+    "pending": 3
+   },
+   "C16": {
+    "exclude": 1,
+    "pending": 1
+   },
+   "C18": {
+    "pending": 1
+   }
+  },
+  "abstract_source": {
+   "openalex": 11,
+   "none": 10
+  },
+  "known_duplicate": 0
+ },
+ "limits": [
+  "Crossref 21 篇中僅 1 篇（10.1145/3816972）有 abstract 欄；ACM DL、IEEE Xplore 未嘗試讀取（依指示）。",
+  "OpenAlex 9 篇無摘要、1 篇（10.1145/3706598.3713443）摘要欄實為會議資訊，不視為摘要；共 10 篇摘要不可得，維持 pending。",
+  "arXiv 改用 arxiv.org 搜尋頁（HTTP 200，未用 export API），題名與關鍵詞搜尋皆無同題預印本；alphaXiv 僅作線索亦未見。無 via_arxiv 項目。",
+  "邊界判定交管理者複核：3790908（GenAI 不平等，非教學關於 AI，判 candidate）、3791483（12–14 歲、校外情境、AI 生成迷因，判 candidate）、3714402（AI-EdTech 資料公平、非 GenAI，判 pending）、3816972（課堂 AI 控制權，判 exclude）。",
+  "3799047 只有原型與『規劃中』研究（N=10、8–12 歲）；4 頁 EA。",
+  "CSCW：3816972 Crossref container 為 Proceedings of the ACM on Human-Computer Interaction vol 10 issue 6；是否屬 CSCW 期次未確認。3748294 為 CSCW 2025 Companion。",
+  "國別只記摘要明寫國名；Scotland 記 GB（前輪亦同）；'Italian Brainrot' 為迷因名，不記。",
+  "paper_type 細類（full／LBW／workshop）未讀官方頁；類別為建議值。",
+  "原始下載快取（含摘要）已於完成後刪除。"
+ ]
+}

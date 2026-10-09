@@ -1,0 +1,878 @@
+{
+ "started_utc": "2026-10-09T18:59:15Z",
+ "ended_utc": "2026-10-09T19:02:53Z",
+ "queries": [
+  {
+   "url": "https://api.openalex.org/works/doi:10.1109/tlt.2025.3575030?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:36Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1109/tlt.2025.3575030",
+   "utc": "2026-10-09T18:59:37Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://doi.org/10.1109/tlt.2025.3575030 → ieeexplore.ieee.org/document/11062459/",
+   "utc": "2026-10-09T19:00:55Z",
+   "http": 202,
+   "result": "202 空白回應，停止"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1870536?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:37Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1870536",
+   "utc": "2026-10-09T18:59:38Z",
+   "http": 200,
+   "result": "abstract_present"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1780826?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:39Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1780826",
+   "utc": "2026-10-09T18:59:39Z",
+   "http": 200,
+   "result": "abstract_present"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2025.1716353?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:40Z",
+   "http": 200,
+   "result": "abstract_ok（正文非摘要）"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2025.1716353",
+   "utc": "2026-10-09T18:59:40Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://www.frontiersin.org/articles/10.3389/feduc.2025.1716353/full",
+   "utc": "2026-10-09T19:00:15Z",
+   "http": 200,
+   "result": "Opinion；無正式摘要（citation_abstract 為正文首段）"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2025.1632990?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:41Z",
+   "http": 200,
+   "result": "abstract_ok（正文非摘要）"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2025.1632990",
+   "utc": "2026-10-09T18:59:41Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://www.frontiersin.org/articles/10.3389/feduc.2025.1632990/full",
+   "utc": "2026-10-09T19:00:18Z",
+   "http": 200,
+   "result": "Opinion；無正式摘要（citation_abstract 為正文首段）"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1755301?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:42Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1755301",
+   "utc": "2026-10-09T18:59:42Z",
+   "http": 200,
+   "result": "abstract_present"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1929017?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:43Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1929017",
+   "utc": "2026-10-09T18:59:43Z",
+   "http": 200,
+   "result": "abstract_present"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1874510?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:44Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1874510",
+   "utc": "2026-10-09T18:59:45Z",
+   "http": 200,
+   "result": "abstract_present"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2025.1597249?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:46Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2025.1597249",
+   "utc": "2026-10-09T18:59:46Z",
+   "http": 200,
+   "result": "abstract_present"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2025.1610836?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:47Z",
+   "http": 200,
+   "result": "abstract_ok（正文非摘要）"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2025.1610836",
+   "utc": "2026-10-09T18:59:47Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://www.frontiersin.org/articles/10.3389/feduc.2025.1610836/full",
+   "utc": "2026-10-09T19:00:21Z",
+   "http": 200,
+   "result": "Opinion；無正式摘要（citation_abstract 為正文首段）"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1792351?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:48Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1792351",
+   "utc": "2026-10-09T18:59:48Z",
+   "http": 200,
+   "result": "abstract_present"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2025.1681836?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:49Z",
+   "http": 200,
+   "result": "abstract_ok（正文非摘要）"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2025.1681836",
+   "utc": "2026-10-09T18:59:50Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://www.frontiersin.org/articles/10.3389/feduc.2025.1681836/full",
+   "utc": "2026-10-09T19:00:24Z",
+   "http": 200,
+   "result": "Opinion；無正式摘要（citation_abstract 為正文首段）"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2025.1609518?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:51Z",
+   "http": 200,
+   "result": "abstract_ok（正文非摘要）"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2025.1609518",
+   "utc": "2026-10-09T18:59:52Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://www.frontiersin.org/articles/10.3389/feduc.2025.1609518/full",
+   "utc": "2026-10-09T19:00:27Z",
+   "http": 200,
+   "result": "Opinion；無正式摘要（citation_abstract 為正文首段）"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1825182?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:52Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1825182",
+   "utc": "2026-10-09T18:59:53Z",
+   "http": 200,
+   "result": "abstract_present"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1875856?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:54Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1875856",
+   "utc": "2026-10-09T18:59:54Z",
+   "http": 200,
+   "result": "abstract_present"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1818555?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:55Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1818555",
+   "utc": "2026-10-09T18:59:55Z",
+   "http": 200,
+   "result": "abstract_present"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1790642?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:56Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.3389/feduc.2026.1790642",
+   "utc": "2026-10-09T18:59:57Z",
+   "http": 200,
+   "result": "abstract_present"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1007/s44217-025-00924-6?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:58Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/s44217-025-00924-6",
+   "utc": "2026-10-09T18:59:58Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1007/s44217-026-01688-3?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T18:59:59Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/s44217-026-01688-3",
+   "utc": "2026-10-09T18:59:59Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1007/s44217-026-01611-w?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T19:00:00Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/s44217-026-01611-w",
+   "utc": "2026-10-09T19:00:00Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1007/s42330-025-00404-x?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T19:00:02Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/s42330-025-00404-x",
+   "utc": "2026-10-09T19:00:02Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://link.springer.com/article/10.1007/s42330-025-00404-x",
+   "utc": "2026-10-09T19:00:57Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://api.openalex.org/works/doi:10.1007/s42330-026-00434-z?select=id,abstract_inverted_index",
+   "utc": "2026-10-09T19:00:03Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://api.crossref.org/works/10.1007/s42330-026-00434-z",
+   "utc": "2026-10-09T19:00:03Z",
+   "http": 200,
+   "result": "no_abstract"
+  },
+  {
+   "url": "https://link.springer.com/article/10.1007/s42330-026-00434-z",
+   "utc": "2026-10-09T19:01:00Z",
+   "http": 200,
+   "result": "abstract_ok"
+  },
+  {
+   "url": "https://export.arxiv.org/api/query?search_query=ti:\"Science Education in the Age of Artificial Intelligence\"&max_results=5",
+   "utc": "2026-10-09T19:01:03Z（約略，未逐筆記錄）",
+   "http": 429,
+   "result": "failed（限流），未記零命中"
+  },
+  {
+   "url": "https://arxiv.org/search/?query=\"Science Education in the Age of Artificial Intelligence\"&searchtype=title",
+   "utc": "2026-10-09T19:01:15Z",
+   "http": 200,
+   "result": "0 筆（Sorry, your query… no results）"
+  }
+ ],
+ "items": [
+  {
+   "doi": "10.1109/tlt.2025.3575030",
+   "title": "Science Education in the Age of Artificial Intelligence: Opportunities, Challenges, and Research",
+   "source_id": "J27",
+   "crossref_issue_year": 2025,
+   "previous_reason": "OpenAlex 無摘要（2025 卷 18 頁 635–638，可能為社論）；學段與是否涉及 AI 教育不明",
+   "abstract_source": "none",
+   "school_level": "unknown",
+   "countries": [],
+   "topic": "AI 時代的科學教育：機會、挑戰與研究（推測為專刊社論）",
+   "category_suggestion": null,
+   "decision": "pending",
+   "reason": "摘要不可得：OpenAlex 無摘要、Crossref 無 abstract 欄、IEEE 頁經 doi.org 轉址回 HTTP 202 空白（不繞過）、arXiv 網站題名搜尋無同題版",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:55Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200,
+    "publisher": 202
+   },
+   "note": ""
+  },
+  {
+   "doi": "10.3389/feduc.2026.1870536",
+   "title": "Curriculum innovation through artificial intelligence and its influence on pupils’ independent learning in Azerbaijan",
+   "source_id": "J29",
+   "crossref_issue_year": 2026,
+   "previous_reason": "學段明示；但主體為 AI 作為課程／學習工具，教師 AI 素養僅為調節變項，是否入選待管理者判斷；迴歸係數勿作因果，高風險，待 G2–G4",
+   "abstract_source": "openalex",
+   "school_level": "secondary school students (grades 9–11)",
+   "countries": [
+    "AZ"
+   ],
+   "topic": "AI 融入課程創新對中學生自主學習的影響；教師 AI 素養為調節變項",
+   "category_suggestion": null,
+   "decision": "exclude",
+   "reason": "學段明示；但 AI 為課程／學習工具，教師 AI 素養僅為調節變項，主題為工具融入成效，依規則 exclude；迴歸／中介係數不得作因果，高風險，待 G2–G4",
+   "high_risk": true,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:37Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": "Crossref abstract 欄亦有摘要，內容一致"
+  },
+  {
+   "doi": "10.3389/feduc.2026.1780826",
+   "title": "Ethical and equitable heutagogy: integrating AI to support learner agency",
+   "source_id": "J29",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀（J29 已細讀 15 篇）；題名與查詢命中顯示可能相關，學段／主題待讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "K–12, CTE, and adult learning contexts",
+   "countries": [],
+   "topic": "自主學習（heutagogy）與 AI 融入：學習者能動性、公平與隱私（敘事型概念回顧）",
+   "category_suggestion": null,
+   "decision": "exclude",
+   "reason": "摘要寫跨 K–12／CTE／成人；主體是以 AI 作為支援自主學習的工具，AI 素養僅在結語列為未來研究方向，依「AI 只當學習工具」exclude",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:39Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": "Crossref abstract 欄亦有摘要，內容一致"
+  },
+  {
+   "doi": "10.3389/feduc.2025.1716353",
+   "title": "Learning with, rather than through, AI: co-designing science education for critical AI literacy",
+   "source_id": "J29",
+   "crossref_issue_year": 2025,
+   "previous_reason": "OpenAlex 摘要欄實為正文開頭，學段僅以「high school settings」「teens」旁及，未見明確研究對象學段；待讀原文確認",
+   "abstract_source": "publisher",
+   "school_level": "high school settings（僅正文旁及）",
+   "countries": [],
+   "topic": "科學教育中的批判性 AI 素養共同設計（意見文）",
+   "category_suggestion": "K4 教學師培",
+   "decision": "pending",
+   "reason": "摘要不可得：Frontiers Opinion 類文章，無正式摘要；出版社頁 citation_abstract 欄為正文首段（OpenAlex 摘要欄同為正文）；主題切合（批判性 AI 素養），但正文首段未明示研究對象學段，高中僅旁及",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:15Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200,
+    "publisher": 200
+   },
+   "note": ""
+  },
+  {
+   "doi": "10.3389/feduc.2025.1632990",
+   "title": "From tools to co-learners: entangled humanism and the co-evolution of intelligence in AI education",
+   "source_id": "J29",
+   "crossref_issue_year": 2025,
+   "previous_reason": "超過細讀上限未讀（J29 已細讀 15 篇）；題名與查詢命中顯示可能相關，學段／主題待讀摘要",
+   "abstract_source": "publisher",
+   "school_level": "未明示",
+   "countries": [],
+   "topic": "AI 由工具轉為共同學習者的人文主義觀點（意見文）",
+   "category_suggestion": null,
+   "decision": "exclude",
+   "reason": "Frontiers Opinion 類文章，無正式摘要；出版社頁 citation_abstract 欄為正文首段（OpenAlex 摘要欄同為正文）；正文首段以 AI 為學習工具／共同學習者，所引例證含高教與 MOOC，未明示 K–12，亦非學習「關於」AI；依正文首段判斷，管理者可複核",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:18Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200,
+    "publisher": 200
+   },
+   "note": ""
+  },
+  {
+   "doi": "10.3389/feduc.2026.1755301",
+   "title": "Modeling K-12 teachers’ continuance intention to use generative AI: influencing factors and a hybrid SEM-ANN approach",
+   "source_id": "J29",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀（J29 已細讀 15 篇）；題名與查詢命中顯示可能相關，學段／主題待讀摘要；題名偏工具採用",
+   "abstract_source": "openalex",
+   "school_level": "K-12 teachers",
+   "countries": [
+    "CN"
+   ],
+   "topic": "K-12 教師持續使用生成式 AI 的意向（ECM＋TPACK，SEM-ANN）",
+   "category_suggestion": null,
+   "decision": "exclude",
+   "reason": "學段明示；主題為教師工具採用／持續使用意向，非 AI 教育或風險治理，依規則 exclude",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:42Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": "Crossref abstract 欄亦有摘要，內容一致"
+  },
+  {
+   "doi": "10.3389/feduc.2026.1929017",
+   "title": "K-12 in-service teachers' beliefs about generative AI in classrooms: insights from the United States, India, Qatar, Colombia, and the Philippines",
+   "source_id": "J29",
+   "crossref_issue_year": 2026,
+   "previous_reason": "學段明示；主題為教師 GenAI 信念與風險疑慮，是否屬「K-12 生成式 AI 風險」待管理者判斷",
+   "abstract_source": "openalex",
+   "school_level": "K-12 in-service teachers",
+   "countries": [
+    "US",
+    "IN",
+    "QA",
+    "CO",
+    "PH"
+   ],
+   "topic": "K-12 教師對課堂生成式 AI 的信念與疑慮（抄襲、創造力），五國調查",
+   "category_suggestion": "K2 學術研究",
+   "decision": "candidate",
+   "reason": "學段明示；三個依變項中兩個為教師對 GenAI 抄襲與創造力風險的疑慮，屬 K–12 生成式 AI 風險；迴歸解釋量為相關性，非成效（邊界案，管理者可複核）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:43Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": "Crossref abstract 欄亦有摘要，內容一致"
+  },
+  {
+   "doi": "10.3389/feduc.2026.1874510",
+   "title": "A framework for integrating large language models in secondary physics education: practical design, opportunities, risks, and pedagogical principles",
+   "source_id": "J29",
+   "crossref_issue_year": 2026,
+   "previous_reason": "學段明示；主要為 LLM 作為教學工具，但含風險（認知卸載、偏誤）與倫理鷹架原則，邊界待判；單組前後測 pilot，高風險，待 G2–G4",
+   "abstract_source": "openalex",
+   "school_level": "secondary school students (ages 14–16)",
+   "countries": [],
+   "topic": "中學物理課融入 LLM 的框架：機會、風險（認知卸載、偏誤）與教學原則；單班 pilot",
+   "category_suggestion": null,
+   "decision": "pending",
+   "reason": "學段明示；主體為 LLM 作為教學工具的框架，但含風險分析、課堂 AI 使用防護與倫理鷹架，是否屬「K–12 GenAI 風險／治理」仍屬邊界，交管理者；單組前後測、效果量，高風險，待 G2–G4",
+   "high_risk": true,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:44Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": "Crossref abstract 欄亦有摘要，內容一致"
+  },
+  {
+   "doi": "10.3389/feduc.2025.1597249",
+   "title": "GenAI as a cognitive mediator: a critical-constructivist inquiry into computational thinking in pre-university education",
+   "source_id": "J29",
+   "crossref_issue_year": 2025,
+   "previous_reason": "學段明示；以 GenAI 作為程式／設計思維學習工具為主，但結論強調批判數位素養與認知警覺，邊界待判",
+   "abstract_source": "openalex",
+   "school_level": "high school students; secondary level",
+   "countries": [],
+   "topic": "高中生以 ChatGPT 進行運算思維學習（提示工程、評估修正 AI 回應），強調批判數位素養與認知警覺",
+   "category_suggestion": null,
+   "decision": "pending",
+   "reason": "學段明示；以 GenAI 作為運算思維學習工具為主，學生評估 AI 輸出、批判數位素養屬 AI 素養成分但非研究主題，邊界交管理者",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:46Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": "Crossref abstract 欄亦有摘要，內容一致"
+  },
+  {
+   "doi": "10.3389/feduc.2025.1610836",
+   "title": "Addressing student use of generative AI in schools and universities through academic integrity reporting",
+   "source_id": "J29",
+   "crossref_issue_year": 2025,
+   "previous_reason": "理論文章；題名提 schools，摘要僅寫 academic environment，未明示中小學學段",
+   "abstract_source": "publisher",
+   "school_level": "academic environment（未明示中小學）",
+   "countries": [],
+   "topic": "以學術誠信框架處理學生 GenAI 使用（理論／意見文）",
+   "category_suggestion": null,
+   "decision": "pending",
+   "reason": "摘要不可得：Frontiers Opinion 類文章，無正式摘要；出版社頁 citation_abstract 欄為正文首段（OpenAlex 摘要欄同為正文）；正文首段只寫 academic environment，學術誠信研究未明示中小學，依規則 pending",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:21Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200,
+    "publisher": 200
+   },
+   "note": ""
+  },
+  {
+   "doi": "10.3389/feduc.2026.1792351",
+   "title": "Text features associated with students’ generative AI use: Norwegian teachers’ perspectives",
+   "source_id": "J29",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀（J29 已細讀 15 篇）；題名與查詢命中顯示可能相關，學段／主題待讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "teachers; school writing（未明示學段）",
+   "countries": [
+    "NO"
+   ],
+   "topic": "挪威教師辨識學生寫作中 GenAI 使用的文本特徵與立場",
+   "category_suggestion": null,
+   "decision": "pending",
+   "reason": "摘要只寫 teachers 與 school writing，未明示中小學學段；主題近學術誠信／AI 素養政策落實，依規則 pending",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:48Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": "Crossref abstract 欄亦有摘要，內容一致"
+  },
+  {
+   "doi": "10.3389/feduc.2025.1681836",
+   "title": "Artificial intelligence in education: applications and limitations for teachers in low- and middle-income countries",
+   "source_id": "J29",
+   "crossref_issue_year": 2025,
+   "previous_reason": "超過細讀上限未讀（J29 已細讀 15 篇）；題名與查詢命中顯示可能相關，學段／主題待讀摘要",
+   "abstract_source": "publisher",
+   "school_level": "未明示",
+   "countries": [],
+   "topic": "低中收入國家教師使用生成式 AI 的應用與限制（意見文）",
+   "category_suggestion": null,
+   "decision": "exclude",
+   "reason": "Frontiers Opinion 類文章，無正式摘要；出版社頁 citation_abstract 欄為正文首段（OpenAlex 摘要欄同為正文）；正文首段為教師以 GenAI 作為教學工具（語言近用、教學設計、差異化）與基礎設施／治理挑戰，未明示 K–12，依正文首段判斷 exclude，管理者可複核",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:24Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200,
+    "publisher": 200
+   },
+   "note": ""
+  },
+  {
+   "doi": "10.3389/feduc.2025.1609518",
+   "title": "Homework in the AI era: cheating, challenge, or change?",
+   "source_id": "J29",
+   "crossref_issue_year": 2025,
+   "previous_reason": "超過細讀上限未讀（J29 已細讀 15 篇）；題名與查詢命中顯示可能相關，學段／主題待讀摘要",
+   "abstract_source": "publisher",
+   "school_level": "students; young minds（未明示學段）",
+   "countries": [],
+   "topic": "AI 時代的回家作業：作弊、挑戰或轉變（意見文）",
+   "category_suggestion": null,
+   "decision": "pending",
+   "reason": "摘要不可得：Frontiers Opinion 類文章，無正式摘要；出版社頁 citation_abstract 欄為正文首段（OpenAlex 摘要欄同為正文）；主題近學術誠信，正文首段未明示中小學學段，依規則 pending",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:27Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200,
+    "publisher": 200
+   },
+   "note": ""
+  },
+  {
+   "doi": "10.3389/feduc.2026.1825182",
+   "title": "Teacher technophobia toward Generative AI: evidence from an Italian survey",
+   "source_id": "J29",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀（J29 已細讀 15 篇）；題名與查詢命中顯示可能相關，學段／主題待讀摘要",
+   "abstract_source": "openalex",
+   "school_level": "teachers in preservice training; schools（未明示學段）",
+   "countries": [
+    "IT"
+   ],
+   "topic": "義大利職前教師對生成式 AI 的恐懼、抗拒與評量疑慮",
+   "category_suggestion": null,
+   "decision": "pending",
+   "reason": "摘要只寫 schools 與 preservice training，未明示中小學學段；主題為教師對 GAI 態度與評量風險疑慮，學段明示後可再判",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:52Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": "Crossref abstract 欄亦有摘要，內容一致"
+  },
+  {
+   "doi": "10.3389/feduc.2026.1875856",
+   "title": "Empowering teachers to use AI for differentiation: changes in teachers’ acceptance of AI-based technologies following participation in a short professional development training session",
+   "source_id": "J29",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀（J29 已細讀 15 篇）；題名與查詢命中顯示可能相關，學段／主題待讀摘要；題名偏 AI 工具使用研習",
+   "abstract_source": "openalex",
+   "school_level": "teachers from primary and secondary education",
+   "countries": [
+    "DE"
+   ],
+   "topic": "短期教師研習後對以 AI 工具進行差異化教學的接受度（TAM）",
+   "category_suggestion": null,
+   "decision": "exclude",
+   "reason": "學段明示；主題為 AI 工具採用（差異化教學）之接受度，非教 AI 能力或風險治理，依規則 exclude；單組前後測，高風險，待 G2–G4",
+   "high_risk": true,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:54Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": "Crossref abstract 欄亦有摘要，內容一致"
+  },
+  {
+   "doi": "10.3389/feduc.2026.1818555",
+   "title": "Epistemic practices and beliefs of Chilean adolescents in digital environments",
+   "source_id": "J29",
+   "crossref_issue_year": 2026,
+   "previous_reason": "超過細讀上限未讀（J29 已細讀 15 篇）；題名與查詢命中顯示可能相關，學段／主題待讀摘要；是否涉 AI 不明",
+   "abstract_source": "openalex",
+   "school_level": "16-year-old students from three schools",
+   "countries": [
+    "CL"
+   ],
+   "topic": "智利青少年數位學習實務與網路資訊可信度信念",
+   "category_suggestion": null,
+   "decision": "exclude",
+   "reason": "學段（16 歲、學校）明示；主題為一般數位／資訊素養，GenAI 僅為受訪者偏好資源之一，非 AI 素養主題",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:55Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": "Crossref abstract 欄亦有摘要，內容一致"
+  },
+  {
+   "doi": "10.3389/feduc.2026.1790642",
+   "title": "Exploring the IntelligentTPACK gap: a qualitative analysis of teachers’ AI competencies and AI self-reported classroom uses",
+   "source_id": "J29",
+   "crossref_issue_year": 2026,
+   "previous_reason": "211 名斯洛伐克在職教師；摘要僅寫 schools，未明示中小學學段；主題含教師 AI 能力",
+   "abstract_source": "openalex",
+   "school_level": "in-service teachers; schools（未明示學段）",
+   "countries": [
+    "SK"
+   ],
+   "topic": "在職教師 AI 能力與課堂 AI 使用的 IntelligentTPACK 落差",
+   "category_suggestion": "K4 教學師培",
+   "decision": "pending",
+   "reason": "主題含教師 AI 能力，但摘要只寫 schools／in-service teachers，未明示中小學學段，依規則 pending",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:56Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": "Crossref abstract 欄亦有摘要，內容一致"
+  },
+  {
+   "doi": "10.1007/s44217-025-00924-6",
+   "title": "Landscape of AI literacy in education: approaches, impacts, and challenges for student preparedness—a narrative review",
+   "source_id": "J32",
+   "crossref_issue_year": 2025,
+   "previous_reason": "摘要提及 K-12 至高教與專業教育的不同需求，K-12 僅為其一；是否符合「學段明示 K-12」待管理者判斷",
+   "abstract_source": "openalex",
+   "school_level": "from K-12 to higher and professional education",
+   "countries": [],
+   "topic": "教育中的 AI 素養：取徑、影響與挑戰（敘事回顧）",
+   "category_suggestion": "K2 學術研究",
+   "decision": "candidate",
+   "reason": "摘要明示 K-12（與高教、專業教育並列），主題即 AI 素養；跨學段回顧，K-12 非唯一對象（邊界案，管理者可複核）",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:58Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": ""
+  },
+  {
+   "doi": "10.1007/s44217-026-01688-3",
+   "title": "A mixed methods study of the three low trap in high school information technology teaching in underdeveloped China in the AI era",
+   "source_id": "J32",
+   "crossref_issue_year": 2026,
+   "previous_reason": "學段明示；主題為 AI 時代資訊科技教學的基礎設施、教師能力與政策落實，是否屬教 AI 不明；資料為網路評論情緒分析與 13 名教師訪談",
+   "abstract_source": "openalex",
+   "school_level": "high school information technology teaching",
+   "countries": [
+    "CN"
+   ],
+   "topic": "中國欠發達地區高中資訊科技教學的「三低陷阱」（基礎設施、教師能力、政策落實）",
+   "category_suggestion": null,
+   "decision": "pending",
+   "reason": "學段明示；構念為基礎設施、教師態度與政策落實，「AI education settings」僅見於結語，看不出課程是否教 AI；網路評論情緒代理分數與迴歸係數為探索性，高風險，待 G2–G4",
+   "high_risk": true,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T18:59:59Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": ""
+  },
+  {
+   "doi": "10.1007/s44217-026-01611-w",
+   "title": "Understanding K-12 teachers’ adoption of generative AI through an integrated technology acceptance and perceived risk framework",
+   "source_id": "J32",
+   "crossref_issue_year": 2026,
+   "previous_reason": "學段明示；主體為工具採用（TAM），但知覺風險為核心構念，是否屬 K-12 GenAI 風險待管理者判斷",
+   "abstract_source": "openalex",
+   "school_level": "K-12 in-service teachers",
+   "countries": [
+    "CN"
+   ],
+   "topic": "K-12 教師採用生成式 AI：TAM＋知覺風險",
+   "category_suggestion": null,
+   "decision": "exclude",
+   "reason": "學段明示；依變項為使用意向，知覺風險僅為預測變項，主題為工具採用，依規則 exclude",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:00Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200
+   },
+   "note": ""
+  },
+  {
+   "doi": "10.1007/s42330-025-00404-x",
+   "title": "From TV to AI: Evolving Challenges and Enduring Questions in STEM Education",
+   "source_id": "J34",
+   "crossref_issue_year": 2025,
+   "previous_reason": "OpenAlex 無摘要；可能為評論文，學段與是否涉 AI 教育不明",
+   "abstract_source": "publisher",
+   "school_level": "未明示（classrooms／students）",
+   "countries": [],
+   "topic": "從電視到 AI：STEM 教育的科技挑戰（期刊 25 週年評論）",
+   "category_suggestion": null,
+   "decision": "exclude",
+   "reason": "Springer 頁可讀（Commentary）；AI 作為教學科技之一，非學習關於 AI，亦未明示中小學學段",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:00:57Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200,
+    "publisher": 200
+   },
+   "note": ""
+  },
+  {
+   "doi": "10.1007/s42330-026-00434-z",
+   "title": "Exploring the Influence of AI on the Professional Development of Science Teachers in STEM Education",
+   "source_id": "J34",
+   "crossref_issue_year": 2026,
+   "previous_reason": "OpenAlex 無摘要；教師 AI 相關專業發展，學段不明",
+   "abstract_source": "publisher",
+   "school_level": "science teachers（未明示學段）",
+   "countries": [
+    "NG"
+   ],
+   "topic": "AI 工具對 STEM 科學教師專業發展的影響",
+   "category_suggestion": null,
+   "decision": "exclude",
+   "reason": "Springer 頁可讀；AI 為教學／專業發展工具（智慧導師、虛擬實驗室），非教 AI 能力，且未明示中小學學段；州名不記",
+   "high_risk": false,
+   "known_duplicate": false,
+   "read_utc": "2026-10-09T19:01:00Z",
+   "http_status": {
+    "openalex": 200,
+    "crossref": 200,
+    "publisher": 200
+   },
+   "note": "摘要寫 four states in Nigeria，州名不記"
+  }
+ ],
+ "counts": {
+  "total": 22,
+  "candidate": 2,
+  "pending": 10,
+  "exclude": 10,
+  "abstract_source": {
+   "none": 1,
+   "openalex": 14,
+   "publisher": 7
+  },
+  "known_duplicate": 0,
+  "high_risk": 4,
+  "by_source": {
+   "J27": 1,
+   "J29": 16,
+   "J32": 3,
+   "J34": 2
+  }
+ },
+ "limits": [
+  "J27 IEEE TLT 10.1109/tlt.2025.3575030：OpenAlex、Crossref 皆無摘要，IEEE Xplore 回 HTTP 202 空白（未繞過），arXiv API 429、網站題名搜尋 0 筆 → 摘要不可得，維持 pending。",
+  "Frontiers 5 篇 vol 10 文章（1716353、1632990、1610836、1681836、1609518）為 Opinion 類，無正式摘要；OpenAlex 摘要欄與出版社 citation_abstract 皆為正文首段。其中 3 篇依規則維持 pending（摘要不可得），2 篇（1632990、1681836）依正文首段判 exclude，管理者可複核。",
+  "Springer CJSMTE 兩篇文章頁本次 HTTP 200 可讀（URL 帶 cookies_not_supported 參數但頁面含摘要，無驗證頁）；Discover Education 3 篇用 OpenAlex 摘要，未讀 Springer 頁。",
+  "先前標為「超過細讀上限未讀」的 9 篇中，Frontiers vol 11 的 6 篇 OpenAlex 與 Crossref 均已有正式摘要（兩者一致）；vol 10 的 3 篇為 Opinion。",
+  "2 件 candidate 均為邊界案：1929017（教師對 GenAI 風險疑慮）、s44217-025-00924-6（跨 K-12 至高教的 AI 素養回顧）；類別為建議值。",
+  "國別只記摘要明寫國名；Nigeria 州名不記。去重比對 kb-titles.tsv（DOI 與正規化題名），0 件重複。",
+  "本輪未讀出版社頁的紀錄若入庫，verification_status 應為 discovered_unverified；未查首發日。"
+ ]
+}
