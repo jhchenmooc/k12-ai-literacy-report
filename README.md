@@ -41,6 +41,7 @@ GitHub Pages：Settings → Pages → Source = GitHub Actions。正式更新經 
 
 ## 學術期刊與會議固定監測池
 
+- [AI 素養範圍判斷準則](research/ai-literacy-scope-criteria.md)：依教育部《臺灣中小學教師與學生 AI 素養框架》（2026-04-17 核定）表 1、表 2，判斷資料屬 A 核心、B 相關或 C 非屬
 - [監測清單、優先級、布林搜尋與審查 SOP](research/venue-watchlist.md)（47 種期刊、21 個會議系列、跨資料庫補漏）
 - [機器可讀搜尋來源表 CSV](research/venue-watchlist.csv)
 - 自 2026/10/08 起，文獻週次蒐集與月底整合應優先使用監測池；期刊／會議及研究全文的 K-12 適用性仍須逐篇確認。
