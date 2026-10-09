@@ -1,0 +1,320 @@
+{
+ "start": "2026-10-09T19:30:01+00:00",
+ "end": "2026-10-09T19:30:32+00:00",
+ "query": "(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+ "window": "publication_date>=2019-01-01",
+ "runs": [
+  {
+   "jid": "J01",
+   "sid": "S4210172634",
+   "filter": "primary_location.source.id:S4210172634,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 126,
+   "read": 25
+  },
+  {
+   "jid": "J02",
+   "sid": "S4210183364",
+   "filter": "primary_location.source.id:S4210183364,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 444,
+   "read": 25
+  },
+  {
+   "jid": "J03",
+   "sid": "S171267539",
+   "filter": "primary_location.source.id:S171267539,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 117,
+   "read": 25
+  },
+  {
+   "jid": "J04",
+   "sid": "S110346167",
+   "filter": "primary_location.source.id:S110346167,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 136,
+   "read": 25
+  },
+  {
+   "jid": "J05",
+   "sid": "S166722454",
+   "filter": "primary_location.source.id:S166722454,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 599,
+   "read": 25
+  },
+  {
+   "jid": "J06",
+   "sid": "S5743915",
+   "filter": "primary_location.source.id:S5743915,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 142,
+   "read": 25
+  },
+  {
+   "jid": "J07",
+   "sid": "S114840262",
+   "filter": "primary_location.source.id:S114840262,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 85,
+   "read": 25
+  },
+  {
+   "jid": "J08",
+   "sid": "S4210183620",
+   "filter": "primary_location.source.id:S4210183620,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 61,
+   "read": 25
+  },
+  {
+   "jid": "J09",
+   "sid": "S2764582272",
+   "filter": "primary_location.source.id:S2764582272,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 75,
+   "read": 25
+  },
+  {
+   "jid": "J10",
+   "sid": "S204030396",
+   "filter": "primary_location.source.id:S204030396,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 195,
+   "read": 25
+  },
+  {
+   "jid": "J11",
+   "sid": "S4210198611",
+   "filter": "primary_location.source.id:S4210198611,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 167,
+   "read": 25
+  },
+  {
+   "jid": "J12",
+   "sid": "S2764890288",
+   "filter": "primary_location.source.id:S2764890288,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 27,
+   "read": 25
+  },
+  {
+   "jid": "J13",
+   "sid": "S97147119",
+   "filter": "primary_location.source.id:S97147119,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 8,
+   "read": 8
+  },
+  {
+   "jid": "J14",
+   "sid": "S2764465379",
+   "filter": "primary_location.source.id:S2764465379,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 25,
+   "read": 25
+  },
+  {
+   "jid": "J15",
+   "sid": "S78398831",
+   "filter": "primary_location.source.id:S78398831,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 18,
+   "read": 18
+  },
+  {
+   "jid": "J16",
+   "sid": "S42640028",
+   "filter": "primary_location.source.id:S42640028,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 4,
+   "read": 4
+  },
+  {
+   "jid": "J17",
+   "sid": "S43764696",
+   "filter": "primary_location.source.id:S43764696,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 19,
+   "read": 19
+  },
+  {
+   "jid": "J18",
+   "sid": "S92895470",
+   "filter": "primary_location.source.id:S92895470,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 3,
+   "read": 3
+  },
+  {
+   "jid": "J19",
+   "sid": "S55175622",
+   "filter": "primary_location.source.id:S55175622,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 10,
+   "read": 10
+  },
+  {
+   "jid": "J20",
+   "sid": "S94618750",
+   "filter": "primary_location.source.id:S94618750,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 49,
+   "read": 25
+  },
+  {
+   "jid": "J21",
+   "sid": "S89004459",
+   "filter": "primary_location.source.id:S89004459,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 7,
+   "read": 7
+  },
+  {
+   "jid": "J22",
+   "sid": "S190677702",
+   "filter": "primary_location.source.id:S190677702,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 9,
+   "read": 9
+  },
+  {
+   "jid": "J23",
+   "sid": "S126127421",
+   "filter": "primary_location.source.id:S126127421,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 14,
+   "read": 14
+  },
+  {
+   "jid": "J24",
+   "sid": "S4210190517",
+   "filter": "primary_location.source.id:S4210190517,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 1074,
+   "read": 25
+  },
+  {
+   "jid": "J25",
+   "sid": "S83170543",
+   "filter": "primary_location.source.id:S83170543,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 2,
+   "read": 2
+  },
+  {
+   "jid": "J26",
+   "sid": "S144725990",
+   "filter": "primary_location.source.id:S144725990,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 47,
+   "read": 25
+  },
+  {
+   "jid": "J27",
+   "sid": "S130363450",
+   "filter": "primary_location.source.id:S130363450,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 91,
+   "read": 25
+  },
+  {
+   "jid": "J28",
+   "sid": "S207741693",
+   "filter": "primary_location.source.id:S207741693,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 19,
+   "read": 19
+  },
+  {
+   "jid": "J29",
+   "sid": "S2596526815",
+   "filter": "primary_location.source.id:S2596526815,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 713,
+   "read": 25
+  },
+  {
+   "jid": "J30",
+   "sid": "S2764977688",
+   "filter": "primary_location.source.id:S2764977688,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 56,
+   "read": 25
+  },
+  {
+   "jid": "J31",
+   "sid": "S2738571837",
+   "filter": "primary_location.source.id:S2738571837,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 31,
+   "read": 25
+  },
+  {
+   "jid": "J32",
+   "sid": "S4387280196",
+   "filter": "primary_location.source.id:S4387280196,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 329,
+   "read": 25
+  },
+  {
+   "jid": "J33",
+   "sid": "S4210206302",
+   "filter": "primary_location.source.id:S4210206302,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 480,
+   "read": 25
+  },
+  {
+   "jid": "J34",
+   "sid": "S106272552",
+   "filter": "primary_location.source.id:S106272552,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 8,
+   "read": 8
+  },
+  {
+   "jid": "J35",
+   "sid": "S2493636226",
+   "filter": "primary_location.source.id:S2493636226,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 15,
+   "read": 15
+  },
+  {
+   "jid": "J36",
+   "sid": "S127795871",
+   "filter": "primary_location.source.id:S127795871,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 83,
+   "read": 25
+  },
+  {
+   "jid": "J37",
+   "sid": "S158654976",
+   "filter": "primary_location.source.id:S158654976,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 46,
+   "read": 25
+  },
+  {
+   "jid": "J38",
+   "sid": "S187318745",
+   "filter": "primary_location.source.id:S187318745,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 26,
+   "read": 25
+  },
+  {
+   "jid": "J39",
+   "sid": "S64184962",
+   "filter": "primary_location.source.id:S64184962,from_publication_date:2019-01-01,title_and_abstract.search:(\"artificial intelligence\" OR \"AI literacy\" OR \"generative AI\" OR ChatGPT)",
+   "status": "ok",
+   "count": 8,
+   "read": 8
+  }
+ ]
+}
