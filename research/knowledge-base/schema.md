@@ -18,7 +18,7 @@
 
 ## 分類及來源池
 
-六大類別 K1 政策框架、K2 學術研究、K3 素養評量、K4 教學師培、K5 工具治理、K6 活動實踐。現有 39 本期刊／21 個正式會議來源 ID 以 `research/venue-watchlist.md` 為權威；官方登錄與定期增刪見 `research/source-registry-and-review-policy-v17.md`。這些分類不表示研究具有實證支持。
+六大類別 K1 政策框架、K2 學術研究、K3 素養評量、K4 教學師培、K5 工具治理、K6 活動實踐。K1–K6 是知識庫的導航分類（資料類型與主題），**不是**教育部 AI 素養框架的面向代碼（T-ETH 等 8 個，見 [AI 素養範圍判斷準則](../ai-literacy-scope-criteria.md)），兩者不可互相代替；知識庫目前不存 A/B/C 與面向代碼，判讀結果寫在篩選報告。現有 47 本期刊／21 個正式會議來源 ID 以 `research/venue-watchlist.md` 為權威；官方登錄與定期增刪見 `research/source-registry-and-review-policy-v17.md`。這些分類不表示研究具有實證支持。
 
 ## 首次資料與限制
 
