@@ -35,6 +35,7 @@
 | 低人力門檻 | [`research/low-human-review-policy.md`](low-human-review-policy.md) |
 | 來源中文對讀 | [`research/source-to-claim-review.md`](source-to-claim-review.md) |
 | 搜尋來源池 | [`research/venue-watchlist.md`](venue-watchlist.md)：34 期刊、19 會議 |
+| 國際學者監測（草稿 v0.1，2026-10-09） | [`research/scholar-watchlist.md`](scholar-watchlist.md)：A 核心 5、B 擴充 11、C 政策窗口 3；源自使用者提供的 IFDE 2026 論壇整理（未公開、未入 repo）。OpenAlex 作者 ID 為候選、著作未核；依作者檢索仍逐篇篩 K-12。由搜尋 session 使用與維護 |
 | 來源與主張欄位 | [`research/publication-check-spec.md`](publication-check-spec.md) |
 | 本期編輯短名單 | [`research/drafts/2026-10-09_2026-10-15-shortlist.md`](drafts/2026-10-09_2026-10-15-shortlist.md) |
 | 本期候選資料 | [`research/drafts/2026-10-09_2026-10-15.json`](drafts/2026-10-09_2026-10-15.json) |
