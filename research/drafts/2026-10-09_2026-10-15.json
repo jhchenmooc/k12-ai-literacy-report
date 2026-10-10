@@ -276,7 +276,7 @@
       "discovery_batch_id": "2026-10-09-research-rehearsal-1",
       "first_disclosed_on": null,
       "source_updates": [],
-      "screening_note": "30-day backfill/background: earlier than issue period; publication history confirmed on publisher page, not full original-text verification. Hold. 2026-10-10: abstract supplied by manager from the publisher page (ScienceDirect blocked automated access with 403); sample is Taiwanese classrooms. Whether this guidebook is related to the MOE 《中小學AI之學習應用手冊》 (KB-2026-0242–0244) is not established.",
+      "screening_note": "30-day backfill/background: earlier than issue period; publication history confirmed on publisher page, not full original-text verification. Hold. 2026-10-10: abstract supplied by manager from the publisher page (ScienceDirect blocked automated access with 403); sample is Taiwanese classrooms. Whether this guidebook is related to the MOE 《中小學AI之學習應用手冊》 (KB-2026-0242–0244) is not established. Manager confirmed from the publisher page: 'Available online 24 August 2026' (matches source_publication_date).",
       "ai_lit_class": "A",
       "ai_lit_dims": [
         "S-BAS",
