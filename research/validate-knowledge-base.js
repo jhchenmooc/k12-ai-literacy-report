@@ -51,6 +51,9 @@ function validate(records,relations,runs,candidates){
  }
  /* Stage and role tags for research records (schema.md「學段與身分」). TEACHER_ED predates the ROLE_ prefix and keeps its name. */
  const POPULATION_VOCAB=["ROLE_STUDENT","ROLE_INSERVICE_TEACHER","TEACHER_ED","ROLE_OTHER_STAKEHOLDER","STAGE_PRESCHOOL","STAGE_PRIMARY","STAGE_LOWER_SECONDARY","STAGE_UPPER_SECONDARY","STAGE_SECONDARY","STAGE_K12_MULTI","STAGE_K12_GENERAL"];
+ /* Topic and method tags for research records (schema.md「主題與研究方法」). */
+ const TOPIC_VOCAB=["TOPIC_GENAI","TOPIC_CURRICULUM","TOPIC_ASSESSMENT","TOPIC_TEACHER_PD","TOPIC_ETHICS","TOPIC_INTERVENTION","TOPIC_CT","TOPIC_LANGUAGE","TOPIC_STEM","TOPIC_EQUITY","TOPIC_POLICY"];
+ const METHOD_VOCAB=["METHOD_REVIEW","METHOD_EXPERIMENT","METHOD_MIXED","METHOD_DESIGN","METHOD_QUALITATIVE","METHOD_SURVEY"];
  const relationsIds=new Set(),allowed=["record","work","source","vocabulary"];const vocab=["K1","K2","K3","K4","K5","K6"];
  for(const x of relations){
   check(!!x.relation_id&&!relationsIds.has(x.relation_id),"duplicate/missing relation ID");relationsIds.add(x.relation_id);
@@ -63,6 +66,8 @@ function validate(records,relations,runs,candidates){
   check(x.verification_status==="discovered_unverified"||x.verification_status==="bibliographic_checked"||x.verification_status==="content_checked","invalid relation status: "+x.relation_id);
   if(x.predicate==="has_category")check(x.object_namespace==="vocabulary"&&vocab.includes(x.object_id),"invalid category relation: "+x.relation_id);
   if(x.predicate==="has_population")check(x.object_namespace==="vocabulary"&&POPULATION_VOCAB.includes(x.object_id),"invalid population relation: "+x.relation_id);
+  if(x.predicate==="has_topic")check(x.object_namespace==="vocabulary"&&TOPIC_VOCAB.includes(x.object_id),"invalid topic relation: "+x.relation_id);
+  if(x.predicate==="has_method")check(x.object_namespace==="vocabulary"&&METHOD_VOCAB.includes(x.object_id),"invalid method relation: "+x.relation_id);
   if(x.predicate==="published_in")check(x.object_namespace==="source"&&/^[JC]/.test(x.object_id),"invalid venue relation: "+x.relation_id);
   if(x.predicate==="issued_by")check(x.object_namespace==="source"&&x.object_id.startsWith("O-"),"invalid issuing agency: "+x.relation_id);
  }

@@ -150,3 +150,8 @@ test("population tags only use the stage and role vocabulary",()=>{
  assert.ok(validate(records,rel,runs,candidates).some(x=>x.includes("invalid population relation")));
  assert.ok(relations.some(x=>x.predicate==="has_population"&&x.object_id==="ROLE_STUDENT"));
 });
+test("topic and method tags only use their vocabularies",()=>{
+ const base={subject_id:records[0].record_id,object_namespace:"vocabulary",evidence_url:"https://example.org",verification_status:"discovered_unverified"};
+ assert.ok(validate(records,[{...base,relation_id:"R1",predicate:"has_topic",object_id:"TOPIC_UNKNOWN"}],runs,candidates).some(x=>x.includes("invalid topic relation")));
+ assert.ok(validate(records,[{...base,relation_id:"R2",predicate:"has_method",object_id:"METHOD_UNKNOWN"}],runs,candidates).some(x=>x.includes("invalid method relation")));
+});
