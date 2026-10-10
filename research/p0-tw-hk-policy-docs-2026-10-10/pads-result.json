@@ -1,0 +1,771 @@
+{
+ "meta": {
+  "task": "pads 115年數位與AI指引系列篩選",
+  "generated_utc": "2026-10-10T00:48:23Z",
+  "note": "同一模型（與整合者同）之輔助判讀，非獨立審閱；TLS 驗證全程開啟；pads 以管理者核准之 bundle.pem 補中繼憑證；未繞過 captcha/登入/403；請求未含 email。WebSearch 僅作線索，學校轉載不作證據。",
+  "counts": {
+   "candidate": 6,
+   "pending": 4,
+   "duplicate": 3,
+   "exclude": 7
+  }
+ },
+ "items": [
+  {
+   "title_original": "115年中小學教師數位與AI教學指引",
+   "official_url": "https://pads.moe.edu.tw/download_file.php?file=_upload_0ced2a78cb794f6881c47b0e2148774b.pdf&old=upload",
+   "title_id": 1781,
+   "file_sha256": "0ed2fb270ca040fa7def6d52f3aebe3a27a9eac6e180ddc96e4ae90b042deb30",
+   "pages": 188,
+   "file_size_bytes": 5248238,
+   "issued_by": "O-TW-MOE",
+   "applies_to_country": "TW",
+   "record_type_suggestion": "official_guidance",
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "text": null,
+    "url": null,
+    "read_utc": null,
+    "note": "官方 pads 下載頁與檔案均未明載發布日期；edu.tw 即時新聞（115-10-10 回溯至 113-12-04，約 2000 則）未見本系列指引／手冊的發布新聞。學校轉知頁稱依「教育部115年9月10日函」辦理，但學校轉載不作依據，函文本身未讀到。"
+   },
+   "other_dates": [
+    "封面「2026 年 9 月」（cover month）",
+    "部長序、主編序署「2026 年 9 月」",
+    "官方下載檔名「115年中小學教師數位與AI教學指引1150920.pdf」（檔名版本日 2026-09-20，不是發布日）",
+    "PDF CreationDate 2026-10-01 UTC",
+    "未見核定日期或函號"
+   ],
+   "version_relation": "新版接續 KB-2024-0008《中小學數位教學指引3.0版》：主編序稱「延續數位學習精進計畫推動的基礎」，並請讀者參閱「《中小學數位教學指引 3.0》（9-34 頁）」；未寫取代或廢止3.0。pads 同一項目（title_id=1781）仍並列3.0版。建議另建紀錄、以 version 關聯連到 KB-2024-0008，不併檔。",
+   "k12_scope_evidence": "「國小階段宜優先選用為教育目的設計…平臺；國中與高中階段則可逐步引導學生理解工具限制」（第四章）",
+   "audience": "k12",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA",
+    "T-ETH",
+    "T-PD",
+    "T-BAS"
+   ],
+   "ai_lit_note": "以教師與學生AI素養框架為依據，指導在職中小學教師整合AI與教學法、AI倫理教學與AI促進專業發展，對應T-TEA、T-ETH、T-PD內涵。",
+   "category_suggestion": [
+    "K4",
+    "K1"
+   ],
+   "bib_checked_eligible": false,
+   "decision": "candidate",
+   "reason": "官方檔案讀到：題名、教育部出版均核對；K-12 範圍明確；無印明發布日，首發日 unknown，入庫可為 discovered_unverified（題名、機關已核，但缺發布日故不符 bibliographic_checked）。",
+   "issued_by_evidence": "封面「The Ministry of Education」；部長序「教育部部長 謹識 2026 年 9 月」；版權頁總召集人「教育部資訊及科技教育司司長」"
+  },
+  {
+   "title_original": "115年中小學校長數位與AI學習領導指引",
+   "official_url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9ef3962a1a7e371436145702ab24a6b7.pdf&old=upload",
+   "title_id": 1796,
+   "file_sha256": "a518a86468136a566d9c699f30099d0b11e1a387ac25105ce21bb72a1086587f",
+   "pages": 140,
+   "file_size_bytes": 4318111,
+   "issued_by": "O-TW-MOE",
+   "applies_to_country": "TW",
+   "record_type_suggestion": "official_guidance",
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "text": null,
+    "url": null,
+    "read_utc": null,
+    "note": "官方 pads 下載頁與檔案均未明載發布日期；edu.tw 即時新聞（115-10-10 回溯至 113-12-04，約 2000 則）未見本系列指引／手冊的發布新聞。學校轉知頁稱依「教育部115年9月10日函」辦理，但學校轉載不作依據，函文本身未讀到。"
+   },
+   "other_dates": [
+    "封面「2026 年 9 月」",
+    "部長序署「2026 年 9 月」",
+    "檔名「115年中小學校長數位與AI學習領導指引1150920.pdf」",
+    "PDF CreationDate 2026-10-01 UTC",
+    "未見核定日期或函號"
+   ],
+   "version_relation": "新版：主編序「本指引延續《中小學校長數位學習領導指引》的研發基礎…進行內容擴充與框架調整」「本次新版指引則進一步納入 AI 素養…」。前一版（檔名「教育部中小學校長數位學習領導指引1140113-.pdf」，pads title_id=1796 並列）不在知識庫。",
+   "k12_scope_evidence": "「期待全國中小學校長以本指引為參考，帶領學校團隊在變動中穩定前行」（部長序）",
+   "audience": "other_stakeholders",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS",
+    "T-ETH",
+    "T-PD"
+   ],
+   "ai_lit_note": "對象為其他教育關係人（中小學校長）；以三層級提供校長AI素養與AI學習領導、校內AI使用規範，對應T-BAS「參與AI校園治理部署與決策」與T-ETH「健全校園AI使用規範」。",
+   "category_suggestion": [
+    "K1",
+    "K5"
+   ],
+   "bib_checked_eligible": false,
+   "decision": "candidate",
+   "reason": "官方檔案讀到；題名、教育部發行核對；首發日 unknown；入庫 discovered_unverified。",
+   "issued_by_evidence": "封面「The Ministry of Education」；版權頁「發行人 鄭英耀 教育部部長」"
+  },
+  {
+   "title_original": "115年中小學家長數位與AI學習知能指引",
+   "official_url": "https://pads.moe.edu.tw/download_file.php?file=_upload_6a9820befef32e7e22a210950196a54f.pdf&old=upload",
+   "title_id": 1927,
+   "file_sha256": "0d1f1af2ffa25ce5980d43c4047dcd917fccdd93c462a1dda3f4a4bea4ff8139",
+   "pages": 114,
+   "file_size_bytes": 14513319,
+   "issued_by": "O-TW-MOE",
+   "applies_to_country": "TW",
+   "record_type_suggestion": "official_guidance",
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "text": null,
+    "url": null,
+    "read_utc": null,
+    "note": "官方 pads 下載頁與檔案均未明載發布日期；edu.tw 即時新聞（115-10-10 回溯至 113-12-04，約 2000 則）未見本系列指引／手冊的發布新聞。學校轉知頁稱依「教育部115年9月10日函」辦理，但學校轉載不作依據，函文本身未讀到。"
+   },
+   "other_dates": [
+    "封面「2026 年 9 月」",
+    "部長序、主編序署「2026 年 9 月」",
+    "檔名「115年中小學家長數位與AI學習知能指引v1150908.pdf」",
+    "PDF CreationDate 2026-09-07 UTC"
+   ],
+   "version_relation": "部長序稱「增訂《115 年中小學…家長數位與 AI 學習知能指引》」；前一版《中小學家長數位學習知能指引》（檔名 1140113，pads title_id=1927 並列）不在知識庫。文件未寫取代前版。",
+   "k12_scope_evidence": "「協助家長陪伴孩子健康、安全且有效地運用科技學習」（部長序）；附錄「未來人才 AI 能力圖像（國中小學生）」",
+   "audience": "other_stakeholders",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-LRN"
+   ],
+   "ai_lit_note": "對象為其他教育關係人（中小學家長）；第四章介紹生成式AI、適合孩子的AI工具與安全負責使用原則，對應學生S-ETH「落實AI使用規範與責任」與S-LRN的家庭支持。",
+   "category_suggestion": [
+    "K1",
+    "K5"
+   ],
+   "bib_checked_eligible": false,
+   "decision": "candidate",
+   "reason": "官方檔案讀到；題名、教育部核對；首發日 unknown；入庫 discovered_unverified。",
+   "issued_by_evidence": "封面「The Ministry of Education」；部長序；主編序「教育部委託團隊編輯本手冊」；版權頁總召集人「教育部資訊及科技教育司司長」"
+  },
+  {
+   "title_original": "中小學AI之學習應用手冊⸺國小生聰明用AI",
+   "official_url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9876e42b654dd2a55c3d2e8a8c055777.pdf&old=upload",
+   "title_id": 1922,
+   "file_sha256": "5c905e992493bf3034963452e01a91561db6ce6e0c6e977990de00ec16f37f5a",
+   "pages": 76,
+   "file_size_bytes": 260096710,
+   "issued_by": "O-TW-MOE",
+   "applies_to_country": "TW",
+   "record_type_suggestion": "official_guidance",
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "text": null,
+    "url": null,
+    "read_utc": null,
+    "note": "官方 pads 下載頁與檔案均未明載發布日期；edu.tw 即時新聞（115-10-10 回溯至 113-12-04，約 2000 則）未見本系列指引／手冊的發布新聞。學校轉知頁稱依「教育部115年9月10日函」辦理，但學校轉載不作依據，函文本身未讀到。"
+   },
+   "other_dates": [
+    "封面「2026 年 9 月」",
+    "檔名「115年中小學AI之學習應用手冊-國小生聰明用AIv1150908.pdf」",
+    "PDF CreationDate 2026-09-01 UTC"
+   ],
+   "version_relation": "三冊系列之一（國小／國中／高中，title_id 1922/1925/1926）。教師指引提及先前發布之「中小學生成式 AI 之學習應用手冊」；學校轉知頁另見2025年《我和AI一起學》《駕馭AI，洞察未來》（僅學校轉載線索，未核），可能為前版。建議三冊各建紀錄並以 work_group 關聯，或由管理者決定合併為一筆。",
+   "k12_scope_evidence": "「是專為國小三至六年級學生量身打造的手冊」（主編序）",
+   "audience": "k12",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH",
+    "S-LRN"
+   ],
+   "ai_lit_note": "學生自學手冊，教國小生認識AI運作、提問、個資保護與查證AI內容，對應S-BAS「理解AI運作原理與限制」、S-ETH與S-LRN。",
+   "category_suggestion": [
+    "K4"
+   ],
+   "bib_checked_eligible": false,
+   "decision": "candidate",
+   "reason": "官方檔案讀到；題名（封面為「國小生聰明用AI」，內頁題名如列）、教育部核對；首發日 unknown。",
+   "issued_by_evidence": "部長序「教育部部長 謹識 2026年9月」「教育部特別規劃了三本專為中小學學生設計的學習手冊」；版權頁總召集人「教育部資訊及科技教育司司長」"
+  },
+  {
+   "title_original": "中小學AI之學習應用手冊⸺國中生靈活用AI",
+   "official_url": "https://pads.moe.edu.tw/download_file.php?file=_upload_5b6a43258b4c5a769256db9525ccaf81.pdf&old=upload",
+   "title_id": 1925,
+   "file_sha256": "b86f5a731c3178461084e61b65381c9178b52764077e2bba68b80406c0e9edf9",
+   "pages": 107,
+   "file_size_bytes": 86918756,
+   "issued_by": "O-TW-MOE",
+   "applies_to_country": "TW",
+   "record_type_suggestion": "official_guidance",
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "text": null,
+    "url": null,
+    "read_utc": null,
+    "note": "官方 pads 下載頁與檔案均未明載發布日期；edu.tw 即時新聞（115-10-10 回溯至 113-12-04，約 2000 則）未見本系列指引／手冊的發布新聞。學校轉知頁稱依「教育部115年9月10日函」辦理，但學校轉載不作依據，函文本身未讀到。"
+   },
+   "other_dates": [
+    "封面「2026 年 9 月」",
+    "檔名「…國中生靈活用AIv1150908.pdf」",
+    "PDF CreationDate 2026-09-01 UTC"
+   ],
+   "version_relation": "三冊系列之一（同上）。",
+   "k12_scope_evidence": "「教育部特別規劃了三本專為中小學學生設計的學習手冊」；主編序「本手冊以教育部學生 AI 素養框架為重要參考」",
+   "audience": "k12",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-BAS",
+    "S-LRN",
+    "S-SYS"
+   ],
+   "ai_lit_note": "國中生自學手冊，明言涵蓋學生框架四面向（AI倫理、AI基礎與技術、AI賦能學習、AI系統設計），對應S-ETH、S-BAS、S-LRN、S-SYS。",
+   "category_suggestion": [
+    "K4"
+   ],
+   "bib_checked_eligible": false,
+   "decision": "candidate",
+   "reason": "同國小版。",
+   "issued_by_evidence": "部長序「教育部部長 謹識 2026年9月」；版權頁總召集人「教育部資訊及科技教育司司長」"
+  },
+  {
+   "title_original": "中小學AI之學習應用手冊⸺高中生智慧駕馭AI",
+   "official_url": "https://pads.moe.edu.tw/download_file.php?file=_upload_a0565d2acdb121966a8793f628cff453.pdf&old=upload",
+   "title_id": 1926,
+   "file_sha256": "a63486b5162b5e3e8a25771f971ca7d2a8618a9034e0746113a7795817a59f51",
+   "pages": 126,
+   "file_size_bytes": 188419599,
+   "issued_by": "O-TW-MOE",
+   "applies_to_country": "TW",
+   "record_type_suggestion": "official_guidance",
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "text": null,
+    "url": null,
+    "read_utc": null,
+    "note": "官方 pads 下載頁與檔案均未明載發布日期；edu.tw 即時新聞（115-10-10 回溯至 113-12-04，約 2000 則）未見本系列指引／手冊的發布新聞。學校轉知頁稱依「教育部115年9月10日函」辦理，但學校轉載不作依據，函文本身未讀到。"
+   },
+   "other_dates": [
+    "封面「2026 年 9 月」",
+    "檔名「…高中生智慧駕馭AIv1150908.pdf」",
+    "PDF CreationDate 2026-09-01 UTC"
+   ],
+   "version_relation": "三冊系列之一（同上）。",
+   "k12_scope_evidence": "「希望透過三個學習階段，引領我們從多角度認識 AI、學習人機協作」；情境「程式學習（不同群科都適用！）」",
+   "audience": "k12",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH",
+    "S-LRN"
+   ],
+   "ai_lit_note": "高中生自學手冊，涵蓋大型語言模型原理、提問與人機協作、深偽與幻覺查證、學術誠信與個資，對應S-BAS、S-ETH「正用AI符合學術誠信」、S-LRN。",
+   "category_suggestion": [
+    "K4"
+   ],
+   "bib_checked_eligible": false,
+   "decision": "candidate",
+   "reason": "同國小版。",
+   "issued_by_evidence": "部長序「教育部部長 謹識 2026年9月」；版權頁總召集人「教育部資訊及科技教育司司長」"
+  },
+  {
+   "title_original": "115年度中小學數位學習實施計畫說明",
+   "official_url": "https://pads.moe.edu.tw/download_file.php?file=_upload_fcf369cf847a3c1342a8c3d63474b025.pdf&old=upload",
+   "title_id": 1966,
+   "file_sha256": "6b60a278c2c9bff626f01001312fe8884c614f49326b247161eb1ed0f16ce490",
+   "pages": 37,
+   "file_size_bytes": 1283561,
+   "issued_by": "O-TW-MOE",
+   "applies_to_country": "TW",
+   "record_type_suggestion": "government_announcement",
+   "first_published_on": "2026-05-05",
+   "date_precision": "day",
+   "date_evidence": {
+    "text": "發文日期：中華民國115年5月5日／發文字號：臺教資(三)字第1152701317號（函首頁，以 pdftoppm 轉圖目視讀取）",
+    "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_fcf369cf847a3c1342a8c3d63474b025.pdf&old=upload",
+    "read_utc": "2026-10-10T00:41:46Z",
+    "note": "發文日期是函文發出日，非新聞稿發布日；是否當作首發日請整合者／管理者確認（先例：KB-2026-0173 以發函公告日為首發日）。"
+   },
+   "other_dates": [
+    "計畫執行期程「115年6月1日起至116年7月31日止」",
+    "PDF CreationDate 2026-05-05 UTC"
+   ],
+   "version_relation": "年度實施計畫；與AI人才方舟計畫（KB-2026-0095）相關，但為不同文件。",
+   "k12_scope_evidence": "「實施對象為貴府(局)主管高級中等學校、國民中學和國民小學」（函說明一）",
+   "audience": "k12",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD",
+    "T-TEA"
+   ],
+   "ai_lit_note": "年度數位學習補助計畫，其中設「生成式AI與教育應用工作坊」與「AI導入數位教學示範學校」，對應T-PD教師AI增能與T-TEA；但AI只是一般數位學習計畫的一部分（邊界案例）。",
+   "category_suggestion": [
+    "K1",
+    "K4"
+   ],
+   "bib_checked_eligible": true,
+   "decision": "pending",
+   "reason": "邊界案例：主體是數位學習補助與設備計畫，AI 為其中工作項目；另需確認「發文日期」能否作首發日。請管理者決定。",
+   "issued_by_evidence": "首頁為教育部函（抄本），發文字號臺教資(三)字第1152701317號"
+  },
+  {
+   "title_original": "AI人才方舟計畫（摺頁中文版；PDF 中繼資料題名「AI人才方舟計畫_摺頁中文版」）",
+   "official_url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9f963733f78b526f73efc8bc28c9d553.pdf&old=upload",
+   "title_id": 1877,
+   "file_sha256": "322ec48acbb2d7f7ce2ce7437c7c10a68561d7393bc211b65bae415fd1c67774",
+   "pages": 16,
+   "file_size_bytes": 9755324,
+   "issued_by": "O-TW-MOE",
+   "applies_to_country": "TW",
+   "record_type_suggestion": "government_announcement",
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "text": null,
+    "url": null,
+    "read_utc": null,
+    "note": "官方 pads 下載頁與檔案均未明載發布日期；edu.tw 即時新聞（115-10-10 回溯至 113-12-04，約 2000 則）未見本系列指引／手冊的發布新聞。學校轉知頁稱依「教育部115年9月10日函」辦理，但學校轉載不作依據，函文本身未讀到。"
+   },
+   "other_dates": [
+    "摺頁末頁「2026 年 7 月」",
+    "PDF CreationDate 2026-08-04 UTC",
+    "同項另有英／日／韓文版（6d635b…、157f6d…、90db95…，未下載）"
+   ],
+   "version_relation": "與 KB-2026-0095（行政院〈打造AI智慧教育新生態─AI人才方舟計畫（115–118年）〉）為同一計畫的教育部宣傳摺頁；不同機關、不同文件，不自動併檔。",
+   "k12_scope_evidence": "「以「提升中小學教師應用AI教學之專業知能」與「提升中小學學生AI素養與學習成效」為兩大推動目標」",
+   "audience": "k12",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD",
+    "S-LRN"
+   ],
+   "ai_lit_note": "計畫宣傳摺頁，以AI素養框架為依據說明教師增能與學生AI素養推動，對應T-PD與S-LRN。",
+   "category_suggestion": [
+    "K1"
+   ],
+   "bib_checked_eligible": false,
+   "decision": "pending",
+   "reason": "宣傳摺頁，內容與已在庫的 KB-2026-0095 計畫重疊；是否另建紀錄（或只作 0095 的補充來源）請管理者決定。"
+  },
+  {
+   "title_original": "中小學使用生成式人工智慧注意事項2.1（學生版）（依下載頁列名）",
+   "official_url": "https://pads.moe.edu.tw/download_file.php?file=_upload_a3b3bb86d9d61dfb4683ec0360041e4b.pdf&old=upload",
+   "title_id": 1918,
+   "file_sha256": "e8dc1b06444cf90ab9509c74bbdd0df2199e00b29dde82e345933cce02e9b313",
+   "pages": 7,
+   "file_size_bytes": 221036,
+   "issued_by": "O-TW-MOE",
+   "applies_to_country": "TW",
+   "record_type_suggestion": "official_guidance",
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "text": null,
+    "url": null,
+    "read_utc": null,
+    "note": "官方 pads 下載頁與檔案均未明載發布日期；edu.tw 即時新聞（115-10-10 回溯至 113-12-04，約 2000 則）未見本系列指引／手冊的發布新聞。學校轉知頁稱依「教育部115年9月10日函」辦理，但學校轉載不作依據，函文本身未讀到。"
+   },
+   "other_dates": [
+    "PDF CreationDate 2026-02-11 UTC（與 2.1 版核定日 2026-02-11 同日）"
+   ],
+   "version_relation": "與 KB-2026-0237（教師、行政人員及家長版）同一版本系列。",
+   "k12_scope_evidence": "題名「中小學」；學生手冊將其列為「適合中小學學生參考」的官方下載資源",
+   "audience": "k12",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH"
+   ],
+   "ai_lit_note": "學生版使用規範，對應S-ETH「落實AI使用規範與責任」。",
+   "category_suggestion": [
+    "K5"
+   ],
+   "bib_checked_eligible": false,
+   "decision": "duplicate",
+   "reason": "上一輪（2026-10-10 integration.md）已決定學生版併入 KB-2026-0237 系列、不另建紀錄；本輪僅記雜湊。"
+  },
+  {
+   "title_original": "高級中等學校學生學習評量及學習歷程檔案使用「生成式人工智慧」注意事項（線索題名）",
+   "official_url": null,
+   "title_id": null,
+   "file_sha256": null,
+   "pages": null,
+   "file_size_bytes": null,
+   "issued_by": "O-TW-MOE",
+   "applies_to_country": "TW",
+   "record_type_suggestion": "official_guidance",
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "text": null,
+    "url": null,
+    "read_utc": null,
+    "note": "官方 pads 下載頁與檔案均未明載發布日期；edu.tw 即時新聞（115-10-10 回溯至 113-12-04，約 2000 則）未見本系列指引／手冊的發布新聞。學校轉知頁稱依「教育部115年9月10日函」辦理，但學校轉載不作依據，函文本身未讀到。"
+   },
+   "other_dates": [
+    "線索：教育部113年12月13日臺教授國部字第1135406551號函",
+    "線索：114年6月10日臺教授國部字第1145402561號函修正（2.0 版）"
+   ],
+   "version_relation": null,
+   "k12_scope_evidence": "題名「高級中等學校」（僅見學校轉載）",
+   "audience": "k12",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "T-ETH",
+    "T-TEA"
+   ],
+   "ai_lit_note": "規範高中評量與學習歷程檔案使用生成式AI的揭露與學術誠信，對應S-ETH「正用AI符合學術誠信」（依線索）。",
+   "category_suggestion": [
+    "K3",
+    "K5"
+   ],
+   "bib_checked_eligible": false,
+   "decision": "pending",
+   "reason": "官方原件未定位：pads 下載頁全部分類未列；edu.tw 即時新聞回溯至 113-12-04 無相關新聞；k12ea.gov.tw 最新消息／即時新聞關鍵字查詢回「No Data」（部分請求連線重設）；教育部主管法規系統查詢需 JavaScript。只找到學校轉載 PDF，依規不作證據。"
+  },
+  {
+   "title_original": "高級中等以下學校人工智慧使用和學習指引（新線索，題名未核）",
+   "official_url": null,
+   "title_id": null,
+   "file_sha256": null,
+   "pages": null,
+   "file_size_bytes": null,
+   "issued_by": "O-TW-MOE",
+   "applies_to_country": "TW",
+   "record_type_suggestion": "official_guidance",
+   "first_published_on": null,
+   "date_precision": "unknown",
+   "date_evidence": {
+    "text": null,
+    "url": null,
+    "read_utc": null,
+    "note": "官方 pads 下載頁與檔案均未明載發布日期；edu.tw 即時新聞（115-10-10 回溯至 113-12-04，約 2000 則）未見本系列指引／手冊的發布新聞。學校轉知頁稱依「教育部115年9月10日函」辦理，但學校轉載不作依據，函文本身未讀到。"
+   },
+   "other_dates": [
+    "線索：115年6月5日臺教資(一)字第1152701618號函核定（僅見學校網站轉載與搜尋摘要）"
+   ],
+   "version_relation": "依搜尋摘要，似為統整教師、校長、家長三本指引與學生手冊的上位文件；與本輪 115 年指引系列的關係待核。",
+   "k12_scope_evidence": null,
+   "audience": "unknown",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "未讀原文，暫不判。",
+   "category_suggestion": [],
+   "bib_checked_eligible": false,
+   "decision": "pending",
+   "reason": "本輪新發現線索；官方頁未定位，下一輪在 edu.tw／pads 再找。"
+  }
+ ],
+ "screened_not_recorded": [
+  {
+   "title_id": 1783,
+   "title_original": "教師數位與AI教學教案示例(國小)（12件）",
+   "decision": "exclude",
+   "reason": "個別教師撰寫的教案示例，不是政策文件；未逐件下載。"
+  },
+  {
+   "title_id": 1785,
+   "title_original": "教師數位與AI教學教案示例(國中)（6件）",
+   "decision": "exclude",
+   "reason": "同上。"
+  },
+  {
+   "title_id": 1792,
+   "title_original": "教師數位與AI教學教案示例(普高)（3件，含「電流磁效應(融入AI科學建模與探究)」「AI領航：與「e度」共探網路交友的哲學思辨」）",
+   "decision": "exclude",
+   "reason": "同上；若管理者要收 K6 活動實踐案例，可另案處理。"
+  },
+  {
+   "title_id": 1794,
+   "title_original": "教師數位與AI教學教案示例(技高)（2件）",
+   "decision": "exclude",
+   "reason": "同上。"
+  },
+  {
+   "title_id": 1886,
+   "title_original": "臺灣中小學教師與學生AI素養框架_簡報",
+   "decision": "exclude",
+   "reason": "KB-2026-0173 的公版簡報，屬衍生宣講資料。"
+  },
+  {
+   "title_id": 1946,
+   "title_original": "中小學數位學習發展趨勢與推動家長陪伴_簡報",
+   "official_url": "https://pads.moe.edu.tw/download_file.php?file=_upload_95639786fa0c2f492ebbd321c21b384f.pdf&old=upload",
+   "file_sha256": "de92a8d93d057c89ecdd65e09f1e5dd49e6fba2b63b7c28acca18b66f10c32a6",
+   "pages": 41,
+   "decision": "exclude",
+   "reason": "115年數位學習政策宣講簡報（v.20260911，資訊及科技教育司），屬宣導簡報、不是政策文件（比照上一輪排除 NSW 家長宣導頁）。"
+  },
+  {
+   "title_id": 1939,
+   "title_original": "教育大數據介接文件（申請規範、申請書、合作協議書、xAPI 規格）",
+   "decision": "exclude",
+   "reason": "資料介接行政文件，不涉 AI 素養（C）。"
+  },
+  {
+   "title_id": 1917,
+   "title_original": "中小學使用生成式人工智慧注意事項2.1(教師、行政人員及家長版)",
+   "decision": "duplicate",
+   "reason": "已在庫 KB-2026-0237（同一下載網址）。"
+  },
+  {
+   "title_id": 1781,
+   "title_original": "中小學教師數位教學指引3.0",
+   "decision": "duplicate",
+   "reason": "已在庫 KB-2024-0008（同一下載網址）。"
+  }
+ ],
+ "requests": [
+  {
+   "url": "https://pads.moe.edu.tw/download2.php",
+   "utc": "2026-10-10T00:39:34Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1877",
+   "utc": "2026-10-10T00:39:53Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1886",
+   "utc": "2026-10-10T00:39:56Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1917",
+   "utc": "2026-10-10T00:39:57Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1918",
+   "utc": "2026-10-10T00:39:59Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1781",
+   "utc": "2026-10-10T00:40:01Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1783",
+   "utc": "2026-10-10T00:40:03Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1785",
+   "utc": "2026-10-10T00:40:06Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1792",
+   "utc": "2026-10-10T00:40:08Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1794",
+   "utc": "2026-10-10T00:40:10Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1796",
+   "utc": "2026-10-10T00:40:11Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1927",
+   "utc": "2026-10-10T00:40:13Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1922",
+   "utc": "2026-10-10T00:40:16Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1925",
+   "utc": "2026-10-10T00:40:17Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1926",
+   "utc": "2026-10-10T00:40:19Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1946",
+   "utc": "2026-10-10T00:40:20Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1966",
+   "utc": "2026-10-10T00:40:21Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1939",
+   "utc": "2026-10-10T00:40:23Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_0ced2a78cb794f6881c47b0e2148774b.pdf&old=upload",
+   "utc": "2026-10-10T00:40:49Z",
+   "http": 0,
+   "note": "connection reset by peer"
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9ef3962a1a7e371436145702ab24a6b7.pdf&old=upload",
+   "utc": "2026-10-10T00:41:01Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_6a9820befef32e7e22a210950196a54f.pdf&old=upload",
+   "utc": "2026-10-10T00:41:04Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9876e42b654dd2a55c3d2e8a8c055777.pdf&old=upload",
+   "utc": "2026-10-10T00:41:07Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_5b6a43258b4c5a769256db9525ccaf81.pdf&old=upload",
+   "utc": "2026-10-10T00:41:22Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_a0565d2acdb121966a8793f628cff453.pdf&old=upload",
+   "utc": "2026-10-10T00:41:30Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9f963733f78b526f73efc8bc28c9d553.pdf&old=upload",
+   "utc": "2026-10-10T00:41:43Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_fcf369cf847a3c1342a8c3d63474b025.pdf&old=upload",
+   "utc": "2026-10-10T00:41:46Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_95639786fa0c2f492ebbd321c21b384f.pdf&old=upload",
+   "utc": "2026-10-10T00:41:47Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_a3b3bb86d9d61dfb4683ec0360041e4b.pdf&old=upload",
+   "utc": "2026-10-10T00:41:50Z",
+   "http": 200
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_0ced2a78cb794f6881c47b0e2148774b.pdf&old=upload",
+   "utc": "2026-10-10T00:41:57Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edu.tw/News.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F",
+   "utc": "2026-10-10T00:43:49Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.k12ea.gov.tw/",
+   "utc": "2026-10-10T00:43:52Z",
+   "http": 0,
+   "note": "connection reset by peer"
+  },
+  {
+   "url": "https://www.edu.tw/Search.aspx?q=%E6%95%B8%E4%BD%8D%E8%88%87AI",
+   "utc": "2026-10-10T00:44:10Z",
+   "http": 404
+  },
+  {
+   "url": "https://www.edu.tw/News.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&page=1&PageSize=400",
+   "utc": "2026-10-10T00:44:16Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=65F776256801CDF3",
+   "utc": "2026-10-10T00:44:28Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=3D7FE34DED5F4884",
+   "utc": "2026-10-10T00:44:31Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=C0D574474736A627",
+   "utc": "2026-10-10T00:44:34Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=710B8671A80B6F9E",
+   "utc": "2026-10-10T00:44:37Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=A07B623C81F05828",
+   "utc": "2026-10-10T00:44:40Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=D7DCCB20AF940CF8",
+   "utc": "2026-10-10T00:44:43Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.k12ea.gov.tw/Tw/Common/SinglePage?filter=11C2C6A3-B6DB-4A3B-9A0B-E3A3A8E8F2F6",
+   "utc": "2026-10-10T00:45:04Z",
+   "http": 200
+  },
+  {
+   "url": "https://edu.law.moe.gov.tw/LawQuery.aspx?KW=%E7%94%9F%E6%88%90%E5%BC%8F",
+   "utc": "2026-10-10T00:45:06Z",
+   "http": 200
+  },
+  {
+   "url": "https://edu.law.moe.gov.tw/LawQuery.aspx?KW=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7",
+   "utc": "2026-10-10T00:45:10Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.k12ea.gov.tw/Tw/News/NewsList?filter=35950C34-6713-4B14-AB90-2461920C0386",
+   "utc": "2026-10-10T00:45:27Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.k12ea.gov.tw/Tw/News/NewsList?filter=35950C34-6713-4B14-AB90-2461920C0386&Keywords=%E7%94%9F%E6%88%90%E5%BC%8F",
+   "utc": "2026-10-10T00:45:39Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.k12ea.gov.tw/Tw/News/K12eaNewsLlist?filter=9F92BBB7-0251-4CB7-BF06-82385FD996A0&Keywords=%E7%94%9F%E6%88%90%E5%BC%8F%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7",
+   "utc": "2026-10-10T00:45:57Z",
+   "http": 0,
+   "note": "connection reset by peer"
+  },
+  {
+   "url": "https://www.k12ea.gov.tw/Tw/News/K12eaNewsLlist?filter=9F92BBB7-0251-4CB7-BF06-82385FD996A0&Keywords=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7",
+   "utc": "2026-10-10T00:46:04Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edu.tw/News.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&page=2&PageSize=400",
+   "utc": "2026-10-10T00:46:14Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edu.tw/News.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&page=3&PageSize=400",
+   "utc": "2026-10-10T00:46:19Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edu.tw/News.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&page=4&PageSize=400",
+   "utc": "2026-10-10T00:46:23Z",
+   "http": 200
+  },
+  {
+   "url": "https://www.edu.tw/News.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&page=5&PageSize=400",
+   "utc": "2026-10-10T00:46:28Z",
+   "http": 200
+  }
+ ]
+}
