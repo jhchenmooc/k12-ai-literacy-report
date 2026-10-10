@@ -14,7 +14,9 @@
 |---|---|
 | [PROTOCOL.md](PROTOCOL.md) | 四年共用的事前凍結內容，目前是草稿 |
 | [codebook-v1.md](codebook-v1.md) | 編碼手冊 v1 |
-| [prompts/](prompts/) | 範圍判斷、第一次編碼、第二次編碼三組提示，附 `SHA256SUMS` |
+| [codebook-v2.md](codebook-v2.md) | 編碼手冊 v2（DEV-002，管理者 2026-10-10 核准） |
+| [DEVIATIONS.csv](DEVIATIONS.csv) | PROTOCOL 偏離紀錄 |
+| [prompts/](prompts/) | 範圍判斷、第一次編碼、第二次編碼三組提示（v2），附 `SHA256SUMS`；v1 在 `prompts/v1/` |
 | [journals.csv](journals.csv) | J01–J47 的 source ID、面板判定、面板分層、摘要覆蓋率 |
 | [calib.csv](calib.csv) | 校準集，真實 16 筆、合成 15 筆 |
 | [refset.csv](refset.csv) | 召回參考集，目前只有表頭 |

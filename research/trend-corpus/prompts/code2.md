@@ -1,4 +1,4 @@
-# Prompt: second coding pass (第二次編碼) — v1 (after 2022 pilot)
+# Prompt: second coding pass (第二次編碼) — v2 (manager-approved 2026-10-10)
 
 This is an independent re-coding pass. You have not seen any earlier codes and must not look for
 them. You get `work_id`, `title`, `abstract` only; nothing about year, venue, DOI or authors. Decide
@@ -17,10 +17,15 @@ even when you think you know the paper. Never consult `research/knowledge-base/`
   GenAI teacher training: A. When a study has both A and B content (other than acceptance studies), take A.
   Outside education altogether (public opinion, workplace, society-level ethics essays, home use with no
   learning) → C, noting "非教育情境"; EdTech firms, schools or authorities discussing AI ethics count as
-  education. ITS: did learners/teachers actually use it and were their data collected here?
+  education. (v2) HOW students use AI (strategies, prompting, reliance, self-regulation while using) → A; the
+  EFFECT of a tool → B. Teachers preparing teaching with GenAI: their understanding/judgement of AI → A; the
+  product or efficiency → B. LLM output judged only by researchers/experts, nobody learning → C; a learning
+  activity such as student teachers auditing LLM bias → A. ITS: did learners/teachers actually use it and were their data collected here?
 - `b_subtype` for B only — check in this order and take the first: genai, its_adaptive, robot_agent
   (robots, agents, chatbots explicitly rule-based), other (incl. chatbots of unstated type).
 - `audience_role` — unknown | non_k12 | other_stakeholder | preservice_teacher | inservice_teacher | student.
+  (v2) If nothing signals K-12 (school, grade, K-12, ages, school type) and only "students/learners" appears → unknown;
+  then leave `ai_lit_dims` empty.
 - `stage` — unknown | k12_unspecified | k12_multi | secondary_unspecified | vocational_secondary |
   upper_secondary | lower_secondary | primary | preschool. Teachers: the level they teach. A school-type
   name outranks a grade number. A majority level wins; several levels without a majority → k12_multi.

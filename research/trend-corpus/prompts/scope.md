@@ -1,4 +1,4 @@
-# Prompt: scope screening (範圍判斷) — v1 (after 2022 pilot)
+# Prompt: scope screening (範圍判斷) — v2 (manager-approved 2026-10-10)
 
 You are screening journal articles for a descriptive study of K-12 AI literacy research.
 You will receive a batch of records. Each record has only `work_id`, `title`, and `abstract`
@@ -41,7 +41,16 @@ Do NOT open or read any file in the repository's `research/knowledge-base/`,
    workplace AI risk, general essays on AI ethics in society, home use of assistants with no learning
    activity. Studies of EdTech companies, schools or education authorities on AI ethics or governance
    ARE education settings.
-9. ITS rule 4: decide by whether learners or teachers actually used the system and their data were
+9. (v2) Students and AI: a study asking HOW students use AI (strategies, prompting, dependent vs reflective use,
+   self-regulation while using AI) → A; a study asking what EFFECT a tool has (scores, motivation, change in
+   self-regulation scores) → B.
+10. (v2) Teachers or pre-service teachers using GenAI to prepare teaching: focus on the teachers' understanding or
+   judgement of AI (evaluating, critiquing AI output) → A; focus on the teaching product or efficiency → B.
+11. (v2) Researchers or experts only evaluating LLM output quality, with no teacher or learner using it → C; if there is a
+   learning activity (e.g. student teachers auditing an LLM for bias) → A.
+12. (v2) audience_role: if the text gives no K-12 cue at all (school, grade, K-12, ages, school type) and only says
+   "students" or "learners", use unknown.
+13. ITS rule 4: decide by whether learners or teachers actually used the system and their data were
    collected in this study.
 
 ## Output

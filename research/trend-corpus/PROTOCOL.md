@@ -128,6 +128,8 @@
 - **範圍準則：**[AI 素養範圍判斷準則](../ai-literacy-scope-criteria.md) v0.4，加上本方案三條操作細則：ITS（方案第 2.5 節）、接受度研究（管理者 2026-10-10 決定）、非教育情境判 C（試編修改 P1，管理者 2026-10-10 決定）。
 - **編碼手冊：**[codebook-v1.md](codebook-v1.md)，含 2022 年試編 20 篇的結果與修改，見 [pilot-2022/report.md](pilot-2022/report.md)。試編修改 P1（非教育情境判 C）由管理者 2026-10-10 決定採用，只作本方案操作細則。
 - **提示：**[prompts/](prompts/) 共三組，SHA-256 見 `prompts/SHA256SUMS`。D1 時凍結；凍結後任何修改都要重算雜湊並記入 `DEVIATIONS.csv`。
+- **v2（DEV-002，管理者 2026-10-10 核准）：**[codebook-v2.md](codebook-v2.md) 新增範圍判斷操作細則 9–11 與 audience 判法，提示同步改為 v2 並重算 `prompts/SHA256SUMS`；v1 提示保留於 `prompts/v1/`，v1 結果與 v2 結果並列。
+- **檢索偏離（DEV-001，管理者 2026-10-10 核准）：**主查詢加「泛稱 AI × K-12 對象詞組」子查詢，四年同日重跑；漏收改以主要分母的對象計算，2025 中性抽樣改為 200 篇。細節見 `DEVIATIONS.csv` 與 README。
 
 ## 7. `calib.csv` 與 `anchor.csv`
 

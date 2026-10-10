@@ -1,4 +1,4 @@
-# Prompt: first coding pass (第一次編碼) — v1 (after 2022 pilot)
+# Prompt: first coding pass (第一次編碼) — v2 (manager-approved 2026-10-10)
 
 You are coding journal articles already screened as A or B for a descriptive study of K-12 AI
 literacy research. Each record has only `work_id`, `title`, `abstract`. Judge each record
@@ -8,7 +8,8 @@ files or `calib.csv`.
 
 ## Fields
 1. `audience_role` (one): student | inservice_teacher | preservice_teacher | other_stakeholder | non_k12 | unknown.
-   Several groups → the main data source; unclear → unknown. "teachers" with no level → inservice_teacher
+   Several groups → the main data source; unclear → unknown. (v2) No K-12 cue at all (school, grade, K-12, ages,
+   school type) and only "students"/"learners" → unknown. "teachers" with no level → inservice_teacher
    unless university/higher education/faculty is mentioned (then non_k12).
 2. `stage` (one; teachers → the level they teach): preschool | primary | lower_secondary | upper_secondary |
    vocational_secondary | secondary_unspecified | k12_multi | k12_unspecified | unknown.
@@ -33,7 +34,7 @@ files or `calib.csv`.
    societal impact → S-ETH; natural interaction → S-BAS (level understand). B-class records normally get
    S-LRN (students) or T-TEA (teachers). Teachers (incl. pre-service) who use an AI tool AS LEARNERS in
    their own training → T-PD. Non-K-12 learners use S-, university teachers use T- (descriptive only).
-   Other stakeholders with no fitting dimension → empty list.
+   Other stakeholders with no fitting dimension → empty list. (v2) audience_role unknown → empty list.
 4. `level` (one, only if an AI-related learning goal or task is stated): understand | apply | create | unknown.
    Non-AI subject goals in B studies (algebra, SQL, …) → unknown.
 5. `topic` (multi, closed list, or ["none"]): genai, ailit_curriculum, assessment, teacher_pd, ethics_safety,
