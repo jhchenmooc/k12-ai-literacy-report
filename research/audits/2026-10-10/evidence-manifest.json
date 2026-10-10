@@ -507,6 +507,18 @@
       "phase": "favicon-followup",
       "bytes": 2580,
       "sha256": "09e982e5a4dc43c6598be31ca8598cf34ba61e541cf32afa0104356396fecd6a"
+    },
+    {
+      "path": "integration/REPORT.md",
+      "phase": "main-integration",
+      "bytes": 2009,
+      "sha256": "7310080f17e30ec669741c974906ba89c9e1aa62b113a10676b6600cdf4b4b5d"
+    },
+    {
+      "path": "integration/data-baseline.json",
+      "phase": "main-integration",
+      "bytes": 560,
+      "sha256": "6949d98f63e0a44b3860f332b2689db2533caa5f1cf620a3e1c3965c196f9ae4"
     }
   ],
   "followup": {

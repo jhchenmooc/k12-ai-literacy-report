@@ -1,5 +1,7 @@
 # 可直接交給 Claude 的 prompt
 
+目前已獲使用者授權建立 PR 並於遠端 CI 通過後合併。分支已整合 main 071d288 的 B1 更新，請先讀 `integration/REPORT.md` 與 `integration/data-baseline.json`：25 份資料維持原始基準，2 份 CSV 必須精確符合固定 upstream；verifier 為 292 項測試、87 份佐證、436 個本機參照。其他輪的「main 待整合」為歷史紀錄。Claude 此 prompt 仍僅授權獨立審查，不替使用者建立 PR／合併／部署。
+
 最新補修為你對 56621b8eb9ad4a755fe080c8dd07270030e38f04 提出的可選 favicon P3。先比較該 SHA 到最新 HEAD，驗證第三方／protocol-relative／其他本地路徑／query 圖示被拒，固定本站 SVG 與日報 renderer 正常通過；讀取 `favicon-followup/REPORT.md` 與貢獻契約，重跑 verifier（292 項測試、85 份佐證）。原 metadata 與正文防護不能回歸。main B1 入庫尚未整合、遠端 CI 尚未驗證；僅審查，勿建 PR、合併或部署。下方說明保留各輪歷史。
 
 本次最新任務：你對 6360e2148b68208412f09c88c2671a396291db8b 未發現阻擋問題，指出最小頁面任意 description／Open Graph／Twitter metadata 的 P3 缺口。請先比較該 SHA 到分支最新 HEAD，獨立檢查完整 meta 白名單、混合屬性、合法 viewport／中性 description、原日報 renderer 與 UTF-8 Content-Type 相容性。讀取 `metadata-followup/REPORT.md` 及貢獻契約，重新執行 verifier（預期 290 項測試、80 份佐證）；不要接受舊版本驗證作為最新提交證據。既有 main B1 入庫更新尚未整合，請將該整合需求與本次安全修正分開評估。僅審查，不建 PR、不合併、不部署。下方各輪說明為歷史脈絡。

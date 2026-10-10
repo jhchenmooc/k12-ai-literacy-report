@@ -1,0 +1,14 @@
+{
+  "upstreamCommit": "071d2884289595c6aa86f9a94da911997eb2642d",
+  "reason": "Accepted B1 data already merged on main (#155); retain original historical evidence and separately pin these two intentional upstream updates.",
+  "acceptedFiles": [
+    {
+      "file": "research/knowledge-base/data/records.csv",
+      "sha256": "b92f881b3d72a2a7cc6f3b5e7a4023d9b39f33fb2381ac183d1dbb0edf1ab39c"
+    },
+    {
+      "file": "research/knowledge-base/data/relations.csv",
+      "sha256": "3ad1311cd9684b9479dc53639201814497da8268543661115e4b86af89a43179"
+    }
+  ]
+}

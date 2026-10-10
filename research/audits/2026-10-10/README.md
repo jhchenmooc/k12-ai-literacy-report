@@ -1,5 +1,7 @@
 # Claude 獨立審查交接包
 
+**PR 整合狀態**：已整合 main 的 B1 入庫提交 071d288，解決生成頁面衝突並重新驗證。原 27 份保全資料中，25 份保持原始基準，2 份 CSV 精確符合固定 upstream 的合法更新；原歷史紀錄未改寫。見 [整合報告](integration/REPORT.md) 與 [固定資料基準](integration/data-baseline.json)。Node 22／24 全套仍為 292/292，公開產物 22 份、本機參照 436 個。已獲授權建立 PR 並於遠端 CI 通過後合併；下方各輪「main 待整合／未建 PR」描述的是歷史階段。
+
 **最新 favicon 補修**：Claude 對 56621b8 確認 metadata 已修正且無回歸，另提出第三方 favicon 的可選 P3。本輪已限定登錄刊物使用本站固定圖示，新增兩個測試；Windows Node 22／24 各 292/292 通過。見 [favicon 補修報告](favicon-followup/REPORT.md)，以下各輪紀錄仍保留為歷史。main B1 更新仍待整合，遠端 CI 尚待 PR。
 
 **最新 metadata 補修**：Claude 對 6360e21 未發現阻擋問題，另指出搜尋／分享 metadata 的 P3 缺口。本輪收緊最小頁面完整 meta 白名單，新增兩個測試；Windows Node 22／24 各 290/290 通過。見 [metadata 補修報告](metadata-followup/REPORT.md)，以實際最新 HEAD 為審查目標。原始基準未變，main 的 B1 入庫更新尚未整合，遠端 CI 尚待 PR。
@@ -18,7 +20,7 @@
 | 程式修正提交 | `a1b686dd64a10cd759ea195c17c4c857a46c313e` |
 | 審查範圍 | 基準到上述程式提交的 40 個檔案差異；本包與入口連結是其後的文件提交 |
 | 最新本機測試 | Windows：Node 22.23.3 與 24.16.0 各 292/292，0 skipped；封存時為 favicon 補修 working tree |
-| 資料保全 | 27 個來源、CSV、工作表、publication JSON 及既有刊物檔案 SHA-256 不變 |
+| 資料保全 | 25 份與原始基準不變；2 份 CSV 精確符合 main B1 固定 upstream；原始 27 份歷史紀錄保留 |
 
 ## 閱讀順序
 
@@ -33,7 +35,7 @@
 - `fixes/` 是本機修正完成時的歷史紀錄，最新全測為 `self-review-node22-tests.log` 與 `self-review-node24-tests.log`；較早的 `all-node*-tests.log` 為 250 項版本。`self-review-*-red-tests.log` 保存修正前反例，不是最終失敗。
 - `fixes/REPORT.md`、`change-summary.json` 內「未 commit／未 push」、舊分支與 Windows 絕對路徑，描述的是封存時的狀態。本分支已將程式提交並整理交接；以本入口、Git commit 和自行取得的 HEAD 為審查依據。
 - `baseline` 的 GitHub CI 是基準 SHA 的紀錄，不能當作修正提交通過 CI 的證據。本審查分支未建立 PR；既有 workflow 的 push 觸發只包含 main，推送此分支不會自動執行該 CI 或部署。
-- 本包的歷史檔案保持原始位元組；[evidence-manifest.json](evidence-manifest.json) 記錄原 63 份、第一輪外部審查補修 7 份、P3 收尾 5 份、metadata 補修 5 份及 favicon 補修 5 份，共 85 份檔案的大小及 SHA-256。排除可重建的 Node 安裝包、node_modules、npm cache、完整 repository 壓縮副本及重複產物。未帶入憑證。
+- 本包的歷史檔案保持原始位元組；[evidence-manifest.json](evidence-manifest.json) 記錄原 63 份、第一輪外部審查補修 7 份、P3 收尾 5 份、metadata 補修 5 份、favicon 補修 5 份及 main 整合 2 份，共 87 份檔案的大小及 SHA-256。排除可重建的 Node 安裝包、node_modules、npm cache、完整 repository 壓縮副本及重複產物。未帶入憑證。
 
 ## 重現檢查
 

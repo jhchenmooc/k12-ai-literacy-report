@@ -14,9 +14,22 @@ try{
  if(Number(process.versions.node.split(".")[0])<22)throw Error("Use Node.js 22 or newer; the primary validation target is Node 22");
  for(const item of manifest.files)if(sha(fs.readFileSync(regular(__dirname,item.path)))!==item.sha256)throw Error("Archived evidence bytes changed: "+item.path);
  const preserved=JSON.parse(fs.readFileSync(path.join(__dirname,"fixes/source-preservation.json"),"utf8"));
+ const integrationPath=path.join(__dirname,"integration/data-baseline.json");
+ const integrated=new Map();let integrationUpstream=null;
+ if(fs.existsSync(integrationPath)){
+  const integration=JSON.parse(fs.readFileSync(integrationPath,"utf8"));
+  if(!/^[a-f0-9]{40}$/.test(integration.upstreamCommit)||!Array.isArray(integration.acceptedFiles))throw Error("Invalid upstream integration baseline");
+  integrationUpstream=integration.upstreamCommit;
+  for(const item of integration.acceptedFiles){
+   if(!preserved.some(p=>p.file===item.file)||integrated.has(item.file))throw Error("Unknown or duplicate integration file: "+item.file);
+   const expected=sha(git("show",integrationUpstream+":"+item.file));
+   if(expected!==item.sha256)throw Error("Integration hash does not match pinned upstream: "+item.file);
+   integrated.set(item.file,expected);
+  }
+ }
  for(const item of preserved){
   const baseline=sha(git("show",manifest.baseline+":"+item.file)),current=sha(fs.readFileSync(regular(root,item.file)));
-  if(baseline!==item.baseline||current!==baseline)throw Error("Original data changed: "+item.file);
+  if(baseline!==item.baseline||current!==(integrated.get(item.file)||baseline))throw Error("Original or accepted upstream data changed: "+item.file);
  }
  const commands=[
   ["--test",...fs.readdirSync(path.join(root,"research")).filter(n=>n.endsWith(".test.js")).sort().map(n=>"research/"+n)],
@@ -57,6 +70,6 @@ try{
   }
  }
  if(errors.length)throw Error(errors.join("\n"));
- const report={reviewedHead:git("rev-parse","HEAD").toString().trim(),baseline:manifest.baseline,fixCommit:manifest.fixCommit,node:process.version,platform:process.platform,evidenceFiles:manifest.files.length,preservedSourceFiles:preserved.length,checks,artifactFiles:artifact.files.length,localReferences:references,output};
+ const report={reviewedHead:git("rev-parse","HEAD").toString().trim(),baseline:manifest.baseline,fixCommit:manifest.fixCommit,node:process.version,platform:process.platform,evidenceFiles:manifest.files.length,preservedSourceFiles:preserved.length,originalUnchangedSourceFiles:preserved.length-integrated.size,acceptedUpstreamSourceFiles:integrated.size,integrationUpstream,checks,artifactFiles:artifact.files.length,localReferences:references,output};
  fs.writeFileSync(path.join(output,"verification.json"),JSON.stringify(report,null,2)+"\n");console.log(JSON.stringify(report,null,2));
 }catch(e){console.error(e.message);if(output)console.error("Review output: "+output);process.exitCode=1}
