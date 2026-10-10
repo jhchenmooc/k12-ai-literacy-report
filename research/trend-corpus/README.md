@@ -44,7 +44,7 @@
 | `article_review_YYYY` | 該年 `type:article\|review`、`is_paratext:false` 篇數 |
 | `oa_abstract_coverage_YYYY` | 該年 article＋review 中，OpenAlex `has_abstract:true` 的比例（OpenAlex 的定義，不是本方案的「20 詞以上」） |
 | `in_panel` | 是否在固定面板（四年每年至少 1 篇 article） |
-| `panel_stratum` | 面板分層 |
+| `panel_stratum` | 面板分層：教育科技 24 刊、一般教育與心理 23 刊 |
 | `stratum_reason` | 分層理由（規則見 open-questions Q1） |
 | `watchlist_basis` | 加入監測清單的依據 |
 | `j35_j47_sensitivity` | 排除 J35–J47 的敏感度表中標 `exclude` |

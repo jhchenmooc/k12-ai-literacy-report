@@ -16,7 +16,7 @@
   - 以刊名查 `/sources?search=`，取類型為 journal、且刊名、ISSN-L、出版者一致者。J13 取第 2 筆，第 1 筆是 SIGCSE 會議。J01 另查一次。
   - 再以全部 ISSN 反查 2022–2025 的 `primary_location.source.id`，確認沒有其他 source ID。
   - J01、J03、J41 四年都是同一個 ID，見 open-questions Q10。
-- **面板分層：**「教育科技與 AI 教育」29 刊、「一般教育與心理」18 刊。判定規則與有疑義的刊見 open-questions Q1、Q2，待編輯 session 核對。
+- **面板分層：**「教育科技與 AI 教育」24 刊、「一般教育與心理」23 刊。機械規則見 open-questions Q1。J10、J11、J24、J29、J32 依機械規則原判教育科技，經編輯 session 2026-10-10 裁定逐刊改判為一般教育與心理，理由寫在 `journals.csv`。
 - **敏感度表：**排除 J35–J47，`journals.csv` 的 `j35_j47_sensitivity` 欄標 `exclude`。
 - **不進主要分母：**會議論文與專書章節。
 
@@ -72,6 +72,10 @@
 - **filter：**`type:article|review`、`is_paratext:false`。
 - **撤稿：**記 `is_retracted`，撤稿不進主要分母。
 - **短評與社論：**OpenAlex 摘要不足 20 詞者，依 Scopus 匯出的 `Document Type` 判斷；Note、Editorial、Letter、Erratum 不進主要分母，也不算入缺摘要比例（方案第 2.5 節）。
+
+### 2.4.1 B 子型的已知限制
+
+看不出是否為 LLM 的 chatbot，B 子型記 `other`，`genai_flag` 記 `unknown`（編碼手冊試編修改 P8；編輯 session 2026-10-10 裁定維持）。2022–2023 年的 chatbot 多為規則式，這樣可能低估 `robot_agent`，列入報告限制。
 
 ### 2.5 請求禮節
 
