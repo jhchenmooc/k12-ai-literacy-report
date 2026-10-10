@@ -14,7 +14,9 @@
 |---|---|
 | [PROTOCOL.md](PROTOCOL.md) | 四年共用的事前凍結內容，目前是草稿 |
 | [codebook-v1.md](codebook-v1.md) | 編碼手冊 v1 |
-| [prompts/](prompts/) | 範圍判斷、第一次編碼、第二次編碼三組提示，附 `SHA256SUMS` |
+| [codebook-v2.md](codebook-v2.md) | 編碼手冊 v2（DEV-002，管理者 2026-10-10 核准） |
+| [DEVIATIONS.csv](DEVIATIONS.csv) | PROTOCOL 偏離紀錄 |
+| [prompts/](prompts/) | 範圍判斷、第一次編碼、第二次編碼三組提示（v2），附 `SHA256SUMS`；v1 在 `prompts/v1/` |
 | [journals.csv](journals.csv) | J01–J47 的 source ID、面板判定、面板分層、摘要覆蓋率 |
 | [calib.csv](calib.csv) | 校準集，真實 16 筆、合成 15 筆 |
 | [refset.csv](refset.csv) | 召回參考集，目前只有表頭 |
@@ -23,6 +25,7 @@
 | [open-questions.md](open-questions.md) | 方案沒寫清楚、待決定的地方 |
 | `2022/`～`2025/` | 第 2 步快照：`PROTOCOL-YYYY.md`、`queries.json`（每組子查詢的完整 filter、筆數、頁數，以及面板規模、缺摘要、面板外監測）、`ids-*.json`（work ID 快照）、`SHA256SUMS` |
 | `step2/` | 第 2 步的 OpenAlex 請求紀錄與四年摘要 |
+| `rerun-dev001/` | DEV-001 四年同日重跑快照（加泛稱 AI × 對象詞組 A1–A6）；原 `2022/`～`2025/` 快照保留不動 |
 | `step1/` | 第 1 步的 OpenAlex 請求紀錄、試查筆數、source 查詢結果，不含論文 ID 快照 |
 | `scripts/oa.py` | OpenAlex 請求小工具：單執行緒、間隔 0.2 秒以上、記錄每次請求 |
 
@@ -100,6 +103,23 @@
 - **題名子查詢新增 0：**`title.search` 搜的欄位是 `title_and_abstract.search` 的子集，沒有摘要的論文只要題名有命中，主查詢就已經抓到。題名子查詢仍照 PROTOCOL 執行並保留 ID 快照，用來計算「靠題名命中、沒有摘要」的筆數。
 - **分頁筆數差異：**少數子查詢實際取得的 ID 數與 `meta.count` 差 1～3 筆，是 OpenAlex 在分頁期間更新索引所致，以實際取得的 ID 為準，逐項列在各年 `PROTOCOL-YYYY.md`。
 - **Scopus 補摘要清單（2025）：**另以 16 次請求檢查 2025 語料的 OpenAlex 摘要長度。1,545 篇中，處理後不足 20 詞的有 320 篇，全部有 DOI，依 PROTOCOL 第 15 節分成 4 批 `DOI(…) OR DOI(…)` 檢索式。檢索式只放 scratchpad，交編輯 session 轉管理者，不入 repo；請求紀錄在 `step2/openalex-requests.jsonl`，用途標「abstract length check」。
+
+## DEV-001 重跑快照（2026-10-10，同一天執行）
+
+依管理者 2026-10-10 決定（漏收做法乙，`DEVIATIONS.csv` DEV-001），主查詢加 6 組「泛稱 AI × K-12 對象詞」子查詢 A1–A6：`("artificial intelligence" OR AI) AND (<方案第 2.3 節對象詞，每 6 詞一組>)`，其他子查詢、中性查詢、題名子查詢與面板監測都照 PROTOCOL 不變，四年同日重跑。腳本是 `scripts/dev001_snapshot.py`（沿用 `step2_snapshot.py`）與 `scripts/probe_aud.py`。
+
+| 年 | 原主查詢聯集 | 重跑主查詢聯集 | 新增（只靠 A1–A6） | 原有而消失 | 中性減主查詢 |
+|---|---|---|---|---|---|
+| 2022 | 145 | 216 | 71 | 0 | 558 |
+| 2023 | 279 | 383 | 104 | 0 | 640 |
+| 2024 | 813 | 981 | 168 | 0 | 805 |
+| 2025 | 1,545 | 1,861 | 316 | 0 | 1,156 |
+
+- **請求：**重跑共 270 次，全部 HTTP 200，UTC 19:54:47～19:57:13；紀錄在 `rerun-dev001/openalex-requests.jsonl`。重跑前另以 6 次請求試查 2025 年 A1–A6 筆數（`rerun-dev001/probe-requests.jsonl`，只取筆數）。
+- **門檻：**四年都未達 2,500 筆。A5（含 teacher、educators、youth）命中最多，2025 年 781 筆。
+- **分頁筆數差異：**2024 M7、2025 M7 與 A5 實際取得的 ID 比 `meta.count` 多 1 筆，以實際取得的 ID 為準。
+- **題名子查詢新增：**四年仍為 0。
+- **Scopus 補充批次（2025）：**新增 316 篇中，OpenAlex 摘要處理後不足 20 詞的有 55 篇，全部有 DOI，列為補充批次 5；檢索式只放 scratchpad，交編輯 session 轉管理者，不入 repo。
 
 ## 重算
 
