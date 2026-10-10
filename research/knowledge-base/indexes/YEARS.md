@@ -445,6 +445,10 @@
 | KB-2026-0252 — [Understanding teens’ self-beliefs when learning to construct and deconstruct AI/ML systems: Developing a survey instrument](https://dl.acm.org/doi/10.1145/3773077.3812156) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0253 — [Building to Understand: Examining Teens’ Technical and Socio-Ethical Pieces of Understanding in the Construction of Small Generative Language Models](https://dl.acm.org/doi/10.1145/3773077.3806107) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0254 — [Engaging High School Students in Robotics and Artificial Intelligence Through Engineering Design Robotics Education](https://www.mdpi.com/2227-7102/16/6/987) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0263 — ["Are you biased right now, AI?": Investigating Supporting Youths' Systematic Evaluation of GenAI](https://dl.acm.org/doi/10.1145/3773077.3806125) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0264 — [“Should AI Be Used At All?”: Examining How Youth Decenter AI Solutionism](https://dl.acm.org/doi/10.1145/3773077.3806146) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0265 — [Protection or Empowerment? Perspectives on Youth-Inclusive Responsible AI](https://dl.acm.org/doi/10.1145/3773077.3806124) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0266 — [A mixed methods study of the three low trap in high school information technology teaching in underdeveloped China in the AI era](https://link.springer.com/article/10.1007/s44217-026-01688-3) | journal_article | 未知 | discovered_unverified |
 
 ## 2027｜issue_year
 
