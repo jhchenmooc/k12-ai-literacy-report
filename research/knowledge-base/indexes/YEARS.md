@@ -21,6 +21,7 @@
 | KB-2022-0001 — [교육분야 인공지능 윤리원칙](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=92297&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | framework | 2022-08-11 | bibliographic_checked |
 | KB-2022-0002 — [K-12 AI curricula: a mapping of government-endorsed AI curricula](https://iite.unesco.org/publications/unesco-releases-report-on-the-mapping-of-k-12-artificial-intelligence-curricula/) | policy_review | 2022 | bibliographic_checked |
 | KB-2022-0003 — [Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators](https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en) | official_guidance | 2022-10-25 | bibliographic_checked |
+| KB-2022-0004 — [义务教育信息科技课程标准（2022年版）](https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html) | framework | 2022-04-21 | bibliographic_checked |
 
 ## 2023｜first_publication
 
@@ -45,9 +46,9 @@
 | KB-2024-0002 — [AI competency framework for students](https://www.unesco.org/en/articles/ai-competency-framework-students) | framework | 2024-08-08 | bibliographic_checked |
 | KB-2024-0003 — [Guideline for the Use of Generative AI in Primary and Secondary Education (Ver.2.0)](https://www.mext.go.jp/zyoukatsu/ai/index.html) | official_guidance | 2024-12-26 | bibliographic_checked |
 | KB-2024-0004 — [AI Digital Textbooks for 2025 to Realize Personalized Education for All](https://english.moe.go.kr/boardCnts/viewRenewal.do?boardID=265&boardSeq=102075&lev=0&m=0201&opType=N&page=1&s=english) | government_announcement | 2024-11-29 | bibliographic_checked |
-| KB-2024-0005 — [教育部部署加强中小学人工智能教育](https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html) | government_announcement | 2024-12-02 | discovered_unverified |
+| KB-2024-0005 — [教育部部署加强中小学人工智能教育](https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html) | government_announcement | 2024-12-02 | bibliographic_checked |
 | KB-2024-0007 — [Generative artificial intelligence (AI) and data protection in schools](https://www.gov.uk/guidance/data-protection-in-schools/generative-artificial-intelligence-ai-and-data-protection-in-schools) | official_guidance | 2024-02-07 | bibliographic_checked |
-| KB-2026-0099 — [NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools](https://go.ncdpi.gov/AI_Guidelines) | official_guidance | 2024-01-16 | discovered_unverified |
+| KB-2026-0099 — [NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools](https://go.ncdpi.gov/AI_Guidelines) | official_guidance | 2024-01-16 | bibliographic_checked |
 
 ## 2025｜first_publication
 
@@ -73,13 +74,13 @@
 | KB-2025-0032 — [What Can Youth Learn About Artificial Intelligence and Machine Learning in One Hour? Examining How Hour of Code Activities Address the Five Big Ideas of AI](https://doi.org/10.1609/aaai.v39i28.35193) | conference_paper | 2025-04-11 | bibliographic_checked |
 | KB-2025-0033 — [Free word association analysis of students' perception of artificial intelligence](https://doi.org/10.3389/feduc.2025.1543746) | journal_article | 2025-05-21 | bibliographic_checked |
 | KB-2025-0043 — [모두를 위한 인공지능(AI) 인재양성 방안（AI for All）](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=104462&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | official_guidance | 2025-11-10 | bibliographic_checked |
-| KB-2025-0044 — [수행평가 시, 인공지능(AI) 활용 관리 방안](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=104984&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | official_guidance | 2025-12 | discovered_unverified |
+| KB-2025-0044 — [교육부와 교육청이 함께 ‘수행평가 시, 인공지능(AI) 활용 관리 방안’을 마련하였습니다](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=104984&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | official_guidance | 2025-12-23 | discovered_unverified |
 | KB-2025-0045 — [Proposed Priority and Definitions—Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education](https://www.federalregister.gov/documents/2025/07/21/2025-13650/proposed-priority-and-definitions-secretarys-supplemental-priority-and-definitions-on-advancing) | draft | 2025-07-21 | bibliographic_checked |
 | KB-2025-0047 — [Leveraging AI in the K-12 Setting](https://login.community.gadoe.org/documents/leveraging-ai-in-the-k-12-setting) | official_guidance | 2025-01-21 | bibliographic_checked |
 | KB-2025-0048 — [Generative AI: product safety standards](https://www.gov.uk/government/publications/generative-ai-product-safety-standards) | official_guidance | 2025-01-22 | bibliographic_checked |
 | KB-2025-0049 — [Using AI in education settings: support materials](https://www.gov.uk/government/collections/using-ai-in-education-settings-support-materials) | official_guidance | 2025-06-10 | bibliographic_checked |
 | KB-2025-0050 — [Guidance on AI and children (Version 3.0): Recommendations for AI policies and systems that uphold child rights](https://www.unicef.org/innocenti/reports/policy-guidance-ai-children) | official_guidance | 2025-12 | bibliographic_checked |
-| KB-2026-0096 — [Executive Order 14277: Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
+| KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 
 ## 2025｜issue_year
 
@@ -197,13 +198,15 @@
 | KB-2026-0065 — [Determinants of AI teachers’ behavioural intention to use virtual simulation platforms: an integrated SEM and fsQCA study](https://doi.org/10.1057/s41599-026-07392-9) | journal_article | 2026-04-27 | bibliographic_checked |
 | KB-2026-0088 — [教育部等五部门关于印发《“人工智能+教育”行动计划》的通知（教科信〔2026〕1号）](https://www.moe.gov.cn/srcsite/A16/s3342/202604/t20260410_1433240.html) | official_guidance | 2026-04-10 | bibliographic_checked |
 | KB-2026-0089 — [Blueprint for Digital Education Development in Primary and Secondary Schools](https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/debp.html) | official_guidance | 2026-06-17 | bibliographic_checked |
-| KB-2026-0090 — [Supplement I: AI Literacy Learning Framework for Primary and Secondary Schools](https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementAILiteracyLearningFramework(PrimaryAndSecondarySchools)_EN.pdf) | framework | 2026-06-17 | discovered_unverified |
-| KB-2026-0091 — [Supplement II: Guide to Using AI in Teaching in Primary and Secondary Schools](https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementIIGuideToUsingAIInTeaching(PrimaryAndSecondarySchools)_EN.pdf) | official_guidance | 2026-06-17 | discovered_unverified |
+| KB-2026-0090 — [Supplement I: AI Literacy Learning Framework for Primary and Secondary Schools](https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementAILiteracyLearningFramework(PrimaryAndSecondarySchools)_EN.pdf) | framework | 2026-06-17 | bibliographic_checked |
+| KB-2026-0091 — [Supplement II: Guide to Using AI in Teaching in Primary and Secondary Schools](https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementIIGuideToUsingAIInTeaching(PrimaryAndSecondarySchools)_EN.pdf) | official_guidance | 2026-06-17 | bibliographic_checked |
 | KB-2026-0092 — [“Preliminary Study of Artificial Intelligence” Strand (Pilot Version) of the Information and Innovation Technology Curriculum Framework for Primary Schools（EDBCM No. 113/2026）](https://applications.edb.gov.hk/circular/upload/EDBCM/EDBCM26113E.pdf) | framework | 2026-07-21 | bibliographic_checked |
-| KB-2026-0094 — [MOE Committee of Supply Debate 2026 Response by Minister of State for Education Jasmin Lau](https://www.moe.gov.sg/news/speeches/20260303-moe-committee-of-supply-debate-2026-response-by-minister-of-state-for-education-jasmin-lau) | government_announcement | 2026-03-03 | discovered_unverified |
+| KB-2026-0094 — [MOE Committee of Supply Debate 2026 Response by Minister of State for Education Jasmin Lau](https://www.moe.gov.sg/news/speeches/20260303-moe-committee-of-supply-debate-2026-response-by-minister-of-state-for-education-jasmin-lau) | government_announcement | 2026-03-03 | bibliographic_checked |
 | KB-2026-0095 — [打造AI智慧教育新生態─AI人才方舟計畫（115–118年）](https://www.ey.gov.tw/Page/448DE008087A1971/69349d8a-b2be-406c-a997-8bf919259f85) | government_announcement | 2026-05-21 | bibliographic_checked |
 | KB-2026-0097 — [Final Priority and Definitions—Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education](https://www.federalregister.gov/documents/2026/04/13/2026-07087/final-priority-and-definitions-secretarys-supplemental-priority-and-definitions-on-advancing) | binding_policy | 2026-04-13 | bibliographic_checked |
 | KB-2026-0173 — [臺灣中小學教師與學生AI素養框架](https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&old=upload) | framework | 2026-06-18 | bibliographic_checked |
+| KB-2026-0236 — [인공지능(AI) 교과, 교원이 주도하여 교육자료부터 인정교과서까지 만든다](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107049&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | government_announcement | 2026-08-27 | bibliographic_checked |
+| KB-2026-0238 — [Council conclusions on teachers in the era of artificial intelligence (AI)](https://data.consilium.europa.eu/doc/document/ST-9003-2026-INIT/en/pdf) | official_guidance | 2026-05-26 | bibliographic_checked |
 
 ## 2026｜issue_year
 
@@ -416,8 +419,11 @@
 
 | 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
 |---|---|---|---|
-| KB-2024-0006 — [Human-Centered AI Guidance for K-12 Public Schools](https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools) | official_guidance | 未知 | discovered_unverified |
-| KB-2025-0046 — [AI in Education: Model Policy for Ohio Districts and Schools](https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy) | official_guidance | 未知 | discovered_unverified |
+| KB-2023-0011 — [Artificial Intelligence and the Future of Teaching and Learning: Insights and Recommendations](https://eric.ed.gov/?id=ED631097) | policy_review | 未知 | discovered_unverified |
+| KB-2024-0006 — [Human-Centered AI Guidance for K–12 Public Schools](https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools) | official_guidance | 未知 | bibliographic_checked |
+| KB-2024-0008 — [中小學數位教學指引3.0版](https://pads.moe.edu.tw/download_file.php?file=_upload_642bae440e1fb47c45d377aa6686ad28.pdf&old=upload) | official_guidance | 未知 | discovered_unverified |
+| KB-2024-0009 — [Empowering Education Leaders: A Toolkit for Safe, Ethical, and Equitable AI Integration](https://eric.ed.gov/?id=ED661924) | official_guidance | 未知 | discovered_unverified |
+| KB-2025-0046 — [AI in Education: Model Policy for Ohio Districts and Schools](https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy) | official_guidance | 未知 | bibliographic_checked |
 | KB-2026-0001 — [Nature AI Detectives: An Outdoor AI Literacy Adventure](https://arboretum.psu.edu/events/nature-ai-detectives-an-outdoor-ai-literacy-adventure-2/) | source_document | 未知 | discovered_unverified |
 | KB-2026-0002 — [Webinar on AI Literacy and Safeguarding Students' Cyber Security - Secondary Schools (New)](https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_literacy_Sec.html) | source_document | 未知 | discovered_unverified |
 | KB-2026-0003 — [Digital Education AI in Education Series - AI+Subjects: Leveraging Generative AI to Enhance Learning and Teaching for Primary English Language (Basic Level)](https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_Subjects_Pri.html) | source_document | 未知 | discovered_unverified |
@@ -432,6 +438,7 @@
 | KB-2026-0098 — [Guidance for the Safe and Effective Use of Artificial Intelligence in California Public Schools: Learning With AI, Learning About AI](https://www.cde.ca.gov/ci/pl/aiincalifornia.asp) | official_guidance | 未知 | bibliographic_checked |
 | KB-2026-0100 — [Generative Artificial Intelligence (AI) in K-12 Classrooms Guidance (v3.0, web-based)](https://www.oregon.gov/ode/educator-resources/teachingcontent/Pages/Generative-Artificial-Intelligence-%28AI%29-for-K-12-Schools.aspx) | official_guidance | 未知 | bibliographic_checked |
 | KB-2026-0101 — [Guidelines regarding the use of generative AI](https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/guidelines-regarding-use-of-generative-ai) | official_guidance | 未知 | bibliographic_checked |
-| KB-2026-0102 — [Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators](https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators) | official_guidance | 未知 | discovered_unverified |
+| KB-2026-0102 — [Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators](https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators) | official_guidance | 未知 | bibliographic_checked |
+| KB-2026-0237 — [中小學使用「生成式人工智慧」注意事項2.1（教師、行政人員及家長版）](https://pads.moe.edu.tw/download_file.php?file=_upload_b72bd6a6bf0bb8cb0c84e7ab8b5e4f79.pdf&old=upload) | official_guidance | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
