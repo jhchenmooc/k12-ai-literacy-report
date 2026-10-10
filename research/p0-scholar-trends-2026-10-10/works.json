@@ -1,0 +1,971 @@
+{
+ "purpose": "10 月月報「學者觀點動向」素材：學者清單 A1–A4、B、H、V 學者 2026-08-01～10-10 新作（OpenAlex）",
+ "note": "同一模型整理，不算獨立審閱；只存書目，不存摘要全文。OpenAlex 日期為索引日期，正式刊用前須回出版者頁核首次公開日。",
+ "window": "2026-08-01..2026-10-10",
+ "query_runs": [
+  {
+   "started_utc": "2026-10-10T01:17:51.257662Z",
+   "http_status": 200,
+   "authors": 25,
+   "count": 43
+  },
+  {
+   "started_utc": "2026-10-10T01:17:52.113019Z",
+   "http_status": 200,
+   "authors": 25,
+   "count": 33
+  },
+  {
+   "started_utc": "2026-10-10T01:17:52.880926Z",
+   "http_status": 200,
+   "authors": 25,
+   "count": 38
+  },
+  {
+   "started_utc": "2026-10-10T01:17:53.658397Z",
+   "http_status": 200,
+   "authors": 25,
+   "count": 55
+  },
+  {
+   "started_utc": "2026-10-10T01:17:54.543213Z",
+   "http_status": 200,
+   "authors": 6,
+   "count": 11
+  }
+ ],
+ "ai_education_works": [
+  {
+   "openalex_id": "W7204581279",
+   "doi": "https://doi.org/10.1016/j.compedu.2026.105744",
+   "title": "The design framework for pedagogical agents supporting constructivist learning with generative AI",
+   "date": "2026-08-01",
+   "type": "article",
+   "venue": "Computers & Education",
+   "scholars": [
+    "T06",
+    "T14"
+   ]
+  },
+  {
+   "openalex_id": "W7204072437",
+   "doi": "https://doi.org/10.1016/j.caeai.2026.100661",
+   "title": "Measuring Acceptance of Age-Tiered AI Literacy Guidebooks: A Developmentally Informed Study of K-12 Students and Teachers",
+   "date": "2026-08-01",
+   "type": "article",
+   "venue": "Computers and Education Artificial Intelligence",
+   "scholars": [
+    "T10"
+   ]
+  },
+  {
+   "openalex_id": "W7172215497",
+   "doi": "https://doi.org/10.31234/osf.io/s7dvk_v2",
+   "title": "A Metacognitive Approach to Learning and Performance in Human-AI Interaction",
+   "date": "2026-08-02",
+   "type": "preprint",
+   "venue": null,
+   "scholars": [
+    "S03",
+    "S06",
+    "S07",
+    "S08"
+   ]
+  },
+  {
+   "openalex_id": "W7172207433",
+   "doi": "https://doi.org/10.35542/osf.io/59ryn_v1",
+   "title": "Reconfiguring Assessment in the Age of AI: Making Learning Visible through Meta-Task Awareness (MTA)",
+   "date": "2026-08-03",
+   "type": "preprint",
+   "venue": null,
+   "scholars": [
+    "S20"
+   ]
+  },
+  {
+   "openalex_id": "W7172254328",
+   "doi": "https://doi.org/10.21203/rs.3.rs-10472890/v1",
+   "title": "Beyond Socratic Questioning: Designing GenAI-mediated Metacognitive Scaffolding for Clinical Reasoning in Medical Education",
+   "date": "2026-08-03",
+   "type": "preprint",
+   "venue": "Research Square",
+   "scholars": [
+    "S02",
+    "S07"
+   ]
+  },
+  {
+   "openalex_id": "W7172528597",
+   "doi": "https://doi.org/10.1002/jcal.70304",
+   "title": "Students and Instructors' Perceptions of Integrating Generative AI in Assessment Within the Context of the UAE",
+   "date": "2026-08-04",
+   "type": "article",
+   "venue": "Journal of Computer Assisted Learning",
+   "scholars": [
+    "V12"
+   ]
+  },
+  {
+   "openalex_id": "W7172493639",
+   "doi": "https://doi.org/10.1080/00405841.2026.2714714",
+   "title": "Intelligent pedagogical agents for self-regulated learning: Balancing learner, teacher, and AI agency",
+   "date": "2026-08-05",
+   "type": "article",
+   "venue": "Theory Into Practice",
+   "scholars": [
+    "S13"
+   ]
+  },
+  {
+   "openalex_id": "W7172532737",
+   "doi": "https://doi.org/10.1080/10494820.2026.2685803",
+   "title": "A review of reviews on unveiling the dynamics of STEM education research from an artificial intelligence analysis approach",
+   "date": "2026-08-05",
+   "type": "article",
+   "venue": "Interactive Learning Environments",
+   "scholars": [
+    "H11"
+   ]
+  },
+  {
+   "openalex_id": "W7196945462",
+   "doi": "https://doi.org/10.1145/3770855.3818637",
+   "title": "KDD 2026 Special Day on AI for Education",
+   "date": "2026-08-06",
+   "type": "conference-paper",
+   "venue": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)",
+   "scholars": [
+    "S02"
+   ]
+  },
+  {
+   "openalex_id": "W7201988286",
+   "doi": "https://doi.org/10.1111/bjet.70083",
+   "title": "From emotion regulation to academic success: A self‐determination theory‐based emotional agent‐mediated approach",
+   "date": "2026-08-07",
+   "type": "article",
+   "venue": "British Journal of Educational Technology",
+   "scholars": [
+    "T03"
+   ]
+  },
+  {
+   "openalex_id": "W7202202692",
+   "doi": "https://doi.org/10.48550/arxiv.2608.09289",
+   "title": "Accurate but Natural? Diagnosing Grammatical and Idiomatic Gaps in Japanese EFL Writing",
+   "date": "2026-08-10",
+   "type": "preprint",
+   "venue": "arXiv (Cornell University)",
+   "scholars": [
+    "S18"
+   ]
+  },
+  {
+   "openalex_id": "W7202050467",
+   "doi": "https://doi.org/10.1007/s10648-026-10196-7",
+   "title": "A Conceptual Framework to Integrate Research Programs on Self-Regulation in Education",
+   "date": "2026-08-10",
+   "type": "article",
+   "venue": "Educational Psychology Review",
+   "scholars": [
+    "S13"
+   ]
+  },
+  {
+   "openalex_id": "W7202096932",
+   "doi": "https://doi.org/10.1145/3765964.3811644",
+   "title": "Scaffolded AI-Verification: Assessment Patterns for Resource-Constrained Environments.",
+   "date": "2026-08-10",
+   "type": "conference-paper",
+   "venue": null,
+   "scholars": [
+    "V05"
+   ]
+  },
+  {
+   "openalex_id": "W7202187169",
+   "doi": "https://doi.org/10.3389/frsen.2026.1931285",
+   "title": "Editorial: Rising stars in remote sensing 2025: advancements in time series analysis",
+   "date": "2026-08-11",
+   "type": "editorial",
+   "venue": "Frontiers in Remote Sensing",
+   "scholars": [
+    "H08"
+   ]
+  },
+  {
+   "openalex_id": "W7125259411",
+   "doi": "https://doi.org/10.1038/s41597-026-08054-w",
+   "title": "Dataset of GenAI-Assisted Information Problem Solving in Education",
+   "date": "2026-08-12",
+   "type": "data-paper",
+   "venue": "Scientific Data",
+   "scholars": [
+    "S02"
+   ]
+  },
+  {
+   "openalex_id": "W7202344627",
+   "doi": "https://doi.org/10.48550/arxiv.2608.11625",
+   "title": "Making AI-Generated Feedback Matter: A Large-Scale Study of Feedback Workflows and Student Enactment",
+   "date": "2026-08-12",
+   "type": "preprint",
+   "venue": "arXiv (Cornell University)",
+   "scholars": [
+    "S09"
+   ]
+  },
+  {
+   "openalex_id": "W7203692890",
+   "doi": "https://doi.org/10.35542/osf.io/wcpj5_v2",
+   "title": "Generative AI as a Mediational Agent: Rethinking Learning in Sociocultural Theory",
+   "date": "2026-08-18",
+   "type": "preprint",
+   "venue": null,
+   "scholars": [
+    "V19"
+   ]
+  },
+  {
+   "openalex_id": "W7203771439",
+   "doi": "https://doi.org/10.1145/3820253.3831405",
+   "title": "Exploring LLM-generated hints for students’ Error Recovery in programming",
+   "date": "2026-08-20",
+   "type": "conference-paper",
+   "venue": "Mensch und Computer (MuC)",
+   "scholars": [
+    "V01"
+   ]
+  },
+  {
+   "openalex_id": "W7203926372",
+   "doi": "https://doi.org/10.1016/j.caeai.2026.100671",
+   "title": "Reconceptualizing community of inquiry in the age of generative artificial intelligence",
+   "date": "2026-08-21",
+   "type": "article",
+   "venue": "Computers and Education Artificial Intelligence",
+   "scholars": [
+    "S02"
+   ]
+  },
+  {
+   "openalex_id": "W7203884447",
+   "doi": "https://doi.org/10.18260/1-2--61134",
+   "title": "WIP: Scaffolding Graduate Simulation Education Through Structured LLM Integration and Metacognition: A Preliminary Investigation",
+   "date": "2026-08-21",
+   "type": "conference-paper",
+   "venue": "ASEE Annual Conference & Exposition",
+   "scholars": [
+    "S13"
+   ]
+  },
+  {
+   "openalex_id": "W7203917181",
+   "doi": "https://doi.org/10.1016/j.caeai.2026.100669",
+   "title": "Preferred scaffolding does not lead to better learning performance: Empirical evidence from AI-supported mathematical modelling",
+   "date": "2026-08-21",
+   "type": "article",
+   "venue": "Computers and Education Artificial Intelligence",
+   "scholars": [
+    "V17"
+   ]
+  },
+  {
+   "openalex_id": "W7204005753",
+   "doi": "https://doi.org/10.1002/jcal.70310",
+   "title": "Emergent Learner Agency in Implicit Human– AI Collaboration: How Supportive and Contrarian AI Personas Reshape Interaction",
+   "date": "2026-08-22",
+   "type": "article",
+   "venue": "Journal of Computer Assisted Learning",
+   "scholars": [
+    "S02",
+    "S06"
+   ]
+  },
+  {
+   "openalex_id": "W7203968316",
+   "doi": "https://doi.org/10.1177/07356331261479569",
+   "title": "Beyond AI Literacy: Exploring Pre-Service Teachers’ Pedagogical and Ethical Reasoning in Generative AI Integration in Education",
+   "date": "2026-08-22",
+   "type": "article",
+   "venue": "Journal of Educational Computing Research",
+   "scholars": [
+    "H30"
+   ]
+  },
+  {
+   "openalex_id": "W7214524865",
+   "doi": "https://doi.org/10.14742/ajet.10934",
+   "title": "Artificial intelligence in interdisciplinary higher education: A systematic review on opportunities, challenges and future directions",
+   "date": "2026-08-22",
+   "type": "review",
+   "venue": "Australasian Journal of Educational Technology",
+   "scholars": [
+    "V15"
+   ]
+  },
+  {
+   "openalex_id": "W7204128107",
+   "doi": "https://doi.org/10.1080/15366367.2026.2717599",
+   "title": "How Are Self-Determination Theory Needs Satisfaction and Personality Traits Associated with Self-Regulated Learning Using Generative Artificial Intelligence?",
+   "date": "2026-08-24",
+   "type": "article",
+   "venue": "Measurement Interdisciplinary Research and Perspectives",
+   "scholars": [
+    "H11",
+    "V15"
+   ]
+  },
+  {
+   "openalex_id": "W7204249255",
+   "doi": "https://doi.org/10.5281/zenodo.22108724",
+   "title": "Anonymized Phase II Learning Outcomes for a GenAI-Supported Elementary Mathematics Study",
+   "date": "2026-08-26",
+   "type": "dataset",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "scholars": [
+    "T02"
+   ]
+  },
+  {
+   "openalex_id": "W7204490523",
+   "doi": "https://doi.org/10.18608/jla.2026.9145",
+   "title": "Applying Generative AI to the Learning Analytics Cycle to Support Competency Development in Health Professions Education",
+   "date": "2026-08-27",
+   "type": "article",
+   "venue": "Journal of Learning Analytics",
+   "scholars": [
+    "S02"
+   ]
+  },
+  {
+   "openalex_id": "W7204486276",
+   "doi": "https://doi.org/10.3390/land15091579",
+   "title": "Land-Cover Dynamics in a Miombo Woodland Landscape: A Multi-Scale Machine Learning Analysis of the Niassa Special Reserve (2000–2024)",
+   "date": "2026-08-27",
+   "type": "article",
+   "venue": "Land",
+   "scholars": [
+    "H08"
+   ]
+  },
+  {
+   "openalex_id": "W7204495842",
+   "doi": "https://doi.org/10.1007/s40670-026-02866-6",
+   "title": "Algorithm Aversion Towards AI-Generated Multiple-Choice Questions",
+   "date": "2026-08-28",
+   "type": "article",
+   "venue": "Medical Science Educator",
+   "scholars": [
+    "H09",
+    "H10"
+   ]
+  },
+  {
+   "openalex_id": "W7204533813",
+   "doi": "https://doi.org/10.1016/j.compedu.2026.105745",
+   "title": "Does school-based AI education narrow readiness gaps? The role of prior agency-related learning",
+   "date": "2026-08-28",
+   "type": "article",
+   "venue": "Computers & Education",
+   "scholars": [
+    "H11",
+    "V06"
+   ]
+  },
+  {
+   "openalex_id": "W7204746454",
+   "doi": "https://doi.org/10.5281/zenodo.22199907",
+   "title": "Teacher-Facing AI in Education: A Systematic Review of Impact and A Taxonomy of Teacher-AI Teaming",
+   "date": "2026-08-31",
+   "type": "preprint",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "scholars": [
+    "S01"
+   ]
+  },
+  {
+   "openalex_id": "W7204784666",
+   "doi": "https://doi.org/10.4324/9781003679172-7",
+   "title": "Reshaping Educational Ecosystems",
+   "date": "2026-08-31",
+   "type": "book-chapter",
+   "venue": "Routledge eBooks",
+   "scholars": [
+    "V17"
+   ]
+  },
+  {
+   "openalex_id": "W7205005667",
+   "doi": "https://doi.org/10.1002/jcal.70317",
+   "title": "Enhancing Peer Exposure and Creating Opportunities for Bridging Social Capital Through an AI ‐Generated Summary‐Driven Learning Design in Online Discussion Forums",
+   "date": "2026-09-01",
+   "type": "article",
+   "venue": "Journal of Computer Assisted Learning",
+   "scholars": [
+    "S01"
+   ]
+  },
+  {
+   "openalex_id": "W7214720750",
+   "doi": "https://doi.org/10.1016/j.compedu.2026.105755",
+   "title": "Fifty Years of Topic Development, Thematic Combination, and AI’s Evolving Reach in Computers & Education",
+   "date": "2026-09-01",
+   "type": "article",
+   "venue": "Computers & Education",
+   "scholars": [
+    "T14",
+    "V06"
+   ]
+  },
+  {
+   "openalex_id": "W7214997051",
+   "doi": "https://doi.org/10.1016/j.compedu.2026.105756",
+   "title": "Mapping fifty years of technology-enhanced science and mathematics education in Computers & Education: Trends and connections with technologies, functions, and theories",
+   "date": "2026-09-01",
+   "type": "article",
+   "venue": "Computers & Education",
+   "scholars": [
+    "T14"
+   ]
+  },
+  {
+   "openalex_id": "W7211952082",
+   "doi": "https://doi.org/10.1016/j.bushor.2026.09.002",
+   "title": "Scaling AI literacy in organizations: A framework and roadmap for managers",
+   "date": "2026-09-01",
+   "type": "article",
+   "venue": "Business Horizons",
+   "scholars": [
+    "H32"
+   ]
+  },
+  {
+   "openalex_id": "W7204990898",
+   "doi": "https://doi.org/10.1080/1475939x.2026.2721466",
+   "title": "The moderating effects of gender and teacher support on student engagement in language learning with a generative artificial intelligence (GenAI) chatbot",
+   "date": "2026-09-02",
+   "type": "article",
+   "venue": "Technology Pedagogy and Education",
+   "scholars": [
+    "H11",
+    "V15"
+   ]
+  },
+  {
+   "openalex_id": "W7205001413",
+   "doi": "https://doi.org/10.1007/s44436-026-00043-5",
+   "title": "Fostering SCALE habits of mind through AI-empowered arts-based pedagogy",
+   "date": "2026-09-02",
+   "type": "article",
+   "venue": "AI Brain and Child",
+   "scholars": [
+    "V03"
+   ]
+  },
+  {
+   "openalex_id": "W7207525809",
+   "doi": "https://doi.org/10.1007/s11423-026-10709-9",
+   "title": "Differentiated impacts of GenAI-supported self-regulated game-based science learning: a behavioural and epistemic network analysis of high- and low-achieving students",
+   "date": "2026-09-03",
+   "type": "article",
+   "venue": "Educational Technology Research and Development",
+   "scholars": [
+    "T03"
+   ]
+  },
+  {
+   "openalex_id": "W7211876031",
+   "doi": "https://doi.org/10.1002/jcal.70327",
+   "title": "Bridging the Gap: Investigating Students' Self‐Reported AI ‐Literacy and Perceived Employability Competencies for an AI ‐Enabled Workforce",
+   "date": "2026-09-07",
+   "type": "article",
+   "venue": "Journal of Computer Assisted Learning",
+   "scholars": [
+    "V12"
+   ]
+  },
+  {
+   "openalex_id": "W7211951528",
+   "doi": "https://doi.org/10.1080/09500693.2026.2727692",
+   "title": "Human-in-the-loop: leveraging generative artificial intelligence to transform disciplinary learning in science",
+   "date": "2026-09-08",
+   "type": "article",
+   "venue": "International Journal of Science Education",
+   "scholars": [
+    "H29",
+    "V21"
+   ]
+  },
+  {
+   "openalex_id": "W7212006881",
+   "doi": "https://doi.org/10.1080/14790718.2026.2730662",
+   "title": "How performance expectancy and autonomy satisfaction influence translanguaging interactions with AI chatbots",
+   "date": "2026-09-09",
+   "type": "article",
+   "venue": "International Journal of Multilingualism",
+   "scholars": [
+    "H11"
+   ]
+  },
+  {
+   "openalex_id": "W7212074828",
+   "doi": "https://doi.org/10.1016/j.ijhcs.2026.103939",
+   "title": "XAI in the human-agent-environment loop: how do task, explanation strategy, and AI literacy shape user engagement?",
+   "date": "2026-09-09",
+   "type": "article",
+   "venue": "International Journal of Human-Computer Studies",
+   "scholars": [
+    "H05"
+   ]
+  },
+  {
+   "openalex_id": "W7212002932",
+   "doi": "https://doi.org/10.1080/02635143.2026.2731035",
+   "title": "Automated assessment of the nature of scientific inquiry (NOSI) using machine learning and transformer-based language models",
+   "date": "2026-09-09",
+   "type": "article",
+   "venue": "Research in Science & Technological Education",
+   "scholars": [
+    "V21"
+   ]
+  },
+  {
+   "openalex_id": "W7213373544",
+   "doi": null,
+   "title": "Oops, Not Now: PEARL, a RAG-Based Support Agent for Gameplay and What Players Want from AI Help",
+   "date": "2026-09-12",
+   "type": "preprint",
+   "venue": "arXiv (Cornell University)",
+   "scholars": [
+    "S13"
+   ]
+  },
+  {
+   "openalex_id": "W7212988735",
+   "doi": "https://doi.org/10.1007/s44436-026-00044-4",
+   "title": "Reimagining K-12 education in the era of artificial intelligence: a critical paradigm shift toward human-machine symbiosis",
+   "date": "2026-09-14",
+   "type": "editorial",
+   "venue": "AI Brain and Child",
+   "scholars": [
+    "V03"
+   ]
+  },
+  {
+   "openalex_id": "W7213300903",
+   "doi": "https://doi.org/10.1007/s44217-026-02129-x",
+   "title": "Cultivating a sustainable future through an interactive AI chatbot for personalized learning of sustainability concepts",
+   "date": "2026-09-15",
+   "type": "article",
+   "venue": "Discover Education",
+   "scholars": [
+    "V05"
+   ]
+  },
+  {
+   "openalex_id": "W7213314719",
+   "doi": "https://doi.org/10.1080/0960085x.2026.2723258",
+   "title": "Scaling data management capabilities for enterprise AI: a maturity model for the banking industry",
+   "date": "2026-09-16",
+   "type": "article",
+   "venue": "European Journal of Information Systems",
+   "scholars": [
+    "H32"
+   ]
+  },
+  {
+   "openalex_id": "W7213527283",
+   "doi": "https://doi.org/10.5281/zenodo.22806883",
+   "title": "A Systematic Review of Conceptualizations, Competences, and Developmental Factors for Teachers' AI-TPACK in Mathematics Education",
+   "date": "2026-09-17",
+   "type": "dataset",
+   "venue": "Zenodo (CERN European Organization for Nuclear Research)",
+   "scholars": [
+    "H11"
+   ]
+  },
+  {
+   "openalex_id": "W7213469721",
+   "doi": "https://doi.org/10.1007/s11528-026-01223-z",
+   "title": "Narrative-centered Learning Environments for Science: A Scoping Review",
+   "date": "2026-09-17",
+   "type": "article",
+   "venue": "TechTrends",
+   "scholars": [
+    "V26"
+   ]
+  },
+  {
+   "openalex_id": "W7160504600",
+   "doi": "https://doi.org/10.1016/j.caeai.2026.100680",
+   "title": "Building AI companions that prioritise learning over performance",
+   "date": "2026-09-18",
+   "type": "article",
+   "venue": "Computers and Education Artificial Intelligence",
+   "scholars": [
+    "S02"
+   ]
+  },
+  {
+   "openalex_id": "W7213541668",
+   "doi": "https://doi.org/10.1016/j.lindif.2026.102975",
+   "title": "The road ahead: How the future of learning is shaped through individual differences",
+   "date": "2026-09-18",
+   "type": "article",
+   "venue": "Learning and Individual Differences",
+   "scholars": [
+    "S08"
+   ]
+  },
+  {
+   "openalex_id": "W7213555713",
+   "doi": "https://doi.org/10.29333/ejmste/19279",
+   "title": "Artificial intelligence in science education for SDG 4: A systematic review of AI interventions for ESD and 21st-century competencies",
+   "date": "2026-09-18",
+   "type": "review",
+   "venue": "Eurasia Journal of Mathematics Science and Technology Education",
+   "scholars": [
+    "T19"
+   ]
+  },
+  {
+   "openalex_id": "W7213619452",
+   "doi": "https://doi.org/10.1016/j.chbah.2026.100402",
+   "title": "AI Mindset – An empirically tested theoretical framework on the psychological factors shaping AI competence and AI use",
+   "date": "2026-09-19",
+   "type": "article",
+   "venue": "Computers in Human Behavior Artificial Humans",
+   "scholars": [
+    "H18"
+   ]
+  },
+  {
+   "openalex_id": "W7213886153",
+   "doi": "https://doi.org/10.1002/jcal.70331",
+   "title": "Trace Data of Secondary Students and Linguistic Analysis to Predict Learner Performance in a Multi‐Text Writing Task",
+   "date": "2026-09-21",
+   "type": "article",
+   "venue": "Journal of Computer Assisted Learning",
+   "scholars": [
+    "S02",
+    "S14"
+   ]
+  },
+  {
+   "openalex_id": "W7213929609",
+   "doi": "https://doi.org/10.1007/s44163-026-02234-8",
+   "title": "AI supported doodling and gallery walk defence provide visible evidence of student reasoning in higher education assessment",
+   "date": "2026-09-21",
+   "type": "article",
+   "venue": "Discover Artificial Intelligence",
+   "scholars": [
+    "T03"
+   ]
+  },
+  {
+   "openalex_id": "W7213949271",
+   "doi": "https://doi.org/10.3389/feduc.2026.1943906",
+   "title": "Reimagining mathematics education through intelligent tutoring: evidence, opportunities, and implementation challenges",
+   "date": "2026-09-21",
+   "type": "article",
+   "venue": "Frontiers in Education",
+   "scholars": [
+    "V04"
+   ]
+  },
+  {
+   "openalex_id": "W7153057309",
+   "doi": "https://doi.org/10.1016/j.caeai.2026.100684",
+   "title": "Agentivism: a learning theory for the age of artificial intelligence",
+   "date": "2026-09-22",
+   "type": "article",
+   "venue": "Computers and Education Artificial Intelligence",
+   "scholars": [
+    "S02"
+   ]
+  },
+  {
+   "openalex_id": "W7214097358",
+   "doi": "https://doi.org/10.1016/j.caeo.2026.100422",
+   "title": "Navigating AI’s educational future: expert scenarios and implications for teaching and teacher preparation",
+   "date": "2026-09-23",
+   "type": "article",
+   "venue": "Computers and Education Open",
+   "scholars": [
+    "S04"
+   ]
+  },
+  {
+   "openalex_id": "W7214077204",
+   "doi": "https://doi.org/10.1016/j.stueduc.2026.101684",
+   "title": "Higher-order thinking skills in STEM education: A systematic review of HOTS constructs, assessment methods, and chatgpt-assisted coding",
+   "date": "2026-09-23",
+   "type": "review",
+   "venue": "Studies In Educational Evaluation",
+   "scholars": [
+    "V23"
+   ]
+  },
+  {
+   "openalex_id": "W7214145520",
+   "doi": "https://doi.org/10.1080/10447318.2026.2731321",
+   "title": "Comparing GenAI Summaries Versus Chatbots for Supporting Reflection in Healthcare Simulation",
+   "date": "2026-09-24",
+   "type": "article",
+   "venue": "International Journal of Human-Computer Interaction",
+   "scholars": [
+    "S02",
+    "S06"
+   ]
+  },
+  {
+   "openalex_id": "W7214221190",
+   "doi": "https://doi.org/10.6084/m9.figshare.33980812",
+   "title": "Comparing GenAI Summaries Versus Chatbots for Supporting Reflection in Healthcare Simulation",
+   "date": "2026-09-24",
+   "type": "dataset",
+   "venue": "Figshare",
+   "scholars": [
+    "S06"
+   ]
+  },
+  {
+   "openalex_id": "W7214737944",
+   "doi": "https://doi.org/10.48550/arxiv.2609.32303",
+   "title": "Train4Merge: A Controlled Single-Teacher Study of RL vs. SFT Teachers for OPD-Based Model Merging",
+   "date": "2026-09-26",
+   "type": "preprint",
+   "venue": "arXiv (Cornell University)",
+   "scholars": [
+    "V21"
+   ]
+  },
+  {
+   "openalex_id": "W7214586492",
+   "doi": "https://doi.org/10.1186/s40594-026-00648-5",
+   "title": "The shifting landscape of assessment in STEM education in the age of generative AI",
+   "date": "2026-09-28",
+   "type": "article",
+   "venue": "International Journal of STEM Education",
+   "scholars": [
+    "H11",
+    "H27"
+   ]
+  },
+  {
+   "openalex_id": "W7214605398",
+   "doi": "https://doi.org/10.3389/feduc.2026.1885959",
+   "title": "The B-AIMT: development and initial validation of a domain-specific instrument for assessing mathematics teachers’ beliefs about artificial intelligence",
+   "date": "2026-09-28",
+   "type": "article",
+   "venue": "Frontiers in Education",
+   "scholars": [
+    "H09"
+   ]
+  },
+  {
+   "openalex_id": "W7214649799",
+   "doi": "https://doi.org/10.1016/j.ssaho.2026.103755",
+   "title": "Enhancing educational equity through citizen engagement: A governance-oriented framework for sustainable AI adoption in rural Nigeria",
+   "date": "2026-09-28",
+   "type": "article",
+   "venue": "Social Sciences & Humanities Open",
+   "scholars": [
+    "V04"
+   ]
+  },
+  {
+   "openalex_id": "W7214652884",
+   "doi": "https://doi.org/10.3389/feduc.2026.1926201",
+   "title": "Perceived educational value, ethical risk, and support for responsible AI governance in higher education: an embedded mixed-methods study",
+   "date": "2026-09-28",
+   "type": "article",
+   "venue": "Frontiers in Education",
+   "scholars": [
+    "V12"
+   ]
+  },
+  {
+   "openalex_id": "W7215895593",
+   "doi": "https://doi.org/10.31234/osf.io/afuq2_v1",
+   "title": "TAIL: A Test of AI Literacy for Adolescents and Teachers",
+   "date": "2026-09-29",
+   "type": "preprint",
+   "venue": null,
+   "scholars": [
+    "H25"
+   ]
+  },
+  {
+   "openalex_id": "W7214788638",
+   "doi": "https://doi.org/10.1016/j.chbr.2026.101340",
+   "title": "Self-regulated approaches to students’ generative AI use in higher education",
+   "date": "2026-09-29",
+   "type": "article",
+   "venue": "Computers in Human Behavior Reports",
+   "scholars": [
+    "V09"
+   ]
+  },
+  {
+   "openalex_id": "W7214976805",
+   "doi": "https://doi.org/10.15388/infedu.2601.025",
+   "title": "Understanding AI Mechanisms Supports Disciplinary Reasoning and Ethical Judgment in K–12 AI Literacy Education",
+   "date": "2026-09-30",
+   "type": "article",
+   "venue": "Informatics in Education",
+   "scholars": [
+    "S04",
+    "S10",
+    "S11"
+   ]
+  },
+  {
+   "openalex_id": "W7215055574",
+   "doi": "https://doi.org/10.33422/ejte.v8i3.1872",
+   "title": "Teachers' Navigation of Assessing Written Work in Times of Generative AI",
+   "date": "2026-10-01",
+   "type": "article",
+   "venue": "European Journal of Teaching and Education",
+   "scholars": [
+    "H26"
+   ]
+  },
+  {
+   "openalex_id": "W7216064691",
+   "doi": "https://doi.org/10.1145/3776591.3832522",
+   "title": "Can Vision-Language Models Extract Relevant Multimodal Cues for Post-Inference Cue Integration? A Comparison of Affective Judgments on Adult and Child Interaction Data",
+   "date": "2026-10-02",
+   "type": "conference-paper",
+   "venue": "Companion Publication of the International Conference on Multimodal Interaction (ICMI Companion)",
+   "scholars": [
+    "H17"
+   ]
+  },
+  {
+   "openalex_id": "W7220431301",
+   "doi": "https://doi.org/10.1108/978-1-80592-200-120261010",
+   "title": "Artificial Intelligence-Powered Innovation EdTech Startups: A Bibliographic Review of Industry 5.0’s Implications for Sustainable Growth",
+   "date": "2026-10-05",
+   "type": "book-chapter",
+   "venue": "Emerald Group Publishing Limited eBooks",
+   "scholars": [
+    "V04"
+   ]
+  },
+  {
+   "openalex_id": "W7220729024",
+   "doi": "https://doi.org/10.1007/978-3-032-37979-5_9",
+   "title": "How Trust and Fear Mediate the Relationship between AI Literacy and Intelligent-TPACK: Evidence from Teacher Education",
+   "date": "2026-10-06",
+   "type": "conference-paper",
+   "venue": "Lecture notes in computer science",
+   "scholars": [
+    "H30"
+   ]
+  },
+  {
+   "openalex_id": "W7220844460",
+   "doi": "https://doi.org/10.1080/0144929x.2026.2740744",
+   "title": "Different lenses on human-AI collaboration: towards a comprehensive view on hybrid intelligence in education",
+   "date": "2026-10-07",
+   "type": "article",
+   "venue": "Behaviour and Information Technology",
+   "scholars": [
+    "S03"
+   ]
+  },
+  {
+   "openalex_id": "W7220919634",
+   "doi": "https://doi.org/10.1080/10494820.2026.2744403",
+   "title": "Integrating artificial intelligence into K-12 school education through self-determination theory from a longitudinal study: opportunities, challenges, and future direction",
+   "date": "2026-10-08",
+   "type": "article",
+   "venue": "Interactive Learning Environments",
+   "scholars": [
+    "H11"
+   ]
+  }
+ ],
+ "coauthorship_2022_2026": {
+  "S01-T03": 2,
+  "S01-S02": 4,
+  "S01-S03": 3,
+  "S01-S13": 5,
+  "S01-V13": 3,
+  "H11-S01": 3,
+  "S01-S09": 1,
+  "S01-V10": 2,
+  "S02-S06": 76,
+  "S02-S07": 52,
+  "S02-S08": 5,
+  "S02-S03": 23,
+  "S02-S13": 6,
+  "S02-S14": 21,
+  "S02-S09": 4,
+  "S02-T03": 1,
+  "S02-T01": 1,
+  "S02-V18": 1,
+  "S03-S13": 3,
+  "S03-S14": 19,
+  "S03-S07": 20,
+  "S03-S06": 4,
+  "S03-S08": 3,
+  "S04-S10": 58,
+  "S04-S11": 42,
+  "S04-V09": 15,
+  "H15-S04": 1,
+  "S04-V05": 4,
+  "S06-S08": 5,
+  "S06-S09": 1,
+  "S06-S07": 6,
+  "S07-S14": 15,
+  "S07-S08": 3,
+  "S08-S09": 1,
+  "S08-S13": 1,
+  "S09-T03": 2,
+  "S10-S11": 44,
+  "S10-V09": 16,
+  "H15-S10": 1,
+  "S10-V05": 4,
+  "S11-V09": 13,
+  "S13-S14": 3,
+  "S13-V26": 18,
+  "H29-S14": 1,
+  "H28-S14": 1,
+  "S14-V21": 1,
+  "S20-T05": 2,
+  "H21-S20": 1,
+  "S20-S23": 1,
+  "S18-S20": 1,
+  "S18-V17": 2,
+  "T03-V17": 1,
+  "H21-V17": 7,
+  "H11-V13": 3,
+  "H02-H11": 4,
+  "H03-H11": 2,
+  "H11-H27": 2,
+  "H11-V06": 25,
+  "H11-V22": 12,
+  "H11-V15": 20,
+  "H11-V16": 1,
+  "H11-V04": 3,
+  "H26-H27": 2,
+  "H12-H27": 3,
+  "H13-H27": 3,
+  "H13-H26": 1,
+  "H09-H10": 21,
+  "S18-V05": 2,
+  "V04-V05": 1,
+  "T02-T03": 1,
+  "S18-T03": 2,
+  "T03-T05": 1,
+  "T03-V06": 2,
+  "S24-V21": 2,
+  "H29-V21": 9,
+  "H28-V21": 1,
+  "H28-H29": 6
+ }
+}
