@@ -531,9 +531,9 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 - 文獻搜尋 session：候選池四欄補判；待判 B1 68、全年 14、J40–J42 36；~~KB-2026-0113 找到摘要再判~~（管理者提供摘要，補判 A，見 `research/p0-kb-0113-scope-2026-10-09/`）；#121 期刊會議候選評估。
 - 編輯 session：10/10 08:22 首次在新 gate 下的每日短訊；10/29 10 月月報（第一份過新 gate 的月報）；學者清單附錄待確認者；香港中小學 AI 素養學習框架追蹤。
 
-### 2026-10-10｜範圍補判、稽核補強、週／月報 renderer 與日期修正（#147–#162；新 Session 以此段為準）
+### 2026-10-10｜範圍補判、稽核補強、週／月報 renderer 與日期修正（#147–#167；新 Session 以此段為準）
 
-數字以 main `820ff14` 實際檔案為準：records 384、relations 975、search runs 281；論文（期刊＋會議）已核 74／未核 247，其他類型已核 49／未核 14。`publication/issues.json` 仍為空；本週候選池 10 筆全為 `hold`。各 PR 的 verify 皆成功後才合併。
+數字以 main `02d3e72` 實際檔案為準：records 392、relations 1004、search runs 281；論文（期刊＋會議）已核 74／未核 247，其他類型已核 51／未核 20。`publication/issues.json` 仍為空；本週候選池 10 筆全為 `hold`。各 PR 的 verify 皆成功後才合併。
 
 **管理者本輪決定（後續 session 必須遵守）**
 - **候選池四欄**：W2026-10-09-A01～A10 已補 `ai_lit_class`、`ai_lit_dims`、`ai_lit_note`、`audience`（#147）；A10 依學段改記 `higher_ed`（#153）。判讀紀錄見 `research/p0-candidate-scope-2026-10-09/`。
@@ -547,18 +547,21 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 
 **出版 gate 與網站（程式強制；只加嚴或等強度推廣）**
 - **#156 多角度稽核補強**：正文外版面、SVG／MathML、metadata、favicon、stylesheet 都收緊；新增 [PUBLICATION-CONTRIBUTING.md](PUBLICATION-CONTRIBUTING.md)。main 從此依賴 parse5，跑測試前先 `npm ci --ignore-scripts --no-audit --no-fund`。稽核紀錄見 `research/audits/2026-10-10/`。
-- **#161 週／月報 renderer**：`renderWeeklyEdition`、`renderMonthlyEdition` 與 `periodRange`。期別格式為週報 `weekly/YYYY-MM-DD_MM-DD/`（含首尾 1–10 天，可跨年）、月報 `monthly/YYYY-MM/`。登錄且期別合法的週／月報頁一律由 `node research/render-site.js --write` 依 claims 產生，不手寫 HTML；閘門以同一 renderer 的空白外框逐節點比對正文外。`<main>` 內只有逐則 claim 段落，不放分區小標題。
+- **#161 週／月報 renderer**：`renderWeeklyEdition`、`renderMonthlyEdition` 與 `periodRange`。期別格式為週報 `weekly/YYYY-MM-DD_MM-DD/`（含首尾 1–10 天，可跨年）、月報 `monthly/YYYY-MM/`。登錄且期別合法的週／月報頁一律由 `node research/render-site.js --write` 依 claims 產生，不手寫 HTML；閘門以同一 renderer 的空白外框逐節點比對正文外。週報 `<main>` 內只有逐則 claim 段落，不放分區小標題。
+- **#165 月報分區（方案甲）**：月報 `<main>` 分政策動態、研究動態、本刊追蹤學者本月新作、學者觀點動向；分區標題、段首說明等為 renderer 固定文字，閘門以 claims 重產整頁（含 `<main>`）比對。月報 claim 必須有 `section`；`scholars` 須有 `research_group`；趨勢歸納為 `editorial_analysis`／`descriptive`，只放 `trends`，以 `supporting_claim_ids` 綁定同期至少兩則、至少兩個研究群的 claim。
 - **#162**：`render-site.js` 國際組織對照表加入 O-EU-COUNCIL。之後新增國際組織代碼要同步加入，否則政策清單會以代碼另列一組。
 
 **文獻搜尋 session**
 - 舊批次排除項目依 B 類規則重審 276 件：入庫 70、待判 92、維持排除 114（#151）。
 - B1 管理者瀏覽器摘要 33 件：入庫 8（KB-2026-0231～0235、KB-2025-0118～0120）、排除 3、仍待判 22（#154、#155）。
 - 政策積壓（#160）：再核 10 筆（升級 8、修正 2）；B-POL 待判入庫 7、重複 1、排除 2、仍待判 14；新增 O-EU-COUNCIL。
+- 臺港政策文件（#164、#166）：教育部 115 年教師、校長、家長數位與 AI 指引及《AI之學習應用手冊》三冊入庫（KB-2026-0239～0244，未核，首發日依本文記 2026-09）；香港 EDBCM 107/2026、156/2026 入庫（KB-2026-0245、0246，已核，首發日 2026-06-18、2026-08-25）。只有發文日期的「115年度中小學數位學習實施計畫說明」與「AI人才方舟計畫中文簡介」維持待判。
 
 **每日短訊**：10/10 查核 0 則（`research/drafts/2026-10-10-daily-check.md`，JMETP 記為不收）。排程 trig_013Gz1Pk85Fe18FZiuDc7HYv 每日 08:22（台北），提示已加上 `npm ci`、讀 PUBLICATION-CONTRIBUTING、不收出處清單、知識庫鏡像紀錄與查核紀錄格式。
 
 **待辦（依序）**
 - 10/15 前：重查本週 A1、A2；補查中國教育部與 UNESCO 本週動態；管理者決定首期週報 A 或 B（提醒 trig_01KQPmXM3FbFu4zxADDqFU8w）。
+- 10/14 09:30（台北）自我提醒 trig_01TUYt9Eb4ghwnkLVYbDgTNa：A1、A2 重查與中國教育部、UNESCO 補查（10/10 已查一輪：均無本期新項目）。
 - 10/16 首期週報：第一次用 renderer 走完整流程（claims → `render-site.js --write` → 閘門 → 網站一致），期別定為 `weekly/2026-10-09_10-15/`（管理者 2026-10-10 確認）。
-- 10/29 月報：`<main>` 分區已定為方案甲（renderer 固定分區文字＋整頁重產比對；claim 帶 `section`，趨勢以 `supporting_claim_ids` 綁定至少兩個研究群，見 [PUBLICATION-CONTRIBUTING.md](PUBLICATION-CONTRIBUTING.md)）；學者段落首次上場；學者清單附錄。香港 EDBCM 107/2026、156/2026 已轉搜尋 session 入庫。
+- 10/29 月報：依方案甲版面（#165）製作；學者段落首次上場；學者清單附錄；學者段首說明是否加學者清單連結待定。編輯 session 先以 10 月已入庫資料本機試跑產生器與閘門（不登錄、不出刊）。
 - 文獻搜尋 session：B1 待判 57；政策待判 14 與 pads 新線索（115 年教師、校長、家長指引，《AI之學習應用手冊》，高中評量注意事項）；卷期年待核 17；新線索 educsci16060987、cedtech/14619；#121 出處評估。
