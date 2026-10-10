@@ -107,3 +107,15 @@ body{background:var(--bg)}
   .rec-table .year{width:auto}
 }
 @media print{.site-header,.site-footer,.tabs{display:none}}
+.tag-guide .tg-lead{margin:0 0 12px}
+.tg-rows{margin:0;display:grid;gap:10px}
+.tg-row{display:grid;grid-template-columns:200px 1fr;gap:4px 16px;padding-top:10px;border-top:1px solid var(--border)}
+.tg-row dt{font-weight:700;font-size:15px}
+.tg-row dd{margin:0;display:flex;flex-direction:column;gap:2px;font-size:15px}
+.tg1 dd{color:var(--teal)}.tg2 dd{color:var(--blue-strong)}.tg3 dd{color:var(--navy)}
+.tg-limits{margin-top:12px;font-size:15px}
+.tg-limits summary{cursor:pointer;font-weight:700}
+.tg-limits ul{margin:8px 0 0;padding-left:1.2em}
+@media (max-width:700px){.tg-row{grid-template-columns:1fr}}
+.lead-note{font-size:15px;color:var(--muted);max-width:var(--measure);margin:-4px 0 14px}
+.rec-table .t,.tag-guide .t{white-space:nowrap;margin-right:.6em}
