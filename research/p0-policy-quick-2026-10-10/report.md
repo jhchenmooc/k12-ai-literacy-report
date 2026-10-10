@@ -51,3 +51,15 @@
   - 美國：ed.gov 回 403；Federal Register 查到 0 筆。
 - **讀不到：** 新加坡 MOE、澳洲、歐盟理事會、歐洲理事會、歐盟執委會。這幾處只能寫「搜尋未見」，不能寫「沒有發布」。
 - **下次再查：** 歐盟 Education Package 與 2030 數位教育路線圖的線索指向 2026-11，月報觀察期內要再查一次。
+
+## 補記：歐盟執委會《EU PISA 2025: First results – European Education Policy Brief》（2026-10-10 晚）
+
+- **來源：** 編輯 session 轉報。管理者決定採做法乙：只入知識庫，10 月月報不收。
+- **入庫：** KB-2026-0257，`record_type` 為 policy_review，`issued_by` 為 O-EU-EC，分類 K1。
+- **首發日：2026-10-05（日精度）。**
+  - 依據是官方新聞頁（Published 5 Oct 2026），頁面寫明執委會於 World Teachers' Day「published」這份簡報。
+  - 文件庫頁（`primary_url`）可讀，但頁面沒有標日期；簡報本體檔案未讀。
+- **範圍：** B，對象 k12（15 歲學生）。簡報把「uncritical use of AI」列為與 PISA 成績較弱相關的因素之一。
+- **成效與因果：** 簡報的分析是相關，不是因果，不得寫成成效或因果。
+- **快速檢索的讀取狀況更正：** 本報告「讀取情況」把歐盟執委會列為讀不到；2026-10-10 晚 education.ec.europa.eu 的新聞頁與文件庫頁可以讀到，工具指引已同步更新。
+- **待查清單：** [important-unresolved-watchlist.md](../important-unresolved-watchlist.md) 的香港《中小學數字教育發展藍圖》一列，框架已入庫為 KB-2026-0090，改為結案。

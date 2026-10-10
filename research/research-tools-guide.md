@@ -136,7 +136,7 @@ AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只�
 | 美國 ED | 403 | Federal Register API 可查 ED 公報文件（網址含方括號，**curl 要加 `-g`**，否則報 bad range）：`https://www.federalregister.gov/api/v1/documents.json?conditions[agencies][]=education-department&conditions[term]=artificial+intelligence&conditions[publication_date][gte]=YYYY-MM-DD` |
 | 英格蘭 DfE | 可讀 | GOV.UK Search API：`https://www.gov.uk/api/search.json?filter_organisations=department-for-education&order=-public_timestamp&count=40`（關鍵詞與時間排序同時用時篩選效果差） |
 | OECD | 403 | WebSearch |
-| 歐盟執委會（教育） | antibot 表單、列表未渲染 | WebSearch |
+| 歐盟執委會（教育） | 2026-10-10 education.ec.europa.eu 新聞頁與文件庫頁可讀（HTTP 200）；先前曾遇 antibot 表單、列表未渲染 | 直接讀新聞頁；讀不到時用 WebSearch |
 | 歐洲理事會（coe.int、rm.coe.int） | Cloudflare 403，建議全文 PDF 亦同 | 請管理者用瀏覽器開啟另存（9 月月報引文即如此核對） |
 | 澳洲 Department of Education／部長新聞 | 503、HTTP/2 錯誤 | WebSearch |
 | 新加坡 MOE | 2026-10-09 B-POL 實測 moe.gov.sg 可讀；新聞列表偶為轉址 JS 頁、空內容 | WebSearch；國會答覆另查 |
