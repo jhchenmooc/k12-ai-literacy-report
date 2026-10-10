@@ -1,5 +1,5 @@
 calib_id,kind,work_id,doi,kb_record,answer_class,answer_dims,answer_stage,answer_source,synthetic_text,note
-R01,real,W7164807291,10.1080/10494820.2026.2677729,KB-2026-0144,A,T-BAS;T-TEA,在職教師（K-12）,p0-ailit-classify-2026-10-09/step3-kb-part2.json,,接受度研究：依方案第 2.5 節操作細則可能應判 B，與既有判斷 A 衝突；待編輯 session 核對（見 open-questions.md Q5）
+R01,real,W4415833369,10.1080/10494820.2025.2575016,KB-2025-0062,A,S-BAS;S-LRN,高中（含中職）,p0-ailit-classify-2026-10-09/step3-kb-part3.json,,取代原 R01（KB-2026-0144，教師對 AI 的接受度；依方案接受度細則應判 B，邊界不清楚）。依編輯 session 2026-10-10 裁定，以種子 20281268（用途代碼 8）從 records.json 有摘要的 A 類期刊紀錄（排除已抽中者）洗牌後取第一筆。
 R02,real,W7138011408,10.1007/s10956-026-10302-y,KB-2026-0031,A,T-ETH;T-TEA,在職教師（K-12）,p0-ailit-classify-2026-10-09/step3-kb-part3.json,,
 R03,real,W4406107150,10.1016/j.caeai.2025.100363,KB-2025-0020,A,T-BAS;T-TEA,在職教師（K-12）,p0-ailit-classify-2026-10-09/step3-kb-part2.json,,
 R04,real,W7134935726,10.1109/tlt.2026.3672830,KB-2026-0056,A,S-BAS;S-SYS,K-12 未細分,p0-ailit-classify-2026-10-09/step3-kb-part1.json,,
@@ -29,3 +29,4 @@ S11,synthetic_boundary,,,,B,,,文獻搜尋 session 擬定，待編輯 session �
 S12,synthetic_boundary,,,,B,,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. Secondary teachers complete a technology-acceptance (UTAUT) questionnaire about intention to use a specific chatbot for lesson planning.,B 邊界：接受度研究（方案操作細則）；B 子型 genai
 S13,synthetic_boundary,,,,A,S-ETH;S-BAS,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. Grade 6 pupils explore how a face-recognition demo can be biased and discuss fairness; pre/post questionnaires measure their understanding of bias in AI.,A 邊界：用 AI 示範教 AI 偏見
 S14,synthetic_boundary,,,,A,T-PD;T-TEA,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. In-service primary teachers attend a workshop on using generative AI for lesson design; the study reports changes in their AI-TPACK.,A 邊界：生成式 AI 教學培訓，兼有工具使用
+S15,synthetic_boundary,,,,B,T-TEA,,文獻搜尋 session 擬定，待編輯 session 核對,"Synthetic. Secondary English teachers answer a questionnaire based on the technology acceptance model about their perceived usefulness of, and intention to keep using, an AI writing tool in their classes; structural equation modelling links the factors.",B 邊界：教師對特定 AI 工具的接受度（方案接受度細則）。素材來自原 R01（KB-2026-0144），文字為自擬改寫，不是該論文摘要；B 子型 other

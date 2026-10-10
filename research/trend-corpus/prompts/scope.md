@@ -37,11 +37,7 @@ Do NOT open or read any file in the repository's `research/knowledge-base/`,
 7. B sub-type, first match in this order: `genai` (LLM/ChatGPT/generative) → `its_adaptive` →
    `robot_agent` (robots, pedagogical agents, chatbots stated to be rule-based) → `other`
    (including chatbots whose type is not stated).
-8. Not an education setting → **C** (write "非教育情境" in the rationale): public opinion about AI,
-   workplace AI risk, general essays on AI ethics in society, home use of assistants with no learning
-   activity. Studies of EdTech companies, schools or education authorities on AI ethics or governance
-   ARE education settings.
-9. ITS rule 4: decide by whether learners or teachers actually used the system and their data were
+8. ITS rule 4: decide by whether learners or teachers actually used the system and their data were
    collected in this study.
 
 ## Output

@@ -16,7 +16,7 @@
 | [codebook-v1.md](codebook-v1.md) | 編碼手冊 v1 |
 | [prompts/](prompts/) | 範圍判斷、第一次編碼、第二次編碼三組提示，附 `SHA256SUMS` |
 | [journals.csv](journals.csv) | J01–J47 的 source ID、面板判定、面板分層、摘要覆蓋率 |
-| [calib.csv](calib.csv) | 校準集，真實 16 筆、合成 14 筆 |
+| [calib.csv](calib.csv) | 校準集，真實 16 筆、合成 15 筆 |
 | [refset.csv](refset.csv) | 召回參考集，目前只有表頭 |
 | [systematic-reviews.md](systematic-reviews.md) | 系統性回顧候選清單 |
 | [pilot-2022/](pilot-2022/) | 2022 年試編 20 篇的結果，不含摘要與證據原文 |
