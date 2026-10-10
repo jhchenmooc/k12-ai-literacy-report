@@ -1,0 +1,6 @@
+Computers and Education: Artificial Intelligence (Elsevier) | Available online 2026-08-24 | Measuring Acceptance of Age-Tiered AI Literacy Guidebooks: A Developmentally Informed Study of K-12 Students and Teachers | https://doi.org/10.1016/j.caeai.2026.100661 | Abstract and journal pre-proof Sec. 3.1–3.2, supplied by the manager from the publisher page (2026-10-10)
+This study examined acceptance of the AI Learning Application Guidebook, developed in Elementary and Advanced editions for learners aged 9–12 and 13–18, respectively.
+The guidebooks were evaluated in Taiwanese classrooms by 831 participants (794 students and 37 teachers).
+The study did not measure AI literacy achievement, learning gains, actual adoption, or sustained use; therefore, the findings indicate short-term acceptance and perceived readiness for further use after initial guided exposure, not implementation effectiveness or learning outcomes.
+Development was aligned with the Ministry of Education’s AI Education Action Plan and the Digital Learning Enhancement Program, with priorities on ethical safety, age-related suitability, and equitable access.
+Data collection occurred in November 2025 during the inaugural large-scale deployment of the AI Learning Application Guidebooks on Taiwan’s Adaptive Learning Platform.
