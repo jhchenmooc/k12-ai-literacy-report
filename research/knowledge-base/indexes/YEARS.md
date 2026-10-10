@@ -206,7 +206,7 @@
 | KB-2026-0097 — [Final Priority and Definitions—Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education](https://www.federalregister.gov/documents/2026/04/13/2026-07087/final-priority-and-definitions-secretarys-supplemental-priority-and-definitions-on-advancing) | binding_policy | 2026-04-13 | bibliographic_checked |
 | KB-2026-0173 — [臺灣中小學教師與學生AI素養框架](https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&old=upload) | framework | 2026-06-18 | bibliographic_checked |
 | KB-2026-0236 — [인공지능(AI) 교과, 교원이 주도하여 교육자료부터 인정교과서까지 만든다](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107049&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | government_announcement | 2026-08-27 | bibliographic_checked |
-| KB-2026-0238 — [Council conclusions on teachers in the era of artificial intelligence (AI)](https://data.consilium.europa.eu/doc/document/ST-9003-2026-INIT/en/pdf) | official_guidance | 2026-05-26 | bibliographic_checked |
+| KB-2026-0238 — [Council conclusions on teachers in the era of artificial intelligence (AI)](https://data.consilium.europa.eu/doc/document/ST-9003-2026-INIT/en/pdf) | official_guidance | 2026-05-11 | bibliographic_checked |
 
 ## 2026｜issue_year
 
