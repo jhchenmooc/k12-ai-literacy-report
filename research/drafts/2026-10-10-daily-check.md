@@ -19,7 +19,7 @@
 
 | 項目 | 首次線上 | 範圍 | 對象 | 處理 |
 |---|---|---|---|---|
-| `10.70767/jmetp.v3i7.1312` Construction of an Indicator System and Enhancement Strategies for Artificial Intelligence Literacy of Primary and Secondary School Teachers（Journal of Modern Educational Theory and Practice，Atlantic Academic Press） | 2026-10-08（Crossref 記載，未核出版者頁） | A（T-PD、T-BAS、T-ETH） | k12 | **不匯入，列觀察**。期刊不在監測清單，同儕審查與品質未核；Crossref 沒有作者資料。依 v1.1 規則，匯入就要建知識庫候選紀錄，所以先交管理者決定。 |
+| `10.70767/jmetp.v3i7.1312` Construction of an Indicator System and Enhancement Strategies for Artificial Intelligence Literacy of Primary and Secondary School Teachers（Journal of Modern Educational Theory and Practice，Atlantic Academic Press） | 2026-10-08（Crossref 記載，未核出版者頁） | A（T-PD、T-BAS、T-ETH） | k12 | **不收**（管理者 2026-10-10 決定）。出版者頁確認作者為廣州市花都區團結小學 Yanxuan Huang，上線日 2026-10-08。但正文只描述層級分析法的步驟，沒有專家組成、判斷矩陣、權重數值或一致性比率，摘要宣稱的量化權重並未完成。期刊品質也無法核實。出版商 Atlantic Academic Press 已列入[期刊清單的不收出處](../venue-watchlist.md)。 |
 | `10.3389/feduc.2026.1968743` Teachers' perceptions of AI integration…Riphah International University, Pakistan（Frontiers in Education，J29） | 2026-10-09 | B（T-TEA） | higher_ed（大學 BS 至 PhD 層級的教師） | 不匯入。對象不能進每日短訊或週報，月報可再評估 |
 | `10.71222/n6s26e39` Generative AI on Mathematical Thinking and Agency in K-12（European Journal of Education Science） | 2026-08-10 | 未判 | 未判 | 不匯入。首次線上日已超過 7 天窗口 |
 | arXiv `2610.10743` What does it mean to use AI critically? critical AI literacy through students' evaluation | 2026-10-07 | A（S-ETH） | unknown（摘要只寫 students） | 不匯入。對象不明，預印本 |

@@ -237,3 +237,20 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
 - **叢書拆分**：LNCS「Mindful TEL: Learning Technologies Shaped with Intention」為 EC-TEL 2026 論文集，屬既有 C10，查核入口加上 ISBN 9783032379788、9783032379818。
 - **技術限制**：`research/validate-knowledge-base.js` 目前只接受 J01–J39、C01–C22 作為 `published_in` 代碼；J40 以後要等驗證程式放寬後，才能把已入庫論文（KB-2026-0128 Informatics in Education、KB-2026-0133 EJTE、KB-2026-0134 TPE）連到新代碼。本次只改清單，不改驗證程式。
 
+
+### 不收出處：每日與週檢索直接排除（2026-10-10 管理者決定）
+
+以下出處在每日、週、月檢索命中時，一律直接排除：不匯入候選池、不入庫、不上任何刊物。查核紀錄只寫「依不收出處排除」，不必每次重查。若要恢復收錄，須由管理者另行決定。
+
+| 出處 | 範圍 | 理由 | 查核紀錄 |
+|---|---|---|---|
+| Atlantic Academic Press Limited 旗下期刊（含 Journal of Modern Educational Theory and Practice，ISSN 3065-3193／3065-3185，DOI 前綴 `10.70767`） | 整個出版商 | 見下方說明 | [2026-10-10 每日查核紀錄](drafts/2026-10-10-daily-check.md) |
+
+**Atlantic Academic Press 不收的理由：**
+- 期刊 2024 年才創刊，出版商登記地址是紐約一個公寓單位。
+- 自稱採雙盲審查，但網站未載審查流程與時程，文章也未載收稿與接受日期。
+- 編輯團隊只列姓名與國別，沒有任職單位。
+- 產量快：OpenAlex 統計 2026 年已 117 篇，總被引 51 次，h-index 3。未收錄於 DOAJ。
+- 樣本論文 `10.70767/jmetp.v3i7.1312` 的摘要宣稱「以層級分析法取得指標權重」，但正文沒有專家組成、判斷矩陣、權重數值或一致性比率。
+
+這些事實不足以證明它是掠奪性出版商，但審查品質無法核實，不符合本清單「同儕審查狀態可查核」的要求。
