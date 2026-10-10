@@ -369,7 +369,7 @@
      "kind": "osf"
     }
    ],
-   "abstract_source": "none",
+   "abstract_source": "出版者未提供摘要（Scopus 文件類型 Note，Abstract 欄為 [No abstract available]；2026-10-10 管理者 Scopus 匯出）",
    "population": "unknown",
    "population_evidence": "",
    "ai_lit_class": "unknown",
@@ -378,7 +378,7 @@
    "audience": "unknown",
    "countries": [],
    "new_decision": "still_pending",
-   "reason": "本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；Springer 頁本輪回 JS「Client Challenge」頁（未繞過）；題名搜尋（arXiv、OSF、ERIC、OpenAlex）未見其他版本。缺：摘要與學段。",
+   "reason": "Scopus 文件類型 Note，無摘要（2026-10-10 管理者 Scopus 匯出）；AI & Society 41(2):1275–1276，屬兩三頁短評，比照 Frontiers Opinion 處理，維持待判。先前紀錄：本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；Springer 頁本輪回 JS「Client Challenge」頁（未繞過）；題名搜尋（arXiv、OSF、ERIC、OpenAlex）未見其他版本。缺：摘要與學段。",
    "first_public_date": "2025-09-19",
    "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
    "category_suggestion": null,
@@ -442,7 +442,7 @@
      "kind": "osf"
     }
    ],
-   "abstract_source": "none",
+   "abstract_source": "出版者未提供摘要（Scopus 文件類型 Note，Abstract 欄為 [No abstract available]；2026-10-10 管理者 Scopus 匯出）",
    "population": "unknown",
    "population_evidence": "",
    "ai_lit_class": "unknown",
@@ -451,7 +451,7 @@
    "audience": "unknown",
    "countries": [],
    "new_decision": "still_pending",
-   "reason": "本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；Springer 頁本輪回 JS「Client Challenge」頁（未繞過）；題名搜尋（arXiv、OSF、ERIC、OpenAlex）未見其他版本。缺：摘要與學段。",
+   "reason": "Scopus 文件類型 Note，無摘要（2026-10-10 管理者 Scopus 匯出）；AI & Society 41(2):1269–1271，屬兩三頁短評，比照 Frontiers Opinion 處理，維持待判。先前紀錄：本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；Springer 頁本輪回 JS「Client Challenge」頁（未繞過）；題名搜尋（arXiv、OSF、ERIC、OpenAlex）未見其他版本。缺：摘要與學段。",
    "first_public_date": "2025-09-19",
    "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
    "category_suggestion": null,
@@ -596,7 +596,7 @@
      "kind": "osf"
     }
    ],
-   "abstract_source": "none",
+   "abstract_source": "出版者未提供摘要（Scopus 文件類型 Note，Abstract 欄為 [No abstract available]；2026-10-10 管理者 Scopus 匯出）",
    "population": "unknown",
    "population_evidence": "",
    "ai_lit_class": "unknown",
@@ -605,7 +605,7 @@
    "audience": "unknown",
    "countries": [],
    "new_decision": "still_pending",
-   "reason": "本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；Springer 頁本輪回 JS「Client Challenge」頁（未繞過）；題名搜尋（arXiv、OSF、ERIC、OpenAlex）未見其他版本。缺：摘要與學段。",
+   "reason": "Scopus 文件類型 Note，無摘要（2026-10-10 管理者 Scopus 匯出）；AI & Society 41(1):475–476，屬兩三頁短評，比照 Frontiers Opinion 處理，維持待判。先前紀錄：本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；Springer 頁本輪回 JS「Client Challenge」頁（未繞過）；題名搜尋（arXiv、OSF、ERIC、OpenAlex）未見其他版本。缺：摘要與學段。",
    "first_public_date": "2025-07-03",
    "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
    "category_suggestion": null,

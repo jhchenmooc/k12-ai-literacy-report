@@ -1,0 +1,140 @@
+# 編輯 session 交辦四項：教育部指引官方頁、政策重試、B1、Diamond Scientific（2026-10-10）
+
+> **性質：** 這是人工搜尋輔助的查核紀錄，不是認證。查詢子代理與整合者是同一模型，不算獨立審閱。
+>
+> **請求規則：** 所有請求都沒有帶 email、mailto 或金鑰，沒有繞過 captcha、403 或 Cloudflare，TLS 驗證全程開著，也沒有用程式操控瀏覽器。下載檔只放 scratchpad，不入 repo。
+>
+> **交辦：** 編輯 session（session_01XLm9YebBcin2xA95hg9kye）2026-10-10 交辦，期限 10/13。
+
+## 一、KB-2026-0259 教育部官方頁：搜尋未見
+
+- **結論：** 2026-10-10 18:05–18:11 UTC 查過下列各處，都沒有找到《高級中等以下學校人工智慧使用和學習指引》的教育部官方公告頁或原件下載頁。`primary_url` 維持新竹縣轉載網址。
+- **查過的地方：**
+  - WebSearch 9 個查詢，包括題名、「人工智慧使用和學習指引 教育部」、函號 1152701618，以及限定 edu.tw、k12ea.gov.tw、moe.gov.tw 網域的查詢。結果全是學校轉載，沒有部會網域。
+  - 教育部即時新聞列表，涵蓋 115-03-23～115-10-10，HTTP 200。
+  - 資科司的首頁、電子布告欄、資料下載、即時新聞、校園資訊應用與推廣，以及四個數位學習相關頁，都是 HTTP 200。
+  - 國教署最新消息、即時新聞、公文公告平台的關鍵字搜尋，HTTP 200。
+  - 教育部主管法規查詢系統：關鍵字「人工智慧」有 3 筆，都無關；函號查詢 0 筆。
+  - pads.moe.edu.tw 的 download2.php、「115年中小學數位與AI教學指引」分類、「中小學使用生成式人工智慧注意事項」分類、news.php，HTTP 200。分類裡只有教師、校長、家長指引與注意事項，沒有這份總指引。
+- **發送方式：** 屏東縣政府 115-06-15 的轉發函（屏府教發字第 1155107876 號）寫「依據教育部115年6月5日臺教資(一)字第1152701618號函辦理」，但沒有附教育部網址。看來本指引是以公文附件發送，教育部可能沒有另設公告頁。這是推論，沒有證實。
+- **其他轉載的比對：**
+  - 臺中大里高中轉載版（public.dali.tc.edu.tw/rules/doc/2025/pdf/810-11.pdf）：大小同為 333,083 bytes、15 頁，文字和新竹版完全相同。只有 PDF 修改日不同，所以 SHA-256 不同。
+  - 屏東三校轉載版：轉發函 1 頁加指引 15 頁，指引的文字相同。
+- **修訂版與期內公告：** 搜尋未見晚於 2026-06-05 的修訂版。10/09～10/15 也沒有和本指引相關的官方公告。
+- **線索：** pads 資料下載頁上的「115年中小學AI之學習應用手冊」與「臺灣教師與學生AI素養框架」，是本指引前言提到的配套文件，但不是本指引本身。這次沒有下載。
+
+## 二、政策待判：只重試一次，仍讀不到
+
+| 待判 | 網址 | 2026-10-10 UTC | 結果 |
+|---|---|---|---|
+| B-US-04 | https://www.ed.gov/media/document/guidance-artificial-intelligence-use-schools-112052.pdf | 18:05:20 | 403 |
+| B-US-04 | ed.gov 新聞稿頁（依題名推測的網址） | 18:05:21 | 403 |
+| B-AU-01 | https://www.education.gov.au/node/20276 | 18:05:21、18:05:30 | HTTP/2 連線中斷；改 HTTP/1.1 仍是空回應 |
+| B-AU-02 | https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation | 18:05:22、18:06:01 | 同上 |
+| C-09 | https://www.oecd.org/en/about/projects/pisa-2029-media-and-artificial-intelligence-literacy.html | 18:05:23 | 403 |
+| C-12 | https://www.oecd.org/en/publications/what-should-teachers-teach-and-students-learn-in-a-future-of-powerful-ai_ca56c7d6-en.html | 18:05:23 | 403 |
+
+- 五件都維持待判。
+- 中國 2 件、臺灣評量注意事項、UNESCO 3 件，這次沒有新證據，維持現有判斷，也沒有再查。
+
+### 需管理者用瀏覽器另存的清單
+
+| 待判 | 要存的內容 | 網址 |
+|---|---|---|
+| C-18 | 歐洲理事會 CM/Rec(2026)12 正式文本，含編號與通過日 | https://search.coe.int/cm?i=CM/Rec(2026)12 ；新聞頁 https://www.coe.int/en/web/portal/-/new-council-of-europe-recommendation-places-education-at-the-heart-of-response-to-ai |
+| C-09 | OECD PISA 2029 MAIL 框架官方頁，含題名、首發日、版本 | https://www.oecd.org/en/about/projects/pisa-2029-media-and-artificial-intelligence-literacy.html （國家教育研究院轉載的初稿只當線索） |
+| C-12 | OECD〈What should teachers teach and students learn in a future of powerful AI?〉出版頁，含日期與範圍 | https://www.oecd.org/en/publications/what-should-teachers-teach-and-students-learn-in-a-future-of-powerful-ai_ca56c7d6-en.html |
+| B-US-04 | 美國教育部 AI 經費運用指引原件 | https://www.ed.gov/media/document/guidance-artificial-intelligence-use-schools-112052.pdf |
+| B-AU-01 | 澳洲政府對國會《Study Buddy or Influencer》報告的回應 | https://www.education.gov.au/node/20276 |
+| B-AU-02 | 部長新聞稿〈Draft schools AI framework open for consultation〉 | https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation |
+
+### 補記：管理者另存的三份原文（2026-10-10 晚，由編輯 session 核對書目）
+
+- **核對方式：** 三份 PDF 由管理者用瀏覽器另存，放在編輯 session 的 scratchpad，不入 repo。文獻搜尋 session 讀不到這三份檔案，以下書目照抄編輯 session 從原件讀出的內容。
+- **C-18：** Recommendation CM/Rec(2026)12 of the Committee of Ministers to member States on artificial intelligence literacy。
+  - 通過：首頁寫「Adopted by the Committee of Ministers on 2 September 2026 at the 1567th meeting of the Ministers' Deputies」，首發日依此記 2026-09-02。
+  - 性質：歐洲理事會部長委員會的建議，不具拘束力，可歸 official_guidance。
+  - 引用：序言提到兒童權利公約，也引用 OECD／EC 的 K-12 AI Literacy Framework 草案（2025）。
+  - 未完成：編輯 session 只核了第 1～2 頁。學段與對象要讀正文才能判，文獻搜尋 session 讀不到原件，所以**還沒判，暫不入庫**。
+  - 月報：首發日早於 10 月月報觀察期，不進月報。
+- **C-12：** OECD Education Spotlights No. 20〈What should teachers teach and students learn in a future of powerful AI?〉。
+  - 版本：頁尾「© OECD 2025」，共 14 頁。內容來自 2024 年 9 月與美國科學教育學者的專家工作坊，談的是課程。
+  - 首發日：Crossref published-online 是 2025-05-23。依「只有 Crossref 不採」的規則，首發日記 unknown。
+  - 學段：還沒依正文判斷。
+- **C-09：** 〈Navigating an Evolving Digital World: First draft of the PISA 2029 Media and Artificial Intelligence Literacy (MAIL) Assessment Framework〉。
+  - 版本：© OECD 2026，63 頁，文件寫明「preliminary draft… subject to revisions before the final version is released」，屬草案。
+  - 作者：OECD 秘書處與 MAIL 專家組。
+  - 首發日：文件沒有到日的發布日，記 unknown。
+  - 入庫：以 draft 入庫與否，待管理者決定。
+- **其餘：** B-US-04 與澳洲 2 件，當時管理者還沒提供原文；之後已提供，見補記二。
+
+### 管理者決定與入庫（2026-10-10 晚）
+
+- **正文證據：** 編輯 session 讀了 C-18 與 C-12 的正文，回傳短摘錄與段落位置。文獻搜尋 session 依這些摘錄判讀；全文仍只在編輯 session 的 scratchpad。
+- **管理者決定：** 三件都入庫。C-18、C-12 判 A，C-09 以 draft 入庫。決定來源是 2026-10-10 管理者在文獻搜尋 session 直接回答的三題選擇題。
+
+| 紀錄 | 待判 | record_type | 首發日 | 分類 | 範圍判讀 |
+|---|---|---|---|---|---|
+| KB-2026-0260 | C-18 | official_guidance | 2026-09-02（日精度，文件所載通過日） | K1，O-COE | A；對應 S-BAS、S-ETH、T-PD。適用「all relevant levels of education」，沒有限定中小學。但正文明寫把 AI 素養納入國家課程（III.B §33a）、在學校試辦（§33d）、師資培育（§36b），依決定 6 算「明寫包含中小學」。對象是全體人口與各級教育，不是 K-12 專屬。 |
+| KB-2025-0134 | C-12 | policy_review | unknown（只有 Crossref 2025-05-23，不採） | K1，O-OECD，DOI 10.1787/ca56c7d6-en | A，對應 S-BAS。主題是 AI 時代中小學課程該教什麼，以美國 NASEM K-12 科學教育框架為例；對象是決策者與課程設計者。管理者決定判 A，文獻搜尋 session 原本的建議是維持待判（C 邊界）。 |
+| KB-2026-0261 | C-09 | draft | unknown（文件沒有到日的發布日） | K3，O-OECD | A，對應 S-BAS、S-ETH。PISA 2029 媒體與 AI 素養評量框架初稿，文件自稱 preliminary draft，定稿前會修訂。定稿出來後另立紀錄並建 `revises` 關係。 |
+
+- **共同欄位：** 三筆都是 `discovered_unverified`，因為文獻搜尋 session 沒有直接讀原件。`primary_url` 是管理者另存的官方頁，文獻搜尋 session 讀這些頁仍回 403（coe.int 則被 Cloudflare 擋）。
+- **月報與週報：** 三件的首發日都早於 10 月月報觀察期，或是不明，所以都不進月報，也不進首期週報。
+
+### 補記二：美國與澳洲三份原文（2026-10-10 晚）
+
+- **核對方式：** 管理者用瀏覽器另存原件，編輯 session 核對書目並回傳短摘錄。原件不入 repo。文獻搜尋 session 依這些摘錄判讀，判讀規則見[範圍判斷準則](../ai-literacy-scope-criteria.md)。
+
+| 紀錄 | 待判 | record_type | 首發日 | 分類 | 判讀 |
+|---|---|---|---|---|---|
+| KB-2026-0262 | B-AU-01 | policy_review | 2026-04（月精度，封面「TABLING APRIL 2026」） | K1，O-AU-EDU，AU | **A**，對應 S-BAS、T-PD、S-ETH。這是澳洲政府對國會《Study Buddy or Influencer》生成式 AI 調查報告的回應，對各項建議多寫「notes」。內容以學校為主（ACARA、AITSL、ESA），也涉及高教（TEQSA），並提到 Digital Literacy 通用能力與 AI 素養。屬混合學段，但明寫包含中小學。 |
+| KB-2023-0012 | B-AU-02 | government_announcement | 2023-07-28（日精度，部長新聞稿所載日期） | K1，O-AU-EDU，AU | **A**，對應 S-ETH、T-ETH，對象 k12。教育部長新聞稿，宣布學校 AI 框架草案公開徵詢，由 NSW 教育部擔任秘書處。徵詢結果用於 KB-2023-0001《Australian Framework for Generative AI in Schools》定稿（2023-12-01）。這是新聞稿，不是草案本身，所以**不建** `revises` 關係，只在這裡註明兩者的前後關係。 |
+| KB-2025-0135 | B-US-04 | official_guidance | 2025-07-22（原件所印「Date: July 22, 2025」） | K1，O-US-ED，US | **B**，對應 T-TEA、S-LRN。美國教育部長 Dear Colleague letter，說明聯邦補助款可用於 AI 教材、AI 家教、升學與職涯輔導。學段寫「all subjects, grade levels」，含升學銜接；直接提到 K-12 的只有倫理原則一句（「Within the K-12 realm in particular, educators should help students … learn with – rather than exclusively from – AI」）。主體是 AI 工具的使用，AI 素養只占一句，所以判 B。`primary_url` 是 https://www.ed.gov/media/document/opepd-ai-dear-colleague-letter-7222025-110427.pdf ，依據是管理者以瀏覽器開啟並另存（2026-10-10 確認），文獻搜尋 session 讀取仍回 403。先前清單上的 guidance-artificial-intelligence-use-schools-112052.pdf 是先前的線索網址，未核。 |
+
+- **共同欄位：** 三筆都記 `discovered_unverified`。
+- **月報與週報：** 三件的首發日都早於 10 月月報觀察期，不進月報，也不進首期週報。
+- **政策待判：** 原 12 件中，入庫 6 件（C-18、C-12、C-09、B-US-04、B-AU-01、B-AU-02），其餘 6 件不變：中國 2 件、臺灣評量注意事項 1 件、UNESCO 3 件。
+
+## 三、B1 待判 41 件
+
+- **Scopus 補摘要：** 編輯 session 核對後，只有 3 件 AI & Society 需要（10.1007/s00146-025-02609-y、10.1007/s00146-025-02606-1、10.1007/s00146-025-02458-9），清單已由編輯 session 直接交給管理者。文獻搜尋 session 沒有另外列。
+  - **Scopus 結果（2026-10-10 管理者一般檢索加正式匯出）：** 三件的文件類型都是 Note，Abstract 欄都是「[No abstract available]」：
+    - 02606-1：41(2):1269–1271。
+    - 02609-y：41(2):1275–1276。
+    - 02458-9：41(1):475–476。
+  - **判讀：** 這三件是兩三頁的短評，出版者沒有提供摘要。比照 Frontiers 兩篇 Opinion 的處理，維持待判，已更新到 [b1-results.json](../p0-pending-final-2026-10-10/b1-results.json)。匯出檔沒有入 repo。
+- **其餘：** 學段不明或混合的 23 件、AI 素養歸類不明的 1 件、管理者已決定待判的 7 件，這次都不動，沒有放寬規則，也沒有再查。
+
+## 四、Diamond Scientific Publishing 出版商查核
+
+> **管理者決定（2026-10-10，經編輯 session 轉達）：** 整個出版商列為不收出處，已寫入 [venue-watchlist.md](../venue-watchlist.md)「不收出處」一節。比對依據是 DOI 前綴 `10.33422`、出版商名稱，以及 ISSN 2669-0667。
+
+> **更正縮寫：** [p0-pending-final](../p0-pending-final-2026-10-10/report.md) 第三節寫「EJTE 的出版商 Diamond Scientific」，這裡的 EJTE 指 European Journal of Teaching and Education（ISSN 2669-0667，DOI 前綴 `10.33422`）。監測清單的 J44 是 European Journal of Teacher Education（Taylor & Francis，ISSN 0261-9768），已入庫的 KB-2026-0133 也是這本，清單第 238 行也簡寫成 EJTE。兩本刊名的縮寫相同，所以不收規則**不可用「EJTE」比對**，要用 DOI 前綴、ISSN 和出版商名稱。
+
+- **建議：** 整個出版商列為不收出處，以 DOI 前綴 `10.33422`（Crossref 會員 18905，Mokslinės leidybos deimantas, MB，登記地 Vilnius）界定。這只是建議，由管理者決定，這次沒有改清單。
+- **理由：** 不寫成「比照 Atlantic」，而是寫成「以會議為主的商業模式，加上審查無法核實」。
+  1. **主業是會議：**
+     - Crossref 上約 5,300 個 DOI，其中 Conference Paper 有 3,113 個。
+     - 2025-01-01～2026-10-10 共 948 個 DOI，大多屬約 100 個會議論文集，旗下 15 本期刊合計約 330 篇。
+     - 出版商頁連到 57 個會議網站。抽查 etconf.org，宣稱論文可登上 Scopus、WoS、DOAJ 期刊，但自家期刊在 DOAJ 是 0 筆。
+  2. **審查品質無法從外部核實：** 自稱雙盲審查，但 DOAJ 和 OpenAlex（is_in_doaj=false）都沒收錄，Scopus、WoS 也查不到收錄證據。
+  3. **出版紀錄有瑕疵：**
+     - 2025 年起有 37 組同一論文編號、不同 DOI 的登錄，可能只是 Crossref 登錄錯誤。
+     - 2019～2022 年有 16 篇期刊論文和自家會議論文同名。
+  4. **排除的代價小：** 2025 年起全部 923 篇（OpenAlex）中，#121 的 AI×K-12 查詢只命中 9 篇，真正相關的約 2～3 篇。例如 `10.33422/ejte.v8i3.1872`（瑞典中學教師），沒有逐篇判讀。
+- **和 Atlantic Academic Press 的不同：** Diamond 的透明度明顯較好。
+  - 2019 年創刊，出版商已營運約 8 年。
+  - 網站寫明審查流程，2025 年起 44 篇都標了投稿日與接受日：中位數 58.5 天，30 天內接受的有 8 篇。
+  - 編委都列了單位。
+  - 有一個小疑點：副主編沒有單位，信箱是出版商的公用信箱。
+- **替代方案：** 只把 European Journal of Teaching and Education 列為不收，其餘逐篇判。但這樣每次檢索都要重查，不符合不收出處「不必每次重查」的用意。
+- **不確定：**
+  - 沒查付費觀察名單（例如 Cabells）。WebSearch 沒找到具名的掠奪性出版討論，但這不等於已經確認沒有問題。
+  - 會議網站和出版商是否同一主辦方，是從出版商頁上的連結推斷的。
+  - 沒有抽查全文的方法品質。
+- **證據：** 出版商網站、DOAJ API、Crossref 期刊／前綴／會員 API、OpenAlex sources 與計數查詢，2026-10-10 18:05–18:08 UTC，都是 HTTP 200。會議論文集頁回 HTTP 500，但有回傳內容。
+
+## 週報標記（10/09～10/15）
+
+這四項都沒有首次公開日落在 10/09～10/15、對象為 k12 的新項目。
