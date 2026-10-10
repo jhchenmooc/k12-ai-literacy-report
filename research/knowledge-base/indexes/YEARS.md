@@ -219,6 +219,7 @@
 | KB-2026-0094 — [MOE Committee of Supply Debate 2026 Response by Minister of State for Education Jasmin Lau](https://www.moe.gov.sg/news/speeches/20260303-moe-committee-of-supply-debate-2026-response-by-minister-of-state-for-education-jasmin-lau) | government_announcement | 2026-03-03 | discovered_unverified |
 | KB-2026-0095 — [打造AI智慧教育新生態─AI人才方舟計畫（115–118年）](https://www.ey.gov.tw/Page/448DE008087A1971/69349d8a-b2be-406c-a997-8bf919259f85) | government_announcement | 2026-05-21 | bibliographic_checked |
 | KB-2026-0097 — [Final Priority and Definitions—Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education](https://www.federalregister.gov/documents/2026/04/13/2026-07087/final-priority-and-definitions-secretarys-supplemental-priority-and-definitions-on-advancing) | binding_policy | 2026-04-13 | bibliographic_checked |
+| KB-2026-0173 — [臺灣中小學教師與學生AI素養框架](https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&old=upload) | framework | 2026-06-18 | bibliographic_checked |
 
 ## 2026｜issue_year
 
@@ -432,6 +433,5 @@
 | KB-2026-0100 — [Generative Artificial Intelligence (AI) in K-12 Classrooms Guidance (v3.0, web-based)](https://www.oregon.gov/ode/educator-resources/teachingcontent/Pages/Generative-Artificial-Intelligence-%28AI%29-for-K-12-Schools.aspx) | official_guidance | 未知 | bibliographic_checked |
 | KB-2026-0101 — [Guidelines regarding the use of generative AI](https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/guidelines-regarding-use-of-generative-ai) | official_guidance | 未知 | bibliographic_checked |
 | KB-2026-0102 — [Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators](https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators) | official_guidance | 未知 | discovered_unverified |
-| KB-2026-0173 — [臺灣中小學教師與學生AI素養框架](https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&old=upload) | framework | 未知 | bibliographic_checked |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
