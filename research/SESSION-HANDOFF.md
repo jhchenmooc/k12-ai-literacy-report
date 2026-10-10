@@ -646,3 +646,19 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 
 
 **新編輯 session 接手（2026-10-10）**：session_01XLm9YebBcin2xA95hg9kye（以 main `522ac2a` 起讀本段接手）。文獻搜尋 session 不變（session_01EdyajNQzH5bBmza4TgNoff）。
+
+### 2026-10-10 深夜（續）｜新編輯 session 接手後（#198–#199 與趨勢方案 v0.13；新 Session 以此段為準）
+
+- **排程**：舊編輯 session 的三個提醒已停用；每日短訊（08:22）、10/14 09:30 重查、10/15 09:00 週報決定準備都綁定新編輯 session（session_01XLm9YebBcin2xA95hg9kye）。
+- **數字更正**：B1 待判為 **41 件**（不是約 57；見 `research/p0-pending-final-2026-10-10/report.md`）。
+- **#199（文獻搜尋 session）**：
+  - 政策原文 6 件入庫：KB-2026-0260 CM/Rec(2026)12、KB-2025-0134 OECD Spotlights No.20、KB-2026-0261 PISA 2029 MAIL 初稿（draft）、KB-2026-0262 澳洲政府回應、KB-2023-0012 澳洲框架草案徵詢新聞稿、KB-2025-0135 美國教育部 Dear Colleague letter（B）。
+  - 原件由管理者以瀏覽器另存，只放編輯 session 的 scratchpad，未 commit。
+  - C-18、C-12 判 A，是管理者在文獻搜尋 session 直接決定的。
+  - 知識庫 426 筆紀錄、1087 筆關係；政策待判剩 6 件（中國 2、臺灣評量注意事項 1、UNESCO 3），都沒有新證據。
+- **管理者決定（2026-10-10）**：
+  - Diamond Scientific Publishing（DOI 前綴 10.33422）整個列為不收出處，比對不用 EJTE 縮寫。
+  - PISA 2029 MAIL 草案以 draft 入庫。
+  - **政策趨勢分析暫不做**（只有論文趨勢方案）。
+- **B1 三件 AI & Society**：Scopus 文件類型為 Note、出版者未提供摘要，維持待判。KB-2026-0259 教育部官方頁搜尋未見，維持轉載網址。
+- **趨勢方案 v0.13**：管理者要求再自檢一次，依 AI & Society 實例修正三處、調整一處文字（見方案附錄 C）。之後不再做整份自檢，問題留到第 1 步實作時處理。待決事項不變：開始指示、D1–D5、D7。
