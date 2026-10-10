@@ -47,6 +47,22 @@
   查詢失敗記 `status: "unavailable"`，不記為零命中。
 - 同時寫入知識庫 `search_runs.csv`：`run_id` 用 `SCHOLAR-YYYYMMDD-<學者 ID>`，`source_id` 填學者 ID（如 `S02`），`coverage_level` 用 `query_scoped` 或 `items_screened`。現有驗證規則不限制 `source_id` 值，不需改程式（2026-10-09 確認）。
 
+### 用工具查（2026-10-10 起）
+
+查詢、去重與檢索紀錄用 `research/scholar-watch-run.js`，不必每次另寫腳本。工具只負責查與整理；範圍、對象、首次公開日仍由判讀者逐篇判斷。輸出放在 scratch，含摘要的 `works.json` 不放進 repo。
+
+```sh
+node research/scholar-watch-run.js list --tiers A1,A2                     # 由學者清單第 2–3c 節解析查詢
+node research/scholar-watch-run.js fetch --tiers A1,A2 --from 2026-10-09 --to 2026-10-15 --out <scratch>
+node research/scholar-watch-run.js collect --out <scratch> --pool research/drafts/<週工作表>.json
+node research/scholar-watch-run.js search-runs --out <scratch> --run-date 2026-10-15 \
+  --label "weekly run (A1/A2)" --details research/p0-scholar-weekly-2026-10-15/ --screened <screened.json> [--append]
+```
+
+- 查詢依學者清單「確認」欄：有 ORCID 用 `author.orcid`；沒有 ORCID 或註明「改用作者 ID」者用 `author.id`；註明「須加（教育）主題詞」者加教育主題詞，並另跑一次不加篩選的查詢核對筆數。
+- 這比 2026-10-09 第一次週檢索嚴格：當時 T03、T04、T07、T08 沒加主題詞，T07 用作者 ID。
+- 查詢失敗記 `unavailable`，筆數留空，不記為零命中。請求不帶 email、mailto 或金鑰。
+
 ### 怎麼篩
 
 1. 先依首發查核表判首次公開日；OpenAlex 的 `publication_date` 不是首發日，要回出版者頁或預印本頁核對。窗口外的只當背景。

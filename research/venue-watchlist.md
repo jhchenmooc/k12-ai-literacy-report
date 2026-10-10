@@ -44,7 +44,7 @@
 | J26 | 擴充 | Learning, Media and Technology | 平台化、AI與兒少資料 | [期刊頁](https://www.tandfonline.com/journals/cjem20) |
 | J27 | 背景 | IEEE Transactions on Learning Technologies | 智能學習系統、技術效能 | [期刊頁](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=4620076) |
 | J28 | 背景 | IEEE Transactions on Education | 工程與資訊教育（注意學段） | [期刊頁](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=13) |
-| J29 | 背景 | Frontiers in Education | 教育創新、AI素養、教師 | [期刊頁](https://www.frontiersin.org/journals/education) |
+| J29 | 背景 | Frontiers in Education | 教育創新、AI素養、教師（文章頁 `citation_online_date`＝接受日，即首次公開日；有更早預印本時以預印本為準，見[工具指引 3.6](research-tools-guide.md#36-出版社頁)） | [期刊頁](https://www.frontiersin.org/journals/education) |
 | J30 | 背景 | International Review of Research in Open and Distributed Learning | 數位公平、線上教育與AI | [期刊頁](https://www.irrodl.org/) |
 | J31 | 核心 | International Journal of STEM Education | K-12 AI/STEM、師資教育與人機協作 | [期刊頁](https://link.springer.com/journal/40594) |
 | J32 | 擴充 | Discover Education | 中小學AI教育與跨國學段研究 | [期刊頁](https://link.springer.com/journal/44217) |
