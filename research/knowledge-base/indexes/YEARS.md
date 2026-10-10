@@ -236,6 +236,7 @@
 | KB-2026-0251 — [Exploring the IntelligentTPACK gap: a qualitative analysis of teachers’ AI competencies and AI self-reported classroom uses](https://www.frontiersin.org/articles/10.3389/feduc.2026.1790642/full) | journal_article | 2026-05-07 | discovered_unverified |
 | KB-2026-0256 — [次期学習指導要領等に向けた審議まとめ](https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/004/gaiyou/1292164_00001.htm) | consultation | 2026-10-05 | discovered_unverified |
 | KB-2026-0257 — [EU PISA 2025: First results – European Education Policy Brief](https://education.ec.europa.eu/resources-and-tools/documents/eu-pisa-2025-first-results) | policy_review | 2026-10-05 | discovered_unverified |
+| KB-2026-0258 — [Schools Guide Students to Use AI Purposefully for Learning（Forum letter reply）](https://www.moe.gov.sg/news/forum-letter-replies/20260918-schools-guide-students-to-use-ai-purposefully-for-learning) | government_announcement | 2026-09-18 | discovered_unverified |
 
 ## 2026｜issue_year
 
