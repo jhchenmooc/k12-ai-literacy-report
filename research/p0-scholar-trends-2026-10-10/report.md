@@ -17,7 +17,7 @@
 | 學者 | 作品（日期） | 一句概述 | 對象 |
 |---|---|---|---|
 | H25 Lintner | TAIL: A Test of AI Literacy for Adolescents and Teachers（2026-09-29，預印本）<br>doi:10.31234/osf.io/afuq2_v1 | 指出多數 AI 素養工具只問自覺能力，改用選擇題測驗，並以捷克中學生與教師驗證 | k12 |
-| H09 Laupichler | The B-AIMT（出版者頁 citation_online_date 2026-08-31，見 #171；候選 A11）<br>doi:10.3389/feduc.2026.1885959 | 發展並驗證德國數學教師對 AI 教學信念的分領域量表 | k12（含師培生） |
+| H09 Laupichler | The B-AIMT（出版者頁 Published 2026-09-28；citation_online_date 2026-08-31 為接受日，2026-10-10 更正；候選 A11）<br>doi:10.3389/feduc.2026.1885959 | 發展並驗證德國數學教師對 AI 教學信念的分領域量表 | k12（含師培生） |
 | ~~H18 Carolus~~ | ~~AI Mindset~~ doi:10.1016/j.chbah.2026.100402（候選 A12） | **不計入**：#171 查到 PsyArXiv 預印本 2026-06-02 已公開，早於近三個月範圍 | other_stakeholders |
 | V12 ElSayary | Bridging the Gap（2026-09-07）<br>doi:10.1002/jcal.70327 | 以自評 AI 素養探討大學生與就業能力的關聯 | higher_ed |
 
