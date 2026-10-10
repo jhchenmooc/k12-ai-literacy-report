@@ -55,3 +55,9 @@
 - **第2輪補查**：審議まとめ素案（教育課程企画特別部会第17回，2026-08-31）與案（第18回，2026-09-25）已先公開；第1輪複核以第17、18回資料頁確認。主張句加註「其素案、案已於8、9月先行公開」，`publication_date` 採部會10月5日彙整發布之日，範圍限制寫明非相關內容首次公開之日。
 - **複核**：第2輪再指出範圍限制日期說法自相矛盾、`ai_lit_note` 把建議寫成既定，修正後兩輪皆判 concordant。
 - 同一模型執行與判讀，非真人獨立審閱。審議まとめ仍待答申與學習指導要領告示，10/29 前若有後續（如答申）需另行核對。
+
+## M2026-10-A05、A10 全文補核（2026-10-10 晚，管理者提供出版者 PDF）
+
+- **A05**：全文 Sec. 2.2 確認「non-probability convenience sampling」、由學校行政團隊轉發邀請、無法計算回應率，樣本幼教 39、國小 144；Published 2026-10-07 與 Crossref 一致。研究限制段：開放式問卷無法追問、橫斷面、編碼次數只表示主題相對顯著性。補入 `scope_limitation`；`claim_text` 未改。
+- **A10**：PDF 首頁標示「Article in Press」及「shared early…The final edited version will replace it automatically」，Received 2026-06-18、Accepted 2026-09-28，與先前候選篩選紀錄及 Crossref 一致。補入 `scope_limitation`；`claim_text` 未改。
+- 兩筆只更新不顯示於頁面的範圍限制與出處位置，由編輯 session 依 PDF 原文逐句比對，未另跑兩輪子代理。PDF 不入 repo。
