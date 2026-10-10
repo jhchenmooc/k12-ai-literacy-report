@@ -18,7 +18,7 @@
 
 ## 分類及來源池
 
-六大類別 K1 政策框架、K2 學術研究、K3 素養評量、K4 教學師培、K5 工具治理、K6 活動實踐。K1–K6 是知識庫的導航分類（資料類型與主題），**不是**教育部 AI 素養框架的面向代碼（T-ETH 等 8 個，見 [AI 素養範圍判斷準則](../ai-literacy-scope-criteria.md)），兩者不可互相代替；知識庫目前不存 A/B/C 與面向代碼，判讀結果寫在篩選報告。現有 47 本期刊／21 個正式會議來源 ID 以 `research/venue-watchlist.md` 為權威；官方登錄與定期增刪見 `research/source-registry-and-review-policy-v17.md`。這些分類不表示研究具有實證支持。
+六大類別 K1 政策框架、K2 學術研究、K3 素養評量、K4 教學師培、K5 工具治理、K6 活動實踐。K1–K6 是知識庫的導航分類（資料類型與主題），**不是**教育部 AI 素養框架的面向代碼（T-ETH 等 8 個，見 [AI 素養範圍判斷準則](../ai-literacy-scope-criteria.md)），兩者不可互相代替。A／B 範圍與面向代碼以 `has_ailit_class`、`has_ailit_dim` 記錄（管理者 2026-10-10 同意，見下方「AI 素養範圍與框架面向」），屬 AI 判讀、不是書目事實；判讀過程仍寫在篩選報告。現有 47 本期刊／21 個正式會議來源 ID 以 `research/venue-watchlist.md` 為權威；官方登錄與定期增刪見 `research/source-registry-and-review-policy-v17.md`。這些分類不表示研究具有實證支持。
 
 ## 學段與身分（`has_population`）
 
@@ -47,6 +47,14 @@
 - 規則見 [p0-trends-2026-10-10/notes.md](../p0-trends-2026-10-10/notes.md) 第 5、6 節，都是題名與摘要的關鍵字規則，會有偽陽性（例如 risk、writing、policy 等常見字）。`#教學介入` 只表示研究做了教學介入，**不表示有成效**。
 - 2026-10-10 首批由 `p0-trends-2026-10-10/records.json` 的 `topics`、`method` 轉入，一律 `discovered_unverified`。
 - 網站同一行也顯示既有的 `studies_country`（研究國別）；只有部分論文有標，不能用來比較各國研究多寡。
+
+## AI 素養範圍與框架面向（`has_ailit_class`、`has_ailit_dim`）
+
+- `has_ailit_class`：`AILIT_A`（網站 #AI素養核心）、`AILIT_B`（#AI工具應用）；C 類不入庫，所以沒有代碼。
+- `has_ailit_dim`：教育部《臺灣中小學教師與學生AI素養框架》八個面向，代碼與網站標記為 `S-BAS` #學生AI基礎與技術、`S-ETH` #學生AI倫理、`S-LRN` #學生AI賦能學習、`S-SYS` #學生AI系統設計、`T-BAS` #教師AI基礎與技術、`T-ETH` #教師AI倫理、`T-TEA` #教師AI賦能教學、`T-PD` #教師AI專業發展。可多筆。
+- 依 [AI 素養範圍判斷準則](../ai-literacy-scope-criteria.md)（本刊共用準則）判讀，是 AI 把國際論文對照臺灣框架的分析選擇，**不代表論文作者採用此框架**；未經人工逐筆核對，一律 `discovered_unverified`。
+- 論文年度趨勢分析（`research/annual-paper-trend-analysis-plan.md`）另有操作細則（接受度研究判 B、非教育情境判 C），兩者結果可能不同。
+- 2026-10-10 首批由 `p0-trends-2026-10-10/records.json` 的 `ai_lit_class`、`ai_lit_dims` 轉入；各輪判讀不一致（`ai_lit_conflict` 非空）的 9 篇不標。relation_id 從 KR-3001 起編。
 
 ## 首次資料與限制
 

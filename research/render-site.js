@@ -18,6 +18,8 @@ const POPULATION_TAGS=[["ROLE_STUDENT","學生"],["ROLE_INSERVICE_TEACHER","在�
 /* Topic, method and country tags form a second line under research titles. */
 const TOPIC_TAGS=[["TOPIC_GENAI","生成式AI"],["TOPIC_CURRICULUM","AI素養課程"],["TOPIC_ASSESSMENT","評量與量表"],["TOPIC_TEACHER_PD","教師專業發展"],["TOPIC_ETHICS","倫理與安全"],["TOPIC_INTERVENTION","教學介入"],["TOPIC_CT","運算思維與程式"],["TOPIC_LANGUAGE","語言學習"],["TOPIC_STEM","STEM"],["TOPIC_EQUITY","特教與公平"],["TOPIC_POLICY","政策與治理"]];
 const METHOD_TAGS=[["METHOD_REVIEW","文獻回顧"],["METHOD_EXPERIMENT","實驗或準實驗"],["METHOD_MIXED","混合方法"],["METHOD_DESIGN","設計本位"],["METHOD_QUALITATIVE","質性個案"],["METHOD_SURVEY","問卷量表"]];
+/* AI-literacy scope and framework dimensions form a third line (AI judgment against the Taiwan MOE framework). */
+const AILIT_TAGS=[["AILIT_A","AI素養核心"],["AILIT_B","AI工具應用"],["S-BAS","學生AI基礎與技術"],["S-ETH","學生AI倫理"],["S-LRN","學生AI賦能學習"],["S-SYS","學生AI系統設計"],["T-BAS","教師AI基礎與技術"],["T-ETH","教師AI倫理"],["T-TEA","教師AI賦能教學"],["T-PD","教師AI專業發展"]];
 const STATUS={discovered_unverified:["unverified","僅發現・未核"],bibliographic_checked:["checked","書目已核"],content_checked:["fulltext","原文已核"]};
 const DAILY_KIND={official_notice:["policy","官方文件"],official_attributed_summary:["policy","官方文件摘要"],research_bibliography:["research","研究書目"],research_abstract_attributed_summary:["research","研究摘要"]};
 
@@ -167,10 +169,11 @@ function archiveData(records,relations,venues,hidden=[]){
  const row=(r,rs=[])=>{
   const pop=new Set(rs.filter(x=>x.predicate==="has_population").map(x=>x.object_id));
   const tm=new Set(rs.filter(x=>x.predicate==="has_topic"||x.predicate==="has_method").map(x=>x.object_id));
+  const ail=new Set(rs.filter(x=>x.predicate==="has_ailit_class"||x.predicate==="has_ailit_dim").map(x=>x.object_id));
   const countries=[...new Set(rs.filter(x=>x.predicate==="studies_country").map(x=>COUNTRY[x.object_id]||x.object_id))];
   const basis=r.year_basis;
   const date=basis==="first_publication"?r.first_published_on+" 首發":basis==="issue_year"?"卷期年（首發日未知）":basis==="event_year"?"會議年（首發日未知）":"未知";
-  return {id:r.record_id,year:r.year_value||"未知",title:r.title,url:r.primary_url,date,type:POLICY_TYPES[r.record_type]||RESEARCH_TYPES[r.record_type]||r.record_type,status:STATUS[r.verification_status]||STATUS.discovered_unverified,tags:POPULATION_TAGS.filter(([k])=>pop.has(k)).map(([,t])=>t),tags2:[...TOPIC_TAGS,...METHOD_TAGS].filter(([k])=>tm.has(k)).map(([,t])=>t).concat(countries)};
+  return {id:r.record_id,year:r.year_value||"未知",title:r.title,url:r.primary_url,date,type:POLICY_TYPES[r.record_type]||RESEARCH_TYPES[r.record_type]||r.record_type,status:STATUS[r.verification_status]||STATUS.discovered_unverified,tags:POPULATION_TAGS.filter(([k])=>pop.has(k)).map(([,t])=>t),tags2:[...TOPIC_TAGS,...METHOD_TAGS].filter(([k])=>tm.has(k)).map(([,t])=>t).concat(countries),tags3:AILIT_TAGS.filter(([k])=>ail.has(k)).map(([,t])=>t)};
  };
  const policy=new Map(),journals=new Map(),conferences=new Map();
  const add=(m,key,name,sub,r)=>{if(!m.has(key))m.set(key,{key,name,sub,rows:[]});m.get(key).rows.push(row(r,rel.get(r.record_id)))};
@@ -219,7 +222,7 @@ function groupTable(g){
  const seen=new Set();
  return '<section class="group" id="'+groupId(g)+'"><div class="group-head"><h2>'+esc(g.name)+'</h2><a class="to-index" href="#index">回到索引 ↑</a></div>'+(g.sub?'<p class="sub">'+esc(g.sub)+"・"+g.rows.length+" 筆</p>":'<p class="sub">'+g.rows.length+" 筆</p>")+
   '<div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody>'+
-  g.rows.map(r=>{const first=!seen.has(r.year);seen.add(r.year);return "<tr"+(first?' id="'+yearId(g,r.year)+'"':"")+'><td class="year">'+esc(r.year)+'</td><td><a href="'+esc(r.url)+'">'+esc(r.title)+'</a><div class="type">'+esc(r.type)+(r.tags&&r.tags.length?'<span class="tags">'+r.tags.map(t=>"#"+esc(t)).join("　")+"</span>":"")+"</div>"+(r.tags2&&r.tags2.length?'<div class="tags2">'+r.tags2.map(t=>"#"+esc(t)).join("　")+"</div>":"")+"</td><td>"+esc(r.date)+'</td><td><span class="badge '+r.status[0]+'">'+r.status[1]+"</span></td></tr>"}).join("")+
+  g.rows.map(r=>{const first=!seen.has(r.year);seen.add(r.year);return "<tr"+(first?' id="'+yearId(g,r.year)+'"':"")+'><td class="year">'+esc(r.year)+'</td><td><a href="'+esc(r.url)+'">'+esc(r.title)+'</a><div class="type">'+esc(r.type)+(r.tags&&r.tags.length?'<span class="tags">'+r.tags.map(t=>"#"+esc(t)).join("　")+"</span>":"")+"</div>"+(r.tags2&&r.tags2.length?'<div class="tags2">'+r.tags2.map(t=>"#"+esc(t)).join("　")+"</div>":"")+(r.tags3&&r.tags3.length?'<div class="tags3">'+r.tags3.map(t=>"#"+esc(t)).join("　")+"</div>":"")+"</td><td>"+esc(r.date)+'</td><td><span class="badge '+r.status[0]+'">'+r.status[1]+"</span></td></tr>"}).join("")+
   "</tbody></table></div></section>";
 }
 const LISTS={
@@ -231,7 +234,7 @@ function archiveTabs(active){
 }
 const ARCHIVE_LEAD='<p class="lead">這是可追溯的<strong>書目索引</strong>，不是政策效力或研究結論的認證。每筆標示核對程度；首發日未核實時，以卷期年歸類並註明。週報審查中的候選不列入。「僅發現・未核」不代表書目有誤：Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，彼此一致也不升為「書目已核」；本刊不批次核對，只有論文或文件被週報、月報引用時，才逐篇讀出版者或官方原頁，並另做出版查核。</p>';
 const SOURCE_NOTE='<div class="info"><p>資料來源：本刊知識庫（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/tree/main/research/knowledge-base">GitHub 公開</a>）。清單由程式自知識庫產生；發現錯誤請透過<a href="../../feedback/">讀者勘誤</a>回報。</p></div>';
-const TAG_NOTE='<div class="info"><p><strong>學段與身分標記</strong>：論文題名下的「#」標記（#學生、#在職教師、#職前師培、#家長行政；#幼兒、#國小、#國中、#高中職、#中學未分、#K12跨學段、#K12未細分）由 AI 依題名與摘要判讀，<strong>未經人工逐筆核對</strong>；摘要沒寫明者不標。第二行為<strong>主題</strong>（#生成式AI、#AI素養課程、#評量與量表、#教師專業發展、#倫理與安全、#教學介入、#運算思維與程式、#語言學習、#STEM、#特教與公平、#政策與治理）、<strong>研究方法</strong>（#文獻回顧、#實驗或準實驗、#混合方法、#設計本位、#質性個案、#問卷量表）與<strong>研究國別</strong>：主題與方法依題名和摘要的關鍵字規則判定，可能有誤標（例如 risk、writing、policy 等常見字會讓倫理、語言、政策主題偏多），方法判不出者不標；國別只有部分論文有標，不能用來比較各國研究多寡。可用瀏覽器的頁內搜尋（Ctrl＋F 或 ⌘＋F）輸入例如「#國中」「#實驗或準實驗」逐筆查找。</p></div>';
+const TAG_NOTE='<div class="info"><p><strong>學段與身分標記</strong>：論文題名下的「#」標記（#學生、#在職教師、#職前師培、#家長行政；#幼兒、#國小、#國中、#高中職、#中學未分、#K12跨學段、#K12未細分）由 AI 依題名與摘要判讀，<strong>未經人工逐筆核對</strong>；摘要沒寫明者不標。第二行為<strong>主題</strong>（#生成式AI、#AI素養課程、#評量與量表、#教師專業發展、#倫理與安全、#教學介入、#運算思維與程式、#語言學習、#STEM、#特教與公平、#政策與治理）、<strong>研究方法</strong>（#文獻回顧、#實驗或準實驗、#混合方法、#設計本位、#質性個案、#問卷量表）與<strong>研究國別</strong>：主題與方法依題名和摘要的關鍵字規則判定，可能有誤標（例如 risk、writing、policy 等常見字會讓倫理、語言、政策主題偏多），方法判不出者不標；國別只有部分論文有標，不能用來比較各國研究多寡。第三行為 <strong>AI 素養範圍</strong>（#AI素養核心：研究師生的 AI 素養本身；#AI工具應用：用 AI 工具教或學其他科目）與<strong>教育部《臺灣中小學教師與學生AI素養框架》面向</strong>（例如 #學生AI倫理、#教師AI賦能教學）：這是 AI 依本刊共用準則，把國際論文對照臺灣框架的判讀，屬本刊分析選擇，未經人工逐筆核對，<strong>不代表論文作者採用此框架</strong>；各輪判讀不一致者不標。本刊年度趨勢分析另有操作細則，結果可能不同。可用瀏覽器的頁內搜尋（Ctrl＋F 或 ⌘＋F）輸入例如「#國中」「#實驗或準實驗」「#學生AI倫理」逐筆查找。</p></div>';
 function renderArchiveList(kind,groups){
  const L=LISTS[kind],n=groups.reduce((s,g)=>s+g.rows.length,0);
  const head='<div class="kicker">歷年資料庫</div><h1>'+L.title+"</h1>"+ARCHIVE_LEAD+LEGEND+archiveTabs(kind);

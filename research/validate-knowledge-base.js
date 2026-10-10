@@ -54,6 +54,8 @@ function validate(records,relations,runs,candidates){
  /* Topic and method tags for research records (schema.md「主題與研究方法」). */
  const TOPIC_VOCAB=["TOPIC_GENAI","TOPIC_CURRICULUM","TOPIC_ASSESSMENT","TOPIC_TEACHER_PD","TOPIC_ETHICS","TOPIC_INTERVENTION","TOPIC_CT","TOPIC_LANGUAGE","TOPIC_STEM","TOPIC_EQUITY","TOPIC_POLICY"];
  const METHOD_VOCAB=["METHOD_REVIEW","METHOD_EXPERIMENT","METHOD_MIXED","METHOD_DESIGN","METHOD_QUALITATIVE","METHOD_SURVEY"];
+ /* AI-literacy scope (A/B) and Taiwan MOE framework dimensions as AI judgments (schema.md「AI 素養範圍與框架面向」). */
+ const AILIT_CLASS_VOCAB=["AILIT_A","AILIT_B"],AILIT_DIM_VOCAB=["S-BAS","S-ETH","S-LRN","S-SYS","T-BAS","T-ETH","T-TEA","T-PD"];
  const relationsIds=new Set(),allowed=["record","work","source","vocabulary"];const vocab=["K1","K2","K3","K4","K5","K6"];
  for(const x of relations){
   check(!!x.relation_id&&!relationsIds.has(x.relation_id),"duplicate/missing relation ID");relationsIds.add(x.relation_id);
@@ -68,6 +70,8 @@ function validate(records,relations,runs,candidates){
   if(x.predicate==="has_population")check(x.object_namespace==="vocabulary"&&POPULATION_VOCAB.includes(x.object_id),"invalid population relation: "+x.relation_id);
   if(x.predicate==="has_topic")check(x.object_namespace==="vocabulary"&&TOPIC_VOCAB.includes(x.object_id),"invalid topic relation: "+x.relation_id);
   if(x.predicate==="has_method")check(x.object_namespace==="vocabulary"&&METHOD_VOCAB.includes(x.object_id),"invalid method relation: "+x.relation_id);
+  if(x.predicate==="has_ailit_class")check(x.object_namespace==="vocabulary"&&AILIT_CLASS_VOCAB.includes(x.object_id),"invalid ailit class relation: "+x.relation_id);
+  if(x.predicate==="has_ailit_dim")check(x.object_namespace==="vocabulary"&&AILIT_DIM_VOCAB.includes(x.object_id),"invalid ailit dimension relation: "+x.relation_id);
   if(x.predicate==="published_in")check(x.object_namespace==="source"&&/^[JC]/.test(x.object_id),"invalid venue relation: "+x.relation_id);
   if(x.predicate==="issued_by")check(x.object_namespace==="source"&&x.object_id.startsWith("O-"),"invalid issuing agency: "+x.relation_id);
  }
