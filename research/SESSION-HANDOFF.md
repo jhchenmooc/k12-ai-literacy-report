@@ -644,3 +644,5 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 
 **管理者工作習慣**：用中文對話；常問「接下來還有哪些工作項目?」；要求「有哪些需要我找資料或下載的都列出來，有網址就給我」；核准語如「好，照建議做」「好，開 PR 並訂閱，CI 過了就合併」；搜尋 session 的 PR 由編輯 session「確認後再 CI 合併」。每次合併後把工作分支重設到 origin/main。
 
+
+**新編輯 session 接手（2026-10-10）**：session_01XLm9YebBcin2xA95hg9kye（以 main `522ac2a` 起讀本段接手）。文獻搜尋 session 不變（session_01EdyajNQzH5bBmza4TgNoff）。
