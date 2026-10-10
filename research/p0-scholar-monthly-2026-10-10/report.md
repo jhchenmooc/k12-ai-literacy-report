@@ -41,7 +41,7 @@
 
 | DOI | 學者 | 類別 | 對象 | 首次公開 |
 |---|---|---|---|---|
-| `10.3389/feduc.2026.1885959`（數學教師 AI 信念量表 B-AIMT） | H09 | A | k12 | 2026-08-31（Frontiers 頁 `citation_online_date`） |
+| `10.3389/feduc.2026.1885959`（數學教師 AI 信念量表 B-AIMT） | H09 | A | k12 | 2026-09-28（Frontiers 頁 Published、Crossref published-online；原記 08-31 是接受日，見下方更正） |
 | `10.1016/j.chbah.2026.100402`（AI Mindset） | H18 | A | other_stakeholders | 2026-06-02（PsyArXiv 預印本，OSF API）；正式版 Elsevier 頁讀不到 |
 | `10.1007/s44436-026-00043-5`（SCALE × AI 藝術本位教學） | V03 | B | k12 | 2026-09-02（Springer 頁 `citation_online_date`） |
 
@@ -77,7 +77,7 @@
 - **可能符合月報第 2 項的有 6 篇：** 條件是正式版、A／B 類、對象不是 unknown，而且出版者頁的日期落在 08-29～09-29。
   - `26gma225`、`26gma226`、`26gma243`：GMS 研討會摘要，09-04。
   - `s44217-026-02129-x`：09-15。
-  - `feduc.2026.1926201`：09-07。
+  - `feduc.2026.1926201`：09-28（原記 09-07 是接受日，見下方更正）。
   - `s44436-026-00044-4`：社論，09-14。
 
   這 6 篇仍須先入庫，並核到 `bibliographic_checked`。
@@ -91,3 +91,18 @@
 - **Semantic Scholar：** 多數 DOI 查詢回 404，依題名的搜尋則被限流（429）。
 - **只依題名判斷：** 8 篇。
 - **收錄落差：** OpenAlex 的收錄可能落後。
+
+## 更正（2026-10-10）
+
+Frontiers 文章頁的 `citation_online_date` 是接受日，不是公開日。本次誤把它當首次公開日，影響 4 篇；已依頁面 Published 日與 Crossref `published-online` 更正 results.json 與兩份批次檔。編輯 session 指出，文獻搜尋 session 查證屬實。
+
+| DOI | 原記 | 更正 | 影響 |
+|---|---|---|---|
+| `feduc.2026.1885959`（B-AIMT，候選 A11） | 08-31 | 09-28 | 仍在查詢期間內；候選 A11 由編輯 session 另行更正 |
+| `feduc.2026.1926201` | 09-07 | 09-28 | 仍在月報觀察期內，月報第 2 項清單不變 |
+| `feduc.2026.1943906` | 08-24 | 09-21 | 改落在月報觀察期內，但對象不明，仍不能刊出 |
+| `fpsyg.2026.1950695` | 09-22 | 10-05 | 屬下個觀察期；C 類，不影響刊物 |
+
+- 知識庫內 6 筆有首發日的 Frontiers 紀錄都與 Crossref `published-online` 相同，沒有用到接受日。
+- 本次其他出版者的日期另以 Crossref 抽查：Springer 的 `citation_online_date` 都與 `published-online` 相同；不同的只有以更早預印本為首發依據的，或沒有 Crossref 上線日的來源（GMS、Zenodo、arXiv）。
+- 規則已改寫於[工具指引 3.6](../research-tools-guide.md#36-出版社頁)與期刊清單 J29 列。
