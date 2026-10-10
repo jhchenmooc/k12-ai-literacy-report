@@ -104,3 +104,4 @@ ERIC 的 `educationlevel` 是索引者指派的，不採為學段證據。逐筆
   - 計數查詢共 120 次，全部 HTTP 200，窗口 2025-01-01～2026-10-10。
 - **一處更正：** 子代理說 `validate-knowledge-base.js` 只接受 J01～J39，這不對。程式只檢查代碼以 J 或 C 開頭，知識庫已有 J40 以後的關係。
 - **另做出版商查核：** EJTE 的出版商 Diamond Scientific 是否比照 Atlantic Academic Press，整個列為不收出處，這次沒做，需要另外查核。
+  - **更正（2026-10-10 晚）：** 這裡的 EJTE 指 European Journal of Teaching and Education（ISSN 2669-0667），不是監測清單的 J44 European Journal of Teacher Education。查核結果見 [p0-search-1013-2026-10-10](../p0-search-1013-2026-10-10/report.md) 第四節。
