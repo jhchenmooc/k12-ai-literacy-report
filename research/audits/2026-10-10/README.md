@@ -1,5 +1,7 @@
 # Claude 獨立審查交接包
 
+**最新 favicon 補修**：Claude 對 56621b8 確認 metadata 已修正且無回歸，另提出第三方 favicon 的可選 P3。本輪已限定登錄刊物使用本站固定圖示，新增兩個測試；Windows Node 22／24 各 292/292 通過。見 [favicon 補修報告](favicon-followup/REPORT.md)，以下各輪紀錄仍保留為歷史。main B1 更新仍待整合，遠端 CI 尚待 PR。
+
 **最新 metadata 補修**：Claude 對 6360e21 未發現阻擋問題，另指出搜尋／分享 metadata 的 P3 缺口。本輪收緊最小頁面完整 meta 白名單，新增兩個測試；Windows Node 22／24 各 290/290 通過。見 [metadata 補修報告](metadata-followup/REPORT.md)，以實際最新 HEAD 為審查目標。原始基準未變，main 的 B1 入庫更新尚未整合，遠端 CI 尚待 PR。
 
 此分支用於外部獨立程式碼審查，已包含原 repository 的資料、程式修正及稽核佐證。沒有因建立此分支而修改 main、建立正式刊物、改變候選決策或部署 Pages。
@@ -15,7 +17,7 @@
 | 原始稽核基準 | `2329a91d1e5af66da00848fa72daca2c230edb47` |
 | 程式修正提交 | `a1b686dd64a10cd759ea195c17c4c857a46c313e` |
 | 審查範圍 | 基準到上述程式提交的 40 個檔案差異；本包與入口連結是其後的文件提交 |
-| 最新本機測試 | Windows：Node 22.23.3 與 24.16.0 各 290/290，0 skipped；封存時為 metadata 補修 working tree |
+| 最新本機測試 | Windows：Node 22.23.3 與 24.16.0 各 292/292，0 skipped；封存時為 favicon 補修 working tree |
 | 資料保全 | 27 個來源、CSV、工作表、publication JSON 及既有刊物檔案 SHA-256 不變 |
 
 ## 閱讀順序
@@ -31,7 +33,7 @@
 - `fixes/` 是本機修正完成時的歷史紀錄，最新全測為 `self-review-node22-tests.log` 與 `self-review-node24-tests.log`；較早的 `all-node*-tests.log` 為 250 項版本。`self-review-*-red-tests.log` 保存修正前反例，不是最終失敗。
 - `fixes/REPORT.md`、`change-summary.json` 內「未 commit／未 push」、舊分支與 Windows 絕對路徑，描述的是封存時的狀態。本分支已將程式提交並整理交接；以本入口、Git commit 和自行取得的 HEAD 為審查依據。
 - `baseline` 的 GitHub CI 是基準 SHA 的紀錄，不能當作修正提交通過 CI 的證據。本審查分支未建立 PR；既有 workflow 的 push 觸發只包含 main，推送此分支不會自動執行該 CI 或部署。
-- 本包的歷史檔案保持原始位元組；[evidence-manifest.json](evidence-manifest.json) 記錄原 63 份、第一輪外部審查補修 7 份、P3 收尾 5 份及 metadata 補修 5 份，共 80 份檔案的大小及 SHA-256。排除可重建的 Node 安裝包、node_modules、npm cache、完整 repository 壓縮副本及重複產物。未帶入憑證。
+- 本包的歷史檔案保持原始位元組；[evidence-manifest.json](evidence-manifest.json) 記錄原 63 份、第一輪外部審查補修 7 份、P3 收尾 5 份、metadata 補修 5 份及 favicon 補修 5 份，共 85 份檔案的大小及 SHA-256。排除可重建的 Node 安裝包、node_modules、npm cache、完整 repository 壓縮副本及重複產物。未帶入憑證。
 
 ## 重現檢查
 

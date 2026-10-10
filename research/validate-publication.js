@@ -52,6 +52,7 @@ function registeredShell(document,main,issueDate,issuePath){
   if(node.tagName==="link"){
    const rel=attr(node,"rel"),href=attr(node,"href")||"";
    if(rel==="stylesheet"&&!/^\.\.\/\.\.\/assets\/(?:design-system\.css|site\.css(?:\?v=[a-f0-9]{10})?)$/.test(href))errors.push("registered report stylesheet must be a reviewed shared local asset");
+   if(rel==="icon"&&href!=="../../assets/favicon.svg")errors.push("registered report icon must use the fixed local favicon");
    if(!["stylesheet","icon"].includes(rel))errors.push("registered report unsupported link relation");
   }
  }

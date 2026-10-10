@@ -14,7 +14,7 @@
 
 一般 HTML 合法不代表此發布契約支援。body 註解、`rel="noopener"`、`span lang="en"`、`html dir="rtl"`、mailto／tel 連結、任意 class／id、style、hidden、inert、aria-hidden、slot、SVG／MathML 和宣告式 shadow DOM 都會被拒絕。現有 renderer 不使用這些語法；若新增需求，應先修訂契約及合法／攻擊控制組，不能直接豁免整頁。
 
-登錄頁面禁止 inline stylesheet；stylesheet 只接受 `../../assets/design-system.css` 或 `../../assets/site.css`（可帶 renderer 的十位十六進位 `?v=`）。共用 CSS 與 renderer 是需程式碼審查的信任邊界，閘門不分析任意 CSS 的視覺效果。外部 favicon.svg 可以使用，inline SVG 不可使用。HTTP／HTTPS 原始來源連結仍須通過 URL 安全檢查。
+登錄頁面禁止 inline stylesheet；stylesheet 只接受 `../../assets/design-system.css` 或 `../../assets/site.css`（可帶 renderer 的十位十六進位 `?v=`）。共用 CSS 與 renderer 是需程式碼審查的信任邊界，閘門不分析任意 CSS 的視覺效果。favicon 可省略；使用時只接受本站外部檔案 `../../assets/favicon.svg`，不能指向第三方網址、其他路徑或加 query。inline SVG 不可使用。HTTP／HTTPS 原始來源連結仍須通過 URL 安全檢查。
 
 檔案必須儲存為 UTF-8。meta charset 可以不宣告，或宣告 `utf-8`（大小寫不限）；空值與其他編碼拒絕。舊式 `http-equiv="Content-Type"` 若使用，只接受 `text/html; charset=utf-8`，避免依靠部署 HTTP 標頭才能排除編碼差異。此規則不重新認證 legacy 頁面。
 

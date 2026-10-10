@@ -121,6 +121,18 @@ function dailyFixture(d,c){
 }
 const dailyLow={...claim,claim_class:"bibliographic",risk_tier:"low",level:"N-V1",checked_at:"2026-10-10",source_title:"Synthetic school AI announcement",source_organization:"Example Institution",daily_fact_kind:"official_notice",source_document_type:"official_guidance",first_disclosed_on:"2026-10-10",claim_text:"來源機構：Example Institution；資料標題：Synthetic school AI announcement；來源刊登日：2026-10-10。"};
 const reviewedMain='<main><p data-claim-id="C1">合成案例：某機構公告</p></main>';
+test('P3 favicon regression: external and noncanonical icons are rejected',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ for(const href of ['https://tracker.example/p.png','//tracker.example/p.png','../../assets/other.svg','../../assets/favicon.svg?tracking=1','']){
+  updateHtml(d,'<head><link rel="icon" href="'+href+'"></head>'+reviewedMain);assert.equal(validate(d).ok,false,href);
+ }
+});
+test('P3 favicon control: fixed local SVG file is accepted',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ for(const link of ['<link rel="icon" href="../../assets/favicon.svg">','<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">']){
+  updateHtml(d,'<head>'+link+'</head>'+reviewedMain);assert.equal(validate(d).ok,true,link);
+ }
+});
 test('P3 metadata regression: unreviewed search and social text is rejected',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
  for(const meta of ['<meta name="description" content="UNVERIFIED: 臺灣全面強制 AI 考試">','<meta property="og:title" content="UNVERIFIED">','<meta name="twitter:description" content="UNVERIFIED">','<meta name="viewport" content="width=device-width,initial-scale=1" property="og:title">','<meta name="viewport" content="width=1,initial-scale=100">','<meta charset="utf-8" name="description" content="UNVERIFIED">']){

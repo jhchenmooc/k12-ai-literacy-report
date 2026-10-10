@@ -1,0 +1,1762 @@
+TAP version 13
+# Subtest: detects hidden population and causal overclaim despite matching N=95
+ok 1 - detects hidden population and causal overclaim despite matching N=95
+  ---
+  duration_ms: 5.5541
+  type: 'test'
+  ...
+# Subtest: 116 recruited and analyzed contradiction remains blocked with mapped numbers
+ok 2 - 116 recruited and analyzed contradiction remains blocked with mapped numbers
+  ---
+  duration_ms: 2.2673
+  type: 'test'
+  ...
+# Subtest: unmapped number and policy implication force incomplete even if subset matches
+ok 3 - unmapped number and policy implication force incomplete even if subset matches
+  ---
+  duration_ms: 1.3825
+  type: 'test'
+  ...
+# Subtest: a fully mapped typed statement remains held and not certified
+ok 4 - a fully mapped typed statement remains held and not certified
+  ---
+  duration_ms: 0.9357
+  type: 'test'
+  ...
+# Subtest: number shown as context-only never counted as verified
+ok 5 - number shown as context-only never counted as verified
+  ---
+  duration_ms: 0.9321
+  type: 'test'
+  ...
+# Subtest: made-up annotations do not bypass coverage
+ok 6 - made-up annotations do not bypass coverage
+  ---
+  duration_ms: 0.4978
+  type: 'test'
+  ...
+# Subtest: unknown mandatory field never silently treated as false
+ok 7 - unknown mandatory field never silently treated as false
+  ---
+  duration_ms: 0.6223
+  type: 'test'
+  ...
+# Subtest: missing or malformed claim text fails closed
+ok 8 - missing or malformed claim text fails closed
+  ---
+  duration_ms: 0.4411
+  type: 'test'
+  ...
+# Subtest: malformed coverage collections return the existing invalid format and keep publication held
+ok 9 - malformed coverage collections return the existing invalid format and keep publication held
+  ---
+  duration_ms: 3.0098
+  type: 'test'
+  ...
+# Subtest: coverage CLI rejects duplicate evidence-card IDs rather than choosing the last
+ok 10 - coverage CLI rejects duplicate evidence-card IDs rather than choosing the last
+  ---
+  duration_ms: 438.7211
+  type: 'test'
+  ...
+# Subtest: paired synthetic dataset has ten groups and 30 cases
+ok 11 - paired synthetic dataset has ten groups and 30 cases
+  ---
+  duration_ms: 2.8863
+  type: 'test'
+  ...
+# Subtest: all case labels are explicitly provisional
+ok 12 - all case labels are explicitly provisional
+  ---
+  duration_ms: 0.5664
+  type: 'test'
+  ...
+# Subtest: no automatic semantic approval
+ok 13 - no automatic semantic approval
+  ---
+  duration_ms: 1.3442
+  type: 'test'
+  ...
+# Subtest: baseline is reproducible including two misses
+ok 14 - baseline is reproducible including two misses
+  ---
+  duration_ms: 4.5024
+  type: 'test'
+  ...
+# Subtest: obvious causal overclaim and policy mandate receive warnings
+ok 15 - obvious causal overclaim and policy mandate receive warnings
+  ---
+  duration_ms: 0.6602
+  type: 'test'
+  ...
+# Subtest: eight typed probes produce conservative reproducible outcomes
+ok 16 - eight typed probes produce conservative reproducible outcomes
+  ---
+  duration_ms: 5.1446
+  type: 'test'
+  ...
+# Subtest: 116 initially recruited cannot support 116 analyzed
+ok 17 - 116 initially recruited cannot support 116 analyzed
+  ---
+  duration_ms: 0.8979
+  type: 'test'
+  ...
+# Subtest: unknown legal mandates and learning outcomes remain unknown, not false
+ok 18 - unknown legal mandates and learning outcomes remain unknown, not false
+  ---
+  duration_ms: 2.8216
+  type: 'test'
+  ...
+# Subtest: partial matches cannot hide a contradiction
+ok 19 - partial matches cannot hide a contradiction
+  ---
+  duration_ms: 0.4818
+  type: 'test'
+  ...
+# Subtest: missing facts do not become a negative conclusion
+ok 20 - missing facts do not become a negative conclusion
+  ---
+  duration_ms: 0.4315
+  type: 'test'
+  ...
+# Subtest: fact provenance is fail closed on missing locator and pretend verification
+ok 21 - fact provenance is fail closed on missing locator and pretend verification
+  ---
+  duration_ms: 0.841
+  type: 'test'
+  ...
+# Subtest: invalid schema and fake source mapping never pass as evidence
+ok 22 - invalid schema and fake source mapping never pass as evidence
+  ---
+  duration_ms: 0.6688
+  type: 'test'
+  ...
+# Subtest: not a natural language validator, and no automatic publication even when values agree
+ok 23 - not a natural language validator, and no automatic publication even when values agree
+  ---
+  duration_ms: 0.7246
+  type: 'test'
+  ...
+# Subtest: malformed fact collections and assertion elements return invalid input without throwing
+ok 24 - malformed fact collections and assertion elements return invalid input without throwing
+  ---
+  duration_ms: 1.6527
+  type: 'test'
+  ...
+# Subtest: cumulative import de-duplicates and preserves existing hold
+ok 25 - cumulative import de-duplicates and preserves existing hold
+  ---
+  duration_ms: 19.0969
+  type: 'test'
+  ...
+# Subtest: duplicate batch rejected and original untouched
+ok 26 - duplicate batch rejected and original untouched
+  ---
+  duration_ms: 4.0973
+  type: 'test'
+  ...
+# Subtest: invalid coverage and source date fail closed
+ok 27 - invalid coverage and source date fail closed
+  ---
+  duration_ms: 0.8735
+  type: 'test'
+  ...
+# Subtest: event key merges across different language URLs
+ok 28 - event key merges across different language URLs
+  ---
+  duration_ms: 1.9875
+  type: 'test'
+  ...
+# Subtest: new candidate has day and batch provenance for weekly reuse
+ok 29 - new candidate has day and batch provenance for weekly reuse
+  ---
+  duration_ms: 1.9583
+  type: 'test'
+  ...
+# Subtest: cross-week duplicate is linked instead of reintroduced
+ok 30 - cross-week duplicate is linked instead of reintroduced
+  ---
+  duration_ms: 1.5738
+  type: 'test'
+  ...
+# Subtest: same-week update reference does not upgrade hold
+ok 31 - same-week update reference does not upgrade hold
+  ---
+  duration_ms: 3.6325
+  type: 'test'
+  ...
+# Subtest: source URLs with substantive query params remain distinct
+ok 32 - source URLs with substantive query params remain distinct
+  ---
+  duration_ms: 1.0497
+  type: 'test'
+  ...
+# Subtest: unannotated duplicate is retained as unresolved instead of silently discarded
+ok 33 - unannotated duplicate is retained as unresolved instead of silently discarded
+  ---
+  duration_ms: 1.7489
+  type: 'test'
+  ...
+# Subtest: import date outside selected week is rejected
+ok 34 - import date outside selected week is rejected
+  ---
+  duration_ms: 1.3115
+  type: 'test'
+  ...
+# Subtest: incremental import preserves existing verified summary counters
+ok 35 - incremental import preserves existing verified summary counters
+  ---
+  duration_ms: 1.1863
+  type: 'test'
+  ...
+# Subtest: search log never claims 30 days were actually inspected unless provided
+ok 36 - search log never claims 30 days were actually inspected unless provided
+  ---
+  duration_ms: 1.0695
+  type: 'test'
+  ...
+# Subtest: duplicate batch IDs across different weekly sheets cannot be silently reused
+ok 37 - duplicate batch IDs across different weekly sheets cannot be silently reused
+  ---
+  duration_ms: 1.1674
+  type: 'test'
+  ...
+# Subtest: candidate source with embedded URL credentials fails closed
+ok 38 - candidate source with embedded URL credentials fails closed
+  ---
+  duration_ms: 0.6836
+  type: 'test'
+  ...
+# Subtest: candidate marked as already published in the future fails closed
+ok 39 - candidate marked as already published in the future fails closed
+  ---
+  duration_ms: 0.661
+  type: 'test'
+  ...
+# Subtest: exclusive writer lock prevents losing concurrent candidate writes
+ok 40 - exclusive writer lock prevents losing concurrent candidate writes
+  ---
+  duration_ms: 49.6368
+  type: 'test'
+  ...
+# Subtest: candidates record AI literacy scope, defaulting to unknown and staying on hold
+ok 41 - candidates record AI literacy scope, defaulting to unknown and staying on hold
+  ---
+  duration_ms: 2.5011
+  type: 'test'
+  ...
+# Subtest: malformed AI literacy scope on a candidate fails closed
+ok 42 - malformed AI literacy scope on a candidate fails closed
+  ---
+  duration_ms: 2.1375
+  type: 'test'
+  ...
+# Subtest: candidates record the main audience, defaulting to unknown; invalid audience fails closed
+ok 43 - candidates record the main audience, defaulting to unknown; invalid audience fails closed
+  ---
+  duration_ms: 1.2382
+  type: 'test'
+  ...
+# Subtest: URL identity preserves case, unknown queries, trailing slash and query order
+ok 44 - URL identity preserves case, unknown queries, trailing slash and query order
+  ---
+  duration_ms: 2.5063
+  type: 'test'
+  ...
+# Subtest: known tracking parameters do not create a new source
+ok 45 - known tracking parameters do not create a new source
+  ---
+  duration_ms: 0.8263
+  type: 'test'
+  ...
+# Subtest: all update notes are validated before merging, including duplicates
+ok 46 - all update notes are validated before merging, including duplicates
+  ---
+  duration_ms: 0.9716
+  type: 'test'
+  ...
+# Subtest: whitespace-only correction stays unresolved and blocks daily recommendation
+ok 47 - whitespace-only correction stays unresolved and blocks daily recommendation
+  ---
+  duration_ms: 8.3738
+  type: 'test'
+  ...
+# Subtest: failed rename preserves the original and a retry can complete
+ok 48 - failed rename preserves the original and a retry can complete
+  ---
+  duration_ms: 86.746
+  type: 'test'
+  ...
+# Subtest: all real held candidates map to existing KB, never to publication
+ok 49 - all real held candidates map to existing KB, never to publication
+  ---
+  duration_ms: 92.7364
+  type: 'test'
+  ...
+# Subtest: new candidate remains unverified and source batch is unchanged
+ok 50 - new candidate remains unverified and source batch is unchanged
+  ---
+  duration_ms: 3.5017
+  type: 'test'
+  ...
+# Subtest: same URL within batch is not added twice without review
+ok 51 - same URL within batch is not added twice without review
+  ---
+  duration_ms: 0.557
+  type: 'test'
+  ...
+# Subtest: unsafe/invalid sources fail closed
+ok 52 - unsafe/invalid sources fail closed
+  ---
+  duration_ms: 1.2885
+  type: 'test'
+  ...
+# Subtest: T1-3: DOI similarity and versions are suggestions, not automatic merges
+ok 53 - T1-3: DOI similarity and versions are suggestions, not automatic merges
+  ---
+  duration_ms: 4.874
+  type: 'test'
+  ...
+# Subtest: T4-5: URL distinctions and partial dates are preserved
+ok 54 - T4-5: URL distinctions and partial dates are preserved
+  ---
+  duration_ms: 2.9579
+  type: 'test'
+  ...
+# Subtest: T6-8: revision links, multi-national and multi-label relations have traceable IDs
+ok 55 - T6-8: revision links, multi-national and multi-label relations have traceable IDs
+  ---
+  duration_ms: 0.9411
+  type: 'test'
+  ...
+# Subtest: T9-11: unavailable coverage, broken refs, and spreadsheet formula hazards
+ok 56 - T9-11: unavailable coverage, broken refs, and spreadsheet formula hazards
+  ---
+  duration_ms: 22.1286
+  type: 'test'
+  ...
+# Subtest: T12: knowledge-base operations cannot mutate nine held candidates or publication manifest
+ok 57 - T12: knowledge-base operations cannot mutate nine held candidates or publication manifest
+  ---
+  duration_ms: 15.2493
+  type: 'test'
+  ...
+# Subtest: DOI normalized but no automatic merging of different manifestations
+ok 58 - DOI normalized but no automatic merging of different manifestations
+  ---
+  duration_ms: 3.0615
+  type: 'test'
+  ...
+# Subtest: case sensitive paths and arbitrary identity query params stay distinct
+ok 59 - case sensitive paths and arbitrary identity query params stay distinct
+  ---
+  duration_ms: 1.1679
+  type: 'test'
+  ...
+# Subtest: repeated source and same title are review flags only
+ok 60 - repeated source and same title are review flags only
+  ---
+  duration_ms: 20.6301
+  type: 'test'
+  ...
+# Subtest: safe export neutralizes spreadsheet formulas but preserves original record
+ok 61 - safe export neutralizes spreadsheet formulas but preserves original record
+  ---
+  duration_ms: 2.5528
+  type: 'test'
+  ...
+# Subtest: same source re-scanning does not manufacture a second KB record
+ok 62 - same source re-scanning does not manufacture a second KB record
+  ---
+  duration_ms: 6.5927
+  type: 'test'
+  ...
+# Subtest: daily import remains fully visible to weekly selection
+ok 63 - daily import remains fully visible to weekly selection
+  ---
+  duration_ms: 15.135
+  type: 'test'
+  ...
+# Subtest: yesterday discovery of older study is background, not new research
+ok 64 - yesterday discovery of older study is background, not new research
+  ---
+  duration_ms: 1.2196
+  type: 'test'
+  ...
+# Subtest: zero-source day creates no eligible publication
+ok 65 - zero-source day creates no eligible publication
+  ---
+  duration_ms: 1.6444
+  type: 'test'
+  ...
+# Subtest: uncertified held candidates never enter publishable list
+ok 66 - uncertified held candidates never enter publishable list
+  ---
+  duration_ms: 1.3494
+  type: 'test'
+  ...
+# Subtest: late verified items remain visible for daily editorial selection
+ok 67 - late verified items remain visible for daily editorial selection
+  ---
+  duration_ms: 0.5545
+  type: 'test'
+  ...
+# Subtest: duplicate discovery remains visible even without an update note
+ok 68 - duplicate discovery remains visible even without an update note
+  ---
+  duration_ms: 0.8741
+  type: 'test'
+  ...
+# Subtest: same-week updated original sources surface in the next daily review pack
+ok 69 - same-week updated original sources surface in the next daily review pack
+  ---
+  duration_ms: 0.6517
+  type: 'test'
+  ...
+# Subtest: old verified background never enters publication suggestion
+ok 70 - old verified background never enters publication suggestion
+  ---
+  duration_ms: 0.8835
+  type: 'test'
+  ...
+# Subtest: daily recommendation never overrides a pending same-week source correction
+ok 71 - daily recommendation never overrides a pending same-week source correction
+  ---
+  duration_ms: 1.8033
+  type: 'test'
+  ...
+# Subtest: unresolved duplicate discoveries block recommendation for associated candidate
+ok 72 - unresolved duplicate discoveries block recommendation for associated candidate
+  ---
+  duration_ms: 1.1887
+  type: 'test'
+  ...
+# Subtest: cannot recommend a future-dated source in yesterday's daily pack
+ok 73 - cannot recommend a future-dated source in yesterday's daily pack
+  ---
+  duration_ms: 0.655
+  type: 'test'
+  ...
+# Subtest: invalid date input fails with clear error
+ok 74 - invalid date input fails with clear error
+  ---
+  duration_ms: 2.9576
+  type: 'test'
+  ...
+# Subtest: real first-week nine candidates remain held and never auto-promote
+ok 75 - real first-week nine candidates remain held and never auto-promote
+  ---
+  duration_ms: 2.3764
+  type: 'test'
+  ...
+# Subtest: daily suggestions require AI literacy scope A/B and a daily audience
+ok 76 - daily suggestions require AI literacy scope A/B and a daily audience
+  ---
+  duration_ms: 1.2778
+  type: 'test'
+  ...
+# Subtest: a fresh scaffold produces an empty daily briefing without an import
+ok 77 - a fresh scaffold produces an empty daily briefing without an import
+  ---
+  duration_ms: 0.538
+  type: 'test'
+  ...
+# Subtest: CLI reader includes historical late verification and updates only as background
+ok 78 - CLI reader includes historical late verification and updates only as background
+  ---
+  duration_ms: 36.6868
+  type: 'test'
+  ...
+# Subtest: history reader recognizes only empty legacy scaffolds and names malformed files
+ok 79 - history reader recognizes only empty legacy scaffolds and names malformed files
+  ---
+  duration_ms: 68.4967
+  type: 'test'
+  ...
+# Subtest: history removes exact duplicate updates while retaining distinct corrections
+ok 80 - history removes exact duplicate updates while retaining distinct corrections
+  ---
+  duration_ms: 41.3222
+  type: 'test'
+  ...
+# Subtest: unresolved historical corrections veto a current recommendation until reviewed
+ok 81 - unresolved historical corrections veto a current recommendation until reviewed
+  ---
+  duration_ms: 90.5188
+  type: 'test'
+  ...
+# Subtest: malformed worksheet internals return a named validation error
+ok 82 - malformed worksheet internals return a named validation error
+  ---
+  duration_ms: 81.1262
+  type: 'test'
+  ...
+# Subtest: direct daily briefing matches pending updates by source URL without an ID
+ok 83 - direct daily briefing matches pending updates by source URL without an ID
+  ---
+  duration_ms: 0.8457
+  type: 'test'
+  ...
+# Subtest: archive ordering is independent of host locale and input order, with stable ID ties
+ok 84 - archive ordering is independent of host locale and input order, with stable ID ties
+  ---
+  duration_ms: 5.4625
+  type: 'test'
+  ...
+# Subtest: generated site pages in the repository are up to date
+ok 85 - generated site pages in the repository are up to date
+  ---
+  duration_ms: 100.0851
+  type: 'test'
+  ...
+# Subtest: generated pages contain no scripts, inline handlers or unsafe URL schemes
+ok 86 - generated pages contain no scripts, inline handlers or unsafe URL schemes
+  ---
+  duration_ms: 79.2526
+  type: 'test'
+  ...
+# Subtest: homepage keeps feedback entry and both generated blocks
+ok 87 - homepage keeps feedback entry and both generated blocks
+  ---
+  duration_ms: 36.4675
+  type: 'test'
+  ...
+# Subtest: archive excludes weekly candidates, escapes titles and keeps unknown dates unknown
+ok 88 - archive excludes weekly candidates, escapes titles and keeps unknown dates unknown
+  ---
+  duration_ms: 0.79
+  type: 'test'
+  ...
+# Subtest: a generated daily edition page passes the publication gate unchanged
+ok 89 - a generated daily edition page passes the publication gate unchanged
+  ---
+  duration_ms: 198.6664
+  type: 'test'
+  ...
+# Subtest: journals and conferences are split by record type and every quick-index link has a target
+ok 90 - journals and conferences are split by record type and every quick-index link has a target
+  ---
+  duration_ms: 30.8341
+  type: 'test'
+  ...
+# Subtest: book chapters are listed in their own group on the journals page, labelled 專書章節
+ok 91 - book chapters are listed in their own group on the journals page, labelled 專書章節
+  ---
+  duration_ms: 1.257
+  type: 'test'
+  ...
+# Subtest: AI literacy scope C records are hidden from the archive and every listed record exists
+ok 92 - AI literacy scope C records are hidden from the archive and every listed record exists
+  ---
+  duration_ms: 8.1827
+  type: 'test'
+  ...
+# Subtest: Friday period is inclusive through Thursday
+ok 93 - Friday period is inclusive through Thursday
+  ---
+  duration_ms: 6.2455
+  type: 'test'
+  ...
+# Subtest: refuses non-Friday and invalid calendar input
+ok 94 - refuses non-Friday and invalid calendar input
+  ---
+  duration_ms: 1.1211
+  type: 'test'
+  ...
+# Subtest: default risk and source metadata are unverified and held
+ok 95 - default risk and source metadata are unverified and held
+  ---
+  duration_ms: 0.5451
+  type: 'test'
+  ...
+# Subtest: writes draft outside publication; refuses overwrite
+ok 96 - writes draft outside publication; refuses overwrite
+  ---
+  duration_ms: 47.6946
+  type: 'test'
+  ...
+# Subtest: first issue candidates cannot be mistaken for verified publication
+ok 97 - first issue candidates cannot be mistaken for verified publication
+  ---
+  duration_ms: 2.0977
+  type: 'test'
+  ...
+# Subtest: form labels are extracted correctly
+ok 98 - form labels are extracted correctly
+  ---
+  duration_ms: 4.3718
+  type: 'test'
+  ...
+# Subtest: only actual reader issues in period count
+ok 99 - only actual reader issues in period count
+  ---
+  duration_ms: 2.531
+  type: 'test'
+  ...
+# Subtest: aggregation excludes empty or malformed scores
+ok 100 - aggregation excludes empty or malformed scores
+  ---
+  duration_ms: 1.2064
+  type: 'test'
+  ...
+# Subtest: render explains ratings are not factual certification
+ok 101 - render explains ratings are not factual certification
+  ---
+  duration_ms: 4.5347
+  type: 'test'
+  ...
+# Subtest: supports renamed reader-perceived credibility rating
+ok 102 - supports renamed reader-perceived credibility rating
+  ---
+  duration_ms: 0.6802
+  type: 'test'
+  ...
+# Subtest: denominators show opt-outs and closed does not mean corrected
+ok 103 - denominators show opt-outs and closed does not mean corrected
+  ---
+  duration_ms: 0.8532
+  type: 'test'
+  ...
+# Subtest: all 1001 reader submissions are collected before publishing
+ok 104 - all 1001 reader submissions are collected before publishing
+  ---
+  duration_ms: 56.6452
+  type: 'test'
+  ...
+# Subtest: an existing summary after page ten prevents duplicate publication
+ok 105 - an existing summary after page ten prevents duplicate publication
+  ---
+  duration_ms: 29.3169
+  type: 'test'
+  ...
+# Subtest: a pull request with the digest title is not an existing summary issue
+ok 106 - a pull request with the digest title is not an existing summary issue
+  ---
+  duration_ms: 8.3031
+  type: 'test'
+  ...
+# Subtest: failed or malformed later pages never publish partial summaries
+ok 107 - failed or malformed later pages never publish partial summaries
+  ---
+  duration_ms: 17.1659
+  type: 'test'
+  ...
+# Subtest: an exactly full page requests the empty last page and an empty window does not post
+ok 108 - an exactly full page requests the empty last page and an empty window does not post
+  ---
+  duration_ms: 8.7657
+  type: 'test'
+  ...
+# Subtest: repeated or overlapping pages fail without publishing or looping
+ok 109 - repeated or overlapping pages fail without publishing or looping
+  ---
+  duration_ms: 13.0698
+  type: 'test'
+  ...
+# Subtest: malformed issue items fail without a partial publication
+ok 110 - malformed issue items fail without a partial publication
+  ---
+  duration_ms: 23.993
+  type: 'test'
+  ...
+# Subtest: 60 unique unlabeled candidates and ten balanced themes
+ok 111 - 60 unique unlabeled candidates and ten balanced themes
+  ---
+  duration_ms: 3.8446
+  type: 'test'
+  ...
+# Subtest: cannot distribute draft as verified blind test
+ok 112 - cannot distribute draft as verified blind test
+  ---
+  duration_ms: 2.688
+  type: 'test'
+  ...
+# Subtest: answer keys cannot appear in reviewer-facing cases
+ok 113 - answer keys cannot appear in reviewer-facing cases
+  ---
+  duration_ms: 1.1418
+  type: 'test'
+  ...
+# Subtest: missing source identifier blocks pack
+ok 114 - missing source identifier blocks pack
+  ---
+  duration_ms: 1.2792
+  type: 'test'
+  ...
+# Subtest: duplicate candidate ID blocks pack
+ok 115 - duplicate candidate ID blocks pack
+  ---
+  duration_ms: 1.5273
+  type: 'test'
+  ...
+# Subtest: adjudication requires two distinct documented reviewers per case
+ok 116 - adjudication requires two distinct documented reviewers per case
+  ---
+  duration_ms: 1.6195
+  type: 'test'
+  ...
+# Subtest: new targeted probes are distinct from prior sixty cases and not labelled gold
+ok 117 - new targeted probes are distinct from prior sixty cases and not labelled gold
+  ---
+  duration_ms: 2.8937
+  type: 'test'
+  ...
+# Subtest: every targeted probe is mapped to a specific publisher excerpt and provenance limit
+ok 118 - every targeted probe is mapped to a specific publisher excerpt and provenance limit
+  ---
+  duration_ms: 0.6769
+  type: 'test'
+  ...
+# Subtest: RCT recruit/analyzed correction is explicit and remains held
+ok 119 - RCT recruit/analyzed correction is explicit and remains held
+  ---
+  duration_ms: 0.4254
+  type: 'test'
+  ...
+# Subtest: lexical alerts cannot equate absence of warnings with evidence support
+ok 120 - lexical alerts cannot equate absence of warnings with evidence support
+  ---
+  duration_ms: 1.344
+  type: 'test'
+  ...
+# Subtest: unknown and editorial implications are not converted to negative factual gold
+ok 121 - unknown and editorial implications are not converted to negative factual gold
+  ---
+  duration_ms: 0.4013
+  type: 'test'
+  ...
+# Subtest: actual nine held candidates remain discovery-only
+ok 122 - actual nine held candidates remain discovery-only
+  ---
+  duration_ms: 26.8233
+  type: 'test'
+  ...
+# Subtest: indexes remain deterministic
+ok 123 - indexes remain deterministic
+  ---
+  duration_ms: 12.2121
+  type: 'test'
+  ...
+# Subtest: date precision rejects fabricated day
+ok 124 - date precision rejects fabricated day
+  ---
+  duration_ms: 0.5628
+  type: 'test'
+  ...
+# Subtest: CSV quoted commas and double quotes preserve content
+ok 125 - CSV quoted commas and double quotes preserve content
+  ---
+  duration_ms: 0.6134
+  type: 'test'
+  ...
+# Subtest: invalid duplicate IDs and references fail closed
+ok 126 - invalid duplicate IDs and references fail closed
+  ---
+  duration_ms: 18.0637
+  type: 'test'
+  ...
+# Subtest: unavailable searches must not claim zero hits
+ok 127 - unavailable searches must not claim zero hits
+  ---
+  duration_ms: 12.064
+  type: 'test'
+  ...
+# Subtest: real knowledge classifications retain unverified status and journal links
+ok 128 - real knowledge classifications retain unverified status and journal links
+  ---
+  duration_ms: 4.3296
+  type: 'test'
+  ...
+# Subtest: synthetic country, topic and conference view is typed and deterministic
+ok 129 - synthetic country, topic and conference view is typed and deterministic
+  ---
+  duration_ms: 2.0418
+  type: 'test'
+  ...
+# Subtest: source IDs follow venue-watchlist v1.4 (J01-J47, C01-C18, C20-C22) and reject unlisted codes
+ok 130 - source IDs follow venue-watchlist v1.4 (J01-J47, C01-C18, C20-C22) and reject unlisted codes
+  ---
+  duration_ms: 53.5146
+  type: 'test'
+  ...
+# Subtest: venue/agency relation mix-up is invalid
+ok 131 - venue/agency relation mix-up is invalid
+  ---
+  duration_ms: 9.3188
+  type: 'test'
+  ...
+# Subtest: three primary-source dated frameworks are archived by original publication year only
+ok 132 - three primary-source dated frameworks are archived by original publication year only
+  ---
+  duration_ms: 4.2558
+  type: 'test'
+  ...
+# Subtest: Australian dated policy and review remain separate linked works
+ok 133 - Australian dated policy and review remain separate linked works
+  ---
+  duration_ms: 4.2739
+  type: 'test'
+  ...
+# Subtest: dated Springer studies map to monitored J03/J32 and original years
+ok 134 - dated Springer studies map to monitored J03/J32 and original years
+  ---
+  duration_ms: 3.2763
+  type: 'test'
+  ...
+# Subtest: LAK conference papers have dated C03 source links
+ok 135 - LAK conference papers have dated C03 source links
+  ---
+  duration_ms: 4.3119
+  type: 'test'
+  ...
+# Subtest: Japan Korea and England historical official announcements retain jurisdiction and first-page dates
+ok 136 - Japan Korea and England historical official announcements retain jurisdiction and first-page dates
+  ---
+  duration_ms: 4.1047
+  type: 'test'
+  ...
+# Subtest: Discover Education July and May 2026 studies keep exact online dates
+ok 137 - Discover Education July and May 2026 studies keep exact online dates
+  ---
+  duration_ms: 5.0951
+  type: 'test'
+  ...
+# Subtest: CSV rejects malformed closing quotes and ambiguous headers
+ok 138 - CSV rejects malformed closing quotes and ambiguous headers
+  ---
+  duration_ms: 1.5851
+  type: 'test'
+  ...
+# Subtest: known search count pairs stay ordered even if another count is unknown
+ok 139 - known search count pairs stay ordered even if another count is unknown
+  ---
+  duration_ms: 30.4731
+  type: 'test'
+  ...
+# Subtest: Google Forms URL is removed and provider disabled
+ok 140 - Google Forms URL is removed and provider disabled
+  ---
+  duration_ms: 3.6543
+  type: 'test'
+  ...
+# Subtest: old no-login URL clearly says paused without collecting data
+ok 141 - old no-login URL clearly says paused without collecting data
+  ---
+  duration_ms: 1.1657
+  type: 'test'
+  ...
+# Subtest: primary feedback page offers GitHub and does not promote no-login route
+ok 142 - primary feedback page offers GitHub and does not promote no-login route
+  ---
+  duration_ms: 1.2542
+  type: 'test'
+  ...
+# Subtest: privacy notice remains accessible as an archival explanation
+ok 143 - privacy notice remains accessible as an archival explanation
+  ---
+  duration_ms: 0.9982
+  type: 'test'
+  ...
+# Subtest: ten actual publisher-source topics are screened
+ok 144 - ten actual publisher-source topics are screened
+  ---
+  duration_ms: 4.7119
+  type: 'test'
+  ...
+# Subtest: screening has twenty source-linked claims without gold-standard certification
+ok 145 - screening has twenty source-linked claims without gold-standard certification
+  ---
+  duration_ms: 0.9903
+  type: 'test'
+  ...
+# Subtest: each topic includes one cautious and one flagged interpretation
+ok 146 - each topic includes one cautious and one flagged interpretation
+  ---
+  duration_ms: 3.3002
+  type: 'test'
+  ...
+# Subtest: draft blind pack stays unlabeled and cannot accidentally be promoted to gold
+ok 147 - draft blind pack stays unlabeled and cannot accidentally be promoted to gold
+  ---
+  duration_ms: 0.4447
+  type: 'test'
+  ...
+# Subtest: a main inside a comment cannot certify unrelated visible content
+ok 148 - a main inside a comment cannot certify unrelated visible content
+  ---
+  duration_ms: 83.7833
+  type: 'test'
+  ...
+# Subtest: inert templates and hidden ancestors cannot stand in for the visible main
+ok 149 - inert templates and hidden ancestors cannot stand in for the visible main
+  ---
+  duration_ms: 103.3805
+  type: 'test'
+  ...
+# Subtest: entity-encoded whitespace cannot disguise executable URLs
+ok 150 - entity-encoded whitespace cannot disguise executable URLs
+  ---
+  duration_ms: 94.523
+  type: 'test'
+  ...
+# Subtest: attribute text cannot impersonate a real claim binding
+ok 151 - attribute text cannot impersonate a real claim binding
+  ---
+  duration_ms: 45.2316
+  type: 'test'
+  ...
+# Subtest: DOM entity decoding preserves legal claim text and nested markup
+ok 152 - DOM entity decoding preserves legal claim text and nested markup
+  ---
+  duration_ms: 60.8243
+  type: 'test'
+  ...
+# Subtest: undeclared HTML beside an issue and in deeper folders fails closed
+ok 153 - undeclared HTML beside an issue and in deeper folders fails closed
+  ---
+  duration_ms: 126.4782
+  type: 'test'
+  ...
+# Subtest: duplicate claim IDs cannot suppress an invalid publication CLI exit
+ok 154 - duplicate claim IDs cannot suppress an invalid publication CLI exit
+  ---
+  duration_ms: 253.7659
+  type: 'test'
+  ...
+# Subtest: CLI tolerates invalid records with a clear failing status
+ok 155 - CLI tolerates invalid records with a clear failing status
+  ---
+  duration_ms: 229.805
+  type: 'test'
+  ...
+# Subtest: public inventory rejects undeclared resources and symlink directories
+ok 156 - public inventory rejects undeclared resources and symlink directories
+  ---
+  duration_ms: 56.6187
+  type: 'test'
+  ...
+# Subtest: public builder copies only accepted inventory and rechecks source validation
+ok 157 - public builder copies only accepted inventory and rechecks source validation
+  ---
+  duration_ms: 114.6558
+  type: 'test'
+  ...
+# Subtest: public builder CLI runs in a fresh process and rejects stale output
+ok 158 - public builder CLI runs in a fresh process and rejects stale output
+  ---
+  duration_ms: 591.2038
+  type: 'test'
+  ...
+# Subtest: invalid manifest shapes fail with a structured result
+ok 159 - invalid manifest shapes fail with a structured result
+  ---
+  duration_ms: 49.5675
+  type: 'test'
+  ...
+# Subtest: backslashes cannot disguise a protocol-relative link
+ok 160 - backslashes cannot disguise a protocol-relative link
+  ---
+  duration_ms: 37.9473
+  type: 'test'
+  ...
+# Subtest: unregistered new week fails closed
+ok 161 - unregistered new week fails closed
+  ---
+  duration_ms: 49.2726
+  type: 'test'
+  ...
+# Subtest: registered synthetic descriptive claim passes structural checks
+ok 162 - registered synthetic descriptive claim passes structural checks
+  ---
+  duration_ms: 78.7915
+  type: 'test'
+  ...
+# Subtest: unresolved contradiction is blocked
+ok 163 - unresolved contradiction is blocked
+  ---
+  duration_ms: 60.9699
+  type: 'test'
+  ...
+# Subtest: unsupported high-impact claim blocked
+ok 164 - unsupported high-impact claim blocked
+  ---
+  duration_ms: 59.0483
+  type: 'test'
+  ...
+# Subtest: hold claim cannot be silently published
+ok 165 - hold claim cannot be silently published
+  ---
+  duration_ms: 51.5644
+  type: 'test'
+  ...
+# Subtest: fake high-impact review fields rejected
+ok 166 - fake high-impact review fields rejected
+  ---
+  duration_ms: 51.5203
+  type: 'test'
+  ...
+# Subtest: duplicate claim id blocked
+ok 167 - duplicate claim id blocked
+  ---
+  duration_ms: 49.3217
+  type: 'test'
+  ...
+# Subtest: new monthly without manifest entry blocked
+ok 168 - new monthly without manifest entry blocked
+  ---
+  duration_ms: 54.4995
+  type: 'test'
+  ...
+# Subtest: legacy audit stays non-certified
+ok 169 - legacy audit stays non-certified
+  ---
+  duration_ms: 1.1996
+  type: 'test'
+  ...
+# Subtest: unregistered sentence in report is blocked
+ok 170 - unregistered sentence in report is blocked
+  ---
+  duration_ms: 53.3955
+  type: 'test'
+  ...
+# Subtest: modified published text without updating evidence is blocked
+ok 171 - modified published text without updating evidence is blocked
+  ---
+  duration_ms: 50.7715
+  type: 'test'
+  ...
+# Subtest: claim present in JSON but absent from HTML is blocked
+ok 172 - claim present in JSON but absent from HTML is blocked
+  ---
+  duration_ms: 50.017
+  type: 'test'
+  ...
+# Subtest: unlisted claim id in HTML is blocked
+ok 173 - unlisted claim id in HTML is blocked
+  ---
+  duration_ms: 60.5128
+  type: 'test'
+  ...
+# Subtest: duplicate claim id in HTML is blocked
+ok 174 - duplicate claim id in HTML is blocked
+  ---
+  duration_ms: 55.9433
+  type: 'test'
+  ...
+# Subtest: missing main region is blocked
+ok 175 - missing main region is blocked
+  ---
+  duration_ms: 59.1808
+  type: 'test'
+  ...
+# Subtest: nested text markup preserves claim when normalised
+ok 176 - nested text markup preserves claim when normalised
+  ---
+  duration_ms: 56.4884
+  type: 'test'
+  ...
+# Subtest: unregistered major heading in main is blocked
+ok 177 - unregistered major heading in main is blocked
+  ---
+  duration_ms: 56.9723
+  type: 'test'
+  ...
+# Subtest: registered heading with unrelated body claim is blocked
+ok 178 - registered heading with unrelated body claim is blocked
+  ---
+  duration_ms: 53.8944
+  type: 'test'
+  ...
+# Subtest: unregistered list item in main is blocked
+ok 179 - unregistered list item in main is blocked
+  ---
+  duration_ms: 52.7697
+  type: 'test'
+  ...
+# Subtest: missing original excerpt prevents release
+ok 180 - missing original excerpt prevents release
+  ---
+  duration_ms: 51.5411
+  type: 'test'
+  ...
+# Subtest: altered archived source checksum prevents release
+ok 181 - altered archived source checksum prevents release
+  ---
+  duration_ms: 44.7045
+  type: 'test'
+  ...
+# Subtest: missing interpretation and limitations prevents release
+ok 182 - missing interpretation and limitations prevents release
+  ---
+  duration_ms: 42.769
+  type: 'test'
+  ...
+# Subtest: source and claim URL mismatch prevents release
+ok 183 - source and claim URL mismatch prevents release
+  ---
+  duration_ms: 42.7224
+  type: 'test'
+  ...
+# Subtest: unreviewed translation prevents release
+ok 184 - unreviewed translation prevents release
+  ---
+  duration_ms: 42.887
+  type: 'test'
+  ...
+# Subtest: source excerpt genuinely included and checksummed passes structural validation
+ok 185 - source excerpt genuinely included and checksummed passes structural validation
+  ---
+  duration_ms: 48.198
+  type: 'test'
+  ...
+# Subtest: medium-risk claim without two-pass agreement is held
+ok 186 - medium-risk claim without two-pass agreement is held
+  ---
+  duration_ms: 44.1683
+  type: 'test'
+  ...
+# Subtest: medium-risk claim cannot omit crosscheck trace
+ok 187 - medium-risk claim cannot omit crosscheck trace
+  ---
+  duration_ms: 43.5529
+  type: 'test'
+  ...
+# Subtest: high risk remains held despite purported human review fields
+ok 188 - high risk remains held despite purported human review fields
+  ---
+  duration_ms: 43.1679
+  type: 'test'
+  ...
+# Subtest: risk classification cannot hide impact behind low tier
+ok 189 - risk classification cannot hide impact behind low tier
+  ---
+  duration_ms: 38.9072
+  type: 'test'
+  ...
+# Subtest: missing risk tier blocks release
+ok 190 - missing risk tier blocks release
+  ---
+  duration_ms: 41.8124
+  type: 'test'
+  ...
+# Subtest: low-risk bibliographic item can publish without expert labels
+ok 191 - low-risk bibliographic item can publish without expert labels
+  ---
+  duration_ms: 44.6334
+  type: 'test'
+  ...
+# Subtest: missing registered HTML returns validation error, not exception
+ok 192 - missing registered HTML returns validation error, not exception
+  ---
+  duration_ms: 44.2475
+  type: 'test'
+  ...
+# Subtest: HTML comment pretending to contain a bound claim is rejected
+ok 193 - HTML comment pretending to contain a bound claim is rejected
+  ---
+  duration_ms: 59.616
+  type: 'test'
+  ...
+# Subtest: unsupported visible content tag cannot bypass claim binding
+ok 194 - unsupported visible content tag cannot bypass claim binding
+  ---
+  duration_ms: 54.3322
+  type: 'test'
+  ...
+# Subtest: inline event handlers and hidden attributes are blocked
+ok 195 - inline event handlers and hidden attributes are blocked
+  ---
+  duration_ms: 54.2217
+  type: 'test'
+  ...
+# Subtest: unbound direct div text is rejected
+ok 196 - unbound direct div text is rejected
+  ---
+  duration_ms: 59.711
+  type: 'test'
+  ...
+# Subtest: unbound text inside section outside paragraphs is rejected
+ok 197 - unbound text inside section outside paragraphs is rejected
+  ---
+  duration_ms: 51.5882
+  type: 'test'
+  ...
+# Subtest: bound content in wrapper elements remains valid
+ok 198 - bound content in wrapper elements remains valid
+  ---
+  duration_ms: 48.7847
+  type: 'test'
+  ...
+# Subtest: invalid calendar dates and malformed source URLs are rejected
+ok 199 - invalid calendar dates and malformed source URLs are rejected
+  ---
+  duration_ms: 44.8787
+  type: 'test'
+  ...
+# Subtest: offline full-issue fixture fails closed when evidence is tampered with
+ok 200 - offline full-issue fixture fails closed when evidence is tampered with
+  ---
+  duration_ms: 54.7625
+  type: 'test'
+  ...
+# Subtest: unregistered daily HTML is blocked, not silently deployed
+ok 201 - unregistered daily HTML is blocked, not silently deployed
+  ---
+  duration_ms: 43.4924
+  type: 'test'
+  ...
+# Subtest: registered daily HTML without explicit narrow channel is blocked
+ok 202 - registered daily HTML without explicit narrow channel is blocked
+  ---
+  duration_ms: 56.536
+  type: 'test'
+  ...
+# Subtest: P3 favicon regression: external and noncanonical icons are rejected
+ok 203 - P3 favicon regression: external and noncanonical icons are rejected
+  ---
+  duration_ms: 96.5251
+  type: 'test'
+  ...
+# Subtest: P3 favicon control: fixed local SVG file is accepted
+ok 204 - P3 favicon control: fixed local SVG file is accepted
+  ---
+  duration_ms: 59.1915
+  type: 'test'
+  ...
+# Subtest: P3 metadata regression: unreviewed search and social text is rejected
+ok 205 - P3 metadata regression: unreviewed search and social text is rejected
+  ---
+  duration_ms: 105.0905
+  type: 'test'
+  ...
+# Subtest: P3 metadata control: fixed viewport and neutral description are accepted
+ok 206 - P3 metadata control: fixed viewport and neutral description are accepted
+  ---
+  duration_ms: 85.4274
+  type: 'test'
+  ...
+# Subtest: P3 regression: unreviewed tooltips on claims and links are rejected
+ok 207 - P3 regression: unreviewed tooltips on claims and links are rejected
+  ---
+  duration_ms: 59.0789
+  type: 'test'
+  ...
+# Subtest: P3 regression: arbitrary bare report tab titles are rejected
+ok 208 - P3 regression: arbitrary bare report tab titles are rejected
+  ---
+  duration_ms: 52.6019
+  type: 'test'
+  ...
+# Subtest: P3 control: bare report neutral issue title is accepted
+ok 209 - P3 control: bare report neutral issue title is accepted
+  ---
+  duration_ms: 52.6376
+  type: 'test'
+  ...
+# Subtest: P3 regression: non-UTF-8 or empty charset declarations are rejected
+ok 210 - P3 regression: non-UTF-8 or empty charset declarations are rejected
+  ---
+  duration_ms: 107.0485
+  type: 'test'
+  ...
+# Subtest: P3 control: absent and UTF-8 charset declarations are accepted
+ok 211 - P3 control: absent and UTF-8 charset declarations are accepted
+  ---
+  duration_ms: 90.0894
+  type: 'test'
+  ...
+# Subtest: external-review regression: outside heading
+ok 212 - external-review regression: outside heading
+  ---
+  duration_ms: 51.4745
+  type: 'test'
+  ...
+# Subtest: external-review regression: outside aside
+ok 213 - external-review regression: outside aside
+  ---
+  duration_ms: 53.1719
+  type: 'test'
+  ...
+# Subtest: external-review regression: outside text
+ok 214 - external-review regression: outside text
+  ---
+  duration_ms: 38.2256
+  type: 'test'
+  ...
+# Subtest: external-review regression: hidden class ancestor
+ok 215 - external-review regression: hidden class ancestor
+  ---
+  duration_ms: 40.8166
+  type: 'test'
+  ...
+# Subtest: external-review regression: closed dialog
+ok 216 - external-review regression: closed dialog
+  ---
+  duration_ms: 38.6212
+  type: 'test'
+  ...
+# Subtest: external-review regression: closed details
+ok 217 - external-review regression: closed details
+  ---
+  duration_ms: 40.0549
+  type: 'test'
+  ...
+# Subtest: external-review regression: inert ancestor
+ok 218 - external-review regression: inert ancestor
+  ---
+  duration_ms: 40.1962
+  type: 'test'
+  ...
+# Subtest: external-review regression: aria hidden ancestor
+ok 219 - external-review regression: aria hidden ancestor
+  ---
+  duration_ms: 40.2583
+  type: 'test'
+  ...
+# Subtest: external-review regression: hidden html
+ok 220 - external-review regression: hidden html
+  ---
+  duration_ms: 39.0227
+  type: 'test'
+  ...
+# Subtest: external-review regression: hidden body
+ok 221 - external-review regression: hidden body
+  ---
+  duration_ms: 38.0289
+  type: 'test'
+  ...
+# Subtest: external-review regression: inline stylesheet
+ok 222 - external-review regression: inline stylesheet
+  ---
+  duration_ms: 41.0631
+  type: 'test'
+  ...
+# Subtest: external-review regression: external stylesheet
+ok 223 - external-review regression: external stylesheet
+  ---
+  duration_ms: 44.1262
+  type: 'test'
+  ...
+# Subtest: external-review regression: alternate stylesheet
+ok 224 - external-review regression: alternate stylesheet
+  ---
+  duration_ms: 41.7588
+  type: 'test'
+  ...
+# Subtest: external-review regression: main class
+ok 225 - external-review regression: main class
+  ---
+  duration_ms: 42.4596
+  type: 'test'
+  ...
+# Subtest: external-review regression: hidden claim class
+ok 226 - external-review regression: hidden claim class
+  ---
+  duration_ms: 43.6413
+  type: 'test'
+  ...
+# Subtest: external-review regression: claim inert
+ok 227 - external-review regression: claim inert
+  ---
+  duration_ms: 39.1931
+  type: 'test'
+  ...
+# Subtest: external-review regression: claim aria hidden
+ok 228 - external-review regression: claim aria hidden
+  ---
+  duration_ms: 37.8439
+  type: 'test'
+  ...
+# Subtest: external-review regression: claim slot
+ok 229 - external-review regression: claim slot
+  ---
+  duration_ms: 38.4458
+  type: 'test'
+  ...
+# Subtest: external-review regression: svg namespace main
+ok 230 - external-review regression: svg namespace main
+  ---
+  duration_ms: 39.9487
+  type: 'test'
+  ...
+# Subtest: external-review regression: svg animate
+ok 231 - external-review regression: svg animate
+  ---
+  duration_ms: 42.0912
+  type: 'test'
+  ...
+# Subtest: external-review regression: svg set
+ok 232 - external-review regression: svg set
+  ---
+  duration_ms: 37.2785
+  type: 'test'
+  ...
+# Subtest: external-review regression: math namespace
+ok 233 - external-review regression: math namespace
+  ---
+  duration_ms: 38.5708
+  type: 'test'
+  ...
+# Subtest: external-review control: exact daily renderer shell is accepted
+ok 234 - external-review control: exact daily renderer shell is accepted
+  ---
+  duration_ms: 126.0786
+  type: 'test'
+  ...
+# Subtest: external-review control: bare reports accept only reviewed local stylesheets
+ok 235 - external-review control: bare reports accept only reviewed local stylesheets
+  ---
+  duration_ms: 47.6879
+  type: 'test'
+  ...
+# Subtest: external-review regression: legacy CSS stays allowed but SVG animation is blocked
+ok 236 - external-review regression: legacy CSS stays allowed but SVG animation is blocked
+  ---
+  duration_ms: 35.6179
+  type: 'test'
+  ...
+# Subtest: opt-in daily fixed low-risk source record passes structural validation
+ok 237 - opt-in daily fixed low-risk source record passes structural validation
+  ---
+  duration_ms: 45.1207
+  type: 'test'
+  ...
+# Subtest: daily descriptive or high risk cannot bypass structural gate
+ok 238 - daily descriptive or high risk cannot bypass structural gate
+  ---
+  duration_ms: 44.1695
+  type: 'test'
+  ...
+# Subtest: daily prose policy analysis cannot be disguised as a bibliographic claim
+ok 239 - daily prose policy analysis cannot be disguised as a bibliographic claim
+  ---
+  duration_ms: 47.632
+  type: 'test'
+  ...
+# Subtest: daily issue future source date is blocked
+ok 240 - daily issue future source date is blocked
+  ---
+  duration_ms: 44.5134
+  type: 'test'
+  ...
+# Subtest: daily does not allow fabricated wrong first-disclosure date
+ok 241 - daily does not allow fabricated wrong first-disclosure date
+  ---
+  duration_ms: 45.6363
+  type: 'test'
+  ...
+# Subtest: attributed official summary with pinned excerpt and two passes passes structural gate
+ok 242 - attributed official summary with pinned excerpt and two passes passes structural gate
+  ---
+  duration_ms: 44.6301
+  type: 'test'
+  ...
+# Subtest: research abstracts are explicitly attributed to their authors
+ok 243 - research abstracts are explicitly attributed to their authors
+  ---
+  duration_ms: 45.3267
+  type: 'test'
+  ...
+# Subtest: freeform claims and unsupported causal policy wording fail closed
+ok 244 - freeform claims and unsupported causal policy wording fail closed
+  ---
+  duration_ms: 46.0245
+  type: 'test'
+  ...
+# Subtest: summary without two reviews or pinned source cannot publish
+ok 245 - summary without two reviews or pinned source cannot publish
+  ---
+  duration_ms: 47.1252
+  type: 'test'
+  ...
+# Subtest: no silent expansion to weekly and monthly publishing policy
+ok 246 - no silent expansion to weekly and monthly publishing policy
+  ---
+  duration_ms: 36.4699
+  type: 'test'
+  ...
+# Subtest: daily rejects missing first disclosure
+ok 247 - daily rejects missing first disclosure
+  ---
+  duration_ms: 49.0396
+  type: 'test'
+  ...
+# Subtest: daily summary rejects missing source-aligned spans
+ok 248 - daily summary rejects missing source-aligned spans
+  ---
+  duration_ms: 44.5295
+  type: 'test'
+  ...
+# Subtest: daily summary rejects raw newline
+ok 249 - daily summary rejects raw newline
+  ---
+  duration_ms: 62.0194
+  type: 'test'
+  ...
+# Subtest: daily rejects cross-category source misrepresentation
+ok 250 - daily rejects cross-category source misrepresentation
+  ---
+  duration_ms: 52.6513
+  type: 'test'
+  ...
+# Subtest: daily rejects claims path borrowed from unrelated issue
+ok 251 - daily rejects claims path borrowed from unrelated issue
+  ---
+  duration_ms: 65.4356
+  type: 'test'
+  ...
+# Subtest: registered report refuses script injected outside main
+ok 252 - registered report refuses script injected outside main
+  ---
+  duration_ms: 49.3952
+  type: 'test'
+  ...
+# Subtest: registered daily source facts refuse inline handlers outside main
+ok 253 - registered daily source facts refuse inline handlers outside main
+  ---
+  duration_ms: 52.5908
+  type: 'test'
+  ...
+# Subtest: daily bibliography requires actual pinned source checksum
+ok 254 - daily bibliography requires actual pinned source checksum
+  ---
+  duration_ms: 45.1792
+  type: 'test'
+  ...
+# Subtest: older-than-seven-days bibliographic data cannot masquerade as daily breaking news
+ok 255 - older-than-seven-days bibliographic data cannot masquerade as daily breaking news
+  ---
+  duration_ms: 43.9953
+  type: 'test'
+  ...
+# Subtest: scriptable https-looking claim anchor is blocked on the full static page
+ok 256 - scriptable https-looking claim anchor is blocked on the full static page
+  ---
+  duration_ms: 34.14
+  type: 'test'
+  ...
+# Subtest: HTML numeric entity obfuscation of unsafe href is blocked
+ok 257 - HTML numeric entity obfuscation of unsafe href is blocked
+  ---
+  duration_ms: 33.7462
+  type: 'test'
+  ...
+# Subtest: safe HTTPS static claim anchor is still permitted
+ok 258 - safe HTTPS static claim anchor is still permitted
+  ---
+  duration_ms: 33.3767
+  type: 'test'
+  ...
+# Subtest: daily issue cannot omit reader-visible primary source
+ok 259 - daily issue cannot omit reader-visible primary source
+  ---
+  duration_ms: 39.6175
+  type: 'test'
+  ...
+# Subtest: daily issue cannot substitute an unrelated source link
+ok 260 - daily issue cannot substitute an unrelated source link
+  ---
+  duration_ms: 41.9917
+  type: 'test'
+  ...
+# Subtest: legacy files retain noncertified warning but reject malicious script
+ok 261 - legacy files retain noncertified warning but reject malicious script
+  ---
+  duration_ms: 28.9429
+  type: 'test'
+  ...
+# Subtest: legacy benign static content remains exempt from retrospective claim recertification
+ok 262 - legacy benign static content remains exempt from retrospective claim recertification
+  ---
+  duration_ms: 24.4952
+  type: 'test'
+  ...
+# Subtest: deployed-site historical monthly reports do not link to excluded research directory
+ok 263 - deployed-site historical monthly reports do not link to excluded research directory
+  ---
+  duration_ms: 0.8705
+  type: 'test'
+  ...
+# Subtest: daily policy must identify formal policy, guidance, draft, commentary or event
+ok 264 - daily policy must identify formal policy, guidance, draft, commentary or event
+  ---
+  duration_ms: 37.8665
+  type: 'test'
+  ...
+# Subtest: daily research cannot be mislabelled as an official guidance document
+ok 265 - daily research cannot be mislabelled as an official guidance document
+  ---
+  duration_ms: 37.1078
+  type: 'test'
+  ...
+# Subtest: daily original source link outside its claim does not count
+ok 266 - daily original source link outside its claim does not count
+  ---
+  duration_ms: 42.2763
+  type: 'test'
+  ...
+# Subtest: a new daily issue cannot override a held matching candidate in the shared weekly pool
+ok 267 - a new daily issue cannot override a held matching candidate in the shared weekly pool
+  ---
+  duration_ms: 50.8006
+  type: 'test'
+  ...
+# Subtest: an approved matching candidate permits the unchanged structured daily checks
+ok 268 - an approved matching candidate permits the unchanged structured daily checks
+  ---
+  duration_ms: 50.7913
+  type: 'test'
+  ...
+# Subtest: pending corrections in any cumulative worksheet veto daily publication
+ok 269 - pending corrections in any cumulative worksheet veto daily publication
+  ---
+  duration_ms: 106.3018
+  type: 'test'
+  ...
+# Subtest: source snapshots must be regular repository files and hash raw bytes
+ok 270 - source snapshots must be regular repository files and hash raw bytes
+  ---
+  duration_ms: 64.901
+  type: 'test'
+  ...
+# Subtest: real A07 source URL remains blocked by existing held candidate despite valid synthetic source structure
+ok 271 - real A07 source URL remains blocked by existing held candidate despite valid synthetic source structure
+  ---
+  duration_ms: 52.1817
+  type: 'test'
+  ...
+# Subtest: weekly claim outside AI literacy scope (C, unknown or missing) is blocked
+ok 272 - weekly claim outside AI literacy scope (C, unknown or missing) is blocked
+  ---
+  duration_ms: 94.99
+  type: 'test'
+  ...
+# Subtest: AI literacy scope needs valid framework codes and a reason
+ok 273 - AI literacy scope needs valid framework codes and a reason
+  ---
+  duration_ms: 229.111
+  type: 'test'
+  ...
+# Subtest: class B with a framework code publishes like class A
+ok 274 - class B with a framework code publishes like class A
+  ---
+  duration_ms: 31.0541
+  type: 'test'
+  ...
+# Subtest: daily channel also requires A or B scope
+ok 275 - daily channel also requires A or B scope
+  ---
+  duration_ms: 36.6622
+  type: 'test'
+  ...
+# Subtest: daily claim cannot relabel the scope of its cumulative candidate
+ok 276 - daily claim cannot relabel the scope of its cumulative candidate
+  ---
+  duration_ms: 46.3199
+  type: 'test'
+  ...
+# Subtest: weekly edition blocks teacher-education, higher-education, adult, unknown or missing audience
+ok 277 - weekly edition blocks teacher-education, higher-education, adult, unknown or missing audience
+  ---
+  duration_ms: 185.2452
+  type: 'test'
+  ...
+# Subtest: other education stakeholders may publish in weekly and daily editions
+ok 278 - other education stakeholders may publish in weekly and daily editions
+  ---
+  duration_ms: 67.0821
+  type: 'test'
+  ...
+# Subtest: daily edition blocks teacher-education audience
+ok 279 - daily edition blocks teacher-education audience
+  ---
+  duration_ms: 38.3381
+  type: 'test'
+  ...
+# Subtest: monthly edition may carry teacher-education items but never an unknown audience
+ok 280 - monthly edition may carry teacher-education items but never an unknown audience
+  ---
+  duration_ms: 69.4208
+  type: 'test'
+  ...
+# Subtest: daily claim cannot relabel the audience of its cumulative candidate
+ok 281 - daily claim cannot relabel the audience of its cumulative candidate
+  ---
+  duration_ms: 44.3967
+  type: 'test'
+  ...
+# Subtest: issue feedback form offers both ratings and specific correction evidence
+ok 282 - issue feedback form offers both ratings and specific correction evidence
+  ---
+  duration_ms: 3.1033
+  type: 'test'
+  ...
+# Subtest: feedback form and login notice are linked from homepage and both archived reports
+ok 283 - feedback form and login notice are linked from homepage and both archived reports
+  ---
+  duration_ms: 2.5376
+  type: 'test'
+  ...
+# Subtest: feedback page has working repository issue template url and public privacy warning
+ok 284 - feedback page has working repository issue template url and public privacy warning
+  ---
+  duration_ms: 1.0133
+  type: 'test'
+  ...
+# Subtest: digest schedule aggregates issues rather than writing unverified correction automatically
+ok 285 - digest schedule aggregates issues rather than writing unverified correction automatically
+  ---
+  duration_ms: 3.0801
+  type: 'test'
+  ...
+# Subtest: pure rating without narrative is allowed
+ok 286 - pure rating without narrative is allowed
+  ---
+  duration_ms: 1.7634
+  type: 'test'
+  ...
+# Subtest: weekly digest avoids copying issue titles and shows sample denominators
+ok 287 - weekly digest avoids copying issue titles and shows sample denominators
+  ---
+  duration_ms: 0.9574
+  type: 'test'
+  ...
+# Subtest: 40 remaining claim assessments cover four items in each of ten groups
+ok 288 - 40 remaining claim assessments cover four items in each of ten groups
+  ---
+  duration_ms: 4.2626
+  type: 'test'
+  ...
+# Subtest: the two preliminary reviews exactly cover all sixty original candidates without duplicates
+ok 289 - the two preliminary reviews exactly cover all sixty original candidates without duplicates
+  ---
+  duration_ms: 0.959
+  type: 'test'
+  ...
+# Subtest: remaining preliminary assessments do not masquerade as validated ground truth
+ok 290 - remaining preliminary assessments do not masquerade as validated ground truth
+  ---
+  duration_ms: 1.465
+  type: 'test'
+  ...
+# Subtest: abstentions and editorial interpretations are explicitly separated from factual support
+ok 291 - abstentions and editorial interpretations are explicitly separated from factual support
+  ---
+  duration_ms: 0.58
+  type: 'test'
+  ...
+# Subtest: blind review source never gets assessment labels
+ok 292 - blind review source never gets assessment labels
+  ---
+  duration_ms: 0.7732
+  type: 'test'
+  ...
+1..292
+# tests 292
+# suites 0
+# pass 292
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 8275.3647

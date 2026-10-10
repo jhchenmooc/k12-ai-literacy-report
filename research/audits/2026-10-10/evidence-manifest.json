@@ -477,6 +477,36 @@
       "phase": "metadata-followup",
       "bytes": 2581,
       "sha256": "8e0a03b71b3b311a5d99e4c7f4d2c976b4c7369ad87f582a9fa20e9c617b68f1"
+    },
+    {
+      "path": "favicon-followup/REPORT.md",
+      "phase": "favicon-followup",
+      "bytes": 1531,
+      "sha256": "33a7aa5679cabd03f12c8004028412adfd502e3ec25af606327584f445dd1b52"
+    },
+    {
+      "path": "favicon-followup/node22-tests.log",
+      "phase": "favicon-followup",
+      "bytes": 55774,
+      "sha256": "c08be90e470e460e8d09a71208401f64e5863acaec1e8bfd57a1fd5a4985ff9f"
+    },
+    {
+      "path": "favicon-followup/node24-tests.log",
+      "phase": "favicon-followup",
+      "bytes": 22680,
+      "sha256": "b95cef75ab8ee9e064b1db6331fd347f6a26447895b752dd4a8519cc1ceb04bb"
+    },
+    {
+      "path": "favicon-followup/red-tests.log",
+      "phase": "favicon-followup",
+      "bytes": 1203,
+      "sha256": "0018d897e5e39002bfdeb9f0536ce888d9bf8fb8d3be9205d364aa8f8e6a659d"
+    },
+    {
+      "path": "favicon-followup/working-tree-verification.json",
+      "phase": "favicon-followup",
+      "bytes": 2580,
+      "sha256": "09e982e5a4dc43c6598be31ca8598cf34ba61e541cf32afa0104356396fecd6a"
     }
   ],
   "followup": {
@@ -491,6 +521,11 @@
   },
   "metadataFollowup": {
     "reviewedOriginalHead": "6360e2148b68208412f09c88c2671a396291db8b",
+    "currentFixTarget": "actual branch HEAD",
+    "files": 5
+  },
+  "faviconFollowup": {
+    "reviewedOriginalHead": "56621b8eb9ad4a755fe080c8dd07270030e38f04",
     "currentFixTarget": "actual branch HEAD",
     "files": 5
   }
