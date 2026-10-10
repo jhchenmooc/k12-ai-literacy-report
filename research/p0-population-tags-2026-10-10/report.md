@@ -70,10 +70,40 @@
   - 入庫時讀過的 AERA 論文庫摘要沒有用，以和首批規則一致。
 - **KB-2025-0133 有摘要，但方法與主題都沒命中：**題名與摘要沒有回顧、問卷等字眼，所以不標。
 
+## 範圍與框架面向（`has_ailit_class`、`has_ailit_dim`，2026-10-10 晚補）
+
+> **規則：**依 [knowledge-base/schema.md](../knowledge-base/schema.md)「AI 素養範圍與框架面向」一節：
+> - 照各篇入庫報告的 `ai_lit_class` 與 `ai_lit_dims` 轉入；判讀不一致者不標。
+> - 依本刊共用準則，不用論文趨勢方案的操作細則。
+> - 一律 `discovered_unverified`。
+>
+> **範圍：**新增 56 筆，KR-3864～KR-3919，接在編輯 session #209 之後。18 篇都是 A 類，各篇只有一個來源，沒有判讀不一致的情況。
+
+| 紀錄 | 範圍 | 面向 | 來源 |
+|---|---|---|---|
+| KB-2026-0250 | A | T-BAS、T-ETH | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2026-0251 | A | T-TEA、T-BAS | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2026-0252 | A | S-BAS、S-ETH | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2026-0253 | A | S-BAS、S-SYS、S-ETH | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2026-0254 | A | S-BAS、S-SYS | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2025-0123 | A | T-PD、T-BAS、T-ETH | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2025-0124 | A | T-ETH、T-BAS | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2025-0125 | A | T-PD、T-TEA | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2025-0126 | A | T-BAS、T-ETH | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2025-0127 | A | S-BAS、S-ETH | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2025-0128 | A | S-BAS、S-SYS | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2025-0129 | A | S-BAS、S-ETH | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2025-0132 | A | S-ETH、S-BAS | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2025-0133 | A | S-BAS、S-SYS | [p0-pending-final b1-results.json](../p0-pending-final-2026-10-10/b1-results.json) |
+| KB-2026-0263 | A | S-ETH、S-BAS | [p0-b1-fulltext](../p0-b1-fulltext-2026-10-10/report.md) |
+| KB-2026-0264 | A | S-ETH、S-BAS | [p0-b1-fulltext](../p0-b1-fulltext-2026-10-10/report.md) |
+| KB-2026-0265 | A | S-ETH、S-SYS | [p0-b1-fulltext](../p0-b1-fulltext-2026-10-10/report.md) |
+| KB-2026-0266 | A | T-BAS、T-TEA | [p0-b1-fulltext](../p0-b1-fulltext-2026-10-10/report.md) |
+
 ## 不標
 
 - **KB-2025-0003：**依交辦判為不明，不標。
 
 ## 之後的做法
 
-新入庫的研究紀錄，入庫時一併加上 `has_population`、`has_topic`、`has_method`。
+新入庫的研究紀錄，入庫時一併加上 `has_population`、`has_topic`、`has_method`、`has_ailit_class`、`has_ailit_dim`。
