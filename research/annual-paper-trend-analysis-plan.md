@@ -1,4 +1,4 @@
-# 論文逐年趨勢分析方案 v0.12（草稿）
+# 論文逐年趨勢分析方案 v0.13（草稿）
 
 ## 摘要（先讀這一頁）
 
@@ -95,6 +95,7 @@
 - **ITS 操作細則**：K-12 師生直接操作 ITS 才判 B；只用演算法、記錄檔或建模的判 C。此為依現行準則的操作細則；若需修訂準則本身，另報管理者。
 - 每年每刊報告「命中數 → 篩入數（A、B、不明）→ 缺摘要比例」。
 - **撤稿與非論文**：記錄 OpenAlex `is_retracted`；撤稿不進主要分母，各年撤稿篇數並列。editorial、erratum、letter 依 PROTOCOL 的排除清單處理。
+- **短評與社論的辨識**：OpenAlex 會把短評歸為 `article`（2026-10-10 實例：AI & Society〔J24〕三篇 Scopus 標為 Note 的短評，OpenAlex 皆為 `article`），只靠 OpenAlex 類型排除不了。OpenAlex 無摘要的紀錄，以第 2.7 節 Scopus 匯出的 `Document Type` 判別；Note、Editorial、Letter、Erratum 不進主要分母，也不算入缺摘要比例，各年篇數並列。每千篇比率的分母（面板 article＋review 總數）無法逐篇排除，維持原算法，README 註明。
 - **去重**：先比小寫 DOI，再比正規化題名加第一作者（只在 scratchpad；正規化步驟與相似度門檻寫在 PROTOCOL，無法判定時保留兩筆並記入 README）；同一作品不同版本只算一次，年份取最早正式版本的 OpenAlex `publication_year`。知識庫的 `work_group_id` 目前全部空白；比對只用在 trend-corpus 語料，不回寫知識庫、不自動併檔。
 
 ### 2.6 面板規模與面板外監測（核心）
@@ -106,8 +107,8 @@
 
 - **用詞**：本方案的「缺摘要」一律指「**自動管道取不到摘要**」（OpenAlex 無摘要，多因出版者未授權），**不是論文本身沒有摘要**。
 - **補摘要的做法**：檢索框架仍以 OpenAlex 的 work ID 快照為準；摘要不足者，由**管理者透過學校 Scopus 的一般檢索與正式匯出功能**補齊：
-  1. 編輯 session 提供現成的 Scopus 檢索式（`TITLE-ABS-KEY(...)` 加面板期刊 ISSN 與 `PUBYEAR`，與第 2.3 節主查詢對應），以及哪些年份需要補。
-  2. 管理者在 Scopus 執行檢索、全選，匯出 CSV 或 RIS，**勾選含摘要**；每次匯出上限依 Scopus 規定，必要時依年份分次。
+  1. 第 2 步取得 ID 快照後，文獻搜尋 session 列出 OpenAlex 無摘要、有 DOI 的紀錄，編輯 session 分批組成 `DOI(…) OR DOI(…)` 檢索式（每批筆數以實測為準）交管理者。**不用**「關鍵字＋ISSN＋`PUBYEAR`」：Scopus 與 OpenAlex 的年份可能差一年（2026-10-10 實例：同三篇 AI & Society，OpenAlex 記 2025、Scopus 記 2026、第 41 卷），兩庫關鍵字比對方式也不同，命中對不齊。DOI 查詢寫法已於 2026-10-10 實測可用。
+  2. 管理者在 Scopus 執行檢索、全選，匯出 CSV 或 RIS，**勾選含摘要**（`Document Type` 欄一併匯出）；每次匯出上限依 Scopus 規定。
   3. 匯出檔交給編輯 session，只放 scratchpad；以小寫 DOI 比對 OpenAlex work ID，補入摘要。比對不到者記入 README，不另外編碼。
   4. 判讀前去除摘要結尾的出版者版權聲明（例如「© 2025 Elsevier Ltd」起的文字）；`abstract_sha256` 以去除後的文字計算。
 - **不用生成式 AI 檢索工具**：Scopus AI、Web of Science Research Assistant、館藏資源研究助理等工具的結果會隨次變動、無法凍結重現，摘要也可能不準確；本方案只用一般檢索與匯出，這些工具最多作為人工找線索的輔助，不進語料。
@@ -118,7 +119,7 @@
   - 測試一，一般關鍵字檢索的前 100 筆：22 個欄位（含 DOI、Abstract、Author Keywords、Index Keywords、Document Type、EID）；100 筆都有完整摘要、無截斷；98 筆摘要結尾帶出版者版權聲明；94 筆有 DOI，其中 OpenAlex 查得 91 筆、16 筆在 OpenAlex 無摘要。
   - 測試二，`ISSN(0360-1315) AND PUBYEAR = 2025 AND TITLE-ABS-KEY("artificial intelligence" OR "AI literacy" OR "generative AI" OR ChatGPT)`：36 筆，全為 Computers and Education 2025 期刊論文；36 筆都有 DOI 與完整摘要（149～310 詞），全部帶版權聲明；OpenAlex 查得 35 筆，只有 12 筆有摘要，23 筆只能靠 Scopus 補。這 36 個 DOI 都不在知識庫中。
   - 結論：單刊單年一次即可全數匯出，工作量小；對 Elsevier 期刊補摘要效果明顯。版權聲明需去除（上列第 4 步）。
-- **D6 補不到時**：比對不到或 Scopus 也無摘要者照第 9 節列為限制，並逐刊列出取不到摘要的比例。
+- **D6 補不到時**：沒有 DOI、Scopus 查無，或 Scopus 也無摘要者照第 9 節列為限制，並逐刊列出取不到摘要的比例；Scopus 標為 Note 等非論文類型者依第 2.5 節處理，不算缺摘要。
 
 ## 3. 年份
 
@@ -135,8 +136,9 @@
 - **逐筆 JSON 輸出**：`{work_id, 各欄位, evidence:[{field, span}], model_id}`，由腳本驗證：非「不明」的值都要附一段逐字出現在摘要中、不超過 15 個英文詞的片段；「不明」不得附片段。片段只留在 scratchpad，repo 只存片段在摘要中的起訖位置。不合格的重編一次，仍不合格就記「不明」並計數。
 - **批次**：每批固定 20 筆，記 `batch_id`、`position`；每筆各自判斷，不參照同批其他筆。
 - **模型與參數**：`model_id` 由每批第一筆輸出自報，並與工具紀錄核對。子代理無法設定 temperature 等參數，記「預設、不可設定」。
-- **摘要雜湊**：每筆記 `abstract_sha256`（摘要文字依 PROTOCOL 規定的方式重組後的雜湊），讓第三方能確認輸入相同；摘要本身不 commit。
-- **缺摘要的定義**（指 OpenAlex 與 Scopus 匯出都取不到，見第 2.7 節）：摘要詞數＝`abstract_inverted_index` 各詞位置數總和；少於 20 詞記 `has_abstract=false`。OpenAlex 的 `has_abstract` filter 只用於題名子查詢與缺摘要比例統計（兩者定義不同，README 註明）。
+- **摘要來源優先順序**：OpenAlex 有摘要（20 詞以上）就用 OpenAlex；沒有才用 Scopus 匯出。`abstract_source` 記實際採用的來源。
+- **摘要雜湊**：每筆記 `abstract_sha256`，讓第三方能確認輸入相同；摘要本身不 commit。OpenAlex 摘要依 PROTOCOL 規定的方式由 `abstract_inverted_index` 重組；Scopus 摘要先去除結尾版權聲明（第 2.7 節第 4 步），再去頭尾空白、連續空白併為一個半形空格，以 UTF-8 計算。
+- **缺摘要的定義**（指 OpenAlex 與 Scopus 匯出都取不到，見第 2.7 節）：摘要詞數，OpenAlex 為 `abstract_inverted_index` 各詞位置數總和，Scopus 為上述處理後文字以空白切分的詞數；少於 20 詞記 `has_abstract=false`。OpenAlex 的 `has_abstract` filter 只用於題名子查詢與缺摘要比例統計（兩者定義不同，README 註明）。
 
 ### 4.2 欄位與規則
 
@@ -252,16 +254,16 @@
 | 步驟 | 前置條件 | 負責 | 產出 | 完成條件 |
 |---|---|---|---|---|
 | 0. 修正既有趨勢報告（**2026-10-10 已完成，PR #195**） | 無；10/24 前完成（避開月報出刊前 5 天） | 文獻搜尋 session | [p0-trends-2026-10-10/report.md](p0-trends-2026-10-10/report.md)：「主要發現」一節中 Wilson 95% 區間重疊的增減句，依第 5 節表改為「大致持平」或「變化不確定」；「範圍」一節的「師培文獻（J40–J42）」改為「J40–J42（Interactive Learning Environments、Computers and Education Open、Informatics in Education）是 2025 年起特別補搜的三刊，共 61 筆」 | 編輯 session 核對、合併 |
-| 1. 準備與 PROTOCOL | 管理者**開始指示**（最早 10/29 月報出刊後） | 文獻搜尋 session；編輯 session 核對分層、參考集、校準集，並備妥 Scopus 檢索式 | `journals.csv`（逐刊逐年 source ID、面板判定、面板分層、OpenAlex 摘要覆蓋率；約 150 次呼叫）、Scopus 檢索式清單（交管理者，D6）、系統性回顧清單與 `refset.csv`、`calib.csv`、2022 試編 20 篇、`codebook-v1.md`、`prompts/`（範圍判斷、第一次編碼、第二次編碼三組）、`PROTOCOL.md` | 附錄 B 逐項勾稽清單＋文獻搜尋 session 開 PR；**管理者核准 D1**，核准紀錄寫入第 10 節 |
+| 1. 準備與 PROTOCOL | 管理者**開始指示**（最早 10/29 月報出刊後） | 文獻搜尋 session；編輯 session 核對分層、參考集、校準集 | `journals.csv`（逐刊逐年 source ID、面板判定、面板分層、OpenAlex 摘要覆蓋率；約 150 次呼叫）、Scopus DOI 檢索式的分批規則（D6；實際 DOI 清單在第 2 步後產生）、系統性回顧清單與 `refset.csv`、`calib.csv`、2022 試編 20 篇、`codebook-v1.md`、`prompts/`（範圍判斷、第一次編碼、第二次編碼三組）、`PROTOCOL.md` | 附錄 B 逐項勾稽清單＋文獻搜尋 session 開 PR；**管理者核准 D1**，核准紀錄寫入第 10 節 |
 | 2. 四年同日檢索 | D1 核准 | 文獻搜尋 session | 各年 `PROTOCOL-YYYY.md`、`queries.json`、`ids-*.json`、面板規模與面板外監測數 | 快照與雜湊存檔；任一年命中超過 2,500 筆即暫停回報 |
-| 3. 2025 試行 | 第 2 步完成；管理者完成 2025 的 Scopus 匯出（D6） | 文獻搜尋 session：篩選、第一次編碼、去重、漏收估計；編輯 session：第二次編碼、一致性、全文對照、報告 | `anchor.csv`、2025 `corpus.csv`（命中約 800–2,000、篩入約 250–450）、`neutral-sample.json`、`agreement.csv`、`fulltext-sample.csv`、2025 單年報告與可行性備忘（存 `research/p0-annual-trends-2025/`） | 第 6 節門檻全部檢查並記錄 |
+| 3. 2025 試行 | 第 2 步完成；管理者依 DOI 清單完成 2025 的 Scopus 匯出（D6） | 文獻搜尋 session：篩選、第一次編碼、去重、漏收估計；編輯 session：第二次編碼、一致性、全文對照、報告 | `anchor.csv`、2025 `corpus.csv`（命中約 800–2,000、篩入約 250–450）、`neutral-sample.json`、`agreement.csv`、`fulltext-sample.csv`、2025 單年報告與可行性備忘（存 `research/p0-annual-trends-2025/`） | 第 6 節門檻全部檢查並記錄 |
 | 4. 手冊 v2（至多一次） | 試行結果；**管理者核准** | 文獻搜尋 session；編輯 session 核對 | `DEVIATIONS.csv`、`codebook-v2.md`、重編後的 2025 | 新舊版並列 |
 | 5. 倒序回溯 2024 → 2023 → 2022 | 依 D2 | 同第 3 步 | 各年 `corpus.csv`、漏收估計（各 50 筆）；回溯三年合併的一致性 | 每年完成後檢查第 6 節門檻 |
 | 6. 四年合併報告 | 第 5 步完成 | 編輯 session | `research/p0-annual-trends-2022-2025/` | 編輯 session 核對；交管理者 |
 
 - **工作量粗估**（AI session 工時，未實測）：2025 試行約 30–45 小時，另加編輯 session 核對約 8–12 小時；四年全程約 80–110 小時（核心項目），日曆時間約 3–5 個月。
 - **回溯順序**：倒序的理由是中途停下時留下的仍是連續序列；用詞差最多的 2022 放最後。
-- **刊期保護**：每日短訊優先；週報出刊前 2 天、月報出刊前 5 天不做趨勢工作；任一刊期延誤即暫停到下一期出刊後。建議文獻搜尋 session 在回溯開始前清完 B1 期刊組待判（[p0-b1-2026-10-09](p0-b1-2026-10-09/integration.md)）與政策待判。
+- **刊期保護**：每日短訊優先；週報出刊前 2 天、月報出刊前 5 天不做趨勢工作；任一刊期延誤即暫停到下一期出刊後。建議文獻搜尋 session 在回溯開始前，把 B1 期刊組待判（[p0-b1-2026-10-09](p0-b1-2026-10-09/integration.md)）與政策待判處理到沒有新證據可查為止；不要求清零（2026-10-10 時 B1 仍待判 41 件、政策 6 件，多數已無新證據可查）。
 - **工具**：分頁抓取、聯集去重、證據片段驗證、分層抽樣、κ 與區間、交叉表需要一次性分析腳本，放 `research/trend-corpus/scripts/`；不接 CI、不在 `public-site.js` 白名單內、不接排程；README 寫明重算指令。重新編碼需要摘要，第三方只能以 `abstract_sha256` 確認輸入相同，列為限制。
 - **延後項目的啟用**：試行的可行性備忘列出各延後項目是否需要；需要者在回溯前記入 `DEVIATIONS.csv` 並經編輯 session 核對後啟用（若影響主表，須管理者核准）。
 
@@ -354,4 +356,5 @@
 - **v0.10**：管理者指出 Computers & Education 網站上看得到摘要。查證後確認 OpenAlex、Crossref、Semantic Scholar 都取不到該刊摘要、ScienceDirect 擋自動讀取；「缺摘要」改為「自動管道取不到摘要」，新增第 2.7 節以管理者學校 Scopus 的一般檢索與正式匯出補摘要（D6），明訂不以程式或操控瀏覽器自動抓取、不用生成式 AI 檢索工具建語料。
 - **v0.11**：管理者學校有 Web of Science；新增 Web of Science 匯出作為第二資料庫的漏收對照（延後，D7）。
 - **v0.12**：管理者以兩次 Scopus 格式測試為據決定採用 D6；第 2.7 節補測試結果與去除版權聲明步驟；第 0 步標記完成（PR #195）。
+- **v0.13**（2026-10-10，管理者要求再自檢一次）：依當天 AI & Society 三篇 Scopus 匯出的實例修正三處：OpenAlex 把短評歸為 `article`，改以 Scopus `Document Type` 排除 Note 等非論文（第 2.5 節）；Scopus 補摘要改用 DOI 清單查詢，不用關鍵字加 `PUBYEAR`（第 2.7 節、第 7 節）；補摘要來源優先順序與 Scopus 摘要的詞數、雜湊算法（第 4.1 節）。另將回溯前「清完」待判改為「處理到沒有新證據可查」（第 7 節）。架構不變；本次只核對事實與前後一致，未再做多角色審查。
 - 六輪三十個角色都由同一模型扮演，不算獨立審閱。
