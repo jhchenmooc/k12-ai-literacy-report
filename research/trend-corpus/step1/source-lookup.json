@@ -1,0 +1,1681 @@
+{
+ "J01": {
+  "name": "Computers & Education",
+  "results": null
+ },
+ "J02": {
+  "name": "Computers & Education: Artificial Intelligence",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S4210183364",
+    "display_name": "Computers and Education Artificial Intelligence",
+    "issn_l": "2666-920X",
+    "issn": [
+     "2666-920X"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 683,
+    "type": "journal"
+   }
+  ]
+ },
+ "J03": {
+  "name": "International Journal of Artificial Intelligence in Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S171267539",
+    "display_name": "International Journal of Artificial Intelligence in Education",
+    "issn_l": "1560-4292",
+    "issn": [
+     "1560-4292",
+     "1560-4306"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 736,
+    "type": "journal"
+   }
+  ]
+ },
+ "J04": {
+  "name": "British Journal of Educational Technology",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S110346167",
+    "display_name": "British Journal of Educational Technology",
+    "issn_l": "0007-1013",
+    "issn": [
+     "0007-1013",
+     "1467-8535"
+    ],
+    "host_organization_name": "Wiley",
+    "works_count": 4874,
+    "type": "journal"
+   }
+  ]
+ },
+ "J05": {
+  "name": "Education and Information Technologies",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S166722454",
+    "display_name": "Education and Information Technologies",
+    "issn_l": "1360-2357",
+    "issn": [
+     "1360-2357",
+     "1573-7608"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 5426,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4306509346",
+    "display_name": "Encyclopedia of Education and Information Technologies",
+    "issn_l": null,
+    "issn": null,
+    "host_organization_name": null,
+    "works_count": 1019,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210226814",
+    "display_name": "International Journal of Education and Information Technologies",
+    "issn_l": "2074-1316",
+    "issn": [
+     "2074-1316"
+    ],
+    "host_organization_name": null,
+    "works_count": 154,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S5407006759",
+    "display_name": "International Journal of Special Education and Information Technologies",
+    "issn_l": "2547-9199",
+    "issn": [
+     "2547-9199"
+    ],
+    "host_organization_name": null,
+    "works_count": 60,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210176725",
+    "display_name": "International Journal of Information and Communication Technologies in Education",
+    "issn_l": "1805-3726",
+    "issn": [
+     "1805-3726"
+    ],
+    "host_organization_name": "De Gruyter",
+    "works_count": 78,
+    "type": "journal"
+   }
+  ]
+ },
+ "J06": {
+  "name": "Journal of Computer Assisted Learning",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S5743915",
+    "display_name": "Journal of Computer Assisted Learning",
+    "issn_l": "0266-4909",
+    "issn": [
+     "0266-4909",
+     "1365-2729"
+    ],
+    "host_organization_name": "Wiley",
+    "works_count": 2864,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210173815",
+    "display_name": "International Journal of Computer-Assisted Language Learning and Teaching",
+    "issn_l": "2155-7098",
+    "issn": [
+     "2155-7098",
+     "2155-7101"
+    ],
+    "host_organization_name": "IGI Global",
+    "works_count": 423,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210217163",
+    "display_name": "Journal of China Computer-Assisted Language Learning",
+    "issn_l": "2748-3479",
+    "issn": [
+     "2748-3479"
+    ],
+    "host_organization_name": "De Gruyter",
+    "works_count": 130,
+    "type": "journal"
+   }
+  ]
+ },
+ "J07": {
+  "name": "Educational Technology Research and Development",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S114840262",
+    "display_name": "Educational Technology Research and Development",
+    "issn_l": "1042-1629",
+    "issn": [
+     "1042-1629",
+     "1556-6501"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 2816,
+    "type": "journal"
+   }
+  ]
+ },
+ "J08": {
+  "name": "Journal of Research on Technology in Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S4210183620",
+    "display_name": "Journal of Research on Technology in Education",
+    "issn_l": "1539-1523",
+    "issn": [
+     "1539-1523",
+     "1945-0818"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 838,
+    "type": "journal"
+   }
+  ]
+ },
+ "J09": {
+  "name": "Technology, Knowledge and Learning",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S2764582272",
+    "display_name": "Technology Knowledge and Learning",
+    "issn_l": "2211-1662",
+    "issn": [
+     "2211-1662",
+     "2211-1670"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 861,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4387291064",
+    "display_name": "Journal of Knowledge Learning and Science Technology",
+    "issn_l": "2959-6386",
+    "issn": [
+     "2959-6386"
+    ],
+    "host_organization_name": "Open Knowledge (United Kingdom)",
+    "works_count": 342,
+    "type": "journal"
+   }
+  ]
+ },
+ "J10": {
+  "name": "Computers in Human Behavior",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S204030396",
+    "display_name": "Computers in Human Behavior",
+    "issn_l": "0747-5632",
+    "issn": [
+     "0747-5632",
+     "1873-7692"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 9175,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210198611",
+    "display_name": "Computers in Human Behavior Reports",
+    "issn_l": "2451-9588",
+    "issn": [
+     "2451-9588"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 1285,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4387287529",
+    "display_name": "Computers in Human Behavior Artificial Humans",
+    "issn_l": "2949-8821",
+    "issn": [
+     "2949-8821"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 386,
+    "type": "journal"
+   }
+  ]
+ },
+ "J11": {
+  "name": "Computers in Human Behavior Reports",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S4210198611",
+    "display_name": "Computers in Human Behavior Reports",
+    "issn_l": "2451-9588",
+    "issn": [
+     "2451-9588"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 1285,
+    "type": "journal"
+   }
+  ]
+ },
+ "J12": {
+  "name": "Journal of Learning Analytics",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S2764890288",
+    "display_name": "Journal of Learning Analytics",
+    "issn_l": "1929-7750",
+    "issn": [
+     "1929-7750"
+    ],
+    "host_organization_name": "Society for Learning Analytics Research",
+    "works_count": 446,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210240809",
+    "display_name": "International Journal of Learning Analytics and Artificial Intelligence for Education (iJAI)",
+    "issn_l": "2706-7564",
+    "issn": [
+     "2706-7564"
+    ],
+    "host_organization_name": "International Association of Online Engineering",
+    "works_count": 22,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S5407053711",
+    "display_name": "Journal of Educational Research and Learning Analytics",
+    "issn_l": "3110-3987",
+    "issn": [
+     "3110-3987"
+    ],
+    "host_organization_name": null,
+    "works_count": 24,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S7407063041",
+    "display_name": "International Journal of Machine Learning and Predictive Analytics",
+    "issn_l": "3142-788X",
+    "issn": [
+     "3142-788X"
+    ],
+    "host_organization_name": null,
+    "works_count": 90,
+    "type": "journal"
+   }
+  ]
+ },
+ "J13": {
+  "name": "Computer Science Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S4363608709",
+    "display_name": "ACM Technical Symposium on Computer Science Education (SIGCSE)",
+    "issn_l": null,
+    "issn": null,
+    "host_organization_name": null,
+    "works_count": 6129,
+    "type": "conference"
+   },
+   {
+    "id": "https://openalex.org/S97147119",
+    "display_name": "Computer Science Education",
+    "issn_l": "0899-3408",
+    "issn": [
+     "0899-3408",
+     "1744-5175"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 867,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4363608720",
+    "display_name": "ACM SIGCSE Technical Symposium on Computer Science Education (SIGCSE)",
+    "issn_l": null,
+    "issn": null,
+    "host_organization_name": null,
+    "works_count": 2266,
+    "type": "conference"
+   },
+   {
+    "id": "https://openalex.org/S7407086141",
+    "display_name": "International Conference on Computer Science & Education (ICCSE)",
+    "issn_l": null,
+    "issn": null,
+    "host_organization_name": null,
+    "works_count": 3470,
+    "type": "conference"
+   },
+   {
+    "id": "https://openalex.org/S7407087813",
+    "display_name": "ACM Conference on Innovation and Technology in Computer Science Education (ITiCSE)",
+    "issn_l": null,
+    "issn": null,
+    "host_organization_name": null,
+    "works_count": 1395,
+    "type": "conference"
+   }
+  ]
+ },
+ "J14": {
+  "name": "ACM Transactions on Computing Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S2764465379",
+    "display_name": "ACM Transactions on Computing Education",
+    "issn_l": "1946-6226",
+    "issn": [
+     "1946-6226"
+    ],
+    "host_organization_name": "Association for Computing Machinery",
+    "works_count": 688,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210208609",
+    "display_name": "Journal on Educational Resources in Computing",
+    "issn_l": "1531-4278",
+    "issn": [
+     "1531-4278"
+    ],
+    "host_organization_name": "Association for Computing Machinery",
+    "works_count": 142,
+    "type": "journal"
+   }
+  ]
+ },
+ "J15": {
+  "name": "Learning and Instruction",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S78398831",
+    "display_name": "Learning and Instruction",
+    "issn_l": "0959-4752",
+    "issn": [
+     "0959-4752",
+     "1873-3263"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 2444,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210173193",
+    "display_name": "Malaysian Journal of Learning and Instruction",
+    "issn_l": "1675-8110",
+    "issn": [
+     "1675-8110",
+     "2180-2483"
+    ],
+    "host_organization_name": "Universiti Utara Malaysia",
+    "works_count": 380,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S5407040489",
+    "display_name": "Vocabulary Learning and Instruction",
+    "issn_l": "2187-2767",
+    "issn": [
+     "2187-2767",
+     "2187-2759",
+     "2981-9954"
+    ],
+    "host_organization_name": null,
+    "works_count": 198,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210239994",
+    "display_name": "Indonesian Journal of Learning and Instruction",
+    "issn_l": "2614-5677",
+    "issn": [
+     "2614-5677",
+     "2614-8250"
+    ],
+    "host_organization_name": "University of Kuningan and Association of Indonesian Scholars of English Education (AISEE)",
+    "works_count": 108,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210186028",
+    "display_name": "International Journal of Learning and Instruction (IJLI)",
+    "issn_l": "2656-0763",
+    "issn": [
+     "2656-0763",
+     "2714-6847"
+    ],
+    "host_organization_name": "Tanjungpura University",
+    "works_count": 107,
+    "type": "journal"
+   }
+  ]
+ },
+ "J16": {
+  "name": "Journal of the Learning Sciences",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S42640028",
+    "display_name": "Journal of the Learning Sciences",
+    "issn_l": "1050-8406",
+    "issn": [
+     "1050-8406",
+     "1532-7809"
+    ],
+    "host_organization_name": "Routledge",
+    "works_count": 790,
+    "type": "journal"
+   }
+  ]
+ },
+ "J17": {
+  "name": "Educational Research Review",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S43764696",
+    "display_name": "Educational Research Review",
+    "issn_l": "1747-938X",
+    "issn": [
+     "1747-938X",
+     "1878-0385"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 1542,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S92895470",
+    "display_name": "Review of Educational Research",
+    "issn_l": "0034-6543",
+    "issn": [
+     "0034-6543",
+     "1935-1046"
+    ],
+    "host_organization_name": "SAGE Publishing",
+    "works_count": 5855,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S2737015113",
+    "display_name": "International Journal of Educational Research Review",
+    "issn_l": "2458-9322",
+    "issn": [
+     "2458-9322"
+    ],
+    "host_organization_name": "Sakarya University",
+    "works_count": 436,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S2738874226",
+    "display_name": "Open Review of Educational Research",
+    "issn_l": "2326-5507",
+    "issn": [
+     "2326-5507"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 72,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210238583",
+    "display_name": "Indonesian Journal Of Educational Research and Review",
+    "issn_l": "2621-4792",
+    "issn": [
+     "2621-4792",
+     "2621-8984"
+    ],
+    "host_organization_name": "Ganesha University of Education",
+    "works_count": 451,
+    "type": "journal"
+   }
+  ]
+ },
+ "J18": {
+  "name": "Review of Educational Research",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S92895470",
+    "display_name": "Review of Educational Research",
+    "issn_l": "0034-6543",
+    "issn": [
+     "0034-6543",
+     "1935-1046"
+    ],
+    "host_organization_name": "SAGE Publishing",
+    "works_count": 5855,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S2738874226",
+    "display_name": "Open Review of Educational Research",
+    "issn_l": "2326-5507",
+    "issn": [
+     "2326-5507"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 72,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S2737015113",
+    "display_name": "International Journal of Educational Research Review",
+    "issn_l": "2458-9322",
+    "issn": [
+     "2458-9322"
+    ],
+    "host_organization_name": "Sakarya University",
+    "works_count": 436,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210238583",
+    "display_name": "Indonesian Journal Of Educational Research and Review",
+    "issn_l": "2621-4792",
+    "issn": [
+     "2621-4792",
+     "2621-8984"
+    ],
+    "host_organization_name": "Ganesha University of Education",
+    "works_count": 451,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S5407033473",
+    "display_name": "ETDC Indonesian Journal of Research and Educational Review",
+    "issn_l": "2809-3682",
+    "issn": [
+     "2809-3682",
+     "2809-7505"
+    ],
+    "host_organization_name": null,
+    "works_count": 600,
+    "type": "journal"
+   }
+  ]
+ },
+ "J19": {
+  "name": "Educational Researcher",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S55175622",
+    "display_name": "Educational Researcher",
+    "issn_l": "0013-189X",
+    "issn": [
+     "0013-189X",
+     "1935-102X"
+    ],
+    "host_organization_name": "SAGE Publishing",
+    "works_count": 6226,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S206198396",
+    "display_name": "The Australian Educational Researcher",
+    "issn_l": "0311-6999",
+    "issn": [
+     "0311-6999",
+     "2210-5328"
+    ],
+    "host_organization_name": "Springer Nature",
+    "works_count": 1720,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210214772",
+    "display_name": "Georgia Educational Researcher",
+    "issn_l": "2471-0059",
+    "issn": [
+     "2471-0059"
+    ],
+    "host_organization_name": "Georgia Southern University",
+    "works_count": 143,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S2764899427",
+    "display_name": "Mid-western educational researcher",
+    "issn_l": "1056-3997",
+    "issn": [
+     "1056-3997",
+     "2375-7876"
+    ],
+    "host_organization_name": null,
+    "works_count": 126,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210183189",
+    "display_name": "The European Educational Researcher",
+    "issn_l": "2517-6323",
+    "issn": [
+     "2517-6323"
+    ],
+    "host_organization_name": null,
+    "works_count": 117,
+    "type": "journal"
+   }
+  ]
+ },
+ "J20": {
+  "name": "Teaching and Teacher Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S94618750",
+    "display_name": "Teaching and Teacher Education",
+    "issn_l": "0742-051X",
+    "issn": [
+     "0742-051X",
+     "1879-2480"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 5765,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210229804",
+    "display_name": "Self-study of teaching and teacher education practices (Print)/Self-study of teaching and teacher education practices",
+    "issn_l": "1875-3620",
+    "issn": [
+     "1875-3620",
+     "2215-1850"
+    ],
+    "host_organization_name": "Springer Nature (Netherlands)",
+    "works_count": 265,
+    "type": "book series"
+   },
+   {
+    "id": "https://openalex.org/S4210189260",
+    "display_name": "Journal of Teaching and Teacher Education",
+    "issn_l": "2210-1578",
+    "issn": [
+     "2210-1578",
+     "2535-9940"
+    ],
+    "host_organization_name": null,
+    "works_count": 116,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210193370",
+    "display_name": "Teaching and Teacher Education Leadership and Professional Development",
+    "issn_l": "2667-3207",
+    "issn": [
+     "2667-3207"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 11,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4387286954",
+    "display_name": "Indonesian Journal of Teaching and Teacher Education",
+    "issn_l": "2809-266X",
+    "issn": [
+     "2809-266X",
+     "2829-8349"
+    ],
+    "host_organization_name": null,
+    "works_count": 54,
+    "type": "journal"
+   }
+  ]
+ },
+ "J21": {
+  "name": "Journal of Teacher Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S89004459",
+    "display_name": "Journal of Teacher Education",
+    "issn_l": "0022-4871",
+    "issn": [
+     "0022-4871",
+     "1552-7816"
+    ],
+    "host_organization_name": "SAGE Publishing",
+    "works_count": 5783,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S36385850",
+    "display_name": "European Journal of Teacher Education",
+    "issn_l": "0261-9768",
+    "issn": [
+     "0261-9768",
+     "1469-5928"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 1800,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S63099517",
+    "display_name": "Asia-Pacific Journal of Teacher Education",
+    "issn_l": "1359-866X",
+    "issn": [
+     "1359-866X",
+     "1469-2945"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 1028,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S2765008973",
+    "display_name": "The Australian journal of teacher education",
+    "issn_l": "0313-5373",
+    "issn": [
+     "0313-5373",
+     "1835-517X"
+    ],
+    "host_organization_name": "Edith Cowan University",
+    "works_count": 1744,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210188399",
+    "display_name": "Journal of Teacher Education for Sustainability",
+    "issn_l": "1691-4147",
+    "issn": [
+     "1691-4147",
+     "1691-5534"
+    ],
+    "host_organization_name": "De Gruyter",
+    "works_count": 373,
+    "type": "journal"
+   }
+  ]
+ },
+ "J22": {
+  "name": "Assessment in Education: Principles, Policy & Practice",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S190677702",
+    "display_name": "Assessment in Education Principles Policy and Practice",
+    "issn_l": "0969-594X",
+    "issn": [
+     "0969-594X",
+     "1465-329X"
+    ],
+    "host_organization_name": "Routledge",
+    "works_count": 1094,
+    "type": "journal"
+   }
+  ]
+ },
+ "J23": {
+  "name": "Studies in Educational Evaluation",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S126127421",
+    "display_name": "Studies In Educational Evaluation",
+    "issn_l": "0191-491X",
+    "issn": [
+     "0191-491X",
+     "1879-2529"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 2206,
+    "type": "journal"
+   }
+  ]
+ },
+ "J24": {
+  "name": "AI & Society",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S4210190517",
+    "display_name": "AI & Society",
+    "issn_l": "0951-5666",
+    "issn": [
+     "0951-5666",
+     "1435-5655"
+    ],
+    "host_organization_name": "Springer Nature",
+    "works_count": 4117,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S5407048695",
+    "display_name": "Proceedings of the AAAI/ACM Conference on AI Ethics and Society",
+    "issn_l": "3065-8365",
+    "issn": [
+     "3065-8365"
+    ],
+    "host_organization_name": null,
+    "works_count": 1025,
+    "type": "conference"
+   },
+   {
+    "id": "https://openalex.org/S4306421048",
+    "display_name": "The Florida AI Research Society",
+    "issn_l": null,
+    "issn": null,
+    "host_organization_name": null,
+    "works_count": 1229,
+    "type": "conference"
+   },
+   {
+    "id": "https://openalex.org/S68749858",
+    "display_name": "Transactions of the Japanese Society for Artificial Intelligence",
+    "issn_l": "1346-0714",
+    "issn": [
+     "1346-0714",
+     "1346-8030"
+    ],
+    "host_organization_name": "The Japanese Society for Artificial Intelligence",
+    "works_count": 1367,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S5407051439",
+    "display_name": "AI & Future Society",
+    "issn_l": "3053-4011",
+    "issn": [
+     "3053-4011"
+    ],
+    "host_organization_name": null,
+    "works_count": 11,
+    "type": "journal"
+   }
+  ]
+ },
+ "J25": {
+  "name": "European Educational Research Journal",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S83170543",
+    "display_name": "European Educational Research Journal",
+    "issn_l": "1474-9041",
+    "issn": [
+     "1474-9041"
+    ],
+    "host_organization_name": "SAGE Publishing",
+    "works_count": 1249,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S2765049135",
+    "display_name": "European Journal of Educational Research",
+    "issn_l": "2165-8714",
+    "issn": [
+     "2165-8714"
+    ],
+    "host_organization_name": "RU Publications",
+    "works_count": 1347,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210239871",
+    "display_name": "Central European Journal of Educational Research",
+    "issn_l": "2677-0326",
+    "issn": [
+     "2677-0326"
+    ],
+    "host_organization_name": "University of Debrecen",
+    "works_count": 206,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210214137",
+    "display_name": "European Journal of Psychology and Educational Research",
+    "issn_l": "2589-949X",
+    "issn": [
+     "2589-949X"
+    ],
+    "host_organization_name": null,
+    "works_count": 156,
+    "type": "journal"
+   }
+  ]
+ },
+ "J26": {
+  "name": "Learning, Media and Technology",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S144725990",
+    "display_name": "Learning Media and Technology",
+    "issn_l": "1743-9884",
+    "issn": [
+     "1743-9884",
+     "1743-9892"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 896,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S5407056567",
+    "display_name": "Journal of Learning Media and Technology",
+    "issn_l": "3090-806X",
+    "issn": [
+     "3090-806X"
+    ],
+    "host_organization_name": null,
+    "works_count": 5,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S5407054241",
+    "display_name": "Learning Media and Technology in Arabic Education",
+    "issn_l": "3110-598X",
+    "issn": [
+     "3110-598X"
+    ],
+    "host_organization_name": "Universitas Islam KH. Achmad Muzakki Syah (UNIKHAMS) Jember",
+    "works_count": 18,
+    "type": "journal"
+   }
+  ]
+ },
+ "J27": {
+  "name": "IEEE Transactions on Learning Technologies",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S130363450",
+    "display_name": "IEEE Transactions on Learning Technologies",
+    "issn_l": "1939-1382",
+    "issn": [
+     "1939-1382",
+     "2372-0050"
+    ],
+    "host_organization_name": "Institute of Electrical and Electronics Engineers",
+    "works_count": 1179,
+    "type": "journal"
+   }
+  ]
+ },
+ "J28": {
+  "name": "IEEE Transactions on Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S207741693",
+    "display_name": "IEEE Transactions on Education",
+    "issn_l": "0018-9359",
+    "issn": [
+     "0018-9359",
+     "1557-9638"
+    ],
+    "host_organization_name": "IEEE Education Society",
+    "works_count": 4865,
+    "type": "journal"
+   }
+  ]
+ },
+ "J29": {
+  "name": "Frontiers in Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S2596526815",
+    "display_name": "Frontiers in Education",
+    "issn_l": "2504-284X",
+    "issn": [
+     "2504-284X"
+    ],
+    "host_organization_name": "Frontiers Media",
+    "works_count": 8467,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4363607793",
+    "display_name": "2022 IEEE Frontiers in Education Conference (FIE)",
+    "issn_l": "0190-5848",
+    "issn": [
+     "0190-5848",
+     "2377-634X"
+    ],
+    "host_organization_name": null,
+    "works_count": 13034,
+    "type": "conference"
+   },
+   {
+    "id": "https://openalex.org/S140881626",
+    "display_name": "Frontiers of Education in China",
+    "issn_l": "1673-341X",
+    "issn": [
+     "1673-341X",
+     "1673-3533"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 818,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210206623",
+    "display_name": "Frontiers in Education Technology",
+    "issn_l": "2576-1846",
+    "issn": [
+     "2576-1846",
+     "2576-1854"
+    ],
+    "host_organization_name": null,
+    "works_count": 162,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S2764684943",
+    "display_name": "New frontiers in education",
+    "issn_l": "0972-1231",
+    "issn": [
+     "0972-1231"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 120,
+    "type": "journal"
+   }
+  ]
+ },
+ "J30": {
+  "name": "International Review of Research in Open and Distributed Learning",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S2764977688",
+    "display_name": "The International Review of Research in Open and Distributed Learning",
+    "issn_l": "1492-3831",
+    "issn": [
+     "1492-3831"
+    ],
+    "host_organization_name": "Athabasca University Press",
+    "works_count": 1799,
+    "type": "journal"
+   }
+  ]
+ },
+ "J31": {
+  "name": "International Journal of STEM Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S2738571837",
+    "display_name": "International Journal of STEM Education",
+    "issn_l": "2196-7822",
+    "issn": [
+     "2196-7822"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 641,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210193808",
+    "display_name": "International Journal of STEM Education for Sustainability",
+    "issn_l": "2798-5091",
+    "issn": [
+     "2798-5091"
+    ],
+    "host_organization_name": null,
+    "works_count": 107,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S5407045232",
+    "display_name": "Semarak International Journal of STEM Education",
+    "issn_l": "3030-5152",
+    "issn": [
+     "3030-5152"
+    ],
+    "host_organization_name": null,
+    "works_count": 40,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S7407058508",
+    "display_name": "International Journal of Technology AI and STEM Education",
+    "issn_l": "3116-3718",
+    "issn": [
+     "3116-3718"
+    ],
+    "host_organization_name": null,
+    "works_count": 25,
+    "type": "journal"
+   }
+  ]
+ },
+ "J32": {
+  "name": "Discover Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S4387280196",
+    "display_name": "Discover Education",
+    "issn_l": "2731-5525",
+    "issn": [
+     "2731-5525"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 2142,
+    "type": "journal"
+   }
+  ]
+ },
+ "J33": {
+  "name": "Humanities and Social Sciences Communications",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S4210206302",
+    "display_name": "Humanities and Social Sciences Communications",
+    "issn_l": "2055-1045",
+    "issn": [
+     "2055-1045",
+     "2662-9992"
+    ],
+    "host_organization_name": "Palgrave Macmillan",
+    "works_count": 9326,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210228685",
+    "display_name": "Communications in Humanities and Social Sciences",
+    "issn_l": "2775-2569",
+    "issn": [
+     "2775-2569",
+     "2807-5390"
+    ],
+    "host_organization_name": "Komunitas Ilmuwan dan Profesional Muslim Indonesia",
+    "works_count": 71,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S7407059563",
+    "display_name": "International Journal of Social Sciences Humanities and Communications",
+    "issn_l": "3135-0453",
+    "issn": [
+     "3135-0453",
+     "3135-0461"
+    ],
+    "host_organization_name": null,
+    "works_count": 17,
+    "type": "journal"
+   }
+  ]
+ },
+ "J34": {
+  "name": "Canadian Journal of Science, Mathematics and Technology Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S106272552",
+    "display_name": "Canadian Journal of Science Mathematics and Technology Education",
+    "issn_l": "1492-6156",
+    "issn": [
+     "1492-6156",
+     "1942-4051"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 1089,
+    "type": "journal"
+   }
+  ]
+ },
+ "J35": {
+  "name": "International Journal of Child-Computer Interaction",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S2493636226",
+    "display_name": "International Journal of Child-Computer Interaction",
+    "issn_l": "2212-8689",
+    "issn": [
+     "2212-8689",
+     "2212-8697"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 535,
+    "type": "journal"
+   }
+  ]
+ },
+ "J36": {
+  "name": "Journal of Educational Computing Research",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S127795871",
+    "display_name": "Journal of Educational Computing Research",
+    "issn_l": "0735-6331",
+    "issn": [
+     "0735-6331",
+     "1541-4140"
+    ],
+    "host_organization_name": "SAGE Publishing",
+    "works_count": 2017,
+    "type": "journal"
+   }
+  ]
+ },
+ "J37": {
+  "name": "Journal of Science Education and Technology",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S158654976",
+    "display_name": "Journal of Science Education and Technology",
+    "issn_l": "1059-0145",
+    "issn": [
+     "1059-0145",
+     "1573-1839"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 1828,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S2764699309",
+    "display_name": "Eurasia Journal of Mathematics Science and Technology Education",
+    "issn_l": "1305-8215",
+    "issn": [
+     "1305-8215",
+     "1305-8223"
+    ],
+    "host_organization_name": "Modestum Limited",
+    "works_count": 2938,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S131125421",
+    "display_name": "International Journal of Mathematical Education in Science and Technology",
+    "issn_l": "0020-739X",
+    "issn": [
+     "0020-739X",
+     "1464-5211"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 5661,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S106272552",
+    "display_name": "Canadian Journal of Science Mathematics and Technology Education",
+    "issn_l": "1492-6156",
+    "issn": [
+     "1492-6156",
+     "1942-4051"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 1089,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S2739369670",
+    "display_name": "Journal of Technology and Science Education",
+    "issn_l": "2013-6374",
+    "issn": [
+     "2013-6374",
+     "2014-5349"
+    ],
+    "host_organization_name": "OmniaScience",
+    "works_count": 533,
+    "type": "journal"
+   }
+  ]
+ },
+ "J38": {
+  "name": "Educational Psychology Review",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S187318745",
+    "display_name": "Educational Psychology Review",
+    "issn_l": "1040-726X",
+    "issn": [
+     "1040-726X",
+     "1573-336X"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 1556,
+    "type": "journal"
+   }
+  ]
+ },
+ "J39": {
+  "name": "International Journal of Computer-Supported Collaborative Learning",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S64184962",
+    "display_name": "International Journal of Computer-Supported Collaborative Learning",
+    "issn_l": "1556-1607",
+    "issn": [
+     "1556-1607",
+     "1556-1615"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 502,
+    "type": "journal"
+   }
+  ]
+ },
+ "J40": {
+  "name": "Interactive Learning Environments",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S90466346",
+    "display_name": "Interactive Learning Environments",
+    "issn_l": "1049-4820",
+    "issn": [
+     "1049-4820",
+     "1744-5191"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 3008,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S2764802980",
+    "display_name": "International Journal of Social Media and Interactive Learning Environments",
+    "issn_l": "2050-3954",
+    "issn": [
+     "2050-3954",
+     "2050-3962"
+    ],
+    "host_organization_name": null,
+    "works_count": 206,
+    "type": "journal"
+   }
+  ]
+ },
+ "J41": {
+  "name": "Computers and Education Open",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S4210232537",
+    "display_name": "Computers and Education Open",
+    "issn_l": "2666-5573",
+    "issn": [
+     "2666-5573"
+    ],
+    "host_organization_name": "Elsevier BV",
+    "works_count": 396,
+    "type": "journal"
+   }
+  ]
+ },
+ "J42": {
+  "name": "Informatics in Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S2764653341",
+    "display_name": "Informatics in Education",
+    "issn_l": "1648-5831",
+    "issn": [
+     "1648-5831",
+     "2335-8971"
+    ],
+    "host_organization_name": "Vilnius University",
+    "works_count": 567,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S7407088880",
+    "display_name": "International Symposium on Advances in Informatics, Electronics and Education (ISAIEE)",
+    "issn_l": null,
+    "issn": null,
+    "host_organization_name": null,
+    "works_count": 312,
+    "type": "conference"
+   },
+   {
+    "id": "https://openalex.org/S4306471672",
+    "display_name": "Grant-in-Aid for Scientific Research on Priority Areas, Ministry of Education, Culture, Sports, Science and Technology, Endangered Languages of the Pacific Rim, Faculty of Informatics, Osaka Gakuin University eBooks",
+    "issn_l": null,
+    "issn": null,
+    "host_organization_name": null,
+    "works_count": 22,
+    "type": "ebook platform"
+   },
+   {
+    "id": "https://openalex.org/S4210174159",
+    "display_name": "Journal CERITA",
+    "issn_l": "2461-1417",
+    "issn": [
+     "2461-1417",
+     "2655-2574"
+    ],
+    "host_organization_name": "Universitas Raharja",
+    "works_count": 260,
+    "type": "journal"
+   }
+  ]
+ },
+ "J43": {
+  "name": "Research and Practice in Technology Enhanced Learning",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S119620556",
+    "display_name": "Research and Practice in Technology Enhanced Learning",
+    "issn_l": "1793-2068",
+    "issn": [
+     "1793-2068",
+     "1793-7078"
+    ],
+    "host_organization_name": "Springer Nature",
+    "works_count": 616,
+    "type": "journal"
+   }
+  ]
+ },
+ "J44": {
+  "name": "European Journal of Teacher Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S36385850",
+    "display_name": "European Journal of Teacher Education",
+    "issn_l": "0261-9768",
+    "issn": [
+     "0261-9768",
+     "1469-5928"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 1800,
+    "type": "journal"
+   }
+  ]
+ },
+ "J45": {
+  "name": "Technology, Pedagogy and Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S84989246",
+    "display_name": "Technology Pedagogy and Education",
+    "issn_l": "0962-029X",
+    "issn": [
+     "0962-029X",
+     "1475-939X",
+     "1747-5139"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 1141,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4387280154",
+    "display_name": "International Journal of Research Pedagogy and Technology in Education & Movement Sciences",
+    "issn_l": "2319-3050",
+    "issn": [
+     "2319-3050"
+    ],
+    "host_organization_name": null,
+    "works_count": 429,
+    "type": "journal"
+   }
+  ]
+ },
+ "J46": {
+  "name": "International Journal of Science Education",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S54332258",
+    "display_name": "International Journal of Science Education",
+    "issn_l": "0950-0693",
+    "issn": [
+     "0950-0693",
+     "1464-5289"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 4058,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S4210196276",
+    "display_name": "International Journal of Science Education Part B",
+    "issn_l": "2154-8455",
+    "issn": [
+     "2154-8455",
+     "2154-8463"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 386,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S182869780",
+    "display_name": "International Journal of Science and Mathematics Education",
+    "issn_l": "1571-0068",
+    "issn": [
+     "1571-0068",
+     "1573-1774"
+    ],
+    "host_organization_name": "Springer Nature",
+    "works_count": 1810,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S131125421",
+    "display_name": "International Journal of Mathematical Education in Science and Technology",
+    "issn_l": "0020-739X",
+    "issn": [
+     "0020-739X",
+     "1464-5211"
+    ],
+    "host_organization_name": "Taylor & Francis",
+    "works_count": 5661,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S2764725163",
+    "display_name": "The International Journal of Environmental and Science Education",
+    "issn_l": "1306-3065",
+    "issn": [
+     "1306-3065"
+    ],
+    "host_organization_name": "International Society of Educational Research",
+    "works_count": 1350,
+    "type": "journal"
+   }
+  ]
+ },
+ "J47": {
+  "name": "Education Sciences",
+  "http": 200,
+  "results": [
+   {
+    "id": "https://openalex.org/S2738008561",
+    "display_name": "Education Sciences",
+    "issn_l": "2227-7102",
+    "issn": [
+     "2227-7102"
+    ],
+    "host_organization_name": "Multidisciplinary Digital Publishing Institute",
+    "works_count": 8966,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S94345546",
+    "display_name": "CBE—Life Sciences Education",
+    "issn_l": "1931-7913",
+    "issn": [
+     "1931-7913"
+    ],
+    "host_organization_name": "American Society for Cell Biology",
+    "works_count": 1544,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S121323410",
+    "display_name": "Anatomical Sciences Education",
+    "issn_l": "1935-9772",
+    "issn": [
+     "1935-9772",
+     "1935-9780"
+    ],
+    "host_organization_name": "Wiley",
+    "works_count": 2025,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S129194695",
+    "display_name": "Advances in Health Sciences Education",
+    "issn_l": "1382-4996",
+    "issn": [
+     "1382-4996",
+     "1573-1677"
+    ],
+    "host_organization_name": "Springer Science+Business Media",
+    "works_count": 1895,
+    "type": "journal"
+   },
+   {
+    "id": "https://openalex.org/S168561851",
+    "display_name": "Decision Sciences Journal of Innovative Education",
+    "issn_l": "1540-4595",
+    "issn": [
+     "1540-4595",
+     "1540-4609"
+    ],
+    "host_organization_name": "Wiley",
+    "works_count": 782,
+    "type": "journal"
+   }
+  ]
+ }
+}
