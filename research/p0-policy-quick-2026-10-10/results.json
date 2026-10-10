@@ -1,0 +1,1083 @@
+{
+ "run": "2026-10-10-policy-Q-1",
+ "searched_on": "2026-10-10",
+ "window": [
+  "2026-09-30",
+  "2026-10-10"
+ ],
+ "screening": "同一模型初篩，非獨立審閱；WebSearch／WebFetch 摘要僅為線索；讀不到的來源只能寫『搜尋未見』",
+ "sources": [
+  {
+   "source_id": "O-TW-MOE",
+   "what": "edu.tw 即時新聞第1–2頁（115-09-26～115-10-10，40則）；depart.moe.edu.tw 資科司即時新聞／資料下載／電子布告欄；pads.moe.edu.tw 首頁、資料下載17分類（curl --cacert bundle.pem）",
+   "status": "ok",
+   "newest_date_seen": "2026-10-10（edu.tw）；pads 最新消息 2026-09-29",
+   "note": "窗口內 AI 相關僅兩則新聞（10-05 國教署教務主任工作會議；10-06 資科司數位素養優良教案），皆非政策文件；pads 下載區未見窗口內新文件（未在 repo 出現的檔案為舊版或教案，無日期）。國教署 k12ea.gov.tw 新聞頁需 JS，未讀（其新聞同步於 edu.tw 即時新聞）。pads 分類 1783 首次 rc=35，重試成功"
+  },
+  {
+   "source_id": "O-HK-EDB",
+   "what": "EDB Latest News（無日期，需 JS）；EDB 通告列表（表單，unavailable）；政府新聞公報 2026-09-30～10-10 英文每日索引",
+   "status": "partial",
+   "newest_date_seen": "2026-10-10（新聞公報）",
+   "note": "新聞公報未見教育局 AI 教育公告；10-06 數字政策辦公室 AI+ Civil Service 屬公務員，非教育"
+  },
+  {
+   "source_id": "O-SG-MOE",
+   "what": "moe.gov.sg/news（JS 空殼）、/news/press-releases（404）；WebSearch",
+   "status": "unavailable (list) / WebSearch lead only",
+   "newest_date_seen": "WebSearch 最新 2026-05-06 國會答覆",
+   "note": "搜尋未見，不等於未發布"
+  },
+  {
+   "source_id": "O-JP-MEXT",
+   "what": "新着情報（令和8年9月25日～10月9日）；報道発表 mext_01690；教育課程部会第136回開催案内及配付資料頁；e-Gov パブコメ案件 185001511 及其 PDF",
+   "status": "ok",
+   "newest_date_seen": "2026-10-09",
+   "note": "找到候選 1 件（審議まとめ）；10-01 xAPI Japan Profile 意見募集屬學習資料規格（C）"
+  },
+  {
+   "source_id": "O-KR-MOE",
+   "what": "보도자료 列表第1頁（2026-09-29～10-08，10則）；WebSearch",
+   "status": "ok",
+   "newest_date_seen": "2026-10-08",
+   "note": "未見 AI 教育新件"
+  },
+  {
+   "source_id": "O-CN-MOE",
+   "what": "工作动态（https，17則至 2026-10-10）；中央文件（至 2026-10-09）；其他部门文件；最新文件；教育部文件 was5 搜尋頁（只回框架）",
+   "status": "partial",
+   "newest_date_seen": "2026-10-10",
+   "note": "http 版中央文件 503、多次 connection reset；10-09 中共中央 国务院《关于发展新质生产力的意见》全文兩次 503/reset 未讀，題名非教育 AI，未列候選"
+  },
+  {
+   "source_id": "O-US-ED",
+   "what": "ed.gov 新聞稿（403）；Federal Register API（ED＋artificial intelligence，≥2026-09-30，count=0）；ERIC API（只有年份精度，無法定日）；WebSearch",
+   "status": "partial",
+   "newest_date_seen": "Federal Register 0 筆",
+   "note": "ed.gov 讀不到；搜尋未見"
+  },
+  {
+   "source_id": "O-UK-DFE",
+   "what": "GOV.UK Search API：DfE 依時間 100 筆（2026-09-25～10-09）；DfE＋關鍵詞；全站 AI education ≥2026-09-29",
+   "status": "ok",
+   "newest_date_seen": "2026-10-09",
+   "note": "窗口內無 DfE AI 文件；public_timestamp 為更新時間"
+  },
+  {
+   "source_id": "O-AU-EDU",
+   "what": "education.gov.au/news（HTTP/2 錯誤 rc=92、rc=35）；ministers.education.gov.au（rc=52）；WebSearch",
+   "status": "unavailable",
+   "newest_date_seen": "—",
+   "note": "搜尋未見 2026-10 新件"
+  },
+  {
+   "source_id": "O-EU-EC",
+   "what": "education.ec.europa.eu/news（200 但列表未渲染）；WebSearch 兩次",
+   "status": "unavailable (list) / WebSearch lead only",
+   "newest_date_seen": "—",
+   "note": "Education Package／2030 Digital Education Roadmap 線索指向 2026-11，尚未發布"
+  },
+  {
+   "source_id": "O-EU-COUNCIL",
+   "what": "consilium.europa.eu press releases（403）",
+   "status": "unavailable",
+   "newest_date_seen": "—",
+   "note": "WebSearch 見 ST 12265/26 為 LIMITE 文件，非公開，不列"
+  },
+  {
+   "source_id": "O-COE",
+   "what": "coe.int education newsroom（403）；WebFetch 403；WebSearch",
+   "status": "unavailable",
+   "newest_date_seen": "線索 2026-09-24",
+   "note": "CM/Rec(2026)12 線索為 2026-09 初通過、Compass 2026-09-24，均早於窗口；已在 p0-pending-final-2026-10-10 與 9 月月報處理"
+  },
+  {
+   "source_id": "O-OECD",
+   "what": "oecdedutoday.com 首頁與 RSS feed；WebSearch oecd.org",
+   "status": "ok (oecdedutoday) / lead only (oecd.org)",
+   "newest_date_seen": "2026-09-29（oecdedutoday）",
+   "note": "窗口內 oecdedutoday 無新文"
+  },
+  {
+   "source_id": "O-UNESCO",
+   "what": "unesco.org/en/newsroom（本次 curl 200，無 captcha）；文章 access-reliable-information-digital-age；WebSearch",
+   "status": "ok",
+   "newest_date_seen": "2026-10-09",
+   "note": "10-08 性別報告、10-09 資訊近用圓桌（拉美資訊主管機關，非 K-12）皆非候選；10-09 墨西哥螢幕規範文章已在週候選池"
+  },
+  {
+   "source_id": "O-UNICEF",
+   "what": "unicef.org/press-releases",
+   "status": "ok",
+   "newest_date_seen": "2026-10-02",
+   "note": "窗口內無 AI 教育新件"
+  }
+ ],
+ "requests": [
+  {
+   "name": "tw_moe_news",
+   "url": "https://www.edu.tw/News.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F",
+   "start_utc": "2026-10-10T15:03:20Z",
+   "end_utc": "2026-10-10T15:03:22Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "269939"
+  },
+  {
+   "name": "tw_moe_news2",
+   "url": "https://www.edu.tw/News.aspx?n=9E7AC85F1954DDA8&page=2&PageSize=20&sms=169B8E91BB75571F",
+   "start_utc": "2026-10-10T15:03:22Z",
+   "end_utc": "2026-10-10T15:03:26Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "269902"
+  },
+  {
+   "name": "gov_uk",
+   "url": "https://www.gov.uk/api/search.json?filter_organisations=department-for-education&order=-public_timestamp&count=100&fields=title,link,public_timestamp,content_store_document_type,description",
+   "start_utc": "2026-10-10T15:03:26Z",
+   "end_utc": "2026-10-10T15:03:26Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "53869"
+  },
+  {
+   "name": "fedreg",
+   "url": "https://www.federalregister.gov/api/v1/documents.json?conditions[agencies][]=education-department&conditions[term]=artificial+intelligence&conditions[publication_date][gte]=2026-09-30",
+   "start_utc": "2026-10-10T15:03:26Z",
+   "end_utc": "2026-10-10T15:03:26Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "137"
+  },
+  {
+   "name": "mext",
+   "url": "https://www.mext.go.jp/b_menu/news/index.html",
+   "start_utc": "2026-10-10T15:03:26Z",
+   "end_utc": "2026-10-10T15:03:28Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "53821"
+  },
+  {
+   "name": "cn_moe_wj",
+   "url": "http://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/",
+   "start_utc": "2026-10-10T15:03:28Z",
+   "end_utc": "2026-10-10T15:03:29Z",
+   "http_status": "503",
+   "curl_rc": "0",
+   "bytes": "48"
+  },
+  {
+   "name": "cn_moe_gzdt",
+   "url": "http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/",
+   "start_utc": "2026-10-10T15:03:29Z",
+   "end_utc": "2026-10-10T15:03:31Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "24329"
+  },
+  {
+   "name": "hk_press",
+   "url": "https://www.info.gov.hk/gia/general/today.htm",
+   "start_utc": "2026-10-10T15:03:31Z",
+   "end_utc": "2026-10-10T15:03:32Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "13328"
+  },
+  {
+   "name": "tw_a1",
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=3D7FE34DED5F4884",
+   "start_utc": "2026-10-10T15:03:45Z",
+   "end_utc": "2026-10-10T15:03:49Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "202148"
+  },
+  {
+   "name": "tw_a2",
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=65F776256801CDF3",
+   "start_utc": "2026-10-10T15:03:49Z",
+   "end_utc": "2026-10-10T15:03:53Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "196789"
+  },
+  {
+   "name": "gov_uk_ai",
+   "url": "https://www.gov.uk/api/search.json?q=artificial+intelligence+schools&filter_organisations=department-for-education&count=40&fields=title,link,public_timestamp,content_store_document_type",
+   "start_utc": "2026-10-10T15:03:53Z",
+   "end_utc": "2026-10-10T15:03:53Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "16310"
+  },
+  {
+   "name": "gov_uk_ai2",
+   "url": "https://www.gov.uk/api/search.json?q=AI+education&filter_public_timestamp=from:2026-09-29&count=50&fields=title,link,public_timestamp,content_store_document_type,organisations",
+   "start_utc": "2026-10-10T15:03:53Z",
+   "end_utc": "2026-10-10T15:03:54Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "97996"
+  },
+  {
+   "name": "mext_pc",
+   "url": "https://www.mext.go.jp/b_menu/houdou/mext_01690.html",
+   "start_utc": "2026-10-10T15:04:21Z",
+   "end_utc": "2026-10-10T15:04:22Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "6671"
+  },
+  {
+   "name": "egov_pc",
+   "url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=185001511&Mode=0",
+   "start_utc": "2026-10-10T15:04:27Z",
+   "end_utc": "2026-10-10T15:04:28Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "20394"
+  },
+  {
+   "name": "pdf/egov_matome.pdf",
+   "url": "https://public-comment.e-gov.go.jp/pcm/download?seqNo=0000322020",
+   "start_utc": "2026-10-10T15:04:33Z",
+   "end_utc": "2026-10-10T15:04:36Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "44058430"
+  },
+  {
+   "name": "pdf/egov_bassui.pdf",
+   "url": "https://public-comment.e-gov.go.jp/pcm/download?seqNo=0000322021",
+   "start_utc": "2026-10-10T15:04:36Z",
+   "end_utc": "2026-10-10T15:04:38Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "5335357"
+  },
+  {
+   "name": "mext136s",
+   "url": "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/004/siryo/mext_00016.html",
+   "start_utc": "2026-10-10T15:05:10Z",
+   "end_utc": "2026-10-10T15:05:12Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "9585"
+  },
+  {
+   "name": "mext136k",
+   "url": "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/kaisai/mext_00151.html",
+   "start_utc": "2026-10-10T15:05:12Z",
+   "end_utc": "2026-10-10T15:05:14Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "7073"
+  },
+  {
+   "name": "mext155",
+   "url": "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/kaisai/1423016_00044.htm",
+   "start_utc": "2026-10-10T15:05:14Z",
+   "end_utc": "2026-10-10T15:05:15Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "7616"
+  },
+  {
+   "name": "cn_moe_wj2",
+   "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/",
+   "start_utc": "2026-10-10T15:05:38Z",
+   "end_utc": "2026-10-10T15:05:44Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "27229"
+  },
+  {
+   "name": "cn_moe_gzdt2",
+   "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/",
+   "start_utc": "2026-10-10T15:05:44Z",
+   "end_utc": "2026-10-10T15:05:51Z",
+   "http_status": "000",
+   "curl_rc": "35",
+   "bytes": ""
+  },
+  {
+   "name": "cn_moe_jyb_wj",
+   "url": "https://www.moe.gov.cn/was5/web/search?channelid=239993",
+   "start_utc": "2026-10-10T15:05:51Z",
+   "end_utc": "2026-10-10T15:05:55Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "24692"
+  },
+  {
+   "name": "cn_moe_xxgk",
+   "url": "https://www.moe.gov.cn/jyb_xxgk/s5743/",
+   "start_utc": "2026-10-10T15:05:55Z",
+   "end_utc": "2026-10-10T15:06:00Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "78"
+  },
+  {
+   "name": "cn_moe_fbh",
+   "url": "https://www.moe.gov.cn/jyb_xwfb/xw_fbh/moe_2069/",
+   "start_utc": "2026-10-10T15:06:00Z",
+   "end_utc": "2026-10-10T15:06:03Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "77"
+  },
+  {
+   "name": "kr_moe",
+   "url": "https://www.moe.go.kr/boardCnts/listRenew.do?boardID=294&m=020402&s=moe",
+   "start_utc": "2026-10-10T15:06:03Z",
+   "end_utc": "2026-10-10T15:06:08Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "174029"
+  },
+  {
+   "name": "hk_edb_press",
+   "url": "https://www.edb.gov.hk/en/news/all.html",
+   "start_utc": "2026-10-10T15:06:08Z",
+   "end_utc": "2026-10-10T15:06:10Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "319455"
+  },
+  {
+   "name": "hk_gia_1009",
+   "url": "https://www.info.gov.hk/gia/general/202610/09.htm",
+   "start_utc": "2026-10-10T15:06:10Z",
+   "end_utc": "2026-10-10T15:06:10Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "19909"
+  },
+  {
+   "name": "sg_moe",
+   "url": "https://www.moe.gov.sg/news/press-releases",
+   "start_utc": "2026-10-10T15:06:10Z",
+   "end_utc": "2026-10-10T15:06:11Z",
+   "http_status": "404",
+   "curl_rc": "0",
+   "bytes": "47889"
+  },
+  {
+   "name": "au_edu",
+   "url": "https://www.education.gov.au/news",
+   "start_utc": "2026-10-10T15:06:11Z",
+   "end_utc": "2026-10-10T15:06:12Z",
+   "http_status": "000",
+   "curl_rc": "92",
+   "bytes": ""
+  },
+  {
+   "name": "us_ed",
+   "url": "https://www.ed.gov/about/news/press-releases",
+   "start_utc": "2026-10-10T15:06:12Z",
+   "end_utc": "2026-10-10T15:06:12Z",
+   "http_status": "403",
+   "curl_rc": "0",
+   "bytes": "11597"
+  },
+  {
+   "name": "oecdedu",
+   "url": "https://oecdedutoday.com/",
+   "start_utc": "2026-10-10T15:06:12Z",
+   "end_utc": "2026-10-10T15:06:13Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "160901"
+  },
+  {
+   "name": "oecdedu_feed",
+   "url": "https://oecdedutoday.com/feed/",
+   "start_utc": "2026-10-10T15:06:13Z",
+   "end_utc": "2026-10-10T15:06:13Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "83153"
+  },
+  {
+   "name": "unicef",
+   "url": "https://www.unicef.org/press-releases",
+   "start_utc": "2026-10-10T15:06:13Z",
+   "end_utc": "2026-10-10T15:06:13Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "503980"
+  },
+  {
+   "name": "unesco_news",
+   "url": "https://www.unesco.org/en/newsroom",
+   "start_utc": "2026-10-10T15:06:13Z",
+   "end_utc": "2026-10-10T15:06:15Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "316025"
+  },
+  {
+   "name": "consilium",
+   "url": "https://www.consilium.europa.eu/en/press/press-releases/",
+   "start_utc": "2026-10-10T15:06:15Z",
+   "end_utc": "2026-10-10T15:06:15Z",
+   "http_status": "403",
+   "curl_rc": "0",
+   "bytes": "13128"
+  },
+  {
+   "name": "coe_edu",
+   "url": "https://www.coe.int/en/web/education/newsroom",
+   "start_utc": "2026-10-10T15:06:15Z",
+   "end_utc": "2026-10-10T15:06:15Z",
+   "http_status": "403",
+   "curl_rc": "0",
+   "bytes": "5519"
+  },
+  {
+   "name": "ec_edu",
+   "url": "https://education.ec.europa.eu/news",
+   "start_utc": "2026-10-10T15:06:15Z",
+   "end_utc": "2026-10-10T15:06:16Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "167602"
+  },
+  {
+   "name": "k12ea",
+   "url": "https://www.k12ea.gov.tw/Tw/News/K12eaNews",
+   "start_utc": "2026-10-10T15:06:16Z",
+   "end_utc": "2026-10-10T15:06:18Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "49570"
+  },
+  {
+   "name": "depart_moe",
+   "url": "https://depart.moe.edu.tw/ED2700/News.aspx?n=1F2B5A8D9C2B4C5A",
+   "start_utc": "2026-10-10T15:06:18Z",
+   "end_utc": "2026-10-10T15:06:21Z",
+   "http_status": "404",
+   "curl_rc": "0",
+   "bytes": "2231"
+  },
+  {
+   "name": "pads",
+   "url": "https://pads.moe.edu.tw/",
+   "start_utc": "2026-10-10T15:06:21Z",
+   "end_utc": "2026-10-10T15:06:24Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "67874"
+  },
+  {
+   "name": "cn_moe_gzdt3",
+   "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/",
+   "start_utc": "2026-10-10T15:06:37Z",
+   "end_utc": "2026-10-10T15:06:40Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "24329"
+  },
+  {
+   "name": "cn_moe_s5744",
+   "url": "https://www.moe.gov.cn/jyb_xxgk/s5743/s5744/",
+   "start_utc": "2026-10-10T15:06:40Z",
+   "end_utc": "2026-10-10T15:06:48Z",
+   "http_status": "000",
+   "curl_rc": "35",
+   "bytes": ""
+  },
+  {
+   "name": "cn_moe_srcsite",
+   "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1779/",
+   "start_utc": "2026-10-10T15:06:48Z",
+   "end_utc": "2026-10-10T15:06:50Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "28064"
+  },
+  {
+   "name": "cn_xzl",
+   "url": "https://www.moe.gov.cn/jyb_xxgk/s5743/s5744/A06/",
+   "start_utc": "2026-10-10T15:06:50Z",
+   "end_utc": "2026-10-10T15:06:58Z",
+   "http_status": "000",
+   "curl_rc": "35",
+   "bytes": ""
+  },
+  {
+   "name": "cn_np",
+   "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/202610/t20261010_1453446.html",
+   "start_utc": "2026-10-10T15:06:58Z",
+   "end_utc": "2026-10-10T15:07:01Z",
+   "http_status": "503",
+   "curl_rc": "0",
+   "bytes": "48"
+  },
+  {
+   "name": "cn_np2",
+   "url": "https://www.moe.gov.cn/jyb_xxgk/moe_1777/moe_1778/202610/t20261010_1453446.html",
+   "start_utc": "2026-10-10T15:07:08Z",
+   "end_utc": "2026-10-10T15:07:16Z",
+   "http_status": "000",
+   "curl_rc": "35",
+   "bytes": ""
+  },
+  {
+   "name": "cn_s5744b",
+   "url": "https://www.moe.gov.cn/jyb_xxgk/s5743/s5744/",
+   "start_utc": "2026-10-10T15:07:16Z",
+   "end_utc": "2026-10-10T15:07:19Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "26761"
+  },
+  {
+   "name": "gia_0930",
+   "url": "https://www.info.gov.hk/gia/general/202609/30.htm",
+   "start_utc": "2026-10-10T15:07:43Z",
+   "end_utc": "2026-10-10T15:07:44Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "17888"
+  },
+  {
+   "name": "gia_1001",
+   "url": "https://www.info.gov.hk/gia/general/202610/01.htm",
+   "start_utc": "2026-10-10T15:07:45Z",
+   "end_utc": "2026-10-10T15:07:46Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "12161"
+  },
+  {
+   "name": "gia_1002",
+   "url": "https://www.info.gov.hk/gia/general/202610/02.htm",
+   "start_utc": "2026-10-10T15:07:46Z",
+   "end_utc": "2026-10-10T15:07:47Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "14889"
+  },
+  {
+   "name": "gia_1003",
+   "url": "https://www.info.gov.hk/gia/general/202610/03.htm",
+   "start_utc": "2026-10-10T15:07:47Z",
+   "end_utc": "2026-10-10T15:07:48Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "11831"
+  },
+  {
+   "name": "gia_1004",
+   "url": "https://www.info.gov.hk/gia/general/202610/04.htm",
+   "start_utc": "2026-10-10T15:07:48Z",
+   "end_utc": "2026-10-10T15:07:48Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "11161"
+  },
+  {
+   "name": "gia_1005",
+   "url": "https://www.info.gov.hk/gia/general/202610/05.htm",
+   "start_utc": "2026-10-10T15:07:49Z",
+   "end_utc": "2026-10-10T15:07:50Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "17231"
+  },
+  {
+   "name": "gia_1006",
+   "url": "https://www.info.gov.hk/gia/general/202610/06.htm",
+   "start_utc": "2026-10-10T15:07:50Z",
+   "end_utc": "2026-10-10T15:07:51Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "14803"
+  },
+  {
+   "name": "gia_1007",
+   "url": "https://www.info.gov.hk/gia/general/202610/07.htm",
+   "start_utc": "2026-10-10T15:07:51Z",
+   "end_utc": "2026-10-10T15:07:52Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "19001"
+  },
+  {
+   "name": "gia_1008",
+   "url": "https://www.info.gov.hk/gia/general/202610/08.htm",
+   "start_utc": "2026-10-10T15:07:52Z",
+   "end_utc": "2026-10-10T15:07:52Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "14693"
+  },
+  {
+   "name": "gia_1009",
+   "url": "https://www.info.gov.hk/gia/general/202610/09.htm",
+   "start_utc": "2026-10-10T15:07:52Z",
+   "end_utc": "2026-10-10T15:07:53Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "19909"
+  },
+  {
+   "name": "gia_1010",
+   "url": "https://www.info.gov.hk/gia/general/202610/10.htm",
+   "start_utc": "2026-10-10T15:07:53Z",
+   "end_utc": "2026-10-10T15:07:54Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "12110"
+  },
+  {
+   "name": "edb_circ",
+   "url": "https://applications.edb.gov.hk/circular/circular.aspx?langno=1",
+   "start_utc": "2026-10-10T15:07:54Z",
+   "end_utc": "2026-10-10T15:07:56Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "198544"
+  },
+  {
+   "name": "depart_home",
+   "url": "https://depart.moe.edu.tw/ED2700/",
+   "start_utc": "2026-10-10T15:08:57Z",
+   "end_utc": "2026-10-10T15:08:59Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "175621"
+  },
+  {
+   "name": "depart_news",
+   "url": "https://depart.moe.edu.tw/ED2700/News.aspx?n=727087A8A1328DEE&sms=49589CE1E2730CC8",
+   "start_utc": "2026-10-10T15:09:08Z",
+   "end_utc": "2026-10-10T15:09:11Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "196397"
+  },
+  {
+   "name": "depart_dl",
+   "url": "https://depart.moe.edu.tw/ED2700/News.aspx?n=F84C9B045D336AF4&sms=BFD0035AFA4CEA76",
+   "start_utc": "2026-10-10T15:09:11Z",
+   "end_utc": "2026-10-10T15:09:15Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "197062"
+  },
+  {
+   "name": "depart_bbs",
+   "url": "https://depart.moe.edu.tw/ED2700/News.aspx?n=A1E30194B1C3ACDF&sms=15F99BDCA5F9F595",
+   "start_utc": "2026-10-10T15:09:15Z",
+   "end_utc": "2026-10-10T15:09:18Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "193739"
+  },
+  {
+   "name": "pads_dl",
+   "url": "https://pads.moe.edu.tw/download2.php",
+   "start_utc": "2026-10-10T15:09:18Z",
+   "end_utc": "2026-10-10T15:09:20Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "106380"
+  },
+  {
+   "name": "pads_t1877",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1877",
+   "start_utc": "2026-10-10T15:09:46Z",
+   "end_utc": "2026-10-10T15:09:47Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "3964"
+  },
+  {
+   "name": "pads_t1886",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1886",
+   "start_utc": "2026-10-10T15:09:47Z",
+   "end_utc": "2026-10-10T15:09:49Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "2187"
+  },
+  {
+   "name": "pads_t1917",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1917",
+   "start_utc": "2026-10-10T15:09:49Z",
+   "end_utc": "2026-10-10T15:09:50Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "1242"
+  },
+  {
+   "name": "pads_t1918",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1918",
+   "start_utc": "2026-10-10T15:09:50Z",
+   "end_utc": "2026-10-10T15:09:51Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "1151"
+  },
+  {
+   "name": "pads_t1781",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1781",
+   "start_utc": "2026-10-10T15:09:51Z",
+   "end_utc": "2026-10-10T15:09:52Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "2130"
+  },
+  {
+   "name": "pads_t1783",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1783",
+   "start_utc": "2026-10-10T15:09:52Z",
+   "end_utc": "2026-10-10T15:10:04Z",
+   "http_status": "000",
+   "curl_rc": "35",
+   "bytes": ""
+  },
+  {
+   "name": "pads_t1785",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1785",
+   "start_utc": "2026-10-10T15:10:04Z",
+   "end_utc": "2026-10-10T15:10:06Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "6899"
+  },
+  {
+   "name": "pads_t1792",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1792",
+   "start_utc": "2026-10-10T15:10:06Z",
+   "end_utc": "2026-10-10T15:10:07Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "3613"
+  },
+  {
+   "name": "pads_t1794",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1794",
+   "start_utc": "2026-10-10T15:10:07Z",
+   "end_utc": "2026-10-10T15:10:09Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "2473"
+  },
+  {
+   "name": "pads_t1796",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1796",
+   "start_utc": "2026-10-10T15:10:09Z",
+   "end_utc": "2026-10-10T15:10:10Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "2196"
+  },
+  {
+   "name": "pads_t1927",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1927",
+   "start_utc": "2026-10-10T15:10:10Z",
+   "end_utc": "2026-10-10T15:10:11Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "2197"
+  },
+  {
+   "name": "pads_t1922",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1922",
+   "start_utc": "2026-10-10T15:10:11Z",
+   "end_utc": "2026-10-10T15:10:12Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "1135"
+  },
+  {
+   "name": "pads_t1925",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1925",
+   "start_utc": "2026-10-10T15:10:12Z",
+   "end_utc": "2026-10-10T15:10:14Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "1135"
+  },
+  {
+   "name": "pads_t1926",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1926",
+   "start_utc": "2026-10-10T15:10:14Z",
+   "end_utc": "2026-10-10T15:10:16Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "1147"
+  },
+  {
+   "name": "pads_t1946",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1946",
+   "start_utc": "2026-10-10T15:10:16Z",
+   "end_utc": "2026-10-10T15:10:17Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "1171"
+  },
+  {
+   "name": "pads_t1966",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1966",
+   "start_utc": "2026-10-10T15:10:17Z",
+   "end_utc": "2026-10-10T15:10:18Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "1576"
+  },
+  {
+   "name": "pads_t1939",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1939",
+   "start_utc": "2026-10-10T15:10:18Z",
+   "end_utc": "2026-10-10T15:10:19Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "4226"
+  },
+  {
+   "name": "pads_t1783b",
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1783",
+   "start_utc": "2026-10-10T15:10:34Z",
+   "end_utc": "2026-10-10T15:10:36Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "13525"
+  },
+  {
+   "name": "sg_news",
+   "url": "https://www.moe.gov.sg/news",
+   "start_utc": "2026-10-10T15:10:36Z",
+   "end_utc": "2026-10-10T15:10:37Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "87168"
+  },
+  {
+   "name": "sg_pr2",
+   "url": "https://www.moe.gov.sg/news/press-releases/",
+   "start_utc": "2026-10-10T15:10:37Z",
+   "end_utc": "2026-10-10T15:10:38Z",
+   "http_status": "404",
+   "curl_rc": "0",
+   "bytes": "47889"
+  },
+  {
+   "name": "au_edu2",
+   "url": "https://www.education.gov.au/news",
+   "start_utc": "2026-10-10T15:10:38Z",
+   "end_utc": "2026-10-10T15:10:45Z",
+   "http_status": "000",
+   "curl_rc": "35",
+   "bytes": ""
+  },
+  {
+   "name": "au_min",
+   "url": "https://ministers.education.gov.au/",
+   "start_utc": "2026-10-10T15:10:45Z",
+   "end_utc": "2026-10-10T15:11:16Z",
+   "http_status": "000",
+   "curl_rc": "52",
+   "bytes": ""
+  },
+  {
+   "name": "unesco_ari",
+   "url": "https://www.unesco.org/en/articles/access-reliable-information-digital-age",
+   "start_utc": "2026-10-10T15:11:42Z",
+   "end_utc": "2026-10-10T15:11:43Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "82114"
+  },
+  {
+   "name": "eric",
+   "url": "https://api.ies.ed.gov/eric/?search=%22artificial%20intelligence%22%20AND%20publicationdateyear:2026%20AND%20source:%22Department%20of%20Education%22&fields=id,title,source,publicationdate,sponsor,publicationdateyear&rows=50&format=json",
+   "start_utc": "2026-10-10T15:11:49Z",
+   "end_utc": "2026-10-10T15:11:49Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "75"
+  },
+  {
+   "name": "eric2",
+   "url": "https://api.ies.ed.gov/eric/?search=%22artificial%20intelligence%22%20AND%20publicationdateyear:2026%20AND%20publicationtype:%22Guides%22&fields=id,title,source,publicationdate,sponsor,author&rows=200&format=json",
+   "start_utc": "2026-10-10T15:11:54Z",
+   "end_utc": "2026-10-10T15:11:55Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "75"
+  },
+  {
+   "name": "eric3",
+   "url": "https://api.ies.ed.gov/eric/?search=artificial%20intelligence%20publicationdateyear:2026&fields=id,title,source,publicationdate,sponsor&rows=5&format=json",
+   "start_utc": "2026-10-10T15:11:58Z",
+   "end_utc": "2026-10-10T15:11:59Z",
+   "http_status": "200",
+   "curl_rc": "0",
+   "bytes": "1489"
+  }
+ ],
+ "web_tools": [
+  {
+   "tool": "WebSearch",
+   "query": "UNESCO artificial intelligence education schools October 2026 (unesco.org)",
+   "result": "未見 2026-10 新件；僅線索"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "OECD AI education schools report October 2026 (oecd.org)",
+   "result": "未見 2026-10 新件"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "Department of Education artificial intelligence K-12 guidance October 2026 (ed.gov)",
+   "result": "僅 2025 年 DCL 新聞稿（頁面 last reviewed 2026-10-06 為更新日，非首發）"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "European Commission AI literacy schools guidelines October 2026 (europa.eu)",
+   "result": "未見；Education Package 預告 2026-11"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "Commission Education Package Roadmap digital education 2026",
+   "result": "尚未通過，線索指向 2026-11"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "Australia education generative AI schools framework minister October 2026",
+   "result": "未見 2026-10 新件"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "MOE Singapore AI students teachers October 2026 (moe.gov.sg)",
+   "result": "未見 2026-10 新件（最新為 2026-05 國會答覆）"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "Council of Europe recommendation artificial intelligence education 2026 (coe.int)",
+   "result": "CM/Rec(2026)12 線索 2026-09 初通過；Compass 2026-09-24 線索；皆早於窗口"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "\"CM/Rec(2026)12\" AI literacy Committee of Ministers adopted",
+   "result": "同上，日期線索 2026-09-04"
+  },
+  {
+   "tool": "WebFetch",
+   "query": "https://www.coe.int/en/web/portal/-/new-council-of-europe-recommendation-places-education-at-the-heart-of-response-to-ai",
+   "result": "HTTP 403（未繞過）"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "教育部 人工智能 中小学 通知 2026年10月 (moe.gov.cn)",
+   "result": "未見 2026-10 新件；最新 2026-04-10 行動計畫（已在 KB-2026-0088）"
+  },
+  {
+   "tool": "WebSearch",
+   "query": "교육부 인공지능 AI 교육 발표 2026년 10월 (moe.go.kr, korea.kr)",
+   "result": "未見 2026-10 新件"
+  },
+  {
+   "tool": "WebSearch(extended)",
+   "query": "ministry of education new guidance artificial intelligence schools students released October 2026",
+   "result": "未見國家級 2026-10 新件；僅美國州／學區舊件"
+  }
+ ],
+ "candidates": [
+  {
+   "title_original": "次期学習指導要領等に向けた審議まとめ",
+   "title_zh": "中教審教育課程部會《面向下一期學習指導要領之審議總結》",
+   "issuer": "中央教育審議会初等中等教育分科会教育課程部会（文部科学省所轄審議會；公眾意見徵集由文部科学省初等中等教育局主辦）",
+   "issuer_o_code": "O-JP-MEXT",
+   "official_url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=185001511&Mode=0",
+   "related_official_urls": [
+    "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/004/siryo/mext_00016.html",
+    "https://www.mext.go.jp/b_menu/houdou/mext_01690.html",
+    "https://public-comment.e-gov.go.jp/pcm/download?seqNo=0000322020"
+   ],
+   "first_publication": "2026-10-05",
+   "precision": "day",
+   "basis": "PDF 封面印「令和８年10月５日 中央教育審議会初等中等教育分科会教育課程部会」；同日第136回教育課程部会（10-05 16:30 開會，開會時於文科省網站公開資料）配付「審議まとめ（案）」；e-Gov 案件頁「案の公示日 2026年10月5日」。10-06 報道発表與意見募集開始（10-06 14:00～11-05）為後續公告，不作首發日。PDF metadata CreationDate 2026-10-05 僅佐證。",
+   "earlier_version_risk": "同日公開的（案）與定稿為同一事件；更早的 2025 年『論点整理』屬不同文件，未逐項比對內容差異。",
+   "document_type": "審議會審議總結（課程政策方向；非法定學習指導要領，正在公眾意見徵集）",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH",
+    "S-LRN"
+   ],
+   "audience": "k12",
+   "ai_lit_note": "下一期日本中小學課程方向，將『AI的機制與社會應用』列入情報領域資質能力並規範學習中使用生成式AI，對應 S-BAS「理解AI運作原理與限制」、S-ETH 與 S-LRN。",
+   "evidence_quote": "情報技術の仕組みを理解する・AIの仕組みと社会での活用を理解する・アルゴリズムの理解と構造的な表現方法を身に付ける",
+   "evidence_locator": "審議まとめ PDF（e-Gov seqNo=0000322020，共1060頁）第767頁，情報・技術、情報部分之資質能力表",
+   "second_quote": "生成AIを用いて数学的な処理を行い、その結果の妥当性を検証するためにも、生成AIの仕組みを理解するためにも数学的な素養は不可欠である（PDF 第166頁）",
+   "dedupe": "不在 records.csv、不在週工作表；repo 中已有線索：important-unresolved-watchlist.md 第24行（e-Gov 當時 403，未讀本文）、drafts/2026-10-09-weekly-policy-search.md 背景列。本次已讀本文，可解除該待查項。",
+   "weekly_eligible": false,
+   "weekly_reason": "首發 2026-10-05 早於週報期間 10-09～10-15",
+   "monthly": "可進 10 月月報政策區候選（窗口 09-30～10-29，日精度）；須經首發與出版閘門及 N 系列核查（高風險：課程政策、日文原文）"
+  }
+ ],
+ "activities_non_policy": [
+  {
+   "title_original": "AI數位領航鏈全球！115學年度全國高級中等學校教務主任工作會議",
+   "issuer": "教育部國民及學前教育署（O-TW-MOE）",
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=3D7FE34DED5F4884",
+   "date": "2026-10-05（上版日期 115-10-05；會議 10/05–06 嘉義、10/29–30 臺北）",
+   "type": "會議／活動報導",
+   "scope": "A（對象為其他教育關係人：教務主任；T-BAS 校園 AI 治理）",
+   "audience": "other_stakeholders",
+   "note": "活動報導，不是政策，不進月報政策區；早於週報窗口；repo p0-tw-hk-policy-docs-2026-10-10 已讀過",
+   "dedupe": "repo 已記（pads-result.json；weekly-policy-search.md 第95行判為會議報導）"
+  },
+  {
+   "title_original": "分享前先查證！教育部推數位素養優良教案 培養學生辨識假訊息與負責任分享能力",
+   "issuer": "教育部資訊及科技教育司（O-TW-MOE）",
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=65F776256801CDF3",
+   "date": "2026-10-06（上版日期）",
+   "type": "新聞稿：推廣 114 年數位素養優良教案（教學資源）",
+   "scope": "B/邊界：主題為數位素養與假訊息查證，含『AI生成內容不能照單全收』；若判 A 對應 S-ETH 批判思考。依準則『一般數位素養而不涉及 AI』判 C，本件有提 AI，列邊界請管理者決定",
+   "audience": "k12",
+   "note": "非政策文件；教案為 114 年徵選結果，非首次公開之新政策",
+   "dedupe": "repo 已記（pads-result.json）"
+  }
+ ],
+ "background_or_excluded": [
+  {
+   "item": "Council of Europe CM/Rec(2026)12 on AI literacy",
+   "note": "線索日期 2026-09 初（Eunews 2026-09-04），早於窗口；coe.int 403；repo 已處理（9 月月報／p0-pending-final）"
+  },
+  {
+   "item": "Council of Europe Compass for Governance of AI & Digital Transformation in Education",
+   "note": "WebSearch 線索 2026-09-24，早於窗口；未核原文"
+  },
+  {
+   "item": "EU Education Package / 2030 Roadmap on digital education and skills",
+   "note": "線索預告 2026-11，尚未發布；10 月月報窗口內需重查"
+  },
+  {
+   "item": "MEXT 10-06 パブリック・コメント開始報道発表",
+   "note": "同一事件之後續程序公告，不另列"
+  },
+  {
+   "item": "MEXT 10-01 xAPI Japan Profile 意見募集",
+   "note": "學習資料規格，C"
+  },
+  {
+   "item": "中共中央 国务院关于发展新质生产力的意见（2026-10-09）",
+   "note": "全文讀取 503/reset；題名非教育 AI，未列候選；如需可由管理者以瀏覽器確認是否含 AI 教育條文"
+  },
+  {
+   "item": "UNESCO 2026-10-09 Access to reliable information in the digital age",
+   "note": "拉美資訊近用主管機關圓桌，非 K-12"
+  }
+ ]
+}

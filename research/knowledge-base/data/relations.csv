@@ -1060,3 +1060,6 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-1059","KB-2026-0255","has_category","vocabulary","K4","https://oecdedutoday.com/how-to-effectively-use-generative-ai-in-education/","discovered_unverified"
 "KR-1060","KB-2026-0255","has_category","vocabulary","K5","https://oecdedutoday.com/how-to-effectively-use-generative-ai-in-education/","discovered_unverified"
 "KR-1061","KB-2026-0255","issued_by","source","O-OECD","https://oecdedutoday.com/how-to-effectively-use-generative-ai-in-education/","discovered_unverified"
+"KR-1062","KB-2026-0256","has_category","vocabulary","K1","https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/004/gaiyou/1292164_00001.htm","discovered_unverified"
+"KR-1063","KB-2026-0256","issued_by","source","O-JP-MEXT","https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/004/gaiyou/1292164_00001.htm","discovered_unverified"
+"KR-1064","KB-2026-0256","applies_to_country","vocabulary","JP","https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/004/gaiyou/1292164_00001.htm","discovered_unverified"

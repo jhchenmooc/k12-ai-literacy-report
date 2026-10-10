@@ -234,6 +234,7 @@
 | KB-2026-0246 — [Education Bureau Circular Memorandum No. 156/2026: 2026/27 School Year Holistic Planning of School-based Digital Education and Related Teacher Training](https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/CM/2026/EDBCM26156E.pdf) | government_announcement | 2026-08-25 | bibliographic_checked |
 | KB-2026-0250 — [Text features associated with students’ generative AI use: Norwegian teachers’ perspectives](https://www.frontiersin.org/articles/10.3389/feduc.2026.1792351/full) | journal_article | 2026-06-03 | discovered_unverified |
 | KB-2026-0251 — [Exploring the IntelligentTPACK gap: a qualitative analysis of teachers’ AI competencies and AI self-reported classroom uses](https://www.frontiersin.org/articles/10.3389/feduc.2026.1790642/full) | journal_article | 2026-05-07 | discovered_unverified |
+| KB-2026-0256 — [次期学習指導要領等に向けた審議まとめ](https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/004/gaiyou/1292164_00001.htm) | consultation | 2026-10-05 | discovered_unverified |
 
 ## 2026｜issue_year
 

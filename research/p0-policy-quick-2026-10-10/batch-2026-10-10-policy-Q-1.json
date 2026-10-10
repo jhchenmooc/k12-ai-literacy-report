@@ -1,0 +1,102 @@
+{
+ "batch_id": "2026-10-10-policy-Q-1",
+ "searched_on": "2026-10-10",
+ "lookback_days": 10,
+ "sources": [
+  {
+   "group": "official-policy",
+   "query": "O-TW-MOE: edu.tw 即時新聞第1–2頁（115-09-26～115-10-10，40則）；depart.moe.edu.tw 資科司即時新聞／資料下載／電子布告欄；pads.moe.edu.tw 首頁、資料下載17分類（curl --cacert bundle.pem）",
+   "status": "ok"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-HK-EDB: EDB Latest News（無日期，需 JS）；EDB 通告列表（表單，unavailable）；政府新聞公報 2026-09-30～10-10 英文每日索引",
+   "status": "unavailable"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-SG-MOE: moe.gov.sg/news（JS 空殼）、/news/press-releases（404）；WebSearch",
+   "status": "unavailable"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-JP-MEXT: 新着情報（令和8年9月25日～10月9日）；報道発表 mext_01690；教育課程部会第136回開催案内及配付資料頁；e-Gov パブコメ案件 185001511 及其 PDF",
+   "status": "ok"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-KR-MOE: 보도자료 列表第1頁（2026-09-29～10-08，10則）；WebSearch",
+   "status": "ok"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-CN-MOE: 工作动态（https，17則至 2026-10-10）；中央文件（至 2026-10-09）；其他部门文件；最新文件；教育部文件 was5 搜尋頁（只回框架）",
+   "status": "unavailable"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-US-ED: ed.gov 新聞稿（403）；Federal Register API（ED＋artificial intelligence，≥2026-09-30，count=0）；ERIC API（只有年份精度，無法定日）；WebSearch",
+   "status": "unavailable"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-UK-DFE: GOV.UK Search API：DfE 依時間 100 筆（2026-09-25～10-09）；DfE＋關鍵詞；全站 AI education ≥2026-09-29",
+   "status": "ok"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-AU-EDU: education.gov.au/news（HTTP/2 錯誤 rc=92、rc=35）；ministers.education.gov.au（rc=52）；WebSearch",
+   "status": "unavailable"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-EU-EC: education.ec.europa.eu/news（200 但列表未渲染）；WebSearch 兩次",
+   "status": "unavailable"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-EU-COUNCIL: consilium.europa.eu press releases（403）",
+   "status": "unavailable"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-COE: coe.int education newsroom（403）；WebFetch 403；WebSearch",
+   "status": "unavailable"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-OECD: oecdedutoday.com 首頁與 RSS feed；WebSearch oecd.org",
+   "status": "ok"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-UNESCO: unesco.org/en/newsroom（本次 curl 200，無 captcha）；文章 access-reliable-information-digital-age；WebSearch",
+   "status": "ok"
+  },
+  {
+   "group": "official-policy",
+   "query": "O-UNICEF: unicef.org/press-releases",
+   "status": "ok"
+  }
+ ],
+ "candidates": [
+  {
+   "source_url": "https://public-comment.e-gov.go.jp/servlet/Public?CLASSNAME=PCMMSTDETAIL&id=185001511&Mode=0",
+   "source_title": "次期学習指導要領等に向けた審議まとめ（中央教育審議会初等中等教育分科会教育課程部会）",
+   "source_organization": "文部科学省／中央教育審議会初等中等教育分科会教育課程部会",
+   "source_publication_date": "2026-10-05",
+   "source_locator": "審議まとめ PDF 封面「令和８年10月５日」；同日第136回教育課程部会配付資料（案）公開；e-Gov 案件 185001511 案の公示日 2026-10-05；引文在 PDF 第767頁。10-06 報道発表（mext_01690）及意見募集開始非首發日",
+   "category": "news_policy",
+   "original_excerpt": "情報技術の仕組みを理解する・AIの仕組みと社会での活用を理解する・アルゴリズムの理解と構造的な表現方法を身に付ける",
+   "scope_limitation": "版本：審議會審議總結（非法定學習指導要領；意見徵集 2026-10-06～11-05，新指導要領預定令和10年度起實施）；對象：K-12；首發依據：文件本文所印日期與同日會議資料公開，日精度；早於週報期間，只供10月月報；同一模型判讀，非獨立審閱；日文原文需 N 系列核查",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH",
+    "S-LRN"
+   ],
+   "ai_lit_note": "下一期日本中小學課程方向，將『AI的機制與社會應用』列入情報領域資質能力並規範學習中使用生成式AI，對應 S-BAS「理解AI運作原理與限制」、S-ETH 與 S-LRN。",
+   "audience": "k12"
+  }
+ ]
+}
