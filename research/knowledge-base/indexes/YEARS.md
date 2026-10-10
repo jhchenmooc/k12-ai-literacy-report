@@ -48,6 +48,7 @@
 | KB-2024-0004 — [AI Digital Textbooks for 2025 to Realize Personalized Education for All](https://english.moe.go.kr/boardCnts/viewRenewal.do?boardID=265&boardSeq=102075&lev=0&m=0201&opType=N&page=1&s=english) | government_announcement | 2024-11-29 | bibliographic_checked |
 | KB-2024-0005 — [教育部部署加强中小学人工智能教育](https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html) | government_announcement | 2024-12-02 | bibliographic_checked |
 | KB-2024-0007 — [Generative artificial intelligence (AI) and data protection in schools](https://www.gov.uk/guidance/data-protection-in-schools/generative-artificial-intelligence-ai-and-data-protection-in-schools) | official_guidance | 2024-02-07 | bibliographic_checked |
+| KB-2024-0008 — [中小學數位教學指引3.0版](https://pads.moe.edu.tw/download_file.php?file=_upload_642bae440e1fb47c45d377aa6686ad28.pdf&old=upload) | official_guidance | 2024-08 | discovered_unverified |
 | KB-2026-0099 — [NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools](https://go.ncdpi.gov/AI_Guidelines) | official_guidance | 2024-01-16 | bibliographic_checked |
 
 ## 2025｜first_publication
@@ -430,7 +431,6 @@
 |---|---|---|---|
 | KB-2023-0011 — [Artificial Intelligence and the Future of Teaching and Learning: Insights and Recommendations](https://eric.ed.gov/?id=ED631097) | policy_review | 未知 | discovered_unverified |
 | KB-2024-0006 — [Human-Centered AI Guidance for K–12 Public Schools](https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools) | official_guidance | 未知 | bibliographic_checked |
-| KB-2024-0008 — [中小學數位教學指引3.0版](https://pads.moe.edu.tw/download_file.php?file=_upload_642bae440e1fb47c45d377aa6686ad28.pdf&old=upload) | official_guidance | 未知 | discovered_unverified |
 | KB-2024-0009 — [Empowering Education Leaders: A Toolkit for Safe, Ethical, and Equitable AI Integration](https://eric.ed.gov/?id=ED661924) | official_guidance | 未知 | discovered_unverified |
 | KB-2025-0046 — [AI in Education: Model Policy for Ohio Districts and Schools](https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy) | official_guidance | 未知 | bibliographic_checked |
 | KB-2026-0001 — [Nature AI Detectives: An Outdoor AI Literacy Adventure](https://arboretum.psu.edu/events/nature-ai-detectives-an-outdoor-ai-literacy-adventure-2/) | source_document | 未知 | discovered_unverified |
