@@ -29,6 +29,7 @@
 - 週報 `<main>` 內只有逐則 claim 段落，不放分區小標題或其他編輯文字；每個實質節點都必須對到 claim。
 - 月報 `<main>` 分為四區：政策動態、研究動態、本刊追蹤學者本月新作、學者觀點動向。分區標題、段首說明、「本刊分析」「依據來源」小標與「本期無合格項目。」是 renderer 內的固定文字（`MONTHLY_SECTIONS`），修改須走程式審查。閘門以 claims 重新產生整頁、連 `<main>` 內一起逐節點比對，只有在整頁相符時才承認這些固定文字；最小頁面不適用。
 - 月報每則 claim 必須有 `section`（`policy`、`research`、`scholars`、`trends`）；`scholars` 須有 `research_group`。趨勢歸納寫成 `assertion_type: "editorial_analysis"`、`claim_class: "descriptive"` 的 claim，只能放 `trends`，並以 `supporting_claim_ids` 列出同期至少兩則其他非歸納 claim，且來自至少兩個不同 `research_group`。閘門只檢查結構，不判斷趨勢是否成立。
+- 研習、座談、課程等活動公告只進每日短訊與週報，不進月報（管理者 2026-10-10 決定）；月報沒有活動分區，不要把活動放進政策動態。`research_group` 預設為學者代碼，見 [scholar-watchlist.md](scholar-watchlist.md) 第 0 節。
 - 期別不合法的頁面仍只能使用 main-only body。不要用 main 包住整個網站版面，也不要解除正文外的檢查。
 
 ## 驗證與提交
