@@ -1,0 +1,658 @@
+{
+ "checked_at_note": "同一模型（與整合者同），非獨立審閱；curl 經 agent proxy，TLS 驗證開啟；未繞過任何驗證頁 ｜ 2026-10-09 續做：先前已存下全部 10 筆的結果；本次以已下載原檔（dl/）逐筆核對證據，沒有重新發出網路請求。補記香港專頁連結文字與韓國頁面細節。此為同一模型的輔助核對，不是獨立審閱。",
+ "items": [
+  {
+   "record_id": "KB-2026-0096",
+   "verdict": "mismatch",
+   "checked_fields": {
+    "title": {
+     "record": "Executive Order 14277: Advancing Artificial Intelligence Education for American Youth",
+     "official": "Advancing Artificial Intelligence Education for American Youth",
+     "ok": false,
+     "note": "API title 與 FR PDF 標題均無「Executive Order 14277:」前綴；PDF 另行寫「Executive Order 14277 of April 23, 2025」。號碼正確，差異屬引用形式。"
+    },
+    "issued_by": {
+     "record": [
+      "O-US-WH"
+     ],
+     "official": "Executive Office of the President (API agencies)；PDF：Presidential Documents，總統簽署",
+     "ok": true
+    },
+    "first_published_on": {
+     "record": "2025-04-28",
+     "record_precision": "day",
+     "official": "2025-04-28",
+     "precision": "day",
+     "evidence_text": "publication_date: 2025-04-28; signing_date: 2025-04-23; PDF 頁首 \"Federal Register / Vol. 90, No. 80 / Monday, April 28, 2025\"",
+     "evidence_url": "https://www.federalregister.gov/api/v1/documents/2025-07368.json",
+     "ok": true
+    },
+    "applies_to_country": {
+     "record": [
+      "US"
+     ],
+     "official": "US（聯邦行政命令）",
+     "ok": true
+    },
+    "primary_url": {
+     "url": "https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth",
+     "http": 200,
+     "effective_url": "https://unblock.federalregister.gov/",
+     "ok": true,
+     "note": "原頁 HTTP 200 但轉至 unblock.federalregister.gov 存取檢查頁（未繞過）；API html_url 與 primary_url 相同"
+    }
+   },
+   "proposed_changes": [
+    {
+     "field": "title",
+     "from": "Executive Order 14277: Advancing Artificial Intelligence Education for American Youth",
+     "to": "Advancing Artificial Intelligence Education for American Youth",
+     "note": "若管理者接受「Executive Order 14277:」為引用慣例前綴，可維持原題名並改判 match；其餘欄位皆相符"
+    }
+   ],
+   "read_utc": [
+    "2026-10-09T21:41:39Z",
+    "2026-10-09T21:41:40Z",
+    "2026-10-09T21:42:43Z"
+   ],
+   "http_status": [
+    200,
+    200,
+    200
+   ],
+   "note": "首發日 2025-04-28（day）已由 API 與 FR PDF 雙重確認。唯一差異是題名前綴。O-US-WH 對應 API 的 Executive Office of the President。 與上一輪不同：上一輪 west.json 把前綴題名判為 ok；本輪照「題名須與官方逐字相同」判 ✗，請管理者擇一。"
+  },
+  {
+   "record_id": "KB-2026-0099",
+   "verdict": "match",
+   "checked_fields": {
+    "title": {
+     "record": "NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools",
+     "official": "NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools",
+     "ok": true,
+     "note": "與 Google 文件名稱／og:title 完全相同；封面排版文字為「North Carolina Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools」"
+    },
+    "issued_by": {
+     "record": [
+      "O-US-NC-DPI"
+     ],
+     "official": "North Carolina Department of Public Instruction（Office of Digital Teaching and Learning）",
+     "ok": true
+    },
+    "first_published_on": {
+     "record": "2024-01-16",
+     "record_precision": "day",
+     "official": "2024-01-16",
+     "precision": "day",
+     "evidence_text": "Publication Date 1/16/24；Update Log: 1/16/2024 | 01 | Original publication",
+     "evidence_url": "https://docs.google.com/document/d/1U-AwwwBg7glJ4ZDlcKVzARuFRPWwUWzqRN2rOgT9zlA/export?format=txt",
+     "ok": true
+    },
+    "applies_to_country": {
+     "record": [
+      "US"
+     ],
+     "official": "US（北卡州公立學校）",
+     "ok": true
+    },
+    "primary_url": {
+     "url": "https://go.ncdpi.gov/AI_Guidelines",
+     "http": 200,
+     "effective_url": "https://docs.google.com/document/d/1U-AwwwBg7glJ4ZDlcKVzARuFRPWwUWzqRN2rOgT9zlA/edit?usp=sharing",
+     "ok": true,
+     "note": "go.ncdpi.gov 官方短網址轉至 docs.google.com 公開文件（文件自列 https://go.ncdpi.gov/AI_Guidelines）；託管非 .gov"
+    }
+   },
+   "proposed_changes": [],
+   "read_utc": [
+    "2026-10-09T21:41:40Z",
+    "2026-10-09T21:42:30Z"
+   ],
+   "http_status": [
+    200,
+    200
+   ],
+   "note": "升級可行。封面題名以「North Carolina」開頭、文件名以「NCDPI」開頭，兩者皆屬官方文件；紀錄採文件名。living document，現行版本已多次更新，首發日取版本表 v01。"
+  },
+  {
+   "record_id": "KB-2024-0006",
+   "verdict": "match",
+   "checked_fields": {
+    "title": {
+     "record": "Human-Centered AI Guidance for K-12 Public Schools",
+     "official": "Human-Centered AI Guidance for K–12 Public Schools",
+     "ok": true,
+     "note": "PDF 封面為 en dash「K–12」，紀錄為 ASCII「K-12」，屬字元正規化差異；primary_url 頁面標題為「Human-Centered Artificial Intelligence in Schools」，頁內連結文字「Comprehensive Human-Centered AI Guidance for K–12 Public Schools」"
+    },
+    "issued_by": {
+     "record": [
+      "O-US-WA-OSPI"
+     ],
+     "official": "OSPI（ospi.k12.wa.us）",
+     "ok": true
+    },
+    "first_published_on": {
+     "record": "unknown",
+     "record_precision": "unknown",
+     "official": "unknown",
+     "precision": "unknown",
+     "evidence_text": "原頁無日期；所連 PDF：Version 3.0 / Date of publication: July 1, 2024（版本日，非首發）",
+     "evidence_url": "https://ospi.k12.wa.us/sites/default/files/2024-08/comprehensive-ai-guidance.pdf",
+     "ok": true
+    },
+    "applies_to_country": {
+     "record": [
+      "US"
+     ],
+     "official": "US（華盛頓州）",
+     "ok": true
+    },
+    "primary_url": {
+     "url": "https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools",
+     "http": 200,
+     "effective_url": "https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools",
+     "ok": true,
+     "note": "OSPI 官方彙整頁，頁內連出 /sites/default/files/2024-08/comprehensive-ai-guidance.pdf"
+    }
+   },
+   "proposed_changes": [],
+   "read_utc": [
+    "2026-10-09T21:41:42Z",
+    "2026-10-09T21:42:55Z"
+   ],
+   "http_status": [
+    200,
+    200
+   ],
+   "note": "升級可行（以 unknown 首發日）。若要求題名字元完全一致，可將「K-12」改為「K–12」（en dash）。頁面稱 PDF 為「third version」。"
+  },
+  {
+   "record_id": "KB-2025-0046",
+   "verdict": "match",
+   "checked_fields": {
+    "title": {
+     "record": "AI in Education: Model Policy for Ohio Districts and Schools",
+     "official": "AI in Education: Model Policy for Ohio Districts and Schools",
+     "ok": true,
+     "note": "與所連官方 PDF 標題完全相同；網頁標題為「AI Model Policy for Ohio Districts and Schools」"
+    },
+    "issued_by": {
+     "record": [
+      "O-US-OH-DEW"
+     ],
+     "official": "Ohio Department of Education and Workforce",
+     "ok": true
+    },
+    "first_published_on": {
+     "record": "unknown",
+     "record_precision": "unknown",
+     "official": "unknown",
+     "precision": "unknown",
+     "evidence_text": "頁面「Last Modified: 1/29/2026 10:22:29 AM」；PDF 頁尾「AI in Education: Model Policy | 2025」；無明寫發布日",
+     "evidence_url": "https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy",
+     "ok": true
+    },
+    "applies_to_country": {
+     "record": [
+      "US"
+     ],
+     "official": "US（俄亥俄州）",
+     "ok": true
+    },
+    "primary_url": {
+     "url": "https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy",
+     "http": 200,
+     "effective_url": "https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy",
+     "ok": true,
+     "note": "education.ohio.gov 官方頁，頁內連出 PDF 與 docx"
+    }
+   },
+   "proposed_changes": [],
+   "read_utc": [
+    "2026-10-09T21:41:48Z",
+    "2026-10-09T21:43:09Z"
+   ],
+   "http_status": [
+    200,
+    200
+   ],
+   "note": "升級可行（以 unknown）。PDF 頁尾印「2025」，未標為發布日；若管理者接受頁尾年份可改 2025（year），但與 Last Modified 2026-01-29、PDF CreationDate 2026-01-29 並存，建議維持 unknown。"
+  },
+  {
+   "record_id": "KB-2026-0102",
+   "verdict": "match",
+   "checked_fields": {
+    "title": {
+     "record": "Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators",
+     "official": "Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators",
+     "ok": true
+    },
+    "issued_by": {
+     "record": [
+      "O-EU-EC"
+     ],
+     "official": "European Commission, DG Education, Youth, Sport and Culture（EAC 頁 footer；OP Corporate author）",
+     "ok": true
+    },
+    "first_published_on": {
+     "record": "unknown",
+     "record_precision": "unknown",
+     "official": "unknown",
+     "precision": "unknown",
+     "evidence_text": "EAC 頁無日期，只寫「The latest edition of the guidelines」；OP 頁「Published: 2026」「Released on EU publications website: 2026-06-12」",
+     "evidence_url": "https://op.europa.eu/en/publication-detail/-/publication/f692aa0b-17a7-11f1-8870-01aa75ed71a1",
+     "ok": true
+    },
+    "applies_to_country": {
+     "record": [
+      "EU"
+     ],
+     "official": "EU",
+     "ok": true
+    },
+    "primary_url": {
+     "url": "https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators",
+     "http": 200,
+     "effective_url": "https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators",
+     "ok": true,
+     "note": "education.ec.europa.eu 文件庫頁，無日期、無版次"
+    }
+   },
+   "proposed_changes": [],
+   "read_utc": [
+    "2026-10-09T21:41:48Z",
+    "2026-10-09T21:43:25Z"
+   ],
+   "http_status": [
+    200,
+    200
+   ],
+   "note": "升級可行（以 unknown）。可選：依 OP 官方元資料「Published: 2026」補年精度 2026；OP 上線日 2026-06-12 為網站上線日、不宜當首發日。revises KB-2022-0003 關係不在本次範圍。"
+  },
+  {
+   "record_id": "KB-2024-0005",
+   "verdict": "match",
+   "checked_fields": {
+    "title": {
+     "record": "教育部部署加强中小学人工智能教育",
+     "official": "教育部部署加强中小学人工智能教育",
+     "ok": true
+    },
+    "issued_by": {
+     "record": [
+      "O-CN-MOE"
+     ],
+     "official": "教育部（「来源：教育部」）",
+     "ok": true
+    },
+    "first_published_on": {
+     "record": "2024-12-02",
+     "record_precision": "day",
+     "official": "2024-12-02",
+     "precision": "day",
+     "evidence_text": "2024-12-02　来源：教育部",
+     "evidence_url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html",
+     "ok": true
+    },
+    "applies_to_country": {
+     "record": [
+      "CN"
+     ],
+     "official": "CN",
+     "ok": true
+    },
+    "primary_url": {
+     "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html",
+     "http": 200,
+     "effective_url": "http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html",
+     "ok": true,
+     "note": "https 請求被伺服器轉至 http 同路徑（effective URL http://www.moe.gov.cn/…）"
+    }
+   },
+   "proposed_changes": [],
+   "read_utc": [
+    "2026-10-09T21:41:49Z"
+   ],
+   "http_status": [
+    200
+   ],
+   "note": "升級可行。日期為新聞發布日；通知本身僅寫「近日」印發，紀錄類型 government_announcement 一致。"
+  },
+  {
+   "record_id": "KB-2026-0094",
+   "verdict": "match",
+   "checked_fields": {
+    "title": {
+     "record": "MOE Committee of Supply Debate 2026 Response by Minister of State for Education Jasmin Lau",
+     "official": "MOE Committee of Supply Debate 2026 Response by Minister of State for Education Jasmin Lau",
+     "ok": true
+    },
+    "issued_by": {
+     "record": [
+      "O-SG-MOE"
+     ],
+     "official": "Ministry of Education Singapore（A Singapore Government Agency Website）",
+     "ok": true
+    },
+    "first_published_on": {
+     "record": "2026-03-03",
+     "record_precision": "day",
+     "official": "2026-03-03",
+     "precision": "day",
+     "evidence_text": "Published on: 03 Mar 2026",
+     "evidence_url": "https://www.moe.gov.sg/news/speeches/20260303-moe-committee-of-supply-debate-2026-response-by-minister-of-state-for-education-jasmin-lau",
+     "ok": true
+    },
+    "applies_to_country": {
+     "record": [
+      "SG"
+     ],
+     "official": "SG",
+     "ok": true
+    },
+    "primary_url": {
+     "url": "https://www.moe.gov.sg/news/speeches/20260303-moe-committee-of-supply-debate-2026-response-by-minister-of-state-for-education-jasmin-lau",
+     "http": 200,
+     "effective_url": "https://www.moe.gov.sg/news/speeches/20260303-moe-committee-of-supply-debate-2026-response-by-minister-of-state-for-education-jasmin-lau",
+     "ok": true,
+     "note": "moe.gov.sg speeches 原頁"
+    }
+   },
+   "proposed_changes": [],
+   "read_utc": [
+    "2026-10-09T21:41:55Z"
+   ],
+   "http_status": [
+    200
+   ],
+   "note": "升級可行。"
+  },
+  {
+   "record_id": "KB-2025-0044",
+   "verdict": "mismatch",
+   "checked_fields": {
+    "title": {
+     "record": "수행평가 시, 인공지능(AI) 활용 관리 방안",
+     "official": "교육부와 교육청이 함께 ‘수행평가 시, 인공지능(AI) 활용 관리 방안’을 마련하였습니다",
+     "ok": false,
+     "note": "原頁標題為보도자료題名；紀錄題名是題名中引號內的方案名，原頁無以方案名為獨立標題的文件（附件只有보도자료 hwpx）；<title> 中「함께」後為 &nbsp;＋空格（雙空白），正規化為單空格"
+    },
+    "issued_by": {
+     "record": [
+      "O-KR-MOE"
+     ],
+     "official": "교육부（moe.go.kr 보도자료，公共누리「교육부(이)가 창작한」）",
+     "ok": true
+    },
+    "first_published_on": {
+     "record": "2025-12",
+     "record_precision": "month",
+     "official": "2025-12-23",
+     "precision": "day",
+     "evidence_text": "標題下 <span class=\"reg-date\">2025-12-23</span>（無標籤字）；附件名「[교육부 12-24(수) 조간보도자료]」",
+     "evidence_url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=104984&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+     "ok": false
+    },
+    "applies_to_country": {
+     "record": [
+      "KR"
+     ],
+     "official": "KR",
+     "ok": true
+    },
+    "primary_url": {
+     "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=104984&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+     "http": 200,
+     "effective_url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=104984&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+     "ok": true,
+     "note": "moe.go.kr 官方보도자료原頁"
+    }
+   },
+   "proposed_changes": [
+    {
+     "field": "title",
+     "from": "수행평가 시, 인공지능(AI) 활용 관리 방안",
+     "to": "교육부와 교육청이 함께 ‘수행평가 시, 인공지능(AI) 활용 관리 방안’을 마련하였습니다",
+     "note": "比照 KB-2024-0005 改用原頁新聞題名；或管理者決定保留方案名"
+    },
+    {
+     "field": "first_published_on/date_precision",
+     "from": "2025-12 (month)",
+     "to": "選項 A：2025-12-23 (day，頁面登錄日)；選項 B：維持 2025-12 (month，管理者先前決定，並附註登錄日 12-23 與禁刊 12-24 早報)",
+     "note": "原頁明寫的日精度日期只有 12-23（reg-date）；12-24 只出現在附件檔名，屬早報禁刊日"
+    }
+   ],
+   "read_utc": [
+    "2026-10-09T21:41:56Z"
+   ],
+   "http_status": [
+    200
+   ],
+   "note": "頁面登錄日 2025-12-23 與附件檔名的早報禁刊日 12-24(수) 不同，月精度與兩者都不衝突，但依「精度照原頁」規則，原頁為日精度。需管理者決定。 內文寫「확정된 내용은 12월 중 교육부에서 시.도교육청으로 안내될 계획」：方案本身要在 12 月內發給各教育廳，本頁只是보도자료。reg-date 2025-12-23 沒有標籤字；12-24(수) 조간 只出現在附件檔名，應是報紙早報的禁刊（解禁）日。"
+  },
+  {
+   "record_id": "KB-2026-0090",
+   "verdict": "match",
+   "checked_fields": {
+    "title": {
+     "record": "Supplement I: AI Literacy Learning Framework for Primary and Secondary Schools",
+     "official": "Supplement I / AI Literacy Learning Framework for Primary and Secondary Schools（封面分兩行）",
+     "ok": true,
+     "note": "封面另有「Prepared by the Curriculum Development Council / Published by the Education Bureau, HKSARG / 2026」；紀錄以冒號連接兩行；藍圖專頁 debp.html 連結文字與紀錄逐字相同：「Supplement I: AI Literacy Learning Framework for Primary and Secondary Schools」"
+    },
+    "issued_by": {
+     "record": [
+      "O-HK-EDB"
+     ],
+     "official": "Education Bureau, HKSARG（出版者；由課程發展議會編訂）",
+     "ok": true
+    },
+    "first_published_on": {
+     "record": "2026-06-17",
+     "record_precision": "day",
+     "official": "2026-06-17",
+     "precision": "day",
+     "evidence_text": "17 June 2026 … Circular No. 11/2026 … 1. Supplement 1 AI Literacy Learning Framework … The Blueprint and its supplements have been uploaded to the EDB’s dedicated website",
+     "evidence_url": "https://applications.edb.gov.hk/circular/upload/EDBC/EDBC26011E.pdf",
+     "ok": true
+    },
+    "applies_to_country": {
+     "record": [
+      "HK"
+     ],
+     "official": "HK",
+     "ok": true
+    },
+    "primary_url": {
+     "url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementAILiteracyLearningFramework(PrimaryAndSecondarySchools)_EN.pdf",
+     "http": 200,
+     "effective_url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementAILiteracyLearningFramework(PrimaryAndSecondarySchools)_EN.pdf",
+     "ok": true,
+     "note": "edb.gov.hk 官方 PDF（圖像型，無文字層），由藍圖專頁 debp.html 連出"
+    }
+   },
+   "proposed_changes": [],
+   "read_utc": [
+    "2026-10-09T21:42:00Z",
+    "2026-10-09T21:44:04Z",
+    "2026-10-09T21:44:06Z"
+   ],
+   "http_status": [
+    200,
+    200,
+    200
+   ],
+   "note": "日精度日期不在 PDF（封面只印 2026）。藍圖專頁只在 EDBC/EDBCM 欄列「17/06/2026 [EDBC No. 11/2026] The release of the Blueprint…」，未直接為附件標日期。通告 EDBC 11/2026（日期 17 June 2026）第 6 段點名 Supplement 1，第 8 段明寫「The Blueprint and its supplements have been uploaded」→ 符合「通告明確宣布附件」條件，故 2026-06-17 有官方依據（通告寫「Supplement 1」阿拉伯數字，封面為「Supplement I」）。PDF metadata CreationDate 2026-06-16（非印刷日期，不採用）。 藍圖專頁（debp.html）只列 PDF 連結，沒有附件日期；通告欄的「17/06/2026 [EDBC No. 11/2026]」是通告日期。通告第 8 段寫「The Blueprint and its supplements have been uploaded」，第 6 段點名 Supplement 1，附件（Annex，簡介會說明）也列出兩份補充文件的全名，所以這是明確宣布。頁尾「Last revision date: 01 July 2019」是版型日期，不採用。"
+  },
+  {
+   "record_id": "KB-2026-0091",
+   "verdict": "match",
+   "checked_fields": {
+    "title": {
+     "record": "Supplement II: Guide to Using AI in Teaching in Primary and Secondary Schools",
+     "official": "Supplement II / Guide to Using AI in Teaching in Primary and Secondary Schools（封面分兩行）",
+     "ok": true,
+     "note": "封面另有「Published by the Education Bureau, HKSARG / 2026」；藍圖專頁 debp.html 連結文字與紀錄逐字相同：「Supplement II: Guide to Using AI in Teaching in Primary and Secondary Schools」"
+    },
+    "issued_by": {
+     "record": [
+      "O-HK-EDB"
+     ],
+     "official": "Education Bureau, HKSARG",
+     "ok": true
+    },
+    "first_published_on": {
+     "record": "2026-06-17",
+     "record_precision": "day",
+     "official": "2026-06-17",
+     "precision": "day",
+     "evidence_text": "17 June 2026 … Circular No. 11/2026 … 2. Supplement 2 Guide to Using AI in Teaching … The Blueprint and its supplements have been uploaded",
+     "evidence_url": "https://applications.edb.gov.hk/circular/upload/EDBC/EDBC26011E.pdf",
+     "ok": true
+    },
+    "applies_to_country": {
+     "record": [
+      "HK"
+     ],
+     "official": "HK",
+     "ok": true
+    },
+    "primary_url": {
+     "url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementIIGuideToUsingAIInTeaching(PrimaryAndSecondarySchools)_EN.pdf",
+     "http": 200,
+     "effective_url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementIIGuideToUsingAIInTeaching(PrimaryAndSecondarySchools)_EN.pdf",
+     "ok": true,
+     "note": "edb.gov.hk 官方 PDF（圖像型），由藍圖專頁連出"
+    }
+   },
+   "proposed_changes": [],
+   "read_utc": [
+    "2026-10-09T21:42:09Z",
+    "2026-10-09T21:44:04Z",
+    "2026-10-09T21:44:06Z"
+   ],
+   "http_status": [
+    200,
+    200,
+    200
+   ],
+   "note": "同 KB-2026-0090：日期依據為通告（明確點名 Supplement 2 並稱已上載），非 PDF 本身；PDF 封面只印 2026。PDF metadata CreationDate 2026-06-16（不採用）。 藍圖專頁（debp.html）只列 PDF 連結，沒有附件日期；通告欄的「17/06/2026 [EDBC No. 11/2026]」是通告日期。通告第 8 段寫「The Blueprint and its supplements have been uploaded」，第 6 段點名 Supplement 2，附件（Annex，簡介會說明）也列出兩份補充文件的全名，所以這是明確宣布。頁尾「Last revision date: 01 July 2019」是版型日期，不採用。"
+  }
+ ],
+ "requests": [
+  {
+   "url": "https://www.federalregister.gov/api/v1/documents/2025-07368.json",
+   "utc": "2026-10-09T21:41:39Z",
+   "http": 200,
+   "effective_url": "https://www.federalregister.gov/api/v1/documents/2025-07368.json"
+  },
+  {
+   "url": "https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth",
+   "utc": "2026-10-09T21:41:40Z",
+   "http": 200,
+   "effective_url": "https://unblock.federalregister.gov/"
+  },
+  {
+   "url": "https://go.ncdpi.gov/AI_Guidelines",
+   "utc": "2026-10-09T21:41:40Z",
+   "http": 200,
+   "effective_url": "https://docs.google.com/document/d/1U-AwwwBg7glJ4ZDlcKVzARuFRPWwUWzqRN2rOgT9zlA/edit?usp=sharing"
+  },
+  {
+   "url": "https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools",
+   "utc": "2026-10-09T21:41:42Z",
+   "http": 200,
+   "effective_url": "https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools"
+  },
+  {
+   "url": "https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy",
+   "utc": "2026-10-09T21:41:48Z",
+   "http": 200,
+   "effective_url": "https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy"
+  },
+  {
+   "url": "https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators",
+   "utc": "2026-10-09T21:41:48Z",
+   "http": 200,
+   "effective_url": "https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators"
+  },
+  {
+   "url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html",
+   "utc": "2026-10-09T21:41:49Z",
+   "http": 200,
+   "effective_url": "http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html"
+  },
+  {
+   "url": "https://www.moe.gov.sg/news/speeches/20260303-moe-committee-of-supply-debate-2026-response-by-minister-of-state-for-education-jasmin-lau",
+   "utc": "2026-10-09T21:41:55Z",
+   "http": 200,
+   "effective_url": "https://www.moe.gov.sg/news/speeches/20260303-moe-committee-of-supply-debate-2026-response-by-minister-of-state-for-education-jasmin-lau"
+  },
+  {
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=104984&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+   "utc": "2026-10-09T21:41:56Z",
+   "http": 200,
+   "effective_url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=104984&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N"
+  },
+  {
+   "url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementAILiteracyLearningFramework(PrimaryAndSecondarySchools)_EN.pdf",
+   "utc": "2026-10-09T21:42:00Z",
+   "http": 200,
+   "effective_url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementAILiteracyLearningFramework(PrimaryAndSecondarySchools)_EN.pdf"
+  },
+  {
+   "url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementIIGuideToUsingAIInTeaching(PrimaryAndSecondarySchools)_EN.pdf",
+   "utc": "2026-10-09T21:42:09Z",
+   "http": 200,
+   "effective_url": "https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementIIGuideToUsingAIInTeaching(PrimaryAndSecondarySchools)_EN.pdf"
+  },
+  {
+   "url": "https://docs.google.com/document/d/1U-AwwwBg7glJ4ZDlcKVzARuFRPWwUWzqRN2rOgT9zlA/export?format=txt",
+   "utc": "2026-10-09T21:42:30Z",
+   "http": 200,
+   "effective_url": "https://doc-14-4o-docstext.googleusercontent.com/export/s8v029du74rmth76t5k6ldhbqs/4mhrkvqtafr9j7kniecc84g26g/1791582150000/105250506097979753968/*/1U-AwwwBg7glJ4ZDlcKVzARuFRPWwUWzqRN2rOgT9zlA?format=txt"
+  },
+  {
+   "url": "https://www.govinfo.gov/content/pkg/FR-2025-04-28/pdf/2025-07368.pdf",
+   "utc": "2026-10-09T21:42:43Z",
+   "http": 200,
+   "effective_url": "https://www.govinfo.gov/content/pkg/FR-2025-04-28/pdf/2025-07368.pdf"
+  },
+  {
+   "url": "https://ospi.k12.wa.us/sites/default/files/2024-08/comprehensive-ai-guidance.pdf",
+   "utc": "2026-10-09T21:42:55Z",
+   "http": 200,
+   "effective_url": "https://ospi.k12.wa.us/sites/default/files/2024-08/comprehensive-ai-guidance.pdf"
+  },
+  {
+   "url": "https://education.ohio.gov/getattachment/Topics/AI-in-Ohio-s-Education/Model-Policy/AI-In-Education-Model-Policy.pdf.aspx?lang=en-US",
+   "utc": "2026-10-09T21:43:09Z",
+   "http": 200,
+   "effective_url": "https://education.ohio.gov/getattachment/Topics/AI-in-Ohio-s-Education/Model-Policy/AI-In-Education-Model-Policy.pdf.aspx?lang=en-US"
+  },
+  {
+   "url": "https://op.europa.eu/en/publication-detail/-/publication/f692aa0b-17a7-11f1-8870-01aa75ed71a1",
+   "utc": "2026-10-09T21:43:25Z",
+   "http": 200,
+   "effective_url": "https://op.europa.eu/en/publication-detail/-/publication/f692aa0b-17a7-11f1-8870-01aa75ed71a1"
+  },
+  {
+   "url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/debp.html",
+   "utc": "2026-10-09T21:44:04Z",
+   "http": 200,
+   "effective_url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/debp.html"
+  },
+  {
+   "url": "https://applications.edb.gov.hk/circular/upload/EDBC/EDBC26011E.pdf",
+   "utc": "2026-10-09T21:44:06Z",
+   "http": 200,
+   "effective_url": "https://applications.edb.gov.hk/circular/upload/EDBC/EDBC26011E.pdf"
+  },
+  {
+   "url": "https://www.edb.gov.hk/en/DEBP",
+   "utc": "2026-10-09T21:44:41Z",
+   "http": 200,
+   "effective_url": "https://www.edb.gov.hk/en/DEBP/"
+  }
+ ]
+}

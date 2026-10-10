@@ -1,0 +1,1131 @@
+[
+ {
+  "id": "A-CN-01",
+  "title_original": "义务教育信息科技课程标准（2022年版）（随《教育部关于印发义务教育课程方案和课程标准（2022年版）的通知》教材〔2022〕2号印发）",
+  "title_en": null,
+  "official_url": "http://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+  "issued_by": "O-CN-MOE",
+  "applies_to_country": "CN",
+  "doc_force": "課綱",
+  "doc_force_basis": "教育部正式印發之課程標準，通知要求「于2022年秋季学期开始执行」",
+  "record_type_suggestion": "framework",
+  "k12_scope_evidence": "义务教育（小学、初中）课程标准",
+  "category_suggestion": [
+   "K1"
+  ],
+  "first_published_on": "2022-04-21",
+  "date_precision": "day",
+  "date_evidence": {
+   "text": "发布日期：2022-04-21；成文日期于正文「教育部 2022年3月25日」；信息公开「生成日期：2022-04-08」",
+   "url": "http://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+   "read_utc": "2026-10-09T17:30:27Z",
+   "note": "首發日取「发布日期」；成文/生成日期另記"
+  },
+  "effective_on": "2022年秋季学期（原文：于2022年秋季学期开始执行；精度 term）",
+  "version_relation": null,
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁可讀但 AI 相關內容無法核對：信息科技課標 PDF 為掃描影像（pdftotext 僅 74 bytes），通知與答記者問 HTML 均未提「人工智能」。需 OCR 或人工核對後再判是否屬 AI 課綱",
+  "access_log": [
+   {
+    "url": "http://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+    "method": "curl",
+    "http_status": 200,
+    "utc": "2026-10-09T17:30:27Z"
+   },
+   {
+    "url": "http://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582361024968.pdf",
+    "method": "curl",
+    "http_status": 200,
+    "utc": "2026-10-09T17:30:36Z"
+   },
+   {
+    "url": "http://www.moe.gov.cn/jyb_xwfb/s271/202204/t20220421_620066.html",
+    "method": "curl",
+    "http_status": 200,
+    "utc": "2026-10-09T17:30:51Z"
+   }
+  ]
+ },
+ {
+  "id": "A-CN-03",
+  "title_original": "中小学人工智能通识教育指南（2025年版）",
+  "title_en": null,
+  "official_url": null,
+  "issued_by": "O-CN-MOE",
+  "proposed_new_code": "（可選）O-CN-MOE-JZW：教育部基础教育教学指导委员会；或維持 O-CN-MOE 並在 issued_by_note 註明",
+  "issued_by_note": "發布者為教育部基础教育教学指导委员会（教育部所設專家委員會），非教育部本部或办公厅",
+  "applies_to_country": "CN",
+  "doc_force": "框架",
+  "doc_force_basis": "名稱為「指南」；官方月報描述為構建通識教育體系、螺旋式課程設計；效力層級（是否行政文件）不明",
+  "record_type_suggestion": "framework",
+  "k12_scope_evidence": "題名「中小学」（官方月報轉述）",
+  "category_suggestion": [
+   "K1",
+   "K3"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": {
+   "text": "（官方二手頁）「5月12日，教育部基础教育教学指导委员会发布《中小学人工智能通识教育指南（2025年版）》和《中小学生成式人工智能使用指南（2025年版）》」",
+   "url": "http://www.moe.gov.cn/s78/A16/gongzuo/gzzl_yb/202506/t20250630_1195963.html",
+   "read_utc": "2026-10-09T17:29:49Z",
+   "note": "出自教育部科技司《2025年5月教育信息化和网络安全工作月报》（发布 2025-06-30），非指南原頁；故 first_published_on 不填，reported_release_on=2025-05-12 僅供核對"
+  },
+  "reported_release_on": "2025-05-12",
+  "effective_on": null,
+  "version_relation": "referenced_by: A-CN-05（行动计划要求「持续完善《中小学人工智能通识教育指南》」）",
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "指南原頁（教育部或教指委）未定位、不可讀；僅官方月報與媒體轉述",
+  "access_log": [
+   {
+    "url": "http://www.moe.gov.cn/s78/A16/gongzuo/gzzl_yb/202506/t20250630_1195963.html",
+    "method": "curl",
+    "http_status": 200,
+    "utc": "2026-10-09T17:29:49Z"
+   }
+  ]
+ },
+ {
+  "id": "A-CN-04",
+  "title_original": "中小学生成式人工智能使用指南（2025年版）",
+  "title_en": null,
+  "official_url": null,
+  "issued_by": "O-CN-MOE",
+  "proposed_new_code": "同 A-CN-03（O-CN-MOE-JZW，可選）",
+  "issued_by_note": "發布者為教育部基础教育教学指导委员会",
+  "applies_to_country": "CN",
+  "doc_force": "正式指引",
+  "doc_force_basis": "名稱為「使用指南」；官方月報稱「明确各学段使用规范」；正式效力層級不明",
+  "record_type_suggestion": "official_guidance",
+  "k12_scope_evidence": "題名「中小学」；月報稱明确各学段使用规范",
+  "category_suggestion": [
+   "K5"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": {
+   "text": "同 A-CN-03（官方月報：5月12日…发布）",
+   "url": "http://www.moe.gov.cn/s78/A16/gongzuo/gzzl_yb/202506/t20250630_1195963.html",
+   "read_utc": "2026-10-09T17:29:49Z",
+   "note": "非原頁"
+  },
+  "reported_release_on": "2025-05-12",
+  "effective_on": null,
+  "version_relation": null,
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁未定位、不可讀；香港 LegCo 答覆（2025-06-04）亦提及此指南，可作佐證但非原頁",
+  "access_log": [
+   {
+    "url": "http://www.moe.gov.cn/s78/A16/gongzuo/gzzl_yb/202506/t20250630_1195963.html",
+    "method": "curl",
+    "http_status": 200,
+    "utc": "2026-10-09T17:29:49Z"
+   },
+   {
+    "url": "https://www.info.gov.hk/gia/general/202506/04/P2025060400285.htm",
+    "method": "curl",
+    "http_status": 200,
+    "utc": "2026-10-09T17:40:38Z"
+   }
+  ]
+ },
+ {
+  "id": "A-KR-07",
+  "title_original": "인공지능(AI) 교과, 교원이 주도하여 교육자료부터 인정교과서까지 만든다",
+  "title_en": null,
+  "official_url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107049&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+  "issued_by": "O-KR-MOE",
+  "applies_to_country": "KR",
+  "doc_force": "公告",
+  "doc_force_basis": "報導資料主體為教科書執筆研修（8.28–29）；同時公布 AI 相關 16 科目（초6・중2・고8）認定教科書開發支援，2028-03 起適用",
+  "record_type_suggestion": "government_announcement",
+  "k12_scope_evidence": "附件原文：「초등학교 6개, 중학교 2개, 고등학교 8개 등 총 16개 과목」",
+  "category_suggestion": [
+   "K1"
+  ],
+  "first_published_on": "2026-08-27",
+  "date_precision": "day",
+  "date_evidence": {
+   "text": "reg-date 2026-08-27；附件「배포 2026. 8. 27.(목) 08:00 / 보도시점 (인터넷) 2026. 8. 27.(목) 12:00 (지면) 2026. 8. 28.(금) 조간」",
+   "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107049&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+   "read_utc": "2026-10-09T17:39:55Z",
+   "note": "首發日取網頁登錄日；網路解禁 2026-08-27 12:00"
+  },
+  "effective_on": "2028-03（教科書適用；2027 第1學期試行）",
+  "version_relation": null,
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁可讀；但報導主體為研修活動（研習不收），政策部分（AI 科目認定教科書開發）是否單獨成件需審核",
+  "access_log": [
+   {
+    "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107049&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+    "method": "curl",
+    "http_status": "fail rc=35 connection reset (×4)",
+    "utc": "2026-10-09T17:39:10Z"
+   },
+   {
+    "url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107049&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+    "method": "curl",
+    "http_status": 200,
+    "utc": "2026-10-09T17:39:55Z"
+   },
+   {
+    "url": "https://www.moe.go.kr/boardCnts/fileDown.do?m=020402&s=moe&fileSeq=324b46615cc81b290d09f1acbea3660b",
+    "method": "curl",
+    "http_status": 200,
+    "utc": "2026-10-09T17:40:12Z"
+   }
+  ]
+ },
+ {
+  "id": "A-TW-01",
+  "title_original": "中小學數位教學指引3.0",
+  "title_en": null,
+  "official_url": null,
+  "issued_by": "O-TW-MOE",
+  "local_source": true,
+  "applies_to_country": "TW",
+  "doc_force": "正式指引",
+  "doc_force_basis": "教育部新聞稱「發布」；納入 AI 使用風險與生成式 AI 教學時機；對接 UNESCO 教師及學生 AI 素養架構",
+  "record_type_suggestion": "official_guidance",
+  "k12_scope_evidence": "題名「中小學」",
+  "category_suggestion": [
+   "K4",
+   "K5"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": {
+   "text": "（官方二手頁）「本(113)年8月22日再度發布「中小學數位教學指引3.0」」；該新聞上版日期：113-09-05",
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=28869789E28E14F9",
+   "read_utc": "2026-10-09T17:44:51Z",
+   "note": "指引原下載頁 pads.moe.edu.tw TLS 憑證鏈驗證失敗（curl rc=60），未讀；reported_release_on=2024-08-22 僅供核對"
+  },
+  "reported_release_on": "2024-08-22",
+  "effective_on": null,
+  "version_relation": "revises: 中小學數位教學指引2.0（官方新聞：「在去年發布…2.0」）",
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁不可讀（pads.moe.edu.tw TLS 錯誤；不得停用 TLS 驗證）；日期僅見教育部新聞",
+  "access_log": [
+   {
+    "url": "https://pads.moe.edu.tw/",
+    "method": "curl",
+    "http_status": "fail rc=60 SSL certificate problem",
+    "utc": "2026-10-09T17:44:09Z"
+   },
+   {
+    "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=28869789E28E14F9",
+    "method": "curl",
+    "http_status": 200,
+    "utc": "2026-10-09T17:44:51Z"
+   }
+  ]
+ },
+ {
+  "id": "A-TW-02",
+  "title_original": "中小學使用生成式人工智慧注意事項（教師、行政人員及家長版／學生版；1.0→2.0→2.1）",
+  "title_en": null,
+  "official_url": null,
+  "issued_by": "O-TW-MOE",
+  "local_source": true,
+  "applies_to_country": "TW",
+  "doc_force": "正式指引",
+  "doc_force_basis": "線索：教育部函核定（「中華民國113年7月1日 臺教資（三）字第1132702614號函 核定」見 WebSearch 摘錄之 pads PDF 首行）；未讀原文",
+  "record_type_suggestion": "official_guidance",
+  "k12_scope_evidence": "題名「中小學」",
+  "category_suggestion": [
+   "K5"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": {
+   "text": null,
+   "url": null,
+   "read_utc": null,
+   "note": "線索（未核）：1.0 依 113-07-01 函；2.0 依 114-12-23 函；2.1 依 115-02-12 函（均來自 WebSearch 摘要與學校轉知公告）。教育部 2024-09-16 新聞澄清稿（edu.tw，可讀）提及 13 歲以下應在教師指導下使用，但未列本注意事項發布日"
+  },
+  "effective_on": null,
+  "version_relation": "series: 1.0 (113-07) → 2.0 (114-12) → 2.1 (115-02)【僅線索，官方原頁未讀】",
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁不可讀（pads TLS 錯誤；WebFetch 503）；官方新聞稿未找到",
+  "access_log": [
+   {
+    "url": "https://pads.moe.edu.tw/",
+    "method": "curl",
+    "http_status": "fail rc=60 SSL certificate problem",
+    "utc": "2026-10-09T17:44:09Z"
+   },
+   {
+    "url": "https://pads.moe.edu.tw/download.php",
+    "method": "WebFetch",
+    "http_status": 503,
+    "utc": "2026-10-09T17:46:0xZ(approx)"
+   },
+   {
+    "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=E5BF6470C9BBF4D3",
+    "method": "curl",
+    "http_status": 200,
+    "utc": "2026-10-09T17:44:47Z"
+   }
+  ]
+ },
+ {
+  "id": "A-TW-03",
+  "title_original": "國民中小學學生學習評量及作業使用生成式人工智慧注意事項",
+  "title_en": null,
+  "official_url": null,
+  "issued_by": "O-TW-MOE",
+  "local_source": true,
+  "applies_to_country": "TW",
+  "doc_force": "正式指引",
+  "doc_force_basis": "線索：教育部 114-03-03 發函訂定（學校轉知公告）；未讀原文",
+  "record_type_suggestion": "official_guidance",
+  "k12_scope_evidence": "題名「國民中小學」",
+  "category_suggestion": [
+   "K3",
+   "K5"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": {
+   "text": null,
+   "url": null,
+   "read_utc": null,
+   "note": "線索：114年3月3日函（WebSearch 摘要，來源為學校網站 PDF），未核"
+  },
+  "effective_on": null,
+  "version_relation": null,
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "教育部原頁未定位；僅學校轉知。另有高級中等學校版（113-12、114-06 函，線索）未列項",
+  "access_log": []
+ },
+ {
+  "id": "A-TW-04",
+  "title_original": "臺灣中小學教師與學生AI素養框架",
+  "title_en": null,
+  "official_url": null,
+  "issued_by": "O-TW-MOE",
+  "local_source": true,
+  "applies_to_country": "TW",
+  "doc_force": "框架",
+  "doc_force_basis": "行政院院會議案頁稱教育部「致力於建構」此框架；WebSearch 摘錄 pads PDF 封面「中華民國115年3月」（未讀原文）",
+  "record_type_suggestion": "framework",
+  "k12_scope_evidence": "題名「中小學教師與學生」",
+  "category_suggestion": [
+   "K1",
+   "K3",
+   "K4"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": {
+   "text": "（官方二手頁）行政院「打造AI智慧教育新生態─AI人才方舟計畫」（日期：115-05-21）提及「致力於建構『臺灣中小學教師與學生AI素養框架』」",
+   "url": "https://www.ey.gov.tw/Page/448DE008087A1971/69349d8a-b2be-406c-a997-8bf919259f85",
+   "read_utc": "2026-10-09T17:45:28Z",
+   "note": "框架文件封面「中華民國115年3月」僅為 WebSearch 摘要線索；原檔 pads.moe.edu.tw 不可讀"
+  },
+  "effective_on": null,
+  "version_relation": null,
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁不可讀（pads TLS）；建議人工以瀏覽器核對 pads 下載頁日期",
+  "access_log": [
+   {
+    "url": "https://www.ey.gov.tw/Page/448DE008087A1971/69349d8a-b2be-406c-a997-8bf919259f85",
+    "method": "curl",
+    "http_status": 200,
+    "utc": "2026-10-09T17:45:28Z"
+   }
+  ]
+ },
+ {
+  "title": "Artificial Intelligence and the Future of Teaching and Learning: Insights and Recommendations",
+  "official_url": "https://eric.ed.gov/?id=ED631097",
+  "issued_by": "O-US-ED",
+  "proposed_new_code": null,
+  "applies_to_country": "US",
+  "applies_to_subdivision": null,
+  "doc_force": "報告",
+  "doc_force_basis": "ED 教育科技辦公室（OET）政策報告，封面註明「Examples Are Not Endorsements」，非拘束性",
+  "record_type_suggestion": "source_document",
+  "k12_scope_evidence": "待核：原 ed.gov 頁 403；ERIC 副本前頁未見學段字樣（只讀前3頁）",
+  "category_suggestion": [
+   "K1",
+   "K4",
+   "K5"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": {
+   "note": "ERIC（ED/IES 營運）副本封面字樣「May 2023」；ERIC API publicationdate=2023-05-00。屬文件署期／索引欄位，非原頁首發日，故不填 first_published_on",
+   "urls": [
+    "https://files.eric.ed.gov/fulltext/ED631097.pdf",
+    "https://api.ies.ed.gov/eric/"
+   ],
+   "read_utc": "2026-10-09T17:33:43Z"
+  },
+  "updated_on": null,
+  "effective_on": null,
+  "version_relation": null,
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁不可讀（ed.gov 403）；官方網址未經 curl 驗證，暫以 ERIC 條目代替",
+  "summary_zh": "ED 對 AI 與教學的洞察與建議報告（2023 年署期）。",
+  "access_log": [
+   {
+    "url": "https://www.ed.gov/sites/ed/files/documents/ai-report/ai-report.pdf",
+    "method": "curl GET",
+    "http_status": 403,
+    "utc": "2026-10-09T17:28:35Z"
+   },
+   {
+    "url": "https://api.ies.ed.gov/eric/?search=title:%22Artificial%20Intelligence%20and%20the%20Future%20of%20Teaching%20and%20Learning%22&fields=id,title,publicationdateyear,publisher,url,author&rows=10",
+    "method": "curl GET",
+    "http_status": 200,
+    "utc": "2026-10-09T17:29:16Z"
+   },
+   {
+    "url": "https://files.eric.ed.gov/fulltext/ED631097.pdf",
+    "method": "curl GET",
+    "http_status": 200,
+    "utc": "2026-10-09T17:33:43Z"
+   }
+  ],
+  "jurisdiction": "US-federal"
+ },
+ {
+  "title": "Designing for Education with Artificial Intelligence: An Essential Guide for Developers",
+  "official_url": "https://eric.ed.gov/?id=ED661949",
+  "issued_by": "O-US-ED",
+  "proposed_new_code": null,
+  "applies_to_country": "US",
+  "applies_to_subdivision": null,
+  "doc_force": "正式指引",
+  "doc_force_basis": "ED/OET 對教育科技開發者的非拘束性指引（封面「Examples Are Not Endorsements」）",
+  "record_type_suggestion": "official_guidance",
+  "k12_scope_evidence": "待核：原頁不可讀，ERIC 副本未逐頁核學段",
+  "category_suggestion": [
+   "K5"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": {
+   "note": "ERIC 副本封面「July 2024」；ERIC API publicationdate=2024-07-00。非原頁首發日",
+   "urls": [
+    "https://files.eric.ed.gov/fulltext/ED661949.pdf"
+   ],
+   "read_utc": "2026-10-09T17:33:54Z"
+  },
+  "updated_on": null,
+  "effective_on": null,
+  "version_relation": null,
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁不可讀（tech.ed.gov/ed.gov 403）；學段待核",
+  "summary_zh": "給 AI 教育產品開發者的設計責任指引。",
+  "access_log": [
+   {
+    "url": "https://tech.ed.gov/ai/",
+    "method": "curl GET",
+    "http_status": 403,
+    "utc": "2026-10-09T17:29:14Z"
+   },
+   {
+    "url": "https://api.ies.ed.gov/eric/?search=publisher:%22Office%20of%20Educational%20Technology%22%20AND%20(artificial%20intelligence)&fields=id,title,publicationdateyear,publicationdate,publisher,url,description&rows=50",
+    "method": "curl GET",
+    "http_status": 200,
+    "utc": "2026-10-09T17:29:22Z"
+   },
+   {
+    "url": "https://files.eric.ed.gov/fulltext/ED661949.pdf",
+    "method": "curl GET",
+    "http_status": 200,
+    "utc": "2026-10-09T17:33:54Z"
+   }
+  ],
+  "jurisdiction": "US-federal"
+ },
+ {
+  "title": "Empowering Education Leaders: A Toolkit for Safe, Ethical, and Equitable AI Integration",
+  "official_url": "https://eric.ed.gov/?id=ED661924",
+  "issued_by": "O-US-ED",
+  "proposed_new_code": null,
+  "applies_to_country": "US",
+  "applies_to_subdivision": null,
+  "doc_force": "正式指引",
+  "doc_force_basis": "副本前頁自述「non-regulatory, education-specific guidance」",
+  "record_type_suggestion": "official_guidance",
+  "k12_scope_evidence": "待核：對象為教育領導者，原頁不可讀，學段未逐頁核",
+  "category_suggestion": [
+   "K1",
+   "K5"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": {
+   "note": "ERIC 副本封面「October 2024」；ERIC API publicationdate=2024-10-00。非原頁首發日",
+   "urls": [
+    "https://files.eric.ed.gov/fulltext/ED661924.pdf"
+   ],
+   "read_utc": "2026-10-09T17:33:54Z"
+  },
+  "updated_on": null,
+  "effective_on": null,
+  "version_relation": null,
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁不可讀（ed.gov 403）；學段待核",
+  "summary_zh": "協助教育領導者安全導入 AI 的工具包。",
+  "access_log": [
+   {
+    "url": "https://tech.ed.gov/ai/",
+    "method": "curl GET",
+    "http_status": 403,
+    "utc": "2026-10-09T17:29:14Z"
+   },
+   {
+    "url": "https://api.ies.ed.gov/eric/?search=publisher:%22Office%20of%20Educational%20Technology%22%20AND%20(artificial%20intelligence)&fields=id,title,publicationdateyear,publicationdate,publisher,url,description&rows=50",
+    "method": "curl GET",
+    "http_status": 200,
+    "utc": "2026-10-09T17:29:22Z"
+   },
+   {
+    "url": "https://files.eric.ed.gov/fulltext/ED661924.pdf",
+    "method": "curl GET",
+    "http_status": 200,
+    "utc": "2026-10-09T17:33:54Z"
+   }
+  ],
+  "jurisdiction": "US-federal"
+ },
+ {
+  "title": "Guidance on the Use of Federal Grant Funds to Improve Education Outcomes Using Artificial Intelligence (AI)（Dear Colleague Letter）",
+  "official_url": null,
+  "issued_by": "O-US-ED",
+  "proposed_new_code": null,
+  "applies_to_country": "US",
+  "applies_to_subdivision": null,
+  "doc_force": "正式指引",
+  "doc_force_basis": "依 FR 2026-07087 文字稱其為 Department's July 2025 Guidance；原件未讀",
+  "record_type_suggestion": "official_guidance",
+  "k12_scope_evidence": "待核（原件未讀）",
+  "category_suggestion": [
+   "K1",
+   "K5"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": {
+   "note": "官方 FR 最終優先事項（2026-07087，GovInfo 全文）提及「the Department's July 2025 Guidance on the Use of Federal Grant Funds to Improve Education Outcomes Using Artificial Intelligence (AI)」→ 月精度旁證；WebSearch 線索稱 2025-07-22，未經原頁核對",
+   "urls": [
+    "https://www.govinfo.gov/content/pkg/FR-2026-04-13/html/2026-07087.htm"
+   ],
+   "read_utc": "2026-10-09T17:29:42Z"
+  },
+  "updated_on": null,
+  "effective_on": null,
+  "version_relation": null,
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁不可讀（ed.gov 新聞稿 403）；官方網址未確認",
+  "summary_zh": "說明聯邦補助款可用於負責任 AI 應用（線索稱含 AI 教材、輔導、升學就業諮詢）。",
+  "access_log": [
+   {
+    "url": "https://www.ed.gov/media/document/guidance-artificial-intelligence-use-schools-112052.pdf",
+    "method": "curl GET",
+    "http_status": 403,
+    "utc": "2026-10-09T17:29:15Z"
+   },
+   {
+    "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-issues-guidance-artificial-intelligence-use-schools-proposes-additional-supplemental-priority",
+    "method": "curl GET",
+    "http_status": 403,
+    "utc": "2026-10-09T17:33:11Z"
+   },
+   {
+    "url": "https://www.govinfo.gov/content/pkg/FR-2026-04-13/html/2026-07087.htm",
+    "method": "curl GET",
+    "http_status": 200,
+    "utc": "2026-10-09T17:29:42Z"
+   }
+  ],
+  "jurisdiction": "US-federal"
+ },
+ {
+  "title": "Australian Government response to Study Buddy or Influencer: Inquiry into the use of generative artificial intelligence in the Australian education system",
+  "official_url": "https://www.education.gov.au/download/20276/study-buddy-or-influencer-inquiry-use-generative-artificial-intelligence-australian-education-system/44382/document/pdf",
+  "issued_by": "O-AU-EDU",
+  "proposed_new_code": null,
+  "applies_to_country": "AU",
+  "applies_to_subdivision": null,
+  "doc_force": "報告",
+  "doc_force_basis": "政府對眾議院委員會報告之回應（線索）；原件未讀",
+  "record_type_suggestion": "policy_review",
+  "k12_scope_evidence": "待核（涵蓋全教育體系，學校部分待讀原文）",
+  "category_suggestion": [
+   "K1",
+   "K5"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": {
+   "note": "WebSearch 線索稱 2026 年 4 月提交國會；未經原頁核對",
+   "urls": [],
+   "read_utc": null
+  },
+  "updated_on": null,
+  "effective_on": null,
+  "version_relation": null,
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁不可讀（education.gov.au 連線失敗、aph.gov.au 403）",
+  "summary_zh": null,
+  "access_log": [
+   {
+    "url": "https://www.education.gov.au/download/20276/study-buddy-or-influencer-inquiry-use-generative-artificial-intelligence-australian-education-system/44382/document/pdf",
+    "method": "curl GET",
+    "http_status": 0,
+    "utc": "2026-10-09T17:32:41Z",
+    "note": "連線失敗（000）"
+   },
+   {
+    "url": "https://www.aph.gov.au/Parliamentary_Business/Committees/House/Employment_Education_and_Training/AIineducation",
+    "method": "curl GET",
+    "http_status": 403,
+    "utc": "2026-10-09T17:32:41Z",
+    "note": "403"
+   },
+   {
+    "url": "https://www.education.gov.au/node/20276",
+    "method": "curl GET(http1.1)",
+    "http_status": 0,
+    "utc": "2026-10-09T17:33:11Z",
+    "note": "--http1.1：curl (52) Empty reply"
+   }
+  ],
+  "jurisdiction": "AU-federal"
+ },
+ {
+  "title": "Draft schools AI framework open for consultation（教育部長新聞稿）",
+  "official_url": "https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation",
+  "issued_by": "O-AU-EDU",
+  "proposed_new_code": null,
+  "applies_to_country": "AU",
+  "applies_to_subdivision": null,
+  "doc_force": "諮詢",
+  "doc_force_basis": "標題稱 consultation（線索）",
+  "record_type_suggestion": "government_announcement",
+  "k12_scope_evidence": "待核",
+  "category_suggestion": [
+   "K1"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": null,
+  "updated_on": null,
+  "effective_on": null,
+  "version_relation": "疑為 KB-2023-0001 之草案諮詢階段（未經原頁核對，不作版本關係主張）",
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁不可讀（ministers.education.gov.au HTTP/2 錯誤）",
+  "summary_zh": null,
+  "access_log": [
+   {
+    "url": "https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation",
+    "method": "curl GET",
+    "http_status": 0,
+    "utc": "2026-10-09T17:32:38Z",
+    "note": "curl (92) HTTP/2 stream INTERNAL_ERROR"
+   },
+   {
+    "url": "https://ministers.education.gov.au/clare/ai-framework-schools-released",
+    "method": "curl GET",
+    "http_status": 0,
+    "utc": "2026-10-09T17:32:39Z",
+    "note": "curl (92) HTTP/2 stream INTERNAL_ERROR"
+   }
+  ],
+  "jurisdiction": "AU-federal"
+ },
+ {
+  "title": "Student use of NSWEduChat",
+  "official_url": "https://education.nsw.gov.au/schooling/parents-and-carers/artificial-intelligence/student-use-of-nsweduchat.html",
+  "issued_by": null,
+  "proposed_new_code": {
+   "code": "O-AU-NSW-DOE",
+   "label": "NSW Department of Education",
+   "reason": "同上"
+  },
+  "applies_to_country": "AU",
+  "applies_to_subdivision": "AU-NSW",
+  "doc_force": "公告",
+  "doc_force_basis": "家長／照顧者資訊頁，說明學生使用部屬 AI 工具範圍",
+  "record_type_suggestion": "government_announcement",
+  "k12_scope_evidence": "原頁「Students from Year 5 to Year 12 have access to NSWEduChat」",
+  "category_suggestion": [
+   "K5"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": {
+   "note": "原頁未見首發日；「Last updated: 05-Jun-2026」",
+   "urls": [
+    "https://education.nsw.gov.au/schooling/parents-and-carers/artificial-intelligence/student-use-of-nsweduchat.html"
+   ],
+   "read_utc": "2026-10-09T17:32:53Z"
+  },
+  "updated_on": "2026-06-05",
+  "effective_on": null,
+  "version_relation": null,
+  "known_duplicate": null,
+  "decision": "pending",
+  "reason": "原頁可讀，但屬家長資訊頁，是否屬政策文件（相對於家庭宣導）待人工判定",
+  "summary_zh": "說明 NSWEduChat 學生模式開放 5–12 年級使用。",
+  "access_log": [
+   {
+    "url": "https://education.nsw.gov.au/schooling/parents-and-carers/artificial-intelligence/student-use-of-nsweduchat.html",
+    "method": "curl GET",
+    "http_status": 200,
+    "utc": "2026-10-09T17:32:53Z"
+   },
+   {
+    "url": "https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/artificial-intelligence-in-education",
+    "method": "curl GET(http1.1)",
+    "http_status": 200,
+    "utc": "2026-10-09T17:32:20Z"
+   }
+  ],
+  "jurisdiction": "AU-NSW"
+ },
+ {
+  "title": "Beijing Consensus on Artificial Intelligence and Education",
+  "official_url": "https://unesdoc.unesco.org/ark:/48223/pf0000368303",
+  "doi": null,
+  "issued_by": "O-UNESCO",
+  "proposed_new_code": null,
+  "applies_to_country": null,
+  "applies_scope": "international",
+  "doc_force": "建議（國際會議成果文件／共識；非拘束性）——依據僅來自 WebSearch 線索，原頁未讀",
+  "record_type_suggestion": "framework",
+  "k12_scope_evidence": "原頁不可讀，無法以原文確認學段；線索稱涵蓋教育政策規劃、教師與終身學習，未見 K–12 明寫。",
+  "category_suggestion": [
+   "K1"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": "UNESDOC 為 Cloudflare 驗證頁（HTTP 403，「Just a moment...」）不得繞過；unesco.org 文章頁空回應（curl 52）；en.unesco.org 舊新聞網址轉址至首頁；Crossref 10.54675 前綴查無此件。線索（WebSearch）稱 2019 年 5 月北京會議通過，未核。",
+  "effective_on": null,
+  "legal_dates": null,
+  "version_relation": null,
+  "known_duplicate": false,
+  "decision": "pending",
+  "reason": "原頁不可讀（UNESDOC captcha；unesco.org 空回應）；首發日與學段均無官方可讀證據。",
+  "access_log": [
+   {
+    "url": "https://unesdoc.unesco.org/ark:/48223/pf0000368303",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "403",
+    "utc": "2026-10-09T17:28:32Z",
+    "note": ""
+   },
+   {
+    "url": "https://www.unesco.org/en/articles/beijing-consensus-artificial-intelligence-and-education",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "000",
+    "utc": "2026-10-09T17:29:08Z",
+    "note": "curl: (52) Empty reply from server"
+   },
+   {
+    "url": "https://www.unesco.org/en/articles/beijing-consensus-artificial-intelligence-and-education",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "000",
+    "utc": "2026-10-09T17:33:18Z",
+    "note": "curl: (52) Empty reply from server"
+   },
+   {
+    "url": "https://en.unesco.org/news/first-ever-consensus-artificial-intelligence-and-education-published-unesco",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "200",
+    "utc": "2026-10-09T17:33:29Z",
+    "note": ""
+   },
+   {
+    "url": "https://api.crossref.org/prefixes/10.54675/works?query.bibliographic=Beijing+Consensus+artificial+intelligence+education&rows=5&select=DOI,title,published,created",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "200",
+    "utc": "2026-10-09T17:29:29Z",
+    "note": ""
+   }
+  ],
+  "id": "C-01"
+ },
+ {
+  "title": "AI and education: guidance for policy-makers",
+  "official_url": "https://unesdoc.unesco.org/ark:/48223/pf0000376709",
+  "doi": "10.54675/pcsp7350",
+  "issued_by": "O-UNESCO",
+  "proposed_new_code": null,
+  "applies_to_country": null,
+  "applies_scope": "international",
+  "doc_force": "正式指引（UNESCO 出版之政策指引；非拘束性）",
+  "record_type_suggestion": "official_guidance",
+  "k12_scope_evidence": "原頁不可讀；Crossref 無摘要。學段僅能由線索推知為跨學段教育政策，未見原文明寫 K–12。",
+  "category_suggestion": [
+   "K1",
+   "K5"
+  ],
+  "first_published_on": "2021",
+  "date_precision": "year",
+  "date_evidence": "Crossref works/10.54675/pcsp7350 欄位 published.date-parts=[[2021]]（出版社 manifestation 年；Crossref created 2023-04-26 為補登記日，不採）；ISBN 9789231004476；resource.primary.URL 指向 UNESDOC pf0000376709。",
+  "effective_on": null,
+  "legal_dates": null,
+  "version_relation": null,
+  "known_duplicate": false,
+  "decision": "pending",
+  "reason": "原頁不可讀（UNESDOC captcha；unesco.org 文章頁空回應）；僅有 Crossref 年份，K–12 範圍未經原文確認。",
+  "access_log": [
+   {
+    "url": "https://api.crossref.org/works/10.54675/pcsp7350",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "200",
+    "utc": "2026-10-09T17:33:34Z",
+    "note": ""
+   },
+   {
+    "url": "https://www.unesco.org/en/articles/ai-and-education-guidance-policy-makers",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "000",
+    "utc": "2026-10-09T17:33:31Z",
+    "note": "curl: (52) Empty reply from server"
+   },
+   {
+    "url": "https://www.unesco.org/en/articles/ai-and-education-guidance-policy-makers-0",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "000",
+    "utc": "2026-10-09T17:33:32Z",
+    "note": "curl: (52) Empty reply from server"
+   }
+  ],
+  "id": "C-02"
+ },
+ {
+  "title": "AI and education: protecting the rights of learners",
+  "official_url": "https://www.unesco.org/en/articles/ai-and-education-protecting-rights-learners",
+  "doi": "10.54675/roqh4287",
+  "issued_by": "O-UNESCO",
+  "proposed_new_code": null,
+  "applies_to_country": null,
+  "applies_scope": "international",
+  "doc_force": "報告（權利取向政策報告；非拘束性）",
+  "record_type_suggestion": "policy_review",
+  "k12_scope_evidence": "原頁摘要只寫「all learners」、受教權，未明寫中小學或兒童學段。",
+  "category_suggestion": [
+   "K1",
+   "K5"
+  ],
+  "first_published_on": "2025-09-04",
+  "date_precision": "day",
+  "date_evidence": "unesco.org 原頁「4 September 2025 / Last update: 25 September 2025」，JSON-LD datePublished 2025-09-04T10:35:24+0200（讀取 2026-10-09T17:33:32Z）；Crossref published=[[2025]]、ISBN 9789231007859。",
+  "effective_on": null,
+  "legal_dates": null,
+  "version_relation": null,
+  "known_duplicate": false,
+  "decision": "pending",
+  "reason": "日期證據完整，但原頁未明寫 K–12／兒童學段，學段待判。",
+  "access_log": [
+   {
+    "url": "https://www.unesco.org/en/articles/ai-and-education-protecting-rights-learners",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "200",
+    "utc": "2026-10-09T17:33:32Z",
+    "note": ""
+   },
+   {
+    "url": "https://api.crossref.org/works/10.54675/roqh4287",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "200",
+    "utc": "2026-10-09T17:33:35Z",
+    "note": ""
+   }
+  ],
+  "id": "C-05"
+ },
+ {
+  "title": "PISA 2029 Media & Artificial Intelligence Literacy (MAIL) assessment framework (draft)",
+  "official_url": "https://www.oecd.org/en/about/projects/pisa-2029-media-and-artificial-intelligence-literacy.html",
+  "doi": null,
+  "issued_by": "O-OECD",
+  "proposed_new_code": null,
+  "applies_to_country": null,
+  "applies_scope": "international",
+  "doc_force": "草案（評量框架草案）——依線索，原頁未讀",
+  "record_type_suggestion": "framework",
+  "k12_scope_evidence": "PISA 對象為 15 歲學生（一般知識，原頁未讀未核）。",
+  "category_suggestion": [
+   "K3"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": "oecd.org 與 pisa-framework.oecd.org 皆 HTTP 403；Crossref 10.1787 前綴查無 PISA 2029 MAIL 條目。WebSearch 線索稱已發布第一版草案（標題 Navigating an Evolving Digital World），日期未核。",
+  "effective_on": null,
+  "legal_dates": null,
+  "version_relation": null,
+  "known_duplicate": false,
+  "decision": "pending",
+  "reason": "原頁不可讀（OECD 403），無官方元資料；首發日與版本未知。",
+  "access_log": [
+   {
+    "url": "https://www.oecd.org/en/about/projects/pisa-2029-media-and-artificial-intelligence-literacy.html",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "403",
+    "utc": "2026-10-09T17:31:13Z",
+    "note": ""
+   },
+   {
+    "url": "https://pisa-framework.oecd.org/",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "403",
+    "utc": "2026-10-09T17:31:13Z",
+    "note": ""
+   },
+   {
+    "url": "https://api.crossref.org/prefixes/10.1787/works?query.bibliographic=PISA+2029+media+artificial+intelligence+literacy&rows=6&select=DOI,title,published,created,type",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "200",
+    "utc": "2026-10-09T17:30:50Z",
+    "note": ""
+   }
+  ],
+  "id": "C-09"
+ },
+ {
+  "title": "OECD Digital Education Outlook 2021: Pushing the Frontiers with Artificial Intelligence, Blockchain and Robots",
+  "official_url": "https://www.oecd.org/en/publications/oecd-digital-education-outlook-2021_589b283f-en.html",
+  "doi": "10.1787/589b283f-en",
+  "issued_by": "O-OECD",
+  "proposed_new_code": null,
+  "applies_to_country": null,
+  "applies_scope": "international",
+  "doc_force": "報告",
+  "record_type_suggestion": "policy_review",
+  "k12_scope_evidence": "原頁 403、Crossref 無摘要，未能確認含 K–12 章節。",
+  "category_suggestion": [
+   "K1",
+   "K5"
+  ],
+  "first_published_on": "2021-06-08",
+  "date_precision": "day",
+  "date_evidence": "Crossref works/10.1787/589b283f-en published-online date-parts [2021,6,8]（OECD Publishing manifestation 日）。",
+  "effective_on": null,
+  "legal_dates": null,
+  "version_relation": null,
+  "known_duplicate": false,
+  "decision": "pending",
+  "reason": "原頁不可讀（OECD 403）；K–12 章節範圍未經原文確認。",
+  "access_log": [
+   {
+    "url": "https://api.crossref.org/works/10.1787/589b283f-en",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "200",
+    "utc": "2026-10-09T17:31:03Z",
+    "note": ""
+   }
+  ],
+  "id": "C-10"
+ },
+ {
+  "title": "OECD Digital Education Outlook 2026: Exploring Effective Uses of Generative AI in Education",
+  "official_url": "https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html",
+  "doi": "10.1787/062a7394-en",
+  "issued_by": "O-OECD",
+  "proposed_new_code": null,
+  "applies_to_country": null,
+  "applies_scope": "international",
+  "doc_force": "報告",
+  "record_type_suggestion": "policy_review",
+  "k12_scope_evidence": "原頁 403、Crossref 無摘要，未能確認 K–12 章節。",
+  "category_suggestion": [
+   "K4",
+   "K5"
+  ],
+  "first_published_on": "2026-01-19",
+  "date_precision": "day",
+  "date_evidence": "Crossref works/10.1787/062a7394-en published-online [2026,1,19]（created 2026-01-15 為登記日，不採）。",
+  "effective_on": null,
+  "legal_dates": null,
+  "version_relation": "同系列前版：DEO 2023（10.1787/c74f03de-en，2023-12-13）、DEO 2021（10.1787/589b283f-en）；屬系列年刊，非同一文件之修訂。",
+  "known_duplicate": false,
+  "decision": "pending",
+  "reason": "原頁不可讀（OECD 403，oecd-ilibrary 亦 403）；K–12 範圍未經原文確認。",
+  "access_log": [
+   {
+    "url": "https://api.crossref.org/works/10.1787/062a7394-en",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "200",
+    "utc": "2026-10-09T17:31:03Z",
+    "note": ""
+   },
+   {
+    "url": "https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "403",
+    "utc": "2026-10-09T17:31:13Z",
+    "note": ""
+   },
+   {
+    "url": "https://www.oecd-ilibrary.org/education/oecd-digital-education-outlook-2026_062a7394-en",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "403",
+    "utc": "2026-10-09T17:31:13Z",
+    "note": ""
+   }
+  ],
+  "id": "C-11"
+ },
+ {
+  "title": "What should teachers teach and students learn in a future of powerful AI?",
+  "official_url": "https://www.oecd.org/en/publications/what-should-teachers-teach-and-students-learn-in-a-future-of-powerful-ai_ca56c7d6-en.html",
+  "doi": "10.1787/ca56c7d6-en",
+  "issued_by": "O-OECD",
+  "proposed_new_code": null,
+  "applies_to_country": null,
+  "applies_scope": "international",
+  "doc_force": "報告（政策短文；Crossref type=report）",
+  "record_type_suggestion": "policy_review",
+  "k12_scope_evidence": "僅題名涉教師與學生；原頁未讀，學段未確認。",
+  "category_suggestion": [
+   "K1",
+   "K4"
+  ],
+  "first_published_on": "2025-05-23",
+  "date_precision": "day",
+  "date_evidence": "Crossref works/10.1787/ca56c7d6-en published-online [2025,5,23]。",
+  "effective_on": null,
+  "legal_dates": null,
+  "version_relation": null,
+  "known_duplicate": false,
+  "decision": "pending",
+  "reason": "原頁不可讀（OECD 403）；學段未確認。",
+  "access_log": [
+   {
+    "url": "https://api.crossref.org/works/10.1787/ca56c7d6-en",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "200",
+    "utc": "2026-10-09T17:31:04Z",
+    "note": ""
+   }
+  ],
+  "id": "C-12"
+ },
+ {
+  "title": "Council conclusions on teachers in the era of artificial intelligence (AI)",
+  "official_url": "https://data.consilium.europa.eu/doc/document/ST-8262-2026-INIT/en/pdf",
+  "doi": null,
+  "issued_by": null,
+  "proposed_new_code": "O-EU-COUNCIL（歐盟理事會；現有 O-EU-EC 不涵蓋）",
+  "applies_to_country": "EU",
+  "applies_scope": "EU",
+  "doc_force": "建議性政策文件（理事會結論，非拘束性）；本組只讀到送核草案",
+  "record_type_suggestion": "official_guidance",
+  "k12_scope_evidence": "理事會文件 8262/26 附件：適用於「teaching learners at the pre-primary, primary, lower and upper secondary levels」及初始 VET 之教師與校長。",
+  "category_suggestion": [
+   "K4",
+   "K1"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": "可讀官方文件為 2026-04-24 秘書處說明「Draft Council conclusions ... - Approval」（8262/26），寫明擬於 2026-05-11 EYCS 會議核准並刊登公報。核准日（線索：2026-05-11）之理事會會議頁 HTTP 403；OJ C 刊登未查得（EUR-Lex 搜尋回 202 空內容）。",
+  "effective_on": null,
+  "legal_dates": null,
+  "version_relation": "8262/26 為送核草案；正式通過版與 OJ 版未讀。",
+  "known_duplicate": false,
+  "decision": "pending",
+  "reason": "只讀到草案（2026-04-24），通過日與公報刊登日之官方頁不可讀；且需新 O-代碼。",
+  "access_log": [
+   {
+    "url": "https://data.consilium.europa.eu/doc/document/ST-8262-2026-INIT/en/pdf",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "200",
+    "utc": "2026-10-09T17:32:18Z",
+    "note": ""
+   },
+   {
+    "url": "https://www.consilium.europa.eu/en/meetings/eycs/2026/05/11/",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "403",
+    "utc": "2026-10-09T17:32:18Z",
+    "note": ""
+   },
+   {
+    "url": "https://eur-lex.europa.eu/search.html?scope=EURLEX&text=%22teachers+in+the+era+of+artificial+intelligence%22&lang=en&type=quick&qid=1",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "202",
+    "utc": "2026-10-09T17:32:19Z",
+    "note": ""
+   }
+  ],
+  "id": "C-17"
+ },
+ {
+  "title": "Committee of Ministers Recommendation on Artificial Intelligence Literacy (2026)",
+  "official_url": "https://www.coe.int/en/web/portal/-/new-council-of-europe-recommendation-places-education-at-the-heart-of-response-to-ai",
+  "doi": null,
+  "issued_by": "O-COE",
+  "proposed_new_code": null,
+  "applies_to_country": null,
+  "applies_scope": "international",
+  "doc_force": "建議（部長委員會建議；非拘束性）——依線索",
+  "record_type_suggestion": "official_guidance",
+  "k12_scope_evidence": "原頁不可讀；線索（Eunews 轉述）稱對象含 students、teachers、parents，並有課程與教學評量建議。",
+  "category_suggestion": [
+   "K1",
+   "K4"
+  ],
+  "first_published_on": null,
+  "date_precision": "unknown",
+  "date_evidence": "coe.int 新聞頁、教育部門頁及 rm.coe.int 均 Cloudflare 403（不得繞過）；WebFetch 亦 403。線索：Eunews 稱 2026-09-04 通過；CDEDU 2026-03 通過草案。皆未核。",
+  "effective_on": null,
+  "legal_dates": null,
+  "version_relation": null,
+  "known_duplicate": false,
+  "decision": "pending",
+  "reason": "原頁不可讀；正式編號、通過日均無官方可讀證據。",
+  "access_log": [
+   {
+    "url": "https://www.coe.int/en/web/portal/-/new-council-of-europe-recommendation-places-education-at-the-heart-of-response-to-ai",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "403",
+    "utc": "2026-10-09T17:32:43Z",
+    "note": ""
+   },
+   {
+    "url": "https://www.coe.int/en/web/education/-/the-steering-committee-for-education-cdedu-approves-a-landmark-framework-on-ai-literacy",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "403",
+    "utc": "2026-10-09T17:32:43Z",
+    "note": ""
+   },
+   {
+    "url": "https://www.coe.int/en/web/education/artificial-intelligence",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "403",
+    "utc": "2026-10-09T17:28:36Z",
+    "note": ""
+   },
+   {
+    "url": "https://rm.coe.int/dgii-edu-aied-2025-04-artificial-intelligence-and-education-3rd-workin/4880289ac5",
+    "method": "curl GET (-L, TLS 驗證開啟)",
+    "http_status": "403",
+    "utc": "2026-10-09T17:32:44Z",
+    "note": ""
+   }
+  ],
+  "id": "C-18"
+ }
+]
