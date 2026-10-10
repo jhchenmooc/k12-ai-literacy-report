@@ -48,6 +48,26 @@
 | B-AU-01 | 澳洲政府對國會《Study Buddy or Influencer》報告的回應 | https://www.education.gov.au/node/20276 |
 | B-AU-02 | 部長新聞稿〈Draft schools AI framework open for consultation〉 | https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation |
 
+### 補記：管理者另存的三份原文（2026-10-10 晚，由編輯 session 核對書目）
+
+- **核對方式：** 三份 PDF 由管理者用瀏覽器另存，放在編輯 session 的 scratchpad，不入 repo。文獻搜尋 session 讀不到這三份檔案，以下書目照抄編輯 session 從原件讀出的內容。
+- **C-18：** Recommendation CM/Rec(2026)12 of the Committee of Ministers to member States on artificial intelligence literacy。
+  - 通過：首頁寫「Adopted by the Committee of Ministers on 2 September 2026 at the 1567th meeting of the Ministers' Deputies」，首發日依此記 2026-09-02。
+  - 性質：歐洲理事會部長委員會的建議，不具拘束力，可歸 official_guidance。
+  - 引用：序言提到兒童權利公約，也引用 OECD／EC 的 K-12 AI Literacy Framework 草案（2025）。
+  - 未完成：編輯 session 只核了第 1～2 頁。學段與對象要讀正文才能判，文獻搜尋 session 讀不到原件，所以**還沒判，暫不入庫**。
+  - 月報：首發日早於 10 月月報觀察期，不進月報。
+- **C-12：** OECD Education Spotlights No. 20〈What should teachers teach and students learn in a future of powerful AI?〉。
+  - 版本：頁尾「© OECD 2025」，共 14 頁。內容來自 2024 年 9 月與美國科學教育學者的專家工作坊，談的是課程。
+  - 首發日：Crossref published-online 是 2025-05-23。依「只有 Crossref 不採」的規則，首發日記 unknown。
+  - 學段：還沒依正文判斷。
+- **C-09：** 〈Navigating an Evolving Digital World: First draft of the PISA 2029 Media and Artificial Intelligence Literacy (MAIL) Assessment Framework〉。
+  - 版本：© OECD 2026，63 頁，文件寫明「preliminary draft… subject to revisions before the final version is released」，屬草案。
+  - 作者：OECD 秘書處與 MAIL 專家組。
+  - 首發日：文件沒有到日的發布日，記 unknown。
+  - 入庫：以 draft 入庫與否，待管理者決定。
+- **其餘：** B-US-04 與澳洲 2 件，管理者還沒提供原文，維持待判。
+
 ## 三、B1 待判 41 件
 
 - **Scopus 補摘要：** 編輯 session 核對後，只有 3 件 AI & Society 需要（10.1007/s00146-025-02609-y、10.1007/s00146-025-02606-1、10.1007/s00146-025-02458-9），清單已由編輯 session 直接交給管理者。文獻搜尋 session 沒有另外列。
