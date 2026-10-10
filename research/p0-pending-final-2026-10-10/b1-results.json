@@ -1551,7 +1551,7 @@
      "kind": "publisher_fulltext"
     }
    ],
-   "abstract_source": "openalex",
+   "abstract_source": "openalex；全文：管理者 2026-10-10 以學校權限另存（不入 repo）",
    "population": "unclear",
    "population_evidence": "\"the differing needs of students from K-12 to higher and professional education\"",
    "ai_lit_class": "A",
@@ -1563,7 +1563,7 @@
    "audience": "unknown",
    "countries": [],
    "new_decision": "still_pending",
-   "reason": "跨學段、未陳述主要對象；Springer 頁回 Client Challenge，讀不到正文。",
+   "reason": "管理者 2026-10-10 提供出版者全文 PDF：narrative review，摘要寫「from K-12 to higher and professional education」；收錄研究表中高教 19 篇、K-12 12 篇，無主要對象。混合學段，維持待判。 先前紀錄：跨學段、未陳述主要對象；Springer 頁回 Client Challenge，讀不到正文。",
    "first_public_date": "2025-12-24",
    "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
    "category_suggestion": "K2",
@@ -1633,7 +1633,7 @@
      "kind": "publisher_fulltext"
     }
    ],
-   "abstract_source": "openalex",
+   "abstract_source": "openalex；全文：管理者 2026-10-10 以學校權限另存（不入 repo）",
    "population": "k12",
    "population_evidence": "\"high school information technology teaching in underdeveloped regions of China\"",
    "ai_lit_class": "unknown",
@@ -1641,8 +1641,8 @@
    "ai_lit_note": "高中資訊科技教學條件研究；「AI 時代」只是背景，摘要看不出師生 AI 素養或 AI 工具使用，無法對應內涵。",
    "audience": "k12",
    "countries": [],
-   "new_decision": "still_pending",
-   "reason": "學段明確，但 AI 素養歸類仍不明；Springer 頁回 Client Challenge，讀不到正文。缺：A／B／C 判定所需內容。",
+   "new_decision": "import",
+   "reason": "管理者 2026-10-10 提供出版者全文 PDF（CC BY-NC-ND）：題名與摘要寫明 high school information technology teaching；資料為 189 則網路公開留言（作者自述為代理指標）加 13 名教師訪談。管理者 2026-10-10 決定入庫 KB-2026-0266，k12，A（T-BAS、T-TEA）；探索性、高風險，不得寫成因果。 先前紀錄：學段明確，但 AI 素養歸類仍不明；Springer 頁回 Client Challenge，讀不到正文。缺：A／B／C 判定所需內容。",
    "first_public_date": "2026-05-30",
    "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
    "category_suggestion": null,
@@ -1876,7 +1876,7 @@
      "kind": "osf"
     }
    ],
-   "abstract_source": "openalex／S2",
+   "abstract_source": "openalex／S2；全文：管理者 2026-10-10 以學校權限另存（不入 repo）",
    "population": "unclear",
    "population_evidence": "\"a five-day AI literacy camp with teens (N = 16)\"",
    "ai_lit_class": "A",
@@ -1887,8 +1887,8 @@
    "ai_lit_note": "青少年系統性評估生成式 AI，對應 S-ETH「具備對AI的批判思考」。",
    "audience": "unknown",
    "countries": [],
-   "new_decision": "still_pending",
-   "reason": "只寫 teens，無年齡年級；ACM DL 403；未見 arXiv 版本。 缺：年齡或年級。",
+   "new_decision": "import",
+   "reason": "管理者 2026-10-10 提供 ACM 全文 PDF：§3.1「young learners (N = 16; ages 13–18, avg = 15 years old)」，五天 GenAI 夏令營（§3.2.1），學習情境明確。比照 IDC 3806107 入庫 KB-2026-0263，k12，A（S-ETH、S-BAS）。 先前紀錄：只寫 teens，無年齡年級；ACM DL 403；未見 arXiv 版本。 缺：年齡或年級。",
    "first_public_date": "2026-06-21",
    "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
    "category_suggestion": "K6",
@@ -2419,7 +2419,7 @@
      "kind": "osf"
     }
    ],
-   "abstract_source": "openalex／S2",
+   "abstract_source": "openalex／S2；全文：管理者 2026-10-10 以學校權限另存（不入 repo）",
    "population": "unclear",
    "population_evidence": "\"we document how youth develop anti-AI solutionist perspectives\"",
    "ai_lit_class": "A",
@@ -2430,8 +2430,8 @@
    "ai_lit_note": "青少年反 AI 解決主義，對應 S-ETH「思辨AI中的應用與取捨」。",
    "audience": "unknown",
    "countries": [],
-   "new_decision": "still_pending",
-   "reason": "只寫 youth；ACM DL 403；未見 arXiv 版本。 缺：年齡或年級。",
+   "new_decision": "import",
+   "reason": "管理者 2026-10-10 提供 ACM 全文 PDF：§3.1「34 high school and college students (ages 14–20)」，其中高中 24 人（現場 18、線上 6）、大學 10 人；critical AI fluency 夏季課程。依多數（約 71% 高中生）判 k12，比照 CEDTECH 多數原則，管理者 2026-10-10 決定入庫 KB-2026-0264，A（S-ETH、S-BAS）；含 10 名大學生。 先前紀錄：只寫 youth；ACM DL 403；未見 arXiv 版本。 缺：年齡或年級。",
    "first_public_date": "2026-06-21",
    "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
    "category_suggestion": "K6",
@@ -2570,7 +2570,7 @@
      "kind": "osf"
     }
    ],
-   "abstract_source": "openalex／S2",
+   "abstract_source": "openalex／S2；全文：管理者 2026-10-10 以學校權限另存（不入 repo）",
    "population": "unclear",
    "population_evidence": "\"workshops with 16 teens and 11 parents\"",
    "ai_lit_class": "A",
@@ -2580,8 +2580,8 @@
    "ai_lit_note": "青年參與負責任 AI，對應 S-ETH「構思AI設計倫理內涵」。",
    "audience": "unknown",
    "countries": [],
-   "new_decision": "still_pending",
-   "reason": "只寫 teens；主題為青年參與負責任 AI；ACM DL 403。 缺：年齡或年級。",
+   "new_decision": "import",
+   "reason": "管理者 2026-10-10 提供 ACM 全文 PDF：§3.2.1「16 teen participants, aged 13-17」，另有 11 名家長工作坊與 8 名 AI 業界人員訪談；工作坊含 AI 開發階段教學活動（§3.2.3）。管理者 2026-10-10 決定入庫 KB-2026-0265，k12，A（S-ETH、S-SYS）；主題為青少年參與負責任 AI。 先前紀錄：只寫 teens；主題為青年參與負責任 AI；ACM DL 403。 缺：年齡或年級。",
    "first_public_date": "2026-06-21",
    "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
    "category_suggestion": "K6",
