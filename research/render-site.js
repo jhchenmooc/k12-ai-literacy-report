@@ -222,7 +222,7 @@ function groupTable(g){
  const seen=new Set();
  return '<section class="group" id="'+groupId(g)+'"><div class="group-head"><h2>'+esc(g.name)+'</h2><a class="to-index" href="#index">回到索引 ↑</a></div>'+(g.sub?'<p class="sub">'+esc(g.sub)+"・"+g.rows.length+" 筆</p>":'<p class="sub">'+g.rows.length+" 筆</p>")+
   '<div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody>'+
-  g.rows.map(r=>{const first=!seen.has(r.year);seen.add(r.year);return "<tr"+(first?' id="'+yearId(g,r.year)+'"':"")+'><td class="year">'+esc(r.year)+'</td><td><a href="'+esc(r.url)+'">'+esc(r.title)+'</a><div class="type">'+esc(r.type)+(r.tags&&r.tags.length?'<span class="tags">'+r.tags.map(t=>"#"+esc(t)).join("　")+"</span>":"")+"</div>"+(r.tags2&&r.tags2.length?'<div class="tags2">'+r.tags2.map(t=>"#"+esc(t)).join("　")+"</div>":"")+(r.tags3&&r.tags3.length?'<div class="tags3">'+r.tags3.map(t=>"#"+esc(t)).join("　")+"</div>":"")+"</td><td>"+esc(r.date)+'</td><td><span class="badge '+r.status[0]+'">'+r.status[1]+"</span></td></tr>"}).join("")+
+  g.rows.map(r=>{const first=!seen.has(r.year);seen.add(r.year);return "<tr"+(first?' id="'+yearId(g,r.year)+'"':"")+'><td class="year">'+esc(r.year)+'</td><td><a href="'+esc(r.url)+'">'+esc(r.title)+'</a><div class="type">'+esc(r.type)+(r.tags&&r.tags.length?'<span class="tags">'+r.tags.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</span>":"")+"</div>"+(r.tags2&&r.tags2.length?'<div class="tags2">'+r.tags2.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"")+(r.tags3&&r.tags3.length?'<div class="tags3">'+r.tags3.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"")+"</td><td>"+esc(r.date)+'</td><td><span class="badge '+r.status[0]+'">'+r.status[1]+"</span></td></tr>"}).join("")+
   "</tbody></table></div></section>";
 }
 const LISTS={
@@ -232,9 +232,20 @@ const LISTS={
 function archiveTabs(active){
  return '<nav class="tabs" aria-label="清單類型">'+Object.entries(LISTS).map(([k,v])=>'<a href="../'+k+'/"'+(active===k?' aria-current="page"':"")+">"+v.short+"</a>").join("")+"</nav>";
 }
-const ARCHIVE_LEAD='<p class="lead">這是可追溯的<strong>書目索引</strong>，不是政策效力或研究結論的認證。每筆標示核對程度；首發日未核實時，以卷期年歸類並註明。週報審查中的候選不列入。「僅發現・未核」不代表書目有誤：Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，彼此一致也不升為「書目已核」；本刊不批次核對，只有論文或文件被週報、月報引用時，才逐篇讀出版者或官方原頁，並另做出版查核。</p>';
+const ARCHIVE_LEAD='<p class="lead">這是可追溯的<strong>書目索引</strong>，不是政策效力或研究結論的認證。每筆標示核對程度；首發日未核實時，以卷期年歸類並註明。週報審查中的候選不列入。</p><p class="lead-note">「僅發現・未核」不代表書目有誤：Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，彼此一致也不升為「書目已核」；本刊不批次核對，只有論文或文件被週報、月報引用時，才逐篇讀出版者或官方原頁，並另做出版查核。</p>';
 const SOURCE_NOTE='<div class="info"><p>資料來源：本刊知識庫（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/tree/main/research/knowledge-base">GitHub 公開</a>）。清單由程式自知識庫產生；發現錯誤請透過<a href="../../feedback/">讀者勘誤</a>回報。</p></div>';
-const TAG_NOTE='<div class="info"><p><strong>學段與身分標記</strong>：論文題名下的「#」標記（#學生、#在職教師、#職前師培、#家長行政；#幼兒、#國小、#國中、#高中職、#中學未分、#K12跨學段、#K12未細分）由 AI 依題名與摘要判讀，<strong>未經人工逐筆核對</strong>；摘要沒寫明者不標。第二行為<strong>主題</strong>（#生成式AI、#AI素養課程、#評量與量表、#教師專業發展、#倫理與安全、#教學介入、#運算思維與程式、#語言學習、#STEM、#特教與公平、#政策與治理）、<strong>研究方法</strong>（#文獻回顧、#實驗或準實驗、#混合方法、#設計本位、#質性個案、#問卷量表）與<strong>研究國別</strong>：主題與方法依題名和摘要的關鍵字規則判定，可能有誤標（例如 risk、writing、policy 等常見字會讓倫理、語言、政策主題偏多），方法判不出者不標；國別只有部分論文有標，不能用來比較各國研究多寡。第三行為 <strong>AI 素養範圍</strong>（#AI素養核心：研究師生的 AI 素養本身；#AI工具應用：用 AI 工具教或學其他科目）與<strong>教育部《臺灣中小學教師與學生AI素養框架》面向</strong>（例如 #學生AI倫理、#教師AI賦能教學）：這是 AI 依本刊共用準則，把國際論文對照臺灣框架的判讀，屬本刊分析選擇，未經人工逐筆核對，<strong>不代表論文作者採用此框架</strong>；各輪判讀不一致者不標。本刊年度趨勢分析另有操作細則，結果可能不同。可用瀏覽器的頁內搜尋（Ctrl＋F 或 ⌘＋F）輸入例如「#國中」「#實驗或準實驗」「#學生AI倫理」逐筆查找。</p></div>';
+/* Reader guide for the three tag lines: one row per line, colour-matched to the tags; caveats folded into a <details>. */
+const TAG_NOTE='<div class="info tag-guide"><p class="tg-lead"><strong>題名下的「#」標記</strong>由 AI 依題名與摘要判讀，<strong>未經人工逐筆核對</strong>；判不出來的不標。可用瀏覽器頁內搜尋（Ctrl＋F，Mac 用 ⌘＋F）輸入例如「#國中」逐筆查找。</p>'+
+ '<dl class="tg-rows">'+
+ '<div class="tg-row tg1"><dt>第一行｜學段與身分</dt><dd><span>身分：<span class="t">#學生</span>　<span class="t">#在職教師</span>　<span class="t">#職前師培</span>　<span class="t">#家長行政</span></span><span>學段：<span class="t">#幼兒</span>　<span class="t">#國小</span>　<span class="t">#國中</span>　<span class="t">#高中職</span>　<span class="t">#中學未分</span>　<span class="t">#K12跨學段</span>　<span class="t">#K12未細分</span></span></dd></div>'+
+ '<div class="tg-row tg2"><dt>第二行｜主題、方法、國別</dt><dd><span>主題：<span class="t">#生成式AI</span>　<span class="t">#AI素養課程</span>　<span class="t">#評量與量表</span>　<span class="t">#教師專業發展</span>　<span class="t">#倫理與安全</span>　<span class="t">#教學介入</span>　<span class="t">#運算思維與程式</span>　<span class="t">#語言學習</span>　<span class="t">#STEM</span>　<span class="t">#特教與公平</span>　<span class="t">#政策與治理</span></span><span>方法：<span class="t">#文獻回顧</span>　<span class="t">#實驗或準實驗</span>　<span class="t">#混合方法</span>　<span class="t">#設計本位</span>　<span class="t">#質性個案</span>　<span class="t">#問卷量表</span></span><span>國別：例如 <span class="t">#美國</span>　<span class="t">#香港</span></span></dd></div>'+
+ '<div class="tg-row tg3"><dt>第三行｜AI 素養範圍與框架面向</dt><dd><span>範圍：<span class="t">#AI素養核心</span>（研究師生的 AI 素養本身）　<span class="t">#AI工具應用</span>（用 AI 工具教或學其他科目）</span><span>面向：教育部《臺灣中小學教師與學生AI素養框架》8 個面向，例如 <span class="t">#學生AI倫理</span>　<span class="t">#教師AI賦能教學</span></span></dd></div>'+
+ '</dl><details class="tg-limits"><summary>判讀限制（請先讀）</summary><ul>'+
+ '<li>主題與方法用關鍵字規則判定，可能誤標：risk、writing、policy 等常見字，會讓倫理、語言、政策主題偏多。</li>'+
+ '<li><span class="t">#教學介入</span> 只表示研究做了教學介入，不表示有成效。</li>'+
+ '<li>國別只有部分論文有標，不能用來比較各國研究多寡。</li>'+
+ '<li>框架面向是本刊依共用準則，把國際論文對照臺灣框架的判讀，<strong>不代表論文作者採用此框架</strong>；各輪判讀不一致者不標。</li>'+
+ '<li>本刊年度趨勢分析另有操作細則，結果可能不同。</li></ul></details></div>';
 function renderArchiveList(kind,groups){
  const L=LISTS[kind],n=groups.reduce((s,g)=>s+g.rows.length,0);
  const head='<div class="kicker">歷年資料庫</div><h1>'+L.title+"</h1>"+ARCHIVE_LEAD+LEGEND+archiveTabs(kind);
