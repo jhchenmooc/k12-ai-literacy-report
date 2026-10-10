@@ -66,7 +66,7 @@
   - 作者：OECD 秘書處與 MAIL 專家組。
   - 首發日：文件沒有到日的發布日，記 unknown。
   - 入庫：以 draft 入庫與否，待管理者決定。
-- **其餘：** B-US-04 與澳洲 2 件，管理者還沒提供原文，維持待判。
+- **其餘：** B-US-04 與澳洲 2 件，當時管理者還沒提供原文；之後已提供，見補記二。
 
 ### 管理者決定與入庫（2026-10-10 晚）
 
@@ -90,11 +90,11 @@
 |---|---|---|---|---|---|
 | KB-2026-0262 | B-AU-01 | policy_review | 2026-04（月精度，封面「TABLING APRIL 2026」） | K1，O-AU-EDU，AU | **A**，對應 S-BAS、T-PD、S-ETH。這是澳洲政府對國會《Study Buddy or Influencer》生成式 AI 調查報告的回應，對各項建議多寫「notes」。內容以學校為主（ACARA、AITSL、ESA），也涉及高教（TEQSA），並提到 Digital Literacy 通用能力與 AI 素養。屬混合學段，但明寫包含中小學。 |
 | KB-2023-0012 | B-AU-02 | government_announcement | 2023-07-28（日精度，部長新聞稿所載日期） | K1，O-AU-EDU，AU | **A**，對應 S-ETH、T-ETH，對象 k12。教育部長新聞稿，宣布學校 AI 框架草案公開徵詢，由 NSW 教育部擔任秘書處。徵詢結果用於 KB-2023-0001《Australian Framework for Generative AI in Schools》定稿（2023-12-01）。這是新聞稿，不是草案本身，所以**不建** `revises` 關係，只在這裡註明兩者的前後關係。 |
-| （暫不入庫） | B-US-04 | official_guidance（預定） | 2025-07-22（原件所印「Date: July 22, 2025」） | K1，O-US-ED，US（預定） | **B**，對應 T-TEA、S-LRN。美國教育部長 Dear Colleague letter，說明聯邦補助款可用於 AI 教材、AI 家教、升學與職涯輔導。學段寫「all subjects, grade levels」，含升學銜接；直接提到 K-12 的只有倫理原則一句（「Within the K-12 realm in particular, educators should help students … learn with – rather than exclusively from – AI」）。主體是 AI 工具的使用，AI 素養只占一句，所以判 B。**暫不入庫**，等管理者確認官方網址：管理者另存的原件檔名是 opepd-ai-dear-colleague-letter-7222025-110427.pdf，與原本清單上的網址不同，而 ed.gov 兩邊都回 403、無法核對。 |
+| KB-2025-0135 | B-US-04 | official_guidance | 2025-07-22（原件所印「Date: July 22, 2025」） | K1，O-US-ED，US | **B**，對應 T-TEA、S-LRN。美國教育部長 Dear Colleague letter，說明聯邦補助款可用於 AI 教材、AI 家教、升學與職涯輔導。學段寫「all subjects, grade levels」，含升學銜接；直接提到 K-12 的只有倫理原則一句（「Within the K-12 realm in particular, educators should help students … learn with – rather than exclusively from – AI」）。主體是 AI 工具的使用，AI 素養只占一句，所以判 B。`primary_url` 是 https://www.ed.gov/media/document/opepd-ai-dear-colleague-letter-7222025-110427.pdf ，依據是管理者以瀏覽器開啟並另存（2026-10-10 確認），文獻搜尋 session 讀取仍回 403。先前清單上的 guidance-artificial-intelligence-use-schools-112052.pdf 是先前的線索網址，未核。 |
 
-- **共同欄位：** 已入庫的兩筆都記 `discovered_unverified`。
+- **共同欄位：** 三筆都記 `discovered_unverified`。
 - **月報與週報：** 三件的首發日都早於 10 月月報觀察期，不進月報，也不進首期週報。
-- **政策待判：** 原 12 件中，入庫 5 件（C-18、C-12、C-09、B-AU-01、B-AU-02）；B-US-04 等網址確認。其餘 6 件不變：中國 2 件、臺灣評量注意事項 1 件、UNESCO 3 件。
+- **政策待判：** 原 12 件中，入庫 6 件（C-18、C-12、C-09、B-US-04、B-AU-01、B-AU-02），其餘 6 件不變：中國 2 件、臺灣評量注意事項 1 件、UNESCO 3 件。
 
 ## 三、B1 待判 41 件
 

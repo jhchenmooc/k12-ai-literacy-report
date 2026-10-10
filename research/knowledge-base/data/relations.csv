@@ -1083,3 +1083,6 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-1082","KB-2023-0012","has_category","vocabulary","K1","https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation","discovered_unverified"
 "KR-1083","KB-2023-0012","issued_by","source","O-AU-EDU","https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation","discovered_unverified"
 "KR-1084","KB-2023-0012","applies_to_country","vocabulary","AU","https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation","discovered_unverified"
+"KR-1085","KB-2025-0135","has_category","vocabulary","K1","https://www.ed.gov/media/document/opepd-ai-dear-colleague-letter-7222025-110427.pdf","discovered_unverified"
+"KR-1086","KB-2025-0135","issued_by","source","O-US-ED","https://www.ed.gov/media/document/opepd-ai-dear-colleague-letter-7222025-110427.pdf","discovered_unverified"
+"KR-1087","KB-2025-0135","applies_to_country","vocabulary","US","https://www.ed.gov/media/document/opepd-ai-dear-colleague-letter-7222025-110427.pdf","discovered_unverified"

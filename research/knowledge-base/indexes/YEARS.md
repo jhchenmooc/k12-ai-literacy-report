@@ -85,6 +85,7 @@
 | KB-2025-0050 — [Guidance on AI and children (Version 3.0): Recommendations for AI policies and systems that uphold child rights](https://www.unicef.org/innocenti/reports/policy-guidance-ai-children) | official_guidance | 2025-12 | bibliographic_checked |
 | KB-2025-0121 — [我和AI一起學！國小生生成式AI學習應用手冊](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3) | official_guidance | 2025-12 | bibliographic_checked |
 | KB-2025-0122 — [駕馭AI，洞察未來：數位公民的必修課——中學生生成式AI素養手冊](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3) | official_guidance | 2025-12 | bibliographic_checked |
+| KB-2025-0135 — [Guidance on the Use of Federal Grant Funds to Improve Education Outcomes Using Artificial Intelligence (AI)](https://www.ed.gov/media/document/opepd-ai-dear-colleague-letter-7222025-110427.pdf) | official_guidance | 2025-07-22 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 
 ## 2025｜issue_year
