@@ -258,10 +258,10 @@
       "source_title": "Measuring Acceptance of Age-Tiered AI Literacy Guidebooks: A Developmentally Informed Study of K-12 Students and Teachers",
       "source_organization": "Computers and Education: Artificial Intelligence / Elsevier",
       "source_publication_date": "2026-08-24",
-      "source_locator": "Article header / Available online",
-      "original_excerpt": "",
+      "source_locator": "Abstract（管理者 2026-10-10 自出版者頁瀏覽器提供）；Article header / Available online",
+      "original_excerpt": "The guidebooks were evaluated in Taiwanese classrooms by 831 participants (794 students and 37 teachers). ... The study did not measure AI literacy achievement, learning gains, actual adoption, or sustained use",
       "source_checked": false,
-      "claim_text": "",
+      "claim_text": "臺灣831名師生（學生794人、教師37人）在課堂試用分齡的AI學習應用指引手冊（9至12歲初階版、13至18歲進階版）後，研究以問卷與因素分析檢驗接受度，學生資料支持績效期望、努力期望、知覺趣味與行為意圖四個因素；作者明言未測量AI素養成就或學習成效，結果只代表初次引導試用後的短期接受度。",
       "claim_class": "descriptive",
       "risk_tier": "medium",
       "scope_limitation": "August publication; background only, not a new October result.",
@@ -276,13 +276,13 @@
       "discovery_batch_id": "2026-10-09-research-rehearsal-1",
       "first_disclosed_on": null,
       "source_updates": [],
-      "screening_note": "30-day backfill/background: earlier than issue period; publication history confirmed on publisher page, not full original-text verification. Hold.",
+      "screening_note": "30-day backfill/background: earlier than issue period; publication history confirmed on publisher page, not full original-text verification. Hold. 2026-10-10: abstract supplied by manager from the publisher page (ScienceDirect blocked automated access with 403); sample is Taiwanese classrooms. Whether this guidebook is related to the MOE 《中小學AI之學習應用手冊》 (KB-2026-0242–0244) is not established.",
       "ai_lit_class": "A",
       "ai_lit_dims": [
         "S-BAS",
         "S-ETH"
       ],
-      "ai_lit_note": "K-12師生對分齡AI素養指引手冊的接受度，對應S-BAS「理解AI運作原理與限制」等學生AI素養內涵（僅依題名，摘要未讀）。",
+      "ai_lit_note": "K-12師生對分齡AI素養學習手冊的接受度；進階版含倫理推理練習與在督導下使用生成式AI，對應S-BAS「理解AI運作原理與限制」與S-ETH（依摘要）。",
       "audience": "k12"
     },
     {
