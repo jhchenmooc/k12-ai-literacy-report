@@ -26,8 +26,10 @@
 | alphaXiv（Claude MCP） | 可用 | 預印本**發現** | 內容工具是 AI 摘要，不能當證據 |
 | paper-search 外掛（Claude） | 可用但功能少 | 一般關鍵詞查詢 | 腳本不能加來源／日期 filter，直接呼叫 OpenAlex API 較好 |
 | Exa、Liner、Wiley Scholar Gateway（Claude 連接器） | **不可用** | — | 需在 claude.ai connector 設定做 OAuth 授權；非互動 session 無法授權 |
-| Semantic Scholar | 常 429 | — | LR-AI 外掛依賴它，可能受影響 |
-| 出版社頁：ScienceDirect／Elsevier、Springer、Taylor & Francis | **AI 多半讀不到** | — | 403、303、JS challenge、只回轉址腳本；小型 OJS 出版社常可讀 |
+| Semantic Scholar | 常 429 | — | LR-AI 外掛依賴它，可能受影響；2026-10-10 學者月檢索實測：DOI 查詢多回 404，題名搜尋 5 次全部 429 |
+| 出版社頁：ScienceDirect／Elsevier、Taylor & Francis、Wiley、SAGE、MDPI、Emerald、Routledge、ResearchGate | **AI 多半讀不到** | — | 403、只回轉址腳本（2026-10-10 學者月檢索實測） |
+| 出版社頁：Springer（含 BMC）、Frontiers、小型 OJS（如 RPTEL） | 2026-10-10 實測可讀 | G1 書目、首發日 | 讀頁面 `citation_online_date`、`citation_publication_date`、`citation_volume`；Springer 曾回 303／JS 驗證頁（PR #115），讀不到時照 3.6 處理 |
+| `research/scholar-watch-run.js` | 可用 | 學者追蹤依作者檢索 | 由學者清單產生查詢、去重、比對知識庫與候選池、產生 `search_runs.csv` 列；不判讀 |
 | SciSpace、LR-AI、Citation Needed | 未實測 | — | 使用前先小量試跑並記錄 |
 
 ## 3. 各工具的調用方式與踩過的坑
@@ -118,7 +120,9 @@ https://arxiv.org/abs/2503.00079                              → Submission his
 
 ### 3.6 出版社頁
 
-AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只回轉址腳本、Springer 303／JS challenge、T&F 403。**不要嘗試繞過驗證頁**（之前雲端瀏覽器代理曾自行點擊驗證頁，已列為禁止）。讀不到就把紀錄留在 `discovered_unverified`、日期 unknown，交給可讀的環境或真人。
+AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只回轉址腳本、T&F 403；Wiley、SAGE、MDPI、Emerald、Routledge、ResearchGate 也讀不到（2026-10-10）。Springer 曾回 303／JS challenge，但 2026-10-10 學者月檢索時 Springer、Frontiers 與 RPTEL（OJS）的文章頁都可讀，日期取自頁面 `citation_*` 標籤；可讀性會變，每次照實記錄。
+
+- **Frontiers 的 `citation_online_date` 等於接受日**（同頁「Accepted」日期）。Frontiers 在接受當天就公開文章頁，所以這個日期可作首次公開日；但要先查有沒有更早的預印本，有的話以預印本為準（管理者 2026-10-10 同意）。`citation_publication_date` 是之後的正式刊出日，另記。**不要嘗試繞過驗證頁**（之前雲端瀏覽器代理曾自行點擊驗證頁，已列為禁止）。讀不到就把紀錄留在 `discovered_unverified`、日期 unknown，交給可讀的環境或真人。
 
 ### 3.7 官方政策來源（週報；2026-10-09 實測，由編輯 session 維護）
 
