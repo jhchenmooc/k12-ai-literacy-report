@@ -1,0 +1,1418 @@
+{
+ "batch_id": "2026-10-10-scholar-M-2",
+ "searched_on": "2026-10-10",
+ "lookback_days": 42,
+ "note": "月報專用，不匯入候選池、不入庫（規格 v1.1 第 1 項）",
+ "sources": [
+  {
+   "group": "scholar-watch",
+   "query": "S18 author.orcid:0000-0001-5216-1576 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S20 author.orcid:0000-0002-0402-9199 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S23 author.orcid:0000-0002-1713-9653 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S24 author.orcid:0000-0001-9045-4070 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T10 author.orcid:0000-0001-9494-2848 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T12 author.orcid:0000-0002-7721-5902 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T14 author.orcid:0000-0001-7744-9971 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T15 author.orcid:0000-0002-8943-5689 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T19 author.orcid:0000-0003-2373-2004 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T21 author.orcid:0000-0003-1783-8830 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "T22 author.orcid:0000-0002-7088-5516 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S06 author.orcid:0000-0003-3818-045X from:2026-08-29 to:2026-10-10 (OpenAlex works) + search=education OR school OR students OR teacher OR learning; unfiltered check also run",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S07 author.orcid:0000-0003-2777-1705 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S08 author.orcid:0000-0003-2900-3734 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S09 author.orcid:0000-0001-6330-6160 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S10 author.orcid:0000-0003-1037-3313 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S11 author.orcid:0000-0002-9913-0627 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S13 author.orcid:0000-0002-5018-6232 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S14 author.orcid:0000-0001-7045-2764 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "S15 author.orcid:0000-0002-8793-4732 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H01 author.orcid:0000-0001-7613-0029 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H02 author.orcid:0000-0002-2380-7814 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H03 author.orcid:0000-0001-6490-7005 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H04 author.orcid:0000-0001-8268-4802 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H05 author.orcid:0000-0002-7134-130X from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H06 author.orcid:0000-0002-0906-4321 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H07 author.orcid:0000-0001-6035-540X from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H08 author.orcid:0000-0002-7246-7879 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H09 author.orcid:0000-0003-3104-1123 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H10 author.orcid:0000-0003-2555-8097 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H11 author.orcid:0000-0003-2887-5477 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H12 author.orcid:0000-0003-0664-3640 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H13 author.orcid:0000-0002-3115-9060 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H14 author.orcid:0000-0001-8495-6920 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H15 author.orcid:0000-0003-1543-6301 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H16 author.orcid:0000-0003-4762-2838 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H17 author.orcid:0000-0002-0587-2065 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H18 author.orcid:0000-0003-2206-2715 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H19 author.orcid:0000-0002-1990-2894 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H20 author.orcid:0000-0001-5198-7261 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H21 author.orcid:0000-0002-8691-3016 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H22 author.orcid:0000-0002-8576-6464 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H23 author.orcid:0000-0003-2370-381X from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H24 author.orcid:0000-0003-2105-2275 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H25 author.orcid:0000-0002-1448-4064 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H26 author.orcid:0000-0002-6859-1420 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H27 author.orcid:0000-0003-0829-3349 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H28 author.orcid:0009-0006-3682-2358 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H29 author.orcid:0000-0002-9725-268X from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H30 author.orcid:0000-0002-5027-8284 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H31 author.orcid:0000-0002-6551-8885 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H32 author.orcid:0000-0002-7294-3097 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "H33 author.orcid:0000-0003-2815-1137 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V01 author.orcid:0000-0001-9159-0664 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V02 author.orcid:0000-0002-5087-9637 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V03 author.orcid:0000-0002-8057-2863 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V04 author.orcid:0000-0001-7640-9898 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V05 author.orcid:0000-0001-9895-6796 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V06 author.orcid:0000-0002-6298-4813 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V07 author.orcid:0000-0002-3250-003X from:2026-08-29 to:2026-10-10 (OpenAlex works) + search=education OR school OR students OR teacher OR learning; unfiltered check also run",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V08 author.orcid:0000-0003-0506-9579 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V09 author.orcid:0000-0002-1803-9865 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V10 author.orcid:0000-0002-6937-345X from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V11 author.orcid:0000-0002-7740-5749 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V12 author.orcid:0000-0002-5554-0069 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V13 author.orcid:0000-0002-1775-8219 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V14 author.orcid:0000-0002-8214-0386 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V15 author.orcid:0000-0003-0538-7665 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V16 author.orcid:0000-0002-7173-4859 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V17 author.id:A5061103584 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V18 author.orcid:0000-0003-2079-2394 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V19 author.orcid:0000-0002-6817-4416 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V20 author.orcid:0000-0001-9942-0651 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V21 author.orcid:0000-0003-4519-1931 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V22 author.orcid:0000-0003-2441-1640 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V23 author.orcid:0000-0003-3804-0852 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V24 author.orcid:0000-0001-8565-123X from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V25 author.orcid:0000-0001-8681-0853 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  },
+  {
+   "group": "scholar-watch",
+   "query": "V26 author.orcid:0000-0003-1481-6601 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+   "status": "ok"
+  }
+ ],
+ "candidates": [
+  {
+   "source_url": "https://doi.org/10.1016/j.ijhcs.2026.103939",
+   "source_title": "XAI in the human-agent-environment loop: how do task, explanation strategy, and AI literacy shape user engagement?",
+   "source_organization": "International Journal of Human-Computer Studies",
+   "source_publication_date": "unknown",
+   "source_locator": "Elsevier 頁為 linkinghub 轉址，未繞過；Crossref 只有卷期 2027-02，無 published-online",
+   "doi": "10.1016/j.ijhcs.2026.103939",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（International Journal of Human-Computer Studies）；對象：不明，無摘要；人機互動研究，對象未知；首發依據：Elsevier 頁為 linkinghub 轉址，未繞過；Crossref 只有卷期 2027-02，無 published-online；首次公開日未核；本刊追蹤學者 H05 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "題名提及使用者 AI 素養與可解釋 AI 互動，但 OpenAlex、Semantic Scholar、Crossref 皆無摘要，無法對應框架內涵",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.3205/26gma225",
+   "source_title": "Einsatz von generativer künstlicher Intelligenz (KI) in der radioonkologischen Lehre: Erreichen KI-generierte Prüfungsfragen Expert*innenqualität?",
+   "source_organization": "German Medical Science (German Research Foundation)",
+   "source_publication_date": "2026-09-04",
+   "source_locator": "出版者頁（PUBLISSO GMS 研討會摘要）「Veröffentlicht: 2026-09-04」",
+   "doi": "10.3205/26gma225",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（German Medical Science (German Research Foundation)）；對象：大學，醫學生 82 名與醫師 46 名（研討會摘要）；首發依據：出版者頁（PUBLISSO GMS 研討會摘要）「Veröffentlicht: 2026-09-04」；首次公開日在本次查詢期間內；本刊追蹤學者 H09、H10 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核；高風險：含 LLM 與人工題目品質比較之統計結果，不得寫成成效",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "T-TEA"
+   ],
+   "ai_lit_note": "比較大型語言模型與專家編寫的醫學選擇題品質，屬教學者以AI工具編製評量，對應 T-TEA「評估AI工具輔助教學的適用性」",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.3205/26gma226",
+   "source_title": "Zeigen Medizinstudierende eine Algorithm Aversion gegenüber KI-generierten Multiple-Choice-Fragen? Eine psychometrische und wahrnehmungspsychologische Analyse",
+   "source_organization": "German Medical Science (German Research Foundation)",
+   "source_publication_date": "2026-09-04",
+   "source_locator": "出版者頁（PUBLISSO GMS 研討會摘要）「Veröffentlicht: 2026-09-04」",
+   "doi": "10.3205/26gma226",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（German Medical Science (German Research Foundation)）；對象：大學，波昂大學二年級醫學生（研討會摘要）；首發依據：出版者頁（PUBLISSO GMS 研討會摘要）「Veröffentlicht: 2026-09-04」；首次公開日在本次查詢期間內；本刊追蹤學者 H09、H10 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "T-TEA"
+   ],
+   "ai_lit_note": "研究醫學生對標示為AI產生之試題的演算法厭惡與信任，屬學生對AI的態度與批判判斷，對應 S-ETH「具備對AI的批判思考」",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.3205/26gma048",
+   "source_title": "Von der Pilotierung zur Anwendung – lernzielbasierte Evaluation klinischer und digitaler Lehrformate",
+   "source_organization": "German Medical Science (German Research Foundation)",
+   "source_publication_date": "2026-09-04",
+   "source_locator": "出版者頁（PUBLISSO GMS）「Veröffentlicht: 2026-09-04」",
+   "doi": "10.3205/26gma048",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（German Medical Science (German Research Foundation)）；對象：大學，醫學院課程（研討會摘要）；首發依據：出版者頁（PUBLISSO GMS）「Veröffentlicht: 2026-09-04」；首次公開日在本次查詢期間內；本刊追蹤學者 H10 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "醫學院臨床與數位教學形式之學習目標本位評鑑，摘要未提到AI，不對應任何內涵",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1080/1475939x.2026.2721466",
+   "source_title": "The moderating effects of gender and teacher support on student engagement in language learning with a generative artificial intelligence (GenAI) chatbot",
+   "source_organization": "Technology Pedagogy and Education",
+   "source_publication_date": "unknown",
+   "source_locator": "T&F 頁 403，未核；Crossref published-online 2026-09-02",
+   "doi": "10.1080/1475939x.2026.2721466",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Technology Pedagogy and Education）；對象：不明，無摘要；題名未寫學段；首發依據：T&F 頁 403，未核；Crossref published-online 2026-09-02；首次公開日未核；本刊追蹤學者 H11、V15 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核；高風險：題名含調節效果，屬成效或因果推論",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "題名為學生以生成式AI聊天機器人學語言時的投入及性別與教師支持的調節效果，屬工具使用研究，對應 S-LRN「應用AI工具強化領域學習」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1080/14790718.2026.2730662",
+   "source_title": "How performance expectancy and autonomy satisfaction influence translanguaging interactions with AI chatbots",
+   "source_organization": "International Journal of Multilingualism",
+   "source_publication_date": "unknown",
+   "source_locator": "T&F 頁 403，未核；Crossref published-online 2026-09-09",
+   "doi": "10.1080/14790718.2026.2730662",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（International Journal of Multilingualism）；對象：大學，第二語言選修課大學生 203 名；首發依據：T&F 頁 403，未核；Crossref published-online 2026-09-09；首次公開日未核；本刊追蹤學者 H11 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核；高風險：預測學習結果之迴歸結論，不得寫成成效",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "大學生在 AI 聊天機器人互動中進行跨語實踐，探討期望與自主滿足對學習結果的預測，對應 S-LRN「應用AI工具強化領域學習」",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.5281/zenodo.22806883",
+   "source_title": "A Systematic Review of Conceptualizations, Competences, and Developmental Factors for Teachers' AI-TPACK in Mathematics Education",
+   "source_organization": "Zenodo (CERN European Organization for Nuclear Research)",
+   "source_publication_date": "2026-09-17",
+   "source_locator": "Zenodo 紀錄頁「Published September 17, 2026」（資料集 v1）",
+   "doi": "10.5281/zenodo.22806883",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：預印本或非同儕審查版本，不能寫成研究結果（Zenodo (CERN European Organization for Nuclear Research)）；對象：不明，Zenodo 資料集，只有試算表，無摘要；首發依據：Zenodo 紀錄頁「Published September 17, 2026」（資料集 v1）；首次公開日在本次查詢期間內；本刊追蹤學者 H11 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA",
+    "T-PD"
+   ],
+   "ai_lit_note": "題名為數學教育中教師 AI-TPACK 的系統性回顧；依準則教師 AI-TPACK 判 A，對應 T-TEA「整合AI與教學法」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1186/s40594-026-00648-5",
+   "source_title": "The shifting landscape of assessment in STEM education in the age of generative AI",
+   "source_organization": "International Journal of STEM Education",
+   "source_publication_date": "2026-09-28",
+   "source_locator": "出版者頁（SpringerOpen）citation_online_date 2026/09/28",
+   "doi": "10.1186/s40594-026-00648-5",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（International Journal of STEM Education）；對象：不明，STEM 教育文獻回顧，未限定學段；首發依據：出版者頁（SpringerOpen）citation_online_date 2026/09/28；首次公開日在本次查詢期間內；本刊追蹤學者 H11、H27 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "T-TEA",
+    "S-ETH"
+   ],
+   "ai_lit_note": "回顧生成式AI如何影響STEM評量的內容、證據與詮釋，含師生對可接受AI使用的理解，對應 T-TEA「分析AI工具輔助教學的有效性」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1111/bjet.70091",
+   "source_title": "Connecting the dots to understand complex systems in education: A systematic review of psychological networks",
+   "source_organization": "British Journal of Educational Technology",
+   "source_publication_date": "unknown",
+   "source_locator": "Wiley 頁 403，未核；Crossref published-online 2026-09-30",
+   "doi": "10.1111/bjet.70091",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（British Journal of Educational Technology）；對象：不明，43 篇研究之回顧；首發依據：Wiley 頁 403，未核；Crossref published-online 2026-09-30；首次公開日未核；本刊追蹤學者 H11 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "教育研究中心理網絡方法的系統性回顧，摘要未提到AI，不對應任何內涵",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1080/10494820.2026.2744403",
+   "source_title": "Integrating artificial intelligence into K-12 school education through self-determination theory from a longitudinal study: opportunities, challenges, and future direction",
+   "source_organization": "Interactive Learning Environments",
+   "source_publication_date": "unknown",
+   "source_locator": "T&F 頁 403，未核；Crossref published-online 2026-10-08",
+   "doi": "10.1080/10494820.2026.2744403",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Interactive Learning Environments）；對象：K-12，題名寫 K-12 school education；無摘要；首發依據：T&F 頁 403，未核；Crossref published-online 2026-10-08；首次公開日未核；本刊追蹤學者 H11 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要；題名為以自我決定論將AI整合入K-12學校教育之縱貫研究，未能確認對應內涵",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.1186/s40536-026-00318-6",
+   "source_title": "Academic resilience in 75 education systems: how operationalization and threshold choices shape findings on protective factors",
+   "source_organization": "Large-scale Assessments in Education",
+   "source_publication_date": "2026-09-08",
+   "source_locator": "出版者頁（SpringerOpen）citation_online_date 2026/09/08",
+   "doi": "10.1186/s40536-026-00318-6",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Large-scale Assessments in Education）；對象：K-12，75 個教育系統的 PISA 2018 學生；首發依據：出版者頁（SpringerOpen）citation_online_date 2026/09/08；首次公開日在本次查詢期間內；本刊追蹤學者 H25 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "以 PISA 2018 比較學業韌性的操作定義，摘要未提到AI，不對應任何內涵",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.31234/osf.io/afuq2_v1",
+   "source_title": "TAIL: A Test of AI Literacy for Adolescents and Teachers",
+   "source_organization": "PsyArXiv",
+   "source_publication_date": "2026-09-29",
+   "source_locator": "OSF API（PsyArXiv）date_published 2026-09-29；Crossref posted 2026-09-29；OSF 頁需 JavaScript 未讀",
+   "doi": "10.31234/osf.io/afuq2_v1",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：預印本或非同儕審查版本，不能寫成研究結果（PsyArXiv）；對象：K-12，捷克中學生 2441 名與教師 564 名；首發依據：OSF API（PsyArXiv）date_published 2026-09-29；Crossref posted 2026-09-29；OSF 頁需 JavaScript 未讀；首次公開日在本次查詢期間內；本刊追蹤學者 H25 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "T-BAS"
+   ],
+   "ai_lit_note": "發展並驗證適用中學生與教師的AI素養測驗TAIL，對應 S-BAS「理解AI運作原理與限制」與 T-BAS「培養AI的基礎知識」",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.5617/nordina.12498",
+   "source_title": "Experience, Emotions and Educational content for all:",
+   "source_organization": "Nordic Studies in Science Education",
+   "source_publication_date": "2026-09-24",
+   "source_locator": "出版者頁（Nordina）citation_date 2026/09/24",
+   "doi": "10.5617/nordina.12498",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Nordic Studies in Science Education）；對象：不明，15 所科學中心的補助申請文件；首發依據：出版者頁（Nordina）citation_date 2026/09/24；首次公開日在本次查詢期間內；本刊追蹤學者 H26 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "瑞典科學中心如何框定STEM學習與興趣的質性分析，摘要未提到AI，不對應任何內涵",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.5617/nordina.11791",
+   "source_title": "Building research literacy for science teaching:",
+   "source_organization": "Nordic Studies in Science Education",
+   "source_publication_date": "2026-09-24",
+   "source_locator": "出版者頁（Nordina）citation_date 2026/09/24",
+   "doi": "10.5617/nordina.11791",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Nordic Studies in Science Education）；對象：師培，丹麥科學師資培育者；首發依據：出版者頁（Nordina）citation_date 2026/09/24；首次公開日在本次查詢期間內；本刊追蹤學者 H26 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "丹麥科學師資培育者的研究素養與專業學習社群，摘要未提到AI，不對應任何內涵",
+   "audience": "teacher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1080/09500693.2026.2727692",
+   "source_title": "Human-in-the-loop: leveraging generative artificial intelligence to transform disciplinary learning in science",
+   "source_organization": "International Journal of Science Education",
+   "source_publication_date": "unknown",
+   "source_locator": "T&F 頁 403，未核；Crossref published-online 2026-09-08，卷期紙本 2026-10-13",
+   "doi": "10.1080/09500693.2026.2727692",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（International Journal of Science Education）；對象：不明，九篇研究跨課堂與師培，未限定學段；首發依據：T&F 頁 403，未核；Crossref published-online 2026-09-08，卷期紙本 2026-10-13；首次公開日未核；本刊追蹤學者 H29、V21 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "T-TEA",
+    "S-LRN"
+   ],
+   "ai_lit_note": "科學教育生成式AI專刊導言，以人在迴路框架整理九篇研究，對應 T-TEA「分析AI工具輔助教學的有效性」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1111/bjet.70092",
+   "source_title": "Catching the spark: The role of electrodermal activity in understanding teacher enthusiasm and students' lesson enjoyment",
+   "source_organization": "British Journal of Educational Technology",
+   "source_publication_date": "unknown",
+   "source_locator": "Wiley 頁 403，未核；Crossref published-online 2026-10-03",
+   "doi": "10.1111/bjet.70092",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（British Journal of Educational Technology）；對象：大學，大學教師 10 名與學生 42 名；首發依據：Wiley 頁 403，未核；Crossref published-online 2026-10-03；首次公開日未核；本刊追蹤學者 H30 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "以皮膚電活動探討大學教師熱忱與學生上課樂趣，摘要未提到AI，不對應任何內涵",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/978-3-032-37979-5_9",
+   "source_title": "How Trust and Fear Mediate the Relationship between AI Literacy and Intelligent-TPACK: Evidence from Teacher Education",
+   "source_organization": "Lecture notes in computer science",
+   "source_publication_date": "2026-10-07",
+   "source_locator": "出版者頁（Springer LNCS）「First Online 07 October 2026」；citation_publication_date 2027",
+   "doi": "10.1007/978-3-032-37979-5_9",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Lecture notes in computer science）；對象：師培，127 名職前教師（一學期課程）；首發依據：出版者頁（Springer LNCS）「First Online 07 October 2026」；citation_publication_date 2027；首次公開日在本次查詢期間內；本刊追蹤學者 H30 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核；高風險：前後測增加與潛在變化模型，無對照組，不得寫成成效",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS",
+    "T-TEA",
+    "T-PD"
+   ],
+   "ai_lit_note": "職前教師AI素養與智慧TPACK的共同發展及信任、恐懼的角色，依準則教師AI-TPACK判A，對應 T-TEA「整合AI與教學法」",
+   "audience": "teacher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.bushor.2026.09.002",
+   "source_title": "Scaling AI literacy in organizations: A framework and roadmap for managers",
+   "source_organization": "Business Horizons",
+   "source_publication_date": "unknown",
+   "source_locator": "Elsevier 頁 linkinghub 轉址，未繞過；Crossref 只有 published-print 2026-09",
+   "doi": "10.1016/j.bushor.2026.09.002",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Business Horizons）；對象：成人，歐洲金融集團案例（企業管理者）；首發依據：Elsevier 頁 linkinghub 轉址，未繞過；Crossref 只有 published-print 2026-09；首次公開日未核；本刊追蹤學者 H32 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS"
+   ],
+   "ai_lit_note": "提出組織內擴展AI素養的多層框架與路線圖，屬成人職場AI素養；以 T-BAS「參與AI校園治理部署與決策」類比對應，屬邊界",
+   "audience": "adult"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/978-3-032-37979-5_31",
+   "source_title": "Decoding the Dashboard: Data Comics to Support Students’ Understanding of Learning Analytics Visualisations",
+   "source_organization": "Lecture notes in computer science",
+   "source_publication_date": "2026-09-17",
+   "source_locator": "arXiv:2609.21141「Submitted on 17 Sep 2026」（沿用 10-09 週檢索）；Springer 頁 First Online 07 October 2026",
+   "doi": "10.1007/978-3-032-37979-5_31",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Lecture notes in computer science）；對象：大學，18 名護理學生與 4 名教師；首發依據：arXiv:2609.21141「Submitted on 17 Sep 2026」（沿用 10-09 週檢索）；Springer 頁 First Online 07 October 2026；首次公開日在本次查詢期間內；本刊追蹤學者 S06 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "以資料漫畫輔助學生解讀學習分析儀表板，摘要未提到AI，依資料素養規則判C，不對應任何內涵",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.caeai.2026.100680",
+   "source_title": "Building AI companions that prioritise learning over performance",
+   "source_organization": "Computers and Education Artificial Intelligence",
+   "source_publication_date": "2026-05-06",
+   "source_locator": "arXiv:2605.04816「Submitted on 6 May 2026」（沿用 10-09 週檢索）；Elsevier 頁未讀",
+   "doi": "10.1016/j.caeai.2026.100680",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Computers and Education Artificial Intelligence）；對象：不明，五個跨學段案例，摘要未限定學段；首發依據：arXiv:2605.04816「Submitted on 6 May 2026」（沿用 10-09 週檢索）；Elsevier 頁未讀；首次公開日在月報觀察期（08-29 起）之前，只當背景；本刊追蹤學者 S06 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN",
+    "T-TEA"
+   ],
+   "ai_lit_note": "提出AI學伴系統設計框架，重點在工具設計與使用，對應 S-LRN「應用AI工具強化領域學習」及 T-TEA「客製AI教學工具與資源」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.caeai.2026.100684",
+   "source_title": "Agentivism: a learning theory for the age of artificial intelligence",
+   "source_organization": "Computers and Education Artificial Intelligence",
+   "source_publication_date": "2026-04-09",
+   "source_locator": "arXiv:2604.07813「Submitted on 9 Apr 2026」（沿用 10-09 週檢索）；Elsevier 頁未讀",
+   "doi": "10.1016/j.caeai.2026.100684",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Computers and Education Artificial Intelligence）；對象：不明，摘要未寫學段；泛指學習者與教師；首發依據：arXiv:2604.07813「Submitted on 9 Apr 2026」（沿用 10-09 週檢索）；Elsevier 頁未讀；首次公開日在月報觀察期（08-29 起）之前，只當背景；本刊追蹤學者 S06 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-LRN",
+    "S-ETH",
+    "T-TEA"
+   ],
+   "ai_lit_note": "提出學習者對AI選擇性委派、監控與查核AI產出的學習理論，對應 S-LRN「開創人機協作賦能自主學習」與「AI轉化自我、共同與社會調節」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1080/10447318.2026.2731321",
+   "source_title": "Comparing GenAI Summaries Versus Chatbots for Supporting Reflection in Healthcare Simulation",
+   "source_organization": "International Journal of Human-Computer Interaction",
+   "source_publication_date": "unknown",
+   "source_locator": "T&F 頁 403，未核；Crossref published-online 2026-09-24",
+   "doi": "10.1080/10447318.2026.2731321",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（International Journal of Human-Computer Interaction）；對象：大學，41 名護理學生；首發依據：T&F 頁 403，未核；Crossref published-online 2026-09-24；首次公開日未核；本刊追蹤學者 S06 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核；高風險：成效主張，不得寫成成效",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "比較生成式AI摘要與聊天機器人支援護理學生反思，屬工具使用研究，對應 S-LRN「應用AI工具強化領域學習」",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.lindif.2026.102975",
+   "source_title": "The road ahead: How the future of learning is shaped through individual differences",
+   "source_organization": "Learning and Individual Differences",
+   "source_publication_date": "unknown",
+   "source_locator": "Elsevier 頁 linkinghub 轉址，未繞過；Crossref 只有 published-print 2026-12",
+   "doi": "10.1016/j.lindif.2026.102975",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Learning and Individual Differences）；對象：不明，28 篇專刊論文綜整；首發依據：Elsevier 頁 linkinghub 轉址，未繞過；Crossref 只有 published-print 2026-12；首次公開日未核；本刊追蹤學者 S08 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "個別差異專刊導言提出未來學習路線圖，AI 只是八個主題之一，主要內容非師生AI素養或AI工具使用",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1186/s40536-026-00321-x",
+   "source_title": "Crossing metrics: are PISA, national tests, and grades measuring the same?",
+   "source_organization": "Large-scale Assessments in Education",
+   "source_publication_date": "2026-09-27",
+   "source_locator": "出版者頁（SpringerOpen）citation_online_date 2026/09/27",
+   "doi": "10.1186/s40536-026-00321-x",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Large-scale Assessments in Education）；對象：K-12，瑞典 PISA 2022 樣本 6072 名九年級學生；首發依據：出版者頁（SpringerOpen）citation_online_date 2026/09/27；首次公開日在本次查詢期間內；本刊追蹤學者 S08 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "比較 PISA、國家考試與學校成績是否測量相同能力，摘要未提到AI，不對應任何內涵",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://arxiv.org/abs/2609.13718",
+   "source_title": "Oops, Not Now: PEARL, a RAG-Based Support Agent for Gameplay and What Players Want from AI Help",
+   "source_organization": "arXiv",
+   "source_publication_date": "2026-09-12",
+   "source_locator": "arXiv:2609.13718 abs 頁「Submitted on 12 Sep 2026」",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：預印本或非同儕審查版本，不能寫成研究結果（arXiv (Cornell University)）；對象：不明，10 名玩家質性評估，未寫學段；首發依據：arXiv:2609.13718 abs 頁「Submitted on 12 Sep 2026」；首次公開日在本次查詢期間內；本刊追蹤學者 S13 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "以檢索增強生成的遊戲支援代理提供平行程式學習鷹架，屬AI工具使用研究，對應 S-LRN「應用AI工具強化領域學習」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.3205/26gma243",
+   "source_title": "Entwicklung einer KI-gestützten, personalisierten Simulation zur Modellierung und Förderung von kollaborativem Intervention Reasoning im Rahmen der interprofessionellen Visite",
+   "source_organization": "German Medical Science (German Research Foundation)",
+   "source_publication_date": "2026-09-04",
+   "source_locator": "出版者頁（PUBLISSO GMS）「Veröffentlicht: 2026-09-04」",
+   "doi": "10.3205/26gma243",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（German Medical Science (German Research Foundation)）；對象：大學，醫學教育模擬開發（研討會摘要），無樣本；首發依據：出版者頁（PUBLISSO GMS）「Veröffentlicht: 2026-09-04」；首次公開日在本次查詢期間內；本刊追蹤學者 S14 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "醫學生在數位模擬中與扮演護理角色的AI代理協作規劃介入，屬AI工具輔助學習，對應 S-LRN「應用AI工具強化領域學習」",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1002/jcal.70331",
+   "source_title": "Trace Data of Secondary Students and Linguistic Analysis to Predict Learner Performance in a Multi‐Text Writing Task",
+   "source_organization": "Journal of Computer Assisted Learning",
+   "source_publication_date": "unknown",
+   "source_locator": "Wiley 頁 403，未核；Crossref published-online 2026-09-21",
+   "doi": "10.1002/jcal.70331",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Journal of Computer Assisted Learning）；對象：K-12，四國 257 名中學生；首發依據：Wiley 頁 403，未核；Crossref published-online 2026-09-21；首次公開日未核；本刊追蹤學者 S14 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "以機器學習預測中學生寫作表現，AI 僅為研究方法，師生未直接與AI互動，不對應任何內涵",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/s11409-026-09500-1",
+   "source_title": "Effects of a self-regulated learning training on adolescents’ metacognitive awareness, learning processes and outcomes: a multi-method perspective",
+   "source_organization": "Metacognition and Learning",
+   "source_publication_date": "2026-10-05",
+   "source_locator": "出版者頁（Springer）citation_online_date 2026/10/05",
+   "doi": "10.1007/s11409-026-09500-1",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Metacognition and Learning）；對象：K-12，69 名中學生（實驗組 37、對照組 32）；首發依據：出版者頁（Springer）citation_online_date 2026/10/05；首次公開日在本次查詢期間內；本刊追蹤學者 S14 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "中學生數位自我調節學習訓練的準實驗，摘要未提到AI，不對應任何內涵",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.58459/rptel.2027.22030",
+   "source_title": "Social process awareness and its preliminary data analysis of regular assessment results",
+   "source_organization": "Research and Practice in Technology Enhanced Learning",
+   "source_publication_date": "unknown",
+   "source_locator": "出版者頁只有 citation_date 2027；Crossref published-online 2026-09-08",
+   "doi": "10.58459/rptel.2027.22030",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Research and Practice in Technology Enhanced Learning）；對象：K-12，日本國中八年級學生；首發依據：出版者頁只有 citation_date 2027；Crossref published-online 2026-09-08；首次公開日未核；本刊追蹤學者 S18 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "以分群分析日本國中生定期測驗歷程以支援社會歷程覺察，屬學習分析，師生未直接與AI互動",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/s10758-026-10031-6",
+   "source_title": "Interaction Behaviors and Social Network Expansion in Online Cross-Class Peer Tutoring: An Empirical Study",
+   "source_organization": "Technology Knowledge and Learning",
+   "source_publication_date": "2026-09-18",
+   "source_locator": "出版者頁（Springer）citation_online_date 2026/09/18",
+   "doi": "10.1007/s10758-026-10031-6",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Technology Knowledge and Learning）；對象：不明，摘要未寫學段；首發依據：出版者頁（Springer）citation_online_date 2026/09/18；首次公開日在本次查詢期間內；本刊追蹤學者 S18 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "推薦強化的線上跨班同儕輔導互動與社交網絡，推薦系統只是後端，不對應任何內涵",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.48550/arxiv.2610.02720",
+   "source_title": "ReLEAF: A Socio-Technical Framework Bridging Custodians and Researchers for Trustworthy Data Sharing",
+   "source_organization": "arXiv",
+   "source_publication_date": "2026-10-02",
+   "source_locator": "arXiv:2610.02720 abs 頁「Submitted on 2 Oct 2026」",
+   "doi": "10.48550/arxiv.2610.02720",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：預印本或非同儕審查版本，不能寫成研究結果（arXiv (Cornell University)）；對象：大學，研究生 4、研究者 6、大學生 90 名；首發依據：arXiv:2610.02720 abs 頁「Submitted on 2 Oct 2026」；首次公開日在本次查詢期間內；本刊追蹤學者 S18 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "教育資料共享的差分隱私合成資料框架，屬資料治理，師生未直接與AI互動",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.compedu.2026.105755",
+   "source_title": "Fifty Years of Topic Development, Thematic Combination, and AI’s Evolving Reach in Computers & Education",
+   "source_organization": "Computers & Education",
+   "source_publication_date": "unknown",
+   "source_locator": "Elsevier 頁 linkinghub 轉址，未繞過；Crossref published-print 2026-09",
+   "doi": "10.1016/j.compedu.2026.105755",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Computers & Education）；對象：不明，5388 篇期刊文章；首發依據：Elsevier 頁 linkinghub 轉址，未繞過；Crossref published-print 2026-09；首次公開日未核；本刊追蹤學者 T14、V06 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "Computers & Education 五十年主題模型與 AI 出現比例之書目計量，對應不到任何內涵",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.compedu.2026.105756",
+   "source_title": "Mapping fifty years of technology-enhanced science and mathematics education in Computers & Education: Trends and connections with technologies, functions, and theories",
+   "source_organization": "Computers & Education",
+   "source_publication_date": "unknown",
+   "source_locator": "Elsevier 頁 linkinghub 轉址，未繞過；Crossref published-print 2026-09",
+   "doi": "10.1016/j.compedu.2026.105756",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Computers & Education）；對象：不明，519 篇實證研究；首發依據：Elsevier 頁 linkinghub 轉址，未繞過；Crossref published-print 2026-09；首次公開日未核；本刊追蹤學者 T14 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "五十年科學與數學科技輔助教育研究之主題模型回顧，對應不到任何內涵",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.29333/ejmste/19279",
+   "source_title": "Artificial intelligence in science education for SDG 4: A systematic review of AI interventions for ESD and 21st-century competencies",
+   "source_organization": "Eurasia Journal of Mathematics Science and Technology Education",
+   "source_publication_date": "2026-09-18",
+   "source_locator": "出版者頁（Modestum）citation_publication_date 2026-09-18（無 online 日）",
+   "doi": "10.29333/ejmste/19279",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Eurasia Journal of Mathematics Science and Technology Education）；對象：不明，43 篇實證研究，未限定學段；首發依據：出版者頁（Modestum）citation_publication_date 2026-09-18（無 online 日）；首次公開日在本次查詢期間內；本刊追蹤學者 T19 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核；高風險：結論稱 AI 有強化永續科學教育的潛力，屬成效推論",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN",
+    "T-TEA"
+   ],
+   "ai_lit_note": "回顧科學教育中支援永續發展與21世紀能力的AI介入，對應 S-LRN「應用AI工具強化領域學習」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/s10763-026-10730-7",
+   "source_title": "From Content Knowledge to Informal Reasoning: The Mediation of Modeling Competence in Socio-scientific Issues",
+   "source_organization": "International Journal of Science and Mathematics Education",
+   "source_publication_date": "2026-09-23",
+   "source_locator": "出版者頁（Springer）citation_online_date 2026/09/23",
+   "doi": "10.1007/s10763-026-10730-7",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（International Journal of Science and Mathematics Education）；對象：K-12，443 名十年級學生；首發依據：出版者頁（Springer）citation_online_date 2026/09/23；首次公開日在本次查詢期間內；本刊追蹤學者 T19 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "十年級學生科學知識、建模能力與非形式推理的中介分析，摘要未提到AI，不對應任何內涵",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.3389/fpsyg.2026.1950695",
+   "source_title": "Beyond single scaffolding: a multidimensional scaffolding framework for flow-driven Game-Based Learning",
+   "source_organization": "Frontiers in Psychology",
+   "source_publication_date": "2026-09-22",
+   "source_locator": "出版者頁（Frontiers）citation_online_date 2026/09/22",
+   "doi": "10.3389/fpsyg.2026.1950695",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Frontiers in Psychology）；對象：不明，概念框架，未寫學段；首發依據：出版者頁（Frontiers）citation_online_date 2026/09/22；首次公開日在本次查詢期間內；本刊追蹤學者 T21 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "遊戲式學習多維鷹架框架，摘要未提到AI，不對應任何內涵",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/978-3-032-39103-2_5",
+   "source_title": "Haptics in Cognition: Disruptor or Enabler of Memory?",
+   "source_organization": "Communications in computer and information science",
+   "source_publication_date": "2026-09-29",
+   "source_locator": "出版者頁（Springer CCIS）「First Online 29 September 2026」",
+   "doi": "10.1007/978-3-032-39103-2_5",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Communications in computer and information science）；對象：不明，20 名受試者；首發依據：出版者頁（Springer CCIS）「First Online 29 September 2026」；首次公開日在本次查詢期間內；本刊追蹤學者 V01 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "觸覺與動覺對手寫記憶保留的探索實驗，摘要未提到AI，不對應任何內涵",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.5281/zenodo.23063300",
+   "source_title": "CoCreate: Use Cases and Evaluation Plan Definition (D2.1)",
+   "source_organization": "Zenodo (CERN European Organization for Nuclear Research)",
+   "source_publication_date": "2026-09-30",
+   "source_locator": "Zenodo 紀錄頁「Published September 30, 2026」",
+   "doi": "10.5281/zenodo.23063300",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：預印本或非同儕審查版本，不能寫成研究結果（Zenodo (CERN European Organization for Nuclear Research)）；對象：大學，三所大學正式課程；首發依據：Zenodo 紀錄頁「Published September 30, 2026」；首次公開日在本次查詢期間內；本刊追蹤學者 V01 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "CoCreate 計畫大學黑客松用例與評鑑計畫交付文件，摘要未提到AI，不對應任何內涵",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/978-3-032-37979-5_27",
+   "source_title": "Exploring Learner-Modeling Simulations with Cognitive Walkthroughs:",
+   "source_organization": "Lecture notes in computer science",
+   "source_publication_date": "2026-10-07",
+   "source_locator": "出版者頁（Springer LNCS）「First Online 07 October 2026」",
+   "doi": "10.1007/978-3-032-37979-5_27",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Lecture notes in computer science）；對象：大學，14 名參與者（推測為大學生）；首發依據：出版者頁（Springer LNCS）「First Online 07 October 2026」；首次公開日在本次查詢期間內；本刊追蹤學者 V01 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "評估幫助學生理解學習者建模方法的互動模擬可用性；學習者建模是否屬AI概念理解無法由摘要確認",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.13140/rg.2.2.13608.94726",
+   "source_title": "Information, Communication, and Content Creation Digital Skills: Information, Communication, and Content Creation Digital Skills: Task-Based Performance Tests among Youth in Europe",
+   "source_organization": "preprint server",
+   "source_publication_date": "unknown",
+   "source_locator": "ResearchGate 頁 403，未核",
+   "doi": "10.13140/rg.2.2.13608.94726",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：預印本或非同儕審查版本，不能寫成研究結果（preprint server）；對象：不明，無摘要；題名寫 youth in Europe；首發依據：ResearchGate 頁 403，未核；首次公開日未核；本刊追蹤學者 V02 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "歐洲青少年資訊、溝通與內容創作數位技能實作測驗，題名未提到AI，屬一般數位素養",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://digitalcommons.uri.edu/jmle-preprints/62",
+   "source_title": "Unlocking Effective Evaluations: Lessons from Media Literacy and Digital Skills Intervention Studies in Estonia, Finland, and Poland",
+   "source_organization": "Digital Commons - URI (University of Rhode Island)",
+   "source_publication_date": "unknown",
+   "source_locator": "URI Digital Commons 預印本頁可讀但未見日期",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：預印本或非同儕審查版本，不能寫成研究結果（Digital Commons - URI (University of Rhode Island)）；對象：不明，在職教師、長者、職校生、職前教師；首發依據：URI Digital Commons 預印本頁可讀但未見日期；首次公開日未核；本刊追蹤學者 V02 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "四個情境媒體素養與數位技能介入的評鑑經驗，摘要未提到AI，屬一般數位素養",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.3390/educsci16101657",
+   "source_title": "Supporting Self-Regulated Learning in Primary Education: A Case Study in a Directed Independent Learning School",
+   "source_organization": "Education Sciences",
+   "source_publication_date": "unknown",
+   "source_locator": "MDPI 頁 403，未核；Crossref published-online 2026-10-08",
+   "doi": "10.3390/educsci16101657",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Education Sciences）；對象：K-12，小學 59 名學生與 4 名教師；首發依據：MDPI 頁 403，未核；Crossref published-online 2026-10-08；首次公開日未核；本刊追蹤學者 V02 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "小學支持自我調節學習的課堂實務個案研究，摘要未提到AI，不對應任何內涵",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/s44436-026-00044-4",
+   "source_title": "Reimagining K-12 education in the era of artificial intelligence: a critical paradigm shift toward human-machine symbiosis",
+   "source_organization": "AI Brain and Child",
+   "source_publication_date": "2026-09-14",
+   "source_locator": "出版者頁（Springer）citation_online_date 2026/09/14",
+   "doi": "10.1007/s44436-026-00044-4",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（AI Brain and Child）；對象：K-12，社論，K-12 教育；峰會討論整理；首發依據：出版者頁（Springer）citation_online_date 2026/09/14；首次公開日在本次查詢期間內；本刊追蹤學者 V03 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD",
+    "S-ETH"
+   ],
+   "ai_lit_note": "社論討論 AI 時代 K-12 教育重構、教師角色與演算法倫理，對應 T-PD「理解AI時代教師專業自主與責任」",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.1177/02109395261483857",
+   "source_title": "How Self-Efficacy Beliefs Shape Learning Preferences: Pre-Service Preschool Teachers’ Learning With Online Teaching Video Cases / Cómo las creencias de autoeficacia influyen en las preferencias de aprendizaje: aprendizaje de futuros docentes de Educación Infantil mediante el uso de casos de vídeo para la enseñanza en línea",
+   "source_organization": "Studies in Psychology Estudios de Psicología",
+   "source_publication_date": "unknown",
+   "source_locator": "Sage 頁 403，未核；Crossref published-online 2026-09-28",
+   "doi": "10.1177/02109395261483857",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Studies in Psychology Estudios de Psicología）；對象：師培，744 名學前職前教師；首發依據：Sage 頁 403，未核；Crossref published-online 2026-09-28；首次公開日未核；本刊追蹤學者 V03 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "學前職前教師自我效能與線上教學影片案例學習偏好，摘要未提到AI，不對應任何內涵",
+   "audience": "teacher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.tate.2026.105852",
+   "source_title": "CT talk: Teacher talk as a resource for computational thinking in early childhood programming",
+   "source_organization": "Teaching and Teacher Education",
+   "source_publication_date": "unknown",
+   "source_locator": "Elsevier 頁 linkinghub 轉址，未繞過；Crossref published-print 2026-12",
+   "doi": "10.1016/j.tate.2026.105852",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Teaching and Teacher Education）；對象：K-12，香港兩所幼兒園課堂錄影；首發依據：Elsevier 頁 linkinghub 轉址，未繞過；Crossref published-print 2026-12；首次公開日未核；本刊追蹤學者 V03 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "幼兒園機器人程式活動中教師的運算思維語言，摘要未提到AI，不對應任何內涵",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.1186/s40561-026-00463-z",
+   "source_title": "Technical competencies and goal-setting in computing and robotics education: a conditional process analysis",
+   "source_organization": "Smart Learning Environments",
+   "source_publication_date": "2026-09-05",
+   "source_locator": "出版者頁（SpringerOpen）citation_online_date 2026/09/05",
+   "doi": "10.1186/s40561-026-00463-z",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Smart Learning Environments）；對象：大學，530 名奈及利亞大學生；首發依據：出版者頁（SpringerOpen）citation_online_date 2026/09/05；首次公開日在本次查詢期間內；本刊追蹤學者 V04 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "奈及利亞大學生 Arduino 專題學習的技術能力與目標設定，摘要未提到AI，不對應任何內涵",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.3389/feduc.2026.1943906",
+   "source_title": "Reimagining mathematics education through intelligent tutoring: evidence, opportunities, and implementation challenges",
+   "source_organization": "Frontiers in Education",
+   "source_publication_date": "2026-08-24",
+   "source_locator": "出版者頁（Frontiers）citation_online_date 2026/08/24（Accepted 24 August 2026；citation_publication_date 2026/09/21）",
+   "doi": "10.3389/feduc.2026.1943906",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Frontiers in Education）；對象：不明，20 篇文獻回顧，未限定學段；首發依據：出版者頁（Frontiers）citation_online_date 2026/08/24（Accepted 24 August 2026；citation_publication_date 2026/09/21）；首次公開日在月報觀察期（08-29 起）之前，只當背景；本刊追蹤學者 V04 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核；高風險：稱智慧家教可支援數學學習，屬成效推論",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN",
+    "T-TEA"
+   ],
+   "ai_lit_note": "敘事回顧智慧家教系統支援數學個人化教學與教師決策，對應 S-LRN「應用AI工具強化領域學習」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.ssaho.2026.103755",
+   "source_title": "Enhancing educational equity through citizen engagement: A governance-oriented framework for sustainable AI adoption in rural Nigeria",
+   "source_organization": "Social Sciences & Humanities Open",
+   "source_publication_date": "unknown",
+   "source_locator": "Elsevier 頁 linkinghub 轉址，未繞過；Crossref published-print 2026-12",
+   "doi": "10.1016/j.ssaho.2026.103755",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Social Sciences & Humanities Open）；對象：不明，只寫 rural schools 與社區；首發依據：Elsevier 頁 linkinghub 轉址，未繞過；Crossref published-print 2026-12；首次公開日未核；本刊追蹤學者 V04 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "T-BAS"
+   ],
+   "ai_lit_note": "奈及利亞鄉村學校AI導入之公民參與治理框架，對應 T-BAS「參與AI校園治理部署與決策」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1108/978-1-80592-200-120261010",
+   "source_title": "Artificial Intelligence-Powered Innovation EdTech Startups: A Bibliographic Review of Industry 5.0’s Implications for Sustainable Growth",
+   "source_organization": "Emerald Group Publishing Limited eBooks",
+   "source_publication_date": "unknown",
+   "source_locator": "Emerald 頁 403，未核；Crossref published-print 2026-11-02",
+   "doi": "10.1108/978-1-80592-200-120261010",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Emerald Group Publishing Limited eBooks）；對象：不明，42 篇文獻；首發依據：Emerald 頁 403，未核；Crossref published-print 2026-11-02；首次公開日未核；本刊追蹤學者 V04 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "AI 教育科技新創與工業5.0永續成長之書目回顧，主題為產業而非師生AI素養或使用",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.13140/rg.2.2.35876.44162",
+   "source_title": "Can street-connected young people learn to code",
+   "source_organization": "preprint server",
+   "source_publication_date": "unknown",
+   "source_locator": "ResearchGate 頁 403，未核",
+   "doi": "10.13140/rg.2.2.35876.44162",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：預印本或非同儕審查版本，不能寫成研究結果（preprint server）；對象：不明，無摘要；題名寫 street-connected young people；首發依據：ResearchGate 頁 403，未核；首次公開日未核；本刊追蹤學者 V05 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "題名為街頭青年能否學會寫程式，無摘要，無法判斷是否涉及AI",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.21203/rs.3.rs-10513319/v1",
+   "source_title": "Computing Perceptions of Street-Connected Youth in Nigeria",
+   "source_organization": "Research Square",
+   "source_publication_date": "2026-09-11",
+   "source_locator": "Research Square 頁 citation_publication_date 2026-09-11",
+   "doi": "10.21203/rs.3.rs-10513319/v1",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：預印本或非同儕審查版本，不能寫成研究結果（Research Square）；對象：不明，拉哥斯 10 名街頭青年（NGO）；首發依據：Research Square 頁 citation_publication_date 2026-09-11；首次公開日在本次查詢期間內；本刊追蹤學者 V05 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "街頭青年對電腦、網路、程式與AI概念的意義建構，AI 只占一部分，對應 S-BAS「理解AI運作原理與限制」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/s44217-026-02129-x",
+   "source_title": "Cultivating a sustainable future through an interactive AI chatbot for personalized learning of sustainability concepts",
+   "source_organization": "Discover Education",
+   "source_publication_date": "2026-09-15",
+   "source_locator": "出版者頁（Springer）citation_online_date 2026/09/15",
+   "doi": "10.1007/s44217-026-02129-x",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Discover Education）；對象：大學，大學生三組準實驗；首發依據：出版者頁（Springer）citation_online_date 2026/09/15；首次公開日在本次查詢期間內；本刊追蹤學者 V05 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核；高風險：準實驗後測差異，屬成效主張",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "大學生以AI聊天機器人學習永續概念的準實驗，屬工具使用研究，對應 S-LRN「應用AI工具強化領域學習」",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1080/18387357.2026.2739227",
+   "source_title": "Preservice teachers’ positive mental health literacy is associated with openness to psychological help-seeking and well-being",
+   "source_organization": "Advances in Mental Health",
+   "source_publication_date": "unknown",
+   "source_locator": "T&F 頁 403，未核；Crossref published-online 2026-10-04",
+   "doi": "10.1080/18387357.2026.2739227",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Advances in Mental Health）；對象：師培，470 名菲律賓職前教師；首發依據：T&F 頁 403，未核；Crossref published-online 2026-10-04；首次公開日未核；本刊追蹤學者 V06 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "菲律賓職前教師正向心理健康素養與求助、幸福感，摘要未提到AI，不對應任何內涵",
+   "audience": "teacher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.chbr.2026.101340",
+   "source_title": "Self-regulated approaches to students’ generative AI use in higher education",
+   "source_organization": "Computers in Human Behavior Reports",
+   "source_publication_date": "unknown",
+   "source_locator": "Elsevier 頁 linkinghub 轉址，未繞過；Crossref published-print 2026-12",
+   "doi": "10.1016/j.chbr.2026.101340",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Computers in Human Behavior Reports）；對象：大學，891 名大學部學生；首發依據：Elsevier 頁 linkinghub 轉址，未繞過；Crossref published-print 2026-12；首次公開日未核；本刊追蹤學者 V09 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核；高風險：AI 使用模式與成績關聯，不得寫成因果",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-LRN",
+    "S-ETH"
+   ],
+   "ai_lit_note": "大學生在居家考試使用生成式AI的自我調節模式與表現，對應 S-LRN「AI轉化自我、共同與社會調節」與 S-ETH「正用AI符合學術誠信」",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1002/jcal.70327",
+   "source_title": "Bridging the Gap: Investigating Students' Self‐Reported AI ‐Literacy and Perceived Employability Competencies for an AI ‐Enabled Workforce",
+   "source_organization": "Journal of Computer Assisted Learning",
+   "source_publication_date": "unknown",
+   "source_locator": "Wiley 頁 403，未核；Crossref published-online 2026-09-07",
+   "doi": "10.1002/jcal.70327",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Journal of Computer Assisted Learning）；對象：大學，380 名大學生（Prolific）；首發依據：Wiley 頁 403，未核；Crossref published-online 2026-09-07；首次公開日未核；本刊追蹤學者 V12 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核；高風險：中介路徑分析，不得寫成因果",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "中東與海灣地區大學生自評AI素養與可雇用能力的關聯，對應 S-BAS「理解AI運作原理與限制」",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.3389/feduc.2026.1926201",
+   "source_title": "Perceived educational value, ethical risk, and support for responsible AI governance in higher education: an embedded mixed-methods study",
+   "source_organization": "Frontiers in Education",
+   "source_publication_date": "2026-09-07",
+   "source_locator": "出版者頁（Frontiers）citation_online_date 2026/09/07（Accepted 07 September 2026；citation_publication_date 2026/09/28）",
+   "doi": "10.3389/feduc.2026.1926201",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Frontiers in Education）；對象：大學，阿聯 192 名大學生與教師；首發依據：出版者頁（Frontiers）citation_online_date 2026/09/07（Accepted 07 September 2026；citation_publication_date 2026/09/28）；首次公開日在本次查詢期間內；本刊追蹤學者 V12 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "T-ETH"
+   ],
+   "ai_lit_note": "高教師生對生成式AI評量的教育價值、倫理風險知覺與支持負責任治理，對應 T-ETH「健全校園AI使用規範」",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.4324/9781003679172-7",
+   "source_title": "Reshaping Educational Ecosystems",
+   "source_organization": "Routledge eBooks",
+   "source_publication_date": "unknown",
+   "source_locator": "Routledge 頁 403，未核；Crossref published-print 2026-08-31",
+   "doi": "10.4324/9781003679172-7",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Routledge eBooks）；對象：不明，跨學科案例，未寫學段；首發依據：Routledge 頁 403，未核；Crossref published-print 2026-08-31；首次公開日未核；本刊追蹤學者 V17 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "T-TEA",
+    "S-LRN"
+   ],
+   "ai_lit_note": "專書章節探討AI、元宇宙與無人機重塑教學，含AI數學平台與生成式AI共寫工具案例，對應 T-TEA「整合AI與教學法」",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.21203/rs.3.rs-9851111/v1",
+   "source_title": "How Undergraduates Interact with a Generative AI Peer: Eight Participation Roles and the Conditions for Effective Collaboration in University Mathematics",
+   "source_organization": "Research Square",
+   "source_publication_date": "2026-09-01",
+   "source_locator": "Research Square 頁 citation_publication_date 2026-09-01",
+   "doi": "10.21203/rs.3.rs-9851111/v1",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：預印本或非同儕審查版本，不能寫成研究結果（Research Square）；對象：大學，30 名大學生（微積分）；首發依據：Research Square 頁 citation_publication_date 2026-09-01；首次公開日在本次查詢期間內；本刊追蹤學者 V21 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "大學生與生成式AI同伴協作解題時的八種參與角色，重點在學生委派、共同調節等使用行為，對應 S-LRN「AI轉化自我、共同與社會調節」",
+   "audience": "higher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1080/02635143.2026.2731035",
+   "source_title": "Automated assessment of the nature of scientific inquiry (NOSI) using machine learning and transformer-based language models",
+   "source_organization": "Research in Science & Technological Education",
+   "source_publication_date": "unknown",
+   "source_locator": "T&F 頁 403，未核；Crossref published-online 2026-09-09",
+   "doi": "10.1080/02635143.2026.2731035",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Research in Science & Technological Education）；對象：師培，503 名土耳其職前教師作答；首發依據：T&F 頁 403，未核；Crossref published-online 2026-09-09；首次公開日未核；本刊追蹤學者 V21 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "以機器學習與 BERTurk 自動評分職前教師科學探究本質觀點，AI 僅為研究方法，不對應任何內涵",
+   "audience": "teacher_ed"
+  },
+  {
+   "source_url": "https://doi.org/10.1080/09500693.2026.2727688",
+   "source_title": "Understanding the potential classes of elementary school students’ attitudes towards Socioscientific issues",
+   "source_organization": "International Journal of Science Education",
+   "source_publication_date": "unknown",
+   "source_locator": "T&F 頁 403，未核；Crossref published-online 2026-09-14",
+   "doi": "10.1080/09500693.2026.2727688",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（International Journal of Science Education）；對象：K-12，無摘要；題名寫 elementary school students；首發依據：T&F 頁 403，未核；Crossref published-online 2026-09-14；首次公開日未核；本刊追蹤學者 V21 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "題名為國小學生對社會性科學議題態度的潛在類別，無摘要，題名未提到AI",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/s44217-026-02136-y",
+   "source_title": "Guided mathematical reasoning in teacher led secondary mathematics classrooms",
+   "source_organization": "Discover Education",
+   "source_publication_date": "2026-09-07",
+   "source_locator": "出版者頁（Springer）citation_online_date 2026/09/07",
+   "doi": "10.1007/s44217-026-02136-y",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Discover Education）；對象：K-12，一位中學數學教師課堂影片；首發依據：出版者頁（Springer）citation_online_date 2026/09/07；首次公開日在本次查詢期間內；本刊追蹤學者 V22 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "中學數學教師引導推理的課堂影片質性分析，摘要未提到AI，不對應任何內涵",
+   "audience": "k12"
+  },
+  {
+   "source_url": "https://doi.org/10.1016/j.stueduc.2026.101684",
+   "source_title": "Higher-order thinking skills in STEM education: A systematic review of HOTS constructs, assessment methods, and chatgpt-assisted coding",
+   "source_organization": "Studies In Educational Evaluation",
+   "source_publication_date": "unknown",
+   "source_locator": "Elsevier 頁 linkinghub 轉址，未繞過；Crossref published-print 2026-12",
+   "doi": "10.1016/j.stueduc.2026.101684",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（Studies In Educational Evaluation）；對象：不明，88 篇實證研究；首發依據：Elsevier 頁 linkinghub 轉址，未繞過；Crossref published-print 2026-12；首次公開日未核；本刊追蹤學者 V23 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "STEM 高層次思考評量的系統性回顧，ChatGPT 只用於輔助編碼研究文獻，屬研究方法",
+   "audience": "unknown"
+  },
+  {
+   "source_url": "https://doi.org/10.1007/s11528-026-01223-z",
+   "source_title": "Narrative-centered Learning Environments for Science: A Scoping Review",
+   "source_organization": "TechTrends",
+   "source_publication_date": "2026-09-17",
+   "source_locator": "出版者頁（Springer）citation_online_date 2026/09/17",
+   "doi": "10.1007/s11528-026-01223-z",
+   "category": "research",
+   "original_excerpt": "",
+   "scope_limitation": "版本：正式版（TechTrends）；對象：K-12，104 篇 K-12 科學研究；首發依據：出版者頁（Springer）citation_online_date 2026/09/17；首次公開日在本次查詢期間內；本刊追蹤學者 V26 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "ai_lit_note": "K-12 科學敘事中心學習環境回顧，AI 只在結論，對應不到任何內涵",
+   "audience": "k12"
+  }
+ ]
+}
