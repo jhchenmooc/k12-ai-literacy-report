@@ -24,6 +24,8 @@ const cssHref=p=>p+"assets/site.css?v="+CSS_VERSION;
 
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const up=depth=>depth?"../".repeat(depth):"./";
+// Stable UTF-16 lexical order: independent of OS locale and ICU version.
+const compareText=(a,b)=>a<b?-1:a>b?1:0;
 
 function shell({depth,current,title,description,head,main}){
  const p=up(depth);
@@ -66,7 +68,7 @@ function load(root){
 
 /* ---------- daily ---------- */
 function dailyEditions(editions){
- return editions.filter(e=>/^daily\/\d{4}-\d{2}-\d{2}\/index\.html$/.test(e.path)).map(e=>({...e,date:e.path.slice(6,16)})).sort((a,b)=>b.date.localeCompare(a.date));
+ return editions.filter(e=>/^daily\/\d{4}-\d{2}-\d{2}\/index\.html$/.test(e.path)).map(e=>({...e,date:e.path.slice(6,16)})).sort((a,b)=>compareText(b.date,a.date));
 }
 /* The claim text is rendered verbatim; only the source title inside it becomes the link, so the
    gate's text match (claim_text) and direct-anchor rule (source_url) both hold. */
@@ -94,7 +96,7 @@ function renderDailyIndex(days){
 /* ---------- weekly / monthly ---------- */
 function renderPeriodIndex(kind,editions){
  const isWeekly=kind==="weekly",label=isWeekly?"週報":"月報",legacy=isWeekly?LEGACY_WEEKLY:LEGACY_MONTHLY;
- const registered=editions.filter(e=>e.path.startsWith(kind+"/")).map(e=>({path:e.path.replace(/index\.html$/,""),title:e.title||label+"："+e.path.split("/")[1],note:e.claims.length+" 則，已通過出版閘門"})).sort((a,b)=>b.path.localeCompare(a.path));
+ const registered=editions.filter(e=>e.path.startsWith(kind+"/")).map(e=>({path:e.path.replace(/index\.html$/,""),title:e.title||label+"："+e.path.split("/")[1],note:e.claims.length+" 則，已通過出版閘門"})).sort((a,b)=>compareText(b.path,a.path));
  const rows=[...registered,...legacy].map(x=>'<li class="item"><p><a href="'+esc(x.path.slice(kind.length+1))+'">'+esc(x.title)+'</a></p><div class="meta-line"><span>'+esc(x.note)+"</span></div></li>").join("");
  const head='<div class="kicker">'+label+"</div><h1>"+(isWeekly?"每週精選：完成查核的政策與研究":"每月趨勢：跨週整合")+'</h1><p class="lead">'+(isWeekly?"每則逐句對回原文並標示證據等級；沒有達到查核門檻的週次不發刊，不為湊數放寬標準。":"整合當月週報與重要背景，區分原始發現與本刊分析。")+"</p>";
  const main=(registered.length?"":'<p class="empty">尚無以新版流程登錄的'+label+"；以下為早期版本。</p>")+'<ul class="item-list">'+rows+"</ul>";
@@ -129,12 +131,12 @@ function archiveData(records,relations,venues,hidden=[]){
    else add(m,"9-other","其他"+label,"尚未對應到監測來源",r);
   }
  }
- const sortRows=g=>{g.rows.sort((a,b)=>yearOrder(a.year,b.year)||a.title.localeCompare(b.title));return g};
- const sortGroups=m=>[...m.values()].map(sortRows).sort((a,b)=>a.key.localeCompare(b.key,"en",{numeric:true}));
+ const sortRows=g=>{g.rows.sort((a,b)=>yearOrder(a.year,b.year)||compareText(a.title,b.title)||compareText(a.id,b.id));return g};
+ const sortGroups=m=>[...m.values()].map(sortRows).sort((a,b)=>compareText(a.key,b.key));
  return {policy:sortGroups(policy),journals:sortGroups(journals),conferences:sortGroups(conferences)};
 }
 /* Newest year first; "未知" last. */
-function yearOrder(a,b){if(a===b)return 0;if(a==="未知")return 1;if(b==="未知")return -1;return b.localeCompare(a)}
+function yearOrder(a,b){if(a===b)return 0;if(a==="未知")return 1;if(b==="未知")return -1;return compareText(b,a)}
 const slug=s=>String(s).replace(/[^A-Za-z0-9]+/g,"-").replace(/^-|-$/g,"").toLowerCase()||"x";
 const groupId=g=>"g-"+slug(g.key);
 const yearId=(g,y)=>groupId(g)+"-y"+(y==="未知"?"unknown":y);

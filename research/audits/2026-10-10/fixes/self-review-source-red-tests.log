@@ -1,0 +1,632 @@
+TAP version 13
+# Subtest: detects hidden population and causal overclaim despite matching N=95
+ok 1 - detects hidden population and causal overclaim despite matching N=95
+  ---
+  duration_ms: 2.9707
+  type: 'test'
+  ...
+# Subtest: 116 recruited and analyzed contradiction remains blocked with mapped numbers
+ok 2 - 116 recruited and analyzed contradiction remains blocked with mapped numbers
+  ---
+  duration_ms: 1.4008
+  type: 'test'
+  ...
+# Subtest: unmapped number and policy implication force incomplete even if subset matches
+ok 3 - unmapped number and policy implication force incomplete even if subset matches
+  ---
+  duration_ms: 0.5951
+  type: 'test'
+  ...
+# Subtest: a fully mapped typed statement remains held and not certified
+ok 4 - a fully mapped typed statement remains held and not certified
+  ---
+  duration_ms: 0.4832
+  type: 'test'
+  ...
+# Subtest: number shown as context-only never counted as verified
+ok 5 - number shown as context-only never counted as verified
+  ---
+  duration_ms: 0.5081
+  type: 'test'
+  ...
+# Subtest: made-up annotations do not bypass coverage
+ok 6 - made-up annotations do not bypass coverage
+  ---
+  duration_ms: 0.3252
+  type: 'test'
+  ...
+# Subtest: unknown mandatory field never silently treated as false
+ok 7 - unknown mandatory field never silently treated as false
+  ---
+  duration_ms: 0.3825
+  type: 'test'
+  ...
+# Subtest: missing or malformed claim text fails closed
+ok 8 - missing or malformed claim text fails closed
+  ---
+  duration_ms: 0.2559
+  type: 'test'
+  ...
+# Subtest: malformed coverage collections return the existing invalid format and keep publication held
+ok 9 - malformed coverage collections return the existing invalid format and keep publication held
+  ---
+  duration_ms: 1.8397
+  type: 'test'
+  ...
+# Subtest: coverage CLI rejects duplicate evidence-card IDs rather than choosing the last
+not ok 10 - coverage CLI rejects duplicate evidence-card IDs rather than choosing the last
+  ---
+  duration_ms: 197.9638
+  type: 'test'
+  location: 'D:\\codex\\ai\\fix-review-20261010\\research\\audit-chinese-claim-coverage.test.js:77:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    The input did not match the regular expression /duplicate card IDs/. Input:
+    
+    ''
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected:
+  actual: ''
+  operator: 'match'
+  stack: |-
+    TestContext.<anonymous> (D:\codex\ai\fix-review-20261010\research\audit-chinese-claim-coverage.test.js:81:39)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: unregistered new week fails closed
+ok 11 - unregistered new week fails closed
+  ---
+  duration_ms: 29.4674
+  type: 'test'
+  ...
+# Subtest: registered synthetic descriptive claim passes structural checks
+ok 12 - registered synthetic descriptive claim passes structural checks
+  ---
+  duration_ms: 50.2323
+  type: 'test'
+  ...
+# Subtest: unresolved contradiction is blocked
+ok 13 - unresolved contradiction is blocked
+  ---
+  duration_ms: 38.2336
+  type: 'test'
+  ...
+# Subtest: unsupported high-impact claim blocked
+ok 14 - unsupported high-impact claim blocked
+  ---
+  duration_ms: 41.2289
+  type: 'test'
+  ...
+# Subtest: hold claim cannot be silently published
+ok 15 - hold claim cannot be silently published
+  ---
+  duration_ms: 32.6753
+  type: 'test'
+  ...
+# Subtest: fake high-impact review fields rejected
+ok 16 - fake high-impact review fields rejected
+  ---
+  duration_ms: 32.6353
+  type: 'test'
+  ...
+# Subtest: duplicate claim id blocked
+ok 17 - duplicate claim id blocked
+  ---
+  duration_ms: 33.1303
+  type: 'test'
+  ...
+# Subtest: new monthly without manifest entry blocked
+ok 18 - new monthly without manifest entry blocked
+  ---
+  duration_ms: 39.7243
+  type: 'test'
+  ...
+# Subtest: legacy audit stays non-certified
+ok 19 - legacy audit stays non-certified
+  ---
+  duration_ms: 0.9478
+  type: 'test'
+  ...
+# Subtest: unregistered sentence in report is blocked
+ok 20 - unregistered sentence in report is blocked
+  ---
+  duration_ms: 34.4567
+  type: 'test'
+  ...
+# Subtest: modified published text without updating evidence is blocked
+ok 21 - modified published text without updating evidence is blocked
+  ---
+  duration_ms: 38.7771
+  type: 'test'
+  ...
+# Subtest: claim present in JSON but absent from HTML is blocked
+ok 22 - claim present in JSON but absent from HTML is blocked
+  ---
+  duration_ms: 40.9912
+  type: 'test'
+  ...
+# Subtest: unlisted claim id in HTML is blocked
+ok 23 - unlisted claim id in HTML is blocked
+  ---
+  duration_ms: 38.1113
+  type: 'test'
+  ...
+# Subtest: duplicate claim id in HTML is blocked
+ok 24 - duplicate claim id in HTML is blocked
+  ---
+  duration_ms: 38.6598
+  type: 'test'
+  ...
+# Subtest: missing main region is blocked
+ok 25 - missing main region is blocked
+  ---
+  duration_ms: 37.7802
+  type: 'test'
+  ...
+# Subtest: nested text markup preserves claim when normalised
+ok 26 - nested text markup preserves claim when normalised
+  ---
+  duration_ms: 39.003
+  type: 'test'
+  ...
+# Subtest: unregistered major heading in main is blocked
+ok 27 - unregistered major heading in main is blocked
+  ---
+  duration_ms: 38.0555
+  type: 'test'
+  ...
+# Subtest: registered heading with unrelated body claim is blocked
+ok 28 - registered heading with unrelated body claim is blocked
+  ---
+  duration_ms: 42.4094
+  type: 'test'
+  ...
+# Subtest: unregistered list item in main is blocked
+ok 29 - unregistered list item in main is blocked
+  ---
+  duration_ms: 36.5232
+  type: 'test'
+  ...
+# Subtest: missing original excerpt prevents release
+ok 30 - missing original excerpt prevents release
+  ---
+  duration_ms: 30.9614
+  type: 'test'
+  ...
+# Subtest: altered archived source checksum prevents release
+ok 31 - altered archived source checksum prevents release
+  ---
+  duration_ms: 33.3097
+  type: 'test'
+  ...
+# Subtest: missing interpretation and limitations prevents release
+ok 32 - missing interpretation and limitations prevents release
+  ---
+  duration_ms: 32.315
+  type: 'test'
+  ...
+# Subtest: source and claim URL mismatch prevents release
+ok 33 - source and claim URL mismatch prevents release
+  ---
+  duration_ms: 31.8734
+  type: 'test'
+  ...
+# Subtest: unreviewed translation prevents release
+ok 34 - unreviewed translation prevents release
+  ---
+  duration_ms: 30.3797
+  type: 'test'
+  ...
+# Subtest: source excerpt genuinely included and checksummed passes structural validation
+ok 35 - source excerpt genuinely included and checksummed passes structural validation
+  ---
+  duration_ms: 31.675
+  type: 'test'
+  ...
+# Subtest: medium-risk claim without two-pass agreement is held
+ok 36 - medium-risk claim without two-pass agreement is held
+  ---
+  duration_ms: 35.8456
+  type: 'test'
+  ...
+# Subtest: medium-risk claim cannot omit crosscheck trace
+ok 37 - medium-risk claim cannot omit crosscheck trace
+  ---
+  duration_ms: 38.7576
+  type: 'test'
+  ...
+# Subtest: high risk remains held despite purported human review fields
+ok 38 - high risk remains held despite purported human review fields
+  ---
+  duration_ms: 36.0717
+  type: 'test'
+  ...
+# Subtest: risk classification cannot hide impact behind low tier
+ok 39 - risk classification cannot hide impact behind low tier
+  ---
+  duration_ms: 36.0572
+  type: 'test'
+  ...
+# Subtest: missing risk tier blocks release
+ok 40 - missing risk tier blocks release
+  ---
+  duration_ms: 36.4228
+  type: 'test'
+  ...
+# Subtest: low-risk bibliographic item can publish without expert labels
+ok 41 - low-risk bibliographic item can publish without expert labels
+  ---
+  duration_ms: 35.764
+  type: 'test'
+  ...
+# Subtest: missing registered HTML returns validation error, not exception
+ok 42 - missing registered HTML returns validation error, not exception
+  ---
+  duration_ms: 35.4019
+  type: 'test'
+  ...
+# Subtest: HTML comment pretending to contain a bound claim is rejected
+ok 43 - HTML comment pretending to contain a bound claim is rejected
+  ---
+  duration_ms: 38.6765
+  type: 'test'
+  ...
+# Subtest: unsupported visible content tag cannot bypass claim binding
+ok 44 - unsupported visible content tag cannot bypass claim binding
+  ---
+  duration_ms: 39.5198
+  type: 'test'
+  ...
+# Subtest: inline event handlers and hidden attributes are blocked
+ok 45 - inline event handlers and hidden attributes are blocked
+  ---
+  duration_ms: 39.0965
+  type: 'test'
+  ...
+# Subtest: unbound direct div text is rejected
+ok 46 - unbound direct div text is rejected
+  ---
+  duration_ms: 36.0344
+  type: 'test'
+  ...
+# Subtest: unbound text inside section outside paragraphs is rejected
+ok 47 - unbound text inside section outside paragraphs is rejected
+  ---
+  duration_ms: 37.8967
+  type: 'test'
+  ...
+# Subtest: bound content in wrapper elements remains valid
+ok 48 - bound content in wrapper elements remains valid
+  ---
+  duration_ms: 37.8215
+  type: 'test'
+  ...
+# Subtest: invalid calendar dates and malformed source URLs are rejected
+ok 49 - invalid calendar dates and malformed source URLs are rejected
+  ---
+  duration_ms: 39.5185
+  type: 'test'
+  ...
+# Subtest: offline full-issue fixture fails closed when evidence is tampered with
+ok 50 - offline full-issue fixture fails closed when evidence is tampered with
+  ---
+  duration_ms: 43.5757
+  type: 'test'
+  ...
+# Subtest: unregistered daily HTML is blocked, not silently deployed
+ok 51 - unregistered daily HTML is blocked, not silently deployed
+  ---
+  duration_ms: 32.404
+  type: 'test'
+  ...
+# Subtest: registered daily HTML without explicit narrow channel is blocked
+ok 52 - registered daily HTML without explicit narrow channel is blocked
+  ---
+  duration_ms: 46.1485
+  type: 'test'
+  ...
+# Subtest: opt-in daily fixed low-risk source record passes structural validation
+ok 53 - opt-in daily fixed low-risk source record passes structural validation
+  ---
+  duration_ms: 49.5421
+  type: 'test'
+  ...
+# Subtest: daily descriptive or high risk cannot bypass structural gate
+ok 54 - daily descriptive or high risk cannot bypass structural gate
+  ---
+  duration_ms: 43.8412
+  type: 'test'
+  ...
+# Subtest: daily prose policy analysis cannot be disguised as a bibliographic claim
+ok 55 - daily prose policy analysis cannot be disguised as a bibliographic claim
+  ---
+  duration_ms: 45.7066
+  type: 'test'
+  ...
+# Subtest: daily issue future source date is blocked
+ok 56 - daily issue future source date is blocked
+  ---
+  duration_ms: 47.2322
+  type: 'test'
+  ...
+# Subtest: daily does not allow fabricated wrong first-disclosure date
+ok 57 - daily does not allow fabricated wrong first-disclosure date
+  ---
+  duration_ms: 43.5774
+  type: 'test'
+  ...
+# Subtest: attributed official summary with pinned excerpt and two passes passes structural gate
+ok 58 - attributed official summary with pinned excerpt and two passes passes structural gate
+  ---
+  duration_ms: 43.5051
+  type: 'test'
+  ...
+# Subtest: research abstracts are explicitly attributed to their authors
+ok 59 - research abstracts are explicitly attributed to their authors
+  ---
+  duration_ms: 41.9803
+  type: 'test'
+  ...
+# Subtest: freeform claims and unsupported causal policy wording fail closed
+ok 60 - freeform claims and unsupported causal policy wording fail closed
+  ---
+  duration_ms: 44.2753
+  type: 'test'
+  ...
+# Subtest: summary without two reviews or pinned source cannot publish
+ok 61 - summary without two reviews or pinned source cannot publish
+  ---
+  duration_ms: 42.0931
+  type: 'test'
+  ...
+# Subtest: no silent expansion to weekly and monthly publishing policy
+ok 62 - no silent expansion to weekly and monthly publishing policy
+  ---
+  duration_ms: 34.8767
+  type: 'test'
+  ...
+# Subtest: daily rejects missing first disclosure
+ok 63 - daily rejects missing first disclosure
+  ---
+  duration_ms: 44.2782
+  type: 'test'
+  ...
+# Subtest: daily summary rejects missing source-aligned spans
+ok 64 - daily summary rejects missing source-aligned spans
+  ---
+  duration_ms: 45.8568
+  type: 'test'
+  ...
+# Subtest: daily summary rejects raw newline
+ok 65 - daily summary rejects raw newline
+  ---
+  duration_ms: 45.0943
+  type: 'test'
+  ...
+# Subtest: daily rejects cross-category source misrepresentation
+ok 66 - daily rejects cross-category source misrepresentation
+  ---
+  duration_ms: 37.9879
+  type: 'test'
+  ...
+# Subtest: daily rejects claims path borrowed from unrelated issue
+ok 67 - daily rejects claims path borrowed from unrelated issue
+  ---
+  duration_ms: 51.683
+  type: 'test'
+  ...
+# Subtest: registered report refuses script injected outside main
+ok 68 - registered report refuses script injected outside main
+  ---
+  duration_ms: 35.5513
+  type: 'test'
+  ...
+# Subtest: registered daily source facts refuse inline handlers outside main
+ok 69 - registered daily source facts refuse inline handlers outside main
+  ---
+  duration_ms: 41.8746
+  type: 'test'
+  ...
+# Subtest: daily bibliography requires actual pinned source checksum
+ok 70 - daily bibliography requires actual pinned source checksum
+  ---
+  duration_ms: 38.0991
+  type: 'test'
+  ...
+# Subtest: older-than-seven-days bibliographic data cannot masquerade as daily breaking news
+ok 71 - older-than-seven-days bibliographic data cannot masquerade as daily breaking news
+  ---
+  duration_ms: 36.9351
+  type: 'test'
+  ...
+# Subtest: scriptable https-looking claim anchor is blocked on the full static page
+ok 72 - scriptable https-looking claim anchor is blocked on the full static page
+  ---
+  duration_ms: 33.4362
+  type: 'test'
+  ...
+# Subtest: HTML numeric entity obfuscation of unsafe href is blocked
+ok 73 - HTML numeric entity obfuscation of unsafe href is blocked
+  ---
+  duration_ms: 39.7808
+  type: 'test'
+  ...
+# Subtest: safe HTTPS static claim anchor is still permitted
+ok 74 - safe HTTPS static claim anchor is still permitted
+  ---
+  duration_ms: 47.3896
+  type: 'test'
+  ...
+# Subtest: daily issue cannot omit reader-visible primary source
+ok 75 - daily issue cannot omit reader-visible primary source
+  ---
+  duration_ms: 57.3833
+  type: 'test'
+  ...
+# Subtest: daily issue cannot substitute an unrelated source link
+ok 76 - daily issue cannot substitute an unrelated source link
+  ---
+  duration_ms: 50.6669
+  type: 'test'
+  ...
+# Subtest: legacy files retain noncertified warning but reject malicious script
+ok 77 - legacy files retain noncertified warning but reject malicious script
+  ---
+  duration_ms: 30.1633
+  type: 'test'
+  ...
+# Subtest: legacy benign static content remains exempt from retrospective claim recertification
+ok 78 - legacy benign static content remains exempt from retrospective claim recertification
+  ---
+  duration_ms: 26.2142
+  type: 'test'
+  ...
+# Subtest: deployed-site historical monthly reports do not link to excluded research directory
+ok 79 - deployed-site historical monthly reports do not link to excluded research directory
+  ---
+  duration_ms: 0.9219
+  type: 'test'
+  ...
+# Subtest: daily policy must identify formal policy, guidance, draft, commentary or event
+ok 80 - daily policy must identify formal policy, guidance, draft, commentary or event
+  ---
+  duration_ms: 40.2088
+  type: 'test'
+  ...
+# Subtest: daily research cannot be mislabelled as an official guidance document
+ok 81 - daily research cannot be mislabelled as an official guidance document
+  ---
+  duration_ms: 38.4672
+  type: 'test'
+  ...
+# Subtest: daily original source link outside its claim does not count
+ok 82 - daily original source link outside its claim does not count
+  ---
+  duration_ms: 42.8257
+  type: 'test'
+  ...
+# Subtest: a new daily issue cannot override a held matching candidate in the shared weekly pool
+ok 83 - a new daily issue cannot override a held matching candidate in the shared weekly pool
+  ---
+  duration_ms: 46.1419
+  type: 'test'
+  ...
+# Subtest: an approved matching candidate permits the unchanged structured daily checks
+ok 84 - an approved matching candidate permits the unchanged structured daily checks
+  ---
+  duration_ms: 47.077
+  type: 'test'
+  ...
+# Subtest: pending corrections in any cumulative worksheet veto daily publication
+ok 85 - pending corrections in any cumulative worksheet veto daily publication
+  ---
+  duration_ms: 116.7938
+  type: 'test'
+  ...
+# Subtest: source snapshots must be regular repository files and hash raw bytes
+not ok 86 - source snapshots must be regular repository files and hash raw bytes
+  ---
+  duration_ms: 55.1539
+  type: 'test'
+  location: 'D:\\codex\\ai\\fix-review-20261010\\research\\validate-publication.test.js:292:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    true !== false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (D:\codex\ai\fix-review-20261010\research\validate-publication.test.js:297:9)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async Test.processPendingSubtests (node:internal/test_runner/test:744:7)
+  ...
+# Subtest: real A07 source URL remains blocked by existing held candidate despite valid synthetic source structure
+ok 87 - real A07 source URL remains blocked by existing held candidate despite valid synthetic source structure
+  ---
+  duration_ms: 71.2325
+  type: 'test'
+  ...
+# Subtest: weekly claim outside AI literacy scope (C, unknown or missing) is blocked
+ok 88 - weekly claim outside AI literacy scope (C, unknown or missing) is blocked
+  ---
+  duration_ms: 92.4212
+  type: 'test'
+  ...
+# Subtest: AI literacy scope needs valid framework codes and a reason
+ok 89 - AI literacy scope needs valid framework codes and a reason
+  ---
+  duration_ms: 212.1601
+  type: 'test'
+  ...
+# Subtest: class B with a framework code publishes like class A
+ok 90 - class B with a framework code publishes like class A
+  ---
+  duration_ms: 33.5248
+  type: 'test'
+  ...
+# Subtest: daily channel also requires A or B scope
+ok 91 - daily channel also requires A or B scope
+  ---
+  duration_ms: 40.8815
+  type: 'test'
+  ...
+# Subtest: daily claim cannot relabel the scope of its cumulative candidate
+ok 92 - daily claim cannot relabel the scope of its cumulative candidate
+  ---
+  duration_ms: 47.006
+  type: 'test'
+  ...
+# Subtest: weekly edition blocks teacher-education, higher-education, adult, unknown or missing audience
+ok 93 - weekly edition blocks teacher-education, higher-education, adult, unknown or missing audience
+  ---
+  duration_ms: 180.8374
+  type: 'test'
+  ...
+# Subtest: other education stakeholders may publish in weekly and daily editions
+ok 94 - other education stakeholders may publish in weekly and daily editions
+  ---
+  duration_ms: 70.0129
+  type: 'test'
+  ...
+# Subtest: daily edition blocks teacher-education audience
+ok 95 - daily edition blocks teacher-education audience
+  ---
+  duration_ms: 63.5092
+  type: 'test'
+  ...
+# Subtest: monthly edition may carry teacher-education items but never an unknown audience
+ok 96 - monthly edition may carry teacher-education items but never an unknown audience
+  ---
+  duration_ms: 67.7271
+  type: 'test'
+  ...
+# Subtest: daily claim cannot relabel the audience of its cumulative candidate
+ok 97 - daily claim cannot relabel the audience of its cumulative candidate
+  ---
+  duration_ms: 43.0938
+  type: 'test'
+  ...
+1..97
+# tests 97
+# suites 0
+# pass 95
+# fail 2
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4254.5686

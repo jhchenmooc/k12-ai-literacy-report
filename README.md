@@ -4,6 +4,8 @@
 
 ## 新 Session 接手入口
 
+- [2026-10-10 獨立程式審查交接包](research/audits/2026-10-10/README.md)：原始發現、14 項修正、第二輪自檢、驗證佐證及 Claude 審查 prompt。
+- [本機驗證與公開產物](research/local-validation.md)：Node.js 22、鎖定套件安裝、回歸測試與部署檔案清單。
 - [**固定工作交接檔（SESSION-HANDOFF）**](research/SESSION-HANDOFF.md)：最後確認的 GitHub 證據、重要決策、完成／待辦、已知疏漏及最短接續步驟。接手先重新查最新主分支狀態。
 - [完整編輯與出版主控 SOP v1.1](research/editorial-workflow-master.md)：資料搜尋、來源查核、主張驗證、PR／CI、Pages、勘誤。
 

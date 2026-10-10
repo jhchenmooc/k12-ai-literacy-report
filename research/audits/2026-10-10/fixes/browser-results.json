@@ -1,0 +1,473 @@
+{
+  "browser": "154.0.4258.62",
+  "results": [
+    {
+      "rel": "about/index.html",
+      "width": 256,
+      "measurements": {
+        "viewport": 256,
+        "scrollWidth": 256,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": [
+          {
+            "width": 212,
+            "scrollWidth": 212,
+            "children": [
+              212,
+              212,
+              212
+            ]
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至主要內容",
+        "href": "#content"
+      }
+    },
+    {
+      "rel": "about/index.html",
+      "width": 320,
+      "measurements": {
+        "viewport": 320,
+        "scrollWidth": 320,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": [
+          {
+            "width": 276,
+            "scrollWidth": 276,
+            "children": [
+              276,
+              276,
+              276
+            ]
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至主要內容",
+        "href": "#content"
+      }
+    },
+    {
+      "rel": "about/index.html",
+      "width": 375,
+      "measurements": {
+        "viewport": 375,
+        "scrollWidth": 375,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": [
+          {
+            "width": 331,
+            "scrollWidth": 331,
+            "children": [
+              331,
+              331,
+              331
+            ]
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至主要內容",
+        "href": "#content"
+      }
+    },
+    {
+      "rel": "about/index.html",
+      "width": 1280,
+      "measurements": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": [
+          {
+            "width": 1100,
+            "scrollWidth": 1100,
+            "children": [
+              354.65625,
+              354.671875,
+              354.65625
+            ]
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至主要內容",
+        "href": "#content"
+      }
+    },
+    {
+      "rel": "archive/index.html",
+      "width": 256,
+      "measurements": {
+        "viewport": 256,
+        "scrollWidth": 256,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": [
+          {
+            "width": 212,
+            "scrollWidth": 212,
+            "children": [
+              212,
+              212,
+              212
+            ]
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至主要內容",
+        "href": "#content"
+      }
+    },
+    {
+      "rel": "archive/index.html",
+      "width": 320,
+      "measurements": {
+        "viewport": 320,
+        "scrollWidth": 320,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": [
+          {
+            "width": 276,
+            "scrollWidth": 276,
+            "children": [
+              276,
+              276,
+              276
+            ]
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至主要內容",
+        "href": "#content"
+      }
+    },
+    {
+      "rel": "archive/index.html",
+      "width": 375,
+      "measurements": {
+        "viewport": 375,
+        "scrollWidth": 375,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": [
+          {
+            "width": 331,
+            "scrollWidth": 331,
+            "children": [
+              331,
+              331,
+              331
+            ]
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至主要內容",
+        "href": "#content"
+      }
+    },
+    {
+      "rel": "archive/index.html",
+      "width": 1280,
+      "measurements": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": [
+          {
+            "width": 1100,
+            "scrollWidth": 1100,
+            "children": [
+              354.65625,
+              354.671875,
+              354.65625
+            ]
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至主要內容",
+        "href": "#content"
+      }
+    },
+    {
+      "rel": "index.html",
+      "width": 256,
+      "measurements": {
+        "viewport": 256,
+        "scrollWidth": 256,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": [
+          {
+            "width": 212,
+            "scrollWidth": 212,
+            "children": [
+              212,
+              212
+            ]
+          },
+          {
+            "width": 212,
+            "scrollWidth": 212,
+            "children": [
+              212,
+              212
+            ]
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至主要內容",
+        "href": "#content"
+      }
+    },
+    {
+      "rel": "index.html",
+      "width": 320,
+      "measurements": {
+        "viewport": 320,
+        "scrollWidth": 320,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": [
+          {
+            "width": 276,
+            "scrollWidth": 276,
+            "children": [
+              276,
+              276
+            ]
+          },
+          {
+            "width": 276,
+            "scrollWidth": 276,
+            "children": [
+              276,
+              276
+            ]
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至主要內容",
+        "href": "#content"
+      }
+    },
+    {
+      "rel": "index.html",
+      "width": 375,
+      "measurements": {
+        "viewport": 375,
+        "scrollWidth": 375,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": [
+          {
+            "width": 331,
+            "scrollWidth": 331,
+            "children": [
+              331,
+              331
+            ]
+          },
+          {
+            "width": 331,
+            "scrollWidth": 331,
+            "children": [
+              331,
+              331
+            ]
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至主要內容",
+        "href": "#content"
+      }
+    },
+    {
+      "rel": "index.html",
+      "width": 1280,
+      "measurements": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": [
+          {
+            "width": 1100,
+            "scrollWidth": 1100,
+            "children": [
+              541,
+              541
+            ]
+          },
+          {
+            "width": 1100,
+            "scrollWidth": 1100,
+            "children": [
+              541,
+              541
+            ]
+          }
+        ]
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至主要內容",
+        "href": "#content"
+      }
+    },
+    {
+      "rel": "feedback/index.html",
+      "width": 256,
+      "measurements": {
+        "viewport": 256,
+        "scrollWidth": 256,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": []
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "← 返回 K-12 AI 素養國際動態",
+        "href": "../"
+      }
+    },
+    {
+      "rel": "feedback/index.html",
+      "width": 320,
+      "measurements": {
+        "viewport": 320,
+        "scrollWidth": 320,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": []
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "← 返回 K-12 AI 素養國際動態",
+        "href": "../"
+      }
+    },
+    {
+      "rel": "feedback/index.html",
+      "width": 375,
+      "measurements": {
+        "viewport": 375,
+        "scrollWidth": 375,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": []
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "← 返回 K-12 AI 素養國際動態",
+        "href": "../"
+      }
+    },
+    {
+      "rel": "feedback/index.html",
+      "width": 1280,
+      "measurements": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": []
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "← 返回 K-12 AI 素養國際動態",
+        "href": "../"
+      }
+    },
+    {
+      "rel": "weekly/2026-09-29_10-08/index.html",
+      "width": 256,
+      "measurements": {
+        "viewport": 256,
+        "scrollWidth": 256,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": []
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至本文",
+        "href": "#main"
+      }
+    },
+    {
+      "rel": "weekly/2026-09-29_10-08/index.html",
+      "width": 320,
+      "measurements": {
+        "viewport": 320,
+        "scrollWidth": 320,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": []
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至本文",
+        "href": "#main"
+      }
+    },
+    {
+      "rel": "weekly/2026-09-29_10-08/index.html",
+      "width": 375,
+      "measurements": {
+        "viewport": 375,
+        "scrollWidth": 375,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": []
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至本文",
+        "href": "#main"
+      }
+    },
+    {
+      "rel": "weekly/2026-09-29_10-08/index.html",
+      "width": 1280,
+      "measurements": {
+        "viewport": 1280,
+        "scrollWidth": 1280,
+        "mainCount": 1,
+        "h1Count": 1,
+        "panels": []
+      },
+      "firstKeyboardFocus": {
+        "tag": "A",
+        "text": "跳至本文",
+        "href": "#main"
+      }
+    }
+  ]
+}

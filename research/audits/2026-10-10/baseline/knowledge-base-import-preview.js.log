@@ -1,0 +1,167 @@
+{
+  "mode": "read_only_review_preview",
+  "items": [
+    {
+      "source_url": "https://arboretum.psu.edu/events/nature-ai-detectives-an-outdoor-ai-literacy-adventure-2/",
+      "title": "Nature AI Detectives: An Outdoor AI Literacy Adventure",
+      "doi": "",
+      "source_candidate_id": "W2026-10-09-A01",
+      "discovery_status": "review_existing",
+      "matches": [
+        {
+          "record_id": "KB-2026-0001",
+          "status": "review_same_url",
+          "reason": "Same source URL; page content may have changed"
+        }
+      ],
+      "publication_decision": "not_applicable",
+      "verified": false
+    },
+    {
+      "source_url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_literacy_Sec.html",
+      "title": "Webinar on AI Literacy and Safeguarding Students' Cyber Security - Secondary Schools (New)",
+      "doi": "",
+      "source_candidate_id": "W2026-10-09-A02",
+      "discovery_status": "review_existing",
+      "matches": [
+        {
+          "record_id": "KB-2026-0002",
+          "status": "review_same_url",
+          "reason": "Same source URL; page content may have changed"
+        }
+      ],
+      "publication_decision": "not_applicable",
+      "verified": false
+    },
+    {
+      "source_url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_Subjects_Pri.html",
+      "title": "Digital Education AI in Education Series - AI+Subjects: Leveraging Generative AI to Enhance Learning and Teaching for Primary English Language (Basic Level)",
+      "doi": "",
+      "source_candidate_id": "W2026-10-09-A03",
+      "discovery_status": "review_existing",
+      "matches": [
+        {
+          "record_id": "KB-2026-0003",
+          "status": "review_same_url",
+          "reason": "Same source URL; page content may have changed"
+        }
+      ],
+      "publication_decision": "not_applicable",
+      "verified": false
+    },
+    {
+      "source_url": "https://iite.unesco.org/announcements/digital-transformation-and-green-skills-in-tvet-building-pedagogical-capacity-africa-regional-series/",
+      "title": "Digital Transformation and Green Skills in TVET: Building Pedagogical Capacity – Africa Regional Series",
+      "doi": "",
+      "source_candidate_id": "W2026-10-09-A04",
+      "discovery_status": "review_existing",
+      "matches": [
+        {
+          "record_id": "KB-2026-0004",
+          "status": "review_same_url",
+          "reason": "Same source URL; page content may have changed"
+        }
+      ],
+      "publication_decision": "not_applicable",
+      "verified": false
+    },
+    {
+      "source_url": "https://www.mdpi.com/2076-3417/16/19/9907",
+      "title": "Teachers’ Perceptions of Generative Artificial Intelligence in Early Childhood and Primary Education: Barriers, Ethical Concerns, and Perceived Impacts",
+      "doi": "",
+      "source_candidate_id": "W2026-10-09-A05",
+      "discovery_status": "review_existing",
+      "matches": [
+        {
+          "record_id": "KB-2026-0005",
+          "status": "review_same_url",
+          "reason": "Same source URL; page content may have changed"
+        }
+      ],
+      "publication_decision": "not_applicable",
+      "verified": false
+    },
+    {
+      "source_url": "https://www.oise.utoronto.ca/about/events/10-09-26-online-panel-equity-diversity-context-critical-ai-literacy",
+      "title": "Online panel: Equity & Diversity in the Context of Critical AI Literacy",
+      "doi": "",
+      "source_candidate_id": "W2026-10-09-A06",
+      "discovery_status": "review_existing",
+      "matches": [
+        {
+          "record_id": "KB-2026-0006",
+          "status": "review_same_url",
+          "reason": "Same source URL; page content may have changed"
+        }
+      ],
+      "publication_decision": "not_applicable",
+      "verified": false
+    },
+    {
+      "source_url": "https://www.unesco.org/en/articles/unesco-calls-pairing-school-screen-regulation-mexico-digital-literacy-and-continuous-monitoring",
+      "title": "UNESCO calls for pairing school screen regulation in Mexico with digital literacy and continuous monitoring",
+      "doi": "",
+      "source_candidate_id": "W2026-10-09-A07",
+      "discovery_status": "review_existing",
+      "matches": [
+        {
+          "record_id": "KB-2026-0007",
+          "status": "review_same_url",
+          "reason": "Same source URL; page content may have changed"
+        }
+      ],
+      "publication_decision": "not_applicable",
+      "verified": false
+    },
+    {
+      "source_url": "https://onlinelibrary.wiley.com/doi/10.1002/jcal.70308",
+      "title": "The Effects of K-12 Artificial Intelligence Education in Enhancing AI Literacy: A Meta-Analysis",
+      "doi": "10.1002/jcal.70308",
+      "source_candidate_id": "W2026-10-09-A08",
+      "discovery_status": "review_existing",
+      "matches": [
+        {
+          "record_id": "KB-2026-0008",
+          "status": "review_same_doi",
+          "reason": "Same DOI; version/manifestation must be checked"
+        }
+      ],
+      "publication_decision": "not_applicable",
+      "verified": false
+    },
+    {
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S2666920X26001232",
+      "title": "Measuring Acceptance of Age-Tiered AI Literacy Guidebooks: A Developmentally Informed Study of K-12 Students and Teachers",
+      "doi": "10.1016/j.caeai.2026.100661",
+      "source_candidate_id": "W2026-10-09-A09",
+      "discovery_status": "review_existing",
+      "matches": [
+        {
+          "record_id": "KB-2026-0009",
+          "status": "review_same_doi",
+          "reason": "Same DOI; version/manifestation must be checked"
+        }
+      ],
+      "publication_decision": "not_applicable",
+      "verified": false
+    },
+    {
+      "source_url": "https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-026-05721-w",
+      "title": "Latent profiles of AI teaching self-efficacy and their associations with occupational well-being among vocational education teachers in China: the moderating role of AI anxiety",
+      "doi": "10.1186/s40359-026-05721-w",
+      "source_candidate_id": "W2026-10-09-A10",
+      "discovery_status": "review_existing",
+      "matches": [
+        {
+          "record_id": "KB-2026-0051",
+          "status": "review_same_doi",
+          "reason": "Same DOI; version/manifestation must be checked"
+        }
+      ],
+      "publication_decision": "not_applicable",
+      "verified": false
+    }
+  ]
+}
+
+STDERR:

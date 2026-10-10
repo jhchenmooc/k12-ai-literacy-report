@@ -1,0 +1,19 @@
+{
+  "total": 30,
+  "unsupported": 20,
+  "supported": 10,
+  "TP": 18,
+  "FN": 2,
+  "FP": 1,
+  "TN": 9,
+  "flag_recall": 0.9,
+  "false_negative_rate": 0.1,
+  "false_positive_rate": 0.1,
+  "undetected": [
+    "N01-SUBTLE",
+    "N04-SUBTLE"
+  ],
+  "note": "Metric against provisional synthetic labels only; not a measured real-world error rate or independent gold validation."
+}
+
+STDERR:

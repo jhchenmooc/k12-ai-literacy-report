@@ -1,0 +1,180 @@
+{
+  "notice": "STRUCTURAL TRIAGE ONLY — NOT SOURCE AUTHENTICATION OR PUBLICATION",
+  "results": [
+    {
+      "case_id": "FACT-RCT-001",
+      "status": "consistent_with_entered_evidence",
+      "matches": [
+        {
+          "key": "sample.initial_recruited",
+          "expected": 116,
+          "recorded": 116,
+          "op": "eq",
+          "locator": "Methods / participants",
+          "excerpt": "initially recruited 116 sophomore STEM students"
+        }
+      ],
+      "conflicts": [],
+      "unknowns": [],
+      "evidence_level": "publisher_index_excerpt",
+      "full_text_verified": false,
+      "note": "All findings compare manually structured values, not original source truth or full natural-language semantics.",
+      "publication_decision": "hold"
+    },
+    {
+      "case_id": "FACT-RCT-002",
+      "status": "conflict_with_entered_evidence",
+      "matches": [
+        {
+          "key": "sample.initial_recruited",
+          "expected": 116,
+          "recorded": 116,
+          "op": "eq",
+          "locator": "Methods / participants",
+          "excerpt": "initially recruited 116 sophomore STEM students"
+        }
+      ],
+      "conflicts": [
+        {
+          "key": "sample.analysed",
+          "expected": 116,
+          "recorded": 95,
+          "op": "eq",
+          "locator": "Methods / completed data",
+          "excerpt": "95 students completed all procedures and provided complete data"
+        }
+      ],
+      "unknowns": [],
+      "evidence_level": "publisher_index_excerpt",
+      "full_text_verified": false,
+      "note": "All findings compare manually structured values, not original source truth or full natural-language semantics.",
+      "publication_decision": "hold"
+    },
+    {
+      "case_id": "FACT-RCT-003",
+      "status": "consistent_with_entered_evidence",
+      "matches": [
+        {
+          "key": "sample.analysed",
+          "expected": 95,
+          "recorded": 95,
+          "op": "eq",
+          "locator": "Methods / completed data",
+          "excerpt": "95 students completed all procedures and provided complete data"
+        },
+        {
+          "key": "sample.experimental",
+          "expected": 50,
+          "recorded": 50,
+          "op": "eq",
+          "locator": "Methods / experimental group",
+          "excerpt": "experimental group (n = 50)"
+        },
+        {
+          "key": "sample.control",
+          "expected": 45,
+          "recorded": 45,
+          "op": "eq",
+          "locator": "Methods / control group",
+          "excerpt": "control group (n = 45)"
+        }
+      ],
+      "conflicts": [],
+      "unknowns": [],
+      "evidence_level": "publisher_index_excerpt",
+      "full_text_verified": false,
+      "note": "All findings compare manually structured values, not original source truth or full natural-language semantics.",
+      "publication_decision": "hold"
+    },
+    {
+      "case_id": "FACT-RCT-004",
+      "status": "conflict_with_entered_evidence",
+      "matches": [],
+      "conflicts": [
+        {
+          "key": "sample.population",
+          "expected": "primary school pupils",
+          "recorded": "university STEM sophomores",
+          "op": "eq",
+          "locator": "Methods / participant population",
+          "excerpt": "initially recruited 116 sophomore STEM students"
+        }
+      ],
+      "unknowns": [],
+      "evidence_level": "publisher_index_excerpt",
+      "full_text_verified": false,
+      "note": "All findings compare manually structured values, not original source truth or full natural-language semantics.",
+      "publication_decision": "hold"
+    },
+    {
+      "case_id": "FACT-UNESCO-001",
+      "status": "consistent_with_entered_evidence",
+      "matches": [
+        {
+          "key": "event.kind",
+          "expected": "hands-on design training",
+          "recorded": "hands-on design training",
+          "op": "eq",
+          "locator": "Opening / Digital Learning Week 2026",
+          "excerpt": "A training at Digital Learning Week 2026"
+        }
+      ],
+      "conflicts": [],
+      "unknowns": [],
+      "evidence_level": "publisher_index_excerpt",
+      "full_text_verified": false,
+      "note": "All findings compare manually structured values, not original source truth or full natural-language semantics.",
+      "publication_decision": "hold"
+    },
+    {
+      "case_id": "FACT-UNESCO-002",
+      "status": "cannot_determine",
+      "matches": [],
+      "conflicts": [],
+      "unknowns": [
+        {
+          "key": "policy.binding_mandate",
+          "reason": "no_source_fact"
+        }
+      ],
+      "evidence_level": "publisher_index_excerpt",
+      "full_text_verified": false,
+      "note": "All findings compare manually structured values, not original source truth or full natural-language semantics.",
+      "publication_decision": "hold"
+    },
+    {
+      "case_id": "FACT-UNESCO-003",
+      "status": "cannot_determine",
+      "matches": [],
+      "conflicts": [],
+      "unknowns": [
+        {
+          "key": "outcome.randomized_learning_result_reported",
+          "reason": "no_source_fact"
+        }
+      ],
+      "evidence_level": "publisher_index_excerpt",
+      "full_text_verified": false,
+      "note": "All findings compare manually structured values, not original source truth or full natural-language semantics.",
+      "publication_decision": "hold"
+    },
+    {
+      "case_id": "FACT-UNESCO-004",
+      "status": "cannot_determine",
+      "matches": [],
+      "conflicts": [],
+      "unknowns": [
+        {
+          "key": "outcome.satisfaction_percent",
+          "reason": "invalid_or_unsupported_assertion"
+        }
+      ],
+      "evidence_level": "publisher_index_excerpt",
+      "full_text_verified": false,
+      "note": "All findings compare manually structured values, not original source truth or full natural-language semantics.",
+      "publication_decision": "hold"
+    }
+  ]
+}
+
+STDERR:

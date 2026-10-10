@@ -1,0 +1,41 @@
+{
+  "repo": "D:\\codex\\ai\\audit-repo-20261010",
+  "diagnostic_inputs": [
+    {
+      "name": "facts_object",
+      "threw": true,
+      "error": "TypeError",
+      "message": "object is not iterable (cannot read property Symbol(Symbol.iterator))"
+    },
+    {
+      "name": "null_assertion",
+      "threw": true,
+      "error": "TypeError",
+      "message": "Cannot read properties of null (reading 'key')"
+    },
+    {
+      "name": "null_number_annotation",
+      "threw": true,
+      "error": "TypeError",
+      "message": "Cannot read properties of null (reading 'start')"
+    }
+  ],
+  "local_links": {
+    "html_pages": 16,
+    "checked": 434,
+    "bad": [],
+    "limitation": "Static href/src and fragment existence only; no browser or external link requests."
+  },
+  "pagination": {
+    "mock_available_feedback": 1001,
+    "get_requests": 10,
+    "post_requests": 1,
+    "reported_count": 1000,
+    "messages": [
+      "Reader-feedback issues: 1000",
+      "Published summary issue offline://mock"
+    ],
+    "exitCode": 0,
+    "external_requests": 0
+  }
+}

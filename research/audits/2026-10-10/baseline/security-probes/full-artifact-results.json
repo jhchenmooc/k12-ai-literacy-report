@@ -1,0 +1,49 @@
+{
+  "baseline_gate": {
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "Legacy issue not certified by this gate: weekly/2026-09-29_10-08/index.html",
+      "Legacy issue not certified by this gate: monthly/2026-09/index.html"
+    ],
+    "checked_editions": 0,
+    "legacy_editions": 2
+  },
+  "extra_gate": {
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "Legacy issue not certified by this gate: weekly/2026-09-29_10-08/index.html",
+      "Legacy issue not certified by this gate: monthly/2026-09/index.html"
+    ],
+    "checked_editions": 0,
+    "legacy_editions": 2
+  },
+  "generated_page_check": {
+    "exit_status": 1,
+    "stdout": "",
+    "stderr": "outdated generated site pages (run node research/render-site.js --write):\narchive/policy/index.html\n"
+  },
+  "isolated_rebuild": {
+    "exit_status": 0,
+    "stdout": "site pages written 10\n",
+    "stderr": ""
+  },
+  "normalized_generated_page_check": {
+    "exit_status": 0,
+    "stdout": "site pages consistent 10\n",
+    "stderr": ""
+  },
+  "normalized_gate": {
+    "ok": true,
+    "errors": [],
+    "warnings": [
+      "Legacy issue not certified by this gate: weekly/2026-09-29_10-08/index.html",
+      "Legacy issue not certified by this gate: monthly/2026-09/index.html"
+    ],
+    "checked_editions": 0,
+    "legacy_editions": 2
+  },
+  "extra_in_artifact": true,
+  "research_excluded": true
+}

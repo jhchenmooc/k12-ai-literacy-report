@@ -1,6 +1,6 @@
 "use strict";
 const {test}=require("node:test"),assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
-const {makeDraft}=require("./scaffold-weekly.js"),{merge}=require("./ingest-candidates.js"),{dailyBrief,markdown}=require("./prepare-daily-brief.js");
+const {makeDraft}=require("./scaffold-weekly.js"),{merge}=require("./ingest-candidates.js"),{dailyBrief,markdown,create}=require("./prepare-daily-brief.js");
 test("daily import remains fully visible to weekly selection",()=>{
  const week=makeDraft("2026-10-09").data;
  const a=merge(week,{batch_id:"oct09-1",searched_on:"2026-10-09",sources:[{group:"official",query:"AI literacy",status:"ok"}],candidates:[{source_url:"https://example.org/ai",source_title:"Synthetic AI item",source_locator:"paragraph",source_publication_date:"2026-10-09"}]}).worksheet;
@@ -73,4 +73,78 @@ test("daily suggestions require AI literacy scope A/B and a daily audience",()=>
  const count=extra=>{const w=makeDraft("2026-10-09").data;w.search_runs=[];w.items=[{...base,...extra}];return dailyBrief(w,"2026-10-10").suggested_for_publication.length};
  assert.equal(count({}),1);assert.equal(count({ai_lit_class:"B",audience:"other_stakeholders"}),1);
  for(const bad of [{ai_lit_class:"C"},{ai_lit_class:"unknown"},{ai_lit_class:undefined},{audience:"teacher_ed"},{audience:"unknown"},{audience:undefined}])assert.equal(count(bad),0,JSON.stringify(bad));
+});
+
+test("a fresh scaffold produces an empty daily briefing without an import",()=>{
+ const brief=dailyBrief(makeDraft("2026-10-09").data,"2026-10-10");
+ assert.deepEqual(brief.pending,[]);assert.deepEqual(brief.coverage,[]);assert.match(markdown(brief),/無已記錄批次/);
+});
+test("CLI reader includes historical late verification and updates only as background",t=>{
+ const os=require("node:os"),root=fs.mkdtempSync(path.join(os.tmpdir(),"daily-history-"));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const dir=path.join(root,"research","drafts");fs.mkdirSync(dir,{recursive:true});
+ const old=makeDraft("2026-10-09"),current=makeDraft("2026-10-16"),future=makeDraft("2026-10-23");
+ old.data.search_runs=[];current.data.search_runs=[];future.data.search_runs=[];
+ old.data.items=[{candidate_id:"late",source_url:"https://example.org/late",source_title:"Late",source_publication_date:"2026-10-09",discovered_on:"2026-10-09",verification_completed_on:"2026-10-16",first_disclosed_on:"2026-10-09",source_checked:true,conflict_unresolved:false,decision:"publish",ai_lit_class:"A",audience:"k12"},
+ {candidate_id:"unknown",source_url:"https://example.org/unknown",source_title:"Unknown",source_publication_date:"unknown",verification_completed_on:"2026-10-16",decision:"hold"},
+ {candidate_id:"updated",source_url:"https://example.org/updated",source_updates:[{discovered_on:"2026-10-16",source_url:"https://example.org/updated",note:"Correction",review_required:true}]}];
+ old.data.unresolved_duplicate_discoveries=[{searched_on:"2026-10-16",source_url:"https://example.org/repeat",review_required:true}];
+ future.data.items=[{...old.data.items[0],candidate_id:"future"}];
+ for(const draft of [old,current,future])fs.writeFileSync(path.join(dir,draft.filename),JSON.stringify(draft.data));
+ const before=fs.readFileSync(path.join(dir,old.filename),"utf8"),brief=create(root,"2026-10-17");
+ assert.deepEqual(brief.background.map(x=>x.candidate_id),["late","unknown"]);assert.deepEqual(brief.pending,[]);assert.deepEqual(brief.suggested_for_publication,[]);
+ assert.deepEqual(brief.source_updates.map(x=>x.source_url).sort(),["https://example.org/repeat","https://example.org/updated"]);
+ assert.deepEqual(brief.coverage,[]);assert.equal(fs.readFileSync(path.join(dir,old.filename),"utf8"),before);
+});
+
+test("history reader recognizes only empty legacy scaffolds and names malformed files",t=>{
+ const root=fs.mkdtempSync(path.join(require("node:os").tmpdir(),"daily-legacy-"));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const dir=path.join(root,"research","drafts");fs.mkdirSync(dir,{recursive:true});
+ const current=makeDraft("2026-10-16"),old=makeDraft("2026-10-09");
+ fs.writeFileSync(path.join(dir,current.filename),JSON.stringify(current.data));
+ delete old.data.search_runs;
+ const save=()=>fs.writeFileSync(path.join(dir,old.filename),JSON.stringify(old.data));save();
+ assert.deepEqual(create(root,"2026-10-17").background,[]);
+ for(const invalid of [null,false,{}]){old.data.search_runs=invalid;save();assert.throws(()=>create(root,"2026-10-17"),/2026-10-09_2026-10-15.json: invalid cumulative worksheet/)}
+ delete old.data.search_runs;old.data.items=[{candidate_id:"lost-coverage"}];save();
+ assert.throws(()=>create(root,"2026-10-17"),/invalid cumulative worksheet/);
+});
+
+test("history removes exact duplicate updates while retaining distinct corrections",t=>{
+ const root=fs.mkdtempSync(path.join(require("node:os").tmpdir(),"daily-dedup-"));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const dir=path.join(root,"research","drafts");fs.mkdirSync(dir,{recursive:true});
+ const current=makeDraft("2026-10-16"),old=makeDraft("2026-10-09");
+ const update={discovered_on:"2026-10-16",source_url:"https://example.org/a",note:"Correction",review_required:true};
+ current.data.cross_week_updates=[update];old.data.cross_week_updates=[{...update},{...update,note:"Second correction"}];
+ for(const draft of [current,old])fs.writeFileSync(path.join(dir,draft.filename),JSON.stringify(draft.data));
+ const brief=create(root,"2026-10-17");assert.deepEqual(brief.source_updates.map(x=>x.note),["Correction","Second correction"]);
+ assert.deepEqual(brief.suggested_for_publication,[]);
+});
+
+test("unresolved historical corrections veto a current recommendation until reviewed",t=>{
+ const root=fs.mkdtempSync(path.join(require("node:os").tmpdir(),"daily-history-veto-"));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const dir=path.join(root,"research","drafts");fs.mkdirSync(dir,{recursive:true});
+ const current=makeDraft("2026-10-16"),old=makeDraft("2026-10-09");
+ current.data.items=[{candidate_id:"current",source_url:"https://example.org/v?item=1",source_title:"V",source_publication_date:"2026-10-16",first_disclosed_on:"2026-10-16",verification_completed_on:"2026-10-16",source_checked:true,conflict_unresolved:false,decision:"publish",ai_lit_class:"A",audience:"k12"}];
+ old.data.items=[{candidate_id:"prior",source_url:"https://example.org/v?item=1&utm_source=prior",source_updates:[{discovered_on:"2026-10-10",note:"Still unresolved",review_required:true}]}];
+ const save=()=>{for(const draft of [current,old])fs.writeFileSync(path.join(dir,draft.filename),JSON.stringify(draft.data))};save();
+ const brief=create(root,"2026-10-17");assert.deepEqual(brief.suggested_for_publication,[]);assert.ok(brief.source_updates.some(x=>x.note==="Still unresolved"));
+ old.data.items[0].source_updates[0].review_required=false;save();assert.equal(create(root,"2026-10-17").suggested_for_publication.length,1);
+ old.data.items[0].source_url="https://example.org/v?item=2";old.data.items[0].source_updates[0].review_required=true;save();assert.equal(create(root,"2026-10-17").suggested_for_publication.length,1);
+});
+
+test("malformed worksheet internals return a named validation error",t=>{
+ const root=fs.mkdtempSync(path.join(require("node:os").tmpdir(),"daily-malformed-"));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const dir=path.join(root,"research","drafts");fs.mkdirSync(dir,{recursive:true});const draft=makeDraft("2026-10-09");
+ for(const bad of [{period:null},{items:[null]},{search_runs:[null]},{cross_week_updates:{}},{items:[{source_updates:[null]}]},{items:[{source_updates:[{review_required:"true"}]}]}]){
+  fs.writeFileSync(path.join(dir,draft.filename),JSON.stringify({...draft.data,...bad}));
+  assert.throws(()=>create(root,"2026-10-10"),/2026-10-09_2026-10-15.json: invalid cumulative worksheet/);
+ }
+});
+
+test("direct daily briefing matches pending updates by source URL without an ID",()=>{
+ const sheet=makeDraft("2026-10-09").data;
+ sheet.items=[{candidate_id:"c",source_url:"https://example.org/v",source_publication_date:"2026-10-09",first_disclosed_on:"2026-10-09",verification_completed_on:"2026-10-09",source_checked:true,conflict_unresolved:false,decision:"publish",ai_lit_class:"A",audience:"k12"}];
+ sheet.cross_week_updates=[{source_url:"https://example.org/v?utm_source=duplicate",review_required:true,discovered_on:"2026-10-09"}];
+ assert.deepEqual(dailyBrief(sheet,"2026-10-10").suggested_for_publication,[]);
+ sheet.cross_week_updates[0].review_required=false;assert.equal(dailyBrief(sheet,"2026-10-10").suggested_for_publication.length,1);
 });

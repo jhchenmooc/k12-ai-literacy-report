@@ -7,8 +7,6 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
-  pages: write
-  id-token: write
 concurrency:
   group: verified-pages
   cancel-in-progress: false
@@ -20,8 +18,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Install locked HTML parser without lifecycle scripts
+        run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Run publication validation regression tests
-        run: node --test research/validate-publication.test.js
+        run: node --test research/validate-publication.test.js research/validate-publication-security.test.js
       - name: Test semantic warning benchmark (diagnostic only)
         run: |
           node --test research/benchmark-semantic.test.js
@@ -68,27 +68,28 @@ jobs:
         run: |
           node --test research/render-site.test.js
           node research/render-site.js
+      - name: Verify public artifact inventory and build
+        run: node research/public-site.js . --build
   deploy:
     needs: verify
     if: github.event_name != 'pull_request' && vars.ENABLE_VERIFIED_PAGES_DEPLOY == 'true'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install locked HTML parser without lifecycle scripts
+        run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Build public-only Pages artifact
-        run: |
-          mkdir -p _public_site/publication
-          cp index.html .nojekyll _public_site/
-          for dir in feedback weekly monthly daily archive about assets design-system; do
-            if [ -d "$dir" ]; then cp -R "$dir" "_public_site/$dir"; fi
-          done
-          cp publication/issues.json _public_site/publication/issues.json
-          test ! -e _public_site/research
-          test -f _public_site/index.html
-          test -f _public_site/archive/index.html
-          test -f _public_site/about/index.html
+        run: node research/public-site.js . --build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

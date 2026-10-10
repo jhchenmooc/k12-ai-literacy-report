@@ -58,3 +58,25 @@ test("missing or malformed claim text fails closed",()=>{
  const r=auditCase(card,{source_id:card.card_id,assertions:[{key:"sample.analysed",op:"eq",value:95}]});
  assert.equal(r.status,"invalid_input");
 });
+
+test("malformed coverage collections return the existing invalid format and keep publication held",()=>{
+ for(const extra of [
+  {assertions:[null]},{assertions:[[]]},{assertions:{}},
+  {number_annotations:[null]},{number_annotations:[[]]},{number_annotations:{}},
+  {number_annotations:[{text:"194",start:"0",end:3,role:"asserted",field:"sample.analysed"}]}
+ ]){
+  const claim={source_id:card.card_id,claim:"194 人",assertions:[],...extra};
+  const coverage=auditCoverage(claim);
+  assert.equal(coverage.coverage,"invalid_input");
+  assert.ok(coverage.reason.length);assert.deepEqual(coverage.numbers,[]);assert.deepEqual(coverage.warnings,[]);
+  const result=auditCase(card,claim);
+  assert.equal(result.status,"invalid_input");assert.equal(result.publication_decision,"hold");
+ }
+});
+
+test("coverage CLI rejects duplicate evidence-card IDs rather than choosing the last",t=>{
+ const root=fs.mkdtempSync(path.join(require("node:os").tmpdir(),"coverage-duplicate-"));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const file=path.join(root,"pack.json");fs.writeFileSync(file,JSON.stringify({...pack,cards:[pack.cards[0],{...pack.cards[0]}]}));
+ const result=require("node:child_process").spawnSync(process.execPath,[path.join(__dirname,"audit-chinese-claim-coverage.js"),file],{encoding:"utf8"});
+ assert.equal(result.status,1);assert.match(result.stderr,/duplicate card IDs/);assert.equal(result.stdout,"");
+});

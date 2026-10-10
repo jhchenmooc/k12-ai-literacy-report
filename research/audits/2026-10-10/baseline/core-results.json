@@ -1,0 +1,94 @@
+{
+  "sha": "2329a91d1e5af66da00848fa72daca2c230edb47",
+  "node": "v24.16.0",
+  "platform": "win32",
+  "locale": "zh-TW",
+  "timezone": "Asia/Taipei",
+  "counts": {
+    ".js": 37,
+    ".test.js": 19,
+    ".html": 16,
+    ".css": 2,
+    ".json": 92,
+    ".csv": 6,
+    ".yml": 3
+  },
+  "jsonErrors": [],
+  "syntaxErrors": [],
+  "cli": [
+    {
+      "args": [
+        "research/validate-knowledge-base.js",
+        "."
+      ],
+      "status": 0,
+      "log": "validate-knowledge-base.js.log"
+    },
+    {
+      "args": [
+        "research/render-knowledge-base-years.js"
+      ],
+      "status": 0,
+      "log": "render-knowledge-base-years.js.log"
+    },
+    {
+      "args": [
+        "research/validate-publication.js",
+        "."
+      ],
+      "status": 0,
+      "log": "validate-publication.js.log"
+    },
+    {
+      "args": [
+        "research/render-site.js"
+      ],
+      "status": 1,
+      "log": "render-site.js.log"
+    },
+    {
+      "args": [
+        "research/benchmark-semantic.js",
+        "research/benchmarks/semantic-cases-2026-10.json"
+      ],
+      "status": 0,
+      "log": "benchmark-semantic.js.log"
+    },
+    {
+      "args": [
+        "research/validate-blind-pack.js",
+        "research/benchmarks/blind-review-candidates-60.json"
+      ],
+      "status": 0,
+      "log": "validate-blind-pack.js.log"
+    },
+    {
+      "args": [
+        "research/compare-source-facts.js",
+        "research/benchmarks/structured-source-fact-probes-2026-10-09.json"
+      ],
+      "status": 0,
+      "log": "compare-source-facts.js.log"
+    },
+    {
+      "args": [
+        "research/knowledge-base-import-preview.js"
+      ],
+      "status": 0,
+      "log": "knowledge-base-import-preview.js.log"
+    },
+    {
+      "args": [
+        "research/prepare-daily-brief.js",
+        "2026-10-10"
+      ],
+      "status": 0,
+      "log": "prepare-daily-brief.js.log"
+    }
+  ],
+  "defaultLocaleMismatch": [
+    "archive/policy/index.html"
+  ],
+  "forcedEnglishMismatch": [],
+  "trackedContentMismatch": []
+}

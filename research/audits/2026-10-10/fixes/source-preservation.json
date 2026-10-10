@@ -1,0 +1,164 @@
+[
+  {
+    "file": "monthly/2026-09/index.html",
+    "baseline": "ec1b1bda52a876f10510469128dd18c79a490d58b28b6ebcb7c2d3a4c98bb039",
+    "current": "ec1b1bda52a876f10510469128dd18c79a490d58b28b6ebcb7c2d3a4c98bb039",
+    "unchanged": true
+  },
+  {
+    "file": "publication/audits/2026-09-29_10-08.json",
+    "baseline": "344d1d35db5f9a50151a995501c9ef03a10b71990e4b171f5c79811ae6400ca0",
+    "current": "344d1d35db5f9a50151a995501c9ef03a10b71990e4b171f5c79811ae6400ca0",
+    "unchanged": true
+  },
+  {
+    "file": "publication/issues.json",
+    "baseline": "4f09dbfff18646308a1bc8f64746fc5a5c64293fd73b8172f6071dae99d89378",
+    "current": "4f09dbfff18646308a1bc8f64746fc5a5c64293fd73b8172f6071dae99d89378",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09-candidate-audit-v16.md",
+    "baseline": "2e6eaff18220a450b8478618dcdecf82068058d32054bfc93316da186a898287",
+    "current": "2e6eaff18220a450b8478618dcdecf82068058d32054bfc93316da186a898287",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09-daily-retraction-audit.md",
+    "baseline": "6f576b369896c0173e37c3a42ba1b7e137fa11a2b7be0920249f4022c100d37e",
+    "current": "6f576b369896c0173e37c3a42ba1b7e137fa11a2b7be0920249f4022c100d37e",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09-phase-b-source-and-site-check.md",
+    "baseline": "6d6187dcdd1027a6ddb22aaa4c784bbedbf99348fa402de43e6d4661354427b4",
+    "current": "6d6187dcdd1027a6ddb22aaa4c784bbedbf99348fa402de43e6d4661354427b4",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09-real-search-rehearsal.md",
+    "baseline": "ca152a35421f98229dc247eb562622f242720d2f9a157a58008c5eb59c48c853",
+    "current": "ca152a35421f98229dc247eb562622f242720d2f9a157a58008c5eb59c48c853",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09-stage-b-c-publication-date-venue-audit.md",
+    "baseline": "90a486ac2672de8d30c49fa1586a94d06621db498446345b3235277da7a97b47",
+    "current": "90a486ac2672de8d30c49fa1586a94d06621db498446345b3235277da7a97b47",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09-stage-b-expanded-search-audit.md",
+    "baseline": "e60c680e8fa788e22788a8f3c5053fef55bd5fd3b3e6248d560f919852decfdc",
+    "current": "e60c680e8fa788e22788a8f3c5053fef55bd5fd3b3e6248d560f919852decfdc",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09-stage-c-shared-candidate-acceptance.md",
+    "baseline": "a430338225ce8ff0ad8e9825896813fff4089a4061a047f1790ca5a38829cdf4",
+    "current": "a430338225ce8ff0ad8e9825896813fff4089a4061a047f1790ca5a38829cdf4",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09-v16-real-source-rehearsal.md",
+    "baseline": "37282d57cf64097cb807b55150774120d24396d201aa9a9f02224ff4e9a92ce7",
+    "current": "37282d57cf64097cb807b55150774120d24396d201aa9a9f02224ff4e9a92ce7",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09-weekly-policy-search.json",
+    "baseline": "24023929e61cdc1b911378a980e86d6759bceaef0534883e3a14127009536d79",
+    "current": "24023929e61cdc1b911378a980e86d6759bceaef0534883e3a14127009536d79",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09-weekly-policy-search.md",
+    "baseline": "bb4cc75a9d6204d661f75ee488e7d36424d2d5572a7cc46103e4c98678d28086",
+    "current": "bb4cc75a9d6204d661f75ee488e7d36424d2d5572a7cc46103e4c98678d28086",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09-weekly-research-a-verification.md",
+    "baseline": "6916b8719ae24db4d9fc4fdfa28c55708d652d82cf467dab98f0059c5cc63991",
+    "current": "6916b8719ae24db4d9fc4fdfa28c55708d652d82cf467dab98f0059c5cc63991",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09_2026-10-15-decision-draft.md",
+    "baseline": "9c35001c0665e09f833d4d2f33e3a72b30eb8254a0cc2ed750402b66264c9c33",
+    "current": "9c35001c0665e09f833d4d2f33e3a72b30eb8254a0cc2ed750402b66264c9c33",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09_2026-10-15-shortlist.md",
+    "baseline": "035649ffe2b0a54d28bbe2245d095d7d0c2b83c7b7bbefd4f3f02d21f8960798",
+    "current": "035649ffe2b0a54d28bbe2245d095d7d0c2b83c7b7bbefd4f3f02d21f8960798",
+    "unchanged": true
+  },
+  {
+    "file": "research/drafts/2026-10-09_2026-10-15.json",
+    "baseline": "ffe12e016d67f0753ef8f25109d3bb0ba5a06320f22599038abc86a4c686678c",
+    "current": "ffe12e016d67f0753ef8f25109d3bb0ba5a06320f22599038abc86a4c686678c",
+    "unchanged": true
+  },
+  {
+    "file": "research/knowledge-base/data/records.csv",
+    "baseline": "4917d5a72eb28b17dbe1d3c01a2f19dcfb0fff35df0658ed53947484eac4fc6d",
+    "current": "4917d5a72eb28b17dbe1d3c01a2f19dcfb0fff35df0658ed53947484eac4fc6d",
+    "unchanged": true
+  },
+  {
+    "file": "research/knowledge-base/data/relations.csv",
+    "baseline": "910a1fcdef62e25da28bfdf65ff01095b864047f3d06c9369a5fe8c66062f45b",
+    "current": "910a1fcdef62e25da28bfdf65ff01095b864047f3d06c9369a5fe8c66062f45b",
+    "unchanged": true
+  },
+  {
+    "file": "research/knowledge-base/data/search_runs.csv",
+    "baseline": "6911666b4551331c62f4b8e3ab0997d084d09615be455f6066a69e781f785ec8",
+    "current": "6911666b4551331c62f4b8e3ab0997d084d09615be455f6066a69e781f785ec8",
+    "unchanged": true
+  },
+  {
+    "file": "research/reference/README.md",
+    "baseline": "a212361521b75d9252eb783b3460c8ff320b8f032d32725edec7dba278214e5c",
+    "current": "a212361521b75d9252eb783b3460c8ff320b8f032d32725edec7dba278214e5c",
+    "unchanged": true
+  },
+  {
+    "file": "research/reference/tw-k12-ai-literacy-framework-2026-04-17.pdf",
+    "baseline": "a374c8f3c949d8c0135e2abe95cb36d0f0090b8f7e44486c4650cf87f909df93",
+    "current": "a374c8f3c949d8c0135e2abe95cb36d0f0090b8f7e44486c4650cf87f909df93",
+    "unchanged": true
+  },
+  {
+    "file": "research/reference/tw-k12-ai-literacy-framework-2026-04-17.txt",
+    "baseline": "feb91112dc878b4db7868ca5394f7b157719ce357d186e91960c04aee6fdf6b1",
+    "current": "feb91112dc878b4db7868ca5394f7b157719ce357d186e91960c04aee6fdf6b1",
+    "unchanged": true
+  },
+  {
+    "file": "research/retrospective-2026-09-29_10-08.csv",
+    "baseline": "80dfbbca7bf438681a79b12335d3c54bc3865b6e849f0913ce40598c38645226",
+    "current": "80dfbbca7bf438681a79b12335d3c54bc3865b6e849f0913ce40598c38645226",
+    "unchanged": true
+  },
+  {
+    "file": "research/tool-trial-2026-10-09/screening.csv",
+    "baseline": "cc191dd0e9ed2c91047c17ff160d72831da2fc7e14c037efe3c30b71826704f3",
+    "current": "cc191dd0e9ed2c91047c17ff160d72831da2fc7e14c037efe3c30b71826704f3",
+    "unchanged": true
+  },
+  {
+    "file": "research/venue-watchlist.csv",
+    "baseline": "a7cb4185c066448e5d91e4230b42447f619369f4ab388cfb4a8fcdae4bc74f01",
+    "current": "a7cb4185c066448e5d91e4230b42447f619369f4ab388cfb4a8fcdae4bc74f01",
+    "unchanged": true
+  },
+  {
+    "file": "weekly/2026-09-29_10-08/index.html",
+    "baseline": "3394e32476d1d8bd58276e5b44e36ec8c4cb774cb4fd43c81c2e8e3ba7927fba",
+    "current": "3394e32476d1d8bd58276e5b44e36ec8c4cb774cb4fd43c81c2e8e3ba7927fba",
+    "unchanged": true
+  }
+]

@@ -1,0 +1,26 @@
+# Build inputs and generated text use LF on Windows and Linux.
+*.js text eol=lf
+*.cjs text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.svg text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# Preserve recorded data and source evidence byte-for-byte, including newlines.
+*.csv -text !eol
+publication/sources/** -text !eol
+research/reference/** -text !eol
+
+# Preserve archived review evidence and logs exactly as originally recorded.
+research/audits/2026-10-10/baseline/** -text !eol -whitespace
+research/audits/2026-10-10/fixes/** -text !eol -whitespace
+research/audits/2026-10-10/claude-followup/** -text !eol -whitespace
+research/audits/2026-10-10/p3-followup/** -text !eol -whitespace
+research/audits/2026-10-10/metadata-followup/** -text !eol -whitespace
+research/audits/2026-10-10/favicon-followup/** -text !eol -whitespace
+research/audits/2026-10-10/integration/** -text !eol -whitespace

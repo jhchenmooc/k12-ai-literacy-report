@@ -1,0 +1,4 @@
+
+STDERR:
+outdated generated site pages (run node research/render-site.js --write):
+archive/policy/index.html

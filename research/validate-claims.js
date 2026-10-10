@@ -55,9 +55,16 @@ if(require.main===module){
  const fs=require("fs");
  const input=process.argv[2];
  if(!input){console.error("Usage: node research/validate-claims.js file.json");process.exit(2)}
- const rows=JSON.parse(fs.readFileSync(input,"utf8"));
- const result=rows.map((c)=>({id:c.claim_id,...check(c)}));
- console.log(JSON.stringify(result,null,2));
- if(result.some(x=>!x.allow&&rows.find(c=>c.claim_id===x.id)?.decision==="publish"))process.exit(1);
+ try{
+  const rows=JSON.parse(fs.readFileSync(input,"utf8"));
+  if(!Array.isArray(rows))throw Error("claims input must be an array");
+  const counts=new Map();for(const c of rows)if(c&&typeof c.claim_id==="string")counts.set(c.claim_id,(counts.get(c.claim_id)||0)+1);
+  const result=rows.map(c=>{
+   const r=check(c),duplicate=c&&counts.get(c.claim_id)>1;
+   return {id:c?.claim_id,allow:r.allow&&!duplicate,reasons:[...r.reasons,...(duplicate?["duplicate claim_id"]:[])]};
+  });
+  console.log(JSON.stringify(result,null,2));
+  if(result.some((x,i)=>counts.get(rows[i]?.claim_id)>1||!rows[i]||typeof rows[i]!=="object"||(!x.allow&&rows[i].decision!=="hold")))process.exitCode=1;
+ }catch(e){console.error(e.message);process.exitCode=1}
 }
 module.exports={check};

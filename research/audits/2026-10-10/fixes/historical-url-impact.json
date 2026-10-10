@@ -1,0 +1,700 @@
+{
+  "scope": "Tracked research and publication JSON source_url fields; read-only; cannot recover discarded/unrecorded import candidates",
+  "observations": 191,
+  "distinctUrls": 73,
+  "changedKeys": [
+    {
+      "file": "publication/audits/2026-09-29_10-08.json",
+      "location": "/claims/0/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "old": "https://www.ei-ie.org/en/item/33089%3ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia"
+    },
+    {
+      "file": "publication/audits/2026-09-29_10-08.json",
+      "location": "/claims/1/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "old": "https://www.ei-ie.org/en/item/33089%3ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia"
+    },
+    {
+      "file": "publication/audits/2026-09-29_10-08.json",
+      "location": "/claims/9/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "publication/audits/2026-09-29_10-08.json",
+      "location": "/claims/12/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "old": "https://www.ei-ie.org/en/item/33089%3ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia"
+    },
+    {
+      "file": "research/benchmarks/blind-review-candidates-60.json",
+      "location": "/cases/0/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "old": "https://www.ei-ie.org/en/item/33089%3ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia"
+    },
+    {
+      "file": "research/benchmarks/blind-review-candidates-60.json",
+      "location": "/cases/1/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "old": "https://www.ei-ie.org/en/item/33089%3ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia"
+    },
+    {
+      "file": "research/benchmarks/blind-review-candidates-60.json",
+      "location": "/cases/2/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "old": "https://www.ei-ie.org/en/item/33089%3ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia"
+    },
+    {
+      "file": "research/benchmarks/blind-review-candidates-60.json",
+      "location": "/cases/3/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "old": "https://www.ei-ie.org/en/item/33089%3ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia"
+    },
+    {
+      "file": "research/benchmarks/blind-review-candidates-60.json",
+      "location": "/cases/4/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "old": "https://www.ei-ie.org/en/item/33089%3ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia"
+    },
+    {
+      "file": "research/benchmarks/blind-review-candidates-60.json",
+      "location": "/cases/5/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "old": "https://www.ei-ie.org/en/item/33089%3ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ales-cadres-de-reference-sur-lintelligence-artificielle-contribuent-ils-a-transformer-les-ecoles-en-terrains-dexperimentation-et-en-lieux-dextraction-de-valeur-pour-lia"
+    },
+    {
+      "file": "research/benchmarks/blind-review-candidates-60.json",
+      "location": "/cases/24/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "research/benchmarks/blind-review-candidates-60.json",
+      "location": "/cases/25/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "research/benchmarks/blind-review-candidates-60.json",
+      "location": "/cases/26/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "research/benchmarks/blind-review-candidates-60.json",
+      "location": "/cases/27/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "research/benchmarks/blind-review-candidates-60.json",
+      "location": "/cases/28/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "research/benchmarks/blind-review-candidates-60.json",
+      "location": "/cases/29/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "research/benchmarks/primary-source-screening-2026-10-09.json",
+      "location": "/reviews/0/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor",
+      "old": "https://www.ei-ie.org/en/item/33089%3ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor"
+    },
+    {
+      "file": "research/benchmarks/primary-source-screening-2026-10-09.json",
+      "location": "/reviews/1/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor",
+      "old": "https://www.ei-ie.org/en/item/33089%3ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor"
+    },
+    {
+      "file": "research/benchmarks/primary-source-screening-2026-10-09.json",
+      "location": "/reviews/8/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "research/benchmarks/primary-source-screening-2026-10-09.json",
+      "location": "/reviews/9/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "research/benchmarks/semantic-screening-remaining40-2026-10-09.json",
+      "location": "/reviews/0/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor",
+      "old": "https://www.ei-ie.org/en/item/33089%3ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor"
+    },
+    {
+      "file": "research/benchmarks/semantic-screening-remaining40-2026-10-09.json",
+      "location": "/reviews/1/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor",
+      "old": "https://www.ei-ie.org/en/item/33089%3ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor"
+    },
+    {
+      "file": "research/benchmarks/semantic-screening-remaining40-2026-10-09.json",
+      "location": "/reviews/2/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor",
+      "old": "https://www.ei-ie.org/en/item/33089%3ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor"
+    },
+    {
+      "file": "research/benchmarks/semantic-screening-remaining40-2026-10-09.json",
+      "location": "/reviews/3/source_url",
+      "url": "https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor",
+      "old": "https://www.ei-ie.org/en/item/33089%3ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor",
+      "current": "https://www.ei-ie.org/en/item/33089%3Ason-los-encuadres-de-la-ia-complices-de-convertir-las-escuelas-en-campos-de-pruebas-y-espacios-de-extraccion-de-valor"
+    },
+    {
+      "file": "research/benchmarks/semantic-screening-remaining40-2026-10-09.json",
+      "location": "/reviews/16/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "research/benchmarks/semantic-screening-remaining40-2026-10-09.json",
+      "location": "/reviews/17/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "research/benchmarks/semantic-screening-remaining40-2026-10-09.json",
+      "location": "/reviews/18/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "research/benchmarks/semantic-screening-remaining40-2026-10-09.json",
+      "location": "/reviews/19/source_url",
+      "url": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/",
+      "old": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026",
+      "current": "https://iite.unesco.org/announcements/register-your-event-join-unesco-global-media-and-information-literacy-week-2026/"
+    },
+    {
+      "file": "research/drafts/2026-10-09_2026-10-15.json",
+      "location": "/items/0/source_url",
+      "url": "https://arboretum.psu.edu/events/nature-ai-detectives-an-outdoor-ai-literacy-adventure-2/",
+      "old": "https://arboretum.psu.edu/events/nature-ai-detectives-an-outdoor-ai-literacy-adventure-2",
+      "current": "https://arboretum.psu.edu/events/nature-ai-detectives-an-outdoor-ai-literacy-adventure-2/"
+    },
+    {
+      "file": "research/drafts/2026-10-09_2026-10-15.json",
+      "location": "/items/1/source_url",
+      "url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_literacy_Sec.html",
+      "old": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/ai_literacy_sec.html",
+      "current": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_literacy_Sec.html"
+    },
+    {
+      "file": "research/drafts/2026-10-09_2026-10-15.json",
+      "location": "/items/2/source_url",
+      "url": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_Subjects_Pri.html",
+      "old": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/ai_subjects_pri.html",
+      "current": "https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_Subjects_Pri.html"
+    },
+    {
+      "file": "research/drafts/2026-10-09_2026-10-15.json",
+      "location": "/items/3/source_url",
+      "url": "https://iite.unesco.org/announcements/digital-transformation-and-green-skills-in-tvet-building-pedagogical-capacity-africa-regional-series/",
+      "old": "https://iite.unesco.org/announcements/digital-transformation-and-green-skills-in-tvet-building-pedagogical-capacity-africa-regional-series",
+      "current": "https://iite.unesco.org/announcements/digital-transformation-and-green-skills-in-tvet-building-pedagogical-capacity-africa-regional-series/"
+    },
+    {
+      "file": "research/drafts/2026-10-09_2026-10-15.json",
+      "location": "/items/8/source_url",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2666920X26001232",
+      "old": "https://www.sciencedirect.com/science/article/pii/s2666920x26001232",
+      "current": "https://www.sciencedirect.com/science/article/pii/S2666920X26001232"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/1/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2335691",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2335691"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/2/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2280689",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2280689"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/3/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288539",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288539"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/4/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2282137",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2282137"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/7/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276914",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276914"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/8/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273564",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273564"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/10/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2277717",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2277717"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/11/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2353011",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2353011"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/12/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279932",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279932"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/15/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288639",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288639"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/16/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2289481",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2289481"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/17/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279837",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279837"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/18/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera25/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2184589",
+      "old": "https://convention2.allacademic.com/one/aera/aera25/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera25/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2184589"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/20/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2281139",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2281139"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/21/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273778",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273778"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/22/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288275",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288275"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/24/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288144",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288144"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/26/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2272689",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2272689"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/27/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276315",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276315"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/28/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2284174",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2284174"
+    },
+    {
+      "file": "research/p0-b1-pending-2026-10-09/aera.json",
+      "location": "/items/32/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2281719",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2281719"
+    },
+    {
+      "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+      "location": "/items/74/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279866",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279866"
+    },
+    {
+      "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+      "location": "/items/75/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2287154",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2287154"
+    },
+    {
+      "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+      "location": "/items/78/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273521",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273521"
+    },
+    {
+      "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+      "location": "/items/79/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276758",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276758"
+    },
+    {
+      "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+      "location": "/items/80/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2282134",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2282134"
+    },
+    {
+      "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+      "location": "/items/81/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2283563",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2283563"
+    },
+    {
+      "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+      "location": "/items/82/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2277136",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2277136"
+    },
+    {
+      "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+      "location": "/items/83/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2275753",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2275753"
+    },
+    {
+      "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+      "location": "/items/84/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2283932",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2283932"
+    },
+    {
+      "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+      "location": "/items/85/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279151",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279151"
+    },
+    {
+      "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+      "location": "/items/87/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276835",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276835"
+    },
+    {
+      "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+      "location": "/items/88/source_url",
+      "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2280516",
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2280516"
+    }
+  ],
+  "oldKeyCollisions": [
+    {
+      "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+      "records": [
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/1/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2335691",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2335691"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/2/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2280689",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2280689"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/3/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288539",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288539"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/4/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2282137",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2282137"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/7/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276914",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276914"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/8/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273564",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273564"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/10/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2277717",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2277717"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/11/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2353011",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2353011"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/12/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279932",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279932"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/15/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288639",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288639"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/16/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2289481",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2289481"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/17/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279837",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279837"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/20/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2281139",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2281139"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/21/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273778",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273778"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/22/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288275",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288275"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/24/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288144",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2288144"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/26/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2272689",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2272689"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/27/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276315",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276315"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/28/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2284174",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2284174"
+        },
+        {
+          "file": "research/p0-b1-pending-2026-10-09/aera.json",
+          "location": "/items/32/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2281719",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2281719"
+        },
+        {
+          "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+          "location": "/items/74/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279866",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279866"
+        },
+        {
+          "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+          "location": "/items/75/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2287154",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2287154"
+        },
+        {
+          "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+          "location": "/items/78/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273521",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2273521"
+        },
+        {
+          "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+          "location": "/items/79/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276758",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276758"
+        },
+        {
+          "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+          "location": "/items/80/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2282134",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2282134"
+        },
+        {
+          "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+          "location": "/items/81/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2283563",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2283563"
+        },
+        {
+          "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+          "location": "/items/82/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2277136",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2277136"
+        },
+        {
+          "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+          "location": "/items/83/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2275753",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2275753"
+        },
+        {
+          "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+          "location": "/items/84/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2283932",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2283932"
+        },
+        {
+          "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+          "location": "/items/85/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279151",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2279151"
+        },
+        {
+          "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+          "location": "/items/87/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276835",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2276835"
+        },
+        {
+          "file": "research/p0-bpol-2026-10-09/bidx-countries.json",
+          "location": "/items/88/source_url",
+          "url": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2280516",
+          "old": "https://convention2.allacademic.com/one/aera/aera26/index.php",
+          "current": "https://convention2.allacademic.com/one/aera/aera26/index.php?cmd=Online+Program+View+Paper&selected_paper_id=2280516"
+        }
+      ]
+    }
+  ]
+}

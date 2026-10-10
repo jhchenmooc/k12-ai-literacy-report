@@ -126,3 +126,22 @@ test("Discover Education July and May 2026 studies keep exact online dates",()=>
  assert.ok(x["by-year/2026/first_publication"].includes("KB-2026-0014"));
  assert.ok(candidates.every(y=>y.decision==="hold"));
 });
+
+test("CSV rejects malformed closing quotes and ambiguous headers",()=>{
+ for(const s of ['id,title\n1,"A"B\n','id,title,title\n1,Original,Replacement\n','id,\n1,A\n','id,title\n1,A"B\n','id,title\n,,\n','id,title\n1,"A" \n','id,title\n1,A\r'])assert.throws(()=>parseCsv(s),/CSV/);
+ assert.deepEqual(parseCsv('id,title\n,\n'),[{id:"",title:""}]);
+ assert.deepEqual(parseCsv('id,title\r\n1,"A\r\nB, ""C"""\r\n'),[{id:"1",title:'A\r\nB, "C"'}]);
+ assert.deepEqual(parseCsv('id,title\n1,""'),[{id:"1",title:""}]);
+ assert.deepEqual(parseCsv('\ufeffid,title\n1,A\n'),[{id:"1",title:"A"}]);
+});
+test("known search count pairs stay ordered even if another count is unknown",()=>{
+ const run={run_id:"partial",searched_on:"2026-10-09",source_id:"J01",query:"AI",coverage_level:"items_screened",status:"partial"};
+ for(const counts of [["","3","4"],["3","4",""],["3","","4"]]){
+  const [results_seen,results_screened,results_recorded]=counts;
+  assert.ok(validate(records,relations,[{...run,results_seen,results_screened,results_recorded}],candidates).some(x=>x.includes("inconsistent search counts")),JSON.stringify(counts));
+ }
+ for(const counts of [["","4","3"],["4","3",""],["4","","3"],["","",""]]){
+  const [results_seen,results_screened,results_recorded]=counts;
+  assert.deepEqual(validate(records,relations,[{...run,results_seen,results_screened,results_recorded}],candidates),[]);
+ }
+});

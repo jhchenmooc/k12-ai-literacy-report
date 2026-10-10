@@ -1,0 +1,26 @@
+# K–12 AI 素養每日快訊待審包（非正式刊物）
+
+蒐集日：2026-10-09；編輯日：2026-10-10
+
+**未有核准快訊；不可自動發布。**
+
+## 待查
+- W2026-10-09-A10｜Latent profiles of AI teaching self-efficacy and their associations with occupational well-being among vocational education teachers in China: the moderating role of AI anxiety｜2026-10-09｜Not certified or approved; requires original-source review.｜https://bmcpsychology.biomedcentral.com/articles/10.1186/s40359-026-05721-w
+
+## 跨期背景
+- W2026-10-09-A08｜The Effects of K-12 Artificial Intelligence Education in Enhancing AI Literacy: A Meta-Analysis｜2026-08-03｜Earlier source publication: background only, not this week's new event｜https://onlinelibrary.wiley.com/doi/10.1002/jcal.70308
+- W2026-10-09-A09｜Measuring Acceptance of Age-Tiered AI Literacy Guidebooks: A Developmentally Informed Study of K-12 Students and Teachers｜2026-08-24｜Earlier source publication: background only, not this week's new event｜https://www.sciencedirect.com/science/article/pii/S2666920X26001232
+
+## 排除
+（無）
+
+## 搜尋覆蓋
+- 2026-10-09-research-rehearsal-1：official-policy/ok (HK Education Bureau October 9 secondary AI literacy professional development)；research/ok (K-12 AI literacy journal research site:sciencedirect.com OR site:onlinelibrary.wiley.com)；multilingual-backfill/ok (K12 artificial intelligence literacy policy research October 2026 earlier releases)
+- 2026-10-09-tool-wave-a-1：research-new-doi/ok (Crossref filter from-created-date:2026-10-09 + query.bibliographic AI literacy / generative AI x school terms (research/p0-tool-wave-2026-10-09/group-a.json))；research-new-doi/unavailable (OpenAlex filter from_created_date:2026-10-09 (requires paid plan, HTTP 429))；preprints/ok (alphaXiv discover_papers published_after 2026-10-09 + arXiv API submittedDate 2026-10-08..09 (0 results; 10/09 not yet announced))
+
+## 跨週更新待複核
+（無）
+
+AI shortlist is not actual source verification, editorial approval, or permission to publish.
+
+STDERR:

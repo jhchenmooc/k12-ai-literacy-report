@@ -1,0 +1,10 @@
+{"name":"path-case","expected":"2 distinct items","actual":{"items":1,"duplicates":["https://example.org/doc"],"unresolved":[{"searched_on":"2026-10-09","batch_id":"one","source_url":"https://example.org/doc","related_candidate_id":"W2026-10-09-A01","review_required":true}]}}
+{"name":"unknown-query","expected":"2 distinct items","actual":{"items":1,"duplicates":["https://example.org/read?item=11"],"unresolved":[{"searched_on":"2026-10-09","batch_id":"one","source_url":"https://example.org/read?item=11","related_candidate_id":"W2026-10-09-A01","review_required":true}]}}
+{"name":"nonstring-update-note","expected":"reject malformed update or retain unresolved update","actual":{"duplicates":["https://example.org/verified"],"unresolved":[],"updates":[],"suggested":[{"candidate_id":"W2026-10-09-A01","source_url":"https://example.org/verified","review_only":true}]}}
+{"name":"empty-scaffold","expected":"empty daily brief","actual":"invalid cumulative worksheet"}
+{"name":"invalid-csv","input":"record_id,title\n1,\"A\"B\n","expected":"reject malformed quote or duplicate header","actual":[{"record_id":"1","title":"AB"}]}
+{"name":"invalid-csv","input":"record_id,title,title\n1,Original,Replacement\n","expected":"reject malformed quote or duplicate header","actual":[{"record_id":"1","title":"Replacement"}]}
+{"name":"partial-search-count","expected":"recorded cannot exceed screened","actual":[]}
+{"name":"cross-week-late-verification","expected":"older candidate appears as background or pending review","actual":{"directOld":1,"cliRoot":0}}
+{"name":"controls","dates":{"invalid":false,"leap":true},"csv":[{"id":"1","title":"A\r\nB, \"C\""}],"urlsDistinct":{"status":"distinct_or_unknown","reason":"No proven identity; preserve both"},"previewCount":2,"indexOrder":true}
+{"name":"rename-failure-recovery","error":"synthetic rename failure","originalUnchanged":true,"remainingLockOrTemp":[],"retryAdded":1}

@@ -1,0 +1,1356 @@
+TAP version 13
+# Subtest: detects hidden population and causal overclaim despite matching N=95
+ok 1 - detects hidden population and causal overclaim despite matching N=95
+  ---
+  duration_ms: 4.6825
+  type: 'test'
+  ...
+# Subtest: 116 recruited and analyzed contradiction remains blocked with mapped numbers
+ok 2 - 116 recruited and analyzed contradiction remains blocked with mapped numbers
+  ---
+  duration_ms: 1.1149
+  type: 'test'
+  ...
+# Subtest: unmapped number and policy implication force incomplete even if subset matches
+ok 3 - unmapped number and policy implication force incomplete even if subset matches
+  ---
+  duration_ms: 1.9547
+  type: 'test'
+  ...
+# Subtest: a fully mapped typed statement remains held and not certified
+ok 4 - a fully mapped typed statement remains held and not certified
+  ---
+  duration_ms: 0.8077
+  type: 'test'
+  ...
+# Subtest: number shown as context-only never counted as verified
+ok 5 - number shown as context-only never counted as verified
+  ---
+  duration_ms: 0.6717
+  type: 'test'
+  ...
+# Subtest: made-up annotations do not bypass coverage
+ok 6 - made-up annotations do not bypass coverage
+  ---
+  duration_ms: 0.738
+  type: 'test'
+  ...
+# Subtest: unknown mandatory field never silently treated as false
+ok 7 - unknown mandatory field never silently treated as false
+  ---
+  duration_ms: 0.5944
+  type: 'test'
+  ...
+# Subtest: missing or malformed claim text fails closed
+ok 8 - missing or malformed claim text fails closed
+  ---
+  duration_ms: 0.5794
+  type: 'test'
+  ...
+# Subtest: paired synthetic dataset has ten groups and 30 cases
+ok 9 - paired synthetic dataset has ten groups and 30 cases
+  ---
+  duration_ms: 2.1307
+  type: 'test'
+  ...
+# Subtest: all case labels are explicitly provisional
+ok 10 - all case labels are explicitly provisional
+  ---
+  duration_ms: 0.5353
+  type: 'test'
+  ...
+# Subtest: no automatic semantic approval
+ok 11 - no automatic semantic approval
+  ---
+  duration_ms: 1.3459
+  type: 'test'
+  ...
+# Subtest: baseline is reproducible including two misses
+ok 12 - baseline is reproducible including two misses
+  ---
+  duration_ms: 4.2957
+  type: 'test'
+  ...
+# Subtest: obvious causal overclaim and policy mandate receive warnings
+ok 13 - obvious causal overclaim and policy mandate receive warnings
+  ---
+  duration_ms: 1.2187
+  type: 'test'
+  ...
+# Subtest: eight typed probes produce conservative reproducible outcomes
+ok 14 - eight typed probes produce conservative reproducible outcomes
+  ---
+  duration_ms: 4.679
+  type: 'test'
+  ...
+# Subtest: 116 initially recruited cannot support 116 analyzed
+ok 15 - 116 initially recruited cannot support 116 analyzed
+  ---
+  duration_ms: 0.7111
+  type: 'test'
+  ...
+# Subtest: unknown legal mandates and learning outcomes remain unknown, not false
+ok 16 - unknown legal mandates and learning outcomes remain unknown, not false
+  ---
+  duration_ms: 2.4648
+  type: 'test'
+  ...
+# Subtest: partial matches cannot hide a contradiction
+ok 17 - partial matches cannot hide a contradiction
+  ---
+  duration_ms: 0.6265
+  type: 'test'
+  ...
+# Subtest: missing facts do not become a negative conclusion
+ok 18 - missing facts do not become a negative conclusion
+  ---
+  duration_ms: 0.4965
+  type: 'test'
+  ...
+# Subtest: fact provenance is fail closed on missing locator and pretend verification
+ok 19 - fact provenance is fail closed on missing locator and pretend verification
+  ---
+  duration_ms: 0.7586
+  type: 'test'
+  ...
+# Subtest: invalid schema and fake source mapping never pass as evidence
+ok 20 - invalid schema and fake source mapping never pass as evidence
+  ---
+  duration_ms: 0.5959
+  type: 'test'
+  ...
+# Subtest: not a natural language validator, and no automatic publication even when values agree
+ok 21 - not a natural language validator, and no automatic publication even when values agree
+  ---
+  duration_ms: 0.7334
+  type: 'test'
+  ...
+# Subtest: cumulative import de-duplicates and preserves existing hold
+ok 22 - cumulative import de-duplicates and preserves existing hold
+  ---
+  duration_ms: 13.0885
+  type: 'test'
+  ...
+# Subtest: duplicate batch rejected and original untouched
+ok 23 - duplicate batch rejected and original untouched
+  ---
+  duration_ms: 5.2381
+  type: 'test'
+  ...
+# Subtest: invalid coverage and source date fail closed
+ok 24 - invalid coverage and source date fail closed
+  ---
+  duration_ms: 0.9987
+  type: 'test'
+  ...
+# Subtest: event key merges across different language URLs
+ok 25 - event key merges across different language URLs
+  ---
+  duration_ms: 1.6857
+  type: 'test'
+  ...
+# Subtest: new candidate has day and batch provenance for weekly reuse
+ok 26 - new candidate has day and batch provenance for weekly reuse
+  ---
+  duration_ms: 1.2527
+  type: 'test'
+  ...
+# Subtest: cross-week duplicate is linked instead of reintroduced
+ok 27 - cross-week duplicate is linked instead of reintroduced
+  ---
+  duration_ms: 1.8213
+  type: 'test'
+  ...
+# Subtest: same-week update reference does not upgrade hold
+ok 28 - same-week update reference does not upgrade hold
+  ---
+  duration_ms: 2.717
+  type: 'test'
+  ...
+# Subtest: source URLs with substantive query params remain distinct
+ok 29 - source URLs with substantive query params remain distinct
+  ---
+  duration_ms: 1.0702
+  type: 'test'
+  ...
+# Subtest: unannotated duplicate is retained as unresolved instead of silently discarded
+ok 30 - unannotated duplicate is retained as unresolved instead of silently discarded
+  ---
+  duration_ms: 1.2908
+  type: 'test'
+  ...
+# Subtest: import date outside selected week is rejected
+ok 31 - import date outside selected week is rejected
+  ---
+  duration_ms: 0.7171
+  type: 'test'
+  ...
+# Subtest: incremental import preserves existing verified summary counters
+ok 32 - incremental import preserves existing verified summary counters
+  ---
+  duration_ms: 0.8667
+  type: 'test'
+  ...
+# Subtest: search log never claims 30 days were actually inspected unless provided
+ok 33 - search log never claims 30 days were actually inspected unless provided
+  ---
+  duration_ms: 1.0506
+  type: 'test'
+  ...
+# Subtest: duplicate batch IDs across different weekly sheets cannot be silently reused
+ok 34 - duplicate batch IDs across different weekly sheets cannot be silently reused
+  ---
+  duration_ms: 1.2601
+  type: 'test'
+  ...
+# Subtest: candidate source with embedded URL credentials fails closed
+ok 35 - candidate source with embedded URL credentials fails closed
+  ---
+  duration_ms: 0.6086
+  type: 'test'
+  ...
+# Subtest: candidate marked as already published in the future fails closed
+ok 36 - candidate marked as already published in the future fails closed
+  ---
+  duration_ms: 0.585
+  type: 'test'
+  ...
+# Subtest: exclusive writer lock prevents losing concurrent candidate writes
+ok 37 - exclusive writer lock prevents losing concurrent candidate writes
+  ---
+  duration_ms: 38.2114
+  type: 'test'
+  ...
+# Subtest: candidates record AI literacy scope, defaulting to unknown and staying on hold
+ok 38 - candidates record AI literacy scope, defaulting to unknown and staying on hold
+  ---
+  duration_ms: 2.1973
+  type: 'test'
+  ...
+# Subtest: malformed AI literacy scope on a candidate fails closed
+ok 39 - malformed AI literacy scope on a candidate fails closed
+  ---
+  duration_ms: 2.2123
+  type: 'test'
+  ...
+# Subtest: candidates record the main audience, defaulting to unknown; invalid audience fails closed
+ok 40 - candidates record the main audience, defaulting to unknown; invalid audience fails closed
+  ---
+  duration_ms: 1.4095
+  type: 'test'
+  ...
+# Subtest: all real held candidates map to existing KB, never to publication
+ok 41 - all real held candidates map to existing KB, never to publication
+  ---
+  duration_ms: 43.3562
+  type: 'test'
+  ...
+# Subtest: new candidate remains unverified and source batch is unchanged
+ok 42 - new candidate remains unverified and source batch is unchanged
+  ---
+  duration_ms: 2.997
+  type: 'test'
+  ...
+# Subtest: same URL within batch is not added twice without review
+ok 43 - same URL within batch is not added twice without review
+  ---
+  duration_ms: 0.5274
+  type: 'test'
+  ...
+# Subtest: unsafe/invalid sources fail closed
+ok 44 - unsafe/invalid sources fail closed
+  ---
+  duration_ms: 1.1757
+  type: 'test'
+  ...
+# Subtest: T1-3: DOI similarity and versions are suggestions, not automatic merges
+ok 45 - T1-3: DOI similarity and versions are suggestions, not automatic merges
+  ---
+  duration_ms: 6.2185
+  type: 'test'
+  ...
+# Subtest: T4-5: URL distinctions and partial dates are preserved
+ok 46 - T4-5: URL distinctions and partial dates are preserved
+  ---
+  duration_ms: 2.6356
+  type: 'test'
+  ...
+# Subtest: T6-8: revision links, multi-national and multi-label relations have traceable IDs
+ok 47 - T6-8: revision links, multi-national and multi-label relations have traceable IDs
+  ---
+  duration_ms: 0.894
+  type: 'test'
+  ...
+# Subtest: T9-11: unavailable coverage, broken refs, and spreadsheet formula hazards
+ok 48 - T9-11: unavailable coverage, broken refs, and spreadsheet formula hazards
+  ---
+  duration_ms: 26.8587
+  type: 'test'
+  ...
+# Subtest: T12: knowledge-base operations cannot mutate nine held candidates or publication manifest
+ok 49 - T12: knowledge-base operations cannot mutate nine held candidates or publication manifest
+  ---
+  duration_ms: 21.8771
+  type: 'test'
+  ...
+# Subtest: DOI normalized but no automatic merging of different manifestations
+ok 50 - DOI normalized but no automatic merging of different manifestations
+  ---
+  duration_ms: 3.4272
+  type: 'test'
+  ...
+# Subtest: case sensitive paths and arbitrary identity query params stay distinct
+ok 51 - case sensitive paths and arbitrary identity query params stay distinct
+  ---
+  duration_ms: 3.9174
+  type: 'test'
+  ...
+# Subtest: repeated source and same title are review flags only
+ok 52 - repeated source and same title are review flags only
+  ---
+  duration_ms: 17.2893
+  type: 'test'
+  ...
+# Subtest: safe export neutralizes spreadsheet formulas but preserves original record
+ok 53 - safe export neutralizes spreadsheet formulas but preserves original record
+  ---
+  duration_ms: 2.901
+  type: 'test'
+  ...
+# Subtest: same source re-scanning does not manufacture a second KB record
+ok 54 - same source re-scanning does not manufacture a second KB record
+  ---
+  duration_ms: 3.4804
+  type: 'test'
+  ...
+# Subtest: daily import remains fully visible to weekly selection
+ok 55 - daily import remains fully visible to weekly selection
+  ---
+  duration_ms: 9.2992
+  type: 'test'
+  ...
+# Subtest: yesterday discovery of older study is background, not new research
+ok 56 - yesterday discovery of older study is background, not new research
+  ---
+  duration_ms: 0.9019
+  type: 'test'
+  ...
+# Subtest: zero-source day creates no eligible publication
+ok 57 - zero-source day creates no eligible publication
+  ---
+  duration_ms: 1.5496
+  type: 'test'
+  ...
+# Subtest: uncertified held candidates never enter publishable list
+ok 58 - uncertified held candidates never enter publishable list
+  ---
+  duration_ms: 0.8383
+  type: 'test'
+  ...
+# Subtest: late verified items remain visible for daily editorial selection
+ok 59 - late verified items remain visible for daily editorial selection
+  ---
+  duration_ms: 0.4044
+  type: 'test'
+  ...
+# Subtest: duplicate discovery remains visible even without an update note
+ok 60 - duplicate discovery remains visible even without an update note
+  ---
+  duration_ms: 0.7747
+  type: 'test'
+  ...
+# Subtest: same-week updated original sources surface in the next daily review pack
+ok 61 - same-week updated original sources surface in the next daily review pack
+  ---
+  duration_ms: 0.5316
+  type: 'test'
+  ...
+# Subtest: old verified background never enters publication suggestion
+ok 62 - old verified background never enters publication suggestion
+  ---
+  duration_ms: 0.4599
+  type: 'test'
+  ...
+# Subtest: daily recommendation never overrides a pending same-week source correction
+ok 63 - daily recommendation never overrides a pending same-week source correction
+  ---
+  duration_ms: 0.6047
+  type: 'test'
+  ...
+# Subtest: unresolved duplicate discoveries block recommendation for associated candidate
+ok 64 - unresolved duplicate discoveries block recommendation for associated candidate
+  ---
+  duration_ms: 0.6026
+  type: 'test'
+  ...
+# Subtest: cannot recommend a future-dated source in yesterday's daily pack
+ok 65 - cannot recommend a future-dated source in yesterday's daily pack
+  ---
+  duration_ms: 0.4978
+  type: 'test'
+  ...
+# Subtest: invalid date input fails with clear error
+ok 66 - invalid date input fails with clear error
+  ---
+  duration_ms: 1.0168
+  type: 'test'
+  ...
+# Subtest: real first-week nine candidates remain held and never auto-promote
+ok 67 - real first-week nine candidates remain held and never auto-promote
+  ---
+  duration_ms: 3.1049
+  type: 'test'
+  ...
+# Subtest: daily suggestions require AI literacy scope A/B and a daily audience
+ok 68 - daily suggestions require AI literacy scope A/B and a daily audience
+  ---
+  duration_ms: 0.7535
+  type: 'test'
+  ...
+# Subtest: generated site pages in the repository are up to date
+not ok 69 - generated site pages in the repository are up to date
+  ---
+  duration_ms: 88.0663
+  type: 'test'
+  location: 'D:\\codex\\ai\\audit-repo-20261010\\research\\render-site.test.js:7:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    archive/policy/index.html
+    
+    '<!doctype html>\n' +
+      '<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="K-12 AI 素養歷年資料庫：政策年表"><title>國別政策年表｜K-12 AI 素養國際動態</title><link rel="stylesheet" href="../../assets/design-system.css"><link rel="stylesheet" href="../../assets/site.css?v=cb8398db0d"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"></head>\n' +
+      '<body><a class="skip" href="#content">跳至主要內容</a><header class="site-header"><nav class="site-nav" aria-label="主要導覽"><a class="brand" href="../../">K-12 AI 素養國際動態</a><a href="../../daily/">每日短訊</a><a href="../../weekly/">週報</a><a href="../../monthly/">月報</a><a href="../../archive/" aria-current="page">歷年資料庫</a><a href="../../about/">查核方法</a><a class="nav-feedback" href="../../feedback/">讀者勘誤</a></nav></header>\n' +
+      '<div class="page-head"><div class="kicker">歷年資料庫</div><h1>國別 × 年份政策年表</h1><p class="lead">這是可追溯的<strong>書目索引</strong>，不是政策效力或研究結論的認證。每筆標示核對程度；首發日未核實時，以卷期年歸類並註明。週報審查中的候選不列入。</p><div class="legend"><span><span class="badge checked">書目已核</span> 題名、出處、日期已對過出版者或官方原頁</span><span><span class="badge unverified">僅發現・未核</span> 只核過登記資料，原頁或首發日未核</span><span><span class="badge fulltext">原文已核</span> 內容逐段核對</span></div><nav class="tabs" aria-label="清單類型"><a href="../policy/" aria-current="page">國別政策年表</a><a href="../journals/">期刊論文清單</a><a href="../conferences/">會議論文清單</a></nav></div>\n' +
+      '<main id="content" class="content"><p class="sub">共 48 筆、10 組，依國別或國際組織分組，組內依年份由新到舊。</p><section class="quick-index" id="index" aria-labelledby="index-h"><h2 id="index-h">快速索引</h2><p class="sub">點名稱跳到該組；點數字直接跳到該年份的第一筆。</p><div class="table-wrap"><table class="index-table"><thead><tr><th scope="col" class="name">國別／組織</th><th scope="col">合計</th><th scope="col">2026</th><th scope="col">2025</th><th scope="col">2024</th><th scope="col">2023</th><th scope="col">2022</th><th scope="col">2021</th><th scope="col">2020</th><th scope="col">未知</th></tr></thead><tbody><tr><th scope="row" class="name"><a href="#g-0-intl" title="國際組織">國際組織</a></th><td>9</td><td><a href="#g-0-intl-y2026" aria-label="國際組織 2026 年 1 筆">1</a></td><td><a href="#g-0-intl-y2025" aria-label="國際組織 2025 年 1 筆">1</a></td><td><a href="#g-0-intl-y2024" aria-label="國際組織 2024 年 2 筆">2</a></td><td><a href="#g-0-intl-y2023" aria-label="國際組織 2023 年 1 筆">1</a></td><td><a href="#g-0-intl-y2022" aria-label="國際組織 2022 年 2 筆">2</a></td><td><a href="#g-0-intl-y2021" aria-label="國際組織 2021 年 1 筆">1</a></td><td class="none">—</td><td><a href="#g-0-intl-yunknown" aria-label="國際組織 未知 年 1 筆">1</a></td></tr><tr><th scope="row" class="name"><a href="#g-1-au" title="澳洲">澳洲</a></th><td>3</td><td class="none">—</td><td><a href="#g-1-au-y2025" aria-label="澳洲 2025 年 1 筆">1</a></td><td class="none">—</td><td><a href="#g-1-au-y2023" aria-label="澳洲 2023 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-au-yunknown" aria-label="澳洲 未知 年 1 筆">1</a></td></tr><tr><th scope="row" class="name"><a href="#g-1-cn" title="中國">中國</a></th><td>2</td><td><a href="#g-1-cn-y2026" aria-label="中國 2026 年 1 筆">1</a></td><td class="none">—</td><td><a href="#g-1-cn-y2024" aria-label="中國 2024 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-gb-eng" title="英格蘭">英格蘭</a></th><td>5</td><td class="none">—</td><td><a href="#g-1-gb-eng-y2025" aria-label="英格蘭 2025 年 2 筆">2</a></td><td><a href="#g-1-gb-eng-y2024" aria-label="英格蘭 2024 年 1 筆">1</a></td><td><a href="#g-1-gb-eng-y2023" aria-label="英格蘭 2023 年 2 筆">2</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-hk" title="香港">香港</a></th><td>5</td><td><a href="#g-1-hk-y2026" aria-label="香港 2026 年 4 筆">4</a></td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-hk-y2023" aria-label="香港 2023 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-jp" title="日本">日本</a></th><td>3</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-jp-y2024" aria-label="日本 2024 年 1 筆">1</a></td><td><a href="#g-1-jp-y2023" aria-label="日本 2023 年 2 筆">2</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-kr" title="韓國">韓國</a></th><td>6</td><td class="none">—</td><td><a href="#g-1-kr-y2025" aria-label="韓國 2025 年 2 筆">2</a></td><td><a href="#g-1-kr-y2024" aria-label="韓國 2024 年 1 筆">1</a></td><td><a href="#g-1-kr-y2023" aria-label="韓國 2023 年 1 筆">1</a></td><td><a href="#g-1-kr-y2022" aria-label="韓國 2022 年 1 筆">1</a></td><td class="none">—</td><td><a href="#g-1-kr-y2020" aria-label="韓國 2020 年 1 筆">1</a></td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-sg" title="新加坡">新加坡</a></th><td>4</td><td><a href="#g-1-sg-y2026" aria-label="新加坡 2026 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-sg-y2023" aria-label="新加坡 2023 年 2 筆">2</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-sg-yunknown" aria-label="新加坡 未知 年 1 筆">1</a></td></tr><tr><th scope="row" class="name"><a href="#g-1-tw" title="臺灣">臺灣</a></th><td>2</td><td><a href="#g-1-tw-y2026" aria-label="臺灣 2026 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-tw-yunknown" aria-label="臺灣 未知 年 1 筆">1</a></td></tr><tr><th scope="row" class="name"><a href="#g-1-us" title="美國">美國</a></th><td>9</td><td><a href="#g-1-us-y2026" aria-label="美國 2026 年 1 筆">1</a></td><td><a href="#g-1-us-y2025" aria-label="美國 2025 年 3 筆">3</a></td><td><a href="#g-1-us-y2024" aria-label="美國 2024 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-us-yunknown" aria-label="美國 未知 年 4 筆">4</a></td></tr></tbody></table></div></section><section class="group" id="g-0-intl"><div class="group-head"><h2>國際組織</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">UNESCO、OECD、歐盟等跨國機構・9 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-0-intl-y2026"><td class="year">2026</td><td><a href="https://www.oecd.org/en/publications/empowering-learners-for-the-age-of-ai_65cd27d4-en.html">Empowering Learners for the Age of AI: An AI Literacy Framework for Primary and Secondary Education</a><div class="type">框架</div></td><td>2026-06-18 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2025"><td class="year">2025</td><td><a href="https://www.unicef.org/innocenti/reports/policy-guidance-ai-children">Guidance on AI and children (Version 3.0): Recommendations for AI policies and systems that uphold child rights</a><div class="type">官方指引</div></td><td>2025-12 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2024"><td class="year">2024</td><td><a href="https://www.unesco.org/en/articles/ai-competency-framework-students">AI competency framework for students</a><div class="type">框架</div></td><td>2024-08-08 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2024</td><td><a href="https://www.unesco.org/en/articles/ai-competency-framework-teachers">AI competency framework for teachers</a><div class="type">框架</div></td><td>2024-08-08 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2023"><td class="year">2023</td><td><a href="https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research">Guidance for generative AI in education and research</a><div class="type">官方指引</div></td><td>2023-09-07 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2022"><td class="year">2022</td><td><a href="https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en">Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators</a><div class="type">官方指引</div></td><td>2022-10-25 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2022</td><td><a href="https://iite.unesco.org/publications/unesco-releases-report-on-the-mapping-of-k-12-artificial-intelligence-curricula/">K-12 AI curricula: a mapping of government-endorsed AI curricula</a><div class="type">政策檢討</div></td><td>2022 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2021"><td class="year">2021</td><td><a href="https://www.unicef.org/innocenti/media/1341/file/UNICEF-Global-Insight-policy-guidance-AI-children-2.0-2021.pdf">Policy guidance on AI for children (Version 2.0)</a><div class="type">官方指引</div></td><td>2021-11 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-yunknown"><td class="year">未知</td><td><a href="https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators">Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge unverified">僅發現・未核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-au"><div class="group-head"><h2>澳洲</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-AU-EDU・3 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-au-y2025"><td class="year">2025</td><td><a href="https://www.educati'... 17039 more characters
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: |-
+    <!doctype html>
+    <html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="K-12 AI 素養歷年資料庫：政策年表"><title>國別政策年表｜K-12 AI 素養國際動態</title><link rel="stylesheet" href="../../assets/design-system.css"><link rel="stylesheet" href="../../assets/site.css?v=cb8398db0d"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"></head>
+    <body><a class="skip" href="#content">跳至主要內容</a><header class="site-header"><nav class="site-nav" aria-label="主要導覽"><a class="brand" href="../../">K-12 AI 素養國際動態</a><a href="../../daily/">每日短訊</a><a href="../../weekly/">週報</a><a href="../../monthly/">月報</a><a href="../../archive/" aria-current="page">歷年資料庫</a><a href="../../about/">查核方法</a><a class="nav-feedback" href="../../feedback/">讀者勘誤</a></nav></header>
+    <div class="page-head"><div class="kicker">歷年資料庫</div><h1>國別 × 年份政策年表</h1><p class="lead">這是可追溯的<strong>書目索引</strong>，不是政策效力或研究結論的認證。每筆標示核對程度；首發日未核實時，以卷期年歸類並註明。週報審查中的候選不列入。</p><div class="legend"><span><span class="badge checked">書目已核</span> 題名、出處、日期已對過出版者或官方原頁</span><span><span class="badge unverified">僅發現・未核</span> 只核過登記資料，原頁或首發日未核</span><span><span class="badge fulltext">原文已核</span> 內容逐段核對</span></div><nav class="tabs" aria-label="清單類型"><a href="../policy/" aria-current="page">國別政策年表</a><a href="../journals/">期刊論文清單</a><a href="../conferences/">會議論文清單</a></nav></div>
+    <main id="content" class="content"><p class="sub">共 48 筆、10 組，依國別或國際組織分組，組內依年份由新到舊。</p><section class="quick-index" id="index" aria-labelledby="index-h"><h2 id="index-h">快速索引</h2><p class="sub">點名稱跳到該組；點數字直接跳到該年份的第一筆。</p><div class="table-wrap"><table class="index-table"><thead><tr><th scope="col" class="name">國別／組織</th><th scope="col">合計</th><th scope="col">2026</th><th scope="col">2025</th><th scope="col">2024</th><th scope="col">2023</th><th scope="col">2022</th><th scope="col">2021</th><th scope="col">2020</th><th scope="col">未知</th></tr></thead><tbody><tr><th scope="row" class="name"><a href="#g-0-intl" title="國際組織">國際組織</a></th><td>9</td><td><a href="#g-0-intl-y2026" aria-label="國際組織 2026 年 1 筆">1</a></td><td><a href="#g-0-intl-y2025" aria-label="國際組織 2025 年 1 筆">1</a></td><td><a href="#g-0-intl-y2024" aria-label="國際組織 2024 年 2 筆">2</a></td><td><a href="#g-0-intl-y2023" aria-label="國際組織 2023 年 1 筆">1</a></td><td><a href="#g-0-intl-y2022" aria-label="國際組織 2022 年 2 筆">2</a></td><td><a href="#g-0-intl-y2021" aria-label="國際組織 2021 年 1 筆">1</a></td><td class="none">—</td><td><a href="#g-0-intl-yunknown" aria-label="國際組織 未知 年 1 筆">1</a></td></tr><tr><th scope="row" class="name"><a href="#g-1-au" title="澳洲">澳洲</a></th><td>3</td><td class="none">—</td><td><a href="#g-1-au-y2025" aria-label="澳洲 2025 年 1 筆">1</a></td><td class="none">—</td><td><a href="#g-1-au-y2023" aria-label="澳洲 2023 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-au-yunknown" aria-label="澳洲 未知 年 1 筆">1</a></td></tr><tr><th scope="row" class="name"><a href="#g-1-cn" title="中國">中國</a></th><td>2</td><td><a href="#g-1-cn-y2026" aria-label="中國 2026 年 1 筆">1</a></td><td class="none">—</td><td><a href="#g-1-cn-y2024" aria-label="中國 2024 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-gb-eng" title="英格蘭">英格蘭</a></th><td>5</td><td class="none">—</td><td><a href="#g-1-gb-eng-y2025" aria-label="英格蘭 2025 年 2 筆">2</a></td><td><a href="#g-1-gb-eng-y2024" aria-label="英格蘭 2024 年 1 筆">1</a></td><td><a href="#g-1-gb-eng-y2023" aria-label="英格蘭 2023 年 2 筆">2</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-hk" title="香港">香港</a></th><td>5</td><td><a href="#g-1-hk-y2026" aria-label="香港 2026 年 4 筆">4</a></td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-hk-y2023" aria-label="香港 2023 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-jp" title="日本">日本</a></th><td>3</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-jp-y2024" aria-label="日本 2024 年 1 筆">1</a></td><td><a href="#g-1-jp-y2023" aria-label="日本 2023 年 2 筆">2</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-kr" title="韓國">韓國</a></th><td>6</td><td class="none">—</td><td><a href="#g-1-kr-y2025" aria-label="韓國 2025 年 2 筆">2</a></td><td><a href="#g-1-kr-y2024" aria-label="韓國 2024 年 1 筆">1</a></td><td><a href="#g-1-kr-y2023" aria-label="韓國 2023 年 1 筆">1</a></td><td><a href="#g-1-kr-y2022" aria-label="韓國 2022 年 1 筆">1</a></td><td class="none">—</td><td><a href="#g-1-kr-y2020" aria-label="韓國 2020 年 1 筆">1</a></td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-sg" title="新加坡">新加坡</a></th><td>4</td><td><a href="#g-1-sg-y2026" aria-label="新加坡 2026 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-sg-y2023" aria-label="新加坡 2023 年 2 筆">2</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-sg-yunknown" aria-label="新加坡 未知 年 1 筆">1</a></td></tr><tr><th scope="row" class="name"><a href="#g-1-tw" title="臺灣">臺灣</a></th><td>2</td><td><a href="#g-1-tw-y2026" aria-label="臺灣 2026 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-tw-yunknown" aria-label="臺灣 未知 年 1 筆">1</a></td></tr><tr><th scope="row" class="name"><a href="#g-1-us" title="美國">美國</a></th><td>9</td><td><a href="#g-1-us-y2026" aria-label="美國 2026 年 1 筆">1</a></td><td><a href="#g-1-us-y2025" aria-label="美國 2025 年 3 筆">3</a></td><td><a href="#g-1-us-y2024" aria-label="美國 2024 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-us-yunknown" aria-label="美國 未知 年 4 筆">4</a></td></tr></tbody></table></div></section><section class="group" id="g-0-intl"><div class="group-head"><h2>國際組織</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">UNESCO、OECD、歐盟等跨國機構・9 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-0-intl-y2026"><td class="year">2026</td><td><a href="https://www.oecd.org/en/publications/empowering-learners-for-the-age-of-ai_65cd27d4-en.html">Empowering Learners for the Age of AI: An AI Literacy Framework for Primary and Secondary Education</a><div class="type">框架</div></td><td>2026-06-18 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2025"><td class="year">2025</td><td><a href="https://www.unicef.org/innocenti/reports/policy-guidance-ai-children">Guidance on AI and children (Version 3.0): Recommendations for AI policies and systems that uphold child rights</a><div class="type">官方指引</div></td><td>2025-12 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2024"><td class="year">2024</td><td><a href="https://www.unesco.org/en/articles/ai-competency-framework-students">AI competency framework for students</a><div class="type">框架</div></td><td>2024-08-08 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2024</td><td><a href="https://www.unesco.org/en/articles/ai-competency-framework-teachers">AI competency framework for teachers</a><div class="type">框架</div></td><td>2024-08-08 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2023"><td class="year">2023</td><td><a href="https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research">Guidance for generative AI in education and research</a><div class="type">官方指引</div></td><td>2023-09-07 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2022"><td class="year">2022</td><td><a href="https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en">Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators</a><div class="type">官方指引</div></td><td>2022-10-25 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2022</td><td><a href="https://iite.unesco.org/publications/unesco-releases-report-on-the-mapping-of-k-12-artificial-intelligence-curricula/">K-12 AI curricula: a mapping of government-endorsed AI curricula</a><div class="type">政策檢討</div></td><td>2022 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2021"><td class="year">2021</td><td><a href="https://www.unicef.org/innocenti/media/1341/file/UNICEF-Global-Insight-policy-guidance-AI-children-2.0-2021.pdf">Policy guidance on AI for children (Version 2.0)</a><div class="type">官方指引</div></td><td>2021-11 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-yunknown"><td class="year">未知</td><td><a href="https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators">Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge unverified">僅發現・未核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-au"><div class="group-head"><h2>澳洲</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-AU-EDU・3 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-au-y2025"><td class="year">2025</td><td><a href="https://www.education.gov.au/schooling/announcements/2024-review-australian-framework-generative-artificial-intelligence-schools">2024 Review of the Australian Framework for Generative Artificial Intelligence in Schools</a><div class="type">政策檢討</div></td><td>2025-06-17 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-au-y2023"><td class="year">2023</td><td><a href="https://www.education.gov.au/schooling/announcements/australian-framework-generative-artificial-intelligence-ai-schools">The Australian Framework for Generative Artificial Intelligence (AI) in Schools</a><div class="type">框架</div></td><td>2023-12-01 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-au-yunknown"><td class="year">未知</td><td><a href="https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/guidelines-regarding-use-of-generative-ai">Guidelines regarding the use of generative AI</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-cn"><div class="group-head"><h2>中國</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-CN-MOE・2 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-cn-y2026"><td class="year">2026</td><td><a href="https://www.moe.gov.cn/srcsite/A16/s3342/202604/t20260410_1433240.html">教育部等五部门关于印发《“人工智能+教育”行动计划》的通知（教科信〔2026〕1号）</a><div class="type">官方指引</div></td><td>2026-04-10 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-cn-y2024"><td class="year">2024</td><td><a href="https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html">教育部部署加强中小学人工智能教育</a><div class="type">政府公告</div></td><td>2024-12-02 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-gb-eng"><div class="group-head"><h2>英格蘭</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-UK-DFE・5 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-gb-eng-y2025"><td class="year">2025</td><td><a href="https://www.gov.uk/government/publications/generative-ai-product-safety-standards">Generative AI: product safety standards</a><div class="type">官方指引</div></td><td>2025-01-22 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2025</td><td><a href="https://www.gov.uk/government/collections/using-ai-in-education-settings-support-materials">Using AI in education settings: support materials</a><div class="type">官方指引</div></td><td>2025-06-10 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-gb-eng-y2024"><td class="year">2024</td><td><a href="https://www.gov.uk/guidance/data-protection-in-schools/generative-artificial-intelligence-ai-and-data-protection-in-schools">Generative artificial intelligence (AI) and data protection in schools</a><div class="type">官方指引</div></td><td>2024-02-07 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-gb-eng-y2023"><td class="year">2023</td><td><a href="https://www.gov.uk/government/publications/generative-artificial-intelligence-in-education">Generative artificial intelligence (AI) in education</a><div class="type">官方指引</div></td><td>2023-03-29 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2023</td><td><a href="https://www.gov.uk/government/calls-for-evidence/generative-artificial-intelligence-in-education-call-for-evidence">Generative artificial intelligence in education call for evidence</a><div class="type">意見徵詢</div></td><td>2023-06-14 首發</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-hk"><div class="group-head"><h2>香港</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-HK-EDB・5 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-hk-y2026"><td class="year">2026</td><td><a href="https://applications.edb.gov.hk/circular/upload/EDBCM/EDBCM26113E.pdf">“Preliminary Study of Artificial Intelligence” Strand (Pilot Version) of the Information and Innovation Technology Curriculum Framework for Primary Schools（EDBCM No. 113/2026）</a><div class="type">框架</div></td><td>2026-07-21 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2026</td><td><a href="https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/debp.html">Blueprint for Digital Education Development in Primary and Secondary Schools</a><div class="type">官方指引</div></td><td>2026-06-17 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2026</td><td><a href="https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementAILiteracyLearningFramework(PrimaryAndSecondarySchools)_EN.pdf">Supplement I: AI Literacy Learning Framework for Primary and Secondary Schools</a><div class="type">框架</div></td><td>2026-06-17 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr><td class="year">2026</td><td><a href="https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementIIGuideToUsingAIInTeaching(PrimaryAndSecondarySchools)_EN.pdf">Supplement II: Guide to Using AI in Teaching in Primary and Secondary Schools</a><div class="type">官方指引</div></td><td>2026-06-17 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr id="g-1-hk-y2023"><td class="year">2023</td><td><a href="https://applications.edb.gov.hk/circular/upload/EDBCM/EDBCM23109E.pdf">Education Bureau Circular Memorandum No. 109/2023: Curriculum Modules on Innovation and Technology Education – “Enriched Module on Coding Education for Upper Primary Level” and “Module on Artificial Intelligence for Junior Secondary Level”</a><div class="type">框架</div></td><td>2023-06-19 首發</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-jp"><div class="group-head"><h2>日本</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-JP-MEXT・3 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-jp-y2024"><td class="year">2024</td><td><a href="https://www.mext.go.jp/zyoukatsu/ai/index.html">Guideline for the Use of Generative AI in Primary and Secondary Education (Ver.2.0)</a><div class="type">官方指引</div></td><td>2024-12-26 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-jp-y2023"><td class="year">2023</td><td><a href="https://www.mext.go.jp/a_menu/other/mext_02412.html">初等中等教育段階における生成AIの利用に関する暫定的なガイドライン</a><div class="type">官方指引</div></td><td>2023-07-04 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2023</td><td><a href="https://www.mext.go.jp/a_menu/other/mext_02412.html">ChatGPT等の生成AIの学校現場の利用に向けた今後の対応について（事務連絡）</a><div class="type">政府公告</div></td><td>2023-05-19 首發</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-kr"><div class="group-head"><h2>韓國</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-KR-MOE・6 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-kr-y2025"><td class="year">2025</td><td><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=104462&amp;lev=0&amp;searchType=null&amp;statusYN=W&amp;page=1&amp;s=moe&amp;m=020402&amp;opType=N">모두를 위한 인공지능(AI) 인재양성 방안（AI for All）</a><div class="type">官方指引</div></td><td>2025-11-10 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2025</td><td><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=104984&amp;lev=0&amp;searchType=null&amp;statusYN=W&amp;page=1&amp;s=moe&amp;m=020402&amp;opType=N">수행평가 시, 인공지능(AI) 활용 관리 방안</a><div class="type">官方指引</div></td><td>2025-12 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr id="g-1-kr-y2024"><td class="year">2024</td><td><a href="https://english.moe.go.kr/boardCnts/viewRenewal.do?boardID=265&amp;boardSeq=102075&amp;lev=0&amp;m=0201&amp;opType=N&amp;page=1&amp;s=english">AI Digital Textbooks for 2025 to Realize Personalized Education for All</a><div class="type">政府公告</div></td><td>2024-11-29 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-kr-y2023"><td class="year">2023</td><td><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=95261&amp;lev=0&amp;searchType=null&amp;statusYN=W&amp;page=1&amp;s=moe&amp;m=020402&amp;opType=N">인공지능(AI) 디지털교과서 추진방안</a><div class="type">政府公告</div></td><td>2023-06-08 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-kr-y2022"><td class="year">2022</td><td><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=92297&amp;lev=0&amp;searchType=null&amp;statusYN=W&amp;page=1&amp;s=moe&amp;m=020402&amp;opType=N">교육분야 인공지능 윤리원칙</a><div class="type">框架</div></td><td>2022-08-11 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-kr-y2020"><td class="year">2020</td><td><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=82674&amp;lev=0&amp;searchType=null&amp;statusYN=W&amp;page=1&amp;s=moe&amp;m=020402&amp;opType=N">인공지능 시대 교육정책방향과 핵심과제（제19차 사회관계장관회의 안건）</a><div class="type">官方指引</div></td><td>2020-11-20 首發</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-sg"><div class="group-head"><h2>新加坡</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-SG-MOE・4 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-sg-y2026"><td class="year">2026</td><td><a href="https://www.moe.gov.sg/news/speeches/20260303-moe-committee-of-supply-debate-2026-response-by-minister-of-state-for-education-jasmin-lau">MOE Committee of Supply Debate 2026 Response by Minister of State for Education Jasmin Lau</a><div class="type">政府公告</div></td><td>2026-03-03 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr id="g-1-sg-y2023"><td class="year">2023</td><td><a href="https://www.moe.gov.sg/news/parliamentary-replies/20230207-managing-the-use-of-artificial-intelligence-bots-such-as-chatgpt-in-schools">Managing the use of artificial intelligence (AI) bots such as ChatGPT in schools（Parliamentary reply）</a><div class="type">政府公告</div></td><td>2023-02-07 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2023</td><td><a href="https://www.moe.gov.sg/news/press-releases/20230920-more-support-for-schools-and-students-to-shape-the-future-of-learning">More Support for Schools and Students to Shape the Future of Learning（Launch of EdTech Masterplan 2030 “Transforming Education through Technology”）</a><div class="type">政府公告</div></td><td>2023-09-20 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-sg-yunknown"><td class="year">未知</td><td><a href="https://www.moe.gov.sg/education-in-sg/educational-technology-journey/edtech-masterplan/artificial-intelligence-in-education">MOE's position on AI use in education and assessment</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-tw"><div class="group-head"><h2>臺灣</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-TW-EY・2 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-tw-y2026"><td class="year">2026</td><td><a href="https://www.ey.gov.tw/Page/448DE008087A1971/69349d8a-b2be-406c-a997-8bf919259f85">打造AI智慧教育新生態─AI人才方舟計畫（115–118年）</a><div class="type">政府公告</div></td><td>2026-05-21 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-tw-yunknown"><td class="year">未知</td><td><a href="https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&amp;old=upload">臺灣中小學教師與學生AI素養框架</a><div class="type">框架</div></td><td>未知</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-us"><div class="group-head"><h2>美國</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-US-WH・9 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-us-y2026"><td class="year">2026</td><td><a href="https://www.federalregister.gov/documents/2026/04/13/2026-07087/final-priority-and-definitions-secretarys-supplemental-priority-and-definitions-on-advancing">Final Priority and Definitions—Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education</a><div class="type">正式政策</div></td><td>2026-04-13 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-us-y2025"><td class="year">2025</td><td><a href="https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth">Executive Order 14277: Advancing Artificial Intelligence Education for American Youth</a><div class="type">正式政策</div></td><td>2025-04-28 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr><td class="year">2025</td><td><a href="https://login.community.gadoe.org/documents/leveraging-ai-in-the-k-12-setting">Leveraging AI in the K-12 Setting</a><div class="type">官方指引</div></td><td>2025-01-21 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2025</td><td><a href="https://www.federalregister.gov/documents/2025/07/21/2025-13650/proposed-priority-and-definitions-secretarys-supplemental-priority-and-definitions-on-advancing">Proposed Priority and Definitions—Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education</a><div class="type">草案</div></td><td>2025-07-21 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-us-y2024"><td class="year">2024</td><td><a href="https://go.ncdpi.gov/AI_Guidelines">NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools</a><div class="type">官方指引</div></td><td>2024-01-16 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr id="g-1-us-yunknown"><td class="year">未知</td><td><a href="https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy">AI in Education: Model Policy for Ohio Districts and Schools</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr><td class="year">未知</td><td><a href="https://www.oregon.gov/ode/educator-resources/teachingcontent/Pages/Generative-Artificial-Intelligence-%28AI%29-for-K-12-Schools.aspx">Generative Artificial Intelligence (AI) in K-12 Classrooms Guidance (v3.0, web-based)</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">未知</td><td><a href="https://www.cde.ca.gov/ci/pl/aiincalifornia.asp">Guidance for the Safe and Effective Use of Artificial Intelligence in California Public Schools: Learning With AI, Learning About AI</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">未知</td><td><a href="https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools">Human-Centered AI Guidance for K-12 Public Schools</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge unverified">僅發現・未核</span></td></tr></tbody></table></div></section><div class="info"><p>資料來源：本刊知識庫（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/tree/main/research/knowledge-base">GitHub 公開</a>）。清單由程式自知識庫產生；發現錯誤請透過<a href="../../feedback/">讀者勘誤</a>回報。</p></div></main>
+    <footer class="site-footer"><div class="inner"><span>K-12 AI 素養國際動態</span><a href="../../about/">查核方法</a><a href="../../feedback/">讀者評鑑與勘誤（GitHub Issues）</a><a href="../../design-system/">設計系統</a><a href="https://github.com/jhchenmooc/k12-ai-literacy-report">GitHub 原始碼</a></div></footer>
+    </body></html>
+    
+  actual: |-
+    <!doctype html>
+    <html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="K-12 AI 素養歷年資料庫：政策年表"><title>國別政策年表｜K-12 AI 素養國際動態</title><link rel="stylesheet" href="../../assets/design-system.css"><link rel="stylesheet" href="../../assets/site.css?v=cb8398db0d"><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"></head>
+    <body><a class="skip" href="#content">跳至主要內容</a><header class="site-header"><nav class="site-nav" aria-label="主要導覽"><a class="brand" href="../../">K-12 AI 素養國際動態</a><a href="../../daily/">每日短訊</a><a href="../../weekly/">週報</a><a href="../../monthly/">月報</a><a href="../../archive/" aria-current="page">歷年資料庫</a><a href="../../about/">查核方法</a><a class="nav-feedback" href="../../feedback/">讀者勘誤</a></nav></header>
+    <div class="page-head"><div class="kicker">歷年資料庫</div><h1>國別 × 年份政策年表</h1><p class="lead">這是可追溯的<strong>書目索引</strong>，不是政策效力或研究結論的認證。每筆標示核對程度；首發日未核實時，以卷期年歸類並註明。週報審查中的候選不列入。</p><div class="legend"><span><span class="badge checked">書目已核</span> 題名、出處、日期已對過出版者或官方原頁</span><span><span class="badge unverified">僅發現・未核</span> 只核過登記資料，原頁或首發日未核</span><span><span class="badge fulltext">原文已核</span> 內容逐段核對</span></div><nav class="tabs" aria-label="清單類型"><a href="../policy/" aria-current="page">國別政策年表</a><a href="../journals/">期刊論文清單</a><a href="../conferences/">會議論文清單</a></nav></div>
+    <main id="content" class="content"><p class="sub">共 48 筆、10 組，依國別或國際組織分組，組內依年份由新到舊。</p><section class="quick-index" id="index" aria-labelledby="index-h"><h2 id="index-h">快速索引</h2><p class="sub">點名稱跳到該組；點數字直接跳到該年份的第一筆。</p><div class="table-wrap"><table class="index-table"><thead><tr><th scope="col" class="name">國別／組織</th><th scope="col">合計</th><th scope="col">2026</th><th scope="col">2025</th><th scope="col">2024</th><th scope="col">2023</th><th scope="col">2022</th><th scope="col">2021</th><th scope="col">2020</th><th scope="col">未知</th></tr></thead><tbody><tr><th scope="row" class="name"><a href="#g-0-intl" title="國際組織">國際組織</a></th><td>9</td><td><a href="#g-0-intl-y2026" aria-label="國際組織 2026 年 1 筆">1</a></td><td><a href="#g-0-intl-y2025" aria-label="國際組織 2025 年 1 筆">1</a></td><td><a href="#g-0-intl-y2024" aria-label="國際組織 2024 年 2 筆">2</a></td><td><a href="#g-0-intl-y2023" aria-label="國際組織 2023 年 1 筆">1</a></td><td><a href="#g-0-intl-y2022" aria-label="國際組織 2022 年 2 筆">2</a></td><td><a href="#g-0-intl-y2021" aria-label="國際組織 2021 年 1 筆">1</a></td><td class="none">—</td><td><a href="#g-0-intl-yunknown" aria-label="國際組織 未知 年 1 筆">1</a></td></tr><tr><th scope="row" class="name"><a href="#g-1-au" title="澳洲">澳洲</a></th><td>3</td><td class="none">—</td><td><a href="#g-1-au-y2025" aria-label="澳洲 2025 年 1 筆">1</a></td><td class="none">—</td><td><a href="#g-1-au-y2023" aria-label="澳洲 2023 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-au-yunknown" aria-label="澳洲 未知 年 1 筆">1</a></td></tr><tr><th scope="row" class="name"><a href="#g-1-cn" title="中國">中國</a></th><td>2</td><td><a href="#g-1-cn-y2026" aria-label="中國 2026 年 1 筆">1</a></td><td class="none">—</td><td><a href="#g-1-cn-y2024" aria-label="中國 2024 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-gb-eng" title="英格蘭">英格蘭</a></th><td>5</td><td class="none">—</td><td><a href="#g-1-gb-eng-y2025" aria-label="英格蘭 2025 年 2 筆">2</a></td><td><a href="#g-1-gb-eng-y2024" aria-label="英格蘭 2024 年 1 筆">1</a></td><td><a href="#g-1-gb-eng-y2023" aria-label="英格蘭 2023 年 2 筆">2</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-hk" title="香港">香港</a></th><td>5</td><td><a href="#g-1-hk-y2026" aria-label="香港 2026 年 4 筆">4</a></td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-hk-y2023" aria-label="香港 2023 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-jp" title="日本">日本</a></th><td>3</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-jp-y2024" aria-label="日本 2024 年 1 筆">1</a></td><td><a href="#g-1-jp-y2023" aria-label="日本 2023 年 2 筆">2</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-kr" title="韓國">韓國</a></th><td>6</td><td class="none">—</td><td><a href="#g-1-kr-y2025" aria-label="韓國 2025 年 2 筆">2</a></td><td><a href="#g-1-kr-y2024" aria-label="韓國 2024 年 1 筆">1</a></td><td><a href="#g-1-kr-y2023" aria-label="韓國 2023 年 1 筆">1</a></td><td><a href="#g-1-kr-y2022" aria-label="韓國 2022 年 1 筆">1</a></td><td class="none">—</td><td><a href="#g-1-kr-y2020" aria-label="韓國 2020 年 1 筆">1</a></td><td class="none">—</td></tr><tr><th scope="row" class="name"><a href="#g-1-sg" title="新加坡">新加坡</a></th><td>4</td><td><a href="#g-1-sg-y2026" aria-label="新加坡 2026 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-sg-y2023" aria-label="新加坡 2023 年 2 筆">2</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-sg-yunknown" aria-label="新加坡 未知 年 1 筆">1</a></td></tr><tr><th scope="row" class="name"><a href="#g-1-tw" title="臺灣">臺灣</a></th><td>2</td><td><a href="#g-1-tw-y2026" aria-label="臺灣 2026 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-tw-yunknown" aria-label="臺灣 未知 年 1 筆">1</a></td></tr><tr><th scope="row" class="name"><a href="#g-1-us" title="美國">美國</a></th><td>9</td><td><a href="#g-1-us-y2026" aria-label="美國 2026 年 1 筆">1</a></td><td><a href="#g-1-us-y2025" aria-label="美國 2025 年 3 筆">3</a></td><td><a href="#g-1-us-y2024" aria-label="美國 2024 年 1 筆">1</a></td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td class="none">—</td><td><a href="#g-1-us-yunknown" aria-label="美國 未知 年 4 筆">4</a></td></tr></tbody></table></div></section><section class="group" id="g-0-intl"><div class="group-head"><h2>國際組織</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">UNESCO、OECD、歐盟等跨國機構・9 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-0-intl-y2026"><td class="year">2026</td><td><a href="https://www.oecd.org/en/publications/empowering-learners-for-the-age-of-ai_65cd27d4-en.html">Empowering Learners for the Age of AI: An AI Literacy Framework for Primary and Secondary Education</a><div class="type">框架</div></td><td>2026-06-18 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2025"><td class="year">2025</td><td><a href="https://www.unicef.org/innocenti/reports/policy-guidance-ai-children">Guidance on AI and children (Version 3.0): Recommendations for AI policies and systems that uphold child rights</a><div class="type">官方指引</div></td><td>2025-12 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2024"><td class="year">2024</td><td><a href="https://www.unesco.org/en/articles/ai-competency-framework-students">AI competency framework for students</a><div class="type">框架</div></td><td>2024-08-08 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2024</td><td><a href="https://www.unesco.org/en/articles/ai-competency-framework-teachers">AI competency framework for teachers</a><div class="type">框架</div></td><td>2024-08-08 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2023"><td class="year">2023</td><td><a href="https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research">Guidance for generative AI in education and research</a><div class="type">官方指引</div></td><td>2023-09-07 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2022"><td class="year">2022</td><td><a href="https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en">Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators</a><div class="type">官方指引</div></td><td>2022-10-25 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2022</td><td><a href="https://iite.unesco.org/publications/unesco-releases-report-on-the-mapping-of-k-12-artificial-intelligence-curricula/">K-12 AI curricula: a mapping of government-endorsed AI curricula</a><div class="type">政策檢討</div></td><td>2022 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-y2021"><td class="year">2021</td><td><a href="https://www.unicef.org/innocenti/media/1341/file/UNICEF-Global-Insight-policy-guidance-AI-children-2.0-2021.pdf">Policy guidance on AI for children (Version 2.0)</a><div class="type">官方指引</div></td><td>2021-11 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-0-intl-yunknown"><td class="year">未知</td><td><a href="https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators">Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge unverified">僅發現・未核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-au"><div class="group-head"><h2>澳洲</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-AU-EDU・3 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-au-y2025"><td class="year">2025</td><td><a href="https://www.education.gov.au/schooling/announcements/2024-review-australian-framework-generative-artificial-intelligence-schools">2024 Review of the Australian Framework for Generative Artificial Intelligence in Schools</a><div class="type">政策檢討</div></td><td>2025-06-17 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-au-y2023"><td class="year">2023</td><td><a href="https://www.education.gov.au/schooling/announcements/australian-framework-generative-artificial-intelligence-ai-schools">The Australian Framework for Generative Artificial Intelligence (AI) in Schools</a><div class="type">框架</div></td><td>2023-12-01 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-au-yunknown"><td class="year">未知</td><td><a href="https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/guidelines-regarding-use-of-generative-ai">Guidelines regarding the use of generative AI</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-cn"><div class="group-head"><h2>中國</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-CN-MOE・2 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-cn-y2026"><td class="year">2026</td><td><a href="https://www.moe.gov.cn/srcsite/A16/s3342/202604/t20260410_1433240.html">教育部等五部门关于印发《“人工智能+教育”行动计划》的通知（教科信〔2026〕1号）</a><div class="type">官方指引</div></td><td>2026-04-10 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-cn-y2024"><td class="year">2024</td><td><a href="https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html">教育部部署加强中小学人工智能教育</a><div class="type">政府公告</div></td><td>2024-12-02 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-gb-eng"><div class="group-head"><h2>英格蘭</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-UK-DFE・5 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-gb-eng-y2025"><td class="year">2025</td><td><a href="https://www.gov.uk/government/publications/generative-ai-product-safety-standards">Generative AI: product safety standards</a><div class="type">官方指引</div></td><td>2025-01-22 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2025</td><td><a href="https://www.gov.uk/government/collections/using-ai-in-education-settings-support-materials">Using AI in education settings: support materials</a><div class="type">官方指引</div></td><td>2025-06-10 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-gb-eng-y2024"><td class="year">2024</td><td><a href="https://www.gov.uk/guidance/data-protection-in-schools/generative-artificial-intelligence-ai-and-data-protection-in-schools">Generative artificial intelligence (AI) and data protection in schools</a><div class="type">官方指引</div></td><td>2024-02-07 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-gb-eng-y2023"><td class="year">2023</td><td><a href="https://www.gov.uk/government/publications/generative-artificial-intelligence-in-education">Generative artificial intelligence (AI) in education</a><div class="type">官方指引</div></td><td>2023-03-29 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2023</td><td><a href="https://www.gov.uk/government/calls-for-evidence/generative-artificial-intelligence-in-education-call-for-evidence">Generative artificial intelligence in education call for evidence</a><div class="type">意見徵詢</div></td><td>2023-06-14 首發</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-hk"><div class="group-head"><h2>香港</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-HK-EDB・5 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-hk-y2026"><td class="year">2026</td><td><a href="https://applications.edb.gov.hk/circular/upload/EDBCM/EDBCM26113E.pdf">“Preliminary Study of Artificial Intelligence” Strand (Pilot Version) of the Information and Innovation Technology Curriculum Framework for Primary Schools（EDBCM No. 113/2026）</a><div class="type">框架</div></td><td>2026-07-21 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2026</td><td><a href="https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/debp.html">Blueprint for Digital Education Development in Primary and Secondary Schools</a><div class="type">官方指引</div></td><td>2026-06-17 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2026</td><td><a href="https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementAILiteracyLearningFramework(PrimaryAndSecondarySchools)_EN.pdf">Supplement I: AI Literacy Learning Framework for Primary and Secondary Schools</a><div class="type">框架</div></td><td>2026-06-17 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr><td class="year">2026</td><td><a href="https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/DEBP/SupplementIIGuideToUsingAIInTeaching(PrimaryAndSecondarySchools)_EN.pdf">Supplement II: Guide to Using AI in Teaching in Primary and Secondary Schools</a><div class="type">官方指引</div></td><td>2026-06-17 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr id="g-1-hk-y2023"><td class="year">2023</td><td><a href="https://applications.edb.gov.hk/circular/upload/EDBCM/EDBCM23109E.pdf">Education Bureau Circular Memorandum No. 109/2023: Curriculum Modules on Innovation and Technology Education – “Enriched Module on Coding Education for Upper Primary Level” and “Module on Artificial Intelligence for Junior Secondary Level”</a><div class="type">框架</div></td><td>2023-06-19 首發</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-jp"><div class="group-head"><h2>日本</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-JP-MEXT・3 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-jp-y2024"><td class="year">2024</td><td><a href="https://www.mext.go.jp/zyoukatsu/ai/index.html">Guideline for the Use of Generative AI in Primary and Secondary Education (Ver.2.0)</a><div class="type">官方指引</div></td><td>2024-12-26 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-jp-y2023"><td class="year">2023</td><td><a href="https://www.mext.go.jp/a_menu/other/mext_02412.html">ChatGPT等の生成AIの学校現場の利用に向けた今後の対応について（事務連絡）</a><div class="type">政府公告</div></td><td>2023-05-19 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2023</td><td><a href="https://www.mext.go.jp/a_menu/other/mext_02412.html">初等中等教育段階における生成AIの利用に関する暫定的なガイドライン</a><div class="type">官方指引</div></td><td>2023-07-04 首發</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-kr"><div class="group-head"><h2>韓國</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-KR-MOE・6 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-kr-y2025"><td class="year">2025</td><td><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=104462&amp;lev=0&amp;searchType=null&amp;statusYN=W&amp;page=1&amp;s=moe&amp;m=020402&amp;opType=N">모두를 위한 인공지능(AI) 인재양성 방안（AI for All）</a><div class="type">官方指引</div></td><td>2025-11-10 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2025</td><td><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=104984&amp;lev=0&amp;searchType=null&amp;statusYN=W&amp;page=1&amp;s=moe&amp;m=020402&amp;opType=N">수행평가 시, 인공지능(AI) 활용 관리 방안</a><div class="type">官方指引</div></td><td>2025-12 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr id="g-1-kr-y2024"><td class="year">2024</td><td><a href="https://english.moe.go.kr/boardCnts/viewRenewal.do?boardID=265&amp;boardSeq=102075&amp;lev=0&amp;m=0201&amp;opType=N&amp;page=1&amp;s=english">AI Digital Textbooks for 2025 to Realize Personalized Education for All</a><div class="type">政府公告</div></td><td>2024-11-29 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-kr-y2023"><td class="year">2023</td><td><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=95261&amp;lev=0&amp;searchType=null&amp;statusYN=W&amp;page=1&amp;s=moe&amp;m=020402&amp;opType=N">인공지능(AI) 디지털교과서 추진방안</a><div class="type">政府公告</div></td><td>2023-06-08 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-kr-y2022"><td class="year">2022</td><td><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=92297&amp;lev=0&amp;searchType=null&amp;statusYN=W&amp;page=1&amp;s=moe&amp;m=020402&amp;opType=N">교육분야 인공지능 윤리원칙</a><div class="type">框架</div></td><td>2022-08-11 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-kr-y2020"><td class="year">2020</td><td><a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&amp;boardSeq=82674&amp;lev=0&amp;searchType=null&amp;statusYN=W&amp;page=1&amp;s=moe&amp;m=020402&amp;opType=N">인공지능 시대 교육정책방향과 핵심과제（제19차 사회관계장관회의 안건）</a><div class="type">官方指引</div></td><td>2020-11-20 首發</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-sg"><div class="group-head"><h2>新加坡</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-SG-MOE・4 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-sg-y2026"><td class="year">2026</td><td><a href="https://www.moe.gov.sg/news/speeches/20260303-moe-committee-of-supply-debate-2026-response-by-minister-of-state-for-education-jasmin-lau">MOE Committee of Supply Debate 2026 Response by Minister of State for Education Jasmin Lau</a><div class="type">政府公告</div></td><td>2026-03-03 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr id="g-1-sg-y2023"><td class="year">2023</td><td><a href="https://www.moe.gov.sg/news/parliamentary-replies/20230207-managing-the-use-of-artificial-intelligence-bots-such-as-chatgpt-in-schools">Managing the use of artificial intelligence (AI) bots such as ChatGPT in schools（Parliamentary reply）</a><div class="type">政府公告</div></td><td>2023-02-07 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2023</td><td><a href="https://www.moe.gov.sg/news/press-releases/20230920-more-support-for-schools-and-students-to-shape-the-future-of-learning">More Support for Schools and Students to Shape the Future of Learning（Launch of EdTech Masterplan 2030 “Transforming Education through Technology”）</a><div class="type">政府公告</div></td><td>2023-09-20 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-sg-yunknown"><td class="year">未知</td><td><a href="https://www.moe.gov.sg/education-in-sg/educational-technology-journey/edtech-masterplan/artificial-intelligence-in-education">MOE's position on AI use in education and assessment</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-tw"><div class="group-head"><h2>臺灣</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-TW-EY・2 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-tw-y2026"><td class="year">2026</td><td><a href="https://www.ey.gov.tw/Page/448DE008087A1971/69349d8a-b2be-406c-a997-8bf919259f85">打造AI智慧教育新生態─AI人才方舟計畫（115–118年）</a><div class="type">政府公告</div></td><td>2026-05-21 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-tw-yunknown"><td class="year">未知</td><td><a href="https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&amp;old=upload">臺灣中小學教師與學生AI素養框架</a><div class="type">框架</div></td><td>未知</td><td><span class="badge checked">書目已核</span></td></tr></tbody></table></div></section><section class="group" id="g-1-us"><div class="group-head"><h2>美國</h2><a class="to-index" href="#index">回到索引 ↑</a></div><p class="sub">O-US-WH・9 筆</p><div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody><tr id="g-1-us-y2026"><td class="year">2026</td><td><a href="https://www.federalregister.gov/documents/2026/04/13/2026-07087/final-priority-and-definitions-secretarys-supplemental-priority-and-definitions-on-advancing">Final Priority and Definitions—Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education</a><div class="type">正式政策</div></td><td>2026-04-13 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-us-y2025"><td class="year">2025</td><td><a href="https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth">Executive Order 14277: Advancing Artificial Intelligence Education for American Youth</a><div class="type">正式政策</div></td><td>2025-04-28 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr><td class="year">2025</td><td><a href="https://login.community.gadoe.org/documents/leveraging-ai-in-the-k-12-setting">Leveraging AI in the K-12 Setting</a><div class="type">官方指引</div></td><td>2025-01-21 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">2025</td><td><a href="https://www.federalregister.gov/documents/2025/07/21/2025-13650/proposed-priority-and-definitions-secretarys-supplemental-priority-and-definitions-on-advancing">Proposed Priority and Definitions—Secretary's Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education</a><div class="type">草案</div></td><td>2025-07-21 首發</td><td><span class="badge checked">書目已核</span></td></tr><tr id="g-1-us-y2024"><td class="year">2024</td><td><a href="https://go.ncdpi.gov/AI_Guidelines">NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools</a><div class="type">官方指引</div></td><td>2024-01-16 首發</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr id="g-1-us-yunknown"><td class="year">未知</td><td><a href="https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy">AI in Education: Model Policy for Ohio Districts and Schools</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge unverified">僅發現・未核</span></td></tr><tr><td class="year">未知</td><td><a href="https://www.oregon.gov/ode/educator-resources/teachingcontent/Pages/Generative-Artificial-Intelligence-%28AI%29-for-K-12-Schools.aspx">Generative Artificial Intelligence (AI) in K-12 Classrooms Guidance (v3.0, web-based)</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">未知</td><td><a href="https://www.cde.ca.gov/ci/pl/aiincalifornia.asp">Guidance for the Safe and Effective Use of Artificial Intelligence in California Public Schools: Learning With AI, Learning About AI</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge checked">書目已核</span></td></tr><tr><td class="year">未知</td><td><a href="https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools">Human-Centered AI Guidance for K-12 Public Schools</a><div class="type">官方指引</div></td><td>未知</td><td><span class="badge unverified">僅發現・未核</span></td></tr></tbody></table></div></section><div class="info"><p>資料來源：本刊知識庫（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/tree/main/research/knowledge-base">GitHub 公開</a>）。清單由程式自知識庫產生；發現錯誤請透過<a href="../../feedback/">讀者勘誤</a>回報。</p></div></main>
+    <footer class="site-footer"><div class="inner"><span>K-12 AI 素養國際動態</span><a href="../../about/">查核方法</a><a href="../../feedback/">讀者評鑑與勘誤（GitHub Issues）</a><a href="../../design-system/">設計系統</a><a href="https://github.com/jhchenmooc/k12-ai-literacy-report">GitHub 原始碼</a></div></footer>
+    </body></html>
+    
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (D:\codex\ai\audit-repo-20261010\research\render-site.test.js:8:61)
+    Test.runInAsyncScope (node:async_hooks:227:14)
+    Test.run (node:internal/test_runner/test:1306:25)
+    Test.start (node:internal/test_runner/test:1177:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:385:17)
+  ...
+# Subtest: generated pages contain no scripts, inline handlers or unsafe URL schemes
+ok 70 - generated pages contain no scripts, inline handlers or unsafe URL schemes
+  ---
+  duration_ms: 51.0389
+  type: 'test'
+  ...
+# Subtest: homepage keeps feedback entry and both generated blocks
+ok 71 - homepage keeps feedback entry and both generated blocks
+  ---
+  duration_ms: 30.1307
+  type: 'test'
+  ...
+# Subtest: archive excludes weekly candidates, escapes titles and keeps unknown dates unknown
+ok 72 - archive excludes weekly candidates, escapes titles and keeps unknown dates unknown
+  ---
+  duration_ms: 0.8592
+  type: 'test'
+  ...
+# Subtest: a generated daily edition page passes the publication gate unchanged
+ok 73 - a generated daily edition page passes the publication gate unchanged
+  ---
+  duration_ms: 120.8914
+  type: 'test'
+  ...
+# Subtest: journals and conferences are split by record type and every quick-index link has a target
+ok 74 - journals and conferences are split by record type and every quick-index link has a target
+  ---
+  duration_ms: 38.5237
+  type: 'test'
+  ...
+# Subtest: book chapters are listed in their own group on the journals page, labelled 專書章節
+ok 75 - book chapters are listed in their own group on the journals page, labelled 專書章節
+  ---
+  duration_ms: 1.3811
+  type: 'test'
+  ...
+# Subtest: AI literacy scope C records are hidden from the archive and every listed record exists
+ok 76 - AI literacy scope C records are hidden from the archive and every listed record exists
+  ---
+  duration_ms: 6.3561
+  type: 'test'
+  ...
+# Subtest: Friday period is inclusive through Thursday
+ok 77 - Friday period is inclusive through Thursday
+  ---
+  duration_ms: 5.3573
+  type: 'test'
+  ...
+# Subtest: refuses non-Friday and invalid calendar input
+ok 78 - refuses non-Friday and invalid calendar input
+  ---
+  duration_ms: 0.6772
+  type: 'test'
+  ...
+# Subtest: default risk and source metadata are unverified and held
+ok 79 - default risk and source metadata are unverified and held
+  ---
+  duration_ms: 0.3191
+  type: 'test'
+  ...
+# Subtest: writes draft outside publication; refuses overwrite
+ok 80 - writes draft outside publication; refuses overwrite
+  ---
+  duration_ms: 14.9746
+  type: 'test'
+  ...
+# Subtest: first issue candidates cannot be mistaken for verified publication
+ok 81 - first issue candidates cannot be mistaken for verified publication
+  ---
+  duration_ms: 1.9911
+  type: 'test'
+  ...
+# Subtest: form labels are extracted correctly
+ok 82 - form labels are extracted correctly
+  ---
+  duration_ms: 2.3873
+  type: 'test'
+  ...
+# Subtest: only actual reader issues in period count
+ok 83 - only actual reader issues in period count
+  ---
+  duration_ms: 4.9472
+  type: 'test'
+  ...
+# Subtest: aggregation excludes empty or malformed scores
+ok 84 - aggregation excludes empty or malformed scores
+  ---
+  duration_ms: 0.6302
+  type: 'test'
+  ...
+# Subtest: render explains ratings are not factual certification
+ok 85 - render explains ratings are not factual certification
+  ---
+  duration_ms: 1.3896
+  type: 'test'
+  ...
+# Subtest: supports renamed reader-perceived credibility rating
+ok 86 - supports renamed reader-perceived credibility rating
+  ---
+  duration_ms: 0.5528
+  type: 'test'
+  ...
+# Subtest: denominators show opt-outs and closed does not mean corrected
+ok 87 - denominators show opt-outs and closed does not mean corrected
+  ---
+  duration_ms: 2.1822
+  type: 'test'
+  ...
+# Subtest: 60 unique unlabeled candidates and ten balanced themes
+ok 88 - 60 unique unlabeled candidates and ten balanced themes
+  ---
+  duration_ms: 3.2914
+  type: 'test'
+  ...
+# Subtest: cannot distribute draft as verified blind test
+ok 89 - cannot distribute draft as verified blind test
+  ---
+  duration_ms: 2.424
+  type: 'test'
+  ...
+# Subtest: answer keys cannot appear in reviewer-facing cases
+ok 90 - answer keys cannot appear in reviewer-facing cases
+  ---
+  duration_ms: 1.0842
+  type: 'test'
+  ...
+# Subtest: missing source identifier blocks pack
+ok 91 - missing source identifier blocks pack
+  ---
+  duration_ms: 0.9015
+  type: 'test'
+  ...
+# Subtest: duplicate candidate ID blocks pack
+ok 92 - duplicate candidate ID blocks pack
+  ---
+  duration_ms: 4.2199
+  type: 'test'
+  ...
+# Subtest: adjudication requires two distinct documented reviewers per case
+ok 93 - adjudication requires two distinct documented reviewers per case
+  ---
+  duration_ms: 1.3232
+  type: 'test'
+  ...
+# Subtest: new targeted probes are distinct from prior sixty cases and not labelled gold
+ok 94 - new targeted probes are distinct from prior sixty cases and not labelled gold
+  ---
+  duration_ms: 3.3097
+  type: 'test'
+  ...
+# Subtest: every targeted probe is mapped to a specific publisher excerpt and provenance limit
+ok 95 - every targeted probe is mapped to a specific publisher excerpt and provenance limit
+  ---
+  duration_ms: 0.7298
+  type: 'test'
+  ...
+# Subtest: RCT recruit/analyzed correction is explicit and remains held
+ok 96 - RCT recruit/analyzed correction is explicit and remains held
+  ---
+  duration_ms: 0.6121
+  type: 'test'
+  ...
+# Subtest: lexical alerts cannot equate absence of warnings with evidence support
+ok 97 - lexical alerts cannot equate absence of warnings with evidence support
+  ---
+  duration_ms: 1.3809
+  type: 'test'
+  ...
+# Subtest: unknown and editorial implications are not converted to negative factual gold
+ok 98 - unknown and editorial implications are not converted to negative factual gold
+  ---
+  duration_ms: 0.5154
+  type: 'test'
+  ...
+# Subtest: actual nine held candidates remain discovery-only
+ok 99 - actual nine held candidates remain discovery-only
+  ---
+  duration_ms: 18.9854
+  type: 'test'
+  ...
+# Subtest: indexes remain deterministic
+ok 100 - indexes remain deterministic
+  ---
+  duration_ms: 16.7908
+  type: 'test'
+  ...
+# Subtest: date precision rejects fabricated day
+ok 101 - date precision rejects fabricated day
+  ---
+  duration_ms: 0.4109
+  type: 'test'
+  ...
+# Subtest: CSV quoted commas and double quotes preserve content
+ok 102 - CSV quoted commas and double quotes preserve content
+  ---
+  duration_ms: 0.5602
+  type: 'test'
+  ...
+# Subtest: invalid duplicate IDs and references fail closed
+ok 103 - invalid duplicate IDs and references fail closed
+  ---
+  duration_ms: 11.2862
+  type: 'test'
+  ...
+# Subtest: unavailable searches must not claim zero hits
+ok 104 - unavailable searches must not claim zero hits
+  ---
+  duration_ms: 3.945
+  type: 'test'
+  ...
+# Subtest: real knowledge classifications retain unverified status and journal links
+ok 105 - real knowledge classifications retain unverified status and journal links
+  ---
+  duration_ms: 6.4951
+  type: 'test'
+  ...
+# Subtest: synthetic country, topic and conference view is typed and deterministic
+ok 106 - synthetic country, topic and conference view is typed and deterministic
+  ---
+  duration_ms: 2.5559
+  type: 'test'
+  ...
+# Subtest: source IDs follow venue-watchlist v1.4 (J01-J47, C01-C18, C20-C22) and reject unlisted codes
+ok 107 - source IDs follow venue-watchlist v1.4 (J01-J47, C01-C18, C20-C22) and reject unlisted codes
+  ---
+  duration_ms: 36.1296
+  type: 'test'
+  ...
+# Subtest: venue/agency relation mix-up is invalid
+ok 108 - venue/agency relation mix-up is invalid
+  ---
+  duration_ms: 3.5491
+  type: 'test'
+  ...
+# Subtest: three primary-source dated frameworks are archived by original publication year only
+ok 109 - three primary-source dated frameworks are archived by original publication year only
+  ---
+  duration_ms: 4.9616
+  type: 'test'
+  ...
+# Subtest: Australian dated policy and review remain separate linked works
+ok 110 - Australian dated policy and review remain separate linked works
+  ---
+  duration_ms: 5.2308
+  type: 'test'
+  ...
+# Subtest: dated Springer studies map to monitored J03/J32 and original years
+ok 111 - dated Springer studies map to monitored J03/J32 and original years
+  ---
+  duration_ms: 7.9822
+  type: 'test'
+  ...
+# Subtest: LAK conference papers have dated C03 source links
+ok 112 - LAK conference papers have dated C03 source links
+  ---
+  duration_ms: 4.2208
+  type: 'test'
+  ...
+# Subtest: Japan Korea and England historical official announcements retain jurisdiction and first-page dates
+ok 113 - Japan Korea and England historical official announcements retain jurisdiction and first-page dates
+  ---
+  duration_ms: 3.9356
+  type: 'test'
+  ...
+# Subtest: Discover Education July and May 2026 studies keep exact online dates
+ok 114 - Discover Education July and May 2026 studies keep exact online dates
+  ---
+  duration_ms: 4.1243
+  type: 'test'
+  ...
+# Subtest: Google Forms URL is removed and provider disabled
+ok 115 - Google Forms URL is removed and provider disabled
+  ---
+  duration_ms: 3.0094
+  type: 'test'
+  ...
+# Subtest: old no-login URL clearly says paused without collecting data
+ok 116 - old no-login URL clearly says paused without collecting data
+  ---
+  duration_ms: 1.0192
+  type: 'test'
+  ...
+# Subtest: primary feedback page offers GitHub and does not promote no-login route
+ok 117 - primary feedback page offers GitHub and does not promote no-login route
+  ---
+  duration_ms: 0.9793
+  type: 'test'
+  ...
+# Subtest: privacy notice remains accessible as an archival explanation
+ok 118 - privacy notice remains accessible as an archival explanation
+  ---
+  duration_ms: 0.8334
+  type: 'test'
+  ...
+# Subtest: ten actual publisher-source topics are screened
+ok 119 - ten actual publisher-source topics are screened
+  ---
+  duration_ms: 4.5338
+  type: 'test'
+  ...
+# Subtest: screening has twenty source-linked claims without gold-standard certification
+ok 120 - screening has twenty source-linked claims without gold-standard certification
+  ---
+  duration_ms: 0.8792
+  type: 'test'
+  ...
+# Subtest: each topic includes one cautious and one flagged interpretation
+ok 121 - each topic includes one cautious and one flagged interpretation
+  ---
+  duration_ms: 2.609
+  type: 'test'
+  ...
+# Subtest: draft blind pack stays unlabeled and cannot accidentally be promoted to gold
+ok 122 - draft blind pack stays unlabeled and cannot accidentally be promoted to gold
+  ---
+  duration_ms: 0.9707
+  type: 'test'
+  ...
+# Subtest: unregistered new week fails closed
+ok 123 - unregistered new week fails closed
+  ---
+  duration_ms: 26.9192
+  type: 'test'
+  ...
+# Subtest: registered synthetic descriptive claim passes structural checks
+ok 124 - registered synthetic descriptive claim passes structural checks
+  ---
+  duration_ms: 46.2835
+  type: 'test'
+  ...
+# Subtest: unresolved contradiction is blocked
+ok 125 - unresolved contradiction is blocked
+  ---
+  duration_ms: 33.6321
+  type: 'test'
+  ...
+# Subtest: unsupported high-impact claim blocked
+ok 126 - unsupported high-impact claim blocked
+  ---
+  duration_ms: 33.1091
+  type: 'test'
+  ...
+# Subtest: hold claim cannot be silently published
+ok 127 - hold claim cannot be silently published
+  ---
+  duration_ms: 32.9377
+  type: 'test'
+  ...
+# Subtest: fake high-impact review fields rejected
+ok 128 - fake high-impact review fields rejected
+  ---
+  duration_ms: 31.0192
+  type: 'test'
+  ...
+# Subtest: duplicate claim id blocked
+ok 129 - duplicate claim id blocked
+  ---
+  duration_ms: 33.0145
+  type: 'test'
+  ...
+# Subtest: new monthly without manifest entry blocked
+ok 130 - new monthly without manifest entry blocked
+  ---
+  duration_ms: 34.0999
+  type: 'test'
+  ...
+# Subtest: legacy audit stays non-certified
+ok 131 - legacy audit stays non-certified
+  ---
+  duration_ms: 0.8548
+  type: 'test'
+  ...
+# Subtest: unregistered sentence in report is blocked
+ok 132 - unregistered sentence in report is blocked
+  ---
+  duration_ms: 37.3815
+  type: 'test'
+  ...
+# Subtest: modified published text without updating evidence is blocked
+ok 133 - modified published text without updating evidence is blocked
+  ---
+  duration_ms: 35.2156
+  type: 'test'
+  ...
+# Subtest: claim present in JSON but absent from HTML is blocked
+ok 134 - claim present in JSON but absent from HTML is blocked
+  ---
+  duration_ms: 33.5421
+  type: 'test'
+  ...
+# Subtest: unlisted claim id in HTML is blocked
+ok 135 - unlisted claim id in HTML is blocked
+  ---
+  duration_ms: 35.6819
+  type: 'test'
+  ...
+# Subtest: duplicate claim id in HTML is blocked
+ok 136 - duplicate claim id in HTML is blocked
+  ---
+  duration_ms: 43.6485
+  type: 'test'
+  ...
+# Subtest: missing main region is blocked
+ok 137 - missing main region is blocked
+  ---
+  duration_ms: 38.8178
+  type: 'test'
+  ...
+# Subtest: nested text markup preserves claim when normalised
+ok 138 - nested text markup preserves claim when normalised
+  ---
+  duration_ms: 35.1506
+  type: 'test'
+  ...
+# Subtest: unregistered major heading in main is blocked
+ok 139 - unregistered major heading in main is blocked
+  ---
+  duration_ms: 41.7426
+  type: 'test'
+  ...
+# Subtest: registered heading with unrelated body claim is blocked
+ok 140 - registered heading with unrelated body claim is blocked
+  ---
+  duration_ms: 38.2397
+  type: 'test'
+  ...
+# Subtest: unregistered list item in main is blocked
+ok 141 - unregistered list item in main is blocked
+  ---
+  duration_ms: 35.4663
+  type: 'test'
+  ...
+# Subtest: missing original excerpt prevents release
+ok 142 - missing original excerpt prevents release
+  ---
+  duration_ms: 33.0996
+  type: 'test'
+  ...
+# Subtest: altered archived source checksum prevents release
+ok 143 - altered archived source checksum prevents release
+  ---
+  duration_ms: 34.622
+  type: 'test'
+  ...
+# Subtest: missing interpretation and limitations prevents release
+ok 144 - missing interpretation and limitations prevents release
+  ---
+  duration_ms: 40.9091
+  type: 'test'
+  ...
+# Subtest: source and claim URL mismatch prevents release
+ok 145 - source and claim URL mismatch prevents release
+  ---
+  duration_ms: 41.4732
+  type: 'test'
+  ...
+# Subtest: unreviewed translation prevents release
+ok 146 - unreviewed translation prevents release
+  ---
+  duration_ms: 36.3559
+  type: 'test'
+  ...
+# Subtest: source excerpt genuinely included and checksummed passes structural validation
+ok 147 - source excerpt genuinely included and checksummed passes structural validation
+  ---
+  duration_ms: 36.8234
+  type: 'test'
+  ...
+# Subtest: medium-risk claim without two-pass agreement is held
+ok 148 - medium-risk claim without two-pass agreement is held
+  ---
+  duration_ms: 30.0587
+  type: 'test'
+  ...
+# Subtest: medium-risk claim cannot omit crosscheck trace
+ok 149 - medium-risk claim cannot omit crosscheck trace
+  ---
+  duration_ms: 32.6324
+  type: 'test'
+  ...
+# Subtest: high risk remains held despite purported human review fields
+ok 150 - high risk remains held despite purported human review fields
+  ---
+  duration_ms: 33.2443
+  type: 'test'
+  ...
+# Subtest: risk classification cannot hide impact behind low tier
+ok 151 - risk classification cannot hide impact behind low tier
+  ---
+  duration_ms: 35.0729
+  type: 'test'
+  ...
+# Subtest: missing risk tier blocks release
+ok 152 - missing risk tier blocks release
+  ---
+  duration_ms: 27.8691
+  type: 'test'
+  ...
+# Subtest: low-risk bibliographic item can publish without expert labels
+ok 153 - low-risk bibliographic item can publish without expert labels
+  ---
+  duration_ms: 27.309
+  type: 'test'
+  ...
+# Subtest: missing registered HTML returns validation error, not exception
+ok 154 - missing registered HTML returns validation error, not exception
+  ---
+  duration_ms: 34.4331
+  type: 'test'
+  ...
+# Subtest: HTML comment pretending to contain a bound claim is rejected
+ok 155 - HTML comment pretending to contain a bound claim is rejected
+  ---
+  duration_ms: 39.3789
+  type: 'test'
+  ...
+# Subtest: unsupported visible content tag cannot bypass claim binding
+ok 156 - unsupported visible content tag cannot bypass claim binding
+  ---
+  duration_ms: 36.654
+  type: 'test'
+  ...
+# Subtest: inline event handlers and hidden attributes are blocked
+ok 157 - inline event handlers and hidden attributes are blocked
+  ---
+  duration_ms: 39.2998
+  type: 'test'
+  ...
+# Subtest: unbound direct div text is rejected
+ok 158 - unbound direct div text is rejected
+  ---
+  duration_ms: 36.3044
+  type: 'test'
+  ...
+# Subtest: unbound text inside section outside paragraphs is rejected
+ok 159 - unbound text inside section outside paragraphs is rejected
+  ---
+  duration_ms: 35.2541
+  type: 'test'
+  ...
+# Subtest: bound content in wrapper elements remains valid
+ok 160 - bound content in wrapper elements remains valid
+  ---
+  duration_ms: 38.1024
+  type: 'test'
+  ...
+# Subtest: invalid calendar dates and malformed source URLs are rejected
+ok 161 - invalid calendar dates and malformed source URLs are rejected
+  ---
+  duration_ms: 37.8992
+  type: 'test'
+  ...
+# Subtest: offline full-issue fixture fails closed when evidence is tampered with
+ok 162 - offline full-issue fixture fails closed when evidence is tampered with
+  ---
+  duration_ms: 40.4602
+  type: 'test'
+  ...
+# Subtest: unregistered daily HTML is blocked, not silently deployed
+ok 163 - unregistered daily HTML is blocked, not silently deployed
+  ---
+  duration_ms: 28.4063
+  type: 'test'
+  ...
+# Subtest: registered daily HTML without explicit narrow channel is blocked
+ok 164 - registered daily HTML without explicit narrow channel is blocked
+  ---
+  duration_ms: 48.4553
+  type: 'test'
+  ...
+# Subtest: opt-in daily fixed low-risk source record passes structural validation
+ok 165 - opt-in daily fixed low-risk source record passes structural validation
+  ---
+  duration_ms: 42.447
+  type: 'test'
+  ...
+# Subtest: daily descriptive or high risk cannot bypass structural gate
+ok 166 - daily descriptive or high risk cannot bypass structural gate
+  ---
+  duration_ms: 46.3452
+  type: 'test'
+  ...
+# Subtest: daily prose policy analysis cannot be disguised as a bibliographic claim
+ok 167 - daily prose policy analysis cannot be disguised as a bibliographic claim
+  ---
+  duration_ms: 46.8215
+  type: 'test'
+  ...
+# Subtest: daily issue future source date is blocked
+ok 168 - daily issue future source date is blocked
+  ---
+  duration_ms: 46.2309
+  type: 'test'
+  ...
+# Subtest: daily does not allow fabricated wrong first-disclosure date
+ok 169 - daily does not allow fabricated wrong first-disclosure date
+  ---
+  duration_ms: 46.4285
+  type: 'test'
+  ...
+# Subtest: attributed official summary with pinned excerpt and two passes passes structural gate
+ok 170 - attributed official summary with pinned excerpt and two passes passes structural gate
+  ---
+  duration_ms: 48.5493
+  type: 'test'
+  ...
+# Subtest: research abstracts are explicitly attributed to their authors
+ok 171 - research abstracts are explicitly attributed to their authors
+  ---
+  duration_ms: 45.4919
+  type: 'test'
+  ...
+# Subtest: freeform claims and unsupported causal policy wording fail closed
+ok 172 - freeform claims and unsupported causal policy wording fail closed
+  ---
+  duration_ms: 45.4898
+  type: 'test'
+  ...
+# Subtest: summary without two reviews or pinned source cannot publish
+ok 173 - summary without two reviews or pinned source cannot publish
+  ---
+  duration_ms: 46.1539
+  type: 'test'
+  ...
+# Subtest: no silent expansion to weekly and monthly publishing policy
+ok 174 - no silent expansion to weekly and monthly publishing policy
+  ---
+  duration_ms: 38.3212
+  type: 'test'
+  ...
+# Subtest: daily rejects missing first disclosure
+ok 175 - daily rejects missing first disclosure
+  ---
+  duration_ms: 47.2089
+  type: 'test'
+  ...
+# Subtest: daily summary rejects missing source-aligned spans
+ok 176 - daily summary rejects missing source-aligned spans
+  ---
+  duration_ms: 40.3753
+  type: 'test'
+  ...
+# Subtest: daily summary rejects raw newline
+ok 177 - daily summary rejects raw newline
+  ---
+  duration_ms: 40.1602
+  type: 'test'
+  ...
+# Subtest: daily rejects cross-category source misrepresentation
+ok 178 - daily rejects cross-category source misrepresentation
+  ---
+  duration_ms: 40.7311
+  type: 'test'
+  ...
+# Subtest: daily rejects claims path borrowed from unrelated issue
+ok 179 - daily rejects claims path borrowed from unrelated issue
+  ---
+  duration_ms: 49.1823
+  type: 'test'
+  ...
+# Subtest: registered report refuses script injected outside main
+ok 180 - registered report refuses script injected outside main
+  ---
+  duration_ms: 35.2936
+  type: 'test'
+  ...
+# Subtest: registered daily source facts refuse inline handlers outside main
+ok 181 - registered daily source facts refuse inline handlers outside main
+  ---
+  duration_ms: 40.3879
+  type: 'test'
+  ...
+# Subtest: daily bibliography requires actual pinned source checksum
+ok 182 - daily bibliography requires actual pinned source checksum
+  ---
+  duration_ms: 42.4291
+  type: 'test'
+  ...
+# Subtest: older-than-seven-days bibliographic data cannot masquerade as daily breaking news
+ok 183 - older-than-seven-days bibliographic data cannot masquerade as daily breaking news
+  ---
+  duration_ms: 37.001
+  type: 'test'
+  ...
+# Subtest: scriptable https-looking claim anchor is blocked on the full static page
+ok 184 - scriptable https-looking claim anchor is blocked on the full static page
+  ---
+  duration_ms: 30.3768
+  type: 'test'
+  ...
+# Subtest: HTML numeric entity obfuscation of unsafe href is blocked
+ok 185 - HTML numeric entity obfuscation of unsafe href is blocked
+  ---
+  duration_ms: 35.7065
+  type: 'test'
+  ...
+# Subtest: safe HTTPS static claim anchor is still permitted
+ok 186 - safe HTTPS static claim anchor is still permitted
+  ---
+  duration_ms: 35.7684
+  type: 'test'
+  ...
+# Subtest: daily issue cannot omit reader-visible primary source
+ok 187 - daily issue cannot omit reader-visible primary source
+  ---
+  duration_ms: 36.1483
+  type: 'test'
+  ...
+# Subtest: daily issue cannot substitute an unrelated source link
+ok 188 - daily issue cannot substitute an unrelated source link
+  ---
+  duration_ms: 42.8655
+  type: 'test'
+  ...
+# Subtest: legacy files retain noncertified warning but reject malicious script
+ok 189 - legacy files retain noncertified warning but reject malicious script
+  ---
+  duration_ms: 24.6329
+  type: 'test'
+  ...
+# Subtest: legacy benign static content remains exempt from retrospective claim recertification
+ok 190 - legacy benign static content remains exempt from retrospective claim recertification
+  ---
+  duration_ms: 23.5812
+  type: 'test'
+  ...
+# Subtest: deployed-site historical monthly reports do not link to excluded research directory
+ok 191 - deployed-site historical monthly reports do not link to excluded research directory
+  ---
+  duration_ms: 0.8979
+  type: 'test'
+  ...
+# Subtest: daily policy must identify formal policy, guidance, draft, commentary or event
+ok 192 - daily policy must identify formal policy, guidance, draft, commentary or event
+  ---
+  duration_ms: 40.2862
+  type: 'test'
+  ...
+# Subtest: daily research cannot be mislabelled as an official guidance document
+ok 193 - daily research cannot be mislabelled as an official guidance document
+  ---
+  duration_ms: 33.9442
+  type: 'test'
+  ...
+# Subtest: daily original source link outside its claim does not count
+ok 194 - daily original source link outside its claim does not count
+  ---
+  duration_ms: 34.0981
+  type: 'test'
+  ...
+# Subtest: a new daily issue cannot override a held matching candidate in the shared weekly pool
+ok 195 - a new daily issue cannot override a held matching candidate in the shared weekly pool
+  ---
+  duration_ms: 38.9487
+  type: 'test'
+  ...
+# Subtest: an approved matching candidate permits the unchanged structured daily checks
+ok 196 - an approved matching candidate permits the unchanged structured daily checks
+  ---
+  duration_ms: 41.6355
+  type: 'test'
+  ...
+# Subtest: real A07 source URL remains blocked by existing held candidate despite valid synthetic source structure
+ok 197 - real A07 source URL remains blocked by existing held candidate despite valid synthetic source structure
+  ---
+  duration_ms: 49.1722
+  type: 'test'
+  ...
+# Subtest: weekly claim outside AI literacy scope (C, unknown or missing) is blocked
+ok 198 - weekly claim outside AI literacy scope (C, unknown or missing) is blocked
+  ---
+  duration_ms: 90.4495
+  type: 'test'
+  ...
+# Subtest: AI literacy scope needs valid framework codes and a reason
+ok 199 - AI literacy scope needs valid framework codes and a reason
+  ---
+  duration_ms: 198.6679
+  type: 'test'
+  ...
+# Subtest: class B with a framework code publishes like class A
+ok 200 - class B with a framework code publishes like class A
+  ---
+  duration_ms: 26.7225
+  type: 'test'
+  ...
+# Subtest: daily channel also requires A or B scope
+ok 201 - daily channel also requires A or B scope
+  ---
+  duration_ms: 35.4969
+  type: 'test'
+  ...
+# Subtest: daily claim cannot relabel the scope of its cumulative candidate
+ok 202 - daily claim cannot relabel the scope of its cumulative candidate
+  ---
+  duration_ms: 41.0886
+  type: 'test'
+  ...
+# Subtest: weekly edition blocks teacher-education, higher-education, adult, unknown or missing audience
+ok 203 - weekly edition blocks teacher-education, higher-education, adult, unknown or missing audience
+  ---
+  duration_ms: 184.2767
+  type: 'test'
+  ...
+# Subtest: other education stakeholders may publish in weekly and daily editions
+ok 204 - other education stakeholders may publish in weekly and daily editions
+  ---
+  duration_ms: 57.6239
+  type: 'test'
+  ...
+# Subtest: daily edition blocks teacher-education audience
+ok 205 - daily edition blocks teacher-education audience
+  ---
+  duration_ms: 31.4226
+  type: 'test'
+  ...
+# Subtest: monthly edition may carry teacher-education items but never an unknown audience
+ok 206 - monthly edition may carry teacher-education items but never an unknown audience
+  ---
+  duration_ms: 59.476
+  type: 'test'
+  ...
+# Subtest: daily claim cannot relabel the audience of its cumulative candidate
+ok 207 - daily claim cannot relabel the audience of its cumulative candidate
+  ---
+  duration_ms: 36.4533
+  type: 'test'
+  ...
+# Subtest: issue feedback form offers both ratings and specific correction evidence
+ok 208 - issue feedback form offers both ratings and specific correction evidence
+  ---
+  duration_ms: 2.9238
+  type: 'test'
+  ...
+# Subtest: feedback form and login notice are linked from homepage and both archived reports
+ok 209 - feedback form and login notice are linked from homepage and both archived reports
+  ---
+  duration_ms: 1.8542
+  type: 'test'
+  ...
+# Subtest: feedback page has working repository issue template url and public privacy warning
+ok 210 - feedback page has working repository issue template url and public privacy warning
+  ---
+  duration_ms: 2.0429
+  type: 'test'
+  ...
+# Subtest: digest schedule aggregates issues rather than writing unverified correction automatically
+ok 211 - digest schedule aggregates issues rather than writing unverified correction automatically
+  ---
+  duration_ms: 0.9829
+  type: 'test'
+  ...
+# Subtest: pure rating without narrative is allowed
+ok 212 - pure rating without narrative is allowed
+  ---
+  duration_ms: 0.9602
+  type: 'test'
+  ...
+# Subtest: weekly digest avoids copying issue titles and shows sample denominators
+ok 213 - weekly digest avoids copying issue titles and shows sample denominators
+  ---
+  duration_ms: 0.6163
+  type: 'test'
+  ...
+# Subtest: 40 remaining claim assessments cover four items in each of ten groups
+ok 214 - 40 remaining claim assessments cover four items in each of ten groups
+  ---
+  duration_ms: 2.7723
+  type: 'test'
+  ...
+# Subtest: the two preliminary reviews exactly cover all sixty original candidates without duplicates
+ok 215 - the two preliminary reviews exactly cover all sixty original candidates without duplicates
+  ---
+  duration_ms: 0.5607
+  type: 'test'
+  ...
+# Subtest: remaining preliminary assessments do not masquerade as validated ground truth
+ok 216 - remaining preliminary assessments do not masquerade as validated ground truth
+  ---
+  duration_ms: 0.9154
+  type: 'test'
+  ...
+# Subtest: abstentions and editorial interpretations are explicitly separated from factual support
+ok 217 - abstentions and editorial interpretations are explicitly separated from factual support
+  ---
+  duration_ms: 0.4696
+  type: 'test'
+  ...
+# Subtest: blind review source never gets assessment labels
+ok 218 - blind review source never gets assessment labels
+  ---
+  duration_ms: 0.4725
+  type: 'test'
+  ...
+1..218
+# tests 218
+# suites 0
+# pass 217
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 4899.0548

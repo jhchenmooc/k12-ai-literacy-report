@@ -1,0 +1,40 @@
+TAP version 13
+# Subtest: P3 favicon regression: external and noncanonical icons are rejected
+not ok 1 - P3 favicon regression: external and noncanonical icons are rejected
+  ---
+  duration_ms: 52.9544
+  type: 'test'
+  location: 'D:\\codex\\ai\\fix-review-20261010\\research\\validate-publication.test.js:124:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    https://tracker.example/p.png
+    
+    true !== false
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: false
+  actual: true
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (D:\codex\ai\fix-review-20261010\research\validate-publication.test.js:127:86)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.start (node:internal/test_runner/test:944:17)
+    startSubtestAfterBootstrap (node:internal/test_runner/harness:296:17)
+  ...
+# Subtest: P3 favicon control: fixed local SVG file is accepted
+ok 2 - P3 favicon control: fixed local SVG file is accepted
+  ---
+  duration_ms: 44.3418
+  type: 'test'
+  ...
+1..2
+# tests 2
+# suites 0
+# pass 1
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 353.7294

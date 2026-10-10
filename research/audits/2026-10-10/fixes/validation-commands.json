@@ -1,0 +1,73 @@
+[
+  {
+    "args": [
+      "research/benchmark-semantic.js",
+      "research/benchmarks/semantic-cases-2026-10.json"
+    ],
+    "exitCode": 0,
+    "stdout": "{\n  \"total\": 30,\n  \"unsupported\": 20,\n  \"supported\": 10,\n  \"TP\": 18,\n  \"FN\": 2,\n  \"FP\": 1,\n  \"TN\": 9,\n  \"flag_recall\": 0.9,\n  \"false_negative_rate\": 0.1,\n  \"false_positive_rate\": 0.1,\n  \"undetected\": [\n    \"N01-SUBTLE\",\n    \"N04-SUBTLE\"\n  ],\n  \"note\": \"Metric against provisional synthetic labels only; not a measured real-world error rate or independent gold validation.\"\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "research/validate-blind-pack.js",
+      "research/benchmarks/blind-review-candidates-60.json"
+    ],
+    "exitCode": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"count\": 60,\n  \"staged\": 0,\n  \"ready\": false,\n  \"errors\": [],\n  \"unverified_count\": 60\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "research/compare-source-facts.js",
+      "research/benchmarks/structured-source-fact-probes-2026-10-09.json"
+    ],
+    "exitCode": 0,
+    "stdout": "{\n  \"notice\": \"STRUCTURAL TRIAGE ONLY — NOT SOURCE AUTHENTICATION OR PUBLICATION\",\n  \"results\": [\n    {\n      \"case_id\": \"FACT-RCT-001\",\n      \"status\": \"consistent_with_entered_evidence\",\n      \"matches\": [\n        {\n          \"key\": \"sample.initial_recruited\",\n          \"expected\": 116,\n          \"recorded\": 116,\n          \"op\": \"eq\",\n          \"locator\": \"Methods / participants\",\n          \"excerpt\": \"initially recruited 116 sophomore STEM students\"\n        }\n      ],\n      \"conflicts\": [],\n      \"unknowns\": [],\n      \"evidence_level\": \"publisher_index_excerpt\",\n      \"full_text_verified\": false,\n      \"note\": \"All findings compare manually structured values, not original source truth or full natural-language semantics.\",\n      \"publication_decision\": \"hold\"\n    },\n    {\n      \"case_id\": \"FACT-RCT-002\",\n      \"status\": \"conflict_with_entered_evidence\",\n      \"matches\": [\n        {\n          \"key\": \"sample.initial_recruited\",\n          \"expected\": 116,\n          \"recorded\": 116,\n          \"op\": \"eq\",\n          \"locator\": \"Methods / participants\",\n          \"excerpt\": \"initially recruited 116 sophomore STEM students\"\n        }\n      ],\n      \"conflicts\": [\n        {\n          \"key\": \"sample.analysed\",\n          \"expected\": 116,\n          \"recorded\": 95,\n          \"op\": \"eq\",\n          \"locator\": \"Methods / completed data\",\n          \"excerpt\": \"95 students completed all procedures and provided complete data\"\n        }\n      ],\n      \"unknowns\": [],\n      \"evidence_level\": \"publisher_index_excerpt\",\n      \"full_text_verified\": false,\n      \"note\": \"All findings compare manually structured values, not original source truth or full natural-language semantics.\",\n      \"publication_decision\": \"hold\"\n    },\n    {\n      \"case_id\": \"FACT-RCT-003\",\n      \"status\": \"consistent_with_entered_evidence\",\n      \"matches\": [\n        {\n          \"key\": \"sample.analysed\",\n          \"expected\": 95,\n          \"recorded\": 95,\n          \"op\": \"eq\",\n          \"locator\": \"Methods / completed data\",\n          \"excerpt\": \"95 students completed all procedures and provided complete data\"\n        },\n        {\n          \"key\": \"sample.experimental\",\n          \"expected\": 50,\n          \"recorded\": 50,\n          \"op\": \"eq\",\n          \"locator\": \"Methods / experimental group\",\n          \"excerpt\": \"experimental group (n = 50)\"\n        },\n        {\n          \"key\": \"sample.control\",\n          \"expected\": 45,\n          \"recorded\": 45,\n          \"op\": \"eq\",\n          \"locator\": \"Methods / control group\",\n          \"excerpt\": \"control group (n = 45)\"\n        }\n      ],\n      \"conflicts\": [],\n      \"unknowns\": [],\n      \"evidence_level\": \"publisher_index_excerpt\",\n      \"full_text_verified\": false,\n      \"note\": \"All findings compare manually structured values, not original source truth or full natural-language semantics.\",\n      \"publication_decision\": \"hold\"\n    },\n    {\n      \"case_id\": \"FACT-RCT-004\",\n      \"status\": \"conflict_with_entered_evidence\",\n      \"matches\": [],\n      \"conflicts\": [\n        {\n          \"key\": \"sample.population\",\n          \"expected\": \"primary school pupils\",\n          \"recorded\": \"university STEM sophomores\",\n          \"op\": \"eq\",\n          \"locator\": \"Methods / participant population\",\n          \"excerpt\": \"initially recruited 116 sophomore STEM students\"\n        }\n      ],\n      \"unknowns\": [],\n      \"evidence_level\": \"publisher_index_excerpt\",\n      \"full_text_verified\": false,\n      \"note\": \"All findings compare manually structured values, not original source truth or full natural-language semantics.\",\n      \"publication_decision\": \"hold\"\n    },\n    {\n      \"case_id\": \"FACT-UNESCO-001\",\n      \"status\": \"consistent_with_entered_evidence\",\n      \"matches\": [\n        {\n          \"key\": \"event.kind\",\n          \"expected\": \"hands-on design training\",\n          \"recorded\": \"hands-on design training\",\n          \"op\": \"eq\",\n          \"locator\": \"Opening / Digital Learning Week 2026\",\n          \"excerpt\": \"A training at Digital Learning Week 2026\"\n        }\n      ],\n      \"conflicts\": [],\n      \"unknowns\": [],\n      \"evidence_level\": \"publisher_index_excerpt\",\n      \"full_text_verified\": false,\n      \"note\": \"All findings compare manually structured values, not original source truth or full natural-language semantics.\",\n      \"publication_decision\": \"hold\"\n    },\n    {\n      \"case_id\": \"FACT-UNESCO-002\",\n      \"status\": \"cannot_determine\",\n      \"matches\": [],\n      \"conflicts\": [],\n      \"unknowns\": [\n        {\n          \"key\": \"policy.binding_mandate\",\n          \"reason\": \"no_source_fact\"\n        }\n      ],\n      \"evidence_level\": \"publisher_index_excerpt\",\n      \"full_text_verified\": false,\n      \"note\": \"All findings compare manually structured values, not original source truth or full natural-language semantics.\",\n      \"publication_decision\": \"hold\"\n    },\n    {\n      \"case_id\": \"FACT-UNESCO-003\",\n      \"status\": \"cannot_determine\",\n      \"matches\": [],\n      \"conflicts\": [],\n      \"unknowns\": [\n        {\n          \"key\": \"outcome.randomized_learning_result_reported\",\n          \"reason\": \"no_source_fact\"\n        }\n      ],\n      \"evidence_level\": \"publisher_index_excerpt\",\n      \"full_text_verified\": false,\n      \"note\": \"All findings compare manually structured values, not original source truth or full natural-language semantics.\",\n      \"publication_decision\": \"hold\"\n    },\n    {\n      \"case_id\": \"FACT-UNESCO-004\",\n      \"status\": \"cannot_determine\",\n      \"matches\": [],\n      \"conflicts\": [],\n      \"unknowns\": [\n        {\n          \"key\": \"outcome.satisfaction_percent\",\n          \"reason\": \"invalid_or_unsupported_assertion\"\n        }\n      ],\n      \"evidence_level\": \"publisher_index_excerpt\",\n      \"full_text_verified\": false,\n      \"note\": \"All findings compare manually structured values, not original source truth or full natural-language semantics.\",\n      \"publication_decision\": \"hold\"\n    }\n  ]\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "research/validate-knowledge-base.js",
+      "."
+    ],
+    "exitCode": 0,
+    "stdout": "v1.7 knowledge base valid 369 records 929 relations 281 search runs\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "research/render-knowledge-base-years.js"
+    ],
+    "exitCode": 0,
+    "stdout": "yearly Markdown consistent\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "research/validate-publication.js",
+      "."
+    ],
+    "exitCode": 0,
+    "stdout": "{\n  \"ok\": true,\n  \"errors\": [],\n  \"warnings\": [\n    \"Legacy issue not certified by this gate: weekly/2026-09-29_10-08/index.html\",\n    \"Legacy issue not certified by this gate: monthly/2026-09/index.html\"\n  ],\n  \"checked_editions\": 0,\n  \"legacy_editions\": 2\n}\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "research/render-site.js"
+    ],
+    "exitCode": 0,
+    "stdout": "site pages consistent 10\n",
+    "stderr": ""
+  },
+  {
+    "args": [
+      "research/public-site.js",
+      ".",
+      "--build"
+    ],
+    "exitCode": 0,
+    "stdout": "{\n  \"output\": \"D:\\\\codex\\\\ai\\\\fix-review-20261010\\\\_public_site\",\n  \"files\": [\n    \".nojekyll\",\n    \"about/index.html\",\n    \"archive/conferences/index.html\",\n    \"archive/index.html\",\n    \"archive/journals/index.html\",\n    \"archive/policy/index.html\",\n    \"archive/research/index.html\",\n    \"assets/design-system.css\",\n    \"assets/favicon.svg\",\n    \"assets/site.css\",\n    \"daily/index.html\",\n    \"design-system/index.html\",\n    \"feedback/index.html\",\n    \"feedback/no-login-config.js\",\n    \"feedback/no-login/index.html\",\n    \"feedback/privacy/index.html\",\n    \"index.html\",\n    \"monthly/2026-09/index.html\",\n    \"monthly/index.html\",\n    \"publication/issues.json\",\n    \"weekly/2026-09-29_10-08/index.html\",\n    \"weekly/index.html\"\n  ]\n}\n",
+    "stderr": ""
+  }
+]
