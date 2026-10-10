@@ -18,9 +18,10 @@ function scan(root,folder){
  * <p>, <h1>, <h2>, <h3>, <h4>, <li>, <blockquote>, <figcaption>, <td> and <th> INSIDE
  * <main> must have a data-claim-id and identical text in the evidence file.
  *
- * Registered reports accept a bare main-only body or the exact daily renderer
- * shell. Shared repository CSS and the renderer are trusted, reviewed code;
- * this structural gate does not establish source truth or accessibility.
+ * Registered reports accept a bare main-only body or the exact renderer shell
+ * of their channel (daily by date; weekly/monthly by a valid period). Shared
+ * repository CSS and the renderer are trusted, reviewed code; this structural
+ * gate does not establish source truth or accessibility.
  */
 const substantive=new Set(["p","h1","h2","h3","h4","li","blockquote","figcaption","td","th"]);
 const safeTags=new Set(["main","article","section","div","header","footer","p","h1","h2","h3","h4","li","ul","ol","blockquote","figcaption","figure","table","thead","tbody","tfoot","tr","td","th","strong","b","em","i","span","a","small","code","br","hr","sup","sub","time"]);
@@ -78,7 +79,13 @@ function registeredShell(document,main,issueDate,issuePath){
  }else if(issueDate){
   const expected=parse5.parse(require("./render-site.js").renderDailyEdition({date:issueDate,claims:[]}));
   if(JSON.stringify(shellShape(document))!==JSON.stringify(shellShape(expected)))errors.push("registered daily shell differs from trusted renderer outside main");
- }else errors.push("registered report body outside main requires an approved renderer shell");
+ }else{
+  const [channel,period]=issuePath.split("/"),renderer=require("./render-site.js");
+  if(["weekly","monthly"].includes(channel)&&renderer.periodRange(channel,period)){
+   const expected=parse5.parse((channel==="weekly"?renderer.renderWeeklyEdition:renderer.renderMonthlyEdition)({period,claims:[]}));
+   if(JSON.stringify(shellShape(document))!==JSON.stringify(shellShape(expected)))errors.push("registered "+channel+" shell differs from trusted renderer outside main");
+  }else errors.push("registered report body outside main requires an approved renderer shell and a valid period");
+ }
  return errors;
 }
 function matchBody(document,claims,issueDate,issuePath){
