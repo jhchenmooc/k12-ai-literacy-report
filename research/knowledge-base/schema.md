@@ -38,6 +38,16 @@
 - 2026-10-10 首批由 `p0-trends-2026-10-10/records.json` 的 `stage`、`stage_secondary` 轉入；只有主要學段為特定學段（幼兒至中學）時才加 `ROLE_STUDENT`。
 - 之後新入庫的研究紀錄，入庫時一併加上這些關聯。驗證程式只接受上表代碼。
 
+## 主題與研究方法（`has_topic`、`has_method`）
+
+研究紀錄以 `has_topic`（可多筆）與 `has_method`（至多一筆）標記，`object_namespace=vocabulary`。
+
+- **主題代碼 → 網站標記**：`TOPIC_GENAI` #生成式AI、`TOPIC_CURRICULUM` #AI素養課程、`TOPIC_ASSESSMENT` #評量與量表、`TOPIC_TEACHER_PD` #教師專業發展、`TOPIC_ETHICS` #倫理與安全、`TOPIC_INTERVENTION` #教學介入、`TOPIC_CT` #運算思維與程式、`TOPIC_LANGUAGE` #語言學習、`TOPIC_STEM` #STEM、`TOPIC_EQUITY` #特教與公平、`TOPIC_POLICY` #政策與治理。
+- **方法代碼 → 網站標記**：`METHOD_REVIEW` #文獻回顧、`METHOD_EXPERIMENT` #實驗或準實驗、`METHOD_MIXED` #混合方法、`METHOD_DESIGN` #設計本位、`METHOD_QUALITATIVE` #質性個案、`METHOD_SURVEY` #問卷量表。方法判不出者不標。
+- 規則見 [p0-trends-2026-10-10/notes.md](../p0-trends-2026-10-10/notes.md) 第 5、6 節，都是題名與摘要的關鍵字規則，會有偽陽性（例如 risk、writing、policy 等常見字）。`#教學介入` 只表示研究做了教學介入，**不表示有成效**。
+- 2026-10-10 首批由 `p0-trends-2026-10-10/records.json` 的 `topics`、`method` 轉入，一律 `discovered_unverified`。
+- 網站同一行也顯示既有的 `studies_country`（研究國別）；只有部分論文有標，不能用來比較各國研究多寡。
+
 ## 首次資料與限制
 
 目前 CSV 先從真實 `research/drafts/2026-10-09_2026-10-15.json` 唯讀匯入九筆「發現但未認證」的來源，**未驗證首發日也不推測學術文獻類型**。沒有可驗證日期的資料不會因為發現於 2026 年就被自動歸成 2026 年首發。搜尋執行表目前只有標頭，不誤把先前審查與研究對話當可重現機器搜尋批次。其他確有查核的來源在下一輪分批補入。
