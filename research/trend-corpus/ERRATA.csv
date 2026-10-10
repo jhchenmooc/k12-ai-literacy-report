@@ -1,0 +1,2 @@
+id,date,file,field,records_affected,error,correction,coding_changed,reported_by
+ERR-001,2026-10-10,2025/corpus-v2.csv,ai_lit_dims,624（non_k12 515、preservice_teacher 109；A／B）,寫出 corpus-v2 的後處理把 Q18（對象 unknown 不記面向）擴大為「對象不屬主要分母三類就清空面向」，誤刪 non_k12 與 preservice_teacher 的面向,依第一次編碼原始輸出（含 DEV-004 b／c 重編）補回 ai_lit_dims，只動此欄；對象 unknown 維持清空；主要分母三類對象的面向未受影響,否（編碼結果未改，只修正後處理）,編輯 session 2026-10-10（第二次編碼一致性檢查時發現）
