@@ -63,3 +63,18 @@
 - **成效與因果：** 簡報的分析是相關，不是因果，不得寫成成效或因果。
 - **快速檢索的讀取狀況更正：** 本報告「讀取情況」把歐盟執委會列為讀不到；2026-10-10 晚 education.ec.europa.eu 的新聞頁與文件庫頁可以讀到，工具指引已同步更新。
 - **待查清單：** [important-unresolved-watchlist.md](../important-unresolved-watchlist.md) 的香港《中小學數字教育發展藍圖》一列，框架已入庫為 KB-2026-0090，改為結案。
+
+## 補記二：新加坡 MOE（管理者人工檢視線索，2026-10-10 晚）
+
+- **線索來源：** 管理者人工檢視 MOE 站內搜尋，由編輯 session 轉報。站內搜尋結果依相關度排序，所以只能記為「前 10 筆未見期內新件」，不能當作期內沒有發布的證據。
+- **MOE 頁面可讀：** 用正確網址直接讀取 MOE 頁面，HTTP 200。先前快速檢索讀不到，是因為碰到 JS 頁或 404。
+- **入庫 KB-2026-0258：** Forum letter reply〈Schools Guide Students to Use AI Purposefully for Learning〉。
+  - 首發日：2026-09-18（頁面 Published on: 18 Sep 2026）。
+  - 紀錄欄位：government_announcement、O-SG-MOE、SG、K5。
+  - 範圍：A，對象 k12。內容是分齡、按發展階段引入 AI；低年級以紙本為先；教師可刻意不用 AI；SLS 學習助理設有護欄。對應 S-LRN、S-ETH。
+  - 刊物：首發日早於 10 月月報觀察期，不進月報。
+- **不新增：** 「Artificial intelligence in education」頁已在庫，為 KB-2026-0093。頁面的 Last Updated 31 Jul 2026 是更新日，不是首發日。
+- **其餘不入庫：**
+  - 2026-04-13、2025-11-17 的兩件是舊件，之後另行比對是否已在庫。
+  - IHL 相關國會答覆不是 K-12。
+  - 歐盟理事會兩篇演講與中小學無關。

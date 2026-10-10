@@ -1065,3 +1065,6 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-1064","KB-2026-0256","applies_to_country","vocabulary","JP","https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/004/gaiyou/1292164_00001.htm","discovered_unverified"
 "KR-1065","KB-2026-0257","has_category","vocabulary","K1","https://education.ec.europa.eu/whats-new/news/1-in-3-eu-students-underachieve-in-reading-or-maths-amid-decline-in-basic-skills-and-teacher-shortages","discovered_unverified"
 "KR-1066","KB-2026-0257","issued_by","source","O-EU-EC","https://education.ec.europa.eu/whats-new/news/1-in-3-eu-students-underachieve-in-reading-or-maths-amid-decline-in-basic-skills-and-teacher-shortages","discovered_unverified"
+"KR-1067","KB-2026-0258","has_category","vocabulary","K5","https://www.moe.gov.sg/news/forum-letter-replies/20260918-schools-guide-students-to-use-ai-purposefully-for-learning","discovered_unverified"
+"KR-1068","KB-2026-0258","issued_by","source","O-SG-MOE","https://www.moe.gov.sg/news/forum-letter-replies/20260918-schools-guide-students-to-use-ai-purposefully-for-learning","discovered_unverified"
+"KR-1069","KB-2026-0258","applies_to_country","vocabulary","SG","https://www.moe.gov.sg/news/forum-letter-replies/20260918-schools-guide-students-to-use-ai-purposefully-for-learning","discovered_unverified"
