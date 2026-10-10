@@ -224,5 +224,6 @@
    "kb_year_value": "2026",
    "match": true
   }
- ]
+ ],
+ "note_on_dates": "Frontiers citation_online_date is the acceptance date, not first publication (corrected 2026-10-10). This file only uses citation_volume and citation_publication_date for the volume year; no first-publication date was set from it."
 }
