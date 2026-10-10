@@ -1,6 +1,6 @@
 # trend-corpus：K-12 AI 素養期刊研究逐年趨勢語料（草稿）
 
-> **狀態：**[論文逐年趨勢分析方案](../annual-paper-trend-analysis-plan.md)第 7 節第 1 步「準備與 PROTOCOL」的產出；管理者 2026-10-10 核准 D1，PROTOCOL 已凍結。**尚未做四年同日檢索，沒有語料快照。**
+> **狀態：**[論文逐年趨勢分析方案](../annual-paper-trend-analysis-plan.md)第 7 節第 1 步「準備與 PROTOCOL」的產出；管理者 2026-10-10 核准 D1，PROTOCOL 已凍結。第 2 步四年同日 ID 快照已於 2026-10-10 完成，見各年目錄。
 >
 > **不上網站、不進出版閘門、不改知識庫。**repo 是公開的，本目錄任何人都讀得到。
 
@@ -21,6 +21,8 @@
 | [systematic-reviews.md](systematic-reviews.md) | 系統性回顧候選清單 |
 | [pilot-2022/](pilot-2022/) | 2022 年試編 20 篇的結果，不含摘要與證據原文 |
 | [open-questions.md](open-questions.md) | 方案沒寫清楚、待決定的地方 |
+| `2022/`～`2025/` | 第 2 步快照：`PROTOCOL-YYYY.md`、`queries.json`（每組子查詢的完整 filter、筆數、頁數，以及面板規模、缺摘要、面板外監測）、`ids-*.json`（work ID 快照）、`SHA256SUMS` |
+| `step2/` | 第 2 步的 OpenAlex 請求紀錄與四年摘要 |
 | `step1/` | 第 1 步的 OpenAlex 請求紀錄、試查筆數、source 查詢結果，不含論文 ID 快照 |
 | `scripts/oa.py` | OpenAlex 請求小工具：單執行緒、間隔 0.2 秒以上、記錄每次請求 |
 
@@ -83,6 +85,21 @@
 ### step1/openalex-requests.jsonl
 
 每行一筆請求：`url, utc, http, count, purpose`。網址不含 email、mailto 或任何憑證。
+
+## 第 2 步快照（2026-10-10，同一天執行）
+
+| 年 | 主查詢聯集 | 題名子查詢新增 | 中性聯集 | 中性減主查詢 | 面板 article＋review | 其中 `has_abstract:false` |
+|---|---|---|---|---|---|---|
+| 2022 | 145 | 0 | 736 | 629 | 6,654 | 1,760 |
+| 2023 | 279 | 0 | 952 | 743 | 7,629 | 1,734 |
+| 2024 | 813 | 0 | 1,644 | 973 | 9,432 | 1,601 |
+| 2025 | 1,545 | 0 | 2,827 | 1,470 | 11,352 | 1,560 |
+
+- **請求：**ID 快照共 193 次，全部 HTTP 200，UTC 19:26:14～19:27:49。另於同日以 30 次請求補抓四年語料的 OpenAlex `cited_by_count`，存於各年 `cited-by-count.json`（只有數字與查詢時間），供方案第 8 節的回推知識庫使用。
+- **門檻：**四年都未達 2,500 筆的暫停門檻。
+- **題名子查詢新增 0：**`title.search` 搜的欄位是 `title_and_abstract.search` 的子集，沒有摘要的論文只要題名有命中，主查詢就已經抓到。題名子查詢仍照 PROTOCOL 執行並保留 ID 快照，用來計算「靠題名命中、沒有摘要」的筆數。
+- **分頁筆數差異：**少數子查詢實際取得的 ID 數與 `meta.count` 差 1～3 筆，是 OpenAlex 在分頁期間更新索引所致，以實際取得的 ID 為準，逐項列在各年 `PROTOCOL-YYYY.md`。
+- **Scopus 補摘要清單（2025）：**另以 16 次請求檢查 2025 語料的 OpenAlex 摘要長度。1,545 篇中，處理後不足 20 詞的有 320 篇，全部有 DOI，依 PROTOCOL 第 15 節分成 4 批 `DOI(…) OR DOI(…)` 檢索式。檢索式只放 scratchpad，交編輯 session 轉管理者，不入 repo；請求紀錄在 `step2/openalex-requests.jsonl`，用途標「abstract length check」。
 
 ## 重算
 
