@@ -318,6 +318,76 @@
       ],
       "ai_lit_note": "中國職業教育在職教師的AI教學自我效能與職業福祉，對應T-PD「評估教師AI素養以規劃專業增能」；樣本中職（中等職業學校，K-12）378人、高職院校（高等職業院校，大專）390人，大專略多，管理者2026-10-09決定記higher_ed。",
       "audience": "higher_ed"
+    },
+    {
+      "discovered_on": "2026-10-10",
+      "discovery_batch_id": "2026-10-10-monitoring-0805",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "candidate_id": "W2026-10-09-A11",
+      "category": "news_policy",
+      "source_url": "https://adminmemos.slcschools.org/2026/10/09/hb-273-classroom-technology-amendments/",
+      "source_title": "HB 273 Classroom Technology Amendments",
+      "source_organization": "Salt Lake City School District / Administrative Memos",
+      "source_publication_date": "2026-10-09",
+      "source_locator": "Memo title/date; Subject ('SB 273 Implementation' typo); Summary; Information for 2026-27; 'At this time' paragraph",
+      "original_excerpt": "No changes are required in our current school or classroom practices during the 2026-27 school year.",
+      "scope_limitation": "New Oct 9 district explanatory memo, NOT a newly enacted Oct 9 state law. The memo's Subject says SB 273 while title/body say HB 273; Utah legislature HB0273 is classroom technology, SB0273 is license plates. Statute effective July 1 2026, model due Dec 1 2026, local policy deadline July 1 2027. District's 'no changes required' is district operational guidance, not a blanket statement that all statutory obligations are suspended. Publication hour unknown; strict UTC 2026-10-09 00:00..2026-10-10 00:00 not proven. No formal N-V2 publication signoff.",
+      "event_key": "ut-slc-school-district-2026-10-09-hb273-memo",
+      "screening_note": "Original district memo found; cross-checked Utah legislature HB0273 and Utah Code 53G-7-1402. N1/N3/N4 correction: HB273 signed Mar 18, not enacted Oct 9; SB273 in memo Subject is a likely typo. Candidate hold until publication hour, independent source-to-claim and edit review.",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-ETH",
+        "T-BAS",
+        "S-ETH"
+      ],
+      "ai_lit_note": "K-12校園AI工具規範、教師責任與學生使用限制，對應T-ETH健全校園AI使用規範、T-BAS參與AI校園治理部署與決策及S-ETH落實AI使用規範。",
+      "audience": "k12"
+    },
+    {
+      "discovered_on": "2026-10-10",
+      "discovery_batch_id": "2026-10-10-monitoring-0805",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "candidate_id": "W2026-10-09-A12",
+      "category": "research",
+      "source_url": "https://nhsjs.com/2026/artificial-intelligence-in-music-classrooms-pk-12-educators-practices-concerns-and-confidence/",
+      "source_title": "Artificial Intelligence in Music Classrooms: PK-12 Educators’ Practices, Concerns, and Confidence",
+      "source_organization": "National High School Journal of Science / NHSJS Reports",
+      "source_publication_date": "2026-10-09",
+      "source_locator": "Article header (October 9, 2026); Methods > Participants and settings, Data collection; Results Table 1/Table 2; Limitations",
+      "original_excerpt": "Participants included 54 active PK-12 music educators with teaching experience in the state of Indiana.",
+      "scope_limitation": "April 2026 voluntary self-report survey of 54 Indiana PK-12 music educators, invitations to 557; some item denominators 49, not 54. Convenience sampling, single US state, new unvalidated instrument, no causal K-12 student learning outcomes. No article DOI located on the publisher page; journal peer-review status not independently confirmed. First publication hour unknown, strict 24h eligibility uncertain. Formal G1-G6 publication approval not completed.",
+      "event_key": "nhsjs-2026-10-09-song-geesa-pk12-music-ai",
+      "screening_note": "Original publisher HTML has methods, tables and limitations; primary descriptive study, no inference to student learning outcomes. Full article available on publisher page; G1 DOI unresolved; G2-G4 provisional reading only. Keep hold for weekly decision.",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-PD",
+        "T-TEA",
+        "T-ETH"
+      ],
+      "ai_lit_note": "在職中小學音樂教師的AI知能、信心、教學使用與倫理顧慮及專業發展需求，對應T-PD教師AI素養增能、T-TEA評估AI融入學科教學適切性及T-ETH辨識AI風險。",
+      "audience": "k12"
     }
   ],
   "item_template": {
@@ -341,7 +411,7 @@
     "ai_crosscheck_record": ""
   },
   "screening_summary": {
-    "candidate_count": 10,
+    "candidate_count": 12,
     "ready_to_publish": 0,
     "verified_for_publication": 0,
     "screened_on": "2026-10-09",
@@ -403,6 +473,37 @@
       ],
       "discovered": 1,
       "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-10-monitoring-0805",
+      "searched_on": "2026-10-10",
+      "lookback_days": null,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "official-policy",
+          "query": "Oct 9 2026 official K-12 AI school policy Utah district memo + HB273 statutory text",
+          "status": "ok"
+        },
+        {
+          "group": "research",
+          "query": "Oct 9 2026 PK-12 teacher AI literacy study journal publisher full text",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-official",
+          "query": "site:moe.gov.tw site:gov.tw 2026-10-09 AI 素養 中小學",
+          "status": "ok"
+        },
+        {
+          "group": "multilingual-backfill",
+          "query": "Oct 9 Jiangsu AI primary secondary full coverage first-release timing and prior policy",
+          "status": "ok"
+        }
+      ],
+      "discovered": 2,
+      "added": 2,
       "duplicates": 0
     }
   ]
