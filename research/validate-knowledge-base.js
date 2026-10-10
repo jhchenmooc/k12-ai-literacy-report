@@ -49,6 +49,8 @@ function validate(records,relations,runs,candidates){
    if(c)check(c.decision==="hold"||x.verification_status!=="discovered_unverified","uncertified source misclassified: "+x.record_id);
   }
  }
+ /* Stage and role tags for research records (schema.md「學段與身分」). TEACHER_ED predates the ROLE_ prefix and keeps its name. */
+ const POPULATION_VOCAB=["ROLE_STUDENT","ROLE_INSERVICE_TEACHER","TEACHER_ED","ROLE_OTHER_STAKEHOLDER","STAGE_PRESCHOOL","STAGE_PRIMARY","STAGE_LOWER_SECONDARY","STAGE_UPPER_SECONDARY","STAGE_SECONDARY","STAGE_K12_MULTI","STAGE_K12_GENERAL"];
  const relationsIds=new Set(),allowed=["record","work","source","vocabulary"];const vocab=["K1","K2","K3","K4","K5","K6"];
  for(const x of relations){
   check(!!x.relation_id&&!relationsIds.has(x.relation_id),"duplicate/missing relation ID");relationsIds.add(x.relation_id);
@@ -60,6 +62,7 @@ function validate(records,relations,runs,candidates){
   if(x.object_namespace==="source")check(/^(J(?:0[1-9]|[1-3][0-9]|4[0-7])|C(?:0[1-9]|1[0-8]|20|21|22)|O-[A-Z0-9-]+)$/.test(x.object_id),"invalid source ID: "+x.object_id);
   check(x.verification_status==="discovered_unverified"||x.verification_status==="bibliographic_checked"||x.verification_status==="content_checked","invalid relation status: "+x.relation_id);
   if(x.predicate==="has_category")check(x.object_namespace==="vocabulary"&&vocab.includes(x.object_id),"invalid category relation: "+x.relation_id);
+  if(x.predicate==="has_population")check(x.object_namespace==="vocabulary"&&POPULATION_VOCAB.includes(x.object_id),"invalid population relation: "+x.relation_id);
   if(x.predicate==="published_in")check(x.object_namespace==="source"&&/^[JC]/.test(x.object_id),"invalid venue relation: "+x.relation_id);
   if(x.predicate==="issued_by")check(x.object_namespace==="source"&&x.object_id.startsWith("O-"),"invalid issuing agency: "+x.relation_id);
  }
