@@ -17,7 +17,7 @@
 | O-OECD | 國際 | https://www.oecd.org/en/topics/education.html | AI literacy、教育比較、報告 | 報告年月不代表政策生效 |
 | O-UNICEF | 國際 | https://www.unicef.org/ | 兒少 AI、安全、兒童權利 | 非教育行政法規不稱法規 |
 | O-EU-EC | 超國家 | https://education.ec.europa.eu/ | AI 素養、教育指引 | 分辨提案、指引、法規及各國適用 |
-| O-EU-COUNCIL | 超國家 | https://www.consilium.europa.eu/ | 理事會結論、教育與教師政策 | 理事會結論屬政治性指引，不具法律拘束力；首發日以歐盟官方公報刊登日為準 |
+| O-EU-COUNCIL | 超國家 | https://www.consilium.europa.eu/ | 理事會結論、教育與教師政策 | 理事會結論屬政治性指引，不具法律拘束力；首發日以理事會核准並公開之日為準（例：9003/26 載明 2026-05-11 會議核准）；官方公報刊登日另記 |
 | O-COE | 區域國際 | https://www.coe.int/en/web/education | 兒權、數位公民與 AI 教育 | 分辨建議及拘束性文書 |
 | O-TW-MOE | 臺灣中央 | https://www.edu.tw/ | 課綱、AI 教育、教師 | 區分中央政策與學校實施；AI 人才方舟計畫下載站 `pads.moe.edu.tw`（含 AI 素養框架）未送中繼憑證，工具讀取不得停用 TLS 驗證（見 [reference/README.md](reference/README.md)） |
 | O-JP-MEXT | 日本中央 | https://www.mext.go.jp/ | 學校 AI 指引及修訂 | 須查日文原始版 |

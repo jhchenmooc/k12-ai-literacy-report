@@ -39,7 +39,7 @@
 |---|---|---|---|---|
 | KB-2022-0004 | 义务教育信息科技课程标准（2022年版） | O-CN-MOE | bibliographic_checked | 2022-04-21（原頁「发布日期」） |
 | KB-2026-0236 | 韓國 AI 科目認定教科書（新聞稿） | O-KR-MOE | bibliographic_checked | 2026-08-27（附件「배포」） |
-| KB-2026-0238 | Council conclusions on teachers in the era of AI | **O-EU-COUNCIL（新代碼）** | bibliographic_checked | 2026-05-26（歐盟官方公報 OJ C/2026/2826） |
+| KB-2026-0238 | Council conclusions on teachers in the era of AI | **O-EU-COUNCIL（新代碼）** | bibliographic_checked | 2026-05-11（理事會核准並公開；文件 9003/26 載明）。原記 2026-05-26 為官方公報 OJ C/2026/2826 刊登日，2026-10-10 依管理者決定改正 |
 | KB-2024-0008 | 中小學數位教學指引3.0版 | O-TW-MOE | discovered_unverified | unknown |
 | KB-2026-0237 | 中小學使用「生成式人工智慧」注意事項2.1 | O-TW-MOE | discovered_unverified | unknown |
 | KB-2023-0011 | AI and the Future of Teaching and Learning | O-US-ED | discovered_unverified | unknown |
