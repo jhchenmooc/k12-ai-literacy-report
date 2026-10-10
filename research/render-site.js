@@ -106,16 +106,39 @@ function periodRange(kind,period){
  const days=(Date.parse(end+"T00:00:00Z")-Date.parse(start+"T00:00:00Z"))/864e5+1;
  return days>=1&&days<=10?{start,end}:null;
 }
-/* Everything outside <main> is fixed per channel; only the period varies. <main> holds claim paragraphs only,
-   with no section headings, because every substantive node there must bind to a claim. */
+/* Everything outside <main> is fixed per channel; only the period varies. Weekly <main> holds claim paragraphs
+   only; monthly <main> adds the fixed section text below, because every other substantive node must bind to a claim. */
 function renderPeriodEdition(kind,e){
  const r=periodRange(kind,e.period);if(!r)throw new Error("invalid "+kind+" period: "+e.period);
  const isWeekly=kind==="weekly",label=isWeekly?"週報":"月報";
  const h1=isWeekly?r.start+" 至 "+r.end+" 週報":r.year+" 年 "+r.month+" 月月報";
  const notice=isWeekly?"每則逐句對回原文並標示證據等級；由 AI 整理，未經獨立認證。請點連結閱讀原文。":"整合當月週報與重要背景，區分原始發現與本刊分析；由 AI 整理，未經獨立認證。請點連結閱讀原文。";
  const head='<div class="kicker">'+label+"</div><h1>"+esc(h1)+'</h1><div class="notice"><p>'+notice+"</p></div>";
- const main="<article>"+e.claims.map(c=>claimParagraph(c,true)).join("")+"</article>";
+ const main="<article>"+(isWeekly?e.claims.map(c=>claimParagraph(c,true)).join(""):monthlyMain(e.claims))+"</article>";
  return shell({depth:2,current:kind,title:label+" "+e.period,description:"K-12 AI 素養"+label+"："+e.period,head,main});
+}
+/* Monthly <main> sections. Headings, intros and empty-state lines are fixed text in reviewed code; every other
+   node is a claim paragraph placed by its `section` field. The gate re-renders the whole page from the claims. */
+const MONTHLY_SECTIONS=[
+ ["policy","政策動態",""],
+ ["research","研究動態",""],
+ ["scholars","本刊追蹤學者本月新作","選取方式：本刊追蹤學者清單上已確認的學者，在本期觀察期間正式刊出、且屬 AI 素養範圍的論文；每人至多 2 則、每個研究群至多 4 則，並標明主要對象。"],
+ ["trends","學者觀點動向","本刊分析：彙整追蹤學者近三個月新作中反覆出現的論點；每項至少有兩個不同研究群的來源支持，同一研究群只算一個來源。不含對臺灣的建議，未經真人審閱。"]];
+const MONTHLY_EMPTY="本期無合格項目。",MONTHLY_ANALYSIS="本刊分析",MONTHLY_BASIS="依據來源";
+const MONTHLY_FIXED=new Set([...MONTHLY_SECTIONS.flatMap(([,h,intro])=>intro?[h,intro]:[h]),MONTHLY_EMPTY,MONTHLY_ANALYSIS,MONTHLY_BASIS]);
+function monthlyMain(claims){
+ const keys=MONTHLY_SECTIONS.map(x=>x[0]);
+ for(const c of claims)if(!keys.includes(c.section))throw new Error("monthly claim needs a known section: "+c.claim_id);
+ return MONTHLY_SECTIONS.map(([key,heading,intro])=>{
+  const items=claims.filter(c=>c.section===key),para=list=>list.map(c=>claimParagraph(c,true)).join("");
+  let body;
+  if(!items.length)body="<p>"+MONTHLY_EMPTY+"</p>";
+  else if(key==="trends"){
+   const analysis=items.filter(c=>c.assertion_type==="editorial_analysis"),basis=items.filter(c=>c.assertion_type!=="editorial_analysis");
+   body=(analysis.length?"<h3>"+MONTHLY_ANALYSIS+"</h3>"+para(analysis):"")+(basis.length?"<h3>"+MONTHLY_BASIS+"</h3>"+para(basis):"");
+  }else body=para(items);
+  return "<section><h2>"+heading+"</h2>"+(intro?"<p>"+intro+"</p>":"")+body+"</section>";
+ }).join("");
 }
 const renderWeeklyEdition=e=>renderPeriodEdition("weekly",e),renderMonthlyEdition=e=>renderPeriodEdition("monthly",e);
 function periodEditions(kind,editions){
@@ -282,4 +305,4 @@ function main(){
  console.log(write?"site pages written":"site pages consistent",Object.keys(files).length);
 }
 if(require.main===module)try{main()}catch(e){console.error(e.message);process.exitCode=1}
-module.exports={build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,fillHomepage,esc};
+module.exports={build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,esc};

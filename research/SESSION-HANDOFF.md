@@ -559,6 +559,6 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 
 **待辦（依序）**
 - 10/15 前：重查本週 A1、A2；補查中國教育部與 UNESCO 本週動態；管理者決定首期週報 A 或 B（提醒 trig_01KQPmXM3FbFu4zxADDqFU8w）。
-- 10/16 首期週報：第一次用 renderer 走完整流程（claims → `render-site.js --write` → 閘門 → 網站一致），期別預定 `weekly/2026-10-09_10-15/`。
-- 10/29 月報：決定 `<main>` 內分區與編輯文字如何綁定 claim（不得放寬閘門）；學者段落首次上場；學者清單附錄；香港框架追蹤。
+- 10/16 首期週報：第一次用 renderer 走完整流程（claims → `render-site.js --write` → 閘門 → 網站一致），期別定為 `weekly/2026-10-09_10-15/`（管理者 2026-10-10 確認）。
+- 10/29 月報：`<main>` 分區已定為方案甲（renderer 固定分區文字＋整頁重產比對；claim 帶 `section`，趨勢以 `supporting_claim_ids` 綁定至少兩個研究群，見 [PUBLICATION-CONTRIBUTING.md](PUBLICATION-CONTRIBUTING.md)）；學者段落首次上場；學者清單附錄。香港 EDBCM 107/2026、156/2026 已轉搜尋 session 入庫。
 - 文獻搜尋 session：B1 待判 57；政策待判 14 與 pads 新線索（115 年教師、校長、家長指引，《AI之學習應用手冊》，高中評量注意事項）；卷期年待核 17；新線索 educsci16060987、cedtech/14619；#121 出處評估。

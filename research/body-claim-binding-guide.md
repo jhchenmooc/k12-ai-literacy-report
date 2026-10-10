@@ -10,7 +10,7 @@
 
 ## HTML 標記方法
 
-每個 `<main>` 內的 `p, h1, h2, h3, h4, li, blockquote, figcaption, td, th` 可見敘述要以 `data-claim-id` 綁定唯一主張；同一 `claim_id` 在當期只出現一次。當正文被修改，JSON 中的 `claim_text` 也須對齊並重新查核；**不得單純為了 CI 綠燈而修改查核紀錄**。
+每個 `<main>` 內的 `p, h1, h2, h3, h4, li, blockquote, figcaption, td, th` 可見敘述要以 `data-claim-id` 綁定唯一主張；同一 `claim_id` 在當期只出現一次。唯一例外是月報 renderer 的固定分區文字，且只在整頁與 renderer 輸出相符時承認，見 [PUBLICATION-CONTRIBUTING.md](PUBLICATION-CONTRIBUTING.md)。當正文被修改，JSON 中的 `claim_text` 也須對齊並重新查核；**不得單純為了 CI 綠燈而修改查核紀錄**。
 
 示意（僅為合成測試，並非真正的已核實新聞）：
 

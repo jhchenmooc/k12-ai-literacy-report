@@ -219,12 +219,65 @@ test('renderer control: exact weekly and monthly renderer shells are accepted, a
  for(const changed of [html.replace('跳至主要內容','未審核結論'),html.replace('2026-10-09 至 2026-10-15 週報</h1>','未審核結論</h1>'),html.replace('未經獨立認證','已經獨立認證'),
   html.replace('<body>','<body class="skip">'),html.replace('</footer>','<p>未審核結論</p></footer>'),html.replace('</header>','</header><script>alert(1)</script>'),
   html.replace('<a href="../../daily/">','<a href="../../daily/" onclick="alert(1)">'),html.replace('<a href="../../daily/">','<a href="https://example.org/">'),
-  renderWeeklyEdition({period:'2026-10-08_10-14',claims:[claim]}),renderMonthlyEdition({period:'2026-10',claims:[claim]})]){
+  renderWeeklyEdition({period:'2026-10-08_10-14',claims:[claim]}),renderMonthlyEdition({period:'2026-10',claims:[{...claim,section:'policy'}]})]){
   updateHtml(d,changed);assert.equal(validate(d).ok,false);
  }
- fs.mkdirSync(path.join(d,'monthly','2026-10'),{recursive:true});fs.writeFileSync(path.join(d,'monthly','2026-10','index.html'),renderMonthlyEdition({period:'2026-10',claims:[claim]}));
- fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[{path:'monthly/2026-10/index.html',claims_file:'publication/claims/a.json'}]}));
- fs.rmSync(path.join(d,'weekly'),{recursive:true});assert.deepEqual(validate(d).errors,[]);
+});
+// Monthly: fixed section text is renderer code; the whole page must equal the render of its claims.
+const scholarA={...claim,claim_id:'M2',section:'scholars',research_group:'G-A',claim_text:'合成案例：甲研究群論文'};
+const scholarB={...claim,claim_id:'M3',section:'trends',research_group:'G-B',claim_text:'合成案例：乙研究群預印本'};
+const trend={...claim,claim_id:'M4',section:'trends',assertion_type:'editorial_analysis',supporting_claim_ids:['M2','M3'],claim_text:'合成案例：兩個研究群都提到表現提升不等於學習'};
+const monthlyClaims=[{...claim,section:'policy'},scholarA,scholarB,trend];
+function monthlyFull(d,claims,html){
+ const {renderMonthlyEdition}=require('./render-site.js');
+ fs.rmSync(path.join(d,'weekly'),{recursive:true,force:true});fs.mkdirSync(path.join(d,'monthly','2026-10'),{recursive:true});
+ // Claims the renderer refuses still get a page, so the gate (not the fixture) does the refusing.
+ let page=html;if(page===undefined)try{page=renderMonthlyEdition({period:'2026-10',claims})}catch{page=renderMonthlyEdition({period:'2026-10',claims:claims.map(c=>({...c,section:'policy'}))})}
+ fs.writeFileSync(path.join(d,'monthly','2026-10','index.html'),page);
+ fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[{path:'monthly/2026-10/index.html',claims_file:'publication/claims/m.json'}]}));
+ fs.writeFileSync(path.join(d,'publication','claims','m.json'),JSON.stringify(claims));
+ return validate(d);
+}
+test('monthly control: renderer page with fixed sections and a supported trend is accepted',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ assert.deepEqual(monthlyFull(d,monthlyClaims).errors,[]);
+ const html=fs.readFileSync(path.join(d,'monthly','2026-10','index.html'),'utf8');
+ for(const text of ['政策動態','本刊分析','依據來源','本期無合格項目。'])assert.ok(html.includes(text),text);
+});
+test('monthly attack: any change to the rendered page, inside or outside main, is refused',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const {renderMonthlyEdition}=require('./render-site.js');
+ const html=renderMonthlyEdition({period:'2026-10',claims:monthlyClaims});
+ for(const changed of [html.replace('<h2>政策動態</h2>','<h2>本刊強烈建議</h2>'),html.replace('<h2>研究動態</h2>','<h2>研究動態</h2><p>未審核結論</p>'),
+  html.replace('<h2>研究動態</h2>','<h2>研究動態</h2><p>政策動態</p>'),html.replace('未經真人審閱','已經真人審閱'),html.replace('</footer>','<p>未審核結論</p></footer>'),
+  renderMonthlyEdition({period:'2026-10',claims:monthlyClaims.map(c=>c.claim_id==='C1'?{...c,section:'research'}:c)}),
+  renderMonthlyEdition({period:'2026-09',claims:monthlyClaims})]){
+  assert.equal(monthlyFull(d,monthlyClaims,changed).ok,false);
+ }
+});
+test('monthly attack: fixed section text is allowed only on the full renderer page, never in a bare page',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const r=monthlyFull(d,[{...claim,section:'policy'}],'<html><main><h2>政策動態</h2><p data-claim-id="C1">合成案例：某機構公告</p></main></html>');
+ assert.equal(r.ok,false);assert.ok(r.errors.some(e=>e.includes('unbound content')));
+});
+test('monthly structure: sections, research groups and trend support are enforced',t=>{
+ const cases={
+  'missing section':[[{...claim}],'section must be one of'],
+  'unknown section':[[{...claim,section:'opinion'}],'section must be one of'],
+  'scholar without group':[[{...claim,section:'policy'},{...scholarA,research_group:''},scholarB,trend],'needs research_group'],
+  'one supporting claim':[[{...claim,section:'policy'},scholarA,scholarB,{...trend,supporting_claim_ids:['M2']}],'two distinct supporting'],
+  'repeated supporting claim':[[{...claim,section:'policy'},scholarA,scholarB,{...trend,supporting_claim_ids:['M2','M2']}],'two distinct supporting'],
+  'same research group':[[{...claim,section:'policy'},scholarA,{...scholarB,research_group:'G-A'},trend],'two different research groups'],
+  'missing supporting claim':[[{...claim,section:'policy'},scholarA,scholarB,{...trend,supporting_claim_ids:['M2','M9']}],'other non-analysis claims'],
+  'supporting claim without group':[[{...claim,section:'policy'},scholarA,scholarB,{...trend,supporting_claim_ids:['M2','C1']}],'every supporting claim needs research_group'],
+  'analysis outside trends':[[{...claim,section:'policy'},scholarA,scholarB,{...trend,section:'research'}],'only in the trends section'],
+  'analysis citing analysis':[[{...claim,section:'policy'},scholarA,scholarB,trend,{...trend,claim_id:'M5',claim_text:'合成案例：第二項趨勢',supporting_claim_ids:['M2','M4']}],'other non-analysis claims'],
+  'support ids on a plain claim':[[{...claim,section:'policy',supporting_claim_ids:['M2','M3']},scholarA,scholarB,trend],'only apply to editorial analysis']
+ };
+ for(const [name,[claims,reason]] of Object.entries(cases)){
+  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+  const r=monthlyFull(d,claims);assert.equal(r.ok,false,name);assert.ok(r.errors.some(e=>e.includes(reason)),name+': '+r.errors.join(' | '));
+ }
 });
 test('renderer control: a full shell needs a valid weekly or monthly period',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
@@ -490,8 +543,8 @@ test("other education stakeholders may publish in weekly and daily editions",t=>
 });
 test("daily edition blocks teacher-education audience",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,{...dailyLow,audience:"teacher_ed"});const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("not allowed in daily")))});
 test("monthly edition may carry teacher-education items but never an unknown audience",t=>{
- const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));monthlyIssue(d,[{...claim,audience:"teacher_ed"}]);assert.equal(validate(d).ok,true);
- const e=setup();t.after(()=>fs.rmSync(e,{recursive:true,force:true}));monthlyIssue(e,[{...claim,audience:"unknown"}]);assert.equal(validate(e).ok,false);
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));monthlyIssue(d,[{...claim,section:"policy",audience:"teacher_ed"}]);assert.equal(validate(d).ok,true);
+ const e=setup();t.after(()=>fs.rmSync(e,{recursive:true,force:true}));monthlyIssue(e,[{...claim,section:"policy",audience:"unknown"}]);assert.equal(validate(e).ok,false);
 });
 test("daily claim cannot relabel the audience of its cumulative candidate",t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
