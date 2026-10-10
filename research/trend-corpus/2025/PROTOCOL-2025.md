@@ -15,6 +15,8 @@
 - **面板規模：**article＋review 共 11352 篇；其中 OpenAlex `has_abstract:false` 的 1560 篇。逐刊數字見 `queries.json`。
 - **面板外監測：**各子查詢不限期刊的 `meta.count` 記在 `queries.json` 的 `outside_panel`，只記錄、不編碼。
 
+- **被引次數：**`cited-by-count.json` 記語料每篇的 OpenAlex `cited_by_count` 與查詢時間（同日 2026-10-10），供日後回推知識庫時判定「高引用」（方案第 8 節，管理者 2026-10-10 決定乙）。
+
 ## 參考集
 - 本年參考集篇數以 OpenAlex 年份比對後，於第 3 步（2025）或回溯時記入。
 
