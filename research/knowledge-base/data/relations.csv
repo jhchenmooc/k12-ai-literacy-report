@@ -564,7 +564,7 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-0563","KB-2026-0137","published_in","source","C22","https://doi.org/10.1609/aaai.v40i47.41522","discovered_unverified"
 "KR-0564","KB-2026-0138","has_category","vocabulary","K2","https://doi.org/10.1007/s10639-026-13998-y","discovered_unverified"
 "KR-0565","KB-2026-0138","published_in","source","J05","https://doi.org/10.1007/s10639-026-13998-y","discovered_unverified"
-"KR-0566","KB-2026-0128","published_in","source","J42","https://doi.org/10.15388/infedu.2601.025","discovered_unverified"
+"KR-0566","KB-2026-0128","published_in","source","J42","https://doi.org/10.15388/infedu.2601.025","bibliographic_checked"
 "KR-0567","KB-2026-0133","published_in","source","J44","https://doi.org/10.1080/02619768.2026.2621848","discovered_unverified"
 "KR-0568","KB-2026-0134","published_in","source","J45","https://doi.org/10.1080/1475939x.2026.2619458","discovered_unverified"
 "KR-0569","KB-2025-0059","has_category","vocabulary","K2","https://doi.org/10.1080/10494820.2025.2450658","discovered_unverified"
