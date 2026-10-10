@@ -232,7 +232,7 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
 | J47 | 背景 | Education Sciences（MDPI） | 3335 | 206 | 25 | 1 |
 
 - **擴充三刊（J40–J42）**：一次補搜 2025-01-01 至今（照 P0 方法），之後依擴充級頻率檢索。**背景（J43–J47）**不補搜，每月巡覽。
-- **觀察池（不給正式 ID）**：European Journal of Education（931 篇中 AI × K-12 僅 3）、International Journal of Technology and Design Education（近半缺摘要）、ICITL（LNCS「Innovative Technologies and Learning」）、TEI（ACM Tangible, Embedded, and Embodied Interaction；已入庫 KB-2026-0135）、Emerald *Artificial Intelligence in Education*（新刊）。
+- **觀察池（不給正式 ID）**：European Journal of Education（931 篇中 AI × K-12 僅 3）、International Journal of Technology and Design Education（近半缺摘要）、ICITL（LNCS「Innovative Technologies and Learning」）、TEI（ACM Tangible, Embedded, and Embodied Interaction；已入庫 KB-2026-0135）、Emerald *Artificial Intelligence in Education*（新刊）；2026-10-10 依 #121 出處評估新增（管理者同意）：Computer Assisted Language Learning（中小學生成式 AI 語言學習研究有命中，但多屬 B 類；若決定系統收此類研究可改列背景）、AI, Brain and Child（Springer 新刊，K-12 AI 比例高，審查與索引待核）、《中國教育技術》CSTE（中國中小學 AI 課程，審查型態待核、缺摘要多）。
 - **不收**：Thinking Skills and Creativity（七成缺摘要，數字不可靠）、International Journal of Applied Linguistics（AI 多為語言學習工具）、The Internet and Higher Education（高教專刊）、IAFOR 論文集（審查程度不明）、Lecture Notes in Networks and Systems（ICICT）、專書手冊。
 - **叢書拆分**：LNCS「Mindful TEL: Learning Technologies Shaped with Intention」為 EC-TEL 2026 論文集，屬既有 C10，查核入口加上 ISBN 9783032379788、9783032379818。
 - **技術限制**：`research/validate-knowledge-base.js` 目前只接受 J01–J39、C01–C22 作為 `published_in` 代碼；J40 以後要等驗證程式放寬後，才能把已入庫論文（KB-2026-0128 Informatics in Education、KB-2026-0133 EJTE、KB-2026-0134 TPE）連到新代碼。本次只改清單，不改驗證程式。

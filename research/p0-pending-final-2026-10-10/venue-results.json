@@ -1,0 +1,1361 @@
+{
+ "meta": {
+  "generated_utc": "2026-10-10",
+  "window": "OpenAlex publication_date 2025-01-01..2026-10-10",
+  "queries": {
+   "total": "source only",
+   "no_abstract": "has_abstract:false",
+   "ai_v14": "(\"AI literacy\" OR \"artificial intelligence literacy\" OR \"AI education\" OR \"generative AI\")（與 v1.4 相同，方便比較）",
+   "ai_k12_task": "(\"AI literacy\" OR \"artificial intelligence\") AND (\"K-12\" OR school OR \"primary school\" OR \"secondary school\")（本次任務指定）",
+   "ai_k12_v14": "(\"AI literacy\" OR \"generative AI\") AND (\"K-12\" OR school OR schools)（與 v1.4 相同）"
+  },
+  "note": "同模型評估，非獨立審閱；只提議，不決定。請求未帶 email/mailto；OpenAlex key 由 proxy 帶上。120 次計數查詢全為 HTTP 200（UTC 2026-10-10T10:52:04Z–10:53:45Z 見 counts.json）。"
+ },
+ "venues": [
+  {
+   "name": "Interactive Learning Environments",
+   "type": "journal",
+   "already_in_watchlist": "J40",
+   "proposed_action": "already_listed",
+   "proposed_id": null,
+   "rationale": "v1.4 已列擴充，無需變更",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "Research and Practice in Technology Enhanced Learning",
+   "type": "journal",
+   "already_in_watchlist": "J43",
+   "proposed_action": "already_listed",
+   "proposed_id": null,
+   "rationale": "v1.4 已列背景",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "Computers and Education Open",
+   "type": "journal",
+   "already_in_watchlist": "J41",
+   "proposed_action": "already_listed",
+   "proposed_id": null,
+   "rationale": "v1.4 已列擴充",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "Informatics in Education",
+   "type": "journal",
+   "already_in_watchlist": "J42",
+   "proposed_action": "already_listed",
+   "proposed_id": null,
+   "rationale": "v1.4 已列擴充",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "Technology, Pedagogy and Education",
+   "type": "journal",
+   "already_in_watchlist": "J45",
+   "proposed_action": "already_listed",
+   "proposed_id": null,
+   "rationale": "v1.4 已列背景",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "International Journal of Science Education",
+   "type": "journal",
+   "already_in_watchlist": "J46",
+   "proposed_action": "already_listed",
+   "proposed_id": null,
+   "rationale": "v1.4 已列背景",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "Education Sciences (MDPI)",
+   "type": "journal",
+   "already_in_watchlist": "J47",
+   "proposed_action": "already_listed",
+   "proposed_id": null,
+   "rationale": "v1.4 已列背景，並註明須檢查審稿品質",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "International Journal of Technology and Design Education",
+   "type": "journal",
+   "already_in_watchlist": "觀察池",
+   "proposed_action": "already_decided",
+   "proposed_id": null,
+   "rationale": "v1.4 列觀察池（近半缺摘要）",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "European Journal of Education",
+   "type": "journal",
+   "already_in_watchlist": "觀察池",
+   "proposed_action": "already_decided",
+   "proposed_id": null,
+   "rationale": "v1.4 列觀察池（931 篇中 AI×K-12 僅 3）",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "Thinking Skills and Creativity",
+   "type": "journal",
+   "already_in_watchlist": "不收",
+   "proposed_action": "already_decided",
+   "proposed_id": null,
+   "rationale": "v1.4 不收",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "International Journal of Applied Linguistics",
+   "type": "journal",
+   "already_in_watchlist": "不收",
+   "proposed_action": "already_decided",
+   "proposed_id": null,
+   "rationale": "v1.4 不收",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "The Internet and Higher Education",
+   "type": "journal",
+   "already_in_watchlist": "不收",
+   "proposed_action": "already_decided",
+   "proposed_id": null,
+   "rationale": "v1.4 不收（高教專刊）",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "Asian Conference on Education (IAFOR)",
+   "type": "conference",
+   "already_in_watchlist": "不收",
+   "proposed_action": "already_decided",
+   "proposed_id": null,
+   "rationale": "v1.4 不收（審查程度不明）",
+   "source_of_decision": "research/venue-watchlist.md §13 v1.4（2026-10-09 管理者決定）；數字見 research/p0-venue-v14-2026-10-09/counts.json"
+  },
+  {
+   "name": "LNCS / Artificial Intelligence in Education（AIED 2026）",
+   "type": "series_split",
+   "evidence_doi": "10.1007/978-3-032-29760-0_37（arXiv 版在 year2026 清單）",
+   "already_in_watchlist": "C01",
+   "proposed_action": "split_series",
+   "proposed_id": null,
+   "rationale": "屬既有 C01 AIED，不需新增",
+   "source_of_decision": "Crossref works/<DOI>（split_crossref.json）"
+  },
+  {
+   "name": "LNCS / Mindful TEL（EC-TEL 2026，ISBN 9783032379788、9783032379818）",
+   "type": "series_split",
+   "evidence_doi": "10.1007/978-3-032-37979-5_9、_31；10.1007/978-3-032-37982-5_24",
+   "already_in_watchlist": "C10",
+   "proposed_action": "split_series",
+   "proposed_id": null,
+   "rationale": "屬既有 C10 EC-TEL；v1.4 已記 ISBN",
+   "source_of_decision": "Crossref works/<DOI>（split_crossref.json）"
+  },
+  {
+   "name": "LNCS / Innovative Technologies and Learning（ICITL）",
+   "type": "series_split",
+   "evidence_doi": "10.1007/978-3-032-32112-1_7",
+   "already_in_watchlist": "觀察池",
+   "proposed_action": "split_series",
+   "proposed_id": null,
+   "rationale": "v1.4 已列觀察池；該篇為創業課程（高教），維持",
+   "source_of_decision": "Crossref works/<DOI>（split_crossref.json）"
+  },
+  {
+   "name": "CCIS / Innovations in Analytics of Learning Dynamics（編者 Saqr、Misiejuk、López-Pernas）",
+   "type": "series_split",
+   "evidence_doi": "10.1007/978-3-032-34157-0_13（Penny，EFL 寫作聊天機器人）",
+   "already_in_watchlist": null,
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "學習分析方法論文集（OpenAlex 只見 CCIS 叢書來源 S2764900261），非 K-12 專門，年度性與審查型態未核；不收，命中時逐篇判",
+   "source_of_decision": "Crossref works/<DOI>（split_crossref.json）"
+  },
+  {
+   "name": "Springer eBooks / Digital Education and Innovation（編者 Tödt、Granas、Büching）",
+   "type": "series_split",
+   "evidence_doi": "10.1007/978-3-032-26816-7_8",
+   "already_in_watchlist": null,
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "Crossref 為 book（無 event），屬編輯專書，依 v1.4『專書手冊不收』",
+   "source_of_decision": "Crossref works/<DOI>（split_crossref.json）"
+  },
+  {
+   "name": "Edward Elgar / Handbook of Learning Analytics and Adaptive Learning in Schools",
+   "type": "series_split",
+   "evidence_doi": "10.4337/9781035330676.00029",
+   "already_in_watchlist": "不收",
+   "proposed_action": "already_decided",
+   "proposed_id": null,
+   "rationale": "手冊；v1.4 已列不收",
+   "source_of_decision": "Crossref works/<DOI>（split_crossref.json）"
+  },
+  {
+   "name": "LNNS / ICICT 2025",
+   "type": "series_split",
+   "evidence_doi": "10.1007/978-981-96-6435-1_47（Correction）",
+   "already_in_watchlist": "不收",
+   "proposed_action": "already_decided",
+   "proposed_id": null,
+   "rationale": "v1.4 已列不收",
+   "source_of_decision": "Crossref works/<DOI>（split_crossref.json）"
+  },
+  {
+   "name": "ACM TEI '26",
+   "type": "series_split",
+   "evidence_doi": "10.1145/3731459.3773305（OpenAlex 無來源欄）",
+   "already_in_watchlist": "觀察池",
+   "proposed_action": "split_series",
+   "proposed_id": null,
+   "rationale": "v1.4 已列觀察池",
+   "source_of_decision": "Crossref works/<DOI>（split_crossref.json）"
+  },
+  {
+   "name": "ACM L@S '26",
+   "type": "series_split",
+   "evidence_doi": "10.1145/3774398.3811610（OpenAlex 無來源欄）",
+   "already_in_watchlist": "C12",
+   "proposed_action": "split_series",
+   "proposed_id": null,
+   "rationale": "屬既有 C12 L@S",
+   "source_of_decision": "Crossref works/<DOI>（split_crossref.json）"
+  },
+  {
+   "name": "Proceedings of the AAAI Conference on Artificial Intelligence",
+   "type": "series_split",
+   "evidence_doi": "3 篇（year2026）",
+   "already_in_watchlist": "C22",
+   "proposed_action": "split_series",
+   "proposed_id": null,
+   "rationale": "EAAI 收於 AAAI Proceedings，屬既有 C22",
+   "source_of_decision": "Crossref works/<DOI>（split_crossref.json）"
+  },
+  {
+   "name": "Computer Assisted Language Learning",
+   "type": "journal",
+   "openalex_source_id": "S100649693",
+   "issn": "0958-8221／1744-3210",
+   "publisher": "Routledge (Taylor & Francis)",
+   "already_in_watchlist": null,
+   "scope_summary": "電腦輔助語言學習；近年大量生成式 AI 寫作回饋、口說練習研究，含中小學樣本",
+   "counts": {
+    "total": {
+     "count": 176,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S100649693,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:03Z"
+    },
+    "no_abstract": {
+     "count": 3,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S100649693,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:04Z"
+    },
+    "ai_v14": {
+     "count": 19,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S100649693,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:05Z"
+    },
+    "ai_k12_task": {
+     "count": 7,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S100649693,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:05Z"
+    },
+    "ai_k12_v14": {
+     "count": 2,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S100649693,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:06Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇（S 類學者，AI 主題，學段不明）",
+   "quality_notes": "官方頁 HTTP 403（未繞過），索引未由官方頁核實；老牌 T&F 期刊，非 OA、無 APC 疑慮",
+   "proposed_action": "observe",
+   "proposed_id": null,
+   "rationale": "AI×K-12（任務式）7／176，標題可見 5 篇中學與小學 GenAI 寫作／口說研究，比例 4%，高於 J46、J45。但與 v1.4 不收 IJAL 的理由同類（AI 多為語言學習工具，屬 B 類），建議先列觀察池；若管理者決定 B 類語言學習研究要系統收，可改列背景 J48",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:0958-8221&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "AI, Brain and Child",
+   "type": "journal",
+   "openalex_source_id": "S5407047688",
+   "issn": "3059-3883（e）",
+   "publisher": "Springer Nature（OpenAlex 未填出版社；MPDL 清單列 Springer，全 OA、CC BY）",
+   "already_in_watchlist": null,
+   "scope_summary": "2025 年後新刊，AI 與兒童發展、幼兒至 K-12 教育",
+   "counts": {
+    "total": {
+     "count": 43,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S5407047688,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:08Z"
+    },
+    "no_abstract": {
+     "count": 5,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S5407047688,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:09Z"
+    },
+    "ai_v14": {
+     "count": 10,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S5407047688,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:10Z"
+    },
+    "ai_k12_task": {
+     "count": 5,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S5407047688,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:11Z"
+    },
+    "ai_k12_v14": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S5407047688,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:12Z"
+    }
+   },
+   "scholar_hits": "year2026：1 篇（幼兒 AI 素養回顧）",
+   "quality_notes": "新刊（OpenAlex 全部 43 篇），尚無索引；Springer 期刊頁轉向登入驗證未讀，宗旨、編委未核；DOAJ 否",
+   "proposed_action": "observe",
+   "proposed_id": null,
+   "rationale": "規模小但主題集中：AI×K-12 5／43（12%，本批最高），含 K-12 生成式 AI 分層框架、幼教 AI 政策。新刊審查與存續未知，比照 v1.4 Emerald《AI in Education》新刊列觀察池，一年後依產量與索引再評",
+   "openalex_lookup": "https://api.openalex.org/sources?search=AI%20Brain%20and%20Child&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "International Conference on Computer Science and Technologies in Education (CSTE)",
+   "type": "conference",
+   "openalex_source_id": "S7407086140",
+   "issn": "無（IEEE 論文集）",
+   "publisher": "IEEE（主辦：華中師範大學人工智慧教育學部）",
+   "already_in_watchlist": null,
+   "scope_summary": "資訊科學與教育科技會議，2025 卷有中國 K-12 AI 課程、教師 AI 能力研究",
+   "counts": {
+    "total": {
+     "count": 487,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S7407086140,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:29Z"
+    },
+    "no_abstract": {
+     "count": 293,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S7407086140,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:30Z"
+    },
+    "ai_v14": {
+     "count": 39,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S7407086140,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:31Z"
+    },
+    "ai_k12_task": {
+     "count": 9,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S7407086140,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:32Z"
+    },
+    "ai_k12_v14": {
+     "count": 2,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S7407086140,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:33Z"
+    }
+   },
+   "scholar_hits": "year2026：1 篇（生成式 AI 與小學生類比推理）",
+   "quality_notes": "60% 缺摘要；IEEE 合辦說法不一（EasyChair CFP 未提 IEEE）；論文集已在 IEEE Xplore（DOI 10.1109/cste…）；審查型態未核",
+   "proposed_action": "observe",
+   "proposed_id": null,
+   "rationale": "AI×K-12 9／487（缺摘要 293，實際可能更多），對中國中小學 AI 課程比較有獨特價值，但會議品質與審查未核；列觀察池，不給 C 編號",
+   "openalex_lookup": "https://api.openalex.org/sources?search=Computer%20Science%20and%20Technologies%20in%20Education&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Eurasia Journal of Mathematics, Science and Technology Education",
+   "type": "journal",
+   "openalex_source_id": "S2764699309",
+   "issn": "1305-8215／1305-8223",
+   "publisher": "Modestum",
+   "already_in_watchlist": null,
+   "scope_summary": "數理與科技教育；含高中 STEM 的 AI 研究",
+   "counts": {
+    "total": {
+     "count": 374,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2764699309,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:21Z"
+    },
+    "no_abstract": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2764699309,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:22Z"
+    },
+    "ai_v14": {
+     "count": 11,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2764699309,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:22Z"
+    },
+    "ai_k12_task": {
+     "count": 11,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2764699309,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:23Z"
+    },
+    "ai_k12_v14": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2764699309,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:24Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇（科學教育 AI 系統性回顧）",
+   "quality_notes": "OA 收 APC；OpenAlex 標示非 DOAJ；官方首頁只列 CiteScore/SJR 連結，未明寫 SSCI/ESCI；Modestum 曾被質疑審稿品質（需管理者另查 Scopus/WoS 現況），本次未查證",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 11／374 有量，但品質與索引現況不明，且與 J37、J31、J46 主題重疊；不收，命中時由跨庫關鍵字逐篇評估。若管理者要收，至少需先核 Scopus 與 WoS 現況",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:1305-8215&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Discover Artificial Intelligence",
+   "type": "journal",
+   "openalex_source_id": "S4210220416",
+   "issn": "2731-0809",
+   "publisher": "Springer Nature",
+   "already_in_watchlist": null,
+   "scope_summary": "AI 綜合 OA 期刊（含教育應用）",
+   "counts": {
+    "total": {
+     "count": 2003,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210220416,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:16Z"
+    },
+    "no_abstract": {
+     "count": 11,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210220416,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:16Z"
+    },
+    "ai_v14": {
+     "count": 82,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210220416,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:18Z"
+    },
+    "ai_k12_task": {
+     "count": 14,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210220416,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:19Z"
+    },
+    "ai_k12_v14": {
+     "count": 3,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210220416,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:19Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇",
+   "quality_notes": "DOAJ 是；大型 OA，教育只是一部分",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 14／2003（0.7%），量大比例低，跨庫關鍵字已能補；姊妹刊 Discover Education 已是 J32",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:2731-0809&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Journal of Interactive Learning Research",
+   "type": "journal",
+   "openalex_source_id": "S2764895530",
+   "issn": "1093-023X",
+   "publisher": "AACE",
+   "already_in_watchlist": null,
+   "scope_summary": "互動學習、教育科技",
+   "counts": {
+    "total": {
+     "count": 36,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2764895530,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:04Z"
+    },
+    "no_abstract": {
+     "count": 5,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2764895530,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:05Z"
+    },
+    "ai_v14": {
+     "count": 8,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2764895530,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:06Z"
+    },
+    "ai_k12_task": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2764895530,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:07Z"
+    },
+    "ai_k12_v14": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2764895530,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:07Z"
+    }
+   },
+   "scholar_hits": "year2026：1 篇（師培 OER＋GenAI）",
+   "quality_notes": "AACE 官方頁稱雙盲審查、Scopus 收錄、無 APC；LearnTechLib 對自動請求有機器人驗證（工具指引 C20），自動檢索不易",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "2025 年起 OpenAlex 僅 36 篇，AI×K-12 1 篇；產量太低，不值得單獨監測",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:1093-023X&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "European Journal of Teaching and Education",
+   "type": "journal",
+   "openalex_source_id": "S4210213428",
+   "issn": "2669-0667",
+   "publisher": "Mokslinės Leidybos Deimantas（Diamond Scientific Publishing）",
+   "already_in_watchlist": null,
+   "scope_summary": "一般教學與教育",
+   "counts": {
+    "total": {
+     "count": 44,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210213428,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:17Z"
+    },
+    "no_abstract": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210213428,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:17Z"
+    },
+    "ai_v14": {
+     "count": 3,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210213428,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:18Z"
+    },
+    "ai_k12_task": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210213428,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:19Z"
+    },
+    "ai_k12_v14": {
+     "count": 2,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210213428,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:20Z"
+    }
+   },
+   "scholar_hits": "year2026：1 篇（教師評量寫作與 GenAI，K-12）",
+   "quality_notes": "官方頁只列 Google Scholar、EBSCO、OpenAIRE、Crossref 等，無 Scopus/WoS/DOAJ；自稱雙盲審查但無時程；編委單位本頁未列",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "審查品質無法核實，不符合『同儕審查狀態可查核』；比照 v1.4 IAFOR 不收。是否列入『不收出處』整個出版商由管理者決定（本次未做出版商層級查核）",
+   "openalex_lookup": "https://api.openalex.org/sources?search=European%20Journal%20of%20Teaching%20and%20Education&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Educational Psychology",
+   "type": "journal",
+   "openalex_source_id": "S43525819",
+   "issn": "0144-3410／1469-5820",
+   "publisher": "Taylor & Francis",
+   "already_in_watchlist": null,
+   "scope_summary": "教育心理學",
+   "counts": {
+    "total": {
+     "count": 164,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S43525819,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:12Z"
+    },
+    "no_abstract": {
+     "count": 2,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S43525819,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:13Z"
+    },
+    "ai_v14": {
+     "count": 11,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S43525819,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:14Z"
+    },
+    "ai_k12_task": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S43525819,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:15Z"
+    },
+    "ai_k12_v14": {
+     "count": 2,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S43525819,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:16Z"
+    }
+   },
+   "scholar_hits": "year2026：1 篇",
+   "quality_notes": "正規期刊",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 1／164，AI 相關 11；不收，跨庫補",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:0144-3410&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Theory Into Practice",
+   "type": "journal",
+   "openalex_source_id": "S9733372",
+   "issn": "0040-5841",
+   "publisher": "Taylor & Francis",
+   "already_in_watchlist": null,
+   "scope_summary": "主題特刊式教育實務評論",
+   "counts": {
+    "total": {
+     "count": 68,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9733372,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:25Z"
+    },
+    "no_abstract": {
+     "count": 4,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9733372,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:26Z"
+    },
+    "ai_v14": {
+     "count": 5,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9733372,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:27Z"
+    },
+    "ai_k12_task": {
+     "count": 2,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9733372,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:28Z"
+    },
+    "ai_k12_v14": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9733372,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:28Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇",
+   "quality_notes": "主題特刊，多屬評論",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 2／68；特刊式、少實證；不收",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:0040-5841&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Learning and Individual Differences",
+   "type": "journal",
+   "openalex_source_id": "S9267903",
+   "issn": "1041-6080",
+   "publisher": "Elsevier",
+   "already_in_watchlist": null,
+   "scope_summary": "個別差異與學習心理",
+   "counts": {
+    "total": {
+     "count": 271,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9267903,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:29Z"
+    },
+    "no_abstract": {
+     "count": 123,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9267903,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:30Z"
+    },
+    "ai_v14": {
+     "count": 4,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9267903,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:31Z"
+    },
+    "ai_k12_task": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9267903,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:32Z"
+    },
+    "ai_k12_v14": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9267903,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:33Z"
+    }
+   },
+   "scholar_hits": "#119：2 篇",
+   "quality_notes": "45% 缺摘要",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI 相關 4，AI×K-12 1；不收",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:1041-6080&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Behaviour & Information Technology",
+   "type": "journal",
+   "openalex_source_id": "S123849098",
+   "issn": "0144-929X",
+   "publisher": "Taylor & Francis",
+   "already_in_watchlist": null,
+   "scope_summary": "人機互動與資訊科技行為",
+   "counts": {
+    "total": {
+     "count": 561,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S123849098,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:33Z"
+    },
+    "no_abstract": {
+     "count": 14,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S123849098,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:34Z"
+    },
+    "ai_v14": {
+     "count": 33,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S123849098,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:35Z"
+    },
+    "ai_k12_task": {
+     "count": 4,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S123849098,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:36Z"
+    },
+    "ai_k12_v14": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S123849098,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:37Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇",
+   "quality_notes": "—",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 4／561；HCI 一般刊，不收",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:0144-929X&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "International Journal of Human-Computer Interaction",
+   "type": "journal",
+   "openalex_source_id": "S165559636",
+   "issn": "1044-7318",
+   "publisher": "Taylor & Francis",
+   "already_in_watchlist": null,
+   "scope_summary": "人機互動",
+   "counts": {
+    "total": {
+     "count": 1960,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S165559636,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:38Z"
+    },
+    "no_abstract": {
+     "count": 50,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S165559636,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:39Z"
+    },
+    "ai_v14": {
+     "count": 124,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S165559636,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:40Z"
+    },
+    "ai_k12_task": {
+     "count": 9,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S165559636,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:41Z"
+    },
+    "ai_k12_v14": {
+     "count": 6,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S165559636,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:41Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇（year2026 未列）",
+   "quality_notes": "—",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 9／1960（0.5%）；不收，跨庫補",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:1044-7318&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "International Journal of Human-Computer Studies",
+   "type": "journal",
+   "openalex_source_id": "S4210190811",
+   "issn": "1071-5819",
+   "publisher": "Elsevier",
+   "already_in_watchlist": null,
+   "scope_summary": "人機互動研究",
+   "counts": {
+    "total": {
+     "count": 345,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210190811,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:42Z"
+    },
+    "no_abstract": {
+     "count": 174,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210190811,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:43Z"
+    },
+    "ai_v14": {
+     "count": 24,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210190811,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:44Z"
+    },
+    "ai_k12_task": {
+     "count": 3,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210190811,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:45Z"
+    },
+    "ai_k12_v14": {
+     "count": 3,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210190811,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:45Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇（XAI，非教育）",
+   "quality_notes": "50% 缺摘要",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 3／345；不收",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:1071-5819&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Computers in Human Behavior: Artificial Humans",
+   "type": "journal",
+   "openalex_source_id": "S4387287529",
+   "issn": "2949-8821",
+   "publisher": "Elsevier",
+   "already_in_watchlist": null,
+   "scope_summary": "人與 AI 互動心理",
+   "counts": {
+    "total": {
+     "count": 259,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4387287529,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:46Z"
+    },
+    "no_abstract": {
+     "count": 33,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4387287529,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:47Z"
+    },
+    "ai_v14": {
+     "count": 32,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4387287529,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:48Z"
+    },
+    "ai_k12_task": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4387287529,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:49Z"
+    },
+    "ai_k12_v14": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4387287529,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:50Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇",
+   "quality_notes": "DOAJ 是",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 0／259；姊妹刊 J10、J11 已列；不收",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:2949-8821&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Large-scale Assessments in Education",
+   "type": "journal",
+   "openalex_source_id": "S2736464149",
+   "issn": "2196-0739",
+   "publisher": "Springer Nature（IEA-ETS）",
+   "already_in_watchlist": null,
+   "scope_summary": "PISA 等大型評量",
+   "counts": {
+    "total": {
+     "count": 88,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2736464149,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:50Z"
+    },
+    "no_abstract": {
+     "count": 2,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2736464149,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:51Z"
+    },
+    "ai_v14": {
+     "count": 2,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2736464149,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:52Z"
+    },
+    "ai_k12_task": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2736464149,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:53Z"
+    },
+    "ai_k12_v14": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S2736464149,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:54Z"
+    }
+   },
+   "scholar_hits": "#119：2 篇（PISA，非 AI）",
+   "quality_notes": "DOAJ 是",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "K-12 為主但 AI 相關僅 2、AI×K-12 0；PISA 2029 媒體與 AI 素養評量上線後可再評",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:2196-0739&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Metacognition and Learning",
+   "type": "journal",
+   "openalex_source_id": "S13069421",
+   "issn": "1556-1623",
+   "publisher": "Springer",
+   "already_in_watchlist": null,
+   "scope_summary": "後設認知",
+   "counts": {
+    "total": {
+     "count": 89,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S13069421,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:55Z"
+    },
+    "no_abstract": {
+     "count": 42,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S13069421,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:55Z"
+    },
+    "ai_v14": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S13069421,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:56Z"
+    },
+    "ai_k12_task": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S13069421,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:57Z"
+    },
+    "ai_k12_v14": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S13069421,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:58Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇",
+   "quality_notes": "47% 缺摘要",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI 相關 0；不收",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:1556-1623&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "International Journal of Science and Mathematics Education",
+   "type": "journal",
+   "openalex_source_id": "S182869780",
+   "issn": "1571-0068",
+   "publisher": "Springer",
+   "already_in_watchlist": null,
+   "scope_summary": "科學與數學教育",
+   "counts": {
+    "total": {
+     "count": 204,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S182869780,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:52:59Z"
+    },
+    "no_abstract": {
+     "count": 87,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S182869780,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:00Z"
+    },
+    "ai_v14": {
+     "count": 2,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S182869780,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:00Z"
+    },
+    "ai_k12_task": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S182869780,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:01Z"
+    },
+    "ai_k12_v14": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S182869780,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:02Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇",
+   "quality_notes": "43% 缺摘要",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI 相關 2、AI×K-12 0；不收",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:1571-0068&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Measurement: Interdisciplinary Research and Perspectives",
+   "type": "journal",
+   "openalex_source_id": "S126610391",
+   "issn": "1536-6359",
+   "publisher": "Taylor & Francis",
+   "already_in_watchlist": null,
+   "scope_summary": "測量學",
+   "counts": {
+    "total": {
+     "count": 72,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S126610391,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:20Z"
+    },
+    "no_abstract": {
+     "count": 5,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S126610391,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:21Z"
+    },
+    "ai_v14": {
+     "count": 2,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S126610391,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:22Z"
+    },
+    "ai_k12_task": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S126610391,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:23Z"
+    },
+    "ai_k12_v14": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S126610391,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:23Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇",
+   "quality_notes": "—",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 0；不收",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:1536-6367&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Applied System Innovation",
+   "type": "journal",
+   "openalex_source_id": "S4210217229",
+   "issn": "2571-5577",
+   "publisher": "MDPI",
+   "already_in_watchlist": null,
+   "scope_summary": "應用系統工程",
+   "counts": {
+    "total": {
+     "count": 394,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210217229,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:07Z"
+    },
+    "no_abstract": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210217229,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:08Z"
+    },
+    "ai_v14": {
+     "count": 3,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210217229,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:09Z"
+    },
+    "ai_k12_task": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210217229,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:10Z"
+    },
+    "ai_k12_v14": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4210217229,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:11Z"
+    }
+   },
+   "scholar_hits": "year2026：1 篇（資優生解題，與 AI 素養無直接關係）",
+   "quality_notes": "DOAJ 是",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "工程刊，AI×K-12 1／394；不收",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:2571-5577&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "The International Journal of Management Education",
+   "type": "journal",
+   "openalex_source_id": "S135394783",
+   "issn": "1472-8117",
+   "publisher": "Elsevier",
+   "already_in_watchlist": null,
+   "scope_summary": "管理教育（高教）",
+   "counts": {
+    "total": {
+     "count": 378,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S135394783,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:11Z"
+    },
+    "no_abstract": {
+     "count": 229,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S135394783,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:12Z"
+    },
+    "ai_v14": {
+     "count": 37,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S135394783,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:13Z"
+    },
+    "ai_k12_task": {
+     "count": 7,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S135394783,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:14Z"
+    },
+    "ai_k12_v14": {
+     "count": 5,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S135394783,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:15Z"
+    }
+   },
+   "scholar_hits": "year2026：1 篇",
+   "quality_notes": "61% 缺摘要",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "高教商管；命中為商學院學生 GenAI 採用；不收",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:1472-8117&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "Frontiers in Psychology",
+   "type": "journal",
+   "openalex_source_id": "S9692511",
+   "issn": "1664-1078",
+   "publisher": "Frontiers",
+   "already_in_watchlist": null,
+   "scope_summary": "心理學大型 OA 刊",
+   "counts": {
+    "total": {
+     "count": 10445,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9692511,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:25Z"
+    },
+    "no_abstract": {
+     "count": 21,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9692511,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:25Z"
+    },
+    "ai_v14": {
+     "count": 251,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9692511,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:26Z"
+    },
+    "ai_k12_task": {
+     "count": 56,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9692511,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:27Z"
+    },
+    "ai_k12_v14": {
+     "count": 19,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S9692511,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:28Z"
+    }
+   },
+   "scholar_hits": "#119：2 篇（非 AI）",
+   "quality_notes": "DOAJ 是；年量逾萬",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 56／10445（0.5%）；巨型刊，關鍵字跨庫已可補；同出版社 J29 已列",
+   "openalex_lookup": "https://api.openalex.org/sources?filter=issn:1664-1078&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "ASEE Annual Conference & Exposition",
+   "type": "conference",
+   "openalex_source_id": "S4306497767",
+   "issn": "—",
+   "publisher": "ASEE",
+   "already_in_watchlist": null,
+   "scope_summary": "工程教育（有 K-12 分組）",
+   "counts": {
+    "total": {
+     "count": 4970,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4306497767,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:34Z"
+    },
+    "no_abstract": {
+     "count": 4809,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4306497767,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:34Z"
+    },
+    "ai_v14": {
+     "count": 142,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4306497767,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:35Z"
+    },
+    "ai_k12_task": {
+     "count": 6,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4306497767,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:36Z"
+    },
+    "ai_k12_v14": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4306497767,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:37Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇（研究所模擬教育）",
+   "quality_notes": "97% 缺摘要；WIP 論文多",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 6／4970；高教工程為主、摘要缺，自動監測不可行；不收",
+   "openalex_lookup": "https://api.openalex.org/sources?search=ASEE%20Annual%20Conference&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  },
+  {
+   "name": "ICMI Companion（ACM International Conference on Multimodal Interaction）",
+   "type": "conference",
+   "openalex_source_id": "S4306506653",
+   "issn": "—",
+   "publisher": "ACM",
+   "already_in_watchlist": null,
+   "scope_summary": "多模態互動",
+   "counts": {
+    "total": {
+     "count": 80,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4306506653,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:38Z"
+    },
+    "no_abstract": {
+     "count": 5,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4306506653,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:39Z"
+    },
+    "ai_v14": {
+     "count": 3,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4306506653,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:40Z"
+    },
+    "ai_k12_task": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4306506653,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:40Z"
+    },
+    "ai_k12_v14": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4306506653,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:41Z"
+    }
+   },
+   "scholar_hits": "兩份清單各 1 篇（VLM 線索，非教育）",
+   "quality_notes": "—",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 0；不收",
+   "openalex_lookup": null
+  },
+  {
+   "name": "ACM SIGKDD (KDD)",
+   "type": "conference",
+   "openalex_source_id": "S4363608767",
+   "issn": "—",
+   "publisher": "ACM",
+   "already_in_watchlist": null,
+   "scope_summary": "資料探勘",
+   "counts": {
+    "total": {
+     "count": 2319,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4363608767,from_publication_date:2025-01-01,to_publication_date:2026-10-10&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:42Z"
+    },
+    "no_abstract": {
+     "count": 360,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4363608767,from_publication_date:2025-01-01,to_publication_date:2026-10-10,has_abstract:false&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:43Z"
+    },
+    "ai_v14": {
+     "count": 32,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4363608767,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%20literacy%22%20OR%20%22AI%20education%22%20OR%20%22generative%20AI%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:44Z"
+    },
+    "ai_k12_task": {
+     "count": 1,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4363608767,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22artificial%20intelligence%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:45Z"
+    },
+    "ai_k12_v14": {
+     "count": 0,
+     "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4363608767,from_publication_date:2025-01-01,to_publication_date:2026-10-10,title_and_abstract.search:%28%22AI%20literacy%22%20OR%20%22generative%20AI%22%29%20AND%20%28%22K-12%22%20OR%20school%20OR%20schools%29&per_page=1&select=id",
+     "http": 200,
+     "utc": "2026-10-10T10:53:45Z"
+    }
+   },
+   "scholar_hits": "#119：1 篇",
+   "quality_notes": "—",
+   "proposed_action": "no",
+   "proposed_id": null,
+   "rationale": "AI×K-12 1／2319；命中為『AI for Education 特別日』簡介，非論文；不收",
+   "openalex_lookup": "https://api.openalex.org/sources?search=Knowledge%20Discovery%20and%20Data%20Mining&select=id,display_name,issn_l,issn,type,host_organization_name,works_count,is_in_doaj,is_oa,homepage_url"
+  }
+ ]
+}
