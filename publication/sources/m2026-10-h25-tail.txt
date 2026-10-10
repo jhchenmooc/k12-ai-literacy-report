@@ -1,0 +1,4 @@
+PsyArXiv (preprint, not peer reviewed) | 2026-09-29 | TAIL: A Test of AI Literacy for Adolescents and Teachers | https://doi.org/10.31234/osf.io/afuq2_v1 | Abstract, OSF API https://api.osf.io/v2/preprints/afuq2_v1/ date_published 2026-09-29 (read 2026-10-10)
+Most instruments that claim to measure AI literacy inquire how competent people feel rather than test what they know, and almost none has been validated for both students and teachers.
+We evaluated it among Czech secondary-school students tested in fall 2025 (n = 2,441) and six months later (n = 1,669; 897 linked across the two measurement waves), and among teachers (n = 564).
+Teachers' self-rated AI self-efficacy was practically unrelated to their tested knowledge, and students who used and relied on AI more knew less about it.
