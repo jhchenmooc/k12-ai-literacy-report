@@ -1,0 +1,425 @@
+{
+ "year": 2022,
+ "base_filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022",
+ "subqueries": {
+  "M1": {
+   "utc_start": "2026-10-10T19:26:14Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"AI education\" OR \"artificial intelligence education\" OR \"AI curriculum\" OR \"artificial intelligence curriculum\" OR \"teaching AI\" OR \"teaching artificial intelligence\")",
+   "http": 200,
+   "count": 25,
+   "ids_got": 25,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"AI education\" OR \"artificial intelligence education\" OR \"AI curriculum\" OR \"artificial intelligence curriculum\" OR \"teaching AI\" OR \"teaching artificial intelligence\")"
+  },
+  "M2": {
+   "utc_start": "2026-10-10T19:26:15Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"teaching about AI\" OR \"teaching machine learning\" OR \"machine learning education\" OR \"machine learning for kids\" OR AI4K12 OR \"five big ideas\")",
+   "http": 200,
+   "count": 5,
+   "ids_got": 5,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"teaching about AI\" OR \"teaching machine learning\" OR \"machine learning education\" OR \"machine learning for kids\" OR AI4K12 OR \"five big ideas\")"
+  },
+  "M3": {
+   "utc_start": "2026-10-10T19:26:15Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"AI ethics education\" OR \"AI awareness\" OR \"children's conceptions of artificial intelligence\" OR \"explainable artificial intelligence\" OR \"Teachable Machine\" OR Cognimates)",
+   "http": 200,
+   "count": 8,
+   "ids_got": 8,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"AI ethics education\" OR \"AI awareness\" OR \"children's conceptions of artificial intelligence\" OR \"explainable artificial intelligence\" OR \"Teachable Machine\" OR Cognimates)"
+  },
+  "M4": {
+   "utc_start": "2026-10-10T19:26:16Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(PopBots OR LearningML OR eCraft2Learn OR \"voice assistant\" OR \"smart speaker\" OR \"intelligent tutoring system\")",
+   "http": 200,
+   "count": 37,
+   "ids_got": 37,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(PopBots OR LearningML OR eCraft2Learn OR \"voice assistant\" OR \"smart speaker\" OR \"intelligent tutoring system\")"
+  },
+  "M5": {
+   "utc_start": "2026-10-10T19:26:16Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"AI literacy\" OR \"artificial intelligence literacy\" OR \"AI-literacy\" OR \"algorithmic literacy\" OR \"AI competency\" OR \"AI ethics\")",
+   "http": 200,
+   "count": 38,
+   "ids_got": 38,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"AI literacy\" OR \"artificial intelligence literacy\" OR \"AI-literacy\" OR \"algorithmic literacy\" OR \"AI competency\" OR \"AI ethics\")"
+  },
+  "M6": {
+   "utc_start": "2026-10-10T19:26:17Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"generative AI\" OR \"generative artificial intelligence\" OR GenAI OR ChatGPT OR \"Chat GPT\" OR \"GPT-4\")",
+   "http": 200,
+   "count": 0,
+   "ids_got": 0,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"generative AI\" OR \"generative artificial intelligence\" OR GenAI OR ChatGPT OR \"Chat GPT\" OR \"GPT-4\")"
+  },
+  "M7": {
+   "utc_start": "2026-10-10T19:26:17Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"large language model\" OR LLM OR chatbot OR \"conversational agent\")",
+   "http": 200,
+   "count": 37,
+   "ids_got": 37,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"large language model\" OR LLM OR chatbot OR \"conversational agent\")"
+  },
+  "C1": {
+   "utc_start": "2026-10-10T19:26:18Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"computational thinking\" AND (\"artificial intelligence\" OR \"machine learning\"))",
+   "http": 200,
+   "count": 7,
+   "ids_got": 7,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"computational thinking\" AND (\"artificial intelligence\" OR \"machine learning\"))"
+  },
+  "C2": {
+   "utc_start": "2026-10-10T19:26:18Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"App Inventor\" AND \"machine learning\")",
+   "http": 200,
+   "count": 1,
+   "ids_got": 1,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"App Inventor\" AND \"machine learning\")"
+  },
+  "C3": {
+   "utc_start": "2026-10-10T19:26:19Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"data literacy\" AND \"artificial intelligence\")",
+   "http": 200,
+   "count": 1,
+   "ids_got": 1,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"data literacy\" AND \"artificial intelligence\")"
+  },
+  "C4": {
+   "utc_start": "2026-10-10T19:26:19Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"summer camp\" AND \"artificial intelligence\")",
+   "http": 200,
+   "count": 0,
+   "ids_got": 0,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"summer camp\" AND \"artificial intelligence\")"
+  }
+ },
+ "title_subqueries": {
+  "T-M1": {
+   "utc_start": "2026-10-10T19:26:20Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,has_abstract:false,title.search:(\"AI education\" OR \"artificial intelligence education\" OR \"AI curriculum\" OR \"artificial intelligence curriculum\" OR \"teaching AI\" OR \"teaching artificial intelligence\")",
+   "http": 200,
+   "count": 2,
+   "ids_got": 2,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"AI education\" OR \"artificial intelligence education\" OR \"AI curriculum\" OR \"artificial intelligence curriculum\" OR \"teaching AI\" OR \"teaching artificial intelligence\")"
+  },
+  "T-M2": {
+   "utc_start": "2026-10-10T19:26:20Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,has_abstract:false,title.search:(\"teaching about AI\" OR \"teaching machine learning\" OR \"machine learning education\" OR \"machine learning for kids\" OR AI4K12 OR \"five big ideas\")",
+   "http": 200,
+   "count": 0,
+   "ids_got": 0,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"teaching about AI\" OR \"teaching machine learning\" OR \"machine learning education\" OR \"machine learning for kids\" OR AI4K12 OR \"five big ideas\")"
+  },
+  "T-M3": {
+   "utc_start": "2026-10-10T19:26:21Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,has_abstract:false,title.search:(\"AI ethics education\" OR \"AI awareness\" OR \"children's conceptions of artificial intelligence\" OR \"explainable artificial intelligence\" OR \"Teachable Machine\" OR Cognimates)",
+   "http": 200,
+   "count": 0,
+   "ids_got": 0,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"AI ethics education\" OR \"AI awareness\" OR \"children's conceptions of artificial intelligence\" OR \"explainable artificial intelligence\" OR \"Teachable Machine\" OR Cognimates)"
+  },
+  "T-M4": {
+   "utc_start": "2026-10-10T19:26:21Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,has_abstract:false,title.search:(PopBots OR LearningML OR eCraft2Learn OR \"voice assistant\" OR \"smart speaker\" OR \"intelligent tutoring system\")",
+   "http": 200,
+   "count": 8,
+   "ids_got": 8,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(PopBots OR LearningML OR eCraft2Learn OR \"voice assistant\" OR \"smart speaker\" OR \"intelligent tutoring system\")"
+  },
+  "T-M5": {
+   "utc_start": "2026-10-10T19:26:21Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,has_abstract:false,title.search:(\"AI literacy\" OR \"artificial intelligence literacy\" OR \"AI-literacy\" OR \"algorithmic literacy\" OR \"AI competency\" OR \"AI ethics\")",
+   "http": 200,
+   "count": 5,
+   "ids_got": 5,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"AI literacy\" OR \"artificial intelligence literacy\" OR \"AI-literacy\" OR \"algorithmic literacy\" OR \"AI competency\" OR \"AI ethics\")"
+  },
+  "T-M6": {
+   "utc_start": "2026-10-10T19:26:22Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,has_abstract:false,title.search:(\"generative AI\" OR \"generative artificial intelligence\" OR GenAI OR ChatGPT OR \"Chat GPT\" OR \"GPT-4\")",
+   "http": 200,
+   "count": 0,
+   "ids_got": 0,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"generative AI\" OR \"generative artificial intelligence\" OR GenAI OR ChatGPT OR \"Chat GPT\" OR \"GPT-4\")"
+  },
+  "T-M7": {
+   "utc_start": "2026-10-10T19:26:22Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,has_abstract:false,title.search:(\"large language model\" OR LLM OR chatbot OR \"conversational agent\")",
+   "http": 200,
+   "count": 12,
+   "ids_got": 12,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"large language model\" OR LLM OR chatbot OR \"conversational agent\")"
+  },
+  "T-C1": {
+   "utc_start": "2026-10-10T19:26:23Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,has_abstract:false,title.search:(\"computational thinking\" AND (\"artificial intelligence\" OR \"machine learning\"))",
+   "http": 200,
+   "count": 0,
+   "ids_got": 0,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"computational thinking\" AND (\"artificial intelligence\" OR \"machine learning\"))"
+  },
+  "T-C2": {
+   "utc_start": "2026-10-10T19:26:23Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,has_abstract:false,title.search:(\"App Inventor\" AND \"machine learning\")",
+   "http": 200,
+   "count": 0,
+   "ids_got": 0,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"App Inventor\" AND \"machine learning\")"
+  },
+  "T-C3": {
+   "utc_start": "2026-10-10T19:26:24Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,has_abstract:false,title.search:(\"data literacy\" AND \"artificial intelligence\")",
+   "http": 200,
+   "count": 0,
+   "ids_got": 0,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"data literacy\" AND \"artificial intelligence\")"
+  },
+  "T-C4": {
+   "utc_start": "2026-10-10T19:26:24Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,has_abstract:false,title.search:(\"summer camp\" AND \"artificial intelligence\")",
+   "http": 200,
+   "count": 0,
+   "ids_got": 0,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"summer camp\" AND \"artificial intelligence\")"
+  }
+ },
+ "neutral": {
+  "N1": {
+   "utc_start": "2026-10-10T19:26:25Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"artificial intelligence\" OR AI OR \"machine learning\" OR \"educational robotics\" OR Scratch OR robot)",
+   "http": 200,
+   "count": 638,
+   "ids_got": 637,
+   "pages": 4,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"artificial intelligence\" OR AI OR \"machine learning\" OR \"educational robotics\" OR Scratch OR robot)"
+  },
+  "N2": {
+   "utc_start": "2026-10-10T19:26:27Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"social robot\" OR \"natural language processing\" OR \"facial recognition\" OR \"image recognition\" OR \"deep learning\" OR \"neural network\")",
+   "http": 200,
+   "count": 133,
+   "ids_got": 133,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"social robot\" OR \"natural language processing\" OR \"facial recognition\" OR \"image recognition\" OR \"deep learning\" OR \"neural network\")"
+  },
+  "N3": {
+   "utc_start": "2026-10-10T19:26:27Z",
+   "filter": "primary_location.source.id:S106272552|S110346167|S114840262|S119620556|S126127421|S127795871|S130363450|S144725990|S158654976|S166722454|S171267539|S187318745|S190677702|S204030396|S207741693|S2493636226|S2596526815|S2738008561|S2738571837|S2764465379|S2764582272|S2764653341|S2764890288|S2764977688|S36385850|S4210172634|S4210183364|S4210183620|S4210190517|S4210198611|S4210206302|S4210232537|S42640028|S43764696|S4387280196|S54332258|S55175622|S5743915|S64184962|S78398831|S83170543|S84989246|S89004459|S90466346|S92895470|S94618750|S97147119,type:article|review,is_paratext:false,publication_year:2022,title_and_abstract.search:(\"intelligent agent\" OR \"pedagogical agent\" OR \"adaptive learning\")",
+   "http": 200,
+   "count": 40,
+   "ids_got": 40,
+   "pages": 1,
+   "per_page": 200,
+   "paging": "cursor",
+   "query": "(\"intelligent agent\" OR \"pedagogical agent\" OR \"adaptive learning\")"
+  }
+ },
+ "panel_size": {
+  "http": 200,
+  "total": 6654,
+  "by_source": {
+   "S2596526815": 995,
+   "S2738008561": 959,
+   "S166722454": 665,
+   "S4210206302": 441,
+   "S204030396": 369,
+   "S94618750": 285,
+   "S90466346": 275,
+   "S4210190517": 261,
+   "S4210172634": 172,
+   "S54332258": 127,
+   "S5743915": 127,
+   "S110346167": 112,
+   "S114840262": 108,
+   "S119620556": 102,
+   "S78398831": 102,
+   "S130363450": 99,
+   "S4210198611": 83,
+   "S126127421": 77,
+   "S106272552": 72,
+   "S2738571837": 70,
+   "S4210183364": 70,
+   "S127795871": 69,
+   "S207741693": 66,
+   "S144725990": 61,
+   "S187318745": 61,
+   "S2764465379": 53,
+   "S43764696": 53,
+   "S158654976": 52,
+   "S4210183620": 51,
+   "S2764582272": 50,
+   "S2493636226": 49,
+   "S55175622": 49,
+   "S2764977688": 46,
+   "S4210232537": 45,
+   "S171267539": 37,
+   "S190677702": 34,
+   "S83170543": 34,
+   "S89004459": 33,
+   "S2764890288": 32,
+   "S36385850": 32,
+   "S92895470": 31,
+   "S84989246": 30,
+   "S2764653341": 29,
+   "S97147119": 26,
+   "S4387280196": 23,
+   "S64184962": 22,
+   "S42640028": 15
+  }
+ },
+ "panel_missing_abstract": {
+  "http": 200,
+  "total": 1760,
+  "by_source": {
+   "S166722454": 537,
+   "S204030396": 282,
+   "S94618750": 187,
+   "S4210190517": 150,
+   "S4210172634": 129,
+   "S114840262": 85,
+   "S78398831": 69,
+   "S106272552": 60,
+   "S126127421": 57,
+   "S158654976": 42,
+   "S187318745": 36,
+   "S2764582272": 33,
+   "S2493636226": 28,
+   "S43764696": 26,
+   "S64184962": 14,
+   "S90466346": 5,
+   "S130363450": 4,
+   "S110346167": 3,
+   "S89004459": 3,
+   "S55175622": 2,
+   "S144725990": 1,
+   "S207741693": 1,
+   "S2738571837": 1,
+   "S2764465379": 1,
+   "S36385850": 1,
+   "S4210183364": 1,
+   "S4210183620": 1,
+   "S92895470": 1
+  }
+ },
+ "outside_panel": {
+  "M1": {
+   "http": 200,
+   "count": 160
+  },
+  "M2": {
+   "http": 200,
+   "count": 20
+  },
+  "M3": {
+   "http": 200,
+   "count": 649
+  },
+  "M4": {
+   "http": 200,
+   "count": 491
+  },
+  "M5": {
+   "http": 200,
+   "count": 268
+  },
+  "M6": {
+   "http": 200,
+   "count": 169
+  },
+  "M7": {
+   "http": 200,
+   "count": 1782
+  },
+  "C1": {
+   "http": 200,
+   "count": 25
+  },
+  "C2": {
+   "http": 200,
+   "count": 1
+  },
+  "C3": {
+   "http": 200,
+   "count": 11
+  },
+  "C4": {
+   "http": 200,
+   "count": 1
+  }
+ },
+ "union": {
+  "main": 145,
+  "title_only_added": 0,
+  "corpus": 145,
+  "neutral": 736,
+  "neutral_minus_main": 629
+ }
+}

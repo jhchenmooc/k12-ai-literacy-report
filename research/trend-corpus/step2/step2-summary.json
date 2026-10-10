@@ -1,0 +1,42 @@
+{
+ "utc_start": "2026-10-10T19:26:14Z",
+ "years": {
+  "2022": {
+   "main": 145,
+   "title_only_added": 0,
+   "corpus": 145,
+   "neutral": 736,
+   "neutral_minus_main": 629,
+   "panel_size": 6654,
+   "panel_missing_abstract": 1760
+  },
+  "2023": {
+   "main": 279,
+   "title_only_added": 0,
+   "corpus": 279,
+   "neutral": 952,
+   "neutral_minus_main": 743,
+   "panel_size": 7629,
+   "panel_missing_abstract": 1734
+  },
+  "2024": {
+   "main": 813,
+   "title_only_added": 0,
+   "corpus": 813,
+   "neutral": 1644,
+   "neutral_minus_main": 973,
+   "panel_size": 9432,
+   "panel_missing_abstract": 1601
+  },
+  "2025": {
+   "main": 1545,
+   "title_only_added": 0,
+   "corpus": 1545,
+   "neutral": 2827,
+   "neutral_minus_main": 1470,
+   "panel_size": 11352,
+   "panel_missing_abstract": 1560
+  }
+ },
+ "utc_end": "2026-10-10T19:27:49Z"
+}
