@@ -81,6 +81,8 @@
 | KB-2025-0048 — [Generative AI: product safety standards](https://www.gov.uk/government/publications/generative-ai-product-safety-standards) | official_guidance | 2025-01-22 | bibliographic_checked |
 | KB-2025-0049 — [Using AI in education settings: support materials](https://www.gov.uk/government/collections/using-ai-in-education-settings-support-materials) | official_guidance | 2025-06-10 | bibliographic_checked |
 | KB-2025-0050 — [Guidance on AI and children (Version 3.0): Recommendations for AI policies and systems that uphold child rights](https://www.unicef.org/innocenti/reports/policy-guidance-ai-children) | official_guidance | 2025-12 | bibliographic_checked |
+| KB-2025-0121 — [我和AI一起學！國小生生成式AI學習應用手冊](https://drive.google.com/file/d/1tb7TTT1z-VAqe1Ae9TCiCMb9q6K8KtM6/view?usp=sharing) | official_guidance | 2025-12 | discovered_unverified |
+| KB-2025-0122 — [駕馭AI，洞察未來：數位公民的必修課——中學生生成式AI素養手冊](https://drive.google.com/file/d/1mhyKYJllbljZFhZfKgyaGqh5-MyGcO_t/view?usp=sharing) | official_guidance | 2025-12 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 
 ## 2025｜issue_year
