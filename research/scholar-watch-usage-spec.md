@@ -90,7 +90,7 @@
 ### 版面
 
 - 放在月報「原始來源」之前，標題「本刊追蹤學者本月新作」，段首一行說明選取方式並連到學者清單（GitHub）。
-- **閘門處理（管理者 2026-10-10 決定，方案甲）**：段落標題、選取方式說明與「本期無合格項目。」是月報 renderer 的固定文字，每則 claim 以 `section: "scholars"` 放入本段，並填 `research_group`。閘門以 claims 重產整頁比對，見 [PUBLICATION-CONTRIBUTING.md](PUBLICATION-CONTRIBUTING.md)。段首說明目前不含學者清單連結。
+- **閘門處理（管理者 2026-10-10 決定，方案甲）**：段落標題、選取方式說明與「本期無合格項目。」是月報 renderer 的固定文字，每則 claim 以 `section: "scholars"` 放入本段，並填 `research_group`（預設為學者代碼，共用代碼見[學者清單](scholar-watchlist.md)第 0 節）。閘門以 claims 重產整頁比對，見 [PUBLICATION-CONTRIBUTING.md](PUBLICATION-CONTRIBUTING.md)。段首說明目前不含學者清單連結。
 
 ---
 
