@@ -318,6 +318,108 @@
       ],
       "ai_lit_note": "中國職業教育在職教師的AI教學自我效能與職業福祉，對應T-PD「評估教師AI素養以規劃專業增能」；樣本中職（中等職業學校，K-12）378人、高職院校（高等職業院校，大專）390人，大專略多，管理者2026-10-09決定記higher_ed。",
       "audience": "higher_ed"
+    },
+    {
+      "candidate_id": "W2026-10-09-A11",
+      "category": "research",
+      "source_url": "https://doi.org/10.3389/feduc.2026.1885959",
+      "source_title": "The B-AIMT: development and initial validation of a domain-specific instrument for assessing mathematics teachers’ beliefs about artificial intelligence",
+      "source_organization": "Frontiers in Education",
+      "source_publication_date": "2026-08-31",
+      "source_locator": "出版者頁（Frontiers）citation_online_date 2026/08/31（同頁 Accepted 31 August 2026；citation_publication_date 2026/09/28）",
+      "discovered_on": "2026-10-10",
+      "discovery_batch_id": "2026-10-10-scholar-M-1",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "original_excerpt": "",
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "版本：正式版（Frontiers in Education）；對象：K-12，德國職前與在職數學教師 442 名；首發依據：出版者頁（Frontiers）citation_online_date 2026/08/31（同頁 Accepted 31 August 2026；citation_publication_date 2026/09/28）；首次公開日在本次查詢期間內；本刊追蹤學者 H09 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-TEA",
+        "T-ETH"
+      ],
+      "ai_lit_note": "發展並驗證數學教師對AI教學信念量表，含教學可能、風險與倫理，對應 T-TEA「評估AI工具輔助教學的適用性」與 T-ETH",
+      "audience": "k12",
+      "doi": "10.3389/feduc.2026.1885959",
+      "screening_note": "30-day backfill/background: earlier than issue period; Discovery only, hold pending first-disclosure check."
+    },
+    {
+      "candidate_id": "W2026-10-09-A12",
+      "category": "research",
+      "source_url": "https://doi.org/10.1016/j.chbah.2026.100402",
+      "source_title": "AI Mindset – An empirically tested theoretical framework on the psychological factors shaping AI competence and AI use",
+      "source_organization": "Computers in Human Behavior Artificial Humans",
+      "source_publication_date": "2026-06-02",
+      "source_locator": "PsyArXiv 預印本 10.31234/osf.io/nkdyp_v1（Crossref has-preprint）；OSF API date_published 2026-06-02；正式版 Elsevier 頁 linkinghub 轉址，未繞過",
+      "discovered_on": "2026-10-10",
+      "discovery_batch_id": "2026-10-10-scholar-M-1",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "original_excerpt": "",
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "版本：正式版（Computers in Human Behavior Artificial Humans）；對象：其他教育關係人，224 名教師，摘要未寫任教學段；首發依據：PsyArXiv 預印本 10.31234/osf.io/nkdyp_v1（Crossref has-preprint）；OSF API date_published 2026-06-02；正式版 Elsevier 頁 linkinghub 轉址，未繞過；首次公開日在月報觀察期（08-29 起）之前，只當背景；本刊追蹤學者 H18 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核；高風險：結構方程模型之預測關係，不得寫成因果",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-PD",
+        "T-TEA",
+        "T-BAS"
+      ],
+      "ai_lit_note": "以心理因素模型解釋教師的教學AI能力與AI使用，對應 T-PD「評估教師AI素養以規劃專業增能」與 T-TEA",
+      "audience": "other_stakeholders",
+      "doi": "10.1016/j.chbah.2026.100402",
+      "screening_note": "30-day backfill/background: earlier than issue period; Discovery only, hold pending first-disclosure check."
+    },
+    {
+      "candidate_id": "W2026-10-09-A13",
+      "category": "research",
+      "source_url": "https://doi.org/10.1007/s44436-026-00043-5",
+      "source_title": "Fostering SCALE habits of mind through AI-empowered arts-based pedagogy",
+      "source_organization": "AI Brain and Child",
+      "source_publication_date": "2026-09-02",
+      "source_locator": "出版者頁（Springer）citation_online_date 2026/09/02",
+      "discovered_on": "2026-10-10",
+      "discovery_batch_id": "2026-10-10-scholar-M-1",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "original_excerpt": "",
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "版本：正式版（AI Brain and Child）；對象：K-12，概念論文，寫 K-12 education and beyond；首發依據：出版者頁（Springer）citation_online_date 2026/09/02；首次公開日在本次查詢期間內；本刊追蹤學者 V03 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "T-TEA"
+      ],
+      "ai_lit_note": "提出把SCALE目標與藝術本位教學結合、以AI支援創作迭代的K-12教學法，屬AI融入教學設計，對應 T-TEA「創新AI教學與設計學習體驗」",
+      "audience": "k12",
+      "doi": "10.1007/s44436-026-00043-5",
+      "screening_note": "30-day backfill/background: earlier than issue period; Discovery only, hold pending first-disclosure check."
     }
   ],
   "item_template": {
@@ -341,7 +443,7 @@
     "ai_crosscheck_record": ""
   },
   "screening_summary": {
-    "candidate_count": 10,
+    "candidate_count": 13,
     "ready_to_publish": 0,
     "verified_for_publication": 0,
     "screened_on": "2026-10-09",
@@ -403,6 +505,412 @@
       ],
       "discovered": 1,
       "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-10-scholar-M-1",
+      "searched_on": "2026-10-10",
+      "lookback_days": 42,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "scholar-watch",
+          "query": "S18 author.orcid:0000-0001-5216-1576 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S20 author.orcid:0000-0002-0402-9199 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S23 author.orcid:0000-0002-1713-9653 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S24 author.orcid:0000-0001-9045-4070 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T10 author.orcid:0000-0001-9494-2848 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T12 author.orcid:0000-0002-7721-5902 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T14 author.orcid:0000-0001-7744-9971 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T15 author.orcid:0000-0002-8943-5689 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T19 author.orcid:0000-0003-2373-2004 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T21 author.orcid:0000-0003-1783-8830 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T22 author.orcid:0000-0002-7088-5516 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S06 author.orcid:0000-0003-3818-045X from:2026-08-29 to:2026-10-10 (OpenAlex works) + search=education OR school OR students OR teacher OR learning; unfiltered check also run",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S07 author.orcid:0000-0003-2777-1705 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S08 author.orcid:0000-0003-2900-3734 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S09 author.orcid:0000-0001-6330-6160 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S10 author.orcid:0000-0003-1037-3313 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S11 author.orcid:0000-0002-9913-0627 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S13 author.orcid:0000-0002-5018-6232 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S14 author.orcid:0000-0001-7045-2764 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S15 author.orcid:0000-0002-8793-4732 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H01 author.orcid:0000-0001-7613-0029 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H02 author.orcid:0000-0002-2380-7814 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H03 author.orcid:0000-0001-6490-7005 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H04 author.orcid:0000-0001-8268-4802 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H05 author.orcid:0000-0002-7134-130X from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H06 author.orcid:0000-0002-0906-4321 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H07 author.orcid:0000-0001-6035-540X from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H08 author.orcid:0000-0002-7246-7879 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H09 author.orcid:0000-0003-3104-1123 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H10 author.orcid:0000-0003-2555-8097 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H11 author.orcid:0000-0003-2887-5477 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H12 author.orcid:0000-0003-0664-3640 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H13 author.orcid:0000-0002-3115-9060 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H14 author.orcid:0000-0001-8495-6920 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H15 author.orcid:0000-0003-1543-6301 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H16 author.orcid:0000-0003-4762-2838 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H17 author.orcid:0000-0002-0587-2065 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H18 author.orcid:0000-0003-2206-2715 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H19 author.orcid:0000-0002-1990-2894 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H20 author.orcid:0000-0001-5198-7261 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H21 author.orcid:0000-0002-8691-3016 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H22 author.orcid:0000-0002-8576-6464 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H23 author.orcid:0000-0003-2370-381X from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H24 author.orcid:0000-0003-2105-2275 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H25 author.orcid:0000-0002-1448-4064 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H26 author.orcid:0000-0002-6859-1420 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H27 author.orcid:0000-0003-0829-3349 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H28 author.orcid:0009-0006-3682-2358 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H29 author.orcid:0000-0002-9725-268X from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H30 author.orcid:0000-0002-5027-8284 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H31 author.orcid:0000-0002-6551-8885 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H32 author.orcid:0000-0002-7294-3097 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H33 author.orcid:0000-0003-2815-1137 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V01 author.orcid:0000-0001-9159-0664 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V02 author.orcid:0000-0002-5087-9637 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V03 author.orcid:0000-0002-8057-2863 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V04 author.orcid:0000-0001-7640-9898 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V05 author.orcid:0000-0001-9895-6796 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V06 author.orcid:0000-0002-6298-4813 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V07 author.orcid:0000-0002-3250-003X from:2026-08-29 to:2026-10-10 (OpenAlex works) + search=education OR school OR students OR teacher OR learning; unfiltered check also run",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V08 author.orcid:0000-0003-0506-9579 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V09 author.orcid:0000-0002-1803-9865 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V10 author.orcid:0000-0002-6937-345X from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V11 author.orcid:0000-0002-7740-5749 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V12 author.orcid:0000-0002-5554-0069 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V13 author.orcid:0000-0002-1775-8219 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V14 author.orcid:0000-0002-8214-0386 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V15 author.orcid:0000-0003-0538-7665 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V16 author.orcid:0000-0002-7173-4859 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V17 author.id:A5061103584 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V18 author.orcid:0000-0003-2079-2394 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V19 author.orcid:0000-0002-6817-4416 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V20 author.orcid:0000-0001-9942-0651 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V21 author.orcid:0000-0003-4519-1931 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V22 author.orcid:0000-0003-2441-1640 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V23 author.orcid:0000-0003-3804-0852 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V24 author.orcid:0000-0001-8565-123X from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V25 author.orcid:0000-0001-8681-0853 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V26 author.orcid:0000-0003-1481-6601 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        }
+      ],
+      "discovered": 3,
+      "added": 3,
       "duplicates": 0
     }
   ]

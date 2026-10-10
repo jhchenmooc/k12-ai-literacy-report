@@ -448,5 +448,8 @@
 | KB-2026-0100 — [Generative Artificial Intelligence (AI) in K-12 Classrooms Guidance (v3.0, web-based)](https://www.oregon.gov/ode/educator-resources/teachingcontent/Pages/Generative-Artificial-Intelligence-%28AI%29-for-K-12-Schools.aspx) | official_guidance | 未知 | bibliographic_checked |
 | KB-2026-0101 — [Guidelines regarding the use of generative AI](https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/guidelines-regarding-use-of-generative-ai) | official_guidance | 未知 | bibliographic_checked |
 | KB-2026-0102 — [Guidelines on the ethical use of artificial intelligence and data in teaching and learning for educators](https://education.ec.europa.eu/document/guidelines-on-the-ethical-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators) | official_guidance | 未知 | bibliographic_checked |
+| KB-2026-0247 — [The B-AIMT: development and initial validation of a domain-specific instrument for assessing mathematics teachers’ beliefs about artificial intelligence](https://doi.org/10.3389/feduc.2026.1885959) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0248 — [AI Mindset – An empirically tested theoretical framework on the psychological factors shaping AI competence and AI use](https://doi.org/10.1016/j.chbah.2026.100402) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0249 — [Fostering SCALE habits of mind through AI-empowered arts-based pedagogy](https://doi.org/10.1007/s44436-026-00043-5) | journal_article | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
