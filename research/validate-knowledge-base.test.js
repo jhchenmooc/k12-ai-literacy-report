@@ -155,3 +155,8 @@ test("topic and method tags only use their vocabularies",()=>{
  assert.ok(validate(records,[{...base,relation_id:"R1",predicate:"has_topic",object_id:"TOPIC_UNKNOWN"}],runs,candidates).some(x=>x.includes("invalid topic relation")));
  assert.ok(validate(records,[{...base,relation_id:"R2",predicate:"has_method",object_id:"METHOD_UNKNOWN"}],runs,candidates).some(x=>x.includes("invalid method relation")));
 });
+test("AI-literacy scope and dimension tags only use their vocabularies",()=>{
+ const base={subject_id:records[0].record_id,object_namespace:"vocabulary",evidence_url:"https://example.org",verification_status:"discovered_unverified"};
+ assert.ok(validate(records,[{...base,relation_id:"R1",predicate:"has_ailit_class",object_id:"AILIT_C"}],runs,candidates).some(x=>x.includes("invalid ailit class relation")));
+ assert.ok(validate(records,[{...base,relation_id:"R2",predicate:"has_ailit_dim",object_id:"S-XYZ"}],runs,candidates).some(x=>x.includes("invalid ailit dimension relation")));
+});
