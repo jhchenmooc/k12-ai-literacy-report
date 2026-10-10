@@ -15,7 +15,7 @@
 | 欄位 | 值 |
 |---|---|
 | `section` | `scholars` |
-| `research_group` | `S04`（預設學者代碼；Generation AI 團隊目前未登記共用代碼） |
+| `research_group` | `G-GENAI-FI`（S04、S10、S11、V09 共用代碼，2026-10-10 登記） |
 | `ai_lit_class`／`ai_lit_dims` | A；S-BAS、S-ETH |
 | `audience` | `k12`（6、9 年級學生 40 人） |
 | `claim_class`／`risk_tier` | `descriptive`／`medium` |
