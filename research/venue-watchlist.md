@@ -245,6 +245,7 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
 | 出處 | 範圍 | 理由 | 查核紀錄 |
 |---|---|---|---|
 | Atlantic Academic Press Limited 旗下期刊（含 Journal of Modern Educational Theory and Practice，ISSN 3065-3193／3065-3185，DOI 前綴 `10.70767`） | 整個出版商 | 見下方說明 | [2026-10-10 每日查核紀錄](drafts/2026-10-10-daily-check.md) |
+| Diamond Scientific Publishing（Mokslinės leidybos deimantas, MB，立陶宛 Vilnius）旗下期刊與會議論文集（DOI 前綴 `10.33422`；含 European Journal of Teaching and Education，ISSN 2669-0667） | 整個出版商 | 見下方說明 | [2026-10-10 查核紀錄](p0-search-1013-2026-10-10/report.md) |
 
 **Atlantic Academic Press 不收的理由：**
 - 期刊 2024 年才創刊，出版商登記地址是紐約一個公寓單位。
@@ -254,3 +255,12 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
 - 樣本論文 `10.70767/jmetp.v3i7.1312` 的摘要宣稱「以層級分析法取得指標權重」，但正文沒有專家組成、判斷矩陣、權重數值或一致性比率。
 
 這些事實不足以證明它是掠奪性出版商，但審查品質無法核實，不符合本清單「同儕審查狀態可查核」的要求。
+
+**Diamond Scientific Publishing 不收的理由（2026-10-10 管理者決定）：** 以會議為主的商業模式，審查品質無法核實。
+- **主業是會議：**
+  - Crossref 上約 5,300 個 DOI，其中會議論文 3,113 個。
+  - 2025 年起的 948 個 DOI 大多屬約 100 個會議論文集。
+- **索引宣稱與實況不符：** 會議網站宣稱論文可登上 Scopus、WoS、DOAJ 期刊，但出版商自家期刊在 DOAJ 是 0 筆，OpenAlex 也標示未收錄於 DOAJ。
+- **會議論文轉成期刊論文：** 2019～2022 年有 16 篇 European Journal of Teaching and Education 論文，與自家會議論文集的論文同名。
+- **出版商有公開審查資訊，但仍無法核實：** 網站寫明雙盲審查、論文標有收稿與接受日期、編委列有任職單位。但這些資訊沒有外部收錄可以核實。
+- **比對方式：** 依 DOI 前綴 `10.33422`、出版商名稱或 ISSN 2669-0667。**不可用縮寫比對**，因為 European Journal of Teaching and Education 的縮寫與 J44 European Journal of Teacher Education（Taylor & Francis）相同，J44 不受影響。

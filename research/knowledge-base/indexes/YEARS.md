@@ -37,6 +37,7 @@
 | KB-2023-0008 — [More Support for Schools and Students to Shape the Future of Learning（Launch of EdTech Masterplan 2030 “Transforming Education through Technology”）](https://www.moe.gov.sg/news/press-releases/20230920-more-support-for-schools-and-students-to-shape-the-future-of-learning) | government_announcement | 2023-09-20 | bibliographic_checked |
 | KB-2023-0009 — [Generative artificial intelligence in education call for evidence](https://www.gov.uk/government/calls-for-evidence/generative-artificial-intelligence-in-education-call-for-evidence) | consultation | 2023-06-14 | bibliographic_checked |
 | KB-2023-0010 — [Guidance for generative AI in education and research](https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research) | official_guidance | 2023-09-07 | bibliographic_checked |
+| KB-2023-0012 — [Draft schools AI framework open for consultation](https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation) | government_announcement | 2023-07-28 | discovered_unverified |
 
 ## 2024｜first_publication
 
@@ -239,6 +240,7 @@
 | KB-2026-0258 — [Schools Guide Students to Use AI Purposefully for Learning（Forum letter reply）](https://www.moe.gov.sg/news/forum-letter-replies/20260918-schools-guide-students-to-use-ai-purposefully-for-learning) | government_announcement | 2026-09-18 | discovered_unverified |
 | KB-2026-0259 — [高級中等以下學校人工智慧使用和學習指引](https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf) | official_guidance | 2026-06-05 | discovered_unverified |
 | KB-2026-0260 — [Recommendation CM/Rec(2026)12 of the Committee of Ministers to member States on artificial intelligence literacy](https://search.coe.int/cm?i=CM/Rec(2026)12) | official_guidance | 2026-09-02 | discovered_unverified |
+| KB-2026-0262 — [Australian Government response to the House of Representatives Standing Committee on Employment, Education and Training report on Study Buddy or Influencer: Inquiry into the Use of Generative Artificial Intelligence in the Australian Education System](https://www.education.gov.au/node/20276) | policy_review | 2026-04 | discovered_unverified |
 
 ## 2026｜issue_year
 

@@ -71,7 +71,7 @@
 ### 管理者決定與入庫（2026-10-10 晚）
 
 - **正文證據：** 編輯 session 讀了 C-18 與 C-12 的正文，回傳短摘錄與段落位置。文獻搜尋 session 依這些摘錄判讀；全文仍只在編輯 session 的 scratchpad。
-- **管理者決定：** 三件都入庫。C-18、C-12 判 A，C-09 以 draft 入庫。
+- **管理者決定：** 三件都入庫。C-18、C-12 判 A，C-09 以 draft 入庫。決定來源是 2026-10-10 管理者在文獻搜尋 session 直接回答的三題選擇題。
 
 | 紀錄 | 待判 | record_type | 首發日 | 分類 | 範圍判讀 |
 |---|---|---|---|---|---|
@@ -81,6 +81,20 @@
 
 - **共同欄位：** 三筆都是 `discovered_unverified`，因為文獻搜尋 session 沒有直接讀原件。`primary_url` 是管理者另存的官方頁，文獻搜尋 session 讀這些頁仍回 403（coe.int 則被 Cloudflare 擋）。
 - **月報與週報：** 三件的首發日都早於 10 月月報觀察期，或是不明，所以都不進月報，也不進首期週報。
+
+### 補記二：美國與澳洲三份原文（2026-10-10 晚）
+
+- **核對方式：** 管理者用瀏覽器另存原件，編輯 session 核對書目並回傳短摘錄。原件不入 repo。文獻搜尋 session 依這些摘錄判讀，判讀規則見[範圍判斷準則](../ai-literacy-scope-criteria.md)。
+
+| 紀錄 | 待判 | record_type | 首發日 | 分類 | 判讀 |
+|---|---|---|---|---|---|
+| KB-2026-0262 | B-AU-01 | policy_review | 2026-04（月精度，封面「TABLING APRIL 2026」） | K1，O-AU-EDU，AU | **A**，對應 S-BAS、T-PD、S-ETH。這是澳洲政府對國會《Study Buddy or Influencer》生成式 AI 調查報告的回應，對各項建議多寫「notes」。內容以學校為主（ACARA、AITSL、ESA），也涉及高教（TEQSA），並提到 Digital Literacy 通用能力與 AI 素養。屬混合學段，但明寫包含中小學。 |
+| KB-2023-0012 | B-AU-02 | government_announcement | 2023-07-28（日精度，部長新聞稿所載日期） | K1，O-AU-EDU，AU | **A**，對應 S-ETH、T-ETH，對象 k12。教育部長新聞稿，宣布學校 AI 框架草案公開徵詢，由 NSW 教育部擔任秘書處。徵詢結果用於 KB-2023-0001《Australian Framework for Generative AI in Schools》定稿（2023-12-01）。這是新聞稿，不是草案本身，所以**不建** `revises` 關係，只在這裡註明兩者的前後關係。 |
+| （暫不入庫） | B-US-04 | official_guidance（預定） | 2025-07-22（原件所印「Date: July 22, 2025」） | K1，O-US-ED，US（預定） | **B**，對應 T-TEA、S-LRN。美國教育部長 Dear Colleague letter，說明聯邦補助款可用於 AI 教材、AI 家教、升學與職涯輔導。學段寫「all subjects, grade levels」，含升學銜接；直接提到 K-12 的只有倫理原則一句（「Within the K-12 realm in particular, educators should help students … learn with – rather than exclusively from – AI」）。主體是 AI 工具的使用，AI 素養只占一句，所以判 B。**暫不入庫**，等管理者確認官方網址：管理者另存的原件檔名是 opepd-ai-dear-colleague-letter-7222025-110427.pdf，與原本清單上的網址不同，而 ed.gov 兩邊都回 403、無法核對。 |
+
+- **共同欄位：** 已入庫的兩筆都記 `discovered_unverified`。
+- **月報與週報：** 三件的首發日都早於 10 月月報觀察期，不進月報，也不進首期週報。
+- **政策待判：** 原 12 件中，入庫 5 件（C-18、C-12、C-09、B-AU-01、B-AU-02）；B-US-04 等網址確認。其餘 6 件不變：中國 2 件、臺灣評量注意事項 1 件、UNESCO 3 件。
 
 ## 三、B1 待判 41 件
 
@@ -93,6 +107,8 @@
 - **其餘：** 學段不明或混合的 23 件、AI 素養歸類不明的 1 件、管理者已決定待判的 7 件，這次都不動，沒有放寬規則，也沒有再查。
 
 ## 四、Diamond Scientific Publishing 出版商查核
+
+> **管理者決定（2026-10-10，經編輯 session 轉達）：** 整個出版商列為不收出處，已寫入 [venue-watchlist.md](../venue-watchlist.md)「不收出處」一節。比對依據是 DOI 前綴 `10.33422`、出版商名稱，以及 ISSN 2669-0667。
 
 > **更正縮寫：** [p0-pending-final](../p0-pending-final-2026-10-10/report.md) 第三節寫「EJTE 的出版商 Diamond Scientific」，這裡的 EJTE 指 European Journal of Teaching and Education（ISSN 2669-0667，DOI 前綴 `10.33422`）。監測清單的 J44 是 European Journal of Teacher Education（Taylor & Francis，ISSN 0261-9768），已入庫的 KB-2026-0133 也是這本，清單第 238 行也簡寫成 EJTE。兩本刊名的縮寫相同，所以不收規則**不可用「EJTE」比對**，要用 DOI 前綴、ISSN 和出版商名稱。
 
