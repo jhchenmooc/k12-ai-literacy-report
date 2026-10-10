@@ -139,7 +139,7 @@ AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只�
 | 歐盟執委會（教育） | 2026-10-10 education.ec.europa.eu 新聞頁與文件庫頁可讀（HTTP 200）；先前曾遇 antibot 表單、列表未渲染 | 直接讀新聞頁；讀不到時用 WebSearch |
 | 歐洲理事會（coe.int、rm.coe.int） | Cloudflare 403，建議全文 PDF 亦同 | 請管理者用瀏覽器開啟另存（9 月月報引文即如此核對） |
 | 澳洲 Department of Education／部長新聞 | 503、HTTP/2 錯誤 | WebSearch |
-| 新加坡 MOE | 2026-10-09 B-POL 實測 moe.gov.sg 可讀；新聞列表偶為轉址 JS 頁、空內容 | WebSearch；國會答覆另查 |
+| 新加坡 MOE | 2026-10-09 B-POL 實測 moe.gov.sg 可讀；新聞列表偶為轉址 JS 頁、空內容；2026-10-10 單篇頁（forum letter reply、AI in education）直接網址可讀 | WebSearch；國會答覆另查。站內搜尋依相關度排序、不能按日期，只檢視前幾筆時記為「未完整檢視」，不寫「沒有發布」（管理者 2026-10-10） |
 | 加拿大 BC／Ontario | SSL 憑證錯誤（**不得停用 TLS 驗證**）／需 JS | WebSearch |
 | 香港 EDB 通告 | 列表需表單／JS；**通告 PDF 可直接讀** | 香港政府新聞公報可讀 |
 | 日本 MEXT、中國教育部、韓國 MOE、臺灣教育部 | 大致可讀；韓國 moe.go.kr 常 connection reset（需重試）；臺灣 `pads.moe.edu.tw`（AI 人才方舟計畫下載頁）伺服器未送中繼憑證，curl 驗證失敗（rc=60，**不得停用 TLS 驗證**），一般瀏覽器可開 | 臺灣 pads 頁請管理者以瀏覽器確認 |

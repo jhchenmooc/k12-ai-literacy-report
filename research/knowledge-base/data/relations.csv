@@ -1068,3 +1068,6 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-1067","KB-2026-0258","has_category","vocabulary","K5","https://www.moe.gov.sg/news/forum-letter-replies/20260918-schools-guide-students-to-use-ai-purposefully-for-learning","discovered_unverified"
 "KR-1068","KB-2026-0258","issued_by","source","O-SG-MOE","https://www.moe.gov.sg/news/forum-letter-replies/20260918-schools-guide-students-to-use-ai-purposefully-for-learning","discovered_unverified"
 "KR-1069","KB-2026-0258","applies_to_country","vocabulary","SG","https://www.moe.gov.sg/news/forum-letter-replies/20260918-schools-guide-students-to-use-ai-purposefully-for-learning","discovered_unverified"
+"KR-1070","KB-2026-0259","has_category","vocabulary","K1","https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf","discovered_unverified"
+"KR-1071","KB-2026-0259","issued_by","source","O-TW-MOE","https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf","discovered_unverified"
+"KR-1072","KB-2026-0259","applies_to_country","vocabulary","TW","https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf","discovered_unverified"
