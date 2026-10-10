@@ -1,0 +1,31 @@
+calib_id,kind,work_id,doi,kb_record,answer_class,answer_dims,answer_stage,answer_source,synthetic_text,note
+R01,real,W7164807291,10.1080/10494820.2026.2677729,KB-2026-0144,A,T-BAS;T-TEA,在職教師（K-12）,p0-ailit-classify-2026-10-09/step3-kb-part2.json,,接受度研究：依方案第 2.5 節操作細則可能應判 B，與既有判斷 A 衝突；待編輯 session 核對（見 open-questions.md Q5）
+R02,real,W7138011408,10.1007/s10956-026-10302-y,KB-2026-0031,A,T-ETH;T-TEA,在職教師（K-12）,p0-ailit-classify-2026-10-09/step3-kb-part3.json,,
+R03,real,W4406107150,10.1016/j.caeai.2025.100363,KB-2025-0020,A,T-BAS;T-TEA,在職教師（K-12）,p0-ailit-classify-2026-10-09/step3-kb-part2.json,,
+R04,real,W7134935726,10.1109/tlt.2026.3672830,KB-2026-0056,A,S-BAS;S-SYS,K-12 未細分,p0-ailit-classify-2026-10-09/step3-kb-part1.json,,
+R05,real,W7147187185,10.1080/10494820.2026.2649553,KB-2026-0139,A,S-BAS;S-ETH;S-SYS,K-12 未細分,p0-ailit-classify-2026-10-09/step3-kb-part3.json,,
+R06,real,W7154625247,10.1016/j.caeo.2026.100367,KB-2026-0157,A,T-TEA,職前師培,p0-ailit-classify-2026-10-09/step3-kb-part1.json,,
+R07,real,W7160247195,10.1007/s10639-026-13998-y,KB-2026-0138,A,S-BAS;S-ETH,K-12 未細分,p0-ailit-classify-2026-10-09/step3-kb-part2.json,,
+R08,real,W7136063236,10.1080/10494820.2026.2642871,KB-2026-0146,A,T-BAS,職前師培,p0-ailit-classify-2026-10-09/step3-kb-part1.json,,
+R09,real,W4410445711,10.1177/07356331251337991,KB-2025-0110,B,S-LRN,K-12 跨學段,p0-reexam-excluded-2026-10-09/imported.json,,
+R10,real,W7163996223,10.1080/10494820.2026.2679063,KB-2026-0203,B,S-LRN;T-TEA,K-12 未細分,p0-reexam-excluded-2026-10-09/imported.json,,
+R11,real,W7117470340,10.15388/infedu.2025.24,KB-2025-0103,B,S-LRN;T-TEA,國小,p0-reexam-excluded-2026-10-09/imported.json,,
+R12,real,W4416590547,10.1016/j.caeo.2025.100315,KB-2025-0102,B,S-LRN,國中,p0-reexam-excluded-2026-10-09/imported.json,,
+R13,real,W7154454997,10.1002/jcal.70245,KB-2026-0175,B,S-LRN,國中,p0-ailit-classify-2026-10-09/step2-scholar-hits.json,,
+R14,real,W7128431959,10.1007/s44217-026-01153-1,KB-2026-0217,B,S-ETH;S-LRN,高中（含中職）,p0-reexam-excluded-2026-10-09/imported.json,,
+R15,real,W7166823997,10.1016/j.compedu.2026.105707,KB-2026-0182,B,S-LRN;T-TEA,在職教師（K-12）,p0-ailit-classify-2026-10-09/step2-scholar-hits.json,,
+R16,real,W4408167119,10.1007/s40593-025-00458-w,KB-2025-0002,B,S-BAS;S-LRN,K-12 未細分,p0-ailit-boundary-2026-10-09/decisions.json,,
+S01,synthetic,,,,C,,,文獻搜尋 session 擬定，待編輯 session 核對,"Synthetic. A study trains a gradient-boosting model on log data from 4,000 secondary students to predict end-of-year mathematics grades; students never interact with the model.",C：機器學習只是研究方法
+S02,synthetic,,,,C,,,文獻搜尋 session 擬定，待編輯 session 核對,"Synthetic. An automated essay scoring algorithm is compared with human raters on 1,200 grade 8 essays; agreement statistics are reported.",C：自動評分準確度
+S03,synthetic,,,,C,,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. A survey of 600 primary teachers measures their use of interactive whiteboards and general digital competence; artificial intelligence is not discussed.,C：一般數位素養，不涉及 AI
+S04,synthetic,,,,C,,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. Clickstream data from a learning management system are clustered to identify engagement profiles of upper-secondary students.,C：學習分析
+S05,synthetic_boundary,,,,C,,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. The keyword 'artificial intelligence' appears only in the introduction; the study evaluates a paper-based reading programme for grade 3 pupils.,C 邊界：只有關鍵詞，沒有教 AI 或用 AI
+S06,synthetic_boundary,,,,C,,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. Response logs from an intelligent tutoring system are used to fit a knowledge-tracing model; no learners or teachers took part in the study itself.,C 邊界：ITS 只用記錄檔
+S07,synthetic_boundary,,,,C,,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. Lower-secondary students learn to clean spreadsheets and draw charts in a data literacy unit; algorithms or AI are not mentioned.,C 邊界：只談資料素養
+S08,synthetic_boundary,,,,C,,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. Researchers use ChatGPT to code 300 interview transcripts with teachers about homework policies; the topic of the interviews is not AI.,C 邊界：生成式 AI 只用作分析工具
+S09,synthetic_boundary,,,,C,,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. A computer-vision system counts classroom attendance from camera images; staff report on its accuracy.,C 邊界：AI 為系統後端，師生不互動
+S10,synthetic_boundary,,,,B,,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. Grade 10 students in an EFL class use a GPT-based writing assistant for six weeks; writing scores improve compared with a control class.,B 邊界：生成式 AI 工具成效，非 AI 素養；B 子型 genai
+S11,synthetic_boundary,,,,B,,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. Grade 7 students practise algebra with an adaptive tutoring system; learning gains and time on task are compared with paper worksheets.,B 邊界：學生直接操作 ITS；B 子型 its_adaptive
+S12,synthetic_boundary,,,,B,,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. Secondary teachers complete a technology-acceptance (UTAUT) questionnaire about intention to use a specific chatbot for lesson planning.,B 邊界：接受度研究（方案操作細則）；B 子型 genai
+S13,synthetic_boundary,,,,A,S-ETH;S-BAS,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. Grade 6 pupils explore how a face-recognition demo can be biased and discuss fairness; pre/post questionnaires measure their understanding of bias in AI.,A 邊界：用 AI 示範教 AI 偏見
+S14,synthetic_boundary,,,,A,T-PD;T-TEA,,文獻搜尋 session 擬定，待編輯 session 核對,Synthetic. In-service primary teachers attend a workshop on using generative AI for lesson design; the study reports changes in their AI-TPACK.,A 邊界：生成式 AI 教學培訓，兼有工具使用
