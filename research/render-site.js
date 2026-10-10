@@ -94,6 +94,34 @@ function renderDailyIndex(days){
 }
 
 /* ---------- weekly / monthly ---------- */
+/* Registered period paths: weekly YYYY-MM-DD_MM-DD (1-10 days inclusive, may cross a year end), monthly YYYY-MM.
+   Returns null for anything else, so the gate and the renderer share one definition. */
+function periodRange(kind,period){
+ const iso=s=>Number.isFinite(Date.parse(s+"T00:00:00Z"))&&new Date(s+"T00:00:00Z").toISOString().slice(0,10)===s;
+ if(kind==="monthly"){const m=/^(\d{4})-(0[1-9]|1[0-2])$/.exec(String(period));return m?{year:+m[1],month:+m[2]}:null}
+ if(kind!=="weekly")return null;
+ const m=/^(\d{4})-(\d{2}-\d{2})_(\d{2}-\d{2})$/.exec(String(period));if(!m)return null;
+ const start=m[1]+"-"+m[2],end=(m[3]<m[2]?+m[1]+1:m[1])+"-"+m[3];
+ if(!iso(start)||!iso(end))return null;
+ const days=(Date.parse(end+"T00:00:00Z")-Date.parse(start+"T00:00:00Z"))/864e5+1;
+ return days>=1&&days<=10?{start,end}:null;
+}
+/* Everything outside <main> is fixed per channel; only the period varies. <main> holds claim paragraphs only,
+   with no section headings, because every substantive node there must bind to a claim. */
+function renderPeriodEdition(kind,e){
+ const r=periodRange(kind,e.period);if(!r)throw new Error("invalid "+kind+" period: "+e.period);
+ const isWeekly=kind==="weekly",label=isWeekly?"週報":"月報";
+ const h1=isWeekly?r.start+" 至 "+r.end+" 週報":r.year+" 年 "+r.month+" 月月報";
+ const notice=isWeekly?"每則逐句對回原文並標示證據等級；由 AI 整理，未經獨立認證。請點連結閱讀原文。":"整合當月週報與重要背景，區分原始發現與本刊分析；由 AI 整理，未經獨立認證。請點連結閱讀原文。";
+ const head='<div class="kicker">'+label+"</div><h1>"+esc(h1)+'</h1><div class="notice"><p>'+notice+"</p></div>";
+ const main="<article>"+e.claims.map(c=>claimParagraph(c,true)).join("")+"</article>";
+ return shell({depth:2,current:kind,title:label+" "+e.period,description:"K-12 AI 素養"+label+"："+e.period,head,main});
+}
+const renderWeeklyEdition=e=>renderPeriodEdition("weekly",e),renderMonthlyEdition=e=>renderPeriodEdition("monthly",e);
+function periodEditions(kind,editions){
+ const re=new RegExp("^"+kind+"/([a-zA-Z0-9_-]+)/index\\.html$");
+ return editions.map(e=>({...e,period:(re.exec(e.path)||[])[1]})).filter(e=>e.period&&periodRange(kind,e.period));
+}
 function renderPeriodIndex(kind,editions){
  const isWeekly=kind==="weekly",label=isWeekly?"週報":"月報",legacy=isWeekly?LEGACY_WEEKLY:LEGACY_MONTHLY;
  const registered=editions.filter(e=>e.path.startsWith(kind+"/")).map(e=>({path:e.path.replace(/index\.html$/,""),title:e.title||label+"："+e.path.split("/")[1],note:e.claims.length+" 則，已通過出版閘門"})).sort((a,b)=>compareText(b.path,a.path));
@@ -238,6 +266,7 @@ function build(root){
   "about/index.html":renderAbout()
  };
  for(const d of days)files["daily/"+d.date+"/index.html"]=renderDailyEdition(d);
+ for(const kind of ["weekly","monthly"])for(const e of periodEditions(kind,editions))files[kind+"/"+e.period+"/index.html"]=renderPeriodEdition(kind,e);
  files["index.html"]=fillHomepage(fs.readFileSync(path.join(root,"index.html"),"utf8"),days,data);
  return files;
 }
@@ -253,4 +282,4 @@ function main(){
  console.log(write?"site pages written":"site pages consistent",Object.keys(files).length);
 }
 if(require.main===module)try{main()}catch(e){console.error(e.message);process.exitCode=1}
-module.exports={build,archiveData,claimParagraph,renderDailyEdition,fillHomepage,esc};
+module.exports={build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,fillHomepage,esc};

@@ -20,9 +20,14 @@
 
 最小頁面的 meta 只接受：單一 `charset` 屬性；`name="viewport"` 加固定 `content="width=device-width,initial-scale=1"`；`name="description"` 加與中性期別 title 完全相同的 content；以及上述僅指定 UTF-8 的舊式 Content-Type。都可省略，但不能混入其他屬性。禁止 `property`、Open Graph／Twitter 卡文字及其他未支援 meta。完整日報的 description 仍依固定 renderer shell 核對，不使用最小頁面規則。
 
-## 週／月報首次正式出刊前
+## 週／月報頁面產生方式
 
-目前新登錄週／月報只能使用 main-only body，不能自行加入頁首、導覽、頁尾或跳至正文連結。這是暫時且明確的限制：**第一份正式週／月報使用網站完整版面前，必須新增各自 renderer 與正文外固定版面比對**，並驗證 claim 綁定、shell 注入、合法頁面、鍵盤導覽及生成一致性。不要用 main 包住整個網站版面，也不要解除正文外的檢查。
+週／月報已有各自的 renderer（`research/render-site.js` 的 `renderWeeklyEdition`、`renderMonthlyEdition`）。登錄在 `publication/issues.json`、期別合法的週／月報頁面，一律由 `node research/render-site.js --write` 依 claims JSON 產生，不手寫 HTML：
+
+- 期別格式：週報 `weekly/YYYY-MM-DD_MM-DD/`（含首尾 1–10 天，可跨年），月報 `monthly/YYYY-MM/`。
+- 正文外（頁首、導覽、說明框、頁尾、跳至正文連結）固定，只隨期別變動；出版閘門以同一 renderer 產生的空白外框逐節點比對，任何正文外改動都會被擋。
+- `<main>` 內只有逐則 claim 段落，不放分區小標題或其他編輯文字；每個實質節點都必須對到 claim。分區與編輯文字如何綁定 claim，留待月報另行設計，不得放寬閘門。
+- 期別不合法的頁面仍只能使用 main-only body。不要用 main 包住整個網站版面，也不要解除正文外的檢查。
 
 ## 驗證與提交
 

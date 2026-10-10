@@ -211,6 +211,35 @@ test('external-review control: exact daily renderer shell is accepted',t=>{
   fs.writeFileSync(file,changed);assert.equal(validate(d).ok,false);
  }
 });
+test('renderer control: exact weekly and monthly renderer shells are accepted, any change outside main is not',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ const {renderWeeklyEdition,renderMonthlyEdition}=require('./render-site.js');
+ const html=renderWeeklyEdition({period:'2026-10-09_10-15',claims:[claim]});
+ updateHtml(d,html);assert.deepEqual(validate(d).errors,[]);
+ for(const changed of [html.replace('跳至主要內容','未審核結論'),html.replace('2026-10-09 至 2026-10-15 週報</h1>','未審核結論</h1>'),html.replace('未經獨立認證','已經獨立認證'),
+  html.replace('<body>','<body class="skip">'),html.replace('</footer>','<p>未審核結論</p></footer>'),html.replace('</header>','</header><script>alert(1)</script>'),
+  html.replace('<a href="../../daily/">','<a href="../../daily/" onclick="alert(1)">'),html.replace('<a href="../../daily/">','<a href="https://example.org/">'),
+  renderWeeklyEdition({period:'2026-10-08_10-14',claims:[claim]}),renderMonthlyEdition({period:'2026-10',claims:[claim]})]){
+  updateHtml(d,changed);assert.equal(validate(d).ok,false);
+ }
+ fs.mkdirSync(path.join(d,'monthly','2026-10'),{recursive:true});fs.writeFileSync(path.join(d,'monthly','2026-10','index.html'),renderMonthlyEdition({period:'2026-10',claims:[claim]}));
+ fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[{path:'monthly/2026-10/index.html',claims_file:'publication/claims/a.json'}]}));
+ fs.rmSync(path.join(d,'weekly'),{recursive:true});assert.deepEqual(validate(d).errors,[]);
+});
+test('renderer control: a full shell needs a valid weekly or monthly period',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const {renderWeeklyEdition,periodRange}=require('./render-site.js');
+ for(const bad of ['test','2026-10-09_10-25','2026-02-28_02-30','2026-10-15_10-09x'])assert.equal(periodRange('weekly',bad),null,bad);
+ for(const bad of ['2026-13','2026-1','2026-10-01'])assert.equal(periodRange('monthly',bad),null,bad);
+ assert.deepEqual(periodRange('weekly','2026-12-28_01-03'),{start:'2026-12-28',end:'2027-01-03'});
+ assert.throws(()=>renderWeeklyEdition({period:'test',claims:[]}));
+ // A valid weekly shell copied under a path whose period is invalid is still refused.
+ fs.rmSync(path.join(d,'weekly','2026-10-09_10-15'),{recursive:true});fs.mkdirSync(path.join(d,'weekly','test'),{recursive:true});
+ fs.writeFileSync(path.join(d,'weekly','test','index.html'),renderWeeklyEdition({period:'2026-10-09_10-15',claims:[claim]}));
+ fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[{path:'weekly/test/index.html',claims_file:'publication/claims/a.json'}]}));
+ fs.writeFileSync(path.join(d,'publication','claims','a.json'),JSON.stringify([claim]));
+ const r=validate(d);assert.equal(r.ok,false);assert.ok(r.errors.some(e=>e.includes('valid period')));
+});
 test('external-review control: bare reports accept only reviewed local stylesheets',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
  for(const href of ['../../assets/design-system.css','../../assets/site.css?v=0123456789']){
