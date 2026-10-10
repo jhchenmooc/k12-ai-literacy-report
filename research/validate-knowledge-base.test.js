@@ -145,3 +145,8 @@ test("known search count pairs stay ordered even if another count is unknown",()
   assert.deepEqual(validate(records,relations,[{...run,results_seen,results_screened,results_recorded}],candidates),[]);
  }
 });
+test("population tags only use the stage and role vocabulary",()=>{
+ const rel=[{relation_id:"R1",subject_id:records[0].record_id,predicate:"has_population",object_namespace:"vocabulary",object_id:"STAGE_UNIVERSITY",evidence_url:"https://example.org",verification_status:"discovered_unverified"}];
+ assert.ok(validate(records,rel,runs,candidates).some(x=>x.includes("invalid population relation")));
+ assert.ok(relations.some(x=>x.predicate==="has_population"&&x.object_id==="ROLE_STUDENT"));
+});
