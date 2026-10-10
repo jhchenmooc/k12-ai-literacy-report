@@ -61,3 +61,7 @@
 | 國高中冊 | S-ETH、S-BAS | 資訊真偽、媒體識讀、智慧財產權與隱私 |
 
 依據是教育部新聞的介紹與目錄。
+
+## 更正（2026-10-10）
+
+管理者決定：`primary_url` 由 Google Drive 改為教育部即時新聞頁；Drive 只作檔案出處。兩筆經書目核對後升為 `bibliographic_checked`，見 [p0-tw-policy-bibcheck-2026-10-10](../p0-tw-policy-bibcheck-2026-10-10/integration.md)。

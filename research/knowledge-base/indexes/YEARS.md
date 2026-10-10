@@ -48,7 +48,7 @@
 | KB-2024-0004 — [AI Digital Textbooks for 2025 to Realize Personalized Education for All](https://english.moe.go.kr/boardCnts/viewRenewal.do?boardID=265&boardSeq=102075&lev=0&m=0201&opType=N&page=1&s=english) | government_announcement | 2024-11-29 | bibliographic_checked |
 | KB-2024-0005 — [教育部部署加强中小学人工智能教育](https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html) | government_announcement | 2024-12-02 | bibliographic_checked |
 | KB-2024-0007 — [Generative artificial intelligence (AI) and data protection in schools](https://www.gov.uk/guidance/data-protection-in-schools/generative-artificial-intelligence-ai-and-data-protection-in-schools) | official_guidance | 2024-02-07 | bibliographic_checked |
-| KB-2024-0008 — [中小學數位教學指引3.0版](https://pads.moe.edu.tw/download_file.php?file=_upload_642bae440e1fb47c45d377aa6686ad28.pdf&old=upload) | official_guidance | 2024-08 | discovered_unverified |
+| KB-2024-0008 — [中小學數位教學指引3.0版](https://pads.moe.edu.tw/download_file.php?file=_upload_642bae440e1fb47c45d377aa6686ad28.pdf&old=upload) | official_guidance | 2024-08 | bibliographic_checked |
 | KB-2024-0010 — [Development of an AI literacy assessment for non-technical individuals: What do teachers know?](https://www.cedtech.net/article/development-of-an-ai-literacy-assessment-for-non-technical-individuals-what-do-teachers-know-14619) | journal_article | 2024-05-14 | discovered_unverified |
 | KB-2026-0099 — [NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools](https://go.ncdpi.gov/AI_Guidelines) | official_guidance | 2024-01-16 | bibliographic_checked |
 
@@ -82,8 +82,8 @@
 | KB-2025-0048 — [Generative AI: product safety standards](https://www.gov.uk/government/publications/generative-ai-product-safety-standards) | official_guidance | 2025-01-22 | bibliographic_checked |
 | KB-2025-0049 — [Using AI in education settings: support materials](https://www.gov.uk/government/collections/using-ai-in-education-settings-support-materials) | official_guidance | 2025-06-10 | bibliographic_checked |
 | KB-2025-0050 — [Guidance on AI and children (Version 3.0): Recommendations for AI policies and systems that uphold child rights](https://www.unicef.org/innocenti/reports/policy-guidance-ai-children) | official_guidance | 2025-12 | bibliographic_checked |
-| KB-2025-0121 — [我和AI一起學！國小生生成式AI學習應用手冊](https://drive.google.com/file/d/1tb7TTT1z-VAqe1Ae9TCiCMb9q6K8KtM6/view?usp=sharing) | official_guidance | 2025-12 | discovered_unverified |
-| KB-2025-0122 — [駕馭AI，洞察未來：數位公民的必修課——中學生生成式AI素養手冊](https://drive.google.com/file/d/1mhyKYJllbljZFhZfKgyaGqh5-MyGcO_t/view?usp=sharing) | official_guidance | 2025-12 | discovered_unverified |
+| KB-2025-0121 — [我和AI一起學！國小生生成式AI學習應用手冊](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3) | official_guidance | 2025-12 | bibliographic_checked |
+| KB-2025-0122 — [駕馭AI，洞察未來：數位公民的必修課——中學生生成式AI素養手冊](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3) | official_guidance | 2025-12 | bibliographic_checked |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 
 ## 2025｜issue_year
@@ -222,14 +222,14 @@
 | KB-2026-0128 — [Understanding AI Mechanisms Supports Disciplinary Reasoning and Ethical Judgment in K–12 AI Literacy Education](https://doi.org/10.15388/infedu.2601.025) | journal_article | 2026-09-30 | bibliographic_checked |
 | KB-2026-0173 — [臺灣中小學教師與學生AI素養框架](https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&old=upload) | framework | 2026-04-17 | bibliographic_checked |
 | KB-2026-0236 — [인공지능(AI) 교과, 교원이 주도하여 교육자료부터 인정교과서까지 만든다](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107049&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | government_announcement | 2026-08-27 | bibliographic_checked |
-| KB-2026-0237 — [中小學使用「生成式人工智慧」注意事項2.1（教師、行政人員及家長版）](https://pads.moe.edu.tw/download_file.php?file=_upload_b72bd6a6bf0bb8cb0c84e7ab8b5e4f79.pdf&old=upload) | official_guidance | 2026-02-11 | discovered_unverified |
+| KB-2026-0237 — [中小學使用「生成式人工智慧」注意事項2.1（教師、行政人員及家長版）](https://pads.moe.edu.tw/download_file.php?file=_upload_b72bd6a6bf0bb8cb0c84e7ab8b5e4f79.pdf&old=upload) | official_guidance | 2026-02-11 | bibliographic_checked |
 | KB-2026-0238 — [Council conclusions on teachers in the era of artificial intelligence (AI)](https://data.consilium.europa.eu/doc/document/ST-9003-2026-INIT/en/pdf) | official_guidance | 2026-05-11 | bibliographic_checked |
-| KB-2026-0239 — [115年中小學教師數位與AI教學指引](https://pads.moe.edu.tw/download_file.php?file=_upload_0ced2a78cb794f6881c47b0e2148774b.pdf&old=upload) | official_guidance | 2026-09 | discovered_unverified |
-| KB-2026-0240 — [115年中小學校長數位與AI學習領導指引](https://pads.moe.edu.tw/download_file.php?file=_upload_9ef3962a1a7e371436145702ab24a6b7.pdf&old=upload) | official_guidance | 2026-09 | discovered_unverified |
-| KB-2026-0241 — [115年中小學家長數位與AI學習知能指引](https://pads.moe.edu.tw/download_file.php?file=_upload_6a9820befef32e7e22a210950196a54f.pdf&old=upload) | official_guidance | 2026-09 | discovered_unverified |
-| KB-2026-0242 — [中小學AI之學習應用手冊⸺國小生聰明用AI](https://pads.moe.edu.tw/download_file.php?file=_upload_9876e42b654dd2a55c3d2e8a8c055777.pdf&old=upload) | official_guidance | 2026-09 | discovered_unverified |
-| KB-2026-0243 — [中小學AI之學習應用手冊⸺國中生靈活用AI](https://pads.moe.edu.tw/download_file.php?file=_upload_5b6a43258b4c5a769256db9525ccaf81.pdf&old=upload) | official_guidance | 2026-09 | discovered_unverified |
-| KB-2026-0244 — [中小學AI之學習應用手冊⸺高中生智慧駕馭AI](https://pads.moe.edu.tw/download_file.php?file=_upload_a0565d2acdb121966a8793f628cff453.pdf&old=upload) | official_guidance | 2026-09 | discovered_unverified |
+| KB-2026-0239 — [115年中小學教師數位與AI教學指引](https://pads.moe.edu.tw/download_file.php?file=_upload_0ced2a78cb794f6881c47b0e2148774b.pdf&old=upload) | official_guidance | 2026-09 | bibliographic_checked |
+| KB-2026-0240 — [115年中小學校長數位與AI學習領導指引](https://pads.moe.edu.tw/download_file.php?file=_upload_9ef3962a1a7e371436145702ab24a6b7.pdf&old=upload) | official_guidance | 2026-09 | bibliographic_checked |
+| KB-2026-0241 — [115年中小學家長數位與AI學習知能指引](https://pads.moe.edu.tw/download_file.php?file=_upload_6a9820befef32e7e22a210950196a54f.pdf&old=upload) | official_guidance | 2026-09 | bibliographic_checked |
+| KB-2026-0242 — [中小學AI之學習應用手冊⸺國小生聰明用AI](https://pads.moe.edu.tw/download_file.php?file=_upload_9876e42b654dd2a55c3d2e8a8c055777.pdf&old=upload) | official_guidance | 2026-09 | bibliographic_checked |
+| KB-2026-0243 — [中小學AI之學習應用手冊⸺國中生靈活用AI](https://pads.moe.edu.tw/download_file.php?file=_upload_5b6a43258b4c5a769256db9525ccaf81.pdf&old=upload) | official_guidance | 2026-09 | bibliographic_checked |
+| KB-2026-0244 — [中小學AI之學習應用手冊⸺高中生智慧駕馭AI](https://pads.moe.edu.tw/download_file.php?file=_upload_a0565d2acdb121966a8793f628cff453.pdf&old=upload) | official_guidance | 2026-09 | bibliographic_checked |
 | KB-2026-0245 — [Education Bureau Circular Memorandum No. 107/2026: Training on Implementing Artificial Intelligence Education Planning in Schools and Teacher Professional Training in Artificial Intelligence (Phase 1: July to September 2026)](https://applications.edb.gov.hk/circular/upload/EDBCM/EDBCM26107E.pdf) | government_announcement | 2026-06-18 | bibliographic_checked |
 | KB-2026-0246 — [Education Bureau Circular Memorandum No. 156/2026: 2026/27 School Year Holistic Planning of School-based Digital Education and Related Teacher Training](https://www.edb.gov.hk/attachment/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/CM/2026/EDBCM26156E.pdf) | government_announcement | 2026-08-25 | bibliographic_checked |
 | KB-2026-0250 — [Text features associated with students’ generative AI use: Norwegian teachers’ perspectives](https://www.frontiersin.org/articles/10.3389/feduc.2026.1792351/full) | journal_article | 2026-06-03 | discovered_unverified |

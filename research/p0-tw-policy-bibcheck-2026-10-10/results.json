@@ -1,0 +1,1446 @@
+{
+ "scope": "臺灣教育部政策紀錄書目核對 11 筆（同模型核對，不是獨立審閱）",
+ "method": "curl -L（瀏覽器 UA、經 agent proxy、TLS 驗證開啟；pads.moe.edu.tw 加 --cacert 中繼憑證 bundle，未用 -k）讀 primary_url 與官方頁；PDF 以 pdftotext 抽文字；圖片型 PDF（0121、0122）以 pdftoppm 轉圖目視封面、序、末頁；HTML／JSON 以 python -I 解析。未繞過 captcha／403，未帶 email／mailto，未用金鑰。WebSearch 只用來找候選網址，不作核對依據。PDF metadata 的作者／建立者、頁尾聯絡人、電話、email 未寫入。",
+ "rules": [
+  "O-TW-MOE：首發日＝文件所印核定日；無則本文所印日期；函／發文日另記不採",
+  "pads 檔無網頁日期；月精度以封面／本文所印月份比對",
+  "0259 primary_url 為縣府轉載，除非找到教育部原件否則維持未核"
+ ],
+ "started_utc": "2026-10-10T16:29:35Z",
+ "ended_utc": "2026-10-10T16:36:26Z",
+ "counts": {
+  "match": 8,
+  "unverifiable": 3
+ },
+ "requests_total": 57,
+ "results": [
+  {
+   "record_id": "KB-2024-0008",
+   "verdict": "match",
+   "fields": {
+    "title": {
+     "kb": "中小學數位教學指引3.0版",
+     "found": "封面「教育部 中小學 數位教學指引 3.0版」（英文 The Ministry of Education Primary and Secondary School Digital Teaching Guide）",
+     "ok": true,
+     "listing_title": "中小學教師數位教學指引3.0（與【NEW】115年教師數位與AI教學指引同列）"
+    },
+    "issuer": {
+     "kb": "O-TW-MOE",
+     "found": "封面「教育部」；部長序「本部…擴充研編《校長數位學習領導指引》、《數位教學指引 3.0 版》及《家長數位學習知能指引》」",
+     "ok": true
+    },
+    "country": {
+     "kb": "TW",
+     "found": "教育部文件，對象為我國中小學（高級中等以下學校）",
+     "ok": true
+    },
+    "first_pub": {
+     "kb": "2024-08",
+     "found": "2024-08（月）",
+     "ok": true,
+     "precision": "month",
+     "evidence": [
+      "無核定日字樣（全文檢索「核定」0 筆）",
+      "封面：「2025 年 1 月」",
+      "部長序落款：「中華民國 113 年 8 月」",
+      "第二篇序落款：「中華民國 113 年 8 月」"
+     ]
+    },
+    "type": {
+     "kb": "official_guidance",
+     "found": "指引",
+     "ok": true
+    },
+    "official_url": {
+     "kb": "https://pads.moe.edu.tw/download_file.php?file=_upload_642bae440e1fb47c45d377aa6686ad28.pdf&old=upload",
+     "found": "pads.moe.edu.tw（教育部推動中小學數位學習精進方案／AI人才方舟計畫入口網，主辦單位教育部資訊及科技教育司）下載檔；資料下載頁 https://pads.moe.edu.tw/download2.php?title_id=1781 列出此檔連結",
+     "ok": true
+    }
+   },
+   "file": {
+    "sha256": "162a4758b775d3b004aab115d20d6c4cf981399a82f3fb6c2ba36bd087012c45",
+    "pages": 116
+   },
+   "requests": [
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_642bae440e1fb47c45d377aa6686ad28.pdf&old=upload",
+     "utc": "2026-10-10T16:29:35Z",
+     "http": 200,
+     "curl_exit": 23,
+     "error": "curl: (23) Failure writing output to destination",
+     "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_642bae440e1fb47c45d377aa6686ad28.pdf&old=upload",
+     "utc": "2026-10-10T16:29:52Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 6649482
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php?title_id=1781",
+     "utc": "2026-10-10T16:31:55Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 2130
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php",
+     "utc": "2026-10-10T16:31:27Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 106380
+    }
+   ],
+   "proposed_changes": [],
+   "note": "本文印有兩個日期：序 113 年 8 月、封面 2025 年 1 月。紀錄採序文日期（管理者 2026-10-10 決定，封面視為現存檔再版日）；依 O-TW-MOE 規則兩者都是本文所印日期，序文日期與紀錄一致，判 match。教育部新聞稿 2024-08-22 未採。"
+  },
+  {
+   "record_id": "KB-2025-0121",
+   "verdict": "unverifiable",
+   "fields": {
+    "title": {
+     "kb": "我和AI一起學！國小生生成式AI學習應用手冊",
+     "found": "封面「我和AI一起學！」＋「國小生生成式AI學習應用手冊」；教育部新聞稱《我和AI一起學》（國小三至六年級）",
+     "ok": true
+    },
+    "issuer": {
+     "kb": "O-TW-MOE",
+     "found": "封面左下「教育部」標誌；部長序「教育部部長 … 謹識」；團隊頁「教育部中小學生成式AI之學習應用手冊開發計畫」；教育部新聞發布單位：資訊及科技教育司",
+     "ok": true
+    },
+    "country": {
+     "kb": "TW",
+     "found": "教育部文件，對象為我國中小學（高級中等以下學校）",
+     "ok": true
+    },
+    "first_pub": {
+     "kb": "2025-12",
+     "found": "2025-12（月）",
+     "ok": true,
+     "precision": "month",
+     "evidence": [
+      "圖片型 PDF，以 pdftoppm 轉圖目視",
+      "封面：「教育部 2025年12月」",
+      "部長序落款：「中華民國114年12月」",
+      "序（研發團隊）落款：「中華民國114年12月」",
+      "末頁團隊頁無日期、無核定字樣",
+      "另記不採：教育部新聞「上版日期：115-01-29」；Drive 檔名版本日 1141230；pads 原檔名版本日 1141218"
+     ]
+    },
+    "type": {
+     "kb": "official_guidance",
+     "found": "學生生成式AI學習手冊（教育部出版品）",
+     "ok": true
+    },
+    "official_url": {
+     "kb": "https://drive.google.com/file/d/1tb7TTT1z-VAqe1Ae9TCiCMb9q6K8KtM6/view?usp=sharing",
+     "found": "Google Drive 檔案（view 頁 HTTP 200，檔名「中小學生成式AI之學習應用手冊-《我和AI一起學》for國小1141230.pdf」）；此連結由教育部官方新聞頁 https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3 正文直接列出（「或」第二組連結）。教育部自己的首選連結為短網址 reurl.cc/bNeoZv → pads.moe.edu.tw/pads/upload/…《我和AI一起學》for國小1141218.pdf，本輪 HTTP 404。",
+     "ok": null,
+     "manager_decision_needed": true,
+     "assessment": "同模型意見：不視為「官方原頁」——網域非政府，檔案擁有者不可由公開頁確認為教育部，且 Drive 檔名版本日 1141230 與教育部原上傳檔 1141218 不同（原檔 404，無法比對內容是否相同）；但它是教育部官方新聞頁正文明列的下載連結，可視為「官方頁連結的發布副本」。可選：(a) 接受 Drive 為 primary_url；(b) primary_url 改為教育部新聞頁 https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3（官方原頁，HTTP 200，含兩冊介紹與下載連結），Drive 留作檔案出處；(c) 維持未核。由管理者決定。"
+    }
+   },
+   "file": {
+    "sha256": "c45c164e8e01a182bee2ada45791ab37dbda8e8430a5e3987d011bdf8960e87d",
+    "pages": 74,
+    "source": "Google Drive uc?export=download（轉址 drive.usercontent.google.com）"
+   },
+   "requests": [
+    {
+     "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3",
+     "utc": "2026-10-10T16:31:29Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 202420
+    },
+    {
+     "url": "https://reurl.cc/bNeoZv",
+     "utc": "2026-10-10T16:34:12Z",
+     "http": 200,
+     "curl_exit": 0,
+     "note": "短網址，不跟隨轉址；回應為 reurl 中介頁，頁內目標為 pads 原上傳檔（隨後另以一次 GET 取中介頁內容，約 16:34:14–16Z，未另記秒數）"
+    },
+    {
+     "url": "https://drive.google.com/file/d/1tb7TTT1z-VAqe1Ae9TCiCMb9q6K8KtM6/view?usp=sharing",
+     "utc": "2026-10-10T16:34:32Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 135091
+    },
+    {
+     "url": "https://drive.google.com/uc?export=download&id=1tb7TTT1z-VAqe1Ae9TCiCMb9q6K8KtM6",
+     "utc": "2026-10-10T16:34:33Z",
+     "http": 200,
+     "curl_exit": 0,
+     "effective_url": "https://drive.usercontent.google.com/download?id=1tb7TTT1z-VAqe1Ae9TCiCMb9q6K8KtM6&export=download",
+     "bytes": 32188647
+    },
+    {
+     "url": "https://pads.moe.edu.tw/pads/upload/%E4%B8%AD%E5%B0%8F%E5%AD%B8%E7%94%9F%E6%88%90%E5%BC%8FAI%E4%B9%8B%E5%AD%B8%E7%BF%92%E6%87%89%E7%94%A8%E6%89%8B%E5%86%8A-%E3%80%8A%E6%88%91%E5%92%8CAI%E4%B8%80%E8%B5%B7%E5%AD%B8%E3%80%8Bfor%E5%9C%8B%E5%B0%8F1141218.pdf",
+     "utc": "2026-10-10T16:34:23Z",
+     "http": 404,
+     "curl_exit": 0,
+     "bytes": 3212
+    }
+   ],
+   "proposed_changes": [
+    {
+     "field": "primary_url",
+     "option": "(b) 待管理者決定",
+     "value": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3"
+    }
+   ],
+   "note": "題名、機關、國別、首發日、類型 5 欄與原件相符；僅 official_url 待管理者決定，故整體判 unverifiable。若管理者接受 (a) 或 (b)，可改判 match。pads 原上傳檔仍 404（2026-10-10T16:34:23–24Z）。"
+  },
+  {
+   "record_id": "KB-2025-0122",
+   "verdict": "unverifiable",
+   "fields": {
+    "title": {
+     "kb": "駕馭AI，洞察未來：數位公民的必修課——中學生生成式AI素養手冊",
+     "found": "封面「駕馭AI，洞察未來：數位公民的必修課」＋「中學生生成式AI素養手冊」；教育部新聞稱（國、高中生）",
+     "ok": true
+    },
+    "issuer": {
+     "kb": "O-TW-MOE",
+     "found": "封面左下「教育部」標誌；部長序「教育部部長 … 謹識」；團隊頁「教育部中小學生成式AI之學習應用手冊開發計畫」；教育部新聞發布單位：資訊及科技教育司",
+     "ok": true
+    },
+    "country": {
+     "kb": "TW",
+     "found": "教育部文件，對象為我國中小學（高級中等以下學校）",
+     "ok": true
+    },
+    "first_pub": {
+     "kb": "2025-12",
+     "found": "2025-12（月）",
+     "ok": true,
+     "precision": "month",
+     "evidence": [
+      "圖片型 PDF，以 pdftoppm 轉圖目視",
+      "封面：「教育部 2025年12月」",
+      "部長序落款：「中華民國114年12月」",
+      "序（研發團隊）落款：「中華民國114年12月」",
+      "末頁團隊頁無日期、無核定字樣",
+      "另記不採：教育部新聞「上版日期：115-01-29」；Drive 檔名版本日 1141230；pads 原檔名版本日 1141218"
+     ]
+    },
+    "type": {
+     "kb": "official_guidance",
+     "found": "學生生成式AI學習手冊（教育部出版品）",
+     "ok": true
+    },
+    "official_url": {
+     "kb": "https://drive.google.com/file/d/1mhyKYJllbljZFhZfKgyaGqh5-MyGcO_t/view?usp=sharing",
+     "found": "Google Drive 檔案（view 頁 HTTP 200，檔名「中小學生成式AI之學習應用手冊-《駕馭AI，洞察未來：數位公民的必修課》for國高中1141230.pdf」）；此連結由教育部官方新聞頁 https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3 正文直接列出（「或」第二組連結）。教育部自己的首選連結為短網址 reurl.cc/pK8bna → pads.moe.edu.tw/pads/upload/…《駕馭AI，洞察未來：數位公民的必修課》for國高中1141218.pdf，本輪 HTTP 404。",
+     "ok": null,
+     "manager_decision_needed": true,
+     "assessment": "同模型意見：不視為「官方原頁」——網域非政府，檔案擁有者不可由公開頁確認為教育部，且 Drive 檔名版本日 1141230 與教育部原上傳檔 1141218 不同（原檔 404，無法比對內容是否相同）；但它是教育部官方新聞頁正文明列的下載連結，可視為「官方頁連結的發布副本」。可選：(a) 接受 Drive 為 primary_url；(b) primary_url 改為教育部新聞頁 https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3（官方原頁，HTTP 200，含兩冊介紹與下載連結），Drive 留作檔案出處；(c) 維持未核。由管理者決定。"
+    }
+   },
+   "file": {
+    "sha256": "80d3a0da2ba2cdf51aee571392ce9ff1ff1d2958593d3192538071c34e34eb3c",
+    "pages": 48,
+    "source": "Google Drive uc?export=download（轉址 drive.usercontent.google.com）"
+   },
+   "requests": [
+    {
+     "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3",
+     "utc": "2026-10-10T16:31:29Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 202420
+    },
+    {
+     "url": "https://reurl.cc/pK8bna",
+     "utc": "2026-10-10T16:34:13Z",
+     "http": 200,
+     "curl_exit": 0,
+     "note": "短網址，不跟隨轉址；回應為 reurl 中介頁，頁內目標為 pads 原上傳檔（隨後另以一次 GET 取中介頁內容，約 16:34:14–16Z，未另記秒數）"
+    },
+    {
+     "url": "https://drive.google.com/file/d/1mhyKYJllbljZFhZfKgyaGqh5-MyGcO_t/view?usp=sharing",
+     "utc": "2026-10-10T16:34:33Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 135384
+    },
+    {
+     "url": "https://drive.google.com/uc?export=download&id=1mhyKYJllbljZFhZfKgyaGqh5-MyGcO_t",
+     "utc": "2026-10-10T16:34:43Z",
+     "http": 200,
+     "curl_exit": 0,
+     "effective_url": "https://drive.usercontent.google.com/download?id=1mhyKYJllbljZFhZfKgyaGqh5-MyGcO_t&export=download",
+     "bytes": 21906769
+    },
+    {
+     "url": "https://pads.moe.edu.tw/pads/upload/%E4%B8%AD%E5%B0%8F%E5%AD%B8%E7%94%9F%E6%88%90%E5%BC%8FAI%E4%B9%8B%E5%AD%B8%E7%BF%92%E6%87%89%E7%94%A8%E6%89%8B%E5%86%8A-%E3%80%8A%E9%A7%95%E9%A6%ADAI%EF%BC%8C%E6%B4%9E%E5%AF%9F%E6%9C%AA%E4%BE%86%EF%BC%9A%E6%95%B8%E4%BD%8D%E5%85%AC%E6%B0%91%E7%9A%84%E5%BF%85%E4%BF%AE%E8%AA%B2%E3%80%8Bfor%E5%9C%8B%E9%AB%98%E4%B8%AD1141218.pdf",
+     "utc": "2026-10-10T16:34:24Z",
+     "http": 404,
+     "curl_exit": 0,
+     "bytes": 3212
+    }
+   ],
+   "proposed_changes": [
+    {
+     "field": "primary_url",
+     "option": "(b) 待管理者決定",
+     "value": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3"
+    }
+   ],
+   "note": "題名、機關、國別、首發日、類型 5 欄與原件相符；僅 official_url 待管理者決定，故整體判 unverifiable。若管理者接受 (a) 或 (b)，可改判 match。pads 原上傳檔仍 404（2026-10-10T16:34:23–24Z）。"
+  },
+  {
+   "record_id": "KB-2026-0237",
+   "verdict": "match",
+   "fields": {
+    "title": {
+     "kb": "中小學使用「生成式人工智慧」注意事項2.1（教師、行政人員及家長版）",
+     "found": "第 1 頁標題「中小學使用「生成式人工智慧」注意事項2.1 （教師、行政人員及家長版）」",
+     "ok": true,
+     "listing_title": "中小學使用生成式人工智慧注意事項2.1(教師、行政人員及家長版)"
+    },
+    "issuer": {
+     "kb": "O-TW-MOE",
+     "found": "第 1 頁核定行「臺教資（一）字…號函核定」（教育部資訊及科技教育司文號）；pads 主辦單位教育部資科司",
+     "ok": true
+    },
+    "country": {
+     "kb": "TW",
+     "found": "教育部文件，對象為我國中小學（高級中等以下學校）",
+     "ok": true
+    },
+    "first_pub": {
+     "kb": "2026-02-11",
+     "found": "2026-02-11（日）",
+     "ok": true,
+     "precision": "day",
+     "evidence": [
+      "第 1 頁核定沿革三行：「中華民國113年7月1日臺教資（三）字第1132702614號函核定」「中華民國114年12月23日臺教資（一）字第1142704025號函核定」「中華民國115年2月11日臺教資（一）字第1152700391號函核定」",
+      "2.1 版取最後一行核定日 115-02-11"
+     ]
+    },
+    "type": {
+     "kb": "official_guidance",
+     "found": "注意事項（指引性質）",
+     "ok": true
+    },
+    "official_url": {
+     "kb": "https://pads.moe.edu.tw/download_file.php?file=_upload_b72bd6a6bf0bb8cb0c84e7ab8b5e4f79.pdf&old=upload",
+     "found": "pads.moe.edu.tw 下載檔；資料下載頁 title_id=1917 列出此檔",
+     "ok": true
+    }
+   },
+   "file": {
+    "sha256": "54cf1d11f4a83e25e2c51b2165af923807969580376d4bc95958f1c0c728aa54",
+    "pages": 7
+   },
+   "requests": [
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_b72bd6a6bf0bb8cb0c84e7ab8b5e4f79.pdf&old=upload",
+     "utc": "2026-10-10T16:29:36Z",
+     "http": 200,
+     "curl_exit": 23,
+     "error": "curl: (23) Failure writing output to destination",
+     "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_b72bd6a6bf0bb8cb0c84e7ab8b5e4f79.pdf&old=upload",
+     "utc": "2026-10-10T16:29:56Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 233058
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php?title_id=1917",
+     "utc": "2026-10-10T16:32:06Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 1242
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php",
+     "utc": "2026-10-10T16:31:27Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 106380
+    }
+   ],
+   "proposed_changes": [],
+   "note": "前兩行核定日（113-07-01、114-12-23）為 1.0／2.0 版沿革，不影響 2.1 版首發日。"
+  },
+  {
+   "record_id": "KB-2026-0239",
+   "verdict": "match",
+   "fields": {
+    "title": {
+     "kb": "115年中小學教師數位與AI教學指引",
+     "found": "封面「115年 … 中小學教師 數位與AI教學指引」",
+     "ok": true,
+     "listing_title": "【NEW】115年教師數位與AI教學指引"
+    },
+    "issuer": {
+     "kb": "O-TW-MOE",
+     "found": "封面英文「The Ministry of Education」；「教育部部長 謹識」部長序",
+     "ok": true
+    },
+    "country": {
+     "kb": "TW",
+     "found": "教育部文件，對象為我國中小學（高級中等以下學校）",
+     "ok": true
+    },
+    "first_pub": {
+     "kb": "2026-09",
+     "found": "2026-09（月）",
+     "ok": true,
+     "precision": "month",
+     "evidence": [
+      "無核定日字樣（全文檢索「核定」0 筆）",
+      "封面：「2026 年 9 月」",
+      "部長序與研發團隊序落款：「2026 年 9 月」（教師、校長、家長指引為「謹識 2026 年 9 月」）",
+      "全文無印到日的發布日"
+     ]
+    },
+    "type": {
+     "kb": "official_guidance",
+     "found": "指引",
+     "ok": true
+    },
+    "official_url": {
+     "kb": "https://pads.moe.edu.tw/download_file.php?file=_upload_0ced2a78cb794f6881c47b0e2148774b.pdf&old=upload",
+     "found": "pads.moe.edu.tw（教育部推動中小學數位學習精進方案／AI人才方舟計畫入口網，主辦單位教育部資訊及科技教育司）下載檔；資料下載頁 https://pads.moe.edu.tw/download2.php?title_id=1781 列出此檔連結",
+     "ok": true
+    }
+   },
+   "file": {
+    "sha256": "0ed2fb270ca040fa7def6d52f3aebe3a27a9eac6e180ddc96e4ae90b042deb30",
+    "pages": 188
+   },
+   "requests": [
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_0ced2a78cb794f6881c47b0e2148774b.pdf&old=upload",
+     "utc": "2026-10-10T16:29:38Z",
+     "http": 200,
+     "curl_exit": 23,
+     "error": "curl: (23) Failure writing output to destination",
+     "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_0ced2a78cb794f6881c47b0e2148774b.pdf&old=upload",
+     "utc": "2026-10-10T16:29:58Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 5248238
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php?title_id=1781",
+     "utc": "2026-10-10T16:31:55Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 2130
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php",
+     "utc": "2026-10-10T16:31:27Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 106380
+    }
+   ],
+   "proposed_changes": [],
+   "note": "pads 檔無網頁層級日期；本文所印月份與紀錄一致。函（115-09-10 臺教資(三)字第1152702499號，見桃園市公告）與 PDF 建立日不採，本輪未重讀。"
+  },
+  {
+   "record_id": "KB-2026-0240",
+   "verdict": "match",
+   "fields": {
+    "title": {
+     "kb": "115年中小學校長數位與AI學習領導指引",
+     "found": "封面「115年 … 中小學校長 數位與AI學習領導指引」",
+     "ok": true,
+     "listing_title": "【NEW】115年中小學校長數位與AI學習領導指引"
+    },
+    "issuer": {
+     "kb": "O-TW-MOE",
+     "found": "封面英文「The Ministry of Education」；版權頁「發行人 … 教育部部長」",
+     "ok": true
+    },
+    "country": {
+     "kb": "TW",
+     "found": "教育部文件，對象為我國中小學（高級中等以下學校）",
+     "ok": true
+    },
+    "first_pub": {
+     "kb": "2026-09",
+     "found": "2026-09（月）",
+     "ok": true,
+     "precision": "month",
+     "evidence": [
+      "無核定日字樣（全文檢索「核定」0 筆）",
+      "封面：「2026 年 9 月」",
+      "部長序與研發團隊序落款：「2026 年 9 月」（教師、校長、家長指引為「謹識 2026 年 9 月」）",
+      "全文無印到日的發布日"
+     ]
+    },
+    "type": {
+     "kb": "official_guidance",
+     "found": "指引",
+     "ok": true
+    },
+    "official_url": {
+     "kb": "https://pads.moe.edu.tw/download_file.php?file=_upload_9ef3962a1a7e371436145702ab24a6b7.pdf&old=upload",
+     "found": "pads.moe.edu.tw（教育部推動中小學數位學習精進方案／AI人才方舟計畫入口網，主辦單位教育部資訊及科技教育司）下載檔；資料下載頁 https://pads.moe.edu.tw/download2.php?title_id=1796 列出此檔連結",
+     "ok": true
+    }
+   },
+   "file": {
+    "sha256": "a518a86468136a566d9c699f30099d0b11e1a387ac25105ce21bb72a1086587f",
+    "pages": 140
+   },
+   "requests": [
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9ef3962a1a7e371436145702ab24a6b7.pdf&old=upload",
+     "utc": "2026-10-10T16:29:39Z",
+     "http": 200,
+     "curl_exit": 23,
+     "error": "curl: (23) Failure writing output to destination",
+     "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9ef3962a1a7e371436145702ab24a6b7.pdf&old=upload",
+     "utc": "2026-10-10T16:30:01Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 4318111
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php?title_id=1796",
+     "utc": "2026-10-10T16:32:03Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 2196
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php",
+     "utc": "2026-10-10T16:31:27Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 106380
+    }
+   ],
+   "proposed_changes": [],
+   "note": "pads 檔無網頁層級日期；本文所印月份與紀錄一致。函（115-09-10 臺教資(三)字第1152702499號，見桃園市公告）與 PDF 建立日不採，本輪未重讀。"
+  },
+  {
+   "record_id": "KB-2026-0241",
+   "verdict": "match",
+   "fields": {
+    "title": {
+     "kb": "115年中小學家長數位與AI學習知能指引",
+     "found": "封面「115年 … 中小學家長 數位與AI學習知能指引」",
+     "ok": true,
+     "listing_title": "【NEW】115年中小學家長數位與AI學習知能指引"
+    },
+    "issuer": {
+     "kb": "O-TW-MOE",
+     "found": "封面英文「The Ministry of Education」；部長序",
+     "ok": true
+    },
+    "country": {
+     "kb": "TW",
+     "found": "教育部文件，對象為我國中小學（高級中等以下學校）",
+     "ok": true
+    },
+    "first_pub": {
+     "kb": "2026-09",
+     "found": "2026-09（月）",
+     "ok": true,
+     "precision": "month",
+     "evidence": [
+      "無核定日字樣（全文檢索「核定」0 筆）",
+      "封面：「2026 年 9 月」",
+      "部長序與研發團隊序落款：「2026 年 9 月」（教師、校長、家長指引為「謹識 2026 年 9 月」）",
+      "全文無印到日的發布日"
+     ]
+    },
+    "type": {
+     "kb": "official_guidance",
+     "found": "指引",
+     "ok": true
+    },
+    "official_url": {
+     "kb": "https://pads.moe.edu.tw/download_file.php?file=_upload_6a9820befef32e7e22a210950196a54f.pdf&old=upload",
+     "found": "pads.moe.edu.tw（教育部推動中小學數位學習精進方案／AI人才方舟計畫入口網，主辦單位教育部資訊及科技教育司）下載檔；資料下載頁 https://pads.moe.edu.tw/download2.php?title_id=1927 列出此檔連結",
+     "ok": true
+    }
+   },
+   "file": {
+    "sha256": "0d1f1af2ffa25ce5980d43c4047dcd917fccdd93c462a1dda3f4a4bea4ff8139",
+    "pages": 114
+   },
+   "requests": [
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_6a9820befef32e7e22a210950196a54f.pdf&old=upload",
+     "utc": "2026-10-10T16:29:41Z",
+     "http": 200,
+     "curl_exit": 23,
+     "error": "curl: (23) Failure writing output to destination",
+     "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_6a9820befef32e7e22a210950196a54f.pdf&old=upload",
+     "utc": "2026-10-10T16:30:03Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 14513319
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php?title_id=1927",
+     "utc": "2026-10-10T16:32:12Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 2197
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php",
+     "utc": "2026-10-10T16:31:27Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 106380
+    }
+   ],
+   "proposed_changes": [],
+   "note": "pads 檔無網頁層級日期；本文所印月份與紀錄一致。函（115-09-10 臺教資(三)字第1152702499號，見桃園市公告）與 PDF 建立日不採，本輪未重讀。"
+  },
+  {
+   "record_id": "KB-2026-0242",
+   "verdict": "match",
+   "fields": {
+    "title": {
+     "kb": "中小學AI之學習應用手冊⸺國小生聰明用AI",
+     "found": "封面「中小學AI之學習應用手冊 國小生 聰明用AI」；書眉「中小學 AI 之學習應用手冊⸺國小生聰明用 AI」",
+     "ok": true,
+     "listing_title": "中小學AI之學習應用手冊 - 國小生聰明用AI"
+    },
+    "issuer": {
+     "kb": "O-TW-MOE",
+     "found": "部長序「教育部特別規劃了三本專為中小學學生設計的學習手冊」",
+     "ok": true
+    },
+    "country": {
+     "kb": "TW",
+     "found": "教育部文件，對象為我國中小學（高級中等以下學校）",
+     "ok": true
+    },
+    "first_pub": {
+     "kb": "2026-09",
+     "found": "2026-09（月）",
+     "ok": true,
+     "precision": "month",
+     "evidence": [
+      "無核定日字樣（全文檢索「核定」0 筆）",
+      "封面：「2026 年 9 月」",
+      "部長序與研發團隊序落款：「2026 年 9 月」（教師、校長、家長指引為「謹識 2026 年 9 月」）",
+      "全文無印到日的發布日"
+     ]
+    },
+    "type": {
+     "kb": "official_guidance",
+     "found": "學生學習手冊（教育部指引類出版品）",
+     "ok": true
+    },
+    "official_url": {
+     "kb": "https://pads.moe.edu.tw/download_file.php?file=_upload_9876e42b654dd2a55c3d2e8a8c055777.pdf&old=upload",
+     "found": "pads.moe.edu.tw（教育部推動中小學數位學習精進方案／AI人才方舟計畫入口網，主辦單位教育部資訊及科技教育司）下載檔；資料下載頁 https://pads.moe.edu.tw/download2.php?title_id=1922 列出此檔連結",
+     "ok": true
+    }
+   },
+   "file": {
+    "sha256": "5c905e992493bf3034963452e01a91561db6ce6e0c6e977990de00ec16f37f5a",
+    "pages": 76
+   },
+   "requests": [
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9876e42b654dd2a55c3d2e8a8c055777.pdf&old=upload",
+     "utc": "2026-10-10T16:29:42Z",
+     "http": 200,
+     "curl_exit": 23,
+     "error": "curl: (23) Failure writing output to destination",
+     "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9876e42b654dd2a55c3d2e8a8c055777.pdf&old=upload",
+     "utc": "2026-10-10T16:30:06Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 260096710
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php?title_id=1922",
+     "utc": "2026-10-10T16:32:09Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 1135
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php",
+     "utc": "2026-10-10T16:31:27Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 106380
+    }
+   ],
+   "proposed_changes": [],
+   "note": "pads 檔無網頁層級日期；本文所印月份與紀錄一致。函（115-09-10 臺教資(三)字第1152702499號，見桃園市公告）與 PDF 建立日不採，本輪未重讀。"
+  },
+  {
+   "record_id": "KB-2026-0243",
+   "verdict": "match",
+   "fields": {
+    "title": {
+     "kb": "中小學AI之學習應用手冊⸺國中生靈活用AI",
+     "found": "封面「中小學AI之學習應用手冊 國中生 靈活用AI」；書眉「中小學 AI 之學習應用手冊⸺國中生靈活用 AI」",
+     "ok": true,
+     "listing_title": "中小學AI之學習應用手冊 - 國中生靈活用AI"
+    },
+    "issuer": {
+     "kb": "O-TW-MOE",
+     "found": "部長序「教育部特別規劃了三本…」",
+     "ok": true
+    },
+    "country": {
+     "kb": "TW",
+     "found": "教育部文件，對象為我國中小學（高級中等以下學校）",
+     "ok": true
+    },
+    "first_pub": {
+     "kb": "2026-09",
+     "found": "2026-09（月）",
+     "ok": true,
+     "precision": "month",
+     "evidence": [
+      "無核定日字樣（全文檢索「核定」0 筆）",
+      "封面：「2026 年 9 月」",
+      "部長序與研發團隊序落款：「2026 年 9 月」（教師、校長、家長指引為「謹識 2026 年 9 月」）",
+      "全文無印到日的發布日"
+     ]
+    },
+    "type": {
+     "kb": "official_guidance",
+     "found": "學生學習手冊（教育部指引類出版品）",
+     "ok": true
+    },
+    "official_url": {
+     "kb": "https://pads.moe.edu.tw/download_file.php?file=_upload_5b6a43258b4c5a769256db9525ccaf81.pdf&old=upload",
+     "found": "pads.moe.edu.tw（教育部推動中小學數位學習精進方案／AI人才方舟計畫入口網，主辦單位教育部資訊及科技教育司）下載檔；資料下載頁 https://pads.moe.edu.tw/download2.php?title_id=1925 列出此檔連結",
+     "ok": true
+    }
+   },
+   "file": {
+    "sha256": "b86f5a731c3178461084e61b65381c9178b52764077e2bba68b80406c0e9edf9",
+    "pages": 107
+   },
+   "requests": [
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_5b6a43258b4c5a769256db9525ccaf81.pdf&old=upload",
+     "utc": "2026-10-10T16:29:43Z",
+     "http": 200,
+     "curl_exit": 23,
+     "error": "curl: (23) Failure writing output to destination",
+     "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_5b6a43258b4c5a769256db9525ccaf81.pdf&old=upload",
+     "utc": "2026-10-10T16:30:23Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 86918756
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php?title_id=1925",
+     "utc": "2026-10-10T16:32:10Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 1135
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php",
+     "utc": "2026-10-10T16:31:27Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 106380
+    }
+   ],
+   "proposed_changes": [],
+   "note": "pads 檔無網頁層級日期；本文所印月份與紀錄一致。函（115-09-10 臺教資(三)字第1152702499號，見桃園市公告）與 PDF 建立日不採，本輪未重讀。"
+  },
+  {
+   "record_id": "KB-2026-0244",
+   "verdict": "match",
+   "fields": {
+    "title": {
+     "kb": "中小學AI之學習應用手冊⸺高中生智慧駕馭AI",
+     "found": "封面「中小學AI之學習應用手冊 高中生 智慧駕馭AI」；書眉「中小學 AI 之學習應用手冊⸺高中生智慧駕馭 AI」",
+     "ok": true,
+     "listing_title": "中小學AI之學習應用手冊 - 高中生智慧駕馭AI"
+    },
+    "issuer": {
+     "kb": "O-TW-MOE",
+     "found": "部長序「教育部特別規劃了三本…」",
+     "ok": true
+    },
+    "country": {
+     "kb": "TW",
+     "found": "教育部文件，對象為我國中小學（高級中等以下學校）",
+     "ok": true
+    },
+    "first_pub": {
+     "kb": "2026-09",
+     "found": "2026-09（月）",
+     "ok": true,
+     "precision": "month",
+     "evidence": [
+      "無核定日字樣（全文檢索「核定」0 筆）",
+      "封面：「2026 年 9 月」",
+      "部長序與研發團隊序落款：「2026 年 9 月」（教師、校長、家長指引為「謹識 2026 年 9 月」）",
+      "全文無印到日的發布日"
+     ]
+    },
+    "type": {
+     "kb": "official_guidance",
+     "found": "學生學習手冊（教育部指引類出版品）",
+     "ok": true
+    },
+    "official_url": {
+     "kb": "https://pads.moe.edu.tw/download_file.php?file=_upload_a0565d2acdb121966a8793f628cff453.pdf&old=upload",
+     "found": "pads.moe.edu.tw（教育部推動中小學數位學習精進方案／AI人才方舟計畫入口網，主辦單位教育部資訊及科技教育司）下載檔；資料下載頁 https://pads.moe.edu.tw/download2.php?title_id=1926 列出此檔連結",
+     "ok": true
+    }
+   },
+   "file": {
+    "sha256": "a63486b5162b5e3e8a25771f971ca7d2a8618a9034e0746113a7795817a59f51",
+    "pages": 126
+   },
+   "requests": [
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_a0565d2acdb121966a8793f628cff453.pdf&old=upload",
+     "utc": "2026-10-10T16:29:45Z",
+     "http": 200,
+     "curl_exit": 23,
+     "error": "curl: (23) Failure writing output to destination",
+     "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_a0565d2acdb121966a8793f628cff453.pdf&old=upload",
+     "utc": "2026-10-10T16:30:31Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 188419599
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php?title_id=1926",
+     "utc": "2026-10-10T16:32:11Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 1147
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php",
+     "utc": "2026-10-10T16:31:27Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 106380
+    }
+   ],
+   "proposed_changes": [],
+   "note": "pads 檔無網頁層級日期；本文所印月份與紀錄一致。函（115-09-10 臺教資(三)字第1152702499號，見桃園市公告）與 PDF 建立日不採，本輪未重讀。"
+  },
+  {
+   "record_id": "KB-2026-0259",
+   "verdict": "unverifiable",
+   "fields": {
+    "title": {
+     "kb": "高級中等以下學校人工智慧使用和學習指引",
+     "found": "第 1 頁標題「高級中等以下學校人工智慧使用和學習指引」",
+     "ok": true
+    },
+    "issuer": {
+     "kb": "O-TW-MOE",
+     "found": "第 1 頁核定行「臺教資（一）字第 1152701618 號函核定」；前言「本部參酌國外經驗…」",
+     "ok": true
+    },
+    "country": {
+     "kb": "TW",
+     "found": "教育部文件，對象為我國中小學（高級中等以下學校）",
+     "ok": true
+    },
+    "first_pub": {
+     "kb": "2026-06-05",
+     "found": "2026-06-05（日）",
+     "ok": true,
+     "precision": "day",
+     "evidence": [
+      "第 1 頁：「中華民國 115 年 6 月 5 日臺教資（一）字第 1152701618 號函核定」",
+      "核定日印在文件本身；但文件取自縣府轉載，非教育部原件"
+     ]
+    },
+    "type": {
+     "kb": "official_guidance",
+     "found": "指引",
+     "ok": true
+    },
+    "official_url": {
+     "kb": "https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf",
+     "found": "新竹縣教育研究發展暨網路中心轉載（hcc.edu.tw），非教育部原頁；HTTP 200，333,083 bytes，15 頁，SHA-256 與已知值相同",
+     "ok": false
+    }
+   },
+   "file": {
+    "sha256": "72a5d1d2a4e498ec9754d2ae9ed1eec93944ab58c6cc9913331931e5b2bb0b74",
+    "sha256_matches_known": true,
+    "pages": 15
+   },
+   "moe_original_search": [
+    "pads.moe.edu.tw/download.php 與 download2.php（含 17 個 title_id 子清單）：無此指引",
+    "www.edu.tw 即時新聞列表（PageSize=400，含 115-06～07）：無此指引新聞；115-07-07 資科司新聞未提及",
+    "www.edu.tw/Search.aspx：404（站內搜尋路徑不可用）",
+    "k12ea.gov.tw 新聞列表關鍵字「人工智慧使用和學習指引」：無結果",
+    "depart.moe.edu.tw/ED2700（資科司）首頁、資料下載、電子布告欄：無此指引",
+    "WebSearch（僅找線索，不作依據）：只見學校轉載；一則摘要稱 pads download.php 列有此文件，實際讀取未見"
+   ],
+   "requests": [
+    {
+     "url": "https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf",
+     "utc": "2026-10-10T16:35:21Z",
+     "http": null,
+     "curl_exit": 35,
+     "error": "curl: (35) Recv failure: Connection reset by peer",
+     "note": "connection reset（agent proxy 回報 ws_closed_mid_exchange），之後重試成功"
+    },
+    {
+     "url": "https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf",
+     "utc": "2026-10-10T16:35:39Z",
+     "http": null,
+     "curl_exit": 35,
+     "error": "curl: (35) Recv failure: Connection reset by peer",
+     "note": "connection reset（agent proxy 回報 ws_closed_mid_exchange），之後重試成功"
+    },
+    {
+     "url": "https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf",
+     "utc": "2026-10-10T16:35:51Z",
+     "http": null,
+     "curl_exit": 35,
+     "error": "curl: (35) Recv failure: Connection reset by peer",
+     "note": "connection reset（agent proxy 回報 ws_closed_mid_exchange），之後重試成功"
+    },
+    {
+     "url": "https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf",
+     "utc": "2026-10-10T16:35:59Z",
+     "http": null,
+     "curl_exit": 35,
+     "error": "curl: (35) Recv failure: Connection reset by peer",
+     "note": "connection reset（agent proxy 回報 ws_closed_mid_exchange），之後重試成功"
+    },
+    {
+     "url": "https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf",
+     "utc": "2026-10-10T16:36:26Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 333083
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download2.php",
+     "utc": "2026-10-10T16:31:27Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 106380
+    },
+    {
+     "url": "https://www.edu.tw/Search.aspx?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%BD%BF%E7%94%A8%E5%92%8C%E5%AD%B8%E7%BF%92%E6%8C%87%E5%BC%95",
+     "utc": "2026-10-10T16:32:27Z",
+     "http": 404,
+     "curl_exit": 0,
+     "effective_url": "https://www.edu.tw/Error.aspx?aspxerrorpath=/Search.aspx",
+     "bytes": 2261
+    },
+    {
+     "url": "https://www.k12ea.gov.tw/Tw/News/K12eaNewsLlist?filter=9F92BBB7-0251-4CB7-BF06-82385FD996A0&Keywords=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%BD%BF%E7%94%A8%E5%92%8C%E5%AD%B8%E7%BF%92%E6%8C%87%E5%BC%95",
+     "utc": "2026-10-10T16:32:29Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 94004
+    },
+    {
+     "url": "https://pads.moe.edu.tw/download.php",
+     "utc": "2026-10-10T16:32:53Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 141405
+    },
+    {
+     "url": "https://www.edu.tw/News.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&page=1&PageSize=400",
+     "utc": "2026-10-10T16:33:05Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 688682
+    },
+    {
+     "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=C0D574474736A627",
+     "utc": "2026-10-10T16:33:20Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 200093
+    },
+    {
+     "url": "https://depart.moe.edu.tw/ED2700/",
+     "utc": "2026-10-10T16:33:33Z",
+     "http": 200,
+     "curl_exit": 0,
+     "effective_url": "https://depart.moe.edu.tw/ED2700/Default.aspx",
+     "bytes": 175621
+    },
+    {
+     "url": "https://depart.moe.edu.tw/ED2700/News.aspx?n=F84C9B045D336AF4&sms=BFD0035AFA4CEA76&page=1&PageSize=200",
+     "utc": "2026-10-10T16:33:42Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 265508
+    },
+    {
+     "url": "https://depart.moe.edu.tw/ED2700/News.aspx?n=A1E30194B1C3ACDF&sms=15F99BDCA5F9F595&page=1&PageSize=200",
+     "utc": "2026-10-10T16:33:45Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 345649
+    },
+    {
+     "url": "https://depart.moe.edu.tw/ED2700/Content_List.aspx?n=21B27E3988D685F8",
+     "utc": "2026-10-10T16:33:50Z",
+     "http": 200,
+     "curl_exit": 0,
+     "bytes": 165793
+    }
+   ],
+   "proposed_changes": [],
+   "note": "未找到教育部原件（edu.tw、pads、k12ea.gov.tw、depart.moe.edu.tw），primary_url 維持縣府轉載，依規則維持未核。文件內容四欄（題名、機關、首發日、類型）與紀錄一致。hcc.edu.tw 前 4 次 connection reset，第 5 次成功。"
+  }
+ ],
+ "all_requests": [
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_642bae440e1fb47c45d377aa6686ad28.pdf&old=upload",
+   "utc": "2026-10-10T16:29:35Z",
+   "http": 200,
+   "curl_exit": 23,
+   "error": "curl: (23) Failure writing output to destination",
+   "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_b72bd6a6bf0bb8cb0c84e7ab8b5e4f79.pdf&old=upload",
+   "utc": "2026-10-10T16:29:36Z",
+   "http": 200,
+   "curl_exit": 23,
+   "error": "curl: (23) Failure writing output to destination",
+   "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_0ced2a78cb794f6881c47b0e2148774b.pdf&old=upload",
+   "utc": "2026-10-10T16:29:38Z",
+   "http": 200,
+   "curl_exit": 23,
+   "error": "curl: (23) Failure writing output to destination",
+   "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9ef3962a1a7e371436145702ab24a6b7.pdf&old=upload",
+   "utc": "2026-10-10T16:29:39Z",
+   "http": 200,
+   "curl_exit": 23,
+   "error": "curl: (23) Failure writing output to destination",
+   "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_6a9820befef32e7e22a210950196a54f.pdf&old=upload",
+   "utc": "2026-10-10T16:29:41Z",
+   "http": 200,
+   "curl_exit": 23,
+   "error": "curl: (23) Failure writing output to destination",
+   "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9876e42b654dd2a55c3d2e8a8c055777.pdf&old=upload",
+   "utc": "2026-10-10T16:29:42Z",
+   "http": 200,
+   "curl_exit": 23,
+   "error": "curl: (23) Failure writing output to destination",
+   "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_5b6a43258b4c5a769256db9525ccaf81.pdf&old=upload",
+   "utc": "2026-10-10T16:29:43Z",
+   "http": 200,
+   "curl_exit": 23,
+   "error": "curl: (23) Failure writing output to destination",
+   "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_a0565d2acdb121966a8793f628cff453.pdf&old=upload",
+   "utc": "2026-10-10T16:29:45Z",
+   "http": 200,
+   "curl_exit": 23,
+   "error": "curl: (23) Failure writing output to destination",
+   "note": "curl 寫檔失敗（輸出目錄路徑錯誤），伺服器回應 200 但未存檔；已於數秒後重抓"
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_642bae440e1fb47c45d377aa6686ad28.pdf&old=upload",
+   "utc": "2026-10-10T16:29:52Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 6649482
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_b72bd6a6bf0bb8cb0c84e7ab8b5e4f79.pdf&old=upload",
+   "utc": "2026-10-10T16:29:56Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 233058
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_0ced2a78cb794f6881c47b0e2148774b.pdf&old=upload",
+   "utc": "2026-10-10T16:29:58Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 5248238
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9ef3962a1a7e371436145702ab24a6b7.pdf&old=upload",
+   "utc": "2026-10-10T16:30:01Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 4318111
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_6a9820befef32e7e22a210950196a54f.pdf&old=upload",
+   "utc": "2026-10-10T16:30:03Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 14513319
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_9876e42b654dd2a55c3d2e8a8c055777.pdf&old=upload",
+   "utc": "2026-10-10T16:30:06Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 260096710
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_5b6a43258b4c5a769256db9525ccaf81.pdf&old=upload",
+   "utc": "2026-10-10T16:30:23Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 86918756
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download_file.php?file=_upload_a0565d2acdb121966a8793f628cff453.pdf&old=upload",
+   "utc": "2026-10-10T16:30:31Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 188419599
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php",
+   "utc": "2026-10-10T16:31:27Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 106380
+  },
+  {
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3",
+   "utc": "2026-10-10T16:31:29Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 202420
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1781",
+   "utc": "2026-10-10T16:31:55Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 2130
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1783",
+   "utc": "2026-10-10T16:31:57Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 13525
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1785",
+   "utc": "2026-10-10T16:31:59Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 6899
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1792",
+   "utc": "2026-10-10T16:32:00Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 3613
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1794",
+   "utc": "2026-10-10T16:32:01Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 2473
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1796",
+   "utc": "2026-10-10T16:32:03Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 2196
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1877",
+   "utc": "2026-10-10T16:32:03Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 3964
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1886",
+   "utc": "2026-10-10T16:32:04Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 2187
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1917",
+   "utc": "2026-10-10T16:32:06Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 1242
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1918",
+   "utc": "2026-10-10T16:32:07Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 1151
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1922",
+   "utc": "2026-10-10T16:32:09Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 1135
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1925",
+   "utc": "2026-10-10T16:32:10Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 1135
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1926",
+   "utc": "2026-10-10T16:32:11Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 1147
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1927",
+   "utc": "2026-10-10T16:32:12Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 2197
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1939",
+   "utc": "2026-10-10T16:32:13Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 4226
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1946",
+   "utc": "2026-10-10T16:32:14Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 1171
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download2.php?title_id=1966",
+   "utc": "2026-10-10T16:32:15Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 1576
+  },
+  {
+   "url": "https://www.edu.tw/Search.aspx?q=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%BD%BF%E7%94%A8%E5%92%8C%E5%AD%B8%E7%BF%92%E6%8C%87%E5%BC%95",
+   "utc": "2026-10-10T16:32:27Z",
+   "http": 404,
+   "curl_exit": 0,
+   "effective_url": "https://www.edu.tw/Error.aspx?aspxerrorpath=/Search.aspx",
+   "bytes": 2261
+  },
+  {
+   "url": "https://www.k12ea.gov.tw/Tw/News/K12eaNewsLlist?filter=9F92BBB7-0251-4CB7-BF06-82385FD996A0&Keywords=%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7%E4%BD%BF%E7%94%A8%E5%92%8C%E5%AD%B8%E7%BF%92%E6%8C%87%E5%BC%95",
+   "utc": "2026-10-10T16:32:29Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 94004
+  },
+  {
+   "url": "https://pads.moe.edu.tw/download.php",
+   "utc": "2026-10-10T16:32:53Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 141405
+  },
+  {
+   "url": "https://www.edu.tw/News.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&page=1&PageSize=400",
+   "utc": "2026-10-10T16:33:05Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 688682
+  },
+  {
+   "url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=C0D574474736A627",
+   "utc": "2026-10-10T16:33:20Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 200093
+  },
+  {
+   "url": "https://depart.moe.edu.tw/ED2700/",
+   "utc": "2026-10-10T16:33:33Z",
+   "http": 200,
+   "curl_exit": 0,
+   "effective_url": "https://depart.moe.edu.tw/ED2700/Default.aspx",
+   "bytes": 175621
+  },
+  {
+   "url": "https://depart.moe.edu.tw/ED2700/News.aspx?n=F84C9B045D336AF4&sms=BFD0035AFA4CEA76&page=1&PageSize=200",
+   "utc": "2026-10-10T16:33:42Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 265508
+  },
+  {
+   "url": "https://depart.moe.edu.tw/ED2700/News.aspx?n=A1E30194B1C3ACDF&sms=15F99BDCA5F9F595&page=1&PageSize=200",
+   "utc": "2026-10-10T16:33:45Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 345649
+  },
+  {
+   "url": "https://depart.moe.edu.tw/ED2700/Content_List.aspx?n=21B27E3988D685F8",
+   "utc": "2026-10-10T16:33:50Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 165793
+  },
+  {
+   "url": "https://reurl.cc/bNeoZv",
+   "utc": "2026-10-10T16:34:12Z",
+   "http": 200,
+   "curl_exit": 0,
+   "note": "短網址，不跟隨轉址；回應為 reurl 中介頁，頁內目標為 pads 原上傳檔（隨後另以一次 GET 取中介頁內容，約 16:34:14–16Z，未另記秒數）"
+  },
+  {
+   "url": "https://reurl.cc/pK8bna",
+   "utc": "2026-10-10T16:34:13Z",
+   "http": 200,
+   "curl_exit": 0,
+   "note": "短網址，不跟隨轉址；回應為 reurl 中介頁，頁內目標為 pads 原上傳檔（隨後另以一次 GET 取中介頁內容，約 16:34:14–16Z，未另記秒數）"
+  },
+  {
+   "url": "https://pads.moe.edu.tw/pads/upload/%E4%B8%AD%E5%B0%8F%E5%AD%B8%E7%94%9F%E6%88%90%E5%BC%8FAI%E4%B9%8B%E5%AD%B8%E7%BF%92%E6%87%89%E7%94%A8%E6%89%8B%E5%86%8A-%E3%80%8A%E6%88%91%E5%92%8CAI%E4%B8%80%E8%B5%B7%E5%AD%B8%E3%80%8Bfor%E5%9C%8B%E5%B0%8F1141218.pdf",
+   "utc": "2026-10-10T16:34:23Z",
+   "http": 404,
+   "curl_exit": 0,
+   "bytes": 3212
+  },
+  {
+   "url": "https://pads.moe.edu.tw/pads/upload/%E4%B8%AD%E5%B0%8F%E5%AD%B8%E7%94%9F%E6%88%90%E5%BC%8FAI%E4%B9%8B%E5%AD%B8%E7%BF%92%E6%87%89%E7%94%A8%E6%89%8B%E5%86%8A-%E3%80%8A%E9%A7%95%E9%A6%ADAI%EF%BC%8C%E6%B4%9E%E5%AF%9F%E6%9C%AA%E4%BE%86%EF%BC%9A%E6%95%B8%E4%BD%8D%E5%85%AC%E6%B0%91%E7%9A%84%E5%BF%85%E4%BF%AE%E8%AA%B2%E3%80%8Bfor%E5%9C%8B%E9%AB%98%E4%B8%AD1141218.pdf",
+   "utc": "2026-10-10T16:34:24Z",
+   "http": 404,
+   "curl_exit": 0,
+   "bytes": 3212
+  },
+  {
+   "url": "https://drive.google.com/file/d/1tb7TTT1z-VAqe1Ae9TCiCMb9q6K8KtM6/view?usp=sharing",
+   "utc": "2026-10-10T16:34:32Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 135091
+  },
+  {
+   "url": "https://drive.google.com/file/d/1mhyKYJllbljZFhZfKgyaGqh5-MyGcO_t/view?usp=sharing",
+   "utc": "2026-10-10T16:34:33Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 135384
+  },
+  {
+   "url": "https://drive.google.com/uc?export=download&id=1tb7TTT1z-VAqe1Ae9TCiCMb9q6K8KtM6",
+   "utc": "2026-10-10T16:34:33Z",
+   "http": 200,
+   "curl_exit": 0,
+   "effective_url": "https://drive.usercontent.google.com/download?id=1tb7TTT1z-VAqe1Ae9TCiCMb9q6K8KtM6&export=download",
+   "bytes": 32188647
+  },
+  {
+   "url": "https://drive.google.com/uc?export=download&id=1mhyKYJllbljZFhZfKgyaGqh5-MyGcO_t",
+   "utc": "2026-10-10T16:34:43Z",
+   "http": 200,
+   "curl_exit": 0,
+   "effective_url": "https://drive.usercontent.google.com/download?id=1mhyKYJllbljZFhZfKgyaGqh5-MyGcO_t&export=download",
+   "bytes": 21906769
+  },
+  {
+   "url": "https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf",
+   "utc": "2026-10-10T16:35:21Z",
+   "http": null,
+   "curl_exit": 35,
+   "error": "curl: (35) Recv failure: Connection reset by peer",
+   "note": "connection reset（agent proxy 回報 ws_closed_mid_exchange），之後重試成功"
+  },
+  {
+   "url": "https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf",
+   "utc": "2026-10-10T16:35:39Z",
+   "http": null,
+   "curl_exit": 35,
+   "error": "curl: (35) Recv failure: Connection reset by peer",
+   "note": "connection reset（agent proxy 回報 ws_closed_mid_exchange），之後重試成功"
+  },
+  {
+   "url": "https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf",
+   "utc": "2026-10-10T16:35:51Z",
+   "http": null,
+   "curl_exit": 35,
+   "error": "curl: (35) Recv failure: Connection reset by peer",
+   "note": "connection reset（agent proxy 回報 ws_closed_mid_exchange），之後重試成功"
+  },
+  {
+   "url": "https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf",
+   "utc": "2026-10-10T16:35:59Z",
+   "http": null,
+   "curl_exit": 35,
+   "error": "curl: (35) Recv failure: Connection reset by peer",
+   "note": "connection reset（agent proxy 回報 ws_closed_mid_exchange），之後重試成功"
+  },
+  {
+   "url": "https://www.hcc.edu.tw/var/file/1/1001/img/2469/687336052.pdf",
+   "utc": "2026-10-10T16:36:26Z",
+   "http": 200,
+   "curl_exit": 0,
+   "bytes": 333083
+  }
+ ]
+}
