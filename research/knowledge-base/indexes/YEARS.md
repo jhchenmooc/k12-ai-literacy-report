@@ -175,8 +175,6 @@
 | KB-2025-0116 — [Generative AI + AR: a novel embodied conversational agent in an interactive learning environment](https://doi.org/10.1080/10494820.2025.2589942) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0117 — [The Effects of Artificial Intelligence-Assisted Creative Writing on Students’ Writing Motivation, Writing Anxiety, and Creative Writing Skills](https://doi.org/10.1177/07356331251409998) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0118 — [Unveiling teacher identity development: A case study of AI curriculum implementation in a rural middle school computer science class](https://doi.org/10.1016/j.tate.2025.105032) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0119 — [Moral grounding before algorithms: a cross-cultural critique of AI education in schools](https://doi.org/10.1007/s00146-025-02749-1) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0120 — [Shaping the future of education: school principals’ views on AI, big data and robot teachers](https://doi.org/10.1007/s00146-025-02570-w) | journal_article | 未知 | discovered_unverified |
 
 ## 2026｜first_publication
 
@@ -224,6 +222,8 @@
 
 | 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
 |---|---|---|---|
+| KB-2025-0119 — [Moral grounding before algorithms: a cross-cultural critique of AI education in schools](https://doi.org/10.1007/s00146-025-02749-1) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0120 — [Shaping the future of education: school principals’ views on AI, big data and robot teachers](https://doi.org/10.1007/s00146-025-02570-w) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0020 — [Design of a science integrated secondary school AI literacy curriculum: A youth & AI expert guided design-based research approach](https://doi.org/10.1016/j.caeai.2026.100552) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0021 — [Potential risks of generative artificial intelligence integration into K-12 education: A scoping review](https://doi.org/10.1016/j.caeai.2026.100561) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0022 — [Pedagogy first, technology second: Cross-level relationships between teacher professional knowledge and student learning in artificial intelligence (AI) education](https://doi.org/10.1016/j.caeai.2026.100564) | journal_article | 未知 | discovered_unverified |
