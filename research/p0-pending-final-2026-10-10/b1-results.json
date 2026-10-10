@@ -1,0 +1,4748 @@
+{
+ "note": "B1 待判 57 件＋新線索 2 件重篩（2026-10-10）。同一模型判讀，不是獨立審閱。所有請求未帶 email／mailto／key，未繞過驗證頁，未停用 TLS 驗證。population_evidence 為 40 字以內短引文；不含摘要全文、作者姓名或 email。",
+ "count": 59,
+ "items": [
+  {
+   "doi": "10.1016/j.tate.2025.105286",
+   "title": "ChatGPT in school mathematics education: A systematic review of opportunities, challenges, and pedagogical implications",
+   "venue_source_id": "J1 / J20 / Teaching and Teacher Education",
+   "previous_reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.14）：ChatGPT於學校數學教育的系統性回顧；只寫school，未列學段",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1016/j.tate.2025.105286",
+     "http": "200",
+     "utc": "2026-10-10T10:50:23Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1016/j.tate.2025.105286",
+     "http": "200",
+     "utc": "2026-10-10T10:50:25Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.tate.2025.105286?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:53:52Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1016/j.tate.2025.105286",
+     "http": "200",
+     "utc": "2026-10-10T10:57:39Z",
+     "kind": "landing",
+     "note": "只有轉址頁"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22ChatGPT%20in%20school%20mathematics%20education%20A%20systematic%20review%20of%20opportunities%20challenges%20and%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:00:23Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=ChatGPT%20in%20school%20mathematics%20education%20A%20systematic%20review%20of%20opportunities%20challenges%20and%20pedagogical%20implications&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:00:25Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22ChatGPT%20in%20school%20mathematics%20education%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:00:27Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=ChatGPT%20in%20school%20mathematics%20education&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:00:29Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "none（2026-10-10 管理者瀏覽器整理，見 source-notes）",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN",
+    "T-TEA"
+   ],
+   "ai_lit_note": "ChatGPT 於學校數學教育的系統性回顧，對應 T-TEA「分析AI工具輔助教學的有效性」；本輪未取得新證據。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；ScienceDirect／linkinghub 只回轉址頁；題名搜尋未見作者版本。管理者整理只寫 school，未寫學段。缺：學段。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（Crossref 無 published-online，出版者頁讀不到）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1016/j.tate.2026.105739",
+   "title": "Empowering teachers for artificial intelligence integration in gifted education: Evidence from a professional development program",
+   "venue_source_id": "J1 / J20 / Teaching and Teacher Education",
+   "previous_reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.19）：土耳其BİLSEM資優教育教師AI專業發展（判A）；摘要未寫所服務學段，暫不推定",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1016/j.tate.2026.105739",
+     "http": "200",
+     "utc": "2026-10-10T10:50:27Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1016/j.tate.2026.105739",
+     "http": "200",
+     "utc": "2026-10-10T10:50:29Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1016/j.tate.2026.105739?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:53:56Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1016/j.tate.2026.105739",
+     "http": "200",
+     "utc": "2026-10-10T10:57:41Z",
+     "kind": "landing",
+     "note": "只有轉址頁"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Empowering%20teachers%20for%20artificial%20intelligence%20integration%20in%20gifted%20education%20Evidence%20from%20a%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:00:31Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Empowering%20teachers%20for%20artificial%20intelligence%20integration%20in%20gifted%20education%20Evidence%20from%20a%20professional%20development&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:00:33Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Empowering%20teachers%20for%20artificial%20intelligence%20integration%20in%20gifted%20education%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:00:35Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Empowering%20teachers%20for%20artificial%20intelligence%20integration%20in%20gifted&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:00:37Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "none（2026-10-10 管理者瀏覽器整理）",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD",
+    "T-BAS",
+    "T-ETH"
+   ],
+   "ai_lit_note": "土耳其 BİLSEM 資優教育教師 AI 專業發展，對應 T-PD「評估教師AI素養以規劃專業增能」；本輪無新證據。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；Elsevier 只回轉址頁；未見作者版本。BİLSEM 服務學段摘要未寫，不推定。缺：學段。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（Crossref 無 published-online，出版者頁讀不到）",
+   "category_suggestion": "K4",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1177/00224871251325073",
+   "title": "Uncovering the Hidden Curriculum in Generative AI: A Reflective Technology Audit for Teacher Educators",
+   "venue_source_id": "J1 / J21 / Journal of Teacher Education",
+   "previous_reason": "學段不明：研究為 LLM 稽核，“inner-city school” 只是操弄的學生描述；對象只提 teacher education/policy，未明示師資生或中小學",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1177/00224871251325073",
+     "http": "200",
+     "utc": "2026-10-10T10:50:30Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1177/00224871251325073",
+     "http": "200",
+     "utc": "2026-10-10T10:50:32Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1177/00224871251325073?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:00Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1177/00224871251325073",
+     "http": "403",
+     "utc": "2026-10-10T10:57:43Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Uncovering%20the%20Hidden%20Curriculum%20in%20Generative%20AI%20A%20Reflective%20Technology%20Audit%20for%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:00:38Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Uncovering%20the%20Hidden%20Curriculum%20in%20Generative%20AI%20A%20Reflective%20Technology%20Audit%20for%20Teacher%20Educators&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:00:41Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Uncovering%20the%20Hidden%20Curriculum%20in%20Generative%20AI%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:00:43Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Uncovering%20the%20Hidden%20Curriculum%20in%20Generative%20AI&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:00:45Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "crossref／openalex",
+   "population": "unclear",
+   "population_evidence": "\"implications of these findings for teacher education, policy, and research\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH"
+   ],
+   "ai_lit_note": "LLM 評分偏誤稽核，對應 T-ETH「辨識AI風險與安全防範」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "摘要不變；SAGE 403。ERIC（EJ1469405）索引層級標 Elementary Secondary Education，但這是 ERIC 索引者指派，不是作者或出版者陳述，依規則不據以判學段。缺：作者明示的對象學段。",
+   "first_public_date": "2025-03-24",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "ERIC 索引層級為 Elementary Secondary Education，可供管理者參考"
+  },
+  {
+   "doi": "10.1177/00224871251325083",
+   "title": "AI Literacy in Teacher Education: Empowering Educators Through Critical Co-Discovery",
+   "venue_source_id": "J1 / J21",
+   "previous_reason": "整合者改回待判：摘要只寫 educators，看不出是職前還是在職（integration.md）。子代理原理由：依「teacher education = 師培」規則判 teacher_ed；摘要寫 teacher education program 中的 AIEd 課程；但參與者只稱 educators，未說明是否含在職教師，列邊界供管理者覆核",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1177/00224871251325083",
+     "http": "200",
+     "utc": "2026-10-10T10:50:33Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1177/00224871251325083",
+     "http": "429",
+     "utc": "2026-10-10T10:50:35Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1177/00224871251325083?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:04Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1177/00224871251325083",
+     "http": "403",
+     "utc": "2026-10-10T10:57:45Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22AI%20Literacy%20in%20Teacher%20Education%20Empowering%20Educators%20Through%20Critical%20Co-Discovery%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:00:46Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=AI%20Literacy%20in%20Teacher%20Education%20Empowering%20Educators%20Through%20Critical%20Co-Discovery&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:00:48Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22AI%20Literacy%20in%20Teacher%20Education%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:00:50Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=AI%20Literacy%20in%20Teacher%20Education&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:00:52Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1177/00224871251325083",
+     "http": "200",
+     "utc": "2026-10-10T11:13:05Z",
+     "kind": "crossref_retry"
+    }
+   ],
+   "abstract_source": "crossref（本輪重查取得）／openalex",
+   "population": "unclear",
+   "population_evidence": "\"implemented a critical co-discovery approach within an online AI in Education (AIEd) course to enhance educators’ AI literacy\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS",
+    "T-ETH",
+    "T-PD"
+   ],
+   "ai_lit_note": "以批判共同探索提升教育工作者 AI 素養，對應 T-BAS「理解AI的數據與運作」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "整合者改回待判的理由（educators 未分職前／在職）仍成立；SAGE 403。ERIC（EJ1469378）索引層級標 Higher Education／Postsecondary，屬索引者指派，不據以判定。缺：參與者身分。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（Crossref 無 published-online，出版者頁讀不到）",
+   "category_suggestion": "K4",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "ERIC 索引層級偏向 teacher_ed／higher_ed，可供管理者參考"
+  },
+  {
+   "doi": "10.1007/s00146-025-02609-y",
+   "title": "Where are the children? The missing piece of AI ethics",
+   "venue_source_id": "J1 / J24 / AI &amp; SOCIETY",
+   "previous_reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.27）：未取得摘要或正文",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1007/s00146-025-02609-y",
+     "http": "200",
+     "utc": "2026-10-10T10:50:36Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1007/s00146-025-02609-y",
+     "http": "200",
+     "utc": "2026-10-10T10:50:38Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s00146-025-02609-y?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:08Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1007/s00146-025-02609-y",
+     "http": "200",
+     "utc": "2026-10-10T10:57:46Z",
+     "kind": "landing",
+     "note": "Springer JS Client Challenge 頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Where%20are%20the%20children%3F%20The%20missing%20piece%20of%20AI%20ethics%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:00:54Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Where%20are%20the%20children%3F%20The%20missing%20piece%20of%20AI%20ethics&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "400",
+     "utc": "2026-10-10T11:00:56Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Where%20are%20the%20children%3F%20The%20missing%20piece%20of%20AI%20ethics%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:00:58Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Where%20are%20the%20children%3F%20The%20missing%20piece%20of&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:00:59Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；Springer 頁本輪回 JS「Client Challenge」頁（未繞過）；題名搜尋（arXiv、OSF、ERIC、OpenAlex）未見其他版本。缺：摘要與學段。",
+   "first_public_date": "2025-09-19",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": null,
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1007/s00146-025-02606-1",
+   "title": "Curiosity killed? Blame schools, not AI",
+   "venue_source_id": "J1 / J24 / AI &amp; SOCIETY",
+   "previous_reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.28）：未取得摘要或正文",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1007/s00146-025-02606-1",
+     "http": "200",
+     "utc": "2026-10-10T10:50:40Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1007/s00146-025-02606-1",
+     "http": "200",
+     "utc": "2026-10-10T10:50:42Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s00146-025-02606-1?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:11Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1007/s00146-025-02606-1",
+     "http": "200",
+     "utc": "2026-10-10T10:57:48Z",
+     "kind": "landing",
+     "note": "Springer JS Client Challenge 頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Curiosity%20killed%3F%20Blame%20schools%20not%20AI%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:01Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Curiosity%20killed%3F%20Blame%20schools%20not%20AI&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "400",
+     "utc": "2026-10-10T11:01:03Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Curiosity%20killed%3F%20Blame%20schools%2C%20not%20AI%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:01:05Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Curiosity%20killed%3F%20Blame%20schools%2C%20not%20AI&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:07Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；Springer 頁本輪回 JS「Client Challenge」頁（未繞過）；題名搜尋（arXiv、OSF、ERIC、OpenAlex）未見其他版本。缺：摘要與學段。",
+   "first_public_date": "2025-09-19",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": null,
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1007/s00146-026-03227-y",
+   "title": "Epistemia in the classroom: the problem of evidence of understanding in education in the age of generative AI",
+   "venue_source_id": "J1 / J24 / AI &amp; SOCIETY",
+   "previous_reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.29）：生成式AI時代理解證據的理論文章；不限學段",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1007/s00146-026-03227-y",
+     "http": "200",
+     "utc": "2026-10-10T10:50:43Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1007/s00146-026-03227-y",
+     "http": "200",
+     "utc": "2026-10-10T10:50:45Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s00146-026-03227-y?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:15Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1007/s00146-026-03227-y",
+     "http": "200",
+     "utc": "2026-10-10T10:57:49Z",
+     "kind": "landing",
+     "note": "Springer JS Client Challenge 頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Epistemia%20in%20the%20classroom%20the%20problem%20of%20evidence%20of%20understanding%20in%20education%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:09Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Epistemia%20in%20the%20classroom%20the%20problem%20of%20evidence%20of%20understanding%20in%20education%20in%20the&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:01:10Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Epistemia%20in%20the%20classroom%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:01:12Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Epistemia%20in%20the%20classroom&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:14Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://hdl.handle.net/11573/1773212",
+     "http": "200",
+     "utc": "2026-10-10T10:55:03Z",
+     "kind": "repository"
+    }
+   ],
+   "abstract_source": "Sapienza 大學 IRIS 機構典藏（hdl 11573/1773212，submittedVersion 紀錄的 DC.description）",
+   "population": "unclear",
+   "population_evidence": "\"a paradigm shift in education to form future citizens able to navigate technology-mediated societies\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH"
+   ],
+   "ai_lit_note": "生成式 AI 時代以「理解的證據」為題的理論文章，對應 S-ETH「具備對AI的批判思考」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "新證據：機構典藏取得摘要（之前無摘要）。但屬理論文章，六年級學生 Benny 只是 1973 年的例子，沒有界定對象學段。Springer 頁回 Client Challenge。缺：學段。",
+   "first_public_date": "2026-08-04",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1007/s00146-025-02458-9",
+   "title": "Not just a plus: rethinking the “AI + Education” illusion",
+   "venue_source_id": "J1 / J24 / AI &amp; SOCIETY",
+   "previous_reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.31）：未取得摘要或正文",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1007/s00146-025-02458-9",
+     "http": "200",
+     "utc": "2026-10-10T10:50:47Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1007/s00146-025-02458-9",
+     "http": "200",
+     "utc": "2026-10-10T10:50:48Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s00146-025-02458-9?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:19Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1007/s00146-025-02458-9",
+     "http": "200",
+     "utc": "2026-10-10T10:57:51Z",
+     "kind": "landing",
+     "note": "Springer JS Client Challenge 頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Not%20just%20a%20plus%20rethinking%20the%20%E2%80%9CAI%20%2B%20Education%E2%80%9D%20illusion%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:16Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Not%20just%20a%20plus%20rethinking%20the%20%E2%80%9CAI%20%2B%20Education%E2%80%9D%20illusion&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:01:17Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Not%20just%20a%20plus%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:01:19Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Not%20just%20a%20plus&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:21Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "none",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "無摘要，不判內涵（題名僅作線索）。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；Springer 頁本輪回 JS「Client Challenge」頁（未繞過）；題名搜尋（arXiv、OSF、ERIC、OpenAlex）未見其他版本。缺：摘要與學段。",
+   "first_public_date": "2025-07-03",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": null,
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1007/s00146-026-02961-7",
+   "title": "Hard to find, harder to understand: examining transparency in educational generative AI",
+   "venue_source_id": "J1 / J24 / AI &amp; SOCIETY",
+   "previous_reason": "學段不明：只寫 teachers/educators，未明示中小學",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1007/s00146-026-02961-7",
+     "http": "200",
+     "utc": "2026-10-10T10:50:50Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1007/s00146-026-02961-7",
+     "http": "200",
+     "utc": "2026-10-10T10:50:51Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s00146-026-02961-7?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:23Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1007/s00146-026-02961-7",
+     "http": "200",
+     "utc": "2026-10-10T10:57:53Z",
+     "kind": "landing",
+     "note": "Springer JS Client Challenge 頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Hard%20to%20find%20harder%20to%20understand%20examining%20transparency%20in%20educational%20generative%20AI%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:23Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Hard%20to%20find%20harder%20to%20understand%20examining%20transparency%20in%20educational%20generative%20AI&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:01:24Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Hard%20to%20find%2C%20harder%20to%20understand%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:01:26Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Hard%20to%20find%2C%20harder%20to%20understand&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:28Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "crossref／openalex",
+   "population": "unclear",
+   "population_evidence": "\"This document analysis examined the transparency of 20 GenAI tools for teachers\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH",
+    "T-BAS"
+   ],
+   "ai_lit_note": "教師用生成式 AI 工具透明度分析，對應 T-BAS「選用適性適規之AI工具」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "摘要不變，只寫 teachers／educators；Springer 頁回 Client Challenge，讀不到正文。缺：學段。",
+   "first_public_date": "2026-04-11",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K5",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1007/s00146-026-03216-1",
+   "title": "Reflections on the Always-Answering Classroom: AI, Uncertainty, and Pedagogical Silence",
+   "venue_source_id": "J1 / J24 / AI &amp; SOCIETY",
+   "previous_reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.32）：AI隨時回答的課堂之反思評論；未界定學段",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1007/s00146-026-03216-1",
+     "http": "200",
+     "utc": "2026-10-10T10:50:53Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1007/s00146-026-03216-1",
+     "http": "200",
+     "utc": "2026-10-10T10:50:54Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s00146-026-03216-1?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:27Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1007/s00146-026-03216-1",
+     "http": "200",
+     "utc": "2026-10-10T10:57:54Z",
+     "kind": "landing",
+     "note": "Springer JS Client Challenge 頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Reflections%20on%20the%20Always-Answering%20Classroom%20AI%20Uncertainty%20and%20Pedagogical%20Silence%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:30Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Reflections%20on%20the%20Always-Answering%20Classroom%20AI%20Uncertainty%20and%20Pedagogical%20Silence&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:01:31Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Reflections%20on%20the%20Always-Answering%20Classroom%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:01:34Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Reflections%20on%20the%20Always-Answering%20Classroom&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:36Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "none（2026-10-10 管理者瀏覽器整理）",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "「隨時回答的課堂」反思評論，對應 S-LRN「理解AI輔助學習的角色功能」；本輪無新證據。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；Springer 頁回 Client Challenge；未見其他版本。缺：學段。",
+   "first_public_date": "2026-08-13",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1177/14749041261473066",
+   "title": "Turning schools into AI testing grounds and sites of extraction: The strategic selectivities of IOs AI literacy frameworks",
+   "venue_source_id": "J1 / J25 / European Educational Research Journal",
+   "previous_reason": "主題為國際組織 AI 素養框架（A），但摘要只寫 schools/classrooms/students，未明示年級或學段；依現行規則為 unclear。若管理者認可 OECD/EC 框架本身即 K-12，可改 import（K1）",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1177/14749041261473066",
+     "http": "200",
+     "utc": "2026-10-10T10:50:56Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1177/14749041261473066",
+     "http": "200",
+     "utc": "2026-10-10T10:50:57Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1177/14749041261473066?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:30Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1177/14749041261473066",
+     "http": "403",
+     "utc": "2026-10-10T10:57:56Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Turning%20schools%20into%20AI%20testing%20grounds%20and%20sites%20of%20extraction%20The%20strategic%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:37Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Turning%20schools%20into%20AI%20testing%20grounds%20and%20sites%20of%20extraction%20The%20strategic%20selectivities%20of&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:01:39Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Turning%20schools%20into%20AI%20testing%20grounds%20and%20sites%20of%20extraction%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:01:41Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Turning%20schools%20into%20AI%20testing%20grounds%20and%20sites&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:43Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://research.manchester.ac.uk/en/publications/68712290-85ef-4085-8f4a-5ca33126ec20",
+     "http": "200",
+     "utc": "2026-10-10T10:55:06Z",
+     "kind": "repository"
+    }
+   ],
+   "abstract_source": "crossref／openalex；Manchester 大學 Research Explorer（同摘要）",
+   "population": "unclear",
+   "population_evidence": "\"Particularly in the OECD/EU framework, schools become both testing grounds and sites of extraction\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "T-ETH"
+   ],
+   "ai_lit_note": "國際組織 AI 素養框架的批判分析，對應 T-ETH「理解AI運作與倫理原則」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "管理者先前決定待判。本輪新來源（Manchester 典藏）只有同一摘要，沒有新的學段證據，維持待判。SAGE 403。",
+   "first_public_date": "2026-08-18",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K1",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "管理者先前決定待判；無新官方證據"
+  },
+  {
+   "doi": "10.1080/17439884.2025.2517335",
+   "title": "Using ethical scenarios to explore the future of artificial intelligence in primary and secondary education",
+   "venue_source_id": "J1 / J26 / Learning, Media and Technology",
+   "previous_reason": "學段只見於題名（primary and secondary），摘要只寫 schools；且主題是 AIED 工具的倫理預期而非師生 AI 素養，A/C 分界亦屬邊界",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1080/17439884.2025.2517335",
+     "http": "200",
+     "utc": "2026-10-10T10:50:59Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1080/17439884.2025.2517335",
+     "http": "200",
+     "utc": "2026-10-10T10:51:01Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/17439884.2025.2517335?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:34Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1080/17439884.2025.2517335",
+     "http": "403",
+     "utc": "2026-10-10T10:57:57Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Using%20ethical%20scenarios%20to%20explore%20the%20future%20of%20artificial%20intelligence%20in%20primary%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:45Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Using%20ethical%20scenarios%20to%20explore%20the%20future%20of%20artificial%20intelligence%20in%20primary%20and%20secondary&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:01:46Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Using%20ethical%20scenarios%20to%20explore%20the%20future%20of%20artificial%20intelligence%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:01:48Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Using%20ethical%20scenarios%20to%20explore%20the%20future%20of&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:50Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://hal.science/hal-05633615",
+     "http": "200",
+     "utc": "2026-10-10T10:55:09Z",
+     "kind": "repository",
+     "note": "機器人驗證頁（未繞過）"
+    }
+   ],
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "\"may change before they are widely deployed in schools\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH"
+   ],
+   "ai_lit_note": "以情境法預想 AIED 倫理，對應 T-ETH「探究AI問題責任歸屬」；A／C 屬邊界。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "學段只在題名；T&F 403；HAL 典藏版回機器人驗證頁（未繞過）。缺：摘要中的學段，A／C 邊界亦待管理者。",
+   "first_public_date": "2025-06-11",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1080/17439884.2026.2717578",
+   "title": "Structured participation pathways in AI-driven education governance: the case of South Korea’s AI digital textbook initiative",
+   "venue_source_id": "J1 / J26 / Learning, Media and Technology",
+   "previous_reason": "摘要未明寫學校或年級；主題為國家 EdTech 治理參與，是否屬 AI 素養（對象為其他教育關係人）亦為邊界",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1080/17439884.2026.2717578",
+     "http": "200",
+     "utc": "2026-10-10T10:51:02Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1080/17439884.2026.2717578",
+     "http": "200",
+     "utc": "2026-10-10T10:51:04Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/17439884.2026.2717578?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:38Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1080/17439884.2026.2717578",
+     "http": "403",
+     "utc": "2026-10-10T10:57:59Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Structured%20participation%20pathways%20in%20AI-driven%20education%20governance%20the%20case%20of%20South%20Korea%E2%80%99s%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:52Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Structured%20participation%20pathways%20in%20AI-driven%20education%20governance%20the%20case%20of%20South%20Korea%E2%80%99s%20AI%20digital&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:01:53Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Structured%20participation%20pathways%20in%20AI-driven%20education%20governance%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:01:55Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Structured%20participation%20pathways%20in%20AI-driven%20education%20governance&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:57Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "\"traces participation across pilot programs, procurement systems, teacher professional development, and university-based Soft Labs\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS"
+   ],
+   "ai_lit_note": "韓國 AI 數位教科書治理參與，對應 T-BAS「參與AI校園治理部署與決策」；是否屬 AI 素養為邊界。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "摘要不變，未寫學校層級；T&F 403；未見其他版本。",
+   "first_public_date": "2026-08-20",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K5",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1080/17439884.2024.2438933",
+   "title": "Conflicting motives: challenges of generative AI in education",
+   "venue_source_id": "J1 / J26 / Learning, Media and Technology",
+   "previous_reason": "摘要只寫 school development activity 與 students/teachers/principals，未明示學段（瑞典 Sweden 有明寫，若改 import 國別 SE）",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1080/17439884.2024.2438933",
+     "http": "200",
+     "utc": "2026-10-10T10:51:05Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1080/17439884.2024.2438933",
+     "http": "200",
+     "utc": "2026-10-10T10:51:07Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1080/17439884.2024.2438933?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:42Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1080/17439884.2024.2438933",
+     "http": "403",
+     "utc": "2026-10-10T10:58:00Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Conflicting%20motives%20challenges%20of%20generative%20AI%20in%20education%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:01:58Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Conflicting%20motives%20challenges%20of%20generative%20AI%20in%20education&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:02:00Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Conflicting%20motives%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:02:02Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Conflicting%20motives&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:04Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "\"educational actors in a school development activity\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH",
+    "S-ETH"
+   ],
+   "ai_lit_note": "瑞典學校人員如何處理生成式 AI，對應 T-ETH「健全校園AI使用規範」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "摘要只寫 school development activity；T&F 403。ERIC（EJ1482282）索引層級標 Secondary Education，屬索引者指派，不據以判定。缺：作者明示學段。",
+   "first_public_date": "2025-02-12",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "ERIC 索引層級為 Secondary Education，可供管理者參考"
+  },
+  {
+   "doi": "10.1109/tlt.2025.3575030",
+   "title": "Science Education in the Age of Artificial Intelligence: Opportunities, Challenges, and Research",
+   "venue_source_id": "J2 / J27 / IEEE Transactions on Learning Technologies",
+   "previous_reason": "OpenAlex、Crossref、Semantic Scholar 皆無摘要（2026-10-09 重查）；出版者頁 403 不繞過；不以題名判學段；Semantic Scholar 只有 CorpusId，無 arXiv 外部 ID ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.24）：AI與科學教育的論述文章；只寫學校，未界定學段",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1109/tlt.2025.3575030",
+     "http": "200",
+     "utc": "2026-10-10T10:51:08Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1109/tlt.2025.3575030",
+     "http": "200",
+     "utc": "2026-10-10T10:51:10Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/tlt.2025.3575030?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:46Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1109/tlt.2025.3575030",
+     "http": "202",
+     "utc": "2026-10-10T10:58:02Z",
+     "kind": "landing",
+     "note": "IEEE 空白驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Science%20Education%20in%20the%20Age%20of%20Artificial%20Intelligence%20Opportunities%20Challenges%20and%20Research%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:05Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Science%20Education%20in%20the%20Age%20of%20Artificial%20Intelligence%20Opportunities%20Challenges%20and%20Research&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:02:07Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Science%20Education%20in%20the%20Age%20of%20Artificial%20Intelligence%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:02:09Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Science%20Education%20in%20the%20Age%20of%20Artificial%20Intelligence&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:11Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "none（2026-10-10 管理者瀏覽器整理）",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN",
+    "T-TEA"
+   ],
+   "ai_lit_note": "AI 與科學教育論述，對應 S-LRN「應用AI工具強化領域學習」；本輪無新證據。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "本輪仍無摘要：OpenAlex、Crossref、Semantic Scholar 無摘要；IEEE Xplore 回 202 空白驗證頁（未繞過）。缺：學段。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（Crossref 無 published-online，出版者頁讀不到）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3389/feduc.2025.1716353",
+   "title": "Learning with, rather than through, AI: co-designing science education for critical AI literacy",
+   "venue_source_id": "J2 / J29 / Frontiers in Education",
+   "previous_reason": "Frontiers Opinion 類文章無正式摘要；OpenAlex 摘要欄為正文首段，不作為摘要依據；正文首段談課堂中學生使用 ChatGPT 與批判性 AI 素養，題名切合（可能 A：S-ETH/S-LRN），但無正式摘要且未明示學段 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.21）：批判AI素養的科學教育觀點文章；只以高中生物為例，未界定學段",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3389/feduc.2025.1716353",
+     "http": "200",
+     "utc": "2026-10-10T10:51:11Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3389/feduc.2025.1716353",
+     "http": "200",
+     "utc": "2026-10-10T10:51:13Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3389/feduc.2025.1716353?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:50Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3389/feduc.2025.1716353",
+     "http": "200",
+     "utc": "2026-10-10T10:58:04Z",
+     "kind": "landing"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Learning%20with%20rather%20than%20through%20AI%20co-designing%20science%20education%20for%20critical%20AI%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:12Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Learning%20with%20rather%20than%20through%20AI%20co-designing%20science%20education%20for%20critical%20AI%20literacy&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:02:14Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Learning%20with%2C%20rather%20than%20through%2C%20AI%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:02:16Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Learning%20with%2C%20rather%20than%20through%2C%20AI&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:18Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://philarchive.org/rec/KKULWR",
+     "http": "403",
+     "utc": "2026-10-10T10:55:17Z",
+     "kind": "repository"
+    },
+    {
+     "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1716353/full",
+     "http": "200",
+     "utc": "2026-10-10T10:56:40Z",
+     "kind": "publisher_fulltext"
+    }
+   ],
+   "abstract_source": "none（Frontiers OPINION article，無正式摘要；頁面確認文章類型）",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-LRN"
+   ],
+   "ai_lit_note": "批判 AI 素養的科學教育觀點，對應 S-ETH「具備對AI的批判思考」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "Frontiers 頁可讀，確認為 OPINION article、無摘要；PhilArchive 版本 403。依先前處理維持待判。",
+   "first_public_date": "2025-10-30",
+   "first_public_basis": "Frontiers 頁面 Published 30 October 2025（Accepted 17 October 2025 為接受日）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3389/feduc.2026.1792351",
+   "title": "Text features associated with students’ generative AI use: Norwegian teachers’ perspectives",
+   "venue_source_id": "J2 / J29 / Frontiers in Education",
+   "previous_reason": "學段不明：只寫 teachers 與 school writing，未明示年級或中小學",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1792351",
+     "http": "200",
+     "utc": "2026-10-10T10:51:15Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3389/feduc.2026.1792351",
+     "http": "200",
+     "utc": "2026-10-10T10:51:16Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3389/feduc.2026.1792351?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:54Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3389/feduc.2026.1792351",
+     "http": "200",
+     "utc": "2026-10-10T10:58:06Z",
+     "kind": "landing"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Text%20features%20associated%20with%20students%E2%80%99%20generative%20AI%20use%20Norwegian%20teachers%E2%80%99%20perspectives%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:20Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Text%20features%20associated%20with%20students%E2%80%99%20generative%20AI%20use%20Norwegian%20teachers%E2%80%99%20perspectives&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:02:21Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Text%20features%20associated%20with%20students%E2%80%99%20generative%20AI%20use%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:02:23Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Text%20features%20associated%20with%20students%E2%80%99%20generative%20AI%20use&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:24Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1792351/full",
+     "http": "200",
+     "utc": "2026-10-10T10:56:35Z",
+     "kind": "publisher_fulltext"
+    }
+   ],
+   "abstract_source": "crossref／openalex；Frontiers 全文頁（樣本學段）",
+   "population": "k12",
+   "population_evidence": "\"Most subsample participants are secondary school teachers, although 11% of respondents are primary school teachers\"（全文；表 1：High school 54.3%、Junior high 34.9%）",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS",
+    "T-ETH"
+   ],
+   "ai_lit_note": "挪威教師辨識學生寫作中的生成式 AI 特徵，對應 T-BAS「執行監督以檢核AI產出」與 T-ETH「辨識AI風險與安全防範」。",
+   "audience": "k12",
+   "countries": [
+    "NO"
+   ],
+   "new_decision": "import",
+   "reason": "新證據：Frontiers 官方全文頁寫明樣本為高中、國中與小學教師（中小學合計 100%，其中中學約 89%），學段確定為 K-12 在職教師。國別依全文「In Norway, the focus of the current study」。",
+   "first_public_date": "2026-06-03",
+   "first_public_basis": "Frontiers 頁面 Published 03 June 2026（Accepted 11 May 2026 為接受日；Crossref published-online 同為 2026-06-03）",
+   "category_suggestion": "K4",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3389/feduc.2025.1609518",
+   "title": "Homework in the AI era: cheating, challenge, or change?",
+   "venue_source_id": "J2 / J29 / Frontiers in Education",
+   "previous_reason": "Frontiers Opinion 類文章無正式摘要；OpenAlex 摘要欄為正文首段，不作為摘要依據；正文首段只寫 students/young minds 與 homework，未明示學段；無正式摘要 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.23）：AI時代作業的觀點文章；只寫學校，未界定學段",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3389/feduc.2025.1609518",
+     "http": "200",
+     "utc": "2026-10-10T10:51:18Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3389/feduc.2025.1609518",
+     "http": "200",
+     "utc": "2026-10-10T10:51:20Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3389/feduc.2025.1609518?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:54:58Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3389/feduc.2025.1609518",
+     "http": "200",
+     "utc": "2026-10-10T10:58:09Z",
+     "kind": "landing"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Homework%20in%20the%20AI%20era%20cheating%20challenge%20or%20change%3F%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:26Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Homework%20in%20the%20AI%20era%20cheating%20challenge%20or%20change%3F&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "400",
+     "utc": "2026-10-10T11:02:28Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Homework%20in%20the%20AI%20era%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:02:29Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Homework%20in%20the%20AI%20era&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:31Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1609518/full",
+     "http": "200",
+     "utc": "2026-10-10T10:56:43Z",
+     "kind": "publisher_fulltext"
+    }
+   ],
+   "abstract_source": "none（Frontiers OPINION article，無正式摘要）",
+   "population": "unknown",
+   "population_evidence": "",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-LRN"
+   ],
+   "ai_lit_note": "AI 時代作業的觀點，對應 S-ETH「正用AI符合學術誠信」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "Frontiers 頁可讀，確認為 OPINION article、無摘要；依先前處理維持待判。",
+   "first_public_date": "2025-06-18",
+   "first_public_basis": "Frontiers 頁面 Published 18 June 2025（Accepted 04 June 2025 為接受日）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3389/feduc.2026.1790642",
+   "title": "Exploring the IntelligentTPACK gap: a qualitative analysis of teachers’ AI competencies and AI self-reported classroom uses",
+   "venue_source_id": "J2 / J29 / Frontiers in Education",
+   "previous_reason": "內容為 A（AI-TPACK），但摘要只寫 in-service teachers 與 schools，未明示中小學學段；若管理者確認可 import（K2，國別 SK）",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3389/feduc.2026.1790642",
+     "http": "200",
+     "utc": "2026-10-10T10:51:21Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3389/feduc.2026.1790642",
+     "http": "200",
+     "utc": "2026-10-10T10:51:23Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3389/feduc.2026.1790642?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:01Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3389/feduc.2026.1790642",
+     "http": "200",
+     "utc": "2026-10-10T10:58:11Z",
+     "kind": "landing"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Exploring%20the%20IntelligentTPACK%20gap%20a%20qualitative%20analysis%20of%20teachers%E2%80%99%20AI%20competencies%20and%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:33Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Exploring%20the%20IntelligentTPACK%20gap%20a%20qualitative%20analysis%20of%20teachers%E2%80%99%20AI%20competencies%20and%20AI%20self-reported&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:02:35Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Exploring%20the%20IntelligentTPACK%20gap%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:02:36Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Exploring%20the%20IntelligentTPACK%20gap&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:38Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1790642/full",
+     "http": "200",
+     "utc": "2026-10-10T10:56:38Z",
+     "kind": "publisher_fulltext"
+    }
+   ],
+   "abstract_source": "crossref／openalex；Frontiers 全文頁（招募方式與樣本）",
+   "population": "k12",
+   "population_evidence": "\"the survey invitation was distributed by e-mail directly to school principals across Slovak primary and secondary schools\"（全文）",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA",
+    "T-BAS"
+   ],
+   "ai_lit_note": "斯洛伐克在職教師 IntelligentTPACK（AI-TPACK），依準則判 A，對應 T-TEA「整合AI與教學法」與 T-BAS「選用適性適規之AI工具」。",
+   "audience": "k12",
+   "countries": [
+    "SK"
+   ],
+   "new_decision": "import",
+   "reason": "新證據：Frontiers 官方全文頁寫明經由斯洛伐克中小學校長招募在職教師（任教學生年齡 5–10、11–15、15 歲以上），學段為 K-12；含中等職業類科教師，依準則屬 k12。",
+   "first_public_date": "2026-05-07",
+   "first_public_basis": "Frontiers 頁面 Published 07 May 2026（Accepted 30 March 2026 為接受日；Crossref published-online 同為 2026-05-07）",
+   "category_suggestion": "K4",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1007/s44217-025-00924-6",
+   "title": "Landscape of AI literacy in education: approaches, impacts, and challenges for student preparedness—a narrative review",
+   "venue_source_id": "J2 / J32 / Discover Education",
+   "previous_reason": "跨學段回顧（K-12 至高教與專業教育），未陳述以 K-12 為主要對象，依規則為 unclear",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1007/s44217-025-00924-6",
+     "http": "200",
+     "utc": "2026-10-10T10:51:24Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1007/s44217-025-00924-6",
+     "http": "200",
+     "utc": "2026-10-10T10:51:26Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s44217-025-00924-6?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:05Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1007/s44217-025-00924-6",
+     "http": "200",
+     "utc": "2026-10-10T10:58:13Z",
+     "kind": "landing",
+     "note": "Springer JS Client Challenge 頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Landscape%20of%20AI%20literacy%20in%20education%20approaches%20impacts%20and%20challenges%20for%20student%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:40Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Landscape%20of%20AI%20literacy%20in%20education%20approaches%20impacts%20and%20challenges%20for%20student%20preparedness%E2%80%94a%20narrative&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:02:41Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Landscape%20of%20AI%20literacy%20in%20education%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:02:43Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Landscape%20of%20AI%20literacy%20in%20education&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:45Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s44217-025-00924-6",
+     "http": "200",
+     "utc": "2026-10-10T10:56:46Z",
+     "kind": "publisher_fulltext"
+    }
+   ],
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "\"the differing needs of students from K-12 to higher and professional education\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "AI 素養敘事性回顧，對應 S-BAS「理解AI運作原理與限制」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "跨學段、未陳述主要對象；Springer 頁回 Client Challenge，讀不到正文。",
+   "first_public_date": "2025-12-24",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1007/s44217-026-01688-3",
+   "title": "A mixed methods study of the three low trap in high school information technology teaching in underdeveloped China in the AI era",
+   "venue_source_id": "J2 / J32 / Discover Education",
+   "previous_reason": "學段明示，但 AI 素養歸類不明：「AI education settings」語意模糊，構念為一般資訊科技教學條件；BERT 情緒分析僅為研究方法",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1007/s44217-026-01688-3",
+     "http": "200",
+     "utc": "2026-10-10T10:51:27Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1007/s44217-026-01688-3",
+     "http": "200",
+     "utc": "2026-10-10T10:51:29Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1007/s44217-026-01688-3?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:09Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1007/s44217-026-01688-3",
+     "http": "200",
+     "utc": "2026-10-10T10:58:15Z",
+     "kind": "landing",
+     "note": "Springer JS Client Challenge 頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22A%20mixed%20methods%20study%20of%20the%20three%20low%20trap%20in%20high%20school%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:47Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=A%20mixed%20methods%20study%20of%20the%20three%20low%20trap%20in%20high%20school%20information%20technology&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:02:48Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22A%20mixed%20methods%20study%20of%20the%20three%20low%20trap%20in%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:02:50Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=A%20mixed%20methods%20study%20of%20the%20three%20low&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:52Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://link.springer.com/article/10.1007/s44217-026-01688-3",
+     "http": "200",
+     "utc": "2026-10-10T10:56:48Z",
+     "kind": "publisher_fulltext"
+    }
+   ],
+   "abstract_source": "openalex",
+   "population": "k12",
+   "population_evidence": "\"high school information technology teaching in underdeveloped regions of China\"",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "高中資訊科技教學條件研究；「AI 時代」只是背景，摘要看不出師生 AI 素養或 AI 工具使用，無法對應內涵。",
+   "audience": "k12",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "學段明確，但 AI 素養歸類仍不明；Springer 頁回 Client Challenge，讀不到正文。缺：A／B／C 判定所需內容。",
+   "first_public_date": "2026-05-30",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": null,
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3713043.3731495",
+   "title": "Experts Unite, Kids Delight: Co-Designing an Inclusive AI Literacy Educational Tool for Children",
+   "venue_source_id": "IDC / Proceedings of the 24th Interaction Design and Children",
+   "previous_reason": "摘要只寫 children，無年齡、年級或學校情境",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731495",
+     "http": "200",
+     "utc": "2026-10-10T10:51:30Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3713043.3731495",
+     "http": "200",
+     "utc": "2026-10-10T10:51:32Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3713043.3731495?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:13Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3713043.3731495",
+     "http": "403",
+     "utc": "2026-10-10T10:58:17Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Experts%20Unite%20Kids%20Delight%20Co-Designing%20an%20Inclusive%20AI%20Literacy%20Educational%20Tool%20for%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:54Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Experts%20Unite%20Kids%20Delight%20Co-Designing%20an%20Inclusive%20AI%20Literacy%20Educational%20Tool%20for%20Children&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:02:55Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Experts%20Unite%2C%20Kids%20Delight%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:02:57Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Experts%20Unite%2C%20Kids%20Delight&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:02:59Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://eprints.lancs.ac.uk/id/eprint/229630/",
+     "http": "ERR(curl rc=35)",
+     "utc": "2026-10-10T10:54:51Z",
+     "kind": "repository"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "\"a child-friendly generative AI web application\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-BAS"
+   ],
+   "ai_lit_note": "兒童以生成式 AI 觀察性別刻板印象，對應 S-ETH「具備對AI的批判思考」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "摘要只寫 children；Lancaster EPrints 典藏版連線失敗（TLS 錯誤 curl rc=35，未停用驗證）；ACM DL 403。 缺：年齡或年級。",
+   "first_public_date": "2025-06-23",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3773077.3812156",
+   "title": "Understanding teens’ self-beliefs when learning to construct and deconstruct AI/ML systems: Developing a survey instrument",
+   "venue_source_id": "IDC / Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+   "previous_reason": "只寫 teenagers，無年齡、年級",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812156",
+     "http": "200",
+     "utc": "2026-10-10T10:51:34Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3773077.3812156",
+     "http": "200",
+     "utc": "2026-10-10T10:51:35Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3812156?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:17Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3773077.3812156",
+     "http": "403",
+     "utc": "2026-10-10T10:58:18Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Understanding%20teens%E2%80%99%20self-beliefs%20when%20learning%20to%20construct%20and%20deconstruct%20AI%2FML%20systems%20Developing%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:01Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Understanding%20teens%E2%80%99%20self-beliefs%20when%20learning%20to%20construct%20and%20deconstruct%20AI%2FML%20systems%20Developing%20a%20survey&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:03:02Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Understanding%20teens%E2%80%99%20self-beliefs%20when%20learning%20to%20construct%20and%20deconstruct%20AI%2FML%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:03:04Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Understanding%20teens%E2%80%99%20self-beliefs%20when%20learning%20to%20construct%20and&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:06Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://arxiv.org/abs/2604.22959",
+     "http": "200",
+     "utc": "2026-10-10T10:54:50Z",
+     "kind": "arxiv_abs"
+    },
+    {
+     "url": "https://arxiv.org/pdf/2604.22959",
+     "http": "200",
+     "utc": "2026-10-10T10:56:10Z",
+     "kind": "arxiv_pdf"
+    }
+   ],
+   "abstract_source": "openalex／S2；arXiv 2604.22959（同題名、同 DOI 的作者預印本全文）",
+   "population": "k12",
+   "population_evidence": "\"In total, 124 secondary school students completed the survey across 7 classes\"；\"high school (grades 9-12) CS classrooms\"（arXiv 全文）",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "青少年建構與拆解 AI/ML 系統的自我信念量表，對應 S-BAS「理解AI運作原理與限制」與 S-ETH「具備對AI的批判思考」。",
+   "audience": "k12",
+   "countries": [],
+   "new_decision": "import",
+   "reason": "新證據：arXiv 作者預印本全文寫明 124 名中學生、高中（9–12 年級）資訊科學課堂，學習情境明確。摘要本身只寫 teenagers，學段證據來自作者全文，請管理者確認這類證據是否可用。",
+   "first_public_date": "2026-04-24",
+   "first_public_basis": "arXiv v1 submission 2026-04-24（submission 不等於 announce；早於 ACM Crossref published-online 2026-06-21）",
+   "category_suggestion": "K3",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "學段證據來自作者預印本全文，不是摘要"
+  },
+  {
+   "doi": "10.1145/3773077.3806125",
+   "title": "\"Are you biased right now, AI?\": Investigating Supporting Youths' Systematic Evaluation of GenAI",
+   "venue_source_id": "IDC / Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+   "previous_reason": "只寫 teens，無年齡、年級",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806125",
+     "http": "200",
+     "utc": "2026-10-10T10:51:37Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3773077.3806125",
+     "http": "200",
+     "utc": "2026-10-10T10:51:39Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3806125?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:21Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3773077.3806125",
+     "http": "403",
+     "utc": "2026-10-10T10:58:20Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Are%20you%20biased%20right%20now%20AI%3F%20Investigating%20Supporting%20Youths%27%20Systematic%20Evaluation%20of%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:08Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Are%20you%20biased%20right%20now%20AI%3F%20Investigating%20Supporting%20Youths%27%20Systematic%20Evaluation%20of%20GenAI&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "400",
+     "utc": "2026-10-10T11:03:09Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Are%20you%20biased%20right%20now%2C%20AI%3F%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:03:11Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=%22Are%20you%20biased%20right%20now%2C%20AI%3F%22&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:13Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "\"a five-day AI literacy camp with teens (N = 16)\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-BAS"
+   ],
+   "ai_lit_note": "青少年系統性評估生成式 AI，對應 S-ETH「具備對AI的批判思考」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "只寫 teens，無年齡年級；ACM DL 403；未見 arXiv 版本。 缺：年齡或年級。",
+   "first_public_date": "2026-06-21",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3773077.3813778",
+   "title": "Resisting \"Cheesy\" AI: Hybrid and Situated Critical AI Literacy With Youth-Envisioned Futures",
+   "venue_source_id": "IDC / Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+   "previous_reason": "博士生論壇摘要，只寫 youth 與社區情境；K-12 只在背景敘述",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813778",
+     "http": "200",
+     "utc": "2026-10-10T10:51:40Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3773077.3813778",
+     "http": "200",
+     "utc": "2026-10-10T10:51:42Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3813778?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:24Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3773077.3813778",
+     "http": "403",
+     "utc": "2026-10-10T10:58:22Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Resisting%20Cheesy%20AI%20Hybrid%20and%20Situated%20Critical%20AI%20Literacy%20With%20Youth-Envisioned%20Futures%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:15Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Resisting%20Cheesy%20AI%20Hybrid%20and%20Situated%20Critical%20AI%20Literacy%20With%20Youth-Envisioned%20Futures&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:03:17Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Resisting%20Cheesy%20AI%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:03:19Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Resisting%20%22Cheesy%22%20AI&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:20Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "\"support youth in developing CAIL through a hybrid method\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH"
+   ],
+   "ai_lit_note": "青少年批判 AI 素養，對應 S-ETH「具備對AI的批判思考」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "博士生論壇摘要，只寫 youth；ACM DL 403。 缺：年齡或年級。",
+   "first_public_date": "2026-06-21",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3773077.3816198",
+   "title": "Growing Up with AI: Approaches to Community-centered AI Literacy",
+   "venue_source_id": "IDC / Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+   "previous_reason": "工作坊提案、無研究對象；3–8 歲橫跨學前（管理者先前決定維持待判）",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3773077.3816198",
+     "http": "200",
+     "utc": "2026-10-10T10:51:43Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3773077.3816198",
+     "http": "200",
+     "utc": "2026-10-10T10:51:45Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3816198?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:28Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3773077.3816198",
+     "http": "403",
+     "utc": "2026-10-10T10:58:23Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Growing%20Up%20with%20AI%20Approaches%20to%20Community-centered%20AI%20Literacy%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:22Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Growing%20Up%20with%20AI%20Approaches%20to%20Community-centered%20AI%20Literacy&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:03:24Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Growing%20Up%20with%20AI%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:03:26Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Growing%20Up%20with%20AI&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:28Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "\"AI literacy in early childhood education (ages 3-8)\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS"
+   ],
+   "ai_lit_note": "社區本位幼兒 AI 素養工作坊提案，對應 S-BAS「覺察AI的世界並產生好奇心」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "管理者先前決定待判（工作坊提案、3–8 歲橫跨學前）；本輪無新證據。",
+   "first_public_date": "2026-06-21",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "管理者先前決定待判"
+  },
+  {
+   "doi": "10.1145/3713043.3731604",
+   "title": "Beyond Users: Supporting Children in Interpreting, Resisting, and Collaborating with AI",
+   "venue_source_id": "IDC / Proceedings of the 24th Interaction Design and Children",
+   "previous_reason": "博士生論壇摘要；只寫 children，無年齡、年級",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3713043.3731604",
+     "http": "200",
+     "utc": "2026-10-10T10:51:47Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3713043.3731604",
+     "http": "200",
+     "utc": "2026-10-10T10:51:48Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3713043.3731604?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:32Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3713043.3731604",
+     "http": "403",
+     "utc": "2026-10-10T10:58:25Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Beyond%20Users%20Supporting%20Children%20in%20Interpreting%20Resisting%20and%20Collaborating%20with%20AI%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:29Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Beyond%20Users%20Supporting%20Children%20in%20Interpreting%20Resisting%20and%20Collaborating%20with%20AI&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:03:31Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Beyond%20Users%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:03:33Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Beyond%20Users&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:35Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "\"co-design of interactive systems with children at KidsTeam UW\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-BAS"
+   ],
+   "ai_lit_note": "兒童詮釋與抵抗 AI，對應 S-ETH「具備對AI的批判思考」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "博士生論壇摘要，只寫 children；ACM DL 403。 缺：年齡或年級。",
+   "first_public_date": "2025-06-23",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3773077.3806107",
+   "title": "Building to Understand: Examining Teens’ Technical and Socio-Ethical Pieces of Understanding in the Construction of Small Generative Language Models",
+   "venue_source_id": "IDC / Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+   "previous_reason": "只寫 teenagers，無年齡、年級",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806107",
+     "http": "200",
+     "utc": "2026-10-10T10:51:50Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3773077.3806107",
+     "http": "200",
+     "utc": "2026-10-10T10:51:51Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3806107?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:36Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3773077.3806107",
+     "http": "403",
+     "utc": "2026-10-10T10:58:26Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Building%20to%20Understand%20Examining%20Teens%E2%80%99%20Technical%20and%20Socio-Ethical%20Pieces%20of%20Understanding%20in%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:36Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Building%20to%20Understand%20Examining%20Teens%E2%80%99%20Technical%20and%20Socio-Ethical%20Pieces%20of%20Understanding%20in%20the%20Construction&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:03:38Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Building%20to%20Understand%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:03:40Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Building%20to%20Understand&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:42Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://arxiv.org/abs/2603.25852",
+     "http": "200",
+     "utc": "2026-10-10T11:12:20Z",
+     "kind": "arxiv_abs"
+    },
+    {
+     "url": "https://arxiv.org/pdf/2603.25852",
+     "http": "200",
+     "utc": "2026-10-10T11:12:21Z",
+     "kind": "arxiv_pdf"
+    }
+   ],
+   "abstract_source": "openalex／S2；arXiv 2603.25852（同題名作者預印本，v3）",
+   "population": "k12",
+   "population_evidence": "\"Nineteen of the twenty-two fourteen-to-fifteen-year-olds enrolled in the program gave parental consent\"；\"position high school students as protagonists\"（arXiv 全文）",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-SYS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "青少年建構小型生成式語言模型時的技術與社會倫理理解，對應 S-BAS「理解AI運作原理與限制」與 S-SYS「理解AI系統設計的核心」。",
+   "audience": "k12",
+   "countries": [
+    "US"
+   ],
+   "new_decision": "import",
+   "reason": "新證據：arXiv 作者預印本全文寫明 16 名 14–15 歲青少年參與科學中心課後 STEM 學習工作坊（Northeastern US）。學習情境明確，比照 IDC 3727052（14–17 歲工作坊）入庫。學段證據來自作者全文，請管理者確認。",
+   "first_public_date": "2026-03-26",
+   "first_public_basis": "arXiv v1 submission 2026-03-26（submission 不等於 announce；早於 ACM Crossref published-online 2026-06-21）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "學段證據來自作者預印本全文，不是摘要；校外（科學中心）學習情境"
+  },
+  {
+   "doi": "10.1145/3773077.3813783",
+   "title": "Investigating Hands-on AI Literacy Activities for Empowering Youth with Technological Agency for the Future of Work",
+   "venue_source_id": "IDC / Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+   "previous_reason": "博士生論壇摘要（研究規劃），只寫 youth",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813783",
+     "http": "200",
+     "utc": "2026-10-10T10:51:53Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3773077.3813783",
+     "http": "200",
+     "utc": "2026-10-10T10:51:54Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3813783?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:40Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3773077.3813783",
+     "http": "403",
+     "utc": "2026-10-10T10:58:28Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Investigating%20Hands-on%20AI%20Literacy%20Activities%20for%20Empowering%20Youth%20with%20Technological%20Agency%20for%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:43Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Investigating%20Hands-on%20AI%20Literacy%20Activities%20for%20Empowering%20Youth%20with%20Technological%20Agency%20for%20the%20Future&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:03:45Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Investigating%20Hands-on%20AI%20Literacy%20Activities%20for%20Empowering%20Youth%20with%20Technological%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:03:48Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Investigating%20Hands-on%20AI%20Literacy%20Activities%20for%20Empowering%20Youth&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:49Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "（S2 摘要）只寫 youth",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS"
+   ],
+   "ai_lit_note": "動手做 AI 素養活動，對應 S-BAS「理解AI運作原理與限制」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "博士生論壇摘要（研究規劃），只寫 youth；ACM DL 403。 缺：年齡或年級。",
+   "first_public_date": "2026-06-21",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3773077.3813772",
+   "title": "Shadows, Doodles and Dice: Three Demos for Inter-generational Interactions around AI Literacy",
+   "venue_source_id": "IDC / Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+   "previous_reason": "展示（demo）論文；只寫 children and families、科學中心，無年齡",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3773077.3813772",
+     "http": "200",
+     "utc": "2026-10-10T10:51:56Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3773077.3813772",
+     "http": "200",
+     "utc": "2026-10-10T10:51:58Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3813772?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:44Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3773077.3813772",
+     "http": "403",
+     "utc": "2026-10-10T10:58:29Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Shadows%20Doodles%20and%20Dice%20Three%20Demos%20for%20Inter-generational%20Interactions%20around%20AI%20Literacy%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:51Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Shadows%20Doodles%20and%20Dice%20Three%20Demos%20for%20Inter-generational%20Interactions%20around%20AI%20Literacy&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:03:53Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Shadows%2C%20Doodles%20and%20Dice%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:03:54Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Shadows%2C%20Doodles%20and%20Dice&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:56Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "（S2 摘要）children and families、科學中心",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS"
+   ],
+   "ai_lit_note": "跨世代 AI 互動展示，對應 S-BAS「覺察AI的世界並產生好奇心」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "展示論文，未寫年齡；ACM DL 403。 缺：年齡或年級。",
+   "first_public_date": "2026-06-21",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3773077.3806146",
+   "title": "“Should AI Be Used At All?”: Examining How Youth Decenter AI Solutionism",
+   "venue_source_id": "IDC / Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+   "previous_reason": "只寫 youth，無年齡、年級",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806146",
+     "http": "200",
+     "utc": "2026-10-10T10:51:59Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3773077.3806146",
+     "http": "200",
+     "utc": "2026-10-10T10:52:01Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3806146?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:48Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3773077.3806146",
+     "http": "403",
+     "utc": "2026-10-10T10:58:31Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22%E2%80%9CShould%20AI%20Be%20Used%20At%20All%3F%E2%80%9D%20Examining%20How%20Youth%20Decenter%20AI%20Solutionism%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:03:58Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=%E2%80%9CShould%20AI%20Be%20Used%20At%20All%3F%E2%80%9D%20Examining%20How%20Youth%20Decenter%20AI%20Solutionism&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "400",
+     "utc": "2026-10-10T11:03:59Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22%E2%80%9CShould%20AI%20Be%20Used%20At%20All%3F%E2%80%9D%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:04:01Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=%E2%80%9CShould%20AI%20Be%20Used%20At%20All%3F%E2%80%9D&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:03Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "\"we document how youth develop anti-AI solutionist perspectives\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-SYS"
+   ],
+   "ai_lit_note": "青少年反 AI 解決主義，對應 S-ETH「思辨AI中的應用與取捨」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "只寫 youth；ACM DL 403；未見 arXiv 版本。 缺：年齡或年級。",
+   "first_public_date": "2026-06-21",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3773077.3812189",
+   "title": "Youth as Evaluators: Designing Participatory Instruments for Age-Appropriate AI Governance",
+   "venue_source_id": "IDC / Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+   "previous_reason": "年齡 11–17 明示，但為 AI 治理研究工具（進行中），非學習情境；學段規則要求學習情境",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812189",
+     "http": "200",
+     "utc": "2026-10-10T10:52:03Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3773077.3812189",
+     "http": "200",
+     "utc": "2026-10-10T10:52:04Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3812189?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:52Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3773077.3812189",
+     "http": "403",
+     "utc": "2026-10-10T10:58:33Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Youth%20as%20Evaluators%20Designing%20Participatory%20Instruments%20for%20Age-Appropriate%20AI%20Governance%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:05Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Youth%20as%20Evaluators%20Designing%20Participatory%20Instruments%20for%20Age-Appropriate%20AI%20Governance&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:04:07Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Youth%20as%20Evaluators%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:04:09Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Youth%20as%20Evaluators&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:10Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "（S2 摘要）年齡 11–17，研究工具",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH"
+   ],
+   "ai_lit_note": "青少年作為 AI 評估者，對應 S-ETH「思辨AI中的應用與取捨」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "年齡明示但為 AI 治理研究工具、非學習情境（同先前理由）；ACM DL 403。 缺：學習情境。",
+   "first_public_date": "2026-06-21",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3773077.3806124",
+   "title": "Protection or Empowerment? Perspectives on Youth-Inclusive Responsible AI",
+   "venue_source_id": "IDC / Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+   "previous_reason": "只寫 teens，無年齡；主題為青年參與 AI 治理",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3773077.3806124",
+     "http": "200",
+     "utc": "2026-10-10T10:52:06Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3773077.3806124",
+     "http": "200",
+     "utc": "2026-10-10T10:52:08Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3806124?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:55:56Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3773077.3806124",
+     "http": "403",
+     "utc": "2026-10-10T10:58:34Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Protection%20or%20Empowerment%3F%20Perspectives%20on%20Youth-Inclusive%20Responsible%20AI%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:12Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Protection%20or%20Empowerment%3F%20Perspectives%20on%20Youth-Inclusive%20Responsible%20AI&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "400",
+     "utc": "2026-10-10T11:04:13Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Protection%20or%20Empowerment%3F%20Perspectives%20on%20Youth-Inclusive%20Responsible%20AI%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:04:15Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Protection%20or%20Empowerment%3F%20Perspectives%20on%20Youth-Inclusive%20Responsible%20AI&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:17Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "\"workshops with 16 teens and 11 parents\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH"
+   ],
+   "ai_lit_note": "青年參與負責任 AI，對應 S-ETH「構思AI設計倫理內涵」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "只寫 teens；主題為青年參與負責任 AI；ACM DL 403。 缺：年齡或年級。",
+   "first_public_date": "2026-06-21",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3773077.3812130",
+   "title": "The Everything Tool Problem: A Scoping Review of Empirical Research with Young People and Generative AI",
+   "venue_source_id": "IDC / Proceedings of the 25th Annual ACM Interaction Design and Children Conference",
+   "previous_reason": "回顧本身只寫 young people；13–14 歲僅為所提後續研究（管理者先前決定維持待判）",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3773077.3812130",
+     "http": "200",
+     "utc": "2026-10-10T10:52:09Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3773077.3812130",
+     "http": "200",
+     "utc": "2026-10-10T10:52:11Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3773077.3812130?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:00Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3773077.3812130",
+     "http": "403",
+     "utc": "2026-10-10T10:58:36Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22The%20Everything%20Tool%20Problem%20A%20Scoping%20Review%20of%20Empirical%20Research%20with%20Young%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:19Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=The%20Everything%20Tool%20Problem%20A%20Scoping%20Review%20of%20Empirical%20Research%20with%20Young%20People%20and&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:04:21Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22The%20Everything%20Tool%20Problem%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:04:23Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=The%20Everything%20Tool%20Problem&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:25Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex",
+   "population": "unclear",
+   "population_evidence": "\"a longitudinal, cross-context, co-researcher study following young people aged 13–14 in the UK\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-LRN",
+    "S-ETH"
+   ],
+   "ai_lit_note": "青少年與生成式 AI 實證研究範圍回顧，對應 S-LRN「理解AI輔助學習的角色功能」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "管理者先前決定待判（13–14 歲只屬所提後續研究）；本輪未見其他版本，維持。",
+   "first_public_date": "2026-06-21",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "管理者先前決定待判"
+  },
+  {
+   "doi": "10.3102/2197285",
+   "title": "Robot or Not? Uncovering the In-Service Teachers' Needs for AI Literacy Integration in Underserved Schools",
+   "venue_source_id": "AERA / Proceedings of the 2025 AERA Annual Meeting",
+   "previous_reason": "AERA 2025 議程頁回驗證頁（本次試讀 2197285 一次，未繞過）；Crossref、OpenAlex、Semantic Scholar 皆無摘要；本件議程頁本次試讀一次回驗證頁 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.1）：資源不足學校在職教師的AI專業發展需求；只寫schools，未寫學段，照「只寫 schools 者待判」；摘要來自機構典藏，未與 DOI 核對",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2197285",
+     "http": "200",
+     "utc": "2026-10-10T10:52:13Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2197285",
+     "http": "200",
+     "utc": "2026-10-10T10:52:15Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2197285?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:04Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2197285",
+     "http": "200",
+     "utc": "2026-10-10T10:58:37Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Robot%20or%20Not%3F%20Uncovering%20the%20In-Service%20Teachers%27%20Needs%20for%20AI%20Literacy%20Integration%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:27Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Robot%20or%20Not%3F%20Uncovering%20the%20In-Service%20Teachers%27%20Needs%20for%20AI%20Literacy%20Integration%20in%20Underserved&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "400",
+     "utc": "2026-10-10T11:04:28Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Robot%20or%20Not%3F%20Uncovering%20the%20In-Service%20Teachers%27%20Needs%20for%20AI%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:04:30Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Robot%20or%20Not%3F%20Uncovering%20the%20In-Service%20Teachers%27%20Needs&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:32Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://convention2.allacademic.com/one/aera/portal/index.php?cmd=prepare_paper_meta_page_direct_link&search_mode=publication&search=&publication_id=2197285",
+     "http": "200",
+     "utc": "2026-10-10T11:07:40Z",
+     "kind": "aera_opr"
+    },
+    {
+     "url": "https://doi.org/10.3102/2197285 (-> research.allacademic.com/meta/p2197285_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:07:49Z",
+     "kind": "aera_opr"
+    },
+    {
+     "url": "https://convention2.allacademic.com/one/aera/portal/index.php?cmd=Download+Document&key=unpublished_manuscript&file_index=1&pop_up=true&no_click_key=true&attachment_style=attachment (AERA OPR paper download, session bound to 10.3102/2197285)",
+     "http": "200",
+     "utc": "2026-10-10T11:10:34Z",
+     "kind": "aera_opr_fulltext"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）＋該頁作者提供的全文 PDF",
+   "population": "k12",
+   "population_evidence": "\"11 participants were recruited in this study, coming from a diverse range of grade levels, including elementary, middle, and high school\"（OPR 全文）",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD",
+    "T-BAS",
+    "T-ETH"
+   ],
+   "ai_lit_note": "資源不足學校在職教師的 AI 素養專業發展需求，對應 T-PD「評估教師AI素養以規劃專業增能」。",
+   "audience": "k12",
+   "countries": [],
+   "new_decision": "import",
+   "reason": "新證據：AERA OPR 官方摘要與全文。全文寫明 11 名在職教師任教小學、國中、高中（Title 1 學校）。先前管理者整理的摘要來自機構典藏，這次已和 DOI 官方頁核對一致。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K4",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3102/2194864",
+   "title": "Evaluating the Impact of AI Literacy Professional Development on Teachers' Perception and Practice (Poster 4)",
+   "venue_source_id": "AERA / Proceedings of the 2025 AERA Annual Meeting",
+   "previous_reason": "AERA 2025 議程頁回驗證頁（本次試讀 2197285 一次，未繞過）；Crossref、OpenAlex、Semantic Scholar 皆無摘要 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.2）：原件摘要未取得；相關期刊文章版本關係未確認，不能代用",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2194864",
+     "http": "200",
+     "utc": "2026-10-10T10:52:17Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2194864",
+     "http": "200",
+     "utc": "2026-10-10T10:52:18Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2194864?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:07Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2194864",
+     "http": "200",
+     "utc": "2026-10-10T10:58:43Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Evaluating%20the%20Impact%20of%20AI%20Literacy%20Professional%20Development%20on%20Teachers%27%20Perception%20and%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:33Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Evaluating%20the%20Impact%20of%20AI%20Literacy%20Professional%20Development%20on%20Teachers%27%20Perception%20and%20Practice%20%28Poster&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:04:35Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Evaluating%20the%20Impact%20of%20AI%20Literacy%20Professional%20Development%20on%20Teachers%27%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:04:37Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Evaluating%20the%20Impact%20of%20AI%20Literacy%20Professional%20Development&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:39Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2194864 (-> research.allacademic.com/meta/p2194864_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:07:56Z",
+     "kind": "aera_opr"
+    },
+    {
+     "url": "https://convention2.allacademic.com/one/aera/portal/index.php?cmd=Download+Document&key=unpublished_manuscript&file_index=1&pop_up=true&no_click_key=true&attachment_style=attachment (AERA OPR paper download, session bound to 10.3102/2194864)",
+     "http": "200",
+     "utc": "2026-10-10T11:10:26Z",
+     "kind": "aera_opr_fulltext"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）＋該頁作者提供的全文 PDF",
+   "population": "unclear",
+   "population_evidence": "\"Participants were 20 educators from an AI Research Summer Institute at an urban HBCU in the Northeast\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD",
+    "T-BAS"
+   ],
+   "ai_lit_note": "AI 素養工作坊對教師知識、態度與自我效能的影響，屬生成式 AI 教學培訓，依準則判 A，對應 T-PD。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "新證據：取得官方摘要與全文。K-12 只在背景；參與者只寫 educators／teachers，未寫任教學段。缺：參與者學段。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K4",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3102/2185074",
+   "title": "Demystifying AI: Toward a Misconception-Driven Curriculum for Teaching AI Literacy (Poster 48)",
+   "venue_source_id": "AERA / Proceedings of the 2025 AERA Annual Meeting",
+   "previous_reason": "AERA 2025 議程頁回驗證頁（本次試讀 2197285 一次，未繞過）；Crossref、OpenAlex、Semantic Scholar 皆無摘要 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.3）：未取得摘要",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2185074",
+     "http": "200",
+     "utc": "2026-10-10T10:52:20Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2185074",
+     "http": "200",
+     "utc": "2026-10-10T10:52:21Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2185074?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:11Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2185074",
+     "http": "200",
+     "utc": "2026-10-10T10:58:48Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Demystifying%20AI%20Toward%20a%20Misconception-Driven%20Curriculum%20for%20Teaching%20AI%20Literacy%20%28Poster%2048%29%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:40Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Demystifying%20AI%20Toward%20a%20Misconception-Driven%20Curriculum%20for%20Teaching%20AI%20Literacy%20%28Poster%2048%29&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:04:42Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Demystifying%20AI%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:04:44Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Demystifying%20AI&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:46Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2185074 (-> research.allacademic.com/meta/p2185074_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:08:02Z",
+     "kind": "aera_opr"
+    },
+    {
+     "url": "https://convention2.allacademic.com/one/aera/portal/index.php?cmd=Download+Document&key=unpublished_manuscript&file_index=1&pop_up=true&no_click_key=true&attachment_style=attachment (AERA OPR paper download, session bound to 10.3102/2185074)",
+     "http": "200",
+     "utc": "2026-10-10T11:11:08Z",
+     "kind": "aera_opr_fulltext"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）＋該頁作者提供的全文 PDF",
+   "population": "unclear",
+   "population_evidence": "\"We conducted a scoping review of studies on non-technical individuals' AI perceptions\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "T-BAS"
+   ],
+   "ai_lit_note": "依迷思概念設計 AI 素養課程的範圍回顧，對應 S-BAS「理解AI運作原理與限制」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "新證據：取得官方摘要與全文。對象為一般非技術人士，全文寫明涵蓋 K-12 與高等教育學生、教師及一般大眾，未陳述主要對象，屬混合學段。管理者可考慮排除（非以 K-12 為主）。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "可能可排除（對象為一般非技術人士）"
+  },
+  {
+   "doi": "10.3102/2193015",
+   "title": "State Artificial Intelligence Guidance for Students With Disabilities in K-12 Education (Poster 5)",
+   "venue_source_id": "AERA / Proceedings of the 2025 AERA Annual Meeting",
+   "previous_reason": "AERA 2025 議程頁回驗證頁（本次試讀 2197285 一次，未繞過）；Crossref、OpenAlex、Semantic Scholar 皆無摘要 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.4）：未取得摘要",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2193015",
+     "http": "200",
+     "utc": "2026-10-10T10:52:23Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2193015",
+     "http": "200",
+     "utc": "2026-10-10T10:52:24Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2193015?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:15Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2193015",
+     "http": "200",
+     "utc": "2026-10-10T10:58:54Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22State%20Artificial%20Intelligence%20Guidance%20for%20Students%20With%20Disabilities%20in%20K-12%20Education%20%28Poster%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:47Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=State%20Artificial%20Intelligence%20Guidance%20for%20Students%20With%20Disabilities%20in%20K-12%20Education%20%28Poster%205%29&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:04:49Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22State%20Artificial%20Intelligence%20Guidance%20for%20Students%20With%20Disabilities%20in%20K-12%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:04:51Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=State%20Artificial%20Intelligence%20Guidance%20for%20Students%20With%20Disabilities&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:53Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2193015 (-> research.allacademic.com/meta/p2193015_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:08:08Z",
+     "kind": "aera_opr"
+    },
+    {
+     "url": "https://convention2.allacademic.com/one/aera/portal/index.php?cmd=Download+Document&key=unpublished_manuscript&file_index=1&pop_up=true&no_click_key=true&attachment_style=attachment (AERA OPR paper download, session bound to 10.3102/2193015)",
+     "http": "200",
+     "utc": "2026-10-10T11:10:42Z",
+     "kind": "aera_opr_fulltext"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）＋該頁作者提供的全文 PDF",
+   "population": "k12",
+   "population_evidence": "\"mentioning guidance with a focus on students in K-12 education\"（OPR 全文，州指引的選取條件）",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH",
+    "T-BAS"
+   ],
+   "ai_lit_note": "美國各州 AI 指引如何處理身障學生，對應 T-ETH「健全校園AI使用規範」與 T-BAS「參與AI校園治理部署與決策」。",
+   "audience": "k12",
+   "countries": [],
+   "new_decision": "import",
+   "reason": "新證據：取得官方摘要與全文。題名寫 K-12，全文寫明只選以 K-12 學生為對象的州指引，學段不只見於題名。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K5",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3102/2183399",
+   "title": "Evaluating Teacher Preparedness for AI in K-12 Classrooms (Poster 27)",
+   "venue_source_id": "AERA / Proceedings of the 2025 AERA Annual Meeting",
+   "previous_reason": "AERA 2025 議程頁回驗證頁（本次試讀 2197285 一次，未繞過）；Crossref、OpenAlex、Semantic Scholar 皆無摘要 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.5）：未取得摘要",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2183399",
+     "http": "200",
+     "utc": "2026-10-10T10:52:26Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2183399",
+     "http": "200",
+     "utc": "2026-10-10T10:52:28Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2183399?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:19Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2183399",
+     "http": "200",
+     "utc": "2026-10-10T10:58:59Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Evaluating%20Teacher%20Preparedness%20for%20AI%20in%20K-12%20Classrooms%20%28Poster%2027%29%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:04:54Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Evaluating%20Teacher%20Preparedness%20for%20AI%20in%20K-12%20Classrooms%20%28Poster%2027%29&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:04:56Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Evaluating%20Teacher%20Preparedness%20for%20AI%20in%20K-12%20Classrooms%20%28Poster%2027%29%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:04:58Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Evaluating%20Teacher%20Preparedness%20for%20AI%20in%20K-12%20Classrooms&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:00Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2183399 (-> research.allacademic.com/meta/p2183399_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:08:15Z",
+     "kind": "aera_opr"
+    },
+    {
+     "url": "https://convention2.allacademic.com/one/aera/portal/index.php?cmd=Download+Document&key=unpublished_manuscript&file_index=1&pop_up=true&no_click_key=true&attachment_style=attachment (AERA OPR paper download, session bound to 10.3102/2183399)",
+     "http": "200",
+     "utc": "2026-10-10T11:12:55Z",
+     "kind": "aera_opr_fulltext"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）＋該頁作者提供的全文 PDF",
+   "population": "k12",
+   "population_evidence": "\"This study explored K-12 teachers' perceptions of using Artificial Intelligence (AI) in the classroom\"；全文 \"141 K-12 teachers enrolled in a graduate program\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD",
+    "T-TEA"
+   ],
+   "ai_lit_note": "K-12 教師 AI 準備度與專業發展需求，對應 T-PD「評估教師AI素養以規劃專業增能」。",
+   "audience": "k12",
+   "countries": [],
+   "new_decision": "import",
+   "reason": "新證據：AERA OPR 官方摘要寫明 K-12 teachers；全文寫明 141 名在職 K-12 教師（就讀研究所），含小學、國中、高中。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K4",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3102/2184589",
+   "title": "AI Literacy and Educational Leadership: K12 School Leaders’ Perceptions of AI Integration",
+   "venue_source_id": "AERA / Proceedings of the 2025 AERA Annual Meeting",
+   "previous_reason": "AERA 2025 議程頁回驗證頁（本次試讀 2197285 一次，未繞過）；Crossref、OpenAlex、Semantic Scholar 皆無摘要；可能為 2026 議程 10.3102/2280689（KB-2026-0110）之前期版本 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.6）：未取得摘要",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2184589",
+     "http": "200",
+     "utc": "2026-10-10T10:52:30Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2184589",
+     "http": "200",
+     "utc": "2026-10-10T10:52:31Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2184589?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:23Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2184589",
+     "http": "200",
+     "utc": "2026-10-10T10:59:04Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22AI%20Literacy%20and%20Educational%20Leadership%20K12%20School%20Leaders%E2%80%99%20Perceptions%20of%20AI%20Integration%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:01Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=AI%20Literacy%20and%20Educational%20Leadership%20K12%20School%20Leaders%E2%80%99%20Perceptions%20of%20AI%20Integration&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:05:03Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22AI%20Literacy%20and%20Educational%20Leadership%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:05:05Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=AI%20Literacy%20and%20Educational%20Leadership&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:07Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2184589 (-> research.allacademic.com/meta/p2184589_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:08:21Z",
+     "kind": "aera_opr"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）",
+   "population": "other_stakeholders",
+   "population_evidence": "\"By focusing on school leadership experience, this study offers insights into how K12 leaders effectively address issues relating to AI\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS",
+    "T-ETH"
+   ],
+   "ai_lit_note": "K-12 學校領導者對 AI 整合與 AI 素養政策的看法，對象為其他教育關係人，對應 T-BAS「參與AI校園治理部署與決策」。",
+   "audience": "other_stakeholders",
+   "countries": [],
+   "new_decision": "import",
+   "reason": "新證據：AERA OPR 官方摘要寫明 K12 school leaders。依準則屬 other_stakeholders。可能和知識庫 KB-2026-0110（AERA 2026，10.3102/2280689，題名不同）同一研究系列，但 DOI 與題名都不同，不自動併檔。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K4",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "可能與 KB-2026-0110 相關，題名不同，未併"
+  },
+  {
+   "doi": "10.3102/2195238",
+   "title": "The Future of AI Education Depends on Student Voice",
+   "venue_source_id": "AERA / Proceedings of the 2025 AERA Annual Meeting",
+   "previous_reason": "AERA 2025 議程頁回驗證頁（本次試讀 2197285 一次，未繞過）；Crossref、OpenAlex、Semantic Scholar 皆無摘要 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.7）：只有書目，未取得摘要",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2195238",
+     "http": "200",
+     "utc": "2026-10-10T10:52:33Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2195238",
+     "http": "200",
+     "utc": "2026-10-10T10:52:35Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2195238?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:26Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2195238",
+     "http": "200",
+     "utc": "2026-10-10T10:59:10Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22The%20Future%20of%20AI%20Education%20Depends%20on%20Student%20Voice%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:08Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=The%20Future%20of%20AI%20Education%20Depends%20on%20Student%20Voice&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:05:10Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22The%20Future%20of%20AI%20Education%20Depends%20on%20Student%20Voice%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:05:12Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=The%20Future%20of%20AI%20Education%20Depends%20on%20Student&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:13Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2195238 (-> research.allacademic.com/meta/p2195238_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:08:28Z",
+     "kind": "aera_opr"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）",
+   "population": "k12",
+   "population_evidence": "\"first analyzing middle and high school student responses to an AI literacy survey\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "國高中學生（特別是女生與有色人種女生）對 AI 的看法與 AI 素養，對應 S-BAS「理解AI運作原理與限制」與 S-ETH「具備對AI的批判思考」。",
+   "audience": "k12",
+   "countries": [],
+   "new_decision": "import",
+   "reason": "新證據：AERA OPR 官方摘要寫明國中與高中學生（電腦營隊）。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3102/2190458",
+   "title": "Engaging High School Students in Robotics and Artificial Intelligence Through Robotics Engineering Design Challenges",
+   "venue_source_id": "AERA / Proceedings of the 2025 AERA Annual Meeting",
+   "previous_reason": "AERA 2025 議程頁回驗證頁（本次試讀 2197285 一次，未繞過）；Crossref、OpenAlex、Semantic Scholar 皆無摘要 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.8）：原件摘要未取得；相關期刊文章（Education Sciences 10.3390/educsci16060987）版本關係未確認",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2190458",
+     "http": "200",
+     "utc": "2026-10-10T10:52:36Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2190458",
+     "http": "200",
+     "utc": "2026-10-10T10:52:38Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2190458?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:30Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2190458",
+     "http": "200",
+     "utc": "2026-10-10T10:59:15Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Engaging%20High%20School%20Students%20in%20Robotics%20and%20Artificial%20Intelligence%20Through%20Robotics%20Engineering%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:15Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Engaging%20High%20School%20Students%20in%20Robotics%20and%20Artificial%20Intelligence%20Through%20Robotics%20Engineering%20Design%20Challenges&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:05:17Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Engaging%20High%20School%20Students%20in%20Robotics%20and%20Artificial%20Intelligence%20Through%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:05:19Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Engaging%20High%20School%20Students%20in%20Robotics%20and%20Artificial&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:21Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2190458 (-> research.allacademic.com/meta/p2190458_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:08:34Z",
+     "kind": "aera_opr"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）",
+   "population": "k12",
+   "population_evidence": "\"a project-based Engineering Design+Robotics+AI curriculum with novice Computer Science (CS) high school students\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-SYS"
+   ],
+   "ai_lit_note": "高中生機器人與 AI 工程設計課程，對應 S-BAS「理解AI運作原理與限制」與 S-SYS「整合理論與實踐以深化AI系統」。",
+   "audience": "k12",
+   "countries": [],
+   "new_decision": "import",
+   "reason": "新證據：AERA OPR 官方摘要寫明高中生。Education Sciences 10.3390/educsci16060987（2026）似為其後的期刊版本（第一作者相同、摘要多句相同），但 DOI 不同，不自動併檔。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "與新線索 educsci16060987 可能為同一研究的會議版與期刊版"
+  },
+  {
+   "doi": "10.3102/2288144",
+   "title": "Unforgetting Pedagogical Wisdom, Imagining AI Futures: A Systematic Review of AI Literacy in CS Education",
+   "venue_source_id": "AERA / Proceedings of the 2026 AERA Annual Meeting",
+   "previous_reason": "摘要未寫學段，K-12 只在場次名",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2288144",
+     "http": "200",
+     "utc": "2026-10-10T10:52:39Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2288144",
+     "http": "200",
+     "utc": "2026-10-10T10:52:41Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2288144?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:34Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2288144",
+     "http": "200",
+     "utc": "2026-10-10T10:59:20Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Unforgetting%20Pedagogical%20Wisdom%20Imagining%20AI%20Futures%20A%20Systematic%20Review%20of%20AI%20Literacy%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:22Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Unforgetting%20Pedagogical%20Wisdom%20Imagining%20AI%20Futures%20A%20Systematic%20Review%20of%20AI%20Literacy%20in%20CS&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:05:24Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Unforgetting%20Pedagogical%20Wisdom%2C%20Imagining%20AI%20Futures%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:05:26Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Unforgetting%20Pedagogical%20Wisdom%2C%20Imagining%20AI%20Futures&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:27Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2288144 (-> research.allacademic.com/meta/p2288144_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:08:40Z",
+     "kind": "aera_opr"
+    },
+    {
+     "url": "https://convention2.allacademic.com/one/aera/portal/index.php?cmd=Download+Document&key=unpublished_manuscript&file_index=1&pop_up=true&no_click_key=true&attachment_style=attachment (AERA OPR paper download, session bound to 10.3102/2288144)",
+     "http": "200",
+     "utc": "2026-10-10T11:10:59Z",
+     "kind": "aera_opr_fulltext"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）＋該頁作者提供的全文 PDF",
+   "population": "unclear",
+   "population_evidence": "\"synthesizes 51 empirical studies published between 2010 and 2024 to examine how artificial intelligence (AI) literacy is cultivated in computer science (CS) education\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "資訊科學教育中 AI 素養教學法的系統性回顧，對應 S-BAS「實踐AI強化運算思維」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "新證據：取得官方摘要與全文。摘要沒寫學段；全文所納研究含小學、中學與大學，沒有陳述主要對象。缺：主要學段。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3102/2186829",
+   "title": "Conceptualizing Perspectives of AI Literacies in Teaching About AI: A Systematic Review Approach",
+   "venue_source_id": "AERA / Proceedings of the 2025 AERA Annual Meeting",
+   "previous_reason": "AERA 2025 議程頁回驗證頁（本次試讀 2197285 一次，未繞過）；Crossref、OpenAlex、Semantic Scholar 皆無摘要 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.9）：未取得摘要",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2186829",
+     "http": "200",
+     "utc": "2026-10-10T10:52:42Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2186829",
+     "http": "200",
+     "utc": "2026-10-10T10:52:44Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2186829?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:38Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2186829",
+     "http": "200",
+     "utc": "2026-10-10T10:59:26Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Conceptualizing%20Perspectives%20of%20AI%20Literacies%20in%20Teaching%20About%20AI%20A%20Systematic%20Review%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:29Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Conceptualizing%20Perspectives%20of%20AI%20Literacies%20in%20Teaching%20About%20AI%20A%20Systematic%20Review%20Approach&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:05:31Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Conceptualizing%20Perspectives%20of%20AI%20Literacies%20in%20Teaching%20About%20AI%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:05:32Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Conceptualizing%20Perspectives%20of%20AI%20Literacies%20in%20Teaching%20About&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:34Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2186829 (-> research.allacademic.com/meta/p2186829_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:08:47Z",
+     "kind": "aera_opr"
+    },
+    {
+     "url": "https://convention2.allacademic.com/one/aera/portal/index.php?cmd=Download+Document&key=unpublished_manuscript&file_index=1&pop_up=true&no_click_key=true&attachment_style=attachment (AERA OPR paper download, session bound to 10.3102/2186829)",
+     "http": "200",
+     "utc": "2026-10-10T11:10:17Z",
+     "kind": "aera_opr_fulltext"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）＋該頁作者提供的全文 PDF",
+   "population": "k12",
+   "population_evidence": "\"The intended audience of the activities are school students (K-12).\"（OPR 全文）",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "23 個 AI 教育方案的 AI 素養觀點（操作、社會文化、批判）系統性回顧，對應 S-BAS「理解AI運作原理與限制」與 S-ETH「具備對AI的批判思考」。",
+   "audience": "k12",
+   "countries": [],
+   "new_decision": "import",
+   "reason": "新證據：取得官方摘要（只寫 young learners／youth）與全文。全文寫明所回顧方案的對象是 K-12 學生，學段確定。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3102/2272689",
+   "title": "Designing a Responsible AI Literacy Framework for Education: Integrating Ethics, Equity, and Empowerment",
+   "venue_source_id": "AERA / Proceedings of the 2026 AERA Annual Meeting",
+   "previous_reason": "K–20 混合學段，未指定主要對象",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2272689",
+     "http": "200",
+     "utc": "2026-10-10T10:52:46Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2272689",
+     "http": "200",
+     "utc": "2026-10-10T10:52:47Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2272689?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:42Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2272689",
+     "http": "200",
+     "utc": "2026-10-10T10:59:31Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Designing%20a%20Responsible%20AI%20Literacy%20Framework%20for%20Education%20Integrating%20Ethics%20Equity%20and%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:36Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Designing%20a%20Responsible%20AI%20Literacy%20Framework%20for%20Education%20Integrating%20Ethics%20Equity%20and%20Empowerment&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:05:37Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Designing%20a%20Responsible%20AI%20Literacy%20Framework%20for%20Education%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:05:39Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Designing%20a%20Responsible%20AI%20Literacy%20Framework%20for%20Education&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:41Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2272689 (-> research.allacademic.com/meta/p2272689_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:08:53Z",
+     "kind": "aera_opr"
+    },
+    {
+     "url": "https://convention2.allacademic.com/one/aera/portal/index.php?cmd=Download+Document&key=unpublished_manuscript&file_index=1&pop_up=true&no_click_key=true&attachment_style=attachment (AERA OPR paper download, session bound to 10.3102/2272689)",
+     "http": "200",
+     "utc": "2026-10-10T11:11:17Z",
+     "kind": "aera_opr_fulltext"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）＋該頁作者提供的全文 PDF",
+   "population": "unclear",
+   "population_evidence": "\"lack integration of equity, empowerment, and global justice across K–20 settings\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "T-ETH"
+   ],
+   "ai_lit_note": "負責任 AI 素養框架概念論文，對應 S-ETH「構思AI設計倫理內涵」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "官方摘要與全文都寫 K–20，涵蓋中學、社區學院與師培，沒有主要對象。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K1",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3102/2276315",
+   "title": "Lessons Learned from the Pandemic to Inform Decision-Making About AI in K-12 Schools",
+   "venue_source_id": "AERA / Proceedings of the 2026 AERA Annual Meeting",
+   "previous_reason": "對象為教育領導者（依新規則可判 A），但資料為 2020–21 疫情訪談，AI 部分為推論（管理者先前改回待判）",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2276315",
+     "http": "200",
+     "utc": "2026-10-10T10:52:49Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2276315",
+     "http": "200",
+     "utc": "2026-10-10T10:52:51Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2276315?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:46Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2276315",
+     "http": "200",
+     "utc": "2026-10-10T10:59:36Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Lessons%20Learned%20from%20the%20Pandemic%20to%20Inform%20Decision-Making%20About%20AI%20in%20K-12%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:43Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Lessons%20Learned%20from%20the%20Pandemic%20to%20Inform%20Decision-Making%20About%20AI%20in%20K-12%20Schools&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:05:45Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Lessons%20Learned%20from%20the%20Pandemic%20to%20Inform%20Decision-Making%20About%20AI%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:05:47Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Lessons%20Learned%20from%20the%20Pandemic%20to%20Inform%20Decision-Making&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:49Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2276315 (-> research.allacademic.com/meta/p2276315_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:09:00Z",
+     "kind": "aera_opr"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）",
+   "population": "other_stakeholders",
+   "population_evidence": "\"we revisit data collected from 58 interviews with Western New York school leaders in 2020-21\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS"
+   ],
+   "ai_lit_note": "K-12 領導者 AI 決策，對應 T-BAS「參與AI校園治理部署與決策」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "管理者先前改回待判（資料為疫情期間訪談，AI 部分是推論）。官方摘要與先前讀到的議程摘要相同，沒有新證據，維持。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K4",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "管理者先前決定待判"
+  },
+  {
+   "doi": "10.3102/2190722",
+   "title": "Development of an AI Literacy Assessment for Nontechnical Individuals: A Pre- and In-Service Teachers’ Case",
+   "venue_source_id": "AERA / Proceedings of the 2025 AERA Annual Meeting",
+   "previous_reason": "AERA 2025 議程頁回驗證頁（本次試讀 2197285 一次，未繞過）；Crossref、OpenAlex、Semantic Scholar 皆無摘要 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.10）：原件摘要未取得；相關期刊文章（CEDTECH 2024）版本關係未確認",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2190722",
+     "http": "200",
+     "utc": "2026-10-10T10:52:52Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2190722",
+     "http": "200",
+     "utc": "2026-10-10T10:52:54Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2190722?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:50Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2190722",
+     "http": "200",
+     "utc": "2026-10-10T10:59:42Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Development%20of%20an%20AI%20Literacy%20Assessment%20for%20Nontechnical%20Individuals%20A%20Pre-%20and%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:50Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Development%20of%20an%20AI%20Literacy%20Assessment%20for%20Nontechnical%20Individuals%20A%20Pre-%20and%20In-Service%20Teachers%E2%80%99&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:05:52Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Development%20of%20an%20AI%20Literacy%20Assessment%20for%20Nontechnical%20Individuals%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:05:54Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Development%20of%20an%20AI%20Literacy%20Assessment%20for%20Nontechnical&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:55Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2190722 (-> research.allacademic.com/meta/p2190722_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:09:06Z",
+     "kind": "aera_opr"
+    },
+    {
+     "url": "https://convention2.allacademic.com/one/aera/portal/index.php?cmd=Download+Document&key=unpublished_manuscript&file_index=1&pop_up=true&no_click_key=true&attachment_style=attachment (AERA OPR paper download, session bound to 10.3102/2190722)",
+     "http": "200",
+     "utc": "2026-10-10T11:10:51Z",
+     "kind": "aera_opr_fulltext"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）＋該頁作者提供的全文 PDF",
+   "population": "unclear",
+   "population_evidence": "\"A total of 196 responses were collected from pre-and in-service teachers in the United States\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS"
+   ],
+   "ai_lit_note": "非技術人士 AI 素養評量的發展（職前與在職教師樣本），對應 T-BAS「理解AI的數據與運作」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "新證據：取得官方摘要與全文，但會議版沒有寫職前／在職比例。同樣本（196／186 筆）的 CEDTECH 2024 期刊文章寫明約 79% 為職前教師。會議版本身的證據不足，維持待判；管理者可決定是否依期刊版判 teacher_ed。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K3",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "同研究的 CEDTECH 期刊版顯示以職前教師為主"
+  },
+  {
+   "doi": "10.3102/2194056",
+   "title": "Proposal: Exploring the Current Situation and Influencing Factors of Teachers’ AI Literacy (Poster 18)",
+   "venue_source_id": "AERA / Proceedings of the 2025 AERA Annual Meeting",
+   "previous_reason": "AERA 2025 議程頁回驗證頁（本次試讀 2197285 一次，未繞過）；Crossref、OpenAlex、Semantic Scholar 皆無摘要 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.11）：未取得摘要",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2194056",
+     "http": "200",
+     "utc": "2026-10-10T10:52:55Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2194056",
+     "http": "200",
+     "utc": "2026-10-10T10:52:57Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2194056?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:53Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2194056",
+     "http": "200",
+     "utc": "2026-10-10T10:59:47Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Proposal%20Exploring%20the%20Current%20Situation%20and%20Influencing%20Factors%20of%20Teachers%E2%80%99%20AI%20Literacy%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:05:57Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Proposal%20Exploring%20the%20Current%20Situation%20and%20Influencing%20Factors%20of%20Teachers%E2%80%99%20AI%20Literacy%20%28Poster%2018%29&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:05:58Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Proposal%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:06:00Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Proposal&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:02Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2194056 (-> research.allacademic.com/meta/p2194056_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:09:12Z",
+     "kind": "aera_opr"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）",
+   "population": "teacher_ed",
+   "population_evidence": "\"This proposal aims to investigate the AI literacy status of pre-service teachers\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS",
+    "T-PD"
+   ],
+   "ai_lit_note": "職前教師 AI 素養現況與影響因素，對應 T-BAS「區分AI的定義與類別」與 T-PD「評估教師AI素養以規劃專業增能」。",
+   "audience": "teacher_ed",
+   "countries": [],
+   "new_decision": "import",
+   "reason": "新證據：AERA OPR 官方摘要寫明職前教師（200 份問卷）。屬研究計畫海報，結果為初步描述統計。對象為師培，只進月報。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K4",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3102/2198280",
+   "title": "Evolving Attitudes Toward the Use of Generative AI Among High School Students in an Inner-City School (Poster 12)",
+   "venue_source_id": "AERA / Proceedings of the 2025 AERA Annual Meeting",
+   "previous_reason": "AERA 2025 議程頁回驗證頁（本次試讀 2197285 一次，未繞過）；Crossref、OpenAlex、Semantic Scholar 皆無摘要 ／ 2026-10-10 瀏覽器摘要判讀（judgments.json no.12）：未取得摘要",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2198280",
+     "http": "200",
+     "utc": "2026-10-10T10:52:59Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2198280",
+     "http": "200",
+     "utc": "2026-10-10T10:53:01Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2198280?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:56:57Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2198280",
+     "http": "200",
+     "utc": "2026-10-10T10:59:52Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Evolving%20Attitudes%20Toward%20the%20Use%20of%20Generative%20AI%20Among%20High%20School%20Students%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:04Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Evolving%20Attitudes%20Toward%20the%20Use%20of%20Generative%20AI%20Among%20High%20School%20Students%20in%20an&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:06:06Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Evolving%20Attitudes%20Toward%20the%20Use%20of%20Generative%20AI%20Among%20High%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:06:08Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Evolving%20Attitudes%20Toward%20the%20Use%20of%20Generative%20AI&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:10Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2198280 (-> research.allacademic.com/meta/p2198280_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:09:18Z",
+     "kind": "aera_opr"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2232799",
+     "http": "200",
+     "utc": "2026-10-10T11:12:23Z",
+     "kind": "crossref_related"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）",
+   "population": "k12",
+   "population_evidence": "\"attitudes towards the use of generative AI among students in an inner-city high school\"；\"The students (N=45)\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-BAS"
+   ],
+   "ai_lit_note": "高中生在教師示範提示後對生成式 AI 態度的變化，對應 S-ETH「思辨AI中的應用與取捨」與 S-BAS「運用提示詞優化AI互動」。",
+   "audience": "k12",
+   "countries": [],
+   "new_decision": "import",
+   "reason": "新證據：AERA OPR 官方摘要寫明都市高中 45 名學生。另有同一海報的場次層級 DOI 10.3102/2232799，以及 i-Presentation DOI 10.3102/ip.25.2198280；均不自動併檔。前後測結果為高風險，待 G2–G4。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "同一海報另有 DOI 10.3102/2232799"
+  },
+  {
+   "doi": "10.3102/2281719",
+   "title": "Adolescent AI Use and Developmental Needs: A Self-Determination Theory Perspective",
+   "venue_source_id": "AERA / Proceedings of the 2026 AERA Annual Meeting",
+   "previous_reason": "年齡明示，但為全國線上調查、非學習情境，主題偏日常使用與福祉（管理者先前決定維持待判）",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3102/2281719",
+     "http": "200",
+     "utc": "2026-10-10T10:53:02Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3102/2281719",
+     "http": "200",
+     "utc": "2026-10-10T10:53:04Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3102/2281719?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:57:01Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3102/2281719",
+     "http": "200",
+     "utc": "2026-10-10T10:59:58Z",
+     "kind": "landing",
+     "note": "AERA OPR 首頁（無 cookie 時落在入口頁）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Adolescent%20AI%20Use%20and%20Developmental%20Needs%20A%20Self-Determination%20Theory%20Perspective%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:12Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Adolescent%20AI%20Use%20and%20Developmental%20Needs%20A%20Self-Determination%20Theory%20Perspective&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:06:13Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Adolescent%20AI%20Use%20and%20Developmental%20Needs%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:06:15Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Adolescent%20AI%20Use%20and%20Developmental%20Needs&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:17Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://doi.org/10.3102/2281719 (-> research.allacademic.com/meta/p2281719_index.html -> convention2.allacademic.com AERA Online Paper Repository, session cookie)",
+     "http": "200",
+     "utc": "2026-10-10T11:09:25Z",
+     "kind": "aera_opr"
+    }
+   ],
+   "abstract_source": "AERA Online Paper Repository 官方頁（經 DOI 轉址，一般 session cookie，無驗證頁）",
+   "population": "unclear",
+   "population_evidence": "\"The sample included 1,440 U.S. adolescents aged 13–17\"；\"a national online survey\"",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "青少年 AI 使用與心理需求，對應 S-LRN「理解AI輔助學習的角色功能」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "管理者先前決定待判（全國線上調查、非學習情境）。官方摘要沒有新的學習情境證據，維持。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（AERA 年會發表；發表日是活動日，不是首發日；OPR Index Date 為索引日）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "管理者先前決定待判"
+  },
+  {
+   "doi": "10.1145/3772363.3778682",
+   "title": "Developmentally Safe Generative AI Environment for Youth",
+   "venue_source_id": "CONF / C13 / Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+   "previous_reason": "工作坊提案、只寫 youth",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3772363.3778682",
+     "http": "200",
+     "utc": "2026-10-10T10:53:05Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3772363.3778682",
+     "http": "200",
+     "utc": "2026-10-10T10:53:07Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3772363.3778682?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:57:05Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3772363.3778682",
+     "http": "403",
+     "utc": "2026-10-10T11:00:03Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Developmentally%20Safe%20Generative%20AI%20Environment%20for%20Youth%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:19Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Developmentally%20Safe%20Generative%20AI%20Environment%20for%20Youth&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:06:20Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Developmentally%20Safe%20Generative%20AI%20Environment%20for%20Youth%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:06:22Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Developmentally%20Safe%20Generative%20AI%20Environment%20for%20Youth&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:24Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "\"This workshop aims to critically explore the holistic impact of GenAI on youth\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH"
+   ],
+   "ai_lit_note": "青少年生成式 AI 發展安全工作坊提案，對應 S-ETH「堅持AI的隱私保護」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "工作坊提案、只寫 youth；ACM DL 403。",
+   "first_public_date": "2026-04-13",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3706598.3713443",
+   "title": "Technologies for Children's AI Learning: Design Features and Future Opportunities",
+   "venue_source_id": "CONF / C13 / Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+   "previous_reason": "工具回顧，只寫 children，無年齡、學段",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3706598.3713443",
+     "http": "200",
+     "utc": "2026-10-10T10:53:08Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3706598.3713443",
+     "http": "200",
+     "utc": "2026-10-10T10:53:10Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3706598.3713443?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:57:09Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3706598.3713443",
+     "http": "403",
+     "utc": "2026-10-10T11:00:05Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Technologies%20for%20Children%27s%20AI%20Learning%20Design%20Features%20and%20Future%20Opportunities%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:26Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Technologies%20for%20Children%27s%20AI%20Learning%20Design%20Features%20and%20Future%20Opportunities&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:06:27Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Technologies%20for%20Children%27s%20AI%20Learning%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:06:29Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Technologies%20for%20Children%27s%20AI%20Learning&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:31Z",
+     "kind": "osf"
+    },
+    {
+     "url": "http://hdl.handle.net/10397/111659",
+     "http": "200",
+     "utc": "2026-10-10T10:55:10Z",
+     "kind": "repository"
+    },
+    {
+     "url": "https://ira.lib.polyu.edu.hk/bitstream/10397/111659/1/3706598.3713443.pdf",
+     "http": "200",
+     "utc": "2026-10-10T10:55:49Z",
+     "kind": "repository_pdf"
+    }
+   ],
+   "abstract_source": "PolyU 機構典藏（版本：Version of Record，CC BY 4.0）摘要與全文",
+   "population": "k12",
+   "population_evidence": "\"The tool aims at children aged 18 and below\"（納入條件）；\"most aimed at middle schools (ages 12–15, 63.8%) and upper primary grades (ages 9–12, 63.8%)\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-SYS"
+   ],
+   "ai_lit_note": "64 種兒童 AI 學習工具的設計特徵回顧，對應 S-BAS「理解AI運作原理與限制」。",
+   "audience": "k12",
+   "countries": [],
+   "new_decision": "import",
+   "reason": "新證據：香港理工大學典藏的出版版（CC BY）有摘要與全文。全文寫明納入 18 歲以下兒童用工具，並依幼兒園、小學低中高年級、國中、高中分析，以中小學為主（幼兒園最少）。ACM DL 403。",
+   "first_public_date": "2025-04-25",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）；典藏紀錄 2025-03-06 為入藏日，不能確定當日已公開",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "含少數幼兒園工具，但以中小學為主"
+  },
+  {
+   "doi": "10.1145/3706598.3713173",
+   "title": "AI Literacy for Underserved Students: Leveraging Cultural Capital from Underserved Communities for AI Education Research",
+   "venue_source_id": "CONF / C13 / Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+   "previous_reason": "K-12 只在研究動機；參與的 26 名學生未寫年級或年齡",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3706598.3713173",
+     "http": "200",
+     "utc": "2026-10-10T10:53:12Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3706598.3713173",
+     "http": "200",
+     "utc": "2026-10-10T10:53:13Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3706598.3713173?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:57:13Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3706598.3713173",
+     "http": "403",
+     "utc": "2026-10-10T11:00:06Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22AI%20Literacy%20for%20Underserved%20Students%20Leveraging%20Cultural%20Capital%20from%20Underserved%20Communities%20for%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:33Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=AI%20Literacy%20for%20Underserved%20Students%20Leveraging%20Cultural%20Capital%20from%20Underserved%20Communities%20for%20AI%20Education&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:06:34Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22AI%20Literacy%20for%20Underserved%20Students%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:06:36Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=AI%20Literacy%20for%20Underserved%20Students&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:38Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "S2",
+   "population": "unclear",
+   "population_evidence": "（S2 摘要）26 名學生，未寫年級年齡",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "弱勢學生 AI 素養與文化資本，對應 S-BAS「活用AI解決在地問題」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "K-12 只在研究動機；ACM DL 403；未見其他版本。缺：參與者年級或年齡。",
+   "first_public_date": "2025-04-25",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3706598.3713510",
+   "title": "\"Ethics is not neutral\": Understanding Ethical and Responsible AI Design from the Lenses of Black Youth",
+   "venue_source_id": "CONF / C13 / Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems",
+   "previous_reason": "college bridge 暑期課程，可能為升大學前後，未寫年級或年齡",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3706598.3713510",
+     "http": "200",
+     "utc": "2026-10-10T10:53:15Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3706598.3713510",
+     "http": "200",
+     "utc": "2026-10-10T10:53:16Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3706598.3713510?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:57:16Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3706598.3713510",
+     "http": "403",
+     "utc": "2026-10-10T11:00:08Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Ethics%20is%20not%20neutral%20Understanding%20Ethical%20and%20Responsible%20AI%20Design%20from%20the%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:39Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Ethics%20is%20not%20neutral%20Understanding%20Ethical%20and%20Responsible%20AI%20Design%20from%20the%20Lenses%20of&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:06:41Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Ethics%20is%20not%20neutral%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:06:43Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=%22Ethics%20is%20not%20neutral%22&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:45Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "S2",
+   "population": "unclear",
+   "population_evidence": "（S2 摘要）college bridge 暑期課程",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-SYS"
+   ],
+   "ai_lit_note": "負責任 AI 設計教學，對應 S-SYS「洞悉AI系統的設計責任」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "升大學銜接課程，未寫年級或年齡；ACM DL 403。",
+   "first_public_date": "2025-04-25",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3772363.3798673",
+   "title": "A Systematic Literature Review of Generative AI Risks and Harms for Youth",
+   "venue_source_id": "CONF / C13 / Proceedings of the Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems",
+   "previous_reason": "系統性回顧只寫 youth；內容偏風險治理",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3772363.3798673",
+     "http": "200",
+     "utc": "2026-10-10T10:53:18Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3772363.3798673",
+     "http": "200",
+     "utc": "2026-10-10T10:53:19Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3772363.3798673?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:57:20Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3772363.3798673",
+     "http": "403",
+     "utc": "2026-10-10T11:00:09Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22A%20Systematic%20Literature%20Review%20of%20Generative%20AI%20Risks%20and%20Harms%20for%20Youth%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:46Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=A%20Systematic%20Literature%20Review%20of%20Generative%20AI%20Risks%20and%20Harms%20for%20Youth&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:06:48Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22A%20Systematic%20Literature%20Review%20of%20Generative%20AI%20Risks%20and%20Harms%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:06:50Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=A%20Systematic%20Literature%20Review%20of%20Generative%20AI%20Risks&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:06:52Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "\"Through a systematic review of 95 research articles, we synthesize key trends and gaps in the youth—generative AI risk literature\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH"
+   ],
+   "ai_lit_note": "青少年生成式 AI 風險回顧，對應 S-ETH「堅持AI的隱私保護」；偏風險治理。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "只寫 youth；ACM DL 403。",
+   "first_public_date": "2026-04-13",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K5",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.1145/3772318.3791483",
+   "title": "Talking About Brainrot: Youth Engagement with AI-Generated Content and the Dynamics of Intergenerational Communication",
+   "venue_source_id": "CONF / C13 / Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems",
+   "previous_reason": "年齡明示但非學習情境，AI 素養只在結論（管理者先前決定維持待判）",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1145/3772318.3791483",
+     "http": "200",
+     "utc": "2026-10-10T10:53:21Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1145/3772318.3791483",
+     "http": "200",
+     "utc": "2026-10-10T10:53:23Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1145/3772318.3791483?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:57:24Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1145/3772318.3791483",
+     "http": "403",
+     "utc": "2026-10-10T11:00:11Z",
+     "kind": "landing",
+     "note": "Cloudflare 驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Talking%20About%20Brainrot%20Youth%20Engagement%20with%20AI-Generated%20Content%20and%20the%20Dynamics%20of%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:07:24Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Talking%20About%20Brainrot%20Youth%20Engagement%20with%20AI-Generated%20Content%20and%20the%20Dynamics%20of%20Intergenerational%20Communication&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:07:25Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Talking%20About%20Brainrot%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:07:27Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Talking%20About%20Brainrot&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:07:29Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://hdl.handle.net/11572/489311",
+     "http": "200",
+     "utc": "2026-10-10T10:55:14Z",
+     "kind": "repository"
+    }
+   ],
+   "abstract_source": "openalex；Trento 大學 IRIS 典藏（同摘要）",
+   "population": "unclear",
+   "population_evidence": "\"89 adolescents aged 12 - 14 regarding Italian Brainrot\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH"
+   ],
+   "ai_lit_note": "青少年對 AI 生成內容的態度，對應 S-ETH「具備對AI的批判思考」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "管理者先前決定待判（年齡明示但非學習情境）。典藏版只有同一摘要，沒有新證據。",
+   "first_public_date": "2026-04-13",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）",
+   "category_suggestion": "K2",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": "管理者先前決定待判"
+  },
+  {
+   "doi": "10.1109/icalt64023.2025.00035",
+   "title": "WekiMusic: Machine Learning Music Activities to Foster Constructionist AI Education",
+   "venue_source_id": "CONF / C18 / 2025 IEEE International Conference on Advanced Learning Technologies (ICALT)",
+   "previous_reason": "只寫 students，無學段或年齡",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.1109/icalt64023.2025.00035",
+     "http": "200",
+     "utc": "2026-10-10T10:53:25Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.1109/icalt64023.2025.00035",
+     "http": "200",
+     "utc": "2026-10-10T10:53:26Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.1109/icalt64023.2025.00035?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:57:28Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.1109/icalt64023.2025.00035",
+     "http": "202",
+     "utc": "2026-10-10T11:00:12Z",
+     "kind": "landing",
+     "note": "IEEE 空白驗證頁（未繞過）"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22WekiMusic%20Machine%20Learning%20Music%20Activities%20to%20Foster%20Constructionist%20AI%20Education%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:07:30Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=WekiMusic%20Machine%20Learning%20Music%20Activities%20to%20Foster%20Constructionist%20AI%20Education&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:07:32Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22WekiMusic%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:07:34Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=WekiMusic&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:07:36Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "openalex／S2",
+   "population": "unclear",
+   "population_evidence": "\"We propose a set of activities to foster learning about AI in a creative music environment\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS"
+   ],
+   "ai_lit_note": "以音樂機器學習活動學習 AI，對應 S-BAS「理解AI運作原理與限制」。",
+   "audience": "unknown",
+   "countries": [],
+   "new_decision": "still_pending",
+   "reason": "只寫 students；IEEE Xplore 回 202 驗證頁；未見其他版本。缺：學段。",
+   "first_public_date": "unknown",
+   "first_public_basis": "unknown（Crossref 無 published-online，出版者頁讀不到）",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": false,
+   "manager_flag": null
+  },
+  {
+   "doi": "10.3390/educsci16060987",
+   "title": "Engaging High School Students in Robotics and Artificial Intelligence Through Engineering Design Robotics Education",
+   "venue_source_id": "lead / Education Sciences",
+   "previous_reason": "新線索：import.md 第 24 行，與 AERA 原件版本關係未確認；依一般流程獨立篩選。(new lead; Education Sciences 2026)",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.3390/educsci16060987",
+     "http": "200",
+     "utc": "2026-10-10T10:53:28Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.3390/educsci16060987",
+     "http": "200",
+     "utc": "2026-10-10T10:53:30Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.3390/educsci16060987?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:57:32Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.3390/educsci16060987",
+     "http": "403",
+     "utc": "2026-10-10T11:00:14Z",
+     "kind": "landing"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Engaging%20High%20School%20Students%20in%20Robotics%20and%20Artificial%20Intelligence%20Through%20Engineering%20Design%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:07:38Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Engaging%20High%20School%20Students%20in%20Robotics%20and%20Artificial%20Intelligence%20Through%20Engineering%20Design%20Robotics%20Education&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "200",
+     "utc": "2026-10-10T11:07:40Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Engaging%20High%20School%20Students%20in%20Robotics%20and%20Artificial%20Intelligence%20Through%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:07:42Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Engaging%20High%20School%20Students%20in%20Robotics%20and%20Artificial&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:07:43Z",
+     "kind": "osf"
+    }
+   ],
+   "abstract_source": "crossref／openalex",
+   "population": "k12",
+   "population_evidence": "\"introduced novice Computer Science (CS) high school students to robotics, machine learning, and AI\"",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-SYS"
+   ],
+   "ai_lit_note": "高中生 AI 機器人工程設計課程，對應 S-BAS「理解AI運作原理與限制」與 S-SYS「整合理論與實踐以深化AI系統」。",
+   "audience": "k12",
+   "countries": [],
+   "new_decision": "import",
+   "reason": "摘要寫明高中生。MDPI 頁 403，未核出版者頁。和 AERA 2025 的 10.3102/2190458 第一作者相同、摘要多句相同、題名相近，似為其後的期刊版本；DOI 不同，作為獨立紀錄，不自動併檔。",
+   "first_public_date": "2026-06-22",
+   "first_public_basis": "Crossref published-online（出版者 manifestation 日，不一定是全球最早公開）；MDPI 頁 403 未核",
+   "category_suggestion": "K6",
+   "in_kb": false,
+   "is_new_lead": true,
+   "manager_flag": "疑為 AERA 2190458 的期刊版"
+  },
+  {
+   "doi": "10.30935/cedtech/14619",
+   "title": "Development of an AI literacy assessment for non-technical individuals: What do teachers know?",
+   "venue_source_id": "lead / Contemporary Educational Technology",
+   "previous_reason": "新線索：import.md 第 24 行，與 AERA 原件版本關係未確認；依一般流程獨立篩選。(new lead; CEDTECH 2024)",
+   "sources_tried": [
+    {
+     "url": "https://api.openalex.org/works/doi:10.30935/cedtech/14619",
+     "http": "200",
+     "utc": "2026-10-10T10:53:32Z",
+     "kind": "openalex"
+    },
+    {
+     "url": "https://api.crossref.org/works/10.30935/cedtech/14619",
+     "http": "200",
+     "utc": "2026-10-10T10:53:34Z",
+     "kind": "crossref"
+    },
+    {
+     "url": "https://api.semanticscholar.org/graph/v1/paper/DOI:10.30935/cedtech/14619?fields=title,abstract,externalIds,openAccessPdf,publicationDate",
+     "http": "200",
+     "utc": "2026-10-10T10:57:36Z",
+     "kind": "s2"
+    },
+    {
+     "url": "https://doi.org/10.30935/cedtech/14619",
+     "http": "200",
+     "utc": "2026-10-10T11:00:20Z",
+     "kind": "landing"
+    },
+    {
+     "url": "https://export.arxiv.org/api/query?search_query=ti%3A%22Development%20of%20an%20AI%20literacy%20assessment%20for%20non-technical%20individuals%20What%20do%20teachers%22&max_results=5",
+     "http": "200",
+     "utc": "2026-10-10T11:07:45Z",
+     "kind": "arxiv"
+    },
+    {
+     "url": "https://api.openalex.org/works?search=Development%20of%20an%20AI%20literacy%20assessment%20for%20non-technical%20individuals%20What%20do%20teachers%20know%3F&per_page=8&select=id,doi,title,type,primary_location,publication_year",
+     "http": "400",
+     "utc": "2026-10-10T11:07:46Z",
+     "kind": "openalex_title"
+    },
+    {
+     "url": "https://api.ies.ed.gov/eric/?search=title%3A%22Development%20of%20an%20AI%20literacy%20assessment%20for%20non-technical%20individuals%22&format=json&rows=5&fields=id,title,description,educationlevel,publicationdateyear,url,source,publicationtype",
+     "http": "200",
+     "utc": "2026-10-10T11:07:49Z",
+     "kind": "eric"
+    },
+    {
+     "url": "https://api.osf.io/v2/preprints/?filter[title]=Development%20of%20an%20AI%20literacy%20assessment%20for%20non-technical&page[size]=5",
+     "http": "200",
+     "utc": "2026-10-10T11:07:51Z",
+     "kind": "osf"
+    },
+    {
+     "url": "https://www.cedtech.net/download/development-of-an-ai-literacy-assessment-for-non-technical-individuals-what-do-teachers-know-14619.pdf",
+     "http": "200",
+     "utc": "2026-10-10T11:11:48Z",
+     "kind": "publisher_pdf"
+    }
+   ],
+   "abstract_source": "crossref／openalex；CEDTECH 出版者頁與全文 PDF",
+   "population": "teacher_ed",
+   "population_evidence": "\"40.3% of participants were pre-candidacy, 38.7% were in candidacy, 19.9% were in-service teachers\"（全文）",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS"
+   ],
+   "ai_lit_note": "職前與在職教師 AI 素養客觀評量的發展與驗證，對應 T-BAS「理解AI的數據與運作」。",
+   "audience": "teacher_ed",
+   "countries": [
+    "US"
+   ],
+   "new_decision": "import",
+   "reason": "摘要寫職前與在職教師混合；出版者全文寫明約 79% 為師資生（pre-candidacy 加 in candidacy），主要對象判 teacher_ed（比照 TATE 105433 依 79% 判主要對象）。國別依摘要「in the United States」。只進月報。",
+   "first_public_date": "2024-05-14",
+   "first_public_basis": "CEDTECH 出版者頁 Published Online 14 May 2024（citation_online_date 2024-05-14；Crossref 無 published-online，issued 2024-07-01）",
+   "category_suggestion": "K3",
+   "in_kb": false,
+   "is_new_lead": true,
+   "manager_flag": "「pre-candidacy／in candidacy」解讀為師資生，請管理者確認"
+  }
+ ]
+}

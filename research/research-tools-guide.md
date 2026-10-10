@@ -28,7 +28,8 @@
 | Exa、Liner、Wiley Scholar Gateway（Claude 連接器） | **不可用** | — | 需在 claude.ai connector 設定做 OAuth 授權；非互動 session 無法授權 |
 | Semantic Scholar | 常 429 | — | LR-AI 外掛依賴它，可能受影響；2026-10-10 學者月檢索實測：DOI 查詢多回 404，題名搜尋 5 次全部 429 |
 | 出版社頁：ScienceDirect／Elsevier、Taylor & Francis、Wiley、SAGE、MDPI、Emerald、Routledge、ResearchGate | **AI 多半讀不到** | — | 403、只回轉址腳本（2026-10-10 學者月檢索實測） |
-| 出版社頁：Springer（含 BMC）、Frontiers、小型 OJS（如 RPTEL） | 2026-10-10 實測可讀 | G1 書目、首發日 | 讀頁面 `citation_online_date`、`citation_publication_date`、`citation_volume`；Frontiers 的 `citation_online_date` 是接受日，首發日看 Published（見 3.6）；Springer 曾回 303／JS 驗證頁（PR #115），讀不到時照 3.6 處理 |
+| 出版社頁：Springer（含 BMC）、Frontiers、小型 OJS（如 RPTEL） | 2026-10-10 實測可讀；Springer 時好時壞（同日稍晚回 JS「Client Challenge」頁） | G1 書目、首發日 | 讀頁面 `citation_online_date`、`citation_publication_date`、`citation_volume`；Frontiers 的 `citation_online_date` 是接受日，首發日看 Published（見 3.6）；Springer 曾回 303／JS 驗證頁（PR #115），讀不到時照 3.6 處理 |
+| AERA Online Paper Repository（`research.allacademic.com/meta/p<ID>_index.html`） | 2026-10-10 實測可讀 | AERA 會議論文官方摘要；部分有作者上傳全文 | 只用一般 session cookie，沒有驗證頁；作者上傳全文可當學段證據，須註明（管理者 2026-10-10） |
 | `research/scholar-watch-run.js` | 可用 | 學者追蹤依作者檢索 | 由學者清單產生查詢、去重、比對知識庫與候選池、產生 `search_runs.csv` 列；不判讀 |
 | SciSpace、LR-AI、Citation Needed | 未實測 | — | 使用前先小量試跑並記錄 |
 
@@ -120,7 +121,7 @@ https://arxiv.org/abs/2503.00079                              → Submission his
 
 ### 3.6 出版社頁
 
-AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只回轉址腳本、T&F 403；Wiley、SAGE、MDPI、Emerald、Routledge、ResearchGate 也讀不到（2026-10-10）。Springer 曾回 303／JS challenge，但 2026-10-10 學者月檢索時 Springer、Frontiers 與 RPTEL（OJS）的文章頁都可讀，日期取自頁面 `citation_*` 標籤；可讀性會變，每次照實記錄。**不要嘗試繞過驗證頁**（之前雲端瀏覽器代理曾自行點擊驗證頁，已列為禁止）。讀不到就把紀錄留在 `discovered_unverified`、日期 unknown，交給可讀的環境或真人。
+AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只回轉址腳本、T&F 403；Wiley、SAGE、MDPI、Emerald、Routledge、ResearchGate 也讀不到（2026-10-10）。Springer 曾回 303／JS challenge；2026-10-10 學者月檢索時 Springer、Frontiers 與 RPTEL（OJS）的文章頁都可讀，但同日 B1 待判重篩時 Springer 又回 JS「Client Challenge」頁，所以 Springer 屬時好時壞，日期取自頁面 `citation_*` 標籤；可讀性會變，每次照實記錄。**不要嘗試繞過驗證頁**（之前雲端瀏覽器代理曾自行點擊驗證頁，已列為禁止）。讀不到就把紀錄留在 `discovered_unverified`、日期 unknown，交給可讀的環境或真人。
 
 - **Frontiers 首發日以頁面「Published」或 Crossref `published-online` 為準**（管理者 2026-10-10 決定，取代同日稍早「以 `citation_online_date` 為首發日」的寫法）。`citation_online_date` 等於同頁「Accepted」接受日，不是公開日：B-AIMT（10.3389/feduc.2026.1885959）頁面為 Accepted 2026-08-31、Published 2026-09-28，Crossref 的 published-online 與 DOI 建立日都是 2026-09-28。接受日另記。有更早的預印本時以預印本為準。
 - Springer（含 BMC、SpringerOpen）的 `citation_online_date` 是 First Online 日，2026-10-10 抽查 15 筆都與 Crossref `published-online` 相同。
