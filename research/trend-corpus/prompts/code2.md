@@ -15,7 +15,9 @@ even when you think you know the paper. Never consult `research/knowledge-base/`
   there is no AI. If unsure: unknown. Acceptance / intention-to-use / satisfaction studies of a given
   AI tool (TAM, UTAUT …) are B. Learners operating an ITS: B; ITS logs or models only: C. AI-TPACK or
   GenAI teacher training: A. When a study has both A and B content (other than acceptance studies), take A.
-  ITS: did learners/teachers actually use it and were their data collected here?
+  Outside education altogether (public opinion, workplace, society-level ethics essays, home use with no
+  learning) → C, noting "非教育情境"; EdTech firms, schools or authorities discussing AI ethics count as
+  education. ITS: did learners/teachers actually use it and were their data collected here?
 - `b_subtype` for B only — check in this order and take the first: genai, its_adaptive, robot_agent
   (robots, agents, chatbots explicitly rule-based), other (incl. chatbots of unstated type).
 - `audience_role` — unknown | non_k12 | other_stakeholder | preservice_teacher | inservice_teacher | student.

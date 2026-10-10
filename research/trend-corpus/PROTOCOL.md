@@ -117,8 +117,8 @@
 
 ## 6. 範圍準則與操作細則、編碼手冊、提示
 
-- **範圍準則：**[AI 素養範圍判斷準則](../ai-literacy-scope-criteria.md) v0.4，加上本方案兩條操作細則：ITS（方案第 2.5 節）、接受度研究（管理者 2026-10-10 決定）。
-- **編碼手冊：**[codebook-v1.md](codebook-v1.md)，含 2022 年試編 20 篇的結果與修改，見 [pilot-2022/report.md](pilot-2022/report.md)。試編修改 P1（非教育情境判 C）待管理者決定，未生效。
+- **範圍準則：**[AI 素養範圍判斷準則](../ai-literacy-scope-criteria.md) v0.4，加上本方案三條操作細則：ITS（方案第 2.5 節）、接受度研究（管理者 2026-10-10 決定）、非教育情境判 C（試編修改 P1，管理者 2026-10-10 決定）。
+- **編碼手冊：**[codebook-v1.md](codebook-v1.md)，含 2022 年試編 20 篇的結果與修改，見 [pilot-2022/report.md](pilot-2022/report.md)。試編修改 P1（非教育情境判 C）由管理者 2026-10-10 決定採用，只作本方案操作細則。
 - **提示：**[prompts/](prompts/) 共三組，SHA-256 見 `prompts/SHA256SUMS`。D1 時凍結；凍結後任何修改都要重算雜湊並記入 `DEVIATIONS.csv`。
 
 ## 7. `calib.csv` 與 `anchor.csv`
