@@ -58,6 +58,7 @@ body{background:var(--bg)}
 .rec-table .year{font-weight:700;width:90px}
 .rec-table .type{font-size:13px;color:var(--muted)}
 .rec-table .tags{margin-left:10px;color:var(--teal)}
+.rec-table .tags2{font-size:13px;color:var(--blue-strong);margin-top:2px}
 
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:12px}
 .stat{background:var(--tint-blue);border-radius:12px;padding:16px}
