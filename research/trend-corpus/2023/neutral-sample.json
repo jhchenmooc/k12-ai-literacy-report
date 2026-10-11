@@ -1,0 +1,1825 @@
+{
+ "year": 2023,
+ "seed": 20281241,
+ "seed_derivation": "20261010+2023*10+1",
+ "deviation": "DEV-008",
+ "codebook_version": "v2+DEV-004",
+ "population": "rerun-dev001/2023/ids-neutral-minus-main.json (640)",
+ "n": 200,
+ "sampling": "random.Random(20281241).sample(sorted pop,200)",
+ "with_abstract": 121,
+ "summary": {
+  "A": 6,
+  "A_main_audience": 1,
+  "main_audience_wilson95": [
+   0.0009,
+   0.0278
+  ],
+  "A_any_wilson95": [
+   0.0138,
+   0.0639
+  ]
+ },
+ "items": [
+  {
+   "work_id": "W4386374473",
+   "order": 1,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386845339",
+   "order": 2,
+   "has_abstract": false,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4390266861",
+   "order": 3,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387731488",
+   "order": 4,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4380446958",
+   "order": 5,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4313596455",
+   "order": 6,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389399746",
+   "order": 7,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "inservice_teacher",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4319603055",
+   "order": 8,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387098726",
+   "order": 9,
+   "has_abstract": true,
+   "ai_lit_class": "A",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4376504636",
+   "order": 10,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4380342508",
+   "order": 11,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4385955148",
+   "order": 12,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389047181",
+   "order": 13,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "other_stakeholder",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4319943379",
+   "order": 14,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4323305057",
+   "order": 15,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4361269404",
+   "order": 16,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4385894118",
+   "order": 17,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4318705726",
+   "order": 18,
+   "has_abstract": false,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386458475",
+   "order": 19,
+   "has_abstract": false,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "its_adaptive",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388020627",
+   "order": 20,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386029813",
+   "order": 21,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386252521",
+   "order": 22,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4376880298",
+   "order": 23,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4319834193",
+   "order": 24,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388088357",
+   "order": 25,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4376872787",
+   "order": 26,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4382513770",
+   "order": 27,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4323338676",
+   "order": 28,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4323844901",
+   "order": 29,
+   "has_abstract": true,
+   "ai_lit_class": "A",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4327723894",
+   "order": 30,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4367680306",
+   "order": 31,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4383113492",
+   "order": 32,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "other",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4315471519",
+   "order": 33,
+   "has_abstract": false,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386391472",
+   "order": 34,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4316881865",
+   "order": 35,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388902471",
+   "order": 36,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4384340473",
+   "order": 37,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4381546094",
+   "order": 38,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4376270342",
+   "order": 39,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4313530593",
+   "order": 40,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386845288",
+   "order": 41,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4380986416",
+   "order": 42,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4317039113",
+   "order": 43,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4365814241",
+   "order": 44,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387164696",
+   "order": 45,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4320493647",
+   "order": 46,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387305731",
+   "order": 47,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "inservice_teacher",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4324380807",
+   "order": 48,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4385496748",
+   "order": 49,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386416012",
+   "order": 50,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389286808",
+   "order": 51,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "non_k12",
+   "b_subtype": "other",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4384557477",
+   "order": 52,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386498410",
+   "order": 53,
+   "has_abstract": true,
+   "ai_lit_class": "A",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388142110",
+   "order": 54,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4327814008",
+   "order": 55,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "preservice_teacher",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386929423",
+   "order": 56,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4315796092",
+   "order": 57,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4317396764",
+   "order": 58,
+   "has_abstract": false,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4381331218",
+   "order": 59,
+   "has_abstract": false,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4384823985",
+   "order": 60,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4381280827",
+   "order": 61,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389514958",
+   "order": 62,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4315866348",
+   "order": 63,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386393219",
+   "order": 64,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388767566",
+   "order": 65,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386981254",
+   "order": 66,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389169158",
+   "order": 67,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4360618294",
+   "order": 68,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4319348251",
+   "order": 69,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389522891",
+   "order": 70,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388291772",
+   "order": 71,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4390346716",
+   "order": 72,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4381053118",
+   "order": 73,
+   "has_abstract": false,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4324094416",
+   "order": 74,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4368367214",
+   "order": 75,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4366991013",
+   "order": 76,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388493240",
+   "order": 77,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4384823646",
+   "order": 78,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387844679",
+   "order": 79,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4390115048",
+   "order": 80,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389085677",
+   "order": 81,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4321616889",
+   "order": 82,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4317806661",
+   "order": 83,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4381890287",
+   "order": 84,
+   "has_abstract": false,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "its_adaptive",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389371482",
+   "order": 85,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4363677429",
+   "order": 86,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4313462818",
+   "order": 87,
+   "has_abstract": false,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389991121",
+   "order": 88,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389003352",
+   "order": 89,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387639724",
+   "order": 90,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386021815",
+   "order": 91,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "other",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4379743797",
+   "order": 92,
+   "has_abstract": false,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4381333188",
+   "order": 93,
+   "has_abstract": false,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387577096",
+   "order": 94,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4385701123",
+   "order": 95,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387367262",
+   "order": 96,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "non_k12",
+   "b_subtype": "other",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386192366",
+   "order": 97,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387670506",
+   "order": 98,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "preservice_teacher",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386806263",
+   "order": 99,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388841656",
+   "order": 100,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4319340077",
+   "order": 101,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388430418",
+   "order": 102,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388441859",
+   "order": 103,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4377982542",
+   "order": 104,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387335851",
+   "order": 105,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4385638677",
+   "order": 106,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4361988250",
+   "order": 107,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "student",
+   "b_subtype": "its_adaptive",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4323353524",
+   "order": 108,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388341358",
+   "order": 109,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389365236",
+   "order": 110,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "its_adaptive",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4380080421",
+   "order": 111,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389245230",
+   "order": 112,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389820116",
+   "order": 113,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4384559155",
+   "order": 114,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4366691516",
+   "order": 115,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4318473402",
+   "order": 116,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4368405459",
+   "order": 117,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "student",
+   "b_subtype": "robot_agent",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4376108296",
+   "order": 118,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388704682",
+   "order": 119,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4390196828",
+   "order": 120,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "preservice_teacher",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4385717689",
+   "order": 121,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4380356810",
+   "order": 122,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "inservice_teacher",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4360978670",
+   "order": 123,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4323075215",
+   "order": 124,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4361207552",
+   "order": 125,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4323838880",
+   "order": 126,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4366988470",
+   "order": 127,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4385984511",
+   "order": 128,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "robot_agent",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4381327944",
+   "order": 129,
+   "has_abstract": false,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4381094249",
+   "order": 130,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387232713",
+   "order": 131,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4377292096",
+   "order": 132,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387570757",
+   "order": 133,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389380998",
+   "order": 134,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4383112416",
+   "order": 135,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4390187299",
+   "order": 136,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389228108",
+   "order": 137,
+   "has_abstract": false,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "other",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387341320",
+   "order": 138,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4382561994",
+   "order": 139,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4376875576",
+   "order": 140,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4385663457",
+   "order": 141,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "non_k12",
+   "b_subtype": "other",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4381799832",
+   "order": 142,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "student",
+   "b_subtype": "robot_agent",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4381331127",
+   "order": 143,
+   "has_abstract": false,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387674827",
+   "order": 144,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4365137534",
+   "order": 145,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386558613",
+   "order": 146,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4321606409",
+   "order": 147,
+   "has_abstract": false,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "robot_agent",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4320730555",
+   "order": 148,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389676052",
+   "order": 149,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4366293004",
+   "order": 150,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389200127",
+   "order": 151,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4316467692",
+   "order": 152,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4313528596",
+   "order": 153,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389379143",
+   "order": 154,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388825079",
+   "order": 155,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389052201",
+   "order": 156,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4324316336",
+   "order": 157,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4383501043",
+   "order": 158,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388599777",
+   "order": 159,
+   "has_abstract": true,
+   "ai_lit_class": "A",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4360937518",
+   "order": 160,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386025894",
+   "order": 161,
+   "has_abstract": false,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "robot_agent",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4323656760",
+   "order": 162,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "other",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389608635",
+   "order": 163,
+   "has_abstract": true,
+   "ai_lit_class": "A",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4388342125",
+   "order": 164,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4319792981",
+   "order": 165,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387696279",
+   "order": 166,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389829757",
+   "order": 167,
+   "has_abstract": false,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4323668000",
+   "order": 168,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4318473277",
+   "order": 169,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4383198783",
+   "order": 170,
+   "has_abstract": true,
+   "ai_lit_class": "unknown",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389565313",
+   "order": 171,
+   "has_abstract": false,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "robot_agent",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4390168775",
+   "order": 172,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4366277659",
+   "order": 173,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389751603",
+   "order": 174,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387527427",
+   "order": 175,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4377079823",
+   "order": 176,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "robot_agent",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4323074799",
+   "order": 177,
+   "has_abstract": false,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "other",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386293758",
+   "order": 178,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4362603355",
+   "order": 179,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4386379177",
+   "order": 180,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389265085",
+   "order": 181,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389403223",
+   "order": 182,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "student",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4360616584",
+   "order": 183,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "robot_agent",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4380086832",
+   "order": 184,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4390045618",
+   "order": 185,
+   "has_abstract": true,
+   "ai_lit_class": "A",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4387694700",
+   "order": 186,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4321459076",
+   "order": 187,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "unknown",
+   "b_subtype": "other",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389607820",
+   "order": 188,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4383816766",
+   "order": 189,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4385875421",
+   "order": 190,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4328052790",
+   "order": 191,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4362677935",
+   "order": 192,
+   "has_abstract": true,
+   "ai_lit_class": "B",
+   "audience_role": "student",
+   "b_subtype": "other",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389720841",
+   "order": 193,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4362588267",
+   "order": 194,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4321380990",
+   "order": 195,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4323363814",
+   "order": 196,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4323314896",
+   "order": 197,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4389559373",
+   "order": 198,
+   "has_abstract": true,
+   "ai_lit_class": "C",
+   "audience_role": "non_k12",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4319742886",
+   "order": 199,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  },
+  {
+   "work_id": "W4366123589",
+   "order": 200,
+   "has_abstract": false,
+   "ai_lit_class": "C",
+   "audience_role": "unknown",
+   "b_subtype": "",
+   "model_id": "claude-opus-5-5"
+  }
+ ]
+}

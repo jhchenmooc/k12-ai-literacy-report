@@ -1,0 +1,62 @@
+work_id,ai_lit_class,cue_kind,coded_role,final_role,final_stage,resolution
+W4313528327,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4313594765,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4315481000,B,student,student,student,primary,DEV-004a-step2
+W4315491555,A,student,student,student,k12_unspecified,DEV-004a-step1
+W4315628699,A,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4318474896,A,student,unknown,unknown,unknown,DEV-004a-step2-nopart
+W4319754774,B,teacher,unknown,unknown,unknown,DEV-004a-remaining
+W4320479697,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4321434840,A,student,unknown,unknown,unknown,DEV-004a-step2-nopart
+W4321504196,B,student,unknown,unknown,unknown,DEV-004a-step2-nopart
+W4323050330,B,student,unknown,non_k12,unknown,DEV-004a-step2
+W4328097142,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4362469388,A,teacher,unknown,inservice_teacher,k12_unspecified,DEV-004a-step1
+W4362585490,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4366364476,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4367055302,B,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4367678106,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4372319207,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4376504027,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4376876458,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4377041914,B,student,unknown,unknown,unknown,DEV-004a-step2-nopart
+W4377226186,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4377294106,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4377861552,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4377984209,A,student,student,student,k12_unspecified,DEV-004a-step1
+W4378194714,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4379054888,B,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4379647813,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4380084457,B,teacher,unknown,unknown,unknown,DEV-004a-step2-nopart
+W4381614678,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4381686136,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4381951307,B,student,unknown,unknown,unknown,DEV-004a-step2-nopart
+W4383818129,B,teacher,unknown,unknown,unknown,DEV-004a-remaining
+W4383904000,A,teacher,unknown,non_k12,unknown,DEV-004a-step4-mgrpdf
+W4385335298,B,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4385548927,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4385632485,B,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4385659957,B,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4385812807,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4385985344,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4385988305,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4386140755,B,teacher,unknown,unknown,unknown,DEV-004a-remaining
+W4386200776,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4386253898,A,teacher,unknown,inservice_teacher,k12_unspecified,DEV-004a-step3-mgrpdf
+W4386625109,B,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4386836433,A,student,unknown,student,primary,DEV-004a-step4-mgrpdf
+W4387080494,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4387082112,A,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4387367971,A,student,unknown,non_k12,unknown,DEV-004a-step3-mgrpdf
+W4387385582,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4387819669,A,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4388000629,B,student,unknown,non_k12,unknown,DEV-004a-step2
+W4388136902,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4388342871,B,teacher,unknown,unknown,unknown,DEV-004a-remaining
+W4388461862,A,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4388945822,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4389429764,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4389497583,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4389613414,A,student,unknown,unknown,unknown,DEV-004a-step3-mgrpdf
+W4389804697,A,student,unknown,non_k12,unknown,DEV-004a-step3-mgrpdf
+W4390339540,B,student,unknown,unknown,unknown,DEV-004a-remaining
