@@ -66,6 +66,18 @@ test("archive lists weekly candidates once their source is checked",()=>{
  assert.equal(rows[0].date,"2026-10-10 首發");assert.equal(rows[0].status[1],"書目已核");
 });
 
+test("archive groups preprints separately and shows the high-citation tag",()=>{
+ const records=[
+  {record_id:"KB-2026-9021",title:"A preprint",primary_url:"https://arxiv.org/abs/1",record_type:"preprint",year_value:"2026",year_basis:"first_publication",first_published_on:"2026-10-05",verification_status:"bibliographic_checked",source_candidate_id:""},
+  {record_id:"KB-2025-9022",title:"Cited article",primary_url:"https://example.org/c",record_type:"journal_article",year_value:"2025",year_basis:"issue_year",first_published_on:"",verification_status:"discovered_unverified",source_candidate_id:""}];
+ const relations=[{subject_id:"KB-2025-9022",predicate:"published_in",object_id:"J02"},{subject_id:"KB-2025-9022",predicate:"has_citation_flag",object_id:"CITED_TOP10_SAME_YEAR"}];
+ const d=archiveData(records,relations,[{id:"J02",name:"Journal Two"}]);
+ const pre=d.journals.find(g=>g.key==="7-preprint");
+ assert.ok(pre);assert.deepEqual(pre.rows.map(r=>r.id),["KB-2026-9021"]);assert.equal(pre.rows[0].type,"預印本");
+ const cited=d.journals.flatMap(g=>g.rows).find(r=>r.id==="KB-2025-9022");
+ assert.ok(cited.tags3.includes("高引用"));assert.ok(!pre.rows[0].tags3.includes("高引用"));
+});
+
 test("a generated daily edition page passes the publication gate unchanged",t=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),"render-site-"));t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
  const excerpt="This fictional agency published a nonbinding advisory for secondary-school educators.";
