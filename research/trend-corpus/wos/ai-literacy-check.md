@@ -8,5 +8,5 @@
   - 13 筆在 OpenAlex 題名與摘要中沒有「AI literacy」：WoS 的 ALL 欄位含作者關鍵字與 Keywords Plus，不符方案「題名＋摘要」定義，不算漏收。
   - 2 筆 OpenAlex 沒有摘要：題名子查詢只看題名，詞只出現在摘要時會漏，列入限制（OpenAlex 摘要缺漏）。
   - 1 筆 OpenAlex 類型為 editorial、WoS 為 Article：被 `type:article|review` 排除，列入限制（類型差異）。
-- **其他：**同日另檢 WoS 高被引／熱門論文 188 筆時，另見 1 筆 2023 年論文被 OpenAlex 標為 book-chapter 而排除。面板期刊 J02（Computers & Education: Artificial Intelligence）在這批匯出中沒有紀錄，待正式對照確認 WoS 是否收錄。
+- **其他：**同日另檢 WoS 高被引／熱門論文 188 筆時，另見 1 筆 2023 年論文被 OpenAlex 標為 book-chapter 而排除。面板期刊 J02（Computers & Education: Artificial Intelligence）在這批匯出中沒有紀錄，管理者以 `IS=(2666-920X)` 確認 WoS Core Collection 未收錄。
 - **判讀：**只涵蓋一個詞，不推估漏收率；結果併入 D7 正式對照的限制說明。
