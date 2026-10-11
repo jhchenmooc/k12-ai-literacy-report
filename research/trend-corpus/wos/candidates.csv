@@ -1,0 +1,21 @@
+UT,doi,PY,journal_code,status,work_id,reason,ai_lit_class,audience_role,main_denominator
+WOS:001459436700001,10.1007/s10639-025-13531-7,2025,J05,oa_2025_not_in_union,W4409186755,OpenAlex 類型 book-chapter（被 type 篩選排除）,B,unknown,
+WOS:001551411100005,10.1057/s41599-025-05618-w,2025,J33,not_in_openalex,,DOI 在 OpenAlex 查無（2026-10-11）,C,unknown,
+WOS:001473584200001,10.1057/s41599-025-04814-y,2025,J33,oa_2025_not_in_union,W4409703240,OpenAlex 摘要含 ChatGPT，但 2026-10-11 以 title_and_abstract.search 查此 ID 為 0（OpenAlex 檢索索引與摘要不一致）,C,unknown,
+WOS:001501976000001,10.1007/s10639-025-13560-2,2025,J05,oa_2025_not_in_union,W4411035837,OpenAlex 類型 book-chapter,B,unknown,
+WOS:001484403900001,10.1007/s10639-025-13605-6,2025,J05,oa_2025_not_in_union,W4410245529,OpenAlex 類型 supplementary-materials,B,student,
+WOS:001508058000001,10.1007/s10639-025-13650-1,2025,J05,oa_2025_not_in_union,W4411310510,OpenAlex 類型 book-chapter,A,non_k12,
+WOS:001553993400001,10.1016/j.compedu.2025.105434,2025,J01,not_in_openalex,,DOI 在 OpenAlex 查無（2026-10-11）,B,unknown,
+WOS:001525044300001,10.1177/07356331251359964,2025,J36,oa_2025_not_in_union,W4412120312,OpenAlex 類型 editorial,unknown,unknown,
+WOS:001438312400001,10.1007/s11423-025-10467-0,2025,J07,oa_2025_not_in_union,W4408190088,"OpenAlex 無摘要；題名為「GPT-4.0」，title.search:""GPT-4"" 查此 ID 為 0",B,non_k12,
+WOS:001585572400001,10.1016/j.tate.2025.105219,2025,J20,not_in_openalex,,DOI 在 OpenAlex 查無（2026-10-11）,B,inservice_teacher,
+WOS:001615287500002,10.1109/tlt.2025.3622043,2025,J27,not_in_openalex,,DOI 在 OpenAlex 查無（2026-10-11）,B,non_k12,
+WOS:001631848500003,10.1109/tlt.2025.3626545,2025,J27,not_in_openalex,,DOI 在 OpenAlex 查無（2026-10-11）,C,unknown,
+WOS:001416840700001,10.1007/s10956-025-10200-9,2025,J37,oa_2025_not_in_union,W4407344889,OpenAlex 類型 editorial,A,preservice_teacher,
+WOS:001600713900001,10.1007/s10639-025-13762-8,2026,J05,not_in_openalex,,DOI 在 OpenAlex 查無（2026-10-11）,A,inservice_teacher,yes
+WOS:001584925200001,10.1016/j.compedu.2025.105465,2026,J01,not_in_openalex,,DOI 在 OpenAlex 查無（2026-10-11）,A,unknown,
+WOS:001562498600001,10.1007/s10639-025-13755-7,2025,J05,oa_2025_not_in_union,W4413959816,OpenAlex 類型 book-chapter,B,unknown,
+WOS:001531084400001,10.1007/s10956-025-10240-1,2026,J37,oa_2025_not_in_union,W4413060535,OpenAlex 類型 book-chapter,B,student,
+WOS:001600712600001,10.1007/s10639-025-13812-1,2026,J05,not_in_openalex,,DOI 在 OpenAlex 查無（2026-10-11）,B,non_k12,
+WOS:001605887000001,10.1016/j.tate.2025.105266,2026,J20,not_in_openalex,,DOI 在 OpenAlex 查無（2026-10-11）,A,inservice_teacher,yes
+WOS:001585436100001,10.1007/s10639-025-13784-2,2025,J05,not_in_openalex,,DOI 在 OpenAlex 查無（2026-10-11）,B,non_k12,
