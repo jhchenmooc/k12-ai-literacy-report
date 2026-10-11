@@ -160,10 +160,11 @@ def tables():
                 if x['ai_lit_class']=='A' and x['audience_role'] in('student','inservice_teacher'):L[(x['audience_role'],x['level'] or 'unknown')]+=1
         T[f'level_{per}']={f'{a}|{b}':c for (a,b),c in sorted(L.items())}
     # 面板分層每千篇、面板無摘要比例（step2-summary）
-    strat={}
+    strat={};jcode={}
     for x in csv.DictReader(open(os.path.join(R,'journals.csv'))):
         if x['in_panel']=='yes':
             for y in RAW:strat[(y,x[f'source_id_{y}'])]=x['panel_stratum'];strat[(y,x['journal_code'])]=x['panel_stratum']
+            for y in RAW:jcode[(y,x[f'source_id_{y}'])]=x['journal_code']
     s2=json.load(open(os.path.join(R,'rerun-dev001','step2-summary.json')))['years']
     for y in RAW:
         q=json.load(open(os.path.join(R,'rerun-dev001',str(y),'queries.json')))['panel_size']['by_source']
@@ -172,6 +173,13 @@ def tables():
         A=collections.Counter(strat[(y,x['journal_code'])] for x in C[y] if x['ai_lit_class']=='A')
         M=collections.Counter(strat[(y,x['journal_code'])] for x in C[y] if x['ai_lit_class']=='A' and x['audience_role'] in ROLES)
         T[f'per1000_{y}']={k:{'panel':tot[k],'A':A[k],'A_per1000':round(1000*A[k]/tot[k],1),'main':M[k],'main_per1000':round(1000*M[k]/tot[k],2)} for k in tot}
+        # 排除 J35–J47 的每千篇（第 1.4 節）
+        totx=collections.Counter()
+        for sid,v in q.items():
+            sid2=sid.rsplit('/',1)[-1]
+            if jcode.get((y,sid2)) not in EXCL:totx[strat.get((y,sid2),'?')]+=(v['count'] if isinstance(v,dict) else v)
+        Mx=collections.Counter(strat[(y,x['journal_code'])] for x in C[y] if x['ai_lit_class']=='A' and x['audience_role'] in ROLES and x['journal_code'] not in EXCL)
+        T[f'per1000_excl_J35_J47_{y}']={k:{'panel':totx[k],'main':Mx[k],'main_per1000':round(1000*Mx[k]/totx[k],2)} for k in totx}
         T[f'panel_missing_abstract_{y}']=(s2[str(y)]['panel_missing_abstract'],s2[str(y)]['panel_size'])
     # 漏收：中性查詢差集抽樣（全部樣本與只用有摘要者）
     NS={2022:'2022/neutral-sample.json',2023:'2023/neutral-sample.json',2024:'2024/neutral-sample.json',2025:'2025/neutral-sample-v2.json'}
