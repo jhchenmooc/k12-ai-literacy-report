@@ -118,6 +118,12 @@ body{background:var(--bg)}
 .tg-limits ul{margin:8px 0 0;padding-left:1.2em}
 @media (max-width:700px){.tg-row{grid-template-columns:1fr}}
 .lead-note{font-size:15px;color:var(--muted);max-width:var(--measure);margin:-4px 0 14px}
+.daily-card .card-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin-bottom:6px}
+.daily-card h3{margin:0;font-size:18px}
+.daily-card .sub{font-size:14px;color:var(--muted)}
+.daily-card>.meta-line{margin-top:14px}
+.brief-items{margin:0;padding-left:1.4em;display:flex;flex-direction:column;gap:14px}
+.brief-items>li{padding-left:.2em}
 .item .tags3,[data-claim-tags]{font-size:13px;color:var(--navy);margin-top:2px}
 [data-claim-tags]{margin-top:-.4em;word-spacing:.4em}
 .rec-table .t,.tag-guide .t,.item .t{white-space:nowrap;margin-right:.6em}
