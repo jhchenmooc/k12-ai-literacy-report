@@ -12,7 +12,7 @@
 
 保留既有34種期刊、19個會議的原監測設定；新增5種期刊、2個正式會議。先查教育主管機關／國際機構，再查核心期刊／正式論文集，最後跨庫補漏。**先篩首次公開日期、K–12學段、重複事件及內容價值，再查原文**；低價值候選只記排除原因。活動日不能冒稱本週新發布日。
 
-## 2. 期刊池（47 種）
+## 2. 期刊池（48 種）
 
 | ID | 級別 | 期刊 | 適用主題 | 查核入口 |
 |---|---|---|---|---|
@@ -64,6 +64,7 @@
 | J45 | 背景 | Technology, Pedagogy and Education | 學校情境的 AI 教育與教學 | [期刊頁](https://www.tandfonline.com/journals/rtpe20) |
 | J46 | 背景 | International Journal of Science Education | 科學教育中的 AI（K–12 比例高、AI 篇數少） | [期刊頁](https://www.tandfonline.com/journals/tsed20) |
 | J47 | 背景 | Education Sciences | K–12 AI 教育命中多；量大且須特別檢查審稿與研究品質 | [期刊頁](https://www.mdpi.com/journal/education) |
+| J48 | 背景 | Scientific Reports | 綜合型大型期刊，偶有 K–12 AI 素養研究；收錄於 DOAJ、單盲同儕審查；量大須逐篇確認學段（2026-10-11 管理者決定加入） | [期刊頁](https://www.nature.com/srep/) |
 
 ## 3. 國際會議池（21 個正式系列）
 
@@ -179,7 +180,7 @@ ai_lit_class,ai_lit_dims,ai_lit_note
 - **AI 素養範圍**：學段之外另判 A／B／C（[AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)）；期刊或會議名稱含 AI 不等於屬 A 或 B，AI 只作研究方法或系統後端者為 C。
 - **證據強度**：閱讀優先級 P1/P2/P3 與方法品質分開；自陳、橫斷 SEM、量表驗證及 RCT 不可用同一因果語言。
 - **會議索引**：以每篇論文 DOI／論文集正式上線日為時間判準，非僅會議活動日期；Full、Short、Poster、Workshop 各自標記。
-- **監測範圍**：收錄 47 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
+- **監測範圍**：收錄 48 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
 - **品質確認**：監測候選池要記錄 `verification_status`（verified / partial / pending）、`population_level`、`evidence_design`、`publication_status`，不可僅以期刊名稱推斷研究品質。
 
 ## 10. 維護提醒
