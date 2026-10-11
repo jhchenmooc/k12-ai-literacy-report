@@ -1,14 +1,14 @@
 # K–12 AI 素養國際動態｜固定 Session 工作交接檔
 
 > **固定檔案：`research/SESSION-HANDOFF.md`**  
-> 基準時間：2026-10-09（臺灣），最新進度見第 0 節「2026-10-11」段與文末趨勢段；標「新 Session 以此段為準」的舊段落（2026-10-09、2026-10-10）已被後段取代，只作歷史紀錄；階段 A 以 main `823614bd4d71` 為檢查起點；PR 合併後以最新 main/Actions 為準。現行唯一流程入口：[v1.6 主控 SOP](editorial-workflow-master.md)、[首發查核表](first-disclosure-checklist-v16.md)及[九筆候選審核](drafts/2026-10-09-candidate-audit-v16.md)。  
+> 基準時間：2026-10-09（臺灣），最新進度見第 0 節與文末「2026-10-11 傍晚」「2026-10-11 晚」段；標「新 Session 以此段為準」的舊段落（2026-10-09、2026-10-10）已被後段取代，只作歷史紀錄；階段 A 以 main `823614bd4d71` 為檢查起點；PR 合併後以最新 main/Actions 為準。現行唯一流程入口：[v1.6 主控 SOP](editorial-workflow-master.md)、[首發查核表](first-disclosure-checklist-v16.md)及[九筆候選審核](drafts/2026-10-09-candidate-audit-v16.md)。  
 > **性質：工作交接和可追溯進度紀錄，不是刊物、不是對所有來源的認證。** 下次工作開始必須先檢查最新 `main`、PR、Actions 與工作表，**不能把此檔的歷史快照當作最新狀態**。
 
 ## 0. 新 Session 先讀這一段
 
 **要繼續的任務**：以最少人力、可追溯的原始證據，製作並公開 K–12 AI 素養國際週報／月報；第一期標準週報涵蓋 **2026/10/09–10/15**，預定 **10/16** 出刊。網站：[GitHub Pages](https://jhchenmooc.github.io/k12-ai-literacy-report/)；儲存庫：[jhchenmooc/k12-ai-literacy-report](https://github.com/jhchenmooc/k12-ai-literacy-report)。
 
-**目前不可當作完成的事項**：第一期正式週報尚未製作及登錄；`publication/issues.json` 仍為 `{"schema_version":1,"editions":[]}`；九個候選都在 `hold`，不能宣稱已經獲獨立來源認證。新版 CI 能檢查結構，**不能自動證明來源真實**。
+**目前狀態（2026-10-11 晚）**：`publication/issues.json` 已登錄每日短訊 `daily/2026-10-11`；第一期正式週報尚未製作及登錄；本週候選（`research/drafts/2026-10-09_2026-10-15.json`）16 項中 3 項 publish、13 項 hold，不能宣稱已經獲獨立來源認證。趨勢線：四年合併報告為內部草稿（PR #252 多輪自檢中），D5 人工驗證暫無法執行（方案 §10 第 25 項）。新版 CI 能檢查結構，**不能自動證明來源真實**。
 
 **論文搜尋與核對工具**：怎麼調用、踩過的坑、何時平行化，見 [research-tools-guide.md](research-tools-guide.md)（Claude 與 ChatGPT 通用）；現況摘要見本檔末段「論文搜尋與核對工具現況（2026-10-09 起）」。僅人工輔助、不構成認證。
 
