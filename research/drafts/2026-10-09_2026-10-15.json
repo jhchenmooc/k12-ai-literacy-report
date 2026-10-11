@@ -420,6 +420,109 @@
       "audience": "k12",
       "doi": "10.1007/s44436-026-00043-5",
       "screening_note": "30-day backfill/background: earlier than issue period; Discovery only, hold pending first-disclosure check."
+    },
+    {
+      "candidate_id": "W2026-10-09-A14",
+      "category": "research",
+      "source_url": "https://arxiv.org/abs/2610.06619",
+      "source_title": "If My Toy Could Talk: How Young Children Imagine, Design, and Test AI-Enabled Toys",
+      "source_organization": "arXiv",
+      "source_publication_date": "2026-10-05",
+      "source_locator": "arXiv abs 頁 Submission history：[v1] Mon, 5 Oct 2026 16:18:47 UTC；citation_online_date 2026/10/05；Abstract",
+      "discovered_on": "2026-10-11",
+      "discovery_batch_id": "2026-10-11-daily-1",
+      "first_disclosed_on": "2026-10-05",
+      "source_updates": [],
+      "original_excerpt": "We deployed ToyTalk with 76 children aged 7-9 across five elementary schools in the southeastern U.S.",
+      "source_checked": true,
+      "claim_text": "來源機構：arXiv；資料標題：If My Toy Could Talk: How Young Children Imagine, Design, and Test AI-Enabled Toys；來源刊登日：2026-10-05。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "預印本 v1，未經同儕審查；對象為美國東南部五所小學 7–9 歲兒童；本則只為書目事實，不涉及研究結果。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-11T00:32Z arXiv API 與 abs 頁擷取書目、v1 提交日與對象（7–9 歲、五所小學）；第二輪 2026-10-11T00:57Z 重讀 abs 頁，反查版本（僅 v1）、預印本身分、學段與日期，兩輪一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-SYS",
+        "S-BAS"
+      ],
+      "ai_lit_note": "兒童以無程式介面設定、測試並修正 AI 玩具，對應 S-SYS「理解AI系統設計的核心」與 S-BAS「理解AI運作原理與限制」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-10-11 for daily brief 2026-10-11 (bibliographic only); first disclosure from original page.",
+      "verification_completed_on": "2026-10-11"
+    },
+    {
+      "candidate_id": "W2026-10-09-A15",
+      "category": "research",
+      "source_url": "https://www.nature.com/articles/s41598-026-73410-0",
+      "source_title": "Young children’s knowledge of ChatGPT and its relationship with their achievement in english as a second language",
+      "source_organization": "Scientific Reports (Nature Portfolio)",
+      "source_publication_date": "2026-10-10",
+      "source_locator": "出版者頁 nature.com：Published 10 October 2026（Received 2026-04-09、Accepted 2026-09-22）；citation_online_date 2026/10/10；Abstract",
+      "discovered_on": "2026-10-11",
+      "discovery_batch_id": "2026-10-11-daily-1",
+      "first_disclosed_on": "2026-10-10",
+      "source_updates": [],
+      "original_excerpt": "The sample comprised 255 third-grade students from the Eastern Region of Saudi Arabia.",
+      "source_checked": true,
+      "claim_text": "來源機構：Scientific Reports (Nature Portfolio)；資料標題：Young children’s knowledge of ChatGPT and its relationship with their achievement in english as a second language；來源刊登日：2026-10-10。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "同儕審查期刊論文（Scientific Reports，J48）；對象為沙烏地阿拉伯東部三年級學生；本則只為書目事實，不涉及研究結果。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-11T00:31Z Crossref 書目與 00:33Z 出版者頁擷取標題、Published 日與對象（255 名三年級學生）；第二輪 2026-10-11T00:57Z 重讀出版者頁，反查收稿／接受／刊出日、文章類型與學段，兩輪一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS",
+        "S-ETH"
+      ],
+      "ai_lit_note": "以問卷評量國小學生對 ChatGPT 的一般與應用知識、風險與限制、倫理知識，對應 S-BAS「理解AI運作原理與限制」與 S-ETH「具備對AI的批判思考」",
+      "audience": "k12",
+      "doi": "10.1038/s41598-026-73410-0",
+      "screening_note": "Verified 2026-10-11 for daily brief 2026-10-11 (bibliographic only); first disclosure from original page.",
+      "verification_completed_on": "2026-10-11"
+    },
+    {
+      "candidate_id": "W2026-10-09-A16",
+      "category": "research",
+      "source_url": "https://doi.org/10.1177/07356331261494821",
+      "source_title": "Socratic, Artifact-Gated Generative AI Scaffolding in a 6E Inquiry Unit: A Clustered Quasi-Experiment in Elementary Students’ Computational Thinking",
+      "source_organization": "Journal of Educational Computing Research (SAGE)",
+      "source_publication_date": "2026-10-10",
+      "source_locator": "出版者文章頁（管理者 2026-10-11 另存提供；SAGE 對自動讀取回 403，未繞過）：First published online October 10, 2026；Abstract",
+      "discovered_on": "2026-10-11",
+      "discovery_batch_id": "2026-10-11-daily-1",
+      "first_disclosed_on": "2026-10-10",
+      "source_updates": [],
+      "original_excerpt": "Ten intact Grade 3 classes in Taiwan (N = 229) completed the same curriculum, tasks, teacher, platform, and instructional time.",
+      "source_checked": true,
+      "claim_text": "來源機構：Journal of Educational Computing Research (SAGE)；資料標題：Socratic, Artifact-Gated Generative AI Scaffolding in a 6E Inquiry Unit: A Clustered Quasi-Experiment in Elementary Students’ Computational Thinking；來源刊登日：2026-10-10。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "同儕審查期刊論文（JECR，J36）；對象為臺灣一所公立小學十個三年級班級；本則只為書目事實，不涉及研究結果；出版者頁由管理者提供。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-11T00:31Z Crossref 書目、摘要與 published-online 2026-10-10；第二輪 2026-10-11T00:58Z 讀管理者提供的出版者頁，核對 First published online October 10, 2026、標題、DOI 與學段（Grade 3, N = 229），兩輪一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN"
+      ],
+      "ai_lit_note": "研究重點是學生使用生成式 AI 家教進行運算思維探究的成效，屬 AI 工具輔助學習，對應 S-LRN「應用AI工具強化領域學習」",
+      "audience": "k12",
+      "doi": "10.1177/07356331261494821",
+      "screening_note": "Verified 2026-10-11 for daily brief 2026-10-11 (bibliographic only); first disclosure from original page.",
+      "verification_completed_on": "2026-10-11"
     }
   ],
   "item_template": {
@@ -443,9 +546,9 @@
     "ai_crosscheck_record": ""
   },
   "screening_summary": {
-    "candidate_count": 13,
-    "ready_to_publish": 0,
-    "verified_for_publication": 0,
+    "candidate_count": 16,
+    "ready_to_publish": 3,
+    "verified_for_publication": 3,
     "screened_on": "2026-10-09",
     "source_types": "official UNESCO policy commentary; institutional event announcements; government training calendars; prior-window research",
     "warnings": [
@@ -906,6 +1009,62 @@
         {
           "group": "scholar-watch",
           "query": "V26 author.orcid:0000-0003-1481-6601 from:2026-08-29 to:2026-10-10 (OpenAlex works)",
+          "status": "ok"
+        }
+      ],
+      "discovered": 3,
+      "added": 3,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-11-daily-1",
+      "searched_on": "2026-10-11",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref works filter=from-created-date:2026-10-10,until-created-date:2026-10-10,type:journal-article; query.bibliographic=AI literacy | artificial intelligence literacy | generative AI school students | AI education teachers K-12 | ChatGPT secondary school | artificial intelligence primary school children; rows=40 each (relevance-ranked, top 40 only); 2026-10-11T00:31:37Z-00:31:45Z",
+          "status": "ok"
+        },
+        {
+          "group": "research-preprint",
+          "query": "arXiv API abs:\"AI literacy\" OR abs:\"artificial intelligence literacy\" OR (abs:\"generative AI\" AND K-12/high school/middle school/primary school/secondary school/elementary), sortBy=submittedDate desc, max_results=30; 2026-10-11T00:32:33Z",
+          "status": "ok"
+        },
+        {
+          "group": "research-preprint",
+          "query": "alphaXiv discover_papers (discovery only) keywords AI literacy, K-12, children, generative AI; published_after 2026-10-04; 2026-10-11",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search API q=artificial intelligence schools filter_public_timestamp=from:2026-10-04 order=-public_timestamp count=40; and filter_organisations=department-for-education count=40; 2026-10-11T00:33:09Z",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "Federal Register API conditions[term]=artificial intelligence education gte 2026-10-04; conditions[agencies][]=education-department gte 2026-10-04; 2026-10-11T00:33:10Z",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "MEXT news list https://www.mext.go.jp/b_menu/news/index.html; 2026-10-11T00:33:18Z",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "China MOE 工作动态 http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/ and 文件 moe_1778 list; 2026-10-11T00:33:19Z",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "HK government press releases list 2026-10-10 and 2026-10-11 (info.gov.hk/gia/general/202610/10c.htm, 11c.htm); 2026-10-11T00:33:22Z",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "UNESCO articles list https://www.unesco.org/en/articles via WebFetch (model-paraphrased lead only); 2026-10-11",
           "status": "ok"
         }
       ],
