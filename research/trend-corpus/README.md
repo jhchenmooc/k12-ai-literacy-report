@@ -26,6 +26,7 @@
 | [open-questions.md](open-questions.md) | 方案沒寫清楚、待決定的地方 |
 | `2022/`～`2025/` | 第 2 步快照：`PROTOCOL-YYYY.md`、`queries.json`（每組子查詢的完整 filter、筆數、頁數，以及面板規模、缺摘要、面板外監測）、`ids-*.json`（work ID 快照）、`SHA256SUMS` |
 | `step2/` | 第 2 步的 OpenAlex 請求紀錄與四年摘要 |
+| `2024/corpus.csv` 等 | 2024 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，DEV-008）、`fulltext-sample.csv`、`dev004a-pool39.csv`；報告見 `research/p0-annual-trends-2024/step3-interim.md`。已知限制：對象詞組沒有 young people；只寫 machine learning 而未寫泛稱 AI 的 K-12 研究不會被命中（管理者 2026-10-11 決定不擴詞） |
 | `rerun-dev001/` | DEV-001 四年同日重跑快照（加泛稱 AI × 對象詞組 A1–A6）；原 `2022/`～`2025/` 快照保留不動 |
 | `step1/` | 第 1 步的 OpenAlex 請求紀錄、試查筆數、source 查詢結果，不含論文 ID 快照 |
 | `scripts/oa.py` | OpenAlex 請求小工具：單執行緒、間隔 0.2 秒以上、記錄每次請求 |
