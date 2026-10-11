@@ -18,8 +18,8 @@ const POPULATION_TAGS=[["ROLE_STUDENT","學生"],["ROLE_INSERVICE_TEACHER","在�
 /* Topic, method and country tags form a second line under research titles. */
 const TOPIC_TAGS=[["TOPIC_GENAI","生成式AI"],["TOPIC_CURRICULUM","AI素養課程"],["TOPIC_ASSESSMENT","評量與量表"],["TOPIC_TEACHER_PD","教師專業發展"],["TOPIC_ETHICS","倫理與安全"],["TOPIC_INTERVENTION","教學介入"],["TOPIC_CT","運算思維與程式"],["TOPIC_LANGUAGE","語言學習"],["TOPIC_STEM","STEM"],["TOPIC_EQUITY","特教與公平"],["TOPIC_POLICY","政策與治理"]];
 const METHOD_TAGS=[["METHOD_REVIEW","文獻回顧"],["METHOD_EXPERIMENT","實驗或準實驗"],["METHOD_MIXED","混合方法"],["METHOD_DESIGN","設計本位"],["METHOD_QUALITATIVE","質性個案"],["METHOD_SURVEY","問卷量表"]];
-/* AI-literacy scope and framework dimensions form a third line (AI judgment against the Taiwan MOE framework). */
-const AILIT_TAGS=[["AILIT_A","AI素養核心"],["AILIT_B","AI工具應用"],["S-BAS","學生AI基礎與技術"],["S-ETH","學生AI倫理"],["S-LRN","學生AI賦能學習"],["S-SYS","學生AI系統設計"],["T-BAS","教師AI基礎與技術"],["T-ETH","教師AI倫理"],["T-TEA","教師AI賦能教學"],["T-PD","教師AI專業發展"]];
+/* AI-literacy scope and framework dimensions form a third line (research/daily-tags.js). */
+const {AILIT_TAGS,dailyTagList,dailyTagText}=require("./daily-tags.js");
 const STATUS={discovered_unverified:["unverified","僅發現・未核"],bibliographic_checked:["checked","書目已核"],content_checked:["fulltext","原文已核"]};
 const DAILY_KIND={official_notice:["policy","官方文件"],official_attributed_summary:["policy","官方文件摘要"],research_bibliography:["research","研究書目"],research_abstract_attributed_summary:["research","研究摘要"]};
 
@@ -85,11 +85,10 @@ function claimParagraph(c,withId){
  return "<p"+(withId?' data-claim-id="'+esc(c.claim_id)+'"':"")+">"+body+"</p>";
 }
 function kindBadge(c){const [cls,label]=DAILY_KIND[c.daily_fact_kind]||["policy","短訊"];return '<span class="kind '+cls+'">'+label+"</span>"}
-/* Tag line for the daily list and homepage only: the per-day edition page carries claim text alone (gate rule). */
-const DAILY_AUDIENCE_TAGS={k12:"中小學",other_stakeholders:"家長行政"};
+/* Tag line on the daily list and homepage; the edition page carries the same text as a gate-checked
+   data-claim-tags paragraph right after its claim (validate-publication.js). */
 function dailyTags(c){
- const dims=new Set(Array.isArray(c.ai_lit_dims)?c.ai_lit_dims:[]);
- const tags=[DAILY_AUDIENCE_TAGS[c.audience]].concat(AILIT_TAGS.filter(([k])=>k==="AILIT_"+c.ai_lit_class||dims.has(k)).map(([,t])=>t)).filter(Boolean);
+ const tags=dailyTagList(c);
  return tags.length?'<div class="tags3">'+tags.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"";
 }
 function dailyItem(c,depth,date){
@@ -97,7 +96,7 @@ function dailyItem(c,depth,date){
 }
 function renderDailyEdition(e){
  const head='<div class="kicker">每日短訊</div><h1>'+e.date+' 每日短訊</h1><div class="notice"><p>只記錄「誰在哪天發布了什麼」或來源原文的歸屬摘要；由 AI 整理、未經逐則真人審稿，不含解讀、成效判斷或對臺灣的建議。請點連結閱讀原文。</p></div>';
- const main="<article>"+e.claims.map(c=>claimParagraph(c,true)).join("")+"</article>";
+ const main="<article>"+e.claims.map(c=>claimParagraph(c,true)+(dailyTagText(c)?'<p data-claim-tags="'+esc(c.claim_id)+'">'+esc(dailyTagText(c))+"</p>":"")).join("")+"</article>";
  return shell({depth:2,current:"daily",title:e.date+" 每日短訊",description:"K-12 AI 素養每日短訊："+e.date,head,main});
 }
 function renderDailyIndex(days){

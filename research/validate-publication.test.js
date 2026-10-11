@@ -211,6 +211,33 @@ test('external-review control: exact daily renderer shell is accepted',t=>{
   fs.writeFileSync(file,changed);assert.equal(validate(d).ok,false);
  }
 });
+test('daily tag line: rendered line passes; altered, misplaced, repeated or non-daily lines are blocked',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const html=require('./render-site.js').renderDailyEdition({date:'2026-10-10',claims:[dailyLow]});
+ const line='<p data-claim-tags="C1">#中小學 #AI素養核心 #教師AI專業發展</p>';
+ assert.ok(html.includes(line));
+ const file=path.join(d,'daily','2026-10-10','index.html');fs.writeFileSync(file,html);
+ assert.deepEqual(validate(d).errors,[]);
+ for(const changed of [
+  html.replace(line,'<p data-claim-tags="C1">#中小學 #AI素養核心 #教師AI專業發展 #成效顯著</p>'),
+  html.replace(line,'<p data-claim-tags="C1">#中小學 #AI素養核心</p>'),
+  html.replace(line,'<p data-claim-tags="C9">#中小學 #AI素養核心 #教師AI專業發展</p>'),
+  html.replace(line,'<p data-claim-tags="C1"><strong>#中小學</strong> #AI素養核心 #教師AI專業發展</p>'),
+  html.replace(line,'<div data-claim-tags="C1">#中小學 #AI素養核心 #教師AI專業發展</div>'),
+  html.replace(line,line+line),
+  html.replace('<article>','<article>'+line).replace('</p>'+line,'</p>'),
+  html.replace(line,'<p data-claim-tags="C1" data-claim-id="C1">#中小學 #AI素養核心 #教師AI專業發展</p>')
+ ]){fs.writeFileSync(file,changed);assert.equal(validate(d).ok,false,changed.slice(changed.indexOf('<article>'),changed.indexOf('</article>')))}
+ fs.writeFileSync(path.join(d,'publication','claims','daily-2026-10-10.json'),JSON.stringify([{...dailyLow,ai_lit_dims:['T-PD','T-TEA']}]));
+ fs.writeFileSync(file,html);assert.equal(validate(d).ok,false);
+});
+test('daily tag line is not accepted outside daily editions',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ const html=require('./render-site.js').renderWeeklyEdition({period:'2026-10-09_10-15',claims:[claim]});
+ updateHtml(d,html);assert.deepEqual(validate(d).errors,[]);
+ updateHtml(d,html.replace(/(<p data-claim-id="C1">[\s\S]*?<\/p>)/,'$1<p data-claim-tags="C1">#中小學 #AI素養核心 #教師AI專業發展</p>'));
+ const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes('only in daily')),result.errors.join('\n'));
+});
 test('renderer control: exact weekly and monthly renderer shells are accepted, any change outside main is not',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
  const {renderWeeklyEdition,renderMonthlyEdition}=require('./render-site.js');
