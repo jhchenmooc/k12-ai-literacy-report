@@ -1,0 +1,746 @@
+[
+{
+"year": 2022,
+"work_id": "W4297361005",
+"stratum_class": "A",
+"stratum_stage": "k12_multi"
+},
+{
+"year": 2022,
+"work_id": "W4221079197",
+"stratum_class": "A",
+"stratum_stage": "k12_unspecified"
+},
+{
+"year": 2022,
+"work_id": "W4229456833",
+"stratum_class": "A",
+"stratum_stage": "k12_unspecified"
+},
+{
+"year": 2022,
+"work_id": "W4283218081",
+"stratum_class": "A",
+"stratum_stage": "lower_secondary"
+},
+{
+"year": 2022,
+"work_id": "W4224253948",
+"stratum_class": "A",
+"stratum_stage": "preschool"
+},
+{
+"year": 2022,
+"work_id": "W4307821772",
+"stratum_class": "A",
+"stratum_stage": "primary"
+},
+{
+"year": 2022,
+"work_id": "W4223982870",
+"stratum_class": "A",
+"stratum_stage": "secondary_unspecified"
+},
+{
+"year": 2022,
+"work_id": "W4221073416",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4311892418",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4308204237",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4297093142",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4293715050",
+"stratum_class": "A",
+"stratum_stage": "upper_secondary"
+},
+{
+"year": 2022,
+"work_id": "W4308572489",
+"stratum_class": "A",
+"stratum_stage": "upper_secondary"
+},
+{
+"year": 2022,
+"work_id": "W4214616542",
+"stratum_class": "B",
+"stratum_stage": "k12_unspecified"
+},
+{
+"year": 2022,
+"work_id": "W4307905568",
+"stratum_class": "B",
+"stratum_stage": "lower_secondary"
+},
+{
+"year": 2022,
+"work_id": "W4229071014",
+"stratum_class": "B",
+"stratum_stage": "primary"
+},
+{
+"year": 2022,
+"work_id": "W4300484403",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4281791809",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4303453872",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4213293189",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4289222649",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4313425204",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4286511253",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4213114765",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4309635581",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2022,
+"work_id": "W4226057045",
+"stratum_class": "B",
+"stratum_stage": "upper_secondary"
+},
+{
+"year": 2022,
+"work_id": "W4303649269",
+"stratum_class": "C",
+"stratum_stage": ""
+},
+{
+"year": 2022,
+"work_id": "W4312204748",
+"stratum_class": "C",
+"stratum_stage": ""
+},
+{
+"year": 2022,
+"work_id": "W4309934831",
+"stratum_class": "C",
+"stratum_stage": ""
+},
+{
+"year": 2022,
+"work_id": "W4412183924",
+"stratum_class": "C",
+"stratum_stage": ""
+},
+{
+"year": 2023,
+"work_id": "W4388656687",
+"stratum_class": "A",
+"stratum_stage": "k12_multi"
+},
+{
+"year": 2023,
+"work_id": "W4382939841",
+"stratum_class": "A",
+"stratum_stage": "k12_unspecified"
+},
+{
+"year": 2023,
+"work_id": "W4384563724",
+"stratum_class": "A",
+"stratum_stage": "lower_secondary"
+},
+{
+"year": 2023,
+"work_id": "W4387394051",
+"stratum_class": "A",
+"stratum_stage": "preschool"
+},
+{
+"year": 2023,
+"work_id": "W4367189069",
+"stratum_class": "A",
+"stratum_stage": "primary"
+},
+{
+"year": 2023,
+"work_id": "W4313511636",
+"stratum_class": "A",
+"stratum_stage": "secondary_unspecified"
+},
+{
+"year": 2023,
+"work_id": "W4389613414",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4381616009",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4385633461",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4378901087",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4389232715",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4378084879",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4387169527",
+"stratum_class": "B",
+"stratum_stage": "k12_unspecified"
+},
+{
+"year": 2023,
+"work_id": "W4321608204",
+"stratum_class": "B",
+"stratum_stage": "lower_secondary"
+},
+{
+"year": 2023,
+"work_id": "W4321499810",
+"stratum_class": "B",
+"stratum_stage": "primary"
+},
+{
+"year": 2023,
+"work_id": "W4381951307",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4389429764",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4328097142",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4377041914",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4389568219",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4362585490",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4389624952",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4383818129",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4361273513",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4379619507",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4367678106",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2023,
+"work_id": "W4378757532",
+"stratum_class": "C",
+"stratum_stage": ""
+},
+{
+"year": 2023,
+"work_id": "W4366377632",
+"stratum_class": "C",
+"stratum_stage": ""
+},
+{
+"year": 2023,
+"work_id": "W4366090650",
+"stratum_class": "C",
+"stratum_stage": ""
+},
+{
+"year": 2023,
+"work_id": "W4319072032",
+"stratum_class": "unknown",
+"stratum_stage": ""
+},
+{
+"year": 2024,
+"work_id": "W4397032813",
+"stratum_class": "A",
+"stratum_stage": "k12_multi"
+},
+{
+"year": 2024,
+"work_id": "W4403339696",
+"stratum_class": "A",
+"stratum_stage": "k12_unspecified"
+},
+{
+"year": 2024,
+"work_id": "W4403472097",
+"stratum_class": "A",
+"stratum_stage": "k12_unspecified"
+},
+{
+"year": 2024,
+"work_id": "W4402202999",
+"stratum_class": "A",
+"stratum_stage": "lower_secondary"
+},
+{
+"year": 2024,
+"work_id": "W4400408784",
+"stratum_class": "A",
+"stratum_stage": "primary"
+},
+{
+"year": 2024,
+"work_id": "W4399465825",
+"stratum_class": "A",
+"stratum_stage": "primary"
+},
+{
+"year": 2024,
+"work_id": "W4405006040",
+"stratum_class": "A",
+"stratum_stage": "secondary_unspecified"
+},
+{
+"year": 2024,
+"work_id": "W4399155200",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4390665705",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4402787371",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4394689246",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4400423783",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4391361585",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4404248292",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4394689253",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4392701205",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4404678596",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4402978103",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4396904671",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4402063606",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4405941286",
+"stratum_class": "A",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4392452962",
+"stratum_class": "A",
+"stratum_stage": "upper_secondary"
+},
+{
+"year": 2024,
+"work_id": "W4391401704",
+"stratum_class": "B",
+"stratum_stage": "k12_multi"
+},
+{
+"year": 2024,
+"work_id": "W4392097863",
+"stratum_class": "B",
+"stratum_stage": "k12_unspecified"
+},
+{
+"year": 2024,
+"work_id": "W4402750117",
+"stratum_class": "B",
+"stratum_stage": "k12_unspecified"
+},
+{
+"year": 2024,
+"work_id": "W4399693573",
+"stratum_class": "B",
+"stratum_stage": "lower_secondary"
+},
+{
+"year": 2024,
+"work_id": "W4399155031",
+"stratum_class": "B",
+"stratum_stage": "primary"
+},
+{
+"year": 2024,
+"work_id": "W4400408779",
+"stratum_class": "B",
+"stratum_stage": "secondary_unspecified"
+},
+{
+"year": 2024,
+"work_id": "W4401873941",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4399590215",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4401052634",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4401467912",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4401819832",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4392947289",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4394856641",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4393941636",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4402787402",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4403476385",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4405105706",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4392198070",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4405514786",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4391689754",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4400216411",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4392904166",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4402747201",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4403521625",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4402097472",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4399681132",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4405868861",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4405736150",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4402394907",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4400284983",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4395038831",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4402827217",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4404971706",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4401873351",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4401844408",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4391402493",
+"stratum_class": "B",
+"stratum_stage": "unknown"
+},
+{
+"year": 2024,
+"work_id": "W4399917761",
+"stratum_class": "B",
+"stratum_stage": "upper_secondary"
+},
+{
+"year": 2024,
+"work_id": "W4405812145",
+"stratum_class": "C",
+"stratum_stage": ""
+},
+{
+"year": 2024,
+"work_id": "W4401950268",
+"stratum_class": "C",
+"stratum_stage": ""
+},
+{
+"year": 2024,
+"work_id": "W4392867873",
+"stratum_class": "C",
+"stratum_stage": ""
+},
+{
+"year": 2024,
+"work_id": "W4399106212",
+"stratum_class": "C",
+"stratum_stage": ""
+},
+{
+"year": 2024,
+"work_id": "W4401253829",
+"stratum_class": "unknown",
+"stratum_stage": ""
+}
+]

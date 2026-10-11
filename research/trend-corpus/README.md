@@ -34,6 +34,7 @@
 | `scripts/oa.py` | OpenAlex 請求小工具：單執行緒、間隔 0.2 秒以上、記錄每次請求 |
 | `2025/coding2.csv` | 第二次編碼（編輯 session，code2.md v2）125 篇的結果，不含摘要與證據原文 |
 | `2025/agreement.csv` | 第一次對第二次編碼的一致率與 Cohen κ（方案 4.5），另附「雙方皆 K-12 對象的 A 類」面向列 |
+| `backfill-2022-2024/` | 回溯三年合併一致性（DEV-012）：`sample.json`（124 篇，種子 20281232／20281242／20281252）、`coding2.csv`（第二次編碼，不含摘要與證據原文）、`agreement.csv`（三年合併 κ，另附各年 A／B 列）；報告見 `research/p0-annual-trends-2022-2024/step3-agreement.md`；腳本 `scripts/agreement_sample_backfill.py`、`scripts/agreement_kappa_backfill.py` |
 | `scripts/agreement_*.py`、`scripts/fulltext_*.py` | 一致性抽樣、摘要重組（只在 scratchpad 執行）、κ 計算、全文對照抽樣；用法見各檔開頭 |
 
 ## 資料字典
