@@ -486,5 +486,8 @@
 | KB-2026-0249 — [Fostering SCALE habits of mind through AI-empowered arts-based pedagogy](https://doi.org/10.1007/s44436-026-00043-5) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0255 — [OECD Digital Education Outlook 2026: Exploring Effective Uses of Generative AI in Education](https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html) | policy_review | 未知 | discovered_unverified |
 | KB-2026-0261 — [Navigating an Evolving Digital World: First draft of the PISA 2029 Media and Artificial Intelligence Literacy (MAIL) Assessment Framework](https://www.oecd.org/en/about/projects/pisa-2029-media-and-artificial-intelligence-literacy.html) | draft | 未知 | discovered_unverified |
+| KB-2026-0267 — [If My Toy Could Talk: How Young Children Imagine, Design, and Test AI-Enabled Toys](https://arxiv.org/abs/2610.06619) | preprint | 未知 | discovered_unverified |
+| KB-2026-0268 — [Young children’s knowledge of ChatGPT and its relationship with their achievement in english as a second language](https://www.nature.com/articles/s41598-026-73410-0) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0269 — [Socratic, Artifact-Gated Generative AI Scaffolding in a 6E Inquiry Unit: A Clustered Quasi-Experiment in Elementary Students’ Computational Thinking](https://doi.org/10.1177/07356331261494821) | journal_article | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
