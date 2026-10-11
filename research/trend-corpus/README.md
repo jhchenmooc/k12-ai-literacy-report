@@ -28,6 +28,7 @@
 | `step2/` | 第 2 步的 OpenAlex 請求紀錄與四年摘要 |
 | `2024/corpus.csv` 等 | 2024 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，DEV-008）、`fulltext-sample.csv`、`dev004a-pool39.csv`；報告見 `research/p0-annual-trends-2024/step3-interim.md`。已知限制：對象詞組沒有 young people；只寫 machine learning 而未寫泛稱 AI 的 K-12 研究不會被命中（管理者 2026-10-11 決定不擴詞） |
 | `2023/corpus.csv` 等 | 2023 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，種子 20281241，DEV-008）、`fulltext-sample.csv`、`dev004a-pool.csv`；報告見 `research/p0-annual-trends-2023/step3-interim.md`。對象不明的 A 類經書目線索、典藏版與管理者下載全文後只剩 1 篇，未抽樣推估 |
+| `2022/corpus.csv` 等 | 2022 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，種子 20281231，DEV-008）、`fulltext-sample.csv`、`dev004a-pool.csv`；報告見 `research/p0-annual-trends-2022/step3-interim.md`。錨定改用 2025 v2 錨點（DEV-011）；主要分母 43 篇（專家受訪者準則改判 2 篇），依預定方式與 2023 合併為前期 |
 | `rerun-dev001/` | DEV-001 四年同日重跑快照（加泛稱 AI × 對象詞組 A1–A6）；原 `2022/`～`2025/` 快照保留不動 |
 | `step1/` | 第 1 步的 OpenAlex 請求紀錄、試查筆數、source 查詢結果，不含論文 ID 快照 |
 | `scripts/oa.py` | OpenAlex 請求小工具：單執行緒、間隔 0.2 秒以上、記錄每次請求 |

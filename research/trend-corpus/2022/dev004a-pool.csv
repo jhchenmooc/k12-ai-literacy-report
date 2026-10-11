@@ -1,0 +1,30 @@
+work_id,ai_lit_class,cue_kind,coded_role,final_role,final_stage,resolution
+W4206673929,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4210254436,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4211262078,A,student,unknown,unknown,unknown,DEV-004a-step2-nopart
+W4213004560,B,teacher,inservice_teacher,unknown,unknown,DEV-004a-remaining
+W4229071014,B,student,student,student,primary,DEV-004a-step1
+W4229376924,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4229456833,A,teacher,inservice_teacher,inservice_teacher,k12_unspecified,DEV-004a-step1
+W4280651558,B,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4281692409,A,teacher,unknown,unknown,unknown,DEV-004a-step3-mgrpdf
+W4281791809,B,teacher,unknown,unknown,unknown,DEV-004a-remaining
+W4283724181,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4283816267,B,student,unknown,unknown,unknown,DEV-004a-step2-nopart
+W4284991798,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4285810273,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4293731327,A,teacher,inservice_teacher,inservice_teacher,k12_multi,DEV-004a-step3-mgrpdf
+W4294091440,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4295693594,A,student,unknown,unknown,unknown,DEV-004a-step4-mgrpdf
+W4296079328,B,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4297371803,A,student,unknown,unknown,unknown,DEV-004a-step2-nopart
+W4300484403,B,teacher,unknown,unknown,unknown,DEV-004a-remaining
+W4304943299,A,student,unknown,unknown,unknown,DEV-004a-step2-nopart
+W4306353759,B,teacher,unknown,unknown,unknown,DEV-004a-step2-nopart
+W4308327101,A,none,unknown,unknown,unknown,no_cue_term(not processed)
+W4310122805,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4310436400,B,teacher,unknown,unknown,unknown,DEV-004a-remaining
+W4312131357,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4313425238,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4412183939,B,student,unknown,unknown,unknown,DEV-004a-remaining
+W4412184245,B,student,unknown,unknown,unknown,DEV-004a-remaining
