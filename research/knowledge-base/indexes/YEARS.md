@@ -23,6 +23,54 @@
 | KB-2022-0003 — [Ethical guidelines on the use of artificial intelligence (AI) and data in teaching and learning for educators](https://op.europa.eu/en/publication-detail/-/publication/d81a0d54-5348-11ed-92ed-01aa75ed71a1/language-en) | official_guidance | 2022-10-25 | bibliographic_checked |
 | KB-2022-0004 — [义务教育信息科技课程标准（2022年版）](https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html) | framework | 2022-04-21 | bibliographic_checked |
 
+## 2022｜issue_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2022-0005 — [Coding with Purpose: Learning AI in Rural California](https://doi.org/10.1145/3513137) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0006 — [Artificial intelligence in early childhood education: A scoping review](https://doi.org/10.1016/j.caeai.2022.100049) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0007 — [How do children acquire knowledge about voice assistants? A longitudinal field study on children’s knowledge about how voice assistants store and process data](https://doi.org/10.1016/j.ijcci.2022.100460) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0008 — [The Effects on Secondary School Students of Applying Experiential Learning to the Conversational AI Learning Curriculum](https://doi.org/10.19173/irrodl.v22i4.5474) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0009 — [Using digital story writing as a pedagogy to develop AI literacy among primary students](https://doi.org/10.1016/j.caeai.2022.100054) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0010 — [A meta-review of literature on educational approaches for teaching AI at the K-12 levels in the Asia-Pacific region](https://doi.org/10.1016/j.caeai.2022.100065) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0011 — [Investigating learners’ competencies for artificial intelligence education in an African K-12 setting](https://doi.org/10.1016/j.caeo.2022.100083) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0012 — [Artificial Intelligence education for young children: Why, what, and how in curriculum design and implementation](https://doi.org/10.1016/j.caeai.2022.100061) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0013 — [Learning design to support student-AI collaboration: perspectives of leading teachers for AI in education](https://doi.org/10.1007/s10639-021-10831-6) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0014 — [In the Black Mirror: Youth Investigations into Artificial Intelligence](https://doi.org/10.1145/3484495) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0015 — [Artificial Intelligence (AI) in early childhood education: Curriculum design and future directions](https://doi.org/10.1016/j.caeai.2022.100072) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0016 — [Integrating Ethics and Career Futures with Technical Learning to Promote AI Literacy for Middle School Students: An Exploratory Study](https://doi.org/10.1007/s40593-022-00293-3) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0017 — [Teachers' trust in AI ‐powered educational technology and a professional development program to improve it](https://doi.org/10.1111/bjet.13232) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0018 — [Learn to Machine Learn via Games in the Classroom](https://doi.org/10.3389/feduc.2022.913530) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0019 — [How Might We Raise Interest in Robotics, Coding, Artificial Intelligence, STEAM and Sustainable Development in University and On-the-Job Teacher Training?](https://doi.org/10.3389/feduc.2022.872637) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0020 — [Secondary school students’ intentions to learn AI: testing moderation effects of readiness, social good and optimism](https://doi.org/10.1007/s11423-022-10111-1) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0021 — [An empirical analysis of high school students' practices of modelling with unstructured data](https://doi.org/10.1111/bjet.13253) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0022 — [Designing a novel teaching platform for AI : A case study in a Thai school context](https://doi.org/10.1111/jcal.12706) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0023 — [A self-determination theory (SDT) design approach for inclusive and diverse artificial intelligence (AI) education](https://doi.org/10.1016/j.compedu.2022.104582) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0024 — [A phenomenographic approach on teacher conceptions of teaching Artificial Intelligence (AI) in K-12 schools](https://doi.org/10.1007/s10639-022-11161-x) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0025 — [Promoting the AI teaching competency of K-12 computer science teachers: A TPACK-based professional development approach](https://doi.org/10.1007/s10639-022-11256-5) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0026 — [AI + Ethics Curricula for Middle School Youth: Lessons Learned from Three Project-Based Curricula](https://doi.org/10.1007/s40593-022-00298-y) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0027 — [Effect of groups size on students' learning achievement, motivation, cognitive load, collaborative problem‐solving quality, and in‐class interaction in an introductory AI course](https://doi.org/10.1111/jcal.12722) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0028 — [Towards Intelligent-TPACK: An empirical study on teachers’ professional knowledge to ethically integrate artificial intelligence (AI)-based tools into education](https://doi.org/10.1016/j.chb.2022.107468) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0029 — [Finnish 5th and 6th grade students' pre-instructional conceptions of artificial intelligence (AI) and their implications for AI literacy education](https://doi.org/10.1016/j.caeai.2022.100095) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0030 — [In-service teachers’ (mis)conceptions of artificial intelligence in K-12 science education](https://doi.org/10.1080/15391523.2022.2119450) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0031 — [Findings on Teaching Machine Learning in High School: A Ten - Year Systematic Literature Review](https://doi.org/10.15388/infedu.2023.18) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0032 — [Teachers’ readiness and intention to teach artificial intelligence in schools](https://doi.org/10.1016/j.caeai.2022.100099) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0033 — [Lessons Learned for AI Education with Elementary Students and Teachers](https://doi.org/10.1007/s40593-022-00304-3) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0034 — [The role of learners’ competencies in artificial intelligence education](https://doi.org/10.1016/j.caeai.2022.100098) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0035 — [High school students exploring machine learning and its societal implications: Opportunities and challenges](https://doi.org/10.1016/j.ijcci.2022.100539) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0036 — [Characterizing children’s conceptual knowledge and computational practices in a critical machine learning educational program](https://doi.org/10.1016/j.ijcci.2022.100541) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0037 — [Examining computational thinking processes in modeling unstructured data](https://doi.org/10.1007/s10639-022-11355-3) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0038 — [Needs and requirements for an additional AI qualification during dual vocational training: Results from studies of apprentices and teachers](https://doi.org/10.1016/j.caeai.2022.100102) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0039 — [Exploring children’s exposure to voice assistants and their ontological conceptualizations of life and technology](https://doi.org/10.1007/s00146-022-01555-3) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0040 — [Evaluating an artificial intelligence literacy programme for empowering and developing concepts, literacy and ethical awareness in senior secondary students](https://doi.org/10.1007/s10639-022-11408-7) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0041 — [Machine Learning and the Five Big Ideas in AI](https://doi.org/10.1007/s40593-022-00314-1) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0042 — [Toward children-centric AI: a case for a growth model in children-AI interactions](https://doi.org/10.1007/s00146-022-01579-9) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0043 — [AI Curriculum for European High Schools: An Embedded Intelligence Approach](https://doi.org/10.1007/s40593-022-00315-0) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0044 — [What matters in AI-supported learning: A study of human-AI interactions in language learning using cluster analysis and epistemic network analysis](https://doi.org/10.1016/j.compedu.2022.104703) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0045 — [The moderating effects of gender and need satisfaction on self-regulated learning through Artificial Intelligence (AI)](https://doi.org/10.1007/s10639-022-11547-x) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0046 — [Using a teacher scheme for educational dialogue analysis to investigate student–student interaction patterns for optimal group activities in an artificial intelligence course](https://doi.org/10.1007/s10639-022-11556-w) | journal_article | 未知 | discovered_unverified |
+| KB-2022-0047 — [The level of perceived efficacy from teachers to access AI-based teaching applications](https://doi.org/10.58459/rptel.2023.18021) | journal_article | 未知 | discovered_unverified |
+
 ## 2023｜first_publication
 
 | 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
