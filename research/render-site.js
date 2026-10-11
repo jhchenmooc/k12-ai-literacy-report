@@ -91,8 +91,12 @@ function dailyTags(c){
  const tags=dailyTagList(c);
  return tags.length?'<div class="tags3">'+tags.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"";
 }
-function dailyItem(c,depth,date){
- return '<li class="item">'+kindBadge(c)+claimParagraph(c,false)+dailyTags(c)+'<div class="meta-line"><span>首次公開：'+esc(c.first_disclosed_on||"未知")+"</span><span>來源：" +esc(c.source_organization||"")+'</span><a href="'+up(depth)+"daily/"+date+'/">當日短訊頁</a></div></li>';
+function dailyEntry(c){
+ return '<li>'+kindBadge(c)+claimParagraph(c,false)+dailyTags(c)+'<div class="meta-line"><span>首次公開：'+esc(c.first_disclosed_on||"未知")+"</span><span>來源："+esc(c.source_organization||"")+"</span></div></li>";
+}
+/* One card per day: the day's items are listed inside a single brief (manager request 2026-10-11). */
+function dailyCard(d,depth){
+ return '<li class="item daily-card"><div class="card-head"><h3>'+d.date+' 每日短訊</h3><span class="sub">收錄 '+d.claims.length+' 項</span></div><ol class="brief-items">'+d.claims.map(dailyEntry).join("")+'</ol><div class="meta-line"><a href="'+up(depth)+"daily/"+d.date+'/">當日短訊頁</a></div></li>';
 }
 function renderDailyEdition(e){
  const head='<div class="kicker">每日短訊</div><h1>'+e.date+' 每日短訊</h1><div class="notice"><p>只記錄「誰在哪天發布了什麼」或來源原文的歸屬摘要；由 AI 整理、未經逐則真人審稿，不含解讀、成效判斷或對臺灣的建議。請點連結閱讀原文。</p></div>';
@@ -101,7 +105,7 @@ function renderDailyEdition(e){
 }
 function renderDailyIndex(days){
  const head='<div class="kicker">每日短訊</div><h1>每天 09:00，記錄新發布的原始文件</h1><div class="notice"><p><strong>每日短訊只說「誰在哪天發布了什麼」。</strong>由 AI 整理、未經逐則真人審稿；不含政策解讀、研究成效或對臺灣的建議。每則附原文連結，首次公開日須在 7 天內。需要判讀的內容，請看週報與月報。</p></div>';
- const main=days.length?days.map(d=>'<section><h2>'+d.date+'<span class="sub"> '+d.claims.length+' 則</span></h2><ul class="item-list">'+d.claims.map(c=>dailyItem(c,1,d.date)).join("")+"</ul></section>").join(""):
+ const main=days.length?'<ul class="item-list">'+days.map(d=>dailyCard(d,1)).join("")+"</ul>":
   '<p class="empty">尚無已發布的每日短訊。只有首次公開在 7 天內、可取得原文且屬低風險的來源才會發布；沒有合格項目的日子不發刊，查核紀錄公開於 GitHub。</p>';
  return shell({depth:1,current:"daily",title:"每日短訊",description:"K-12 AI 素養每日短訊列表",head,main});
 }
@@ -293,8 +297,7 @@ function renderAbout(){
 
 /* ---------- homepage blocks ---------- */
 const BLOCKS={"daily-latest":(days,data)=>{
-  const items=days.flatMap(d=>d.claims.map(c=>({c,date:d.date}))).slice(0,3);
-  return items.length?'<ul class="item-list">'+items.map(x=>dailyItem(x.c,0,x.date)).join("")+"</ul>":'<p class="empty">尚無已發布的每日短訊。沒有合格項目的日子不發刊。</p>';
+  return days.length?'<ul class="item-list">'+dailyCard(days[0],0)+"</ul>":'<p class="empty">尚無已發布的每日短訊。沒有合格項目的日子不發刊。</p>';
  },"archive-stats":(days,data)=>{const n=counts(data);return '<div class="stats"><div class="stat"><strong>'+n.policy+"</strong><span>政策與框架</span></div>"+'<div class="stat"><strong>'+n.journals+"</strong><span>"+(n.books?"期刊論文與專書章節":"期刊論文")+"</span></div>"+'<div class="stat"><strong>'+n.conferences+"</strong><span>會議論文</span></div></div>"}};
 function fillHomepage(html,days,data){
  let out=html;
