@@ -56,6 +56,12 @@
 - 論文年度趨勢分析（`research/annual-paper-trend-analysis-plan.md`）另有操作細則（接受度研究判 B、非教育情境判 C），兩者結果可能不同。
 - 2026-10-10 首批由 `p0-trends-2026-10-10/records.json` 的 `ai_lit_class`、`ai_lit_dims` 轉入；各輪判讀不一致（`ai_lit_conflict` 非空）的 9 篇不標。relation_id 從 KR-3001 起編。
 
+## 高引用（`has_citation_flag`）
+
+- `CITED_TOP10_SAME_YEAR`（網站 #高引用）：論文年度趨勢分析回推入庫的論文中（方案第 8 節），OpenAlex `cited_by_count` 在**同一年**回推論文內排名前 10% 者。
+- 只在同年內比較；各年門檻不同（2026-10-11 查詢：2025 年 ≥37、2024 年 ≥141），不可跨年比較，也不代表研究品質。查詢日期與門檻記在各年的 `research/p0-annual-trends-YYYY/kb-pushback.md`。
+- 關聯一律 `discovered_unverified`；`evidence_url` 指向 OpenAlex 作品頁。
+
 ## 首次資料與限制
 
 目前 CSV 先從真實 `research/drafts/2026-10-09_2026-10-15.json` 唯讀匯入九筆「發現但未認證」的來源，**未驗證首發日也不推測學術文獻類型**。沒有可驗證日期的資料不會因為發現於 2026 年就被自動歸成 2026 年首發。搜尋執行表目前只有標頭，不誤把先前審查與研究對話當可重現機器搜尋批次。其他確有查核的來源在下一輪分批補入。

@@ -9,7 +9,7 @@ const {parseCsv}=require("./validate-knowledge-base.js");
 const LEGACY_WEEKLY=[{path:"weekly/2026-09-29_10-08/",title:"創刊特刊：2026/9/29–10/8",note:"10 天過渡期特刊；早期版本，未經獨立認證，保留公開更正說明。"}];
 const LEGACY_MONTHLY=[{path:"monthly/2026-09/",title:"2026 年 9 月月報",note:"跨週趨勢整合；早期版本，未經獨立認證，保留公開更正說明。"}];
 const POLICY_TYPES={framework:"框架",official_guidance:"官方指引",government_announcement:"政府公告",policy_review:"政策檢討",binding_policy:"正式政策",draft:"草案",consultation:"意見徵詢"};
-const RESEARCH_TYPES={journal_article:"期刊論文",conference_paper:"會議論文",book_chapter:"專書章節"};
+const RESEARCH_TYPES={journal_article:"期刊論文",conference_paper:"會議論文",book_chapter:"專書章節",preprint:"預印本"};
 const INTERNATIONAL={"O-UNESCO":"UNESCO","O-OECD":"OECD","O-EU-EC":"歐盟執委會","O-EU-COUNCIL":"歐盟理事會","O-COE":"歐洲理事會","O-UNICEF":"UNICEF"};
 const COUNTRY={AU:"澳洲",JP:"日本",KR:"韓國","GB-ENG":"英格蘭",GB:"英國",US:"美國",SG:"新加坡",CN:"中國",HK:"香港",TW:"臺灣",CA:"加拿大",NZ:"紐西蘭",DE:"德國",FR:"法國",FI:"芬蘭",EE:"愛沙尼亞",IN:"印度",AE:"阿聯",MX:"墨西哥",BR:"巴西",CH:"瑞士",CO:"哥倫比亞",CZ:"捷克",EG:"埃及",ET:"衣索比亞","GB-SCT":"蘇格蘭",GH:"迦納",GR:"希臘",ID:"印尼",IT:"義大利",MA:"摩洛哥",NG:"奈及利亞",NO:"挪威",PH:"菲律賓",QA:"卡達",SE:"瑞典",SK:"斯洛伐克",TH:"泰國",TR:"土耳其",VN:"越南",ZA:"南非"};
 const ORG_COUNTRY={"O-AU-EDU":"AU","O-JP-MEXT":"JP","O-KR-MOE":"KR","O-UK-DFE":"GB-ENG","O-US-ED":"US","O-SG-MOE":"SG","O-CN-MOE":"CN","O-HK-EDB":"HK","O-TW-MOE":"TW","O-NZ-MOE":"NZ"};
@@ -174,7 +174,7 @@ function archiveData(records,relations,venues,hidden=[]){
   const countries=[...new Set(rs.filter(x=>x.predicate==="studies_country").map(x=>COUNTRY[x.object_id]||x.object_id))];
   const basis=r.year_basis;
   const date=basis==="first_publication"?r.first_published_on+" 首發":basis==="issue_year"?"卷期年（首發日未知）":basis==="event_year"?"會議年（首發日未知）":"未知";
-  return {id:r.record_id,year:r.year_value||"未知",title:r.title,url:r.primary_url,date,type:POLICY_TYPES[r.record_type]||RESEARCH_TYPES[r.record_type]||r.record_type,status:STATUS[r.verification_status]||STATUS.discovered_unverified,tags:POPULATION_TAGS.filter(([k])=>pop.has(k)).map(([,t])=>t),tags2:[...TOPIC_TAGS,...METHOD_TAGS].filter(([k])=>tm.has(k)).map(([,t])=>t).concat(countries),tags3:AILIT_TAGS.filter(([k])=>ail.has(k)).map(([,t])=>t)};
+  return {id:r.record_id,year:r.year_value||"未知",title:r.title,url:r.primary_url,date,type:POLICY_TYPES[r.record_type]||RESEARCH_TYPES[r.record_type]||r.record_type,status:STATUS[r.verification_status]||STATUS.discovered_unverified,tags:POPULATION_TAGS.filter(([k])=>pop.has(k)).map(([,t])=>t),tags2:[...TOPIC_TAGS,...METHOD_TAGS].filter(([k])=>tm.has(k)).map(([,t])=>t).concat(countries),tags3:AILIT_TAGS.filter(([k])=>ail.has(k)).map(([,t])=>t).concat(rs.some(x=>x.predicate==="has_citation_flag"&&x.object_id==="CITED_TOP10_SAME_YEAR")?["高引用"]:[])};
  };
  const policy=new Map(),journals=new Map(),conferences=new Map();
  const add=(m,key,name,sub,r)=>{if(!m.has(key))m.set(key,{key,name,sub,rows:[]});m.get(key).rows.push(row(r,rel.get(r.record_id)))};
@@ -189,6 +189,8 @@ function archiveData(records,relations,venues,hidden=[]){
    const src=(rs.find(x=>x.predicate==="published_in")||{}).object_id;
    /* Book chapters have no monitored venue code; they sit in their own group on the journals page. */
    if(r.record_type==="book_chapter"){add(journals,"8-book","專書章節","收錄於專書的章節，非期刊論文",r);continue}
+   /* Preprints have no venue; they sit in their own group on the journals page (manager 2026-10-11). */
+   if(r.record_type==="preprint"){add(journals,"7-preprint","預印本","未經同儕審查的預印本，例如 arXiv",r);continue}
    const m=r.record_type==="conference_paper"?conferences:journals,label=m===conferences?"會議":"期刊";
    if(src)add(m,"1-"+src,venueName.get(src)||src,label+" "+src,r);
    else add(m,"9-other","其他"+label,"尚未對應到監測來源",r);
@@ -246,7 +248,8 @@ const TAG_NOTE='<div class="info tag-guide"><p class="tg-lead"><strong>題名下
  '<li><span class="t">#教學介入</span> 只表示研究做了教學介入，不表示有成效。</li>'+
  '<li>國別只有部分論文有標，不能用來比較各國研究多寡。</li>'+
  '<li>框架面向是本刊依共用準則，把國際論文對照臺灣框架的判讀，<strong>不代表論文作者採用此框架</strong>；各輪判讀不一致者不標。</li>'+
- '<li>本刊年度趨勢分析另有操作細則，結果可能不同。</li></ul></details></div>';
+ '<li>本刊年度趨勢分析另有操作細則，結果可能不同。</li>'+
+ '<li><span class="t">#高引用</span>：OpenAlex 被引次數（2026-10-11 查詢）在同一年回推入庫的趨勢論文中排前 10%；只在同年內比較，不同年份的門檻不同，也不代表研究品質。</li></ul></details></div>';
 function renderArchiveList(kind,groups){
  const L=LISTS[kind],n=groups.reduce((s,g)=>s+g.rows.length,0);
  const head='<div class="kicker">歷年資料庫</div><h1>'+L.title+"</h1>"+ARCHIVE_LEAD+LEGEND+archiveTabs(kind);
