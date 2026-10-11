@@ -128,12 +128,14 @@ print('## aud_bounds',out['aud_bounds'])
 
 # ---------- 報告用描述表（--tables）；附表 C 逐刊逐年（--journal-csv） ----------
 def pool_remaining(y):
-    """解釋補充 a 抽樣母體中，仍為 A 類、對象不明的篇數（2022、2023 的母體為逐篇判讀後剩下者）。"""
+    """解釋補充 a 母體中，有中小學線索、目前仍為 A 類對象不明者（含讀過全文仍判不出或沒有參與者者）。
+    2022、2023 的母體檔另列無線索（cue_kind=none）的 A／B 類，不計入。"""
     f={2022:'2022/dev004a-pool.csv',2023:'2023/dev004a-pool.csv',2024:'2024/dev004a-pool39.csv',2025:'2025/dev004a-pool72.csv'}[y]
-    path=os.path.join(R,f)
-    if not os.path.exists(path):return None
-    ids={x['work_id'] for x in csv.DictReader(open(path))}
+    rows=list(csv.DictReader(open(os.path.join(R,f))))
+    ids={x['work_id'] for x in rows if x.get('cue_kind','cue')!='none'}
     return sum(1 for x in C[y] if x['work_id'] in ids and x['ai_lit_class']=='A' and x['audience_role']=='unknown')
+def wil(k,n):
+    w=wilson(k,n);return [k,n,round(100*k/n,1),round(w[0],1),round(w[1],1)]
 def tables():
     T={}
     ST=['preschool','primary','lower_secondary','upper_secondary','vocational_secondary','secondary_unspecified','k12_multi','k12_unspecified','unknown']
@@ -157,6 +159,38 @@ def tables():
             for x in C[y]:
                 if x['ai_lit_class']=='A' and x['audience_role'] in('student','inservice_teacher'):L[(x['audience_role'],x['level'] or 'unknown')]+=1
         T[f'level_{per}']={f'{a}|{b}':c for (a,b),c in sorted(L.items())}
+    # 面板分層每千篇、面板無摘要比例（step2-summary）
+    strat={}
+    for x in csv.DictReader(open(os.path.join(R,'journals.csv'))):
+        if x['in_panel']=='yes':
+            for y in RAW:strat[(y,x[f'source_id_{y}'])]=x['panel_stratum'];strat[(y,x['journal_code'])]=x['panel_stratum']
+    s2=json.load(open(os.path.join(R,'rerun-dev001','step2-summary.json')))['years']
+    for y in RAW:
+        q=json.load(open(os.path.join(R,'rerun-dev001',str(y),'queries.json')))['panel_size']['by_source']
+        tot=collections.Counter()
+        for sid,v in q.items():tot[strat.get((y,sid.rsplit('/',1)[-1]),'?')]+=(v['count'] if isinstance(v,dict) else v)
+        A=collections.Counter(strat[(y,x['journal_code'])] for x in C[y] if x['ai_lit_class']=='A')
+        M=collections.Counter(strat[(y,x['journal_code'])] for x in C[y] if x['ai_lit_class']=='A' and x['audience_role'] in ROLES)
+        T[f'per1000_{y}']={k:{'panel':tot[k],'A':A[k],'A_per1000':round(1000*A[k]/tot[k],1),'main':M[k],'main_per1000':round(1000*M[k]/tot[k],2)} for k in tot}
+        T[f'panel_missing_abstract_{y}']=(s2[str(y)]['panel_missing_abstract'],s2[str(y)]['panel_size'])
+    # 漏收：中性查詢差集抽樣（全部樣本與只用有摘要者）
+    NS={2022:'2022/neutral-sample.json',2023:'2023/neutral-sample.json',2024:'2024/neutral-sample.json',2025:'2025/neutral-sample-v2.json'}
+    for y,f in NS.items():
+        d=json.load(open(os.path.join(R,f)));it=d['items']
+        k=[x for x in it if x['ai_lit_class']=='A' and x['audience_role'] in ROLES]
+        wa=[x for x in it if x['has_abstract']]
+        T[f'leak_{y}']={'all':wil(len(k),len(it)),'with_abstract':wil(len(k),len(wa)),'title_only':len(it)-len(wa),'roles':dict(collections.Counter(x['audience_role'] for x in k))}
+    # 第 1 項情境：有中小學線索、尚未判定者全部算學生／在職教師
+    early_u=sum(pool_remaining(y) for y in (2022,2023));late_u=sum(pool_remaining(y) for y in (2024,2025))
+    Pm=res['main']['periods'];es,em=Pm['early']['1'];ls,lm=Pm['late']['1']
+    T['item1_scenario']={'remaining':(early_u,late_u),'all_student':(wil(es+early_u,em+early_u),wil(ls+late_u,lm+late_u)),'all_teacher':(wil(es,em+early_u),wil(ls,lm+late_u))}
+    # Web of Science 年份比對
+    wf=os.path.join(R,'wos','wos-compare.csv')
+    if os.path.exists(wf):
+        W=[x for x in csv.DictReader(open(wf)) if x['oa_year'] or x['status']=='in_union']
+        def oy(x):return int(x['oa_year']) if x['oa_year'] else 2025
+        diff=[x for x in W if x['PY'] and int(x['PY'])!=oy(x)]
+        T['wos_year']={'with_oa_year':len(W),'differ':len(diff),'wos_later':sum(int(x['PY'])>oy(x) for x in diff)}
     # 生成式 AI 旗標一致性（第一次對第二次編碼）
     def kap(a,b):
         n=len(a);po=sum(x==y for x,y in zip(a,b))/n;ca,cb=collections.Counter(a),collections.Counter(b);pe=sum(ca[k]*cb[k] for k in set(ca)|set(cb))/n/n
@@ -164,6 +198,10 @@ def tables():
     corp={x['work_id']:x for y in RAW for x in RAW[y]}
     for lab,f in (('2025','2025/coding2.csv'),('backfill','backfill-2022-2024/coding2.csv')):
         rr=[r for r in csv.DictReader(open(os.path.join(R,f))) if corp[r['work_id']]['ai_lit_class'] in('A','B') or r['ai_lit_class'] in('A','B')]
+        AA=[r for r in rr if corp[r['work_id']]['ai_lit_class']=='A']
+        T[f'genai_kappa_A_{lab}']={'3cat':kap([corp[r['work_id']]['genai_flag'] or 'unknown' for r in AA],[r['genai_flag'] or 'unknown' for r in AA]),'yes_vs_not':kap(['yes' if corp[r['work_id']]['genai_flag']=='yes' else 'not' for r in AA],['yes' if r['genai_flag']=='yes' else 'not' for r in AA])}
+        IV=[r for r in AA if corp[r['work_id']]['method'] in INTERV and r['method'] in INTERV]
+        T[f'outcome_kappa_{lab}']=kap([corp[r['work_id']]['outcome_measured'] or 'blank' for r in IV],[r['outcome_measured'] or 'blank' for r in IV]) if IV else None
         T[f'genai_kappa_{lab}']=kap([corp[r['work_id']]['genai_flag'] or 'unknown' for r in rr],[r['genai_flag'] or 'unknown' for r in rr])
         mm=lambda c,ro:c=='A' and ro in ROLES
         allr=list(csv.DictReader(open(os.path.join(R,f))))
@@ -178,7 +216,7 @@ def tables():
     return T
 def journal_csv(path):
     with open(path,'w',newline='') as f:
-        w=csv.writer(f,lineterminator='\n');w.writerow(['journal_code','year','hits','nonpaper_retracted_dedup','scope_judged','A','B','C','unknown','no_abstract','abstract_openalex','abstract_scopus','main_denominator'])
+        w=csv.writer(f,lineterminator='\n');w.writerow(['journal_code','year','hits','nonpaper_retracted_dedup','scope_judged','A','B','C','unknown','no_abstract','abstract_openalex','abstract_scopus','doctype_checked_scopus','main_denominator'])
         codes=sorted({x['journal_code'] for r in RAW.values() for x in r})
         for j in codes:
             for y,r in RAW.items():
@@ -187,6 +225,7 @@ def journal_csv(path):
                 v=[x for x in rr if valid(x)];cl=collections.Counter(x['ai_lit_class'] for x in v if x['ai_lit_class'])
                 w.writerow([j,y,len(rr),len(rr)-len(v),sum(cl.values()),cl['A'],cl['B'],cl['C'],cl['unknown'],sum(x['status_note'].startswith('no_abstract') for x in rr),
                     sum(x['abstract_source']=='openalex' for x in v if x['ai_lit_class']),sum(x['abstract_source']=='scopus' for x in v if x['ai_lit_class']),
+                    sum(1 for x in rr if x['abstract_source']=='scopus' or x['status_note'].startswith('excluded_doctype')),
                     sum(1 for x in v if x['ai_lit_class']=='A' and x['audience_role'] in ROLES)])
 if '--tables' in sys.argv:print('## tables',json.dumps(tables(),ensure_ascii=False))
 if '--journal-csv' in sys.argv:journal_csv(sys.argv[sys.argv.index('--journal-csv')+1])
