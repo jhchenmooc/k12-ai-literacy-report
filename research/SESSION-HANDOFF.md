@@ -8,7 +8,7 @@
 
 **要繼續的任務**：以最少人力、可追溯的原始證據，製作並公開 K–12 AI 素養國際週報／月報；第一期標準週報涵蓋 **2026/10/09–10/15**，預定 **10/16** 出刊。網站：[GitHub Pages](https://jhchenmooc.github.io/k12-ai-literacy-report/)；儲存庫：[jhchenmooc/k12-ai-literacy-report](https://github.com/jhchenmooc/k12-ai-literacy-report)。
 
-**目前狀態（2026-10-11 晚）**：`publication/issues.json` 已登錄每日短訊 `daily/2026-10-11`；第一期正式週報尚未製作及登錄；本週候選（`research/drafts/2026-10-09_2026-10-15.json`）16 項中 3 項 publish、13 項 hold，不能宣稱已經獲獨立來源認證。趨勢線：四年合併報告為內部草稿（PR #252 多輪自檢中），D5 人工驗證暫無法執行（方案 §10 第 25 項）。新版 CI 能檢查結構，**不能自動證明來源真實**。
+**目前狀態（2026-10-11 晚）**：`publication/issues.json` 已登錄每日短訊 `daily/2026-10-11`；第一期正式週報尚未製作及登錄；本週候選（`research/drafts/2026-10-09_2026-10-15.json`）16 項中 3 項 publish、13 項 hold，不能宣稱已經獲獨立來源認證。趨勢線：四年合併報告為內部草稿，只放私人 repo `jhchenmooc/k12-ai-literacy-report-restricted`（方案第 10 節第 32 項；公開 repo 只留說明），D5 人工驗證暫無法執行（方案 §10 第 25 項）。新版 CI 能檢查結構，**不能自動證明來源真實**。
 
 **論文搜尋與核對工具**：怎麼調用、踩過的坑、何時平行化，見 [research-tools-guide.md](research-tools-guide.md)（Claude 與 ChatGPT 通用）；現況摘要見本檔末段「論文搜尋與核對工具現況（2026-10-09 起）」。僅人工輔助、不構成認證。
 
