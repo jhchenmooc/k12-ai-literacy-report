@@ -171,3 +171,12 @@ test("daily list and edition page show audience, A/B and framework tags",()=>{
  assert.ok(page.includes('</p><p data-claim-tags="D20990101-01">#中小學 #AI素養核心 #學生AI基礎與技術 #學生AI系統設計</p>'));
  assert.ok(!renderDailyEdition({date:"2099-01-01",claims:[{...c,audience:undefined,ai_lit_class:undefined,ai_lit_dims:undefined}]}).includes("data-claim-tags"));
 });
+
+test("daily list and homepage show one card per day with that day's items inside",()=>{
+ const pages=build(root),days=JSON.parse(fs.readFileSync(path.join(root,"publication","issues.json"),"utf8")).editions.filter(e=>e.path.startsWith("daily/"));
+ const list=pages["daily/index.html"];
+ assert.equal((list.match(/class="item daily-card"/g)||[]).length,days.length);
+ assert.equal((list.match(/當日短訊頁/g)||[]).length,days.length);
+ const home=pages["index.html"].split("generated:daily-latest:start")[1].split("generated:daily-latest:end")[0];
+ assert.equal((home.match(/class="item daily-card"/g)||[]).length,1);
+});

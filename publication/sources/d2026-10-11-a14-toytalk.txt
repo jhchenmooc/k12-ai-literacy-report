@@ -1,3 +1,4 @@
 arXiv | 2026-10-05 | If My Toy Could Talk: How Young Children Imagine, Design, and Test AI-Enabled Toys | https://arxiv.org/abs/2610.06619 | arXiv abs page (read 2026-10-11T00:57Z); preprint, not peer reviewed
 Submission history: [v1] Mon, 5 Oct 2026 16:18:47 UTC (3,523 KB)
-We deployed ToyTalk with 76 children aged 7-9 across five elementary schools in the southeastern U.S.
+Abstract excerpt (selected abstract sentences in original order, joined by " … "):
+Children begin with a familiar toy, configure its AI-enabled version through a no-code interface, and then interact with and test the character. … We deployed ToyTalk with 76 children aged 7-9 across five elementary schools in the southeastern U.S. … When mismatches arose, children typically responded through correction, persistence, and retesting, while few returned to reconfigure the system.
