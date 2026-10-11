@@ -57,7 +57,10 @@ test("invalid date input fails with clear error",()=>{
 test("real first-week nine candidates remain held and never auto-promote",()=>{
  const w=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8"));
  const count=w.items.length;assert.ok(count>=9);
- assert.equal(w.items.filter(c=>c.decision==="hold").length,count);
+ /* Only source-checked publish candidates may leave hold (manager 2026-10-11). */
+ const published=w.items.filter(c=>c.decision==="publish");
+ assert.equal(w.items.filter(c=>c.decision==="hold").length+published.length,count);
+ assert.ok(published.every(c=>c.source_checked===true));
  const a07=w.items.find(c=>c.candidate_id==="W2026-10-09-A07");
  assert.ok(a07);
  assert.equal(a07.source_checked,false);
@@ -65,8 +68,8 @@ test("real first-week nine candidates remain held and never auto-promote",()=>{
  const brief=dailyBrief(w,"2026-10-10");
  assert.deepEqual(brief.suggested_for_publication,[]);
  assert.equal(w.items.length,count);
- assert.equal(w.screening_summary.ready_to_publish,0);
- assert.equal(w.screening_summary.verified_for_publication,0);
+ assert.equal(w.screening_summary.ready_to_publish,published.length);
+ assert.equal(w.screening_summary.verified_for_publication,published.length);
 });
 test("daily suggestions require AI literacy scope A/B and a daily audience",()=>{
  const base={candidate_id:"v",source_url:"https://example.org/v",source_title:"V",source_publication_date:"2026-10-09",first_disclosed_on:"2026-10-09",verification_completed_on:"2026-10-09",source_checked:true,conflict_unresolved:false,decision:"publish",ai_lit_class:"A",audience:"k12"};

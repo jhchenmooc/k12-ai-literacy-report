@@ -7,8 +7,10 @@ const w=JSON.parse(fs.readFileSync(path.join(root,"drafts","2026-10-09_2026-10-1
 test("all real held candidates map to existing KB, never to publication",()=>{
  const p=preview(records,w.items);
  assert.equal(p.length,w.items.length);assert.ok(p.length>=9);
- assert.ok(p.every(x=>x.discovery_status==="review_existing"&&x.verified===false&&x.publication_decision==="not_applicable"));
- assert.ok(w.items.every(x=>x.decision==="hold"));
+ const held=new Set(w.items.filter(x=>x.decision==="hold").map(x=>x.candidate_id));
+ assert.ok(p.filter(x=>held.has(x.candidate_id)).every(x=>x.discovery_status==="review_existing"&&x.verified===false&&x.publication_decision==="not_applicable"));
+ /* Only source-checked publish candidates may leave hold (manager 2026-10-11). */
+ assert.ok(w.items.every(x=>x.decision==="hold"||(x.decision==="publish"&&x.source_checked===true)));
 });
 test("new candidate remains unverified and source batch is unchanged",()=>{
  const item={candidate_id:"NEW",source_title:"New source",source_url:"https://example.org/new?a=3"};

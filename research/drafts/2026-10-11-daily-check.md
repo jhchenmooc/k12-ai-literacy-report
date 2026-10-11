@@ -63,3 +63,13 @@ A14（預印本，10-05）與 A15（Scientific Reports，10-10）在內容上符
 ## 驗證
 
 依 `.github/workflows/verify-and-deploy.yml` 的 verify 步驟在本機跑過（npm ci 之後），全部通過。
+
+## 補發（2026-10-11，管理者同意）
+
+- 管理者同意修改知識庫測試（#224，改為「hold 須未查核；publish 須已查核且紀錄不再是 discovered_unverified」，出版閘門未改），並同意 Scientific Reports 列入監測清單 J48、補發本日短訊。
+- 2026-10-11 00:57–00:58 UTC 重讀原頁，日期皆取自原頁：
+  - A14 arXiv 2610.06619：v1 提交 2026-10-05（arXiv 頁 Submission history）；美國五所小學 76 名 7–9 歲兒童；A；k12。
+  - A15 Scientific Reports 10.1038/s41598-026-73410-0：Published 2026-10-10；255 名三年級學生（沙烏地阿拉伯東部）；A；k12。
+  - A16 JECR 10.1177/07356331261494821：First published online 2026-10-10；臺灣 10 個三年級班（N=229）；B；k12。SAGE 對本刊回 403，出版者頁由管理者提供，只保存書目事實與一句摘錄。
+- 三筆改為 publish、source_checked=true；知識庫 KB-2026-0267～0269 改為 bibliographic_checked，填首次公開日；KB-2026-0268 加 published_in J48（KR-3949）；KB-2026-0269 的 published_in J36 改為 bibliographic_checked。
+- 建立 publication/sources 短快照 3 份、publication/claims/daily-2026-10-11.json（D20261011-01～03），登記 daily/2026-10-11。
