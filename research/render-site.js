@@ -165,7 +165,8 @@ function renderPeriodIndex(kind,editions){
 function archiveData(records,relations,venues,hidden=[]){
  const rel=new Map();for(const r of relations){if(!rel.has(r.subject_id))rel.set(r.subject_id,[]);rel.get(r.subject_id).push(r)}
  const venueName=new Map(venues.map(v=>[v.id,v.name]));
- const skip=new Set(hidden),kept=records.filter(r=>!r.source_candidate_id&&!skip.has(r.record_id));
+ /* Weekly candidates stay out until their source has been checked (manager 2026-10-11). */
+ const skip=new Set(hidden),kept=records.filter(r=>(!r.source_candidate_id||r.verification_status!=="discovered_unverified")&&!skip.has(r.record_id));
  const row=(r,rs=[])=>{
   const pop=new Set(rs.filter(x=>x.predicate==="has_population").map(x=>x.object_id));
   const tm=new Set(rs.filter(x=>x.predicate==="has_topic"||x.predicate==="has_method").map(x=>x.object_id));
@@ -232,7 +233,7 @@ const LISTS={
 function archiveTabs(active){
  return '<nav class="tabs" aria-label="清單類型">'+Object.entries(LISTS).map(([k,v])=>'<a href="../'+k+'/"'+(active===k?' aria-current="page"':"")+">"+v.short+"</a>").join("")+"</nav>";
 }
-const ARCHIVE_LEAD='<p class="lead">這是可追溯的<strong>書目索引</strong>，不是政策效力或研究結論的認證。每筆標示核對程度；首發日未核實時，以卷期年歸類並註明。週報審查中的候選不列入。</p><p class="lead-note">「僅發現・未核」不代表書目有誤：Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，彼此一致也不升為「書目已核」；本刊不批次核對，只有論文或文件被週報、月報引用時，才逐篇讀出版者或官方原頁，並另做出版查核。</p>';
+const ARCHIVE_LEAD='<p class="lead">這是可追溯的<strong>書目索引</strong>，不是政策效力或研究結論的認證。每筆標示核對程度；首發日未核實時，以卷期年歸類並註明。週報審查中、尚未核對原頁的候選不列入。</p><p class="lead-note">「僅發現・未核」不代表書目有誤：Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，彼此一致也不升為「書目已核」；本刊不批次核對，只有論文或文件被週報、月報引用時，才逐篇讀出版者或官方原頁，並另做出版查核。</p>';
 const SOURCE_NOTE='<div class="info"><p>資料來源：本刊知識庫（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/tree/main/research/knowledge-base">GitHub 公開</a>）。清單由程式自知識庫產生；發現錯誤請透過<a href="../../feedback/">讀者勘誤</a>回報。</p></div>';
 /* Reader guide for the three tag lines: one row per line, colour-matched to the tags; caveats folded into a <details>. */
 const TAG_NOTE='<div class="info tag-guide"><p class="tg-lead"><strong>題名下的「#」標記</strong>由 AI 依題名與摘要判讀，<strong>未經人工逐筆核對</strong>；判不出來的不標。可用瀏覽器頁內搜尋（Ctrl＋F，Mac 用 ⌘＋F）輸入例如「#國中」逐筆查找。</p>'+
