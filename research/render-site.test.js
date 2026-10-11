@@ -1,6 +1,6 @@
 "use strict";
 const {test}=require("node:test"),assert=require("node:assert/strict"),fs=require("node:fs"),os=require("node:os"),path=require("node:path"),crypto=require("node:crypto");
-const {build,archiveData,renderDailyEdition,renderWeeklyEdition,fillHomepage}=require("./render-site.js");
+const {build,archiveData,dailyTags,renderDailyEdition,renderWeeklyEdition,fillHomepage}=require("./render-site.js");
 const {validate}=require("./validate-publication.js");
 const root=path.join(__dirname,"..");
 
@@ -161,4 +161,12 @@ test("AI literacy scope C records are hidden from the archive and every listed r
  const pages=["archive/journals/index.html","archive/conferences/index.html","archive/policy/index.html"].map(p=>fs.readFileSync(path.join(__dirname,"..",p),"utf8"));
  assert.ok(pages[0].includes('href="https://doi.org/'),"archive pages render record URLs");
  for(const x of list){const u=urls.get(x.record_id).replace(/&/g,"&amp;");for(const page of pages)assert.ok(!page.includes('"'+u+'"'),x.record_id+" still listed")}
+});
+
+test("daily list shows audience, A/B and framework tags; the edition page does not",()=>{
+ const c={claim_id:"D20990101-01",claim_text:"來源機構：X；資料標題：T；來源刊登日：2099-01-01。",source_title:"T",source_url:"https://example.org/t",audience:"k12",ai_lit_class:"A",ai_lit_dims:["S-SYS","S-BAS"]};
+ assert.equal(dailyTags(c),'<div class="tags3"><span class="t">#中小學</span> <span class="t">#AI素養核心</span> <span class="t">#學生AI基礎與技術</span> <span class="t">#學生AI系統設計</span></div>');
+ assert.equal(dailyTags({}),"");
+ const page=renderDailyEdition({date:"2099-01-01",claims:[c]});
+ assert.ok(!page.includes("tags3")&&!page.includes("#中小學"));
 });
