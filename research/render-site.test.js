@@ -163,10 +163,11 @@ test("AI literacy scope C records are hidden from the archive and every listed r
  for(const x of list){const u=urls.get(x.record_id).replace(/&/g,"&amp;");for(const page of pages)assert.ok(!page.includes('"'+u+'"'),x.record_id+" still listed")}
 });
 
-test("daily list shows audience, A/B and framework tags; the edition page does not",()=>{
+test("daily list and edition page show audience, A/B and framework tags",()=>{
  const c={claim_id:"D20990101-01",claim_text:"來源機構：X；資料標題：T；來源刊登日：2099-01-01。",source_title:"T",source_url:"https://example.org/t",audience:"k12",ai_lit_class:"A",ai_lit_dims:["S-SYS","S-BAS"]};
  assert.equal(dailyTags(c),'<div class="tags3"><span class="t">#中小學</span> <span class="t">#AI素養核心</span> <span class="t">#學生AI基礎與技術</span> <span class="t">#學生AI系統設計</span></div>');
  assert.equal(dailyTags({}),"");
  const page=renderDailyEdition({date:"2099-01-01",claims:[c]});
- assert.ok(!page.includes("tags3")&&!page.includes("#中小學"));
+ assert.ok(page.includes('</p><p data-claim-tags="D20990101-01">#中小學 #AI素養核心 #學生AI基礎與技術 #學生AI系統設計</p>'));
+ assert.ok(!renderDailyEdition({date:"2099-01-01",claims:[{...c,audience:undefined,ai_lit_class:undefined,ai_lit_dims:undefined}]}).includes("data-claim-tags"));
 });

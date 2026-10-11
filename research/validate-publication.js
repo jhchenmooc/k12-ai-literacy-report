@@ -4,6 +4,7 @@ const fs=require("node:fs"),path=require("node:path");
 const {check}=require("./validate-claims.js");
 const {sourceTrace}=require("./validate-source-trace.js");
 const {publicationScopeErrors,audienceErrors}=require("./ai-literacy-scope.js");
+const {dailyTagText}=require("./daily-tags.js");
 const parse5=require("parse5");
 const {LEGACY,inventory}=require("./public-site.js");
 const {canonical}=require("./ingest-candidates.js");
@@ -108,10 +109,25 @@ function matchBody(document,claims,issueDate,issuePath){
   if(node.nodeName==="#comment"||node.nodeName==="#documentType")errors.push("comments/declarations unsupported within main");
   if(node.tagName&&!safeTags.has(node.tagName))errors.push("unsupported HTML tag in main: "+node.tagName);
   if(node.tagName&&node.namespaceURI!==HTML_NS)errors.push("non-HTML namespace unsupported within main");
-  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
+  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(a.name==="data-claim-tags"&&node.tagName==="p"))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
+ }
+ /* Daily tag line (manager decision 2026-10-11): a plain <p data-claim-tags="ID"> directly after the
+    claim's own element, whose text must equal dailyTagText(claim); at most once per claim, daily only. */
+ const tagCounts=new Map();
+ for(const node of nodes.filter(n=>attr(n,"data-claim-tags")!==undefined&&attr(n,"data-claim-tags")!==null)){
+  const id=attr(node,"data-claim-tags"),c=map.get(id),expected=c?dailyTagText(c):"";
+  if(!issuePath.startsWith("daily/")){errors.push("claim tag line allowed only in daily editions");continue}
+  if(attr(node,"data-claim-id")){errors.push("claim tag line cannot also be a claim: "+id);continue}
+  if(!c){errors.push("claim tag line names unknown claim "+id);continue}
+  tagCounts.set(id,(tagCounts.get(id)||0)+1);
+  if(tagCounts.get(id)>1)errors.push("claim tag line repeated: "+id);
+  if(!expected||normalized(text(node))!==expected||children(node).some(x=>x.nodeName!=="#text"))errors.push("claim tag line differs from claim fields: "+id);
+  const siblings=children(node.parentNode).filter(x=>x.tagName),prev=siblings[siblings.indexOf(node)-1];
+  if(!prev||attr(prev,"data-claim-id")!==id)errors.push("claim tag line must directly follow its claim: "+id);
  }
  for(const node of content){
   const t=normalized(text(node));if(!t)continue;
+  if(attr(node,"data-claim-tags")!==undefined&&attr(node,"data-claim-tags")!==null)continue;
   const id=attr(node,"data-claim-id");
   if(!id&&shellCheck.fixedText.has(t))continue;
   if(!id){errors.push("unbound content <"+node.tagName+">: "+t.slice(0,70));continue}
