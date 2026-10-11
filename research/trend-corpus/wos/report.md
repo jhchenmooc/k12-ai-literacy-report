@@ -4,7 +4,7 @@
 
 ## 1. 檢索與比對
 
-- WoS Core Collection 以 `query-single.txt` 檢索，**2,226 筆**（PY 2024–2026，Article／Review；J02 未收錄，實際比較 46 刊，命中分布見 `summary.json` 的 `by_journal`，有命中的面板期刊 32 刊）。
+- WoS Core Collection 以 `query-single.txt` 檢索，**2,226 筆**（PY 2024–2026，Article／Review；J02 未收錄；實際有命中的面板期刊 32 刊，含 J02 共 15 刊零命中，見第 4 節「收錄範圍」；命中分布見 `summary.json` 的 `by_journal`；`by_PY` 另有 PY 2027 的 16 筆（原因未查））。
 - 以小寫 DOI 比對 OpenAlex 2025 主查詢聯集（`2025/corpus-v2.csv`，1,861 篇），不在聯集者以 DOI 查 OpenAlex 全庫（`scripts/wos_compare.py`）：
 
 | 歸類 | 筆數 | 說明 |
@@ -23,7 +23,7 @@
   - 1 篇 OpenAlex 摘要含 ChatGPT，但以 `title_and_abstract.search` 查同一 ID 得 0（檢索索引與摘要不一致）。
   - 1 篇 OpenAlex 無摘要，題名寫「GPT-4.0」，`title.search:"GPT-4"` 查不到。
   - 沒有一篇是詞組本身漏列。
-- **範圍判斷（全數判，不抽樣；n＜100 故種子 20281268 未使用）：**A 2、B 6、C 1、不明 1；A 類 2 篇的對象都不在主要分母（大學生 1、職前教師 1），**屬主要分母者 0 篇**。
+- **範圍判斷（全數判，不抽樣；n＜100 故種子 20281270（用途代碼 10）未使用）：**A 2、B 6、C 1、不明 1；A 類 2 篇的對象都不在主要分母（大學生 1、職前教師 1），**屬主要分母者 0 篇**。
 
 ## 3. OpenAlex 查無 10 篇
 
@@ -32,7 +32,9 @@
 
 ## 4. 判讀與限制
 
-- 在 WoS 也收錄的 46 刊範圍內，OpenAlex 2025 主查詢的候選漏收約 1%，且都不屬主要分母；漏收原因是 OpenAlex 的文件類型、檢索索引與摘要缺漏，不是詞組設計。
+- **收錄範圍（2026-10-11 補）：**本次可用的 WoS Core Collection 版本只有 SCI-EXPANDED、SSCI、CPCI-S、CPCI-SSH、CCR、IC，不含 ESCI（管理者確認 Editions 清單）。47 刊中 15 刊 0 命中（J02、J03、J09、J11、J12、J13、J24、J29、J32、J34、J35、J41、J42、J43、J47），占 2025 年 OpenAlex 命中 1,002／1,861、主要分母 55／126；J29 以 `IS=(2504-284X)` 檢索 0 筆。其餘 0 命中期刊推測多為 ESCI 期刊或不在所訂版本，未逐一確認。所以候選漏收 1.2% 只涵蓋約一半的 2025 年檢索結果。
+
+- 在 WoS 有命中的 32 刊範圍內（約一半的 2025 年檢索結果），OpenAlex 2025 主查詢的候選漏收約 1%，且都不屬主要分母；漏收原因是 OpenAlex 的文件類型、檢索索引與摘要缺漏，不是詞組設計。
 - 報告限制應寫入：（1）OpenAlex 文件類型錯標會讓少數期刊論文被排除；（2）OpenAlex 摘要缺漏或檢索索引不一致；（3）OpenAlex 收錄有時間差，最新論文可能尚未收錄；（4）J02 不在 WoS，該刊無法外部對照；（5）WoS 有詞形還原、OpenAlex 有詞幹處理，組合與 A 組子查詢的欄位比對方式不同。
 - 範圍判斷由同一模型（`claude-opus-5-5`）依 `prompts/scope.md` 完成，輸入為 WoS 題名與摘要，不算獨立審閱。
 - 先行檢查（`ALL=(ai literacy)`）見 [ai-literacy-check.md](ai-literacy-check.md)，結論一致。

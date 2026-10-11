@@ -1,8 +1,8 @@
 # trend-corpus：K-12 AI 素養期刊研究逐年趨勢語料（草稿）
 
-> **狀態：**[論文逐年趨勢分析方案](../annual-paper-trend-analysis-plan.md)第 7 節第 1 步「準備與 PROTOCOL」的產出；管理者 2026-10-10 核准 D1，PROTOCOL 已凍結。第 2 步四年同日 ID 快照已於 2026-10-10 完成，見各年目錄。
+> **狀態：**[論文逐年趨勢分析方案](../annual-paper-trend-analysis-plan.md)第 7 節第 1 步「準備與 PROTOCOL」的產出；管理者 2026-10-10 核准 D1，PROTOCOL 已凍結。第 2 步四年同日 ID 快照已於 2026-10-10 完成，見各年目錄；第 3–5 步（四年篩選、編碼、一致性）與 Web of Science 對照已完成，第 6 步四年合併報告為內部草稿，見 `research/p0-annual-trends-2022-2025/`（PRISMA-S 各項見該報告附表 6）。
 >
-> **不上網站、不進出版閘門、不改知識庫。**repo 是公開的，本目錄任何人都讀得到。
+> **本目錄的語料、報告與逐年占比不上網站、不進出版閘門。**逐篇標記已依方案第 8 節、第 10 節第 16 項回推知識庫並在網站顯示（附「AI 判讀、未經人工核對」說明）。repo 是公開的，本目錄任何人都讀得到。
 
 ## 資料來源與著作權
 
@@ -12,29 +12,34 @@
 
 | 檔案 | 內容 |
 |---|---|
-| [PROTOCOL.md](PROTOCOL.md) | 四年共用的事前凍結內容，目前是草稿 |
+| [PROTOCOL.md](PROTOCOL.md) | 四年共用的事前凍結內容（凍結於 PR #207，2026-10-10）；凍結後的偏離記在 DEVIATIONS.csv |
 | [codebook-v1.md](codebook-v1.md) | 編碼手冊 v1 |
 | [codebook-v2.md](codebook-v2.md) | 編碼手冊 v2（DEV-002，管理者 2026-10-10 核准） |
 | [DEVIATIONS.csv](DEVIATIONS.csv) | PROTOCOL 偏離紀錄 |
-| [ERRATA.csv](ERRATA.csv) | 已發布資料檔的更正紀錄（不改編碼結果的處理錯誤） |
+| [ERRATA.csv](ERRATA.csv) | 已發布資料檔的更正紀錄（多數是不改編碼結果的處理錯誤；改動編碼值者見 `coding_changed` 欄，例如 ERR-004、ERR-005） |
 | [prompts/](prompts/) | 範圍判斷、第一次編碼、第二次編碼三組提示（v2），附 `SHA256SUMS`；v1 在 `prompts/v1/` |
 | [journals.csv](journals.csv) | J01–J47 的 source ID、面板判定、面板分層、摘要覆蓋率 |
 | [calib.csv](calib.csv) | 校準集，真實 16 筆、合成 15 筆 |
-| [refset.csv](refset.csv) | 召回參考集，目前只有表頭 |
+| [refset.csv](refset.csv) | 召回參考集：5 篇系統性回顧的納入研究 249 筆（讀取方式見 systematic-reviews.md） |
+| [recall.csv](recall.csv) | 參考集面板內各筆的 OpenAlex 編號、年份與是否在檢索命中中；由 `scripts/recall_refset.py` 產生 |
 | [systematic-reviews.md](systematic-reviews.md) | 系統性回顧候選清單 |
 | [pilot-2022/](pilot-2022/) | 2022 年試編 20 篇的結果，不含摘要與證據原文 |
 | [open-questions.md](open-questions.md) | 方案沒寫清楚、待決定的地方 |
 | `2022/`～`2025/` | 第 2 步快照：`PROTOCOL-YYYY.md`、`queries.json`（每組子查詢的完整 filter、筆數、頁數，以及面板規模、缺摘要、面板外監測）、`ids-*.json`（work ID 快照）、`SHA256SUMS` |
 | `step2/` | 第 2 步的 OpenAlex 請求紀錄與四年摘要 |
 | `2024/corpus.csv` 等 | 2024 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，DEV-008）、`fulltext-sample.csv`、`dev004a-pool39.csv`；報告見 `research/p0-annual-trends-2024/step3-interim.md`。已知限制：對象詞組沒有 young people；只寫 machine learning 而未寫泛稱 AI 的 K-12 研究不會被命中（管理者 2026-10-11 決定不擴詞） |
-| `2023/corpus.csv` 等 | 2023 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，種子 20281241，DEV-008）、`fulltext-sample.csv`、`dev004a-pool.csv`；報告見 `research/p0-annual-trends-2023/step3-interim.md`。對象不明的 A 類經書目線索、典藏版與管理者下載全文後只剩 1 篇，未抽樣推估 |
-| `2022/corpus.csv` 等 | 2022 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，種子 20281231，DEV-008）、`fulltext-sample.csv`、`dev004a-pool.csv`；報告見 `research/p0-annual-trends-2022/step3-interim.md`。錨定改用 2025 v2 錨點（DEV-011）；主要分母 43 篇（專家受訪者準則改判 2 篇），依預定方式與 2023 合併為前期 |
+| `2023/corpus.csv` 等 | 2023 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，種子 20281241，DEV-008）、`fulltext-sample.csv`、`dev004a-pool.csv`；報告見 `research/p0-annual-trends-2023/step3-interim.md`。對象不明的 A 類經書目線索、典藏版與管理者下載全文後，可能屬中小學而仍不明者只剩 1 篇（四年報告的「只寫學生或教師、尚未判定」3 篇另含讀過全文確定沒有參與者者），未抽樣推估 |
+| `2022/corpus.csv` 等 | 2022 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，種子 20281231，DEV-008）、`fulltext-sample.csv`、`dev004a-pool.csv`；報告見 `research/p0-annual-trends-2022/step3-interim.md`。錨定改用 2025 v2 錨點（DEV-011）；主要分母 43 篇（專家受訪者準則改判 2 篇）；可能屬中小學而仍不明者 0 篇（四年報告的「只寫學生或教師、尚未判定」5 篇含讀過全文確定沒有參與者者），依預定方式與 2023 合併為前期 |
 | `rerun-dev001/` | DEV-001 四年同日重跑快照（加泛稱 AI × 對象詞組 A1–A6）；原 `2022/`～`2025/` 快照保留不動 |
 | `step1/` | 第 1 步的 OpenAlex 請求紀錄、試查筆數、source 查詢結果，不含論文 ID 快照 |
 | `scripts/oa.py` | OpenAlex 請求小工具：單執行緒、間隔 0.2 秒以上、記錄每次請求 |
 | `2025/coding2.csv` | 第二次編碼（編輯 session，code2.md v2）125 篇的結果，不含摘要與證據原文 |
 | `2025/agreement.csv` | 第一次對第二次編碼的一致率與 Cohen κ（方案 4.5），另附「雙方皆 K-12 對象的 A 類」面向列 |
 | `backfill-2022-2024/` | 回溯三年合併一致性（DEV-012）：`sample.json`（124 篇，種子 20281232／20281242／20281252）、`coding2.csv`（第二次編碼，不含摘要與證據原文）、`agreement.csv`（三年合併 κ，另附各年 A／B 列）；報告見 `research/p0-annual-trends-2022-2024/step3-agreement.md`；腳本 `scripts/agreement_sample_backfill.py`、`scripts/agreement_kappa_backfill.py` |
+| `2025/corpus-v2.csv` | 2025 第二版編碼（DEV-002）後的語料，四年報告使用此檔；`2025/dev004a-pool72.csv` 為對象不明 72 篇的抽樣池 |
+| [wos/](wos/) | Web of Science 對照（D7，DEV-013）：檢索式、比對結果與報告；匯出檔不入 repo；腳本 `scripts/wos_query.py`、`scripts/wos_compare.py` |
+| `scripts/fouryear_tables.py` | 四年報告的主表、敏感度表、結論規則與描述表；報告與逐刊逐年表在 `research/p0-annual-trends-2022-2025/` |
+| `scripts/recall_refset.py` | 系統性回顧參考集召回率 |
 | `scripts/agreement_*.py`、`scripts/fulltext_*.py` | 一致性抽樣、摘要重組（只在 scratchpad 執行）、κ 計算、全文對照抽樣；用法見各檔開頭 |
 
 ## 資料字典
@@ -130,6 +135,10 @@
 - **Scopus 補充批次（2025）：**新增 316 篇中，OpenAlex 摘要處理後不足 20 詞的有 55 篇，全部有 DOI，列為補充批次 5；檢索式只放 scratchpad，交編輯 session 轉管理者，不入 repo。
 
 ## 重算
+
+- 四年報告：`python3 -I research/trend-corpus/scripts/fouryear_tables.py research/trend-corpus --tables --journal-csv research/p0-annual-trends-2022-2025/journal-year.csv`（在 repo 根目錄執行）。
+- 召回率：`python3 -I research/trend-corpus/scripts/recall_refset.py research/trend-corpus --offline`（不加 `--offline` 會重查 OpenAlex 並覆寫 `recall.csv`）。
+- 每千篇比率的分母（`queries.json` 的面板總篇數）無法排除短評、社論等非論文；特刊尚未以 OpenAlex 卷期資訊判斷。
 
 第 1 步的計數都可以依 `step1/openalex-requests.jsonl` 中的網址重新請求。OpenAlex 資料會更新，重算結果可能與 2026-10-10 不同。
 
