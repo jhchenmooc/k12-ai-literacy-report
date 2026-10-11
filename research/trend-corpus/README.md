@@ -1,6 +1,6 @@
 # trend-corpus：K-12 AI 素養期刊研究逐年趨勢語料（草稿）
 
-> **狀態：**[論文逐年趨勢分析方案](../annual-paper-trend-analysis-plan.md)第 7 節第 1 步「準備與 PROTOCOL」的產出；管理者 2026-10-10 核准 D1，PROTOCOL 已凍結。第 2 步四年同日 ID 快照已於 2026-10-10 完成，見各年目錄。
+> **狀態：**[論文逐年趨勢分析方案](../annual-paper-trend-analysis-plan.md)第 7 節第 1 步「準備與 PROTOCOL」的產出；管理者 2026-10-10 核准 D1，PROTOCOL 已凍結。第 2 步四年同日 ID 快照已於 2026-10-10 完成，見各年目錄；第 3–6 步（四年篩選、編碼、一致性、Web of Science 對照）已完成，四年合併報告草稿見 `research/p0-annual-trends-2022-2025/`（PRISMA-S 各項見該報告附表 6）。
 >
 > **不上網站、不進出版閘門、不改知識庫。**repo 是公開的，本目錄任何人都讀得到。
 

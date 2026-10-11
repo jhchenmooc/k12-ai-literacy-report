@@ -7,7 +7,7 @@
 > - 只有 2025 一年，**不能判斷增減**。本報告的數字都是單年描述；前後期比較要等 2022–2024 回溯完成（2024 第一次編碼已合併於 PR #228，2023、2022 尚未開始；本報告不做 2024 對照）。2026-10-11 補註：回溯三年已完成，前後期比較見[四年合併報告草稿](../p0-annual-trends-2022-2025/report-draft.md)。
 > - 不上網站、不進出版閘門、不寫成刊物 claim（方案第 8 節）。
 >
-> **依據：**[方案](../annual-paper-trend-analysis-plan.md) v0.14 與第 10 節決定 1–21（撰寫時；之後的決定至第 29 項，見方案第 10 節）；[PROTOCOL](../trend-corpus/PROTOCOL.md)（凍結於 PR #207，commit `4643d1f`，2026-10-10）；更正 ERR-001–ERR-005（[ERRATA.csv](../trend-corpus/ERRATA.csv)）。
+> **依據：**[方案](../annual-paper-trend-analysis-plan.md) v0.14 與第 10 節決定 1–21（撰寫時；之後的決定至第 31 項，見方案第 10 節）；[PROTOCOL](../trend-corpus/PROTOCOL.md)（凍結於 PR #207，commit `4643d1f`，2026-10-10）；更正 ERR-001–ERR-005（[ERRATA.csv](../trend-corpus/ERRATA.csv)）。
 >
 > **資料：**[corpus-v2.csv](../trend-corpus/2025/corpus-v2.csv)（ERR-004 寫回後版本，PR #232；v2 欄位；v1 欄位只用於對照）、[dev004a-pool72.csv](../trend-corpus/2025/dev004a-pool72.csv)。數字由編輯 session 以一次性腳本對 `origin/main`（commit `1452139`）重新計算（腳本只在 scratchpad），並與 [step3-interim.md](step3-interim.md)、[step3-agreement.md](step3-agreement.md) 核對。不一致處列在第 7 節。
 
