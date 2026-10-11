@@ -59,7 +59,7 @@
 ## 高引用（`has_citation_flag`）
 
 - `CITED_TOP10_SAME_YEAR`（網站 #高引用）：論文年度趨勢分析回推入庫的論文中（方案第 8 節），OpenAlex `cited_by_count` 在**同一年**回推論文內排名前 10% 者。
-- 只在同年內比較；各年門檻不同（2026-10-11 查詢：2025 年 ≥37、2024 年 ≥141），不可跨年比較，也不代表研究品質。查詢日期與門檻記在各年的 `research/p0-annual-trends-YYYY/kb-pushback.md`。
+- 只在同年內比較；各年門檻不同（2026-10-11 查詢：2025 年 ≥37、2024 年 ≥141、2023 年 ≥324），不可跨年比較，也不代表研究品質。查詢日期與門檻記在各年的 `research/p0-annual-trends-YYYY/kb-pushback.md`。
 - 關聯一律 `discovered_unverified`；`evidence_url` 指向 OpenAlex 作品頁。
 
 ## 首次資料與限制
