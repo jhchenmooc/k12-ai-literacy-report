@@ -3811,7 +3811,7 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-3937","KB-2026-0268","has_ailit_dim","vocabulary","S-BAS","https://www.nature.com/articles/s41598-026-73410-0","discovered_unverified"
 "KR-3938","KB-2026-0268","has_ailit_dim","vocabulary","S-ETH","https://www.nature.com/articles/s41598-026-73410-0","discovered_unverified"
 "KR-3939","KB-2026-0269","has_category","vocabulary","K2","https://doi.org/10.1177/07356331261494821","discovered_unverified"
-"KR-3940","KB-2026-0269","published_in","source","J36","https://doi.org/10.1177/07356331261494821","discovered_unverified"
+"KR-3940","KB-2026-0269","published_in","source","J36","https://doi.org/10.1177/07356331261494821","bibliographic_checked"
 "KR-3941","KB-2026-0269","has_population","vocabulary","ROLE_STUDENT","https://doi.org/10.1177/07356331261494821","discovered_unverified"
 "KR-3942","KB-2026-0269","has_population","vocabulary","STAGE_PRIMARY","https://doi.org/10.1177/07356331261494821","discovered_unverified"
 "KR-3943","KB-2026-0269","studies_country","vocabulary","TW","https://doi.org/10.1177/07356331261494821","discovered_unverified"
@@ -3820,3 +3820,4 @@ relation_id,subject_id,predicate,object_namespace,object_id,evidence_url,verific
 "KR-3946","KB-2026-0269","has_method","vocabulary","METHOD_EXPERIMENT","https://doi.org/10.1177/07356331261494821","discovered_unverified"
 "KR-3947","KB-2026-0269","has_ailit_class","vocabulary","AILIT_B","https://doi.org/10.1177/07356331261494821","discovered_unverified"
 "KR-3948","KB-2026-0269","has_ailit_dim","vocabulary","S-LRN","https://doi.org/10.1177/07356331261494821","discovered_unverified"
+"KR-3949","KB-2026-0268","published_in","source","J48","https://www.nature.com/articles/s41598-026-73410-0","bibliographic_checked"
