@@ -1,6 +1,6 @@
 # trend-corpus：K-12 AI 素養期刊研究逐年趨勢語料（草稿）
 
-> **狀態：**[論文逐年趨勢分析方案](../annual-paper-trend-analysis-plan.md)第 7 節第 1 步「準備與 PROTOCOL」的產出；管理者 2026-10-10 核准 D1，PROTOCOL 已凍結。第 2 步四年同日 ID 快照已於 2026-10-10 完成，見各年目錄；第 3–6 步（四年篩選、編碼、一致性、Web of Science 對照）已完成，四年合併報告草稿見 `research/p0-annual-trends-2022-2025/`（PRISMA-S 各項見該報告附表 6）。
+> **狀態：**[論文逐年趨勢分析方案](../annual-paper-trend-analysis-plan.md)第 7 節第 1 步「準備與 PROTOCOL」的產出；管理者 2026-10-10 核准 D1，PROTOCOL 已凍結。第 2 步四年同日 ID 快照已於 2026-10-10 完成，見各年目錄；第 3–5 步（四年篩選、編碼、一致性）與 Web of Science 對照已完成，第 6 步四年合併報告為內部草稿，見 `research/p0-annual-trends-2022-2025/`（PRISMA-S 各項見該報告附表 6）。
 >
 > **本目錄的語料、報告與逐年占比不上網站、不進出版閘門。**逐篇標記已依方案第 8 節、第 10 節第 16 項回推知識庫並在網站顯示（附「AI 判讀、未經人工核對」說明）。repo 是公開的，本目錄任何人都讀得到。
 
@@ -28,7 +28,7 @@
 | `2022/`～`2025/` | 第 2 步快照：`PROTOCOL-YYYY.md`、`queries.json`（每組子查詢的完整 filter、筆數、頁數，以及面板規模、缺摘要、面板外監測）、`ids-*.json`（work ID 快照）、`SHA256SUMS` |
 | `step2/` | 第 2 步的 OpenAlex 請求紀錄與四年摘要 |
 | `2024/corpus.csv` 等 | 2024 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，DEV-008）、`fulltext-sample.csv`、`dev004a-pool39.csv`；報告見 `research/p0-annual-trends-2024/step3-interim.md`。已知限制：對象詞組沒有 young people；只寫 machine learning 而未寫泛稱 AI 的 K-12 研究不會被命中（管理者 2026-10-11 決定不擴詞） |
-| `2023/corpus.csv` 等 | 2023 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，種子 20281241，DEV-008）、`fulltext-sample.csv`、`dev004a-pool.csv`；報告見 `research/p0-annual-trends-2023/step3-interim.md`。對象不明的 A 類經書目線索、典藏版與管理者下載全文後只剩 1 篇，未抽樣推估 |
+| `2023/corpus.csv` 等 | 2023 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，種子 20281241，DEV-008）、`fulltext-sample.csv`、`dev004a-pool.csv`；報告見 `research/p0-annual-trends-2023/step3-interim.md`。對象不明的 A 類經書目線索、典藏版與管理者下載全文後，可能屬中小學而仍不明者只剩 1 篇（四年報告的「只寫學生或教師、尚未判定」3 篇另含讀過全文確定沒有參與者者），未抽樣推估 |
 | `2022/corpus.csv` 等 | 2022 回溯（v2＋DEV-004）：`corpus.csv`、`neutral-sample.json`（n=200，種子 20281231，DEV-008）、`fulltext-sample.csv`、`dev004a-pool.csv`；報告見 `research/p0-annual-trends-2022/step3-interim.md`。錨定改用 2025 v2 錨點（DEV-011）；主要分母 43 篇（專家受訪者準則改判 2 篇），依預定方式與 2023 合併為前期 |
 | `rerun-dev001/` | DEV-001 四年同日重跑快照（加泛稱 AI × 對象詞組 A1–A6）；原 `2022/`～`2025/` 快照保留不動 |
 | `step1/` | 第 1 步的 OpenAlex 請求紀錄、試查筆數、source 查詢結果，不含論文 ID 快照 |

@@ -4,7 +4,7 @@
 
 ## 1. 檢索與比對
 
-- WoS Core Collection 以 `query-single.txt` 檢索，**2,226 筆**（PY 2024–2026，Article／Review；J02 未收錄；實際有命中的面板期刊 32 刊，另 14 刊零命中，見第 4 節「收錄範圍」；命中分布見 `summary.json` 的 `by_journal`，有命中的面板期刊 32 刊）。
+- WoS Core Collection 以 `query-single.txt` 檢索，**2,226 筆**（PY 2024–2026，Article／Review；J02 未收錄；實際有命中的面板期刊 32 刊，含 J02 共 15 刊零命中，見第 4 節「收錄範圍」；命中分布見 `summary.json` 的 `by_journal`；`by_PY` 另有 PY 2027 的 16 筆（原因未查））。
 - 以小寫 DOI 比對 OpenAlex 2025 主查詢聯集（`2025/corpus-v2.csv`，1,861 篇），不在聯集者以 DOI 查 OpenAlex 全庫（`scripts/wos_compare.py`）：
 
 | 歸類 | 筆數 | 說明 |
