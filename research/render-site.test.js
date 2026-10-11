@@ -56,6 +56,16 @@ test("archive excludes weekly candidates, escapes titles and keeps unknown dates
  assert.equal(d.policy[0].name,"日本");assert.equal(d.policy[0].rows[0].date,"2024-05-01 首發");
 });
 
+test("archive lists weekly candidates once their source is checked",()=>{
+ const records=[
+  {record_id:"KB-2026-9011",title:"Held candidate",primary_url:"https://example.org/h",record_type:"journal_article",year_value:"",year_basis:"unknown",first_published_on:"",verification_status:"discovered_unverified",source_candidate_id:"W2026-10-09-A98"},
+  {record_id:"KB-2026-9012",title:"Checked candidate",primary_url:"https://example.org/k",record_type:"journal_article",year_value:"2026",year_basis:"first_publication",first_published_on:"2026-10-10",verification_status:"bibliographic_checked",source_candidate_id:"W2026-10-09-A97"}];
+ const relations=[{subject_id:"KB-2026-9011",predicate:"published_in",object_id:"J02"},{subject_id:"KB-2026-9012",predicate:"published_in",object_id:"J02"}];
+ const rows=archiveData(records,relations,[{id:"J02",name:"Journal Two"}]).journals.flatMap(g=>g.rows);
+ assert.deepEqual(rows.map(r=>r.id),["KB-2026-9012"]);
+ assert.equal(rows[0].date,"2026-10-10 首發");assert.equal(rows[0].status[1],"書目已核");
+});
+
 test("a generated daily edition page passes the publication gate unchanged",t=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),"render-site-"));t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));
  const excerpt="This fictional agency published a nonbinding advisory for secondary-school educators.";

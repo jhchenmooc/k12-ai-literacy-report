@@ -712,3 +712,10 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 - **回溯年漏收抽樣擴大（管理者 2026-10-10，選乙）**：
   - 回溯年 n=50 時「上界 ≤ 5%」不可能通過（0/50 上界 6%），改為每年 200 篇，同種子延長，門檻不變；仍超過時擴詞升版一次（候選「young people」）。DEV-008，方案第 10 節第 21 項。
   - 2024 Scopus 補摘要三批（230 個 DOI）已交管理者，匯出檔上傳文獻搜尋 session。
+- **2026-10-11 決定與出刊（管理者）**：
+  - 2024 漏收 n=200 為 3/200（上界 4.3%）通過；不擴詞，「young people」「machine learning × 對象詞」列為已知限制（方案第 21 項）。
+  - 監測清單新增 J48 Scientific Reports（背景級）；驗證程式 source 代碼放寬到 J48（#224）。
+  - 候選池相關測試改為一般規則：hold 維持未核；publish 須已查核、兩輪對照（#224 改 validate-knowledge-base.test.js；#225 再改 scaffold-weekly、prepare-daily-brief、knowledge-base-import-preview、knowledge-base-quality 四檔與 validate-knowledge-base.test.js 其餘斷言）。出版閘門未改。
+  - 每日短訊 2026-10-11 補發 3 則（A14 arXiv ToyTalk、A15 Scientific Reports、A16 JECR），#225。JECR 出版者頁對本刊 403，由管理者提供全文頁。
+  - 自動權限檢查會擋「修改測試／驗證程式」與子代理轉述的同意；這類操作須管理者在主對話中明確同意，由主 session 自行執行。
+  - 2024 回溯：範圍判斷與第一次編碼完成（958 篇；A 235、B 400）；未判定對象 A 類 41 篇照 2025 做法（先讀 26 篇出版者 CC 版，再分層抽樣請管理者下載），種子 20281249。
