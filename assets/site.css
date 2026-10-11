@@ -118,4 +118,5 @@ body{background:var(--bg)}
 .tg-limits ul{margin:8px 0 0;padding-left:1.2em}
 @media (max-width:700px){.tg-row{grid-template-columns:1fr}}
 .lead-note{font-size:15px;color:var(--muted);max-width:var(--measure);margin:-4px 0 14px}
-.rec-table .t,.tag-guide .t{white-space:nowrap;margin-right:.6em}
+.item .tags3{font-size:13px;color:var(--navy);margin-top:2px}
+.rec-table .t,.tag-guide .t,.item .t{white-space:nowrap;margin-right:.6em}

@@ -85,8 +85,15 @@ function claimParagraph(c,withId){
  return "<p"+(withId?' data-claim-id="'+esc(c.claim_id)+'"':"")+">"+body+"</p>";
 }
 function kindBadge(c){const [cls,label]=DAILY_KIND[c.daily_fact_kind]||["policy","短訊"];return '<span class="kind '+cls+'">'+label+"</span>"}
+/* Tag line for the daily list and homepage only: the per-day edition page carries claim text alone (gate rule). */
+const DAILY_AUDIENCE_TAGS={k12:"中小學",other_stakeholders:"家長行政"};
+function dailyTags(c){
+ const dims=new Set(Array.isArray(c.ai_lit_dims)?c.ai_lit_dims:[]);
+ const tags=[DAILY_AUDIENCE_TAGS[c.audience]].concat(AILIT_TAGS.filter(([k])=>k==="AILIT_"+c.ai_lit_class||dims.has(k)).map(([,t])=>t)).filter(Boolean);
+ return tags.length?'<div class="tags3">'+tags.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"";
+}
 function dailyItem(c,depth,date){
- return '<li class="item">'+kindBadge(c)+claimParagraph(c,false)+'<div class="meta-line"><span>首次公開：'+esc(c.first_disclosed_on||"未知")+"</span><span>來源：" +esc(c.source_organization||"")+'</span><a href="'+up(depth)+"daily/"+date+'/">當日短訊頁</a></div></li>';
+ return '<li class="item">'+kindBadge(c)+claimParagraph(c,false)+dailyTags(c)+'<div class="meta-line"><span>首次公開：'+esc(c.first_disclosed_on||"未知")+"</span><span>來源：" +esc(c.source_organization||"")+'</span><a href="'+up(depth)+"daily/"+date+'/">當日短訊頁</a></div></li>';
 }
 function renderDailyEdition(e){
  const head='<div class="kicker">每日短訊</div><h1>'+e.date+' 每日短訊</h1><div class="notice"><p>只記錄「誰在哪天發布了什麼」或來源原文的歸屬摘要；由 AI 整理、未經逐則真人審稿，不含解讀、成效判斷或對臺灣的建議。請點連結閱讀原文。</p></div>';
@@ -332,4 +339,4 @@ function main(){
  console.log(write?"site pages written":"site pages consistent",Object.keys(files).length);
 }
 if(require.main===module)try{main()}catch(e){console.error(e.message);process.exitCode=1}
-module.exports={build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,esc};
+module.exports={build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};
