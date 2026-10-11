@@ -16,7 +16,7 @@
 | [codebook-v1.md](codebook-v1.md) | 編碼手冊 v1 |
 | [codebook-v2.md](codebook-v2.md) | 編碼手冊 v2（DEV-002，管理者 2026-10-10 核准） |
 | [DEVIATIONS.csv](DEVIATIONS.csv) | PROTOCOL 偏離紀錄 |
-| [ERRATA.csv](ERRATA.csv) | 已發布資料檔的更正紀錄（不改編碼結果的處理錯誤） |
+| [ERRATA.csv](ERRATA.csv) | 已發布資料檔的更正紀錄（多數是不改編碼結果的處理錯誤；改動編碼值者見 `coding_changed` 欄，例如 ERR-004、ERR-005） |
 | [prompts/](prompts/) | 範圍判斷、第一次編碼、第二次編碼三組提示（v2），附 `SHA256SUMS`；v1 在 `prompts/v1/` |
 | [journals.csv](journals.csv) | J01–J47 的 source ID、面板判定、面板分層、摘要覆蓋率 |
 | [calib.csv](calib.csv) | 校準集，真實 16 筆、合成 15 筆 |
