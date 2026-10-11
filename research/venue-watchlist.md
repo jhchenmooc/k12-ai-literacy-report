@@ -12,7 +12,7 @@
 
 保留既有34種期刊、19個會議的原監測設定；新增5種期刊、2個正式會議。先查教育主管機關／國際機構，再查核心期刊／正式論文集，最後跨庫補漏。**先篩首次公開日期、K–12學段、重複事件及內容價值，再查原文**；低價值候選只記排除原因。活動日不能冒稱本週新發布日。
 
-## 2. 期刊池（48 種）
+## 2. 期刊池（49 種）
 
 | ID | 級別 | 期刊 | 適用主題 | 查核入口 |
 |---|---|---|---|---|
@@ -65,6 +65,7 @@
 | J46 | 背景 | International Journal of Science Education | 科學教育中的 AI（K–12 比例高、AI 篇數少） | [期刊頁](https://www.tandfonline.com/journals/tsed20) |
 | J47 | 背景 | Education Sciences | K–12 AI 教育命中多；量大且須特別檢查審稿與研究品質 | [期刊頁](https://www.mdpi.com/journal/education) |
 | J48 | 背景 | Scientific Reports | 綜合型大型期刊，偶有 K–12 AI 素養研究；收錄於 DOAJ、單盲同儕審查；量大須逐篇確認學段（2026-10-11 管理者決定加入） | [期刊頁](https://www.nature.com/srep/) |
+| J49 | 背景 | European Journal of Education | 教育政策與教師；AI × K–12 命中與 J40 相近，須逐篇確認學段（2026-10-11 管理者決定由觀察池升級） | [期刊頁](https://onlinelibrary.wiley.com/journal/14653435) |
 
 ## 3. 國際會議池（21 個正式系列）
 
@@ -180,7 +181,7 @@ ai_lit_class,ai_lit_dims,ai_lit_note
 - **AI 素養範圍**：學段之外另判 A／B／C（[AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)）；期刊或會議名稱含 AI 不等於屬 A 或 B，AI 只作研究方法或系統後端者為 C。
 - **證據強度**：閱讀優先級 P1/P2/P3 與方法品質分開；自陳、橫斷 SEM、量表驗證及 RCT 不可用同一因果語言。
 - **會議索引**：以每篇論文 DOI／論文集正式上線日為時間判準，非僅會議活動日期；Full、Short、Poster、Workshop 各自標記。
-- **監測範圍**：收錄 48 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
+- **監測範圍**：收錄 49 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
 - **品質確認**：監測候選池要記錄 `verification_status`（verified / partial / pending）、`population_level`、`evidence_design`、`publication_status`，不可僅以期刊名稱推斷研究品質。
 
 ## 10. 維護提醒
@@ -233,7 +234,7 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
 | J47 | 背景 | Education Sciences（MDPI） | 3335 | 206 | 25 | 1 |
 
 - **擴充三刊（J40–J42）**：一次補搜 2025-01-01 至今（照 P0 方法），之後依擴充級頻率檢索。**背景（J43–J47）**不補搜，每月巡覽。
-- **觀察池（不給正式 ID）**：European Journal of Education（931 篇中 AI × K-12 僅 3）、International Journal of Technology and Design Education（近半缺摘要）、ICITL（LNCS「Innovative Technologies and Learning」）、TEI（ACM Tangible, Embedded, and Embodied Interaction；已入庫 KB-2026-0135）、Emerald *Artificial Intelligence in Education*（新刊）；2026-10-10 依 #121 出處評估新增（管理者同意）：Computer Assisted Language Learning（中小學生成式 AI 語言學習研究有命中，但多屬 B 類；若決定系統收此類研究可改列背景）、AI, Brain and Child（Springer 新刊，K-12 AI 比例高，審查與索引待核）、《中國教育技術》CSTE（中國中小學 AI 課程，審查型態待核、缺摘要多）。
+- **觀察池（不給正式 ID）**：International Journal of Technology and Design Education（近半缺摘要）、ICITL（LNCS「Innovative Technologies and Learning」）、TEI（ACM Tangible, Embedded, and Embodied Interaction；已入庫 KB-2026-0135）、Emerald *Artificial Intelligence in Education*（新刊）；2026-10-10 依 #121 出處評估新增（管理者同意）：Computer Assisted Language Learning（中小學生成式 AI 語言學習研究有命中，但多屬 B 類；若決定系統收此類研究可改列背景）、AI, Brain and Child（Springer 新刊，K-12 AI 比例高，審查與索引待核）、《中國教育技術》CSTE（中國中小學 AI 課程，審查型態待核、缺摘要多）。
 - **不收**：Thinking Skills and Creativity（七成缺摘要，數字不可靠）、International Journal of Applied Linguistics（AI 多為語言學習工具）、The Internet and Higher Education（高教專刊）、IAFOR 論文集（審查程度不明）、Lecture Notes in Networks and Systems（ICICT）、專書手冊。
 - **叢書拆分**：LNCS「Mindful TEL: Learning Technologies Shaped with Intention」為 EC-TEL 2026 論文集，屬既有 C10，查核入口加上 ISBN 9783032379788、9783032379818。
 - **技術限制**：`research/validate-knowledge-base.js` 目前只接受 J01–J39、C01–C22 作為 `published_in` 代碼；J40 以後要等驗證程式放寬後，才能把已入庫論文（KB-2026-0128 Informatics in Education、KB-2026-0133 EJTE、KB-2026-0134 TPE）連到新代碼。本次只改清單，不改驗證程式。
@@ -265,3 +266,22 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
 - **會議論文轉成期刊論文：** 2019～2022 年有 16 篇 European Journal of Teaching and Education 論文，與自家會議論文集的論文同名。
 - **出版商有公開審查資訊，但仍無法核實：** 網站寫明雙盲審查、論文標有收稿與接受日期、編委列有任職單位。但這些資訊沒有外部收錄可以核實。
 - **比對方式：** 依 DOI 前綴 `10.33422`、出版商名稱或 ISSN 2669-0667。**不可用縮寫比對**，因為 European Journal of Teaching and Education 的縮寫與 J44 European Journal of Teacher Education（Taylor & Francis）相同，J44 不受影響。
+
+### 2026-10-11 期刊擴充評估（管理者決定）
+
+依趨勢回溯的面板外命中與 OpenAlex 統計（2025-01-01～2026-10-11，題名＋摘要布林查詢；只供排序）：
+
+| 來源 | 總篇數 | AI 相關 | AI × K-12 | 決定 |
+|---|---|---|---|---|
+| European Journal of Education（Wiley） | 899 | 198 | 19 | 升為 J49（背景） |
+| Journal of Inclusive Methodology and Technology in Learning and Teaching | 406 | 110 | 23 | 觀察（新刊、出版者未標、不在 DOAJ，審查品質待核） |
+| Frontiers in Psychology | 9,822 | 641 | 30 | 觀察（量大、比例低） |
+| International Journal of Learning, Teaching and Educational Research | 872 | 160 | 14 | 觀察（不在 DOAJ，審查品質無法核實） |
+| 韓國學會期刊 4 種（電腦教育、資訊教育、學習者中心課程、教育資訊媒體） | 159–842 | 29–57 | 3–12 | 觀察（多為韓文，OpenAlex 幾乎無摘要） |
+| Cogent Education（T&F，DOAJ） | 1,385 | 150 | 10 | 觀察 |
+| Educational Process International Journal | 664 | 59 | 9 | 觀察（缺摘要多） |
+| ASCILITE Publications | 157 | 57 | 0 | 不收（高等教育） |
+
+- 先前 European Journal of Education「AI × K-12 僅 3」是另一組關鍵字（v1.4）的結果；本次改用含 primary／secondary／high school 等詞的查詢，所以數字不同。
+- 只影響每日、週、月檢索；趨勢分析固定面板（J01–J47）已於 D1 凍結，不變。
+
