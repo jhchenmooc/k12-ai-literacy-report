@@ -34,11 +34,11 @@
 
 新入庫者另加 `has_category=K2`，`journal_code` 為監測清單 ID 時加 `published_in`。
 
-**待核：方法沒有對應代碼的 18 篇不標方法**——`instrument_dev`（量表／測驗發展）11 篇、`conceptual` 5 篇、`unknown` 2 篇。知識庫方法代碼沒有「量表發展」與「概念性」；`instrument_dev` 是否併入 `METHOD_SURVEY`（#問卷量表）屬新規則，未自行決定，請編輯 session／管理者裁示。
+**方法沒有對應代碼的 18 篇不標方法**——`instrument_dev`（量表／測驗發展）11 篇、`conceptual` 5 篇、`unknown` 2 篇。知識庫方法代碼沒有「量表發展」與「概念性」；管理者 2026-10-11 裁定（選甲）：不標方法，不併入 `METHOD_SURVEY`。
 
 ## 已在庫但不一致（未改動，請核）
 
-只補缺漏、不覆寫。下列 11 篇知識庫既有標記與本次編碼不同，保留知識庫原值：
+只補缺漏、不覆寫。下列 11 篇知識庫既有標記與本次編碼不同，保留知識庫原值（管理者 2026-10-11 裁定維持不覆寫）：
 
 | record_id | work_id | 不一致 |
 |---|---|---|
@@ -58,7 +58,7 @@
 
 ## 面向補值（只進知識庫）
 
-下列 9 篇在 corpus-v2 的 `ai_lit_dims` 為空，面向由文獻搜尋 session 以盲測子代理補判（2025 趨勢第 3 步之後），**只寫入知識庫，corpus-v2 不回寫**（`kb-pushback.csv` 的 `dims_source=backfill_kb_only`）：
+下列 9 篇在 corpus-v2 的 `ai_lit_dims` 為空，面向由文獻搜尋 session 以盲測子代理補判（2025 趨勢第 3 步之後），寫入知識庫（`kb-pushback.csv` 的 `dims_source=backfill_kb_only`）。管理者 2026-10-11 另決定把這 9 篇的面向寫回 corpus-v2，記為 ERRATA ERR-004，另開 PR 處理，不在本 PR：
 
 | work_id | record_id | 面向 |
 |---|---|---|
