@@ -166,4 +166,6 @@ test("AI-literacy scope and dimension tags only use their vocabularies",()=>{
  const base={subject_id:records[0].record_id,object_namespace:"vocabulary",evidence_url:"https://example.org",verification_status:"discovered_unverified"};
  assert.ok(validate(records,[{...base,relation_id:"R1",predicate:"has_ailit_class",object_id:"AILIT_C"}],runs,candidates).some(x=>x.includes("invalid ailit class relation")));
  assert.ok(validate(records,[{...base,relation_id:"R2",predicate:"has_ailit_dim",object_id:"S-XYZ"}],runs,candidates).some(x=>x.includes("invalid ailit dimension relation")));
+ assert.ok(validate(records,[{...base,relation_id:"R3",predicate:"has_citation_flag",object_id:"TOP_CITED"}],runs,candidates).some(x=>x.includes("invalid citation flag relation")));
+ assert.ok(!validate(records,[{...base,relation_id:"R4",predicate:"has_citation_flag",object_id:"CITED_TOP10_SAME_YEAR"}],runs,candidates).some(x=>x.includes("invalid citation flag relation")));
 });
