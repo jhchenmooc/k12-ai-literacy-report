@@ -5,10 +5,15 @@ const dir=path.join(__dirname,"knowledge-base","data");
 const read=n=>parseCsv(fs.readFileSync(path.join(dir,n+".csv"),"utf8"));
 const records=read("records"),relations=read("relations"),runs=read("search_runs");
 const candidates=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8")).items;
-test("actual nine held candidates remain discovery-only",()=>{
+/* Held candidates stay discovery-only; a candidate may leave hold only as a source-checked publish whose record is no longer discovered_unverified (manager 2026-10-11). */
+test("candidate pool and knowledge base records stay consistent",()=>{
  assert.equal(records.filter(x=>x.source_candidate_id).length,candidates.length);assert.ok(candidates.length>=9);
- assert.ok(candidates.every(x=>x.decision==="hold"&&x.source_checked===false));
- assert.ok(records.filter(x=>x.source_candidate_id).every(x=>x.verification_status==="discovered_unverified"&&x.first_published_on===""&&x.year_basis==="unknown"));
+ for(const c of candidates){
+  const r=records.find(x=>x.source_candidate_id===c.candidate_id);assert.ok(r,"no record for "+c.candidate_id);
+  assert.ok(["hold","publish"].includes(c.decision),"unexpected decision "+c.candidate_id);
+  if(c.decision==="hold")assert.ok(c.source_checked===false&&r.verification_status==="discovered_unverified"&&r.first_published_on===""&&r.year_basis==="unknown",c.candidate_id);
+  else assert.ok(c.source_checked===true&&r.verification_status!=="discovered_unverified",c.candidate_id);
+ }
  assert.deepEqual(validate(records,relations,runs,candidates),[]);
 });
 test("indexes remain deterministic",()=>{
@@ -56,10 +61,10 @@ test("synthetic country, topic and conference view is typed and deterministic",(
  assert.deepEqual(i["by-topic/AI_LITERACY"],["KB-2026-0001"]);
  assert.deepEqual(i["by-conference/C21"],["KB-2026-0001"]);
 });
-test("source IDs follow venue-watchlist v1.4 (J01-J47, C01-C18, C20-C22) and reject unlisted codes",()=>{
+test("source IDs follow venue-watchlist (J01-J48, C01-C18, C20-C22) and reject unlisted codes",()=>{
  const rel=id=>[{relation_id:"S-"+id,subject_id:"KB-2026-0001",predicate:"published_in",object_namespace:"source",object_id:id,verification_status:"discovered_unverified"}];
- for(const id of ["J01","J39","J40","J47","C22"])assert.ok(!validate(records,rel(id),runs,candidates).some(v=>v.includes("invalid source ID")),id);
- for(const id of ["J00","J48","J99","C19","C23"])assert.ok(validate(records,rel(id),runs,candidates).some(v=>v.includes("invalid source ID")),id);
+ for(const id of ["J01","J39","J40","J47","J48","C22"])assert.ok(!validate(records,rel(id),runs,candidates).some(v=>v.includes("invalid source ID")),id);
+ for(const id of ["J00","J49","J99","C19","C23"])assert.ok(validate(records,rel(id),runs,candidates).some(v=>v.includes("invalid source ID")),id);
 });
 test("venue/agency relation mix-up is invalid",()=>{
  const x=[{relation_id:"ERR",subject_id:"KB-2026-0001",predicate:"published_in",object_namespace:"source",object_id:"O-UNESCO",verification_status:"discovered_unverified"}];
