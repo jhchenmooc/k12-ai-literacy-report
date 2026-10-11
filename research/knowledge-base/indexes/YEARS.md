@@ -39,6 +39,58 @@
 | KB-2023-0010 — [Guidance for generative AI in education and research](https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research) | official_guidance | 2023-09-07 | bibliographic_checked |
 | KB-2023-0012 — [Draft schools AI framework open for consultation](https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation) | government_announcement | 2023-07-28 | discovered_unverified |
 
+## 2023｜issue_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2023-0013 — [Taking play and tinkering seriously in AI education: cases from Drag vs AI teen workshops](https://doi.org/10.1080/17439884.2022.2164300) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0014 — [Teaching Machine Learning in K–12 Using Robotics](https://doi.org/10.3390/educsci13010067) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0015 — [Artificial Intelligence (AI) Literacy in Early Childhood Education: The Challenges and Opportunities](https://doi.org/10.1016/j.caeai.2023.100124) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0016 — [Exploring middle school students’ common naive conceptions of Artificial Intelligence concepts, and the evolution of these ideas](https://doi.org/10.1007/s10639-023-11600-3) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0017 — [Machine Learning for All!—Introducing Machine Learning in Middle and High School](https://doi.org/10.1007/s40593-022-00325-y) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0018 — [The mediating effects of needs satisfaction on the relationships between prior knowledge and self‐regulated learning through artificial intelligence chatbot](https://doi.org/10.1111/bjet.13305) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0019 — [Youth as pattern makers for racial justice: How speculative design pedagogy in science can promote restorative futures through radical care practices](https://doi.org/10.1080/10508406.2022.2154158) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0020 — [Learning machine learning with young children: exploring informal settings in an African context](https://doi.org/10.1080/08993408.2023.2175559) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0021 — [Robobo SmartCity: An Autonomous Driving Model for Computational Intelligence Learning Through Educational Robotics](https://doi.org/10.1109/tlt.2023.3244604) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0022 — [High school students’ data modeling practices and processes: from modeling unstructured data to evaluating automated decisions](https://doi.org/10.1080/17439884.2023.2189735) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0023 — [Do we still need teachers? Navigating the paradigm shift of the teacher's role in the AI era](https://doi.org/10.3389/feduc.2023.1161777) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0024 — [Designing Game-Based Learning for High School Artificial Intelligence Education](https://doi.org/10.1007/s40593-022-00327-w) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0025 — [Exploring the AI competencies of elementary school teachers in South Korea](https://doi.org/10.1016/j.caeai.2023.100137) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0026 — [AI literacy in K-12: a systematic literature review](https://doi.org/10.1186/s40594-023-00418-7) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0027 — [Data Science and Machine Learning Teaching Practices with Focus on Vocational Education and Training](https://doi.org/10.15388/infedu.2023.28) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0028 — [Technological support to foster students’ artificial intelligence ethics: An augmented reality-based contextualized dilemma discussion approach](https://doi.org/10.1016/j.compedu.2023.104813) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0029 — [Preparing for AI-enhanced education: Conceptualizing and empirically examining teachers’ AI readiness](https://doi.org/10.1016/j.chb.2023.107798) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0030 — [Understanding English as a Foreign Language Students’ Idea Generation Strategies for Creative Writing With Natural Language Generation Tools](https://doi.org/10.1177/07356331231175999) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0031 — [Teaching artificial intelligence in K–12 classrooms: a scoping review](https://doi.org/10.1080/10494820.2023.2212706) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0032 — [Artificial Intelligence (AI) literacy in early childhood education: an intervention study in Hong Kong](https://doi.org/10.1080/10494820.2023.2217864) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0033 — [Artificial Intelligence teaching and learning in K-12 from 2019 to 2022: A systematic literature review](https://doi.org/10.1016/j.caeai.2023.100145) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0034 — [Artificial Intelligence in K-12 Education: eliciting and reflecting on Swedish teachers' understanding of AI and its implications for teaching & learning](https://doi.org/10.1007/s10639-023-11990-4) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0035 — [Developing a weather prediction project-based machine learning course in facilitating AI learning among high school students](https://doi.org/10.1016/j.caeai.2023.100154) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0036 — [Developing middle school students’ understanding of machine learning in an African school](https://doi.org/10.1016/j.caeai.2023.100155) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0037 — [Modeling the structural relationships among Chinese secondary school students’ computational thinking efficacy in learning AI, AI literacy, and approaches to learning AI](https://doi.org/10.1007/s10639-023-12029-4) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0038 — [An embodied, analogical and disruptive approach of AI pedagogy in upper elementary education: An experimental study](https://doi.org/10.1111/bjet.13371) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0039 — [Exploring the impact of AI on teacher leadership: regressing or expanding?](https://doi.org/10.1007/s10639-023-12174-w) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0040 — [The impact of Generative AI (GenAI) on practices, policies and research direction in education: a case of ChatGPT and Midjourney](https://doi.org/10.1080/10494820.2023.2253861) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0041 — [Effect of an Analogy-Based Approach of Artificial Intelligence Pedagogy in Upper Primary Schools](https://doi.org/10.1177/07356331231201342) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0042 — [Artificial intelligence (AI) literacy education in secondary schools: a review](https://doi.org/10.1080/10494820.2023.2255228) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0043 — [Prompt Aloud!: Incorporating image-generative AI into STEAM class with learning analytics using prompt data](https://doi.org/10.1007/s10639-023-12150-4) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0044 — [Fostering Secondary School Students’ AI Literacy through Making AI-Driven Recycling Bins](https://doi.org/10.1007/s10639-023-12183-9) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0045 — [Investigation into the Influence of Socio-Cultural Factors on Attitudes toward Artificial Intelligence](https://doi.org/10.1007/s10639-023-12172-y) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0046 — [AI literacy curriculum and its relation to children's perceptions of robots and attitudes towards engineering and science: An intervention study in early childhood education](https://doi.org/10.1111/jcal.12867) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0047 — [Secondary school students' mental models and attitudes regarding artificial intelligence - A scoping review](https://doi.org/10.1016/j.caeai.2023.100169) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0048 — [A shape of play to come: Exploring children's play and imaginaries with robots and AI](https://doi.org/10.1016/j.caeai.2023.100173) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0049 — [Alexa doesn't have that many feelings: Children's understanding of AI through interactions with smart speakers in their homes](https://doi.org/10.1016/j.caeai.2023.100176) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0050 — [Artificial intelligence education for young children: A case study of technology‐enhanced embodied learning](https://doi.org/10.1111/jcal.12892) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0051 — [Integrating artificial intelligence into science lessons: teachers’ experiences and views](https://doi.org/10.1186/s40594-023-00454-3) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0052 — [Investigating the moderating effects of social good and confidence on teachers' intention to prepare school students for artificial intelligence education](https://doi.org/10.1007/s10639-023-12250-1) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0053 — [AMBY: A development environment for youth to create conversational agents](https://doi.org/10.1016/j.ijcci.2023.100618) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0054 — [Integrating generative AI in knowledge building](https://doi.org/10.1016/j.caeai.2023.100184) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0055 — [Teaching Machine Learning to Middle and High School Students from a Low Socio-Economic Status Background](https://doi.org/10.15388/infedu.2024.13) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0056 — [Artificial intelligence in compulsory level of education: perspectives from Namibian in-service teachers](https://doi.org/10.1007/s10639-023-12341-z) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0057 — [Finnish 5th and 6th graders’ misconceptions about artificial intelligence](https://doi.org/10.1016/j.ijcci.2023.100630) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0058 — [Design and validation of the AI literacy questionnaire: The affective, behavioural, cognitive and ethical approach](https://doi.org/10.1111/bjet.13411) | journal_article | 未知 | discovered_unverified |
+| KB-2023-0059 — [A survey study of chinese teachers’ continuous intentions to teach artificial intelligence](https://doi.org/10.1007/s10639-023-12430-z) | journal_article | 未知 | discovered_unverified |
+
 ## 2024｜first_publication
 
 | 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
