@@ -153,12 +153,24 @@ def tables():
         q=json.load(open(os.path.join(R,'rerun-dev001',str(y),'queries.json')));sub,op=q['subqueries'],q['outside_panel']
         T[f'panel_share_{y}']=(sum(sub[k]['count'] for k in sub if k in op),sum(op[k]['count'] for k in sub if k in op))
         T[f'neutral_minus_main_{y}']=q['union']['neutral_minus_main']
+        T[f'subquery_counts_{y}']={k:sub[k]['count'] for k in sub}  # PRISMA-S：各子查詢命中（meta.count）
+        T[f'm6_main_{y}']=(sum('M6' in x['subquery_codes'].split(';') for x in M),len(M))  # 字串基準：主要分母中命中 M6 者（探索性）
     for per,ys in (('early',(2022,2023)),('late',(2024,2025))):
         L=collections.Counter()
         for y in ys:
             for x in C[y]:
                 if x['ai_lit_class']=='A' and x['audience_role'] in('student','inservice_teacher'):L[(x['audience_role'],x['level'] or 'unknown')]+=1
         T[f'level_{per}']={f'{a}|{b}':c for (a,b),c in sorted(L.items())}
+        # 學生研究的面向 × 學段（方案第 1、8 節的描述性交叉表；只列篇數）
+        SG={'preschool':'preschool','primary':'primary','lower_secondary':'lower_secondary','secondary_unspecified':'secondary_unspecified','k12_multi':'k12','k12_unspecified':'k12'}
+        FS=collections.Counter()
+        for y in ys:
+            for x in C[y]:
+                if x['ai_lit_class']=='A' and x['audience_role']=='student':
+                    g=SG.get(x['stage'],'upper_secondary' if 'secondary' in x['stage'] else x['stage'] or 'unknown')
+                    FS[('ALL',g)]+=1
+                    for d in dims(x):FS[(d,g)]+=1
+        T[f'facet_stage_{per}']={f'{a}|{b}':c for (a,b),c in sorted(FS.items())}
     # 面板分層每千篇、面板無摘要比例（step2-summary）
     strat={};jcode={}
     for x in csv.DictReader(open(os.path.join(R,'journals.csv'))):
