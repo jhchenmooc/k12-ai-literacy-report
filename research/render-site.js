@@ -218,7 +218,7 @@ function yearOrder(a,b){if(a===b)return 0;if(a==="未知")return 1;if(b==="未�
 const slug=s=>String(s).replace(/[^A-Za-z0-9]+/g,"-").replace(/^-|-$/g,"").toLowerCase()||"x";
 const groupId=g=>"g-"+slug(g.key);
 const yearId=(g,y)=>groupId(g)+"-y"+(y==="未知"?"unknown":y);
-const LEGEND='<div class="legend"><span><span class="badge checked">書目已核</span> 題名、出處、日期已對過出版者或官方原頁</span><span><span class="badge unverified">僅發現・未核</span> 只核過登記資料，原頁或首發日未核</span><span><span class="badge fulltext">原文已核</span> 內容逐段核對</span></div>';
+const LEGEND='<div class="legend"><span><span class="badge checked">書目已核</span> 題名、出處、日期已對過出版者或官方原頁</span><span><span class="badge unverified">僅發現・未核</span> 書目只核過索引登記資料，原頁或首發日未核</span><span><span class="badge fulltext">原文已核</span> 內容逐段核對</span><span class="legend-note">核對程度只指題名、出處、日期等書目資料。研究題名下的「#」標記（學段與身分、主題、方法、AI 素養範圍與框架面向）一律由 <strong>AI 判讀，未經人工核對</strong>，與核對程度無關。</span></div>';
 /* "AIED — International Conference …": the long part is hidden on narrow screens; the full name stays in title and the group heading. */
 function indexName(name){const i=name.indexOf(" — ");return i<0?esc(name):esc(name.slice(0,i))+'<span class="long">'+esc(name.slice(i))+"</span>"}
 /* Quick index without scripts: groups × years matrix of in-page links. */
@@ -248,7 +248,7 @@ const LISTS={
 function archiveTabs(active){
  return '<nav class="tabs" aria-label="清單類型">'+Object.entries(LISTS).map(([k,v])=>'<a href="../'+k+'/"'+(active===k?' aria-current="page"':"")+">"+v.short+"</a>").join("")+"</nav>";
 }
-const ARCHIVE_LEAD='<p class="lead">這是可追溯的<strong>書目索引</strong>，不是政策效力或研究結論的認證。每筆標示核對程度；首發日未核實時，以卷期年歸類並註明。週報審查中、尚未核對原頁的候選不列入。</p><p class="lead-note">「僅發現・未核」不代表書目有誤：Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，彼此一致也不升為「書目已核」；本刊不批次核對，只有論文或文件被週報、月報引用時，才逐篇讀出版者或官方原頁，並另做出版查核。</p>';
+const ARCHIVE_LEAD='<p class="lead">這是可追溯的<strong>書目索引</strong>，不是政策效力或研究結論的認證。每筆標示核對程度；首發日未核實時，以卷期年歸類並註明。週報審查中、尚未核對原頁的候選不列入。</p><p class="lead-note">「僅發現・未核」不代表書目有誤：Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，彼此一致也不升為「書目已核」；本刊不批次核對，只有論文或文件被週報、月報引用時，才逐篇讀出版者或官方原頁，並另做出版查核。</p><p class="lead-note"><strong>篇數與標記不是趨勢統計</strong>：收錄範圍隨監測來源與回推批次而變，不能用來判斷研究增減。研究趨勢以本刊年度論文趨勢報告為準（尚在人工驗證，完成前不對外引用）。</p>';
 const SOURCE_NOTE='<div class="info"><p>資料來源：本刊知識庫（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/tree/main/research/knowledge-base">GitHub 公開</a>）。清單由程式自知識庫產生；發現錯誤請透過<a href="../../feedback/">讀者勘誤</a>回報。</p></div>';
 /* Reader guide for the three tag lines: one row per line, colour-matched to the tags; caveats folded into a <details>. */
 const TAG_NOTE='<div class="info tag-guide"><p class="tg-lead"><strong>題名下的「#」標記</strong>由 AI 依題名與摘要判讀，<strong>未經人工逐筆核對</strong>；判不出來的不標。可用下方「依標記篩選」勾選任意組合，或用瀏覽器頁內搜尋（Ctrl＋F，Mac 用 ⌘＋F）輸入例如「#國中」逐筆查找。</p>'+
@@ -311,7 +311,7 @@ function renderAbout(){
  const main='<div class="grid-cards">'+
   '<section class="panel"><div class="label">每日短訊</div><h2>來源存在事實</h2><ul><li>只寫「誰在哪天發布了什麼」或來源原文的歸屬摘要</li><li>首次公開日須在 7 天內，附原文短摘錄與連結</li><li>AI 兩輪對照；未經逐則真人審稿</li><li>不含解讀、成效數字或對臺灣的建議</li></ul></section>'+
   '<section class="panel"><div class="label">週報與月報</div><h2>逐句對回原文</h2><ul><li>政策依 N1–N8、研究依 G1–G6 查核</li><li>首次公開日、學段、樣本與限制逐項核對</li><li>高風險主張（成效、因果、跨學段推論）一律不自動發布</li><li>本刊分析與原始發現分開標示</li></ul></section>'+
-  '<section class="panel"><div class="label">歷年資料庫</div><h2>書目索引，不是認證</h2><ul><li><strong>僅發現・未核</strong>：只核過登記資料</li><li><strong>書目已核</strong>：題名、出處、日期對過原頁</li><li><strong>原文已核</strong>：內容逐段核對</li><li>首發日未核實時以卷期年歸類並註明</li><li>Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，不作為升為「書目已核」的依據</li><li>不批次核對；被週報、月報引用時才逐篇讀原頁</li></ul></section></div>'+
+  '<section class="panel"><div class="label">歷年資料庫</div><h2>書目索引，不是認證</h2><ul><li><strong>僅發現・未核</strong>：只核過登記資料</li><li><strong>書目已核</strong>：題名、出處、日期對過原頁</li><li><strong>原文已核</strong>：內容逐段核對</li><li>首發日未核實時以卷期年歸類並註明</li><li>題名下的「#」標記由 AI 判讀，未經人工核對；篇數與標記不是趨勢統計</li><li>Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，不作為升為「書目已核」的依據</li><li>不批次核對；被週報、月報引用時才逐篇讀原頁</li></ul></section></div>'+
   '<section class="notice" style="margin-top:28px"><h2>我們不宣稱的事</h2><ul><li>同一個 AI 模型的多次查核彼此一致，不等於獨立真人審閱。</li><li>網站部署成功不等於內容已獲認證。</li><li>創刊特刊與 2026 年 9 月月報為早期版本，未經獨立認證，保留公開更正紀錄。</li><li>讀不到的官方或出版社網站，只能寫「搜尋未見」，不能寫「沒有發布」。</li></ul></section>'+
   '<section class="info" style="margin-top:20px"><h2>更正政策</h2><p>發現錯誤時記錄原說法、錯誤類型、原始來源與修訂內容，在網站明示更正，不默默覆蓋。歡迎透過 <a href="../feedback/">讀者評鑑與勘誤</a>（GitHub Issues）回報。</p></section>';
  return shell({depth:1,current:"about",title:"查核方法與證據等級",description:"K-12 AI 素養國際動態的查核方法、證據等級與更正政策",head,main});

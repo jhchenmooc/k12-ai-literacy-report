@@ -201,6 +201,15 @@ test("daily list and homepage show one card per day with that day's items inside
  assert.equal((home.match(/class="item daily-card"/g)||[]).length,1);
 });
 
+test("archive pages say tags are AI judgments and counts are not trend statistics",()=>{
+ const pages=build(root);
+ for(const rel of ["archive/index.html","archive/policy/index.html","archive/journals/index.html","archive/conferences/index.html"]){
+  assert.ok(pages[rel].includes("AI 判讀，未經人工核對</strong>，與核對程度無關"),rel+" legend separates tags from bibliographic checks");
+  assert.ok(pages[rel].includes("篇數與標記不是趨勢統計"),rel+" warns counts are not trend statistics");
+ }
+ assert.ok(pages["index.html"].includes("篇數與標記不是趨勢統計"),"homepage warns next to the counts");
+});
+
 test("tag filter: panel hidden without scripts, rows carry their tags, grouping rule",()=>{
  const pages=build(root),html=pages["archive/journals/index.html"];
  assert.ok(/<section class="tag-filter" id="tag-filter" aria-labelledby="tf-h" hidden>/.test(html),"panel starts hidden");
