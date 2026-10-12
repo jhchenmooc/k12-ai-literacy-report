@@ -230,6 +230,14 @@
 | KB-2024-0081 — [Young children’s understanding of AI](https://doi.org/10.1007/s10639-024-13169-x) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0082 — [Evaluating AI literacy of secondary students: Framework and scale development](https://doi.org/10.1016/j.compedu.2024.105230) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0083 — [Exploring students’ experience of ChatGPT in STEM education](https://doi.org/10.1016/j.caeai.2024.100360) | journal_article | 未知 | discovered_unverified |
+| KB-2024-0084 — [Beginning and first-year language teachers’ readiness for the generative AI age](https://doi.org/10.1016/j.caeai.2024.100201) | journal_article | 未知 | discovered_unverified |
+| KB-2024-0085 — [Promoting young learners’ computational thinking with AI-based robots and the ICAP model in blended learning contexts](https://doi.org/10.1080/10494820.2024.2308101) | journal_article | 未知 | discovered_unverified |
+| KB-2024-0086 — [In search of artificial intelligence (AI) literacy in teacher education: A scoping review](https://doi.org/10.1016/j.caeo.2024.100169) | journal_article | 未知 | discovered_unverified |
+| KB-2024-0087 — [Exploring the relationship between teachers’ competencies in AI-TPACK and digital proficiency](https://doi.org/10.1007/s10639-024-12939-x) | journal_article | 未知 | discovered_unverified |
+| KB-2024-0088 — [Teaching and AI in the postdigital age: Learning from teachers’ perspectives](https://doi.org/10.1016/j.tate.2024.104851) | journal_article | 未知 | discovered_unverified |
+| KB-2024-0089 — [Constructing a teacher portrait for the artificial intelligence age based on the micro ecological system theory: A systematic review](https://doi.org/10.1007/s10639-024-12513-5) | journal_article | 未知 | discovered_unverified |
+| KB-2024-0090 — [A systematic review of AI literacy conceptualization, constructs, and implementation and assessment efforts (2019–2023)](https://doi.org/10.1016/j.caeo.2024.100173) | journal_article | 未知 | discovered_unverified |
+| KB-2024-0091 — [Collaboration with Generative Artificial Intelligence: An Exploratory Study Based on Learning Analytics](https://doi.org/10.1177/07356331241242441) | journal_article | 未知 | discovered_unverified |
 
 ## 2025｜first_publication
 
@@ -445,6 +453,25 @@
 | KB-2025-0221 — [Analyzing the predictors of students’ computational thinking through the SOR framework](https://doi.org/10.1080/08993408.2025.2601038) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0222 — [Integrating Reading, Writing, and Digital Tools in Science: A Participatory-Design Study of the InSPECT Framework](https://doi.org/10.3390/educsci16010006) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0223 — [AI for educational innovation: opportunities and challenges amidst protracted crises](https://doi.org/10.1007/s10639-025-13867-0) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0224 — [Cypriot teachers’ digital skills and attitudes towards AI](https://doi.org/10.1007/s44217-024-00390-6) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0225 — [Teachers’ technological pedagogical content knowledge (TPACK) as a precursor to their perceived adopting of educational AI tools for teaching purposes](https://doi.org/10.1007/s10639-025-13371-5) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0226 — [The Role of AI in Historical Simulation Design: A TPACK Perspective on a French Revolution Simulation Design Experience](https://doi.org/10.3390/educsci15020192) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0227 — [Development and validation of moral ascendancy and dependency in AI integration (MAD-AI) scale for teachers](https://doi.org/10.1016/j.compedu.2025.105346) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0228 — [Learning About AI: A Systematic Review of Reviews on AI Literacy](https://doi.org/10.1177/07356331251342081) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0229 — [Development and validation of the artificial intelligence self-regulated learning scale (AI-SRLS) for teachers](https://doi.org/10.1007/s10639-025-13670-x) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0230 — [Artificial intelligence teacher self-efficacy: a scale development and validation study](https://doi.org/10.1080/10494820.2025.2589402) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0231 — [A Comparative Analysis of AI Use in Scientific Inquiry Learning Among Gifted and Non-Gifted Students](https://doi.org/10.3390/educsci15121611) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0232 — [Navigating the landscape of AI literacy education: insights from a decade of research (2014–2024)](https://doi.org/10.1057/s41599-025-04583-8) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0233 — [AI ethics education: A systematic literature review](https://doi.org/10.1016/j.caeai.2025.100405) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0234 — [The journey of challenges and victories: exploring the transformation action framework in the GenAI era from multifaceted policies](https://doi.org/10.1007/s11423-025-10535-5) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0235 — [Reconsidering teacher assessment literacy in GenAI-enhanced environments: A scoping review](https://doi.org/10.1016/j.tate.2025.105163) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0236 — [Towards responsible artificial intelligence in education: a systematic review on identifying and mitigating ethical risks](https://doi.org/10.1057/s41599-025-05252-6) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0237 — [Factors influencing language teachers’ judgements and decision-making about the use of generative AI tools: A systematic review](https://doi.org/10.1016/j.tate.2025.105333) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0238 — [Assessing teachers’ generative artificial intelligence competencies: instrument development and validation](https://doi.org/10.1007/s10639-025-13684-5) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0239 — [The impact of AI-based visual designs on students’ AI literacy and attitudes toward AI](https://doi.org/10.1080/10494820.2025.2530630) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0240 — [Reimagining teacher development in the era of generative AI: A scoping review](https://doi.org/10.1016/j.tate.2025.105236) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0241 — [Empowering bilingual teachers with dynamic GenAI: Adaptive design and implementation of multimodal instructional strategies](https://doi.org/10.1016/j.compedu.2025.105490) | journal_article | 未知 | discovered_unverified |
+| KB-2025-0242 — [Competencies for teaching with and about artificial intelligence in the natural sciences — DiKoLAN AI](https://doi.org/10.1016/j.caeo.2025.100303) | journal_article | 未知 | discovered_unverified |
 
 ## 2026｜first_publication
 

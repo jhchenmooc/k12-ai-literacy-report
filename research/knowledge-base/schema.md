@@ -33,6 +33,7 @@
 | `STAGE_PRESCHOOL`／`STAGE_PRIMARY`／`STAGE_LOWER_SECONDARY`／`STAGE_UPPER_SECONDARY` | #幼兒／#國小／#國中／#高中職 | 學段；教師研究記其任教學段 |
 | `STAGE_SECONDARY` | #中學未分 | 只寫 secondary、青少年，未分國高中 |
 | `STAGE_K12_MULTI`／`STAGE_K12_GENERAL` | #K12跨學段／#K12未細分 | 兩個以上學段／只寫 K-12 等泛稱 |
+| `REVIEW_INCLUDES_K12` | #含K12回顧 | 回顧（文獻回顧、系統性回顧、範疇回顧、統合分析、書目計量、文件或政策後設綜整；`METHOD_REVIEW`）所回顧的研究或文件有一部分屬中小學，但中小學不是主要對象或比例沒寫（管理者 2026-10-12 決定）。以中小學為主的回顧照上列規則標學段與身分；以職前師資生為主者標 `TEACHER_ED`；完全不含中小學者與實證研究不加。依回顧的方法段、納入研究表或對象分布判讀，只看摘要判不出時不加 |
 
 - 判讀依題名與摘要，規則見 [p0-trends-2026-10-10/notes.md](../p0-trends-2026-10-10/notes.md) 第 3 節；由 AI 判讀，未經人工逐筆核對，`verification_status` 一律 `discovered_unverified`。判讀為「不明」者不標。
 - 2026-10-10 首批由 `p0-trends-2026-10-10/records.json` 的 `stage`、`stage_secondary` 轉入；只有主要學段為特定學段（幼兒至中學）時才加 `ROLE_STUDENT`。
