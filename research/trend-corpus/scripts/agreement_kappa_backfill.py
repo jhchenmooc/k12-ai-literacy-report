@@ -2,6 +2,8 @@
 # 用法：python3 -I agreement_kappa_backfill.py <repo>/research/trend-corpus [--allow-partial]（在含 sample.json 與 out/ 的目錄執行）→ 寫 agreement.csv、coding2.csv
 #   先驗證後寫檔：sample.json 的 work_id 重複／缺少／非字串、year 不是 2022–2024 或與該 work_id 所在年份 corpus 不符、
 #   batch 內任何重複（含同值）、batch 有 sample 以外的 work_id，都以非零結束碼拒絕，兩個既有輸出都不動。
+#   batch 的 ai_lit_class／audience_role／stage／method／ai_lit_dims 不在 codebook 允許值內也拒絕。batch 的值（模型輸出）
+#   不直接印出：work_id 只在形如 W 加數字時列出，model_id 只在是一般代號時列出，其餘只列型別、長度與雜湊。
 #   sample 中有未編碼者：預設拒絕；--allow-partial 只寫 agreement.partial.csv、coding2.partial.csv 與 partial-missing.txt。
 #   兩檔先都寫成暫存檔再依序取代；兩次取代之間中斷時兩檔可能不一致（已知限制，見 safeio.py）。
 import csv,json,sys,glob,collections,os
@@ -17,7 +19,7 @@ for y in (2022,2023,2024):
     with open(os.path.join(R,str(y),'corpus.csv'),encoding='utf-8',newline='') as fh:
         for x in csv.DictReader(fh): corp[x['work_id']]=x;cyear.setdefault(x['work_id'],set()).add(y)
 err=[]
-B=safeio.read_jsonl_batches(sorted(glob.glob('out/batch*.jsonl')),err)
+B=safeio.read_jsonl_batches(sorted(glob.glob('out/batch*.jsonl')),err);safeio.check_code2_values(B,err)
 c2={w:o for w,(o,_,_) in B.items()};bid={w:'CB-'+os.path.basename(f)[5:-6] for w,(_,f,_) in B.items()}
 with open('sample.json',encoding='utf-8') as fh: S=json.load(fh)
 ids=[];st={}
@@ -34,7 +36,7 @@ for k,s in enumerate(S,1):
     for f in ('stratum_class','stratum_stage'):
         if not isinstance(s.get(f),str): err.append(f'{w}: sample.json entry {k} {f} missing or not a string')
 year={w:st[w]['year'] for w in ids}
-for w in sorted(set(c2)-set(st)): err.append(f'{w}: second coding in out/ is not in sample.json')
+for w in sorted(set(c2)-set(st)): err.append(f'{safeio.show_id(w)}: second coding in out/ is not in sample.json')
 missing=[i for i in ids if i not in c2]
 if missing and not partial: err.append(f'{len(missing)} sampled work_id(s) have no second coding (use --allow-partial for exploratory *.partial.csv): '+' '.join(missing))
 if err: safeio.die(err)
@@ -73,7 +75,7 @@ block(ids,'all_sampled_2022-2024')
 for y in (2022,2023,2024): block([i for i in ids if year[i]==y],f'year_{y}',full=False)
 AGREE=safeio.csv_bytes(['dimension','n','agree','kappa','n_excl_both_unknown','agree_excl','kappa_excl','unknown_rate_c1','unknown_rate_c2','n_positive_either','subset'],rows,lineterminator='\n')
 for r in rows: print(r)
-print('model_ids',collections.Counter(c2[i].get('model_id') for i in ids))
+print('model_ids',collections.Counter(safeio.show_label(c2[i].get('model_id')) for i in ids))
 print('class crosstab',sorted(collections.Counter((corp[i]['ai_lit_class'],c2[i]['ai_lit_class']) for i in ids).items()))
 F=['year','work_id','stratum_class','stratum_stage','batch_id','ai_lit_class','b_subtype','audience_role','stage','ai_lit_dims','level','topic','method','outcome_measured','genai_flag','ai_lit_note','rationale','codebook_version','prompt_sha256','model_id']
 j=lambda v:';'.join(v) if isinstance(v,list) else (v or '')

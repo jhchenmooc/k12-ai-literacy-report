@@ -13,8 +13,27 @@ Write rules (REPAIR-PLAN v5.10 W1-W5):
   the files inconsistent (the earlier output is already replaced and is not rolled back).
 - W5: die() writes the reason to stderr and exits nonzero. Callers pass IDs, file
   names, line numbers, lengths or hashes only, never abstract or evidence text.
+  Values read from coder batches (model output) are untrusted: show them with
+  show_id() / show_label(), which print only an ID-shaped or label-shaped value and
+  otherwise its type, length and hash.
 """
-import csv, io, json, os, sys, tempfile
+import csv, hashlib, io, json, os, re, sys, tempfile
+
+
+def describe(v):
+    """Type, length and SHA-256 prefix of an untrusted value; the value itself is never printed."""
+    t = v if isinstance(v, str) else json.dumps(v, ensure_ascii=False, sort_keys=True, default=str)
+    return f"{type(v).__name__}, {len(t)} chars, sha256 {hashlib.sha256(t.encode('utf-8')).hexdigest()[:12]}"
+
+
+def show_id(v):
+    """An untrusted work_id: printed only if it looks like an OpenAlex work ID."""
+    return v if isinstance(v, str) and re.fullmatch(r"W\d{1,12}", v) else f"<work_id {describe(v)}>"
+
+
+def show_label(v):
+    """An untrusted short label such as a model ID: printed only if it is a plain token."""
+    return v if isinstance(v, str) and re.fullmatch(r"[A-Za-z0-9._:-]{1,64}", v) else f"<value {describe(v)}>"
 
 
 def die(lines, code=1):
@@ -109,7 +128,38 @@ def read_jsonl_batches(paths, errors):
                     continue
                 if w in seen:
                     _, f0, n0 = seen[w]
-                    errors.append(f"{w}: duplicate second coding at {os.path.basename(f0)}:{n0} and {where}")
+                    errors.append(f"{show_id(w)}: duplicate second coding at {os.path.basename(f0)}:{n0} and {where}")
                     continue
                 seen[w] = (o, f, n)
     return seen
+
+
+def check_code2_values(batches, errors):
+    """Reject second-coding values the agreement tables use but the codebook does not allow.
+
+    Checks ai_lit_class (required), audience_role, stage, method (empty or missing = unknown) and
+    ai_lit_dims (list, or ';'/',' separated string). Errors name file, line and field, never the value.
+    """
+    HERE = os.path.dirname(os.path.abspath(__file__))
+    sys.path.insert(0, HERE)
+    from validate_coding import ENUM, DIMS  # noqa: E402
+    for o, f, n in batches.values():
+        where = f"{os.path.basename(f)}:{n}"
+        for k in ("ai_lit_class", "audience_role", "stage", "method"):
+            v = o.get(k)
+            if k != "ai_lit_class" and v in (None, ""):
+                continue
+            if not (isinstance(v, str) and v in ENUM[k]):
+                errors.append(f"{where}: {k} value not allowed ({describe(v)})")
+        d = o.get("ai_lit_dims")
+        if d in (None, ""):
+            items = []
+        elif isinstance(d, list):
+            items = d
+        elif isinstance(d, str):
+            items = [t for t in d.replace(";", ",").split(",") if t.strip()]
+        else:
+            items = [d]
+        for t in items:
+            if not (isinstance(t, str) and t in DIMS):
+                errors.append(f"{where}: ai_lit_dims value not allowed ({describe(t)})")

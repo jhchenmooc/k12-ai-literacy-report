@@ -2,6 +2,8 @@
 # 用法：python3 -I agreement_kappa.py ../2025/corpus-v2.csv [--allow-partial]（在含 sample.json 與 out/ 的目錄執行）
 #   先驗證後寫檔：sample.json 的 work_id 重複／缺少／非字串、corpus 無對應、batch 內任何重複（含同值）、
 #   batch 有 sample 以外的 work_id，都以非零結束碼拒絕，不動既有 agreement.csv。
+#   batch 的 ai_lit_class／audience_role／stage／method／ai_lit_dims 不在 codebook 允許值內也拒絕。batch 的值（模型輸出）
+#   不直接印出：work_id 只在形如 W 加數字時列出，model_id 只在是一般代號時列出，其餘只列型別、長度與雜湊。
 #   sample 中有未編碼者：預設拒絕；--allow-partial 只寫 agreement.partial.csv 與 partial-missing.txt（不寫正式檔名）。
 import csv,json,sys,glob,collections,math,os
 HERE=os.path.dirname(os.path.abspath(__file__));sys.path.insert(0,HERE)
@@ -10,7 +12,8 @@ args=[a for a in sys.argv[1:] if a!='--allow-partial'];partial='--allow-partial'
 if len(args)!=1: safeio.die('usage: agreement_kappa.py <corpus-v2.csv> [--allow-partial]')
 with open(args[0],encoding='utf-8',newline='') as fh: corp={x['work_id']:x for x in csv.DictReader(fh)}
 err=[]
-c2={w:o for w,(o,_,_) in safeio.read_jsonl_batches(sorted(glob.glob('out/batch*.jsonl')),err).items()}
+B=safeio.read_jsonl_batches(sorted(glob.glob('out/batch*.jsonl')),err);safeio.check_code2_values(B,err)
+c2={w:o for w,(o,_,_) in B.items()}
 with open('sample.json',encoding='utf-8') as fh: S=json.load(fh)
 ids=[];seen=set()
 for k,s in enumerate(S if isinstance(S,list) else [],1):
@@ -20,7 +23,7 @@ for k,s in enumerate(S if isinstance(S,list) else [],1):
     seen.add(w);ids.append(w)
     if w not in corp: err.append(f'{w}: sample.json entry {k} has no record in {os.path.basename(args[0])}')
 if not isinstance(S,list): err.append('sample.json: not a JSON list')
-for w in sorted(set(c2)-seen): err.append(f'{w}: second coding in out/ is not in sample.json')
+for w in sorted(set(c2)-seen): err.append(f'{safeio.show_id(w)}: second coding in out/ is not in sample.json')
 missing=[i for i in ids if i not in c2]
 if missing and not partial: err.append(f'{len(missing)} sampled work_id(s) have no second coding (use --allow-partial for an exploratory agreement.partial.csv): '+' '.join(missing))
 if err: safeio.die(err)
@@ -61,5 +64,5 @@ H=['dimension','n','agree','kappa','n_excl_both_unknown','agree_excl','kappa_exc
 if partial and missing: safeio.write_atomic([('agreement.partial.csv',safeio.csv_bytes(H,rows)),('partial-missing.txt',''.join(i+'\n' for i in missing).encode('utf-8'))])
 else: safeio.write_atomic([('agreement.csv',safeio.csv_bytes(H,rows))])
 for r in rows: print(r)
-print('model_ids',collections.Counter(c2[i].get('model_id') for i in ids))
+print('model_ids',collections.Counter(safeio.show_label(c2[i].get('model_id')) for i in ids))
 cm=collections.Counter((corp[i]['ai_lit_class'],c2[i]['ai_lit_class']) for i in ids); print('class crosstab',sorted(cm.items()))
