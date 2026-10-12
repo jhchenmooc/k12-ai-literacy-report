@@ -67,6 +67,8 @@ jobs:
           node --test research/knowledge-base-quality.test.js
           node research/validate-knowledge-base.js .
           node research/render-knowledge-base-years.js
+      - name: Test scholar-watch runner with mocked OpenAlex (cursor paging, failures never zero hits)
+        run: node --test research/scholar-watch-run.test.js
       - name: Validate issue manifests and claim metadata
         run: node research/validate-publication.js .
       - name: Verify generated site pages (lists, archive, about, homepage blocks)
