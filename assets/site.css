@@ -134,3 +134,22 @@ body{background:var(--bg)}
 .item .tags3,[data-claim-tags]{font-size:13px;color:var(--navy);margin-top:2px}
 [data-claim-tags]{margin-top:-.4em;word-spacing:.4em}
 .rec-table .t,.tag-guide .t,.item .t{white-space:nowrap;margin-right:.6em}
+
+/* Tag filter on the journal and conference lists (assets/archive-filter.js); hidden without scripts. */
+.tag-filter{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:20px 22px;margin:0 0 24px}
+.tag-filter h2{font-size:20px;margin:0 0 2px}
+.tf-group{border:0;border-top:1px solid var(--border);margin:10px 0 0;padding:10px 0 0;display:flex;flex-wrap:wrap;gap:4px 14px}
+.tf-group legend{font-weight:700;font-size:15px;padding:0 8px 0 0;float:left;width:120px}
+.tf-group label{font-size:15px;display:inline-flex;align-items:center;gap:4px;min-height:32px;cursor:pointer}
+.tf-group input,.tf-bar input{width:18px;height:18px}
+.tf-group .n{font-size:13px;color:var(--muted)}
+.tf-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 20px;margin-top:14px;padding-top:12px;border-top:1px solid var(--border);font-size:15px}
+.tf-bar label{display:inline-flex;align-items:center;gap:6px;cursor:pointer}
+.tf-bar button{font:inherit;font-weight:700;padding:6px 14px;min-height:36px;border:2px solid #bbd1ee;border-radius:10px;background:var(--surface);color:#174c9e;cursor:pointer}
+.tf-bar button:disabled{opacity:.5;cursor:default}
+.tf-status{font-weight:700;margin:10px 0 0}
+.tag-filter[hidden],.group[hidden],.rec-table tr[hidden],.index-table tr[hidden],.index-table [hidden]{display:none!important}
+.rec-table tr:focus{outline:3px solid #9fd2c9;outline-offset:-3px}
+@media (max-width:700px){.tf-group legend{float:none;width:100%}}
+.tf-fields>summary{cursor:pointer;font-weight:700;font-size:15px;margin-top:10px;min-height:32px}
+.tf-count{font-weight:400;color:var(--muted)}

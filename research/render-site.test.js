@@ -28,7 +28,12 @@ test("generated site pages in the repository are up to date",()=>{
 });
 
 test("generated pages contain no scripts, inline handlers or unsafe URL schemes",()=>{
- for(const [rel,text] of Object.entries(build(root))){
+ /* Only exception (manager 2026-10-12): the external tag filter on the journal and conference lists. */
+ const FILTER=/<script src="\.\.\/\.\.\/assets\/archive-filter\.js\?v=[0-9a-f]{10}" defer><\/script>/;
+ for(const [rel,text0] of Object.entries(build(root))){
+  const filtered=rel==="archive/journals/index.html"||rel==="archive/conferences/index.html";
+  assert.equal(FILTER.test(text0),filtered,rel+(filtered?" must load the tag filter":" must not load scripts"));
+  const text=text0.replace(FILTER,"");
   assert.ok(!/<\/?(script|iframe|object|embed|form)\b/i.test(text),rel);
   assert.ok(!/\son[a-z]+\s*=/i.test(text),rel);
   assert.ok(!/(href|src)\s*=\s*["']\s*(javascript|data|vbscript|file):/i.test(text),rel);
@@ -194,4 +199,19 @@ test("daily list and homepage show one card per day with that day's items inside
  assert.equal((list.match(/當日短訊頁/g)||[]).length,days.length);
  const home=pages["index.html"].split("generated:daily-latest:start")[1].split("generated:daily-latest:end")[0];
  assert.equal((home.match(/class="item daily-card"/g)||[]).length,1);
+});
+
+test("tag filter: panel hidden without scripts, rows carry their tags, grouping rule",()=>{
+ const pages=build(root),html=pages["archive/journals/index.html"];
+ assert.ok(/<section class="tag-filter" id="tag-filter" aria-labelledby="tf-h" hidden>/.test(html),"panel starts hidden");
+ assert.ok(html.includes('data-group="class" data-tag="AI工具應用"')&&html.includes('data-group="dim" data-tag="教師AI賦能教學"'));
+ assert.ok(/<tr[^>]* data-year="\d{4}" data-tags="[^"]*AI工具應用[^"]*"/.test(html),"rows carry tag data");
+ assert.ok(!pages["archive/policy/index.html"].includes("tag-filter"),"policy list has no tag filter");
+ const {matches}=require("../assets/archive-filter.js"),t=new Set(["AI工具應用","教師AI賦能教學","國小"]);
+ assert.equal(matches(t,[],false),true);
+ assert.equal(matches(t,[["AI工具應用"],["教師AI賦能教學"]],false),true,"across groups: all");
+ assert.equal(matches(t,[["AI素養核心","AI工具應用"]],false),true,"within a group: any");
+ assert.equal(matches(t,[["AI素養核心"],["教師AI賦能教學"]],false),false);
+ assert.equal(matches(t,[["國小","國中"]],true),false,"all-mode needs every checked tag");
+ assert.equal(matches(t,[["國小"],["AI工具應用"]],true),true);
 });
