@@ -137,7 +137,8 @@
 
 ## 重算
 
-- 四年報告：`python3 -I research/trend-corpus/scripts/fouryear_tables.py research/trend-corpus --tables --journal-csv research/p0-annual-trends-2022-2025/journal-year.csv`（在 repo 根目錄執行）。
+- 四年報告：`python3 -I research/trend-corpus/scripts/fouryear_tables.py research/trend-corpus --tables --journal-csv /tmp/journal-year.csv`（在 repo 根目錄執行），再與 `research/p0-annual-trends-2022-2025/journal-year.csv` 比對（`diff`）。`--journal-csv` 會覆寫指定檔案，請不要直接指向公開檔。
+  - `journal-year.csv` 的 `doctype_checked_scopus` 只計 Scopus 比對到、且有摘要或被判為非論文的紀錄；Scopus 比對到但沒有摘要者不計入（四年依序 1、1、7、3 筆）。
 - 召回率：`python3 -I research/trend-corpus/scripts/recall_refset.py research/trend-corpus --offline`（不加 `--offline` 會重查 OpenAlex 並覆寫 `recall.csv`）。
 - 編碼：所有腳本讀寫檔案一律明定 UTF-8（外部匯出用 `utf-8-sig`），在 Linux 以模擬的 Windows 預設 cp950 文字模式驗證過輸出位元組相同（Windows 實機尚待重跑）。螢幕輸出（stdout）仍依主控台編碼；在 Windows 上把輸出導向檔案（例如 `wos_query.py > wos/queries.txt`）時請加 `-X utf8`：`python -X utf8 -I …`。
 - 離線回歸測試：`python3 -I -m unittest discover -s research/trend-corpus/tests -v`（在 repo 根目錄執行；fixture 寫在作業系統暫存目錄，不連網）。
