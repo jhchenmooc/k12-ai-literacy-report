@@ -183,6 +183,30 @@ class Backfill(Case):
         self.same_bytes_on_windows_text_mode(lambda win: self.run_(win=win), self.OUT)
         self.assertIn("中小學".encode("utf-8"), self.read("coding2.csv"))
 
+    def test_kappa_matches_independent_computation(self):
+        ids, sample = self.fixture()
+        self.assert_ok(self.run_())
+        agr = {(r["dimension"], r["subset"]): r for r in csv.DictReader(io.StringIO(self.read("agreement.csv").decode("utf-8")))}
+        first = {s["work_id"]: s["stratum_class"] for s in sample}
+        second = {i: ("A" if k < 6 else "B") for k, i in enumerate(ids)}
+        a, b = [first[i] for i in ids], [second[i] for i in ids]
+        n = len(a)
+        po = sum(x == y for x, y in zip(a, b)) / n
+        pe = sum(a.count(c) * b.count(c) for c in set(a) | set(b)) / n / n
+        row = agr[("A/B/C/unknown", "all_sampled_2022-2024")]
+        self.assertEqual((row["n"], row["agree"], row["kappa"]), (str(n), str(round(po, 3)), str(round((po - pe) / (1 - pe), 3))))
+
+    def test_unencodable_text_fails_before_any_write(self):
+        """A lone surrogate in a batch cannot be written as UTF-8: the run fails and both outputs stay intact."""
+        ids, _ = self.fixture()
+        objs = [code2(i) for i in ids]
+        lines = jsonl(objs).replace('"rationale": "synthetic"', '"rationale": "bad \\ud800 text"', 1)
+        put(self.p("out", "batch1.jsonl"), lines)
+        os.remove(self.p("out", "batch2.jsonl"))
+        self.plant(*self.OUT)
+        r = self.run_()
+        self.assert_rejected(r, self.OUT, stderr_has="UnicodeEncodeError")
+
     def test_conflicting_duplicate_rejected_both_outputs_kept(self):
         ids, _ = self.fixture()
         self.fixture(batches={"batch1.jsonl": [code2(i, "A") for i in ids], "batch2.jsonl": [code2(ids[0], "B")]})
