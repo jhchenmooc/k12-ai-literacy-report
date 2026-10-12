@@ -43,6 +43,21 @@ test("homepage keeps feedback entry and both generated blocks",()=>{
  assert.throws(()=>fillHomepage("<html></html>",[],{policy:[],research:[]}),/marker missing/);
 });
 
+test("homepage stats count preprints and book chapters separately from journal articles",()=>{
+ const shell='<!-- generated:daily-latest:start --><!-- generated:daily-latest:end --><!-- generated:archive-stats:start --><!-- generated:archive-stats:end -->';
+ const group=(key,n)=>({key,rows:Array.from({length:n},(_,i)=>({id:key+i}))});
+ const stats=journals=>fillHomepage(shell,[],{policy:[group("p",3)],journals,conferences:[group("c",4)]}).match(/<div class="stats">.*?<\/div><!--/)[0];
+ const labels=html=>[...html.matchAll(/<strong>(\d+)<\/strong><span>([^<]+)<\/span>/g)].map(m=>m[2]+"="+m[1]);
+ assert.deepEqual(labels(stats([group("1-j",5)])),["政策與框架=3","期刊論文=5","會議論文=4"]);
+ assert.deepEqual(labels(stats([group("1-j",5),group("7-preprint",1),group("8-book",2)])),["政策與框架=3","期刊論文=5","專書章節=2","預印本=1","會議論文=4"]);
+ assert.deepEqual(labels(stats([group("7-preprint",2)])),["政策與框架=3","期刊論文=0","預印本=2","會議論文=4"]);
+ const pages=build(root),m=pages["archive/index.html"].match(/(\d+) 筆期刊論文(?:、(\d+) 筆專書章節)?(?:、(\d+) 筆預印本)?/);
+ assert.ok(m,"archive overview lists journal articles");
+ const home=labels(pages["index.html"]);
+ assert.ok(home.includes("期刊論文="+m[1]));
+ if(m[2])assert.ok(home.includes("專書章節="+m[2]));
+ if(m[3])assert.ok(home.includes("預印本="+m[3]));
+});
 test("archive excludes weekly candidates, escapes titles and keeps unknown dates unknown",()=>{
  const records=[
   {record_id:"KB-2026-9001",title:"Held <b>candidate</b>",primary_url:"https://example.org/a",record_type:"journal_article",year_value:"",year_basis:"unknown",first_published_on:"",verification_status:"discovered_unverified",source_candidate_id:"W2026-10-09-A99"},

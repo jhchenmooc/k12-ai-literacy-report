@@ -273,8 +273,9 @@ function renderResearchMoved(data){
  const main='<div class="grid-cards"><section class="panel"><div class="label">期刊</div><h2><a href="../journals/">期刊 × 年份論文清單</a></h2><p>'+journalText(n)+'。</p></section><section class="panel"><div class="label">會議</div><h2><a href="../conferences/">會議 × 年份論文清單</a></h2><p>'+n.conferences+" 筆會議論文。</p></section></div>";
  return shell({depth:2,current:"archive",title:"研究清單",description:"K-12 AI 素養歷年資料庫：研究清單已分為期刊與會議兩頁",head,main});
 }
-function counts(data){const c=g=>g.reduce((s,x)=>s+x.rows.length,0);return {policy:c(data.policy),journals:c(data.journals),conferences:c(data.conferences),books:c(data.journals.filter(g=>g.key==="8-book"))}}
-const journalText=n=>(n.journals-n.books)+" 筆期刊論文"+(n.books?"、"+n.books+" 筆專書章節":"");
+/* The journals list also holds book chapters and preprints; count them separately so preprints are not called journal articles. */
+function counts(data){const c=g=>g.reduce((s,x)=>s+x.rows.length,0),books=c(data.journals.filter(g=>g.key==="8-book")),preprints=c(data.journals.filter(g=>g.key==="7-preprint"));return {policy:c(data.policy),journals:c(data.journals),articles:c(data.journals)-books-preprints,conferences:c(data.conferences),books,preprints}}
+const journalText=n=>n.articles+" 筆期刊論文"+(n.books?"、"+n.books+" 筆專書章節":"")+(n.preprints?"、"+n.preprints+" 筆預印本":"");
 function renderArchiveIndex(data){
  const n=counts(data);
  const head='<div class="kicker">歷年資料庫</div><h1>K–12 AI 素養：政策年表與研究清單</h1>'+ARCHIVE_LEAD+LEGEND;
@@ -298,7 +299,7 @@ function renderAbout(){
 /* ---------- homepage blocks ---------- */
 const BLOCKS={"daily-latest":(days,data)=>{
   return days.length?'<ul class="item-list">'+dailyCard(days[0],0)+"</ul>":'<p class="empty">尚無已發布的每日短訊。沒有合格項目的日子不發刊。</p>';
- },"archive-stats":(days,data)=>{const n=counts(data);return '<div class="stats"><div class="stat"><strong>'+n.policy+"</strong><span>政策與框架</span></div>"+'<div class="stat"><strong>'+n.journals+"</strong><span>"+(n.books?"期刊論文與專書章節":"期刊論文")+"</span></div>"+'<div class="stat"><strong>'+n.conferences+"</strong><span>會議論文</span></div></div>"}};
+ },"archive-stats":(days,data)=>{const n=counts(data),stat=(v,label)=>'<div class="stat"><strong>'+v+"</strong><span>"+label+"</span></div>";return '<div class="stats">'+stat(n.policy,"政策與框架")+stat(n.articles,"期刊論文")+(n.books?stat(n.books,"專書章節"):"")+(n.preprints?stat(n.preprints,"預印本"):"")+stat(n.conferences,"會議論文")+"</div>"}};
 function fillHomepage(html,days,data){
  let out=html;
  for(const [name,fn] of Object.entries(BLOCKS)){
