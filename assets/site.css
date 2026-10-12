@@ -78,6 +78,10 @@ body{background:var(--bg)}
 .index-table td a{display:inline-block;min-width:32px;min-height:32px;line-height:32px;border-radius:8px;background:var(--tint-blue);font-weight:700;text-decoration:none}
 .index-table td a:hover{background:#d8e8f8}
 .index-table td.none{color:#a5b3c4}
+/* Keep keyboard focus clear of the sticky name column (WCAG 2.4.11). Chrome only scrolls a focused link that lies
+   wholly outside the padded scrollport, so the left padding is the sticky column plus about one link, and the right
+   padding about one link, so a link at either edge is scrolled fully into view. */
+.quick-index .table-wrap{scroll-padding-left:190px;scroll-padding-right:36px}
 .group-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px}
 .to-index{font-size:14px;font-weight:700;text-decoration:none;padding:6px 0}
 .group,.quick-index,.rec-table tr{scroll-margin-top:16px}
@@ -98,6 +102,7 @@ body{background:var(--bg)}
   .index-table{font-size:14px}
   .index-table th,.index-table td{padding:6px 7px}
   .index-table .name{min-width:110px;max-width:150px}
+  .quick-index .table-wrap{scroll-padding-left:185px} /* sticky column is at most 150px here */
   .index-table .name .long{display:none}
   .rec-table{min-width:0}
   .rec-table thead{position:absolute;left:-9999px}
