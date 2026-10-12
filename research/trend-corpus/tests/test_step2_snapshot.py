@@ -61,6 +61,15 @@ class Step2Snapshot(Case):
         for f, b in before.items():
             self.assertEqual(self.read(os.path.join("out", f)), b, f)
 
+    def test_success_after_failure_removes_stale_marker(self):
+        r = self.run_(self.p("out"), {"calls": {"1": {"http": 500}, "2": {"http": 500}}})
+        self.assertNotEqual(r.returncode, 0)
+        self.assertEqual(self.snapshot_files(self.p("out")), ["step2-incomplete.json"])
+        self.assert_ok(self.run_(self.p("out")))
+        files = self.snapshot_files(self.p("out"))
+        self.assertIn("step2-summary.json", files)
+        self.assertNotIn("step2-incomplete.json", files)
+
     def test_refuses_frozen_snapshot_dirs(self):
         for out in (self.root, os.path.join(self.root, "2025"), os.path.join(self.root, "rerun-dev001"),
                     os.path.join(self.root, "2023", "sub")):

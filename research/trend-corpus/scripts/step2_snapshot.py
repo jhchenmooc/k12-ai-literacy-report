@@ -125,6 +125,9 @@ def main(out):
         os.makedirs(os.path.join(out, str(y)), exist_ok=True)
     files.append(("step2-summary.json", safeio.json_bytes(summary, indent=1)))
     safeio.write_atomic([(os.path.join(out, rel), data) for rel, data in files])
+    stale = os.path.join(out, "step2-incomplete.json")
+    if os.path.exists(stale):  # an earlier failed run's marker no longer describes this directory
+        os.remove(stale)
 
 
 def collect(files):
