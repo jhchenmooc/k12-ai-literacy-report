@@ -140,6 +140,37 @@ class Validator(Case):
                 rep = self.code1_case(out, ok)
                 self.assertIn("per-value correspondence of evidence is not verified", rep["required_evidence"]["limitation"])
 
+    def test_invalid_values_are_never_echoed(self):
+        """W5: an output field holding restricted text (here a synthetic sentinel) must not reach stdout/stderr."""
+        secret = "SENTINEL restricted abstract sentence that must never be printed"
+        rows = inp("W1", abstract=ABS + " " + secret)
+        scope_cases = {
+            "enum value": [scope("W1", secret, "student")],
+            "evidence field": [scope("W1", "C", "unknown", [(secret, "not in the text at all")])],
+            "long span field": [scope("W1", "C", "unknown", [(secret, " ".join(["word"] * 16))])],
+            "unknown work_id": [scope("W1", "C", "unknown"), scope(secret, "C", "unknown")],
+        }
+        code1_cases = {
+            "dim value": [code1("W1", ai_lit_dims=[secret])],
+            "topic value": [code1("W1", topic=[secret])],
+            "enum value": [code1("W1", method=secret)],
+            "non-string value": [code1("W1", stage={"text": secret})],
+        }
+        for kind, cases in (("scope", scope_cases), ("code1", code1_cases)):
+            for name, outs in cases.items():
+                for flags in ((), ("--require-evidence",)):
+                    with self.subTest(kind=kind, case=name, flags=flags):
+                        r, rep = self.run_(kind, rows, outs, *flags)
+                        self.assertEqual(r.returncode, 1, rep)
+                        self.assertTrue(rep["errors"])
+                        self.assertNotIn(b"SENTINEL", r.stdout + r.stderr)
+                        self.assertNotIn(b"restricted abstract", r.stdout + r.stderr)
+
+    def test_unknown_openalex_id_is_still_shown(self):
+        r, rep = self.run_("scope", inp("W1"), [scope("W1", "C", "unknown"), scope("W999", "C", "unknown")])
+        self.assertEqual(r.returncode, 1)
+        self.assertIn("line 2: unknown work_id W999", rep["errors"])
+
     def test_report_has_no_span_text(self):
         r, rep = self.run_("scope", inp("W1"), [scope("W1", "A", "student", [("ai_lit_class", "not in the text at all")])],
                            "--require-evidence")
