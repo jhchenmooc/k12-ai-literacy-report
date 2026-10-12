@@ -34,4 +34,4 @@
 
 ## 驗證與提交
 
-使用 Node 22，先 `npm ci --ignore-scripts --no-audit --no-fund`，再執行 `node research/audits/2026-10-10/verify-review.cjs`。使用隔離的合成 fixture 重現反例，不修改原始來源、候選決策或 legacy 刊物。建立 PR 後仍須等遠端 CI 通過；本機通過不等同遠端 CI、部署或來源真實性已驗證。
+使用 Node 22，先 `npm ci --ignore-scripts --no-audit --no-fund`，再依 [local-validation.md](local-validation.md) 執行現行的測試與驗證命令（與 CI 的 verify 工作相同；趨勢語料的離線 Python 測試見 `research/trend-corpus/README.md`「重算」）。`research/audits/2026-10-10/verify-review.cjs` 是 2026-10-10 稽核的封存回放工具，會比對當時固定的資料基準，只能在該稽核紀錄所指定的 commit 回放（見 [audits/2026-10-10/README.md](audits/2026-10-10/README.md)）；資料更新後的 main 上執行會失敗，不作為現行驗證。使用隔離的合成 fixture 重現反例，不修改原始來源、候選決策或 legacy 刊物。建立 PR 後仍須等遠端 CI 通過；本機通過不等同遠端 CI、部署或來源真實性已驗證。
