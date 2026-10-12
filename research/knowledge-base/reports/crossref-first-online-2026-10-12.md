@@ -57,3 +57,17 @@ Crossref 無線上首發日或判不出首發的 297 筆，再逐組查（2026-1
 
 - 填入者 `date_precision=day`、`year_basis=first_publication`；年份都沒有改變。所有紀錄的核對程度不變（ISLS 2 筆維持「書目已核」，只改年份依據）。
 - Elsevier 226 筆只查得 DOI 登記日（Crossref `created`，OpenAlex `publication_date` 與之相同），不等於首發日，不填入。其中 5 筆 DOI 登記年與卷期年不同，可能歸錯年，待以一般瀏覽器開 ScienceDirect 讀「Available online」後補：KB-2027-0001（登記 2026-08-28）、KB-2026-0150（2025-12-04）、KB-2026-0155（2025-11-29）、KB-2026-0215（2025-12-13）、KB-2026-0233（2025-10-28）。
+
+## 第三輪：Elsevier 待查 5 筆（2026-10-12，管理者提供出版者 PDF）
+
+管理者以一般瀏覽器下載 5 篇的出版者 PDF（ScienceDirect 正式版），由首頁的「Available online」讀出首發日並填入；核對程度不變。PDF 不納入公開 repo。
+
+| 紀錄 | 文章 | Available online | DOI 登記日 | 歸屬年份 |
+|---|---|---|---|---|
+| KB-2026-0233 | Teaching and Teacher Education 169 (2026) 105270 | 2025-10-28 | 2025-10-28 | 2026 → 2025 |
+| KB-2027-0001 | Computers & Education 256 (2027) 105745 | 2026-08-28 | 2026-08-28 | 2027 → 2026 |
+| KB-2026-0155 | Computers and Education Open 10 (2026) 100320 | 2025-11-29 | 2025-11-29 | 2026 → 2025 |
+| KB-2026-0150 | Computers and Education Open 10 (2026) 100321 | 2025-12-04 | 2025-12-04 | 2026 → 2025 |
+| KB-2026-0215 | Computers and Education Open 10 (2026) 100325 | 2025-12-13 | 2025-12-13 | 2026 → 2025 |
+
+5 篇的 Available online 都與 Crossref DOI 登記日（`created`）同日。這 5 篇是因年份不符而挑出，不是隨機樣本；其餘 221 筆 Elsevier 是否可用 DOI 登記日代替首發日，須另以隨機抽樣核對後再決定，本輪不改。
