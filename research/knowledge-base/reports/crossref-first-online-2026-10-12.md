@@ -71,3 +71,19 @@ Crossref 無線上首發日或判不出首發的 297 筆，再逐組查（2026-1
 | KB-2026-0215 | Computers and Education Open 10 (2026) 100325 | 2025-12-13 | 2025-12-13 | 2026 → 2025 |
 
 5 篇的 Available online 都與 Crossref DOI 登記日（`created`）同日。這 5 篇是因年份不符而挑出，不是隨機樣本；其餘 221 筆 Elsevier 是否可用 DOI 登記日代替首發日，須另以隨機抽樣核對後再決定，本輪不改。
+
+## 第四輪：其餘 Elsevier 以 DOI 登記日補首發月（管理者 2026-10-12 決定）
+
+**隨機抽查**：其餘 221 筆 Elsevier 以 Python `random.seed(20261012)` 抽 10 篇，管理者以一般瀏覽器下載出版者 PDF，讀出「Available online」，與 Crossref `created`（DOI 登記時間，UTC）比對：同日 5 篇、DOI 登記晚 1 天 4 篇、早 1 天 1 篇，沒有相差 2 天以上者。連同第三輪 5 篇（全部同日），15 篇都在 ±1 天內，差異可能來自時區。
+
+**處理**（逐筆結果：[elsevier-doi-date-2026-10-12.csv](elsevier-doi-date-2026-10-12.csv)）：
+
+| 處理 | 筆數 |
+|---|---:|
+| 抽查 10 篇：填 PDF 的 Available online，精度到日 | 10 |
+| 其餘：以 DOI 登記日的年月填首發日（`date_precision=month`，網站顯示「YYYY-MM 首發」） | 202 |
+| 不填：DOI 登記日在月初或月底，±1 天可能跨月（甚至跨年），維持卷期年 | 9 |
+| 合計 | 221 |
+
+- 歸屬年份都沒有改變；核對程度維持「僅發現・未核」。
+- 以 DOI 登記日代替首發日是推定：抽查只涵蓋 Elsevier 的 4 種期刊（C&E: AI、C&E、C&E Open、TATE），其他 Elsevier 期刊或較早年份的登記習慣可能不同。被週報或月報引用時，仍讀出版者原頁。
