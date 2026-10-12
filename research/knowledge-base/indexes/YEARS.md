@@ -511,6 +511,7 @@
 | KB-2026-0267 — [If My Toy Could Talk: How Young Children Imagine, Design, and Test AI-Enabled Toys](https://arxiv.org/abs/2610.06619) | preprint | 2026-10-05 | bibliographic_checked |
 | KB-2026-0268 — [Young children’s knowledge of ChatGPT and its relationship with their achievement in english as a second language](https://www.nature.com/articles/s41598-026-73410-0) | journal_article | 2026-10-10 | bibliographic_checked |
 | KB-2026-0269 — [Socratic, Artifact-Gated Generative AI Scaffolding in a 6E Inquiry Unit: A Clustered Quasi-Experiment in Elementary Students’ Computational Thinking](https://doi.org/10.1177/07356331261494821) | journal_article | 2026-10-10 | bibliographic_checked |
+| KB-2026-0270 — [人工智能赋能教师发展现场会举行](https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/moe_1485/202610/t20261011_1453584.html) | government_announcement | 2026-10-10 | bibliographic_checked |
 
 ## 2026｜issue_year
 

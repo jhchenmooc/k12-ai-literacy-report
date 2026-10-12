@@ -1,0 +1,52 @@
+[
+  {
+    "claim_id": "D20261012-01",
+    "candidate_id": "W2026-10-09-A17",
+    "kind": "news_policy",
+    "claim_text": "來源機構：中華人民共和國教育部；資料標題：人工智能赋能教师发展现场会举行；來源刊登日：2026-10-10。官方文件表示：10 月 10 日於北京舉行人工智能賦能教師發展現場會，主題為「爭做數智時代好老師、服務基礎教育高質量發展」；會上升級上線國家智慧教育平台教師發展中心，啟動教師人工智能素養全覆蓋培訓，並要求各級教育部門和學校以教師是否解決實際問題、課堂是否發生積極變化、學生是否獲得更有針對性的學習支持，作為檢驗培訓成效的核心標準。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+    "claim_class": "descriptive",
+    "risk_tier": "medium",
+    "level": "N-V2",
+    "daily_fact_kind": "official_attributed_summary",
+    "source_document_type": "official_commentary",
+    "source_title": "人工智能赋能教师发展现场会举行",
+    "source_organization": "中華人民共和國教育部",
+    "source_url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/moe_1485/202610/t20261011_1453584.html",
+    "evidence_source_url": "https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/moe_1485/202610/t20261011_1453584.html",
+    "source_locator": "教育部政府門戶網站新聞頁：標題下「2026-10-10　来源：教育部」；正文第 1、3、4 段；摘要歸屬：正文第 1 段首句、第 3 段第 2 句前半、第 4 段首句（https 網址轉址至 http 版）",
+    "source_type": "official_news",
+    "checked_at": "2026-10-12",
+    "publication_date": "2026-10-10",
+    "first_disclosed_on": "2026-10-10",
+    "evidence_path": "publication/sources/d2026-10-12-a17-cn-moe.txt",
+    "evidence_sha256": "7a9d51de21181ecbb92822bd6d89a47c1a217e0f086fb3722a610a2e0ed41657",
+    "original_excerpt": "10月10日，人工智能赋能教师发展现场会在京举行，主题为“争做数智时代好老师、服务基础教育高质量发展”。 … 各级教育部门和学校要开展好人工智能全覆盖培训，用好国家智慧教育平台，始终坚持智能向善，抓实全覆盖培训，把“教师是否解决实际问题、课堂是否发生积极变化、学生是否获得更有针对性学习支持”作为检验培训成效的核心标准 … 会上升级上线国家智慧教育平台教师发展中心，启动教师人工智能素养全覆盖培训。",
+    "interpretation_note": "轉述官方新聞稿所載的會議主題、平台上線、培訓啟動與培訓成效檢驗標準，不加解讀；新聞稿不是政策文件全文。",
+    "scope_limitation": "官方新聞稿（教育部網站），報導 10 月 10 日會議與教師人工智能素養全覆蓋培訓啟動；不是正式政策文件全文，培訓的具體範圍與實施細節以後續官方文件為準。",
+    "assertion_type": "direct_statement",
+    "translation_reviewed": true,
+    "source_checked": true,
+    "scope_checked": true,
+    "outcome_checked": false,
+    "independent_review": false,
+    "conflict_unresolved": false,
+    "contradiction_type": "none",
+    "ai_crosscheck_status": "concordant",
+    "ai_crosscheck_passes": 2,
+    "ai_crosscheck_record": "第一輪 2026-10-12T00:23Z 讀教育部新聞頁原文（http 版；https 網址轉址至 http），擷取標題、頁面日期行「2026-10-10 来源：教育部」、會議主題、培訓啟動與檢驗標準，撰寫中文摘要；第二輪 2026-10-12T00:27Z 重讀原頁核對日期行與三段原句逐字相同，並由隔離子代理逐項對照原文（日期地點、會議名稱、主題、平台與培訓名稱、要求主體、三項標準、語氣強度），指出主題截短與漏字，修正後再對照判定一致。同一模型，非獨立審閱。",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-PD",
+      "T-TEA"
+    ],
+    "ai_lit_note": "啟動教師人工智能素養全覆蓋培訓並以教學實際改善檢驗培訓成效，對應 T-PD「評估教師AI素養以規劃專業增能」與 T-TEA「整合AI與教學法」",
+    "audience": "k12",
+    "decision": "publish",
+    "summary_evidence_spans": [
+      "10月10日，人工智能赋能教师发展现场会在京举行，主题为“争做数智时代好老师、服务基础教育高质量发展”。",
+      "各级教育部门和学校要开展好人工智能全覆盖培训，用好国家智慧教育平台，始终坚持智能向善，抓实全覆盖培训，把“教师是否解决实际问题、课堂是否发生积极变化、学生是否获得更有针对性学习支持”作为检验培训成效的核心标准",
+      "会上升级上线国家智慧教育平台教师发展中心，启动教师人工智能素养全覆盖培训。"
+    ],
+    "attributed_summary": "10 月 10 日於北京舉行人工智能賦能教師發展現場會，主題為「爭做數智時代好老師、服務基礎教育高質量發展」；會上升級上線國家智慧教育平台教師發展中心，啟動教師人工智能素養全覆蓋培訓，並要求各級教育部門和學校以教師是否解決實際問題、課堂是否發生積極變化、學生是否獲得更有針對性的學習支持，作為檢驗培訓成效的核心標準。"
+  }
+]
