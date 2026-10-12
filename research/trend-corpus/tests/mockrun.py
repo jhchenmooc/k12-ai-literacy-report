@@ -12,6 +12,7 @@ spec.json:
   meta_add     integer added to meta.count (simulate truncated results)
   calls        {"<n>": action} for the n-th urlopen call (1-based, retries count)
   fail_from    action applied to every call from this number on: {"n": 3, "action": {...}}
+  default      response for filters other than doi:/openalex: (default: empty page, empty group_by)
   actions:     {"url_error": true} | {"http": 500} | {"body": "raw text"} | {"json": {...}}
 """
 import io, json, os, runpy, sys, time, urllib.error, urllib.parse, urllib.request
@@ -58,6 +59,8 @@ def serve(url):
     q = urllib.parse.parse_qs(urllib.parse.urlsplit(url).query)
     kind, _, vals = q["filter"][0].partition(":")
     want = vals.split("|")
+    if kind not in ("doi", "openalex"):
+        return SPEC.get("default", {"meta": {"count": 0, "next_cursor": None}, "results": [], "group_by": []})
     if kind == "doi":
         want = {ndoi(v) for v in want}
         hits = [w for w in SPEC.get("works", []) if ndoi(w.get("doi")) in want]
