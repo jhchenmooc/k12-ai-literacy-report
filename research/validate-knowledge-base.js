@@ -78,6 +78,10 @@ function validate(records,relations,runs,candidates){
   if(x.predicate==="published_in")check(x.object_namespace==="source"&&/^[JC]/.test(x.object_id),"invalid venue relation: "+x.relation_id);
   if(x.predicate==="issued_by")check(x.object_namespace==="source"&&x.object_id.startsWith("O-"),"invalid issuing agency: "+x.relation_id);
  }
+ /* schema.md「主題與研究方法」: has_method is at most one per record (same or different method values). */
+ const methodsBySubject=new Map();
+ for(const x of relations)if(x.predicate==="has_method"){if(!methodsBySubject.has(x.subject_id))methodsBySubject.set(x.subject_id,[]);methodsBySubject.get(x.subject_id).push(x.relation_id)}
+ for(const [subject,rids] of methodsBySubject)check(rids.length<=1,"more than one has_method for "+subject+": "+rids.join(", "));
  const runIds=new Set();
  for(const x of runs){
   check(!!x.run_id&&!runIds.has(x.run_id),"duplicate/missing run ID");runIds.add(x.run_id);
