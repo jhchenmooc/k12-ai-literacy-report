@@ -4,7 +4,7 @@
 const fs=require("node:fs"),path=require("node:path");
 const LEGACY=new Set(["weekly/2026-09-29_10-08/index.html","monthly/2026-09/index.html"]);
 const STATIC_HTML=new Set(["index.html","daily/index.html","weekly/index.html","monthly/index.html","about/index.html","archive/index.html","archive/policy/index.html","archive/journals/index.html","archive/conferences/index.html","archive/research/index.html","feedback/index.html","feedback/no-login/index.html","feedback/privacy/index.html","design-system/index.html"]);
-const RESOURCES=new Set([".nojekyll","assets/site.css","assets/design-system.css","assets/favicon.svg","feedback/no-login-config.js","publication/issues.json"]);
+const RESOURCES=new Set([".nojekyll","assets/site.css","assets/design-system.css","assets/favicon.svg","assets/archive-filter.js","feedback/no-login-config.js","publication/issues.json"]);
 const PUBLIC_DIRS=["daily","weekly","monthly","about","archive","feedback","design-system","assets"];
 function safeFile(root,rel){
  const base=path.resolve(root),full=path.resolve(base,rel);

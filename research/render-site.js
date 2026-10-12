@@ -11,7 +11,7 @@ const LEGACY_MONTHLY=[{path:"monthly/2026-09/",title:"2026 年 9 月月報",note
 const POLICY_TYPES={framework:"框架",official_guidance:"官方指引",government_announcement:"政府公告",policy_review:"政策檢討",binding_policy:"正式政策",draft:"草案",consultation:"意見徵詢"};
 const RESEARCH_TYPES={journal_article:"期刊論文",conference_paper:"會議論文",book_chapter:"專書章節",preprint:"預印本"};
 const INTERNATIONAL={"O-UNESCO":"UNESCO","O-OECD":"OECD","O-EU-EC":"歐盟執委會","O-EU-COUNCIL":"歐盟理事會","O-COE":"歐洲理事會","O-UNICEF":"UNICEF"};
-const COUNTRY={AU:"澳洲",JP:"日本",KR:"韓國","GB-ENG":"英格蘭",GB:"英國",US:"美國",SG:"新加坡",CN:"中國",HK:"香港",TW:"臺灣",CA:"加拿大",NZ:"紐西蘭",DE:"德國",FR:"法國",FI:"芬蘭",EE:"愛沙尼亞",IN:"印度",AE:"阿聯",MX:"墨西哥",BR:"巴西",CH:"瑞士",CO:"哥倫比亞",CZ:"捷克",EG:"埃及",ET:"衣索比亞","GB-SCT":"蘇格蘭",GH:"迦納",GR:"希臘",ID:"印尼",IT:"義大利",MA:"摩洛哥",NG:"奈及利亞",NO:"挪威",PH:"菲律賓",QA:"卡達",SE:"瑞典",SK:"斯洛伐克",TH:"泰國",TR:"土耳其",VN:"越南",ZA:"南非"};
+const COUNTRY={AU:"澳洲",SA:"沙烏地阿拉伯",JP:"日本",KR:"韓國","GB-ENG":"英格蘭",GB:"英國",US:"美國",SG:"新加坡",CN:"中國",HK:"香港",TW:"臺灣",CA:"加拿大",NZ:"紐西蘭",DE:"德國",FR:"法國",FI:"芬蘭",EE:"愛沙尼亞",IN:"印度",AE:"阿聯",MX:"墨西哥",BR:"巴西",CH:"瑞士",CO:"哥倫比亞",CZ:"捷克",EG:"埃及",ET:"衣索比亞","GB-SCT":"蘇格蘭",GH:"迦納",GR:"希臘",ID:"印尼",IT:"義大利",MA:"摩洛哥",NG:"奈及利亞",NO:"挪威",PH:"菲律賓",QA:"卡達",SE:"瑞典",SK:"斯洛伐克",TH:"泰國",TR:"土耳其",VN:"越南",ZA:"南非"};
 const ORG_COUNTRY={"O-AU-EDU":"AU","O-JP-MEXT":"JP","O-KR-MOE":"KR","O-UK-DFE":"GB-ENG","O-US-ED":"US","O-SG-MOE":"SG","O-CN-MOE":"CN","O-HK-EDB":"HK","O-TW-MOE":"TW","O-NZ-MOE":"NZ"};
 /* Stage and role tags shown under research titles; "#" text so readers can find them with the browser's own search. Order: role, then school stage. */
 const POPULATION_TAGS=[["ROLE_STUDENT","學生"],["ROLE_INSERVICE_TEACHER","在職教師"],["TEACHER_ED","職前師培"],["ROLE_OTHER_STAKEHOLDER","家長行政"],["STAGE_PRESCHOOL","幼兒"],["STAGE_PRIMARY","國小"],["STAGE_LOWER_SECONDARY","國中"],["STAGE_UPPER_SECONDARY","高中職"],["STAGE_SECONDARY","中學未分"],["STAGE_K12_MULTI","K12跨學段"],["STAGE_K12_GENERAL","K12未細分"],["REVIEW_INCLUDES_K12","含K12回顧"]];
@@ -28,19 +28,22 @@ const INDEX_FIRST_YEAR=2023;
 /* Cache-busting query from the stylesheet content, so readers do not keep an outdated layout after an update. */
 const CSS_VERSION=crypto.createHash("sha256").update(fs.readFileSync(path.join(__dirname,"..","assets","site.css"))).digest("hex").slice(0,10);
 const cssHref=p=>p+"assets/site.css?v="+CSS_VERSION;
+/* The tag filter is the only script on the site: an external file on the journal and conference lists (manager 2026-10-12). */
+const FILTER_VERSION=crypto.createHash("sha256").update(fs.readFileSync(path.join(__dirname,"..","assets","archive-filter.js"))).digest("hex").slice(0,10);
+const filterScript=p=>'<script src="'+p+"assets/archive-filter.js?v="+FILTER_VERSION+'" defer></script>';
 
 const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
 const up=depth=>depth?"../".repeat(depth):"./";
 // Stable UTF-16 lexical order: independent of OS locale and ICU version.
 const compareText=(a,b)=>a<b?-1:a>b?1:0;
 
-function shell({depth,current,title,description,head,main}){
+function shell({depth,current,title,description,head,main,script}){
  const p=up(depth);
  const nav=[["daily/","每日短訊","daily"],["weekly/","週報","weekly"],["monthly/","月報","monthly"],["archive/","歷年資料庫","archive"],["about/","查核方法","about"]];
  const links=nav.map(([href,label,key])=>'<a href="'+p+href+'"'+(current===key?' aria-current="page"':"")+">"+label+"</a>").join("");
  return '<!doctype html>\n<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'+
   '<meta name="description" content="'+esc(description)+'"><title>'+esc(title)+"｜K-12 AI 素養國際動態</title>"+
-  '<link rel="stylesheet" href="'+p+'assets/design-system.css"><link rel="stylesheet" href="'+cssHref(p)+'"><link rel="icon" href="'+p+'assets/favicon.svg" type="image/svg+xml"></head>\n<body>'+
+  '<link rel="stylesheet" href="'+p+'assets/design-system.css"><link rel="stylesheet" href="'+cssHref(p)+'"><link rel="icon" href="'+p+'assets/favicon.svg" type="image/svg+xml">'+(script?filterScript(p):"")+'</head>\n<body>'+
   '<a class="skip" href="#content">跳至主要內容</a>'+
   '<header class="site-header"><nav class="site-nav" aria-label="主要導覽"><a class="brand" href="'+p+'">K-12 AI 素養國際動態</a>'+links+
   '<a class="nav-feedback" href="'+p+'feedback/">讀者勘誤</a></nav></header>\n'+
@@ -227,15 +230,15 @@ function quickIndex(groups,label){
  const head='<tr><th scope="col" class="name">'+label+'</th><th scope="col">合計</th>'+years.map(y=>'<th scope="col">'+esc(y)+"</th>").join("")+"</tr>";
  const body=groups.map(g=>{
   const by=new Map();for(const r of g.rows)by.set(r.year,(by.get(r.year)||0)+1);
-  return '<tr><th scope="row" class="name"><a href="#'+groupId(g)+'" title="'+esc(g.name)+'">'+indexName(g.name)+"</a></th><td>"+g.rows.length+"</td>"+years.map(y=>by.has(y)?'<td><a href="#'+yearId(g,y)+'" aria-label="'+esc(g.name)+" "+esc(y)+" 年 "+by.get(y)+' 筆">'+by.get(y)+"</a></td>":'<td class="none">—</td>').join("")+"</tr>";
+  return '<tr data-g="'+groupId(g)+'"><th scope="row" class="name"><a href="#'+groupId(g)+'" title="'+esc(g.name)+'">'+indexName(g.name)+'</a></th><td class="total" data-n="'+g.rows.length+'">'+g.rows.length+"</td>"+years.map(y=>by.has(y)?'<td data-y="'+esc(y)+'"><a href="#'+yearId(g,y)+'" data-n="'+by.get(y)+'" data-label="'+esc(g.name)+" "+esc(y)+' 年 " aria-label="'+esc(g.name)+" "+esc(y)+" 年 "+by.get(y)+' 筆">'+by.get(y)+"</a></td>":'<td class="none">—</td>').join("")+"</tr>";
  }).join("");
  return '<section class="quick-index" id="index" aria-labelledby="index-h"><h2 id="index-h">快速索引</h2><p class="sub">點名稱跳到該組；點數字直接跳到該年份的第一筆。</p><div class="table-wrap"><table class="index-table"><thead>'+head+"</thead><tbody>"+body+"</tbody></table></div></section>";
 }
 function groupTable(g){
  const seen=new Set();
- return '<section class="group" id="'+groupId(g)+'"><div class="group-head"><h2>'+esc(g.name)+'</h2><a class="to-index" href="#index">回到索引 ↑</a></div>'+(g.sub?'<p class="sub">'+esc(g.sub)+"・"+g.rows.length+" 筆</p>":'<p class="sub">'+g.rows.length+" 筆</p>")+
+ return '<section class="group" id="'+groupId(g)+'"><div class="group-head"><h2>'+esc(g.name)+'</h2><a class="to-index" href="#index">回到索引 ↑</a></div>'+(g.sub?'<p class="sub">'+esc(g.sub)+"・"+g.rows.length+' 筆<span class="shown"></span></p>':'<p class="sub">'+g.rows.length+' 筆<span class="shown"></span></p>')+
   '<div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody>'+
-  g.rows.map(r=>{const first=!seen.has(r.year);seen.add(r.year);return "<tr"+(first?' id="'+yearId(g,r.year)+'"':"")+'><td class="year">'+esc(r.year)+'</td><td><a href="'+esc(r.url)+'">'+esc(r.title)+'</a><div class="type">'+esc(r.type)+(r.tags&&r.tags.length?'<span class="tags">'+r.tags.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</span>":"")+"</div>"+(r.tags2&&r.tags2.length?'<div class="tags2">'+r.tags2.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"")+(r.tags3&&r.tags3.length?'<div class="tags3">'+r.tags3.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"")+"</td><td>"+esc(r.date)+'</td><td><span class="badge '+r.status[0]+'">'+r.status[1]+"</span></td></tr>"}).join("")+
+  g.rows.map(r=>{const first=!seen.has(r.year);seen.add(r.year);return "<tr"+(first?' id="'+yearId(g,r.year)+'"':"")+' data-year="'+esc(r.year)+'" data-tags="'+esc(rowTags(r).join("|"))+'"><td class="year">'+esc(r.year)+'</td><td><a href="'+esc(r.url)+'">'+esc(r.title)+'</a><div class="type">'+esc(r.type)+(r.tags&&r.tags.length?'<span class="tags">'+r.tags.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</span>":"")+"</div>"+(r.tags2&&r.tags2.length?'<div class="tags2">'+r.tags2.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"")+(r.tags3&&r.tags3.length?'<div class="tags3">'+r.tags3.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"")+"</td><td>"+esc(r.date)+'</td><td><span class="badge '+r.status[0]+'">'+r.status[1]+"</span></td></tr>"}).join("")+
   "</tbody></table></div></section>";
 }
 const LISTS={
@@ -248,7 +251,7 @@ function archiveTabs(active){
 const ARCHIVE_LEAD='<p class="lead">這是可追溯的<strong>書目索引</strong>，不是政策效力或研究結論的認證。每筆標示核對程度；首發日未核實時，以卷期年歸類並註明。週報審查中、尚未核對原頁的候選不列入。</p><p class="lead-note">「僅發現・未核」不代表書目有誤：Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，彼此一致也不升為「書目已核」；本刊不批次核對，只有論文或文件被週報、月報引用時，才逐篇讀出版者或官方原頁，並另做出版查核。</p><p class="lead-note"><strong>篇數與標記不是趨勢統計</strong>：收錄範圍隨監測來源與回推批次而變，不能用來判斷研究增減。研究趨勢以本刊年度論文趨勢報告為準（尚在人工驗證，完成前不對外引用）。</p>';
 const SOURCE_NOTE='<div class="info"><p>資料來源：本刊知識庫（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/tree/main/research/knowledge-base">GitHub 公開</a>）。清單由程式自知識庫產生；發現錯誤請透過<a href="../../feedback/">讀者勘誤</a>回報。</p></div>';
 /* Reader guide for the three tag lines: one row per line, colour-matched to the tags; caveats folded into a <details>. */
-const TAG_NOTE='<div class="info tag-guide"><p class="tg-lead"><strong>題名下的「#」標記</strong>由 AI 依題名與摘要判讀，<strong>未經人工逐筆核對</strong>；判不出來的不標。可用瀏覽器頁內搜尋（Ctrl＋F，Mac 用 ⌘＋F）輸入例如「#國中」逐筆查找。</p>'+
+const TAG_NOTE='<div class="info tag-guide"><p class="tg-lead"><strong>題名下的「#」標記</strong>由 AI 依題名與摘要判讀，<strong>未經人工逐筆核對</strong>；判不出來的不標。可用下方「依標記篩選」勾選任意組合，或用瀏覽器頁內搜尋（Ctrl＋F，Mac 用 ⌘＋F）輸入例如「#國中」逐筆查找。</p>'+
  '<dl class="tg-rows">'+
  '<div class="tg-row tg1"><dt>第一行｜學段與身分</dt><dd><span>身分：<span class="t">#學生</span>　<span class="t">#在職教師</span>　<span class="t">#職前師培</span>　<span class="t">#家長行政</span></span><span>學段：<span class="t">#幼兒</span>　<span class="t">#國小</span>　<span class="t">#國中</span>　<span class="t">#高中職</span>　<span class="t">#中學未分</span>　<span class="t">#K12跨學段</span>　<span class="t">#K12未細分</span></span><span>回顧：<span class="t">#含K12回顧</span>（所回顧的研究有一部分屬中小學，但不是主要對象）</span></dd></div>'+
  '<div class="tg-row tg2"><dt>第二行｜主題、方法、國別</dt><dd><span>主題：<span class="t">#生成式AI</span>　<span class="t">#AI素養課程</span>　<span class="t">#評量與量表</span>　<span class="t">#教師專業發展</span>　<span class="t">#倫理與安全</span>　<span class="t">#教學介入</span>　<span class="t">#運算思維與程式</span>　<span class="t">#語言學習</span>　<span class="t">#STEM</span>　<span class="t">#特教與公平</span>　<span class="t">#政策與治理</span></span><span>方法：<span class="t">#文獻回顧</span>　<span class="t">#實驗或準實驗</span>　<span class="t">#混合方法</span>　<span class="t">#設計本位</span>　<span class="t">#質性個案</span>　<span class="t">#問卷量表</span></span><span>國別：例如 <span class="t">#美國</span>　<span class="t">#香港</span></span></dd></div>'+
@@ -260,11 +263,29 @@ const TAG_NOTE='<div class="info tag-guide"><p class="tg-lead"><strong>題名下
  '<li>框架面向是本刊依共用準則，把國際論文對照臺灣框架的判讀，<strong>不代表論文作者採用此框架</strong>；各輪判讀不一致者不標。</li>'+
  '<li>本刊年度趨勢分析另有操作細則，結果可能不同。</li>'+
  '<li><span class="t">#高引用</span>：OpenAlex 被引次數（2026-10-11 查詢）在同一年回推入庫的趨勢論文中排前 10%；只在同年內比較，不同年份的門檻不同，也不代表研究品質。</li></ul></details></div>';
+/* Tag filter panel: hidden until assets/archive-filter.js runs, so pages without scripts look as before.
+   Groups follow the three tag lines; only tags present on the page are offered, with their counts on this page. */
+const rowTags=r=>[...(r.tags||[]),...(r.tags2||[]),...(r.tags3||[])];
+function filterPanel(groups){
+ const rows=groups.flatMap(g=>g.rows),n=new Map();
+ for(const r of rows)for(const t of new Set(rowTags(r)))n.set(t,(n.get(t)||0)+1);
+ const names=list=>list.map(([,t])=>t);
+ const fixed=new Set([...names(POPULATION_TAGS),...names(TOPIC_TAGS),...names(METHOD_TAGS),...names(AILIT_TAGS),"高引用"]);
+ const countries=[...n.keys()].filter(t=>!fixed.has(t)).sort((a,b)=>n.get(b)-n.get(a)||compareText(a,b));
+ const sets=[["role","身分",names(POPULATION_TAGS.filter(([k])=>k.startsWith("ROLE_")||k==="TEACHER_ED"))],["stage","學段與回顧",names(POPULATION_TAGS.filter(([k])=>k.startsWith("STAGE_")||k==="REVIEW_INCLUDES_K12"))],
+  ["topic","主題",names(TOPIC_TAGS)],["method","方法",names(METHOD_TAGS)],["class","AI 素養範圍",names(AILIT_TAGS.filter(([k])=>k.startsWith("AILIT_")))],["dim","框架面向",names(AILIT_TAGS.filter(([k])=>!k.startsWith("AILIT_")))],["cite","引用",["高引用"]],["country","國別",countries]];
+ const box=(g,t)=>'<label><input type="checkbox" data-group="'+g+'" data-tag="'+esc(t)+'"> #'+esc(t)+' <span class="n">'+n.get(t)+"</span></label>";
+ const fields=sets.map(([g,label,tags])=>{const have=tags.filter(t=>n.has(t));return have.length?'<fieldset class="tf-group"><legend>'+label+"</legend>"+have.map(t=>box(g,t)).join("")+"</fieldset>":""}).join("");
+ return '<section class="tag-filter" id="tag-filter" aria-labelledby="tf-h" hidden><h2 id="tf-h">依標記篩選</h2>'+
+  '<p class="sub">同一組勾多個時，符合任一個即顯示；不同組之間須同時符合。例如勾「#AI工具應用」與「#教師AI賦能教學」，即為教師以 AI 工具教學的研究。數字是本頁有該標記的筆數。篩選結果會寫進網址，可複製分享。</p>'+
+  '<details class="tf-fields" open><summary>選擇標記<span class="tf-count"></span></summary>'+fields+'</details><div class="tf-bar"><label><input type="checkbox" id="tf-all"> 所勾標記全部都要符合</label><button type="button" id="tf-clear">清除篩選</button></div>'+
+  '<p class="tf-status" id="tf-status" role="status"></p><p class="sub">標記由 AI 依題名與摘要判讀，未經人工逐筆核對；篩出的筆數只供查找，不能當研究趨勢的統計。</p></section>';
+}
 function renderArchiveList(kind,groups){
  const L=LISTS[kind],n=groups.reduce((s,g)=>s+g.rows.length,0);
  const head='<div class="kicker">歷年資料庫</div><h1>'+L.title+"</h1>"+ARCHIVE_LEAD+LEGEND+archiveTabs(kind);
- const main='<p class="sub">共 '+n+" 筆、"+groups.length+" 組，"+L.note+"，組內依年份由新到舊。</p>"+(kind==="policy"?"":TAG_NOTE)+(groups.length?quickIndex(groups,L.group)+groups.map(groupTable).join(""):'<p class="empty">尚無紀錄。</p>')+SOURCE_NOTE;
- return shell({depth:2,current:"archive",title:L.short,description:"K-12 AI 素養歷年資料庫："+L.desc,head,main});
+ const main='<p class="sub">共 '+n+" 筆、"+groups.length+" 組，"+L.note+"，組內依年份由新到舊。</p>"+(kind==="policy"?"":TAG_NOTE+filterPanel(groups))+(groups.length?quickIndex(groups,L.group)+groups.map(groupTable).join(""):'<p class="empty">尚無紀錄。</p>')+SOURCE_NOTE;
+ return shell({depth:2,current:"archive",title:L.short,description:"K-12 AI 素養歷年資料庫："+L.desc,head,main,script:kind!=="policy"});
 }
 /* The former combined research list now points to the two split pages so old links keep working. */
 function renderResearchMoved(data){
