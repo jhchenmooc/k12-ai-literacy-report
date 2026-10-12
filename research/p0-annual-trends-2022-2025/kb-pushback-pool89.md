@@ -31,20 +31,20 @@
 | 分類 | 筆數 | 處理 |
 |---|---:|---|
 | 以中小學為主（含 3 筆幼兒教育回顧；學前在本專案屬中小學範圍） | 43 | 維持既有標記，不加 |
-| 含中小學但非主要，且與既有學段標記矛盾 | 2 | **不改、不加，交管理者裁定**（見下） |
+| 含中小學但非主要，且與既有學段標記矛盾 | 2 | 不改、不加；管理者 2026-10-12 裁定維持現狀（見下） |
 | 不含中小學（以職前師資生或師資培育者為主） | 2 | 不加；既有 `TEACHER_ED` 相符 |
 | 判不出 | 5 | 不加 |
 
 **結果：本次沒有既有紀錄加上 `REVIEW_INCLUDES_K12`。**
 
-### 交管理者裁定的 2 筆
+### 矛盾的 2 筆（管理者 2026-10-12 裁定：維持現狀）
 
 | 紀錄 | 題名 | 判讀 | 既有標記 |
 |---|---|---|---|
 | KB-2025-0010 | The AI3 Model: Future Directions for Artificial Intelligence, Assessment Innovation, and Academic Integrity | 依摘要，跨國研究綜整涵蓋中小學與高教，未說各自比例，對象寫成一般教育者與決策者 | 現有 `STAGE_K12_GENERAL`、`ROLE_INSERVICE_TEACHER` |
 | KB-2025-0210 | Toward a Coherent AI Literacy Pathway in Technology Education: Bibliometric Synthesis and Cross-Sectional Assessment | 文獻計量部分未限學段；另做的橫斷調查中，高職／中學技術科學生與職前教師約各半，方法不純屬回顧 | 現有 `STAGE_UPPER_SECONDARY`、`ROLE_STUDENT` |
 
-可選處理：(a) 維持現狀；(b) 刪除既有學段與身分標記、改加 `REVIEW_INCLUDES_K12`；(c) 保留既有標記並另加 `REVIEW_INCLUDES_K12`。KB-2025-0210 另可考慮把方法改為混合方法。
+曾列的處理選項：(a) 維持現狀；(b) 刪除既有學段與身分標記、改加 `REVIEW_INCLUDES_K12`；(c) 保留既有標記並另加 `REVIEW_INCLUDES_K12`。**管理者 2026-10-12 選 (a)**：兩筆的既有標記不變，也不加新標記。
 
 ### 判不出的 5 筆
 
