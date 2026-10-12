@@ -25,9 +25,11 @@
 | KB-2022-0005 — [Coding with Purpose: Learning AI in Rural California](https://doi.org/10.1145/3513137) | journal_article | 2022-09-26 | discovered_unverified |
 | KB-2022-0008 — [The Effects on Secondary School Students of Applying Experiential Learning to the Conversational AI Learning Curriculum](https://doi.org/10.19173/irrodl.v22i4.5474) | journal_article | 2022-02-01 | discovered_unverified |
 | KB-2022-0013 — [Learning design to support student-AI collaboration: perspectives of leading teachers for AI in education](https://doi.org/10.1007/s10639-021-10831-6) | journal_article | 2022-01-28 | discovered_unverified |
+| KB-2022-0014 — [In the Black Mirror: Youth Investigations into Artificial Intelligence](https://doi.org/10.1145/3484495) | journal_article | 2022-10-29 | discovered_unverified |
 | KB-2022-0017 — [Teachers' trust in AI ‐powered educational technology and a professional development program to improve it](https://doi.org/10.1111/bjet.13232) | journal_article | 2022-05-09 | discovered_unverified |
 | KB-2022-0018 — [Learn to Machine Learn via Games in the Classroom](https://doi.org/10.3389/feduc.2022.913530) | journal_article | 2022-06-17 | discovered_unverified |
 | KB-2022-0019 — [How Might We Raise Interest in Robotics, Coding, Artificial Intelligence, STEAM and Sustainable Development in University and On-the-Job Teacher Training?](https://doi.org/10.3389/feduc.2022.872637) | journal_article | 2022-06-21 | discovered_unverified |
+| KB-2022-0020 — [Secondary school students’ intentions to learn AI: testing moderation effects of readiness, social good and optimism](https://doi.org/10.1007/s11423-022-10111-1) | journal_article | 2022-07-01 | discovered_unverified |
 | KB-2022-0021 — [An empirical analysis of high school students' practices of modelling with unstructured data](https://doi.org/10.1111/bjet.13253) | journal_article | 2022-07-01 | discovered_unverified |
 | KB-2022-0022 — [Designing a novel teaching platform for AI : A case study in a Thai school context](https://doi.org/10.1111/jcal.12706) | journal_article | 2022-07-05 | discovered_unverified |
 | KB-2022-0024 — [A phenomenographic approach on teacher conceptions of teaching Artificial Intelligence (AI) in K-12 schools](https://doi.org/10.1007/s10639-022-11161-x) | journal_article | 2022-07-16 | discovered_unverified |
@@ -66,10 +68,8 @@
 | KB-2022-0010 — [A meta-review of literature on educational approaches for teaching AI at the K-12 levels in the Asia-Pacific region](https://doi.org/10.1016/j.caeai.2022.100065) | journal_article | 未知 | discovered_unverified |
 | KB-2022-0011 — [Investigating learners’ competencies for artificial intelligence education in an African K-12 setting](https://doi.org/10.1016/j.caeo.2022.100083) | journal_article | 未知 | discovered_unverified |
 | KB-2022-0012 — [Artificial Intelligence education for young children: Why, what, and how in curriculum design and implementation](https://doi.org/10.1016/j.caeai.2022.100061) | journal_article | 未知 | discovered_unverified |
-| KB-2022-0014 — [In the Black Mirror: Youth Investigations into Artificial Intelligence](https://doi.org/10.1145/3484495) | journal_article | 未知 | discovered_unverified |
 | KB-2022-0015 — [Artificial Intelligence (AI) in early childhood education: Curriculum design and future directions](https://doi.org/10.1016/j.caeai.2022.100072) | journal_article | 未知 | discovered_unverified |
 | KB-2022-0016 — [Integrating Ethics and Career Futures with Technical Learning to Promote AI Literacy for Middle School Students: An Exploratory Study](https://doi.org/10.1007/s40593-022-00293-3) | journal_article | 未知 | discovered_unverified |
-| KB-2022-0020 — [Secondary school students’ intentions to learn AI: testing moderation effects of readiness, social good and optimism](https://doi.org/10.1007/s11423-022-10111-1) | journal_article | 未知 | discovered_unverified |
 | KB-2022-0023 — [A self-determination theory (SDT) design approach for inclusive and diverse artificial intelligence (AI) education](https://doi.org/10.1016/j.compedu.2022.104582) | journal_article | 未知 | discovered_unverified |
 | KB-2022-0026 — [AI + Ethics Curricula for Middle School Youth: Lessons Learned from Three Project-Based Curricula](https://doi.org/10.1007/s40593-022-00298-y) | journal_article | 未知 | discovered_unverified |
 | KB-2022-0028 — [Towards Intelligent-TPACK: An empirical study on teachers’ professional knowledge to ethically integrate artificial intelligence (AI)-based tools into education](https://doi.org/10.1016/j.chb.2022.107468) | journal_article | 未知 | discovered_unverified |
@@ -106,7 +106,9 @@
 | KB-2023-0014 — [Teaching Machine Learning in K–12 Using Robotics](https://doi.org/10.3390/educsci13010067) | journal_article | 2023-01-10 | discovered_unverified |
 | KB-2023-0016 — [Exploring middle school students’ common naive conceptions of Artificial Intelligence concepts, and the evolution of these ideas](https://doi.org/10.1007/s10639-023-11600-3) | journal_article | 2023-01-18 | discovered_unverified |
 | KB-2023-0018 — [The mediating effects of needs satisfaction on the relationships between prior knowledge and self‐regulated learning through artificial intelligence chatbot](https://doi.org/10.1111/bjet.13305) | journal_article | 2023-02 | discovered_unverified |
+| KB-2023-0019 — [Youth as pattern makers for racial justice: How speculative design pedagogy in science can promote restorative futures through radical care practices](https://doi.org/10.1080/10508406.2022.2154158) | journal_article | 2023-01-30 | discovered_unverified |
 | KB-2023-0020 — [Learning machine learning with young children: exploring informal settings in an African context](https://doi.org/10.1080/08993408.2023.2175559) | journal_article | 2023-02-07 | discovered_unverified |
+| KB-2023-0021 — [Robobo SmartCity: An Autonomous Driving Model for Computational Intelligence Learning Through Educational Robotics](https://doi.org/10.1109/tlt.2023.3244604) | journal_article | 2023-02-13 | discovered_unverified |
 | KB-2023-0022 — [High school students’ data modeling practices and processes: from modeling unstructured data to evaluating automated decisions](https://doi.org/10.1080/17439884.2023.2189735) | journal_article | 2023-03-13 | discovered_unverified |
 | KB-2023-0023 — [Do we still need teachers? Navigating the paradigm shift of the teacher's role in the AI era](https://doi.org/10.3389/feduc.2023.1161777) | journal_article | 2023-03-31 | discovered_unverified |
 | KB-2023-0026 — [AI literacy in K-12: a systematic literature review](https://doi.org/10.1186/s40594-023-00418-7) | journal_article | 2023-04-19 | discovered_unverified |
@@ -135,6 +137,7 @@
 | KB-2023-0060 — [Mathematics intelligent tutoring system for learning multiplication and division of fractions based on diagnostic teaching](https://doi.org/10.1007/s10639-022-11553-z) | journal_article | 2023-01-10 | discovered_unverified |
 | KB-2023-0062 — [Teacher support and student motivation to learn with Artificial Intelligence (AI) based chatbot](https://doi.org/10.1080/10494820.2023.2172044) | journal_article | 2023-02-06 | discovered_unverified |
 | KB-2023-0063 — [An integrated model for predicting pupils’ acceptance of artificially intelligent robots as teachers](https://doi.org/10.1007/s10639-023-11601-2) | journal_article | 2023-02-22 | discovered_unverified |
+| KB-2023-0064 — [Designing Hybrid Human–AI Orchestration Tools for Individual and Collaborative Activities: A Technology Probe Study](https://doi.org/10.1109/tlt.2023.3248155) | journal_article | 2023-02-23 | discovered_unverified |
 | KB-2023-0065 — [The effects of pre-service early childhood teachers’ digital literacy and self-efficacy on their perception of AI education for young children](https://doi.org/10.1007/s10639-023-11724-6) | journal_article | 2023-03-22 | discovered_unverified |
 | KB-2023-0066 — [Using video-elicitation focus group interviews to explore pre-service science teachers’ views and reasoning on artificial intelligence](https://doi.org/10.1080/09500693.2023.2200887) | journal_article | 2023-04-25 | discovered_unverified |
 | KB-2023-0068 — [Influence of online STEAM hands-on learning on AI learning, creativity, and creative emotions](https://doi.org/10.1080/10494820.2023.2205898) | journal_article | 2023-05-02 | discovered_unverified |
@@ -163,8 +166,6 @@
 |---|---|---|---|
 | KB-2023-0015 — [Artificial Intelligence (AI) Literacy in Early Childhood Education: The Challenges and Opportunities](https://doi.org/10.1016/j.caeai.2023.100124) | journal_article | 未知 | discovered_unverified |
 | KB-2023-0017 — [Machine Learning for All!—Introducing Machine Learning in Middle and High School](https://doi.org/10.1007/s40593-022-00325-y) | journal_article | 未知 | discovered_unverified |
-| KB-2023-0019 — [Youth as pattern makers for racial justice: How speculative design pedagogy in science can promote restorative futures through radical care practices](https://doi.org/10.1080/10508406.2022.2154158) | journal_article | 未知 | discovered_unverified |
-| KB-2023-0021 — [Robobo SmartCity: An Autonomous Driving Model for Computational Intelligence Learning Through Educational Robotics](https://doi.org/10.1109/tlt.2023.3244604) | journal_article | 未知 | discovered_unverified |
 | KB-2023-0024 — [Designing Game-Based Learning for High School Artificial Intelligence Education](https://doi.org/10.1007/s40593-022-00327-w) | journal_article | 未知 | discovered_unverified |
 | KB-2023-0025 — [Exploring the AI competencies of elementary school teachers in South Korea](https://doi.org/10.1016/j.caeai.2023.100137) | journal_article | 未知 | discovered_unverified |
 | KB-2023-0028 — [Technological support to foster students’ artificial intelligence ethics: An augmented reality-based contextualized dilemma discussion approach](https://doi.org/10.1016/j.compedu.2023.104813) | journal_article | 未知 | discovered_unverified |
@@ -179,7 +180,6 @@
 | KB-2023-0054 — [Integrating generative AI in knowledge building](https://doi.org/10.1016/j.caeai.2023.100184) | journal_article | 未知 | discovered_unverified |
 | KB-2023-0057 — [Finnish 5th and 6th graders’ misconceptions about artificial intelligence](https://doi.org/10.1016/j.ijcci.2023.100630) | journal_article | 未知 | discovered_unverified |
 | KB-2023-0061 — [Ethical principles for artificial intelligence in K-12 education](https://doi.org/10.1016/j.caeai.2023.100131) | journal_article | 未知 | discovered_unverified |
-| KB-2023-0064 — [Designing Hybrid Human–AI Orchestration Tools for Individual and Collaborative Activities: A Technology Probe Study](https://doi.org/10.1109/tlt.2023.3248155) | journal_article | 未知 | discovered_unverified |
 | KB-2023-0067 — [Decision-guided chatbots and cognitive styles in interdisciplinary learning](https://doi.org/10.1016/j.compedu.2023.104812) | journal_article | 未知 | discovered_unverified |
 | KB-2023-0070 — [A sequence of learning processes in an intelligent tutoring system from topic-related appraisals to learning gains](https://doi.org/10.1016/j.learninstruc.2023.101799) | journal_article | 未知 | discovered_unverified |
 | KB-2023-0073 — [GPT-3-Driven Pedagogical Agents to Train Children’s Curious Question-Asking Skills](https://doi.org/10.1007/s40593-023-00340-7) | journal_article | 未知 | discovered_unverified |
@@ -208,6 +208,7 @@
 | KB-2024-0023 — [Augmented teachers: K–12 teachers’ needs for artificial intelligence’s complementary role in personalized learning](https://doi.org/10.1080/15391523.2024.2330525) | journal_article | 2024-03-21 | discovered_unverified |
 | KB-2024-0027 — [Students’ attitudes towards an AI-based interview for university admissions: Scale development and intervention effects](https://doi.org/10.1007/s10639-024-12649-4) | journal_article | 2024-04-11 | discovered_unverified |
 | KB-2024-0028 — [The Impact of Teachable Machine on Middle School Teachers’ Perceptions of Science Lessons after Professional Development](https://doi.org/10.3390/educsci14040417) | journal_article | 2024-04-16 | discovered_unverified |
+| KB-2024-0029 — [A Human-Centered Learning and Teaching Framework Using Generative Artificial Intelligence for Self-Regulated Learning Development Through Domain Knowledge Learning in K–12 Settings](https://doi.org/10.1109/tlt.2024.3392830) | journal_article | 2024-04-23 | discovered_unverified |
 | KB-2024-0030 — [Developing and validating an AI-supported teaching applications’ self-efficacy scale](https://doi.org/10.58459/rptel.2024.19035) | journal_article | 2024-03-28 | discovered_unverified |
 | KB-2024-0031 — [Towards inclusivity in AI: A comparative study of cognitive engagement between marginalized female students and peers](https://doi.org/10.1111/bjet.13467) | journal_article | 2024-04-23 | discovered_unverified |
 | KB-2024-0032 — [Exploring the effects of AI literacy in teacher learning: an empirical study](https://doi.org/10.1057/s41599-024-03101-6) | journal_article | 2024-05-03 | discovered_unverified |
@@ -255,10 +256,12 @@
 | KB-2024-0099 — [Does scratch animation for sustainable development goals (SDGs) with AI-comics impact on student empathy, self-efficacy, scriptwriting, and animation skills?](https://doi.org/10.1007/s10639-024-12576-4) | journal_article | 2024-03-05 | discovered_unverified |
 | KB-2024-0100 — [Effectiveness of AI-assisted game-based learning on science learning outcomes, intrinsic motivation, cognitive load, and learning behavior](https://doi.org/10.1007/s10639-024-12553-x) | journal_article | 2024-03-12 | discovered_unverified |
 | KB-2024-0101 — [Empowering student self‐regulated learning and science education through ChatGPT : A pioneering pilot study](https://doi.org/10.1111/bjet.13454) | journal_article | 2024-03-22 | discovered_unverified |
+| KB-2024-0102 — [The Design of Guiding and Adaptive Prompts for Intelligent Tutoring Systems and Its Effect on Students’ Mathematics Learning](https://doi.org/10.1109/tlt.2024.3382000) | journal_article | 2024-03-27 | discovered_unverified |
 | KB-2024-0103 — [A classification tool to foster self-regulated learning with generative artificial intelligence by applying self-determination theory: a case of ChatGPT](https://doi.org/10.1007/s11423-024-10366-w) | journal_article | 2024-04-01 | discovered_unverified |
 | KB-2024-0107 — [Analysis of a chatbot as a dialogic reading facilitator: its influence on learning interest and learner interactions](https://doi.org/10.1007/s11423-024-10370-0) | journal_article | 2024-04-15 | discovered_unverified |
 | KB-2024-0109 — [Integration of artificial intelligence by the Central Board of Secondary Education in India: towards innovative teaching and learning practices](https://doi.org/10.1080/1475939x.2024.2337924) | journal_article | 2024-05 | discovered_unverified |
 | KB-2024-0110 — [A learning analytics‐based collaborative conversational agent to foster productive dialogue in inquiry learning](https://doi.org/10.1111/jcal.13007) | journal_article | 2024-05-12 | discovered_unverified |
+| KB-2024-0111 — [Using ChatGPT for Science Learning: A Study on Pre-service Teachers' Lesson Planning](https://doi.org/10.1109/tlt.2024.3401457) | journal_article | 2024-05-15 | discovered_unverified |
 | KB-2024-0113 — [The Promise of AI Object-Recognition in Learning Mathematics: An Explorative Study of 6-Year-Old Children’s Interactions with Cuisenaire Rods and the Blockplay.ai App](https://doi.org/10.3390/educsci14060591) | journal_article | 2024-05-30 | discovered_unverified |
 | KB-2024-0114 — [Applying the 6E learning by design model to support student teachers to integrate artificial intelligence applications in their classroom](https://doi.org/10.1007/s10639-024-12795-9) | journal_article | 2024-06-04 | discovered_unverified |
 | KB-2024-0115 — [Factors influencing students’ acceptance and use generative artificial intelligence in elementary education: an expansion of the UTAUT model](https://doi.org/10.1007/s10639-024-12835-4) | journal_article | 2024-06-13 | discovered_unverified |
@@ -321,7 +324,6 @@
 | KB-2024-0024 — [Enhancing teacher AI literacy and integration through different types of cases in teacher professional development](https://doi.org/10.1016/j.caeo.2024.100178) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0025 — [Advancing AI education: Assessing Kenyan in-service teachers' preparedness for integrating artificial intelligence in competence-based curriculum](https://doi.org/10.1016/j.chbr.2024.100412) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0026 — [Enhancing teachers’ self-efficacy beliefs in AI-based technology integration into English speaking teaching through a professional development program](https://doi.org/10.1016/j.tate.2024.104582) | journal_article | 未知 | discovered_unverified |
-| KB-2024-0029 — [A Human-Centered Learning and Teaching Framework Using Generative Artificial Intelligence for Self-Regulated Learning Development Through Domain Knowledge Learning in K–12 Settings](https://doi.org/10.1109/tlt.2024.3392830) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0034 — [Developing and Validating the Artificial Intelligence Literacy Concept Inventory: an Instrument to Assess Artificial Intelligence Literacy among Middle School Students](https://doi.org/10.1007/s40593-024-00398-x) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0035 — [Exploring Teachers’ Views and Confidence in the Integration of an Artificial Intelligence Curriculum into Their Classrooms: a Case Study of Curricular Co-Design Program](https://doi.org/10.1007/s40593-024-00404-2) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0041 — [AI literacy for ethical use of chatbot: Will students accept AI ethics?](https://doi.org/10.1016/j.caeai.2024.100251) | journal_article | 未知 | discovered_unverified |
@@ -347,12 +349,10 @@
 | KB-2024-0090 — [A systematic review of AI literacy conceptualization, constructs, and implementation and assessment efforts (2019–2023)](https://doi.org/10.1016/j.caeo.2024.100173) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0092 — [Investigating pre-service teachers’ artificial intelligence perception from the perspective of planned behavior theory](https://doi.org/10.1016/j.caeai.2024.100202) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0093 — [Performance increases in mathematics within an intelligent tutoring system during COVID-19 related school closures: a large-scale longitudinal evaluation](https://doi.org/10.1016/j.caeo.2024.100162) | journal_article | 未知 | discovered_unverified |
-| KB-2024-0102 — [The Design of Guiding and Adaptive Prompts for Intelligent Tutoring Systems and Its Effect on Students’ Mathematics Learning](https://doi.org/10.1109/tlt.2024.3382000) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0104 — [MathAIde: A Qualitative Study of Teachers’ Perceptions of an ITS Unplugged for Underserved Regions](https://doi.org/10.1007/s40593-024-00397-y) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0105 — [Examining artificial intelligence literacy among pre-service teachers for future classrooms](https://doi.org/10.1016/j.caeo.2024.100179) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0106 — [Immersive multi-modal pedagogical conversational artificial intelligence for early childhood education: An exploratory case study in the wild](https://doi.org/10.1016/j.caeai.2024.100220) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0108 — [Teachers’ motivation and engagement to harness generative AI for teaching and learning: The role of contextual, occupational, and background factors](https://doi.org/10.1016/j.caeai.2024.100224) | journal_article | 未知 | discovered_unverified |
-| KB-2024-0111 — [Using ChatGPT for Science Learning: A Study on Pre-service Teachers' Lesson Planning](https://doi.org/10.1109/tlt.2024.3401457) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0112 — [Do in-service teachers accept artificial intelligence-driven technology? The mediating role of school support and resources](https://doi.org/10.1016/j.caeo.2024.100191) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0116 — [Facilitating self-directed language learning in real-life scene description tasks with automated evaluation](https://doi.org/10.1016/j.compedu.2024.105106) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0122 — [Improving elementary EFL speaking skills with generative AI chatbots: Exploring individual and paired interactions](https://doi.org/10.1016/j.compedu.2024.105112) | journal_article | 未知 | discovered_unverified |
@@ -368,6 +368,29 @@
 | KB-2024-0162 — [Teachers’ generative AI self-efficacy, valuing, and integration at work: Examining job resources and demands](https://doi.org/10.1016/j.caeai.2024.100333) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0164 — [RICE AlgebraBot: Lessons learned from designing and developing responsible conversational AI using induction, concretization, and exemplification to support algebra learning](https://doi.org/10.1016/j.caeai.2024.100338) | journal_article | 未知 | discovered_unverified |
 | KB-2024-0165 — [Pre-service teachers preparedness for AI-integrated education: An investigation from perceptions, capabilities, and teachers’ identity changes](https://doi.org/10.1016/j.caeai.2024.100341) | journal_article | 未知 | discovered_unverified |
+
+## 2025｜event_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2025-0006 — [Toward Teacher-Centered AI Design: Exploring the Role of Pedagogical Values and Contextual Factors in K-12 Teachers' Perceptions of Responsible AI](https://repository.isls.org/handle/1/11843) | conference_paper | 未知 | bibliographic_checked |
+| KB-2025-0007 — [Utilizing LLMs to Support Teacher Understanding of AI Literacy](https://repository.isls.org/handle/1/11944) | conference_paper | 未知 | bibliographic_checked |
+| KB-2025-0009 — [From Teachers to Students: Evaluating Canvas City as a Path to AI Literacy](https://dl.acm.org/doi/10.1145/3724363.3729069) | conference_paper | 未知 | bibliographic_checked |
+| KB-2025-0040 — [Enhancing AI Literacy for Minority High School Students: Mixed Outcomes and Insights for Effective Teaching Strategies](https://doi.org/10.3102/2194735) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0041 — [High School Teachers’ Emergent AI Literacy Goals During Professional Learning About Lesson Co-Design (Poster 17)](https://doi.org/10.3102/2186733) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0042 — [Black Middle Schoolers’ AI Self-Efficacy and Outcome Expectations in a Summer Camp](https://doi.org/10.3102/2186946) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0086 — [Obstacles or Opportunities: Teachers' Concerns About Adopting Generative AI in Learning and Teaching](https://doi.org/10.1109/icalt64023.2025.00084) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0092 — [AI Integration in Vietnamese Primary Education: Educator Perspectives and Implementation Challenges](https://doi.org/10.1109/icalt64023.2025.00069) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0123 — [Robot or Not? Uncovering the In-Service Teachers' Needs for AI Literacy Integration in Underserved Schools](https://research.allacademic.com/meta/p2197285_index.html) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0124 — [State Artificial Intelligence Guidance for Students With Disabilities in K-12 Education (Poster 5)](https://research.allacademic.com/meta/p2193015_index.html) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0125 — [Evaluating Teacher Preparedness for AI in K-12 Classrooms (Poster 27)](https://research.allacademic.com/meta/p2183399_index.html) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0126 — [AI Literacy and Educational Leadership: K12 School Leaders’ Perceptions of AI Integration](https://research.allacademic.com/meta/p2184589_index.html) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0127 — [The Future of AI Education Depends on Student Voice](https://research.allacademic.com/meta/p2195238_index.html) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0128 — [Engaging High School Students in Robotics and Artificial Intelligence Through Robotics Engineering Design Challenges](https://research.allacademic.com/meta/p2190458_index.html) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0129 — [Conceptualizing Perspectives of AI Literacies in Teaching About AI: A Systematic Review Approach](https://research.allacademic.com/meta/p2186829_index.html) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0130 — [Development of an AI Literacy Assessment for Nontechnical Individuals: A Pre- and In-Service Teachers’ Case](https://research.allacademic.com/meta/p2190722_index.html) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0131 — [Proposal: Exploring the Current Situation and Influencing Factors of Teachers’ AI Literacy (Poster 18)](https://research.allacademic.com/meta/p2194056_index.html) | conference_paper | 未知 | discovered_unverified |
+| KB-2025-0132 — [Evolving Attitudes Toward the Use of Generative AI Among High School Students in an Inner-City School (Poster 12)](https://research.allacademic.com/meta/p2198280_index.html) | conference_paper | 未知 | discovered_unverified |
 
 ## 2025｜first_publication
 
@@ -446,6 +469,7 @@
 | KB-2025-0095 — [Effects of ChatGPT-Based Human–Computer Dialogic Interaction Programming Activities on Student Engagement](https://doi.org/10.1177/07356331251333874) | journal_article | 2025-04-14 | discovered_unverified |
 | KB-2025-0096 — [AI-Driven Virtual Teacher for Enhanced Educational Efficiency: Leveraging Large Pretrain Models for Autonomous Error Analysis and Correction](https://doi.org/10.1609/aaai.v39i28.35144) | conference_paper | 2025-04-11 | discovered_unverified |
 | KB-2025-0097 — [“Let’s Ask the Robot!”: Epistemic Stance Between Teacher Candidates Toward AI in Mathematics Lesson Planning](https://doi.org/10.1177/00224871251325079) | journal_article | 2025-03-29 | discovered_unverified |
+| KB-2025-0098 — [Navigating the Textual Maze: Enhancing Textual Analytical Skills Through an Innovative GAI Prompt Framework](https://doi.org/10.1109/tlt.2025.3539104) | journal_article | 2025-02-05 | discovered_unverified |
 | KB-2025-0099 — [Generative AI use in K-12 education: a systematic review](https://doi.org/10.3389/feduc.2025.1647573) | journal_article | 2025-09-23 | discovered_unverified |
 | KB-2025-0100 — [Examining the moderating role of generative AI in advancing teachers’ professional competencies through self-directed learning: evidence from Ghana](https://doi.org/10.1080/10494820.2025.2556811) | journal_article | 2025-09-12 | discovered_unverified |
 | KB-2025-0101 — [You're not alone while programming! Challenges faced by high school students, generative AI solutions and issues](https://doi.org/10.1080/10494820.2025.2608191) | journal_article | 2025-12-24 | discovered_unverified |
@@ -471,6 +495,7 @@
 | KB-2025-0133 — [Technologies for Children's AI Learning: Design Features and Future Opportunities](https://dl.acm.org/doi/10.1145/3706598.3713443) | conference_paper | 2025-04-25 | discovered_unverified |
 | KB-2025-0135 — [Guidance on the Use of Federal Grant Funds to Improve Education Outcomes Using Artificial Intelligence (AI)](https://www.ed.gov/media/document/opepd-ai-dear-colleague-letter-7222025-110427.pdf) | official_guidance | 2025-07-22 | discovered_unverified |
 | KB-2025-0137 — [A psychometric analysis of the artificial intelligence skills scale developed through chat gpt](https://doi.org/10.1007/s10639-024-13294-7) | journal_article | 2025-01-13 | discovered_unverified |
+| KB-2025-0138 — [Children's AI Design Platform for Making and Deploying ML-Driven Apps: Design, Testing, and Development](https://doi.org/10.1109/tlt.2025.3529994) | journal_article | 2025-01-15 | discovered_unverified |
 | KB-2025-0140 — [Students as AI literate designers: a pedagogical framework for learning and teaching AI literacy in elementary education](https://doi.org/10.1080/15391523.2025.2449942) | journal_article | 2025-01-21 | discovered_unverified |
 | KB-2025-0141 — [Teachers’ perceptions of artificial intelligence in Colombia: AI technological access, AI teacher professional development and AI ethical awareness](https://doi.org/10.1080/1475939x.2025.2451865) | journal_article | 2025-01-22 | discovered_unverified |
 | KB-2025-0144 — [A dual-pathway model of teacher-AI collaboration based on the job demands-resources theory](https://doi.org/10.1007/s10639-025-13421-y) | journal_article | 2025-02-06 | discovered_unverified |
@@ -500,6 +525,8 @@
 | KB-2025-0172 — [Assessing teachers’ readiness and perceived usefulness of AI in education: an Estonian perspective](https://doi.org/10.3389/feduc.2025.1622240) | journal_article | 2025-06-19 | discovered_unverified |
 | KB-2025-0173 — [Generative artificial intelligence in middle school classroom: a longitudinal exploration of teacher attitudes, evolving practices, and challenges](https://doi.org/10.1007/s10639-025-13667-6) | journal_article | 2025-06-19 | discovered_unverified |
 | KB-2025-0174 — [GenAI competence is different from digital competence: developing and validating the GenAI competence scale for second language teachers](https://doi.org/10.1007/s10639-025-13672-9) | journal_article | 2025-06-19 | discovered_unverified |
+| KB-2025-0176 — [When the prompting stops: exploring teachers’ work around the educational frailties of generative AI tools](https://doi.org/10.1080/17439884.2025.2537959) | journal_article | 2025-07-23 | discovered_unverified |
+| KB-2025-0178 — [From Hesitant Beginners to Confident Experts: Profiles and Predictors of AI Literacy Among Preschool Teachers in Guangxi, China](https://doi.org/10.1109/tlt.2025.3596125) | journal_article | 2025-08-05 | discovered_unverified |
 | KB-2025-0181 — [A scoping review of empirical research on AI literacy assessments](https://doi.org/10.1007/s11423-025-10515-9) | journal_article | 2025-08-25 | discovered_unverified |
 | KB-2025-0182 — [Exploring teacher intention to teach AI: self-determination theory (SDT) and motivation-opportunity-ability (MOA) perspectives](https://doi.org/10.1007/s10639-025-13693-4) | journal_article | 2025-08-29 | discovered_unverified |
 | KB-2025-0183 — [Investigation of Generative AI Adoption in IT-Focused Vocational Secondary School Programming Education](https://doi.org/10.3390/educsci15091152) | journal_article | 2025-09-04 | discovered_unverified |
@@ -568,6 +595,7 @@
 | KB-2025-0269 — [Conceptions of image-generative AI-supported instruction of preservice teachers with different levels of learning attitude: a drawing and epistemic network analysis](https://doi.org/10.1080/15391523.2025.2478433) | journal_article | 2025-03-24 | discovered_unverified |
 | KB-2025-0270 — [Integrating artificial intelligence in literacy lessons for elementary classrooms: a co-design approach](https://doi.org/10.1007/s11423-025-10492-z) | journal_article | 2025-03-28 | discovered_unverified |
 | KB-2025-0271 — [Same assignment—two different feedback contexts: lower secondary students’ experiences with feedback during a three draft writing process](https://doi.org/10.3389/feduc.2025.1509904) | journal_article | 2025-03-31 | discovered_unverified |
+| KB-2025-0272 — [Preparing Student Teachers for Professional Development: Mentoring Generative Artificial Intelligence (AI) Learners in Mathematical Problem Solving](https://doi.org/10.1109/tlt.2025.3557037) | journal_article | 2025-04-03 | discovered_unverified |
 | KB-2025-0276 — [Development of a generative AI ‐powered teachable agent for middle school mathematics learning: A design‐based research study](https://doi.org/10.1111/bjet.13586) | journal_article | 2025-04-17 | discovered_unverified |
 | KB-2025-0277 — [Generative AI and multimodal data for educational feedback: Insights from embodied math learning](https://doi.org/10.1111/bjet.13587) | journal_article | 2025-04-21 | discovered_unverified |
 | KB-2025-0278 — [AI anxiety and awareness of German teacher candidates](https://doi.org/10.1007/s10639-025-13573-x) | journal_article | 2025-04-22 | discovered_unverified |
@@ -588,6 +616,7 @@
 | KB-2025-0294 — [Effects of immersive virtual reality on primary students’ science performance in classroom settings: a generative AI pedagogical agents-enhanced 5E approach](https://doi.org/10.1080/10494820.2025.2514101) | journal_article | 2025-06-09 | discovered_unverified |
 | KB-2025-0295 — [Examining how generative AI tools benefit and challenge teachers’ research-informed practice](https://doi.org/10.1080/02619768.2025.2518193) | journal_article | 2025-06-09 | discovered_unverified |
 | KB-2025-0296 — [Exploring adolescents’ acceptance of AI in environmental education: integrating the unified theory of acceptance and use of technology with the 21st century skills framework](https://doi.org/10.1007/s10639-025-13643-0) | journal_article | 2025-06-11 | discovered_unverified |
+| KB-2025-0298 — [The Use of Interactive Narratives in Educational Games to Assess Vocational Interests: An Application of the RIASEC Test Integrated With OpenAI](https://doi.org/10.1109/tlt.2025.3579226) | journal_article | 2025-06-12 | discovered_unverified |
 | KB-2025-0301 — [Examining human–AI collaboration in hybrid intelligence learning environments: insight from the Synergy Degree Model](https://doi.org/10.1057/s41599-025-05097-z) | journal_article | 2025-06-14 | discovered_unverified |
 | KB-2025-0302 — [Developing an AI-TPACK framework: exploring the mediating role of AI attitudes in pre-service TCSL teachers’ self-efficacy and AI-TPACK](https://doi.org/10.1007/s10639-025-13630-5) | journal_article | 2025-06-18 | discovered_unverified |
 | KB-2025-0303 — [Generative Artificial Intelligence (GAI) in Teaching and Learning Processes at the K-12 Level: A Systematic Review](https://doi.org/10.1007/s10758-025-09853-7) | journal_article | 2025-06-19 | discovered_unverified |
@@ -638,6 +667,7 @@
 | KB-2025-0365 — [Evaluating generative AI-assisted inquiry-based learning and metacognitive scaffolding for enhancing scientific vocabulary, content comprehension, and lab report writing](https://doi.org/10.1080/10494820.2025.2572786) | journal_article | 2025-10-21 | discovered_unverified |
 | KB-2025-0366 — [Creating adaptive learning pathways for inquiry-based learning in school science using generative AI large language models](https://doi.org/10.1080/09500693.2025.2574519) | journal_article | 2025-10-22 | discovered_unverified |
 | KB-2025-0367 — [The role of AI assisted writing feedback in developing secondary students writing skills](https://doi.org/10.1007/s44217-025-00919-3) | journal_article | 2025-10-27 | discovered_unverified |
+| KB-2025-0368 — [KnowSTU: Diagnosing Students’ Problem Behaviors Using Fine-Tuned LLM and RAG](https://doi.org/10.1109/tlt.2025.3625146) | journal_article | 2025-10-24 | discovered_unverified |
 | KB-2025-0370 — [Fostering AI literacy in pre-service teachers: impact of a training intervention on awareness, attitude and trust in AI](https://doi.org/10.3389/feduc.2025.1668078) | journal_article | 2025-10-29 | discovered_unverified |
 | KB-2025-0371 — [GIFT-AI: “I’m scared that the AI feedback is too much!”—preservice (English) teachers’ feedback strategies and their use of GenAI for feedback](https://doi.org/10.3389/feduc.2025.1612398) | journal_article | 2025-10-31 | discovered_unverified |
 | KB-2025-0372 — [Advancing Translational Science Through AI-Enhanced Teacher Learning for Early Language and Composing](https://doi.org/10.3390/educsci15111496) | journal_article | 2025-11-05 | discovered_unverified |
@@ -649,6 +679,7 @@
 | KB-2025-0384 — [Students’ Use and Perception of Educational GenAI Chatbot in High School Computing: Insights from the Decomposed Theory of Planned Behavior](https://doi.org/10.3390/educsci15121569) | journal_article | 2025-11-21 | discovered_unverified |
 | KB-2025-0386 — [Can Learners’ Use of GenAI Enhance Learning Engagement?—A Meta-Analysis](https://doi.org/10.3390/educsci15121578) | journal_article | 2025-11-24 | discovered_unverified |
 | KB-2025-0387 — [Physics Teachers’ Insights into the Usability and Challenges of a Platform with Integrated Simulations and Generative AI](https://doi.org/10.1007/s10956-025-10280-7) | journal_article | 2025-11-26 | discovered_unverified |
+| KB-2025-0389 — [AI-Driven Learning Analytics for Applied Behavior Analysis Therapy](https://doi.org/10.1109/tlt.2025.3637864) | journal_article | 2025-11-27 | discovered_unverified |
 | KB-2025-0391 — [Virtual Characters Help K–12 Students Learn and Improve Motivation: A Meta-Analysis](https://doi.org/10.3102/00346543251389930) | journal_article | 2025-11-29 | discovered_unverified |
 | KB-2025-0392 — [The extent to which language teachers use linguistic artificial intelligence applications: an analysis based on selected variables](https://doi.org/10.3389/feduc.2025.1683845) | journal_article | 2025-12-01 | discovered_unverified |
 | KB-2025-0393 — [Generative artificial intelligence in secondary STEM education in the light of Human Flourishing: a scoping literature review](https://doi.org/10.1186/s40594-025-00589-5) | journal_article | 2025-12-01 | discovered_unverified |
@@ -673,9 +704,6 @@
 
 | 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
 |---|---|---|---|
-| KB-2025-0006 — [Toward Teacher-Centered AI Design: Exploring the Role of Pedagogical Values and Contextual Factors in K-12 Teachers' Perceptions of Responsible AI](https://repository.isls.org/handle/1/11843) | conference_paper | 未知 | bibliographic_checked |
-| KB-2025-0007 — [Utilizing LLMs to Support Teacher Understanding of AI Literacy](https://repository.isls.org/handle/1/11944) | conference_paper | 未知 | bibliographic_checked |
-| KB-2025-0009 — [From Teachers to Students: Evaluating Canvas City as a Path to AI Literacy](https://dl.acm.org/doi/10.1145/3724363.3729069) | conference_paper | 未知 | bibliographic_checked |
 | KB-2025-0014 — [From Lecture Hall to Homeroom: Co-Designing an AI Elective with Middle School CS Teachers](https://doi.org/10.1007/s40593-024-00449-3) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0015 — [Expanding Access To AI Education for Middle School Students and Bridging Gender Gaps with Constructionism-Social Emotional Learning Approach](https://doi.org/10.1007/s40593-025-00527-0) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0016 — [Fostering responsible AI literacy: A systematic review of K-12 AI ethics education](https://doi.org/10.1016/j.caeai.2025.100422) | journal_article | 未知 | discovered_unverified |
@@ -683,9 +711,6 @@
 | KB-2025-0018 — [Why don't teachers teach AI ethics? Understanding teachers' beliefs and intentions in Chinese AI curriculum implementation through the theory of planned behaviour](https://doi.org/10.1016/j.caeai.2025.100518) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0019 — [Epistemic network analysis of in-service teachers’ competency to teach artificial intelligence for secondary education](https://doi.org/10.1016/j.caeai.2025.100520) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0020 — [Integrating generative artificial intelligence in K-12 education: Examining teachers’ preparedness, practices, and barriers](https://doi.org/10.1016/j.caeai.2025.100363) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0040 — [Enhancing AI Literacy for Minority High School Students: Mixed Outcomes and Insights for Effective Teaching Strategies](https://doi.org/10.3102/2194735) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0041 — [High School Teachers’ Emergent AI Literacy Goals During Professional Learning About Lesson Co-Design (Poster 17)](https://doi.org/10.3102/2186733) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0042 — [Black Middle Schoolers’ AI Self-Efficacy and Outcome Expectations in a Summer Camp](https://doi.org/10.3102/2186946) | conference_paper | 未知 | discovered_unverified |
 | KB-2025-0065 — [Artificial intelligence in Ethiopian school curriculum: Educators' practices, challenges, and recommendations](https://doi.org/10.1016/j.caeo.2025.100251) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0066 — [Rethinking artificial-intelligence literacy through the lens of teacher educators: The adaptive AI model](https://doi.org/10.1016/j.caeo.2025.100291) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0067 — [Relationship between pre-service teachers’ perceived competencies, affective dispositions, and readiness to use artificial intelligence: A study informed by the intelligent-TPACK](https://doi.org/10.1016/j.caeo.2025.100305) | journal_article | 未知 | discovered_unverified |
@@ -693,23 +718,9 @@
 | KB-2025-0069 — [Intelligent-TPACK in teacher education: Examining preservice elementary teachers’ emerging views about AI classroom use](https://doi.org/10.1016/j.caeo.2025.100307) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0070 — [Fostering Intelligent-TPACK through AI-assistance: A multi-method study in pre-service teacher education](https://doi.org/10.1016/j.caeo.2025.100314) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0071 — [Understanding pre-service teachers’ needs for integrating AI-based tools in instruction through intelligent TPACK framework](https://doi.org/10.1016/j.caeo.2025.100317) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0086 — [Obstacles or Opportunities: Teachers' Concerns About Adopting Generative AI in Learning and Teaching](https://doi.org/10.1109/icalt64023.2025.00084) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0092 — [AI Integration in Vietnamese Primary Education: Educator Perspectives and Implementation Challenges](https://doi.org/10.1109/icalt64023.2025.00069) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0098 — [Navigating the Textual Maze: Enhancing Textual Analytical Skills Through an Innovative GAI Prompt Framework](https://doi.org/10.1109/tlt.2025.3539104) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0102 — [Enhancing enthusiasm for STEM education with AI: Domain-specific chatbot as personalized learning assistant](https://doi.org/10.1016/j.caeo.2025.100315) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0118 — [Unveiling teacher identity development: A case study of AI curriculum implementation in a rural middle school computer science class](https://doi.org/10.1016/j.tate.2025.105032) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0123 — [Robot or Not? Uncovering the In-Service Teachers' Needs for AI Literacy Integration in Underserved Schools](https://research.allacademic.com/meta/p2197285_index.html) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0124 — [State Artificial Intelligence Guidance for Students With Disabilities in K-12 Education (Poster 5)](https://research.allacademic.com/meta/p2193015_index.html) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0125 — [Evaluating Teacher Preparedness for AI in K-12 Classrooms (Poster 27)](https://research.allacademic.com/meta/p2183399_index.html) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0126 — [AI Literacy and Educational Leadership: K12 School Leaders’ Perceptions of AI Integration](https://research.allacademic.com/meta/p2184589_index.html) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0127 — [The Future of AI Education Depends on Student Voice](https://research.allacademic.com/meta/p2195238_index.html) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0128 — [Engaging High School Students in Robotics and Artificial Intelligence Through Robotics Engineering Design Challenges](https://research.allacademic.com/meta/p2190458_index.html) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0129 — [Conceptualizing Perspectives of AI Literacies in Teaching About AI: A Systematic Review Approach](https://research.allacademic.com/meta/p2186829_index.html) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0130 — [Development of an AI Literacy Assessment for Nontechnical Individuals: A Pre- and In-Service Teachers’ Case](https://research.allacademic.com/meta/p2190722_index.html) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0131 — [Proposal: Exploring the Current Situation and Influencing Factors of Teachers’ AI Literacy (Poster 18)](https://research.allacademic.com/meta/p2194056_index.html) | conference_paper | 未知 | discovered_unverified |
-| KB-2025-0132 — [Evolving Attitudes Toward the Use of Generative AI Among High School Students in an Inner-City School (Poster 12)](https://research.allacademic.com/meta/p2198280_index.html) | conference_paper | 未知 | discovered_unverified |
 | KB-2025-0136 — [Attitudes, perceptions and AI self-efficacy in K-12 education](https://doi.org/10.1016/j.caeai.2024.100358) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0138 — [Children's AI Design Platform for Making and Deploying ML-Driven Apps: Design, Testing, and Development](https://doi.org/10.1109/tlt.2025.3529994) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0139 — [Co-designing AI with youth partners: Enabling ideal classroom relationships through a novel AI relational privacy ethical framework](https://doi.org/10.1016/j.caeai.2025.100364) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0142 — [Opportunities, challenges and school strategies for integrating generative AI in education](https://doi.org/10.1016/j.caeai.2025.100373) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0143 — [Let us make robots “Think in child!”: How children conceptualize fairness, inclusion, and privacy with social robots](https://doi.org/10.1016/j.ijcci.2024.100706) | journal_article | 未知 | discovered_unverified |
@@ -718,9 +729,7 @@
 | KB-2025-0165 — [Teaching AI awareness in middle school classrooms: Design, implementation and evaluation of two education modules on algorithmic bias and filter bubbles](https://doi.org/10.1016/j.caeai.2025.100425) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0168 — [Which educational approaches predict students’ generative AI confidence and responsibility?](https://doi.org/10.1016/j.caeai.2025.100431) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0175 — [The balancing act between AI and authenticity in assessment: A case study of secondary school students’ use of GenAI in reflective writing](https://doi.org/10.1016/j.compedu.2025.105399) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0176 — [When the prompting stops: exploring teachers’ work around the educational frailties of generative AI tools](https://doi.org/10.1080/17439884.2025.2537959) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0177 — [A case study of teachers’ generative artificial intelligence integration processes and factors influencing them](https://doi.org/10.1016/j.tate.2025.105157) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0178 — [From Hesitant Beginners to Confident Experts: Profiles and Predictors of AI Literacy Among Preschool Teachers in Guangxi, China](https://doi.org/10.1109/tlt.2025.3596125) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0179 — [K-12 teachers’ ethical competencies for AI literacy: Insights from a systematic literature review](https://doi.org/10.1016/j.compedu.2025.105435) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0180 — [High school students building babyGPTs: Engaging in data practices and addressing ethical issues through the construction of generative language models](https://doi.org/10.1016/j.ijcci.2025.100769) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0184 — [Exploring characteristics of primary school students’ self-regulated learning (SRL) behaviors in human-GenAI collaborative programming learning environments: Insights from a proposed framework](https://doi.org/10.1016/j.compedu.2025.105453) | journal_article | 未知 | discovered_unverified |
@@ -745,13 +754,11 @@
 | KB-2025-0264 — [A comparative analysis of pre-service teachers’ readiness for AI integration](https://doi.org/10.1016/j.caeai.2025.100396) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0265 — [An early investigation of collaborative problem solving in conversational AI-mediated learning environments](https://doi.org/10.1016/j.caeai.2025.100393) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0266 — [Preparing future educators for AI-enhanced classrooms: Insights into AI literacy and integration](https://doi.org/10.1016/j.caeai.2025.100398) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0272 — [Preparing Student Teachers for Professional Development: Mentoring Generative Artificial Intelligence (AI) Learners in Mathematical Problem Solving](https://doi.org/10.1109/tlt.2025.3557037) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0273 — [Transforming EFL Teaching with AI: A Systematic Review of Empirical Studies](https://doi.org/10.1007/s40593-025-00470-0) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0274 — [Widening the Digital Divide: The mediating role of Intelligent Tutoring Systems in the relationship between rurality, socioeducational advantage, and mathematics learning outcomes](https://doi.org/10.1016/j.compedu.2025.105312) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0275 — [Empowering preservice teachers’ AI literacy: Current understanding, influential factors, and strategies for improvement](https://doi.org/10.1016/j.caeai.2025.100406) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0286 — [The effects of interactions with AI-enhanced media characters on learning computational thinking](https://doi.org/10.1016/j.learninstruc.2025.102149) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0297 — [A scoping literature review of generative artificial intelligence for supporting neurodivergent school students](https://doi.org/10.1016/j.caeai.2025.100437) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0298 — [The Use of Interactive Narratives in Educational Games to Assess Vocational Interests: An Application of the RIASEC Test Integrated With OpenAI](https://doi.org/10.1109/tlt.2025.3579226) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0299 — [Designing a generative AI enabled learning environment for mathematics word problem solving in primary schools: Learning performance, attitudes and interaction](https://doi.org/10.1016/j.caeai.2025.100438) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0300 — [Children's information search with social robots: A focus on Children's question-asking behavior](https://doi.org/10.1016/j.ijcci.2025.100751) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0304 — [Self-assessment accuracy in the age of artificial Intelligence: Differential effects of LLM-generated feedback](https://doi.org/10.1016/j.compedu.2025.105385) | journal_article | 未知 | discovered_unverified |
@@ -771,7 +778,6 @@
 | KB-2025-0355 — [Are pre-service teachers ready to teach the Alpha generation? The impact of pre-service teachers' ChatGPT literacy levels on behavioral intentions toward ChatGPT-4.0](https://doi.org/10.1016/j.caeai.2025.100486) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0360 — [Co-constructing adaptive lesson plans with GenAI: Pre-service teachers' Intelligent-TPACK and prompt engineering strategies](https://doi.org/10.1016/j.compedu.2025.105485) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0362 — [ChatGPT-Assisted Lesson Planning for Children’s STEAM Arts Education: An Experimental Study on Benefits, Challenges, Methods, and a Prompt Framework](https://doi.org/10.1007/s40593-025-00513-6) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0368 — [KnowSTU: Diagnosing Students’ Problem Behaviors Using Fine-Tuned LLM and RAG](https://doi.org/10.1109/tlt.2025.3625146) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0369 — [Unmasking the impacts of self-evaluation in AI-supported writing instruction on EFL learners’ emotion regulation, self-competence, motivation, and writing achievement](https://doi.org/10.1016/j.caeai.2025.100494) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0376 — [STEM education: Understanding secondary students’ epistemic cognition in the design process with the support of a personalized multi-agent system](https://doi.org/10.1016/j.compedu.2025.105504) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0377 — [A Feasibility and Implementation Integrity Study of the Community Builder (CoBi): An AI-based Collaboration Support System in K-12 Classrooms](https://doi.org/10.1007/s40593-025-00509-2) | journal_article | 未知 | discovered_unverified |
@@ -781,7 +787,6 @@
 | KB-2025-0383 — [Exploring AI-generated feedback in peer-discussion contexts: A mixed-methods study of essay writing in secondary classrooms](https://doi.org/10.1016/j.caeai.2025.100504) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0385 — [Effects of LLM use and note-taking on reading comprehension and memory: A randomised experiment in secondary schools](https://doi.org/10.1016/j.compedu.2025.105514) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0388 — [Examining Student Teachers’ Agency in an AI-Supported Learning Environment: Q Methodology Research](https://doi.org/10.1007/s40593-025-00529-y) | journal_article | 未知 | discovered_unverified |
-| KB-2025-0389 — [AI-Driven Learning Analytics for Applied Behavior Analysis Therapy](https://doi.org/10.1109/tlt.2025.3637864) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0390 — [AI literacy, educational level, and parenting self-efficacy of children’s education among parents of primary school students](https://doi.org/10.1016/j.caeo.2025.100318) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0394 — [Principals’ ethical leadership in the AI Era: A narrative literature review of emerging challenges, strategies, and outcomes](https://doi.org/10.1016/j.compedu.2025.105517) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0395 — [Promoting pre-service music teachers’ TPACK with generative AI: an intervention through designing with AI](https://doi.org/10.1016/j.caeai.2025.100525) | journal_article | 未知 | discovered_unverified |
@@ -789,6 +794,41 @@
 | KB-2025-0405 — [Making sense of AI in teacher education: A qualitative study of perceptions, practices and pedagogical tensions](https://doi.org/10.1016/j.tate.2025.105342) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0407 — [Perceived utility moderates motivational intervention effects in learning to teach responsibly with GenAI](https://doi.org/10.1016/j.caeo.2025.100324) | journal_article | 未知 | discovered_unverified |
 | KB-2025-0411 — [The effects of GAI-enhanced pedagogical agents in the metaverse (GPAiM) on elementary school students’ conceptual understanding and cognitive engagement patterns](https://doi.org/10.1016/j.compedu.2025.105555) | journal_article | 未知 | discovered_unverified |
+
+## 2026｜event_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2026-0034 — [Turning Students into Neurons — Evaluating an Embodied CS Unplugged Learning Activity on Neural Networks](https://doi.org/10.1145/3801749.3801755) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0035 — [Towards a Conceptual Change of 7th Grade Students regarding Artificial Intelligence](https://doi.org/10.1145/3801749.3801759) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0036 — [Teaching Machine Learning and Computational Thinking in Secondary Education: Hands-On vs. Video-Based Approaches](https://doi.org/10.1145/3801749.3801762) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0037 — [Exploring Preservice Teachers’ Conceptual Trajectories While Teaching an AI and STEM Integrated Unit: A Research-in-Practice Report](https://doi.org/10.1145/3801749.3801767) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0038 — [Should we open the Black Box? Investigating Transparency in K-12 Machine Learning Education](https://doi.org/10.1145/3801749.3801788) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0076 — [Expert Perspectives on AI Literacy for K–12 with an Emphasis on Assessment](https://doi.org/10.3102/2279866) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0077 — [Developing AI Literacy Through Teacher Professional Development in STEM: Design Principles for Equitable Integration in K-12 Contexts](https://doi.org/10.3102/2287154) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0078 — [AI Education for Young Children: Considerations for Designing an AI Curriculum and Strategies in Early Childhood Education](https://doi.org/10.3102/2273521) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0079 — [Fostering Elementary Students’ AI Literacy in a Learning Environment Empowered by Generative AI (Poster 22)](https://doi.org/10.3102/2276758) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0080 — [AI by 8: Embedding AI Literacy in K-2 Language Arts in Rural North Carolina Communities (Poster 2)](https://doi.org/10.3102/2282134) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0081 — [Impact of Computing Education by School Type and County on K12 Students’ AI Literacy](https://doi.org/10.3102/2283563) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0082 — [Governance, Privacy, and Integrity: A Comparative Analysis of Generative AI Platform Policies in K–12 Education](https://doi.org/10.3102/2277136) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0083 — [How Are School Districts in California Responding to ChatGPT? A Policy Analysis of Five K–12 Guidelines](https://doi.org/10.3102/2275753) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0084 — [Responsible AI in K–12 Education: A Policy Review (Poster 3)](https://doi.org/10.3102/2283932) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0085 — [Learning to Code, Learning to Care: Promoting Ethics and Agency in Elementary AI Curriculum](https://doi.org/10.3102/2279151) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0086 — [A Systematic Review on How to Design K-12 Artificial Intelligence Education (Poster 24)](https://doi.org/10.3102/2276835) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0087 — [How States Conceptualize AI and Equity in Education: A Policy Analysis of Emerging K–12 Guidance](https://doi.org/10.3102/2280516) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0110 — [AI Literacy for Educational Leaders: Imagining Futures in K–12 Policy and Practice](https://doi.org/10.3102/2280689) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0111 — [Co-creating Knowledge with GenAI: Shared Epistemic Agency and Critical AI Literacy in K-12 Lesson Planning](https://doi.org/10.3102/2288539) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0112 — [Understanding Public K-12 Indigenous Student Interest and Access to CS and AI Education through Teacher Perspectives and National CS Data (Poster 5)](https://doi.org/10.3102/2282137) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0113 — [Generative AI Disruption in K-12 Education: Balancing Skepticism and Opportunity](https://doi.org/10.3102/2276914) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0114 — [Constructive Controversy with AI: Elementary Students Engage in Ethical Reasoning and Debate (Poster 15)](https://doi.org/10.3102/2277717) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0115 — [Latinx Youth as AI Designers: Building Their Communities' Present and Future (Stage 3, 12:08 PM)](https://doi.org/10.3102/2353011) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0116 — [From Uncertainty to Understanding: A YPAR Study Co-Investigating AI Readiness Across a High School Campus](https://doi.org/10.3102/2279932) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0117 — [Framework for AI Professional Development: Insights from Needs and Challenges of K-12 Educators](https://doi.org/10.3102/2288639) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0118 — [Co-Occurrence Network Analysis to Guide Responsible AI Policy Development in K-12 Education](https://doi.org/10.3102/2289481) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0119 — [Educational Leaders Navigating AI: Policy Challenges and Opportunities in K-12 Implementation](https://doi.org/10.3102/2279837) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0120 — [Integrating AI Literacy into Math Education: A Study on AI Self-Efficacy and Math Motivation](https://doi.org/10.3102/2281139) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0121 — [Exploring AI Literacy: Student Perceptions of Learning, Ethics, and Use in the Classroom](https://doi.org/10.3102/2273778) | conference_paper | 未知 | bibliographic_checked |
+| KB-2026-0122 — [Imagining Culturally and Linguistically Sustaining AI Literacy with In-Service Educators through Design-Based Research (Poster 29)](https://doi.org/10.3102/2288275) | conference_paper | 未知 | bibliographic_checked |
 
 ## 2026｜first_publication
 
@@ -825,6 +865,8 @@
 | KB-2026-0049 — [Co-Designing Unplugged Learning Activities with K-2 Teachers for Early AI Literacy Education](https://doi.org/10.1609/aaai.v40i47.41529) | conference_paper | 2026-03-14 | bibliographic_checked |
 | KB-2026-0050 — [From Embeddings to Chatbots: Playful NLP Activities for Middle School AI Literacy](https://doi.org/10.1609/aaai.v40i47.41530) | conference_paper | 2026-03-14 | bibliographic_checked |
 | KB-2026-0054 — [AI in rural classrooms: digital discretion, teacher agency, and student engagement in Vermont high schools](https://doi.org/10.1080/17439884.2026.2698577) | journal_article | 2026-07-13 | discovered_unverified |
+| KB-2026-0055 — [Leveraging Generative AI Agent to Promote Teaching Reflection in a K–12 AI Course: Effects on Teachers’ Reflection Self-Efficacy, Instructional Design, and Reflective Thinking](https://doi.org/10.1109/tlt.2026.3668051) | journal_article | 2026-02-25 | discovered_unverified |
+| KB-2026-0056 — [Interdisciplinary Integration: The Connotation and Methods of Cultivating Artificial Intelligence Talents in K-12 Education](https://doi.org/10.1109/tlt.2026.3672830) | journal_article | 2026-03-10 | discovered_unverified |
 | KB-2026-0057 — [Developing an AI literacy competency model for primary school Chinese language teachers: a pilot study](https://doi.org/10.3389/feduc.2026.1831415) | journal_article | 2026-06-05 | bibliographic_checked |
 | KB-2026-0058 — [From learners to contributors: how an AI-infused STEM program shaped youth identity and initiated them to an AI-future](https://doi.org/10.3389/feduc.2026.1811339) | journal_article | 2026-07-31 | bibliographic_checked |
 | KB-2026-0059 — [Preparing teachers for the age of artificial intelligence: understanding the challenges and needs of AI-TPACK in Indonesian elementary education](https://doi.org/10.3389/feduc.2026.1769204) | journal_article | 2026-06-29 | bibliographic_checked |
@@ -890,9 +932,13 @@
 | KB-2026-0163 — [Measuring the Data Agency of Pre-Service Teachers: A Six-Factor Model](https://doi.org/10.15388/infedu.2506.023) | journal_article | 2026-03-17 | discovered_unverified |
 | KB-2026-0164 — [Step‐by‐step towards understanding artificial intelligence: A scaffolded learning progression for young learners](https://doi.org/10.1111/bjet.70069) | journal_article | 2026-04-20 | discovered_unverified |
 | KB-2026-0165 — [A framework for generative AI policy and guidelines in K-12 education](https://doi.org/10.1080/15391523.2026.2661641) | journal_article | 2026-05-01 | discovered_unverified |
+| KB-2026-0166 — [Exploring Bias and Building AI Models: Data Science for Middle Schoolers](https://doi.org/10.1080/08872376.2026.2632617) | journal_article | 2026-04-10 | discovered_unverified |
+| KB-2026-0167 — [Using Social Robots to Teach AI to Preschool Children](https://doi.org/10.4324/9781003607304-10) | book_chapter | 2026-03-11 | discovered_unverified |
+| KB-2026-0168 — [Writing Coach, Reading Tutor, and Conversation Partner](https://doi.org/10.4324/9781003661443-5) | book_chapter | 2026-06-15 | discovered_unverified |
 | KB-2026-0169 — [A Theory-Informed Narrative-Centered Model to Foster AI Literacy and Biomedical Career Interest](https://doi.org/10.1145/3815598.3815638) | conference_paper | 2026-08-09 | discovered_unverified |
 | KB-2026-0170 — [Preparing educators for the AI-enhanced future: Insights from a teacher professional development for K-12 education in Singapore](https://doi.org/10.58459/rptel.2026.21041) | journal_article | 2026-02-03 | discovered_unverified |
 | KB-2026-0171 — [The impact of generative AI training on teachers’ curriculum adaptation using reflective practices](https://doi.org/10.1007/s44163-026-01456-0) | journal_article | 2026-06-01 | discovered_unverified |
+| KB-2026-0172 — [AI transformation in education: Examining teachers’ perceptions using an integrated TAM-TPACK-GenAI framework](https://doi.org/10.30935/cedtech/17983) | journal_article | 2026-02-26 | discovered_unverified |
 | KB-2026-0173 — [臺灣中小學教師與學生AI素養框架](https://pads.moe.edu.tw/download_file.php?file=_upload_4e783e955bd0986f4e100534b08a84d2.pdf&old=upload) | framework | 2026-04-17 | bibliographic_checked |
 | KB-2026-0174 — [Designing and Evaluating a 5E-Structured GenAI Coach for Guided Inquiry: A Pedagogy-to-Prompt Engineering Framework](https://doi.org/10.3390/educsci16030384) | journal_article | 2026-03-03 | discovered_unverified |
 | KB-2026-0175 — [Enhancing Emotional Intelligence Through Generative AI ‐Supported Digital Storytelling: A Mixed Methods Study Using Epistemic Network Analysis](https://doi.org/10.1002/jcal.70245) | journal_article | 2026-04-15 | discovered_unverified |
@@ -927,6 +973,7 @@
 | KB-2026-0209 — [Generative AI-supported instruction as a cognitive scaffold: effects on senior high school students’ geometric reasoning and proof construction](https://doi.org/10.3389/feduc.2026.1869961) | journal_article | 2026-07-03 | discovered_unverified |
 | KB-2026-0210 — [Integration of ChatGPT to enhance English speaking skills among secondary school students in Pakistan](https://doi.org/10.1007/s44217-026-02278-z) | journal_article | 2026-10-07 | discovered_unverified |
 | KB-2026-0211 — [Modeling K-12 teachers’ continuance intention to use generative AI: influencing factors and a hybrid SEM-ANN approach](https://doi.org/10.3389/feduc.2026.1755301) | journal_article | 2026-04-13 | discovered_unverified |
+| KB-2026-0212 — [Beyond Student Outputs: Design Requirements for Teacher-Facing Process Analytics in AI-Assisted Block-Based Programming](https://doi.org/10.1109/tlt.2026.3718805) | journal_article | 2026-07-30 | discovered_unverified |
 | KB-2026-0213 — [Perceptions of AI-assisted learning and learner development among Moroccan secondary school students](https://doi.org/10.1007/s44217-026-02109-1) | journal_article | 2026-10-06 | discovered_unverified |
 | KB-2026-0214 — [Amplifying Rural Educators’ Perspectives: A Qualitative Study on the Impacts of Generative AI in Rural U.S. High Schools](https://doi.org/10.1145/3772318.3790489) | conference_paper | 2026-04-13 | discovered_unverified |
 | KB-2026-0216 — [Developing deep learning in science through an adaptive AI-based STEM instructional program: evidence from sixth-grade classrooms](https://doi.org/10.1186/s40594-026-00630-1) | journal_article | 2026-06-28 | discovered_unverified |
@@ -985,39 +1032,7 @@
 | KB-2026-0024 — [Fostering machine learning literacy in senior primary education: Evaluating a structured pedagogical course design](https://doi.org/10.1016/j.caeai.2026.100631) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0025 — [Longitudinal relationships between student ethical considerations, behavioral intention, and perceived knowledge in artificial intelligence education](https://doi.org/10.1016/j.compedu.2026.105614) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0026 — [Cheating or not cheating? Rethinking AI-giarism and academic integrity through secondary students’ ethical reasoning](https://doi.org/10.1016/j.compedu.2026.105698) | journal_article | 未知 | discovered_unverified |
-| KB-2026-0034 — [Turning Students into Neurons — Evaluating an Embodied CS Unplugged Learning Activity on Neural Networks](https://doi.org/10.1145/3801749.3801755) | conference_paper | 未知 | discovered_unverified |
-| KB-2026-0035 — [Towards a Conceptual Change of 7th Grade Students regarding Artificial Intelligence](https://doi.org/10.1145/3801749.3801759) | conference_paper | 未知 | discovered_unverified |
-| KB-2026-0036 — [Teaching Machine Learning and Computational Thinking in Secondary Education: Hands-On vs. Video-Based Approaches](https://doi.org/10.1145/3801749.3801762) | conference_paper | 未知 | discovered_unverified |
-| KB-2026-0037 — [Exploring Preservice Teachers’ Conceptual Trajectories While Teaching an AI and STEM Integrated Unit: A Research-in-Practice Report](https://doi.org/10.1145/3801749.3801767) | conference_paper | 未知 | discovered_unverified |
-| KB-2026-0038 — [Should we open the Black Box? Investigating Transparency in K-12 Machine Learning Education](https://doi.org/10.1145/3801749.3801788) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0052 — [Teaching with and about GenAI: A video study of English and Norwegian lessons in secondary classrooms in Norway](https://doi.org/10.1016/j.tate.2026.105517) | journal_article | 未知 | discovered_unverified |
-| KB-2026-0055 — [Leveraging Generative AI Agent to Promote Teaching Reflection in a K–12 AI Course: Effects on Teachers’ Reflection Self-Efficacy, Instructional Design, and Reflective Thinking](https://doi.org/10.1109/tlt.2026.3668051) | journal_article | 未知 | discovered_unverified |
-| KB-2026-0056 — [Interdisciplinary Integration: The Connotation and Methods of Cultivating Artificial Intelligence Talents in K-12 Education](https://doi.org/10.1109/tlt.2026.3672830) | journal_article | 未知 | discovered_unverified |
-| KB-2026-0076 — [Expert Perspectives on AI Literacy for K–12 with an Emphasis on Assessment](https://doi.org/10.3102/2279866) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0077 — [Developing AI Literacy Through Teacher Professional Development in STEM: Design Principles for Equitable Integration in K-12 Contexts](https://doi.org/10.3102/2287154) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0078 — [AI Education for Young Children: Considerations for Designing an AI Curriculum and Strategies in Early Childhood Education](https://doi.org/10.3102/2273521) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0079 — [Fostering Elementary Students’ AI Literacy in a Learning Environment Empowered by Generative AI (Poster 22)](https://doi.org/10.3102/2276758) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0080 — [AI by 8: Embedding AI Literacy in K-2 Language Arts in Rural North Carolina Communities (Poster 2)](https://doi.org/10.3102/2282134) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0081 — [Impact of Computing Education by School Type and County on K12 Students’ AI Literacy](https://doi.org/10.3102/2283563) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0082 — [Governance, Privacy, and Integrity: A Comparative Analysis of Generative AI Platform Policies in K–12 Education](https://doi.org/10.3102/2277136) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0083 — [How Are School Districts in California Responding to ChatGPT? A Policy Analysis of Five K–12 Guidelines](https://doi.org/10.3102/2275753) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0084 — [Responsible AI in K–12 Education: A Policy Review (Poster 3)](https://doi.org/10.3102/2283932) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0085 — [Learning to Code, Learning to Care: Promoting Ethics and Agency in Elementary AI Curriculum](https://doi.org/10.3102/2279151) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0086 — [A Systematic Review on How to Design K-12 Artificial Intelligence Education (Poster 24)](https://doi.org/10.3102/2276835) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0087 — [How States Conceptualize AI and Equity in Education: A Policy Analysis of Emerging K–12 Guidance](https://doi.org/10.3102/2280516) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0110 — [AI Literacy for Educational Leaders: Imagining Futures in K–12 Policy and Practice](https://doi.org/10.3102/2280689) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0111 — [Co-creating Knowledge with GenAI: Shared Epistemic Agency and Critical AI Literacy in K-12 Lesson Planning](https://doi.org/10.3102/2288539) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0112 — [Understanding Public K-12 Indigenous Student Interest and Access to CS and AI Education through Teacher Perspectives and National CS Data (Poster 5)](https://doi.org/10.3102/2282137) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0113 — [Generative AI Disruption in K-12 Education: Balancing Skepticism and Opportunity](https://doi.org/10.3102/2276914) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0114 — [Constructive Controversy with AI: Elementary Students Engage in Ethical Reasoning and Debate (Poster 15)](https://doi.org/10.3102/2277717) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0115 — [Latinx Youth as AI Designers: Building Their Communities' Present and Future (Stage 3, 12:08 PM)](https://doi.org/10.3102/2353011) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0116 — [From Uncertainty to Understanding: A YPAR Study Co-Investigating AI Readiness Across a High School Campus](https://doi.org/10.3102/2279932) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0117 — [Framework for AI Professional Development: Insights from Needs and Challenges of K-12 Educators](https://doi.org/10.3102/2288639) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0118 — [Co-Occurrence Network Analysis to Guide Responsible AI Policy Development in K-12 Education](https://doi.org/10.3102/2289481) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0119 — [Educational Leaders Navigating AI: Policy Challenges and Opportunities in K-12 Implementation](https://doi.org/10.3102/2279837) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0120 — [Integrating AI Literacy into Math Education: A Study on AI Self-Efficacy and Math Motivation](https://doi.org/10.3102/2281139) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0121 — [Exploring AI Literacy: Student Perceptions of Learning, Ethics, and Use in the Classroom](https://doi.org/10.3102/2273778) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0122 — [Imagining Culturally and Linguistically Sustaining AI Literacy with In-Service Educators through Design-Based Research (Poster 29)](https://doi.org/10.3102/2288275) | conference_paper | 未知 | bibliographic_checked |
 | KB-2026-0132 — [Unleashing human potential: An artificial intelligence competency framework for K–12 education](https://doi.org/10.1016/j.caeai.2026.100556) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0151 — [Beyond operational skills: Teachers’ AI knowledge and interactions with generative AI in lesson planning](https://doi.org/10.1016/j.caeo.2026.100371) | journal_article | 未知 | discovered_unverified |
@@ -1030,16 +1045,11 @@
 | KB-2026-0158 — [Assessing AI-TPACK readiness in mathematics teacher education: The role of self-efficacy and teaching beliefs](https://doi.org/10.1016/j.caeo.2026.100375) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0159 — [Human-centered AI for teacher educators: Designing professional learning for critical AI literacy](https://doi.org/10.1016/j.caeo.2026.100399) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0160 — [AI training and science student teachers’ TPACK in campus-based and distance education: a comparative study](https://doi.org/10.1016/j.caeo.2026.100410) | journal_article | 未知 | discovered_unverified |
-| KB-2026-0166 — [Exploring Bias and Building AI Models: Data Science for Middle Schoolers](https://doi.org/10.1080/08872376.2026.2632617) | journal_article | 未知 | discovered_unverified |
-| KB-2026-0167 — [Using Social Robots to Teach AI to Preschool Children](https://doi.org/10.4324/9781003607304-10) | book_chapter | 未知 | discovered_unverified |
-| KB-2026-0168 — [Writing Coach, Reading Tutor, and Conversation Partner](https://doi.org/10.4324/9781003661443-5) | book_chapter | 未知 | discovered_unverified |
-| KB-2026-0172 — [AI transformation in education: Examining teachers’ perceptions using an integrated TAM-TPACK-GenAI framework](https://doi.org/10.30935/cedtech/17983) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0182 — [A community of inquiry perspective on human–AI co-facilitation within micro-blended learning](https://doi.org/10.1016/j.compedu.2026.105707) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0188 — [Beyond adoption: Teachers’ pedagogical reasoning about generative artificial intelligence in schooling](https://doi.org/10.1016/j.tate.2026.105746) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0202 — [Harnessing artificial intelligence for preservice teachers’ development: A scoping review of applications, benefits, and challenges](https://doi.org/10.1016/j.caeo.2026.100330) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0204 — [Design and validation of a questionnaire on teachers' uses of generative artificial intelligence](https://doi.org/10.1016/j.caeo.2026.100332) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0208 — [Investigating the barriers affecting in-service teachers’ continued use of generative AI for teaching innovation: Evidence from SEM and qualitative insights](https://doi.org/10.1016/j.tate.2026.105698) | journal_article | 未知 | discovered_unverified |
-| KB-2026-0212 — [Beyond Student Outputs: Design Requirements for Teacher-Facing Process Analytics in AI-Assisted Block-Based Programming](https://doi.org/10.1109/tlt.2026.3718805) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0215 — [Pre-service teachers’ agency during their interactions with generative AI while designing for learning – a process view on Intelligent-TPACK](https://doi.org/10.1016/j.caeo.2025.100325) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0220 — [Activity theory as a lens on teachers’ adoption of AI technologies: A structural equation modeling](https://doi.org/10.1016/j.caeo.2026.100349) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0224 — [Junior high school student perspectives on the use of ChatGPT in music education](https://doi.org/10.1016/j.caeo.2026.100387) | journal_article | 未知 | discovered_unverified |

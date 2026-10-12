@@ -11,7 +11,7 @@
 ## 日期、識別與驗證
 
 - `first_published_on` 可為 YYYY-MM-DD／YYYY-MM／YYYY／空白，精度相應為 `day`／`month`／`year`／`unknown`；`year_basis` 為 `first_publication`、`issue_year`、`event_year`、`unknown`。日期不詳則兩者留空／unknown，不以發現日冒充首發日。
-- **Crossref 線上首發日（管理者 2026-10-12 決定）**：原以卷期年歸類的研究紀錄，若 Crossref 登記了 `published-online`、不晚於紙本卷期日，且紀錄仍為 `discovered_unverified`，以該日期填入 `first_published_on`、改 `year_basis=first_publication`；核對程度不變（未讀原頁）。規則與逐筆結果見 [reports/crossref-first-online-2026-10-12.md](reports/crossref-first-online-2026-10-12.md)。
+- **Crossref 線上首發日（管理者 2026-10-12 決定）**：原以卷期年歸類的研究紀錄，若 Crossref 登記了 `published-online`、不晚於紙本卷期日，且紀錄仍為 `discovered_unverified`，以該日期填入 `first_published_on`、改 `year_basis=first_publication`；核對程度不變（未讀原頁）。規則與逐筆結果見 [reports/crossref-first-online-2026-10-12.md](reports/crossref-first-online-2026-10-12.md)。其餘紀錄依同一報告第二輪：出版者原頁或出版者登記的線上日可得者填入；會議論文改 `event_year`；Elsevier 期刊查不到首發日，維持卷期年。
 - `year_value` 是**索引歸屬年份**。如果未知，保留空白並放入未確定年份索引；索引顯示其依據。對歷年實體研究可按來源逐筆驗證日期後補充。
 - `verification_status=discovered_unverified` 不是已閱讀全文或可出版；既有首週九筆候選均以此級別唯讀初始化，保留原始 `hold` 而不搬移 `decision`。
 - DOI 去重只能在 DOI 明確規範化匹配且同一版本時自動連結；不同 DOI、標題相似、同事件、大小寫敏感網址及未知查詢參數均不得自動併檔。本 MVP 不自動合併來源。
