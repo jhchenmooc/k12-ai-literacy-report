@@ -334,3 +334,71 @@ class TrackedRoundtrip(Case):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class NoEcho(Case):
+    """W5: values taken from coder batches (model output) never reach stdout/stderr; invalid values are rejected."""
+    SECRET = "SENTINEL restricted abstract text"
+
+    def fixture(self, entry, mutate):
+        ids = [f"W{i}" for i in range(1, 7)]
+        if entry == "2025":
+            put(self.p("corpus.csv"), csv_text(CORPUS_H, corpus_rows("W", 6)))
+            put(self.p("sample.json"), json.dumps([{"work_id": w} for w in ids]))
+            script, args = "agreement_kappa.py", ["corpus.csv"]
+        else:
+            put(self.p("root", "prompts", "code2.md"), b"p")
+            sample, ids = [], []
+            for y in (2022, 2023, 2024):
+                rows = corpus_rows(f"W{y}", 2)
+                put(self.p("root", str(y), "corpus.csv"), csv_text(CORPUS_H, rows))
+                sample += [{"year": y, "work_id": r[0], "stratum_class": r[3], "stratum_stage": "primary"} for r in rows]
+                ids += [r[0] for r in rows]
+            put(self.p("sample.json"), json.dumps(sample))
+            script, args = "agreement_kappa_backfill.py", [self.p("root")]
+        put(self.p("out", "batch1.jsonl"), jsonl(mutate([code2(w) for w in ids])))
+        return script, args
+
+    def run_case(self, entry, mutate):
+        script, args = self.fixture(entry, mutate)
+        r = self.run_script(script, *args)
+        out = (r.stdout + r.stderr).decode("utf-8", "replace")
+        self.assertNotIn("SENTINEL", out)
+        self.assertNotIn("restricted abstract", out)
+        return r, out
+
+    def test_batch_values_never_echoed(self):
+        S = self.SECRET
+        cases = {
+            "duplicate work_id": (lambda o: o + [code2(S), code2(S)], 1, "duplicate second coding"),
+            "work_id not in sample": (lambda o: o + [code2(S)], 1, "is not in sample.json"),
+            "invalid ai_lit_class": (lambda o: [dict(o[0], ai_lit_class=S)] + o[1:], 1, "batch1.jsonl:1: ai_lit_class value not allowed"),
+            "invalid audience_role": (lambda o: [dict(o[0], audience_role=S)] + o[1:], 1, "audience_role value not allowed"),
+            "invalid stage": (lambda o: [dict(o[0], stage=S)] + o[1:], 1, "stage value not allowed"),
+            "invalid method": (lambda o: [dict(o[0], method=S)] + o[1:], 1, "method value not allowed"),
+            "invalid dim": (lambda o: [dict(o[0], ai_lit_dims=["S-BAS", S])] + o[1:], 1, "ai_lit_dims value not allowed"),
+            "non-string class": (lambda o: [dict(o[0], ai_lit_class={"x": S})] + o[1:], 1, "ai_lit_class value not allowed"),
+            "model_id (legal run)": (lambda o: [dict(x, model_id=S) for x in o], 0, "model_ids"),
+        }
+        for entry in ("2025", "backfill"):
+            for name, (mutate, code, expect) in cases.items():
+                with self.subTest(entry=entry, case=name):
+                    self.fresh()
+                    if code:
+                        self.plant(*(["agreement.csv"] if entry == "2025" else ["agreement.csv", "coding2.csv"]))
+                    r, out = self.run_case(entry, mutate)
+                    self.assertEqual(r.returncode, code, out)
+                    self.assertIn(expect, out)
+                    if code:
+                        self.assertEqual(self.read("agreement.csv"), SENTINEL)
+
+    def test_ordinary_ids_still_shown(self):
+        r, out = self.run_case("2025", lambda o: o + [code2("W999")])
+        self.assertIn("W999: second coding in out/ is not in sample.json", out)
+        r, out = self.run_case("2025", lambda o: [dict(x, model_id="claude-x-1.0") for x in o])
+        self.assertEqual(r.returncode, 0)
+        self.assertIn("'claude-x-1.0': 6", out)
+
+    def test_missing_optional_fields_still_accepted(self):
+        r, out = self.run_case("2025", lambda o: [dict(x, audience_role="", stage=None, method="", ai_lit_dims="") for x in o])
+        self.assertEqual(r.returncode, 0, out)
