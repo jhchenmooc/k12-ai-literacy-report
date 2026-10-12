@@ -31,6 +31,60 @@ class SafeIO(Case):
         self.assertEqual(self.read("b.csv"), SENTINEL)
         self.assertEqual(sorted(os.listdir(self.d)), ["a.csv", "b.csv"])
 
+    def open_fds(self):
+        """Open descriptors of this process (Linux); None where /proc is unavailable."""
+        try:
+            return len(os.listdir("/proc/self/fd"))
+        except OSError:
+            return None
+
+    def check_failure(self, target, fail_on, expect):
+        """Inject an OSError into safeio.os.<target> on call number fail_on and check what is left behind.
+
+        No temp file may survive and no descriptor may stay open (on Windows an open descriptor
+        is what makes the temp file undeletable). expect: final bytes of a.csv and b.csv.
+        """
+        self.plant("a.csv", "b.csv")
+        real, calls = getattr(safeio.os, target), []
+
+        def failing(*a, **k):
+            calls.append(1)
+            if len(calls) == fail_on:
+                raise OSError("injected " + target)
+            return real(*a, **k)
+        real_unlink = safeio.os.unlink
+
+        def windows_unlink(path):
+            """Like Windows (WinError 32): a file this process still has open cannot be deleted."""
+            target_path = os.path.realpath(path)
+            if os.path.isdir("/proc/self/fd"):
+                for fd in os.listdir("/proc/self/fd"):
+                    try:
+                        if os.path.realpath(os.readlink("/proc/self/fd/" + fd)) == target_path:
+                            raise PermissionError(32, "file is being used by another process", path)
+                    except OSError as e:
+                        if isinstance(e, PermissionError):
+                            raise
+            return real_unlink(path)
+        before = self.open_fds()
+        with mock.patch.object(safeio.os, target, failing), mock.patch.object(safeio.os, "unlink", windows_unlink), \
+                self.assertRaises(OSError):
+            safeio.write_atomic([(self.p("a.csv"), b"new A"), (self.p("b.csv"), b"new B")])
+        self.assertEqual(self.open_fds(), before, "descriptor leaked")
+        self.assertEqual(sorted(os.listdir(self.d)), ["a.csv", "b.csv"])
+        self.assertEqual((self.read("a.csv"), self.read("b.csv")), expect)
+
+    def test_failures_leave_no_temp_file_or_open_descriptor(self):
+        old = (SENTINEL, SENTINEL)
+        for target, n, expect in (("chmod", 1, old), ("chmod", 2, old), ("fdopen", 1, old), ("fdopen", 2, old),
+                                  ("fsync", 2, old), ("replace", 1, old),
+                                  # W3: a failure between the two replaces leaves the files inconsistent;
+                                  # the remaining temp is still cleaned up.
+                                  ("replace", 2, (b"new A", SENTINEL))):
+            with self.subTest(target=target, call=n):
+                self.fresh()
+                self.check_failure(target, n, expect)
+
     def test_no_replace_before_all_temps_written(self):
         order = []
         real_replace, real_fdopen = os.replace, os.fdopen

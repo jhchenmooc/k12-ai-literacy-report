@@ -7,9 +7,10 @@ Write rules (REPAIR-PLAN v5.10 W1-W5):
 - W1: callers validate everything first and build outputs in memory as bytes;
   nothing is opened for writing until then.
 - W2/W3: write_atomic() writes every output to a temp file in the target directory,
-  closes all of them, and only then os.replace()s them one by one. A failure while
-  writing temps removes only the temps this call created. The gap between two
-  os.replace() calls is NOT covered: a crash there can leave the files inconsistent.
+  closes all of them, and only then os.replace()s them one by one. Any failure, while
+  writing or while replacing, removes the temps this call created that are not yet in
+  place. The gap between two os.replace() calls is NOT covered: a failure there can leave
+  the files inconsistent (the earlier output is already replaced and is not rolled back).
 - W5: die() writes the reason to stderr and exits nonzero. Callers pass IDs, file
   names, line numbers, lengths or hashes only, never abstract or evidence text.
 """
@@ -49,27 +50,39 @@ def _umask():
 
 
 def write_atomic(outputs):
-    """outputs: list of (path, bytes). All temps are written and closed before the first replace."""
-    temps, mode = [], 0o666 & ~_umask()
+    """outputs: list of (path, bytes). All temps are written and closed before the first replace.
+
+    Every temp file this call creates and has not yet moved into place is removed on any failure,
+    including a failed os.replace; the raw descriptor from mkstemp is closed even if wrapping it fails
+    (an open descriptor would make the temp undeletable on Windows). Outputs already replaced are not
+    rolled back (W3: no cross-file transaction).
+    """
+    pending, mode = [], 0o666 & ~_umask()  # (temp, target) not yet replaced
     try:
         for path, data in outputs:
             d = os.path.dirname(os.path.abspath(path))
             fd, tmp = tempfile.mkstemp(dir=d, prefix="." + os.path.basename(path) + ".", suffix=".tmp")
-            temps.append(tmp)
-            os.chmod(tmp, mode)  # mkstemp creates 0600; give the output the usual permissions
-            with os.fdopen(fd, "wb") as f:
+            pending.append((tmp, path))
+            try:
+                f = os.fdopen(fd, "wb")
+            except BaseException:
+                os.close(fd)
+                raise
+            with f:
                 f.write(data)
                 f.flush()
                 os.fsync(f.fileno())
-    except BaseException:
-        for tmp in temps:
+            os.chmod(tmp, mode)  # mkstemp creates 0600; give the output the usual permissions
+        while pending:
+            tmp, path = pending[0]
+            os.replace(tmp, path)
+            pending.pop(0)
+    finally:
+        for tmp, _ in pending:
             try:
                 os.unlink(tmp)
             except OSError:
                 pass
-        raise
-    for (path, _), tmp in zip(outputs, temps):
-        os.replace(tmp, path)
 
 
 def read_jsonl_batches(paths, errors):
