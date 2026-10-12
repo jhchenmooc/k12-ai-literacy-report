@@ -66,6 +66,7 @@
 | J47 | 背景 | Education Sciences | K–12 AI 教育命中多；量大且須特別檢查審稿與研究品質 | [期刊頁](https://www.mdpi.com/journal/education) |
 | J48 | 背景 | Scientific Reports | 綜合型大型期刊，偶有 K–12 AI 素養研究；收錄於 DOAJ、單盲同儕審查；量大須逐篇確認學段（2026-10-11 管理者決定加入） | [期刊頁](https://www.nature.com/srep/) |
 | J49 | 背景 | European Journal of Education | 教育政策與教師；AI × K–12 命中與 J40 相近，須逐篇確認學段（2026-10-11 管理者決定由觀察池升級） | [期刊頁](https://onlinelibrary.wiley.com/journal/14653435) |
+| J50 | 背景 | Eurasia Journal of Mathematics, Science and Technology Education | 數理科技教育；2025 年起 AI × 學校相關約 25 篇；Modestum 出版，期刊頁載明雙盲審查、自述收錄 Scopus（未獨立核實）；不在 DOAJ；須逐篇確認學段（2026-10-12 管理者決定加入） | [期刊頁](https://www.ejmste.com/) |
 
 ## 3. 國際會議池（21 個正式系列）
 
