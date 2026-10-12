@@ -5,7 +5,9 @@ Checks: input work_ids are present, non-empty strings and unique (duplicates are
 rejected with both line numbers, even with identical content); one output per input
 work_id; enum values; every evidence span occurs verbatim in title + " " + abstract
 and has <= 15 whitespace words; `unknown` values carry no span. Prints a JSON report;
-exit code 1 if any error. The report never contains abstract or span text.
+exit code 1 if any error. The report never contains abstract or span text, nor any value
+taken from an output record: invalid values and unrecognised evidence fields are reported
+by type, length and SHA-256 prefix only.
 
 Required evidence (prompts/scope.md, prompts/code1.md) is always diagnosed under
 "required_evidence"; it only counts as an error with --require-evidence. That flag is
@@ -21,7 +23,7 @@ until approved and logged in DEVIATIONS.csv.
   only the field, so this cannot verify that each dim / topic value has its own
   corresponding evidence; only span count and verbatim-ness are checked.
 """
-import json, sys
+import hashlib, json, re, sys
 
 ENUM = {
     "ai_lit_class": {"A", "B", "C", "unknown"},
@@ -40,6 +42,17 @@ TOPICS = {"genai", "ailit_curriculum", "assessment", "teacher_pd", "ethics_safet
           "ct_programming_data", "language", "stem_science", "equity_special", "policy_governance", "none"}
 FIELDS = {"scope": ["ai_lit_class", "b_subtype", "audience_role"],
           "code1": ["audience_role", "stage", "level", "method", "outcome_measured", "genai_flag"]}
+EVIDENCE_FIELDS = {"scope": set(FIELDS["scope"]), "code1": set(FIELDS["code1"]) | {"ai_lit_dims", "topic"}}
+
+
+def describe(v):
+    """Type, length and hash of an untrusted value; the value itself is never printed (W5)."""
+    s = v if isinstance(v, str) else json.dumps(v, ensure_ascii=False, sort_keys=True, default=str)
+    return f"{type(v).__name__}, {len(s)} chars, sha256 {hashlib.sha256(s.encode('utf-8')).hexdigest()[:12]}"
+
+
+def allowed(v, values):
+    return isinstance(v, str) and v in values
 
 
 def required_fields(kind, o):
@@ -99,27 +112,31 @@ def main(kind, inp, outp, require_evidence=False):
             continue
         try:
             o = json.loads(line)
-        except Exception as e:
-            errors.append(f"line {n}: bad json {e}")
+        except ValueError as e:
+            errors.append(f"line {n}: bad json {getattr(e, 'msg', 'invalid')}")
+            continue
+        if not isinstance(o, dict):
+            errors.append(f"line {n}: not a JSON object")
             continue
         w = o.get("work_id")
-        if w not in src:
-            errors.append(f"line {n}: unknown work_id {w}")
+        if not allowed(w, src):
+            shown = w if isinstance(w, str) and re.fullmatch(r"W\d{1,12}", w) else f"({describe(w)})"
+            errors.append(f"line {n}: unknown work_id {shown}")
             continue
         if w in seen:
             errors.append(f"{w}: duplicate")
         seen.add(w)
         for f in FIELDS[kind]:
             v = o.get(f, "")
-            if v not in ENUM[f]:
-                errors.append(f"{w}: {f}={v!r} not allowed")
+            if not allowed(v, ENUM[f]):
+                errors.append(f"{w}: {f} value not allowed ({describe(v)})")
         if kind == "code1":
             for d in o.get("ai_lit_dims") or []:
-                if d not in DIMS:
-                    errors.append(f"{w}: dim {d!r}")
+                if not allowed(d, DIMS):
+                    errors.append(f"{w}: ai_lit_dims value not allowed ({describe(d)})")
             for t in o.get("topic") or []:
-                if t not in TOPICS:
-                    errors.append(f"{w}: topic {t!r}")
+                if not allowed(t, TOPICS):
+                    errors.append(f"{w}: topic value not allowed ({describe(t)})")
         if kind == "scope" and o.get("ai_lit_class") == "C":
             class_c += 1
         ev_fields, spans, empty = set(), {}, 0
@@ -128,15 +145,20 @@ def main(kind, inp, outp, require_evidence=False):
             if not isinstance(span, str):
                 errors.append(f"{w}: evidence entry is not an object with a string span")
                 continue
-            ev_fields.add(ev.get("field"))
+            fld = ev.get("field")
+            if allowed(fld, EVIDENCE_FIELDS[kind]):
+                label = fld
+            else:  # untrusted text: report only its shape, and keep it out of the per-field counts
+                fld, label = None, f"unrecognised field: {describe(ev.get('field'))}"
+            ev_fields.add(fld)
             if not span.strip():
                 empty += 1
             if len(span.split()) > 15:
-                errors.append(f"{w}: span >15 words ({ev.get('field')})")
+                errors.append(f"{w}: span >15 words ({label})")
             if span not in src[w]:
-                errors.append(f"{w}: span not verbatim ({ev.get('field')})")
+                errors.append(f"{w}: span not verbatim ({label})")
             if span.strip():
-                spans.setdefault(ev.get("field"), set()).add(span)
+                spans.setdefault(fld, set()).add(span)
         for f in FIELDS[kind]:
             if o.get(f) == "unknown" and f in ev_fields:
                 errors.append(f"{w}: unknown {f} has a span")
