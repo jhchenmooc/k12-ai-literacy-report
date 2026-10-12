@@ -77,6 +77,8 @@ body{background:var(--bg)}
 .index-table tbody tr:nth-child(even) td,.index-table tbody tr:nth-child(even) .name{background:#f8fafd}
 .index-table td a{display:inline-block;min-width:32px;min-height:32px;line-height:32px;border-radius:8px;background:var(--tint-blue);font-weight:700;text-decoration:none}
 .index-table td a:hover{background:#d8e8f8}
+/* Draw the focus ring inside the year link: the table-wrap clips anything past its edge, so the default ring 4px outside could be cut off at the right edge. */
+.index-table td a:focus-visible{outline-offset:-3px}
 .index-table td.none{color:#a5b3c4}
 /* Keep keyboard focus clear of the sticky name column (WCAG 2.4.11). Chrome only scrolls a focused link that lies
    wholly outside the padded scrollport, so the left padding is the sticky column plus about one link, and the right
