@@ -42,3 +42,18 @@ KB-2025-0062、0063、0064、0091、0093、0094、0100、0101、0105、0108、01
 - Crossref 日期由出版者自行登記，有的出版者把線上日登記成卷期日或上傳日；本次未逐筆讀原頁。被週報或月報引用時，仍依既有流程讀原頁再升為「書目已核」。
 - 只動日期欄位，不改標記、關聯或核對程度。年度論文趨勢報告使用自己的語料與年份，不受影響。
 - 重建知識庫索引與網站頁面；網站上的年份分組與快速索引數字隨之變動。
+
+## 第二輪：其餘 297 筆（管理者 2026-10-12 決定）
+
+Crossref 無線上首發日或判不出首發的 297 筆，再逐組查（2026-10-12 UTC 21 時，Crossref 完整紀錄與出版者原頁）。逐筆結果：[first-online-rest-2026-10-12.csv](first-online-rest-2026-10-12.csv)。
+
+| 分組 | 筆數 | 依據 | 處理 |
+|---|---:|---|---|
+| IEEE Transactions on Learning Technologies 15、Contemporary Educational Technology（Bastas）1 | 16 | 出版者原頁（瀏覽器讀取 IEEE Xplore「Date of Publication」、期刊頁「Published Online」） | 填入首發日 |
+| Taylor & Francis 3、Springer 1、ACM 期刊 1 | 5 | Crossref 出版者登記的「Published online／First Online」；紙本卷期日為名目封面日 | 填入線上日 |
+| Routledge 專書章節 | 2 | Crossref 專書出版日（`published-print`）；專書出版即章節首發 | 填入出版日 |
+| AERA 年會 38、IEEE ICALT 2、ACM 會議 6、ISLS CSCL 2 | 48 | 首次公開為會議發表；會議日期見 CSV | `year_basis` 改 `event_year`（網站「會議年（首發日未知）」） |
+| Elsevier 期刊 | 226 | ScienceDirect 拒絕自動讀取；Crossref 與 Elsevier API 無線上首發日 | 維持卷期年 |
+
+- 填入者 `date_precision=day`、`year_basis=first_publication`；年份都沒有改變。所有紀錄的核對程度不變（ISLS 2 筆維持「書目已核」，只改年份依據）。
+- Elsevier 226 筆只查得 DOI 登記日（Crossref `created`，OpenAlex `publication_date` 與之相同），不等於首發日，不填入。其中 5 筆 DOI 登記年與卷期年不同，可能歸錯年，待以一般瀏覽器開 ScienceDirect 讀「Available online」後補：KB-2027-0001（登記 2026-08-28）、KB-2026-0150（2025-12-04）、KB-2026-0155（2025-11-29）、KB-2026-0215（2025-12-13）、KB-2026-0233（2025-10-28）。
