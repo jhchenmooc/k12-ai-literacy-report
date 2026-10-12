@@ -62,6 +62,7 @@ node research/scholar-watch-run.js search-runs --out <scratch> --run-date 2026-1
 - 查詢依學者清單「確認」欄：有 ORCID 用 `author.orcid`；沒有 ORCID 或註明「改用作者 ID」者用 `author.id`；註明「須加（教育）主題詞」者加教育主題詞，並另跑一次不加篩選的查詢核對筆數。
 - 這比 2026-10-09 第一次週檢索嚴格：當時 T03、T04、T07、T08 沒加主題詞，T07 用作者 ID。
 - 查詢失敗記 `unavailable`，筆數留空，不記為零命中。請求不帶 email、mailto 或金鑰。
+- 每個查詢以 cursor 翻頁（每頁 200 筆，最多 20 頁）直到 `next_cursor` 為空；任一頁失敗、格式異常或 cursor 重複，整個查詢記為失敗，不保留部分結果。全部頁取完才寫入合併的 raw 檔。`results_seen` 仍記第一頁的 `meta.count`；實際取得筆數不同時在 `runs.json` 的 `count_mismatch` 註記，不算失敗。
 
 ### 怎麼篩
 

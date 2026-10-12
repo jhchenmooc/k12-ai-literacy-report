@@ -41,6 +41,7 @@
 | `scripts/fouryear_tables.py` | 四年報告的主表、敏感度表、結論規則與描述表；報告與逐刊逐年表在 `research/p0-annual-trends-2022-2025/` |
 | `scripts/recall_refset.py` | 系統性回顧參考集召回率 |
 | `scripts/agreement_*.py`、`scripts/fulltext_*.py` | 一致性抽樣、摘要重組（只在 scratchpad 執行）、κ 計算、全文對照抽樣；用法見各檔開頭 |
+| `scripts/safeio.py`、`tests/` | 共用的拒絕與原子寫檔工具（先驗證後寫檔；多檔輸出全部寫成暫存檔後才依序取代，兩次取代之間中斷時可能不一致）；`tests/` 為離線回歸測試（合成資料、mock 網路，CI 執行） |
 
 ## 資料字典
 
@@ -138,6 +139,8 @@
 
 - 四年報告：`python3 -I research/trend-corpus/scripts/fouryear_tables.py research/trend-corpus --tables --journal-csv research/p0-annual-trends-2022-2025/journal-year.csv`（在 repo 根目錄執行）。
 - 召回率：`python3 -I research/trend-corpus/scripts/recall_refset.py research/trend-corpus --offline`（不加 `--offline` 會重查 OpenAlex 並覆寫 `recall.csv`）。
+- 編碼：所有腳本讀寫檔案一律明定 UTF-8（外部匯出用 `utf-8-sig`），在 Linux 以模擬的 Windows 預設 cp950 文字模式驗證過輸出位元組相同（Windows 實機尚待重跑）。螢幕輸出（stdout）仍依主控台編碼；在 Windows 上把輸出導向檔案（例如 `wos_query.py > wos/queries.txt`）時請加 `-X utf8`：`python -X utf8 -I …`。
+- 離線回歸測試：`python3 -I -m unittest discover -s research/trend-corpus/tests -v`（在 repo 根目錄執行；fixture 寫在作業系統暫存目錄，不連網）。
 - 每千篇比率的分母（`queries.json` 的面板總篇數）無法排除短評、社論等非論文；特刊尚未以 OpenAlex 卷期資訊判斷。
 
 第 1 步的計數都可以依 `step1/openalex-requests.jsonl` 中的網址重新請求。OpenAlex 資料會更新，重算結果可能與 2026-10-10 不同。

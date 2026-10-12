@@ -87,6 +87,47 @@ async function get(url){
  }
  return last;
 }
+/* D2: follow OpenAlex cursor paging until next_cursor is empty (or a page has no results). Any failed,
+   malformed or repeated-cursor page fails the whole query, so partial results are never kept. results_seen
+   stays meta.count of the first page; a different number of received works is recorded, not treated as failure. */
+const MAX_PAGES=20;
+async function fetchAll(url,{getter=get,maxPages=MAX_PAGES}={}){
+ const results=[],used=new Set();let cursor="*",first=null,r=null;
+ for(let page=1;;page++){
+  if(page>maxPages)return {http:r.http,utc:first.utc,data:null,reason:`more than ${maxPages} pages`};
+  r=await getter(url+"&cursor="+encodeURIComponent(cursor));
+  if(!r.data)return {http:r.http,utc:(first||r).utc,data:null,reason:`page ${page} failed (HTTP ${r.http})`};
+  if(!r.data.meta||!Array.isArray(r.data.results))return {http:r.http,utc:(first||r).utc,data:null,reason:`page ${page} malformed`};
+  if(!first)first=r;
+  results.push(...r.data.results);
+  const next=r.data.meta.next_cursor;
+  if(!next||!r.data.results.length){
+   const total=first.data.meta.count;
+   return {http:200,utc:first.utc,pages:page,total,received:results.length,count_mismatch:total!==results.length,
+    data:{meta:{...first.data.meta,next_cursor:null,pages:page,received:results.length},results}};
+  }
+  if(used.has(next)||next===cursor)return {http:r.http,utc:first.utc,data:null,reason:`repeated cursor after page ${page}`};
+  used.add(cursor);cursor=next;
+ }
+}
+function writeAtomic(file,text){
+ const tmp=path.join(path.dirname(file),"."+path.basename(file)+"."+process.pid+".tmp");
+ try{fs.writeFileSync(tmp,text);fs.renameSync(tmp,file)}catch(e){try{fs.unlinkSync(tmp)}catch{}throw e}
+}
+async function runFetch(scholars,{from,to,out,getter=get,maxPages=MAX_PAGES}){
+ fs.mkdirSync(path.join(out,"raw"),{recursive:true});
+ const runs=[];
+ for(const s of scholars)for(const {role,url} of queries(s,from,to)){
+  const r=await fetchAll(url,{getter,maxPages});
+  if(r.data)writeAtomic(path.join(out,"raw",`${s.id}_${role}.json`),JSON.stringify(r.data));
+  const run={scholar_id:s.id,tier:s.tier,role,url,utc:r.utc,http:r.http,status:r.data?"ok":"failed",total:r.data?r.total:null};
+  if(r.data){run.pages=r.pages;run.received=r.received;if(r.count_mismatch)run.count_mismatch=`meta.count ${r.total} but ${r.received} works received`}
+  else run.reason=r.reason;
+  runs.push(run);
+ }
+ writeAtomic(path.join(out,"runs.json"),JSON.stringify({from,to,scholars,runs},null,1));
+ return runs;
+}
 function args(argv){const o={};for(let i=0;i<argv.length;i++)if(argv[i].startsWith("--"))o[argv[i].slice(2)]=argv[i+1]&&!argv[i+1].startsWith("--")?argv[++i]:true;return o}
 async function main(argv){
  const [cmd,...rest]=argv,o=args(rest);
@@ -95,13 +136,7 @@ async function main(argv){
  if(!o.out)throw Error("--out <scratch dir> required");
  fs.mkdirSync(path.join(o.out,"raw"),{recursive:true});
  if(cmd==="fetch"){
-  const runs=[];
-  for(const s of list())for(const {role,url} of queries(s,o.from,o.to)){
-   const r=await get(url);
-   if(r.data)fs.writeFileSync(path.join(o.out,"raw",`${s.id}_${role}.json`),JSON.stringify(r.data));
-   runs.push({scholar_id:s.id,tier:s.tier,role,url,utc:r.utc,http:r.http,status:r.data?"ok":"failed",total:r.data?r.data.meta.count:null});
-  }
-  fs.writeFileSync(path.join(o.out,"runs.json"),JSON.stringify({from:o.from,to:o.to,scholars:list(),runs},null,1));
+  const runs=await runFetch(list(),{from:o.from,to:o.to,out:o.out});
   console.log(`queries ${runs.length}, failed ${runs.filter(r=>r.status!=="ok").length}`);return;
  }
  const meta=JSON.parse(fs.readFileSync(path.join(o.out,"runs.json"),"utf8"));
@@ -123,4 +158,4 @@ async function main(argv){
  throw Error("usage: list|fetch|collect|search-runs (see research/scholar-watch-usage-spec.md)");
 }
 if(require.main===module)main(process.argv.slice(2)).catch(e=>{console.error(e.message);process.exit(1)});
-module.exports={parseWatchlist,queries,selectTiers,collectWorks,searchRunRows,normDoi,EDU};
+module.exports={parseWatchlist,queries,selectTiers,collectWorks,searchRunRows,normDoi,EDU,fetchAll,runFetch,MAX_PAGES};

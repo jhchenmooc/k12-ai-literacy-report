@@ -18,6 +18,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run offline trend-corpus regression tests (synthetic fixtures, mocked network)
+        run: python -I -m unittest discover -s research/trend-corpus/tests -v
       - name: Install locked HTML parser without lifecycle scripts
         run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Run publication validation regression tests
@@ -62,6 +67,8 @@ jobs:
           node --test research/knowledge-base-quality.test.js
           node research/validate-knowledge-base.js .
           node research/render-knowledge-base-years.js
+      - name: Test scholar-watch runner with mocked OpenAlex (cursor paging, failures never zero hits)
+        run: node --test research/scholar-watch-run.test.js
       - name: Validate issue manifests and claim metadata
         run: node research/validate-publication.js .
       - name: Verify generated site pages (lists, archive, about, homepage blocks)
