@@ -139,6 +139,7 @@
 
 - 四年報告：`python3 -I research/trend-corpus/scripts/fouryear_tables.py research/trend-corpus --tables --journal-csv research/p0-annual-trends-2022-2025/journal-year.csv`（在 repo 根目錄執行）。
 - 召回率：`python3 -I research/trend-corpus/scripts/recall_refset.py research/trend-corpus --offline`（不加 `--offline` 會重查 OpenAlex 並覆寫 `recall.csv`）。
+- 編碼：所有腳本讀寫檔案一律明定 UTF-8（外部匯出用 `utf-8-sig`），Windows 預設的 cp950 模式與 Linux 產生相同位元組。螢幕輸出（stdout）仍依主控台編碼；在 Windows 上把輸出導向檔案（例如 `wos_query.py > wos/queries.txt`）時請加 `-X utf8`：`python -X utf8 -I …`。
 - 離線回歸測試：`python3 -I -m unittest discover -s research/trend-corpus/tests -v`（在 repo 根目錄執行；fixture 寫在作業系統暫存目錄，不連網）。
 - 每千篇比率的分母（`queries.json` 的面板總篇數）無法排除短評、社論等非論文；特刊尚未以 OpenAlex 卷期資訊判斷。
 

@@ -11,7 +11,7 @@ def lr(total,counts):
 out=[]
 for Y in (2022,2023,2024):
     SEED=20261010+Y*10+2
-    rows=[x for x in csv.DictReader(open(os.path.join(sys.argv[1],str(Y),'corpus.csv'))) if x['ai_lit_class'] in ('A','B','C','unknown')]
+    rows=[x for x in csv.DictReader(open(os.path.join(sys.argv[1],str(Y),'corpus.csv'),encoding='utf-8',newline='')) if x['ai_lit_class'] in ('A','B','C','unknown')]
     cls={k:sum(x['ai_lit_class']==k for x in rows) for k in 'A B C unknown'.split()}
     N=max(math.ceil((cls['A']+cls['B'])*0.10),30); NCU=max(4,round(N*10/125)); NU=1 if cls['unknown'] else 0
     alloc={**lr(N-NCU,{'A':cls['A'],'B':cls['B']}),'C':NCU-NU,'unknown':NU}
@@ -30,5 +30,5 @@ for Y in (2022,2023,2024):
             ids=sorted(x['work_id'] for x in pool)
             pick=rng.sample(ids,alloc[k]) if alloc[k] else []; plan[k]=(len(ids),alloc[k]); out+=[(Y,i,k,'') for i in pick]
     print(Y,'seed',SEED,'AB',cls['A']+cls['B'],'N',N,'NCU',NCU,json.dumps(plan,ensure_ascii=False))
-json.dump([{'year':y,'work_id':i,'stratum_class':k,'stratum_stage':s} for y,i,k,s in out],open('sample.json','w'),indent=0)
+with open('sample.json','w',encoding='utf-8',newline='') as fh: json.dump([{'year':y,'work_id':i,'stratum_class':k,'stratum_stage':s} for y,i,k,s in out],fh,indent=0)
 print(len(out))

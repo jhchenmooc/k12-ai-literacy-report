@@ -6,11 +6,11 @@
 import csv,sys,os,json,math,collections,urllib.request,urllib.parse
 R=sys.argv[1];OUT=os.path.join(R,'recall.csv')
 FILES={2022:'2022/corpus.csv',2023:'2023/corpus.csv',2024:'2024/corpus.csv',2025:'2025/corpus-v2.csv'}
-C={y:{x['work_id'] for x in csv.DictReader(open(os.path.join(R,f),encoding='utf-8'))} for y,f in FILES.items()}
-ref=[r for r in csv.DictReader(open(os.path.join(R,'refset.csv'),encoding='utf-8')) if r['in_panel']=='yes']
+C={y:{x['work_id'] for x in csv.DictReader(open(os.path.join(R,f),encoding='utf-8',newline=''))} for y,f in FILES.items()}
+ref=[r for r in csv.DictReader(open(os.path.join(R,'refset.csv'),encoding='utf-8',newline='')) if r['in_panel']=='yes']
 def get(u):return json.load(urllib.request.urlopen(u))
 if '--offline' in sys.argv:
-    rows=list(csv.DictReader(open(OUT,encoding='utf-8')))
+    rows=list(csv.DictReader(open(OUT,encoding='utf-8',newline='')))
 else:
     rows=[]
     for r in ref:
