@@ -65,3 +65,62 @@ test("search_runs rows record failures as failures and keep the established run_
  assert.match(rows[1],/"query_scoped","unavailable","","","",/);
  assert.match(rows[1],/Query failed \(HTTP 503\); not a zero-hit result/);
 });
+
+/* D2: cursor paging with a mocked transport (no network). */
+const os=require("node:os"),{fetchAll,runFetch,MAX_PAGES}=require("./scholar-watch-run.js");
+function pager(total,{perPage=200,fail={},repeat=false,countDelta=0}={}){
+ const works=Array.from({length:total},(_,i)=>({id:"https://openalex.org/W"+(i+1),doi:"https://doi.org/10.9/"+(i+1),title:"T"+(i+1)}));
+ const calls=[];
+ const getter=async url=>{
+  calls.push(url);
+  if(fail[calls.length])return {http:fail[calls.length],data:null,utc:"u"+calls.length};
+  const cur=new URL(url).searchParams.get("cursor"),off=cur==="*"?0:Number(cur);
+  const next=off+perPage<total?String(repeat?perPage:off+perPage):null;
+  return {http:200,utc:"u"+calls.length,data:{meta:{count:total+countDelta,per_page:perPage,next_cursor:next},results:works.slice(off,off+perPage)}};
+ };
+ return {getter,calls};
+}
+const URL0="https://api.openalex.org/works?filter=author.id:A1,from_publication_date:2026-10-01,to_publication_date:2026-10-07&per_page=200";
+test("201 results: two cursor requests collect all works",async()=>{
+ const {getter,calls}=pager(201);
+ const r=await fetchAll(URL0,{getter});
+ assert.equal(calls.length,2);
+ assert.match(calls[0],/&cursor=\*$/);assert.match(calls[1],/&cursor=200$/);
+ assert.equal(r.data.results.length,201);assert.equal(r.total,201);assert.equal(r.count_mismatch,false);
+ assert.equal(r.data.meta.next_cursor,null);
+});
+test("a failed second page fails the whole query, never zero or partial",async()=>{
+ const {getter}=pager(201,{fail:{2:503}});
+ const r=await fetchAll(URL0,{getter});
+ assert.equal(r.data,null);assert.match(r.reason,/page 2 failed \(HTTP 503\)/);
+});
+test("repeated cursor and page cap fail the query",async()=>{
+ const rep=await fetchAll(URL0,{getter:pager(601,{repeat:true}).getter});
+ assert.equal(rep.data,null);assert.match(rep.reason,/repeated cursor after page 2/);
+ const cap=await fetchAll(URL0,{getter:pager(5,{perPage:1}).getter,maxPages:3});
+ assert.equal(cap.data,null);assert.match(cap.reason,/more than 3 pages/);
+ assert.equal(MAX_PAGES,20);
+});
+test("meta.count differing from received works is recorded, not a failure",async()=>{
+ const r=await fetchAll(URL0,{getter:pager(3,{countDelta:2}).getter});
+ assert.ok(r.data);assert.equal(r.total,5);assert.equal(r.received,3);assert.equal(r.count_mismatch,true);
+});
+test("fetch writes merged raw only for complete queries and stale raw is not reused after a failure",async()=>{
+ const out=fs.mkdtempSync(path.join(os.tmpdir(),"scholar-d2-"));
+ try{
+  const scholars=[{id:"S01",tier:"A1",filter:"author.id:A1",edu_topic:false},{id:"S02",tier:"A1",filter:"author.id:A2",edu_topic:false}];
+  let runs=await runFetch(scholars,{from:"2026-10-01",to:"2026-10-07",out,getter:pager(201).getter});
+  assert.deepEqual(runs.map(r=>[r.status,r.total,r.pages,r.received]),[["ok",201,2,201],["ok",201,2,201]]);
+  assert.equal(JSON.parse(fs.readFileSync(path.join(out,"raw","S01_primary.json"),"utf8")).results.length,201);
+  const stale=fs.readFileSync(path.join(out,"raw","S02_primary.json"));
+  runs=await runFetch(scholars,{from:"2026-10-01",to:"2026-10-07",out,getter:pager(201,{fail:{4:500}}).getter});
+  assert.deepEqual(runs.map(r=>r.status),["ok","failed"]);
+  assert.match(runs[1].reason,/page 2 failed/);
+  assert.deepEqual(fs.readFileSync(path.join(out,"raw","S02_primary.json")),stale);
+  const rows=searchRunRows(JSON.parse(fs.readFileSync(path.join(out,"runs.json"),"utf8")).runs,{runDate:"2026-10-08",label:"t",details:"d"});
+  assert.match(rows[1],/"query_scoped","unavailable","","","",/);
+  assert.match(rows[0],/,"ok","201",/);
+  assert.match(rows[0],/to_publication_date:2026-10-07&per_page=200",/);
+  assert.deepEqual(fs.readdirSync(path.join(out,"raw")).filter(f=>f.endsWith(".tmp")),[]);
+ }finally{fs.rmSync(out,{recursive:true,force:true})}
+});
