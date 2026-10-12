@@ -1,13 +1,30 @@
 # 第一次（corpus-v2）對第二次編碼（out/batch*.jsonl）的一致率與 Cohen κ；寫 agreement.csv（另加「雙方皆 K-12 對象的 A 類」面向列見 2025/agreement.csv）。
-# 用法：python3 -I agreement_kappa.py ../2025/corpus-v2.csv（在含 sample.json 與 out/ 的目錄執行）
-import csv,json,sys,glob,collections,math
-corp={x['work_id']:x for x in csv.DictReader(open(sys.argv[1]))}
-c2={}
-for f in sorted(glob.glob('out/batch*.jsonl')):
-    for l in open(f):
-        if l.strip(): o=json.loads(l); c2[o['work_id']]=o
-S=json.load(open('sample.json')); ids=[s['work_id'] for s in S]
-missing=[i for i in ids if i not in c2]; print('coded',len(c2),'missing',missing)
+# 用法：python3 -I agreement_kappa.py ../2025/corpus-v2.csv [--allow-partial]（在含 sample.json 與 out/ 的目錄執行）
+#   先驗證後寫檔：sample.json 的 work_id 重複／缺少／非字串、corpus 無對應、batch 內任何重複（含同值）、
+#   batch 有 sample 以外的 work_id，都以非零結束碼拒絕，不動既有 agreement.csv。
+#   sample 中有未編碼者：預設拒絕；--allow-partial 只寫 agreement.partial.csv 與 partial-missing.txt（不寫正式檔名）。
+import csv,json,sys,glob,collections,math,os
+HERE=os.path.dirname(os.path.abspath(__file__));sys.path.insert(0,HERE)
+import safeio  # noqa: E402
+args=[a for a in sys.argv[1:] if a!='--allow-partial'];partial='--allow-partial' in sys.argv[1:]
+if len(args)!=1: safeio.die('usage: agreement_kappa.py <corpus-v2.csv> [--allow-partial]')
+with open(args[0],encoding='utf-8',newline='') as fh: corp={x['work_id']:x for x in csv.DictReader(fh)}
+err=[]
+c2={w:o for w,(o,_,_) in safeio.read_jsonl_batches(sorted(glob.glob('out/batch*.jsonl')),err).items()}
+with open('sample.json',encoding='utf-8') as fh: S=json.load(fh)
+ids=[];seen=set()
+for k,s in enumerate(S if isinstance(S,list) else [],1):
+    w=s.get('work_id') if isinstance(s,dict) else None
+    if not isinstance(w,str) or not w.strip(): err.append(f'sample.json entry {k}: missing, empty or non-string work_id');continue
+    if w in seen: err.append(f'{w}: duplicate in sample.json (entry {k})');continue
+    seen.add(w);ids.append(w)
+    if w not in corp: err.append(f'{w}: sample.json entry {k} has no record in {os.path.basename(args[0])}')
+if not isinstance(S,list): err.append('sample.json: not a JSON list')
+for w in sorted(set(c2)-seen): err.append(f'{w}: second coding in out/ is not in sample.json')
+missing=[i for i in ids if i not in c2]
+if missing and not partial: err.append(f'{len(missing)} sampled work_id(s) have no second coding (use --allow-partial for an exploratory agreement.partial.csv): '+' '.join(missing))
+if err: safeio.die(err)
+print('coded',len(c2),'missing',missing)
 ids=[i for i in ids if i in c2]
 def kappa(a,b):
     n=len(a); 
@@ -40,8 +57,9 @@ for f in ('audience_role','stage','method'):
 dims=['T-PD','T-TEA','T-BAS','T-ETH','S-SYS','S-LRN','S-BAS','S-ETH']
 for d in dims:
     rep('dim '+d,[d in lst(corp[i]['ai_lit_dims']) for i in sub],[d in lst(c2[i].get('ai_lit_dims')) for i in sub],pos=True,unk='__')
-w=csv.writer(open('agreement.csv','w'));w.writerow(['dimension','n','agree','kappa','n_excl_both_unknown','agree_excl','kappa_excl','unknown_rate_c1','unknown_rate_c2','n_positive_either'])
-w.writerows(rows)
+H=['dimension','n','agree','kappa','n_excl_both_unknown','agree_excl','kappa_excl','unknown_rate_c1','unknown_rate_c2','n_positive_either']
+if partial and missing: safeio.write_atomic([('agreement.partial.csv',safeio.csv_bytes(H,rows)),('partial-missing.txt',''.join(i+'\n' for i in missing).encode('utf-8'))])
+else: safeio.write_atomic([('agreement.csv',safeio.csv_bytes(H,rows))])
 for r in rows: print(r)
 print('model_ids',collections.Counter(c2[i].get('model_id') for i in ids))
 cm=collections.Counter((corp[i]['ai_lit_class'],c2[i]['ai_lit_class']) for i in ids); print('class crosstab',sorted(cm.items()))
