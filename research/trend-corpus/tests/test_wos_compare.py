@@ -104,7 +104,7 @@ class WosCompare(Case):
             "not_json": {"body": "<html>busy</html>"},
             "no_results": {"json": {"meta": {"count": 0}}},
             "results_not_list": {"json": {"meta": {"count": 1}, "results": {"x": 1}}},
-            "no_meta": {"json": {"results": []}},
+            "bad_meta": {"json": {"meta": {"count": "3"}, "results": []}},
             "unrequested_doi": page([work(7, "10.9/other")]),
             "bad_work_id": page([dict(work(7, "10.6/a"), id="https://openalex.org/A7")]),
         }
@@ -115,6 +115,13 @@ class WosCompare(Case):
                 self.plant(*OUT)
                 r = self.run_({"works": [], "calls": {"1": act}})
                 self.assert_rejected(r, OUT, stderr_has="response anomaly")
+
+    def test_response_without_meta_is_a_single_page(self):
+        self.fixture(["10.6/a", "10.6/b"])
+        r = self.run_({"calls": {"1": {"json": {"results": [work(61, "10.6/a")]}}}})
+        self.assert_ok(r)
+        self.assertEqual({d: x["status"] for d, x in self.statuses().items()},
+                         {"10.6/a": "oa_2025_not_in_union", "10.6/b": "not_in_openalex"})
 
     def test_meta_count_above_received_rejected(self):
         self.fixture(["10.7/a", "10.7/b"])
