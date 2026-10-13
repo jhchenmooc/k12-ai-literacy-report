@@ -1035,6 +1035,8 @@
 | KB-2026-0271 — [Culturally Situated AI Safety for Youth: Saudi Arabian Perspectives of Youth, Parents and Teachers](https://ojs.aaai.org/index.php/AIES/article/view/43131) | conference_paper | 2026-10-11 | bibliographic_checked |
 | KB-2026-0272 — [Teachers’ perceptions of ChatGPT support across TPACK domains: A cross-sectional survey in UAE schools](https://www.ejmste.com/article/teachers-perceptions-of-chatgpt-support-across-tpack-domains-a-cross-sectional-survey-in-uae-schools-19564) | journal_article | 2026-10-11 | bibliographic_checked |
 | KB-2026-0273 — [From Instructional Intent to Classroom-Ready Lessons: Investigating Teacher-AI Collaboration in Lesson Authoring for Secondary Computing Education](https://arxiv.org/abs/2610.12834) | preprint | 2026-10-09 | bibliographic_checked |
+| KB-2026-0274 — [When AI Is—and Is Not—Needed: AI Literacy and Computational Thinking in Primary STEM](https://doi.org/10.3390/jintelligence14100257) | journal_article | 2026-10-12 | bibliographic_checked |
+| KB-2026-0275 — [Toward Responsible and Sustainable AI Integration in Education: A Cross-National Analysis of Factors Influencing Teachers’ AI Adoption Using TALIS 2024](https://doi.org/10.3390/su182010310) | journal_article | 2026-10-10 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

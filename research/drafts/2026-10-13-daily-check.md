@@ -64,3 +64,19 @@
 ## 驗證
 
 依 `.github/workflows/verify-and-deploy.yml` 的 verify 步驟在本機逐一跑過（npm ci 之後；public-site 建置前先刪除 `_public_site`），全部通過。
+
+## 補發（2026-10-13，管理者同意）
+
+管理者看過觀察 4 筆的說明後決定：1–3 收（逐篇收錄，不列入監測清單），4 不收（2026-10-13）。三篇的出版者網頁（MDPI、Sage）對自動請求回 HTTP 403，依規則不繞過；改由管理者下載出版者 PDF 提供，2026-10-13T05:50Z 讀取。
+
+| 項目 | 原文首次公開 | 處理 |
+|---|---|---|
+| `10.3390/jintelligence14100257`（Journal of Intelligence） | 2026-10-12（PDF 首頁 Published；Received 2026-08-18、Accepted 2026-10-07） | 匯入候選 W2026-10-09-A21，發布 D20261013-02；介入研究，只寫目的、設計與樣本 |
+| `10.3390/su182010310`（Sustainability） | 2026-10-10（PDF 首頁 Published；Received 2026-08-22、Accepted 2026-10-07） | 匯入候選 W2026-10-09-A22，發布 D20261013-03；相關研究，只寫作者報告的關聯 |
+| `10.1177/21582440261496715`（Sage Open） | PDF 只有 Received 2025-08-02、Revised 2026-07-30、Accepted 2026-09-21，**沒有上線日** | 暫不匯入：原文首發日未核（Crossref 登記 2026-10-12 不採用），待管理者提供 Sage 網頁「First published」日期 |
+| `10.70838/pemj.630910`（PEMJ） | — | 不收（不列為不收出處） |
+
+- 兩筆知識庫紀錄 KB-2026-0274（Journal of Intelligence）、KB-2026-0275（Sustainability），`journal_article`、`bibliographic_checked`，關聯 KR-9130～9148；不加 `published_in`（不在監測清單）。
+- 兩輪對照：第一輪 05:50Z 讀 PDF 撰寫；第二輪 05:58Z 隔離子代理逐項對照英文原句，兩則都判定一致，依建議把「多群組分析」改為「多群組結構方程模型」。同一模型，非獨立審閱。
+- 本期改為 3 則；候選池 22 筆，publish 9 筆（A14–A22），`screening_summary` 同步為 9。本機 verify 全部通過。
+- 出版者 PDF 依管理者指示另存私人 repo，不放公開 repo。
