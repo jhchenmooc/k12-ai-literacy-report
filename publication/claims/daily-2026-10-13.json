@@ -197,5 +197,56 @@
       "A quasi-experimental approach was applied that incorporated a scale and program developed by the author."
     ],
     "attributed_summary": "研究旨在檢視一項培訓方案，該方案旨在提升教師對使用 AI 強化應用程式發展聽障與重聽學生語言能力的知識與態度；對象為沙烏地阿拉伯利雅德 31 名任教聽障與重聽學生的國小女教師，採單組準實驗設計，使用作者自編的量表與方案，測量介入前後知識與態度的變化。"
+  },
+  {
+    "claim_id": "D20261013-05",
+    "candidate_id": "W2026-10-09-A24",
+    "kind": "news_policy",
+    "claim_text": "來源機構：한국교육과정평가원（韓國教育課程評價院，KICE）；資料標題：교사의 수업 및 평가 지원을 위한 생성형 AI 활용 방안 탐색(연구리포트 13호 발간) 보도자료；來源刊登日：2026-10-07。官方文件表示：韓國教育課程評價院 10 月 7 日發表研究報告第 13 號，旨在研擬學校教學與評量中有效且負責任運用生成式 AI 的方案；研究檢視運用現況與案例，以開發〈教學與評量的生成式 AI 運用指引〉為目的，提出透明、安全、公平、責任、以人為本 5 大原則與 15 條共同指引，及依教學設計階段的 11 項上位、28 項下位運用策略與 33 條運用指引。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+    "claim_class": "descriptive",
+    "risk_tier": "medium",
+    "level": "N-V2",
+    "daily_fact_kind": "official_attributed_summary",
+    "source_document_type": "official_commentary",
+    "source_title": "교사의 수업 및 평가 지원을 위한 생성형 AI 활용 방안 탐색(연구리포트 13호 발간) 보도자료",
+    "source_organization": "한국교육과정평가원（韓國教育課程評價院，KICE）",
+    "source_url": "https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101159&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice",
+    "evidence_source_url": "https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101159&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice",
+    "source_locator": "KICE 보도자료頁：글쓴이 홍보실；등록일 2026-10-07；正文副標兩行與第 1、2 段；摘要歸屬：第 1 段（發表與目的）、第 2 段（研究目的）、副標兩行（原則、指引、策略數目）；附件 보도자료 hwpx 與 (별첨)연구리포트13호.pdf 未逐頁核對",
+    "source_type": "official_news",
+    "checked_at": "2026-10-13",
+    "publication_date": "2026-10-07",
+    "first_disclosed_on": "2026-10-07",
+    "evidence_path": "publication/sources/d2026-10-13-a24-kice.txt",
+    "evidence_sha256": "ffb365c75338de4963d10290d75e9ed57f678d3cb082cd70b657884823f940cc",
+    "original_excerpt": "‘투명성·안전성·공정성·책임성·인간 중심 활용’ 5대 원칙과 15개 공통 지침 제시 … 교수설계 단계별 11개 상위·28개 하위 활용 전략과 33개 활용 지침 마련 … 한국교육과정평가원(원장 김문희)은 10월 7일(수) 학교 교육의 수업 및 평가에서 생성형 AI를 효과적이고 책임 있게 활용할 수 있는 방안을 마련하기 위해 「교사의 수업 및 평가 지원을 위한 생성형 AI 활용 방안 탐색」 연구 결과(연구리포트 제13호)를 발표하였다. … 이번 연구는 생성형 AI의 교육적 활용이 확대되는 상황에서 학교 수업과 평가에서의 활용 실태와 사례를 살펴보고, 이를 토대로 교사가 생성형 AI를 교육적으로 타당하고 윤리적으로 활용할 수 있도록 「수업 및 평가를 위한 생성형 AI 활용 가이드라인」을 개발하는 것을 목적으로 수행되었다.",
+    "interpretation_note": "轉述官方新聞稿所載的報告發表、研究目的與原則、指引、策略數目，不加解讀；新聞稿不是報告全文，也不是教育部政策文件。",
+    "scope_limitation": "官方研究機構新聞稿（KICE 網站），報導研究報告第 13 號發表與其提出的原則、指引、策略數目；不是政策文件，報告全文（附件 PDF）未逐頁核對，指引內容以報告全文為準。本則為 10/13 期補發（韓國來源原未列入每日例行搜尋）。",
+    "assertion_type": "direct_statement",
+    "translation_reviewed": true,
+    "source_checked": true,
+    "scope_checked": true,
+    "outcome_checked": false,
+    "independent_review": false,
+    "conflict_unresolved": false,
+    "contradiction_type": "none",
+    "ai_crosscheck_status": "concordant",
+    "ai_crosscheck_passes": 2,
+    "ai_crosscheck_record": "第一輪 2026-10-13T16:18Z 讀 KICE 보도자료原頁（글쓴이 홍보실，등록일 2026-10-07），擇副標兩行與正文第 1、2 段撰寫中文摘要；第二輪 2026-10-13T16:22Z 由隔離子代理逐項對照韓文原文（機構與日期、報告號、目的句、原則名稱與數目、指引與策略數目、語氣強度），指出目的句語氣偏強、把「以開發指引為目的」寫成已完成，修正後再對照判定一致。同一模型，非獨立審閱。",
+    "ai_lit_class": "A",
+    "ai_lit_dims": [
+      "T-TEA",
+      "T-ETH"
+    ],
+    "ai_lit_note": "開發教師在教學與評量中運用生成式 AI 的指引與原則（含透明、安全、公平、責任等原則），對應 T-TEA「整合AI與教學法」與 T-ETH「深化AI安全負責應用」",
+    "audience": "k12",
+    "decision": "publish",
+    "summary_evidence_spans": [
+      "한국교육과정평가원(원장 김문희)은 10월 7일(수) 학교 교육의 수업 및 평가에서 생성형 AI를 효과적이고 책임 있게 활용할 수 있는 방안을 마련하기 위해 「교사의 수업 및 평가 지원을 위한 생성형 AI 활용 방안 탐색」 연구 결과(연구리포트 제13호)를 발표하였다.",
+      "이번 연구는 생성형 AI의 교육적 활용이 확대되는 상황에서 학교 수업과 평가에서의 활용 실태와 사례를 살펴보고, 이를 토대로 교사가 생성형 AI를 교육적으로 타당하고 윤리적으로 활용할 수 있도록 「수업 및 평가를 위한 생성형 AI 활용 가이드라인」을 개발하는 것을 목적으로 수행되었다.",
+      "‘투명성·안전성·공정성·책임성·인간 중심 활용’ 5대 원칙과 15개 공통 지침 제시",
+      "교수설계 단계별 11개 상위·28개 하위 활용 전략과 33개 활용 지침 마련"
+    ],
+    "attributed_summary": "韓國教育課程評價院 10 月 7 日發表研究報告第 13 號，旨在研擬學校教學與評量中有效且負責任運用生成式 AI 的方案；研究檢視運用現況與案例，以開發〈教學與評量的生成式 AI 運用指引〉為目的，提出透明、安全、公平、責任、以人為本 5 大原則與 15 條共同指引，及依教學設計階段的 11 項上位、28 項下位運用策略與 33 條運用指引。"
   }
 ]

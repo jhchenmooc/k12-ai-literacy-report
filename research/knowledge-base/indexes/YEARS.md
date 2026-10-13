@@ -1339,6 +1339,7 @@
 | KB-2026-0274 — [When AI Is—and Is Not—Needed: AI Literacy and Computational Thinking in Primary STEM](https://doi.org/10.3390/jintelligence14100257) | journal_article | 2026-10-12 | bibliographic_checked |
 | KB-2026-0275 — [Toward Responsible and Sustainable AI Integration in Education: A Cross-National Analysis of Factors Influencing Teachers’ AI Adoption Using TALIS 2024](https://doi.org/10.3390/su182010310) | journal_article | 2026-10-10 | bibliographic_checked |
 | KB-2026-0276 — [A Training Program for Improving Teachers’ Knowledge and Attitudes Toward AI Apps Supporting Speech and Language Skills of Deaf and Hard-Of-Hearing Students](https://doi.org/10.1177/21582440261496715) | journal_article | 2026-10-12 | bibliographic_checked |
+| KB-2026-0277 — [교사의 수업 및 평가 지원을 위한 생성형 AI 활용 방안 탐색(연구리포트 13호 발간) 보도자료](https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101159&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice) | government_announcement | 2026-10-07 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
