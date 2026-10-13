@@ -21,3 +21,15 @@
   - KB-2026-0093 新加坡 MOE（Last Updated 2026-07-31）、KB-2026-0098 加州 CDE（Last Reviewed 2026-10-02）、KB-2026-0100 奧勒岡 ODE（頁面無日期，現行為 v3.0）、KB-2026-0101 新南威爾斯（Last updated 2026-04-01）：沒有首發日來源。
   - 另有三筆在原頁以外有官方日期，**待管理者決定是否採用**：KB-2024-0006 華盛頓 OSPI（新聞稿 2024-01-18；現行 PDF v3.0 為 2024-07-01 版本日）、KB-2025-0046 俄亥俄 DEW（新聞稿 2025-12-30）、KB-2026-0102 歐盟指引（歐盟出版局 Released 2026-06-12）。
 - **KB-2026-0261** PISA 2029 MAIL 框架初稿：文件沒有到日的發布日，OECD 頁面對自動請求回 403，維持空白。
+
+## 補記：採用原頁以外的官方日期 3 筆（管理者 2026-10-13 決定）
+
+管理者決定上列「待管理者決定」的 3 筆採用原頁以外的官方日期（`first_publication`，精度到日；核對程度維持「書目已核」，日期依據為官方新聞稿或官方出版機構頁面，見 `research/p0-bpol-2026-10-09/group-b.md` 與 `research/p0-policy-bibcheck-2026-10-09/`）：
+
+| 紀錄 | 填入 | 依據 |
+|---|---|---|
+| KB-2024-0006 華盛頓 OSPI | 2024-01-18 | OSPI 新聞稿日期「January 18, 2024」，內文「Today, the Office of Superintendent of Public Instruction (OSPI) published a roadmap…」 |
+| KB-2025-0046 俄亥俄 DEW | 2025-12-30 | DEW 新聞稿「Release date: 12/30/2025 … today announced the release of a model policy」 |
+| KB-2026-0102 歐盟指引 | 2026-06-12 | 歐盟出版局「Released on EU publications website: 2026-06-12」 |
+
+primary_url 仍是現行頁面（只有更新日）。至此空白年份剩 18 筆：本週 hold 候選 13、官方指引 4（新加坡、加州、奧勒岡、新南威爾斯）、PISA 2029 初稿 1。
