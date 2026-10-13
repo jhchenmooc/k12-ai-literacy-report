@@ -1,6 +1,6 @@
 # 拆分為私人來源 repo 與公開網站 repo：搬遷方案 v0.5（草稿）
 
-> 建立日期：2026-10-13。狀態：**草稿；S0 與帳號已決定，待管理者決定第 10 節其餘三項**。本方案不改任何程式、設定或 repo；所有 GitHub 設定變更（建立 repo、改私人、金鑰、Pages、ruleset）由管理者親自操作。
+> 建立日期：2026-10-13。狀態：**管理者 2026-10-13 已決定全部待決項目（S0、帳號、S6、S8、S9；其餘照預設）**。本方案不改任何程式、設定或 repo；所有 GitHub 設定變更（建立 repo、改私人、金鑰、Pages、ruleset）由管理者親自操作。
 >
 > 修訂紀錄：
 > - v0.1 → v0.2：依第一輪（Sonnet）審查修正；
@@ -20,7 +20,7 @@
 ## 摘要
 
 - **已決定**：全拆；兩個 repo 都放在組織 `ailiteracytw`。
-- **管理者還需回答三項**（第 10 節）：S6 時程、S8 舊網址、S9 金鑰保護。其餘有預設值，不回覆即照預設。
+- **全部決定（2026-10-13）**：S6、S8、S9 照預設：最早 11/9 切換；舊網址用個人站台 404 轉址（須先實測，不成立改為不轉址）；部署金鑰保護採「接受並照實寫明」；其餘項目照預設。
 - **新網址**：`https://ailiteracytw.github.io/`（公開 repo 取名 `ailiteracytw.github.io`，網站在根路徑）。
 - **私人來源 repo**：現有 repo 在切換日**轉移到組織並改私人**，保留歷史、Issue 與 PR。
 - **原則**：已刊出主張所依據的證據必須能公開查到；只有未刊內容可以私人（第 2 節）。
@@ -238,7 +238,7 @@
 
 | 步驟 | 內容 | 誰做 | 確認點 | 放棄時的清理 |
 |---|---|---|---|---|
-| 0 | 回覆 S6、S8、S9（S0 與帳號已決定）；S9 須在 PR-4 前決定 | 管理者 | — | — |
+| 0 | **2026-10-13 完成**：管理者決定 S0、帳號、S6、S8、S9 | 管理者 | — | — |
 | 1a | **2026-10-13 完成**：用現有帳號建立免費組織 `ailiteracytw`（選「My personal account」，日後辦公室正式成立可改簽單位合約）；Claude GitHub App 已安裝到組織；`ailiteracytw.github.io` 已建立，**目前為私人**，步驟 1b 開 Pages 前改為公開，並確認仍無任何 commit。原規劃內容：組織設定：要求成員啟用兩步驟驗證、成員基本權限設為「無」、維持預設的「不允許 fork 私人 repo」；在 https://claude.ai/connect-github 把 Claude GitHub App 安裝到組織（可先只授權所選 repo）；可選：建立**空的**公開 repo `ailiteracytw.github.io` 保留名稱（不勾 README，不開 Pages） | 管理者（**可立即做**，約 15 分鐘） | 組織與 App 安裝完成 | 刪除組織 |
 | 1b | `ailiteracytw.github.io` 改為公開；設分支規則（Include default branch；只勾 Restrict deletions、Block force pushes；不要求 PR；bypass 留空）；在自己電腦產生 ed25519 部署金鑰：公鑰加到公開 repo 的 Deploy keys 並勾「允許寫入」，私鑰存入現有 repo 的 `environment: public-site`（只允許 `main`），secret 名稱 `PUBLIC_DEPLOY_KEY`，之後刪除本機私鑰；把 `k12-ai-literacy-report-restricted` 轉移到組織，並加入 Claude GitHub App 的允許清單。**Pages 不在此步開**：repo 仍是空的，沒有 main 分支可選 | 管理者（時段一，約 30 分鐘；**PR-1 接近完成時再做**，金鑰建好即可在步驟 4 使用） | claude.ai 連線頁的 Check repository status 顯示可存取 restricted repo | 撤銷金鑰；restricted repo 可再轉回 |
 | 2 | 讀取最近 10 次 run 的實際分鐘數，乘以每月預期次數 | 編輯 session | 低於 2,000 分鐘的 80% | — |
@@ -312,8 +312,9 @@
 
 - **S0 方案**：甲，全拆。
 - **帳號**：GitHub 組織 `ailiteracytw`，由管理者現有帳號建立並擔任擁有者。不另開個人帳號：GitHub 服務條款規定一人只能有一個免費個人帳號，且帳號不得多人共用。
+- **S6、S8、S9**：照預設（下列各項標「預設」者）。S9 選甲，所以步驟 9 把部署私鑰改存為 repo secret，PR-4 拿掉 workflow 的 `environment:`。
 
-**請回答這三項**：
+**各項內容**：
 
 - **S6 時程**：
   - 步驟 1a 已完成；PR-1 在下週一（10/19，用量重置）起做，用 Sonnet 實作、合併前以 Opus 只審 workflow、推送前檢查與知識庫過濾；步驟 1b 在 PR-1 接近完成時做；步驟 1b–4 最晚 10/23；10/21–22 是保護日，不排工作，順延；
@@ -331,7 +332,7 @@
   - **甲、接受（預設）**：明寫「能推送到私人 repo 的人都能用部署金鑰」，靠 main 限定、推送前檢查與誤推處置。目前能推送的只有管理者與編輯 session，它們本來就有私人 repo 全部內容的存取權。
   - **乙、組織改用 GitHub Team（付費，依人數計費）**：私人 repo 恢復 environment 保護與分支保護。
 
-**其餘有預設值，不回覆即照預設**：
+**其餘項目（照預設）**：
 
 - **S1 公開 repo 與網址**：`ailiteracytw/ailiteracytw.github.io`，網址 `https://ailiteracytw.github.io/`。自訂網域另案。
 - **S2 公開內容**：第 3.2 節的推導規則。

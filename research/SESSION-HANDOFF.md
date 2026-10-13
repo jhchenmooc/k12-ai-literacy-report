@@ -741,5 +741,5 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 - **管理者決定**：全拆（S0 甲）；帳號改用 GitHub 組織 `ailiteracytw`，不另開個人帳號；新網址預定 `https://ailiteracytw.github.io/`。
 - **步驟 1a 已完成（2026-10-13）**：組織已建立；Claude GitHub App 已安裝到組織；`ailiteracytw/ailiteracytw.github.io` 已建立（`list_repos` 查得，目前為私人，尚未開 Pages）。
 - **尚未做、不可提早做**：開 Pages、部署金鑰、轉移 `k12-ai-literacy-report-restricted`（步驟 1b，10/19 起）；**本 repo 只能在切換日（步驟 9）轉移並改私人**，提早轉移會使舊網址提前失效。
-- **待管理者決定**：S6 時程、S8 舊網址、S9 金鑰保護（S9 須在切換 PR 前決定）。
+- **管理者 2026-10-13 決定 S6、S8、S9 照預設**：最早 11/9 切換；舊網址用個人站台 404 轉址（步驟 8 前實測，不成立改為不轉址）；部署金鑰採「接受並照實寫明」，步驟 9 改存為 repo secret。
 - **下一步**：10/19 用量重置後做 PR-1（Sonnet 實作、合併前 Opus 只審關鍵檔案）；步驟 1b 在 PR-1 接近完成時做。兩段提示詞見 [repo-split-prompts.md](repo-split-prompts.md)。
