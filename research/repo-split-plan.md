@@ -237,7 +237,7 @@
 | 步驟 | 內容 | 誰做 | 確認點 | 放棄時的清理 |
 |---|---|---|---|---|
 | 0 | 回覆 S6、S8、S9（S0 與帳號已決定）；S9 須在 PR-4 前決定 | 管理者 | — | — |
-| 1a | 用現有帳號建立免費組織 `ailiteracytw`（2026-10-13 已建立，選「My personal account」，日後辦公室正式成立可改簽單位合約）；組織設定：要求成員啟用兩步驟驗證、成員基本權限設為「無」、維持預設的「不允許 fork 私人 repo」；在 https://claude.ai/connect-github 把 Claude GitHub App 安裝到組織（可先只授權所選 repo）；可選：建立**空的**公開 repo `ailiteracytw.github.io` 保留名稱（不勾 README，不開 Pages） | 管理者（**可立即做**，約 15 分鐘） | 組織與 App 安裝完成 | 刪除組織 |
+| 1a | **2026-10-13 完成**：用現有帳號建立免費組織 `ailiteracytw`（選「My personal account」，日後辦公室正式成立可改簽單位合約）；Claude GitHub App 已安裝到組織；`ailiteracytw.github.io` 已建立，**目前為私人**，步驟 1b 開 Pages 前改為公開，並確認仍無任何 commit。原規劃內容：組織設定：要求成員啟用兩步驟驗證、成員基本權限設為「無」、維持預設的「不允許 fork 私人 repo」；在 https://claude.ai/connect-github 把 Claude GitHub App 安裝到組織（可先只授權所選 repo）；可選：建立**空的**公開 repo `ailiteracytw.github.io` 保留名稱（不勾 README，不開 Pages） | 管理者（**可立即做**，約 15 分鐘） | 組織與 App 安裝完成 | 刪除組織 |
 | 1b | 開 Pages（從 main 分支根目錄部署）；設分支規則；在自己電腦產生 ed25519 部署金鑰：公鑰加到公開 repo 的 Deploy keys 並勾「允許寫入」，私鑰存入現有 repo 的 `environment: public-site` secret，之後刪除本機私鑰；把 `k12-ai-literacy-report-restricted` 轉移到組織 | 管理者（時段一，約 30 分鐘，10/19 起，最晚 10/23） | 用金鑰 force push 被拒；新 session 能選到組織的 repo | 撤銷金鑰；restricted repo 可再轉回 |
 | 2 | 讀取最近 10 次 run 的實際分鐘數，乘以每月預期次數 | 編輯 session | 低於 2,000 分鐘的 80% | — |
 | 3 | 權限試跑：各工作 session 在已轉到組織的 `ailiteracytw/k12-ai-literacy-report-restricted` 開 PR、合併（同時驗證 App 在組織上可用）；用 `get_trigger` 確認每日短訊排程 ID，寫入交接檔 | 編輯 session、管理者 | 試跑成功、ID 已記 | — |
