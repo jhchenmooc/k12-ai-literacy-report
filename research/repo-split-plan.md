@@ -8,6 +8,8 @@
 > - v0.3 → v0.4：依第三輪（Haiku，37 項）審查修正。本版拿掉網站模式與 GitHub 端路徑限制（兩者經核對做不到），新增 S9；
 > - v0.4 → v0.5：記錄管理者決定（全拆、改用組織 `ailiteracytw`），改寫帳號、網址、轉移時機，新增第 12 節移交。本版未另做審查；其後依管理者 2026-10-13 指示，組織名稱由 `k12-ai-literacy-tw` 改為 `ailiteracytw`（網址較短，網站在根路徑）；並自檢修正：步驟 1 拆成 1a（已完成）與 1b（PR-1 接近完成時做，不在此步開 Pages），負向測試與開 Pages 移到步驟 4，切換時金鑰改存為 repo secret，首次部署與切換後冒煙測試的規則。
 >
+> PR-1 實作與審查提示詞見 [repo-split-prompts.md](repo-split-prompts.md)。
+>
 > 紀錄見 [repo-split-plan-reviews.md](repo-split-plan-reviews.md)。審查與修正都是 Anthropic 模型執行，不是外部真人審查。
 >
 > 管理者 2026-10-13 的方向與決定：
