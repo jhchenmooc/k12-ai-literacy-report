@@ -14,6 +14,59 @@
 |---|---|---|---|
 | KB-2021-0001 — [Policy guidance on AI for children (Version 2.0)](https://www.unicef.org/innocenti/media/1341/file/UNICEF-Global-Insight-policy-guidance-AI-children-2.0-2021.pdf) | official_guidance | 2021-11 | bibliographic_checked |
 
+## 2022｜event_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2022-0064 — [ARIN-561: An Educational Game for Learning Artificial Intelligence for High-School Students](https://doi.org/10.1007/978-3-031-11647-6_108) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0065 — [Dynamic Conversational Chatbot for Assessing Primary Students](https://doi.org/10.1007/978-3-031-11647-6_89) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0066 — [Where Is the AI? AI Literacy for Educators](https://doi.org/10.1007/978-3-031-11647-6_31) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0067 — [An Instrument for Measuring Teachers’ Trust in AI-Based Educational Technology](https://doi.org/10.1145/3506860.3506866) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0068 — [A Novel Machine Learning and Artificial Intelligence Course for Secondary School Students](https://doi.org/10.1145/3478432.3499073) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0069 — [AI Book Club](https://doi.org/10.1145/3478431.3499318) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0070 — [Computer Science Frontiers](https://doi.org/10.1145/3478432.3499146) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0071 — [INSPIRE: Fourth Industrial Revolution Teaching in the Classroom](https://doi.org/10.1145/3478432.3499065) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0072 — [Making Art with and about Artificial Intelligence](https://doi.org/10.1145/3478432.3499157) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0073 — [StoryQ](https://doi.org/10.1145/3478432.3499267) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0074 — [Wayfinding for an Educational Game Approach to Algorithmic Interrogation and Analysis](https://doi.org/10.1145/3478432.3499245) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0075 — [Data Detectives](https://doi.org/10.1145/3502717.3532128) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0076 — [PrimaryAI](https://doi.org/10.1145/3502717.3532142) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0077 — [Principles for AI Education for Elementary Grades Students](https://doi.org/10.1145/3502717.3532143) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0078 — [Teachers' Motivations to Learn about ML and AI](https://doi.org/10.1145/3502717.3532148) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0079 — [The Landscape of Teaching Resources for AI Education](https://doi.org/10.1145/3502718.3524782) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0080 — [AI + Dance: Co-Designing Culturally Sustaining Curricular Resources for AI and Ethics Education Through Artistic Computing](https://doi.org/10.1145/3501709.3544275) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0081 — [Beyond Black-Boxing: Building Intuitions of Complex Machine Learning Ideas Through Interactives and Levels of Abstraction](https://doi.org/10.1145/3501709.3544273) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0082 — [A Blended-Learning Program for Implementing a Rigorous Machine-Learning Curriculum in High-Schools](https://doi.org/10.1145/3491140.3528291) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0083 — [Family Learning Talk in AI Literacy Learning Activities](https://doi.org/10.1145/3491102.3502091) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0084 — [Family as a Third Space for AI Literacies: How do children and parents learn about AI together?](https://doi.org/10.1145/3491102.3502031) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0085 — [StoryBuddy: A Human-AI Collaborative Chatbot for Parent-Child Interactive Storytelling with Flexible Parental Involvement](https://doi.org/10.1145/3491102.3517479) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0086 — [Teachers’ Perspective on Artificial Intelligence Education: an Initial Investigation](https://doi.org/10.1145/3491101.3519866) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0087 — [The Last Decade of HCI Research on Children and Voice-based Conversational Agents](https://doi.org/10.1145/3491102.3502016) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0088 — [“Elinor’s Talking to Me!”:Integrating Conversational AI into Children’s Narrative Science Programming](https://doi.org/10.1145/3491102.3502050) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0089 — [ARtonomous: Introducing Middle School Students to Reinforcement Learning Through Virtual Robotics](https://doi.org/10.1145/3501712.3529736) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0090 — [Examining Teenagers’ Perceptions of Conversational Agents in Learning Settings](https://doi.org/10.1145/3501712.3529740) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0091 — [Language Learning with Mobile Augmented Reality and Artificial Intelligence for Children with Autism Spectrum Disorder](https://doi.org/10.1145/3501712.3538827) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0092 — [Real-time Feedback based on Emotion Recognition for Improving Children’s Metacognitive Monitoring Skill](https://doi.org/10.1145/3501712.3538831) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0093 — [”What color are the fish’s scales?” Exploring parents’ and children’s natural interactions with a child-friendly virtual agent during storybook reading](https://doi.org/10.1145/3501712.3529734) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0094 — [From Demo to Design in Teaching Machine Learning](https://doi.org/10.1145/3531146.3534634) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0095 — [An Empirical Analysis of High School Students' Understanding of Artificial Intelligence Through Modeling Texts (Poster 25)](https://doi.org/10.3102/1890782) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0096 — [An Examination on Primary Students' Development in Artificial Intelligence Literacy Through Digital Story Writing](https://doi.org/10.3102/1896981) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0097 — [Brief Summary of Existing Research on Students’ Conceptions of AI](https://doi.org/10.1145/3556787.3556872) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0098 — [Computational Thinking 2.0](https://doi.org/10.1145/3556787.3556788) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0099 — [Designing a Research Approach to Investigate Computer Science Student Teachers’ Beliefs on AI in School](https://doi.org/10.1145/3556787.3556812) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0100 — [A Socially Relevant Focused AI Curriculum Designed for Female High School Students](https://doi.org/10.1609/aaai.v36i11.21546) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0101 — [AI Snap! Blocks for Speech Input and Output, Computer Vision, Word Embeddings, and Neural Net Creation, Training, and Use](https://doi.org/10.1609/aaai.v36i11.21568) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0102 — [Authentic Integration of Ethics and AI through Sociotechnical, Problem-Based Learning](https://doi.org/10.1609/aaai.v36i11.21556) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0103 — [I AM A.I. Gradient Descent – an Open-Source Digital Game for Inquiry-Based CLIL Learning](https://doi.org/10.1609/aaai.v36i11.21553) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0104 — [Interactive Visualizations of Word Embeddings for K-12 Students](https://doi.org/10.1609/aaai.v36i11.21548) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0105 — [Introducing Variational Autoencoders to High School Students](https://doi.org/10.1609/aaai.v36i11.21559) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0106 — [Paving the Way for Novices: How to Teach AI for K-12 Education in China](https://doi.org/10.1609/aaai.v36i11.21565) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0107 — [Preparing High School Teachers to Integrate AI Methods into STEM Classrooms](https://doi.org/10.1609/aaai.v36i11.21557) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0108 — [Smartphone-Based Game Development to Introduce K12 Students in Applied Artificial Intelligence](https://doi.org/10.1609/aaai.v36i11.21554) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0109 — [StoryQ—an Online Environment for Machine Learning of Text Classification](https://doi.org/10.1609/aaai.v36i11.21567) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0110 — [Teaching AI with the Hands-On AI Projects for the Classroom Series](https://doi.org/10.1609/aaai.v36i11.21566) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0111 — [Towards an AI-Infused Interdisciplinary Curriculum for Middle-Grade Classrooms](https://doi.org/10.1609/aaai.v36i11.21544) | conference_paper | 未知 | discovered_unverified |
+
 ## 2022｜first_publication
 
 | 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
@@ -81,6 +134,96 @@
 | KB-2022-0061 — [Role design considerations of conversational agents to facilitate discussion and systems thinking](https://doi.org/10.1016/j.compedu.2022.104661) | journal_article | 2022-10 | discovered_unverified |
 | KB-2022-0062 — [What would the matrix do?: a systematic review of K-12 AI learning contexts and learner-interface interactions](https://doi.org/10.1080/15391523.2022.2148785) | journal_article | 2022-11-29 | discovered_unverified |
 | KB-2022-0063 — [Development research on an AI English learning support system to facilitate learner-generated-context-based learning](https://doi.org/10.1007/s11423-022-10172-2) | journal_article | 2022-12-12 | discovered_unverified |
+
+## 2023｜event_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2023-0093 — [AI Education for K-12: A Survey](https://doi.org/10.1007/978-3-031-36336-8_6) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0094 — [Adoption of Artificial Intelligence in Schools: Unveiling Factors Influencing Teachers’ Engagement](https://doi.org/10.1007/978-3-031-36272-9_13) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0095 — [Evaluating a Conversational Agent for Second Language Learning Aligned with the School Curriculum](https://doi.org/10.1007/978-3-031-36336-8_22) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0096 — [“A Fresh Squeeze on Data”: Exploring Gender Differences in Self-efficacy and Career Interest in Computing Science and Artificial Intelligence Among Elementary Students](https://doi.org/10.1007/978-3-031-36336-8_89) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0097 — [An Analysis of Teacher Practices and Student Participation in Contrasting Activity Systems in an AI Educational Program](https://doi.org/10.22318/icls2023.398812) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0098 — [Co-Designing Without Content Knowledge: How Teachers Navigate Co-Design of an Artificial Intelligence Curriculum](https://doi.org/10.22318/icls2023.146814) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0099 — [Examining High School Students’ Self-Efficacy in Machine Learning Practices](https://doi.org/10.22318/icls2023.678406) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0100 — [Exploring the AI Experiences of Rural Students and Teachers: A Sociocultural Perspective](https://doi.org/10.22318/icls2023.696796) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0101 — [Guide, Safety Net, Project Tester, and More: Investigating the Roles of Facilitators in an AI Summer Camp](https://doi.org/10.22318/icls2023.548176) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0102 — [Making Sense of Machine Learning: Integrating Youth’s Conceptual, Creative, and Critical Understandings of AI](https://doi.org/10.22318/icls2023.930603) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0103 — [Preparing Teachers to Teach Artificial Intelligence in Classrooms: An Exploratory Study](https://doi.org/10.22318/icls2023.370046) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0104 — [The Design of a Critical Machine Learning Program for Young Learners](https://doi.org/10.22318/icls2023.684080) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0105 — [The Effects of AI Feedback on Students’ Epistemic Emotion and Performance in Engineering Design: An Exploratory Study](https://doi.org/10.22318/icls2023.151549) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0106 — [Supporting Collaborative Online Science Education With a Transferable and Configurable Conversational Agent](https://doi.org/10.22318/cscl2023.469853) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0107 — ["Discover AI in Daily Life"](https://doi.org/10.1145/3545947.3576224) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0108 — [BOF: Organizing State-Level Efforts for K-12 AI Education](https://doi.org/10.1145/3545947.3573332) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0109 — [Booklet-Based Design Fiction to Support AI Literacy](https://doi.org/10.1145/3545947.3576248) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0110 — [Co-Designing an AI Curriculum with University Researchers and Middle School Teachers](https://doi.org/10.1145/3545947.3576253) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0111 — [Cybersecurity Education in the Age of AI: Integrating AI Learning into Cybersecurity High School Curricula](https://doi.org/10.1145/3545945.3569750) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0112 — [Developing Machine Learning Algorithm Literacy with Novel Plugged and Unplugged Approaches](https://doi.org/10.1145/3545945.3569772) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0113 — [DoodleIt: A Beginner's Tool for Understanding Image Recognition](https://doi.org/10.1145/3545947.3576275) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0114 — [How States are Preparing Their Students for the Fourth Industrial Revolution](https://doi.org/10.1145/3545947.3573253) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0115 — [Intergenerational Games to Learn About AI and Ethics](https://doi.org/10.1145/3545947.3573256) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0116 — [Is Elementary AI Education Possible?](https://doi.org/10.1145/3545947.3576308) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0117 — [Lessons Learned From Teaching Artificial Intelligence to Middle School Students](https://doi.org/10.1145/3545947.3576315) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0118 — [Linking Learning Fundamental Reinforcement Learning Concepts with Being Physically Active](https://doi.org/10.1145/3545947.3576316) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0119 — [Make-a-Thon for Middle School AI Educators](https://doi.org/10.1145/3545945.3569743) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0120 — [Promoting AI Education for Rural Middle Grades Students with Digital Game Design](https://doi.org/10.1145/3545947.3576333) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0121 — [Teach Artificial Intelligence with StoryQ, A Web-Based Machine Learning and Text Mining Tool for K-12 Students](https://doi.org/10.1145/3545947.3573236) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0122 — [Virtual Summer Camp for High School Students with Disabilities - An Experience Report](https://doi.org/10.1145/3545945.3569818) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0123 — ["AI Teaches Itself": Exploring Young Learners' Perspectives on Artificial Intelligence for Instrument Development](https://doi.org/10.1145/3587102.3588778) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0124 — [Fostering Upper Elementary AI Education: Iteratively Refining a Use-Modify-Create Scaffolding Progression for AI Planning](https://doi.org/10.1145/3587103.3594170) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0125 — [Generation AI: Participatory Machine Learning Co-Design Projects with K-9 Students in Finland](https://doi.org/10.1145/3587103.3594171) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0126 — [Toward AI-infused Game Design Activities for Rural Middle Grades Students](https://doi.org/10.1145/3587103.3594199) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0127 — [Prompt Engineering for Large Language Models to Support K-8 Computer Science Teachers in Creating Culturally Responsive Projects](https://doi.org/10.1145/3568812.3603453) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0128 — [AI and Narrative Scripts to Educate Adolescents About Social Media Algorithms: Insights About AI Overdependence, Trust and Awareness](https://doi.org/10.1007/978-3-031-42682-7_28) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0129 — [What Makes Problem-Solving Practice Effective? Comparing Paper and AI Tutoring](https://doi.org/10.1007/978-3-031-42682-7_4) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0130 — [AI-powered Collaborative Activities for Chinese Vocabulary Learning](https://doi.org/10.58459/icce/2023/1090) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0131 — [Comparing Perceived Cognitive Load while Learning Online with AI Chatbots, Pre-recorded Videos, and Live Lectures](https://library.apsce.net/index.php/ICCE/article/view/4705) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0132 — [Democratising AI education: Teaching autoencoders to out-of-school children from low-income backgrounds](https://doi.org/10.58459/icce.2023.1148) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0133 — [Design and Implementation of an Educational Game for Teaching Artificial Intelligence to High School Students](https://library.apsce.net/index.php/ICCE/article/view/4718) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0134 — [Designing Learning Companions for Enhancing Students' Writing Habits](https://doi.org/10.58459/icce.2023.4773) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0135 — [Designing and Evaluating an Attention- Engagement-Error-Reflection (AEER) Approach to Enhance Primary School Students Artificial Intelligence Literacy and Learning-to-Learn Skills: A Pilot Study](https://doi.org/10.58459/icce.2023.1417) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0136 — [Effects of a Machine Learning-empowered Chinese Character Handwriting Learning Tool on Rectifying Legible Writing in Young Children: A Pilot Study](https://doi.org/10.58459/icce.2023.1067) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0137 — [Exploring the Benefits of Chatbots Game-based Learning in Science Learning Outcomes and Motivation](https://doi.org/10.58459/icce.2023.1418) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0138 — [Incorporation of Robotics in AI Education: Barriers and Enablers as Perceived by K-12 Teachers](https://library.apsce.net/index.php/ICCE/article/view/4734) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0139 — [Integrating ChatGPT into Synectics Model to Improve High School Student's Creative Writing Skill](https://library.apsce.net/index.php/ICCE/article/view/4737) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0140 — [The Role of Students’ Help-seeking Profiles in the AI-assisted Game-based Learning](https://doi.org/10.58459/icce.2023.1467) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0141 — [How Teachers Influence Student Adoption and Effectiveness of a Recommendation System for Algebra](https://doi.org/10.1145/3573051.3593394) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0142 — [AI Education from the Educator’s Perspective: Best Practices for an Inclusive AI Curriculum for Middle School](https://doi.org/10.1145/3544549.3585747) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0143 — [DAPIE: Interactive Step-by-Step Explanatory Dialogues to Answer Children’s Why and How Questions](https://doi.org/10.1145/3544548.3581369) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0144 — [“I Would Like to Design”: Black Girls Analyzing and Ideating Fair and Accountable AI](https://doi.org/10.1145/3544548.3581378) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0145 — [Collaborative Machine Learning Model Building with Families Using Co-ML](https://doi.org/10.1145/3585088.3589356) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0146 — [Comic-boarding with Children: Understanding the use of Language in Human-Human and Human-Agent Dialogue](https://doi.org/10.1145/3585088.3593896) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0147 — [Design implications of generative AI systems for visual storytelling for young learners](https://doi.org/10.1145/3585088.3593867) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0148 — [Developing Machine Learning Agency Among Youth: Investigating Youth Critical Use, Examination, and Production of Machine Learning Applications](https://doi.org/10.1145/3585088.3593929) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0149 — [Empower Children in Nigeria to Design the Future of Artificial Intelligence (AI) through Writing](https://doi.org/10.1145/3585088.3593860) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0150 — [Five Design Recommendations for Teaching Teenagers’ about Artificial Intelligence and Machine Learning](https://doi.org/10.1145/3585088.3589366) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0151 — [Fostering AI Literacy with Embodiment & Creativity: From Activity Boxes to Museum Exhibits](https://doi.org/10.1145/3585088.3594495) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0152 — [S.P.O.T: A Game-Based Application for Fostering Critical Machine Learning Literacy Among Children](https://doi.org/10.1145/3585088.3593884) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0153 — [Supporting Children’s Metacognition with a Facial Emotion Recognition based Intelligent Tutor System](https://doi.org/10.1145/3585088.3593882) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0154 — [What Do Children and Parents Want and Perceive in Conversational Agents? Towards Transparent, Trustworthy, Democratized Agents](https://doi.org/10.1145/3585088.3589353) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0155 — [“Rosita Reads With My Family”: Developing A Bilingual Conversational Agent to Support Parent-Child Shared Reading](https://doi.org/10.1145/3585088.3589354) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0156 — [The Community Builder (CoBi): Helping Students to Develop Better Small Group Collaborative Learning Skills](https://doi.org/10.1145/3584931.3607498) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0157 — [Artificial Intelligence Education and Inclusion in K–12](https://doi.org/10.3102/2007820) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0158 — [Critical Algorithmic Literacy: Addressing Algorithmic Epistemological Authority for K–12 Students](https://doi.org/10.3102/2015011) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0159 — [Developing a Bilingual Dialogic eBook With Conversational Agent for Hispanic Families](https://doi.org/10.3102/2015608) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0160 — [Exploring Elementary Preservice Teachers' Perceptions of Artificial Intelligence in STEM Education (Poster 42)](https://doi.org/10.3102/2010678) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0161 — [PrimaryAI: Measuring Upper Elementary Student Learning for Artificial Intelligence Concepts and Practices](https://doi.org/10.3102/2009221) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0162 — [Using Iterative Participatory Design to Develop a Machine Learning Bias Program With Youth for Youth (Poster 8)](https://doi.org/10.3102/2014068) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0163 — [Artificial Intelligence (AI) Literacy Questionnaire with Confirmatory Factor Analysis](https://doi.org/10.1109/icalt58122.2023.00074) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0164 — [AI Education in German K-10 Computer Science Curricula](https://doi.org/10.1145/3605468.3605471) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0165 — [Impact of Generative AI on K-12 Students’ Perceptions of Computing: A Research Proposal](https://doi.org/10.1145/3605468.3609775) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0166 — [AI Audit: A Card Game to Reflect on Everyday AI Systems](https://doi.org/10.1609/aaai.v37i13.26897) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0167 — [AI Made by Youth: A Conversational AI Curriculum for Middle School Summer Camps](https://doi.org/10.1609/aaai.v37i13.26882) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0168 — [An Introduction to Rule-Based Feature and Object Perception for Middle School Students](https://doi.org/10.1609/aaai.v37i13.26900) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0169 — [Beyond Black-Boxes: Teaching Complex Machine Learning Ideas through Scaffolded Interactive Activities](https://doi.org/10.1609/aaai.v37i13.26898) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0170 — [Develop AI Teaching and Learning Resources for Compulsory Education in China](https://doi.org/10.1609/aaai.v37i13.26904) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0171 — [Exploring Artificial Intelligence in English Language Arts with StoryQ](https://doi.org/10.1609/aaai.v37i13.26899) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0172 — [FOLL-E: Teaching First Order Logic to Children](https://doi.org/10.1609/aaai.v37i13.26884) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0173 — [Guiding Students to Investigate What Google Speech Recognition Knows about Language](https://doi.org/10.1609/aaai.v37i13.26905) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0174 — [Learning Affects Trust: Design Recommendations and Concepts for Teaching Children—and Nearly Anyone—about Conversational Agents](https://doi.org/10.1609/aaai.v37i13.26883) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0175 — [Literacy and STEM Teachers Adapt AI Ethics Curriculum](https://doi.org/10.1609/aaai.v37i13.26906) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0176 — [Scratch for Sports: Athletic Drills as a Platform for Experiencing, Understanding, and Developing AI-Driven Apps](https://doi.org/10.1609/aaai.v37i13.26901) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0177 — [“How Can I Code A.I. Responsibly?”: The Effect of Computational Action on K-12 Students Learning and Creating Socially Responsible A.I.](https://doi.org/10.1609/aaai.v37i13.26902) | conference_paper | 未知 | discovered_unverified |
 
 ## 2023｜first_publication
 
@@ -177,6 +320,156 @@
 | KB-2023-0090 — [Conceptual model for Mexican teachers' adoption of learning analytics systems: The integration of the information system success model and the technology acceptance model](https://doi.org/10.1007/s10639-023-12371-7) | journal_article | 2023-12-14 | discovered_unverified |
 | KB-2023-0091 — [An investigation of teachers' perceptions of using ChatGPT as a supporting tool for teaching and learning in the digital era](https://doi.org/10.1111/jcal.12926) | journal_article | 2023-12-22 | discovered_unverified |
 | KB-2023-0092 — [Using LLMs to bring evidence-based feedback into the classroom: AI-generated feedback increases secondary students’ text revision, motivation, and positive emotions](https://doi.org/10.1016/j.caeai.2023.100199) | journal_article | 2023-12 | discovered_unverified |
+
+## 2024｜event_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2024-0173 — [AI in K-12 Social Studies Education: A Critical Examination of Ethical and Practical Challenges](https://doi.org/10.1007/978-3-031-64315-6_8) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0174 — [Culturally Relevant Artificial Intelligence Education with Music for Secondary School Students](https://doi.org/10.1007/978-3-031-64312-5_46) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0175 — [Effects of Generative Artificial Intelligence on Instructional Design Outcomes and the Mediating Role of Pre-service Teachers’ Prior Knowledge of Different Types of Instructional Design Tasks](https://doi.org/10.1007/978-3-031-64312-5_49) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0176 — [Exploring Teachers’ Perception of Artificial Intelligence: The Socio-emotional Deficiency as Opportunities and Challenges in Human-AI Complementarity in K-12 Education](https://doi.org/10.1007/978-3-031-64299-9_41) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0177 — [Exploring the Role, Implementation, and Educational Implications of AI in Early Childhood Education](https://doi.org/10.1007/978-3-031-64312-5_4) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0178 — [Generative AI in K-12: Opportunities for Learning and Utility for Teachers](https://doi.org/10.1007/978-3-031-64315-6_49) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0179 — [How Can Artificial Intelligence Be Used in Creative Learning?: Cultural-Historical Activity Theory Analysis in Finnish Kindergarten](https://doi.org/10.1007/978-3-031-64312-5_18) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0180 — [Improving Student Learning with Hybrid Human-AI Tutoring: A Three-Study Quasi-Experimental Investigation](https://doi.org/10.1145/3636555.3636896) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0181 — [A Quasi-Experimental Study of the Introduction of Machine Learning Concepts to a High School Age Audience as Part of a Mentored Scientific Research Program](https://doi.org/10.22318/icls2024.110907) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0182 — [Approaching “Filter Bubble” in Recommendation Systems: A Transformative AI Literacy Learning Experience](https://doi.org/10.22318/icls2024.921873) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0183 — [Children’s Overtrust and Shifting Perspectives of Generative AI](https://doi.org/10.22318/icls2024.307401) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0184 — [Designing Homework Support Tools for Middle School Mathematics Using Intelligent Tutoring Systems](https://doi.org/10.22318/icls2024.989202) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0185 — [Designing Tools for Caregiver Involvement in Intelligent Tutoring Systems for Middle School Mathematics](https://doi.org/10.22318/icls2024.630637) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0186 — [Exploring AI Ethics through Educational Scenarios with AI Generative Arts Apps](https://doi.org/10.22318/icls2024.651304) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0187 — [Exploring Preservice Teachers’ Perceptions and Experiences of Teaching Artificial Intelligence Students in Virtual Simulations](https://doi.org/10.22318/icls2024.484241) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0188 — [Generative AI as a Mirror: Educators Exploring and Challenging Dominant Discourses about the Future of AI in Education](https://doi.org/10.22318/icls2024.157422) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0189 — [Investigating Youths’ Everyday Understanding of Machine Learning Applications: a Knowledge-in-Pieces Perspective](https://doi.org/10.22318/icls2024.107748) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0190 — [Learning about Data, Algorithms, and Algorithmic Justice on TikTok in Personally Meaningful Ways](https://doi.org/10.22318/icls2024.704174) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0191 — [Lessons Learned from Co-Designing Phenomena Driven Student Centered AI Curriculum with Teachers New to AI](https://doi.org/10.22318/icls2024.222175) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0192 — [Leveraging Student Choice and Interest to Design an Engaging Lesson about Artificial Intelligence](https://doi.org/10.22318/icls2024.854618) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0193 — [Modeling with Primary Sources: An Approach to Teach Data Bias for Artificial Intelligence and Machine Learning Education](https://doi.org/10.22318/icls2024.796777) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0194 — [Preservice Teacher Learning in Virtual Reality Simulation with Artificial Intelligence-Powered Virtual Students: Emotions and Teacher Talk Patterns](https://doi.org/10.22318/icls2024.778856) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0195 — [Scaffolding to Build AI Competences: Transforming Student Presentations to Meaningful Learning Moments](https://doi.org/10.22318/icls2024.899312) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0196 — [Supporting Multidimensional Data Analysis for High-School Students in the Era of Machine Learning](https://doi.org/10.22318/icls2024.287761) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0197 — [Supporting Preservice Teachers’ Responsive Teaching in Artificial Intelligence-integrated Simulations](https://doi.org/10.22318/icls2024.502726) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0198 — [The Effects of Prompt Scaffolding on Learning to Write Arguments with ChatGPT](https://doi.org/10.22318/icls2024.831011) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0199 — [Using Biterm Topic Modeling to Explore Gender Differences in Secondary Students’ Wonderings about AI Concepts](https://doi.org/10.22318/icls2024.839258) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0200 — [Validating a Hypothetical Learning Progression (LP) to Support Upper Elementary School Students to Learn and Apply Artificial Intelligence Concepts](https://doi.org/10.22318/icls2024.829130) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0201 — [What Does it Mean to be Literate in the Time of AI? Different Perspectives on Learning and Teaching AI Literacies in K-12 Education](https://doi.org/10.22318/icls2024.875203) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0202 — [Co-Design a Logic Model for Inclusive AI-Powered Learning Application with Primary School Teachers](https://doi.org/10.22318/cscl2024.869864) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0203 — [Training an Avatar-Based Conversational AI Chatbot and Investigating the Implementation of Communicative Action Principles](https://doi.org/10.22318/cscl2024.839190) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0204 — [“We did it we did it!": Exploring Middle Schoolers’ Collaborative Learning in an Online Machine Learning Curriculum](https://doi.org/10.22318/cscl2024.218179) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0205 — [A Cybersecurity Summer Camp for High School Students Using Autonomous R/C Cars](https://doi.org/10.1145/3626252.3630758) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0206 — [Artificial Intelligence Unplugged: Designing Unplugged Activities for a Conversational AI Summer Camp](https://doi.org/10.1145/3626252.3630783) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0207 — [Artificial Intelligence in Compulsory K-12 Computer Science Classrooms: A Scalable Professional Development Offer for Computer Science Teachers](https://doi.org/10.1145/3626252.3630782) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0208 — [ChemAIstry: A Novel Software Tool for Teaching Model Training in K-8 Education](https://doi.org/10.1145/3626252.3630804) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0209 — [Enduring Lessons from 'Computer Science for All' for AI Education in Schools](https://doi.org/10.1145/3626253.3631656) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0210 — [Engaging Students from Rural Communities in AI Education with Game-Based Learning](https://doi.org/10.1145/3626253.3635549) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0211 — [Exploring AIFORGOOD Summer Camp Curriculum to Foster Middle School Students' Understanding of Artificial Intelligence](https://doi.org/10.1145/3626253.3635536) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0212 — [Integrating Natural Language Processing in Middle School Science Classrooms: An Experience Report](https://doi.org/10.1145/3626252.3630881) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0213 — [Math IDE: A Platform for Creating with Math](https://doi.org/10.1145/3626253.3635572) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0214 — [Not Just Training, Also Testing: High School Youths' Perspective-Taking through Peer Testing Machine Learning-Powered Applications](https://doi.org/10.1145/3626252.3630899) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0215 — [Perception, Trust, Attitudes, and Models: Introducing Children to AI and Machine Learning with Five Software Exhibits](https://doi.org/10.1145/3626253.3635512) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0216 — [Restorying with AI Art among Latinx Elementary Students](https://doi.org/10.1145/3626253.3635618) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0217 — [Scratch-NB: A Scratch Extension for Introducing K-12 Learners to Supervised Machine Learning](https://doi.org/10.1145/3626252.3630920) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0218 — [Solar Weather, Simulation, and AI in Middle School: Developing a Case Study](https://doi.org/10.1145/3626253.3635555) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0219 — [Supporting Student Engagement in K-12 AI Education with a Card Game Construction Toolkit](https://doi.org/10.1145/3626253.3635550) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0220 — [Teaching AI to K-12 Learners: Lessons, Issues, and Guidance](https://doi.org/10.1145/3626252.3630937) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0221 — [Undergraduate Facilitators as Role Models for Middle School Learners within an AI Summer Camp](https://doi.org/10.1145/3626253.3635395) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0222 — [Using Generative AI to Support PK-12 Teaching and Learning: Developing Sample Lessons and More](https://doi.org/10.1145/3626253.3635522) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0223 — [A Mental Leap: Impact of Teaching the Math Behind Machine Learning Techniques in K-12](https://doi.org/10.1145/3649405.3659479) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0224 — [A STEM Approach to Teach High School Students IoT and AI Concepts: An Air Quality Example](https://doi.org/10.1145/3649405.3659498) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0225 — [AI Planning is Elementary: Introducing Young Learners to Automated Problem Solving](https://doi.org/10.1145/3649405.3659503) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0226 — [Customizing ChatGPT to Help Computer Science Principles Students Learn Through Conversation](https://doi.org/10.1145/3649217.3653570) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0227 — [Feedback Literacy: Holistic Analysis of Secondary Educators' Views of LLM Explanations of Program Error Messages](https://doi.org/10.1145/3649217.3653595) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0228 — [Measuring Teacher Self-Efficacy and Careers Awareness in K-12 AI Education](https://doi.org/10.1145/3649405.3659489) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0229 — [Designing an AI Literacy Transformational Game for Families](https://doi.org/10.1145/3632621.3671433) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0230 — [Teens' Ethical Sensemaking About Emerging Technologies](https://doi.org/10.1145/3632621.3671415) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0231 — [ActiveAI: The Effectiveness of an Interactive Tutoring System in Developing K-12 AI Literacy](https://doi.org/10.1007/978-3-031-72315-5_31) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0232 — [Evaluation of an LLM-Powered Student Agent for Teacher Training](https://doi.org/10.1007/978-3-031-72312-4_7) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0233 — [Integrating Generative Artificial Intelligence Tools to Develop Digital Competences in Secondary Schools](https://doi.org/10.1007/978-3-031-72312-4_14) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0234 — [A Study on High School Students' Continuance Intention to Use ChatGPT for Learning Assistance: An Exploration Based on Self-Determination Theory](https://doi.org/10.58459/icce.2024.5061) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0235 — [AI as a Co-Teacher: Enhancing Creative Thinking in Underserved Areas](https://doi.org/10.58459/icce.2024.5048) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0236 — [Development of a Chatbot and Evaluation of Its Effects on Learning and Intrinsic Motivation of a Public Secondary School's Spanish Language Learners](https://doi.org/10.58459/icce.2024.4926) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0237 — [Exploring High School Students' Transition from Traditional Search Engines to ChatGPT for Course Learning: A Push-Pull-Mooring Model Perspective](https://doi.org/10.58459/icce.2024.5059) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0238 — [Exploring the Young Learners’ Interactions with AI-generated Multimodal Feedback in Collaborative Writing](https://doi.org/10.58459/icce.2024.5046) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0239 — [Factors Influencing ChatGPT Use Behaviour Among Trainee Teachers](https://doi.org/10.58459/icce.2024.4929) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0240 — [Integrating ChatGPT into Flipped Learning: Enhancing Students' Creative Writing Skills and Perception](https://doi.org/10.58459/icce.2024.4967) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0241 — [Iterative Problem Solving in the Integration of Design Thinking and Game-Based Learning into Enhancing Computational Thinking and AI Literacy](https://doi.org/10.58459/icce.2024.4934) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0242 — [Learning Effectiveness and Reflections on AI Literacy in Junior High School Students with Game-Based Learning and Problem-Based Learning](https://doi.org/10.58459/icce.2024.4933) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0243 — [Middle School Students' Ability to Detect Lies When Interacting with an Educational AI Robot](https://doi.org/10.58459/icce.2024.4897) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0244 — [Student Perceptions of Using Generative AI Chatbot in Learning Programming](https://doi.org/10.58459/icce.2024.4822) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0245 — [Supporting Teacher-Student Book Talk and Book Wish Lists with AI-Driven Technology](https://doi.org/10.58459/icce.2024.4958) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0246 — [The Effect of LINE Chatbot with Escape Game Design on English Learning Achievement, Situational Interest, and Student Engagement](https://doi.org/10.58459/icce.2024.4924) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0247 — [The Era of Learning Programming Through Program: Challenges and Potential of ChatGPT in Revolutionizing High School Programming Education](https://doi.org/10.58459/icce.2024.5004) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0248 — [Automatic Feedback Generation on K-12 Students' Data Science Education by Prompting Cloud-based Large Language Models](https://doi.org/10.1145/3657604.3664673) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0249 — [Bringing AI Tutoring into the Physical World and Scaling to Schools and Museums](https://doi.org/10.1145/3657604.3665448) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0250 — [Nemobot: Crafting Strategic Gaming LLM Agents for K-12 AI Education](https://doi.org/10.1145/3657604.3664671) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0251 — [Scaling Generated Feedback for Novice Teachers by Sustaining Teacher Educators' Expertise: A Design to Train LLMs with Teacher Educator Endorsement of Generated Feedback](https://doi.org/10.1145/3657604.3664677) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0252 — [Scaling High-Leverage Curriculum Scaffolding in Middle-School Mathematics](https://doi.org/10.1145/3657604.3664698) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0253 — [SimPal: Towards a Meta-Conversational Framework to Understand Teacher's Instructional Goals for K-12 Physics](https://doi.org/10.1145/3657604.3664695) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0254 — ["I want it to talk like Darth Vader": Helping Children Construct Creative Self-Efficacy with Generative AI](https://doi.org/10.1145/3613904.3642492) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0255 — [A Home Study of Parent-Child Co-Reading with a Bilingual Conversational Agent](https://doi.org/10.1145/3613905.3650836) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0256 — [A Piece of Theatre: Investigating How Teachers Design LLM Chatbots to Assist Adolescent Cyberbullying Education](https://doi.org/10.1145/3613904.3642379) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0257 — [ChatScratch: An AI-Augmented System Toward Autonomous Visual Programming Learning for Children Aged 6-12](https://doi.org/10.1145/3613904.3642229) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0258 — [Co-Designing QuickPic: Automated Topic-Specific Communication Boards from Photographs for AAC-Based Language Instruction](https://doi.org/10.1145/3613904.3642080) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0259 — [Designing Conversational Agents to Support Student Teacher Learning in Virtual Reality Simulation: A Case Study](https://doi.org/10.1145/3613905.3637145) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0260 — [Exploring AI Problem Formulation with Children via Teachable Machines](https://doi.org/10.1145/3613904.3642692) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0261 — [Leveraging ChatGPT for Adaptive Learning through Personalized Prompt-based Instruction: A CS1 Education Case Study](https://doi.org/10.1145/3613905.3637148) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0262 — [Mathemyths: Leveraging Large Language Models to Teach Mathematical Language through Child-AI Co-Creative Storytelling](https://doi.org/10.1145/3613904.3642647) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0263 — [More than Model Documentation: Uncovering Teachers' Bespoke Information Needs for Informed Classroom Integration of ChatGPT](https://doi.org/10.1145/3613904.3642592) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0264 — [Open Sesame? Open Salami! Personalizing Vocabulary Assessment-Intervention for Children via Pervasive Profiling and Bespoke Storybook Generation](https://doi.org/10.1145/3613904.3642580) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0265 — [PeerGPT: Probing the Roles of LLM-based Peer Agents as Team Moderators and Participants in Children's Collaborative Learning](https://doi.org/10.1145/3613905.3651008) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0266 — [Scientific and Fantastical: Creating Immersive, Culturally Relevant Learning Experiences with Augmented Reality and Large Language Models](https://doi.org/10.1145/3613904.3642041) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0267 — [StoryPrompt: Exploring the Design Space of an AI-Empowered Creative Storytelling System for Elementary Children](https://doi.org/10.1145/3613905.3651118) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0268 — [Student Interaction with NewtBot: An LLM-as-tutor Chatbot for Secondary Physics Education](https://doi.org/10.1145/3613905.3647957) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0269 — [Teachers, Parents, and Students' perspectives on Integrating Generative AI into Elementary Literacy Education](https://doi.org/10.1145/3613904.3642438) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0270 — [Testing, Socializing, Exploring: Characterizing Middle Schoolers’ Approaches to and Conceptions of ChatGPT](https://doi.org/10.1145/3613904.3642332) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0271 — [Young Children and ChatGPT: Parents' Use of ChatGPT in Parenting](https://doi.org/10.1145/3613905.3650880) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0272 — [Young Children's Creative Storytelling with ChatGPT vs. Parent: Comparing Interactive Styles](https://doi.org/10.1145/3613905.3650770) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0273 — [ml-machine.org: Infrastructuring a Research Product to Disseminate AI Literacy in Education](https://doi.org/10.1145/3613904.3642539) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0274 — ["Bee and I need diversity!" Break Filter Bubbles in Recommendation Systems through Embodied AI Learning](https://doi.org/10.1145/3628516.3655802) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0275 — ["I Said Knight, Not Night!": Children's Communication Breakdowns and Repairs with AI Versus Human Partners](https://doi.org/10.1145/3628516.3659394) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0276 — [App Planner: Utilizing Generative AI in K-12 Mobile App Development Education](https://doi.org/10.1145/3628516.3659392) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0277 — [Enhancing Museum Experience with VR by Situating 3D Collections in Contex](https://doi.org/10.1145/3628516.3659372) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0278 — [It's like I'm the AI: Youth Sensemaking About AI through Metacognitive Embodiment](https://doi.org/10.1145/3628516.3659395) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0279 — [Youth as Peer Auditors: Engaging Teenagers with Algorithm Auditing of Machine Learning Applications](https://doi.org/10.1145/3628516.3655752) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0280 — [“Are you smart?”: Children's Understanding of “Smart” Technologies](https://doi.org/10.1145/3628516.3655787) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0281 — [Evaluation of Interactive Demonstration in Voice-assisted Counting for Young Children](https://doi.org/10.1145/3678884.3681886) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0282 — [Critical Race Algorithmic Literacy: Preparing Black Youth to “Talk Back” and “Bring Wreck” to Algorithmic Anti-Blackness in AI](https://doi.org/10.3102/2103035) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0283 — [Dialogic Reading With a Chatbot Promotes Chinese Kindergarteners’ Story Comprehension and Word Learning](https://doi.org/10.3102/2104240) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0284 — [Fiction and Speculative Thinking for Critical Posthumanist Literacy Pedagogy: Three Cases From a Middle Grade AI Ethics Unit](https://doi.org/10.3102/2101865) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0285 — [Investigating Elementary Teachers’ Perceptions of Using ChatGPT to Generate Integrated Assessments (Poster 29)](https://doi.org/10.3102/2102375) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0286 — [Leveraging Artificial Intelligence in Teacher Education: A Participatory Action Research Approach](https://doi.org/10.3102/2111869) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0287 — [Preservice Teachers’ Emotions and Ambitious Teaching in Virtual Reality Simulation With Artificial Intelligence-Powered Virtual Humans](https://doi.org/10.3102/2109917) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0288 — [Simulated Practice-Based Teaching for Preservice Teachers With AI Chatbot](https://doi.org/10.3102/2107516) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0289 — [Social Media Co-Pilot: Co-Designing a Chatbot With Teens and Educators to Combat Cyberbullying (Poster 46)](https://doi.org/10.3102/2111467) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0290 — [The Impacts of Model-Based Support and Artificial-Intelligence-Powered Virtual Agents in Virtual Reality for Preservice Teachers](https://doi.org/10.3102/2114267) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0291 — [A No-Code AI Education Tool for Learning AI in K-12 by Making Machine Learning-Driven Apps](https://doi.org/10.1109/icalt61570.2024.00037) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0292 — [Bridging theory and practice: A comprehensive model for AI acceptance among secondary school teachers](https://doi.org/10.1109/icalt61570.2024.00091) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0293 — [ChatCLD Framework: Supporting Teachers in Contextualizing Learning Designs using ChatGPT](https://doi.org/10.1109/icalt61570.2024.00060) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0294 — [Exploring the Dynamics of Scaffolding in K-12 ML/AI Education: Insights from a Machine Learning Workshop](https://doi.org/10.1109/icalt61570.2024.00067) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0295 — [Perspective of AI Chatbots in K-12 Education](https://doi.org/10.1109/icalt61570.2024.00076) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0296 — ["It's smart and it's stupid:" Youth's conflicting perspectives on LLMs' language comprehension and ethics](https://doi.org/10.1145/3677619.3678131) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0297 — [Co-Designing AI literacy for K-12 Education](https://doi.org/10.1145/3677619.3678716) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0298 — [Data-related practices for creating Artificial Intelligence systems in K-12](https://doi.org/10.1145/3677619.3678115) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0299 — [Differentiated Tasks by ChatGPT for Secondary Computer Science Education: Useful or not?](https://doi.org/10.1145/3677619.3678092) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0300 — [Enhancing Understanding of Data Traces and Profiling Among K--9 Students Through an Interactive Classroom Game](https://doi.org/10.1145/3677619.3677635) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0301 — [Evidence-based advancement of teaching AI in K-12: an action research approach](https://doi.org/10.1145/3677619.3677641) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0302 — [Identifying Secondary School Students' Misconceptions about Machine Learning: An Interview Study](https://doi.org/10.1145/3677619.3678114) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0303 — [Investigating the Impact of Programming Activities on Computational Thinking and AI Literacy in Spanish Schools](https://doi.org/10.1145/3677619.3678111) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0304 — [Unpacking Approaches to Learning and Teaching Machine Learning in K-12 Education: Transparency, Ethics, and Design Activities](https://doi.org/10.1145/3677619.3678117) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0305 — [A Framework for Approaching AI Education in Educator Preparation Programs](https://doi.org/10.1609/aaai.v38i21.30351) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0306 — [A Picture Is Worth a Thousand Words: Co-designing Text-to-Image Generation Learning Materials for K-12 with Educators](https://doi.org/10.1609/aaai.v38i21.30373) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0307 — [An Effectiveness Study of Teacher-Led AI Literacy Curriculum in K-12 Classrooms](https://doi.org/10.1609/aaai.v38i21.30380) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0308 — [Build Your Own Robot Friend: An Open-Source Learning Module for Accessible and Engaging AI Education](https://doi.org/10.1609/aaai.v38i21.30359) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0309 — [Co-designing AI Education Curriculum with Cross-Disciplinary High School Teachers](https://doi.org/10.1609/aaai.v38i21.30360) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0310 — [Constructing Dreams Using Generative AI](https://doi.org/10.1609/aaai.v38i21.30374) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0311 — [Does Any AI-Based Activity Contribute to Develop AI Conception? A Case Study with Italian Fifth and Sixth Grade Classes](https://doi.org/10.1609/aaai.v38i21.30350) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0312 — [Dr. R.O. Bott Will See You Now: Exploring AI for Wellbeing with Middle School Students](https://doi.org/10.1609/aaai.v38i21.30379) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0313 — [Foundations of Autonomous Vehicles: A Curriculum Model for Developing Competencies in Artificial Intelligence and the Internet of Things for Grades 7–10](https://doi.org/10.1609/aaai.v38i21.30375) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0314 — [From Consumers to Critical Users: Prompty, an AI Literacy Tool for High School Students](https://doi.org/10.1609/aaai.v38i21.30378) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0315 — [ImageSTEAM: Teacher Professional Development for Integrating Visual Computing into Middle School Lessons](https://doi.org/10.1609/aaai.v38i21.30355) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0316 — [Supporting Upper Elementary Students in Learning AI Concepts with Story-Driven Game-Based Learning](https://doi.org/10.1609/aaai.v38i21.30354) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0317 — [Unplugged K-12 AI Learning: Exploring Representation and Reasoning with a Facial Recognition Game](https://doi.org/10.1609/aaai.v38i21.30376) | conference_paper | 未知 | discovered_unverified |
 
 ## 2024｜first_publication
 
