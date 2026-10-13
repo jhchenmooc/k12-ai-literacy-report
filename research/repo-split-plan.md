@@ -6,7 +6,7 @@
 > - v0.1 → v0.2：依第一輪（Sonnet）審查修正；
 > - v0.2 → v0.3：依第二輪（Fable）審查修正；
 > - v0.3 → v0.4：依第三輪（Haiku，37 項）審查修正。本版拿掉網站模式與 GitHub 端路徑限制（兩者經核對做不到），新增 S9；
-> - v0.4 → v0.5：記錄管理者決定（全拆、改用組織 `ailiteracytw`），改寫帳號、網址、轉移時機，新增第 12 節移交。本版未另做審查；其後依管理者 2026-10-13 指示，組織名稱由 `k12-ai-literacy-tw` 改為 `ailiteracytw`（網址較短，網站在根路徑）；並自檢修正：步驟 1 拆成 1a（可立即做）與 1b，切換時金鑰改存為 repo secret，首次部署與切換後冒煙測試的規則。
+> - v0.4 → v0.5：記錄管理者決定（全拆、改用組織 `ailiteracytw`），改寫帳號、網址、轉移時機，新增第 12 節移交。本版未另做審查；其後依管理者 2026-10-13 指示，組織名稱由 `k12-ai-literacy-tw` 改為 `ailiteracytw`（網址較短，網站在根路徑）；並自檢修正：步驟 1 拆成 1a（已完成）與 1b（PR-1 接近完成時做，不在此步開 Pages），負向測試與開 Pages 移到步驟 4，切換時金鑰改存為 repo secret，首次部署與切換後冒煙測試的規則。
 >
 > 紀錄見 [repo-split-plan-reviews.md](repo-split-plan-reviews.md)。審查與修正都是 Anthropic 模型執行，不是外部真人審查。
 >
@@ -238,10 +238,10 @@
 |---|---|---|---|---|
 | 0 | 回覆 S6、S8、S9（S0 與帳號已決定）；S9 須在 PR-4 前決定 | 管理者 | — | — |
 | 1a | **2026-10-13 完成**：用現有帳號建立免費組織 `ailiteracytw`（選「My personal account」，日後辦公室正式成立可改簽單位合約）；Claude GitHub App 已安裝到組織；`ailiteracytw.github.io` 已建立，**目前為私人**，步驟 1b 開 Pages 前改為公開，並確認仍無任何 commit。原規劃內容：組織設定：要求成員啟用兩步驟驗證、成員基本權限設為「無」、維持預設的「不允許 fork 私人 repo」；在 https://claude.ai/connect-github 把 Claude GitHub App 安裝到組織（可先只授權所選 repo）；可選：建立**空的**公開 repo `ailiteracytw.github.io` 保留名稱（不勾 README，不開 Pages） | 管理者（**可立即做**，約 15 分鐘） | 組織與 App 安裝完成 | 刪除組織 |
-| 1b | 開 Pages（從 main 分支根目錄部署）；設分支規則；在自己電腦產生 ed25519 部署金鑰：公鑰加到公開 repo 的 Deploy keys 並勾「允許寫入」，私鑰存入現有 repo 的 `environment: public-site` secret，之後刪除本機私鑰；把 `k12-ai-literacy-report-restricted` 轉移到組織 | 管理者（時段一，約 30 分鐘，10/19 起，最晚 10/23） | 用金鑰 force push 被拒；新 session 能選到組織的 repo | 撤銷金鑰；restricted repo 可再轉回 |
+| 1b | `ailiteracytw.github.io` 改為公開；設分支規則（Include default branch；只勾 Restrict deletions、Block force pushes；不要求 PR；bypass 留空）；在自己電腦產生 ed25519 部署金鑰：公鑰加到公開 repo 的 Deploy keys 並勾「允許寫入」，私鑰存入現有 repo 的 `environment: public-site`（只允許 `main`），secret 名稱 `PUBLIC_DEPLOY_KEY`，之後刪除本機私鑰；把 `k12-ai-literacy-report-restricted` 轉移到組織，並加入 Claude GitHub App 的允許清單。**Pages 不在此步開**：repo 仍是空的，沒有 main 分支可選 | 管理者（時段一，約 30 分鐘；**PR-1 接近完成時再做**，金鑰建好即可在步驟 4 使用） | claude.ai 連線頁的 Check repository status 顯示可存取 restricted repo | 撤銷金鑰；restricted repo 可再轉回 |
 | 2 | 讀取最近 10 次 run 的實際分鐘數，乘以每月預期次數 | 編輯 session | 低於 2,000 分鐘的 80% | — |
 | 3 | 權限試跑：各工作 session 在已轉到組織的 `ailiteracytw/k12-ai-literacy-report-restricted` 開 PR、合併（同時驗證 App 在組織上可用）；用 `get_trigger` 確認每日短訊排程 ID，寫入交接檔 | 編輯 session、管理者 | 試跑成功、ID 已記 | — |
-| 4 | 合併 PR-1（若尚未合併）；設 `ENABLE_PUBLIC_PUBLISH=true`；手動觸發推送；以第 7.1 節清單驗收新站 | 編輯 session | 第 7.1 節清單 | 開關設 false |
+| 4 | 合併 PR-1（若尚未合併）；設 `ENABLE_PUBLIC_PUBLISH=true`；手動觸發第一次推送；推送後由管理者在公開 repo 的 Settings → Pages 設定從 `main` 根目錄部署（若尚未自動啟用）；以 workflow 做負向測試：用金鑰 force push 必須被拒；以第 7.1 節清單驗收新站 | 編輯 session、管理者 | 第 7.1 節清單；force push 被拒 | 開關設 false |
 | 5 | 合併 PR-2；新 repo 的讀者回饋表單送出一則測試 Issue | 編輯 session、管理者 | 表單與每週整理正常 | revert PR-2 |
 | 6 | 合併 PR-3：公告上線、開始驗收期；改寫每日短訊排程，讀 `publish-public` 結果並記驗收紀錄 | 編輯 session、管理者 | 排程試跑一次 | revert PR-3、還原排程 |
 | 7 | 驗收期（第 6 節條件） | 自動 | 條件達成 | 同步驟 6 |
@@ -314,7 +314,7 @@
 **請回答這三項**：
 
 - **S6 時程**：
-  - 預設步驟 1a 隨時可做；步驟 1b–4 在 10/19 起、最晚 10/23 完成；10/21–22 是保護日，不排工作，順延；
+  - 步驟 1a 已完成；PR-1 在下週一（10/19，用量重置）起做，用 Sonnet 實作、合併前以 Opus 只審 workflow、推送前檢查與知識庫過濾；步驟 1b 在 PR-1 接近完成時做；步驟 1b–4 最晚 10/23；10/21–22 是保護日，不排工作，順延；
   - 10/30 合併 PR-3（10/29 月報部署通過才合併，否則 11/2）；
   - 驗收條件達成後切換，最早 11/9；11/30 未達成由管理者決定是否放棄。
 - **S8 舊網址**（步驟 9 後 `jhchenmooc.github.io/k12-ai-literacy-report/` 會 404）：
@@ -351,7 +351,7 @@
 - **人員**：
   - 先把接手者加為組織的第二位擁有者，交接期兩人並存，交接完再移除原擁有者；
   - 不交出任何帳號密碼。GitHub 也建議組織至少有兩位擁有者，避免唯一擁有者聯絡不上。
-- **跟著組織走的**：repo、Issue、Pages、部署金鑰、Actions secret 與變數、Claude GitHub App 的安裝。
+- **跟著組織走的**：repo、Issue、Pages、部署金鑰、Actions secret、Claude GitHub App 的安裝；Actions 變數在文件上未寫明，轉移後要確認。
 - **不會跟著組織走、要接手者重建的**：
   - claude.ai 上的排程（每日短訊等）屬於建立者的 claude.ai 帳號，接手者要在自己的帳號重建，並在交接檔記下各排程的內容；
   - 雲端環境設定與連線的服務；
