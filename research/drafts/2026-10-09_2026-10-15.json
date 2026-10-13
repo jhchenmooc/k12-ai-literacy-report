@@ -661,6 +661,75 @@
       "audience": "k12",
       "screening_note": "Verified 2026-10-13 for daily brief 2026-10-13 (author-abstract attributed summary); first disclosure from arXiv v1 submission history.",
       "verification_completed_on": "2026-10-13"
+    },
+    {
+      "candidate_id": "W2026-10-09-A21",
+      "category": "research",
+      "source_url": "https://doi.org/10.3390/jintelligence14100257",
+      "source_title": "When AI Is—and Is Not—Needed: AI Literacy and Computational Thinking in Primary STEM",
+      "source_organization": "Journal of Intelligence (MDPI)",
+      "source_publication_date": "2026-10-12",
+      "source_locator": "出版者 PDF 首頁：Received 18 August 2026；Revised 5 October 2026；Accepted 7 October 2026；Published 12 October 2026；J. Intell. 2026, 14, 257；Abstract",
+      "discovered_on": "2026-10-13",
+      "discovery_batch_id": "2026-10-13-daily-2",
+      "first_disclosed_on": "2026-10-12",
+      "source_updates": [],
+      "original_excerpt": "An embedded mixed-methods, quasi-experimental pretest–posttest control-group design was conducted with 93 students from four intact classrooms.",
+      "source_checked": true,
+      "claim_text": "來源機構：Journal of Intelligence (MDPI)；資料標題：When AI Is—and Is Not—Needed: AI Literacy and Computational Thinking in Primary STEM；來源刊登日：2026-10-12。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "不在監測清單，管理者 2026-10-13 同意逐篇收錄；介入研究，短訊只寫設計。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-13T05:50Z 讀管理者提供的出版者 PDF（MDPI 正式版）首頁，擷取 Published 日期、卷期與摘要，擇句撰寫中文摘要；第二輪 2026-10-13T05:58Z 由隔離子代理逐項對照英文原句（數字、對象、地點、設計、結果方向與保留語、介入研究是否誤寫成效），判定一致。出版者網頁對自動請求回 403，未讀網頁版。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS"
+      ],
+      "ai_lit_note": "三年級學生分辨機器學習與規則式自動化、推理訓練資料與模型錯誤，對應 S-BAS「理解AI運作原理與限制」",
+      "audience": "k12",
+      "doi": "10.3390/jintelligence14100257",
+      "screening_note": "Verified 2026-10-13 from manager-supplied publisher PDF for daily brief 2026-10-13 supplement (author-abstract attributed summary).",
+      "verification_completed_on": "2026-10-13"
+    },
+    {
+      "candidate_id": "W2026-10-09-A22",
+      "category": "research",
+      "source_url": "https://doi.org/10.3390/su182010310",
+      "source_title": "Toward Responsible and Sustainable AI Integration in Education: A Cross-National Analysis of Factors Influencing Teachers’ AI Adoption Using TALIS 2024",
+      "source_organization": "Sustainability (MDPI)",
+      "source_publication_date": "2026-10-10",
+      "source_locator": "出版者 PDF 首頁：Received 22 August 2026；Revised 29 September 2026；Accepted 7 October 2026；Published 10 October 2026；Sustainability 2026, 18, 10310；Abstract",
+      "discovered_on": "2026-10-13",
+      "discovery_batch_id": "2026-10-13-daily-2",
+      "first_disclosed_on": "2026-10-10",
+      "source_updates": [],
+      "original_excerpt": "This model was tested with TALIS 2024 data from 1766 lower secondary teachers in the United Arab Emirates and Shanghai, China.",
+      "source_checked": true,
+      "claim_text": "來源機構：Sustainability (MDPI)；資料標題：Toward Responsible and Sustainable AI Integration in Education: A Cross-National Analysis of Factors Influencing Teachers’ AI Adoption Using TALIS 2024；來源刊登日：2026-10-10。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "不在監測清單，管理者 2026-10-13 同意逐篇收錄；相關研究，不涉及因果。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-13T05:50Z 讀管理者提供的出版者 PDF（MDPI 正式版）首頁，擷取 Published 日期、卷期與摘要，擇句撰寫中文摘要；第二輪 2026-10-13T05:58Z 由隔離子代理逐項對照英文原句（數字、對象、地點、設計、結果方向與保留語、介入研究是否誤寫成效），判定一致。出版者網頁對自動請求回 403，未讀網頁版。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "T-TEA",
+        "T-PD"
+      ],
+      "ai_lit_note": "國中教師 AI 採用與 AI 相關培訓、有用性與風險認知的關聯，屬 AI 工具使用與接受度（B），對應 T-TEA「評估AI工具輔助教學的適用性」與 T-PD「評估教師AI素養以規劃專業增能」",
+      "audience": "k12",
+      "doi": "10.3390/su182010310",
+      "screening_note": "Verified 2026-10-13 from manager-supplied publisher PDF for daily brief 2026-10-13 supplement (author-abstract attributed summary).",
+      "verification_completed_on": "2026-10-13"
     }
   ],
   "item_template": {
@@ -684,9 +753,9 @@
     "ai_crosscheck_record": ""
   },
   "screening_summary": {
-    "candidate_count": 20,
-    "ready_to_publish": 7,
-    "verified_for_publication": 7,
+    "candidate_count": 22,
+    "ready_to_publish": 9,
+    "verified_for_publication": 9,
     "screened_on": "2026-10-09",
     "source_types": "official UNESCO policy commentary; institutional event announcements; government training calendars; prior-window research",
     "warnings": [
@@ -1336,6 +1405,22 @@
       ],
       "discovered": 1,
       "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-13-daily-2",
+      "searched_on": "2026-10-13",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Manager-supplied publisher PDFs (MDPI article first page: Received/Revised/Accepted/Published) for observation items approved by manager 2026-10-13; publisher HTML pages returned HTTP 403 to automated requests; 2026-10-13T05:50Z",
+          "status": "ok"
+        }
+      ],
+      "discovered": 2,
+      "added": 2,
       "duplicates": 0
     }
   ]
