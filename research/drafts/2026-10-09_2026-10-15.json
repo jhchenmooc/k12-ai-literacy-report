@@ -627,6 +627,40 @@
       "doi": "10.29333/ejmste/19564",
       "screening_note": "Observation item from 2026-10-12-daily-1; manager approved import 2026-10-12. Verified 2026-10-12 for daily brief 2026-10-12 (author abstract attributed summary); first disclosure from original page.",
       "verification_completed_on": "2026-10-12"
+    },
+    {
+      "candidate_id": "W2026-10-09-A20",
+      "category": "research",
+      "source_url": "https://arxiv.org/abs/2610.12834",
+      "source_title": "From Instructional Intent to Classroom-Ready Lessons: Investigating Teacher-AI Collaboration in Lesson Authoring for Secondary Computing Education",
+      "source_organization": "arXiv",
+      "source_publication_date": "2026-10-09",
+      "source_locator": "arXiv abs 頁 Submission history：[v1] Fri, 9 Oct 2026 00:35:00 UTC；citation_online_date 2026/10/09；Abstract",
+      "discovered_on": "2026-10-13",
+      "discovery_batch_id": "2026-10-13-daily-1",
+      "first_disclosed_on": "2026-10-09",
+      "source_updates": [],
+      "original_excerpt": "We conducted two complementary qualitative studies with eight secondary computing teachers: focus groups examining existing authoring practices and a think-aloud study using LessonBuilder, a structured AI-supported lesson authoring system, as a research probe.",
+      "source_checked": true,
+      "claim_text": "來源機構：arXiv；資料標題：From Instructional Intent to Classroom-Ready Lessons: Investigating Teacher-AI Collaboration in Lesson Authoring for Secondary Computing Education；來源刊登日：2026-10-09。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "預印本 v1，未經同儕審查；8 名中學運算課教師的質性研究；本則只為書目事實，不涉及研究結果。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-13T00:35Z 經 arXiv API 與 abs 頁擷取書目、v1 提交日（Fri, 9 Oct 2026 00:35:00 UTC，僅 v1）與摘要，擇第 2、3 句撰寫中文摘要；第二輪 2026-10-13T00:45Z 由隔離子代理逐項對照英文原句（人數、對象、設計、系統名稱與角色、發現方向與保留語、有無增添），判定一致，依其建議改用較貼近原文的用詞（互補、教材編寫）。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "T-TEA",
+        "T-BAS"
+      ],
+      "ai_lit_note": "教師以生成式 AI 系統輔助編寫教材並判斷是否適合課堂，屬 AI 工具於教學的使用（B），對應 T-TEA「設計AI與教學法整合的策略」與 T-BAS「執行監督以檢核AI產出」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-10-13 for daily brief 2026-10-13 (author-abstract attributed summary); first disclosure from arXiv v1 submission history.",
+      "verification_completed_on": "2026-10-13"
     }
   ],
   "item_template": {
@@ -650,9 +684,9 @@
     "ai_crosscheck_record": ""
   },
   "screening_summary": {
-    "candidate_count": 19,
-    "ready_to_publish": 6,
-    "verified_for_publication": 6,
+    "candidate_count": 20,
+    "ready_to_publish": 7,
+    "verified_for_publication": 7,
     "screened_on": "2026-10-09",
     "source_types": "official UNESCO policy commentary; institutional event announcements; government training calendars; prior-window research",
     "warnings": [
@@ -1246,6 +1280,62 @@
       ],
       "discovered": 2,
       "added": 2,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-13-daily-1",
+      "searched_on": "2026-10-13",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref works filter=from-created-date:2026-10-12,until-created-date:2026-10-12,type:journal-article; query.bibliographic=AI literacy | artificial intelligence literacy | generative AI school students | AI education teachers K-12 | ChatGPT secondary school | artificial intelligence primary school children; rows=40 each (relevance-ranked, top 40 only); two groups retried after HTTP 429; 2026-10-13T00:24Z",
+          "status": "ok"
+        },
+        {
+          "group": "research-preprint",
+          "query": "arXiv API abs:\"AI literacy\" OR abs:\"artificial intelligence literacy\" OR (abs:\"generative AI\" AND K-12/high school/middle school/primary school/secondary school/elementary), sortBy=submittedDate desc, max_results=40; 2026-10-13",
+          "status": "ok"
+        },
+        {
+          "group": "research-preprint",
+          "query": "alphaXiv discover_papers (discovery only) keywords AI literacy, K-12, children, generative AI; published_after 2026-10-06; 2026-10-13",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search API q=artificial intelligence schools filter_public_timestamp=from:2026-10-06 order=-public_timestamp count=20; and filter_organisations=department-for-education from:2026-10-11 count=40; 2026-10-13",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "Federal Register API conditions[term]=artificial intelligence education publication_date gte 2026-10-06; and agencies=education-department gte 2026-10-06; 2026-10-13",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "MEXT homepage news list https://www.mext.go.jp/; 2026-10-13",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "China MOE gzdt list http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/ and document list moe_1778; 2026-10-13",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "Hong Kong government press releases 2026-10-12 and 2026-10-13 daily lists; 2026-10-13",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "UNESCO articles list via WebFetch (model-summarised, leads only); 2026-10-13",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ]
