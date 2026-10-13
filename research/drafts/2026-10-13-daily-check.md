@@ -80,3 +80,12 @@
 - 兩輪對照：第一輪 05:50Z 讀 PDF 撰寫；第二輪 05:58Z 隔離子代理逐項對照英文原句，兩則都判定一致，依建議把「多群組分析」改為「多群組結構方程模型」。同一模型，非獨立審閱。
 - 本期改為 3 則；候選池 22 筆，publish 9 筆（A14–A22），`screening_summary` 同步為 9。本機 verify 全部通過。
 - 出版者 PDF 依管理者指示另存私人 repo，不放公開 repo。
+
+## 補發第二輪（2026-10-13，Sage Open）
+
+管理者提供 SAGE Journals 文章頁 Details 截圖：Received August 2, 2025；Revised July 30, 2026；Accepted September 21, 2026；Issue published October-December 2026；**Online October 12, 2026**。據此以原文頁日期核定首發日 2026-10-12。
+
+- 匯入候選 W2026-10-09-A23，發布 D20261013-04：利雅德 31 名任教聽障與重聽學生的國小女教師，單組準實驗；A（T-PD、T-TEA）；介入研究只寫目的、設計與樣本。
+- 知識庫紀錄 KB-2026-0276（`journal_article`、`bibliographic_checked`），關聯 KR-9149～9161。
+- 兩輪對照：第一輪 06:00Z 讀 PDF 摘要與截圖撰寫；第二輪 06:05Z 隔離子代理逐項對照，判定一致，依建議微調用詞。同一模型，非獨立審閱。
+- 本期改為 4 則；候選池 23 筆，publish 10 筆（A14–A23），`screening_summary` 同步為 10。PDF 與截圖存私人 repo。
