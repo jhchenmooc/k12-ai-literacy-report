@@ -682,7 +682,6 @@
 | KB-2024-0336 — [교육용 인공지능 시스템의 학교 현장 적용을 위한 기초 연구(RR 2024-2)](https://www.keris.or.kr/main/ad/pblcte/selectPblcteRRInfo.do?mi=1138&pblcteSeq=13826) | policy_review | 2024-12-02 | discovered_unverified |
 | KB-2024-0337 — [인간교사와 AI 보조교사 간 협력 모형에 기반한 초·중등학교 교육과정 개선 방향 탐색(RRC 2024-7)](https://www.kice.re.kr/resrchBoard/view.do?seq=1191&s=kice&m=030109) | policy_review | 2024-12-31 | discovered_unverified |
 | KB-2024-0338 — [Generative AI (guidance and resources for education professionals)](https://www.education.govt.nz/education-professionals/schools-year-0-13/digital-technology/generative-ai) | official_guidance | 2024-11-25 | discovered_unverified |
-| KB-2024-0339 — [中小學使用「生成式人工智慧」注意事項（學生版）](https://pads.moe.edu.tw/download.php) | official_guidance | 2024-07-01 | discovered_unverified |
 | KB-2024-0340 — [Research on parent and pupil attitudes towards the use of AI in education](https://www.gov.uk/government/publications/research-on-parent-and-pupil-attitudes-towards-the-use-of-ai-in-education) | policy_review | 2024-08-28 | discovered_unverified |
 | KB-2024-0341 — [Ofsted's approach to AI (incl. How Ofsted looks at AI during inspection and regulation)](https://www.gov.uk/government/publications/ofsteds-approach-to-ai) | official_guidance | 2024-04-24 | discovered_unverified |
 | KB-2024-0342 — [Artificial Intelligence: Learning With AI, Learning About AI — Resource Kit](https://www.cde.ca.gov/ci/pl/documents/cdeairesourcekit.pdf) | official_guidance | 2024-04 | discovered_unverified |
