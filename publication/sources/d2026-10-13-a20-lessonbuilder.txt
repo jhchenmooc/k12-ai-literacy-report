@@ -1,0 +1,4 @@
+arXiv | 2026-10-09 | From Instructional Intent to Classroom-Ready Lessons: Investigating Teacher-AI Collaboration in Lesson Authoring for Secondary Computing Education | https://arxiv.org/abs/2610.12834 | arXiv abs page (read 2026-10-13T00:40Z); preprint, not peer reviewed
+Submission history: [v1] Fri, 9 Oct 2026 00:35:00 UTC (21,258 KB)
+Abstract excerpt (selected abstract sentences in original order, joined by " … "):
+We conducted two complementary qualitative studies with eight secondary computing teachers: focus groups examining existing authoring practices and a think-aloud study using LessonBuilder, a structured AI-supported lesson authoring system, as a research probe. … We found that teachers' instructional intentions developed through creating, inspecting, and adapting materials, while teachers selectively delegated tasks to AI and retained responsibility for judging classroom readiness.

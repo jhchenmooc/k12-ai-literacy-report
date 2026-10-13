@@ -1,0 +1,51 @@
+[
+  {
+    "claim_id": "D20261013-01",
+    "candidate_id": "W2026-10-09-A20",
+    "kind": "research",
+    "claim_text": "來源機構：arXiv；資料標題：From Instructional Intent to Classroom-Ready Lessons: Investigating Teacher-AI Collaboration in Lesson Authoring for Secondary Computing Education；來源刊登日：2026-10-09。作者摘要報告：研究團隊以 8 名中學運算課教師進行兩項互補的質性研究：以焦點團體探討既有的教材編寫做法，並以結構化 AI 輔助教案編寫系統 LessonBuilder 作為研究探針進行放聲思考研究；作者報告，教師的教學意圖在製作、檢視與調整教材的過程中形成，教師有選擇地把任務交給 AI，並保留判斷教材是否適合課堂使用的責任。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+    "claim_class": "descriptive",
+    "risk_tier": "medium",
+    "level": "V2",
+    "daily_fact_kind": "research_abstract_attributed_summary",
+    "source_document_type": "preprint",
+    "source_title": "From Instructional Intent to Classroom-Ready Lessons: Investigating Teacher-AI Collaboration in Lesson Authoring for Secondary Computing Education",
+    "source_organization": "arXiv",
+    "source_url": "https://arxiv.org/abs/2610.12834",
+    "evidence_source_url": "https://arxiv.org/abs/2610.12834",
+    "source_locator": "arXiv abs 頁 Submission history：[v1] Fri, 9 Oct 2026 00:35:00 UTC；citation_online_date 2026/10/09；Abstract；摘要歸屬：arXiv abs 頁 Abstract 第 2、3 句（arXiv API 2026-10-13 讀取）",
+    "source_type": "research_publication",
+    "checked_at": "2026-10-13",
+    "publication_date": "2026-10-09",
+    "first_disclosed_on": "2026-10-09",
+    "evidence_path": "publication/sources/d2026-10-13-a20-lessonbuilder.txt",
+    "evidence_sha256": "42d1a3d4ce397cf40f3a96e7f7cd28a907dfc57df6290e6cf4fb2e5555c469c5",
+    "original_excerpt": "We conducted two complementary qualitative studies with eight secondary computing teachers: focus groups examining existing authoring practices and a think-aloud study using LessonBuilder, a structured AI-supported lesson authoring system, as a research probe. … We found that teachers' instructional intentions developed through creating, inspecting, and adapting materials, while teachers selectively delegated tasks to AI and retained responsibility for judging classroom readiness.",
+    "interpretation_note": "轉述作者摘要中的對象、研究設計與作者報告的發現，不加解讀。v1 提交時戳不等於 arXiv announce 時間，預印本未經同儕審查。",
+    "scope_limitation": "預印本 v1，未經同儕審查；8 名中學運算課教師的質性研究，摘要未載國別；不涉及成效。",
+    "assertion_type": "direct_statement",
+    "translation_reviewed": true,
+    "source_checked": true,
+    "scope_checked": true,
+    "outcome_checked": false,
+    "independent_review": false,
+    "conflict_unresolved": false,
+    "contradiction_type": "none",
+    "ai_crosscheck_status": "concordant",
+    "ai_crosscheck_passes": 2,
+    "ai_crosscheck_record": "第一輪 2026-10-13T00:35Z 經 arXiv API 與 abs 頁擷取書目、v1 提交日（Fri, 9 Oct 2026 00:35:00 UTC，僅 v1）與摘要，擇第 2、3 句撰寫中文摘要；第二輪 2026-10-13T00:45Z 由隔離子代理逐項對照英文原句（人數、對象、設計、系統名稱與角色、發現方向與保留語、有無增添），判定一致，依其建議改用較貼近原文的用詞（互補、教材編寫）。同一模型，非獨立審閱。",
+    "ai_lit_class": "B",
+    "ai_lit_dims": [
+      "T-TEA",
+      "T-BAS"
+    ],
+    "ai_lit_note": "教師以生成式 AI 系統輔助編寫教材並判斷是否適合課堂，屬 AI 工具於教學的使用（B），對應 T-TEA「設計AI與教學法整合的策略」與 T-BAS「執行監督以檢核AI產出」",
+    "audience": "k12",
+    "decision": "publish",
+    "summary_evidence_spans": [
+      "We conducted two complementary qualitative studies with eight secondary computing teachers: focus groups examining existing authoring practices and a think-aloud study using LessonBuilder, a structured AI-supported lesson authoring system, as a research probe.",
+      "We found that teachers' instructional intentions developed through creating, inspecting, and adapting materials, while teachers selectively delegated tasks to AI and retained responsibility for judging classroom readiness."
+    ],
+    "attributed_summary": "研究團隊以 8 名中學運算課教師進行兩項互補的質性研究：以焦點團體探討既有的教材編寫做法，並以結構化 AI 輔助教案編寫系統 LessonBuilder 作為研究探針進行放聲思考研究；作者報告，教師的教學意圖在製作、檢視與調整教材的過程中形成，教師有選擇地把任務交給 AI，並保留判斷教材是否適合課堂使用的責任。"
+  }
+]

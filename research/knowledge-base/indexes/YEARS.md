@@ -1034,6 +1034,7 @@
 | KB-2026-0270 — [人工智能赋能教师发展现场会举行](https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/moe_1485/202610/t20261011_1453584.html) | government_announcement | 2026-10-10 | bibliographic_checked |
 | KB-2026-0271 — [Culturally Situated AI Safety for Youth: Saudi Arabian Perspectives of Youth, Parents and Teachers](https://ojs.aaai.org/index.php/AIES/article/view/43131) | conference_paper | 2026-10-11 | bibliographic_checked |
 | KB-2026-0272 — [Teachers’ perceptions of ChatGPT support across TPACK domains: A cross-sectional survey in UAE schools](https://www.ejmste.com/article/teachers-perceptions-of-chatgpt-support-across-tpack-domains-a-cross-sectional-survey-in-uae-schools-19564) | journal_article | 2026-10-11 | bibliographic_checked |
+| KB-2026-0273 — [From Instructional Intent to Classroom-Ready Lessons: Investigating Teacher-AI Collaboration in Lesson Authoring for Secondary Computing Education](https://arxiv.org/abs/2610.12834) | preprint | 2026-10-09 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
