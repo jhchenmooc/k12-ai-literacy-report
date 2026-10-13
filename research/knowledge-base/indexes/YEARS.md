@@ -1072,6 +1072,8 @@
 | KB-2025-0412 — [Advancing Early Childhood Mental Health Consultation: Evaluating Traditional and AI-Enhanced Approaches to Support Children and Teachers](https://doi.org/10.3390/educsci16010053) | journal_article | 2025-12-31 | discovered_unverified |
 | KB-2025-0413 — [Evaluating the Relationship Between Pre-Service Teachers’ Artificial Intelligence Readiness and Professional Self-Efficacy](https://doi.org/10.3390/educsci16010043) | journal_article | 2025-12-30 | discovered_unverified |
 | KB-2025-0414 — [생성형 인공지능 활용교육 교사용 가이드라인](https://www.goe.go.kr/resource/old/BBSMSTR_000000000126/BBS_202502240135524570.pdf) | official_guidance | 2025-02-24 | bibliographic_checked |
+| KB-2025-0415 — [수업 및 평가를 위한 생성형 AI 활용 가이드라인(ORM 2025-112)](https://www.kice.re.kr/resrchBoard/view.do?seq=1308&s=kice&m=030109) | official_guidance | 2025-12 | bibliographic_checked |
+| KB-2025-0416 — [교사의 수업 및 평가 지원을 위한 생성형 AI 활용 방안 탐색(RRI 2025-3)](https://www.kice.re.kr/resrchBoard/view.do?seq=1305&s=kice&m=030109) | policy_review | 2025-12 | bibliographic_checked |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
