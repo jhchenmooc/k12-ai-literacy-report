@@ -1,20 +1,26 @@
-# 拆分為私人來源 repo 與公開網站 repo：搬遷方案 v0.4（草稿）
+# 拆分為私人來源 repo 與公開網站 repo：搬遷方案 v0.5（草稿）
 
-> 建立日期：2026-10-13。狀態：**草稿，待管理者決定第 10 節**。本方案不改任何程式、設定或 repo；所有 GitHub 設定變更（建立 repo、改私人、金鑰、Pages、ruleset）由管理者親自操作。
+> 建立日期：2026-10-13。狀態：**草稿；S0 與帳號已決定，待管理者決定第 10 節其餘三項**。本方案不改任何程式、設定或 repo；所有 GitHub 設定變更（建立 repo、改私人、金鑰、Pages、ruleset）由管理者親自操作。
 >
 > 修訂紀錄：
 > - v0.1 → v0.2：依第一輪（Sonnet）審查修正；
 > - v0.2 → v0.3：依第二輪（Fable）審查修正；
-> - v0.3 → v0.4：依第三輪（Haiku，37 項）審查修正。本版拿掉網站模式與 GitHub 端路徑限制（兩者經核對做不到），新增 S9。
+> - v0.3 → v0.4：依第三輪（Haiku，37 項）審查修正。本版拿掉網站模式與 GitHub 端路徑限制（兩者經核對做不到），新增 S9；
+> - v0.4 → v0.5：記錄管理者決定（全拆、改用組織 `k12-ai-literacy-tw`），改寫帳號、網址、轉移時機，新增第 12 節移交。本版未另做審查。
 >
 > 紀錄見 [repo-split-plan-reviews.md](repo-split-plan-reviews.md)。審查與修正都是 Anthropic 模型執行，不是外部真人審查。
 >
-> 管理者 2026-10-13 的方向：私人 repo 編寫與驗證，CI 把網站推到公開 repo；網站網址可以改，可換新名稱。
+> 管理者 2026-10-13 的方向與決定：
+> - 私人 repo 編寫與驗證，CI 把網站推到公開 repo；網站網址可以改，可換新名稱；
+> - **S0：全拆**；
+> - **帳號：改用 GitHub 組織 `k12-ai-literacy-tw`**，不另開個人帳號，以便日後移交。
 
 ## 摘要
 
-- **管理者只需回答四項**（第 10 節）：S0 方案、S6 時程、S8 舊網址、S9 金鑰保護。其餘有預設值，不回覆即照預設。
-- **方案（S0）**：建議甲「全拆」。現在的 repo 保留原名改私人；新建公開 repo 收 CI 推送。
+- **已決定**：全拆；兩個 repo 都放在組織 `k12-ai-literacy-tw`。
+- **管理者還需回答三項**（第 10 節）：S6 時程、S8 舊網址、S9 金鑰保護。其餘有預設值，不回覆即照預設。
+- **新網址**：`https://k12-ai-literacy-tw.github.io/`（公開 repo 取名 `k12-ai-literacy-tw.github.io`，網站在根路徑）。
+- **私人來源 repo**：現有 repo 在切換日**轉移到組織並改私人**，保留歷史、Issue 與 PR。
 - **原則**：已刊出主張所依據的證據必須能公開查到；只有未刊內容可以私人（第 2 節）。
 - **公開內容由程式依規則推導**（第 3 節）：
   - 只公開已登錄期別的主張與它們引用的快照，**路徑與現在相同**（`publication/…`），主張中的 `evidence_path` 不必改寫；
@@ -28,7 +34,7 @@
 - **4 個 PR**：前 2 個不改變現有網站（第 7 節）。
 - **舊網址**：改私人那一刻舊站就 404。建議用個人站台的 404 頁轉址，須先實測（S8）。
 
-## 1. 方案比較（S0）
+## 1. 方案比較（S0，已決定：甲）
 
 | | 甲、全拆（建議） | 乙、只搬草稿 |
 |---|---|---|
@@ -39,7 +45,7 @@
 | 保護範圍 | 全部未刊內容與以後的內部工作 | 只有搬走的檔案；日後新增的檔案要靠紀律放對地方 |
 | 已公開的歷史 | 兩案都無法收回，含已存在的 fork | 同左 |
 
-**建議甲**。理由：乙的「CI 讀不到私人 repo」會牽動出版閘門本身；甲的 CI 不必拆，只多一道推送。
+**管理者 2026-10-13 決定甲**。理由：乙的「CI 讀不到私人 repo」會牽動出版閘門本身；甲的 CI 不必拆，只多一道推送。
 
 ## 2. 公開與私人的原則
 
@@ -62,14 +68,16 @@
 
 ## 3. 拆分後的內容
 
-### 3.1 私人來源 repo（原名 `jhchenmooc/k12-ai-literacy-report`）
+### 3.1 私人來源 repo（切換後為 `k12-ai-literacy-tw/k12-ai-literacy-report`）
+
+現有 repo 在步驟 9 轉移到組織後改私人。依 GitHub 文件，轉移會帶走 Issue、PR、wiki、star、secret 與部署金鑰，github.com 上的舊連結自動轉到新位置；**網站網址不轉址**。
 
 - 全部原始碼、測試與 CI；
 - `research/` 全部，**特別是** `SESSION-HANDOFF.md`（含 session 與排程 ID）、`research/audits/`（含後台設定快照）、草稿與候選池；
 - 未登錄期別的快照（例如 10 月月報草稿引用的 8 個 `publication/sources/m2026-10-*.txt`）；
 - 版權原件。
 
-### 3.2 公開網站 repo（新名稱，S1）
+### 3.2 公開網站 repo（`k12-ai-literacy-tw/k12-ai-literacy-tw.github.io`）
 
 **兩份清單分開**：
 
@@ -186,11 +194,15 @@
 
 ## 5. 連結、網址與測試
 
-- **網址常數**：`render-site.js` 增加 `PUBLIC_SITE_ORIGIN`、`PUBLIC_REPO_URL`，預設值等於現況；產生的頁面與測試共用。
+- **網址常數**：`render-site.js` 增加 `PUBLIC_SITE_ORIGIN`、`PUBLIC_REPO_URL`，預設值等於現況；產生的頁面與測試共用。切換後的值：
+  - `PUBLIC_SITE_ORIGIN` = `https://k12-ai-literacy-tw.github.io`；
+  - `PUBLIC_REPO_URL` = `https://github.com/k12-ai-literacy-tw/k12-ai-literacy-tw.github.io`。
+- **網站改到根路徑**：2026-10-13 核對，網站頁面只用相對連結，沒有以 `/k12-ai-literacy-report/` 開頭的路徑，改到根路徑不會壞連結；驗收時仍逐頁實測。
 - **已刊頁面的殼**：出版閘門逐屬性比對已登錄 daily 頁的殼（`validate-publication.js` 第 82–83 行）。所以網址常數只在切換 PR（PR-4）中改值，同時重新產生已刊 daily 頁。這是「已刊頁面頁尾網址變更」，主文不變，要在 PR 說明中列出受影響的頁。
 - **要改的位置**（2026-10-13 核對）：
   - **產生程式**：`render-site.js` 第 52 行頁尾、第 252 行知識庫說明（寫死 `research/knowledge-base` 路徑，改指公開 repo 的 `knowledge-base/`）；改完執行 `render-site.js --write`，重新產生首頁、about、archive 四頁、daily 等頁。
   - **手寫頁**：`feedback/index.html`、`feedback/no-login/index.html`、`feedback/privacy/index.html`。
+  - **Issue 表單**：`.github/ISSUE_TEMPLATE/reader-feedback.yml` 第 58 行的網址範例。
   - **測試**：
     - `validate-reader-feedback.test.js` 第 15 行，改用常數；
     - `validate-publication.test.js` 第 456 行，改為斷言舊刊連到新 repo 的 `methods/`；
@@ -218,22 +230,22 @@
 | PR-1 | 公開資料清單推導（快照、知識庫過濾與索引重建、`methods/` 連結改寫）、推送前檢查與掃描規則、網址常數（預設等於現況）、`publish-public.yml`（只用 `workflow_dispatch`）、金鑰處理、冒煙測試，以及全部測試 | 無（網站清單不變；開關預設關） | 10/19 起，最晚 10/23；可在步驟 1 前合併 |
 | PR-2 | `methods/` 檔首說明、`publication/README.md`、`knowledge-base/README.md`、讀者回饋的公開 repo 版本（`tools/`；釘 SHA、`concurrency`） | 無 | 10/23 |
 | PR-3 | 中性公告；`publish-public` 加 `push` 觸發 | 舊站首頁與列表頁出現公告 | 10/30；**10/29 月報部署與冒煙測試都通過才合併**，否則延到 11/2 |
-| PR-4（切換 PR） | 網址常數改值並重新產生頁面、舊刊連結與更正框、測試第 15 與 456 行、`feedback/` 三頁、about 頁「我們不宣稱的事」與私人類別、拿掉公告 | 已刊 daily 頁頁尾網址變更 | 切換日 |
+| PR-4（切換 PR） | 網址常數改值並重新產生頁面、舊刊連結與更正框、測試第 15 與 456 行、`feedback/` 三頁與 Issue 表單、about 頁「我們不宣稱的事」與私人類別、拿掉公告 | 已刊 daily 頁頁尾網址變更 | 切換日 |
 
 **執行順序**：
 
 | 步驟 | 內容 | 誰做 | 確認點 | 放棄時的清理 |
 |---|---|---|---|---|
-| 0 | 回覆 S0、S6、S8、S9 | 管理者 | — | — |
-| 1 | 建立公開 repo；開 Pages（從分支部署）；設分支規則；建立部署金鑰並存入 `environment: public-site` | 管理者（時段一，約 30 分鐘，10/19 起，最晚 10/23） | 用金鑰 force push 被拒 | 刪除公開 repo、撤銷金鑰 |
+| 0 | 回覆 S6、S8、S9（S0 與帳號已決定） | 管理者 | — | — |
+| 1 | 用現有帳號建立免費組織 `k12-ai-literacy-tw`；在 https://claude.ai/connect-github 把 Claude GitHub App 安裝到組織；建立公開 repo `k12-ai-literacy-tw.github.io`；開 Pages（從分支部署）；設分支規則；建立部署金鑰並存入現有 repo 的 `environment: public-site`；把 `k12-ai-literacy-report-restricted` 轉移到組織 | 管理者（時段一，約 45 分鐘，10/19 起，最晚 10/23） | 用金鑰 force push 被拒；新 session 能選到組織的 repo | 刪除公開 repo、撤銷金鑰；restricted repo 可再轉回 |
 | 2 | 讀取最近 10 次 run 的實際分鐘數，乘以每月預期次數 | 編輯 session | 低於 2,000 分鐘的 80% | — |
-| 3 | 權限試跑：各工作 session 在既有私人 repo `k12-ai-literacy-report-restricted` 開 PR、合併；用 `get_trigger` 確認每日短訊排程 ID，寫入交接檔 | 編輯 session、管理者 | 試跑成功、ID 已記 | — |
+| 3 | 權限試跑：各工作 session 在已轉到組織的 `k12-ai-literacy-tw/k12-ai-literacy-report-restricted` 開 PR、合併（同時驗證 App 在組織上可用）；用 `get_trigger` 確認每日短訊排程 ID，寫入交接檔 | 編輯 session、管理者 | 試跑成功、ID 已記 | — |
 | 4 | 合併 PR-1（若尚未合併）；設 `ENABLE_PUBLIC_PUBLISH=true`；手動觸發推送；以第 7.1 節清單驗收新站 | 編輯 session | 第 7.1 節清單 | 開關設 false |
 | 5 | 合併 PR-2；新 repo 的讀者回饋表單送出一則測試 Issue | 編輯 session、管理者 | 表單與每週整理正常 | revert PR-2 |
 | 6 | 合併 PR-3：公告上線、開始驗收期；改寫每日短訊排程，讀 `publish-public` 結果並記驗收紀錄 | 編輯 session、管理者 | 排程試跑一次 | revert PR-3、還原排程 |
 | 7 | 驗收期（第 6 節條件） | 自動 | 條件達成 | 同步驟 6 |
 | 8 | 切換日（早於 11/9 不做）：暫停當日每日短訊一次；合併或關閉所有開啟中的 PR；只刪除對應 PR 已合併或關閉的分支；匯出讀者 Issue 到 `feedback-archive/`；合併 PR-4；`vars.ENABLE_VERIFIED_PAGES_DEPLOY` 設為 false，停用舊站部署（job 保留至少一個月）；S8 若要轉址，此時上線並實測 | 編輯 session | 新站正常；轉址實測通過 | 舊站部署開關設回 true、revert PR-4 |
-| 9 | 用 API 列出現有 fork 並記入交接檔；**現 repo 改私人**；停用私人 repo 的 `reader-feedback-digest.yml` | **管理者（時段二，約 30 分鐘，排在每日短訊時間之外）** | 新站正常；私人 repo CI 正常；第 7.1 節清單 | **實質不可回復** |
+| 9 | 用 API 列出現有 fork 並記入交接檔；**現 repo 轉移到組織，接著改私人**；確認 Actions 變數、secret 與部署金鑰仍在（文件寫明 secret 與部署金鑰會跟著轉移，變數未寫明）；停用私人 repo 的 `reader-feedback-digest.yml`；更新各 session 的 git remote、雲端環境選用的 repo 與排程 | **管理者（時段二，約 45 分鐘，排在每日短訊時間之外）** | 新站正常；私人 repo CI 正常；排程能讀到新位置；第 7.1 節清單 | **實質不可回復** |
 | 10 | 驗收；更新交接檔、SOP、README；隔日短訊照常，前一日項目若仍在 7 天內就併入並標「補發」 | 編輯 session、管理者 | 驗收紀錄 | — |
 
 **回復**：
@@ -257,9 +269,10 @@
 
 ### 7.2 要改的文件與排程
 
+- **轉移時機**：現有 repo **不可提早轉移**。它仍公開時轉移，舊站網址會立刻變成組織網址下的路徑，舊網址提前失效；所以轉移與改私人在步驟 9 一起做。
 - **SOP 與說明文件**：
   - `editorial-workflow-master.md`：流程圖、PR → verify → deploy 段落、「公開 repo 仍可能公開研究紀錄」一句；
-  - `SESSION-HANDOFF.md`：「Public Repo 保持現況」等句、部署驗收步驟、新 session 先看公開 PR 與 Actions 的指示、每日短訊排程 ID、金鑰輪替日期、fork 清單；
+  - `SESSION-HANDOFF.md`：「Public Repo 保持現況」等句、部署驗收步驟、新 session 先看公開 PR 與 Actions 的指示、每日短訊排程 ID、金鑰輪替日期、fork 清單、repo 新位置；
   - `README.md`、`research/pages-*.md`、`vars.ENABLE_VERIFIED_PAGES_DEPLOY` 的說明。
 - **排程**：2026-10-13 `list_triggers` 查到啟用中的每日短訊是 trig_01Tr5NNASUdpZzAi2ZwR99Pj，交接檔另記 trig_013Gz1Pk85Fe18FZiuDc7HYv，兩者不一致。步驟 3 用 `get_trigger` 確認後寫入交接檔。
 - **分支清單**：列出各 session 分支、負責人與切換前狀態；切換後保留未合併的分支。
@@ -292,30 +305,34 @@
 
 ## 10. 待管理者決定
 
-**請回答這四項**：
+**已決定（2026-10-13）**：
 
-- **S0 方案**：預設甲（全拆）。
+- **S0 方案**：甲，全拆。
+- **帳號**：GitHub 組織 `k12-ai-literacy-tw`，由管理者現有帳號建立並擔任擁有者。不另開個人帳號：GitHub 服務條款規定一人只能有一個免費個人帳號，且帳號不得多人共用。
+
+**請回答這三項**：
+
 - **S6 時程**：
   - 預設步驟 1–4 在 10/19 起、最晚 10/23 完成；10/21–22 是保護日，不排工作，順延；
   - 10/30 合併 PR-3（10/29 月報部署通過才合併，否則 11/2）；
   - 驗收條件達成後切換，最早 11/9；11/30 未達成由管理者決定是否放棄。
-- **S8 舊網址**（步驟 9 後舊網址會 404，兩位審查者意見相反）：
+- **S8 舊網址**（步驟 9 後 `jhchenmooc.github.io/k12-ai-literacy-report/` 會 404）：
   - **丙、個人站台 404 轉址（預設，須先實測）**：
-    - 做法：建立 `jhchenmooc.github.io` 公開 repo，只放一個 `404.html`，把 `/k12-ai-literacy-report/…` 轉到新網址的對應路徑；
+    - 做法：在管理者個人帳號建立 `jhchenmooc.github.io` 公開 repo，只放一個 `404.html`，把 `/k12-ai-literacy-report/…` 轉到 `https://k12-ai-literacy-tw.github.io/…` 的對應路徑；
     - 前提：project 站取消發佈後，GitHub Pages 會改由個人站台處理該路徑。這點沒有在文件上查到，步驟 8 前實測，不成立就改丁；
-    - 好處：私人 repo 不必改名，沒有誤推到轉址 repo 的風險。
-  - **甲、私人 repo 改名後以原名建轉址 repo**：可行，但任何仍用舊名稱的 git 設定或排程，會把內容推到這個公開 repo。
+    - 好處：不佔用舊 repo 名稱，github.com 上的舊 repo 連結仍會轉到組織；沒有誤推到轉址 repo 的風險。
+  - **甲、以舊名稱建轉址 repo**：轉移後個人帳號下的舊名稱空出，可以建一個只放轉址頁的公開 repo。但依 GitHub 文件，在舊位置建新 repo 會永久刪除 github.com 的自動轉址；任何仍用舊名稱的 git 設定或排程，會把內容推到這個公開 repo。
   - **丁、不轉址**：舊網址直接 404，靠公告期讓讀者改書籤。
 - **S9 金鑰保護**：
   - **甲、接受（預設）**：明寫「能推送到私人 repo 的人都能用部署金鑰」，靠 main 限定、推送前檢查與誤推處置。目前能推送的只有管理者與編輯 session，它們本來就有私人 repo 全部內容的存取權。
-  - **乙、改用 GitHub Pro（付費）**：私人 repo 恢復 environment 保護與分支保護。
+  - **乙、組織改用 GitHub Team（付費，依人數計費）**：私人 repo 恢復 environment 保護與分支保護。
 
 **其餘有預設值，不回覆即照預設**：
 
-- **S1 新 repo 與網站名稱**：`k12-ai-literacy-tw`（網址 `jhchenmooc.github.io/k12-ai-literacy-tw/`）。自訂網域另案。
+- **S1 公開 repo 與網址**：`k12-ai-literacy-tw/k12-ai-literacy-tw.github.io`，網址 `https://k12-ai-literacy-tw.github.io/`。自訂網域另案。
 - **S2 公開內容**：第 3.2 節的推導規則。
 - **S3 讀者回饋**：表單、每週整理 workflow 與整理程式都放公開 repo，用公開 repo 自己的 `GITHUB_TOKEN`。
-- **S4 `k12-ai-literacy-report-restricted`**：維持獨立；步驟 3 用它做權限試跑。
+- **S4 `k12-ai-literacy-report-restricted`**：維持獨立，步驟 1 轉移到組織；步驟 3 用它做權限試跑。
 - **S5 舊刊連結**：4 份文件放進 `methods/`，連結改指向新位置，加更正框。
 - **S7 公告期**：至少 10 天。
 
@@ -324,3 +341,17 @@
 - 已公開歷史中的內容（例如 `research/drafts/2026-10-monthly-crosscheck.md` 第 40 行）與已存在的 fork：無法收回；是否在私人 repo 中修改，或依更正政策處理，另行決定。
 - 自訂網域與 HTTPS 憑證。
 - 公開 repo 的授權條款（LICENSE），另案決定。
+
+## 12. 移交
+
+用組織的目的之一是日後移交。移交時：
+
+- **人員**：
+  - 先把接手者加為組織的第二位擁有者，交接期兩人並存，交接完再移除原擁有者；
+  - 不交出任何帳號密碼。GitHub 也建議組織至少有兩位擁有者，避免唯一擁有者聯絡不上。
+- **跟著組織走的**：repo、Issue、Pages、部署金鑰、Actions secret 與變數、Claude GitHub App 的安裝。
+- **不會跟著組織走、要接手者重建的**：
+  - claude.ai 上的排程（每日短訊等）屬於建立者的 claude.ai 帳號，接手者要在自己的帳號重建，並在交接檔記下各排程的內容；
+  - 雲端環境設定與連線的服務；
+  - 管理者個人帳號下的 S8 轉址 repo（若採丙或甲），可留在原處，或轉移給組織。
+- **交接檔**：記錄組織擁有者名單、金鑰輪替日期、排程清單與內容、轉址 repo 的位置。
