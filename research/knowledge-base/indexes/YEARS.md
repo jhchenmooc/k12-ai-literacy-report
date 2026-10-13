@@ -13,6 +13,7 @@
 | 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
 |---|---|---|---|
 | KB-2021-0001 — [Policy guidance on AI for children (Version 2.0)](https://www.unicef.org/innocenti/media/1341/file/UNICEF-Global-Insight-policy-guidance-AI-children-2.0-2021.pdf) | official_guidance | 2021-11 | bibliographic_checked |
+| KB-2021-0002 — [OECD Digital Education Outlook 2021: Pushing the Frontiers with Artificial Intelligence, Blockchain and Robots](https://digital-education-outlook.oecd.org/) | policy_review | 2021-06-08 | discovered_unverified |
 
 ## 2022｜event_year
 
@@ -239,6 +240,7 @@
 | KB-2023-0008 — [More Support for Schools and Students to Shape the Future of Learning（Launch of EdTech Masterplan 2030 “Transforming Education through Technology”）](https://www.moe.gov.sg/news/press-releases/20230920-more-support-for-schools-and-students-to-shape-the-future-of-learning) | government_announcement | 2023-09-20 | bibliographic_checked |
 | KB-2023-0009 — [Generative artificial intelligence in education call for evidence](https://www.gov.uk/government/calls-for-evidence/generative-artificial-intelligence-in-education-call-for-evidence) | consultation | 2023-06-14 | bibliographic_checked |
 | KB-2023-0010 — [Guidance for generative AI in education and research](https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research) | official_guidance | 2023-09-07 | bibliographic_checked |
+| KB-2023-0011 — [Artificial Intelligence and the Future of Teaching and Learning: Insights and Recommendations](https://eric.ed.gov/?id=ED631097) | policy_review | 2023 | discovered_unverified |
 | KB-2023-0012 — [Draft schools AI framework open for consultation](https://ministers.education.gov.au/clare/draft-schools-ai-framework-open-consultation) | government_announcement | 2023-07-28 | discovered_unverified |
 | KB-2023-0013 — [Taking play and tinkering seriously in AI education: cases from Drag vs AI teen workshops](https://doi.org/10.1080/17439884.2022.2164300) | journal_article | 2023-01-05 | discovered_unverified |
 | KB-2023-0014 — [Teaching Machine Learning in K–12 Using Robotics](https://doi.org/10.3390/educsci13010067) | journal_article | 2023-01-10 | discovered_unverified |
@@ -482,6 +484,7 @@
 | KB-2024-0005 — [教育部部署加强中小学人工智能教育](https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202412/t20241202_1165500.html) | government_announcement | 2024-12-02 | bibliographic_checked |
 | KB-2024-0007 — [Generative artificial intelligence (AI) and data protection in schools](https://www.gov.uk/guidance/data-protection-in-schools/generative-artificial-intelligence-ai-and-data-protection-in-schools) | official_guidance | 2024-02-07 | bibliographic_checked |
 | KB-2024-0008 — [中小學數位教學指引3.0版](https://pads.moe.edu.tw/download_file.php?file=_upload_642bae440e1fb47c45d377aa6686ad28.pdf&old=upload) | official_guidance | 2024-08 | bibliographic_checked |
+| KB-2024-0009 — [Empowering Education Leaders: A Toolkit for Safe, Ethical, and Equitable AI Integration](https://eric.ed.gov/?id=ED661924) | official_guidance | 2024 | discovered_unverified |
 | KB-2024-0010 — [Development of an AI literacy assessment for non-technical individuals: What do teachers know?](https://www.cedtech.net/article/development-of-an-ai-literacy-assessment-for-non-technical-individuals-what-do-teachers-know-14619) | journal_article | 2024-05-14 | discovered_unverified |
 | KB-2024-0011 — [Do teachers spot AI? Evaluating the detectability of AI-generated texts among student essays](https://doi.org/10.1016/j.caeai.2024.100209) | journal_article | 2024-01 | discovered_unverified |
 | KB-2024-0012 — [Pedagogical framework for cultivating children's data agency and creative abilities in the age of AI](https://doi.org/10.15388/infedu.2024.15) | journal_article | 2024-06-06 | discovered_unverified |
@@ -787,6 +790,7 @@
 | KB-2025-0121 — [我和AI一起學！國小生生成式AI學習應用手冊](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3) | official_guidance | 2025-12 | bibliographic_checked |
 | KB-2025-0122 — [駕馭AI，洞察未來：數位公民的必修課——中學生生成式AI素養手冊](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=785274C9C54578B3) | official_guidance | 2025-12 | bibliographic_checked |
 | KB-2025-0133 — [Technologies for Children's AI Learning: Design Features and Future Opportunities](https://dl.acm.org/doi/10.1145/3706598.3713443) | conference_paper | 2025-04-25 | discovered_unverified |
+| KB-2025-0134 — [What should teachers teach and students learn in a future of powerful AI?](https://www.oecd.org/en/publications/what-should-teachers-teach-and-students-learn-in-a-future-of-powerful-ai_ca56c7d6-en.html) | policy_review | 2025-05-23 | discovered_unverified |
 | KB-2025-0135 — [Guidance on the Use of Federal Grant Funds to Improve Education Outcomes Using Artificial Intelligence (AI)](https://www.ed.gov/media/document/opepd-ai-dear-colleague-letter-7222025-110427.pdf) | official_guidance | 2025-07-22 | discovered_unverified |
 | KB-2025-0136 — [Attitudes, perceptions and AI self-efficacy in K-12 education](https://doi.org/10.1016/j.caeai.2024.100358) | journal_article | 2025-01 | discovered_unverified |
 | KB-2025-0137 — [A psychometric analysis of the artificial intelligence skills scale developed through chat gpt](https://doi.org/10.1007/s10639-024-13294-7) | journal_article | 2025-01-13 | discovered_unverified |
@@ -1311,6 +1315,7 @@
 | KB-2026-0252 — [Understanding teens’ self-beliefs when learning to construct and deconstruct AI/ML systems: Developing a survey instrument](https://dl.acm.org/doi/10.1145/3773077.3812156) | conference_paper | 2026-06-21 | discovered_unverified |
 | KB-2026-0253 — [Building to Understand: Examining Teens’ Technical and Socio-Ethical Pieces of Understanding in the Construction of Small Generative Language Models](https://dl.acm.org/doi/10.1145/3773077.3806107) | conference_paper | 2026-06-21 | discovered_unverified |
 | KB-2026-0254 — [Engaging High School Students in Robotics and Artificial Intelligence Through Engineering Design Robotics Education](https://www.mdpi.com/2227-7102/16/6/987) | journal_article | 2026-06-22 | discovered_unverified |
+| KB-2026-0255 — [OECD Digital Education Outlook 2026: Exploring Effective Uses of Generative AI in Education](https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html) | policy_review | 2026-01-19 | discovered_unverified |
 | KB-2026-0256 — [次期学習指導要領等に向けた審議まとめ](https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/004/gaiyou/1292164_00001.htm) | consultation | 2026-10-05 | discovered_unverified |
 | KB-2026-0257 — [EU PISA 2025: First results – European Education Policy Brief](https://education.ec.europa.eu/resources-and-tools/documents/eu-pisa-2025-first-results) | policy_review | 2026-10-05 | discovered_unverified |
 | KB-2026-0258 — [Schools Guide Students to Use AI Purposefully for Learning（Forum letter reply）](https://www.moe.gov.sg/news/forum-letter-replies/20260918-schools-guide-students-to-use-ai-purposefully-for-learning) | government_announcement | 2026-09-18 | discovered_unverified |
@@ -1337,12 +1342,8 @@
 
 | 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
 |---|---|---|---|
-| KB-2021-0002 — [OECD Digital Education Outlook 2021: Pushing the Frontiers with Artificial Intelligence, Blockchain and Robots](https://digital-education-outlook.oecd.org/) | policy_review | 未知 | discovered_unverified |
-| KB-2023-0011 — [Artificial Intelligence and the Future of Teaching and Learning: Insights and Recommendations](https://eric.ed.gov/?id=ED631097) | policy_review | 未知 | discovered_unverified |
 | KB-2024-0006 — [Human-Centered AI Guidance for K–12 Public Schools](https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools) | official_guidance | 未知 | bibliographic_checked |
-| KB-2024-0009 — [Empowering Education Leaders: A Toolkit for Safe, Ethical, and Equitable AI Integration](https://eric.ed.gov/?id=ED661924) | official_guidance | 未知 | discovered_unverified |
 | KB-2025-0046 — [AI in Education: Model Policy for Ohio Districts and Schools](https://education.ohio.gov/Topics/AI-in-Ohio-s-Education/Model-Policy) | official_guidance | 未知 | bibliographic_checked |
-| KB-2025-0134 — [What should teachers teach and students learn in a future of powerful AI?](https://www.oecd.org/en/publications/what-should-teachers-teach-and-students-learn-in-a-future-of-powerful-ai_ca56c7d6-en.html) | policy_review | 未知 | discovered_unverified |
 | KB-2026-0001 — [Nature AI Detectives: An Outdoor AI Literacy Adventure](https://arboretum.psu.edu/events/nature-ai-detectives-an-outdoor-ai-literacy-adventure-2/) | source_document | 未知 | discovered_unverified |
 | KB-2026-0002 — [Webinar on AI Literacy and Safeguarding Students' Cyber Security - Secondary Schools (New)](https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_literacy_Sec.html) | source_document | 未知 | discovered_unverified |
 | KB-2026-0003 — [Digital Education AI in Education Series - AI+Subjects: Leveraging Generative AI to Enhance Learning and Teaching for Primary English Language (Basic Level)](https://www.edb.gov.hk/en/edu-system/primary-secondary/applicable-to-primary-secondary/it-in-edu/AI_Subjects_Pri.html) | source_document | 未知 | discovered_unverified |
@@ -1361,7 +1362,6 @@
 | KB-2026-0247 — [The B-AIMT: development and initial validation of a domain-specific instrument for assessing mathematics teachers’ beliefs about artificial intelligence](https://doi.org/10.3389/feduc.2026.1885959) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0248 — [AI Mindset – An empirically tested theoretical framework on the psychological factors shaping AI competence and AI use](https://doi.org/10.1016/j.chbah.2026.100402) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0249 — [Fostering SCALE habits of mind through AI-empowered arts-based pedagogy](https://doi.org/10.1007/s44436-026-00043-5) | journal_article | 未知 | discovered_unverified |
-| KB-2026-0255 — [OECD Digital Education Outlook 2026: Exploring Effective Uses of Generative AI in Education](https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html) | policy_review | 未知 | discovered_unverified |
 | KB-2026-0261 — [Navigating an Evolving Digital World: First draft of the PISA 2029 Media and Artificial Intelligence Literacy (MAIL) Assessment Framework](https://www.oecd.org/en/about/projects/pisa-2029-media-and-artificial-intelligence-literacy.html) | draft | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
