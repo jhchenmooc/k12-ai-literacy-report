@@ -730,6 +730,41 @@
       "doi": "10.3390/su182010310",
       "screening_note": "Verified 2026-10-13 from manager-supplied publisher PDF for daily brief 2026-10-13 supplement (author-abstract attributed summary).",
       "verification_completed_on": "2026-10-13"
+    },
+    {
+      "candidate_id": "W2026-10-09-A23",
+      "category": "research",
+      "source_url": "https://doi.org/10.1177/21582440261496715",
+      "source_title": "A Training Program for Improving Teachers’ Knowledge and Attitudes Toward AI Apps Supporting Speech and Language Skills of Deaf and Hard-Of-Hearing Students",
+      "source_organization": "SAGE Open (SAGE Publications)",
+      "source_publication_date": "2026-10-12",
+      "source_locator": "出版者網頁 Details（管理者 2026-10-13 截圖）：Received August 2, 2025；Revised July 30, 2026；Accepted September 21, 2026；Issue published October-December 2026；Online October 12, 2026；出版者 PDF：SAGE Open 16(4)；Abstract",
+      "discovered_on": "2026-10-13",
+      "discovery_batch_id": "2026-10-13-daily-3",
+      "first_disclosed_on": "2026-10-12",
+      "source_updates": [],
+      "original_excerpt": "The study sample consisted of 31 female elementary school teachers of DHH students in Riyadh, Saudi Arabia.",
+      "source_checked": true,
+      "claim_text": "來源機構：SAGE Open (SAGE Publications)；資料標題：A Training Program for Improving Teachers’ Knowledge and Attitudes Toward AI Apps Supporting Speech and Language Skills of Deaf and Hard-Of-Hearing Students；來源刊登日：2026-10-12。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "不在監測清單，管理者 2026-10-13 同意逐篇收錄；單組介入研究，短訊只寫設計。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-13T06:00Z 讀管理者提供的出版者 PDF 摘要與 SAGE 網頁 Details 截圖（Online October 12, 2026），擇句撰寫中文摘要；第二輪 2026-10-13T06:05Z 由隔離子代理逐項對照英文原句（人數、對象、地點、設計、是否誤寫成效），判定一致，依建議微調用詞（旨在提升）。出版者網頁對自動請求回 403。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-PD",
+        "T-TEA"
+      ],
+      "ai_lit_note": "在職教師 AI 應用程式培訓（依準則教師 AI 培訓判 A），對應 T-PD「評估教師AI素養以規劃專業增能」與 T-TEA「評估AI工具輔助教學的適用性」",
+      "audience": "k12",
+      "doi": "10.1177/21582440261496715",
+      "screening_note": "Verified 2026-10-13 from manager-supplied publisher PDF and article-page screenshot for daily brief 2026-10-13 supplement.",
+      "verification_completed_on": "2026-10-13"
     }
   ],
   "item_template": {
@@ -753,9 +788,9 @@
     "ai_crosscheck_record": ""
   },
   "screening_summary": {
-    "candidate_count": 22,
-    "ready_to_publish": 9,
-    "verified_for_publication": 9,
+    "candidate_count": 23,
+    "ready_to_publish": 10,
+    "verified_for_publication": 10,
     "screened_on": "2026-10-09",
     "source_types": "official UNESCO policy commentary; institutional event announcements; government training calendars; prior-window research",
     "warnings": [
@@ -1421,6 +1456,22 @@
       ],
       "discovered": 2,
       "added": 2,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-13-daily-3",
+      "searched_on": "2026-10-13",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Manager-supplied publisher PDF and screenshot of SAGE Journals article Details panel (Online October 12, 2026) for observation item approved 2026-10-13; publisher HTML returned HTTP 403 to automated requests; 2026-10-13T06:00Z",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ]
