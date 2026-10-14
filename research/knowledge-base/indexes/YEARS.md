@@ -336,6 +336,7 @@
 | KB-2023-0189 — [South Carolina Artificial Intelligence (AI) Standards Framework (field review draft)](https://ed.sc.gov/newsroom/school-district-memoranda-archive/artificial-intelligence-field-review/artificial-intelligence-field-review-memo/) | framework | 2023-04-11 | discovered_unverified |
 | KB-2023-0190 — [Künstliche Intelligenz (KI) in Schule und Unterricht: Eine Handreichung für Lehrkräfte zum Umgang mit KI-basierten Anwendungen](https://digitale-schule.hessen.de/unterricht-und-paedagogik/handreichung-kuenstliche-intelligenz-ki-in-schule-und-unterricht) | official_guidance | 2023-07 | discovered_unverified |
 | KB-2023-0191 — [예비·현직 교원의 AI·디지털 역량 측정도구 개발(KR 2023-08)](https://www.keris.or.kr/main/ad/pblcte/selectPblcteRRInfo.do?mi=1138&pblcteSeq=13744) | policy_review | 2023 | discovered_unverified |
+| KB-2023-0192 — [臺灣AI行動計畫2.0（2023–2026年）（核定本）](https://digi.nstc.gov.tw/File/7C71629D702E2D89) | official_guidance | 2023-04-07 | discovered_unverified |
 
 ## 2024｜event_year
 
@@ -1176,6 +1177,7 @@
 | KB-2025-0462 — [KI in Schule und Familie (Lehrkräfte)](https://klickpunktschule.bycs.de/beitrag/ki-in-der-schule) | official_guidance | 2025-08-22 | discovered_unverified |
 | KB-2025-0463 — [생성형 인공지능 보조교사 활용 교원 역량강화 연수(과학직업정보과)](https://www.dje.go.kr/boardCnts/view.do?boardID=8&boardSeq=3325867&lev=0&m=040201&s=dje&statusYN=W&page=1) | government_announcement | 2025-07-23 | discovered_unverified |
 | KB-2025-0464 — [AI in schools and further education: findings from early adopters](https://www.gov.uk/government/publications/ai-in-schools-and-further-education-findings-from-early-adopters) | policy_review | 2025-06-27 | discovered_unverified |
+| KB-2025-0465 — [人工知能基本計画 ～「信頼できるＡＩ」による「日本再起」～](https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20251223.pdf) | official_guidance | 2025-12-23 | discovered_unverified |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
@@ -1505,6 +1507,9 @@
 | KB-2026-0363 — [เลขาธิการ กพฐ. “ธนู” ประชุมผู้บริหาร สพฐ. นัดแรก วางกรอบขับเคลื่อนงานปี 70 เดินหน้า AI ยกระดับการศึกษา](https://www.obec.go.th/%e0%b9%80%e0%b8%a5%e0%b8%82%e0%b8%b2%e0%b8%98%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3-%e0%b8%81%e0%b8%9e%e0%b8%90-%e0%b8%98%e0%b8%99%e0%b8%b9-%e0%b8%9b%e0%b8%a3%e0%b8%b0%e0%b8%8a/) | government_announcement | 2026-10-07 | discovered_unverified |
 | KB-2026-0366 — [Guidance Memorandum 26-08: Use of Artificial Intelligence by Specialized Instructional Support Personnel per Assembly Bill 406 (2025)](https://doe.nv.gov/about/executive-team/guidance-memos) | official_guidance | 2026-04-08 | discovered_unverified |
 | KB-2026-0367 — [Vermont AI Guidance for Education (Version 1.0)](https://education.vermont.gov/documents/edu-aoe-ai-guidance-for-education) | official_guidance | 2026-01-23 | discovered_unverified |
+| KB-2026-0369 — [人工知能基本計画 ～日本ＡＸ、より強く、より豊かに～](https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20260714.pdf) | official_guidance | 2026-07-14 | discovered_unverified |
+| KB-2026-0370 — [人工智慧基本法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=H0160093) | binding_policy | 2026-01-14 | discovered_unverified |
+| KB-2026-0371 — [AI應用發展兒少影響評估報告](https://www-api.moda.gov.tw/File/Get/moda/zh-tw/8bgQFPbXjgAjFSQ) | policy_review | 2026-03 | discovered_unverified |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
