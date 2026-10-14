@@ -334,6 +334,9 @@
 | KB-2023-0187 — [Ämnet artificiell intelligens (gymnasieskolan och komvux)](https://www.skolverket.se/forandringar-inom-skolomradet/en-skola-i-forandring/sidor-tidigare-forandringar/artificiell-intelligens---nytt-amne-i-gymnasieskolan-och-komvux) | framework | 2023-12-12 | discovered_unverified |
 | KB-2023-0188 — [2023 AI Guidance (Learning With AI, Learning About AI)](https://www.cde.ca.gov/ci/pl/aiincalifornia2023.asp) | official_guidance | 2023-09 | discovered_unverified |
 | KB-2023-0189 — [South Carolina Artificial Intelligence (AI) Standards Framework (field review draft)](https://ed.sc.gov/newsroom/school-district-memoranda-archive/artificial-intelligence-field-review/artificial-intelligence-field-review-memo/) | framework | 2023-04-11 | discovered_unverified |
+| KB-2023-0190 — [Künstliche Intelligenz (KI) in Schule und Unterricht: Eine Handreichung für Lehrkräfte zum Umgang mit KI-basierten Anwendungen](https://digitale-schule.hessen.de/unterricht-und-paedagogik/handreichung-kuenstliche-intelligenz-ki-in-schule-und-unterricht) | official_guidance | 2023-07 | discovered_unverified |
+| KB-2023-0191 — [예비·현직 교원의 AI·디지털 역량 측정도구 개발(KR 2023-08)](https://www.keris.or.kr/main/ad/pblcte/selectPblcteRRInfo.do?mi=1138&pblcteSeq=13744) | policy_review | 2023 | discovered_unverified |
+| KB-2023-0192 — [臺灣AI行動計畫2.0（2023–2026年）（核定本）](https://digi.nstc.gov.tw/File/7C71629D702E2D89) | official_guidance | 2023-04-07 | discovered_unverified |
 
 ## 2024｜event_year
 
@@ -695,6 +698,12 @@
 | KB-2024-0350 — [Guidance, Considerations, and Intentions for the Use of Artificial Intelligence in West Virginia Schools (v1.2)](https://wvde.us/educator-staff-development/artificial-intelligence) | official_guidance | 2024-01 | discovered_unverified |
 | KB-2024-0351 — [Empowering Lifelong Learning: AI Guidance for Enhancing K-12 and Library Education](https://dpi.wi.gov/imt/ai-guidance/wisconsins-dpi-ai-guidance-hub) | official_guidance | 2024-06 | discovered_unverified |
 | KB-2024-0352 — [Guidance for Wyoming School Districts on Developing Artificial Intelligence Use Policy](https://edu.wyoming.gov/sups-memo/07-15-2024-wde-releases-guidance-for-developing-artificial-intelligence-use-policy/) | official_guidance | 2024-07-15 | discovered_unverified |
+| KB-2024-0353 — [教育部办公厅关于公布中小学人工智能教育基地名单的通知（教基厅函〔2024〕5号）](https://www.moe.gov.cn/srcsite/A06/s3321/202402/t20240223_1116386.html) | government_announcement | 2024-02-19 | discovered_unverified |
+| KB-2024-0354 — [경기도교육청, ‘학생의 질문하는 역량’ 키워 생성형 인공지능 시대 선도한다](https://www.goe.go.kr/goe/na/ntt/selectNttInfo.do?mi=10102&bbsId=1922&nttSn=1043946) | government_announcement | 2024-03-26 | discovered_unverified |
+| KB-2024-0355 — [Using generative artificial intelligence (GenAI) tools for learning: A parent’s guide](https://file.go.gov.sg/parent-guide-genai.pdf) | official_guidance | 2024-02 | discovered_unverified |
+| KB-2024-0356 — [Generative AI in education: educator and expert views](https://www.gov.uk/government/publications/generative-ai-in-education-educator-and-expert-views) | policy_review | 2024-01-24 | discovered_unverified |
+| KB-2024-0357 — [Generative Artificial Intelligence (GAI) in Education: Fast Facts](https://education.gov.scot/media/ffnp4zu4/generative-artificial-intelligence-in-education.pdf) | official_guidance | 2024-05 | discovered_unverified |
+| KB-2024-0358 — [2024國際論壇暨AI融入教案電子手冊](https://www.ntpc.edu.tw/home.jsp?id=08967d256147c62a&act=be4f48068b2b0031&dataserno=19fb0bb71a7f45179afa1315c6d79fe8) | official_guidance | 2024 | discovered_unverified |
 | KB-2026-0099 — [NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools](https://go.ncdpi.gov/AI_Guidelines) | official_guidance | 2024-01-16 | bibliographic_checked |
 
 ## 2025｜event_year
@@ -1161,6 +1170,14 @@
 | KB-2025-0455 — [Artificial Intelligence (AI) Guidance for Local Education Agencies (LEAs)](https://ride.ri.gov/students-families/AI) | official_guidance | 2025-08 | discovered_unverified |
 | KB-2025-0456 — [Pledge to America's Youth: Investing in AI Education](https://www.whitehouse.gov/releases/2025/06/60-organizations-sign-white-house-pledge-to-support-americas-youth-and-invest-in-ai-education/) | government_announcement | 2025-06-30 | discovered_unverified |
 | KB-2025-0457 — [Presidential AI Challenge: Guidebook for Participation](https://www.whitehouse.gov/wp-content/uploads/2025/08/Presidential-AI-Challenge-Guidebook-for-Participation.pdf) | official_guidance | 2025-08-26 | discovered_unverified |
+| KB-2025-0458 — [省教育厅关于印发《人工智能赋能教育高质量发展行动方案（2025—2027年）》的通知（苏教高〔2025〕1号）](https://jyt.jiangsu.gov.cn/art/2025/5/9/art_77619_11562404.html) | official_guidance | 2025-04-19 | discovered_unverified |
+| KB-2025-0459 — [广州市教育局关于印发《关于深化广州市中小学人工智能与教育融合创新的若干措施（2025-2027年）》的通知（穗教发〔2025〕9号）](https://jyj.gz.gov.cn/gkmlpt/content/10/10240/post_10240792.html) | official_guidance | 2025-04-28 | discovered_unverified |
+| KB-2025-0460 — [教育部办公厅关于组织实施数字化赋能教师发展行动的通知（教师厅函〔2025〕13号）](https://www.moe.gov.cn/srcsite/A10/s7034/202507/t20250704_1196586.html) | official_guidance | 2025-07-02 | discovered_unverified |
+| KB-2025-0461 — [教育部办公厅关于公布第二批中小学人工智能教育基地名单的通知（教基厅函〔2025〕32号）](https://www.moe.gov.cn/srcsite/A06/s3321/202512/t20251224_1424361.html) | government_announcement | 2025-12-15 | discovered_unverified |
+| KB-2025-0462 — [KI in Schule und Familie (Lehrkräfte)](https://klickpunktschule.bycs.de/beitrag/ki-in-der-schule) | official_guidance | 2025-08-22 | discovered_unverified |
+| KB-2025-0463 — [생성형 인공지능 보조교사 활용 교원 역량강화 연수(과학직업정보과)](https://www.dje.go.kr/boardCnts/view.do?boardID=8&boardSeq=3325867&lev=0&m=040201&s=dje&statusYN=W&page=1) | government_announcement | 2025-07-23 | discovered_unverified |
+| KB-2025-0464 — [AI in schools and further education: findings from early adopters](https://www.gov.uk/government/publications/ai-in-schools-and-further-education-findings-from-early-adopters) | policy_review | 2025-06-27 | discovered_unverified |
+| KB-2025-0465 — [人工知能基本計画 ～「信頼できるＡＩ」による「日本再起」～](https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20251223.pdf) | official_guidance | 2025-12-23 | discovered_unverified |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
@@ -1482,6 +1499,17 @@
 | KB-2026-0346 — [LEA AI Model Policy for Staff Use, 2026-27 School Year](https://osse.dc.gov/release/osse-releases-ai-model-policy-guide-responsible-staff-use-schools) | official_guidance | 2026-09-01 | discovered_unverified |
 | KB-2026-0349 — [Implementing AI in Schools (AI and Digital Media Literacy / multi-agency AI Literacy Toolkit)](https://www.pa.gov/agencies/education/ai-digital-media-literacy/implementingaiinschools) | official_guidance | 2026-02-27 | discovered_unverified |
 | KB-2026-0353 — [West Virginia Artificial Intelligence (AI) and Digital Science Framework](https://wvde.us/articles/wv-superintendent-schools-launches-first-ai-digital-science-framework-nation) | framework | 2026-07-24 | discovered_unverified |
+| KB-2026-0357 — [윤리적인 인공지능 활용, 교사의 역할을 묻다](https://www.jje.go.kr/pro/board/view.jje?boardId=BBS_0000215&menuCd=DOM_000000203000000000&dataSid=1482658) | government_announcement | 2026-10-01 | discovered_unverified |
+| KB-2026-0358 — [생성형 AI, 자녀 교육에 활용하는 법 알려드려요](https://www.jbe.go.kr/board/view.jbe?boardId=BBS_0000222&menuCd=DOM_000001201001000000&dataSid=1149758) | government_announcement | 2026-07-13 | discovered_unverified |
+| KB-2026-0359 — [교육부, 인공지능(AI)융합교육을 실천하는 아이에답(AIEDAP) 마스터교원 성과 공유](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=105142&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | government_announcement | 2026-01-14 | discovered_unverified |
+| KB-2026-0360 — [학생들의 인공지능(AI).디지털 소양 함양을 위한 특별한 프로그램이 찾아갑니다](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=106289&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | government_announcement | 2026-05-27 | discovered_unverified |
+| KB-2026-0361 — [인공지능(AI) 잘 쓰는 법, 대학생 멘토들이 학교로 찾아간다](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=106293&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | government_announcement | 2026-05-27 | discovered_unverified |
+| KB-2026-0363 — [เลขาธิการ กพฐ. “ธนู” ประชุมผู้บริหาร สพฐ. นัดแรก วางกรอบขับเคลื่อนงานปี 70 เดินหน้า AI ยกระดับการศึกษา](https://www.obec.go.th/%e0%b9%80%e0%b8%a5%e0%b8%82%e0%b8%b2%e0%b8%98%e0%b8%b4%e0%b8%81%e0%b8%b2%e0%b8%a3-%e0%b8%81%e0%b8%9e%e0%b8%90-%e0%b8%98%e0%b8%99%e0%b8%b9-%e0%b8%9b%e0%b8%a3%e0%b8%b0%e0%b8%8a/) | government_announcement | 2026-10-07 | discovered_unverified |
+| KB-2026-0366 — [Guidance Memorandum 26-08: Use of Artificial Intelligence by Specialized Instructional Support Personnel per Assembly Bill 406 (2025)](https://doe.nv.gov/about/executive-team/guidance-memos) | official_guidance | 2026-04-08 | discovered_unverified |
+| KB-2026-0367 — [Vermont AI Guidance for Education (Version 1.0)](https://education.vermont.gov/documents/edu-aoe-ai-guidance-for-education) | official_guidance | 2026-01-23 | discovered_unverified |
+| KB-2026-0369 — [人工知能基本計画 ～日本ＡＸ、より強く、より豊かに～](https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20260714.pdf) | official_guidance | 2026-07-14 | discovered_unverified |
+| KB-2026-0370 — [人工智慧基本法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=H0160093) | binding_policy | 2026-01-14 | discovered_unverified |
+| KB-2026-0371 — [AI應用發展兒少影響評估報告](https://www-api.moda.gov.tw/File/Get/moda/zh-tw/8bgQFPbXjgAjFSQ) | policy_review | 2026-03 | discovered_unverified |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
@@ -1530,5 +1558,12 @@
 | KB-2026-0350 — [SC Introduction to Artificial Intelligence Course Standards (course 57M0)](https://ed.sc.gov/instruction/career-and-technical-education/programs-and-courses/career-clusters/information-technology/information-technology-standards/) | framework | 未知 | discovered_unverified |
 | KB-2026-0351 — [The AI-Infused Learner: Foundations for Future-Ready Learning](https://schools.utah.gov/informationtechnology/artificialintelligence/_artificialintelligence/AI-Learner.pdf) | framework | 未知 | discovered_unverified |
 | KB-2026-0352 — [The AI-Infused Educator: Foundations for Future-Ready Teaching](https://schools.utah.gov/informationtechnology/artificialintelligence/_artificialintelligence/AI%20Educator.pdf) | framework | 未知 | discovered_unverified |
+| KB-2026-0354 — [Artificial intelligence in education](https://education.nsw.gov.au/teaching-and-learning/education-for-a-changing-world/artificial-intelligence-in-education) | government_announcement | 未知 | discovered_unverified |
+| KB-2026-0355 — [Generative artificial intelligence (AI) in Queensland state schools](https://education.qld.gov.au/initiatives-and-strategies/strategies-and-programs/digital-innovation-in-teaching-and-learning/generative-ai-in-schools) | official_guidance | 未知 | discovered_unverified |
+| KB-2026-0356 — [Künstliche Intelligenz im Unterricht](https://km.baden-wuerttemberg.de/de/schule/digitalisierung/kuenstliche-intelligenz-im-unterricht) | official_guidance | 未知 | discovered_unverified |
+| KB-2026-0362 — [Assessment in the Age of AI symposium](https://www2.nzqa.govt.nz/ncea/ncea-for-teachers-and-schools/managing-national-assessment-in-schools/ai-guidance/ai-symposium/) | government_announcement | 未知 | discovered_unverified |
+| KB-2026-0364 — [HIDOE Artificial Intelligence Guidance for Employees](https://hawaiipublicschools.org/student-programs/artificial-intelligence/) | official_guidance | 未知 | discovered_unverified |
+| KB-2026-0365 — [Artificial Intelligence (AI) Guidance](https://www.in.gov/doe/educators/digital-learning/) | official_guidance | 未知 | discovered_unverified |
+| KB-2026-0368 — [Guidelines for AI Integration Throughout Education in the Commonwealth of Virginia](https://www.education.virginia.gov/resources/artificial-intelligence/) | official_guidance | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
