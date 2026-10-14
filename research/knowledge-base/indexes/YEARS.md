@@ -702,6 +702,7 @@
 | KB-2024-0355 — [Using generative artificial intelligence (GenAI) tools for learning: A parent’s guide](https://file.go.gov.sg/parent-guide-genai.pdf) | official_guidance | 2024-02 | discovered_unverified |
 | KB-2024-0356 — [Generative AI in education: educator and expert views](https://www.gov.uk/government/publications/generative-ai-in-education-educator-and-expert-views) | policy_review | 2024-01-24 | discovered_unverified |
 | KB-2024-0357 — [Generative Artificial Intelligence (GAI) in Education: Fast Facts](https://education.gov.scot/media/ffnp4zu4/generative-artificial-intelligence-in-education.pdf) | official_guidance | 2024-05 | discovered_unverified |
+| KB-2024-0358 — [2024國際論壇暨AI融入教案電子手冊](https://www.ntpc.edu.tw/home.jsp?id=08967d256147c62a&act=be4f48068b2b0031&dataserno=19fb0bb71a7f45179afa1315c6d79fe8) | official_guidance | 2024 | discovered_unverified |
 | KB-2026-0099 — [NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools](https://go.ncdpi.gov/AI_Guidelines) | official_guidance | 2024-01-16 | bibliographic_checked |
 
 ## 2025｜event_year
