@@ -337,6 +337,10 @@
 | KB-2023-0190 — [Künstliche Intelligenz (KI) in Schule und Unterricht: Eine Handreichung für Lehrkräfte zum Umgang mit KI-basierten Anwendungen](https://digitale-schule.hessen.de/unterricht-und-paedagogik/handreichung-kuenstliche-intelligenz-ki-in-schule-und-unterricht) | official_guidance | 2023-07 | discovered_unverified |
 | KB-2023-0191 — [예비·현직 교원의 AI·디지털 역량 측정도구 개발(KR 2023-08)](https://www.keris.or.kr/main/ad/pblcte/selectPblcteRRInfo.do?mi=1138&pblcteSeq=13744) | policy_review | 2023 | discovered_unverified |
 | KB-2023-0192 — [臺灣AI行動計畫2.0（2023–2026年）（核定本）](https://digi.nstc.gov.tw/File/7C71629D702E2D89) | official_guidance | 2023-04-07 | discovered_unverified |
+| KB-2023-0193 — [The Use of Generative Artificial Intelligence in DECYP Schools Procedure](https://www.decyp.tas.gov.au/about-us/policies-legislation-data/policies/information-and-communications-technology-policies/) | official_guidance | 2023-12-12 | discovered_unverified |
+| KB-2023-0194 — [Handlungsleitfaden „Gemeinsam die Welt der generativen KI-Systeme erkunden“](https://bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/schule/Handreichung_KI.pdf) | official_guidance | 2023-12 | discovered_unverified |
+| KB-2023-0195 — [Sprachmodelle im Schulunterricht: Chancen und Herausforderungen. Handreichung zum Umgang mit Künstlicher Intelligenz in der schulischen Bildung](https://back.bildung-lsa.de/files/5c5e6e7a4f362d6ab1bfd03a000ac17d/Sprachmodelle_im_Schulunterricht.pdf) | official_guidance | 2023-09 | discovered_unverified |
+| KB-2023-0196 — [생성형 AI 교육적 활용 가이드（학교급별 생성형 AI 활용 지침·수업 설계 및 적용 체크리스트·ChatGPT 간편 가이드）](https://buseo.sen.go.kr/buseo/bu10/user/bbs/BD_selectBbs.do?q_bbsSn=1240&q_bbsDocNo=20230829193450556) | official_guidance | 2023-08-29 | discovered_unverified |
 
 ## 2024｜event_year
 
@@ -1178,6 +1182,14 @@
 | KB-2025-0463 — [생성형 인공지능 보조교사 활용 교원 역량강화 연수(과학직업정보과)](https://www.dje.go.kr/boardCnts/view.do?boardID=8&boardSeq=3325867&lev=0&m=040201&s=dje&statusYN=W&page=1) | government_announcement | 2025-07-23 | discovered_unverified |
 | KB-2025-0464 — [AI in schools and further education: findings from early adopters](https://www.gov.uk/government/publications/ai-in-schools-and-further-education-findings-from-early-adopters) | policy_review | 2025-06-27 | discovered_unverified |
 | KB-2025-0465 — [人工知能基本計画 ～「信頼できるＡＩ」による「日本再起」～](https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20251223.pdf) | official_guidance | 2025-12-23 | discovered_unverified |
+| KB-2025-0466 — [广东省中小学教师人工智能素养框架（试行）（粤教基函〔2025〕12号附件1）](https://edu.gd.gov.cn/attachment/0/577/577308/4694716.pdf) | framework | 2025-04-09 | discovered_unverified |
+| KB-2025-0467 — [广东省中小学学生人工智能素养框架（试行）（粤教基函〔2025〕12号附件2）](https://edu.gd.gov.cn/attachment/0/577/577306/4694716.pdf) | framework | 2025-04-09 | discovered_unverified |
+| KB-2025-0468 — [广东省中小学人工智能课程指导纲要（试行）（粤教基函〔2025〕12号附件3）](https://edu.gd.gov.cn/attachment/0/577/577307/4694716.pdf) | framework | 2025-04-09 | discovered_unverified |
+| KB-2025-0469 — [Künstliche Intelligenz im Unterricht: Sachsen-Anhalt setzt auf Qualifikation der Lehrkräfte mit emuKI (Pressemitteilung 02/2025)](https://presse.sachsen-anhalt.de/wp-content/uploads/pdf/bildungsministerium_08_01_2025_Pressemitteilung_kuenstliche-intelligenz-im-unterricht-sachsen-anhalt-setzt-auf-qualifikation-der-lehrkraefte-mit-emuki.pdf) | government_announcement | 2025-01-08 | discovered_unverified |
+| KB-2025-0470 — [2025 생성형 인공지능 챗봇 활용 안내서](https://aitalk.cne.go.kr/) | official_guidance | 2025-05 | discovered_unverified |
+| KB-2025-0471 — [2025 인천 AI․디지털교육 추진계획](https://edu-i.ice.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000138324&fileSn=1&bbsId=BBSMSTR_000000004155&trgetId=SYSTEM_DEFAULT_BOARD&nttId=126204) | official_guidance | 2025-02 | discovered_unverified |
+| KB-2025-0472 — [서울시교육청「초중고 AI 교육 종합계획」](https://enews.sen.go.kr/news/view.do?bbsSn=190482&step1=3&step2=1) | official_guidance | 2025-12-23 | discovered_unverified |
+| KB-2025-0473 — [養成孩子以AI輔助學習素養，臺北市率先全國發佈全學層「AI素養教材」（《資訊素養與倫理》新單元「AI未來新世界」）](https://www.doe.gov.taipei/News_Content.aspx?n=B3DDF0458F0FFC11&s=E3C0C506B1AF7BFC) | framework | 2025-07-30 | discovered_unverified |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
@@ -1510,6 +1522,13 @@
 | KB-2026-0369 — [人工知能基本計画 ～日本ＡＸ、より強く、より豊かに～](https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20260714.pdf) | official_guidance | 2026-07-14 | discovered_unverified |
 | KB-2026-0370 — [人工智慧基本法](https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=H0160093) | binding_policy | 2026-01-14 | discovered_unverified |
 | KB-2026-0371 — [AI應用發展兒少影響評估報告](https://www-api.moda.gov.tw/File/Get/moda/zh-tw/8bgQFPbXjgAjFSQ) | policy_review | 2026-03 | discovered_unverified |
+| KB-2026-0372 — [Empfehlung zum Umgang mit auf künstlicher Intelligenz basierenden Tools in Schule (Handreichung der SKB)](https://www.bildung.bremen.de/sixcms/media.php/13/2026_KI-Handreichung.pdf) | official_guidance | 2026 | discovered_unverified |
+| KB-2026-0373 — [초·중·고 생성형(Generative) AI 활용 길라잡이(3종)](https://www.gbe.kr/dep_cre/na/ntt/selectNttInfo.do?mi=8624&nttSn=1594672) | official_guidance | 2026-03-27 | discovered_unverified |
+| KB-2026-0374 — [경상남도교육청 「AI·디지털 교육 종합 추진 계획」](https://www.gne.go.kr/user/bbs/BD_selectBbs.do?q_bbsSn=1464&q_bbsDocNo=20260418223116303) | official_guidance | 2026-04-18 | discovered_unverified |
+| KB-2026-0375 — [\[디지털 역량\] 광주아이온 연계 생성형 인공지능 활용 방법](https://gen.go.kr/xboard/board.php?keyset=&mode=view&number=451814&page=1&sCat=0&searchword=&tbnum=332) | official_guidance | 2026-02-06 | discovered_unverified |
+| KB-2026-0376 — [\[KEDI Brief 2026년 10호\] 초·중등 교실에서 AI 활용, 무엇이 어려운가](https://www.kedi.re.kr/khome/main/research/selectKediBriefForm.do?selectTp=0&board_sq_no=41&article_sq_no=36410) | policy_review | 2026-06-25 | discovered_unverified |
+| KB-2026-0377 — [Ready or not: How are schools responding to Artificial Intelligence? Practical insights for primary school leaders and teachers](https://www.evidence.ero.govt.nz/documents/ready-or-not-how-are-schools-responding-to-artificial-intelligence-insights-for-primary-school-leaders-and-teachers) | official_guidance | 2026-07-30 | discovered_unverified |
+| KB-2026-0378 — [Ready or not: How are schools responding to Artificial Intelligence? Practical insights for secondary school leaders and teachers](https://www.evidence.ero.govt.nz/documents/ready-or-not-how-are-schools-responding-to-artificial-intelligence-insights-for-secondary-school-leaders-and-teachers) | official_guidance | 2026-07-30 | discovered_unverified |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
