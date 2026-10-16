@@ -1,6 +1,6 @@
 "use strict";
 const {test}=require("node:test"),assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path"),crypto=require("node:crypto");
-const {parseCsv,dateOk,validate,index}=require("./validate-knowledge-base.js");
+const {parseCsv,dateOk,validate,index,weeklyCandidates}=require("./validate-knowledge-base.js");
 const {compare,safeCell}=require("./knowledge-base-utils.js");
 const root=__dirname,kb=path.join(root,"knowledge-base");
 const read=n=>parseCsv(fs.readFileSync(path.join(kb,"data",n+".csv"),"utf8"));
@@ -56,7 +56,7 @@ test("T12: knowledge-base operations cannot mutate nine held candidates or publi
  /* Only source-checked publish candidates may leave hold (manager 2026-10-11). */
  assert.ok(a.length>=9);assert.ok(a.every(x=>(x.decision==="hold"&&x.source_checked===false)||(x.decision==="publish"&&x.source_checked===true)));
  assert.ok(Array.isArray(JSON.parse(fs.readFileSync(manifest,"utf8")).editions));
- assert.deepEqual(validate(rec,rel,runs,a),[]);
+ assert.deepEqual(validate(rec,rel,runs,weeklyCandidates(path.join(root,"drafts"))),[]);
  JSON.parse(index(rec,rel));
  assert.deepEqual([hash(sheet),hash(manifest)],before);
 });
