@@ -115,9 +115,15 @@ function index(records,relations){
  for(const k of [...buckets.keys()].sort())result[k]=[...buckets.get(k)].sort();
  return JSON.stringify(result,null,2)+"\n";
 }
+/* All weekly candidate pools (drafts/YYYY-MM-DD_YYYY-MM-DD.json), oldest first, so records keep tracing to
+   their own week after the pool rolls over (manager 2026-10-16). */
+function weeklyCandidates(dir){
+ return fs.readdirSync(dir).filter(n=>/^\d{4}-\d{2}-\d{2}_\d{4}-\d{2}-\d{2}\.json$/.test(n)).sort()
+  .flatMap(n=>JSON.parse(fs.readFileSync(path.join(dir,n),"utf8")).items);
+}
 function main(){
  const records=read("records"),relations=read("relations"),runs=read("search_runs");
- const candidates=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8")).items;
+ const candidates=weeklyCandidates(path.join(__dirname,"drafts"));
  const errors=validate(records,relations,runs,candidates);
  if(errors.length){console.error(errors.join("\n"));process.exitCode=1;return}
  const output=path.join(base,"indexes","index.json"),text=index(records,relations);
@@ -127,4 +133,4 @@ function main(){
  console.log("v1.7 knowledge base valid",records.length,"records",relations.length,"relations",runs.length,"search runs");
 }
 if(require.main===module)main();
-module.exports={parseCsv,dateOk,validate,index};
+module.exports={parseCsv,dateOk,validate,index,weeklyCandidates};
