@@ -225,6 +225,13 @@
 | KB-2023-0175 — [Literacy and STEM Teachers Adapt AI Ethics Curriculum](https://doi.org/10.1609/aaai.v37i13.26906) | conference_paper | 未知 | discovered_unverified |
 | KB-2023-0176 — [Scratch for Sports: Athletic Drills as a Platform for Experiencing, Understanding, and Developing AI-Driven Apps](https://doi.org/10.1609/aaai.v37i13.26901) | conference_paper | 未知 | discovered_unverified |
 | KB-2023-0177 — [“How Can I Code A.I. Responsibly?”: The Effect of Computational Action on K-12 Students Learning and Creating Socially Responsible A.I.](https://doi.org/10.1609/aaai.v37i13.26902) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0197 — [User Adaptive Language Learning Chatbots with a Curriculum](https://doi.org/10.1007/978-3-031-36336-8_48) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0198 — [Understanding and Predicting Teachers' Intention to Use Educational Chatbots](https://doi.org/10.22318/icls2023.214919) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0199 — [Supporting Collective Inquiry in a Critical Action Game: A Role for Open AI Conversational Agents](https://doi.org/10.22318/cscl2023.922487) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0200 — [PEER: Empowering Writing with Large Language Models](https://doi.org/10.1007/978-3-031-42682-7_73) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0201 — [Assessment of Intelligent Teaching Preparation of EFL Teachers: Based on Two-Year Data Comparison](https://doi.org/10.58459/icce.2023.1377) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0202 — [Constructing a Natural Conversation Learning Activity to Improve Students’ English-Speaking Skills](https://doi.org/10.58459/icce/2023/1077) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0203 — [Build-a-Bot: Teaching Conversational AI Using a Transformer-Based Intent Recognition and Question Answering Architecture](https://doi.org/10.1609/aaai.v37i13.26903) | conference_paper | 未知 | discovered_unverified |
 
 ## 2023｜first_publication
 
@@ -491,6 +498,17 @@
 | KB-2024-0315 — [ImageSTEAM: Teacher Professional Development for Integrating Visual Computing into Middle School Lessons](https://doi.org/10.1609/aaai.v38i21.30355) | conference_paper | 未知 | discovered_unverified |
 | KB-2024-0316 — [Supporting Upper Elementary Students in Learning AI Concepts with Story-Driven Game-Based Learning](https://doi.org/10.1609/aaai.v38i21.30354) | conference_paper | 未知 | discovered_unverified |
 | KB-2024-0317 — [Unplugged K-12 AI Learning: Exploring Representation and Reasoning with a Facial Recognition Game](https://doi.org/10.1609/aaai.v38i21.30376) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0359 — [From Guidelines to Governance: A Study of AI Policies in Education](https://doi.org/10.1007/978-3-031-64312-5_36) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0360 — [Feedback, Control, or Explanations? Supporting Teachers With Steerable Distractor-Generating AI](https://doi.org/10.1145/3636555.3636933) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0361 — [Toward a Theory-Grounded Associative Model of AI Literacy](https://doi.org/10.22318/icls2024.559089) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0362 — [Bringing Social Computing to Secondary School Classrooms](https://doi.org/10.1145/3626252.3630795) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0363 — [Design and Orchestration in the Age of GenAI: An Activity Theory Perspective](https://doi.org/10.1007/978-3-031-72312-4_16) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0364 — [Addressing Public Speaking Anxiety with an AI Speech Coach](https://doi.org/10.58459/icce.2024.4955) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0365 — [Appropriating AI-Powered Pedagogical Affordances for Vocabulary Learning](https://doi.org/10.58459/icce.2024.4996) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0366 — [Research on the Dual-Pathway Impact of Artificial Intelligence Technology on Teachers' Human-Machine Collaboration](https://doi.org/10.58459/icce.2024.4966) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0367 — [Teachers’ Perspectives on Integrating AI tools in Classrooms: Insights from the Philippines](https://doi.org/10.58459/icce.2024.4964) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0368 — [The Impact of AI Literacy on Teacher Efficacy and Identity: A Study of Korean English Teachers](https://doi.org/10.58459/icce.2024.5057) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0369 — [AI, Ethics, and Education: The Pioneering Path of Sidekick Academy](https://doi.org/10.1609/aaai.v38i21.30377) | conference_paper | 未知 | discovered_unverified |
 
 ## 2024｜first_publication
 
