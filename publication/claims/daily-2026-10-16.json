@@ -3,7 +3,7 @@
   "claim_id": "D20261016-01",
   "candidate_id": "W2026-10-16-A01",
   "kind": "research",
-  "claim_text": "來源機構：ACM Transactions on Computing Education (ACM)；資料標題：Interaction Patterns and Embodied Design Processes Using an AI Robotics Kit for K–12 Education；來源刊登日：2026-10-15。作者摘要報告：研究探討兒童如何與一款透過動手製作教授機器學習（ML）概念的低成本教育機器人工具互動；研究者帶領三次介入，參與兒童分別為 10、11、13 歲，各自以該套件打造一台加入 AI 的機器人，並以質性分析與流程探勘方法分析介入中的互動。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_text": "來源機構：ACM Transactions on Computing Education (ACM)；資料標題：Interaction Patterns and Embodied Design Processes Using an AI Robotics Kit for K–12 Education；來源刊登日：2026-10-15。作者摘要報告：研究探討兒童如何與一款透過動手製作教授機器學習（ML）概念的低成本教育機器人工具互動；研究者帶領三次介入，參與兒童年齡為 10、11 與 13 歲，各自以該套件打造一台 AI 強化的機器人，並以質性分析與流程探勘方法分析介入中的互動。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
   "claim_class": "descriptive",
   "risk_tier": "medium",
   "level": "V2",
@@ -33,7 +33,7 @@
   "contradiction_type": "none",
   "ai_crosscheck_status": "concordant",
   "ai_crosscheck_passes": 2,
-  "ai_crosscheck_record": "PENDING",
+  "ai_crosscheck_record": "第一輪 2026-10-16 讀管理者提供的出版者 PDF（ACM Just Accepted 版）首頁摘要與 ACM DL 文章頁截圖（Online AM: 15 October 2026；Accepted on 17 September 2026），擇摘要第 1、3、4 句撰寫中文摘要，不寫結果；第二輪 2026-10-16 由隔離子代理逐項對照英文原句（年齡、介入次數、研究者帶領、低成本、流程探勘、是否誤寫結果），判定一致，依建議把「分別為」改為「年齡為」（摘要未對應每次介入的年齡）、「加入 AI 的」改為「AI 強化的」。出版者網頁對自動請求回 403。同一模型，非獨立審閱。",
   "ai_lit_class": "A",
   "ai_lit_dims": [
    "S-BAS"
@@ -46,6 +46,6 @@
    "We conducted three researcher-led interventions with children aged 10, 11 and 13, each tasked to build an AI-enhanced robot using the robotics kit.",
    "Interventions were analyzed both qualitatively and with process mining methods to gain an in-depth view of the interactions."
   ],
-  "attributed_summary": "研究探討兒童如何與一款透過動手製作教授機器學習（ML）概念的低成本教育機器人工具互動；研究者帶領三次介入，參與兒童分別為 10、11、13 歲，各自以該套件打造一台加入 AI 的機器人，並以質性分析與流程探勘方法分析介入中的互動。"
+  "attributed_summary": "研究探討兒童如何與一款透過動手製作教授機器學習（ML）概念的低成本教育機器人工具互動；研究者帶領三次介入，參與兒童年齡為 10、11 與 13 歲，各自以該套件打造一台 AI 強化的機器人，並以質性分析與流程探勘方法分析介入中的互動。"
  }
 ]
