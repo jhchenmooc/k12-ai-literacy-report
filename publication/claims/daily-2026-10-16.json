@@ -1,0 +1,51 @@
+[
+ {
+  "claim_id": "D20261016-01",
+  "candidate_id": "W2026-10-16-A01",
+  "kind": "research",
+  "claim_text": "來源機構：ACM Transactions on Computing Education (ACM)；資料標題：Interaction Patterns and Embodied Design Processes Using an AI Robotics Kit for K–12 Education；來源刊登日：2026-10-15。作者摘要報告：研究探討兒童如何與一款透過動手製作教授機器學習（ML）概念的低成本教育機器人工具互動；研究者帶領三次介入，參與兒童分別為 10、11、13 歲，各自以該套件打造一台加入 AI 的機器人，並以質性分析與流程探勘方法分析介入中的互動。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "V2",
+  "daily_fact_kind": "research_abstract_attributed_summary",
+  "source_document_type": "peer_reviewed_article",
+  "source_title": "Interaction Patterns and Embodied Design Processes Using an AI Robotics Kit for K–12 Education",
+  "source_organization": "ACM Transactions on Computing Education (ACM)",
+  "source_url": "https://doi.org/10.1145/3856302",
+  "evidence_source_url": "https://doi.org/10.1145/3856302",
+  "source_locator": "ACM Digital Library 文章頁（管理者 2026-10-16 截圖）：Just Accepted；Accepted on 17 September 2026；Online AM: 15 October 2026；出版者 PDF（Just Accepted 版，管理者提供）：ACM 1946-6226/2026/10-ART；摘要歸屬：Abstract 第 1、3、4 句（出版者網頁對自動請求回 403）",
+  "source_type": "research_publication",
+  "checked_at": "2026-10-16",
+  "publication_date": "2026-10-15",
+  "first_disclosed_on": "2026-10-15",
+  "evidence_path": "publication/sources/d2026-10-16-a01-toce.txt",
+  "evidence_sha256": "ce2460fa0dfba30b1ea1ab44e440d292651719cb529e05cf77e932d95e1e204c",
+  "original_excerpt": "This multidisciplinary study explores how children interact with a low-cost robotics educational tool designed to teach machine learning (ML) concepts through hands-on making. … We conducted three researcher-led interventions with children aged 10, 11 and 13, each tasked to build an AI-enhanced robot using the robotics kit. … Interventions were analyzed both qualitatively and with process mining methods to gain an in-depth view of the interactions.",
+  "interpretation_note": "轉述作者摘要的研究目的、設計與分析方法；介入研究，依規則不寫結果。",
+  "scope_limitation": "同儕審查期刊論文（ACM Transactions on Computing Education，監測清單 J14），Just Accepted 版；小規模質性研究，三次介入各 1 名兒童（共 3 人，內文 2.3 節），經監護人招募，非學校情境；本則不涉及結果。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "ai_crosscheck_record": "PENDING",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "S-BAS"
+  ],
+  "ai_lit_note": "兒童以機器人套件動手學機器學習概念、打造 AI 機器人，對應 S-BAS「理解AI運作原理與限制」",
+  "audience": "k12",
+  "decision": "publish",
+  "summary_evidence_spans": [
+   "This multidisciplinary study explores how children interact with a low-cost robotics educational tool designed to teach machine learning (ML) concepts through hands-on making.",
+   "We conducted three researcher-led interventions with children aged 10, 11 and 13, each tasked to build an AI-enhanced robot using the robotics kit.",
+   "Interventions were analyzed both qualitatively and with process mining methods to gain an in-depth view of the interactions."
+  ],
+  "attributed_summary": "研究探討兒童如何與一款透過動手製作教授機器學習（ML）概念的低成本教育機器人工具互動；研究者帶領三次介入，參與兒童分別為 10、11、13 歲，各自以該套件打造一台加入 AI 的機器人，並以質性分析與流程探勘方法分析介入中的互動。"
+ }
+]

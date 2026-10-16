@@ -1,0 +1,88 @@
+{
+ "schema_version": 1,
+ "period": {
+  "start": "2026-10-16",
+  "end": "2026-10-22"
+ },
+ "status": "draft_pending_source_verification",
+ "notice": "Planning worksheet only. NOT registered in publication/issues.json, NOT certified or published.",
+ "editorial_rules": {
+  "target_items": "3–5, fewer when evidence is insufficient",
+  "high_risk": "hold",
+  "source_required": true
+ },
+ "items": [
+  {
+   "candidate_id": "W2026-10-16-A01",
+   "category": "research",
+   "source_url": "https://doi.org/10.1145/3856302",
+   "source_title": "Interaction Patterns and Embodied Design Processes Using an AI Robotics Kit for K–12 Education",
+   "source_organization": "ACM Transactions on Computing Education (ACM)",
+   "source_publication_date": "2026-10-15",
+   "source_locator": "ACM Digital Library 文章頁（管理者 2026-10-16 截圖）：Just Accepted；Accepted on 17 September 2026；Online AM: 15 October 2026；出版者 PDF（Just Accepted 版，管理者提供）：ACM 1946-6226/2026/10-ART；Abstract",
+   "discovered_on": "2026-10-16",
+   "discovery_batch_id": "2026-10-16-daily-1",
+   "first_disclosed_on": "2026-10-15",
+   "source_updates": [],
+   "original_excerpt": "We conducted three researcher-led interventions with children aged 10, 11 and 13, each tasked to build an AI-enhanced robot using the robotics kit.",
+   "source_checked": true,
+   "claim_text": "來源機構：ACM Transactions on Computing Education (ACM)；資料標題：Interaction Patterns and Embodied Design Processes Using an AI Robotics Kit for K–12 Education；來源刊登日：2026-10-15。",
+   "claim_class": "bibliographic",
+   "risk_tier": "low",
+   "scope_limitation": "監測清單 J14；小規模質性研究，三次介入各 1 名兒童（共 3 人），經監護人招募，非學校情境。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "PENDING",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS"
+   ],
+   "ai_lit_note": "兒童以機器人套件動手學機器學習概念、打造 AI 機器人，對應 S-BAS「理解AI運作原理與限制」",
+   "audience": "k12",
+   "doi": "10.1145/3856302",
+   "screening_note": "Verified 2026-10-16 from manager-supplied publisher PDF (Just Accepted) and ACM DL article-page screenshot for daily brief 2026-10-16 supplement (author-abstract attributed summary); first disclosure 2026-10-15 from the article page (Online AM).",
+   "verification_completed_on": "2026-10-16"
+  }
+ ],
+ "search_runs": [
+  {
+   "batch_id": "2026-10-16-daily-1",
+   "searched_on": "2026-10-16",
+   "lookback_days": 7,
+   "lookback_days_target": 30,
+   "sources": [
+    {
+     "group": "research-doi",
+     "query": "Crossref filter=from-created-date:2026-10-15,until-created-date:2026-10-15,type:journal-article, six query.bibliographic sets, rows=40 each, 2026-10-16T00:24Z; ACM page returned HTTP 403 to automated requests; manager-supplied publisher PDF (Just Accepted) and ACM DL article-page screenshot (Online AM: 15 October 2026; Accepted on 17 September 2026) read 2026-10-16",
+     "status": "ok"
+    }
+   ],
+   "discovered": 1,
+   "added": 1,
+   "duplicates": 0
+  }
+ ],
+ "item_template": {
+  "candidate_id": "",
+  "category": "news_policy_or_research",
+  "source_url": "",
+  "source_title": "",
+  "source_publication_date": "",
+  "source_locator": "",
+  "original_excerpt": "",
+  "source_checked": false,
+  "claim_text": "",
+  "claim_class": "bibliographic_or_descriptive_or_high_impact",
+  "risk_tier": "low_or_medium_or_high",
+  "scope_limitation": "",
+  "translation_reviewed": false,
+  "conflict_unresolved": null,
+  "decision": "hold",
+  "ai_crosscheck_status": "not_started",
+  "ai_crosscheck_passes": 0,
+  "ai_crosscheck_record": ""
+ }
+}
