@@ -47,5 +47,57 @@
    "Interventions were analyzed both qualitatively and with process mining methods to gain an in-depth view of the interactions."
   ],
   "attributed_summary": "研究探討兒童如何與一款透過動手製作教授機器學習（ML）概念的低成本教育機器人工具互動；研究者帶領三次介入，參與兒童年齡為 10、11 與 13 歲，各自以該套件打造一台 AI 強化的機器人，並以質性分析與流程探勘方法分析介入中的互動。"
+ },
+ {
+  "claim_id": "D20261016-02",
+  "candidate_id": "W2026-10-16-A02",
+  "kind": "research",
+  "claim_text": "來源機構：Discover Education (Springer Nature)；資料標題：Development and validation of an artificial intelligence literacy scale for students；來源刊登日：2026-10-15。作者摘要報告：研究旨在檢視 AI 素養概念，發展有效且可信的學生 AI 素養量表；樣本為就讀國小與國中 4 至 8 年級的 870 名學生，研究者先編製 50 題題庫，作者報告探索性因素分析得到 22 題、6 個分量表，驗證性因素分析的測量模型適配良好。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "V2",
+  "daily_fact_kind": "research_abstract_attributed_summary",
+  "source_document_type": "peer_reviewed_article",
+  "source_title": "Development and validation of an artificial intelligence literacy scale for students",
+  "source_organization": "Discover Education (Springer Nature)",
+  "source_url": "https://doi.org/10.1007/s44217-026-02048-x",
+  "evidence_source_url": "https://doi.org/10.1007/s44217-026-02048-x",
+  "source_locator": "Springer Nature Link 文章頁（管理者 2026-10-16 截圖）：Published: 15 October 2026；Volume 5, article number 1176 (2026)；出版者 PDF（管理者提供）：Received 19 March 2026 / Accepted 13 August 2026；摘要歸屬：Abstract 第 3–7 句（出版者網頁對自動請求回 JavaScript 攔截頁）",
+  "source_type": "research_publication",
+  "checked_at": "2026-10-16",
+  "publication_date": "2026-10-15",
+  "first_disclosed_on": "2026-10-15",
+  "evidence_path": "publication/sources/d2026-10-16-a02-discover.txt",
+  "evidence_sha256": "5bf3c6b41a74eb695cdb2a7f4412d4a28c27fe89b964f2711750bdcb8ac3735a",
+  "original_excerpt": "In this context, the aim of this study is to develop a valid and reliable scale to obtain accurate data on artificial intelligence literacy by examining the concept of artificial intelligence literacy. … The study sample consists of 870 students (424 boys, 346 girls) in grades 4, 5, 6, 7 and 8 attending elementary and middle schools. … A pool of 50 items was created to measure students’ levels of artificial intelligence literacy. … Exploratory Factor Analysis (EFA) resulted in 22 items and 6 subscales. … The measurement model obtained from Confirmatory Factor Analysis (CFA) demonstrated good fit.",
+  "interpretation_note": "轉述作者摘要的研究目的、樣本、題庫與作者所述因素結構；量表發展研究，非介入研究。",
+  "scope_limitation": "同儕審查期刊論文（Discover Education，監測清單 J32）；量表發展研究，內文載樣本來自土耳其 Niğde 省、便利抽樣；摘要所列性別人數（424、346）合計與總數 870 不符（內文另寫女生 446 人），本則只寫總數。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "ai_crosscheck_record": "PENDING",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "S-BAS",
+   "S-LRN"
+  ],
+  "ai_lit_note": "發展國中小學生 AI 素養量表（AI 素養量表依準則判 A）；分量表含 AI 使用技能與取用、學習歷程中的 AI 等，對應 S-BAS「管理AI工具於多元情境之應用」與 S-LRN「理解AI輔助學習的角色功能」",
+  "audience": "k12",
+  "decision": "publish",
+  "summary_evidence_spans": [
+   "In this context, the aim of this study is to develop a valid and reliable scale to obtain accurate data on artificial intelligence literacy by examining the concept of artificial intelligence literacy.",
+   "The study sample consists of 870 students (424 boys, 346 girls) in grades 4, 5, 6, 7 and 8 attending elementary and middle schools.",
+   "A pool of 50 items was created to measure students’ levels of artificial intelligence literacy.",
+   "Exploratory Factor Analysis (EFA) resulted in 22 items and 6 subscales.",
+   "The measurement model obtained from Confirmatory Factor Analysis (CFA) demonstrated good fit."
+  ],
+  "attributed_summary": "研究旨在檢視 AI 素養概念，發展有效且可信的學生 AI 素養量表；樣本為就讀國小與國中 4 至 8 年級的 870 名學生，研究者先編製 50 題題庫，作者報告探索性因素分析得到 22 題、6 個分量表，驗證性因素分析的測量模型適配良好。"
  }
 ]

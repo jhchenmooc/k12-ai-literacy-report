@@ -45,6 +45,41 @@
    "doi": "10.1145/3856302",
    "screening_note": "Verified 2026-10-16 from manager-supplied publisher PDF (Just Accepted) and ACM DL article-page screenshot for daily brief 2026-10-16 supplement (author-abstract attributed summary); first disclosure 2026-10-15 from the article page (Online AM).",
    "verification_completed_on": "2026-10-16"
+  },
+  {
+   "candidate_id": "W2026-10-16-A02",
+   "category": "research",
+   "source_url": "https://doi.org/10.1007/s44217-026-02048-x",
+   "source_title": "Development and validation of an artificial intelligence literacy scale for students",
+   "source_organization": "Discover Education (Springer Nature)",
+   "source_publication_date": "2026-10-15",
+   "source_locator": "Springer Nature Link 文章頁（管理者 2026-10-16 截圖）：Published: 15 October 2026；Volume 5, article number 1176 (2026)；出版者 PDF（管理者提供）：Received 19 March 2026 / Accepted 13 August 2026；Abstract",
+   "discovered_on": "2026-10-16",
+   "discovery_batch_id": "2026-10-16-daily-2",
+   "first_disclosed_on": "2026-10-15",
+   "source_updates": [],
+   "original_excerpt": "The study sample consists of 870 students (424 boys, 346 girls) in grades 4, 5, 6, 7 and 8 attending elementary and middle schools.",
+   "source_checked": true,
+   "claim_text": "來源機構：Discover Education (Springer Nature)；資料標題：Development and validation of an artificial intelligence literacy scale for students；來源刊登日：2026-10-15。",
+   "claim_class": "bibliographic",
+   "risk_tier": "low",
+   "scope_limitation": "監測清單 J32；量表發展研究，土耳其 Niğde 省便利抽樣（內文）；摘要性別人數 424＋346 與總數 870 不符（內文另寫 446），短訊只寫總數。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "PENDING",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-LRN"
+   ],
+   "ai_lit_note": "發展國中小學生 AI 素養量表（AI 素養量表依準則判 A）；分量表含 AI 使用技能與取用、學習歷程中的 AI 等，對應 S-BAS「管理AI工具於多元情境之應用」與 S-LRN「理解AI輔助學習的角色功能」",
+   "audience": "k12",
+   "doi": "10.1007/s44217-026-02048-x",
+   "screening_note": "Verified 2026-10-16 from manager-supplied publisher PDF and Springer Nature Link article-page screenshot for daily brief 2026-10-16 supplement (author-abstract attributed summary); first disclosure 2026-10-15 from the article page.",
+   "verification_completed_on": "2026-10-16"
   }
  ],
  "search_runs": [
@@ -57,6 +92,22 @@
     {
      "group": "research-doi",
      "query": "Crossref filter=from-created-date:2026-10-15,until-created-date:2026-10-15,type:journal-article, six query.bibliographic sets, rows=40 each, 2026-10-16T00:24Z; ACM page returned HTTP 403 to automated requests; manager-supplied publisher PDF (Just Accepted) and ACM DL article-page screenshot (Online AM: 15 October 2026; Accepted on 17 September 2026) read 2026-10-16",
+     "status": "ok"
+    }
+   ],
+   "discovered": 1,
+   "added": 1,
+   "duplicates": 0
+  },
+  {
+   "batch_id": "2026-10-16-daily-2",
+   "searched_on": "2026-10-16",
+   "lookback_days": 7,
+   "lookback_days_target": 30,
+   "sources": [
+    {
+     "group": "research-doi",
+     "query": "Crossref filter=from-created-date:2026-10-15,until-created-date:2026-10-15 (2026-10-16T00:24Z); Springer page returned a JavaScript challenge to automated requests (not bypassed); manager-supplied publisher PDF and Springer Nature Link article-page screenshot (Published: 15 October 2026) read 2026-10-16",
      "status": "ok"
     }
    ],
