@@ -13744,3 +13744,6 @@
 "KR-13881","KB-2024-0369","has_ailit_class","vocabulary","AILIT_A","https://doi.org/10.1609/aaai.v38i21.30377","discovered_unverified"
 "KR-13882","KB-2024-0369","has_ailit_dim","vocabulary","S-BAS","https://doi.org/10.1609/aaai.v38i21.30377","discovered_unverified"
 "KR-13883","KB-2024-0369","has_ailit_dim","vocabulary","S-ETH","https://doi.org/10.1609/aaai.v38i21.30377","discovered_unverified"
+"KR-13884","KB-2024-0361","has_ailit_dim","vocabulary","S-BAS","https://doi.org/10.22318/icls2024.559089","discovered_unverified"
+"KR-13885","KB-2024-0361","has_ailit_dim","vocabulary","S-ETH","https://doi.org/10.22318/icls2024.559089","discovered_unverified"
+"KR-13886","KB-2024-0361","has_ailit_dim","vocabulary","S-LRN","https://doi.org/10.22318/icls2024.559089","discovered_unverified"
