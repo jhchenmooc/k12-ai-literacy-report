@@ -216,6 +216,7 @@ Pages 現行部署從 `_public_site` 打包公開目錄，不再把研究工作�
 
 - **每日書目也須有證據**：即使 `claim_class=bibliographic`、`risk_tier=low`，也須有 `publication/sources/` 原文短快照、雜湊、原文摘錄、來源 URL 對照、翻譯與限制等欄位；正式 daily 逐則驗證，週報與月報既有規則不變。自填檔案與 SHA **不證明**來源本身真實，需實際檢查官方或出版社原始頁面。
 - **日期與資料型態**：Daily 首次公開日須和已確認來源發表日一致，並且不得距日報期別超過 7 天；更舊內容即使最近發現或最近完成查核，都歸背景／週報材料，不能當每日新訊。若原始來源有修訂，應另以可追溯的**真實新版本事件**記錄，不能改舊版首發日期來湊新訊。
+- **出版社頁讀不到時，首發日可依 Crossref 上線日（管理者 2026-10-16 決定）**：出版社文章頁對自動讀取回 403 或機器人驗證頁（不得繞過）時，論文首發日可採 Crossref `works/<DOI>` 的 `published-online`，條件全部符合才可用：① 年、月、日齊全，只有月份或只有 `published-print` 的不算；② 沒有更早的預印本或同事件公開；③ 候選池 `source_locator`、claim `source_locator` 與每日查核紀錄寫明「首發日依 Crossref published-online（出版社頁讀取失敗）」，並把 Crossref 紀錄的書目行存入 `publication/sources/` 快照。這條只放寬**日期**來源；作者摘要歸屬型仍須讀到摘要原文（出版社頁、出版社 PDF 或預印本），只有 Crossref 可讀時退回書目型（`research_bibliography`）。依據：2026-10-10～16 經管理者截圖或出版社 PDF 確認的 6 篇（SAGE 2、MDPI 2、ACM 1、Springer 1），頁面日期與 Crossref `published-online` 全部相同。不適用政策與官方來源。
 - **靜態出版安全**：正式新期別除了原本禁止 script/inline handler，也不得藏可執行的 `javascript:`／`data:`／`vbscript:`／`file:` 或協定相對 URL；合法 HTTPS 連結可保留。
 - **候選池一致性**：執行 `ingest-candidates.js` 時使用排他檔鎖保護「讀取、合併、寫入」；若 `.lock` 尚存在表示已有程序或前次中斷，應先查明再人工移除，不強制忽略。跨週搜尋 `batch_id` 不得重用；官方來源網址若含帳號密碼一律拒絕。匯入不得重設既有 verified/ready 計數或主張狀態；計數仍由編輯流程確認，並非匯入程式自動背書。
 - **搜尋覆蓋誠實記錄**：`lookback_days_target=30` 只是計畫回查目標；`lookback_days` 沒有填報時為 `null`。即使填報也只是該批資料宣稱已查的天數，不能當作自動驗證全球搜尋範圍。既有歷史批次的舊值不追溯猜改。

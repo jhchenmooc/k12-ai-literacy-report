@@ -121,10 +121,11 @@ https://arxiv.org/abs/2503.00079                              → Submission his
 
 ### 3.6 出版社頁
 
-AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只回轉址腳本、T&F 403；Wiley、SAGE、MDPI、Emerald、Routledge、ResearchGate 也讀不到（2026-10-10）。Springer 曾回 303／JS challenge；2026-10-10 學者月檢索時 Springer、Frontiers 與 RPTEL（OJS）的文章頁都可讀，但同日 B1 待判重篩時 Springer 又回 JS「Client Challenge」頁，所以 Springer 屬時好時壞，日期取自頁面 `citation_*` 標籤；可讀性會變，每次照實記錄。**不要嘗試繞過驗證頁**（之前雲端瀏覽器代理曾自行點擊驗證頁，已列為禁止）。讀不到就把紀錄留在 `discovered_unverified`、日期 unknown，交給可讀的環境或真人。
+AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只回轉址腳本、T&F 403；Wiley、SAGE、MDPI、Emerald、Routledge、ResearchGate 也讀不到（2026-10-10）。Springer 曾回 303／JS challenge；2026-10-10 學者月檢索時 Springer、Frontiers 與 RPTEL（OJS）的文章頁都可讀，但同日 B1 待判重篩時 Springer 又回 JS「Client Challenge」頁，所以 Springer 屬時好時壞，日期取自頁面 `citation_*` 標籤；可讀性會變，每次照實記錄。**不要嘗試繞過驗證頁**（之前雲端瀏覽器代理曾自行點擊驗證頁，已列為禁止）。讀不到就把紀錄留在 `discovered_unverified`、日期 unknown，交給可讀的環境或真人；論文首發日的例外見下方 Crossref 一條。
 
 - **Frontiers 首發日以頁面「Published」或 Crossref `published-online` 為準**（管理者 2026-10-10 決定，取代同日稍早「以 `citation_online_date` 為首發日」的寫法）。`citation_online_date` 等於同頁「Accepted」接受日，不是公開日：B-AIMT（10.3389/feduc.2026.1885959）頁面為 Accepted 2026-08-31、Published 2026-09-28，Crossref 的 published-online 與 DOI 建立日都是 2026-09-28。接受日另記。有更早的預印本時以預印本為準。
 - Springer（含 BMC、SpringerOpen）的 `citation_online_date` 是 First Online 日，2026-10-10 抽查 15 筆都與 Crossref `published-online` 相同。
+- **出版社頁讀不到時，首發日可依 Crossref `published-online`（管理者 2026-10-16 決定）**：限年、月、日齊全，且沒有更早的預印本或同事件公開；紀錄寫明「首發日依 Crossref published-online（出版社頁讀取失敗）」。只放寬日期，摘要歸屬型短訊仍須讀到摘要原文，否則退回書目型。依據與完整條件見 [編輯流程總則](editorial-workflow-master.md)「出版社頁讀不到時」一條。2026-10-10～16 經管理者截圖或 PDF 確認的 6 篇（10.1177/07356331261494821、10.3390/jintelligence14100257、10.3390/su182010310、10.1177/21582440261496715、10.1145/3856302、10.1007/s44217-026-02048-x），頁面日期與 Crossref 全部相同。Elsevier 多無 `published-online`，仍須頁面或 PDF。
 
 ### 3.7 官方政策來源（週報；2026-10-09 實測，由編輯 session 維護）
 
