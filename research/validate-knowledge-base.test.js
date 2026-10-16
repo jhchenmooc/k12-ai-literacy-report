@@ -1,10 +1,10 @@
 "use strict";
 const {test}=require("node:test"),assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
-const {parseCsv,dateOk,validate,index}=require("./validate-knowledge-base.js");
+const {parseCsv,dateOk,validate,index,weeklyCandidates}=require("./validate-knowledge-base.js");
 const dir=path.join(__dirname,"knowledge-base","data");
 const read=n=>parseCsv(fs.readFileSync(path.join(dir,n+".csv"),"utf8"));
 const records=read("records"),relations=read("relations"),runs=read("search_runs");
-const candidates=JSON.parse(fs.readFileSync(path.join(__dirname,"drafts","2026-10-09_2026-10-15.json"),"utf8")).items;
+const candidates=weeklyCandidates(path.join(__dirname,"drafts"));
 /* Held candidates stay discovery-only; a candidate may leave hold only as a source-checked publish whose record is no longer discovered_unverified (manager 2026-10-11). */
 const heldOrChecked=c=>c.decision==="hold"||(c.decision==="publish"&&c.source_checked===true);
 const heldRecords=()=>records.filter(r=>candidates.some(c=>c.decision==="hold"&&c.candidate_id===r.source_candidate_id));
@@ -183,4 +183,11 @@ test("AI-literacy scope and dimension tags only use their vocabularies",()=>{
  assert.ok(validate(records,[{...base,relation_id:"R2",predicate:"has_ailit_dim",object_id:"S-XYZ"}],runs,candidates).some(x=>x.includes("invalid ailit dimension relation")));
  assert.ok(validate(records,[{...base,relation_id:"R3",predicate:"has_citation_flag",object_id:"TOP_CITED"}],runs,candidates).some(x=>x.includes("invalid citation flag relation")));
  assert.ok(!validate(records,[{...base,relation_id:"R4",predicate:"has_citation_flag",object_id:"CITED_TOP10_SAME_YEAR"}],runs,candidates).some(x=>x.includes("invalid citation flag relation")));
+});
+test("candidate trace reads every weekly pool, oldest first, and ignores other drafts",()=>{
+ const tmp=fs.mkdtempSync(path.join(require("node:os").tmpdir(),"kbpools-"));
+ const put=(n,items)=>fs.writeFileSync(path.join(tmp,n),JSON.stringify({items}));
+ put("2026-10-16_2026-10-22.json",[{candidate_id:"W2026-10-16-A01"}]);put("2026-10-09_2026-10-15.json",[{candidate_id:"W2026-10-09-A01"}]);put("2026-10-monthly-claims-draft.json",[{candidate_id:"X"}]);
+ assert.deepEqual(weeklyCandidates(tmp).map(c=>c.candidate_id),["W2026-10-09-A01","W2026-10-16-A01"]);
+ fs.rmSync(tmp,{recursive:true});
 });
