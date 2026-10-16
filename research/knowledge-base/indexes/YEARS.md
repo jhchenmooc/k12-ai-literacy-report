@@ -1530,6 +1530,7 @@
 | KB-2026-0377 — [Ready or not: How are schools responding to Artificial Intelligence? Practical insights for primary school leaders and teachers](https://www.evidence.ero.govt.nz/documents/ready-or-not-how-are-schools-responding-to-artificial-intelligence-insights-for-primary-school-leaders-and-teachers) | official_guidance | 2026-07-30 | discovered_unverified |
 | KB-2026-0378 — [Ready or not: How are schools responding to Artificial Intelligence? Practical insights for secondary school leaders and teachers](https://www.evidence.ero.govt.nz/documents/ready-or-not-how-are-schools-responding-to-artificial-intelligence-insights-for-secondary-school-leaders-and-teachers) | official_guidance | 2026-07-30 | discovered_unverified |
 | KB-2026-0379 — [Interaction Patterns and Embodied Design Processes Using an AI Robotics Kit for K–12 Education](https://doi.org/10.1145/3856302) | journal_article | 2026-10-15 | bibliographic_checked |
+| KB-2026-0380 — [Development and validation of an artificial intelligence literacy scale for students](https://doi.org/10.1007/s44217-026-02048-x) | journal_article | 2026-10-15 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

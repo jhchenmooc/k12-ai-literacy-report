@@ -71,7 +71,7 @@
   "evidence_sha256": "5bf3c6b41a74eb695cdb2a7f4412d4a28c27fe89b964f2711750bdcb8ac3735a",
   "original_excerpt": "In this context, the aim of this study is to develop a valid and reliable scale to obtain accurate data on artificial intelligence literacy by examining the concept of artificial intelligence literacy. … The study sample consists of 870 students (424 boys, 346 girls) in grades 4, 5, 6, 7 and 8 attending elementary and middle schools. … A pool of 50 items was created to measure students’ levels of artificial intelligence literacy. … Exploratory Factor Analysis (EFA) resulted in 22 items and 6 subscales. … The measurement model obtained from Confirmatory Factor Analysis (CFA) demonstrated good fit.",
   "interpretation_note": "轉述作者摘要的研究目的、樣本、題庫與作者所述因素結構；量表發展研究，非介入研究。",
-  "scope_limitation": "同儕審查期刊論文（Discover Education，監測清單 J32）；量表發展研究，內文載樣本來自土耳其 Niğde 省、便利抽樣；摘要所列性別人數（424、346）合計與總數 870 不符（內文另寫女生 446 人），本則只寫總數。",
+  "scope_limitation": "同儕審查期刊論文（Discover Education，監測清單 J32）；量表發展研究，樣本來自土耳其 Niğde 省（內文），研究限制段稱便利抽樣、參與者段寫立意抽樣，原文前後不一；摘要性別人數 424＋346 與總數 870 不符，內文寫女生 446 人（51.3%）但表 1 仍列 346，本則只寫總數。",
   "assertion_type": "direct_statement",
   "translation_reviewed": true,
   "source_checked": true,
@@ -82,7 +82,7 @@
   "contradiction_type": "none",
   "ai_crosscheck_status": "concordant",
   "ai_crosscheck_passes": 2,
-  "ai_crosscheck_record": "PENDING",
+  "ai_crosscheck_record": "第一輪 2026-10-16 讀管理者提供的出版者 PDF 首頁摘要與 Springer Nature Link 文章頁截圖（Published: 15 October 2026），擇摘要第 3–7 句撰寫中文摘要；第二輪 2026-10-16 由隔離子代理逐項對照英文原句（樣本數、年級、學段、題數、分量表數、EFA／CFA 用語、「有效且可信」是否寫成目的）並對照內文核範圍限制，判定一致；依建議在範圍限制補記抽樣方式與性別人數在原文中前後不一。出版者網頁對自動請求回 JavaScript 攔截頁，未繞過。同一模型，非獨立審閱。",
   "ai_lit_class": "A",
   "ai_lit_dims": [
    "S-BAS",

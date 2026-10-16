@@ -69,7 +69,7 @@
    "decision": "publish",
    "ai_crosscheck_status": "concordant",
    "ai_crosscheck_passes": 2,
-   "ai_crosscheck_record": "PENDING",
+   "ai_crosscheck_record": "第一輪 2026-10-16 讀管理者提供的出版者 PDF 首頁摘要與 Springer Nature Link 文章頁截圖（Published: 15 October 2026），擇摘要第 3–7 句撰寫中文摘要；第二輪 2026-10-16 由隔離子代理逐項對照英文原句（樣本數、年級、學段、題數、分量表數、EFA／CFA 用語、「有效且可信」是否寫成目的）並對照內文核範圍限制，判定一致；依建議在範圍限制補記抽樣方式與性別人數在原文中前後不一。出版者網頁對自動請求回 JavaScript 攔截頁，未繞過。同一模型，非獨立審閱。",
    "ai_lit_class": "A",
    "ai_lit_dims": [
     "S-BAS",
