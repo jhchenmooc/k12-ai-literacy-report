@@ -143,7 +143,7 @@ AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只�
 | 新加坡 MOE | 2026-10-09 B-POL 實測 moe.gov.sg 可讀（2026-10-17 重測新聞稿列表回 404 外殼，見 policy-monitoring-sources.md）；新聞列表偶為轉址 JS 頁、空內容；2026-10-10 單篇頁（forum letter reply、AI in education）直接網址可讀 | WebSearch；國會答覆另查。站內搜尋預設依相關度排序（可改為依日期排序）；只檢視相關度前幾筆、未依日期排序時，記為「未完整檢視」，不寫「沒有發布」（管理者 2026-10-10） |
 | 加拿大 BC／Ontario | SSL 憑證錯誤（**不得停用 TLS 驗證**）／需 JS | WebSearch |
 | 香港 EDB 通告 | 列表需表單／JS；**通告 PDF 可直接讀** | 香港政府新聞公報可讀 |
-| 日本 MEXT、中國教育部、韓國 MOE、臺灣教育部 | 大致可讀；韓國 moe.go.kr 常 connection reset（需重試）；臺灣 `pads.moe.edu.tw`（AI 人才方舟計畫下載頁）伺服器未送中繼憑證，curl 驗證失敗（rc=60，**不得停用 TLS 驗證**），一般瀏覽器可開 | 臺灣 pads 頁請管理者以瀏覽器確認 |
+| 日本 MEXT、中國教育部、韓國 MOE、臺灣教育部（臺灣來源 2026-10-18 起見 [taiwan-monitoring-sources.md](taiwan-monitoring-sources.md)） | 大致可讀；韓國 moe.go.kr 常 connection reset（需重試）；臺灣 `pads.moe.edu.tw`（AI 人才方舟計畫下載頁）伺服器未送中繼憑證，curl 驗證失敗（rc=60，**不得停用 TLS 驗證**），一般瀏覽器可開 | 臺灣 pads 頁請管理者以瀏覽器確認 |
 | OECD 出版品全文（含 PISA 報告章節） | Cloudflare 403 | 請管理者以瀏覽器開啟另存或截圖（PISA 2025 引文即如此核對） |
 
 - WebSearch 索引有延遲，當天新頁常未收錄；WebSearch 摘要與 WebFetch 內容都是模型轉述，**只能當線索**，日期與摘錄要回到可讀的原頁核對。

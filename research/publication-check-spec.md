@@ -58,4 +58,4 @@
 
 ## 週報分段欄位（2026-10-17）
 
-分段週報另用 `weekly_section`（overview／featured／briefs／background）、`full_text_checked`、`weekly_source_claim`、`title_zh`、`supporting_claim_ids`、`related_claim_ids`；規則與閘門檢查見 [主控 SOP](editorial-workflow-master.md)「週報版型」「週報增補」與 [PUBLICATION-CONTRIBUTING.md](PUBLICATION-CONTRIBUTING.md)。
+分段週報另用 `weekly_section`（overview／featured／briefs／background／tw_note／taiwan／tw_compare）、`region`（intl／tw）、`taiwan_sample`；`issues.json` 期別欄位 `revised_on`、`taiwan_not_searched`、`full_text_checked`、`weekly_source_claim`、`title_zh`、`supporting_claim_ids`、`related_claim_ids`；規則與閘門檢查見 [主控 SOP](editorial-workflow-master.md)「週報版型」「週報增補」與 [PUBLICATION-CONTRIBUTING.md](PUBLICATION-CONTRIBUTING.md)。

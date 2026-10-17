@@ -140,7 +140,7 @@ body{background:var(--bg)}
 [data-claim-kind]:first-child{margin-top:0}
 [data-claim-kind][data-kind="research"]{background:var(--teal)}
 /* Daily edition numbering, same as the 1. 2. 3. list on the list pages (CSS only; the gate sees no extra text). */
-article:has(>[data-claim-kind]){counter-reset:claim;padding-left:2em}
+article:has(>[data-claim-kind]),article>section:has(>[data-claim-kind]){counter-reset:claim;padding-left:2em}
 [data-claim-kind]{position:relative;counter-increment:claim}
 [data-claim-kind]::before{content:counter(claim) ".";position:absolute;right:calc(100% + .5em);top:-.15em;color:var(--navy);font-size:24px;font-weight:400;line-height:1.3}
 .rec-table .t,.tag-guide .t,.item .t{white-space:nowrap;margin-right:.6em}
@@ -167,7 +167,7 @@ article:has(>[data-claim-kind]){counter-reset:claim;padding-left:2em}
 article>section>table{width:100%;border-collapse:collapse;margin:8px 0 28px;font-size:15px;background:var(--surface);border:1px solid var(--border)}
 article>section>table th{text-align:left;font-size:13px;color:var(--muted);font-weight:700;padding:8px 10px;border-bottom:2px solid var(--border);white-space:nowrap}
 article>section>table td{padding:12px 10px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.7}
-article>section>table td:first-child:not([data-claim-id]){width:2.5em;text-align:center;color:var(--navy);font-size:18px}
+article>section>table td:first-child:not([data-claim-id]){width:2.5em;text-align:center;color:var(--navy);font-size:18px;white-space:nowrap}
 article>section>table td:nth-child(2),article>section>table td:nth-child(3){white-space:nowrap;font-size:13px;color:var(--muted)}
 article>section>table td:nth-child(4){width:9em;font-size:13px;color:var(--navy)}
 article>section>table td:nth-child(4) span{white-space:nowrap}
@@ -175,13 +175,14 @@ article>section>table td[data-claim-id]{font-size:16px}
 td[data-kind] span{display:inline-block;font-size:13px;font-weight:700;color:#fff;background:var(--blue);padding:2px 10px;border-radius:6px}
 td[data-kind="research"] span{background:var(--teal)}
 td[data-kind="background"] span{background:var(--muted)}
+td[data-kind="tw"] span{background:#2f6b3a}
 td[data-kind] span{margin-bottom:4px}
 /* Chinese title row above the item text (rowspan rows), labelled facets, overview citations. */
 article>section>table tr:has(td[rowspan]) td:last-child{border-bottom:0;padding-bottom:0;font-size:16px;line-height:1.5;color:var(--navy);font-weight:700}
 article>section>table tr{scroll-margin-top:16px}
 article>section>table tr:target td{background:#fff4d6}
 article>section>table td strong{color:var(--navy)}
-article>section>p[data-claim-id]+p:not([data-claim-id]){font-size:13px;color:var(--muted);margin-top:-4px}
+article>section[data-part="overview"]>p[data-claim-id]+p,article>section[data-region="tw"]>p[data-claim-id]+p{font-size:13px;color:var(--muted);margin-top:-4px}
 @media (max-width:960px){
  article>section>table,article>section>table tbody,article>section>table tr,article>section>table td{display:block;width:auto}
  article>section>table thead{display:none}
@@ -193,15 +194,33 @@ article>section>p[data-claim-id]+p:not([data-claim-id]){font-size:13px;color:var
  article>section>table tr:not(:has(td[rowspan])){border-bottom:2px solid var(--border)}
  article>section>table td[data-kind] br{display:none}
  article>section>table td[data-kind] span{margin:0 .4em 0 0}
- article>section>table tr:not([id^="item-b"]) td:first-child:not([data-claim-id])::before{content:"第 "}
- article>section>table tr:not([id^="item-b"]) td:first-child:not([data-claim-id])::after{content:" 則"}
+ article>section>table tr[id^="item-"]:not([id^="item-b"]):not([id^="item-c"]):not([id^="item-t"]) td:first-child:not([data-claim-id])::before{content:"第 "}
+ article>section>table tr[id^="item-"]:not([id^="item-b"]):not([id^="item-c"]):not([id^="item-t"]) td:first-child:not([data-claim-id])::after{content:" 則"}
 }
 @media print{
  body{background:#fff}
  td[data-kind] span,[data-claim-kind],.kind{-webkit-print-color-adjust:exact;print-color-adjust:exact}
  article>section>table tr{break-inside:avoid}
  article>section>table tr:has(td[rowspan]){break-after:avoid}
- article h2{break-after:avoid}
+ article h2,article h3{break-after:avoid}
+ article>section[data-region="tw"],article>section:has(>h2[data-region="tw"]){-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
 /* Focus ring with enough contrast on white and on --bg (WCAG 1.4.11): dark ring plus the amber halo. */
 a:focus-visible{outline:3px solid var(--navy);outline-offset:2px;box-shadow:0 0 0 5px #ffb629}
+/* 國際／臺灣: daily section headings and the weekly Taiwan area, set apart by a rule and a tinted panel. */
+article>section:has(>h2[data-region]){padding-left:2em}
+article>section>h2[data-region]{font-size:20px;margin:28px 0 12px -2em;padding-bottom:6px;border-bottom:2px solid var(--border)}
+article>section:has(>h2[data-region="tw"]){border-left:4px solid #2f6b3a;background:#f1f7ef;border-radius:0 12px 12px 0;padding-top:4px;padding-bottom:8px}
+article>section>h2[data-region="tw"]{color:#2f6b3a}
+article>section:first-child>h2[data-region]{margin-top:0}
+article>hr{border:0;border-top:3px double #8fa3bb;margin:40px 0 24px}
+article>section[data-region="tw"]{background:#e9f3e6;border:1px solid #b7d3ae;border-left:6px solid #2f6b3a;border-radius:16px;padding:20px 22px}
+article>section[data-region="tw"]>h2{color:#2f6b3a}
+article>section[data-region="tw"] h3{font-size:20px;margin:28px 0 6px;color:#2f6b3a}
+.kind.tw{background:#2f6b3a}
+@media (max-width:960px){article>section[data-region="tw"]{padding:14px 12px}}
+/* Numbered overview and Taiwan comparison sentences (manager request 2026-10-17); 依據 lines align under the text. */
+article>section[data-part="overview"],article>section[data-region="tw"]{counter-reset:analysis}
+article>section[data-part="overview"]>p[data-claim-id],article>section[data-region="tw"]>p[data-claim-id]{counter-increment:analysis;position:relative;padding-left:30px}
+article>section[data-part="overview"]>p[data-claim-id]::before,article>section[data-region="tw"]>p[data-claim-id]::before{content:counter(analysis) ".";position:absolute;left:0;color:var(--navy);font-weight:700}
+article>section[data-part="overview"]>p[data-claim-id]+p,article>section[data-region="tw"]>p[data-claim-id]+p{padding-left:30px}
