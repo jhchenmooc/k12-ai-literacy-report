@@ -163,3 +163,21 @@ article:has(>[data-claim-kind]){counter-reset:claim;padding-left:2em}
 @media (max-width:700px){.tf-group legend{float:none;width:100%}}
 .tf-fields>summary{cursor:pointer;font-weight:700;font-size:15px;margin-top:10px;min-height:32px}
 .tf-count{font-weight:400;color:var(--muted)}
+/* Weekly section tables (render-site.js weeklyTable): number, kind badge, date, tags, item text. */
+article>section>table{width:100%;border-collapse:collapse;margin:8px 0 28px;font-size:15px;background:var(--surface);border:1px solid var(--border)}
+article>section>table th{text-align:left;font-size:13px;color:var(--muted);font-weight:700;padding:8px 10px;border-bottom:2px solid var(--border);white-space:nowrap}
+article>section>table td{padding:12px 10px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.7}
+article>section>table td:nth-child(1){width:2.5em;text-align:center;color:var(--navy);font-size:18px}
+article>section>table td:nth-child(2),article>section>table td:nth-child(3){white-space:nowrap}
+article>section>table td:nth-child(4){width:9em;font-size:13px;color:var(--navy);word-break:keep-all}
+article>section>table td:nth-child(5){font-size:16px}
+td[data-kind] span{display:inline-block;font-size:13px;font-weight:700;color:#fff;background:var(--blue);padding:2px 10px;border-radius:6px}
+td[data-kind="research"] span{background:var(--teal)}
+@media (max-width:720px){
+ article>section>table,article>section>table tbody,article>section>table tr,article>section>table td{display:block;width:auto}
+ article>section>table thead{display:none}
+ article>section>table tr{padding:12px 12px 4px;border-bottom:1px solid var(--border)}
+ article>section>table td{border:0;padding:2px 0}
+ article>section>table td:nth-child(1),article>section>table td:nth-child(2),article>section>table td:nth-child(3){display:inline-block;margin-right:.6em;font-size:15px;width:auto}
+ article>section>table td:nth-child(4){width:auto}
+}

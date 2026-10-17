@@ -363,6 +363,19 @@ test('weekly attack: any change to a sectioned page, or section text on a flat p
  const flat=weeklyFull(d,[claim],'<html><main><h2>本週精選</h2><p data-claim-id="C1">合成案例：某機構公告</p></main></html>');
  assert.equal(flat.ok,false);assert.ok(flat.errors.some(e=>e.includes('unbound content')));
 });
+test('weekly table: kind badge, date and tag cells come only from the renderer',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const {renderWeeklyEdition}=require('./render-site.js'),html=renderWeeklyEdition({period:'2026-10-09_10-15',claims:[featured,brief]});
+ assert.ok(html.includes('<td data-kind="policy"><span>政策</span></td><td>未知</td>'),html.slice(html.indexOf('<table>'),html.indexOf('</table>')));
+ assert.deepEqual(weeklyFull(d,[featured,brief],html).errors,[]);
+ for(const changed of [html.replace('<span>政策</span>','<span>本刊推薦</span>'),html.replace('data-kind="policy"','data-kind="alert"'),
+  html.replace('<td>未知</td>','<td>2026-10-17</td>'),html.replace('<th scope="col">內容</th>','<th scope="col">結論</th>'),
+  html.replace('<td>1</td>','<td>未審核結論</td>')]){
+  assert.equal(weeklyFull(d,[featured,brief],changed).ok,false);
+ }
+ const bare=weeklyFull(d,[claim],'<html><main><table><tr><td>2026-10-10</td><td data-claim-id="C1">合成案例：某機構公告</td></tr></table></main></html>');
+ assert.equal(bare.ok,false);assert.ok(bare.errors.some(e=>e.includes('unbound content')));
+});
 test('weekly structure: sections, full-text check, daily source and featured cap are enforced',t=>{
  const many=Array.from({length:6},(_,i)=>({...featured,claim_id:'F'+i,claim_text:'合成案例：精選 '+i}));
  const cases={
