@@ -6,7 +6,7 @@
 
 ## 0. 新 Session 先讀這一段
 
-> **2026-10-17 更新**：首期週報 10/09–10/15 已刊（#302），同日改為分段週報（#305 精選／其他短訊、#307 表格與色標、#308 導讀／背景／中文譯名／分欄／來源類型／概況／上下期）。週報排程 trig_01U8VY1x9xaJnREowotZ1Vav（每週五 09:27）、月報排程 trig_01TVhWSKenCSxsL9Pq8sVgZy（每月 29 日 09:47），皆先交出刊前檢查、管理者回覆「合併」才刊出。政策來源擴充試行至 10/23（[policy-monitoring-sources.md](policy-monitoring-sources.md)）。下方 2026-10-11 狀態為歷史紀錄。
+> **2026-10-17 更新**：首期週報 10/09–10/15 已刊（#302），同日改為分段週報（#305 精選／其他短訊、#307 表格與色標、#308 導讀／背景／中文譯名／分欄／來源類型／概況／上下期）。週報排程 trig_01U8VY1x9xaJnREowotZ1Vav（每週五 09:27）、月報排程 trig_01TVhWSKenCSxsL9Pq8sVgZy（每月 29 日 09:47），皆先交出刊前檢查、管理者回覆「合併」才刊出。政策來源擴充試行至 10/23（[policy-monitoring-sources.md](policy-monitoring-sources.md)）。臺灣部分（管理者 10-17）：每日 10-18 起分國際／臺灣兩段；週報臺灣區（對照說明／臺灣本週動態／臺灣對照）；來源見 [taiwan-monitoring-sources.md](taiwan-monitoring-sources.md)；10-09 期標 taiwan_not_searched。下方 2026-10-11 狀態為歷史紀錄。
 
 **要繼續的任務**：以最少人力、可追溯的原始證據，製作並公開 K–12 AI 素養國際週報／月報；第一期標準週報涵蓋 **2026/10/09–10/15**，預定 **10/16** 出刊。網站：[GitHub Pages](https://jhchenmooc.github.io/k12-ai-literacy-report/)；儲存庫：[jhchenmooc/k12-ai-literacy-report](https://github.com/jhchenmooc/k12-ai-literacy-report)。
 

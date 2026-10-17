@@ -348,11 +348,21 @@ test('monthly structure: sections, research groups and trend support are enforce
 // Sectioned weekly (manager decision 2026-10-17): featured items re-checked against full text, then other daily items.
 const featured={...claim,claim_id:'W1',weekly_section:'featured',full_text_checked:true,first_disclosed_on:'2026-10-10',source_document_type:'official_guidance',claim_text:'合成案例：精選深入版'};
 const brief={...claim,claim_id:'W2',weekly_section:'briefs',weekly_source_claim:'D20261012-01',first_disclosed_on:'2026-10-11',source_document_type:'official_guidance',source_url:'https://example.org/other',evidence_source_url:'https://example.org/other',claim_text:'合成案例：其他短訊'};
+// Registered daily items the weekly fixtures repeat: D20261012-01 (international) and D20261012-02 (Taiwan).
+function registerDailyForWeekly(d){
+ const {renderDailyEdition}=require('./render-site.js');
+ const items=[{...dailyLow,claim_id:'D20261012-01'},{...dailyLow,claim_id:'D20261012-02',region:'tw'}];
+ fs.mkdirSync(path.join(d,'daily','2026-10-12'),{recursive:true});
+ fs.writeFileSync(path.join(d,'daily','2026-10-12','index.html'),renderDailyEdition({date:'2026-10-12',claims:items}));
+ fs.writeFileSync(path.join(d,'publication','claims','daily-2026-10-12.json'),JSON.stringify(items));
+ return {path:'daily/2026-10-12/index.html',claims_file:'publication/claims/daily-2026-10-12.json',publication_mode:'ai_low_risk_source_facts'};
+}
 function weeklyFull(d,claims,html,extra={}){
  const {renderWeeklyEdition,weeklyNav}=require('./render-site.js'),nav=weeklyNav('2026-10-09_10-15',['2026-10-09_10-15']);
+ const dailyEdition=registerDailyForWeekly(d);
  let page=html;if(page===undefined)try{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims,revised_on:extra.revised_on,taiwan_not_searched:extra.taiwan_not_searched,nav})}catch{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims:claims.map(c=>({...c,weekly_section:'briefs'})),nav})}
  updateHtml(d,page);
- fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[{path:'weekly/2026-10-09_10-15/index.html',claims_file:'publication/claims/a.json',...extra}]}));
+ fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[dailyEdition,{path:'weekly/2026-10-09_10-15/index.html',claims_file:'publication/claims/a.json',...extra}]}));
  fs.writeFileSync(path.join(d,'publication','claims','a.json'),JSON.stringify(claims));
  return validate(d);
 }
@@ -414,7 +424,7 @@ test('weekly speech brief: no daily claim needed, shown as 官方發言 and 演�
 // Taiwan area (manager decision 2026-10-17): Taiwan items, comparison rows and a note citing both sides.
 const twItem={...brief,claim_id:'T1',region:'tw',weekly_section:'taiwan',weekly_source_claim:'D20261012-02',source_url:'https://example.org/tw',evidence_source_url:'https://example.org/tw',claim_text:'合成案例：臺灣中央機關公告'};
 const twCompare={...background,claim_id:'C1',region:'tw',weekly_section:'tw_compare',related_claim_ids:['W1'],source_url:'https://example.org/twdoc',evidence_source_url:'https://example.org/twdoc',claim_text:'合成案例：臺灣對照文件'};
-const twNote={...overview,claim_id:'N1',region:'tw',weekly_section:'tw_note',supporting_claim_ids:['W1','C1'],claim_text:'合成案例：本期國際一則談教師培訓；臺灣對應文件列有教師面向'};
+const twNote={...overview,claim_id:'N1',region:'tw',weekly_section:'tw_note',supporting_claim_ids:['W1','C1'],claim_text:'合成案例：本期國際一則談教師培訓；臺灣文件列有教師面向'};
 test('weekly Taiwan area: renders after the international sections and passes',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
  const claims=[featured,{...brief,taiwan_sample:true},twItem,twCompare,twNote];
@@ -431,7 +441,13 @@ test('weekly Taiwan area: region, citation and wording rules are enforced',t=>{
   'international item in Taiwan section':[[featured,brief,{...twItem,region:undefined}],'region tw belongs exactly'],
   'Taiwan item outside period':[[featured,brief,{...twItem,first_disclosed_on:'2026-10-20'}],'within the period'],
   'Taiwan item without daily claim':[[featured,brief,{...twItem,weekly_source_claim:undefined}],'daily source claim'],
-  'comparison after period':[[featured,brief,{...twCompare,first_disclosed_on:'2026-10-20'}],'by the end of the period'],
+  'comparison inside period':[[featured,brief,{...twCompare,first_disclosed_on:'2026-10-14'}],'before the period'],
+  'Taiwan item pointing at international daily':[[featured,brief,{...twItem,weekly_source_claim:'D20261012-01'}],'daily region differ'],
+  'brief pointing at unknown daily':[[featured,{...brief,weekly_source_claim:'D20991231-99'}],'not a registered daily claim'],
+  'note advice pattern':[[featured,brief,twCompare,{...twNote,claim_text:'合成案例：教育部應參考英格蘭做法'}],'evaluation, outcome or advice'],
+  'note comparison word':[[featured,brief,twCompare,{...twNote,claim_text:'合成案例：臺灣框架較為薄弱'}],'evaluation, outcome or advice'],
+  'note variant character':[[featured,brief,twCompare,{...twNote,claim_text:'合成案例：臺灣値得一看'}],'evaluation, outcome or advice'],
+  'not searched with Taiwan items':[[featured,brief,twItem],'taiwan_not_searched contradicts',{taiwan_not_searched:true}],
   'comparison to Taiwan item':[[featured,brief,twItem,{...twCompare,related_claim_ids:['T1']}],'international featured or brief'],
   'note without Taiwan side':[[featured,brief,twCompare,{...twNote,supporting_claim_ids:['W1','W2']}],'one Taiwan item'],
   'note without international side':[[featured,brief,twItem,twCompare,{...twNote,supporting_claim_ids:['T1','C1']}],'one international item'],
@@ -441,10 +457,18 @@ test('weekly Taiwan area: region, citation and wording rules are enforced',t=>{
   'taiwan_sample on Taiwan item':[[featured,brief,{...twItem,taiwan_sample:true}],'taiwan_sample marks'],
   'bad region value':[[{...featured,region:'cn'},brief],'region must be intl or tw'],
  };
- for(const [name,[claims,reason]] of Object.entries(cases)){
+ for(const [name,[claims,reason,extra]] of Object.entries(cases)){
   const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
-  const r=weeklyFull(d,claims);assert.equal(r.ok,false,name);assert.ok(r.errors.some(e=>e.includes(reason)),name+': '+r.errors.join(' | '));
+  const r=weeklyFull(d,claims,undefined,extra||{});assert.equal(r.ok,false,name);assert.ok(r.errors.some(e=>e.includes(reason)),name+': '+r.errors.join(' | '));
  }
+});
+test('Taiwan items cannot dodge the sectioned layout: flat weekly with a Taiwan claim and bare sectioned daily are refused',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ issue(d,[{...claim,region:'tw'}]);updateHtml(d,'<html><main><p data-claim-id="C1">合成案例：某機構公告</p></main></html>');
+ const r=validate(d);assert.equal(r.ok,false);assert.ok(r.errors.some(e=>e.includes('Taiwan area required')),r.errors.join(' | '));
+ const d2=setup();t.after(()=>fs.rmSync(d2,{recursive:true,force:true}));
+ const c={...dailyLow,region:'tw'};dailyFixture(d2,c);
+ const r2=validate(d2);assert.equal(r2.ok,false);assert.ok(r2.errors.some(e=>e.includes('sectioned daily page must be the full renderer page')),r2.errors.join(' | '));
 });
 test('weekly additions: overview, background and period rules are enforced',t=>{
  const cases={

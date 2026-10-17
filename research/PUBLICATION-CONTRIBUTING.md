@@ -6,7 +6,7 @@
 
 - 恰好一個 HTML namespace 的 main，直接位於 body；main 可不帶屬性，或只用 `id="content"`、`class="content"`。
 - 有文字的 p、h1–h4、li、blockquote、figcaption、td、th 必須用 `data-claim-id` 綁定已核准 claim，文字一致且每項主張只出現一次。其他正文文字不能獨立逸出綁定元素。
-- main 內元素屬性只允許 `data-claim-id`、`href`、`datetime`、`colspan`、`rowspan`、`scope`；另有限定用途：p 的 `data-claim-tags`／`data-claim-kind`（每日短訊）、與 `data-claim-kind` 同用的 `data-kind`，td 的 `data-kind`（policy／research／background）、tr 的 `id="item-N"`（分段週報，含 item-bN／tN／cN）、h2／section 的 `data-region`（intl／tw）。2026-10-18 起的每日頁與含臺灣項目的每日頁分「國際」「臺灣」兩段，整頁須等於 renderer 輸出。`title` tooltip 禁止，即使文字與正文相同也不例外。
+- main 內元素屬性只允許 `data-claim-id`、`href`、`datetime`、`colspan`、`rowspan`、`scope`；另有限定用途：p 的 `data-claim-tags`／`data-claim-kind`（每日短訊）、與 `data-claim-kind` 同用的 `data-kind`，td 的 `data-kind`（policy／research／background／tw）、section 的 `data-part="overview"`（週報導讀）、tr 的 `id="item-N"`（分段週報，含 item-bN／tN／cN）、h2／section 的 `data-region`（intl／tw）。2026-10-18 起的每日頁與含臺灣項目的每日頁分「國際」「臺灣」兩段，整頁須等於 renderer 輸出。`title` tooltip 禁止，即使文字與正文相同也不例外。
 - 最小頁面的 body 只能包含 main 和格式空白。head 可省略 title；若提供，必須是由路徑產生的固定中性標題，例如 `週報 2026-10-09_10-15｜K-12 AI 素養國際動態`、`月報 2026-10｜K-12 AI 素養國際動態`、`每日短訊 2026-10-10｜K-12 AI 素養國際動態`。
 - 日報完整頁面由 `renderDailyEdition` 產生；正文外 DOM 必須符合 renderer 的固定版面，包括標題、日期、警語、導覽、頁尾與 stylesheet 雜湊。CSS 修改後應重跑 `node research/render-site.js --write` 並檢查差異。
 
@@ -26,7 +26,7 @@
 
 - 期別格式：週報 `weekly/YYYY-MM-DD_MM-DD/`（含首尾 1–10 天，可跨年），月報 `monthly/YYYY-MM/`。
 - 正文外（頁首、導覽、說明框、頁尾、跳至正文連結）固定，只隨期別變動；出版閘門以同一 renderer 產生的空白外框逐節點比對，任何正文外改動都會被擋。
-- 未帶 `weekly_section` 的週報 `<main>` 內只有逐則 claim 段落。任一 claim 帶 `weekly_section` 的週報為分段週報：`<main>` 由 renderer 依 claims 產生（本週導讀／本週精選／本週其他短訊／背景補充、表頭、類型與來源類型、首次公開、標籤、中文譯名、依據／相關編號、本期概況、上一期／下一期），閘門重產整頁逐節點比對（同月報），規則見主控 SOP「週報版型」與「週報增補」。
+- 未帶 `weekly_section` 的週報 `<main>` 內只有逐則 claim 段落。任一 claim 帶 `weekly_section` 的週報為分段週報：`<main>` 由 renderer 依 claims 產生（本週導讀／本週精選／本週其他短訊／背景補充、表頭、類型與來源類型、首次公開、標籤、中文譯名、依據／相關編號、本期概況、上一期／下一期，以及臺灣區：分隔線、臺灣標題與說明、對照說明／臺灣本週動態／臺灣對照、「臺 n」「對照 n」編號、「本期國際項目中以臺灣為樣本者」、未查臺灣來源固定說明），閘門重產整頁逐節點比對（同月報）；`issues.json` 的 `revised_on` 或 `taiwan_not_searched` 也觸發整頁比對，規則見主控 SOP「週報版型」與「週報增補」。
 - 月報 `<main>` 分為四區：政策動態、研究動態、本刊追蹤學者本月新作、學者觀點動向。分區標題、段首說明、「本刊分析」「依據來源」小標與「本期無合格項目。」是 renderer 內的固定文字（`MONTHLY_SECTIONS`），修改須走程式審查。閘門以 claims 重新產生整頁、連 `<main>` 內一起逐節點比對，只有在整頁相符時才承認這些固定文字；最小頁面不適用。
 - 月報每則 claim 必須有 `section`（`policy`、`research`、`scholars`、`trends`）；`scholars` 須有 `research_group`。趨勢歸納寫成 `assertion_type: "editorial_analysis"`、`claim_class: "descriptive"` 的 claim，只能放 `trends`，並以 `supporting_claim_ids` 列出同期至少兩則其他非歸納 claim，且來自至少兩個不同 `research_group`。閘門只檢查結構，不判斷趨勢是否成立。
 - 研習、座談、課程等活動公告只進每日短訊與週報，不進月報（管理者 2026-10-10 決定）；月報沒有活動分區，不要把活動放進政策動態。`research_group` 預設為學者代碼，見 [scholar-watchlist.md](scholar-watchlist.md) 第 0 節。

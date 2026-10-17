@@ -61,6 +61,10 @@ function registeredShell(document,main,issueDate,issuePath,claims,issue={}){
  }
  const bare=body&&children(body).every(n=>n===main||(n.nodeName==="#text"&&!normalized(n.value)));
  if(bare){
+  // Sectioned daily and weekly pages exist only as full renderer pages; a bare body would skip their layout checks.
+  {const r=require("./render-site.js"),[ch,per]=issuePath.split("/");
+   if(issueDate&&r.dailySectioned({date:issueDate,claims}))errors.push("sectioned daily page must be the full renderer page");
+   if(ch==="weekly"&&(r.weeklySectioned(claims)||issue.revised_on!==undefined||issue.taiwan_not_searched!==undefined||(r.periodRange("weekly",per)&&String(per)>=r.TW_FROM_PERIOD)))errors.push("sectioned weekly page must be the full renderer page");}
   for(const node of nodes.filter(n=>["html","body"].includes(n.tagName))){
    if((node.attrs||[]).some(a=>node.tagName!=="html"||a.name!=="lang"))errors.push("bare report html/body attributes unsupported");
   }
@@ -195,9 +199,15 @@ function dailySourceLink(document,c){
 }
 /* Sectioned weekly claims: every claim names a known section; at most five featured items, each marked as
    checked against the full text; every other item names the daily claim it repeats. Structural only. */
-function weeklyStructure(claims,period){
+function weeklyStructure(claims,period,ctx={}){
  const errors=[],r=require("./render-site.js"),keys=[...r.WEEKLY_SECTIONS,...r.TW_SECTIONS].map(x=>x[0]),list=claims.filter(c=>c&&typeof c==="object");
- if(!r.weeklySectioned(list))return errors;
+ // From the 2026-10-16 period, and whenever a Taiwan item is present, a weekly must use the sectioned layout.
+ if(!r.weeklySectioned(list)){
+  if((r.periodRange("weekly",period)&&String(period)>=r.TW_FROM_PERIOD)||list.some(c=>c.region==="tw"))errors.push("weekly from "+r.TW_FROM_PERIOD+" or with Taiwan items must use weekly_section (Taiwan area required)");
+  return errors;
+ }
+ const issue=ctx.issue||{},daily=ctx.dailyClaims;
+ if(issue.taiwan_not_searched===true&&list.some(c=>c.weekly_section==="taiwan"))errors.push("taiwan_not_searched contradicts Taiwan items in this issue");
  const range=r.periodRange("weekly",period)||{},byId=new Map(list.map(c=>[c.claim_id,c]));
  const inIssue=id=>{const c=byId.get(id);return !!c&&["featured","briefs"].includes(c.weekly_section)};
  const inTw=id=>{const c=byId.get(id);return !!c&&["taiwan","tw_compare"].includes(c.weekly_section)};
@@ -208,7 +218,13 @@ function weeklyStructure(claims,period){
   // Every value the renderer prints outside claim_text must be a checked shape, not free text.
   if(!isoDate(c.first_disclosed_on))errors.push(id+": first_disclosed_on must be a real YYYY-MM-DD date");
   for(const f of ["claim_text","title_zh"])if(typeof c[f]==="string"&&/\p{Cf}/u.test(c[f]))errors.push(id+": "+f+" contains invisible format characters");
-  if(["featured","briefs","background"].includes(sec)){
+  // A weekly item that repeats a daily item must point at a registered daily claim of the same region.
+  if(daily&&typeof c.weekly_source_claim==="string"&&["featured","briefs","taiwan"].includes(sec)){
+   const d=daily.get(c.weekly_source_claim);
+   if(!d)errors.push(id+": weekly_source_claim "+c.weekly_source_claim+" is not a registered daily claim");
+   else if((d.region==="tw")!==(sec==="taiwan"))errors.push(id+": weekly section and daily region differ for "+c.weekly_source_claim);
+  }
+  if(["featured","briefs","background","taiwan","tw_compare"].includes(sec)){
    if(c.kind==="news_policy"&&!["binding_policy","official_guidance","draft","official_commentary","training_event","speech"].includes(c.source_document_type))errors.push(id+": missing or invalid policy document type");
    if(c.kind==="research"&&!["peer_reviewed_article","preprint"].includes(c.source_document_type))errors.push(id+": missing or invalid research document type");
   }
@@ -228,7 +244,7 @@ function weeklyStructure(claims,period){
    if(!(typeof c.weekly_source_claim==="string"&&/^D\d{8}-\d{2}$/.test(c.weekly_source_claim)))errors.push(id+": Taiwan item must name its daily source claim");
   }
   if(sec==="tw_compare"){
-   if(!(typeof c.first_disclosed_on==="string"&&range.end&&c.first_disclosed_on<=range.end))errors.push(id+": Taiwan comparison document must be first disclosed by the end of the period");
+   if(!(typeof c.first_disclosed_on==="string"&&range.start&&c.first_disclosed_on<range.start))errors.push(id+": Taiwan comparison document must be first disclosed before the period (this week's Taiwan items go in 臺灣本週動態)");
    const rel=Array.isArray(c.related_claim_ids)?c.related_claim_ids:[];
    if(!rel.length||new Set(rel).size!==rel.length||!rel.every(inIssue))errors.push(id+": Taiwan comparison must relate to distinct international featured or brief items");
   }
@@ -237,8 +253,8 @@ function weeklyStructure(claims,period){
    const ids=Array.isArray(c.supporting_claim_ids)?c.supporting_claim_ids:[];
    if(new Set(ids).size!==ids.length||!ids.some(inIssue)||!ids.some(inTw)||!ids.every(x=>inIssue(x)||inTw(x)))errors.push(id+": Taiwan note must cite at least one international item and one Taiwan item of this issue");
    if(typeof c.claim_text!=="string"||c.claim_text.length>150)errors.push(id+": Taiwan note sentence must be at most 150 characters");
-   const n=String(c.claim_text).normalize("NFKC").replace(/[\p{Cf}\s]/gu,""),hits=WEEKLY_TW_NOTE_BANNED.filter(w=>n.includes(w));
-   if(hits.length)errors.push(id+": Taiwan note uses evaluation, outcome or advice words: "+hits.join("、"));
+   const n=foldText(c.claim_text),hits=WEEKLY_TW_NOTE_BANNED.filter(w=>n.includes(w));
+   if(hits.length||ADVICE_PATTERN.test(n))errors.push(id+": Taiwan note uses evaluation, outcome or advice words: "+(hits.join("、")||"advice pattern"));
   }
   if(c.title_zh!==undefined&&(typeof c.title_zh!=="string"||!c.title_zh.trim()||c.title_zh.length>200))errors.push(id+": title_zh must be a short non-empty string");
   if(sec==="featured"&&c.full_text_checked!==true)errors.push(id+": featured weekly item must be checked against the full text");
@@ -272,10 +288,15 @@ function weeklyStructure(claims,period){
 /* Overview sentences only group what this issue's items say; they may not claim outcomes, trends or advice. */
 const WEEKLY_OVERVIEW_BANNED=["成效","有效","效果","提升","提高","改善","導致","导致","因果","證明","证明","證實","证实","顯著","显著","趨勢","趋势","建議","建议","推薦","推荐","應該","应该","必須","必须","臺灣","台灣","台湾"];
 /* The Taiwan note may name 臺灣 but, like the overview, makes no outcome, evaluation or advice claim. */
-const WEEKLY_TW_NOTE_BANNED=["成效","有效","效果","提升","提高","改善","導致","导致","因果","證明","证明","證實","证实","顯著","显著","趨勢","趋势","建議","建议","推薦","推荐","應該","应该","必須","必须","落後","落后","領先","领先","不足","優於","优于","劣於","劣于","借鏡","借镜","值得"];
+/* Fold invisible characters, spaces and Japanese/variant forms before matching, so 値得 or 効果 do not slip past. */
+const VARIANTS={"値":"值","効":"效","応":"應","来":"來","参":"參","与":"與"};
+const foldText=t=>String(t).normalize("NFKC").replace(/[\p{Cf}\s]/gu,"").replace(/[値効応来参与]/g,ch=>VARIANTS[ch]);
+/* Advice aimed at Taiwan or its agencies, without blocking 對應、因應、應用. */
+const ADVICE_PATTERN=/(臺灣|台灣|台湾|我國|我国|教育部|國教署|国教署|政府).{0,12}(應該|应该|應|应|宜|需要|須|须|必須|可參考|可参考|參考|参考|仿效|效法|借鑑|借鉴|借鏡|补强|補強)/;
+const WEEKLY_TW_NOTE_BANNED=["較為","較少","較多","較低","較高","更為","更加","不如","不及","遜於","超越","優勢","劣勢","薄弱","缺乏","落差","補強","完善","仿效","效法","借鑑","借鉴","成效","有效","效果","提升","提高","改善","導致","导致","因果","證明","证明","證實","证实","顯著","显著","趨勢","趋势","建議","建议","推薦","推荐","應該","应该","必須","必须","落後","落后","領先","领先","不足","優於","优于","劣於","劣于","借鏡","借镜","值得"];
 /* A faithful title translation may say 提升 or 臺灣 (the source title can); it never speaks for the newsletter. */
 const WEEKLY_TITLE_BANNED=["本刊","建議","建议","推薦","推荐","應該","应该","必須","必须","呼籲","呼吁"];
-const bannedIn=t=>{const n=String(t).normalize("NFKC").replace(/[\p{Cf}\s]/gu,"");return WEEKLY_OVERVIEW_BANNED.filter(w=>n.includes(w))};
+const bannedIn=t=>{const n=foldText(t);return WEEKLY_OVERVIEW_BANNED.filter(w=>n.includes(w)).concat(ADVICE_PATTERN.test(n)?["advice pattern"]:[])};
 const isoDate=d=>typeof d==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(d)&&Number.isFinite(Date.parse(d+"T00:00:00Z"))&&new Date(d+"T00:00:00Z").toISOString().slice(0,10)===d;
 /* Monthly claims: every claim names a known section; scholar items name their research group; an editorial
    analysis sits only under trends, stays descriptive (no human review) and rests on at least two other claims
@@ -360,6 +381,12 @@ function validate(root){
  const editions=Array.isArray(manifest.editions)?manifest.editions:[];
  const publicFiles=inventory(root,manifest);errors.push(...publicFiles.errors);
  const encountered=new Set(),weeklyPeriods=editions.map(e=>e&&typeof e.path==="string"&&!LEGACY.has(e.path)&&(/^weekly\/([a-zA-Z0-9_-]+)\/index\.html$/.exec(e.path)||[])[1]).filter(Boolean);
+ // Registered daily claims by id, so weekly items can be checked against the daily item they repeat.
+ let dailyMap=null;
+ const dailyClaims=()=>{if(dailyMap)return dailyMap;dailyMap=new Map();
+  for(const e of editions){if(!e||typeof e.claims_file!=="string"||!/^daily\//.test(String(e.path)))continue;
+   try{for(const c of JSON.parse(fs.readFileSync(path.join(root,e.claims_file),"utf8")))if(c&&c.claim_id)dailyMap.set(c.claim_id,c)}catch{}}
+  return dailyMap};
  for(const issue of editions){
   if(!issue||typeof issue!=="object"){errors.push("invalid edition");continue}
   const p=issue.path,q=issue.claims_file;
@@ -384,7 +411,7 @@ function validate(root){
   errors.push(...staticHtmlSafety(dom.document,p));
   errors.push(...matchBody(dom.document,data,issueDate,p,{...issue,weeklyPeriods}).map(e=>p+": "+e));
   if(p.startsWith("monthly/"))errors.push(...monthlyStructure(data).map(e=>q+" "+e));
-  if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data,p.split("/")[1]).map(e=>q+" "+e));
+  if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data,p.split("/")[1],{dailyClaims:dailyClaims(),issue}).map(e=>q+" "+e));
   if(issue.taiwan_not_searched!==undefined&&(issue.taiwan_not_searched!==true||!p.startsWith("weekly/")))errors.push(p+": taiwan_not_searched must be true on a weekly edition");
   if(issue.revised_on!==undefined&&(!p.startsWith("weekly/")||typeof issue.revised_on!=="string"||!/^\d{4}-\d{2}-\d{2}$/.test(issue.revised_on)||!Number.isFinite(Date.parse(issue.revised_on+"T00:00:00Z"))||new Date(issue.revised_on+"T00:00:00Z").toISOString().slice(0,10)!==issue.revised_on))errors.push(p+": revised_on must be a real ISO date on a weekly edition");
   const claimIds=new Set();
