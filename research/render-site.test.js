@@ -209,7 +209,9 @@ test("daily list and edition page show audience, A/B and framework tags",()=>{
  assert.equal(dailyTags(c),'<div class="tags3"><span class="t">#中小學</span> <span class="t">#AI素養核心</span> <span class="t">#學生AI基礎與技術</span> <span class="t">#學生AI系統設計</span></div>');
  assert.equal(dailyTags({}),"");
  const page=renderDailyEdition({date:"2099-01-01",claims:[c]});
- assert.ok(page.includes('</p><p data-claim-tags="D20990101-01">#中小學 #AI素養核心 #學生AI基礎與技術 #學生AI系統設計</p>'));
+ assert.ok(page.includes('</p><p data-claim-tags="D20990101-01"><span>#中小學</span> <span>#AI素養核心</span> <span>#學生AI基礎與技術</span> <span>#學生AI系統設計</span></p>'));
+ assert.ok(page.includes('<article><p data-claim-kind="D20990101-01" data-kind="policy">短訊</p><p data-claim-id="D20990101-01">'));
+ assert.ok(renderDailyEdition({date:"2099-01-01",claims:[{...c,daily_fact_kind:"research_abstract_attributed_summary"}]}).includes('<p data-claim-kind="D20990101-01" data-kind="research">研究摘要</p>'));
  assert.ok(!renderDailyEdition({date:"2099-01-01",claims:[{...c,audience:undefined,ai_lit_class:undefined,ai_lit_dims:undefined}]}).includes("data-claim-tags"));
 });
 
