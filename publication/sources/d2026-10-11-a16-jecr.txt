@@ -2,3 +2,5 @@ Journal of Educational Computing Research (SAGE) | 2026-10-10 | Socratic, Artifa
 First published online October 10, 2026
 Abstract excerpt (selected abstract sentences in original order, joined by " … "):
 This clustered quasi-experiment evaluated TALPer, a generative-AI tutor providing student-initiated, artifact-contingent Socratic prompts during a six-lesson 6E unit. … Ten intact Grade 3 classes in Taiwan (N = 229) completed the same curriculum, tasks, teacher, platform, and instructional time. … Findings provide preliminary evidence concerning the bundled intervention but do not isolate component contributions.
+Self-review addition (Crossref abstract, read 2026-10-17; supports 「比較運算思維與內在動機」, results not quoted in claims):
+A two-level model controlling for pretest CT estimated an adjusted posttest difference … Class-clustered analyses found no Holm-adjusted difference on any Intrinsic Motivation Inventory subscale

@@ -56,6 +56,8 @@ test("homepage weekly card follows the newest registered weekly",()=>{
  const two=card([w("2026-10-09_10-15",14),w("2026-10-16_10-22",3)]);
  assert.match(two,/最新週報：2026\/10\/16—10\/22/);assert.match(two,/3 則/);assert.match(two,/下一期預定 10 月 30 日（涵蓋 10\/23—10\/29）/);
  assert.ok(two.includes('href="./weekly/2026-10-16_10-22/"'));
+ const sectioned=[{weekly_section:"overview"},{weekly_section:"featured"},{weekly_section:"briefs"},{weekly_section:"briefs"},{weekly_section:"background"}];
+ assert.match(card([{path:"weekly/2026-10-16_10-22/index.html",claims:sectioned}]),/>3 則，/,"overview and background are not counted as items");
 });
 
 test("homepage monthly card follows the newest registered monthly",()=>{

@@ -6,6 +6,8 @@
 
 ## 0. 新 Session 先讀這一段
 
+> **2026-10-17 更新**：首期週報 10/09–10/15 已刊（#302），同日改為分段週報（#305 精選／其他短訊、#307 表格與色標、#308 導讀／背景／中文譯名／分欄／來源類型／概況／上下期）。週報排程 trig_01U8VY1x9xaJnREowotZ1Vav（每週五 09:27）、月報排程 trig_01TVhWSKenCSxsL9Pq8sVgZy（每月 29 日 09:47），皆先交出刊前檢查、管理者回覆「合併」才刊出。政策來源擴充試行至 10/23（[policy-monitoring-sources.md](policy-monitoring-sources.md)）。下方 2026-10-11 狀態為歷史紀錄。
+
 **要繼續的任務**：以最少人力、可追溯的原始證據，製作並公開 K–12 AI 素養國際週報／月報；第一期標準週報涵蓋 **2026/10/09–10/15**，預定 **10/16** 出刊。網站：[GitHub Pages](https://jhchenmooc.github.io/k12-ai-literacy-report/)；儲存庫：[jhchenmooc/k12-ai-literacy-report](https://github.com/jhchenmooc/k12-ai-literacy-report)。
 
 **目前狀態（2026-10-11 晚）**：`publication/issues.json` 已登錄每日短訊 `daily/2026-10-11`；第一期正式週報尚未製作及登錄；本週候選（`research/drafts/2026-10-09_2026-10-15.json`）16 項中 3 項 publish、13 項 hold，不能宣稱已經獲獨立來源認證。趨勢線：四年合併報告為內部草稿，只放私人 repo `jhchenmooc/k12-ai-literacy-report-restricted`（方案第 10 節第 32 項；公開 repo 只留說明），D5 人工驗證暫無法執行（方案 §10 第 25 項）。新版 CI 能檢查結構，**不能自動證明來源真實**。
@@ -547,7 +549,7 @@ J18 online2024年不能因2026卷期改首發；J19 online2025-10-30而issue2026
 
 **出版 gate 與網站（程式強制；只加嚴或等強度推廣）**
 - **#156 多角度稽核補強**：正文外版面、SVG／MathML、metadata、favicon、stylesheet 都收緊；新增 [PUBLICATION-CONTRIBUTING.md](PUBLICATION-CONTRIBUTING.md)。main 從此依賴 parse5，跑測試前先 `npm ci --ignore-scripts --no-audit --no-fund`。稽核紀錄見 `research/audits/2026-10-10/`。
-- **#161 週／月報 renderer**：`renderWeeklyEdition`、`renderMonthlyEdition` 與 `periodRange`。期別格式為週報 `weekly/YYYY-MM-DD_MM-DD/`（含首尾 1–10 天，可跨年）、月報 `monthly/YYYY-MM/`。登錄且期別合法的週／月報頁一律由 `node research/render-site.js --write` 依 claims 產生，不手寫 HTML；閘門以同一 renderer 的空白外框逐節點比對正文外。週報 `<main>` 內只有逐則 claim 段落，不放分區小標題。
+- **#161 週／月報 renderer**：`renderWeeklyEdition`、`renderMonthlyEdition` 與 `periodRange`。期別格式為週報 `weekly/YYYY-MM-DD_MM-DD/`（含首尾 1–10 天，可跨年）、月報 `monthly/YYYY-MM/`。登錄且期別合法的週／月報頁一律由 `node research/render-site.js --write` 依 claims 產生，不手寫 HTML；閘門以同一 renderer 的空白外框逐節點比對正文外。週報 `<main>` 內只有逐則 claim 段落，不放分區小標題（已由 2026-10-17 分段週報取代，見文末 2026-10-17 段）。
 - **#165 月報分區（方案甲）**：月報 `<main>` 分政策動態、研究動態、本刊追蹤學者本月新作、學者觀點動向；分區標題、段首說明等為 renderer 固定文字，閘門以 claims 重產整頁（含 `<main>`）比對。月報 claim 必須有 `section`；`scholars` 須有 `research_group`；趨勢歸納為 `editorial_analysis`／`descriptive`，只放 `trends`，以 `supporting_claim_ids` 綁定同期至少兩則、至少兩個研究群的 claim。
 - **#162**：`render-site.js` 國際組織對照表加入 O-EU-COUNCIL。之後新增國際組織代碼要同步加入，否則政策清單會以代碼另列一組。
 
