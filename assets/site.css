@@ -276,3 +276,4 @@ p[data-claim-kind][id]:target{outline:3px solid #ffb629;outline-offset:2px}
  td[data-col="date"]::before{content:"首次公開"}td[data-col="audience"]::before{content:"對象"}td[data-col="tags"]::before{content:"標籤"}
 }
 @media print{article a[href^="http"]::after{content:" <" attr(href) ">";font-size:11px;color:#555;word-break:break-all}}
+.hero .subtitle{font-size:clamp(21px,2.6vw,28px);line-height:1.4;font-weight:700;color:#fff;margin:-6px 0 18px}
