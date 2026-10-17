@@ -87,7 +87,8 @@ function claimParagraph(c,withId){
  const body=title&&text.includes(title)?text.replace(title,link):'<a href="'+esc(c.source_url)+'">'+text+"</a>";
  return "<p"+(withId?' data-claim-id="'+esc(c.claim_id)+'"':"")+">"+body+"</p>";
 }
-function kindBadge(c){const [cls,label]=DAILY_KIND[c.daily_fact_kind]||["policy","短訊"];return '<span class="kind '+cls+'">'+label+"</span>"}
+const dailyKind=c=>DAILY_KIND[c.daily_fact_kind]||["policy","短訊"];
+function kindBadge(c){const [cls,label]=dailyKind(c);return '<span class="kind '+cls+'">'+label+"</span>"}
 /* Tag line on the daily list and homepage; the edition page carries the same text as a gate-checked
    data-claim-tags paragraph right after its claim (validate-publication.js). */
 function dailyTags(c){
@@ -103,7 +104,10 @@ function dailyCard(d,depth){
 }
 function renderDailyEdition(e){
  const head='<div class="kicker">每日短訊</div><h1>'+e.date+' 每日短訊</h1><div class="notice"><p>只記錄「誰在哪天發布了什麼」或來源原文的歸屬摘要；由 AI 整理、未經逐則真人審稿，不含解讀、成效判斷或對臺灣的建議。請點連結閱讀原文。</p></div>';
- const main="<article>"+e.claims.map(c=>claimParagraph(c,true)+(dailyTagText(c)?'<p data-claim-tags="'+esc(c.claim_id)+'">'+esc(dailyTagText(c))+"</p>":"")).join("")+"</article>";
+ const main="<article>"+e.claims.map(c=>{
+  const [cls,label]=dailyKind(c),tags=dailyTagList(c);
+  return '<p data-claim-kind="'+esc(c.claim_id)+'" data-kind="'+cls+'">'+label+"</p>"+claimParagraph(c,true)+(tags.length?'<p data-claim-tags="'+esc(c.claim_id)+'">'+tags.map(t=>"<span>#"+esc(t)+"</span>").join(" ")+"</p>":"");
+ }).join("")+"</article>";
  return shell({depth:2,current:"daily",title:e.date+" 每日短訊",description:"K-12 AI 素養每日短訊："+e.date,head,main});
 }
 function renderDailyIndex(days){
@@ -384,4 +388,4 @@ function main(){
  console.log(write?"site pages written":"site pages consistent",Object.keys(files).length);
 }
 if(require.main===module)try{main()}catch(e){console.error(e.message);process.exitCode=1}
-module.exports={build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};
+module.exports={dailyKind,build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};
