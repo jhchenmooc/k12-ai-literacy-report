@@ -109,13 +109,16 @@ function dailyCard(d,depth){
    this render of their claims (validate-publication.js). */
 const DAILY_REGION_FROM="2026-10-18",REGIONS=[["intl","國際"],["tw","臺灣"]],REGION_EMPTY="今日無合格項目。";
 const isTw=c=>c&&c.region==="tw";
-const dailySectioned=e=>e.date>=DAILY_REGION_FROM||e.claims.some(isTw);
+/* Earlier pages searched later for Taiwan sources carry tw_backfilled_on in issues.json (manager 2026-10-17):
+   they switch to the two sections and show a fixed backfill note. */
+const dailySectioned=e=>e.date>=DAILY_REGION_FROM||e.claims.some(isTw)||e.tw_backfilled_on!==undefined;
+const dailyBackfillText=d=>"本頁臺灣段為 "+d+" 補查臺灣中央來源後補登，當日原未查臺灣來源。";
 function dailyItem(c){
  const [cls,label]=dailyKind(c),tags=dailyTagList(c);
  return '<p data-claim-kind="'+esc(c.claim_id)+'" data-kind="'+cls+'">'+label+"</p>"+claimParagraph(c,true)+(tags.length?'<p data-claim-tags="'+esc(c.claim_id)+'">'+tags.map(t=>"<span>#"+esc(t)+"</span>").join(" ")+"</p>":"");
 }
 function renderDailyEdition(e){
- const head='<div class="kicker">每日短訊</div><h1>'+e.date+' 每日短訊</h1><div class="notice"><p>只記錄「誰在哪天發布了什麼」或來源原文的歸屬摘要；由 AI 整理、未經逐則真人審稿，不含解讀、成效判斷或對臺灣的建議。請點連結閱讀原文。</p></div>';
+ const head='<div class="kicker">每日短訊</div><h1>'+e.date+' 每日短訊</h1><div class="notice"><p>只記錄「誰在哪天發布了什麼」或來源原文的歸屬摘要；由 AI 整理、未經逐則真人審稿，不含解讀、成效判斷或對臺灣的建議。請點連結閱讀原文。</p>'+(e.tw_backfilled_on?"<p>"+dailyBackfillText(e.tw_backfilled_on)+"</p>":"")+'</div>';
  const body=dailySectioned(e)?REGIONS.map(([r,label])=>{const items=e.claims.filter(c=>(isTw(c)?"tw":"intl")===r);
   return '<section><h2 data-region="'+r+'">'+label+"</h2>"+(items.length?items.map(dailyItem).join(""):"<p>"+REGION_EMPTY+"</p>")+"</section>";}).join(""):e.claims.map(dailyItem).join("");
  const main="<article>"+body+"</article>";
@@ -512,4 +515,4 @@ function main(){
  console.log(write?"site pages written":"site pages consistent",Object.keys(files).length);
 }
 if(require.main===module)try{main()}catch(e){console.error(e.message);process.exitCode=1}
-module.exports={TW_FROM_PERIOD,TW_SECTIONS,WEEKLY_TW_NOTE_MAX,WEEKLY_TW_COMPARE_MAX,dailySectioned,WEEKLY_OVERVIEW_MAX,WEEKLY_BACKGROUND_MAX,weeklyNav,dailyKind,WEEKLY_SECTIONS,WEEKLY_FEATURED_MAX,weeklyRevisionText,weeklySectioned,build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};
+module.exports={DAILY_REGION_FROM,dailyBackfillText,TW_FROM_PERIOD,TW_SECTIONS,WEEKLY_TW_NOTE_MAX,WEEKLY_TW_COMPARE_MAX,dailySectioned,WEEKLY_OVERVIEW_MAX,WEEKLY_BACKGROUND_MAX,weeklyNav,dailyKind,WEEKLY_SECTIONS,WEEKLY_FEATURED_MAX,weeklyRevisionText,weeklySectioned,build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};
