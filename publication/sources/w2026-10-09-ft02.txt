@@ -1,0 +1,9 @@
+中華人民共和國教育部 | 2026-10-14 | 国家智慧教育平台教师发展中心升级 实现四大转向 开设AI素养专区 | https://www.moe.gov.cn/jyb_xwfb/s5147/202610/t20261014_1454119.html | Full article text read 2026-10-17T02:25Z via plain curl of the http redirect target (http://www.moe.gov.cn/jyb_xwfb/s5147/202610/t20261014_1454119.html, HTTP 200; the https request at 02:25:08Z was reset by peer); reprint of 《中国教育报》, reporter 郑翅, 责任编辑 杨冉
+Page date/source line: 2026-10-14　来源：《中国教育报》; PubDate meta 2026-10-14 08:19
+Lead excerpt (paragraph 1):
+近日，国家智慧教育平台教师发展中心全新升级上线。
+Four shifts excerpt (paragraph 2):
+升级后教师发展中心实现四大转向：一是从管理视角转向教师视角，按教师发展需要重组页面逻辑，提供多元资源、集成服务、个性支撑，实现所见即所需、一点即所得。 … 二是从大海捞针转向精准推荐，汇集教师个人信息、学习培训、业务发展等线上线下、职前职后全方位数据，构建教师发展“电子档案袋”； … 优化AI智能推荐算法，精准匹配教师特点、兴趣与需求 … 三是从分散应用转向全栈赋能，将AI推荐、AI应用、AI协同贯穿于教师备课、课堂教学、学业评价、学情分析、研修提升的全链条、多场景。 … 四是从个人使用转向群体共创，升级名师工作室、上线共创教研室，打造教师数智成长的社群生态。
+AI literacy zone excerpt (paragraph 3):
+新版教师中心还开设了AI素养专区，集成人工智能学习资源、智能工具和研修社群，为教师自主学习和全覆盖培训提供平台支撑。
+Not stated in source: exact launch date (only "近日"), user numbers, number of resources/courses in the AI素养专区, any outcome data. Article body has 3 paragraphs only.

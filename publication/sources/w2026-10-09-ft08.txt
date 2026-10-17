@@ -1,0 +1,24 @@
+Eurasia Journal of Mathematics, Science and Technology Education (Modestum) | 2026-10-11 | Teachers’ perceptions of ChatGPT support across TPACK domains: A cross-sectional survey in UAE schools | https://www.ejmste.com/article/teachers-perceptions-of-chatgpt-support-across-tpack-domains-a-cross-sectional-survey-in-uae-schools-19564 | Read publisher article page and full-text PDF (21 pp., EURASIA J Math Sci Tech Ed 2026, 22(11), em2948; https://www.ejmste.com/download/teachers-perceptions-of-chatgpt-support-across-tpack-domains-a-cross-sectional-survey-in-uae-schools-19564.pdf) via plain curl + pdftotext, 2026-10-17T02:26Z UTC
+
+Design excerpt (Research Methodology > Research Design, p. 6):
+Because the design captures self-reported perceptions at a single point in time, it does not permit causal conclusions about ChatGPT’s effects or changes in teachers’ TPACK competence.
+
+Sample excerpt (Participants and Sample, p. 6):
+Participants were 109 in-service teachers enrolled in a postgraduate diploma in teaching program at a higher education institution in the UAE during the second semester of the 2024-2025 academic year. … Purposive sampling was employed, with the primary inclusion criterion being active and demonstrated experience using ChatGPT for professional teaching activities.
+
+Instrument excerpt (Research Instrument, p. 6):
+The instrument was designed to measure perceived support and perceived contribution in TPACK-related practices rather than teachers’ actual TPACK competence. … All items were measured using a five-point Likert scale ranging from 1 (not at all) to 5 (all the time).
+
+Demographics excerpt (Findings and Results > Participants’ Demographic Data, p. 7):
+In terms of level of teaching, it was found that most participants taught at the secondary level (37.6%), while a smaller number taught at the primary (31.2%) and intermediate (21.1%) levels. In terms of school types, it was found that most participants were from private schools (93.6%), while a smaller number were from public schools (6.4%), as shown in Table 1.
+
+Results excerpt (Main RQ, Table 17, pp. 14-15):
+Table 17 revealed that the mean scores ranged from 3.25 to 3.51. … CK received the highest perceived support (M = 3.51), particularly for lesson planning, curriculum alignment, and instructional content preparation, whereas TK received the lowest (M = 3.25).
+
+Conclusion excerpt (Conclusion, pp. 18-19):
+The absence of statistically significant demographic differences indicates that statistically significant group differences were not detected in this sample; it does not establish equivalence among the demographic groups.
+
+Limitations excerpt (Limitations, p. 18):
+Firstly, the sample was predominantly drawn from private schools (93.6%) in the UAE. Therefore, the findings should be interpreted with caution and may not be generalizable to teachers working in public schools or in other educational contexts and countries. … Consequently, the findings reflect teachers’ perceived use and perceived support of ChatGPT rather than their actual classroom practices, and they may be affected by response biases such as social desirability or self-perception bias. … Thirdly, the cross-sectional research design captured teachers’ perceptions at a single point in time and therefore does not permit conclusions about causal relationships, effects of ChatGPT, or changes in TPACK competence over time.
+Second-round addition (verbatim, Research Instrument p. 6):
+consisted of 56 items addressing teachers’ perceptions of ChatGPT support across seven TPACK domains
