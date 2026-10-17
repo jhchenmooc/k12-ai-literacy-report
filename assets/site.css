@@ -261,3 +261,11 @@ article section>table td[data-col="tags"]{width:9em;font-size:13px;color:var(--n
  #sec-intl table td[data-col]:not([data-col="content"])::before,#sec-tw table td[data-col]:not([data-col="content"])::before{font-weight:700;color:var(--muted);margin-right:.3em}
  td[data-col="kind"]::before{content:"類型"}td[data-col="date"]::before{content:"首次公開"}td[data-col="audience"]::before{content:"對象"}td[data-col="tags"]::before{content:"標籤"}
 }
+/* Weekly items repeated from a daily brief: one line each (C1); daily "已收入" links (C2); list pages show titles (C8). */
+article section>ul:not(#sec-toc ul){padding-left:1.2em;font-size:15px;line-height:1.7;margin:8px 0 24px}
+article section>ul>li[id^="item-"]{margin:6px 0;scroll-margin-top:16px}
+article section>ul>li[id^="item-"]:target{background:#fff4d6}
+p[data-claim-links]{font-size:13px;color:var(--muted);margin:-2px 0 18px}
+p[data-claim-kind][id]{scroll-margin-top:16px}
+p[data-claim-kind][id]:target{outline:3px solid #ffb629;outline-offset:2px}
+.brief-items li>p>a{font-weight:700}

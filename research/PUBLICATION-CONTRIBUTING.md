@@ -43,3 +43,12 @@
 ## 驗證與提交
 
 使用 Node 22，先 `npm ci --ignore-scripts --no-audit --no-fund`，再依 [local-validation.md](local-validation.md) 執行現行的測試與驗證命令（與 CI 的 verify 工作相同；趨勢語料的離線 Python 測試見 `research/trend-corpus/README.md`「重算」）。`research/audits/2026-10-10/verify-review.cjs` 是 2026-10-10 稽核的封存回放工具，會比對當時固定的資料基準，只能在稽核合併當時的 commit 回放，例如 `git worktree add <暫存目錄> 6cd79e3aa10cd13530181cbabb53a235a56c8e08` 後在該目錄安裝套件並執行（2026-10-12 已確認可通過；背景見 [audits/2026-10-10/README.md](audits/2026-10-10/README.md)）；資料更新後的 main 上執行會失敗，不作為現行驗證。使用隔離的合成 fixture 重現反例，不修改原始來源、候選決策或 legacy 刊物。建立 PR 後仍須等遠端 CI 通過；本機通過不等同遠端 CI、部署或來源真實性已驗證。
+
+## 三刊對齊（管理者 2026-10-17）
+
+- 週報其他短訊與臺灣本週動態中帶 `weekly_source_claim`（每日短訊編號）者，頁面一行一則，`claim_text` 須與該則每日短訊相同，不在頁面重刊；官方演講等沒有每日短訊者仍以表格列全文。
+- 每日頁由程式在每則下方列「已收入：週報…第 n 則、月報…一覽 n」（`data-claim-links`），並在類型標籤上加錨點 `id=<claim_id>`；閘門以登記的週報與月報重算比對。
+- 每日頁可帶 `revised_on`（更正日，不早於頁面日期），頁面顯示更正說明，項目 `checked_at` 可為更正日。
+- 每日類型標籤為「研究／政策・來源類型」，書目型加「（僅書目）」。
+- 月報新增 `tw_policy`（臺灣本月中央文件）；年月精度只限 `policy`、`tw_policy`、`tw_research`、`tw_compare`；編輯歸納句不再要求逐句結尾揭露句（段首說明一次）。
+- 每日 PR 合併前執行 `node research/check-daily-pr-scope.js origin/main`；若改到已刊週報或月報頁，不得依權限 B 自動合併。

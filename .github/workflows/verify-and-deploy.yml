@@ -73,7 +73,7 @@ jobs:
         run: node research/validate-publication.js .
       - name: Verify generated site pages (lists, archive, about, homepage blocks)
         run: |
-          node --test research/render-site.test.js
+          node --test research/render-site.test.js research/check-daily-pr-scope.test.js
           node research/render-site.js
       - name: Verify public artifact inventory and build
         run: node research/public-site.js . --build
