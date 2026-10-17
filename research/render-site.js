@@ -161,6 +161,9 @@ const WEEKLY_FACETS=["樣本","資料","設計","作者所述發現","限制","�
 const SOURCE_TYPES={peer_reviewed_article:"同儕審查論文",preprint:"預印本",binding_policy:"正式政策",official_guidance:"官方指引",draft:"草案",official_commentary:"官方新聞",training_event:"活動"};
 const weeklyRevisionText=d=>"本期於 "+d+" 改版；改版前內容保留於 GitHub 查核紀錄。";
 const weeklySectioned=claims=>claims.some(c=>c&&c.weekly_section!==undefined);
+/* Items a reader counts: featured and briefs only (not overview sentences or background documents). */
+const itemCount=e=>weeklySectioned(e.claims)?e.claims.filter(c=>c.weekly_section==="featured"||c.weekly_section==="briefs").length:e.claims.length;
+const periodLabel=p=>{const r=periodRange("weekly",p);return r?r.start.replace(/-/g,"/")+"—"+r.end.slice(5).replace(/-/g,"/"):p};
 const weeklyKind=c=>c.weekly_section==="background"?["background","背景"]:c.kind==="research"?["research","研究"]:["policy","政策"];
 /* Item numbers run across featured then briefs, so overview sentences and background rows can cite them. */
 function weeklyNumbers(claims){
@@ -169,7 +172,7 @@ function weeklyNumbers(claims){
  for(const c of claims.filter(x=>x.weekly_section==="background"))n.set(c.claim_id,"背景 "+(++b));
  return n;
 }
-const cite=(ids,n)=>"第 "+ids.map(id=>n.get(id)).join("、")+" 則";
+const cite=(ids,n)=>"第 "+ids.map(id=>n.get(id)).sort((a,b)=>parseInt(a)-parseInt(b)).join("、")+" 則";
 /* Featured text is written as labelled segments (樣本：… 。設計：… 。); each label starts a new line. */
 function facetBody(c){
  let body=claimBody(c);
@@ -179,7 +182,7 @@ function facetBody(c){
 function weeklySummary(claims){
  const main=claims.filter(c=>c.weekly_section==="featured"||c.weekly_section==="briefs"),cnt=f=>main.filter(f).length;
  const dims=c=>Array.isArray(c.ai_lit_dims)?c.ai_lit_dims:[];
- return "本期 "+main.length+" 則（精選 "+cnt(c=>c.weekly_section==="featured")+"、其他短訊 "+cnt(c=>c.weekly_section==="briefs")+"）：政策 "+cnt(c=>c.kind!=="research")+"、研究 "+cnt(c=>c.kind==="research")+"；涉及學生 "+cnt(c=>dims(c).some(d=>d.startsWith("S-")))+"、教師 "+cnt(c=>dims(c).some(d=>d.startsWith("T-")))+"。";
+ return "本期 "+main.length+" 則（精選 "+cnt(c=>c.weekly_section==="featured")+"、其他短訊 "+cnt(c=>c.weekly_section==="briefs")+"）：政策 "+cnt(c=>c.kind!=="research")+"、研究 "+cnt(c=>c.kind==="research")+"；對應學生 AI 素養面向 "+cnt(c=>dims(c).some(d=>d.startsWith("S-")))+"、教師面向 "+cnt(c=>dims(c).some(d=>d.startsWith("T-")))+"。";
 }
 function weeklyRow(c,n,claims){
  const [cls,label]=weeklyKind(c),type=SOURCE_TYPES[c.source_document_type]||"其他";
@@ -203,7 +206,7 @@ function weeklyMain(claims,e={}){
   else body="<table><thead><tr>"+WEEKLY_COLUMNS.map(h=>'<th scope="col">'+h+"</th>").join("")+"</tr></thead><tbody>"+items.map(c=>weeklyRow(c,n,claims)).join("")+"</tbody></table>";
   return "<section><h2>"+heading+"</h2><p>"+intro+"</p>"+body+"</section>";
  }).join("");
- const link=(label,p)=>p?"<p>"+label+'：<a href="../'+esc(p)+'/">'+esc(p)+"</a></p>":"";
+ const link=(label,p)=>p?"<p>"+label+'：<a href="../'+esc(p)+'/">'+esc(periodLabel(p))+"</a></p>":"";
  const nav=e.nav?link("上一期",e.nav.prev)+link("下一期",e.nav.next):"";
  return "<p>"+weeklySummary(claims)+"</p>"+sections+nav;
 }
@@ -243,7 +246,7 @@ function periodEditions(kind,editions){
 }
 function renderPeriodIndex(kind,editions){
  const isWeekly=kind==="weekly",label=isWeekly?"週報":"月報",legacy=isWeekly?LEGACY_WEEKLY:LEGACY_MONTHLY;
- const registered=editions.filter(e=>e.path.startsWith(kind+"/")).map(e=>({path:e.path.replace(/index\.html$/,""),title:e.title||label+"："+e.path.split("/")[1],note:e.claims.length+" 則，已通過出版閘門"})).sort((a,b)=>compareText(b.path,a.path));
+ const registered=editions.filter(e=>e.path.startsWith(kind+"/")).map(e=>({path:e.path.replace(/index\.html$/,""),title:e.title||label+"："+(isWeekly?periodLabel(e.path.split("/")[1]):e.path.split("/")[1]),note:itemCount(e)+" 則，已通過出版閘門"})).sort((a,b)=>compareText(b.path,a.path));
  const rows=[...registered,...legacy].map(x=>'<li class="item"><p><a href="'+esc(x.path.slice(kind.length+1))+'">'+esc(x.title)+'</a></p><div class="meta-line"><span>'+esc(x.note)+"</span></div></li>").join("");
  const head='<div class="kicker">'+label+"</div><h1>"+(isWeekly?"每週精選：完成查核的政策與研究":"每月趨勢：跨週整合")+'</h1><p class="lead">'+(isWeekly?"每則逐句對回原文並標示證據等級；沒有達到查核門檻的週次不發刊，不為湊數放寬標準。":"整合當月週報與重要背景，區分原始發現與本刊分析。")+"</p>";
  const main=(registered.length?"":'<p class="empty">尚無以新版流程登錄的'+label+"；以下為早期版本。</p>")+'<ul class="item-list">'+rows+"</ul>";
@@ -402,7 +405,7 @@ function weeklyCard(editions){
  const rule="每週五彙整前一週五至週四、完成首發與原文查核的 K-12 AI 素養動態。沒有達到查核門檻的項目時不發刊，不為湊數放寬標準。";
  if(!latest)return '<h3 style="font-size:24px;margin:8px 0 6px">尚無以新版流程發布的週報</h3><p style="margin:0 0 12px">'+rule+'</p><a class="button" href="./weekly/">所有週報</a>';
  const {start,end}=periodRange("weekly",latest.period),next=addDays(end,8);
- return '<h3 style="font-size:24px;margin:8px 0 6px">最新週報：'+slash(start)+"—"+slash(end).slice(5)+'</h3><p style="margin:0 0 12px">'+latest.claims.length+" 則，已通過出版閘門。"+rule+"下一期預定 "+mdDay(next)+"（涵蓋 "+slash(addDays(end,1)).slice(5)+"—"+slash(addDays(end,7)).slice(5)+'）。</p><a class="button" href="./'+esc(latest.path.replace(/index\.html$/,""))+'">閱讀本期週報</a> <a class="button outline" href="./weekly/">所有週報</a>';
+ return '<h3 style="font-size:24px;margin:8px 0 6px">最新週報：'+slash(start)+"—"+slash(end).slice(5)+'</h3><p style="margin:0 0 12px">'+itemCount(latest)+" 則，已通過出版閘門。"+rule+"下一期預定 "+mdDay(next)+"（涵蓋 "+slash(addDays(end,1)).slice(5)+"—"+slash(addDays(end,7)).slice(5)+'）。</p><a class="button" href="./'+esc(latest.path.replace(/index\.html$/,""))+'">閱讀本期週報</a> <a class="button outline" href="./weekly/">所有週報</a>';
 }
 /* Monthly card: the newest registered monthly; the next one is scheduled on the 29th (month end in February)
    of the following month. With none registered, the next month follows the legacy September 2026 issue. */

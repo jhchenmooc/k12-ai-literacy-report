@@ -391,7 +391,7 @@ test('weekly additions: overview, background, Chinese title, facets and nav rend
   assert.equal(weeklyFull(d,claims,changed).ok,false);
  const {renderWeeklyEdition,weeklyNav}=require('./render-site.js');
  assert.deepEqual(weeklyNav('2026-10-09_10-15',['2026-10-09_10-15','2026-10-16_10-22']),{prev:'2026-09-29_10-08',next:'2026-10-16_10-22'});
- assert.ok(renderWeeklyEdition({period:'2026-10-09_10-15',claims,nav:{prev:'2026-09-29_10-08',next:null}}).includes('<p>上一期：<a href="../2026-09-29_10-08/">2026-09-29_10-08</a></p>'));
+ assert.ok(renderWeeklyEdition({period:'2026-10-09_10-15',claims,nav:{prev:'2026-09-29_10-08',next:null}}).includes('<p>上一期：<a href="../2026-09-29_10-08/">2026/09/29—10/08</a></p>'));
 });
 test('weekly additions: overview, background and period rules are enforced',t=>{
  const cases={
