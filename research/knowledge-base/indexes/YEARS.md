@@ -726,6 +726,7 @@
 | KB-2024-0356 — [Generative AI in education: educator and expert views](https://www.gov.uk/government/publications/generative-ai-in-education-educator-and-expert-views) | policy_review | 2024-01-24 | discovered_unverified |
 | KB-2024-0357 — [Generative Artificial Intelligence (GAI) in Education: Fast Facts](https://education.gov.scot/media/ffnp4zu4/generative-artificial-intelligence-in-education.pdf) | official_guidance | 2024-05 | discovered_unverified |
 | KB-2024-0358 — [2024國際論壇暨AI融入教案電子手冊](https://www.ntpc.edu.tw/home.jsp?id=08967d256147c62a&act=be4f48068b2b0031&dataserno=19fb0bb71a7f45179afa1315c6d79fe8) | official_guidance | 2024 | discovered_unverified |
+| KB-2024-0370 — [Developing artificial intelligence capabilities: Guidance for schools; Guidance for students and parents/carers](https://www.qcaa.qld.edu.au/about/k-12-policies/artificial-intelligence) | official_guidance | 2024-02 | discovered_unverified |
 | KB-2026-0099 — [NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools](https://go.ncdpi.gov/AI_Guidelines) | official_guidance | 2024-01-16 | bibliographic_checked |
 
 ## 2025｜event_year
@@ -1208,6 +1209,8 @@
 | KB-2025-0471 — [2025 인천 AI․디지털교육 추진계획](https://edu-i.ice.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000138324&fileSn=1&bbsId=BBSMSTR_000000004155&trgetId=SYSTEM_DEFAULT_BOARD&nttId=126204) | official_guidance | 2025-02 | discovered_unverified |
 | KB-2025-0472 — [서울시교육청「초중고 AI 교육 종합계획」](https://enews.sen.go.kr/news/view.do?bbsSn=190482&step1=3&step2=1) | official_guidance | 2025-12-23 | discovered_unverified |
 | KB-2025-0473 — [養成孩子以AI輔助學習素養，臺北市率先全國發佈全學層「AI素養教材」（《資訊素養與倫理》新單元「AI未來新世界」）](https://www.doe.gov.taipei/News_Content.aspx?n=B3DDF0458F0FFC11&s=E3C0C506B1AF7BFC) | framework | 2025-07-30 | discovered_unverified |
+| KB-2025-0474 — [Generative artificial intelligence - guidelines](https://education.nt.gov.au/__data/assets/word_doc/0006/1567896/generative-artificial-intelligence-guidelines.docx) | official_guidance | 2025-10-23 | discovered_unverified |
+| KB-2025-0475 — [AI companions information sheet for educators](https://www.esafety.gov.au/sites/default/files/2025-07/AI-companions-information-sheet-educators.pdf) | official_guidance | 2025-07 | discovered_unverified |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
@@ -1607,5 +1610,7 @@
 | KB-2026-0364 — [HIDOE Artificial Intelligence Guidance for Employees](https://hawaiipublicschools.org/student-programs/artificial-intelligence/) | official_guidance | 未知 | discovered_unverified |
 | KB-2026-0365 — [Artificial Intelligence (AI) Guidance](https://www.in.gov/doe/educators/digital-learning/) | official_guidance | 未知 | discovered_unverified |
 | KB-2026-0368 — [Guidelines for AI Integration Throughout Education in the Commonwealth of Virginia](https://www.education.virginia.gov/resources/artificial-intelligence/) | official_guidance | 未知 | discovered_unverified |
+| KB-2026-0384 — [Guidance for the Responsible Use of Artificial Intelligence: Executive Summary](https://marylandpublicschools.org/about/documents/dccr/ai/01-ai-guidance-executive-summary-a.pdf) | official_guidance | 未知 | discovered_unverified |
+| KB-2026-0385 — [Artificial Intelligence: Guidance for K-12 Classrooms](https://www.mdek12.org/sites/default/files/Offices/MDE/OTSS/DL/ai_guidance_final.pdf) | official_guidance | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
