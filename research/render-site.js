@@ -82,10 +82,12 @@ function dailyEditions(editions){
 }
 /* The claim text is rendered verbatim; only the source title inside it becomes the link, so the
    gate's text match (claim_text) and direct-anchor rule (source_url) both hold. */
-function claimParagraph(c,withId){
+function claimBody(c){
  const text=esc(c.claim_text),title=esc(c.source_title),link='<a href="'+esc(c.source_url)+'">'+title+"</a>";
- const body=title&&text.includes(title)?text.replace(title,link):'<a href="'+esc(c.source_url)+'">'+text+"</a>";
- return "<p"+(withId?' data-claim-id="'+esc(c.claim_id)+'"':"")+">"+body+"</p>";
+ return title&&text.includes(title)?text.replace(title,link):'<a href="'+esc(c.source_url)+'">'+text+"</a>";
+}
+function claimParagraph(c,withId){
+ return "<p"+(withId?' data-claim-id="'+esc(c.claim_id)+'"':"")+">"+claimBody(c)+"</p>";
 }
 const dailyKind=c=>DAILY_KIND[c.daily_fact_kind]||["policy","短訊"];
 function kindBadge(c){const [cls,label]=dailyKind(c);return '<span class="kind '+cls+'">'+label+"</span>"}
@@ -149,7 +151,7 @@ const WEEKLY_SECTIONS=[
  ["featured","本週精選","從本週短訊中選出至多 5 則，讀全文補上樣本、方法、作者所述發現與限制；不寫成效與因果推論。"],
  ["briefs","本週其他短訊","本週其他已刊短訊，沿用每日短訊的原文歸屬摘要。"]];
 const WEEKLY_EMPTY="本期無合格項目。",WEEKLY_FEATURED_MAX=5;
-const WEEKLY_FIXED=new Set([...WEEKLY_SECTIONS.flatMap(([,h,intro])=>[h,intro]),WEEKLY_EMPTY]);
+const WEEKLY_FIXED=new Set([...WEEKLY_SECTIONS.flatMap(([,h,intro])=>[h,intro]),WEEKLY_EMPTY,"編號","類型","首次公開","標籤","內容"]);
 const weeklyRevisionText=d=>"本期於 "+d+" 改版；改版前內容保留於 GitHub 查核紀錄。";
 const weeklySectioned=claims=>claims.some(c=>c&&c.weekly_section!==undefined);
 function weeklyMain(claims){
@@ -158,8 +160,22 @@ function weeklyMain(claims){
  for(const c of claims)if(!keys.includes(c.weekly_section))throw new Error("weekly claim needs a known weekly_section: "+c.claim_id);
  return WEEKLY_SECTIONS.map(([key,heading,intro])=>{
   const items=claims.filter(c=>c.weekly_section===key);
-  return "<section><h2>"+heading+"</h2><p>"+intro+"</p>"+(items.length?items.map(c=>claimParagraph(c,true)).join(""):"<p>"+WEEKLY_EMPTY+"</p>")+"</section>";
+  return "<section><h2>"+heading+"</h2><p>"+intro+"</p>"+(items.length?weeklyTable(items):"<p>"+WEEKLY_EMPTY+"</p>")+"</section>";
  }).join("");
+}
+/* One table per weekly section (manager request 2026-10-17). Every cell except the claim itself is derived from
+   claim fields by this code; the gate accepts those strings only on a page equal to this render. */
+const WEEKLY_COLUMNS=["編號","類型","首次公開","標籤","內容"];
+const weeklyKind=c=>c.kind==="research"?["research","研究"]:["policy","政策"];
+function weeklyTable(items){
+ const row=(c,i)=>{const [cls,label]=weeklyKind(c);
+  return "<tr><td>"+(i+1)+'</td><td data-kind="'+cls+'"><span>'+label+"</span></td><td>"+esc(c.first_disclosed_on||"未知")+"</td><td>"+esc(dailyTagText(c))+'</td><td data-claim-id="'+esc(c.claim_id)+'">'+claimBody(c)+"</td></tr>";};
+ return "<table><thead><tr>"+WEEKLY_COLUMNS.map(h=>'<th scope="col">'+h+"</th>").join("")+"</tr></thead><tbody>"+items.map(row).join("")+"</tbody></table>";
+}
+function weeklyDerivedText(claims){
+ const out=new Set();
+ for(const key of WEEKLY_SECTIONS.map(x=>x[0]))claims.filter(c=>c&&c.weekly_section===key).forEach((c,i)=>{out.add(String(i+1));out.add(weeklyKind(c)[1]);out.add(c.first_disclosed_on||"未知");if(dailyTagText(c))out.add(dailyTagText(c))});
+ return out;
 }
 /* Monthly <main> sections. Headings, intros and empty-state lines are fixed text in reviewed code; every other
    node is a claim paragraph placed by its `section` field. The gate re-renders the whole page from the claims. */
@@ -408,4 +424,4 @@ function main(){
  console.log(write?"site pages written":"site pages consistent",Object.keys(files).length);
 }
 if(require.main===module)try{main()}catch(e){console.error(e.message);process.exitCode=1}
-module.exports={dailyKind,WEEKLY_SECTIONS,WEEKLY_FIXED,WEEKLY_FEATURED_MAX,weeklyRevisionText,weeklySectioned,build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};
+module.exports={weeklyDerivedText,dailyKind,WEEKLY_SECTIONS,WEEKLY_FIXED,WEEKLY_FEATURED_MAX,weeklyRevisionText,weeklySectioned,build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};

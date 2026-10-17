@@ -87,7 +87,7 @@ function registeredShell(document,main,issueDate,issuePath,claims,issue={}){
    // Sectioned weekly: section text is fixed renderer code, so the whole page must equal the render of its claims.
    let expected=null;try{expected=parse5.parse(renderer.renderWeeklyEdition({period,claims,revised_on:issue.revised_on}))}catch(e){errors.push("weekly renderer refused claims: "+e.message)}
    if(expected&&JSON.stringify(shellShape(document,true))!==JSON.stringify(shellShape(expected,true)))errors.push("registered weekly page differs from trusted renderer output for its claims");
-   else if(expected)return {errors,fixedText:new Set([...renderer.WEEKLY_FIXED,...(issue.revised_on?[renderer.weeklyRevisionText(issue.revised_on)]:[])])};
+   else if(expected)return {errors,fixedText:new Set([...renderer.WEEKLY_FIXED,...renderer.weeklyDerivedText(claims),...(issue.revised_on?[renderer.weeklyRevisionText(issue.revised_on)]:[])])};
   }else if(channel==="weekly"&&renderer.periodRange(channel,period)){
    const expected=parse5.parse(renderer.renderWeeklyEdition({period,claims:[]}));
    if(JSON.stringify(shellShape(document))!==JSON.stringify(shellShape(expected)))errors.push("registered weekly shell differs from trusted renderer outside main");
@@ -114,7 +114,7 @@ function matchBody(document,claims,issueDate,issuePath,issue={}){
   if(node.nodeName==="#comment"||node.nodeName==="#documentType")errors.push("comments/declarations unsupported within main");
   if(node.tagName&&!safeTags.has(node.tagName))errors.push("unsupported HTML tag in main: "+node.tagName);
   if(node.tagName&&node.namespaceURI!==HTML_NS)errors.push("non-HTML namespace unsupported within main");
-  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
+  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined)||(a.name==="data-kind"&&node.tagName==="td"&&["policy","research"].includes(a.value)))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
  }
  /* Daily tag line (manager decision 2026-10-11): a plain <p data-claim-tags="ID"> directly after the
     claim's own element, whose text must equal dailyTagText(claim); at most once per claim, daily only. */

@@ -121,7 +121,7 @@ publication/issues.json
 
 `issues.json` 登記新期 `path` 與 `claims_file`；正式的 claims JSON 不得含 `hold`。現有 [validate-publication.js](validate-publication.js) 要求只有一個靜態 `<main>`，其中有文字的 `p,h1,h2,h3,h4,li,blockquote,figcaption,td,th` 必須以 `data-claim-id` 對應 JSON 完全相同的 `claim_text`，每個 ID 恰對應一個節點。未登錄的新期 HTML 也被阻擋。
 
-**週報版型：精選加深（管理者 2026-10-17 決定 B）**：週報分「本週精選」與「本週其他短訊」兩段。精選從當週短訊與候選池選至多 5 則（目標 3–5 則），**讀全文**補上樣本（學段、國家、人數、招募）、設計與工具、作者所述的描述性或相關性發現、作者自述限制；成效、因果、效果量與介入研究的結果仍不寫。精選 claim 標 `weekly_section: "featured"`、`full_text_checked: true`，證據快照取自全文（短摘錄），兩輪對照中第二輪須由隔離子代理對照全文。其餘短訊標 `weekly_section: "briefs"` 並以 `weekly_source_claim` 指向每日短訊，內容沿用。分段標題與說明是 [render-site.js](render-site.js) 的固定文字，分段週報整頁須等於渲染器輸出（同月報）。已刊週報改版時在 `issues.json` 該期加 `revised_on`，頁面顯示固定改版說明；改版前內容留在 git 紀錄與出刊前檢查文件。出刊前檢查須列出精選理由與未選項目。
+**週報版型：精選加深（管理者 2026-10-17 決定 B）**：週報分「本週精選」與「本週其他短訊」兩段。精選從當週短訊與候選池選至多 5 則（目標 3–5 則），**讀全文**補上樣本（學段、國家、人數、招募）、設計與工具、作者所述的描述性或相關性發現、作者自述限制；成效、因果、效果量與介入研究的結果仍不寫。精選 claim 標 `weekly_section: "featured"`、`full_text_checked: true`，證據快照取自全文（短摘錄），兩輪對照中第二輪須由隔離子代理對照全文。其餘短訊標 `weekly_section: "briefs"` 並以 `weekly_source_claim` 指向每日短訊，內容沿用。分段標題與說明是 [render-site.js](render-site.js) 的固定文字，分段週報整頁須等於渲染器輸出（同月報）。兩段都以表格呈現（編號、類型色標、首次公開、標籤、內容；管理者 2026-10-17），除內容欄外皆由渲染器依 claim 欄位產生。已刊週報改版時在 `issues.json` 該期加 `revised_on`，頁面顯示固定改版說明；改版前內容留在 git 紀錄與出刊前檢查文件。出刊前檢查須列出精選理由與未選項目。
 
 這是有限的靜態字串比對，非完整 DOM 及自然語意判讀。正式新版正文僅支援既有靜態標籤；HTML 註解、未支援標籤、內嵌腳本／媒體與動態／隱藏屬性須停止發布並改成可審計的靜態結構。這是保守阻擋而非完整瀏覽器級安全驗證；不能用沒被比對的動態內容偷渡主張。2026/09 月報與 9/29–10/8 創刊特刊為 **legacy**，維持未認證警示，不可因後來 CI 成功就追認為新版正式期別。
 
