@@ -260,18 +260,21 @@ test("sectioned monthly listing: frozen weeklies, items by first-disclosure date
  const r=require("./render-site.js");
  const d=(id,date,over={})=>({claim_id:id,kind:"research",daily_fact_kind:"research_bibliography",source_title:"T"+id,source_url:"https://example.org/"+id,first_disclosed_on:date,...over});
  const editions=[
-  {path:"daily/2026-10-31/index.html",claims:[d("D20261031-01","2026-10-30"),d("D20261031-02","2026-10-30",{region:"tw"})]},
+  {path:"daily/2026-11-01/index.html",claims:[d("D20261031-01","2026-10-30"),d("D20261031-02","2026-10-30",{region:"tw"})]},
   {path:"daily/2026-10-12/index.html",claims:[d("D20261012-01","2026-10-10")]},
   {path:"weekly/2026-10-09_10-15/index.html",claims:[{...d("W1","2026-10-10"),weekly_section:"briefs",weekly_source_claim:"D20261012-01"}]},
   {path:"weekly/2026-10-30_11-05/index.html",claims:[{...d("W2","2026-10-30"),weekly_section:"briefs",weekly_source_claim:"D20261031-01"},{...d("W3","2026-11-02"),weekly_section:"briefs"}]}];
- const e={period:"2026-10",indexed_weeklies:["2026-10-09_10-15"]},w=r.monthlyWindow("2026-10");
+ const e={period:"2026-10",indexed_weeklies:["2026-10-09_10-15"],indexed_through:"2026-11-03"},w=r.monthlyWindow("2026-10");
  assert.deepEqual(w,{month:"2026-10",prev:"2026-09",start:"2026-09-30",end:"2026-10-31"});
  assert.deepEqual(r.monthlyWindow("2026-11"),{month:"2026-11",prev:"2026-10",start:"2026-11-01",end:"2026-11-30"});
  const l=r.monthlyListing({context:r.monthlyContext(e,editions)},w);
- assert.deepEqual(l.groups.map(g=>[g.label,g.items.map(x=>x.c.claim_id)]),[["週報 2026/10/09—10/15",["W1"]],["每日短訊（未收入上列週報）",["D20261031-01"]]]);
+ assert.deepEqual(l.groups.map(g=>[g.label,g.items.map(x=>x.c.claim_id)]),[["週報 2026/10/09—10/15",["W1"]],["每日短訊（尚未收入上列週報）",["D20261031-01"]]]);
  assert.deepEqual(l.tw.map(x=>x.c.claim_id),["D20261031-02"]);
  // Once the cross-month weekly is indexed, its October item replaces the daily line and its November item stays out.
  const l2=r.monthlyListing({context:r.monthlyContext({...e,indexed_weeklies:["2026-10-09_10-15","2026-10-30_11-05"]},editions)},w);
  assert.deepEqual(l2.groups.map(g=>g.items.map(x=>x.c.claim_id)),[["W1"],["W2"]]);
+ // Dailies after indexed_through are not listed, so a later daily cannot change an issued monthly.
+ const l3=r.monthlyListing({context:r.monthlyContext({...e,indexed_through:"2026-10-31"},editions)},w);
+ assert.deepEqual(l3.groups.map(g=>g.items.map(x=>x.c.claim_id)),[["W1"]]);assert.deepEqual(l3.tw,[]);
  assert.equal(r.monthlyNonK12Cap(3),2);assert.equal(r.monthlyNonK12Cap(9),3);assert.equal(r.monthlyNonK12Cap(12),4);
 });

@@ -246,3 +246,18 @@ article section>table td[data-col="tags"]{width:9em;font-size:13px;color:var(--n
  article section>table td[data-col="tags"]{width:auto}
 }
 @media print{#sec-toc{break-after:avoid}#sec-tw{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+/* Monthly analysis paragraphs sit one level deeper (inside #sec-tw_note, #sec-overview_line, #sec-trends). */
+#sec-tw_note,#sec-trends{counter-reset:analysis}
+#sec-tw_note>p[data-claim-id],#sec-trends>p[data-claim-id]{counter-increment:analysis;position:relative;padding-left:30px}
+#sec-tw_note>p[data-claim-id]::before,#sec-trends>p[data-claim-id]::before{content:counter(analysis) ".";position:absolute;left:0;color:var(--navy);font-weight:700}
+#sec-tw_note>p[data-claim-id]+p,#sec-trends>p[data-claim-id]+p,#sec-overview_line>p[data-claim-id]+p{font-size:13px;color:var(--muted);margin-top:-4px;padding-left:30px}
+#sec-overview_line>p[data-claim-id]{font-size:20px;font-weight:700;color:var(--navy)}
+#sec-overview_line>p[data-claim-id]+p{padding-left:0}
+#sec-toc ul ul{display:inline-flex;margin-left:6px}
+#sec-toc>ul{flex-direction:column;gap:6px}
+#sec-toc>ul>li>a{font-weight:700}
+@media print{
+ #sec-intl table thead,#sec-tw table thead{display:none}
+ #sec-intl table td[data-col]:not([data-col="content"])::before,#sec-tw table td[data-col]:not([data-col="content"])::before{font-weight:700;color:var(--muted);margin-right:.3em}
+ td[data-col="kind"]::before{content:"類型"}td[data-col="date"]::before{content:"首次公開"}td[data-col="audience"]::before{content:"對象"}td[data-col="tags"]::before{content:"標籤"}
+}
