@@ -16,3 +16,6 @@ First parent-child interview was joint, conducted at the parent’s request; we 
 
 Second-round additions (verbatim, Method p.171 and Ethical Statement):
 To minimize this influence, we conducted all other parents and youth interviews separately, with parental consent. … We mitigated potential bias through iterative collaborative coding and regular discussions to reach consensus on culturally grounded interpretations.
+
+Joint-review additions 2026-10-17 (verbatim, Method p.170–172):
+We conducted content analysis of social media (Reddit and X (Twitter)), and semi-structured interviews with youth, parents, and teachers. We used a mixed-methods approach to address our research questions. We considered online discussions (e.g., Reddit and X/Twitter) and interviews as complementary evidence. … We reviewed each post and comment for relevance to GenAI topics and then applied thematic analysis following the same iterative coding approach used for interview data. … We used thematic and deductive analysis on the translated transcriptions (Braun and Clarke 2006).

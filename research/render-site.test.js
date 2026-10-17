@@ -52,7 +52,7 @@ test("homepage weekly card follows the newest registered weekly",()=>{
  const shell='<!-- generated:weekly-latest:start --><!-- generated:weekly-latest:end --><!-- generated:monthly-latest:start --><!-- generated:monthly-latest:end --><!-- generated:daily-latest:start --><!-- generated:daily-latest:end --><!-- generated:archive-stats:start --><!-- generated:archive-stats:end -->';
  const data={policy:[],journals:[],conferences:[]},w=(p,n)=>({path:"weekly/"+p+"/index.html",claims:Array(n).fill({})});
  const card=eds=>fillHomepage(shell,[],data,eds).split("weekly-latest:start -->")[1].split("<!--")[0];
- assert.match(card([]),/尚無以新版流程發布的週報/);
+ assert.match(card([]),/尚無正式週報/);
  const two=card([w("2026-10-09_10-15",14),w("2026-10-16_10-22",3)]);
  assert.match(two,/最新週報：2026\/10\/16—10\/22/);assert.match(two,/3 則/);assert.match(two,/下一期預定 10 月 30 日（涵蓋 10\/23—10\/29）/);
  assert.ok(two.includes('href="./weekly/2026-10-16_10-22/"'));
@@ -64,7 +64,7 @@ test("homepage monthly card follows the newest registered monthly",()=>{
  const shell='<!-- generated:weekly-latest:start --><!-- generated:weekly-latest:end --><!-- generated:monthly-latest:start --><!-- generated:monthly-latest:end --><!-- generated:daily-latest:start --><!-- generated:daily-latest:end --><!-- generated:archive-stats:start --><!-- generated:archive-stats:end -->';
  const data={policy:[],journals:[],conferences:[]},mo=(p,n)=>({path:"monthly/"+p+"/index.html",claims:Array(n).fill({})});
  const card=eds=>fillHomepage(shell,[],data,eds).split("monthly-latest:start -->")[1].split("<!--")[0];
- const none=card([]);assert.match(none,/尚無以新版流程發布的月報/);assert.match(none,/10 月月報預定 11 月 3 日刊出/);
+ const none=card([]);assert.match(none,/新版月報尚未刊出/);assert.match(none,/10 月月報預定 11 月 3 日刊出/);
  const two=card([mo("2026-10",9),mo("2026-12",4)]);
  assert.match(two,/最新月報：2026 年 12 月/);assert.match(two,/4 則/);assert.match(two,/1 月月報預定 2 月 3 日刊出/);
  assert.ok(two.includes('href="./monthly/2026-12/"'));
@@ -98,8 +98,8 @@ test("archive excludes weekly candidates, escapes titles and keeps unknown dates
  const d=archiveData(records,relations,[{id:"J02",name:"Journal Two"}]);
  const all=[...d.policy,...d.journals,...d.conferences].flatMap(g=>g.rows);
  assert.equal(all.length,2);assert.ok(!all.some(r=>r.id==="KB-2026-9001"));
- assert.equal(d.journals[0].rows[0].date,"卷期年（首發日未知）");assert.equal(d.conferences.length,0);
- assert.equal(d.policy[0].name,"日本");assert.equal(d.policy[0].rows[0].date,"2024-05-01 首發");
+ assert.equal(d.journals[0].rows[0].date,"卷期年（首次公開日未知）");assert.equal(d.conferences.length,0);
+ assert.equal(d.policy[0].name,"日本");assert.equal(d.policy[0].rows[0].date,"2024-05-01 首次公開");
 });
 
 test("archive lists weekly candidates once their source is checked",()=>{
@@ -109,7 +109,7 @@ test("archive lists weekly candidates once their source is checked",()=>{
  const relations=[{subject_id:"KB-2026-9011",predicate:"published_in",object_id:"J02"},{subject_id:"KB-2026-9012",predicate:"published_in",object_id:"J02"}];
  const rows=archiveData(records,relations,[{id:"J02",name:"Journal Two"}]).journals.flatMap(g=>g.rows);
  assert.deepEqual(rows.map(r=>r.id),["KB-2026-9012"]);
- assert.equal(rows[0].date,"2026-10-10 首發");assert.equal(rows[0].status[1],"書目已核");
+ assert.equal(rows[0].date,"2026-10-10 首次公開");assert.equal(rows[0].status[1],"書目已核");
 });
 
 test("archive groups preprints separately and shows the high-citation tag",()=>{
