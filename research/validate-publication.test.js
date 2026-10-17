@@ -275,7 +275,7 @@ test('daily Taiwan backfill: marked earlier page passes with later check date; m
  assert.ok(html.includes('<p>'+r.dailyBackfillText('2026-10-17')+'</p>'));
  write({tw_backfilled_on:'2026-10-17'},[dailyLow,tw],html);assert.deepEqual(validate(d).errors,[]);
  // A backfilled page with no Taiwan items still shows both sections.
- const empty=page([dailyLow],'2026-10-17');assert.ok(empty.includes('<h2 data-region="tw">臺灣</h2><p>本期無合格項目。</p>'));
+ const empty=page([dailyLow],'2026-10-17');assert.ok(empty.includes('<h2 data-region="tw">臺灣</h2><p>今日查教育部'));
  write({tw_backfilled_on:'2026-10-17'},[dailyLow],empty);assert.deepEqual(validate(d).errors,[]);
  for(const [entry,list,h] of [
   [{},[dailyLow,tw],page([dailyLow,tw])],
@@ -419,7 +419,7 @@ test('weekly attack: any change to a sectioned page, or section text on a flat p
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
  const {renderWeeklyEdition,weeklyNav}=require('./render-site.js'),nav=weeklyNav('2026-10-09_10-15',['2026-10-09_10-15']),html=renderWeeklyEdition({period:'2026-10-09_10-15',claims:[featured,brief],revised_on:'2026-10-17',nav});
  for(const changed of [html.replace('<h2>本週精選</h2>','<h2>本刊強烈推薦</h2>'),html.replace('<h2>本週其他短訊</h2>','<h2>本週其他短訊</h2><p>未審核結論</p>'),
-  html.replace('改版前內容保留','改版前內容已刪除'),renderWeeklyEdition({period:'2026-10-09_10-15',claims:[featured,brief]}),
+  html.replace('更正與改版紀錄</a>','改版紀錄已刪除</a>'),renderWeeklyEdition({period:'2026-10-09_10-15',claims:[featured,brief]}),
   renderWeeklyEdition({period:'2026-10-09_10-15',claims:[{...featured,weekly_section:'briefs'},brief],revised_on:'2026-10-17'})]){
   assert.equal(weeklyFull(d,[featured,brief],changed,{revised_on:'2026-10-17'}).ok,false);
  }

@@ -216,7 +216,7 @@ test("daily list and edition page show audience, A/B and framework tags",()=>{
  const page=renderDailyEdition({date:"2099-01-01",claims:[c]});
  assert.ok(page.includes('</p><p data-claim-tags="D20990101-01"><span>#中小學</span> <span>#AI素養核心</span> <span>#學生AI基礎與技術</span> <span>#學生AI系統設計</span></p>'));
  assert.ok(page.includes('<article><section><h2 data-region="intl">國際</h2><p id="D20990101-01" data-claim-kind="D20990101-01" data-kind="policy">政策</p><p data-claim-id="D20990101-01">'));
- assert.ok(page.includes('<section><h2 data-region="tw">臺灣</h2><p>本期無合格項目。</p></section>'),"from 2026-10-18 both regions show");
+ assert.ok(page.includes('<section><h2 data-region="tw">臺灣</h2><p>今日查教育部、國教署、行政院、國科會等臺灣中央機關來源'),"from 2026-10-18 both regions show");
  assert.ok(renderDailyEdition({date:"2026-10-12",claims:[c]}).includes('<article><p id="D20990101-01" data-claim-kind="D20990101-01"'),"earlier pages stay flat");
  const tw=renderDailyEdition({date:"2099-01-01",claims:[c,{...c,claim_id:"D20990101-02",region:"tw"}]});
  assert.ok(tw.indexOf('data-region="tw"')<tw.indexOf('D20990101-02')&&tw.indexOf('D20990101-01')<tw.indexOf('data-region="tw"'),"Taiwan items sit under 臺灣");
@@ -296,4 +296,19 @@ test("monthly list: early items, items awaiting a weekly, and last month's late 
  assert.equal(l.groups[0].items[0].kind,"研究・預印本");
  const n=r.monthlyListing({context:r.monthlyContext(nov,editions)},r.monthlyWindow("2026-11"));
  assert.deepEqual(n.groups.map(g=>[g.label,g.items.map(x=>x.c.claim_id)]),[["上月補列（首次公開於上月、上期月報出刊後才刊出）",["D20261104-01"]]]);
+});
+
+test("corrections log, daily permalinks and citation lines (joint review E3e, E3f)",()=>{
+ const {renderCorrections}=require("./render-site.js");
+ const page=renderCorrections([{id:"a-1",date:"2026-10-16",path:"weekly/x/",target:"週報 X",type:"改版",old:"舊<b>",new:"新",reason:"因"},{id:"b-2",date:"2026-10-17",path:"daily/",target:"每日 Y",type:"補查",old:"o",new:"n",reason:"r"}]);
+ assert.ok(page.indexOf('id="b-2"')<page.indexOf('id="a-1"'),"newest first");
+ assert.ok(page.includes("<strong>原本</strong>：舊&lt;b&gt;")&&page.includes('<a href="../weekly/x/">週報 X</a>'));
+ assert.ok(renderCorrections([]).includes("目前沒有更正紀錄"));
+ const c={claim_id:"D20990101-01",claim_text:"來源機構：X；資料標題：T；來源刊登日：2099-01-01。",source_title:"T",source_url:"https://example.org/t",audience:"k12",ai_lit_class:"A",ai_lit_dims:["S-BAS"]};
+ const daily=renderDailyEdition({date:"2099-01-01",claims:[c],revised_on:"2099-01-02"});
+ assert.ok(daily.includes('<p>固定連結：<a href="#D20990101-01">#D20990101-01</a></p>'));
+ assert.ok(daily.includes("引用本日：K-12 AI 素養國際動態，每日短訊 2099-01-01。https://jhchenmooc.github.io/k12-ai-literacy-report/daily/2099-01-01/"));
+ assert.ok(daily.includes('<a href="../../corrections/">更正與改版紀錄</a>'));
+ assert.ok(!renderDailyEdition({date:"2026-10-12",claims:[c]}).includes("固定連結"),"earlier flat pages are unchanged");
+ const files=build(root);assert.ok(files["corrections/index.html"].includes('id="weekly-2026-10-09_10-15-r2"'));
 });

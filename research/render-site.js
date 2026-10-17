@@ -54,7 +54,7 @@ function shell({depth,current,title,description,head,main,script}){
   '<a class="nav-feedback" href="'+p+'feedback/">讀者勘誤</a></nav></header>\n'+
   '<div class="page-head">'+head+"</div>\n"+
   '<main id="content" class="content">'+main+"</main>\n"+
-  '<footer class="site-footer"><div class="inner"><span>K-12 AI 素養國際動態</span><a href="'+p+'about/">查核方法</a><a href="'+p+'feedback/">讀者評鑑與勘誤（GitHub Issues）</a><a href="'+p+'design-system/">設計系統</a><a href="https://github.com/jhchenmooc/k12-ai-literacy-report">GitHub 原始碼</a></div></footer>\n</body></html>\n';
+  '<footer class="site-footer"><div class="inner"><span>K-12 AI 素養國際動態</span><a href="'+p+'about/">查核方法</a><a href="'+p+'corrections/">更正紀錄</a><a href="'+p+'feedback/">讀者評鑑與勘誤（GitHub Issues）</a><a href="'+p+'design-system/">設計系統</a><a href="https://github.com/jhchenmooc/k12-ai-literacy-report">GitHub 原始碼</a></div></footer>\n</body></html>\n';
 }
 
 /* ---------- data ---------- */
@@ -123,15 +123,18 @@ function dailyCard(d,depth){
    government and Taiwan research only). Earlier pages keep their flat layout. Sectioned daily pages must equal
    this render of their claims (validate-publication.js). */
 const DAILY_REGION_FROM="2026-10-18",REGIONS=[["intl","國際"],["tw","臺灣"]],REGION_EMPTY="本期無合格項目。";
+/* The Taiwan section says what was searched (joint review E3g); the source list is on the about page. */
+const TW_REGION_EMPTY='今日查教育部、國教署、行政院、國科會等臺灣中央機關來源（清單見<a href="../../about/#scope">監測範圍</a>），未見符合條件的新文件。';
 const isTw=c=>c&&c.region==="tw";
 /* Earlier pages searched later for Taiwan sources carry tw_backfilled_on in issues.json (manager 2026-10-17):
    they switch to the two sections and show a fixed backfill note. */
 const dailySectioned=e=>e.date>=DAILY_REGION_FROM||e.claims.some(isTw)||e.tw_backfilled_on!==undefined||e.revised_on!==undefined;
-const dailyRevisionText=d=>"本頁於 "+d+" 更正；更正前內容保留於 GitHub 查核紀錄。";
+const dailyRevisionText=d=>"本頁於 "+d+' 更正；舊說法、新說法與原因見<a href="../../corrections/">更正與改版紀錄</a>。';
 const dailyBackfillText=d=>"本頁臺灣段為 "+d+" 補查臺灣中央來源後補登，當日原未查臺灣來源。";
-function dailyItem(c,links){
+function dailyItem(c,links,permalink){
  const [cls,label]=dailyKind(c),tags=dailyTagList(c),back=links&&links.get(c.claim_id)||[];
  return '<p id="'+esc(c.claim_id)+'" data-claim-kind="'+esc(c.claim_id)+'" data-kind="'+cls+'">'+label+"</p>"+claimParagraph(c,true)+(tags.length?'<p data-claim-tags="'+esc(c.claim_id)+'">'+tags.map(t=>"<span>#"+esc(t)+"</span>").join(" ")+"</p>":"")+
+  (permalink?'<p>固定連結：<a href="#'+esc(c.claim_id)+'">#'+esc(c.claim_id)+"</a></p>":"")+
   (back.length?'<p data-claim-links="'+esc(c.claim_id)+'">已收入：'+back.map(l=>'<a href="'+esc(l.href)+'">'+esc(l.label)+"</a>").join("、")+"</p>":"");
 }
 /* Where each daily item went later (C2): weekly item numbers and monthly list numbers, derived from registered issues. */
@@ -150,10 +153,11 @@ function dailyBacklinks(editions){
 }
 function renderDailyEdition(e){
  const head='<div class="kicker">每日短訊</div><h1>'+e.date+' 每日短訊</h1><div class="notice"><p>只記錄「誰在哪天發布了什麼」或來源原文的歸屬摘要，不含解讀、成效判斷或對臺灣的建議；'+AI_ITEM_NOTE+'</p>'+(e.tw_backfilled_on?"<p>"+dailyBackfillText(e.tw_backfilled_on)+"</p>":"")+(e.revised_on?"<p>"+dailyRevisionText(e.revised_on)+"</p>":"")+'</div>';
- const sectioned=dailySectioned(e),links=sectioned?e.links:null,item=c=>dailyItem(c,links);
+ const sectioned=dailySectioned(e),links=sectioned?e.links:null,item=c=>dailyItem(c,links,sectioned);
  const body=sectioned?REGIONS.map(([r,label])=>{const items=e.claims.filter(c=>(isTw(c)?"tw":"intl")===r);
-  return '<section><h2 data-region="'+r+'">'+label+"</h2>"+(items.length?items.map(item).join(""):"<p>"+REGION_EMPTY+"</p>")+"</section>";}).join(""):e.claims.map(item).join("");
- const main="<article>"+body+"</article>";
+  return '<section><h2 data-region="'+r+'">'+label+"</h2>"+(items.length?items.map(item).join(""):"<p>"+(r==="tw"?TW_REGION_EMPTY:REGION_EMPTY)+"</p>")+"</section>";}).join(""):e.claims.map(item).join("");
+ const citeLine=sectioned?"<p>引用本日：K-12 AI 素養國際動態，每日短訊 "+e.date+"。"+SITE_URL+"daily/"+e.date+"/（引用時請註明查閱日期）。引用單則請用該則的固定連結。</p>":"";
+ const main="<article>"+body+citeLine+"</article>";
  return shell({depth:2,current:"daily",title:e.date+" 每日短訊",description:"K-12 AI 素養每日短訊："+e.date,head,main});
 }
 function renderDailyIndex(days){
@@ -215,7 +219,7 @@ const WEEKLY_EMPTY="本期無合格項目。",WEEKLY_FEATURED_MAX=5,WEEKLY_OVERV
 const WEEKLY_COLUMNS=["編號","類型","首次公開","標籤","內容"];
 const WEEKLY_FACETS=["樣本","資料","設計","作者所述發現","限制","內容","說明"];
 const SOURCE_TYPES={peer_reviewed_article:"同儕審查論文",preprint:"預印本",binding_policy:"正式政策",official_guidance:"官方指引",draft:"草案",official_commentary:"官方新聞",training_event:"活動",speech:"演講"};
-const weeklyRevisionText=d=>"本期於 "+d+" 改版，項目編號可能已調整；改版前內容保留於 GitHub 查核紀錄。";
+const weeklyRevisionText=d=>"本期於 "+d+' 改版，項目編號可能已調整；舊說法、新說法與原因見<a href="../../corrections/">更正與改版紀錄</a>。';
 const weeklySectioned=claims=>claims.some(c=>c&&c.weekly_section!==undefined);
 /* Items a reader counts: featured and briefs only (not overview sentences or background documents). */
 const itemCount=e=>monthlySectioned(e)?e.claims.filter(c=>["policy","research","scholars","background","tw_policy","tw_research","tw_compare"].includes(c.section)).length:weeklySectioned(e.claims)?e.claims.filter(c=>c.weekly_section==="featured"||c.weekly_section==="briefs").length:e.claims.length;
@@ -297,7 +301,8 @@ function weeklyMain(claims,e={}){
  const tocList='<section id="sec-toc"><h2>本期目錄</h2><ul>'+toc.map(([k,h,c])=>'<li><a href="#sec-'+k+'">'+h+(c===null?"":"（"+c+"）")+"</a></li>").join("")+"</ul></section>";
  const link=(label,p)=>p?"<p>"+label+'：<a href="../'+esc(p)+'/">'+esc(periodLabel(p))+"</a></p>":"";
  const nav=e.nav?link("上一期",e.nav.prev)+link("下一期",e.nav.next):"";
- return "<p>"+weeklySummary(claims,e)+"</p>"+tocList+sections+tw+nav;
+ const citeLine=e.period?"<p>引用本期：K-12 AI 素養國際動態，週報 "+esc(periodLabel(e.period))+"。"+SITE_URL+"weekly/"+esc(e.period)+"/（引用時請註明查閱日期）。週報項目編號可能因改版調整；引用單則時，建議用該則每日短訊頁上的固定連結。</p>":"";
+ return "<p>"+weeklySummary(claims,e)+"</p>"+tocList+sections+tw+nav+citeLine;
 }
 const twAreaShown=(claims,e)=>claims.some(c=>c.region==="tw")||e.taiwan_not_searched===true||String(e.period||"")>=TW_FROM_PERIOD;
 function weeklyTaiwan(claims,e,n){
@@ -661,8 +666,22 @@ function renderAbout(){
   '<section class="panel"><div class="label">歷年資料庫</div><h2>書目索引，不是認證</h2><ul><li><strong>僅發現・未核</strong>：只核過登記資料</li><li><strong>書目已核</strong>：題名、出處、日期對過原頁</li><li><strong>原文已核</strong>：內容逐段核對</li><li>首次公開日未核實時以卷期年歸類並註明</li><li>題名下的「#」標記由 AI 判讀，未經人工核對；篇數與標記不是趨勢統計</li><li>Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，不作為升為「書目已核」的依據</li><li>不批次核對；被週報、月報引用時才逐篇讀原頁</li></ul></section></div>'+
   '<section class="notice" style="margin-top:28px"><h2>我們不宣稱的事</h2><ul><li>同一個 AI 模型的多次查核彼此一致，不等於獨立真人審閱。</li><li>網站部署成功不等於內容已獲認證。</li><li>創刊特刊與 2026 年 9 月月報為早期版本，未經獨立認證，保留公開更正紀錄。</li><li>讀不到的官方或出版社網站，只能寫「搜尋未見」，不能寫「沒有發布」。</li></ul></section>'+
   '<section class="info" style="margin-top:20px" id="glossary"><h2>用語說明</h2><ul><li><strong>首次公開</strong>：來源第一次公開的日期（出版社上線日、官方頁面日期），不是活動日或生效日；各則內文中的「來源刊登日」即本刊判定的首次公開日</li><li><strong>預印本</strong>：作者自行公開、尚未經期刊同儕審查的論文版本，結論可能在正式刊出前修改</li><li><strong>同儕審查論文</strong>：經期刊審稿後刊出的論文；同儕審查不保證結論正確</li><li><strong>準實驗</strong>：有比較組但未隨機分派的研究設計，不能直接推論因果</li><li><strong>橫斷研究</strong>：只在一個時間點蒐集資料，看得到變項間的關聯，看不出先後與因果</li><li><strong>量表發展與驗證（EFA／CFA）</strong>：編製問卷並以探索性、驗證性因素分析檢查題目結構；「適配良好」指統計模型與資料相符，不代表量表適用於所有族群</li><li><strong>科技接受模式（TAM／UTAUT）</strong>：解釋人們是否願意使用新科技的常用理論，研究多以問卷測量使用意願</li><li><strong>作者摘要報告／官方文件表示</strong>：本刊轉述原文摘要或官方原文，不是本刊的判斷</li><li><strong>編輯歸納</strong>：本刊依已列項目整理的句子，AI 整理、未經真人審閱，每句附依據編號</li><li><strong>來源含機構自述成效</strong>：官方新聞稿裡有機構自己說的成果；本刊不轉述這類說法，標示只是提醒讀者原文含有，且不是同儕審查研究的結論</li><li><strong>已通過自動檢查（非內容認證）</strong>：頁面、日期、來源與用語通過程式檢查，不代表內容經真人或專家認證</li><li><strong>「#」標籤</strong>：由 AI 依原文判讀，未經人工核對。第一個標籤是對象（#中小學、#家長行政）；<strong>#AI素養核心</strong>表示內容以師生的 AI 素養本身為主題，<strong>#AI工具應用</strong>表示用 AI 工具教或學其他科目；其餘標籤對應教育部《臺灣中小學教師與學生AI素養框架》的學生與教師各 4 個面向（如 #學生AI倫理、#教師AI賦能教學）</li><li><strong>臺灣 1、對照 1、背景 1、補 1</strong>：週報與月報中臺灣本週動態、臺灣對照、背景補充與上期補登的項目編號，和國際「第 n 則」分開編</li><li><strong>原文摘錄（快照）</strong>：本刊保存的是原文中與內容相關的段落摘錄及其雜湊值（SHA-256），用來確認摘錄後來沒有被改動；不是原文全文，完整內容請以原文連結為準</li></ul></section>'+
-  '<section class="info" style="margin-top:20px"><h2>更正政策</h2><p>發現錯誤時記錄原說法、錯誤類型、原始來源與修訂內容，在網站明示更正，不默默覆蓋。歡迎透過 <a href="../feedback/">讀者評鑑與勘誤</a>（GitHub Issues）回報。</p></section>';
+  '<section class="info" style="margin-top:20px" id="scope"><h2>監測範圍</h2><p>本刊只定期檢查下列來源；不在清單上的來源不會每天檢查，所以本刊不是全收。讀不到的網站只寫「搜尋未見」。清單會調整，變更記在 GitHub。</p><ul>'+
+  '<li><strong>國際政策（每日）</strong>：英國 GOV.UK、美國聯邦公報、日本文部科學省、中國教育部、香港特區政府新聞公報、韓國教育部、韓國教育課程評價院（KICE）、韓國教育學術資訊院（KERIS）、UNESCO；Eurydice（試行）</li>'+
+  '<li><strong>國際政策（每週）</strong>：德國各邦文化部長會議（KMK）、芬蘭國家教育署（EDUFI）、TeachAI 美國各州 AI 指引追蹤、愛沙尼亞教育研究部、印度新聞局教育部新聞（試行）；程式讀不到的 OECD、美國教育部、歐盟、紐西蘭、新加坡、法國與阿聯酋教育部，由管理者每週以瀏覽器瀏覽</li>'+
+  '<li><strong>研究</strong>：arXiv 預印本、Crossref 前一日新登記的論文，以及期刊 50 種與國際會議 21 個系列（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/blob/main/research/venue-watchlist.md">完整清單</a>）</li>'+
+  '<li><strong>臺灣（每日）</strong>：教育部即時新聞與資訊及科技教育司、師資培育及藝術教育司、學生事務及特殊教育司、國教署、行政院公報與新聞、國科會、數位發展部</li>'+
+  '<li><strong>臺灣（每週）</strong>：教育部主管法規、國家教育研究院、國科會人工智慧基本法專頁、OpenAlex（臺灣機構論文）、《教育科學研究期刊》《教育研究集刊》《當代教育研究季刊》</li></ul></section>'+
+  '<section class="info" style="margin-top:20px"><h2>更正政策</h2><p>發現錯誤時記錄原說法、錯誤類型、原始來源與修訂內容，在網站明示更正，不默默覆蓋；所有更正與改版列在<a href="../corrections/">更正與改版紀錄</a>。歡迎透過 <a href="../feedback/">讀者評鑑與勘誤</a>（GitHub Issues）回報。</p></section>';
  return shell({depth:1,current:"about",title:"查核方法與證據等級",description:"K-12 AI 素養國際動態的查核方法、證據等級與更正政策",head,main});
+}
+
+/* ---------- corrections log (joint review E3e) ---------- */
+function renderCorrections(entries){
+ const head='<div class="kicker">更正與改版紀錄</div><h1>改了什麼、為什麼改</h1><p class="lead">已刊頁面的更正、補登與改版都列在這裡：舊說法、新說法、日期與原因。新的在前；各頁頁首的改版說明連到本頁。</p>';
+ const rows=entries.slice().sort((a,b)=>compareText(b.date,a.date)||compareText(b.id,a.id)).map(x=>'<section class="panel" id="'+esc(x.id)+'"><div class="label">'+esc(x.date)+"｜"+esc(x.type)+'</div><h2><a href="../'+esc(x.path)+'">'+esc(x.target)+"</a></h2><ul><li><strong>原本</strong>："+esc(x.old)+"</li><li><strong>現在</strong>："+esc(x.new)+"</li><li><strong>原因</strong>："+esc(x.reason)+"</li></ul></section>").join("");
+ const main=(rows||'<p class="empty">目前沒有更正紀錄。</p>')+'<section class="info" style="margin-top:20px"><p>創刊特刊（2026/09/29—10/08）與 2026 年 9 月月報是早期版本，未經目前的查核流程，更正紀錄保留在各頁。發現錯誤請透過 <a href="../feedback/">讀者評鑑與勘誤</a> 回報。</p></section>';
+ return shell({depth:1,current:"about",title:"更正與改版紀錄",description:"K-12 AI 素養國際動態已刊頁面的更正、補登與改版紀錄",head,main});
 }
 
 /* ---------- homepage blocks ---------- */
@@ -708,6 +727,7 @@ function fillHomepage(html,days,data,editions=[]){
 function build(root){
  const {records,relations,venues,editions,hidden}=load(root);
  const days=dailyEditions(editions),data=archiveData(records,relations,venues,hidden);
+ const cf=path.join(root,"publication","corrections.json"),corrections=fs.existsSync(cf)?JSON.parse(fs.readFileSync(cf,"utf8")).entries:[];
  const files={
   "daily/index.html":renderDailyIndex(days),
   "weekly/index.html":renderPeriodIndex("weekly",editions),
@@ -717,7 +737,8 @@ function build(root){
   "archive/journals/index.html":renderArchiveList("journals",data.journals),
   "archive/conferences/index.html":renderArchiveList("conferences",data.conferences),
   "archive/research/index.html":renderResearchMoved(data),
-  "about/index.html":renderAbout()
+  "about/index.html":renderAbout(),
+  "corrections/index.html":renderCorrections(corrections)
  };
  const links=dailyBacklinks(editions);
  for(const d of days)files["daily/"+d.date+"/index.html"]=renderDailyEdition({...d,links});
@@ -738,4 +759,4 @@ function main(){
  console.log(write?"site pages written":"site pages consistent",Object.keys(files).length);
 }
 if(require.main===module)try{main()}catch(e){console.error(e.message);process.exitCode=1}
-module.exports={dailyBacklinks,dailyRevisionText,AI_ITEM_NOTE,ANALYSIS_LABEL,monthlySectioned,monthlyContext,monthlyWindow,monthlyNumbers,monthlyListing,monthlyNonK12Cap,MONTHLY_KEYS,MONTHLY_OVERVIEW_LINE_MAX,MONTHLY_OVERVIEW_MIN,MONTHLY_OVERVIEW_MAX,MONTHLY_BACKGROUND_MAX,MONTHLY_TW_NOTE_MAX,MONTHLY_TW_COMPARE_MAX,MONTHLY_ANALYSIS_NOTE,DAILY_REGION_FROM,dailyBackfillText,TW_FROM_PERIOD,TW_SECTIONS,WEEKLY_TW_NOTE_MAX,WEEKLY_TW_COMPARE_MAX,dailySectioned,WEEKLY_OVERVIEW_MAX,WEEKLY_BACKGROUND_MAX,weeklyNav,dailyKind,WEEKLY_SECTIONS,WEEKLY_FEATURED_MAX,weeklyRevisionText,weeklySectioned,build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};
+module.exports={renderCorrections,dailyBacklinks,dailyRevisionText,AI_ITEM_NOTE,ANALYSIS_LABEL,monthlySectioned,monthlyContext,monthlyWindow,monthlyNumbers,monthlyListing,monthlyNonK12Cap,MONTHLY_KEYS,MONTHLY_OVERVIEW_LINE_MAX,MONTHLY_OVERVIEW_MIN,MONTHLY_OVERVIEW_MAX,MONTHLY_BACKGROUND_MAX,MONTHLY_TW_NOTE_MAX,MONTHLY_TW_COMPARE_MAX,MONTHLY_ANALYSIS_NOTE,DAILY_REGION_FROM,dailyBackfillText,TW_FROM_PERIOD,TW_SECTIONS,WEEKLY_TW_NOTE_MAX,WEEKLY_TW_COMPARE_MAX,dailySectioned,WEEKLY_OVERVIEW_MAX,WEEKLY_BACKGROUND_MAX,weeklyNav,dailyKind,WEEKLY_SECTIONS,WEEKLY_FEATURED_MAX,weeklyRevisionText,weeklySectioned,build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};
