@@ -264,6 +264,35 @@ test('daily 國際／臺灣 sections: rendered page passes; changed headings or 
   fs.writeFileSync(file,changed);assert.equal(validate(d).ok,false,changed.slice(changed.indexOf('<article>'),changed.indexOf('</article>')));
  }
 });
+test('daily Taiwan backfill: marked earlier page passes with later check date; misuse is refused',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const r=require('./render-site.js'),tw={...dailyLow,claim_id:'C2',region:'tw',checked_at:'2026-10-17'};
+ dailyFixture(d,dailyLow);
+ const manifest=path.join(d,'publication','issues.json'),claims=path.join(d,'publication','claims','daily-2026-10-10.json'),file=path.join(d,'daily','2026-10-10','index.html');
+ const write=(entry,list,html)=>{fs.writeFileSync(manifest,JSON.stringify({schema_version:1,editions:[{path:'daily/2026-10-10/index.html',claims_file:'publication/claims/daily-2026-10-10.json',publication_mode:'ai_low_risk_source_facts',...entry}]}));fs.writeFileSync(claims,JSON.stringify(list));fs.writeFileSync(file,html)};
+ const page=(list,b)=>r.renderDailyEdition({date:'2026-10-10',claims:list,tw_backfilled_on:b});
+ const html=page([dailyLow,tw],'2026-10-17');
+ assert.ok(html.includes('<p>'+r.dailyBackfillText('2026-10-17')+'</p>'));
+ write({tw_backfilled_on:'2026-10-17'},[dailyLow,tw],html);assert.deepEqual(validate(d).errors,[]);
+ // A backfilled page with no Taiwan items still shows both sections.
+ const empty=page([dailyLow],'2026-10-17');assert.ok(empty.includes('<h2 data-region="tw">臺灣</h2><p>今日無合格項目。</p>'));
+ write({tw_backfilled_on:'2026-10-17'},[dailyLow],empty);assert.deepEqual(validate(d).errors,[]);
+ for(const [entry,list,h] of [
+  [{},[dailyLow,tw],page([dailyLow,tw])],
+  [{tw_backfilled_on:'2026-10-17'},[dailyLow,tw],page([dailyLow,tw])],
+  [{tw_backfilled_on:'2026-10-17'},[dailyLow,tw],html.replace(r.dailyBackfillText('2026-10-17'),'本頁已完整查核臺灣來源。')],
+  [{tw_backfilled_on:'2026-10-16'},[dailyLow,tw],page([dailyLow,tw],'2026-10-16')],
+  [{tw_backfilled_on:'2026-10-17'},[{...dailyLow,checked_at:'2026-10-17'},tw],page([{...dailyLow,checked_at:'2026-10-17'},tw],'2026-10-17')],
+  [{tw_backfilled_on:'2026-10-09'},[dailyLow],page([dailyLow],'2026-10-09')],
+  [{tw_backfilled_on:'2026-10-32'},[dailyLow],page([dailyLow],'2026-10-32')],
+  [{tw_backfilled_on:true},[dailyLow],page([dailyLow],true)]
+ ]){write(entry,list,h);assert.equal(validate(d).ok,false,JSON.stringify(entry))}
+});
+test('daily Taiwan backfill marker is refused on weekly pages and on pages from the sectioned start date',()=>{
+ const r=require('./render-site.js');assert.equal(r.DAILY_REGION_FROM,'2026-10-18');
+ const d=setup();try{issue(d,[claim]);const m=path.join(d,'publication','issues.json'),j=JSON.parse(fs.readFileSync(m,'utf8'));j.editions[0].tw_backfilled_on='2026-10-17';fs.writeFileSync(m,JSON.stringify(j));
+  assert.ok(validate(d).errors.some(e=>e.includes('tw_backfilled_on')))}finally{fs.rmSync(d,{recursive:true,force:true})}
+});
 test('daily kind badge is not accepted outside daily editions',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
  const html=require('./render-site.js').renderWeeklyEdition({period:'2026-10-09_10-15',claims:[claim]});

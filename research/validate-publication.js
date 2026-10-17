@@ -63,7 +63,7 @@ function registeredShell(document,main,issueDate,issuePath,claims,issue={}){
  if(bare){
   // Sectioned daily and weekly pages exist only as full renderer pages; a bare body would skip their layout checks.
   {const r=require("./render-site.js"),[ch,per]=issuePath.split("/");
-   if(issueDate&&r.dailySectioned({date:issueDate,claims}))errors.push("sectioned daily page must be the full renderer page");
+   if(issueDate&&r.dailySectioned({date:issueDate,claims,tw_backfilled_on:issue.tw_backfilled_on}))errors.push("sectioned daily page must be the full renderer page");
    if(ch==="weekly"&&(r.weeklySectioned(claims)||issue.revised_on!==undefined||issue.taiwan_not_searched!==undefined||(r.periodRange("weekly",per)&&String(per)>=r.TW_FROM_PERIOD)))errors.push("sectioned weekly page must be the full renderer page");}
   for(const node of nodes.filter(n=>["html","body"].includes(n.tagName))){
    if((node.attrs||[]).some(a=>node.tagName!=="html"||a.name!=="lang"))errors.push("bare report html/body attributes unsupported");
@@ -82,9 +82,9 @@ function registeredShell(document,main,issueDate,issuePath,claims,issue={}){
    const legacyEncoding=only(["http-equiv","content"])&&String(attr(node,"http-equiv")).trim().toLowerCase()==="content-type"&&/^text\/html\s*;\s*charset\s*=\s*utf-8\s*$/i.test(attr(node,"content"));
    if(!charset&&!named&&!legacyEncoding)errors.push("bare report unsupported or unreviewed metadata");
   }
- }else if(issueDate&&require("./render-site.js").dailySectioned({date:issueDate,claims})){
+ }else if(issueDate&&require("./render-site.js").dailySectioned({date:issueDate,claims,tw_backfilled_on:issue.tw_backfilled_on})){
   // 國際／臺灣 sections: headings and empty-section lines are renderer text, so the page must equal the render.
-  let expected=null;try{expected=parse5.parse(require("./render-site.js").renderDailyEdition({date:issueDate,claims}))}catch(e){errors.push("daily renderer refused claims: "+e.message)}
+  let expected=null;try{expected=parse5.parse(require("./render-site.js").renderDailyEdition({date:issueDate,claims,tw_backfilled_on:issue.tw_backfilled_on}))}catch(e){errors.push("daily renderer refused claims: "+e.message)}
   if(expected&&JSON.stringify(shellShape(document,true))!==JSON.stringify(shellShape(expected,true)))errors.push("registered daily page differs from trusted renderer output for its claims");
   else if(expected){const m=all(expected).find(n=>n.tagName==="main");return {errors,fixedText:new Set(all(m).filter(n=>substantive.has(n.tagName)&&!attr(n,"data-claim-id")&&attr(n,"data-claim-tags")==null&&attr(n,"data-claim-kind")==null).map(n=>normalized(text(n))))}}
  }else if(issueDate){
@@ -324,7 +324,7 @@ function monthlyStructure(claims){
  }
  return errors;
 }
-function dailyFact(c,issueDate){
+function dailyFact(c,issueDate,backfill){
  const errors=[];
  const attributed=c.daily_fact_kind==="official_attributed_summary"||c.daily_fact_kind==="research_abstract_attributed_summary";
  if(attributed){
@@ -348,7 +348,9 @@ function dailyFact(c,issueDate){
   const expected=attributed?prefix+attribution+c.attributed_summary+"（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）":prefix;
   if(c.claim_text!==expected)errors.push("daily claim must use exact source-attributed or bibliographic template");
  }
- if(c.checked_at>issueDate||c.publication_date>issueDate)errors.push("source or review date occurs after daily issue date");
+ // A Taiwan item added by a later backfill search was checked on the backfill date, not the issue date.
+ const checkedBy=backfill&&c.region==="tw"?backfill:issueDate;
+ if(c.checked_at>checkedBy||c.publication_date>issueDate)errors.push("source or review date occurs after daily issue date");
  if(typeof c.first_disclosed_on!=="string"||c.first_disclosed_on!==c.publication_date)errors.push("verified first disclosure required");
  if(c.first_disclosed_on&&c.first_disclosed_on>issueDate)errors.push("first disclosure occurs after daily issue date");
  if(typeof c.first_disclosed_on==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(c.first_disclosed_on)){
@@ -413,6 +415,9 @@ function validate(root){
   if(p.startsWith("monthly/"))errors.push(...monthlyStructure(data).map(e=>q+" "+e));
   if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data,p.split("/")[1],{dailyClaims:dailyClaims(),issue}).map(e=>q+" "+e));
   if(issue.taiwan_not_searched!==undefined&&(issue.taiwan_not_searched!==true||!p.startsWith("weekly/")))errors.push(p+": taiwan_not_searched must be true on a weekly edition");
+  if(issue.tw_backfilled_on!==undefined){const r=require("./render-site.js"),b=issue.tw_backfilled_on;
+   if(!daily||typeof b!=="string"||!/^\d{4}-\d{2}-\d{2}$/.test(b)||!Number.isFinite(Date.parse(b+"T00:00:00Z"))||new Date(b+"T00:00:00Z").toISOString().slice(0,10)!==b||!issueDate||issueDate>=r.DAILY_REGION_FROM||b<issueDate)
+    errors.push(p+": tw_backfilled_on must be a real ISO date, not before the issue date, on a daily page dated before "+r.DAILY_REGION_FROM);}
   if(issue.revised_on!==undefined&&(!p.startsWith("weekly/")||typeof issue.revised_on!=="string"||!/^\d{4}-\d{2}-\d{2}$/.test(issue.revised_on)||!Number.isFinite(Date.parse(issue.revised_on+"T00:00:00Z"))||new Date(issue.revised_on+"T00:00:00Z").toISOString().slice(0,10)!==issue.revised_on))errors.push(p+": revised_on must be a real ISO date on a weekly edition");
   const claimIds=new Set();
   for(const c of data){
@@ -420,7 +425,7 @@ function validate(root){
    if(claimIds.has(c.claim_id))errors.push("duplicate claim_id in "+q+": "+c.claim_id);claimIds.add(c.claim_id);
    if(c.decision!=="publish"){errors.push("edition contains unpublished/held claim "+q+" "+c.claim_id);continue}
    if(c.region!==undefined&&!["intl","tw"].includes(c.region))errors.push(q+" "+c.claim_id+": region must be intl or tw");
-   if(daily)errors.push(...dailyFact(c,issueDate||"0000-00-00").map(e=>q+" "+c.claim_id+": "+e));
+   if(daily)errors.push(...dailyFact(c,issueDate||"0000-00-00",issue.tw_backfilled_on).map(e=>q+" "+c.claim_id+": "+e));
    if(daily){
     let sheets;try{sheets=cumulativeWorksheets(root)}catch(e){errors.push(e.message);continue}
     if(pendingReviews(sheets,c).length)errors.push(q+" "+c.claim_id+": unresolved cumulative source review blocks daily publication");
