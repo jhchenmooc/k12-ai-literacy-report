@@ -214,7 +214,7 @@ test('external-review control: exact daily renderer shell is accepted',t=>{
 test('daily tag line: rendered line passes; altered, misplaced, repeated or non-daily lines are blocked',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
  const html=require('./render-site.js').renderDailyEdition({date:'2026-10-10',claims:[dailyLow]});
- const line='<p data-claim-tags="C1">#中小學 #AI素養核心 #教師AI專業發展</p>';
+ const line='<p data-claim-tags="C1"><span>#中小學</span> <span>#AI素養核心</span> <span>#教師AI專業發展</span></p>';
  assert.ok(html.includes(line));
  const file=path.join(d,'daily','2026-10-10','index.html');fs.writeFileSync(file,html);
  assert.deepEqual(validate(d).errors,[]);
@@ -226,10 +226,37 @@ test('daily tag line: rendered line passes; altered, misplaced, repeated or non-
   html.replace(line,'<div data-claim-tags="C1">#中小學 #AI素養核心 #教師AI專業發展</div>'),
   html.replace(line,line+line),
   html.replace('<article>','<article>'+line).replace('</p>'+line,'</p>'),
-  html.replace(line,'<p data-claim-tags="C1" data-claim-id="C1">#中小學 #AI素養核心 #教師AI專業發展</p>')
+  html.replace(line,'<p data-claim-tags="C1" data-claim-id="C1">#中小學 #AI素養核心 #教師AI專業發展</p>'),
+  html.replace(line,'<p data-claim-tags="C1"><span class="x">#中小學</span> <span>#AI素養核心</span> <span>#教師AI專業發展</span></p>'),
+  html.replace(line,'<p data-claim-tags="C1"><span><b>#中小學</b></span> <span>#AI素養核心</span> <span>#教師AI專業發展</span></p>')
  ]){fs.writeFileSync(file,changed);assert.equal(validate(d).ok,false,changed.slice(changed.indexOf('<article>'),changed.indexOf('</article>')))}
  fs.writeFileSync(path.join(d,'publication','claims','daily-2026-10-10.json'),JSON.stringify([{...dailyLow,ai_lit_dims:['T-PD','T-TEA']}]));
  fs.writeFileSync(file,html);assert.equal(validate(d).ok,false);
+});
+test('daily kind badge: rendered badge passes; altered, misplaced, repeated or non-daily badges are blocked',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
+ const {renderDailyEdition,dailyKind}=require('./render-site.js'),html=renderDailyEdition({date:'2026-10-10',claims:[dailyLow]});
+ const [cls,label]=dailyKind(dailyLow),badge='<p data-claim-kind="C1" data-kind="'+cls+'">'+label+'</p>';
+ assert.ok(html.includes(badge+'<p data-claim-id="C1">'));
+ const file=path.join(d,'daily','2026-10-10','index.html');fs.writeFileSync(file,html);
+ assert.deepEqual(validate(d).errors,[]);
+ const other=cls==='policy'?'research':'policy';
+ for(const changed of [
+  html.replace(badge,'<p data-claim-kind="C1" data-kind="'+cls+'">本刊推薦</p>'),
+  html.replace(badge,'<p data-claim-kind="C1" data-kind="'+other+'">'+label+'</p>'),
+  html.replace(badge,'<p data-claim-kind="C1" data-kind="'+cls+'" class="kind">'+label+'</p>'),
+  html.replace(badge,'<p data-claim-kind="C9" data-kind="'+cls+'">'+label+'</p>'),
+  html.replace(badge,'<p data-claim-kind="C1" data-kind="'+cls+'"><strong>'+label+'</strong></p>'),
+  html.replace(badge,badge+badge),
+  html.replace(badge,'').replace('</article>',badge+'</article>'),
+  html.replace(badge,'<p data-kind="'+cls+'">'+label+'</p>')
+ ]){fs.writeFileSync(file,changed);assert.equal(validate(d).ok,false,changed.slice(changed.indexOf('<article>'),changed.indexOf('</article>')))}
+});
+test('daily kind badge is not accepted outside daily editions',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
+ const html=require('./render-site.js').renderWeeklyEdition({period:'2026-10-09_10-15',claims:[claim]});
+ updateHtml(d,html.replace('<p data-claim-id="C1">','<p data-claim-kind="C1" data-kind="policy">短訊</p><p data-claim-id="C1">'));
+ const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes('only in daily')),result.errors.join('\n'));
 });
 test('daily tag line is not accepted outside daily editions',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);

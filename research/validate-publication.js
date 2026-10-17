@@ -114,7 +114,7 @@ function matchBody(document,claims,issueDate,issuePath,issue={}){
   if(node.nodeName==="#comment"||node.nodeName==="#documentType")errors.push("comments/declarations unsupported within main");
   if(node.tagName&&!safeTags.has(node.tagName))errors.push("unsupported HTML tag in main: "+node.tagName);
   if(node.tagName&&node.namespaceURI!==HTML_NS)errors.push("non-HTML namespace unsupported within main");
-  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(a.name==="data-claim-tags"&&node.tagName==="p"))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
+  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
  }
  /* Daily tag line (manager decision 2026-10-11): a plain <p data-claim-tags="ID"> directly after the
     claim's own element, whose text must equal dailyTagText(claim); at most once per claim, daily only. */
@@ -126,13 +126,31 @@ function matchBody(document,claims,issueDate,issuePath,issue={}){
   if(!c){errors.push("claim tag line names unknown claim "+id);continue}
   tagCounts.set(id,(tagCounts.get(id)||0)+1);
   if(tagCounts.get(id)>1)errors.push("claim tag line repeated: "+id);
-  if(!expected||normalized(text(node))!==expected||children(node).some(x=>x.nodeName!=="#text"))errors.push("claim tag line differs from claim fields: "+id);
+  // Each tag may sit in its own plain <span> so it can be styled as a chip; the joined text must still match.
+  const plainSpan=x=>x.tagName==="span"&&!(x.attrs||[]).length&&children(x).every(y=>y.nodeName==="#text");
+  if(!expected||normalized(text(node))!==expected||children(node).some(x=>x.nodeName!=="#text"&&!plainSpan(x)))errors.push("claim tag line differs from claim fields: "+id);
   const siblings=children(node.parentNode).filter(x=>x.tagName),prev=siblings[siblings.indexOf(node)-1];
   if(!prev||attr(prev,"data-claim-id")!==id)errors.push("claim tag line must directly follow its claim: "+id);
+ }
+ /* Daily kind badge (manager request 2026-10-17): a plain <p data-claim-kind="ID" data-kind="policy|research">
+    directly before its claim, whose text and colour class must equal the renderer's label for the claim's kind. */
+ const kindCounts=new Map(),{dailyKind}=require("./render-site.js");
+ for(const node of nodes.filter(n=>attr(n,"data-claim-kind")!==undefined&&attr(n,"data-claim-kind")!==null)){
+  const id=attr(node,"data-claim-kind"),c=map.get(id);
+  if(!issuePath.startsWith("daily/")){errors.push("claim kind badge allowed only in daily editions");continue}
+  if(attr(node,"data-claim-id")||attr(node,"data-claim-tags")){errors.push("claim kind badge cannot also be a claim or tag line: "+id);continue}
+  if(!c){errors.push("claim kind badge names unknown claim "+id);continue}
+  kindCounts.set(id,(kindCounts.get(id)||0)+1);
+  if(kindCounts.get(id)>1)errors.push("claim kind badge repeated: "+id);
+  const [cls,label]=dailyKind(c);
+  if(normalized(text(node))!==label||attr(node,"data-kind")!==cls||children(node).some(x=>x.nodeName!=="#text"))errors.push("claim kind badge differs from claim fields: "+id);
+  const siblings=children(node.parentNode).filter(x=>x.tagName),next=siblings[siblings.indexOf(node)+1];
+  if(!next||attr(next,"data-claim-id")!==id)errors.push("claim kind badge must directly precede its claim: "+id);
  }
  for(const node of content){
   const t=normalized(text(node));if(!t)continue;
   if(attr(node,"data-claim-tags")!==undefined&&attr(node,"data-claim-tags")!==null)continue;
+  if(attr(node,"data-claim-kind")!==undefined&&attr(node,"data-claim-kind")!==null)continue;
   const id=attr(node,"data-claim-id");
   if(!id&&shellCheck.fixedText.has(t))continue;
   if(!id){errors.push("unbound content <"+node.tagName+">: "+t.slice(0,70));continue}
