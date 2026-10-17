@@ -44,12 +44,22 @@ test("generated pages contain no scripts, inline handlers or unsafe URL schemes"
 test("homepage keeps feedback entry and both generated blocks",()=>{
  const home=build(root)["index.html"];
  assert.ok(home.includes("feedback/")&&home.includes("GitHub"));
- for(const m of ["daily-latest","archive-stats"])assert.ok(home.includes("<!-- generated:"+m+":start -->")&&home.includes("<!-- generated:"+m+":end -->"));
+ for(const m of ["weekly-latest","daily-latest","archive-stats"])assert.ok(home.includes("<!-- generated:"+m+":start -->")&&home.includes("<!-- generated:"+m+":end -->"));
  assert.throws(()=>fillHomepage("<html></html>",[],{policy:[],research:[]}),/marker missing/);
 });
 
+test("homepage weekly card follows the newest registered weekly",()=>{
+ const shell='<!-- generated:weekly-latest:start --><!-- generated:weekly-latest:end --><!-- generated:daily-latest:start --><!-- generated:daily-latest:end --><!-- generated:archive-stats:start --><!-- generated:archive-stats:end -->';
+ const data={policy:[],journals:[],conferences:[]},w=(p,n)=>({path:"weekly/"+p+"/index.html",claims:Array(n).fill({})});
+ const card=eds=>fillHomepage(shell,[],data,eds).split("weekly-latest:start -->")[1].split("<!--")[0];
+ assert.match(card([]),/尚無以新版流程發布的週報/);
+ const two=card([w("2026-10-09_10-15",14),w("2026-10-16_10-22",3)]);
+ assert.match(two,/最新週報：2026\/10\/16—10\/22/);assert.match(two,/3 則/);assert.match(two,/下一期預定 10 月 30 日（涵蓋 10\/23—10\/29）/);
+ assert.ok(two.includes('href="./weekly/2026-10-16_10-22/"'));
+});
+
 test("homepage stats count preprints and book chapters separately from journal articles",()=>{
- const shell='<!-- generated:daily-latest:start --><!-- generated:daily-latest:end --><!-- generated:archive-stats:start --><!-- generated:archive-stats:end -->';
+ const shell='<!-- generated:weekly-latest:start --><!-- generated:weekly-latest:end --><!-- generated:daily-latest:start --><!-- generated:daily-latest:end --><!-- generated:archive-stats:start --><!-- generated:archive-stats:end -->';
  const group=(key,n)=>({key,rows:Array.from({length:n},(_,i)=>({id:key+i}))});
  const stats=journals=>fillHomepage(shell,[],{policy:[group("p",3)],journals,conferences:[group("c",4)]}).match(/<div class="stats">.*?<\/div><!--/)[0];
  const labels=html=>[...html.matchAll(/<strong>(\d+)<\/strong><span>([^<]+)<\/span>/g)].map(m=>m[2]+"="+m[1]);
