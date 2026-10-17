@@ -85,9 +85,11 @@ function registeredShell(document,main,issueDate,issuePath,claims,issue={}){
   const [channel,period]=issuePath.split("/"),renderer=require("./render-site.js");
   if(channel==="weekly"&&renderer.periodRange(channel,period)&&(renderer.weeklySectioned(claims)||issue.revised_on!==undefined)){
    // Sectioned weekly: section text is fixed renderer code, so the whole page must equal the render of its claims.
-   let expected=null;try{expected=parse5.parse(renderer.renderWeeklyEdition({period,claims,revised_on:issue.revised_on}))}catch(e){errors.push("weekly renderer refused claims: "+e.message)}
+   const nav=renderer.weeklyNav(period,issue.weeklyPeriods||[]);
+   let expected=null;try{expected=parse5.parse(renderer.renderWeeklyEdition({period,claims,revised_on:issue.revised_on,nav}))}catch(e){errors.push("weekly renderer refused claims: "+e.message)}
    if(expected&&JSON.stringify(shellShape(document,true))!==JSON.stringify(shellShape(expected,true)))errors.push("registered weekly page differs from trusted renderer output for its claims");
-   else if(expected)return {errors,fixedText:new Set([...renderer.WEEKLY_FIXED,...renderer.weeklyDerivedText(claims),...(issue.revised_on?[renderer.weeklyRevisionText(issue.revised_on)]:[])])};
+   // The page equals the render, so every non-claim text node in it is renderer code or a value derived from claim fields.
+   else if(expected){const m=all(expected).find(n=>n.tagName==="main");return {errors,fixedText:new Set(all(m).filter(n=>substantive.has(n.tagName)&&!attr(n,"data-claim-id")).map(n=>normalized(text(n))))}}
   }else if(channel==="weekly"&&renderer.periodRange(channel,period)){
    const expected=parse5.parse(renderer.renderWeeklyEdition({period,claims:[]}));
    if(JSON.stringify(shellShape(document))!==JSON.stringify(shellShape(expected)))errors.push("registered weekly shell differs from trusted renderer outside main");
@@ -114,7 +116,7 @@ function matchBody(document,claims,issueDate,issuePath,issue={}){
   if(node.nodeName==="#comment"||node.nodeName==="#documentType")errors.push("comments/declarations unsupported within main");
   if(node.tagName&&!safeTags.has(node.tagName))errors.push("unsupported HTML tag in main: "+node.tagName);
   if(node.tagName&&node.namespaceURI!==HTML_NS)errors.push("non-HTML namespace unsupported within main");
-  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined)||(a.name==="data-kind"&&node.tagName==="td"&&["policy","research"].includes(a.value)))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
+  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined)||(a.name==="data-kind"&&node.tagName==="td"&&["policy","research","background"].includes(a.value)))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
  }
  /* Daily tag line (manager decision 2026-10-11): a plain <p data-claim-tags="ID"> directly after the
     claim's own element, whose text must equal dailyTagText(claim); at most once per claim, daily only. */
@@ -188,18 +190,42 @@ function dailySourceLink(document,c){
 }
 /* Sectioned weekly claims: every claim names a known section; at most five featured items, each marked as
    checked against the full text; every other item names the daily claim it repeats. Structural only. */
-function weeklyStructure(claims){
+function weeklyStructure(claims,period){
  const errors=[],r=require("./render-site.js"),keys=r.WEEKLY_SECTIONS.map(x=>x[0]),list=claims.filter(c=>c&&typeof c==="object");
  if(!r.weeklySectioned(list))return errors;
+ const range=r.periodRange("weekly",period)||{},byId=new Map(list.map(c=>[c.claim_id,c]));
+ const inIssue=id=>{const c=byId.get(id);return !!c&&["featured","briefs"].includes(c.weekly_section)};
  for(const c of list){
-  const id=c.claim_id;
-  if(!keys.includes(c.weekly_section)){errors.push(id+": weekly claim section must be one of "+keys.join(", "));continue}
-  if(c.weekly_section==="featured"&&c.full_text_checked!==true)errors.push(id+": featured weekly item must be checked against the full text");
-  if(c.weekly_section==="briefs"&&!(typeof c.weekly_source_claim==="string"&&/^D\d{8}-\d{2}$/.test(c.weekly_source_claim)))errors.push(id+": weekly brief must name its daily source claim");
+  const id=c.claim_id,sec=c.weekly_section;
+  if(!keys.includes(sec)){errors.push(id+": weekly claim section must be one of "+keys.join(", "));continue}
+  if(c.assertion_type==="editorial_analysis"&&sec!=="overview")errors.push(id+": editorial analysis belongs only in the overview");
+  if(c.title_zh!==undefined&&(typeof c.title_zh!=="string"||!c.title_zh.trim()||c.title_zh.length>200))errors.push(id+": title_zh must be a short non-empty string");
+  if(sec==="featured"&&c.full_text_checked!==true)errors.push(id+": featured weekly item must be checked against the full text");
+  if(sec==="briefs"&&!(typeof c.weekly_source_claim==="string"&&/^D\d{8}-\d{2}$/.test(c.weekly_source_claim)))errors.push(id+": weekly brief must name its daily source claim");
+  if((sec==="featured"||sec==="briefs")&&range.start&&!(c.first_disclosed_on>=range.start&&c.first_disclosed_on<=range.end))errors.push(id+": weekly item must be first disclosed within the period");
+  if(sec==="background"){
+   if(!(typeof c.first_disclosed_on==="string"&&range.start&&c.first_disclosed_on<range.start))errors.push(id+": background item must be first disclosed before the period");
+   const rel=Array.isArray(c.related_claim_ids)?c.related_claim_ids:[];
+   if(!rel.length||new Set(rel).size!==rel.length||!rel.every(inIssue))errors.push(id+": background item must relate to distinct featured or brief items of this issue");
+  }else if(c.related_claim_ids!==undefined)errors.push(id+": related_claim_ids only apply to background items");
+  if(sec==="overview"){
+   if(c.assertion_type!=="editorial_analysis"||c.claim_class!=="descriptive")errors.push(id+": overview must be descriptive editorial analysis");
+   const ids=Array.isArray(c.supporting_claim_ids)?c.supporting_claim_ids:[];
+   if(ids.length<2||new Set(ids).size!==ids.length||!ids.every(inIssue))errors.push(id+": overview needs at least two distinct featured or brief items of this issue");
+   else if(new Set(ids.map(x=>byId.get(x).source_url)).size<2)errors.push(id+": overview needs at least two different sources");
+   if(typeof c.claim_text!=="string"||c.claim_text.length>150)errors.push(id+": overview sentence must be at most 150 characters");
+   const banned=WEEKLY_OVERVIEW_BANNED.filter(w=>String(c.claim_text).includes(w));
+   if(banned.length)errors.push(id+": overview uses words reserved for outcome or advice claims: "+banned.join("、"));
+  }else if(c.supporting_claim_ids!==undefined)errors.push(id+": supporting_claim_ids only apply to the overview");
  }
- if(list.filter(c=>c.weekly_section==="featured").length>r.WEEKLY_FEATURED_MAX)errors.push("weekly featured items exceed "+r.WEEKLY_FEATURED_MAX);
+ const count=s=>list.filter(c=>c.weekly_section===s).length;
+ if(count("featured")>r.WEEKLY_FEATURED_MAX)errors.push("weekly featured items exceed "+r.WEEKLY_FEATURED_MAX);
+ if(count("overview")>r.WEEKLY_OVERVIEW_MAX)errors.push("weekly overview sentences exceed "+r.WEEKLY_OVERVIEW_MAX);
+ if(count("background")>r.WEEKLY_BACKGROUND_MAX)errors.push("weekly background items exceed "+r.WEEKLY_BACKGROUND_MAX);
  return errors;
 }
+/* Overview sentences only group what this issue's items say; they may not claim outcomes, trends or advice. */
+const WEEKLY_OVERVIEW_BANNED=["成效","有效","提升","改善","導致","因果","證明","顯著","趨勢","建議","應該","臺灣","台灣"];
 /* Monthly claims: every claim names a known section; scholar items name their research group; an editorial
    analysis sits only under trends, stays descriptive (no human review) and rests on at least two other claims
    in the same issue from at least two different research groups. Structural only: it cannot judge the trend. */
@@ -282,7 +308,7 @@ function validate(root){
  if(!manifest||typeof manifest!=="object"||Array.isArray(manifest)||!Array.isArray(manifest.editions))return {ok:false,errors:["Invalid issues manifest: editions array required"],warnings};
  const editions=Array.isArray(manifest.editions)?manifest.editions:[];
  const publicFiles=inventory(root,manifest);errors.push(...publicFiles.errors);
- const encountered=new Set();
+ const encountered=new Set(),weeklyPeriods=editions.map(e=>e&&typeof e.path==="string"&&!LEGACY.has(e.path)&&(/^weekly\/([a-zA-Z0-9_-]+)\/index\.html$/.exec(e.path)||[])[1]).filter(Boolean);
  for(const issue of editions){
   if(!issue||typeof issue!=="object"){errors.push("invalid edition");continue}
   const p=issue.path,q=issue.claims_file;
@@ -305,9 +331,9 @@ function validate(root){
   let html;try{html=fs.readFileSync(htmlPath,"utf8")}catch(e){errors.push("edition HTML unreadable "+p+": "+e.message);continue}
   const dom=parsed(html);errors.push(...dom.errors.map(e=>p+": "+e));
   errors.push(...staticHtmlSafety(dom.document,p));
-  errors.push(...matchBody(dom.document,data,issueDate,p,issue).map(e=>p+": "+e));
+  errors.push(...matchBody(dom.document,data,issueDate,p,{...issue,weeklyPeriods}).map(e=>p+": "+e));
   if(p.startsWith("monthly/"))errors.push(...monthlyStructure(data).map(e=>q+" "+e));
-  if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data).map(e=>q+" "+e));
+  if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data,p.split("/")[1]).map(e=>q+" "+e));
   if(issue.revised_on!==undefined&&(!p.startsWith("weekly/")||typeof issue.revised_on!=="string"||!/^\d{4}-\d{2}-\d{2}$/.test(issue.revised_on)||!Number.isFinite(Date.parse(issue.revised_on+"T00:00:00Z"))||new Date(issue.revised_on+"T00:00:00Z").toISOString().slice(0,10)!==issue.revised_on))errors.push(p+": revised_on must be a real ISO date on a weekly edition");
   const claimIds=new Set();
   for(const c of data){

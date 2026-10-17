@@ -334,11 +334,11 @@ test('monthly structure: sections, research groups and trend support are enforce
  }
 });
 // Sectioned weekly (manager decision 2026-10-17): featured items re-checked against full text, then other daily items.
-const featured={...claim,claim_id:'W1',weekly_section:'featured',full_text_checked:true,claim_text:'合成案例：精選深入版'};
-const brief={...claim,claim_id:'W2',weekly_section:'briefs',weekly_source_claim:'D20261012-01',claim_text:'合成案例：其他短訊'};
+const featured={...claim,claim_id:'W1',weekly_section:'featured',full_text_checked:true,first_disclosed_on:'2026-10-10',claim_text:'合成案例：精選深入版'};
+const brief={...claim,claim_id:'W2',weekly_section:'briefs',weekly_source_claim:'D20261012-01',first_disclosed_on:'2026-10-11',source_url:'https://example.org/other',evidence_source_url:'https://example.org/other',claim_text:'合成案例：其他短訊'};
 function weeklyFull(d,claims,html,extra={}){
- const {renderWeeklyEdition}=require('./render-site.js');
- let page=html;if(page===undefined)try{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims,revised_on:extra.revised_on})}catch{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims:claims.map(c=>({...c,weekly_section:'briefs'}))})}
+ const {renderWeeklyEdition,weeklyNav}=require('./render-site.js'),nav=weeklyNav('2026-10-09_10-15',['2026-10-09_10-15']);
+ let page=html;if(page===undefined)try{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims,revised_on:extra.revised_on,nav})}catch{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims:claims.map(c=>({...c,weekly_section:'briefs'})),nav})}
  updateHtml(d,page);
  fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[{path:'weekly/2026-10-09_10-15/index.html',claims_file:'publication/claims/a.json',...extra}]}));
  fs.writeFileSync(path.join(d,'publication','claims','a.json'),JSON.stringify(claims));
@@ -354,7 +354,7 @@ test('weekly control: sectioned renderer page with a revision note is accepted',
 });
 test('weekly attack: any change to a sectioned page, or section text on a flat page, is refused',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
- const {renderWeeklyEdition}=require('./render-site.js'),html=renderWeeklyEdition({period:'2026-10-09_10-15',claims:[featured,brief],revised_on:'2026-10-17'});
+ const {renderWeeklyEdition,weeklyNav}=require('./render-site.js'),nav=weeklyNav('2026-10-09_10-15',['2026-10-09_10-15']),html=renderWeeklyEdition({period:'2026-10-09_10-15',claims:[featured,brief],revised_on:'2026-10-17',nav});
  for(const changed of [html.replace('<h2>本週精選</h2>','<h2>本刊強烈推薦</h2>'),html.replace('<h2>本週其他短訊</h2>','<h2>本週其他短訊</h2><p>未審核結論</p>'),
   html.replace('改版前內容保留','改版前內容已刪除'),renderWeeklyEdition({period:'2026-10-09_10-15',claims:[featured,brief]}),
   renderWeeklyEdition({period:'2026-10-09_10-15',claims:[{...featured,weekly_section:'briefs'},brief],revised_on:'2026-10-17'})]){
@@ -365,16 +365,54 @@ test('weekly attack: any change to a sectioned page, or section text on a flat p
 });
 test('weekly table: kind badge, date and tag cells come only from the renderer',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
- const {renderWeeklyEdition}=require('./render-site.js'),html=renderWeeklyEdition({period:'2026-10-09_10-15',claims:[featured,brief]});
- assert.ok(html.includes('<td data-kind="policy"><span>政策</span></td><td>未知</td>'),html.slice(html.indexOf('<table>'),html.indexOf('</table>')));
+ const {renderWeeklyEdition,weeklyNav}=require('./render-site.js'),html=renderWeeklyEdition({period:'2026-10-09_10-15',claims:[featured,brief],nav:weeklyNav('2026-10-09_10-15',['2026-10-09_10-15'])});
+ assert.ok(html.includes('<td data-kind="policy"><span>政策</span><br>其他</td><td>2026-10-10</td>'),html.slice(html.indexOf('<table>'),html.indexOf('</table>')));
  assert.deepEqual(weeklyFull(d,[featured,brief],html).errors,[]);
  for(const changed of [html.replace('<span>政策</span>','<span>本刊推薦</span>'),html.replace('data-kind="policy"','data-kind="alert"'),
-  html.replace('<td>未知</td>','<td>2026-10-17</td>'),html.replace('<th scope="col">內容</th>','<th scope="col">結論</th>'),
+  html.replace('<td>2026-10-10</td>','<td>2026-10-17</td>'),html.replace('<th scope="col">內容</th>','<th scope="col">結論</th>'),
   html.replace('<td>1</td>','<td>未審核結論</td>')]){
   assert.equal(weeklyFull(d,[featured,brief],changed).ok,false);
  }
  const bare=weeklyFull(d,[claim],'<html><main><table><tr><td>2026-10-10</td><td data-claim-id="C1">合成案例：某機構公告</td></tr></table></main></html>');
  assert.equal(bare.ok,false);assert.ok(bare.errors.some(e=>e.includes('unbound content')));
+});
+// Overview (editorial analysis citing item numbers), background before the period, Chinese title, facets, nav.
+const overview={...claim,claim_id:'O1',weekly_section:'overview',assertion_type:'editorial_analysis',supporting_claim_ids:['W1','W2'],claim_text:'合成案例：本期兩則都以教師為對象'};
+const background={...claim,claim_id:'B1',weekly_section:'background',first_disclosed_on:'2026-09-01',related_claim_ids:['W2'],claim_text:'合成案例：先前的框架'};
+test('weekly additions: overview, background, Chinese title, facets and nav render and pass',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const f2={...featured,title_zh:'合成中文譯名',claim_text:'合成案例：精選深入版。樣本：三年級 20 人。限制：單一學校。'};
+ const claims=[overview,f2,brief,background];
+ const r=weeklyFull(d,claims);assert.deepEqual(r.errors,[]);
+ const html=fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8');
+ for(const text of ['本週導讀','<p>依據：第 1、2 則</p>','背景補充','相關：第 2 則','<span>背景</span>','中文譯名：合成中文譯名','。<br><strong>樣本：</strong>三年級','本期 2 則（精選 1、其他短訊 1）'])assert.ok(html.includes(text),text);
+ assert.ok(html.indexOf('本週導讀')<html.indexOf('本週精選')&&html.indexOf('本週其他短訊')<html.indexOf('背景補充'));
+ for(const changed of [html.replace('依據：第 1、2 則','依據：第 1 則'),html.replace('相關：第 2 則','相關：第 1 則'),html.replace('中文譯名：合成中文譯名','中文譯名：未審核譯名'),html.replace('<span>背景</span>','<span>政策</span>')])
+  assert.equal(weeklyFull(d,claims,changed).ok,false);
+ const {renderWeeklyEdition,weeklyNav}=require('./render-site.js');
+ assert.deepEqual(weeklyNav('2026-10-09_10-15',['2026-10-09_10-15','2026-10-16_10-22']),{prev:'2026-09-29_10-08',next:'2026-10-16_10-22'});
+ assert.ok(renderWeeklyEdition({period:'2026-10-09_10-15',claims,nav:{prev:'2026-09-29_10-08',next:null}}).includes('<p>上一期：<a href="../2026-09-29_10-08/">2026-09-29_10-08</a></p>'));
+});
+test('weekly additions: overview, background and period rules are enforced',t=>{
+ const cases={
+  'overview with one support':[[{...overview,supporting_claim_ids:['W1']},featured,brief],'at least two distinct'],
+  'overview citing itself or background':[[{...overview,supporting_claim_ids:['W1','B1']},featured,brief,background],'at least two distinct'],
+  'overview from one source':[[overview,featured,{...brief,source_url:featured.source_url,evidence_source_url:featured.source_url}],'two different sources'],
+  'overview banned word':[[{...overview,claim_text:'合成案例：本期研究證明成效'},featured,brief],'reserved for outcome'],
+  'overview too long':[[{...overview,claim_text:'合'.repeat(151)},featured,brief],'at most 150'],
+  'overview not analysis':[[{...overview,assertion_type:'direct_statement'},featured,brief],'descriptive editorial analysis'],
+  'analysis outside overview':[[{...featured,assertion_type:'editorial_analysis'},brief],'belongs only in the overview'],
+  'too many overview':[[overview,{...overview,claim_id:'O2'},{...overview,claim_id:'O3'},{...overview,claim_id:'O4'},featured,brief],'overview sentences exceed 3'],
+  'background inside period':[[featured,brief,{...background,first_disclosed_on:'2026-10-12'}],'before the period'],
+  'background unrelated':[[featured,brief,{...background,related_claim_ids:['X9']}],'relate to distinct'],
+  'related ids on brief':[[featured,{...brief,related_claim_ids:['W1']}],'only apply to background'],
+  'brief outside period':[[featured,{...brief,first_disclosed_on:'2026-10-20'}],'within the period'],
+  'empty Chinese title':[[{...featured,title_zh:' '},brief],'title_zh'],
+ };
+ for(const [name,[claims,reason]] of Object.entries(cases)){
+  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+  const r=weeklyFull(d,claims);assert.equal(r.ok,false,name);assert.ok(r.errors.some(e=>e.includes(reason)),name+': '+r.errors.join(' | '));
+ }
 });
 test('weekly structure: sections, full-text check, daily source and featured cap are enforced',t=>{
  const many=Array.from({length:6},(_,i)=>({...featured,claim_id:'F'+i,claim_text:'合成案例：精選 '+i}));

@@ -138,44 +138,80 @@ function renderPeriodEdition(kind,e){
  const r=periodRange(kind,e.period);if(!r)throw new Error("invalid "+kind+" period: "+e.period);
  const isWeekly=kind==="weekly",label=isWeekly?"週報":"月報";
  const h1=isWeekly?r.start+" 至 "+r.end+" 週報":r.year+" 年 "+r.month+" 月月報";
- const notice=isWeekly?"每則逐句對回原文並標示證據等級；由 AI 整理，未經獨立認證。請點連結閱讀原文。":"整合當月週報與重要背景，區分原始發現與本刊分析；由 AI 整理，未經獨立認證。請點連結閱讀原文。";
+ const notice=isWeekly?"每則對回原文並標示來源類型；由 AI 整理，未經獨立認證。請點連結閱讀原文。":"整合當月週報與重要背景，區分原始發現與本刊分析；由 AI 整理，未經獨立認證。請點連結閱讀原文。";
  const head='<div class="kicker">'+label+"</div><h1>"+esc(h1)+'</h1><div class="notice"><p>'+notice+"</p></div>";
  const revision=isWeekly&&e.revised_on?"<p>"+weeklyRevisionText(e.revised_on)+"</p>":"";
- const main="<article>"+revision+(isWeekly?weeklyMain(e.claims):monthlyMain(e.claims))+"</article>";
+ const main="<article>"+revision+(isWeekly?weeklyMain(e.claims,e):monthlyMain(e.claims))+"</article>";
  return shell({depth:2,current:kind,title:label+" "+e.period,description:"K-12 AI 素養"+label+"："+e.period,head,main});
 }
-/* Weekly <main> sections (manager decision 2026-10-17, option B): a few featured items re-checked against the
-   full text, then the week's other daily items unchanged. A weekly whose claims carry no weekly_section keeps the
-   original flat layout. Sectioned weeklies, like monthlies, must equal this render of their claims. */
+/* Weekly <main> (manager decisions 2026-10-17): an optional overview (editorial analysis, each sentence citing
+   numbered items), featured items re-checked against the full text, the week's other daily items, and optional
+   background documents first disclosed before the period. Each section is a table or list whose cells other than
+   the claims are derived from claim fields here. A weekly whose claims carry no weekly_section keeps the original
+   flat layout; sectioned weeklies must equal this render of their claims (the gate re-renders the page). */
 const WEEKLY_SECTIONS=[
+ ["overview","本週導讀","本刊分析：依本期來源歸納，未經真人審閱；每句附依據編號。"],
  ["featured","本週精選","從本週短訊中選出至多 5 則，讀全文補上樣本、方法、作者所述發現與限制；不寫成效與因果推論。"],
- ["briefs","本週其他短訊","本週其他已刊短訊，沿用每日短訊的原文歸屬摘要。"]];
-const WEEKLY_EMPTY="本期無合格項目。",WEEKLY_FEATURED_MAX=5;
-const WEEKLY_FIXED=new Set([...WEEKLY_SECTIONS.flatMap(([,h,intro])=>[h,intro]),WEEKLY_EMPTY,"編號","類型","首次公開","標籤","內容"]);
+ ["briefs","本週其他短訊","本週其他已刊短訊，沿用每日短訊的原文歸屬摘要。"],
+ ["background","背景補充","與本期項目相關、但首發日早於本期的文件；非本週新訊。"]];
+const WEEKLY_OPTIONAL=new Set(["overview","background"]);
+const WEEKLY_EMPTY="本期無合格項目。",WEEKLY_FEATURED_MAX=5,WEEKLY_OVERVIEW_MAX=3,WEEKLY_BACKGROUND_MAX=3;
+const WEEKLY_COLUMNS=["編號","類型","首次公開","標籤","內容"];
+const WEEKLY_FACETS=["樣本","設計","作者所述發現","限制","內容","說明"];
+const SOURCE_TYPES={peer_reviewed_article:"同儕審查論文",preprint:"預印本",binding_policy:"正式政策",official_guidance:"官方指引",draft:"草案",official_commentary:"官方新聞",training_event:"活動"};
 const weeklyRevisionText=d=>"本期於 "+d+" 改版；改版前內容保留於 GitHub 查核紀錄。";
 const weeklySectioned=claims=>claims.some(c=>c&&c.weekly_section!==undefined);
-function weeklyMain(claims){
+const weeklyKind=c=>c.weekly_section==="background"?["background","背景"]:c.kind==="research"?["research","研究"]:["policy","政策"];
+/* Item numbers run across featured then briefs, so overview sentences and background rows can cite them. */
+function weeklyNumbers(claims){
+ const n=new Map();let i=0,b=0;
+ for(const key of ["featured","briefs"])for(const c of claims.filter(x=>x.weekly_section===key))n.set(c.claim_id,String(++i));
+ for(const c of claims.filter(x=>x.weekly_section==="background"))n.set(c.claim_id,"背景 "+(++b));
+ return n;
+}
+const cite=(ids,n)=>"第 "+ids.map(id=>n.get(id)).join("、")+" 則";
+/* Featured text is written as labelled segments (樣本：… 。設計：… 。); each label starts a new line. */
+function facetBody(c){
+ let body=claimBody(c);
+ for(const f of WEEKLY_FACETS)body=body.split("。"+f+"：").join("。<br><strong>"+f+"：</strong>");
+ return body;
+}
+function weeklySummary(claims){
+ const main=claims.filter(c=>c.weekly_section==="featured"||c.weekly_section==="briefs"),cnt=f=>main.filter(f).length;
+ const dims=c=>Array.isArray(c.ai_lit_dims)?c.ai_lit_dims:[];
+ return "本期 "+main.length+" 則（精選 "+cnt(c=>c.weekly_section==="featured")+"、其他短訊 "+cnt(c=>c.weekly_section==="briefs")+"）：政策 "+cnt(c=>c.kind!=="research")+"、研究 "+cnt(c=>c.kind==="research")+"；涉及學生 "+cnt(c=>dims(c).some(d=>d.startsWith("S-")))+"、教師 "+cnt(c=>dims(c).some(d=>d.startsWith("T-")))+"。";
+}
+function weeklyRow(c,n,claims){
+ const [cls,label]=weeklyKind(c),type=SOURCE_TYPES[c.source_document_type]||"其他";
+ const tags=c.weekly_section==="background"?"相關："+cite(c.related_claim_ids||[],n):dailyTagText(c);
+ const zh=typeof c.title_zh==="string"&&c.title_zh.trim()?c.title_zh.trim():"",rs=zh?' rowspan="2"':"";
+ const body=c.weekly_section==="featured"?facetBody(c):claimBody(c);
+ return "<tr><td"+rs+">"+esc(n.get(c.claim_id))+"</td><td"+rs+' data-kind="'+cls+'"><span>'+label+"</span><br>"+type+"</td><td"+rs+">"+esc(c.first_disclosed_on||"未知")+"</td><td"+rs+">"+esc(tags)+"</td>"+
+  (zh?"<td>中文譯名："+esc(zh)+"</td></tr><tr>":"")+'<td data-claim-id="'+esc(c.claim_id)+'">'+body+"</td></tr>";
+}
+function weeklyMain(claims,e={}){
  if(!weeklySectioned(claims))return claims.map(c=>claimParagraph(c,true)).join("");
  const keys=WEEKLY_SECTIONS.map(x=>x[0]);
  for(const c of claims)if(!keys.includes(c.weekly_section))throw new Error("weekly claim needs a known weekly_section: "+c.claim_id);
- return WEEKLY_SECTIONS.map(([key,heading,intro])=>{
+ const n=weeklyNumbers(claims);
+ const sections=WEEKLY_SECTIONS.map(([key,heading,intro])=>{
   const items=claims.filter(c=>c.weekly_section===key);
-  return "<section><h2>"+heading+"</h2><p>"+intro+"</p>"+(items.length?weeklyTable(items):"<p>"+WEEKLY_EMPTY+"</p>")+"</section>";
+  if(!items.length&&WEEKLY_OPTIONAL.has(key))return "";
+  let body;
+  if(!items.length)body="<p>"+WEEKLY_EMPTY+"</p>";
+  else if(key==="overview")body=items.map(c=>'<p data-claim-id="'+esc(c.claim_id)+'">'+esc(c.claim_text)+"</p><p>依據："+cite(c.supporting_claim_ids||[],n)+"</p>").join("");
+  else body="<table><thead><tr>"+WEEKLY_COLUMNS.map(h=>'<th scope="col">'+h+"</th>").join("")+"</tr></thead><tbody>"+items.map(c=>weeklyRow(c,n,claims)).join("")+"</tbody></table>";
+  return "<section><h2>"+heading+"</h2><p>"+intro+"</p>"+body+"</section>";
  }).join("");
+ const link=(label,p)=>p?"<p>"+label+'：<a href="../'+esc(p)+'/">'+esc(p)+"</a></p>":"";
+ const nav=e.nav?link("上一期",e.nav.prev)+link("下一期",e.nav.next):"";
+ return "<p>"+weeklySummary(claims)+"</p>"+sections+nav;
 }
-/* One table per weekly section (manager request 2026-10-17). Every cell except the claim itself is derived from
-   claim fields by this code; the gate accepts those strings only on a page equal to this render. */
-const WEEKLY_COLUMNS=["編號","類型","首次公開","標籤","內容"];
-const weeklyKind=c=>c.kind==="research"?["research","研究"]:["policy","政策"];
-function weeklyTable(items){
- const row=(c,i)=>{const [cls,label]=weeklyKind(c);
-  return "<tr><td>"+(i+1)+'</td><td data-kind="'+cls+'"><span>'+label+"</span></td><td>"+esc(c.first_disclosed_on||"未知")+"</td><td>"+esc(dailyTagText(c))+'</td><td data-claim-id="'+esc(c.claim_id)+'">'+claimBody(c)+"</td></tr>";};
- return "<table><thead><tr>"+WEEKLY_COLUMNS.map(h=>'<th scope="col">'+h+"</th>").join("")+"</tr></thead><tbody>"+items.map(row).join("")+"</tbody></table>";
-}
-function weeklyDerivedText(claims){
- const out=new Set();
- for(const key of WEEKLY_SECTIONS.map(x=>x[0]))claims.filter(c=>c&&c.weekly_section===key).forEach((c,i)=>{out.add(String(i+1));out.add(weeklyKind(c)[1]);out.add(c.first_disclosed_on||"未知");if(dailyTagText(c))out.add(dailyTagText(c))});
- return out;
+/* Neighbouring weekly periods for the 上一期／下一期 links: registered weeklies plus the legacy launch issue. */
+function weeklyNav(period,registered){
+ const all=[...new Set([...LEGACY_WEEKLY.map(x=>x.path.split("/")[1]),...registered])].filter(p=>periodRange("weekly",p)).sort(compareText);
+ const i=all.indexOf(period);
+ return i<0?{}:{prev:all[i-1]||null,next:all[i+1]||null};
 }
 /* Monthly <main> sections. Headings, intros and empty-state lines are fixed text in reviewed code; every other
    node is a claim paragraph placed by its `section` field. The gate re-renders the whole page from the claims. */
@@ -408,7 +444,8 @@ function build(root){
   "about/index.html":renderAbout()
  };
  for(const d of days)files["daily/"+d.date+"/index.html"]=renderDailyEdition(d);
- for(const kind of ["weekly","monthly"])for(const e of periodEditions(kind,editions))files[kind+"/"+e.period+"/index.html"]=renderPeriodEdition(kind,e);
+ const weeklyPeriods=periodEditions("weekly",editions).map(e=>e.period);
+ for(const kind of ["weekly","monthly"])for(const e of periodEditions(kind,editions))files[kind+"/"+e.period+"/index.html"]=renderPeriodEdition(kind,kind==="weekly"&&weeklySectioned(e.claims)?{...e,nav:weeklyNav(e.period,weeklyPeriods)}:e);
  files["index.html"]=fillHomepage(fs.readFileSync(path.join(root,"index.html"),"utf8"),days,data,editions);
  return files;
 }
@@ -424,4 +461,4 @@ function main(){
  console.log(write?"site pages written":"site pages consistent",Object.keys(files).length);
 }
 if(require.main===module)try{main()}catch(e){console.error(e.message);process.exitCode=1}
-module.exports={weeklyDerivedText,dailyKind,WEEKLY_SECTIONS,WEEKLY_FIXED,WEEKLY_FEATURED_MAX,weeklyRevisionText,weeklySectioned,build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};
+module.exports={WEEKLY_OVERVIEW_MAX,WEEKLY_BACKGROUND_MAX,weeklyNav,dailyKind,WEEKLY_SECTIONS,WEEKLY_FEATURED_MAX,weeklyRevisionText,weeklySectioned,build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};
