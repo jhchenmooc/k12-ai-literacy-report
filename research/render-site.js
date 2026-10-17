@@ -138,8 +138,28 @@ function renderPeriodEdition(kind,e){
  const h1=isWeekly?r.start+" 至 "+r.end+" 週報":r.year+" 年 "+r.month+" 月月報";
  const notice=isWeekly?"每則逐句對回原文並標示證據等級；由 AI 整理，未經獨立認證。請點連結閱讀原文。":"整合當月週報與重要背景，區分原始發現與本刊分析；由 AI 整理，未經獨立認證。請點連結閱讀原文。";
  const head='<div class="kicker">'+label+"</div><h1>"+esc(h1)+'</h1><div class="notice"><p>'+notice+"</p></div>";
- const main="<article>"+(isWeekly?e.claims.map(c=>claimParagraph(c,true)).join(""):monthlyMain(e.claims))+"</article>";
+ const revision=isWeekly&&e.revised_on?"<p>"+weeklyRevisionText(e.revised_on)+"</p>":"";
+ const main="<article>"+revision+(isWeekly?weeklyMain(e.claims):monthlyMain(e.claims))+"</article>";
  return shell({depth:2,current:kind,title:label+" "+e.period,description:"K-12 AI 素養"+label+"："+e.period,head,main});
+}
+/* Weekly <main> sections (manager decision 2026-10-17, option B): a few featured items re-checked against the
+   full text, then the week's other daily items unchanged. A weekly whose claims carry no weekly_section keeps the
+   original flat layout. Sectioned weeklies, like monthlies, must equal this render of their claims. */
+const WEEKLY_SECTIONS=[
+ ["featured","本週精選","從本週短訊中選出至多 5 則，讀全文補上樣本、方法、作者所述發現與限制；不寫成效與因果推論。"],
+ ["briefs","本週其他短訊","本週其他已刊短訊，沿用每日短訊的原文歸屬摘要。"]];
+const WEEKLY_EMPTY="本期無合格項目。",WEEKLY_FEATURED_MAX=5;
+const WEEKLY_FIXED=new Set([...WEEKLY_SECTIONS.flatMap(([,h,intro])=>[h,intro]),WEEKLY_EMPTY]);
+const weeklyRevisionText=d=>"本期於 "+d+" 改版；改版前內容保留於 GitHub 查核紀錄。";
+const weeklySectioned=claims=>claims.some(c=>c&&c.weekly_section!==undefined);
+function weeklyMain(claims){
+ if(!weeklySectioned(claims))return claims.map(c=>claimParagraph(c,true)).join("");
+ const keys=WEEKLY_SECTIONS.map(x=>x[0]);
+ for(const c of claims)if(!keys.includes(c.weekly_section))throw new Error("weekly claim needs a known weekly_section: "+c.claim_id);
+ return WEEKLY_SECTIONS.map(([key,heading,intro])=>{
+  const items=claims.filter(c=>c.weekly_section===key);
+  return "<section><h2>"+heading+"</h2><p>"+intro+"</p>"+(items.length?items.map(c=>claimParagraph(c,true)).join(""):"<p>"+WEEKLY_EMPTY+"</p>")+"</section>";
+ }).join("");
 }
 /* Monthly <main> sections. Headings, intros and empty-state lines are fixed text in reviewed code; every other
    node is a claim paragraph placed by its `section` field. The gate re-renders the whole page from the claims. */
@@ -388,4 +408,4 @@ function main(){
  console.log(write?"site pages written":"site pages consistent",Object.keys(files).length);
 }
 if(require.main===module)try{main()}catch(e){console.error(e.message);process.exitCode=1}
-module.exports={dailyKind,build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};
+module.exports={dailyKind,WEEKLY_SECTIONS,WEEKLY_FIXED,WEEKLY_FEATURED_MAX,weeklyRevisionText,weeklySectioned,build,archiveData,claimParagraph,renderDailyEdition,renderWeeklyEdition,renderMonthlyEdition,periodRange,MONTHLY_SECTIONS,MONTHLY_FIXED,fillHomepage,dailyTags,esc};

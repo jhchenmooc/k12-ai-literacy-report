@@ -1,0 +1,20 @@
+Journal of Intelligence (MDPI) | 2026-10-12 | When AI Is—and Is Not—Needed: AI Literacy and Computational Thinking in Primary STEM | https://doi.org/10.3390/jintelligence14100257 | Full text (25 pp.) of manager-supplied publisher PDF KB-2026-0274__jintelligence-14-00257.pdf (J. Intell. 2026, 14, 257; Published: 12 October 2026), extracted with pdftotext and read 2026-10-17T02:29Z; publisher web page not fetched
+
+Design and participants excerpt (Sections 3.1–3.2, p. 6):
+Four intact third-grade classrooms participated: two formed the experimental group and two the control group. … Participants were 93 third-grade students enrolled in four classrooms at a primary school in Türkiye. … The experimental group included 46 students (24 and 22 in the two classrooms), and the control group included 47 students (23 and 24). … The study was conducted in the spring semester of the 2025–2026 school year.
+
+Intervention excerpt (Sections 3.3–3.4, pp. 6–9):
+The experimental group participated in an eight-week integrated STEM sequence supported by a programmable construction and AI kit (LEGO Education Computer Science & AI). … Each weekly activity was delivered in two sessions (about 105–135 min in total) according to a written implementation guide (Appendix A; File S2) and followed the cycle in Figure 1. … The classroom teachers observed and supported but did not teach, and no teacher professional development was included, so the findings reflect learning under expert facilitation (Section 7).
+
+Control condition excerpt (Section 3.5, p. 9):
+The two control classrooms continued regular Life Studies lessons during the same eight weeks, taught by their own teachers with the national curriculum and textbook.
+
+Instruments and data excerpt (Section 3.6, pp. 9–10):
+Computational thinking was measured with the Turkish adaptation of the Competent Computational Thinking Test. … Because no available standardized measure matched both the age group and the intervention’s conceptual aims, an eight-task performance assessment was developed. … Post-intervention focus-group interviews involved 12 students selected to represent high, moderate, and limited development in AI literacy.
+
+Limitations excerpt (Section 7, p. 19):
+Participants came from four intact classrooms in one school, individual random assignment was not possible, and the small number of classroom clusters prevented robust multilevel modeling. … The control condition was business-as-usual rather than an active comparison, so the contribution of the AI–automation contrast cannot be separated from that of additional technology-rich instruction, and instruction was delivered by the second author rather than the classroom teachers, so the results reflect expert facilitation. … The intervention lasted eight weeks and did not include a delayed posttest, so retention and transfer to everyday commercial AI remain unknown. … The machine learning activities focused mainly on pose classification. … The AI Literacy Performance Assessment was developed for this study and closely aligned with the intervention.
+
+Results excerpt: intentionally not quoted (intervention study; outcome results excluded by content rules).
+Second-round additions (verbatim; Sections 3.1, 3.2 and 7):
+The study used an embedded mixed-methods, quasi-experimental pretest–posttest … Convenience sampling was used because the intervention required continuing access to a programmable construction and AI environment, suitable infrastructure, regular attendance, and permission to document classroom processes. … the small number of classroom clusters prevented robust multilevel modeling. Unmeasured classroom or teacher differences may therefore have contributed to the results. The control condition was business-as-usual rather than an active comparison, so the contribution of the AI–automation contrast cannot be separated from that of additional technology-rich instruction … Formal inter-rater and inter-coder agreement coefficients were not computed; … the novelty of the materials may have influenced motivation.

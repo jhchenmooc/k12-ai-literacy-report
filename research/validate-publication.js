@@ -42,7 +42,7 @@ function shellShape(node,withMain=false){
  return [node.nodeName,node.namespaceURI||"",(node.attrs||[]).map(a=>[a.namespace||"",a.name,a.value]).sort((a,b)=>JSON.stringify(a)<JSON.stringify(b)?-1:1),
   node.tagName==="main"&&!withMain?[]:children(node).map(n=>shellShape(n,withMain)).filter(x=>x!==null)];
 }
-function registeredShell(document,main,issueDate,issuePath,claims){
+function registeredShell(document,main,issueDate,issuePath,claims,issue={}){
  const errors=[],nodes=all(document),body=nodes.find(n=>n.tagName==="body"&&n.namespaceURI===HTML_NS);
  if(main.namespaceURI!==HTML_NS||main.parentNode!==body)errors.push("main must be an HTML element directly inside body");
  for(const node of nodes){
@@ -83,7 +83,12 @@ function registeredShell(document,main,issueDate,issuePath,claims){
   if(JSON.stringify(shellShape(document))!==JSON.stringify(shellShape(expected)))errors.push("registered daily shell differs from trusted renderer outside main");
  }else{
   const [channel,period]=issuePath.split("/"),renderer=require("./render-site.js");
-  if(channel==="weekly"&&renderer.periodRange(channel,period)){
+  if(channel==="weekly"&&renderer.periodRange(channel,period)&&(renderer.weeklySectioned(claims)||issue.revised_on!==undefined)){
+   // Sectioned weekly: section text is fixed renderer code, so the whole page must equal the render of its claims.
+   let expected=null;try{expected=parse5.parse(renderer.renderWeeklyEdition({period,claims,revised_on:issue.revised_on}))}catch(e){errors.push("weekly renderer refused claims: "+e.message)}
+   if(expected&&JSON.stringify(shellShape(document,true))!==JSON.stringify(shellShape(expected,true)))errors.push("registered weekly page differs from trusted renderer output for its claims");
+   else if(expected)return {errors,fixedText:new Set([...renderer.WEEKLY_FIXED,...(issue.revised_on?[renderer.weeklyRevisionText(issue.revised_on)]:[])])};
+  }else if(channel==="weekly"&&renderer.periodRange(channel,period)){
    const expected=parse5.parse(renderer.renderWeeklyEdition({period,claims:[]}));
    if(JSON.stringify(shellShape(document))!==JSON.stringify(shellShape(expected)))errors.push("registered weekly shell differs from trusted renderer outside main");
   }else if(channel==="monthly"&&renderer.periodRange(channel,period)){
@@ -95,11 +100,11 @@ function registeredShell(document,main,issueDate,issuePath,claims){
  }
  return {errors,fixedText:new Set()};
 }
-function matchBody(document,claims,issueDate,issuePath){
+function matchBody(document,claims,issueDate,issuePath,issue={}){
  const errors=[],mains=all(document).filter(n=>n.tagName==="main");
  if(mains.length!==1)return ["expected exactly one static main region"];
  const main=mains[0],nodes=all(main),content=nodes.filter(n=>substantive.has(n.tagName));
- const shellCheck=registeredShell(document,main,issueDate,issuePath,claims);errors.push(...shellCheck.errors);
+ const shellCheck=registeredShell(document,main,issueDate,issuePath,claims,issue);errors.push(...shellCheck.errors);
  for(let ancestor=main.parentNode;ancestor;ancestor=ancestor.parentNode){
   if((ancestor.attrs||[]).some(a=>["hidden","style","srcdoc","contenteditable"].includes(a.name)))errors.push("dynamic/hidden ancestor of main unsupported");
  }
@@ -180,6 +185,20 @@ function staticHtmlSafety(document,label){
 function dailySourceLink(document,c){
  const mains=all(document).filter(n=>n.tagName==="main");if(mains.length!==1)return false;
  return all(mains[0]).filter(n=>["p","li","blockquote","td"].includes(n.tagName)&&attr(n,"data-claim-id")===c.claim_id).some(n=>all(n).some(a=>a.tagName==="a"&&attr(a,"href")===c.source_url));
+}
+/* Sectioned weekly claims: every claim names a known section; at most five featured items, each marked as
+   checked against the full text; every other item names the daily claim it repeats. Structural only. */
+function weeklyStructure(claims){
+ const errors=[],r=require("./render-site.js"),keys=r.WEEKLY_SECTIONS.map(x=>x[0]),list=claims.filter(c=>c&&typeof c==="object");
+ if(!r.weeklySectioned(list))return errors;
+ for(const c of list){
+  const id=c.claim_id;
+  if(!keys.includes(c.weekly_section)){errors.push(id+": weekly claim section must be one of "+keys.join(", "));continue}
+  if(c.weekly_section==="featured"&&c.full_text_checked!==true)errors.push(id+": featured weekly item must be checked against the full text");
+  if(c.weekly_section==="briefs"&&!(typeof c.weekly_source_claim==="string"&&/^D\d{8}-\d{2}$/.test(c.weekly_source_claim)))errors.push(id+": weekly brief must name its daily source claim");
+ }
+ if(list.filter(c=>c.weekly_section==="featured").length>r.WEEKLY_FEATURED_MAX)errors.push("weekly featured items exceed "+r.WEEKLY_FEATURED_MAX);
+ return errors;
 }
 /* Monthly claims: every claim names a known section; scholar items name their research group; an editorial
    analysis sits only under trends, stays descriptive (no human review) and rests on at least two other claims
@@ -286,8 +305,10 @@ function validate(root){
   let html;try{html=fs.readFileSync(htmlPath,"utf8")}catch(e){errors.push("edition HTML unreadable "+p+": "+e.message);continue}
   const dom=parsed(html);errors.push(...dom.errors.map(e=>p+": "+e));
   errors.push(...staticHtmlSafety(dom.document,p));
-  errors.push(...matchBody(dom.document,data,issueDate,p).map(e=>p+": "+e));
+  errors.push(...matchBody(dom.document,data,issueDate,p,issue).map(e=>p+": "+e));
   if(p.startsWith("monthly/"))errors.push(...monthlyStructure(data).map(e=>q+" "+e));
+  if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data).map(e=>q+" "+e));
+  if(issue.revised_on!==undefined&&(!p.startsWith("weekly/")||typeof issue.revised_on!=="string"||!/^\d{4}-\d{2}-\d{2}$/.test(issue.revised_on)||!Number.isFinite(Date.parse(issue.revised_on+"T00:00:00Z"))||new Date(issue.revised_on+"T00:00:00Z").toISOString().slice(0,10)!==issue.revised_on))errors.push(p+": revised_on must be a real ISO date on a weekly edition");
   const claimIds=new Set();
   for(const c of data){
    if(!c||typeof c!=="object"){errors.push("invalid claim in "+q);continue}
