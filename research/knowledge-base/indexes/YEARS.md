@@ -1195,7 +1195,7 @@
 | KB-2025-0457 — [Presidential AI Challenge: Guidebook for Participation](https://www.whitehouse.gov/wp-content/uploads/2025/08/Presidential-AI-Challenge-Guidebook-for-Participation.pdf) | official_guidance | 2025-08-26 | discovered_unverified |
 | KB-2025-0458 — [省教育厅关于印发《人工智能赋能教育高质量发展行动方案（2025—2027年）》的通知（苏教高〔2025〕1号）](https://jyt.jiangsu.gov.cn/art/2025/5/9/art_77619_11562404.html) | official_guidance | 2025-04-19 | discovered_unverified |
 | KB-2025-0459 — [广州市教育局关于印发《关于深化广州市中小学人工智能与教育融合创新的若干措施（2025-2027年）》的通知（穗教发〔2025〕9号）](https://jyj.gz.gov.cn/gkmlpt/content/10/10240/post_10240792.html) | official_guidance | 2025-04-28 | discovered_unverified |
-| KB-2025-0460 — [教育部办公厅关于组织实施数字化赋能教师发展行动的通知（教师厅函〔2025〕13号）](https://www.moe.gov.cn/srcsite/A10/s7034/202507/t20250704_1196586.html) | official_guidance | 2025-07-02 | discovered_unverified |
+| KB-2025-0460 — [教育部办公厅关于组织实施数字化赋能教师发展行动的通知（教师厅函〔2025〕13号）](https://www.moe.gov.cn/srcsite/A10/s7034/202507/t20250704_1196586.html) | official_guidance | 2025-07-07 | bibliographic_checked |
 | KB-2025-0461 — [教育部办公厅关于公布第二批中小学人工智能教育基地名单的通知（教基厅函〔2025〕32号）](https://www.moe.gov.cn/srcsite/A06/s3321/202512/t20251224_1424361.html) | government_announcement | 2025-12-15 | discovered_unverified |
 | KB-2025-0462 — [KI in Schule und Familie (Lehrkräfte)](https://klickpunktschule.bycs.de/beitrag/ki-in-der-schule) | official_guidance | 2025-08-22 | discovered_unverified |
 | KB-2025-0463 — [생성형 인공지능 보조교사 활용 교원 역량강화 연수(과학직업정보과)](https://www.dje.go.kr/boardCnts/view.do?boardID=8&boardSeq=3325867&lev=0&m=040201&s=dje&statusYN=W&page=1) | government_announcement | 2025-07-23 | discovered_unverified |
