@@ -131,7 +131,7 @@ function matchBody(document,claims,issueDate,issuePath,issue={}){
   if(node.nodeName==="#comment"||node.nodeName==="#documentType")errors.push("comments/declarations unsupported within main");
   if(node.tagName&&!safeTags.has(node.tagName))errors.push("unsupported HTML tag in main: "+node.tagName);
   if(node.tagName&&node.namespaceURI!==HTML_NS)errors.push("non-HTML namespace unsupported within main");
-  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined)||(a.name==="data-kind"&&node.tagName==="td"&&["policy","research","background","tw"].includes(a.value))||(a.name==="id"&&node.tagName==="tr"&&/^item-(\d+|b\d+|t\d+|c\d+|d\d+|f\d+)$/.test(a.value))||(issuePath.startsWith("weekly/")&&a.name==="id"&&node.tagName==="li"&&/^item-t?\d+$/.test(a.value))||(issuePath.startsWith("daily/")&&node.tagName==="p"&&((a.name==="id"&&/^[A-Za-z0-9_-]+$/.test(a.value)&&attr(node,"data-claim-kind")===a.value)||(a.name==="data-claim-links"&&/^[A-Za-z0-9_-]+$/.test(a.value))))||(a.name==="data-region"&&["h2","section"].includes(node.tagName)&&["intl","tw"].includes(a.value))||(a.name==="data-part"&&node.tagName==="section"&&a.value==="overview")||(issuePath.startsWith("monthly/")&&((a.name==="id"&&node.tagName==="section"&&/^sec-[a-z_]+$/.test(a.value))||(a.name==="id"&&node.tagName==="li"&&/^item-l\d+$/.test(a.value))||(a.name==="data-col"&&node.tagName==="td"&&["num","kind","date","audience","tags","content"].includes(a.value)))))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
+  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined)||(a.name==="data-kind"&&node.tagName==="td"&&["policy","research","background","tw"].includes(a.value))||(a.name==="id"&&node.tagName==="tr"&&/^item-(\d+|b\d+|t\d+|c\d+|d\d+|f\d+)$/.test(a.value))||(issuePath.startsWith("weekly/")&&a.name==="id"&&node.tagName==="li"&&/^item-[tp]?\d+$/.test(a.value))||(issuePath.startsWith("weekly/")&&a.name==="data-col"&&node.tagName==="td"&&["num","kind","date","tags","content"].includes(a.value))||(issuePath.startsWith("daily/")&&node.tagName==="p"&&((a.name==="id"&&/^[A-Za-z0-9_-]+$/.test(a.value)&&attr(node,"data-claim-kind")===a.value)||(a.name==="data-claim-links"&&/^[A-Za-z0-9_-]+$/.test(a.value))))||(a.name==="data-region"&&["h2","section"].includes(node.tagName)&&["intl","tw"].includes(a.value))||(a.name==="data-part"&&node.tagName==="section"&&a.value==="overview")||(issuePath.startsWith("monthly/")&&((a.name==="id"&&node.tagName==="section"&&/^sec-[a-z_]+$/.test(a.value))||(a.name==="id"&&node.tagName==="li"&&/^item-l\d+$/.test(a.value))||(a.name==="data-col"&&node.tagName==="td"&&["num","kind","date","audience","tags","content"].includes(a.value)))))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
  }
  /* Daily tag line (manager decision 2026-10-11): a plain <p data-claim-tags="ID"> directly after the
     claim's own element, whose text must equal dailyTagText(claim); at most once per claim, daily only. */
@@ -182,7 +182,7 @@ function matchBody(document,claims,issueDate,issuePath,issue={}){
  }
  residual(main);
  // Weekly items repeated from a daily brief are shown as one derived line (manager 2026-10-17, C1); their text is the daily's.
- const asLine=c=>issuePath.startsWith("weekly/")&&["briefs","taiwan"].includes(c.weekly_section)&&typeof c.weekly_source_claim==="string"&&/^D\d{8}-\d{2}$/.test(c.weekly_source_claim);
+ const asLine=c=>issuePath.startsWith("weekly/")&&["briefs","late","taiwan"].includes(c.weekly_section)&&typeof c.weekly_source_claim==="string"&&/^D\d{8}-\d{2}$/.test(c.weekly_source_claim);
  for(const c of claims){if(!c||typeof c.claim_id!=="string")continue;const count=counts.get(c.claim_id)||0;if(count!==(asLine(c)?0:1))errors.push("claim must appear exactly once in HTML: "+c.claim_id+" ("+count+")")}
  return errors;
 }
@@ -227,11 +227,17 @@ function weeklyStructure(claims,period,ctx={}){
   if(!isoDate(c.first_disclosed_on))errors.push(id+": first_disclosed_on must be a real YYYY-MM-DD date");
   for(const f of ["claim_text","title_zh"])if(typeof c[f]==="string"&&/\p{Cf}/u.test(c[f]))errors.push(id+": "+f+" contains invisible format characters");
   // A weekly item that repeats a daily item must point at a registered daily claim of the same region.
-  if(daily&&typeof c.weekly_source_claim==="string"&&["featured","briefs","taiwan"].includes(sec)){
+  if(daily&&typeof c.weekly_source_claim==="string"&&["featured","briefs","late","taiwan"].includes(sec)){
    const d=daily.get(c.weekly_source_claim);
    if(!d)errors.push(id+": weekly_source_claim "+c.weekly_source_claim+" is not a registered daily claim");
-   else if(sec!=="featured"&&d.claim_text!==c.claim_text)errors.push(id+": weekly item text must equal its daily claim "+c.weekly_source_claim+" (it is shown as a line linking there)");
-   else if((d.region==="tw")!==(sec==="taiwan"))errors.push(id+": weekly section and daily region differ for "+c.weekly_source_claim);
+   else{
+    if((d.region==="tw")!==(sec==="taiwan"))errors.push(id+": weekly section and daily region differ for "+c.weekly_source_claim);
+    // Shown as a line linking to the daily item: text, date, link, kind and document type must all be the daily's.
+    if(sec!=="featured"){
+     if(d.claim_text!==c.claim_text)errors.push(id+": weekly item text must equal its daily claim "+c.weekly_source_claim+" (it is shown as a line linking there)");
+     for(const f of ["first_disclosed_on","source_url","kind","source_document_type"])if(d[f]!==c[f])errors.push(id+": weekly item "+f+" must equal its daily claim "+c.weekly_source_claim);
+    }
+   }
   }
   if(["featured","briefs","background","taiwan","tw_compare"].includes(sec)){
    if(c.kind==="news_policy"&&!["binding_policy","official_guidance","draft","official_commentary","training_event","speech"].includes(c.source_document_type))errors.push(id+": missing or invalid policy document type");
@@ -267,6 +273,21 @@ function weeklyStructure(claims,period,ctx={}){
   }
   if(c.title_zh!==undefined&&(typeof c.title_zh!=="string"||!c.title_zh.trim()||c.title_zh.length>200))errors.push(id+": title_zh must be a short non-empty string");
   if(sec==="featured"&&c.full_text_checked!==true)errors.push(id+": featured weekly item must be checked against the full text");
+  const fromCutover=range.start&&range.start>=r.TW_FROM_PERIOD.slice(0,10);
+  // Featured items carry the four facets from the 2026-10-16 period (joint review D5).
+  if(sec==="featured"&&fromCutover){
+   const need=c.kind==="research"?["樣本","設計","作者所述發現","限制"]:["內容"],miss=need.filter(f=>!String(c.claim_text).includes("。"+f+"："));
+   if(miss.length)errors.push(id+": featured item must have the facets "+need.join("、")+" (missing "+miss.join("、")+")");
+  }
+  if(c.source_country!==undefined&&!(typeof c.source_country==="string"&&(c.source_country==="INTL"||/^[A-Z]{2}(-[A-Z]{3})?$/.test(c.source_country))))errors.push(id+": source_country must be an ISO code or INTL");
+  if(fromCutover&&c.kind!=="research"&&["featured","briefs","late"].includes(sec)&&c.source_country===undefined)errors.push(id+": policy item needs source_country (joint review D4)");
+  if(c.self_reported_outcome!==undefined&&c.self_reported_outcome!==true)errors.push(id+": self_reported_outcome is true or absent");
+  if(sec==="late"){
+   if(!(typeof c.weekly_source_claim==="string"&&/^D\d{8}-\d{2}$/.test(c.weekly_source_claim)))errors.push(id+": late item must name its daily source claim");
+   const back=range.start?new Date(Date.parse(range.start+"T00:00:00Z")-14*864e5).toISOString().slice(0,10):"";
+   if(!(isoDate(c.first_disclosed_on)&&range.start&&c.first_disclosed_on<range.start&&c.first_disclosed_on>=back))errors.push(id+": late item must be first disclosed in the two weeks before the period");
+   if(c.region==="tw")errors.push(id+": Taiwan items go in 臺灣本週動態");
+  }
   // An official speech the manager chose to mention (e.g. Ofqual 2026-10-16) need not have run as a daily item.
   if(sec==="briefs"&&c.source_document_type!=="speech"&&!(typeof c.weekly_source_claim==="string"&&/^D\d{8}-\d{2}$/.test(c.weekly_source_claim)))errors.push(id+": weekly brief must name its daily source claim");
   if(c.source_document_type==="speech"&&(c.kind!=="news_policy"||sec!=="briefs"))errors.push(id+": a speech is a news_policy brief");
@@ -413,6 +434,9 @@ function monthlyStructureSectioned(claims,period,ctx={}){
    const d=Date.parse(String(c.publication_date)+"T00:00:00Z");
    if(!isoDate(c.publication_date)||d>lastDay||lastDay-d>92*864e5)errors.push(id+": trend source must be published within the three months before the period end");
   }
+  if(c.source_country!==undefined&&!(typeof c.source_country==="string"&&(c.source_country==="INTL"||/^[A-Z]{2}(-[A-Z]{3})?$/.test(c.source_country))))errors.push(id+": source_country must be an ISO code or INTL");
+  if(s==="policy"&&c.source_country===undefined)errors.push(id+": policy item needs source_country (joint review D4)");
+  if(c.self_reported_outcome!==undefined&&c.self_reported_outcome!==true)errors.push(id+": self_reported_outcome is true or absent");
   if(s==="tw_policy"&&(c.kind!=="news_policy"||!["k12","other_stakeholders"].includes(c.audience)))errors.push(id+": Taiwan central document is a policy item for K-12 or other education stakeholders");
   if(s==="tw_research"){
    if(!["k12","other_stakeholders"].includes(c.audience))errors.push(id+": Taiwan research is limited to K-12 and other education stakeholders");
@@ -581,7 +605,12 @@ function validate(root){
    // A later weekly or daily does not repeat an item a monthly already carried (monthlies indexed before it).
    const own=daily?issueDate:(renderer.periodRange("weekly",period)||{}).start||"";
    const monthlyKeys=keysOf(p,(ch,c,e)=>ch==="monthly"&&isoDate(e.indexed_through)&&e.indexed_through<own&&["policy","research","tw_policy","tw_research","scholars"].includes(c.section));
-   for(const c of data)if(c&&(daily||["featured","briefs","taiwan"].includes(c.weekly_section)))for(const k of sourceKeys(c))if(monthlyKeys.has(k))errors.push(q+" "+c.claim_id+": source already published in "+monthlyKeys.get(k));
+   for(const c of data)if(c&&(daily||["featured","briefs","late","taiwan"].includes(c.weekly_section)))for(const k of sourceKeys(c))if(monthlyKeys.has(k))errors.push(q+" "+c.claim_id+": source already published in "+monthlyKeys.get(k));
+  }
+  if(p.startsWith("weekly/")){
+   // A late item was in no earlier weekly.
+   const weeklyKeys=keysOf(p,(ch,c)=>ch==="weekly"&&["featured","briefs","late"].includes(c.weekly_section));
+   for(const c of data)if(c&&c.weekly_section==="late")for(const k of sourceKeys(c))if(weeklyKeys.has(k))errors.push(q+" "+c.claim_id+": late item already in "+weeklyKeys.get(k));
   }
   if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data,p.split("/")[1],{dailyClaims:dailyClaims(),issue}).map(e=>q+" "+e));
   if(issue.taiwan_not_searched!==undefined&&(issue.taiwan_not_searched!==true||!p.startsWith("weekly/")))errors.push(p+": taiwan_not_searched must be true on a weekly edition");

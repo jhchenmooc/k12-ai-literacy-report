@@ -455,7 +455,8 @@
     ],
     "weekly_section": "featured",
     "full_text_checked": true,
-    "replaces_weekly_claim": "W20261009-02"
+    "replaces_weekly_claim": "W20261009-02",
+    "source_country": "CN"
   },
   {
     "claim_id": "W20261009-03",
@@ -557,7 +558,8 @@
     ],
     "attributed_summary": "10 月 10 日於北京舉行人工智能賦能教師發展現場會，主題為「爭做數智時代好老師、服務基礎教育高質量發展」；會上升級上線國家智慧教育平台教師發展中心，啟動教師人工智能素養全覆蓋培訓，並要求各級教育部門和學校以教師是否解決實際問題、課堂是否發生積極變化、學生是否獲得更有針對性的學習支持，作為檢驗培訓成效的核心標準。",
     "weekly_source_claim": "D20261012-01",
-    "weekly_section": "briefs"
+    "weekly_section": "briefs",
+    "source_country": "CN"
   },
   {
     "claim_id": "W20261009-05",
@@ -969,7 +971,8 @@
     "weekly_section": "background",
     "related_claim_ids": [
       "W20261009-01"
-    ]
+    ],
+    "source_country": "CN"
   },
   {
     "claim_id": "W20261009-25",
@@ -1016,7 +1019,8 @@
     "weekly_section": "background",
     "related_claim_ids": [
       "W20261009-15"
-    ]
+    ],
+    "source_country": "CN"
   },
   {
     "claim_id": "W20261009-31",
@@ -1069,7 +1073,8 @@
     ],
     "attributed_summary": "國家教育研究院與新北市政府教育局、均一平台教育基金會及龍埔國小合作推動生成式AI融入學習研究，10 月 12 日舉行研究成果發布記者會；研究追蹤 227 位國小六年級學生使用「AI筆記本」的學習歷程，並宣布啟動新階段研究，研究場域將擴展至國小五、六年級，並將發展 AI 素養課程，探討 AI 素養與學生學習的關係。",
     "weekly_section": "taiwan",
-    "weekly_source_claim": "D20261013-06"
+    "weekly_source_claim": "D20261013-06",
+    "self_reported_outcome": true
   },
   {
     "claim_id": "W20261009-26",

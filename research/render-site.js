@@ -22,6 +22,8 @@ const METHOD_TAGS=[["METHOD_REVIEW","文獻回顧"],["METHOD_EXPERIMENT","實驗
 const {AILIT_TAGS,dailyTagList,dailyTagText}=require("./daily-tags.js");
 const STATUS={discovered_unverified:["unverified","僅發現・未核"],bibliographic_checked:["checked","書目已核"],content_checked:["fulltext","原文已核"]};
 /* One wording across the three publications (manager decision 2026-10-17, C3): items and analysis. */
+/* One status line for registered issues (joint review 2026-10-17). */
+const STATUS_NOTE="已通過自動檢查（非內容認證），經管理者核准發布";
 const AI_ITEM_NOTE="由 AI 依原文整理，未經真人逐則審稿；請點連結閱讀原文。",AI_ISSUE_NOTE="由 AI 依原文整理，經管理者核准發布，未經真人逐則審稿；請點連結閱讀原文。";
 const ANALYSIS_LABEL="編輯歸納（AI 整理，未經真人審閱）";
 const relationNote=p=>'<p class="lead">三種刊物：<a href="'+p+'daily/">每日短訊</a>（每天 09:00，記錄新發布的原始文件）、<a href="'+p+'weekly/">週報</a>（每週五，前一週五至週四的精選與一覽）、<a href="'+p+'monthly/">月報</a>（次月 3 日，跨週整理並另收週報沒有收的研究與文件）。週報依首次公開日收錄，首次公開早於週報期間的每日短訊會列在月報的一覽。</p>';
@@ -96,7 +98,7 @@ function claimParagraph(c,withId){
 const dailyKind=c=>{
  const research=c.kind==="research"||/^research_/.test(String(c.daily_fact_kind)),base=research?"研究":c.source_document_type==="speech"?"官方發言":"政策";
  const sub=SOURCE_TYPES[c.source_document_type],bib=["research_bibliography","official_notice"].includes(c.daily_fact_kind);
- return [research?"research":"policy",base+(sub&&sub!=="演講"?"・"+sub:"")+(bib?"（僅書目）":"")];
+ return [research?"research":"policy",base+(sub&&sub!=="演講"?"・"+sub:"")+(bib?"（僅書目）":"")+selfReported(c)];
 };
 function kindBadge(c){const [cls,label]=dailyKind(c);return '<span class="kind '+cls+'">'+label+"</span>"}
 /* Tag line on the daily list and homepage; the edition page carries the same text as a gate-checked
@@ -106,13 +108,16 @@ function dailyTags(c){
  return tags.length?'<div class="tags3">'+tags.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"";
 }
 /* List and homepage entries show the title only; the summary stays on the day's page (C8). */
+/* An official release that states its own outcomes carries a fixed note (joint review D11). */
+const selfReported=c=>c&&c.self_reported_outcome===true?"（機構自述成效，非同儕審查研究）":"";
 const itemTitle=c=>typeof c.title_zh==="string"&&c.title_zh.trim()?c.title_zh.trim():c.source_title||"";
 function dailyEntry(c,href){
  return '<li>'+(isTw(c)?'<span class="kind tw">臺灣</span> ':"")+kindBadge(c)+'<p><a href="'+esc(href+"#"+c.claim_id)+'">'+esc(itemTitle(c))+"</a></p>"+dailyTags(c)+'<div class="meta-line"><span>首次公開：'+esc(c.first_disclosed_on||"未知")+"</span><span>來源："+esc(c.source_organization||"")+"</span></div></li>";
 }
 /* One card per day: the day's items are listed inside a single brief (manager request 2026-10-11). */
 function dailyCard(d,depth){
- return '<li class="item daily-card"><div class="card-head"><h3>'+d.date+' 每日短訊</h3><span class="sub">收錄 '+d.claims.length+' 項</span></div><ol class="brief-items">'+d.claims.map(c=>dailyEntry(c,up(depth)+"daily/"+d.date+"/")).join("")+'</ol><div class="meta-line"><a href="'+up(depth)+"daily/"+d.date+'/">當日短訊頁（含摘要）</a></div></li>';
+ const h=depth?"h2":"h3";
+ return '<li class="item daily-card"><div class="card-head"><'+h+'>'+d.date+' 每日短訊</'+h+'><span class="sub">收錄 '+d.claims.length+' 項</span></div><ol class="brief-items">'+d.claims.map(c=>dailyEntry(c,up(depth)+"daily/"+d.date+"/")).join("")+'</ol><div class="meta-line"><a href="'+up(depth)+"daily/"+d.date+'/">當日短訊頁（含摘要）</a></div></li>';
 }
 /* From 2026-10-18 each daily page has 國際 and 臺灣 sections (manager decision 2026-10-17; Taiwan = central
    government and Taiwan research only). Earlier pages keep their flat layout. Sectioned daily pages must equal
@@ -135,7 +140,7 @@ function dailyBacklinks(editions){
  for(const wk of periodEditions("weekly",editions).sort((a,b)=>compareText(a.period,b.period))){
   const claims=(wk.claims||[]).filter(c=>c&&typeof c==="object");if(!weeklySectioned(claims))continue;
   const n=weeklyNumbers(claims);
-  for(const c of claims)if(["featured","briefs","taiwan"].includes(c.weekly_section)){const num=n.get(c.claim_id);add(c.weekly_source_claim,{label:"週報 "+periodLabel(wk.period)+" "+(/^\d+$/.test(num)?"第 "+num+" 則":num),href:"../../weekly/"+wk.period+"/#"+anchor(num)})}
+  for(const c of claims)if(["featured","briefs","late","taiwan"].includes(c.weekly_section)){const num=n.get(c.claim_id);add(c.weekly_source_claim,{label:"週報 "+periodLabel(wk.period)+" "+(/^\d+$/.test(num)?"第 "+num+" 則":num),href:"../../weekly/"+wk.period+"/#"+anchor(num)})}
  }
  for(const mo of periodEditions("monthly",editions).filter(monthlySectioned).sort((a,b)=>compareText(a.period,b.period))){
   const e={...mo,claims:(mo.claims||[]).filter(c=>c&&typeof c==="object"),context:monthlyContext(mo,editions)},w=monthlyWindow(mo.period),listing=monthlyListing(e,w),n=monthlyNumbers(e.claims,listing),r=periodRange("monthly",mo.period);
@@ -192,6 +197,7 @@ const WEEKLY_SECTIONS=[
  ["overview","本週導讀",ANALYSIS_LABEL+"：依本期來源歸納，每句附依據編號；不作評價或建議。"],
  ["featured","本週精選","從本週短訊與候選項目中選出至多 5 則，讀全文補上樣本、方法、作者所述發現與限制（政策為內容）；不寫成效與因果推論。"],
  ["briefs","本週其他短訊","本期其他項目一行一則，摘要請點每日短訊；官方演講等未發每日短訊者列出全文。"],
+ ["late","上期補登","首次公開於上一期週報期間、上期出刊後才刊出的每日短訊，一行一則。"],
  ["background","背景補充","與本期項目相關、但首次公開早於本期的文件；非本週新訊。"]];
 /* Taiwan area after the international sections (manager decision 2026-10-17): central government and Taiwan
    research only, a 1–2 sentence comparison note (editorial analysis citing both sides), this week's Taiwan items,
@@ -204,7 +210,7 @@ const TW_HEADING="臺灣",TW_INTRO="臺灣部分與國際分開：只收中央�
 const TW_INTRO_NOT_SEARCHED="臺灣部分與國際分開：只收中央機關與臺灣研究；本期尚未納入臺灣來源查核，對照列為編輯選取的中央文件，非完整蒐集；對照只並列事實，不作評價或建議。";
 const TW_NOT_SEARCHED="本期尚未納入臺灣來源查核（2026-10-18 起納入），故無臺灣本週動態。",TW_FROM_PERIOD="2026-10-16";
 const WEEKLY_TW_NOTE_MAX=2,WEEKLY_TW_COMPARE_MAX=3;
-const WEEKLY_OPTIONAL=new Set(["overview","background","tw_note","tw_compare"]);
+const WEEKLY_OPTIONAL=new Set(["overview","late","background","tw_note","tw_compare"]);
 const WEEKLY_EMPTY="本期無合格項目。",WEEKLY_FEATURED_MAX=5,WEEKLY_OVERVIEW_MAX=3,WEEKLY_BACKGROUND_MAX=3;
 const WEEKLY_COLUMNS=["編號","類型","首次公開","標籤","內容"];
 const WEEKLY_FACETS=["樣本","資料","設計","作者所述發現","限制","內容","說明"];
@@ -221,12 +227,13 @@ function weeklyNumbers(claims){
  const n=new Map();let i=0,b=0;
  for(const key of ["featured","briefs"])for(const c of claims.filter(x=>x.weekly_section===key))n.set(c.claim_id,String(++i));
  for(const c of claims.filter(x=>x.weekly_section==="background"))n.set(c.claim_id,"背景 "+(++b));
+ let q=0;for(const c of claims.filter(x=>x.weekly_section==="late"))n.set(c.claim_id,"補 "+(++q));
  let t=0,k=0;
  for(const c of claims.filter(x=>x.weekly_section==="taiwan"))n.set(c.claim_id,"臺 "+(++t));
  for(const c of claims.filter(x=>x.weekly_section==="tw_compare"))n.set(c.claim_id,"對照 "+(++k));
  return n;
 }
-const anchor=num=>"item-"+({"背景":"b","臺":"t","對照":"c","來源":"d","一覽":"l","文件":"f"}[num.split(" ")[0]]||"")+num.replace(/\D/g,"");
+const anchor=num=>"item-"+({"背景":"b","臺":"t","對照":"c","來源":"d","一覽":"l","文件":"f","補":"p"}[num.split(" ")[0]]||"")+num.replace(/\D/g,"");
 const link=x=>'<a href="#'+anchor(x)+'">'+x+"</a>";
 const cite=(ids,n)=>"第 "+ids.map(id=>n.get(id)).sort((a,b)=>parseInt(a)-parseInt(b)).map(link).join("、")+" 則";
 /* Taiwan note citations: international item numbers, then Taiwan rows by their own labels. */
@@ -240,25 +247,30 @@ function facetBody(c){
  for(const f of WEEKLY_FACETS)body=body.split("。"+f+"：").join("。<br><strong>"+f+"：</strong>");
  return body;
 }
+/* Where this issue's policy items come from (joint review D4): source_country, ISO code or INTL. */
+function policyCountries(list){
+ const m=new Map();for(const c of list.filter(c=>c.kind!=="research")){const k=c.source_country==="INTL"?"國際組織":COUNTRY[c.source_country]||"未標示";m.set(k,(m.get(k)||0)+1)}
+ return m.size?"；政策來源："+[...m].sort((a,b)=>b[1]-a[1]||compareText(a[0],b[0])).map(([k,v])=>k+" "+v).join("、"):"";
+}
 function weeklySummary(claims,e={}){
- const main=claims.filter(c=>c.weekly_section==="featured"||c.weekly_section==="briefs"),cnt=f=>main.filter(f).length;
+ const main=claims.filter(c=>c.weekly_section==="featured"||c.weekly_section==="briefs"),cnt=f=>main.filter(f).length,late=claims.filter(c=>c.weekly_section==="late").length;
  const tw=claims.filter(c=>c.weekly_section==="taiwan").length,cmp=claims.filter(c=>c.weekly_section==="tw_compare").length;
  const dims=c=>Array.isArray(c.ai_lit_dims)?c.ai_lit_dims:[];
- return "本期 "+main.length+" 則（精選 "+cnt(c=>c.weekly_section==="featured")+"、其他短訊 "+cnt(c=>c.weekly_section==="briefs")+"）：政策 "+cnt(c=>c.kind!=="research")+"、研究 "+cnt(c=>c.kind==="research")+"；其中對應學生 AI 素養面向者 "+cnt(c=>dims(c).some(d=>d.startsWith("S-")))+" 則、教師面向者 "+cnt(c=>dims(c).some(d=>d.startsWith("T-")))+" 則"+(e.taiwan_not_searched===true?"；臺灣本週動態：本期未查、臺灣對照 "+cmp+" 列":tw||cmp?"；臺灣本週動態 "+tw+" 則、臺灣對照 "+cmp+" 列":"")+"。";
+ return "本期 "+main.length+" 則（精選 "+cnt(c=>c.weekly_section==="featured")+"、其他短訊 "+cnt(c=>c.weekly_section==="briefs")+"）：政策 "+cnt(c=>c.kind!=="research")+"、研究 "+cnt(c=>c.kind==="research")+policyCountries(main)+(late?"；上期補登 "+late+" 則":"")+"；其中對應學生 AI 素養面向者 "+cnt(c=>dims(c).some(d=>d.startsWith("S-")))+" 則、教師面向者 "+cnt(c=>dims(c).some(d=>d.startsWith("T-")))+" 則"+(e.taiwan_not_searched===true?"；臺灣本週動態：本期未查、臺灣對照 "+cmp+" 列":tw||cmp?"；臺灣本週動態 "+tw+" 則、臺灣對照 "+cmp+" 列":"")+"。";
 }
 function weeklyRow(c,n,claims){
  const [cls,label]=weeklyKind(c),type=SOURCE_TYPES[c.source_document_type]||"其他";
  const tags=c.weekly_section==="background"?"相關："+cite(c.related_claim_ids||[],n):c.weekly_section==="tw_compare"?"對照："+cite(c.related_claim_ids||[],n):dailyTagList(c).map(t=>"<span>#"+esc(t)+"</span>").join(" ");
  const zh=typeof c.title_zh==="string"&&c.title_zh.trim()?c.title_zh.trim():"",rs=zh?' rowspan="2"':"";
  const body=c.weekly_section==="featured"?facetBody(c):claimBody(c);
- return '<tr id="'+anchor(n.get(c.claim_id))+'"><td'+rs+">"+esc(n.get(c.claim_id))+"</td><td"+rs+' data-kind="'+cls+'"><span>'+label+"</span><br>"+type+"</td><td"+rs+">"+esc(c.first_disclosed_on||"未知")+"</td><td"+rs+">"+tags+"</td>"+
-  (zh?"<td>中文譯名："+esc(zh)+"</td></tr><tr>":"")+'<td data-claim-id="'+esc(c.claim_id)+'">'+body+"</td></tr>";
+ return '<tr id="'+anchor(n.get(c.claim_id))+'"><td'+rs+' data-col="num">'+esc(n.get(c.claim_id))+"</td><td"+rs+' data-col="kind" data-kind="'+cls+'"><span>'+label+"</span><br>"+type+selfReported(c)+"</td><td"+rs+' data-col="date">'+esc(c.first_disclosed_on||"未知")+"</td><td"+rs+' data-col="tags">'+tags+"</td>"+
+  (zh?'<td data-col="content">中文譯名：'+esc(zh)+"</td></tr><tr>":"")+'<td data-col="content" data-claim-id="'+esc(c.claim_id)+'">'+body+"</td></tr>";
 }
 /* Items repeated from a daily brief are one line each, linking to that daily item (manager decision 2026-10-17, C1). */
-const isLine=c=>["briefs","taiwan"].includes(c.weekly_section)&&typeof c.weekly_source_claim==="string"&&/^D\d{8}-\d{2}$/.test(c.weekly_source_claim);
+const isLine=c=>["briefs","late","taiwan"].includes(c.weekly_section)&&typeof c.weekly_source_claim==="string"&&/^D\d{8}-\d{2}$/.test(c.weekly_source_claim);
 function weeklyLine(c,n){
  const num=n.get(c.claim_id),[,label]=weeklyKind(c),type=SOURCE_TYPES[c.source_document_type]||"其他",d=c.weekly_source_claim,day=d.slice(1,5)+"-"+d.slice(5,7)+"-"+d.slice(7,9);
- return '<li id="'+anchor(num)+'">'+(/^\d+$/.test(num)?"第 "+num+" 則":esc(num))+"｜"+label+"・"+type+"｜"+esc(c.first_disclosed_on||"未知")+"｜"+esc(itemTitle(c))+'｜<a href="../../daily/'+day+"/#"+esc(d)+'">每日短訊 '+day+'</a>｜<a href="'+esc(c.source_url)+'">原文</a></li>';
+ return '<li id="'+anchor(num)+'">'+(/^\d+$/.test(num)?"第 "+num+" 則":esc(num))+"｜"+label+"・"+type+selfReported(c)+"｜"+esc(c.first_disclosed_on||"未知")+"｜"+esc(itemTitle(c))+'｜<a href="../../daily/'+day+"/#"+esc(d)+'">每日短訊 '+day+'</a>｜<a href="'+esc(c.source_url)+'">原文</a></li>';
 }
 function weeklyItems(items,n,claims){
  const lines=items.filter(isLine),rows=items.filter(c=>!isLine(c));
@@ -295,7 +307,7 @@ function weeklyTaiwan(claims,e,n){
   return "<h3>"+heading+"</h3><p>"+intro+"</p>"+body;
  }).join("");
  const sample=claims.filter(c=>c.taiwan_sample===true&&/^\d+$/.test(n.get(c.claim_id)||"")).map(c=>c.claim_id);
- return '<hr><section data-region="tw"><h2>'+TW_HEADING+"</h2><p>"+(e.taiwan_not_searched===true?TW_INTRO_NOT_SEARCHED:TW_INTRO)+"</p>"+parts+(sample.length?"<p>本期國際項目中以臺灣為樣本者："+cite(sample,n)+"。</p>":"")+"</section>";
+ return '<hr><section data-region="tw"><h2>'+TW_HEADING+"</h2><p>"+(e.taiwan_not_searched===true?TW_INTRO_NOT_SEARCHED:TW_INTRO)+"</p>"+parts+(sample.length?"<h3>以臺灣為樣本的國際研究</h3><p>國際區中研究樣本在臺灣的項目，列出以便對照。</p><ul>"+sample.map(id=>{const c=claims.find(x=>x.claim_id===id),num=n.get(id);return '<li><a href="#'+anchor(num)+'">第 '+esc(num)+" 則</a>｜"+esc(itemTitle(c))+"</li>"}).join("")+"</ul>":"")+"</section>";
 }
 /* Neighbouring weekly periods for the 上一期／下一期 links: registered weeklies plus the legacy launch issue. */
 function weeklyNav(period,registered){
@@ -393,7 +405,7 @@ function monthlyRow(c,n,w){
  const tags=c.section==="background"?"相關："+monthlyCite(c.related_claim_ids||[],n):c.section==="tw_compare"?"對照："+monthlyCite(c.related_claim_ids||[],n):dailyTagList(c).map(t=>"<span>#"+esc(t)+"</span>").join(" ")+(c.has_resources===true?" <span>#附可下載資源</span>":"")+(typeof c.doi==="string"&&c.doi?"<br>DOI："+esc(c.doi):"");
  const zh=typeof c.title_zh==="string"&&c.title_zh.trim()?c.title_zh.trim():"",rs=zh?' rowspan="2"':"";
  const td=(col,v,extra="")=>"<td"+rs+' data-col="'+col+'"'+extra+">"+v+"</td>";
- return '<tr id="'+anchor(n.get(c.claim_id))+'">'+td("num",esc(n.get(c.claim_id)))+td("kind","<span>"+label+"</span><br>"+type,' data-kind="'+cls+'"')+td("date",monthlyDate(c,w))+td("audience","<span>"+esc(MONTHLY_AUDIENCE[c.audience]||"未標示")+"</span>")+td("tags",tags)+
+ return '<tr id="'+anchor(n.get(c.claim_id))+'">'+td("num",esc(n.get(c.claim_id)))+td("kind","<span>"+label+"</span><br>"+type+selfReported(c),' data-kind="'+cls+'"')+td("date",monthlyDate(c,w))+td("audience","<span>"+esc(MONTHLY_AUDIENCE[c.audience]||"未標示")+"</span>")+td("tags",tags)+
   (zh?'<td data-col="content">中文譯名：'+esc(zh)+"</td></tr><tr>":"")+'<td data-col="content" data-claim-id="'+esc(c.claim_id)+'">'+(c.full_text_checked===true?facetBody(c):claimBody(c))+"</td></tr>";
 }
 const monthlyTable=(items,n,w)=>"<table><thead><tr>"+MONTHLY_COLUMNS.map(([,h])=>'<th scope="col">'+h+"</th>").join("")+"</tr></thead><tbody>"+items.map(c=>monthlyRow(c,n,w)).join("")+"</tbody></table>";
@@ -407,28 +419,38 @@ function monthlyContext(e,editions){
  const through=typeof e.indexed_through==="string"?e.indexed_through:"";
  const dailies=dailyEditions(editions).filter(d=>d.date<=through).map(d=>({date:d.date,claims:objs(d.claims)})).sort((a,b)=>compareText(a.date,b.date));
  const months=[...new Set([...LEGACY_MONTHLY.map(x=>x.path.slice(8,15)),...periodEditions("monthly",editions).map(x=>x.period)])].sort(compareText);
- return {weeklies,dailies,months};
+ // Items first disclosed last month but run as daily briefs after last month's issue are listed here (joint review D6).
+ const prevIssue=periodEditions("monthly",editions).filter(x=>monthlySectioned(x)&&x.period<e.period&&typeof x.indexed_through==="string").sort((a,b)=>compareText(b.period,a.period))[0];
+ const prev=prevIssue?{...monthlyWindow(prevIssue.period),through:prevIssue.indexed_through}:null;
+ return {weeklies,dailies,months,prev};
 }
-/* Weekly featured and brief items first disclosed in the window, then daily items not yet in a listed weekly. */
+/* Weekly featured, brief and late items first disclosed in the window; daily items not in a listed weekly; and items
+   first disclosed last month that ran after last month's issue. Entries link to the daily item and the weekly page,
+   not to weekly item numbers, so a weekly revision does not renumber an issued monthly's list (joint review D7). */
+const typeLabel=c=>c.daily_fact_kind?dailyKind(c)[1]:weeklyKind(c)[1]+"・"+(SOURCE_TYPES[c.source_document_type]||"其他")+selfReported(c);
+const dailyRef=id=>{const day=id.slice(1,5)+"-"+id.slice(5,7)+"-"+id.slice(7,9);return {href:"../../daily/"+day+"/#"+id,label:"每日短訊 "+day}};
 function monthlyListing(e,w){
- const ctx=e.context||{},inWin=d=>isDay(d)&&d>=w.start&&d<=w.end,seen=new Set(),groups=[],tw=[],pending=[];
+ const ctx=e.context||{},inWin=d=>isDay(d)&&d>=w.start&&d<=w.end,seen=new Set(),groups=[],tw=[],early=[],pending=[],late=[];
+ const weeklyStart=(ctx.weeklies||[]).map(x=>(periodRange("weekly",x.period)||{}).start).filter(Boolean).sort()[0]||"";
  for(const wk of ctx.weeklies||[]){
-  const n=weeklyNumbers(wk.claims);
   for(const c of wk.claims)if(typeof c.weekly_source_claim==="string")seen.add(c.weekly_source_claim);
-  const items=wk.claims.filter(c=>["featured","briefs"].includes(c.weekly_section)&&inWin(c.first_disclosed_on));
-  if(items.length)groups.push({weekly:true,label:"週報 "+periodLabel(wk.period),items:items.map(c=>({c,kind:weeklyKind(c)[1],href:"../../weekly/"+wk.period+"/#"+anchor(n.get(c.claim_id)),where:"週報第 "+n.get(c.claim_id)+" 則"}))});
+  const items=wk.claims.filter(c=>["featured","briefs","late"].includes(c.weekly_section)&&inWin(c.first_disclosed_on));
+  const wref={href:"../../weekly/"+wk.period+"/",label:"週報 "+periodLabel(wk.period)};
+  if(items.length)groups.push({weekly:true,label:"週報 "+periodLabel(wk.period),items:items.map(c=>({c,kind:typeLabel(c),links:[wref,...(/^D\d{8}-\d{2}$/.test(c.weekly_source_claim||"")?[dailyRef(c.weekly_source_claim)]:[])]}))});
  }
+ const prev=ctx.prev,inPrev=d=>prev&&isDay(d)&&d>=prev.start&&d<=prev.end;
  for(const d of ctx.dailies||[])for(const c of d.claims){
-  if(!inWin(c.first_disclosed_on))continue;
-  const entry={c,kind:c.kind==="research"?"研究":"政策",href:"../../daily/"+d.date+"/",where:"每日短訊 "+d.date};
-  if(isTw(c))tw.push(entry);else if(!seen.has(c.claim_id))pending.push(entry);
+  const entry={c,kind:typeLabel(c),links:[dailyRef(c.claim_id)]};
+  if(inWin(c.first_disclosed_on)){if(isTw(c))tw.push(entry);else if(!seen.has(c.claim_id))(weeklyStart&&c.first_disclosed_on<weeklyStart?early:pending).push(entry)}
+  else if(inPrev(c.first_disclosed_on)&&d.date>prev.through&&!isTw(c))late.push(entry);
  }
- if(pending.length)groups.push({label:"每日短訊（尚未收入上列週報）",items:pending});
+ if(early.length)groups.push({label:"每日短訊（首次公開早於所列週報期間，不收入週報）",items:early});
+ if(pending.length)groups.push({label:"每日短訊（尚待下期週報）",items:pending});
+ if(late.length)groups.push({label:"上月補列（首次公開於上月、上期月報出刊後才刊出）",items:late});
  return {groups,tw,all:[...tw,...groups.flatMap(g=>g.items)]};
 }
 function listingItem(x,n){
- const title=typeof x.c.title_zh==="string"&&x.c.title_zh.trim()?x.c.title_zh.trim():x.c.source_title||"";
- return '<li id="'+anchor(n.get(x.c.claim_id))+'">'+esc(n.get(x.c.claim_id))+"｜"+esc(x.kind)+"｜"+esc(x.c.first_disclosed_on)+"｜"+esc(title)+(typeof x.c.tracked_scholar==="string"&&x.c.tracked_scholar.trim()?"｜追蹤學者":"")+'｜<a href="'+esc(x.href)+'">'+esc(x.where)+'</a>｜<a href="'+esc(x.c.source_url)+'">原文</a></li>';
+ return '<li id="'+anchor(n.get(x.c.claim_id))+'">'+esc(n.get(x.c.claim_id))+"｜"+esc(x.kind)+"｜"+esc(x.c.first_disclosed_on)+"｜"+esc(itemTitle(x.c))+(typeof x.c.tracked_scholar==="string"&&x.c.tracked_scholar.trim()?"｜追蹤學者":"")+x.links.map(l=>'｜<a href="'+esc(l.href)+'">'+esc(l.label)+"</a>").join("")+'｜<a href="'+esc(x.c.source_url)+'">原文</a></li>';
 }
 function monthlySummary(e,claims,listing,w){
  const ctx=e.context||{},inWin=d=>d>=w.start&&d<=w.end,dims=c=>Array.isArray(c.ai_lit_dims)?c.ai_lit_dims:[];
@@ -436,9 +458,9 @@ function monthlySummary(e,claims,listing,w){
  const items=claims.filter(c=>["policy","research","scholars","background","tw_policy","tw_research","tw_compare"].includes(c.section));
  const research=claims.filter(c=>c.section==="research"||c.section==="scholars"),non=research.filter(isNonK12).length;
  const aud=Object.entries(MONTHLY_AUDIENCE).map(([k,v])=>[v,items.filter(c=>c.audience===k).length]).filter(([,x])=>x).map(([v,x])=>v+" "+x).join("、");
- return "本期（"+w.start+" 至 "+w.end+"）首次公開、已刊於週報或每日短訊者 "+listing.all.length+" 則（週報 "+(ctx.weeklies||[]).length+" 期 "+weeklyItems+" 則、尚未收入週報的每日短訊 "+dailyOnly+" 則、臺灣 "+listing.tw.length+" 則）。本月報另收：政策與官方文件 "+cnt("policy")+"、研究 "+cnt("research")+"、重要學者本月新作 "+cnt("scholars")+"、背景資料 "+cnt("background")+
+ return "本期（"+w.start+" 至 "+w.end+"）已刊於週報或每日短訊的國際項目 "+(listing.all.length-listing.tw.length)+" 則（週報 "+(ctx.weeklies||[]).length+" 期 "+weeklyItems+" 則、未收入週報的每日短訊 "+dailyOnly+" 則）、臺灣 "+listing.tw.length+" 則。本月報另收：政策與官方文件 "+cnt("policy")+"、研究 "+cnt("research")+"、重要學者本月新作 "+cnt("scholars")+"、背景資料 "+cnt("background")+
   "；對應學生 AI 素養面向者 "+items.filter(c=>dims(c).some(d=>d.startsWith("S-"))).length+" 則、教師面向者 "+items.filter(c=>dims(c).some(d=>d.startsWith("T-"))).length+" 則"+(aud?"；對象："+aud:"")+
-  "；非中小學研究 "+non+"／"+research.length+" 則（研究與重要學者本月新作合計；來自本刊追蹤學者清單與檢索紀錄，非系統蒐集）；"+(cnt("tw_policy")?"臺灣本月中央文件 "+cnt("tw_policy")+" 則、":"")+"臺灣研究"+(e.taiwan_journals_not_searched===true?"本期未查":" "+cnt("tw_research")+" 則")+(cnt("tw_compare")?"、對應的臺灣中央文件 "+cnt("tw_compare")+" 列":"")+"。";
+  policyCountries([...claims.filter(c=>c.section==="policy"),...listing.groups.flatMap(g=>g.items).map(x=>x.c)])+"；非中小學研究 "+non+"／"+research.length+" 則（研究與重要學者本月新作合計；來自本刊追蹤學者清單與檢索紀錄，非系統蒐集）；"+(cnt("tw_policy")?"臺灣本月中央文件 "+cnt("tw_policy")+" 則、":"")+"臺灣研究"+(e.taiwan_journals_not_searched===true?"本期未查":" "+cnt("tw_research")+" 則")+(cnt("tw_compare")?"、對應的臺灣中央文件 "+cnt("tw_compare")+" 列":"")+"。";
 }
 function monthlyNav(period,months){
  const i=months.indexOf(period);if(i<0)return "";
@@ -483,7 +505,7 @@ function periodEditions(kind,editions){
 }
 function renderPeriodIndex(kind,editions){
  const isWeekly=kind==="weekly",label=isWeekly?"週報":"月報",legacy=isWeekly?LEGACY_WEEKLY:LEGACY_MONTHLY;
- const registered=editions.filter(e=>e.path.startsWith(kind+"/")).map(e=>({path:e.path.replace(/index\.html$/,""),title:e.title||label+"："+(isWeekly?periodLabel(e.path.split("/")[1]):e.path.split("/")[1]),note:itemCount(e)+" 則，已通過自動檢查（非內容認證）"})).sort((a,b)=>compareText(b.path,a.path));
+ const registered=editions.filter(e=>e.path.startsWith(kind+"/")).map(e=>({path:e.path.replace(/index\.html$/,""),title:e.title||label+"："+(isWeekly?periodLabel(e.path.split("/")[1]):e.path.split("/")[1]),note:itemCount(e)+" 則，"+STATUS_NOTE})).sort((a,b)=>compareText(b.path,a.path));
  const rows=[...registered,...legacy].map(x=>'<li class="item"><p><a href="'+esc(x.path.slice(kind.length+1))+'">'+esc(x.title)+'</a></p><div class="meta-line"><span>'+esc(x.note)+"</span></div></li>").join("");
  const head='<div class="kicker">'+label+"</div><h1>"+(isWeekly?"每週五：精選與當週一覽":"次月 3 日：跨週整理")+'</h1>'+relationNote("../")+'<p class="lead">'+(isWeekly?"期別為前一週五至週四。精選讀全文補上樣本、方法與限制，其餘一行一則並連到每日短訊；每則標示來源類型。沒有達到查核門檻的週次不發刊，不為湊數放寬標準。":"期別為日曆月。已刊於每日短訊或週報的項目列在一覽，另收週報沒有收的研究與文件；區分原始發現與編輯歸納。")+"</p>";
  const main=(registered.length?"":'<p class="empty">尚無以新版流程登錄的'+label+"；以下為早期版本。</p>")+'<ul class="item-list">'+rows+"</ul>";
@@ -629,6 +651,7 @@ function renderAbout(){
   '<section class="panel"><div class="label">週報與月報</div><h2>對回原文；精選讀全文</h2><ul><li>政策依 N1–N8、研究依 G1–G6 查核</li><li>週報精選至多 5 則讀全文，補上樣本、設計、作者所述發現與限制；其他短訊一行一則，連到每日短訊的原文歸屬摘要</li><li>AI 兩輪對照（第二輪由隔離子代理對照原文）；未經逐則真人審稿</li><li>高風險主張（成效、因果、跨學段推論）一律不自動發布</li><li>編輯歸納（AI 整理，未經真人審閱；週報導讀、臺灣對照說明、月報一句話、導讀與趨勢）與原始發現分開標示，每句附依據</li><li>背景補充只收首發早於本期的文件，標「背景」，非本週新訊</li><li>週報臺灣區（只收中央機關與臺灣研究）與國際分開；臺灣對照只並列事實，不作評價或建議；每日短訊分國際、臺灣兩段（2026-10-18 以前的頁面已於 10-17 補查臺灣來源）；每則短訊下方列出後來收入的週報與月報編號</li><li>月報（2026 年 10 月起）是當月的跨週整理：已刊於每日短訊或週報的項目只列在「一覽」、不重寫；政策與研究只收沒有刊在每日短訊或週報的項目，可收師培、大學、成人對象的研究（研究與學者新作合計，非中小學不超過三分之一，至少可收 2 則）；原文僅標示年月的文件註明日期依據；次月 3 日刊出。管理者回覆「合併」是發布核准，不代表逐則真人審稿</li></ul></section>'+
   '<section class="panel"><div class="label">歷年資料庫</div><h2>書目索引，不是認證</h2><ul><li><strong>僅發現・未核</strong>：只核過登記資料</li><li><strong>書目已核</strong>：題名、出處、日期對過原頁</li><li><strong>原文已核</strong>：內容逐段核對</li><li>首發日未核實時以卷期年歸類並註明</li><li>題名下的「#」標記由 AI 判讀，未經人工核對；篇數與標記不是趨勢統計</li><li>Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，不作為升為「書目已核」的依據</li><li>不批次核對；被週報、月報引用時才逐篇讀原頁</li></ul></section></div>'+
   '<section class="notice" style="margin-top:28px"><h2>我們不宣稱的事</h2><ul><li>同一個 AI 模型的多次查核彼此一致，不等於獨立真人審閱。</li><li>網站部署成功不等於內容已獲認證。</li><li>創刊特刊與 2026 年 9 月月報為早期版本，未經獨立認證，保留公開更正紀錄。</li><li>讀不到的官方或出版社網站，只能寫「搜尋未見」，不能寫「沒有發布」。</li></ul></section>'+
+  '<section class="info" style="margin-top:20px" id="glossary"><h2>用語說明</h2><ul><li><strong>首次公開</strong>：來源第一次公開的日期（出版社上線日、官方頁面日期），不是活動日或生效日</li><li><strong>預印本</strong>：作者自行公開、尚未經期刊同儕審查的論文版本，結論可能在正式刊出前修改</li><li><strong>同儕審查論文</strong>：經期刊審稿後刊出的論文；同儕審查不保證結論正確</li><li><strong>準實驗</strong>：有比較組但未隨機分派的研究設計，不能直接推論因果</li><li><strong>作者摘要報告／官方文件表示</strong>：本刊轉述原文摘要或官方原文，不是本刊的判斷</li><li><strong>編輯歸納</strong>：本刊依已列項目整理的句子，AI 整理、未經真人審閱，每句附依據編號</li><li><strong>機構自述成效</strong>：官方新聞稿自己說的成果，不是同儕審查研究的結論</li><li><strong>已通過自動檢查（非內容認證）</strong>：頁面、日期、來源與用語通過程式檢查，不代表內容經真人或專家認證</li></ul></section>'+
   '<section class="info" style="margin-top:20px"><h2>更正政策</h2><p>發現錯誤時記錄原說法、錯誤類型、原始來源與修訂內容，在網站明示更正，不默默覆蓋。歡迎透過 <a href="../feedback/">讀者評鑑與勘誤</a>（GitHub Issues）回報。</p></section>';
  return shell({depth:1,current:"about",title:"查核方法與證據等級",description:"K-12 AI 素養國際動態的查核方法、證據等級與更正政策",head,main});
 }
@@ -642,10 +665,10 @@ function weeklyCard(editions){
  const rule="每週五彙整前一週五至週四、完成首發與原文查核的 K-12 AI 素養動態。沒有達到查核門檻的項目時不發刊，不為湊數放寬標準。";
  if(!latest)return '<h3 style="font-size:24px;margin:8px 0 6px">尚無以新版流程發布的週報</h3><p style="margin:0 0 12px">'+rule+'</p><a class="button" href="./weekly/">所有週報</a>';
  const {start,end}=periodRange("weekly",latest.period),next=addDays(end,8);
- return '<h3 style="font-size:24px;margin:8px 0 6px">最新週報：'+slash(start)+"—"+slash(end).slice(5)+'</h3><p style="margin:0 0 12px">'+itemCount(latest)+" 則，已通過出版閘門。"+rule+"下一期預定 "+mdDay(next)+"（涵蓋 "+slash(addDays(end,1)).slice(5)+"—"+slash(addDays(end,7)).slice(5)+'）。</p><a class="button" href="./'+esc(latest.path.replace(/index\.html$/,""))+'">閱讀本期週報</a> <a class="button outline" href="./weekly/">所有週報</a>';
+ return '<h3 style="font-size:24px;margin:8px 0 6px">最新週報：'+slash(start)+"—"+slash(end).slice(5)+'</h3><p style="margin:0 0 12px">'+itemCount(latest)+" 則，"+STATUS_NOTE+'（<a href="./about/">查核方法</a>）。'+rule+"下一期預定 "+mdDay(next)+"（涵蓋 "+slash(addDays(end,1)).slice(5)+"—"+slash(addDays(end,7)).slice(5)+'）。</p><a class="button" href="./'+esc(latest.path.replace(/index\.html$/,""))+'">閱讀本期週報</a> <a class="button outline" href="./weekly/">所有週報</a>';
 }
-/* Monthly card: the newest registered monthly; the next one is scheduled on the 29th (month end in February)
-   of the following month. With none registered, the next month follows the legacy September 2026 issue. */
+/* Monthly card: the newest registered monthly; the next one is published on the 3rd of the month after it.
+   With none registered, the next month follows the legacy September 2026 issue. */
 function monthlyCard(editions){
  const latest=periodEditions("monthly",editions).sort((a,b)=>compareText(b.period,a.period))[0];
  const base=latest?latest.period:LEGACY_MONTHLY.map(x=>x.path.slice(8,15)).sort().pop();
@@ -653,7 +676,7 @@ function monthlyCard(editions){
  const nm=m===12?1:m+1,next=m+" 月月報預定 "+nm+" 月 3 日刊出，經管理者核准後發布。",about="當月的跨週整理，另收週報沒有收的研究與文件。";
  if(!latest)return '<h3 style="font-size:24px;margin:8px 0 6px">尚無以新版流程發布的月報</h3><p style="margin:0 0 12px">'+about+next+'</p><a class="button" href="./monthly/">所有月報</a>';
  const {year,month}=periodRange("monthly",latest.period);
- return '<h3 style="font-size:24px;margin:8px 0 6px">最新月報：'+year+" 年 "+month+' 月</h3><p style="margin:0 0 12px">'+itemCount(latest)+" 則，已通過出版閘門。"+about+next+'</p><a class="button" href="./'+esc(latest.path.replace(/index\.html$/,""))+'">閱讀本期月報</a> <a class="button outline" href="./monthly/">所有月報</a>';
+ return '<h3 style="font-size:24px;margin:8px 0 6px">最新月報：'+year+" 年 "+month+' 月</h3><p style="margin:0 0 12px">'+itemCount(latest)+" 則，"+STATUS_NOTE+'（<a href="./about/">查核方法</a>）。'+about+next+'</p><a class="button" href="./'+esc(latest.path.replace(/index\.html$/,""))+'">閱讀本期月報</a> <a class="button outline" href="./monthly/">所有月報</a>';
 }
 const BLOCKS={"weekly-latest":(days,data,editions)=>weeklyCard(editions),"monthly-latest":(days,data,editions)=>monthlyCard(editions),"daily-latest":(days,data)=>{
   return days.length?'<ul class="item-list">'+dailyCard(days[0],0)+"</ul>":'<p class="empty">尚無已發布的每日短訊。沒有合格項目的日子不發刊。</p>';

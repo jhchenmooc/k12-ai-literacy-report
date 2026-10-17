@@ -75,6 +75,11 @@ jobs:
         run: |
           node --test research/render-site.test.js research/check-daily-pr-scope.test.js
           node research/render-site.js
+      - name: Daily PRs leave issued weekly and monthly pages unchanged (branches claude/daily-*)
+        if: github.event_name == 'pull_request' && startsWith(github.head_ref, 'claude/daily-')
+        run: |
+          git fetch --no-tags --depth=1 origin "${{ github.base_ref }}"
+          node research/check-daily-pr-scope.js FETCH_HEAD --two-dot
       - name: Verify public artifact inventory and build
         run: node research/public-site.js . --build
   deploy:
