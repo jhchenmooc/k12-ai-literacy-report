@@ -213,3 +213,8 @@ article>section[data-region="tw"]{background:#f3f8f1;border:1px solid #d5e6d0;bo
 article>section[data-region="tw"] h3{font-size:18px;margin:22px 0 6px}
 .kind.tw{background:#2f6b3a}
 @media (max-width:960px){article>section[data-region="tw"]{padding:14px 12px}}
+/* Numbered overview and Taiwan comparison sentences (manager request 2026-10-17); 依據 lines align under the text. */
+article>section[data-part="overview"],article>section[data-region="tw"]{counter-reset:analysis}
+article>section[data-part="overview"]>p[data-claim-id],article>section[data-region="tw"]>p[data-claim-id]{counter-increment:analysis;position:relative;padding-left:30px}
+article>section[data-part="overview"]>p[data-claim-id]::before,article>section[data-region="tw"]>p[data-claim-id]::before{content:counter(analysis) ".";position:absolute;left:0;color:var(--navy);font-weight:700}
+article>section[data-part="overview"]>p[data-claim-id]+p,article>section[data-region="tw"]>p[data-claim-id]+p{padding-left:30px}

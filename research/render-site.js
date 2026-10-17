@@ -235,7 +235,7 @@ function weeklyMain(claims,e={}){
   if(!items.length)body="<p>"+WEEKLY_EMPTY+"</p>";
   else if(key==="overview")body=items.map(c=>'<p data-claim-id="'+esc(c.claim_id)+'">'+esc(c.claim_text)+"</p><p>依據："+cite(c.supporting_claim_ids||[],n)+"</p>").join("");
   else body="<table><thead><tr>"+WEEKLY_COLUMNS.map(h=>'<th scope="col">'+h+"</th>").join("")+"</tr></thead><tbody>"+items.map(c=>weeklyRow(c,n,claims)).join("")+"</tbody></table>";
-  return "<section><h2>"+heading+"</h2><p>"+intro+"</p>"+body+"</section>";
+  return "<section"+(key==="overview"?' data-part="overview"':"")+"><h2>"+heading+"</h2><p>"+intro+"</p>"+body+"</section>";
  }).join("");
  const link=(label,p)=>p?"<p>"+label+'：<a href="../'+esc(p)+'/">'+esc(periodLabel(p))+"</a></p>":"";
  const nav=e.nav?link("上一期",e.nav.prev)+link("下一期",e.nav.next):"";
