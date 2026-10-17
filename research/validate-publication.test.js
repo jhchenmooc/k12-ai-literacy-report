@@ -375,7 +375,7 @@ test('monthly structure: sections, research groups and trend support are enforce
  }
 });
 // Sectioned weekly (manager decision 2026-10-17): featured items re-checked against full text, then other daily items.
-const featured={...claim,claim_id:'W1',weekly_section:'featured',full_text_checked:true,first_disclosed_on:'2026-10-10',source_document_type:'official_guidance',claim_text:'合成案例：精選深入版'};
+const featured={...claim,claim_id:'W1',weekly_section:'featured',full_text_checked:true,first_disclosed_on:'2026-10-10',source_document_type:'official_guidance',claim_text:'合成案例：精選深入版。內容：合成內容。'};
 const brief={...claim,claim_id:'W2',weekly_section:'briefs',weekly_source_claim:'D20261012-01',first_disclosed_on:'2026-10-10',source_document_type:'official_guidance',source_url:'https://example.org/daily-1',evidence_source_url:'https://example.org/daily-1',claim_text:'合成案例：其他短訊'};
 // Registered daily items the weekly fixtures repeat: D20261012-01 (international) and D20261012-02 (Taiwan).
 function registerDailyForWeekly(d){
@@ -444,7 +444,7 @@ const overview={...claim,claim_id:'O1',weekly_section:'overview',first_disclosed
 const background={...claim,claim_id:'B1',weekly_section:'background',first_disclosed_on:'2026-09-01',source_document_type:'official_guidance',related_claim_ids:['W2'],claim_text:'合成案例：先前的框架'};
 test('weekly additions: overview, background, Chinese title, facets and nav render and pass',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
- const f2={...featured,title_zh:'合成中文譯名',claim_text:'合成案例：精選深入版。樣本：三年級 20 人。限制：單一學校。'};
+ const f2={...featured,title_zh:'合成中文譯名',claim_text:'合成案例：精選深入版。樣本：三年級 20 人。限制：單一學校。內容：合成內容。'};
  const claims=[overview,f2,brief,background];
  const r=weeklyFull(d,claims);assert.deepEqual(r.errors,[]);
  const html=fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8');
@@ -471,7 +471,7 @@ test('weekly Taiwan area: renders after the international sections and passes',t
  const claims=[featured,{...brief,taiwan_sample:true},twItem,twCompare,twNote];
  assert.deepEqual(weeklyFull(d,claims).errors,[]);
  const html=fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8');
- for(const text of ['<hr><section data-region="tw"><h2>臺灣</h2>','<h3>對照說明</h3>','<h3>臺灣本週動態</h3>','<h3>臺灣對照</h3>','依據：國際第 <a href="#item-1">1</a> 則；臺灣：<a href="#item-c1">對照 1</a>','對照：第 <a href="#item-1">1</a> 則','<li id="item-t1">臺 1｜','<h3>以臺灣為樣本的國際研究</h3>','<li><a href="#item-2">第 2 則</a>｜','臺灣本週動態 1 則、臺灣對照 1 列'])assert.ok(html.includes(text),text);
+ for(const text of ['<hr><section id="sec-tw" data-region="tw"><h2>臺灣</h2>','<h3>對照說明</h3>','<h3>臺灣本週動態</h3>','<h3>臺灣對照</h3>','依據：國際第 <a href="#item-1">1</a> 則；臺灣：<a href="#item-c1">對照 1</a>','對照：第 <a href="#item-1">1</a> 則','<li id="item-t1">臺灣 1｜','<h3>以臺灣為樣本的國際研究</h3>','<li><a href="#item-2">第 2 則</a>｜','臺灣本週動態 1 則、臺灣對照 1 列'])assert.ok(html.includes(text),text);
  assert.ok(html.indexOf('本週其他短訊')<html.indexOf('<hr>'));
  const r=weeklyFull(d,[featured,brief,twCompare],undefined,{taiwan_not_searched:true});assert.deepEqual(r.errors,[]);
  assert.ok(fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8').includes('本期尚未納入臺灣來源查核'));
@@ -1039,7 +1039,7 @@ function weeklyAt(d,period,claims,transform=x=>x){
 }
 const facetText='來源機構：Example；資料標題：Synthetic study；來源刊登日：2026-10-17。樣本：國小 30 人。設計：問卷。作者所述發現：作者報告學生多數使用 AI 查詢。限制：便利樣本。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）';
 const featuredNew={...featured,claim_id:'F1',kind:'research',level:'V2',source_document_type:'peer_reviewed_article',source_type:'journal_article',first_disclosed_on:'2026-10-17',publication_date:'2026-10-17',source_title:'Synthetic study',claim_text:facetText};
-test('weekly from 2026-10-16: featured research needs the four facets; policy items need source_country',t=>{
+test('weekly from 2026-10-09: featured research needs the four facets; from 2026-10-16 policy items need source_country',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
  assert.deepEqual(weeklyAt(d,'2026-10-16_10-22',[featuredNew]).result.errors,[]);
  assert.ok(weeklyAt(d,'2026-10-16_10-22',[{...featuredNew,claim_text:facetText.replace('。限制：便利樣本','')}]).result.errors.some(e=>e.includes('missing 限制')));
@@ -1048,14 +1048,14 @@ test('weekly from 2026-10-16: featured research needs the four facets; policy it
  const ok=weeklyAt(d,'2026-10-16_10-22',[featuredNew,{...pol,source_country:'GB-ENG'}]);assert.deepEqual(ok.result.errors,[]);
  assert.ok(ok.html.includes('政策來源：英格蘭 1'));
  assert.equal(weeklyAt(d,'2026-10-16_10-22',[featuredNew,{...pol,source_country:'England'}]).result.ok,false);
- // The earlier issue (10-09 period) is not held to the new facet rule.
- assert.deepEqual(weeklyAt(d,'2026-10-09_10-15',[{...featuredNew,first_disclosed_on:'2026-10-10',publication_date:'2026-10-10',claim_text:facetText.replace('。限制：便利樣本','')}]).result.errors,[]);
+ // The four facets reach back to the 10-09 period (joint review E1b); the earlier launch issue is legacy.
+ assert.ok(weeklyAt(d,'2026-10-09_10-15',[{...featuredNew,first_disclosed_on:'2026-10-10',publication_date:'2026-10-10',claim_text:facetText.replace('。限制：便利樣本','')}]).result.errors.some(e=>e.includes('missing 限制')));
 });
 test('self-reported outcome: a fixed note in the type label; any other value is refused',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
  const r=require('./render-site.js'),c={...dailyLow,self_reported_outcome:true};
- assert.ok(r.renderDailyEdition({date:'2099-01-01',claims:[c]}).includes('（機構自述成效，非同儕審查研究）</p>'));
- const ok=weeklyAt(d,'2026-10-09_10-15',[{...featured,self_reported_outcome:true}]);assert.deepEqual(ok.result.errors,[]);assert.ok(ok.html.includes('官方指引（機構自述成效，非同儕審查研究）'));
+ assert.ok(r.renderDailyEdition({date:'2099-01-01',claims:[c]}).includes('（來源含機構自述成效，本刊未轉述；非同儕審查研究）</p>'));
+ const ok=weeklyAt(d,'2026-10-09_10-15',[{...featured,self_reported_outcome:true}]);assert.deepEqual(ok.result.errors,[]);assert.ok(ok.html.includes('官方指引（來源含機構自述成效，本刊未轉述；非同儕審查研究）'));
  assert.equal(weeklyAt(d,'2026-10-09_10-15',[{...featured,self_reported_outcome:'yes'}]).result.ok,false);
 });
 test('weekly late items: first disclosed in the two weeks before the period, shown as 補 n lines; otherwise refused',t=>{
@@ -1069,5 +1069,16 @@ test('a weekly line item must match its daily claim in date, link, kind and docu
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
  for(const over of [{first_disclosed_on:'2026-10-11'},{source_document_type:'draft'},{source_url:'https://example.org/else',evidence_source_url:'https://example.org/else'}]){
   const r=weeklyFull(d,[featured,{...brief,...over}]);assert.ok(r.errors.some(e=>e.includes('must equal its daily claim')),JSON.stringify(over));
+ }
+});
+test('sectioned monthly: an international study with a Taiwan sample is listed again in the Taiwan area (joint review E2b)',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const claims=monthlyBase().map(x=>x.claim_id==='R1'?{...x,taiwan_sample:true}:x);
+ const {html,result}=monthlySetup(d,claims);
+ assert.deepEqual(result.errors,[]);
+ for(const s of ['<a href="#sec-tw_sample">以臺灣為樣本的國際研究（1）</a>','<section id="sec-tw_sample"><h3>以臺灣為樣本的國際研究</h3>','<li>第 <a href="#item-2">2</a> 則｜Synthetic source R1</li>'])assert.ok(html.includes(s),s);
+ for(const bad of [x=>x.claim_id==='P1'?{...x,taiwan_sample:true}:x,x=>x.claim_id==='R1'?{...x,taiwan_sample:'yes'}:x]){
+  const e=setup();t.after(()=>fs.rmSync(e,{recursive:true,force:true}));
+  assert.equal(monthlySetup(e,monthlyBase().map(bad)).result.ok,false);
  }
 });
