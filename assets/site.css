@@ -208,10 +208,11 @@ article>section[data-part="overview"]>p[data-claim-id]+p,article>section[data-re
 /* Focus ring with enough contrast on white and on --bg (WCAG 1.4.11): dark ring plus the amber halo. */
 a:focus-visible{outline:3px solid var(--navy);outline-offset:2px;box-shadow:0 0 0 5px #ffb629}
 /* 國際／臺灣: daily section headings and the weekly Taiwan area, set apart by a rule and a tinted panel. */
-article>section:has(>h2[data-region]){padding-left:2em}
-article>section>h2[data-region]{font-size:20px;margin:28px 0 12px -2em;padding-bottom:6px;border-bottom:2px solid var(--border)}
+article>section:has(>h2[data-region]){padding-left:36px}
+article>section>h2[data-region]{font-size:20px;margin:28px 0 12px -36px;padding-bottom:6px;border-bottom:2px solid var(--border)}
 article>section:has(>h2[data-region="tw"]){border-left:4px solid #2f6b3a;background:#f1f7ef;border-radius:0 12px 12px 0;padding-top:4px;padding-bottom:8px}
-article>section>h2[data-region="tw"]{color:#2f6b3a}
+article>section>h2[data-region="tw"]{color:#2f6b3a;margin-left:-32px;padding-top:12px}
+article>section:has(>h2[data-region="tw"]){padding-left:52px;padding-right:20px}
 article>section:first-child>h2[data-region]{margin-top:0}
 article>hr{border:0;border-top:3px double #8fa3bb;margin:40px 0 24px}
 article>section[data-region="tw"]{background:#e9f3e6;border:1px solid #b7d3ae;border-left:6px solid #2f6b3a;border-radius:16px;padding:20px 22px}
