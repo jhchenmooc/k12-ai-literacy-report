@@ -64,11 +64,14 @@ test("homepage monthly card follows the newest registered monthly",()=>{
  const shell='<!-- generated:weekly-latest:start --><!-- generated:weekly-latest:end --><!-- generated:monthly-latest:start --><!-- generated:monthly-latest:end --><!-- generated:daily-latest:start --><!-- generated:daily-latest:end --><!-- generated:archive-stats:start --><!-- generated:archive-stats:end -->';
  const data={policy:[],journals:[],conferences:[]},mo=(p,n)=>({path:"monthly/"+p+"/index.html",claims:Array(n).fill({})});
  const card=eds=>fillHomepage(shell,[],data,eds).split("monthly-latest:start -->")[1].split("<!--")[0];
- const none=card([]);assert.match(none,/尚無以新版流程發布的月報/);assert.match(none,/10 月月報排定 10 月 29 日製作/);
+ const none=card([]);assert.match(none,/尚無以新版流程發布的月報/);assert.match(none,/10 月月報預定 11 月 3 日刊出/);
  const two=card([mo("2026-10",9),mo("2026-12",4)]);
- assert.match(two,/最新月報：2026 年 12 月/);assert.match(two,/4 則/);assert.match(two,/1 月月報排定 1 月 29 日製作/);
+ assert.match(two,/最新月報：2026 年 12 月/);assert.match(two,/4 則/);assert.match(two,/1 月月報預定 2 月 3 日刊出/);
  assert.ok(two.includes('href="./monthly/2026-12/"'));
- assert.match(card([mo("2027-01",1)]),/2 月月報排定 2 月底製作/);
+ assert.match(card([mo("2027-01",1)]),/2 月月報預定 3 月 3 日刊出/);
+ // A sectioned monthly counts its items, not its summary sentences.
+ const sec={path:"monthly/2026-10/index.html",indexed_weeklies:[],claims:[{section:"overview_line"},{section:"overview"},{section:"policy"},{section:"research"},{section:"tw_research"}]};
+ assert.match(card([sec]),/3 則，已通過出版閘門/);
 });
 
 test("homepage stats count preprints and book chapters separately from journal articles",()=>{
@@ -252,4 +255,26 @@ test("tag filter: panel hidden without scripts, rows carry their tags, grouping 
  assert.equal(matches(t,[["AI素養核心"],["教師AI賦能教學"]],false),false);
  assert.equal(matches(t,[["國小","國中"]],true),false,"all-mode needs every checked tag");
  assert.equal(matches(t,[["國小"],["AI工具應用"]],true),true);
+});
+test("sectioned monthly listing: frozen weeklies, items by first-disclosure date, daily items not yet in a weekly",()=>{
+ const r=require("./render-site.js");
+ const d=(id,date,over={})=>({claim_id:id,kind:"research",daily_fact_kind:"research_bibliography",source_title:"T"+id,source_url:"https://example.org/"+id,first_disclosed_on:date,...over});
+ const editions=[
+  {path:"daily/2026-11-01/index.html",claims:[d("D20261031-01","2026-10-30"),d("D20261031-02","2026-10-30",{region:"tw"})]},
+  {path:"daily/2026-10-12/index.html",claims:[d("D20261012-01","2026-10-10")]},
+  {path:"weekly/2026-10-09_10-15/index.html",claims:[{...d("W1","2026-10-10"),weekly_section:"briefs",weekly_source_claim:"D20261012-01"}]},
+  {path:"weekly/2026-10-30_11-05/index.html",claims:[{...d("W2","2026-10-30"),weekly_section:"briefs",weekly_source_claim:"D20261031-01"},{...d("W3","2026-11-02"),weekly_section:"briefs"}]}];
+ const e={period:"2026-10",indexed_weeklies:["2026-10-09_10-15"],indexed_through:"2026-11-03"},w=r.monthlyWindow("2026-10");
+ assert.deepEqual(w,{month:"2026-10",prev:"2026-09",start:"2026-09-30",end:"2026-10-31"});
+ assert.deepEqual(r.monthlyWindow("2026-11"),{month:"2026-11",prev:"2026-10",start:"2026-11-01",end:"2026-11-30"});
+ const l=r.monthlyListing({context:r.monthlyContext(e,editions)},w);
+ assert.deepEqual(l.groups.map(g=>[g.label,g.items.map(x=>x.c.claim_id)]),[["週報 2026/10/09—10/15",["W1"]],["每日短訊（尚未收入上列週報）",["D20261031-01"]]]);
+ assert.deepEqual(l.tw.map(x=>x.c.claim_id),["D20261031-02"]);
+ // Once the cross-month weekly is indexed, its October item replaces the daily line and its November item stays out.
+ const l2=r.monthlyListing({context:r.monthlyContext({...e,indexed_weeklies:["2026-10-09_10-15","2026-10-30_11-05"]},editions)},w);
+ assert.deepEqual(l2.groups.map(g=>g.items.map(x=>x.c.claim_id)),[["W1"],["W2"]]);
+ // Dailies after indexed_through are not listed, so a later daily cannot change an issued monthly.
+ const l3=r.monthlyListing({context:r.monthlyContext({...e,indexed_through:"2026-10-31"},editions)},w);
+ assert.deepEqual(l3.groups.map(g=>g.items.map(x=>x.c.claim_id)),[["W1"]]);assert.deepEqual(l3.tw,[]);
+ assert.equal(r.monthlyNonK12Cap(3),2);assert.equal(r.monthlyNonK12Cap(9),3);assert.equal(r.monthlyNonK12Cap(12),4);
 });

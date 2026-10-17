@@ -164,44 +164,44 @@ article:has(>[data-claim-kind]),article>section:has(>[data-claim-kind]){counter-
 .tf-fields>summary{cursor:pointer;font-weight:700;font-size:15px;margin-top:10px;min-height:32px}
 .tf-count{font-weight:400;color:var(--muted)}
 /* Weekly section tables (render-site.js weeklyTable): number, kind badge, date, tags, item text. */
-article>section>table{width:100%;border-collapse:collapse;margin:8px 0 28px;font-size:15px;background:var(--surface);border:1px solid var(--border)}
-article>section>table th{text-align:left;font-size:13px;color:var(--muted);font-weight:700;padding:8px 10px;border-bottom:2px solid var(--border);white-space:nowrap}
-article>section>table td{padding:12px 10px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.7}
-article>section>table td:first-child:not([data-claim-id]){width:2.5em;text-align:center;color:var(--navy);font-size:18px;white-space:nowrap}
-article>section>table td:nth-child(2),article>section>table td:nth-child(3){white-space:nowrap;font-size:13px;color:var(--muted)}
-article>section>table td:nth-child(4){width:9em;font-size:13px;color:var(--navy)}
-article>section>table td:nth-child(4) span{white-space:nowrap}
-article>section>table td[data-claim-id]{font-size:16px}
+article section>table{width:100%;border-collapse:collapse;margin:8px 0 28px;font-size:15px;background:var(--surface);border:1px solid var(--border)}
+article section>table th{text-align:left;font-size:13px;color:var(--muted);font-weight:700;padding:8px 10px;border-bottom:2px solid var(--border);white-space:nowrap}
+article section>table td{padding:12px 10px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.7}
+article section>table td:first-child:not([data-claim-id]){width:2.5em;text-align:center;color:var(--navy);font-size:18px;white-space:nowrap}
+article section>table td:nth-child(2),article section>table td:nth-child(3){white-space:nowrap;font-size:13px;color:var(--muted)}
+article section>table td:nth-child(4){width:9em;font-size:13px;color:var(--navy)}
+article section>table td:nth-child(4) span{white-space:nowrap}
+article section>table td[data-claim-id]{font-size:16px}
 td[data-kind] span{display:inline-block;font-size:13px;font-weight:700;color:#fff;background:var(--blue);padding:2px 10px;border-radius:6px}
 td[data-kind="research"] span{background:var(--teal)}
 td[data-kind="background"] span{background:var(--muted)}
 td[data-kind="tw"] span{background:#2f6b3a}
 td[data-kind] span{margin-bottom:4px}
 /* Chinese title row above the item text (rowspan rows), labelled facets, overview citations. */
-article>section>table tr:has(td[rowspan]) td:last-child{border-bottom:0;padding-bottom:0;font-size:16px;line-height:1.5;color:var(--navy);font-weight:700}
-article>section>table tr{scroll-margin-top:16px}
-article>section>table tr:target td{background:#fff4d6}
-article>section>table td strong{color:var(--navy)}
-article>section[data-part="overview"]>p[data-claim-id]+p,article>section[data-region="tw"]>p[data-claim-id]+p{font-size:13px;color:var(--muted);margin-top:-4px}
+article section>table tr:has(td[rowspan]) td:last-child{border-bottom:0;padding-bottom:0;font-size:16px;line-height:1.5;color:var(--navy);font-weight:700}
+article section>table tr{scroll-margin-top:16px}
+article section>table tr:target td{background:#fff4d6}
+article section>table td strong{color:var(--navy)}
+article section[data-part="overview"]>p[data-claim-id]+p,article>section[data-region="tw"]>p[data-claim-id]+p{font-size:13px;color:var(--muted);margin-top:-4px}
 @media (max-width:960px){
- article>section>table,article>section>table tbody,article>section>table tr,article>section>table td{display:block;width:auto}
- article>section>table thead{display:none}
- article>section>table tr{padding:12px 12px 4px;border-bottom:1px solid var(--border)}
- article>section>table td{border:0;padding:2px 0}
- article>section>table td:first-child:not([data-claim-id]),article>section>table td:nth-child(2),article>section>table td:nth-child(3){display:inline-block;margin-right:.6em;font-size:15px;width:auto}
- article>section>table td:nth-child(4){width:auto}
- article>section>table tr:has(td[rowspan]){border-bottom:0;padding-bottom:0}
- article>section>table tr:not(:has(td[rowspan])){border-bottom:2px solid var(--border)}
- article>section>table td[data-kind] br{display:none}
- article>section>table td[data-kind] span{margin:0 .4em 0 0}
- article>section>table tr[id^="item-"]:not([id^="item-b"]):not([id^="item-c"]):not([id^="item-t"]) td:first-child:not([data-claim-id])::before{content:"第 "}
- article>section>table tr[id^="item-"]:not([id^="item-b"]):not([id^="item-c"]):not([id^="item-t"]) td:first-child:not([data-claim-id])::after{content:" 則"}
+ article section>table,article section>table tbody,article section>table tr,article section>table td{display:block;width:auto}
+ article section>table thead{display:none}
+ article section>table tr{padding:12px 12px 4px;border-bottom:1px solid var(--border)}
+ article section>table td{border:0;padding:2px 0}
+ article section>table td:first-child:not([data-claim-id]),article section>table td:nth-child(2),article section>table td:nth-child(3){display:inline-block;margin-right:.6em;font-size:15px;width:auto}
+ article section>table td:nth-child(4){width:auto}
+ article section>table tr:has(td[rowspan]){border-bottom:0;padding-bottom:0}
+ article section>table tr:not(:has(td[rowspan])){border-bottom:2px solid var(--border)}
+ article section>table td[data-kind] br{display:none}
+ article section>table td[data-kind] span{margin:0 .4em 0 0}
+ article section>table tr[id^="item-"]:not([id^="item-b"]):not([id^="item-c"]):not([id^="item-t"]):not([id^="item-d"]) td:first-child:not([data-claim-id])::before{content:"第 "}
+ article section>table tr[id^="item-"]:not([id^="item-b"]):not([id^="item-c"]):not([id^="item-t"]):not([id^="item-d"]) td:first-child:not([data-claim-id])::after{content:" 則"}
 }
 @media print{
  body{background:#fff}
  td[data-kind] span,[data-claim-kind],.kind{-webkit-print-color-adjust:exact;print-color-adjust:exact}
- article>section>table tr{break-inside:avoid}
- article>section>table tr:has(td[rowspan]){break-after:avoid}
+ article section>table tr{break-inside:avoid}
+ article section>table tr:has(td[rowspan]){break-after:avoid}
  article h2,article h3{break-after:avoid}
  article>section[data-region="tw"],article>section:has(>h2[data-region="tw"]){-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }
@@ -221,7 +221,43 @@ article>section[data-region="tw"] h3{font-size:20px;margin:28px 0 6px;color:#2f6
 .kind.tw{background:#2f6b3a}
 @media (max-width:960px){article>section[data-region="tw"]{padding:14px 12px}}
 /* Numbered overview and Taiwan comparison sentences (manager request 2026-10-17); 依據 lines align under the text. */
-article>section[data-part="overview"],article>section[data-region="tw"]{counter-reset:analysis}
-article>section[data-part="overview"]>p[data-claim-id],article>section[data-region="tw"]>p[data-claim-id]{counter-increment:analysis;position:relative;padding-left:30px}
-article>section[data-part="overview"]>p[data-claim-id]::before,article>section[data-region="tw"]>p[data-claim-id]::before{content:counter(analysis) ".";position:absolute;left:0;color:var(--navy);font-weight:700}
-article>section[data-part="overview"]>p[data-claim-id]+p,article>section[data-region="tw"]>p[data-claim-id]+p{padding-left:30px}
+article section[data-part="overview"],article>section[data-region="tw"]{counter-reset:analysis}
+article section[data-part="overview"]>p[data-claim-id],article>section[data-region="tw"]>p[data-claim-id]{counter-increment:analysis;position:relative;padding-left:30px}
+article section[data-part="overview"]>p[data-claim-id]::before,article>section[data-region="tw"]>p[data-claim-id]::before{content:counter(analysis) ".";position:absolute;left:0;color:var(--navy);font-weight:700}
+article section[data-part="overview"]>p[data-claim-id]+p,article>section[data-region="tw"]>p[data-claim-id]+p{padding-left:30px}
+/* Sectioned monthly (render-site.js monthlyMainSectioned): contents list, 國際／臺灣／本月整理 groups with h3 sections,
+   an audience column (text label, not colour-coded: green means 臺灣), and the plain lists of weekly and daily items. */
+#sec-toc{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin:0 0 28px}
+#sec-toc h2{font-size:18px;margin:0 0 8px}
+#sec-toc ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 14px}
+#sec-toc li{margin:0}
+#sec-intl>h2,#sec-summary>h2{font-size:24px;margin:32px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--border)}
+#sec-intl>section>h3,#sec-summary>section>h3{font-size:20px;margin:28px 0 6px;color:var(--navy)}
+#sec-intl>section,#sec-tw>section,#sec-summary>section{scroll-margin-top:16px}
+td[data-col="audience"] span{display:inline-block;background:#eef2f7;color:#425a75;font-size:14px;font-weight:700;padding:2px 8px;border-radius:6px;white-space:nowrap}
+article section>table td[data-col="audience"]{width:auto;font-size:14px}
+article section>table td[data-col="tags"]{width:9em;font-size:13px;color:var(--navy)}
+#sec-listing ul,#sec-tw_listing ul{padding-left:1.2em;font-size:14px;line-height:1.7}
+#sec-listing li,#sec-tw_listing li{margin:4px 0;scroll-margin-top:16px}
+#sec-listing li:target,#sec-tw_listing li:target{background:#fff4d6}
+#sec-listing h4{font-size:16px;margin:18px 0 4px;color:var(--navy)}
+@media (max-width:960px){
+ article section>table td[data-col="num"],article section>table td[data-col="kind"],article section>table td[data-col="date"],article section>table td[data-col="audience"]{display:inline-block;margin-right:.6em;font-size:15px;width:auto}
+ article section>table td[data-col="tags"]{width:auto}
+}
+@media print{#sec-toc{break-after:avoid}#sec-tw{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+/* Monthly analysis paragraphs sit one level deeper (inside #sec-tw_note, #sec-overview_line, #sec-trends). */
+#sec-tw_note,#sec-trends{counter-reset:analysis}
+#sec-tw_note>p[data-claim-id],#sec-trends>p[data-claim-id]{counter-increment:analysis;position:relative;padding-left:30px}
+#sec-tw_note>p[data-claim-id]::before,#sec-trends>p[data-claim-id]::before{content:counter(analysis) ".";position:absolute;left:0;color:var(--navy);font-weight:700}
+#sec-tw_note>p[data-claim-id]+p,#sec-trends>p[data-claim-id]+p,#sec-overview_line>p[data-claim-id]+p{font-size:13px;color:var(--muted);margin-top:-4px;padding-left:30px}
+#sec-overview_line>p[data-claim-id]{font-size:20px;font-weight:700;color:var(--navy)}
+#sec-overview_line>p[data-claim-id]+p{padding-left:0}
+#sec-toc ul ul{display:inline-flex;margin-left:6px}
+#sec-toc>ul{flex-direction:column;gap:6px}
+#sec-toc>ul>li>a{font-weight:700}
+@media print{
+ #sec-intl table thead,#sec-tw table thead{display:none}
+ #sec-intl table td[data-col]:not([data-col="content"])::before,#sec-tw table td[data-col]:not([data-col="content"])::before{font-weight:700;color:var(--muted);margin-right:.3em}
+ td[data-col="kind"]::before{content:"類型"}td[data-col="date"]::before{content:"首次公開"}td[data-col="audience"]::before{content:"對象"}td[data-col="tags"]::before{content:"標籤"}
+}
