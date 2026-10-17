@@ -171,6 +171,7 @@ const TW_SECTIONS=[
  ["taiwan","臺灣本週動態","本期內首次公開的臺灣中央機關政策與臺灣研究。"],
  ["tw_compare","臺灣對照","與本期國際項目主題相對應的臺灣中央文件；首發日可早於本期，非本週新訊。"]];
 const TW_HEADING="臺灣",TW_INTRO="臺灣部分與國際分開：只收中央機關與臺灣研究；對照只並列事實，不作評價或建議。";
+const TW_INTRO_NOT_SEARCHED="臺灣部分與國際分開：只收中央機關與臺灣研究；本期尚未納入臺灣來源查核，對照列為編輯選取的中央文件，非完整蒐集；對照只並列事實，不作評價或建議。";
 const TW_NOT_SEARCHED="本期尚未納入臺灣來源查核（2026-10-18 起納入），故無臺灣本週動態。",TW_FROM_PERIOD="2026-10-16";
 const WEEKLY_TW_NOTE_MAX=2,WEEKLY_TW_COMPARE_MAX=3;
 const WEEKLY_OPTIONAL=new Set(["overview","background","tw_note","tw_compare"]);
@@ -184,7 +185,7 @@ const weeklySectioned=claims=>claims.some(c=>c&&c.weekly_section!==undefined);
 const itemCount=e=>weeklySectioned(e.claims)?e.claims.filter(c=>c.weekly_section==="featured"||c.weekly_section==="briefs").length:e.claims.length;
 const periodLabel=p=>{const r=periodRange("weekly",p);return r?r.start.replace(/-/g,"/")+"—"+r.end.slice(5).replace(/-/g,"/"):p};
 /* An official speech is shown as 官方發言, not 政策 (manager 2026-10-17: 「演講，非政策」). */
-const weeklyKind=c=>c.weekly_section==="background"?["background","背景"]:c.weekly_section==="tw_compare"?["background","對照"]:c.kind==="research"?["research","研究"]:c.source_document_type==="speech"?["policy","官方發言"]:["policy","政策"];
+const weeklyKind=c=>c.weekly_section==="background"?["background","背景"]:c.weekly_section==="tw_compare"?["tw","對照"]:c.kind==="research"?["research","研究"]:c.source_document_type==="speech"?["policy","官方發言"]:["policy","政策"];
 /* Item numbers run across featured then briefs, so overview sentences and background rows can cite them. */
 function weeklyNumbers(claims){
  const n=new Map();let i=0,b=0;
@@ -209,11 +210,11 @@ function facetBody(c){
  for(const f of WEEKLY_FACETS)body=body.split("。"+f+"：").join("。<br><strong>"+f+"：</strong>");
  return body;
 }
-function weeklySummary(claims){
+function weeklySummary(claims,e={}){
  const main=claims.filter(c=>c.weekly_section==="featured"||c.weekly_section==="briefs"),cnt=f=>main.filter(f).length;
  const tw=claims.filter(c=>c.weekly_section==="taiwan").length,cmp=claims.filter(c=>c.weekly_section==="tw_compare").length;
  const dims=c=>Array.isArray(c.ai_lit_dims)?c.ai_lit_dims:[];
- return "本期 "+main.length+" 則（精選 "+cnt(c=>c.weekly_section==="featured")+"、其他短訊 "+cnt(c=>c.weekly_section==="briefs")+"）：政策 "+cnt(c=>c.kind!=="research")+"、研究 "+cnt(c=>c.kind==="research")+"；其中對應學生 AI 素養面向者 "+cnt(c=>dims(c).some(d=>d.startsWith("S-")))+" 則、教師面向者 "+cnt(c=>dims(c).some(d=>d.startsWith("T-")))+" 則"+(tw||cmp?"；臺灣本週動態 "+tw+" 則、臺灣對照 "+cmp+" 列":"")+"。";
+ return "本期 "+main.length+" 則（精選 "+cnt(c=>c.weekly_section==="featured")+"、其他短訊 "+cnt(c=>c.weekly_section==="briefs")+"）：政策 "+cnt(c=>c.kind!=="research")+"、研究 "+cnt(c=>c.kind==="research")+"；其中對應學生 AI 素養面向者 "+cnt(c=>dims(c).some(d=>d.startsWith("S-")))+" 則、教師面向者 "+cnt(c=>dims(c).some(d=>d.startsWith("T-")))+" 則"+(e.taiwan_not_searched===true?"；臺灣本週動態：本期未查、臺灣對照 "+cmp+" 列":tw||cmp?"；臺灣本週動態 "+tw+" 則、臺灣對照 "+cmp+" 列":"")+"。";
 }
 function weeklyRow(c,n,claims){
  const [cls,label]=weeklyKind(c),type=SOURCE_TYPES[c.source_document_type]||"其他";
@@ -239,7 +240,7 @@ function weeklyMain(claims,e={}){
  }).join("");
  const link=(label,p)=>p?"<p>"+label+'：<a href="../'+esc(p)+'/">'+esc(periodLabel(p))+"</a></p>":"";
  const nav=e.nav?link("上一期",e.nav.prev)+link("下一期",e.nav.next):"";
- return "<p>"+weeklySummary(claims)+"</p>"+sections+weeklyTaiwan(claims,e,n)+nav;
+ return "<p>"+weeklySummary(claims,e)+"</p>"+sections+weeklyTaiwan(claims,e,n)+nav;
 }
 const twAreaShown=(claims,e)=>claims.some(c=>c.region==="tw")||e.taiwan_not_searched===true||String(e.period||"")>=TW_FROM_PERIOD;
 function weeklyTaiwan(claims,e,n){
@@ -255,7 +256,7 @@ function weeklyTaiwan(claims,e,n){
   return "<h3>"+heading+"</h3><p>"+intro+"</p>"+body;
  }).join("");
  const sample=claims.filter(c=>c.taiwan_sample===true&&/^\d+$/.test(n.get(c.claim_id)||"")).map(c=>c.claim_id);
- return '<hr><section data-region="tw"><h2>'+TW_HEADING+"</h2><p>"+TW_INTRO+"</p>"+parts+(sample.length?"<p>本期國際項目中以臺灣為樣本者："+cite(sample,n)+"。</p>":"")+"</section>";
+ return '<hr><section data-region="tw"><h2>'+TW_HEADING+"</h2><p>"+(e.taiwan_not_searched===true?TW_INTRO_NOT_SEARCHED:TW_INTRO)+"</p>"+parts+(sample.length?"<p>本期國際項目中以臺灣為樣本者："+cite(sample,n)+"。</p>":"")+"</section>";
 }
 /* Neighbouring weekly periods for the 上一期／下一期 links: registered weeklies plus the legacy launch issue. */
 function weeklyNav(period,registered){

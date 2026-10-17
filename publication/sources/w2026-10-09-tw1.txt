@@ -3,3 +3,5 @@ Excerpt:
 分別針對教師與學生規劃專屬素養框架。
 教師端注重 AI 促進專業發展，能強調自我精進與社群共創。
 師生需具備辨識演算法偏見、保護數據隱私的意識，並警覺 AI 可能產生的錯假訊息。
+Self-review addition (verbatim heading, PDF text line 360 of research/reference/tw-k12-ai-literacy-framework-2026-04-17.txt):
+五、AI 促進教師專業發展
