@@ -318,15 +318,36 @@ function renderAbout(){
 }
 
 /* ---------- homepage blocks ---------- */
-const BLOCKS={"daily-latest":(days,data)=>{
+/* Weekly card: the newest registered weekly; the next issue is the Friday after its Thursday end + 7 days. */
+const slash=d=>d.replace(/-/g,"/"),mdDay=d=>+d.slice(5,7)+" 月 "+ +d.slice(8,10)+" 日";
+const addDays=(d,n)=>new Date(Date.parse(d+"T00:00:00Z")+n*864e5).toISOString().slice(0,10);
+function weeklyCard(editions){
+ const latest=periodEditions("weekly",editions).sort((a,b)=>compareText(b.period,a.period))[0];
+ const rule="每週五彙整前一週五至週四、完成首發與原文查核的 K-12 AI 素養動態。沒有達到查核門檻的項目時不發刊，不為湊數放寬標準。";
+ if(!latest)return '<h3 style="font-size:24px;margin:8px 0 6px">尚無以新版流程發布的週報</h3><p style="margin:0 0 12px">'+rule+'</p><a class="button" href="./weekly/">所有週報</a>';
+ const {start,end}=periodRange("weekly",latest.period),next=addDays(end,8);
+ return '<h3 style="font-size:24px;margin:8px 0 6px">最新週報：'+slash(start)+"—"+slash(end).slice(5)+'</h3><p style="margin:0 0 12px">'+latest.claims.length+" 則，已通過出版閘門。"+rule+"下一期預定 "+mdDay(next)+"（涵蓋 "+slash(addDays(end,1)).slice(5)+"—"+slash(addDays(end,7)).slice(5)+'）。</p><a class="button" href="./'+esc(latest.path.replace(/index\.html$/,""))+'">閱讀本期週報</a> <a class="button outline" href="./weekly/">所有週報</a>';
+}
+/* Monthly card: the newest registered monthly; the next one is scheduled on the 29th (month end in February)
+   of the following month. With none registered, the next month follows the legacy September 2026 issue. */
+function monthlyCard(editions){
+ const latest=periodEditions("monthly",editions).sort((a,b)=>compareText(b.period,a.period))[0];
+ const base=latest?latest.period:LEGACY_MONTHLY.map(x=>x.path.slice(8,15)).sort().pop();
+ let [y,m]=base.split("-").map(Number);if(++m>12){m=1;y++}
+ const next=m+" 月月報排定 "+m+" 月"+(m===2?"底":" 29 日")+"製作，經管理者核准後刊出。",about="整合當月週報與重要背景，區分原始發現與本刊分析。";
+ if(!latest)return '<h3 style="font-size:24px;margin:8px 0 6px">尚無以新版流程發布的月報</h3><p style="margin:0 0 12px">'+about+next+'</p><a class="button" href="./monthly/">所有月報</a>';
+ const {year,month}=periodRange("monthly",latest.period);
+ return '<h3 style="font-size:24px;margin:8px 0 6px">最新月報：'+year+" 年 "+month+' 月</h3><p style="margin:0 0 12px">'+latest.claims.length+" 則，已通過出版閘門。"+about+next+'</p><a class="button" href="./'+esc(latest.path.replace(/index\.html$/,""))+'">閱讀本期月報</a> <a class="button outline" href="./monthly/">所有月報</a>';
+}
+const BLOCKS={"weekly-latest":(days,data,editions)=>weeklyCard(editions),"monthly-latest":(days,data,editions)=>monthlyCard(editions),"daily-latest":(days,data)=>{
   return days.length?'<ul class="item-list">'+dailyCard(days[0],0)+"</ul>":'<p class="empty">尚無已發布的每日短訊。沒有合格項目的日子不發刊。</p>';
  },"archive-stats":(days,data)=>{const n=counts(data),stat=(v,label)=>'<div class="stat"><strong>'+v+"</strong><span>"+label+"</span></div>";return '<div class="stats">'+stat(n.policy,"政策與框架")+stat(n.articles,"期刊論文")+(n.books?stat(n.books,"專書章節"):"")+(n.preprints?stat(n.preprints,"預印本"):"")+stat(n.conferences,"會議論文")+"</div>"}};
-function fillHomepage(html,days,data){
+function fillHomepage(html,days,data,editions=[]){
  let out=html;
  for(const [name,fn] of Object.entries(BLOCKS)){
   const re=new RegExp("(<!-- generated:"+name+":start -->)[\\s\\S]*?(<!-- generated:"+name+":end -->)");
   if(!re.test(out))throw Error("homepage marker missing: "+name);
-  out=out.replace(re,(_,a,b)=>a+fn(days,data)+b);
+  out=out.replace(re,(_,a,b)=>a+fn(days,data,editions)+b);
  }
  return out.replace(/href="\.\/assets\/site\.css(\?v=[0-9a-f]*)?"/,'href="'+cssHref("./")+'"');
 }
@@ -348,7 +369,7 @@ function build(root){
  };
  for(const d of days)files["daily/"+d.date+"/index.html"]=renderDailyEdition(d);
  for(const kind of ["weekly","monthly"])for(const e of periodEditions(kind,editions))files[kind+"/"+e.period+"/index.html"]=renderPeriodEdition(kind,e);
- files["index.html"]=fillHomepage(fs.readFileSync(path.join(root,"index.html"),"utf8"),days,data);
+ files["index.html"]=fillHomepage(fs.readFileSync(path.join(root,"index.html"),"utf8"),days,data,editions);
  return files;
 }
 function main(){
