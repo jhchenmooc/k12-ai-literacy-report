@@ -9,6 +9,8 @@
 > **2026-10-17 更新**：首期週報 10/09–10/15 已刊（#302），同日改為分段週報（#305 精選／其他短訊、#307 表格與色標、#308 導讀／背景／中文譯名／分欄／來源類型／概況／上下期）。週報排程 trig_01U8VY1x9xaJnREowotZ1Vav（每週五 09:27）、月報排程 trig_01TVhWSKenCSxsL9Pq8sVgZy（每月 29 日 09:47），皆先交出刊前檢查、管理者回覆「合併」才刊出。政策來源擴充試行至 10/23（[policy-monitoring-sources.md](policy-monitoring-sources.md)）。臺灣部分（管理者 10-17）：每日 10-18 起分國際／臺灣兩段；週報臺灣區（對照說明／臺灣本週動態／臺灣對照）；來源見 [taiwan-monitoring-sources.md](taiwan-monitoring-sources.md)；10-09 期標 taiwan_not_searched。下方 2026-10-11 狀態為歷史紀錄。
 >
 > **2026-10-17 月報改版**：管理者核定月報改版方案 v2（[drafts/2026-10-17-monthly-redesign-plan.md](drafts/2026-10-17-monthly-redesign-plan.md)）：日曆月期別（10 月刊 9/30–10/31）、次月 1 日出刊前檢查、3 日出刊；國際／臺灣／本月整理三區，週報與每日短訊項目只列一覽；非中小學研究上限 max(2, ⌊n÷3⌋)；趨勢須有 k12 同儕審查依據（10 月 T1 不合格、本期不列）。程式 PR 合併後才改排程（刪 29 日，改 1 日與 3 日 14:47；臺灣期刊清單改當月最後週四），改前先給管理者看新排程文字。
+>
+> **2026-10-17 月報程式與三刊對齊**：#312 已合併（分段月報；`indexed_weeklies`／`indexed_through` 凍結一覽）。管理者「C 全照建議」：週報其他短訊一行一則連到每日短訊、每日短訊列「已收入」反向連結、揭露用語統一（編輯歸納）、每日類型標籤改「研究／政策・來源類型」、每日可更正（`revised_on`）、月報新增臺灣本月中央文件、Crossref 例外適用週報精選與月報研究段（學者段除外）、每日列表只列標題；每日 PR 若改到已刊週報或月報頁不得自動合併（`check-daily-pr-scope.js`）。排程更新待管理者確認新文字。
 
 **要繼續的任務**：以最少人力、可追溯的原始證據，製作並公開 K–12 AI 素養國際週報／月報；第一期標準週報涵蓋 **2026/10/09–10/15**，預定 **10/16** 出刊。網站：[GitHub Pages](https://jhchenmooc.github.io/k12-ai-literacy-report/)；儲存庫：[jhchenmooc/k12-ai-literacy-report](https://github.com/jhchenmooc/k12-ai-literacy-report)。
 

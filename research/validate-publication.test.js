@@ -206,7 +206,7 @@ test('external-review control: exact daily renderer shell is accepted',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
  const html=require('./render-site.js').renderDailyEdition({date:'2026-10-10',claims:[dailyLow]});
  const file=path.join(d,'daily','2026-10-10','index.html');fs.writeFileSync(file,html);
- assert.equal(validate(d).ok,true);
+ assert.deepEqual(validate(d).errors,[]);
  for(const changed of [html.replace('跳至主要內容','未審核結論'),html.replace('2026-10-10 每日短訊</h1>','未審核結論</h1>'),html.replace('<body>','<body class="skip">'),html.replace('</footer>','<p>未審核結論</p></footer>')]){
   fs.writeFileSync(file,changed);assert.equal(validate(d).ok,false);
  }
@@ -236,17 +236,17 @@ test('daily tag line: rendered line passes; altered, misplaced, repeated or non-
 test('daily kind badge: rendered badge passes; altered, misplaced, repeated or non-daily badges are blocked',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));dailyFixture(d,dailyLow);
  const {renderDailyEdition,dailyKind}=require('./render-site.js'),html=renderDailyEdition({date:'2026-10-10',claims:[dailyLow]});
- const [cls,label]=dailyKind(dailyLow),badge='<p data-claim-kind="C1" data-kind="'+cls+'">'+label+'</p>';
+ const [cls,label]=dailyKind(dailyLow),badge='<p id="C1" data-claim-kind="C1" data-kind="'+cls+'">'+label+'</p>';
  assert.ok(html.includes(badge+'<p data-claim-id="C1">'));
  const file=path.join(d,'daily','2026-10-10','index.html');fs.writeFileSync(file,html);
  assert.deepEqual(validate(d).errors,[]);
  const other=cls==='policy'?'research':'policy';
  for(const changed of [
-  html.replace(badge,'<p data-claim-kind="C1" data-kind="'+cls+'">本刊推薦</p>'),
-  html.replace(badge,'<p data-claim-kind="C1" data-kind="'+other+'">'+label+'</p>'),
-  html.replace(badge,'<p data-claim-kind="C1" data-kind="'+cls+'" class="kind">'+label+'</p>'),
+  html.replace(badge,'<p id="C1" data-claim-kind="C1" data-kind="'+cls+'">本刊推薦</p>'),
+  html.replace(badge,'<p id="C1" data-claim-kind="C1" data-kind="'+other+'">'+label+'</p>'),
+  html.replace(badge,'<p id="C1" data-claim-kind="C1" data-kind="'+cls+'" class="kind">'+label+'</p>'),
   html.replace(badge,'<p data-claim-kind="C9" data-kind="'+cls+'">'+label+'</p>'),
-  html.replace(badge,'<p data-claim-kind="C1" data-kind="'+cls+'"><strong>'+label+'</strong></p>'),
+  html.replace(badge,'<p id="C1" data-claim-kind="C1" data-kind="'+cls+'"><strong>'+label+'</strong></p>'),
   html.replace(badge,badge+badge),
   html.replace(badge,'').replace('</article>',badge+'</article>'),
   html.replace(badge,'<p data-kind="'+cls+'">'+label+'</p>')
@@ -258,8 +258,8 @@ test('daily 國際／臺灣 sections: rendered page passes; changed headings or 
  const html=require('./render-site.js').renderDailyEdition({date:'2026-10-10',claims:[c]});
  const file=path.join(d,'daily','2026-10-10','index.html');fs.writeFileSync(file,html);
  assert.deepEqual(validate(d).errors,[]);
- assert.ok(html.includes('<h2 data-region="intl">國際</h2><p>今日無合格項目。</p>'));
- for(const changed of [html.replace('>臺灣</h2>','>臺灣觀點</h2>'),html.replace('今日無合格項目。','今日國際無新聞，臺灣領先。'),
+ assert.ok(html.includes('<h2 data-region="intl">國際</h2><p>本期無合格項目。</p>'));
+ for(const changed of [html.replace('>臺灣</h2>','>臺灣觀點</h2>'),html.replace('本期無合格項目。','今日國際無新聞，臺灣領先。'),
   html.replace('data-region="tw"','data-region="cn"'),require('./render-site.js').renderDailyEdition({date:'2026-10-10',claims:[{...c,region:undefined}]})]){
   fs.writeFileSync(file,changed);assert.equal(validate(d).ok,false,changed.slice(changed.indexOf('<article>'),changed.indexOf('</article>')));
  }
@@ -275,7 +275,7 @@ test('daily Taiwan backfill: marked earlier page passes with later check date; m
  assert.ok(html.includes('<p>'+r.dailyBackfillText('2026-10-17')+'</p>'));
  write({tw_backfilled_on:'2026-10-17'},[dailyLow,tw],html);assert.deepEqual(validate(d).errors,[]);
  // A backfilled page with no Taiwan items still shows both sections.
- const empty=page([dailyLow],'2026-10-17');assert.ok(empty.includes('<h2 data-region="tw">臺灣</h2><p>今日無合格項目。</p>'));
+ const empty=page([dailyLow],'2026-10-17');assert.ok(empty.includes('<h2 data-region="tw">臺灣</h2><p>本期無合格項目。</p>'));
  write({tw_backfilled_on:'2026-10-17'},[dailyLow],empty);assert.deepEqual(validate(d).errors,[]);
  for(const [entry,list,h] of [
   [{},[dailyLow,tw],page([dailyLow,tw])],
@@ -311,7 +311,7 @@ test('renderer control: exact weekly and monthly renderer shells are accepted, a
  const {renderWeeklyEdition,renderMonthlyEdition}=require('./render-site.js');
  const html=renderWeeklyEdition({period:'2026-10-09_10-15',claims:[claim]});
  updateHtml(d,html);assert.deepEqual(validate(d).errors,[]);
- for(const changed of [html.replace('跳至主要內容','未審核結論'),html.replace('2026-10-09 至 2026-10-15 週報</h1>','未審核結論</h1>'),html.replace('未經獨立認證','已經獨立認證'),
+ for(const changed of [html.replace('跳至主要內容','未審核結論'),html.replace('2026/10/09—10/15 週報</h1>','未審核結論</h1>'),html.replace('未經真人逐則審稿','已經專家審稿'),
   html.replace('<body>','<body class="skip">'),html.replace('</footer>','<p>未審核結論</p></footer>'),html.replace('</header>','</header><script>alert(1)</script>'),
   html.replace('<a href="../../daily/">','<a href="../../daily/" onclick="alert(1)">'),html.replace('<a href="../../daily/">','<a href="https://example.org/">'),
   renderWeeklyEdition({period:'2026-10-08_10-14',claims:[claim]}),renderMonthlyEdition({period:'2026-08',claims:[{...claim,section:'policy'}]})]){
@@ -386,13 +386,24 @@ function registerDailyForWeekly(d){
  fs.writeFileSync(path.join(d,'publication','claims','daily-2026-10-12.json'),JSON.stringify(items));
  return {path:'daily/2026-10-12/index.html',claims_file:'publication/claims/daily-2026-10-12.json',publication_mode:'ai_low_risk_source_facts'};
 }
+/* Daily pages list where their items went (weekly and monthly numbers), so re-render them once all issues are registered. */
+function rerenderDailies(d){
+ const r=require('./render-site.js'),m=JSON.parse(fs.readFileSync(path.join(d,'publication','issues.json'),'utf8'));
+ const loaded=m.editions.map(e=>({...e,claims:JSON.parse(fs.readFileSync(path.join(d,e.claims_file),'utf8'))}));
+ const links=r.dailyBacklinks(loaded);
+ for(const e of loaded.filter(x=>x.path.startsWith('daily/')))fs.writeFileSync(path.join(d,e.path),r.renderDailyEdition({date:e.path.slice(6,16),claims:e.claims,tw_backfilled_on:e.tw_backfilled_on,revised_on:e.revised_on,links}));
+}
 function weeklyFull(d,claims,html,extra={}){
  const {renderWeeklyEdition,weeklyNav}=require('./render-site.js'),nav=weeklyNav('2026-10-09_10-15',['2026-10-09_10-15']);
  const dailyEdition=registerDailyForWeekly(d);
+ // A weekly line item repeats its daily claim's text (gate rule); fixtures copy it here.
+ const dailyText=Object.fromEntries(JSON.parse(fs.readFileSync(path.join(d,'publication','claims','daily-2026-10-12.json'),'utf8')).map(c=>[c.claim_id,c.claim_text]));
+ claims=claims.map(c=>c&&['briefs','taiwan'].includes(c.weekly_section)&&dailyText[c.weekly_source_claim]&&!c.keepText?{...c,claim_text:dailyText[c.weekly_source_claim]}:c);
  let page=html;if(page===undefined)try{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims,revised_on:extra.revised_on,taiwan_not_searched:extra.taiwan_not_searched,nav})}catch{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims:claims.map(c=>({...c,weekly_section:'briefs'})),nav})}
  updateHtml(d,page);
  fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[dailyEdition,{path:'weekly/2026-10-09_10-15/index.html',claims_file:'publication/claims/a.json',...extra}]}));
  fs.writeFileSync(path.join(d,'publication','claims','a.json'),JSON.stringify(claims));
+ rerenderDailies(d);
  return validate(d);
 }
 test('weekly control: sectioned renderer page with a revision note is accepted',t=>{
@@ -459,7 +470,7 @@ test('weekly Taiwan area: renders after the international sections and passes',t
  const claims=[featured,{...brief,taiwan_sample:true},twItem,twCompare,twNote];
  assert.deepEqual(weeklyFull(d,claims).errors,[]);
  const html=fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8');
- for(const text of ['<hr><section data-region="tw"><h2>臺灣</h2>','<h3>對照說明</h3>','<h3>臺灣本週動態</h3>','<h3>臺灣對照</h3>','依據：國際第 <a href="#item-1">1</a> 則；臺灣：<a href="#item-c1">對照 1</a>','對照：第 <a href="#item-1">1</a> 則','<tr id="item-t1">','本期國際項目中以臺灣為樣本者：第 <a href="#item-2">2</a> 則。','臺灣本週動態 1 則、臺灣對照 1 列'])assert.ok(html.includes(text),text);
+ for(const text of ['<hr><section data-region="tw"><h2>臺灣</h2>','<h3>對照說明</h3>','<h3>臺灣本週動態</h3>','<h3>臺灣對照</h3>','依據：國際第 <a href="#item-1">1</a> 則；臺灣：<a href="#item-c1">對照 1</a>','對照：第 <a href="#item-1">1</a> 則','<li id="item-t1">臺 1｜','本期國際項目中以臺灣為樣本者：第 <a href="#item-2">2</a> 則。','臺灣本週動態 1 則、臺灣對照 1 列'])assert.ok(html.includes(text),text);
  assert.ok(html.indexOf('本週其他短訊')<html.indexOf('<hr>'));
  const r=weeklyFull(d,[featured,brief,twCompare],undefined,{taiwan_not_searched:true});assert.deepEqual(r.errors,[]);
  assert.ok(fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8').includes('本期尚未納入臺灣來源查核'));
@@ -844,7 +855,7 @@ function monthlyBase(){
 function monthlySetup(d,claims,extra={},transform=x=>x,briefOver={}){
  const r=require('./render-site.js');
  const dailyEdition=registerDailyForWeekly(d);
- const brief={...claim,claim_id:'W1',weekly_section:'briefs',weekly_source_claim:'D20261012-01',first_disclosed_on:'2026-10-10',source_document_type:'official_guidance',...briefOver};
+ const brief={...claim,claim_id:'W1',weekly_section:'briefs',weekly_source_claim:'D20261012-01',first_disclosed_on:'2026-10-10',source_document_type:'official_guidance',claim_text:dailyLow.claim_text,...briefOver};
  const weeklyEdition={path:'weekly/2026-10-09_10-15/index.html',claims_file:'publication/claims/a.json'};
  fs.writeFileSync(path.join(d,'publication','claims','a.json'),JSON.stringify([brief]));
  updateHtml(d,r.renderWeeklyEdition({period:'2026-10-09_10-15',claims:[brief],nav:r.weeklyNav('2026-10-09_10-15',['2026-10-09_10-15'])}));
@@ -855,6 +866,7 @@ function monthlySetup(d,claims,extra={},transform=x=>x,briefOver={}){
  let html;try{html=r.renderMonthlyEdition({period:'2026-10',claims,...monthlyEdition,context:r.monthlyContext(monthlyEdition,loaded)})}catch(e){html='<html><main><article></article></main></html>'}
  fs.mkdirSync(path.join(d,'monthly','2026-10'),{recursive:true});fs.writeFileSync(path.join(d,'monthly','2026-10','index.html'),transform(html));
  fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({schema_version:1,editions}));
+ rerenderDailies(d);
  return {html,result:validate(d)};
 }
 test('sectioned monthly control: renderer page passes; contents, listing and Taiwan area are rendered',t=>{
@@ -899,7 +911,6 @@ const monthlyBad={
  'one scholar with three items':c=>[...c,...[2,3].map(i=>mResearch('S'+i,'scholars',{research_group:'G-B',scholar_id:'h01 ',publication_date:'2026-10-0'+i}))],
  'scholar without scholar_id':c=>c.map(x=>x.claim_id==='S1'?{...x,scholar_id:undefined}:x),
  'item text without its source title':c=>c.map(x=>x.claim_id==='R1'?{...x,claim_text:'合成月報項目 R1。'+M_END}:x),
- 'analysis without the analysis note':c=>c.map(x=>x.claim_id==='O2'?{...x,claim_text:'本月研究與週報項目都以中小學教師為對象'}:x),
  'unknown section':c=>c.map(x=>x.claim_id==='R1'?{...x,section:'highlights'}:x),
  'trend without a peer-reviewed K-12 source':c=>[...c,mResearch('T1a','trends',{research_group:'G-A',publication_date:'2026-09-10',source_document_type:'preprint',source_type:'preprint'}),mResearch('T1b','trends',{research_group:'G-B',publication_date:'2026-09-12',audience:'higher_ed'}),mAnalysis('T1','trends',['T1a','T1b'],'兩個研究群都談到自評與實測')],
  'trend from one research group':c=>[...c,mResearch('T1a','trends',{research_group:'G-A',publication_date:'2026-09-10'}),mResearch('T1b','trends',{research_group:'G-A',publication_date:'2026-09-12'}),mAnalysis('T1','trends',['T1a','T1b'],'兩篇研究都談到自評與實測')],
@@ -925,7 +936,7 @@ test('sectioned monthly registration: issue fields are checked',t=>{
  assert.ok(monthlySetup(d,monthlyBase(),{},h=>'<html><main>'+h.split('<main')[1].split('>').slice(1).join('>').split('</main>')[0]+'</main></html>').result.errors.some(e=>e.includes('full renderer page')));
  const noTw=monthlyBase().filter(x=>x.section!=='tw_research').map(x=>x.claim_id==='TN1'?{...x,supporting_claim_ids:['P1','TC1']}:x);
  const ok=monthlySetup(d,noTw,{taiwan_journals_not_searched:true,revised_on:'2026-11-05'});
- assert.deepEqual(ok.result.errors,[]);assert.ok(ok.html.includes('本月未查臺灣期刊，將於下月補列。')&&ok.html.includes('本期於 2026-11-05 改版'));
+ assert.deepEqual(ok.result.errors,[]);assert.ok(ok.html.includes('本期未查臺灣期刊，將於下期補列。')&&ok.html.includes('本期於 2026-11-05 改版'));
 });
 test('monthly from 2026-10 must use the sectioned layout',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
@@ -963,4 +974,55 @@ test('month precision is accepted only in a sectioned monthly; an invalid monthl
  fs.writeFileSync(path.join(d,'publication','claims','m.json'),JSON.stringify(c));
  fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[{path:'monthly/2026-011/index.html',claims_file:'publication/claims/m.json'}]}));
  assert.ok(validate(d).errors.some(e=>e.includes('monthly period must be YYYY-MM')));
+});
+
+/* ---------- three-publication alignment (manager decisions 2026-10-17, C1–C8) ---------- */
+test('weekly line items: a brief from a daily is one line linking to it; its text must equal the daily claim',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ assert.deepEqual(weeklyFull(d,[featured,brief]).errors,[]);
+ const html=fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8');
+ assert.ok(html.includes('<li id="item-2">第 2 則｜政策・官方指引｜2026-10-11｜')&&html.includes('<a href="../../daily/2026-10-12/#D20261012-01">每日短訊 2026-10-12</a>'));
+ assert.ok(!html.includes('data-claim-id="W2"'),'the line does not repeat the summary');
+ assert.equal(weeklyFull(d,[featured,{...brief,claim_text:'與每日短訊不同的文字',keepText:true}]).ok,false);
+ const tampered=fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8');
+ assert.equal(weeklyFull(d,[featured,brief],tampered.replace('第 2 則｜','第 9 則｜')).ok,false);
+});
+test('daily backlinks: a daily item names the weekly item it became; missing or altered links are refused',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ assert.deepEqual(weeklyFull(d,[featured,brief]).errors,[]);
+ const file=path.join(d,'daily','2026-10-12','index.html'),html=fs.readFileSync(file,'utf8');
+ const line='<p data-claim-links="D20261012-01">已收入：<a href="../../weekly/2026-10-09_10-15/#item-2">週報 2026/10/09—10/15 第 2 則</a></p>';
+ assert.ok(html.includes(line),html.slice(html.indexOf('<article>'),html.indexOf('</article>')));
+ assert.ok(html.includes('<p id="D20261012-01" data-claim-kind="D20261012-01"'));
+ for(const changed of [html.replace(line,''),html.replace('第 2 則</a>','第 1 則</a>'),html.replace('data-claim-links="D20261012-01"','data-claim-links="D20261012-02"')]){
+  fs.writeFileSync(file,changed);assert.equal(validate(d).ok,false);
+ }
+});
+test('daily correction: revised_on shows a note and allows a later check date; invalid dates are refused',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const r=require('./render-site.js'),late={...dailyLow,checked_at:'2026-10-14'};dailyFixture(d,late);
+ const manifest=path.join(d,'publication','issues.json'),file=path.join(d,'daily','2026-10-10','index.html');
+ const set=(extra,html)=>{fs.writeFileSync(manifest,JSON.stringify({editions:[{path:'daily/2026-10-10/index.html',claims_file:'publication/claims/daily-2026-10-10.json',publication_mode:'ai_low_risk_source_facts',...extra}]}));fs.writeFileSync(file,html)};
+ const page=b=>r.renderDailyEdition({date:'2026-10-10',claims:[late],revised_on:b});
+ set({revised_on:'2026-10-14'},page('2026-10-14'));assert.deepEqual(validate(d).errors,[]);
+ assert.ok(page('2026-10-14').includes(r.dailyRevisionText('2026-10-14')));
+ for(const [extra,html] of [[{},page()],[{revised_on:'2026-10-13'},page('2026-10-13')],[{revised_on:'2026-10-09'},page('2026-10-09')],[{revised_on:'2026-10-14'},page('2026-10-14').replace(r.dailyRevisionText('2026-10-14'),'')]])
+  {set(extra,html);assert.equal(validate(d).ok,false,JSON.stringify(extra))}
+});
+test('sectioned monthly: Taiwan central documents of the month; month precision only for official documents and Taiwan journals',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const tp=mItem('TP1','tw_policy',{region:'tw'}),base=[...monthlyBase(),tp];
+ const ok=monthlySetup(d,base);assert.deepEqual(ok.result.errors,[]);
+ assert.ok(ok.html.includes('<h3>臺灣本月中央文件</h3>')&&ok.html.includes('id="item-f1"'));
+ assert.ok(ok.html.indexOf('id="item-l1"')<ok.html.indexOf('id="item-l2"'),'list numbers follow page order');
+ for(const bad of [base.map(x=>x.claim_id==='TP1'?{...x,audience:'higher_ed'}:x),base.map(x=>x.claim_id==='TP1'?{...x,region:undefined}:x),
+  base.map(x=>x.claim_id==='R1'?{...x,date_precision:'month',first_disclosed_on:'2026-10',publication_date:'2026-10',claim_text:'《Synthetic source R1》說明：原文標示 2026 年 10 月。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）'}:x)])
+  assert.equal(monthlySetup(d,bad).result.ok,false);
+ assert.deepEqual(monthlySetup(d,base.map(x=>x.claim_id==='TP1'?{...x,date_precision:'month',first_disclosed_on:'2026-10',publication_date:'2026-10',claim_text:'《Synthetic source TP1》說明：原文標示 2026 年 10 月，本刊 10/20 查得，實際上網日不明。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）'}:x)).result.errors,[]);
+});
+test('sectioned monthly: daily items listed by the monthly link back to it',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ assert.deepEqual(monthlySetup(d,monthlyBase()).result.errors,[]);
+ const html=fs.readFileSync(path.join(d,'daily','2026-10-12','index.html'),'utf8');
+ assert.ok(html.includes('<a href="../../monthly/2026-10/#item-l1">月報 2026 年 10 月一覽 1</a>'),html.slice(html.indexOf('<article>'),html.indexOf('</article>')));
 });
