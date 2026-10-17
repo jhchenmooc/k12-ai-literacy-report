@@ -82,7 +82,7 @@
   "contradiction_type": "none",
   "ai_crosscheck_status": "concordant",
   "ai_crosscheck_passes": 2,
-  "ai_crosscheck_record": "PENDING",
+  "ai_crosscheck_record": "第一輪 2026-10-17 讀教育部網站轉載頁原文（2026-10-14 首讀、2026-10-17 重讀，HTTP 200），擷取日期行、來源與正文第 1、3 段，撰寫中文摘要；第二輪 2026-10-17 由隔離子代理逐項對照原文（日期行、來源、「近日」未寫成具體日期、AI 素養專區內容、是否增添或評價），判定一致。同一模型，非獨立審閱。",
   "ai_lit_class": "A",
   "ai_lit_dims": [
    "T-PD",
