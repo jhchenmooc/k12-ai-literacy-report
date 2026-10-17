@@ -140,7 +140,7 @@ body{background:var(--bg)}
 [data-claim-kind]:first-child{margin-top:0}
 [data-claim-kind][data-kind="research"]{background:var(--teal)}
 /* Daily edition numbering, same as the 1. 2. 3. list on the list pages (CSS only; the gate sees no extra text). */
-article:has(>[data-claim-kind]){counter-reset:claim;padding-left:2em}
+article:has(>[data-claim-kind]),article>section:has(>[data-claim-kind]){counter-reset:claim;padding-left:2em}
 [data-claim-kind]{position:relative;counter-increment:claim}
 [data-claim-kind]::before{content:counter(claim) ".";position:absolute;right:calc(100% + .5em);top:-.15em;color:var(--navy);font-size:24px;font-weight:400;line-height:1.3}
 .rec-table .t,.tag-guide .t,.item .t{white-space:nowrap;margin-right:.6em}
@@ -205,3 +205,11 @@ article>section>p[data-claim-id]+p:not([data-claim-id]){font-size:13px;color:var
 }
 /* Focus ring with enough contrast on white and on --bg (WCAG 1.4.11): dark ring plus the amber halo. */
 a:focus-visible{outline:3px solid var(--navy);outline-offset:2px;box-shadow:0 0 0 5px #ffb629}
+/* 國際／臺灣: daily section headings and the weekly Taiwan area, set apart by a rule and a tinted panel. */
+article>section>h2[data-region]{font-size:20px;margin:28px 0 12px;padding-bottom:6px;border-bottom:2px solid var(--border)}
+article>section:first-child>h2[data-region]{margin-top:0}
+article>hr{border:0;border-top:3px double var(--border);margin:40px 0 24px}
+article>section[data-region="tw"]{background:#f3f8f1;border:1px solid #d5e6d0;border-radius:16px;padding:20px 22px}
+article>section[data-region="tw"] h3{font-size:18px;margin:22px 0 6px}
+.kind.tw{background:#2f6b3a}
+@media (max-width:960px){article>section[data-region="tw"]{padding:14px 12px}}

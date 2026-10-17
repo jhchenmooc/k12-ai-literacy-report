@@ -6,7 +6,7 @@
 
 - 恰好一個 HTML namespace 的 main，直接位於 body；main 可不帶屬性，或只用 `id="content"`、`class="content"`。
 - 有文字的 p、h1–h4、li、blockquote、figcaption、td、th 必須用 `data-claim-id` 綁定已核准 claim，文字一致且每項主張只出現一次。其他正文文字不能獨立逸出綁定元素。
-- main 內元素屬性只允許 `data-claim-id`、`href`、`datetime`、`colspan`、`rowspan`、`scope`；另有限定用途：p 的 `data-claim-tags`／`data-claim-kind`（每日短訊）、與 `data-claim-kind` 同用的 `data-kind`，td 的 `data-kind`（policy／research／background）、tr 的 `id="item-N"`（分段週報）。`title` tooltip 禁止，即使文字與正文相同也不例外。
+- main 內元素屬性只允許 `data-claim-id`、`href`、`datetime`、`colspan`、`rowspan`、`scope`；另有限定用途：p 的 `data-claim-tags`／`data-claim-kind`（每日短訊）、與 `data-claim-kind` 同用的 `data-kind`，td 的 `data-kind`（policy／research／background）、tr 的 `id="item-N"`（分段週報，含 item-bN／tN／cN）、h2／section 的 `data-region`（intl／tw）。2026-10-18 起的每日頁與含臺灣項目的每日頁分「國際」「臺灣」兩段，整頁須等於 renderer 輸出。`title` tooltip 禁止，即使文字與正文相同也不例外。
 - 最小頁面的 body 只能包含 main 和格式空白。head 可省略 title；若提供，必須是由路徑產生的固定中性標題，例如 `週報 2026-10-09_10-15｜K-12 AI 素養國際動態`、`月報 2026-10｜K-12 AI 素養國際動態`、`每日短訊 2026-10-10｜K-12 AI 素養國際動態`。
 - 日報完整頁面由 `renderDailyEdition` 產生；正文外 DOM 必須符合 renderer 的固定版面，包括標題、日期、警語、導覽、頁尾與 stylesheet 雜湊。CSS 修改後應重跑 `node research/render-site.js --write` 並檢查差異。
 

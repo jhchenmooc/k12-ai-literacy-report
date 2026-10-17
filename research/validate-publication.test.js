@@ -252,6 +252,18 @@ test('daily kind badge: rendered badge passes; altered, misplaced, repeated or n
   html.replace(badge,'<p data-kind="'+cls+'">'+label+'</p>')
  ]){fs.writeFileSync(file,changed);assert.equal(validate(d).ok,false,changed.slice(changed.indexOf('<article>'),changed.indexOf('</article>')))}
 });
+test('daily 國際／臺灣 sections: rendered page passes; changed headings or moved items are refused',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const c={...dailyLow,region:'tw'};dailyFixture(d,c);
+ const html=require('./render-site.js').renderDailyEdition({date:'2026-10-10',claims:[c]});
+ const file=path.join(d,'daily','2026-10-10','index.html');fs.writeFileSync(file,html);
+ assert.deepEqual(validate(d).errors,[]);
+ assert.ok(html.includes('<h2 data-region="intl">國際</h2><p>今日無合格項目。</p>'));
+ for(const changed of [html.replace('>臺灣</h2>','>臺灣觀點</h2>'),html.replace('今日無合格項目。','今日國際無新聞，臺灣領先。'),
+  html.replace('data-region="tw"','data-region="cn"'),require('./render-site.js').renderDailyEdition({date:'2026-10-10',claims:[{...c,region:undefined}]})]){
+  fs.writeFileSync(file,changed);assert.equal(validate(d).ok,false,changed.slice(changed.indexOf('<article>'),changed.indexOf('</article>')));
+ }
+});
 test('daily kind badge is not accepted outside daily editions',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);
  const html=require('./render-site.js').renderWeeklyEdition({period:'2026-10-09_10-15',claims:[claim]});
@@ -338,7 +350,7 @@ const featured={...claim,claim_id:'W1',weekly_section:'featured',full_text_check
 const brief={...claim,claim_id:'W2',weekly_section:'briefs',weekly_source_claim:'D20261012-01',first_disclosed_on:'2026-10-11',source_document_type:'official_guidance',source_url:'https://example.org/other',evidence_source_url:'https://example.org/other',claim_text:'合成案例：其他短訊'};
 function weeklyFull(d,claims,html,extra={}){
  const {renderWeeklyEdition,weeklyNav}=require('./render-site.js'),nav=weeklyNav('2026-10-09_10-15',['2026-10-09_10-15']);
- let page=html;if(page===undefined)try{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims,revised_on:extra.revised_on,nav})}catch{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims:claims.map(c=>({...c,weekly_section:'briefs'})),nav})}
+ let page=html;if(page===undefined)try{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims,revised_on:extra.revised_on,taiwan_not_searched:extra.taiwan_not_searched,nav})}catch{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims:claims.map(c=>({...c,weekly_section:'briefs'})),nav})}
  updateHtml(d,page);
  fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[{path:'weekly/2026-10-09_10-15/index.html',claims_file:'publication/claims/a.json',...extra}]}));
  fs.writeFileSync(path.join(d,'publication','claims','a.json'),JSON.stringify(claims));
@@ -398,6 +410,41 @@ test('weekly speech brief: no daily claim needed, shown as 官方發言 and 演�
  const speech={...brief,claim_id:'S1',weekly_source_claim:undefined,source_document_type:'speech',source_url:'https://example.org/speech',evidence_source_url:'https://example.org/speech',claim_text:'合成案例：官方演講（演講，非政策）'};
  assert.deepEqual(weeklyFull(d,[featured,brief,speech]).errors,[]);
  assert.ok(fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8').includes('<span>官方發言</span><br>演講'));
+});
+// Taiwan area (manager decision 2026-10-17): Taiwan items, comparison rows and a note citing both sides.
+const twItem={...brief,claim_id:'T1',region:'tw',weekly_section:'taiwan',weekly_source_claim:'D20261012-02',source_url:'https://example.org/tw',evidence_source_url:'https://example.org/tw',claim_text:'合成案例：臺灣中央機關公告'};
+const twCompare={...background,claim_id:'C1',region:'tw',weekly_section:'tw_compare',related_claim_ids:['W1'],source_url:'https://example.org/twdoc',evidence_source_url:'https://example.org/twdoc',claim_text:'合成案例：臺灣對照文件'};
+const twNote={...overview,claim_id:'N1',region:'tw',weekly_section:'tw_note',supporting_claim_ids:['W1','C1'],claim_text:'合成案例：本期國際一則談教師培訓；臺灣對應文件列有教師面向'};
+test('weekly Taiwan area: renders after the international sections and passes',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const claims=[featured,{...brief,taiwan_sample:true},twItem,twCompare,twNote];
+ assert.deepEqual(weeklyFull(d,claims).errors,[]);
+ const html=fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8');
+ for(const text of ['<hr><section data-region="tw"><h2>臺灣</h2>','<h3>對照說明</h3>','<h3>臺灣本週動態</h3>','<h3>臺灣對照</h3>','依據：國際第 <a href="#item-1">1</a> 則；臺灣：<a href="#item-c1">對照 1</a>','對照：第 <a href="#item-1">1</a> 則','<tr id="item-t1">','本期國際項目中以臺灣為樣本者：第 <a href="#item-2">2</a> 則。','臺灣本週動態 1 則、臺灣對照 1 列'])assert.ok(html.includes(text),text);
+ assert.ok(html.indexOf('本週其他短訊')<html.indexOf('<hr>'));
+ const r=weeklyFull(d,[featured,brief,twCompare],undefined,{taiwan_not_searched:true});assert.deepEqual(r.errors,[]);
+ assert.ok(fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8').includes('本期尚未納入臺灣來源查核'));
+});
+test('weekly Taiwan area: region, citation and wording rules are enforced',t=>{
+ const cases={
+  'Taiwan item in international section':[[{...featured,region:'tw'},brief],'region tw belongs exactly'],
+  'international item in Taiwan section':[[featured,brief,{...twItem,region:undefined}],'region tw belongs exactly'],
+  'Taiwan item outside period':[[featured,brief,{...twItem,first_disclosed_on:'2026-10-20'}],'within the period'],
+  'Taiwan item without daily claim':[[featured,brief,{...twItem,weekly_source_claim:undefined}],'daily source claim'],
+  'comparison after period':[[featured,brief,{...twCompare,first_disclosed_on:'2026-10-20'}],'by the end of the period'],
+  'comparison to Taiwan item':[[featured,brief,twItem,{...twCompare,related_claim_ids:['T1']}],'international featured or brief'],
+  'note without Taiwan side':[[featured,brief,twCompare,{...twNote,supporting_claim_ids:['W1','W2']}],'one Taiwan item'],
+  'note without international side':[[featured,brief,twItem,twCompare,{...twNote,supporting_claim_ids:['T1','C1']}],'one international item'],
+  'note evaluation word':[[featured,brief,twCompare,{...twNote,claim_text:'合成案例：臺灣落後國際'}],'evaluation, outcome or advice'],
+  'note advice word':[[featured,brief,twCompare,{...twNote,claim_text:'合成案例：臺灣值得借鏡'}],'evaluation, outcome or advice'],
+  'too many notes':[[featured,brief,twCompare,twNote,{...twNote,claim_id:'N2'},{...twNote,claim_id:'N3'}],'note sentences exceed 2'],
+  'taiwan_sample on Taiwan item':[[featured,brief,{...twItem,taiwan_sample:true}],'taiwan_sample marks'],
+  'bad region value':[[{...featured,region:'cn'},brief],'region must be intl or tw'],
+ };
+ for(const [name,[claims,reason]] of Object.entries(cases)){
+  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+  const r=weeklyFull(d,claims);assert.equal(r.ok,false,name);assert.ok(r.errors.some(e=>e.includes(reason)),name+': '+r.errors.join(' | '));
+ }
 });
 test('weekly additions: overview, background and period rules are enforced',t=>{
  const cases={
