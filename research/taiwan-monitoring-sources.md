@@ -28,7 +28,7 @@
 
 | 頻率 | 來源 |
 |---|---|
-| 每日 | 教育部即時新聞 RSS、資訊及科技教育司 RSS、國教署即時新聞列表（HTML）、行政院公報開放資料每期 zip（篩教育部與國教署的令與公告） |
+| 每日 | 教育部即時新聞 RSS、資訊及科技教育司 RSS、國教署即時新聞列表（HTML）、行政院公報開放資料每期 zip（篩教育部與國教署的令與公告）；另見下方「擴充」：行政院、國科會、數位發展部、師培藝教司、學特司 |
 | 每週四 | 教育部主管法規查詢系統最新訊息、國家教育研究院最新消息、OpenAlex（`institutions.country_code:TW` 加 `title_and_abstract.search` 與 `from_publication_date`）、教育科學研究期刊、教育研究集刊、當代教育研究季刊目錄 |
 | 每月列入「請管理者用瀏覽器處理」 | 教育研究與發展期刊（國教院）、中等教育季刊、課程與教學季刊（華藝）、臺灣教育評論月刊；教育科學研究期刊 AI 專刊出刊時 |
 
@@ -36,3 +36,15 @@
 - 國內外刊物中以臺灣為樣本的研究，國際刊物者列國際段並標 `taiwan_sample`（週報），臺灣刊物者列臺灣段。
 - 縣市教育局與學校活動不收（管理者 2026-10-17）。
 - 民國日期一律換算為西元 YYYY-MM-DD；以公告或新聞頁日期為首發日，文件印有核定日期且早於公告者依 2026-10-10 管理者規則採核定日並註明。
+
+## 擴充（管理者 2026-10-17：加入 5 個中央機關）
+
+| 類別 | 來源 | 網址 | HTTP 狀態 | 可程式讀取 | 日期是否可見 | RSS/API | 備註 |
+|---|---|---|---|---|---|---|---|
+| 政策 | 行政院 本院新聞 | https://www.ey.gov.tw/Page/6485009ABEC1CB9C | 200 | 是 | 是（民國年） | RSS：https://www.ey.gov.tw/RSS_Content.aspx?ModuleType=3（50 則，有 pubDate） | 跨部會 AI 教育計畫（例：AI 人才方舟計畫） |
+| 政策 | 國科會 新聞資料 | https://www.nstc.gov.tw/folksonomy/list/9aa56881-8df0-4eb6-a5a7-32a2f72826ff?l=ch | 200 | 是 | 是 | RSS：https://www.nstc.gov.tw/nstc/rss/newsdata（30 則） | 人工智慧基本法專頁 https://www.nstc.gov.tw/folksonomy/list/5b1cf154-339b-4ec8-a2d0-6feaf96ca00c?l=ch 為單頁，只看「更新日期」 |
+| 政策 | 數位發展部 新聞發布 | https://moda.gov.tw/press/press-releases/372 | 200 | 是 | 是（2026-10-15 格式） | 未見 RSS | `/press/press-releases/`（無編號）回 404，列表頁為 /372；每頁 15 則 |
+| 政策 | 教育部師資培育及藝術教育司 即時新聞 | https://depart.moe.edu.tw/ED2600/News.aspx?n=E491D1720010EE05&sms=D4AB88F29491B48F | 302→200 | 是 | 是 | RSS：https://depart.moe.edu.tw/ED2600/Rss_News.aspx?n=E491D1720010EE05（50 則） | 在職教師專業發展、師資培育；電子布告欄 n=AE443212458A3B9E 同格式 |
+| 政策 | 教育部學生事務及特殊教育司 即時新聞 | https://depart.moe.edu.tw/ED2800/News.aspx?n=9C2F51A0AD31862F&sms=EA52AE3CDCB7AE20 | 302→200 | 是 | 是 | RSS：https://depart.moe.edu.tw/ED2800/Rss_News.aspx?n=9C2F51A0AD31862F（50 則） | 學生網路安全、深偽、特教 AI；電子布告欄 n=29D1A6CC2883568E 同格式 |
+
+查詢頻率：行政院、師培藝教司、學特司、國科會新聞資料 RSS 每日（皆為小型 XML）；數位發展部列表每日讀第一頁；國科會人工智慧基本法專頁每週四看更新日期。判斷標準不變：只收 AI 素養 A／B、對象為中小學或教育工作者者；一般產業 AI 政策不收。
