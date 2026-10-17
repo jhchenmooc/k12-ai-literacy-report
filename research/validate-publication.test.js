@@ -306,6 +306,54 @@ test('monthly structure: sections, research groups and trend support are enforce
   const r=monthlyFull(d,claims);assert.equal(r.ok,false,name);assert.ok(r.errors.some(e=>e.includes(reason)),name+': '+r.errors.join(' | '));
  }
 });
+// Sectioned weekly (manager decision 2026-10-17): featured items re-checked against full text, then other daily items.
+const featured={...claim,claim_id:'W1',weekly_section:'featured',full_text_checked:true,claim_text:'合成案例：精選深入版'};
+const brief={...claim,claim_id:'W2',weekly_section:'briefs',weekly_source_claim:'D20261012-01',claim_text:'合成案例：其他短訊'};
+function weeklyFull(d,claims,html,extra={}){
+ const {renderWeeklyEdition}=require('./render-site.js');
+ let page=html;if(page===undefined)try{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims,revised_on:extra.revised_on})}catch{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims:claims.map(c=>({...c,weekly_section:'briefs'}))})}
+ updateHtml(d,page);
+ fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[{path:'weekly/2026-10-09_10-15/index.html',claims_file:'publication/claims/a.json',...extra}]}));
+ fs.writeFileSync(path.join(d,'publication','claims','a.json'),JSON.stringify(claims));
+ return validate(d);
+}
+test('weekly control: sectioned renderer page with a revision note is accepted',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ assert.deepEqual(weeklyFull(d,[featured,brief],undefined,{revised_on:'2026-10-17'}).errors,[]);
+ const html=fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8');
+ for(const text of ['本週精選','本週其他短訊','本期於 2026-10-17 改版'])assert.ok(html.includes(text),text);
+ assert.deepEqual(weeklyFull(d,[brief]).errors,[]);
+ assert.ok(fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8').includes('本期無合格項目。'));
+});
+test('weekly attack: any change to a sectioned page, or section text on a flat page, is refused',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const {renderWeeklyEdition}=require('./render-site.js'),html=renderWeeklyEdition({period:'2026-10-09_10-15',claims:[featured,brief],revised_on:'2026-10-17'});
+ for(const changed of [html.replace('<h2>本週精選</h2>','<h2>本刊強烈推薦</h2>'),html.replace('<h2>本週其他短訊</h2>','<h2>本週其他短訊</h2><p>未審核結論</p>'),
+  html.replace('改版前內容保留','改版前內容已刪除'),renderWeeklyEdition({period:'2026-10-09_10-15',claims:[featured,brief]}),
+  renderWeeklyEdition({period:'2026-10-09_10-15',claims:[{...featured,weekly_section:'briefs'},brief],revised_on:'2026-10-17'})]){
+  assert.equal(weeklyFull(d,[featured,brief],changed,{revised_on:'2026-10-17'}).ok,false);
+ }
+ const flat=weeklyFull(d,[claim],'<html><main><h2>本週精選</h2><p data-claim-id="C1">合成案例：某機構公告</p></main></html>');
+ assert.equal(flat.ok,false);assert.ok(flat.errors.some(e=>e.includes('unbound content')));
+});
+test('weekly structure: sections, full-text check, daily source and featured cap are enforced',t=>{
+ const many=Array.from({length:6},(_,i)=>({...featured,claim_id:'F'+i,claim_text:'合成案例：精選 '+i}));
+ const cases={
+  'unknown section':[[{...featured,weekly_section:'opinion'},brief],'section must be one of'],
+  'mixed with flat claim':[[featured,{...claim}],'section must be one of'],
+  'featured without full text':[[{...featured,full_text_checked:false},brief],'checked against the full text'],
+  'brief without daily source':[[featured,{...brief,weekly_source_claim:undefined}],'name its daily source claim'],
+  'too many featured':[[...many,brief],'featured items exceed 5'],
+ };
+ for(const [name,[claims,reason]] of Object.entries(cases)){
+  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+  const r=weeklyFull(d,claims);assert.equal(r.ok,false,name);assert.ok(r.errors.some(e=>e.includes(reason)),name+': '+r.errors.join(' | '));
+ }
+ for(const bad of ['2026-13-01','yesterday',20261017]){
+  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+  const r=weeklyFull(d,[featured,brief],undefined,{revised_on:bad});assert.equal(r.ok,false,String(bad));assert.ok(r.errors.some(e=>e.includes('revised_on')),String(bad));
+ }
+});
 test('renderer control: a full shell needs a valid weekly or monthly period',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
  const {renderWeeklyEdition,periodRange}=require('./render-site.js');
