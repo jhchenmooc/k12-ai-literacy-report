@@ -1,9 +1,160 @@
 [
   {
+    "risk_tier": "medium",
+    "level": "V2",
+    "checked_at": "2026-10-17",
+    "scope_checked": true,
+    "outcome_checked": false,
+    "independent_review": false,
+    "conflict_unresolved": false,
+    "contradiction_type": "none",
+    "translation_reviewed": true,
+    "source_checked": true,
+    "ai_lit_class": "A",
+    "audience": "k12",
+    "decision": "publish",
+    "claim_id": "W20261009-21",
+    "kind": "research",
+    "claim_class": "descriptive",
+    "assertion_type": "editorial_analysis",
+    "weekly_section": "overview",
+    "claim_text": "本期有 3 則研究以國小三年級學生為對象，分別涉及學童對 ChatGPT 的認識、以 AI 套件支援的統整 STEM 課程（測量 AI 素養與運算思維），以及生成式 AI 家教的蘇格拉底式提問。",
+    "supporting_claim_ids": [
+      "W20261009-20",
+      "W20261009-18",
+      "W20261009-05"
+    ],
+    "source_document_type": "peer_reviewed_article",
+    "source_title": "本週導讀",
+    "source_organization": "本刊（K-12 AI 素養國際動態）",
+    "source_url": "https://jhchenmooc.github.io/k12-ai-literacy-report/weekly/2026-10-09_10-15/",
+    "evidence_source_url": "https://jhchenmooc.github.io/k12-ai-literacy-report/weekly/2026-10-09_10-15/",
+    "source_type": "editorial_analysis",
+    "source_locator": "本期被引用項目：W20261009-20、W20261009-18、W20261009-05",
+    "publication_date": "2026-10-17",
+    "first_disclosed_on": "2026-10-17",
+    "evidence_path": "publication/sources/w2026-10-09-overview.txt",
+    "evidence_sha256": "c03fda19b1636ebeba8401b4c1e3da8d387eb93d700f17a63aad1152016ad29c",
+    "original_excerpt": "W20261009-20：來源機構：Scientific Reports (Nature Portfolio)；資料標題：Young children’s knowledge of ChatGPT and its relationship with their ac",
+    "interpretation_note": "本刊分析：只依本期被引用項目的已刊文字做計數與歸類，不含成效、因果、趨勢或建議，未經真人審閱。",
+    "scope_limitation": "僅概括本期收錄的項目，不代表該主題的全部研究或政策。",
+    "ai_lit_dims": [
+      "S-BAS",
+      "S-ETH",
+      "S-LRN"
+    ],
+    "ai_lit_note": "本刊導讀句，依所引用項目的 AI 素養範圍（皆為 A／B）歸類。",
+    "ai_crosscheck_status": "concordant",
+    "ai_crosscheck_passes": 2,
+    "ai_crosscheck_record": "第一輪 2026-10-17 子代理依本期項目起草；第二輪隔離子代理逐句核對計數、年級、國家與對象描述是否與被引用項目一致、是否漏列符合條件的項目，判定需修改：第 1 句改寫課程描述、第 2 句改為「僅以教師為對象」並註明教育部網站轉載；已修改。同一模型，非獨立審閱。"
+  },
+  {
+    "risk_tier": "medium",
+    "level": "V2",
+    "checked_at": "2026-10-17",
+    "scope_checked": true,
+    "outcome_checked": false,
+    "independent_review": false,
+    "conflict_unresolved": false,
+    "contradiction_type": "none",
+    "translation_reviewed": true,
+    "source_checked": true,
+    "ai_lit_class": "A",
+    "audience": "k12",
+    "decision": "publish",
+    "claim_id": "W20261009-22",
+    "kind": "research",
+    "claim_class": "descriptive",
+    "assertion_type": "editorial_analysis",
+    "weekly_section": "overview",
+    "claim_text": "本期有 4 則研究僅以教師為對象，樣本數介於 8 至 1,766 人；另有 2 則刊於中國大陸教育部網站的消息（其一為轉載《中國教育報》報導）提及國家智慧教育平台教師發展中心升級上線。",
+    "supporting_claim_ids": [
+      "W20261009-03",
+      "W20261009-06",
+      "W20261009-10",
+      "W20261009-17",
+      "W20261009-01",
+      "W20261009-15"
+    ],
+    "source_document_type": "peer_reviewed_article",
+    "source_title": "本週導讀",
+    "source_organization": "本刊（K-12 AI 素養國際動態）",
+    "source_url": "https://jhchenmooc.github.io/k12-ai-literacy-report/weekly/2026-10-09_10-15/",
+    "evidence_source_url": "https://jhchenmooc.github.io/k12-ai-literacy-report/weekly/2026-10-09_10-15/",
+    "source_type": "editorial_analysis",
+    "source_locator": "本期被引用項目：W20261009-03、W20261009-06、W20261009-10、W20261009-17、W20261009-01、W20261009-15",
+    "publication_date": "2026-10-17",
+    "first_disclosed_on": "2026-10-17",
+    "evidence_path": "publication/sources/w2026-10-09-overview.txt",
+    "evidence_sha256": "c03fda19b1636ebeba8401b4c1e3da8d387eb93d700f17a63aad1152016ad29c",
+    "original_excerpt": "W20261009-03：來源機構：arXiv；資料標題：From Instructional Intent to Classroom-Ready Lessons: Investigating Teacher-AI Collaboration in Lesson A",
+    "interpretation_note": "本刊分析：只依本期被引用項目的已刊文字做計數與歸類，不含成效、因果、趨勢或建議，未經真人審閱。",
+    "scope_limitation": "僅概括本期收錄的項目，不代表該主題的全部研究或政策。",
+    "ai_lit_dims": [
+      "T-BAS",
+      "T-PD",
+      "T-TEA"
+    ],
+    "ai_lit_note": "本刊導讀句，依所引用項目的 AI 素養範圍（皆為 A／B）歸類。",
+    "ai_crosscheck_status": "concordant",
+    "ai_crosscheck_passes": 2,
+    "ai_crosscheck_record": "第一輪 2026-10-17 子代理依本期項目起草；第二輪隔離子代理逐句核對計數、年級、國家與對象描述是否與被引用項目一致、是否漏列符合條件的項目，判定需修改：第 1 句改寫課程描述、第 2 句改為「僅以教師為對象」並註明教育部網站轉載；已修改。同一模型，非獨立審閱。"
+  },
+  {
+    "risk_tier": "medium",
+    "level": "V2",
+    "checked_at": "2026-10-17",
+    "scope_checked": true,
+    "outcome_checked": false,
+    "independent_review": false,
+    "conflict_unresolved": false,
+    "contradiction_type": "none",
+    "translation_reviewed": true,
+    "source_checked": true,
+    "ai_lit_class": "A",
+    "audience": "k12",
+    "decision": "publish",
+    "claim_id": "W20261009-23",
+    "kind": "research",
+    "claim_class": "descriptive",
+    "assertion_type": "editorial_analysis",
+    "weekly_section": "overview",
+    "claim_text": "本期有 3 則研究的參與者來自沙烏地阿拉伯，對象分別為國小三年級學童；兒少、家長與 K-12 教師；以及任教聽障與重聽學生的國小女教師。",
+    "supporting_claim_ids": [
+      "W20261009-20",
+      "W20261009-16",
+      "W20261009-10"
+    ],
+    "source_document_type": "peer_reviewed_article",
+    "source_title": "本週導讀",
+    "source_organization": "本刊（K-12 AI 素養國際動態）",
+    "source_url": "https://jhchenmooc.github.io/k12-ai-literacy-report/weekly/2026-10-09_10-15/",
+    "evidence_source_url": "https://jhchenmooc.github.io/k12-ai-literacy-report/weekly/2026-10-09_10-15/",
+    "source_type": "editorial_analysis",
+    "source_locator": "本期被引用項目：W20261009-20、W20261009-16、W20261009-10",
+    "publication_date": "2026-10-17",
+    "first_disclosed_on": "2026-10-17",
+    "evidence_path": "publication/sources/w2026-10-09-overview.txt",
+    "evidence_sha256": "c03fda19b1636ebeba8401b4c1e3da8d387eb93d700f17a63aad1152016ad29c",
+    "original_excerpt": "W20261009-20：來源機構：Scientific Reports (Nature Portfolio)；資料標題：Young children’s knowledge of ChatGPT and its relationship with their ac",
+    "interpretation_note": "本刊分析：只依本期被引用項目的已刊文字做計數與歸類，不含成效、因果、趨勢或建議，未經真人審閱。",
+    "scope_limitation": "僅概括本期收錄的項目，不代表該主題的全部研究或政策。",
+    "ai_lit_dims": [
+      "S-BAS",
+      "S-ETH",
+      "T-PD",
+      "T-TEA"
+    ],
+    "ai_lit_note": "本刊導讀句，依所引用項目的 AI 素養範圍（皆為 A／B）歸類。",
+    "ai_crosscheck_status": "concordant",
+    "ai_crosscheck_passes": 2,
+    "ai_crosscheck_record": "第一輪 2026-10-17 子代理依本期項目起草；第二輪隔離子代理逐句核對計數、年級、國家與對象描述是否與被引用項目一致、是否漏列符合條件的項目，判定需修改：第 1 句改寫課程描述、第 2 句改為「僅以教師為對象」並註明教育部網站轉載；已修改。同一模型，非獨立審閱。"
+  },
+  {
     "claim_id": "W20261009-20",
     "candidate_id": "W2026-10-09-A15",
     "kind": "research",
-    "claim_text": "來源機構：Scientific Reports (Nature Portfolio)；資料標題：Young children’s knowledge of ChatGPT and its relationship with their achievement in english as a second language；來源刊登日：2026-10-10。作者全文報告：樣本為沙烏地阿拉伯東部 15 所小學的 255 名三年級學童（7–8 歲）；學校依可及性與校長參與意願以便利取樣選出，每校隨機抽選一班；另以便利取樣選出 50 名學童進行質性訪談。量化部分採相關設計，問卷測量五個面向（一般知識、應用知識、風險與限制認識、倫理知識、自我評估與信心），英語成就在方法段稱以前一學期英語累計成績（CGPA）衡量，結果段則以五級成就類別呈現。作者報告整體 ChatGPT 認識屬中等，一般與應用知識相對較高，風險與限制、倫理、自我評估與信心明顯較低；與英語成就的關聯以一般與應用知識最強，其次為自我評估與信心，風險、限制與倫理較弱，作者指出無法據此推論因果。作者自述限制：橫斷設計無法判定關係方向；社經地位、家長支持、數位設備與網路取得等可能為干擾變項；推論至其他年齡、學段或文化情境須謹慎；因預試樣本僅 20 人，未進行 EFA／CFA。全文中各面向平均（表 3 與內文數值不同）、受試年齡（多處為 7–8 歲，效度段寫 8–9 歲）與訪談評分者一致率（98% 與 94%）前後不一，本則不引用細項數字。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
+    "claim_text": "來源機構：Scientific Reports (Nature Portfolio)；資料標題：Young children’s knowledge of ChatGPT and its relationship with their achievement in english as a second language；來源刊登日：2026-10-10。樣本：依作者全文報告，為沙烏地阿拉伯東部 15 所小學的 255 名三年級學童（7–8 歲）；學校依可及性與校長參與意願以便利取樣選出，每校隨機抽選一班；另以便利取樣選出 50 名學童進行質性訪談。設計：量化部分採相關設計，問卷測量五個面向（一般知識、應用知識、風險與限制認識、倫理知識、自我評估與信心），英語成就在方法段稱以前一學期英語累計成績（CGPA）衡量，結果段則以五級成就類別呈現。作者所述發現：作者報告整體 ChatGPT 認識屬中等，一般與應用知識相對較高，風險與限制、倫理、自我評估與信心明顯較低；與英語成就的關聯以一般與應用知識最強，其次為自我評估與信心，風險、限制與倫理較弱，作者指出無法據此推論因果。限制：作者自述橫斷設計無法判定關係方向；社經地位、家長支持、數位設備與網路取得等可能為干擾變項；推論至其他年齡、學段或文化情境須謹慎；因預試樣本僅 20 人，未進行 EFA／CFA。說明：全文中各面向平均（表 3 與內文數值不同）、受試年齡（多處為 7–8 歲，效度段寫 8–9 歲）與訪談評分者一致率（98% 與 94%）前後不一，本則不引用細項數字。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
     "claim_class": "descriptive",
     "risk_tier": "medium",
     "level": "V2",
@@ -32,7 +183,7 @@
     "contradiction_type": "none",
     "ai_crosscheck_status": "concordant",
     "ai_crosscheck_passes": 2,
-    "ai_crosscheck_record": "週報精選（管理者 2026-10-17 決定 B；管理者同日提供全文後補入，取代原替補的量表一則）。第一輪 2026-10-17T02:42Z 子代理讀管理者提供之出版者 PDF（Article in Press，28 頁）撰稿；編輯 session 刪去整體平均數並補記原文成就測量方式前後不一；第二輪隔離子代理讀全文逐項對照，判定一致，確認各面向平均（表 3 與內文）、受試年齡（7–8／8–9 歲）、評分者一致率（98%／94%）三項不一，依建議具體寫出並把原文補入快照。首發日沿用短訊 D20261011-02 之出版者頁核對。同一模型，非獨立審閱。",
+    "ai_crosscheck_record": "週報精選（管理者 2026-10-17 決定 B；管理者同日提供全文後補入，取代原替補的量表一則）。第一輪 2026-10-17T02:42Z 子代理讀管理者提供之出版者 PDF（Article in Press，28 頁）撰稿；編輯 session 刪去整體平均數並補記原文成就測量方式前後不一；第二輪隔離子代理讀全文逐項對照，判定一致，確認各面向平均（表 3 與內文）、受試年齡（7–8／8–9 歲）、評分者一致率（98%／94%）三項不一，依建議具體寫出並把原文補入快照。首發日沿用短訊 D20261011-02 之出版者頁核對。同一模型，非獨立審閱。｜2026-10-17 精選分欄（管理者決定）：子代理把既有 claim_text 依「樣本／資料／設計／作者所述發現／限制／內容／說明」分段，數字逐一比對不變；隔離子代理逐字比對新舊文字，確認未增刪事實，依其意見把 -16 的方法與立場自述改列「說明」、社群貼文改列「資料」。同一模型，非獨立審閱。",
     "ai_lit_class": "A",
     "ai_lit_dims": [
       "S-BAS",
@@ -62,13 +213,14 @@
     "weekly_source_claim": "D20261011-02",
     "weekly_section": "featured",
     "full_text_checked": true,
-    "replaces_weekly_claim": "W20261009-04"
+    "replaces_weekly_claim": "W20261009-04",
+    "title_zh": "年幼兒童對 ChatGPT 的認識及其與英語作為第二語言之學業成就的關係"
   },
   {
     "claim_id": "W20261009-16",
     "candidate_id": "W2026-10-09-A18",
     "kind": "research",
-    "claim_text": "來源機構：Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society（AIES 2026）；資料標題：Culturally Situated AI Safety for Youth: Saudi Arabian Perspectives of Youth, Parents and Teachers；來源刊登日：2026-10-11。作者說明：2025 年 4–6 月蒐集 736 則 Reddit 貼文與留言、1,262 則 X 貼文與回覆；並經口耳相傳、滾雪球與研究者人脈招募 31 名沙烏地公民（7–17 歲兒少 8 人、家長 13 人、K-12 教師 10 人）。作者將風險歸為五大類（三類為其所稱新類別），並報告訪談與社群資料顯示對兒少可能揭露姓名、年齡、健康與家庭衝突的擔憂，也有貼文者稱為省錢購買共用 ChatGPT 帳號。作者自述：首場親子訪談應家長要求共同進行，孩子的回答與家長如出一轍，顯示可能受家長影響，其餘親子訪談皆分開進行；第一作者為以阿拉伯語為母語的沙烏地公民，其生活經驗影響招募、訪談設計與詮釋，作者稱以反覆協作編碼與定期討論降低可能的偏誤。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
+    "claim_text": "來源機構：Proceedings of the AAAI/ACM Conference on AI, Ethics, and Society（AIES 2026）；資料標題：Culturally Situated AI Safety for Youth: Saudi Arabian Perspectives of Youth, Parents and Teachers；來源刊登日：2026-10-11。樣本：作者說明經口耳相傳、滾雪球與研究者人脈招募 31 名沙烏地公民（7–17 歲兒少 8 人、家長 13 人、K-12 教師 10 人）。資料：作者說明 2025 年 4–6 月蒐集 736 則 Reddit 貼文與留言、1,262 則 X 貼文與回覆。作者所述發現：作者將風險歸為五大類（三類為其所稱新類別），並報告訪談與社群資料顯示對兒少可能揭露姓名、年齡、健康與家庭衝突的擔憂，也有貼文者稱為省錢購買共用 ChatGPT 帳號。說明：作者自述首場親子訪談應家長要求共同進行，孩子的回答與家長如出一轍，顯示可能受家長影響，其餘親子訪談皆分開進行；第一作者為以阿拉伯語為母語的沙烏地公民，其生活經驗影響招募、訪談設計與詮釋，作者稱以反覆協作編碼與定期討論降低可能的偏誤。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
     "claim_class": "descriptive",
     "risk_tier": "medium",
     "level": "V2",
@@ -97,7 +249,7 @@
     "contradiction_type": "none",
     "ai_crosscheck_status": "concordant",
     "ai_crosscheck_passes": 2,
-    "ai_crosscheck_record": "週報精選（管理者 2026-10-17 決定 B，改版本期）。第一輪 2026-10-17T02:26Z 子代理以 curl 下載 AAAI OJS 全文 PDF（pp.167–179）撰稿；第二輪隔離子代理讀全文對照，判定需修改：補首場親子訪談係應家長要求、其餘分開進行，第一作者背景改為「影響」並補偏誤緩解作法，研究設計改依作者所稱混合方法，來源機構標為 AIES 2026；已依建議修改並把新增句的原文補入快照。同一模型，非獨立審閱。",
+    "ai_crosscheck_record": "週報精選（管理者 2026-10-17 決定 B，改版本期）。第一輪 2026-10-17T02:26Z 子代理以 curl 下載 AAAI OJS 全文 PDF（pp.167–179）撰稿；第二輪隔離子代理讀全文對照，判定需修改：補首場親子訪談係應家長要求、其餘分開進行，第一作者背景改為「影響」並補偏誤緩解作法，研究設計改依作者所稱混合方法，來源機構標為 AIES 2026；已依建議修改並把新增句的原文補入快照。同一模型，非獨立審閱。｜2026-10-17 精選分欄（管理者決定）：子代理把既有 claim_text 依「樣本／資料／設計／作者所述發現／限制／內容／說明」分段，數字逐一比對不變；隔離子代理逐字比對新舊文字，確認未增刪事實，依其意見把 -16 的方法與立場自述改列「說明」、社群貼文改列「資料」。同一模型，非獨立審閱。",
     "ai_lit_class": "A",
     "ai_lit_dims": [
       "S-ETH"
@@ -123,13 +275,14 @@
     ],
     "weekly_section": "featured",
     "full_text_checked": true,
-    "replaces_weekly_claim": "W20261009-07"
+    "replaces_weekly_claim": "W20261009-07",
+    "title_zh": "文化情境化的兒少 AI 安全：沙烏地阿拉伯兒少、家長與教師的觀點"
   },
   {
     "claim_id": "W20261009-17",
     "candidate_id": "W2026-10-09-A19",
     "kind": "research",
-    "claim_text": "來源機構：Eurasia Journal of Mathematics, Science and Technology Education (Modestum)；資料標題：Teachers’ perceptions of ChatGPT support across TPACK domains: A cross-sectional survey in UAE schools；來源刊登日：2026-10-11。作者全文報告：樣本為 2024-2025 學年第二學期在阿聯一所高教機構修讀教學研究所文憑的 109 名在職教師，採立意取樣、須有以 ChatGPT 教學的經驗，93.6% 任教私校。以 56 題五點頻率量表（1＝完全沒有、5＝一直如此）測量教師感知的 ChatGPT 對 TPACK 相關實務之支援，非實際 TPACK 能力。作者報告七個面向平均介於 3.25 至 3.51，內容知識（CK）最高、科技知識（TK）最低。作者自述限制：樣本以私校為主，未必能推論至公校或他國；自陳資料可能有社會期許等偏誤；橫斷設計無法推論因果或 ChatGPT 效果。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
+    "claim_text": "來源機構：Eurasia Journal of Mathematics, Science and Technology Education (Modestum)；資料標題：Teachers’ perceptions of ChatGPT support across TPACK domains: A cross-sectional survey in UAE schools；來源刊登日：2026-10-11。樣本：依作者全文報告，為 2024-2025 學年第二學期在阿聯一所高教機構修讀教學研究所文憑的 109 名在職教師，採立意取樣、須有以 ChatGPT 教學的經驗，93.6% 任教私校。設計：以 56 題五點頻率量表（1＝完全沒有、5＝一直如此）測量教師感知的 ChatGPT 對 TPACK 相關實務之支援，非實際 TPACK 能力。作者所述發現：作者報告七個面向平均介於 3.25 至 3.51，內容知識（CK）最高、科技知識（TK）最低。限制：作者自述樣本以私校為主，未必能推論至公校或他國；自陳資料可能有社會期許等偏誤；橫斷設計無法推論因果或 ChatGPT 效果。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
     "claim_class": "descriptive",
     "risk_tier": "medium",
     "level": "V2",
@@ -158,7 +311,7 @@
     "contradiction_type": "none",
     "ai_crosscheck_status": "concordant",
     "ai_crosscheck_passes": 2,
-    "ai_crosscheck_record": "週報精選（管理者 2026-10-17 決定 B，改版本期）。第一輪 2026-10-17T02:26Z 子代理下載出版者全文 PDF（21 頁）撰稿；第二輪隔離子代理讀全文對照，判定一致；依建議寫明 56 題五點頻率量表（1＝完全沒有、5＝一直如此），並把題數原文補入快照。未報告 Wilcoxon 檢定、p 值與組間比較。同一模型，非獨立審閱。",
+    "ai_crosscheck_record": "週報精選（管理者 2026-10-17 決定 B，改版本期）。第一輪 2026-10-17T02:26Z 子代理下載出版者全文 PDF（21 頁）撰稿；第二輪隔離子代理讀全文對照，判定一致；依建議寫明 56 題五點頻率量表（1＝完全沒有、5＝一直如此），並把題數原文補入快照。未報告 Wilcoxon 檢定、p 值與組間比較。同一模型，非獨立審閱。｜2026-10-17 精選分欄（管理者決定）：子代理把既有 claim_text 依「樣本／資料／設計／作者所述發現／限制／內容／說明」分段，數字逐一比對不變；隔離子代理逐字比對新舊文字，確認未增刪事實，依其意見把 -16 的方法與立場自述改列「說明」、社群貼文改列「資料」。同一模型，非獨立審閱。",
     "ai_lit_class": "A",
     "ai_lit_dims": [
       "T-TEA",
@@ -183,13 +336,14 @@
     ],
     "weekly_section": "featured",
     "full_text_checked": true,
-    "replaces_weekly_claim": "W20261009-08"
+    "replaces_weekly_claim": "W20261009-08",
+    "title_zh": "教師對 ChatGPT 在各 TPACK 領域支援之知覺：阿拉伯聯合大公國學校之橫斷面調查"
   },
   {
     "claim_id": "W20261009-18",
     "candidate_id": "W2026-10-09-A21",
     "kind": "research",
-    "claim_text": "來源機構：Journal of Intelligence (MDPI)；資料標題：When AI Is—and Is Not—Needed: AI Literacy and Computational Thinking in Primary STEM；來源刊登日：2026-10-12。作者報告樣本為土耳其一所小學 4 個原班 93 名三年級學生（實驗組 46 人、對照組 47 人），2025–2026 學年春季學期採便利取樣，以嵌入式混合方法的準實驗前後測對照組設計進行。實驗組上 8 週以 LEGO Education Computer Science & AI 套件支援的統整 STEM 課程，每週分兩節進行、合計約 105–135 分鐘，由第二作者授課；對照組照常上生活課程（Life Studies）。資料含 Competent Computational Thinking Test 土耳其版、自編 8 項任務的 AI 素養實作評量及 12 名學生焦點團體訪談。作者指出限制：僅一校 4 個原班、無法個別隨機分派；對照組為常規教學而非主動對照，無法區分 AI 與自動化對比教學和額外科技教學各自的貢獻；班級數少，無法進行穩健的多層次分析，未測量的班級或教師差異可能有所影響；由專家授課；無延後後測，保留與遷移未知；機器學習活動以姿勢分類為主；AI 素養評量為自編且與介入緊密對應，未計算正式的評分者間一致性係數；教材新奇性也可能影響學習動機。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
+    "claim_text": "來源機構：Journal of Intelligence (MDPI)；資料標題：When AI Is—and Is Not—Needed: AI Literacy and Computational Thinking in Primary STEM；來源刊登日：2026-10-12。樣本：作者報告樣本為土耳其一所小學 4 個原班 93 名三年級學生（實驗組 46 人、對照組 47 人），2025–2026 學年春季學期採便利取樣。設計：以嵌入式混合方法的準實驗前後測對照組設計進行；實驗組上 8 週以 LEGO Education Computer Science & AI 套件支援的統整 STEM 課程，每週分兩節進行、合計約 105–135 分鐘，由第二作者授課；對照組照常上生活課程（Life Studies）；資料含 Competent Computational Thinking Test 土耳其版、自編 8 項任務的 AI 素養實作評量及 12 名學生焦點團體訪談。限制：作者指出僅一校 4 個原班、無法個別隨機分派；對照組為常規教學而非主動對照，無法區分 AI 與自動化對比教學和額外科技教學各自的貢獻；班級數少，無法進行穩健的多層次分析，未測量的班級或教師差異可能有所影響；由專家授課；無延後後測，保留與遷移未知；機器學習活動以姿勢分類為主；AI 素養評量為自編且與介入緊密對應，未計算正式的評分者間一致性係數；教材新奇性也可能影響學習動機。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
     "claim_class": "descriptive",
     "risk_tier": "medium",
     "level": "V2",
@@ -218,7 +372,7 @@
     "contradiction_type": "none",
     "ai_crosscheck_status": "concordant",
     "ai_crosscheck_passes": 2,
-    "ai_crosscheck_record": "週報精選（管理者 2026-10-17 決定 B，改版本期）。第一輪 2026-10-17 子代理讀管理者提供之出版者 PDF 全文（25 頁）撰稿；第二輪隔離子代理讀全文對照，確認不含任何成效結果，判定需修改：每週時數改為兩節合計、補便利取樣與嵌入式混合方法、補對照組為常規教學的意涵、班級數少與未測量差異、未計算評分者間一致性、教材新奇性；已依建議修改並把新增句原文補入快照。同一模型，非獨立審閱。",
+    "ai_crosscheck_record": "週報精選（管理者 2026-10-17 決定 B，改版本期）。第一輪 2026-10-17 子代理讀管理者提供之出版者 PDF 全文（25 頁）撰稿；第二輪隔離子代理讀全文對照，確認不含任何成效結果，判定需修改：每週時數改為兩節合計、補便利取樣與嵌入式混合方法、補對照組為常規教學的意涵、班級數少與未測量差異、未計算評分者間一致性、教材新奇性；已依建議修改並把新增句原文補入快照。同一模型，非獨立審閱。｜2026-10-17 精選分欄（管理者決定）：子代理把既有 claim_text 依「樣本／資料／設計／作者所述發現／限制／內容／說明」分段，數字逐一比對不變；隔離子代理逐字比對新舊文字，確認未增刪事實，依其意見把 -16 的方法與立場自述改列「說明」、社群貼文改列「資料」。同一模型，非獨立審閱。",
     "ai_lit_class": "A",
     "ai_lit_dims": [
       "S-BAS"
@@ -247,13 +401,14 @@
     ],
     "weekly_section": "featured",
     "full_text_checked": true,
-    "replaces_weekly_claim": "W20261009-09"
+    "replaces_weekly_claim": "W20261009-09",
+    "title_zh": "AI 何時需要、何時不需要：國小 STEM 中的 AI 素養與運算思維"
   },
   {
     "claim_id": "W20261009-15",
     "candidate_id": "",
     "kind": "news_policy",
-    "claim_text": "來源機構：中華人民共和國教育部；資料標題：国家智慧教育平台教师发展中心升级 实现四大转向 开设AI素养专区；來源刊登日：2026-10-14。教育部網站轉載《中國教育報》報導表示，國家智慧教育平台教師發展中心「近日」全新升級上線，原文未載明具體上線日期。報導指出，升級後實現「四大轉向」：一是從管理視角轉向教師視角，按教師發展需要重組頁面邏輯；二是從大海撈針轉向精準推薦，匯集教師個人資訊、學習培訓、業務發展等線上線下、職前職後全方位數據，構建教師發展「電子檔案袋」，並優化 AI 智能推薦演算法；三是從分散應用轉向全棧賦能，將 AI 推薦、AI 應用、AI 協同貫穿於備課、課堂教學、學業評價、學情分析、研修提升等場景；四是從個人使用轉向群體共創，升級名師工作室、上線共創教研室。報導並表示，新版教師中心開設 AI 素養專區，集成人工智慧學習資源、智能工具和研修社群，為教師自主學習和全覆蓋培訓提供平台支撐。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
+    "claim_text": "來源機構：中華人民共和國教育部；資料標題：国家智慧教育平台教师发展中心升级 实现四大转向 开设AI素养专区；來源刊登日：2026-10-14。內容：教育部網站轉載《中國教育報》報導表示，國家智慧教育平台教師發展中心「近日」全新升級上線；報導指出，升級後實現「四大轉向」：一是從管理視角轉向教師視角，按教師發展需要重組頁面邏輯；二是從大海撈針轉向精準推薦，匯集教師個人資訊、學習培訓、業務發展等線上線下、職前職後全方位數據，構建教師發展「電子檔案袋」，並優化 AI 智能推薦演算法；三是從分散應用轉向全棧賦能，將 AI 推薦、AI 應用、AI 協同貫穿於備課、課堂教學、學業評價、學情分析、研修提升等場景；四是從個人使用轉向群體共創，升級名師工作室、上線共創教研室；報導並表示，新版教師中心開設 AI 素養專區，集成人工智慧學習資源、智能工具和研修社群，為教師自主學習和全覆蓋培訓提供平台支撐。說明：原文未載明具體上線日期。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
     "claim_class": "descriptive",
     "risk_tier": "medium",
     "level": "N-V2",
@@ -282,7 +437,7 @@
     "contradiction_type": "none",
     "ai_crosscheck_status": "concordant",
     "ai_crosscheck_passes": 2,
-    "ai_crosscheck_record": "週報精選（管理者 2026-10-17 決定 B，改版本期）。第一輪 2026-10-17T02:25Z 子代理讀教育部網站全文（https 連線被重設，改連其轉址 http 版一次，200），撰稿並建全文短摘錄快照；第二輪隔離子代理對照：教育部網站當時 https 重設、http 503，改依第一輪快照逐項對照，判定一致，依建議補全「業務發展」「全方位」；因第二輪無法重讀原頁，刪去「報導未提供使用人數…」一句與記者姓名。同一模型，非獨立審閱。",
+    "ai_crosscheck_record": "週報精選（管理者 2026-10-17 決定 B，改版本期）。第一輪 2026-10-17T02:25Z 子代理讀教育部網站全文（https 連線被重設，改連其轉址 http 版一次，200），撰稿並建全文短摘錄快照；第二輪隔離子代理對照：教育部網站當時 https 重設、http 503，改依第一輪快照逐項對照，判定一致，依建議補全「業務發展」「全方位」；因第二輪無法重讀原頁，刪去「報導未提供使用人數…」一句與記者姓名。同一模型，非獨立審閱。｜2026-10-17 精選分欄（管理者決定）：子代理把既有 claim_text 依「樣本／資料／設計／作者所述發現／限制／內容／說明」分段，數字逐一比對不變；隔離子代理逐字比對新舊文字，確認未增刪事實，依其意見把 -16 的方法與立場自述改列「說明」、社群貼文改列「資料」。同一模型，非獨立審閱。",
     "ai_lit_class": "A",
     "ai_lit_dims": [
       "T-PD",
@@ -353,7 +508,8 @@
     ],
     "attributed_summary": "研究團隊以 8 名中學運算課教師進行兩項互補的質性研究：以焦點團體探討既有的教材編寫做法，並以結構化 AI 輔助教案編寫系統 LessonBuilder 作為研究探針進行放聲思考研究；作者報告，教師的教學意圖在製作、檢視與調整教材的過程中形成，教師有選擇地把任務交給 AI，並保留判斷教材是否適合課堂使用的責任。",
     "weekly_source_claim": "D20261013-01",
-    "weekly_section": "briefs"
+    "weekly_section": "briefs",
+    "title_zh": "從教學意圖到可用於課堂的教案：探究中學運算教育中教師與 AI 協作編寫教案"
   },
   {
     "claim_id": "W20261009-01",
@@ -454,7 +610,8 @@
     ],
     "attributed_summary": "在臺灣 10 個國小三年級班級（229 人）進行群集準實驗，於六節 6E 探究單元中由生成式 AI 家教 TALPer 依學生作品提出蘇格拉底式提問，比較運算思維與內在動機；作者稱結果屬初步證據，且為綑綁式介入，無法區分個別要素作用。",
     "weekly_source_claim": "D20261011-03",
-    "weekly_section": "briefs"
+    "weekly_section": "briefs",
+    "title_zh": "6E 探究單元中蘇格拉底式、以作品為門檻的生成式 AI 鷹架：國小學生運算思維之群集準實驗"
   },
   {
     "claim_id": "W20261009-06",
@@ -505,7 +662,8 @@
     ],
     "attributed_summary": "研究以 TAM 與 UTAUT 為基礎，將教師的 AI 使用連結到 AI 有用性認知、AI 風險認知，以及 AI 相關培訓、教師壓力、機構支持與學校創新氛圍四項情境因素，並以 TALIS 2024 中阿聯與中國上海 1,766 名國中教師的資料檢驗；作者報告，結構方程模型與多群組結構方程模型顯示，培訓與 AI 有用性認知是與 AI 使用直接關聯最強的因素。",
     "weekly_source_claim": "D20261013-03",
-    "weekly_section": "briefs"
+    "weekly_section": "briefs",
+    "title_zh": "邁向負責任且永續的教育 AI 整合：以 TALIS 2024 跨國分析影響教師採用 AI 的因素"
   },
   {
     "claim_id": "W20261009-10",
@@ -557,7 +715,8 @@
     ],
     "attributed_summary": "研究旨在檢視一項培訓方案，該方案旨在提升教師對使用 AI 強化應用程式發展聽障與重聽學生語言能力的知識與態度；對象為沙烏地阿拉伯利雅德 31 名任教聽障與重聽學生的國小女教師，採單組準實驗設計，使用作者自編的量表與方案，測量介入前後知識與態度的變化。",
     "weekly_source_claim": "D20261013-04",
-    "weekly_section": "briefs"
+    "weekly_section": "briefs",
+    "title_zh": "提升教師對支援聽障與重聽學生口語及語言能力之 AI 應用程式的知識與態度培訓方案"
   },
   {
     "claim_id": "W20261009-11",
@@ -607,7 +766,8 @@
     ],
     "attributed_summary": "研究探討兒童如何與一款透過動手製作教授機器學習（ML）概念的低成本教育機器人工具互動；研究者帶領三次介入，參與兒童年齡為 10、11 與 13 歲，各自以該套件打造一台 AI 強化的機器人，並以質性分析與流程探勘方法分析介入中的互動。",
     "weekly_source_claim": "D20261016-01",
-    "weekly_section": "briefs"
+    "weekly_section": "briefs",
+    "title_zh": "運用 K–12 教育 AI 機器人套件的互動模式與具身設計歷程"
   },
   {
     "claim_id": "W20261009-12",
@@ -660,7 +820,8 @@
     ],
     "attributed_summary": "研究旨在檢視 AI 素養概念，發展有效且可信的學生 AI 素養量表；樣本為就讀國小與國中 4 至 8 年級的 870 名學生，研究者先編製 50 題題庫，作者報告探索性因素分析得到 22 題、6 個分量表，驗證性因素分析的測量模型適配良好。",
     "weekly_source_claim": "D20261016-02",
-    "weekly_section": "briefs"
+    "weekly_section": "briefs",
+    "title_zh": "學生人工智慧素養量表之發展與驗證"
   },
   {
     "claim_id": "W20261009-13",
@@ -710,7 +871,8 @@
     ],
     "attributed_summary": "研究探討國小學生在 AI 輔助的課外法語詞彙學習中的動機類型及相關因素；20 名學生依 34 則動機敘述完成 Q 排序，其中 8 人再接受半結構訪談；作者報告 Q 因素分析得出四種動機類型：社會支持型、未來導向型、樂趣驅動型與精熟導向型。",
     "weekly_source_claim": "D20261017-02",
-    "weekly_section": "briefs"
+    "weekly_section": "briefs",
+    "title_zh": "低齡學習者對 AI 輔助課外法語詞彙學習的動機：Q 方法論研究"
   },
   {
     "claim_id": "W20261009-14",
@@ -761,6 +923,7 @@
     ],
     "attributed_summary": "研究設計一個遊戲式人機協作探測工具，檢視兒童在任務中如何查證 AI 的建議；系統把 AI 建議嵌入生物知識推理遊戲，比較夥伴型、工具型與雙態代理三種互動風格，並以 8 至 10 歲兒童進行初步評估，結合互動紀錄、任務後評分與半結構訪談。",
     "weekly_source_claim": "D20261017-03",
-    "weekly_section": "briefs"
+    "weekly_section": "briefs",
+    "title_zh": "「你信任它……還是查證它？」：探究兒童在遊戲式人機協作中的查證行為"
   }
 ]

@@ -157,7 +157,7 @@ const WEEKLY_SECTIONS=[
 const WEEKLY_OPTIONAL=new Set(["overview","background"]);
 const WEEKLY_EMPTY="本期無合格項目。",WEEKLY_FEATURED_MAX=5,WEEKLY_OVERVIEW_MAX=3,WEEKLY_BACKGROUND_MAX=3;
 const WEEKLY_COLUMNS=["編號","類型","首次公開","標籤","內容"];
-const WEEKLY_FACETS=["樣本","設計","作者所述發現","限制","內容","說明"];
+const WEEKLY_FACETS=["樣本","資料","設計","作者所述發現","限制","內容","說明"];
 const SOURCE_TYPES={peer_reviewed_article:"同儕審查論文",preprint:"預印本",binding_policy:"正式政策",official_guidance:"官方指引",draft:"草案",official_commentary:"官方新聞",training_event:"活動"};
 const weeklyRevisionText=d=>"本期於 "+d+" 改版；改版前內容保留於 GitHub 查核紀錄。";
 const weeklySectioned=claims=>claims.some(c=>c&&c.weekly_section!==undefined);
@@ -183,10 +183,10 @@ function weeklySummary(claims){
 }
 function weeklyRow(c,n,claims){
  const [cls,label]=weeklyKind(c),type=SOURCE_TYPES[c.source_document_type]||"其他";
- const tags=c.weekly_section==="background"?"相關："+cite(c.related_claim_ids||[],n):dailyTagText(c);
+ const tags=c.weekly_section==="background"?esc("相關："+cite(c.related_claim_ids||[],n)):dailyTagList(c).map(t=>"<span>#"+esc(t)+"</span>").join(" ");
  const zh=typeof c.title_zh==="string"&&c.title_zh.trim()?c.title_zh.trim():"",rs=zh?' rowspan="2"':"";
  const body=c.weekly_section==="featured"?facetBody(c):claimBody(c);
- return "<tr><td"+rs+">"+esc(n.get(c.claim_id))+"</td><td"+rs+' data-kind="'+cls+'"><span>'+label+"</span><br>"+type+"</td><td"+rs+">"+esc(c.first_disclosed_on||"未知")+"</td><td"+rs+">"+esc(tags)+"</td>"+
+ return "<tr><td"+rs+">"+esc(n.get(c.claim_id))+"</td><td"+rs+' data-kind="'+cls+'"><span>'+label+"</span><br>"+type+"</td><td"+rs+">"+esc(c.first_disclosed_on||"未知")+"</td><td"+rs+">"+tags+"</td>"+
   (zh?"<td>中文譯名："+esc(zh)+"</td></tr><tr>":"")+'<td data-claim-id="'+esc(c.claim_id)+'">'+body+"</td></tr>";
 }
 function weeklyMain(claims,e={}){
