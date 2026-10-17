@@ -1445,7 +1445,7 @@
 | KB-2026-0236 — [인공지능(AI) 교과, 교원이 주도하여 교육자료부터 인정교과서까지 만든다](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107049&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | government_announcement | 2026-08-27 | bibliographic_checked |
 | KB-2026-0237 — [中小學使用「生成式人工智慧」注意事項2.1（教師、行政人員及家長版）](https://pads.moe.edu.tw/download_file.php?file=_upload_b72bd6a6bf0bb8cb0c84e7ab8b5e4f79.pdf&old=upload) | official_guidance | 2026-02-11 | bibliographic_checked |
 | KB-2026-0238 — [Council conclusions on teachers in the era of artificial intelligence (AI)](https://data.consilium.europa.eu/doc/document/ST-9003-2026-INIT/en/pdf) | official_guidance | 2026-05-11 | bibliographic_checked |
-| KB-2026-0239 — [115年中小學教師數位與AI教學指引](https://pads.moe.edu.tw/download_file.php?file=_upload_0ced2a78cb794f6881c47b0e2148774b.pdf&old=upload) | official_guidance | 2026-09 | bibliographic_checked |
+| KB-2026-0239 — [115年中小學教師數位與AI教學指引](https://pads.moe.edu.tw/download_file.php?file=_upload_0ced2a78cb794f6881c47b0e2148774b.pdf&old=upload) | official_guidance | 2026-09-10 | bibliographic_checked |
 | KB-2026-0240 — [115年中小學校長數位與AI學習領導指引](https://pads.moe.edu.tw/download_file.php?file=_upload_9ef3962a1a7e371436145702ab24a6b7.pdf&old=upload) | official_guidance | 2026-09 | bibliographic_checked |
 | KB-2026-0241 — [115年中小學家長數位與AI學習知能指引](https://pads.moe.edu.tw/download_file.php?file=_upload_6a9820befef32e7e22a210950196a54f.pdf&old=upload) | official_guidance | 2026-09 | bibliographic_checked |
 | KB-2026-0242 — [中小學AI之學習應用手冊⸺國小生聰明用AI](https://pads.moe.edu.tw/download_file.php?file=_upload_9876e42b654dd2a55c3d2e8a8c055777.pdf&old=upload) | official_guidance | 2026-09 | bibliographic_checked |
