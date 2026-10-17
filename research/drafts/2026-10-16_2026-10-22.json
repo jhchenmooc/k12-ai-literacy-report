@@ -80,6 +80,110 @@
    "doi": "10.1007/s44217-026-02048-x",
    "screening_note": "Verified 2026-10-16 from manager-supplied publisher PDF and Springer Nature Link article-page screenshot for daily brief 2026-10-16 supplement (author-abstract attributed summary); first disclosure 2026-10-15 from the article page.",
    "verification_completed_on": "2026-10-16"
+  },
+  {
+   "candidate_id": "W2026-10-16-A03",
+   "category": "research",
+   "source_url": "https://doi.org/10.1007/s44217-026-02264-5",
+   "source_title": "A qualitative typology of teachers’ orientations toward artificial intelligence integration in Lebanese schools",
+   "source_organization": "Discover Education (Springer Nature)",
+   "source_publication_date": "2026-10-16",
+   "source_locator": "出版者文章頁：Published: 16 October 2026；citation_online_date 2026/10/16；Discover Education 5:1185；Abstract；3.1 Participants",
+   "discovered_on": "2026-10-17",
+   "discovery_batch_id": "2026-10-17-daily-1",
+   "first_disclosed_on": "2026-10-16",
+   "source_updates": [],
+   "original_excerpt": "This qualitative study explores the perceptions, practices, and orientations of 28 Lebanese schoolteachers regarding the integration of AI in school settings.",
+   "source_checked": true,
+   "claim_text": "來源機構：Discover Education (Springer Nature)；資料標題：A qualitative typology of teachers’ orientations toward artificial intelligence integration in Lebanese schools；來源刊登日：2026-10-16。",
+   "claim_class": "bibliographic",
+   "risk_tier": "low",
+   "scope_limitation": "監測清單 J32；質性研究，黎巴嫩公私立學校在職教師 28 人。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "第一輪 2026-10-17T00:30Z 讀出版者文章頁（Springer，HTTP 200）摘要與 3.1 Participants，擇摘要第 2、4、5 句撰寫中文摘要；第二輪 2026-10-17 由隔離子代理逐項對照英文原句（人數、地點、障礙三項、三種取向用語、是否增添內容），判定一致，依建議改為「三種質性取向」。同一模型，非獨立審閱。",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD",
+    "T-ETH",
+    "T-TEA"
+   ],
+   "ai_lit_note": "在職教師的 AI 素養準備度、障礙與專業發展需求（依準則教師 AI 素養判 A），對應 T-PD「評估教師AI素養以規劃專業增能」、T-ETH 與 T-TEA",
+   "audience": "k12",
+   "doi": "10.1007/s44217-026-02264-5",
+   "screening_note": "Verified 2026-10-17 for daily brief 2026-10-17 (author-abstract attributed summary).",
+   "verification_completed_on": "2026-10-17"
+  },
+  {
+   "candidate_id": "W2026-10-16-A04",
+   "category": "research",
+   "source_url": "https://doi.org/10.1111/ejed.70907",
+   "source_title": "Young Learners' Motivation for AI‐Supported Extracurricular French Vocabulary Learning: A Q Methodological Study",
+   "source_organization": "European Journal of Education (Wiley)",
+   "source_publication_date": "2026-10-15",
+   "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：Wiley 回 403）：2026-10-15；European Journal of Education 61(4)；Crossref 摘要（非原文）",
+   "discovered_on": "2026-10-17",
+   "discovery_batch_id": "2026-10-17-daily-1",
+   "first_disclosed_on": "2026-10-15",
+   "source_updates": [],
+   "original_excerpt": "This study investigates primary school students' motivational typologies and the factors related to these configurations in AI‐supported extracurricular French vocabulary learning.",
+   "source_checked": true,
+   "claim_text": "來源機構：European Journal of Education (Wiley)；資料標題：Young Learners' Motivation for AI‐Supported Extracurricular French Vocabulary Learning: A Q Methodological Study；來源刊登日：2026-10-15。",
+   "claim_class": "bibliographic",
+   "risk_tier": "low",
+   "scope_limitation": "監測清單 J49；只讀到 Crossref 紀錄，摘要未經原文核對，本則只發書目。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "第一輪 2026-10-17T00:24Z 讀 Crossref works 紀錄（published-online 2026-10-15、卷期、作者、摘要句）；第二輪 2026-10-17 編輯 session 重新核對 Crossref 紀錄的題名、DOI、日期與期刊，兩輪一致。出版社頁回 403，未繞過；依管理者 2026-10-16 規則，首發日採 Crossref published-online，只發書目。同一模型，非獨立審閱。",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "國小學生以 AI 輔助課外學法語詞彙的動機，屬 AI 輔助學習，對應 S-LRN「應用AI工具強化領域學習」",
+   "audience": "k12",
+   "doi": "10.1111/ejed.70907",
+   "screening_note": "Verified 2026-10-17 for daily brief 2026-10-17 (bibliographic only; first disclosure per Crossref published-online because the publisher page returned 403).",
+   "verification_completed_on": "2026-10-17"
+  },
+  {
+   "candidate_id": "W2026-10-16-A05",
+   "category": "research",
+   "source_url": "https://arxiv.org/abs/2610.21233",
+   "source_title": "\"Do You Trust It... or Check It?\": Exploring Children's Verification Behaviors in Game-Based Human-AI Collaboration",
+   "source_organization": "arXiv",
+   "source_publication_date": "2026-10-15",
+   "source_locator": "arXiv abs 頁 Submission history：[v1] Thu, 15 Oct 2026 04:23:00 UTC；Comments: Accepted at HCI International 2026 (Late Breaking Work)；Abstract",
+   "discovered_on": "2026-10-17",
+   "discovery_batch_id": "2026-10-17-daily-1",
+   "first_disclosed_on": "2026-10-15",
+   "source_updates": [],
+   "original_excerpt": "A preliminary evaluation with children aged 8-10 combined interaction logs, post-task ratings, and semi-structured interviews.",
+   "source_checked": true,
+   "claim_text": "來源機構：arXiv；資料標題：\"Do You Trust It... or Check It?\": Exploring Children's Verification Behaviors in Game-Based Human-AI Collaboration；來源刊登日：2026-10-15。",
+   "claim_class": "bibliographic",
+   "risk_tier": "low",
+   "scope_limitation": "預印本，未經同儕審查（作者註明已獲 HCII 2026 Late Breaking Work 接受）；8–10 歲兒童初步評估，遊戲情境非學校。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "第一輪 2026-10-17T00:30Z 讀 arXiv API 紀錄與 abs 頁（[v1] 2026-10-15），擇摘要第 3、4、6 句撰寫中文摘要，不寫比較結果；第二輪 2026-10-17 由隔離子代理逐項對照英文原句（年齡、系統、三種互動風格、評估方法、是否誤寫結果），判定一致，依建議改為「雙態代理」。同一模型，非獨立審閱。",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-LRN"
+   ],
+   "ai_lit_note": "兒童如何查證 AI 建議（接受、查證、質疑、修正），重點在學生使用 AI 時的查證行為，依準則判 A，對應 S-ETH「具備對AI的批判思考」與 S-LRN",
+   "audience": "k12",
+   "screening_note": "Verified 2026-10-17 for daily brief 2026-10-17 (author-abstract attributed summary).",
+   "verification_completed_on": "2026-10-17"
   }
  ],
  "search_runs": [
@@ -113,6 +217,32 @@
    ],
    "discovered": 1,
    "added": 1,
+   "duplicates": 0
+  },
+  {
+   "batch_id": "2026-10-17-daily-1",
+   "searched_on": "2026-10-17",
+   "lookback_days": 7,
+   "lookback_days_target": 30,
+   "sources": [
+    {
+     "group": "research-doi",
+     "query": "Crossref filter=from-created-date:2026-10-16,until-created-date:2026-10-16,type:journal-article, six query.bibliographic sets, rows=40 each, 2026-10-17T00:23Z; publisher landing pages one try each (Springer 200; Wiley, SAGE 403)",
+     "status": "ok"
+    },
+    {
+     "group": "preprint",
+     "query": "arXiv API two standard queries, 40 each, plus alphaXiv discovery (AI literacy / K-12 / children / generative AI / teachers, after 2026-10-10) verified by arXiv API id_list and abs page",
+     "status": "ok"
+    },
+    {
+     "group": "official-policy",
+     "query": "GOV.UK Search API and Content API, Federal Register (term search ok; ED agency filter returned 403 IP block, recorded as unavailable in the daily check), MEXT, China MOE, HK info.gov.hk 10-16/10-17, KICE, MOE Korea, KERIS, UNESCO newsroom",
+     "status": "ok"
+    }
+   ],
+   "discovered": 3,
+   "added": 3,
    "duplicates": 0
   }
  ],
