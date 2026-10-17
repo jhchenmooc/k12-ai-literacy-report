@@ -257,8 +257,8 @@ article section>table td[data-col="tags"]{width:9em;font-size:13px;color:var(--n
 #sec-toc>ul{flex-direction:column;gap:6px}
 #sec-toc>ul>li>a{font-weight:700}
 @media print{
- #sec-intl table thead,#sec-tw table thead{display:none}
- #sec-intl table td[data-col]:not([data-col="content"])::before,#sec-tw table td[data-col]:not([data-col="content"])::before{font-weight:700;color:var(--muted);margin-right:.3em}
+ article section>table thead{display:none}
+ article section>table td[data-col]:not([data-col="content"]):not([data-col="num"])::before{font-weight:700;color:var(--muted);margin-right:.3em}
  td[data-col="kind"]::before{content:"類型"}td[data-col="date"]::before{content:"首次公開"}td[data-col="audience"]::before{content:"對象"}td[data-col="tags"]::before{content:"標籤"}
 }
 /* Weekly items repeated from a daily brief: one line each (C1); daily "已收入" links (C2); list pages show titles (C8). */
@@ -269,3 +269,10 @@ p[data-claim-links]{font-size:13px;color:var(--muted);margin:-2px 0 18px}
 p[data-claim-kind][id]{scroll-margin-top:16px}
 p[data-claim-kind][id]:target{outline:3px solid #ffb629;outline-offset:2px}
 .brief-items li>p>a{font-weight:700}
+/* Joint review 2026-10-17: list-page card headings are h2; on phones each stacked cell shows its column name; printed links show their address. */
+.daily-card h2{margin:0;font-size:18px}
+@media (max-width:960px){
+ article section>table td[data-col="kind"]::before,article section>table td[data-col="date"]::before,article section>table td[data-col="audience"]::before,article section>table td[data-col="tags"]::before{font-size:12px;color:var(--muted);margin-right:.3em}
+ td[data-col="date"]::before{content:"首次公開"}td[data-col="audience"]::before{content:"對象"}td[data-col="tags"]::before{content:"標籤"}
+}
+@media print{article a[href^="http"]::after{content:" <" attr(href) ">";font-size:11px;color:#555;word-break:break-all}}

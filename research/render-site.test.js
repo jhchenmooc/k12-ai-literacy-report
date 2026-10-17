@@ -71,7 +71,7 @@ test("homepage monthly card follows the newest registered monthly",()=>{
  assert.match(card([mo("2027-01",1)]),/2 月月報預定 3 月 3 日刊出/);
  // A sectioned monthly counts its items, not its summary sentences.
  const sec={path:"monthly/2026-10/index.html",indexed_weeklies:[],claims:[{section:"overview_line"},{section:"overview"},{section:"policy"},{section:"research"},{section:"tw_research"}]};
- assert.match(card([sec]),/3 則，已通過出版閘門/);
+ assert.match(card([sec]),/3 則，已通過自動檢查（非內容認證），經管理者核准發布/);
 });
 
 test("homepage stats count preprints and book chapters separately from journal articles",()=>{
@@ -272,7 +272,7 @@ test("sectioned monthly listing: frozen weeklies, items by first-disclosure date
  assert.deepEqual(w,{month:"2026-10",prev:"2026-09",start:"2026-09-30",end:"2026-10-31"});
  assert.deepEqual(r.monthlyWindow("2026-11"),{month:"2026-11",prev:"2026-10",start:"2026-11-01",end:"2026-11-30"});
  const l=r.monthlyListing({context:r.monthlyContext(e,editions)},w);
- assert.deepEqual(l.groups.map(g=>[g.label,g.items.map(x=>x.c.claim_id)]),[["週報 2026/10/09—10/15",["W1"]],["每日短訊（尚未收入上列週報）",["D20261031-01"]]]);
+ assert.deepEqual(l.groups.map(g=>[g.label,g.items.map(x=>x.c.claim_id)]),[["週報 2026/10/09—10/15",["W1"]],["每日短訊（尚待下期週報）",["D20261031-01"]]]);
  assert.deepEqual(l.tw.map(x=>x.c.claim_id),["D20261031-02"]);
  // Once the cross-month weekly is indexed, its October item replaces the daily line and its November item stays out.
  const l2=r.monthlyListing({context:r.monthlyContext({...e,indexed_weeklies:["2026-10-09_10-15","2026-10-30_11-05"]},editions)},w);
@@ -281,4 +281,19 @@ test("sectioned monthly listing: frozen weeklies, items by first-disclosure date
  const l3=r.monthlyListing({context:r.monthlyContext({...e,indexed_through:"2026-10-31"},editions)},w);
  assert.deepEqual(l3.groups.map(g=>g.items.map(x=>x.c.claim_id)),[["W1"]]);assert.deepEqual(l3.tw,[]);
  assert.equal(r.monthlyNonK12Cap(3),2);assert.equal(r.monthlyNonK12Cap(9),3);assert.equal(r.monthlyNonK12Cap(12),4);
+});
+test("monthly list: early items, items awaiting a weekly, and last month's late items are grouped and typed",()=>{
+ const r=require("./render-site.js");
+ const d=(id,date,over={})=>({claim_id:id,kind:"research",daily_fact_kind:"research_abstract_attributed_summary",source_document_type:"preprint",source_title:"T"+id,source_url:"https://example.org/"+id,first_disclosed_on:date,...over});
+ const editions=[
+  {path:"daily/2026-10-12/index.html",claims:[d("D20261012-01","2026-10-05"),d("D20261012-02","2026-10-11")]},
+  {path:"daily/2026-11-04/index.html",claims:[d("D20261104-01","2026-10-31")]},
+  {path:"weekly/2026-10-09_10-15/index.html",claims:[]},
+  {path:"monthly/2026-10/index.html",indexed_weeklies:["2026-10-09_10-15"],indexed_through:"2026-11-03",claims:[]}];
+ const nov={period:"2026-11",indexed_weeklies:[],indexed_through:"2026-12-03"},oct={period:"2026-10",indexed_weeklies:["2026-10-09_10-15"],indexed_through:"2026-11-03"};
+ const l=r.monthlyListing({context:r.monthlyContext(oct,editions)},r.monthlyWindow("2026-10"));
+ assert.deepEqual(l.groups.map(g=>[g.label,g.items.map(x=>x.c.claim_id)]),[["每日短訊（首次公開早於所列週報期間，不收入週報）",["D20261012-01"]],["每日短訊（尚待下期週報）",["D20261012-02"]]]);
+ assert.equal(l.groups[0].items[0].kind,"研究・預印本");
+ const n=r.monthlyListing({context:r.monthlyContext(nov,editions)},r.monthlyWindow("2026-11"));
+ assert.deepEqual(n.groups.map(g=>[g.label,g.items.map(x=>x.c.claim_id)]),[["上月補列（首次公開於上月、上期月報出刊後才刊出）",["D20261104-01"]]]);
 });

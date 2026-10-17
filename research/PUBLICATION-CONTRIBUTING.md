@@ -52,3 +52,13 @@
 - 每日類型標籤為「研究／政策・來源類型」，書目型加「（僅書目）」。
 - 月報新增 `tw_policy`（臺灣本月中央文件）；年月精度只限 `policy`、`tw_policy`、`tw_research`、`tw_compare`；編輯歸納句不再要求逐句結尾揭露句（段首說明一次）。
 - 每日 PR 合併前執行 `node research/check-daily-pr-scope.js origin/main`；若改到已刊週報或月報頁，不得依權限 B 自動合併。
+
+## 三刊聯合評審（管理者 2026-10-17，D 全照建議）
+
+- 政策項目 `source_country`（ISO 代碼如 CN、JP、GB-ENG，或 INTL）；2026-10-16 起的週報精選、其他短訊、上期補登與月報政策段必填。
+- 2026-10-16 起的週報研究精選須含「。樣本：」「。設計：」「。作者所述發現：」「。限制：」，政策精選須含「。內容：」。
+- 週報一行一則的項目（其他短訊、上期補登、臺灣本週動態）除文字外，`first_disclosed_on`、`source_url`、`kind`、`source_document_type` 也須與每日短訊相同。
+- 週報 `weekly_section: "late"`（上期補登）：須指向每日短訊，首次公開在本期開始前 14 天內，且未出現在任何已登記週報。
+- `self_reported_outcome: true`：官方新聞稿自述成效時加註，類型標籤顯示「（機構自述成效，非同儕審查研究）」。
+- 月報一覽的連結是每日短訊錨點與週報頁，不用週報項目編號；新增「上月補列」群組（依上一期月報的 `indexed_through`）。
+- 每日短訊分支命名為 `claude/daily-YYYY-MM-DD`，CI 會檢查不改到已刊週報或月報頁。
