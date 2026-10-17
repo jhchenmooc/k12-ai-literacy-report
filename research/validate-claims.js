@@ -5,7 +5,7 @@
  */
 "use strict";
 const rank={ "N-U":0,"N-V1":1,"N-V2":2,"N-V3":3,"U":0,"V1":1,"V2":2,"V3":3 };
-function check(c){
+function check(c,opts={}){
   const reasons=[];
   if(!c||typeof c!=="object")return {allow:false,reasons:["invalid record"]};
   if(!["news_policy","research"].includes(c.kind))reasons.push("invalid kind");
@@ -25,6 +25,9 @@ function check(c){
     catch{reasons.push("invalid https source url")}
   }
   for(const dateField of ["checked_at","publication_date"]){
+    // A monthly may list a document whose original prints only year and month (manager 2026-10-17).
+    if(dateField==="publication_date"&&opts.monthPrecision&&c.date_precision==="month"){
+      const m=/^(\d{4})-(0[1-9]|1[0-2])$/.exec(String(c.publication_date));if(!m)reasons.push("invalid publication_date month");continue}
     if(typeof c[dateField]!=="string"||!/^\d{4}-\d{2}-\d{2}$/.test(c[dateField])){reasons.push("invalid "+dateField+" date");continue}
     const d=new Date(c[dateField]+"T00:00:00Z");
     if(!Number.isFinite(d.getTime())||d.toISOString().slice(0,10)!==c[dateField])reasons.push("invalid "+dateField+" date");

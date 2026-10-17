@@ -102,6 +102,11 @@ function registeredShell(document,main,issueDate,issuePath,claims,issue={}){
   }else if(channel==="weekly"&&renderer.periodRange(channel,period)){
    const expected=parse5.parse(renderer.renderWeeklyEdition({period,claims:[]}));
    if(JSON.stringify(shellShape(document))!==JSON.stringify(shellShape(expected)))errors.push("registered weekly shell differs from trusted renderer outside main");
+  }else if(channel==="monthly"&&renderer.periodRange(channel,period)&&renderer.monthlySectioned(issue)){
+   // Sectioned monthly: lists and counts derive from the frozen weeklies and the dailies, so compare against that render.
+   let expected=null;try{expected=parse5.parse(renderer.renderMonthlyEdition({period,claims,indexed_weeklies:issue.indexed_weeklies,revised_on:issue.revised_on,taiwan_journals_not_searched:issue.taiwan_journals_not_searched,context:issue.monthlyContext}))}catch(e){errors.push("monthly renderer refused claims: "+e.message)}
+   if(expected&&JSON.stringify(shellShape(document,true))!==JSON.stringify(shellShape(expected,true)))errors.push("registered monthly page differs from trusted renderer output for its claims");
+   else if(expected){const m=all(expected).find(n=>n.tagName==="main");return {errors,fixedText:new Set(all(m).filter(n=>substantive.has(n.tagName)&&!attr(n,"data-claim-id")).map(n=>normalized(text(n))))}}
   }else if(channel==="monthly"&&renderer.periodRange(channel,period)){
    // Monthly section text inside main is fixed renderer code, so the whole page must equal the render of its claims.
    let expected=null;try{expected=parse5.parse(renderer.renderMonthlyEdition({period,claims}))}catch(e){errors.push("monthly renderer refused claims: "+e.message)}
@@ -125,7 +130,7 @@ function matchBody(document,claims,issueDate,issuePath,issue={}){
   if(node.nodeName==="#comment"||node.nodeName==="#documentType")errors.push("comments/declarations unsupported within main");
   if(node.tagName&&!safeTags.has(node.tagName))errors.push("unsupported HTML tag in main: "+node.tagName);
   if(node.tagName&&node.namespaceURI!==HTML_NS)errors.push("non-HTML namespace unsupported within main");
-  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined)||(a.name==="data-kind"&&node.tagName==="td"&&["policy","research","background","tw"].includes(a.value))||(a.name==="id"&&node.tagName==="tr"&&/^item-(\d+|b\d+|t\d+|c\d+)$/.test(a.value))||(a.name==="data-region"&&["h2","section"].includes(node.tagName)&&["intl","tw"].includes(a.value))||(a.name==="data-part"&&node.tagName==="section"&&a.value==="overview"))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
+  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined)||(a.name==="data-kind"&&node.tagName==="td"&&["policy","research","background","tw"].includes(a.value))||(a.name==="id"&&node.tagName==="tr"&&/^item-(\d+|b\d+|t\d+|c\d+|d\d+)$/.test(a.value))||(a.name==="data-region"&&["h2","section"].includes(node.tagName)&&["intl","tw"].includes(a.value))||(a.name==="data-part"&&node.tagName==="section"&&a.value==="overview")||(issuePath.startsWith("monthly/")&&((a.name==="id"&&node.tagName==="section"&&/^sec-[a-z_]+$/.test(a.value))||(a.name==="id"&&node.tagName==="li"&&/^item-l\d+$/.test(a.value))||(a.name==="data-col"&&node.tagName==="td"&&["num","kind","date","audience","tags","content"].includes(a.value)))))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
  }
  /* Daily tag line (manager decision 2026-10-11): a plain <p data-claim-tags="ID"> directly after the
     claim's own element, whose text must equal dailyTagText(claim); at most once per claim, daily only. */
@@ -324,6 +329,128 @@ function monthlyStructure(claims){
  }
  return errors;
 }
+/* Identity of a source across channels: canonical URL, evidence URL and DOI (manager 2026-10-17: a monthly lists
+   weekly and daily items but does not repeat them, and a weekly does not repeat a monthly item). */
+const SITE_PREFIX="https://jhchenmooc.github.io/";
+function sourceKeys(c){
+ const keys=new Set();if(!c||typeof c!=="object")return keys;
+ for(const u of [c.source_url,c.evidence_source_url]){const k=canonical(u);if(k&&!k.startsWith(SITE_PREFIX))keys.add(k)}
+ const fromUrl=(/^https:\/\/(?:dx\.)?doi\.org\/(10\.[^?#]+)$/i.exec(String(c.source_url||""))||[])[1];
+ for(const d of [c.doi,fromUrl])if(typeof d==="string"&&/^10\./.test(d)){try{keys.add("doi:"+decodeURIComponent(d).toLowerCase())}catch{keys.add("doi:"+d.toLowerCase())}}
+ return keys;
+}
+const MONTHLY_ITEM_SECTIONS=["policy","research","tw_research"];
+const MONTHLY_ITEM_END=/未經真人逐則審稿；請參閱原文。）$/,MONTHLY_ANALYSIS_END="（編輯歸納，AI 整理，未經真人審閱。）";
+const withoutEnd=t=>String(t).replace(MONTHLY_ITEM_END,"").replace(MONTHLY_ANALYSIS_END,"");
+/* Sectioned monthly claims (plan research/drafts/2026-10-17-monthly-redesign-plan.md §8). Structural only. */
+function monthlyStructureSectioned(claims,period,ctx={}){
+ const errors=[],r=require("./render-site.js"),w=r.monthlyWindow(period),list=claims.filter(c=>c&&typeof c==="object");
+ if(!w)return ["monthly period invalid"];
+ const issue=ctx.issue||{},byId=new Map(list.map(c=>[c.claim_id,c]));
+ const listing=r.monthlyListing({context:issue.monthlyContext||{}},w),listed=new Map(listing.all.map(x=>[x.c.claim_id,x.c]));
+ const twListed=new Set(listing.tw.map(x=>x.c.claim_id));
+ const sec=id=>(byId.get(id)||{}).section,isAnalysis=c=>["overview_line","overview","tw_note"].includes(c.section)||(c.section==="trends"&&c.assertion_type==="editorial_analysis");
+ const numbered=id=>["policy","research","scholars"].includes(sec(id));
+ const intlRef=id=>numbered(id)||sec(id)==="background"||(listed.has(id)&&!twListed.has(id));
+ const twRef=id=>["tw_research","tw_compare"].includes(sec(id))||twListed.has(id);
+ const resolve=id=>byId.get(id)||listed.get(id);
+ const others=ctx.otherKeys||new Map(),inWin=d=>isoDate(d)&&d>=w.start&&d<=w.end;
+ const lastDay=Date.parse(w.end+"T00:00:00Z");
+ for(const c of list){
+  const id=c.claim_id,s=c.section;
+  if(!r.MONTHLY_KEYS.includes(s)){errors.push(id+": monthly claim section must be one of "+r.MONTHLY_KEYS.join(", "));continue}
+  for(const f of ["claim_text","title_zh"])if(typeof c[f]==="string"&&/\p{Cf}/u.test(c[f]))errors.push(id+": "+f+" contains invisible format characters");
+  if(c.title_zh!==undefined&&(typeof c.title_zh!=="string"||!c.title_zh.trim()||c.title_zh.length>200))errors.push(id+": title_zh must be a short non-empty string");
+  if(c.region!==undefined&&!["intl","tw"].includes(c.region))errors.push(id+": region must be intl or tw");
+  if(["tw_note","tw_compare","tw_research"].includes(s)!==(c.region==="tw"))errors.push(id+": region tw belongs exactly to the Taiwan sections");
+  if(isAnalysis(c)){
+   if(c.assertion_type!=="editorial_analysis"||c.claim_class!=="descriptive")errors.push(id+": "+s+" must be descriptive editorial analysis");
+   if(!String(c.claim_text).endsWith(MONTHLY_ANALYSIS_END))errors.push(id+": editorial analysis must end with "+MONTHLY_ANALYSIS_END);
+  }else{
+   if(c.assertion_type==="editorial_analysis")errors.push(id+": editorial analysis belongs only in the one-line summary, overview, trends or the Taiwan note");
+   // The source title inside the text becomes the link; without it the whole paragraph would be one link.
+   if(typeof c.source_title!=="string"||!c.source_title.trim()||!String(c.claim_text).includes(c.source_title))errors.push(id+": monthly item text must contain its source_title (the link to the original)");
+   if(!MONTHLY_ITEM_END.test(String(c.claim_text)))errors.push(id+": monthly item must end with the AI disclosure (未經真人逐則審稿；請參閱原文。）)");
+   if(c.kind==="news_policy"&&!["binding_policy","official_guidance","draft","official_commentary","training_event","speech"].includes(c.source_document_type))errors.push(id+": missing or invalid policy document type");
+   if(c.kind==="research"&&!["peer_reviewed_article","preprint"].includes(c.source_document_type))errors.push(id+": missing or invalid research document type");
+   if(!MONTHLY_AUDIENCE_KEYS.includes(c.audience))errors.push(id+": audience must be one of "+MONTHLY_AUDIENCE_KEYS.join(", "));
+  }
+  if(c.supporting_claim_ids!==undefined&&!isAnalysis(c))errors.push(id+": supporting_claim_ids only apply to editorial analysis");
+  if(c.related_claim_ids!==undefined&&!["background","tw_compare"].includes(s))errors.push(id+": related_claim_ids only apply to background and Taiwan documents");
+  // Dates (month precision only where the original prints year and month).
+  if(c.date_precision!==undefined){
+   if(c.date_precision!=="month"||!["policy","research","tw_research","tw_compare"].includes(s))errors.push(id+": date_precision month applies only to policy, research and Taiwan documents");
+   else{
+    if(!/^\d{4}-(0[1-9]|1[0-2])$/.test(String(c.first_disclosed_on))||c.first_disclosed_on!==c.publication_date)errors.push(id+": month-precision item needs first_disclosed_on equal to publication_date as YYYY-MM");
+    if(!String(c.claim_text).includes("說明："))errors.push(id+": month-precision item must explain its date basis with 說明：");
+    if(s!=="tw_compare"&&![w.month,w.prev].includes(c.first_disclosed_on))errors.push(id+": month-precision item must be dated this month or the previous month");
+    if(s==="tw_compare"&&!(c.first_disclosed_on<=w.month))errors.push(id+": Taiwan document must be first disclosed by the end of the period");
+   }
+  }else if(!isAnalysis(c)&&s!=="scholars"&&!isoDate(c.first_disclosed_on))errors.push(id+": first_disclosed_on must be a real YYYY-MM-DD date");
+  if(MONTHLY_ITEM_SECTIONS.includes(s)&&c.date_precision===undefined&&!inWin(c.first_disclosed_on))errors.push(id+": "+s+" item must be first disclosed within "+w.start+" to "+w.end);
+  if(s==="scholars"){
+   if(!inWin(c.publication_date))errors.push(id+": scholar item must be formally published (publisher online date) within the period");
+   if(typeof c.research_group!=="string"||!c.research_group.trim())errors.push(id+": tracked-scholar claim needs research_group");
+  }
+  if(s==="background"&&!(isoDate(c.first_disclosed_on)&&c.first_disclosed_on<w.start))errors.push(id+": background item must be first disclosed before the period");
+  if(s==="tw_compare"&&c.date_precision===undefined&&!(isoDate(c.first_disclosed_on)&&c.first_disclosed_on<=w.end))errors.push(id+": Taiwan document must be first disclosed by the end of the period");
+  if(["background","tw_compare"].includes(s)){
+   const rel=Array.isArray(c.related_claim_ids)?c.related_claim_ids:[];
+   if(!rel.length||new Set(rel).size!==rel.length||!rel.every(numbered))errors.push(id+": "+s+" must relate to distinct policy, research or scholar items of this issue");
+  }
+  if(s==="trends"&&!isAnalysis(c)){
+   if(typeof c.research_group!=="string"||!c.research_group.trim())errors.push(id+": trend source needs research_group");
+   const d=Date.parse(String(c.publication_date)+"T00:00:00Z");
+   if(!isoDate(c.publication_date)||d>lastDay||lastDay-d>92*864e5)errors.push(id+": trend source must be published within the three months before the period end");
+  }
+  if(s==="tw_research"){
+   if(!["k12","other_stakeholders"].includes(c.audience))errors.push(id+": Taiwan research is limited to K-12 and other education stakeholders");
+   if(issue.taiwan_journals_not_searched===true)errors.push(id+": taiwan_journals_not_searched contradicts Taiwan research items");
+  }
+  // Not a repeat of a daily, weekly or another monthly item.
+  if(MONTHLY_ITEM_SECTIONS.includes(s)||s==="scholars")for(const k of sourceKeys(c))if(others.has(k))errors.push(id+": source already published in "+others.get(k));
+  // Editorial analysis rules.
+  const ids=Array.isArray(c.supporting_claim_ids)?c.supporting_claim_ids:[],body=withoutEnd(c.claim_text);
+  if(s==="overview_line"){
+   if(body.length>r.MONTHLY_OVERVIEW_LINE_MAX)errors.push(id+": one-line summary must be at most "+r.MONTHLY_OVERVIEW_LINE_MAX+" characters");
+   if(!ids.every(x=>resolve(x)&&!isAnalysis(resolve(x))))errors.push(id+": one-line summary may cite only this issue's items or listed items");
+   const banned=bannedIn(body);if(banned.length)errors.push(id+": one-line summary uses words reserved for outcome or advice claims: "+banned.join("、"));
+  }
+  if(s==="overview"){
+   if(body.length>150)errors.push(id+": overview sentence must be at most 150 characters");
+   const refs=ids.map(resolve);
+   if(ids.length<2||new Set(ids).size!==ids.length||refs.some(x=>!x||isAnalysis(x))||!ids.every(intlRef))errors.push(id+": overview sentence needs at least two distinct international items of this issue or its listing");
+   else if(new Set(refs.map(x=>[...sourceKeys(x)][0]||x.claim_id)).size<2)errors.push(id+": overview sentence needs at least two different sources");
+   const banned=bannedIn(body);if(banned.length)errors.push(id+": overview uses words reserved for outcome or advice claims: "+banned.join("、"));
+  }
+  if(s==="tw_note"){
+   if(body.length>150)errors.push(id+": Taiwan note sentence must be at most 150 characters");
+   if(new Set(ids).size!==ids.length||!ids.some(intlRef)||!ids.some(twRef)||!ids.every(x=>intlRef(x)||twRef(x)))errors.push(id+": Taiwan note must cite at least one international item and one Taiwan item");
+   const n=foldText(body),hits=WEEKLY_TW_NOTE_BANNED.filter(x=>n.includes(x));
+   if(hits.length||ADVICE_PATTERN.test(n))errors.push(id+": Taiwan note uses evaluation, outcome or advice words: "+(hits.join("、")||"advice pattern"));
+  }
+  if(s==="trends"&&isAnalysis(c)){
+   const support=ids.map(x=>byId.get(x));
+   if(new Set(ids).size!==ids.length||ids.length<2||support.some(x=>!x||x.section!=="trends"||isAnalysis(x)))errors.push(id+": trend needs at least two distinct trend sources of this issue");
+   else{
+    if(new Set(support.map(x=>String(x.research_group).trim())).size<2)errors.push(id+": trend needs at least two different research groups");
+    if(!support.some(x=>x.source_document_type==="peer_reviewed_article"&&x.audience==="k12"))errors.push(id+": trend needs at least one peer-reviewed K-12 source");
+   }
+  }
+ }
+ const count=s=>list.filter(c=>c.section===s).length;
+ if(count("overview_line")>1)errors.push("monthly one-line summary must be a single sentence");
+ if(count("overview")&&(count("overview")<r.MONTHLY_OVERVIEW_MIN||count("overview")>r.MONTHLY_OVERVIEW_MAX))errors.push("monthly overview needs "+r.MONTHLY_OVERVIEW_MIN+"–"+r.MONTHLY_OVERVIEW_MAX+" sentences");
+ if(count("background")>r.MONTHLY_BACKGROUND_MAX)errors.push("monthly background items exceed "+r.MONTHLY_BACKGROUND_MAX);
+ if(count("tw_note")>r.MONTHLY_TW_NOTE_MAX)errors.push("monthly Taiwan note sentences exceed "+r.MONTHLY_TW_NOTE_MAX);
+ if(count("tw_compare")>r.MONTHLY_TW_COMPARE_MAX)errors.push("monthly Taiwan documents exceed "+r.MONTHLY_TW_COMPARE_MAX);
+ const research=list.filter(c=>c.section==="research"||c.section==="scholars"),non=research.filter(c=>!["k12","other_stakeholders"].includes(c.audience)).length;
+ if(non>r.monthlyNonK12Cap(research.length))errors.push("non-K-12 research ("+non+") exceeds max(2, one third of "+research.length+") across research and scholar items");
+ const groups=new Map();for(const c of list.filter(x=>x.section==="scholars"))groups.set(c.research_group,(groups.get(c.research_group)||0)+1);
+ for(const [g,k] of groups)if(k>4)errors.push("tracked research group "+g+" exceeds 4 scholar items");
+ return errors;
+}
+const MONTHLY_AUDIENCE_KEYS=["k12","other_stakeholders","teacher_ed","higher_ed","adult"];
 function dailyFact(c,issueDate,backfill){
  const errors=[];
  const attributed=c.daily_fact_kind==="official_attributed_summary"||c.daily_fact_kind==="research_abstract_attributed_summary";
@@ -389,6 +516,11 @@ function validate(root){
   for(const e of editions){if(!e||typeof e.claims_file!=="string"||!/^daily\//.test(String(e.path)))continue;
    try{for(const c of JSON.parse(fs.readFileSync(path.join(root,e.claims_file),"utf8")))if(c&&c.claim_id)dailyMap.set(c.claim_id,c)}catch{}}
   return dailyMap};
+ // All registered editions with their claims, for the monthly lists and the cross-channel repeat checks.
+ let loadedList=null;
+ const loaded=()=>{if(loadedList)return loadedList;loadedList=editions.filter(e=>e&&typeof e.path==="string"&&typeof e.claims_file==="string").map(e=>{let claims=[];try{claims=JSON.parse(fs.readFileSync(path.join(root,e.claims_file),"utf8"))}catch{}return {...e,claims:Array.isArray(claims)?claims:[]}});return loadedList};
+ const keysOf=(exclude,filter)=>{const m=new Map();for(const e of loaded()){if(e.path===exclude)continue;const ch=e.path.split("/")[0];
+   for(const c of e.claims){if(!c||c.assertion_type==="editorial_analysis"||!filter(ch,c))continue;for(const k of sourceKeys(c))if(!m.has(k))m.set(k,e.path.replace(/index\.html$/,"")+" "+c.claim_id)}}return m};
  for(const issue of editions){
   if(!issue||typeof issue!=="object"){errors.push("invalid edition");continue}
   const p=issue.path,q=issue.claims_file;
@@ -411,14 +543,32 @@ function validate(root){
   let html;try{html=fs.readFileSync(htmlPath,"utf8")}catch(e){errors.push("edition HTML unreadable "+p+": "+e.message);continue}
   const dom=parsed(html);errors.push(...dom.errors.map(e=>p+": "+e));
   errors.push(...staticHtmlSafety(dom.document,p));
-  errors.push(...matchBody(dom.document,data,issueDate,p,{...issue,weeklyPeriods}).map(e=>p+": "+e));
-  if(p.startsWith("monthly/"))errors.push(...monthlyStructure(data).map(e=>q+" "+e));
+  const renderer=require("./render-site.js"),period=p.split("/")[1],monthlySec=p.startsWith("monthly/")&&renderer.monthlySectioned(issue);
+  const monthlyContext=monthlySec?renderer.monthlyContext(issue,loaded()):undefined;
+  errors.push(...matchBody(dom.document,data,issueDate,p,{...issue,weeklyPeriods,monthlyContext}).map(e=>p+": "+e));
+  if(p.startsWith("monthly/")){
+   // From October 2026 every monthly uses the sectioned layout (manager 2026-10-17).
+   if(!monthlySec&&String(period)>="2026-10")errors.push(p+": monthly from 2026-10 must be registered with indexed_weeklies (sectioned layout)");
+   if(monthlySec){
+    const idx=issue.indexed_weeklies;
+    if(!Array.isArray(idx)||new Set(idx).size!==idx.length||!idx.every(x=>typeof x==="string"&&weeklyPeriods.includes(x)))errors.push(p+": indexed_weeklies must list distinct registered weekly periods");
+    const others=keysOf(p,(ch,c)=>ch==="daily"||ch==="weekly"||(ch==="monthly"&&["policy","research","tw_research","scholars"].includes(c.section)));
+    errors.push(...monthlyStructureSectioned(data,period,{issue:{...issue,monthlyContext},otherKeys:others}).map(e=>q+" "+e));
+   }else errors.push(...monthlyStructure(data).map(e=>q+" "+e));
+  }
+  if(issue.indexed_weeklies!==undefined&&!p.startsWith("monthly/"))errors.push(p+": indexed_weeklies applies only to a monthly edition");
+  if(issue.taiwan_journals_not_searched!==undefined&&(issue.taiwan_journals_not_searched!==true||!monthlySec))errors.push(p+": taiwan_journals_not_searched must be true on a sectioned monthly edition");
+  if(p.startsWith("weekly/")){
+   // A weekly does not repeat an item a monthly already carried.
+   const monthlyKeys=keysOf(p,(ch,c)=>ch==="monthly"&&["policy","research","tw_research","scholars"].includes(c.section));
+   for(const c of data)if(c&&["featured","briefs","taiwan"].includes(c.weekly_section))for(const k of sourceKeys(c))if(monthlyKeys.has(k))errors.push(q+" "+c.claim_id+": source already published in "+monthlyKeys.get(k));
+  }
   if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data,p.split("/")[1],{dailyClaims:dailyClaims(),issue}).map(e=>q+" "+e));
   if(issue.taiwan_not_searched!==undefined&&(issue.taiwan_not_searched!==true||!p.startsWith("weekly/")))errors.push(p+": taiwan_not_searched must be true on a weekly edition");
   if(issue.tw_backfilled_on!==undefined){const r=require("./render-site.js"),b=issue.tw_backfilled_on;
    if(!daily||typeof b!=="string"||!/^\d{4}-\d{2}-\d{2}$/.test(b)||!Number.isFinite(Date.parse(b+"T00:00:00Z"))||new Date(b+"T00:00:00Z").toISOString().slice(0,10)!==b||!issueDate||issueDate>=r.DAILY_REGION_FROM||b<issueDate)
     errors.push(p+": tw_backfilled_on must be a real ISO date, not before the issue date, on a daily page dated before "+r.DAILY_REGION_FROM);}
-  if(issue.revised_on!==undefined&&(!p.startsWith("weekly/")||typeof issue.revised_on!=="string"||!/^\d{4}-\d{2}-\d{2}$/.test(issue.revised_on)||!Number.isFinite(Date.parse(issue.revised_on+"T00:00:00Z"))||new Date(issue.revised_on+"T00:00:00Z").toISOString().slice(0,10)!==issue.revised_on))errors.push(p+": revised_on must be a real ISO date on a weekly edition");
+  if(issue.revised_on!==undefined&&(!(p.startsWith("weekly/")||monthlySec)||typeof issue.revised_on!=="string"||!/^\d{4}-\d{2}-\d{2}$/.test(issue.revised_on)||!Number.isFinite(Date.parse(issue.revised_on+"T00:00:00Z"))||new Date(issue.revised_on+"T00:00:00Z").toISOString().slice(0,10)!==issue.revised_on))errors.push(p+": revised_on must be a real ISO date on a weekly or sectioned monthly edition");
   const claimIds=new Set();
   for(const c of data){
    if(!c||typeof c!=="object"){errors.push("invalid claim in "+q);continue}
@@ -441,7 +591,7 @@ function validate(root){
    if(daily&&!dailySourceLink(dom.document,c))errors.push(q+" "+c.claim_id+": original source URL must be visible as a direct anchor");
    errors.push(...publicationScopeErrors(c).map(e=>q+" "+c.claim_id+": "+e));
    errors.push(...audienceErrors(c,p.split("/")[0]).map(e=>q+" "+c.claim_id+": "+e));
-   const result=check(c);
+   const result=check(c,{monthPrecision:p.startsWith("monthly/")});
    if(!result.allow)errors.push(q+" "+c.claim_id+": "+result.reasons.join("; "));
    errors.push(...sourceTrace(root,c,{requireBibliographicSnapshot:daily}).map(e=>q+" "+c.claim_id+": "+e));
    if(c.claim_class==="high_impact"&&(!c.reviewer_id||!c.reviewer_evidence))errors.push(q+" "+c.claim_id+": reviewer record missing");

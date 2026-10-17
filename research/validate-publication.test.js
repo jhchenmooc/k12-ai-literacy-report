@@ -18,7 +18,7 @@ test("unsupported high-impact claim blocked",t=>{const d=setup();t.after(()=>fs.
 test("hold claim cannot be silently published",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[{...claim,decision:"hold"}]);assert.equal(validate(d).ok,false)});
 test("fake high-impact review fields rejected",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[{...claim,level:"N-V3",claim_class:"high_impact",outcome_checked:true,independent_review:true}]);assert.equal(validate(d).ok,false)});
 test("duplicate claim id blocked",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim,claim]);assert.equal(validate(d).ok,false)});
-test("new monthly without manifest entry blocked",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);fs.mkdirSync(path.join(d,"monthly","2026-10"),{recursive:true});fs.writeFileSync(path.join(d,"monthly","2026-10","index.html"),"<html/>");assert.equal(validate(d).ok,false)});
+test("new monthly without manifest entry blocked",t=>{const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));issue(d,[claim]);fs.mkdirSync(path.join(d,"monthly","2026-08"),{recursive:true});fs.writeFileSync(path.join(d,"monthly","2026-08","index.html"),"<html/>");assert.equal(validate(d).ok,false)});
 
 test("legacy audit stays non-certified",()=>{const a=JSON.parse(fs.readFileSync(path.join(__dirname,"..","publication","audits","2026-09-29_10-08.json"),"utf8"));assert.equal(a.claims.length,13);assert.equal(a.certified,false);assert.ok(a.claims.every(c=>c.decision==="hold"&&c.independent_review===false&&c.source_checked===false));assert.equal(a.claims.filter(c=>c.source_url).length,11)});
 
@@ -314,7 +314,7 @@ test('renderer control: exact weekly and monthly renderer shells are accepted, a
  for(const changed of [html.replace('跳至主要內容','未審核結論'),html.replace('2026-10-09 至 2026-10-15 週報</h1>','未審核結論</h1>'),html.replace('未經獨立認證','已經獨立認證'),
   html.replace('<body>','<body class="skip">'),html.replace('</footer>','<p>未審核結論</p></footer>'),html.replace('</header>','</header><script>alert(1)</script>'),
   html.replace('<a href="../../daily/">','<a href="../../daily/" onclick="alert(1)">'),html.replace('<a href="../../daily/">','<a href="https://example.org/">'),
-  renderWeeklyEdition({period:'2026-10-08_10-14',claims:[claim]}),renderMonthlyEdition({period:'2026-10',claims:[{...claim,section:'policy'}]})]){
+  renderWeeklyEdition({period:'2026-10-08_10-14',claims:[claim]}),renderMonthlyEdition({period:'2026-08',claims:[{...claim,section:'policy'}]})]){
   updateHtml(d,changed);assert.equal(validate(d).ok,false);
  }
 });
@@ -325,27 +325,27 @@ const trend={...claim,claim_id:'M4',section:'trends',assertion_type:'editorial_a
 const monthlyClaims=[{...claim,section:'policy'},scholarA,scholarB,trend];
 function monthlyFull(d,claims,html){
  const {renderMonthlyEdition}=require('./render-site.js');
- fs.rmSync(path.join(d,'weekly'),{recursive:true,force:true});fs.mkdirSync(path.join(d,'monthly','2026-10'),{recursive:true});
+ fs.rmSync(path.join(d,'weekly'),{recursive:true,force:true});fs.mkdirSync(path.join(d,'monthly','2026-08'),{recursive:true});
  // Claims the renderer refuses still get a page, so the gate (not the fixture) does the refusing.
- let page=html;if(page===undefined)try{page=renderMonthlyEdition({period:'2026-10',claims})}catch{page=renderMonthlyEdition({period:'2026-10',claims:claims.map(c=>({...c,section:'policy'}))})}
- fs.writeFileSync(path.join(d,'monthly','2026-10','index.html'),page);
- fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[{path:'monthly/2026-10/index.html',claims_file:'publication/claims/m.json'}]}));
+ let page=html;if(page===undefined)try{page=renderMonthlyEdition({period:'2026-08',claims})}catch{page=renderMonthlyEdition({period:'2026-08',claims:claims.map(c=>({...c,section:'policy'}))})}
+ fs.writeFileSync(path.join(d,'monthly','2026-08','index.html'),page);
+ fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[{path:'monthly/2026-08/index.html',claims_file:'publication/claims/m.json'}]}));
  fs.writeFileSync(path.join(d,'publication','claims','m.json'),JSON.stringify(claims));
  return validate(d);
 }
 test('monthly control: renderer page with fixed sections and a supported trend is accepted',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
  assert.deepEqual(monthlyFull(d,monthlyClaims).errors,[]);
- const html=fs.readFileSync(path.join(d,'monthly','2026-10','index.html'),'utf8');
+ const html=fs.readFileSync(path.join(d,'monthly','2026-08','index.html'),'utf8');
  for(const text of ['政策動態','本刊分析','依據來源','本期無合格項目。'])assert.ok(html.includes(text),text);
 });
 test('monthly attack: any change to the rendered page, inside or outside main, is refused',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
  const {renderMonthlyEdition}=require('./render-site.js');
- const html=renderMonthlyEdition({period:'2026-10',claims:monthlyClaims});
+ const html=renderMonthlyEdition({period:'2026-08',claims:monthlyClaims});
  for(const changed of [html.replace('<h2>政策動態</h2>','<h2>本刊強烈建議</h2>'),html.replace('<h2>研究動態</h2>','<h2>研究動態</h2><p>未審核結論</p>'),
   html.replace('<h2>研究動態</h2>','<h2>研究動態</h2><p>政策動態</p>'),html.replace('未經真人審閱','已經真人審閱'),html.replace('</footer>','<p>未審核結論</p></footer>'),
-  renderMonthlyEdition({period:'2026-10',claims:monthlyClaims.map(c=>c.claim_id==='C1'?{...c,section:'research'}:c)}),
+  renderMonthlyEdition({period:'2026-08',claims:monthlyClaims.map(c=>c.claim_id==='C1'?{...c,section:'research'}:c)}),
   renderMonthlyEdition({period:'2026-09',claims:monthlyClaims})]){
   assert.equal(monthlyFull(d,monthlyClaims,changed).ok,false);
  }
@@ -793,9 +793,9 @@ test("daily claim cannot relabel the scope of its cumulative candidate",t=>{
 });
 
 function monthlyIssue(d,claims){
- const dir=path.join(d,"monthly","2026-10");fs.mkdirSync(dir,{recursive:true});
+ const dir=path.join(d,"monthly","2026-08");fs.mkdirSync(dir,{recursive:true});
  fs.renameSync(path.join(d,"weekly","2026-10-09_10-15","index.html"),path.join(dir,"index.html"));
- fs.writeFileSync(path.join(d,"publication","issues.json"),JSON.stringify({editions:[{path:"monthly/2026-10/index.html",claims_file:"publication/claims/m.json"}]}));
+ fs.writeFileSync(path.join(d,"publication","issues.json"),JSON.stringify({editions:[{path:"monthly/2026-08/index.html",claims_file:"publication/claims/m.json"}]}));
  fs.writeFileSync(path.join(d,"publication","claims","m.json"),JSON.stringify(claims));
 }
 test("weekly edition blocks teacher-education, higher-education, adult, unknown or missing audience",t=>{
@@ -819,4 +819,121 @@ test("daily claim cannot relabel the audience of its cumulative candidate",t=>{
  const sheet={items:[{candidate_id:"W2026-10-09-A07",source_url:dailyLow.source_url,decision:"publish",source_checked:true,first_disclosed_on:"2026-10-10",audience:"teacher_ed"}]};
  fs.writeFileSync(path.join(dir,"2026-10-09_2026-10-15.json"),JSON.stringify(sheet));
  const result=validate(d);assert.equal(result.ok,false);assert.ok(result.errors.some(e=>e.includes("audience differs from cumulative candidate")));
+});
+
+/* ---------- sectioned monthly (manager decisions 2026-10-17) ---------- */
+const M_END='（AI 輔助整理，未經真人逐則審稿；請參閱原文。）',M_AEND='（編輯歸納，AI 整理，未經真人審閱。）';
+const mItem=(id,section,over={})=>({...claim,claim_id:id,section,source_title:'Synthetic source '+id,source_url:'https://example.org/m/'+id,evidence_source_url:'https://example.org/m/'+id,first_disclosed_on:'2026-10-20',publication_date:'2026-10-20',checked_at:'2026-10-25',source_document_type:'official_guidance',claim_text:'合成月報項目《Synthetic source '+id+'》。'+M_END,...over});
+const mResearch=(id,section,over={})=>mItem(id,section,{kind:'research',level:'V2',source_document_type:'peer_reviewed_article',source_type:'journal_article',...over});
+const mAnalysis=(id,section,ids,text,over={})=>({...claim,claim_id:id,section,assertion_type:'editorial_analysis',claim_class:'descriptive',supporting_claim_ids:ids,claim_text:text+M_AEND,source_url:'https://example.org/m/'+id,evidence_source_url:'https://example.org/m/'+id,...over});
+function monthlyBase(){
+ return [
+  mAnalysis('L1','overview_line',['P1'],'本月各國持續發布教師 AI 素養相關文件'),
+  mAnalysis('O1','overview',['P1','R1'],'本月有政策文件與研究談到教師 AI 素養'),
+  mAnalysis('O2','overview',['R1','W1'],'本月研究與週報項目都以中小學教師為對象'),
+  mAnalysis('O3','overview',['P1','W1'],'本月官方文件談到教師培訓'),
+  mItem('P1','policy'),
+  mResearch('R1','research'),
+  mResearch('R2','research',{audience:'teacher_ed'}),
+  mResearch('S1','scholars',{research_group:'G-A',publication_date:'2026-10-02',first_disclosed_on:'2026-09-01'}),
+  mItem('B1','background',{first_disclosed_on:'2026-08-01',publication_date:'2026-08-01',related_claim_ids:['P1']}),
+  mAnalysis('TN1','tw_note',['P1','TR1'],'本月國際政策文件與臺灣研究都談到教師 AI 素養',{region:'tw'}),
+  mItem('TC1','tw_compare',{region:'tw',first_disclosed_on:'2026-04-17',publication_date:'2026-04-17',related_claim_ids:['P1']}),
+  mResearch('TR1','tw_research',{region:'tw'})];
+}
+function monthlySetup(d,claims,extra={},transform=x=>x,briefOver={}){
+ const r=require('./render-site.js');
+ const dailyEdition=registerDailyForWeekly(d);
+ const brief={...claim,claim_id:'W1',weekly_section:'briefs',weekly_source_claim:'D20261012-01',first_disclosed_on:'2026-10-10',source_document_type:'official_guidance',...briefOver};
+ const weeklyEdition={path:'weekly/2026-10-09_10-15/index.html',claims_file:'publication/claims/a.json'};
+ fs.writeFileSync(path.join(d,'publication','claims','a.json'),JSON.stringify([brief]));
+ updateHtml(d,r.renderWeeklyEdition({period:'2026-10-09_10-15',claims:[brief],nav:r.weeklyNav('2026-10-09_10-15',['2026-10-09_10-15'])}));
+ const monthlyEdition={path:'monthly/2026-10/index.html',claims_file:'publication/claims/monthly-2026-10.json',indexed_weeklies:['2026-10-09_10-15'],...extra};
+ const editions=[dailyEdition,weeklyEdition,monthlyEdition];
+ fs.writeFileSync(path.join(d,'publication','claims','monthly-2026-10.json'),JSON.stringify(claims));
+ const loaded=editions.map(e=>({...e,claims:JSON.parse(fs.readFileSync(path.join(d,e.claims_file),'utf8'))}));
+ let html;try{html=r.renderMonthlyEdition({period:'2026-10',claims,...monthlyEdition,context:r.monthlyContext(monthlyEdition,loaded)})}catch(e){html='<html><main><article></article></main></html>'}
+ fs.mkdirSync(path.join(d,'monthly','2026-10'),{recursive:true});fs.writeFileSync(path.join(d,'monthly','2026-10','index.html'),transform(html));
+ fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({schema_version:1,editions}));
+ return {html,result:validate(d)};
+}
+test('sectioned monthly control: renderer page passes; contents, listing and Taiwan area are rendered',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const {html,result}=monthlySetup(d,monthlyBase());
+ assert.deepEqual(result.errors,[]);
+ for(const s of ['<section id="sec-toc"><h2>本期目錄</h2>','<a href="#sec-policy">政策與官方文件（1）</a>','<section id="sec-tw" data-region="tw"><h2>臺灣</h2>','<h4>週報 2026/10/09—10/15（1 則）</h4>','id="item-l1"','<td data-col="audience"><span>師培</span></td>','非中小學研究 1／3 則','引用本期：K-12 AI 素養國際動態，月報 2026 年 10 月。','上一期：<a href="../2026-09/">2026 年 9 月（舊版，未經新查核流程）</a>'])
+  assert.ok(html.includes(s),s);
+});
+test('sectioned monthly: tampered contents, listing or summary text is refused',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ for(const f of [h=>h.replace('政策與官方文件（1）','政策與官方文件（9）'),h=>h.replace('週報第 1 則','週報精選第 1 則'),h=>h.replace('非中小學研究 1／3 則','非中小學研究 0／3 則'),h=>h.replace('（舊版，未經新查核流程）',''),h=>h.replace('<td data-col="audience"><span>師培</span></td>','<td data-col="audience"><span>中小學</span></td>')]){
+  const {result}=monthlySetup(d,monthlyBase(),{},f);assert.equal(result.ok,false);
+ }
+});
+const monthlyBad={
+ 'repeats a daily source':c=>c.map(x=>x.claim_id==='P1'?{...x,source_url:'https://example.org/official',evidence_source_url:'https://example.org/official'}:x),
+ 'non-K-12 research over the cap':c=>c.map(x=>['R1','S1'].includes(x.claim_id)?{...x,audience:'higher_ed'}:x),
+ 'overview cites one item':c=>c.map(x=>x.claim_id==='O1'?{...x,supporting_claim_ids:['P1']}:x),
+ 'overview cites two items of one source':c=>c.map(x=>x.claim_id==='O1'?{...x,supporting_claim_ids:['P1','R1']}:x.claim_id==='R1'?{...x,source_url:'https://example.org/m/P1',evidence_source_url:'https://example.org/m/P1'}:x),
+ 'overview mentions 臺灣':c=>c.map(x=>x.claim_id==='O1'?{...x,claim_text:'本月臺灣與各國都談到教師 AI 素養'+M_AEND}:x),
+ 'overview of two sentences':c=>c.filter(x=>x.claim_id!=='O3'),
+ 'one-line summary too long':c=>c.map(x=>x.claim_id==='L1'?{...x,claim_text:'本'.repeat(61)+M_AEND}:x),
+ 'one-line summary gives advice':c=>c.map(x=>x.claim_id==='L1'?{...x,claim_text:'教師應該立即採用 AI 工具'+M_AEND}:x),
+ 'policy outside the window':c=>c.map(x=>x.claim_id==='P1'?{...x,first_disclosed_on:'2026-09-29',publication_date:'2026-09-29'}:x),
+ 'month precision without 說明':c=>c.map(x=>x.claim_id==='P1'?{...x,date_precision:'month',first_disclosed_on:'2026-10',publication_date:'2026-10'}:x),
+ 'month precision two months back':c=>c.map(x=>x.claim_id==='P1'?{...x,date_precision:'month',first_disclosed_on:'2026-08',publication_date:'2026-08',claim_text:'《Synthetic source P1》說明：原文標示 2026 年 8 月。'+M_END}:x),
+ 'month precision on a scholar item':c=>c.map(x=>x.claim_id==='S1'?{...x,date_precision:'month'}:x),
+ 'scholar published outside the window':c=>c.map(x=>x.claim_id==='S1'?{...x,publication_date:'2026-09-20'}:x),
+ 'scholar without research group':c=>c.map(x=>x.claim_id==='S1'?{...x,research_group:undefined}:x),
+ 'background not earlier than the period':c=>c.map(x=>x.claim_id==='B1'?{...x,first_disclosed_on:'2026-10-05',publication_date:'2026-10-05'}:x),
+ 'Taiwan research for higher education':c=>c.map(x=>x.claim_id==='TR1'?{...x,audience:'higher_ed'}:x),
+ 'Taiwan research without region':c=>c.map(x=>x.claim_id==='TR1'?{...x,region:undefined}:x),
+ 'Taiwan note citing only international items':c=>c.map(x=>x.claim_id==='TN1'?{...x,supporting_claim_ids:['P1','R1']}:x),
+ 'Taiwan note with evaluation':c=>c.map(x=>x.claim_id==='TN1'?{...x,claim_text:'臺灣教師 AI 素養較為薄弱'+M_AEND}:x),
+ 'item without the AI disclosure':c=>c.map(x=>x.claim_id==='R1'?{...x,claim_text:'合成月報項目《Synthetic source R1》。'}:x),
+ 'item text without its source title':c=>c.map(x=>x.claim_id==='R1'?{...x,claim_text:'合成月報項目 R1。'+M_END}:x),
+ 'analysis without the analysis note':c=>c.map(x=>x.claim_id==='O2'?{...x,claim_text:'本月研究與週報項目都以中小學教師為對象'}:x),
+ 'unknown section':c=>c.map(x=>x.claim_id==='R1'?{...x,section:'highlights'}:x),
+ 'trend without a peer-reviewed K-12 source':c=>[...c,mResearch('T1a','trends',{research_group:'G-A',publication_date:'2026-09-10',source_document_type:'preprint',source_type:'preprint'}),mResearch('T1b','trends',{research_group:'G-B',publication_date:'2026-09-12',audience:'higher_ed'}),mAnalysis('T1','trends',['T1a','T1b'],'兩個研究群都談到自評與實測')],
+ 'trend from one research group':c=>[...c,mResearch('T1a','trends',{research_group:'G-A',publication_date:'2026-09-10'}),mResearch('T1b','trends',{research_group:'G-A',publication_date:'2026-09-12'}),mAnalysis('T1','trends',['T1a','T1b'],'兩篇研究都談到自評與實測')],
+ 'trend source older than three months':c=>[...c,mResearch('T1a','trends',{research_group:'G-A',publication_date:'2026-06-10'}),mResearch('T1b','trends',{research_group:'G-B',publication_date:'2026-09-12'}),mAnalysis('T1','trends',['T1a','T1b'],'兩個研究群都談到自評與實測')]
+};
+for(const [name,mutate] of Object.entries(monthlyBad))test('sectioned monthly refuses: '+name,t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const {result}=monthlySetup(d,mutate(monthlyBase()));assert.equal(result.ok,false,name);
+});
+test('sectioned monthly accepts a supported trend and month-precision documents of this or the previous month',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const c=[...monthlyBase().map(x=>x.claim_id==='P1'?{...x,date_precision:'month',first_disclosed_on:'2026-09',publication_date:'2026-09',claim_text:'《Synthetic source P1》說明：原文標示 2026 年 9 月，本刊 10/20 查得，實際上網日不明。'+M_END}:x),
+  mResearch('T1a','trends',{research_group:'G-A',publication_date:'2026-09-10'}),mResearch('T1b','trends',{research_group:'G-B',publication_date:'2026-08-12',audience:'teacher_ed'}),mAnalysis('T1','trends',['T1a','T1b'],'兩個研究群都談到自評與實測')];
+ const {html,result}=monthlySetup(d,c);assert.deepEqual(result.errors,[]);
+ assert.ok(html.includes('2026-09（原文僅標示年月，原文標示上月）'));
+ assert.ok(html.includes('<h4>依據來源</h4>')&&html.includes('id="item-d1"'));
+});
+test('sectioned monthly registration: issue fields are checked',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ for(const extra of [{indexed_weeklies:['2026-10-16_10-22']},{indexed_weeklies:'2026-10-09_10-15'},{taiwan_journals_not_searched:true},{taiwan_journals_not_searched:false},{revised_on:'2026-13-01'}])
+  assert.equal(monthlySetup(d,monthlyBase(),extra).result.ok,false,JSON.stringify(extra));
+ const noTw=monthlyBase().filter(x=>x.section!=='tw_research').map(x=>x.claim_id==='TN1'?{...x,supporting_claim_ids:['P1','TC1']}:x);
+ const ok=monthlySetup(d,noTw,{taiwan_journals_not_searched:true,revised_on:'2026-11-05'});
+ assert.deepEqual(ok.result.errors,[]);assert.ok(ok.html.includes('本月未查臺灣期刊，將於下月補列。')&&ok.html.includes('本期於 2026-11-05 改版'));
+});
+test('monthly from 2026-10 must use the sectioned layout',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const r=require('./render-site.js'),c=[{...claim,section:'policy'}];
+ fs.mkdirSync(path.join(d,'monthly','2026-10'),{recursive:true});fs.writeFileSync(path.join(d,'monthly','2026-10','index.html'),r.renderMonthlyEdition({period:'2026-10',claims:c}));
+ fs.rmSync(path.join(d,'weekly'),{recursive:true,force:true});
+ fs.writeFileSync(path.join(d,'publication','claims','m.json'),JSON.stringify(c));
+ fs.writeFileSync(path.join(d,'publication','issues.json'),JSON.stringify({editions:[{path:'monthly/2026-10/index.html',claims_file:'publication/claims/m.json'}]}));
+ assert.ok(validate(d).errors.some(e=>e.includes('indexed_weeklies')));
+});
+test('sectioned monthly refuses a weekly source matched only by DOI',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const {result}=monthlySetup(d,monthlyBase().map(x=>x.claim_id==='R1'?{...x,source_url:'https://doi.org/10.1234/ABC',evidence_source_url:'https://doi.org/10.1234/ABC'}:x),{},x=>x,{doi:'10.1234/abc'});
+ assert.ok(result.errors.some(e=>e.includes('R1: source already published in weekly/2026-10-09_10-15/')),result.errors.join('\n'));
+});
+test('a weekly may not repeat an item a monthly already carried',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const {result}=monthlySetup(d,monthlyBase().map(x=>x.claim_id==='P1'?{...x,source_url:'https://example.org/official',evidence_source_url:'https://example.org/official'}:x));
+ assert.ok(result.errors.some(e=>e.startsWith('publication/claims/a.json W1: source already published in monthly/2026-10/')),result.errors.join('\n'));
 });
