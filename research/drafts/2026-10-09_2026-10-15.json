@@ -800,6 +800,42 @@
       "event_key": "kr-kice-2026-10-07-research-report-13-genai-guideline",
       "screening_note": "Manager-reported 2026-10-13 (missed: Korean sources not in daily routine). Verified 2026-10-13 and published as a supplement to daily brief 2026-10-13 (official attributed summary); first disclosure from original page 등록일 line.",
       "verification_completed_on": "2026-10-13"
+    },
+    {
+      "candidate_id": "W2026-10-09-A25",
+      "category": "news_policy",
+      "source_url": "https://www.naer.edu.tw/PageDoc/Detail?fid=15&id=5659",
+      "source_title": "從「找答案」到「學會提問」～ 國教院攜手龍埔國小與均一教育平台，看見孩子AI學習轉變",
+      "source_organization": "國家教育研究院（測驗及評量研究中心）",
+      "source_publication_date": "2026-10-12",
+      "source_locator": "國教院新聞公告頁：日期 2026-10-12；發布單位 測驗及評量研究中心；摘要歸屬：第 1 段（合作單位、記者會、新階段研究）、第 2 段第 1 句（追蹤對象）、末段（新階段場域與 AI 素養課程）",
+      "discovered_on": "2026-10-17",
+      "discovery_batch_id": "2026-10-17-tw-backfill",
+      "first_disclosed_on": "2026-10-12",
+      "source_updates": [],
+      "original_excerpt": "本院與新北市政府教育局、均一平台教育基金會及新北市三峽區龍埔國民小學合作推動生成式AI融入學習研究，於2026年10月12日在新北市政府舉行研究成果發布記者會，公布全學年AI個人化教育研究成果，並宣布啟動新階段AI素養研究，持續探索生成式AI時代學生的學習與提問能力。 … 本研究追蹤227位國小六年級學生使用「AI筆記本」的學習歷程，累積近8萬筆作答及逾萬則AI提問。 … 面對生成式AI快速發展，本院將持續推動「精準學向未來」相關研究，新階段研究場域將擴展至國小五、六年級，並進一步發展AI素養課程，從學生如何理解AI、運用AI到如何提出適切問題等面向，探討AI素養與學生學習之間的關係，讓AI不只是「提供答案」的工具，更能成為促進學生自主學習、提問與思考的學習夥伴。",
+      "source_checked": true,
+      "claim_text": "來源機構：國家教育研究院（測驗及評量研究中心）；資料標題：從「找答案」到「學會提問」～ 國教院攜手龍埔國小與均一教育平台，看見孩子AI學習轉變；來源刊登日：2026-10-12。官方文件表示：國家教育研究院與新北市政府教育局、均一平台教育基金會及龍埔國小合作推動生成式AI融入學習研究，10 月 12 日舉行研究成果發布記者會；研究追蹤 227 位國小六年級學生使用「AI筆記本」的學習歷程，並宣布啟動新階段研究，研究場域將擴展至國小五、六年級，並將發展 AI 素養課程，探討 AI 素養與學生學習的關係。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "中央研究機構新聞稿（國教院網站），研究在新北市一所國小進行，合作方含縣市教育局與民間平臺；研究報告全文未見公開，研究發現以新聞稿為限、未經同儕審查。本則為 2026-10-17 補查臺灣中央來源後補登於 10/13 期。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-17T04:03Z 讀國教院新聞公告頁原文（HTTP 200，日期 2026-10-12、發布單位測驗及評量研究中心），擇第 1 段、第 2 段第 1 句與末段撰寫中文摘要，不寫新聞稿所述研究發現；第二輪 2026-10-17T04:07Z 由隔離子代理逐項對照原文（機構與日期、合作單位、記者會、對象人數與年級、新階段內容、語氣、成效描述、逐字摘錄），判定一致，依建議把新階段改為「將擴展」「將發展」以免寫成已實施，並刪去依據較弱的 S-ETH。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-LRN",
+        "S-BAS"
+      ],
+      "ai_lit_note": "學生使用生成式 AI 學習時的提問歷程，並將發展學生 AI 素養課程（如何理解、運用 AI 與提出適切問題），對應 S-LRN「理解AI輔助學習的角色功能」與 S-BAS「運用提示詞優化AI互動」",
+      "audience": "k12",
+      "event_key": "tw-naer-2026-10-12-genai-questioning-research-press",
+      "screening_note": "Taiwan central-source backfill 2026-10-17 (manager decision 甲): Taiwan sources were not searched before 2026-10-18. Verified 2026-10-17 and added to daily brief 2026-10-13 (region tw, official attributed summary); first disclosure from the NAER news page date.",
+      "verification_completed_on": "2026-10-17",
+      "region": "tw"
     }
   ],
   "item_template": {
@@ -823,9 +859,9 @@
     "ai_crosscheck_record": ""
   },
   "screening_summary": {
-    "candidate_count": 24,
-    "ready_to_publish": 11,
-    "verified_for_publication": 11,
+    "candidate_count": 25,
+    "ready_to_publish": 12,
+    "verified_for_publication": 12,
     "screened_on": "2026-10-09",
     "source_types": "official UNESCO policy commentary; institutional event announcements; government training calendars; prior-window research",
     "warnings": [
