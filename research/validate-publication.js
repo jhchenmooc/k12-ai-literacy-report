@@ -116,7 +116,7 @@ function matchBody(document,claims,issueDate,issuePath,issue={}){
   if(node.nodeName==="#comment"||node.nodeName==="#documentType")errors.push("comments/declarations unsupported within main");
   if(node.tagName&&!safeTags.has(node.tagName))errors.push("unsupported HTML tag in main: "+node.tagName);
   if(node.tagName&&node.namespaceURI!==HTML_NS)errors.push("non-HTML namespace unsupported within main");
-  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined)||(a.name==="data-kind"&&node.tagName==="td"&&["policy","research","background"].includes(a.value)))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
+  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined)||(a.name==="data-kind"&&node.tagName==="td"&&["policy","research","background"].includes(a.value))||(a.name==="id"&&node.tagName==="tr"&&/^item-(\d+|b\d+)$/.test(a.value)))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
  }
  /* Daily tag line (manager decision 2026-10-11): a plain <p data-claim-tags="ID"> directly after the
     claim's own element, whose text must equal dailyTagText(claim); at most once per claim, daily only. */
@@ -198,10 +198,25 @@ function weeklyStructure(claims,period){
  for(const c of list){
   const id=c.claim_id,sec=c.weekly_section;
   if(!keys.includes(sec)){errors.push(id+": weekly claim section must be one of "+keys.join(", "));continue}
+  // Every value the renderer prints outside claim_text must be a checked shape, not free text.
+  if(!isoDate(c.first_disclosed_on))errors.push(id+": first_disclosed_on must be a real YYYY-MM-DD date");
+  for(const f of ["claim_text","title_zh"])if(typeof c[f]==="string"&&/\p{Cf}/u.test(c[f]))errors.push(id+": "+f+" contains invisible format characters");
+  if(["featured","briefs","background"].includes(sec)){
+   if(c.kind==="news_policy"&&!["binding_policy","official_guidance","draft","official_commentary","training_event","speech"].includes(c.source_document_type))errors.push(id+": missing or invalid policy document type");
+   if(c.kind==="research"&&!["peer_reviewed_article","preprint"].includes(c.source_document_type))errors.push(id+": missing or invalid research document type");
+  }
+  if(c.title_zh!==undefined&&typeof c.title_zh==="string"){
+   if(/[\u3400-\u9fff]/.test(String(c.source_title))||!/[A-Za-z]/.test(String(c.source_title)))errors.push(id+": title_zh only translates a non-Chinese source title");
+   const n=String(c.title_zh).normalize("NFKC").replace(/[\p{Cf}\s]/gu,""),hits=WEEKLY_TITLE_BANNED.filter(w=>n.includes(w));
+   if(hits.length)errors.push(id+": title_zh contains editorial or advice words: "+hits.join("、"));
+   if(!check({...c,claim_text:c.title_zh}).allow&&check({...c,claim_text:c.title_zh}).reasons.some(r=>r.includes("high-risk assertion")))errors.push(id+": title_zh reads as a high-risk assertion");
+  }
   if(c.assertion_type==="editorial_analysis"&&sec!=="overview")errors.push(id+": editorial analysis belongs only in the overview");
   if(c.title_zh!==undefined&&(typeof c.title_zh!=="string"||!c.title_zh.trim()||c.title_zh.length>200))errors.push(id+": title_zh must be a short non-empty string");
   if(sec==="featured"&&c.full_text_checked!==true)errors.push(id+": featured weekly item must be checked against the full text");
-  if(sec==="briefs"&&!(typeof c.weekly_source_claim==="string"&&/^D\d{8}-\d{2}$/.test(c.weekly_source_claim)))errors.push(id+": weekly brief must name its daily source claim");
+  // An official speech the manager chose to mention (e.g. Ofqual 2026-10-16) need not have run as a daily item.
+  if(sec==="briefs"&&c.source_document_type!=="speech"&&!(typeof c.weekly_source_claim==="string"&&/^D\d{8}-\d{2}$/.test(c.weekly_source_claim)))errors.push(id+": weekly brief must name its daily source claim");
+  if(c.source_document_type==="speech"&&(c.kind!=="news_policy"||sec!=="briefs"))errors.push(id+": a speech is a news_policy brief");
   if((sec==="featured"||sec==="briefs")&&range.start&&!(c.first_disclosed_on>=range.start&&c.first_disclosed_on<=range.end))errors.push(id+": weekly item must be first disclosed within the period");
   if(sec==="background"){
    if(!(typeof c.first_disclosed_on==="string"&&range.start&&c.first_disclosed_on<range.start))errors.push(id+": background item must be first disclosed before the period");
@@ -214,7 +229,7 @@ function weeklyStructure(claims,period){
    if(ids.length<2||new Set(ids).size!==ids.length||!ids.every(inIssue))errors.push(id+": overview needs at least two distinct featured or brief items of this issue");
    else if(new Set(ids.map(x=>byId.get(x).source_url)).size<2)errors.push(id+": overview needs at least two different sources");
    if(typeof c.claim_text!=="string"||c.claim_text.length>150)errors.push(id+": overview sentence must be at most 150 characters");
-   const banned=WEEKLY_OVERVIEW_BANNED.filter(w=>String(c.claim_text).includes(w));
+   const banned=bannedIn(c.claim_text);
    if(banned.length)errors.push(id+": overview uses words reserved for outcome or advice claims: "+banned.join("、"));
   }else if(c.supporting_claim_ids!==undefined)errors.push(id+": supporting_claim_ids only apply to the overview");
  }
@@ -225,7 +240,11 @@ function weeklyStructure(claims,period){
  return errors;
 }
 /* Overview sentences only group what this issue's items say; they may not claim outcomes, trends or advice. */
-const WEEKLY_OVERVIEW_BANNED=["成效","有效","提升","改善","導致","因果","證明","顯著","趨勢","建議","應該","臺灣","台灣"];
+const WEEKLY_OVERVIEW_BANNED=["成效","有效","效果","提升","提高","改善","導致","导致","因果","證明","证明","證實","证实","顯著","显著","趨勢","趋势","建議","建议","推薦","推荐","應該","应该","必須","必须","臺灣","台灣","台湾"];
+/* A faithful title translation may say 提升 or 臺灣 (the source title can); it never speaks for the newsletter. */
+const WEEKLY_TITLE_BANNED=["本刊","建議","建议","推薦","推荐","應該","应该","必須","必须","呼籲","呼吁"];
+const bannedIn=t=>{const n=String(t).normalize("NFKC").replace(/[\p{Cf}\s]/gu,"");return WEEKLY_OVERVIEW_BANNED.filter(w=>n.includes(w))};
+const isoDate=d=>typeof d==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(d)&&Number.isFinite(Date.parse(d+"T00:00:00Z"))&&new Date(d+"T00:00:00Z").toISOString().slice(0,10)===d;
 /* Monthly claims: every claim names a known section; scholar items name their research group; an editorial
    analysis sits only under trends, stays descriptive (no human review) and rests on at least two other claims
    in the same issue from at least two different research groups. Structural only: it cannot judge the trend. */

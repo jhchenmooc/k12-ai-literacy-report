@@ -151,20 +151,21 @@ function renderPeriodEdition(kind,e){
    flat layout; sectioned weeklies must equal this render of their claims (the gate re-renders the page). */
 const WEEKLY_SECTIONS=[
  ["overview","本週導讀","本刊分析：依本期來源歸納，未經真人審閱；每句附依據編號。"],
- ["featured","本週精選","從本週短訊中選出至多 5 則，讀全文補上樣本、方法、作者所述發現與限制；不寫成效與因果推論。"],
- ["briefs","本週其他短訊","本週其他已刊短訊，沿用每日短訊的原文歸屬摘要。"],
+ ["featured","本週精選","從本週短訊與候選項目中選出至多 5 則，讀全文補上樣本、方法、作者所述發現與限制（政策為內容）；不寫成效與因果推論。"],
+ ["briefs","本週其他短訊","本期其他項目，沿用每日短訊的原文歸屬摘要；官方演講等未發每日短訊者另註明。"],
  ["background","背景補充","與本期項目相關、但首發日早於本期的文件；非本週新訊。"]];
 const WEEKLY_OPTIONAL=new Set(["overview","background"]);
 const WEEKLY_EMPTY="本期無合格項目。",WEEKLY_FEATURED_MAX=5,WEEKLY_OVERVIEW_MAX=3,WEEKLY_BACKGROUND_MAX=3;
 const WEEKLY_COLUMNS=["編號","類型","首次公開","標籤","內容"];
 const WEEKLY_FACETS=["樣本","資料","設計","作者所述發現","限制","內容","說明"];
-const SOURCE_TYPES={peer_reviewed_article:"同儕審查論文",preprint:"預印本",binding_policy:"正式政策",official_guidance:"官方指引",draft:"草案",official_commentary:"官方新聞",training_event:"活動"};
-const weeklyRevisionText=d=>"本期於 "+d+" 改版；改版前內容保留於 GitHub 查核紀錄。";
+const SOURCE_TYPES={peer_reviewed_article:"同儕審查論文",preprint:"預印本",binding_policy:"正式政策",official_guidance:"官方指引",draft:"草案",official_commentary:"官方新聞",training_event:"活動",speech:"演講"};
+const weeklyRevisionText=d=>"本期於 "+d+" 改版，項目編號可能已調整；改版前內容保留於 GitHub 查核紀錄。";
 const weeklySectioned=claims=>claims.some(c=>c&&c.weekly_section!==undefined);
 /* Items a reader counts: featured and briefs only (not overview sentences or background documents). */
 const itemCount=e=>weeklySectioned(e.claims)?e.claims.filter(c=>c.weekly_section==="featured"||c.weekly_section==="briefs").length:e.claims.length;
 const periodLabel=p=>{const r=periodRange("weekly",p);return r?r.start.replace(/-/g,"/")+"—"+r.end.slice(5).replace(/-/g,"/"):p};
-const weeklyKind=c=>c.weekly_section==="background"?["background","背景"]:c.kind==="research"?["research","研究"]:["policy","政策"];
+/* An official speech is shown as 官方發言, not 政策 (manager 2026-10-17: 「演講，非政策」). */
+const weeklyKind=c=>c.weekly_section==="background"?["background","背景"]:c.kind==="research"?["research","研究"]:c.source_document_type==="speech"?["policy","官方發言"]:["policy","政策"];
 /* Item numbers run across featured then briefs, so overview sentences and background rows can cite them. */
 function weeklyNumbers(claims){
  const n=new Map();let i=0,b=0;
@@ -172,7 +173,8 @@ function weeklyNumbers(claims){
  for(const c of claims.filter(x=>x.weekly_section==="background"))n.set(c.claim_id,"背景 "+(++b));
  return n;
 }
-const cite=(ids,n)=>"第 "+ids.map(id=>n.get(id)).sort((a,b)=>parseInt(a)-parseInt(b)).join("、")+" 則";
+const anchor=num=>"item-"+(num.startsWith("背景")?"b"+num.replace(/\D/g,""):num);
+const cite=(ids,n)=>"第 "+ids.map(id=>n.get(id)).sort((a,b)=>parseInt(a)-parseInt(b)).map(x=>'<a href="#'+anchor(x)+'">'+x+"</a>").join("、")+" 則";
 /* Featured text is written as labelled segments (樣本：… 。設計：… 。); each label starts a new line. */
 function facetBody(c){
  let body=claimBody(c);
@@ -182,14 +184,14 @@ function facetBody(c){
 function weeklySummary(claims){
  const main=claims.filter(c=>c.weekly_section==="featured"||c.weekly_section==="briefs"),cnt=f=>main.filter(f).length;
  const dims=c=>Array.isArray(c.ai_lit_dims)?c.ai_lit_dims:[];
- return "本期 "+main.length+" 則（精選 "+cnt(c=>c.weekly_section==="featured")+"、其他短訊 "+cnt(c=>c.weekly_section==="briefs")+"）：政策 "+cnt(c=>c.kind!=="research")+"、研究 "+cnt(c=>c.kind==="research")+"；對應學生 AI 素養面向 "+cnt(c=>dims(c).some(d=>d.startsWith("S-")))+"、教師面向 "+cnt(c=>dims(c).some(d=>d.startsWith("T-")))+"。";
+ return "本期 "+main.length+" 則（精選 "+cnt(c=>c.weekly_section==="featured")+"、其他短訊 "+cnt(c=>c.weekly_section==="briefs")+"）：政策 "+cnt(c=>c.kind!=="research")+"、研究 "+cnt(c=>c.kind==="research")+"；其中對應學生 AI 素養面向者 "+cnt(c=>dims(c).some(d=>d.startsWith("S-")))+" 則、教師面向者 "+cnt(c=>dims(c).some(d=>d.startsWith("T-")))+" 則。";
 }
 function weeklyRow(c,n,claims){
  const [cls,label]=weeklyKind(c),type=SOURCE_TYPES[c.source_document_type]||"其他";
- const tags=c.weekly_section==="background"?esc("相關："+cite(c.related_claim_ids||[],n)):dailyTagList(c).map(t=>"<span>#"+esc(t)+"</span>").join(" ");
+ const tags=c.weekly_section==="background"?"相關："+cite(c.related_claim_ids||[],n):dailyTagList(c).map(t=>"<span>#"+esc(t)+"</span>").join(" ");
  const zh=typeof c.title_zh==="string"&&c.title_zh.trim()?c.title_zh.trim():"",rs=zh?' rowspan="2"':"";
  const body=c.weekly_section==="featured"?facetBody(c):claimBody(c);
- return "<tr><td"+rs+">"+esc(n.get(c.claim_id))+"</td><td"+rs+' data-kind="'+cls+'"><span>'+label+"</span><br>"+type+"</td><td"+rs+">"+esc(c.first_disclosed_on||"未知")+"</td><td"+rs+">"+tags+"</td>"+
+ return '<tr id="'+anchor(n.get(c.claim_id))+'"><td'+rs+">"+esc(n.get(c.claim_id))+"</td><td"+rs+' data-kind="'+cls+'"><span>'+label+"</span><br>"+type+"</td><td"+rs+">"+esc(c.first_disclosed_on||"未知")+"</td><td"+rs+">"+tags+"</td>"+
   (zh?"<td>中文譯名："+esc(zh)+"</td></tr><tr>":"")+'<td data-claim-id="'+esc(c.claim_id)+'">'+body+"</td></tr>";
 }
 function weeklyMain(claims,e={}){
@@ -248,7 +250,7 @@ function renderPeriodIndex(kind,editions){
  const isWeekly=kind==="weekly",label=isWeekly?"週報":"月報",legacy=isWeekly?LEGACY_WEEKLY:LEGACY_MONTHLY;
  const registered=editions.filter(e=>e.path.startsWith(kind+"/")).map(e=>({path:e.path.replace(/index\.html$/,""),title:e.title||label+"："+(isWeekly?periodLabel(e.path.split("/")[1]):e.path.split("/")[1]),note:itemCount(e)+" 則，已通過出版閘門"})).sort((a,b)=>compareText(b.path,a.path));
  const rows=[...registered,...legacy].map(x=>'<li class="item"><p><a href="'+esc(x.path.slice(kind.length+1))+'">'+esc(x.title)+'</a></p><div class="meta-line"><span>'+esc(x.note)+"</span></div></li>").join("");
- const head='<div class="kicker">'+label+"</div><h1>"+(isWeekly?"每週精選：完成查核的政策與研究":"每月趨勢：跨週整合")+'</h1><p class="lead">'+(isWeekly?"每則逐句對回原文並標示證據等級；沒有達到查核門檻的週次不發刊，不為湊數放寬標準。":"整合當月週報與重要背景，區分原始發現與本刊分析。")+"</p>";
+ const head='<div class="kicker">'+label+"</div><h1>"+(isWeekly?"每週彙整：精選與當週短訊":"每月趨勢：跨週整合")+'</h1><p class="lead">'+(isWeekly?"精選讀全文補上樣本、方法與限制，其餘沿用每日短訊；每則標示來源類型。沒有達到查核門檻的週次不發刊，不為湊數放寬標準。":"整合當月週報與重要背景，區分原始發現與本刊分析。")+"</p>";
  const main=(registered.length?"":'<p class="empty">尚無以新版流程登錄的'+label+"；以下為早期版本。</p>")+'<ul class="item-list">'+rows+"</ul>";
  return shell({depth:1,current:kind,title:label,description:"K-12 AI 素養"+label+"列表",head,main});
 }
@@ -389,7 +391,7 @@ function renderAbout(){
  const head='<div class="kicker">查核方法</div><h1>每一種內容，查到什麼程度</h1><p class="lead">本刊以低人力、可追溯為原則：先篩日期、學段與重複，並依教育部《臺灣中小學教師與學生 AI 素養框架》判斷是否屬 AI 素養，再核原文；寧可少發，不為湊數放寬門檻。</p>';
  const main='<div class="grid-cards">'+
   '<section class="panel"><div class="label">每日短訊</div><h2>來源存在事實</h2><ul><li>只寫「誰在哪天發布了什麼」或來源原文的歸屬摘要</li><li>首次公開日須在 7 天內，附原文短摘錄與連結</li><li>AI 兩輪對照；未經逐則真人審稿</li><li>不含解讀、成效數字或對臺灣的建議</li></ul></section>'+
-  '<section class="panel"><div class="label">週報與月報</div><h2>逐句對回原文</h2><ul><li>政策依 N1–N8、研究依 G1–G6 查核</li><li>首次公開日、學段、樣本與限制逐項核對</li><li>高風險主張（成效、因果、跨學段推論）一律不自動發布</li><li>本刊分析與原始發現分開標示</li></ul></section>'+
+  '<section class="panel"><div class="label">週報與月報</div><h2>對回原文；精選讀全文</h2><ul><li>政策依 N1–N8、研究依 G1–G6 查核</li><li>週報精選至多 5 則讀全文，補上樣本、設計、作者所述發現與限制；其他短訊沿用每日短訊的原文歸屬摘要</li><li>AI 兩輪對照（第二輪由隔離子代理對照原文）；未經逐則真人審稿</li><li>高風險主張（成效、因果、跨學段推論）一律不自動發布</li><li>本刊分析（週報導讀、月報趨勢）與原始發現分開標示，每句附依據</li><li>背景補充只收首發早於本期的文件，標「背景」，非本週新訊</li></ul></section>'+
   '<section class="panel"><div class="label">歷年資料庫</div><h2>書目索引，不是認證</h2><ul><li><strong>僅發現・未核</strong>：只核過登記資料</li><li><strong>書目已核</strong>：題名、出處、日期對過原頁</li><li><strong>原文已核</strong>：內容逐段核對</li><li>首發日未核實時以卷期年歸類並註明</li><li>題名下的「#」標記由 AI 判讀，未經人工核對；篇數與標記不是趨勢統計</li><li>Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，不作為升為「書目已核」的依據</li><li>不批次核對；被週報、月報引用時才逐篇讀原頁</li></ul></section></div>'+
   '<section class="notice" style="margin-top:28px"><h2>我們不宣稱的事</h2><ul><li>同一個 AI 模型的多次查核彼此一致，不等於獨立真人審閱。</li><li>網站部署成功不等於內容已獲認證。</li><li>創刊特刊與 2026 年 9 月月報為早期版本，未經獨立認證，保留公開更正紀錄。</li><li>讀不到的官方或出版社網站，只能寫「搜尋未見」，不能寫「沒有發布」。</li></ul></section>'+
   '<section class="info" style="margin-top:20px"><h2>更正政策</h2><p>發現錯誤時記錄原說法、錯誤類型、原始來源與修訂內容，在網站明示更正，不默默覆蓋。歡迎透過 <a href="../feedback/">讀者評鑑與勘誤</a>（GitHub Issues）回報。</p></section>';

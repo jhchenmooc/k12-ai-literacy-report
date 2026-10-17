@@ -334,8 +334,8 @@ test('monthly structure: sections, research groups and trend support are enforce
  }
 });
 // Sectioned weekly (manager decision 2026-10-17): featured items re-checked against full text, then other daily items.
-const featured={...claim,claim_id:'W1',weekly_section:'featured',full_text_checked:true,first_disclosed_on:'2026-10-10',claim_text:'合成案例：精選深入版'};
-const brief={...claim,claim_id:'W2',weekly_section:'briefs',weekly_source_claim:'D20261012-01',first_disclosed_on:'2026-10-11',source_url:'https://example.org/other',evidence_source_url:'https://example.org/other',claim_text:'合成案例：其他短訊'};
+const featured={...claim,claim_id:'W1',weekly_section:'featured',full_text_checked:true,first_disclosed_on:'2026-10-10',source_document_type:'official_guidance',claim_text:'合成案例：精選深入版'};
+const brief={...claim,claim_id:'W2',weekly_section:'briefs',weekly_source_claim:'D20261012-01',first_disclosed_on:'2026-10-11',source_document_type:'official_guidance',source_url:'https://example.org/other',evidence_source_url:'https://example.org/other',claim_text:'合成案例：其他短訊'};
 function weeklyFull(d,claims,html,extra={}){
  const {renderWeeklyEdition,weeklyNav}=require('./render-site.js'),nav=weeklyNav('2026-10-09_10-15',['2026-10-09_10-15']);
  let page=html;if(page===undefined)try{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims,revised_on:extra.revised_on,nav})}catch{page=renderWeeklyEdition({period:'2026-10-09_10-15',claims:claims.map(c=>({...c,weekly_section:'briefs'})),nav})}
@@ -366,7 +366,7 @@ test('weekly attack: any change to a sectioned page, or section text on a flat p
 test('weekly table: kind badge, date and tag cells come only from the renderer',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
  const {renderWeeklyEdition,weeklyNav}=require('./render-site.js'),html=renderWeeklyEdition({period:'2026-10-09_10-15',claims:[featured,brief],nav:weeklyNav('2026-10-09_10-15',['2026-10-09_10-15'])});
- assert.ok(html.includes('<td data-kind="policy"><span>政策</span><br>其他</td><td>2026-10-10</td>'),html.slice(html.indexOf('<table>'),html.indexOf('</table>')));
+ assert.ok(html.includes('<td data-kind="policy"><span>政策</span><br>官方指引</td><td>2026-10-10</td>'),html.slice(html.indexOf('<table>'),html.indexOf('</table>')));
  assert.deepEqual(weeklyFull(d,[featured,brief],html).errors,[]);
  for(const changed of [html.replace('<span>政策</span>','<span>本刊推薦</span>'),html.replace('data-kind="policy"','data-kind="alert"'),
   html.replace('<td>2026-10-10</td>','<td>2026-10-17</td>'),html.replace('<th scope="col">內容</th>','<th scope="col">結論</th>'),
@@ -377,21 +377,27 @@ test('weekly table: kind badge, date and tag cells come only from the renderer',
  assert.equal(bare.ok,false);assert.ok(bare.errors.some(e=>e.includes('unbound content')));
 });
 // Overview (editorial analysis citing item numbers), background before the period, Chinese title, facets, nav.
-const overview={...claim,claim_id:'O1',weekly_section:'overview',assertion_type:'editorial_analysis',supporting_claim_ids:['W1','W2'],claim_text:'合成案例：本期兩則都以教師為對象'};
-const background={...claim,claim_id:'B1',weekly_section:'background',first_disclosed_on:'2026-09-01',related_claim_ids:['W2'],claim_text:'合成案例：先前的框架'};
+const overview={...claim,claim_id:'O1',weekly_section:'overview',first_disclosed_on:'2026-10-17',assertion_type:'editorial_analysis',supporting_claim_ids:['W1','W2'],claim_text:'合成案例：本期兩則都以教師為對象'};
+const background={...claim,claim_id:'B1',weekly_section:'background',first_disclosed_on:'2026-09-01',source_document_type:'official_guidance',related_claim_ids:['W2'],claim_text:'合成案例：先前的框架'};
 test('weekly additions: overview, background, Chinese title, facets and nav render and pass',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
  const f2={...featured,title_zh:'合成中文譯名',claim_text:'合成案例：精選深入版。樣本：三年級 20 人。限制：單一學校。'};
  const claims=[overview,f2,brief,background];
  const r=weeklyFull(d,claims);assert.deepEqual(r.errors,[]);
  const html=fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8');
- for(const text of ['本週導讀','<p>依據：第 1、2 則</p>','背景補充','相關：第 2 則','<span>背景</span>','中文譯名：合成中文譯名','。<br><strong>樣本：</strong>三年級','本期 2 則（精選 1、其他短訊 1）'])assert.ok(html.includes(text),text);
+ for(const text of ['本週導讀','<p>依據：第 <a href="#item-1">1</a>、<a href="#item-2">2</a> 則</p>','背景補充','相關：第 <a href="#item-2">2</a> 則','<span>背景</span>','中文譯名：合成中文譯名','。<br><strong>樣本：</strong>三年級','本期 2 則（精選 1、其他短訊 1）'])assert.ok(html.includes(text),text);
  assert.ok(html.indexOf('本週導讀')<html.indexOf('本週精選')&&html.indexOf('本週其他短訊')<html.indexOf('背景補充'));
- for(const changed of [html.replace('依據：第 1、2 則','依據：第 1 則'),html.replace('相關：第 2 則','相關：第 1 則'),html.replace('中文譯名：合成中文譯名','中文譯名：未審核譯名'),html.replace('<span>背景</span>','<span>政策</span>')])
+ for(const changed of [html.replace('、<a href="#item-2">2</a>',''),html.replace('相關：第 <a href="#item-2">2</a> 則','相關：第 1 則'),html.replace('中文譯名：合成中文譯名','中文譯名：未審核譯名'),html.replace('<span>背景</span>','<span>政策</span>')])
   assert.equal(weeklyFull(d,claims,changed).ok,false);
  const {renderWeeklyEdition,weeklyNav}=require('./render-site.js');
  assert.deepEqual(weeklyNav('2026-10-09_10-15',['2026-10-09_10-15','2026-10-16_10-22']),{prev:'2026-09-29_10-08',next:'2026-10-16_10-22'});
  assert.ok(renderWeeklyEdition({period:'2026-10-09_10-15',claims,nav:{prev:'2026-09-29_10-08',next:null}}).includes('<p>上一期：<a href="../2026-09-29_10-08/">2026/09/29—10/08</a></p>'));
+});
+test('weekly speech brief: no daily claim needed, shown as 官方發言 and 演講',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const speech={...brief,claim_id:'S1',weekly_source_claim:undefined,source_document_type:'speech',source_url:'https://example.org/speech',evidence_source_url:'https://example.org/speech',claim_text:'合成案例：官方演講（演講，非政策）'};
+ assert.deepEqual(weeklyFull(d,[featured,brief,speech]).errors,[]);
+ assert.ok(fs.readFileSync(path.join(d,'weekly','2026-10-09_10-15','index.html'),'utf8').includes('<span>官方發言</span><br>演講'));
 });
 test('weekly additions: overview, background and period rules are enforced',t=>{
  const cases={
@@ -408,6 +414,14 @@ test('weekly additions: overview, background and period rules are enforced',t=>{
   'related ids on brief':[[featured,{...brief,related_claim_ids:['W1']}],'only apply to background'],
   'brief outside period':[[featured,{...brief,first_disclosed_on:'2026-10-20'}],'within the period'],
   'empty Chinese title':[[{...featured,title_zh:' '},brief],'title_zh'],
+  'Chinese title speaking for the newsletter':[[{...featured,source_title:'A study',title_zh:'本刊建議全面採用'},brief],'editorial or advice words'],
+  'Chinese title as high-risk assertion':[[{...featured,source_title:'A study',title_zh:'研究證明成效顯著提升'},brief],'high-risk assertion'],
+  'Chinese title for a Chinese source':[[{...featured,source_title:'中文標題',title_zh:'中文標題'},brief],'non-Chinese source title'],
+  'free text in date':[[{...featured,first_disclosed_on:'2026-10-14 本刊強烈推薦'},brief],'real YYYY-MM-DD'],
+  'background free text in date':[[featured,brief,{...background,first_disclosed_on:'2025-07-07（應立即仿效）'}],'real YYYY-MM-DD'],
+  'invisible characters':[[{...overview,claim_text:'合成案例：本期證\u200b明'},featured,brief],'invisible format characters'],
+  'speech outside briefs':[[{...featured,source_document_type:'speech'},brief],'a speech is a news_policy brief'],
+  'research kind with policy type':[[{...featured,kind:'research',level:'V2',source_document_type:'binding_policy'},brief],'invalid research document type'],
  };
  for(const [name,[claims,reason]] of Object.entries(cases)){
   const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));

@@ -7,17 +7,18 @@
 - [2026-10-10 獨立程式審查交接包](research/audits/2026-10-10/README.md)：原始發現、14 項修正、第二輪自檢、驗證佐證及 Claude 審查 prompt。
 - [本機驗證與公開產物](research/local-validation.md)：Node.js 22、鎖定套件安裝、回歸測試與部署檔案清單。
 - [**固定工作交接檔（SESSION-HANDOFF）**](research/SESSION-HANDOFF.md)：最後確認的 GitHub 證據、重要決策、完成／待辦、已知疏漏及最短接續步驟。接手先重新查最新主分支狀態。
-- [完整編輯與出版主控 SOP v1.1](research/editorial-workflow-master.md)：資料搜尋、來源查核、主張驗證、PR／CI、Pages、勘誤。
+- [完整編輯與出版主控 SOP v1.6](research/editorial-workflow-master.md)：資料搜尋、來源查核、主張驗證、PR／CI、Pages、勘誤。
 
 ## 已發布
 - 網站首頁：`index.html`
 - 創刊特刊（2026/09/29–10/08，10 天過渡期）：`weekly/2026-09-29_10-08/index.html`
 - 2026 年 9 月歷史月報：`monthly/2026-09/index.html`（保留歷史網址及內容）
+- 首期標準週報（2026/10/09–10/15）：`weekly/2026-10-09_10-15/index.html`
 
 ## 後續出版
-- 每週五：整理前一個週五至週四的週報；創刊特刊為 2026/09/29–10/08，第一期標準週報緊接涵蓋 2026/10/09–10/15，排定 10/16 製作。
+- 每週五：出前一週五至週四的週報（版型見主控 SOP「週報版型」與「週報增補」）；首期 2026/10/09–10/15 已刊並於 10/17 改版。
 - 月底：跨週趨勢綜整，不重複堆疊週報。首次預定 2026/10/29。
-- 標準週報目錄：`weekly/YYYY-Www/index.html`，已出版的過渡期特刊使用日期範圍作路徑。
+- 週報路徑：`weekly/YYYY-MM-DD_MM-DD/index.html`（週五至週四）。
 
 ## 流程主控文件
 

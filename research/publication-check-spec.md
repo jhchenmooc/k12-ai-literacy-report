@@ -6,7 +6,7 @@
 
 每個結論各自為一筆 JSON，至少包含：
 
-- `claim_id`、`kind`（news_policy/research）、`claim_text`、`source_url`、`source_locator`（條款／章節／表格／原始公告定位）、`checked_at`、`publication_date`、`source_type`
+- `claim_id`、`kind`（news_policy/research）、`claim_text`、`source_url`、`source_locator`（條款／章節／表格／原始公告定位）、`checked_at`、`publication_date`、`source_type`、`source_document_type`（頁面「來源類型」取此欄）
 - `level`：新聞 `N-U/N-V1/N-V2/N-V3`；研究 `U/V1/V2/V3`。
 - `claim_class`：`bibliographic`／`descriptive`／`high_impact`。高風險指實施效力、強制適用、因果效果、精確效果量或政策採納結論。
 - `source_checked`：人工確認確實取用原始文件（true/false）。
@@ -55,3 +55,7 @@
 先前 9/29–10/8 創刊特刊的四則新聞，在沒有逐項查核卡與原文位置之前，**不應宣稱整期均已達 N-V2 或 N-V3**。後續正式回查時，先抽取所有事實性主張、依來源定位建立查核資料，再由上述機器門檻測試「能否刊登」，不允許機器直接假定 `source_checked` 或 `independent_review` 為 true。
 
 這是必要但非充分條件：**通過機器檢查仍需真正的來源查核**。
+
+## 週報分段欄位（2026-10-17）
+
+分段週報另用 `weekly_section`（overview／featured／briefs／background）、`full_text_checked`、`weekly_source_claim`、`title_zh`、`supporting_claim_ids`、`related_claim_ids`；規則與閘門檢查見 [主控 SOP](editorial-workflow-master.md)「週報版型」「週報增補」與 [PUBLICATION-CONTRIBUTING.md](PUBLICATION-CONTRIBUTING.md)。

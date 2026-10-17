@@ -127,7 +127,7 @@ AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只�
 - Springer（含 BMC、SpringerOpen）的 `citation_online_date` 是 First Online 日，2026-10-10 抽查 15 筆都與 Crossref `published-online` 相同。
 - **出版社頁讀不到時，首發日可依 Crossref `published-online`（管理者 2026-10-16 決定）**：限年、月、日齊全，且沒有更早的預印本或同事件公開；紀錄寫明「首發日依 Crossref published-online（出版社頁讀取失敗）」。只放寬日期，摘要歸屬型短訊仍須讀到摘要原文，否則退回書目型。依據與完整條件見 [編輯流程總則](editorial-workflow-master.md)「出版社頁讀不到時」一條。2026-10-10～16 經管理者截圖或 PDF 確認的 6 篇（10.1177/07356331261494821、10.3390/jintelligence14100257、10.3390/su182010310、10.1177/21582440261496715、10.1145/3856302、10.1007/s44217-026-02048-x），頁面日期與 Crossref 全部相同。Elsevier 多無 `published-online`，仍須頁面或 PDF。
 
-### 3.7 官方政策來源（週報；2026-10-09 實測，由編輯 session 維護）
+### 3.7 官方政策來源（週報；2026-10-09 實測，由編輯 session 維護；2026-10-17 重測與擴充試行見 [policy-monitoring-sources.md](policy-monitoring-sources.md)）
 
 學術 API 幫不上政策來源。政策發現改用官方新聞列表、少數官方 API 與 WebSearch／WebFetch（Claude）；**讀不到的來源只能寫「搜尋未見」，不能寫「當天沒有發布」**。紀錄見 [drafts/2026-10-09-weekly-policy-search.md](drafts/2026-10-09-weekly-policy-search.md)。
 
@@ -137,10 +137,10 @@ AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只�
 | 美國 ED | 403 | Federal Register API 可查 ED 公報文件（網址含方括號，**curl 要加 `-g`**，否則報 bad range）：`https://www.federalregister.gov/api/v1/documents.json?conditions[agencies][]=education-department&conditions[term]=artificial+intelligence&conditions[publication_date][gte]=YYYY-MM-DD` |
 | 英格蘭 DfE | 可讀 | GOV.UK Search API：`https://www.gov.uk/api/search.json?filter_organisations=department-for-education&order=-public_timestamp&count=40`（關鍵詞與時間排序同時用時篩選效果差） |
 | OECD | 403 | WebSearch |
-| 歐盟執委會（教育） | 2026-10-10 education.ec.europa.eu 新聞頁與文件庫頁可讀（HTTP 200）；先前曾遇 antibot 表單、列表未渲染 | 直接讀新聞頁；讀不到時用 WebSearch |
+| 歐盟執委會（教育） | 2026-10-10 education.ec.europa.eu 新聞頁與文件庫頁可讀（HTTP 200）；先前曾遇 antibot 表單、列表未渲染；2026-10-17 重測：200 但列表由 JS 載入、無項目，見 policy-monitoring-sources.md | 直接讀新聞頁；讀不到時用 WebSearch |
 | 歐洲理事會（coe.int、rm.coe.int） | Cloudflare 403，建議全文 PDF 亦同 | 請管理者用瀏覽器開啟另存（9 月月報引文即如此核對） |
 | 澳洲 Department of Education／部長新聞 | 503、HTTP/2 錯誤 | WebSearch |
-| 新加坡 MOE | 2026-10-09 B-POL 實測 moe.gov.sg 可讀；新聞列表偶為轉址 JS 頁、空內容；2026-10-10 單篇頁（forum letter reply、AI in education）直接網址可讀 | WebSearch；國會答覆另查。站內搜尋預設依相關度排序（可改為依日期排序）；只檢視相關度前幾筆、未依日期排序時，記為「未完整檢視」，不寫「沒有發布」（管理者 2026-10-10） |
+| 新加坡 MOE | 2026-10-09 B-POL 實測 moe.gov.sg 可讀（2026-10-17 重測新聞稿列表回 404 外殼，見 policy-monitoring-sources.md）；新聞列表偶為轉址 JS 頁、空內容；2026-10-10 單篇頁（forum letter reply、AI in education）直接網址可讀 | WebSearch；國會答覆另查。站內搜尋預設依相關度排序（可改為依日期排序）；只檢視相關度前幾筆、未依日期排序時，記為「未完整檢視」，不寫「沒有發布」（管理者 2026-10-10） |
 | 加拿大 BC／Ontario | SSL 憑證錯誤（**不得停用 TLS 驗證**）／需 JS | WebSearch |
 | 香港 EDB 通告 | 列表需表單／JS；**通告 PDF 可直接讀** | 香港政府新聞公報可讀 |
 | 日本 MEXT、中國教育部、韓國 MOE、臺灣教育部 | 大致可讀；韓國 moe.go.kr 常 connection reset（需重試）；臺灣 `pads.moe.edu.tw`（AI 人才方舟計畫下載頁）伺服器未送中繼憑證，curl 驗證失敗（rc=60，**不得停用 TLS 驗證**），一般瀏覽器可開 | 臺灣 pads 頁請管理者以瀏覽器確認 |
