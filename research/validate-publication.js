@@ -207,6 +207,16 @@ function dailySourceLink(document,c){
 }
 /* Sectioned weekly claims: every claim names a known section; at most five featured items, each marked as
    checked against the full text; every other item names the daily claim it repeats. Structural only. */
+/* Foreign government bodies named in the text carry their country or region (manager 2026-10-17: 「中國教育部」, not 「教育部」).
+   Checked on items whose source_country is a foreign code; the 來源機構 field before the first 。 is already the full name. */
+const AGENCY_WORDS=/(教育部(?!門)|文部科學省|教育廳|教育局|教育課程評價院|教育學術資訊院|國家教育研究院|教育研究院)/g;
+function unnamedForeignAgency(c){
+ if(!c||typeof c.source_country!=="string"||["TW","INTL"].includes(c.source_country)||c.region==="tw")return false;
+ const names=Object.values(require("./render-site.js").COUNTRY).concat(["中華人民共和國","大韓民國","中共中央","國務院"]);
+ const t=String(c.claim_text||""),body=t.slice(t.indexOf("。")+1);
+ for(const m of body.matchAll(AGENCY_WORDS)){const before=body.slice(Math.max(0,m.index-8),m.index);if(!names.some(n=>before.endsWith(n)))return true}
+ return false;
+}
 function weeklyStructure(claims,period,ctx={}){
  const errors=[],r=require("./render-site.js"),keys=[...r.WEEKLY_SECTIONS,...r.TW_SECTIONS].map(x=>x[0]),list=claims.filter(c=>c&&typeof c==="object");
  // From the 2026-10-16 period, and whenever a Taiwan item is present, a weekly must use the sectioned layout.
@@ -627,6 +637,7 @@ function validate(root){
    if(claimIds.has(c.claim_id))errors.push("duplicate claim_id in "+q+": "+c.claim_id);claimIds.add(c.claim_id);
    if(c.decision!=="publish"){errors.push("edition contains unpublished/held claim "+q+" "+c.claim_id);continue}
    if(c.region!==undefined&&!["intl","tw"].includes(c.region))errors.push(q+" "+c.claim_id+": region must be intl or tw");
+   if(unnamedForeignAgency(c))errors.push(q+" "+c.claim_id+": a foreign agency in the text must carry its country, e.g. 中國教育部 (manager 2026-10-17)");
    if(daily)errors.push(...dailyFact(c,issueDate||"0000-00-00",issue.tw_backfilled_on,issue.revised_on).map(e=>q+" "+c.claim_id+": "+e));
    if(daily){
     let sheets;try{sheets=cumulativeWorksheets(root)}catch(e){errors.push(e.message);continue}

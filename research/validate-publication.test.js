@@ -1082,3 +1082,14 @@ test('sectioned monthly: an international study with a Taiwan sample is listed a
   assert.equal(monthlySetup(e,monthlyBase().map(bad)).result.ok,false);
  }
 });
+test('foreign agency named in the text carries its country (manager 2026-10-17)',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const pol=t=>({...featured,source_country:'CN',claim_text:'來源機構：中華人民共和國教育部；資料標題：Y；來源刊登日：2026-10-10。內容：'+t});
+ assert.deepEqual(weeklyFull(d,[pol('中國教育部網站轉載報導。'),brief]).errors,[]);
+ for(const bad of ['教育部網站轉載報導。','韓國與教育部合作。']){
+  const e=setup();t.after(()=>fs.rmSync(e,{recursive:true,force:true}));
+  assert.ok(weeklyFull(e,[pol(bad),brief]).errors.some(x=>x.includes('must carry its country')),bad);
+ }
+ const f=setup();t.after(()=>fs.rmSync(f,{recursive:true,force:true}));
+ assert.deepEqual(weeklyFull(f,[pol('要求各級教育部門與學校辦理培訓。'),brief]).errors,[],'教育部門 is not an agency name');
+});
