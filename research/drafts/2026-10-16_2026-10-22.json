@@ -124,7 +124,7 @@
    "source_title": "Young Learners' Motivation for AI‐Supported Extracurricular French Vocabulary Learning: A Q Methodological Study",
    "source_organization": "European Journal of Education (Wiley)",
    "source_publication_date": "2026-10-15",
-   "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：Wiley 回 403）：2026-10-15；European Journal of Education 61(4)；Crossref 摘要（非原文）",
+   "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：Wiley 回 403）：2026-10-15；European Journal of Education 61(4)；Crossref 摘要（非原文）；出版者 PDF（管理者 2026-10-17 提供）：Received 19 August 2026、Accepted 8 October 2026",
    "discovered_on": "2026-10-17",
    "discovery_batch_id": "2026-10-17-daily-1",
    "first_disclosed_on": "2026-10-15",
@@ -140,7 +140,7 @@
    "decision": "publish",
    "ai_crosscheck_status": "concordant",
    "ai_crosscheck_passes": 2,
-   "ai_crosscheck_record": "第一輪 2026-10-17T00:24Z 讀 Crossref works 紀錄（published-online 2026-10-15、卷期、作者、摘要句）；第二輪 2026-10-17 編輯 session 重新核對 Crossref 紀錄的題名、DOI、日期與期刊，兩輪一致。出版社頁回 403，未繞過；依管理者 2026-10-16 規則，首發日採 Crossref published-online，只發書目。同一模型，非獨立審閱。",
+   "ai_crosscheck_record": "第一輪 2026-10-17 讀管理者提供的出版者 PDF 首頁摘要（與 Crossref 摘要文字相同），擇摘要第 2–4 句撰寫中文摘要；第二輪 2026-10-17 由隔離子代理逐項對照英文原句（人數 20、34 則敘述、8 人訪談、四種類型名稱、是否增添內容），判定一致。首發日依 Crossref published-online（出版社頁 403）。同一模型，非獨立審閱。",
    "ai_lit_class": "B",
    "ai_lit_dims": [
     "S-LRN"
@@ -148,7 +148,7 @@
    "ai_lit_note": "國小學生以 AI 輔助課外學法語詞彙的動機，屬 AI 輔助學習，對應 S-LRN「應用AI工具強化領域學習」",
    "audience": "k12",
    "doi": "10.1111/ejed.70907",
-   "screening_note": "Verified 2026-10-17 for daily brief 2026-10-17 (bibliographic only; first disclosure per Crossref published-online because the publisher page returned 403).",
+   "screening_note": "Verified 2026-10-17 for daily brief 2026-10-17; upgraded the same day from bibliographic to author-abstract attributed summary after the manager supplied the publisher PDF; first disclosure per Crossref published-online (publisher page 403).",
    "verification_completed_on": "2026-10-17"
   },
   {
