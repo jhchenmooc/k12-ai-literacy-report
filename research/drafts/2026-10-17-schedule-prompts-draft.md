@@ -69,3 +69,33 @@
 - 第 6 步合併前加一步：「執行 `node research/check-daily-pr-scope.js origin/main`；若改到已刊週報或月報頁，不得自動合併，改請管理者處理。」
 - 新增：已刊每日短訊需要更正時，在 issues.json 該頁加 revised_on，並在查核紀錄寫明舊說法、新說法與原因；若因此改到週報或月報頁，同樣不得自動合併。
 - 每日頁的類型標籤與「已收入」連結由程式產生，不需人工處理。
+
+---
+
+# 第二次更新草稿（#314 合併後，D8、D9 折衷做法；待管理者確認）
+
+> 上方第一次更新已於 2026-10-17 由管理者確認並套用。本節是第二次更新，確認後才修改排程。失敗復原見 research/schedule-recovery.md。
+
+## A. 每日短訊：改為每次觸發開新 session，並開推播（D9）
+
+- 新建排程「每日短訊 08:22（新 session）」：`create_new_session_on_fire: true`，`notifications: {push: true}`，提示文字沿用現行內容，再加以下各點。新排程建好後，停用舊的每日排程（不刪除，保留紀錄）。
+  - **開頭：** 這是新 session，沒有先前對話。先確認工作目錄有 jhchenmooc/k12-ai-literacy-report 與 jhchenmooc/k12-ai-literacy-report-restricted；沒有就用 add_repo 加入並 clone。先讀 research/SESSION-HANDOFF.md §0 與 research/schedule-recovery.md。
+  - **分支命名：** `claude/daily-YYYY-MM-DD`，讓 CI 自動執行範圍檢查。
+  - **#314 新規則：** 政策項目加 source_country（ISO 代碼或 INTL）；官方新聞稿自述成效者加 self_reported_outcome: true。
+  - **結尾：** 完成後用 send_message 簡短通知編輯 session（session_01XLm9YebBcin2xA95hg9kye）：發了幾則、PR 連結、需要管理者處理的事項。「請管理者用瀏覽器處理」的清單照常寫在本 session 與當日 daily-check。
+- **管理者要注意：** 每日短訊的回報與「請用瀏覽器處理」清單，會出現在每天新開的 session（有推播通知），不再出現在這裡。
+
+## B. 週報（每週五 09:27，留在編輯 session）加入
+
+- **精選：** 研究固定四欄（樣本、設計、作者所述發現、限制），介入研究的發現照引作者原話並以「作者報告」歸屬，不寫因果與效果量。這一條取代原本的「介入研究不得有作者所述發現」。政策精選用「內容：」。
+- **政策項目：** 精選、其他短訊、上期補登的政策項目都須填 source_country。
+- **臺灣樣本：** 精選優先考慮以臺灣為樣本的研究；這類項目加 taiwan_sample，臺灣區會自動列出。
+- **上期補登：** 首次公開於本期前兩週內、上期出刊後才刊出、且未進任何週報的每日短訊，列入「上期補登」（weekly_section: late）。
+- **機構自述成效：** 官方新聞稿自述成效者加 self_reported_outcome: true。
+- **撞期：** 若同日有月報作業，週報優先，完成後在對話中說明，讓月報作業接續。
+
+## C. 月報出刊前檢查（1 日）與出刊（3–5 日）加入
+
+- **撞期（D8）：** 開始前先確認當天沒有尚未合併的週報 PR；有的話，出刊前檢查等週報 PR 開出後再做；出刊作業延到隔天的補做時段。
+- **政策段：** 須填 source_country；官方新聞稿自述成效者加 self_reported_outcome。
+- **一覽：** 由程式產生。「上月補列」會依上一期的 indexed_through 自動列出；出刊前檢查中只需說明預期數量。
