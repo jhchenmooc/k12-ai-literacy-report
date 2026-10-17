@@ -65,3 +65,11 @@
 ## 既有候選池
 
 本週（10-16～10-22）候選池 5 筆，皆 publish（A01～A05）。
+
+## 補記（2026-10-17，管理者提供全文與決定後）
+
+- **D20261017-02 補為摘要型：** 管理者提供出版者 PDF（European Journal of Education 61:e70907，Received 2026-08-19、Accepted 2026-10-08，摘要文字與 Crossref 相同）。依摘要第 2–4 句改為作者摘要歸屬型，第二輪由隔離子代理對照，判定一致。首發日仍依 Crossref published-online 2026-10-15。
+- **`10.36312/wp1j4x29` 不發：** 管理者提供出版者 PDF，PDF 印「Published: December 2025」、Dec. 2025 Vol. 4 No. 2、版權年 2025；Crossref published-online 卻是 2026-10-15。出版者文件與 Crossref 日期衝突，首發日不明，維持暫緩。Crossref 首發日規則不適用於這種情況。另該文為準實驗研究，成效結果本就不寫入短訊。
+- **Ofqual 署長 10-16 演講：** 管理者決定依編輯建議處理：不發每日短訊；週報以一句話帶過英格蘭考試監管機關對 AI 與資格考試的立場（反對 AI 作弊、主張影響學生前途的評分須有人類直接監督），註明「演講，非政策」。
+
+兩份 PDF 存私人 repo `from-editor-session/daily-pdfs/`（KB-2026-0382__ejed-70907.pdf、no-kb__ijece-wp1j4x29.pdf）。
