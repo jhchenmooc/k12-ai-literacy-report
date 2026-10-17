@@ -167,7 +167,7 @@ article:has(>[data-claim-kind]),article>section:has(>[data-claim-kind]){counter-
 article>section>table{width:100%;border-collapse:collapse;margin:8px 0 28px;font-size:15px;background:var(--surface);border:1px solid var(--border)}
 article>section>table th{text-align:left;font-size:13px;color:var(--muted);font-weight:700;padding:8px 10px;border-bottom:2px solid var(--border);white-space:nowrap}
 article>section>table td{padding:12px 10px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.7}
-article>section>table td:first-child:not([data-claim-id]){width:2.5em;text-align:center;color:var(--navy);font-size:18px}
+article>section>table td:first-child:not([data-claim-id]){width:2.5em;text-align:center;color:var(--navy);font-size:18px;white-space:nowrap}
 article>section>table td:nth-child(2),article>section>table td:nth-child(3){white-space:nowrap;font-size:13px;color:var(--muted)}
 article>section>table td:nth-child(4){width:9em;font-size:13px;color:var(--navy)}
 article>section>table td:nth-child(4) span{white-space:nowrap}
