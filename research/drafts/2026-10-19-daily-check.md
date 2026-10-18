@@ -93,3 +93,8 @@ AI 相關項目皆已在 10-17 補查紀錄或 10-18 查核紀錄判過；行政
 ## 既有候選池
 
 本週（10-16～10-22）候選池 6 筆，皆 publish（A01～A06）；本日無新增候選，未匯入候選池與知識庫。
+
+## 補記（2026-10-19，管理者提供日期與全文後）
+
+- **J01 `10.1016/j.compedu.2026.105767` 不發：** 管理者告知文章頁「Available online 17 October 2026」，並提供 Journal Pre-proof PDF（55 頁；Received 2026-05-15、Revised 2026-09-08、Accepted 2026-10-10）。摘要寫明「STEM undergraduates' writing performance」「368 students … at a university in China」，3.1 Context and Participants 載「Participants were 368 undergraduate students (Age: 18-22 …)」。對象為 higher_ed，依規則不進每日短訊與週報；月報可收。瀏覽器清單此項已處理完畢。
+- PDF 存私人 repo `from-editor-session/daily-pdfs/no-kb__compedu-2026-105767-preproof.pdf`（SHA-256 d64d4f2a…3546c7），已登記於 FULLTEXT-INDEX.md。
