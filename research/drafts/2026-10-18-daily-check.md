@@ -1,4 +1,4 @@
-# 每日短訊查核紀錄：2026-10-18（0 則）
+# 每日短訊查核紀錄：2026-10-18（1 則，管理者決定後補發）
 
 > 每日短訊例行作業，由排程觸發，在每日短訊專用 session 執行（管理者 2026-10-17 決定 D9）。檢索由同 session 三個子代理（國際研究、國際政策、臺灣中央來源）執行，判讀由本 session 複核。查詢時間 2026-10-18T00:24Z–00:45Z（UTC）。請求未帶 email 或 mailto；遇 403、Client Challenge 或機器人驗證都未繞過。結果：**國際、臺灣皆無合格短訊，不建頁、不登記**。本日首次執行臺灣段每日查詢（10-18 起）與 E5a 前 7 天回查（管理者 2026-10-17「E 全照建議」）。監測清單出處只有 J32 一筆可能屬 K–12，但出版者頁遇 Client Challenge、Crossref 無摘要，學段不明。
 
@@ -116,3 +116,4 @@ RSS 的 pubDate 為 GMT，已換算為臺灣時間再篩日期。每個網址以
 
 - **J32 `10.1007/s44217-026-02332-w` 不發：** 管理者提供出版者 PDF（Discover Education (2026) 5:1191，17 頁）。摘要寫明「The targeted sample consisted of 15 postgraduate students enrolled in the English departments of two public universities」，第 3 節 Methodology 寫明受訪者為摩洛哥公立高等教育機構的博士班學生 15 人。對象為 higher_ed，依規則不進每日短訊與週報；月報可收。瀏覽器清單此項已處理完畢。
 - PDF 存私人 repo `from-editor-session/daily-pdfs/no-kb__discover-education-s44217-026-02332-w.pdf`（SHA-256 5be2bc14…29c67a），已登記於 FULLTEXT-INDEX.md。
+- **`10.70838/pemj.640202` 補發 D20261018-01：** 管理者 2026-10-18 回覆「菲律賓針對高中教師可以收」，同意收錄此出處（Psychology and Education: A Multidisciplinary Journal，不在監測清單）。出版者文章頁與出版者 PDF 皆可讀（HTTP 200），只標年份（PDF 另載 Manuscript Accepted 09-05-2026），首發日依 Crossref published-online 2026-10-11（年月日齊全；Crossref 紀錄 2026-10-16 建立；未見更早的預印本）。這是 Crossref 首發日規則的延伸用法：原規則寫「出版者頁讀不到」，本件是出版者頁讀得到但沒有上線日，管理者同意收錄時已知首發日依據。以作者摘要第 2、3、5、8 句撰寫摘要型短訊；第二輪由隔離子代理對照，判定一致，依建議把校名譯為「國立中學」（菲律賓 national high school 含 7–12 年級）、工具清單加「等」、補上「研究當時這些支持大多仍不足」。範圍 A（T-TEA、T-PD、T-ETH），audience k12（公立中學在職教師 5 人）。候選池 W2026-10-16-A06；知識庫 KB-2026-0387（KR-13976～13987）。本期改為建頁並登記（國際 1 則、臺灣 0 則）。

@@ -1556,6 +1556,7 @@
 | KB-2026-0382 — [Young Learners' Motivation for AI‐Supported Extracurricular French Vocabulary Learning: A Q Methodological Study](https://doi.org/10.1111/ejed.70907) | journal_article | 2026-10-15 | bibliographic_checked |
 | KB-2026-0383 — ["Do You Trust It... or Check It?": Exploring Children's Verification Behaviors in Game-Based Human-AI Collaboration](https://arxiv.org/abs/2610.21233) | preprint | 2026-10-15 | bibliographic_checked |
 | KB-2026-0386 — [從「找答案」到「學會提問」～ 國教院攜手龍埔國小與均一教育平台，看見孩子AI學習轉變](https://www.naer.edu.tw/PageDoc/Detail?fid=15&id=5659) | government_announcement | 2026-10-12 | bibliographic_checked |
+| KB-2026-0387 — [AI in the Teaching of Filipino: A Case Study of Teachers at Olutanga National High School](https://doi.org/10.70838/pemj.640202) | journal_article | 2026-10-11 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

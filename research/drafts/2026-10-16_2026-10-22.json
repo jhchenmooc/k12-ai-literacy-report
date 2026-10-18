@@ -184,6 +184,42 @@
    "audience": "k12",
    "screening_note": "Verified 2026-10-17 for daily brief 2026-10-17 (author-abstract attributed summary).",
    "verification_completed_on": "2026-10-17"
+  },
+  {
+   "candidate_id": "W2026-10-16-A06",
+   "category": "research",
+   "source_url": "https://doi.org/10.70838/pemj.640202",
+   "source_title": "AI in the Teaching of Filipino: A Case Study of Teachers at Olutanga National High School",
+   "source_organization": "Psychology and Education: A Multidisciplinary Journal (Innovative Scholars and Researchers Alliance)",
+   "source_publication_date": "2026-10-11",
+   "source_locator": "首發日依 Crossref published-online（出版者頁與 PDF 只標年份，無上線日）：2026-10-11；出版者文章頁 https://scimatic.org/show_manuscript/11054 與出版者 PDF（HTTP 200）：Psych Educ Multidisc J 64(2): 146-157，Manuscript Accepted 09-05-2026；摘要歸屬：Abstract 第 2、3、5、8 句",
+   "discovered_on": "2026-10-17",
+   "discovery_batch_id": "2026-10-18-daily-1",
+   "first_disclosed_on": "2026-10-11",
+   "source_updates": [],
+   "original_excerpt": "Using a qualitative case study design, five Filipino teachers with direct experience using AI were purposively selected.",
+   "source_checked": true,
+   "claim_text": "來源機構：Psychology and Education: A Multidisciplinary Journal (Innovative Scholars and Researchers Alliance)；資料標題：AI in the Teaching of Filipino: A Case Study of Teachers at Olutanga National High School；來源刊登日：2026-10-11。",
+   "claim_class": "bibliographic",
+   "risk_tier": "low",
+   "scope_limitation": "不在監測清單，管理者 2026-10-18 同意收錄；質性個案研究，菲律賓公立中學菲律賓語科教師 5 人。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "第一輪 2026-10-18T01:30Z 讀出版者文章頁與出版者 PDF（scimatic，HTTP 200）摘要與 Introduction，擇摘要第 2、3、5、8 句撰寫中文摘要；第二輪 2026-10-18 由隔離子代理逐項對照英文原句（人數、學校與地點、學科、設計、框架、工具、用途、支持三項、保留語、禁用詞），判定一致，依建議把校名改為「國立中學」（菲律賓 national high school 含 7–12 年級）、工具清單加「等」、補上「這些支持在研究當時大多仍不足」。同一模型，非獨立審閱。",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-TEA",
+    "T-PD",
+    "T-ETH"
+   ],
+   "ai_lit_note": "在職教師在教學中使用生成式 AI 的經驗、倫理疑慮與專業增能需求（依準則教師 AI 素養判 A），對應 T-TEA、T-PD 與 T-ETH",
+   "audience": "k12",
+   "doi": "10.70838/pemj.640202",
+   "screening_note": "Listed for observation 2026-10-17 (venue not on the watchlist); manager approved inclusion 2026-10-18. Verified 2026-10-18 for daily brief 2026-10-18 (author-abstract attributed summary).",
+   "verification_completed_on": "2026-10-18"
   }
  ],
  "search_runs": [
@@ -243,6 +279,37 @@
    ],
    "discovered": 3,
    "added": 3,
+   "duplicates": 0
+  },
+  {
+   "batch_id": "2026-10-18-daily-1",
+   "searched_on": "2026-10-18",
+   "lookback_days": 7,
+   "lookback_days_target": 30,
+   "sources": [
+    {
+     "group": "research-doi",
+     "query": "Crossref filter=from-created-date:2026-10-17,until-created-date:2026-10-17,type:journal-article, six query.bibliographic sets, rows=40 each, plus one proceedings-article set and a watchlist-ISSN set, 2026-10-18T00:24Z; publisher landing pages one try each (Springer Client Challenge; SAGE, Wiley 403; Nature, scimatic 200)",
+     "status": "ok"
+    },
+    {
+     "group": "preprint",
+     "query": "arXiv API (https) two standard queries, 40 each, plus a broader 100-item query; alphaXiv discovery after 2026-10-11 verified by arXiv abs page",
+     "status": "ok"
+    },
+    {
+     "group": "official-policy",
+     "query": "GOV.UK Search and Content API, Federal Register (curl -g), MEXT, China MOE, HK info.gov.hk 10-17/10-18, KICE, MOE Korea, KERIS, UNESCO newsroom, Eurydice news; Australia education.gov.au, ministers and eSafety unavailable (no response); E5a seven-day look-back",
+     "status": "ok"
+    },
+    {
+     "group": "taiwan-central",
+     "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data and RSS, NSTC RSS, MODA press releases page 1; E5a seven-day look-back",
+     "status": "ok"
+    }
+   ],
+   "discovered": 1,
+   "added": 1,
    "duplicates": 0
   }
  ],
