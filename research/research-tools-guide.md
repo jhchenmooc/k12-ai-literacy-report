@@ -125,7 +125,7 @@ AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只�
 
 - **Frontiers 首發日以頁面「Published」或 Crossref `published-online` 為準**（管理者 2026-10-10 決定，取代同日稍早「以 `citation_online_date` 為首發日」的寫法）。`citation_online_date` 等於同頁「Accepted」接受日，不是公開日：B-AIMT（10.3389/feduc.2026.1885959）頁面為 Accepted 2026-08-31、Published 2026-09-28，Crossref 的 published-online 與 DOI 建立日都是 2026-09-28。接受日另記。有更早的預印本時以預印本為準。
 - Springer（含 BMC、SpringerOpen）的 `citation_online_date` 是 First Online 日，2026-10-10 抽查 15 筆都與 Crossref `published-online` 相同。
-- **出版社頁讀不到時，首發日可依 Crossref `published-online`（管理者 2026-10-16 決定）**：限年、月、日齊全，且沒有更早的預印本或同事件公開；紀錄寫明「首發日依 Crossref published-online（出版社頁讀取失敗）」。只放寬日期，摘要歸屬型短訊仍須讀到摘要原文，否則退回書目型。依據與完整條件見 [編輯流程總則](editorial-workflow-master.md)「出版社頁讀不到時」一條。2026-10-10～16 經管理者截圖或 PDF 確認的 6 篇（10.1177/07356331261494821、10.3390/jintelligence14100257、10.3390/su182010310、10.1177/21582440261496715、10.1145/3856302、10.1007/s44217-026-02048-x），頁面日期與 Crossref 全部相同。Elsevier 多無 `published-online`，仍須頁面或 PDF。
+- **出版社頁讀不到時，首發日可依 Crossref `published-online`（管理者 2026-10-16 決定）**：限年、月、日齊全，且沒有更早的預印本或同事件公開；紀錄寫明「首發日依 Crossref published-online（出版社頁讀取失敗）」。只放寬日期，摘要歸屬型短訊仍須讀到摘要原文，否則退回書目型。依據與完整條件見 [編輯流程總則](editorial-workflow-master.md)「出版社頁讀不到時」一條。2026-10-10～16 經管理者截圖或 PDF 確認的 6 篇（10.1177/07356331261494821、10.3390/jintelligence14100257、10.3390/su182010310、10.1177/21582440261496715、10.1145/3856302、10.1007/s44217-026-02048-x），頁面日期與 Crossref 全部相同。Elsevier 多無 `published-online`，仍須頁面或 PDF。**延伸（管理者 2026-10-18）**：出版社頁或 PDF 只標年份或年月時，也可依 Crossref `published-online`（條件同上），紀錄寫「首發日依 Crossref published-online（出版社頁與 PDF 只標年份／年月）」。
 
 ### 3.7 官方政策來源（週報；2026-10-09 實測，由編輯 session 維護；2026-10-17 重測與擴充試行見 [policy-monitoring-sources.md](policy-monitoring-sources.md)）
 
