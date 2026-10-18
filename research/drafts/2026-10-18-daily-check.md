@@ -111,3 +111,8 @@ RSS 的 pubDate 為 GMT，已換算為臺灣時間再篩日期。每個網址以
 ## 既有候選池
 
 本週（10-16～10-22）候選池 5 筆，皆 publish（A01～A05）；本日無新增候選，未匯入候選池與知識庫。
+
+## 補記（2026-10-18，管理者提供全文後）
+
+- **J32 `10.1007/s44217-026-02332-w` 不發：** 管理者提供出版者 PDF（Discover Education (2026) 5:1191，17 頁）。摘要寫明「The targeted sample consisted of 15 postgraduate students enrolled in the English departments of two public universities」，第 3 節 Methodology 寫明受訪者為摩洛哥公立高等教育機構的博士班學生 15 人。對象為 higher_ed，依規則不進每日短訊與週報；月報可收。瀏覽器清單此項已處理完畢。
+- PDF 存私人 repo `from-editor-session/daily-pdfs/no-kb__discover-education-s44217-026-02332-w.pdf`（SHA-256 5be2bc14…29c67a），已登記於 FULLTEXT-INDEX.md。
