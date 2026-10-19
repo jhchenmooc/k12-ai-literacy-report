@@ -217,6 +217,40 @@ function unnamedForeignAgency(c){
  for(const m of body.matchAll(AGENCY_WORDS)){const before=body.slice(Math.max(0,m.index-8),m.index);if(!names.some(n=>before.endsWith(n)))return true}
  return false;
 }
+/* 風險關切與政策調整 (manager decision 2026-10-19, plan F2): a weekly item may carry a caution mark the
+   renderer lists in its own section. The fields are all present or all absent; the original excerpt must sit verbatim
+   in the item's evidence snapshot and come from the title, abstract or first paragraph; Taiwan items, speeches and
+   drafts are never marked. The line itself is built by the renderer, so no editorial verbs reach the page. */
+const CAUTION_FIELDS=["caution_kind","caution_excerpt","caution_excerpt_zh","caution_locator","caution_confirmed_on"];
+const CAUTION_KINDS=["policy_change","warning","investigation","statement","risk_research"];
+function cautionErrors(c,sec,range,root){
+ const has=CAUTION_FIELDS.filter(f=>c[f]!==undefined),extra=["caution_direction","caution_prior_url"].filter(f=>c[f]!==undefined);
+ if(!has.length)return extra.length?["caution_direction and caution_prior_url need a caution mark"]:[];
+ if(has.length!==CAUTION_FIELDS.length)return ["a caution mark needs all of "+CAUTION_FIELDS.join(", ")];
+ const e=[],from=require("./render-site.js").CAUTION_FROM_PERIOD;
+ if(!(range.start&&range.start>=from))e.push("caution marks start with the "+from+" weekly");
+ if(!["featured","briefs","late"].includes(sec))e.push("only featured, brief and late items carry a caution mark");
+ if(c.region==="tw")e.push("Taiwan items do not carry a caution mark");
+ if(["speech","draft"].includes(c.source_document_type))e.push("speeches and drafts do not carry a caution mark");
+ if(!CAUTION_KINDS.includes(c.caution_kind))e.push("caution_kind must be one of "+CAUTION_KINDS.join(", "));
+ if(c.caution_kind==="risk_research"&&c.kind!=="research")e.push("risk_research marks a research item");
+ if(c.caution_kind!=="risk_research"&&c.kind==="research")e.push("a research item can only be marked risk_research");
+ if(c.caution_kind==="policy_change"&&!["binding_policy","official_guidance","official_commentary"].includes(c.source_document_type))e.push("policy_change marks a policy, guidance or official release");
+ if((c.caution_kind==="policy_change")!==(c.caution_direction!==undefined))e.push("caution_direction is required for policy_change and only there");
+ if(c.caution_direction!==undefined&&!["tighten","loosen","other"].includes(c.caution_direction))e.push("caution_direction must be tighten, loosen or other");
+ if(c.caution_prior_url!==undefined&&!(typeof c.caution_prior_url==="string"&&/^https:\/\/\S+$/.test(c.caution_prior_url)))e.push("caution_prior_url must be an https URL");
+ const ex=c.caution_excerpt,zh=c.caution_excerpt_zh;
+ if(typeof ex!=="string"||ex.trim().length<8||ex.length>120)e.push("caution_excerpt must be 8-120 characters");
+ else if(root){
+  const ev=String(c.evidence_path||"");
+  if(!/^publication\/sources\/[A-Za-z0-9._-]+$/.test(ev))e.push("caution_excerpt needs the item's evidence snapshot");
+  else{let t="";try{t=fs.readFileSync(path.join(root,ev),"utf8")}catch{}if(!t.includes(ex))e.push("caution_excerpt must appear verbatim in the evidence snapshot")}
+ }
+ if(typeof zh!=="string"||!zh.trim()||zh.length>60)e.push("caution_excerpt_zh must be 1-60 characters");
+ if(typeof c.caution_locator!=="string"||!/^(標題|摘要|首段)/.test(c.caution_locator)||c.caution_locator.length>80)e.push("caution_locator must start with 標題, 摘要 or 首段");
+ if(!(isoDate(c.caution_confirmed_on)&&(!isoDate(c.checked_at)||c.caution_confirmed_on>=c.checked_at)))e.push("caution_confirmed_on must be an ISO date not before checked_at");
+ return e;
+}
 function weeklyStructure(claims,period,ctx={}){
  const errors=[],r=require("./render-site.js"),keys=[...r.WEEKLY_SECTIONS,...r.TW_SECTIONS].map(x=>x[0]),list=claims.filter(c=>c&&typeof c==="object");
  // From the 2026-10-16 period, and whenever a Taiwan item is present, a weekly must use the sectioned layout.
@@ -290,6 +324,7 @@ function weeklyStructure(claims,period,ctx={}){
    if(miss.length)errors.push(id+": featured item must have the facets "+need.join("、")+" (missing "+miss.join("、")+")");
   }
   if(c.source_country!==undefined&&!(typeof c.source_country==="string"&&(c.source_country==="INTL"||/^[A-Z]{2}(-[A-Z]{3})?$/.test(c.source_country))))errors.push(id+": source_country must be an ISO code or INTL");
+  errors.push(...cautionErrors(c,sec,range,ctx.root).map(e=>id+": "+e));
   if(fromCutover&&c.kind!=="research"&&["featured","briefs","late"].includes(sec)&&c.source_country===undefined)errors.push(id+": policy item needs source_country (joint review D4)");
   if(c.self_reported_outcome!==undefined&&c.self_reported_outcome!==true)errors.push(id+": self_reported_outcome is true or absent");
   if(sec==="late"){
@@ -624,7 +659,9 @@ function validate(root){
    const weeklyKeys=keysOf(p,(ch,c)=>ch==="weekly"&&["featured","briefs","late"].includes(c.weekly_section));
    for(const c of data)if(c&&c.weekly_section==="late")for(const k of sourceKeys(c))if(weeklyKeys.has(k))errors.push(q+" "+c.claim_id+": late item already in "+weeklyKeys.get(k));
   }
-  if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data,p.split("/")[1],{dailyClaims:dailyClaims(),issue}).map(e=>q+" "+e));
+  // Caution marks (plan F2) live on weekly items only, until the monthly carries them.
+  if(!p.startsWith("weekly/"))for(const c of data)if(c&&[...CAUTION_FIELDS,"caution_direction","caution_prior_url"].some(f=>c[f]!==undefined))errors.push(q+" "+c.claim_id+": caution marks belong to weekly items only");
+  if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data,p.split("/")[1],{dailyClaims:dailyClaims(),issue,root}).map(e=>q+" "+e));
   if(issue.taiwan_not_searched!==undefined&&(issue.taiwan_not_searched!==true||!p.startsWith("weekly/")))errors.push(p+": taiwan_not_searched must be true on a weekly edition");
   if(issue.revised_on!==undefined&&daily&&!(isoDate(issue.revised_on)&&issueDate&&issue.revised_on>=issueDate))errors.push(p+": daily revised_on must be a real date on or after the issue date");
   if(issue.tw_backfilled_on!==undefined){const r=require("./render-site.js"),b=issue.tw_backfilled_on;
