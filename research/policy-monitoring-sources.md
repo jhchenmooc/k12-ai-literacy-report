@@ -30,7 +30,7 @@
 |---|---|
 | 每日程式查 | Eurydice 新聞 |
 | 每週四程式查 | 德國 KMK、芬蘭 EDUFI、TeachAI 各州 AI 指引追蹤（快照存 `research/drafts/policy-tracker-snapshots/`，比對差異，新項目再到州教育廳原頁核首發日）、愛沙尼亞 RSS、印度 PIB RSS（未實測，讀不到就移到下一列） |
-| 每週四列入「請管理者用瀏覽器處理」的政策列表掃描 | OECD、美國教育部、歐盟 European Education Area、紐西蘭教育部、新加坡教育部、法國國民教育部、阿聯酋教育部；澳洲教育部新聞室、澳洲教育部長新聞、eSafety（2026-10-17、10-18 兩天程式皆無回應，管理者 2026-10-18 決定改列瀏覽器清單）；英國 NEU（全國教育工會）新聞稿 https://neu.org.uk/press-releases、美國 FTC 新聞稿 https://www.ftc.gov/news-events/news/press-releases（F2 第二階段候選提前試行，程式讀取皆 403，管理者 2026-10-19 決定自 10/22 起列入；網址於第一次瀏覽時確認） |
+| 每週四列入「請管理者用瀏覽器處理」的政策列表掃描 | OECD、美國教育部、歐盟 European Education Area、紐西蘭教育部、新加坡教育部、法國國民教育部、阿聯酋教育部；澳洲教育部新聞室、澳洲教育部長新聞、eSafety（2026-10-17、10-18 兩天程式皆無回應，管理者 2026-10-18 決定改列瀏覽器清單）；英國 NEU（全國教育工會）新聞稿的「Artificial intelligence」主題篩選頁 https://neu.org.uk/latest/press-releases?topic[679]=679（2026-10-19 全站 3 則，只看有無新項目）、美國 FTC 新聞稿 https://www.ftc.gov/news-events/news/press-releases（量大，三週約 20 則，多為競爭與消費詐欺案；只看標題含 AI、children、teens、students、schools 者）（F2 第二階段候選提前試行，程式讀取皆 403，管理者 2026-10-19 決定自 10/22 起列入；2026-10-19 管理者以瀏覽器確認網址可用） |
 
 每個新來源在每日查核紀錄記查詢狀態與命中數。命中的項目照既有規則判 AI 素養範圍與對象、核首發日，不因來源是新加的而放寬。
 
