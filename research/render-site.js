@@ -217,17 +217,16 @@ const WEEKLY_TW_NOTE_MAX=2,WEEKLY_TW_COMPARE_MAX=3;
 /* 風險關切與政策調整 (manager decision 2026-10-19, plan F2): marked items of this issue, listed between the
    briefs and the background; each line is built from the item's fields so the section carries no editorial verbs. */
 const CAUTION_FROM_PERIOD="2026-10-16",CAUTION_HEADING="風險關切與政策調整";
-const CAUTION_INTRO="這裡收的是國外機構公開表達的擔憂，或已經調整的政策做法；是否適用於臺灣，本刊不判斷。本段每一則都由管理者逐則確認摘錄與分類；這是本刊依監測範圍收到的項目，不是完整蒐集（收錄條件見<a href=\"../../about/#caution\">查核方法</a>）。";
+const CAUTION_INTRO="這裡收的是國外機構或研究者公開表達的擔憂，或已經調整的政策做法；是否適用於臺灣，本刊不判斷。本段每一則都由管理者逐則確認摘錄與分類；這是本刊依監測範圍收到的項目，不是完整蒐集（收錄條件見<a href=\"../../about/#caution\">查核方法</a>）。";
 const CAUTION_LABEL={policy_change:"政策調整",warning:"風險關切・警示",investigation:"風險關切・調查",statement:"風險關切・聲明",risk_research:"風險相關研究"};
 const CAUTION_DIRECTION={tighten:"收緊",loosen:"放寬",other:"其他"};
 const cautionWho=c=>{const d=Array.isArray(c.ai_lit_dims)?c.ai_lit_dims:[],w=[];if(d.some(x=>x.startsWith("S-")))w.push("學生");if(d.some(x=>x.startsWith("T-")))w.push("教師");if(c.audience==="other_stakeholders")w.push("家長與行政");return w.length?w.join("、"):"中小學"};
 function weeklyCaution(claims,n){
  const order=["featured","briefs","late"],marked=order.flatMap(k=>claims.filter(c=>c.weekly_section===k&&c.caution_kind));
- const main=claims.filter(c=>c.weekly_section==="featured"||c.weekly_section==="briefs").length,cnt=f=>marked.filter(f).length;
- const late=cnt(c=>c.weekly_section==="late");
- const tally="本期刊出 "+main+" 則（依本刊監測範圍，不代表各國分布），其中風險關切 "+cnt(c=>["warning","investigation","statement"].includes(c.caution_kind))+" 則、政策調整 "+cnt(c=>c.caution_kind==="policy_change")+" 則、風險相關研究 "+cnt(c=>c.caution_kind==="risk_research")+" 則"+(late?"（含上期補登 "+late+" 則）":"")+"。";
+ const all=claims.filter(c=>order.includes(c.weekly_section)).length,late=claims.filter(c=>c.weekly_section==="late").length,cnt=f=>marked.filter(f).length;
+ const tally="本期刊出 "+all+" 則"+(late?"（含上期補登 "+late+" 則）":"")+"，依本刊監測範圍，不代表各國分布；其中風險關切 "+cnt(c=>["warning","investigation","statement"].includes(c.caution_kind))+" 則、政策調整 "+cnt(c=>c.caution_kind==="policy_change")+" 則、風險相關研究 "+cnt(c=>c.caution_kind==="risk_research")+" 則。";
  const line=c=>{
-  const num=n.get(c.claim_id),ref=/^\d+$/.test(num)?"第 "+link(num)+" 則":link(num);
+  const num=n.get(c.claim_id),ref='<a href="#'+anchor(num)+'">'+(/^\d+$/.test(num)?"第 "+num+" 則":num)+"</a>";
   const label=CAUTION_LABEL[c.caution_kind]+(c.caution_kind==="policy_change"?"（"+CAUTION_DIRECTION[c.caution_direction]+"）":"");
   const said=c.caution_kind==="risk_research"?"，作者報告：":"，文中表示：";
   return "<li>"+ref+"｜"+label+"｜〔"+cautionWho(c)+"〕"+esc(c.source_organization)+"於 "+esc(c.first_disclosed_on)+" 發布〈"+esc(itemTitle(c))+"〉"+said+"「"+esc(c.caution_excerpt_zh)+"」（"+esc(c.caution_locator)+"）<br><small>原文："+esc(c.caution_excerpt)+(c.caution_prior_url?'｜<a href="'+esc(c.caution_prior_url)+'">前一版政策</a>':"")+"</small></li>";

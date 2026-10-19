@@ -659,6 +659,8 @@ function validate(root){
    const weeklyKeys=keysOf(p,(ch,c)=>ch==="weekly"&&["featured","briefs","late"].includes(c.weekly_section));
    for(const c of data)if(c&&c.weekly_section==="late")for(const k of sourceKeys(c))if(weeklyKeys.has(k))errors.push(q+" "+c.claim_id+": late item already in "+weeklyKeys.get(k));
   }
+  // Caution marks (plan F2) live on weekly items only, until the monthly carries them.
+  if(!p.startsWith("weekly/"))for(const c of data)if(c&&[...CAUTION_FIELDS,"caution_direction","caution_prior_url"].some(f=>c[f]!==undefined))errors.push(q+" "+c.claim_id+": caution marks belong to weekly items only");
   if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data,p.split("/")[1],{dailyClaims:dailyClaims(),issue,root}).map(e=>q+" "+e));
   if(issue.taiwan_not_searched!==undefined&&(issue.taiwan_not_searched!==true||!p.startsWith("weekly/")))errors.push(p+": taiwan_not_searched must be true on a weekly edition");
   if(issue.revised_on!==undefined&&daily&&!(isoDate(issue.revised_on)&&issueDate&&issue.revised_on>=issueDate))errors.push(p+": daily revised_on must be a real date on or after the issue date");

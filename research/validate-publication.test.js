@@ -1100,7 +1100,7 @@ test('caution marks (plan F2): renderer section passes; incomplete, unsupported 
  const empty=weeklyAt(d,'2026-10-16_10-22',[featuredNew,pol]);assert.deepEqual(empty.result.errors,[]);
  assert.ok(empty.html.includes('<section id="sec-caution"><h2>風險關切與政策調整</h2>')&&empty.html.includes('<p>本期未見符合條件的項目。</p>'),'an empty section stays, saying none was found');
  const ok=weeklyAt(d,'2026-10-16_10-22',[{...featuredNew,...mark,caution_kind:'risk_research'},{...pol,...mark}]);assert.deepEqual(ok.result.errors,[]);
- for(const s of ['<a href="#sec-caution">風險關切與政策調整（2）</a>','其中風險關切 1 則、政策調整 0 則、風險相關研究 1 則。','｜風險關切・警示｜〔教師〕X於 2026-10-17 發布〈','，文中表示：「發布一份不具拘束力的建議」（首段）<br><small>原文：published a nonbinding advisory</small>','｜風險相關研究｜','，作者報告：'])assert.ok(ok.html.includes(s),s);
+ for(const s of ['<a href="#sec-caution">風險關切與政策調整（2）</a>','其中風險關切 1 則、政策調整 0 則、風險相關研究 1 則。','｜風險關切・警示｜〔教師〕X於 2026-10-17 發布〈','，文中表示：「發布一份不具拘束力的建議」（首段）<br><small>原文：published a nonbinding advisory</small>','｜風險相關研究｜','，作者報告：','本期刊出 2 則，依本刊監測範圍，不代表各國分布；其中','<a href="#item-1">第 1 則</a>｜'])assert.ok(ok.html.includes(s),s);
  const pc=weeklyAt(d,'2026-10-16_10-22',[featuredNew,{...pol,...mark,caution_kind:'policy_change',caution_direction:'loosen',caution_prior_url:'https://example.org/prior'}]);
  assert.deepEqual(pc.result.errors,[]);assert.ok(pc.html.includes('｜政策調整（放寬）｜')&&pc.html.includes('<a href="https://example.org/prior">前一版政策</a>'));
  const bad={
@@ -1122,4 +1122,6 @@ test('caution marks (plan F2): renderer section passes; incomplete, unsupported 
  assert.ok(weeklyAt(early,'2026-10-09_10-15',[{...featured,...mark}]).result.errors.some(x=>x.includes('caution marks start with')),'earlier issues carry no marks');
  const f=setup();t.after(()=>fs.rmSync(f,{recursive:true,force:true}));
  assert.equal(weeklyAt(f,'2026-10-16_10-22',[featuredNew,{...pol,...mark}],h=>h.replace('文中表示','文中警告')).result.ok,false,'the line text comes only from the renderer');
+ const g=setup();t.after(()=>fs.rmSync(g,{recursive:true,force:true}));dailyFixture(g,{...dailyLow,...mark});
+ assert.ok(validate(g).errors.some(x=>x.includes('caution marks belong to weekly items only')),'a daily item carries no mark');
 });
