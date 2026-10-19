@@ -30,27 +30,29 @@
 |---|---|
 | 每日程式查 | Eurydice 新聞 |
 | 每週四程式查 | 德國 KMK、芬蘭 EDUFI、TeachAI 各州 AI 指引追蹤（快照存 `research/drafts/policy-tracker-snapshots/`，比對差異，新項目再到州教育廳原頁核首發日）、愛沙尼亞 RSS、印度 PIB RSS（未實測，讀不到就移到下一列） |
-| 每週四列入「請管理者用瀏覽器處理」的政策列表掃描 | OECD、美國教育部、歐盟 European Education Area、紐西蘭教育部、新加坡教育部、法國國民教育部、阿聯酋教育部；澳洲教育部新聞室、澳洲教育部長新聞、eSafety（2026-10-17、10-18 兩天程式皆無回應，管理者 2026-10-18 決定改列瀏覽器清單）；英國 ICO 新聞與部落格、捷克教育部新聞稿（F2 來源；2026-10-19 試跑靜態頁沒有列表內容，管理者 2026-10-19 決定改列瀏覽器清單）；英國 NEU（全國教育工會）新聞稿 https://neu.org.uk/press-releases、美國 FTC 新聞稿 https://www.ftc.gov/news-events/news/press-releases（F2 第二階段候選提前試行，程式讀取皆 403，管理者 2026-10-19 決定自 10/22 起列入；網址於第一次瀏覽時確認） |
+| 每週四列入「請管理者用瀏覽器處理」的政策列表掃描 | OECD、美國教育部、歐盟 European Education Area、紐西蘭教育部、新加坡教育部、法國國民教育部、阿聯酋教育部；澳洲教育部新聞室、澳洲教育部長新聞、eSafety（2026-10-17、10-18 兩天程式皆無回應，管理者 2026-10-18 決定改列瀏覽器清單）；英國 NEU（全國教育工會）新聞稿 https://neu.org.uk/press-releases、美國 FTC 新聞稿 https://www.ftc.gov/news-events/news/press-releases（F2 第二階段候選提前試行，程式讀取皆 403，管理者 2026-10-19 決定自 10/22 起列入；網址於第一次瀏覽時確認） |
 
 每個新來源在每日查核紀錄記查詢狀態與命中數。命中的項目照既有規則判 AI 素養範圍與對象、核首發日，不因來源是新加的而放寬。
 
 ## 風險關切與政策調整來源（管理者 2026-10-19 決定 F2）
 
-第一階段（2026-10-23 週起，每週四讀取，試行；表中 ICO 與捷克教育部由管理者以瀏覽器瀏覽，其餘由程式讀取；10/23、10/30 週報出刊前檢查回報各來源命中數與耗時）。命中項目照每日短訊規則處理（A／B 範圍、中小學對象、7 天內首次公開、原文、快照、兩輪對照），先發每日短訊，進週報時再由編輯 session 判斷是否加「風險關切與政策調整」標記。2026-10-19 以預設 curl 各讀一次（不改 User-Agent、不繞過 403）的結果：
+第一階段（2026-10-23 週起，每週四讀取，試行；全部由程式讀取，其中 ICO 與捷克教育部用無頭瀏覽器讀取（見下方說明）；10/23、10/30 週報出刊前檢查回報各來源命中數與耗時）。命中項目照每日短訊規則處理（A／B 範圍、中小學對象、7 天內首次公開、原文、快照、兩輪對照），先發每日短訊，進週報時再由編輯 session 判斷是否加「風險關切與政策調整」標記。2026-10-19 以預設 curl 各讀一次（不改 User-Agent、不繞過 403）的結果：
 
 | 類別 | 來源 | 網址 | 2026-10-19 讀取 |
 |---|---|---|---|
 | 國際組織 | UNICEF 新聞稿 | https://www.unicef.org/press-releases | 200，列表可見日期 |
 | 國際組織 | Education International 新聞 | https://www.ei-ie.org/en/news | 200，列表可見日期 |
-| 監管機關 | 英國 ICO 新聞與部落格 | https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/ | 200，但靜態頁沒有列表內容（由網頁程式載入）；2026-10-19 起改由管理者每週四以瀏覽器瀏覽 |
+| 監管機關 | 英國 ICO 新聞與部落格 | https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/ | 200，但靜態頁沒有列表內容（由網頁程式載入）；改用無頭瀏覽器讀取，2026-10-19 試讀可見列表與日期（如「14 October 2026, News」） |
 | 監管機關 | 法國 CNIL 新聞 | https://www.cnil.fr/fr/actualites | 200，列表可見日期 |
 | 教師團體 | 美國 NEA 新聞稿 | https://www.nea.org/about-nea/media-center/press-releases | 200，列表可見日期 |
 | 智庫 | Ada Lovelace Institute 新聞 | https://www.adalovelaceinstitute.org/news/ | 200，列表可見日期 |
 | 國家 | 瑞典國家教育署（Skolverket）新聞稿 | https://www.skolverket.se/om-oss/press/pressmeddelanden | 200，列表可見日期 |
 | 國家 | 西班牙教育部新聞 | https://www.educacionfpydeportes.gob.es/prensa/actualidad.html | 200，列表可見日期 |
 | 國家 | 西班牙 INTEF 新聞 | https://intef.es/noticias/ | 200；列表不顯示日期，日期取各篇頁面的 datePublished（例：2026-09-23T06:50:44+00:00）。原 RSS（https://intef.es/feed/）最新項目停在 2026-01-08，2026-10-19 起改讀新聞頁 |
-| 國家 | 捷克教育部新聞稿 | https://msmt.gov.cz/ministerstvo/novinar/tiskove-zpravy | 200，但回傳網頁程式錯誤殼頁，沒有列表；2026-10-19 起改由管理者每週四以瀏覽器瀏覽 |
+| 國家 | 捷克教育部新聞稿 | https://msmt.gov.cz/ministerstvo/novinar/tiskove-zpravy | 200，但 curl 只拿到網頁程式錯誤殼頁；改用無頭瀏覽器讀取，2026-10-19 試讀可見列表與日期（如「Středa, 19. srpen 2026」） |
 | 國家 | 南非基礎教育部新聞稿 | https://www.education.gov.za/Newsroom/MediaReleases.aspx | 200，列表可見日期 |
+
+**無頭瀏覽器讀取（管理者 2026-10-19 決定）：**ICO 與捷克教育部的列表要等網頁程式載入才出現。每日短訊 session 用環境內建的 Playwright 與 Chromium（`require('/opt/node22/lib/node_modules/playwright')`）開頁，等網路閒置後再等 3 秒，讀 `document.body.innerText`；不改 User-Agent、不登入、不點同意 cookie 以外的按鈕。這只用於回應 200、內容由網頁程式載入的網站；回 403 的網站（如 NEU、FTC）不得用無頭瀏覽器繞過，仍列瀏覽器清單。
 
 第二階段候選（第一階段試行一個月後由管理者決定；程式讀不到者列入週四瀏覽器清單，每週約多 20–30 分鐘）：
 
