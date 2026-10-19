@@ -283,3 +283,6 @@ p[data-claim-kind][id]:target{outline:3px solid #ffb629;outline-offset:2px}
 .pub-card strong{display:block;font-size:18px;margin-bottom:2px}
 .pub-card span{display:block;font-size:15px;line-height:1.5;color:#e3eefb}
 @media (max-width:700px){.hero{padding:26px 0 24px}.hero h1{font-size:34px;margin:8px 0 10px}.hero .subtitle{font-size:19px;margin:0 0 6px}.pub-cards{grid-template-columns:1fr;gap:8px;margin-top:12px}.pub-card{padding:8px 12px}.pub-card strong{display:inline;font-size:16px;margin-right:6px}.pub-card span{display:inline;font-size:14px}}
+#sec-caution{border-left:4px solid #8a6d3b;padding-left:14px}
+#sec-caution li{margin-bottom:10px}
+#sec-caution li small{display:inline-block;font-size:14px;color:var(--muted);margin-top:2px;word-break:break-word}

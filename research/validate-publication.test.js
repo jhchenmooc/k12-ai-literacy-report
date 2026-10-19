@@ -1093,3 +1093,33 @@ test('foreign agency named in the text carries its country (manager 2026-10-17)'
  const f=setup();t.after(()=>fs.rmSync(f,{recursive:true,force:true}));
  assert.deepEqual(weeklyFull(f,[pol('要求各級教育部門與學校辦理培訓。'),brief]).errors,[],'教育部門 is not an agency name');
 });
+test('caution marks (plan F2): renderer section passes; incomplete, unsupported or misplaced marks are refused',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const pol={...featured,claim_id:'F2',source_organization:'X',first_disclosed_on:'2026-10-17',publication_date:'2026-10-17',source_country:'GB',claim_text:'來源機構：X；資料標題：Y；來源刊登日：2026-10-17。內容：合成政策。'};
+ const mark={caution_kind:'warning',caution_excerpt:'published a nonbinding advisory',caution_excerpt_zh:'發布一份不具拘束力的建議',caution_locator:'首段',caution_confirmed_on:'2026-10-20'};
+ const empty=weeklyAt(d,'2026-10-16_10-22',[featuredNew,pol]);assert.deepEqual(empty.result.errors,[]);
+ assert.ok(empty.html.includes('<section id="sec-caution"><h2>風險關切與政策調整</h2>')&&empty.html.includes('<p>本期未見符合條件的項目。</p>'),'an empty section stays, saying none was found');
+ const ok=weeklyAt(d,'2026-10-16_10-22',[{...featuredNew,...mark,caution_kind:'risk_research'},{...pol,...mark}]);assert.deepEqual(ok.result.errors,[]);
+ for(const s of ['<a href="#sec-caution">風險關切與政策調整（2）</a>','其中風險關切 1 則、政策調整 0 則、風險相關研究 1 則。','｜風險關切・警示｜〔教師〕X於 2026-10-17 發布〈','，文中表示：「發布一份不具拘束力的建議」（首段）<br><small>原文：published a nonbinding advisory</small>','｜風險相關研究｜','，作者報告：'])assert.ok(ok.html.includes(s),s);
+ const pc=weeklyAt(d,'2026-10-16_10-22',[featuredNew,{...pol,...mark,caution_kind:'policy_change',caution_direction:'loosen',caution_prior_url:'https://example.org/prior'}]);
+ assert.deepEqual(pc.result.errors,[]);assert.ok(pc.html.includes('｜政策調整（放寬）｜')&&pc.html.includes('<a href="https://example.org/prior">前一版政策</a>'));
+ const bad={
+  'missing field':[{...pol,...mark,caution_locator:undefined}],
+  'excerpt not in snapshot':[{...pol,...mark,caution_excerpt:'words that the snapshot never contains'}],
+  'risk_research on a policy item':[{...pol,...mark,caution_kind:'risk_research'}],
+  'warning on a research item':[{...featuredNew,...mark}],
+  'policy_change without direction':[{...pol,...mark,caution_kind:'policy_change'}],
+  'direction on a warning':[{...pol,...mark,caution_direction:'tighten'}],
+  'locator outside title, abstract or first paragraph':[{...pol,...mark,caution_locator:'第 5 頁'}],
+  'unknown kind':[{...pol,...mark,caution_kind:'opinion'}],
+  'confirmed before checked':[{...pol,...mark,caution_confirmed_on:'2026-10-01'}],
+  'translation too long':[{...pol,...mark,caution_excerpt_zh:'譯'.repeat(61)}]};
+ for(const [name,extra] of Object.entries(bad)){
+  const e=setup();t.after(()=>fs.rmSync(e,{recursive:true,force:true}));
+  assert.equal(weeklyAt(e,'2026-10-16_10-22',[featuredNew,...extra]).result.ok,false,name);
+ }
+ const early=setup();t.after(()=>fs.rmSync(early,{recursive:true,force:true}));
+ assert.ok(weeklyAt(early,'2026-10-09_10-15',[{...featured,...mark}]).result.errors.some(x=>x.includes('caution marks start with')),'earlier issues carry no marks');
+ const f=setup();t.after(()=>fs.rmSync(f,{recursive:true,force:true}));
+ assert.equal(weeklyAt(f,'2026-10-16_10-22',[featuredNew,{...pol,...mark}],h=>h.replace('文中表示','文中警告')).result.ok,false,'the line text comes only from the renderer');
+});
