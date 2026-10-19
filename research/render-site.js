@@ -700,7 +700,7 @@ function renderAbout(){
   '<section class="info" style="margin-top:20px" id="scope"><h2>監測範圍</h2><p>本刊只定期檢查下列來源；不在清單上的來源不會每天檢查，所以本刊不是全收。讀不到的網站只寫「搜尋未見」。清單會調整，變更記在 GitHub。</p><ul>'+
   '<li><strong>國際政策（每日）</strong>：英國 GOV.UK、美國聯邦公報、日本文部科學省、中國教育部、香港特區政府新聞公報、韓國教育部、韓國教育課程評價院（KICE）、韓國教育學術資訊院（KERIS）、UNESCO；Eurydice（試行）</li>'+
   '<li><strong>國際政策（每週）</strong>：德國各邦文化部長會議（KMK）、芬蘭國家教育署（EDUFI）、TeachAI 美國各州 AI 指引追蹤、愛沙尼亞教育研究部、印度新聞局教育部新聞（試行）；程式讀不到的 OECD、美國教育部、歐盟、紐西蘭、新加坡、法國、阿聯酋與澳洲教育部（含澳洲 eSafety），由管理者每週以瀏覽器瀏覽</li>'+
-  '<li><strong>國際組織、監管機關與團體（每週，試行）</strong>：UNICEF、Education International、英國資訊委員辦公室（ICO）、法國國家資訊與自由委員會（CNIL）、美國全國教育協會（NEA）、Ada Lovelace Institute；以及瑞典國家教育署、西班牙教育部與國家教育科技研究所（INTEF）、捷克教育部、南非基礎教育部、英國全國教育工會（NEU）、美國聯邦貿易委員會（FTC）（其中 ICO、捷克教育部、NEU、FTC 由管理者以瀏覽器瀏覽）</li>'+
+  '<li><strong>國際組織、監管機關與團體（每週，試行）</strong>：UNICEF、Education International、英國資訊委員辦公室（ICO）、法國國家資訊與自由委員會（CNIL）、美國全國教育協會（NEA）、Ada Lovelace Institute；以及瑞典國家教育署、西班牙教育部與國家教育科技研究所（INTEF）、捷克教育部、南非基礎教育部、英國全國教育工會（NEU）、美國聯邦貿易委員會（FTC）（其中 NEU、FTC 由管理者以瀏覽器瀏覽）</li>'+
   '<li><strong>研究</strong>：arXiv 預印本、Crossref 前一日新登記的論文，以及期刊 50 種與國際會議 21 個系列（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/blob/main/research/venue-watchlist.md">完整清單</a>）</li>'+
   '<li><strong>臺灣（每日）</strong>：教育部即時新聞與資訊及科技教育司、師資培育及藝術教育司、學生事務及特殊教育司、國教署、行政院公報與新聞、國科會、數位發展部</li>'+
   '<li><strong>臺灣（每週）</strong>：教育部主管法規、國家教育研究院、國科會人工智慧基本法專頁、OpenAlex（臺灣機構論文）、《教育科學研究期刊》《教育研究集刊》《當代教育研究季刊》</li></ul></section>'+
