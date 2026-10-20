@@ -3,6 +3,16 @@
   "note": "更正與改版紀錄（第二次三刊聯合評審 E3e，管理者 2026-10-17）。每筆列出舊說法、新說法、日期與原因；頁面 corrections/index.html 由 research/render-site.js 依本檔產生。",
   "entries": [
     {
+      "id": "daily-2026-10-20-r1",
+      "date": "2026-10-20",
+      "path": "daily/2026-10-20/",
+      "target": "每日短訊 2026-10-20",
+      "type": "補登與補齊",
+      "old": "1 則：D20261020-01 只以書目型發布（摘要只讀到 Crossref 版）；J07 AIgnite 一篇因讀不到摘要、無法確認對象而未發；Advances in Human-Computer Interaction 一篇因出處不在監測清單而列觀察。",
+      "new": "D20261020-01 依出版者 PDF 改為作者摘要歸屬型；補登 D20261020-02（AIgnite，國小四至六年級 AI 素養教具）與 D20261020-03（中國中小學教師停止使用生成式 AI 意圖的問卷研究），皆為作者摘要歸屬型。",
+      "reason": "管理者當日提供三篇的出版者 PDF，並同意收錄 Advances in Human-Computer Interaction；摘要與研究對象可核對，三則首次公開日皆在本期前 7 天內。"
+    },
+    {
       "id": "weekly-2026-10-09_10-15-r3",
       "date": "2026-10-17",
       "path": "weekly/2026-10-09_10-15/",
