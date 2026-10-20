@@ -222,6 +222,7 @@ const CAUTION_INTRO="這裡收的是國外機構、團體或研究者公開表�
    only in this section, in the weekly (weekly_section "reflection") and the monthly (section "reflection"). The whole
    line is built from the item's fields and must equal its claim_text, so the section carries no editorial verbs. */
 const REFLECT_TYPES={commentary:"專家評論（非研究、非政策）",statement:"團體聲明",report:"報告風險段落",official:"官方文件風險段落",research:"風險相關研究",oversight:"監管或國會報告"};
+const REFLECT_ORDER=["政策調整","官方警示","監管或國會調查","監管或國會報告","團體聲明","專家評論","官方文件風險段落","報告風險段落","風險相關研究"];
 const REFLECT_MIXED="（原文同時談機會與風險；此處只摘風險段落）",REFLECT_WEEKLY_MAX=5,REFLECT_MONTHLY_MAX=8,REFLECT_MONTHLY_FROM="2026-10";
 // The October 2026 issue also carries the September look-back, so it may list up to 12 (manager 2026-10-20, option A).
 const reflectMonthlyMax=period=>({"2026-10":12})[period]||REFLECT_MONTHLY_MAX;
@@ -234,20 +235,23 @@ function reflectionParts(c,x=esc){
 /* The text a reflection item's claim_text must equal (the rendered line without markup). */
 const reflectionText=c=>{const x=reflectionParts(c,v=>String(v??""));return x.head+x.title+x.tail+"原文："+x.excerpt};
 const reflectionItem=(c,n)=>{const x=reflectionParts(c);return '<li id="'+anchor(n.get(c.claim_id))+'" data-claim-id="'+esc(c.claim_id)+'">'+x.head+'<a href="'+esc(c.source_url)+'">'+x.title+"</a>"+x.tail+"<br><small>原文："+x.excerpt+"</small></li>"};
-const CAUTION_LABEL={policy_change:"政策調整",warning:"風險關切・警示",investigation:"風險關切・調查",statement:"風險關切・聲明",risk_research:"風險相關研究"};
+// One set of labels for marked items and reflection items (manager 2026-10-20).
+const CAUTION_LABEL={policy_change:"政策調整",warning:"官方警示",investigation:"監管或國會調查",statement:"團體聲明",risk_research:"風險相關研究"};
 const CAUTION_DIRECTION={tighten:"收緊",loosen:"放寬",other:"其他"};
 const cautionWho=c=>{const d=Array.isArray(c.ai_lit_dims)?c.ai_lit_dims:[],w=[];if(d.some(x=>x.startsWith("S-")))w.push("學生");if(d.some(x=>x.startsWith("T-")))w.push("教師");if(c.audience==="other_stakeholders")w.push("家長與行政");return w.length?w.join("、"):"中小學"};
 function weeklyCaution(claims,n){
  const order=["featured","briefs","late"],marked=order.flatMap(k=>claims.filter(c=>c.weekly_section===k&&c.caution_kind));
  const all=claims.filter(c=>order.includes(c.weekly_section)).length,late=claims.filter(c=>c.weekly_section==="late").length,cnt=f=>marked.filter(f).length;
- const tally="本期刊出 "+all+" 則"+(late?"（含上期補登 "+late+" 則）":"")+"，依本刊監測範圍，不代表各國分布；其中風險關切 "+cnt(c=>["warning","investigation","statement"].includes(c.caution_kind))+" 則、政策調整 "+cnt(c=>c.caution_kind==="policy_change")+" 則、風險相關研究 "+cnt(c=>c.caution_kind==="risk_research")+" 則。";
+ const extra=claims.filter(c=>c.weekly_section==="reflection"),labels=[...marked.map(c=>CAUTION_LABEL[c.caution_kind]),...extra.map(c=>REFLECT_TYPES[c.reflect_type])].map(x=>String(x).replace(/（.*$/,""));
+ const kinds=REFLECT_ORDER.filter(x=>labels.includes(x)).map(x=>x+" "+labels.filter(y=>y===x).length+" 則");
+ const tally="本期刊出 "+all+" 則"+(late?"（含上期補登 "+late+" 則）":"")+"，依本刊監測範圍，不代表各國分布；本段列 "+labels.length+" 則"+(kinds.length?"："+kinds.join("、"):"")+"。";
  const line=c=>{
   const num=n.get(c.claim_id),ref='<a href="#'+anchor(num)+'">'+(/^\d+$/.test(num)?"第 "+num+" 則":num)+"</a>";
   const label=CAUTION_LABEL[c.caution_kind]+(c.caution_kind==="policy_change"?"（"+CAUTION_DIRECTION[c.caution_direction]+"）":"");
   const said=c.caution_kind==="risk_research"?"，作者報告：":"，文中表示：";
   return "<li>"+ref+"｜"+label+"｜〔"+cautionWho(c)+"〕"+esc(c.source_organization)+"於 "+esc(c.first_disclosed_on)+" 發布〈"+esc(itemTitle(c))+"〉"+said+"「"+esc(c.caution_excerpt_zh)+"」（"+esc(c.caution_locator)+"）<br><small>原文："+esc(c.caution_excerpt)+(c.caution_prior_url?'｜<a href="'+esc(c.caution_prior_url)+'">前一版政策</a>':"")+"</small></li>";
  };
- const extra=claims.filter(c=>c.weekly_section==="reflection"),more=extra.length?"另選錄專家評論、團體聲明與報告等 "+extra.length+" 則。":"";
+ const more="";
  const body=marked.length||extra.length?"<ul>"+marked.map(line).join("")+extra.map(c=>reflectionItem(c,n)).join("")+"</ul>":"<p>本期未見符合條件的項目。</p>";
  return {count:marked.length+extra.length,html:'<section id="sec-caution"><h2>'+CAUTION_HEADING+"</h2><p>"+CAUTION_INTRO+"</p><p>"+tally+more+"</p>"+body+"</section>"};
 }
@@ -713,7 +717,7 @@ function renderAbout(){
   '<section class="notice" style="margin-top:28px"><h2>我們不宣稱的事</h2><ul><li>同一個 AI 模型的多次查核彼此一致，不等於獨立真人審閱。</li><li>網站部署成功不等於內容已獲認證。</li><li>創刊特刊與 2026 年 9 月月報為早期版本，未經獨立認證，保留公開更正紀錄。</li><li>讀不到的官方或出版社網站，只能寫「搜尋未見」，不能寫「沒有發布」。</li></ul></section>'+
   '<section class="info" style="margin-top:20px" id="glossary"><h2>用語說明</h2><ul><li><strong>首次公開</strong>：來源第一次公開的日期（出版社上線日、官方頁面日期），不是活動日或生效日；各則內文中的「來源刊登日」即本刊判定的首次公開日</li><li><strong>預印本</strong>：作者自行公開、尚未經期刊同儕審查的論文版本，結論可能在正式刊出前修改</li><li><strong>同儕審查論文</strong>：經期刊審稿後刊出的論文；同儕審查不保證結論正確</li><li><strong>準實驗</strong>：有比較組但未隨機分派的研究設計，不能直接推論因果</li><li><strong>橫斷研究</strong>：只在一個時間點蒐集資料，看得到變項間的關聯，看不出先後與因果</li><li><strong>量表發展與驗證（EFA／CFA）</strong>：編製問卷並以探索性、驗證性因素分析檢查題目結構；「適配良好」指統計模型與資料相符，不代表量表適用於所有族群</li><li><strong>科技接受模式（TAM／UTAUT）</strong>：解釋人們是否願意使用新科技的常用理論，研究多以問卷測量使用意願</li><li><strong>作者摘要報告／官方文件表示</strong>：本刊轉述原文摘要或官方原文，不是本刊的判斷</li><li><strong>編輯歸納</strong>：本刊依已列項目整理的句子，AI 整理、未經真人審閱，每句附依據編號</li><li><strong>來源含機構自述成效</strong>：官方新聞稿裡有機構自己說的成果；本刊不轉述這類說法，標示只是提醒讀者原文含有，且不是同儕審查研究的結論</li><li><strong>已通過自動檢查（非內容認證）</strong>：頁面、日期、來源與用語通過程式檢查，不代表內容經真人或專家認證</li><li><strong>「#」標籤</strong>：由 AI 依原文判讀，未經人工核對。第一個標籤是對象（#中小學、#家長行政）；<strong>#AI素養核心</strong>表示內容以師生的 AI 素養本身為主題，<strong>#AI工具應用</strong>表示用 AI 工具教或學其他科目；其餘標籤對應教育部《臺灣中小學教師與學生AI素養框架》的學生與教師各 4 個面向（如 #學生AI倫理、#教師AI賦能教學）</li><li><strong>臺灣 1、對照 1、背景 1、補 1</strong>：週報與月報中臺灣本週動態、臺灣對照、背景補充與上期補登的項目編號，和國際「第 n 則」分開編</li><li><strong>原文摘錄（快照）</strong>：本刊保存的是原文中與內容相關的段落摘錄及其雜湊值（SHA-256），用來確認摘錄後來沒有被改動；不是原文全文，完整內容請以原文連結為準</li></ul></section>'+
     '<section class="info" style="margin-top:20px" id="caution"><h2>「國外反思選讀」的收錄條件</h2><p>週報自 2026/10/16—10/22 期起、月報自 2026 年 10 月號起設此段，選錄國外機構、團體或研究者公開表達的擔憂與批評，以及已調整的政策做法。本刊只轉述，不評斷，也不判斷是否適用於臺灣。</p><ul>'+
-  '<li><strong>週報</strong>：本期已收錄的國際項目中，標題、摘要或首段把風險或政策調整寫成主要目的者（政策調整、風險關切、風險相關研究），另加本期新發表的專家評論、團體聲明與報告，至多 5 則</li>'+
+  '<li><strong>週報</strong>：本期已收錄的國際項目中，標題、摘要或首段把風險或政策調整寫成主要目的者（政策調整、官方警示、監管或國會調查、團體聲明、風險相關研究），另加本期新發表的專家評論、團體聲明與報告，至多 5 則</li>'+
   '<li><strong>月報</strong>：當月與上月首次公開的項目，至多 8 則（2026 年 10 月號另補 9 月回溯，至多 12 則）；同一機構至多 2 則，已在先前月報選錄者不重複</li>'+
   '<li><strong>專家評論</strong>：有具名作者，發表在國際組織、工會、智庫、大學或政府機關網站，以批判、風險或限制為主旨；不收報紙投書、個人部落格與匿名評論</li>'+
   '<li><strong>團體聲明</strong>：教師、家長、校長或學生團體的正式聲明；與業者聯名發布者可收，並列出所有發布者</li>'+
