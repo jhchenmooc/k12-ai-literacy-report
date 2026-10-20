@@ -23,7 +23,7 @@
 
 ## 邊界（管理者 2026-10-20：業者聯名者可收）
 
-- **AFT、UFT 與 Microsoft 的「National AI Safety & Privacy Standard」**（2026-09-09，https://www.aft.org/press-release/aft-uft-and-microsoft-announce-national-ai-safety-privacy-standard-schools-protect）：依管理者決定可收，類型 statement，發布者列 AFT、UFT、Microsoft。摘錄："HIPAA and FERPA never envisioned the advent of AI," Weingarten said, "and in the absence of those protections, tech companies need to take responsibility for the products they create and market to students, educators and communities."（新聞稿末段）
+- **AFT、UFT 與 Microsoft 的「National AI Safety & Privacy Standard」**（2026-09-09，https://www.aft.org/press-release/aft-uft-and-microsoft-announce-national-ai-safety-privacy-standard-schools-protect）：依管理者決定可收，類型 joint_statement（頁面「聯名聲明（含業者）」，三刊聯合重評第一批），source_organization 以「、」列出美國教師聯合會（AFT）、紐約市教師聯合會（UFT）、Microsoft。摘錄："HIPAA and FERPA never envisioned the advent of AI," Weingarten said, "and in the absence of those protections, tech companies need to take responsibility for the products they create and market to students, educators and communities."（新聞稿末段）
 - UNESCO 教育部長聲明（2026-09-09）：政府聲明、機會與風險並陳，可作 official 風險段落："Crucially, the statement affirms that learning is not served when AI substitutes for human relationships and human judgement."
 - EI Worlds of Education，Sarah Wofford〈Artificial intelligence is here to stay〉（2026-09-28）：主旨為善用 AI，有疑慮清單；不建議。
 - 紐約市 2-K 至 8 年級生成式 AI 暫停一年（2026-09-02）：學區層級，依規則不收。
