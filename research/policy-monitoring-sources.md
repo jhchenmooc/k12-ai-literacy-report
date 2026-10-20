@@ -53,6 +53,22 @@
 
 讀不到、暫不列入（列第二階段候選，不加入瀏覽器清單）：愛爾蘭教育部（403）、英國威爾斯政府（403）、菲律賓教育部（403）、馬來西亞教育部（500）、加拿大安大略省教育部（頁面外殼，無列表）、巴西教育部（無列表與日期）、蘇格蘭 Education Scotland（逾時）、葡萄牙 DGE（列表未見近期日期）。義大利、挪威、荷蘭 OCW、印尼的新聞列表頁網址猜測皆 404，暫讀首頁最新消息區，日後找到列表頁再換。
 
+## 丙：智庫與工會來源（管理者 2026-10-20 決定，週四試行）
+
+供「國外反思選讀」選錄（見 [PUBLICATION-CONTRIBUTING.md](PUBLICATION-CONTRIBUTING.md)「國外反思選讀」）。2026-10-20 回溯讀取皆 200。命中的評論、聲明與報告不受每日短訊 7 天時效限制：本期內首次公開者可列週報；其餘記入 [drafts/reflection-pool.md](drafts/reflection-pool.md)，月報出刊前檢查選錄。自 2026-10-22 起每週四由每日短訊 session 讀取，一個月後由管理者決定去留。
+
+| 類別 | 來源 | 網址 | 讀法與注意 |
+|---|---|---|---|
+| 智庫 | 英國 Education Policy Institute（EPI）出版品 | https://epi.org.uk/publications-and-research/ | curl；列表有完整日期 |
+| 智庫 | 美國 Brookings K-12 教育、教育科技 | https://www.brookings.edu/topics/k-12-education/ 、https://www.brookings.edu/topics/education-technology/ | curl；完整列表由網頁程式載入、無頭瀏覽器也只見 3–4 則精選，可能漏收 |
+| 智庫 | 美國 CRPE 出版品 | https://crpe.org/publications/ | 無頭瀏覽器；單篇頁多只印年月，日期以列表為準並註明 |
+| 工會 | 美國 AFT 新聞稿 | https://www.aft.org/press | curl；日期格式 MM/DD/YY；與業者聯名者可收（管理者 2026-10-20） |
+| 工會 | Education International「Worlds of Education」專欄 | https://www.ei-ie.org/en/worlds-of-education | curl；具名研究者評論 |
+| 國際組織 | UNICEF Innocenti（報告與文章） | https://www.unicef.org/innocenti/ | curl；新聞稿列表只到 10-02，另讀 Innocenti |
+| 國際組織 | UNESCO AI 與教育專頁 | https://www.unesco.org/en/digital-education/artificial-intelligence | 無頭瀏覽器（需點「Load more」） |
+
+讀不到：英國國會教育委員會（403）、OECD（403，已在瀏覽器清單）、UNICEF 數位科技專頁（403）。
+
 ## 風險關切與政策調整來源（管理者 2026-10-19 決定 F2）
 
 第一階段（2026-10-23 週起，每週四讀取，試行；全部由程式讀取，其中 ICO 與捷克教育部用無頭瀏覽器讀取（見下方說明）；10/23、10/30 週報出刊前檢查回報各來源命中數與耗時）。命中項目照每日短訊規則處理（A／B 範圍、中小學對象、7 天內首次公開、原文、快照、兩輪對照），先發每日短訊，進週報時再由編輯 session 判斷是否加「風險關切與政策調整」標記。2026-10-19 以預設 curl 各讀一次（不改 User-Agent、不繞過 403）的結果：

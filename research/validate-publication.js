@@ -131,7 +131,7 @@ function matchBody(document,claims,issueDate,issuePath,issue={}){
   if(node.nodeName==="#comment"||node.nodeName==="#documentType")errors.push("comments/declarations unsupported within main");
   if(node.tagName&&!safeTags.has(node.tagName))errors.push("unsupported HTML tag in main: "+node.tagName);
   if(node.tagName&&node.namespaceURI!==HTML_NS)errors.push("non-HTML namespace unsupported within main");
-  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined)||(a.name==="data-kind"&&node.tagName==="td"&&["policy","research","background","tw"].includes(a.value))||(a.name==="id"&&node.tagName==="tr"&&/^item-(\d+|b\d+|t\d+|c\d+|d\d+|f\d+)$/.test(a.value))||(issuePath.startsWith("weekly/")&&a.name==="id"&&node.tagName==="li"&&/^item-[tp]?\d+$/.test(a.value))||(issuePath.startsWith("weekly/")&&a.name==="data-col"&&node.tagName==="td"&&["num","kind","date","tags","content"].includes(a.value))||(issuePath.startsWith("daily/")&&node.tagName==="p"&&((a.name==="id"&&/^[A-Za-z0-9_-]+$/.test(a.value)&&attr(node,"data-claim-kind")===a.value)||(a.name==="data-claim-links"&&/^[A-Za-z0-9_-]+$/.test(a.value))))||(a.name==="data-region"&&["h2","section"].includes(node.tagName)&&["intl","tw"].includes(a.value))||(a.name==="data-part"&&node.tagName==="section"&&a.value==="overview")||(issuePath.startsWith("weekly/")&&a.name==="id"&&node.tagName==="section"&&/^sec-[a-z_]+$/.test(a.value))||(issuePath.startsWith("monthly/")&&((a.name==="id"&&node.tagName==="section"&&/^sec-[a-z_]+$/.test(a.value))||(a.name==="id"&&node.tagName==="li"&&/^item-l\d+$/.test(a.value))||(a.name==="data-col"&&node.tagName==="td"&&["num","kind","date","audience","tags","content"].includes(a.value)))))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
+  if((node.attrs||[]).some(a=>a.namespace||!(node===main?((a.name==="id"&&a.value==="content")||(a.name==="class"&&a.value==="content")):["data-claim-id","href","datetime","colspan","rowspan","scope"].includes(a.name)||(["data-claim-tags","data-claim-kind"].includes(a.name)&&node.tagName==="p")||(a.name==="data-kind"&&node.tagName==="p"&&attr(node,"data-claim-kind")!==undefined)||(a.name==="data-kind"&&node.tagName==="td"&&["policy","research","background","tw"].includes(a.value))||(a.name==="id"&&node.tagName==="tr"&&/^item-(\d+|b\d+|t\d+|c\d+|d\d+|f\d+)$/.test(a.value))||(issuePath.startsWith("weekly/")&&a.name==="id"&&node.tagName==="li"&&/^item-[tpr]?\d+$/.test(a.value))||(issuePath.startsWith("weekly/")&&a.name==="data-col"&&node.tagName==="td"&&["num","kind","date","tags","content"].includes(a.value))||(issuePath.startsWith("daily/")&&node.tagName==="p"&&((a.name==="id"&&/^[A-Za-z0-9_-]+$/.test(a.value)&&attr(node,"data-claim-kind")===a.value)||(a.name==="data-claim-links"&&/^[A-Za-z0-9_-]+$/.test(a.value))))||(a.name==="data-region"&&["h2","section"].includes(node.tagName)&&["intl","tw"].includes(a.value))||(a.name==="data-part"&&node.tagName==="section"&&a.value==="overview")||(issuePath.startsWith("weekly/")&&a.name==="id"&&node.tagName==="section"&&/^sec-[a-z_]+$/.test(a.value))||(issuePath.startsWith("monthly/")&&((a.name==="id"&&node.tagName==="section"&&/^sec-[a-z_]+$/.test(a.value))||(a.name==="id"&&node.tagName==="li"&&/^item-[lr]\d+$/.test(a.value))||(a.name==="data-col"&&node.tagName==="td"&&["num","kind","date","audience","tags","content"].includes(a.value)))))))errors.push("dynamic/hidden or unsupported HTML attributes within main");
  }
  /* Daily tag line (manager decision 2026-10-11): a plain <p data-claim-tags="ID"> directly after the
     claim's own element, whose text must equal dailyTagText(claim); at most once per claim, daily only. */
@@ -251,8 +251,34 @@ function cautionErrors(c,sec,range,root){
  if(!(isoDate(c.caution_confirmed_on)&&(!isoDate(c.checked_at)||c.caution_confirmed_on>=c.checked_at)))e.push("caution_confirmed_on must be an ISO date not before checked_at");
  return e;
 }
+/* 國外反思選讀 items (manager decision 2026-10-20, plans 甲 and 乙): commentary, statements and risk passages that run
+   only in that section. The quoted original is the claim's original_excerpt (verbatim in the pinned snapshot, checked by
+   sourceTrace); the line is built by the renderer from these fields and must equal claim_text. Taiwan items never. */
+const REFLECT_FIELDS=["reflect_type","reflect_excerpt_zh","reflect_locator","reflect_confirmed_on"];
+const REFLECT_OPTIONAL=["reflect_author","reflect_mixed"];
+function reflectionErrors(c){
+ const e=[],r=require("./render-site.js"),t=c.reflect_type;
+ if(!Object.keys(r.REFLECT_TYPES).includes(t))e.push("reflect_type must be one of "+Object.keys(r.REFLECT_TYPES).join(", "));
+ if((t==="research")!==(c.kind==="research"))e.push("reflect_type research marks a research item, and only research items");
+ const short=(v,max)=>typeof v==="string"&&v.trim().length>0&&v.length<=max&&!/[\r\n<>\p{Cf}]/u.test(v);
+ if(t==="commentary"&&!short(c.reflect_author,120))e.push("expert commentary needs its named author(s) in reflect_author");
+ if(c.reflect_author!==undefined&&!short(c.reflect_author,120))e.push("reflect_author must be a short name");
+ if(!short(c.source_organization,120))e.push("reflection item needs source_organization");
+ if(!(typeof c.source_country==="string"&&(c.source_country==="INTL"||/^[A-Z]{2}(-[A-Z]{3})?$/.test(c.source_country))))e.push("reflection item needs source_country (ISO code or INTL)");
+ if(c.source_country==="TW"||c.region==="tw")e.push("Taiwan items are not listed in 國外反思選讀");
+ if(!short(c.source_title,300))e.push("reflection item needs source_title");
+ if(typeof c.original_excerpt!=="string"||c.original_excerpt.length>300)e.push("reflection original_excerpt must be at most 300 characters");
+ if(!short(c.reflect_excerpt_zh,120))e.push("reflect_excerpt_zh must be 1-120 characters");
+ if(!short(c.reflect_locator,80))e.push("reflect_locator must be 1-80 characters");
+ if(c.reflect_mixed!==undefined&&(c.reflect_mixed!==true||!["report","official","research"].includes(t)))e.push("reflect_mixed is true or absent, and only on report, official or research passages");
+ if(!(isoDate(c.reflect_confirmed_on)&&(!isoDate(c.checked_at)||c.reflect_confirmed_on>=c.checked_at)))e.push("reflect_confirmed_on must be an ISO date not before checked_at");
+ if(!["k12","other_stakeholders"].includes(c.audience))e.push("reflection items concern schools: audience k12 or other_stakeholders");
+ if(!isoDate(c.first_disclosed_on))e.push("reflection item needs a YYYY-MM-DD first_disclosed_on");
+ if(c.claim_text!==r.reflectionText(c))e.push("reflection claim_text must equal the line built from its fields");
+ return e;
+}
 function weeklyStructure(claims,period,ctx={}){
- const errors=[],r=require("./render-site.js"),keys=[...r.WEEKLY_SECTIONS,...r.TW_SECTIONS].map(x=>x[0]),list=claims.filter(c=>c&&typeof c==="object");
+ const errors=[],r=require("./render-site.js"),keys=[...r.WEEKLY_SECTIONS,...r.TW_SECTIONS].map(x=>x[0]).concat("reflection"),list=claims.filter(c=>c&&typeof c==="object");
  // From the 2026-10-16 period, and whenever a Taiwan item is present, a weekly must use the sectioned layout.
  if(!r.weeklySectioned(list)){
   if((r.periodRange("weekly",period)&&String(period)>=r.TW_FROM_PERIOD)||list.some(c=>c.region==="tw"))errors.push("weekly from "+r.TW_FROM_PERIOD+" or with Taiwan items must use weekly_section (Taiwan area required)");
@@ -286,6 +312,11 @@ function weeklyStructure(claims,period,ctx={}){
   if(["featured","briefs","background","taiwan","tw_compare"].includes(sec)){
    if(c.kind==="news_policy"&&!["binding_policy","official_guidance","draft","official_commentary","training_event","speech"].includes(c.source_document_type))errors.push(id+": missing or invalid policy document type");
    if(c.kind==="research"&&!["peer_reviewed_article","preprint"].includes(c.source_document_type))errors.push(id+": missing or invalid research document type");
+  }
+  if(sec==="reflection"){
+   if(!(range.start&&range.start>=r.CAUTION_FROM_PERIOD))errors.push(id+": reflection items start with the "+r.CAUTION_FROM_PERIOD+" weekly");
+   if(range.start&&!(c.first_disclosed_on>=range.start&&c.first_disclosed_on<=range.end))errors.push(id+": weekly reflection item must be first disclosed within the period");
+   errors.push(...reflectionErrors(c).map(e=>id+": "+e));
   }
   if(c.title_zh!==undefined&&typeof c.title_zh==="string"){
    if(/[\u3400-\u9fff]/.test(String(c.source_title))||!/[A-Za-z]/.test(String(c.source_title)))errors.push(id+": title_zh only translates a non-Chinese source title");
@@ -358,6 +389,16 @@ function weeklyStructure(claims,period,ctx={}){
  if(count("background")>r.WEEKLY_BACKGROUND_MAX)errors.push("weekly background items exceed "+r.WEEKLY_BACKGROUND_MAX);
  if(count("tw_note")>r.WEEKLY_TW_NOTE_MAX)errors.push("weekly Taiwan note sentences exceed "+r.WEEKLY_TW_NOTE_MAX);
  if(count("tw_compare")>r.WEEKLY_TW_COMPARE_MAX)errors.push("weekly Taiwan comparison rows exceed "+r.WEEKLY_TW_COMPARE_MAX);
+ if(count("reflection")>r.REFLECT_WEEKLY_MAX)errors.push("weekly reflection items exceed "+r.REFLECT_WEEKLY_MAX);
+ errors.push(...reflectionSpread(list.filter(c=>c.weekly_section==="reflection")));
+ return errors;
+}
+/* At most two items per organisation, one per source. */
+function reflectionSpread(items){
+ const errors=[],orgs=new Map(),urls=new Set();
+ for(const c of items){const o=String(c.source_organization||"").trim().toLowerCase();orgs.set(o,(orgs.get(o)||0)+1);
+  for(const k of sourceKeys(c)){if(urls.has(k))errors.push(c.claim_id+": the same source is listed twice in 國外反思選讀");urls.add(k)}}
+ for(const [o,k] of orgs)if(k>2)errors.push("國外反思選讀 lists more than two items from "+o);
  return errors;
 }
 /* Overview sentences only group what this issue's items say; they may not claim outcomes, trends or advice. */
@@ -433,6 +474,15 @@ function monthlyStructureSectioned(claims,period,ctx={}){
  for(const c of list){
   const id=c.claim_id,s=c.section;
   if(!r.MONTHLY_KEYS.includes(s)){errors.push(id+": monthly claim section must be one of "+r.MONTHLY_KEYS.join(", "));continue}
+  if(s==="reflection"){
+   // This month or last month (plan 乙), and not listed in an earlier monthly's 國外反思選讀.
+   if(String(period)<r.REFLECT_MONTHLY_FROM)errors.push(id+": monthly reflection items start with the "+r.REFLECT_MONTHLY_FROM+" issue");
+   if(!(isoDate(c.first_disclosed_on)&&c.first_disclosed_on>=w.prev+"-01"&&c.first_disclosed_on<=w.end))errors.push(id+": monthly reflection item must be first disclosed this month or last month");
+   if(c.date_precision!==undefined)errors.push(id+": reflection items need a full first-disclosure date");
+   errors.push(...reflectionErrors(c).map(e=>id+": "+e));
+   for(const k of sourceKeys(c))if((ctx.reflectKeys||new Map()).has(k))errors.push(id+": already listed in "+ctx.reflectKeys.get(k));
+   continue;
+  }
   for(const f of ["claim_text","title_zh"])if(typeof c[f]==="string"&&/\p{Cf}/u.test(c[f]))errors.push(id+": "+f+" contains invisible format characters");
   if(c.title_zh!==undefined&&(typeof c.title_zh!=="string"||!c.title_zh.trim()||c.title_zh.length>200))errors.push(id+": title_zh must be a short non-empty string");
   if(c.region!==undefined&&!["intl","tw"].includes(c.region))errors.push(id+": region must be intl or tw");
@@ -526,6 +576,8 @@ function monthlyStructureSectioned(claims,period,ctx={}){
  if(count("background")>r.MONTHLY_BACKGROUND_MAX)errors.push("monthly background items exceed "+r.MONTHLY_BACKGROUND_MAX);
  if(count("tw_note")>r.MONTHLY_TW_NOTE_MAX)errors.push("monthly Taiwan note sentences exceed "+r.MONTHLY_TW_NOTE_MAX);
  if(count("tw_compare")>r.MONTHLY_TW_COMPARE_MAX)errors.push("monthly Taiwan documents exceed "+r.MONTHLY_TW_COMPARE_MAX);
+ if(count("reflection")>r.REFLECT_MONTHLY_MAX)errors.push("monthly reflection items exceed "+r.REFLECT_MONTHLY_MAX);
+ errors.push(...reflectionSpread(list.filter(c=>c.section==="reflection")));
  const research=list.filter(c=>c.section==="research"||c.section==="scholars"),non=research.filter(c=>!["k12","other_stakeholders"].includes(c.audience)).length;
  if(non>r.monthlyNonK12Cap(research.length))errors.push("non-K-12 research ("+non+") exceeds max(2, one third of "+research.length+") across research and scholar items");
  const groups=new Map(),people=new Map(),key=v=>String(v||"").trim().toLowerCase();
@@ -643,7 +695,8 @@ function validate(root){
     if(!isoDate(through)||(w&&through<w.end))errors.push(p+": indexed_through must be a real date on or after the period end (dailies listed up to that date)");
     // Earlier publications only: dailies up to indexed_through, the listed weeklies and earlier monthlies.
     const others=keysOf(p,(ch,c,e)=>(ch==="daily"&&e.path.slice(6,16)<=String(through))||(ch==="weekly"&&Array.isArray(idx)&&idx.includes(e.path.split("/")[1]))||(ch==="monthly"&&e.path.split("/")[1]<period&&["policy","research","tw_policy","tw_research","scholars"].includes(c.section)));
-    errors.push(...monthlyStructureSectioned(data,period,{issue:{...issue,monthlyContext},otherKeys:others}).map(e=>q+" "+e));
+    const reflectKeys=keysOf(p,(ch,c,e)=>ch==="monthly"&&e.path.split("/")[1]<period&&c.section==="reflection");
+    errors.push(...monthlyStructureSectioned(data,period,{issue:{...issue,monthlyContext},otherKeys:others,reflectKeys}).map(e=>q+" "+e));
    }else errors.push(...monthlyStructure(data).map(e=>q+" "+e));
   }
   if(issue.indexed_weeklies!==undefined&&!p.startsWith("monthly/"))errors.push(p+": indexed_weeklies applies only to a monthly edition");
@@ -659,6 +712,10 @@ function validate(root){
    const weeklyKeys=keysOf(p,(ch,c)=>ch==="weekly"&&["featured","briefs","late"].includes(c.weekly_section));
    for(const c of data)if(c&&c.weekly_section==="late")for(const k of sourceKeys(c))if(weeklyKeys.has(k))errors.push(q+" "+c.claim_id+": late item already in "+weeklyKeys.get(k));
   }
+  // Reflection fields only on 國外反思選讀 items, which must carry all of them.
+  for(const c of data){if(!c||typeof c!=="object")continue;const inR=(p.startsWith("weekly/")&&c.weekly_section==="reflection")||(p.startsWith("monthly/")&&c.section==="reflection"),has=[...REFLECT_FIELDS,...REFLECT_OPTIONAL].filter(f=>c[f]!==undefined);
+   if(inR&&REFLECT_FIELDS.some(f=>c[f]===undefined))errors.push(q+" "+c.claim_id+": a 國外反思選讀 item needs all of "+REFLECT_FIELDS.join(", "));
+   if(!inR&&has.length)errors.push(q+" "+c.claim_id+": reflect_* fields belong to 國外反思選讀 items only");}
   // Caution marks (plan F2) live on weekly items only, until the monthly carries them.
   if(!p.startsWith("weekly/"))for(const c of data)if(c&&[...CAUTION_FIELDS,"caution_direction","caution_prior_url"].some(f=>c[f]!==undefined))errors.push(q+" "+c.claim_id+": caution marks belong to weekly items only");
   if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data,p.split("/")[1],{dailyClaims:dailyClaims(),issue,root}).map(e=>q+" "+e));
