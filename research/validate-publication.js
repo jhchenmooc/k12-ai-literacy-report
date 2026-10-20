@@ -391,6 +391,9 @@ function weeklyStructure(claims,period,ctx={}){
  if(count("tw_compare")>r.WEEKLY_TW_COMPARE_MAX)errors.push("weekly Taiwan comparison rows exceed "+r.WEEKLY_TW_COMPARE_MAX);
  if(count("reflection")>r.REFLECT_WEEKLY_MAX)errors.push("weekly reflection items exceed "+r.REFLECT_WEEKLY_MAX);
  errors.push(...reflectionSpread(list.filter(c=>c.weekly_section==="reflection")));
+ // A reflection item is not a second copy of an item this issue already lists: mark that item instead.
+ const listedKeys=new Set(list.filter(c=>["featured","briefs","late","background"].includes(c.weekly_section)).flatMap(c=>[...sourceKeys(c)]));
+ for(const c of list.filter(x=>x.weekly_section==="reflection"))if([...sourceKeys(c)].some(k=>listedKeys.has(k)))errors.push(c.claim_id+": this source is already an item of this issue; mark that item instead of adding a reflection item");
  return errors;
 }
 /* At most two items per organisation, one per source. */

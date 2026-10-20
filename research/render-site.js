@@ -513,7 +513,7 @@ function monthlySummary(e,claims,listing,w){
  const items=claims.filter(c=>["policy","research","scholars","background","tw_policy","tw_research","tw_compare"].includes(c.section));
  const research=claims.filter(c=>c.section==="research"||c.section==="scholars"),non=research.filter(isNonK12).length;
  const aud=Object.entries(MONTHLY_AUDIENCE).map(([k,v])=>[v,items.filter(c=>c.audience===k).length]).filter(([,x])=>x).map(([v,x])=>v+" "+x).join("、");
- return "本期（"+w.start+" 至 "+w.end+"）已刊於週報或每日短訊的國際項目 "+(listing.all.length-listing.tw.length)+" 則（週報 "+(ctx.weeklies||[]).length+" 期 "+weeklyItems+" 則、未收入週報的每日短訊 "+dailyOnly+" 則）、臺灣 "+listing.tw.length+" 則。本月報另收：政策與官方文件 "+cnt("policy")+"、研究 "+cnt("research")+"、重要學者本月新作 "+cnt("scholars")+"、背景資料 "+cnt("background")+
+ return "本期（"+w.start+" 至 "+w.end+"）已刊於週報或每日短訊的國際項目 "+(listing.all.length-listing.tw.length)+" 則（週報 "+(ctx.weeklies||[]).length+" 期 "+weeklyItems+" 則、未收入週報的每日短訊 "+dailyOnly+" 則）、臺灣 "+listing.tw.length+" 則。本月報另收：政策與官方文件 "+cnt("policy")+"、研究 "+cnt("research")+"、重要學者本月新作 "+cnt("scholars")+"、背景資料 "+cnt("background")+(String(e.period)>=REFLECT_MONTHLY_FROM?"、國外反思選讀 "+cnt("reflection"):"")+
   "；對應學生 AI 素養面向者 "+items.filter(c=>dims(c).some(d=>d.startsWith("S-"))).length+" 則、教師面向者 "+items.filter(c=>dims(c).some(d=>d.startsWith("T-"))).length+" 則"+(aud?"；對象："+aud:"")+
   policyCountries([...claims.filter(c=>c.section==="policy"),...listing.groups.flatMap(g=>g.items).map(x=>x.c)])+"；非中小學研究 "+non+"／"+research.length+" 則（研究與重要學者本月新作合計；來自本刊追蹤學者清單與檢索紀錄，非系統蒐集）；"+(cnt("tw_policy")?"臺灣本月中央文件 "+cnt("tw_policy")+" 則、":"")+"臺灣研究"+(e.taiwan_journals_not_searched===true?"本期未查":" "+cnt("tw_research")+" 則")+(cnt("tw_compare")?"、對應的臺灣中央文件 "+cnt("tw_compare")+" 列":"")+"。";
 }
