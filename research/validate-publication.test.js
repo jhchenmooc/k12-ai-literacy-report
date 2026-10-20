@@ -1148,12 +1148,14 @@ test('國外反思選讀 (manager 2026-10-20): weekly and monthly reflection ite
  for(const [name,extra] of Object.entries(bad))assert.equal(weeklyAt(d,'2026-10-16_10-22',[featuredNew,...extra]).result.ok,false,name);
  assert.ok(weeklyAt(d,'2026-10-16_10-22',[{...featuredNew,reflect_type:'statement'}]).result.errors.some(e=>e.includes('belong to 國外反思選讀 items only')),'reflect fields stay off other items');
  assert.equal(weeklyAt(d,'2026-10-16_10-22',[featuredNew,line(wk)],h=>h.replace('文中表示','文中警告')).result.ok,false,'the line text comes only from the renderer');
+ assert.ok(weeklyAt(d,'2026-10-16_10-22',[featuredNew,line({...wk,source_url:featuredNew.source_url,evidence_source_url:featuredNew.source_url})]).result.errors.some(e=>e.includes('mark that item instead')),'no second copy of an issue item');
  // Monthly: this month or last month, at most eight, listed after the trend section.
  const m=setup();t.after(()=>fs.rmSync(m,{recursive:true,force:true}));
  const mr={...base,claim_id:'MR1',section:'reflection',first_disclosed_on:'2026-09-25',publication_date:'2026-09-25',reflect_type:'report',reflect_mixed:true,source_organization:'Example Policy Institute',source_url:'https://example.org/m-reflect',evidence_source_url:'https://example.org/m-reflect'};
  const mok=monthlySetup(m,[...monthlyBase(),line(mr)]);assert.deepEqual(mok.result.errors,[]);
  assert.ok(mok.html.includes('id="sec-reflection"')&&mok.html.includes(r.REFLECT_TYPES.report)&&mok.html.includes('（原文同時談機會與風險；此處只摘風險段落）'));
  assert.ok(mok.html.indexOf('id="sec-reflection"')<mok.html.indexOf('id="sec-background"'),'listed before the background');
+ assert.ok(mok.html.includes('、國外反思選讀 1'),'counted in the month summary');
  assert.equal(monthlySetup(m,[...monthlyBase(),line({...mr,first_disclosed_on:'2026-08-30',publication_date:'2026-08-30'})]).result.ok,false,'older than last month');
  // The October 2026 issue carries the September look-back too: up to 12 there, 8 in later issues.
  const many=k=>Array.from({length:k},(_,i)=>line({...mr,claim_id:'MR'+i,source_organization:'Org '+Math.floor(i/2),source_url:'https://example.org/m'+i,evidence_source_url:'https://example.org/m'+i}));
