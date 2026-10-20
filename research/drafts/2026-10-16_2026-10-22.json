@@ -220,6 +220,40 @@
    "doi": "10.70838/pemj.640202",
    "screening_note": "Listed for observation 2026-10-17 (venue not on the watchlist); manager approved inclusion 2026-10-18. Verified 2026-10-18 for daily brief 2026-10-18 (author-abstract attributed summary).",
    "verification_completed_on": "2026-10-18"
+  },
+  {
+   "candidate_id": "W2026-10-16-A07",
+   "category": "research",
+   "source_url": "https://doi.org/10.1111/bjet.70094",
+   "source_title": "Prompt‐based emotional scaffolding in generative AI: Effects on self‐regulated learning and socio‐emotional outcomes",
+   "source_organization": "British Journal of Educational Technology (Wiley)",
+   "source_publication_date": "2026-10-18",
+   "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：Wiley 回 403）：2026-10-18；British Journal of Educational Technology，文章號 bjet.70094，尚無卷期；Crossref 摘要句（非原文）",
+   "discovered_on": "2026-10-20",
+   "discovery_batch_id": "2026-10-20-daily-1",
+   "first_disclosed_on": "2026-10-18",
+   "source_updates": [],
+   "original_excerpt": "In a preregistered experiment in an authentic educational setting, 144 high school students were randomly assigned to one of three conditions: (1) ChatGPT, (2) SRLbot (GenAI with SRL scaffolding), (3) emotional SRLbot (GenAI with SRL and emotional support).",
+   "source_checked": true,
+   "claim_text": "來源機構：British Journal of Educational Technology (Wiley)；資料標題：Prompt‐based emotional scaffolding in generative AI: Effects on self‐regulated learning and socio‐emotional outcomes；來源刊登日：2026-10-18。",
+   "claim_class": "bibliographic",
+   "risk_tier": "low",
+   "scope_limitation": "監測清單 J04；Crossref 摘要所述為高中學生 144 人隨機分派實驗；介入研究，結果不寫入。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "第一輪 2026-10-20T00:30Z 子代理讀 Crossref works 紀錄（published-online 2026-10-18、作者、題名、摘要）；第二輪 2026-10-20T00:50Z 本 session 重新讀 Crossref 紀錄核對題名、DOI、日期、期刊與摘要所載對象，兩輪一致。出版社頁回 403，未繞過；依管理者 2026-10-16 規則，首發日採 Crossref published-online，只發書目；介入研究的結果不轉述。同一模型，非獨立審閱。",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "ai_lit_note": "高中學生使用不同設計的生成式 AI 聊天機器人學習時的自我調節學習，屬 AI 輔助學習，對應 S-LRN「應用AI工具強化領域學習」",
+   "audience": "k12",
+   "doi": "10.1111/bjet.70094",
+   "screening_note": "Verified 2026-10-20 for daily brief 2026-10-20 (bibliographic; Crossref abstract only, publisher page 403).",
+   "verification_completed_on": "2026-10-20"
   }
  ],
  "search_runs": [
@@ -305,6 +339,37 @@
     {
      "group": "taiwan-central",
      "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data and RSS, NSTC RSS, MODA press releases page 1; E5a seven-day look-back",
+     "status": "ok"
+    }
+   ],
+   "discovered": 1,
+   "added": 1,
+   "duplicates": 0
+  },
+  {
+   "batch_id": "2026-10-20-daily-1",
+   "searched_on": "2026-10-20",
+   "lookback_days": 7,
+   "lookback_days_target": 30,
+   "sources": [
+    {
+     "group": "research-doi",
+     "query": "Crossref filter=from-created-date:2026-10-19,until-created-date:2026-10-19,type:journal-article, six query.bibliographic sets rows=40, one proceedings-article set, watchlist-ISSN sets (22 journals, with and without keywords), 2026-10-20T00:25Z; publisher pages one try each (Springer Client Challenge, Wiley 403)",
+     "status": "ok"
+    },
+    {
+     "group": "preprint",
+     "query": "arXiv API (https) two standard queries 40 each plus a broader 100-item query, sorted by submittedDate; alphaXiv discovery after 2026-10-13 verified by arXiv id_list",
+     "status": "ok"
+    },
+    {
+     "group": "official-policy",
+     "query": "GOV.UK Search and Content API, Federal Register (curl -g), MEXT, China MOE, HK info.gov.hk 10-19/10-20, KICE, MOE Korea, KERIS, UNESCO newsroom, Eurydice news; E5a seven-day look-back",
+     "status": "ok"
+    },
+    {
+     "group": "taiwan-central",
+     "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (115-10-19 issue) and RSS, NSTC RSS, MODA press releases page 1; E5a seven-day look-back",
      "status": "ok"
     }
    ],

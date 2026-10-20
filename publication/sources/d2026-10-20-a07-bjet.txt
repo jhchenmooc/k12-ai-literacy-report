@@ -1,0 +1,4 @@
+British Journal of Educational Technology (Wiley) | 2026-10-18 | Prompt‐based emotional scaffolding in generative AI: Effects on self‐regulated learning and socio‐emotional outcomes | https://doi.org/10.1111/bjet.70094 | Crossref works record read 2026-10-20T00:50Z; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online (manager rule 2026-10-16); bibliographic facts only
+Crossref: published-online 2026-10-18; record created 2026-10-19; volume and issue not yet assigned; ISSN 0007-1013 / 1467-8535; licence CC BY-NC-ND 4.0; authors Diordiev, Stenberdt, Makransky
+Crossref abstract sentence (not read from the publisher page):
+In a preregistered experiment in an authentic educational setting, 144 high school students were randomly assigned to one of three conditions: (1) ChatGPT, (2) SRLbot (GenAI with SRL scaffolding), (3) emotional SRLbot (GenAI with SRL and emotional support).
