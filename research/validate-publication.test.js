@@ -1100,7 +1100,7 @@ test('caution marks (plan F2): renderer section passes; incomplete, unsupported 
  const empty=weeklyAt(d,'2026-10-16_10-22',[featuredNew,pol]);assert.deepEqual(empty.result.errors,[]);
  assert.ok(empty.html.includes('<section id="sec-caution"><h2>國外反思選讀</h2>')&&empty.html.includes('<p>本期未見符合條件的項目。</p>'),'an empty section stays, saying none was found');
  const ok=weeklyAt(d,'2026-10-16_10-22',[{...featuredNew,...mark,caution_kind:'risk_research'},{...pol,...mark}]);assert.deepEqual(ok.result.errors,[]);
- for(const s of ['<a href="#sec-caution">國外反思選讀（2）</a>','本段列 2 則：官方警示 1 則、風險相關研究 1 則。','｜官方警示｜〔教師〕X於 2026-10-17 發布〈','，文中表示：「發布一份不具拘束力的建議」（首段）<br><small>原文：published a nonbinding advisory</small>','｜風險相關研究｜','，作者報告：','本期刊出 2 則，依本刊監測範圍，不代表各國分布；本段列 2 則：','<a href="#item-1">第 1 則</a>｜'])assert.ok(ok.html.includes(s),s);
+ for(const s of ['<a href="#sec-caution">國外反思選讀（2）</a>','本段列 2 則（本期項目標記 2 則、另選錄 0 則）：官方警示 1 則、風險相關研究 1 則。','｜官方警示｜〔教師〕X於 2026-10-17 發布〈','，文中表示：「發布一份不具拘束力的建議」（首段）<br><small>原文：published a nonbinding advisory</small>','｜風險相關研究｜','，作者報告：','本期刊出 2 則，依本刊監測範圍，不代表各國分布；本段列 2 則（本期項目標記 2 則、另選錄 0 則）：','<a href="#item-1">第 1 則</a>｜'])assert.ok(ok.html.includes(s),s);
  const pc=weeklyAt(d,'2026-10-16_10-22',[featuredNew,{...pol,...mark,caution_kind:'policy_change',caution_direction:'loosen',caution_prior_url:'https://example.org/prior'}]);
  assert.deepEqual(pc.result.errors,[]);assert.ok(pc.html.includes('｜政策調整（放寬）｜')&&pc.html.includes('<a href="https://example.org/prior">前一版政策</a>'));
  const bad={
@@ -1134,7 +1134,7 @@ test('國外反思選讀 (manager 2026-10-20): weekly and monthly reflection ite
  const wk={...base,claim_id:'RF1',weekly_section:'reflection',first_disclosed_on:'2026-10-18',publication_date:'2026-10-18'};
  const com=line({...wk,claim_id:'RF2',reflect_type:'commentary',reflect_author:'A. Author',source_organization:'Example Institute',source_url:'https://example.org/reflect-2',evidence_source_url:'https://example.org/reflect-2'});
  const ok=weeklyAt(d,'2026-10-16_10-22',[featuredNew,line(wk),com]);assert.deepEqual(ok.result.errors,[]);
- for(const s of ['<a href="#sec-caution">國外反思選讀（2）</a>','本段列 2 則：團體聲明 1 則、專家評論 1 則。','id="item-r1" data-claim-id="RF1">團體聲明｜Example Union於 2026-10-18 發布〈<a href="https://example.org/reflect-1">Synthetic statement</a>〉，文中表示：「發布一份不具拘束力的建議」（首段）<br><small>原文：'+excerpt+'</small></li>','專家評論（非研究、非政策）｜Example Institute（A. Author）'])assert.ok(ok.html.includes(s),s);
+ for(const s of ['<a href="#sec-caution">國外反思選讀（2）</a>','本段列 2 則（本期項目標記 0 則、另選錄 2 則）：團體聲明 1 則、專家評論 1 則。','id="item-r1" data-claim-id="RF1">團體聲明｜Example Union於 2026-10-18 發布〈<a href="https://example.org/reflect-1">Synthetic statement</a>〉，文中表示：「發布一份不具拘束力的建議」（首段）<br><small>原文：'+excerpt+'</small></li>','專家評論（非研究、非政策）｜Example Institute（A. Author）'])assert.ok(ok.html.includes(s),s);
  const bad={
   'commentary without author':[line({...wk,reflect_type:'commentary'})],
   'research type on a policy item':[line({...wk,reflect_type:'research'})],
@@ -1144,10 +1144,14 @@ test('國外反思選讀 (manager 2026-10-20): weekly and monthly reflection ite
   'outside the period':[line({...wk,first_disclosed_on:'2026-10-10',publication_date:'2026-10-10'})],
   'Taiwan source':[line({...wk,source_country:'TW'})],
   'confirmed before checked':[line({...wk,reflect_confirmed_on:'2026-10-01'})],
+  'bibliographic claim skips the crosscheck':[line({...wk,claim_class:'bibliographic',risk_tier:'low'})],
+  'joint statement naming one issuer':[line({...wk,reflect_type:'joint_statement'})],
   'three items from one organisation':[1,2,3].map(i=>line({...wk,claim_id:'RF'+i,source_url:'https://example.org/r'+i,evidence_source_url:'https://example.org/r'+i}))};
  for(const [name,extra] of Object.entries(bad))assert.equal(weeklyAt(d,'2026-10-16_10-22',[featuredNew,...extra]).result.ok,false,name);
  assert.ok(weeklyAt(d,'2026-10-16_10-22',[{...featuredNew,reflect_type:'statement'}]).result.errors.some(e=>e.includes('belong to 國外反思選讀 items only')),'reflect fields stay off other items');
  assert.equal(weeklyAt(d,'2026-10-16_10-22',[featuredNew,line(wk)],h=>h.replace('文中表示','文中警告')).result.ok,false,'the line text comes only from the renderer');
+ const joint=weeklyAt(d,'2026-10-16_10-22',[featuredNew,line({...wk,reflect_type:'joint_statement',reflect_partial:true,source_organization:'美國教師聯合會、Microsoft'})]);assert.deepEqual(joint.result.errors,[]);
+ assert.ok(joint.html.includes('聯名聲明（含業者）｜美國教師聯合會、Microsoft')&&joint.html.includes('」（節譯）（首段）'),'joint statements and partial translations are labelled');
  assert.ok(weeklyAt(d,'2026-10-16_10-22',[featuredNew,line({...wk,source_url:featuredNew.source_url,evidence_source_url:featuredNew.source_url})]).result.errors.some(e=>e.includes('mark that item instead')),'no second copy of an issue item');
  // Monthly: this month or last month, at most eight, listed after the trend section.
  const m=setup();t.after(()=>fs.rmSync(m,{recursive:true,force:true}));
@@ -1156,6 +1160,7 @@ test('國外反思選讀 (manager 2026-10-20): weekly and monthly reflection ite
  assert.ok(mok.html.includes('id="sec-reflection"')&&mok.html.includes(r.REFLECT_TYPES.report)&&mok.html.includes('（原文同時談機會與風險；此處只摘風險段落）'));
  assert.ok(mok.html.indexOf('id="sec-reflection"')<mok.html.indexOf('id="sec-background"'),'listed before the background');
  assert.ok(mok.html.includes('、國外反思選讀 1'),'counted in the month summary');
+ assert.ok(mok.html.includes('本號另補上月回溯，至多 12 則。')&&mok.html.includes('本段只選批評與風險，不選正面評估'),'the October issue says it carries the look-back');
  assert.equal(monthlySetup(m,[...monthlyBase(),line({...mr,first_disclosed_on:'2026-08-30',publication_date:'2026-08-30'})]).result.ok,false,'older than last month');
  // The October 2026 issue carries the September look-back too: up to 12 there, 8 in later issues.
  const many=k=>Array.from({length:k},(_,i)=>line({...mr,claim_id:'MR'+i,source_organization:'Org '+Math.floor(i/2),source_url:'https://example.org/m'+i,evidence_source_url:'https://example.org/m'+i}));
