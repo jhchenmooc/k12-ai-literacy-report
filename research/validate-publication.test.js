@@ -1155,8 +1155,11 @@ test('國外反思選讀 (manager 2026-10-20): weekly and monthly reflection ite
  assert.ok(mok.html.includes('id="sec-reflection"')&&mok.html.includes(r.REFLECT_TYPES.report)&&mok.html.includes('（原文同時談機會與風險；此處只摘風險段落）'));
  assert.ok(mok.html.indexOf('id="sec-reflection"')<mok.html.indexOf('id="sec-background"'),'listed before the background');
  assert.equal(monthlySetup(m,[...monthlyBase(),line({...mr,first_disclosed_on:'2026-08-30',publication_date:'2026-08-30'})]).result.ok,false,'older than last month');
- const nine=Array.from({length:9},(_,i)=>line({...mr,claim_id:'MR'+i,source_organization:'Org '+Math.floor(i/2),source_url:'https://example.org/m'+i,evidence_source_url:'https://example.org/m'+i}));
- assert.ok(monthlySetup(m,[...monthlyBase(),...nine]).result.errors.some(e=>e.includes('reflection items exceed 8')));
+ // The October 2026 issue carries the September look-back too: up to 12 there, 8 in later issues.
+ const many=k=>Array.from({length:k},(_,i)=>line({...mr,claim_id:'MR'+i,source_organization:'Org '+Math.floor(i/2),source_url:'https://example.org/m'+i,evidence_source_url:'https://example.org/m'+i}));
+ assert.deepEqual(monthlySetup(m,[...monthlyBase(),...many(12)]).result.errors,[]);
+ assert.ok(monthlySetup(m,[...monthlyBase(),...many(13)]).result.errors.some(e=>e.includes('reflection items exceed 12')));
+ assert.equal(r.reflectMonthlyMax('2026-11'),8);
  const empty=monthlySetup(m,monthlyBase());assert.deepEqual(empty.result.errors,[]);
  assert.ok(empty.html.includes('<section id="sec-reflection"><h3>國外反思選讀</h3>')&&empty.html.includes('<p>本期未見符合條件的項目。</p>'),'an empty monthly section stays');
 });

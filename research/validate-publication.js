@@ -576,7 +576,7 @@ function monthlyStructureSectioned(claims,period,ctx={}){
  if(count("background")>r.MONTHLY_BACKGROUND_MAX)errors.push("monthly background items exceed "+r.MONTHLY_BACKGROUND_MAX);
  if(count("tw_note")>r.MONTHLY_TW_NOTE_MAX)errors.push("monthly Taiwan note sentences exceed "+r.MONTHLY_TW_NOTE_MAX);
  if(count("tw_compare")>r.MONTHLY_TW_COMPARE_MAX)errors.push("monthly Taiwan documents exceed "+r.MONTHLY_TW_COMPARE_MAX);
- if(count("reflection")>r.REFLECT_MONTHLY_MAX)errors.push("monthly reflection items exceed "+r.REFLECT_MONTHLY_MAX);
+ if(count("reflection")>r.reflectMonthlyMax(period))errors.push("monthly reflection items exceed "+r.reflectMonthlyMax(period));
  errors.push(...reflectionSpread(list.filter(c=>c.section==="reflection")));
  const research=list.filter(c=>c.section==="research"||c.section==="scholars"),non=research.filter(c=>!["k12","other_stakeholders"].includes(c.audience)).length;
  if(non>r.monthlyNonK12Cap(research.length))errors.push("non-K-12 research ("+non+") exceeds max(2, one third of "+research.length+") across research and scholar items");
