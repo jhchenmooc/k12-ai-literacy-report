@@ -1558,6 +1558,8 @@
 | KB-2026-0386 — [從「找答案」到「學會提問」～ 國教院攜手龍埔國小與均一教育平台，看見孩子AI學習轉變](https://www.naer.edu.tw/PageDoc/Detail?fid=15&id=5659) | government_announcement | 2026-10-12 | bibliographic_checked |
 | KB-2026-0387 — [AI in the Teaching of Filipino: A Case Study of Teachers at Olutanga National High School](https://doi.org/10.70838/pemj.640202) | journal_article | 2026-10-11 | bibliographic_checked |
 | KB-2026-0388 — [Prompt‐based emotional scaffolding in generative AI: Effects on self‐regulated learning and socio‐emotional outcomes](https://doi.org/10.1111/bjet.70094) | journal_article | 2026-10-18 | bibliographic_checked |
+| KB-2026-0389 — [AIgnite: an educational toolkit for supporting primary students’ AI literacy cultivation](https://doi.org/10.1007/s11423-026-10716-w) | journal_article | 2026-10-19 | bibliographic_checked |
+| KB-2026-0390 — [Psychological Mechanisms of Generative AI Discontinuance Intention Among Chinese K–12 Teachers](https://doi.org/10.1155/ahci/8302982) | journal_article | 2026-10-18 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
