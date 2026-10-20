@@ -1098,9 +1098,9 @@ test('caution marks (plan F2): renderer section passes; incomplete, unsupported 
  const pol={...featured,claim_id:'F2',source_organization:'X',first_disclosed_on:'2026-10-17',publication_date:'2026-10-17',source_country:'GB',claim_text:'來源機構：X；資料標題：Y；來源刊登日：2026-10-17。內容：合成政策。'};
  const mark={caution_kind:'warning',caution_excerpt:'published a nonbinding advisory',caution_excerpt_zh:'發布一份不具拘束力的建議',caution_locator:'首段',caution_confirmed_on:'2026-10-20'};
  const empty=weeklyAt(d,'2026-10-16_10-22',[featuredNew,pol]);assert.deepEqual(empty.result.errors,[]);
- assert.ok(empty.html.includes('<section id="sec-caution"><h2>風險關切與政策調整</h2>')&&empty.html.includes('<p>本期未見符合條件的項目。</p>'),'an empty section stays, saying none was found');
+ assert.ok(empty.html.includes('<section id="sec-caution"><h2>國外反思選讀</h2>')&&empty.html.includes('<p>本期未見符合條件的項目。</p>'),'an empty section stays, saying none was found');
  const ok=weeklyAt(d,'2026-10-16_10-22',[{...featuredNew,...mark,caution_kind:'risk_research'},{...pol,...mark}]);assert.deepEqual(ok.result.errors,[]);
- for(const s of ['<a href="#sec-caution">風險關切與政策調整（2）</a>','其中風險關切 1 則、政策調整 0 則、風險相關研究 1 則。','｜風險關切・警示｜〔教師〕X於 2026-10-17 發布〈','，文中表示：「發布一份不具拘束力的建議」（首段）<br><small>原文：published a nonbinding advisory</small>','｜風險相關研究｜','，作者報告：','本期刊出 2 則，依本刊監測範圍，不代表各國分布；其中','<a href="#item-1">第 1 則</a>｜'])assert.ok(ok.html.includes(s),s);
+ for(const s of ['<a href="#sec-caution">國外反思選讀（2）</a>','其中風險關切 1 則、政策調整 0 則、風險相關研究 1 則。','｜風險關切・警示｜〔教師〕X於 2026-10-17 發布〈','，文中表示：「發布一份不具拘束力的建議」（首段）<br><small>原文：published a nonbinding advisory</small>','｜風險相關研究｜','，作者報告：','本期刊出 2 則，依本刊監測範圍，不代表各國分布；其中','<a href="#item-1">第 1 則</a>｜'])assert.ok(ok.html.includes(s),s);
  const pc=weeklyAt(d,'2026-10-16_10-22',[featuredNew,{...pol,...mark,caution_kind:'policy_change',caution_direction:'loosen',caution_prior_url:'https://example.org/prior'}]);
  assert.deepEqual(pc.result.errors,[]);assert.ok(pc.html.includes('｜政策調整（放寬）｜')&&pc.html.includes('<a href="https://example.org/prior">前一版政策</a>'));
  const bad={
@@ -1124,4 +1124,39 @@ test('caution marks (plan F2): renderer section passes; incomplete, unsupported 
  assert.equal(weeklyAt(f,'2026-10-16_10-22',[featuredNew,{...pol,...mark}],h=>h.replace('文中表示','文中警告')).result.ok,false,'the line text comes only from the renderer');
  const g=setup();t.after(()=>fs.rmSync(g,{recursive:true,force:true}));dailyFixture(g,{...dailyLow,...mark});
  assert.ok(validate(g).errors.some(x=>x.includes('caution marks belong to weekly items only')),'a daily item carries no mark');
+});
+test('國外反思選讀 (manager 2026-10-20): weekly and monthly reflection items render as checked lines; wrong fields are refused',t=>{
+ const r=require('./render-site.js');
+ const base={...claim,source_organization:'Example Union',source_country:'GB',source_title:'Synthetic statement',source_url:'https://example.org/reflect-1',evidence_source_url:'https://example.org/reflect-1',reflect_type:'statement',reflect_excerpt_zh:'發布一份不具拘束力的建議',reflect_locator:'首段',reflect_confirmed_on:'2026-10-20',checked_at:'2026-10-19'};
+ const line=c=>({...c,claim_text:r.reflectionText(c)});
+ // Weekly.
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ const wk={...base,claim_id:'RF1',weekly_section:'reflection',first_disclosed_on:'2026-10-18',publication_date:'2026-10-18'};
+ const com=line({...wk,claim_id:'RF2',reflect_type:'commentary',reflect_author:'A. Author',source_organization:'Example Institute',source_url:'https://example.org/reflect-2',evidence_source_url:'https://example.org/reflect-2'});
+ const ok=weeklyAt(d,'2026-10-16_10-22',[featuredNew,line(wk),com]);assert.deepEqual(ok.result.errors,[]);
+ for(const s of ['<a href="#sec-caution">國外反思選讀（2）</a>','另選錄專家評論、團體聲明與報告等 2 則。','id="item-r1" data-claim-id="RF1">團體聲明｜Example Union於 2026-10-18 發布〈<a href="https://example.org/reflect-1">Synthetic statement</a>〉，文中表示：「發布一份不具拘束力的建議」（首段）<br><small>原文：'+excerpt+'</small></li>','專家評論（非研究、非政策）｜Example Institute（A. Author）'])assert.ok(ok.html.includes(s),s);
+ const bad={
+  'commentary without author':[line({...wk,reflect_type:'commentary'})],
+  'research type on a policy item':[line({...wk,reflect_type:'research'})],
+  'mixed note on a statement':[line({...wk,reflect_mixed:true})],
+  'missing field':[{...line(wk),reflect_locator:undefined}],
+  'claim_text not the built line':[{...line(wk),claim_text:'團體聲明｜自己寫的評語'}],
+  'outside the period':[line({...wk,first_disclosed_on:'2026-10-10',publication_date:'2026-10-10'})],
+  'Taiwan source':[line({...wk,source_country:'TW'})],
+  'confirmed before checked':[line({...wk,reflect_confirmed_on:'2026-10-01'})],
+  'three items from one organisation':[1,2,3].map(i=>line({...wk,claim_id:'RF'+i,source_url:'https://example.org/r'+i,evidence_source_url:'https://example.org/r'+i}))};
+ for(const [name,extra] of Object.entries(bad))assert.equal(weeklyAt(d,'2026-10-16_10-22',[featuredNew,...extra]).result.ok,false,name);
+ assert.ok(weeklyAt(d,'2026-10-16_10-22',[{...featuredNew,reflect_type:'statement'}]).result.errors.some(e=>e.includes('belong to 國外反思選讀 items only')),'reflect fields stay off other items');
+ assert.equal(weeklyAt(d,'2026-10-16_10-22',[featuredNew,line(wk)],h=>h.replace('文中表示','文中警告')).result.ok,false,'the line text comes only from the renderer');
+ // Monthly: this month or last month, at most eight, listed after the trend section.
+ const m=setup();t.after(()=>fs.rmSync(m,{recursive:true,force:true}));
+ const mr={...base,claim_id:'MR1',section:'reflection',first_disclosed_on:'2026-09-25',publication_date:'2026-09-25',reflect_type:'report',reflect_mixed:true,source_organization:'Example Policy Institute',source_url:'https://example.org/m-reflect',evidence_source_url:'https://example.org/m-reflect'};
+ const mok=monthlySetup(m,[...monthlyBase(),line(mr)]);assert.deepEqual(mok.result.errors,[]);
+ assert.ok(mok.html.includes('id="sec-reflection"')&&mok.html.includes(r.REFLECT_TYPES.report)&&mok.html.includes('（原文同時談機會與風險；此處只摘風險段落）'));
+ assert.ok(mok.html.indexOf('id="sec-reflection"')<mok.html.indexOf('id="sec-background"'),'listed before the background');
+ assert.equal(monthlySetup(m,[...monthlyBase(),line({...mr,first_disclosed_on:'2026-08-30',publication_date:'2026-08-30'})]).result.ok,false,'older than last month');
+ const nine=Array.from({length:9},(_,i)=>line({...mr,claim_id:'MR'+i,source_organization:'Org '+Math.floor(i/2),source_url:'https://example.org/m'+i,evidence_source_url:'https://example.org/m'+i}));
+ assert.ok(monthlySetup(m,[...monthlyBase(),...nine]).result.errors.some(e=>e.includes('reflection items exceed 8')));
+ const empty=monthlySetup(m,monthlyBase());assert.deepEqual(empty.result.errors,[]);
+ assert.ok(empty.html.includes('<section id="sec-reflection"><h3>國外反思選讀</h3>')&&empty.html.includes('<p>本期未見符合條件的項目。</p>'),'an empty monthly section stays');
 });
