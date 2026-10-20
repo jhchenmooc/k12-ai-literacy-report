@@ -222,9 +222,11 @@ function unnamedForeignAgency(c){
    in the item's evidence snapshot and come from the title, abstract or first paragraph; Taiwan items, speeches and
    drafts are never marked. The line itself is built by the renderer, so no editorial verbs reach the page. */
 const CAUTION_FIELDS=["caution_kind","caution_excerpt","caution_excerpt_zh","caution_locator","caution_confirmed_on"];
+// caution_partial marks a translation of only part of the excerpt (節譯).
 const CAUTION_KINDS=["policy_change","warning","investigation","statement","risk_research"];
 function cautionErrors(c,sec,range,root){
- const has=CAUTION_FIELDS.filter(f=>c[f]!==undefined),extra=["caution_direction","caution_prior_url"].filter(f=>c[f]!==undefined);
+ const has=CAUTION_FIELDS.filter(f=>c[f]!==undefined),extra=["caution_direction","caution_prior_url","caution_partial"].filter(f=>c[f]!==undefined);
+ if(c.caution_partial!==undefined&&c.caution_partial!==true)return ["caution_partial is true or absent"];
  if(!has.length)return extra.length?["caution_direction and caution_prior_url need a caution mark"]:[];
  if(has.length!==CAUTION_FIELDS.length)return ["a caution mark needs all of "+CAUTION_FIELDS.join(", ")];
  const e=[],from=require("./render-site.js").CAUTION_FROM_PERIOD;
@@ -251,11 +253,11 @@ function cautionErrors(c,sec,range,root){
  if(!(isoDate(c.caution_confirmed_on)&&(!isoDate(c.checked_at)||c.caution_confirmed_on>=c.checked_at)))e.push("caution_confirmed_on must be an ISO date not before checked_at");
  return e;
 }
-/* 國外反思選讀 items (manager decision 2026-10-20, plans 甲 and 乙): commentary, statements and risk passages that run
+/* 國外反思選讀 items (manager decision 2026-10-20, plans 甲 and 乙; joint review 2026-10-20 batch 1): commentary, statements and risk passages that run
    only in that section. The quoted original is the claim's original_excerpt (verbatim in the pinned snapshot, checked by
    sourceTrace); the line is built by the renderer from these fields and must equal claim_text. Taiwan items never. */
 const REFLECT_FIELDS=["reflect_type","reflect_excerpt_zh","reflect_locator","reflect_confirmed_on"];
-const REFLECT_OPTIONAL=["reflect_author","reflect_mixed"];
+const REFLECT_OPTIONAL=["reflect_author","reflect_mixed","reflect_partial"];
 function reflectionErrors(c){
  const e=[],r=require("./render-site.js"),t=c.reflect_type;
  if(!Object.keys(r.REFLECT_TYPES).includes(t))e.push("reflect_type must be one of "+Object.keys(r.REFLECT_TYPES).join(", "));
@@ -270,6 +272,10 @@ function reflectionErrors(c){
  if(typeof c.original_excerpt!=="string"||c.original_excerpt.length>300)e.push("reflection original_excerpt must be at most 300 characters");
  if(!short(c.reflect_excerpt_zh,120))e.push("reflect_excerpt_zh must be 1-120 characters");
  if(!short(c.reflect_locator,80))e.push("reflect_locator must be 1-80 characters");
+ // The manager-confirmed quote and translation carry the two-pass crosscheck and the translation review (joint review 2026-10-20).
+ if(c.claim_class!=="descriptive"||c.risk_tier!=="medium"||c.translation_reviewed!==true)e.push("reflection item is a descriptive, medium-risk claim with a reviewed translation (two-pass crosscheck)");
+ if(c.reflect_partial!==undefined&&c.reflect_partial!==true)e.push("reflect_partial is true or absent");
+ if(t==="joint_statement"&&!/[、，,]/.test(String(c.source_organization||"")))e.push("a joint statement names all of its issuers in source_organization, separated by 、");
  if(c.reflect_mixed!==undefined&&(c.reflect_mixed!==true||!["report","official","research"].includes(t)))e.push("reflect_mixed is true or absent, and only on report, official or research passages");
  if(!(isoDate(c.reflect_confirmed_on)&&(!isoDate(c.checked_at)||c.reflect_confirmed_on>=c.checked_at)))e.push("reflect_confirmed_on must be an ISO date not before checked_at");
  if(!["k12","other_stakeholders"].includes(c.audience))e.push("reflection items concern schools: audience k12 or other_stakeholders");
@@ -720,7 +726,7 @@ function validate(root){
    if(inR&&REFLECT_FIELDS.some(f=>c[f]===undefined))errors.push(q+" "+c.claim_id+": a 國外反思選讀 item needs all of "+REFLECT_FIELDS.join(", "));
    if(!inR&&has.length)errors.push(q+" "+c.claim_id+": reflect_* fields belong to 國外反思選讀 items only");}
   // Caution marks (plan F2) live on weekly items only, until the monthly carries them.
-  if(!p.startsWith("weekly/"))for(const c of data)if(c&&[...CAUTION_FIELDS,"caution_direction","caution_prior_url"].some(f=>c[f]!==undefined))errors.push(q+" "+c.claim_id+": caution marks belong to weekly items only");
+  if(!p.startsWith("weekly/"))for(const c of data)if(c&&[...CAUTION_FIELDS,"caution_direction","caution_prior_url","caution_partial"].some(f=>c[f]!==undefined))errors.push(q+" "+c.claim_id+": caution marks belong to weekly items only");
   if(p.startsWith("weekly/"))errors.push(...weeklyStructure(data,p.split("/")[1],{dailyClaims:dailyClaims(),issue,root}).map(e=>q+" "+e));
   if(issue.taiwan_not_searched!==undefined&&(issue.taiwan_not_searched!==true||!p.startsWith("weekly/")))errors.push(p+": taiwan_not_searched must be true on a weekly edition");
   if(issue.revised_on!==undefined&&daily&&!(isoDate(issue.revised_on)&&issueDate&&issue.revised_on>=issueDate))errors.push(p+": daily revised_on must be a real date on or after the issue date");
