@@ -52,5 +52,56 @@
    "참가자들은 서울여자중학교와 서울 교육정보기술(에듀테크) 소프트랩을 방문해 인공지능 기반 교육 현장을 직접 살펴보고, 분임 활동을 하며 각국의 학교 혁신 사례를 공유한다."
   ],
   "attributed_summary": "韓國教育部將於 10 月 21 日至 23 日在首爾舉辦「2026 年 APEC 學校領導力計畫」研習，對象為 APEC 會員經濟體中小學校長與副校長，主題為「人工智慧時代，引領與世界連結之學校的創新領導力」，著重分享可在學校現場運用的人工智慧教育創新案例；52 名學校經營者參加，將參訪首爾女子中學與首爾教育科技 Soft Lab，分組分享各國學校創新案例。"
+ },
+ {
+  "claim_id": "D20261021-02",
+  "candidate_id": "W2026-10-16-A11",
+  "kind": "research",
+  "claim_text": "來源機構：Journal of Research on Technology in Education (Taylor & Francis)；資料標題：Critical Fairness Literacy for PK–12 teachers: a fairness-specific dimension of teacher AI competency；來源刊登日：2026-10-20。作者摘要報告：本概念性論文透過結構化文獻綜整（教師AI能力、批判性AI素養、演算法公平、教育AI倫理與教育公平），提出「批判性公平素養」（CFL）作為教師AI能力中聚焦公平的子面向，包含辨識偏誤來源、情境化教育公平分析與檢視公平定義，並提出偏誤追溯、以教育公平為中心的情境審查與公平框架反思三項實務程序，連結課堂判斷與專業學習；作者指出其仍屬理論性提案，需實證檢驗。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "V2",
+  "daily_fact_kind": "research_abstract_attributed_summary",
+  "source_document_type": "peer_reviewed_article",
+  "source_title": "Critical Fairness Literacy for PK–12 teachers: a fairness-specific dimension of teacher AI competency",
+  "source_organization": "Journal of Research on Technology in Education (Taylor & Francis)",
+  "source_url": "https://doi.org/10.1080/15391523.2026.2749067",
+  "evidence_source_url": "https://doi.org/10.1080/15391523.2026.2749067",
+  "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：T&F 回 403；PDF 首頁無上線日）：2026-10-20；出版者 PDF 首頁（管理者 2026-10-21 提供截圖）：Received 1 April 2026、Accepted 11 October 2026；摘要歸屬：Abstract 第 2、3、4、6 句",
+  "source_type": "research_publication",
+  "checked_at": "2026-10-21",
+  "publication_date": "2026-10-20",
+  "first_disclosed_on": "2026-10-20",
+  "evidence_path": "publication/sources/d2026-10-21-a11-jrte.txt",
+  "evidence_sha256": "1fdbc2729c7384ac1c6fffe0b40d2e94a3f633548cc0bac8182a19c138e94959",
+  "original_excerpt": "This conceptual paper develops Critical Fairness Literacy (CFL) through a structured synthesis of literature on teacher AI competency, critical AI literacy, algorithmic fairness, educational AI ethics, and educational equity. … CFL is proposed as a subdimension of teacher AI competency focused on fairness, comprising bias source identification, contextual equity analysis, and interrogation of fairness definitions. … Three practical protocols, bias tracing, equity-centered contextual review, and fairness framing reflection, connect these dimensions to classroom judgment and professional learning. … The framework and protocols remain theoretically informed proposals requiring empirical investigation.",
+  "interpretation_note": "轉述作者摘要的文獻綜整範圍、所提概念的三個成分、三項實務程序與作者自述限制；概念性論文，無實證樣本。",
+  "scope_limitation": "同儕審查期刊論文（Journal of Research on Technology in Education，監測清單 J08）；概念性論文，框架與程序未經實證檢驗；首發日依 Crossref 上線日。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "decision": "publish",
+  "ai_crosscheck_record": "第一輪 2026-10-21 讀管理者提供的出版者 PDF 首頁截圖，轉錄摘要並擇第 2、3、4、6 句撰寫中文摘要；第二輪 2026-10-21 由隔離子代理逐字核對轉錄與截圖一致，並逐項對照譯名與保留語，依建議補上「連結課堂判斷與專業學習」「理論性提案」、以「教育公平」區分 equity 與 fairness、標註 CFL。同一模型，非獨立審閱。",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-ETH",
+   "T-PD"
+  ],
+  "ai_lit_note": "在職教師評估 AI 公平性的專業判斷與專業學習（依準則教師 AI 素養判 A），對應 T-ETH「識別AI倫理風險」與 T-PD",
+  "audience": "k12",
+  "summary_evidence_spans": [
+   "This conceptual paper develops Critical Fairness Literacy (CFL) through a structured synthesis of literature on teacher AI competency, critical AI literacy, algorithmic fairness, educational AI ethics, and educational equity.",
+   "CFL is proposed as a subdimension of teacher AI competency focused on fairness, comprising bias source identification, contextual equity analysis, and interrogation of fairness definitions.",
+   "Three practical protocols, bias tracing, equity-centered contextual review, and fairness framing reflection, connect these dimensions to classroom judgment and professional learning.",
+   "The framework and protocols remain theoretically informed proposals requiring empirical investigation."
+  ],
+  "attributed_summary": "本概念性論文透過結構化文獻綜整（教師AI能力、批判性AI素養、演算法公平、教育AI倫理與教育公平），提出「批判性公平素養」（CFL）作為教師AI能力中聚焦公平的子面向，包含辨識偏誤來源、情境化教育公平分析與檢視公平定義，並提出偏誤追溯、以教育公平為中心的情境審查與公平框架反思三項實務程序，連結課堂判斷與專業學習；作者指出其仍屬理論性提案，需實證檢驗。"
  }
 ]
