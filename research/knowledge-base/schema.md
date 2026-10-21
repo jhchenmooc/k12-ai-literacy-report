@@ -4,6 +4,7 @@
 
 ## 三張資料表
 
+- `data/titles_zh.csv`（管理者 2026-10-21）：非中文官方文件的中文篇名（`record_id`、`title_zh`、`basis`），只用於網站顯示；`records.csv` 的 `title` 仍保存原題。
 - `data/records.csv` 每筆為一個可識別來源／版本；`record_id` 穩定，`work_group_id` 只有同作品證據充分才設。來源原題與 URL 原樣保存；可以按 K1–K6 六大分類擴充關聯；不依行號重算 ID。
 - `data/relations.csv` 對主紀錄附加國別角色、學段、主題、期刊／會議監測 ID、版本等；`object_namespace` 只允許 `record`、`work`、`source`、`vocabulary`。暫不建獨立 event ID 空間，事件可作紀錄。關聯引用必須能驗證。
 - `data/search_runs.csv` 僅記**實際完成且可追溯**的搜尋，區分入口查閱、條件搜尋、逐篇篩選及原文核對；搜尋失敗不記零命中，批次不能虛構。
