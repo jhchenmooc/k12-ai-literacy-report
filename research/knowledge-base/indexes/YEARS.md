@@ -1566,6 +1566,7 @@
 | KB-2026-0393 — [中小學使用「生成式人工智慧」注意事項2.1（學生版）](https://pads.moe.edu.tw/download_file.php?file=_upload_a3b3bb86d9d61dfb4683ec0360041e4b.pdf&old=upload) | official_guidance | 2026-02-11 | bibliographic_checked |
 | KB-2026-0394 — [Florida Sets National Standard for Responsible AI in Classrooms—From VPK Through College](https://www.fldoe.org/newsroom/latest-news/florida-sets-national-standard-for-responsible-ai-in-classroomsfrom-vpk-through-college.stml) | government_announcement | 2026-09-16 | bibliographic_checked |
 | KB-2026-0395 — [Artificial Intelligence (AI) Starter Guide for Districts; Artificial Intelligence (AI) Comprehensive Guide for Districts](https://www.michigan.gov/mde/services/academic-standards/educational-technology/artificial-intelligence) | official_guidance | 2026-05-07 | bibliographic_checked |
+| KB-2026-0397 — [Artificial Intelligence in Education (Guiding Principles for AI Use in Education)](https://education.mn.gov/mdeprod/idcplg?IdcService=GET_FILE&dDocName=PROD084632&RevisionSelectionMethod=latestReleased&Rendition=primary) | official_guidance | 2026-06 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
@@ -1624,5 +1625,6 @@
 | KB-2026-0384 — [Guidance for the Responsible Use of Artificial Intelligence: Executive Summary](https://marylandpublicschools.org/about/documents/dccr/ai/01-ai-guidance-executive-summary-a.pdf) | official_guidance | 未知 | discovered_unverified |
 | KB-2026-0385 — [Artificial Intelligence: Guidance for K-12 Classrooms](https://www.mdek12.org/sites/default/files/Offices/MDE/OTSS/DL/ai_guidance_final.pdf) | official_guidance | 未知 | discovered_unverified |
 | KB-2026-0396 — [Artificial Intelligence (AI) for Instructional Purposes Guidance](https://www.michigan.gov/mde/-/media/Project/Websites/mde/general/AI_Instructional_Purposes_-Final1.pdf) | official_guidance | 未知 | discovered_unverified |
+| KB-2026-0398 — [Career and Technical Education (CTE) Brief: Artificial Intelligence](https://education.mn.gov/mdeprod/idcplg?IdcService=GET_FILE&dDocName=PROD085058&RevisionSelectionMethod=latestReleased&Rendition=primary) | official_guidance | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
