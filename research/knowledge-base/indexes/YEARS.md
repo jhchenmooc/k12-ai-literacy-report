@@ -348,6 +348,11 @@
 | KB-2023-0194 — [Handlungsleitfaden „Gemeinsam die Welt der generativen KI-Systeme erkunden“](https://bildung-mv.de/export/sites/bildungsserver/.galleries/dokumente/schule/Handreichung_KI.pdf) | official_guidance | 2023-12 | discovered_unverified |
 | KB-2023-0195 — [Sprachmodelle im Schulunterricht: Chancen und Herausforderungen. Handreichung zum Umgang mit Künstlicher Intelligenz in der schulischen Bildung](https://back.bildung-lsa.de/files/5c5e6e7a4f362d6ab1bfd03a000ac17d/Sprachmodelle_im_Schulunterricht.pdf) | official_guidance | 2023-09 | discovered_unverified |
 | KB-2023-0196 — [생성형 AI 교육적 활용 가이드（학교급별 생성형 AI 활용 지침·수업 설계 및 적용 체크리스트·ChatGPT 간편 가이드）](https://buseo.sen.go.kr/buseo/bu10/user/bbs/BD_selectBbs.do?q_bbsSn=1240&q_bbsDocNo=20230829193450556) | official_guidance | 2023-08-29 | discovered_unverified |
+| KB-2023-0204 — [\[서교연2022-77\] 개별 맞춤형 인공지능(AI) 활용교육의 가능성과 과제](https://www.serii.re.kr/fus/MI000000000000000493/board/BO00000341/ctgynone/view0010v.do?board_seq=4856) | policy_review | 2023-04-04 | discovered_unverified |
+| KB-2023-0205 — [The Use of Generative Artificial Intelligence in DECYP Schools Policy](https://documentcentre.education.tas.gov.au/_layouts/15/DocIdRedir.aspx?ID=TASED-1060461114-3813) | official_guidance | 2023-11-10 | discovered_unverified |
+| KB-2023-0206 — [Empfehlungen für den Umgang mit KI-Anwendungen am Beispiel von Chat GPT](https://www.berlin.de/sen/bjf/service/presse/pressearchiv-2023/pressemitteilung.1316517.php) | official_guidance | 2023-04-24 | discovered_unverified |
+| KB-2023-0207 — [KI@Schule – Tipps zur ersten Orientierung für Schulen](https://www.schleswig-holstein.de/DE/landesregierung/themen/bildung-hochschulen/digitale-schule/Lernen/ki_schule) | official_guidance | 2023-08 | discovered_unverified |
+| KB-2023-0208 — [Ekspertgruppens foreløbige anbefalinger om ChatGPT](https://www.uvm.dk/-/media/filer/uvm/aktuelt/pdf23/dec/231217-ekspertgruppens-foreloebige-anbefalinger-chatgpt.pdf) | policy_review | 2023-12-17 | discovered_unverified |
 
 ## 2024｜event_year
 
@@ -727,6 +732,11 @@
 | KB-2024-0357 — [Generative Artificial Intelligence (GAI) in Education: Fast Facts](https://education.gov.scot/media/ffnp4zu4/generative-artificial-intelligence-in-education.pdf) | official_guidance | 2024-05 | discovered_unverified |
 | KB-2024-0358 — [2024國際論壇暨AI融入教案電子手冊](https://www.ntpc.edu.tw/home.jsp?id=08967d256147c62a&act=be4f48068b2b0031&dataserno=19fb0bb71a7f45179afa1315c6d79fe8) | official_guidance | 2024 | discovered_unverified |
 | KB-2024-0370 — [Developing artificial intelligence capabilities: Guidance for schools; Guidance for students and parents/carers](https://www.qcaa.qld.edu.au/about/k-12-policies/artificial-intelligence) | official_guidance | 2024-02 | discovered_unverified |
+| KB-2024-0371 — [北京市教育委员会等四部门关于印发《北京市教育领域人工智能应用工作方案》的通知（京教信〔2024〕14号）](https://jw.beijing.gov.cn/xxgk/2024zcwj/2024qtwj/202410/t20241022_3925387.html) | official_guidance | 2024-10-11 | discovered_unverified |
+| KB-2024-0372 — [北京市教育领域人工智能应用指南（2024年）](https://jw.beijing.gov.cn/xxgk/2024zcwj/2024qtwj/202410/t20241028_3929498.html) | official_guidance | 2024-10-28 | discovered_unverified |
+| KB-2024-0373 — [2024년 인공지능 활용 수업 도움 자료](https://www.gne.go.kr/pledge/user/bbs/BD_selectBbs.do?q_bbsSn=1067&q_bbsDocNo=1706561) | official_guidance | 2024-01 | discovered_unverified |
+| KB-2024-0374 — [Joint Media Statement – AI pilot to help tackle WA teacher workloads](https://www.wa.gov.au/government/media-statements/Cook-Labor-Government/Joint-Media-Statement---AI-PILOT-TO-HELP-TACKLE-WA-TEACHER-WORKLOADS-20240811) | government_announcement | 2024-08-12 | discovered_unverified |
+| KB-2024-0375 — [Ekspertgruppen om ChatGPT og andre digitale hjælpemidlers rapport (endelige anbefalinger)](https://www.uvm.dk/-/media/filer/uvm/aktuelt/pdf24/april/240423-ekspertgruppen-om-chatgpt-og-andre-digitale-hjaelpemidlers-rapport.pdf) | policy_review | 2024-04-24 | discovered_unverified |
 | KB-2026-0099 — [NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools](https://go.ncdpi.gov/AI_Guidelines) | official_guidance | 2024-01-16 | bibliographic_checked |
 
 ## 2025｜event_year
@@ -1212,6 +1222,14 @@
 | KB-2025-0474 — [Generative artificial intelligence - guidelines](https://education.nt.gov.au/__data/assets/word_doc/0006/1567896/generative-artificial-intelligence-guidelines.docx) | official_guidance | 2025-10-23 | discovered_unverified |
 | KB-2025-0475 — [AI companions information sheet for educators](https://www.esafety.gov.au/sites/default/files/2025-07/AI-companions-information-sheet-educators.pdf) | official_guidance | 2025-07 | discovered_unverified |
 | KB-2025-0476 — [AI Use in Assessments: Your role in protecting the integrity of qualifications](https://www.jcq.org.uk/knowledge-hub/ai-use-in-assessments-your-role-in-protecting-the-integrity-of-qualifications-2/) | official_guidance | 2025-04-30 | bibliographic_checked |
+| KB-2025-0477 — [中小学人工智能通识教育指南（2025年版）](https://www.cse.edu.cn/index/detail.html?category=31&id=4240) | framework | 2025-05-12 | discovered_unverified |
+| KB-2025-0478 — [中小学生成式人工智能使用指南（2025年版）](https://www.cse.edu.cn/index/detail.html?category=31&id=4242) | official_guidance | 2025-05-12 | discovered_unverified |
+| KB-2025-0479 — [教师生成式人工智能应用指引（第一版）](https://www.moe.gov.cn/s78/A16/gongzuo/gzzl_yb/202601/t20260116_1426761.html) | official_guidance | 2025-11-27 | discovered_unverified |
+| KB-2025-0480 — [北京市教育委员会关于印发《北京市推进中小学人工智能教育工作方案（2025—2027年）》的通知（京教办〔2025〕2号）](https://jw.beijing.gov.cn/xxgk/2024zcwj/2024qtwj/202503/t20250307_4028227.html) | official_guidance | 2025-03-06 | discovered_unverified |
+| KB-2025-0481 — [北京市教育委员会关于印发《北京市中小学人工智能教育地方课程纲要（试行）（2025年版）》的通知（京教基二〔2025〕6号）](https://jw.beijing.gov.cn/xxgk/2024zcwj/2024qtwj/202506/t20250626_4127392.html) | framework | 2025-06-26 | discovered_unverified |
+| KB-2025-0482 — [广东省教育厅关于印发《广东省基础教育人工智能全域场景应用指南》的通知](https://edu.gd.gov.cn/zwgknew/jyzcfg/dfjyzcfg/content/post_4833995.html) | official_guidance | 2025-12-24 | discovered_unverified |
+| KB-2025-0483 — [教育部啟動師資培育導入生成式 AI 教學新篇章](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=58321A9A7F787E37) | government_announcement | 2025-01-16 | discovered_unverified |
+| KB-2025-0484 — [Linee guida per l'introduzione dell'Intelligenza Artificiale nelle istituzioni scolastiche (versione 1.0, allegato al DM n. 166 del 9 agosto 2025)](https://www.mim.gov.it/-/decreto-ministeriale-n-166-del-9-agosto-2025) | official_guidance | 2025-08-09 | discovered_unverified |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
@@ -1567,6 +1585,10 @@
 | KB-2026-0394 — [Florida Sets National Standard for Responsible AI in Classrooms—From VPK Through College](https://www.fldoe.org/newsroom/latest-news/florida-sets-national-standard-for-responsible-ai-in-classroomsfrom-vpk-through-college.stml) | government_announcement | 2026-09-16 | bibliographic_checked |
 | KB-2026-0395 — [Artificial Intelligence (AI) Starter Guide for Districts; Artificial Intelligence (AI) Comprehensive Guide for Districts](https://www.michigan.gov/mde/services/academic-standards/educational-technology/artificial-intelligence) | official_guidance | 2026-05-07 | bibliographic_checked |
 | KB-2026-0397 — [Artificial Intelligence in Education (Guiding Principles for AI Use in Education)](https://education.mn.gov/mdeprod/idcplg?IdcService=GET_FILE&dDocName=PROD084632&RevisionSelectionMethod=latestReleased&Rendition=primary) | official_guidance | 2026-06 | bibliographic_checked |
+| KB-2026-0399 — [학교 단위 AI·디지털 연수 운영 활성화 및 현장 실행력 강화 방안 연구](https://www.kosac.re.kr/menus/244/boards/457/posts/61926) | policy_review | 2026-05-18 | discovered_unverified |
+| KB-2026-0400 — [Ready or not: How are schools responding to Artificial Intelligence?](https://www.evidence.ero.govt.nz/documents/ready-or-not-how-are-schools-responding-to-artificial-intelligence-research-report/) | policy_review | 2026-07-30 | discovered_unverified |
+| KB-2026-0401 — [Niedersachsen bringt KI in den Unterricht – Schul-Chatbot startet landesweit (Presseinformation)](https://www.mk.niedersachsen.de/startseite/aktuelles/presseinformationen/niedersachsen-bringt-ki-in-den-unterricht-schul-chatbot-startet-landesweit-248679.html) | government_announcement | 2026-02-13 | discovered_unverified |
+| KB-2026-0402 — [Brief van de staatssecretaris van OCW over digitalisering in het funderend onderwijs (Kamerstuk 32 034, nr. 82)](https://zoek.officielebekendmakingen.nl/kst-32034-82.pdf) | official_guidance | 2026-06-25 | discovered_unverified |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

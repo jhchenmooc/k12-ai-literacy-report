@@ -1,0 +1,21 @@
+# 各國 K-12 AI 政策與指引：待判斷項目入庫（2026-10-21）
+
+管理者 2026-10-21 在文獻 session 對政策待判斷 27 項回覆「照建議」。文獻 session 的收錄清單是私人 repo `from-literature-session/policy-agencies/intake-judge-1021.csv`（分支 `lit-session-policy-judge`），共 22 筆。入庫規則同 [第 1 批](policy-agencies-batch1-2026-10-13.md)，背景政策同 [第 2 批](policy-agencies-batch2-2026-10-14.md)「背景政策」。逐筆清單（含中文題名、日期依據、管理者決定與備註）見 [`policy-judge-2026-10-21.csv`](policy-judge-2026-10-21.csv)。
+
+## 編輯 session 入庫核對
+
+- 22 筆全部寫入：中國 9（教育部 3、北京 4、廣東 1）、德國 3、韓國 3、澳洲 2、丹麥 2、臺灣 1、義大利 1、紐西蘭 1、荷蘭 1（背景政策）。全部 `discovered_unverified`。
+- A 類 15 筆、B 類 6 筆（北京 2，廣東、首爾教育研究院、西澳、下薩克森各 1）；荷蘭 Kamerstuk 32 034 nr. 82 為背景政策，只標 K1、`TOPIC_POLICY`、`issued_by`、國別，不標 A／B、面向與學段。
+- **網址**：預設官方頁；與既有紀錄共用官方頁者改用官方檔案網址（塔斯馬尼亞 DECYP Policy，與 KB-2023-0193 Procedure 共用政策列表頁）。
+  - 中國教育部兩份指南（#1、#2）用中國教育學會全文頁，發布單位記教育部基礎教育教學指導委員會（O-CN-MOE-JZW）。
+  - 教師生成式 AI 應用指引（#3）用教育部網站工作月報頁。
+- **日期**：照文獻 session 的官方日期依據。塔斯馬尼亞（#16）用政策版本日 2023-11-10；義大利（#14）用部令日期，官方頁被擋、上網日未核；韓國慶南（#10）、什列斯威-霍爾斯坦（#23）只到月。
+- **類型**：西澳（#17）媒體聲明記 `government_announcement`；報告記 `policy_review`；課程綱要與指南記 `framework`。
+- **重複檢查**：與既有紀錄的網址、題名無重複。紐西蘭 ERO〈Ready or not〉主報告與已收的國小、中學版（KB-2026-0377、0378）分開；塔斯馬尼亞 Policy 與已收的 Procedure（KB-2023-0193）分開。
+- 新發布機關代碼依既有 `O-國別-機構` 格式：O-CN-MOE-JZW、O-CN-MOE-JSZW、O-CN-BJ-JW、O-KR-SERII、O-KR-KOFAC、O-IT-MIM、O-AU-WA-DOE、O-DE-BE-SENBJF、O-DE-NI-MK、O-DE-SH-MBWFK、O-DK-UVM、O-NL-OCW。
+- 紀錄 KB-2023-0204～0208、KB-2024-0371～0375、KB-2025-0477～0484、KB-2026-0399～0402；關聯 KR-14072～14291。
+
+## 不收或暫緩（文獻 session 與管理者決定）
+
+- 不收：#15、#20、#22、#27。
+- 暫緩：#8 廣東平台融合應用指南（雲端連線被重置，附件未讀）。
