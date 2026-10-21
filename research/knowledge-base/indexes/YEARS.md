@@ -1211,6 +1211,7 @@
 | KB-2025-0473 — [養成孩子以AI輔助學習素養，臺北市率先全國發佈全學層「AI素養教材」（《資訊素養與倫理》新單元「AI未來新世界」）](https://www.doe.gov.taipei/News_Content.aspx?n=B3DDF0458F0FFC11&s=E3C0C506B1AF7BFC) | framework | 2025-07-30 | discovered_unverified |
 | KB-2025-0474 — [Generative artificial intelligence - guidelines](https://education.nt.gov.au/__data/assets/word_doc/0006/1567896/generative-artificial-intelligence-guidelines.docx) | official_guidance | 2025-10-23 | discovered_unverified |
 | KB-2025-0475 — [AI companions information sheet for educators](https://www.esafety.gov.au/sites/default/files/2025-07/AI-companions-information-sheet-educators.pdf) | official_guidance | 2025-07 | discovered_unverified |
+| KB-2025-0476 — [AI Use in Assessments: Your role in protecting the integrity of qualifications](https://www.jcq.org.uk/knowledge-hub/ai-use-in-assessments-your-role-in-protecting-the-integrity-of-qualifications-2/) | official_guidance | 2025-04-30 | bibliographic_checked |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
@@ -1563,6 +1564,8 @@
 | KB-2026-0391 — [아시아태평양경제협력체(APEC) 학교 경영자, 함께 모여 인공지능 기반 교육 혁신의 길을 찾다](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107458&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | government_announcement | 2026-10-20 | bibliographic_checked |
 | KB-2026-0392 — [Critical Fairness Literacy for PK–12 teachers: a fairness-specific dimension of teacher AI competency](https://doi.org/10.1080/15391523.2026.2749067) | journal_article | 2026-10-20 | bibliographic_checked |
 | KB-2026-0393 — [中小學使用「生成式人工智慧」注意事項2.1（學生版）](https://pads.moe.edu.tw/download_file.php?file=_upload_a3b3bb86d9d61dfb4683ec0360041e4b.pdf&old=upload) | official_guidance | 2026-02-11 | bibliographic_checked |
+| KB-2026-0394 — [Florida Sets National Standard for Responsible AI in Classrooms—From VPK Through College](https://www.fldoe.org/newsroom/latest-news/florida-sets-national-standard-for-responsible-ai-in-classroomsfrom-vpk-through-college.stml) | government_announcement | 2026-09-16 | bibliographic_checked |
+| KB-2026-0395 — [Artificial Intelligence (AI) Starter Guide for Districts; Artificial Intelligence (AI) Comprehensive Guide for Districts](https://www.michigan.gov/mde/services/academic-standards/educational-technology/artificial-intelligence) | official_guidance | 2026-05-07 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
@@ -1620,5 +1623,6 @@
 | KB-2026-0368 — [Guidelines for AI Integration Throughout Education in the Commonwealth of Virginia](https://www.education.virginia.gov/resources/artificial-intelligence/) | official_guidance | 未知 | discovered_unverified |
 | KB-2026-0384 — [Guidance for the Responsible Use of Artificial Intelligence: Executive Summary](https://marylandpublicschools.org/about/documents/dccr/ai/01-ai-guidance-executive-summary-a.pdf) | official_guidance | 未知 | discovered_unverified |
 | KB-2026-0385 — [Artificial Intelligence: Guidance for K-12 Classrooms](https://www.mdek12.org/sites/default/files/Offices/MDE/OTSS/DL/ai_guidance_final.pdf) | official_guidance | 未知 | discovered_unverified |
+| KB-2026-0396 — [Artificial Intelligence (AI) for Instructional Purposes Guidance](https://www.michigan.gov/mde/-/media/Project/Websites/mde/general/AI_Instructional_Purposes_-Final1.pdf) | official_guidance | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
