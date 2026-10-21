@@ -324,6 +324,42 @@
    "doi": "10.1155/ahci/8302982",
    "screening_note": "Listed for observation 2026-10-20 (venue not on the watchlist); manager approved inclusion and supplied the publisher PDF the same day. Verified 2026-10-20 for daily brief 2026-10-20 (author-abstract attributed summary).",
    "verification_completed_on": "2026-10-20"
+  },
+  {
+   "candidate_id": "W2026-10-16-A10",
+   "category": "news_policy",
+   "source_url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107458&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N",
+   "source_title": "아시아태평양경제협력체(APEC) 학교 경영자, 함께 모여 인공지능 기반 교육 혁신의 길을 찾다",
+   "source_organization": "교육부（韓國教育部）",
+   "source_publication_date": "2026-10-20",
+   "source_locator": "韓國教育部 보도자료頁（boardSeq 107458，登錄日 2026-10-20）與附件新聞稿 hwpx：배포 2026-10-20 08:00、網路解禁 2026-10-20 12:00 KST；摘要歸屬：副標第 2 行、第 1 段與其註、第 3 段、第 5 段",
+   "discovered_on": "2026-10-21",
+   "discovery_batch_id": "2026-10-21-daily-1",
+   "first_disclosed_on": "2026-10-20",
+   "source_updates": [],
+   "original_excerpt": "교육부(장관 최교진)는 10월 21일(수)부터 23일(금)까지 3일간 서울 스탠포드호텔에서 ‘2026년 아시아태평양경제협력체(APEC, 이하 에이펙) 스쿨리더십 프로그램*’(이하, 연수)을 개최한다.",
+   "source_checked": true,
+   "claim_text": "來源機構：교육부（韓國教育部）；資料標題：아시아태평양경제협력체(APEC) 학교 경영자, 함께 모여 인공지능 기반 교육 혁신의 길을 찾다；來源刊登日：2026-10-20。",
+   "claim_class": "bibliographic",
+   "risk_tier": "low",
+   "scope_limitation": "韓國教育部研習預告（10-21～10-23），對象為 APEC 中小學校長與副校長；非政策文件。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "第一輪 2026-10-21T00:28Z 子代理讀韓國教育部 보도자료頁與附件 hwpx 正文，本 session 擇副標第 2 行、第 1 段與其註、第 3、5 段撰寫中文摘要；第二輪 2026-10-21 由隔離子代理逐項對照韓文原文（機構、日期、地點、名稱、對象、主題、人數、參訪地點、時態、禁用詞），判定一致，依建議改為「將於…舉辦」以免讀成已辦理，並把소프트랩改譯為「Soft Lab」。同一模型，非獨立審閱。",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS",
+    "T-PD",
+    "T-TEA"
+   ],
+   "ai_lit_note": "對象為其他教育關係人：以中小學校長、副校長為對象的人工智慧時代學校領導力研習公告（依準則 AI 素養活動公告判 A），對應 T-BAS「參與AI校園治理部署與決策」、T-PD 與 T-TEA",
+   "audience": "other_stakeholders",
+   "source_country": "KR",
+   "screening_note": "Verified 2026-10-21 for daily brief 2026-10-21 (official attributed summary; training event announcement).",
+   "verification_completed_on": "2026-10-21"
   }
  ],
  "search_runs": [
@@ -445,6 +481,37 @@
    ],
    "discovered": 3,
    "added": 3,
+   "duplicates": 0
+  },
+  {
+   "batch_id": "2026-10-21-daily-1",
+   "searched_on": "2026-10-21",
+   "lookback_days": 7,
+   "lookback_days_target": 30,
+   "sources": [
+    {
+     "group": "research-doi",
+     "query": "Crossref filter=from-created-date:2026-10-20,until-created-date:2026-10-20,type:journal-article, six query.bibliographic sets rows=40, one proceedings-article set, watchlist-ISSN sets (22 journals, with and without keywords), 2026-10-21T00:25Z; publisher pages one try each (T&F 403, Springer Client Challenge, Frontiers 200)",
+     "status": "ok"
+    },
+    {
+     "group": "preprint",
+     "query": "arXiv API (https) three queries 40/40/100 sorted by submittedDate; alphaXiv discovery after 2026-10-14 verified by arXiv API and abs page",
+     "status": "ok"
+    },
+    {
+     "group": "official-policy",
+     "query": "GOV.UK Search and Content API, Federal Register (curl -g; 10-20 issue, 10-21 not yet online), MEXT, China MOE, HK info.gov.hk 10-20/10-21, KICE, MOE Korea (hwpx attachments), KERIS, UNESCO newsroom, Eurydice news; E5a seven-day look-back",
+     "status": "ok"
+    },
+    {
+     "group": "taiwan-central",
+     "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (115-10-20 issue) and RSS, NSTC RSS, MODA press releases page 1; E5a seven-day look-back",
+     "status": "ok"
+    }
+   ],
+   "discovered": 1,
+   "added": 1,
    "duplicates": 0
   }
  ],
