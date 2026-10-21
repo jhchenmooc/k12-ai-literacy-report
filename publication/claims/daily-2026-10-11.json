@@ -106,7 +106,7 @@
     "claim_id": "D20261011-03",
     "candidate_id": "W2026-10-09-A16",
     "kind": "research",
-    "claim_text": "來源機構：Journal of Educational Computing Research (SAGE)；資料標題：Socratic, Artifact-Gated Generative AI Scaffolding in a 6E Inquiry Unit: A Clustered Quasi-Experiment in Elementary Students’ Computational Thinking；來源刊登日：2026-10-10。作者摘要報告：在臺灣 10 個國小三年級班級（229 人）進行群集準實驗，於六節 6E 探究單元中由生成式 AI 家教 TALPer 依學生作品提出蘇格拉底式提問，比較運算思維與內在動機；作者稱結果屬初步證據，且為綑綁式介入，無法區分個別要素作用。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+    "claim_text": "來源機構：Journal of Educational Computing Research (SAGE)；資料標題：Socratic, Artifact-Gated Generative AI Scaffolding in a 6E Inquiry Unit: A Clustered Quasi-Experiment in Elementary Students’ Computational Thinking；來源刊登日：2026-10-10。作者摘要報告：在臺灣 10 個國小三年級班級（229 人）進行群集準實驗，於六節 6E 探究單元中由生成式 AI 家教 TALPer 提供由學生發起、依學生作品而定的蘇格拉底式提問，比較運算思維與內在動機；作者稱結果屬初步證據，且為綑綁式介入，無法區分個別要素作用。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
     "claim_class": "descriptive",
     "risk_tier": "medium",
     "level": "V2",
@@ -149,6 +149,6 @@
       "Ten intact Grade 3 classes in Taiwan (N = 229) completed the same curriculum, tasks, teacher, platform, and instructional time.",
       "Findings provide preliminary evidence concerning the bundled intervention but do not isolate component contributions."
     ],
-    "attributed_summary": "在臺灣 10 個國小三年級班級（229 人）進行群集準實驗，於六節 6E 探究單元中由生成式 AI 家教 TALPer 依學生作品提出蘇格拉底式提問，比較運算思維與內在動機；作者稱結果屬初步證據，且為綑綁式介入，無法區分個別要素作用。"
+    "attributed_summary": "在臺灣 10 個國小三年級班級（229 人）進行群集準實驗，於六節 6E 探究單元中由生成式 AI 家教 TALPer 提供由學生發起、依學生作品而定的蘇格拉底式提問，比較運算思維與內在動機；作者稱結果屬初步證據，且為綑綁式介入，無法區分個別要素作用。"
   }
 ]
