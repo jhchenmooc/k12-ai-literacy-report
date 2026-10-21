@@ -232,6 +232,12 @@
 | KB-2023-0201 — [Assessment of Intelligent Teaching Preparation of EFL Teachers: Based on Two-Year Data Comparison](https://doi.org/10.58459/icce.2023.1377) | conference_paper | 未知 | discovered_unverified |
 | KB-2023-0202 — [Constructing a Natural Conversation Learning Activity to Improve Students’ English-Speaking Skills](https://doi.org/10.58459/icce/2023/1077) | conference_paper | 未知 | discovered_unverified |
 | KB-2023-0203 — [Build-a-Bot: Teaching Conversational AI Using a Transformer-Based Intent Recognition and Question Answering Architecture](https://doi.org/10.1609/aaai.v37i13.26903) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0209 — ["A.I. Is Smart Technology!" Expert-Novice Conceptions of Artificial Intelligence, Machine Learning, and Mathematics](https://doi.org/10.3102/2010006) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0210 — [An Effective Approach for Artificial Intelligence Education Based on Self-Determination Theory (Poster 1)](https://doi.org/10.3102/2008576) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0211 — [Evidence-Based Development of an Instrument for the Assessment of Teachers' Artificial Intelligence Competence](https://doi.org/10.3102/2006835) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0212 — [Exploring Teachers’ Self-Perceived Effectiveness, Readiness, and Ability to Adapt an AI Literacy Curriculum in an International Classroom Context (Poster 20)](https://doi.org/10.3102/2004458) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0213 — [Simulated Approximation of Practices in Mathematics: Development of Artificial Intelligence–Based Chatbot](https://doi.org/10.3102/2017895) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0214 — [The Moderating Role of Gender, Artificial Intelligence Knowledge, and Discipline Knowledge in Students' Self-Regulated Learning](https://doi.org/10.3102/2008612) | conference_paper | 未知 | discovered_unverified |
 
 ## 2023｜first_publication
 
@@ -514,6 +520,14 @@
 | KB-2024-0367 — [Teachers’ Perspectives on Integrating AI tools in Classrooms: Insights from the Philippines](https://doi.org/10.58459/icce.2024.4964) | conference_paper | 未知 | discovered_unverified |
 | KB-2024-0368 — [The Impact of AI Literacy on Teacher Efficacy and Identity: A Study of Korean English Teachers](https://doi.org/10.58459/icce.2024.5057) | conference_paper | 未知 | discovered_unverified |
 | KB-2024-0369 — [AI, Ethics, and Education: The Pioneering Path of Sidekick Academy](https://doi.org/10.1609/aaai.v38i21.30377) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0376 — [Exploring Student Acceptance of Artificial Intelligence in Engineering Design](https://doi.org/10.3102/2112358) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0377 — [Exploring Teachers’ Pedagogical Practices and Experiences of Integrating Artificial Intelligence Into Teaching: A Case Study](https://doi.org/10.3102/2104569) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0378 — [Of Teachers and Centaurs: Exploring the Intra-Actions of Educators + Artificial Intelligence](https://doi.org/10.3102/2109407) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0379 — [Predicting Student Engagement Levels in Language-Based AI Curriculum: A Hybrid BERT-MLP Model Approach](https://doi.org/10.3102/2105859) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0380 — [Responsible Artificial Intelligence for Teachers: An Integrated Framework (Poster 51)](https://doi.org/10.3102/2103565) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0381 — [Teachers’ Conceptualization of the Role of AI in Promoting Equity](https://doi.org/10.3102/2113831) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0382 — [The AI Assistant in Teacher Online Professional Learning Communities: What Matters Most, and How?](https://doi.org/10.3102/2105510) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0383 — [“AI Is No More a Magic Box”: A Case Study of an AI Educational Program](https://doi.org/10.3102/2111691) | conference_paper | 未知 | discovered_unverified |
 
 ## 2024｜first_publication
 
