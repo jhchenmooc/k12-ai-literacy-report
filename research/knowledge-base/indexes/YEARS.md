@@ -1561,6 +1561,7 @@
 | KB-2026-0389 — [AIgnite: an educational toolkit for supporting primary students’ AI literacy cultivation](https://doi.org/10.1007/s11423-026-10716-w) | journal_article | 2026-10-19 | bibliographic_checked |
 | KB-2026-0390 — [Psychological Mechanisms of Generative AI Discontinuance Intention Among Chinese K–12 Teachers](https://doi.org/10.1155/ahci/8302982) | journal_article | 2026-10-18 | bibliographic_checked |
 | KB-2026-0391 — [아시아태평양경제협력체(APEC) 학교 경영자, 함께 모여 인공지능 기반 교육 혁신의 길을 찾다](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107458&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | government_announcement | 2026-10-20 | bibliographic_checked |
+| KB-2026-0392 — [Critical Fairness Literacy for PK–12 teachers: a fairness-specific dimension of teacher AI competency](https://doi.org/10.1080/15391523.2026.2749067) | journal_article | 2026-10-20 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

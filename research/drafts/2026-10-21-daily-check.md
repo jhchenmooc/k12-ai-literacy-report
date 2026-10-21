@@ -1,4 +1,4 @@
-# 每日短訊查核紀錄：2026-10-21（1 則）
+# 每日短訊查核紀錄：2026-10-21（2 則，含管理者提供截圖後補登 1 則）
 
 > 每日短訊例行作業，由排程觸發，在每日短訊專用 session 執行。檢索由同 session 三個子代理（國際研究、國際政策、臺灣中央來源）執行，判讀由本 session 複核。查詢時間 2026-10-21T00:24Z–00:31Z（UTC）。請求未帶 email 或 mailto；遇 403、Client Challenge 或驗證頁都未繞過。結果：**發布 1 則**（國際 D20261021-01，官方摘要型；臺灣 0 則）。今天週三，週四專屬來源不查。規則凍結至 11/03（見 research/exceptions.md）。
 
@@ -106,4 +106,10 @@
 
 ## 既有候選池
 
-本週（10-16～10-22）候選池 10 筆，皆 publish（A01～A10）。
+本週（10-16～10-22）候選池 11 筆，皆 publish（A01～A11；A11 為補記後新增）。
+
+## 補記（2026-10-21，管理者提供截圖後）
+
+- **補登 D20261021-02：** J08 `10.1080/15391523.2026.2749067`〈Critical Fairness Literacy for PK–12 teachers: a fairness-specific dimension of teacher AI competency〉。管理者提供出版者 PDF 首頁截圖（Received 2026-04-01、Revised 2026-10-05、Accepted 2026-10-11，開放取用 CC BY 4.0，PDF 首頁無上線日），首發日依 Crossref published-online 2026-10-20（T&F 403）。概念性論文，以 PK–12 教師為對象提出「批判性公平素養」（CFL）框架與三項實務程序，作者自述仍需實證檢驗。A（T-ETH、T-PD），k12。以摘要第 2、3、4、6 句撰寫。第二輪由隔離子代理逐字核對轉錄與截圖一致，並依建議補上「連結課堂判斷與專業學習」「理論性提案」、以「教育公平」區分 equity 與 fairness、標註 CFL。候選池 W2026-10-16-A11；知識庫 KB-2026-0392（KR-14028～14038）。
+- 本頁加 `revised_on: 2026-10-21`，並在 `publication/corrections.json` 記一筆（daily-2026-10-21-r1）。
+- 截圖存私人 repo `from-editor-session/daily-pdfs/KB-2026-0392__jrte-2749067__pdf-first-page-screenshot.png`，已登記於 FULLTEXT-INDEX.md。瀏覽器清單此項已處理完畢。

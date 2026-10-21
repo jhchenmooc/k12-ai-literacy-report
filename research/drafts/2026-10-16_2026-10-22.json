@@ -360,6 +360,41 @@
    "source_country": "KR",
    "screening_note": "Verified 2026-10-21 for daily brief 2026-10-21 (official attributed summary; training event announcement).",
    "verification_completed_on": "2026-10-21"
+  },
+  {
+   "candidate_id": "W2026-10-16-A11",
+   "category": "research",
+   "source_url": "https://doi.org/10.1080/15391523.2026.2749067",
+   "source_title": "Critical Fairness Literacy for PK–12 teachers: a fairness-specific dimension of teacher AI competency",
+   "source_organization": "Journal of Research on Technology in Education (Taylor & Francis)",
+   "source_publication_date": "2026-10-20",
+   "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：T&F 回 403；PDF 首頁無上線日）：2026-10-20；出版者 PDF 首頁（管理者 2026-10-21 提供截圖）：Received 1 April 2026、Accepted 11 October 2026；摘要歸屬：Abstract 第 2、3、4、6 句",
+   "discovered_on": "2026-10-21",
+   "discovery_batch_id": "2026-10-21-daily-1",
+   "first_disclosed_on": "2026-10-20",
+   "source_updates": [],
+   "original_excerpt": "This conceptual paper develops Critical Fairness Literacy (CFL) through a structured synthesis of literature on teacher AI competency, critical AI literacy, algorithmic fairness, educational AI ethics, and educational equity.",
+   "source_checked": true,
+   "claim_text": "來源機構：Journal of Research on Technology in Education (Taylor & Francis)；資料標題：Critical Fairness Literacy for PK–12 teachers: a fairness-specific dimension of teacher AI competency；來源刊登日：2026-10-20。",
+   "claim_class": "bibliographic",
+   "risk_tier": "low",
+   "scope_limitation": "監測清單 J08；PK–12 教師公平素養概念性論文，未經實證。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "第一輪 2026-10-21 讀管理者提供的出版者 PDF 首頁截圖，轉錄摘要並擇第 2、3、4、6 句撰寫中文摘要；第二輪 2026-10-21 由隔離子代理逐字核對轉錄與截圖一致，並逐項對照譯名與保留語，依建議補上「連結課堂判斷與專業學習」「理論性提案」、以「教育公平」區分 equity 與 fairness、標註 CFL。同一模型，非獨立審閱。",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-ETH",
+    "T-PD"
+   ],
+   "ai_lit_note": "在職教師評估 AI 公平性的專業判斷與專業學習（依準則教師 AI 素養判 A），對應 T-ETH「識別AI倫理風險」與 T-PD",
+   "audience": "k12",
+   "doi": "10.1080/15391523.2026.2749067",
+   "screening_note": "Held 2026-10-21 (no abstract readable); manager supplied a screenshot of the publisher PDF first page the same day. Verified 2026-10-21 for daily brief 2026-10-21 (author-abstract attributed summary).",
+   "verification_completed_on": "2026-10-21"
   }
  ],
  "search_runs": [
@@ -510,8 +545,8 @@
      "status": "ok"
     }
    ],
-   "discovered": 1,
-   "added": 1,
+   "discovered": 2,
+   "added": 2,
    "duplicates": 0
   }
  ],

@@ -3,6 +3,16 @@
   "note": "更正與改版紀錄（第二次三刊聯合評審 E3e，管理者 2026-10-17）。每筆列出舊說法、新說法、日期與原因；頁面 corrections/index.html 由 research/render-site.js 依本檔產生。",
   "entries": [
     {
+      "id": "daily-2026-10-21-r1",
+      "date": "2026-10-21",
+      "path": "daily/2026-10-21/",
+      "target": "每日短訊 2026-10-21",
+      "type": "補登與補齊",
+      "old": "1 則；J08 Journal of Research on Technology in Education 一篇因讀不到摘要、無法確認對象而未發。",
+      "new": "補登 D20261021-02（PK–12 教師「批判性公平素養」概念性論文，作者摘要歸屬型）。",
+      "reason": "管理者當日提供出版者 PDF 首頁截圖，摘要與對象可核對；首次公開日在本期前 7 天內。"
+    },
+    {
       "id": "daily-2026-10-20-r1",
       "date": "2026-10-20",
       "path": "daily/2026-10-20/",
