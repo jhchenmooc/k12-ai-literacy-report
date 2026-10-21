@@ -184,7 +184,7 @@ ai_lit_class,ai_lit_dims,ai_lit_note
 - **AI 素養範圍**：學段之外另判 A／B／C（[AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)）；期刊或會議名稱含 AI 不等於屬 A 或 B，AI 只作研究方法或系統後端者為 C。
 - **證據強度**：閱讀優先級 P1/P2/P3 與方法品質分開；自陳、橫斷 SEM、量表驗證及 RCT 不可用同一因果語言。
 - **會議索引**：以每篇論文 DOI／論文集正式上線日為時間判準，非僅會議活動日期；Full、Short、Poster、Workshop 各自標記。
-- **監測範圍**：收錄 49 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
+- **監測範圍**：收錄 50 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
 - **品質確認**：監測候選池要記錄 `verification_status`（verified / partial / pending）、`population_level`、`evidence_design`、`publication_status`，不可僅以期刊名稱推斷研究品質。
 
 ## 10. 維護提醒

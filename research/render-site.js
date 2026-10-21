@@ -216,7 +216,7 @@ const TW_NOT_SEARCHED="本期尚未納入臺灣來源查核（2026-10-18 起納�
 const WEEKLY_TW_NOTE_MAX=2,WEEKLY_TW_COMPARE_MAX=3;
 /* 國外反思選讀, first named 風險關切與政策調整 (manager decision 2026-10-19, plan F2): marked items of this issue, listed between the
    briefs and the background; each line is built from the item's fields so the section carries no editorial verbs. */
-const CAUTION_FROM_PERIOD="2026-10-16",CAUTION_HEADING="國外反思選讀";
+const CAUTION_FROM_PERIOD="2026-10-16",CAUTION_HEADING="國外反思選讀",CAUTION_SUB="（只選批評與風險，非國外整體評價）";
 const CAUTION_INTRO="這裡收的是國外機構、團體或研究者公開表達的擔憂與批評，或已經調整的政策做法；本段只選批評、風險與政策調整，不選正面評估；本刊只轉述，是否適用於臺灣，本刊不判斷。本段每一則都由管理者逐則確認摘錄、譯文與分類；這是本刊依監測範圍選錄的項目，不是完整蒐集（收錄條件見<a href=\"../../about/#caution\">查核方法</a>）。";
 /* 國外反思選讀 items (manager decision 2026-10-20, plans 甲 and 乙): commentary, statements and risk passages that run
    only in this section, in the weekly (weekly_section "reflection") and the monthly (section "reflection"). The whole
@@ -241,10 +241,10 @@ const CAUTION_DIRECTION={tighten:"收緊",loosen:"放寬",other:"其他"};
 const cautionWho=c=>{const d=Array.isArray(c.ai_lit_dims)?c.ai_lit_dims:[],w=[];if(d.some(x=>x.startsWith("S-")))w.push("學生");if(d.some(x=>x.startsWith("T-")))w.push("教師");if(c.audience==="other_stakeholders")w.push("家長與行政");return w.length?w.join("、"):"中小學"};
 function weeklyCaution(claims,n){
  const order=["featured","briefs","late"],marked=order.flatMap(k=>claims.filter(c=>c.weekly_section===k&&c.caution_kind));
- const all=claims.filter(c=>order.includes(c.weekly_section)).length,late=claims.filter(c=>c.weekly_section==="late").length,cnt=f=>marked.filter(f).length;
+ const cnt=f=>marked.filter(f).length;
  const extra=claims.filter(c=>c.weekly_section==="reflection"),labels=[...marked.map(c=>CAUTION_LABEL[c.caution_kind]),...extra.map(c=>REFLECT_TYPES[c.reflect_type])].map(x=>String(x).replace(/（.*$/,""));
  const kinds=REFLECT_ORDER.filter(x=>labels.includes(x)).map(x=>x+" "+labels.filter(y=>y===x).length+" 則");
- const tally="本期刊出 "+all+" 則"+(late?"（含上期補登 "+late+" 則）":"")+"，依本刊監測範圍，不代表各國分布；本段列 "+labels.length+" 則（本期項目標記 "+marked.length+" 則、另選錄 "+extra.length+" 則）"+(kinds.length?"："+kinds.join("、"):"")+"。";
+ const tally="本段列 "+labels.length+" 則（本期項目標記 "+marked.length+" 則、另選錄 "+extra.length+" 則）"+(kinds.length?"："+kinds.join("、"):"")+"。";
  const line=c=>{
   const num=n.get(c.claim_id),ref='<a href="#'+anchor(num)+'">'+(/^\d+$/.test(num)?"第 "+num+" 則":num)+"</a>";
   const label=CAUTION_LABEL[c.caution_kind]+(c.caution_kind==="policy_change"?"（"+CAUTION_DIRECTION[c.caution_direction]+"）":"");
@@ -253,7 +253,7 @@ function weeklyCaution(claims,n){
  };
  const more="";
  const body=marked.length||extra.length?"<ul>"+marked.map(line).join("")+extra.map(c=>reflectionItem(c,n)).join("")+"</ul>":"<p>本期未見符合條件的項目。</p>";
- return {count:marked.length+extra.length,html:'<section id="sec-caution"><h2>'+CAUTION_HEADING+"</h2><p>"+CAUTION_INTRO+"</p><p>"+tally+more+"</p>"+body+"</section>"};
+ return {count:marked.length+extra.length,html:'<section id="sec-caution"><h2>'+CAUTION_HEADING+CAUTION_SUB+"</h2><p>"+CAUTION_INTRO+"</p><p>"+tally+more+"</p>"+body+"</section>"};
 }
 const WEEKLY_OPTIONAL=new Set(["overview","late","background","tw_note","tw_compare"]);
 const WEEKLY_EMPTY="本期無合格項目。",WEEKLY_FEATURED_MAX=5,WEEKLY_OVERVIEW_MAX=3,WEEKLY_BACKGROUND_MAX=3;
@@ -378,7 +378,7 @@ const MONTHLY_SECTIONS=[
  ["policy","政策動態",""],
  ["research","研究動態",""],
  ["scholars","本刊追蹤學者本月新作","選取方式：本刊追蹤學者清單上已確認的學者，在本期觀察期間正式刊出、且屬 AI 素養範圍的論文；每人至多 2 則、每個研究群至多 4 則，並標明主要對象。"],
- ["trends","學者觀點動向","本刊分析：彙整追蹤學者近三個月新作中反覆出現的論點；每項至少有兩個不同研究群的來源支持，同一研究群只算一個來源。不含對臺灣的建議，未經真人審閱。"]];
+ ["trends","學者觀點動向","本刊分析：彙整追蹤學者近三個月新作中反覆出現的論點；每項至少有兩個不同研究群（以研究群名稱區分）的來源支持，同一研究群只算一個來源；不代表領域共識。不含對臺灣的建議，未經真人審閱。"]];
 const MONTHLY_EMPTY="本期無合格項目。",MONTHLY_ANALYSIS="本刊分析",MONTHLY_BASIS="依據來源";
 const MONTHLY_FIXED=new Set([...MONTHLY_SECTIONS.flatMap(([,h,intro])=>intro?[h,intro]:[h]),MONTHLY_EMPTY,MONTHLY_ANALYSIS,MONTHLY_BASIS]);
 function monthlyMain(claims){
@@ -419,7 +419,7 @@ const MONTHLY_INTL=[
  ["policy","政策與官方文件","本段只收沒有刊在每日短訊或週報的官方文件；原文僅標示年月者另註明。"],
  ["research","研究","本段只收沒有刊在每日短訊或週報的研究；可收師培、大學與成人對象並標明對象，重要研究依全文列出樣本、設計、作者所述發現與限制。"],
  ["scholars","重要學者本月新作","本刊追蹤學者在本期正式刊出、屬 AI 素養範圍的論文；每人至多 2 則、每個研究群至多 4 則。"],
- ["trends","學者觀點動向",MONTHLY_ANALYSIS_NOTE+"：本刊追蹤學者近三個月新作中反覆出現的論點；每項至少有兩個彼此無合作關係的團隊支持，其中至少一則為以中小學為對象的同儕審查研究。"],
+ ["trends","學者觀點動向",MONTHLY_ANALYSIS_NOTE+"：本刊追蹤學者近三個月新作中反覆出現的論點；每項至少有兩個彼此無合作關係的團隊支持，其中至少一則為以中小學為對象的同儕審查研究；不代表領域共識。"],
  ["reflection",CAUTION_HEADING,REFLECT_MONTHLY_INTRO],
  ["background","背景資料","與本期項目相關、但首次公開早於本期的文件；非本月新訊。"]];
 const MONTHLY_TW=[
@@ -537,7 +537,7 @@ function monthlyMainSectioned(e){
   const items=of(key);
   if(key==="tw_listing"){toc.push([key,heading,listing.tw.length]);return sec(key,heading,intro,listing.tw.length?"<ul>"+listing.tw.map(x=>listingItem(x,n)).join("")+"</ul>":"<p>"+WEEKLY_EMPTY+"</p>")}
   if(!items.length&&MONTHLY_OPTIONAL.has(key))return "";
-  if(key==="reflection"){if(String(e.period)<REFLECT_MONTHLY_FROM)return "";if(reflectMonthlyMax(e.period)>REFLECT_MONTHLY_MAX)intro+="本號另補上月回溯，至多 "+reflectMonthlyMax(e.period)+" 則。";toc.push([key,heading,items.length]);return sec(key,heading,intro,items.length?"<ul>"+items.map(c=>reflectionItem(c,n)).join("")+"</ul>":"<p>本期未見符合條件的項目。</p>")}
+  if(key==="reflection"){if(String(e.period)<REFLECT_MONTHLY_FROM)return "";if(reflectMonthlyMax(e.period)>REFLECT_MONTHLY_MAX)intro+="本號另補上月回溯，至多 "+reflectMonthlyMax(e.period)+" 則。";toc.push([key,heading,items.length]);return sec(key,heading+CAUTION_SUB,intro,items.length?"<ul>"+items.map(c=>reflectionItem(c,n)).join("")+"</ul>":"<p>本期未見符合條件的項目。</p>")}
   toc.push([key,heading,["overview_line","overview","tw_note"].includes(key)?null:key==="trends"?items.filter(c=>c.assertion_type==="editorial_analysis").length:items.length]);
   let body;
   if(key==="tw_research"&&e.taiwan_journals_not_searched===true&&!items.length)body="<p>"+MONTHLY_TW_NOT_SEARCHED+"</p>";
@@ -559,7 +559,7 @@ function monthlyMainSectioned(e){
  const nav=monthlyNav(e.period,(e.context&&e.context.months)||[]),r=periodRange("monthly",e.period);
  return tocList+'<section id="sec-intl" data-region="intl"><h2>國際</h2>'+intl+"</section><hr>"+
   '<section id="sec-tw" data-region="tw"><h2>臺灣</h2><p>'+MONTHLY_TW_INTRO+"</p>"+twParts+"</section>"+
-  '<section id="sec-summary"><h2>本月整理</h2>'+sec("stats","本月概況","依本期登記的每日短訊、週報與本月報計算。","<p>"+monthlySummary(e,claims,listing,w)+"</p>")+sec("listing","本月週報與每日短訊一覽","本期首次公開、已刊於週報或每日短訊的項目，依期別列出；內容請見各期。",listingBody)+"</section>"+
+  '<section id="sec-summary"><h2>本月整理</h2>'+sec("stats","本月概況","依本期登記的每日短訊、週報與本月報計算；依本刊監測來源，各國檢查頻率不同。","<p>"+monthlySummary(e,claims,listing,w)+"</p>")+sec("listing","本月週報與每日短訊一覽","本期首次公開、已刊於週報或每日短訊的項目，依期別列出；內容請見各期。",listingBody)+"</section>"+
   nav+"<p>引用本期：K-12 AI 素養國際動態，月報 "+r.year+" 年 "+r.month+" 月。"+SITE_URL+"monthly/"+esc(e.period)+"/（引用時請註明查閱日期）</p>";
 }
 const renderWeeklyEdition=e=>renderPeriodEdition("weekly",e),renderMonthlyEdition=e=>renderPeriodEdition("monthly",e);
@@ -709,10 +709,10 @@ function renderArchiveIndex(data){
 
 /* ---------- about ---------- */
 function renderAbout(){
- const head='<div class="kicker">查核方法</div><h1>每一種內容，查到什麼程度</h1><p class="lead">本刊以低人力、可追溯為原則：先篩日期、學段與重複，並依教育部《臺灣中小學教師與學生 AI 素養框架》判斷是否屬 AI 素養，再核原文；寧可少發，不為湊數放寬門檻。</p>';
+ const head='<div class="kicker">查核方法</div><h1>每一種內容，查到什麼程度</h1><p class="lead">本刊以低人力、可追溯為原則：先篩日期、學段與重複，並依教育部《臺灣中小學教師與學生 AI 素養框架》判斷是否屬 AI 素養，再核原文；寧可少發，不為湊數放寬門檻。</p><p>本刊非教育部或任何政府機關出版，與其無隸屬關係；引用框架只作為判斷 AI 素養範圍的依據。</p>';
  const main='<div class="grid-cards">'+
   '<section class="panel"><div class="label">每日短訊</div><h2>來源存在事實</h2><ul><li>只寫「誰在哪天發布了什麼」或來源原文的歸屬摘要</li><li>首次公開日須在 7 天內，附原文短摘錄與連結</li><li>AI 兩輪對照；未經逐則真人審稿</li><li>不含解讀、成效數字或對臺灣的建議</li></ul></section>'+
-  '<section class="panel"><div class="label">週報與月報</div><h2>對回原文；精選讀全文</h2><ul><li>政策核對發布機關、文件日期與原文段落；研究核對出處、首次公開日、樣本與方法</li><li>週報精選至多 5 則讀全文，補上樣本、設計、作者所述發現與限制；其他短訊一行一則，連到每日短訊的原文歸屬摘要</li><li>AI 兩輪對照（第二輪由另一個未參與撰稿的 AI 程序重新對照原文）；未經逐則真人審稿</li><li>高風險主張（成效、因果、跨學段推論）一律不自動發布</li><li>編輯歸納（AI 整理，未經真人審閱；週報導讀、臺灣對照說明、月報一句話、導讀與趨勢）與原始發現分開標示，每句附依據</li><li>背景補充只收首次公開早於本期的文件，標「背景」，非本週新訊</li><li>週報臺灣區（只收中央機關與臺灣研究）與國際分開；臺灣對照只並列事實，不作評價或建議；每日短訊分國際、臺灣兩段（2026-10-17（含）以前的頁面已於 10-17 補查臺灣來源）；每則短訊下方列出後來收入的週報與月報編號</li><li>月報（2026 年 10 月起）是當月的跨週整理：已刊於每日短訊或週報的項目只列在「一覽」、不重寫；政策與研究只收沒有刊在每日短訊或週報的項目，可收師培、大學、成人對象的研究（研究與學者新作合計，非中小學不超過三分之一，至少可收 2 則）；原文僅標示年月的文件註明日期依據；次月 3 日刊出。管理者回覆「合併」是發布核准，不代表逐則真人審稿</li></ul></section>'+
+  '<section class="panel"><div class="label">週報與月報</div><h2>對回原文；精選讀全文</h2><ul><li>政策核對發布機關、文件日期與原文段落；研究核對出處、首次公開日、樣本與方法</li><li>週報精選至多 5 則讀全文，補上樣本、設計、作者所述發現與限制；其他短訊一行一則，連到每日短訊的原文歸屬摘要</li><li>AI 兩輪對照（第二輪由另一個未參與撰稿的 AI 程序重新對照原文）；未經逐則真人審稿</li><li>高風險主張（成效、因果、跨學段推論）一律不自動發布</li><li>編輯歸納（AI 整理，未經真人審閱；週報導讀、臺灣對照說明、月報一句話、導讀與趨勢）與原始發現分開標示，每句附依據</li><li>背景補充只收首次公開早於本期的文件，標「背景」，非本週新訊</li><li>週報臺灣區（只收中央機關與臺灣研究）與國際分開；臺灣對照只並列事實，不作評價或建議；每日短訊分國際、臺灣兩段（2026-10-17（含）以前的頁面已於 10-17 補查臺灣來源）；每則短訊下方列出後來收入的週報與月報編號</li><li>月報（2026 年 10 月起）是當月的跨週整理：已刊於每日短訊或週報的項目只列在「一覽」、不重寫；政策與研究只收沒有刊在每日短訊或週報的項目，可收師培、大學、成人對象的研究（研究與學者新作合計，非中小學至多為合計則數的三分之一（無條件捨去），但至少可收 2 則）；原文僅標示年月的文件註明日期依據；次月 3 日刊出。管理者回覆「合併」是發布核准，不代表逐則真人審稿</li></ul></section>'+
   '<section class="panel"><div class="label">歷年資料庫</div><h2>書目索引，不是認證</h2><ul><li><strong>僅發現・未核</strong>：只核過登記資料</li><li><strong>書目已核</strong>：題名、出處、日期對過原頁</li><li><strong>原文已核</strong>：內容逐段核對</li><li>首次公開日未核實時以卷期年歸類並註明</li><li>題名下的「#」標記由 AI 判讀，未經人工核對；篇數與標記不是趨勢統計</li><li>Crossref、OpenAlex、Scopus、Web of Science 等索引資料庫屬二手登記，不作為升為「書目已核」的依據</li><li>不批次核對；被週報、月報引用時才逐篇讀原頁</li></ul></section></div>'+
   '<section class="notice" style="margin-top:28px"><h2>我們不宣稱的事</h2><ul><li>同一個 AI 模型的多次查核彼此一致，不等於獨立真人審閱。</li><li>網站部署成功不等於內容已獲認證。</li><li>創刊特刊與 2026 年 9 月月報為早期版本，未經獨立認證，保留公開更正紀錄。</li><li>讀不到的官方或出版社網站，只能寫「搜尋未見」，不能寫「沒有發布」。</li></ul></section>'+
   '<section class="info" style="margin-top:20px" id="glossary"><h2>用語說明</h2><ul><li><strong>首次公開</strong>：來源第一次公開的日期（出版社上線日、官方頁面日期），不是活動日或生效日；各則內文中的「來源刊登日」即本刊判定的首次公開日</li><li><strong>預印本</strong>：作者自行公開、尚未經期刊同儕審查的論文版本，結論可能在正式刊出前修改</li><li><strong>同儕審查論文</strong>：經期刊審稿後刊出的論文；同儕審查不保證結論正確</li><li><strong>準實驗</strong>：有比較組但未隨機分派的研究設計，不能直接推論因果</li><li><strong>橫斷研究</strong>：只在一個時間點蒐集資料，看得到變項間的關聯，看不出先後與因果</li><li><strong>量表發展與驗證（EFA／CFA）</strong>：編製問卷並以探索性、驗證性因素分析檢查題目結構；「適配良好」指統計模型與資料相符，不代表量表適用於所有族群</li><li><strong>科技接受模式（TAM／UTAUT）</strong>：解釋人們是否願意使用新科技的常用理論，研究多以問卷測量使用意願</li><li><strong>作者摘要報告／官方文件表示</strong>：本刊轉述原文摘要或官方原文，不是本刊的判斷</li><li><strong>編輯歸納</strong>：本刊依已列項目整理的句子，AI 整理、未經真人審閱，每句附依據編號</li><li><strong>來源含機構自述成效</strong>：官方新聞稿裡有機構自己說的成果；本刊不轉述這類說法，標示只是提醒讀者原文含有，且不是同儕審查研究的結論</li><li><strong>已通過自動檢查（非內容認證）</strong>：頁面、日期、來源與用語通過程式檢查，不代表內容經真人或專家認證</li><li><strong>「#」標籤</strong>：由 AI 依原文判讀，未經人工核對。第一個標籤是對象（#中小學、#家長行政）；<strong>#AI素養核心</strong>表示內容以師生的 AI 素養本身為主題，<strong>#AI工具應用</strong>表示用 AI 工具教或學其他科目；其餘標籤對應教育部《臺灣中小學教師與學生AI素養框架》的學生與教師各 4 個面向（如 #學生AI倫理、#教師AI賦能教學）</li><li><strong>臺灣 1、對照 1、背景 1、補 1</strong>：週報與月報中臺灣本週動態、臺灣對照、背景補充與上期補登的項目編號，和國際「第 n 則」分開編</li><li><strong>原文摘錄（快照）</strong>：本刊保存的是原文中與內容相關的段落摘錄及其雜湊值（SHA-256），用來確認摘錄後來沒有被改動；不是原文全文，完整內容請以原文連結為準</li></ul></section>'+
@@ -729,8 +729,8 @@ function renderAbout(){
   '<li>段首的則數只是本期刊出項目的計數，依本刊監測範圍，不代表各國實際分布</li></ul></section>'+
 '<section class="info" style="margin-top:20px" id="scope"><h2>監測範圍</h2><p>本刊只定期檢查下列來源；不在清單上的來源不會每天檢查，所以本刊不是全收。讀不到的網站只寫「搜尋未見」。清單會調整，變更記在 GitHub。</p><ul>'+
   '<li><strong>國際政策（每日）</strong>：英國 GOV.UK、美國聯邦公報、日本文部科學省、中國教育部、香港特區政府新聞公報、韓國教育部、韓國教育課程評價院（KICE）、韓國教育學術資訊院（KERIS）、UNESCO；Eurydice（試行）</li>'+
-  '<li><strong>國際政策（每週）</strong>：德國各邦文化部長會議（KMK）、芬蘭國家教育署（EDUFI）、TeachAI 美國各州 AI 指引追蹤、愛沙尼亞教育研究部、印度新聞局教育部新聞（試行）；挪威、丹麥、荷蘭（含 Kennisnet）、英國北愛爾蘭、加拿大卑詩省、智利、墨西哥、義大利、印尼的教育部門（2026-10-22 起試行）；程式讀不到的 OECD、美國教育部、歐盟、紐西蘭、新加坡、法國、阿聯酋與澳洲教育部（含澳洲 eSafety），由管理者每週以瀏覽器瀏覽</li>'+
-  '<li><strong>國際組織、監管機關與團體（每週，試行）</strong>：UNICEF、Education International、英國資訊委員辦公室（ICO）、法國國家資訊與自由委員會（CNIL）、美國全國教育協會（NEA）、Ada Lovelace Institute；以及瑞典國家教育署、西班牙教育部與國家教育科技研究所（INTEF）、捷克教育部、南非基礎教育部、英國全國教育工會（NEU）、美國聯邦貿易委員會（FTC）（其中 NEU、FTC 由管理者以瀏覽器瀏覽）</li>'+
+  '<li><strong>國際政策（每週）</strong>：德國各邦文化部長會議（KMK）、芬蘭國家教育署（EDUFI）、TeachAI 美國各州 AI 指引追蹤、愛沙尼亞教育研究部、印度新聞局教育部新聞（試行）；挪威、丹麥、荷蘭（含 Kennisnet）、英國北愛爾蘭、加拿大卑詩省、智利、墨西哥、義大利、印尼的教育部門（2026-10-22 起試行）；程式讀不到的 OECD、美國教育部、歐盟、紐西蘭、新加坡、法國、阿聯與澳洲教育部（含澳洲 eSafety），由管理者每週以瀏覽器瀏覽</li>'+
+  '<li><strong>國際組織、監管機關與團體（每週，試行）</strong>：UNICEF、Education International、英國資訊委員辦公室（ICO）、法國國家資訊與自由委員會（CNIL）、美國全國教育協會（NEA）、Ada Lovelace Institute；以及瑞典國家教育署、西班牙教育部與國家教育科技與師資培育研究所（INTEF）、捷克教育部、南非基礎教育部、英國全國教育工會（NEU）、美國聯邦貿易委員會（FTC）（其中 NEU、FTC 由管理者以瀏覽器瀏覽）</li>'+
   '<li><strong>智庫、工會與國際組織評論（每週，試行；目前以英語來源為主）</strong>：英國 Education Policy Institute、美國 Brookings、CRPE、美國教師聯合會（AFT）、Education International「Worlds of Education」專欄、UNICEF Innocenti、UNESCO AI 與教育專頁</li>'+
   '<li><strong>研究</strong>：arXiv 預印本、Crossref 前一日新登記的論文，以及期刊 50 種與國際會議 21 個系列（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/blob/main/research/venue-watchlist.md">完整清單</a>）</li>'+
   '<li><strong>臺灣（每日）</strong>：教育部即時新聞與資訊及科技教育司、師資培育及藝術教育司、學生事務及特殊教育司、國教署、行政院公報與新聞、國科會、數位發展部</li>'+

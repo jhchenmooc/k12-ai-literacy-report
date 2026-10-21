@@ -34,7 +34,8 @@
       "path": "daily/2026-10-11/index.html",
       "claims_file": "publication/claims/daily-2026-10-11.json",
       "publication_mode": "ai_low_risk_source_facts",
-      "tw_backfilled_on": "2026-10-17"
+      "tw_backfilled_on": "2026-10-17",
+      "revised_on": "2026-10-21"
     },
     {
       "path": "daily/2026-10-16/index.html",
@@ -51,7 +52,7 @@
     {
       "path": "weekly/2026-10-09_10-15/index.html",
       "claims_file": "publication/claims/weekly-2026-10-09_10-15.json",
-      "revised_on": "2026-10-17"
+      "revised_on": "2026-10-21"
     }
   ]
 }

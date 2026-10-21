@@ -1098,9 +1098,10 @@ test('caution marks (plan F2): renderer section passes; incomplete, unsupported 
  const pol={...featured,claim_id:'F2',source_organization:'X',first_disclosed_on:'2026-10-17',publication_date:'2026-10-17',source_country:'GB',claim_text:'來源機構：X；資料標題：Y；來源刊登日：2026-10-17。內容：合成政策。'};
  const mark={caution_kind:'warning',caution_excerpt:'published a nonbinding advisory',caution_excerpt_zh:'發布一份不具拘束力的建議',caution_locator:'首段',caution_confirmed_on:'2026-10-20'};
  const empty=weeklyAt(d,'2026-10-16_10-22',[featuredNew,pol]);assert.deepEqual(empty.result.errors,[]);
- assert.ok(empty.html.includes('<section id="sec-caution"><h2>國外反思選讀</h2>')&&empty.html.includes('<p>本期未見符合條件的項目。</p>'),'an empty section stays, saying none was found');
+ assert.ok(empty.html.includes('<section id="sec-caution"><h2>國外反思選讀（只選批評與風險，非國外整體評價）</h2>')&&empty.html.includes('<p>本期未見符合條件的項目。</p>'),'an empty section stays, saying none was found');
+ assert.ok(!/<section id="sec-caution">[\s\S]*本期刊出/.test(empty.html),'the tally counts only this section');
  const ok=weeklyAt(d,'2026-10-16_10-22',[{...featuredNew,...mark,caution_kind:'risk_research'},{...pol,...mark}]);assert.deepEqual(ok.result.errors,[]);
- for(const s of ['<a href="#sec-caution">國外反思選讀（2）</a>','本段列 2 則（本期項目標記 2 則、另選錄 0 則）：官方警示 1 則、風險相關研究 1 則。','｜官方警示｜〔教師〕X於 2026-10-17 發布〈','，文中表示：「發布一份不具拘束力的建議」（首段）<br><small>原文：published a nonbinding advisory</small>','｜風險相關研究｜','，作者報告：','本期刊出 2 則，依本刊監測範圍，不代表各國分布；本段列 2 則（本期項目標記 2 則、另選錄 0 則）：','<a href="#item-1">第 1 則</a>｜'])assert.ok(ok.html.includes(s),s);
+ for(const s of ['<a href="#sec-caution">國外反思選讀（2）</a>','本段列 2 則（本期項目標記 2 則、另選錄 0 則）：官方警示 1 則、風險相關研究 1 則。','｜官方警示｜〔教師〕X於 2026-10-17 發布〈','，文中表示：「發布一份不具拘束力的建議」（首段）<br><small>原文：published a nonbinding advisory</small>','｜風險相關研究｜','，作者報告：','本段列 2 則（本期項目標記 2 則、另選錄 0 則）：','<a href="#item-1">第 1 則</a>｜'])assert.ok(ok.html.includes(s),s);
  const pc=weeklyAt(d,'2026-10-16_10-22',[featuredNew,{...pol,...mark,caution_kind:'policy_change',caution_direction:'loosen',caution_prior_url:'https://example.org/prior'}]);
  assert.deepEqual(pc.result.errors,[]);assert.ok(pc.html.includes('｜政策調整（放寬）｜')&&pc.html.includes('<a href="https://example.org/prior">前一版政策</a>'));
  const bad={
@@ -1168,5 +1169,5 @@ test('國外反思選讀 (manager 2026-10-20): weekly and monthly reflection ite
  assert.ok(monthlySetup(m,[...monthlyBase(),...many(13)]).result.errors.some(e=>e.includes('reflection items exceed 12')));
  assert.equal(r.reflectMonthlyMax('2026-11'),8);
  const empty=monthlySetup(m,monthlyBase());assert.deepEqual(empty.result.errors,[]);
- assert.ok(empty.html.includes('<section id="sec-reflection"><h3>國外反思選讀</h3>')&&empty.html.includes('<p>本期未見符合條件的項目。</p>'),'an empty monthly section stays');
+ assert.ok(empty.html.includes('<section id="sec-reflection"><h3>國外反思選讀（只選批評與風險，非國外整體評價）</h3>')&&empty.html.includes('<p>本期未見符合條件的項目。</p>'),'an empty monthly section stays');
 });
