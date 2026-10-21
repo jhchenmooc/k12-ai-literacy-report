@@ -87,7 +87,7 @@
 ## 第三次三刊聯合評審 A 第二批（管理者 2026-10-21「照建議」）
 
 適用國外反思選讀的另選錄項目（`reflect_*`）與週報反思標記（`caution_*`），閘門檢查：
-- **片段標節譯**：摘錄（反思項目為 `original_excerpt`，標記為 `caution_excerpt`）以英文小寫字母開頭、結尾沒有句末標點（. ! ? 。！？，可接引號或括號），或含「…」「...」者，須加 `reflect_partial: true`／`caution_partial: true`，頁面標「（節譯）」（沿用既有標籤，方案甲）。
+- **片段標節譯**：摘錄（反思項目為 `original_excerpt`，標記為 `caution_excerpt`）以英文小寫字母開頭、結尾沒有句末標點（. ! ? 。！？，可接引號或括號），或含「…」「...」者（出處位置以「標題」開頭的標題摘錄不檢查句末標點），須加 `reflect_partial: true`／`caution_partial: true`，頁面標「（節譯）」（沿用既有標籤，方案甲）。
 - **不加義務或因果**（方案乙）：原文沒有 must、required、mandatory、shall、have to 等義務字詞（另認 debe、obligatorio、muss、doit）時，譯文不得出現「必須」「務必」；原文沒有 cause、lead to、result in、drive、produce 等因果字詞時，譯文不得出現「導致」「造成」。其他情態（should→應、may／could→可能、associated／linked→相關、強調語）由第二輪對照的語氣對照表處理。
-- **聲明中的個人發言具名**：`reflect_type` 為 statement 或 joint_statement，且摘錄含 said、says、stated、according to 者，須在 `reflect_author` 寫發言人與職稱（如「Randi Weingarten，AFT 主席」）；頁面顯示「（Randi Weingarten，AFT 主席，發言）」。
+- **聲明中的個人發言具名**：`reflect_type` 為 statement 或 joint_statement，且摘錄含 said、says、stated、added、warned、noted、explained、told、according to 者，須在 `reflect_author` 寫發言人與職稱（如「Randi Weingarten，AFT 主席」）；頁面顯示「（Randi Weingarten，AFT 主席，發言）」。
 - **語氣對照表**：週報與月報出刊前檢查，每則反思項目與標記都附一張表，列出原文的情態詞與強調語（must、should、need to、may、could、might、associated、linked、causes、leads to、so important 等）及譯文的對應寫法，由第二輪隔離對照填寫，管理者逐則確認。

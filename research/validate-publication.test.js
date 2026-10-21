@@ -1158,6 +1158,8 @@ test('國外反思選讀 (manager 2026-10-20): weekly and monthly reflection ite
  const errs=c=>weeklyAt(d,'2026-10-16_10-22',[featuredNew,line(c)]).result.errors;
  assert.ok(errs({...wk,original_excerpt:'published a nonbinding advisory'}).some(e=>e.includes('is a fragment')),'a fragment needs reflect_partial');
  assert.ok(!errs({...wk,original_excerpt:'published a nonbinding advisory',reflect_partial:true}).some(e=>e.includes('is a fragment')),'a marked fragment passes');
+ assert.ok(!errs({...wk,original_excerpt:'This fictional agency published a nonbinding advisory for secondary-school educators',reflect_locator:'標題'}).some(e=>e.includes('is a fragment')),'a quote from the title needs no end punctuation');
+ assert.ok(errs({...wk,reflect_type:'joint_statement',reflect_partial:true,source_organization:'美國教師聯合會、Microsoft',original_excerpt:'"Act now," the president warned.'}).some(e=>e.includes('names the speaker')),'other reporting verbs also need the speaker');
  assert.ok(errs({...wk,reflect_excerpt_zh:'必須發布一份建議'}).some(e=>e.includes('no obligation')),'必須 needs must or required in the original');
  assert.ok(errs({...wk,reflect_excerpt_zh:'導致一份建議'}).some(e=>e.includes('no cause')),'導致 needs a causal verb in the original');
  assert.ok(errs({...wk,reflect_type:'joint_statement',reflect_partial:true,source_organization:'美國教師聯合會、Microsoft',original_excerpt:'"Tech companies need to take responsibility," Weingarten said.'}).some(e=>e.includes('names the speaker')),'a quoted person is named');
