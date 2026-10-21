@@ -1230,6 +1230,7 @@
 | KB-2025-0482 — [广东省教育厅关于印发《广东省基础教育人工智能全域场景应用指南》的通知](https://edu.gd.gov.cn/zwgknew/jyzcfg/dfjyzcfg/content/post_4833995.html) | official_guidance | 2025-12-24 | discovered_unverified |
 | KB-2025-0483 — [教育部啟動師資培育導入生成式 AI 教學新篇章](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=58321A9A7F787E37) | government_announcement | 2025-01-16 | discovered_unverified |
 | KB-2025-0484 — [Linee guida per l'introduzione dell'Intelligenza Artificiale nelle istituzioni scolastiche (versione 1.0, allegato al DM n. 166 del 9 agosto 2025)](https://www.mim.gov.it/-/decreto-ministeriale-n-166-del-9-agosto-2025) | official_guidance | 2025-08-09 | discovered_unverified |
+| KB-2025-0485 — [国家中小学智慧教育平台与人工智能融合应用指南（试行）（粤教基函〔2025〕12号附件4）](https://edu.gd.gov.cn/gkmlpt/content/4/4694/post_4694716.html) | official_guidance | 2025-04-09 | discovered_unverified |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
