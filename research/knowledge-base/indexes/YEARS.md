@@ -1211,9 +1211,9 @@
 | KB-2025-0463 — [생성형 인공지능 보조교사 활용 교원 역량강화 연수(과학직업정보과)](https://www.dje.go.kr/boardCnts/view.do?boardID=8&boardSeq=3325867&lev=0&m=040201&s=dje&statusYN=W&page=1) | government_announcement | 2025-07-23 | discovered_unverified |
 | KB-2025-0464 — [AI in schools and further education: findings from early adopters](https://www.gov.uk/government/publications/ai-in-schools-and-further-education-findings-from-early-adopters) | policy_review | 2025-06-27 | discovered_unverified |
 | KB-2025-0465 — [人工知能基本計画 ～「信頼できるＡＩ」による「日本再起」～](https://www8.cao.go.jp/cstp/ai/ai_plan/aiplan_20251223.pdf) | official_guidance | 2025-12-23 | discovered_unverified |
-| KB-2025-0466 — [广东省中小学教师人工智能素养框架（试行）（粤教基函〔2025〕12号附件1）](https://edu.gd.gov.cn/attachment/0/577/577308/4694716.pdf) | framework | 2025-04-09 | discovered_unverified |
-| KB-2025-0467 — [广东省中小学学生人工智能素养框架（试行）（粤教基函〔2025〕12号附件2）](https://edu.gd.gov.cn/attachment/0/577/577306/4694716.pdf) | framework | 2025-04-09 | discovered_unverified |
-| KB-2025-0468 — [广东省中小学人工智能课程指导纲要（试行）（粤教基函〔2025〕12号附件3）](https://edu.gd.gov.cn/attachment/0/577/577307/4694716.pdf) | framework | 2025-04-09 | discovered_unverified |
+| KB-2025-0466 — [广东省中小学教师人工智能素养框架（试行）（粤教基函〔2025〕12号附件1）](https://edu.gd.gov.cn/attachment/0/577/577308/4694716.pdf) | framework | 2025-04-09 | bibliographic_checked |
+| KB-2025-0467 — [广东省中小学学生人工智能素养框架（试行）（粤教基函〔2025〕12号附件2）](https://edu.gd.gov.cn/attachment/0/577/577306/4694716.pdf) | framework | 2025-04-09 | bibliographic_checked |
+| KB-2025-0468 — [广东省中小学人工智能课程指导纲要（试行）（粤教基函〔2025〕12号附件3）](https://edu.gd.gov.cn/attachment/0/577/577307/4694716.pdf) | framework | 2025-04-09 | bibliographic_checked |
 | KB-2025-0469 — [Künstliche Intelligenz im Unterricht: Sachsen-Anhalt setzt auf Qualifikation der Lehrkräfte mit emuKI (Pressemitteilung 02/2025)](https://presse.sachsen-anhalt.de/wp-content/uploads/pdf/bildungsministerium_08_01_2025_Pressemitteilung_kuenstliche-intelligenz-im-unterricht-sachsen-anhalt-setzt-auf-qualifikation-der-lehrkraefte-mit-emuki.pdf) | government_announcement | 2025-01-08 | discovered_unverified |
 | KB-2025-0470 — [2025 생성형 인공지능 챗봇 활용 안내서](https://aitalk.cne.go.kr/) | official_guidance | 2025-05 | discovered_unverified |
 | KB-2025-0471 — [2025 인천 AI․디지털교육 추진계획](https://edu-i.ice.go.kr/cmm/fms/FileDown.do?atchFileId=FILE_000000000138324&fileSn=1&bbsId=BBSMSTR_000000004155&trgetId=SYSTEM_DEFAULT_BOARD&nttId=126204) | official_guidance | 2025-02 | discovered_unverified |
@@ -1230,7 +1230,7 @@
 | KB-2025-0482 — [广东省教育厅关于印发《广东省基础教育人工智能全域场景应用指南》的通知](https://edu.gd.gov.cn/zwgknew/jyzcfg/dfjyzcfg/content/post_4833995.html) | official_guidance | 2025-12-24 | discovered_unverified |
 | KB-2025-0483 — [教育部啟動師資培育導入生成式 AI 教學新篇章](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&sms=169B8E91BB75571F&s=58321A9A7F787E37) | government_announcement | 2025-01-16 | discovered_unverified |
 | KB-2025-0484 — [Linee guida per l'introduzione dell'Intelligenza Artificiale nelle istituzioni scolastiche (versione 1.0, allegato al DM n. 166 del 9 agosto 2025)](https://www.mim.gov.it/-/decreto-ministeriale-n-166-del-9-agosto-2025) | official_guidance | 2025-08-09 | discovered_unverified |
-| KB-2025-0485 — [国家中小学智慧教育平台与人工智能融合应用指南（试行）（粤教基函〔2025〕12号附件4）](https://edu.gd.gov.cn/gkmlpt/content/4/4694/post_4694716.html) | official_guidance | 2025-04-09 | discovered_unverified |
+| KB-2025-0485 — [国家中小学智慧教育平台与人工智能融合应用指南（试行）（粤教基函〔2025〕12号附件4）](https://edu.gd.gov.cn/gkmlpt/content/4/4694/post_4694716.html) | official_guidance | 2025-04-09 | bibliographic_checked |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
