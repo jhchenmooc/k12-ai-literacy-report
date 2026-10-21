@@ -223,14 +223,15 @@ function unnamedForeignAgency(c){
    drafts are never marked. The line itself is built by the renderer, so no editorial verbs reach the page. */
 /* Third joint review, batch A2 (manager 2026-10-21 「照建議」): a quoted fragment is marked 節譯; a translation may not
    add obligation (必須/務必) or causation (導致/造成) the original does not state; a person quoted in a statement is named. */
-const isFragment=t=>{const x=String(t||"").trim();return /^[\s"“'‘(\[]*[a-z]/.test(x)||!/[.!?。！？]["”'’)\]]*$/.test(x)||/…|\.\.\./.test(x)};
+// A title carries no end punctuation, so a quote taken from the title (locator starting 標題) is checked only for a lowercase start and an ellipsis.
+const isFragment=(t,locator)=>{const x=String(t||"").trim(),title=/^標題/.test(String(locator||""));return /^[\s"“'‘(\[]*[a-z]/.test(x)||(!title&&!/[.!?。！？]["”'’)\]]*$/.test(x))||/…|\.\.\./.test(x)};
 function toneErrors(ex,zh,label){
  const e=[],o=String(ex||""),z=String(zh||"");
  if(/必須|務必/.test(z)&&!/\b(must|required?|requires|requiring|mandatory|shall|obliged|ha(?:ve|s) to|debe[n]?|obligatori[oa]|muss|müssen|doi(?:t|vent))\b/i.test(o))e.push(label+" adds 必須/務必 where the original states no obligation");
  if(/導致|造成/.test(z)&&!/\b(caus(?:e[sd]?|ing)|lead(?:s|ing)? to|led to|result(?:s|ed|ing)? in|driv(?:e[sn]?|ing)|produc(?:e[sd]?|ing))\b/i.test(o))e.push(label+" adds 導致/造成 where the original states no cause");
  return e;
 }
-const QUOTED_SPEAKER=/\b(said|says|stated|according to)\b/i;
+const QUOTED_SPEAKER=/\b(said|says|stated|added|warned|noted|explained|told|according to)\b/i;
 const CAUTION_FIELDS=["caution_kind","caution_excerpt","caution_excerpt_zh","caution_locator","caution_confirmed_on"];
 // caution_partial marks a translation of only part of the excerpt (節譯).
 const CAUTION_KINDS=["policy_change","warning","investigation","statement","risk_research"];
@@ -259,7 +260,7 @@ function cautionErrors(c,sec,range,root){
   else{let t="";try{t=fs.readFileSync(path.join(root,ev),"utf8")}catch{}if(!t.includes(ex))e.push("caution_excerpt must appear verbatim in the evidence snapshot")}
  }
  if(typeof zh!=="string"||!zh.trim()||zh.length>60)e.push("caution_excerpt_zh must be 1-60 characters");
- if(typeof ex==="string"&&isFragment(ex)&&c.caution_partial!==true)e.push("caution_excerpt is a fragment: mark it caution_partial (節譯)");
+ if(typeof ex==="string"&&isFragment(ex,c.caution_locator)&&c.caution_partial!==true)e.push("caution_excerpt is a fragment: mark it caution_partial (節譯)");
  e.push(...toneErrors(ex,zh,"caution_excerpt_zh"));
  if(typeof c.caution_locator!=="string"||!/^(標題|摘要|首段)/.test(c.caution_locator)||c.caution_locator.length>80)e.push("caution_locator must start with 標題, 摘要 or 首段");
  if(!(isoDate(c.caution_confirmed_on)&&(!isoDate(c.checked_at)||c.caution_confirmed_on>=c.checked_at)))e.push("caution_confirmed_on must be an ISO date not before checked_at");
@@ -287,7 +288,7 @@ function reflectionErrors(c){
  // The manager-confirmed quote and translation carry the two-pass crosscheck and the translation review (joint review 2026-10-20).
  if(c.claim_class!=="descriptive"||c.risk_tier!=="medium"||c.translation_reviewed!==true)e.push("reflection item is a descriptive, medium-risk claim with a reviewed translation (two-pass crosscheck)");
  if(c.reflect_partial!==undefined&&c.reflect_partial!==true)e.push("reflect_partial is true or absent");
- if(typeof c.original_excerpt==="string"&&isFragment(c.original_excerpt)&&c.reflect_partial!==true)e.push("original_excerpt is a fragment: mark it reflect_partial (節譯)");
+ if(typeof c.original_excerpt==="string"&&isFragment(c.original_excerpt,c.reflect_locator)&&c.reflect_partial!==true)e.push("original_excerpt is a fragment: mark it reflect_partial (節譯)");
  e.push(...toneErrors(c.original_excerpt,c.reflect_excerpt_zh,"reflect_excerpt_zh"));
  if(["statement","joint_statement"].includes(t)&&QUOTED_SPEAKER.test(String(c.original_excerpt||""))&&!short(c.reflect_author,120))e.push("a statement quoting a person names the speaker and role in reflect_author");
  if(t==="joint_statement"&&!/[、，,]/.test(String(c.source_organization||"")))e.push("a joint statement names all of its issuers in source_organization, separated by 、");
