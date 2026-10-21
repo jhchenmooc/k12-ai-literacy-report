@@ -228,7 +228,8 @@ const REFLECT_MIXED="（原文同時談機會與風險；此處只摘風險段�
 const reflectMonthlyMax=period=>({"2026-10":12})[period]||REFLECT_MONTHLY_MAX;
 const REFLECT_MONTHLY_INTRO="本月與上月國外機構、團體或研究者公開表達的擔憂與批評，以及官方文件與研究中談風險的段落；本段只選批評與風險，不選正面評估；本刊只轉述，不作評價，是否適用於臺灣，本刊不判斷。每一則都由管理者逐則確認摘錄、譯文與分類；這是本刊選錄，不代表各國全貌（收錄條件見<a href=\"../../about/#caution\">查核方法</a>）。";
 function reflectionParts(c,x=esc){
- const author=typeof c.reflect_author==="string"&&c.reflect_author.trim()?"（"+x(c.reflect_author.trim())+"）":"";
+ const speaker=["statement","joint_statement"].includes(c.reflect_type)?"，發言":"";
+ const author=typeof c.reflect_author==="string"&&c.reflect_author.trim()?"（"+x(c.reflect_author.trim())+speaker+"）":"";
  const said=c.reflect_type==="research"?"，作者報告：":"，文中表示：",mixed=c.reflect_mixed===true?REFLECT_MIXED:"";
  return {head:(REFLECT_TYPES[c.reflect_type]||"")+"｜"+x(c.source_organization)+author+"於 "+x(c.first_disclosed_on)+" 發布〈",tail:"〉"+said+"「"+x(c.reflect_excerpt_zh)+"」"+(c.reflect_partial===true?"（節譯）":"")+"（"+x(c.reflect_locator)+"）"+mixed,title:x(itemTitle(c)),excerpt:x(c.original_excerpt)};
 }
@@ -722,7 +723,7 @@ function renderAbout(){
   '<li><strong>專家評論</strong>：有具名作者，發表在國際組織、工會、智庫、大學或政府機關網站，以批判、風險或限制為主旨；不收報紙投書、個人部落格與匿名評論</li>'+
   '<li><strong>團體聲明</strong>：教師、家長、校長或學生團體的正式聲明；與業者聯名發布者另標「聯名聲明（含業者）」，並列出所有發布者</li>'+
   '<li><strong>報告、官方文件與研究的風險段落</strong>：原文同時談機會與風險時，只摘原文明確談風險、限制或挑戰的一段，註明章節或頁碼，並加註「原文同時談機會與風險；此處只摘風險段落」</li>'+
-  '<li><strong>本段只選批評與風險</strong>：不選正面評估，因此不能代表國外輿論的整體走向；譯文未譯出整段原文時標「節譯」，不改變原文語氣（例如不把建議譯成禁令、不把關聯譯成因果）</li>'+
+  '<li><strong>本段只選批評與風險</strong>：不選正面評估，因此不能代表國外輿論的整體走向；譯文未譯出整段原文，或摘錄只是句子片段時，標「節譯」；不改變原文語氣（例如不把建議譯成禁令、不把關聯譯成因果），原文沒有義務或因果字詞時，譯文不用「必須」「導致」；聲明中引述個人發言時，標出發言人與職稱</li>'+
   '<li><strong>政策調整</strong>：國家或州（省）層級改變已公布政策的效力、範圍或時程；草案與學區層級措施不算</li>'+
   '<li>不收業者單獨發布的文件、社群貼文、二手轉述的新聞、匿名團體；臺灣項目、演講與草案不列入此段</li>'+
   '<li>每則的原文摘錄須逐字出現在本刊保存的快照，附中文譯文與出處位置；每一則由管理者逐則確認，其餘內容仍未經逐則真人審稿</li>'+

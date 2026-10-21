@@ -83,3 +83,11 @@
 - **國外反思選讀標題**：頁面段落標題寫「國外反思選讀（只選批評與風險，非國外整體評價）」，目錄只列「國外反思選讀」；段首則數只算本段（「本段列 n 則（本期項目標記 a 則、另選錄 b 則）：…」），不再列全期則數。
 - **查核方法頁**：聲明本刊非教育部或任何政府機關出版、與其無隸屬關係；月報非中小學研究上限照 `monthlyNonK12Cap`（合計則數的三分之一，無條件捨去，至少 2 則）；監測期刊數以 `venue-watchlist.md` 第 2 節為準（目前 50 種）；學者觀點動向註明「不代表領域共識」；月報概況註明「依本刊監測來源，各國檢查頻率不同」。
 - **AI 素養對應說明**：`ai_lit_note` 引用框架內涵時須逐字照 `ai-literacy-scope-criteria.md`（例如 T-ETH「辨識AI風險與安全防範」），每個列出的代碼都附一項內涵。
+
+## 第三次三刊聯合評審 A 第二批（管理者 2026-10-21「照建議」）
+
+適用國外反思選讀的另選錄項目（`reflect_*`）與週報反思標記（`caution_*`），閘門檢查：
+- **片段標節譯**：摘錄（反思項目為 `original_excerpt`，標記為 `caution_excerpt`）以英文小寫字母開頭、結尾沒有句末標點（. ! ? 。！？，可接引號或括號），或含「…」「...」者，須加 `reflect_partial: true`／`caution_partial: true`，頁面標「（節譯）」（沿用既有標籤，方案甲）。
+- **不加義務或因果**（方案乙）：原文沒有 must、required、mandatory、shall、have to 等義務字詞（另認 debe、obligatorio、muss、doit）時，譯文不得出現「必須」「務必」；原文沒有 cause、lead to、result in、drive、produce 等因果字詞時，譯文不得出現「導致」「造成」。其他情態（should→應、may／could→可能、associated／linked→相關、強調語）由第二輪對照的語氣對照表處理。
+- **聲明中的個人發言具名**：`reflect_type` 為 statement 或 joint_statement，且摘錄含 said、says、stated、according to 者，須在 `reflect_author` 寫發言人與職稱（如「Randi Weingarten，AFT 主席」）；頁面顯示「（Randi Weingarten，AFT 主席，發言）」。
+- **語氣對照表**：週報與月報出刊前檢查，每則反思項目與標記都附一張表，列出原文的情態詞與強調語（must、should、need to、may、could、might、associated、linked、causes、leads to、so important 等）及譯文的對應寫法，由第二輪隔離對照填寫，管理者逐則確認。
