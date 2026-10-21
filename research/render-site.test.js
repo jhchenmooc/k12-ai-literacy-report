@@ -312,3 +312,11 @@ test("corrections log, daily permalinks and citation lines (joint review E3e, E3
  assert.ok(!renderDailyEdition({date:"2026-10-12",claims:[c]}).includes("固定連結"),"earlier flat pages are unchanged");
  const files=build(root);assert.ok(files["corrections/index.html"].includes('id="weekly-2026-10-09_10-15-r2"'));
 });
+
+test("policy rows show the Chinese title first and keep the original (manager 2026-10-21)",()=>{
+ const records=[{record_id:"KB-2026-9301",title:"교육분야 인공지능 윤리원칙",primary_url:"https://example.org/k",record_type:"official_guidance",year_value:"2026",year_basis:"first_publication",first_published_on:"2026-01-02",verification_status:"discovered_unverified",source_candidate_id:""}];
+ const d=archiveData(records,[{subject_id:"KB-2026-9301",predicate:"applies_to_country",object_id:"KR"}],[],[],[{record_id:"KB-2026-9301",title_zh:"教育領域人工智慧倫理原則"}]);
+ const row=d.policy.flatMap(g=>g.rows)[0];
+ assert.equal(row.title_zh,"教育領域人工智慧倫理原則");
+ assert.equal(archiveData(records,[],[]).policy.flatMap(g=>g.rows)[0].title_zh,"");
+});

@@ -78,7 +78,9 @@ function load(root){
  // AI literacy scope C records stay in the knowledge base but are not listed on the site.
  const cFile=path.join(root,"research","ai-literacy-c-records.json");
  const hidden=fs.existsSync(cFile)?JSON.parse(fs.readFileSync(cFile,"utf8")).records.map(x=>x.record_id):[];
- return {records:read("records"),relations:read("relations"),venues,editions,hidden};
+ // Chinese titles for non-Chinese official documents (manager 2026-10-21): from the intake reports or the editor's translation.
+ const zFile=path.join(kb,"titles_zh.csv"),titlesZh=fs.existsSync(zFile)?parseCsv(fs.readFileSync(zFile,"utf8")):[];
+ return {records:read("records"),relations:read("relations"),venues,editions,hidden,titlesZh};
 }
 
 /* ---------- daily ---------- */
@@ -112,7 +114,7 @@ function dailyTags(c){
 const selfReported=c=>c&&c.self_reported_outcome===true?"（來源含機構自述成效，本刊未轉述；非同儕審查研究）":"";
 const itemTitle=c=>typeof c.title_zh==="string"&&c.title_zh.trim()?c.title_zh.trim():c.source_title||"";
 function dailyEntry(c,href){
- return '<li>'+(isTw(c)?'<span class="kind tw">臺灣</span> ':"")+kindBadge(c)+'<p><a href="'+esc(href+"#"+c.claim_id)+'">'+esc(itemTitle(c))+"</a></p>"+dailyTags(c)+'<div class="meta-line"><span>首次公開：'+esc(c.first_disclosed_on||"未知")+"</span><span>來源："+esc(c.source_organization||"")+"</span></div></li>";
+ return '<li>'+(isTw(c)?'<span class="kind tw">臺灣</span> ':"")+kindBadge(c)+'<p><a href="'+esc(href+"#"+c.claim_id)+'">'+esc(itemTitle(c))+"</a>"+(itemTitle(c)!==(c.source_title||"")&&c.source_title?'<br><small lang="und">'+esc(c.source_title)+"</small>":"")+"</p>"+dailyTags(c)+'<div class="meta-line"><span>首次公開：'+esc(c.first_disclosed_on||"未知")+"</span><span>來源："+esc(c.source_organization||"")+"</span></div></li>";
 }
 /* One card per day: the day's items are listed inside a single brief (manager request 2026-10-11). */
 function dailyCard(d,depth){
@@ -131,9 +133,10 @@ const isTw=c=>c&&c.region==="tw";
 const dailySectioned=e=>e.date>=DAILY_REGION_FROM||e.claims.some(isTw)||e.tw_backfilled_on!==undefined||e.revised_on!==undefined;
 const dailyRevisionText=d=>"本頁於 "+d+' 更正；舊說法、新說法與原因見<a href="../../corrections/">更正與改版紀錄</a>。';
 const dailyBackfillText=d=>"本頁臺灣段為 "+d+" 補查臺灣中央來源後補登，當日原未查臺灣來源。";
+const TITLE_ZH_LABEL="中文譯名（本刊翻譯）：";
 function dailyItem(c,links,permalink){
  const [cls,label]=dailyKind(c),tags=dailyTagList(c),back=links&&links.get(c.claim_id)||[];
- return '<p id="'+esc(c.claim_id)+'" data-claim-kind="'+esc(c.claim_id)+'" data-kind="'+cls+'">'+label+"</p>"+claimParagraph(c,true)+(tags.length?'<p data-claim-tags="'+esc(c.claim_id)+'">'+tags.map(t=>"<span>#"+esc(t)+"</span>").join(" ")+"</p>":"")+
+ return '<p id="'+esc(c.claim_id)+'" data-claim-kind="'+esc(c.claim_id)+'" data-kind="'+cls+'">'+label+"</p>"+claimParagraph(c,true)+(tags.length?'<p data-claim-tags="'+esc(c.claim_id)+'">'+tags.map(t=>"<span>#"+esc(t)+"</span>").join(" ")+"</p>":"")+(typeof c.title_zh==="string"&&c.title_zh.trim()?"<p>"+TITLE_ZH_LABEL+esc(c.title_zh.trim())+"</p>":"")+
   (permalink?'<p>固定連結：<a href="#'+esc(c.claim_id)+'">#'+esc(c.claim_id)+"</a></p>":"")+
   (back.length?'<p data-claim-links="'+esc(c.claim_id)+'">已收入：'+back.map(l=>'<a href="'+esc(l.href)+'">'+esc(l.label)+"</a>").join("、")+"</p>":"");
 }
@@ -578,7 +581,8 @@ function renderPeriodIndex(kind,editions){
 }
 
 /* ---------- archive ---------- */
-function archiveData(records,relations,venues,hidden=[]){
+function archiveData(records,relations,venues,hidden=[],titlesZh=[]){
+ const zh=new Map(titlesZh.map(x=>[x.record_id,x.title_zh]));
  const rel=new Map();for(const r of relations){if(!rel.has(r.subject_id))rel.set(r.subject_id,[]);rel.get(r.subject_id).push(r)}
  const venueName=new Map(venues.map(v=>[v.id,v.name]));
  /* Weekly candidates stay out until their source has been checked (manager 2026-10-11). */
@@ -590,7 +594,7 @@ function archiveData(records,relations,venues,hidden=[]){
   const countries=[...new Set(rs.filter(x=>x.predicate==="studies_country").map(x=>COUNTRY[x.object_id]||x.object_id))];
   const basis=r.year_basis;
   const date=basis==="first_publication"?r.first_published_on+" 首次公開":basis==="issue_year"?"卷期年（首次公開日未知）":basis==="event_year"?"會議年（首次公開日未知）":"未知";
-  return {id:r.record_id,year:r.year_value||"未知",title:r.title,url:r.primary_url,date,type:POLICY_TYPES[r.record_type]||RESEARCH_TYPES[r.record_type]||r.record_type,status:STATUS[r.verification_status]||STATUS.discovered_unverified,tags:POPULATION_TAGS.filter(([k])=>pop.has(k)).map(([,t])=>t),tags2:[...TOPIC_TAGS,...METHOD_TAGS].filter(([k])=>tm.has(k)).map(([,t])=>t).concat(countries),tags3:AILIT_TAGS.filter(([k])=>ail.has(k)).map(([,t])=>t).concat(rs.some(x=>x.predicate==="has_citation_flag"&&x.object_id==="CITED_TOP10_SAME_YEAR")?["高引用"]:[])};
+  return {id:r.record_id,year:r.year_value||"未知",title:r.title,title_zh:zh.get(r.record_id)||"",url:r.primary_url,date,type:POLICY_TYPES[r.record_type]||RESEARCH_TYPES[r.record_type]||r.record_type,status:STATUS[r.verification_status]||STATUS.discovered_unverified,tags:POPULATION_TAGS.filter(([k])=>pop.has(k)).map(([,t])=>t),tags2:[...TOPIC_TAGS,...METHOD_TAGS].filter(([k])=>tm.has(k)).map(([,t])=>t).concat(countries),tags3:AILIT_TAGS.filter(([k])=>ail.has(k)).map(([,t])=>t).concat(rs.some(x=>x.predicate==="has_citation_flag"&&x.object_id==="CITED_TOP10_SAME_YEAR")?["高引用"]:[])};
  };
  const policy=new Map(),journals=new Map(),conferences=new Map();
  const add=(m,key,name,sub,r)=>{if(!m.has(key))m.set(key,{key,name,sub,rows:[]});m.get(key).rows.push(row(r,rel.get(r.record_id)))};
@@ -641,7 +645,7 @@ function groupTable(g){
  const seen=new Set();
  return '<section class="group" id="'+groupId(g)+'"><div class="group-head"><h2>'+esc(g.name)+'</h2><a class="to-index" href="#index">回到索引 ↑</a></div>'+(g.sub?'<p class="sub">'+esc(g.sub)+"・"+g.rows.length+' 筆<span class="shown"></span></p>':'<p class="sub">'+g.rows.length+' 筆<span class="shown"></span></p>')+
   '<div class="table-wrap"><table class="rec-table"><thead><tr><th scope="col">年份</th><th scope="col">名稱</th><th scope="col">日期</th><th scope="col">核對程度</th></tr></thead><tbody>'+
-  g.rows.map(r=>{const first=!seen.has(r.year);seen.add(r.year);return "<tr"+(first?' id="'+yearId(g,r.year)+'"':"")+' data-year="'+esc(r.year)+'" data-tags="'+esc(rowTags(r).join("|"))+'"><td class="year">'+esc(r.year)+'</td><td><a href="'+esc(r.url)+'">'+esc(r.title)+'</a><div class="type">'+esc(r.type)+(r.tags&&r.tags.length?'<span class="tags">'+r.tags.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</span>":"")+"</div>"+(r.tags2&&r.tags2.length?'<div class="tags2">'+r.tags2.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"")+(r.tags3&&r.tags3.length?'<div class="tags3">'+r.tags3.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"")+"</td><td>"+esc(r.date)+'</td><td><span class="badge '+r.status[0]+'">'+r.status[1]+"</span></td></tr>"}).join("")+
+  g.rows.map(r=>{const first=!seen.has(r.year);seen.add(r.year);return "<tr"+(first?' id="'+yearId(g,r.year)+'"':"")+' data-year="'+esc(r.year)+'" data-tags="'+esc(rowTags(r).join("|"))+'"><td class="year">'+esc(r.year)+'</td><td><a href="'+esc(r.url)+'">'+esc(r.title_zh||r.title)+'</a>'+(r.title_zh?'<div class="orig" lang="und">'+esc(r.title)+"</div>":"")+'<div class="type">'+esc(r.type)+(r.tags&&r.tags.length?'<span class="tags">'+r.tags.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</span>":"")+"</div>"+(r.tags2&&r.tags2.length?'<div class="tags2">'+r.tags2.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"")+(r.tags3&&r.tags3.length?'<div class="tags3">'+r.tags3.map(t=>'<span class="t">#'+esc(t)+"</span>").join(" ")+"</div>":"")+"</td><td>"+esc(r.date)+'</td><td><span class="badge '+r.status[0]+'">'+r.status[1]+"</span></td></tr>"}).join("")+
   "</tbody></table></div></section>";
 }
 const LISTS={
@@ -789,8 +793,10 @@ function fillHomepage(html,days,data,editions=[]){
 
 /* ---------- build ---------- */
 function build(root){
- const {records,relations,venues,editions,hidden}=load(root);
- const days=dailyEditions(editions),data=archiveData(records,relations,venues,hidden);
+ const {records,relations,venues,editions,hidden,titlesZh}=load(root);
+ const known=new Set(records.map(r=>r.record_id));
+ for(const x of titlesZh)if(!known.has(x.record_id)||!x.title_zh||x.title_zh.length>200||/[\r\n<>]/.test(x.title_zh))throw new Error("invalid titles_zh row: "+x.record_id);
+ const days=dailyEditions(editions),data=archiveData(records,relations,venues,hidden,titlesZh);
  const cf=path.join(root,"publication","corrections.json"),corrections=fs.existsSync(cf)?JSON.parse(fs.readFileSync(cf,"utf8")).entries:[];
  const files={
   "daily/index.html":renderDailyIndex(days),
