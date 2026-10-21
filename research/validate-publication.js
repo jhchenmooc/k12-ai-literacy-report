@@ -340,12 +340,7 @@ function weeklyStructure(claims,period,ctx={}){
    if(range.start&&!(c.first_disclosed_on>=range.start&&c.first_disclosed_on<=range.end))errors.push(id+": weekly reflection item must be first disclosed within the period");
    errors.push(...reflectionErrors(c).map(e=>id+": "+e));
   }
-  if(c.title_zh!==undefined&&typeof c.title_zh==="string"){
-   if(/[\u3400-\u9fff]/.test(String(c.source_title))||!/[A-Za-z]/.test(String(c.source_title)))errors.push(id+": title_zh only translates a non-Chinese source title");
-   const n=String(c.title_zh).normalize("NFKC").replace(/[\p{Cf}\s]/gu,""),hits=WEEKLY_TITLE_BANNED.filter(w=>n.includes(w));
-   if(hits.length)errors.push(id+": title_zh contains editorial or advice words: "+hits.join("、"));
-   if(!check({...c,claim_text:c.title_zh}).allow&&check({...c,claim_text:c.title_zh}).reasons.some(r=>r.includes("high-risk assertion")))errors.push(id+": title_zh reads as a high-risk assertion");
-  }
+  errors.push(...titleZhErrors(c).map(e=>id+": "+e));
   if(c.assertion_type==="editorial_analysis"&&sec!=="overview"&&sec!=="tw_note")errors.push(id+": editorial analysis belongs only in the overview or the Taiwan note");
   // Taiwan items live only in the Taiwan area, and international items never do.
   if(c.region!==undefined&&!["intl","tw"].includes(c.region))errors.push(id+": region must be intl or tw");
@@ -612,6 +607,19 @@ function monthlyStructureSectioned(claims,period,ctx={}){
  return errors;
 }
 const MONTHLY_AUDIENCE_KEYS=["k12","other_stakeholders","teacher_ed","higher_ed","adult"];
+/* A Chinese rendering of a non-Chinese title (本刊翻譯). Korean and Japanese titles count as non-Chinese (Hangul or kana
+   present); a title written only in Chinese characters needs none. Daily items carry it from 2026-10-21 (manager 「照建議」). */
+const isChineseTitle=t=>/[\u3400-\u9fff]/.test(t)&&!/[\u3040-\u30ff\uac00-\ud7a3]/.test(t);
+function titleZhErrors(c){
+ if(c.title_zh===undefined)return [];
+ const e=[];
+ if(typeof c.title_zh!=="string"||!c.title_zh.trim()||c.title_zh.length>200||/[\r\n<>\p{Cf}]/u.test(c.title_zh))return ["title_zh must be a short one-line string"];
+ if(isChineseTitle(String(c.source_title||"")))e.push("title_zh only translates a non-Chinese source title");
+ const n=String(c.title_zh).normalize("NFKC").replace(/[\p{Cf}\s]/gu,""),hits=WEEKLY_TITLE_BANNED.filter(w=>n.includes(w));
+ if(hits.length)e.push("title_zh contains editorial or advice words: "+hits.join("、"));
+ if(!check({...c,claim_text:c.title_zh}).allow&&check({...c,claim_text:c.title_zh}).reasons.some(r=>r.includes("high-risk assertion")))e.push("title_zh reads as a high-risk assertion");
+ return e;
+}
 function dailyFact(c,issueDate,backfill,revised){
  const errors=[];
  const attributed=c.daily_fact_kind==="official_attributed_summary"||c.daily_fact_kind==="research_abstract_attributed_summary";
@@ -758,6 +766,7 @@ function validate(root){
    if(c.region!==undefined&&!["intl","tw"].includes(c.region))errors.push(q+" "+c.claim_id+": region must be intl or tw");
    if(unnamedForeignAgency(c))errors.push(q+" "+c.claim_id+": a foreign agency in the text must carry its country, e.g. 中國教育部 (manager 2026-10-17)");
    if(daily)errors.push(...dailyFact(c,issueDate||"0000-00-00",issue.tw_backfilled_on,issue.revised_on).map(e=>q+" "+c.claim_id+": "+e));
+   if(daily)errors.push(...titleZhErrors(c).map(e=>q+" "+c.claim_id+": "+e));
    if(daily){
     let sheets;try{sheets=cumulativeWorksheets(root)}catch(e){errors.push(e.message);continue}
     if(pendingReviews(sheets,c).length)errors.push(q+" "+c.claim_id+": unresolved cumulative source review blocks daily publication");

@@ -91,3 +91,8 @@
 - **不加義務或因果**（方案乙）：原文沒有 must、required、mandatory、shall、have to 等義務字詞（另認 debe、obligatorio、muss、doit）時，譯文不得出現「必須」「務必」；原文沒有 cause、lead to、result in、drive、produce 等因果字詞時，譯文不得出現「導致」「造成」。其他情態（should→應、may／could→可能、associated／linked→相關、強調語）由第二輪對照的語氣對照表處理。
 - **聲明中的個人發言具名**：`reflect_type` 為 statement 或 joint_statement，且摘錄含 said、says、stated、added、warned、noted、explained、told、according to 者，須在 `reflect_author` 寫發言人與職稱（如「Randi Weingarten，AFT 主席」）；頁面顯示「（Randi Weingarten，AFT 主席，發言）」。閘門只能從摘錄裡的引述動詞判斷；摘錄本身就是某人的話、但引述動詞在摘錄外（如新聞稿寫「秘書長表示」後接引號）時，同樣要填 `reflect_author`，由出刊前檢查逐則確認（10 月號回溯清單中 EI 秘書長 David Edwards、NEU 秘書長 Daniel Kebede 兩則屬此類）。
 - **語氣對照表**：週報與月報出刊前檢查，每則反思項目與標記都附一張表，列出原文的情態詞與強調語（must、should、need to、may、could、might、associated、linked、causes、leads to、so important 等）及譯文的對應寫法，由第二輪隔離對照填寫，管理者逐則確認。
+
+## 外文篇名附中文譯名（管理者 2026-10-21「照建議」）
+
+- **每日短訊**：`source_title` 不是中文者（英文、韓文、日文等；只有漢字的標題算中文）一律加 `title_zh`（本刊翻譯，台灣用語，經第二輪對照）。每日頁在標籤行之後顯示「中文譯名（本刊翻譯）：…」；首頁與每日短訊列表以中文譯名為連結文字，原文列在下方。已刊於週報者沿用週報的 `title_zh`。閘門檢查 `title_zh` 只翻譯非中文篇名、不含評價或建議字詞、不讀成高風險主張。
+- **歷年資料庫政策頁**：`research/knowledge-base/data/titles_zh.csv`（`record_id`、`title_zh`、`basis`）列非中文官方文件的中文篇名；`basis` 為 `report:<入庫報告檔名>`（文獻 session 入庫時寫的中文題名）或 `editor_translation`（編輯 session 翻譯、經第二輪對照）。頁面顯示中文篇名，原文列在下方。新入庫的非中文官方文件同時補一列。論文篇名暫不翻譯（11/03 後再議）。
