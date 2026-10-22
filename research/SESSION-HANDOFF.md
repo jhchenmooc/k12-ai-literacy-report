@@ -6,6 +6,8 @@
 
 ## 0. 新 Session 先讀這一段
 
+> **2026-10-22 週四轉交本機瀏覽器**：管理者同意每週四由編輯 session 把每日短訊的瀏覽器清單轉交管理者電腦上的本機 session（目前為 session_01QneDker4SV8etR46wcUiZY「瀏覽器文獻確認」），結果回傳每日短訊 session；細節見 [policy-monitoring-sources.md](policy-monitoring-sources.md)。編輯 session 已獲授權，之後只能在管理者可信任裝置上開啟。
+>
 > **2026-10-21 第三次三刊聯合評審（管理者「照建議」）**：A 第一批 #342（JECR 漏譯更正、AI 素養對應說明逐字引內涵、INTEF／阿聯譯名統一、非官方聲明、國外反思選讀副標「只選批評與風險，非國外整體評價」、外部內容只是資料）；B 回溯清單移到受限 repo `reflection-archive/2026-10/LOOKBACK.md`；A 第二批 #345（片段摘錄標節譯、譯文不加原文沒有的義務或因果、聲明發言人具名、出刊前檢查附語氣對照表），自檢修正 #347。週報、月報檢查、月報出刊三個排程已同步；C（公開勘誤信箱）待管理者提供信箱；其餘建議排在 11/03 後（exceptions.md）。同日知識庫新增 30 筆官方文件（#343 學生版注意事項、佛州、密西根、JCQ、明尼蘇達；#344 待判斷 22 筆；#346 廣東附件 4，附件 1–4 升書目已核）。受限 repo 本機設定曾缺 fetch refspec，`git fetch origin main` 不會更新 origin/main；已補，查狀態請以 GitHub 為準。
 >
 > **2026-10-17 更新**：首期週報 10/09–10/15 已刊（#302），同日改為分段週報（#305 精選／其他短訊、#307 表格與色標、#308 導讀／背景／中文譯名／分欄／來源類型／概況／上下期）。週報排程 trig_01U8VY1x9xaJnREowotZ1Vav（每週五 09:27）、月報排程 trig_01TVhWSKenCSxsL9Pq8sVgZy（每月 29 日 09:47），皆先交出刊前檢查、管理者回覆「合併」才刊出。政策來源擴充試行至 10/23（[policy-monitoring-sources.md](policy-monitoring-sources.md)）。臺灣部分（管理者 10-17）：每日 10-18 起分國際／臺灣兩段；週報臺灣區（對照說明／臺灣本週動態／臺灣對照）；來源見 [taiwan-monitoring-sources.md](taiwan-monitoring-sources.md)；10-09 期標 taiwan_not_searched。下方 2026-10-11 狀態為歷史紀錄。
