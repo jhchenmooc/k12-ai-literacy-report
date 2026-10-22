@@ -122,7 +122,7 @@
 篩選字詞採 OR 分組，再以 AND 交叉，避免僅查詢 `AI literacy` 而漏掉教師專業與學生評量研究。檢索範圍依[AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)：A 核心與 B 相關（AI 賦能教與學）都要查得到；C（AI 只是研究方法或系統後端）不收進刊物，不必為它設查詢。
 
 - **概念**：`AI literacy` / `artificial intelligence literacy` / `generative AI literacy` / `critical AI literacy` / `algorithmic literacy` / `AI competencies` / `AI competency framework` / `AI agency` / `human agency` / `AI ethics` / `responsible AI`。
-- **AI 賦能教與學（B 類，對應 T-TEA、S-LRN）**：`generative AI` / `GenAI` / `ChatGPT` / `large language model` / `chatbot` / `intelligent tutoring` / `AI-assisted learning` / `AI-assisted teaching` / `AI in education` / `AI integration`。
+- **AI 賦能教與學（B 類，對應 T-TEA、S-LRN）**：`generative AI` / `GenAI` / `ChatGPT` / `large language model` / `chatbot` / `intelligent tutoring` / `pedagogical AI agent` / `pedagogical agent`（須與 AI 詞交叉；管理者 2026-10-22 加入） / `AI-assisted learning` / `AI-assisted teaching` / `AI in education` / `AI integration`。
 - **AI 課程與系統設計（S-BAS、S-SYS）**：`AI education` / `AI curriculum` / `machine learning education` / `teaching machine learning` / `AI project` / `computational thinking`（須與 AI 詞交叉）。
 - **K-12 學段**：`K-12` / `K12` / `primary school` / `elementary school` / `secondary school` / `middle school` / `high school` / `school student` / `children` / `adolescents`。
 - **教師**：`teacher AI literacy` / `teacher education` / `pre-service teachers` / `in-service teachers` / `professional development` / `teacher agency` / `TPACK` / `AI-TPACK` / `teacher training` / `workshop`（教師 AI-TPACK 與生成式 AI 教學培訓判 A）。
@@ -137,6 +137,9 @@
 AND ('K-12' OR 'primary school' OR 'secondary school' OR 'high school' OR teacher*)
 # B 類（AI 賦能教與學）；OpenAlex 布林運算子約 5 個以上會被限流，拆成多組短查詢
 ('generative AI' OR 'ChatGPT' OR 'chatbot' OR 'intelligent tutoring')
+AND ('primary school' OR 'secondary school' OR 'high school' OR teacher*)
+# pedagogical agent 單獨使用會抓到非 AI 的動畫代理人研究，須再與 AI 詞交叉
+('pedagogical AI agent' OR ('pedagogical agent' AND ('artificial intelligence' OR 'generative AI' OR 'large language model')))
 AND ('primary school' OR 'secondary school' OR 'high school' OR teacher*)
 ```
 OpenAlex `title_and_abstract.search` 不支援萬用字元（`teacher*` 會 HTTP 400），改寫完整詞形；見 [工具指南](research-tools-guide.md) 3.1。
