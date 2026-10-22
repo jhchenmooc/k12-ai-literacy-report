@@ -1,0 +1,43 @@
+Alabama	AI Policy Template for Local Education Agencies	https://docs.google.com/document/d/1wvyEfkAxHrGZbYXazcKjfkmbldm1nl9i/edit
+Arizona	AI Guidance for Arizona Schools	https://nau.edu/college-education/community-resources/arizona-institute-for-education-and-the-economy/generative-ai-k-12-education-guidance-arizona-educators/
+Australia	Australian Framework for Generative Artificial Intelligence (AI) in Schools	https://www.education.gov.au/schooling/resources/australian-framework-generative-artificial-intelligence-ai-schools
+Belgium: Flanders	Responsible AI in Flemish education: a collaborative process from development to use	https://www.vlaanderen.be/publicaties/verantwoorde-ai-in-het-vlaamse-onderwijs-een-collaboratief-proces-van-ontwikkeling-tot-gebruik-visietekst
+California	Learning With AI, Learning About AI	https://www.cde.ca.gov/pd/ca/cs/aiincalifornia.asp
+Canada: British Columbia	Considerations for Using AI Tools in K-12 Schools	https://www2.gov.bc.ca/assets/gov/education/administration/kindergarten-to-grade-12/ai-in-education/considerations-for-using-ai-tools-in-k-12-schools.pdf
+Colorado	Colorado Roadmap for AI in K-12 Education; Guidance for Integrating AI into Teaching and Learning	https://www.coloradoedinitiative.org/wp-content/uploads/2024/08/Colorado-Roadmap-for-AI-in-K-12-Education_August-2024.pdf
+Connecticut	Guidance On Artificial Intelligence (AI)	https://portal.ct.gov/das/ctedtech/commission-for-educational-technology/initiatives/artificial-intelligence?language=en_US
+Delaware	Generative AI in the Classroom Guidance	https://education.delaware.gov/wp-content/uploads/2024/07/delaware_generative_ai_guidance.pdf
+Denmark	Recommendations on the use of artificial intelligence in teaching at the country's youth education programs	https://www.uvm.dk/aktuelt/nyheder/uvm/2024/nov/241120-nu-kommer-anbefalinger-for-brug-af-generativ-kunstig
+Georgia	Leveraging AI in the K-12 Setting	https://login.community.gadoe.org/documents/leveraging-ai-in-the-k-12-setting
+Hawaii	AI Guidance for Employees	https://www.ocid-ddt.k12.hi.us/programs/technology-integration/ai
+Indiana	Artificial Intelligence (AI) Guidance	https://drive.google.com/file/d/155XYqyFR_YnHE6veanG7ZpM1NBPB2N44/view?utm_name=
+Japan	Interim guidelines for the use of generative AI at the primary and secondary education level	https://www.mext.go.jp/content/20230710-mxt_shuukyo02-000030823_003.pdf
+Kentucky	AI Guidance Brief	https://kets.news/AI
+Louisana	Artificial Intelligence in Louisiana Schools: Guidance for K-12 Schools	https://louisianabelieves.com/docs/default-source/technology-footprint/ldoe-ai-guidance.pdf?sfvrsn=eb706e18_4
+Maine	AI Guidance Toolkit	https://view.genially.com/6717d13429a41768c92aa057
+Michigan	Artificial Intelligence Resources	https://www.michigan.gov/mde/services/academic-standards/educational-technology/artificial-intelligence
+Minnesota	Guiding Principles for AI in Education	https://education.mn.gov/MDE/dse/tech/AI/AIEd/
+Mississippi	Artificial Intelligence: Guidance for K-12 Classrooms	https://www.mdek12.org/sites/default/files/Offices/MDE/OTSS/DL/ai_guidance_final.pdf
+Missouri	Artificial Intelligence Guidance for Local Education Agencies	https://dese.mo.gov/media/pdf/artificial-intelligence-guidance-local-education-agencies
+Nevada	Nevada's Stellar Pathway to AI Teaching and Learning: Ethics, Principles, and Guidance	https://webapp-strapi-paas-prod-nde-001.azurewebsites.net/uploads/nevadas_stellar_pathway_to_ai_teaching_and_learning_bfaf0ec049.pdf
+New Brunswick	Recommended Approaches to General Artificial Intelligence.	https://plhub.nbed.ca/wp-content/uploads/sites/10/2024/02/Recommended-Approaches-to-Generative-AI.pdf
+New Jersey	Artificial Intelligence (AI)	https://www.nj.gov/education/innovation/ai/
+New Mexico	New Mexico AI Guidance for K-12 Education 1.0	https://web.ped.nm.gov/wp-content/uploads/2025/05/NM-AI-Guidance-Signed-4-29-2025.pdf
+New Zealand	Generative AI	https://newzealand.ai/insights/ministry-of-education-generative-ai-guidance
+North Carolina	North Carolina Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools	https://go.ncdpi.gov/AI_Guidelines
+North Dakota	North Dakota K-12 AI Guidance Framework	https://www.nd.gov/dpi/policyguidelines/north-dakota-k-12-ai-guidance-framework
+Ohio	AI Toolkit	https://innovateohio.gov/aitoolkit/ai-toolkit
+Oklahoma	Guidance and Considerations for Using Artificial Intelligence in Oklahoma K-12 Schools	https://sde.ok.gov/sites/default/files/Guidance%20and%20Considerations%20for%20Artificial%20Intelligence%20in%20Oklahoma%20Schools_version1.0.pdf
+Oregon	Generative Artificial Intelligence (AI) in K-12 Classrooms	https://www.oregon.gov/ode/educator-resources/teachingcontent/Documents/ODE_Generative_Artificial_Intelligence_(AI)_in_K-12_Classrooms_2023.pdf
+South Korea	Education policy direction and key tasks in the artificial intelligence era	https://www.korea.kr/archive/expDocView.do?docId=39237&call_from=rsslink
+Ukraine	Instructional and Methodological Recommendations regarding the introduction and use of Artificial Intelligence Technologies in General Secondary Education Institutions	https://cms.thedigital.gov.ua/storage/uploads/files/page/community/docs/%D0%86%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE_%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D1%96_%D1%80%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D1%96%D1%97_%D1%89%D0%BE%D0%B4%D0%BE_%D0%A8%D0%86_%D0%B2_%D0%97%D0%97%D0%A1%D0%9E.pdf
+United Kingdom	Generative artificial intelligence (AI) in education	https://www.gov.uk/government/publications/generative-artificial-intelligence-in-education/generative-artificial-intelligence-ai-in-education
+United States	Artificial Intelligence and Future of Teaching and Learning: Insights and Recommendations	https://www2.ed.gov/documents/ai-report/ai-report.pdf
+Uruguay	Building Artificial Intelligence for Education	https://pensamientocomputacional.ceibal.edu.uy/wp-content/uploads/2024/06/Building_ai_education_ori_digital-2.pdf
+Utah	Artificial Intelligence Framework for Utah P-12 Education: Guidance on the Use of AI in Our Schools	https://www.schools.utah.gov/informationtechnology/artificialintelligence/AI_Framework_V2.pdf
+Virginia	Guidelines for AI Integration through Education	https://www.education.virginia.gov/media/governorvirginiagov/secretary-of-education/pdf/AI-Education-Guidelines.pdf
+Wallonia-Brussels Federation	Focus - Artificial Intelligence	https://www.e-classe.be/api/v1/resource/contents/eclasse11680_664f10e5447af.pdf
+Washington	Human-Centered AI Guidance for K-12 Public Schools	https://ospi.k12.wa.us/student-success/resources-subject-area/human-centered-artificial-intelligence-schools
+West Virginia	Guidance, Considerations, & Intentions for the Use of Artificial Intelligence in West Virginia Schools	https://wvde.us/ai/
+Wisconsin	AI Guidance for Enhancing K-12 and Library Education	https://dpi.wi.gov/imt/empowering-lifelong-learning-ai-guidance-enhancing-k12-and-library-education
+Wyoming	Guidance for AI Policy Development	https://edu.wyoming.gov/wp-content/uploads/2024/06/Guidance-for-AI-Policy-Development.pdf

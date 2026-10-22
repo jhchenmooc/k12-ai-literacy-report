@@ -500,6 +500,108 @@
    "doi": "10.1002/jcal.70356",
    "screening_note": "Verified 2026-10-22 for daily brief 2026-10-22 (bibliographic; abstract read only from Crossref).",
    "verification_completed_on": "2026-10-22"
+  },
+  {
+   "candidate_id": "W2026-10-16-A15",
+   "category": "news_policy",
+   "source_url": "https://www.kmk.org/aktuelles/pressearchiv/mitteilung/was-schuelerinnen-und-schueler-im-umgang-mit-ki-koennen-sollen.html",
+   "source_title": "Was Schülerinnen und Schüler im Umgang mit KI können sollen",
+   "source_organization": "Bildungsministerkonferenz der KMK（德國各邦教育部長會議）",
+   "source_publication_date": "2026-10-16",
+   "source_locator": "德國 KMK 新聞稿頁（2026-10-22 讀取 200）：頁面日期 16.10.2026；框架 PDF 同日發布（未引用）；摘要歸屬：第 1 段第 1、2 句，第 3 段第 1、2、4 句",
+   "discovered_on": "2026-10-22",
+   "discovery_batch_id": "2026-10-22-daily-2",
+   "first_disclosed_on": "2026-10-16",
+   "source_updates": [],
+   "original_excerpt": "Die Bildungsministerinnen und Bildungsminister der Länder haben den KMK-Kompetenzrahmen „Bildung in der digitalen Welt“ aktualisiert und um KI-bezogene Kompetenzen erweitert. … Schülerinnen und Schüler sollen Künstliche Intelligenz verstehen, gezielt und kreativ einsetzen, ihre Ergebnisse kritisch bewerten sowie Chancen und Risiken einschätzen können. … Die sechs bestehenden Kompetenzbereiche der KMK-Strategie „Bildung in der digitalen Welt“ bleiben erhalten und werden systematisch um KI-bezogene Kompetenzen ergänzt. … Dazu gehören beispielsweise die kritische Bewertung KI-generierter Inhalte und möglicher Verzerrungen, der transparente Umgang mit KI-generierten oder KI-bearbeiteten Beiträgen, Datenschutz und ethische Fragen sowie der Umgang mit Deepfakes und KI-verstärkter Desinformation. … Der Kompetenzrahmen orientiert sich eng am AI-Literacy-Framework von OECD und Europäischer Kommission.",
+   "source_checked": true,
+   "claim_text": "來源機構：Bildungsministerkonferenz der KMK（德國各邦教育部長會議）；資料標題：Was Schülerinnen und Schüler im Umgang mit KI können sollen；來源刊登日：2026-10-16。官方文件表示：德國各邦教育首長更新 KMK〈數位世界中的教育〉能力框架並納入 AI 能力：學生應能理解 AI、有目的、有創意地使用、批判評估其產出並評估機會與風險；原六個能力領域保留，補入批判評估 AI 生成內容與可能偏誤、透明處理 AI 生成或經 AI 處理的作品、資料保護與倫理問題、因應深偽與 AI 強化的假訊息等；緊密參照 OECD 與歐盟執委會的 AI 素養框架。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+   "claim_class": "descriptive",
+   "risk_tier": "medium",
+   "scope_limitation": "官方新聞稿，宣布德國各邦共同的能力框架更新（指引性質）；各邦落實方式與時程以各邦規定為準；框架全文另見 KMK 網站 PDF。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "第一輪 2026-10-22 子代理讀德國 KMK 新聞稿頁，本 session 重讀原頁，擇第 1 段第 1、2 句與第 3 段第 1、2、4 句撰寫中文摘要與中文譯名；第二輪 2026-10-22 由隔離子代理逐項對照德文原句，判定一致，依建議補上「透明處理 AI 生成或經 AI 處理的作品」、改為「資料保護與倫理問題」，並刪去摘錄無直接依據的 S-LRN。同一模型，非獨立審閱。",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS",
+    "S-ETH"
+   ],
+   "ai_lit_note": "德國各邦學生 AI 能力框架更新，屬學生 AI 素養（A），對應 S-BAS「理解AI運作原理與限制」、S-ETH「具備對AI的批判思考」",
+   "audience": "k12",
+   "screening_note": "Verified 2026-10-22 for daily brief 2026-10-22 (official attributed summary; Thursday must-check hit).",
+   "verification_completed_on": "2026-10-22"
+  },
+  {
+   "candidate_id": "W2026-10-16-A16",
+   "category": "news_policy",
+   "source_url": "https://www.mim.gov.it/web/guest/-/next-gen-ai-a-milano-e-cernobbio-il-secondo-summit-internazionale-sull-intelligenza-artificiale-nella-scuola-organizzato-dal-mim",
+   "source_title": "Next Gen AI, a Milano e Cernobbio il secondo Summit internazionale sull'Intelligenza Artificiale nella scuola organizzato dal MIM",
+   "source_organization": "Ministero dell’Istruzione e del Merito（義大利教育與功績部）",
+   "source_publication_date": "2026-10-17",
+   "source_locator": "義大利教育與功績部新聞頁（2026-10-22 讀取 200）：頁面日期 Sabato, 17 ottobre 2026，最後更新 2026-10-21；摘要歸屬：第 1、2、3、5 段",
+   "discovered_on": "2026-10-22",
+   "discovery_batch_id": "2026-10-22-daily-2",
+   "first_disclosed_on": "2026-10-17",
+   "source_updates": [],
+   "original_excerpt": "Prenderà il via il 19 ottobre il secondo Summit internazionale dedicato all’esplorazione delle potenzialità e delle implicazioni dell’Intelligenza Artificiale nella scuola, promosso dal Ministero dell’Istruzione e del Merito. … Studenti, docenti e dirigenti delle istituzioni scolastiche di tutto il mondo incontreranno esperti di livello internazionale e rappresentanti di istituzioni e imprese per confrontarsi sui temi chiave e sulle applicazioni dell’AI nei sistemi educativi, trasformando il Summit in un grande laboratorio di orientamento, apprendimento e confronto. … In parallelo ai lavori dei docenti e degli studenti, Ministri dell’istruzione, delegati dei ministeri a livello europeo e internazionale, rappresentanti della Commissione europea, dell’OCSE e dell’Unesco si incontreranno per discutere il futuro delle politiche educative nell’era dell’intelligenza artificiale. … Il Summit proseguirà fino al 22 ottobre a Cernobbio, nel centro congressi di Villa Erba, con incontri, laboratori, sessioni formative per docenti e studenti, e momenti di confronto internazionale e con le riunioni delle delegazioni ministeriali internazionali.",
+   "source_checked": true,
+   "claim_text": "來源機構：Ministero dell’Istruzione e del Merito（義大利教育與功績部）；資料標題：Next Gen AI, a Milano e Cernobbio il secondo Summit internazionale sull'Intelligenza Artificiale nella scuola organizzato dal MIM；來源刊登日：2026-10-17。官方文件表示：義大利教育與功績部公告，第二屆學校人工智慧國際高峰會訂於 10 月 19 日開幕，並延續至 22 日於切爾諾比奧舉行；世界各地學校的學生、教師與校長將與國際專家及機構、企業代表交流 AI 在教育體系的關鍵議題與應用，議程包括教師與學生研習；各國教育首長、歐洲及國際層級部會代表與歐盟執委會、OECD、UNESCO 代表將同時討論 AI 時代教育政策的未來。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+   "claim_class": "descriptive",
+   "risk_tier": "medium",
+   "scope_limitation": "官方新聞（活動公告），公告於開幕前發布，活動 10-19～10-22 舉行，內容以實際辦理為準；非政策文件。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "第一輪 2026-10-22 子代理以無頭瀏覽器讀義大利教育與功績部新聞頁，本 session 以 curl 重讀原頁，擇第 1、2、3、5 段撰寫中文摘要與中文譯名；第二輪 2026-10-22 由隔離子代理逐項對照義大利文原句，依建議把時態改為預告（原文全用未來式），「各國教育部長」改「各國教育首長」，「另行」改「同時」並補上歐洲及國際層級部會代表，改後判定一致。同一模型，非獨立審閱。",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-PD",
+    "S-ETH"
+   ],
+   "ai_lit_note": "以學生、教師與校長為對象的學校 AI 高峰會公告（依準則 AI 素養活動公告判 A），對應 T-PD「參與社群共學反思AI時代教師角色」、S-ETH「思辨AI中的應用與取捨」",
+   "audience": "k12",
+   "screening_note": "Verified 2026-10-22 for daily brief 2026-10-22 (official attributed summary; Thursday must-check hit).",
+   "verification_completed_on": "2026-10-22"
+  },
+  {
+   "candidate_id": "W2026-10-16-A17",
+   "category": "news_policy",
+   "source_url": "https://www.unesco.org/en/articles/unescos-digital-transformation-collaborative-charting-how-ai-reshaping-education-systems",
+   "source_title": "UNESCO's Digital Transformation Collaborative: Charting how AI is reshaping education systems",
+   "source_organization": "UNESCO",
+   "source_publication_date": "2026-10-19",
+   "source_locator": "UNESCO 文章頁（2026-10-22 讀取 200）：頁面日期 19 October 2026，datePublished 2026-10-19T15:39:09+0200；報導 2026-09-11 會議；摘要歸屬：第 2、3 段與「Opportunity and risk」小標下第 2 段末句",
+   "discovered_on": "2026-10-22",
+   "discovery_batch_id": "2026-10-22-daily-2",
+   "first_disclosed_on": "2026-10-19",
+   "source_updates": [],
+   "original_excerpt": "Held at UNESCO Headquarters in Paris on 11 September 2026, convening more than 200 participants, the Strategy Lab tested the DTC's Six Pillars Framework against a fast-moving question: what is AI changing, and is the framework still equipped to respond to these rapid shifts? … The session focused on how education systems can respond to AI’s expanding opportunities and widening gaps, recognising the importance of ethical governance and safety while highlighting the support teachers need to engage critically with the technology as their role evolves. … The concern raised most consistently was whether teachers are equipped with the skills and training to use AI ethically and responsibly while bringing that knowledge into their classroom practice and passing it on to students.",
+   "source_checked": true,
+   "claim_text": "來源機構：UNESCO；資料標題：UNESCO's Digital Transformation Collaborative: Charting how AI is reshaping education systems；來源刊登日：2026-10-19。官方文件表示：UNESCO 報導 9 月 11 日在巴黎總部舉行、逾 200 人參加的策略實驗室，以數位轉型協作計畫的「六大支柱框架」檢視 AI 帶來的變化；會議聚焦教育體系如何回應 AI 擴大的機會與落差，體認倫理治理與安全的重要；會中最一致提出的關切，是教師是否具備合乎倫理且負責任使用 AI 的技能與培訓，並將相關知識帶入課堂、傳授給學生。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+   "claim_class": "descriptive",
+   "risk_tier": "medium",
+   "scope_limitation": "國際組織文章，報導 2026-09-11 會議討論，非政策文件或決議；與會者為政策制定者、教育夥伴與實務工作者，未限定學段。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "第一輪 2026-10-22 子代理以無頭瀏覽器讀 UNESCO AI 與教育專頁並讀文章頁，本 session 以 curl 重讀原頁，擇第 2、3 段與小標下段落撰寫中文摘要與中文譯名；第二輪 2026-10-22 由隔離子代理逐項對照英文原句，判定一致，依建議改為「體認」「會中最一致提出的關切」並補上帶入課堂一句，AI 素養對應由 T-ETH 改為 T-PD。同一模型，非獨立審閱。",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "T-BAS",
+    "T-PD"
+   ],
+   "ai_lit_note": "對象為其他教育關係人：政策制定者與實務工作者討論 AI 治理與教師能力，對應 T-BAS「參與AI校園治理部署與決策」、T-PD「評估教師AI素養以規劃專業增能」",
+   "audience": "other_stakeholders",
+   "screening_note": "Verified 2026-10-22 for daily brief 2026-10-22 (official attributed summary; Thursday must-check hit).",
+   "verification_completed_on": "2026-10-22"
   }
  ],
  "search_runs": [
@@ -683,6 +785,22 @@
     {
      "group": "thursday-policy",
      "query": "Thursday must-check: KMK, EDUFI, TeachAI tracker snapshot, Estonia RSS, India PIB RSS; F2 11 sources (ICO and Czech MOE headless); second-batch national ministries 10; think tanks and unions 7",
+     "status": "ok"
+    }
+   ],
+   "discovered": 3,
+   "added": 3,
+   "duplicates": 0
+  },
+  {
+   "batch_id": "2026-10-22-daily-2",
+   "searched_on": "2026-10-22",
+   "lookback_days": 7,
+   "lookback_days_target": 30,
+   "sources": [
+    {
+     "group": "thursday-policy",
+     "query": "Thursday must-check hits: KMK press releases (curl), MIM home page news (headless, then article pages by curl), UNESCO AI in education page (headless, Load more) and article page (curl), 2026-10-22T00:30Z-01:35Z",
      "status": "ok"
     }
    ],
