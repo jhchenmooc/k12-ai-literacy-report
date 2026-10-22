@@ -227,3 +227,12 @@ TeachAI 快照存 `research/drafts/policy-tracker-snapshots/teachai-2026-10-22.t
 - **補登 D20261022-07：** 阿聯教育部新聞 https://www.moe.gov.ae/en/mediacenter/news/Pages/Sarah-Al-Amiri-outlines-UAE-vision-for-education-in-the-age-of-AI-at-Geneva-summit.aspx 。首次公開日採文章頁所印 2026-10-20（新聞列表顯示 19 October, 2026，日期不一致，兩者皆在 7 天內）。A（S-ETH、S-LRN），k12，official_commentary，AE。以第 1 段第 1 句與第 3 段第 1、2 句撰寫；峰會周邊參訪與職業教育會談不寫入。第二輪由隔離子代理逐項對照，判定一致，依建議補上「並發展學生能力」與「積極」。候選池 W2026-10-16-A18；知識庫 KB-2026-0409（KR-14469～14478），titles_zh 加一列。
 - 本頁加 `revised_on: 2026-10-22`，並在 `publication/corrections.json` 記一筆（daily-2026-10-22-r1）。
 - 被擋與連不上的 9 站仍須管理者用自己電腦的瀏覽器查看；新加坡列表需另找可讀網址。
+
+## 補記二（2026-10-22，管理者提供全文與截圖後）
+
+- **D20261022-03 改為摘要型：** 管理者提供 JCAL 出版者 PDF（Received 2025-12-18、Accepted 2026-09-30，PDF 無上線日，首發日仍依 Crossref published-online 2026-10-15）。以 Objectives 第 1 句與 Methods 第 1、2、3 句撰寫；介入研究，前後變化不寫入。作者任職臺灣科技大學，樣本為越南高中學生，非臺灣樣本。
+- **補登 D20261022-08：** J49 EJED `10.1111/ejed.70912`。管理者提供出版者 PDF，Table 1 任教學段為國小 57、國中 105、高中 144（在職教師），對象判 k12。A（T-TEA、T-BAS）。首發日依 Crossref published-online 2026-10-21（Wiley 403；PDF 無上線日）。相關與差異結果不寫入。候選池 W2026-10-16-A19；知識庫 KB-2026-0412（0410 已由其他 PR 使用）。
+- **補登 D20261022-09：** J40 ILE `10.1080/10494820.2026.2750864`。管理者提供文章頁截圖：Published online 20 Oct 2026（與 Crossref 一致），摘要寫明對象為國小與中學數學教師。A（T-TEA、T-PD），k12。以摘要第 2、3、6 句撰寫，信效度評語、路徑分析與性別差異不寫入。候選池 W2026-10-16-A20；知識庫 KB-2026-0411（KR-14578～14597 含 0411、0412）。截圖只在對話中提供、未存成檔案，受限 repo 未存；摘要轉錄由本 session 對照截圖逐字核對。
+- 第二輪由隔離子代理對照 PDF 原文與快照，三則判定一致，依建議調整 -08 的學年修飾位置。
+- 兩份 PDF 存受限 repo `from-editor-session/daily-pdfs/`（KB-2026-0405__jcal-70356.pdf、KB-2026-0412__ejed-70912.pdf），已登記 README、FULLTEXT-INDEX 與 MANIFEST。
+- `publication/corrections.json` 加 daily-2026-10-22-r2。瀏覽器清單第 1～3 項已處理完畢；第 4 項（政策列表 9 站）已請編輯 session 轉交管理者電腦上的本機 session，待回傳。

@@ -1624,6 +1624,8 @@
 | KB-2026-0408 — [UNESCO's Digital Transformation Collaborative: Charting how AI is reshaping education systems](https://www.unesco.org/en/articles/unescos-digital-transformation-collaborative-charting-how-ai-reshaping-education-systems) | government_announcement | 2026-10-19 | bibliographic_checked |
 | KB-2026-0409 — [Sarah Al Amiri outlines UAE vision for education in the age of AI at Geneva summit](https://www.moe.gov.ae/en/mediacenter/news/Pages/Sarah-Al-Amiri-outlines-UAE-vision-for-education-in-the-age-of-AI-at-Geneva-summit.aspx) | government_announcement | 2026-10-20 | bibliographic_checked |
 | KB-2026-0410 — [Michigan K–12 Artificial Intelligence (AI) Learning Alignment Framework – Computer Science](https://www.michigan.gov/mde/-/media/Project/Websites/mde/Educational-Technology/Michigan-K12-AI-Learning-Alignment-Framework--Computer-Science.pdf) | framework | 2026-05-07 | bibliographic_checked |
+| KB-2026-0411 — [Mathematics teachers' AI-TMPK: exploring structural relationships and latent profiles](https://doi.org/10.1080/10494820.2026.2750864) | journal_article | 2026-10-20 | bibliographic_checked |
+| KB-2026-0412 — [Being a Teacher in a Digital World: Deepening the Relationships Among Teachers' AI‐TPACK, AI Literacy, and AI Acceptance Levels](https://doi.org/10.1111/ejed.70912) | journal_article | 2026-10-21 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
