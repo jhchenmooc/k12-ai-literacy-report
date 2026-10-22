@@ -67,6 +67,9 @@
 | KB-2022-0109 — [StoryQ—an Online Environment for Machine Learning of Text Classification](https://doi.org/10.1609/aaai.v36i11.21567) | conference_paper | 未知 | discovered_unverified |
 | KB-2022-0110 — [Teaching AI with the Hands-On AI Projects for the Classroom Series](https://doi.org/10.1609/aaai.v36i11.21566) | conference_paper | 未知 | discovered_unverified |
 | KB-2022-0111 — [Towards an AI-Infused Interdisciplinary Curriculum for Middle-Grade Classrooms](https://doi.org/10.1609/aaai.v36i11.21544) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0112 — [Co-Designing an Artificial Intelligence–Based Orchestration Tool to Support Dynamic Transitions Between Individual and Collaborative Learning](https://doi.org/10.3102/1890225) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0113 — [Exploring Stability in Multilevel Achievement-Goal Profile Membership in Mathematics Learning in an Intelligent Tutoring System](https://doi.org/10.3102/1887139) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0114 — [Promoting Active Engagement in Science Learning Using Artificial Intelligence](https://doi.org/10.3102/1887974) | conference_paper | 未知 | discovered_unverified |
 
 ## 2022｜first_publication
 
@@ -238,6 +241,8 @@
 | KB-2023-0212 — [Exploring Teachers’ Self-Perceived Effectiveness, Readiness, and Ability to Adapt an AI Literacy Curriculum in an International Classroom Context (Poster 20)](https://doi.org/10.3102/2004458) | conference_paper | 未知 | discovered_unverified |
 | KB-2023-0213 — [Simulated Approximation of Practices in Mathematics: Development of Artificial Intelligence–Based Chatbot](https://doi.org/10.3102/2017895) | conference_paper | 未知 | discovered_unverified |
 | KB-2023-0214 — [The Moderating Role of Gender, Artificial Intelligence Knowledge, and Discipline Knowledge in Students' Self-Regulated Learning](https://doi.org/10.3102/2008612) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0215 — [Guiding Teacher Use of Artificial Intelligence–Based Classroom Assessment to Improve Instructional Decisions: A Conceptual Framework (Poster 5)](https://doi.org/10.3102/2013249) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0216 — [RoboboITS: A Simulation-Based Tutoring System to Support AI Education Through Robotics](https://doi.org/10.1007/978-3-031-36336-8_62) | conference_paper | 未知 | discovered_unverified |
 
 ## 2023｜first_publication
 
@@ -528,6 +533,12 @@
 | KB-2024-0381 — [Teachers’ Conceptualization of the Role of AI in Promoting Equity](https://doi.org/10.3102/2113831) | conference_paper | 未知 | discovered_unverified |
 | KB-2024-0382 — [The AI Assistant in Teacher Online Professional Learning Communities: What Matters Most, and How?](https://doi.org/10.3102/2105510) | conference_paper | 未知 | discovered_unverified |
 | KB-2024-0383 — [“AI Is No More a Magic Box”: A Case Study of an AI Educational Program](https://doi.org/10.3102/2111691) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0384 — [Gendered Responses to AI Governance: Insights from a Quantitative National Survey on ChatGPT Usage Among Students and Educators](https://doi.org/10.1007/978-3-031-64315-6_20) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0385 — [How Is CHatGPT Changing the Way Students Write? An AI-Enabled Investigation](https://doi.org/10.3102/2113267) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0386 — [Let’s CHAT About Artificial Intelligence for Students With Disabilities: A Meta-Analytical Synthesis](https://doi.org/10.3102/2110228) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0387 — [Mind the Gap: Confronting the Vast Divide Between CS Teaching and Machine Learning Pedagogy](https://doi.org/10.1007/978-3-031-72315-5_24) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0388 — [Personalization for Learning Algebraic Symbolization in an AI-Based Environment](https://doi.org/10.3102/2105831) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0389 — [Supporting Teacher Timely Instructional Decisions Using Artificial Intelligence-Assisted Information to Promote Student Science Learning](https://doi.org/10.3102/2103498) | conference_paper | 未知 | discovered_unverified |
 
 ## 2024｜first_publication
 
@@ -751,6 +762,7 @@
 | KB-2024-0373 — [2024년 인공지능 활용 수업 도움 자료](https://www.gne.go.kr/pledge/user/bbs/BD_selectBbs.do?q_bbsSn=1067&q_bbsDocNo=1706561) | official_guidance | 2024-01 | discovered_unverified |
 | KB-2024-0374 — [Joint Media Statement – AI pilot to help tackle WA teacher workloads](https://www.wa.gov.au/government/media-statements/Cook-Labor-Government/Joint-Media-Statement---AI-PILOT-TO-HELP-TACKLE-WA-TEACHER-WORKLOADS-20240811) | government_announcement | 2024-08-12 | discovered_unverified |
 | KB-2024-0375 — [Ekspertgruppen om ChatGPT og andre digitale hjælpemidlers rapport (endelige anbefalinger)](https://www.uvm.dk/-/media/filer/uvm/aktuelt/pdf24/april/240423-ekspertgruppen-om-chatgpt-og-andre-digitale-hjaelpemidlers-rapport.pdf) | policy_review | 2024-04-24 | discovered_unverified |
+| KB-2024-0390 — [Richtlinie zum Umgang mit Künstlicher Intelligenz (KI) im Zusammenhang mit Leistungsbeurteilungen und Prüfungen](https://hibb.hamburg.de/wp-content/uploads/sites/870/2024/05/Richtlinie-zum-Umgang-mit-KI-im-Zusammenhang-mit-Leistungsbeurteilungen-und-Pruefungen.pdf) | official_guidance | 2024-04-17 | bibliographic_checked |
 | KB-2026-0099 — [NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools](https://go.ncdpi.gov/AI_Guidelines) | official_guidance | 2024-01-16 | bibliographic_checked |
 
 ## 2025｜event_year
@@ -1611,6 +1623,7 @@
 | KB-2026-0407 — [Next Gen AI, a Milano e Cernobbio il secondo Summit internazionale sull'Intelligenza Artificiale nella scuola organizzato dal MIM](https://www.mim.gov.it/web/guest/-/next-gen-ai-a-milano-e-cernobbio-il-secondo-summit-internazionale-sull-intelligenza-artificiale-nella-scuola-organizzato-dal-mim) | government_announcement | 2026-10-17 | bibliographic_checked |
 | KB-2026-0408 — [UNESCO's Digital Transformation Collaborative: Charting how AI is reshaping education systems](https://www.unesco.org/en/articles/unescos-digital-transformation-collaborative-charting-how-ai-reshaping-education-systems) | government_announcement | 2026-10-19 | bibliographic_checked |
 | KB-2026-0409 — [Sarah Al Amiri outlines UAE vision for education in the age of AI at Geneva summit](https://www.moe.gov.ae/en/mediacenter/news/Pages/Sarah-Al-Amiri-outlines-UAE-vision-for-education-in-the-age-of-AI-at-Geneva-summit.aspx) | government_announcement | 2026-10-20 | bibliographic_checked |
+| KB-2026-0410 — [Michigan K–12 Artificial Intelligence (AI) Learning Alignment Framework – Computer Science](https://www.michigan.gov/mde/-/media/Project/Websites/mde/Educational-Technology/Michigan-K12-AI-Learning-Alignment-Framework--Computer-Science.pdf) | framework | 2026-05-07 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
