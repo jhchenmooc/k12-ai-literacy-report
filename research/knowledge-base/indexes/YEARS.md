@@ -1604,6 +1604,9 @@
 | KB-2026-0400 — [Ready or not: How are schools responding to Artificial Intelligence?](https://www.evidence.ero.govt.nz/documents/ready-or-not-how-are-schools-responding-to-artificial-intelligence-research-report/) | policy_review | 2026-07-30 | discovered_unverified |
 | KB-2026-0401 — [Niedersachsen bringt KI in den Unterricht – Schul-Chatbot startet landesweit (Presseinformation)](https://www.mk.niedersachsen.de/startseite/aktuelles/presseinformationen/niedersachsen-bringt-ki-in-den-unterricht-schul-chatbot-startet-landesweit-248679.html) | government_announcement | 2026-02-13 | discovered_unverified |
 | KB-2026-0402 — [Brief van de staatssecretaris van OCW over digitalisering in het funderend onderwijs (Kamerstuk 32 034, nr. 82)](https://zoek.officielebekendmakingen.nl/kst-32034-82.pdf) | official_guidance | 2026-06-25 | discovered_unverified |
+| KB-2026-0403 — [What AI competency do K-12 teachers need? Framework construction based on teachers' work scenarios and the development and validation of a scale](https://doi.org/10.1007/s11423-026-10741-9) | journal_article | 2026-10-21 | bibliographic_checked |
+| KB-2026-0404 — [AI-mediated tools in primary English language education: a scoping review of pedagogical functions and teacher orchestration](https://doi.org/10.3389/feduc.2026.1968516) | journal_article | 2026-10-21 | bibliographic_checked |
+| KB-2026-0405 — [Writing Motivation and Self‐Efficacy in AI‐Chatbot‐Supported EFL Writing: Exploratory Insights Across Proficiency Levels](https://doi.org/10.1002/jcal.70356) | journal_article | 2026-10-15 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
