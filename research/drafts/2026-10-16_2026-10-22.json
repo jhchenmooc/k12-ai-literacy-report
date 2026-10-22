@@ -490,7 +490,7 @@
    "decision": "publish",
    "ai_crosscheck_status": "concordant",
    "ai_crosscheck_passes": 2,
-   "ai_crosscheck_record": "第一輪 2026-10-22T00:40Z 子代理讀 OpenAlex 與 Crossref 紀錄（published-online 2026-10-15、作者、題名、摘要）；第二輪 2026-10-22T00:55Z 本 session 重新讀 Crossref 紀錄核對題名、DOI、日期、期刊與摘要所載對象，並由隔離子代理對照中文譯名，判定一致，中文譯名依建議改為「…不同程度學習者的探索性發現」並標 EFL。出版社頁回 403，未繞過；依管理者 2026-10-16 規則，首發日採 Crossref published-online，只發書目；介入研究的結果不轉述。同一模型，非獨立審閱。",
+   "ai_crosscheck_record": "第一輪 2026-10-22（約 00:25Z）子代理讀 OpenAlex 與 Crossref 紀錄（published-online 2026-10-15、作者、題名、摘要）；第二輪 2026-10-22T00:30Z 本 session 重新讀 Crossref 紀錄核對題名、DOI、日期、期刊與摘要所載對象，並由隔離子代理對照中文譯名，判定一致，中文譯名依建議改為「…不同程度學習者的探索性發現」並標 EFL。出版社頁回 403，未繞過；依管理者 2026-10-16 規則，首發日採 Crossref published-online，只發書目；介入研究的結果不轉述。同一模型，非獨立審閱。",
    "ai_lit_class": "B",
    "ai_lit_dims": [
     "S-LRN"
@@ -800,7 +800,7 @@
    "sources": [
     {
      "group": "thursday-policy",
-     "query": "Thursday must-check hits: KMK press releases (curl), MIM home page news (headless, then article pages by curl), UNESCO AI in education page (headless, Load more) and article page (curl), 2026-10-22T00:30Z-01:35Z",
+     "query": "Thursday must-check hits: KMK press releases (curl), MIM home page news (headless, then article pages by curl), UNESCO AI in education page (headless, Load more) and article page (curl), 2026-10-22T00:24Z-00:36Z",
      "status": "ok"
     }
    ],
