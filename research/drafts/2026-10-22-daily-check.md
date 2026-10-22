@@ -212,3 +212,18 @@ TeachAI 快照存 `research/drafts/policy-tracker-snapshots/teachai-2026-10-22.t
 ## 既有候選池
 
 本週（10-16～10-22）候選池 17 筆，皆 publish（A01～A17）。本週最後一天；下一份候選池 2026-10-23_2026-10-29 於 10-23 以 `node research/scaffold-weekly.js 2026-10-23` 建立。
+
+## 補記（2026-10-22，週四瀏覽器清單轉交處理後）
+
+管理者當日請編輯 session 把「請管理者用瀏覽器處理」清單轉交可讀瀏覽器的 session；實際由文獻搜尋 session 以雲端無頭 Chromium 讀取（只開公開頁面、不登入、不改 User-Agent，遇人機驗證即停並記「被擋」），2026-10-22T01:36Z 回傳本 session。
+
+- **論文 3 篇（清單第 1～3 項）：** T&F、Wiley 文章頁皆回 403（Cloudflare「Just a moment...」），未讀到。回傳的 Crossref 書目與摘要與本 session 早上所讀相同，無新資訊。三項維持在清單上：ILE 至 10-27、EJED 至 10-28 仍可補發；JCAL 維持書目型。
+- **週四政策列表掃描（第 4 項）：**
+  - 被擋：OECD（Cloudflare）、美國教育部（403）、法國國民教育部（Cloudflare）、英國 NEU（Cloudflare）、美國 FTC（403）。
+  - 連不上：澳洲教育部新聞室、澳洲教育部長新聞、eSafety（ERR_HTTP2_PROTOCOL_ERROR，各 2 次）。
+  - 無法判定：新加坡教育部（頁面可開，新聞列表 15 秒未載出；press-releases 舊網址 404）。
+  - 無：歐盟 European Education Area（10-15 後只有 10-20 循環經濟學習一則，無 AI）、紐西蘭教育部（10-15 後 5 則，皆無 AI）。
+  - 命中 1 則：阿聯教育部〈Sarah Al Amiri outlines UAE vision for education in the age of AI at Geneva summit〉，本 session 以 curl 重讀文章頁（200）後補登。
+- **補登 D20261022-07：** 阿聯教育部新聞 https://www.moe.gov.ae/en/mediacenter/news/Pages/Sarah-Al-Amiri-outlines-UAE-vision-for-education-in-the-age-of-AI-at-Geneva-summit.aspx 。首次公開日採文章頁所印 2026-10-20（新聞列表顯示 19 October, 2026，日期不一致，兩者皆在 7 天內）。A（S-ETH、S-LRN），k12，official_commentary，AE。以第 1 段第 1 句與第 3 段第 1、2 句撰寫；峰會周邊參訪與職業教育會談不寫入。第二輪由隔離子代理逐項對照，判定一致，依建議補上「並發展學生能力」與「積極」。候選池 W2026-10-16-A18；知識庫 KB-2026-0409（KR-14469～14478），titles_zh 加一列。
+- 本頁加 `revised_on: 2026-10-22`，並在 `publication/corrections.json` 記一筆（daily-2026-10-22-r1）。
+- 被擋與連不上的 9 站仍須管理者用自己電腦的瀏覽器查看；新加坡列表需另找可讀網址。

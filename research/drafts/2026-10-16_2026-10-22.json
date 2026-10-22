@@ -602,6 +602,40 @@
    "audience": "other_stakeholders",
    "screening_note": "Verified 2026-10-22 for daily brief 2026-10-22 (official attributed summary; Thursday must-check hit).",
    "verification_completed_on": "2026-10-22"
+  },
+  {
+   "candidate_id": "W2026-10-16-A18",
+   "category": "news_policy",
+   "source_url": "https://www.moe.gov.ae/en/mediacenter/news/Pages/Sarah-Al-Amiri-outlines-UAE-vision-for-education-in-the-age-of-AI-at-Geneva-summit.aspx",
+   "source_title": "Sarah Al Amiri outlines UAE vision for education in the age of AI at Geneva summit",
+   "source_organization": "Ministry of Education, United Arab Emirates（阿聯教育部）",
+   "source_publication_date": "2026-10-20",
+   "source_locator": "阿聯教育部新聞頁（2026-10-22 以 curl 讀取 200）：文章頁日期 10/20/2026（新聞列表顯示 19 October, 2026，日期不一致，採文章頁日期）；摘要歸屬：第 1 段第 1 句、第 3 段第 1、2 句",
+   "discovered_on": "2026-10-22",
+   "discovery_batch_id": "2026-10-22-daily-3",
+   "first_disclosed_on": "2026-10-20",
+   "source_updates": [],
+   "original_excerpt": "Her Excellency Sarah bint Yousef Al Amiri, Minister of Education, outlined the UAE's vision for a learner-centred education system that supports students' holistic development at the sixth Geneva Science and Diplomacy Anticipation Summit (GESDA) in 2026. … In this context, Her Excellency discussed the AI curriculum and efforts to strengthen teachers' capabilities, helping students understand the technology and use it thoughtfully and responsibly. … She emphasised the teacher's role in guiding learning and developing students' abilities, while ensuring that students remain actively engaged in thinking, inquiry and building knowledge when using AI tools.",
+   "source_checked": true,
+   "claim_text": "來源機構：Ministry of Education, United Arab Emirates（阿聯教育部）；資料標題：Sarah Al Amiri outlines UAE vision for education in the age of AI at Geneva summit；來源刊登日：2026-10-20。官方文件表示：阿聯教育部長 Sarah bint Yousef Al Amiri 在 2026 年第六屆日內瓦科學與外交預測峰會（GESDA）闡述以學習者為中心、支持學生全人發展的教育願景；部長談到 AI 課程與強化教師能力的努力，協助學生理解這項技術並審慎、負責任地使用，並強調教師引導學習並發展學生能力的角色，以及學生使用 AI 工具時持續積極投入思考、探究與知識建構。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+   "claim_class": "descriptive",
+   "risk_tier": "medium",
+   "scope_limitation": "官方新聞，報導部長在國際峰會座談的發言，非政策文件；AI 課程的具體內容與實施方式未在本文說明。",
+   "translation_reviewed": true,
+   "conflict_unresolved": false,
+   "decision": "publish",
+   "ai_crosscheck_status": "concordant",
+   "ai_crosscheck_passes": 2,
+   "ai_crosscheck_record": "第一輪 2026-10-22 由文獻搜尋 session 以無頭瀏覽器讀阿聯教育部新聞列表與文章頁（管理者當日交辦的週四瀏覽器清單），本 session 以 curl 重讀文章頁，擇第 1 段第 1 句與第 3 段第 1、2 句撰寫中文摘要與中文譯名；第二輪 2026-10-22 由隔離子代理逐項對照英文原句，判定一致，依建議補上「並發展學生能力」與「積極」。同一模型，非獨立審閱。",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-ETH",
+    "S-LRN"
+   ],
+   "ai_lit_note": "部長談 AI 課程與學生負責任使用 AI、使用時持續思考，屬學生 AI 素養（A），對應 S-ETH「落實AI使用規範與責任」、S-LRN「理解AI輔助學習的角色功能」",
+   "audience": "k12",
+   "screening_note": "Found 2026-10-22 through the Thursday browser list relayed via the editor and literature-search sessions; verified the same day for daily brief 2026-10-22 (correction, official attributed summary).",
+   "verification_completed_on": "2026-10-22"
   }
  ],
  "search_runs": [
@@ -806,6 +840,22 @@
    ],
    "discovered": 3,
    "added": 3,
+   "duplicates": 0
+  },
+  {
+   "batch_id": "2026-10-22-daily-3",
+   "searched_on": "2026-10-22",
+   "lookback_days": 7,
+   "lookback_days_target": 30,
+   "sources": [
+    {
+     "group": "thursday-browser-list",
+     "query": "Thursday browser list relayed via the editor session at the manager's request (2026-10-22): literature-search session read the 12 policy list pages and three publisher pages with headless Chromium (public pages only, no login; Cloudflare/403 pages recorded as blocked); UAE MOE article re-read by curl 2026-10-22T01:36Z",
+     "status": "ok"
+    }
+   ],
+   "discovered": 1,
+   "added": 1,
    "duplicates": 0
   }
  ],

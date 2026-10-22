@@ -307,5 +307,57 @@
    "The concern raised most consistently was whether teachers are equipped with the skills and training to use AI ethically and responsibly while bringing that knowledge into their classroom practice and passing it on to students."
   ],
   "attributed_summary": "UNESCO 報導 9 月 11 日在巴黎總部舉行、逾 200 人參加的策略實驗室，以數位轉型協作計畫的「六大支柱框架」檢視 AI 帶來的變化；會議聚焦教育體系如何回應 AI 擴大的機會與落差，體認倫理治理與安全的重要；會中最一致提出的關切，是教師是否具備合乎倫理且負責任使用 AI 的技能與培訓，並將相關知識帶入課堂、傳授給學生。"
+ },
+ {
+  "claim_id": "D20261022-07",
+  "candidate_id": "W2026-10-16-A18",
+  "kind": "news_policy",
+  "claim_text": "來源機構：Ministry of Education, United Arab Emirates（阿聯教育部）；資料標題：Sarah Al Amiri outlines UAE vision for education in the age of AI at Geneva summit；來源刊登日：2026-10-20。官方文件表示：阿聯教育部長 Sarah bint Yousef Al Amiri 在 2026 年第六屆日內瓦科學與外交預測峰會（GESDA）闡述以學習者為中心、支持學生全人發展的教育願景；部長談到 AI 課程與強化教師能力的努力，協助學生理解這項技術並審慎、負責任地使用，並強調教師引導學習並發展學生能力的角色，以及學生使用 AI 工具時持續積極投入思考、探究與知識建構。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "N-V2",
+  "daily_fact_kind": "official_attributed_summary",
+  "source_document_type": "official_commentary",
+  "source_title": "Sarah Al Amiri outlines UAE vision for education in the age of AI at Geneva summit",
+  "title_zh": "阿聯教育部長 Sarah Al Amiri 在日內瓦峰會闡述 AI 時代的阿聯教育願景",
+  "source_organization": "Ministry of Education, United Arab Emirates（阿聯教育部）",
+  "source_url": "https://www.moe.gov.ae/en/mediacenter/news/Pages/Sarah-Al-Amiri-outlines-UAE-vision-for-education-in-the-age-of-AI-at-Geneva-summit.aspx",
+  "evidence_source_url": "https://www.moe.gov.ae/en/mediacenter/news/Pages/Sarah-Al-Amiri-outlines-UAE-vision-for-education-in-the-age-of-AI-at-Geneva-summit.aspx",
+  "source_locator": "阿聯教育部新聞頁（2026-10-22 以 curl 讀取 200）：文章頁日期 10/20/2026（新聞列表顯示 19 October, 2026，日期不一致，採文章頁日期）；摘要歸屬：第 1 段第 1 句、第 3 段第 1、2 句",
+  "source_type": "official_news",
+  "checked_at": "2026-10-22",
+  "publication_date": "2026-10-20",
+  "first_disclosed_on": "2026-10-20",
+  "evidence_path": "publication/sources/d2026-10-22-a18-ae-moe.txt",
+  "evidence_sha256": "7186984a2e4d910c71cff618120766fbbde76e1e30e5b9781ea039bf824ff18b",
+  "original_excerpt": "Her Excellency Sarah bint Yousef Al Amiri, Minister of Education, outlined the UAE's vision for a learner-centred education system that supports students' holistic development at the sixth Geneva Science and Diplomacy Anticipation Summit (GESDA) in 2026. … In this context, Her Excellency discussed the AI curriculum and efforts to strengthen teachers' capabilities, helping students understand the technology and use it thoughtfully and responsibly. … She emphasised the teacher's role in guiding learning and developing students' abilities, while ensuring that students remain actively engaged in thinking, inquiry and building knowledge when using AI tools.",
+  "interpretation_note": "轉述官方新聞所載部長在峰會的發言主題與 AI 課程、教師能力段落；峰會周邊參訪與職業教育會談不寫入。",
+  "scope_limitation": "官方新聞，報導部長在國際峰會座談的發言，非政策文件；AI 課程的具體內容與實施方式未在本文說明。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "decision": "publish",
+  "ai_crosscheck_record": "第一輪 2026-10-22 由文獻搜尋 session 以無頭瀏覽器讀阿聯教育部新聞列表與文章頁（管理者當日交辦的週四瀏覽器清單），本 session 以 curl 重讀文章頁，擇第 1 段第 1 句與第 3 段第 1、2 句撰寫中文摘要與中文譯名；第二輪 2026-10-22 由隔離子代理逐項對照英文原句，判定一致，依建議補上「並發展學生能力」與「積極」。同一模型，非獨立審閱。",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "S-ETH",
+   "S-LRN"
+  ],
+  "ai_lit_note": "部長談 AI 課程與學生負責任使用 AI、使用時持續思考，屬學生 AI 素養（A），對應 S-ETH「落實AI使用規範與責任」、S-LRN「理解AI輔助學習的角色功能」",
+  "audience": "k12",
+  "source_country": "AE",
+  "summary_evidence_spans": [
+   "Her Excellency Sarah bint Yousef Al Amiri, Minister of Education, outlined the UAE's vision for a learner-centred education system that supports students' holistic development at the sixth Geneva Science and Diplomacy Anticipation Summit (GESDA) in 2026.",
+   "In this context, Her Excellency discussed the AI curriculum and efforts to strengthen teachers' capabilities, helping students understand the technology and use it thoughtfully and responsibly.",
+   "She emphasised the teacher's role in guiding learning and developing students' abilities, while ensuring that students remain actively engaged in thinking, inquiry and building knowledge when using AI tools."
+  ],
+  "attributed_summary": "阿聯教育部長 Sarah bint Yousef Al Amiri 在 2026 年第六屆日內瓦科學與外交預測峰會（GESDA）闡述以學習者為中心、支持學生全人發展的教育願景；部長談到 AI 課程與強化教師能力的努力，協助學生理解這項技術並審慎、負責任地使用，並強調教師引導學習並發展學生能力的角色，以及學生使用 AI 工具時持續積極投入思考、探究與知識建構。"
  }
 ]

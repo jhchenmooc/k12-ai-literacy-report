@@ -1610,6 +1610,7 @@
 | KB-2026-0406 — [Was Schülerinnen und Schüler im Umgang mit KI können sollen](https://www.kmk.org/aktuelles/pressearchiv/mitteilung/was-schuelerinnen-und-schueler-im-umgang-mit-ki-koennen-sollen.html) | government_announcement | 2026-10-16 | bibliographic_checked |
 | KB-2026-0407 — [Next Gen AI, a Milano e Cernobbio il secondo Summit internazionale sull'Intelligenza Artificiale nella scuola organizzato dal MIM](https://www.mim.gov.it/web/guest/-/next-gen-ai-a-milano-e-cernobbio-il-secondo-summit-internazionale-sull-intelligenza-artificiale-nella-scuola-organizzato-dal-mim) | government_announcement | 2026-10-17 | bibliographic_checked |
 | KB-2026-0408 — [UNESCO's Digital Transformation Collaborative: Charting how AI is reshaping education systems](https://www.unesco.org/en/articles/unescos-digital-transformation-collaborative-charting-how-ai-reshaping-education-systems) | government_announcement | 2026-10-19 | bibliographic_checked |
+| KB-2026-0409 — [Sarah Al Amiri outlines UAE vision for education in the age of AI at Geneva summit](https://www.moe.gov.ae/en/mediacenter/news/Pages/Sarah-Al-Amiri-outlines-UAE-vision-for-education-in-the-age-of-AI-at-Geneva-summit.aspx) | government_announcement | 2026-10-20 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
