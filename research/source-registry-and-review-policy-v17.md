@@ -44,6 +44,15 @@
 | O-UK-JCQ | 英國（英格蘭、威爾斯、北愛爾蘭）考試機構聯合會 | https://www.jcq.org.uk/ | 考試與評量中的 AI 使用規定 | 非法定機關，但 GCSE／A level 學校須遵守；管理者 2026-10-21 同意列官方來源；頁面以現行版生效日記錄（2026-10-21 登錄） |
 | O-US-MN-MDE | 美國明尼蘇達 | https://education.mn.gov/ | 州 AI 指導原則與 CTE 簡報 | 頁尾「Updated」只記現行版；較早版本另核（2026-10-21 登錄） |
 | O-DE-HH-HIBB | 德國漢堡（職業教育） | https://hibb.hamburg.de/ | 職業學校評量與考試的 AI 準則 | 職業學校屬中等教育後段；以文內生效日記首發（2026-10-22 登錄） |
+| O-CN-ZJ-JYT | 中國浙江省 | https://jyt.zj.gov.cn/ | 省級「人工智能+教育」行動方案 | 會同其他廳局發文者以教育廳為發布機關（2026-10-23 登錄） |
+| O-CN-SC-JYT | 中國四川省 | https://edu.sc.gov.cn/ | 省級中小學 AI 教育實施方案 | 新聞稿日不等於方案印發日（2026-10-23 登錄） |
+| O-FR-MEN | 法國中央（國民教育部） | https://www.education.gouv.fr/ | 部令（Bulletin officiel）與 AI 使用框架 | BO 刊登日與部令簽署日分開（2026-10-23 登錄） |
+| O-TW-KH-EDU | 臺灣高雄市（教育局） | https://www.kh.edu.tw/ | 市級生成式 AI 教學應用指引 | 官方網域找不到原檔時用學校網站副本（2026-10-23 登錄） |
+| O-TW-TN-EDU | 臺灣臺南市（市府、教育局） | https://www.tainan.gov.tw/ | 市級生成式 AI 學習平台公告 | 市府新聞稿（2026-10-23 登錄） |
+| O-AU-ACT-BSSS | 澳洲首都領地（高中課程委員會） | https://www.bsss.act.edu.au/ | 高中評量與學術誠信的 AI 指南 | 與 ACT 教育局（O-AU-ACT-EDU）分開（2026-10-23 登錄） |
+| O-AU-ACT-EDU | 澳洲首都領地（教育局） | https://www.act.gov.au/ | 公立學校 AI 使用立場聲明 | 原網址曾轉址（2026-10-23 登錄） |
+| O-AU-SA-DFE | 澳洲南澳（教育部） | https://www.education.sa.gov.au/ | 給家長的學校 AI 資訊頁 | 頁面無日期（2026-10-23 登錄） |
+| O-DE-TH-TMBJS | 德國圖林根邦（教育部） | https://bildung.thueringen.de/ | 生成式 AI 模型處理行動指引 | 封面只印年月（2026-10-23 登錄） |
 
 表內入口為起始監測位置，**不是每個入口都已完成可達性、歷年文件或法律效力查證**。加拿大及美國州／澳洲州政策應按主管機關分別登錄，避免假裝統一全國政策；地方單位採需求驅動擴充。
 
