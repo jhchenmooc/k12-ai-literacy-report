@@ -1629,6 +1629,7 @@
 | KB-2026-0413 — [AI Security Literacy: Ecosystem-based Competency Framework and K-12 Learning Platform](https://arxiv.org/abs/2610.28859) | preprint | 2026-10-20 | bibliographic_checked |
 | KB-2026-0414 — [Mapping Artificial Intelligence Integration in Kindergarten Teaching: Usage Patterns, Pedagogical Purposes, and Acceptance Factors Among Teachers with Prior AI-Use Experience](https://doi.org/10.3390/educsci16101766) | journal_article | 2026-10-21 | bibliographic_checked |
 | KB-2026-0415 — [國教署攜手臺北流行音樂中心辦理「流行音樂種子教師創作營」](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=827D64669A563D41) | government_announcement | 2026-10-23 | bibliographic_checked |
+| KB-2026-0416 — [Moving Minds, Moving Bodies: Rethinking AI Literacy and Health Literacy Through Embodied Education](https://doi.org/10.1111/ejed.70904) | journal_article | 2026-10-21 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
