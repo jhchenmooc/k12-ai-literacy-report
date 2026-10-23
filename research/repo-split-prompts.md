@@ -21,12 +21,12 @@
 【PR-1 範圍】（只做這些）
 1. 公開資料清單：在 research/public-site.js 新增獨立函式，只給 publish-public 用。現有網站清單（STATIC_HTML、RESOURCES、PUBLIC_DIRS）和舊站部署完全不變。清單內容依 v0.6 修訂 A：
    - 網站（現行網站清單）與 deploy.json；
-   - publication/claims：issues.json 已登錄期別的 claims JSON，路徑不變；
+   - publication/claims：issues.json 已登錄期別的 claims JSON，路徑不變；公開版用欄位白名單拿掉 ai_crosscheck_record 與 candidate_id，其餘欄位逐字照原樣（v0.6 修訂 A「主張檔欄位白名單」）；
    - publication/sources：只取上述 claims 的 evidence_path，路徑必須在 publication/sources/ 內，拒絕 .. 與 symlink，SHA-256 必須等於 evidence_sha256；未被引用的快照不得進入；
    - publication/corrections.json；
    - legacy/：2026-09 舊刊月報引用的 4 份文件，檔首加狀態說明，指向未公開檔案的相對連結改為純文字；
    - 不得包含知識庫、methods/、publication/audits/、任何程式或 workflow（.github/ISSUE_TEMPLATE 留給 PR-2）。
-2. 推送前檢查與內容掃描（正文第 4.2 節）：遠端檔案樹比對（首次部署時，公開 repo 必須沒有任何 commit）、清單相等、精確樣式掃描、allow-mentions.txt（trig_ 與 session_01 永遠不得放行）、不得有 symlink；掃描失敗只列檔名與行號，不印內容。
+2. 推送前檢查與內容掃描（正文第 4.2 節）：遠端檔案樹比對（首次部署時，公開 repo 必須沒有任何 commit）、清單相等、精確樣式掃描、allow-mentions.txt（trig_ 與 session_01 永遠不得放行）、不得有 symlink；掃描失敗只列檔名與行號，不印內容。allow-mentions.txt 初始只放 v0.6 修訂 A 列的兩行（w2026-10-09-tw1.txt 第 6 行、W20261016-22 的 source_locator），以檔案＋行內容比對。
 3. 網址常數 PUBLIC_SITE_ORIGIN、PUBLIC_REPO_URL：預設值等於現況，本 PR 不改值。
 4. .github/workflows/publish-public.yml：
    - 只用 workflow_dispatch 觸發；job 加 if: github.ref == 'refs/heads/main'；開關 vars.ENABLE_PUBLIC_PUBLISH；
@@ -36,7 +36,7 @@
    - 推送目標 git@github.com:ailiteracytw/ailiteracytw.github.io.git；commit 作者用機器人名稱與 noreply 信箱，訊息只寫「部署 YYYY-MM-DD〔期別〕」，不含私人 commit SHA、不帶管理者姓名或 email；
    - 部署時產生 deploy.json，並做冒煙測試（輪詢有上限，失敗讓 job 失敗）；網站沒有變動時不建 commit，寫進 Actions 摘要；
    - 另加 dispatch 輸入 negative_test：用金鑰嘗試 force push，預期被拒；被拒才算成功，不得改動公開 repo。
-5. 測試：公開資料清單只含 v0.6 修訂 A 列的內容；未登錄或未被引用的快照不得進入；evidence_path 都能在公開側解析且雜湊相符；不含 research/、知識庫、methods/；legacy/ 的相對連結都落在公開清單內；現有網站清單與舊站部署輸出和 main 完全相同；掃描規則的 fixture 測試（至少一個應放行、一個應擋下）。
+5. 測試：公開版 claims 不含 ai_crosscheck_record 與 candidate_id、其他欄位與私人版逐字相同；公開資料清單只含 v0.6 修訂 A 列的內容；未登錄或未被引用的快照不得進入；evidence_path 都能在公開側解析且雜湊相符；不含 research/、知識庫、methods/；legacy/ 的相對連結都落在公開清單內；現有網站清單與舊站部署輸出和 main 完全相同；掃描規則的 fixture 測試（至少一個應放行、一個應擋下）。
 
 【限制】
 - 不改出版閘門、不改已刊頁面、不改現有網站清單、不改任何 GitHub 設定。
@@ -76,6 +76,8 @@ PR-1 快完成時提醒我做步驟 1b（正文第 7 節，v0.6 修訂 F 的排�
 - 請想出至少三種可能漏掃的寫法（大小寫、URL 編碼、斷行、JSON 跳脫等），逐一確認會不會被擋。
 
 【三、公開資料推導】
+- 公開版 claims 確實拿掉 ai_crosscheck_record 與 candidate_id，其他欄位逐字相同；白名單是「列出要拿掉的欄位」還是「列出要保留的欄位」？新增欄位時哪一種較安全，請評估。
+- allow-mentions.txt 只有 v0.6 修訂 A 列的兩行，且以檔案＋行內容比對，不能放行同檔其他行。
 - 只含 v0.6 修訂 A 列的內容：網站、deploy.json、已登錄期別的 claims 與它們引用的快照、corrections.json、legacy/ 4 份文件。
 - 不得有知識庫（records、relations、search_runs、indexes）、methods/、publication/audits/、任何程式或 workflow。
 - evidence_path 限定在 publication/sources/ 內、SHA-256 相符；未被引用的快照（目前 9 個）不會進入。

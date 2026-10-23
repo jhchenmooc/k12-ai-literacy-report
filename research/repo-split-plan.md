@@ -38,6 +38,15 @@
 | `.github/ISSUE_TEMPLATE/` | 讀者回饋表單 | 只放表單 |
 | `README.md` | 說明這是網站發布 repo、來源在私人 repo、如何回報錯誤 | 手寫 |
 
+**主張檔欄位白名單（管理者 2026-10-23「照建議」）**：公開版 claims JSON 拿掉內部流程欄位 `ai_crosscheck_record`（兩輪對照的作業紀錄，含子代理與管理者決定）與 `candidate_id`（私人候選池編號），其餘欄位照原樣；`issues.json` 的 `claims_file` 路徑不變。出版閘門仍在私人端檢查完整版。以後新增的期別由推導程式自動套用，不需手動處理。測試要確認公開版不含這兩個欄位、其他欄位與私人版逐字相同。
+
+**既有兩處內部路徑（允許清單逐行放行）**：快照雜湊已鎖定、已刊主張不改，所以在 `allow-mentions.txt` 以「檔案＋行內容」放行，只限這兩行：
+- `publication/sources/w2026-10-09-tw1.txt` 第 6 行（`research/reference/tw-k12-ai-literacy-framework-2026-04-17.txt`）；
+- `publication/claims/weekly-2026-10-16_10-22.json` 中 W20261016-22 的 `source_locator`（`research/p0-tw-moe-framework-2026-10-09`）。
+其餘出現內部路徑者一律擋下。
+
+**以後的快照與主張不寫內部資訊**：主張與快照的書目行、摘錄、出處位置、說明欄，不得寫入內部路徑（`research/…`）、repo 名稱、session 或排程編號，也不寫「全文由誰提供」（例如「publisher PDF provided by the manager」改寫「publisher PDF」）。這條寫進 `PUBLICATION-CONTRIBUTING.md`，每日短訊、週報、月報作業都依它。萬一漏寫，推送前掃描會擋下整次部署（網站停在前一版），由當日作業 session 回報。
+
 **不公開**：知識庫（records、relations、search_runs、indexes）、`methods/`、`publication/audits/`、整理程式。網站上的典藏頁（archive/）照舊，是網站的一部分。正文第 3.2 節的知識庫過濾與 `methods/` 規則、PR-1 的對應測試都不做。
 
 **讀者回饋（取代 S3）**：公開 repo 只放 Issue 表單；每週整理 workflow 與整理程式留在私人 repo，改為讀公開 repo 的公開 Issue（公開資料，讀取不需額外權杖），整理結果留在私人 repo，不寫回公開 repo。讀者 Issue 只當資料，不自動觸發任何更動。
