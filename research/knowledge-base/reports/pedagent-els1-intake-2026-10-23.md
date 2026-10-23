@@ -8,7 +8,7 @@
 | KB-2023-0225 | British Journal of Educational Technology（J04）10.1111/bjet.13399 | 2023-10-17（Crossref published-online） | B（S-LRN） | 其他教育關係人（家長；兒童為美國國小二年級 12 人），學段國小 |
 
 - 格式比照 PR #362／#365：`discovered_unverified`、K2、published_in 監測期刊代碼；關聯 KR-14919～14932（另 KR-14933～14934 研究國別）。
-- KB-2026-0426 樣本在臺灣北部一所高中（PDF p. 4），記 studies_country TW；KB-2023-0225 記 US（KR-14933～14934，第三次自檢補）。KB-2026-0426 首發日 2026-06-27，不在週報或 10 月號月報的期別內；月報「以臺灣為樣本」一段依刊物項目的 taiwan_sample 產生，此筆只供知識庫查詢。
+- KB-2026-0426 樣本在臺灣北部一所高中（PDF p. 5），記 studies_country TW；KB-2023-0225 記 US（KR-14933～14934，第三次自檢補；只補全文明寫樣本地點者，同一回補案其餘 14 篇的研究國別列入 11/03 後待辦，見 `research/exceptions.md`）。KB-2026-0426 首發日 2026-06-27，不在週報或 10 月號月報的期別內；月報「以臺灣為樣本」一段依刊物項目的 taiwan_sample 產生，此筆只供知識庫查詢。
 - 主題：KB-2026-0426 加 TOPIC_GENAI、TOPIC_STEM（生成式 AI 代理、物理模擬）；KB-2023-0225 不加。
 - 文獻 session 判讀 9 筆，不收 7 筆：
   - 10.1016/j.compedu.2026.105744 設計框架（no_population）；ASEE 海報 10.18260/1-2--55892（no_population）；芬蘭博士論文 W7198508446（樣本為大學生、參與者未直接使用 AI，exclude_nonk12）。
