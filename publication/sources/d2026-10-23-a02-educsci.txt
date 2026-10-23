@@ -1,0 +1,4 @@
+Education Sciences (MDPI) | 2026-10-21 | Mapping Artificial Intelligence Integration in Kindergarten Teaching: Usage Patterns, Pedagogical Purposes, and Acceptance Factors Among Teachers with Prior AI-Use Experience | https://doi.org/10.3390/educsci16101766 | Crossref works record read 2026-10-23T00:29Z; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online (manager rule 2026-10-16); bibliographic facts only
+Crossref: published-online 2026-10-21; record created 2026-10-22; Education Sciences 16(10); ISSN 2227-7102; licence CC BY 4.0; authors Evania Yafie, Yudha Alfian Haqqi, Taufik Ikhsan Slamet, Wuri Astuti, Sari Karmina, Riska Pristiani, Norazrena Abu Samah
+Crossref abstract sentence (not read from the publisher page):
+Findings informed a questionnaire administered to 250 kindergarten teachers selected through equal-allocation stratified random sampling across five districts of Malang City.
