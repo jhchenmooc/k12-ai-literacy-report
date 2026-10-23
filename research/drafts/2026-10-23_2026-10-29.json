@@ -11,8 +11,142 @@
     "high_risk": "hold",
     "source_required": true
   },
-  "items": [],
-  "search_runs": [],
+  "items": [
+    {
+      "candidate_id": "W2026-10-23-A01",
+      "category": "research",
+      "source_url": "https://arxiv.org/abs/2610.28859",
+      "source_title": "AI Security Literacy: Ecosystem-based Competency Framework and K-12 Learning Platform",
+      "source_organization": "arXiv",
+      "source_publication_date": "2026-10-20",
+      "source_locator": "arXiv abs 頁 Submission history：[v1] Tue, 20 Oct 2026 19:31:37 UTC（只有 v1）；摘要歸屬：Abstract 第 1、3、5 句",
+      "discovered_on": "2026-10-23",
+      "discovery_batch_id": "2026-10-23-daily-1",
+      "first_disclosed_on": "2026-10-20",
+      "source_updates": [],
+      "original_excerpt": "Adoption of artificial intelligence in K-12 schools has outpaced guidance for students, teachers, and administrators. … We propose an AI Security Literacy (AISL) framework of six dimensions spanning the school ecosystem, ground its technical dimensions in public AI-safety benchmarks and a reproducible multi-seed adversarial evaluation, and ground its attitudinal dimensions in nationally representative survey micro-data from U.S. teachers and adults. … NeuralFortify, a browser-based K-12 platform built on real AI models, is presented as an illustrative operationalization.",
+      "source_checked": true,
+      "claim_text": "來源機構：arXiv；資料標題：AI Security Literacy: Ecosystem-based Competency Framework and K-12 Learning Platform；來源刊登日：2026-10-20。作者摘要報告：作者指出 K-12 學校採用 AI 的速度已超過對學生、教師與行政人員的指引，提出涵蓋學校生態系的六面向「AI 資安素養」（AISL）框架：技術面向以公開 AI 安全基準與可重現的多種子對抗評估為依據，態度面向以美國教師與成人具全國代表性的調查資料為依據；並以瀏覽器 K-12 平台 NeuralFortify 作為示例。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "預印本 v1，未經同儕審查；框架提案與示例平台，態度面向依美國教師與成人的調查資料，非新蒐集的學校樣本。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-23 子代理讀 arXiv abs 頁，本 session 擇摘要第 1、3、5 句撰寫中文摘要與中文譯名；第二輪 2026-10-23 由隔離子代理逐項對照英文原句，判定一致，依建議把 AI 素養對應由 S-ETH 改為 S-BAS，譯名與摘要用「資安」。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS",
+        "T-ETH"
+      ],
+      "ai_lit_note": "以學校生態系（學生、教師、行政人員）為對象的 AI 資安素養能力框架，對應 S-BAS「理解AI運作原理與限制」、T-ETH「辨識AI風險與安全防範」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-10-23 for daily brief 2026-10-23.",
+      "verification_completed_on": "2026-10-23"
+    },
+    {
+      "candidate_id": "W2026-10-23-A02",
+      "category": "research",
+      "source_url": "https://doi.org/10.3390/educsci16101766",
+      "source_title": "Mapping Artificial Intelligence Integration in Kindergarten Teaching: Usage Patterns, Pedagogical Purposes, and Acceptance Factors Among Teachers with Prior AI-Use Experience",
+      "source_organization": "Education Sciences (MDPI)",
+      "source_publication_date": "2026-10-21",
+      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：MDPI 回 403）：2026-10-21；Education Sciences 16(10)；Crossref 摘要句（非原文）",
+      "discovered_on": "2026-10-23",
+      "discovery_batch_id": "2026-10-23-daily-1",
+      "first_disclosed_on": "2026-10-21",
+      "source_updates": [],
+      "original_excerpt": "Findings informed a questionnaire administered to 250 kindergarten teachers selected through equal-allocation stratified random sampling across five districts of Malang City.",
+      "source_checked": true,
+      "claim_text": "來源機構：Education Sciences (MDPI)；資料標題：Mapping Artificial Intelligence Integration in Kindergarten Teaching: Usage Patterns, Pedagogical Purposes, and Acceptance Factors Among Teachers with Prior AI-Use Experience；來源刊登日：2026-10-21。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "同儕審查期刊論文（Education Sciences，監測清單 J47）；Crossref 摘要所述問卷對象為印尼瑪琅幼兒園教師 250 人；本則只為書目事實。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-23 子代理讀 Crossref 與 OpenAlex 紀錄（published-online 2026-10-21、作者、題名、摘要）；第二輪 2026-10-23T00:29Z 本 session 重新讀 Crossref 紀錄核對題名、DOI、日期、期刊與摘要所載對象，並由隔離子代理對照中文譯名，判定一致，譯名依建議加「盤點」。出版社頁回 403，未繞過；依管理者 2026-10-16 規則，首發日採 Crossref published-online，只發書目。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "T-TEA"
+      ],
+      "ai_lit_note": "幼兒園在職教師在教學中使用 AI 工具的型態與接受因素，屬 AI 賦能教學（B），對應 T-TEA「評估AI工具輔助教學的適用性」",
+      "audience": "k12",
+      "doi": "10.3390/educsci16101766",
+      "screening_note": "Verified 2026-10-23 for daily brief 2026-10-23.",
+      "verification_completed_on": "2026-10-23"
+    },
+    {
+      "candidate_id": "W2026-10-23-A03",
+      "category": "news_policy",
+      "source_url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=827D64669A563D41",
+      "source_title": "國教署攜手臺北流行音樂中心辦理「流行音樂種子教師創作營」",
+      "source_organization": "教育部國民及學前教育署",
+      "source_publication_date": "2026-10-23",
+      "source_locator": "教育部即時新聞頁（發布單位國教署，上版日期 115-10-23；RSS pubDate 2026-10-23 08:00 臺灣時間）；摘要歸屬：第 1 段第 2 句、第 2 段第 2 句、第 5 段第 1 句",
+      "discovered_on": "2026-10-23",
+      "discovery_batch_id": "2026-10-23-daily-1",
+      "first_disclosed_on": "2026-10-23",
+      "source_updates": [],
+      "original_excerpt": "115年創作營集結全臺國小、國中及高級中等學校共30位教師，任教領域橫跨音樂、藝術生活、視覺藝術、表演藝術及多媒體音樂，透過2日、共計11小時的實戰課程，從A&R創作企劃、AI工具應用到歌曲創作，帶領教師實際走過流行音樂製作歷程，將第一線產業新知與創作思維帶回校園，培養學生的音樂審美、表達與創作能力。 … 首日從AI工具應用切入，導入A&R實務，引導教師分析業界收歌需求、整合不同曲風並撰寫創作計畫，再進行分組創作；第2天則聚焦曲風與Beat分析，進一步尋找或生成Beat伴奏，並由專業創作者加入各組協作完成歌曲。 … 除了完成作品，本屆課程也聚焦AI時代下創作者不可取代的核心能力，引導教師釐清作品內容、目標聽眾及風格情緒，透過不同曲風的聆聽與分析，從「我覺得好聽」進一步理解「我為什麼喜歡」，建立自身的音樂判斷與審美。",
+      "source_checked": true,
+      "claim_text": "來源機構：教育部國民及學前教育署；資料標題：國教署攜手臺北流行音樂中心辦理「流行音樂種子教師創作營」；來源刊登日：2026-10-23。官方文件表示：國教署普通型高級中等學校藝術生活學科中心與臺北流行音樂中心辦理第 6 期流行音樂種子教師實戰創作營，全臺國小、國中及高級中等學校 30 位教師參加，2 日共 11 小時課程從 A&R 創作企劃、AI 工具應用到歌曲創作，第 2 天並尋找或生成 Beat 伴奏；課程也聚焦 AI 時代創作者不可取代的核心能力。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "中央機關新聞稿（研習成果），對象為國小、國中與高級中等學校教師 30 位；AI 工具應用為課程的一部分，研習主軸為流行音樂創作。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-23 子代理讀教育部即時新聞 RSS 與文章頁，本 session 重讀原頁，擇第 1 段第 2 句、第 2 段第 2 句與第 5 段第 1 句撰寫中文摘要；第二輪 2026-10-23 由隔離子代理逐項對照原文，判定一致，依建議修改 AI 素養對應說明，註明研習主軸為流行音樂、AI 為部分課程。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-BAS"
+      ],
+      "ai_lit_note": "在職中小學教師研習含 AI 工具應用（研習主軸為流行音樂創作，AI 為部分課程；依準則生成式 AI 教學研習判 A），對應 T-BAS「選用適性適規之AI工具」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-10-23 for daily brief 2026-10-23.",
+      "verification_completed_on": "2026-10-23"
+    }
+  ],
+  "search_runs": [
+    {
+      "batch_id": "2026-10-23-daily-1",
+      "searched_on": "2026-10-23",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-10-22,until-created-date:2026-10-22,type:journal-article, six query.bibliographic sets rows=40, one proceedings-article set, watchlist-ISSN sets (22 journals plus J49, with and without keywords); created 2026-10-23 (0 at query time); pedagogical AI agent set (manager 2026-10-22) on Crossref and OpenAlex; publisher pages one try each (Springer, Frontiers 200; MDPI, Wiley, Elsevier, APA 403)",
+          "status": "ok"
+        },
+        {
+          "group": "preprint",
+          "query": "arXiv API (https) three queries 40/40/100 plus pedagogical AI agent query, sorted by submittedDate; alphaXiv discovery after 2026-10-16 verified by arXiv",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search and Content API, Federal Register (10-22 issue; 10-23 not yet online; public inspection), MEXT (incl. 10-20 press conference transcript), China MOE, HK info.gov.hk 10-22/10-23, KICE, MOE Korea, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (115-10-22 issue) and RSS, NSTC RSS, MODA press releases page 1; E5a",
+          "status": "ok"
+        }
+      ],
+      "discovered": 3,
+      "added": 3,
+      "duplicates": 0
+    }
+  ],
   "item_template": {
     "candidate_id": "",
     "category": "news_policy_or_research",
