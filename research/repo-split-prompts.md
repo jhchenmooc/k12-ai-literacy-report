@@ -21,7 +21,7 @@
 【PR-1 範圍】（只做這些）
 1. 公開資料清單：在 research/public-site.js 新增獨立函式，只給 publish-public 用。現有網站清單（STATIC_HTML、RESOURCES、PUBLIC_DIRS）和舊站部署完全不變。清單內容依 v0.6 修訂 A：
    - 網站（現行網站清單）與 deploy.json；
-   - publication/claims：issues.json 已登錄期別的 claims JSON，路徑不變；公開版用欄位白名單拿掉 ai_crosscheck_record 與 candidate_id，其餘欄位逐字照原樣（v0.6 修訂 A「主張檔欄位白名單」）；
+   - publication/claims：issues.json 已登錄期別的 claims JSON，路徑不變；公開版只保留公開欄位清單上的 61 個欄位（現有 63 個扣掉 ai_crosscheck_record 與 candidate_id），值逐字照原樣；出現清單外的新欄位就擋下部署並列出欄位名稱（v0.6 修訂 A「主張檔欄位白名單」）；
    - publication/sources：只取上述 claims 的 evidence_path，路徑必須在 publication/sources/ 內，拒絕 .. 與 symlink，SHA-256 必須等於 evidence_sha256；未被引用的快照不得進入；
    - publication/corrections.json；
    - legacy/：2026-09 舊刊月報引用的 4 份文件，檔首加狀態說明，指向未公開檔案的相對連結改為純文字；
@@ -76,7 +76,7 @@ PR-1 快完成時提醒我做步驟 1b（正文第 7 節，v0.6 修訂 F 的排�
 - 請想出至少三種可能漏掃的寫法（大小寫、URL 編碼、斷行、JSON 跳脫等），逐一確認會不會被擋。
 
 【三、公開資料推導】
-- 公開版 claims 確實拿掉 ai_crosscheck_record 與 candidate_id，其他欄位逐字相同；白名單是「列出要拿掉的欄位」還是「列出要保留的欄位」？新增欄位時哪一種較安全，請評估。
+- 公開版 claims 只含公開欄位清單上的欄位、值逐字相同；確認是「列出要保留的欄位」，清單外的新欄位會擋下部署而不是默默公開。
 - allow-mentions.txt 只有 v0.6 修訂 A 列的兩行，且以檔案＋行內容比對，不能放行同檔其他行。
 - 只含 v0.6 修訂 A 列的內容：網站、deploy.json、已登錄期別的 claims 與它們引用的快照、corrections.json、legacy/ 4 份文件。
 - 不得有知識庫（records、relations、search_runs、indexes）、methods/、publication/audits/、任何程式或 workflow。
