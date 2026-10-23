@@ -70,6 +70,9 @@
 | KB-2022-0112 — [Co-Designing an Artificial Intelligence–Based Orchestration Tool to Support Dynamic Transitions Between Individual and Collaborative Learning](https://doi.org/10.3102/1890225) | conference_paper | 未知 | discovered_unverified |
 | KB-2022-0113 — [Exploring Stability in Multilevel Achievement-Goal Profile Membership in Mathematics Learning in an Intelligent Tutoring System](https://doi.org/10.3102/1887139) | conference_paper | 未知 | discovered_unverified |
 | KB-2022-0114 — [Promoting Active Engagement in Science Learning Using Artificial Intelligence](https://doi.org/10.3102/1887974) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0115 — [A Mobile Invented Spelling Tutoring System](https://doi.org/10.1007/978-3-031-11647-6_100) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0116 — [Design a Dashboard for Secondary School Learners to Support Mastery Learning in a Gamified Learning Environment](https://doi.org/10.1007/978-3-031-16290-9_48) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0117 — [What Teachers Would Expect from a Pedagogical Agent System Working at a Classroom Level: A Focus Group Study](https://doi.org/10.1007/978-3-031-16290-9_53) | conference_paper | 未知 | discovered_unverified |
 
 ## 2022｜first_publication
 
@@ -243,6 +246,10 @@
 | KB-2023-0214 — [The Moderating Role of Gender, Artificial Intelligence Knowledge, and Discipline Knowledge in Students' Self-Regulated Learning](https://doi.org/10.3102/2008612) | conference_paper | 未知 | discovered_unverified |
 | KB-2023-0215 — [Guiding Teacher Use of Artificial Intelligence–Based Classroom Assessment to Improve Instructional Decisions: A Conceptual Framework (Poster 5)](https://doi.org/10.3102/2013249) | conference_paper | 未知 | discovered_unverified |
 | KB-2023-0216 — [RoboboITS: A Simulation-Based Tutoring System to Support AI Education Through Robotics](https://doi.org/10.1007/978-3-031-36336-8_62) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0217 — [Evaluating the Impact and Usability of an AI-Driven Feedback System for Learning Design](https://doi.org/10.1007/978-3-031-42682-7_22) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0218 — [Supporting Remote Students Through Utilizing Web-Based Exercise-Templates and a Mobile Learning Chatbot for Creating and Interacting with Learning Materials](https://doi.org/10.1007/978-3-031-42682-7_59) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0219 — [Intelligent Tutoring Systems Examined in Social Experiments—Is the Magic Gone? A Meta-Analysis](https://doi.org/10.1109/icalt58122.2023.00020) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0220 — [The Design and Analysis of a Storytelling Chatbot with Natural Language Processing Techniques for Enhancing EFL Reading](https://doi.org/10.1109/icalt58122.2023.00079) | conference_paper | 未知 | discovered_unverified |
 
 ## 2023｜first_publication
 
@@ -539,6 +546,11 @@
 | KB-2024-0387 — [Mind the Gap: Confronting the Vast Divide Between CS Teaching and Machine Learning Pedagogy](https://doi.org/10.1007/978-3-031-72315-5_24) | conference_paper | 未知 | discovered_unverified |
 | KB-2024-0388 — [Personalization for Learning Algebraic Symbolization in an AI-Based Environment](https://doi.org/10.3102/2105831) | conference_paper | 未知 | discovered_unverified |
 | KB-2024-0389 — [Supporting Teacher Timely Instructional Decisions Using Artificial Intelligence-Assisted Information to Promote Student Science Learning](https://doi.org/10.3102/2103498) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0392 — [“I Am Confused! How to Differentiate Between…?” Adaptive Follow-Up Questions Facilitate Tutor Learning with Effective Time-On-Task](https://doi.org/10.1007/978-3-031-64299-9_2) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0393 — [CLIL and EFL Teacher Perspectives on AI-EdTech: An Exploration of Opportunities and Concerns](https://doi.org/10.1007/978-3-031-72315-5_27) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0394 — [TutorChat: a Chatbot for the Support to Dyslexic Learner’s activity through Generative AI](https://doi.org/10.1109/icalt61570.2024.00051) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0395 — [ChatCLD: A Framework for Supporting Teachers in Contextualizing Learning Designs using ChatGPT](https://doi.org/10.1109/icalt61570.2024.00093) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0396 — [Leveraging Generative Artificial Intelligence to Support Students in Learning Programming: A Chatbot Pilot Study](https://doi.org/10.22318/icls2024.135690) | conference_paper | 未知 | discovered_unverified |
 
 ## 2024｜first_publication
 
@@ -1261,6 +1273,7 @@
 | KB-2025-0486 — [TeachTune: Reviewing Pedagogical Agents Against Diverse Student Profiles with Simulated Students](https://doi.org/10.1145/3706598.3714054) | conference_paper | 2025-04-25 | discovered_unverified |
 | KB-2025-0487 — [Generative AI pedagogical agent as learners' inquiry assistant: Designing and implementing Situational Teaching](https://doi.org/10.58459/icce.2025.5931) | conference_paper | 2025-12-01 | discovered_unverified |
 | KB-2025-0488 — [國民中小學學生學習評量及作業使用生成式人工智慧注意事項](https://kkes.tc.edu.tw/var/file/177/1177/img/959/178217580.pdf) | official_guidance | 2025-03-03 | discovered_unverified |
+| KB-2025-0489 — [Exploring Factors Influencing Teachers' Acceptance of AI Tools for Creating Animated Educational Videos With Pedagogical Agents](https://doi.org/10.1111/jcal.70083) | journal_article | 2025-06-16 | discovered_unverified |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
@@ -1640,6 +1653,9 @@
 | KB-2026-0420 — [A Theory-Guided LLM Pedagogical Agent for STEM+C Scaffolding Without Over-Reliance](https://doi.org/10.48550/arxiv.2605.30539) | preprint | 2026-05-28 | discovered_unverified |
 | KB-2026-0421 — [Evidence-Decision-Feedback: Theory-Driven Adaptive Scaffolding for LLM Agents](https://doi.org/10.1007/978-3-032-29744-0_1) | conference_paper | 2026-06-27 | discovered_unverified |
 | KB-2026-0422 — [Real-world Impact of a GenAI Pedagogical Agent and Child-AI Discourse Analysis in K12 Math Learning in the Middle East](https://doi.org/10.21203/rs.3.rs-10455194/v1) | preprint | 2026-08-25 | discovered_unverified |
+| KB-2026-0423 — [Research on the Application of Pedagogical Agents in Interdisciplinary Teaching](https://doi.org/10.1007/978-981-95-3480-7_35) | conference_paper | 2026-01-02 | discovered_unverified |
+| KB-2026-0424 — [Analysis of the Use of Artificial Intelligence and Its Impact on the Character and Cultural Identity of Junior High School Students at Homeschooling Smart Makassar](https://doi.org/10.55885/jerp.v6i2.1160) | journal_article | 2026-10-06 | discovered_unverified |
+| KB-2026-0425 — [The Impact of a Hidden AI-Based Chatbot on the Quality of Collaborative Problem Solving in a School Context](https://doi.org/10.3390/electronics15050956) | journal_article | 2026-02-26 | discovered_unverified |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
