@@ -53,23 +53,23 @@
       "source_title": "Mapping Artificial Intelligence Integration in Kindergarten Teaching: Usage Patterns, Pedagogical Purposes, and Acceptance Factors Among Teachers with Prior AI-Use Experience",
       "source_organization": "Education Sciences (MDPI)",
       "source_publication_date": "2026-10-21",
-      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：MDPI 回 403）：2026-10-21；Education Sciences 16(10)；Crossref 摘要句（非原文）",
+      "source_locator": "出版者 PDF（管理者 2026-10-23 提供；MDPI 對程式回 403）：Published 21 October 2026（與 Crossref published-online 一致），Received 5 August 2026、Accepted 15 October 2026；摘要歸屬：Abstract 第 2 至 5 句、第 7 句",
       "discovered_on": "2026-10-23",
       "discovery_batch_id": "2026-10-23-daily-1",
       "first_disclosed_on": "2026-10-21",
       "source_updates": [],
-      "original_excerpt": "Findings informed a questionnaire administered to 250 kindergarten teachers selected through equal-allocation stratified random sampling across five districts of Malang City.",
+      "original_excerpt": "This study investigated the AI tools used by kindergarten teachers, their educational purposes, implementation challenges, and technology acceptance factors influencing AI integration in Malang, Indonesia. … The design used was an exploratory sequential mixed-methods approach. … Ten Guru Penggerak and five kindergarten administrators participated in interviews, observations, and document analysis to gather qualitative data. … Findings informed a questionnaire administered to 250 kindergarten teachers selected through equal-allocation stratified random sampling across five districts of Malang City. … Qualitative findings showed that teachers used AI for lesson planning, play-based learning design, storytelling, media creation, assessment, documentation, parent communication, and professional learning.",
       "source_checked": true,
-      "claim_text": "來源機構：Education Sciences (MDPI)；資料標題：Mapping Artificial Intelligence Integration in Kindergarten Teaching: Usage Patterns, Pedagogical Purposes, and Acceptance Factors Among Teachers with Prior AI-Use Experience；來源刊登日：2026-10-21。",
-      "claim_class": "bibliographic",
-      "risk_tier": "low",
-      "scope_limitation": "同儕審查期刊論文（Education Sciences，監測清單 J47）；Crossref 摘要所述問卷對象為印尼瑪琅幼兒園教師 250 人；本則只為書目事實。",
+      "claim_text": "來源機構：Education Sciences (MDPI)；資料標題：Mapping Artificial Intelligence Integration in Kindergarten Teaching: Usage Patterns, Pedagogical Purposes, and Acceptance Factors Among Teachers with Prior AI-Use Experience；來源刊登日：2026-10-21。作者摘要報告：研究探討印尼瑪琅幼兒園教師使用的 AI 工具、用途、實施挑戰與科技接受因素；採探索性序列混合方法，先蒐集 10 名 Guru Penggerak 教師與 5 名園方行政人員的訪談、觀察與文件資料，再對分層隨機抽樣的 250 名幼兒園教師施測問卷；作者報告教師將 AI 用於教案規劃、遊戲式學習設計、說故事、媒材製作、評量、紀錄、親師溝通與專業學習。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Education Sciences，監測清單 J47）；印尼一個城市的幼兒園教師，研究對象為已有 AI 使用經驗者，結果不宜推論。",
       "translation_reviewed": true,
       "conflict_unresolved": false,
       "decision": "publish",
       "ai_crosscheck_status": "concordant",
       "ai_crosscheck_passes": 2,
-      "ai_crosscheck_record": "第一輪 2026-10-23 子代理讀 Crossref 與 OpenAlex 紀錄（published-online 2026-10-21、作者、題名、摘要）；第二輪 2026-10-23T00:29Z 本 session 重新讀 Crossref 紀錄核對題名、DOI、日期、期刊與摘要所載對象，並由隔離子代理對照中文譯名，判定一致，譯名依建議加「盤點」。出版社頁回 403，未繞過；依管理者 2026-10-16 規則，首發日採 Crossref published-online，只發書目。同一模型，非獨立審閱。",
+      "ai_crosscheck_record": "第一輪 2026-10-23 讀管理者提供的出版者 PDF 摘要，擇第 2 至 5 句與第 7 句撰寫中文摘要，不寫相關與路徑結果；第二輪 2026-10-23 由隔離子代理逐項對照英文原句，判定一致，依建議把 administrators 改譯「園方行政人員」。初版 2026-10-23 以書目型發布（摘要只讀到 Crossref 版），同日依管理者提供的 PDF 改為摘要型。同一模型，非獨立審閱。",
       "ai_lit_class": "B",
       "ai_lit_dims": [
         "T-TEA"
@@ -77,7 +77,7 @@
       "ai_lit_note": "幼兒園在職教師在教學中使用 AI 工具的型態與接受因素，屬 AI 賦能教學（B），對應 T-TEA「評估AI工具輔助教學的適用性」",
       "audience": "k12",
       "doi": "10.3390/educsci16101766",
-      "screening_note": "Verified 2026-10-23 for daily brief 2026-10-23.",
+      "screening_note": "Published 2026-10-23 as bibliographic; upgraded the same day to author-abstract attributed summary from the manager-supplied publisher PDF.",
       "verification_completed_on": "2026-10-23"
     },
     {
@@ -112,6 +112,41 @@
       "audience": "k12",
       "screening_note": "Verified 2026-10-23 for daily brief 2026-10-23.",
       "verification_completed_on": "2026-10-23"
+    },
+    {
+      "candidate_id": "W2026-10-23-A04",
+      "category": "research",
+      "source_url": "https://doi.org/10.1111/ejed.70904",
+      "source_title": "Moving Minds, Moving Bodies: Rethinking AI Literacy and Health Literacy Through Embodied Education",
+      "source_organization": "European Journal of Education (Wiley)",
+      "source_publication_date": "2026-10-21",
+      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：Wiley 回 403；出版者 PDF 無上線日）：2026-10-21；出版者 PDF（管理者 2026-10-23 提供）：European Journal of Education 2026; 61:e70904，Received 15 June 2026、Accepted 8 October 2026；摘要歸屬：Abstract 第 2、4、5、8、9 句，第 1 節說明應用場域的段落首句",
+      "discovered_on": "2026-10-23",
+      "discovery_batch_id": "2026-10-23-daily-2",
+      "first_disclosed_on": "2026-10-21",
+      "source_updates": [],
+      "original_excerpt": "This article develops embodied education as an orientation for examining how learners judge AI-supported activity within bodily, temporal and institutional conditions. … Its central concept is embodied judgement: the context-sensitive appraisal of technological possibilities, bodily and affective experience, educational purposes and feasible courses of action. … The framework distinguishes four interdependent components with different analytical roles: bodily awareness supplies experiential cues; situated judgement interprets those cues alongside evidence and task demands; movement-based learning provides one pedagogical means of developing and revising understanding; and ethical agency concerns justified action and responsibility towards others. … It develops classroom activities, provisional indicators and an illustrative policy comparison of Norway, Finland and Singapore. … The contribution is a relational account of the AI–health literacy interface, not a validated scale or intervention. … The principal application is secondary education, where increasingly independent technology use coexists with substantial institutional control over time and assessment.",
+      "source_checked": true,
+      "claim_text": "來源機構：European Journal of Education (Wiley)；資料標題：Moving Minds, Moving Bodies: Rethinking AI Literacy and Health Literacy Through Embodied Education；來源刊登日：2026-10-21。作者摘要報告：概念性文章提出「具身教育」，作為檢視學習者在身體、時間與制度條件下如何判斷 AI 輔助活動的取向，核心概念為「具身判斷」，框架區分身體覺察、情境判斷、以動作為本的學習與倫理能動性四個成分；作者說明主要應用場域為中等教育；文章並設計課堂活動、暫定指標及挪威、芬蘭、新加坡的示例性政策比較，不是經驗證的量表或介入。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（European Journal of Education，監測清單 J49，特刊）；概念性文章，未經實證；作者說明主要應用場域為中等教育，首發日依 Crossref 上線日。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-23 讀管理者提供的出版者 PDF 摘要與第 1 節，擇摘要第 2、4、5、8、9 句與說明應用場域的句子撰寫中文摘要與中文譯名；第二輪 2026-10-23 由隔離子代理逐項對照英文原句，依建議更正摘要句序標示（8、9 句）並重算雜湊、斷句與加「示例性」、譯名改為「心動身動」，改後判定一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-ETH",
+        "S-LRN"
+      ],
+      "ai_lit_note": "學習者判斷 AI 輔助活動的概念框架，含倫理能動性與學習中使用 AI 的判斷，對應 S-ETH「思辨AI中的應用與取捨」、S-LRN「理解AI輔助學習的角色功能」",
+      "audience": "k12",
+      "doi": "10.1111/ejed.70904",
+      "screening_note": "Held earlier on 2026-10-23 (school level not stated in the abstract); manager supplied the publisher PDF the same day, which names secondary education as the principal application. Verified for daily brief 2026-10-23 (author-abstract attributed summary).",
+      "verification_completed_on": "2026-10-23"
     }
   ],
   "search_runs": [
@@ -144,6 +179,22 @@
       ],
       "discovered": 3,
       "added": 3,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-23-daily-2",
+      "searched_on": "2026-10-23",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "manager-supplied",
+          "query": "Manager supplied publisher PDFs 2026-10-23: Education Sciences educsci16101766 and educsci16101767, European Journal of Education ejed.70904; Crossref works records re-read for dates",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ],

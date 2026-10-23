@@ -1,4 +1,4 @@
-# 每日短訊查核紀錄：2026-10-23（3 則）
+# 每日短訊查核紀錄：2026-10-23（4 則，含管理者提供全文後補登 1 則）
 
 > 每日短訊例行作業，由排程觸發，在每日短訊專用 session 執行。檢索由同 session 三個子代理（國際研究、國際政策、臺灣中央來源）執行，判讀由本 session 複核。查詢時間 2026-10-23T00:05Z–00:32Z（UTC）。請求都沒帶 email 或 mailto；遇 403 未繞過。結果：**發布 3 則**（國際研究 2 則、臺灣 1 則；國際政策 0 則）。今天週五，週四專屬來源不查；本週候選池 2026-10-23_2026-10-29 今日建立。依管理者 2026-10-22 決定，研究檢索加查 pedagogical AI agent 一組。
 
@@ -111,3 +111,13 @@
 3. https://doi.org/10.3390/educsci16101767 （J47〈AI-Based Educational Interventions for Students with Down Syndrome〉，首發 10-21；MDPI 403）：需要全文中納入研究的年齡或學段。若以中小學學生為主，可補發（至 10-28）。
 
 前幾日清單：10-22 的 ILE、EJED ejed.70912、JCAL 三項已由管理者提供全文或截圖處理完畢；10-22 週四政策列表 9 站見上。
+
+## 補記（2026-10-23，管理者提供全文後）
+
+管理者當日提供三份出版者 PDF。
+
+- **D20261023-02 改為摘要型：** Education Sciences `educsci16101766` PDF 印 Published 21 October 2026（與 Crossref 一致）。以摘要第 2 至 5 句與第 7 句撰寫；接受因素的相關與路徑結果不寫入。
+- **補登 D20261023-04：** J49 EJED `10.1111/ejed.70904`〈Moving Minds, Moving Bodies: Rethinking AI Literacy and Health Literacy Through Embodied Education〉。第 1 節寫明「The principal application is secondary education」，對象判 k12。概念性文章，A（S-ETH、S-LRN）。首發日依 Crossref published-online 2026-10-21（Wiley 403；PDF 無上線日）。以摘要第 2、4、5、8、9 句與第 1 節應用場域句撰寫。候選池 W2026-10-23-A04；知識庫 KB-2026-0416（KR-14626～14635）。
+- **不發：** J47 `educsci16101767`（唐氏症學生 AI 介入系統性回顧）。全文寫明納入對象「no age limit」，納入研究含幼兒與成人，學段不明；且為介入成效統合分析。維持不明，不入候選池；可留月報背景。
+- 第二輪由隔離子代理對照 PDF，兩則判定一致；依建議更正 -04 摘要句序標示（原誤標 9、10 句）並重算雜湊、譯名改「心動身動」、加「示例性」，-02 改譯「園方行政人員」。
+- 三份 PDF 存受限 repo `from-editor-session/daily-pdfs/`，已登記。`publication/corrections.json` 加 daily-2026-10-23-r1。瀏覽器清單三項處理完畢。
