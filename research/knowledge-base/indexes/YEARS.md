@@ -377,6 +377,11 @@
 | KB-2023-0207 — [KI@Schule – Tipps zur ersten Orientierung für Schulen](https://www.schleswig-holstein.de/DE/landesregierung/themen/bildung-hochschulen/digitale-schule/Lernen/ki_schule) | official_guidance | 2023-08 | discovered_unverified |
 | KB-2023-0208 — [Ekspertgruppens foreløbige anbefalinger om ChatGPT](https://www.uvm.dk/-/media/filer/uvm/aktuelt/pdf23/dec/231217-ekspertgruppens-foreloebige-anbefalinger-chatgpt.pdf) | policy_review | 2023-12-17 | discovered_unverified |
 | KB-2023-0225 — [What is the impact of a multi-modal pedagogical conversational AI system on parents' concerns about technology use by young children?](https://doi.org/10.1111/bjet.13399) | journal_article | 2023-10-17 | discovered_unverified |
+| KB-2023-0226 — [臺北市高級中等以下學校生成式AI工具輔助教師教學指引；臺北市高級中等以下學校生成式AI工具輔助學生學習指引](https://www.gov.taipei/RelData.aspx?sms=78D644F2755ACCAA&ParentSN=1122F8E25F22D651) | official_guidance | 2023-06 | bibliographic_checked |
+| KB-2023-0227 — [全國首創！臺南市長黃偉哲宣布ChatGPT生成式AI輔助學習平台](https://www.tainan.gov.tw/News_Content.aspx?n=13370&s=8584648) | government_announcement | 2023-08-29 | discovered_unverified |
+| KB-2023-0228 — [Teacher Guide: AI and Academic Integrity](https://www.bsss.act.edu.au/__data/assets/pdf_file/0003/571719/BSSS_Teacher_Guide_AI_and_Academic_Integrity.pdf) | official_guidance | 2023 | bibliographic_checked |
+| KB-2023-0229 — [Umgang mit generativen KI-Modellen. Ein Handlungsleitfaden](https://bildung.thueringen.de/fileadmin/ministerium/publikationen/Handlungsleitfaden_Umgang_mit_generativen_KI-Modellen.pdf) | official_guidance | 2023-04 | bibliographic_checked |
+| KB-2023-0230 — [OECD Digital Education Outlook 2023: Towards an Effective Digital Education Ecosystem](https://doi.org/10.1787/c74f03de-en) | policy_review | 2023-12-13 | bibliographic_checked |
 
 ## 2024｜event_year
 
@@ -786,6 +791,7 @@
 | KB-2024-0390 — [Richtlinie zum Umgang mit Künstlicher Intelligenz (KI) im Zusammenhang mit Leistungsbeurteilungen und Prüfungen](https://hibb.hamburg.de/wp-content/uploads/sites/870/2024/05/Richtlinie-zum-Umgang-mit-KI-im-Zusammenhang-mit-Leistungsbeurteilungen-und-Pruefungen.pdf) | official_guidance | 2024-04-17 | bibliographic_checked |
 | KB-2024-0391 — [高級中等學校學生學習評量及學習歷程檔案使用「生成式人工智慧」注意事項](https://www.tdhs.ntct.edu.tw/mediafile/1040/news/30/2024-12%5C20241216163710_0.pdf) | official_guidance | 2024-12-13 | discovered_unverified |
 | KB-2024-0400 — [Doodlebot: An Educational Robot for Creativity and AI Literacy](https://doi.org/10.1145/3610977.3634950) | conference_paper | 2024-03-11 | discovered_unverified |
+| KB-2024-0401 — [高雄市高級中等以下學校生成式AI工具教學應用參考指引](https://www.fxp.kh.edu.tw/upload/121/101_21069/%E9%AB%98%E9%9B%84%E5%B8%82%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E4%BB%A5%E4%B8%8B%E5%AD%B8%E6%A0%A1%E7%94%9F%E6%88%90%E5%BC%8FAI%E5%B7%A5%E5%85%B7%E6%95%99%E5%AD%B8%E6%87%89%E7%94%A8%E5%8F%83%E8%80%83%E6%8C%87%E5%BC%95.pdf) | official_guidance | 2024-07 | discovered_unverified |
 | KB-2026-0099 — [NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools](https://go.ncdpi.gov/AI_Guidelines) | official_guidance | 2024-01-16 | bibliographic_checked |
 
 ## 2025｜event_year
@@ -1285,6 +1291,11 @@
 | KB-2025-0488 — [國民中小學學生學習評量及作業使用生成式人工智慧注意事項](https://kkes.tc.edu.tw/var/file/177/1177/img/959/178217580.pdf) | official_guidance | 2025-03-03 | discovered_unverified |
 | KB-2025-0489 — [Exploring Factors Influencing Teachers' Acceptance of AI Tools for Creating Animated Educational Videos With Pedagogical Agents](https://doi.org/10.1111/jcal.70083) | journal_article | 2025-06-16 | discovered_unverified |
 | KB-2025-0490 — [A Theory of Adaptive Scaffolding for LLM-Based Pedagogical Agents](https://doi.org/10.48550/arxiv.2508.01503) | preprint | 2025-08-02 | discovered_unverified |
+| KB-2025-0491 — [浙江省推进“人工智能+教育”行动方案（2025—2029年）（浙教技〔2025〕24号）](https://jyt.zj.gov.cn/art/2025/4/29/art_1532985_58943778.html) | official_guidance | 2025-04-29 | bibliographic_checked |
+| KB-2025-0492 — [《四川省推进中小学人工智能教育实施方案》印发：到2030年，在全省中小学基本普及人工智能教育](https://edu.sc.gov.cn/scedu/c100494/2025/5/21/751a12b1040242d5a2bbc68d4fd92982.shtml) | government_announcement | 2025-05-21 | discovered_unverified |
+| KB-2025-0493 — [L'IA en éducation : cadre d'usage](https://www.education.gouv.fr/cadre-d-usage-de-l-ia-en-education-450647) | official_guidance | 2025-06 | bibliographic_checked |
+| KB-2025-0494 — [Generative artificial intelligence – policy](https://education.nt.gov.au/__data/assets/pdf_file/0011/1567892/generative-artificial-intelligence-policy.pdf) | official_guidance | 2025-10-23 | bibliographic_checked |
+| KB-2025-0495 — [ACT Education Directorate position on the use of AI in ACT public schools](https://www.act.gov.au/__data/assets/pdf_file/0009/2824146/Position-of-AI-use-in-ACT-public-schools.pdf) | official_guidance | 2025-02 | bibliographic_checked |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
@@ -1668,6 +1679,8 @@
 | KB-2026-0424 — [Analysis of the Use of Artificial Intelligence and Its Impact on the Character and Cultural Identity of Junior High School Students at Homeschooling Smart Makassar](https://doi.org/10.55885/jerp.v6i2.1160) | journal_article | 2026-10-06 | discovered_unverified |
 | KB-2026-0425 — [The Impact of a Hidden AI-Based Chatbot on the Quality of Collaborative Problem Solving in a School Context](https://doi.org/10.3390/electronics15050956) | journal_article | 2026-02-26 | discovered_unverified |
 | KB-2026-0426 — [Operationalizing cognitive apprenticeship through generative AI pedagogical agents: Proactive and contextualized guidance in simulation-based learning](https://doi.org/10.1016/j.compedu.2026.105706) | journal_article | 2026-06-27 | discovered_unverified |
+| KB-2026-0427 — [Note de service du 23-1-2026 relative au développement et à l'évaluation des compétences numériques des élèves (parcours Pix d'éducation à l'IA)（BO n° 6 du 5 février 2026, NOR : MENE2527173N）](https://www.education.gouv.fr/bo/2026/Hebdo6/MENE2527173N) | official_guidance | 2026-02-05 | bibliographic_checked |
+| KB-2026-0429 — [학교 AI 혁신 지수 개발 연구보고서 (Development of the School AI Innovation Index)](https://www.kosac.re.kr/menus/244/boards/457/posts/61394) | policy_review | 2026-04 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
@@ -1727,5 +1740,6 @@
 | KB-2026-0385 — [Artificial Intelligence: Guidance for K-12 Classrooms](https://www.mdek12.org/sites/default/files/Offices/MDE/OTSS/DL/ai_guidance_final.pdf) | official_guidance | 未知 | discovered_unverified |
 | KB-2026-0396 — [Artificial Intelligence (AI) for Instructional Purposes Guidance](https://www.michigan.gov/mde/-/media/Project/Websites/mde/general/AI_Instructional_Purposes_-Final1.pdf) | official_guidance | 未知 | discovered_unverified |
 | KB-2026-0398 — [Career and Technical Education (CTE) Brief: Artificial Intelligence](https://education.mn.gov/mdeprod/idcplg?IdcService=GET_FILE&dDocName=PROD085058&RevisionSelectionMethod=latestReleased&Rendition=primary) | official_guidance | 未知 | discovered_unverified |
+| KB-2026-0428 — [Artificial intelligence (AI) in schools – information for parents and carers](https://www.education.sa.gov.au/parents-and-families/curriculum-and-learning/ai/artificial-intelligence-ai-in-schools-information-for-parents-and-carers) | official_guidance | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
