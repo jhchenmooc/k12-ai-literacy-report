@@ -1,6 +1,6 @@
 # 政策來源監測清單（擴充試行，2026-10-17 起）
 
-> 管理者 2026-10-17 決定提高週報政策比重，擴充政策來源，試行一週，10/23 週報出刊前檢查時回報各來源命中數，再決定留哪些。原有每日來源（GOV.UK、Federal Register、MEXT、中國教育部、香港、韓國 KICE／教育部／KERIS、UNESCO）不變。臺灣來源另見 [taiwan-monitoring-sources.md](taiwan-monitoring-sources.md)（2026-10-18 起）。每日排程指示已同步更新。
+> 管理者 2026-10-17 決定提高週報政策比重，擴充政策來源，試行一週，10/23 週報出刊前檢查時回報各來源命中數，再決定留哪些（10-23 決定見下方「試行結果與去留」）。原有每日來源（GOV.UK、Federal Register、MEXT、中國教育部、香港、韓國 KICE／教育部／KERIS、UNESCO）不變。臺灣來源另見 [taiwan-monitoring-sources.md](taiwan-monitoring-sources.md)（2026-10-18 起）。每日排程指示已同步更新。
 
 ## 2026-10-17 讀取檢查
 
@@ -22,7 +22,7 @@
 | 週四 | 芬蘭 EDUFI（Opetushallitus）新聞 | https://www.oph.fi/fi/uutiset | 200 | 是 | 是（例如 9.10.2026） | 頁面未見 | 約 20 則 /fi/uutiset/ 連結，附日期 |
 | 週四 | 愛沙尼亞教育研究部 | https://www.hm.ee/ministeerium-uudised-ja-kontakt/uudised | 404（/uudised 也是 404） | 否 | 否 | 有：頁面連到 https://www.hm.ee/rss-feeds/rss.xml（未測試） | 兩個猜測的新聞網址都是 404；網站有提供 RSS 連結，建議改用 RSS |
 | 週四 | 阿聯酋教育部新聞 | https://www.moe.gov.ae/En/MediaCenter/News/Pages/default.aspx | 200（…/Home.aspx 是 404） | 否 | 否 | 頁面未見 | SharePoint 外殼（標題「Home」），沒有新聞項目 |
-| 週四 | 印度教育部（PIB 新聞稿） | https://www.pib.gov.in/Allrel.aspx | 302 → ?reg=48&lang=2 回 200 | 否 | 部分（只有頁面日期 17 Oct 2026） | 有：/ViewRss.aspx（RSS 目錄，未測試） | 302 導向印地文版；HTML 中沒有新聞稿連結（ASP.NET 回傳）；「教育部」是表單篩選選項（value=8）；建議用 PIB RSS |
+| 週四 | 印度教育部（PIB 新聞稿） | https://www.pib.gov.in/Allrel.aspx | 302 → ?reg=48&lang=2 回 200 | 否 | 部分（只有頁面日期 17 Oct 2026） | 有：/ViewRss.aspx（RSS 目錄，未測試）（2026-10-22 讀不到教育部 RSS，10-23 改列週四瀏覽器清單） | 302 導向印地文版；HTML 中沒有新聞稿連結（ASP.NET 回傳）；「教育部」是表單篩選選項（value=8）；建議用 PIB RSS |
 
 ## 試行安排
 

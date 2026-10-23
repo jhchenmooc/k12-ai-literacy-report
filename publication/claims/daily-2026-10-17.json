@@ -143,7 +143,7 @@
    "S-ETH",
    "S-LRN"
   ],
-  "ai_lit_note": "兒童如何查證 AI 建議（接受、查證、質疑、修正），重點在學生使用 AI 時的查證行為，依準則判 A，對應 S-ETH「具備對AI的批判思考」與 S-LRN",
+  "ai_lit_note": "兒童如何查證 AI 建議（接受、查證、質疑、修正），重點在學生使用 AI 時的查證行為，依準則判 A，對應 S-ETH「具備對AI的批判思考」與 S-LRN「理解AI輔助學習的角色功能」",
   "audience": "k12",
   "summary_evidence_spans": [
    "This paper presents a game-based human-AI collaboration probe designed to examine how children verify AI suggestions during task-based interaction.",

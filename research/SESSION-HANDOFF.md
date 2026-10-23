@@ -6,7 +6,7 @@
 
 ## 0. 新 Session 先讀這一段
 
-> **2026-10-23 週報 10/16–10/22 與排程方案甲**：觸發到編輯 session 的排程因可信任裝置限制失敗（ACCESS_DENIED），管理者「開始，排程照建議」：原週報、月報檢查、月報出刊、週四轉交四個排程停用，改為開新 session 的推播提醒（見 [schedule-recovery.md](schedule-recovery.md)），作業由管理者在編輯 session 手動開始。出刊前檢查 [drafts/2026-10-23-weekly-precheck.md](drafts/2026-10-23-weekly-precheck.md)，管理者「照建議」：精選 4（KMK、ETRD 教師 AI 能力、AIgnite、JRTE 公平素養；ETRD、JRTE 全文由管理者提供，存受限 repo daily-pdfs）、其他短訊 14（含 Ofqual 演講一句）、上期補登 2、國外反思選讀 2（arXiv AI 資安素養標記、EIAP 報告重點選錄）、臺灣對照 2 與對照說明 2、導讀 3；臺灣本週動態 0。試行來源全部續查，印度 PIB 改列週四瀏覽器清單（每日短訊排程文字由每日短訊 session 自行更新）。
+> **2026-10-23 週報 10/16–10/22 與排程方案甲**：觸發到編輯 session 的排程因可信任裝置限制失敗（ACCESS_DENIED），管理者「開始，排程照建議」：原週報、月報檢查、月報出刊、週四轉交四個排程停用，改為開新 session 的推播提醒（見 [schedule-recovery.md](schedule-recovery.md)），作業由管理者在編輯 session 手動開始。出刊前檢查 [drafts/2026-10-23-weekly-precheck.md](drafts/2026-10-23-weekly-precheck.md)，管理者「照建議」：精選 4（KMK、ETRD 教師 AI 能力、ETRD AIgnite、JRTE 公平素養；全文：KMK 公開 PDF，AIgnite 管理者 10-20 提供，ETRD 教師 AI 能力與 JRTE（開放取用 CC BY，雲端被擋）管理者 10-23 提供，存受限 repo daily-pdfs）、其他短訊 14（含 Ofqual 演講一句）、上期補登 2、國外反思選讀 2（arXiv AI 資安素養標記、EIAP 報告重點選錄）、臺灣對照 2 與對照說明 2、導讀 3；臺灣本週動態 0。同日多角度自檢後依「照建議」修訂已刊頁（corrections weekly-2026-10-16_10-22-r1：Ofqual 移為第 18 則等）。同日另入庫會議論文 pending 第三批 12 篇與教學代理人回補 4 篇（#365）、教育部兩份評量注意事項（#364）；論文 title_zh 依規則凍結到 11/03 後再議。試行來源全部續查，印度 PIB 改列週四瀏覽器清單（每日短訊排程文字由每日短訊 session 自行更新）。
 >
 > **2026-10-22 週四轉交本機瀏覽器**：管理者同意每週四由編輯 session 把每日短訊的瀏覽器清單轉交管理者電腦上的本機 session（目前為 session_01QneDker4SV8etR46wcUiZY「瀏覽器文獻確認」），結果回傳每日短訊 session；細節見 [policy-monitoring-sources.md](policy-monitoring-sources.md)。編輯 session 已獲授權，之後只能在管理者可信任裝置上開啟。副作用：雲端 session 傳給編輯 session 的訊息會被擋，所以改為方案丙：每日短訊把週四清單寫進 daily-check，編輯 session 的排程（每週四 10:37，trig_01HJaUfqtCdGgvDVdPjiQVLQ）從 main 讀取後轉交；每日短訊不再通知編輯 session。
 >
@@ -30,7 +30,7 @@
 >
 > **2026-10-17 三刊聯合評審**：管理者「D 全照建議」。本批：狀態用語統一、首頁標語、用語說明、月報一覽類型與連結（不受週報改版影響）與分組、上月補列、週報上期補登、臺灣樣本列表、政策來源國別、精選四欄（介入研究的發現照引作者原話）、機構自述成效註記、週報與每日欄位一致檢查、CI 每日範圍檢查。待辦：D1 中文譯名與 D2 學段標籤（10/23 後）；D8／D9 排程待確認。
 >
-> **排程與失敗復原**：見 [schedule-recovery.md](schedule-recovery.md)。D8／D9 採折衷做法（每日短訊每次開新 session 並推播；週報、月報留在編輯 session），排程文字見 drafts/2026-10-17-schedule-prompts-draft.md 第二次更新，待管理者確認後套用。
+> **排程與失敗復原**：見 [schedule-recovery.md](schedule-recovery.md)。D8／D9 採折衷做法（每日短訊每次開新 session 並推播；週報、月報留在編輯 session），排程文字見 drafts/2026-10-17-schedule-prompts-draft.md 第二次更新（已套用；2026-10-23 起週報、月報改為方案甲：推播提醒、管理者在編輯 session 手動開始）。
 
 **要繼續的任務**：以最少人力、可追溯的原始證據，製作並公開 K–12 AI 素養國際週報／月報；第一期標準週報涵蓋 **2026/10/09–10/15**，預定 **10/16** 出刊。網站：[GitHub Pages](https://jhchenmooc.github.io/k12-ai-literacy-report/)；儲存庫：[jhchenmooc/k12-ai-literacy-report](https://github.com/jhchenmooc/k12-ai-literacy-report)。
 

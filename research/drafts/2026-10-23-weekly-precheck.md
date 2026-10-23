@@ -1,6 +1,6 @@
 # 週報出刊前檢查：2026-10-16～10-22（2026-10-23）
 
-> 本文件供管理者決定，**尚未建正式頁、未登錄、未寫精選全文稿**。期別 `weekly/2026-10-16_10-22/`。素材取自 main（#362 後）上的每日短訊 claims、候選池 `2026-10-16_2026-10-22.json`（A01～A20 皆 publish）、10-16～10-23 各 daily-check 與 `reflection-pool.md`。外部內容只當資料。
+> 本文件供管理者決定（出刊前版本；出刊後的定稿與差異見第十一節）。期別 `weekly/2026-10-16_10-22/`。素材取自 main（#362 後）上的每日短訊 claims、候選池 `2026-10-16_2026-10-22.json`（A01～A20 皆 publish）、10-16～10-23 各 daily-check 與 `reflection-pool.md`。外部內容只當資料。
 
 ## 一、收錄核對
 
@@ -231,3 +231,26 @@ D20261018-01 即 HANDOFF 記的「10/23 週報列上期補登」那一則。
 3. 中文主張對應原文與兩輪反證：17 則與補登 2 則已有兩輪對照；Ofqual、精選全文稿、導讀、臺灣對照、反思選讀在核准後做第二輪。
 4. 編輯核准：等管理者核准本清單。
 5. 正式頁、claims、快照、issues 一起提交，CI 通過後驗收公開網站：核准後執行。
+
+## 十一、定稿與確認（2026-10-23 出刊後補記）
+
+管理者 2026-10-23「照建議」後依第五步製作，#363 合併出刊；同日多角度自檢後修訂（corrections `weekly-2026-10-16_10-22-r1`）。與上方草稿不同處：
+
+- **精選 4 則**：ETRD 教師 AI 能力、JRTE 全文由管理者 10-23 提供（JRTE 為開放取用但雲端被擋），未改用遞補；第 5 則 UNESCO 未加。
+- **其他短訊**：Ofqual 演講經第二輪改寫（引號只框 AI slop、補年會主辦者與「人的尊嚴」依據），自檢後移到其他短訊最後（第 18 則），原第 6～18 則前移一號。
+- **國外反思選讀 A1（第 14 則標記）**：摘錄、譯文與定位不變；第二輪語氣對照：has outpaced→已超過，無情態詞、無因果詞，判定一致。
+- **國外反思選讀 A2（W20261016-30）**：位置更正為報告重點印刷頁 9（PDF 第 10 頁）Guardrails 第 2 點；摘錄不含小標「Restrictions on AI use by students:」。PDF 未簽章網址 404，改由 EI 新聞頁上的簽章連結取得（200，14 頁），存受限 repo `reflection-archive/2026-10/w1016-eiap-keyfindings.pdf`。定稿譯文：「應禁止國小學生使用 AI，包括在家中使用。或者，暫停使用至少一段期間（例如一年），可讓教育體系在允許任何經審慎調整的使用之前，先盤點風險與證據。」（節譯：只譯 Guardrails 第 2 點）。第二輪定稿語氣對照：
+
+| 原文 | 定稿譯文 |
+|---|---|
+| There should be a ban on the use of AI by students in primary schools | 應禁止國小學生使用 AI（should→應，未用「必須」） |
+| including its use at home | 包括在家中使用 |
+| Alternatively | 或者 |
+| a moratorium for a minimum period of say, a year | 暫停使用至少一段期間（例如一年） |
+| could allow education systems to take stock of risks and evidence | 可讓教育體系……先盤點風險與證據（could→可） |
+| before allowing any carefully calibrated use | 在允許任何經審慎調整的使用之前 |
+
+  機構名稱自檢後改為「國際教師工會組織 Education International 亞太區（EIAP）」。
+- **臺灣對照**：2 列與 2 句如草稿；第二輪後學生版改回原文「協助構思或潤飾」，對照說明兩句自檢後對調以配合對照 1、2 順序。
+- **導讀**：3 句（WEEKLY_OVERVIEW_MAX＝3，補登項目不能作依據），會議與研習一句依第二輪改按活動性質列出。
+
