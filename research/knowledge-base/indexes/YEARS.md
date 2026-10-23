@@ -73,6 +73,7 @@
 | KB-2022-0115 — [A Mobile Invented Spelling Tutoring System](https://doi.org/10.1007/978-3-031-11647-6_100) | conference_paper | 未知 | discovered_unverified |
 | KB-2022-0116 — [Design a Dashboard for Secondary School Learners to Support Mastery Learning in a Gamified Learning Environment](https://doi.org/10.1007/978-3-031-16290-9_48) | conference_paper | 未知 | discovered_unverified |
 | KB-2022-0117 — [What Teachers Would Expect from a Pedagogical Agent System Working at a Classroom Level: A Focus Group Study](https://doi.org/10.1007/978-3-031-16290-9_53) | conference_paper | 未知 | discovered_unverified |
+| KB-2022-0118 — ["A Key to Reducing Inequities in Like, AI, is by Reducing Inequities Everywhere First"](https://doi.org/10.1145/3478431.3499395) | conference_paper | 未知 | discovered_unverified |
 
 ## 2022｜first_publication
 
@@ -250,6 +251,10 @@
 | KB-2023-0218 — [Supporting Remote Students Through Utilizing Web-Based Exercise-Templates and a Mobile Learning Chatbot for Creating and Interacting with Learning Materials](https://doi.org/10.1007/978-3-031-42682-7_59) | conference_paper | 未知 | discovered_unverified |
 | KB-2023-0219 — [Intelligent Tutoring Systems Examined in Social Experiments—Is the Magic Gone? A Meta-Analysis](https://doi.org/10.1109/icalt58122.2023.00020) | conference_paper | 未知 | discovered_unverified |
 | KB-2023-0220 — [The Design and Analysis of a Storytelling Chatbot with Natural Language Processing Techniques for Enhancing EFL Reading](https://doi.org/10.1109/icalt58122.2023.00079) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0221 — [Pair-Up: Prototyping Human-AI Co-orchestration of Dynamic Transitions between Individual and Collaborative Learning in the Classroom](https://doi.org/10.1145/3544548.3581398) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0222 — [Preparing Children with Level 1 ASD for Social Interactions through Storytelling with Amy: An Exploratory Study](https://doi.org/10.1145/3544549.3585916) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0223 — [Investigation of Students’ Learning, Interest, and Career Aspirations in an Integrated Science and Artificial Intelligence Learning Environment (i-SAIL)](https://doi.org/10.1145/3568812.3603488) | conference_paper | 未知 | discovered_unverified |
+| KB-2023-0224 — [How to Deal with Students' Conceptions: Conceptual Change Texts on Artificial Intelligence](https://doi.org/10.1145/3605468.3609781) | conference_paper | 未知 | discovered_unverified |
 
 ## 2023｜first_publication
 
@@ -551,6 +556,9 @@
 | KB-2024-0394 — [TutorChat: a Chatbot for the Support to Dyslexic Learner’s activity through Generative AI](https://doi.org/10.1109/icalt61570.2024.00051) | conference_paper | 未知 | discovered_unverified |
 | KB-2024-0395 — [ChatCLD: A Framework for Supporting Teachers in Contextualizing Learning Designs using ChatGPT](https://doi.org/10.1109/icalt61570.2024.00093) | conference_paper | 未知 | discovered_unverified |
 | KB-2024-0396 — [Leveraging Generative Artificial Intelligence to Support Students in Learning Programming: A Chatbot Pilot Study](https://doi.org/10.22318/icls2024.135690) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0397 — [EmoEden: Applying Generative Artificial Intelligence to Emotional Learning for Children with High-Function Autism](https://doi.org/10.1145/3613904.3642899) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0398 — [Scaffolding Critical Thinking about Stakeholders' Power in Socio-Technical AI Literacy](https://doi.org/10.1145/3632621.3671430) | conference_paper | 未知 | discovered_unverified |
+| KB-2024-0399 — [Mirror mirror on the wall, what is missing in my pedagogical goals? The Impact of an AI-Driven Feedback System on the Quality of Teacher-Created Learning Designs](https://doi.org/10.1145/3636555.3636862) | conference_paper | 未知 | discovered_unverified |
 
 ## 2024｜first_publication
 
@@ -776,6 +784,7 @@
 | KB-2024-0375 — [Ekspertgruppen om ChatGPT og andre digitale hjælpemidlers rapport (endelige anbefalinger)](https://www.uvm.dk/-/media/filer/uvm/aktuelt/pdf24/april/240423-ekspertgruppen-om-chatgpt-og-andre-digitale-hjaelpemidlers-rapport.pdf) | policy_review | 2024-04-24 | discovered_unverified |
 | KB-2024-0390 — [Richtlinie zum Umgang mit Künstlicher Intelligenz (KI) im Zusammenhang mit Leistungsbeurteilungen und Prüfungen](https://hibb.hamburg.de/wp-content/uploads/sites/870/2024/05/Richtlinie-zum-Umgang-mit-KI-im-Zusammenhang-mit-Leistungsbeurteilungen-und-Pruefungen.pdf) | official_guidance | 2024-04-17 | bibliographic_checked |
 | KB-2024-0391 — [高級中等學校學生學習評量及學習歷程檔案使用「生成式人工智慧」注意事項](https://www.tdhs.ntct.edu.tw/mediafile/1040/news/30/2024-12%5C20241216163710_0.pdf) | official_guidance | 2024-12-13 | discovered_unverified |
+| KB-2024-0400 — [Doodlebot: An Educational Robot for Creativity and AI Literacy](https://doi.org/10.1145/3610977.3634950) | conference_paper | 2024-03-11 | discovered_unverified |
 | KB-2026-0099 — [NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools](https://go.ncdpi.gov/AI_Guidelines) | official_guidance | 2024-01-16 | bibliographic_checked |
 
 ## 2025｜event_year
@@ -1274,6 +1283,7 @@
 | KB-2025-0487 — [Generative AI pedagogical agent as learners' inquiry assistant: Designing and implementing Situational Teaching](https://doi.org/10.58459/icce.2025.5931) | conference_paper | 2025-12-01 | discovered_unverified |
 | KB-2025-0488 — [國民中小學學生學習評量及作業使用生成式人工智慧注意事項](https://kkes.tc.edu.tw/var/file/177/1177/img/959/178217580.pdf) | official_guidance | 2025-03-03 | discovered_unverified |
 | KB-2025-0489 — [Exploring Factors Influencing Teachers' Acceptance of AI Tools for Creating Animated Educational Videos With Pedagogical Agents](https://doi.org/10.1111/jcal.70083) | journal_article | 2025-06-16 | discovered_unverified |
+| KB-2025-0490 — [A Theory of Adaptive Scaffolding for LLM-Based Pedagogical Agents](https://doi.org/10.48550/arxiv.2508.01503) | preprint | 2025-08-02 | discovered_unverified |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
