@@ -1291,7 +1291,7 @@
 | KB-2025-0488 — [國民中小學學生學習評量及作業使用生成式人工智慧注意事項](https://kkes.tc.edu.tw/var/file/177/1177/img/959/178217580.pdf) | official_guidance | 2025-03-03 | discovered_unverified |
 | KB-2025-0489 — [Exploring Factors Influencing Teachers' Acceptance of AI Tools for Creating Animated Educational Videos With Pedagogical Agents](https://doi.org/10.1111/jcal.70083) | journal_article | 2025-06-16 | discovered_unverified |
 | KB-2025-0490 — [A Theory of Adaptive Scaffolding for LLM-Based Pedagogical Agents](https://doi.org/10.48550/arxiv.2508.01503) | preprint | 2025-08-02 | discovered_unverified |
-| KB-2025-0491 — [浙江省教育厅等四部门关于印发《浙江省推进“人工智能+教育”行动方案（2025—2029年）》的通知（浙教技〔2025〕24号）](https://jyt.zj.gov.cn/art/2025/4/29/art_1532985_58943778.html) | official_guidance | 2025-04-29 | bibliographic_checked |
+| KB-2025-0491 — [浙江省教育厅 浙江省发展和改革委员会 浙江省科学技术厅 浙江省数据局关于印发《浙江省推进“人工智能+教育”行动方案（2025—2029年）》的通知（浙教技〔2025〕24号）](https://jyt.zj.gov.cn/art/2025/4/29/art_1532985_58943778.html) | official_guidance | 2025-04-29 | bibliographic_checked |
 | KB-2025-0492 — [《四川省推进中小学人工智能教育实施方案》印发：到2030年，在全省中小学基本普及人工智能教育](https://edu.sc.gov.cn/scedu/c100494/2025/5/21/751a12b1040242d5a2bbc68d4fd92982.shtml) | government_announcement | 2025-05-21 | discovered_unverified |
 | KB-2025-0493 — [L'IA en éducation : cadre d'usage](https://www.education.gouv.fr/cadre-d-usage-de-l-ia-en-education-450647) | official_guidance | 2025-06-13 | bibliographic_checked |
 | KB-2025-0494 — [Generative artificial intelligence - policy](https://education.nt.gov.au/__data/assets/pdf_file/0011/1567892/generative-artificial-intelligence-policy.pdf) | official_guidance | 2025-10-23 | bibliographic_checked |
