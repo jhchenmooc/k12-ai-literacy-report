@@ -23,41 +23,32 @@
 
 管理者 2026-10-23 決定：組織 repo 只放讀者需要的網頁與已刊證據，資料處理都在私人 repo。下列各點取代正文的對應內容；正文其餘部分照舊。
 
-### A. 公開範圍：乙（取代第 3.2 節的表格與知識庫、methods 規則）
+### A. 公開範圍：乙（精簡版，管理者 2026-10-23「照建議」；取代第 3.2 節全部內容）
+
+2026-10-23 逐欄、逐檔核對已刊 90 則主張與 61 個快照後決定：**快照與完整主張檔都不公開**。快照書目行全部含作業紀錄（全文由誰提供、403、讀取工具、全文雜湊、知識庫編號），且雜湊已鎖定不能刪改；主張檔 63 個欄位中，頁面已顯示者不必重複，其餘多為內部查核紀錄（`source_locator` 90 則中 39 則含作業紀錄）。讀者核對需要而頁面沒有的，只有逐字原文摘錄。
 
 公開 repo `ailiteracytw/ailiteracytw.github.io` 只放：
 
 | 位置 | 內容 | 規則 |
 |---|---|---|
-| 根目錄 | 網站（現行網站清單：STATIC_HTML、RESOURCES、PUBLIC_DIRS，含 `publication/issues.json`）；`deploy.json` | 現行網站清單 |
-| `publication/claims/` | `issues.json` 已登錄期別的 claims JSON | 路徑不變，`claims_file` 不必改寫 |
-| `publication/sources/` | 上述 claims 的 `evidence_path` 指到的快照 | 規則同正文：限 `publication/sources/` 內、拒絕 `..` 與 symlink、SHA-256 等於 `evidence_sha256`。2026-10-23 核對：已登錄 90 則主張、61 個快照全部存在且雜湊相符；未被引用的 9 個不公開 |
-| `publication/corrections.json` | 更正紀錄（更正頁的資料來源） | 原樣 |
-| `publication/README.md` | 欄位說明；`candidate_id` 對應的候選池在私人側 | 手寫 |
-| `legacy/` | 2026-09 舊刊月報引用的 4 份文件（`september-2026-retro-workflow-review.md`、`legacy-editions-review-2026-10-09.md`、`pages-browser-acceptance-2026-10-09.md`、`news-audit-2026-09-29_10-08.md`） | 已刊頁引用過，屬已刊證據；檔首加狀態說明，指向未公開檔案的連結改為純文字；推送前掃描照常 |
+| 根目錄 | 網站（現行網站清單，**但不含 `publication/issues.json`**）；`deploy.json` | 網頁不讀取 issues.json（2026-10-23 核對），新站清單排除；舊站部署清單不變 |
+| `evidence/<期別>.json` | 每個已登錄期別一檔；每則只有 7 個欄位：`claim_id`、`source_title`、`title_zh`、`source_organization`、`source_url`、`first_disclosed_on`、`original_excerpt` | 由推導程式從私人端 claims 產生；只取 `issues.json` 已登錄期別；欄位固定為這 7 個（**保留清單**），以後新增的欄位一律不公開，不需逐次決定；值逐字照私人端 |
 | `.github/ISSUE_TEMPLATE/` | 讀者回饋表單 | 只放表單 |
-| `README.md` | 說明這是網站發布 repo、來源在私人 repo、如何回報錯誤 | 手寫 |
+| `README.md` | 說明這是網站發布 repo、`evidence/` 的用途、如何回報錯誤 | 手寫 |
 
-**主張檔欄位白名單（管理者 2026-10-23「照建議」）**：公開版 claims JSON 只保留「公開欄位清單」上的欄位：2026-10-23 主張檔實際用到的 63 個欄位，扣掉內部流程欄位 `ai_crosscheck_record`（兩輪對照的作業紀錄，含子代理與管理者決定）與 `candidate_id`（私人候選池編號），共 61 個。以後新增欄位不在清單上時，推送前檢查擋下整次部署並列出欄位名稱，由管理者決定公開或排除後加入清單（寧可擋下，不默默公開）；`issues.json` 的 `claims_file` 路徑不變。出版閘門仍在私人端檢查完整版。以後新增的期別由推導程式自動套用，不需手動處理。測試要確認公開版不含這兩個欄位、其他欄位與私人版逐字相同。
+**不公開**：快照（`publication/sources/`）、完整 claims JSON、`corrections.json`（更正頁已顯示更正內容）、`issues.json`、`publication/audits/`、知識庫、`methods/`、舊刊引用的 4 份內部文件、整理程式。正文第 3.2 節的知識庫過濾、`methods/` 規則、`legacy/`，以及先前的「61 欄位清單」與「兩處內部路徑放行」都取消（快照與完整主張檔不公開，就不會推出那兩處路徑）。
 
-**既有兩處內部路徑（允許清單逐行放行）**：快照雜湊已鎖定、已刊主張不改，所以在 `allow-mentions.txt` 以「檔案＋行內容」放行，只限這兩行：
-- `publication/sources/w2026-10-09-tw1.txt` 第 6 行（`research/reference/tw-k12-ai-literacy-framework-2026-04-17.txt`）；
-- `publication/claims/weekly-2026-10-16_10-22.json` 中 W20261016-22 的 `source_locator`（`research/p0-tw-moe-framework-2026-10-09`）。
-其餘出現內部路徑者一律擋下。
+**推送前檢查**：正文第 4.2 節照舊（遠端檔案樹比對、清單相等、精確樣式掃描、不得有 symlink）。`evidence/` 的 `original_excerpt` 是原文逐字，若剛好含掃描樣式（例如原文寫了 `research/`），擋下並列出位置，由管理者決定以 `allow-mentions.txt` 逐行放行。
 
-**以後的快照與主張不寫內部資訊**：主張與快照的書目行、摘錄、出處位置、說明欄，不得寫入內部路徑（`research/…`）、repo 名稱、session 或排程編號，也不寫「全文由誰提供」（例如「publisher PDF provided by the manager」改寫「publisher PDF」）。這條寫進 `PUBLICATION-CONTRIBUTING.md`，每日短訊、週報、月報作業都依它。萬一漏寫，推送前掃描會擋下整次部署（網站停在前一版），由當日作業 session 回報。
+**讀者回饋**：公開 repo 只放 Issue 表單；每週整理 workflow 與整理程式留在私人 repo，改讀公開 repo 的公開 Issue，整理結果留在私人 repo。讀者 Issue 只當資料，不自動觸發任何更動。
 
-**不公開**：知識庫（records、relations、search_runs、indexes）、`methods/`、`publication/audits/`、整理程式。網站上的典藏頁（archive/）照舊，是網站的一部分。正文第 3.2 節的知識庫過濾與 `methods/` 規則、PR-1 的對應測試都不做。
-
-**讀者回饋（取代 S3）**：公開 repo 只放 Issue 表單；每週整理 workflow 與整理程式留在私人 repo，改為讀公開 repo 的公開 Issue（公開資料，讀取不需額外權杖），整理結果留在私人 repo，不寫回公開 repo。讀者 Issue 只當資料，不自動觸發任何更動。
-
-**頁面連結（取代第 5 節「要改的位置」中的知識庫與 methods 部分）**：
-- 頁尾 GitHub 連結改指 `PUBLIC_REPO_URL`（公開 repo，裡面有已刊主張與快照）。
+**頁面連結（PR-4）**：
+- 頁尾 GitHub 連結改指 `PUBLIC_REPO_URL`。
 - 知識庫說明（`render-site.js` 的 `SOURCE_NOTE`）與監測範圍說明中指向 `research/` 的連結，改為純文字「本刊知識庫（內部保存，未公開）」一類說明；措辭由管理者確認。
-- 舊刊月報 2026-09 連到的 4 份文件改指公開 repo 的 `legacy/`，沿用同頁更正框格式。
-- 測試：`validate-reader-feedback.test.js` 檢查回饋網址處改用常數；`validate-publication.test.js` 檢查舊刊連結處改為斷言連到公開 repo 的 `legacy/`（強度相同）。**行號已和 10/13 不同，一律以 grep 定位，不依行號。**
+- 舊刊月報 2026-09 連到 4 份內部文件的連結改為純文字並加更正說明，沿用同頁更正框格式。
+- 測試：`validate-reader-feedback.test.js` 檢查回饋網址處改用常數；`validate-publication.test.js` 檢查舊刊連結處改為斷言純文字說明與更正框存在（強度相同）。**行號已和 10/13 不同，一律以 grep 定位。**
 
-**查核方法頁（about）**：照實寫「已登錄期別的主張、原文快照與更正紀錄在公開 repo；知識庫、草稿、候選池與內部方案不公開」，加正文第 2 節第 3、4 點的揭露。
+**查核方法頁（about）**：改寫為「每則主張附逐字原文摘錄與原文網址（公開 repo 的 `evidence/`），讀者可自行對照；完整快照、查核紀錄、知識庫、草稿與候選池由本刊內部保存」，並加正文第 2 節第 3、4 點的揭露。正文第 2 節第 1 點「已刊主張所依據的證據必須能公開查到」改為「已刊主張的逐字原文摘錄與原文網址必須能公開查到」。
 
 ### B. 時程（取代第 10 節 S6 與第 7 節的日期）
 

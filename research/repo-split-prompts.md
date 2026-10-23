@@ -1,6 +1,6 @@
 # repo 拆分搬遷：PR-1 實作與審查提示詞
 
-> 建立日期：2026-10-13；**2026-10-23 依方案 v0.6 改寫**（公開範圍乙、時程順延到 11/03 月報之後、不轉址、保護規則替代做法）。對應 [repo-split-plan.md](repo-split-plan.md) v0.6。管理者要求存檔備查。
+> 建立日期：2026-10-13；**2026-10-23 依方案 v0.6 改寫**（公開範圍乙精簡版：只放網頁與 evidence/ 7 欄位摘錄、時程順延到 11/03 月報之後、不轉址、保護規則替代做法）。對應 [repo-split-plan.md](repo-split-plan.md) v0.6。管理者要求存檔備查。
 >
 > 用法：
 > - 第一段：11/03 月報合併後（建議 11/04），開新 session，模型選 Sonnet 5.5，repo 選 `jhchenmooc/k12-ai-literacy-report`，貼上整段。
@@ -19,14 +19,11 @@
 程式從最新的 main 開始改。方案引用的行號已過時，一律用 grep 定位。
 
 【PR-1 範圍】（只做這些）
-1. 公開資料清單：在 research/public-site.js 新增獨立函式，只給 publish-public 用。現有網站清單（STATIC_HTML、RESOURCES、PUBLIC_DIRS）和舊站部署完全不變。清單內容依 v0.6 修訂 A：
-   - 網站（現行網站清單）與 deploy.json；
-   - publication/claims：issues.json 已登錄期別的 claims JSON，路徑不變；公開版只保留公開欄位清單上的 61 個欄位（現有 63 個扣掉 ai_crosscheck_record 與 candidate_id），值逐字照原樣；出現清單外的新欄位就擋下部署並列出欄位名稱（v0.6 修訂 A「主張檔欄位白名單」）；
-   - publication/sources：只取上述 claims 的 evidence_path，路徑必須在 publication/sources/ 內，拒絕 .. 與 symlink，SHA-256 必須等於 evidence_sha256；未被引用的快照不得進入；
-   - publication/corrections.json；
-   - legacy/：2026-09 舊刊月報引用的 4 份文件，檔首加狀態說明，指向未公開檔案的相對連結改為純文字；
-   - 不得包含知識庫、methods/、publication/audits/、任何程式或 workflow（.github/ISSUE_TEMPLATE 留給 PR-2）。
-2. 推送前檢查與內容掃描（正文第 4.2 節）：遠端檔案樹比對（首次部署時，公開 repo 必須沒有任何 commit）、清單相等、精確樣式掃描、allow-mentions.txt（trig_ 與 session_01 永遠不得放行）、不得有 symlink；掃描失敗只列檔名與行號，不印內容。allow-mentions.txt 初始只放 v0.6 修訂 A 列的兩行（w2026-10-09-tw1.txt 第 6 行、W20261016-22 的 source_locator），以檔案＋行內容比對。
+1. 公開資料清單：在 research/public-site.js 新增獨立函式，只給 publish-public 用。現有網站清單（STATIC_HTML、RESOURCES、PUBLIC_DIRS）和舊站部署完全不變。清單內容依 v0.6 修訂 A（精簡版）：
+   - 網站（現行網站清單，但排除 publication/issues.json）與 deploy.json；
+   - evidence/<期別>.json：每個 issues.json 已登錄期別一檔，由私人端 claims 產生；每則只輸出 7 個欄位 claim_id、source_title、title_zh、source_organization、source_url、first_disclosed_on、original_excerpt（保留清單；沒有的欄位省略），值逐字照私人端；
+   - 不得包含快照（publication/sources）、完整 claims、corrections.json、issues.json、publication/audits、知識庫、methods/、任何程式或 workflow（.github/ISSUE_TEMPLATE 留給 PR-2）。
+2. 推送前檢查與內容掃描（正文第 4.2 節）：遠端檔案樹比對（首次部署時，公開 repo 必須沒有任何 commit）、清單相等、精確樣式掃描、allow-mentions.txt（初始為空；trig_ 與 session_01 永遠不得放行）、不得有 symlink；掃描失敗只列檔名與行號，不印內容。
 3. 網址常數 PUBLIC_SITE_ORIGIN、PUBLIC_REPO_URL：預設值等於現況，本 PR 不改值。
 4. .github/workflows/publish-public.yml：
    - 只用 workflow_dispatch 觸發；job 加 if: github.ref == 'refs/heads/main'；開關 vars.ENABLE_PUBLIC_PUBLISH；
@@ -36,7 +33,7 @@
    - 推送目標 git@github.com:ailiteracytw/ailiteracytw.github.io.git；commit 作者用機器人名稱與 noreply 信箱，訊息只寫「部署 YYYY-MM-DD〔期別〕」，不含私人 commit SHA、不帶管理者姓名或 email；
    - 部署時產生 deploy.json，並做冒煙測試（輪詢有上限，失敗讓 job 失敗）；網站沒有變動時不建 commit，寫進 Actions 摘要；
    - 另加 dispatch 輸入 negative_test：用金鑰嘗試 force push，預期被拒；被拒才算成功，不得改動公開 repo。
-5. 測試：公開版 claims 不含 ai_crosscheck_record 與 candidate_id、其他欄位與私人版逐字相同；公開資料清單只含 v0.6 修訂 A 列的內容；未登錄或未被引用的快照不得進入；evidence_path 都能在公開側解析且雜湊相符；不含 research/、知識庫、methods/；legacy/ 的相對連結都落在公開清單內；現有網站清單與舊站部署輸出和 main 完全相同；掃描規則的 fixture 測試（至少一個應放行、一個應擋下）。
+5. 測試：evidence/ 每則只有那 7 個欄位、值與私人端逐字相同、只含已登錄期別；在 fixture 的 claim 加一個新欄位，確認不會出現在輸出；輸出不含 publication/sources、完整 claims、issues.json、research/、知識庫、methods/；現有網站清單與舊站部署輸出和 main 完全相同；掃描規則的 fixture 測試（至少一個應放行、一個應擋下）。
 
 【限制】
 - 不改出版閘門、不改已刊頁面、不改現有網站清單、不改任何 GitHub 設定。
@@ -55,7 +52,7 @@ PR-1 快完成時提醒我做步驟 1b（正文第 7 節，v0.6 修訂 F 的排�
 
 【背景】
 方案在分支 claude/elegant-fermi-fboiru 的 research/repo-split-plan.md，審查前先用 git show 讀開頭「v0.6 修訂」A 節，以及正文第 4.1–4.3 節（衝突時以 v0.6 修訂為準）。
-這個 workflow 會用部署金鑰，把內容推到公開 repo ailiteracytw/ailiteracytw.github.io。任何漏洞都可能讓未刊草稿、候選池、知識庫、排程或 session ID 被推到公開網站，所以以安全為第一優先。
+這個 workflow 會用部署金鑰，把內容推到公開 repo ailiteracytw/ailiteracytw.github.io。任何漏洞都可能讓未刊草稿、候選池、知識庫、快照書目行中的作業紀錄、排程或 session ID 被推到公開網站，所以以安全為第一優先。
 
 【一、.github/workflows/publish-public.yml】
 - 只有 workflow_dispatch 觸發；沒有 pull_request、pull_request_target、workflow_run。
@@ -76,12 +73,10 @@ PR-1 快完成時提醒我做步驟 1b（正文第 7 節，v0.6 修訂 F 的排�
 - 請想出至少三種可能漏掃的寫法（大小寫、URL 編碼、斷行、JSON 跳脫等），逐一確認會不會被擋。
 
 【三、公開資料推導】
-- 公開版 claims 只含公開欄位清單上的欄位、值逐字相同；確認是「列出要保留的欄位」，清單外的新欄位會擋下部署而不是默默公開。
-- allow-mentions.txt 只有 v0.6 修訂 A 列的兩行，且以檔案＋行內容比對，不能放行同檔其他行。
-- 只含 v0.6 修訂 A 列的內容：網站、deploy.json、已登錄期別的 claims 與它們引用的快照、corrections.json、legacy/ 4 份文件。
-- 不得有知識庫（records、relations、search_runs、indexes）、methods/、publication/audits/、任何程式或 workflow。
-- evidence_path 限定在 publication/sources/ 內、SHA-256 相符；未被引用的快照（目前 9 個）不會進入。
-- 請實際產生一次公開資料，列出檔案數與目錄，對整個輸出搜尋 research/、KB-、KR- 編號與 trig_、session_01，確認都沒有（網站典藏頁本來就顯示的書目除外，請分開列出）。
+- 輸出只有：網站（不含 publication/issues.json）、deploy.json、evidence/<期別>.json。
+- evidence/ 每則只有 claim_id、source_title、title_zh、source_organization、source_url、first_disclosed_on、original_excerpt；確認是「列出要保留的欄位」，私人端新增欄位不會流出（請用 fixture 驗證）。
+- 只取 issues.json 已登錄期別；未登錄期別（例如月報草稿）不會出現。
+- 請實際產生一次公開資料，列出檔案數與目錄，對整個輸出搜尋 research/、publication/sources、管理者、session、trig_、子代理、curl、pdftotext、403，確認都沒有（原文逐字摘錄若剛好含這些字，分開列出）。
 - 確認現有網站清單與舊站部署輸出和 main 完全相同。
 
 【回報格式】
