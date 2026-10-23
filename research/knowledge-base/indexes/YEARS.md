@@ -376,6 +376,7 @@
 | KB-2023-0206 — [Empfehlungen für den Umgang mit KI-Anwendungen am Beispiel von Chat GPT](https://www.berlin.de/sen/bjf/service/presse/pressearchiv-2023/pressemitteilung.1316517.php) | official_guidance | 2023-04-24 | discovered_unverified |
 | KB-2023-0207 — [KI@Schule – Tipps zur ersten Orientierung für Schulen](https://www.schleswig-holstein.de/DE/landesregierung/themen/bildung-hochschulen/digitale-schule/Lernen/ki_schule) | official_guidance | 2023-08 | discovered_unverified |
 | KB-2023-0208 — [Ekspertgruppens foreløbige anbefalinger om ChatGPT](https://www.uvm.dk/-/media/filer/uvm/aktuelt/pdf23/dec/231217-ekspertgruppens-foreloebige-anbefalinger-chatgpt.pdf) | policy_review | 2023-12-17 | discovered_unverified |
+| KB-2023-0225 — [What is the impact of a multi-modal pedagogical conversational AI system on parents' concerns about technology use by young children?](https://doi.org/10.1111/bjet.13399) | journal_article | 2023-10-17 | discovered_unverified |
 
 ## 2024｜event_year
 
@@ -1666,6 +1667,7 @@
 | KB-2026-0423 — [Research on the Application of Pedagogical Agents in Interdisciplinary Teaching](https://doi.org/10.1007/978-981-95-3480-7_35) | conference_paper | 2026-01-02 | discovered_unverified |
 | KB-2026-0424 — [Analysis of the Use of Artificial Intelligence and Its Impact on the Character and Cultural Identity of Junior High School Students at Homeschooling Smart Makassar](https://doi.org/10.55885/jerp.v6i2.1160) | journal_article | 2026-10-06 | discovered_unverified |
 | KB-2026-0425 — [The Impact of a Hidden AI-Based Chatbot on the Quality of Collaborative Problem Solving in a School Context](https://doi.org/10.3390/electronics15050956) | journal_article | 2026-02-26 | discovered_unverified |
+| KB-2026-0426 — [Operationalizing cognitive apprenticeship through generative AI pedagogical agents: Proactive and contextualized guidance in simulation-based learning](https://doi.org/10.1016/j.compedu.2026.105706) | journal_article | 2026-06-27 | discovered_unverified |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
