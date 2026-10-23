@@ -1,0 +1,43 @@
+Bildungsministerkonferenz der KMK（德國各邦教育部長會議） | 2026-10-16 | Was Schülerinnen und Schüler im Umgang mit KI können sollen | https://www.kmk.org/aktuelles/pressearchiv/mitteilung/was-schuelerinnen-und-schueler-im-umgang-mit-ki-koennen-sollen.html | KMK press release page read 2026-10-23T09:22:15Z (HTTP 200; page date 16.10.2026, datePublished 16.10.2026); linked framework PDF https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2026/2026_10_16-KI-Kompetenzrahmen.pdf read 2026-10-23T09:22:16Z (HTTP 200, application/pdf, 200683 bytes, 7 PDF pages = cover + printed pp. 1–6), text extracted with pypdf; page refs below are PDF page (printed page)
+Text normalisation for the PDF: words split by line-break hyphenation are rejoined (e.g. "Quer-schnittsaufgabe" -> "Querschnittsaufgabe", "KI-ge-stützter" -> "KI-gestützter"); pypdf spacing artifacts removed ("KI -bezogene" -> "KI-bezogene", "Kompet enzerweiterungen" -> "Kompetenzerweiterungen", "AI Literacy  Frameworks" -> "AI Literacy Frameworks"). No other changes.
+PDF metadata (not a publication date): CreationDate 2026-09-30, ModDate 2026-10-02. The cover dates the decision 16.10.2026, the same day as the press release.
+
+Original excerpt (framework PDF p. 2 (printed p. 1), paragraph 2 sentence 1 and paragraph 1 sentence 3, joined by " … "):
+Die Kompetenzbereiche der KMK bleiben in Struktur und Geltung unverändert. … Dabei werden die vier miteinander verschränkten Bereiche „Mit KI bewusst umgehen“, „KI kreativ anwenden“, „KI gezielt einsetzen“ und „KI aktiv mitgestalten“ als Orientierungsbegriffe aufgegriffen.
+
+Framework PDF p. 1 (cover):
+KMK-Kompetenzrahmen "Bildung in der digitalen Welt"; Aktualisierung im Kontext Künstlicher Intelligenz (2026)
+(Beschluss der Bildungsministerkonferenz vom 16.10.2026 für die Kultusministerkonferenz)
+
+Framework PDF p. 2 (printed p. 1), paragraph 1:
+Die nachfolgenden Ausführungen ordnen die bestehenden Kompetenzbereiche der KMK-Strategie „Bildung in der digitalen Welt“ im Kontext aktueller Entwicklungen Künstlicher Intelligenz ein. Die Erweiterungen orientieren sich dabei insbesondere an der 2026 veröffentlichten Endfassung des Frameworks „Empowering Learners for the Age of AI. An AI Literacy Framework for Primary and Secondary Education“ der OECD und der Europäischen Kommission, da dieses KI-bezogene Kompetenzentwicklung als fachübergreifende, anwendungsbezogene und entwicklungsorientierte Querschnittsaufgabe beschreibt und zugleich an bestehende Kompetenzrahmen digitaler Bildung anschlussfähig bleibt. Dabei werden die vier miteinander verschränkten Bereiche „Mit KI bewusst umgehen“, „KI kreativ anwenden“, „KI gezielt einsetzen“ und „KI aktiv mitgestalten“ als Orientierungsbegriffe aufgegriffen.
+
+Framework PDF p. 2 (printed p. 1), paragraph 2:
+Die Kompetenzbereiche der KMK bleiben in Struktur und Geltung unverändert. KI-bezogene Aspekte werden insbesondere dort explizit ergänzt, wo aktuelle Entwicklungen Künstlicher Intelligenz über bestehende Anforderungen digitaler Bildung hinausgehende Kompetenzerweiterungen erforderlich machen. Ergänzend wird digitale Kompetenz im Sinne aktueller europäischer Referenzrahmen als Zusammenspiel von Wissen, Fähigkeiten und Haltungen verstanden. Kompetenzentwicklung wird als progressiver Prozess verstanden, der – je nach Kontext – von grundlegender Orientierung bis zu reflektierter, eigenständiger und gestaltender Anwendung reicht.
+
+Framework PDF p. 2 (printed p. 1), paragraph 3:
+Die „Kompetenzen in der digitalen Welt“ umfassen die nachfolgend aufgeführten sechs Kompetenzbereiche, denen ergänzend Perspektiven des AI Literacy Frameworks zugeordnet werden, um KI-bezogene Handlungsdimensionen sichtbar zu machen. Die Kompetenzbereiche der KMK bleiben dabei leitend.
+
+Framework PDF pp. 3–7 (printed pp. 2–6), competence area headings:
+1. Suchen, Verarbeiten und Aufbewahren – Mit KI bewusst umgehen
+2. Kommunizieren und Kooperieren – KI kreativ anwenden und KI gezielt einsetzen
+3. Produzieren und Präsentieren – KI kreativ anwenden und KI aktiv mitgestalten
+4. Schützen und sicher Agieren – Mit KI bewusst umgehen und KI gezielt einsetzen
+5. Problemlösen und Handeln – KI gezielt einsetzen und KI aktiv mitgestalten
+6. Analysieren und Reflektieren – Mit KI bewusst umgehen
+
+Framework PDF pp. 3–7 (printed pp. 2–6), AI-related items (verbatim):
+1.2.1. Informationen und Daten analysieren, interpretieren und kritisch bewerten, einschließlich der reflektierten Einordnung KI-generierter Ergebnisse sowie möglicher Verzerrungen [p. 3 (printed p. 2)]
+2.2.2. Referenzierungspraxis beherrschen (Quellenangaben und transparente Kennzeichnung KI-generierter und -überarbeiteter Beiträge) [p. 3 (printed p. 2)]
+2.4.3. Ethische Prinzipien bei der Kommunikation kennen und berücksichtigen, insbesondere hinsichtlich Transparenz, Fairness und Verantwortlichkeit beim Einsatz von KI-Anwendungen [p. 4 (printed p. 3)]
+3.1.3. Eigene KI-Assistenten (weiter-)entwickeln [p. 4 (printed p. 3)]
+3.3.4 Grundlagen der KI-spezifischen Regulierung (z. B. KI-Verordnung der EU) kennen und berücksichtigen [p. 5 (printed p. 4)]
+4.3.4. Zwischen menschlicher Kommunikation und Mensch-Maschine-Kommunikation auch emotional unterscheiden [p. 5 (printed p. 4)]
+5.5.1. Funktionsweisen und grundlegende Prinzipien der digitalen Welt kennen und verstehen, einschließlich zentraler Konzepte maschinellen Lernens sowie deren Grenzen [p. 7 (printed p. 6)]
+6.2.4 Sensibilität gegenüber Deepfakes und KI-verstärkter Desinformation entwickeln [p. 7 (printed p. 6)]
+
+Press release page, paragraph 1 sentence 1; paragraph 3 sentences 1 and 4; paragraph 4 (after the third quote) sentence 1:
+Die Bildungsministerinnen und Bildungsminister der Länder haben den KMK-Kompetenzrahmen „Bildung in der digitalen Welt“ aktualisiert und um KI-bezogene Kompetenzen erweitert. … Die sechs bestehenden Kompetenzbereiche der KMK-Strategie „Bildung in der digitalen Welt“ bleiben erhalten und werden systematisch um KI-bezogene Kompetenzen ergänzt. … Der Kompetenzrahmen orientiert sich eng am AI-Literacy-Framework von OECD und Europäischer Kommission. … Der Kompetenzrahmen und die begleitenden Unterstützungsangebote wurden von der Arbeitsgruppe Künstliche Intelligenz der KMK unter Federführung Nordrhein-Westfalens erarbeitet.
+
+Press release page, section "Konkrete Unterstützung für die Schulpraxis", paragraph 1 sentences 1 and 2; paragraph 2 sentences 1–3:
+Damit der Kompetenzrahmen im Schulalltag ankommt, werden konkrete begleitende Unterstützungsangebote entwickelt. Dazu gehören eine interaktive Übersicht über die sechs Kompetenzbereiche mit Reflexionsfragen und weiterführenden Links, 22 Reflexionskarten für die Arbeit in Schulen, eine digitale Fassung der Reflexionskarten zur Standortbestimmung und Dokumentation sowie der „KMK-Navigator für KI-Kompetenzen“ im ländergemeinsamen Chatbot AIS.chat. … Der Kompetenzrahmen und die damit verbundenen Angebote werden auf der Internetseite der Kultusministerkonferenz veröffentlicht. Den Kompetenzrahmen finden Sie bereits hier. Nach Vorstellung der Unterstützungsangebote im Rahmen von Veranstaltungen werden diese hier ebenfalls veröffentlicht.
