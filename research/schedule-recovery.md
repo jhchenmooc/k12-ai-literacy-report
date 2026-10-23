@@ -7,9 +7,11 @@
 | 排程 | 時間（臺灣） | 執行位置 | 合併方式 |
 |---|---|---|---|
 | 每日短訊 | 每天 08:22 | 每次開新 session，完成時推播 | 權限 B：範圍檢查與 CI 通過即自動合併 |
-| 週報 | 每週五 09:27 | 編輯 session | 管理者回覆「合併」 |
-| 月報出刊前檢查 | 每月 1 日 14:47 | 編輯 session | 不建頁，只交檢查文件 |
-| 月報出刊 | 每月 3–5 日 14:47 | 編輯 session | 管理者回覆「合併」 |
+| 週報提醒 | 每週五 09:27 | 推播提醒；管理者在編輯 session 回「開始週報」才開始 | 管理者回覆「合併」 |
+| 週四清單提醒 | 每週四 10:37 | 推播提醒；管理者在編輯 session 回「轉交週四清單」，編輯 session 從 main 讀當日 daily-check 轉交本機 session | — |
+| 月報提醒 | 每月 1 日、3 日 14:47 | 推播提醒；1 日回「開始月報檢查」（只交檢查文件），3 日回「月報出刊」 | 管理者回覆「合併」 |
+
+**方案甲（管理者 2026-10-23）：** 2026-10-22 管理者授權編輯 session 傳訊息到本機 session 後，編輯 session 只能在可信任裝置上開啟，觸發到編輯 session 的排程一律失敗（ACCESS_DENIED，10-23 週報排程即因此未執行）。因此原本的週報（trig_01U8VY1x9xaJnREowotZ1Vav）、月報出刊前檢查（trig_01TVhWSKenCSxsL9Pq8sVgZy）、月報出刊（trig_01GzMzsDKP5hBhnTZReEWaCM）、週四轉交（trig_01HJaUfqtCdGgvDVdPjiQVLQ）四個排程已停用（保留作業文字，供編輯 session 照做），改為三個每次開新 session 的推播提醒：週報 trig_01Kf9HN1XPB1UPx9qyu4RfNF、週四清單 trig_013MJTxrXpNaDnatRuH3EEbg、月報 trig_011CBK4Nwsg6iUUAZ84WTQeQ。提醒 session 只推播，不做作業；作業一律由管理者在編輯 session 手動開始，步驟照停用排程的文字（用 get_trigger 讀取）。
 
 排程內容以 claude.ai 上的排程為準；本手冊與 `research/drafts/2026-10-17-schedule-prompts-draft.md` 記錄設計理由。
 
@@ -28,7 +30,7 @@
 | 每日 PR 的 CI 失敗 | 每日 session 修正後重推；修不好就不合併，回報原因。不得改閘門或測試 |
 | 每日 PR 的範圍檢查擋下（改到已刊週報或月報頁） | 不自動合併，交管理者決定 |
 | 週報或月報作業中斷 | 同一分支已有 PR 就更新該 PR，不重開。重新產生頁面時一律執行 `node research/render-site.js --write`，並跑完整驗證 |
-| 編輯 session 失效（週報、月報排程沒有觸發，或沒有回應） | 管理者開一個新的 session 接手：先讀 `research/SESSION-HANDOFF.md` §0 與本手冊，再用 list_triggers 找到週報、月報排程，以 update_trigger 把 persistent_session_id 改為新 session（或改成每次開新 session） |
+| 編輯 session 失效（收到提醒後編輯 session 沒有回應） | 管理者開一個新的 session 接手：先讀 `research/SESSION-HANDOFF.md` §0 與本手冊，再用 get_trigger 讀停用的週報、月報排程文字照做。新 session 若未授權傳訊息到本機 session，可改用 update_trigger 把停用的排程改指向新 session 並重新啟用 |
 | Pages 沒有更新 | 確認 main 上的 verify 與 deploy 是否成功；deploy 失敗時看 Actions 記錄，不得手動上傳頁面 |
 
 ## 4. 原則
