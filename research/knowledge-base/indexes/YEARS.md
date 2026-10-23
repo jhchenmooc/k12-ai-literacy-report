@@ -763,6 +763,7 @@
 | KB-2024-0374 — [Joint Media Statement – AI pilot to help tackle WA teacher workloads](https://www.wa.gov.au/government/media-statements/Cook-Labor-Government/Joint-Media-Statement---AI-PILOT-TO-HELP-TACKLE-WA-TEACHER-WORKLOADS-20240811) | government_announcement | 2024-08-12 | discovered_unverified |
 | KB-2024-0375 — [Ekspertgruppen om ChatGPT og andre digitale hjælpemidlers rapport (endelige anbefalinger)](https://www.uvm.dk/-/media/filer/uvm/aktuelt/pdf24/april/240423-ekspertgruppen-om-chatgpt-og-andre-digitale-hjaelpemidlers-rapport.pdf) | policy_review | 2024-04-24 | discovered_unverified |
 | KB-2024-0390 — [Richtlinie zum Umgang mit Künstlicher Intelligenz (KI) im Zusammenhang mit Leistungsbeurteilungen und Prüfungen](https://hibb.hamburg.de/wp-content/uploads/sites/870/2024/05/Richtlinie-zum-Umgang-mit-KI-im-Zusammenhang-mit-Leistungsbeurteilungen-und-Pruefungen.pdf) | official_guidance | 2024-04-17 | bibliographic_checked |
+| KB-2024-0391 — [高級中等學校學生學習評量及學習歷程檔案使用「生成式人工智慧」注意事項](https://www.tdhs.ntct.edu.tw/mediafile/1040/news/30/2024-12%5C20241216163710_0.pdf) | official_guidance | 2024-12-13 | discovered_unverified |
 | KB-2026-0099 — [NCDPI Generative AI Implementation Recommendations and Considerations for PK-13 Public Schools](https://go.ncdpi.gov/AI_Guidelines) | official_guidance | 2024-01-16 | bibliographic_checked |
 
 ## 2025｜event_year
@@ -1259,6 +1260,7 @@
 | KB-2025-0485 — [国家中小学智慧教育平台与人工智能融合应用指南（试行）（粤教基函〔2025〕12号附件4）](https://edu.gd.gov.cn/gkmlpt/content/4/4694/post_4694716.html) | official_guidance | 2025-04-09 | bibliographic_checked |
 | KB-2025-0486 — [TeachTune: Reviewing Pedagogical Agents Against Diverse Student Profiles with Simulated Students](https://doi.org/10.1145/3706598.3714054) | conference_paper | 2025-04-25 | discovered_unverified |
 | KB-2025-0487 — [Generative AI pedagogical agent as learners' inquiry assistant: Designing and implementing Situational Teaching](https://doi.org/10.58459/icce.2025.5931) | conference_paper | 2025-12-01 | discovered_unverified |
+| KB-2025-0488 — [國民中小學學生學習評量及作業使用生成式人工智慧注意事項](https://kkes.tc.edu.tw/var/file/177/1177/img/959/178217580.pdf) | official_guidance | 2025-03-03 | discovered_unverified |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
