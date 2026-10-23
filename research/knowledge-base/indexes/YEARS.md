@@ -1291,10 +1291,10 @@
 | KB-2025-0488 — [國民中小學學生學習評量及作業使用生成式人工智慧注意事項](https://kkes.tc.edu.tw/var/file/177/1177/img/959/178217580.pdf) | official_guidance | 2025-03-03 | discovered_unverified |
 | KB-2025-0489 — [Exploring Factors Influencing Teachers' Acceptance of AI Tools for Creating Animated Educational Videos With Pedagogical Agents](https://doi.org/10.1111/jcal.70083) | journal_article | 2025-06-16 | discovered_unverified |
 | KB-2025-0490 — [A Theory of Adaptive Scaffolding for LLM-Based Pedagogical Agents](https://doi.org/10.48550/arxiv.2508.01503) | preprint | 2025-08-02 | discovered_unverified |
-| KB-2025-0491 — [浙江省推进“人工智能+教育”行动方案（2025—2029年）（浙教技〔2025〕24号）](https://jyt.zj.gov.cn/art/2025/4/29/art_1532985_58943778.html) | official_guidance | 2025-04-29 | bibliographic_checked |
+| KB-2025-0491 — [浙江省教育厅等四部门关于印发《浙江省推进“人工智能+教育”行动方案（2025—2029年）》的通知（浙教技〔2025〕24号）](https://jyt.zj.gov.cn/art/2025/4/29/art_1532985_58943778.html) | official_guidance | 2025-04-29 | bibliographic_checked |
 | KB-2025-0492 — [《四川省推进中小学人工智能教育实施方案》印发：到2030年，在全省中小学基本普及人工智能教育](https://edu.sc.gov.cn/scedu/c100494/2025/5/21/751a12b1040242d5a2bbc68d4fd92982.shtml) | government_announcement | 2025-05-21 | discovered_unverified |
-| KB-2025-0493 — [L'IA en éducation : cadre d'usage](https://www.education.gouv.fr/cadre-d-usage-de-l-ia-en-education-450647) | official_guidance | 2025-06 | bibliographic_checked |
-| KB-2025-0494 — [Generative artificial intelligence – policy](https://education.nt.gov.au/__data/assets/pdf_file/0011/1567892/generative-artificial-intelligence-policy.pdf) | official_guidance | 2025-10-23 | bibliographic_checked |
+| KB-2025-0493 — [L'IA en éducation : cadre d'usage](https://www.education.gouv.fr/cadre-d-usage-de-l-ia-en-education-450647) | official_guidance | 2025-06-13 | bibliographic_checked |
+| KB-2025-0494 — [Generative artificial intelligence - policy](https://education.nt.gov.au/__data/assets/pdf_file/0011/1567892/generative-artificial-intelligence-policy.pdf) | official_guidance | 2025-10-23 | bibliographic_checked |
 | KB-2025-0495 — [ACT Education Directorate position on the use of AI in ACT public schools](https://www.act.gov.au/__data/assets/pdf_file/0009/2824146/Position-of-AI-use-in-ACT-public-schools.pdf) | official_guidance | 2025-02 | bibliographic_checked |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
@@ -1679,8 +1679,8 @@
 | KB-2026-0424 — [Analysis of the Use of Artificial Intelligence and Its Impact on the Character and Cultural Identity of Junior High School Students at Homeschooling Smart Makassar](https://doi.org/10.55885/jerp.v6i2.1160) | journal_article | 2026-10-06 | discovered_unverified |
 | KB-2026-0425 — [The Impact of a Hidden AI-Based Chatbot on the Quality of Collaborative Problem Solving in a School Context](https://doi.org/10.3390/electronics15050956) | journal_article | 2026-02-26 | discovered_unverified |
 | KB-2026-0426 — [Operationalizing cognitive apprenticeship through generative AI pedagogical agents: Proactive and contextualized guidance in simulation-based learning](https://doi.org/10.1016/j.compedu.2026.105706) | journal_article | 2026-06-27 | discovered_unverified |
-| KB-2026-0427 — [Note de service du 23-1-2026 relative au développement et à l'évaluation des compétences numériques des élèves (parcours Pix d'éducation à l'IA)（BO n° 6 du 5 février 2026, NOR : MENE2527173N）](https://www.education.gouv.fr/bo/2026/Hebdo6/MENE2527173N) | official_guidance | 2026-02-05 | bibliographic_checked |
-| KB-2026-0429 — [학교 AI 혁신 지수 개발 연구보고서 (Development of the School AI Innovation Index)](https://www.kosac.re.kr/menus/244/boards/457/posts/61394) | policy_review | 2026-04 | bibliographic_checked |
+| KB-2026-0427 — [Modalités de formation, d’évaluation et de certification des compétences numériques（note de service du 23-1-2026, NOR : MENE2527173N, BO n° 6 du 5 février 2026）](https://www.education.gouv.fr/bo/2026/Hebdo6/MENE2527173N) | official_guidance | 2026-02-05 | bibliographic_checked |
+| KB-2026-0429 — [학교 AI 혁신 지수 개발 (Development of the School AI Innovation Index)](https://www.kosac.re.kr/menus/244/boards/457/posts/61394) | policy_review | 2026-04 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
