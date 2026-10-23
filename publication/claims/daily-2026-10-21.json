@@ -42,7 +42,7 @@
    "T-PD",
    "T-TEA"
   ],
-  "ai_lit_note": "對象為其他教育關係人：以中小學校長、副校長為對象的人工智慧時代學校領導力研習公告（依準則 AI 素養活動公告判 A），對應 T-BAS「參與AI校園治理部署與決策」、T-PD 與 T-TEA",
+  "ai_lit_note": "對象為其他教育關係人：以中小學校長、副校長為對象的人工智慧時代學校領導力研習公告（依準則 AI 素養活動公告判 A），對應 T-BAS「參與AI校園治理部署與決策」、T-PD「理解AI時代教師專業自主與責任」與 T-TEA「評估AI與教學法整合的適切性」",
   "audience": "other_stakeholders",
   "source_country": "KR",
   "summary_evidence_spans": [
@@ -96,7 +96,7 @@
    "T-ETH",
    "T-PD"
   ],
-  "ai_lit_note": "在職教師評估 AI 公平性的專業判斷與專業學習（依準則教師 AI 素養判 A），對應 T-ETH「識別AI倫理風險」與 T-PD",
+  "ai_lit_note": "在職教師評估 AI 公平性的專業判斷與專業學習（依準則教師 AI 素養判 A），對應 T-ETH「辨識AI風險與安全防範」與 T-PD「參與社群共學反思AI時代教師角色」",
   "audience": "k12",
   "summary_evidence_spans": [
    "This conceptual paper develops Critical Fairness Literacy (CFL) through a structured synthesis of literature on teacher AI competency, critical AI literacy, algorithmic fairness, educational AI ethics, and educational equity.",

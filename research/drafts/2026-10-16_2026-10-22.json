@@ -180,7 +180,7 @@
     "S-ETH",
     "S-LRN"
    ],
-   "ai_lit_note": "兒童如何查證 AI 建議（接受、查證、質疑、修正），重點在學生使用 AI 時的查證行為，依準則判 A，對應 S-ETH「具備對AI的批判思考」與 S-LRN",
+   "ai_lit_note": "兒童如何查證 AI 建議（接受、查證、質疑、修正），重點在學生使用 AI 時的查證行為，依準則判 A，對應 S-ETH「具備對AI的批判思考」與 S-LRN「理解AI輔助學習的角色功能」",
    "audience": "k12",
    "screening_note": "Verified 2026-10-17 for daily brief 2026-10-17 (author-abstract attributed summary).",
    "verification_completed_on": "2026-10-17"
@@ -284,7 +284,7 @@
     "S-BAS",
     "S-ETH"
    ],
-   "ai_lit_note": "國小高年級學生 AI 素養教具，涵蓋 AI 概念、應用與倫理反思（依準則學生 AI 素養課程判 A），對應 S-BAS 與 S-ETH",
+   "ai_lit_note": "國小高年級學生 AI 素養教具，涵蓋 AI 概念、應用與倫理反思（依準則學生 AI 素養課程判 A），對應 S-BAS「理解AI運作原理與限制」與 S-ETH「具備對AI的批判思考」",
    "audience": "k12",
    "doi": "10.1007/s11423-026-10716-w",
    "screening_note": "Held 2026-10-20 (no abstract readable); manager supplied the publisher PDF the same day. Verified 2026-10-20 for daily brief 2026-10-20 (author-abstract attributed summary).",
@@ -319,7 +319,7 @@
     "T-ETH",
     "T-TEA"
    ],
-   "ai_lit_note": "在職教師對生成式 AI 的風險認知、AI 焦慮與停止使用意圖（依準則教師 AI 素養判 A），對應 T-ETH「識別AI倫理風險」與 T-TEA",
+   "ai_lit_note": "在職教師對生成式 AI 的風險認知、AI 焦慮與停止使用意圖（依準則教師 AI 素養判 A），對應 T-ETH「辨識AI風險與安全防範」與 T-TEA「反思與優化AI工具輔助教學的應用」",
    "audience": "k12",
    "doi": "10.1155/ahci/8302982",
    "screening_note": "Listed for observation 2026-10-20 (venue not on the watchlist); manager approved inclusion and supplied the publisher PDF the same day. Verified 2026-10-20 for daily brief 2026-10-20 (author-abstract attributed summary).",
@@ -355,7 +355,7 @@
     "T-PD",
     "T-TEA"
    ],
-   "ai_lit_note": "對象為其他教育關係人：以中小學校長、副校長為對象的人工智慧時代學校領導力研習公告（依準則 AI 素養活動公告判 A），對應 T-BAS「參與AI校園治理部署與決策」、T-PD 與 T-TEA",
+   "ai_lit_note": "對象為其他教育關係人：以中小學校長、副校長為對象的人工智慧時代學校領導力研習公告（依準則 AI 素養活動公告判 A），對應 T-BAS「參與AI校園治理部署與決策」、T-PD「理解AI時代教師專業自主與責任」與 T-TEA「評估AI與教學法整合的適切性」",
    "audience": "other_stakeholders",
    "source_country": "KR",
    "screening_note": "Verified 2026-10-21 for daily brief 2026-10-21 (official attributed summary; training event announcement).",
@@ -390,7 +390,7 @@
     "T-ETH",
     "T-PD"
    ],
-   "ai_lit_note": "在職教師評估 AI 公平性的專業判斷與專業學習（依準則教師 AI 素養判 A），對應 T-ETH「識別AI倫理風險」與 T-PD",
+   "ai_lit_note": "在職教師評估 AI 公平性的專業判斷與專業學習（依準則教師 AI 素養判 A），對應 T-ETH「辨識AI風險與安全防範」與 T-PD「參與社群共學反思AI時代教師角色」",
    "audience": "k12",
    "doi": "10.1080/15391523.2026.2749067",
    "screening_note": "Held 2026-10-21 (no abstract readable); manager supplied a screenshot of the publisher PDF first page the same day. Verified 2026-10-21 for daily brief 2026-10-21 (author-abstract attributed summary).",

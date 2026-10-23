@@ -68,7 +68,8 @@
     },
     {
       "path": "weekly/2026-10-16_10-22/index.html",
-      "claims_file": "publication/claims/weekly-2026-10-16_10-22.json"
+      "claims_file": "publication/claims/weekly-2026-10-16_10-22.json",
+      "revised_on": "2026-10-23"
     }
   ]
 }
