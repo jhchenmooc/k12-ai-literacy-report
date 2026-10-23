@@ -91,7 +91,7 @@
    "S-BAS",
    "S-ETH"
   ],
-  "ai_lit_note": "國小高年級學生 AI 素養教具，涵蓋 AI 概念、應用與倫理反思（依準則學生 AI 素養課程判 A），對應 S-BAS 與 S-ETH",
+  "ai_lit_note": "國小高年級學生 AI 素養教具，涵蓋 AI 概念、應用與倫理反思（依準則學生 AI 素養課程判 A），對應 S-BAS「理解AI運作原理與限制」與 S-ETH「具備對AI的批判思考」",
   "audience": "k12",
   "summary_evidence_spans": [
    "To address this gap, this study develops AIgnite, an AI literacy toolkit for upper primary school students in Grades 4–6.",

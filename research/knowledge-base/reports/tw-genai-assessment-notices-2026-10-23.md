@@ -1,6 +1,6 @@
 # 教育部兩份學生學習評量使用生成式 AI 注意事項入庫紀錄（2026-10-23）
 
-- 依據：管理者 2026-10-23 在文獻搜尋 session 決定「台灣注意事項照前例收」；收錄清單為受限 repo `from-literature-session/policy-agencies/intake-tw-notices-1023.csv`（分支 lit-session-tw-notices，B2-072、B2-073）。編輯 session 依清單入庫。
+- 依據：管理者 2026-10-23 在文獻搜尋 session 決定「台灣注意事項照前例收」；收錄清單為受限 repo `from-literature-session/policy-agencies/intake-tw-notices-1023.csv`（受限 repo PR #12 已併入 main，B2-072、B2-073）。編輯 session 依清單入庫。
 - 比照 KB-2026-0259：官方網域（edu.tw、k12ea.gov.tw）找不到原檔，國教署全文檢索以函號查無結果，網址採學校網站副本，`discovered_unverified`；副本與管理者上傳全文同 SHA-256（文獻 session 核對），全文存受限 repo `from-literature-session/uploads/`。
 - 首次公開日採文首所印函頒日（day）。
 
