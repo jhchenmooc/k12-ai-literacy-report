@@ -1,4 +1,4 @@
-# 拆分為私人來源 repo 與公開網站 repo：搬遷方案 v0.5（草稿）
+# 拆分為私人來源 repo 與公開網站 repo：搬遷方案 v0.6（草稿）
 
 > 建立日期：2026-10-13。狀態：**管理者 2026-10-13 已決定全部待決項目（S0、帳號、S6、S8、S9；其餘照預設）**。本方案不改任何程式、設定或 repo；所有 GitHub 設定變更（建立 repo、改私人、金鑰、Pages、ruleset）由管理者親自操作。
 >
@@ -8,6 +8,8 @@
 > - v0.3 → v0.4：依第三輪（Haiku，37 項）審查修正。本版拿掉網站模式與 GitHub 端路徑限制（兩者經核對做不到），新增 S9；
 > - v0.4 → v0.5：記錄管理者決定（全拆、改用組織 `ailiteracytw`），改寫帳號、網址、轉移時機，新增第 12 節移交。本版未另做審查；其後依管理者 2026-10-13 指示，組織名稱由 `k12-ai-literacy-tw` 改為 `ailiteracytw`（網址較短，網站在根路徑）；並自檢修正：步驟 1 拆成 1a（已完成）與 1b（PR-1 接近完成時做，不在此步開 Pages），負向測試與開 Pages 移到步驟 4，切換時金鑰改存為 repo secret，首次部署與切換後冒煙測試的規則。
 >
+> - v0.5 → v0.6（2026-10-23）：管理者決定公開範圍改為「乙」，並依 10/13 之後的變動更新時程、舊網址、排程與保護規則；**見下方「v0.6 修訂」，與正文衝突時以 v0.6 修訂為準**。
+>
 > PR-1 實作與審查提示詞見 [repo-split-prompts.md](repo-split-prompts.md)。
 >
 > 紀錄見 [repo-split-plan-reviews.md](repo-split-plan-reviews.md)。審查與修正都是 Anthropic 模型執行，不是外部真人審查。
@@ -16,6 +18,64 @@
 > - 私人 repo 編寫與驗證，CI 把網站推到公開 repo；網站網址可以改，可換新名稱；
 > - **S0：全拆**；
 > - **帳號：改用 GitHub 組織 `ailiteracytw`**，不另開個人帳號，以便日後移交。
+
+## v0.6 修訂（2026-10-23，優先於下文）
+
+管理者 2026-10-23 決定：組織 repo 只放讀者需要的網頁與已刊證據，資料處理都在私人 repo。下列各點取代正文的對應內容；正文其餘部分照舊。
+
+### A. 公開範圍：乙（取代第 3.2 節的表格與知識庫、methods 規則）
+
+公開 repo `ailiteracytw/ailiteracytw.github.io` 只放：
+
+| 位置 | 內容 | 規則 |
+|---|---|---|
+| 根目錄 | 網站（現行網站清單：STATIC_HTML、RESOURCES、PUBLIC_DIRS，含 `publication/issues.json`）；`deploy.json` | 現行網站清單 |
+| `publication/claims/` | `issues.json` 已登錄期別的 claims JSON | 路徑不變，`claims_file` 不必改寫 |
+| `publication/sources/` | 上述 claims 的 `evidence_path` 指到的快照 | 規則同正文：限 `publication/sources/` 內、拒絕 `..` 與 symlink、SHA-256 等於 `evidence_sha256`。2026-10-23 核對：已登錄 90 則主張、61 個快照全部存在且雜湊相符；未被引用的 9 個不公開 |
+| `publication/corrections.json` | 更正紀錄（更正頁的資料來源） | 原樣 |
+| `publication/README.md` | 欄位說明；`candidate_id` 對應的候選池在私人側 | 手寫 |
+| `legacy/` | 2026-09 舊刊月報引用的 4 份文件（`september-2026-retro-workflow-review.md`、`legacy-editions-review-2026-10-09.md`、`pages-browser-acceptance-2026-10-09.md`、`news-audit-2026-09-29_10-08.md`） | 已刊頁引用過，屬已刊證據；檔首加狀態說明，指向未公開檔案的連結改為純文字；推送前掃描照常 |
+| `.github/ISSUE_TEMPLATE/` | 讀者回饋表單 | 只放表單 |
+| `README.md` | 說明這是網站發布 repo、來源在私人 repo、如何回報錯誤 | 手寫 |
+
+**不公開**：知識庫（records、relations、search_runs、indexes）、`methods/`、`publication/audits/`、整理程式。網站上的典藏頁（archive/）照舊，是網站的一部分。正文第 3.2 節的知識庫過濾與 `methods/` 規則、PR-1 的對應測試都不做。
+
+**讀者回饋（取代 S3）**：公開 repo 只放 Issue 表單；每週整理 workflow 與整理程式留在私人 repo，改為讀公開 repo 的公開 Issue（公開資料，讀取不需額外權杖），整理結果留在私人 repo，不寫回公開 repo。讀者 Issue 只當資料，不自動觸發任何更動。
+
+**頁面連結（取代第 5 節「要改的位置」中的知識庫與 methods 部分）**：
+- 頁尾 GitHub 連結改指 `PUBLIC_REPO_URL`（公開 repo，裡面有已刊主張與快照）。
+- 知識庫說明（`render-site.js` 的 `SOURCE_NOTE`）與監測範圍說明中指向 `research/` 的連結，改為純文字「本刊知識庫（內部保存，未公開）」一類說明；措辭由管理者確認。
+- 舊刊月報 2026-09 連到的 4 份文件改指公開 repo 的 `legacy/`，沿用同頁更正框格式。
+- 測試：`validate-reader-feedback.test.js` 檢查回饋網址處改用常數；`validate-publication.test.js` 檢查舊刊連結處改為斷言連到公開 repo 的 `legacy/`（強度相同）。**行號已和 10/13 不同，一律以 grep 定位，不依行號。**
+
+**查核方法頁（about）**：照實寫「已登錄期別的主張、原文快照與更正紀錄在公開 repo；知識庫、草稿、候選池與內部方案不公開」，加正文第 2 節第 3、4 點的揭露。
+
+### B. 時程（取代第 10 節 S6 與第 7 節的日期）
+
+- 規則凍結到 11/03，月報 11/01 檢查、11/03 出刊；**PR-1 在 11/03 月報合併後才開始**，避開週五（週報）與每月 1、3 日。
+- PR-1：11/04 起；步驟 1b 在 PR-1 接近完成時做；步驟 4 首次推送接在 PR-1 合併後。
+- PR-2：縮小為 `publication/README.md`、公開 repo `README.md`、Issue 表單與私人側整理 workflow 改讀公開 repo。
+- PR-3：**不加中性公告**（舊網址只有兩人知道，管理者直接告知）；只加 `push` 觸發，開始驗收期（7 個日曆日、其中至少 3 天有實際變更）。
+- 切換：驗收期滿後的第一個非週五、非 1／3 日；最早約 11/11，未達條件就延後；11/30 仍未達成由管理者決定是否放棄。
+
+### C. 舊網址：丁、不轉址（取代 S8）
+
+舊網址只有兩人知道。切換時不建個人站台、不轉址，由管理者直接告知新網址。步驟 8 的「S8 轉址上線並實測」刪除。
+
+### D. 驗收紀錄（取代第 6 節「09:30 那次執行」）
+
+每日短訊排程目前在 08:22 執行。驗收期間由每日短訊 session 在當日 daily-check 加一節「publish-public 驗收」（日期、run ID、結果、有無 commit、`deploy.json` 內容），隨 daily-check PR 提交。
+
+### E. 保護規則失效後的替代做法（補充第 4.4 節與 S9）
+
+原 repo 改私人後，免費方案不執行 main 的 ruleset（必須 PR、CI 通過、禁止 force push 與刪除）。
+- 每日短訊排程既有的「範圍檢查、verify 成功、核對 expected head SHA 後才合併」保留；每日短訊、週報、月報作業文字補一句：不得直接推送 main、不得強制推送、不得刪除 main。
+- **每週稽核**：編輯 session 每週五做週報時，列出上週以來 main 的每筆提交，逐筆確認都來自已合併的 PR、且合併時 verify 為 success；異常立即回報管理者，結果記在週報出刊前檢查文件。
+
+### F. 排程與 session（取代第 7.2 節的排程段）
+
+- 10/13 記的排程編號已過時。2026-10-23 現況：每日短訊 `trig_01Y4TDEX4rJfvmnzHFrg9mHd`（每日短訊專用 session）；週報、月報、週四清單改為**方案甲**（推播提醒，管理者在編輯 session 手動開始；觸發到編輯 session 會因可信任裝置限制失敗），停用的作業排程保留文字供照做。詳見 `research/schedule-recovery.md`。
+- 步驟 1b 把 `k12-ai-literacy-report-restricted` 轉到組織後、步驟 9 把本 repo 轉到組織後，都要用 `get_trigger` 讀出所有排程（含停用的），更新 repo 名稱與網站網址；文獻搜尋、每日短訊、本機 session 的通知內容先給管理者確認。
 
 ## 摘要
 
