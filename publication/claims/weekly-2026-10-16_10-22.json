@@ -3,7 +3,7 @@
   "claim_id": "W20261016-01",
   "candidate_id": "W2026-10-16-A15",
   "kind": "news_policy",
-  "claim_text": "來源機構：Bildungsministerkonferenz der KMK（德國各邦教育部長會議）；資料標題：Was Schülerinnen und Schüler im Umgang mit KI können sollen；來源刊登日：2026-10-16。內容：德國 KMK 新聞稿所附框架文件封面標示為各邦教育首長會議 2026 年 10 月 16 日決議，在 AI 脈絡下更新〈數位世界中的教育〉能力框架；文件表示，原有六個能力領域的結構與效力不變，在 AI 發展需要超出既有要求的能力擴充之處明確增補，主要參照 OECD 與歐盟執委會 2026 年發布的 AI 素養框架定稿，並取其四個領域作為定向概念。文件所列與 AI 相關的條目包括：反思判讀 AI 生成結果與可能偏誤、透明標示 AI 生成或經 AI 修改的作品、了解機器學習核心概念及其限制、認識歐盟《人工智慧法》等 AI 專門法規的基礎、培養對深偽與 AI 強化假訊息的敏感度。說明：框架文件未述各邦落實方式與時程；新聞稿表示，配套工具正在開發，將於發表後公布。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
+  "claim_text": "來源機構：Bildungsministerkonferenz der KMK（德國各邦教育部長會議）；資料標題：Was Schülerinnen und Schüler im Umgang mit KI können sollen；來源刊登日：2026-10-16。內容：德國 KMK 新聞稿所附框架文件封面標示為 Bildungsministerkonferenz 2026 年 10 月 16 日決議，在 AI 脈絡下更新〈數位世界中的教育〉能力框架；文件表示，原有六個能力領域的結構與效力不變，特別是在 AI 發展使超出既有要求的能力擴充成為必要之處明確增補，主要參照 OECD 與歐盟執委會 2026 年發布的 AI 素養框架定稿，並取其四個領域作為定向概念。文件所列與 AI 相關的條目包括：反思判讀 AI 生成結果與可能偏誤、透明標示 AI 生成或經 AI 修改的內容、了解機器學習核心概念及其限制、了解並考量歐盟《人工智慧法》等 AI 專門法規的基礎、培養對深偽與 AI 強化假訊息的敏感度。說明：框架文件未述各邦落實方式與時程；新聞稿表示，配套支援資源正在開發，將於活動中介紹後公布於 KMK 網站。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
   "claim_class": "descriptive",
   "risk_tier": "medium",
   "level": "N-V2",
@@ -13,7 +13,7 @@
   "source_organization": "Bildungsministerkonferenz der KMK（德國各邦教育部長會議）",
   "source_url": "https://www.kmk.org/aktuelles/pressearchiv/mitteilung/was-schuelerinnen-und-schueler-im-umgang-mit-ki-koennen-sollen.html",
   "evidence_source_url": "https://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/2026/2026_10_16-KI-Kompetenzrahmen.pdf",
-  "source_locator": "全文：德國 KMK 框架 PDF（2026-10-23 讀取 200，7 頁＝封面＋印刷頁 1–6）：決議日—封面（PDF 第 1 頁）；參照 OECD／歐盟執委會框架與四領域—PDF 第 2 頁（印刷頁 1）第 1 段第 2、3 句；結構與效力不變、明確增補處—第 2 段第 1、2 句；AI 相關條目—1.2.1（PDF 第 3 頁）、2.4.3（第 4 頁）、3.3.4（第 5 頁）、5.5.1、6.2.4（第 7 頁）。新聞稿頁（同日讀取 200，頁面日期 16.10.2026）：配套工具—「Konkrete Unterstützung für die Schulpraxis」段。",
+  "source_locator": "全文：德國 KMK 框架 PDF（2026-10-23 讀取 200，7 頁＝封面＋印刷頁 1–6）：決議日—封面（PDF 第 1 頁）；參照 OECD／歐盟執委會框架與四領域—PDF 第 2 頁（印刷頁 1）第 1 段第 2、3 句；結構與效力不變、明確增補處—第 2 段第 1、2 句；AI 相關條目—1.2.1、2.2.2（PDF 第 3 頁）、3.3.4（第 5 頁）、5.5.1、6.2.4（第 7 頁）。新聞稿頁（同日讀取 200，頁面日期 16.10.2026）：配套工具—「Konkrete Unterstützung für die Schulpraxis」段第 1 段第 1 句、第 2 段第 3 句。",
   "source_type": "official_document",
   "checked_at": "2026-10-23",
   "publication_date": "2026-10-16",
@@ -33,7 +33,7 @@
   "contradiction_type": "none",
   "ai_crosscheck_status": "concordant",
   "ai_crosscheck_passes": 2,
-  "ai_crosscheck_record": "週報精選（2026-10-16 期，管理者 2026-10-23「照建議」）。第一輪 2026-10-23T09:22Z 子代理以 curl 讀德國 KMK 新聞稿頁（200）與框架 PDF（200，7 頁），依 PDF 全文撰寫「內容／說明」，建快照 w2026-10-16-ft01.txt（PDF 換行連字號接回、pypdf 空白瑕疵修正已於快照註明），以程式確認快照各句逐字見於原文；編輯 session 把條目從 8 項刪為 5 項以控制字數。PENDING-R2",
+  "ai_crosscheck_record": "週報精選（2026-10-16 期，管理者 2026-10-23「照建議」）。第一輪 2026-10-23T09:22Z 子代理以 curl 讀德國 KMK 新聞稿頁（200）與框架 PDF（200，7 頁），依 PDF 全文撰寫「內容／說明」，建快照 w2026-10-16-ft01.txt（PDF 換行連字號接回、pypdf 空白瑕疵修正已於快照註明），以程式確認快照各句逐字見於原文；編輯 session 把條目從 8 項刪為 5 項以控制字數。第二輪 2026-10-23 由隔離子代理重讀原文逐項對照，判定需修改：條目出處更正為 2.2.2、補「特別是」與「並考量」、配套資源改為「活動中介紹後公布」、機構名稱統一；已修改。同一模型，非獨立審閱。",
   "ai_lit_class": "A",
   "ai_lit_dims": [
    "S-BAS",
@@ -51,7 +51,7 @@
   "claim_id": "W20261016-03",
   "candidate_id": "W2026-10-16-A08",
   "kind": "research",
-  "claim_text": "來源機構：Educational Technology Research and Development (Springer)；資料標題：AIgnite: an educational toolkit for supporting primary students’ AI literacy cultivation；來源刊登日：2026-10-19。樣本：作者報告使用者研究經地方圖書館官方管道招募 42 名兒童（平均 10.5 歲），皆由家長協助報名；4 人後測不完整，前後測分析 38 人；年級與所在國家原文未述。開發階段另有設計專家 4 人與研究者 1 人、學童 5 人（10–12 歲）及 21 人參與三輪迭代。設計：作者稱採探索性設計本位研究；教具含 AI 知識卡、桌遊與 AI 故事繪圖；使用者研究為約 2.5 小時的單次工作坊，前後測含 10 題 AI 概念單選題及各 5 題的倫理意識與自評 AI 素養量表，另質性編碼學生作品與口頭說明。作者所述發現：作者報告 AI 概念、倫理意識與自評 AI 素養三項後測分數皆高於前測；學生多把 AI 功能放進機器人等日常物件，倫理考量主要集中於技術可行性、公平、潛在社會風險與對未來發展的提議。作者指出本研究旨在探索教具的實務潛力，「而非尋求成效的確定證據」。限制：作者自述僅單次工作坊、主要看立即變化，長期保留與跨情境遷移待檢驗；部分變化可能受測驗反應、霍桑效應、新奇效應與自陳偏誤影響；概念測驗未檢驗試題難度與鑑別度；參與者自願報名，可能有自我選擇，推論至一般課堂與居家使用受限；倫理反思仍屬初步，倫理量表以自陳為主且前測偏高，敏感度可能受限。說明：摘要稱共創與原型修改有 30 名參與者，內文各輪合計 31 人（含研究者 1 人）；作者單位皆在中國；本則不引用統計數字。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
+  "claim_text": "來源機構：Educational Technology Research and Development (Springer)；資料標題：AIgnite: an educational toolkit for supporting primary students’ AI literacy cultivation；來源刊登日：2026-10-19。樣本：作者報告使用者研究經地方圖書館官方管道招募 42 名兒童（平均 10.5 歲），皆由家長協助報名；4 人後測不完整，前後測分析 38 人；年級與所在國家原文未述。開發階段另有設計專家 4 人與研究者 1 人、學童 5 人（10–12 歲）及 21 人參與三輪迭代。設計：作者稱採探索性設計本位研究；教具含 AI 知識卡、桌遊與 AI 故事繪圖；使用者研究為約 2.5 小時的單次工作坊，前後測含 10 題 AI 概念單選題及各 5 題的倫理意識與自評 AI 素養量表，另質性編碼學生作品與口頭說明。作者所述發現：作者報告 AI 概念、倫理意識與自評 AI 素養三項後測分數皆高於前測；學生多把 AI 功能放進熟悉的日常物件，常以機器人等具體載體呈現，倫理考量主要集中於技術可行性、公平、潛在社會風險與對未來發展的提議。作者指出本研究旨在探索教具的實務潛力，「而非尋求成效的確定證據」。限制：作者自述僅單次工作坊、主要看立即變化，長期保留與跨情境遷移待檢驗；部分變化可能受測驗反應、霍桑效應、新奇效應與自陳偏誤影響；概念測驗未檢驗試題難度與鑑別度；參與者自願報名，可能有自我選擇，推論至一般課堂與居家使用受限；倫理反思仍屬初步，倫理量表以自陳為主且前測偏高，敏感度可能受限。說明：摘要稱共創與原型修改有 30 名參與者，內文各輪合計 31 人（含研究者 1 人）；作者單位皆在中國；本則不引用統計數字。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
   "claim_class": "descriptive",
   "risk_tier": "medium",
   "level": "V2",
@@ -82,7 +82,7 @@
   "ai_crosscheck_status": "concordant",
   "ai_crosscheck_passes": 2,
   "decision": "publish",
-  "ai_crosscheck_record": "週報精選（2026-10-16 期，管理者 2026-10-23「照建議」）。第一輪 2026-10-23 由子代理以 python3 -I 加 pypdf 讀管理者提供之出版者 PDF 全文（32 頁）撰稿，並建立快照 w2026-10-16-ft03.txt（逐字摘錄，只校正換行連字號與空白）；逐項核對樣本、迭代各輪人數、工作坊時長、測量工具與限制；介入研究依 D5 只寫方向並保留作者保留語，不寫統計數字；原文未述樣本所在國家，不標 taiwan_sample；記下摘要 30 人與內文 31 人、摘要與結論稱有效而限制段保留兩處不一致。首發日沿用每日短訊 D20261020-02 的 Crossref 上線日。PENDING-R2",
+  "ai_crosscheck_record": "週報精選（2026-10-16 期，管理者 2026-10-23「照建議」）。第一輪 2026-10-23 由子代理以 python3 -I 加 pypdf 讀管理者提供之出版者 PDF 全文（32 頁）撰稿，並建立快照 w2026-10-16-ft03.txt（逐字摘錄，只校正換行連字號與空白）；逐項核對樣本、迭代各輪人數、工作坊時長、測量工具與限制；介入研究依 D5 只寫方向並保留作者保留語，不寫統計數字；原文未述樣本所在國家，不標 taiwan_sample；記下摘要 30 人與內文 31 人、摘要與結論稱有效而限制段保留兩處不一致。首發日沿用每日短訊 D20261020-02 的 Crossref 上線日。第二輪 2026-10-23 由隔離子代理重讀原文逐項對照，確認樣本、迭代人數、工作坊時長、測量工具、作者保留語與限制皆與 PDF 相符、首發日重查 Crossref 一致；判定需修改一處：「日常物件」與「機器人等具體載體」分開寫；已修改。同一模型，非獨立審閱。",
   "ai_lit_class": "A",
   "ai_lit_dims": [
    "S-BAS",
@@ -98,7 +98,7 @@
   "claim_id": "W20261016-05",
   "candidate_id": "",
   "kind": "news_policy",
-  "claim_text": "來源機構：英國資格與考試監管署（Ofqual）；資料標題：Connecting curriculum, assessment and trust – qualifications for the next decade；來源刊登日：2026-10-16。英國英格蘭資格考試監管機關 Ofqual 署長 Sir Ian Bauckham 10 月 16 日在年會演講中表示，不能讓資格考試被「AI 粗製產出足以取代真正的人類努力」的假設所破壞，並認為對個人前途有重大影響的判斷需要人類直接監督（演講，非政策）。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
+  "claim_text": "來源機構：英國資格與考試監管署（Ofqual）；資料標題：Connecting curriculum, assessment and trust – qualifications for the next decade；來源刊登日：2026-10-16。英國英格蘭資格考試監管機關 Ofqual 署長 Sir Ian Bauckham 10 月 16 日在學校信託聯盟（Confederation of School Trusts）年會演講中表示，不能讓資格考試因「AI 粗製產出」（AI slop）足以取代真正人類努力成果的假設而遭破壞，並表示他認為人的尊嚴要求對個人前途有重大影響的判斷需要人類直接監督（演講講稿，非政策）。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
   "claim_class": "descriptive",
   "risk_tier": "medium",
   "level": "N-V2",
@@ -128,7 +128,7 @@
   "contradiction_type": "none",
   "ai_crosscheck_status": "concordant",
   "ai_crosscheck_passes": 2,
-  "ai_crosscheck_record": "PENDING",
+  "ai_crosscheck_record": "其他短訊（演講，管理者 2026-10-17 決定一句帶過，2026-10-23「照建議」核可擬稿）。第一輪 2026-10-23 編輯 session 經 GOV.UK Content API 讀演講頁（200），擇 AI 段第二、三問各一句撰寫並建快照；第二輪 2026-10-23 由隔離子代理重讀原文逐項對照，確認日期與摘錄位置正確，判定需修改：引號只框 AI slop、補年會主辦者（API description）與「人的尊嚴」依據；已修改。同一模型，非獨立審閱。",
   "ai_lit_class": "A",
   "ai_lit_dims": [
    "S-ETH"
@@ -608,7 +608,7 @@
   "ai_crosscheck_status": "concordant",
   "ai_crosscheck_passes": 2,
   "decision": "publish",
-  "ai_crosscheck_record": "第一輪 2026-10-23 子代理讀 arXiv abs 頁，本 session 擇摘要第 1、3、5 句撰寫中文摘要與中文譯名；第二輪 2026-10-23 由隔離子代理逐項對照英文原句，判定一致，依建議把 AI 素養對應由 S-ETH 改為 S-BAS，譯名與摘要用「資安」。同一模型，非獨立審閱。",
+  "ai_crosscheck_record": "第一輪 2026-10-23 子代理讀 arXiv abs 頁，本 session 擇摘要第 1、3、5 句撰寫中文摘要與中文譯名；第二輪 2026-10-23 由隔離子代理逐項對照英文原句，判定一致，依建議把 AI 素養對應由 S-ETH 改為 S-BAS，譯名與摘要用「資安」。同一模型，非獨立審閱。｜週報反思標記（管理者 2026-10-23 確認）：caution_excerpt 取自本則快照摘要第 1 句；第二輪 2026-10-23 由隔離子代理重讀原文逐項對照，判定一致（語氣對照：has outpaced→已超過，無情態詞與因果詞）。同一模型，非獨立審閱。",
   "ai_lit_class": "A",
   "ai_lit_dims": [
    "S-BAS",
@@ -977,7 +977,7 @@
   "contradiction_type": "none",
   "ai_crosscheck_status": "concordant",
   "ai_crosscheck_passes": 2,
-  "ai_crosscheck_record": "PENDING",
+  "ai_crosscheck_record": "臺灣對照（管理者 2026-10-23「照建議」）。第一輪 2026-10-23 編輯 session 以補入 TWCA 中繼憑證的 CA bundle（openssl verify 通過，未關閉 TLS 驗證）下載教育部 pads 原文 PDF（雜湊與 KB-2026-0393 管理者上傳全文相同），擇第一點第 2 段與第六點第（四）款撰稿並建快照；第二輪 2026-10-23 由隔離子代理重讀原文逐項對照，判定需修改：用途範圍改回原文「協助構思或潤飾」；已修改。同一模型，非獨立審閱。",
   "ai_lit_class": "A",
   "audience": "k12",
   "decision": "publish",
@@ -994,7 +994,7 @@
   "evidence_path": "publication/sources/w2026-10-16-tw1.txt",
   "evidence_sha256": "53a5c162294fe8f26a72c3d29e24a5fa6569d5ba832409e02635d4a39192ced8",
   "original_excerpt": "所以我們在使用「生成式人工智慧」工具時，應該仔細檢視內容，並以批判性思考判斷其是否公平、全面或具有偏見，遇有疑慮應向老師或家長詢問，不宜直接採信或用於作業、報告或公開發表的內容。 … 完成作業或報告時，如依老師或學校規定使用「生成式人工智慧」工具協助構思或潤飾，應依規定註明所使用的工具及用途，不得將生成內容直接當作自己原創作品繳交。",
-  "claim_text": "來源機構：中華民國教育部；資料標題：中小學使用「生成式人工智慧」注意事項2.1（學生版）；來源刊登日：2026-02-11。官方文件表示：注意事項提醒學生覺察生成內容可能存在偏誤，使用時應仔細檢視內容，以批判性思考判斷是否公平、全面或具有偏見；依老師或學校規定使用生成式 AI 協助完成作業或報告時，應依規定註明所使用的工具及用途，不得將生成內容直接當作自己原創作品繳交。說明：日期為文件所印 2.1 版核定日（臺教資（一）字第 1152700391 號函），本刊未找到教育部公告頁。（臺灣對照，非本週新訊；AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
+  "claim_text": "來源機構：中華民國教育部；資料標題：中小學使用「生成式人工智慧」注意事項2.1（學生版）；來源刊登日：2026-02-11。官方文件表示：注意事項提醒學生覺察生成內容可能存在偏誤，使用時應仔細檢視內容，以批判性思考判斷是否公平、全面或具有偏見；完成作業或報告時，如依老師或學校規定使用生成式 AI 工具協助構思或潤飾，應依規定註明所使用的工具及用途，不得將生成內容直接當作自己原創作品繳交。說明：日期為文件所印 2.1 版核定日（臺教資（一）字第 1152700391 號函），本刊未找到教育部公告頁。（臺灣對照，非本週新訊；AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
   "source_locator": "第一點「覺察『生成式人工智慧』產生的內容可能存在偏誤」第 2 段（PDF 第 1 頁）；第六點第（四）款（PDF 第 3 頁）；首發日依文件所印核定日（管理者 2026-10-10 規則）",
   "interpretation_note": "本刊以官方注意事項原文對照本期德國學生 AI 能力框架一則，只描述注意事項所列內容，不涉實施情形。",
   "scope_limitation": "注意事項為使用參考，不代表各校實施情形；本期國際項目為他國官方新聞稿，性質不同。",
@@ -1025,7 +1025,7 @@
   "contradiction_type": "none",
   "ai_crosscheck_status": "concordant",
   "ai_crosscheck_passes": 2,
-  "ai_crosscheck_record": "PENDING",
+  "ai_crosscheck_record": "臺灣對照（管理者 2026-10-23「照建議」）。第一輪 2026-10-23 編輯 session 以同上方式下載教育部 pads 原文 PDF，擇雙軌設計句與 AI 倫理段撰稿並建快照；第二輪 2026-10-23 由隔離子代理重讀原文逐項對照，確認摘錄、核定日與函號相符，判定需修改：locator 註明 2026-06-18 函頒的出處；已修改。同一模型，非獨立審閱。",
   "ai_lit_class": "A",
   "audience": "k12",
   "decision": "publish",
@@ -1043,7 +1043,7 @@
   "evidence_sha256": "c22196ab1bc5ac43084dfcf02e29c64fae47f299b4d30b784789fd5e76b88802",
   "original_excerpt": "師生需具備辨識演算法偏見、保護數據隱私的意識，並警覺AI可能產生的錯假訊息。",
   "claim_text": "來源機構：中華民國教育部；資料標題：臺灣中小學教師與學生AI素養框架；來源刊登日：2026-04-17。官方文件表示：框架採雙軌設計，參考 UNESCO 與 OECD 的國際標準，分別為教師與學生規劃素養框架；AI 倫理面向寫明師生需具備辨識演算法偏見、保護數據隱私的意識，並警覺 AI 可能產生的錯假訊息。說明：日期為文件所印核定日（臺教資（一）字第 1152701134 號），本刊未找到教育部公告頁；文件封面印 2026 年 3 月，另有 2026-06-18 函頒。（臺灣對照，非本週新訊；AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
-  "source_locator": "參、我國 AI 素養框架（文件頁碼 10，PDF 第 12 頁）；一、AI 倫理（文件頁碼 12，PDF 第 14 頁）；首發日依文件所印核定日（管理者 2026-10-10 規則）",
+  "source_locator": "參、我國 AI 素養框架（文件頁碼 10，PDF 第 12 頁）；一、AI 倫理（文件頁碼 12，PDF 第 14 頁）；核定日與函號—文件頁碼 1（PDF 第 3 頁）；封面 2026 年 3 月—PDF 第 1 頁；2026-06-18 函頒（臺教資（一）字第 1152701805 號函）不見於本 PDF，依桃園市教育局轉知頁（見 research/p0-tw-moe-framework-2026-10-09）；首發日依文件所印核定日（管理者 2026-10-10 規則）",
   "interpretation_note": "本刊以官方框架原文對照本期教師 AI 能力框架與量表項目，只描述框架的設計與所列面向，不涉實施情形。",
   "scope_limitation": "僅為框架文件的設計與面向描述，不代表各校實施或培訓辦理情形；本期國際項目為研究，性質不同。",
   "ai_lit_dims": [
@@ -1084,11 +1084,11 @@
   "reflect_type": "report",
   "reflect_mixed": true,
   "reflect_partial": true,
-  "reflect_excerpt_zh": "國小學生應禁止使用 AI，包括在家中使用。或者，可暫停使用至少一段時間，例如一年，讓教育體系在允許任何經審慎調整的使用之前，先盤點風險與證據。",
+  "reflect_excerpt_zh": "應禁止國小學生使用 AI，包括在家中使用。或者，暫停使用至少一段期間（例如一年），可讓教育體系在允許任何經審慎調整的使用之前，先盤點風險與證據。",
   "reflect_locator": "報告重點第 9 頁 Guardrails 第 2 點",
   "reflect_confirmed_on": "2026-10-23",
   "interpretation_note": "只摘報告重點中「學生使用 AI 的限制」一點；報告由亞太區教師問卷與訪談整理，另報告教師工作量減輕等結果，本則不寫入。",
-  "scope_limitation": "工會組織委託的探索性研究之報告重點，表達該組織的主張，不是政府政策；調查對象為亞太地區教育工作者。",
+  "scope_limitation": "由 IT for Change 為 EIAP 設計執行的探索性研究之報告重點，所列防護措施為報告提出的可能做法，不是政府政策；調查對象為亞太地區教育工作者（訪談與焦點團體僅來自澳洲與菲律賓）。",
   "assertion_type": "direct_statement",
   "translation_reviewed": true,
   "source_checked": true,
@@ -1099,7 +1099,7 @@
   "contradiction_type": "none",
   "ai_crosscheck_status": "concordant",
   "ai_crosscheck_passes": 2,
-  "ai_crosscheck_record": "PENDING",
+  "ai_crosscheck_record": "國外反思選讀另選錄（管理者 2026-10-23 確認）。第一輪 2026-10-23 編輯 session 讀 EI 新聞頁（200，頁面日期 21 October 2026）與頁面所連報告重點 PDF（簽章連結 200），擇第 9 頁 Guardrails 第 2 點並建快照；第二輪 2026-10-23 由隔離子代理重讀原文逐項對照，確認日期與摘錄逐字相符，語氣對照：should→應（未用必須）、say, a year→例如一年、could allow→可讓、無因果詞；判定需修改：改為「應禁止國小學生使用 AI」、could 移回「可讓」、範圍說明改為報告提出的可能做法；已修改。同一模型，非獨立審閱。",
   "ai_lit_class": "A",
   "ai_lit_dims": [
    "S-ETH"
@@ -1108,6 +1108,6 @@
   "audience": "k12",
   "decision": "publish",
   "source_country": "INTL",
-  "claim_text": "報告風險段落｜國際教育組織亞太區（EIAP）於 2026-10-21 發布〈教育中的 AI 探索性研究：亞太地區教育工作者的觀點——報告重點〉，文中表示：「國小學生應禁止使用 AI，包括在家中使用。或者，可暫停使用至少一段時間，例如一年，讓教育體系在允許任何經審慎調整的使用之前，先盤點風險與證據。」（節譯）（報告重點第 9 頁 Guardrails 第 2 點）（原文同時談機會與風險；此處只摘風險段落）原文：There should be a ban on the use of AI by students in primary schools, including its use at home. Alternatively, a moratorium for a minimum period of say, a year could allow education systems to take stock of risks and evidence before allowing any carefully calibrated use."
+  "claim_text": "報告風險段落｜國際教育組織亞太區（EIAP）於 2026-10-21 發布〈教育中的 AI 探索性研究：亞太地區教育工作者的觀點——報告重點〉，文中表示：「應禁止國小學生使用 AI，包括在家中使用。或者，暫停使用至少一段期間（例如一年），可讓教育體系在允許任何經審慎調整的使用之前，先盤點風險與證據。」（節譯）（報告重點第 9 頁 Guardrails 第 2 點）（原文同時談機會與風險；此處只摘風險段落）原文：There should be a ban on the use of AI by students in primary schools, including its use at home. Alternatively, a moratorium for a minimum period of say, a year could allow education systems to take stock of risks and evidence before allowing any carefully calibrated use."
  }
 ]
