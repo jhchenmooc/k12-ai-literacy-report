@@ -1,9 +1,9 @@
 record_id,doi,record_type,venue_code,first_published_on,date_basis,ai_lit_class,ai_lit_dims,audience,stage,confidence,note
 KB-2025-0486,10.1145/3706598.3714054,conference_paper,C13,2025-04-25,Crossref published-online,B,T-TEA,inservice_teacher,k12_unspecified,medium,韓國中小學科學教師實際操作 LLM 工具設計與檢核教學聊天機器人，屬 B；使用研究中僅部分教師目前在公立學校任教，任教學段未細分。
 KB-2025-0487,10.58459/icce.2025.5931,conference_paper,C11,2025-12-01,Crossref published-online（ICCE 2025 論文集）,B,S-LRN,student,upper_secondary,medium,文中稱middle school一年級但全文定位高中並引高中課標，判高中；亦觸及過度依賴AI，可能兼A。
-KB-2026-0416,10.22318/icls2026.518238,conference_paper,C04,2026,Crossref 只有年份（ICLS 2026 論文集）；year_basis 宜用 event_year,A,T-PD;T-TEA,inservice_teacher,k12_unspecified,high,中小學在職教師的生成式 AI 代理設計專業發展研究，依 TPD 規則判 A（T-PD、T-TEA）。
-KB-2026-0417,10.31876/rie.v9i4.346,journal_article,,2026-01-07,Crossref published-online,A,T-BAS;T-PD,inservice_teacher,upper_secondary,medium,對象是在職高中體育教師（同時為碩士生），主題為教師AI知識與培訓需求，可判A；所提AI代理僅為構想未實作。
-KB-2026-0418,10.22460/jpmi.v9i1.29122,journal_article,,2026-01-31,Crossref published-online,B,S-LRN,student,k12_multi,low,回顧僅納入5篇（含理論模型文），依規則照判K-12但信心降低；篩選過程簡略。
-KB-2026-0419,10.48550/arxiv.2605.30539,preprint,,2026-05-28,arXiv v1 提交日（arXiv API published）,B,S-LRN,student,upper_secondary,high,高中二年級學生直接與 LLM 教學代理互動學物理與運算建模，屬 B；文中亦分析依賴行為，可考慮 A（S-LRN）。；OpenAlex 另有 DOI 版 W7163038531，合併為一筆
-KB-2026-0420,10.1007/978-3-032-29744-0_1,conference_paper,C01,2026-06-27,Crossref published-online,B,S-LRN,student,upper_secondary,high,與 Copa 同一高中部署（15–16 歲），學生直接使用 LLM 代理，屬 B；原類別不明，補判 B。；與 10.48550/arxiv.2605.30539（Copa）同一次高中部署、同一批學生，入庫請加註避免重複計算樣本
-KB-2026-0421,10.21203/rs.3.rs-10455194/v1,preprint,,2026-08-25,Crossref posted（Research Square 預印本）,B,S-LRN,student,k12_multi,high,阿聯公立學校五至八年級學生直接使用生成式 AI 數學家教，屬 B，跨國小與國中。
+KB-2026-0417,10.22318/icls2026.518238,conference_paper,C04,2026,Crossref 只有年份（ICLS 2026 論文集）；year_basis 宜用 event_year,A,T-PD;T-TEA,inservice_teacher,k12_unspecified,high,中小學在職教師的生成式 AI 代理設計專業發展研究，依 TPD 規則判 A（T-PD、T-TEA）。
+KB-2026-0418,10.31876/rie.v9i4.346,journal_article,,2026-01-07,Crossref published-online,A,T-BAS;T-PD,inservice_teacher,upper_secondary,medium,對象是在職高中體育教師（同時為碩士生），主題為教師AI知識與培訓需求，可判A；所提AI代理僅為構想未實作。
+KB-2026-0419,10.22460/jpmi.v9i1.29122,journal_article,,2026-01-31,Crossref published-online,B,S-LRN,student,k12_multi,low,回顧僅納入5篇（含理論模型文），依規則照判K-12但信心降低；篩選過程簡略。
+KB-2026-0420,10.48550/arxiv.2605.30539,preprint,,2026-05-28,arXiv v1 提交日（arXiv API published）,B,S-LRN,student,upper_secondary,high,高中二年級學生直接與 LLM 教學代理互動學物理與運算建模，屬 B；文中亦分析依賴行為，可考慮 A（S-LRN）。；OpenAlex 另有 DOI 版 W7163038531，合併為一筆
+KB-2026-0421,10.1007/978-3-032-29744-0_1,conference_paper,C01,2026-06-27,Crossref published-online,B,S-LRN,student,upper_secondary,high,與 Copa 同一高中部署（15–16 歲），學生直接使用 LLM 代理，屬 B；原類別不明，補判 B。；與 10.48550/arxiv.2605.30539（Copa）同一次高中部署、同一批學生，入庫請加註避免重複計算樣本
+KB-2026-0422,10.21203/rs.3.rs-10455194/v1,preprint,,2026-08-25,Crossref posted（Research Square 預印本）,B,S-LRN,student,k12_multi,high,阿聯公立學校五至八年級學生直接使用生成式 AI 數學家教，屬 B，跨國小與國中。

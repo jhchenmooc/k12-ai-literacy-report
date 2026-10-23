@@ -4,7 +4,8 @@
     {
       "path": "daily/2026-10-23/index.html",
       "claims_file": "publication/claims/daily-2026-10-23.json",
-      "publication_mode": "ai_low_risk_source_facts"
+      "publication_mode": "ai_low_risk_source_facts",
+      "revised_on": "2026-10-23"
     },
     {
       "path": "daily/2026-10-22/index.html",

@@ -1300,7 +1300,7 @@
 | KB-2026-0120 — [Integrating AI Literacy into Math Education: A Study on AI Self-Efficacy and Math Motivation](https://doi.org/10.3102/2281139) | conference_paper | 未知 | bibliographic_checked |
 | KB-2026-0121 — [Exploring AI Literacy: Student Perceptions of Learning, Ethics, and Use in the Classroom](https://doi.org/10.3102/2273778) | conference_paper | 未知 | bibliographic_checked |
 | KB-2026-0122 — [Imagining Culturally and Linguistically Sustaining AI Literacy with In-Service Educators through Design-Based Research (Poster 29)](https://doi.org/10.3102/2288275) | conference_paper | 未知 | bibliographic_checked |
-| KB-2026-0416 — [An activity-theoretical approach to teacher professional development in pedagogical AI agent design](https://doi.org/10.22318/icls2026.518238) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0417 — [An activity-theoretical approach to teacher professional development in pedagogical AI agent design](https://doi.org/10.22318/icls2026.518238) | conference_paper | 未知 | discovered_unverified |
 
 ## 2026｜first_publication
 
@@ -1632,11 +1632,12 @@
 | KB-2026-0413 — [AI Security Literacy: Ecosystem-based Competency Framework and K-12 Learning Platform](https://arxiv.org/abs/2610.28859) | preprint | 2026-10-20 | bibliographic_checked |
 | KB-2026-0414 — [Mapping Artificial Intelligence Integration in Kindergarten Teaching: Usage Patterns, Pedagogical Purposes, and Acceptance Factors Among Teachers with Prior AI-Use Experience](https://doi.org/10.3390/educsci16101766) | journal_article | 2026-10-21 | bibliographic_checked |
 | KB-2026-0415 — [國教署攜手臺北流行音樂中心辦理「流行音樂種子教師創作營」](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=827D64669A563D41) | government_announcement | 2026-10-23 | bibliographic_checked |
-| KB-2026-0417 — [Inteligencia artificial para el fortalecimiento de los bloques curriculares en la asignatura de educación física](https://doi.org/10.31876/rie.v9i4.346) | journal_article | 2026-01-07 | discovered_unverified |
-| KB-2026-0418 — [Efektivitas implementasi teknologi kecerdasan buatan (AI) dalam pembelajaran matematika tingkat menengah](https://doi.org/10.22460/jpmi.v9i1.29122) | journal_article | 2026-01-31 | discovered_unverified |
-| KB-2026-0419 — [A Theory-Guided LLM Pedagogical Agent for STEM+C Scaffolding Without Over-Reliance](https://doi.org/10.48550/arxiv.2605.30539) | preprint | 2026-05-28 | discovered_unverified |
-| KB-2026-0420 — [Evidence-Decision-Feedback: Theory-Driven Adaptive Scaffolding for LLM Agents](https://doi.org/10.1007/978-3-032-29744-0_1) | conference_paper | 2026-06-27 | discovered_unverified |
-| KB-2026-0421 — [Real-world Impact of a GenAI Pedagogical Agent and Child-AI Discourse Analysis in K12 Math Learning in the Middle East](https://doi.org/10.21203/rs.3.rs-10455194/v1) | preprint | 2026-08-25 | discovered_unverified |
+| KB-2026-0416 — [Moving Minds, Moving Bodies: Rethinking AI Literacy and Health Literacy Through Embodied Education](https://doi.org/10.1111/ejed.70904) | journal_article | 2026-10-21 | bibliographic_checked |
+| KB-2026-0418 — [Inteligencia artificial para el fortalecimiento de los bloques curriculares en la asignatura de educación física](https://doi.org/10.31876/rie.v9i4.346) | journal_article | 2026-01-07 | discovered_unverified |
+| KB-2026-0419 — [Efektivitas implementasi teknologi kecerdasan buatan (AI) dalam pembelajaran matematika tingkat menengah](https://doi.org/10.22460/jpmi.v9i1.29122) | journal_article | 2026-01-31 | discovered_unverified |
+| KB-2026-0420 — [A Theory-Guided LLM Pedagogical Agent for STEM+C Scaffolding Without Over-Reliance](https://doi.org/10.48550/arxiv.2605.30539) | preprint | 2026-05-28 | discovered_unverified |
+| KB-2026-0421 — [Evidence-Decision-Feedback: Theory-Driven Adaptive Scaffolding for LLM Agents](https://doi.org/10.1007/978-3-032-29744-0_1) | conference_paper | 2026-06-27 | discovered_unverified |
+| KB-2026-0422 — [Real-world Impact of a GenAI Pedagogical Agent and Child-AI Discourse Analysis in K12 Math Learning in the Middle East](https://doi.org/10.21203/rs.3.rs-10455194/v1) | preprint | 2026-08-25 | discovered_unverified |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

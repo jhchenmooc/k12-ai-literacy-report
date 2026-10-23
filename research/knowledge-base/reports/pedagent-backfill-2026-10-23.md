@@ -2,7 +2,7 @@
 
 管理者 2026-10-22 把「pedagogical AI agent」加入檢索關鍵字（PR #357）並同意回補；文獻搜尋 session 以 OpenAlex 回查 2022-01-01～2026-10-22（86 筆，7 筆已在知識庫），讀 15 篇全文，管理者 2026-10-23 在文獻 session「照建議」收 8 篇。來源在私人 repo 分支 `lit-session-pedagent`（commit adaf47c），`from-literature-session/pedagent-backfill-1022/`。檢索紀錄 `PEDAGENT-20261022-OA` 已寫入 search_runs。
 
-- 紀錄 KB-2025-0486～0487、KB-2026-0416～0421；關聯 KR-14626～14684；全部 `discovered_unverified`、分類 K2。
+- 紀錄 KB-2025-0486～0487、KB-2026-0417～0422；關聯 KR-14636～14694；全部 `discovered_unverified`、分類 K2。
 - A 2、B 6；學生 5、在職教師 3。DOI 與題名都不在知識庫。
 - 首發日：多數依 Crossref 上線日；arXiv 預印本依 v1 提交日；ICLS 2026 只有年份，記會議年（`event_year`）。
 - 會議代碼：CHI → C13、ICLS → C04、ICCE → C11、AIED（LNCS）→ C01；兩本期刊（Revista Iberoamericana de la Educación、JPMI）與兩篇預印本不在監測清單，不標 `published_in`。
