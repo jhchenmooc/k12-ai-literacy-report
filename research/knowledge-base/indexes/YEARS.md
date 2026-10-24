@@ -1681,6 +1681,9 @@
 | KB-2026-0426 — [Operationalizing cognitive apprenticeship through generative AI pedagogical agents: Proactive and contextualized guidance in simulation-based learning](https://doi.org/10.1016/j.compedu.2026.105706) | journal_article | 2026-06-27 | discovered_unverified |
 | KB-2026-0427 — [Modalités de formation, d’évaluation et de certification des compétences numériques（note de service du 23-1-2026, NOR : MENE2527173N, BO n° 6 du 5 février 2026）](https://www.education.gouv.fr/bo/2026/Hebdo6/MENE2527173N) | official_guidance | 2026-02-05 | bibliographic_checked |
 | KB-2026-0429 — [학교 AI 혁신 지수 개발 (Development of the School AI Innovation Index)](https://www.kosac.re.kr/menus/244/boards/457/posts/61394) | policy_review | 2026-04 | bibliographic_checked |
+| KB-2026-0430 — [Teachers' artificial intelligence self-efficacy: development and validation of a multidimensional scale grounded in social cognitive theory](https://doi.org/10.3389/feduc.2026.1948951) | journal_article | 2026-10-23 | bibliographic_checked |
+| KB-2026-0431 — [Adaptive Generative Tutoring in Resource-Limited Secondary Education: Effects on Participation, Achievement, and Digital Equity in Nigeria](https://doi.org/10.3390/educsci16111780) | journal_article | 2026-10-23 | bibliographic_checked |
+| KB-2026-0432 — [A Human–AI Orchestration Framework for Mathematics Education](https://doi.org/10.3390/educsci16111774) | journal_article | 2026-10-22 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

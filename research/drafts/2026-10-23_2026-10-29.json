@@ -147,6 +147,109 @@
       "doi": "10.1111/ejed.70904",
       "screening_note": "Held earlier on 2026-10-23 (school level not stated in the abstract); manager supplied the publisher PDF the same day, which names secondary education as the principal application. Verified for daily brief 2026-10-23 (author-abstract attributed summary).",
       "verification_completed_on": "2026-10-23"
+    },
+    {
+      "candidate_id": "W2026-10-23-A05",
+      "category": "research",
+      "source_url": "https://doi.org/10.3389/feduc.2026.1948951",
+      "source_title": "Teachers' artificial intelligence self-efficacy: development and validation of a multidimensional scale grounded in social cognitive theory",
+      "source_organization": "Frontiers in Education (Frontiers)",
+      "source_publication_date": "2026-10-23",
+      "source_locator": "出版社文章頁（Frontiers，2026-10-24 讀取 200）：Published 23 October 2026（citation_online_date 2026/10/08 為接受日，不採用）；摘要歸屬：Abstract Introduction 末句、Methods 第 1 至 3 句，2.2 Participants 首句",
+      "discovered_on": "2026-10-24",
+      "discovery_batch_id": "2026-10-24-daily-1",
+      "first_disclosed_on": "2026-10-23",
+      "source_updates": [],
+      "original_excerpt": "The aim of this study was to develop and validate the Artificial Intelligence Self-Efficacy Scale for Teachers (AISES-T). … Data were collected from teachers in different regions of Turkiye within a scale development design. … Following expert review, a pool of 50 items was reduced to a 27-item trial form. … Exploratory factor analysis (EFA) using principal axis factoring was conducted in a first sample of 313 teachers, and confirmatory factor analysis (CFA) was conducted in a second, independent sample of 559 teachers. … Participants were teachers employed in schools in different regions of Türkiye.",
+      "source_checked": true,
+      "claim_text": "來源機構：Frontiers in Education (Frontiers)；資料標題：Teachers' artificial intelligence self-efficacy: development and validation of a multidimensional scale grounded in social cognitive theory；來源刊登日：2026-10-23。作者摘要報告：研究旨在發展並驗證「教師人工智慧自我效能量表」（AISES-T）；以量表發展設計蒐集土耳其不同地區在學校任教之教師的資料，專家審查後將 50 題題庫縮減為 27 題試用版，再以 313 名教師進行探索性因素分析、另以 559 名教師的獨立樣本進行驗證性因素分析。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Frontiers in Education，監測清單 J29）；土耳其不同地區在學校任教的教師，便利取樣、線上自陳問卷；作者未分學段、未檢驗跨學段的測量恆等性。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-23 子代理讀出版社文章頁與 Crossref，本 session 擇摘要與 2.2 Participants 句撰寫中文摘要與中文譯名，不寫適配指標；第二輪 2026-10-24 由隔離子代理逐項對照英文原句，判定一致，依建議改為「土耳其不同地區」，AI 素養對應只保留 T-PD。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-PD"
+      ],
+      "ai_lit_note": "教師 AI 自我效能量表，屬教師 AI 素養測量工具（A），對應 T-PD「評估教師AI素養以規劃專業增能」",
+      "audience": "k12",
+      "doi": "10.3389/feduc.2026.1948951",
+      "screening_note": "Verified 2026-10-24 for daily brief 2026-10-24.",
+      "verification_completed_on": "2026-10-24"
+    },
+    {
+      "candidate_id": "W2026-10-23-A06",
+      "category": "research",
+      "source_url": "https://doi.org/10.3390/educsci16111780",
+      "source_title": "Adaptive Generative Tutoring in Resource-Limited Secondary Education: Effects on Participation, Achievement, and Digital Equity in Nigeria",
+      "source_organization": "Education Sciences (MDPI)",
+      "source_publication_date": "2026-10-23",
+      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：MDPI 回 403）：2026-10-23；Education Sciences 16(11)；Crossref 摘要句（非原文）",
+      "discovered_on": "2026-10-24",
+      "discovery_batch_id": "2026-10-24-daily-1",
+      "first_disclosed_on": "2026-10-23",
+      "source_updates": [],
+      "original_excerpt": "Among 1328 randomized students, 657 were offered twelve 90 min sessions combining Microsoft Copilot, curriculum-aligned English activities, and pair work, while 671 received regular instruction.",
+      "source_checked": true,
+      "claim_text": "來源機構：Education Sciences (MDPI)；資料標題：Adaptive Generative Tutoring in Resource-Limited Secondary Education: Effects on Participation, Achievement, and Digital Equity in Nigeria；來源刊登日：2026-10-23。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "同儕審查期刊論文（Education Sciences，監測清單 J47）；Crossref 摘要所述為一項隨機試驗的次級分析，對象為奈及利亞貝寧市 9 所公立中學 1,328 名學生；本則只為書目事實。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-24 子代理讀 Crossref 紀錄（published-online 2026-10-23、作者、題名、摘要）；第二輪 2026-10-24T00:35Z 本 session 重新讀 Crossref 紀錄核對題名、DOI、日期、期刊與摘要所載對象，並由隔離子代理對照中文譯名，判定一致，譯名依建議改為「課業輔導」並調整國名位置。出版社頁回 403，未繞過；首發日採 Crossref published-online，只發書目；介入研究的結果不轉述。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN"
+      ],
+      "ai_lit_note": "中學生在教師引導下使用生成式 AI 輔導學習英語，屬 AI 賦能學習（B），對應 S-LRN「應用AI工具強化領域學習」",
+      "audience": "k12",
+      "doi": "10.3390/educsci16111780",
+      "screening_note": "Verified 2026-10-24 for daily brief 2026-10-24.",
+      "verification_completed_on": "2026-10-24"
+    },
+    {
+      "candidate_id": "W2026-10-23-A07",
+      "category": "research",
+      "source_url": "https://doi.org/10.3390/educsci16111774",
+      "source_title": "A Human–AI Orchestration Framework for Mathematics Education",
+      "source_organization": "Education Sciences (MDPI)",
+      "source_publication_date": "2026-10-22",
+      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：MDPI 回 403）：2026-10-22；Education Sciences 16(11)；Crossref 摘要句（非原文）",
+      "discovered_on": "2026-10-24",
+      "discovery_batch_id": "2026-10-24-daily-1",
+      "first_disclosed_on": "2026-10-22",
+      "source_updates": [],
+      "original_excerpt": "Its practical implementation was explored through an exploratory design pilot with 32 Grade 8 students in an authentic classroom, using observations and feedback to iteratively refine its configuration.",
+      "source_checked": true,
+      "claim_text": "來源機構：Education Sciences (MDPI)；資料標題：A Human–AI Orchestration Framework for Mathematics Education；來源刊登日：2026-10-22。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "同儕審查期刊論文（Education Sciences，監測清單 J47）；Crossref 摘要所述為框架提案與探索性設計試行，對象為 32 名八年級學生；本則只為書目事實。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-24 子代理讀 Crossref 紀錄（published-online 2026-10-22、作者、題名、摘要）；第二輪 2026-10-24T00:35Z 本 session 重新讀 Crossref 紀錄核對題名、DOI、日期、期刊與摘要所載對象，並由隔離子代理對照中文譯名，判定一致，譯名依建議改為「人機教學調度架構」。出版社頁回 403，未繞過；首發日採 Crossref published-online，只發書目。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "T-TEA",
+        "S-LRN"
+      ],
+      "ai_lit_note": "整合智慧教學系統、生成式 AI 與教師支援的數學教學框架，屬 AI 賦能教與學（B），對應 T-TEA「設計AI與教學法整合的策略」、S-LRN「應用AI工具強化領域學習」",
+      "audience": "k12",
+      "doi": "10.3390/educsci16111774",
+      "screening_note": "Verified 2026-10-24 for daily brief 2026-10-24.",
+      "verification_completed_on": "2026-10-24"
     }
   ],
   "search_runs": [
@@ -195,6 +298,37 @@
       ],
       "discovered": 1,
       "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-24-daily-1",
+      "searched_on": "2026-10-24",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-10-23,until-created-date:2026-10-23,type:journal-article, six query.bibliographic sets rows=40, one proceedings-article set, watchlist-ISSN sets (23 journals, with and without keywords); created 2026-10-24 (0 at query time); pedagogical AI agent sets on Crossref and OpenAlex; publisher pages one try each (Frontiers, Springer, Nature 200; MDPI, Wiley, idunn, ACM 403); alphaXiv unavailable (connection failure)",
+          "status": "ok"
+        },
+        {
+          "group": "preprint",
+          "query": "arXiv API (https) three queries 40/40/100 plus pedagogical AI agent query, sorted by submittedDate",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search and Content API, Federal Register (10-23 issue; 10-24 no issue; public inspection), MEXT, China MOE, HK info.gov.hk 10-23/10-24, KICE, MOE Korea, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (latest 115-10-22; 10-23 issue not published) and RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 3,
+      "added": 3,
       "duplicates": 0
     }
   ],

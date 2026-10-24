@@ -1,0 +1,4 @@
+Education Sciences (MDPI) | 2026-10-22 | A Human–AI Orchestration Framework for Mathematics Education | https://doi.org/10.3390/educsci16111774 | Crossref works record read 2026-10-24T00:35Z; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online; bibliographic facts only
+Crossref: published-online 2026-10-22; record created 2026-10-23; Education Sciences 16(11); licence CC BY 4.0; authors Payevsky, Stoyanova, Mellick, Penev, Tabakova-Komsalova, Nencheva, Stoyanov, Delinov
+Crossref abstract sentence (not read from the publisher page):
+Its practical implementation was explored through an exploratory design pilot with 32 Grade 8 students in an authentic classroom, using observations and feedback to iteratively refine its configuration.
