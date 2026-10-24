@@ -1,4 +1,4 @@
-# 拆分為私人來源 repo 與公開網站 repo：搬遷方案 v0.7
+# 拆分為私人來源 repo 與公開網站 repo：搬遷方案 v0.8
 
 > 建立日期：2026-10-13；v0.7 改寫日期：2026-10-23。本方案不改任何程式、設定或 repo；所有 GitHub 設定變更（repo 可見度、轉移、金鑰、Pages、ruleset、App 安裝）由管理者親自操作。
 >
@@ -6,7 +6,8 @@
 > - v0.1–v0.4（2026-10-13）：三輪模型模擬審查（見 [repo-split-plan-reviews.md](repo-split-plan-reviews.md)）；審查與修正都是 Anthropic 模型執行，不是外部真人審查。
 > - v0.5（2026-10-13）：管理者決定全拆、改用組織 `ailiteracytw`。
 > - v0.6（2026-10-23）：公開範圍改為「只放網頁與精簡摘錄」。
-> - **v0.7（2026-10-23）**：依兩路多角度自檢（一致性與可行性；安全與 GitHub 文件核對）全面改寫，取代先前各版正文。管理者「照建議，第 4 項選 (a)」。
+> - v0.7（2026-10-23）：依兩路多角度自檢（一致性與可行性；安全與 GitHub 文件核對）全面改寫，取代先前各版正文。管理者「照建議，第 4 項選 (a)」。
+> - **v0.8（2026-10-24）**：依第二輪兩路自檢（PR-1 實作演練；攻防與外洩演練）修正 4.1、4.2、4.4–4.7、第 2、6、8、12、13 節。管理者「照建議」。
 >
 > PR-1 實作與審查提示詞見 [repo-split-prompts.md](repo-split-prompts.md)。本檔放在目前仍公開的 repo 分支上，**不寫排程或 session 編號**。
 
@@ -21,6 +22,7 @@
 | 舊網址 | 不轉址；舊網址只有兩人知道，管理者直接告知（2026-10-23） |
 | 付費方案 | 不升級 Pro／Team；私人 repo 的保護規則以合併前檢查加每週稽核替代（2026-10-23，第 10 節） |
 | 部署金鑰 | 接受「能推送到私人 repo 的人都用得到部署金鑰」並照實寫明（2026-10-13 S9 甲） |
+| 推送紀錄 | 用部署金鑰推送時，公開 repo 的推送紀錄顯示加入金鑰的管理員帳號；接受，不另開機器帳號（2026-10-24） |
 
 ## 1. 目標
 
@@ -33,15 +35,15 @@
 
 | 位置 | 內容 | 規則 |
 |---|---|---|
-| 根目錄 | 網站：現行網站清單（`public-site.js` 的 STATIC_HTML、RESOURCES、PUBLIC_DIRS）**扣掉 `publication/issues.json`**；`deploy.json`（部署日期、期別） | 網頁不讀取 issues.json（2026-10-23 核對）；新函式過濾 `inventory()` 的輸出即可，舊站清單與出版閘門不改 |
+| 根目錄 | 網站：現行網站清單（`public-site.js` 的 STATIC_HTML、RESOURCES、PUBLIC_DIRS）**扣掉 `publication/issues.json`**；`deploy.json` | 網頁不讀取 issues.json（2026-10-23 核對）；新函式過濾 `inventory()` 的輸出即可，舊站清單與出版閘門不改。`deploy.json` 內容：臺北日期、最新一期路徑（所有已登錄期別中日期最新者，例如 `daily/2026-10-23`）、其他檔案的內容雜湊、上一次部署的公開 repo SHA（首次為空）；不放私人提交 SHA |
 | `evidence/<claims 檔名>` | 每個 `issues.json` 已登錄期別一檔，檔名沿用 `claims_file` 的檔名（例如 `daily-2026-10-23.json`） | 見下方「evidence 規則」 |
-| `README.md` | 說明這是網站發布 repo、`evidence/` 的用途、如何回報錯誤 | 由私人端產生後推送，不在公開 repo 直接編輯 |
-| `.github/ISSUE_TEMPLATE/` | 讀者回饋表單 | 同上 |
-| `.github/workflows/pages.yml` | 極小的 Pages 部署流程（第 4.5 節） | 同上；第三方 action 釘完整 SHA |
+| `README.md` | 說明這是網站發布 repo、`evidence/` 的用途、如何回報錯誤 | 範本放私人 repo 的 `research/public-repo/README.md`，PR-1 先放最小版、PR-2 定稿；不在公開 repo 直接編輯 |
+| `.github/ISSUE_TEMPLATE/` | 讀者回饋表單 | 複製私人 repo 的 `.github/ISSUE_TEMPLATE/reader-feedback.yml` |
+| `.github/workflows/pages.yml` | 極小的 Pages 部署流程（第 4.5 節） | 範本放 `research/public-repo/pages.yml`（**不得放在私人 repo 的 `.github/workflows/`**，否則會在私人 repo 執行）；`.github/` 底下的檔案集合與內容雜湊固定，推送前比對 |
 
 **evidence 規則**：
 - 只取 `issues.json` 已登錄期別的主張；未登錄期別（例如月報草稿）不出現。
-- **一般項目**：每則只輸出 7 個欄位 `claim_id`、`source_title`、`title_zh`、`source_organization`、`source_url`、`first_disclosed_on`、`original_excerpt`；沒有的欄位省略（23 則沒有 `title_zh`）；值逐字照私人端。
+- **一般項目**：每則只輸出 7 個欄位 `claim_id`、`source_title`、`title_zh`、`source_organization`、`source_url`、`first_disclosed_on`、`original_excerpt`；沒有的欄位省略（2026-10-23 一般項目中 13 則中文原文沒有 `title_zh`）；值逐字照私人端。
 - **分析型項目**（有 `supporting_claim_ids` 者，例如週報導讀、臺灣對照說明；2026-10-23 共 10 則）：只輸出 `claim_id` 與 `supporting_claim_ids`。理由：它們的 `source_url` 是本刊舊站網址、`original_excerpt` 是內部交叉引用，不是原文；讀者由依據的主張找到原文。
 - 欄位是**保留清單**：私人端以後新增的欄位一律不公開，不需逐次決定。
 - 2026-10-23 核對：90 則主張的 7 個欄位都沒有作業紀錄字樣（research/、trig_、session_01、KB-、curl、403、pdftotext、sha256）。
@@ -61,36 +63,46 @@
 
 - **觸發**：PR-1 只用 `workflow_dispatch`；PR-3 再加 `push: branches: [main]`。不使用 `pull_request`、`pull_request_target`、`workflow_run`。
 - **開關**：`vars.ENABLE_PUBLIC_PUBLISH`（預設關）。
-- **只發布已驗證的提交**（私人 repo 在免費方案下 main 沒有保護）：job 開頭確認目前提交是 main 的 HEAD，且來自已合併的 PR、該 PR 合併前的 verify 為 success（用 GitHub API 查）；或在同一個 workflow 內先完整跑一次 verify。任一不符就停止。`if: github.ref == 'refs/heads/main'` 只防誤觸，不算這道檢查。
+- **只發布已驗證的提交**（私人 repo 在免費方案下 main 沒有保護）：job 層加 `actions: read`、`pull-requests: read`，開頭依序確認：
+  1. `GET /repos/{repo}/git/ref/heads/main` 的 SHA 等於 `github.sha`（是 main 的 HEAD），之後一律以這個 SHA checkout；
+  2. `GET /repos/{repo}/actions/workflows/verify-and-deploy.yml/runs?head_sha=<SHA>&event=push` 有一次 conclusion 為 success（main 上這個提交自己的 push verify；本 repo 一律 squash 合併，PR 上的 verify 跑的是另一個 SHA，不能代替）。verify 還在跑時輪詢，上限 20 分鐘，逾時就停止；
+  3. `GET /repos/{repo}/commits/<SHA>/pulls` 有一個已合併的 PR。
+  任一不符就停止。不另在本 workflow 複製 verify 步驟（會走樣）。**這道檢查只防意外**（直接推送、CI 未過就合併），防不了有寫入權、存心繞過的人（與第 0 節部署金鑰的決定一致）。`if: github.ref == 'refs/heads/main'` 只防誤觸。
 - **排隊群組**：用自己的群組（例如 `publish-public`），**不與 `verify-and-deploy.yml` 的 `verified-pages` 共用**（共用時待執行的部署可能被下一個 PR 的 verify 擠掉）。
-- **寫法**：頂層 `permissions: contents: read`；第三方 action 釘完整 SHA；checkout 不保留憑證；`github.event.*` 與 `inputs.*` 經 `env:` 進 `run:`；禁止 `set -x`。
+- **寫法**：頂層 `permissions: contents: read`，其他權限只在 job 層加；第三方 action 釘完整 SHA（用 `git ls-remote https://github.com/actions/<name> refs/tags/<確切版本>` 取得，PR 說明列出版本與 SHA 對照）；checkout 不保留憑證；`github.event.*` 與 `inputs.*` 經 `env:` 進 `run:`；禁止 `set -x`。
+- **輸出目錄**：推導結果放 `_public_repo/`（加入 `.gitignore`），不與 `_public_site/` 共用。
 - **金鑰**：secret 名稱 `PUBLIC_DEPLOY_KEY`。步驟 1b 先放在 `environment: public-site`（只允許 main）；免費方案私人 repo 不能使用 environment secret，所以步驟 9 改私人後**重新產生一把金鑰**存為 repo secret、撤銷舊的，再以小 PR 拿掉 `environment:`（第 8 節）。secret 存入後讀不回來，不能「搬移」。
 
 ### 4.2 推送前檢查（任一失敗就停止）
 
-1. **公開 repo 沒有被別人改過**：fetch 公開 repo 的 main，每一筆提交的作者都必須是部署機器人；首次部署時公開 repo 必須沒有任何提交。
-2. **內容等於推導結果**：清空工作樹後放入推導結果，檔案集合必須等於公開清單；不得有 symlink；路徑不得跳出（`..`、絕對路徑）。
-3. **精確樣式掃描**：`research/` 後接路徑、`k12-ai-literacy-report-restricted`、`trig_` 後接 20 個以上英數字、`session_01` 後接英數字、`claude.ai/code/`。`allow-mentions.txt` 以「檔案＋行內容」放行，初始為空；`trig_` 與 `session_01` 永遠不得放行。掃描失敗只列檔名與行號，不印內容。原文逐字摘錄若剛好含這些樣式，由管理者決定是否放行。
-4. **空差異**：網站沒有變動時不建提交，寫進 Actions 摘要。
+1. **公開 repo 沒有被別人改過（SHA 鏈）**：先用 `git ls-remote` 判斷公開 repo 是否為空（首次部署時必須沒有任何提交）。非首次時 fetch 公開 repo 的 main，確認：(a) 遠端 HEAD 的 `deploy.json` 所記內容雜湊等於遠端檔案（扣掉 `deploy.json`）的實際雜湊；(b) 遠端 HEAD 的父提交等於其 `deploy.json` 記的「上一次部署 SHA」。任一不符代表有人直接改了公開 repo，停止並回報。這只偵測一般的手動修改，防不了刻意重算雜湊的人。不以「作者名稱」判斷（可偽造）。
+2. **內容等於推導結果**：清空工作樹後放入推導結果，檔案集合必須等於公開清單；不得有 symlink；路徑不得跳出（`..`、絕對路徑）。`.github/` 底下只能有 `ISSUE_TEMPLATE/reader-feedback.yml` 與 `workflows/pages.yml`，且內容雜湊等於私人端範本。
+3. **精確樣式掃描**（只擋本 repo 的內部痕跡，不擋外部網址）：
+   - 本 repo 的內部路徑：`research/` 後接本 repo 實際存在的頂層目錄或檔名（由程式依 `git ls-files research/` 產生清單比對），或 `github.com/<任何帳號>/k12-ai-literacy-report` 後接 `/blob/`、`/tree/`；外部網址中的 `/research/`（例如 KEDI 的 `kedi.re.kr/.../research/...`）不擋；
+   - `k12-ai-literacy-report-restricted`、`trig_` 後接 20 個以上英數字、`session_01` 後接英數字、`claude.ai/code/`。
+   - `allow-mentions.txt` 以「檔案＋命中字串」放行（不用整行，典藏頁一行可達 300 KB 且常改）；`trig_` 與 `session_01` 永遠不得放行。PR-1 預先放行現有網站中、PR-4 才會改掉的舊連結字串（知識庫與 venue-watchlist 連結、舊刊內部文件連結、`assets/archive-filter.js` 註解中的路徑），每筆註明「PR-4 刪除」；PR-4 合併時刪除這些放行。
+   - 掃描失敗只列檔名與命中字串的位置，不印內容。原文逐字摘錄若剛好命中，由管理者決定是否放行。
+4. **空差異**：比對網站有沒有變動時排除 `deploy.json`；沒有變動就不建提交，寫進 Actions 摘要（驗收期的「實際變更」以此為準）。
 
 ### 4.3 推送
 
-- 用部署金鑰推到公開 repo 的 main，每次一個新提交；作者固定為機器人名稱與 noreply 信箱；訊息只寫「部署 YYYY-MM-DD〔期別〕」，不含私人提交 SHA、管理者姓名或 email。
-- 金鑰處理：ed25519；`umask 077` 後經 `env:` 寫入 `$RUNNER_TEMP`；known_hosts 用 GitHub 文件 SSH 指紋頁核對過的完整 ssh-ed25519 公鑰行，不用 `ssh-keyscan`；`GIT_SSH_COMMAND` 設 `IdentitiesOnly=yes`、`StrictHostKeyChecking=yes`、`UserKnownHostsFile`；步驟結尾 `if: always()` 刪除金鑰檔。
+- 用部署金鑰推到公開 repo 的 main，每次一個新提交；作者固定為機器人名稱（例如「ailiteracytw 部署」）與不屬於任何真人帳號的 noreply 信箱（不用 `github-actions[bot]` 或真人的 noreply 信箱，否則提交會歸到那個帳號）；訊息只寫「部署 YYYY-MM-DD〔期別〕」，不含私人提交 SHA、管理者姓名或 email。推送紀錄（pusher）會顯示加入金鑰的管理員帳號，已接受（第 0 節）。
+- 金鑰處理：ed25519；`umask 077` 後經 `env:` 寫入 `$RUNNER_TEMP`；known_hosts 寫入 `github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl`（GitHub 文件 SSH 指紋頁所列 ed25519 指紋 `SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU`；PR-1 實作與審查時都要再對一次文件），workflow 內以 `ssh-keygen -lf` 核對指紋相符才繼續；不用 `ssh-keyscan`；`GIT_SSH_COMMAND` 設 `IdentitiesOnly=yes`、`StrictHostKeyChecking=yes`、`UserKnownHostsFile`；步驟結尾 `if: always()` 刪除金鑰檔。
 
 ### 4.4 冒煙測試
 
-- 輪詢新網址的 `deploy.json`（每 30 秒、最多 10 分鐘），直到等於本次推送值；再抓首頁與最新一期，必須回 200；失敗讓 job 失敗。
+- **固定測新網址** `https://ailiteracytw.github.io/`，與網址常數無關（PR-1 時網址常數仍是舊站）。輪詢 `deploy.json`（每 30 秒、最多 10 分鐘），直到其內容雜湊等於本次推送值；再抓首頁與 `deploy.json` 記的最新一期，必須回 200；失敗讓 job 失敗。
 - dispatch 輸入 `skip_smoke`：只用於步驟 4 首次推送（當時 Pages 尚未設定），改寫警告。
 
 ### 4.5 公開 repo 的 Pages
 
-- GitHub 文件把「用部署金鑰推送」列為分支部署的網站**可能不會建置**的原因之一，所以 Pages 來源改為 **GitHub Actions**：公開 repo 放 `.github/workflows/pages.yml`，在 `push` 到 main 時用 `actions/upload-pages-artifact` 與 `actions/deploy-pages`（釘 SHA）發布根目錄。部署金鑰推送會觸發這個流程（`GITHUB_TOKEN` 推送才不會）。
-- 步驟 4 首次推送時實測：`pages.yml` 有執行、網站內容等於推送值。不成立時回報管理者再議。
+- GitHub 文件把「用部署金鑰推送」列為分支部署的網站**可能不會建置**的原因之一，所以 Pages 來源改為 **GitHub Actions**：公開 repo 放 `.github/workflows/pages.yml`，只在 `push` 到 main 時觸發，用 `actions/upload-pages-artifact` 與 `actions/deploy-pages`（釘 SHA）發布根目錄；權限放 job 層（`pages: write`、`id-token: write`、`contents: read`）、`environment: github-pages`、`concurrency: {group: pages, cancel-in-progress: false}`。`upload-pages-artifact` 會排除點開頭的檔案；網站唯一的點開頭檔 `.nojekyll` 在 Actions 來源下不需要。
+- 部署金鑰推送能否觸發 `pages.yml`、能否推送 `.github/workflows/` 下的檔案，文件未寫明，**步驟 4 首次推送時實測**：`pages.yml` 有執行、網站內容等於推送值。不成立時回報管理者再議。
 
 ### 4.6 公開 repo 的保護
 
-- **ruleset**：禁止 force push、禁止刪除 main；不要求 PR；bypass 留空，**不得把部署金鑰加入 bypass**。免費組織的公開 repo 可用 ruleset（GitHub 文件）。
+- **ruleset**：禁止 force push、禁止刪除 main；另一條規則禁止建立 main 以外的分支與所有 tag（部署金鑰推到其他分支也會公開）；不要求 PR；bypass 留空，**不得把部署金鑰加入 bypass**。免費組織的公開 repo 可用 ruleset（GitHub 文件）。
+- **Actions 設定**（公開 repo 的 Settings → Actions）：Workflow permissions 設為唯讀；Allowed actions 只允許 GitHub 官方 action；開啟「Require actions to be pinned to a full-length commit SHA」；外部貢獻者的 fork PR 一律要核准才執行。
 - **限制檔案路徑做不到**：推送規則只適用私人與內部 repo，所以私人端推送前檢查是唯一能擋內容的防線。
 - **Claude GitHub App 不得能寫入公開 repo**：組織的 App 安裝只選私人 repo 與 restricted repo，明確排除 `ailiteracytw.github.io`；步驟 3 確認各 session 對公開 repo 只能讀或讀不到。
 - **組織不得停用部署金鑰**：組織設定停用部署金鑰時，既有金鑰全部失效。
@@ -98,12 +110,12 @@
 
 ### 4.7 負向測試（步驟 4）
 
-dispatch 輸入 `negative_test`：用金鑰 force push 一個**檔案樹與目前相同**的新提交，預期被拒；被拒才算成功。萬一被接受，立即推回原本的 SHA、讓 job 失敗並回報管理者。
+dispatch 輸入 `negative_test`：以 `git commit-tree <遠端 HEAD 的 tree>` 建立**沒有父提交**的提交（內容相同、一定是非快轉），用金鑰 force push 到 main，預期被拒；被拒才算成功。這次執行不做一般部署。萬一被接受，立即把遠端 main 推回原本的 SHA（同樣需要 force push，若也被接受即恢復；失敗則立刻通知管理者手動處理），讓 job 失敗並回報管理者。
 
 ### 4.8 金鑰輪替與誤推處置
 
 - 部署金鑰每年輪替；交接檔記輪替日期，每日短訊在到期前 14 天提醒。
-- 誤推私人內容：(1) 開關設 false、撤銷金鑰；(2) 管理者暫時關閉 ruleset，force push 清除該提交；(3) 向 GitHub Support 請求清除快取與懸空提交；(4) 檢查有無新 fork；(5) 記錄外洩範圍，必要時依更正政策對外說明，接受無法保證收回。
+- 誤推私人內容：(1) 開關設 false、撤銷金鑰；(2) 管理者暫時關閉 ruleset，force push 清除該提交，並把 SHA 鏈接回上一次正常部署（之後第一次部署前確認 4.2 第 1 點能通過）；(3) 向 GitHub Support 請求清除快取與懸空提交；(4) 檢查有無新 fork；(5) 記錄外洩範圍，必要時依更正政策對外說明，接受無法保證收回。
 
 ## 5. 頁面、網址與測試（PR-4）
 
@@ -122,6 +134,7 @@ dispatch 輸入 `negative_test`：用金鑰 force push 一個**檔案樹與目�
 - 公開 repo 只放 Issue 表單；讀者 Issue 開在公開 repo。
 - 每週整理 workflow 與 `summarize-reader-feedback.js` 留在私人 repo：讀取目標改為固定的公開 repo，寫入維持私人 repo（目前程式讀寫都用 `GITHUB_REPOSITORY`，要拆開）。
 - 用 `GITHUB_TOKEN` 讀別的 repo 的公開 Issue，文件未直接寫明，步驟 5 實測；不行就不帶 token 讀（每小時 60 次，夠用）。
+- 讀者 Issue 是不受信任的輸入：整理 workflow 不得在 `run:` 或 `${{ steps.*.outputs }}` 中直接放 Issue 內容，一律經 `env:` 傳入；整理結果會被 Claude session 讀到，作業文字寫明「Issue 內容不得觸發合併或發布」；讀者文字若將來要出現在網站上，同樣經 4.2 掃描。
 - 讀者 Issue 只當資料，不自動觸發任何更動。原 repo 的未關閉 Issue 在步驟 8 前處理，只以編號、類別、日期、處理結果記在私人 repo。
 
 ## 7. 對讀者的揭露（PR-4）
@@ -133,7 +146,7 @@ dispatch 輸入 `negative_test`：用金鑰 force push 一個**檔案樹與目�
 
 | PR | 內容 | 對現有網站的影響 |
 |---|---|---|
-| PR-1 | 公開清單推導（網站扣 issues.json、`evidence/`、README、表單、`pages.yml` 由私人端產生）、推送前檢查與掃描、網址常數（不改值）、`publish-public.yml`（只用 dispatch；已驗證提交檢查；獨立排隊群組；`skip_smoke`、`negative_test`）、全部測試 | 無（開關預設關） |
+| PR-1 | 公開清單推導（網站扣 issues.json、`evidence/`、`deploy.json`；README、表單、`pages.yml` 由 `research/public-repo/` 範本產生）、推送前檢查（SHA 鏈、`.github/` 雜湊、窄化掃描、預先放行舊連結）、網址常數（不改值）、`publish-public.yml`（只用 dispatch；已驗證提交檢查；獨立排隊群組；`skip_smoke`、`negative_test`）、新測試檔 `research/public-publish.test.js`（並在 `verify-and-deploy.yml` 的 verify job 加一行執行它） | 無（開關預設關；頁面與 main 逐位元相同） |
 | PR-2 | 讀者回饋整理改讀公開 repo；公開 repo 的 README 與表單內容定稿 | 無 |
 | PR-3 | `publish-public` 加 `push` 觸發，開始驗收期；不加公告 | 無 |
 | PR-4（切換 PR） | 網址常數改值並重新產生頁面、更正紀錄、`SITE_PREFIX`、舊刊連結與更正框、`feedback/` 與表單、測試、about 頁與更正政策 | 已刊頁引用網址與頁尾連結變更 |
@@ -142,7 +155,7 @@ dispatch 輸入 `negative_test`：用金鑰 force push 一個**檔案樹與目�
 | 步驟 | 內容 | 誰做 |
 |---|---|---|
 | 1a | **已完成（2026-10-13）**：組織、App 安裝、空的 `ailiteracytw.github.io`（私人） | 管理者 |
-| 1b | PR-1 接近完成時：`ailiteracytw.github.io` 改公開並確認仍無提交；設 ruleset（4.6）；確認組織允許部署金鑰；在自己電腦產生 ed25519 金鑰，公鑰加到公開 repo 的 Deploy keys 並勾允許寫入，私鑰存入原 repo 的 `environment: public-site`（只允許 main），之後刪除本機私鑰；組織的 App 安裝只選私人 repo 與 restricted repo、排除公開 repo；把 `k12-ai-literacy-report-restricted` 轉到組織並加入 App 安裝 | 管理者 |
+| 1b | PR-1 接近完成時：`ailiteracytw.github.io` 改公開並確認仍無提交；設 ruleset 與 Actions 設定（4.6）；確認組織允許部署金鑰；在自己電腦產生 ed25519 金鑰，公鑰加到公開 repo 的 Deploy keys 並勾允許寫入，私鑰存入原 repo 的 `environment: public-site`（只允許 main），之後刪除本機私鑰；組織的 App 安裝只選私人 repo 與 restricted repo、排除公開 repo；把 `k12-ai-literacy-report-restricted` 轉到組織並加入 App 安裝 | 管理者 |
 | 2 | 讀最近 10 次 run 的實際分鐘數，估每月用量，須低於 2,000 分鐘的 80% | 編輯 session |
 | 3 | 各 session 在組織的 restricted repo 開 PR、合併（驗證 App）；確認各 session 對公開 repo 不能寫入；用 `list_triggers` 列出排程、再逐一 `get_trigger`，更新 restricted repo 名稱 | 編輯 session、管理者 |
 | 4 | 合併 PR-1；設 `ENABLE_PUBLIC_PUBLISH=true`；以 `skip_smoke` 手動首次推送；管理者在公開 repo 設 Pages 來源為 GitHub Actions；確認 `pages.yml` 執行、網站正確；跑 `negative_test`；以第 9 節清單驗收 | 編輯 session、管理者 |
@@ -150,7 +163,7 @@ dispatch 輸入 `negative_test`：用金鑰 force push 一個**檔案樹與目�
 | 6 | 合併 PR-3，開始驗收期；每日短訊在 daily-check 加「publish-public 驗收」一節 | 編輯 session、管理者 |
 | 7 | 驗收期：連續 7 個日曆日 `publish-public` 沒有失敗，其中至少 3 天有實際網站變更；漏記一天就算失敗，不得為湊天數製造變更 | 自動 |
 | 8 | 切換日：暫停當日每日短訊一次；合併或關閉所有開啟中的 PR；處理原 repo 未關閉的 Issue；合併 PR-4；`vars.ENABLE_VERIFIED_PAGES_DEPLOY` 設 false（舊站部署 job 保留至少一個月） | 編輯 session、管理者 |
-| 9 | 列出現有 fork 記入交接檔；**原 repo 先改私人（舊站隨之下架），再轉到組織**；組織的 App 安裝加入此 repo（安裝不會隨轉移）；確認 Actions 變數、secret 仍在；**重新產生部署金鑰**存為 repo secret、撤銷舊金鑰；合併 PR-5；更新各 session 的 git remote、雲端環境選用的 repo 與排程；排在 08:22 每日短訊之外 | 管理者（約 45 分鐘）、編輯 session |
+| 9 | 依序：(1) 列出現有 fork 記入交接檔；(2) `ENABLE_PUBLIC_PUBLISH` 設 false（改私人那一刻 environment secret 就讀不到）；(3) **原 repo 先改私人（舊站隨之下架），再轉到組織**；(4) 組織的 App 安裝加入此 repo（安裝不會隨轉移），確認 Actions 變數仍在；(5) **重新產生部署金鑰**存為 repo secret、撤銷舊金鑰；(6) 合併 PR-5（開關關著，這次觸發不會推送）；(7) 開關設回 true，手動 dispatch 一次並確認冒煙測試通過；(8) 刪除 `public-site` environment；(9) 更新各 session 的 git remote、雲端環境選用的 repo 與排程。排在 08:22 每日短訊之外 | 管理者（約 45 分鐘）、編輯 session |
 | 10 | 驗收；更新交接檔、SOP、README；隔日短訊照常，前一日項目若仍在 7 天內就補發 | 編輯 session、管理者 |
 
 **時程**：
@@ -183,14 +196,16 @@ dispatch 輸入 `negative_test`：用金鑰 force push 一個**檔案樹與目�
 ## 12. 回退
 
 - **步驟 9 之前**：隨時可回舊站：`ENABLE_PUBLIC_PUBLISH` 設 false、`ENABLE_VERIFIED_PAGES_DEPLOY` 設回 true、revert PR-3／PR-4。步驟 9 是回到舊站的最後期限。
-- **步驟 9 之後新站失效**：(1) 開關設 false；(2) 在公開 repo revert 上一次部署提交；(3) 私人端修正後重新開啟並手動推送；(4) 只有 Actions 本身無法使用時，才考慮把私人 repo 改回公開，須管理者書面同意，且先評估私人期間的歷史會公開哪些內容。
+- **步驟 9 之後新站失效**：(1) 開關設 false；(2) **在私人端 revert 造成問題的 PR**（不直接改公開 repo，否則 4.2 第 1 點的 SHA 鏈會擋下之後的部署）；(3) 開關設回 true 並手動推送；(4) 只有 Actions 本身無法使用時，才考慮把私人 repo 改回公開，須管理者書面同意，且先評估私人期間的歷史會公開哪些內容。
 
 ## 13. 風險
 
 | 風險 | 處理 |
 |---|---|
 | 私人內容被推到公開 repo | 保留清單＋推送前掃描（4.2）；誤推處置（4.8） |
-| 直接推到私人 main 的提交被發布 | 只發布已驗證的提交（4.1）；每週稽核（10） |
+| 直接推到私人 main 的提交被發布 | 只發布已驗證的提交（4.1，只防意外）；每週稽核（10） |
+| 公開 repo 的 workflow 被改成可由讀者觸發 | `.github/` 雜湊固定（4.2）；Actions 設定唯讀、只允許官方 action、強制釘 SHA（4.6） |
+| 有人直接改公開 repo | SHA 鏈（4.2）；回退一律在私人端做（12） |
 | 自動 session 直接改公開 repo | App 安裝排除公開 repo（4.6） |
 | 部署金鑰推送不觸發 Pages | Pages 改用 Actions 來源，步驟 4 實測（4.5） |
 | 部署被排隊擠掉 | 獨立排隊群組（4.1） |
