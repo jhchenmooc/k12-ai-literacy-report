@@ -49,6 +49,7 @@ id,type,tier,name,scope,url
 "J48","journal","背景","Scientific Reports","綜合型大型期刊，偶有 K–12 AI 素養研究；收錄於 DOAJ、單盲同儕審查；量大須逐篇確認學段（2026-10-11 管理者決定加入）","https://www.nature.com/srep/"
 "J49","journal","背景","European Journal of Education","教育政策與教師；AI × K–12 命中與 J40 相近，須逐篇確認學段（2026-10-11 管理者決定由觀察池升級）","https://onlinelibrary.wiley.com/journal/14653435"
 "J50","journal","背景","Eurasia Journal of Mathematics, Science and Technology Education","數理科技教育；2025 年起 AI × 學校相關約 25 篇；Modestum 出版，期刊頁載明雙盲審查、自述收錄 Scopus（未獨立核實）；不在 DOAJ；須逐篇確認學段（2026-10-12 管理者決定加入）","https://www.ejmste.com/"
+"J51","journal","擴充","Smart Learning Environments","智慧學習環境、K–12 AI 教學與教師；Springer Nature 開放取用、收錄於 DOAJ；須逐篇確認學段（2026-10-25 管理者決定加入）","https://link.springer.com/journal/40561"
 "C01","conference","核心","AIED — International Conference on Artificial Intelligence in Education","AI輔助學習、人機協同、教師、倫理","https://www.aied-conference.org/2026"
 "C02","conference","核心","EDM — International Conference on Educational Data Mining","學習證據、模型、公平、評估","https://educationaldatamining.org/conferences/"
 "C03","conference","核心","LAK — International Conference on Learning Analytics & Knowledge","學習歷程、分析、AI與評量","https://www.solaresearch.org/publications/conference-proceedings/"
