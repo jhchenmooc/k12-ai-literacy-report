@@ -2,7 +2,7 @@
 
 > 建立日期：2026-10-08。目標：服務臺灣 K-12 AI 素養政策、教師與學生能力框架、課程和評量研究。這是**監測來源池**，不是期刊等級排名，也不表示來源中的每一篇文章都適用 K-12。清單包含部分以高等教育為主的來源，必須逐篇依學段篩選。
 >
-> 版本說明（2026-10-12）：標題原寫 v1.4，與內文 v1.6、v1.7 節不一致，改為目前的 v1.7。內文「v1.4 期刊擴充」一節指 2026-10-09 的期刊擴充（#124），名稱保留；之後新增 J48–J50 見各列註記。`venue-watchlist.csv` 已補到 J50、C22。
+> 版本說明（2026-10-12）：標題原寫 v1.4，與內文 v1.6、v1.7 節不一致，改為目前的 v1.7。內文「v1.4 期刊擴充」一節指 2026-10-09 的期刊擴充（#124），名稱保留；之後新增 J48–J50 見各列註記。`venue-watchlist.csv` 已補到 J51、C22（J51 於 2026-10-25 新增）。
 
 ## 1. 搜尋優先級
 
@@ -14,7 +14,7 @@
 
 保留既有34種期刊、19個會議的原監測設定；新增5種期刊、2個正式會議。先查教育主管機關／國際機構，再查核心期刊／正式論文集，最後跨庫補漏。**先篩首次公開日期、K–12學段、重複事件及內容價值，再查原文**；低價值候選只記排除原因。活動日不能冒稱本週新發布日。
 
-## 2. 期刊池（50 種）
+## 2. 期刊池（51 種）
 
 | ID | 級別 | 期刊 | 適用主題 | 查核入口 |
 |---|---|---|---|---|
@@ -69,6 +69,7 @@
 | J48 | 背景 | Scientific Reports | 綜合型大型期刊，偶有 K–12 AI 素養研究；收錄於 DOAJ、單盲同儕審查；量大須逐篇確認學段（2026-10-11 管理者決定加入） | [期刊頁](https://www.nature.com/srep/) |
 | J49 | 背景 | European Journal of Education | 教育政策與教師；AI × K–12 命中與 J40 相近，須逐篇確認學段（2026-10-11 管理者決定由觀察池升級） | [期刊頁](https://onlinelibrary.wiley.com/journal/14653435) |
 | J50 | 背景 | Eurasia Journal of Mathematics, Science and Technology Education | 數理科技教育；2025 年起 AI × 學校相關約 25 篇；Modestum 出版，期刊頁載明雙盲審查、自述收錄 Scopus（未獨立核實）；不在 DOAJ；須逐篇確認學段（2026-10-12 管理者決定加入） | [期刊頁](https://www.ejmste.com/) |
+| J51 | 擴充 | Smart Learning Environments | 智慧學習環境、K–12 AI 教學與教師；Springer Nature 開放取用、收錄於 DOAJ；2025 年起 AI × 中小學相關 10 篇，須逐篇確認學段（2026-10-25 管理者決定加入，見下方「2026-10-25 期刊反查」） | [期刊頁](https://link.springer.com/journal/40561) |
 
 ## 3. 國際會議池（21 個正式系列）
 
@@ -187,7 +188,7 @@ ai_lit_class,ai_lit_dims,ai_lit_note
 - **AI 素養範圍**：學段之外另判 A／B／C（[AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)）；期刊或會議名稱含 AI 不等於屬 A 或 B，AI 只作研究方法或系統後端者為 C。
 - **證據強度**：閱讀優先級 P1/P2/P3 與方法品質分開；自陳、橫斷 SEM、量表驗證及 RCT 不可用同一因果語言。
 - **會議索引**：以每篇論文 DOI／論文集正式上線日為時間判準，非僅會議活動日期；Full、Short、Poster、Workshop 各自標記。
-- **監測範圍**：收錄 50 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
+- **監測範圍**：收錄 51 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
 - **品質確認**：監測候選池要記錄 `verification_status`（verified / partial / pending）、`population_level`、`evidence_design`、`publication_status`，不可僅以期刊名稱推斷研究品質。
 
 ## 10. 維護提醒
@@ -245,6 +246,21 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
 - **叢書拆分**：LNCS「Mindful TEL: Learning Technologies Shaped with Intention」為 EC-TEL 2026 論文集，屬既有 C10，查核入口加上 ISBN 9783032379788、9783032379818。
 - **技術限制**：`research/validate-knowledge-base.js` 目前只接受 J01–J39、C01–C22 作為 `published_in` 代碼；J40 以後要等驗證程式放寬後，才能把已入庫論文（KB-2026-0128 Informatics in Education、KB-2026-0133 EJTE、KB-2026-0134 TPE）連到新代碼。本次只改清單，不改驗證程式。
 
+
+### 2026-10-25 期刊反查（管理者決定）
+
+每日短訊 10/25 的三篇觀察項分屬三本未列入清單的期刊。比照 v1.4 期刊擴充的 OpenAlex 查法，統計 2025-01-01～2026-10-25 各刊篇數；「人工確認」是看過標題與摘要後與中小學 AI 直接相關的篇數。數字只供排序；查詢紀錄見 [p0-venue-1025](p0-venue-1025/counts.json)。
+
+| 決定 | 期刊 | 出版者 | 總篇數 | AI 相關 | AI × K-12 | 缺摘要 | 人工確認 |
+|---|---|---|---|---|---|---|---|
+| J51 擴充 | Smart Learning Environments | Springer Nature | 118 | 10 | 3 | 4 | 10 |
+| 觀察池 | Médiations et médiatisations | Université TÉLUQ | 71 | 2 | 1 | 3 | 2 |
+| 不列入 | Language Circle: Journal of Language and Literature | Universitas Negeri Semarang | 67 | 0 | 0 | 4 | 0 |
+
+- **J51 Smart Learning Environments**：中小學 AI 比例與 J41 相近，且 2025 年起的相關論文先前都未入庫。比照 J40–J42，已於 2026-10-25 一次補搜 2025-01-01 至今（118 篇，收 10 篇：A 6、B 4；另 00464-y 由每日短訊觀察項收錄），之後依擴充級頻率檢索。是否收錄 SSCI／Scopus 未獨立核實。
+- **觀察池：Médiations et médiatisations**（法語，DOI 前綴 `10.52358`）：以高教與開放教育資源為主，中小學 AI 僅 2 篇；不給正式 ID，命中時逐篇判斷。
+- **不列入：Language Circle**：語言文學期刊，AI 研究少且多屬 B 類（AI 作寫作工具）。出處本身無可疑之處，不列入「不收出處」；命中時逐篇判斷。
+- **技術限制**：`research/validate-knowledge-base.js` 目前只接受到 J50；SLE 論文要連到 J51 代碼，須等驗證程式放寬。本次只改清單，不改驗證程式。
 
 ### 不收出處：每日與週檢索直接排除（2026-10-10 管理者決定）
 

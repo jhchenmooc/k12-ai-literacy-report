@@ -1,0 +1,177 @@
+{
+ "requests": [
+  {
+   "venue": "SLE",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2494786546%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:10Z",
+   "http": 200,
+   "count": 118
+  },
+  {
+   "venue": "SLE",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2494786546%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:11Z",
+   "http": 200,
+   "count": 4
+  },
+  {
+   "venue": "SLE",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2494786546%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:12Z",
+   "http": 200,
+   "count": 10
+  },
+  {
+   "venue": "SLE",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2494786546%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:13Z",
+   "http": 200,
+   "count": 3
+  },
+  {
+   "venue": "SLE",
+   "query": "ai_any_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2494786546%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+%22AI%22+OR+ChatGPT%29+AND+%28%22K-12%22+OR+school+OR+schools+OR+%22secondary%22+OR+%22primary%22+OR+students%29&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:14Z",
+   "http": 200,
+   "count": 33
+  },
+  {
+   "venue": "SLE",
+   "query": "fr_ai_school",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2494786546%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Ctitle_and_abstract.search%3A%28%22intelligence+artificielle%22+OR+%22IA+g%C3%A9n%C3%A9rative%22+OR+%22IAG%22%29+AND+%28%C3%A9cole+OR+lyc%C3%A9e+OR+coll%C3%A8ge+OR+%C3%A9l%C3%A8ves+OR+lyc%C3%A9ens+OR+enseignants%29&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:15Z",
+   "http": 200,
+   "count": 0
+  },
+  {
+   "venue": "LC",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210208052%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:16Z",
+   "http": 200,
+   "count": 67
+  },
+  {
+   "venue": "LC",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210208052%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:16Z",
+   "http": 200,
+   "count": 4
+  },
+  {
+   "venue": "LC",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210208052%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:17Z",
+   "http": 200,
+   "count": 0
+  },
+  {
+   "venue": "LC",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210208052%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:18Z",
+   "http": 200,
+   "count": 0
+  },
+  {
+   "venue": "LC",
+   "query": "ai_any_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210208052%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+%22AI%22+OR+ChatGPT%29+AND+%28%22K-12%22+OR+school+OR+schools+OR+%22secondary%22+OR+%22primary%22+OR+students%29&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:19Z",
+   "http": 200,
+   "count": 1
+  },
+  {
+   "venue": "LC",
+   "query": "fr_ai_school",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210208052%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Ctitle_and_abstract.search%3A%28%22intelligence+artificielle%22+OR+%22IA+g%C3%A9n%C3%A9rative%22+OR+%22IAG%22%29+AND+%28%C3%A9cole+OR+lyc%C3%A9e+OR+coll%C3%A8ge+OR+%C3%A9l%C3%A8ves+OR+lyc%C3%A9ens+OR+enseignants%29&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:20Z",
+   "http": 200,
+   "count": 0
+  },
+  {
+   "venue": "MM",
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210181546%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:20Z",
+   "http": 200,
+   "count": 71
+  },
+  {
+   "venue": "MM",
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210181546%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:21Z",
+   "http": 200,
+   "count": 3
+  },
+  {
+   "venue": "MM",
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210181546%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:22Z",
+   "http": 200,
+   "count": 2
+  },
+  {
+   "venue": "MM",
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210181546%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:23Z",
+   "http": 200,
+   "count": 1
+  },
+  {
+   "venue": "MM",
+   "query": "ai_any_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210181546%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+%22AI%22+OR+ChatGPT%29+AND+%28%22K-12%22+OR+school+OR+schools+OR+%22secondary%22+OR+%22primary%22+OR+students%29&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:23Z",
+   "http": 200,
+   "count": 2
+  },
+  {
+   "venue": "MM",
+   "query": "fr_ai_school",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210181546%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-25%2Ctitle_and_abstract.search%3A%28%22intelligence+artificielle%22+OR+%22IA+g%C3%A9n%C3%A9rative%22+OR+%22IAG%22%29+AND+%28%C3%A9cole+OR+lyc%C3%A9e+OR+coll%C3%A8ge+OR+%C3%A9l%C3%A8ves+OR+lyc%C3%A9ens+OR+enseignants%29&per_page=1&select=id",
+   "utc": "2026-10-25T00:45:25Z",
+   "http": 200,
+   "count": 3
+  }
+ ],
+ "results": {
+  "SLE": {
+   "openalex": "S2494786546",
+   "total": 118,
+   "no_abstract": 4,
+   "ai": 10,
+   "ai_k12": 3,
+   "ai_any_k12": 33,
+   "fr_ai_school": 0
+  },
+  "LC": {
+   "openalex": "S4210208052",
+   "total": 67,
+   "no_abstract": 4,
+   "ai": 0,
+   "ai_k12": 0,
+   "ai_any_k12": 1,
+   "fr_ai_school": 0
+  },
+  "MM": {
+   "openalex": "S4210181546",
+   "total": 71,
+   "no_abstract": 3,
+   "ai": 2,
+   "ai_k12": 1,
+   "ai_any_k12": 2,
+   "fr_ai_school": 3
+  }
+ }
+}
