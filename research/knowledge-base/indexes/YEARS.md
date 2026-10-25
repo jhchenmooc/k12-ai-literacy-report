@@ -1690,7 +1690,7 @@
 | KB-2026-0432 — [A Human–AI Orchestration Framework for Mathematics Education](https://doi.org/10.3390/educsci16111774) | journal_article | 2026-10-22 | bibliographic_checked |
 | KB-2026-0433 — [Student epistemic agency in AI-mediated practices](https://doi.org/10.1186/s40561-026-00464-y) | journal_article | 2026-10-24 | discovered_unverified |
 | KB-2026-0434 — [Comparing AI-Assisted Feedback and Collaborative Digital Writing for Improving Argumentative Writing among Indonesian EFL Students](https://doi.org/10.15294/lc.v21i2.58110) | journal_article | 2026-10-21 | discovered_unverified |
-| KB-2026-0435 — [Au-delà de l'adoption : les non-usages des IA génératives par les lycéens en France au prisme de l'éthique](https://doi.org/10.52358/mm.vi24.529) | journal_article | 2026-10-24 | discovered_unverified |
+| KB-2026-0435 — [Au-delà de l’adoption : les non-usages des IA génératives par les lycéens en France au prisme de l’éthique](https://doi.org/10.52358/mm.vi24.529) | journal_article | 2026-10-24 | bibliographic_checked |
 | KB-2026-0436 — [Artificial intelligence in K-12 instruction: the role of teacher professional development](https://doi.org/10.1186/s40561-026-00442-4) | journal_article | 2026-02-13 | discovered_unverified |
 | KB-2026-0437 — [Teachers’ artificial intelligence (AI) literacy: an exploratory study](https://doi.org/10.1186/s40561-026-00433-5) | journal_article | 2026-01-21 | discovered_unverified |
 | KB-2026-0438 — [Towards promoting innovation in inclusive education: behavioural intention of teachers towards adopting AI to teach students with learning disabilities](https://doi.org/10.1186/s40561-026-00430-8) | journal_article | 2026-01-13 | discovered_unverified |
@@ -1698,6 +1698,7 @@
 | KB-2026-0440 — [AIED unplugged, teacher workload, and numeracy learning: a clustered quasi-experimental mixed-methods study](https://doi.org/10.1186/s40561-026-00465-x) | journal_article | 2026-09-24 | discovered_unverified |
 | KB-2026-0441 — [Exploring learner–parent–AI interaction patterns in an AI-supported EFL learning game during informal learning: insights from sequence analysis and epistemic network analysis](https://doi.org/10.1186/s40561-026-00472-y) | journal_article | 2026-10-01 | discovered_unverified |
 | KB-2026-0442 — [From AI Intuition to AI Literacy: A Dual Framework for K-12 Education](https://doi.org/10.52358/mm.vi25.576) | journal_article | 2026-08-28 | discovered_unverified |
+| KB-2026-0443 — [Revisiting Pedagogical Content Knowledge (PCK) development for the age of Generative AI](https://doi.org/10.1016/j.caeo.2026.100428) | journal_article | 2026-10-24 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
