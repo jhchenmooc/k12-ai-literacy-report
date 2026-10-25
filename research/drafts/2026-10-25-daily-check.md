@@ -1,11 +1,11 @@
-# 每日短訊查核紀錄：2026-10-25（0 則）
+# 每日短訊查核紀錄：2026-10-25（2 則，當日補登）
 
 > 每日短訊例行作業，由排程觸發，在每日短訊專用 session 執行。
 >
 > - **檢索方式：** 同 session 的三個子代理分頭檢索（國際研究、國際政策、臺灣中央來源），判讀由本 session 複核。
 > - **查詢時間：** 2026-10-25T00:23Z–00:31Z（UTC）。
 > - **請求紀錄：** 都沒帶 email 或 mailto。ScienceDirect 回 403，未繞過；另一出版社頁連線重設，未讀到。
-> - **結果：0 則**（國際、臺灣皆無合格項目）。依 SOP 第 5 步，不建頁、不登記，只提交本查核紀錄。
+> - **結果：** 晨間查核時 0 則，依 SOP 第 5 步只提交本查核紀錄。同日補登 2 則國際研究，建 10-25 期頁面，見文末補記；臺灣 0 則。
 > - **週日：** Crossref created 10-25 在查詢時為 0 筆，10-24（週六）的登記量也偏低。
 
 ## 國際
@@ -110,7 +110,7 @@
 
 ## 候選池與知識庫
 
-無新增候選；觀察 3 筆不在監測清單，依規則不直接匯入。
+晨間無新增候選。觀察 3 筆不在監測清單，依規則未直接匯入。同日補登 2 則，見文末補記。
 
 ## 需要管理者處理
 
@@ -119,8 +119,25 @@
 
 ## 請管理者用瀏覽器處理（2026-10-25）
 
-1. https://doi.org/10.1016/j.caeo.2026.100428 （J41 Computers and Education Open〈Revisiting Pedagogical Content Knowledge (PCK) development for the age of Generative AI〉；ScienceDirect 403，Crossref 只有出版年月、無摘要）
-   - 要什麼：文章頁「Available online」日期截圖與摘要，或全文 PDF。
-   - 拿到後：若首次上線在 10-18 之後、對象為在職中小學教師，可補發（至上線日後 7 天內）。
+今日無（J41 `caeo.2026.100428` 已於同日處理，見補記）。
 
-前幾日清單已處理完畢，無延續項目。
+## 補記（2026-10-25，晨間查核後）
+
+- **D20261025-01：** J41 Computers and Education Open `10.1016/j.caeo.2026.100428`〈Revisiting Pedagogical Content Knowledge (PCK) development for the age of Generative AI〉（Webb 等 11 人）。
+  - 首發日：管理者當日讀出版者文章頁，記為「Available online 24 October 2026」，並決定「以 10-24 發」。Crossref 只有 2026-10，沒有 published-online，Crossref 例外不適用；ScienceDirect 對程式回 403，未繞過。
+  - 全文：出版者 Journal Pre-proof PDF，未印上線日；摘要明寫 K-12。
+  - 判定：概念性分析，A（T-TEA、T-PD），對象 k12（在職中小學教師；作者另談師資培育）。
+  - 摘要依據：摘要第 1 至 3 句與第 5 句。
+- **D20261025-02：** `10.52358/mm.vi24.529` Médiations et médiatisations〈Au-delà de l’adoption : les non-usages des IA génératives par les lycéens en France au prisme de l’éthique〉（Zeyringer）。
+  - 出處：不在監測清單，管理者當日決定以單篇例外發布，期刊不加入清單。DOAJ 期刊紀錄（ISSN 2562-0630）登記為「Double anonymous peer review」，出版者 Université TÉLUQ；期刊網站本次連線失敗。
+  - 首發日：依 Crossref published-online 2026-10-24。出版社頁兩次連線重設，未繞過；PDF 未印上線日。
+  - 全文：出版者 PDF。
+  - 判定：A（S-ETH），對象 k12（法國高中生中不使用生成式 AI 者 153 人）。
+  - 摘要依據：摘要三句與引言方法句；倫理變項與使用意圖的量化結果、分群結果不寫入。
+- **第二輪對照：** 由隔離子代理進行。
+  - -01 判定一致，依建議補「假設但合理」、改「帶來風險」。
+  - -02 初判不一致：原稿把摘要的調查月份與引言的地區合成一句。已刪去合併寫法，並補上討論倫理與教育意涵一句，修正後一致。
+- **候選池與知識庫：** 候選池 W2026-10-23-A08、A09（batch 2026-10-25-daily-2）。
+  - -01 新增知識庫 KB-2026-0443（KR-15212～15221）。
+  - -02 沿用 #381 已入庫的 KB-2026-0435（編輯 session 依文獻 session 入庫清單收錄），改為 bibliographic_checked，並對應候選 A09，不重複建紀錄。
+- **全文存檔：** 兩份 PDF 都在受限 repo（daily-pdfs 與 from-literature-session/uploads）。

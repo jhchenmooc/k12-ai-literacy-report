@@ -250,6 +250,75 @@
       "doi": "10.3390/educsci16111774",
       "screening_note": "Published 2026-10-24 as bibliographic; upgraded the same day to author-abstract attributed summary from the publisher PDF.",
       "verification_completed_on": "2026-10-24"
+    },
+    {
+      "candidate_id": "W2026-10-23-A08",
+      "category": "research",
+      "source_url": "https://doi.org/10.1016/j.caeo.2026.100428",
+      "source_title": "Revisiting Pedagogical Content Knowledge (PCK) development for the age of Generative AI",
+      "source_organization": "Computers and Education Open (Elsevier)",
+      "source_publication_date": "2026-10-24",
+      "source_locator": "出版者文章頁（以瀏覽器讀取；程式請求 ScienceDirect 回 403，未繞過）：Available online 24 October 2026；出版者 Journal Pre-proof PDF 未印上線日，Received 29 December 2025、Accepted 20 October 2026；Crossref 只登記 2026-10；摘要歸屬：Abstract 第 1 至 3 句、第 5 句",
+      "discovered_on": "2026-10-25",
+      "discovery_batch_id": "2026-10-25-daily-2",
+      "first_disclosed_on": "2026-10-24",
+      "source_updates": [],
+      "original_excerpt": "This paper examines how Generative Artificial Intelligence (GenAI) in K-12 education interacts with teachers' Pedagogical Content Knowledge (PCK). … Using the Refined Consensus Model (RCM) as an analytical framework, we analysed how GenAI influences the three PCK domains: personal PCK (pPCK), collective PCK (cPCK), and enacted PCK (ePCK). … Guided by the research question \"How can teachers and GenAI collaborate to develop and use PCK and pedagogical reasoning in K-12?\", we analysed three researcher-constructed vignettes – hypothetical but plausible scenarios representing GenAI use in planning, classroom interaction, and assessment – to derive analytical propositions about the PCK-GenAI relationship. … We propose that GenAI can amplify teachers' PCK when critically evaluated, but poses risks for novice teachers whose pPCK is still developing.",
+      "source_checked": true,
+      "claim_text": "來源機構：Computers and Education Open (Elsevier)；資料標題：Revisiting Pedagogical Content Knowledge (PCK) development for the age of Generative AI；來源刊登日：2026-10-24。作者摘要報告：論文探討 K-12 教育中生成式 AI 與教師學科教學知識（PCK）的互動；以精緻化共識模型為架構，分析生成式 AI 對個人、集體與實作 PCK 的影響；以三個研究者自建、涵蓋備課、課堂互動與評量的假設但合理情境，推導 PCK 與生成式 AI 關係的分析命題；作者提出生成式 AI 經批判評估可放大教師 PCK，但對個人 PCK 尚在發展的新手教師帶來風險。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Computers and Education Open，監測清單 J41），Journal Pre-proof 版本；概念性分析，以三個研究者自建的假設情境推導命題，沒有實證樣本；作者另討論對師資培育的意涵。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-25 讀出版者 Journal Pre-proof PDF，擇摘要第 1 至 3 句與第 5 句撰寫中文摘要與中文譯名；第二輪 2026-10-25 由隔離子代理逐項對照英文原句，判定一致，依建議補「假設但合理」、改「帶來風險」，修正後再對照一致。Crossref 無 published-online，Crossref 例外不適用；首發日依出版者文章頁 Available online 24 October 2026，管理者 2026-10-25 確認。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-TEA",
+        "T-PD"
+      ],
+      "ai_lit_note": "生成式 AI 時代教師學科教學知識的發展，屬教師 AI 素養（A），對應 T-TEA「評估AI與教學法整合的適切性」、T-PD「理解AI時代教師專業自主與責任」",
+      "audience": "k12",
+      "doi": "10.1016/j.caeo.2026.100428",
+      "screening_note": "Verified 2026-10-25 for daily brief 2026-10-25.",
+      "verification_completed_on": "2026-10-25"
+    },
+    {
+      "candidate_id": "W2026-10-23-A09",
+      "category": "research",
+      "source_url": "https://doi.org/10.52358/mm.vi24.529",
+      "source_title": "Au-delà de l’adoption : les non-usages des IA génératives par les lycéens en France au prisme de l’éthique",
+      "source_organization": "Médiations et médiatisations (Université TÉLUQ)",
+      "source_publication_date": "2026-10-24",
+      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：連線重設兩次，未繞過）：2026-10-24；出版者 PDF 未印上線日；Médiations et médiatisations No 24, 2026；摘要歸屬：Résumé 以「Cette étude」「Elle s’appuie」「Enfin」開頭的三句，Introduction 第二段以「La méthodologie」開頭的句子",
+      "discovered_on": "2026-10-25",
+      "discovery_batch_id": "2026-10-25-daily-2",
+      "first_disclosed_on": "2026-10-24",
+      "source_updates": [],
+      "original_excerpt": "Cette étude s’intéresse aux non-usagers et aux raisons du non-usage. … Elle s’appuie sur les réponses de 153 lycéens non usagers, recueillies lors d’une enquête menée en France en décembre 2024. … Enfin, l’analyse qualitative des raisons du non-usage mobilise les concepts de nécessités et de faits issus du cadre théorique de la problématisation. … La méthodologie combine une approche quantitative (modèle UTAUT étendu et classification K-means) et une analyse qualitative de verbatims pour caractériser la diversité des formes de non-usage et en discuter les implications pour les rapports éthiques et éducatifs des élèves aux IAG.",
+      "source_checked": true,
+      "claim_text": "來源機構：Médiations et médiatisations (Université TÉLUQ)；資料標題：Au-delà de l’adoption : les non-usages des IA génératives par les lycéens en France au prisme de l’éthique；來源刊登日：2026-10-24。作者摘要報告：研究關注法國高中生中不使用生成式 AI 者及其原因；資料為 2024 年 12 月在法國一項調查中 153 名不使用的高中生的回答；方法結合量化分析（擴充 UTAUT 模型與 K-means 分群）與逐字回答的質性分析，描述不使用的多種形式並討論其對學生與生成式 AI 倫理及教育關係的意涵；質性分析借用問題化理論架構中「必要性」與「事實」的概念。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "期刊論文（Médiations et médiatisations，Université TÉLUQ 出版，DOAJ 登記為雙向匿名同儕審查；不在監測清單，管理者 2026-10-25 同意以單篇例外發布）；法國高中生中不使用生成式 AI 者 153 人的線上調查，作者引言指出調查對象為大東部大區的高中生，結果不宜推論至全法國。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-25 讀出版者 PDF，擇摘要三句與引言方法句撰寫中文摘要與中文譯名，不寫量化與分群結果；第二輪 2026-10-25 由隔離子代理逐項對照法文原句，初判不一致，依建議刪去把摘要的調查月份與引言的地區合併成一句的寫法，並補上討論倫理與教育意涵一句，修正後一致。出版社頁連線重設，未繞過；首發日採 Crossref published-online。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-ETH"
+      ],
+      "ai_lit_note": "高中生基於倫理考量而不使用生成式 AI 的原因，屬學生 AI 素養（A），對應 S-ETH「具備對AI的批判思考」",
+      "audience": "k12",
+      "doi": "10.52358/mm.vi24.529",
+      "screening_note": "Verified 2026-10-25 for daily brief 2026-10-25.",
+      "verification_completed_on": "2026-10-25"
     }
   ],
   "search_runs": [
@@ -329,6 +398,22 @@
       ],
       "discovered": 3,
       "added": 3,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-25-daily-2",
+      "searched_on": "2026-10-25",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref works records for 10.1016/j.caeo.2026.100428 (published-print 2026-10 only) and 10.52358/mm.vi24.529 (published-online 2026-10-24); publisher PDFs read 2026-10-25; ScienceDirect 403 and Médiations et médiatisations connection reset, not bypassed; DOAJ journal record for ISSN 2562-0630",
+          "status": "ok"
+        }
+      ],
+      "discovered": 2,
+      "added": 2,
       "duplicates": 0
     }
   ],
