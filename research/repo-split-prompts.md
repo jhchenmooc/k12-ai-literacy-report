@@ -1,6 +1,6 @@
 # repo 拆分搬遷：PR-1 實作與審查提示詞
 
-> 建立日期：2026-10-13；**2026-10-25 依方案 v0.9 改寫**。對應 [repo-split-plan.md](repo-split-plan.md) v0.9。管理者要求存檔備查。
+> 建立日期：2026-10-13；**2026-10-25 依方案 v0.9.1 改寫**。對應 [repo-split-plan.md](repo-split-plan.md) v0.9.1。管理者要求存檔備查。
 >
 > 用法：
 > - 第一段：11/03 月報合併後（建議 11/04），開新 session，模型選 Sonnet 5.5，repo 選 `jhchenmooc/k12-ai-literacy-report`，貼上整段。
@@ -43,10 +43,10 @@
      github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl
      並以 ssh-keygen -lf 核對指紋等於 SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU 才繼續（請再對一次 GitHub 文件的 SSH 指紋頁）；不用 ssh-keyscan；GIT_SSH_COMMAND 設 IdentitiesOnly=yes、StrictHostKeyChecking=yes、UserKnownHostsFile；if: always() 刪除金鑰檔。
    - 推送目標 git@github.com:ailiteracytw/ailiteracytw.github.io.git；提交作者用機器人名稱（例如「ailiteracytw 部署」）與不屬於任何真人帳號的 noreply 信箱（不用 github-actions[bot]）；訊息只寫「部署 YYYY-MM-DD〔期別〕」，不含私人提交 SHA、管理者姓名或 email。
-   - 冒煙測試：固定測 https://ailiteracytw.github.io/（不用網址常數，網址都帶結尾斜線）；輪詢 deploy.json 每 30 秒、最多 10 分鐘，直到內容雜湊等於本次推送值；再抓首頁與 deploy.json 記的最新一期須回 200；失敗讓 job 失敗。dispatch 輸入 skip_smoke 只在首次推送遇到 Pages 尚未就緒時使用，改寫警告。
+   - 冒煙測試：固定測 https://ailiteracytw.github.io/（不用網址常數；目錄網址帶結尾斜線，deploy.json 是檔案不加）；輪詢 deploy.json 每 30 秒、最多 15 分鐘，請求加 ?v=<run_id>-<attempt> 略過 Pages 快取，直到內容雜湊等於本次推送值；再抓首頁與 deploy.json 記的最新一期須回 200；失敗讓 job 失敗。dispatch 輸入 skip_smoke 只在首次推送遇到 Pages 尚未就緒時使用，改寫警告。
    - dispatch 輸入 negative_test：這次不做一般部署；以 git commit-tree <遠端 HEAD 的 tree> 建立沒有父提交的提交，force push 到 main，預期被拒，且被拒原因是規則擋下（例如錯誤碼 GH013），不只是推送失敗，才算成功；萬一被接受，立即把遠端 main 推回原本的 SHA 並讓 job 失敗。
-5. 現有 CI 的排隊群組（管理者 2026-10-25 同意）：把 .github/workflows/verify-and-deploy.yml 的 concurrency 群組改為依事件分開（例如 verified-pages-${{ github.event_name }}），避免 main 的 push verify 被下一個 PR 的 verify 取消。只改這一處，其他步驟不動。
-6. pages.yml 範本：在 push 到 main 時觸發，另加 workflow_dispatch；權限放 job 層（pages: write、id-token: write、contents: read）、environment: github-pages、concurrency: {group: pages, cancel-in-progress: false}；用 actions/upload-pages-artifact 與 actions/deploy-pages（釘完整 SHA）發布根目錄。
+5. 現有 CI 的排隊群組（管理者 2026-10-25 同意）：把 .github/workflows/verify-and-deploy.yml 的 concurrency 群組改為 verified-pages-${{ github.event_name == 'pull_request' && 'pr' || 'main' }}（PR 一組、push 與手動執行共用一組），避免 PR 與 main 的 verify 互相取消，又不讓舊站兩次部署同時跑。只改這一處，其他步驟不動。
+6. pages.yml 範本：在 push 到 main 時觸發，另加 workflow_dispatch；權限放 job 層（pages: write、id-token: write、contents: read）、environment: github-pages、concurrency: {group: pages, cancel-in-progress: false}；用 actions/upload-pages-artifact（v4 以上，不要照抄現有 CI 的 v3）與 actions/deploy-pages（釘完整 SHA）發布根目錄。
 7. 測試：新增 research/public-publish.test.js，並在 .github/workflows/verify-and-deploy.yml 的 verify job 加一行執行它（這不算改舊站部署）。至少涵蓋：
    - evidence/ 一般項目只有那 7 個欄位、分析型項目只有 2 個欄位，值與私人端逐字相同，只含已登錄期別；在 fixture 的 claim 加一個新欄位，確認不會輸出；沒有 title_zh 的一般項目省略該欄位。
    - 輸出不含 publication/sources、完整 claims、issues.json、research/、知識庫；.github/ 只有那兩個檔案且雜湊相符。
@@ -67,7 +67,7 @@
 - 開 PR，不要合併；PR 說明寫明對現有網站無影響、開關預設關閉、action 版本與 SHA 對照。合併要等我在編輯 session 親自回「合併」。
 
 【提醒我】
-PR-1 快完成時提醒我做步驟 1b（方案第 8 節的逐步操作），特別是：Pages 來源先設為 GitHub Actions、三條 ruleset 與 Actions 設定、組織 Deploy keys 要設為 Enabled（新組織預設停用）、組織的 Claude App 安裝要排除公開 repo、私鑰不得貼進任何對話。secret 名稱 PUBLIC_DEPLOY_KEY，environment 名稱 public-site。
+PR-1 快完成時提醒我做步驟 1b（方案第 8 節的逐步操作），特別是：Pages 來源先設為 GitHub Actions、三條 ruleset 與 Actions 設定、組織 Deploy keys 要設為 Enabled（新組織預設停用）、組織的 Claude App 先解除安裝（步驟 3 再只裝私人 repo）、Windows 產生金鑰前先 cd ~、私鑰不得貼進任何對話。secret 名稱 PUBLIC_DEPLOY_KEY，environment 名稱 public-site。
 ```
 
 ## 二、合併前審查（Opus 5.5）
@@ -103,7 +103,7 @@ PR-1 快完成時提醒我做步驟 1b（方案第 8 節的逐步操作），特
 - 請實際產生一次 _public_repo/，列出檔案數與目錄，對整個輸出搜尋 research/drafts、publication/sources、管理者、session、trig_、子代理、curl、pdftotext、403。預期誤報：APEC 項目 title_zh 的「學校管理者」、義大利與英文原文摘錄中的 sessioni／session、kedi.re.kr 網址中的 /research/、PR-4 才改的舊連結，請分開列出，不算問題。
 
 【四、不影響現有網站】
-- 用 diff -r 比對 main 與本分支各自建出的 _public_site，必須沒有差異；SITE_PREFIX 未改；verify-and-deploy.yml 只多一行執行新測試，以及排隊群組改為依事件分開（確認舊站 deploy job 仍只在 push 到 main 時執行，不會兩個同時部署）。
+- 用 diff -r 比對 main 與本分支各自建出的 _public_site，必須沒有差異；SITE_PREFIX 未改；verify-and-deploy.yml 只多一行執行新測試，以及排隊群組改為 PR 一組、push 與手動執行一組（確認舊站不會兩次部署同時跑）。
 
 【回報格式】
 - 依嚴重度排序（高、中、低）。每項寫：檔案與行號、具體的失敗情境、建議修法。

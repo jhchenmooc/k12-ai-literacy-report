@@ -8,7 +8,8 @@
 > - v0.6（2026-10-23）：公開範圍改為「只放網頁與精簡摘錄」。
 > - v0.7（2026-10-23）：依兩路多角度自檢（一致性與可行性；安全與 GitHub 文件核對）全面改寫，取代先前各版正文。管理者「照建議，第 4 項選 (a)」。
 > - v0.8（2026-10-24）：依第二輪兩路自檢（PR-1 實作演練；攻防與外洩演練）修正 4.1、4.2、4.4–4.7、第 2、6、8、12、13 節。管理者「照建議」。
-> - **v0.9（2026-10-25）**：依第三輪兩路自檢（一致性與實作演練；管理者操作與回退）修正。管理者「照建議，同意第 3 項」（改現有 CI 的排隊群組）。之後不再單獨自檢方案，剩餘細節由 PR-1 合併前審查與步驟 4 實測處理。
+> - v0.9（2026-10-25）：依第三輪兩路自檢（一致性與實作演練；管理者操作與回退）修正。管理者「照建議，同意第 3 項」（改現有 CI 的排隊群組）。之後不再單獨自檢方案，剩餘細節由 PR-1 合併前審查與步驟 4 實測處理。
+> - **v0.9.1（2026-10-25）**：第四輪自檢（無高、5 項中）的小修：CI 排隊群組改為「PR 一組、push 與手動執行一組」、冒煙測試略過快取、`deploy.json` 不加結尾斜線、Pages 上傳 action 用 v4 以上、步驟 1b 的 App 安裝與 Windows 金鑰指令。管理者「照建議」。
 >
 > PR-1 實作與審查提示詞見 [repo-split-prompts.md](repo-split-prompts.md)。本檔放在目前仍公開的 repo 分支上，**不寫排程或 session 編號**。
 
@@ -69,7 +70,7 @@
   2. `GET /repos/{repo}/actions/workflows/verify-and-deploy.yml/runs?head_sha=<SHA>&event=push` 找到該 SHA 的 push 執行，且其中 **verify job** 的結論為 success（看 job，不看整個 run：步驟 8 前舊站 deploy job 失敗不應擋住發布）。本 repo 一律 squash 合併，PR 上的 verify 跑的是另一個 SHA，不能代替。執行尚未建立或還在跑就輪詢，上限 20 分鐘，逾時停止。
   3. `GET /repos/{repo}/commits/<SHA>/pulls` 有一個已合併的 PR，且其 `merge_commit_sha` 等於該 SHA。
   第 1 點不符（main 已被較新的提交取代）時以「略過」結束，不算失敗；第 2、3 點不符或逾時才算失敗。不另在本 workflow 複製 verify 步驟（會走樣）。**這道檢查只防意外**（直接推送、CI 未過就合併），防不了有寫入權、存心繞過的人（與第 0 節部署金鑰的決定一致）。`if: github.ref == 'refs/heads/main'` 只防誤觸。job 層權限要寫完整 `contents: read, actions: read, pull-requests: read`（job 層設定會整個取代頂層）。
-- **排隊群組**：用自己的群組 `publish-public`，不與 `verify-and-deploy.yml` 共用。**現有 `verify-and-deploy.yml` 的排隊群組改為依事件分開**（例如 `verified-pages-${{ github.event_name }}`；管理者 2026-10-25 同意改現有 CI）：目前 PR 與 push 共用一組，main 的 push verify 可能被下一個 PR 的 verify 取消，該 SHA 就沒有 success，部署會卡住（最近 100 次執行已發生 1 次取消）。
+- **排隊群組**：用自己的群組 `publish-public`，不與 `verify-and-deploy.yml` 共用。**現有 `verify-and-deploy.yml` 的排隊群組改為依事件分開**：PR 一組、push 與手動執行共用另一組，寫法 `verified-pages-${{ github.event_name == 'pull_request' && 'pr' || 'main' }}`（管理者 2026-10-25 同意改現有 CI）。不可單純依 `event_name` 分組，否則 push 與手動執行落在不同組，舊站可能同時跑兩次部署、較舊的 SHA 蓋掉較新的。目的：避免 PR 的 verify 與 main 的 verify 互相取消、使 main 上的提交沒有 success 而卡住部署（最近 100 次執行已發生 1 次取消）。
 - **寫法**：頂層 `permissions: contents: read`，其他權限只在 job 層加；第三方 action 釘完整 SHA（用 `git ls-remote https://github.com/actions/<name> refs/tags/<確切版本>` 取得，PR 說明列出版本與 SHA 對照）；checkout 不保留憑證；`github.event.*` 與 `inputs.*` 經 `env:` 進 `run:`；禁止 `set -x`。
 - **輸出目錄**：推導結果放 `_public_repo/`（加入 `.gitignore`），不與 `_public_site/` 共用。
 - **金鑰**：secret 名稱 `PUBLIC_DEPLOY_KEY`。步驟 1b 先放在 `environment: public-site`（只允許 main）；免費方案私人 repo 不能使用 environment secret，所以步驟 9 改私人後**重新產生一把金鑰**存為 repo secret、撤銷舊的，再以小 PR 拿掉 `environment:`（第 8 節）。secret 存入後讀不回來，不能「搬移」。
@@ -92,13 +93,13 @@
 
 ### 4.4 冒煙測試
 
-- **固定測新網址** `https://ailiteracytw.github.io/`，與網址常數無關（PR-1 時網址常數仍是舊站）。輪詢 `deploy.json`（每 30 秒、最多 10 分鐘），直到其內容雜湊等於本次推送值；再抓首頁與 `deploy.json` 記的最新一期，必須回 200；失敗讓 job 失敗。
-- 冒煙測試的網址都帶結尾斜線（否則 Pages 回 301）。
+- **固定測新網址** `https://ailiteracytw.github.io/`，與網址常數無關（PR-1 時網址常數仍是舊站）。輪詢 `deploy.json`（每 30 秒、最多 15 分鐘；請求加 `?v=<run_id>-<attempt>` 略過 Pages 的 10 分鐘快取），直到其內容雜湊等於本次推送值；再抓首頁與 `deploy.json` 記的最新一期，必須回 200；失敗讓 job 失敗。
+- 目錄網址（首頁、最新一期）帶結尾斜線（否則 Pages 回 301）；`deploy.json` 是檔案，不加。
 - dispatch 輸入 `skip_smoke`：只在首次推送遇到 Pages 尚未就緒時使用，改寫警告。
 
 ### 4.5 公開 repo 的 Pages
 
-- GitHub 文件把「用部署金鑰推送」列為分支部署的網站**可能不會建置**的原因之一，所以 Pages 來源改為 **GitHub Actions**：公開 repo 放 `.github/workflows/pages.yml`，在 `push` 到 main 時觸發，另加 `workflow_dispatch`（供首次部署或內容未變時手動重跑），用 `actions/upload-pages-artifact` 與 `actions/deploy-pages`（釘 SHA）發布根目錄；權限放 job 層（`pages: write`、`id-token: write`、`contents: read`）、`environment: github-pages`、`concurrency: {group: pages, cancel-in-progress: false}`。`upload-pages-artifact` 會排除點開頭的檔案；網站唯一的點開頭檔 `.nojekyll` 在 Actions 來源下不需要。
+- GitHub 文件把「用部署金鑰推送」列為分支部署的網站**可能不會建置**的原因之一，所以 Pages 來源改為 **GitHub Actions**：公開 repo 放 `.github/workflows/pages.yml`，在 `push` 到 main 時觸發，另加 `workflow_dispatch`（供首次部署或內容未變時手動重跑），用 `actions/upload-pages-artifact`（**v4 以上**，舊版內部以 tag 引用其他 action，可能被「強制釘 SHA」擋下；不要照抄現有 CI 的 v3）與 `actions/deploy-pages`（釘 SHA）發布根目錄；權限放 job 層（`pages: write`、`id-token: write`、`contents: read`）、`environment: github-pages`、`concurrency: {group: pages, cancel-in-progress: false}`。`upload-pages-artifact` 會排除點開頭的檔案；網站唯一的點開頭檔 `.nojekyll` 在 Actions 來源下不需要。
 - 部署金鑰推送能否觸發 `pages.yml`、能否推送 `.github/workflows/` 下的檔案，文件未寫明，**步驟 4 首次推送時實測**：`pages.yml` 有執行、網站內容等於推送值。不成立時回報管理者再議。
 
 ### 4.6 公開 repo 的保護
@@ -157,9 +158,9 @@ dispatch 輸入 `negative_test`：以 `git commit-tree <遠端 HEAD 的 tree>` �
 | 步驟 | 內容 | 誰做 |
 |---|---|---|
 | 1a | **已完成（2026-10-13）**：組織、App 安裝、空的 `ailiteracytw.github.io`（私人） | 管理者 |
-| 1b | PR-1 接近完成時，管理者依下列操作（編輯 session 可在旁逐步說明）：<br>(1) `ailiteracytw.github.io` Settings → General → Danger Zone → Change visibility → Public，確認仍無提交；<br>(2) Settings → Pages → Source 選 **GitHub Actions**（空 repo 若設不了，改在步驟 4 首次推送前設）；<br>(3) Settings → Rules → Rulesets：(a) New branch ruleset，目標 Include default branch，勾 Restrict deletions、Block force pushes；(b) 另一個 branch ruleset，目標 Include all branches 再 Exclude default branch，勾 Restrict creations；(c) New tag ruleset，目標所有 tag，勾 Restrict creations；三個都 Active、Bypass list 留空；<br>(4) Settings → Actions → General：Actions permissions 選允許本組織與指定的 action，只勾 Allow actions created by GitHub；若畫面有「Require actions to be pinned to a full-length commit SHA」就勾選；fork PR 選 Require approval for all external contributors；Workflow permissions 選 Read repository contents；<br>(5) 組織 Settings → Access → Member privileges → Deploy keys 選 **Enabled** → Save（新組織預設停用）；<br>(6) 產生金鑰：Windows PowerShell 或 macOS 終端機輸入 `ssh-keygen -t ed25519 -C ailiteracytw-deploy -f ~/ailtw_deploy`，問密碼時直接按兩次 Enter；公鑰（`ailtw_deploy.pub`）加到公開 repo Settings → Deploy keys → Add deploy key，勾 Allow write access；私鑰全文（含 BEGIN、END 兩行）存到原 repo Settings → Environments → New environment `public-site` → Deployment branches 選 Selected branches 加 `main` → Add secret，名稱 `PUBLIC_DEPLOY_KEY`；**私鑰不得貼進任何 Claude 對話或截圖**；用完以 `Remove-Item`／`rm` 刪除兩個檔案，不要丟資源回收筒；<br>(7) 組織的 Claude App 安裝只選私人 repo，明確排除 `ailiteracytw.github.io` | 管理者 |
+| 1b | PR-1 接近完成時，管理者依下列操作（編輯 session 可在旁逐步說明）：<br>(1) `ailiteracytw.github.io` Settings → General → Danger Zone → Change visibility → Public，確認仍無提交；<br>(2) Settings → Pages → Source 選 **GitHub Actions**（空 repo 若設不了，改在步驟 4 首次推送前設）；<br>(3) Settings → Rules → Rulesets：(a) New branch ruleset，目標 Include default branch，勾 Restrict deletions、Block force pushes；(b) 另一個 branch ruleset，目標 Include all branches 再 Exclude default branch，勾 Restrict creations（找不到 Exclude default branch 時，改用 Exclude by pattern 填 `main`）；(c) New tag ruleset，目標所有 tag，勾 Restrict creations；三個都 Active、Bypass list 留空；<br>(4) Settings → Actions → General：Actions permissions 選允許本組織與指定的 action，只勾 Allow actions created by GitHub；若畫面有「Require actions to be pinned to a full-length commit SHA」就勾選；fork PR 選 Require approval for all external contributors；Workflow permissions 選 Read repository contents；<br>(5) 組織 Settings → Access → Member privileges → Deploy keys 選 **Enabled** → Save（新組織預設停用）；<br>(6) 產生金鑰：Windows PowerShell 或 macOS 終端機先輸入 `cd ~`，再輸入 `ssh-keygen -t ed25519 -C ailiteracytw-deploy -f ailtw_deploy`，問密碼時直接按兩次 Enter；公鑰（`ailtw_deploy.pub`）加到公開 repo Settings → Deploy keys → Add deploy key，勾 Allow write access；私鑰全文（含 BEGIN、END 兩行）存到原 repo Settings → Environments → New environment `public-site` → Deployment branches 選 Selected branches 加 `main` → Add secret，名稱 `PUBLIC_DEPLOY_KEY`；**私鑰不得貼進任何 Claude 對話或截圖**；用完以 `Remove-Item`／`rm` 刪除兩個檔案，不要丟資源回收筒；<br>(7) 組織的 Claude App：此時組織裡只有公開 repo，「只選部分 repo」至少要選一個，所以先**解除安裝**（組織 Settings → GitHub Apps → Claude → Uninstall），步驟 3 再安裝並只選私人 repo | 管理者 |
 | 2 | 讀最近 10 次 run 的實際分鐘數，估每月用量，須低於 2,000 分鐘的 80% | 編輯 session |
-| 3 | **restricted repo 轉移日**（挑一天，當日 08:22 短訊合併後一次做完）：(1) 管理者把 `k12-ai-literacy-report-restricted` 轉到組織（Settings → General → Danger Zone → Transfer ownership）；(2) 組織的 App 安裝加入它；(3) 編輯 session 用 `list_triggers` 列出排程、逐一 `get_trigger`，以 `update_trigger` 更新 repo 名稱；(4) 各 session 重新加入新名稱的 repo 並 `git remote set-url`；雲端環境選用的 repo 由管理者在 claude.ai 環境設定改；(5) 各 session 在組織的 restricted repo 開測試 PR、合併；(6) 確認各 session 對公開 repo 不能寫入 | 管理者、編輯 session |
+| 3 | **restricted repo 轉移日**（挑一天，當日 08:22 短訊合併後一次做完）：(1) 管理者把 `k12-ai-literacy-report-restricted` 轉到組織（Settings → General → Danger Zone → Transfer ownership）；(2) 在組織重新安裝 Claude App，只選它（步驟 1b 已解除安裝；明確不選 `ailiteracytw.github.io`）；(3) 編輯 session 用 `list_triggers` 列出排程、逐一 `get_trigger`，以 `update_trigger` 更新 repo 名稱；(4) 各 session 重新加入新名稱的 repo 並 `git remote set-url`；雲端環境選用的 repo 由管理者在 claude.ai 環境設定改；(5) 各 session 在組織的 restricted repo 開測試 PR、合併；(6) 確認各 session 對公開 repo 不能寫入 | 管理者、編輯 session |
 | 4 | 合併 PR-1；設 `ENABLE_PUBLIC_PUBLISH=true`；手動首次推送（Pages 尚未就緒才用 `skip_smoke`）；確認公開 repo 的 `pages.yml` 有執行、網站正確（沒有執行就手動 dispatch `pages.yml`）；跑 `negative_test`，確認被拒的原因是規則擋下（例如錯誤碼 GH013），不只是推送失敗；以第 9 節清單驗收 | 編輯 session、管理者 |
 | 5 | 合併 PR-2；在公開 repo 送一則測試 Issue，確認私人端整理讀得到（舊 repo 的 Issue 也照常讀到） | 編輯 session、管理者 |
 | 6 | 合併 PR-3，開始驗收期；每日短訊在 daily-check 加「publish-public 驗收」一節 | 編輯 session、管理者 |
