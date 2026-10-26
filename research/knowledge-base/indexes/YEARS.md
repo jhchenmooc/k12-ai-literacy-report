@@ -1697,7 +1697,7 @@
 | KB-2026-0439 — [Teacher intervention in K-12 AI-based instruction: a systematic review of processes, strategies, and effects](https://doi.org/10.1186/s40561-026-00461-1) | journal_article | 2026-08-12 | discovered_unverified |
 | KB-2026-0440 — [AIED unplugged, teacher workload, and numeracy learning: a clustered quasi-experimental mixed-methods study](https://doi.org/10.1186/s40561-026-00465-x) | journal_article | 2026-09-24 | discovered_unverified |
 | KB-2026-0441 — [Exploring learner–parent–AI interaction patterns in an AI-supported EFL learning game during informal learning: insights from sequence analysis and epistemic network analysis](https://doi.org/10.1186/s40561-026-00472-y) | journal_article | 2026-10-01 | discovered_unverified |
-| KB-2026-0442 — [From AI Intuition to AI Literacy: A Dual Framework for K-12 Education](https://doi.org/10.52358/mm.vi25.576) | journal_article | 2026-08-28 | discovered_unverified |
+| KB-2026-0442 — [From AI Intuition to AI Literacy: A Dual Framework for K-12 Education](https://doi.org/10.52358/mm.vi25.576) | journal_article | 2026-08-28 | bibliographic_checked |
 | KB-2026-0443 — [Revisiting Pedagogical Content Knowledge (PCK) development for the age of Generative AI](https://doi.org/10.1016/j.caeo.2026.100428) | journal_article | 2026-10-24 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
