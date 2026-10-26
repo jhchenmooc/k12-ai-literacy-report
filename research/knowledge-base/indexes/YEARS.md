@@ -1759,5 +1759,10 @@
 | KB-2026-0396 — [Artificial Intelligence (AI) for Instructional Purposes Guidance](https://www.michigan.gov/mde/-/media/Project/Websites/mde/general/AI_Instructional_Purposes_-Final1.pdf) | official_guidance | 未知 | discovered_unverified |
 | KB-2026-0398 — [Career and Technical Education (CTE) Brief: Artificial Intelligence](https://education.mn.gov/mdeprod/idcplg?IdcService=GET_FILE&dDocName=PROD085058&RevisionSelectionMethod=latestReleased&Rendition=primary) | official_guidance | 未知 | discovered_unverified |
 | KB-2026-0428 — [Artificial intelligence (AI) in schools – information for parents and carers](https://www.education.sa.gov.au/parents-and-families/curriculum-and-learning/ai/artificial-intelligence-ai-in-schools-information-for-parents-and-carers) | official_guidance | 未知 | discovered_unverified |
+| KB-2026-0444 — [Evaluating an AI-Powered Learning Analytics Tool for Automated Essay Scoring in Real Classroom Contexts: An Experience Report from a Brazilian Public Secondary School](https://doi.org/10.5753/wie.2026.28044) | conference_paper | 未知 | discovered_unverified |
+| KB-2026-0445 — [Investigating secondary school students’ shared epistemic agency with GAI in online scientific explanation writing](https://doi.org/10.1016/j.compedu.2026.105769) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0446 — [Integrating artificial intelligence into K-12 school education through self-determination theory from a longitudinal study: opportunities, challenges, and future direction](https://doi.org/10.1080/10494820.2026.2744403) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0447 — [Towards a world-centred AI literacy in middle school education? Reflections from a Swedish case](https://doi.org/10.18261/njdl.21.2.4) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0448 — [Individualized dialogic practice delivered through AI supports first graders' question-asking](https://doi.org/10.1016/j.appdev.2026.102014) | journal_article | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
