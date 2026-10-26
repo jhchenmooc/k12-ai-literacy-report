@@ -354,6 +354,172 @@
       "doi": "10.1186/s40561-026-00464-y",
       "screening_note": "Verified 2026-10-26 for daily brief 2026-10-26; knowledge-base record KB-2026-0433 already existed (added 2026-10-25) and is linked here.",
       "verification_completed_on": "2026-10-26"
+    },
+    {
+      "candidate_id": "W2026-10-23-A11",
+      "category": "research",
+      "source_url": "https://doi.org/10.5753/wie.2026.28044",
+      "source_title": "Evaluating an AI-Powered Learning Analytics Tool for Automated Essay Scoring in Real Classroom Contexts: An Experience Report from a Brazilian Public Secondary School",
+      "source_organization": "unknown",
+      "source_publication_date": "2026-10-05",
+      "source_locator": "Crossref published-online（SBC 頁連線被重置）",
+      "discovered_on": "2026-10-26",
+      "discovery_batch_id": "2026-10-26-scholar-M-1",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "original_excerpt": "",
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "版本：正式版（）；對象：K-12；巴西公立高中 1 位作文教師與 1 位教學協調員採用 AI 作文評分工具的經驗報告（35 名學生）；首發依據：Crossref published-online（SBC 頁連線被重置）；本刊追蹤學者 S02 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "T-TEA"
+      ],
+      "ai_lit_note": "巴西公立高中 1 位作文教師與 1 位教學協調員採用 AI 作文評分工具的經驗報告（35 名學生）",
+      "audience": "k12",
+      "doi": "10.5753/wie.2026.28044",
+      "screening_note": "30-day backfill/background: earlier than issue period; Discovery only, hold pending first-disclosure check."
+    },
+    {
+      "candidate_id": "W2026-10-23-A12",
+      "category": "research",
+      "source_url": "https://doi.org/10.1016/j.compedu.2026.105769",
+      "source_title": "Investigating secondary school students’ shared epistemic agency with GAI in online scientific explanation writing",
+      "source_organization": "Computers & Education",
+      "source_publication_date": "unknown",
+      "source_locator": "Elsevier 頁 403，Crossref 無 published-online",
+      "discovered_on": "2026-10-26",
+      "discovery_batch_id": "2026-10-26-scholar-M-1",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "original_excerpt": "",
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "版本：正式版（Computers & Education）；對象：K-12；臺灣 122 名七年級生在鷹架式生成式 AI 下的認識能動性（雙語探究單元）；首發依據：Elsevier 頁 403，Crossref 無 published-online；本刊追蹤學者 T14 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN"
+      ],
+      "ai_lit_note": "臺灣 122 名七年級生在鷹架式生成式 AI 下的認識能動性（雙語探究單元）",
+      "audience": "k12",
+      "doi": "10.1016/j.compedu.2026.105769",
+      "screening_note": "Original publication date unknown; Discovery only, hold pending first-disclosure check."
+    },
+    {
+      "candidate_id": "W2026-10-23-A13",
+      "category": "research",
+      "source_url": "https://doi.org/10.1080/10494820.2026.2744403",
+      "source_title": "Integrating artificial intelligence into K-12 school education through self-determination theory from a longitudinal study: opportunities, challenges, and future direction",
+      "source_organization": "Interactive Learning Environments",
+      "source_publication_date": "2026-10-08",
+      "source_locator": "Crossref published-online（T&F 頁 403）",
+      "discovered_on": "2026-10-26",
+      "discovery_batch_id": "2026-10-26-scholar-M-1",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "original_excerpt": "",
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "版本：正式版（Interactive Learning Environments）；對象：K-12；74 名中小學教師兩年縱貫訪談，自我決定論看 AI 融入；10/10 曾判 unknown（當時無摘要），本次依摘要改判；首發依據：Crossref published-online（T&F 頁 403）；本刊追蹤學者 H11 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-TEA"
+      ],
+      "ai_lit_note": "74 名中小學教師兩年縱貫訪談，自我決定論看 AI 融入；10/10 曾判 unknown（當時無摘要），本次依摘要改判",
+      "audience": "k12",
+      "doi": "10.1080/10494820.2026.2744403",
+      "screening_note": "30-day backfill/background: earlier than issue period; Discovery only, hold pending first-disclosure check."
+    },
+    {
+      "candidate_id": "W2026-10-23-A14",
+      "category": "research",
+      "source_url": "https://doi.org/10.18261/njdl.21.2.4",
+      "source_title": "Towards a world-centred AI literacy in middle school education? Reflections from a Swedish case",
+      "source_organization": "Nordic Journal of Digital Literacy",
+      "source_publication_date": "2026-10-23",
+      "source_locator": "Crossref published-print 2026-10-23（出版者頁 403，無 published-online）",
+      "discovered_on": "2026-10-26",
+      "discovery_batch_id": "2026-10-26-scholar-M-1",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "original_excerpt": "",
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "版本：正式版（Nordic Journal of Digital Literacy）；對象：K-12；立場論文，以瑞典國中課堂觀察與訪談檢討 AI 素養目的（Biesta 世界中心教育）；首發依據：Crossref published-print 2026-10-23（出版者頁 403，無 published-online）；本刊追蹤學者 H12、H13、H27 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS",
+        "S-ETH"
+      ],
+      "ai_lit_note": "立場論文，以瑞典國中課堂觀察與訪談檢討 AI 素養目的（Biesta 世界中心教育）",
+      "audience": "k12",
+      "doi": "10.18261/njdl.21.2.4",
+      "screening_note": "Discovery only, hold pending first-disclosure check."
+    },
+    {
+      "candidate_id": "W2026-10-23-A15",
+      "category": "research",
+      "source_url": "https://doi.org/10.1016/j.appdev.2026.102014",
+      "source_title": "Individualized dialogic practice delivered through AI supports first graders' question-asking",
+      "source_organization": "Journal of Applied Developmental Psychology",
+      "source_publication_date": "unknown",
+      "source_locator": "Elsevier 頁 403；Crossref 只有 2026-11 卷期",
+      "discovered_on": "2026-10-26",
+      "discovery_batch_id": "2026-10-26-scholar-M-1",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "original_excerpt": "",
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "版本：正式版（Journal of Applied Developmental Psychology）；對象：K-12；AI 個別化對話練習支持一年級生提問（僅題名，無摘要）；首發依據：Elsevier 頁 403；Crossref 只有 2026-11 卷期；本刊追蹤學者 V18 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN"
+      ],
+      "ai_lit_note": "AI 個別化對話練習支持一年級生提問（僅題名，無摘要）",
+      "audience": "k12",
+      "doi": "10.1016/j.appdev.2026.102014",
+      "screening_note": "Original publication date unknown; Discovery only, hold pending first-disclosure check."
     }
   ],
   "search_runs": [
@@ -480,6 +646,482 @@
       ],
       "discovered": 1,
       "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-26-scholar-M-1",
+      "searched_on": "2026-10-26",
+      "lookback_days": 26,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "scholar-watch",
+          "query": "S01 author.orcid:0000-0001-5843-4854 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S02 author.orcid:0000-0001-9265-1908 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S03 author.orcid:0000-0003-4639-2524 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S04 author.orcid:0000-0001-6005-907X from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T01 author.orcid:0000-0003-1741-2450 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T02 author.orcid:0000-0001-5059-8256 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T03 author.orcid:0000-0001-5155-276X from:2026-09-30 to:2026-10-26 (OpenAlex works) + education topic filter; unfiltered check also run",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T05 author.orcid:0000-0001-6504-9540 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T06 author.orcid:0000-0001-6128-0227 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T07 author.orcid:0000-0002-2545-8910 from:2026-09-30 to:2026-10-26 (OpenAlex works) + education topic filter; unfiltered check also run",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T04 author.id:A5029607042 from:2026-09-30 to:2026-10-26 (OpenAlex works) + education topic filter; unfiltered check also run",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T08 author.orcid:0000-0002-2837-6662 from:2026-09-30 to:2026-10-26 (OpenAlex works) + education topic filter; unfiltered check also run",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S18 author.orcid:0000-0001-5216-1576 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S20 author.orcid:0000-0002-0402-9199 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S23 author.orcid:0000-0002-1713-9653 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S24 author.orcid:0000-0001-9045-4070 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T10 author.orcid:0000-0001-9494-2848 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T12 author.orcid:0000-0002-7721-5902 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T14 author.orcid:0000-0001-7744-9971 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T15 author.orcid:0000-0002-8943-5689 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T19 author.orcid:0000-0003-2373-2004 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T21 author.orcid:0000-0003-1783-8830 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "T22 author.orcid:0000-0002-7088-5516 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S06 author.orcid:0000-0003-3818-045X from:2026-09-30 to:2026-10-26 (OpenAlex works) + education topic filter; unfiltered check also run",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S07 author.orcid:0000-0003-2777-1705 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S08 author.orcid:0000-0003-2900-3734 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S09 author.orcid:0000-0001-6330-6160 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S10 author.orcid:0000-0003-1037-3313 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S11 author.orcid:0000-0002-9913-0627 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S13 author.orcid:0000-0002-5018-6232 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S14 author.orcid:0000-0001-7045-2764 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S15 author.orcid:0000-0002-8793-4732 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S25 author.orcid:0000-0001-8319-2201 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "S26 author.orcid:0000-0002-6250-0540 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H01 author.orcid:0000-0001-7613-0029 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H02 author.orcid:0000-0002-2380-7814 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H03 author.orcid:0000-0001-6490-7005 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H04 author.orcid:0000-0001-8268-4802 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H05 author.orcid:0000-0002-7134-130X from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H06 author.orcid:0000-0002-0906-4321 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H07 author.orcid:0000-0001-6035-540X from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H08 author.orcid:0000-0002-7246-7879 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H09 author.orcid:0000-0003-3104-1123 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H10 author.orcid:0000-0003-2555-8097 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H11 author.orcid:0000-0003-2887-5477 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H12 author.orcid:0000-0003-0664-3640 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H13 author.orcid:0000-0002-3115-9060 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H14 author.orcid:0000-0001-8495-6920 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H15 author.orcid:0000-0003-1543-6301 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H16 author.orcid:0000-0003-4762-2838 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H17 author.orcid:0000-0002-0587-2065 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H18 author.orcid:0000-0003-2206-2715 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H19 author.orcid:0000-0002-1990-2894 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H20 author.orcid:0000-0001-5198-7261 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H21 author.orcid:0000-0002-8691-3016 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H22 author.orcid:0000-0002-8576-6464 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H23 author.orcid:0000-0003-2370-381X from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H24 author.orcid:0000-0003-2105-2275 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H25 author.orcid:0000-0002-1448-4064 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H26 author.orcid:0000-0002-6859-1420 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H27 author.orcid:0000-0003-0829-3349 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H28 author.orcid:0009-0006-3682-2358 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H29 author.orcid:0000-0002-9725-268X from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H30 author.orcid:0000-0002-5027-8284 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H31 author.orcid:0000-0002-6551-8885 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H32 author.orcid:0000-0002-7294-3097 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "H33 author.orcid:0000-0003-2815-1137 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V01 author.orcid:0000-0001-9159-0664 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V02 author.orcid:0000-0002-5087-9637 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V03 author.orcid:0000-0002-8057-2863 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V04 author.orcid:0000-0001-7640-9898 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V05 author.orcid:0000-0001-9895-6796 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V06 author.orcid:0000-0002-6298-4813 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V07 author.orcid:0000-0002-3250-003X from:2026-09-30 to:2026-10-26 (OpenAlex works) + education topic filter; unfiltered check also run",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V08 author.orcid:0000-0003-0506-9579 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V09 author.orcid:0000-0002-1803-9865 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V10 author.orcid:0000-0002-6937-345X from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V11 author.orcid:0000-0002-7740-5749 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V12 author.orcid:0000-0002-5554-0069 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V13 author.orcid:0000-0002-1775-8219 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V14 author.orcid:0000-0002-8214-0386 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V15 author.orcid:0000-0003-0538-7665 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V16 author.orcid:0000-0002-7173-4859 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V17 author.id:A5061103584 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V18 author.orcid:0000-0003-2079-2394 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V19 author.orcid:0000-0002-6817-4416 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V20 author.orcid:0000-0001-9942-0651 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V21 author.orcid:0000-0003-4519-1931 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V22 author.orcid:0000-0003-2441-1640 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V23 author.orcid:0000-0003-3804-0852 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V24 author.orcid:0000-0001-8565-123X from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V25 author.orcid:0000-0001-8681-0853 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        },
+        {
+          "group": "scholar-watch",
+          "query": "V26 author.orcid:0000-0003-1481-6601 from:2026-09-30 to:2026-10-26 (OpenAlex works)",
+          "status": "ok"
+        }
+      ],
+      "discovered": 5,
+      "added": 5,
       "duplicates": 0
     }
   ],
