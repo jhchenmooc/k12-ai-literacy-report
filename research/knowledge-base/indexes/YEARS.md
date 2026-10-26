@@ -1688,7 +1688,7 @@
 | KB-2026-0430 — [Teachers' artificial intelligence self-efficacy: development and validation of a multidimensional scale grounded in social cognitive theory](https://doi.org/10.3389/feduc.2026.1948951) | journal_article | 2026-10-23 | bibliographic_checked |
 | KB-2026-0431 — [Adaptive Generative Tutoring in Resource-Limited Secondary Education: Effects on Participation, Achievement, and Digital Equity in Nigeria](https://doi.org/10.3390/educsci16111780) | journal_article | 2026-10-23 | bibliographic_checked |
 | KB-2026-0432 — [A Human–AI Orchestration Framework for Mathematics Education](https://doi.org/10.3390/educsci16111774) | journal_article | 2026-10-22 | bibliographic_checked |
-| KB-2026-0433 — [Student epistemic agency in AI-mediated practices](https://doi.org/10.1186/s40561-026-00464-y) | journal_article | 2026-10-24 | discovered_unverified |
+| KB-2026-0433 — [Student epistemic agency in AI-mediated practices](https://doi.org/10.1186/s40561-026-00464-y) | journal_article | 2026-10-24 | bibliographic_checked |
 | KB-2026-0434 — [Comparing AI-Assisted Feedback and Collaborative Digital Writing for Improving Argumentative Writing among Indonesian EFL Students](https://doi.org/10.15294/lc.v21i2.58110) | journal_article | 2026-10-21 | discovered_unverified |
 | KB-2026-0435 — [Au-delà de l’adoption : les non-usages des IA génératives par les lycéens en France au prisme de l’éthique](https://doi.org/10.52358/mm.vi24.529) | journal_article | 2026-10-24 | bibliographic_checked |
 | KB-2026-0436 — [Artificial intelligence in K-12 instruction: the role of teacher professional development](https://doi.org/10.1186/s40561-026-00442-4) | journal_article | 2026-02-13 | discovered_unverified |
