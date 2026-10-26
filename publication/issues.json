@@ -2,6 +2,11 @@
   "schema_version": 1,
   "editions": [
     {
+      "path": "daily/2026-10-26/index.html",
+      "claims_file": "publication/claims/daily-2026-10-26.json",
+      "publication_mode": "ai_low_risk_source_facts"
+    },
+    {
       "path": "daily/2026-10-25/index.html",
       "claims_file": "publication/claims/daily-2026-10-25.json",
       "publication_mode": "ai_low_risk_source_facts"
