@@ -319,6 +319,41 @@
       "doi": "10.52358/mm.vi24.529",
       "screening_note": "Verified 2026-10-25 for daily brief 2026-10-25.",
       "verification_completed_on": "2026-10-25"
+    },
+    {
+      "candidate_id": "W2026-10-23-A10",
+      "category": "research",
+      "source_url": "https://doi.org/10.1186/s40561-026-00464-y",
+      "source_title": "Student epistemic agency in AI-mediated practices",
+      "source_organization": "Smart Learning Environments (Springer Nature)",
+      "source_publication_date": "2026-10-24",
+      "source_locator": "出版社文章頁（SpringerOpen，2026-10-26 讀取 200）：Published 24 October 2026，citation_online_date 2026/10/24，Crossref published-online 同日；Received 23 June 2026、Accepted 29 August 2026；摘要歸屬：Abstract 第 2 至 4 句、第 6 句",
+      "discovered_on": "2026-10-26",
+      "discovery_batch_id": "2026-10-26-daily-1",
+      "first_disclosed_on": "2026-10-24",
+      "source_updates": [],
+      "original_excerpt": "This study was conducted in a Swedish school that had started the pilot project “AI on the schedule” for compulsory school students, for whom the national curricula do not include AI training. … A survey covering the aspects of source evaluation, data privacy, algorithmic manipulation, transparency, responsibility, and governance was distributed to these year 7 students (n = 47). … The data was analysed through cross-tabulations of question pairs. … Results show that students demonstrated strong epistemic agency in certain areas but weak agency in others, for example, in data privacy and algorithmic manipulation, even when these had been part of earlier instruction.",
+      "source_checked": true,
+      "claim_text": "來源機構：Smart Learning Environments (Springer Nature)；資料標題：Student epistemic agency in AI-mediated practices；來源刊登日：2026-10-24。作者摘要報告：研究在一所已啟動「AI 排入課表」試辦計畫的瑞典學校進行，對象為國家課綱未納入 AI 教學的義務教育學生；向 47 名七年級學生發放涵蓋來源評估、資料隱私、演算法操弄、透明、責任與治理等面向的問卷，並以題目配對交叉表分析；作者報告學生在部分面向展現強的認知能動性，但在資料隱私與演算法操弄等其他面向能動性弱，即使這些內容先前已納入教學。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Smart Learning Environments，監測清單 J51，2026-10-25 列入）；瑞典一所學校的 47 名七年級學生，問卷調查與交叉表分析，結果不宜推論。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-26 讀出版社文章頁摘要，擇第 2 至 4 句與第 6 句撰寫中文摘要與中文譯名；第二輪 2026-10-26 由隔離子代理逐項對照英文原句，判定基本一致，依建議把「較強／較弱」改為原文的「強／弱」、「AI 課程」改為「AI 教學」、改寫問卷發放句，修正後一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-ETH",
+        "S-BAS"
+      ],
+      "ai_lit_note": "七年級學生在資料隱私、演算法操弄、透明與責任等面向的認知能動性，屬學生 AI 素養（A），對應 S-ETH「堅持AI的隱私保護」、S-BAS「理解AI運作原理與限制」",
+      "audience": "k12",
+      "doi": "10.1186/s40561-026-00464-y",
+      "screening_note": "Verified 2026-10-26 for daily brief 2026-10-26; knowledge-base record KB-2026-0433 already existed (added 2026-10-25) and is linked here.",
+      "verification_completed_on": "2026-10-26"
     }
   ],
   "search_runs": [
@@ -414,6 +449,37 @@
       ],
       "discovered": 2,
       "added": 2,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-26-daily-1",
+      "searched_on": "2026-10-26",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-10-25,until-created-date:2026-10-26,type:journal-article, six query.bibliographic sets rows=40, proceedings-article sets, watchlist-ISSN sets (24 journals incl. J51, with and without keywords); pedagogical AI agent sets on Crossref and OpenAlex; SLE article page for 10.1186/s40561-026-00464-y read 200; publisher pages one try each (SAGE 403; ScienceDirect redirect page only)",
+          "status": "ok"
+        },
+        {
+          "group": "preprint",
+          "query": "arXiv API (https) three queries 40/40/100 plus pedagogical AI agent query; alphaXiv discover_papers one set",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search and Content API, Federal Register (10-26 issue; public inspection), MEXT (10-23 press conference text not yet uploaded), China MOE, HK info.gov.hk 10-25, KICE, MOE Korea, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (latest 115-10-22; 10-23 issue still not published) and RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ],

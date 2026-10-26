@@ -288,6 +288,7 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
 - **會議論文轉成期刊論文：** 2019～2022 年有 16 篇 European Journal of Teaching and Education 論文，與自家會議論文集的論文同名。
 - **出版商有公開審查資訊，但仍無法核實：** 網站寫明雙盲審查、論文標有收稿與接受日期、編委列有任職單位。但這些資訊沒有外部收錄可以核實。
 - **比對方式：** 依 DOI 前綴 `10.33422`、出版商名稱或 ISSN 2669-0667。**不可用縮寫比對**，因為 European Journal of Teaching and Education 的縮寫與 J44 European Journal of Teacher Education（Taylor & Francis）相同，J44 不受影響。
+- **列入前已入庫的紀錄（2026-10-26 管理者決定）：** KB-2026-0129（`10.33422/ejte.v8i3.1872`，2026-10-09 依學者追蹤入庫）在本出版商列入不收前已入庫。保留作歷史紀錄，不刪除；不進任何刊物，也不在網站知識庫列表顯示（網站隱藏由編輯 session 處理）。這筆從未刊出。
 
 ### 2026-10-11 期刊擴充評估（管理者決定）
 
