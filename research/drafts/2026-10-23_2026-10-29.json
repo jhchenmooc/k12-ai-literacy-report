@@ -553,6 +553,41 @@
       "audience": "k12",
       "screening_note": "Verified 2026-10-27 for daily brief 2026-10-27.",
       "verification_completed_on": "2026-10-27"
+    },
+    {
+      "candidate_id": "W2026-10-23-A17",
+      "category": "research",
+      "source_url": "https://doi.org/10.12973/eu-jer.16.1.91",
+      "source_title": "Generative AI and AI literacy in Elementary Education: A Systematic Review of Research published from 2021 to January 2026",
+      "source_organization": "European Journal of Educational Research (Eurasian Society of Educational Research)",
+      "source_publication_date": "2026-10-26",
+      "source_locator": "出版社文章頁（eu-jer.com，2026-10-27 讀取 200）：Online Pub. date October 26, 2026，citation_online_date 2026/10/26（卷期日 2027-01-15），Crossref published-online 同日；摘要歸屬：Abstract 第 2、3、5、7 句",
+      "discovered_on": "2026-10-27",
+      "discovery_batch_id": "2026-10-27-daily-2",
+      "first_disclosed_on": "2026-10-26",
+      "source_updates": [],
+      "original_excerpt": "A systematic literature review following the PRISMA 2020 guidelines was conducted to study implementations of Generative AI and methods of AI literacy education in elementary education. … The review data includes 211 studies published from 2021 to January 2026 identified from SCOPUS, EBSCO, Web of Science, and Taylor & Francis. … The analysis identifies fundamental issues affecting the implementation of Generative AI in elementary education, including concerns about human interaction, varying approaches to ethical questions, and frequent concerns regarding the reliability of Generative AI outputs. … Established use cases of Generative AI are identified, especially with self-regulated learning and foreign language studies.",
+      "source_checked": true,
+      "claim_text": "來源機構：European Journal of Educational Research (Eurasian Society of Educational Research)；資料標題：Generative AI and AI literacy in Elementary Education: A Systematic Review of Research published from 2021 to January 2026；來源刊登日：2026-10-26。作者摘要報告：依 PRISMA 2020 進行系統性文獻回顧，探討小學教育中生成式 AI 的應用方式與 AI 素養教育方法，納入 2021 年至 2026 年 1 月自四個資料庫檢得的 211 篇研究；作者指出小學導入生成式 AI 的根本議題包括對人際互動的疑慮、處理倫理問題的取向不一，以及對其產出可靠性的常見疑慮，並辨識出已確立的使用情境，尤其是自我調整學習與外語學習。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "期刊論文（European Journal of Educational Research，期刊自述同儕審查，未列於 DOAJ，審查程序未獨立核實；不在監測清單，管理者 2026-10-27 同意以單篇例外發布）；單一作者的系統性回顧，資料來源為四個資料庫，綜整既有研究。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-27 讀出版社文章頁摘要，擇第 2、3、5、7 句撰寫中文摘要與中文譯名；第二輪 2026-10-27 由隔離子代理逐項對照英文原句，判定大致一致，依建議補上回顧對象（生成式 AI 的應用方式與 AI 素養教育方法）、保留「尤其」的強調，譯名加「發表之」，為守字數刪去第 1 句研究問題，修正後一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-ETH",
+        "S-LRN"
+      ],
+      "ai_lit_note": "小學 AI 素養教育與生成式 AI 應用的系統性回顧，屬學生 AI 素養（A），對應 S-ETH「具備對AI的批判思考」、S-LRN「應用AI工具強化領域學習」",
+      "audience": "k12",
+      "doi": "10.12973/eu-jer.16.1.91",
+      "screening_note": "Verified 2026-10-27 for daily brief 2026-10-27 (same-day addition; manager approved a single-item exception for a venue outside the watchlist).",
+      "verification_completed_on": "2026-10-27"
     }
   ],
   "search_runs": [
@@ -1181,6 +1216,22 @@
         {
           "group": "taiwan-central",
           "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (latest 115-10-22; 10-23 and 10-26 issues not published) and RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-27-daily-2",
+      "searched_on": "2026-10-27",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Publisher article page for 10.12973/eu-jer.16.1.91 read 200; Crossref works record; DOAJ journal search for ISSN 2165-8714 (not listed)",
           "status": "ok"
         }
       ],
