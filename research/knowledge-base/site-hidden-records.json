@@ -1,0 +1,11 @@
+{
+ "note": "Knowledge-base records kept in the knowledge base but not listed on the public site for reasons other than AI literacy scope C (C records are in research/ai-literacy-c-records.json). Add a record only with the manager decision that hid it.",
+ "records": [
+  {
+   "record_id": "KB-2026-0129",
+   "decided_in": "research/venue-watchlist.md（不收出處：Diamond Scientific；PR #386）",
+   "decided_on": "2026-10-26",
+   "reason": "出版商在入庫後才列入不收出處；保留作歷史紀錄、不進刊物、網站知識庫列表不顯示"
+  }
+ ]
+}
