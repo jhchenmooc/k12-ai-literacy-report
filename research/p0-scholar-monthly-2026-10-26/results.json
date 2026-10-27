@@ -7,7 +7,8 @@
   "queries": 99,
   "failed": 0,
   "note": "OpenAlex publication_date 不是首發日；first_public_date 依出版者頁或預印本頁，讀不到時註明 Crossref 或 unknown",
-  "reviewer_note": "判讀與整合為同一模型，不算獨立審閱"
+  "reviewer_note": "判讀與整合為同一模型，不算獨立審閱",
+  "correction_2026_10_27": "管理者 2026-10-26 以瀏覽器提供出版者頁與 PDF：更新 10 筆首發日依據；2747551 改為社論排除；compedu.105767、stueduc.101698 對象改 higher_ed"
  },
  "runs": [
   {
@@ -1280,7 +1281,7 @@
    ],
    "audience": "k12",
    "first_public_date": "2026-10-05",
-   "first_public_basis": "Crossref published-online（SBC 頁連線被重置）",
+   "first_public_basis": "出版者頁（SBC）「Publicado 05/10/2026」（管理者 2026-10-26 瀏覽器提供）",
    "note": "巴西公立高中 1 位作文教師與 1 位教學協調員採用 AI 作文評分工具的經驗報告（35 名學生）"
   },
   {
@@ -1300,10 +1301,10 @@
    "ai_lit_dims": [
     "S-LRN"
    ],
-   "audience": "unknown",
-   "first_public_date": "unknown",
-   "first_public_basis": "Elsevier 頁 403",
-   "note": "生成式 AI 支援寫作內在回饋的叢集隨機實驗；學段不明"
+   "audience": "higher_ed",
+   "first_public_date": "2026-10-17",
+   "first_public_basis": "出版者 PDF「Available online 17 October 2026」（管理者提供）",
+   "note": "中國一所大學 368 名 STEM 大學生 14 週叢集隨機實驗，生成式 AI 支援寫作內在回饋（依全文；原對象 unknown，2026-10-27 更正）"
   },
   {
    "scholar_ids": [
@@ -1409,8 +1410,8 @@
     "S-LRN"
    ],
    "audience": "k12",
-   "first_public_date": "unknown",
-   "first_public_basis": "Elsevier 頁 403，Crossref 無 published-online",
+   "first_public_date": "2026-10-15",
+   "first_public_basis": "出版者 PDF「Available online 15 October 2026」（管理者提供）",
    "note": "臺灣 122 名七年級生在鷹架式生成式 AI 下的認識能動性（雙語探究單元）"
   },
   {
@@ -1537,15 +1538,13 @@
    "openalex_type": "article",
    "openalex_publication_date": "2026-10-21",
    "in_kb": false,
-   "status": "monthly_only",
-   "ai_lit_class": "A",
-   "ai_lit_dims": [
-    "S-BAS"
-   ],
+   "status": "excluded",
+   "ai_lit_class": "excluded",
+   "ai_lit_dims": [],
    "audience": "higher_ed",
    "first_public_date": "2026-10-21",
-   "first_public_basis": "Crossref published-online（T&F 頁 403）",
-   "note": "高教學習者能動性與人機協作（摘要截斷，類別待全文確認）"
+   "first_public_basis": "出版者 PDF「Published online: 21 Oct 2026」（管理者提供）",
+   "note": "社論（EDITORIAL，依全文），依慣例不收；原判 A，2026-10-27 更正"
   },
   {
    "scholar_ids": [
@@ -1721,7 +1720,7 @@
    ],
    "audience": "k12",
    "first_public_date": "2026-10-08",
-   "first_public_basis": "Crossref published-online（T&F 頁 403）",
+   "first_public_basis": "出版者 PDF「Published online: 08 Oct 2026」（管理者提供）",
    "note": "74 名中小學教師兩年縱貫訪談，自我決定論看 AI 融入；10/10 曾判 unknown（當時無摘要），本次依摘要改判"
   },
   {
@@ -1742,7 +1741,7 @@
    ],
    "audience": "higher_ed",
    "first_public_date": "2026-10-12",
-   "first_public_basis": "Crossref published-online（T&F 頁 403）",
+   "first_public_basis": "出版者 PDF「Published online: 12 Oct 2026」（管理者提供）",
    "note": "高教 AI 素養與能力螺旋模型，系統性回顧 18 篇"
   },
   {
@@ -1761,10 +1760,10 @@
    "ai_lit_dims": [
     "S-LRN"
    ],
-   "audience": "unknown",
-   "first_public_date": "unknown",
-   "first_public_basis": "Elsevier 頁 403",
-   "note": "AI 輔助同儕評量與第二語言字彙；學段不明（僅題名）"
+   "audience": "higher_ed",
+   "first_public_date": "2026-10-17",
+   "first_public_basis": "出版者 PDF「Available online 17 October 2026」（管理者提供）",
+   "note": "74 名大學 EFL 學生三班 16 週，AI 輔助同儕評量與字彙（依全文；原對象 unknown，2026-10-27 更正）"
   },
   {
    "scholar_ids": [
@@ -1806,7 +1805,7 @@
    ],
    "audience": "k12",
    "first_public_date": "2026-10-23",
-   "first_public_basis": "Crossref published-print 2026-10-23（出版者頁 403，無 published-online）",
+   "first_public_basis": "Crossref published-print 2026-10-23；出版者 PDF 只載卷期 2-2026（管理者提供）",
    "note": "立場論文，以瑞典國中課堂觀察與訪談檢討 AI 素養目的（Biesta 世界中心教育）"
   },
   {
@@ -2033,7 +2032,7 @@
    ],
    "audience": "higher_ed",
    "first_public_date": "2026-10-20",
-   "first_public_basis": "Crossref published-online（Wiley 頁 403）",
+   "first_public_basis": "Crossref published-online；Wiley PDF 只載 Accepted 2026-10-08（管理者提供），出版者上線日待核",
    "note": "64 名中國大學生 16 週準實驗，生成式 AI 擔任小組調節者"
   },
   {
@@ -2208,9 +2207,9 @@
     "S-LRN"
    ],
    "audience": "k12",
-   "first_public_date": "unknown",
-   "first_public_basis": "Elsevier 頁 403；Crossref 只有 2026-11 卷期",
-   "note": "AI 個別化對話練習支持一年級生提問（僅題名，無摘要）"
+   "first_public_date": "2026-10-15",
+   "first_public_basis": "出版者 PDF「Available online 15 October 2026」（管理者提供）",
+   "note": "190 名一年級生（6–7 歲）七週一對一 AI 對話練習與提問（依全文）"
   },
   {
    "scholar_ids": [

@@ -489,8 +489,8 @@
    "source_url": "https://doi.org/10.1016/j.compedu.2026.105767",
    "source_title": "GenAI-supported internal feedback intervention for writing improvement: The roles of evaluative judgment and student-AI interaction in a cluster-randomized experimental study",
    "source_organization": "Computers & Education",
-   "source_publication_date": "unknown",
-   "source_locator": "Elsevier 頁 403",
+   "source_publication_date": "2026-10-17",
+   "source_locator": "出版者 PDF「Available online 17 October 2026」（管理者提供）",
    "doi": "10.1016/j.compedu.2026.105767",
    "category": "research",
    "original_excerpt": "",
@@ -499,8 +499,8 @@
    "ai_lit_dims": [
     "S-LRN"
    ],
-   "ai_lit_note": "生成式 AI 支援寫作內在回饋的叢集隨機實驗；學段不明",
-   "audience": "unknown"
+   "ai_lit_note": "中國一所大學 368 名 STEM 大學生 14 週叢集隨機實驗，生成式 AI 支援寫作內在回饋（依全文；原對象 unknown，2026-10-27 更正）",
+   "audience": "higher_ed"
   },
   {
    "source_url": "https://doi.org/10.1108/ajim-02-2026-0186",
@@ -552,16 +552,14 @@
    "source_title": "Learner agency and human-AI collaboration: shaping hybrid intelligence for the future of higher education",
    "source_organization": "Studies in Higher Education",
    "source_publication_date": "2026-10-21",
-   "source_locator": "Crossref published-online（T&F 頁 403）",
+   "source_locator": "出版者 PDF「Published online: 21 Oct 2026」（管理者提供）",
    "doi": "10.1080/03075079.2026.2747551",
    "category": "research",
    "original_excerpt": "",
    "scope_limitation": "版本：正式版（Studies in Higher Education）；對象：大學；高教學習者能動性與人機協作（摘要截斷，類別待全文確認）；首發依據：Crossref published-online（T&F 頁 403）；本刊追蹤學者 H02 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
-   "ai_lit_class": "A",
-   "ai_lit_dims": [
-    "S-BAS"
-   ],
-   "ai_lit_note": "高教學習者能動性與人機協作（摘要截斷，類別待全文確認）",
+   "ai_lit_class": "unknown",
+   "ai_lit_dims": [],
+   "ai_lit_note": "社論（EDITORIAL，依全文），依慣例不收；原判 A，2026-10-27 更正",
    "audience": "higher_ed"
   },
   {
@@ -614,7 +612,7 @@
    "source_title": "A new spiral model of AI literacy and competency in higher education developed through a systematic literature review",
    "source_organization": "Interactive Learning Environments",
    "source_publication_date": "2026-10-12",
-   "source_locator": "Crossref published-online（T&F 頁 403）",
+   "source_locator": "出版者 PDF「Published online: 12 Oct 2026」（管理者提供）",
    "doi": "10.1080/10494820.2026.2735920",
    "category": "research",
    "original_excerpt": "",
@@ -630,8 +628,8 @@
    "source_url": "https://doi.org/10.1016/j.stueduc.2026.101698",
    "source_title": "Unearthing the impacts of AI-assisted peer assessment on L2 vocabulary acquisition and academic resilience",
    "source_organization": "Studies In Educational Evaluation",
-   "source_publication_date": "unknown",
-   "source_locator": "Elsevier 頁 403",
+   "source_publication_date": "2026-10-17",
+   "source_locator": "出版者 PDF「Available online 17 October 2026」（管理者提供）",
    "doi": "10.1016/j.stueduc.2026.101698",
    "category": "research",
    "original_excerpt": "",
@@ -640,8 +638,8 @@
    "ai_lit_dims": [
     "S-LRN"
    ],
-   "ai_lit_note": "AI 輔助同儕評量與第二語言字彙；學段不明（僅題名）",
-   "audience": "unknown"
+   "ai_lit_note": "74 名大學 EFL 學生三班 16 週，AI 輔助同儕評量與字彙（依全文；原對象 unknown，2026-10-27 更正）",
+   "audience": "higher_ed"
   },
   {
    "source_url": "https://doi.org/10.1007/s42438-026-00710-z",
@@ -693,7 +691,7 @@
    "source_title": "Generative AI as a team moderator in CSCL : Facilitating students' multidimensional engagement through adaptive scaffolding for socially shared regulation of learning",
    "source_organization": "British Journal of Educational Technology",
    "source_publication_date": "2026-10-20",
-   "source_locator": "Crossref published-online（Wiley 頁 403）",
+   "source_locator": "Crossref published-online；Wiley PDF 只載 Accepted 2026-10-08（管理者提供），出版者上線日待核",
    "doi": "10.1111/bjet.70096",
    "category": "research",
    "original_excerpt": "",

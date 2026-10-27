@@ -77,3 +77,23 @@
 - **只依題名判斷：** `appdev.102014`、`stueduc.101698`、`compedu.105767`、`compedu.105773`。
 - **Semantic Scholar：** 多數查詢被限流（429）。
 - **收錄落差：** OpenAlex 的收錄可能落後，10/31 補跑會再查一次。
+
+## 更正（2026-10-27）
+
+管理者 2026-10-26 以瀏覽器提供出版者頁與 PDF（存私人 repo，不放公開 repo）。results.json 與月報專用批次檔已更新；週候選批次檔維持匯入時原樣，候選 A11～A15 的更新由編輯 session 處理。
+
+| DOI | 原記 | 更正 |
+|---|---|---|
+| `wie.2026.28044` | 10-05（Crossref） | 10-05（出版者頁 Publicado） |
+| `compedu.2026.105769` | unknown | 10-15（Elsevier PDF Available online） |
+| `10494820.2026.2744403` | 10-08（Crossref） | 10-08（T&F PDF Published online） |
+| `appdev.2026.102014` | unknown | 10-15（Elsevier PDF）；190 名一年級生 |
+| `10494820.2026.2735920` | 10-12（Crossref） | 10-12（T&F PDF） |
+| `compedu.2026.105767` | unknown，對象 unknown | 10-17（Elsevier PDF）；對象 higher_ed（368 名 STEM 大學生） |
+| `stueduc.2026.101698` | unknown，對象 unknown | 10-17（Elsevier PDF）；對象 higher_ed（74 名大學 EFL 學生） |
+| `03075079.2026.2747551` | A，higher_ed | 社論（EDITORIAL），排除 |
+| `bjet.70096` | 10-20（Crossref） | 不變；Wiley PDF 只有接受日，出版者上線日待核 |
+| `njdl.21.2.4` | 10-23（Crossref print） | 不變；PDF 只有卷期 |
+
+- **月報第 2 項可用（入庫並核到 `bibliographic_checked` 後）：** `2735920`（H11）、`s44163-…02298-6`（V04）、`s41239-…00627-4`（V13、V14）、`compedu.105767`（S02、S07）、`stueduc.101698`（H11）。
+- **每人上限：** H11 本月有 3 篇合格（另含週候選 `2744403`），超過每人 2 則；管理者 2026-10-26 同意建議，留 `2735920` 與 `stueduc.101698`。
