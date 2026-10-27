@@ -3,6 +3,16 @@
   "note": "更正與改版紀錄（第二次三刊聯合評審 E3e，管理者 2026-10-17）。每筆列出舊說法、新說法、日期與原因；頁面 corrections/index.html 由 research/render-site.js 依本檔產生。",
   "entries": [
     {
+      "id": "daily-2026-10-27-r1",
+      "date": "2026-10-27",
+      "path": "daily/2026-10-27/",
+      "target": "每日短訊 2026-10-27",
+      "type": "補登",
+      "old": "1 則（臺灣）；European Journal of Educational Research 一篇小學生成式 AI 與 AI 素養系統性回顧因期刊不在監測清單，只列觀察。",
+      "new": "補登 D20261027-02（European Journal of Educational Research 小學生成式 AI 與 AI 素養系統性回顧，作者摘要歸屬型；期刊自述同儕審查，未列於 DOAJ，限制欄註明）。",
+      "reason": "管理者當日決定以單篇例外發布（期刊不加入監測清單）；首次公開日在本期前 7 天內，出版社頁與摘要可核對。"
+    },
+    {
       "id": "daily-2026-10-24-r1",
       "date": "2026-10-24",
       "path": "daily/2026-10-24/",
