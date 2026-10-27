@@ -77,7 +77,9 @@ function load(root){
  });
  // AI literacy scope C records stay in the knowledge base but are not listed on the site.
  const cFile=path.join(root,"research","ai-literacy-c-records.json");
- const hidden=fs.existsSync(cFile)?JSON.parse(fs.readFileSync(cFile,"utf8")).records.map(x=>x.record_id):[];
+ // Other records the manager decided not to list (for example, sources later put on the exclusion list).
+ const hFile=path.join(root,"research","knowledge-base","site-hidden-records.json");
+ const hidden=[cFile,hFile].filter(f=>fs.existsSync(f)).flatMap(f=>JSON.parse(fs.readFileSync(f,"utf8")).records.map(x=>x.record_id));
  // Chinese titles for non-Chinese official documents (manager 2026-10-21): from the intake reports or the editor's translation.
  const zFile=path.join(kb,"titles_zh.csv"),titlesZh=fs.existsSync(zFile)?parseCsv(fs.readFileSync(zFile,"utf8")):[];
  return {records:read("records"),relations:read("relations"),venues,editions,hidden,titlesZh};
