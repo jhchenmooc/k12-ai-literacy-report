@@ -362,7 +362,7 @@
       "source_title": "Evaluating an AI-Powered Learning Analytics Tool for Automated Essay Scoring in Real Classroom Contexts: An Experience Report from a Brazilian Public Secondary School",
       "source_organization": "unknown",
       "source_publication_date": "2026-10-05",
-      "source_locator": "Crossref published-online（SBC 頁連線被重置）",
+      "source_locator": "出版者頁（SBC）「Publicado 05/10/2026」，citation_date 同日；Crossref published-online 同日",
       "discovered_on": "2026-10-26",
       "discovery_batch_id": "2026-10-26-scholar-M-1",
       "first_disclosed_on": null,
@@ -386,7 +386,7 @@
       "ai_lit_note": "巴西公立高中 1 位作文教師與 1 位教學協調員採用 AI 作文評分工具的經驗報告（35 名學生）",
       "audience": "k12",
       "doi": "10.5753/wie.2026.28044",
-      "screening_note": "30-day backfill/background: earlier than issue period; Discovery only, hold pending first-disclosure check."
+      "screening_note": "2026-10-27 依管理者提供的出版者全文核對首發日（私人 repo from-literature-session/scholar-monthly-1026/；學段 upper_secondary）；維持 hold，待週報或月報選用時再改 publish 並升知識庫紀錄（管理者 2026-10-27 甲）。"
     },
     {
       "candidate_id": "W2026-10-23-A12",
@@ -394,8 +394,8 @@
       "source_url": "https://doi.org/10.1016/j.compedu.2026.105769",
       "source_title": "Investigating secondary school students’ shared epistemic agency with GAI in online scientific explanation writing",
       "source_organization": "Computers & Education",
-      "source_publication_date": "unknown",
-      "source_locator": "Elsevier 頁 403，Crossref 無 published-online",
+      "source_publication_date": "2026-10-15",
+      "source_locator": "出版者 PDF「Available online 15 October 2026」",
       "discovered_on": "2026-10-26",
       "discovery_batch_id": "2026-10-26-scholar-M-1",
       "first_disclosed_on": null,
@@ -419,7 +419,7 @@
       "ai_lit_note": "臺灣 122 名七年級生在鷹架式生成式 AI 下的認識能動性（雙語探究單元）",
       "audience": "k12",
       "doi": "10.1016/j.compedu.2026.105769",
-      "screening_note": "Original publication date unknown; Discovery only, hold pending first-disclosure check."
+      "screening_note": "2026-10-27 依管理者提供的出版者全文核對首發日（私人 repo from-literature-session/scholar-monthly-1026/；學段 lower_secondary）；維持 hold，待週報或月報選用時再改 publish 並升知識庫紀錄（管理者 2026-10-27 甲）。"
     },
     {
       "candidate_id": "W2026-10-23-A13",
@@ -428,7 +428,7 @@
       "source_title": "Integrating artificial intelligence into K-12 school education through self-determination theory from a longitudinal study: opportunities, challenges, and future direction",
       "source_organization": "Interactive Learning Environments",
       "source_publication_date": "2026-10-08",
-      "source_locator": "Crossref published-online（T&F 頁 403）",
+      "source_locator": "出版者 PDF「Published online: 08 Oct 2026」",
       "discovered_on": "2026-10-26",
       "discovery_batch_id": "2026-10-26-scholar-M-1",
       "first_disclosed_on": null,
@@ -452,7 +452,7 @@
       "ai_lit_note": "74 名中小學教師兩年縱貫訪談，自我決定論看 AI 融入；10/10 曾判 unknown（當時無摘要），本次依摘要改判",
       "audience": "k12",
       "doi": "10.1080/10494820.2026.2744403",
-      "screening_note": "30-day backfill/background: earlier than issue period; Discovery only, hold pending first-disclosure check."
+      "screening_note": "2026-10-27 依管理者提供的出版者全文核對首發日（私人 repo from-literature-session/scholar-monthly-1026/；學段 k12_multi）；維持 hold，待週報或月報選用時再改 publish 並升知識庫紀錄（管理者 2026-10-27 甲）。"
     },
     {
       "candidate_id": "W2026-10-23-A14",
@@ -461,7 +461,7 @@
       "source_title": "Towards a world-centred AI literacy in middle school education? Reflections from a Swedish case",
       "source_organization": "Nordic Journal of Digital Literacy",
       "source_publication_date": "2026-10-23",
-      "source_locator": "Crossref published-print 2026-10-23（出版者頁 403，無 published-online）",
+      "source_locator": "Crossref published-print 2026-10-23（出版者頁 403；PDF 只載卷期 2-2026，無上線日）；同儕審查文章，CC BY 4.0",
       "discovered_on": "2026-10-26",
       "discovery_batch_id": "2026-10-26-scholar-M-1",
       "first_disclosed_on": null,
@@ -486,7 +486,7 @@
       "ai_lit_note": "立場論文，以瑞典國中課堂觀察與訪談檢討 AI 素養目的（Biesta 世界中心教育）",
       "audience": "k12",
       "doi": "10.18261/njdl.21.2.4",
-      "screening_note": "Discovery only, hold pending first-disclosure check."
+      "screening_note": "2026-10-27 核對：出版者頁 403、PDF 只載卷期，首發日僅 Crossref published-print，維持 discovered_unverified（私人 repo from-literature-session/scholar-monthly-1026/）；維持 hold。"
     },
     {
       "candidate_id": "W2026-10-23-A15",
@@ -494,8 +494,8 @@
       "source_url": "https://doi.org/10.1016/j.appdev.2026.102014",
       "source_title": "Individualized dialogic practice delivered through AI supports first graders' question-asking",
       "source_organization": "Journal of Applied Developmental Psychology",
-      "source_publication_date": "unknown",
-      "source_locator": "Elsevier 頁 403；Crossref 只有 2026-11 卷期",
+      "source_publication_date": "2026-10-15",
+      "source_locator": "出版者 PDF「Available online 15 October 2026」",
       "discovered_on": "2026-10-26",
       "discovery_batch_id": "2026-10-26-scholar-M-1",
       "first_disclosed_on": null,
@@ -519,7 +519,7 @@
       "ai_lit_note": "AI 個別化對話練習支持一年級生提問（僅題名，無摘要）",
       "audience": "k12",
       "doi": "10.1016/j.appdev.2026.102014",
-      "screening_note": "Original publication date unknown; Discovery only, hold pending first-disclosure check."
+      "screening_note": "2026-10-27 依管理者提供的出版者全文核對首發日（私人 repo from-literature-session/scholar-monthly-1026/；學段 primary）；維持 hold，待週報或月報選用時再改 publish 並升知識庫紀錄（管理者 2026-10-27 甲）。"
     }
   ],
   "search_runs": [
