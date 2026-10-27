@@ -92,8 +92,8 @@
 | `compedu.2026.105767` | unknown，對象 unknown | 10-17（Elsevier PDF）；對象 higher_ed（368 名 STEM 大學生） |
 | `stueduc.2026.101698` | unknown，對象 unknown | 10-17（Elsevier PDF）；對象 higher_ed（74 名大學 EFL 學生） |
 | `03075079.2026.2747551` | A，higher_ed | 社論（EDITORIAL），排除 |
-| `bjet.70096` | 10-20（Crossref） | 不變；Wiley PDF 只有接受日，出版者上線日待核 |
+| `bjet.70096` | 10-20（Crossref） | 10-20（Wiley 頁 First published，管理者 2026-10-27 截圖） |
 | `njdl.21.2.4` | 10-23（Crossref print） | 不變；PDF 只有卷期 |
 
-- **月報第 2 項可用（入庫並核到 `bibliographic_checked` 後）：** `2735920`（H11）、`s44163-…02298-6`（V04）、`s41239-…00627-4`（V13、V14）、`compedu.105767`（S02、S07）、`stueduc.101698`（H11）。
+- **月報第 2 項可用（入庫並核到 `bibliographic_checked` 後）：** `2735920`（H11）、`s44163-…02298-6`（V04）、`s41239-…00627-4`（V13、V14）、`compedu.105767`（S02、S07）、`stueduc.101698`（H11）、`bjet.70096`（H31）。
 - **每人上限：** H11 本月有 3 篇合格（另含週候選 `2744403`），超過每人 2 則；管理者 2026-10-26 同意建議，留 `2735920` 與 `stueduc.101698`。
