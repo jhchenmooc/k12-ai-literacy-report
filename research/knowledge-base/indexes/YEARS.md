@@ -1699,6 +1699,12 @@
 | KB-2026-0441 — [Exploring learner–parent–AI interaction patterns in an AI-supported EFL learning game during informal learning: insights from sequence analysis and epistemic network analysis](https://doi.org/10.1186/s40561-026-00472-y) | journal_article | 2026-10-01 | discovered_unverified |
 | KB-2026-0442 — [From AI Intuition to AI Literacy: A Dual Framework for K-12 Education](https://doi.org/10.52358/mm.vi25.576) | journal_article | 2026-08-28 | bibliographic_checked |
 | KB-2026-0443 — [Revisiting Pedagogical Content Knowledge (PCK) development for the age of Generative AI](https://doi.org/10.1016/j.caeo.2026.100428) | journal_article | 2026-10-24 | bibliographic_checked |
+| KB-2026-0449 — [A new spiral model of AI literacy and competency in higher education developed through a systematic literature review](https://doi.org/10.1080/10494820.2026.2735920) | journal_article | 2026-10-12 | bibliographic_checked |
+| KB-2026-0450 — [Cohort-level growth modeling of ethical engagement with artificial intelligence in education](https://doi.org/10.1007/s44163-026-02298-6) | journal_article | 2026-10-12 | bibliographic_checked |
+| KB-2026-0451 — [Higher education assessments in the age of GenAI: a systematic review](https://doi.org/10.1186/s41239-026-00627-4) | journal_article | 2026-10-16 | bibliographic_checked |
+| KB-2026-0452 — [GenAI-supported internal feedback intervention for writing improvement: The roles of evaluative judgment and student-AI interaction in a cluster-randomized experimental study](https://doi.org/10.1016/j.compedu.2026.105767) | journal_article | 2026-10-17 | bibliographic_checked |
+| KB-2026-0453 — [Unearthing the impacts of AI-assisted peer assessment on L2 vocabulary acquisition and academic resilience](https://doi.org/10.1016/j.stueduc.2026.101698) | journal_article | 2026-10-17 | bibliographic_checked |
+| KB-2026-0454 — [Generative AI as a team moderator in CSCL: Facilitating students' multidimensional engagement through adaptive scaffolding for socially shared regulation of learning](https://doi.org/10.1111/bjet.70096) | journal_article | 2026-10-20 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
