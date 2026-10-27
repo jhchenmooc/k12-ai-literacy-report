@@ -1,0 +1,40 @@
+{
+ "source": "European Journal of Educational Research",
+ "openalex": "S2765049135",
+ "requests": [
+  {
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2765049135%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-27&per_page=1&select=id",
+   "utc": "2026-10-27T00:58:48Z",
+   "http": 200,
+   "count": 163
+  },
+  {
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2765049135%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-27%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-27T00:58:48Z",
+   "http": 200,
+   "count": 7
+  },
+  {
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2765049135%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-27%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-27T00:58:49Z",
+   "http": 200,
+   "count": 9
+  },
+  {
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS2765049135%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-27%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-27T00:58:49Z",
+   "http": 200,
+   "count": 4
+  }
+ ],
+ "results": {
+  "total": 163,
+  "no_abstract": 7,
+  "ai": 9,
+  "ai_k12": 4
+ }
+}
