@@ -50,5 +50,57 @@
    "為逐步提升學校教師媒體素養知能與融入策略，國教署亦訂定「中小學媒體素養基地學校計畫」， 115學年度補助國立師大附中、國立竹南高中、國立興大附農、國立虎尾高中、國立新化高中、國立善化高中及長榮中學等7校成立基地學校，藉由媒體素養基地學校積極推動，結合AI新興科技發展趨勢，協助教師研發媒體素養相關教材教案。"
   ],
   "attributed_summary": "國教署辦理「中小學媒體素養競賽」，鼓勵教師將媒體素養新興議題融入各學科或領域；另，國立興大附農教師設計 3 節課教案，結合資訊科技與公民領域，以「破解 AI 幻覺」等三階段活動，引導學生掌握 AI 時代的資訊判讀與查核能力；國教署並補助 7 校成立媒體素養基地學校，藉由基地學校推動並結合 AI 新興科技發展趨勢，協助教師研發媒體素養相關教材教案。"
+ },
+ {
+  "claim_id": "D20261027-02",
+  "candidate_id": "W2026-10-23-A17",
+  "kind": "research",
+  "claim_text": "來源機構：European Journal of Educational Research (Eurasian Society of Educational Research)；資料標題：Generative AI and AI literacy in Elementary Education: A Systematic Review of Research published from 2021 to January 2026；來源刊登日：2026-10-26。作者摘要報告：依 PRISMA 2020 進行系統性文獻回顧，探討小學教育中生成式 AI 的應用方式與 AI 素養教育方法，納入 2021 年至 2026 年 1 月自四個資料庫檢得的 211 篇研究；作者指出小學導入生成式 AI 的根本議題包括對人際互動的疑慮、處理倫理問題的取向不一，以及對其產出可靠性的常見疑慮，並辨識出已確立的使用情境，尤其是自我調整學習與外語學習。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "V2",
+  "daily_fact_kind": "research_abstract_attributed_summary",
+  "source_document_type": "peer_reviewed_article",
+  "source_title": "Generative AI and AI literacy in Elementary Education: A Systematic Review of Research published from 2021 to January 2026",
+  "title_zh": "小學教育中的生成式 AI 與 AI 素養：2021 年至 2026 年 1 月發表之研究的系統性回顧",
+  "source_organization": "European Journal of Educational Research (Eurasian Society of Educational Research)",
+  "source_url": "https://doi.org/10.12973/eu-jer.16.1.91",
+  "evidence_source_url": "https://doi.org/10.12973/eu-jer.16.1.91",
+  "source_locator": "出版社文章頁（eu-jer.com，2026-10-27 讀取 200）：Online Pub. date October 26, 2026，citation_online_date 2026/10/26（卷期日 2027-01-15），Crossref published-online 同日；摘要歸屬：Abstract 第 2、3、5、7 句",
+  "source_type": "research_publication",
+  "checked_at": "2026-10-27",
+  "publication_date": "2026-10-26",
+  "first_disclosed_on": "2026-10-26",
+  "evidence_path": "publication/sources/d2026-10-27-a02-eujer.txt",
+  "evidence_sha256": "da634e9d4e01cafeb0919a31d9583b10435bc24cde6cc33760c13585755f2070",
+  "original_excerpt": "A systematic literature review following the PRISMA 2020 guidelines was conducted to study implementations of Generative AI and methods of AI literacy education in elementary education. … The review data includes 211 studies published from 2021 to January 2026 identified from SCOPUS, EBSCO, Web of Science, and Taylor & Francis. … The analysis identifies fundamental issues affecting the implementation of Generative AI in elementary education, including concerns about human interaction, varying approaches to ethical questions, and frequent concerns regarding the reliability of Generative AI outputs. … Established use cases of Generative AI are identified, especially with self-regulated learning and foreign language studies.",
+  "interpretation_note": "轉述作者摘要的回顧方法、範圍、納入篇數與作者歸納的議題及使用情境；屬文獻回顧，不含新蒐集的師生資料。",
+  "scope_limitation": "期刊論文（European Journal of Educational Research，期刊自述同儕審查，未列於 DOAJ，審查程序未獨立核實；不在監測清單，管理者 2026-10-27 同意以單篇例外發布）；單一作者的系統性回顧，資料來源為四個資料庫，綜整既有研究。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "decision": "publish",
+  "ai_crosscheck_record": "第一輪 2026-10-27 讀出版社文章頁摘要，擇第 2、3、5、7 句撰寫中文摘要與中文譯名；第二輪 2026-10-27 由隔離子代理逐項對照英文原句，判定大致一致，依建議補上回顧對象（生成式 AI 的應用方式與 AI 素養教育方法）、保留「尤其」的強調，譯名加「發表之」，為守字數刪去第 1 句研究問題，修正後一致。同一模型，非獨立審閱。",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "S-ETH",
+   "S-LRN"
+  ],
+  "ai_lit_note": "小學 AI 素養教育與生成式 AI 應用的系統性回顧，屬學生 AI 素養（A），對應 S-ETH「具備對AI的批判思考」、S-LRN「應用AI工具強化領域學習」",
+  "audience": "k12",
+  "summary_evidence_spans": [
+   "A systematic literature review following the PRISMA 2020 guidelines was conducted to study implementations of Generative AI and methods of AI literacy education in elementary education.",
+   "The review data includes 211 studies published from 2021 to January 2026 identified from SCOPUS, EBSCO, Web of Science, and Taylor & Francis.",
+   "The analysis identifies fundamental issues affecting the implementation of Generative AI in elementary education, including concerns about human interaction, varying approaches to ethical questions, and frequent concerns regarding the reliability of Generative AI outputs.",
+   "Established use cases of Generative AI are identified, especially with self-regulated learning and foreign language studies."
+  ],
+  "attributed_summary": "依 PRISMA 2020 進行系統性文獻回顧，探討小學教育中生成式 AI 的應用方式與 AI 素養教育方法，納入 2021 年至 2026 年 1 月自四個資料庫檢得的 211 篇研究；作者指出小學導入生成式 AI 的根本議題包括對人際互動的疑慮、處理倫理問題的取向不一，以及對其產出可靠性的常見疑慮，並辨識出已確立的使用情境，尤其是自我調整學習與外語學習。"
  }
 ]

@@ -1,11 +1,11 @@
-# 每日短訊查核紀錄：2026-10-27（1 則）
+# 每日短訊查核紀錄：2026-10-27（2 則，含當日補登 1 則）
 
 > 每日短訊例行作業，由排程觸發，在每日短訊專用 session 執行。
 >
 > - **檢索：** 同 session 三個子代理（國際研究、國際政策、臺灣中央來源）執行，判讀由本 session 複核；臺灣一則由本 session 重讀原頁。
 > - **查詢時間：** 2026-10-27T00:20Z–00:35Z（UTC）。
 > - **請求紀錄：** 都沒帶 email 或 mailto。Wiley 回 Cloudflare 403、nature.com 回 429，都未繞過。
-> - **結果：發布 1 則**（臺灣 1 則；國際研究、國際政策 0 則）。
+> - **結果：** 晨間發布 1 則（臺灣）。同日補登國際研究 1 則（觀察項，管理者同意以單篇例外發布），見文末補記；國際政策 0 則。
 
 ## 國際
 
@@ -144,8 +144,19 @@
 
 ## 請管理者用瀏覽器處理（2026-10-27）
 
-1. https://doi.org/10.1111/bjet.70095 （J04 BJET〈GenAI-based metacognitive prompting in collaborative inquiry〉；Wiley 回 Cloudflare 驗證頁，摘要未寫學段）
-   - 要什麼：文章頁 Methods 的參與者段（學段或年齡）與「First published」日期，截圖或全文 PDF。
-   - 拿到後：若為中小學生，可補發（首次公開 10-25，期限 11-01）。
+今日無。J04 BJET `10.1111/bjet.70095` 已於同日處理，見補記。
 
-前幾日清單已處理完畢，無延續項目。
+## 補記（2026-10-27，晨間發布後）
+
+- **補登 D20261027-02：** `10.12973/eu-jer.16.1.91` European Journal of Educational Research，Lakkonen〈Generative AI and AI literacy in Elementary Education: A Systematic Review of Research published from 2021 to January 2026〉。
+  - **發布依據：** 期刊不在監測清單，管理者當日決定以單篇例外發布，期刊不加入清單。期刊網站自述為同儕審查期刊；DOAJ 查無此刊（ISSN 2165-8714），審查程序未獨立核實，限制欄已註明。
+  - **首發日：** 2026-10-26，依出版社頁「Online Pub. date: October 26, 2026」（卷期日 2027-01-15），與 Crossref published-online 一致。
+  - **摘要依據：** 摘要第 2、3、5、7 句。
+  - **判定：** A（S-ETH、S-LRN），對象 k12（小學）。
+  - **第二輪對照：** 隔離子代理判定大致一致。依建議補上回顧對象、保留「尤其」的強調、譯名加「發表之」；為守 180 字上限，刪去第 1 句研究問題。修正後一致。
+  - **編號：** 候選池 W2026-10-23-A17（batch 2026-10-27-daily-2）；知識庫 KB-2026-0456（KR-15293～15301）。
+  - **更正紀錄：** `publication/issues.json` 加 revised_on 2026-10-27，`publication/corrections.json` 加 daily-2026-10-27-r1。
+- **瀏覽器清單（J04 BJET `10.1111/bjet.70095`）：** 管理者提供文章頁截圖與全文 PDF。
+  - 文章頁顯示「First published: 25 October 2026」。
+  - 全文 Methods「Participants and context」寫明研究在芬蘭一所大學進行，對象為 52 名職前教師。
+  - 判 teacher_ed，不發。PDF 存入受限 repo 並登記。
