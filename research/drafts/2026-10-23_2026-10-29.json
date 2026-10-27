@@ -520,6 +520,39 @@
       "audience": "k12",
       "doi": "10.1016/j.appdev.2026.102014",
       "screening_note": "2026-10-27 依管理者提供的出版者全文核對首發日（私人 repo from-literature-session/scholar-monthly-1026/；學段 primary）；維持 hold，待週報或月報選用時再改 publish 並升知識庫紀錄（管理者 2026-10-27 甲）。"
+    },
+    {
+      "candidate_id": "W2026-10-23-A16",
+      "category": "news_policy",
+      "source_url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=460ADCA7F6C10978",
+      "source_title": "走進學生生活日常 深耕媒體素養教育",
+      "source_organization": "教育部國民及學前教育署",
+      "source_publication_date": "2026-10-26",
+      "source_locator": "教育部即時新聞頁（發布單位國教署，上版日期 115-10-26；RSS pubDate 2026-10-26 08:30 臺灣時間）；摘要歸屬：第 1 段第 2 句、第 4 段第 1、2 句、第 5 段第 1 句",
+      "discovered_on": "2026-10-27",
+      "discovery_batch_id": "2026-10-27-daily-1",
+      "first_disclosed_on": "2026-10-26",
+      "source_updates": [],
+      "original_excerpt": "為培養學生媒體識讀能力，教育部國教署辦理「中小學媒體素養競賽」，鼓勵教師將媒體素養之新興議題融入各學科或各領域，研發創新教材教案。 … 國立興大附農為強化學生在生成式AI時代的資訊判讀與查核能力，由詹佳蓉教師、黃靖旻教師設計3節課的「真相築基：我的 AI 實事求證筆記」創新教案。 … 課程結合資訊科技與公民領域，透過「破解AI 幻覺」、「根源式AI實作」與「多模態產出與反思」三階段學習活動，引導學生掌握AI時代所需的資訊判讀與查核能力。 … 為逐步提升學校教師媒體素養知能與融入策略，國教署亦訂定「中小學媒體素養基地學校計畫」， 115學年度補助國立師大附中、國立竹南高中、國立興大附農、國立虎尾高中、國立新化高中、國立善化高中及長榮中學等7校成立基地學校，藉由媒體素養基地學校積極推動，結合AI新興科技發展趨勢，協助教師研發媒體素養相關教材教案。",
+      "source_checked": true,
+      "claim_text": "來源機構：教育部國民及學前教育署；資料標題：走進學生生活日常 深耕媒體素養教育；來源刊登日：2026-10-26。官方文件表示：國教署辦理「中小學媒體素養競賽」，鼓勵教師將媒體素養新興議題融入各學科或領域；另，國立興大附農教師設計 3 節課教案，結合資訊科技與公民領域，以「破解 AI 幻覺」等三階段活動，引導學生掌握 AI 時代的資訊判讀與查核能力；國教署並補助 7 校成立媒體素養基地學校，藉由基地學校推動並結合 AI 新興科技發展趨勢，協助教師研發媒體素養相關教材教案。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "中央機關新聞稿（媒體素養競賽與基地學校計畫），對象為中小學教師與學生；新聞主軸為媒體素養，AI 相關內容為其中一份高中教案與基地學校計畫的一部分；新聞未寫競賽屆次與得獎公布日期。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-27 子代理讀教育部即時新聞 RSS 與文章頁，本 session 重讀原頁，擇第 1 段第 2 句、第 4 段第 1、2 句與第 5 段第 1 句撰寫中文摘要；第二輪 2026-10-27 由隔離子代理逐項對照原文，判定基本一致，依建議加「另，」避免暗示教案即參賽作品、恢復「媒體素養相關教材教案」、寫明藉由基地學校推動，並刪去依據偏弱的 S-BAS 對應。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-ETH"
+      ],
+      "ai_lit_note": "高中教案以生成式 AI 時代的資訊判讀與查核為目標（新聞主軸為媒體素養，AI 為部分內容），屬學生 AI 素養（A），對應 S-ETH「具備對AI的批判思考」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-10-27 for daily brief 2026-10-27.",
+      "verification_completed_on": "2026-10-27"
     }
   ],
   "search_runs": [
@@ -1122,6 +1155,37 @@
       ],
       "discovered": 5,
       "added": 5,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-27-daily-1",
+      "searched_on": "2026-10-27",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-10-26,until-created-date:2026-10-27,type:journal-article, six query.bibliographic sets rows=40, proceedings-article sets, watchlist-ISSN sets (24 journals incl. J51, with and without keywords); pedagogical AI agent sets on Crossref and OpenAlex; publisher pages one try each (Springer 200; Wiley 403; nature.com 429)",
+          "status": "ok"
+        },
+        {
+          "group": "preprint",
+          "query": "arXiv API (https) three queries 40/40/100 plus pedagogical AI agent query; alphaXiv discover_papers one set",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search and Content API, Federal Register (10-27 issue not yet out; public inspection), MEXT (10-23 press conference text not yet uploaded), China MOE (15 sections incl. corrected press-conference path), HK info.gov.hk 10-26, KICE, MOE Korea, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (latest 115-10-22; 10-23 and 10-26 issues not published) and RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ],
