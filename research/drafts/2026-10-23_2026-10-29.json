@@ -588,6 +588,74 @@
       "doi": "10.12973/eu-jer.16.1.91",
       "screening_note": "Verified 2026-10-27 for daily brief 2026-10-27 (same-day addition; manager approved a single-item exception for a venue outside the watchlist).",
       "verification_completed_on": "2026-10-27"
+    },
+    {
+      "candidate_id": "W2026-10-23-A18",
+      "category": "research",
+      "source_url": "https://doi.org/10.29333/ejmste/19682",
+      "source_title": "Does AI need a visa to enter the classroom? Teachers’ perceptions and implementation challenges toward AI integration in science and mathematics education",
+      "source_organization": "Eurasia Journal of Mathematics, Science and Technology Education (Modestum)",
+      "source_publication_date": "2026-10-27",
+      "source_locator": "出版社文章頁（ejmste.com，2026-10-28 讀取 200）：Publication date 27 Oct 2026，citation_publication_date 2026-10-27；Crossref 只有 published-print 與 issued 2026-10-27；Received 20 April 2026、Accepted 13 October 2026；摘要歸屬：Abstract 第 1 至 3 句、第 5 句",
+      "discovered_on": "2026-10-28",
+      "discovery_batch_id": "2026-10-28-daily-1",
+      "first_disclosed_on": "2026-10-27",
+      "source_updates": [],
+      "original_excerpt": "This study aimed to explore the perceptions and implementation challenges of science and mathematics teachers regarding the integration of artificial intelligence (AI) in education. … A descriptive cross-sectional survey design was employed. … Data were collected through an online questionnaire administered to 218 Jordanian science and mathematics teachers working in public schools during the 2023/2024 academic year. … Results revealed that science and mathematics teachers reported both highly positive perceptions of AI and substantial implementation challenges.",
+      "source_checked": true,
+      "claim_text": "來源機構：Eurasia Journal of Mathematics, Science and Technology Education (Modestum)；資料標題：Does AI need a visa to enter the classroom? Teachers’ perceptions and implementation challenges toward AI integration in science and mathematics education；來源刊登日：2026-10-27。作者摘要報告：研究探討科學與數學教師對教育中整合人工智慧的知覺與實施挑戰；採描述性橫斷面調查設計，以線上問卷蒐集 218 名於 2023/2024 學年在約旦公立學校任教的科學與數學教師資料；作者報告科學與數學教師對 AI 有高度正向的知覺，同時也回報相當大的實施挑戰。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Eurasia Journal of Mathematics, Science and Technology Education，監測清單 J50）；約旦公立學校科學與數學教師 218 人，滾雪球便利取樣、線上自陳問卷，資料蒐集於 2023/2024 學年；原文未寫任教學段（全文寫明經由約旦教育部協助發放）。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-28 子代理讀出版社文章頁與 Crossref，本 session 重讀文章頁並讀出版者開放取用 PDF 的 Methods 確認樣本為公立學校教師，擇摘要第 1 至 3 句與第 5 句撰寫中文摘要與中文譯名，不寫組間差異；第二輪 2026-10-28 由隔離子代理逐項對照英文原句，判定大致一致，依建議把 substantial 改譯「相當大的」，修正後一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "T-TEA"
+      ],
+      "ai_lit_note": "在職中小學科學與數學教師對課堂整合 AI 的知覺與實施挑戰，屬 AI 賦能教學（B），對應 T-TEA「評估AI工具輔助教學的適用性」",
+      "audience": "k12",
+      "doi": "10.29333/ejmste/19682",
+      "screening_note": "Verified 2026-10-28 for daily brief 2026-10-28.",
+      "verification_completed_on": "2026-10-28"
+    },
+    {
+      "candidate_id": "W2026-10-23-A19",
+      "category": "news_policy",
+      "source_url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=B52794A0504A8535",
+      "source_title": "酷英平臺AI數位工具走進課堂 跨域英語學習更生活化",
+      "source_organization": "教育部國民及學前教育署",
+      "source_publication_date": "2026-10-27",
+      "source_locator": "教育部即時新聞頁（發布單位國教署，上版日期 115-10-27；RSS pubDate 2026-10-27 13:35 臺灣時間）；摘要歸屬：第 1 段第 1 句、第 2 段第 1 句、第 3 段第 1、2 句",
+      "discovered_on": "2026-10-28",
+      "discovery_batch_id": "2026-10-28-daily-1",
+      "first_disclosed_on": "2026-10-27",
+      "source_updates": [],
+      "original_excerpt": "為落實「2030雙語政策」並強化數位輔助英語學習，教育部國教署與國立臺灣師範大學合作建置「英語線上學習平臺（Cool English酷英平臺）」（https://www.coolenglish.edu.tw/），持續運用AI技術發展多元英語學習資源及數位工具，支持教師創新教學，也培養學生自主學習能力。 … 國教署表示，酷英平臺提供多元英語學習資源及AI數位工具，教師可依學生需求及教學目標彈性運用，將英語學習延伸至生活情境、永續發展（SDGs）、社會情緒學習（SEL）及生命教育等不同議題。 … 桃園市三光國小教師李芃莛將六年級英語課程與在地自然資源結合，融入社會情緒學習及聯合國永續發展目標（SDGs）第15項「保育陸域生態」，引導學生運用酷英數位讀本與繪本學習英語。 … 學生透過「語音合成工具」及「發音評測」自主練習與修正發音，再運用「CoolE Bot AI英語聊天機器人」模擬名人訪談、與SDGs專家進行對話，最後搭配Canva製作結合家鄉自然景觀的有聲數位明信片，與國際筆友交流，讓英語成為認識家鄉、關注永續及連結世界的工具。",
+      "source_checked": true,
+      "claim_text": "來源機構：教育部國民及學前教育署；資料標題：酷英平臺AI數位工具走進課堂 跨域英語學習更生活化；來源刊登日：2026-10-27。官方文件表示：國教署與國立臺灣師範大學合作建置「酷英平臺」，運用 AI 技術發展英語學習資源及數位工具；國教署表示平臺提供多元英語學習資源及 AI 數位工具，教師可依學生需求及教學目標彈性運用；新聞舉桃園市三光國小六年級英語課為例，學生透過語音合成工具及發音評測自主練習與修正發音，再運用「CoolE Bot AI英語聊天機器人」模擬名人訪談、與 SDGs 專家對話。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "中央機關新聞稿（平臺推廣），對象為中小學師生，課堂實例為國小六年級；新聞主軸為雙語政策與平臺推廣，AI 數位工具為部分內容；未提供使用成效資料。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-28 子代理讀教育部即時新聞 RSS 與文章頁，本 session 重讀原頁，擇第 1 段第 1 句、第 2 段第 1 句、第 3 段第 1、2 句撰寫中文摘要；第二輪 2026-10-28 由隔離子代理逐項對照原文，判定大致一致，依建議恢復「多元英語學習資源及 AI 數位工具」與「自主練習與修正發音」，分類說明改為國小實例，T-TEA 改對應「設計AI與教學法整合的策略」，修正後一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN",
+        "T-TEA"
+      ],
+      "ai_lit_note": "國小師生在英語課使用平臺 AI 數位工具（如 AI 英語聊天機器人；新聞主軸為平臺推廣，AI 為部分內容），屬 AI 賦能教與學（B），對應 S-LRN「應用AI工具強化領域學習」、T-TEA「設計AI與教學法整合的策略」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-10-28 for daily brief 2026-10-28.",
+      "verification_completed_on": "2026-10-28"
     }
   ],
   "search_runs": [
@@ -1237,6 +1305,37 @@
       ],
       "discovered": 1,
       "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-28-daily-1",
+      "searched_on": "2026-10-28",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-10-27,until-created-date:2026-10-28,type:journal-article, six query.bibliographic sets rows=40, proceedings-article sets, watchlist-ISSN sets (24 journals incl. J51, with and without keywords); pedagogical AI agent sets on Crossref and OpenAlex; publisher pages one try each (EJMSTE, Springer 200; Wiley 403; MDPI 403)",
+          "status": "ok"
+        },
+        {
+          "group": "preprint",
+          "query": "arXiv API (https) three queries plus pedagogical AI agent query; alphaXiv discover_papers one set",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search and Content API, Federal Register (10-27 issue; 10-28 not yet out; public inspection; govinfo full text where federalregister.gov returned a request-access page), MEXT (10-23 press conference text now uploaded, no AI; 10-27 text not yet uploaded), China MOE (18 sections), HK info.gov.hk 10-27, KICE, MOE Korea, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (115-10-27 issue; 10-23 and 10-26 issues not published) and RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 2,
+      "added": 2,
       "duplicates": 0
     }
   ],

@@ -1707,6 +1707,8 @@
 | KB-2026-0454 — [Generative AI as a team moderator in CSCL: Facilitating students' multidimensional engagement through adaptive scaffolding for socially shared regulation of learning](https://doi.org/10.1111/bjet.70096) | journal_article | 2026-10-20 | bibliographic_checked |
 | KB-2026-0455 — [走進學生生活日常 深耕媒體素養教育](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=460ADCA7F6C10978) | government_announcement | 2026-10-26 | bibliographic_checked |
 | KB-2026-0456 — [Generative AI and AI literacy in Elementary Education: A Systematic Review of Research published from 2021 to January 2026](https://doi.org/10.12973/eu-jer.16.1.91) | journal_article | 2026-10-26 | bibliographic_checked |
+| KB-2026-0457 — [Does AI need a visa to enter the classroom? Teachers’ perceptions and implementation challenges toward AI integration in science and mathematics education](https://doi.org/10.29333/ejmste/19682) | journal_article | 2026-10-27 | bibliographic_checked |
+| KB-2026-0458 — [酷英平臺AI數位工具走進課堂 跨域英語學習更生活化](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=B52794A0504A8535) | government_announcement | 2026-10-27 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
