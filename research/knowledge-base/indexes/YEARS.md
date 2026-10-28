@@ -1710,6 +1710,7 @@
 | KB-2026-0457 — [Does AI need a visa to enter the classroom? Teachers’ perceptions and implementation challenges toward AI integration in science and mathematics education](https://doi.org/10.29333/ejmste/19682) | journal_article | 2026-10-27 | bibliographic_checked |
 | KB-2026-0458 — [酷英平臺AI數位工具走進課堂 跨域英語學習更生活化](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=B52794A0504A8535) | government_announcement | 2026-10-27 | bibliographic_checked |
 | KB-2026-0459 — [Motivational Organization in AI-Supported Writing: A Self-Determination Perspective](https://doi.org/10.1016/j.caeo.2026.100430) | journal_article | 2026-10-26 | bibliographic_checked |
+| KB-2026-0460 — [Developmental, Contextual, and Profile-Based Heterogeneity in K–12 Students’ Artificial Intelligence Literacy](https://doi.org/10.3390/bs16112017) | journal_article | 2026-10-27 | discovered_unverified |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
