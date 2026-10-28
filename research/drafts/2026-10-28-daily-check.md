@@ -1,4 +1,4 @@
-# 每日短訊查核紀錄：2026-10-28（2 則）
+# 每日短訊查核紀錄：2026-10-28（3 則，含當日補登 1 則）
 
 > 每日短訊例行作業，由排程觸發，在每日短訊專用 session 執行。
 > - **檢索：** 由同一 session 的三個子代理分頭執行（國際研究、國際政策、臺灣中央來源），判讀由本 session 複核；兩則發布項目由本 session 重讀原頁。
@@ -140,8 +140,15 @@
 
 ## 請管理者用瀏覽器處理（2026-10-28）
 
-1. https://doi.org/10.1016/j.caeo.2026.100430 （J41 Computers and Education Open，Schweder、Grahl〈Motivational Organization in AI-Supported Writing: A Self-Determination Perspective〉；ScienceDirect 對程式不可讀，Crossref 只有出版年月、無摘要）
-   - **需要：** 文章頁「Available online」日期與摘要（截圖或全文 PDF）。
-   - **拿到後：** 若首次上線在 10-21 之後、對象為中小學師生且屬 A／B，可補發（上線日後 7 天內）。
+今日無（J41 `caeo.2026.100430` 已於同日處理，見補記）。
 
-前幾日清單已處理完畢，無延續項目。
+## 補記（2026-10-28，晨間發布後）
+
+- **補登 D20261028-03：** J41 Computers and Education Open `10.1016/j.caeo.2026.100430`（Schweder、Grahl）〈Motivational Organization in AI-Supported Writing: A Self-Determination Perspective〉。
+  - **來源：** 管理者提供出版者 Journal Pre-proof PDF 與文章頁截圖；截圖顯示「Available online 26 October 2026」。PDF 未印上線日；Crossref 只有 2026-10（created 10-27），例外不適用，首發日依文章頁。
+  - **判定：** 研究對象為德國梅克倫堡－前波美拉尼亞邦 406 名 5–8 年級學生，兩個時間點分別在無 AI 與可選用生成式 AI 下完成創意寫作。判 B（S-LRN），對象 k12。
+  - **摘要依據：** 摘要第 1 至 4 句；結果不寫入。
+  - **第二輪對照：** 隔離子代理初判不一致，依建議補上「於時間 2 檢視 AI 使用程度」並統一 configurations 為「組型」，修正後一致。
+  - **編號：** 候選池 W2026-10-23-A20（batch 2026-10-28-daily-2）；知識庫 KB-2026-0459（KR-15323～15332）。
+  - **更正紀錄：** `publication/issues.json` 加 revised_on 2026-10-28，`publication/corrections.json` 加 daily-2026-10-28-r1。
+  - **存檔：** PDF 與截圖存入受限 repo 並登記。
