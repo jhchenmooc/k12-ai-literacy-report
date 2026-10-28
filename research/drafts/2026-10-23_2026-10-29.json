@@ -656,6 +656,40 @@
       "audience": "k12",
       "screening_note": "Verified 2026-10-28 for daily brief 2026-10-28.",
       "verification_completed_on": "2026-10-28"
+    },
+    {
+      "candidate_id": "W2026-10-23-A20",
+      "category": "research",
+      "source_url": "https://doi.org/10.1016/j.caeo.2026.100430",
+      "source_title": "Motivational Organization in AI-Supported Writing: A Self-Determination Perspective",
+      "source_organization": "Computers and Education Open (Elsevier)",
+      "source_publication_date": "2026-10-26",
+      "source_locator": "出版者文章頁（以瀏覽器讀取；程式請求 ScienceDirect 不可讀，未繞過）：Available online 26 October 2026；出版者 Journal Pre-proof PDF 未印上線日，Received 5 April 2026、Accepted 25 October 2026；Crossref 只登記 2026-10；摘要歸屬：Abstract 第 1 至 4 句",
+      "discovered_on": "2026-10-28",
+      "discovery_batch_id": "2026-10-28-daily-2",
+      "first_disclosed_on": "2026-10-26",
+      "source_updates": [],
+      "original_excerpt": "This study examined how students’ motivational regulation during creative writing was organized when generative artificial intelligence (AI) was unavailable or optionally available. … Drawing on Self-Determination Theory (SDT), motivation was conceptualized as configurations of intrinsic motivation, identified regulation, introjected regulation, and external regulation. … The sample comprised 406 students in Grades 5–8 who completed comparable creative writing tasks without AI (Time 1) and with optional AI access (Time 2). … Using a micro-longitudinal, person-centered design, latent profile analyses identified motivational configurations and examined psychological need satisfaction and academic achievement as predictors of profile membership; degree of AI use was examined at Time 2.",
+      "source_checked": true,
+      "claim_text": "來源機構：Computers and Education Open (Elsevier)；資料標題：Motivational Organization in AI-Supported Writing: A Self-Determination Perspective；來源刊登日：2026-10-26。作者摘要報告：研究探討生成式 AI 不可用與可選用時學生創意寫作的動機調節組型（依自我決定理論，含內在動機、認同、內攝與外在調節）；406 名 5–8 年級學生先在無 AI（時間 1）、再在可選用 AI（時間 2）下完成相仿的寫作任務；以潛在剖面分析辨識組型，檢視心理需求滿足與學業成就是否預測組型歸屬，並於時間 2 檢視 AI 使用程度。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Computers and Education Open，監測清單 J41），Journal Pre-proof 版本；406 名 5–8 年級學生，兩個時間點的寫作任務比較，非隨機分派；作者寫明剖面相似性未獲完全支持，故模式僅作描述性解讀。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-28 讀出版者 Journal Pre-proof PDF，擇摘要第 1 至 4 句撰寫中文摘要與中文譯名，不寫結果；第二輪 2026-10-28 由隔離子代理逐項對照英文原句，初判不一致，依建議補上「於時間 2 檢視 AI 使用程度」並統一 configurations 為「組型」，修正後一致。Crossref 無 published-online，例外不適用；首發日依出版者文章頁 Available online 26 October 2026（管理者 2026-10-28 提供頁面截圖）。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN"
+      ],
+      "ai_lit_note": "5–8 年級學生在可選用生成式 AI 的創意寫作中的動機調節，屬 AI 賦能學習（B），對應 S-LRN「應用AI工具強化領域學習」",
+      "audience": "k12",
+      "doi": "10.1016/j.caeo.2026.100430",
+      "screening_note": "Verified 2026-10-28 for daily brief 2026-10-28 (same-day addition after the publisher PDF and article-page date were provided).",
+      "verification_completed_on": "2026-10-28"
     }
   ],
   "search_runs": [
@@ -1336,6 +1370,22 @@
       ],
       "discovered": 2,
       "added": 2,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-28-daily-2",
+      "searched_on": "2026-10-28",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref works record for 10.1016/j.caeo.2026.100430 (2026-10 only; created 2026-10-27); publisher Journal Pre-proof PDF and article-page screenshot provided 2026-10-28; ScienceDirect not readable to automated requests, not bypassed",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ],

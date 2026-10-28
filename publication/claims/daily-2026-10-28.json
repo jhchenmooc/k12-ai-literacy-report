@@ -102,5 +102,56 @@
    "學生透過「語音合成工具」及「發音評測」自主練習與修正發音，再運用「CoolE Bot AI英語聊天機器人」模擬名人訪談、與SDGs專家進行對話，最後搭配Canva製作結合家鄉自然景觀的有聲數位明信片，與國際筆友交流，讓英語成為認識家鄉、關注永續及連結世界的工具。"
   ],
   "attributed_summary": "國教署與國立臺灣師範大學合作建置「酷英平臺」，運用 AI 技術發展英語學習資源及數位工具；國教署表示平臺提供多元英語學習資源及 AI 數位工具，教師可依學生需求及教學目標彈性運用；新聞舉桃園市三光國小六年級英語課為例，學生透過語音合成工具及發音評測自主練習與修正發音，再運用「CoolE Bot AI英語聊天機器人」模擬名人訪談、與 SDGs 專家對話。"
+ },
+ {
+  "claim_id": "D20261028-03",
+  "candidate_id": "W2026-10-23-A20",
+  "kind": "research",
+  "claim_text": "來源機構：Computers and Education Open (Elsevier)；資料標題：Motivational Organization in AI-Supported Writing: A Self-Determination Perspective；來源刊登日：2026-10-26。作者摘要報告：研究探討生成式 AI 不可用與可選用時學生創意寫作的動機調節組型（依自我決定理論，含內在動機、認同、內攝與外在調節）；406 名 5–8 年級學生先在無 AI（時間 1）、再在可選用 AI（時間 2）下完成相仿的寫作任務；以潛在剖面分析辨識組型，檢視心理需求滿足與學業成就是否預測組型歸屬，並於時間 2 檢視 AI 使用程度。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "V2",
+  "daily_fact_kind": "research_abstract_attributed_summary",
+  "source_document_type": "peer_reviewed_article",
+  "source_title": "Motivational Organization in AI-Supported Writing: A Self-Determination Perspective",
+  "title_zh": "AI 支援寫作中的動機組織：自我決定理論觀點",
+  "source_organization": "Computers and Education Open (Elsevier)",
+  "source_url": "https://doi.org/10.1016/j.caeo.2026.100430",
+  "evidence_source_url": "https://doi.org/10.1016/j.caeo.2026.100430",
+  "source_locator": "出版者文章頁（以瀏覽器讀取；程式請求 ScienceDirect 不可讀，未繞過）：Available online 26 October 2026；出版者 Journal Pre-proof PDF 未印上線日，Received 5 April 2026、Accepted 25 October 2026；Crossref 只登記 2026-10；摘要歸屬：Abstract 第 1 至 4 句",
+  "source_type": "research_publication",
+  "checked_at": "2026-10-28",
+  "publication_date": "2026-10-26",
+  "first_disclosed_on": "2026-10-26",
+  "evidence_path": "publication/sources/d2026-10-28-a03-caeo.txt",
+  "evidence_sha256": "fc9bc44c17d82c1f3cdd9886ecdc7eec09c9e8360d5727c307133ce94765376c",
+  "original_excerpt": "This study examined how students’ motivational regulation during creative writing was organized when generative artificial intelligence (AI) was unavailable or optionally available. … Drawing on Self-Determination Theory (SDT), motivation was conceptualized as configurations of intrinsic motivation, identified regulation, introjected regulation, and external regulation. … The sample comprised 406 students in Grades 5–8 who completed comparable creative writing tasks without AI (Time 1) and with optional AI access (Time 2). … Using a micro-longitudinal, person-centered design, latent profile analyses identified motivational configurations and examined psychological need satisfaction and academic achievement as predictors of profile membership; degree of AI use was examined at Time 2.",
+  "interpretation_note": "轉述作者摘要的研究問題、理論架構、樣本與設計；平均數與剖面變化、需求滿足與成績的關聯等結果不寫入。",
+  "scope_limitation": "同儕審查期刊論文（Computers and Education Open，監測清單 J41），Journal Pre-proof 版本；406 名 5–8 年級學生，兩個時間點的寫作任務比較，非隨機分派；作者寫明剖面相似性未獲完全支持，故模式僅作描述性解讀。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "decision": "publish",
+  "ai_crosscheck_record": "第一輪 2026-10-28 讀出版者 Journal Pre-proof PDF，擇摘要第 1 至 4 句撰寫中文摘要與中文譯名，不寫結果；第二輪 2026-10-28 由隔離子代理逐項對照英文原句，初判不一致，依建議補上「於時間 2 檢視 AI 使用程度」並統一 configurations 為「組型」，修正後一致。Crossref 無 published-online，例外不適用；首發日依出版者文章頁 Available online 26 October 2026（管理者 2026-10-28 提供頁面截圖）。同一模型，非獨立審閱。",
+  "ai_lit_class": "B",
+  "ai_lit_dims": [
+   "S-LRN"
+  ],
+  "ai_lit_note": "5–8 年級學生在可選用生成式 AI 的創意寫作中的動機調節，屬 AI 賦能學習（B），對應 S-LRN「應用AI工具強化領域學習」",
+  "audience": "k12",
+  "summary_evidence_spans": [
+   "This study examined how students’ motivational regulation during creative writing was organized when generative artificial intelligence (AI) was unavailable or optionally available.",
+   "Drawing on Self-Determination Theory (SDT), motivation was conceptualized as configurations of intrinsic motivation, identified regulation, introjected regulation, and external regulation.",
+   "The sample comprised 406 students in Grades 5–8 who completed comparable creative writing tasks without AI (Time 1) and with optional AI access (Time 2).",
+   "Using a micro-longitudinal, person-centered design, latent profile analyses identified motivational configurations and examined psychological need satisfaction and academic achievement as predictors of profile membership; degree of AI use was examined at Time 2."
+  ],
+  "attributed_summary": "研究探討生成式 AI 不可用與可選用時學生創意寫作的動機調節組型（依自我決定理論，含內在動機、認同、內攝與外在調節）；406 名 5–8 年級學生先在無 AI（時間 1）、再在可選用 AI（時間 2）下完成相仿的寫作任務；以潛在剖面分析辨識組型，檢視心理需求滿足與學業成就是否預測組型歸屬，並於時間 2 檢視 AI 使用程度。"
  }
 ]

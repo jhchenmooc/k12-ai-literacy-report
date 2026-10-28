@@ -3,6 +3,16 @@
   "note": "更正與改版紀錄（第二次三刊聯合評審 E3e，管理者 2026-10-17）。每筆列出舊說法、新說法、日期與原因；頁面 corrections/index.html 由 research/render-site.js 依本檔產生。",
   "entries": [
     {
+      "id": "daily-2026-10-28-r1",
+      "date": "2026-10-28",
+      "path": "daily/2026-10-28/",
+      "target": "每日短訊 2026-10-28",
+      "type": "補登",
+      "old": "2 則；Computers and Education Open 一篇（10.1016/j.caeo.2026.100430）因讀不到摘要與上線日而列入瀏覽器清單。",
+      "new": "補登 D20261028-03（5–8 年級學生在可選用生成式 AI 的創意寫作中的動機調節組型，作者摘要歸屬型）。",
+      "reason": "管理者當日提供出版者 PDF 與文章頁截圖（Available online 26 October 2026）；摘要與研究對象可核對，首次公開日在本期前 7 天內。"
+    },
+    {
       "id": "daily-2026-10-27-r1",
       "date": "2026-10-27",
       "path": "daily/2026-10-27/",
