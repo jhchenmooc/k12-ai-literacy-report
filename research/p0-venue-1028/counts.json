@@ -1,0 +1,48 @@
+{
+ "source": "Behavioral Sciences",
+ "openalex": "S4210194710",
+ "requests": [
+  {
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210194710%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-28&per_page=1&select=id",
+   "utc": "2026-10-28T12:38:29Z",
+   "http": 200,
+   "count": 3711
+  },
+  {
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210194710%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-28%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-28T12:38:29Z",
+   "http": 200,
+   "count": 0
+  },
+  {
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210194710%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-28%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-28T12:38:30Z",
+   "http": 200,
+   "count": 69
+  },
+  {
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210194710%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-28%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-28T12:38:30Z",
+   "http": 200,
+   "count": 7
+  },
+  {
+   "query": "ai_school_broad",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210194710%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-28%2Ctitle_and_abstract.search%3A%28%22artificial%20intelligence%22%20OR%20%22AI%22%20OR%20%22generative%20AI%22%20OR%20ChatGPT%20OR%20%22large%20language%20model%22%29%20AND%20%28school%20OR%20schools%20OR%20%22K-12%22%20OR%20adolescent%20OR%20adolescents%20OR%20%22primary%20school%22%20OR%20%22secondary%20school%22%20OR%20%22high%20school%22%20OR%20%22middle%20school%22%20OR%20pupils%20OR%20teachers%29",
+   "utc": "2026-10-28T12:38:32Z",
+   "http": 200,
+   "count": 67
+  }
+ ],
+ "results": {
+  "total": 3711,
+  "no_abstract": 0,
+  "ai": 69,
+  "ai_k12": 7,
+  "ai_school_broad": 67
+ }
+}
