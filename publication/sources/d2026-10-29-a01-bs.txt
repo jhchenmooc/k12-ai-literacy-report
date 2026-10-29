@@ -1,0 +1,4 @@
+Behavioral Sciences (MDPI) | 2026-10-27 | Developmental, Contextual, and Profile-Based Heterogeneity in K–12 Students’ Artificial Intelligence Literacy | https://doi.org/10.3390/bs16112017 | Crossref works record read 2026-10-29T00:28Z; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online; bibliographic facts only
+Crossref: published-online 2026-10-27; record created 2026-10-27; Behavioral Sciences 16(11), 2017; licence CC BY 4.0; authors Nan, Yan, Gai
+Crossref abstract sentence (not read from the publisher page):
+This cross-sectional study used survey data from 141,988 students in Grades 6, 9, and 11 in Changchun, Northeast China.
