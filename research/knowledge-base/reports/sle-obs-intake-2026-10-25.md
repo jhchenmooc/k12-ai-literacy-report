@@ -24,7 +24,7 @@
 - **對象與學段**：依知識庫規則，學生研究只在主要學段明確時加 `ROLE_STUDENT`，所以 KB-2026-0442（K-12 概念論文）不加 ROLE_STUDENT；教師研究照常標在職教師；職前師資生用 `TEACHER_ED`。
 - **主題**：依題名與摘要加 TOPIC_GENAI、TOPIC_ETHICS、TOPIC_LANGUAGE、TOPIC_STEM、TOPIC_CURRICULUM、TOPIC_TEACHER_PD、TOPIC_EQUITY（逐筆見 .csv）；未加研究方法代碼。
 - **研究國別**：只標文獻 session 依摘要或全文明寫樣本地點者（9 筆）；KB-2025-0497、KB-2026-0441 的清單未寫地點，回顧與概念論文不標。KB-2026-0440 樣本在巴西，但 `validate-knowledge-base.test.js` 寫死「研究國別 BR 只有 KB-2025-0002」，加上會使測試失敗；依「不得為通過而修改測試」不加，列入 `research/exceptions.md` 11/03 後待辦。
-- **00433-5 的更正**（10.1186/s40561-026-00441-5，2026-02-14）：文獻 session 請作 correction 關聯、不另立研究紀錄；但知識庫目前沒有對應更正的關聯類型（只有 revises、supplements、reviews，且客體須為紀錄），所以**只在本報告記錄**，不加關聯、不改驗證程式。
+- **00433-5 的更正**（10.1186/s40561-026-00441-5，2026-02-14）：文獻 session 請作 correction 關聯、不另立研究紀錄；但知識庫目前沒有對應更正的關聯類型（只有 revises、supplements、reviews，且客體須為紀錄），所以入庫時只在本報告記錄。2026-10-29 管理者選甲，驗證程式新增 `doi` 命名空間與 `has_correction` 後，以 KR-15481（KB-2026-0437 → 10.1186/s40561-026-00441-5）補上。
 - **KB-2026-0442 後續（2026-10-25）**：管理者提供接受稿全文（私人 repo `from-literature-session/uploads/10d5fc2a-mm-vi25-576-accepted-manuscript.pdf`），文獻 session 讀全文後判讀維持 A（low）、學段改 k12_multi；本筆改為 `bibliographic_checked`（紀錄與 6 列關聯），學段 KR-15207 改 STAGE_K12_MULTI。依知識庫規則，學生研究只在主要學段為特定學段時加 `ROLE_STUDENT`，本筆仍不加。
 - **待確認**：KB-2025-0496 文獻 session 判 B，註明若「有效使用生成式 AI」屬 S-BAS 可改 A，本次照 B 入庫。
 - **中文篇名**：文獻 session 請補 title_zh；依規則凍結，論文篇名 11/03 後再議，本批未補。

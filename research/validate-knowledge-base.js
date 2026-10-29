@@ -58,7 +58,7 @@ function validate(records,relations,runs,candidates){
  const AILIT_CLASS_VOCAB=["AILIT_A","AILIT_B"],AILIT_DIM_VOCAB=["S-BAS","S-ETH","S-LRN","S-SYS","T-BAS","T-ETH","T-TEA","T-PD"];
  /* Top 10% OpenAlex cited_by_count among the same year's trend backfill (schema.md「高引用」; manager 2026-10-10/11). */
  const CITATION_FLAG_VOCAB=["CITED_TOP10_SAME_YEAR"];
- const relationsIds=new Set(),allowed=["record","work","source","vocabulary"];const vocab=["K1","K2","K3","K4","K5","K6"];
+ const relationsIds=new Set(),allowed=["record","work","source","vocabulary","doi"];const vocab=["K1","K2","K3","K4","K5","K6"];
  for(const x of relations){
   check(!!x.relation_id&&!relationsIds.has(x.relation_id),"duplicate/missing relation ID");relationsIds.add(x.relation_id);
   check(ids.has(x.subject_id),"unknown relation subject: "+x.subject_id);
@@ -76,6 +76,9 @@ function validate(records,relations,runs,candidates){
   if(x.predicate==="has_ailit_dim")check(x.object_namespace==="vocabulary"&&AILIT_DIM_VOCAB.includes(x.object_id),"invalid ailit dimension relation: "+x.relation_id);
   if(x.predicate==="has_citation_flag")check(x.object_namespace==="vocabulary"&&CITATION_FLAG_VOCAB.includes(x.object_id),"invalid citation flag relation: "+x.relation_id);
   if(x.predicate==="published_in")check(x.object_namespace==="source"&&/^[JC]/.test(x.object_id),"invalid venue relation: "+x.relation_id);
+  /* Correction notices that are not records themselves (manager 2026-10-29): the article points to the notice's DOI. */
+  if(x.object_namespace==="doi")check(x.predicate==="has_correction"&&/^10\.\d{4,9}\/\S+$/.test(x.object_id),"invalid DOI relation: "+x.relation_id);
+  if(x.predicate==="has_correction")check(x.object_namespace==="doi","has_correction must point to a DOI: "+x.relation_id);
   if(x.predicate==="issued_by")check(x.object_namespace==="source"&&x.object_id.startsWith("O-"),"invalid issuing agency: "+x.relation_id);
  }
  /* schema.md「主題與研究方法」: has_method is at most one per record (same or different method values). */

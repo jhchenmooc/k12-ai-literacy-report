@@ -71,6 +71,10 @@
 - 只在同年內比較；各年門檻不同（2026-10-11 查詢：2025 年 ≥37、2024 年 ≥141、2023 年 ≥324、2022 年 ≥433），不可跨年比較，也不代表研究品質。查詢日期與門檻記在各年的 `research/p0-annual-trends-YYYY/kb-pushback.md`。
 - 關聯一律 `discovered_unverified`；`evidence_url` 指向 OpenAlex 作品頁。
 
+## 更正啟事（`has_correction`，管理者 2026-10-29）
+
+期刊為某篇論文另發更正啟事（correction、erratum）時，更正啟事本身不另立紀錄，由原論文以 `has_correction` 指向更正啟事的 DOI：`object_namespace=doi`，`object_id` 為不含 `https://doi.org/` 的 DOI（例：`10.3390/bs15030375`），`evidence_url` 為更正啟事網址。驗證程式只允許 `has_correction` 使用 `doi` 命名空間。
+
 ## 首次資料與限制
 
 目前 CSV 先從真實 `research/drafts/2026-10-09_2026-10-15.json` 唯讀匯入九筆「發現但未認證」的來源，**未驗證首發日也不推測學術文獻類型**。沒有可驗證日期的資料不會因為發現於 2026 年就被自動歸成 2026 年首發。搜尋執行表目前只有標頭，不誤把先前審查與研究對話當可重現機器搜尋批次。其他確有查核的來源在下一輪分批補入。

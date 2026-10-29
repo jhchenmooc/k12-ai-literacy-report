@@ -15339,3 +15339,5 @@
 "KR-15477","KB-2026-0481","has_population","vocabulary","STAGE_K12_GENERAL","https://doi.org/10.3390/bs16101892","discovered_unverified"
 "KR-15478","KB-2026-0481","has_ailit_class","vocabulary","AILIT_A","https://doi.org/10.3390/bs16101892","discovered_unverified"
 "KR-15479","KB-2026-0481","has_ailit_dim","vocabulary","T-TEA","https://doi.org/10.3390/bs16101892","discovered_unverified"
+"KR-15480","KB-2025-0501","has_correction","doi","10.3390/bs15030375","https://doi.org/10.3390/bs15030375","discovered_unverified"
+"KR-15481","KB-2026-0437","has_correction","doi","10.1186/s40561-026-00441-5","https://doi.org/10.1186/s40561-026-00441-5","discovered_unverified"

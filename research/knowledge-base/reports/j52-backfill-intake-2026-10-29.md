@@ -8,6 +8,6 @@
 - **對象與學段**：學生研究只在學段明確時加 `ROLE_STUDENT`（學段只寫 K-12 的 2 篇不加）；校長研究標 `ROLE_OTHER_STAKEHOLDER`；中學未分標 `STAGE_SECONDARY`。
 - **主題**：依題名關鍵字加 TOPIC_GENAI、TOPIC_ETHICS、TOPIC_TEACHER_PD、TOPIC_ASSESSMENT；未加研究方法代碼。
 - **研究國別**：清單未逐筆寫明樣本地點，本批不標（英國 deepfake 一篇也因 `validate-knowledge-base.test.js` 寫死 GB 只有一筆而不標，見 `research/exceptions.md`）。
-- **bs15030287 的更正 bs15030375**：管理者要求作 correction 關聯，但知識庫目前沒有可指向「不是紀錄的 DOI」的關聯方式（`object_namespace` 只接受 record、work、source、vocabulary），本 PR 先不加，另提方案待管理者決定。
+- **bs15030287 的更正 bs15030375**：管理者要求作 correction 關聯，但知識庫目前沒有可指向「不是紀錄的 DOI」的關聯方式（`object_namespace` 只接受 record、work、source、vocabulary），入庫 PR 先不加；管理者 2026-10-29 選甲後，驗證程式新增 `doi` 命名空間與 `has_correction`，以 KR-15480（KB-2025-0501 → 10.3390/bs15030375）補上。
 - **職前教師與高教約 10 篇**未納入本次清單，是否回補另由管理者決定。
 - 中文篇名：依規則凍結，論文篇名 11/03 後再議，本批未補。DOI 與既有紀錄無重複。
