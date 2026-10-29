@@ -1710,6 +1710,10 @@
 | KB-2026-0457 — [Does AI need a visa to enter the classroom? Teachers’ perceptions and implementation challenges toward AI integration in science and mathematics education](https://doi.org/10.29333/ejmste/19682) | journal_article | 2026-10-27 | bibliographic_checked |
 | KB-2026-0458 — [酷英平臺AI數位工具走進課堂 跨域英語學習更生活化](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=B52794A0504A8535) | government_announcement | 2026-10-27 | bibliographic_checked |
 | KB-2026-0459 — [Motivational Organization in AI-Supported Writing: A Self-Determination Perspective](https://doi.org/10.1016/j.caeo.2026.100430) | journal_article | 2026-10-26 | bibliographic_checked |
+| KB-2026-0460 — [Developmental, Contextual, and Profile-Based Heterogeneity in K–12 Students’ Artificial Intelligence Literacy](https://doi.org/10.3390/bs16112017) | journal_article | 2026-10-27 | bibliographic_checked |
+| KB-2026-0461 — [INTEF participa en SIMO EDUCACIÓN 2026](https://intef.es/Noticias/intef-en-simo-2026/) | government_announcement | 2026-10-22 | bibliographic_checked |
+| KB-2026-0462 — [國教院舉辦數學自主學習與數位資源應用國際課綱研討會～聚焦AI時代數學教育轉型　深化自主學習與教學創新](https://www.naer.edu.tw/PageDoc/Detail?fid=15&id=5690) | government_announcement | 2026-10-28 | bibliographic_checked |
+| KB-2026-0463 — [立法會：教育局局長就「推動新時代下的教師專業發展」議員議案開場發言（只有中文）](https://www.info.gov.hk/gia/general/202610/28/P2026102800679.htm) | government_announcement | 2026-10-28 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

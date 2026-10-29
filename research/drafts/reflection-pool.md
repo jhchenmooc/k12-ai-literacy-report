@@ -9,6 +9,7 @@
 | 2026-10-15 | 墨西哥公共教育部（MX），部長 Mario Delgado Carrillo 致詞 | statement | Boletín 336. "Ante las pantallas y los algoritmos que amenazan el criterio, la lectura retoma una dimensión más profunda": Mario Delgado | https://www.gob.mx/sep/prensa/boletin-336-ante-las-pantallas-y-los-algoritmos-que-amenazan-el-criterio-la-lectura-retoma-una-dimension-mas-profunda-mario-delgado?idiom=es | 內文倒數第 4 段（導言第一點重述） | 2026-10-22 記入；主題為閱讀推廣，AI 只一段；只談風險；發言人具名 |
 | 2026-09-03 | Brookings（US），Anil Hurkadli、Josie Stewart | commentary | As surveillance grows, student privacy protections lag | https://www.brookings.edu/articles/as-surveillance-grows-student-privacy-protections-lag/ | 談各州 AI 與學生資料段（加州、愛達荷州） | 2026-10-22 記入（次要）；主題為學生監控與隱私，AI 為子題 |
 | 不明（頁面只印 Sist endret 16.10.2026） | 挪威教育署 Udir（NO） | official | Endringer i eksamen（slik endrer vi eksamen） | https://www.udir.no/eksamen-og-prover/eksamen/slik-endrer-vi-eksamen/ | 「Eksamen med sikker nettleser」段與數學、理科第 2 部分輔助工具段 | 2026-10-22 記入；高中考試改用安全瀏覽器、2027 春起數理第 2 部分取消電腦，理由寫明降低使用 AI 的風險；AI 相關段落首發日不明 |
+| 2026-10-20（頁面所印「20 Ottobre 2026」；article:published_time 同日；由 MIM 2026-10-26 第 286 期電子報連結） | INVALSI 國家教育與培訓系統評量研究院（IT），院長 Roberto Ricci 社論，與研究員 Paolo Barabanti 對談 | commentary | L'Intelligenza Artificiale per una scuola inclusiva: la formazione docente verso una nuova pedagogia | https://www.invalsi.it/ai-inclusione-formazione-insegnanti/ | 內文第 5～8 段（引 TALIS 2024） | 2026-10-29 記入；以機會為主，開頭只泛稱「talvolta preoccupazioni」；TALIS 數字選錄前須對照 OECD 原表；INVALSI 不在週四監測來源清單 |
 
 2026-10-22 記入各則的逐字摘錄（原文，選錄時須經第二輪對照與譯文確認）：
 
@@ -19,3 +20,7 @@
 - Udir："Utdanningsdirektoratet har tatt i bruk sikker nettleser i utvalgte fag på videregående. Bakgrunnen er utviklingen av kunstig intelligens og stadig mer avanserte hjelpemidler. Det skaper utfordringer i oppgaveutvikling, gjennomføring og sensur av eksamen." 另段："Endringen i hjelpemiddelordningen gjøres for å redusere risikoen for bruk av KI."
 
 本週四其他命中已在受限 repo `reflection-archive/2026-10/LOOKBACK.md` 回溯清單中，不重列：EI Worlds of Education 2026-09-30（Robertson、Martini）、Brookings 2026-09-08（Winthrop）、AFT／UFT／Microsoft 2026-09-09、UNICEF Innocenti 2026-10-09（Özkul、Vosloo）、EPI 2026-09-22、CRPE 2026-09-03、UNESCO〈The algorithm in the room〉2026-09-08、UNICEF Innocenti〈Skills for an AI World〉2026-09。
+
+2026-10-29 記入的逐字摘錄（原文，選錄時須經第二輪對照與譯文確認）：
+
+- INVALSI 2026-10-20："Il confronto tra i dati nazionali e quelli degli altri Paesi europei ed extraeuropei restituisce l'immagine di una scuola italiana in cui l'utilizzo dell'IA a supporto degli studenti con BES è particolarmente diffuso. Il 64,4% degli insegnanti italiani dichiara infatti di farne uso, a fronte di una media europea pari al 44,2%." 另段："In Italia emerge invece un risultato particolarmente significativo. Tra tutte le variabili analizzate, quella maggiormente associata all'utilizzo dell'IA non è la quantità di formazione ricevuta, ma la percezione della sua utilità concreta nel rispondere ai bisogni dei singoli studenti." 另句："Ciò richiede percorsi formativi capaci di andare oltre l'addestramento all'uso degli strumenti."
