@@ -88,7 +88,7 @@
 | 國家 | 瑞典國家教育署（Skolverket）新聞稿 | https://www.skolverket.se/om-oss/press/pressmeddelanden | 200，列表可見日期 |
 | 國家 | 西班牙教育部新聞 | https://www.educacionfpydeportes.gob.es/prensa/actualidad.html | 200，列表可見日期 |
 | 國家 | 西班牙 INTEF 新聞 | https://intef.es/noticias/ | 200；列表不顯示日期，日期取各篇頁面的 datePublished（例：2026-09-23T06:50:44+00:00）。原 RSS（https://intef.es/feed/）最新項目停在 2026-01-08，2026-10-19 起改讀新聞頁 |
-| 國家 | 捷克教育部新聞稿 | https://msmt.gov.cz/ministerstvo/novinar/tiskove-zpravy | 200，但 curl 只拿到網頁程式錯誤殼頁；改用無頭瀏覽器讀取，2026-10-19 試讀可見列表與日期（如「Středa, 19. srpen 2026」） |
+| 國家 | 捷克教育部新聞（2026-10-29 起改讀 https://msmt.gov.cz/aktuality ，可篩「Tiskové zprávy」標籤；原新聞稿頁已轉向只列「Ministerstvo」標籤的頁面，管理者 2026-10-29 同意） | https://msmt.gov.cz/aktuality （原 https://msmt.gov.cz/ministerstvo/novinar/tiskove-zpravy ） | 200，但 curl 只拿到網頁程式錯誤殼頁；改用無頭瀏覽器讀取，2026-10-19 試讀可見列表與日期（如「Středa, 19. srpen 2026」） |
 | 國家 | 南非基礎教育部新聞稿 | https://www.education.gov.za/Newsroom/MediaReleases.aspx | 200，列表可見日期 |
 
 **無頭瀏覽器讀取（管理者 2026-10-19 決定）：**ICO 與捷克教育部的列表要等網頁程式載入才出現。每日短訊 session 用環境內建的 Playwright 與 Chromium（`require('/opt/node22/lib/node_modules/playwright')`）開頁，等網路閒置後再等 3 秒，讀 `document.body.innerText`；不改 User-Agent、不登入、不點同意 cookie 以外的按鈕。這只用於回應 200、內容由網頁程式載入的網站；回 403 的網站（如 NEU、FTC）不得用無頭瀏覽器繞過，仍列瀏覽器清單。
