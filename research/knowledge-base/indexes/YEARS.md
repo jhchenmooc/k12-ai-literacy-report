@@ -1752,6 +1752,8 @@
 | KB-2026-0491 — [Network modeling of science teachers’ perceptions of artificial intelligence integration in science curriculum development](https://doi.org/10.1038/s41598-026-75785-6) | journal_article | 2026-10-29 | bibliographic_checked |
 | KB-2026-0492 — [立法會︰教育局局長就「推動新時代下的教師專業發展」議員議案總結發言（只有中文）](https://www.info.gov.hk/gia/general/202610/29/P2026102900363.htm) | government_announcement | 2026-10-29 | bibliographic_checked |
 | KB-2026-0493 — [原教AI 愛與希望─115年中央與地方原住民族教育事務協調會議](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=A5DE2EE847574A52) | government_announcement | 2026-10-29 | bibliographic_checked |
+| KB-2026-0494 — [Developing and evaluating the dual-pedagogy approach to enhance AI literacy in young children](https://doi.org/10.1007/s10798-026-10109-3) | journal_article | 2026-10-28 | bibliographic_checked |
+| KB-2026-0495 — [“I trained every part of myself beneath these technological wrappings”: exploring and defining foreign language PK–12 teachers’ critical multilingual and multimodal AI competence](https://doi.org/10.1080/15391523.2026.2740580) | journal_article | 2026-10-29 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

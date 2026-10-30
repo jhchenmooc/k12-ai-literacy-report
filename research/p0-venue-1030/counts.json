@@ -1,0 +1,41 @@
+{
+ "source": "International Journal of Technology and Design Education",
+ "openalex": "S196057155",
+ "requests": [
+  {
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS196057155%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-30&per_page=1&select=id",
+   "utc": "2026-10-30T02:44:44Z",
+   "http": 200,
+   "count": 178
+  },
+  {
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS196057155%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-30%2Chas_abstract%3Afalse&per_page=1&select=id",
+   "utc": "2026-10-30T02:44:44Z",
+   "http": 200,
+   "count": 88
+  },
+  {
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS196057155%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-30%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id",
+   "utc": "2026-10-30T02:44:45Z",
+   "http": 200,
+   "count": 14
+  },
+  {
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS196057155%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-30%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id",
+   "utc": "2026-10-30T02:44:45Z",
+   "http": 200,
+   "count": 2
+  },
+  {
+   "query": "ai_school_broad",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS196057155%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-10-30%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+%22AI%22+OR+%22generative+AI%22+OR+ChatGPT+OR+%22machine+learning%22%29+AND+%28school+OR+schools+OR+%22K-12%22+OR+primary+OR+elementary+OR+secondary+OR+kindergarten+OR+%22early+childhood%22+OR+children+OR+students+OR+teachers%29&per_page=1&select=id",
+   "utc": "2026-10-30T02:44:46Z",
+   "http": 200,
+   "count": 27
+  }
+ ]
+}

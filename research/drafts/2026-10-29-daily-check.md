@@ -268,3 +268,7 @@
 | 項目 | 要什麼 | 期限 |
 |---|---|---|
 | https://etwinning.indire.it/eventi/webinar-ai-algoritmi-e-manipolazione-dellinformazione-da-internet-alla-tua-classe/ （eTwinning／INDIRE 網路研討會〈AI, algoritmi e manipolazione dell'informazione: da Internet alla tua classe〉；程式讀取遇代理通道中斷） | 頁面發布日期、活動日期與活動說明的截圖 | 11-03 |
+
+## 補記（2026-10-30，管理者提供出版者 PDF 後）
+
+D20261029-01（Behavioral Sciences `10.3390/bs16112017`）依管理者 2026-10-30 提供的出版者 PDF 改為作者摘要型；PDF 首頁 Published 27 October 2026，與 Crossref 一致。詳見 [2026-10-30 查核紀錄補記二](2026-10-30-daily-check.md)。瀏覽器清單第 1 項完成；第 4 項（eTwinning）仍待處理。
