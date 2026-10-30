@@ -1308,6 +1308,8 @@
 | KB-2025-0505 — [How School Support Influences the Content Creation of Pre-Service Teachers’ Instructional Design](https://doi.org/10.3390/bs15050568) | journal_article | 2025-04-23 | discovered_unverified |
 | KB-2025-0506 — [Adopting Generative AI in Future Classrooms: A Study of Preservice Teachers’ Intentions and Influencing Factors](https://doi.org/10.3390/bs15081040) | journal_article | 2025-07-31 | discovered_unverified |
 | KB-2025-0507 — [Exploring Factors Influencing Pre-Service Teachers’ Intention to Use GenAI for Instructional Design: A Grounded Theory Study](https://doi.org/10.3390/bs15091169) | journal_article | 2025-08-28 | discovered_unverified |
+| KB-2025-0508 — [Effects of design thinking STEAM instruction on AI learning and creativity](https://doi.org/10.1007/s10798-025-09977-y) | journal_article | 2025-04-03 | discovered_unverified |
+| KB-2025-0509 — [Artificial intelligence literacy education in primary schools: a review](https://doi.org/10.1007/s10798-025-09979-w) | journal_article | 2025-04-29 | discovered_unverified |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
@@ -1754,6 +1756,9 @@
 | KB-2026-0493 — [原教AI 愛與希望─115年中央與地方原住民族教育事務協調會議](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=A5DE2EE847574A52) | government_announcement | 2026-10-29 | bibliographic_checked |
 | KB-2026-0494 — [Developing and evaluating the dual-pedagogy approach to enhance AI literacy in young children](https://doi.org/10.1007/s10798-026-10109-3) | journal_article | 2026-10-28 | bibliographic_checked |
 | KB-2026-0495 — [“I trained every part of myself beneath these technological wrappings”: exploring and defining foreign language PK–12 teachers’ critical multilingual and multimodal AI competence](https://doi.org/10.1080/15391523.2026.2740580) | journal_article | 2026-10-29 | bibliographic_checked |
+| KB-2026-0496 — [Exploring the integration of generative design in STEM classrooms: student perceptions and learning experiences](https://doi.org/10.1007/s10798-026-10065-y) | journal_article | 2026-03-13 | discovered_unverified |
+| KB-2026-0497 — [Is the current AI curriculum sufficient? Preparing for the AGI era beyond ANI](https://doi.org/10.1007/s10798-026-10077-8) | journal_article | 2026-04-15 | discovered_unverified |
+| KB-2026-0498 — [Poemas de la Pradera: Transnational Identity Development Through YPAR and AI-Assisted Mayan Language Preservation](https://doi.org/10.3390/bs16060903) | journal_article | 2026-06-02 | discovered_unverified |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
