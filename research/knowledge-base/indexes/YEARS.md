@@ -1748,6 +1748,10 @@
 | KB-2026-0487 — [Pre-Service Teachers’ Perceptions of AI Technological Support and School-Based Intelligent Environment Support: Model-Based Indirect Associations with Innovative Competence via AI Self-Efficacy and Self-Regulated Learning](https://doi.org/10.3390/bs16081378) | journal_article | 2026-08-11 | discovered_unverified |
 | KB-2026-0488 — [Preservice Special Education Teachers’ Acceptance of an AI-Based Microteaching Evaluation and Feedback System: A Pre–Post UTAUT Mixed-Methods Study](https://doi.org/10.3390/bs16101818) | journal_article | 2026-10-04 | discovered_unverified |
 | KB-2026-0489 — [Catalysts, Not Only Constraints: Pre-Service EFL Teacher Agency in Generative AI-Assisted Lesson Planning](https://doi.org/10.3390/bs16111998) | journal_article | 2026-10-26 | discovered_unverified |
+| KB-2026-0490 — [Artificial intelligence integration shapes motivation engagement and instructional design outcomes among secondary school students in Morocco](https://doi.org/10.1007/s44217-026-02339-3) | journal_article | 2026-10-28 | bibliographic_checked |
+| KB-2026-0491 — [Network modeling of science teachers’ perceptions of artificial intelligence integration in science curriculum development](https://doi.org/10.1038/s41598-026-75785-6) | journal_article | 2026-10-29 | bibliographic_checked |
+| KB-2026-0492 — [立法會︰教育局局長就「推動新時代下的教師專業發展」議員議案總結發言（只有中文）](https://www.info.gov.hk/gia/general/202610/29/P2026102900363.htm) | government_announcement | 2026-10-29 | bibliographic_checked |
+| KB-2026-0493 — [原教AI 愛與希望─115年中央與地方原住民族教育事務協調會議](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=A5DE2EE847574A52) | government_announcement | 2026-10-29 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
