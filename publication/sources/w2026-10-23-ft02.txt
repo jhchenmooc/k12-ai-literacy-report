@@ -1,0 +1,81 @@
+Médiations et médiatisations (Université TÉLUQ) | 2026-10-24 | Au-delà de l’adoption : les non-usages des IA génératives par les lycéens en France au prisme de l’éthique | https://doi.org/10.52358/mm.vi24.529 | Read: publisher PDF provided by the manager (19 PDF pages = printed pp. 47–65, SHA-256 9ce43a2fdf569a11af38182f3a35f242feb6c65bd655313c2e52c527404babb7), text extracted with pdftotext (poppler) and read 2026-10-30 UTC; page refs below are PDF page (printed page); the PDF prints no online date; first-disclosure date follows daily item D20261025-02 (Crossref published-online 2026-10-24; publisher page connection reset twice on 2026-10-25, not bypassed)
+Médiations et médiatisations – Revue internationale sur le numérique en éducation et communication, No 24, 2026; Received/Accepted/Published dates: not printed in the PDF; author Michael Zeyringer (Université de Strasbourg, LISEC, France); licence as printed in the visible page footer: CC BY-NC-SA 4.0 International (only short excerpts that directly support this item are kept). Text normalisation: line breaks joined; no other changes (straight and curly apostrophes kept as extracted).
+
+Original excerpt (PDF p. 6 (p. 52) Résultats sentence 2; PDF p. 10 (p. 56) configurations paragraph sentences 2–4; PDF p. 13 (p. 59) Conclusion sentence 1; joined by " … "):
+Parmi celles-ci, 153 lycéens (23 %) déclarent ne pas utiliser d’IA génératives. … Une première configuration regroupe des élèves pour lesquels les risques perçus occupent une place centrale (A, G), associés à une faible attente de performance et à une faible intention d’usage (A). … À l’inverse, une autre configuration se caractérise par une perception plus positive des performances et des apprentissages, combinée à une moindre sensibilité aux risques, ce qui s’accompagne d’une intention d’usage plus élevée (H, E). … Entre ces deux pôles, plusieurs situations intermédiaires apparaissent (C, D, F), dans lesquelles coexistent des attentes positives (gain de temps, efficacité) et des préoccupations ciblées, notamment autour de la triche, de l’évaluation ou de la créativité. … Notre étude révèle que les lycéens non usagers se positionnent rarement contre les usagers, mais par rapport à l’usage.
+
+Licence excerpt (PDF p. 1 (p. 47) footer):
+Cette œuvre est distribuée sous licence CC BY-NC-SA 4.0 International.
+
+Résumé excerpt (PDF p. 1 (p. 47)):
+Elle s’appuie sur les réponses de 153 lycéens non usagers, recueillies lors d’une enquête menée en France en décembre 2024.
+
+Introduction excerpt (PDF p. 2 (p. 48)):
+L’article s’appuie sur une enquête menée fin 2024 auprès de lycéens de la région Grand Est.
+
+Méthodologie excerpt (PDF p. 5 (p. 51), paragraph 1 sentences 1–4):
+Un questionnaire en ligne a été administré de décembre 2024 à janvier 2025 auprès des élèves du secondaire de la région Grand Est via l’environnement numérique de travail (ENT), dans le cadre du projet GTNum IA2GE. La participation était volontaire et anonyme. Il s’adressait à l’ensemble des profils d’élèves : non-usagers, non-usagers avec intention d’usage, usagers. Les items fermés reposaient sur des échelles de type Likert à sept niveaux
+
+Méthodologie excerpt (PDF p. 5 (p. 51), open questions):
+Trois questions ouvertes permettaient de recueillir les justifications et les perceptions des élèves à propos des IAG
+
+Méthodologie excerpt (PDF p. 5 (p. 51), paragraph 2):
+D’une part, un modèle d’équations structurelles (PLS-SEM) est mobilisé afin d’identifier les relations entre les variables explicatives et l’intention d’usage (H1). D’autre part, une classification par l’algorithme K-means permet de dégager des profils d’élèves à partir de variables manifestes sélectionnées dans une perspective exploratoire, afin de rendre compte de l’hétérogénéité des non-usages (H2). Les réponses aux questions ouvertes font l’objet d’une analyse qualitative des verbatims, interprétée à la lumière du cadre de la problématisation (Fabre et Musquer, 2009; Fabre, 2017).
+
+Méthodologie excerpt (PDF p. 5 (p. 51), paragraph 3 sentence 1):
+Nous mobilisons le modèle UTAUT (Venkatesh et al., 2003) auquel nous ajoutons trois variables : le risque perçu (RP), la transparence (TR) et les enjeux éthiques sur les apprentissages (EE).
+
+Résultats excerpt (PDF p. 6 (p. 52), sample):
+Nous avons retenu les réponses complètes de 658 lycéens. Parmi celles-ci, 153 lycéens (23 %) déclarent ne pas utiliser d’IA génératives.
+
+Résultats excerpt (PDF p. 6 (p. 52), intention to use):
+L’intention d’usage apparaît globalement faible pour les 153 lycéens
+
+PLS-SEM excerpt (PDF p. 7 (p. 53), text after Tableau 2):
+L’intention d’usage des outils d’IA est principalement expliquée par la PE (β = 0,25), IS (β = 0,20) et EE (β = 0,25), dont les effets sont positifs et statistiquement significatifs. À l’inverse, la perception des risques (RP) exerce un effet négatif significatif (β = -0,10), indiquant que certaines inquiétudes associées aux usages des IAG constituent un frein à l’intention d’usage.
+
+Tableau 2 excerpt (PDF p. 7 (p. 53), columns: Coefficient, Corrélation, Coefficient (bootstrap), Écart-type (bootstrap), Intervalle de confiance; rows EA and EE):
+EA 0,07 0,16 0,08 0,03 [0,12; 0,28]
+EE 0,25 0,54 0,25 0,04 [0,08; 0,20]
+
+PLS-SEM excerpt (PDF p. 9 (p. 55), H1 conclusion):
+Enfin, l’hypothèse H1 est vérifiée : les conditions d’effort (EE) influencent positivement l’intention d’usage, tandis que la perception des risques (RP) exerce un effet dissuasif. En revanche, la confiance (TR), bien qu’inscrite dans une dimension éthique, apparaît comme un déterminant secondaire de l’intention d’usage chez les lycéens non usagers.
+
+K-means excerpt (PDF p. 9 (p. 55)):
+L’analyse met ainsi en évidence neuf classes distinctes, dont les caractéristiques sont présentées dans le tableau 4.
+
+K-means excerpt (PDF p. 10 (p. 56), configurations paragraph sentence 5; next paragraph (H2) sentence 1):
+Enfin, une configuration minoritaire (I) se distingue par une faible saillance de l’ensemble des variables, traduisant des positions plus distantes ou peu structurées vis-à-vis des outils d’IA. Dans leur ensemble, ces résultats confirment l’hypothèse H2, en mettant en évidence des catégories différenciées de non-usagers, structurées par des combinaisons spécifiques des variables relatives au risque perçu, à la performance espérée et aux enjeux éthiques sur les apprentissages.
+
+Analyse des verbatims excerpt (PDF p. 11 (p. 57), procedure):
+Dans un premier temps, nous avons effectué une lecture des données et réalisé des annotations selon deux catégories analytiques : les nécessités et les faits.
+
+Analyse des verbatims excerpt (PDF p. 11 (p. 57), the five nécessités, opening words of each paragraph, plus the [E23] quotation under the third):
+La première nécessité identifiée concerne la préservation de la capacité à réfléchir et le développement de cette capacité
+Une deuxième nécessité porte sur la qualité de l’évaluation, qui doit rendre compte des compétences réelles des élèves et leur permettre de progresser
+Une troisième nécessité concerne la préservation du bien-être des élèves
+« j'ai pas envie d'être dépendante des IAG dans mon cadre scolaire » [E23]
+Une quatrième nécessité est relative à la protection de la propriété intellectuelle et de la créativité
+Enfin, une cinquième nécessité porte sur la formation.
+
+Analyse des verbatims excerpt (PDF p. 11 (p. 57), faits):
+Certains élèves évoquent les ressources déjà disponibles, qu’ils jugent suffisantes et sur lesquelles ils s’appuient pour justifier l’absence de recours aux IAG
+L’usage des IAG par les pairs à des fins de triche est régulièrement mentionné, suscitant toutefois des réflexions diverses.
+
+Analyse des verbatims excerpt (PDF p. 12 (p. 58), faits continued):
+Un autre élément de contexte fréquemment mentionné concerne l’interdiction de l’utilisation des IAG, que ce soit à l’initiative de l’enseignant ou dans le cadre des examens
+Les élèves évoquent également la qualité des réponses ou des productions générées par les IAG
+L’impact social et environnemental des IAG est aussi mentionné
+Enfin, certains constats portent sur la gestion du temps, envisagée tantôt comme un gain, tantôt comme une perte
+Un fait notable concerne la charge de travail scolaire, telle qu’elle est perçue par les élèves, qui peut constituer un facteur incitatif à l’usage
+
+Discussion excerpt (PDF p. 12 (p. 58), limitations):
+Nous avons étudié les réponses de 153 lycéens de la région Grand Est en France, réponses récoltées par adressage d’une enquête en décembre 2024 via l’ENT. Les réponses ont été réalisées de manière volontaire. Les résultats émanent donc d’un contexte particulier. Une analyse des indices de position sociale (IPS) des établissements des répondants nous amène à préciser que relativement peu d’élèves rattachés à un établissement d’IPS inférieur à 90 ont répondu à l’enquête : nos résultats rendent donc peu compte de la diversité sociale de la population interrogée.
+
+Discussion excerpt (PDF p. 13 (p. 59), limitations of the quantitative items):
+Les variables manifestes relatives à ces deux variables latentes ne rendent pas compte de manière exhaustive de toutes les dimensions de l’éthique des usages de l’IA. La perception de l’impact écologique ou sociétal n’a, par exemple, pas été interrogée ici, elle ressort de l’analyse des verbatims.
+
+Annexe A excerpt (PDF p. 16 (p. 62), IS items 1–3):
+IS1. Mes camarades m’encouragent à utiliser les IAG.
+IS2. Les personnes qui comptent pour moi (famille, amis, proches) m’encouragent à utiliser les IAG.
+IS3. Mes professeurs m’encouragent à utiliser les IAG.
