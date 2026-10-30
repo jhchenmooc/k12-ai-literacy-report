@@ -178,3 +178,9 @@
 - **D20261030-06 第二輪對照：** 隔離子代理判定一致。摘要未載樣本人數與地點，限制欄已註明。
 - **候選池與知識庫：** W2026-10-30-A06（batch 2026-10-30-daily-3）→ KB-2026-0495，KR-15619～15627（published_in J08）。D20261029-01 對應的 W2026-10-23-A21／KB-2026-0460 只更新候選池欄位，知識庫紀錄不變。
 - **瀏覽器清單：** 上方第 1 項（MDPI）與第 3 項（JRTE）已完成；第 2 項（eTwinning）仍待處理。
+
+## 補記三（2026-10-30，eTwinning 線索結案）
+
+管理者提供 eTwinning 義大利國家站活動頁的 PDF（受限 repo `from-editor-session/daily-pdfs/no-kb__etwinning-webinar-ai-algoritmi-20261029.pdf`）。頁面印「Pubblicato il: 13/10/2026」，活動為 2026-10-29 16:30–18:30 CET 的教師網路研討會（對象為小學、初中與高中教師；主題為 AI、演算法與錯假訊息）。首次公開 10-13 早於 7 天窗口（10-23～10-30），**已過 7 天，轉月報背景**，不發每日短訊。瀏覽器清單第 2 項結案，本日清單全部完成。
+
+同日管理者決定 International Journal of Technology and Design Education 由觀察池升為正式監測期刊（J53），清單修改另見 `research/venue-watchlist.md` 與 [p0-venue-1030](../p0-venue-1030/review.md)。
