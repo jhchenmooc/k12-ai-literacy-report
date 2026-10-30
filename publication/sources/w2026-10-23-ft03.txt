@@ -1,0 +1,78 @@
+Frontiers in Education (Frontiers) | 2026-10-23 | Teachers’ artificial intelligence self-efficacy: development and validation of a multidimensional scale grounded in social cognitive theory | https://doi.org/10.3389/feduc.2026.1948951 | Read: publisher PDF (https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1948951/pdf, HTTP 200, 21 PDF pages, SHA-256 55cab83c71035055d9e625ff78b5d3fbcae3ca2d433c87b328afb9921e564a07) and publisher full-text article page (https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1948951/full, HTTP 200, SHA-256 f23e8c43ee4598cea566dd2c330f058e56c8341321c117352224117739981cc2), both fetched 2026-10-30 UTC, text extracted with pdftotext and a Python HTML-to-text script (python3 -I); page refs below are PDF pages (= printed page numbers 01–21); first-disclosure basis: PDF p. 1 and article page print "PUBLISHED 23 October 2026" / "Published 23 October 2026"; citation_online_date 2026/10/08 on the article page equals the Accepted date and is not used
+Front. Educ. 11:1948951 (Volume 11 - 2026), Original Research; Received 26 July 2026, Revised 29 September 2026, Accepted 08 October 2026, Published 23 October 2026; authors Tolga Topcubaşı, Oğuz Keleş, Serkan Demir, Tuğçe Gamze İşçi (Istanbul 29 Mayıs University; Istanbul University-Cerrahpaşa; Independent Researcher, Niğde, Türkiye); open access, Creative Commons Attribution License (CC BY)
+Text normalisation: line breaks rejoined; words split by line-break hyphenation in the PDF text layer are restored as on the publisher article page (e.g. "Self-" + "Efficacy" -> "Self-Efficacy", "AI-" + "generated" -> "AI-generated", "over-" + "or" -> "over- or"); apostrophes and quotation marks follow the PDF (’ “ ”). No other changes.
+
+Original excerpt (the passages quoted in the sections below, in order; joined by " … "):
+The aim of this study was to develop and validate the Artificial Intelligence Self-Efficacy Scale for Teachers (AISES-T). … Thus, the AI Use and Learning Self-Efficacy dimension includes 11 items (Items 1–11), the Pedagogical AI Integration Self-Efficacy dimension 7 items (Items 12–18) and the AI Awareness and Understanding Self-Efficacy dimension 4 items (Items 19–22). … Evidence from two independent samples supported a three-factor structure (AI Use and Learning Self-Efficacy, Pedagogical AI Integration Self-Efficacy, and AI Awareness and Understanding Self-Efficacy), together with high internal consistency and satisfactory convergent and discriminant validity. … Consequently, the AISES-T should not be interpreted as a measure of teachers’ ethical AI self-efficacy; the evaluative component it captures is limited to judging the reliability of AI-generated information (I21). … Second, both samples were recruited through convenience sampling from teachers in Türkiye, which limits the generalisability of the findings to other educational systems and to teachers with different levels of access to AI technologies.
+
+Front matter excerpt (PDF p. 1):
+RECEIVED 26 July 2026 REVISED 29 September 2026 ACCEPTED 08 October 2026 PUBLISHED 23 October 2026
+
+Copyright excerpt (PDF p. 1):
+This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY).
+
+Abstract excerpt (PDF p. 1, Introduction last sentence; Methods):
+The aim of this study was to develop and validate the Artificial Intelligence Self-Efficacy Scale for Teachers (AISES-T). … Data were collected from teachers in different regions of Turkiye within a scale development design. Following expert review, a pool of 50 items was reduced to a 27-item trial form. Exploratory factor analysis (EFA) using principal axis factoring was conducted in a first sample of 313 teachers, and confirmatory factor analysis (CFA) was conducted in a second, independent sample of 559 teachers.
+
+Abstract excerpt (PDF p. 1, Discussion):
+The results show that teachers’ AI self-efficacy comprises related but distinguishable beliefs about learning with AI, integrating it into instruction and understanding how it works. The AISES-T offers a valid and reliable measure for research on AI-supported teaching and for planning teacher professional development.
+
+Theory excerpt (PDF p. 4, 1 Introduction, last paragraphs):
+Building on Social Cognitive Theory, this study conceptualizes teachers’ AI self-efficacy as a set of domain- and task-specific beliefs concerning their capability to perform AI-related actions in educational contexts.
+
+Theory excerpt (PDF p. 4, 1 Introduction):
+In this sense, the AISES-T measures capability beliefs rather than actual performance, factual knowledge, attitudes, behavioral intentions, or expected outcomes.
+
+Research design excerpt (PDF p. 5, 2.1 Research design):
+This research is a scale development study conducted to measure teachers’ perceived AI self-efficacy, and a quantitative, cross-sectional survey design was used.
+
+Participants excerpt (PDF p. 5, 2.2 Participants, first sentence):
+Participants were teachers employed in schools in different regions of Türkiye.
+
+Participants excerpt (PDF p. 5, 2.2 Participants, second paragraph):
+The EFA sample comprised 313 teachers, corresponding to 11.6 respondents per item for the 27-item trial form. The CFA was carried out with a different group of 559 teachers (25.4 respondents per item for the 22-item form). The two samples were collected one after the other through an online questionnaire, and no teacher took part in both. Participation was voluntary, and participants were reached through convenience sampling.
+
+Item development excerpt (PDF p. 5, 2.3 Item development and content validity):
+We also examined international frameworks, particularly the UNESCO AI Competency Framework for Teachers (Miao and Cukurova, 2024) and DigCompEdu (Redecker, 2017), so that the items would reflect what teachers are expected to be able to do in AI-supported learning environments. Drawing on this groundwork, 50 items were written and assigned in advance to the three hypothesized dimensions.
+
+Expert panel excerpt (PDF p. 5, 2.3):
+The panel comprised 10 experts, namely 2 specialists in educational technology, 2 specialists in educational measurement and evaluation, 2 specialists in curriculum and instruction, 2 specialists in Turkish language and expression, and 2 practising teachers with experience of using AI applications in the classroom.
+
+Item reduction excerpt (PDF pp. 5 and 8, 2.3):
+Twenty-three items fell below the 0.80 cut-off and were removed during expert review, leaving 27 items. … Table 3 shows that the 50-item pool was reduced to 27 items after expert review and to 22 items after the EFA.
+
+Response format excerpt (PDF p. 8, 2.3):
+Responses are given on a five-point Likert-type scale from 1 (“Strongly Disagree”) to 5 (“Strongly Agree”).
+
+Factor structure excerpt (PDF p. 11, 3.1 Exploratory factor analysis):
+Thus, the AI Use and Learning Self-Efficacy dimension includes 11 items (Items 1–11), the Pedagogical AI Integration Self-Efficacy dimension 7 items (Items 12–18) and the AI Awareness and Understanding Self-Efficacy dimension 4 items (Items 19–22).
+
+Reliability excerpt (PDF p. 11, 3.2 Internal consistency reliability):
+Coefficients of this magnitude indicate excellent internal consistency at both the subscale and the total-scale level, since values of 0.70, 0.80 and 0.90 are commonly regarded as the lower bounds of acceptable, good and excellent reliability, respectively (Hair et al., 2019; Tabachnick and Fidell, 2019).
+
+CFA excerpt (PDF pp. 11–12, 3.3 Confirmatory factor analysis):
+These residual covariances were identified post hoc from modification indices and residual diagnostics in the CFA sample, so the third model is regarded as a data-informed refinement of the hypothesized model and not as an a priori confirmatory model.
+
+CFA excerpt (PDF p. 13, 3.3):
+Considered together, these indices indicate that the three-factor structure of the AISES-T is supported by confirmatory factor analysis. … The results therefore support a broad general AI self-efficacy factor coexisting with the three domain-specific dimensions.
+
+Discriminant validity excerpt (PDF p. 16, 3.4 Convergent and discriminant validity):
+The F2–F3 correlation (0.767) and HTMT value (0.776) are the highest observed values, but they remain below the relevant thresholds and indicate conceptual relatedness rather than a failure of discriminant validity.
+
+Discussion excerpt (PDF pp. 16–17, 4.1 A three-dimensional structure of teachers’ AI self-efficacy):
+The exploratory and confirmatory analyses consistently indicated that teachers’ AI self-efficacy is better represented by three correlated dimensions than by a single undifferentiated belief (Δχ²(3) = 2,202.35, p < 0.001). … The AISES-T can therefore be interpreted at two levels: the total score provides an index of general AI self-efficacy, whereas the subscale scores provide a more diagnostic profile of the actions that teachers feel more or less capable of performing.
+
+Ethics dimension excerpt (PDF p. 17, 4.4 The place of ethics in teachers’ AI self-efficacy):
+A notable feature of the final instrument is that it does not include an ethics dimension, although the ethical use of AI is central to recent competency frameworks (Chiu et al., 2025; Miao and Cukurova, 2024). The five ethics-related items in the initial pool (P26–P30) were removed during expert review because of low I-CVI values (0.10–0.30). Their wording helps to explain this outcome: most expressed attitudes, beliefs or dispositions (e.g., “I believe that human oversight is necessary…”) rather than capabilities, and therefore did not fit the self-efficacy format required by Social Cognitive Theory. Consequently, the AISES-T should not be interpreted as a measure of teachers’ ethical AI self-efficacy; the evaluative component it captures is limited to judging the reliability of AI-generated information (I21).
+
+Practical implications excerpt (PDF p. 18, 4.5 Practical implications, last sentence):
+Because the instrument measures beliefs rather than demonstrated competence, it is suited to diagnostic and research purposes and should not be used as a basis for high-stakes decisions about individual teachers.
+
+Limitations excerpt (PDF p. 18, 4.6 Limitations):
+Several limitations should be considered when interpreting the findings. First, the data were obtained through self-report and may be affected by social desirability and common-method variance (Podsakoff et al., 2003); moreover, self-efficacy beliefs may over- or underestimate actual performance. Second, both samples were recruited through convenience sampling from teachers in Türkiye, which limits the generalisability of the findings to other educational systems and to teachers with different levels of access to AI technologies. Third, the 12 within-factor residual covariances in the final model were identified post hoc from modification indices in the CFA sample; although they did not alter the factor structure, they may reflect sample-specific variance or item redundancy and should be tested in new samples. Fourth, measurement invariance across groups such as gender, school level and teaching experience, as well as test–retest reliability and criterion-related validity, were not examined. Finally, the ethical dimension of AI use is not represented in the final instrument, and given the rapid evolution of AI, particularly generative AI, the relevance of specific item wordings may need periodic review.
+
+Conclusion excerpt (PDF p. 18, 5 Conclusion):
+This study developed and validated the 22-item Artificial Intelligence Self-Efficacy Scale for Teachers (AISES-T). Evidence from two independent samples supported a three-factor structure (AI Use and Learning Self-Efficacy, Pedagogical AI Integration Self-Efficacy, and AI Awareness and Understanding Self-Efficacy), together with high internal consistency and satisfactory convergent and discriminant validity.
+
+Ethics statement excerpt (PDF p. 18):
+The studies involving humans were approved by the Ethics Committee of Istanbul 29 Mayıs University.

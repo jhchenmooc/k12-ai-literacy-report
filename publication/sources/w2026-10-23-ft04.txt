@@ -1,0 +1,50 @@
+Computers and Education Open (Elsevier) | 2026-10-24 | Revisiting Pedagogical Content Knowledge (PCK) development for the age of Generative AI | https://doi.org/10.1016/j.caeo.2026.100428 | Read: publisher Journal Pre-proof PDF provided by the manager, SHA-256 0ebc83b944e01cdf1f685d00da634a7fab5c75b2389dfed5584b7e0f88801bb5 (25 PDF pages, unnumbered: PDF p. 1 Elsevier pre-proof cover, p. 2 title/affiliations, pp. 3-22 article, pp. 23-25 references and declarations), text extracted with pdftotext (poppler) and read 2026-10-30 UTC; page refs below are PDF pages; first-disclosure date per publisher article page "Available online 24 October 2026" as used for daily item D20261025-01 (read by the manager in a browser; the pre-proof PDF prints no online date; Crossref lists published-print 2026-10 only)
+Computers and Education Open, article 100428 (CAEO 100428; PII S2666-5573(26)00100-X), volume/issue not yet assigned (Journal Pre-proof); Received 29 December 2025 / Revised 4 October 2026 / Accepted 20 October 2026; authors Mary E. Webb, Kathryn MacCallum, Jodie Torrington, Deirdre Butler, Chris Shelton, Jihyun Lee, Tanya Linden, Jonathan D. Cohen, Ana Amélia Carvalho, Matt Bower, Fredrik Mørk Røkenes; licence CC BY-NC-ND 4.0 (printed on PDF p. 1) - this snapshot keeps only short excerpts that directly support the claim. Text normalisation: line breaks joined; no other changes.
+
+Original excerpt (the passages quoted in the sections below, in order; joined by " … "):
+Using the Refined Consensus Model (RCM) as an analytical framework, we analysed how GenAI influences the three PCK domains: personal PCK (pPCK), collective PCK (cPCK), and enacted PCK (ePCK). … Guided by the research question "How can teachers and GenAI collaborate to develop and use PCK and pedagogical reasoning in K-12?", we analysed three researcher-constructed vignettes – hypothetical but plausible scenarios representing GenAI use in planning, classroom interaction, and assessment – to derive analytical propositions about the PCK-GenAI relationship. … We propose that GenAI can amplify teachers' PCK when critically evaluated, but poses risks for novice teachers whose pPCK is still developing. … As hypothetical constructions, they cannot replicate the full complexity of real-time classroom dynamics – particularly for ePCK; longitudinal ethnographic studies of actual teacher-GenAI interactions are needed to test and extend the analytical propositions developed here. … Since the researchers who constructed the vignettes also conducted the analysis, there is an inherent risk of propositions reflecting our existing theoretical commitments; iterative whole-group review mitigated but cannot eliminate this risk.
+
+Pre-proof and licence excerpt (PDF p. 1, cover notice):
+This version will undergo additional copyediting, typesetting and review before it is published in its final form. … This is an open access article under the CC BY-NC-ND license
+
+Abstract excerpt (PDF p. 3, Abstract sentences 1-3, 5):
+This paper examines how Generative Artificial Intelligence (GenAI) in K-12 education interacts with teachers' Pedagogical Content Knowledge (PCK). … Using the Refined Consensus Model (RCM) as an analytical framework, we analysed how GenAI influences the three PCK domains: personal PCK (pPCK), collective PCK (cPCK), and enacted PCK (ePCK). … Guided by the research question "How can teachers and GenAI collaborate to develop and use PCK and pedagogical reasoning in K-12?", we analysed three researcher-constructed vignettes – hypothetical but plausible scenarios representing GenAI use in planning, classroom interaction, and assessment – to derive analytical propositions about the PCK-GenAI relationship. … We propose that GenAI can amplify teachers' PCK when critically evaluated, but poses risks for novice teachers whose pPCK is still developing.
+
+RCM realms excerpt (PDF p. 6, Section 3.1):
+The RCM identifies three distinct realms of PCK: collective PCK (cPCK), representing specialised professional knowledge shared amongst multiple educators; personal PCK (pPCK), comprising an individual teacher's cumulative knowledge and skills derived from teaching experiences and professional contributions; and enacted PCK (ePCK), the specific subset of knowledge utilised during planning, teaching, and reflecting on lessons and students’ progress.
+
+Methodology excerpt (PDF p. 7, Section 4):
+The vignettes that we developed are hypothetical but plausible scenarios; they are not accounts of observed classroom events, but analytical tools grounded in documented practice.
+
+Vignette construction excerpt (PDF pp. 7-8, Section 4.1):
+Eleven internationally recognised researchers and teacher educators, with expertise in educational technology and subject specialisms spanning science, history, computer science, and English education across primary, secondary, and tertiary contexts in the UK, New Zealand, Portugal, Norway, Ireland, Australia, the USA, and North Africa, collaborated to develop three vignettes. … Each vignette was drafted by a small subgroup using empirical literature, professional experience and classroom examples, then critiqued by the full team for plausibility, authenticity, and relevance until consensus was reached
+
+Analytic procedure excerpt (PDF p. 8, Section 4.2):
+Subgroups analysed how GenAI in each scenario interacted with RCM domains – content, pedagogical, and contextual knowledge, including PCK variants – identifying required teacher competencies and potential risks. … The full team then conducted two rounds of review to address omissions, inconsistencies, and alignment with the literature, refining the analysis to consensus.
+
+Vignette contexts excerpt (PDF p. 8, Section 5.1; PDF p. 12, Section 5.2; PDF p. 15, Section 5.3):
+Context: Year 5 (9–10 years old) – Primary School, New Zealand … Subject: Science - Exploring Western and Indigenous Perspectives on the Water Cycle … Context: Year 10 (14-15 years old) - Secondary School … Subject: History - The French Revolution … Context: Year 11 (15–16 years old) – Secondary School, United Kingdom … Subject: English Language – Analysing Persuasive Techniques
+
+Vignette 1 analysis excerpt (PDF p. 10, Section 5.1.1):
+In RCM terms, GenAI acts as a new amplifier for rapidly generating draft lessons while demanding new filters grounded in critical evaluation. … Used uncritically, GenAI risks substituting for pedagogical reasoning, eroding agency and adaptability
+
+Vignette 2 analysis excerpt (PDF p. 13, Section 5.2.1):
+However, novice teachers may struggle to identify inaccuracies quickly enough to intervene effectively, as their PCK components remain fragmented and they cannot simultaneously process content accuracy, student responses, and pedagogical decisions
+
+Vignette 3 analysis excerpt (PDF p. 16, Section 5.3.1):
+A key pitfall is that GenAI use can be as time-consuming as manual marking. … Success depends on treating GenAI as a critical assistant subordinate to teacher expertise.
+
+AI literacy excerpt (PDF p. 18, Section 6.1):
+AI literacy functions in this context as a mediating filter for effective PCK development and use.
+
+Novice teachers excerpt (PDF p. 19, Section 6.2):
+Without critical engagement, they risk developing overreliance on GenAI, which could stifle pPCK and ePCK development.
+
+Theoretical implications excerpt (PDF p. 19, Section 6.3):
+Specifically, we propose that the RCM be extended to explicitly position GenAI as an active mediating agent within the learning context layer – distinct from other contextual factors by virtue of its generative, pseudo-authoritative character and its capacity to simulate aspects of cPCK without the community validation that defines it.
+
+Limitations excerpt (PDF p. 21, Section 6.5):
+As hypothetical constructions, they cannot replicate the full complexity of real-time classroom dynamics – particularly for ePCK; longitudinal ethnographic studies of actual teacher-GenAI interactions are needed to test and extend the analytical propositions developed here. … Their validation also rested on researcher judgement rather than external practitioner review, and future iterations would benefit from broader input from classroom teachers across a wider range of subject and cultural contexts. … Since the researchers who constructed the vignettes also conducted the analysis, there is an inherent risk of propositions reflecting our existing theoretical commitments; iterative whole-group review mitigated but cannot eliminate this risk. … The analysis focused on teachers' knowledge and reasoning; how students' own GenAI interactions shape pedagogical dynamics and influence teachers' ePCK remains beyond its scope and represents an important direction for future research. … Finally, the vignettes were developed at a point in time; the rapid pace of LLM development and the move toward hybrid AI models means that specific tool characteristics will continue to evolve, even if the analytical framework remains applicable.
+
+Concluding remarks excerpt (PDF p. 22, Section 6.8):
+Through vignette-based analysis using the RCM, we have argued that this relationship is neither straightforwardly enabling nor straightforwardly threatening: GenAI can amplify teachers' professional knowledge when engaged critically, yet it also introduces distinctive risks – particularly for novice teachers whose pPCK is still forming – and reconfigures the relationships between the RCM's core knowledge realms in ways that existing frameworks do not adequately capture. … The human teacher is not displaced in this account; rather, teacher expertise, contextual judgement, and critical engagement emerge as more essential than ever.
