@@ -4,12 +4,14 @@
     {
       "path": "daily/2026-10-30/index.html",
       "claims_file": "publication/claims/daily-2026-10-30.json",
-      "publication_mode": "ai_low_risk_source_facts"
+      "publication_mode": "ai_low_risk_source_facts",
+      "revised_on": "2026-10-30"
     },
     {
       "path": "daily/2026-10-29/index.html",
       "claims_file": "publication/claims/daily-2026-10-29.json",
-      "publication_mode": "ai_low_risk_source_facts"
+      "publication_mode": "ai_low_risk_source_facts",
+      "revised_on": "2026-10-30"
     },
     {
       "path": "daily/2026-10-28/index.html",

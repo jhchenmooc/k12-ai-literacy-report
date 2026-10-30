@@ -146,6 +146,74 @@
       "audience": "k12",
       "screening_note": "Verified 2026-10-30 for daily brief 2026-10-30.",
       "verification_completed_on": "2026-10-30"
+    },
+    {
+      "candidate_id": "W2026-10-30-A05",
+      "category": "research",
+      "source_url": "https://doi.org/10.1007/s10798-026-10109-3",
+      "source_title": "Developing and evaluating the dual-pedagogy approach to enhance AI literacy in young children",
+      "source_organization": "International Journal of Technology and Design Education (Springer)",
+      "source_publication_date": "2026-10-28",
+      "source_locator": "出版社文章頁（Springer，2026-10-30 讀取，首次 429、重試 200）：Published 28 October 2026，citation_online_date 2026/10/28，Crossref published-online 同日；摘要歸屬：Abstract 第 3 至 7 句",
+      "discovered_on": "2026-10-30",
+      "discovery_batch_id": "2026-10-30-daily-2",
+      "first_disclosed_on": "2026-10-28",
+      "source_updates": [],
+      "original_excerpt": "This study aims to address this gap by, first, developing and applying a pedagogical approach to foster AI literacy and positive attitudes towards AI in young children; second, evaluating this approach through measuring the change of children’s AI literacy and their attitudes towards AI. … We propose a dual-pedagogy (DP) approach combining play-based learning and storytelling. … In our study, 162 young children (aged 5–6) participated in an AI literacy education program lasting a total of eight weeks. … They were randomly assigned to two groups. … The experimental group received instructions based on the DP approach, while the active-control group received traditional direct instruction.",
+      "source_checked": true,
+      "claim_text": "來源機構：International Journal of Technology and Design Education (Springer)；資料標題：Developing and evaluating the dual-pedagogy approach to enhance AI literacy in young children；來源刊登日：2026-10-28。作者摘要報告：研究旨在發展並應用一種培養幼兒 AI 素養及對 AI 正向態度的教學取向，並透過測量幼兒 AI 素養與對 AI 態度的變化加以評估；作者提出結合遊戲式學習與說故事的「雙教學法」（DP）取向；162 名 5–6 歲幼兒參加為期八週的 AI 素養教育課程，隨機分為兩組，實驗組依雙教學法授課，主動對照組接受傳統直接教學。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（International Journal of Technology and Design Education，監測清單觀察池，管理者 2026-10-30 同意發布）；162 名 5–6 歲幼兒、八週課程、兩組隨機分派的介入研究；摘要未寫研究地點與課程具體內容。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-30 子代理讀出版社文章頁與 Crossref，列觀察；管理者 2026-10-30 指示發布後，本 session 重讀文章頁，擇摘要第 3 至 7 句撰寫中文摘要與中文譯名，不寫成效結果；第二輪 2026-10-30 由隔離子代理逐項對照英文原句（數字、設計、取向組成、研究目的、篇名），判定大致一致，依建議把評估寫為「透過測量……變化」、補「對 AI」與縮寫（DP），篇名改為「旨在提升」，修正後一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS"
+      ],
+      "ai_lit_note": "幼兒 AI 素養教育課程（摘要未列課程內容，面向對應屬推論），屬學生 AI 素養（A），對應 S-BAS「理解AI運作原理與限制」",
+      "audience": "k12",
+      "doi": "10.1007/s10798-026-10109-3",
+      "screening_note": "Verified 2026-10-30 for daily brief 2026-10-30.",
+      "verification_completed_on": "2026-10-30"
+    },
+    {
+      "candidate_id": "W2026-10-30-A06",
+      "category": "research",
+      "source_url": "https://doi.org/10.1080/15391523.2026.2740580",
+      "source_title": "“I trained every part of myself beneath these technological wrappings”: exploring and defining foreign language PK–12 teachers’ critical multilingual and multimodal AI competence",
+      "source_organization": "Journal of Research on Technology in Education (Taylor & Francis)",
+      "source_publication_date": "2026-10-29",
+      "source_locator": "出版者文章頁截圖（管理者 2026-10-30 提供；程式請求 Taylor & Francis 回 403，未繞過）：Published online 29 Oct 2026（與 Crossref published-online 一致），Received 30 Mar 2026、Accepted 23 Sep 2026；摘要歸屬：Abstract 第 3 至 6 句",
+      "discovered_on": "2026-10-30",
+      "discovery_batch_id": "2026-10-30-daily-3",
+      "first_disclosed_on": "2026-10-29",
+      "source_updates": [],
+      "original_excerpt": "This longitudinal qualitative study examines how multilingual teachers assess, perceive and develop AI competence, and how socio-technical, multilingual contexts shape it over time. … Data were collected through journey plots, multimodal artifacts and semi-structured interviews. … Findings reveal teachers’ multidimensional AI competence shaped by linguistic repertoires, cultural positioning, and ethical reflection. … A domain-specific linguistically and culturally responsive teacher AI competence framework, called critical multilingual and multimodal AI competence, is proposed.",
+      "source_checked": true,
+      "claim_text": "來源機構：Journal of Research on Technology in Education (Taylor & Francis)；資料標題：“I trained every part of myself beneath these technological wrappings”: exploring and defining foreign language PK–12 teachers’ critical multilingual and multimodal AI competence；來源刊登日：2026-10-29。作者摘要報告：這項縱貫質性研究探討多語教師如何評估、知覺與發展 AI 能力，以及社會技術與多語情境如何隨時間形塑其能力；資料以旅程圖、多模態作品與半結構訪談蒐集；作者報告教師的 AI 能力具多面向，受語言資源、文化定位與倫理反思形塑，並提出名為「批判性多語與多模態 AI 能力」、具語言與文化回應性的領域特定教師 AI 能力框架。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Journal of Research on Technology in Education，監測清單 J08）；質性縱貫研究，篇名與關鍵詞寫 PK–12 外語教師（含學前），摘要只寫 multilingual teachers，未載人數與地點。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-10-30 子代理讀 Crossref 紀錄（出版者頁 403、Crossref 無摘要），列待補與瀏覽器清單；管理者 2026-10-30 提供出版者文章頁截圖後，本 session 轉錄摘要第 3 至 6 句撰寫中文摘要與中文譯名；第二輪 2026-10-30 由隔離子代理逐項對照英文原句（設計、研究問題、資料、發現、框架名稱、中文篇名），判定一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-PD"
+      ],
+      "ai_lit_note": "外語 PK–12 教師如何評估、知覺與發展 AI 能力並據以提出教師 AI 能力框架，屬教師 AI 素養（A），對應 T-PD「評估教師AI素養以規劃專業增能」",
+      "audience": "k12",
+      "doi": "10.1080/15391523.2026.2740580",
+      "screening_note": "Verified 2026-10-30 for daily brief 2026-10-30.",
+      "verification_completed_on": "2026-10-30"
     }
   ],
   "search_runs": [
@@ -173,6 +241,38 @@
       ],
       "discovered": 4,
       "added": 4,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-30-daily-2",
+      "searched_on": "2026-10-30",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Manager 2026-10-30 instruction: publish observation item 10.1007/s10798-026-10109-3 (IJTDE, observation pool) found by the 2026-10-30 morning Crossref and ISSN screen; publisher page re-read (HTTP 429 then 200)",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-10-30-daily-3",
+      "searched_on": "2026-10-30",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Manager 2026-10-30 provided the publisher article page screenshot for J08 10.1080/15391523.2026.2740580 (Taylor & Francis returned 403 to automated requests, not bypassed); found by the 2026-10-30 morning ISSN screen",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ],
