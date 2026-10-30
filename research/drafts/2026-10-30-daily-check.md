@@ -145,3 +145,36 @@
 | 1 | https://www.mdpi.com/2076-328X/16/11/2017 （D20261029-01，J52 `10.3390/bs16112017`；10-29 原列） | 文章頁「Published」日期與摘要的截圖，或全文 PDF | 書目型升為作者摘要型（更正） | 11-03 |
 | 2 | https://etwinning.indire.it/eventi/webinar-ai-algoritmi-e-manipolazione-dellinformazione-da-internet-alla-tua-classe/ （eTwinning／INDIRE 網路研討會；10-29 原列） | 頁面發布日期、活動日期與說明的截圖 | 判斷是否補發 | 11-03 |
 | 3 | https://doi.org/10.1080/15391523.2026.2740580 （J08 JRTE，PK–12 外語教師批判性 AI 能力；T&F 403） | 文章頁「Published online」日期與摘要的截圖，或全文 PDF | 確認對象後發作者摘要型或書目型（補登） | 11-05 |
+
+## 補記（2026-10-30，晨間發布後）
+
+管理者指示：「IJTDE 那篇幼兒研究也發在今日短訊」。
+
+| 編號 | 來源 | 首發日（依據） | 範圍 | 對象 | 型態 |
+|---|---|---|---|---|---|
+| D20261030-05 | International Journal of Technology and Design Education（Springer；監測清單觀察池），Su、Yim、Yang〈Developing and evaluating the dual-pedagogy approach to enhance AI literacy in young children〉 https://doi.org/10.1007/s10798-026-10109-3 | 2026-10-28（出版社頁 Published；citation_online_date 與 Crossref 同日） | A（S-BAS） | k12（5–6 歲幼兒 162 人） | 作者摘要型 |
+
+- **讀取：** 本 session 重讀出版社頁，第一次 429（請求過多），重試 200；未改 User-Agent。
+- **摘要依據：** 摘要第 3 至 7 句（研究目的、教學取向、樣本與設計）。介入研究，依規則不寫成效結果（AI 素養評量的組間差異、態度變化、教師看法）。
+- **對象與分類：** 摘要未寫研究地點與課程具體內容，知識庫不記研究國別；S-BAS 子項為推論對應，已在分類說明註明。
+- **第二輪對照：** 隔離子代理判定大致一致。依建議修改如下，修正後一致：
+  - 評估改寫為「透過測量……變化」，並補「對 AI」。
+  - 補縮寫（DP）。
+  - 中文篇名改為「旨在提升」，避免讀成已證實的成效。
+- **更正紀錄：** issues.json 本期加 `revised_on: 2026-10-30`；corrections.json 加 `daily-2026-10-30-r1`（補登）。
+- **候選池與知識庫：** W2026-10-30-A05（batch 2026-10-30-daily-2）→ KB-2026-0494，KR-15611～15618；不加 `published_in`（觀察池不給正式 ID）。
+- **觀察池：** 本則依管理者指示發布；IJTDE 是否改列正式監測期刊，未另作決定。
+
+## 補記二（2026-10-30，管理者提供 PDF 與截圖後）
+
+管理者提供：Behavioral Sciences `10.3390/bs16112017` 出版者 PDF（受限 repo 已由另一 session 存為 `from-editor-session/daily-pdfs/KB-2026-0460__behavsci-16-02017.pdf`，SHA-256 09a3eb7e…5044，與本次上傳同檔），以及 JRTE `10.1080/15391523.2026.2740580` 出版者文章頁截圖（貼於對話，未另存檔）。
+
+| 編號 | 處理 | 依據 |
+|---|---|---|
+| D20261029-01 | 書目型改為作者摘要型（10-29 頁加 `revised_on: 2026-10-30`；corrections `daily-2026-10-29-r1`） | PDF 首頁 Published 27 October 2026，與 Crossref 一致；摘要第 3、4、9 句；新快照 `publication/sources/d2026-10-29-a05-bs.txt` |
+| D20261030-06 | 補登 J08 JRTE〈"I trained every part of myself beneath these technological wrappings"…〉（corrections `daily-2026-10-30-r2`） | 截圖 Published online 29 Oct 2026，與 Crossref 一致；摘要第 3 至 6 句；A（T-PD），k12（篇名與關鍵詞寫 PK–12 teachers） |
+
+- **D20261029-01 第二輪對照：** 隔離子代理判定大致一致，依建議把剖面名稱譯為「整體低水準／整體高水準」並以 en dash 連接複合名稱；修正後一致。各因素與 AI 素養的關聯屬相關結果，不寫入。
+- **D20261030-06 第二輪對照：** 隔離子代理判定一致。摘要未載樣本人數與地點，限制欄已註明。
+- **候選池與知識庫：** W2026-10-30-A06（batch 2026-10-30-daily-3）→ KB-2026-0495，KR-15619～15627（published_in J08）。D20261029-01 對應的 W2026-10-23-A21／KB-2026-0460 只更新候選池欄位，知識庫紀錄不變。
+- **瀏覽器清單：** 上方第 1 項（MDPI）與第 3 項（JRTE）已完成；第 2 項（eTwinning）仍待處理。

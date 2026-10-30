@@ -3,6 +3,36 @@
   "note": "更正與改版紀錄（第二次三刊聯合評審 E3e，管理者 2026-10-17）。每筆列出舊說法、新說法、日期與原因；頁面 corrections/index.html 由 research/render-site.js 依本檔產生。",
   "entries": [
     {
+      "id": "daily-2026-10-30-r2",
+      "date": "2026-10-30",
+      "path": "daily/2026-10-30/",
+      "target": "每日短訊 2026-10-30",
+      "type": "補登",
+      "old": "Journal of Research on Technology in Education 一篇（10.1080/15391523.2026.2740580）因出版者頁回 403、Crossref 無摘要而列入瀏覽器清單。",
+      "new": "補登 D20261030-06（外語 PK–12 教師的批判性多語與多模態 AI 能力，縱貫質性研究，作者摘要歸屬型）。",
+      "reason": "管理者當日提供出版者文章頁截圖（Published online 29 Oct 2026）；摘要可核對，首次公開日在本期前 7 天內。"
+    },
+    {
+      "id": "daily-2026-10-29-r1",
+      "date": "2026-10-30",
+      "path": "daily/2026-10-29/",
+      "target": "每日短訊 2026-10-29",
+      "type": "補齊",
+      "old": "4 則；D20261029-01（Behavioral Sciences，長春 K–12 學生 AI 素養）只以書目型發布（出版者頁回 403，摘要只讀到 Crossref 版）。",
+      "new": "D20261029-01 依出版者 PDF 改為作者摘要歸屬型（橫斷面相關研究，關聯方向不寫入）。",
+      "reason": "管理者 2026-10-30 提供出版者 PDF；Published 27 October 2026 與 Crossref 一致，摘要與研究對象可核對。"
+    },
+    {
+      "id": "daily-2026-10-30-r1",
+      "date": "2026-10-30",
+      "path": "daily/2026-10-30/",
+      "target": "每日短訊 2026-10-30",
+      "type": "補登",
+      "old": "4 則；International Journal of Technology and Design Education 一篇（10.1007/s10798-026-10109-3）因出處在監測清單觀察池而列觀察、未發布。",
+      "new": "補登 D20261030-05（5–6 歲幼兒 AI 素養教育課程的雙教學法取向，作者摘要歸屬型；介入研究，只寫研究目的與設計）。",
+      "reason": "管理者當日指示發布；出版社頁可讀（Published 28 October 2026），摘要與研究對象可核對，首次公開日在本期前 7 天內。"
+    },
+    {
       "id": "daily-2026-10-28-r1",
       "date": "2026-10-28",
       "path": "daily/2026-10-28/",
