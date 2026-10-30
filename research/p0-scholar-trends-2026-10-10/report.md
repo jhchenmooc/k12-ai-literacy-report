@@ -77,3 +77,35 @@
 2. 被選論點的每筆依據：回出版者頁核首次公開日、存原文短摘錄快照、寫歸屬 claim（`author_opinion` 或 `research_finding`，`section: "trends"` 或已在 `scholars` 者直接引用），兩輪交叉核對。
 3. 歸納句寫成 `editorial_analysis`，只寫「哪些研究群在哪些論文中談到某概念」，不寫成效、因果或建議；以 `supporting_claim_ids` 綁定上述依據。
 4. 10/29 前補查 10/11～10/29 的新作，更新本紀錄。
+
+## 補查 2026-10-11～10-26（2026-10-30，文獻 session）
+
+依「下一步」第 4 點，以 [10/26 月檢索](../p0-scholar-monthly-2026-10-26/report.md)（93 人，OpenAlex 2026-09-30～10-26）補查。只列 A、B 類且與上列論點相關者；首次公開日依該次檢索與 [#388 更正](../p0-scholar-monthly-2026-10-26/report.md#更正2026-10-27)。10/27～10/31 由 10/31 補跑涵蓋，結果出來後再補。獨立性依本紀錄 `coauthorship_2022_2026` 兩兩判斷。
+
+### 論點一（已採用）：新增依據
+
+本期無新的 AI 素養測量工具研究。原依據 H09 B-AIMT（2026-09-28，k12，同儕審查）仍在期末前三個月內，可滿足「至少一則 K-12 同儕審查研究」的要求；H25 TAIL 仍是預印本。
+
+### 論點三：新增依據
+
+| 學者 | 作品（首次公開） | 一句概述 | 對象 |
+|---|---|---|---|
+| T14 蔡今中 | Investigating secondary school students' shared epistemic agency with GAI in online scientific explanation writing（2026-10-15，Elsevier PDF）<br>doi:10.1016/j.compedu.2026.105769 | 122 名臺灣七年級生在鷹架式生成式 AI 下展現的認識能動性類型與層次 | k12 |
+| H31 Luo | Generative AI as a team moderator in CSCL（2026-10-20，Wiley 頁）<br>doi:10.1111/bjet.70096 | 以生成式 AI 擔任小組調節者，提供社會共享調節鷹架 | higher_ed |
+| S02、S07 | GenAI-supported internal feedback intervention for writing improvement（2026-10-17，Elsevier PDF）<br>doi:10.1016/j.compedu.2026.105767 | 評估判斷與提問品質比互動次數更與寫作表現相關 | higher_ed |
+
+- **獨立性**：T14、H31 與 Gašević 群（S02、S07）及 V09、S20 都無合著，論點三增至五個研究群，並新增一則 K-12 同儕審查依據（T14）。
+- S02、S07 屬 G-GASEVIC，與原依據同一個聲音。
+
+### 論點四：新增依據
+
+| 學者 | 作品（首次公開） | 一句概述 | 對象 |
+|---|---|---|---|
+| H12、H13、H27 | Towards a world-centred AI literacy in middle school education? Reflections from a Swedish case（2026-10-23，Crossref published-print；同儕審查）<br>doi:10.18261/njdl.21.2.4 | 以 Biesta 的資格化、社會化、主體化檢視國中 AI 素養，指出學生的倫理反思比形式知識成熟 | k12 |
+
+- **獨立性**：H12、H13、H27 與 S04、S10、S11 無合著，論點四增至三個研究群；但 H27 與 H11 有合著，與 Chiu 群的作品不能算兩個聲音。
+- 首次公開日只有 Crossref 紙本日期，出版者頁 403；寫入月報前須再核。
+
+### 更正
+
+- 論點二所列 H26 Stolpe（doi:10.33422/ejte.v8i3.1872，KB-2026-0129）的出版者 Diamond Scientific Publishing 已於 2026-10-10 列為不收出處（[期刊清單](../venue-watchlist.md)），該紀錄 2026-10-26 起不上網站。**論點二若日後採用，不得以此篇為依據。**
