@@ -262,7 +262,7 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
 - **J51 Smart Learning Environments**：中小學 AI 比例與 J41 相近，且 2025 年起的相關論文先前都未入庫。比照 J40–J42，已於 2026-10-25 一次補搜 2025-01-01 至今（118 篇，收 10 篇：A 6、B 4；另 00464-y 由每日短訊觀察項收錄），之後依擴充級頻率檢索。是否收錄 SSCI／Scopus 未獨立核實。
 - **觀察池：Médiations et médiatisations**（法語，DOI 前綴 `10.52358`）：以高教與開放教育資源為主，中小學 AI 僅 2 篇；不給正式 ID，命中時逐篇判斷。
 - **不列入：Language Circle**：語言文學期刊，AI 研究少且多屬 B 類（AI 作寫作工具）。出處本身無可疑之處，不列入「不收出處」；命中時逐篇判斷。
-- **技術限制**：`research/validate-knowledge-base.js` 目前只接受到 J50；SLE 論文要連到 J51 代碼，須等驗證程式放寬。本次只改清單，不改驗證程式。
+- **技術限制**：`research/validate-knowledge-base.js` 目前只接受到 J50；SLE 論文要連到 J51 代碼，須等驗證程式放寬。本次只改清單，不改驗證程式。（2026-10-30 管理者決定放寬：驗證程式改為接受 J01–J53，已入庫論文補上 published_in。）
 
 ### 2026-10-27 期刊反查：European Journal of Educational Research（管理者決定）
 
@@ -280,7 +280,7 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
 - **理由：** 中小學 AI 篇數（約每月 1 篇）高於 J51 與觀察池兩刊，與同出版者的 J47 Education Sciences 相近；出版者 MDPI，收錄於 DOAJ，出版者自述單盲同儕審查（未獨立核實），收刊登費。
 - **使用注意：** 研究多為心理學取向的橫斷面問卷與中介模型，量大；比照 J47，每篇須確認學段（職前教師與大學生比例高）與研究品質。
 - **比對方式：** ISSN 2076-328X，DOI 前綴 `10.3390/bs`。
-- **技術限制：** `research/validate-knowledge-base.js` 目前只接受到 J50；本刊論文要連到 J52 代碼，須等驗證程式放寬。本次只改清單，不改驗證程式。
+- **技術限制：** `research/validate-knowledge-base.js` 目前只接受到 J50；本刊論文要連到 J52 代碼，須等驗證程式放寬。本次只改清單，不改驗證程式。（2026-10-30 管理者決定放寬：驗證程式改為接受 J01–J53，已入庫論文補上 published_in。）
 
 ### 2026-10-30 期刊反查：International Journal of Technology and Design Education（管理者決定）
 
@@ -290,7 +290,7 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
 - **理由：** 管理者決定由觀察池升級；中小學 AI 篇數少於 J51，但本刊刊登幼兒與中小學 AI 素養課程研究，與本刊物主題直接相關。出版者 Springer，非開放取用為主、不在 DOAJ；同儕審查。
 - **使用注意：** 近半缺摘要，AI 論文多屬大學設計教育；每篇須確認學段，缺摘要者依 Crossref 例外規則處理或列瀏覽器清單。比照 J40–J42、J51，是否一次補搜 2025-01-01 至今，由管理者決定（建議交文獻 session，約 4 篇）。
 - **比對方式：** ISSN 0957-7572（紙本）、1573-1804（電子），DOI 前綴 `10.1007/s10798`。
-- **技術限制：** `research/validate-knowledge-base.js` 目前只接受到 J50；本刊論文（含 KB-2026-0494）要連到 J53 代碼，須等驗證程式放寬。本次只改清單，不改驗證程式。
+- **技術限制：** `research/validate-knowledge-base.js` 目前只接受到 J50；本刊論文（含 KB-2026-0494）要連到 J53 代碼，須等驗證程式放寬。本次只改清單，不改驗證程式。（2026-10-30 管理者決定放寬：驗證程式改為接受 J01–J53，已入庫論文補上 published_in。）
 
 ### 不收出處：每日與週檢索直接排除（2026-10-10 管理者決定）
 

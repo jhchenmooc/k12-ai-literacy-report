@@ -739,7 +739,7 @@ function renderAbout(){
   '<li><strong>國際政策（每週）</strong>：德國各邦文化部長會議（KMK）、芬蘭國家教育署（EDUFI）、TeachAI 美國各州 AI 指引追蹤、愛沙尼亞教育研究部、印度新聞局教育部新聞（試行）；挪威、丹麥、荷蘭（含 Kennisnet）、英國北愛爾蘭、加拿大卑詩省、智利、墨西哥、義大利、印尼的教育部門（2026-10-22 起試行）；程式讀不到的 OECD、美國教育部、歐盟、紐西蘭、新加坡、法國、阿聯與澳洲教育部（含澳洲 eSafety），由管理者每週以瀏覽器瀏覽</li>'+
   '<li><strong>國際組織、監管機關與團體（每週，試行）</strong>：UNICEF、Education International、英國資訊委員辦公室（ICO）、法國國家資訊與自由委員會（CNIL）、美國全國教育協會（NEA）、Ada Lovelace Institute；以及瑞典國家教育署、西班牙教育部與國家教育科技與師資培育研究所（INTEF）、捷克教育部、南非基礎教育部、英國全國教育工會（NEU）、美國聯邦貿易委員會（FTC）（其中 NEU、FTC 由管理者以瀏覽器瀏覽）</li>'+
   '<li><strong>智庫、工會與國際組織評論（每週，試行；目前以英語來源為主）</strong>：英國 Education Policy Institute、美國 Brookings、CRPE、美國教師聯合會（AFT）、Education International「Worlds of Education」專欄、UNICEF Innocenti、UNESCO AI 與教育專頁</li>'+
-  '<li><strong>研究</strong>：arXiv 預印本、Crossref 前一日新登記的論文，以及期刊 50 種與國際會議 21 個系列（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/blob/main/research/venue-watchlist.md">完整清單</a>）</li>'+
+  '<li><strong>研究</strong>：arXiv 預印本、Crossref 前一日新登記的論文，以及期刊 53 種與國際會議 21 個系列（<a href="https://github.com/jhchenmooc/k12-ai-literacy-report/blob/main/research/venue-watchlist.md">完整清單</a>）</li>'+
   '<li><strong>臺灣（每日）</strong>：教育部即時新聞與資訊及科技教育司、師資培育及藝術教育司、學生事務及特殊教育司、國教署、行政院公報與新聞、國科會、數位發展部</li>'+
   '<li><strong>臺灣（每週）</strong>：教育部主管法規、國家教育研究院、國科會人工智慧基本法專頁、OpenAlex（臺灣機構論文）、《教育科學研究期刊》《教育研究集刊》《當代教育研究季刊》</li></ul></section>'+
   '<section class="info" style="margin-top:20px"><h2>更正政策</h2><p>發現錯誤時記錄原說法、錯誤類型、原始來源與修訂內容，在網站明示更正，不默默覆蓋；所有更正與改版列在<a href="../corrections/">更正與改版紀錄</a>。歡迎透過 <a href="../feedback/">讀者評鑑與勘誤</a>（GitHub Issues）回報。</p></section>';
