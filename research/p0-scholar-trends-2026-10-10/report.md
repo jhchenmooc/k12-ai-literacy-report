@@ -109,3 +109,17 @@
 ### 更正
 
 - 論點二所列 H26 Stolpe（doi:10.33422/ejte.v8i3.1872，KB-2026-0129）的出版者 Diamond Scientific Publishing 已於 2026-10-10 列為不收出處（[期刊清單](../venue-watchlist.md)），該紀錄 2026-10-26 起不上網站。**論點二若日後採用，不得以此篇為依據。**
+
+## 補查 2026-10-27～10-31（2026-10-31，文獻 session）
+
+依 [10/31 補跑](../p0-scholar-monthly-2026-10-31/report.md)。本期新作都以大學生為對象，論點一無新依據，各論點的 K-12 依據不變。
+
+### 論點三：新增依據（高教）
+
+| 學者 | 作品（首次公開） | 一句概述 | 對象 |
+|---|---|---|---|
+| V23 | Artificial intelligence and empathetic communication to enhance learning engagement, motivation, and effectiveness（2026-10-28，Springer 頁）<br>doi:10.1007/s11423-026-10720-0 | 整合 ChatGPT 的情緒分析與同理回應系統，學生回報的投入與學習感受較高 | higher_ed |
+| S18 | Multimodal Feedback in EFL Writing: Revision Patterns under Synthesized Images and Automated Evaluation（2026-10-29，Springer 頁）<br>doi:10.1007/s10758-026-10051-2 | 比較 AI 生成圖片回饋與文字自動評閱回饋對修改行為的影響 | higher_ed |
+
+- **獨立性：** 依 `coauthorship_2022_2026`，V23 與論點三其他依據的學者都無合著；S18 與 S20 有合著（1 篇），與 S20 算同一個聲音，與其他依據無合著。兩篇皆為高教，寫入時須標明對象；屬學習機制而非 AI 素養本身，作論點三的背景即可。
+
