@@ -1,0 +1,2384 @@
+{
+ "window": {
+  "openalex_query_range": "2026-09-30..2026-10-31",
+  "purpose": "10 月號月報補跑：10/27～10/31 新作，並回補 10/26 因收錄延遲漏掉者",
+  "searched_on": "2026-10-31",
+  "scholars": 93,
+  "queries": 99,
+  "failed": 0,
+  "reviewer_note": "判讀與整合為同一模型，不算獨立審閱"
+ },
+ "runs": [
+  {
+   "scholar_id": "S01",
+   "tier": "A1",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-5843-4854,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:51Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "S02",
+   "tier": "A1",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-9265-1908,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:51Z",
+   "http": 200,
+   "status": "ok",
+   "total": 5,
+   "pages": 1,
+   "received": 5
+  },
+  {
+   "scholar_id": "S03",
+   "tier": "A1",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-4639-2524,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:51Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "S04",
+   "tier": "A1",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-6005-907X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:52Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "pages": 1,
+   "received": 2
+  },
+  {
+   "scholar_id": "T01",
+   "tier": "A2",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-1741-2450,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:52Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T02",
+   "tier": "A2",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-5059-8256,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:52Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "pages": 1,
+   "received": 2
+  },
+  {
+   "scholar_id": "T03",
+   "tier": "A2",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-5155-276X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&search=education%20OR%20school%20OR%20students%20OR%20teacher%20OR%20learning&per_page=200",
+   "utc": "2026-10-31T07:08:52Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "T03",
+   "tier": "A2",
+   "role": "supplementary_unfiltered",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-5155-276X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:52Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "T05",
+   "tier": "A2",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-6504-9540,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:52Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T06",
+   "tier": "A2",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-6128-0227,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:53Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T07",
+   "tier": "A2",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-2545-8910,from_publication_date:2026-09-30,to_publication_date:2026-10-31&search=education%20OR%20school%20OR%20students%20OR%20teacher%20OR%20learning&per_page=200",
+   "utc": "2026-10-31T07:08:53Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T07",
+   "tier": "A2",
+   "role": "supplementary_unfiltered",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-2545-8910,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:53Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T04",
+   "tier": "A2",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.id:A5029607042,from_publication_date:2026-09-30,to_publication_date:2026-10-31&search=education%20OR%20school%20OR%20students%20OR%20teacher%20OR%20learning&per_page=200",
+   "utc": "2026-10-31T07:08:53Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T04",
+   "tier": "A2",
+   "role": "supplementary_unfiltered",
+   "url": "https://api.openalex.org/works?filter=author.id:A5029607042,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:53Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T08",
+   "tier": "A2",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-2837-6662,from_publication_date:2026-09-30,to_publication_date:2026-10-31&search=education%20OR%20school%20OR%20students%20OR%20teacher%20OR%20learning&per_page=200",
+   "utc": "2026-10-31T07:08:53Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T08",
+   "tier": "A2",
+   "role": "supplementary_unfiltered",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-2837-6662,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:53Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "S18",
+   "tier": "A3",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-5216-1576,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:53Z",
+   "http": 200,
+   "status": "ok",
+   "total": 4,
+   "pages": 1,
+   "received": 4
+  },
+  {
+   "scholar_id": "S20",
+   "tier": "A3",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-0402-9199,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:54Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "S23",
+   "tier": "A3",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-1713-9653,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:54Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "S24",
+   "tier": "A3",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-9045-4070,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:54Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T10",
+   "tier": "A4",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-9494-2848,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:54Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T12",
+   "tier": "A4",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-7721-5902,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:54Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T14",
+   "tier": "A4",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-7744-9971,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:54Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "T15",
+   "tier": "A4",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-8943-5689,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:54Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T19",
+   "tier": "A4",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-2373-2004,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:54Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "T21",
+   "tier": "A4",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-1783-8830,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:55Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "T22",
+   "tier": "A4",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-7088-5516,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:55Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "S06",
+   "tier": "B",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-3818-045X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&search=education%20OR%20school%20OR%20students%20OR%20teacher%20OR%20learning&per_page=200",
+   "utc": "2026-10-31T07:08:55Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "S06",
+   "tier": "B",
+   "role": "supplementary_unfiltered",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-3818-045X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:55Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "S07",
+   "tier": "B",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-2777-1705,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:55Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "S08",
+   "tier": "B",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-2900-3734,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:55Z",
+   "http": 200,
+   "status": "ok",
+   "total": 7,
+   "pages": 1,
+   "received": 7
+  },
+  {
+   "scholar_id": "S09",
+   "tier": "B",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-6330-6160,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:56Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "S10",
+   "tier": "B",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-1037-3313,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:56Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "pages": 1,
+   "received": 2
+  },
+  {
+   "scholar_id": "S11",
+   "tier": "B",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-9913-0627,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:56Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "S13",
+   "tier": "B",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-5018-6232,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:56Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "pages": 1,
+   "received": 2
+  },
+  {
+   "scholar_id": "S14",
+   "tier": "B",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-7045-2764,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:56Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "S15",
+   "tier": "B",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-8793-4732,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:56Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "S25",
+   "tier": "B",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-8319-2201,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:56Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "S26",
+   "tier": "B",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-6250-0540,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:56Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "H01",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-7613-0029,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:57Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H02",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-2380-7814,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:57Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "H03",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-6490-7005,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:57Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H04",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-8268-4802,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:57Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "H05",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-7134-130X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:57Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H06",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-0906-4321,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:57Z",
+   "http": 200,
+   "status": "ok",
+   "total": 6,
+   "pages": 1,
+   "received": 6
+  },
+  {
+   "scholar_id": "H07",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-6035-540X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:57Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H08",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-7246-7879,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:58Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "H09",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-3104-1123,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:58Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H10",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-2555-8097,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:58Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H11",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-2887-5477,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:58Z",
+   "http": 200,
+   "status": "ok",
+   "total": 5,
+   "pages": 1,
+   "received": 5
+  },
+  {
+   "scholar_id": "H12",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-0664-3640,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:58Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "pages": 1,
+   "received": 2
+  },
+  {
+   "scholar_id": "H13",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-3115-9060,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:58Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "H14",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-8495-6920,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:58Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H15",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-1543-6301,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:58Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H16",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-4762-2838,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:58Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H17",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-0587-2065,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:59Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "pages": 1,
+   "received": 2
+  },
+  {
+   "scholar_id": "H18",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-2206-2715,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:59Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H19",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-1990-2894,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:59Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "H20",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-5198-7261,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:59Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "H21",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-8691-3016,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:59Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "H22",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-8576-6464,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:59Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H23",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-2370-381X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:59Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H24",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-2105-2275,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:59Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "H25",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-1448-4064,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:08:59Z",
+   "http": 200,
+   "status": "ok",
+   "total": 4,
+   "pages": 1,
+   "received": 4
+  },
+  {
+   "scholar_id": "H26",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-6859-1420,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:00Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "pages": 1,
+   "received": 2
+  },
+  {
+   "scholar_id": "H27",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-0829-3349,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:00Z",
+   "http": 200,
+   "status": "ok",
+   "total": 3,
+   "pages": 1,
+   "received": 3
+  },
+  {
+   "scholar_id": "H28",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0009-0006-3682-2358,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:00Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H29",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-9725-268X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:00Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H30",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-5027-8284,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:00Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "pages": 1,
+   "received": 2
+  },
+  {
+   "scholar_id": "H31",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-6551-8885,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:00Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "H32",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-7294-3097,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:00Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "H33",
+   "tier": "H",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-2815-1137,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:00Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V01",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-9159-0664,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:01Z",
+   "http": 200,
+   "status": "ok",
+   "total": 3,
+   "pages": 1,
+   "received": 3
+  },
+  {
+   "scholar_id": "V02",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-5087-9637,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:01Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "pages": 1,
+   "received": 2
+  },
+  {
+   "scholar_id": "V03",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-8057-2863,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:01Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "pages": 1,
+   "received": 2
+  },
+  {
+   "scholar_id": "V04",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-7640-9898,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:01Z",
+   "http": 200,
+   "status": "ok",
+   "total": 3,
+   "pages": 1,
+   "received": 3
+  },
+  {
+   "scholar_id": "V05",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-9895-6796,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:01Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V06",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-6298-4813,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:01Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "pages": 1,
+   "received": 2
+  },
+  {
+   "scholar_id": "V07",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-3250-003X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&search=education%20OR%20school%20OR%20students%20OR%20teacher%20OR%20learning&per_page=200",
+   "utc": "2026-10-31T07:09:01Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V07",
+   "tier": "V",
+   "role": "supplementary_unfiltered",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-3250-003X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:01Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V08",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-0506-9579,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:02Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V09",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-1803-9865,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:02Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V10",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-6937-345X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:02Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V11",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-7740-5749,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:02Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V12",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-5554-0069,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:02Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V13",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-1775-8219,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:02Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "V14",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-8214-0386,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:02Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "V15",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-0538-7665,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:02Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V16",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-7173-4859,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:02Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V17",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.id:A5061103584,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:03Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V18",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-2079-2394,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:03Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "V19",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0002-6817-4416,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:03Z",
+   "http": 200,
+   "status": "ok",
+   "total": 2,
+   "pages": 1,
+   "received": 2
+  },
+  {
+   "scholar_id": "V20",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-9942-0651,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:03Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V21",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-4519-1931,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:03Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V22",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-2441-1640,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:03Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "V23",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-3804-0852,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:03Z",
+   "http": 200,
+   "status": "ok",
+   "total": 1,
+   "pages": 1,
+   "received": 1
+  },
+  {
+   "scholar_id": "V24",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-8565-123X,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:03Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V25",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0001-8681-0853,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:03Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  },
+  {
+   "scholar_id": "V26",
+   "tier": "V",
+   "role": "primary",
+   "url": "https://api.openalex.org/works?filter=author.orcid:0000-0003-1481-6601,from_publication_date:2026-09-30,to_publication_date:2026-10-31&per_page=200",
+   "utc": "2026-10-31T07:09:04Z",
+   "http": 200,
+   "status": "ok",
+   "total": 0,
+   "pages": 1,
+   "received": 0
+  }
+ ],
+ "items": [
+  {
+   "scholar_ids": [
+    "S01"
+   ],
+   "doi": "10.83095/ceurws_04282_short3",
+   "url": "https://doi.org/10.83095/ceurws_04282_short3",
+   "title": "Evaluating and Interpreting Gender Bias in LLM Feedback: Span-Level Embedding-Based Evidence from Automated Essay Feedback",
+   "container": "ceur-ws.org",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-15",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "S02",
+    "S06"
+   ],
+   "doi": "10.1007/978-3-032-37979-5_31",
+   "url": "https://doi.org/10.1007/978-3-032-37979-5_31",
+   "title": "Decoding the Dashboard: Data Comics to Support Students’ Understanding of Learning Analytics Visualisations",
+   "container": "Lecture notes in computer science",
+   "openalex_type": "conference-paper",
+   "openalex_publication_date": "2026-10-06",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "S02"
+   ],
+   "doi": "10.1007/978-3-032-37982-5_24",
+   "url": "https://doi.org/10.1007/978-3-032-37982-5_24",
+   "title": "Designing Support for Written Reflections Using GenAI Summaries and Chatbots",
+   "container": "Lecture notes in computer science",
+   "openalex_type": "conference-paper",
+   "openalex_publication_date": "2026-10-05",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "S02"
+   ],
+   "doi": "10.5281/zenodo.23164110",
+   "url": "https://doi.org/10.5281/zenodo.23164110",
+   "title": "Dataset for \"Trust in AI as a Mediator Between AI Self-Efficacy and AI Dependence Among University Students\"",
+   "container": "Zenodo (CERN European Organization for Nuclear Research)",
+   "openalex_type": "dataset",
+   "openalex_publication_date": "2026-10-09",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "S02"
+   ],
+   "doi": "10.5753/wie.2026.28044",
+   "url": "https://doi.org/10.5753/wie.2026.28044",
+   "title": "Evaluating an AI-Powered Learning Analytics Tool for Automated Essay Scoring in Real Classroom Contexts: An Experience Report from a Brazilian Public Secondary School",
+   "container": "Anais do Workshop de Informática na Escola",
+   "openalex_type": "conference-paper",
+   "openalex_publication_date": "2026-10-05",
+   "in_kb": "KB-2026-0444",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "S02",
+    "S07"
+   ],
+   "doi": "10.1016/j.compedu.2026.105767",
+   "url": "https://doi.org/10.1016/j.compedu.2026.105767",
+   "title": "GenAI-supported internal feedback intervention for writing improvement: The roles of evaluative judgment and student-AI interaction in a cluster-randomized experimental study",
+   "container": "Computers & Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-17",
+   "in_kb": "KB-2026-0452",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "S03"
+   ],
+   "doi": "10.1080/0144929x.2026.2740744",
+   "url": "https://doi.org/10.1080/0144929x.2026.2740744",
+   "title": "Different lenses on human-AI collaboration: towards a comprehensive view on hybrid intelligence in education",
+   "container": "Behaviour and Information Technology",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-07",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "S04",
+    "S10",
+    "S11"
+   ],
+   "doi": "10.15388/infedu.2601.025",
+   "url": "https://doi.org/10.15388/infedu.2601.025",
+   "title": "Understanding AI Mechanisms Supports Disciplinary Reasoning and Ethical Judgment in K–12 AI Literacy Education",
+   "container": "Informatics in Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-09-30",
+   "in_kb": "KB-2026-0128",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "S04",
+    "S10"
+   ],
+   "doi": "10.1145/3856302",
+   "url": "https://doi.org/10.1145/3856302",
+   "title": "Interaction Patterns and Embodied Design Processes Using an AI Robotics Kit for K–12 Education",
+   "container": "ACM Transactions on Computing Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-15",
+   "in_kb": "KB-2026-0379",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "T02"
+   ],
+   "doi": "10.1177/07356331261494821",
+   "url": "https://doi.org/10.1177/07356331261494821",
+   "title": "Socratic, Artifact-Gated Generative AI Scaffolding in a 6E Inquiry Unit: A Clustered Quasi-Experiment in Elementary Students’ Computational Thinking",
+   "container": "Journal of Educational Computing Research",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-10",
+   "in_kb": "KB-2026-0269",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "T02"
+   ],
+   "doi": "10.3389/fspor.2026.1883836",
+   "url": "https://doi.org/10.3389/fspor.2026.1883836",
+   "title": "Effects of acute single-session exercise modalities on stroop test performance in male adolescents: an exploratory study using the nonparametric cognitive diagnosis model",
+   "container": "Frontiers in Sports and Active Living",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-27",
+   "in_kb": false,
+   "status": "excluded_non_education",
+   "note": "運動科學，非教育"
+  },
+  {
+   "scholar_ids": [
+    "T03"
+   ],
+   "doi": "10.1007/s10639-026-14165-z",
+   "url": "https://doi.org/10.1007/s10639-026-14165-z",
+   "title": "Physical, virtual, and hybrid programming modalities in early childhood education: a randomized controlled study of computational thinking and programming behaviors",
+   "container": "Education and Information Technologies",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-05",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "S18"
+   ],
+   "doi": "10.48550/arxiv.2610.02720",
+   "url": "https://doi.org/10.48550/arxiv.2610.02720",
+   "title": "ReLEAF: A Socio-Technical Framework Bridging Custodians and Researchers for Trustworthy Data Sharing",
+   "container": "arXiv (Cornell University)",
+   "openalex_type": "preprint",
+   "openalex_publication_date": "2026-10-02",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "S18"
+   ],
+   "doi": "10.1007/s10758-026-10045-0",
+   "url": "https://doi.org/10.1007/s10758-026-10045-0",
+   "title": "Social Process Awareness: Supporting Homework in Japanese K–12 Summer Vacation",
+   "container": "Technology Knowledge and Learning",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-27",
+   "in_kb": false,
+   "status": "excluded",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "audience": "k12",
+   "first_public_date": "2026-10-27",
+   "first_public_basis": "出版者頁（Springer）",
+   "note": "日本國中七、八年級學習儀表板與社會歷程回饋；分群為分析方法，未涉 AI"
+  },
+  {
+   "scholar_ids": [
+    "S18"
+   ],
+   "doi": "10.1002/jcal.70364",
+   "url": "https://doi.org/10.1002/jcal.70364",
+   "title": "When Do Learning Habits Matter? Linking Behavioural Stages to Academic Performance Using Longitudinal Log Data",
+   "container": "Journal of Computer Assisted Learning",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-26",
+   "in_kb": false,
+   "status": "excluded_non_education",
+   "note": "學習習慣與日誌資料，未涉 AI"
+  },
+  {
+   "scholar_ids": [
+    "S18"
+   ],
+   "doi": "10.1007/s10758-026-10051-2",
+   "url": "https://doi.org/10.1007/s10758-026-10051-2",
+   "title": "Multimodal Feedback in EFL Writing: Revision Patterns under Synthesized Images and Automated Evaluation",
+   "container": "Technology Knowledge and Learning",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-29",
+   "in_kb": false,
+   "status": "monthly_only",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "audience": "higher_ed",
+   "first_public_date": "2026-10-29",
+   "first_public_basis": "出版者頁（Springer）citation_online_date",
+   "note": "67 名日本大學生英文寫作，AI 生成圖片回饋與自動作文評閱比較"
+  },
+  {
+   "scholar_ids": [
+    "T14"
+   ],
+   "doi": "10.1016/j.compedu.2026.105769",
+   "url": "https://doi.org/10.1016/j.compedu.2026.105769",
+   "title": "Investigating secondary school students’ shared epistemic agency with GAI in online scientific explanation writing",
+   "container": "Computers & Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-15",
+   "in_kb": "KB-2026-0445",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "T21"
+   ],
+   "doi": "10.3389/fpsyg.2026.1950695",
+   "url": "https://doi.org/10.3389/fpsyg.2026.1950695",
+   "title": "Beyond single scaffolding: a multidimensional scaffolding framework for flow-driven Game-Based Learning",
+   "container": "Frontiers in Psychology",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-05",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "T22"
+   ],
+   "doi": "10.1108/ajim-02-2026-0186",
+   "url": "https://doi.org/10.1108/ajim-02-2026-0186",
+   "title": "The effects of library digital curation integrating virtual and physical contexts through mixed reality on learning performance and motivation",
+   "container": "Aslib Journal of Information Management",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-21",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "S08"
+   ],
+   "doi": "10.1037/fam0001550",
+   "url": "https://doi.org/10.1037/fam0001550",
+   "title": "The strain behind the smile: Temporal dynamics between parental burnout and emotional labor.",
+   "container": "Journal of Family Psychology",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-19",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "S08"
+   ],
+   "doi": "10.1038/s44271-026-00535-3",
+   "url": "https://doi.org/10.1038/s44271-026-00535-3",
+   "title": "Parenting stress spirals and a gendered labour division over the Christmas holidays",
+   "container": "Communications Psychology",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-24",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "S08"
+   ],
+   "doi": "10.1186/s40536-026-00330-w",
+   "url": "https://doi.org/10.1186/s40536-026-00330-w",
+   "title": "Do schools narrow the socioeconomic digital divide? Meta-analytic evidence from ICILS 2023",
+   "container": "Large-scale Assessments in Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-26",
+   "in_kb": false,
+   "status": "excluded_non_education",
+   "note": "ICILS 2023 數位落差，未涉 AI"
+  },
+  {
+   "scholar_ids": [
+    "S08"
+   ],
+   "doi": "10.1016/j.edurev.2026.100864",
+   "url": "https://doi.org/10.1016/j.edurev.2026.100864",
+   "title": "Teaching quality and socioeconomic inequalities in student achievement: Meta-Analytic evidence from PISA 2022",
+   "container": "Educational Research Review",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-28",
+   "in_kb": false,
+   "status": "excluded_non_education",
+   "note": "PISA 2022 教學品質，未涉 AI"
+  },
+  {
+   "scholar_ids": [
+    "S08"
+   ],
+   "doi": "10.6084/m9.figshare.34803508",
+   "url": "https://doi.org/10.6084/m9.figshare.34803508",
+   "title": "Additional file 2 of Do schools narrow the socioeconomic digital divide? Meta-analytic evidence from ICILS 2023",
+   "container": "Figshare",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-26",
+   "in_kb": false,
+   "status": "excluded_non_education",
+   "note": "附檔副本"
+  },
+  {
+   "scholar_ids": [
+    "S08"
+   ],
+   "doi": "10.6084/m9.figshare.34803505",
+   "url": "https://doi.org/10.6084/m9.figshare.34803505",
+   "title": "Additional file 1 of Do schools narrow the socioeconomic digital divide? Meta-analytic evidence from ICILS 2023",
+   "container": "Figshare",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-26",
+   "in_kb": false,
+   "status": "excluded_non_education",
+   "note": "附檔副本"
+  },
+  {
+   "scholar_ids": [
+    "S08"
+   ],
+   "doi": "10.6084/m9.figshare.34803511",
+   "url": "https://doi.org/10.6084/m9.figshare.34803511",
+   "title": "Additional file 3 of Do schools narrow the socioeconomic digital divide? Meta-analytic evidence from ICILS 2023",
+   "container": "Figshare",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-26",
+   "in_kb": false,
+   "status": "excluded_non_education",
+   "note": "附檔副本"
+  },
+  {
+   "scholar_ids": [
+    "S09"
+   ],
+   "doi": "10.4324/9781003780700-5",
+   "url": "https://doi.org/10.4324/9781003780700-5",
+   "title": "Measuring what matters in AI-integrated higher education",
+   "container": "Routledge eBooks",
+   "openalex_type": "book-chapter",
+   "openalex_publication_date": "2026-10-29",
+   "in_kb": false,
+   "status": "monthly_only",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "T-TEA"
+   ],
+   "audience": "higher_ed",
+   "first_public_date": "unknown",
+   "first_public_basis": "Crossref published-print 2026-10-29（專書章節）",
+   "note": "高教生成式 AI 時代的評量專章；出版者日期無法核，不建議用"
+  },
+  {
+   "scholar_ids": [
+    "S13"
+   ],
+   "doi": "10.1016/j.ijaied.2026.100016",
+   "url": "https://doi.org/10.1016/j.ijaied.2026.100016",
+   "title": "Towards Responsible and Trustworthy Educational Data Mining: Comparing Symbolic, Sub-Symbolic, and Neural-Symbolic AI Methods",
+   "container": "International Journal of Artificial Intelligence in Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-01",
+   "in_kb": false,
+   "status": "excluded",
+   "ai_lit_class": "C",
+   "ai_lit_dims": [],
+   "audience": "k12",
+   "first_public_date": "unknown",
+   "first_public_basis": "",
+   "note": "愛沙尼亞小學資料的教育資料探勘方法比較；AI 為方法"
+  },
+  {
+   "scholar_ids": [
+    "S13"
+   ],
+   "doi": "10.1002/jcal.70363",
+   "url": "https://doi.org/10.1002/jcal.70363",
+   "title": "A Complexity Approach to Unravelling Traces of Scientific Reasoning Behaviours During Game‐Based Learning",
+   "container": "Journal of Computer Assisted Learning",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-20",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "S14"
+   ],
+   "doi": "10.1007/s11409-026-09500-1",
+   "url": "https://doi.org/10.1007/s11409-026-09500-1",
+   "title": "Effects of a self-regulated learning training on adolescents’ metacognitive awareness, learning processes and outcomes: a multi-method perspective",
+   "container": "Metacognition and Learning",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-05",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "S26"
+   ],
+   "doi": "10.4324/9781003502982-5",
+   "url": "https://doi.org/10.4324/9781003502982-5",
+   "title": "Methodologies, Methods, and Approaches for Integrative STEM Education Research",
+   "container": "Routledge eBooks",
+   "openalex_type": "book-chapter",
+   "openalex_publication_date": "2026-10-12",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H02"
+   ],
+   "doi": "10.1080/03075079.2026.2747551",
+   "url": "https://doi.org/10.1080/03075079.2026.2747551",
+   "title": "Learner agency and human-AI collaboration: shaping hybrid intelligence for the future of higher education",
+   "container": "Studies in Higher Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-21",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H04"
+   ],
+   "doi": "10.1007/s10639-026-14169-9",
+   "url": "https://doi.org/10.1007/s10639-026-14169-9",
+   "title": "Beyond play: A mixed methods exploration of a gamified design thinking intervention on design thinking mindset and creative self-efficacy",
+   "container": "Education and Information Technologies",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-12",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H06"
+   ],
+   "doi": "10.3390/mti10100106",
+   "url": "https://doi.org/10.3390/mti10100106",
+   "title": "Teachers’ Digital Competence for Multimodal Learning Environments: A Comparative Study Across Educational Levels in Galicia (Spain)",
+   "container": "Multimodal Technologies and Interaction",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-14",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H06"
+   ],
+   "doi": "10.5281/zenodo.23475274",
+   "url": "https://doi.org/10.5281/zenodo.23475274",
+   "title": "Leikvæðingarrammi fyrir fræðslu um sjálfbærnimarkmiðin (SDG)",
+   "container": "Zenodo (CERN European Organization for Nuclear Research)",
+   "openalex_type": "book",
+   "openalex_publication_date": "2026-10-10",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H06"
+   ],
+   "doi": "10.5281/zenodo.23475848",
+   "url": "https://doi.org/10.5281/zenodo.23475848",
+   "title": "Quadro di riferimento sulla gamificazione per l'educazione agli Obiettivi di Sviluppo Sostenibile (SDGs)",
+   "container": "Zenodo (CERN European Organization for Nuclear Research)",
+   "openalex_type": "book",
+   "openalex_publication_date": "2026-10-01",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H06"
+   ],
+   "doi": "10.5281/zenodo.23476326",
+   "url": "https://doi.org/10.5281/zenodo.23476326",
+   "title": "Sürdürülebilir Kalkınma Hedefleri (SDG) Eğitimi için Oyunlaştırma Çerçevesi",
+   "container": "Zenodo (CERN European Organization for Nuclear Research)",
+   "openalex_type": "book",
+   "openalex_publication_date": "2026-10-10",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H06"
+   ],
+   "doi": "10.5281/zenodo.23476633",
+   "url": "https://doi.org/10.5281/zenodo.23476633",
+   "title": "Pabėgimo žaidimai ir žaidybiniai iššūkiai, skirti DVT",
+   "container": "Zenodo (CERN European Organization for Nuclear Research)",
+   "openalex_type": "book",
+   "openalex_publication_date": "2026-10-10",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H06"
+   ],
+   "doi": "10.5281/zenodo.23476123",
+   "url": "https://doi.org/10.5281/zenodo.23476123",
+   "title": "Πλαίσιο παιχνιδοποίησης για την εκπαίδευση στους Στόχους Βιώσιμης Ανάπτυξης (SDG)",
+   "container": "Zenodo (CERN European Organization for Nuclear Research)",
+   "openalex_type": "book",
+   "openalex_publication_date": "2026-10-11",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H08"
+   ],
+   "doi": "10.1016/j.envadv.2026.100765",
+   "url": "https://doi.org/10.1016/j.envadv.2026.100765",
+   "title": "Spatial and temporal scale sensitivity in NDVI-based greenness exposure assessment for Alzheimer’s disease incidence: a Miami-Dade County Medicare Cohort Study",
+   "container": "Environmental Advances",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-06",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H11",
+    "H27"
+   ],
+   "doi": "10.1186/s40594-026-00653-8",
+   "url": "https://doi.org/10.1186/s40594-026-00653-8",
+   "title": "AI literacy and STEM education: emerging frontiers and research priorities",
+   "container": "International Journal of STEM Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-14",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H11"
+   ],
+   "doi": "10.1111/bjet.70091",
+   "url": "https://doi.org/10.1111/bjet.70091",
+   "title": "Connecting the dots to understand complex systems in education: A systematic review of psychological networks",
+   "container": "British Journal of Educational Technology",
+   "openalex_type": "review",
+   "openalex_publication_date": "2026-09-30",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H11"
+   ],
+   "doi": "10.1080/10494820.2026.2744403",
+   "url": "https://doi.org/10.1080/10494820.2026.2744403",
+   "title": "Integrating artificial intelligence into K-12 school education through self-determination theory from a longitudinal study: opportunities, challenges, and future direction",
+   "container": "Interactive Learning Environments",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-08",
+   "in_kb": "KB-2026-0446",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "H11"
+   ],
+   "doi": "10.1080/10494820.2026.2735920",
+   "url": "https://doi.org/10.1080/10494820.2026.2735920",
+   "title": "A new spiral model of AI literacy and competency in higher education developed through a systematic literature review",
+   "container": "Interactive Learning Environments",
+   "openalex_type": "review",
+   "openalex_publication_date": "2026-10-12",
+   "in_kb": "KB-2026-0449",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "H11"
+   ],
+   "doi": "10.1016/j.stueduc.2026.101698",
+   "url": "https://doi.org/10.1016/j.stueduc.2026.101698",
+   "title": "Unearthing the impacts of AI-assisted peer assessment on L2 vocabulary acquisition and academic resilience",
+   "container": "Studies In Educational Evaluation",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-17",
+   "in_kb": "KB-2026-0453",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "H12"
+   ],
+   "doi": "10.1007/s42438-026-00710-z",
+   "url": "https://doi.org/10.1007/s42438-026-00710-z",
+   "title": "Boundaries of the Postdigital: A Two-Stage Scoping Review",
+   "container": "Postdigital Science and Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-22",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H12",
+    "H13",
+    "H27"
+   ],
+   "doi": "10.18261/njdl.21.2.4",
+   "url": "https://doi.org/10.18261/njdl.21.2.4",
+   "title": "Towards a world-centred AI literacy in middle school education? Reflections from a Swedish case",
+   "container": "Nordic Journal of Digital Literacy",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-23",
+   "in_kb": "KB-2026-0447",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "H17"
+   ],
+   "doi": "10.1145/3776591.3832522",
+   "url": "https://doi.org/10.1145/3776591.3832522",
+   "title": "Can Vision-Language Models Extract Relevant Multimodal Cues for Post-Inference Cue Integration? A Comparison of Affective Judgments on Adult and Child Interaction Data",
+   "container": "Companion Publication of the International Conference on Multimodal Interaction (ICMI Companion)",
+   "openalex_type": "conference-paper",
+   "openalex_publication_date": "2026-10-02",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H17"
+   ],
+   "doi": "10.48550/arxiv.2610.09155",
+   "url": "https://doi.org/10.48550/arxiv.2610.09155",
+   "title": "Drawing the Line: Where AI Guidance and Human Creativity Meet in Emotion-Driven Comic Storyboarding",
+   "container": "arXiv (Cornell University)",
+   "openalex_type": "preprint",
+   "openalex_publication_date": "2026-10-06",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H19"
+   ],
+   "doi": "10.1365/s40702-026-01331-7",
+   "url": "https://doi.org/10.1365/s40702-026-01331-7",
+   "title": "Agentic AI in der Unternehmenspraxis: Vom Werkzeug zum Akteur",
+   "container": "HMD Praxis der Wirtschaftsinformatik",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-05",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H20"
+   ],
+   "doi": "10.1007/s12144-026-10163-z",
+   "url": "https://doi.org/10.1007/s12144-026-10163-z",
+   "title": "Back to the past: authenticity, immersive experience, satisfaction and self-congruity influencing travel intention in traditional villages",
+   "container": "Current Psychology",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-01",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H21"
+   ],
+   "doi": "10.1016/j.compedu.2026.105773",
+   "url": "https://doi.org/10.1016/j.compedu.2026.105773",
+   "title": "Self-regulated learning trajectories, predictors, and cognitive outcomes in animation-facilitated computational thinking: A growth mixture modelling study of primary students",
+   "container": "Computers & Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-22",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H24"
+   ],
+   "doi": "10.3390/app16209999",
+   "url": "https://doi.org/10.3390/app16209999",
+   "title": "Arabic Multimodal Dataset for Aspect-Based Sentiment Analysis",
+   "container": "Applied Sciences",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-09",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H25"
+   ],
+   "doi": "10.1080/13645579.2026.2736850",
+   "url": "https://doi.org/10.1080/13645579.2026.2736850",
+   "title": "When discovery is mistaken for applicability: a warning on practice implications drawn from purely qualitative research",
+   "container": "International Journal of Social Research Methodology",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-01",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H25"
+   ],
+   "doi": "10.1080/07294360.2026.2739887",
+   "url": "https://doi.org/10.1080/07294360.2026.2739887",
+   "title": "Supervisors’ taboos in doctoral supervision: working outside ideals of excellence",
+   "container": "Higher Education Research & Development",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-08",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H25"
+   ],
+   "doi": "10.1080/2331186x.2026.2749975",
+   "url": "https://doi.org/10.1080/2331186x.2026.2749975",
+   "title": "What shapes teachers’ turnover intentions? An integrative perspective from the job demands–resources model",
+   "container": "Cogent Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-23",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H25"
+   ],
+   "doi": "10.5281/zenodo.23618067",
+   "url": "https://doi.org/10.5281/zenodo.23618067",
+   "title": "Comparative efficacy and safety of medical therapies for Crohn's disease: a living systematic review and Bayesian network meta-analysis - protocol (version 2.4)",
+   "container": "Zenodo (CERN European Organization for Nuclear Research)",
+   "openalex_type": "other",
+   "openalex_publication_date": "2026-10-24",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H26"
+   ],
+   "doi": "10.33422/ejte.v8i3.1872",
+   "url": "https://doi.org/10.33422/ejte.v8i3.1872",
+   "title": "Teachers' Navigation of Assessing Written Work in Times of Generative AI",
+   "container": "European Journal of Teaching and Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-01",
+   "in_kb": "KB-2026-0129",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "H26"
+   ],
+   "doi": "10.23865/hu.v16.8303",
+   "url": "https://doi.org/10.23865/hu.v16.8303",
+   "title": "Bokrecension: Medelklassfabriken: Perspektiv på breddad rekrytering och breddat deltagande i högre utbildning",
+   "container": "Högre utbildning",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-07",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H27"
+   ],
+   "doi": "10.48550/arxiv.2610.36498",
+   "url": "https://doi.org/10.48550/arxiv.2610.36498",
+   "title": "Learning Multiscale Dynamics of Nanoparticle Self-Assembly",
+   "container": "arXiv (Cornell University)",
+   "openalex_type": "preprint",
+   "openalex_publication_date": "2026-10-27",
+   "in_kb": false,
+   "status": "excluded_non_education",
+   "note": "奈米粒子自組裝，非教育；疑為同名者"
+  },
+  {
+   "scholar_ids": [
+    "H30"
+   ],
+   "doi": "10.1111/bjet.70092",
+   "url": "https://doi.org/10.1111/bjet.70092",
+   "title": "Catching the spark: The role of electrodermal activity in understanding teacher enthusiasm and students' lesson enjoyment",
+   "container": "British Journal of Educational Technology",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-03",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H30"
+   ],
+   "doi": "10.1007/978-3-032-37979-5_9",
+   "url": "https://doi.org/10.1007/978-3-032-37979-5_9",
+   "title": "How Trust and Fear Mediate the Relationship between AI Literacy and Intelligent-TPACK: Evidence from Teacher Education",
+   "container": "Lecture notes in computer science",
+   "openalex_type": "conference-paper",
+   "openalex_publication_date": "2026-10-06",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "H31"
+   ],
+   "doi": "10.1111/bjet.70096",
+   "url": "https://doi.org/10.1111/bjet.70096",
+   "title": "Generative AI as a team moderator in CSCL : Facilitating students' multidimensional engagement through adaptive scaffolding for socially shared regulation of learning",
+   "container": "British Journal of Educational Technology",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-20",
+   "in_kb": "KB-2026-0454",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "V01"
+   ],
+   "doi": "10.5281/zenodo.23063300",
+   "url": "https://doi.org/10.5281/zenodo.23063300",
+   "title": "CoCreate: Use Cases and Evaluation Plan Definition (D2.1)",
+   "container": "Zenodo (CERN European Organization for Nuclear Research)",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-09-30",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "V01"
+   ],
+   "doi": "10.1007/978-3-032-37982-5",
+   "url": "https://doi.org/10.1007/978-3-032-37982-5",
+   "title": "Mindful TEL: Learning Technologies Shaped with Intention",
+   "container": "Lecture notes in computer science",
+   "openalex_type": "conference-paper",
+   "openalex_publication_date": "2026-10-05",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "V01"
+   ],
+   "doi": "10.1007/978-3-032-37979-5_27",
+   "url": "https://doi.org/10.1007/978-3-032-37979-5_27",
+   "title": "Exploring Learner-Modeling Simulations with Cognitive Walkthroughs:",
+   "container": "Lecture notes in computer science",
+   "openalex_type": "conference-paper",
+   "openalex_publication_date": "2026-10-06",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "V02"
+   ],
+   "doi": "10.3390/educsci16101657",
+   "url": "https://doi.org/10.3390/educsci16101657",
+   "title": "Supporting Self-Regulated Learning in Primary Education: A Case Study in a Directed Independent Learning School",
+   "container": "Education Sciences",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-08",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "V02"
+   ],
+   "doi": "10.12697/eha.2026.14.2.07",
+   "url": "https://doi.org/10.12697/eha.2026.14.2.07",
+   "title": "A framework for analysing learning materials focusing on opportunities for developing mathematical competence: An application to an 8th-grade mathematics textbook",
+   "container": "Eesti Haridusteaduste Ajakiri = Estonian Journal of Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-29",
+   "in_kb": false,
+   "status": "excluded_non_education",
+   "note": "愛沙尼亞數學教科書，未涉 AI"
+  },
+  {
+   "scholar_ids": [
+    "V03"
+   ],
+   "doi": "10.1016/j.tate.2026.105852",
+   "url": "https://doi.org/10.1016/j.tate.2026.105852",
+   "title": "CT talk: Teacher talk as a resource for computational thinking in early childhood programming",
+   "container": "Teaching and Teacher Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-06",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "V03"
+   ],
+   "doi": "10.1007/s10798-026-10109-3",
+   "url": "https://doi.org/10.1007/s10798-026-10109-3",
+   "title": "Developing and evaluating the dual-pedagogy approach to enhance AI literacy in young children",
+   "container": "International Journal of Technology and Design Education",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-28",
+   "in_kb": "KB-2026-0494",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "V04"
+   ],
+   "doi": "10.1108/978-1-80592-200-120261010",
+   "url": "https://doi.org/10.1108/978-1-80592-200-120261010",
+   "title": "Artificial Intelligence-Powered Innovation EdTech Startups: A Bibliographic Review of Industry 5.0’s Implications for Sustainable Growth",
+   "container": "Emerald Group Publishing Limited eBooks",
+   "openalex_type": "book-chapter",
+   "openalex_publication_date": "2026-10-05",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "V04"
+   ],
+   "doi": "10.1007/s44163-026-02298-6",
+   "url": "https://doi.org/10.1007/s44163-026-02298-6",
+   "title": "Cohort-level growth modeling of ethical engagement with artificial intelligence in education",
+   "container": "Discover Artificial Intelligence",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-12",
+   "in_kb": "KB-2026-0450",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "V04"
+   ],
+   "doi": "10.1007/s43545-026-01841-7",
+   "url": "https://doi.org/10.1007/s43545-026-01841-7",
+   "title": "Authenticity of Lesotho’s SACMEQ II-IV literacy and numeracy reports",
+   "container": "SN Social Sciences",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-14",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "V06"
+   ],
+   "doi": "10.1080/18387357.2026.2739227",
+   "url": "https://doi.org/10.1080/18387357.2026.2739227",
+   "title": "Preservice teachers’ positive mental health literacy is associated with openness to psychological help-seeking and well-being",
+   "container": "Advances in Mental Health",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-04",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "V06"
+   ],
+   "doi": "10.1177/21582440261500778",
+   "url": "https://doi.org/10.1177/21582440261500778",
+   "title": "Latent Profiles of University Students’ Artificial Intelligence Learning Characteristics: Epistemic Capacities, Psychological Attitudes, Facilitating Conditions, and Behavioral Engagement",
+   "container": "SAGE Open",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-01",
+   "in_kb": false,
+   "status": "monthly_only",
+   "ai_lit_class": "A",
+   "ai_lit_dims": [
+    "S-BAS"
+   ],
+   "audience": "higher_ed",
+   "first_public_date": "2026-10-26",
+   "first_public_basis": "Crossref published-online；Sage 頁 403，第 2 項需出版者頁日期",
+   "note": "733 名大學生 AI 學習特徵的潛在剖面；管理者 2026-10-31 決定本期不用"
+  },
+  {
+   "scholar_ids": [
+    "V13",
+    "V14"
+   ],
+   "doi": "10.1186/s41239-026-00627-4",
+   "url": "https://doi.org/10.1186/s41239-026-00627-4",
+   "title": "Higher education assessments in the age of GenAI: a systematic review",
+   "container": "International Journal of Educational Technology in Higher Education",
+   "openalex_type": "review",
+   "openalex_publication_date": "2026-10-16",
+   "in_kb": "KB-2026-0451",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "V18"
+   ],
+   "doi": "10.1016/j.appdev.2026.102014",
+   "url": "https://doi.org/10.1016/j.appdev.2026.102014",
+   "title": "Individualized dialogic practice delivered through AI supports first graders' question-asking",
+   "container": "Journal of Applied Developmental Psychology",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-15",
+   "in_kb": "KB-2026-0448",
+   "status": "in_kb",
+   "note": "已在知識庫"
+  },
+  {
+   "scholar_ids": [
+    "V19"
+   ],
+   "doi": "10.31234/osf.io/47ks6_v1",
+   "url": "https://doi.org/10.31234/osf.io/47ks6_v1",
+   "title": "A Critical Epistemological Audit of Early Evidence Syntheses in Generative AI Educational Research: A Systematic Review and Meta-Analysis",
+   "container": "",
+   "openalex_type": "preprint",
+   "openalex_publication_date": "2026-10-11",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "V19"
+   ],
+   "doi": "10.31234/osf.io/47ks6_v2",
+   "url": "https://doi.org/10.31234/osf.io/47ks6_v2",
+   "title": "A Critical Epistemological Audit of Early Evidence Syntheses in Generative AI Educational Research: A Systematic Review and Meta-Analysis",
+   "container": "",
+   "openalex_type": "preprint",
+   "openalex_publication_date": "2026-10-15",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "V22"
+   ],
+   "doi": "10.3390/su182010678",
+   "url": "https://doi.org/10.3390/su182010678",
+   "title": "Green Labels, Global Rankings or Green Systems? Universities, Their Sustainability Maturity and Diverse Pathways Toward National Green Transition",
+   "container": "Sustainability",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-21",
+   "in_kb": false,
+   "status": "judged_earlier",
+   "note": "先前已判讀（p0-scholar-monthly-2026-10-26）"
+  },
+  {
+   "scholar_ids": [
+    "V23"
+   ],
+   "doi": "10.1007/s11423-026-10720-0",
+   "url": "https://doi.org/10.1007/s11423-026-10720-0",
+   "title": "Artificial intelligence and empathetic communication to enhance learning engagement, motivation, and effectiveness",
+   "container": "Educational Technology Research and Development",
+   "openalex_type": "article",
+   "openalex_publication_date": "2026-10-28",
+   "in_kb": false,
+   "status": "monthly_only",
+   "ai_lit_class": "B",
+   "ai_lit_dims": [
+    "S-LRN"
+   ],
+   "audience": "higher_ed",
+   "first_public_date": "2026-10-28",
+   "first_public_basis": "出版者頁（Springer）citation_online_date",
+   "note": "303 名大學程式課學生，整合 ChatGPT 的情緒分析與同理回應學習系統"
+  }
+ ]
+}
