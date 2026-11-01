@@ -1709,6 +1709,7 @@
 | KB-2026-0441 — [Exploring learner–parent–AI interaction patterns in an AI-supported EFL learning game during informal learning: insights from sequence analysis and epistemic network analysis](https://doi.org/10.1186/s40561-026-00472-y) | journal_article | 2026-10-01 | discovered_unverified |
 | KB-2026-0442 — [From AI Intuition to AI Literacy: A Dual Framework for K-12 Education](https://doi.org/10.52358/mm.vi25.576) | journal_article | 2026-08-28 | bibliographic_checked |
 | KB-2026-0443 — [Revisiting Pedagogical Content Knowledge (PCK) development for the age of Generative AI](https://doi.org/10.1016/j.caeo.2026.100428) | journal_article | 2026-10-24 | bibliographic_checked |
+| KB-2026-0446 — [Integrating artificial intelligence into K-12 school education through self-determination theory from a longitudinal study: opportunities, challenges, and future direction](https://doi.org/10.1080/10494820.2026.2744403) | journal_article | 2026-10-08 | bibliographic_checked |
 | KB-2026-0449 — [A new spiral model of AI literacy and competency in higher education developed through a systematic literature review](https://doi.org/10.1080/10494820.2026.2735920) | journal_article | 2026-10-12 | bibliographic_checked |
 | KB-2026-0450 — [Cohort-level growth modeling of ethical engagement with artificial intelligence in education](https://doi.org/10.1007/s44163-026-02298-6) | journal_article | 2026-10-12 | bibliographic_checked |
 | KB-2026-0451 — [Higher education assessments in the age of GenAI: a systematic review](https://doi.org/10.1186/s41239-026-00627-4) | journal_article | 2026-10-16 | bibliographic_checked |
@@ -1767,6 +1768,7 @@
 | KB-2026-0504 — [Latent Profiles of University Students’ Artificial Intelligence Learning Characteristics: Epistemic Capacities, Psychological Attitudes, Facilitating Conditions, and Behavioral Engagement](https://doi.org/10.1177/21582440261500778) | journal_article | 2026-10-26 | bibliographic_checked |
 | KB-2026-0505 — [Artificial intelligence and empathetic communication to enhance learning engagement, motivation, and effectiveness](https://doi.org/10.1007/s11423-026-10720-0) | journal_article | 2026-10-28 | bibliographic_checked |
 | KB-2026-0506 — [Multimodal Feedback in EFL Writing: Revision Patterns under Synthesized Images and Automated Evaluation](https://doi.org/10.1007/s10758-026-10051-2) | journal_article | 2026-10-29 | bibliographic_checked |
+| KB-2026-0507 — [Teachers’ perceptions of students’ generative AI use, professional judgment, and pedagogical adaptation: a mixed-methods study](https://doi.org/10.1080/10494820.2026.2754919) | journal_article | 2026-10-30 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
@@ -1829,7 +1831,6 @@
 | KB-2026-0428 — [Artificial intelligence (AI) in schools – information for parents and carers](https://www.education.sa.gov.au/parents-and-families/curriculum-and-learning/ai/artificial-intelligence-ai-in-schools-information-for-parents-and-carers) | official_guidance | 未知 | discovered_unverified |
 | KB-2026-0444 — [Evaluating an AI-Powered Learning Analytics Tool for Automated Essay Scoring in Real Classroom Contexts: An Experience Report from a Brazilian Public Secondary School](https://doi.org/10.5753/wie.2026.28044) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0445 — [Investigating secondary school students’ shared epistemic agency with GAI in online scientific explanation writing](https://doi.org/10.1016/j.compedu.2026.105769) | journal_article | 未知 | discovered_unverified |
-| KB-2026-0446 — [Integrating artificial intelligence into K-12 school education through self-determination theory from a longitudinal study: opportunities, challenges, and future direction](https://doi.org/10.1080/10494820.2026.2744403) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0447 — [Towards a world-centred AI literacy in middle school education? Reflections from a Swedish case](https://doi.org/10.18261/njdl.21.2.4) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0448 — [Individualized dialogic practice delivered through AI supports first graders' question-asking](https://doi.org/10.1016/j.appdev.2026.102014) | journal_article | 未知 | discovered_unverified |
 

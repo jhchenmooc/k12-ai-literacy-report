@@ -104,7 +104,7 @@ test("dated Springer studies map to monitored J03/J32 and original years",()=>{
  assert.ok(x["by-journal/J32"].includes("KB-2026-0011"));
  assert.ok(x["by-year/2025/first_publication"].includes("KB-2025-0002"));
  assert.ok(x["by-year/2026/first_publication"].includes("KB-2026-0011"));
- for(const country of ["GB","GR","BR"])assert.deepEqual(x["by-country/"+country],["KB-2025-0002"]);
+ for(const country of ["GB","GR","BR"])assert.ok(x["by-country/"+country].includes("KB-2025-0002"),country);
  assert.ok(candidates.every(heldOrChecked));
 });
 
