@@ -968,7 +968,7 @@
 | KB-2025-0164 — [AI’s impact on science education: a study of ant and bee mindsets in UAE science classrooms](https://doi.org/10.3389/feduc.2025.1577285) | journal_article | 2025-05-21 | discovered_unverified |
 | KB-2025-0165 — [Teaching AI awareness in middle school classrooms: Design, implementation and evaluation of two education modules on algorithmic bias and filter bubbles](https://doi.org/10.1016/j.caeai.2025.100425) | journal_article | 2025-05 | discovered_unverified |
 | KB-2025-0166 — [Validating student AI competency self-efficacy (SAICS) scale and its framework](https://doi.org/10.1007/s11423-025-10512-y) | journal_article | 2025-05-27 | discovered_unverified |
-| KB-2025-0167 — [Teaching AI with games: the impact of generative AI drawing on computational thinking skills](https://doi.org/10.1007/s10639-025-13624-3) | journal_article | 2025-05-27 | discovered_unverified |
+| KB-2025-0167 — [Teaching AI with games: the impact of generative AI drawing on computational thinking skills](https://doi.org/10.1007/s10639-025-13624-3) | journal_article | 2025-05-27 | bibliographic_checked |
 | KB-2025-0168 — [Which educational approaches predict students’ generative AI confidence and responsibility?](https://doi.org/10.1016/j.caeai.2025.100431) | journal_article | 2025-05 | discovered_unverified |
 | KB-2025-0169 — [“ChatGPT is like a study buddy, a teacher and sometimes just a friend”: a longitudinal exploration of students’ interactions, perception and acceptance](https://doi.org/10.1080/10494820.2025.2509276) | journal_article | 2025-06-04 | discovered_unverified |
 | KB-2025-0170 — [Understanding AI guilt: the development, pilot-testing, and validation of an instrument for students](https://doi.org/10.1007/s10639-025-13629-y) | journal_article | 2025-06-04 | discovered_unverified |
@@ -1764,6 +1764,9 @@
 | KB-2026-0501 — [인공지능시대사이버보안영재교육지원을위한 교육부.LG유플러스.티오리한국 업무협약 체결](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107526&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | government_announcement | 2026-10-30 | bibliographic_checked |
 | KB-2026-0502 — [睿師社群協作家成果發表 無所不在的學習：跨域x跨校x共學與實踐](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=280DCEE4734D2CDC) | government_announcement | 2026-10-30 | bibliographic_checked |
 | KB-2026-0503 — [From Design to Classroom Adoption: Teachers' Perspectives on AI‐powered Writing Analytics in Resource‐Constrained Contexts](https://doi.org/10.1002/jcal.70362) | journal_article | 2026-10-30 | bibliographic_checked |
+| KB-2026-0504 — [Latent Profiles of University Students’ Artificial Intelligence Learning Characteristics: Epistemic Capacities, Psychological Attitudes, Facilitating Conditions, and Behavioral Engagement](https://doi.org/10.1177/21582440261500778) | journal_article | 2026-10-26 | bibliographic_checked |
+| KB-2026-0505 — [Artificial intelligence and empathetic communication to enhance learning engagement, motivation, and effectiveness](https://doi.org/10.1007/s11423-026-10720-0) | journal_article | 2026-10-28 | bibliographic_checked |
+| KB-2026-0506 — [Multimodal Feedback in EFL Writing: Revision Patterns under Synthesized Images and Automated Evaluation](https://doi.org/10.1007/s10758-026-10051-2) | journal_article | 2026-10-29 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
