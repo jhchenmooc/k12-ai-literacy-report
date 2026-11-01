@@ -1763,6 +1763,7 @@
 | KB-2026-0500 — [Student-LLM Interactions During Math Learning: Limited Epistemic Proactivity Overall, but Within-chat Change Predicts Performance Without AI](https://arxiv.org/abs/2610.38950) | preprint | 2026-10-28 | bibliographic_checked |
 | KB-2026-0501 — [인공지능시대사이버보안영재교육지원을위한 교육부.LG유플러스.티오리한국 업무협약 체결](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107526&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | government_announcement | 2026-10-30 | bibliographic_checked |
 | KB-2026-0502 — [睿師社群協作家成果發表 無所不在的學習：跨域x跨校x共學與實踐](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=280DCEE4734D2CDC) | government_announcement | 2026-10-30 | bibliographic_checked |
+| KB-2026-0503 — [From Design to Classroom Adoption: Teachers' Perspectives on AI‐powered Writing Analytics in Resource‐Constrained Contexts](https://doi.org/10.1002/jcal.70362) | journal_article | 2026-10-30 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

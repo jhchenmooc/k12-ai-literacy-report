@@ -1,4 +1,4 @@
-# 每日短訊查核紀錄：2026-11-01（0 則）
+# 每日短訊查核紀錄：2026-11-01（1 則，晨間 0 則、管理者提供全文後補發 1 則）
 
 > 每日短訊例行作業，由排程觸發，在每日短訊專用 session 執行。今天週日。
 > - **檢索：** 由同一 session 的三個子代理分頭執行（國際研究、國際政策、臺灣中央來源），判讀由本 session 複核。
@@ -81,3 +81,24 @@
 |---|---|---|---|---|
 | 1 | https://doi.org/10.1002/jcal.70362 （J06 JCAL，9 位教師評估 AI 寫作分析工具；Wiley 403） | 文章頁 Methods／Participants 段落截圖或全文 PDF（確認教師任教學段） | 若為中小學教師，補登作者摘要型 | 11-06 |
 | 2 | https://doi.org/10.1080/10494820.2026.2754919 （J40 ILE，教師對學生使用生成式 AI 的看法；T&F 403，無摘要） | 文章頁「Published online」日期與摘要截圖，或全文 PDF | 確認對象後補登作者摘要型 | 11-06 |
+
+## 補記（2026-11-01，管理者提供出版者 PDF 後）
+
+管理者提供瀏覽器清單兩項的出版者 PDF，已存受限 repo `from-editor-session/daily-pdfs/`（`no-kb__jcal-70362.pdf`、`no-kb__ile-2754919.pdf`）。
+
+| 編號 | 來源 | 首發日（依據） | 範圍 | 對象 | 型態 |
+|---|---|---|---|---|---|
+| D20261101-01 | J06 Journal of Computer Assisted Learning（Wiley），Ribeiro 等〈From Design to Classroom Adoption: Teachers' Perspectives on AI‐powered Writing Analytics in Resource‐Constrained Contexts〉 https://doi.org/10.1002/jcal.70362 | 2026-10-30（首發日依 Crossref published-online：出版社頁 403，出版者 PDF 未印上線日） | B（T-TEA） | k12（巴西公私立高中寫作課教師 9 人） | 作者摘要型 |
+
+- **D20261101-01：**
+  - **對象判定：** 摘要只寫 nine teachers；PDF 4.3 節寫明「nine teachers from private and public high schools in Brazil」，負責高中最後學年（16–18 歲學生）的寫作課。
+  - **摘要依據：** Abstract Objectives 第 1 句、Method 第 1、2 句、Results and Conclusion 第 2 句；4.3 節第 1 句。屬工具易用性評估與教師自陳，不是介入研究；作者的設計建議不寫入。
+  - **第二輪對照：** 隔離子代理判定大致一致。依建議修改如下，修正後一致：
+    - 補「依預設情境」。
+    - writing practices 改譯「寫作實踐」。
+    - 「評分高」改為「量表顯示接受度與易用性高」。
+  - **頁面：** 本期晨間為 0 則、未建頁；本次新建 `daily/2026-11-01/` 並在 issues.json 登記（前無已刊頁面，不需更正紀錄）。
+- **ILE `10.1080/10494820.2026.2754919`（不發，待管理者決定）：** PDF 首頁印 Published online 30 Oct 2026；樣本為中國在職教師 658 人，其中高中 302 人（45.9%）、高教 356 人（54.1%），質性訪談 24 人（高中 11、高教 13）。對象為高中與高教混合，不屬 k12 或未限學段的 other_stakeholders；比照先前「K-12 與高教混合判 unknown 邊界」前例不發，是否發布由管理者決定。
+- **候選池與知識庫：** W2026-10-30-A11（batch 2026-11-01-daily-1）→ KB-2026-0503，KR-15752～15760（published_in J06；研究國別巴西未標，見下）。
+- **瀏覽器清單：** 兩項皆已處理。
+- **知識庫測試限制：** `research/validate-knowledge-base.test.js` 第 107 行斷言 `by-country/BR` 只含 KB-2025-0002，新增巴西研究國別會使測試失敗。依規則不改測試，KB-2026-0503 暫不標 `studies_country` BR；是否放寬該測試（改為「包含」而非「等於」），請管理者轉告編輯 session 決定，放寬後可補標。

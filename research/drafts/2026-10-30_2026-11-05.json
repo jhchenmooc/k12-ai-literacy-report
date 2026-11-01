@@ -349,6 +349,40 @@
       "audience": "k12",
       "screening_note": "Verified 2026-10-31 for daily brief 2026-10-31.",
       "verification_completed_on": "2026-10-31"
+    },
+    {
+      "candidate_id": "W2026-10-30-A11",
+      "category": "research",
+      "source_url": "https://doi.org/10.1002/jcal.70362",
+      "source_title": "From Design to Classroom Adoption: Teachers' Perspectives on AI‐powered Writing Analytics in Resource‐Constrained Contexts",
+      "source_organization": "Journal of Computer Assisted Learning (Wiley)",
+      "source_publication_date": "2026-10-30",
+      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：Wiley 回 403；出版者 PDF 由管理者 2026-11-01 提供，未印上線日）：2026-10-30；Received 12 February 2026、Accepted 15 September 2026；摘要歸屬：Abstract Objectives 第 1 句、Method 第 1、2 句、Results and Conclusion 第 2 句，對象依 4.3 節第 1 句",
+      "discovered_on": "2026-11-01",
+      "discovery_batch_id": "2026-11-01-daily-1",
+      "first_disclosed_on": "2026-10-30",
+      "source_updates": [],
+      "original_excerpt": "This study aims to systematically evaluate the usability, acceptability and pedagogical relevance of an AIED-Unplugged learning analytics tool from teachers' perspectives, in order to guide the development of user-centered design strategies and support writing practices in resource-constrained educational settings without deepening digital inequities. … We employed a mixed-methods approach involving nine teachers, who downloaded an AIED-U application and followed a predefined usage scenario according to a think-aloud protocol. … Afterwards, participants filled out the Technology Acceptance Model (TAM) and System Usability Scale (SUS) questionnaires, taking part in a moderated semi-structured interview guided by an interview script. … The quantitative findings indicated high levels of acceptance and usability, corroborating the qualitative findings that teachers perceived the solution as useful, easy to integrate and supportive of their practices. … The usability testing of the Escreva Mais was conducted with nine teachers from private and public high schools in Brazil.",
+      "source_checked": true,
+      "claim_text": "來源機構：Journal of Computer Assisted Learning (Wiley)；資料標題：From Design to Classroom Adoption: Teachers' Perspectives on AI‐powered Writing Analytics in Resource‐Constrained Contexts；來源刊登日：2026-10-30。作者摘要報告：研究從教師觀點系統評估一款 AIED-Unplugged 學習分析工具的易用性、接受度與教學相關性，以支援資源受限情境的寫作實踐且不加深數位不平等；採混合方法，巴西公私立高中 9 名教師依預設情境以放聲思考程序使用該應用程式，再填寫科技接受模式（TAM）與系統易用性量表（SUS）並受半結構訪談；作者報告量表顯示接受度與易用性高，教師認為工具有用、易於整合。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Journal of Computer Assisted Learning，監測清單 J06）；巴西公私立高中寫作課教師 9 人的易用性測試與自陳問卷、訪談，小樣本立意取樣，結果不宜推論；首發日依 Crossref 上線日。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-01 子代理讀 Crossref 紀錄（Wiley 頁 403，摘要未寫學段），列瀏覽器清單；管理者 2026-11-01 提供出版者 PDF 後，本 session 讀摘要與 4.3 節確認對象為巴西公私立高中教師，撰寫中文摘要與中文譯名；第二輪 2026-11-01 由隔離子代理逐項對照英文原句（數字、地點、程序、保留語、術語、中文篇名），判定大致一致，依建議補「依預設情境」、writing practices 改譯「寫作實踐」、「評分高」改為「量表顯示……高」，修正後一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "T-TEA"
+      ],
+      "ai_lit_note": "巴西高中寫作課教師評估 AI 寫作分析工具在教學上的易用性與適用性（教師自陳），屬 AI 賦能教學（B），對應 T-TEA「評估AI工具輔助教學的適用性」",
+      "audience": "k12",
+      "doi": "10.1002/jcal.70362",
+      "screening_note": "Verified 2026-11-01 for daily brief 2026-11-01.",
+      "verification_completed_on": "2026-11-01"
     }
   ],
   "search_runs": [
@@ -434,6 +468,22 @@
       ],
       "discovered": 4,
       "added": 4,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-01-daily-1",
+      "searched_on": "2026-11-01",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "2026-11-01 morning screen: Crossref created 2026-10-31..2026-11-01 and watchlist-ISSN sets flagged J06 10.1002/jcal.70362 (Wiley 403, abstract without school level); manager provided the publisher PDF 2026-11-01",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ],
