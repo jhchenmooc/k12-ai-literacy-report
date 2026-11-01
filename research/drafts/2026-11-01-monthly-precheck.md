@@ -172,3 +172,17 @@ B「可能相關但不建議」：16 則，理由見受限 repo，例如 NEU 與
 5. 一句話 ≤60 字；導讀 3–5 句、每句至少 2 則不同來源依據、不談臺灣；並列重點與對照沿用禁字。
 6. 反思選讀逐則依管理者確認填 `reflect_confirmed_on`，`claim_text` 用 `reflectionText` 產生，語氣對照定稿寫回本檔。
 7. render-site 重新產生，`research/*.test.js`、validate-publication、知識庫、public-site build 全過。
+
+## 十一、管理者確認（2026-11-01「照建議」）
+
+- 第五節待決 1～9 全部照建議：
+  - 學者段加入 T14（compedu.105769，taiwan_sample）與 V18（appdev.2026.102014），學者段共 6 則；
+  - 學者觀點動向列 1 項（S04＋H30）；
+  - 反思選讀 F1～F10 照 A 清單，F7 選 EPI、F5 依新聞頁 9/09、F1 註明單篇頁只印年月、F4 加〔被迴避的重大〕、F10 改選作者結論中不帶統計數字的句子並重做第二輪對照；
+  - A05 放研究段、INTEF 放背景；
+  - P01 改列背景 B2；
+  - 臺灣研究等文獻 session 結果。
+- 管理者已提供：R2 Behavioral Sciences 10.3390/bs16101892 出版者 PDF（Published 2026-10-13）；H30 JECR 10.1177/07356331261479569 PDF 與文章頁截圖（Online 2026-08-22，與 Crossref 同日；Received 2026-03-04、Accepted 2026-08-03）。皆存受限 repo。
+- 非中小學比例：研究 7 則（非中小學 1）＋學者 6 則（非中小學 2），n = 13、非中小學 3，上限 4。
+- 知識庫待補（出刊 PR 一併處理）：0005、0009、0051、0285 日期；0445、0448 升 `bibliographic_checked`（候選 A12、A15 改 publish）；0186 升 `bibliographic_checked`、首發日 2026-08-22。
+- 出刊作業：11/03 由管理者回「月報出刊」後進行（排程文字第 3 日作業）。
