@@ -1,0 +1,15 @@
+UNICEF Office of Strategy and Evidence Innocenti | 2026-10-09 | Why children’s perspectives belong at the centre of AI policy and design | https://www.unicef.org/innocenti/stories/why-childrens-perspectives-belong-centre-ai-policy-and-design | Article page read 2026-10-20 and re-read 2026-11-01 by default HTTPS request (HTTP 200); page prints "09 October 2026" (article:published_time 2026-10-09T11:43:54+0000; modified 2026-10-13). The excerpt keeps the page's no-break space (U+00A0, from &nbsp;) between "undermine" and "learning". © UNICEF; short excerpts only.
+Byline excerpt (page header):
+Didem Özkul & Steven Vosloo
+Page date excerpt (page header):
+09 October 2026
+Basis excerpt (introduction):
+Looking back to child consultations held in 2020 and 2025
+Subsection excerpt:
+Changing views about AI
+Article excerpt (subsection Changing views about AI, paragraph 2, sentence 2):
+Children talked about the limitations of AI in content filtering and age estimation, and worried about how using AI can undermine learning and critical thinking.
+Nature of article excerpt (closing note, after "This article"):
+is a reflective review of evidence from two different child consultations
+Original excerpt (quoted in full; the claim's original_excerpt):
+Children talked about the limitations of AI in content filtering and age estimation, and worried about how using AI can undermine learning and critical thinking.

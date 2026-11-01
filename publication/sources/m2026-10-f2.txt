@@ -1,0 +1,13 @@
+Brookings Institution | 2026-09-08 | 3 reasons why ‘going slow to go fast’ is the right approach for AI in schools | https://www.brookings.edu/articles/3-reasons-why-going-slow-to-go-fast-is-the-right-approach-for-ai-in-schools/ | Commentary page read 2026-10-20 and re-read 2026-11-01 by default HTTPS request (HTTP 200); page prints "September 8, 2026" (datePublished 2026-09-08T13:32:30Z). © Brookings Institution; short excerpts only.
+Byline excerpt (page header; line breaks joined):
+Commentary 3 reasons why ‘going slow to go fast’ is the right approach for AI in schools Rebecca Winthrop
+Author title excerpt (page header; line breaks joined):
+Director - Center for Universal Education , Senior Fellow - Global Economy and Development September 8, 2026
+Summary excerpt (opening summary, item 2):
+Teachers, students, and families have all picked up on the real risks of wide AI use when it comes to student skills development and learning.
+Context excerpt (section #1: The risks are real):
+we found that “narrow” AI applications, those built on vetted content and embedded within high-quality pedagogy, can offer meaningful benefits. At the same time, there are significant risks associated with “wide” AI use, particularly when young people engage extensively with general-purpose chatbots that were not designed primarily for education or child development.
+Editor's note excerpt (end of article):
+The search for relevant sources and light copyediting for this piece were provided by Copilot and Notebook, Microsoft and Google generative AI tools (respectively)
+Original excerpt (quoted in full; the claim's original_excerpt):
+Teachers, students, and families have all picked up on the real risks of wide AI use when it comes to student skills development and learning.

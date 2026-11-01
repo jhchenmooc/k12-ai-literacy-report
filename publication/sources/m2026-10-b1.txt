@@ -1,0 +1,25 @@
+西班牙教育部 國家教育科技與教師培訓研究所（INTEF） | 2026-09-08 | Guía sobre el uso de la inteligencia artificial en el ámbito educativo | https://intef.es/Noticias/nueva-version-de-la-guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo/ | 讀取：INTEF 新聞頁存檔（2026-10-21 以預設 curl 讀取，私人 repo reflection-archive/2026-10/05-intef-news.html，SHA-256 2b5c1ab8e16922bf690c5de0d0d8032a9bfca3d61a1a2a2d816bbef7d89e0d10；2026-11-01 重讀時連線遭重設，未繞過）；指南 PDF 2.0 版存檔（同目錄 05-intef-guide.pdf，105 頁，SHA-256 676d1ea8cd537c35a7cf925b0ac0c6dfe7cc65bb38329c84d996e7bb1375bfc0，PDF CreationDate 2026-09-16，檔案可能曾更換）；西班牙教育部出版目錄頁 https://www.libreria.educacion.gob.es/libro/guia-sobre-el-uso-de-la-inteligencia-artificial-en-el-ambito-educativo_187146/ 2026-11-01T02:40Z 讀取（HTTP 200）。首發日依據：新聞頁標題列「08-09-2026」與 JSON-LD datePublished 2026-09-08T07:30:20+00:00（dateModified 2026-10-07 不採）；出版目錄「Fecha publicación 08-09-2026」；封面「Versión 2.0 Septiembre 2026」；10-05 線上發表會與 10-22 SIMO 活動晚於首發。授權：CC BY-SA 4.0（指南版權頁）；本快照只存摘錄。PDF 斷行已接回；頁碼為印刷頁（PDF 頁）。
+News date excerpt (INTEF 新聞頁標題列與 JSON-LD):
+Nueva versión de la «Guía sobre el uso de la inteligencia artificial en el ámbito educativo» 08-09-2026 … "datePublished":"2026-09-08T07:30:20+00:00"
+Catalog date excerpt (教育部出版目錄頁):
+Guía sobre el uso de la inteligencia artificial en el ámbito educativo Versión 2.0. Septiembre 2026 … Editorial Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado (INTEF) … Fecha publicación 08-09-2026
+Profiles and resources excerpt (INTEF 新聞頁第 3、7 段):
+Sus contenidos se articulan en torno a tres perfiles: alumnado, profesorado y centro educativo . Para cada uno de ellos se analizan las oportunidades que ofrece la inteligencia artificial, los principales desafíos y riesgos asociados a su uso y distintas propuestas de actuación. … la publicación incluye recursos prácticos como situaciones de aprendizaje para distintas etapas educativas, un modelo de declaración de uso de inteligencia artificial y un cuestionario dirigido al alumnado para favorecer la reflexión crítica sobre su relación con esta tecnología.
+Edition and license excerpt (版權頁，PDF p. 2):
+Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado (INTEF) Versión 2.0 Septiembre 2026 … Creative Commons Attribution-ShareAlike 4.0
+Definition excerpt (1.1 ¿QUÉ ES LA IA?, p. 2 (PDF p. 4)):
+este documento adopta la definición establecida en el Reglamento de Inteligencia Artificial de la Unión Europea (Reglamento de IA), por ser el marco normativo de referencia en nuestro contexto educativo.
+First version excerpt (1.2 IA EN EDUCACIÓN, p. 3 (PDF p. 5)):
+Desde la publicación de la primera versión de esta guía en 2024, el contexto en el que se sitúa la IA en educación ha evolucionado con rapidez.
+AI literacy excerpt (1.2.2 ALFABETIZACIÓN EN IA, p. 6 (PDF p. 8)):
+La alfabetización en IA constituye hoy una dimensión necesaria de la formación integral del alumnado. En una sociedad digitalizada como la nuestra, el sistema educativo debe contribuir a que niños, niñas y jóvenes comprendan cómo funcionan estas tecnologías y cómo pueden relacionarse con ellas de manera segura, crítica y responsable.
+Student challenges excerpt (2.1 DESAFÍOS Y LIMITACIONES DEL ALUMNADO, p. 12 (PDF p. 14)):
+El peligro real no reside en la tecnología en sí, sino en una "delegación ciega" que pueda atrofiar capacidades fundamentales como la lectura reflexiva, la resolución de problemas o el pensamiento lógico.
+Traffic light and declaration excerpt (2.2.2 ENSEÑAR PARA LA IA, pp. 46–47 (PDF pp. 48–49)):
+resulta conveniente establecer sistemas visuales de gestión de uso, como el modelo del semáforo de la IA (Perkins et al., 2024). Esta herramienta permite señalizar con precisión el grado de intervención permitido en cada tarea … al definir con precisión las expectativas de uso y solicitar siempre una declaración sobre el uso que se ha hecho de la tecnología (ver ejemplo en el anexo 2: «Modelo de declaración de uso de la IA»), se establece un marco de confianza mutua.
+Annex excerpt (ANEXO 2, p. 99 (PDF p. 101); ANEXO 3, p. 100 (PDF p. 102)):
+ANEXO 2: Modelo de declaración de uso de IA … ANEXO 3: Modelo de cuestionario de reflexión para el alumnado
+Conclusions excerpt (4. CONCLUSIONES, p. 71 (PDF p. 73)):
+La integración de la IA no puede depender únicamente de iniciativas individuales. Debe formar parte de la estrategia digital de los centros educativos … Lejos de sustituir la labor docente, la IA revaloriza su rol como mediador, referente y garante de una educación centrada en las personas.
+Original excerpt (two passages joined by " … "):
+La alfabetización en IA constituye hoy una dimensión necesaria de la formación integral del alumnado. … Lejos de sustituir la labor docente, la IA revaloriza su rol como mediador, referente y garante de una educación centrada en las personas.

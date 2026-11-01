@@ -1,0 +1,15 @@
+American Federation of Teachers (AFT), United Federation of Teachers (UFT) and Microsoft | 2026-09-09 | AFT, UFT and Microsoft Announce ‘National AI Safety & Privacy Standard’ for Schools to Protect Students, Families and Educators | https://www.aft.org/press-release/aft-uft-and-microsoft-announce-national-ai-safety-privacy-standard-schools-protect | Press release page read 2026-10-20 and re-read 2026-11-01 by default HTTPS request (HTTP 200); page prints "For Release: Wednesday, September 9, 2026" (article:published_time 2026-09-08T18:50:37-04:00, one day earlier; the printed release date is used). © AFT; short excerpts only.
+Release date excerpt (page header; line breaks joined):
+For Release: Wednesday, September 9, 2026
+Issuers excerpt (paragraph 1):
+AFT President Randi Weingarten, United Federation of Teachers President Michael Mulgrew, and Microsoft Vice Chair and President Brad Smith today announced
+Agreement excerpt (paragraph 2):
+on the heels of New York City Public Schools’ screens and AI ban, ensures that tech companies cannot use student data to train AI
+Scope excerpt (paragraph 2):
+U.S. school districts can incorporate these protections directly into their Microsoft customer agreements, making them contractually enforceable.
+Quote excerpt (second-to-last body paragraph):
+“HIPAA and FERPA never envisioned the advent of AI,” Weingarten said, “and in the absence of those protections, tech companies need to take responsibility for the products they create and market to students, educators and communities.”
+Last body paragraph excerpt (opening words):
+A fact sheet on the agreement can be
+Original excerpt (quoted in full; the claim's original_excerpt):
+“HIPAA and FERPA never envisioned the advent of AI,” Weingarten said, “and in the absence of those protections, tech companies need to take responsibility for the products they create and market to students, educators and communities.”

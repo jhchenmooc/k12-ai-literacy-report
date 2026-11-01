@@ -1,0 +1,40 @@
+Smart Learning Environments (Springer Nature) | 2026-10-01 | Exploring learner–parent–AI interaction patterns in an AI-supported EFL learning game during informal learning: insights from sequence and epistemic network analyses | https://doi.org/10.1186/s40561-026-00472-y | Read: (1) publisher article page archived in the private repo (from-literature-session/sle-backfill-1025/pages/s40561-026-00472-y.html, SHA-256 806fef8669b4038870fc932b7a02fee9f95887ba584f09252b28e38b35b01925; abstract only, no body text), re-fetched 2026-11-01 UTC with a plain request (unchanged: still the early-shared version); (2) the PDF linked from that page as "Download PDF" (https://link.springer.com/content/pdf/10.1186/s40561-026-00472-y_reference.pdf), fetched 2026-11-01 UTC, SHA-256 4b161bd737799fdc90e3ea7372aeb12f7dd289b4ae610ee3423b0990a2934238, 24 pp., marked "RESEARCH | Article in Press" (PDF creation date 2026-10-01); full text extracted with pdftotext and checked with python3 -I; page numbers below are PDF pages (the PDF prints none); line breaks normalized. Date basis: publisher page "Published: 01 October 2026" (Received 09 February 2026, Revised 04 September 2026, Accepted 24 September 2026; citation_online_date 2026/10/01); Crossref published-online 2026-10-01. Title follows the publisher page and PDF ("sequence and epistemic network analyses"; the knowledge-base record KB-2026-0441 has "sequence analysis and epistemic network analysis"). | License: CC BY 4.0 (publisher page, PDF p. 24); this snapshot keeps excerpts only
+
+Version excerpt (PDF p. 1):
+This Article in Press is shared early to give you faster access to new research. It is citable and carries a permanent DOI. The final edited version will replace it automatically.
+
+Context and sample excerpt (PDF p. 5, Context and research participants):
+This study was conducted in the Chinese EFL context at the primary education level and during the summer holiday in August 2025. Our research participants were recruited via the authors’ network using a convenience sampling approach until a sufficient sample size was achieved … Fifty participants were included, comprising 25 pairs of young learners (age: 7–11 years) and parents. … Nevertheless, we regard these profiles as exploratory and do not claim generalisability beyond similar contexts. Regarding the parents’ English proficiency, 20 of 25 (80%) reported possessing only basic knowledge of English or beginner-level skills. Furthermore, 20 of 25 parents (80%) expressed that they had never used AI chatbots to support their children’s informal learning of English.
+
+Game design excerpt (PDF pp. 4–5, Design and development of the game):
+Specifically, we incorporated a generative AI chatbot powered by a low-cost large language model, ERNIE-48 K … A total of five AI-supported characters were developed … Second, the AI-supported characters were designed to provide a rating and evaluative feedback. The rating (1 = lowest, 5 = highest) was assigned based on spoken English assessment criteria … Second, we applied RAG to ground the AI responses in the provided dataset, such as vocabulary lists and sample sentences related to small animals
+
+Procedure excerpt (PDF pp. 5–6, Interventions):
+The interventions were conducted in the participants’ preferred locations (e.g., their homes). … The parents were encouraged to guide their children throughout gameplay and to offer support when necessary. The planned gameplay duration was approximately 30 min.
+
+Data excerpt (PDF p. 6, Data collection and analysis; PDF p. 9):
+The data were collected from four sources: (1) video recordings of the participants’ engagement with the game, (2) learner–AI dialogues, (3) learners’ pre- and post-tests, and (4) semi-structured interviews with the learners and their parents. … To address RQ2, a 10-minute pre- and post-test were administered to evaluate the learners’ vocabulary knowledge and speaking skills. … Each test had a maximum score of 50 marks
+
+Analysis excerpt (PDF p. 1, Abstract):
+were analysed using sequence analysis, epistemic network analysis (ENA), the Wilcoxon signed-rank test, Quade’s non-parametric ANCOVA, multiple regression analysis, and qualitative analysis, respectively.
+
+Profiles excerpt (PDF p. 11, RQ1):
+This reflects a trajectory that Cluster 1 is characterised by greater time spent in LCAI and AIO states and by more flexible parental engagement compared with Cluster 2. … This indicates a trajectory that Cluster 2 is characterised by greater time spent in LLT and by limited parental engagement strategies compared with Cluster 1.
+
+Prior proficiency excerpt (PDF p. 10, Results overview):
+This pattern indicates that the learners in Cluster 1 had higher prior English proficiency than those in Cluster 2, which needs to be taken into account when interpreting subsequent differences in interaction patterns and learning gains between the clusters.
+
+Findings excerpt (PDF p. 1, Abstract):
+Two distinct learner–parent–AI interaction profiles were identified. The Wilcoxon signed-rank test indicated significant increases in scores from pre-test to post-test within both profiles. However, learners’ post-test scores did not differ significantly across the learner profiles after controlling for their pre-test scores. The regression analysis results indicated that learners’ pre-test scores, their engagement in knowledge-learning tasks, and parental cognitive engagement strategies were positively associated with learners’ post-test scores. By contrast, learner–AI interaction types showed no significant association with learners’ post-test scores.
+
+Parent strategies excerpt (PDF p. 14, Parents' verbal instructions):
+The parents in both clusters used strategies such as prompting and questioning, cueing, and answer providing, while parents in Cluster 1 also used corrective feedback.
+
+Perceptions excerpt (PDF p. 16, RQ3):
+The reported benefits of the AI-supported characters can be categorised into three main sub-themes, namely facilitating speaking skills, supporting vocabulary acquisition, and providing evaluative feedback. … Several suggestions were also identified, namely simplifying AI feedback, including bilingual AI feedback, and providing scaffolded prompts.
+
+Limitations excerpt (PDF pp. 20–21, Conclusion and limitations):
+First, this study focused on one game scenario for informal learning of English. … the study did not include a control or comparison group. … Finally, this study involved a small number of participants, comprising 25 EFL learners paired with 25 parents. … In addition, the stepwise regression was based on 25 cases. This condition may produce unstable coefficients, inflated model fit, and overfitting, even when residual and collinearity diagnostics are acceptable. The regression findings should therefore be understood as exploratory rather than robust or broadly generalisable predictive factors.
+
+Original excerpt (PDF p. 1, Abstract; joined by " … "):
+Two distinct learner–parent–AI interaction profiles were identified. … However, learners’ post-test scores did not differ significantly across the learner profiles after controlling for their pre-test scores. The regression analysis results indicated that learners’ pre-test scores, their engagement in knowledge-learning tasks, and parental cognitive engagement strategies were positively associated with learners’ post-test scores. By contrast, learner–AI interaction types showed no significant association with learners’ post-test scores.

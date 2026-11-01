@@ -1,0 +1,34 @@
+Interactive Learning Environments (Taylor & Francis) | 2026-10-08 | Integrating artificial intelligence into K-12 school education through self-determination theory from a longitudinal study: opportunities, challenges, and future direction | https://doi.org/10.1080/10494820.2026.2744403 | Read: publisher PDF provided by the manager 2026-10-26 (restricted repo from-literature-session/scholar-monthly-1026/A13-ile-2026-2744403.pdf), 16 PDF pages = T&F cover page + article pp. 1–15, SHA-256 7ce7fc03be40498a72c461879fda7a733af05bc6ad2f07fe6564bf5471313926, text extracted with pypdf (python3 -I) and read 2026-11-01 UTC; page refs are PDF page (printed page); first-online basis: PDF cover "Published online: 08 Oct 2026" (Received 28 April 2026, Accepted 1 October 2026) | License: open access, CC BY 4.0 (PDF p. 2). Text normalisation: words split by line-break hyphenation are rejoined and pypdf spacing artifacts removed; no other changes.
+
+Cover excerpt (PDF p. 1):
+Published online: 08 Oct 2026.
+
+Licence excerpt (PDF p. 2 (p. 1)):
+This is an Open Access article distributed under the terms of the Creative Commons Attribution License
+
+Abstract excerpt (PDF p. 2 (p. 1)):
+Using a two-year longitudinal qualitative design, seventy-four K-12 school teachers were interviewed, and data were analyzed via deductive thematic analysis. Findings revealed that the three SDT needs satisfaction fostered pedagogical innovation, efficiency, and professional community. Conversely, needs frustration undermined high-quality integration, which is caused by external control, skill gaps, isolation, and ethical disengagement. These results demonstrate that AI integration is fundamentally a motivational challenge, not merely a technical one.
+
+Research design and participants excerpt (PDF p. 5 (p. 4)):
+Using purposive sampling, we invited 14 in-service K12 teachers from each discipline, i.e. English, Chinese, Mathematics, Science, Humanities, and Others (84 in total), from a professional learning community focused on AI in education.
+
+Research design and participants excerpt (PDF p. 5 (p. 4)):
+Four of them rejected our invite, resulting in 80 teachers from diverse subject areas.
+
+Research design and participants excerpt (PDF p. 5 (p. 4)):
+Finally, 74 participants completed this two-year study
+
+Research procedure and interview protocols excerpt (PDF p. 5 (p. 4)):
+Data were collected through semi-structured individual interviews and self-reported surveys related to AI integration quality.
+
+Research procedure and interview protocols excerpt (PDF p. 5 (p. 4)):
+The second and third interviews examined how participants’ practices developed over two years of integration
+
+Limitations excerpt (PDF p. 14 (p. 13)):
+First, the sample was drawn from a professional learning community focused on AI in education, meaning participants likely possessed greater initial interest and motivation than the general teacher population. Second, the two-year longitudinal design, while a strength, cannot establish causal relationships between need satisfaction and integration quality
+
+Limitations excerpt (PDF p. 14 (p. 13)):
+Finally, the study examined teacher perspectives only, leaving student and administrator experiences unexplored.
+
+Original excerpt (PDF p. 2 (p. 1) Abstract sentence 4; single passage, joined by " … "):
+Using a two-year longitudinal qualitative design, seventy-four K-12 school teachers were interviewed, and data were analyzed via deductive thematic analysis.

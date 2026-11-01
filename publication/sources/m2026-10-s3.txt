@@ -1,0 +1,37 @@
+Interactive Learning Environments (Taylor & Francis) | 2026-10-12 | A new spiral model of AI literacy and competency in higher education developed through a systematic literature review | https://doi.org/10.1080/10494820.2026.2735920 | Read: publisher PDF provided by the manager 2026-10-26 (restricted repo from-literature-session/scholar-monthly-1026/M-ile-2026-2735920.pdf), 20 PDF pages = T&F cover page + article pages, SHA-256 c6b6dbb0be37022db41dac5e007a7d604cafd33261e5219abcbca7c12d066310, text extracted with pypdf (python3 -I) and read 2026-11-01 UTC; page refs are PDF page (printed page); first-online basis: PDF cover "Published online: 12 Oct 2026" (Received 14 April 2026, Accepted 14 September 2026) | License: not open access (© 2026 Informa UK Limited); this snapshot keeps only short excerpts that support the published item. Text normalisation: words split by line-break hyphenation are rejoined and pypdf spacing artifacts removed; no other changes.
+
+Cover excerpt (PDF p. 1):
+Published online: 12 Oct 2026.
+
+Abstract excerpt (PDF p. 2 (p. 1)):
+Following PRISMA 2020 guidelines, a systematic literature review and thematic synthesis of 18 studies identified three major gaps, including conceptual overlap between AI literacy and competency, fragmented framework structures, and limited developmental progression.
+
+Abstract excerpt (PDF p. 2 (p. 1)):
+the proposed model integrates three interdependent dimensions, reflective, dispositional, and practical
+
+Abstract excerpt (PDF p. 2 (p. 1)):
+Multiplicative Spiral Gain Function (MSGF)
+
+Methodology excerpt (PDF p. 6 (p. 5)):
+The search strategy was implemented across Scopus, Web of Science, and ERIC databases
+
+Methodology excerpt (PDF p. 7 (p. 6)):
+restricted to peer-reviewed studies published in English language between 2015 and 2025
+
+Methodology excerpt (PDF p. 7 (p. 6)):
+Studies conducted in both K-12 and higher education students were included
+
+Methodology, limitations paragraph excerpt (PDF p. 8 (p. 7)):
+The restriction to English-language publications may limit the inclusion of relevant studies from non-English contexts.
+
+Conceptual boundaries and limitations excerpt (PDF p. 15 (p. 14)):
+First, the proposed Spiral Model of AI Competency is conceptual in nature.
+
+Conceptual boundaries and limitations excerpt (PDF p. 15 (p. 14)):
+The function has not been parameterized or empirically tested
+
+Conceptual boundaries and limitations excerpt (PDF p. 15 (p. 14)):
+may not be transferable to K-12, vocational, or informal learning environments without substantial adaptation
+
+Original excerpt (PDF p. 2 (p. 1) Abstract sentence 4; single passage, joined by " … "):
+Following PRISMA 2020 guidelines, a systematic literature review and thematic synthesis of 18 studies identified three major gaps, including conceptual overlap between AI literacy and competency, fragmented framework structures, and limited developmental progression.

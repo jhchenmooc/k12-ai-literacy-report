@@ -1,0 +1,34 @@
+Journal of Applied Developmental Psychology (Elsevier) | 2026-10-15 | Individualized dialogic practice delivered through AI supports first graders' question-asking | https://doi.org/10.1016/j.appdev.2026.102014 | Read: publisher PDF provided by the manager 2026-10-26 (restricted repo from-literature-session/scholar-monthly-1026/A15-appdev-2026-102014.pdf), 12 PDF pages, Journal of Applied Developmental Psychology 107 (2026) 102014, SHA-256 449cec8ce91377dfee0af8797261c189c4dc4c7b30ca30aba6586f810c439049, text extracted with pypdf (python3 -I) and read 2026-11-01 UTC; page refs are PDF page numbers (= printed page numbers); first-online basis: PDF p. 1 "Available online 15 October 2026" (Received 6 April 2026, revised 27 August 2026, Accepted 8 October 2026) | License: not open access (© 2026 Elsevier Inc., all rights reserved); this snapshot keeps only short excerpts that support the published item. Text normalisation: words split by line-break hyphenation are rejoined and pypdf spacing artifacts removed; no other changes.
+
+First page excerpt (p. 1):
+Available online 15 October 2026
+
+Abstract excerpt (p. 1):
+matched in content, materials, and session duration, across seven weekly sessions.
+
+Abstract excerpt (p. 1):
+At pretest and posttest, children completed assessments without instructional or AI-generated support.
+
+Abstract excerpt (p. 1):
+Because interaction format, per-child practice opportunities, feedback immediacy, facilitator identity, and delivery medium covaried in this design, the findings support sustained individualized dialogic practice as implemented here, rather than AI per se.
+
+Participants excerpt (p. 3, Method):
+were recruited from the first-grade cohort at a single campus of a public primary school in urban Beijing.
+
+Design, procedure, and materials excerpt (p. 3, Method):
+The study employed a nine-week, two-group controlled trial with pretest and posttest assessments. Children were allocated to either AI-delivered individualized dialogic practice (individualized-practice condition; n = 97) or instructor-led whole-class discussion (whole-class condition; n = 93).
+
+Design, procedure, and materials excerpt (p. 3, Method):
+Within each administrative class, condition allocation followed student-number parity (odd vs. even), with the mapping of parity to condition determined at random by the research team.
+
+Limitations and future directions excerpt (p. 10):
+rather than on a researcher-generated individual randomization sequence
+
+Limitations and future directions excerpt (p. 10):
+the findings therefore provide evidence of near transfer, whereas far transfer remains untested.
+
+Limitations and future directions excerpt (p. 10):
+The sample was drawn from a single urban public primary school in Beijing.
+
+Original excerpt (p. 1 Abstract last sentence; single passage, joined by " … "):
+Because interaction format, per-child practice opportunities, feedback immediacy, facilitator identity, and delivery medium covaried in this design, the findings support sustained individualized dialogic practice as implemented here, rather than AI per se.
