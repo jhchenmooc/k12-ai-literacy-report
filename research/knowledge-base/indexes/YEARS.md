@@ -1774,12 +1774,13 @@
 | KB-2026-0505 — [Artificial intelligence and empathetic communication to enhance learning engagement, motivation, and effectiveness](https://doi.org/10.1007/s11423-026-10720-0) | journal_article | 2026-10-28 | bibliographic_checked |
 | KB-2026-0506 — [Multimodal Feedback in EFL Writing: Revision Patterns under Synthesized Images and Automated Evaluation](https://doi.org/10.1007/s10758-026-10051-2) | journal_article | 2026-10-29 | bibliographic_checked |
 | KB-2026-0507 — [Teachers’ perceptions of students’ generative AI use, professional judgment, and pedagogical adaptation: a mixed-methods study](https://doi.org/10.1080/10494820.2026.2754919) | journal_article | 2026-10-30 | bibliographic_checked |
-| KB-2026-0508 — [次期学習指導要領等に向けた審議まとめ（案）](https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/101/siryo/mext_00057.html) | consultation | 2026-09-25 | bibliographic_checked |
-| KB-2026-0509 — [AI時代國小創新課程設計與教學實踐：四份國際文件的評析與啟示](https://doi.org/10.6249/SE.202609_77(3).0018) | journal_article | 2026-09 | bibliographic_checked |
-| KB-2026-0510 — [AI 素養結合 SEL 融入小學寫作教學方案之探究](https://doi.org/10.6249/SE.202609_77(3).0019) | journal_article | 2026-09 | bibliographic_checked |
-| KB-2026-0511 — [以生成式人工智慧研發國語文寫作教學教材—PROMPT 模式運用](https://doi.org/10.6249/SE.202609_77(3).0024) | journal_article | 2026-09 | bibliographic_checked |
-| KB-2026-0512 — [人工智慧融入資源班教學：個別化學習支持的新契機](https://ater.org.tw/wordpress/wp-content/uploads/2026/10/free_13.pdf) | journal_article | 2026-10-01 | bibliographic_checked |
-| KB-2026-0513 — [生成式人工智慧進入幼兒園：教師專業角色與素養](https://ater.org.tw/wordpress/wp-content/uploads/2026/10/free_14.pdf) | journal_article | 2026-10-01 | bibliographic_checked |
+| KB-2026-0508 — [Tangible AI in the Elementary Classroom: Effects on AI Literacy, Computational Thinking, and Learner Dispositions](https://doi.org/10.58421/gehu.v5i5.1993) | journal_article | 2026-11-01 | bibliographic_checked |
+| KB-2026-0509 — [次期学習指導要領等に向けた審議まとめ（案）](https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/101/siryo/mext_00057.html) | consultation | 2026-09-25 | bibliographic_checked |
+| KB-2026-0510 — [AI時代國小創新課程設計與教學實踐：四份國際文件的評析與啟示](https://doi.org/10.6249/SE.202609_77(3).0018) | journal_article | 2026-09 | bibliographic_checked |
+| KB-2026-0511 — [AI 素養結合 SEL 融入小學寫作教學方案之探究](https://doi.org/10.6249/SE.202609_77(3).0019) | journal_article | 2026-09 | bibliographic_checked |
+| KB-2026-0512 — [以生成式人工智慧研發國語文寫作教學教材—PROMPT 模式運用](https://doi.org/10.6249/SE.202609_77(3).0024) | journal_article | 2026-09 | bibliographic_checked |
+| KB-2026-0513 — [人工智慧融入資源班教學：個別化學習支持的新契機](https://ater.org.tw/wordpress/wp-content/uploads/2026/10/free_13.pdf) | journal_article | 2026-10-01 | bibliographic_checked |
+| KB-2026-0514 — [生成式人工智慧進入幼兒園：教師專業角色與素養](https://ater.org.tw/wordpress/wp-content/uploads/2026/10/free_14.pdf) | journal_article | 2026-10-01 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

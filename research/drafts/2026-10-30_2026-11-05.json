@@ -383,6 +383,40 @@
       "doi": "10.1002/jcal.70362",
       "screening_note": "Verified 2026-11-01 for daily brief 2026-11-01.",
       "verification_completed_on": "2026-11-01"
+    },
+    {
+      "candidate_id": "W2026-10-30-A12",
+      "category": "research",
+      "source_url": "https://doi.org/10.58421/gehu.v5i5.1993",
+      "source_title": "Tangible AI in the Elementary Classroom: Effects on AI Literacy, Computational Thinking, and Learner Dispositions",
+      "source_organization": "Journal of General Education and Humanities",
+      "source_publication_date": "2026-11-01",
+      "source_locator": "出版社文章頁（journal-gehu.com，2026-11-02 讀取 200）：Published 2026-11-01，citation_date 2026/11/01，Crossref published-online 同日；摘要歸屬：Abstract 第 2、3、4 句與末句",
+      "discovered_on": "2026-11-02",
+      "discovery_batch_id": "2026-11-02-daily-1",
+      "first_disclosed_on": "2026-11-01",
+      "source_updates": [],
+      "original_excerpt": "This study examined changes in computational thinking (CT), AI concept mastery, learning motivation, and programming self-efficacy following a tangible AI intervention, and explored the teacher's implementation experience. … Guided by a framework integrating the AI Literacy Framework and the SEAME Model, a four-week intervention (4 × 60 minutes) was implemented with 36 fifth-grade students and one teacher in a public elementary school, using a single-group pretest–posttest design within a mixed-methods approach. … Quantitative data were analyzed using repeated-measures ANCOVA, with prior computing experience as a covariate; qualitative data from semi-structured teacher interviews (during and after the intervention) and observations of all four sessions were analyzed thematically. … Tangible AI may offer a promising bridge to early AI literacy; however, without a control group, changes cannot be causally attributed to the intervention, and these single-school findings are preliminary.",
+      "source_checked": true,
+      "claim_text": "來源機構：Journal of General Education and Humanities；資料標題：Tangible AI in the Elementary Classroom: Effects on AI Literacy, Computational Thinking, and Learner Dispositions；來源刊登日：2026-11-01。作者摘要報告：研究檢視實體 AI（tangible AI）介入後，學生運算思維、AI 概念掌握、學習動機與程式自我效能的變化，並探討教師的實施經驗；以整合 AI 素養框架與 SEAME 模型的架構設計四週（4 × 60 分鐘）介入，對象為一所公立小學五年級學生 36 人與教師 1 人，採混合方法中的單組前後測設計；作者寫明沒有對照組，變化無法歸於介入，單校結果屬初步。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "期刊論文（Journal of General Education and Humanities，不在監測清單，審查程序未獨立核實；管理者 2026-11-02 同意以單篇例外發布）；一所公立小學五年級 36 人與教師 1 人、四週的單組前後測，無對照組，作者寫明變化無法歸於介入、單校結果屬初步。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-02 子代理讀 Crossref 紀錄列觀察；管理者 2026-11-02 決定以單篇例外發布後，本 session 讀出版社文章頁，擇摘要第 2、3、4 句與末句撰寫中文摘要與中文譯名，不寫成效；第二輪 2026-11-02 由隔離子代理逐項對照英文原句（數字、框架、設計、變項、限制語、中文篇名），判定通過，依建議補「整合」兩框架的架構，篇名 Effects 改以中性的「變化」譯出，修正後一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS"
+      ],
+      "ai_lit_note": "國小五年級學生以實體 AI 學習 AI 概念與機器學習如何從資料學習，屬學生 AI 素養（A），對應 S-BAS「理解AI運作原理與限制」",
+      "audience": "k12",
+      "doi": "10.58421/gehu.v5i5.1993",
+      "screening_note": "Verified 2026-11-02 for daily brief 2026-11-02.",
+      "verification_completed_on": "2026-11-02"
     }
   ],
   "search_runs": [
@@ -479,6 +513,22 @@
         {
           "group": "research-doi",
           "query": "2026-11-01 morning screen: Crossref created 2026-10-31..2026-11-01 and watchlist-ISSN sets flagged J06 10.1002/jcal.70362 (Wiley 403, abstract without school level); manager provided the publisher PDF 2026-11-01",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-02-daily-1",
+      "searched_on": "2026-11-02",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "2026-11-02 morning screen listed 10.58421/gehu.v5i5.1993 as an observation (venue not on the watchlist); manager decision 2026-11-02 (relayed by the literature session) to publish as a single-item exception; publisher page re-read (HTTP 200)",
           "status": "ok"
         }
       ],
