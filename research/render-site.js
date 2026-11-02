@@ -187,6 +187,8 @@ function periodRange(kind,period){
 }
 /* Everything outside <main> is fixed per channel; only the period varies. Weekly <main> holds claim paragraphs
    only; monthly <main> adds the fixed section text below, because every other substantive node must bind to a claim. */
+/* Period-keyed note: the 2026-10 transition issue starts 2026-09-30, but 9/29–10/8 items appeared in the launch special issue (manager 2026-11-02). Keep permanently for the published issue. */
+const MONTHLY_LISTING_NOTE={"2026-10":'<p>2026/09/29—10/08 首次公開的項目刊於<a href="../../weekly/2026-09-29_10-08/">創刊特刊</a>（舊版，未經新查核流程），未列入本一覽。</p>'};
 function renderPeriodEdition(kind,e){
  const r=periodRange(kind,e.period);if(!r)throw new Error("invalid "+kind+" period: "+e.period);
  const isWeekly=kind==="weekly",label=isWeekly?"週報":"月報";
@@ -265,7 +267,7 @@ const WEEKLY_OPTIONAL=new Set(["overview","late","background","tw_note","tw_comp
 const WEEKLY_EMPTY="本期無合格項目。",WEEKLY_FEATURED_MAX=5,WEEKLY_OVERVIEW_MAX=3,WEEKLY_BACKGROUND_MAX=3;
 const WEEKLY_COLUMNS=["編號","類型","首次公開","標籤","內容"];
 const WEEKLY_FACETS=["樣本","資料","設計","作者所述發現","限制","內容","說明"];
-const SOURCE_TYPES={peer_reviewed_article:"同儕審查論文",preprint:"預印本",binding_policy:"正式政策",official_guidance:"官方指引",draft:"草案",official_commentary:"官方新聞",training_event:"活動",speech:"演講"};
+const SOURCE_TYPES={peer_reviewed_article:"同儕審查論文",preprint:"預印本",journal_article:"期刊論文（審查制度未確認）",journal_commentary:"期刊評論",binding_policy:"正式政策",official_guidance:"官方指引",draft:"草案",official_commentary:"官方新聞",training_event:"活動",speech:"演講"};
 const weeklyRevisionText=d=>"本期於 "+d+' 改版，項目編號可能已調整；舊說法、新說法與原因見<a href="../../corrections/">更正與改版紀錄</a>。';
 const weeklySectioned=claims=>claims.some(c=>c&&c.weekly_section!==undefined);
 /* Items a reader counts: featured and briefs only (not overview sentences or background documents). */
@@ -565,7 +567,7 @@ function monthlyMainSectioned(e){
  const nav=monthlyNav(e.period,(e.context&&e.context.months)||[]),r=periodRange("monthly",e.period);
  return tocList+'<section id="sec-intl" data-region="intl"><h2>國際</h2>'+intl+"</section><hr>"+
   '<section id="sec-tw" data-region="tw"><h2>臺灣</h2><p>'+MONTHLY_TW_INTRO+"</p>"+twParts+"</section>"+
-  '<section id="sec-summary"><h2>本月整理</h2>'+sec("stats","本月概況","依本期登記的每日短訊、週報與本月報計算；依本刊監測來源，各國檢查頻率不同。","<p>"+monthlySummary(e,claims,listing,w)+"</p>")+sec("listing","本月週報與每日短訊一覽","本期首次公開、已刊於週報或每日短訊的項目，依期別列出；內容請見各期。",listingBody)+"</section>"+
+  '<section id="sec-summary"><h2>本月整理</h2>'+sec("stats","本月概況","依本期登記的每日短訊、週報與本月報計算；依本刊監測來源，各國檢查頻率不同。","<p>"+monthlySummary(e,claims,listing,w)+"</p>")+sec("listing","本月週報與每日短訊一覽","本期首次公開、已刊於週報或每日短訊的項目，依期別列出；內容請見各期。",(MONTHLY_LISTING_NOTE[e.period]||"")+listingBody)+"</section>"+
   nav+"<p>引用本期：K-12 AI 素養國際動態，月報 "+r.year+" 年 "+r.month+" 月。"+SITE_URL+"monthly/"+esc(e.period)+"/（引用時請註明查閱日期）</p>";
 }
 const renderWeeklyEdition=e=>renderPeriodEdition("weekly",e),renderMonthlyEdition=e=>renderPeriodEdition("monthly",e);

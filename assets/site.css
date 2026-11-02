@@ -170,6 +170,8 @@ article section>table th{text-align:left;font-size:14px;color:var(--muted);font-
 article section>table td{padding:12px 10px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.7}
 article section>table td:first-child:not([data-claim-id]){width:2.5em;text-align:center;color:var(--navy);font-size:18px;white-space:nowrap}
 article section>table td:nth-child(2),article section>table td:nth-child(3){white-space:nowrap;font-size:14px;color:var(--muted)}
+article section>table td[data-col="date"]{white-space:normal}
+li[id^="item-"] a{white-space:nowrap}
 article section>table td:nth-child(4){width:9em;font-size:14px;color:var(--navy)}
 article section>table td:nth-child(4) span{white-space:nowrap}
 article section>table td[data-claim-id]{font-size:16px}
