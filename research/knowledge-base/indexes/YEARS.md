@@ -1769,6 +1769,7 @@
 | KB-2026-0505 — [Artificial intelligence and empathetic communication to enhance learning engagement, motivation, and effectiveness](https://doi.org/10.1007/s11423-026-10720-0) | journal_article | 2026-10-28 | bibliographic_checked |
 | KB-2026-0506 — [Multimodal Feedback in EFL Writing: Revision Patterns under Synthesized Images and Automated Evaluation](https://doi.org/10.1007/s10758-026-10051-2) | journal_article | 2026-10-29 | bibliographic_checked |
 | KB-2026-0507 — [Teachers’ perceptions of students’ generative AI use, professional judgment, and pedagogical adaptation: a mixed-methods study](https://doi.org/10.1080/10494820.2026.2754919) | journal_article | 2026-10-30 | bibliographic_checked |
+| KB-2026-0508 — [Tangible AI in the Elementary Classroom: Effects on AI Literacy, Computational Thinking, and Learner Dispositions](https://doi.org/10.58421/gehu.v5i5.1993) | journal_article | 2026-11-01 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
