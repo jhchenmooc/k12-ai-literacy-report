@@ -129,6 +129,16 @@
     {
       "path": "weekly/2026-10-23_10-29/index.html",
       "claims_file": "publication/claims/weekly-2026-10-23_10-29.json"
+    },
+    {
+      "path": "monthly/2026-10/index.html",
+      "claims_file": "publication/claims/monthly-2026-10.json",
+      "indexed_weeklies": [
+        "2026-10-09_10-15",
+        "2026-10-16_10-22",
+        "2026-10-23_10-29"
+      ],
+      "indexed_through": "2026-11-02"
     }
   ]
 }

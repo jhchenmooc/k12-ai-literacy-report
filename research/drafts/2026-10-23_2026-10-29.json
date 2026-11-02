@@ -401,17 +401,17 @@
       "first_disclosed_on": null,
       "source_updates": [],
       "original_excerpt": "",
-      "source_checked": false,
+      "source_checked": true,
       "claim_text": "",
       "claim_class": "descriptive",
       "risk_tier": "medium",
       "scope_limitation": "版本：正式版（Computers & Education）；對象：K-12；臺灣 122 名七年級生在鷹架式生成式 AI 下的認識能動性（雙語探究單元）；首發依據：Elsevier 頁 403，Crossref 無 published-online；本刊追蹤學者 T14 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
-      "translation_reviewed": false,
+      "translation_reviewed": true,
       "conflict_unresolved": null,
-      "decision": "hold",
-      "ai_crosscheck_status": "not_started",
-      "ai_crosscheck_passes": 0,
-      "ai_crosscheck_record": "",
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "月報 2026-10 選用為 M2026-10-S5（管理者 2026-11-01、11-02「照建議」）。第一輪 2026-11-01 子代理讀Elsevier 出版者 PDF（管理者提供）撰稿並核對首發日 2026-10-15；第二輪 2026-11-01 由隔離子代理重讀原文逐項對照。同一模型，非獨立審閱。",
       "ai_lit_class": "B",
       "ai_lit_dims": [
         "S-LRN"
@@ -419,7 +419,7 @@
       "ai_lit_note": "臺灣 122 名七年級生在鷹架式生成式 AI 下的認識能動性（雙語探究單元）",
       "audience": "k12",
       "doi": "10.1016/j.compedu.2026.105769",
-      "screening_note": "2026-10-27 依管理者提供的出版者全文核對首發日（私人 repo from-literature-session/scholar-monthly-1026/；學段 lower_secondary）；維持 hold，待週報或月報選用時再改 publish 並升知識庫紀錄（管理者 2026-10-27 甲）。"
+      "screening_note": "2026-10-27 依管理者提供的出版者全文核對首發日（私人 repo from-literature-session/scholar-monthly-1026/；學段 lower_secondary）；維持 hold，待週報或月報選用時再改 publish 並升知識庫紀錄（管理者 2026-10-27 甲）。 2026-11-02 依月報 M2026-10-S5 的原文核對改 publish，知識庫紀錄升 bibliographic_checked。"
     },
     {
       "candidate_id": "W2026-10-23-A13",
@@ -502,17 +502,17 @@
       "first_disclosed_on": null,
       "source_updates": [],
       "original_excerpt": "",
-      "source_checked": false,
+      "source_checked": true,
       "claim_text": "",
       "claim_class": "descriptive",
       "risk_tier": "medium",
       "scope_limitation": "版本：正式版（Journal of Applied Developmental Psychology）；對象：K-12；AI 個別化對話練習支持一年級生提問（僅題名，無摘要）；首發依據：Elsevier 頁 403；Crossref 只有 2026-11 卷期；本刊追蹤學者 V18 依作者檢索發現；同一模型判讀，非獨立審閱；不代表研究結論已核",
-      "translation_reviewed": false,
+      "translation_reviewed": true,
       "conflict_unresolved": null,
-      "decision": "hold",
-      "ai_crosscheck_status": "not_started",
-      "ai_crosscheck_passes": 0,
-      "ai_crosscheck_record": "",
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "月報 2026-10 選用為 M2026-10-S6（管理者 2026-11-01、11-02「照建議」）。第一輪 2026-11-01 子代理讀Elsevier 出版者 PDF（管理者提供）撰稿並核對首發日 2026-10-15；第二輪 2026-11-01 由隔離子代理重讀原文逐項對照。同一模型，非獨立審閱。",
       "ai_lit_class": "B",
       "ai_lit_dims": [
         "S-LRN"
@@ -520,7 +520,7 @@
       "ai_lit_note": "AI 個別化對話練習支持一年級生提問（僅題名，無摘要）",
       "audience": "k12",
       "doi": "10.1016/j.appdev.2026.102014",
-      "screening_note": "2026-10-27 依管理者提供的出版者全文核對首發日（私人 repo from-literature-session/scholar-monthly-1026/；學段 primary）；維持 hold，待週報或月報選用時再改 publish 並升知識庫紀錄（管理者 2026-10-27 甲）。"
+      "screening_note": "2026-10-27 依管理者提供的出版者全文核對首發日（私人 repo from-literature-session/scholar-monthly-1026/；學段 primary）；維持 hold，待週報或月報選用時再改 publish 並升知識庫紀錄（管理者 2026-10-27 甲）。 2026-11-02 依月報 M2026-10-S6 的原文核對改 publish，知識庫紀錄升 bibliographic_checked。"
     },
     {
       "candidate_id": "W2026-10-23-A16",

@@ -1,0 +1,13 @@
+Education International, Worlds of Education | 2026-09-30 | Are AI Frameworks complicit in turning schools into AI testing grounds and sites of extraction? | https://www.ei-ie.org/en/item/33089 | Commentary page read 2026-10-20 and re-read 2026-11-01 by default HTTPS request (HTTP 200); page prints "published 30 September 2026" and "updated 6 October 2026"; the copy read is the updated version and no earlier version was seen. © Education International / the authors; short excerpts only.
+Page date and byline excerpt (page header; line breaks joined):
+published 30 September 2026 updated 6 October 2026 written by: Susan L. Robertson Michele Martini
+Basis excerpt (body):
+in our recently published research in the European Education Research Journal , we examine the AI literacy frameworks being promoted by UNESCO and the OECD/European Commission.
+Subsection excerpt:
+Regulation without a regulator
+Commentary excerpt (subsection Regulation without a regulator, paragraph 2, first two sentences):
+Schools have responsibilities towards children and young people. Yet they are being encouraged to integrate rapidly developing frontier technologies pushed by tech oligarchs whose data practices, environmental costs, biases, commercial interests and wider social consequences remain deeply contested.
+Disclaimer excerpt (end of article):
+The opinions expressed in this blog are those of the author and do not necessarily reflect any official policies or positions of Education International.
+Original excerpt (quoted in full; the claim's original_excerpt):
+Schools have responsibilities towards children and young people. Yet they are being encouraged to integrate rapidly developing frontier technologies pushed by tech oligarchs whose data practices, environmental costs, biases, commercial interests and wider social consequences remain deeply contested.

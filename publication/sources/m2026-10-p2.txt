@@ -1,0 +1,37 @@
+한국교육과정평가원 (KICE) | 2026-10-01 | AI 대전환 시대 국가교육과정 방향 설계 | https://www.kice.re.kr/resrchBoard/view.do?seq=1483&s=kice&m=030109 | Read: KICE research-output page fetched 2026-11-01 UTC (성과물 ID 연구자료 ORM 2026-72; 총서명 연구자료 ORM 2026-72[2026 KICE 정책포럼]; 발간년도 2026; 페이지수 130; no posting date shown) and its attachment ORM2026072.pdf via the page's download link https://www.kice.re.kr/filedown8.do?fileNM=ORM2026072.pdf&filePath=/resrchBoard/2026/10/1790821401298_27981756323309961.pdf, fetched 2026-11-01 UTC, SHA-256 ab9bb638a2275c7f8c4dbd7419e8a3f4760e4894b9dc73c00af0f19e7650c8df, 136 PDF pages (PDF CreationDate 2026-10-01 09:43 KST, ModDate 2026-10-01 11:21 KST). The PDF is image-only (no text layer; no OCR tool available), so the excerpts below were transcribed from rendered page images and read twice against the images; they could not be checked by program against extracted text; second-round check 2026-11-01: re-downloaded file (same SHA-256) and all excerpts re-read word by word against the page images of PDF pp. 2, 3, 23, 25, 26, 28, 35, all matching. Page numbers: printed page / PDF page (printed = PDF − 6 for the body). Date basis: forum held 2026-09-30 15:00–17:00 (schedule, PDF p. 3) and the colophon prints 발행일 2026년 9월 30일 (PDF p. 2), but the page shows no posting date; the attachment path timestamp 1790821401298 (Unix ms) converts to 2026-10-01 11:23:21 KST (02:23:21 UTC), consistent with the PDF dates, so first public availability is taken as 2026-10-01. Only presentation 2 (초·중학교 AI 소양 교육 기준 개발 및 적용 방안 연구(Ⅰ), printed pp. 17–36) is used. | License: KOGL (공공누리) mark with attribution, non-commercial and no-derivatives conditions (type 4) on PDF p. 2, and the colophon says "본 자료 내용의 무단 복제를 금함"; this snapshot keeps short excerpts only
+
+Colophon excerpt (PDF p. 2):
+발행일 2026년 9월 30일 … 본 연구에서 제시된 정책 대안이나 의견 등은 한국교육과정평가원의 공식적인 의견이 아닌 본 연구진의 견해임을 밝혀 둡니다.
+
+Schedule excerpt (PDF p. 3, 일정표):
+일시 / 2026.9.30.(수) 15:00~17:00 … 초·중학교 AI 소양 교육 기준 개발 및 적용 방안 연구(Ⅰ)
+
+Source note excerpt (printed p. 17 / PDF p. 23, footnote 2):
+본 발표문에 제시된 내용은 한국교육과정평가원의 기본과제로 수행 중인 “초·중학교 AI 소양 교육 기준 개발 및 적용 방안 연구(Ⅰ)” 4장의 내용을 발췌하여 작성한 것임(2026.12. 최종보고서 발간 예정).
+
+Aim excerpt (printed p. 19 / PDF p. 25):
+본 연구에서는 초·중학교 학생 모두를 위한 기본 교육으로서 인간 중심의 AI 소양 교육을 지향하며, AI 소양 교육 기준(안)을 개발하고자 하였다.
+
+Structure excerpt (printed p. 19 / PDF p. 25, Ⅰ.1 초·중학교 AI 소양 교육 기준의 최종안 확정):
+초·중학교 AI 소양 교육 기준은 AI 소양 개념, AI 소양 교육 목표, AI 소양 교육 내용 체계, AI 소양 수행 기대로 구성되어 있다.
+
+Definition excerpt (printed p. 19 / PDF p. 25, 표 Ⅰ-1 AI 소양 개념 최종안):
+AI 소양이란 AI의 개념과 원리에 대한 이해를 바탕으로, AI가 개인과 사회에 미치는 영향을 인식하고, AI를 활용하여 문제를 해결할 수 있는 능력이다.
+
+Goals excerpt (printed p. 20 / PDF p. 26, 표 Ⅰ-2 AI 소양 교육 목표 최종안):
+초등학교 … AI의 기본 개념과 활용 방식을 이해하고, AI를 목적에 맞게 다룰 수 있다. … 중학교 … AI의 작동 원리와 데이터 기반 학습 과정을 이해하고, AI의 특성과 한계를 고려하여 목적에 맞게 선택하며 활용할 수 있다.
+
+Domains excerpt (printed p. 20 / PDF p. 26, 2) AI 소양 교육 내용 체계 구성):
+AI 소양 교육 내용 체계는 ‘AI 이해’, ‘AI 협업’, ‘AI 공존’, ‘AI 융합’ 영역으로 구성하고, 4대 영역별로 하위 영역을 제시하였다.
+
+Stages excerpt (printed p. 22 / PDF p. 28, 표 Ⅰ-4 AI 소양 교육 내용 체계 최종안 header):
+1단계 (초등 1-2학년) … 2단계 (초등 3-4학년) … 3단계 (초등 5-6학년) … 4단계 (중학교)
+
+Use excerpt (printed p. 29 / PDF p. 35, Ⅱ. 초·중학교 AI 소양 교육 기준의 활용 방안 and Ⅱ.1 학교 및 교실 수준에서의 활용):
+본 연구에서 개발한 ‘초·중학교 AI 소양 교육 기준’은 모두를 위한 AI 소양 교육의 방향과 구체적인 내용을 제시하여 2022 개정 교육과정이 미래를 대비하는 교육과정의 역할을 할 수 있도록 지원하고 보완하고자 하였다. … 학교 수준에서는 학교 교육과정을 운영하며 학교의 자율적인 교육과정 편성·운영과 교사의 AI 통합·융합 수업 설계를 전반적으로 지원하는 방향으로 활용할 수 있고, 교실 수준에서는 초등학교의 실과 및 중학교의 도덕과에서의 활용 예시와 같이 교실 수업 상황에 적용하여 활용할 수 있다.
+
+Figure excerpt (printed p. 29 / PDF p. 35, 그림 Ⅱ-1 초·중학교 AI 소양 교육 기준의 활용 방안):
+학교 교육과정에서의 활용 … 범교과 학습 주제와 연계 … 학교자율시간 활용 … 교실 수준에서의 활용 … 국가 수준에서의 활용 … 지역 수준에서의 활용
+
+Original excerpt (printed pp. 19–20 / PDF pp. 25–26; joined by " … "):
+AI 소양이란 AI의 개념과 원리에 대한 이해를 바탕으로, AI가 개인과 사회에 미치는 영향을 인식하고, AI를 활용하여 문제를 해결할 수 있는 능력이다. … AI 소양 교육 내용 체계는 ‘AI 이해’, ‘AI 협업’, ‘AI 공존’, ‘AI 융합’ 영역으로 구성하고, 4대 영역별로 하위 영역을 제시하였다.

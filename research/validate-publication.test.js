@@ -877,6 +877,17 @@ test('sectioned monthly control: renderer page passes; contents, listing and Tai
  for(const s of ['<section id="sec-toc"><h2>本期目錄</h2>','<a href="#sec-policy">政策與官方文件（1）</a>','<section id="sec-tw" data-region="tw"><h2>臺灣</h2>','<h4>週報 2026/10/09—10/15（1 則）</h4>','id="item-l1"','<td data-col="audience"><span>師培</span></td>','非中小學研究 1／3 則','<a href="#sec-tw_research">臺灣研究（1）</a>','引用本期：K-12 AI 素養國際動態，月報 2026 年 10 月。','上一期：<a href="../2026-09/">2026 年 9 月（舊版，未經新查核流程）</a>'])
   assert.ok(html.includes(s),s);
 });
+test('sectioned monthly: Taiwan research may be a journal article without stated review or a journal commentary; other research may not',t=>{
+ const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
+ for(const type of ['journal_article','journal_commentary']){
+  const ok=monthlySetup(d,monthlyBase().map(x=>x.claim_id==='TR1'?{...x,source_document_type:type}:x));
+  assert.deepEqual(ok.result.errors,[],type);
+  assert.ok(ok.html.includes('刊於<a href="../../weekly/2026-09-29_10-08/">創刊特刊</a>（舊版，未經新查核流程），未列入本一覽。'),'2026-10 listing note');
+  assert.ok(ok.html.includes(type==='journal_article'?'期刊論文（審查制度未確認）':'期刊評論'),type);
+  const bad=monthlySetup(d,monthlyBase().map(x=>x.claim_id==='R1'?{...x,source_document_type:type}:x));
+  assert.ok(bad.result.errors.some(e=>e.includes('R1: missing or invalid research document type')),type);
+ }
+});
 test('sectioned monthly: tampered contents, listing or summary text is refused',t=>{
  const d=setup();t.after(()=>fs.rmSync(d,{recursive:true,force:true}));
  for(const f of [h=>h.replace('政策與官方文件（1）','政策與官方文件（9）'),h=>h.replace('｜<a href="../../weekly/2026-10-09_10-15/">週報 2026/10/09—10/15</a>','｜<a href="../../weekly/2026-10-09_10-15/#item-1">週報 2026/10/09—10/15</a>'),h=>h.replace('非中小學研究 1／3 則','非中小學研究 0／3 則'),h=>h.replace(/<li id="item-l1">.*?<\/li>/,''),h=>h.replace('（舊版，未經新查核流程）',''),h=>h.replace('<td data-col="audience"><span>師培</span></td>','<td data-col="audience"><span>中小學</span></td>')]){

@@ -1,0 +1,50 @@
+Frontiers in Education (Frontiers) | 2026-10-02 | Teachers’ use of generative artificial intelligence in K–12 education: a systematic review | https://doi.org/10.3389/feduc.2026.1935733 | Read: open-access publisher article page https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1935733/full (HTTP 200) and publisher PDF https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1935733/pdf (HTTP 200; 22 pages; SHA-256 0e3cf063f4752f810597ebbf8b07f10fea0726dfac2dc863e4c0790efe0094f9; corrected version), fetched with curl and read 2026-11-01 UTC; page refs below are PDF pages; first-disclosure basis: the article page and PDF p. 1 print "Published 02 October 2026" and "Corrected 12 October 2026" (the page meta citation_online_date 2026/08/18 equals the acceptance date and is not used); licence CC BY (PDF p. 1)
+Text normalisation: words split by line-break hyphenation are rejoined; lines are joined; small caps in the PDF side column kept as printed. No other changes.
+
+Original excerpt (PDF p. 1 Abstract, Methods sentence 1; Conclusions sentence 1; PDF section 4.1.2 sentence on quality appraisal; joined by " … "):
+Following PRISMA 2020 guidelines, studies were screened and selected based upon the predefined inclusion and exclusion criteria, resulting in 79 empirical studies included in the final analysis. … Overall, the findings reveal that GenAI is primarily positioned as a collaborative tool that supports teachers’ professional practice, particularly in instructional design and preparation, rather than replacing instructional roles. … Given the emerging nature of the field and the limited number of available empirical studies, no formal methodological quality appraisal tool or predefined quality threshold was applied.
+
+Article history excerpt (PDF p. 1, side column):
+RECEIVED 12 July 2026 … REVISED 12 August 2026 … ACCEPTED 18 August 2026 … PUBLISHED 02 October 2026 … CORRECTED 12 October 2026
+
+Article page dates excerpt (article page, summary dates under the DOI):
+Received 12 July 2026 … Accepted 18 August 2026 … Published 02 October 2026 … Corrected 12 October 2026
+
+Correction note excerpt (article page, Correction Note):
+This article has been corrected with minor changes. These changes do not impact the scientific content of the article.
+
+Licence excerpt (PDF p. 1, side column):
+This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY).
+
+Population excerpt (section 4.1.1 Phase 1, and 4.1.2.1, 4.1.2.4):
+The target population consists exclusively of educators within the Pre-K12 and K-12 continuum. … Only peer-reviewed empirical studies published in English are considered for inclusion. … Studies involving higher education, adult education, clinical settings or geriatric care, or professional vocational training outside the K-12 system are excluded.
+
+Search excerpt (sections 4.1.3–4.1.4):
+the search is conducted across two primary academic databases: The Education Resources Information Center (ERIC) and Web of Science (WoS) Core Collection. … Google Scholar is utilized as a supplementary research tool. … the temporal scope of the search focuses on articles published since 2023
+
+Screening excerpt (section 4.1.5):
+Initially, a total of 538 records were identified through database searches (172 from ERIC and 366 from Web of Science). … During this initial screening, 12 articles from Web of Science were excluded because their full texts were inaccessible … exactly 79 articles met all necessary criteria and were ultimately included in the systematic review for final analysis
+
+Design excerpt (sections 4, 4.1.2 and 4.1.6):
+In addition, the review process was structured based on the systematic review approach proposed by Kitchenham and Charters, 2007. … no formal methodological quality appraisal tool or predefined quality threshold was applied. Instead, two researchers independently assessed all studies against the predefined inclusion and exclusion criteria. … Microsoft Excel was utilized for both data extraction and coding procedures.
+
+Synthesis excerpt (section 4):
+In the reporting phase, the findings of the selected studies were synthesized and presented through thematic and descriptive analysis.
+
+Years excerpt (section 6, RQ1 discussion):
+While only 2 studies were identified in 2023, this number increased to 11 in 2024 and reached 58 in 2025. In addition, the identification of 8 studies in the first quarter of 2026 (as of March) suggests that this upward trend is continuing.
+
+Results excerpt (PDF p. 1, Abstract, Results):
+The findings indicate a sharp increase in research output, particularly in recent years, with Asia as the most productive region. Qualitative and mixed-methods designs dominated the literature, while language education and STEM were the most frequently represented domains. Large language models emerged as the dominant GenAI type. Instructional design and co-planning represented some of the most prominent functional roles, highlighting a strong emphasis on teachers’ preparatory practices. The focal point of studies was on cognitive, affective, and pedagogical constructs, with technology acceptance frameworks such as Technology Acceptance Model (TAM) and Unified Theory of Acceptance and Use of Technology (UTAUT) being most frequently employed.
+
+Tools excerpt (section 5.3):
+The results demonstrate that ChatGPT was the most frequently utilized AI tool (n = 70)
+
+Ethics excerpt (section 5.7):
+Ethical and critical perspectives constituted the least frequently reported category (n = 3), including bias, academic integrity, and potential risks.
+
+Self-report excerpt (section 6, RQ2 discussion):
+The frequent use of surveys and interviews indicates that the field largely relies on self-reported data to examine teachers’ attitudes, experiences, and readiness
+
+Conclusion excerpt (PDF p. 1, Abstract, Conclusions):
+Overall, the findings reveal that GenAI is primarily positioned as a collaborative tool that supports teachers’ professional practice, particularly in instructional design and preparation, rather than replacing instructional roles.

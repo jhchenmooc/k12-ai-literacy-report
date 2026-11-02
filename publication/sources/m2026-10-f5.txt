@@ -1,0 +1,13 @@
+UNESCO | 2026-09-09 | Education Ministers call for education to remain a common good in the age of AI at UNESCO’s Digital Learning Week | https://www.unesco.org/en/articles/education-ministers-call-education-remain-common-good-age-ai-unescos-digital-learning-week | News page read 2026-10-20 and re-read 2026-11-01 by default HTTPS request (HTTP 200); page prints "9 September 2026" and "Last update: 10 September 2026" (datePublished 2026-09-09T10:00:00+0200). The Ministerial Statement was presented on 8 September; the excerpt is UNESCO's news-release paraphrase of the statement, not the statement text. © UNESCO; short excerpts only.
+Page date excerpt (page header; line breaks joined):
+9 September 2026 Last update: 10 September 2026
+Lead excerpt (paragraph 1):
+Over 25 Ministers and designated representatives responsible for education from around the world today adopted a joint statement
+Context excerpt (paragraph 2):
+The Ministerial Statement, presented at UNESCO Headquarters in Paris on 8 September during Digital Learning Week 2026
+Mixed excerpt (paragraph 4):
+It notes that while AI holds the potential to extend access and support learners, these benefits are conditional on deliberative governance, human support and adequate preparation.
+News excerpt (paragraph 4, last sentence):
+Crucially, the statement affirms that learning is not served when AI substitutes for human relationships and human judgement.
+Original excerpt (quoted in full; the claim's original_excerpt):
+Crucially, the statement affirms that learning is not served when AI substitutes for human relationships and human judgement.

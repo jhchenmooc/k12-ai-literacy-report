@@ -1,0 +1,34 @@
+Informatics in Education (Vilnius University) | 2026-09-30 | Understanding AI Mechanisms Supports Disciplinary Reasoning and Ethical Judgment in K–12 AI Literacy Education | https://doi.org/10.15388/infedu.2601.025 | Read: publisher PDF downloaded 2026-11-01 from the citation_pdf_url of the publisher article page https://infedu.vu.lt/journal/INFEDU/article/868/info (HTTP 200, TLS verified), 36 PDF pages = printed pp. 115–150, SHA-256 8c925c461226cd9aa71d8468c61a415dbd5335ede7e2cb15d3fae8ed2b92dcf3, text extracted with pypdf (python3 -I); page refs below are PDF page (printed page); first-online basis: publisher article page "Pub. online: 30 September 2026" and meta citation_publication_date 2026/09/30 (same as Crossref and OpenAlex; no earlier preprint found; the EdMedia 2026 paper cited in the article reports the same interview data and is not an earlier version of this article) | License: open access, CC BY (publisher article page). Text normalisation: words split by line-break hyphenation are rejoined and pypdf spacing artifacts removed; no other changes.
+
+Publisher page excerpt (article page https://infedu.vu.lt/journal/INFEDU/article/868/info, read 2026-11-01):
+Pub. online: 30 September 2026
+
+Publisher page licence excerpt (same page):
+Open access article under the CC BY license.
+
+Abstract excerpt (PDF p. 1 (p. 115)):
+Drawing on sociocultural and cultural-historical activity theory, we qualitatively analyzed group interviews with 40 K–12 students in grades 6 and 9. The results show that students fluently used AI concepts as mediating tools.
+
+Abstract excerpt (PDF p. 1 (p. 115)):
+students relied on scientific explanations and used AI concepts to explain classifier behavior, social media mechanisms, user engagement, and filter bubbles. These concepts and theoretical orientation to everyday data-driven systems extended to ethical reasoning and critical analysis of practices, structures, and problems in everyday life both at personal and societal levels.
+
+Methods excerpt (PDF p. 8 (p. 122), §4):
+The three-year (2023-2025) process of co-designing cumulative AI learning paths involved researchers from computer science and education, teachers and school principals from 12 primary and secondary schools, as well as over 200 students (4th and 7th graders at the beginning of the project).
+
+Participants and data collection excerpt (PDF p. 10 (p. 124), §4.2):
+This study collected data from reflective interviews organized in spring 2025 right after the third year interventions. They involved students from 8 different schools and consisted of 14 group interviews (7 conducted in secondary schools, 7 in primary schools), with a total of 40 participants.
+
+Data analysis excerpt (PDF p. 12 (p. 126), §4.3):
+To analyze how students used AI concepts in collaborative reflections, a theory-driven qualitative content analysis was conducted
+
+Implications excerpt (PDF p. 29 (p. 143), §8):
+Instead of demonstrating causal effects of particular pedagogical practices, these theoretical and pedagogical insights, illustrated through the empirical analysis, point to promising design principles for AI education.
+
+Limitations excerpt (PDF p. 30 (p. 144), §9):
+The interventions behind student reflections were conducted within a particular co-design process and in a specific educational setting in Finland
+
+Limitations excerpt (PDF p. 31 (p. 145), §9):
+In addition, the interview sample was relatively small and based on teacher-led intensity sampling and voluntary participation.
+
+Original excerpt (PDF p. 1 (p. 115) Abstract sentences 3–4; single passage, joined by " … "):
+Drawing on sociocultural and cultural-historical activity theory, we qualitatively analyzed group interviews with 40 K–12 students in grades 6 and 9. The results show that students fluently used AI concepts as mediating tools.

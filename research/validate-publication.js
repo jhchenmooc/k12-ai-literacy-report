@@ -515,7 +515,8 @@ function monthlyStructureSectioned(claims,period,ctx={}){
    if(typeof c.source_title!=="string"||!c.source_title.trim()||!String(c.claim_text).includes(c.source_title))errors.push(id+": monthly item text must contain its source_title (the link to the original)");
    if(!MONTHLY_ITEM_END.test(String(c.claim_text)))errors.push(id+": monthly item must end with the AI disclosure (未經真人逐則審稿；請參閱原文。）)");
    if(c.kind==="news_policy"&&!["binding_policy","official_guidance","draft","official_commentary","training_event","speech"].includes(c.source_document_type))errors.push(id+": missing or invalid policy document type");
-   if(c.kind==="research"&&!["peer_reviewed_article","preprint"].includes(c.source_document_type))errors.push(id+": missing or invalid research document type");
+   // Taiwan journals print no review policy or publish commentary; only the Taiwan research section may say so (manager 2026-11-02).
+   if(c.kind==="research"&&!(["peer_reviewed_article","preprint"].includes(c.source_document_type)||(s==="tw_research"&&["journal_article","journal_commentary"].includes(c.source_document_type))))errors.push(id+": missing or invalid research document type");
    if(c.doi!==undefined&&(typeof c.doi!=="string"||!/^10\.\d{4,9}\/\S+$/.test(normDoi(c.doi))))errors.push(id+": doi must be a DOI such as 10.1234/abc");
    if(!MONTHLY_AUDIENCE_KEYS.includes(c.audience))errors.push(id+": audience must be one of "+MONTHLY_AUDIENCE_KEYS.join(", "));
   }

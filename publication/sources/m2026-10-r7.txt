@@ -1,0 +1,31 @@
+BMC Psychology (Springer Nature) | 2026-10-09 | Latent profiles of AI teaching self-efficacy and their associations with occupational well-being among vocational education teachers in China: the moderating role of AI anxiety | https://doi.org/10.1186/s40359-026-05721-w | Read: publisher PDF provided by the manager (private repo from-parent-editor-session/uploads/816727ed-s40359-026-05721-w_reference.pdf), SHA-256 10a1e36d86b340961bf07b8962e25d0e1f9ddd26c154e1756080d7290111faee, 23 pp., marked "RESEARCH | Article in Press" (accepted manuscript shared early; PDF creation date 2026-10-09), full text extracted with pdftotext and checked with python3 -I on 2026-11-01 UTC; page numbers below are PDF pages (the PDF prints none); line breaks normalized. Date basis: Springer article page re-fetched 2026-11-01 UTC with a plain request shows "Published: 09 October 2026" (citation_online_date 2026/10/09) and still carries the early-sharing notice; PDF prints Received 18 June 2026 / Accepted 28 September 2026. Replaces the abstract-only snapshot m2026-10-a10-vocational.txt of draft M2026-10-A10. | License: CC BY-NC-ND 4.0 (PDF p. 19); this snapshot keeps excerpts only
+
+Version excerpt (PDF p. 1):
+This Article in Press is shared early to give you faster access to new research. It is citable and carries a permanent DOI. The final edited version will replace it automatically.
+
+Sample excerpt (PDF p. 1, Abstract):
+A regionally stratified online survey was conducted with 768 in-service teachers (378 from secondary vocational schools, 390 from higher vocational colleges) across eastern, central, and western mainland China.
+
+Procedure excerpt (PDF pp. 7–8, Participants and procedure):
+This study employed a cross-sectional, self-reported online questionnaire design … we adopted a regionally stratified sampling frame covering the eastern, central, and western regions, combined with convenience sampling of cooperating institutions within each region. … Data were collected from March to April 2026 through Wenjuanxing, a widely used Chinese online survey platform. The questionnaire link was distributed via institutional academic affairs offices or teacher development centers at 14 cooperating institutions (6 SVSs and 8 HVCs) across nine provinces representing the three regions … A total of 812 questionnaires were returned, of which 768 (94.6%) were retained after applying the predefined data-cleaning rules … The final sample (N = 768) included 378 SVS teachers (49.2%) and 390 HVC teachers (50.8%)
+
+Measures excerpt (PDF pp. 8–9, Measures):
+AI teaching self-efficacy was measured with the TAICS [8], a scale originally developed and validated with K-12 teachers. The TAICS comprises 24 items distributed across six dimensions (4 items each): AI Knowledge (AIK … AI Assessment (AIA), AI Ethics (AIE), Human-Centered Education (HCE), and Professional Engagement (PEN). … all 24 items were lightly contextualized to reference skill instruction, practical training, and industry-relevant content while preserving the original six-dimensional structure and response format … Teachers’ AI anxiety in the teaching context was assessed with a 12-item instrument adapted from the AI Anxiety Scale [17] … Teachers’ occupational well-being was operationalized via the 8-item Teacher Subjective Well-Being Questionnaire (TSWQ) [9]
+
+Profiles excerpt (PDF p. 1, Abstract):
+Four distinct profiles emerged: Foundational Stage (21.4%), Technically Skilled but Ethically Cautious (21.4%), Pedagogically Engaged but Technically Constrained (25.7%), and Holistic Competence (31.6%).
+
+Well-being excerpt (PDF p. 14, Profile differences in well-being):
+Mean TSWQ scores increased monotonically across the four profiles … Notably, the Pedagogically Engaged Type reported significantly higher well-being than the Technically Skilled Type
+
+Moderation excerpt (PDF p. 1, Abstract):
+AI anxiety moderated the profile-to-well-being association only for the Holistic Competence profile … and it accounted for a small share of variance overall … an association we interpret cautiously given the cross-sectional design.
+
+Predictors excerpt (PDF p. 13, Predictors of membership):
+Higher AI tool-use frequency was the strongest and most consistent predictor of membership in a more developed profile … and a greater number of AI-training sessions likewise predicted the three more developed profiles … HVC teachers and central/western-region teachers were less likely than SVS and easternregion teachers, respectively, to belong to some of the more developed profiles
+
+Limitations excerpt (PDF p. 18, Conclusion):
+First, on design and measurement, the study is cross-sectional and relies on self-report, so the associations among profiles, AI anxiety, and well-being are concurrent rather than causal, and common method variance—though mitigated by Harman’s test, varied response formats, and response-style screening—cannot be excluded … the headline Holistic-profile finding rests partly on a sparse, extrapolated high-anxiety region and cannot, in cross-sectional composite data, be fully separated from a ceiling or regression-to-the-mean dynamic … the average variance extracted for the TSWQ facets (≈ 0.37) fell below the 0.50 criterion, and the adapted AI-anxiety scale functioned as a unidimensional composite … Fourth, on scope, the sample—though regionally stratified—was drawn from cooperating institutions in a single country, and the model omitted structural JD-R constructs (e.g., workload, autonomy, organizational and institutional support for AI adoption)
+
+Original excerpt (PDF p. 1, Abstract; PDF p. 18, Conclusion; joined by " … "):
+A regionally stratified online survey was conducted with 768 in-service teachers (378 from secondary vocational schools, 390 from higher vocational colleges) across eastern, central, and western mainland China. … First, on design and measurement, the study is cross-sectional and relies on self-report, so the associations among profiles, AI anxiety, and well-being are concurrent rather than causal
