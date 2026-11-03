@@ -1,0 +1,15 @@
+Center on Reinventing Public Education (CRPE), Arizona State University | 2026-09-03 | Leading Through Uncertainty: State Approaches to AI in K–12 Education | https://crpe.org/leading-uncertainty-state-approaches-ai-k12/ | Publication page read 2026-10-20 and re-read 2026-11-01 by default HTTPS request (HTTP 200; body text unchanged, dateModified 2026-10-30 on the re-read). The page prints only "September 2026"; first-disclosure date 2026-09-03 from the CRPE publications list and the page metadata (datePublished 2026-09-03T01:00:39-07:00; article:published_time 2026-09-03T08:00:39+00:00). The linked report PDF (26 pages, SHA-256 f12a75f0a711fcffde55491447fd797e3586d58092d1a0b984dae70cf01da168) prints SEPTEMBER 2026 and repeats the Key Findings on p.3. © CRPE; short excerpts only.
+Page date excerpt (publication page, under the title; line breaks joined):
+AI in Education September 2026
+Metadata excerpt (publication page HTML, JSON-LD):
+"datePublished":"2026-09-03T01:00:39-07:00"
+Data basis excerpt (publication page, introduction):
+Together, these sources represent perspectives from 39 states and territories and 18 partner organizations
+Key Findings excerpt (publication page, Key Findings item 4, promising approaches):
+Promising state approaches begin with clear leadership, allow for flexibility, and invest in people.
+Key Findings excerpt (publication page, Key Findings item 5):
+Left unaddressed, fragmented state action risks widening equity gaps and leaving districts adrift—especially those serving high-need students.
+Key Findings excerpt (report PDF p.3, item 5; line breaks joined):
+Left unaddressed, fragmented state action risks widening equity gaps and leaving districts adrift—especially those serving high-need students.
+Original excerpt (quoted in full; the claim's original_excerpt):
+Left unaddressed, fragmented state action risks widening equity gaps and leaving districts adrift—especially those serving high-need students.

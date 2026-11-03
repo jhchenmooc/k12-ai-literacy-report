@@ -1,0 +1,17 @@
+Michael P. Sugot et al., Assumption College of Davao (Journal of Interdisciplinary Perspectives 4(11), 108–115) | 2026-10-14 | Artificial Intelligence Dependency as a Predictor of Perceived Reading Comprehension Barriers Among Senior High School Students in the Philippines | https://doi.org/10.69569/jip.2026.446 | DOI resolves to the journal article page, read 2026-11-01 by default HTTPS request (HTTP 200); page prints "Published 2026-10-14" (citation_date 2026/10/14). The article PDF linked from the page was read 2026-11-01 (HTTP 200, application/pdf, 8 pages, SHA-256 a6e1094872617ec5ce20890f3fb57f21a73ed5d295858dd4436d982b10dc2bb0); article history in the PDF: received August 25, 2026, accepted October 14, 2026. PDF excerpts have line breaks joined. Open access, CC BY-NC 4.0.
+Publication date excerpt (article page; line breaks joined):
+Published 2026-10-14
+Affiliation excerpt (article page, authors):
+Assumption College of Davao, Agdao, Davao City, Philippines
+Abstract excerpt (design, sentence 3):
+This study used a quantitative, non-experimental correlational-predictive design with 319 students.
+Abstract excerpt (author caveat):
+The finding should not be interpreted causally and does not indicate improved reading performance because no objective comprehension test was administered.
+Conclusion excerpt (PDF p.114, point three; line breaks joined):
+Third, AI dependency had a moderate, positive, and statistically significant relationship with perceived reading comprehension barriers. Thus, higher reported AI dependency was associated with higher reported barriers.
+Conclusion excerpt (PDF p.114, point four, author caveat):
+The result does not establish causality.
+License excerpt (article page):
+Articles published in the Journal of Interdisciplinary Perspectives are open access and are licensed under a Creative Commons Attribution- NonCommercial 4.0 International License (CC BY-NC 4.0).
+Original excerpt (quoted in full; the claim's original_excerpt):
+Thus, higher reported AI dependency was associated with higher reported barriers.

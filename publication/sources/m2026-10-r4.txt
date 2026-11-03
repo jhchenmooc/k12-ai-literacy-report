@@ -1,0 +1,41 @@
+Discover Education (Springer Nature) | 2026-10-06 | Perceptions of AI-assisted learning and learner development among Moroccan secondary school students | https://doi.org/10.1007/s44217-026-02109-1 | Read: open-access publisher article page https://link.springer.com/article/10.1007/s44217-026-02109-1 (HTTP 200 after Springer's cookie-check redirect) and publisher PDF https://link.springer.com/content/pdf/10.1007/s44217-026-02109-1.pdf (HTTP 200; 38 pages; SHA-256 96c7cb760f21679d01be35089ec98c281e8e7edd5ec28abe050cb3a73376294c), fetched with curl and read 2026-11-01 UTC; first-disclosure basis: the article page prints "Published: 06 October 2026" (page meta citation_online_date 2026/10/06; the PDF prints only Received and Accepted dates); licence CC BY-NC-ND 4.0 (excerpts below are verbatim, unadapted)
+Text normalisation: words split by line-break hyphenation are rejoined; lines are joined. No other changes. Excerpt policy (second-round check 2026-11-01): because of CC BY-NC-ND 4.0, excerpts are limited to short verbatim clauses that support the claim; nothing is adapted or translated.
+
+Original excerpt (Abstract, sentences 3 and 5; 5.5 Limitations and future research, sentence 2; clauses only, joined by " … "):
+quantitative data were collected via a structured questionnaire completed by 150 secondary school students … positive perceptions of AI-assisted learning across perceived learning outcomes, motivation, self-regulated learning, and digital literacy, with a significant positive association between perceived learning outcomes and motivation … a convenience sample drawn exclusively from secondary schools within the Casablanca-Settat region
+
+Article dates excerpt (article page, Cite this article / article info):
+Received: 12 June 2026 … Accepted: 27 August 2026 … Published: 06 October 2026
+
+Licence excerpt (article page and PDF p. 1, Rights and permissions):
+Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+
+Sample excerpt (PDF pp. 11–12, 3.2 Participants; Abstract):
+secondary school students enrolled in public and private institutions in the Casablanca-Settat region of Morocco … A convenience sampling approach was utilized, with the questionnaire distributed online … The quantitative sample comprised one hundred fifty (150) students … a qualitative sample consisting of twelve (12) students was purposefully selected based on their willingness to participate in online follow-up interviews … qualitative data were collected separately through online semi-structured interviews with 12 students
+
+Sample characteristics excerpt (PDF p. 14, 4.1; PDF p. 19, 4.4.2):
+The mean age was 16.59 years (SD = 1.062), ranging from 15 to 19 years … Common Core (n = 28), First Year Baccalaureate (n = 68), and Second Year Baccalaureate (n = 54)
+
+Instruments excerpt (PDF p. 12, 3.3 Instruments):
+a questionnaire consisting of twenty-nine (29) items … five-point Likert scale … Sections B and C examined students’ use of AI tools … perceived learning outcomes, motivation, self-regulated learning, digital literacy, and students’ perceived benefits and challenges associated with AI-assisted learning … a semi-structured online interview guide comprising ten open-ended questions
+
+Data collection excerpt (PDF p. 12, 3.4; PDF p. 20, 4.5):
+Data collection was conducted over a period of fourteen weeks … The survey was administered through Google Forms … written responses to ten open-ended questions completed by 12 students … All quotations were translated from French into English by the first author
+
+Design excerpt (PDF p. 11, 3.1; PDF p. 13, 3.5; PDF p. 18, 4.4):
+an explanatory sequential mixed-methods design … analysed using descriptive statistics and correlation analyses using SPSS software … The qualitative interview data were analysed using thematic analysis … independent-samples t-tests and one-way ANOVAs were conducted
+
+Devices and tools excerpt (PDF p. 15, 4.2.1–4.2.2; Abstract):
+relied on smartphones (74%) … Chatbots were the most frequently used tools … ChatGPT was the most frequently used AI tool, primarily accessed on students’ personal mobile devices
+
+Themes excerpt (Abstract; PDF p. 20, 4.5):
+Qualitative findings identified four major themes … perceived learning benefits (clearer explanations and reduced academic stress) … concerns about AI hallucinations in STEM subjects … the "laziness paradox," reflecting reduced cognitive effort associated with excessive reliance on AI … Six main themes were identified
+
+Verification excerpt (PDF pp. 21–22, 4.5.3 Self-regulation and study strategies):
+The most dominant strategy consists of internal verification using official course materials or prescribed textbooks … In mathematics, however, mistrust prevails
+
+Ethics excerpt (PDF p. 23, 4.5.5 Ethics and teachers’ discourse):
+the majority of respondents actively dichotomize the technology into either a legitimate cognitive scaffolding aid or an illegitimate vehicle for passive plagiarism
+
+Limitations excerpt (PDF p. 29, 5.5 Limitations and future research):
+may not fully reflect rural educational settings in Morocco or secondary education systems in other geographical territories … does not directly measure objective academic performance or incorporate real-time software usage analytics … precluding definitive conclusions regarding causal relationships between AI usage, self-regulation, and long-term cognitive growth

@@ -1,0 +1,19 @@
+Education Policy Institute (EPI), in partnership with the National Education Union (NEU) | 2026-09-22 | How can we empower teachers to use AI without undermining their professionalism or relationships with students? | https://epi.org.uk/publications-and-research/how-can-we-empower-teachers-to-use-ai-without-undermining-their-professionalism-or-relationships-with-students/ | Publication page read 2026-10-20 and re-read 2026-11-01 by default HTTPS request (HTTP 200); page prints "Event summary paper" and "22nd September 2026" (datePublished 2026-09-21T23:01:03+01:00; the printed date is used). The event summary paper PDF linked from the page was read 2026-10-20 (HTTP 200, application/pdf, 22 pages, SHA-256 aeee74c707bd8412b346b91e2d5ecbe3fe1bdc95e634c18499ebaa9bc00e2d26); cover prints September 2026. PDF excerpts have line breaks joined. © EPI; short excerpts only.
+Page date excerpt (publication page header; line breaks joined):
+Event summary paper 22nd September 2026
+Event excerpt (publication page):
+In July 2026, the Education Policy Institute partnered with the NEU to convene a roundtable of sector experts, trust leaders and academics
+Chatham House excerpt (PDF p.6; line breaks joined):
+Other participants at the roundtable will not be named in this summary paper, as the discussion was held under the Chatham House Rule.
+Disclaimer excerpt (publication page):
+This report, including recommendations, reflects a range of discussions and views. It does not necessarily represent the views of any particular participant, the author of this report, the NEU or EPI.
+Section excerpt (PDF p.11):
+Part 2: Evaluating the risks of teachers using AI
+Subsection excerpt (PDF p.11):
+The risk to professionalism and pedagogical practice
+Risk excerpt (PDF p.11; line breaks joined):
+Participants shared concerns that teachers were cognitively offloading to AI tools, which was affecting their ability to teach students effectively.
+Mixed excerpt (PDF p.14, Part 3 heading; line breaks joined):
+Part 3: Harnessing AI to improve the effectiveness of teaching and learning, while mitigating potential risks
+Original excerpt (quoted in full; the claim's original_excerpt):
+Participants shared concerns that teachers were cognitively offloading to AI tools, which was affecting their ability to teach students effectively.

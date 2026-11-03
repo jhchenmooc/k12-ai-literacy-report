@@ -1,0 +1,43 @@
+Computers & Education (Elsevier) | 2026-10-15 | Investigating secondary school students’ shared epistemic agency with GAI in online scientific explanation writing | https://doi.org/10.1016/j.compedu.2026.105769 | Read: publisher PDF provided by the manager 2026-10-26 (restricted repo from-literature-session/scholar-monthly-1026/A12-compedu-2026-105769.pdf), 22 PDF pages, Computers & Education 257 (2027) 105769, SHA-256 2136b3a768aecc4e629bed0b7c34e1b1768e948a86b6bd3ec5dd2c2c52b49616, text extracted with pypdf (python3 -I) and read 2026-11-01 UTC; page refs are PDF page numbers (= printed page numbers); first-online basis: PDF p. 1 "Available online 15 October 2026" (Received 11 February 2026, revised 17 September 2026, Accepted 14 October 2026) | License: open access, CC BY 4.0 (PDF p. 1). Text normalisation: words split by line-break hyphenation are rejoined and pypdf spacing artifacts removed; no other changes.
+
+First page excerpt (p. 1):
+Available online 15 October 2026
+
+Licence excerpt (p. 1):
+This is an open access article under the CC BY license
+
+Abstract excerpt (p. 1):
+Participants were 122 seventh graders who engaged in an online bilingual inquiry unit on photosynthesis. The unit supports students in Taiwan in learning science inquiry and English as a foreign language, with GAI prompted and integrated to support students' scientific explanation writing in English.
+
+Abstract excerpt (p. 1):
+Data collected and analyzed included students’ prior academic proficiency through assessments, self-efficacy in learning through questionnaires, and student–GAI conversation turns through textual conversation logs.
+
+Abstract excerpt (p. 1):
+Results identified seven types of student–GAI shared epistemic agency (SEA), with at least 86% of students demonstrating such agency at least once. Correlation results indicated that the frequency of EA demonstrated by students was associated with their prior language proficiency. Cluster analysis with the retained four-profile solution further suggested that student–GAI SEA was likely to be activity-specific.
+
+Participants and procedure excerpt (p. 9, §3.1):
+A total of 122 junior high school students (57 female, with ages ranging from 12 to 13) in four classes at a public school in Taiwan
+
+Participants and procedure excerpt (p. 9, §3.1):
+which lasted three sessions (45 min each) in total
+
+Design of the GAI teaching assistant excerpt (p. 9, §3.2):
+bilingual version (i.e., English and Mandarin Chinese)
+
+Design of the GAI teaching assistant excerpt (p. 9, §3.2):
+The GAI teaching assistant, based on ChatGPT (GPT-4–series model), was incorporated into the WISE platform via an application programming interface (API).
+
+Limitations excerpt (p. 17, §6):
+One limitation of this study is that it was conducted in a CLIL learning context using a scientific inquiry approach focused on scientific explanation writing with secondary school students in Taiwan
+
+Limitations excerpt (p. 17, §6):
+this study did not include a control or comparison condition
+
+Limitations excerpt (p. 18, §6):
+The retained four-cluster partition should therefore be viewed as an exploratory typology rather than as a stable learner taxonomy.
+
+Limitations excerpt (p. 18, §6):
+statistical power remains limited
+
+Original excerpt (p. 1 Abstract sentences 3–4; single passage, joined by " … "):
+Participants were 122 seventh graders who engaged in an online bilingual inquiry unit on photosynthesis. The unit supports students in Taiwan in learning science inquiry and English as a foreign language, with GAI prompted and integrated to support students' scientific explanation writing in English.

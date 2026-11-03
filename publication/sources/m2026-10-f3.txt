@@ -1,0 +1,9 @@
+Education International | 2026-09-08 | New PISA report reveals decline in student performance amid chronic teacher shortage and shrinking attention spans | https://www.ei-ie.org/en/item/32952 | Statement page read 2026-10-20 and re-read 2026-11-01 by default HTTPS request (HTTP 200); page prints "published 8 September 2026" and "updated 13 October 2026"; the copy read is the updated version and no earlier version was seen. © Education International; short excerpts only.
+Page date excerpt (page header; line breaks joined):
+published 8 September 2026 updated 13 October 2026
+Statement excerpt (body paragraph 2, sentence 3):
+While the global teacher shortage remains unaddressed, AI is being pushed as the magic solution when in fact excessive use results in children outsourcing their learning and their thinking to a bot.
+Speaker excerpt (end of body paragraph 2):
+stated David Edwards, Education International General Secretary.
+Original excerpt (quoted in full; the claim's original_excerpt):
+While the global teacher shortage remains unaddressed, AI is being pushed as the magic solution when in fact excessive use results in children outsourcing their learning and their thinking to a bot.

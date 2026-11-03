@@ -1,0 +1,37 @@
+Computers & Education (Elsevier) | 2026-10-17 | GenAI-supported internal feedback intervention for writing improvement: The roles of evaluative judgment and student-AI interaction in a cluster-randomized experimental study | https://doi.org/10.1016/j.compedu.2026.105767 | Read: publisher PDF provided by the manager 2026-10-26 (restricted repo from-literature-session/scholar-monthly-1026/M-compedu-2026-105767.pdf), 20 PDF pages, Computers & Education 257 (2027) 105767, SHA-256 7f6d29c9a02666ab74e9c830bd851a3d0c5285e0af1490fa8faa2d5b483739e9, text extracted with pypdf (python3 -I) and read 2026-11-01 UTC; page refs are PDF page numbers (= printed page numbers); first-online basis: PDF p. 1 "Available online 17 October 2026" (Received 15 May 2026, revised 8 September 2026, Accepted 10 October 2026) | License: not open access (© 2026 Elsevier Ltd, all rights reserved); this snapshot keeps only short excerpts that support the published item. Text normalisation: words split by line-break hyphenation are rejoined and pypdf spacing artifacts removed; no other changes.
+
+First page excerpt (p. 1):
+Available online 17 October 2026
+
+Abstract excerpt (p. 1):
+The study involved 368 students (experimental: n = 169; control: n = 199) at a university in China. Data included pre- and post-test writing scores, comparison sheets, and student-AI interaction logs.
+
+Abstract excerpt (p. 1):
+While both quantity and quality of student-AI interactions increased over time, evaluative judgment showed limited development across the intervention.
+
+Context and participants excerpt (p. 5, §3.1):
+The 14-week-long experiment was conducted in a compulsory English course at a normal university (teacher education) in China.
+
+Context and participants excerpt (p. 5, §3.1):
+Participants were 368 undergraduate students … in their second semester of the second year of STEM-related education majors (e.g., science, artificial intelligence, medicine, engineering)
+
+Experimental design and procedures excerpt (p. 5, §3.2):
+The study adopted a cluster-randomized experimental design. To minimize disruption to regular classroom teaching, the intervention was implemented at the class section level rather than through individual student assignment.
+
+Experimental design and procedures excerpt (p. 6, §3.2):
+Students first ranked the exemplars and their own writing from high to low quality
+
+Experimental design and procedures excerpt (p. 6, §3.2):
+In week 3, students in the GenAI-IFB condition engaged with an AI tool (DeepSeek R1) to generate feedback on their own drafts.
+
+Limitations excerpt (p. 15, §5.2.3):
+the findings should be interpreted as the effect of an integrated instructional intervention rather than the isolated effect of AI feedback.
+
+Limitations excerpt (p. 15, §5.2.3):
+these findings are inherently correlational.
+
+Limitations excerpt (p. 16, §5.2.3):
+as the study was conducted within a single context, the generalizability of the findings may be limited.
+
+Original excerpt (p. 1 Abstract sentence 9; single passage, joined by " … "):
+While both quantity and quality of student-AI interactions increased over time, evaluative judgment showed limited development across the intervention.

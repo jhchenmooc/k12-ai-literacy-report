@@ -1,0 +1,46 @@
+文部科学省（中央教育審議会初等中等教育分科会デジタル学習基盤特別委員会 第11回 資料3-3） | 2026-10-01 | AIガイドラインの改定に向けた検討状況について | https://www.mext.go.jp/content/20260930-mxt_shuukyo01-000052309_6.pdf | Read: PDF fetched 2026-11-01 UTC, SHA-256 3f037b8b715e3a0b6736fe70c1eeee3a75276498d398824940c52e1b5f3dff7d, 37 pp. (PDF Title "033_【資料３－３】AIガイドラインの改定に向けた検討状況について（文科省説明資料）", Author 文部科学省, CreationDate 2026-09-30 16:15 JST); text extracted with pdftotext and checked with python3 -I; Japanese line breaks removed in the excerpts below; page numbers are the slide numbers printed on each page. Also read 2026-11-01 UTC: the meeting's material page https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/093/siryo/mext_00005.html (SHA-256 33487d58fd1494f68a3ec379ddf270640e7d7667403dd63c8f63b582f8dd2f81) and the committee index https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/093/index.html (SHA-256 3b8f3af61d9b00b98d44ef269fd2cf5e713eacab584eb8e58af5fc0260aef657), whose latest listed meeting is the 11th (no 12th meeting listed). Date basis: cover prints 令和８年10月１日 (meeting date 2026-10-01 10:00–12:00 per the material page); the file URL prefix is 20260930 and the PDF was created 2026-09-30, i.e. uploaded for the meeting, not separately announced earlier. Scope: only the 10/01 "改定の方向性（案）" (p. 3) and the "改定の方向性" blocks on pp. 5, 14, 22, 27, 32 are used; pages stamped 令和８年６月３０日 中教審デジタル学習基盤特別委員会配布資料 (e.g. p. 2) are 6/30 (10th meeting) material and are not used — the 10th meeting's 資料1 (https://www.mext.go.jp/content/20260630-mxt_shuukyo01-000050664_2.pdf, SHA-256 d3248724aca0abda39f1384066aece729380ff3d1ad0682d90a62b4b1820aa27) lists the same six items with 具体的なイメージ but contains no "改定の方向性". | License: MEXT website terms (government standard terms of use, attribution); this snapshot keeps excerpts only
+
+Cover excerpt (p. 1):
+令和８年10月1日 第11回デジタル学習基盤特別委員会 資料３ー３ AIガイドラインの改定に向けた検討状況について
+
+Meeting page excerpt (material page, 議題 and 4．配付資料):
+初等中等教育段階における生成AIの利活用に関するガイドラインの改定に向けた検討状況について … 【資料3-3】AIガイドラインの改定に向けた検討状況について（文科省説明資料）
+
+Summary excerpt (p. 3, 各項目についての検討の方向性（サマリ）):
+前回の本委員会にて示した論点や現状を踏まえて、現行のガイドラインを以下のような観点から改定を行ってはどうか。 … 改定の方向性（案）
+
+Item 1 excerpt (p. 3, No. 1 技術の進展に関する現状認識・リスク関連の学術研究、国際的な議論):
+技術動向は学校現場での利活用に関係する事項に焦点を当てつつ、生徒のAIの利用状況も踏まえて記載を更新してはどうか。学術研究、諸外国の政策動向等から得られるリスクに関する知見を本文・脚注・参考資料等に分かりやすく反映してはどうか。
+
+Item 1 detail excerpt (p. 5, 改定の方向性):
+こうしたリスクを低減しながら学校現場においてAIを利活用できるよう、教育分野に特化したAIの必要性についても盛り込んではどうか。
+
+Items 2 and 6 excerpt (p. 3, No. 2 教師の役割 and No. 6 教職員の校務場面における活用):
+働き方改革への効果を踏まえ、校務の効率化・高度化につながる具体例を示す方向としてはどうか。併せて、AIへの過度な依存を防ぐため、AIにより効率化できる業務と、教師自身が判断すべき事項を具体化してはどうか。
+
+Items 2 and 6 detail excerpt (p. 14, 改定の方向性):
+現状ガイドラインに記載している事項についても浸透していないことから、ガイドラインの改定や研修の実施だけでなく、より分かりやすい形式で周知広報を行うことができないか。
+
+Item 3 excerpt (p. 3, No. 3 AIサービスの提供者に求められる視点):
+学校現場での利用に至る開発・提供を含むサプライチェーンや契約関係を踏まえて留意事項を追記してはどうか（学校現場の利活用に関するガイドラインとしての性質を踏まえ、関係機関や諸外国の検討と整合を図りつつ、過度な規制や開発の萎縮を招かないようにしてはどうか）
+
+Item 3 detail excerpt (p. 22, 改定の方向性):
+事業者が責任ある提供を行うために求められる事項も、諸外国での検討も踏まえながら、主体毎の留意事項と同様に５つの観点（安全性を考慮した適正利用、情報セキュリティの確保、個人情報・プライバシー・著作権の保護、公平性の確保、透明性・関係者への説明責任）を踏まえて整理してはどうか。
+
+Item 4 excerpt (p. 3, No. 4 情報活用能力):
+次期学習指導要領に向けたAIを含む情報活用能力に関する検討状況を反映してはどうか。特に、情報活用能力の整理として、「活用」「適切な取扱い」「特性の理解」に沿って関連する記載内容を更新してはどうか。
+
+Item 4 detail excerpt (p. 27, 改定の方向性):
+OECDにおいても重ねて検討されているメディアリテラシー（情報の吟味等）に関する検討状況をガイドラインに反映させてはどうか。
+
+Item 5 excerpt (p. 3, No. 5 学習活動で利活用する場面):
+育成したい資質・能力や授業の狙いに応じ、活用頻度(方法)の設定を含む指導上の工夫例を示してはどうか。その際、単元・授業全体の中で効果的な活用例と深い学びにつながりにくい例の両面を示し、学校現場の実践やサービスの進展に応じて機動的に更新してはどうか。
+
+Item 5 detail excerpt (p. 32, 改定の方向性):
+育成したい資質・能力や授業の狙いによっては、AIを利用しない場面を設けることや活用頻度をあらかじめ授業設計時に整理する必要があることも含めて、AI活用時の指導上の工夫例を記載してはどうか。
+
+Excluded 6/30 page excerpt (p. 2, header only; not used in the item):
+令和８年６月３０日 中教審デジタル学習基盤特別委員会配布資料
+
+Original excerpt (p. 3; joined by " … "):
+前回の本委員会にて示した論点や現状を踏まえて、現行のガイドラインを以下のような観点から改定を行ってはどうか。 … 働き方改革への効果を踏まえ、校務の効率化・高度化につながる具体例を示す方向としてはどうか。併せて、AIへの過度な依存を防ぐため、AIにより効率化できる業務と、教師自身が判断すべき事項を具体化してはどうか。

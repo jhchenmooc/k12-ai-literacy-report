@@ -1,0 +1,41 @@
+Behavioral Sciences (MDPI) | 2026-10-13 | Transformational Leadership and Heterogeneity in Teachers’ Readiness for AI Integration: A Complementary Variable- and Person-Centered Approach | https://doi.org/10.3390/bs16101892 | Read: publisher PDF obtained by the manager with a browser (MDPI page returns 403 to this session, not bypassed), restricted repo from-editor-session/daily-pdfs/KB-2026-0481__behavsci-16-01892.pdf; 21 pages; SHA-256 49ff083092e07a1c63ea2fe2ea7a6d73b92187b9fdc83a3db307d9123d57b110; text extracted with pdftotext and read 2026-11-01 UTC; page refs below are PDF pages (= printed "x of 21"); first-disclosure basis: PDF p. 1 prints "Published: 13 October 2026" (Crossref same day); licence CC BY (PDF p. 1)
+Text normalisation: words split by line-break hyphenation are rejoined (e.g. "crosssectional" -> "cross-sectional"); lines are joined. No other changes.
+
+Original excerpt (PDF p. 1 Abstract, sentences 3–4; PDF p. 16 6.5 Limitations, paragraph 1 sentence 4; joined by " … "):
+Drawing on complementary perspectives from the Unified Theory of Acceptance and Use of Technology 2 (UTAUT2) and Self-Determination Theory (SDT), this study examined transformational leadership in relation to teachers’ readiness for AI integration using complementary variable- and person-centered analyses of data from 596 Chinese in-service K-12 teachers. … The variable-centered results showed that transformational leadership was positively associated with teachers’ behavioral intention to use AI tools, with indirect associations involving willingness to develop AI competence and constructivist teaching beliefs. … Because TL, CT, TW, and BI were measured at the same time, the findings do not establish causal relations or the temporal ordering implied by the specified indirect associations.
+
+Article history excerpt (PDF p. 1, side column):
+Received: 3 September 2026 … Revised: 27 September 2026 … Accepted: 30 September 2026 … Published: 13 October 2026
+
+Licence excerpt (PDF p. 1, side column):
+This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license.
+
+Sample excerpt (PDF p. 6, 4.1 Participants and Procedure):
+Data were collected in October 2025 through the Wenjuanxing online survey platform among K-12 teachers in mainland China. A convenience sampling approach was adopted. … A total of 626 questionnaires were returned. Responses completed in less than 120 s were excluded. … Cases exhibiting straightlining patterns or insufficient response variability across questionnaire items were also excluded. After excluding 30 invalid responses based on these criteria, 596 valid responses were retained for analysis.
+
+Sample composition excerpt (PDF p. 7, 4.1 Participants and Procedure):
+Regarding teaching level, 51.7% taught in primary schools, 35.7% in junior secondary schools, and 12.6% in senior secondary schools. … 65.9% of the participants worked in urban areas, 10.4% in county seats, 15.8% in towns or townships, and 7.9% in rural areas.
+
+Measures excerpt (PDF pp. 7–8, 4.2 Measurements):
+All instruments were rated on a Likert scale ranging from 1 (strongly disagree) to 5 (strongly agree). … TL was measured using 7 items from Carless et al. (2000), assessing teachers’ perceptions of school leadership behaviors such as vision articulation, individualized consideration, and supportive encouragement. … CT was measured using 12 items from Teo and Chai (2008) … TW was assessed using six items from Delcker et al. (2025). … BI was measured using the four-item scale reported by An et al. (2023).
+
+Design excerpt (PDF p. 3, 1. Introduction):
+Structural equation modeling was used to examine the associations among TL, CT, TW, and BI. Latent profile analysis was subsequently conducted to identify distinct teacher profiles based on CT, TW, and BI, followed by an examination of whether TL was associated with profile membership.
+
+Analysis excerpt (PDF p. 8, 4.3 Data Analysis):
+Multinomial logistic regression was subsequently used to examine the association between TL and profile membership. Two models were estimated: an unadjusted model including TL and an area-adjusted model including TL and area.
+
+Findings excerpt (PDF p. 17, 7. Conclusions):
+The findings showed that TL was positively associated with BI and was also indirectly associated with BI through TW and through the sequential association involving CT and TW. The person-centered analysis further identified four readiness profiles characterized by different configurations of CT, TW, and BI. In particular, favorable CT and TW were observed alongside different levels of BI, highlighting variation in teachers’ readiness for AI integration.
+
+Profiles excerpt (PDF p. 11, 5.3.2):
+The Favorable Orientation but Behavioral Hesitation Profile (n = 84, 14.1%) was characterized by above-average scores for CT (z = 0.673) and TW (z = 0.555), together with a below-average score for BI (z = −0.369). … The Limited Orientation and Behavioral Hesitation Profile (n = 220, 36.9%) showed below-average scores across all three indicators … The Low Orientation and Weak Behavioral Inclination Profile (n = 60, 10.1%) was marked by consistently low scores across all three indicators … By contrast, the Favorable Orientation and Behavioral Inclination Profile (n = 232, 38.9%) showed above-average scores across all three indicators
+
+Profile membership excerpt (PDF p. 1, Abstract):
+Relative to Profile 1, higher transformational leadership was associated with greater odds of membership in Profile 4 and lower odds of membership in Profile 3.
+
+Profile 2 contrast excerpt (PDF p. 15, 6.2):
+The nonsignificant contrast between Profiles 2 and 1, however, indicates that TL did not differentiate all forms of behavioral hesitation.
+
+Limitations excerpt (PDF pp. 16–17, 6.5 Limitations and Future Directions):
+Because TL, CT, TW, and BI were measured at the same time, the findings do not establish causal relations or the temporal ordering implied by the specified indirect associations. … Although the common-method diagnostics did not support a single-factor representation of the item covariance, common method variance and social desirability effects cannot be entirely ruled out. … Participants were recruited through convenience sampling, and the sample was concentrated in urban schools (65.9%), with teachers from rural schools accounting for 7.9% of the participants. … BI is an important precursor to technology adoption, but it does not necessarily reflect teachers’ actual use of AI in the classroom.

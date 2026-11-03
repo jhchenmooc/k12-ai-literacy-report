@@ -1,0 +1,44 @@
+臺灣教育評論月刊（臺灣教育評論學會） 15(10) | 2026-10（月精度） | 人工智慧融入資源班教學：個別化學習支持的新契機 | https://ater.org.tw/wordpress/wp-content/uploads/2026/10/free_13.pdf | 讀取：該期全期 PDF（文獻 session 存於受限 repo from-literature-session/tw-journals-1101/ater-15-10-full.pdf，SHA-256 b1b12ad36c7f22de3a00f0a7e78b7c810a86d775289b6a72df6430cceb0dbc41，與期刊網站全文下載檔位元組數相同）文字層，pdftotext 抽取，2026-11-01 讀；單篇 PDF（https://ater.org.tw/wordpress/wp-content/uploads/2026/10/free_13.pdf）為影像檔，內容以全期 PDF 文字層核對；首發日依據：版權頁（全期 PDF p. 2）印「2026 年 10 月 1 日出刊」，封面（全期 PDF p. 1）印「2026年10月」，期刊網站該期頁面 https://ater.org.tw/wordpress/?page_id=11626 的頁面資料 datePublished 2026-10-05T23:13:02+00:00，單篇 PDF Last-Modified Mon, 05 Oct 2026 22:48:15 GMT（2026-11-01 查）；本刊依管理者決定以月精度 2026-10 標示；授權：公開下載，未見開放授權標示，稿約稱評論屬作者觀點，僅收短摘錄
+Text normalisation: pdftotext 文字層；摘錄依原文逐字，只合併斷行（含中文字間因排版產生的空白）並移除不可見格式字元；未改動其他文字。
+
+Original excerpt (前言 全期 PDF p. 183（印刷頁 175）；應用 全期 PDF p. 184（印刷頁 176）；結論 全期 PDF p. 186（印刷頁 178）, joined by " … "):
+資源班教師長期面臨學生障礙類別高度異質化、跨年級教學以及教學時間破碎化的多重挑戰，這導致核心的「個別化教育計畫（Individualized Educational Program）」往往演變為沉重的行政負擔 … 研究指出，AI 可協助教師規劃多樣化的教學資源，例如分層教材、例題、學習單或鷹架提示，使教師能因材施教（Kasneci et al., 2023）。 … 本研究強調，AI 的角色定位應是教師的「教學夥伴」而非取代者
+
+頁首 excerpt (全期 PDF p. 183（印刷頁 175）):
+臺灣教育評論月刊，2026，15（10）
+
+頁首 excerpt (全期 PDF p. 183（印刷頁 175）):
+，頁 175-179
+
+頁首 excerpt (全期 PDF p. 183（印刷頁 175）):
+自由評論
+
+前言 excerpt (全期 PDF p. 183（印刷頁 175）):
+資源班教師長期面臨學生障礙類別高度異質化、跨年級教學以及教學時間破碎化的多重挑戰，這導致核心的「個別化教育計畫（Individualized Educational Program）」往往演變為沉重的行政負擔
+
+應用 excerpt (全期 PDF p. 184（印刷頁 176）):
+（一）AI 輔助學生特徵分析與學習診斷
+
+應用 excerpt (全期 PDF p. 184（印刷頁 176）):
+（二）AI 生成個別化教學資源與教學設計
+
+應用 excerpt (全期 PDF p. 184（印刷頁 176）):
+研究指出，AI 可協助教師規劃多樣化的教學資源，例如分層教材、例題、學習單或鷹架提示，使教師能因材施教（Kasneci et al., 2023）。
+
+應用 excerpt (全期 PDF p. 185（印刷頁 177）):
+個別化設計執行流程「監控－反饋－調整」
+
+應用 excerpt (全期 PDF p. 185（印刷頁 177）):
+（四）實務情境連結－以閱讀理解教學為例
+
+限制 excerpt (全期 PDF p. 185（印刷頁 177）):
+（一）數據偏誤與教育公平：
+
+限制 excerpt (全期 PDF p. 185（印刷頁 177）):
+（二）專業削弱與過度依賴：
+
+限制 excerpt (全期 PDF p. 186（印刷頁 178）):
+（三）隱私與數據安全：
+
+結論 excerpt (全期 PDF p. 186（印刷頁 178）):
+本研究強調，AI 的角色定位應是教師的「教學夥伴」而非取代者
