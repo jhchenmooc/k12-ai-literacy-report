@@ -1781,6 +1781,10 @@
 | KB-2026-0512 — [以生成式人工智慧研發國語文寫作教學教材—PROMPT 模式運用](https://doi.org/10.6249/SE.202609_77(3).0024) | journal_article | 2026-09 | bibliographic_checked |
 | KB-2026-0513 — [人工智慧融入資源班教學：個別化學習支持的新契機](https://ater.org.tw/wordpress/wp-content/uploads/2026/10/free_13.pdf) | journal_article | 2026-10-01 | bibliographic_checked |
 | KB-2026-0514 — [生成式人工智慧進入幼兒園：教師專業角色與素養](https://ater.org.tw/wordpress/wp-content/uploads/2026/10/free_14.pdf) | journal_article | 2026-10-01 | bibliographic_checked |
+| KB-2026-0515 — [Should there be a teacher in-the-loop? A study of generative AI-personalized tasks middle school](https://doi.org/10.1007/s11423-026-10756-2) | journal_article | 2026-11-02 | bibliographic_checked |
+| KB-2026-0516 — [Enacting AI Literacy in Historical Inquiry Among Chinese Junior Secondary Students](https://doi.org/10.3390/bs16112038) | journal_article | 2026-11-01 | bibliographic_checked |
+| KB-2026-0517 — [Design and Preliminary Evaluation of an AI-Enabled Physical Systems Workshop](https://doi.org/10.3390/educsci16111833) | journal_article | 2026-11-01 | bibliographic_checked |
+| KB-2026-0518 — [\[동정자료\] 한국교육과정평가원, 지역 교육 발전을 위한 교사 초청연수 개최](https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101214&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice) | government_announcement | 2026-11-03 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
