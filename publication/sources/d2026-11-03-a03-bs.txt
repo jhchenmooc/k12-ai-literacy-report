@@ -1,0 +1,4 @@
+Behavioral Sciences (MDPI) | 2026-11-01 | Enacting AI Literacy in Historical Inquiry Among Chinese Junior Secondary Students | https://doi.org/10.3390/bs16112038 | Crossref works record read 2026-11-03T01:30Z; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online; bibliographic facts only
+Crossref: published-online 2026-11-01; record created 2026-11-02; Behavioral Sciences 16(11), 2038; licence CC BY 4.0; authors Chen, Yan, Zheng
+Crossref abstract sentence (not read from the publisher page):
+This qualitative case study investigated how 12 Chinese Grade 7 students engaged with generative artificial intelligence (AI) over a six-week project on the collapse of the Qin Dynasty.

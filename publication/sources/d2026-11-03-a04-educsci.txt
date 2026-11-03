@@ -1,0 +1,4 @@
+Education Sciences (MDPI) | 2026-11-01 | Design and Preliminary Evaluation of an AI-Enabled Physical Systems Workshop | https://doi.org/10.3390/educsci16111833 | Crossref works record read 2026-11-03T01:30Z; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online; bibliographic facts only
+Crossref: published-online 2026-11-01; record created 2026-11-02; Education Sciences 16(11), 1833; licence CC BY 4.0; authors Gabrovšek, Rihtaršič
+Crossref abstract sentence (not read from the publisher page):
+This study presents the design and preliminary evaluation of a guided experiential workshop on AI-enabled physical systems for secondary-school students.
