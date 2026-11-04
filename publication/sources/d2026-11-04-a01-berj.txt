@@ -1,0 +1,4 @@
+British Educational Research Journal (Wiley) | 2026-11-01 | A network psychometric analysis of teachers' AI adoption profiles and occupational perceptions | https://doi.org/10.1002/berj.70306 | Crossref works record read 2026-11-04T00:30Z; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online; bibliographic facts only
+Crossref: published-online 2026-11-01; record created 2026-11-02; British Educational Research Journal (ISSN 0141-1926, 1469-3518), no volume or issue assigned; author Aydogan; no update-to or retraction notice in the Crossref record
+Crossref abstract sentence (not read from the publisher page):
+Data from the TALIS 2024 AI module were analysed for 54,276 teachers across 55 education systems.
