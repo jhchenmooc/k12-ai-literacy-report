@@ -98,6 +98,14 @@ function validate(records,relations,runs,candidates){
  }
  return errors;
 }
+/* Non-Chinese official-document titles need a Chinese title in titles_zh.csv for the policy archive page (manager 2026-11-04).
+   A title needs one when it has kana or hangul, or no Han characters at all. Research and conference records are exempt (schema.md). */
+const POLICY_RECORD_TYPES=["framework","official_guidance","government_announcement","policy_review","binding_policy","draft","consultation"];
+const needsTitleZh=t=>/[\u3040-\u309f\u30a0-\u30fa\u30fc-\u30ff\u1100-\u11ff\uac00-\ud7af]/.test(t)||!/[\u3400-\u9fff]/.test(t);
+function missingTitlesZh(records,titlesZh){
+ const have=new Set(titlesZh.filter(x=>x.title_zh&&x.title_zh.trim()).map(x=>x.record_id));
+ return records.filter(x=>POLICY_RECORD_TYPES.includes(x.record_type)&&needsTitleZh(x.title)&&!have.has(x.record_id)).map(x=>"policy record needs a Chinese title in titles_zh.csv: "+x.record_id);
+}
 function index(records,relations){
  const buckets=new Map();
  const add=(k,x)=>{if(!buckets.has(k))buckets.set(k,new Set());buckets.get(k).add(x)};
@@ -127,7 +135,7 @@ function weeklyCandidates(dir){
 function main(){
  const records=read("records"),relations=read("relations"),runs=read("search_runs");
  const candidates=weeklyCandidates(path.join(__dirname,"drafts"));
- const errors=validate(records,relations,runs,candidates);
+ const errors=validate(records,relations,runs,candidates).concat(missingTitlesZh(records,read("titles_zh")));
  if(errors.length){console.error(errors.join("\n"));process.exitCode=1;return}
  const output=path.join(base,"indexes","index.json"),text=index(records,relations);
  if(process.argv.includes("--write-index")){fs.mkdirSync(path.dirname(output),{recursive:true});fs.writeFileSync(output,text)}
@@ -136,4 +144,4 @@ function main(){
  console.log("v1.7 knowledge base valid",records.length,"records",relations.length,"relations",runs.length,"search runs");
 }
 if(require.main===module)main();
-module.exports={parseCsv,dateOk,validate,index,weeklyCandidates};
+module.exports={parseCsv,dateOk,validate,index,weeklyCandidates,missingTitlesZh,needsTitleZh};
