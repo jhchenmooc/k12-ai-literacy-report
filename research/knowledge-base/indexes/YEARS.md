@@ -1787,6 +1787,9 @@
 | KB-2026-0517 — [Design and Preliminary Evaluation of an AI-Enabled Physical Systems Workshop](https://doi.org/10.3390/educsci16111833) | journal_article | 2026-11-01 | bibliographic_checked |
 | KB-2026-0518 — [\[동정자료\] 한국교육과정평가원, 지역 교육 발전을 위한 교사 초청연수 개최](https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101214&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice) | government_announcement | 2026-11-03 | bibliographic_checked |
 | KB-2026-0519 — [Opportunities for learning amidst concerns of misuse: Secondary teachers' uses and perceptions of artificial intelligence](https://doi.org/10.1002/berj.70208) | journal_article | 2026-06-10 | bibliographic_checked |
+| KB-2026-0520 — [A network psychometric analysis of teachers' AI adoption profiles and occupational perceptions](https://doi.org/10.1002/berj.70306) | journal_article | 2026-11-01 | bibliographic_checked |
+| KB-2026-0521 — [Competent but Concerned: How AI Competence Shapes Students' Perceptions of AI-Related Risks in Upper Secondary Education](https://doi.org/10.1145/3856766.3856768) | journal_article | 2026-11-02 | bibliographic_checked |
+| KB-2026-0522 — [디지털 미디어 문해교육, 학교 현장에서 새롭게 만들어 가다](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107546&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | government_announcement | 2026-11-03 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
