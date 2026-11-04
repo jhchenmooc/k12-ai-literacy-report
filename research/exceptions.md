@@ -13,7 +13,7 @@
 | 第二批國家教育部門來源 10/30 週報出刊前檢查再回報命中數 | policy-monitoring-sources.md（管理者 2026-10-23「照建議」） | 10/30 週報出刊 | 已到期（10/30 週報出刊前檢查已回報） |
 | F2 標記與反思段從 2026-10-16 期起（`CAUTION_FROM_PERIOD`） | render-site.js | 常設（起始日，不到期） | 有效 |
 | 臺灣研究分欄可用 `journal_article`／`journal_commentary` 文件類型（臺灣期刊未印審查制度、或屬評論） | validate-publication.js、render-site.js（管理者 2026-11-02「照建議」） | 常設 | 有效 |
-| 新來源試行（F2、第二批國家、丙、NEU/FTC 瀏覽器）一個月後檢討 | policy-monitoring-sources.md | 11/03 後檢討（三刊聯合重評第二批） | 有效 |
+| 新來源試行（F2、第二批國家、丙、NEU/FTC 瀏覽器）一個月後檢討 | policy-monitoring-sources.md（管理者 2026-11-04「照建議」：跑滿 10-22、10-29、11-05、11-12 四次週四讀取，每日短訊 session 於 11-12 查核紀錄附逐源統計表，11/13 週報出刊前檢查決定去留） | 11/13 週報出刊前檢查 | 有效 |
 
 ## 規則凍結
 
