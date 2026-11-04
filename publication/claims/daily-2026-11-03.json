@@ -178,11 +178,12 @@
   "ai_crosscheck_passes": 2,
   "decision": "publish",
   "ai_crosscheck_record": "第一輪 2026-11-03 子代理讀 KICE 보도자료列表、內頁與 hwpx 附件；本 session 重讀內頁，擇網頁本文副標與兩段撰寫中文摘要與中文譯名；第二輪 2026-11-03 由隔離子代理逐項對照韓文原文，判定大致忠實，依建議把서논술형譯為「敘述型與論述型」、補上時刻與地點、研習名稱改為「促進地區教育發展之」、改為不帶時態的寫法，篇名補「促進」，分類同意 B，修正後一致。同一模型，非獨立審閱。",
-  "ai_lit_class": "B",
+  "ai_lit_class": "A",
   "ai_lit_dims": [
-   "T-TEA"
+   "T-TEA",
+   "T-BAS"
   ],
-  "ai_lit_note": "向中小學教師分享 AI 自動評分模型的應用研究並探索學校現場應用，屬 AI 賦能教學（B），對應 T-TEA「評估AI工具輔助教學的適用性」",
+  "ai_lit_note": "以中小學教師為對象、主題為 AI 自動評分模型應用研究的教師研習（依準則教師 AI 研習判 A，比照 D20261023-03；管理者 2026-11-04 決定由 B 改判 A），對應 T-TEA「評估AI工具輔助教學的適用性」、T-BAS「選用適性適規之AI工具」",
   "audience": "k12",
   "source_country": "KR",
   "summary_evidence_spans": [

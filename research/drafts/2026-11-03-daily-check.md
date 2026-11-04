@@ -14,7 +14,7 @@
 | D20261103-01 | J07 Educational Technology Research and Development（Springer），Walkington、Feng、Pruitt-Britton、Beauchamp、Lan〈Should there be a teacher in-the-loop? A study of generative AI-personalized tasks middle school〉 https://doi.org/10.1007/s11423-026-10756-2 | 2026-11-02（出版社頁 Published 02 November 2026；citation_online_date 與 Crossref published-online 同日） | A（T-BAS、T-TEA） | k12（美國 6 所學校的七年級數學教師 7 人與其學生） | 作者摘要型 |
 | D20261103-02 | J52 Behavioral Sciences（MDPI），Chen、Yan、Zheng〈Enacting AI Literacy in Historical Inquiry Among Chinese Junior Secondary Students〉 https://doi.org/10.3390/bs16112038 | 2026-11-01（Crossref published-online；出版社頁 403） | A（S-BAS、S-ETH） | k12（中國七年級學生 12 人） | 只發書目 |
 | D20261103-03 | J47 Education Sciences（MDPI），Gabrovšek、Rihtaršič〈Design and Preliminary Evaluation of an AI-Enabled Physical Systems Workshop〉 https://doi.org/10.3390/educsci16111833 | 2026-11-01（Crossref published-online；出版社頁 403） | A（S-BAS、S-SYS） | k12（中學生） | 只發書目 |
-| D20261103-04 | 韓國教育課程評價院（KICE）〈[동정자료] 한국교육과정평가원, 지역 교육 발전을 위한 교사 초청연수 개최〉 https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101214&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice | 2026-11-03（列表與內頁등록일；hwpx 附件「배포 2026. 11. 3.(화) 08:00」） | B（T-TEA） | k12（忠清北道中小學教師約 130 人） | 官方摘要型（研習） |
+| D20261103-04 | 韓國教育課程評價院（KICE）〈[동정자료] 한국교육과정평가원, 지역 교육 발전을 위한 교사 초청연수 개최〉 https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101214&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice | 2026-11-03（列表與內頁등록일；hwpx 附件「배포 2026. 11. 3.(화) 08:00」） | A（T-TEA、T-BAS；11-04 由 B 改判） | k12（忠清北道中小學教師約 130 人） | 官方摘要型（研習） |
 
 - **D20261103-01：**
   - **摘要依據：** Abstract 第 4、5、6、8 句。第 7 句是學生偏好的比較結果，末句是作者的延伸討論，都不寫入。樣本學校數依 Method／Sample 段一句，已收進快照第 5 行。
@@ -126,3 +126,13 @@
 |---|---|---|---|---|
 | 1 | https://doi.org/10.3390/bs16112038 （J52 Behavioral Sciences，中國七年級學生在歷史探究中實踐 AI 素養；MDPI 403） | 文章頁「Published」日期與摘要截圖，或全文 PDF | D20261103-02 由書目升級為作者摘要型（需更正紀錄） | 11-08 |
 | 2 | https://doi.org/10.3390/educsci16111833 （J47 Education Sciences，中學生 AI 賦能實體系統工作坊；MDPI 403） | 文章頁「Published」日期與摘要截圖，或全文 PDF | D20261103-03 由書目升級為作者摘要型（需更正紀錄） | 11-08 |
+
+## 補記（2026-11-04，管理者改判 D20261103-04）
+
+- **決定：** 管理者 2026-11-04 決定 D20261103-04（KICE 教師邀請研習）由 B 改判 A。
+- **理由：** 這場是以中小學教師為對象的在職研習，整場以 AI 自動評分模型的應用為主題。D20261023-03 流行音樂種子教師創作營的 AI 只佔部分課程，已判 A；比照該例，這則也判 A。原文沒寫是否為生成式 AI，也沒寫倫理或監督，所以不對應「執行監督以檢核AI產出」。
+- **改動：**
+  - claim、候選池 W2026-10-30-A16 的 `ai_lit_class` 改為 A，`ai_lit_dims` 改為 T-TEA、T-BAS。
+  - 知識庫 KB-2026-0518：KR-15867 由 AILIT_B 改為 AILIT_A，新增 KR-15869（T-BAS）。
+  - issues.json 加 `revised_on` 2026-11-04；corrections.json 加 `daily-2026-11-03-r1`。
+- **摘要文字：** 不變。
