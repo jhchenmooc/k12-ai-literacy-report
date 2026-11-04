@@ -1,0 +1,48 @@
+{
+ "source": "British Educational Research Journal",
+ "openalex": "S60281869",
+ "requests": [
+  {
+   "query": "total",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS60281869%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-04&per_page=1&select=id%2Cdoi%2Ctitle%2Cpublication_date",
+   "utc": "2026-11-04T00:29:47Z",
+   "http": 200,
+   "count": 427
+  },
+  {
+   "query": "no_abstract",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS60281869%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-04%2Chas_abstract%3Afalse&per_page=1&select=id%2Cdoi%2Ctitle%2Cpublication_date",
+   "utc": "2026-11-04T00:29:47Z",
+   "http": 200,
+   "count": 23
+  },
+  {
+   "query": "ai",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS60281869%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-04%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22artificial+intelligence+literacy%22+OR+%22AI+education%22+OR+%22generative+AI%22%29&per_page=1&select=id%2Cdoi%2Ctitle%2Cpublication_date",
+   "utc": "2026-11-04T00:29:48Z",
+   "http": 200,
+   "count": 12
+  },
+  {
+   "query": "ai_k12",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS60281869%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-04%2Ctitle_and_abstract.search%3A%28%22AI+literacy%22+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools%29&per_page=1&select=id%2Cdoi%2Ctitle%2Cpublication_date",
+   "utc": "2026-11-04T00:29:48Z",
+   "http": 200,
+   "count": 1
+  },
+  {
+   "query": "ai_broad",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS60281869%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-04%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+%22AI%22+OR+ChatGPT+OR+%22machine+learning%22%29&per_page=200&select=id%2Cdoi%2Ctitle%2Cpublication_date",
+   "utc": "2026-11-04T00:29:49Z",
+   "http": 200,
+   "count": 58
+  }
+ ],
+ "results": {
+  "total": 427,
+  "no_abstract": 23,
+  "ai": 12,
+  "ai_k12": 1,
+  "ai_broad": 58
+ }
+}
