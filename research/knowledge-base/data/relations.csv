@@ -15726,5 +15726,6 @@
 "KR-15864","KB-2026-0518","has_population","vocabulary","STAGE_K12_GENERAL","https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101214&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice","discovered_unverified"
 "KR-15865","KB-2026-0518","has_topic","vocabulary","TOPIC_ASSESSMENT","https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101214&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice","discovered_unverified"
 "KR-15866","KB-2026-0518","has_topic","vocabulary","TOPIC_TEACHER_PD","https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101214&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice","discovered_unverified"
-"KR-15867","KB-2026-0518","has_ailit_class","vocabulary","AILIT_B","https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101214&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice","discovered_unverified"
+"KR-15867","KB-2026-0518","has_ailit_class","vocabulary","AILIT_A","https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101214&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice","discovered_unverified"
 "KR-15868","KB-2026-0518","has_ailit_dim","vocabulary","T-TEA","https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101214&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice","discovered_unverified"
+"KR-15869","KB-2026-0518","has_ailit_dim","vocabulary","T-BAS","https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101214&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice","discovered_unverified"
