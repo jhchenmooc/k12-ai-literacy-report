@@ -1,6 +1,6 @@
 "use strict";
 const {test}=require("node:test"),assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
-const {parseCsv,dateOk,validate,index,weeklyCandidates}=require("./validate-knowledge-base.js");
+const {parseCsv,dateOk,validate,index,weeklyCandidates,missingTitlesZh,needsTitleZh}=require("./validate-knowledge-base.js");
 const dir=path.join(__dirname,"knowledge-base","data");
 const read=n=>parseCsv(fs.readFileSync(path.join(dir,n+".csv"),"utf8"));
 const records=read("records"),relations=read("relations"),runs=read("search_runs");
@@ -190,4 +190,16 @@ test("candidate trace reads every weekly pool, oldest first, and ignores other d
  put("2026-10-16_2026-10-22.json",[{candidate_id:"W2026-10-16-A01"}]);put("2026-10-09_2026-10-15.json",[{candidate_id:"W2026-10-09-A01"}]);put("2026-10-monthly-claims-draft.json",[{candidate_id:"X"}]);
  assert.deepEqual(weeklyCandidates(tmp).map(c=>c.candidate_id),["W2026-10-09-A01","W2026-10-16-A01"]);
  fs.rmSync(tmp,{recursive:true});
+});
+test("non-Chinese policy titles need titles_zh; Chinese titles and research records do not (manager 2026-11-04)",()=>{
+ assert.equal(needsTitleZh("[동정자료] 한국교육과정평가원, 교사 초청연수 개최"),true);
+ assert.equal(needsTitleZh("AIガイドラインの改定に向けた検討状況について"),true);
+ assert.equal(needsTitleZh("INTEF participa en SIMO EDUCACIÓN 2026"),true);
+ assert.equal(needsTitleZh("中小學使用「生成式人工智慧」注意事項"),false);
+ assert.equal(needsTitleZh("慶南 AI・數位教育綜合推動計畫"),false);
+ const recs=[{record_id:"KB-2026-9001",record_type:"government_announcement",title:"[동정자료] 교사 연수"},{record_id:"KB-2026-9002",record_type:"official_guidance",title:"教育部指引"},{record_id:"KB-2026-9003",record_type:"journal_article",title:"English study"},{record_id:"KB-2026-9004",record_type:"framework",title:"AI Framework"}];
+ assert.deepEqual(missingTitlesZh(recs,[{record_id:"KB-2026-9004",title_zh:"AI 框架"}]),["policy record needs a Chinese title in titles_zh.csv: KB-2026-9001"]);
+ assert.deepEqual(missingTitlesZh(recs,[{record_id:"KB-2026-9001",title_zh:" "},{record_id:"KB-2026-9004",title_zh:"AI 框架"}]),["policy record needs a Chinese title in titles_zh.csv: KB-2026-9001"]);
+ const R=f=>parseCsv(fs.readFileSync(path.join(__dirname,"knowledge-base","data",f),"utf8"));
+ assert.deepEqual(missingTitlesZh(R("records.csv"),R("titles_zh.csv")),[]);
 });
