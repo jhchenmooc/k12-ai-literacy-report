@@ -1310,6 +1310,7 @@
 | KB-2025-0507 — [Exploring Factors Influencing Pre-Service Teachers’ Intention to Use GenAI for Instructional Design: A Grounded Theory Study](https://doi.org/10.3390/bs15091169) | journal_article | 2025-08-28 | discovered_unverified |
 | KB-2025-0508 — [Effects of design thinking STEAM instruction on AI learning and creativity](https://doi.org/10.1007/s10798-025-09977-y) | journal_article | 2025-04-03 | discovered_unverified |
 | KB-2025-0509 — [Artificial intelligence literacy education in primary schools: a review](https://doi.org/10.1007/s10798-025-09979-w) | journal_article | 2025-04-29 | discovered_unverified |
+| KB-2025-0510 — [Pedagogical considerations in the automation era: A systematic literature review of AIEd in K‐12 authentic settings](https://doi.org/10.1002/berj.4200) | journal_article | 2025-06-24 | bibliographic_checked |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
@@ -1785,6 +1786,7 @@
 | KB-2026-0516 — [Enacting AI Literacy in Historical Inquiry Among Chinese Junior Secondary Students](https://doi.org/10.3390/bs16112038) | journal_article | 2026-11-01 | bibliographic_checked |
 | KB-2026-0517 — [Design and Preliminary Evaluation of an AI-Enabled Physical Systems Workshop](https://doi.org/10.3390/educsci16111833) | journal_article | 2026-11-01 | bibliographic_checked |
 | KB-2026-0518 — [\[동정자료\] 한국교육과정평가원, 지역 교육 발전을 위한 교사 초청연수 개최](https://www.kice.re.kr/boardCnts/view.do?boardID=10024&boardSeq=5101214&lev=0&m=050102&searchType=S&statusYN=W&page=1&s=kice) | government_announcement | 2026-11-03 | bibliographic_checked |
+| KB-2026-0519 — [Opportunities for learning amidst concerns of misuse: Secondary teachers' uses and perceptions of artificial intelligence](https://doi.org/10.1002/berj.70208) | journal_article | 2026-06-10 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
