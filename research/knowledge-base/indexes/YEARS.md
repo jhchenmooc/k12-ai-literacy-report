@@ -1797,6 +1797,7 @@
 | KB-2026-0527 — [Nye tal om eksamenskarakterer på gymnasierne: Eleverne på stx klarer sig dårligere i skriftlig dansk](https://uvm.dk/aktuelt/nyheder/2026/oktober/261029-nye-tal-om-eksamenskarakterer-paa-gymnasierne-eleverne-paa-stx-klarer-sig-daarligere-i-skriftlig-dansk/) | government_announcement | 2026-10-29 | bibliographic_checked |
 | KB-2026-0528 — [UNESCO Santiago commemorated the 25th anniversary of the Information for All Programme (IFAP) with regional events on artificial intelligence and critical literacy](https://www.unesco.org/en/articles/unesco-santiago-commemorated-25th-anniversary-information-all-programme-ifap-regional-events) | government_announcement | 2026-10-29 | bibliographic_checked |
 | KB-2026-0529 — [深化媒體素養議題融入，掌握數位時代資訊防身術～2026年第4次審定本教科用書專題研習](https://www.naer.edu.tw/PageDoc/Detail?fid=12&id=5700) | government_announcement | 2026-11-01 | bibliographic_checked |
+| KB-2026-0530 — [Explainable Machine Learning for Analyzing AI Adoption and Teachers’ Professional Development Needs: Evidence from TALIS 2024 in Kazakhstan](https://doi.org/10.3390/computers15110795) | journal_article | 2026-11-03 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

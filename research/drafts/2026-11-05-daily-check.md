@@ -236,3 +236,14 @@
 | 英國 NEU（AI 篩選頁） | https://neu.org.uk/latest/press-releases?topic[679]=679 |
 | 美國 FTC 新聞稿（只看標題含 AI、children、teens、students、schools） | https://www.ftc.gov/news-events/news/press-releases |
 | 印度 PIB 新聞稿（教育部） | https://www.pib.gov.in/Allrel.aspx |
+
+## 補記（2026-11-05，管理者決定單篇例外後）
+
+- **決定：** 文獻 session 轉告管理者 2026-11-05 的決定：MDPI Computers `10.3390/computers15110795` 以單篇例外收錄。管理者 11-05 在本 session 回「確認」。
+- **D20261105-08：** Computers（MDPI，不在監測清單）〈Explainable Machine Learning for Analyzing AI Adoption and Teachers’ Professional Development Needs: Evidence from TALIS 2024 in Kazakhstan〉 https://doi.org/10.3390/computers15110795 。
+  - **首發日：** 2026-11-03，依 Crossref published-online；MDPI 頁 403，只發書目。
+  - **分類與對象：** A（T-PD、T-TEA），k12（哈薩克 ISCED 2 教師 7,360 人），studies_country KZ，不加 `published_in`。
+  - **第二輪對照：** 隔離子代理判定篇名通過，依建議範圍說明補有效分析樣本數（2,430、4,868）。子代理認為 T-TEA 對應偏弱；因管理者決定已明列 T-PD、T-TEA，維持，並在判斷理由註明是間接對應。
+- **頁面：** issues.json 加 `revised_on` 2026-11-05，corrections.json 加 `daily-2026-11-05-r1`。
+- **候選池與知識庫：** W2026-10-30-A27（batch 2026-11-05-daily-2）→ KB-2026-0530。
+- **瀏覽器清單：** 加第 6 項 https://doi.org/10.3390/computers15110795 （文章頁 Published 日期與摘要截圖，或全文 PDF；期限 11-10）。
