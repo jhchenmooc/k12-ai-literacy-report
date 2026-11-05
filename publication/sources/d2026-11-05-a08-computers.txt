@@ -1,0 +1,4 @@
+Computers (MDPI) | 2026-11-03 | Explainable Machine Learning for Analyzing AI Adoption and Teachers’ Professional Development Needs: Evidence from TALIS 2024 in Kazakhstan | https://doi.org/10.3390/computers15110795 | Crossref works record read 2026-11-05T01:22Z; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online; bibliographic facts only
+Crossref: published-online 2026-11-03; record created 2026-11-04; Computers 15(11), 795; licence CC BY 4.0; authors Kismanova, Kintonova, Sansyzbay, Tasbolatova, Sabitov, Bazarbayeva, Yeltai, Mamayeva; no update-to notice
+Crossref abstract sentence (not read from the publisher page):
+This study examined these outcomes as separate predictive tasks using OECD TALIS 2024 data for 7360 teachers in Kazakhstan at ISCED level 2.
