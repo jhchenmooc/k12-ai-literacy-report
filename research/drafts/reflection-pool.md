@@ -10,6 +10,7 @@
 | 2026-09-03 | Brookings（US），Anil Hurkadli、Josie Stewart | commentary | As surveillance grows, student privacy protections lag | https://www.brookings.edu/articles/as-surveillance-grows-student-privacy-protections-lag/ | 談各州 AI 與學生資料段（加州、愛達荷州） | 2026-10-22 記入（次要）；主題為學生監控與隱私，AI 為子題 |
 | 不明（頁面只印 Sist endret 16.10.2026） | 挪威教育署 Udir（NO） | official | Endringer i eksamen（slik endrer vi eksamen） | https://www.udir.no/eksamen-og-prover/eksamen/slik-endrer-vi-eksamen/ | 「Eksamen med sikker nettleser」段與數學、理科第 2 部分輔助工具段 | 2026-10-22 記入；高中考試改用安全瀏覽器、2027 春起數理第 2 部分取消電腦，理由寫明降低使用 AI 的風險；AI 相關段落首發日不明 |
 | 2026-10-20（頁面所印「20 Ottobre 2026」；article:published_time 同日；由 MIM 2026-10-26 第 286 期電子報連結） | INVALSI 國家教育與培訓系統評量研究院（IT），院長 Roberto Ricci 社論，與研究員 Paolo Barabanti 對談 | commentary | L'Intelligenza Artificiale per una scuola inclusiva: la formazione docente verso una nuova pedagogia | https://www.invalsi.it/ai-inclusione-formazione-insegnanti/ | 內文第 5～8 段（引 TALIS 2024） | 2026-10-29 記入；以機會為主，開頭只泛稱「talvolta preoccupazioni」；TALIS 數字選錄前須對照 OECD 原表；INVALSI 不在週四監測來源清單 |
+| 2026-10-29（頁面 datePublished 2026-10-29T14:20:10+00:00） | Brookings（US），主持人 Abby McCloskey，來賓 Jonathan Haidt | commentary（podcast 附逐字稿） | Parenting in an AI revolution | https://www.brookings.edu/articles/parenting-in-an-ai-revolution/ | 頁首重點第 2、3 條 | 2026-11-05 記入；對象為家長；以風險為主，未並陳機會；podcast 談話，選錄時須標明發言人 |
 
 2026-10-22 記入各則的逐字摘錄（原文，選錄時須經第二輪對照與譯文確認）：
 
@@ -24,3 +25,7 @@
 2026-10-29 記入的逐字摘錄（原文，選錄時須經第二輪對照與譯文確認）：
 
 - INVALSI 2026-10-20："Il confronto tra i dati nazionali e quelli degli altri Paesi europei ed extraeuropei restituisce l'immagine di una scuola italiana in cui l'utilizzo dell'IA a supporto degli studenti con BES è particolarmente diffuso. Il 64,4% degli insegnanti italiani dichiara infatti di farne uso, a fronte di una media europea pari al 44,2%." 另段："In Italia emerge invece un risultato particolarmente significativo. Tra tutte le variabili analizzate, quella maggiormente associata all'utilizzo dell'IA non è la quantità di formazione ricevuta, ma la percezione della sua utilità concreta nel rispondere ai bisogni dei singoli studenti." 另句："Ciò richiede percorsi formativi capaci di andare oltre l'addestramento all'uso degli strumenti."
+
+2026-11-05 記入的逐字摘錄（原文，選錄時須經第二輪對照與譯文確認）：
+
+- Brookings 2026-10-29（頁首重點第 2、3 條）："AI introduces new risks for children’s learning and relationships, from outsourcing thinking to children forming attachments to chatbots." 另條："Protecting children requires both digital guardrails and more freedom offline. This includes age limits on AI, age limits on social media, phone bans in schools, computer-free elementary schools and potentially even middle schools, devices kept in common areas in the home, and more opportunities for independent play."
