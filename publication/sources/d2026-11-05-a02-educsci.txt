@@ -1,0 +1,4 @@
+Education Sciences (MDPI) | 2026-11-04 | AI-Supported Programming Environments and Pair Programming Role Strategies in Secondary School: An Exploratory Study | https://doi.org/10.3390/educsci16111866 | Crossref works record read 2026-11-05T00:50Z; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online; no earlier version found by Crossref title search or arXiv; bibliographic facts only
+Crossref: published-online 2026-11-04; record created 2026-11-04; Education Sciences 16(11), 1866; licence CC BY 4.0; authors Zhu, Wu, Zhao, Shang
+Crossref abstract sentence (not read from the publisher page):
+Participants were 198 eighth-grade students from four intact classes in a public junior secondary school in Xi'an, China, who participated in an eight-week programming course.
