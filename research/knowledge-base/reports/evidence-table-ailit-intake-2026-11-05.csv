@@ -1,0 +1,11 @@
+record_id,doi,first_published_on,year_basis,ai_lit_class,dims,audience,population_codes,topics,method,published_in,evidence,date_basis
+KB-2017-0001,10.1145/3078072.3084330,,event_year,A,S-BAS,k12,ROLE_STUDENT;STAGE_PRESCHOOL;STAGE_PRIMARY,,METHOD_QUALITATIVE,C14,3–10 歲兒童與智慧音箱、機器人互動，觀察其對 AI 智能與身分的看法,會議論文 event_year；Crossref 題名無副標
+KB-2018-0001,10.1145/3202185.3210788,,event_year,A,S-BAS;S-ETH,unknown,,TOPIC_ETHICS,METHOD_EXPERIMENT,C14,兒童受 AI 智慧玩偶影響道德判斷（S-ETH 具備對AI的批判思考）,會議論文 event_year；Crossref 題名無副標；摘要中的「4–10 歲」是作者先前研究的對象，本研究年齡摘要未寫，所以不標學段
+KB-2019-0001,10.1145/3290605.3300677,,event_year,A,S-BAS,k12,ROLE_STUDENT;STAGE_PRESCHOOL,TOPIC_CURRICULUM;TOPIC_INTERVENTION,,C13,學齡前兒童以 PopBots 學三個 AI 概念並評量理解（S-BAS 理解AI運作原理與限制）,會議論文依慣例 event_year；Crossref 題名無副標，原樣保存
+KB-2020-0002,10.1016/j.ijcci.2020.100182,2020-06,first_publication,A,S-BAS;S-SYS,k12,ROLE_STUDENT;STAGE_PRESCHOOL;STAGE_PRIMARY,TOPIC_CURRICULUM;TOPIC_INTERVENTION,METHOD_QUALITATIVE,J35,3–9 歲兒童訓練、探索 Teachable Machine，理解 ML 資料與模型（S-BAS 理解AI運作原理與限制；S-SYS 理解AI系統設計原理）,Elsevier；Crossref 無 published-online，依 DOI 登記日 2020-06-20 取年月
+KB-2020-0003,10.1145/3313831.3376416,,event_year,A,S-BAS,k12,ROLE_STUDENT;STAGE_PRESCHOOL,,METHOD_QUALITATIVE,C13,3–6 歲兒童如何看待對話代理是生物或人造物,會議論文 event_year
+KB-2021-0003,10.1016/j.ijcci.2021.100281,2021-03,first_publication,A,S-BAS;S-SYS,k12,ROLE_STUDENT;STAGE_PRIMARY,TOPIC_CURRICULUM;TOPIC_INTERVENTION,METHOD_QUALITATIVE,J35,芬蘭國小六年級共同設計 ML 應用，發展 ML 原理與流程的概念理解（S-SYS 應用設計思維於AI系統開發）,Elsevier；依 DOI 登記日 2021-03-18 取年月
+KB-2021-0004,10.1002/hbe2.321,2021-11-12,first_publication,A,S-BAS;S-ETH,k12,ROLE_STUDENT;STAGE_PRIMARY,TOPIC_ETHICS,METHOD_SURVEY,,6–10 歲兒童對語音助理的心智、社會、道德屬性歸因（S-BAS 理解AI運作原理與限制）,期刊不在監測清單，無 published_in；Crossref published-online
+KB-2021-0005,10.1007/s12124-021-09668-y,2021-11-23,first_publication,A,S-BAS,unknown,,,METHOD_REVIEW,,兒童與語音助理互動的擬人化研究概念性回顧,期刊不在監測清單；回顧對象比例只看摘要判不出，依規則不標 REVIEW_INCLUDES_K12
+KB-2021-0006,10.1109/access.2021.3097962,,issue_year,A,S-BAS;S-SYS,k12,STAGE_K12_GENERAL,TOPIC_CURRICULUM,,,K-12 ML 教學的教學法與技術發展軌跡（理論性文章）,IEEE Access 不在監測清單，無 published_in；Crossref 只有年份 2021（DOI 登記 2021-08-10，非 Elsevier，不套用登記日規則）
+KB-2022-0119,10.1007/s10639-022-11416-7,2022-11-07,first_publication,A,S-BAS;S-SYS,k12,STAGE_K12_GENERAL,TOPIC_CURRICULUM;TOPIC_TEACHER_PD,METHOD_REVIEW,J05,K-12 ML 教與學系統回顧（43 篇），涵蓋課程、工具、教學法與師培,Crossref published-online

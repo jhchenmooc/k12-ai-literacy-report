@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "period": {
+    "start": "2026-11-06",
+    "end": "2026-11-12"
+  },
+  "status": "draft_pending_source_verification",
+  "notice": "Planning worksheet only. NOT registered in publication/issues.json, NOT certified or published.",
+  "editorial_rules": {
+    "target_items": "3–5, fewer when evidence is insufficient",
+    "high_risk": "hold",
+    "source_required": true
+  },
+  "items": [
+    {
+      "candidate_id": "W2026-11-06-A01",
+      "category": "research",
+      "source_url": "https://doi.org/10.3389/feduc.2026.1961742",
+      "source_title": "Chemistry teachers’ research competence following AI-supported professional development: a mixed-methods pre–post study",
+      "source_organization": "Frontiers in Education",
+      "source_publication_date": "2026-11-05",
+      "source_locator": "出版社文章頁（frontiersin.org，2026-11-06 讀取 200）：Published 05 November 2026，citation_publication_date 2026/11/05（citation_online_date 為接受日，依 J29 規則不採用）；摘要歸屬：Abstract 第 2、3、4 句",
+      "discovered_on": "2026-11-06",
+      "discovery_batch_id": "2026-11-06-daily-1",
+      "first_disclosed_on": "2026-11-05",
+      "source_updates": [],
+      "original_excerpt": "This study assessed chemistry teachers' research competence, examined their reported practices and perceptions concerning students' social-emotional well-being, and investigated changes following participation in an AI-supported professional development program. … A quantitatively driven mixed-methods design with an embedded qualitative component was employed. … Data were collected from 105 chemistry teachers using closed-ended questionnaire scales and two open-ended questions administered before and after a six-week professional development program.",
+      "source_checked": true,
+      "claim_text": "來源機構：Frontiers in Education；資料標題：Chemistry teachers’ research competence following AI-supported professional development: a mixed-methods pre–post study；來源刊登日：2026-11-05。作者摘要報告：研究評估化學教師的研究能力，以及其自陳對學生社會情緒福祉的實務與看法，並檢視參與 AI 支援專業發展方案後的變化；採以量化為主、內嵌質性成分的混合方法設計，於為期六週的專業發展方案前後，以封閉式問卷量表與兩題開放式問題蒐集 105 名化學教師的資料。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Frontiers in Education，監測清單 J29）；哈薩克南部一地區公立中學在職化學教師 105 人、六週專業發展方案的單組前後測與自陳資料，作者寫明單一地區樣本限制推論範圍。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-06 子代理以監測期刊 ISSN 查詢列出並讀出版社頁；本 session 擇摘要第 2、3、4 句撰寫中文摘要與中文譯名，不寫前後測結果；第二輪 2026-11-06 由隔離子代理逐句對照原文，判定需修改，依建議補「自陳」，T-PD 內涵改為與方案內容（以 AI 工具做研究規劃與資料分析）相符的「運用AI分析教學數據規劃專業發展」，修正後一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-PD",
+        "T-BAS"
+      ],
+      "ai_lit_note": "在職中學化學教師參與 AI 支援的專業發展方案（教師 AI 培訓，依準則判 A），對應 T-PD「運用AI分析教學數據規劃專業發展」、T-BAS「選用適性適規之AI工具」",
+      "audience": "k12",
+      "doi": "10.3389/feduc.2026.1961742",
+      "screening_note": "Verified 2026-11-06 for daily brief 2026-11-06.",
+      "verification_completed_on": "2026-11-06"
+    },
+    {
+      "candidate_id": "W2026-11-06-A02",
+      "category": "research",
+      "source_url": "https://arxiv.org/abs/2611.06762",
+      "source_title": "U.S. State Guidance on AI in K-12 Education: A Comparative Content and Citation Analysis",
+      "source_organization": "arXiv",
+      "source_publication_date": "2026-11-04",
+      "source_locator": "arXiv 摘要頁（API 2026-11-06 讀取 200）：v1 提交 2026-11-04T16:40:51Z，comment「Under Review」；摘要歸屬：Abstract 第 2、5、9、10 句",
+      "discovered_on": "2026-11-06",
+      "discovery_batch_id": "2026-11-06-daily-1",
+      "first_disclosed_on": "2026-11-04",
+      "source_updates": [],
+      "original_excerpt": "In this work, we analyze publicly available AI usage guidance documents from 35 states in the U.S. and Puerto Rico. … We find that guidance priorities converge on topics anchored in laws such as data privacy and academic integrity, each addressed in 97% of documents. … Instead, we identify notable interdependencies between states with shared citations to non-profit organizations like TeachAI and Code.org, with some states reproducing TeachAI's model guidance near-verbatim, and peer citations concentrating on a few early states such as Oregon and Washington. … No state includes parents as contributors on these documents, and only five include students.",
+      "source_checked": true,
+      "claim_text": "來源機構：arXiv；資料標題：U.S. State Guidance on AI in K-12 Education: A Comparative Content and Citation Analysis；來源刊登日：2026-11-04。作者摘要報告：研究分析美國 35 州與波多黎各公開的 K-12 教育 AI 使用指引文件；作者報告，各州指引的重點集中在資料隱私與學術誠信等有法律依據的議題，兩者各見於 97% 的文件；部分州共同引用 TeachAI 與 Code.org 等非營利組織，有些州幾近逐字沿用 TeachAI 的範本指引；沒有州把家長列為文件撰寫參與者，只有 5 州列入學生。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "預印本（arXiv，未經同儕審查，作者註明審查中）；分析對象為美國 35 州與波多黎各的公開指引文件，無人類受試者。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-06 子代理以 arXiv API 與 cs.CY 列表列出；本 session 擇摘要第 2、5、9、10 句撰寫中文摘要與中文譯名；第二輪 2026-11-06 由隔離子代理逐句對照原文（州數、百分比、組織名、參與者），判定通過，依建議「納入學生」改為「列入學生」以貼近 as contributors。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-ETH",
+        "T-BAS"
+      ],
+      "ai_lit_note": "對象為其他教育關係人：分析美國各州 K-12 AI 使用指引的內容與撰寫參與者，屬校園 AI 規範與治理（A），對應 T-ETH「健全校園AI使用規範」、T-BAS「參與AI校園治理部署與決策」",
+      "audience": "other_stakeholders",
+      "screening_note": "Verified 2026-11-06 for daily brief 2026-11-06.",
+      "verification_completed_on": "2026-11-06"
+    },
+    {
+      "candidate_id": "W2026-11-06-A03",
+      "category": "news_policy",
+      "source_url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=F58AF01B8D375040",
+      "source_title": "AI小將脫穎而出！115年度總統盃AI素養爭霸賽晉級名單揭曉 11月13日齊聚臺北總決賽",
+      "source_organization": "教育部",
+      "source_publication_date": "2026-11-05",
+      "source_locator": "教育部即時新聞（2026-11-06 讀取 200）：上版日期 115-11-05，RSS 時間 2026-11-05 14:09（臺灣時間）；摘要歸屬：新聞第 1、2、3 段",
+      "discovered_on": "2026-11-06",
+      "discovery_batch_id": "2026-11-06-daily-1",
+      "first_disclosed_on": "2026-11-05",
+      "source_updates": [],
+      "original_excerpt": "本次競賽全國22縣市共計選拔出201支隊伍計384名國中小學生參與。 … 最終80支優秀隊伍脫穎而出，將於11月13日（星期五）齊聚臺北世貿一館，角逐全國總決賽最高榮譽。 … 正式賽設有國小一般組、國小偏鄉組、國中一般組及國中偏鄉組四個組別，以「魷來魷去對戰版」為主題，引導學生運用「監督式學習」訓練AI模型；表演賽不分組，以「Proly定向越野大作戰」為主題，挑戰「強化式學習」訓練類型。 … 今年教育部提出的「未來人才AI能力圖像」，即強調運用AI學習、負責任使用AI、運用AI解決問題，以及AI無法取代的能力。",
+      "source_checked": true,
+      "claim_text": "來源機構：教育部；資料標題：AI小將脫穎而出！115年度總統盃AI素養爭霸賽晉級名單揭曉 11月13日齊聚臺北總決賽；來源刊登日：2026-11-05。官方文件表示：教育部表示，115 年度總統盃 AI 素養爭霸賽全國 22 縣市共選拔 201 隊、384 名國中小學生參與，最終 80 隊晉級，將於 11 月 13 日在臺北世貿一館進行總決賽；正式賽分國小與國中的一般組、偏鄉組，引導學生運用監督式學習訓練 AI 模型，表演賽挑戰強化式學習；教育部提出的「未來人才AI能力圖像」強調運用AI學習、負責任使用AI等。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "臺灣中央教育主管機關的學生 AI 競賽公告（預選賽結果與總決賽預告），對象為國中小學生；承辦單位為民間公司；未載學習成效。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-06 子代理讀教育部即時新聞與資科司 RSS、原頁並存檔；本 session 擇新聞第 1、2、3 段撰寫中文摘要；第二輪 2026-11-06 由隔離子代理逐項對照原文（縣市數、隊數、人數、日期地點、組別、訓練類型、能力圖像），判定通過。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS"
+      ],
+      "ai_lit_note": "中央主辦、國中小學生實作監督式與強化式學習模型訓練的 AI 素養競賽公告（依準則 AI 素養活動公告判 A），對應 S-BAS「理解AI運作原理與限制」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-11-06 for daily brief 2026-11-06.",
+      "verification_completed_on": "2026-11-06"
+    }
+  ],
+  "search_runs": [
+    {
+      "batch_id": "2026-11-06-daily-1",
+      "searched_on": "2026-11-06",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-11-05,until-created-date:2026-11-06,type:journal-article, six query.bibliographic sets, proceedings-article set, watchlist-ISSN sets; pedagogical AI agent sets on Crossref, OpenAlex and arXiv; arXiv API three sets and cs.CY/cs.HC new listings; alphaXiv; publisher pages one try each (Frontiers 200; T&F, Wiley Cloudflare and MDPI 403, not bypassed)",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search and Content API, Federal Register (11-05 issue incl. 2026-22615 at 91 FR 69736; public inspection), MEXT, China MOE, HK info.gov.hk 11-05, MOE Korea, KICE, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (115-11-05 issue), Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 3,
+      "added": 3,
+      "duplicates": 0
+    }
+  ],
+  "item_template": {
+    "candidate_id": "",
+    "category": "news_policy_or_research",
+    "source_url": "",
+    "source_title": "",
+    "source_publication_date": "",
+    "source_locator": "",
+    "original_excerpt": "",
+    "source_checked": false,
+    "claim_text": "",
+    "claim_class": "bibliographic_or_descriptive_or_high_impact",
+    "risk_tier": "low_or_medium_or_high",
+    "scope_limitation": "",
+    "translation_reviewed": false,
+    "conflict_unresolved": null,
+    "decision": "hold",
+    "ai_crosscheck_status": "not_started",
+    "ai_crosscheck_passes": 0,
+    "ai_crosscheck_record": ""
+  }
+}

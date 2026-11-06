@@ -2,11 +2,36 @@
 
 本檔為長期知識庫的**書目索引**，不是當期新聞出版或政策效力認證。年份標示所據日期類型；unknown 不能視為首次公開於發現日。
 
+## 2017｜event_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2017-0001 — ["Hey Google is it OK if I eat you?"](https://doi.org/10.1145/3078072.3084330) | conference_paper | 未知 | discovered_unverified |
+
+## 2018｜event_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2018-0001 — ["My doll says it's ok"](https://doi.org/10.1145/3202185.3210788) | conference_paper | 未知 | discovered_unverified |
+
+## 2019｜event_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2019-0001 — [A is for Artificial Intelligence](https://doi.org/10.1145/3290605.3300677) | conference_paper | 未知 | discovered_unverified |
+
+## 2020｜event_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2020-0003 — [What Are You Talking To?: Understanding Children's Perceptions of Conversational Agents](https://doi.org/10.1145/3313831.3376416) | conference_paper | 未知 | discovered_unverified |
+
 ## 2020｜first_publication
 
 | 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
 |---|---|---|---|
 | KB-2020-0001 — [인공지능 시대 교육정책방향과 핵심과제（제19차 사회관계장관회의 안건）](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=82674&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020402&opType=N) | official_guidance | 2020-11-20 | bibliographic_checked |
+| KB-2020-0002 — [Learning machine learning with very young children: Who is teaching whom?](https://doi.org/10.1016/j.ijcci.2020.100182) | journal_article | 2020-06 | discovered_unverified |
 
 ## 2021｜first_publication
 
@@ -14,6 +39,15 @@
 |---|---|---|---|
 | KB-2021-0001 — [Policy guidance on AI for children (Version 2.0)](https://www.unicef.org/innocenti/media/1341/file/UNICEF-Global-Insight-policy-guidance-AI-children-2.0-2021.pdf) | official_guidance | 2021-11 | bibliographic_checked |
 | KB-2021-0002 — [OECD Digital Education Outlook 2021: Pushing the Frontiers with Artificial Intelligence, Blockchain and Robots](https://digital-education-outlook.oecd.org/) | policy_review | 2021-06-08 | discovered_unverified |
+| KB-2021-0003 — [Machine learning for middle schoolers: Learning through data-driven design](https://doi.org/10.1016/j.ijcci.2021.100281) | journal_article | 2021-03 | discovered_unverified |
+| KB-2021-0004 — [Children's mental, social, and moral attributions toward a familiar digital voice assistant](https://doi.org/10.1002/hbe2.321) | journal_article | 2021-11-12 | discovered_unverified |
+| KB-2021-0005 — [Anthropomorphizing Technology: A Conceptual Review of Anthropomorphism Research and How it Relates to Children’s Engagements with Digital Voice Assistants](https://doi.org/10.1007/s12124-021-09668-y) | journal_article | 2021-11-23 | discovered_unverified |
+
+## 2021｜issue_year
+
+| 紀錄 | 類型 | 出版／來源日期 | 核查程度 |
+|---|---|---|---|
+| KB-2021-0006 — [Teaching Machine Learning in K–12 Classroom: Pedagogical and Technological Trajectories for Artificial Intelligence Education](https://doi.org/10.1109/access.2021.3097962) | journal_article | 未知 | discovered_unverified |
 
 ## 2022｜event_year
 
@@ -142,6 +176,7 @@
 | KB-2022-0061 — [Role design considerations of conversational agents to facilitate discussion and systems thinking](https://doi.org/10.1016/j.compedu.2022.104661) | journal_article | 2022-10 | discovered_unverified |
 | KB-2022-0062 — [What would the matrix do?: a systematic review of K-12 AI learning contexts and learner-interface interactions](https://doi.org/10.1080/15391523.2022.2148785) | journal_article | 2022-11-29 | discovered_unverified |
 | KB-2022-0063 — [Development research on an AI English learning support system to facilitate learner-generated-context-based learning](https://doi.org/10.1007/s11423-022-10172-2) | journal_article | 2022-12-12 | discovered_unverified |
+| KB-2022-0119 — [A systematic review of teaching and learning machine learning in K-12 education](https://doi.org/10.1007/s10639-022-11416-7) | journal_article | 2022-11-07 | discovered_unverified |
 
 ## 2023｜event_year
 
@@ -1797,6 +1832,10 @@
 | KB-2026-0527 — [Nye tal om eksamenskarakterer på gymnasierne: Eleverne på stx klarer sig dårligere i skriftlig dansk](https://uvm.dk/aktuelt/nyheder/2026/oktober/261029-nye-tal-om-eksamenskarakterer-paa-gymnasierne-eleverne-paa-stx-klarer-sig-daarligere-i-skriftlig-dansk/) | government_announcement | 2026-10-29 | bibliographic_checked |
 | KB-2026-0528 — [UNESCO Santiago commemorated the 25th anniversary of the Information for All Programme (IFAP) with regional events on artificial intelligence and critical literacy](https://www.unesco.org/en/articles/unesco-santiago-commemorated-25th-anniversary-information-all-programme-ifap-regional-events) | government_announcement | 2026-10-29 | bibliographic_checked |
 | KB-2026-0529 — [深化媒體素養議題融入，掌握數位時代資訊防身術～2026年第4次審定本教科用書專題研習](https://www.naer.edu.tw/PageDoc/Detail?fid=12&id=5700) | government_announcement | 2026-11-01 | bibliographic_checked |
+| KB-2026-0530 — [Explainable Machine Learning for Analyzing AI Adoption and Teachers’ Professional Development Needs: Evidence from TALIS 2024 in Kazakhstan](https://doi.org/10.3390/computers15110795) | journal_article | 2026-11-03 | bibliographic_checked |
+| KB-2026-0531 — [Chemistry teachers’ research competence following AI-supported professional development: a mixed-methods pre–post study](https://doi.org/10.3389/feduc.2026.1961742) | journal_article | 2026-11-05 | bibliographic_checked |
+| KB-2026-0532 — [U.S. State Guidance on AI in K-12 Education: A Comparative Content and Citation Analysis](https://arxiv.org/abs/2611.06762) | preprint | 2026-11-04 | bibliographic_checked |
+| KB-2026-0533 — [AI小將脫穎而出！115年度總統盃AI素養爭霸賽晉級名單揭曉 11月13日齊聚臺北總決賽](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=F58AF01B8D375040) | government_announcement | 2026-11-05 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
