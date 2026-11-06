@@ -1833,6 +1833,9 @@
 | KB-2026-0528 — [UNESCO Santiago commemorated the 25th anniversary of the Information for All Programme (IFAP) with regional events on artificial intelligence and critical literacy](https://www.unesco.org/en/articles/unesco-santiago-commemorated-25th-anniversary-information-all-programme-ifap-regional-events) | government_announcement | 2026-10-29 | bibliographic_checked |
 | KB-2026-0529 — [深化媒體素養議題融入，掌握數位時代資訊防身術～2026年第4次審定本教科用書專題研習](https://www.naer.edu.tw/PageDoc/Detail?fid=12&id=5700) | government_announcement | 2026-11-01 | bibliographic_checked |
 | KB-2026-0530 — [Explainable Machine Learning for Analyzing AI Adoption and Teachers’ Professional Development Needs: Evidence from TALIS 2024 in Kazakhstan](https://doi.org/10.3390/computers15110795) | journal_article | 2026-11-03 | bibliographic_checked |
+| KB-2026-0531 — [Chemistry teachers’ research competence following AI-supported professional development: a mixed-methods pre–post study](https://doi.org/10.3389/feduc.2026.1961742) | journal_article | 2026-11-05 | bibliographic_checked |
+| KB-2026-0532 — [U.S. State Guidance on AI in K-12 Education: A Comparative Content and Citation Analysis](https://arxiv.org/abs/2611.06762) | preprint | 2026-11-04 | bibliographic_checked |
+| KB-2026-0533 — [AI小將脫穎而出！115年度總統盃AI素養爭霸賽晉級名單揭曉 11月13日齊聚臺北總決賽](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=F58AF01B8D375040) | government_announcement | 2026-11-05 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
