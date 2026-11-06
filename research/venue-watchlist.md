@@ -73,7 +73,7 @@
 | J52 | 背景 | Behavioral Sciences | 心理學取向的中小學 AI 研究（學生 AI 使用與素養、教師 AI 信念與準備度、學前）；MDPI 開放取用、收錄於 DOAJ；2025 年起 AI × 中小學教育約 22 篇，量大且須逐篇確認學段與研究品質（2026-10-28 管理者決定加入，見下方「2026-10-28 期刊反查」） | [期刊頁](https://www.mdpi.com/journal/behavsci) |
 | J53 | 擴充 | International Journal of Technology and Design Education | 技術與設計教育、幼兒至中小學 AI 素養課程；Springer；2025 年起 AI 相關論文多屬大學設計教育，中小學 AI 約 4 篇，近半缺摘要，須逐篇確認學段（2026-10-30 管理者決定由觀察池升級，見下方「2026-10-30 期刊反查」） | [期刊頁](https://link.springer.com/journal/10798) |
 
-## 3. 國際會議池（21 個正式系列）
+## 3. 國際會議池（22 個正式系列）
 
 **重要**：同一會議的 full paper、short paper、workshop、poster、demo、doctoral consortium 等不能混為同等證據。會議網站與論文集為不同入口；2026 年會議可能已有 proceedings，但沒有論文集的活動公告不能當作正式論文。
 
@@ -101,6 +101,7 @@
 
 | C21 | 核心 | WiPSCE | International Conference on Primary and Secondary Computing Education Research | 國小至高中運算／AI 教育及教師研究 | [2026 官方會議](https://www.wipsce.org/2026/) |
 | C22 | 核心 | EAAI | Symposium on Educational Advances in Artificial Intelligence | AI 教育與 K–12 課程；須逐篇確認學段 | [AAAI 官方](https://aaai.org/conference/aaai/aaai-26/eaai-26/) |
+| C23 | 擴充 | Koli Calling | Koli Calling International Conference on Computing Education Research | 運算教育研究、K–12 AI 素養課程與教學；須逐篇確認學段與論文類型（2026-11-05 管理者決定加入，見下方「2026-11-05 反查」） | [官方會議](https://www.kolicalling.fi/) |
 
 ## 4. 跨庫學術索引及角色
 
@@ -190,7 +191,7 @@ ai_lit_class,ai_lit_dims,ai_lit_note
 - **AI 素養範圍**：學段之外另判 A／B／C（[AI 素養範圍判斷準則](ai-literacy-scope-criteria.md)）；期刊或會議名稱含 AI 不等於屬 A 或 B，AI 只作研究方法或系統後端者為 C。
 - **證據強度**：閱讀優先級 P1/P2/P3 與方法品質分開；自陳、橫斷 SEM、量表驗證及 RCT 不可用同一因果語言。
 - **會議索引**：以每篇論文 DOI／論文集正式上線日為時間判準，非僅會議活動日期；Full、Short、Poster、Workshop 各自標記。
-- **監測範圍**：收錄 53 種期刊與 21 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
+- **監測範圍**：收錄 53 種期刊與 22 個正式會議系列，但不足以保證全面性；新刊、跨領域來源及非英語研究由 OpenAlex／ERIC／Crossref 與手工補查。
 - **品質確認**：監測候選池要記錄 `verification_status`（verified / partial / pending）、`population_level`、`evidence_design`、`publication_status`，不可僅以期刊名稱推斷研究品質。
 
 ## 10. 維護提醒
@@ -310,6 +311,21 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
   - **補收：** 管理者決定補收 2025 年起的中小學 AI 論文：`berj.70208`（A）、`berj.4200`（B）；`berj.4120` 判 C 不收。
   - **比對方式：** ISSN 0141-1926（紙本）、1469-3518（電子），DOI 前綴 `10.1002/berj`。
 - **ACR 決定：不列入，不進觀察池。** 計算機應用期刊，總篇數少，中小學只有本次一篇；命中時逐篇判斷。比對方式：ISSN 1559-6915（紙本）、1931-0161（電子）或期刊名；ACM DOI 前綴每期不同，不可用前綴比對。
+
+### 2026-11-05 反查：Koli Calling、MDPI Computers（管理者決定）
+
+每日短訊 2026-11-05 的觀察項出自 Koli Calling 2026（四篇 K-12 AI 素養論文）與 MDPI Computers（`10.3390/computers15110795`，哈薩克 TALIS 2024 國中教師 7,360 人）。逐篇判讀見 [p0-venue-1105](p0-venue-1105/review.md)。
+
+- **C23 Koli Calling（擴充）：** 芬蘭主辦的運算教育研究會議，論文集由 ACM 出版（ICPS）。2025 屆 68 篇、2026 屆 81 篇；依摘要，2025 屆中小學 AI 7 篇（AI 素養為主），密度高於多數期刊，與 C21 WiPSCE 同類。
+  - **補收：** 管理者決定補收 2025 屆，6 篇（A 5、B 1）；demo 論文 `3769994.3770061` 依會議論文類型區分原則不收。
+  - **2026 屆：** 論文集 2026-11-04 上線，OpenAlex 尚未收錄、ACM 頁 403；`3856208.3856228`、`…281`、`…286`、`…289` 待取得摘要後由每日短訊處理（首發日 2026-11-04）。
+  - **使用注意：** 須區分 full paper、short paper、poster、demo；多數 AI 論文屬大學程式設計教育，須逐篇確認學段。
+  - **比對方式：** 論文集名稱「Koli Calling International Conference on Computing Education Research」；ACM DOI 前綴每屆不同，不可用前綴比對。
+- **MDPI Computers：觀察池，不給正式 ID。** 命中時逐篇判斷；不列入「不收出處」。
+  - **理由：** 電腦科學綜合期刊，2025 年起 1,319 篇，中小學 AI 約 5 篇（約每月 0.25 篇），但含小學 AI 素養研究；MDPI 出版、在 DOAJ。
+  - **補收：** 管理者決定補收 4 篇（`computers15070443`、`computers15010014`、`computers15010049`、`computers14090368`）；`computers15110795` 單篇例外收錄。
+  - **比對方式：** ISSN 2073-431X，DOI 前綴 `10.3390/computers`。
+- **技術註記：** `research/validate-knowledge-base.js` 對 `published_in` 只檢查代碼開頭為 J 或 C，C23 不需放寬驗證程式。
 
 ### 不收出處：每日與週檢索直接排除（2026-10-10 管理者決定）
 

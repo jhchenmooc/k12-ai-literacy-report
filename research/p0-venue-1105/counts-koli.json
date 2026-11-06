@@ -1,0 +1,30 @@
+{
+ "source": "Koli Calling International Conference on Computing Education Research",
+ "openalex": "S4306420430",
+ "requests": [
+  {
+   "query": "crossref_proceedings_2025_2026",
+   "url": "https://api.crossref.org/works?filter=prefix:10.1145,from-pub-date:2025-01-01&query.container-title=Koli%20Calling&rows=200&select=DOI,title,container-title,issued",
+   "utc": "2026-11-05",
+   "http": 200,
+   "count_25th": 68,
+   "count_26th": 81
+  },
+  {
+   "query": "openalex_2025",
+   "url": "https://api.openalex.org/works?filter=primary_location.source.id:S4306420430,from_publication_date:2025-01-01&per_page=200&select=doi,title,publication_date,abstract_inverted_index",
+   "utc": "2026-11-05",
+   "http": 200,
+   "count": 68,
+   "with_abstract": 67
+  }
+ ],
+ "results": {
+  "total_2025": 68,
+  "total_2026": 81,
+  "ai_title_2025_2026": 37,
+  "k12_ai_2025_by_abstract": 7,
+  "k12_ai_2026_by_title": 5
+ },
+ "note": "26th proceedings (2026-11-04) not yet in OpenAlex; ACM pages 403."
+}
