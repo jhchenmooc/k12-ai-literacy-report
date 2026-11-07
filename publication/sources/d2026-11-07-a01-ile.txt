@@ -1,0 +1,4 @@
+Interactive Learning Environments (Taylor & Francis) | 2026-11-05 | Navigating AI ethics in K–12 classrooms: exploring teachers' AI ethics alignment through activity theory | https://doi.org/10.1080/10494820.2026.2754924 | Crossref works record read 2026-11-07T01:10Z; publisher page returned a Cloudflare verification page (HTTP 403) to automated requests on 2026-11-06 (not bypassed); first-disclosure date per Crossref published-online; Crossref has no abstract; bibliographic facts only
+Crossref: published-online 2026-11-05; record created 2026-11-05; Interactive Learning Environments, no volume or issue assigned; authors Song, Lin, Wang, Wu
+OpenAlex abstract sentence (reconstructed from the OpenAlex abstract index; not read from the publisher page):
+Based on metaphor elicitation tasks completed by 26 teachers and semi-structured interviews with 16 of them, the study reveals mixed and still-developing perspectives on AI ethics.

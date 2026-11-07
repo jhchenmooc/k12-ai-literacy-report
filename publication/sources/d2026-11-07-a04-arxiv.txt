@@ -1,0 +1,4 @@
+arXiv | 2026-11-05 | Thinking Is Not Writing: Designing AI Chatbots to Connect Reasoning and Revision | https://arxiv.org/abs/2611.07792 | arXiv abstract page read 2026-11-07T00:40Z (HTTP 200): v1 submitted Thu, 5 Nov 2026 10:32:51 UTC; no earlier version found by Crossref or OpenAlex title search
+arXiv:2611.07792; authors Favero, Käser, Pérez-Ortiz, Oliver; preprint (not peer reviewed); the HTML version's Participants section describes students from four Theory of Knowledge cohorts at Swiss secondary schools offering the International Baccalaureate, aged 12 to 19 (M = 17.0)
+Abstract excerpt (abstract sentences 2 and 3; joined by " … "):
+We present Maike, a Socratic chatbot supporting writing through argument diagnosis, targeted questioning, and a student model across Think and Write modes. … In a classroom study, 65 secondary-school students used Maike or a control chatbot sharing the interface, language model, and Think/Write modes.
