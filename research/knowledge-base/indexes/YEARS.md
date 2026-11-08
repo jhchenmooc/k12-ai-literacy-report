@@ -1854,6 +1854,7 @@
 | KB-2026-0542 — [Developing and Validating an AI-Literacy-Integrated Teaching Acceptance and Readiness Scale for Mathematics Teachers](https://doi.org/10.1177/07356331261503523) | journal_article | 2026-11-05 | bibliographic_checked |
 | KB-2026-0543 — [Empowering K-12 teachers through GenAI-supported vibe coding for educational software development](https://doi.org/10.1080/15391523.2026.2758174) | journal_article | 2026-11-06 | bibliographic_checked |
 | KB-2026-0544 — [Adolescents’ Motivation for AI-Enabled Environmental Actions: The Role of Supportive Environments and Expectancy–Value Theory](https://doi.org/10.3390/bs16112107) | journal_article | 2026-11-05 | bibliographic_checked |
+| KB-2026-0545 — [AI-Enabled Teaching Capability and Sustainable Education Practice among Teachers in Mountainous China: The Roles of OER-Enabled Pedagogical Capacity and Institutional Digital Support](https://doi.org/10.36941/jesr-2026-0459) | journal_article | 2026-11-05 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
