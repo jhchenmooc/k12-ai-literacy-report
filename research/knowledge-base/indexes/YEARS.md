@@ -1346,6 +1346,13 @@
 | KB-2025-0508 — [Effects of design thinking STEAM instruction on AI learning and creativity](https://doi.org/10.1007/s10798-025-09977-y) | journal_article | 2025-04-03 | discovered_unverified |
 | KB-2025-0509 — [Artificial intelligence literacy education in primary schools: a review](https://doi.org/10.1007/s10798-025-09979-w) | journal_article | 2025-04-29 | discovered_unverified |
 | KB-2025-0510 — [Pedagogical considerations in the automation era: A systematic literature review of AIEd in K‐12 authentic settings](https://doi.org/10.1002/berj.4200) | journal_article | 2025-06-24 | bibliographic_checked |
+| KB-2025-0511 — [The CEDE Model: A Learning-Sciences Based Approach for Critical and Transformative K–12 AI Education](https://doi.org/10.1145/3769994.3770026) | conference_paper | 2025-11-10 | bibliographic_checked |
+| KB-2025-0512 — [Teaching Data Concepts and Practices in Secondary School Education on Artificial Intelligence: Approaches, Mechanisms, and Emerging Local Theories](https://doi.org/10.1145/3769994.3770021) | conference_paper | 2025-11-10 | bibliographic_checked |
+| KB-2025-0513 — [Failure as a Learning Opportunity in AI Literacy](https://doi.org/10.1145/3769994.3770062) | conference_paper | 2025-11-10 | bibliographic_checked |
+| KB-2025-0514 — [Learning AI through a Culturally-Infused, Gamified and Collaborative Platform](https://doi.org/10.1145/3769994.3770050) | conference_paper | 2025-11-10 | bibliographic_checked |
+| KB-2025-0515 — ["Grillz on a hijabi": Intersectional Identities in Fostering Critical AI Literacy](https://doi.org/10.1145/3769994.3770037) | conference_paper | 2025-11-10 | bibliographic_checked |
+| KB-2025-0516 — [GenAI Voice Mode in Programming Education](https://doi.org/10.1145/3769994.3770001) | conference_paper | 2025-11-10 | bibliographic_checked |
+| KB-2025-0517 — [ChatGPT in Early Childhood Science Education: Can It Offer Innovative Effective Solutions to Overcome Challenges?](https://doi.org/10.3390/computers14090368) | journal_article | 2025-09-03 | bibliographic_checked |
 | KB-2026-0053 — [The phenomenon of deep nudes—a new threat to children and adults](https://doi.org/10.1007/s00146-025-02425-4) | journal_article | 2025-07-01 | discovered_unverified |
 | KB-2026-0096 — [Advancing Artificial Intelligence Education for American Youth](https://www.federalregister.gov/documents/2025/04/28/2025-07368/advancing-artificial-intelligence-education-for-american-youth) | binding_policy | 2025-04-28 | discovered_unverified |
 | KB-2026-0150 — [Unpacking ethics-domain of intelligent-TPACK scale in relation to in-service teachers’ trust and distrust](https://doi.org/10.1016/j.caeo.2025.100321) | journal_article | 2025-12-04 | discovered_unverified |
@@ -1841,6 +1848,9 @@
 | KB-2026-0536 — [Toward calibrated AI readiness in K–12 school-based practice: the roles of AI-related epistemic vigilance capacity and governance clarity](https://doi.org/10.3389/feduc.2026.1946896) | journal_article | 2026-11-06 | bibliographic_checked |
 | KB-2026-0537 — [Thinking Is Not Writing: Designing AI Chatbots to Connect Reasoning and Revision](https://arxiv.org/abs/2611.07792) | preprint | 2026-11-05 | bibliographic_checked |
 | KB-2026-0538 — [Development and validation of a framework and scale for K–12 teacher–AI collaborative teaching competence](https://doi.org/10.1007/s11423-026-10762-4) | journal_article | 2026-11-07 | bibliographic_checked |
+| KB-2026-0539 — [Conceptual Framework of Common Misconceptions Regarding Generative AI in Elementary School Students Using Concurrent Think-Aloud Protocols](https://doi.org/10.3390/computers15070443) | journal_article | 2026-07-12 | bibliographic_checked |
+| KB-2026-0540 — [Exploring Greek Upper Primary School Students’ Perceptions of Artificial Intelligence: A Qualitative Study Across Cognitive, Emotional, Behavioral, and Ethical Dimensions](https://doi.org/10.3390/computers15010014) | journal_article | 2026-01-01 | bibliographic_checked |
+| KB-2026-0541 — [Artificial Intelligence in K-12 Education: A Systematic Review of Teachers’ Professional Development Needs for AI Integration](https://doi.org/10.3390/computers15010049) | journal_article | 2026-01-12 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
