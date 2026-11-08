@@ -135,3 +135,7 @@
 ## 後續（2026-11-08）
 
 - D20261104-02 依管理者 2026-11-08 提供的出版者 PDF 改為作者摘要型；細節見 2026-11-08-daily-check.md 的 r1 節與 publication/corrections.json。
+
+## 後續（2026-11-08）
+
+- D20261104-01 依管理者 2026-11-08 提供的出版者 PDF 改為作者摘要型；細節見 2026-11-08-daily-check.md 的 r2 節與 publication/corrections.json。
