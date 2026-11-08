@@ -77,6 +77,8 @@
 
 **重要**：同一會議的 full paper、short paper、workshop、poster、demo、doctoral consortium 等不能混為同等證據。會議網站與論文集為不同入口；2026 年會議可能已有 proceedings，但沒有論文集的活動公告不能當作正式論文。
 
+**poster 與 demo 不收（2026-11-08 管理者決定）**：所有會議的 poster 一律不收；demo 論文依 2026-11-05 Koli Calling 先例不收。命中時在查核紀錄註明「poster／demo，不收」。
+
 | ID | 級別 | 縮寫 | 系列／完整名稱 | 適用主題 | 官方入口 |
 |---|---|---|---|---|---|
 | C01 | 核心 | AIED | International Conference on Artificial Intelligence in Education | AI輔助學習、人機協同、教師、倫理 | [系列／論文庫](https://www.aied-conference.org/2026) |
@@ -319,7 +321,7 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
 - **C23 Koli Calling（擴充）：** 芬蘭主辦的運算教育研究會議，論文集由 ACM 出版（ICPS）。2025 屆 68 篇、2026 屆 81 篇；依摘要，2025 屆中小學 AI 7 篇（AI 素養為主），密度高於多數期刊，與 C21 WiPSCE 同類。
   - **補收：** 管理者決定補收 2025 屆，6 篇（A 5、B 1）；demo 論文 `3769994.3770061` 依會議論文類型區分原則不收。
   - **2026 屆：** 論文集 2026-11-04 上線，OpenAlex 尚未收錄、ACM 頁 403；`3856208.3856228`、`…281`、`…286`、`…289` 待取得摘要後由每日短訊處理（首發日 2026-11-04）。
-  - **使用注意：** 須區分 full paper、short paper、poster、demo；多數 AI 論文屬大學程式設計教育，須逐篇確認學段。
+  - **使用注意：** 須區分 full paper、short paper、poster、demo；多數 AI 論文屬大學程式設計教育，須逐篇確認學段。poster 與 demo 不收（見第 3 節開頭；2026-11-08 管理者決定，poster `3856208.3856289` 因此不收）。2026 屆另有 `3856208.3856228`（中小學師生 15/33，未過半）與 `3856208.3856281`（管理者 2026-11-08 決定）不收，見每日短訊 2026-11-08 查核紀錄。
   - **比對方式：** 論文集名稱「Koli Calling International Conference on Computing Education Research」；ACM DOI 前綴每屆不同，不可用前綴比對。
 - **MDPI Computers：觀察池，不給正式 ID。** 命中時逐篇判斷；不列入「不收出處」。
   - **理由：** 電腦科學綜合期刊，2025 年起 1,319 篇，中小學 AI 約 5 篇（約每月 0.25 篇），但含小學 AI 素養研究；MDPI 出版、在 DOAJ。
