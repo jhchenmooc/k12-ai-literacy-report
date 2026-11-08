@@ -136,3 +136,7 @@
   - 知識庫 KB-2026-0518：KR-15867 由 AILIT_B 改為 AILIT_A，新增 KR-15869（T-BAS）。
   - issues.json 加 `revised_on` 2026-11-04；corrections.json 加 `daily-2026-11-03-r1`。
 - **摘要文字：** 不變。
+
+## 後續（2026-11-08）
+
+- D20261103-02、-03 依管理者 2026-11-08 提供的出版者 PDF 改為作者摘要型；細節見 2026-11-08-daily-check.md 的 r1 節與 publication/corrections.json。

@@ -1851,6 +1851,9 @@
 | KB-2026-0539 — [Conceptual Framework of Common Misconceptions Regarding Generative AI in Elementary School Students Using Concurrent Think-Aloud Protocols](https://doi.org/10.3390/computers15070443) | journal_article | 2026-07-12 | bibliographic_checked |
 | KB-2026-0540 — [Exploring Greek Upper Primary School Students’ Perceptions of Artificial Intelligence: A Qualitative Study Across Cognitive, Emotional, Behavioral, and Ethical Dimensions](https://doi.org/10.3390/computers15010014) | journal_article | 2026-01-01 | bibliographic_checked |
 | KB-2026-0541 — [Artificial Intelligence in K-12 Education: A Systematic Review of Teachers’ Professional Development Needs for AI Integration](https://doi.org/10.3390/computers15010049) | journal_article | 2026-01-12 | bibliographic_checked |
+| KB-2026-0542 — [Developing and Validating an AI-Literacy-Integrated Teaching Acceptance and Readiness Scale for Mathematics Teachers](https://doi.org/10.1177/07356331261503523) | journal_article | 2026-11-05 | bibliographic_checked |
+| KB-2026-0543 — [Empowering K-12 teachers through GenAI-supported vibe coding for educational software development](https://doi.org/10.1080/15391523.2026.2758174) | journal_article | 2026-11-06 | bibliographic_checked |
+| KB-2026-0544 — [Adolescents’ Motivation for AI-Enabled Environmental Actions: The Role of Supportive Environments and Expectancy–Value Theory](https://doi.org/10.3390/bs16112107) | journal_article | 2026-11-05 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

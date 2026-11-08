@@ -247,3 +247,7 @@
 - **頁面：** issues.json 加 `revised_on` 2026-11-05，corrections.json 加 `daily-2026-11-05-r1`。
 - **候選池與知識庫：** W2026-10-30-A27（batch 2026-11-05-daily-2）→ KB-2026-0530。
 - **瀏覽器清單：** 加第 6 項 https://doi.org/10.3390/computers15110795 （文章頁 Published 日期與摘要截圖，或全文 PDF；期限 11-10）。
+
+## 後續（2026-11-08）
+
+- D20261105-01、-08 依管理者 2026-11-08 提供的出版者 PDF 改為作者摘要型；細節見 2026-11-08-daily-check.md 的 r1 節與 publication/corrections.json。
