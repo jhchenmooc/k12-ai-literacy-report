@@ -153,5 +153,56 @@
    "今年教育部提出的「未來人才AI能力圖像」，即強調運用AI學習、負責任使用AI、運用AI解決問題，以及AI無法取代的能力。"
   ],
   "attributed_summary": "教育部表示，115 年度總統盃 AI 素養爭霸賽全國 22 縣市共選拔 201 隊、384 名國中小學生參與，最終 80 隊晉級，將於 11 月 13 日在臺北世貿一館進行總決賽；正式賽分國小與國中的一般組、偏鄉組，引導學生運用監督式學習訓練 AI 模型，表演賽挑戰強化式學習；教育部提出的「未來人才AI能力圖像」強調運用AI學習、負責任使用AI等。"
+ },
+ {
+  "claim_id": "D20261106-04",
+  "candidate_id": "W2026-11-06-A12",
+  "kind": "research",
+  "claim_text": "來源機構：Journal of Educational and Social Research（Richtmann）；資料標題：AI-Enabled Teaching Capability and Sustainable Education Practice among Teachers in Mountainous China: The Roles of OER-Enabled Pedagogical Capacity and Institutional Digital Support；來源刊登日：2026-11-05。作者摘要報告：研究探討中國山區教師的 AI 賦能教學能力與開放教育資源賦能的教學法能力，與永續教育實踐的關聯，並評估開放教育資源賦能教學法能力所扮演的間接角色，以及機構數位支援的調節角色；採橫斷面問卷調查，對象為雲南、貴州、四川、甘肅、青海 18 個山區縣 54 所學校的 462 名教師，以 24 題問卷與偏最小平方結構方程模型分析。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "V2",
+  "daily_fact_kind": "research_abstract_attributed_summary",
+  "source_document_type": "peer_reviewed_article",
+  "source_title": "AI-Enabled Teaching Capability and Sustainable Education Practice among Teachers in Mountainous China: The Roles of OER-Enabled Pedagogical Capacity and Institutional Digital Support",
+  "title_zh": "中國山區教師的 AI 賦能教學能力與永續教育實踐：開放教育資源賦能的教學法能力與機構數位支援的角色",
+  "source_organization": "Journal of Educational and Social Research（Richtmann）",
+  "source_url": "https://doi.org/10.36941/jesr-2026-0459",
+  "evidence_source_url": "https://doi.org/10.36941/jesr-2026-0459",
+  "source_locator": "首發日依 Crossref published-online：2026-11-05（Crossref 摘要所附出版資訊與出版者 PDF 首頁只標年月：Published: November 2026）；Journal of Educational and Social Research 16(6), 602；摘要歸屬：出版者 PDF（管理者 2026-11-08 提供）Abstract 第 1、2、3 句",
+  "source_type": "research_publication",
+  "checked_at": "2026-11-08",
+  "publication_date": "2026-11-05",
+  "first_disclosed_on": "2026-11-05",
+  "evidence_path": "publication/sources/d2026-11-06-a05-jesr-pdf.txt",
+  "evidence_sha256": "4a6f9af69f5d5bb623d75d01670d1bc5b238bfea873d396aac8f9963f63ead05",
+  "original_excerpt": "This study examines how teachers' artificial intelligence (AI)-enabled teaching capability and open educational resources (OER)-enabled pedagogical capacity are associated with sustainable education practice in mountainous areas of China. … It also assesses the indirect role of OER-enabled pedagogical capacity and the moderating role of institutional digital support. … The study describes a cross-sectional quantitative survey of 462 teachers from 54 schools in 18 mountainous counties across Yunnan, Guizhou, Sichuan, Gansu, and Qinghai, using a 24-item questionnaire and partial least squares structural equation modelling with 5,000 bootstrap resamples.",
+  "interpretation_note": "轉述作者摘要的研究目的、變項、樣本與分析方法；各路徑係數、間接效果、調節效果與解釋量屬相關結果，不寫入，引用時不得寫成因果。",
+  "scope_limitation": "期刊論文（Journal of Educational and Social Research，不在監測清單，審查程序未獨立核實；管理者 2026-11-06 同意以單篇例外發布）；出版者 PDF Methodology 節寫明樣本來自 54 所公立中小學（3.1 節：涵蓋小學、國中、高中），橫斷面自陳問卷，結果屬相關；作者寫明抽樣未建立選取機率或代表性抽樣架構。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "decision": "publish",
+  "ai_crosscheck_record": "第一輪 2026-11-06 子代理以 Crossref 關鍵詞查詢列為觀察（不在監測清單）；管理者 2026-11-06 決定此篇以單篇例外只發書目（venue-watchlist 2026-11-06 期刊反查），2026-11-08 在本 session 確認；本 session 讀 Crossref 紀錄（published-online 2026-11-05、16(6), 602、作者、題名、摘要；無 update-to 標記）；第二輪 2026-11-08 由隔離子代理對照中文譯名、範圍說明與分類，判定需修改，依建議 locator 刪去無紀錄支持的「出版社頁」、中文譯名區分 Pedagogical Capacity 為「教學法能力」、分類理由寫明依變項為永續教育實踐、範圍說明註明學段為推定，修正後一致；同日管理者提供出版者 PDF，本 session 讀 Methodology 與 3.1 節確認樣本為 54 所公立中小學教師（小學、國中、高中），範圍說明改依全文；PDF 首頁只印 Published: November 2026，首發日不變；依單篇例外仍只發書目。Crossref 摘要只標年月，首發日採 Crossref published-online，只發書目。管理者 2026-11-08 決定改為作者摘要型；本 session 依出版者 PDF 擇摘要第 1、2、3 句撰寫中文摘要；第二輪 2026-11-08 由隔離子代理逐句對照全文，判定需修改，依建議把「後者的間接角色」改為明寫開放教育資源賦能教學法能力，範圍說明補「選取機率」，修正後一致。初版以書目型發布，2026-11-08 依出版者 PDF 改為作者摘要型。同一模型，非獨立審閱。",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-PD"
+  ],
+  "ai_lit_note": "山區學校教師的 AI 賦能教學能力及其與永續教育實踐的關聯，屬教師 AI 素養（A），對應 T-TEA「評估AI工具輔助教學的適用性」、T-PD「評估教師AI素養以規劃專業增能」",
+  "audience": "k12",
+  "attributed_summary": "研究探討中國山區教師的 AI 賦能教學能力與開放教育資源賦能的教學法能力，與永續教育實踐的關聯，並評估開放教育資源賦能教學法能力所扮演的間接角色，以及機構數位支援的調節角色；採橫斷面問卷調查，對象為雲南、貴州、四川、甘肅、青海 18 個山區縣 54 所學校的 462 名教師，以 24 題問卷與偏最小平方結構方程模型分析。",
+  "summary_evidence_spans": [
+   "This study examines how teachers' artificial intelligence (AI)-enabled teaching capability and open educational resources (OER)-enabled pedagogical capacity are associated with sustainable education practice in mountainous areas of China.",
+   "It also assesses the indirect role of OER-enabled pedagogical capacity and the moderating role of institutional digital support.",
+   "The study describes a cross-sectional quantitative survey of 462 teachers from 54 schools in 18 mountainous counties across Yunnan, Guizhou, Sichuan, Gansu, and Qinghai, using a 24-item questionnaire and partial least squares structural equation modelling with 5,000 bootstrap resamples."
+  ]
  }
 ]
