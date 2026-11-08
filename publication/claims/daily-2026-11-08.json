@@ -140,12 +140,13 @@
   "ai_crosscheck_status": "concordant",
   "ai_crosscheck_passes": 2,
   "decision": "publish",
-  "ai_crosscheck_record": "第一輪 2026-11-07 子代理以監測期刊 ISSN 查詢列出（T&F 頁 Cloudflare，Crossref 無摘要），列入瀏覽器清單；管理者 2026-11-08 提供出版者 PDF，本 session 讀 PDF 核對 Published online 06 Nov 2026 與 Participants and procedure（南韓在職中小學教師 12 人），擇摘要第 3、4 句撰寫中文摘要與中文譯名；第二輪 2026-11-08 由隔離子代理逐句對照全文，判定需修改，依建議範圍說明改寫作者自述的探索性與描述性證據（刪去全文未寫的「無對照組」），修正後一致；分類維持 B，審查者提示可討論 A（邊界案例，已告知管理者）。同一模型，非獨立審閱。",
-  "ai_lit_class": "B",
+  "ai_crosscheck_record": "第一輪 2026-11-07 子代理以監測期刊 ISSN 查詢列出（T&F 頁 Cloudflare，Crossref 無摘要），列入瀏覽器清單；管理者 2026-11-08 提供出版者 PDF，本 session 讀 PDF 核對 Published online 06 Nov 2026 與 Participants and procedure（南韓在職中小學教師 12 人），擇摘要第 3、4 句撰寫中文摘要與中文譯名；第二輪 2026-11-08 由隔離子代理逐句對照全文，判定需修改，依建議範圍說明改寫作者自述的探索性與描述性證據（刪去全文未寫的「無對照組」），修正後一致；分類維持 B，審查者提示可討論 A（邊界案例，已告知管理者）。管理者 2026-11-08 再看後決定改判 A：研究問題 2 分析教師的提示意圖與人機協作方式（理解與評估類提示偏少），屬教師使用 AI 的策略，依準則 A 與 B 兼有時判 A，對應 T-BAS「優化提示以實踐AI協作」、T-TEA「客製AI教學工具與資源」；摘要文字不變。同一模型，非獨立審閱。",
+  "ai_lit_class": "A",
   "ai_lit_dims": [
+   "T-BAS",
    "T-TEA"
   ],
-  "ai_lit_note": "中小學教師以生成式 AI 支援的 vibe coding 自行開發教學與行政工具，研究重點為工具使用歷程，屬 AI 賦能教學（B），對應 T-TEA「客製AI教學工具與資源」",
+  "ai_lit_note": "中小學教師以生成式 AI 支援的 vibe coding 自行開發教學與行政工具，研究分析教師與生成式 AI 的提示互動與協作方式，屬教師 AI 素養（A），對應 T-BAS「優化提示以實踐AI協作」、T-TEA「客製AI教學工具與資源」",
   "audience": "k12",
   "summary_evidence_spans": [
    "This mixed-method study analyzed vibe coding prompt logs and development notes from 12 K-12 Korean teachers over a three-week period to explore what they created, how they navigated the development process, and what opportunities and challenges they experienced.",
