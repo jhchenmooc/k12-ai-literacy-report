@@ -36,3 +36,8 @@
 | computers14090368 | 土耳其幼教教師 33 人看 ChatGPT 用於幼兒科學教育 | A（T-TEA），k12（學前）；補收 |
 
 - **不收：** `computers15060385`（羅馬尼亞 AI 機器人平台報名趨勢，AI 只是平台，判 C）；`computers15090635`（成人中學生，不屬 K-12）。
+
+## 更正（2026-11-08）
+
+- **首次公開日：** 第 25 屆論文的首次公開日以 Crossref published-online 2025-11-10 為準；OpenAlex publication_date 為 2025-11-06，不採用。補收 6 篇已入庫為 KB-2025-0511～0516（#441），使用 2025-11-10。
+- **驗證程式：** 本次反查時以為 `published_in` 只檢查代碼開頭；實際 `research/validate-knowledge-base.js` 另有代碼範圍檢查，原只到 C22。已在 #441 放寬到 C23。
