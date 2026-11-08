@@ -16106,7 +16106,7 @@
 "KR-16244","KB-2026-0543","has_topic","vocabulary","TOPIC_TEACHER_PD","https://doi.org/10.1080/15391523.2026.2758174","discovered_unverified"
 "KR-16245","KB-2026-0543","has_method","vocabulary","METHOD_MIXED","https://doi.org/10.1080/15391523.2026.2758174","discovered_unverified"
 "KR-16246","KB-2026-0543","studies_country","vocabulary","KR","https://doi.org/10.1080/15391523.2026.2758174","discovered_unverified"
-"KR-16247","KB-2026-0543","has_ailit_class","vocabulary","AILIT_B","https://doi.org/10.1080/15391523.2026.2758174","discovered_unverified"
+"KR-16247","KB-2026-0543","has_ailit_class","vocabulary","AILIT_A","https://doi.org/10.1080/15391523.2026.2758174","discovered_unverified"
 "KR-16248","KB-2026-0543","has_ailit_dim","vocabulary","T-TEA","https://doi.org/10.1080/15391523.2026.2758174","discovered_unverified"
 "KR-16249","KB-2026-0544","has_category","vocabulary","K2","https://doi.org/10.3390/bs16112107","discovered_unverified"
 "KR-16250","KB-2026-0544","published_in","source","J52","https://doi.org/10.3390/bs16112107","discovered_unverified"
@@ -16116,3 +16116,4 @@
 "KR-16254","KB-2026-0544","studies_country","vocabulary","CN","https://doi.org/10.3390/bs16112107","discovered_unverified"
 "KR-16255","KB-2026-0544","has_ailit_class","vocabulary","AILIT_B","https://doi.org/10.3390/bs16112107","discovered_unverified"
 "KR-16256","KB-2026-0544","has_ailit_dim","vocabulary","S-LRN","https://doi.org/10.3390/bs16112107","discovered_unverified"
+"KR-16257","KB-2026-0543","has_ailit_dim","vocabulary","T-BAS","https://doi.org/10.1080/15391523.2026.2758174","discovered_unverified"
