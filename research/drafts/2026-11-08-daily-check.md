@@ -176,3 +176,16 @@ r1 後只剩 1 項：
 - **D20261108-03（JRTE）改判 A：** 管理者要求再看後，本 session 建議改判 A（研究問題 2 分析教師的提示意圖與人機協作方式，屬教師使用 AI 的策略；依準則 A 與 B 兼有時判 A），管理者回覆「改A」。面向改為 T-BAS「優化提示以實踐AI協作」、T-TEA「客製AI教學工具與資源」；摘要不變。更正紀錄 daily-2026-11-08-r2。
 - **D20261108-04（Behavioral Sciences）：** 維持 B。
 - **Federal Register 首次公開日：** 以 public inspection 上架日為準（已寫入 research-tools-guide.md，PR #447）。
+
+## 補記判讀（2026-11-08）
+
+- **Koli `3856208.3856286`〈Three Lenses for Exploring Training Data and Language Model Outputs in K–12 AI Literacy〉：** 不發。OpenAlex 摘要（非原文；ACM 403）寫明為 work-in-progress，且 "In an interactive demonstration, participants apply the lenses…"；頁碼 1–3。依會議論文類型原則 demo 不收（2026-11-07 已記），與 2026-11-08 管理者「poster 不收」一致；如要例外收錄，須管理者另行決定。首發 11-04，期限 11-11。
+- **MDPI Computers `10.3390/computers15110795`：** 已依管理者 2026-11-05 單篇例外發布為 D20261105-08（#435），2026-11-08 依出版者 PDF 升為作者摘要型（#443）。
+- **Informatics in school（俄，觀察池）2026 年第 25 卷第 4 期（Crossref 2026-11-05 上線，共 11 篇）：** 依 venue-watchlist「命中時逐篇判斷；只有實證研究才收，教學實務文章作 B 類或背景資料」，逐篇看 Crossref 英文摘要，沒有可發項目：
+  - `-4-31-36`〈Artificial intelligence as an object of study in the informatics course…〉：課綱草案與教科書文件分析，A（課程內容），非實證研究，作背景資料（月報可參考）。
+  - `-4-53-60`〈Using an AI agent to formulate the task for a school informatics project〉：AI 代理人模式的教學設計說明，B，教學實務，無實證樣本。
+  - `-4-61-71`〈Fostering social responsibility in schoolchildren when teaching Python programming using a neural network〉：含教案的教學實務，A（S-ETH 方向），無實證樣本。
+  - `-4-72-79`〈Neural network as a tool for informatics teachers to develop materials…〉：教師以 DeepSeek 編製教材的實務示例，B，無實證樣本。
+  - `-4-80-82`、`-4-83-87`、`-4-88-96`：Crossref 無摘要，篇幅 3–9 頁，題名為 AI 動畫、AI 程式家教、AI 為學童服務，屬實務短文，不發。
+  - `-4-15-22`、`-4-23-30`：新課綱草案與課程目標論述，AI 只是課綱內容線之一，C／背景。
+  - `-4-6-14`（程式語言選擇的教師調查）、`-4-37-41`（機器人教學基礎設施工具）：無 AI，C。
