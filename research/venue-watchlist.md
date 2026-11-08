@@ -326,6 +326,9 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
   - **補收：** 管理者決定補收 4 篇（`computers15070443`、`computers15010014`、`computers15010049`、`computers14090368`）；`computers15110795` 單篇例外收錄。
   - **比對方式：** ISSN 2073-431X，DOI 前綴 `10.3390/computers`。
 - **技術註記：** `research/validate-knowledge-base.js` 對 `published_in` 只檢查代碼開頭為 J 或 C，C23 不需放寬驗證程式。
+- **更正（2026-11-08）：**
+  - 上一點寫錯。`research/validate-knowledge-base.js` 另有來源代碼範圍檢查（第 69 行，原只接受 C01–C18、C20–C22），測試也明文擋 C23；當時只讀了第 78 行，沒看第 69 行與測試。編輯 session 已在 #441 放寬到 C23，測試改為 C24 無效。日後新增會議或期刊代碼，須同步修改驗證程式與測試。
+  - Koli Calling 2025 屆首次公開日以 Crossref published-online 2025-11-10 為準（OpenAlex publication_date 為 2025-11-06，不採用）；KB-2025-0511～0516 已用 2025-11-10。
 
 ### 2026-11-06 期刊反查：Journal of Educational and Social Research、Informatics in school（管理者決定）
 
