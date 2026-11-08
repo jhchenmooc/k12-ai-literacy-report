@@ -249,6 +249,41 @@
       "audience": "k12",
       "screening_note": "Verified 2026-11-07 for daily brief 2026-11-07.",
       "verification_completed_on": "2026-11-07"
+    },
+    {
+      "candidate_id": "W2026-11-06-A08",
+      "category": "research",
+      "source_url": "https://doi.org/10.1007/s11423-026-10762-4",
+      "source_title": "Development and validation of a framework and scale for K–12 teacher–AI collaborative teaching competence",
+      "source_organization": "Educational Technology Research and Development（Springer）",
+      "source_publication_date": "2026-11-07",
+      "source_locator": "出版社文章頁（link.springer.com，2026-11-08 讀取 200）：Published 07 November 2026；摘要歸屬：Abstract 第 4 至 9 句",
+      "discovered_on": "2026-11-08",
+      "discovery_batch_id": "2026-11-08-daily-1",
+      "first_disclosed_on": "2026-11-07",
+      "source_updates": [],
+      "original_excerpt": "To address this gap, this study develops and validates a dedicated framework and measurement instrument for K–12 Teacher–AI Collaborative Teaching Competence (TAICT-C). … A two-phase sequential mixed-methods design was adopted. … In Phase 1, a three-round Delphi study involving 24 educational technology experts was conducted to develop and refine the TAICT-C framework. … The framework comprised four dimensions: collaborative mindset, precision design, joint teaching, and continuous development. … In Phase 2, a corresponding scale (TAICT-CS) was developed and validated using standardized procedures. … An initial pool of 65 items was generated from the framework, reviewed for content validity, and subsequently administered to 755 K–12 teachers across 23 provinces in China.",
+      "source_checked": true,
+      "claim_text": "來源機構：Educational Technology Research and Development（Springer）；資料標題：Development and validation of a framework and scale for K–12 teacher–AI collaborative teaching competence；來源刊登日：2026-11-07。作者摘要報告：研究發展並驗證 K–12 教師與 AI 協作教學能力（TAICT-C）的框架與測量工具，採兩階段循序混合方法；第一階段由 24 名教育科技專家進行三輪德懷術，框架含協作心態、精準設計、共同教學與持續發展四個向度；第二階段依框架編擬 65 題初始題庫，經內容效度審查後施測於中國 23 個省份的 755 名 K–12 教師。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Educational Technology Research and Development，監測清單 J07）；量表施測對象為中國 23 個省份的 K–12 教師 755 人，框架建構階段另有教育科技專家 24 人；摘要未寫教師是否皆為在職。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-08 子代理以監測期刊 ISSN 查詢列出並讀出版社頁；本 session 擇摘要第 4 至 9 句撰寫中文摘要與中文譯名，不寫因素結構與信效度數值；第二輪 2026-11-08 由隔離子代理逐句對照原文，判定通過，依建議快照與摘要歸屬補入第 8 句（第二階段）、知識庫不標在職以與範圍說明一致、「省」改「省份」，修正後一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-TEA",
+        "T-PD"
+      ],
+      "ai_lit_note": "K–12 教師與 AI 協作教學的能力框架與量表，屬教師 AI 素養（A），對應 T-TEA「促進教師與AI教學協作的正向循環」、T-PD「評估教師AI素養以規劃專業增能」",
+      "audience": "k12",
+      "doi": "10.1007/s11423-026-10762-4",
+      "screening_note": "Verified 2026-11-08 for daily brief 2026-11-08.",
+      "verification_completed_on": "2026-11-08"
     }
   ],
   "search_runs": [
@@ -302,6 +337,32 @@
       ],
       "discovered": 4,
       "added": 4,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-08-daily-1",
+      "searched_on": "2026-11-08",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-11-07,until-created-date:2026-11-08,type:journal-article, six query.bibliographic sets, proceedings-article set, watchlist-ISSN sets; pedagogical AI agent sets on Crossref, OpenAlex and arXiv; arXiv API three sets and cs.CY/cs.HC new listings; alphaXiv; Crossref/OpenAlex re-check of eight pending DOIs; publisher pages one try each (Springer 200; Wiley, T&F, ACM 403 or Cloudflare, not bypassed)",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search and Content API, Federal Register (11-06 issue, public inspection), MEXT (mext_00749 text not yet uploaded), China MOE, HK info.gov.hk 11-07 and 11-08, MOE Korea, KICE, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news (connection reset four times, not read), Executive Yuan gazette open data (11-06 issue; no 11-07 issue listed), Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ],

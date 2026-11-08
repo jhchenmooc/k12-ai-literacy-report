@@ -1840,6 +1840,7 @@
 | KB-2026-0535 — [Self-efficacy, engagement, attitudes, and perceived learning in AI-assisted STEM education](https://doi.org/10.3389/feduc.2026.1977754) | journal_article | 2026-11-06 | bibliographic_checked |
 | KB-2026-0536 — [Toward calibrated AI readiness in K–12 school-based practice: the roles of AI-related epistemic vigilance capacity and governance clarity](https://doi.org/10.3389/feduc.2026.1946896) | journal_article | 2026-11-06 | bibliographic_checked |
 | KB-2026-0537 — [Thinking Is Not Writing: Designing AI Chatbots to Connect Reasoning and Revision](https://arxiv.org/abs/2611.07792) | preprint | 2026-11-05 | bibliographic_checked |
+| KB-2026-0538 — [Development and validation of a framework and scale for K–12 teacher–AI collaborative teaching competence](https://doi.org/10.1007/s11423-026-10762-4) | journal_article | 2026-11-07 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
