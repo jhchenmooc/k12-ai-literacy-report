@@ -1,0 +1,114 @@
+arXiv | 2026-11-04 | U.S. State Guidance on AI in K-12 Education: A Comparative Content and Citation Analysis | https://doi.org/10.48550/arXiv.2611.06762 | Read: arXiv abstract page https://arxiv.org/abs/2611.06762 (HTTP 200, SHA-256 5c2448cf118495198f96fd8b9f0409eecc3fdeab87da8014ec4c6ad743be587c; submission history lists only [v1] Wed, 4 Nov 2026 16:40:51 UTC; comments "29 pages, 8 figures, 8 tables, Under Review") and PDF https://arxiv.org/pdf/2611.06762 (HTTP 200, application/pdf, 29 pp., SHA-256 d67fc82ae6daf523090415b033116a3497c24041ca824999c1e799a5f2fa0a49; PDF p. 1 margin stamp "arXiv:2611.06762v1 [cs.CY] 4 Nov 2026", i.e. version v1), both fetched 2026-11-08 UTC via the session proxy; text extracted with pdftotext (poppler, raw and -layout) and read 2026-11-08 UTC; the DOI URL redirects (HTTP 302) to the abstract page; first-disclosure date = v1 submission date, matching daily item D20261106-02
+arXiv preprint 2611.06762v1 [cs.CY; cross-list cs.DL], not peer reviewed (authors' comment "Under Review"); no volume/issue; Received/Accepted/Published: not applicable (v1 submitted 4 Nov 2026 16:40:51 UTC); authors Shahan Ali Memon, Anna-Maria Gueorguieva, Anukriti Kumar, Lucy Lu Wang, Jevin D. West, Nic Weber (Information School, University of Washington, USA); licence CC BY 4.0 (abstract page licence link creativecommons.org/licenses/by/4.0/). Page refs below are PDF pages (= printed page numbers). Text normalisation: line breaks joined and running page headers/page numbers between pages dropped; no other changes (curly apostrophes and quotation marks and math-italic symbols kept as extracted).
+
+Original excerpt (abstract sentences on scope, privacy/integrity, urgency framing, interdependencies and contributors; PDF p. 1; joined by " … "):
+In this work, we analyze publicly available AI usage guidance documents from 35 states in the U.S. and Puerto Rico. … We find that guidance priorities converge on topics anchored in laws such as data privacy and academic integrity, each addressed in 97% of documents. … Across documents, there is a common framing of urgency around AI integration to prepare students for workforce readiness (86%) and promote loosely-defined personalized learning (86%); this urgency framing to use AI is not matched by specific guidance for capacity-building, accountability, and actionability. … Instead, we identify notable similarities and interdependencies between states with shared citations to non-profit organizations like TeachAI (78%) and Code.org (44%), with some states reproducing TeachAI’s model guidance near-verbatim, and peer citations concentrating on a few early states such as Oregon and Washington. … No state includes parents as contributors on these documents, and only five include students.
+
+Abstract excerpt (PDF p. 1, sentences 3, 4, 7 and 9):
+We compare the guidance in these documents across various dimensions, including pedagogy and instruction, audience, actionability, workforce and career readiness, responsible use and equity, and alignment with state-level demographics and administrative capacity.
+Finally, we investigate who authored these documents and their cited sources, identifying epistemic foundations underlying their claims.
+While most documents mention equity of access (86%) and algorithmic bias (97%), fewer discuss specific marginalized populations, such as rural or tribal communities (42% and 14%).
+State priorities show no relationship to state demographics, capacity, or partisanship.
+
+Introduction excerpt (PDF p. 2, paragraph "In this study"):
+In this study, we use a mixed-methods approach and present a systematic content analysis of AI guidance documents from the 35 U.S. states and Puerto Rico comprising a total of 1,539 pages.
+We further trace 5,351 references in these documents to 328 distinct sources, including 61 citations to other states, to study their epistemic grounding, and possible patterns of policy diffusion, i.e., the spread and adoption of ideas and regulations across jurisdictions.
+
+Methodology 3.1.1 excerpt (PDF p. 3, AI Guidance Documents by U.S. State Education Departments):
+As of 31st August 2026, Ballotpedia contains a database of AI guidance links by 35 states.
+We also collected Puerto Rico’s guidance from the AI for Education site.
+For each guidance document, we verified the latest version from the official state websites.
+We limit our search to guidance documents issued by state departments of education.
+In total, we identify and verify 36 state guidances (including Puerto Rico).
+We will provide the processed corpus of these guidance documents, and metadata, as openly licensed data for reuse upon publication.
+
+Methodology 3.1.2 excerpt (PDF p. 4, External Data Sources on State Demographics and Resources):
+To identify if there is any relationship between characteristics of states and their priorities in guidances (RQ2), we identify eight additional variables using three external sources of data.
+The data collected from these sources is the latest available and do not align exactly with the year of publication of the guidance documents.
+
+Methodology 3.2 excerpt (PDF p. 4, RQ1: Content Analysis):
+First, two authors reviewed three documents using exploratory open coding and agreed upon a set of topics to track across documents, creating codes across seven categories: Document metadata, Document structure, Audience, Pedagogy & Instruction, Actionability, Workforce & career readiness, and Responsible use & equity (see Appendix A.1 for full set of questions).
+Third, Claude Sonnet 5 was used as an additional consistency check.
+Two authors then manually reviewed every proposed coding change before accepting or rejecting it.
+
+Appendix A.1 excerpt (PDF p. 19, Coding for RQ1):
+For this stage, two authors independently coded the documents across 30 questions (i.e. 1,080 cells), taking informal notes throughout.
+
+Methodology 3.3 excerpt (PDF p. 4, RQ2: Hypothesis Testing):
+Throughout, we test each state characteristic against each guidance dimension with a two-sided Mann-Whitney 𝑈 test, comparing the characteristic between documents that do and do not address the dimension, and report group medians and 𝑝-values.
+
+Methodology 3.4 excerpt (PDF pp. 4–5, RQ3: Citation and Contributor Analysis):
+We use citation analysis, treating citations as a marker of epistemic authority [8].
+We classify peer citations into two types: An explicit adoption occurs when the citing document takes something specific from the other state and acknowledges it, whether by reproducing or adapting its text, using one of its named models, roadmaps, or policy templates, or following one of its recommendations.
+On the other hand, a reference refers to the document citing other state’s work, as a reference-list entry, a footnote, or an item in a list of resources, without taking anything from it.
+Third, contributors are the people, organizations, and group statements credited in each document.
+These codes and a first draft of the source dictionary were produced with the assistance of Claude Code (Opus 4.8), and one of the authors reviewed all codes and dictionary mappings.
+
+Findings 4.1.1 excerpt (PDF p. 5, Document metadata and structure):
+State guidance documents vary widely in length from 2 to 408 pages; a majority do not include versioning history (72%) and less than half of the states commit to a review cycle.
+
+Findings 4.1.2 excerpt (PDF pp. 5–6, Audience):
+Throughout the documents, school administration (97%) and teachers (94%) are the main audience, with corresponding high coverage on instruction and pedagogy.
+However, students are addressed directly only in 22% of the documents
+Similarly, though IT and tech staff will likely carry out data privacy protection and vendor evaluations, they are only considered as a direct audience of this guidance in 33% of the documents.
+
+Findings 4.1.3 excerpt (PDF pp. 6–7, Pedagogy and Instruction):
+Professional development is mentioned across most states (92%). However, guidance does not elaborate on the format of professional development, how it fits into existing teacher or administration schedules, and what topics it should cover.
+We observe similar issues with the idea of “personalized learning,” which is mentioned across 86% of the documents as a use-case for AI and used to argue for the introduction of AI into the classroom.
+Yet, it is underspecified, with no examples of software or platforms that conduct personalized learning in practice.
+
+Findings 4.1.4 excerpt (PDF p. 7, Actionability):
+However, many states do not include practical advice on important tasks such as vendor evaluation, procurement, and post-implementation evaluations.
+
+Findings 4.1.5 excerpt (PDF p. 7, Workforce and Career readiness):
+Upskilling students for workforce and career readiness is mentioned in 86% of guidance documents, and AI integration is often framed as an urgent need to prepare students for an “AI-driven world”.
+
+Findings 4.1.6 excerpt (PDF pp. 7–8, Responsible use and equity):
+Data privacy is mentioned in 97% of documents, potentially reflecting the existence of ready-made student-privacy laws and compliance frameworks such as FERPA, COPPA, and so on, which are easily cited in the context of AI.
+we find accessibility mentions in 75% of the documents.
+Emergent issues that are borne from new affordances of generative AI (namely, deepfakes and AI companions) are less discussed and mentioned (50% and 22% respectively), mostly in documents released or updated in 2026.
+
+Findings 4.2 excerpt (PDF pp. 8–9, RQ2):
+We find no evidence of demographic responsiveness for three of the four groups.
+We did find that states that address tribal or indigenous population have higher Native enrollment than those that do not (median 10.3% vs. 0.4%, 𝑝 = .001).
+Overall, we find state capacity to be largely decoupled from the priorities of states within the guidance documents.
+Overall, there seems to be no significant pattern of partisan division associated with guidance on equity or responsible AI use.
+
+Findings 4.3.1 excerpt (PDF pp. 9–10, RQ3A Cited Sources):
+Across the 36 documents, states cite 328 distinct sources, a median of 19 per state (Appendix Table 7 breaks these down by type).
+Five sources are cited by at least half of the states: FERPA (29 states), TeachAI (28), the U.S. Department of Education (28), COPPA (27), and ISTE (20) (Figure 1).
+Among non-government sources, the most widely cited are TeachAI, Code.org (16), and Digital Promise (16), followed by Common Sense Media (15).
+Two-thirds of all sources (219 of 328) are cited by only one state, and no AI-specific framework is cited by more than eight (Appendix Figures 4 and 5).
+
+Findings 4.3.2 excerpt (PDF pp. 10–11, RQ3B Peer Citation):
+Peer citation is common but concentrated to a few early states and mostly runs in one direction.
+21 of the 36 states cite at least one other state, with a total of 61 peer-citations across documents (Figure 2).
+Of the 61 citations, 53 (87%) are references: 36 reference-list or footnote entries and 17 resource listings.
+The remaining 8 (13%) are explicit adoptions (purple arrows in Figure 2).
+Overall, peer citations suggest that states do learn from one another, but this learning flows in one direction from a few early publishers and mostly takes the form of references rather than explicit adoption.
+
+Findings 4.3.3 excerpt (PDF p. 11, RQ3C Contributors; and Fig. 3 caption):
+The 22 documents with credits name 565 people, 49 organizations, and 30 group statements (Appendix A.3.6).
+Of the 491 people whose employer is stated, 43% work for K-12 districts or schools and 28% for the state department of education, while nonprofits (8%) and associations (5%) account for small shares.
+Teachers are named as contributors in 15 states, administrators in 14, and IT or technology staff in 12, whereas students take part in 5 states and no state names parents or families (Figure 3), even though 83% of documents address families as stakeholders (RQ1).
+The 20 states naming at least one group are shown alphabetically; 16 states naming none are omitted.
+
+Discussion 5.1 excerpt (PDF p. 12, States share priorities and epistemic sources):
+Furthermore, TeachAI’s AI toolkit template is used word-for-word in Wyoming’s guidance, and is adapted in West Virginia’s and Utah’s guidance (as can be seen in Appendix Figure 6).
+To measure this overlap systematically, we compared each state’s guidance to TeachAI’s guidance using counts of shared word sequences and cosine similarity in sentence-level embeddings (Sentence-BERT [41]).
+
+Limitations excerpt (PDF p. 14, Section 6 Limitations and Future Work):
+In terms of data, our analysis is limited to the 36 jurisdictions whose state departments have issued guidance.
+Our document coding process is binary, and does not capture the depth, specificity, or attitude towards each topic.
+We also only rely on latest issued documents by each jurisdiction without accounting for how these documents may have evolved over time.
+We report these patterns descriptively without adjusting for time frame.
+We leave the exploration of the mechanisms behind policy diffusion for future work to explore.
+Along these lines, future work should also investigate potential impacts of state guidances on actual AI implementation in classrooms.
+
+Ethical Considerations Statement excerpt (PDF p. 15):
+This study analyzes publicly available guidance documents and does not involve human participants, interventions, or private data.
+Our analysis is descriptive and is not meant to rank states; we highlight examples of good practices and gaps, realizing that agencies responsible for the creation of these documents are under severe time and resource constraints.
+Our findings on text similarity and reuse are description of patterns of reliance, and not meant to suggest misconduct by any state or agency.
+
+Other Disclosures excerpt (PDF p. 16):
+The first author (SAM) was a member of Washington Office of Superintendent of Public Instruction (OSPI)’s AI Advisory Group and coauthored the AI guidance for the state of Washington.

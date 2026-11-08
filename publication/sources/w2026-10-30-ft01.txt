@@ -1,0 +1,65 @@
+Federal Register（美國教育部 U.S. Department of Education，Proposed Rule） | 2026-11-04 | Proposed Priorities and Definitions—Secretary’s Supplemental Priorities and Definitions | https://www.federalregister.gov/documents/2026/11/05/2026-22615/proposed-priorities-and-definitions-secretarys-supplemental-priorities-and-definitions | Read 2026-11-08 UTC via the session proxy: Federal Register API https://www.federalregister.gov/api/v1/documents/2026-22615.json (HTTP 200; type "Proposed Rule", publication_date 2026-11-05, comments_close_on 2026-12-07, citation 91 FR 69736, start_page 69736, end_page 69753); the API raw_text_url and body_html_url redirected to a Federal Register "Request Access" page (unblock.federalregister.gov) and were not used (not bypassed); full text read from the official published PDF (API pdf_url) https://www.govinfo.gov/content/pkg/FR-2026-11-05/pdf/2026-22615.pdf (HTTP 200, 263253 bytes, 18 PDF pages = printed pp. 69736–69753, SHA-256 a5404a85198e7b049b3ef255cd2e4dbbc6781ef07320060ce2012672cbb5c0e5), text extracted with pdftotext; PDF page n = printed page 69735+n; the document starts mid-page on 69736 and ends mid-page on 69753 (other agencies' documents share those pages) | First-disclosed date 2026-11-04: document filed for public inspection 11-4-26 8:45 am (FR Doc line below; same as daily item D20261105-02, which read the public inspection version); official publication 2026-11-05 (page header and API publication_date)
+Federal Register Vol. 91, No. 213, Thursday, November 5, 2026, Proposed Rules, 91 FR 69736–69753 | FR Doc. 2026–22615 | 34 CFR Part 75 | Docket ID ED–2026–OS–3169 | Agency: U.S. Department of Education | Received/Accepted: not applicable (government document); Filed 11–4–26 8:45 am; Published 2026-11-05 | Author: the Secretary (U.S. Department of Education) | License: U.S. federal government work (Federal Register, public domain)
+Text normalisation: line breaks joined; words split at line ends rejoined, restoring the printed hyphen where the word is a hyphenated compound (pdftotext dropped it: "ageappropriate" -> "age-appropriate", "SIgenerated" -> "SI-generated", "EvidenceBased" -> "Evidence-Based", "non-statutory" kept). Typographic double quotes are kept as the PDF extracts them (two single-quote glyphs ‘‘ ’’). No other changes.
+Executive order lookup (Federal Register API, documents.json filtered by executive_order_numbers, read 2026-11-08, HTTP 200): EO 14434 = "Inaugurating the Era of Super Intelligence", signing_date 2026-09-29, publication_date 2026-10-02, citation 91 FR 63129; EO 14344 = "Making Federal Architecture Beautiful Again", signing_date 2025-08-28, citation 90 FR 42685.
+
+Original excerpt (p. 69738 Proposed Priorities and Definitions para. 1 sentence 1; p. 69738 SI definition para. sentence 2; p. 69752 Proposed Priority (a)(ii); p. 69753 SI literacy definition sentence 2; p. 69737 DATES; joined by " … "):
+We propose, with limited exceptions described in the next paragraph, to use the term ‘‘Super Intelligence’’ to replace ‘‘Artificial Intelligence’’ and use ‘‘SI’’ to replace ‘‘AI’’ in every use of the terms. … The newly titled SI literacy definition would be revised to incorporate the importance of understanding how SI works and how to use SI tools effectively and responsibly. … (ii) Expanding offerings of age-appropriate SI and computer science education in K–12 education. … It enables learners to understand how SI works; use SI tools effectively and responsibly; engage, create with, manage, and design SI, while critically evaluating its benefits, risks, and implications. … We must receive your comments on or before December 7, 2026.
+
+Status and dates excerpt (p. 69736 [PDF p. 1], document heading, AGENCY/ACTION; p. 69737 [PDF p. 2], DATES):
+Federal Register / Vol. 91, No. 213 / Thursday, November 5, 2026 / Proposed Rules
+DEPARTMENT OF EDUCATION 34 CFR Part 75 [Docket ID ED–2026–OS–3169] Proposed Priorities and Definitions— Secretary’s Supplemental Priorities and Definitions AGENCY: U.S. Department of Education. ACTION: Proposed priorities and definitions.
+DATES: We must receive your comments on or before December 7, 2026.
+
+Summary excerpt (p. 69736–69737 [PDF pp. 1–2], SUMMARY, last part):
+the Notice of Final Priority and Definitions—Secretary’s Supplemental Priority and Definitions on Advancing Artificial Intelligence in Education published in the Federal Register on April 13, 2026.
+
+Filing excerpt (p. 69753 [PDF p. 18], end of document):
+[FR Doc. 2026–22615 Filed 11–4–26; 8:45 am]
+
+Final-rule process excerpt (p. 69745 [PDF p. 10], Final Priorities and Definitions):
+Final Priorities and Definitions: ED will announce the final priorities and definitions in a document in the Federal Register. We will determine the final priorities and definitions after considering responses to the proposed priorities and definitions and other information available to ED.
+
+Term change excerpt (p. 69738 [PDF p. 3], Proposed Changes From Artificial Intelligence (AI) to Super Intelligence (SI), Proposed Priorities and Definitions):
+We propose, with limited exceptions described in the next paragraph, to use the term ‘‘Super Intelligence’’ to replace ‘‘Artificial Intelligence’’ and use ‘‘SI’’ to replace ‘‘AI’’ in every use of the terms.
+(2) proposing to rename the title of the final priority from ‘‘Advancing Artificial Intelligence in Education’’ to ‘‘Advancing Super Intelligence in Education.’’
+(3) proposing to rename the definition of ‘‘Artificial Intelligence (AI)’’ to ‘‘Super Intelligence (SI).’’
+(4) proposing to rename the definition of ‘‘AI literacy’’ to ‘‘SI literacy.’’
+
+Exceptions excerpt (p. 69738 [PDF p. 3], next paragraph):
+The exceptions to replacing ‘‘Artificial Intelligence’’ with ‘‘Super Intelligence’’ are in the definition of SI and in the title of the following document: ‘‘Department of Labor’s Artificial Intelligence Literacy Framework.’’
+This document and all references to it, will retain the title of ‘‘Department of Labor’s Artificial Intelligence Literacy Framework.’’
+
+SI definition and executive order excerpt (p. 69738 [PDF p. 3]):
+For the newly titled SI definition, we propose to adopt the definition of SI included in President Trump’s Executive Order (E.O.) 14344 ‘‘Inaugurating the Era of Super Intelligence,’’ dated September 29, 2026, which says that SI means the technologies and systems encompassed by the term ‘‘artificial intelligence’’ as defined 15 U.S.C. 9401(3). The newly titled SI literacy definition would be revised to incorporate the importance of understanding how SI works and how to use SI tools effectively and responsibly.
+Finally, we propose to add the definitions of SI and SI literacy to all uses of the terms in the Secretary’s Supplemental Priorities on Evidence-Based Literacy, Educational Choice, and Returning Education to the States, the Secretary’s Supplemental Priority on Meaningful Learning Opportunities, and the Secretary’s Supplemental Priority on Career Pathways and Workforce Readiness.
+
+Reasons excerpt (p. 69738 [PDF p. 3], Reasons):
+Reasons: On September 29, 2026, the President issued E.O. 14434 (91 FR 63129) directing executive departments and agencies to replace the terms ‘‘Artificial Intelligence’’ and ‘‘AI’’ with ‘‘Super Intelligence’’ and ‘‘SI’’ in official correspondence, public communications, policy documents, and other non-statutory documents.
+We also propose to adopt the definition of Super Intelligence from E.O. 14344.
+
+Four notices excerpt (p. 69738 [PDF p. 3]):
+We propose to add the definitions of ‘‘SI’’ and ‘‘SI literacy’’ across all uses of the terms in the four notices proposed for revision in this proposed rule.
+
+Current AI literacy definition excerpt (p. 69738 [PDF p. 3]):
+The current definition of AI literacy means technical knowledge, durable skills, civic awareness, and future ready attitudes, including AI related ethical reasoning, critical social inquiry, interdisciplinary problem-solving, and creativity, required to thrive in a world influenced by AI.
+In addition to replacing ‘‘AI’’ with ‘‘SI’’, we propose to add to the definition the importance of understanding how SI works and how to use SI tools effectively and responsibly.
+
+Proposed new subparts excerpt (p. 69744–69745 [PDF pp. 9–10], Advancing Artificial Intelligence in Education notice):
+we propose adding a subpart (viii) to part (a) that addresses partnering with employers or industry associations to develop educational materials and training programs that provide industry or occupational specific SI literacy and further SI skills development.
+We propose adding a subpart (ix) to promote SI literacy efforts aligned with the five content areas and seven delivery principles outlined within the DOL’s February 13, 2026 AI Literacy Framework (Notice 07–25), and redesignate the succeeding subparts accordingly.
+We propose adding a new subpart (b)(iv) that would support SI projects that are designed for all students, and redesignating the succeeding paragraphs as appropriate.
+
+Proposed priority text excerpt (p. 69752 [PDF p. 17], Proposed Priority: Advancing Super Intelligence in Education):
+Proposed Priority: Advancing Super Intelligence in Education
+(a) Expand the understanding of super intelligence through one or more of the following:
+(i) Supporting the integration of SI literacy skills and concepts into teaching and learning practices to improve educational outcomes for students, including how to detect SI-generated disinformation or misinformation online.
+(ii) Expanding offerings of age-appropriate SI and computer science education in K–12 education.
+(ix) Promoting SI literacy efforts aligned with the five content areas and seven delivery principles outlined within the Department of Labor’s February 13, 2026 Artificial Intelligence Literacy Framework (Notice 07–25).
+(xiii) Providing support and training to educators on age-appropriate SI education methodologies that emphasize foundational concepts in SI literacy and critical thinking skills while considering developmental readiness and students’ safety factors in SI tool selections in K–12 education.
+(b) Expand the appropriate and ethical use of SI in education through one or more of the following:
+(iv) Using SI to support K–12 or postsecondary instruction, supplemental learning, or other assistance or resources to all students.
+
+Proposed definitions excerpt (p. 69753 [PDF p. 18], definitions under the Advancing Super Intelligence in Education notice):
+Super intelligence (SI) means the technologies and systems encompassed by the term ‘‘artificial intelligence’’ as defined in 15 U.S.C. 9401(3).
+Super intelligence (SI) literacy means the technical knowledge, durable skills, civic awareness and future ready attitudes, including SI related ethical reasoning, critical social inquiry, interdisciplinary problem-solving, and creativity, required to thrive in a world influenced by SI. It enables learners to understand how SI works; use SI tools effectively and responsibly; engage, create with, manage, and design SI, while critically evaluating its benefits, risks, and implications.
