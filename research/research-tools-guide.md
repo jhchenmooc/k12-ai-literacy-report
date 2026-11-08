@@ -134,7 +134,7 @@ AI 直接讀取多半失敗：ScienceDirect 403、`linkinghub.elsevier.com` 只�
 | 來源 | curl 直接讀 | 替代方式 |
 |---|---|---|
 | UNESCO newsroom | captcha（**不得繞過**） | WebFetch 可讀（內容為模型轉述） |
-| 美國 ED | 403 | Federal Register API 可查 ED 公報文件（網址含方括號，**curl 要加 `-g`**，否則報 bad range）：`https://www.federalregister.gov/api/v1/documents.json?conditions[agencies][]=education-department&conditions[term]=artificial+intelligence&conditions[publication_date][gte]=YYYY-MM-DD` |
+| 美國 ED | 403 | Federal Register API 可查 ED 公報文件（網址含方括號，**curl 要加 `-g`**，否則報 bad range）：`https://www.federalregister.gov/api/v1/documents.json?conditions[agencies][]=education-department&conditions[term]=artificial+intelligence&conditions[publication_date][gte]=YYYY-MM-DD`。**首次公開日（管理者 2026-11-08 決定）：Federal Register 文件以 public inspection（公開預覽）上架日為首次公開日；正式刊登日記入 source_locator 備查，不另發。** |
 | 英格蘭 DfE | 可讀 | GOV.UK Search API：`https://www.gov.uk/api/search.json?filter_organisations=department-for-education&order=-public_timestamp&count=40`（關鍵詞與時間排序同時用時篩選效果差） |
 | OECD | 403 | WebSearch |
 | 歐盟執委會（教育） | 2026-10-10 education.ec.europa.eu 新聞頁與文件庫頁可讀（HTTP 200）；先前曾遇 antibot 表單、列表未渲染；2026-10-17 重測：200 但列表由 JS 載入、無項目，見 policy-monitoring-sources.md | 直接讀新聞頁；讀不到時用 WebSearch |
