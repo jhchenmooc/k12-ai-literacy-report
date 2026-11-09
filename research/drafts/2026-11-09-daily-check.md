@@ -10,12 +10,13 @@
 
 | 編號 | 來源 | 首發日（依據） | 範圍 | 對象 | 型態 |
 |---|---|---|---|---|---|
-| D20261109-01 | J06 Journal of Computer Assisted Learning，Yang、Zhang、Hwang、Tu、Yan、Liu〈Research Trends of Artificial Intelligence‐Facilitated Computational Thinking in K‐12 STEM: A Systematic Review Through the Lens of Activity Theory〉 https://doi.org/10.1002/jcal.70365 | 2026-11-08（Crossref published-online；Wiley 頁 Cloudflare；Crossref、OpenAlex、arXiv 無較早版本） | B（S-LRN；次要 S-BAS） | k12（回顧主題為 K–12 學生） | 只發書目 |
+| D20261109-01 | J06 Journal of Computer Assisted Learning，Yang、Zhang、Hwang、Tu、Yan、Liu〈Research Trends of Artificial Intelligence‐Facilitated Computational Thinking in K‐12 STEM: A Systematic Review Through the Lens of Activity Theory〉 https://doi.org/10.1002/jcal.70365 | 2026-11-08（Crossref published-online；Wiley 頁 Cloudflare；Crossref、OpenAlex、arXiv 無較早版本） | B（S-LRN；次要 S-BAS） | k12（表 3 納入標準須為可辨識的 K–12 學習者） | 作者摘要型（管理者提供 PDF） |
 | D20261109-02 | 教育部國民及學前教育署〈深耕國中小媒體素養教育 績優學校展現數位公民力〉 | 2026-11-08（國教署發布日期；教育部 RSS 08:30 臺灣時間） | A（S-ETH） | k12（國中小學生與教師） | 官方摘要型（臺灣），機構自述成效 |
 
 - **-01：**
-  - **型態：** 只讀到 Crossref 摘要，只發書目；列入瀏覽器清單。
-  - **第二輪對照：** 判定需修改，依建議分類由 A 改 B（摘要所述 AI 以專家系統、機器人為主，多作學習工具，目的在評估成效），範圍說明改寫為主題敘述，修正後一致。
+  - **型態：** 原本只讀到 Crossref 摘要；合併前管理者提供出版者 PDF（存私人 repo），改為作者摘要型。PDF 只印 Received、Revised、Accepted，無上線日，首發日仍依 Crossref。
+  - **摘要依據：** Objective 首句、Method 首句與 Results 第 1 項；其餘歸納與作者建議不寫入。
+  - **第二輪對照：** 第一次判定需修改，分類由 A 改 B（摘要所述 AI 以專家系統、機器人為主，多作學習工具）；改摘要型後再對照，依建議範圍說明刪去屬研究結果的「以評估 AI 成效為主要目的」、分類理由只依已轉述的摘要內容，修正後一致。
 - **-02：**
   - **摘要依據：** 新聞第 1 段首二句、第 2 段首句與末段末句。
   - **不寫入：** 寶山國小、南崁國中兩校課程（未提 AI）、Podcast 與營隊、新聞自述成效。
@@ -85,6 +86,4 @@
 
 ## 請管理者用瀏覽器處理（2026-11-09）
 
-| 序 | 項目 | 要什麼 | 拿到後可做什麼 | 期限 |
-|---|---|---|---|---|
-| 1 | https://doi.org/10.1002/jcal.70365 （J06；Wiley Cloudflare） | 全文 PDF 或文章頁摘要截圖 | D20261109-01 升為作者摘要型 | 11-15 |
+今日無（JCAL 70365 已由管理者提供 PDF，合併前改為作者摘要型）。
