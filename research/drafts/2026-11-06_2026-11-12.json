@@ -423,6 +423,74 @@
       "doi": "10.36941/jesr-2026-0459",
       "screening_note": "Verified 2026-11-08 for daily brief 2026-11-06 (r1, manager confirmation).",
       "verification_completed_on": "2026-11-08"
+    },
+    {
+      "candidate_id": "W2026-11-06-A13",
+      "category": "research",
+      "source_url": "https://doi.org/10.1002/jcal.70365",
+      "source_title": "Research Trends of Artificial Intelligence‐Facilitated Computational Thinking in K‐12 STEM: A Systematic Review Through the Lens of Activity Theory",
+      "source_organization": "Journal of Computer Assisted Learning（Wiley）",
+      "source_publication_date": "2026-11-08",
+      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：Wiley 回 Cloudflare 驗證頁）：2026-11-08；Journal of Computer Assisted Learning 42(6), e70365；Crossref 摘要句（非原文）",
+      "discovered_on": "2026-11-09",
+      "discovery_batch_id": "2026-11-09-daily-1",
+      "first_disclosed_on": "2026-11-08",
+      "source_updates": [],
+      "original_excerpt": "This study employed the PRISMA framework to systematically review 57 SSCI journal publications published between 2017 and 2025.",
+      "source_checked": true,
+      "claim_text": "來源機構：Journal of Computer Assisted Learning（Wiley）；資料標題：Research Trends of Artificial Intelligence‐Facilitated Computational Thinking in K‐12 STEM: A Systematic Review Through the Lens of Activity Theory；來源刊登日：2026-11-08。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "同儕審查期刊論文（Journal of Computer Assisted Learning，監測清單 J06）；Crossref 摘要所述為以 PRISMA 回顧 2017–2025 年 57 篇 SSCI 期刊論文的系統性回顧，主題為 K–12 STEM 中以 AI 促進學生運算思維；本則只為書目事實。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-09 子代理以 Crossref 關鍵詞與監測期刊 ISSN 查詢列出（Wiley 頁 Cloudflare，未繞過）；本 session 讀 Crossref 紀錄（published-online 2026-11-08、42(6) e70365、作者、題名、摘要；無 update-to；OpenAlex、arXiv 篇名查詢無較早版本）；第二輪 2026-11-09 由隔離子代理對照中文譯名、範圍說明與分類，判定需修改，依建議分類由 A 改 B（摘要所述 AI 多作學習工具、目的在評估成效），範圍說明改寫為主題敘述，修正後一致。出版社頁回 403，未繞過；首發日採 Crossref published-online，只發書目。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN",
+        "S-BAS"
+      ],
+      "ai_lit_note": "回顧 K–12 STEM 中以 AI 為學習工具促進運算思維的研究，重點在工具的使用與成效，屬 AI 賦能學習（B），對應 S-LRN「應用AI工具強化領域學習」，次要對應 S-BAS「實踐AI強化運算思維」",
+      "audience": "k12",
+      "doi": "10.1002/jcal.70365",
+      "screening_note": "Verified 2026-11-09 for daily brief 2026-11-09.",
+      "verification_completed_on": "2026-11-09"
+    },
+    {
+      "candidate_id": "W2026-11-06-A14",
+      "category": "news_policy",
+      "source_url": "https://www.k12ea.gov.tw/Tw/News/K12eaNewsDetail?filter=9F92BBB7-0251-4CB7-BF06-82385FD996A0&id=8734876b-7f0f-49d2-ab74-65d9e44a4107",
+      "source_title": "深耕國中小媒體素養教育 績優學校展現數位公民力",
+      "source_organization": "教育部國民及學前教育署",
+      "source_publication_date": "2026-11-08",
+      "source_locator": "國教署即時新聞（2026-11-09 讀取 200）：發布日期 2026-11-08；教育部即時新聞同文上版日期 115-11-08、RSS 時間 2026-11-08 08:30（臺灣時間）；摘要歸屬：新聞第 1 段首二句、第 2 段首句與末段末句",
+      "discovered_on": "2026-11-09",
+      "discovery_batch_id": "2026-11-09-daily-1",
+      "first_disclosed_on": "2026-11-08",
+      "source_updates": [],
+      "original_excerpt": "在數位資訊與AI科技蓬勃發展的時代，培養學生的媒體識讀與思辨能力已成為教育現場的重要課題。 … 教育部國教署115學年度補助46所媒體素養基地學校，實施媒體素養特色課程，其中8校獲選績優學校； … 新北市光華國小將媒體素養融入中高年級校訂課程，不僅帶領學生認識生成式AI、學習辨識深偽（Deepfake）影片，更結合社會領域探討法律議題，讓學生從真實案例中理解媒體資訊與日常生活的關聯。 … 未來，國教署將持續挹注資源，補助地方政府及基地學校透過「區域推廣」模式，拓展績優學校的成功經驗，全面提升國民中小學學生的數位公民素養。",
+      "source_checked": true,
+      "claim_text": "來源機構：教育部國民及學前教育署；資料標題：深耕國中小媒體素養教育 績優學校展現數位公民力；來源刊登日：2026-11-08。官方文件表示：國教署表示，115 學年度補助 46 所媒體素養基地學校實施媒體素養特色課程，其中 8 校獲選績優學校；所舉例子中，新北市光華國小在中高年級校訂課程帶領學生認識生成式 AI、學習辨識深偽影片，並結合社會領域探討法律議題；國教署將持續補助地方政府及基地學校，以區域推廣模式拓展績優學校經驗。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "臺灣中央教育主管機關（國教署）的計畫成果新聞，對象為國中小學生與教師；主題為媒體素養，AI 內容只見於背景敘述與光華國小一校（課程與營隊）；新聞自述成效，未附評估資料。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-09 子代理讀教育部即時新聞 RSS 與國教署即時新聞列出並存原頁（兩頁本文一致）；本 session 擇新聞第 1 段首二句、第 2 段首句與末段末句撰寫中文摘要，不寫新聞自述成效；第二輪 2026-11-09 由隔離子代理逐句對照原頁，判定通過，依建議範圍說明補光華國小的 AI 內容含課程與營隊；分類 A 比照 D20261104-03，審查者註明本則 AI 內容只見於一校、為較弱的邊界案例。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-ETH"
+      ],
+      "ai_lit_note": "主體為國中小媒體素養計畫，AI 為其中一校的課程內容：帶領學生認識生成式 AI、辨識深偽影片（比照 D20261104-03 媒體素養含 AI 內容判 A 的先例，邊界案例），屬學生 AI 素養（A），對應 S-ETH「具備對AI的批判思考」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-11-09 for daily brief 2026-11-09.",
+      "verification_completed_on": "2026-11-09"
     }
   ],
   "search_runs": [
@@ -534,6 +602,32 @@
       ],
       "discovered": 1,
       "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-09-daily-1",
+      "searched_on": "2026-11-09",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-11-08,until-created-date:2026-11-09,type:journal-article, six query.bibliographic sets, proceedings-article set, watchlist-ISSN sets; pedagogical AI agent sets on Crossref, OpenAlex and arXiv; arXiv API three sets and cs.CY/cs.HC new listings (still the 11-06 batch at read time); alphaXiv; publisher pages one try each (Wiley Cloudflare, not bypassed; ejmste 200)",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search and Content API, Federal Register (11-09 issue, public inspection), MEXT (mext_00749 text not yet uploaded), China MOE (corrected list URLs), HK info.gov.hk 11-08 and 11-09, MOE Korea, KICE, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news (read 200; 11-05 onward rechecked), Executive Yuan gazette open data (no issue after 11-06 listed), Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 2,
+      "added": 2,
       "duplicates": 0
     }
   ],

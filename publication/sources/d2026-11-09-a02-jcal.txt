@@ -1,0 +1,4 @@
+Journal of Computer Assisted Learning (Wiley) | 2026-11-08 | Research Trends of Artificial Intelligence‐Facilitated Computational Thinking in K‐12 STEM: A Systematic Review Through the Lens of Activity Theory | https://doi.org/10.1002/jcal.70365 | Crossref works record read 2026-11-09T00:50Z; publisher page returned a Cloudflare verification page (HTTP 403) to automated requests on 2026-11-09 (not bypassed); first-disclosure date per Crossref published-online; no earlier preprint found in Crossref, OpenAlex title search or arXiv; bibliographic facts only
+Crossref: published-online 2026-11-08; record created 2026-11-08; Journal of Computer Assisted Learning 42(6), e70365; authors Yang, Zhang, Hwang, Tu, Yan, Liu
+Crossref abstract sentence (not read from the publisher page):
+This study employed the PRISMA framework to systematically review 57 SSCI journal publications published between 2017 and 2025.
