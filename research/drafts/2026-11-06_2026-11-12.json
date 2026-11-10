@@ -491,6 +491,75 @@
       "audience": "k12",
       "screening_note": "Verified 2026-11-09 for daily brief 2026-11-09.",
       "verification_completed_on": "2026-11-09"
+    },
+    {
+      "candidate_id": "W2026-11-06-A15",
+      "category": "research",
+      "source_url": "https://doi.org/10.3389/feduc.2026.1986031",
+      "source_title": "Harnessing artificial intelligence in educational administration: insights from school administrators",
+      "source_organization": "Frontiers in Education",
+      "source_publication_date": "2026-11-09",
+      "source_locator": "出版社文章頁（frontiersin.org，2026-11-10 讀取 200）：Published 09 November 2026（citation_online_date 為接受日，不採用）；摘要歸屬：Abstract 第 3 至 7 句",
+      "discovered_on": "2026-11-10",
+      "discovery_batch_id": "2026-11-10-daily-1",
+      "first_disclosed_on": "2026-11-09",
+      "source_updates": [],
+      "original_excerpt": "The aim of this study is to examine educational administrators’ opinions about use of AI in educational administration process. … The study was conducted using a qualitative case study design. … Data were collected through a semi-structured interview form and analyzed using content analysis. … The findings revealed that educational administrators primarily define AI as digital tools that perform data analysis, imitate human intelligence, and facilitate routine tasks. … The most common areas of AI use in administration processes were identified as planning, communication and official correspondence, and data analysis.",
+      "source_checked": true,
+      "claim_text": "來源機構：Frontiers in Education；資料標題：Harnessing artificial intelligence in educational administration: insights from school administrators；來源刊登日：2026-11-09。作者摘要報告：研究探討教育行政人員對在教育行政流程中使用 AI 的看法，採質性個案研究，以半結構訪談表蒐集資料並做內容分析；作者報告行政人員主要把 AI 定義為能分析資料、模仿人類智慧並便利例行工作的數位工具，最常用於規劃、溝通與公文往來，以及資料分析。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Frontiers in Education，監測清單 J29）；土耳其哈卡里與穆拉兩地的中小學行政人員 15 人（高中 7、小學 6、國中 2）的質性個案研究；訪談為自陳看法。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-10 子代理以監測期刊 ISSN 查詢列出並讀出版社頁；本 session 擇摘要第 3 至 7 句撰寫中文摘要與中文譯名，助益、挑戰與建議不寫入；第二輪 2026-11-10 由隔離子代理逐句對照原文與 2.2 節，判定通過，依建議「簡化」改為「便利」以貼近 facilitate；對象同意記其他教育關係人。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-BAS",
+        "T-ETH"
+      ],
+      "ai_lit_note": "對象為其他教育關係人：中小學行政人員對 AI 用於教育行政的理解與使用，涉及資料安全與倫理顧慮，屬 AI 素養（A），對應 T-BAS「參與AI校園治理部署與決策」、T-ETH「保護個資與AI數據隱私」",
+      "audience": "other_stakeholders",
+      "doi": "10.3389/feduc.2026.1986031",
+      "screening_note": "Verified 2026-11-10 for daily brief 2026-11-10.",
+      "verification_completed_on": "2026-11-10"
+    },
+    {
+      "candidate_id": "W2026-11-06-A16",
+      "category": "news_policy",
+      "source_url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107600&lev=0&m=020402&s=moe",
+      "source_title": "스마트 안경 관련 내신평가 부정행위 전수조사 결과",
+      "source_organization": "韓國教育部",
+      "source_publication_date": "2026-11-09",
+      "source_locator": "韓國教育部 보도자료頁（2026-11-10 讀取 200）：列表與單篇頁日期 2026-11-09，附件 hwpx「배포 2026. 11. 9.(월) 08:00」；摘要歸屬：本文首句、調查概要「조사 대상」列、11 月第 3 週教育資料句與末句",
+      "discovered_on": "2026-11-10",
+      "discovery_batch_id": "2026-11-10-daily-1",
+      "first_disclosed_on": "2026-11-09",
+      "source_updates": [],
+      "original_excerpt": "교육부(장관 최교진)는 2026학년도 내신평가에서 인공지능(AI) 기능이 탑재된 스마트 안경 관련 부정행위 발생 현황을 전수 조사한 결과, 총 4건의 부정행위가 확인되었다고 밝혔다. … ‣ 조사 대상 : 전국의 모든 중·고등학교 … 이어 2026학년도 2학기 기말고사를 앞둔 11월 3주에는 이번에 조사된 스마트 안경 적발 사례를 담은 학생용 교육자료와 함께, 스마트 안경 관련 부정행위 예방을 위한 현장 유의사항을 안내한다. … 교육부는 앞으로도 인공지능(AI) 등 디지털 기술의 발전에 따른 학생평가 환경 변화에 대응하여, 학교 현장의 평가 공정성과 신뢰성을 확보하기 위한 노력을 지속해 나갈 계획이다.",
+      "source_checked": true,
+      "claim_text": "來源機構：韓國教育部；資料標題：스마트 안경 관련 내신평가 부정행위 전수조사 결과；來源刊登日：2026-11-09。官方文件表示：韓國教育部表示，針對 2026 學年度校內評量中與搭載人工智慧功能的智慧眼鏡有關的舞弊，對全國所有國中與高中進行全面調查，共確認 4 件；將於第 2 學期期末考前的 11 月第 3 週，宣導收錄本次查獲案例的學生用教育資料與預防相關舞弊的現場注意事項，並表示將持續因應 AI 等數位技術發展帶來的學生評量環境變化，確保學校評量的公正與可信度。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "韓國中央教育主管機關的新聞參考資料（調查結果與後續措施），對象為國中與高中；主題為學生評量公正與舞弊防範，AI 內容為搭載 AI 功能的智慧眼鏡相關舞弊，以及收錄查獲案例的學生用教育資料與預防舞弊的現場注意事項；教育資料預定於 11 月第 3 週提供，本刊未見。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-10 子代理讀韓國教育部 보도자료列表、單篇頁與附件 hwpx 列出；本 session 擇本文首句、調查概要「조사 대상」列、11 月第 3 週教育資料句與末句撰寫中文摘要與中文譯名，各案經過與處分不寫入；第二輪 2026-11-10 由隔離子代理逐句對照韓文原文，判定需修改，依建議末句改回「持續因應…確保評量公正與可信度」的原句結構、「안내한다」改譯「宣導」、範圍說明與分類理由刪去原文沒有的「使用規範」措辭並改寫教育資料時程，修正後一致；分類 A 為邊界案例（主體為考務防弊），審查者建議以 S-ETH 為主要面向。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-ETH",
+        "T-ETH"
+      ],
+      "ai_lit_note": "主體為評量公正與舞弊防範，AI 素養成分在於向學生提供 AI 智慧眼鏡舞弊案例的教育資料，以及學校預防舞弊的現場注意事項（邊界案例），屬 AI 素養（A），對應 S-ETH「正用AI符合學術誠信」、T-ETH「健全校園AI使用規範」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-11-10 for daily brief 2026-11-10.",
+      "verification_completed_on": "2026-11-10"
     }
   ],
   "search_runs": [
@@ -623,6 +692,32 @@
         {
           "group": "taiwan-central",
           "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news (read 200; 11-05 onward rechecked), Executive Yuan gazette open data (no issue after 11-06 listed), Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 2,
+      "added": 2,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-10-daily-1",
+      "searched_on": "2026-11-10",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-11-09,until-created-date:2026-11-10,type:journal-article, six query.bibliographic sets, proceedings-article set, watchlist-ISSN sets; pedagogical AI agent sets on Crossref, OpenAlex and arXiv; arXiv API three sets and cs.CY/cs.HC new listings (Monday 9 November batch); alphaXiv; publisher pages one try each (Frontiers 200; MDPI, T&F 403, not bypassed)",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search and Content API, Federal Register (11-10 issue not yet published at read time; public inspection), MEXT (mext_00749 text not yet uploaded), China MOE (corrected list URLs), HK info.gov.hk 11-09 and 11-10, MOE Korea (107597-107600 hwpx read), KICE, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (115-11-09 issue), Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
           "status": "ok"
         }
       ],
