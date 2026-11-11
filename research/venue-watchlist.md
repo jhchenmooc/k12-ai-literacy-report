@@ -345,6 +345,24 @@ EAAI 收在 AAAI Proceedings（ojs.aaai.org）：EAAI-25 在 vol 39 no 28、EAAI
   - **使用注意：** 命中時逐篇判斷；只有實證研究才收，教學實務文章作 B 類或背景資料；不補收舊文。
   - **比對方式：** ISSN 2221-1993，DOI 前綴 `10.32517/2221-1993`。
 
+### 2026-11-11 期刊反查：清單外 6 刊（管理者決定）
+
+每日短訊 2026-11-11 查核紀錄列出 6 篇清單外期刊論文。以 OpenAlex 統計 2025-01-01～2026-11-11 篇數（關鍵字粗估，只供排序），查詢紀錄見 [p0-venue-1111](p0-venue-1111/counts.json)。
+
+| 期刊 | 出版者 | DOAJ | 總篇數 | AI | AI × 學校 | 期刊決定 | 該篇 |
+|---|---|---|---|---|---|---|---|
+| Revista Edutec（ISSN 2764-9067） | 巴西 UFMS | 否 | 26 | 3 | 2 | 不列入 | `10.55028/edutec.v6i1.26615` 單篇例外收錄（B） |
+| European Public & Social Innovation Review（ISSN 2529-9824） | Forum XXI（西班牙） | 是 | 770 | 18 | 4 | 不列入 | `10.31637/epsir-2027-3092` 單篇例外收錄（A） |
+| Premiere Educandum（ISSN 2528-5173） | Universitas PGRI Madiun（印尼） | 否 | 12 | 1 | 1 | 不列入 | 不收（學生 4 人，期刊品質無法核實） |
+| Sage Sphere in Artificial Intelligence（ISSN 3103-1307） | Editorial JOGB | 否 | 14 | 3 | 1 | 不列入 | 不收（新刊、樣本小） |
+| Intelligent Information Convergence and Future Education（IICFE，ISSN 2951-4762） | 濟州大學智慧軟體教育研究所（韓國） | 否 | 55 | 23 | 14 | **觀察池** | `10.59482/iicfe.2026.5.23.01` 收（A） |
+| British Journal of Advanced Research（ISSN 3153-709X） | Ivory and Finch | 否 | 117 | 14 | 4 | 不列入 | 不收（新刊，收稿到刊出 21 天） |
+
+- **IICFE 觀察池：** 看題名，2025 年起中小學 AI 約 10 篇（約每月 0.5 篇），含小學 AI 素養專題學習、AI 教育前後測、高中資料偏誤課程、中學生生成式 AI 接受度；但尚非 KCI 正式收錄，審查方式未查核。命中時逐篇判斷；不補收舊文。若日後列入 KCI，再評估升為正式清單。比對方式：ISSN 2951-4762，DOI 前綴 `10.59482/iicfe`。
+- **Sage Sphere in Artificial Intelligence** 與 SAGE Publishing 無關，命中時勿誤認為 SAGE 期刊；暫不列入「不收出處」，再命中時再議。
+- **其餘不列入者：** 命中時逐篇判斷；均不列入「不收出處」。
+- 另 3 篇（IIARD `10.56201/ijccp…`、泰國 TCI 回顧 `10.60027/jelr.2026.e3979`、EWA 理論文 `10.54254/2753-7048/2027.nl38888`）由每日短訊以品質疑點或非實證排除，期刊不反查。
+
 ### 不收出處：每日與週檢索直接排除（2026-10-10 管理者決定）
 
 以下出處在每日、週、月檢索命中時，一律直接排除：不匯入候選池、不入庫、不上任何刊物。查核紀錄只寫「依不收出處排除」，不必每次重查。若要恢復收錄，須由管理者另行決定。

@@ -1,0 +1,200 @@
+[
+ {
+  "source": "Revista Edutec – Educação, Tecnologias Digitais e Formação Docente",
+  "issn": "2764-9067",
+  "openalex": "S4387283719",
+  "requests": [
+   {
+    "query": "total",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4387283719%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:17Z",
+    "http": 200,
+    "count": 26
+   },
+   {
+    "query": "ai",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4387283719%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+AI+OR+ChatGPT+OR+%22generative+AI%22%29&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:17Z",
+    "http": 200,
+    "count": 3
+   },
+   {
+    "query": "ai_school",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4387283719%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+AI+OR+ChatGPT+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools+OR+pupils+OR+students+OR+teachers+OR+primary+OR+secondary+OR+elementary%29&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:17Z",
+    "http": 200,
+    "count": 2
+   }
+  ],
+  "results": {
+   "total": 26,
+   "ai": 3,
+   "ai_school": 2
+  }
+ },
+ {
+  "source": "European Public & Social Innovation Review",
+  "issn": "2529-9824",
+  "openalex": "S4210237701",
+  "requests": [
+   {
+    "query": "total",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210237701%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:17Z",
+    "http": 200,
+    "count": 770
+   },
+   {
+    "query": "ai",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210237701%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+AI+OR+ChatGPT+OR+%22generative+AI%22%29&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:18Z",
+    "http": 200,
+    "count": 18
+   },
+   {
+    "query": "ai_school",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210237701%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+AI+OR+ChatGPT+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools+OR+pupils+OR+students+OR+teachers+OR+primary+OR+secondary+OR+elementary%29&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:18Z",
+    "http": 200,
+    "count": 4
+   }
+  ],
+  "results": {
+   "total": 770,
+   "ai": 18,
+   "ai_school": 4
+  }
+ },
+ {
+  "source": "Premiere Educandum: Jurnal Pendidikan Dasar dan Pembelajaran",
+  "issn": "2528-5173",
+  "openalex": "S4210205062",
+  "requests": [
+   {
+    "query": "total",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210205062%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:18Z",
+    "http": 200,
+    "count": 12
+   },
+   {
+    "query": "ai",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210205062%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+AI+OR+ChatGPT+OR+%22generative+AI%22%29&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:18Z",
+    "http": 200,
+    "count": 1
+   },
+   {
+    "query": "ai_school",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4210205062%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+AI+OR+ChatGPT+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools+OR+pupils+OR+students+OR+teachers+OR+primary+OR+secondary+OR+elementary%29&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:19Z",
+    "http": 200,
+    "count": 1
+   }
+  ],
+  "results": {
+   "total": 12,
+   "ai": 1,
+   "ai_school": 1
+  }
+ },
+ {
+  "source": "Sage Sphere in Artificial Intelligence",
+  "issn": "3103-1307",
+  "openalex": "S5407050539",
+  "requests": [
+   {
+    "query": "total",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS5407050539%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:19Z",
+    "http": 200,
+    "count": 14
+   },
+   {
+    "query": "ai",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS5407050539%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+AI+OR+ChatGPT+OR+%22generative+AI%22%29&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:19Z",
+    "http": 200,
+    "count": 3
+   },
+   {
+    "query": "ai_school",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS5407050539%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+AI+OR+ChatGPT+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools+OR+pupils+OR+students+OR+teachers+OR+primary+OR+secondary+OR+elementary%29&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:19Z",
+    "http": 200,
+    "count": 1
+   }
+  ],
+  "results": {
+   "total": 14,
+   "ai": 3,
+   "ai_school": 1
+  }
+ },
+ {
+  "source": "Intelligent Information Convergence and Future Education",
+  "issn": "2951-4762",
+  "openalex": "S4387290968",
+  "requests": [
+   {
+    "query": "total",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4387290968%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:19Z",
+    "http": 200,
+    "count": 55
+   },
+   {
+    "query": "ai",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4387290968%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+AI+OR+ChatGPT+OR+%22generative+AI%22%29&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:20Z",
+    "http": 200,
+    "count": 23
+   },
+   {
+    "query": "ai_school",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS4387290968%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+AI+OR+ChatGPT+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools+OR+pupils+OR+students+OR+teachers+OR+primary+OR+secondary+OR+elementary%29&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:20Z",
+    "http": 200,
+    "count": 14
+   }
+  ],
+  "results": {
+   "total": 55,
+   "ai": 23,
+   "ai_school": 14
+  }
+ },
+ {
+  "source": "British Journal of Advanced Research",
+  "issn": "3153-709X",
+  "openalex": "S7407064920",
+  "requests": [
+   {
+    "query": "total",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS7407064920%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:20Z",
+    "http": 200,
+    "count": 117
+   },
+   {
+    "query": "ai",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS7407064920%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+AI+OR+ChatGPT+OR+%22generative+AI%22%29&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:21Z",
+    "http": 200,
+    "count": 14
+   },
+   {
+    "query": "ai_school",
+    "url": "https://api.openalex.org/works?filter=primary_location.source.id%3AS7407064920%2Cfrom_publication_date%3A2025-01-01%2Cto_publication_date%3A2026-11-11%2Ctitle_and_abstract.search%3A%28%22artificial+intelligence%22+OR+AI+OR+ChatGPT+OR+%22generative+AI%22%29+AND+%28%22K-12%22+OR+school+OR+schools+OR+pupils+OR+students+OR+teachers+OR+primary+OR+secondary+OR+elementary%29&per_page=1&select=id",
+    "utc": "2026-11-11T17:01:21Z",
+    "http": 200,
+    "count": 4
+   }
+  ],
+  "results": {
+   "total": 117,
+   "ai": 14,
+   "ai_school": 4
+  }
+ }
+]
