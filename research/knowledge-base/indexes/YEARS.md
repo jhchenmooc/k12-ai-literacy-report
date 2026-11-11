@@ -1859,6 +1859,8 @@
 | KB-2026-0547 — [深耕國中小媒體素養教育 績優學校展現數位公民力](https://www.k12ea.gov.tw/Tw/News/K12eaNewsDetail?filter=9F92BBB7-0251-4CB7-BF06-82385FD996A0&id=8734876b-7f0f-49d2-ab74-65d9e44a4107) | government_announcement | 2026-11-08 | bibliographic_checked |
 | KB-2026-0548 — [Harnessing artificial intelligence in educational administration: insights from school administrators](https://doi.org/10.3389/feduc.2026.1986031) | journal_article | 2026-11-09 | bibliographic_checked |
 | KB-2026-0549 — [스마트 안경 관련 내신평가 부정행위 전수조사 결과](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107600&lev=0&m=020402&s=moe) | government_announcement | 2026-11-09 | bibliographic_checked |
+| KB-2026-0550 — [Introducing an EdTech and AI product safety certification scheme](https://www.gov.uk/government/consultations/introducing-an-edtech-and-ai-product-safety-certification-scheme) | government_announcement | 2026-11-10 | bibliographic_checked |
+| KB-2026-0551 — [乘風破浪航向數位平權，探索AI教育的無限可能](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=6E722FC092092F0A) | government_announcement | 2026-11-10 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
