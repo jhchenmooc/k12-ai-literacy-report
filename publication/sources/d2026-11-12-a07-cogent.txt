@@ -1,0 +1,4 @@
+Cogent Education (Taylor & Francis) | 2026-11-09 | Applying generative artificial intelligence (GenAI) in argumentative writing instruction: survey findings from Vietnamese secondary school teachers | https://doi.org/10.1080/2331186x.2026.2752641 | Crossref works record read 2026-11-11; publisher page returned a Cloudflare verification page (HTTP 403) to automated requests (not bypassed); first-disclosure date per Crossref published-online; Crossref has no abstract; bibliographic facts only
+Crossref: published-online 2026-11-09; record created 2026-11-09; Cogent Education 13(1), article 2752641; authors Le, Pham, Trinh, Luong, Doan
+OpenAlex abstract sentence (reconstructed from the OpenAlex abstract index; not read from the publisher page):
+This study reports survey findings on Vietnamese secondary teachers’ use, perceptions and professional learning needs regarding Generative Artificial Intelligence (GenAI) in argumentative writing instruction (Years 6–9).
