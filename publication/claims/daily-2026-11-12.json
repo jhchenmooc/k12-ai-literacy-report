@@ -383,12 +383,12 @@
   "ai_crosscheck_status": "concordant",
   "ai_crosscheck_passes": 2,
   "decision": "publish",
-  "ai_crosscheck_record": "第一輪 2026-11-10 子代理以 Crossref 關鍵詞查詢列出（MDPI 403；Journal of Intelligence 不在監測清單）；管理者 2026-11-12 確認單篇例外收錄、只發書目、判 B；本 session 讀 Crossref 紀錄（published-online 2026-11-07）並取出版者存入的摘要首句；第二輪 2026-11-12 由隔離子代理逐句對照原文，中文篇名與範圍說明通過；審查者建議改判 A（量表研究），因管理者已確認 B，本期維持 B，改判與否交管理者決定。只發書目。同一模型，非獨立審閱。",
-  "ai_lit_class": "B",
+  "ai_crosscheck_record": "第一輪 2026-11-10 子代理以 Crossref 關鍵詞查詢列出（MDPI 403；Journal of Intelligence 不在監測清單）；管理者 2026-11-12 確認單篇例外收錄、只發書目、判 B；本 session 讀 Crossref 紀錄（published-online 2026-11-07）並取出版者存入的摘要首句；第二輪 2026-11-12 由隔離子代理逐句對照原文，中文篇名與範圍說明通過；審查者建議改判 A（量表研究），因管理者已確認 B，本期維持 B，改判與否交管理者決定。只發書目。管理者 2026-11-12 依第二輪建議改判 A（AI 素養量表與評量），中文篇名、範圍說明與書目內容不變。同一模型，非獨立審閱。",
+  "ai_lit_class": "A",
   "ai_lit_dims": [
    "S-LRN"
   ],
-  "ai_lit_note": "中學生在英語口說學習中與 AI 協作的自評能力量表，AI 作為語言學習工具，屬 AI 賦能學習（B；依篇名與 Crossref 摘要判讀），對應 S-LRN「應用AI工具強化領域學習」",
+  "ai_lit_note": "編製中學生人機協作英語口說學習的自評能力量表，屬 AI 素養量表（A；依篇名與 Crossref 摘要判讀，未經出版社頁核對），對應 S-LRN「應用AI工具強化領域學習」",
   "audience": "k12"
  },
  {
