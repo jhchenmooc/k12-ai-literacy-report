@@ -1,0 +1,4 @@
+Education Sciences (MDPI) | 2026-11-11 | From Plagiarism to Critical Thinking: How Students at Different Educational Levels Perceive the Ethical Challenges of Generative AI | https://doi.org/10.3390/educsci16111936 | Crossref works record read 2026-11-12; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online; bibliographic facts only
+Crossref: published-online 2026-11-11; record created 2026-11-11; Education Sciences 16(11), article 1936; authors Licardo, Šindić
+Crossref abstract sentence (from the publisher-deposited Crossref abstract; not read from the publisher page):
+This study examined perceptions of general educational challenges and the perceived importance of ethical challenges associated with GenAI among 1299 students in Slovenia: 315 primary school students, 535 secondary school students, and 449 university students.
