@@ -1872,6 +1872,8 @@
 | KB-2026-0560 — [A study on the synergistic effects of teacher–student interaction patterns and an AI-based emotional feedback system in secondary school chemistry laboratory classes: an intervention experiment grounded in inquiry-based instruction](https://doi.org/10.3389/feduc.2026.1893180) | journal_article | 2026-11-11 | bibliographic_checked |
 | KB-2026-0561 — [From Plagiarism to Critical Thinking: How Students at Different Educational Levels Perceive the Ethical Challenges of Generative AI](https://doi.org/10.3390/educsci16111936) | journal_article | 2026-11-11 | bibliographic_checked |
 | KB-2026-0562 — [Orientaciones para la integración de la inteligencia artificial en los centros educativos](https://intef.es/Noticias/orientaciones-integracion-ia/) | government_announcement | 2026-11-10 | bibliographic_checked |
+| KB-2026-0563 — [Generative AI as an interactive learning environment in early childhood: preschool children's emerging AI literacy as socially distributed interpretive work in collaborative storytelling](https://doi.org/10.1080/10494820.2026.2762001) | journal_article | 2026-11-10 | bibliographic_checked |
+| KB-2026-0564 — [Effectiveness of an AI-Based Adaptive Assessment System for Conceptual Mastery in Grade 8 Mathematics: Protocol for a Cluster-Randomised Trial with Simulation-Based Design Checks](https://doi.org/10.3390/educsci16111942) | journal_article | 2026-11-12 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
@@ -1931,5 +1933,6 @@
 | KB-2026-0428 — [Artificial intelligence (AI) in schools – information for parents and carers](https://www.education.sa.gov.au/parents-and-families/curriculum-and-learning/ai/artificial-intelligence-ai-in-schools-information-for-parents-and-carers) | official_guidance | 未知 | discovered_unverified |
 | KB-2026-0444 — [Evaluating an AI-Powered Learning Analytics Tool for Automated Essay Scoring in Real Classroom Contexts: An Experience Report from a Brazilian Public Secondary School](https://doi.org/10.5753/wie.2026.28044) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0447 — [Towards a world-centred AI literacy in middle school education? Reflections from a Swedish case](https://doi.org/10.18261/njdl.21.2.4) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0565 — [Development of an Elementary Robot Convergence Education Program Using an AI Social Robot and Exploration of Changes in Elementary Students’ Perceptions of AI Robots](https://doi.org/10.59482/iicfe.2026.5.23.01) | journal_article | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。

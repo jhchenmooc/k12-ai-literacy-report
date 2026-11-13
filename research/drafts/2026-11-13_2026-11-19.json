@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "period": {
+    "start": "2026-11-13",
+    "end": "2026-11-19"
+  },
+  "status": "draft_pending_source_verification",
+  "notice": "Planning worksheet only. NOT registered in publication/issues.json, NOT certified or published.",
+  "editorial_rules": {
+    "target_items": "3–5, fewer when evidence is insufficient",
+    "high_risk": "hold",
+    "source_required": true
+  },
+  "items": [
+    {
+      "candidate_id": "W2026-11-13-A01",
+      "category": "research",
+      "source_url": "https://doi.org/10.1080/10494820.2026.2762001",
+      "source_title": "Generative AI as an interactive learning environment in early childhood: preschool children's emerging AI literacy as socially distributed interpretive work in collaborative storytelling",
+      "source_organization": "Interactive Learning Environments（Taylor & Francis）",
+      "source_publication_date": "2026-11-10",
+      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：T&F 回 Cloudflare 驗證頁）：2026-11-10；Crossref 無摘要；OpenAlex 摘要句（非原文）",
+      "discovered_on": "2026-11-13",
+      "discovery_batch_id": "2026-11-13-daily-1",
+      "first_disclosed_on": "2026-11-10",
+      "source_updates": [],
+      "original_excerpt": "This qualitative case study examined whole-class AI-assisted storytelling in a public preschool in southeastern Türkiye. … The corpus consists of 17 Turkish transcript files from the episodes (involving 22 children aged 5–6 years), along with available video and image records.",
+      "source_checked": true,
+      "claim_text": "來源機構：Interactive Learning Environments（Taylor & Francis）；資料標題：Generative AI as an interactive learning environment in early childhood: preschool children's emerging AI literacy as socially distributed interpretive work in collaborative storytelling；來源刊登日：2026-11-10。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "同儕審查期刊論文（Interactive Learning Environments，監測清單 J40）；OpenAlex 所載摘要句為土耳其東南部一所公立幼兒園全班 AI 輔助說故事的質性個案研究（22 名 5–6 歲幼兒）；依 2026-11-12 學前規則屬 K-12；本則只為書目事實。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-12 子代理以監測期刊 ISSN 查詢列出（T&F 頁 Cloudflare、Crossref 無摘要，當日列瀏覽器清單）；2026-11-13 回查 OpenAlex 已有摘要；本 session 讀 Crossref 紀錄並自 OpenAlex 摘要索引還原第 2、3 句；依 2026-11-12 學前規則（3–6 歲屬 K-12）判對象；第二輪 2026-11-13 由隔離子代理對照，引句、日期、作者、分類與範圍說明通過，依建議改寫中文篇名後半句。只發書目。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS"
+      ],
+      "ai_lit_note": "學前兒童在教師帶領的生成式 AI 說故事活動中萌發的 AI 素養，屬 AI 素養（A；依篇名與 OpenAlex 摘要判讀，未經原文核對），對應 S-BAS「理解AI運作原理與限制」",
+      "audience": "k12",
+      "doi": "10.1080/10494820.2026.2762001",
+      "screening_note": "Verified 2026-11-13 for daily brief 2026-11-13.",
+      "verification_completed_on": "2026-11-13"
+    },
+    {
+      "candidate_id": "W2026-11-13-A02",
+      "category": "research",
+      "source_url": "https://doi.org/10.3390/educsci16111942",
+      "source_title": "Effectiveness of an AI-Based Adaptive Assessment System for Conceptual Mastery in Grade 8 Mathematics: Protocol for a Cluster-Randomised Trial with Simulation-Based Design Checks",
+      "source_organization": "Education Sciences（MDPI）",
+      "source_publication_date": "2026-11-12",
+      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：MDPI 回 403）：2026-11-12；Crossref 摘要句（出版者存入，未讀出版社頁）",
+      "discovered_on": "2026-11-13",
+      "discovery_batch_id": "2026-11-13-daily-1",
+      "first_disclosed_on": "2026-11-12",
+      "source_updates": [],
+      "original_excerpt": "This protocol describes a two-arm cluster-randomised trial in schools that follow the Cambridge Lower Secondary Mathematics framework.",
+      "source_checked": true,
+      "claim_text": "來源機構：Education Sciences（MDPI）；資料標題：Effectiveness of an AI-Based Adaptive Assessment System for Conceptual Mastery in Grade 8 Mathematics: Protocol for a Cluster-Randomised Trial with Simulation-Based Design Checks；來源刊登日：2026-11-12。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "同儕審查期刊論文（Education Sciences，監測清單 J47）；研究計畫書：Crossref 摘要句所述為採 Cambridge 初中數學架構學校的兩組群集隨機試驗設計，尚未蒐集參與者資料；本則只為書目事實。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-13 子代理以監測期刊 ISSN 查詢列出（MDPI 403，未繞過；OpenAlex 尚未收錄）；本 session 讀 Crossref 紀錄（published-online 2026-11-12）並取出版者存入的摘要第 2 句；研究計畫書、尚未蒐集資料，不寫任何成效；第二輪 2026-11-13 由隔離子代理對照，判 B 而非 C（學生直接操作 AI 驅動的適性評量工具，屬工具使用），依建議改寫中文篇名並把分類理由改為預定語氣，修正後一致。只發書目。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN"
+      ],
+      "ai_lit_note": "八年級學生預定使用 AI 適性評量系統學習數學概念的試驗計畫（尚未蒐集資料），AI 作為學習工具，屬 AI 賦能學習（B；依篇名與 Crossref 摘要判讀），對應 S-LRN「應用AI工具強化領域學習」",
+      "audience": "k12",
+      "doi": "10.3390/educsci16111942",
+      "screening_note": "Verified 2026-11-13 for daily brief 2026-11-13.",
+      "verification_completed_on": "2026-11-13"
+    },
+    {
+      "candidate_id": "W2026-11-13-A03",
+      "category": "research",
+      "source_url": "https://doi.org/10.59482/iicfe.2026.5.23.01",
+      "source_title": "Development of an Elementary Robot Convergence Education Program Using an AI Social Robot and Exploration of Changes in Elementary Students’ Perceptions of AI Robots",
+      "source_organization": "Intelligent Information Convergence and Future Education",
+      "source_publication_date": "2026-11-04",
+      "source_locator": "Crossref 只有 published-print 2026-11-04（無 published-online；record created 2026-11-10）；5(23), 1-13；出版社頁未讀",
+      "discovered_on": "2026-11-13",
+      "discovery_batch_id": "2026-11-13-daily-1",
+      "first_disclosed_on": null,
+      "source_updates": [],
+      "original_excerpt": "",
+      "source_checked": false,
+      "claim_text": "",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "期刊論文（Intelligent Information Convergence and Future Education，觀察池）；篇名所示為以 AI 社交機器人發展的小學機器人融合教育課程及小學生對 AI 機器人看法的變化；管理者 2026-11-12 決定不發每日短訊、只入知識庫。",
+      "translation_reviewed": false,
+      "conflict_unresolved": null,
+      "decision": "hold",
+      "ai_crosscheck_status": "not_started",
+      "ai_crosscheck_passes": 0,
+      "ai_crosscheck_record": "",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS"
+      ],
+      "ai_lit_note": "小學 AI 社交機器人融合教育課程與學生對 AI 機器人的看法，屬 AI 素養（A；依篇名判讀），對應 S-BAS「理解AI運作原理與限制」",
+      "audience": "k12",
+      "doi": "10.59482/iicfe.2026.5.23.01",
+      "screening_note": "管理者 2026-11-12 決定（丙）：不發每日短訊（Crossref 只有 published-print 2026-11-04，無 published-online，已逾 7 天），只入知識庫；維持 hold。"
+    }
+  ],
+  "search_runs": [
+    {
+      "batch_id": "2026-11-13-daily-1",
+      "searched_on": "2026-11-13",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-11-12,until-created-date:2026-11-13,type:journal-article, six query.bibliographic sets, proceedings-article set, watchlist-ISSN sets; pedagogical AI agent sets on Crossref, OpenAlex and arXiv; arXiv API three sets and cs.CY/cs.HC new listings (page still showed the Wednesday 11 November batch); alphaXiv; re-check of 10.1080/10494820.2026.2762001 (OpenAlex abstract now present) and 10.3390/educsci16111928 (OpenAlex has no full text); IICFE 10.59482/iicfe.2026.5.23.01 added to the knowledge base only (manager 2026-11-12); publisher pages one try each (T&F, ACM, MDPI, journalajess 403 or Cloudflare, not bypassed)",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search and Content API (DfE, Ofqual, Ofsted; AI keyword sets), Federal Register (11-13 issue not yet in API; public inspection PDF read; raw-text page blocked, not bypassed), MEXT (mext_00750 text still not uploaded), China MOE, HK info.gov.hk 11-12, MOE Korea (107628 hwpx read), KICE, KERIS (554), UNESCO newsroom (article pages returned a rejection page, not bypassed), Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (115-11-12 issue), Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 3,
+      "added": 3,
+      "duplicates": 0
+    }
+  ],
+  "item_template": {
+    "candidate_id": "",
+    "category": "news_policy_or_research",
+    "source_url": "",
+    "source_title": "",
+    "source_publication_date": "",
+    "source_locator": "",
+    "original_excerpt": "",
+    "source_checked": false,
+    "claim_text": "",
+    "claim_class": "bibliographic_or_descriptive_or_high_impact",
+    "risk_tier": "low_or_medium_or_high",
+    "scope_limitation": "",
+    "translation_reviewed": false,
+    "conflict_unresolved": null,
+    "decision": "hold",
+    "ai_crosscheck_status": "not_started",
+    "ai_crosscheck_passes": 0,
+    "ai_crosscheck_record": ""
+  }
+}
