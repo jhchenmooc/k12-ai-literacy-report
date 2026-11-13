@@ -1,0 +1,4 @@
+Education Sciences (MDPI) | 2026-11-12 | Effectiveness of an AI-Based Adaptive Assessment System for Conceptual Mastery in Grade 8 Mathematics: Protocol for a Cluster-Randomised Trial with Simulation-Based Design Checks | https://doi.org/10.3390/educsci16111942 | Crossref works record read 2026-11-13; publisher page returned HTTP 403 (Access Denied) to automated requests (not bypassed); first-disclosure date per Crossref published-online; bibliographic facts only
+Crossref: published-online 2026-11-12; record created 2026-11-12; Education Sciences 16(11), article 1942; authors Ayasrah, Hasan, Alasem
+Crossref abstract sentence (from the publisher-deposited Crossref abstract; not read from the publisher page):
+This protocol describes a two-arm cluster-randomised trial in schools that follow the Cambridge Lower Secondary Mathematics framework.
