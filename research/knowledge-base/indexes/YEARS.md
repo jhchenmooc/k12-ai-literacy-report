@@ -1876,6 +1876,7 @@
 | KB-2026-0564 — [Effectiveness of an AI-Based Adaptive Assessment System for Conceptual Mastery in Grade 8 Mathematics: Protocol for a Cluster-Randomised Trial with Simulation-Based Design Checks](https://doi.org/10.3390/educsci16111942) | journal_article | 2026-11-12 | bibliographic_checked |
 | KB-2026-0566 — [Developing and validating the human-AI collaboration competency scale](https://doi.org/10.1007/s11423-026-10753-5) | journal_article | 2026-11-13 | bibliographic_checked |
 | KB-2026-0567 — [115年度總統盃AI素養爭霸賽圓滿閉幕 全國AI小將展現學習成果，儲備未來AI競爭力](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=BFFA093635CE9249) | government_announcement | 2026-11-13 | bibliographic_checked |
+| KB-2026-0568 — [Regional Differences in Self-Reported Composite Scores Related to Integrating Artificial Intelligence into Education in a Sample of Teachers Across Educational Levels in Ecuador](https://doi.org/10.3390/educsci16111928) | journal_article | 2026-11-11 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

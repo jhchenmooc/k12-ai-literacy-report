@@ -90,3 +90,20 @@
 
 - Journal of Intelligence `jintelligence14110294`（11-12 列，期限 11-14）：今日到期，未取得摘要，維持書目型，移除。
 - SIGCSE Virtual 三篇（11-12 列）：清單外，若不收可移除。
+
+## 補記（2026-11-14，管理者提供全文後）
+
+管理者 2026-11-14 在本 session 提供 Education Sciences 1928、1936、1942 出版者 PDF、ILE 2762001 與 Cogent 2752641 出版社文章頁列印、CAEAI 100692 pre-proof，以及 Leadership and Policy in Schools 2762927 文章頁截圖；全文存私人 repo（daily-pdfs）。
+
+| 項目 | 處理 | 第二輪對照 |
+|---|---|---|
+| D20261112-07 Cogent 2752641 | 書目型改作者摘要型（文章頁 Abstract 第 1–3 句；Published online 09 Nov 2026） | 通過 |
+| D20261112-10 Education Sciences 1936 | 書目型改作者摘要型（PDF Abstract 第 2、3 句；Published 11 November 2026） | 通過；書目行補 Revised 日期 |
+| D20261113-01 ILE 2762001 | 書目型改作者摘要型（文章頁 Abstract 第 2–4 句；Published online 10 Nov 2026） | 通過 |
+| D20261113-02 Education Sciences 1942 | 書目型改作者摘要型（PDF Abstract 第 2–4 句與末句；研究計畫書，不寫成效） | 通過；書目行補 Revised 日期 |
+| D20261114-03 Education Sciences 1928（補登） | 表 1 任教學段：幼兒 16.8%、基礎 41.9%、高中 31.4%、高等 9.9%，依多數判 k12；A（T-TEA）；首發 2026-11-11 | 需修改：分類理由改為「自陳綜合分數（作者說明比較的是觀察分數，不是潛在能力）」、範圍說明改寫作者限制語，修正後一致 |
+
+- 每日 2026-11-12、11-13、11-14 三頁加 revised_on 2026-11-14，corrections.json 加 5 筆（daily-2026-11-12-r2、-r3，daily-2026-11-13-r1、-r2，daily-2026-11-14-r1）。
+- 候選池 W2026-11-13-A06（batch 2026-11-14-daily-2）；KB-2026-0568。
+- **CAEAI 100692（教學 AI 代理人概念論文）：** pre-proof 無上線日（Accepted 8 November 2026），Crossref 只有年月；需 ScienceDirect 文章頁 Available online 日期截圖才能判首發日。概念論文，對象為一般教師（文中例子含幼兒園英語活動），若發布擬記 other_stakeholders 或 k12，待日期確認後再判。
+- **Leadership and Policy in Schools 2762927（清單外）：** 截圖可讀摘要與 Published online 12 Nov 2026（頁面標「Review Article」，摘要為迦納 187 名公立基礎教育學校校長的實證研究）。清單外，是否單篇例外待管理者決定（期限 11-19）。
