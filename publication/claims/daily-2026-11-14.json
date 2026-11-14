@@ -102,5 +102,55 @@
    "正式賽採用了「魷來魷去對戰版本」監督式學習遊戲，表演賽則採用了「Proly定向越野大作戰」強化式學習遊戲，提供多元的競賽遊戲選擇。"
   ],
   "attributed_summary": "教育部表示，115年度總統盃 AI 素養爭霸賽全國競賽暨頒獎典禮 11 月 13 日於臺北世貿一館閉幕；正式賽分國小、國中的一般組與偏鄉組共四組，全國 201 隊、384 名國中小學生參加；10 月 28 日 AI 模型訓練須限時完成資料蒐集、模型建置與策略調整，模型經評審小組審核及預選賽等過程，80 隊 152 名選手晉級總決賽；正式賽採監督式學習遊戲。"
+ },
+ {
+  "claim_id": "D20261114-03",
+  "candidate_id": "W2026-11-13-A06",
+  "kind": "research",
+  "claim_text": "來源機構：Education Sciences（MDPI）；資料標題：Regional Differences in Self-Reported Composite Scores Related to Integrating Artificial Intelligence into Education in a Sample of Teachers Across Educational Levels in Ecuador；來源刊登日：2026-11-11。作者摘要報告：這項探索性研究檢視厄瓜多 334 名有 AI 使用經驗的教師，在 AI 教學運用、教育資料管理、調適與融合三項自陳綜合分數上的地區差異；採橫斷設計，以便利與滾雪球抽樣，於 2026 年 6 月 2 日至 7 月 1 日蒐集資料；每項分數為三題五點李克特題目的平均。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "V2",
+  "daily_fact_kind": "research_abstract_attributed_summary",
+  "source_document_type": "peer_reviewed_article",
+  "source_title": "Regional Differences in Self-Reported Composite Scores Related to Integrating Artificial Intelligence into Education in a Sample of Teachers Across Educational Levels in Ecuador",
+  "title_zh": "厄瓜多跨教育階段教師樣本中，與 AI 融入教育相關之自陳綜合分數的地區差異",
+  "source_organization": "Education Sciences（MDPI）",
+  "source_url": "https://doi.org/10.3390/educsci16111928",
+  "evidence_source_url": "https://doi.org/10.3390/educsci16111928",
+  "source_locator": "出版者 PDF（管理者 2026-11-14 提供；MDPI 頁回 403）：Published: 11 November 2026；摘要歸屬：Abstract 第 2、3、4 句；學段分布依表 1",
+  "source_type": "research_publication",
+  "checked_at": "2026-11-14",
+  "publication_date": "2026-11-11",
+  "first_disclosed_on": "2026-11-11",
+  "evidence_path": "publication/sources/d2026-11-14-a03-educsci-pdf.txt",
+  "evidence_sha256": "68b248b879332bc9d96936fd14b13ac2540febd94410be434a953d5ff2a2dd8e",
+  "original_excerpt": "This exploratory study examined regional differences in observed self-reported composite scores for pedagogical use of AI, educational data management, and adaptation and inclusion among 334 teachers in Ecuador with prior AI experience. … Using a cross-sectional design with convenience and chain-referral sampling, data were collected from 2 June to 1 July 2026. … Each score averaged three five-point Likert-type items (Cronbach’s α = 0.861–0.890).",
+  "interpretation_note": "轉述作者摘要的研究目的、樣本、抽樣與資料蒐集期間及分數構成；地區差異的檢定結果與作者結論不寫入。",
+  "scope_limitation": "同儕審查期刊論文（Education Sciences，監測清單 J47）；厄瓜多 334 名教師的非機率樣本，任教學段為幼兒教育 16.8%、基礎教育 41.9%、統一普通高中 31.4%、高等教育 9.9%（表 1），中小學與學前教師占多數；分數為教師自陳；作者說明結果僅限此非機率樣本，不代表母體層級的地區差異。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "decision": "publish",
+  "ai_crosscheck_record": "第一輪 2026-11-12 子代理以監測期刊 ISSN 查詢列出（MDPI 403；Crossref 摘要未載學段分布，audience 暫記 unknown，列瀏覽器清單）；管理者 2026-11-14 提供出版者 PDF，本 session 讀 PDF 表 1（任教學段：幼兒教育 16.8%、基礎教育 41.9%、統一普通高中 31.4%、高等教育 9.9%），依多數判對象 k12，擇摘要第 2、3、4 句撰寫中文摘要與中文譯名，檢定結果不寫入；第二輪 2026-11-14 由隔離子代理逐句對照PDF，判定需修改，依建議分類理由改為「自陳綜合分數（作者說明比較的是觀察分數，不是潛在能力）」、範圍說明改寫作者限制語、書目行補 Revised 日期，修正後一致。同一模型，非獨立審閱。",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-TEA"
+  ],
+  "ai_lit_note": "教師在 AI 教學運用、教育資料管理與調適融合方面的自陳綜合分數（作者說明比較的是觀察分數，不是潛在能力），屬教師 AI 素養（A），對應 T-TEA「評估AI工具輔助教學的適用性」",
+  "audience": "k12",
+  "summary_evidence_spans": [
+   "This exploratory study examined regional differences in observed self-reported composite scores for pedagogical use of AI, educational data management, and adaptation and inclusion among 334 teachers in Ecuador with prior AI experience.",
+   "Using a cross-sectional design with convenience and chain-referral sampling, data were collected from 2 June to 1 July 2026.",
+   "Each score averaged three five-point Likert-type items (Cronbach’s α = 0.861–0.890)."
+  ],
+  "attributed_summary": "這項探索性研究檢視厄瓜多 334 名有 AI 使用經驗的教師，在 AI 教學運用、教育資料管理、調適與融合三項自陳綜合分數上的地區差異；採橫斷設計，以便利與滾雪球抽樣，於 2026 年 6 月 2 日至 7 月 1 日蒐集資料；每項分數為三題五點李克特題目的平均。"
  }
 ]
