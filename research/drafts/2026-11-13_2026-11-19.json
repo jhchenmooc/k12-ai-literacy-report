@@ -112,6 +112,73 @@
       "audience": "k12",
       "doi": "10.59482/iicfe.2026.5.23.01",
       "screening_note": "管理者 2026-11-12 決定（丙）：不發每日短訊（Crossref 只有 published-print 2026-11-04，無 published-online，已逾 7 天），只入知識庫；維持 hold。"
+    },
+    {
+      "candidate_id": "W2026-11-13-A04",
+      "category": "research",
+      "source_url": "https://doi.org/10.1007/s11423-026-10753-5",
+      "source_title": "Developing and validating the human-AI collaboration competency scale",
+      "source_organization": "Educational Technology Research and Development（Springer）",
+      "source_publication_date": "2026-11-13",
+      "source_locator": "出版社文章頁（link.springer.com，2026-11-14 讀取 200）：Published 13 November 2026（Version of record 同日）；摘要歸屬：Abstract 第 2、4、5 句",
+      "discovered_on": "2026-11-14",
+      "discovery_batch_id": "2026-11-14-daily-1",
+      "first_disclosed_on": "2026-11-13",
+      "source_updates": [],
+      "original_excerpt": "This study aims to develop and validate the Human–AI Collaboration Competency (HACC) Scale, which can be used to assess students’ perceived competency in allocating roles and managing tasks, and sharing, coordinating, and integrating with AI through ongoing interaction to achieve a common goal. … Two independent samples of high school students were used to examine the factor structures: Sample 1 (n = 195) was used for exploratory factor analysis (EFA), and Sample 2 (n = 356) was used for confirmatory factor analysis (CFA). … The final version of the HACC Scale consisted of 25 items loaded onto 5 factors.",
+      "source_checked": true,
+      "claim_text": "來源機構：Educational Technology Research and Development（Springer）；資料標題：Developing and validating the human-AI collaboration competency scale；來源刊登日：2026-11-13。作者摘要報告：研究旨在編製並驗證人機協作能力量表（HACC），用以評量學生在與 AI 持續互動中分配角色、管理任務，以及分享、協調與整合以達成共同目標的自評能力；以兩組高中生樣本檢驗因素結構，探索性因素分析 195 人、驗證性因素分析 356 人；作者報告量表定稿為 5 個因素、25 題。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Educational Technology Research and Development，監測清單 J07）；南韓兩所開設 AI 與數位科技課程的高中、16–17 歲學生兩組樣本的量表編製研究；量表評量學生的自評能力。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-14 子代理以監測期刊 ISSN 查詢列出並讀出版社頁（Published 13 November 2026；OpenAlex、arXiv 題名查詢無較早版本）；本 session 擇摘要第 2、4、5 句撰寫中文摘要與中文譯名，效度結果與作者結論不寫入；第二輪 2026-11-14 由隔離子代理逐句對照出版社頁，引句、數字、範圍說明與首發日通過，依建議刪去對應不到所引原文的 S-LRN，修正後一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS"
+      ],
+      "ai_lit_note": "編製並驗證評量高中生與 AI 協作能力的量表，屬 AI 素養評量（A），對應 S-BAS「調整與AI協作的適應力」",
+      "audience": "k12",
+      "doi": "10.1007/s11423-026-10753-5",
+      "screening_note": "Verified 2026-11-14 for daily brief 2026-11-14.",
+      "verification_completed_on": "2026-11-14"
+    },
+    {
+      "candidate_id": "W2026-11-13-A05",
+      "category": "news_policy",
+      "source_url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=BFFA093635CE9249",
+      "source_title": "115年度總統盃AI素養爭霸賽圓滿閉幕 全國AI小將展現學習成果，儲備未來AI競爭力",
+      "source_organization": "教育部",
+      "source_publication_date": "2026-11-13",
+      "source_locator": "教育部即時新聞（2026-11-14 讀取 200）：上版日期 115-11-13，RSS 時間 2026-11-13 16:51（臺灣時間）；摘要歸屬：新聞第 1 段首句、第 2 段（略首句前半）與第 3 段末句",
+      "discovered_on": "2026-11-14",
+      "discovery_batch_id": "2026-11-14-daily-1",
+      "first_disclosed_on": "2026-11-13",
+      "source_updates": [],
+      "original_excerpt": "「115年度總統盃AI素養爭霸賽」全國競賽(觀賽)暨頒獎典禮，今（13）日於臺北世貿一館圓滿閉幕。 … 正式賽共設有國小一般組、國小偏鄉組、國中一般組、國中偏鄉組共四組，另設有表演組。 … 全國共計201支隊伍、384名國中小學生參加。 … 10月28日於各縣市會場舉行的AI模型訓練，需於限時內完成資料蒐集、模型建置與策略調整等高難度挑戰，這些隊伍訓練出來的AI模型，經過評審小組審核，以及預選賽等過程，總計有80支隊伍，計152名選手晉級今日總決賽，共同角逐今日全國總冠軍的最高榮耀。 … 正式賽採用了「魷來魷去對戰版本」監督式學習遊戲，表演賽則採用了「Proly定向越野大作戰」強化式學習遊戲，提供多元的競賽遊戲選擇。",
+      "source_checked": true,
+      "claim_text": "來源機構：教育部；資料標題：115年度總統盃AI素養爭霸賽圓滿閉幕 全國AI小將展現學習成果，儲備未來AI競爭力；來源刊登日：2026-11-13。官方文件表示：教育部表示，115年度總統盃 AI 素養爭霸賽全國競賽暨頒獎典禮 11 月 13 日於臺北世貿一館閉幕；正式賽分國小、國中的一般組與偏鄉組共四組，全國 201 隊、384 名國中小學生參加；10 月 28 日 AI 模型訓練須限時完成資料蒐集、模型建置與策略調整，模型經評審小組審核及預選賽等過程，80 隊 152 名選手晉級總決賽；正式賽採監督式學習遊戲。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "臺灣中央教育主管機關的競賽結果新聞，對象為國中小學生；主辦單位對學生能力的描述屬機構敘述，本則不轉述；同一活動的晉級名單公告已收 D20261106-03。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-14 子代理讀教育部即時新聞與資科司 RSS 列出並存原頁；本 session 擇新聞第 1 段首句、第 2 段與第 3 段末句撰寫中文摘要，得獎名單、總冠軍、致詞、AI 人才方舟計畫背景（KB-2026-0095）與能力展現敘述不寫入；第二輪 2026-11-14 由隔離子代理逐句對照原頁，判定需修改，依建議改「全國競賽」、把「限時完成」「審核與預選賽」改回原文主語（AI 模型訓練、模型經評審小組審核及預選賽等過程），分類理由刪去原文未寫的「訓練監督式學習模型」，修正後一致；分類 A 比照 D20261106-03。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS"
+      ],
+      "ai_lit_note": "中央主辦、國中小學生於限時內完成資料蒐集、模型建置與策略調整並以 AI 模型參賽的 AI 素養競賽，正式賽採監督式學習遊戲（依準則 AI 素養活動判 A，比照 D20261106-03），對應 S-BAS「理解AI運作原理與限制」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-11-14 for daily brief 2026-11-14.",
+      "verification_completed_on": "2026-11-14"
     }
   ],
   "search_runs": [
@@ -139,6 +206,32 @@
       ],
       "discovered": 3,
       "added": 3,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-14-daily-1",
+      "searched_on": "2026-11-14",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-11-13,until-created-date:2026-11-14,type:journal-article, six query.bibliographic sets, proceedings-article set, watchlist-ISSN sets; pedagogical AI agent sets on Crossref, OpenAlex and arXiv; arXiv API three sets and cs.CY/cs.HC new listings (Friday 13 November batch); alphaXiv; OpenAlex re-checks of 10.1080/15700763.2026.2762927, 10.3390/educsci16111942 and 10.3390/educsci16111936; publisher pages one try each (Sage, ScienceDirect, sciencedomain 403, not bypassed)",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search and Content API, Federal Register (11-13 issue; public inspection 11-16 and 11-17), MEXT (mext_00751 new press conference, text not yet uploaded), China MOE, HK info.gov.hk 11-13 and 11-14, MOE Korea, KICE, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (115-11-13 issue), Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 2,
+      "added": 2,
       "duplicates": 0
     }
   ],
