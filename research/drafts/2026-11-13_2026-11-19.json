@@ -213,6 +213,41 @@
       "doi": "10.3390/educsci16111928",
       "screening_note": "Verified 2026-11-14 for daily brief 2026-11-14 (r1, manager-supplied PDF).",
       "verification_completed_on": "2026-11-14"
+    },
+    {
+      "candidate_id": "W2026-11-13-A07",
+      "category": "research",
+      "source_url": "https://doi.org/10.1111/bjet.70101",
+      "source_title": "Generative AI empowered contextual educational games as facilitators of elementary school students' computational thinking tendencies",
+      "source_organization": "British Journal of Educational Technology（Wiley）",
+      "source_publication_date": "2026-11-13",
+      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：Wiley 回 403）：2026-11-13；Crossref 摘要句（出版者存入，未讀出版社頁）",
+      "discovered_on": "2026-11-15",
+      "discovery_batch_id": "2026-11-15-daily-1",
+      "first_disclosed_on": "2026-11-13",
+      "source_updates": [],
+      "original_excerpt": "A quasi‐experimental study was conducted with two intact fifth‐grade classes at an elementary school in eastern China.",
+      "source_checked": true,
+      "claim_text": "來源機構：British Journal of Educational Technology（Wiley）；資料標題：Generative AI empowered contextual educational games as facilitators of elementary school students' computational thinking tendencies；來源刊登日：2026-11-13。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "同儕審查期刊論文（British Journal of Educational Technology，監測清單 J04）；Crossref 摘要句所述為中國東部一所小學兩個五年級完整班級的準實驗研究；本則只為書目事實。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-15 子代理以監測期刊 ISSN 查詢列出（Wiley 403，未繞過；OpenAlex 尚無紀錄；無較早預印本）；本 session 讀 Crossref 紀錄（published-online 2026-11-13）並取出版者存入的摘要句；第二輪 2026-11-15 由隔離子代理對照，中文篇名、引句、日期、作者、分類與範圍說明通過，依建議「華東」改為貼近原文的「東部」。只發書目。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN",
+        "S-BAS"
+      ],
+      "ai_lit_note": "小學生在生成式 AI 賦能的情境教育遊戲中學習運算思維，AI 作為學習工具，屬 AI 賦能學習（B；依篇名與 Crossref 摘要判讀），對應 S-LRN「應用AI工具強化領域學習」、S-BAS「實踐AI強化運算思維」",
+      "audience": "k12",
+      "doi": "10.1111/bjet.70101",
+      "screening_note": "Verified 2026-11-15 for daily brief 2026-11-15.",
+      "verification_completed_on": "2026-11-15"
     }
   ],
   "search_runs": [
@@ -277,6 +312,32 @@
         {
           "group": "research-doi",
           "query": "Manager-supplied publisher PDFs and saved article pages on 2026-11-14 (Education Sciences 16(11) 1928, 1936, 1942; Interactive Learning Environments 10.1080/10494820.2026.2762001; Cogent Education 10.1080/2331186x.2026.2752641); publisher pages returned 403 or Cloudflare to automated requests and were not bypassed",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-15-daily-1",
+      "searched_on": "2026-11-15",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-11-14,until-created-date:2026-11-15,type:journal-article, six query.bibliographic sets, proceedings-article set, watchlist-ISSN sets; pedagogical AI agent sets on Crossref, OpenAlex and arXiv; arXiv API three sets and cs.CY/cs.HC new listings (no weekend batch); alphaXiv; re-checks of 10.1177/01650254261500063, 10.59120/drj.v17i4.647 and 10.1007/s44436-026-00046-2; publisher pages one try each (Wiley, ACS, Sage 403, not bypassed)",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK Search and Content API, Federal Register (term sets, ED x AI and public inspection 200; ED agency filter returned HTTP 403 IP block, not retried or bypassed; no weekend issue), MEXT (mext_00750 and 00751 text not yet uploaded), China MOE, HK info.gov.hk 11-14 and 11-15, MOE Korea (107657, 107659 hwpx read), KICE, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (no issue after 115-11-13), Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
           "status": "ok"
         }
       ],

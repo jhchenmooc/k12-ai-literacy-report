@@ -1,0 +1,4 @@
+British Journal of Educational Technology (Wiley) | 2026-11-13 | Generative AI empowered contextual educational games as facilitators of elementary school students' computational thinking tendencies | https://doi.org/10.1111/bjet.70101 | Crossref works record read 2026-11-15; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online; OpenAlex has no record yet; no earlier preprint found; bibliographic facts only
+Crossref: published-online 2026-11-13; record created 2026-11-14; British Journal of Educational Technology, no volume or issue assigned; authors Zhou, Fu, Fang, Hwang
+Crossref abstract sentence (from the publisher-deposited Crossref abstract; not read from the publisher page):
+A quasi‐experimental study was conducted with two intact fifth‐grade classes at an elementary school in eastern China.
