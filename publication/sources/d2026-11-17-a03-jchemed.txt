@@ -1,0 +1,4 @@
+Journal of Chemical Education (ACS) | 2026-11-14 | From Consumers to Designers: Building Rule-Based Chatbots to Reinforce Chemistry Learning and Foster Critical AI Literacy | https://doi.org/10.1021/acs.jchemed.6c01077 | Crossref works record read 2026-11-16; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online; no earlier version found; bibliographic facts only
+Crossref: published-online 2026-11-14; record created 2026-11-14; Journal of Chemical Education, no volume or issue assigned; author Makaridze
+Crossref abstract sentence (from the publisher-deposited Crossref abstract; not read from the publisher page):
+Implemented with 62 students (grades 8–12) in Georgia, the project required collaborative curation of chemistry content and programming of deterministic conversational logic.

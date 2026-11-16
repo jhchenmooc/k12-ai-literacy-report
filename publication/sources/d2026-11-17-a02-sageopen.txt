@@ -1,0 +1,4 @@
+Sage Open (Sage) | 2026-11-15 | Teacher Artificial Intelligence Adoption Configurations in Europe: Attitudes, Reported Use, and Non-use in TALIS 2024 | https://doi.org/10.1177/21582440261501742 | Crossref works record read 2026-11-16; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online (published-print 2026-10 is the issue date); no earlier version found in OpenAlex; bibliographic facts only
+Crossref: published-online 2026-11-15; record created 2026-11-15; Sage Open 16(4), article 21582440261501742; authors Kımav, Dorak, Er
+Crossref abstract sentence (from the publisher-deposited Crossref abstract; not read from the publisher page):
+Using a quantitative, cross-sectional secondary analysis design, the study analyzed data from 13,440 teachers across 31 systems who provided complete responses and held determinate attitudes to AI-attitude indicators.
