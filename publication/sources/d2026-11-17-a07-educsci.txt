@@ -1,0 +1,4 @@
+Education Sciences (MDPI) | 2026-11-16 | Development and Initial Validation of the GenAI Stress Scale for Chinese K-12 Teachers (T-GenAISS) | https://doi.org/10.3390/educsci16111959 | Crossref works record read 2026-11-17; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online; no earlier version found in OpenAlex; bibliographic facts only
+Crossref: published-online 2026-11-16; record created 2026-11-16; Education Sciences 16(11), article 1959; authors Zhao, Li, Fang, Long
+Crossref abstract sentence (from the publisher-deposited Crossref abstract; not read from the publisher page):
+This study reports the development and initial validation of a GenAI stress scale tailored to Chinese K-12 teachers (T-GenAISS).

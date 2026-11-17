@@ -1879,6 +1879,13 @@
 | KB-2026-0568 — [Regional Differences in Self-Reported Composite Scores Related to Integrating Artificial Intelligence into Education in a Sample of Teachers Across Educational Levels in Ecuador](https://doi.org/10.3390/educsci16111928) | journal_article | 2026-11-11 | bibliographic_checked |
 | KB-2026-0569 — [Generative AI empowered contextual educational games as facilitators of elementary school students' computational thinking tendencies](https://doi.org/10.1111/bjet.70101) | journal_article | 2026-11-13 | bibliographic_checked |
 | KB-2026-0570 — [Designing pedagogical AI agents as digital twins of teachers: insights from a multi-cohort training program](https://doi.org/10.1080/10494820.2026.2689532) | journal_article | 2026-07-16 | bibliographic_checked |
+| KB-2026-0571 — [Beyond AI Adoption in School Leadership: Task-Selective Integration Among Public Basic-School Headteachers in Ghana](https://doi.org/10.1080/15700763.2026.2762927) | journal_article | 2026-11-12 | bibliographic_checked |
+| KB-2026-0572 — [Teacher Artificial Intelligence Adoption Configurations in Europe: Attitudes, Reported Use, and Non-use in TALIS 2024](https://doi.org/10.1177/21582440261501742) | journal_article | 2026-11-15 | bibliographic_checked |
+| KB-2026-0573 — [From Consumers to Designers: Building Rule-Based Chatbots to Reinforce Chemistry Learning and Foster Critical AI Literacy](https://doi.org/10.1021/acs.jchemed.6c01077) | journal_article | 2026-11-14 | bibliographic_checked |
+| KB-2026-0574 — [Re-assessing the validation of the artificial intelligence dependence scale among secondary school students](https://doi.org/10.52380/ijpes.2027.14.1.1718) | journal_article | 2026-11-14 | bibliographic_checked |
+| KB-2026-0575 — [A Workplace-Based, Task-Oriented Continuing Professional Development Model for Training School Nurses in Generative Artificial Intelligence](https://doi.org/10.1177/10598405261506332) | journal_article | 2026-11-14 | bibliographic_checked |
+| KB-2026-0576 — [When Clarity Masks Correctness: Rural Secondary Students’ Evaluation of AI-Generated Physics Explanations](https://doi.org/10.1007/s10956-026-10373-x) | journal_article | 2026-11-16 | bibliographic_checked |
+| KB-2026-0577 — [Development and Initial Validation of the GenAI Stress Scale for Chinese K-12 Teachers (T-GenAISS)](https://doi.org/10.3390/educsci16111959) | journal_article | 2026-11-16 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
