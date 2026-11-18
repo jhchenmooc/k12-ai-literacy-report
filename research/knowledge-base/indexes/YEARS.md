@@ -1886,6 +1886,7 @@
 | KB-2026-0575 — [A Workplace-Based, Task-Oriented Continuing Professional Development Model for Training School Nurses in Generative Artificial Intelligence](https://doi.org/10.1177/10598405261506332) | journal_article | 2026-11-14 | bibliographic_checked |
 | KB-2026-0576 — [When Clarity Masks Correctness: Rural Secondary Students’ Evaluation of AI-Generated Physics Explanations](https://doi.org/10.1007/s10956-026-10373-x) | journal_article | 2026-11-16 | bibliographic_checked |
 | KB-2026-0577 — [Development and Initial Validation of the GenAI Stress Scale for Chinese K-12 Teachers (T-GenAISS)](https://doi.org/10.3390/educsci16111959) | journal_article | 2026-11-16 | bibliographic_checked |
+| KB-2026-0578 — [深化臺韓AI教育與數位學習交流 教育部分享臺灣推動成果並借鏡韓國實務經驗](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=C11B7907E97AA5F9) | government_announcement | 2026-11-17 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
