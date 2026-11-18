@@ -4,17 +4,20 @@
     {
       "path": "daily/2026-11-18/index.html",
       "claims_file": "publication/claims/daily-2026-11-18.json",
-      "publication_mode": "ai_low_risk_source_facts"
+      "publication_mode": "ai_low_risk_source_facts",
+      "revised_on": "2026-11-18"
     },
     {
       "path": "daily/2026-11-17/index.html",
       "claims_file": "publication/claims/daily-2026-11-17.json",
-      "publication_mode": "ai_low_risk_source_facts"
+      "publication_mode": "ai_low_risk_source_facts",
+      "revised_on": "2026-11-18"
     },
     {
       "path": "daily/2026-11-15/index.html",
       "claims_file": "publication/claims/daily-2026-11-15.json",
-      "publication_mode": "ai_low_risk_source_facts"
+      "publication_mode": "ai_low_risk_source_facts",
+      "revised_on": "2026-11-18"
     },
     {
       "path": "daily/2026-11-14/index.html",

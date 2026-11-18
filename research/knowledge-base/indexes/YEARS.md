@@ -1887,6 +1887,11 @@
 | KB-2026-0576 — [When Clarity Masks Correctness: Rural Secondary Students’ Evaluation of AI-Generated Physics Explanations](https://doi.org/10.1007/s10956-026-10373-x) | journal_article | 2026-11-16 | bibliographic_checked |
 | KB-2026-0577 — [Development and Initial Validation of the GenAI Stress Scale for Chinese K-12 Teachers (T-GenAISS)](https://doi.org/10.3390/educsci16111959) | journal_article | 2026-11-16 | bibliographic_checked |
 | KB-2026-0578 — [深化臺韓AI教育與數位學習交流 教育部分享臺灣推動成果並借鏡韓國實務經驗](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=C11B7907E97AA5F9) | government_announcement | 2026-11-17 | bibliographic_checked |
+| KB-2026-0579 — [Exploring characteristics of primary school students’ behaviors and interaction qualities in human-GenAI collaborative creative problem-solving activities](https://doi.org/10.1080/10494820.2026.2762378) | journal_article | 2026-11-17 | bibliographic_checked |
+| KB-2026-0580 — [Between Fear and Openness: Artificial Intelligence in Adolescents’ Everyday Lives. Findings from a Mixed-Methods Study](https://doi.org/10.21240/merz/2026.6.04) | journal_article | 2026-11-16 | bibliographic_checked |
+| KB-2026-0581 — [ChatGPT oder menschliche Tutor*innen? Wahrgenommene Vertrauenswürdigkeit und Unterstützungsqualität beim mathematischen Modellieren](https://doi.org/10.21240/merz/2026.6.06) | journal_article | 2026-11-16 | bibliographic_checked |
+| KB-2026-0582 — [AI-Based Technology Use and Life Satisfaction Among Adolescents: The Mediating Role of Digital Risk Exposure and the Moderating Role of AI Literacy](https://doi.org/10.1177/01650254261500063) | journal_article | 2026-11-13 | bibliographic_checked |
+| KB-2026-0583 — [Trending use of Generative Artificial Intelligence (GenAI) tools in K–12 school settings](https://doi.org/10.1080/1475939x.2026.2739390) | journal_article | 2026-10-08 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
@@ -1947,5 +1952,6 @@
 | KB-2026-0444 — [Evaluating an AI-Powered Learning Analytics Tool for Automated Essay Scoring in Real Classroom Contexts: An Experience Report from a Brazilian Public Secondary School](https://doi.org/10.5753/wie.2026.28044) | conference_paper | 未知 | discovered_unverified |
 | KB-2026-0447 — [Towards a world-centred AI literacy in middle school education? Reflections from a Swedish case](https://doi.org/10.18261/njdl.21.2.4) | journal_article | 未知 | discovered_unverified |
 | KB-2026-0565 — [Development of an Elementary Robot Convergence Education Program Using an AI Social Robot and Exploration of Changes in Elementary Students’ Perceptions of AI Robots](https://doi.org/10.59482/iicfe.2026.5.23.01) | journal_article | 未知 | discovered_unverified |
+| KB-2026-0584 — [Why this AI app? The impact of generative artificial intelligence on educators’ choices in educational apps](https://doi.org/10.1016/j.chb.2026.109219) | journal_article | 未知 | discovered_unverified |
 
 資料來源：research/knowledge-base/data/records.csv。分類／國家／期刊／會議由 indexes/index.json 提供；須依原文重新評估任何欲公開發表之主張。
