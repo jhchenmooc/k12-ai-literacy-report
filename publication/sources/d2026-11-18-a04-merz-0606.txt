@@ -1,0 +1,4 @@
+merz | medien + erziehung | 2026-11-16 | ChatGPT oder menschliche Tutor*innen? Wahrgenommene Vertrauenswürdigkeit und Unterstützungsqualität beim mathematischen Modellieren | https://doi.org/10.21240/merz/2026.6.06 | Journal article page read 2026-11-17 (HTTP 200): "Veröffentlicht 16.11.2026"; citation_date 2026/11/16; section "merzWissenschaft"; Crossref published-online 2026-11-16
+merz | medien + erziehung 70(6), 77–91 (Jg. 70 Nr. 6 (2026): merzWissenschaft | KI als Gegenüber); authors Valentin Katter, Alexander Salle, Fabian Wolff, Martin Laun; CC BY 4.0
+Abstract excerpt (English abstract sentence 1, from the journal article page):
+In a randomised experiment, 303 students in grades 8 and 9 worked on a mathematical modelling task, supported either by ChatGPT in Advanced Voice Mode or by a human tutor.
