@@ -1,0 +1,49 @@
+Department for Education (England) | 2026-11-10 | Introducing an EdTech and AI product safety certification scheme | https://www.gov.uk/government/consultations/introducing-an-edtech-and-ai-product-safety-certification-scheme | Read 2026-11-18 UTC: GOV.UK Content API https://www.gov.uk/api/content/government/consultations/introducing-an-edtech-and-ai-product-safety-certification-scheme (HTTP 200; first_published_at 2026-11-10T10:00:04+00:00; opening_date 2026-11-10T10:00; closing_date 2027-02-04T23:59; held_on_another_website_url consult.education.gov.uk); full text: consultation document PDF https://consult.education.gov.uk/edtech-regulation-policy-team/education-technology-safety-assurance-certificatio/supporting_documents/introducing-a-certification-scheme-for-assuring-edtech-and-ai-product-safetypdf-1 (HTTP 200, application/pdf, 53 pp., SHA-256 363cbbc07ff12f2d2988ff2db5f5aba2cf6c0ecaadbcd4905e7c148e904845e0) | First-disclosed date 2026-11-10 (GOV.UK first_published_at; document "Launch date 10 November 2026"; same as daily item D20261111-01)
+Government consultation (open; not a decision) | Department for Education, England | Foreword by Paul Waugh MP, Minister for Early Education | Page numbers are the printed page numbers of the consultation document
+Text normalisation: pdftotext output; line breaks and runs of spaces joined into single spaces; bullet glyphs dropped; no other changes.
+Passage (cover):
+Launch date 10 November 2026 Respond by 4 February 2027
+Passage (The response (p. 7)):
+The results of the consultation and DfE’s response will be published on GOV.UK in Spring 2027.
+Passage (About this consultation para. 1 (p. 8)):
+This consultation sets out DfE’s proposal to establish a product certification scheme to assure the safety of EdTech used in schools and other education settings in England.
+Passage (About this consultation para. 2 (p. 8)):
+Subject to the outcome of this consultation, a minimum of 18 months would be needed to establish the product certification scheme, before products could be certified, followed by a transition period to allow adoption by suppliers and education settings.
+Passage (Certifying for safety para. 1 (p. 18)):
+Certification would not make a wider assessment of a product’s overall quality or educational effectiveness. The exception to this is where effectiveness is directly relevant to safety, that is, the product’s lack of efficacy could put children at risk of harm.
+Passage (Scope, categories (p. 23)):
+The products in scope for this scheme are grouped into the following four categories: 1. Filtering products 2. EdTech conducting high-risk data processing of children’s data
+Passage (Scope, categories (p. 24)):
+3. Student-facing generative AI tools 4. Student-facing personalised learning tools
+Passage (Scope, exclusions (p. 24)):
+Products have been excluded from this proposal where the risks are considered lower.
+Passage (Student-facing generative AI tools, last para. (p. 27)):
+We also propose that teacher, college, or school-created “agents”, custom AI tools, or wrappers, which are used only within that education setting would be exempt from product certification.
+Passage (Minimum safety criteria, student-facing generative AI tools (p. 33)):
+Student-facing generative AI products would be assessed against the following eight standards from the generative AI: product safety standards:
+Passage (Standard 1 (p. 33)):
+Filtering – effectively and reliably prevent users from accessing harmful or inappropriate content
+Passage (Standard 2 (p. 33)):
+Monitoring and reporting – maintain robust activity logging procedures
+Passage (Standard 3 (p. 33)):
+Design and testing – prioritise transparency and children’s safety in its design
+Passage (Standard 4 (p. 33)):
+Governance – are operated with accountability
+Passage (Standard 5 (p. 33)):
+Cognitive development – mitigate the potential for cognitive deskilling
+Passage (Standard 6 (p. 33)):
+Emotional and social development – mitigate the potential for harm to the emotional or social development of learners, including the potential for emotional dependence
+Passage (Standard 7 (p. 34)):
+Mental health – mitigate the potential for harm during mental health emergencies
+Passage (Standard 8 (p. 34)):
+Manipulation – do not use manipulative or exploitative design features
+Passage (UKAS accredits Conformity Assessment Bodies (p. 39)):
+Once a scheme is recognised as being suitable for accredited conformity assessment, prospective CABs can apply for UKAS accreditation.
+Passage (Settings select certified products (p. 40)):
+DfE would then maintain a publicly available register of certified products (for example on GOV.UK) so that education settings can select products to meet their needs from this list.
+Passage (Legislative need para. 1 (p. 49)):
+Under these proposals, a product certification scheme is technically non-mandatory. While a clear expectation would be included within statutory guidance, DfE does not have specific powers to require education settings to use certified EdTech products or to require EdTech suppliers to obtain safety certification for their products.
+Passage (Legislative need para. 2 (p. 50)):
+We are interested in views on whether legislation may be needed in the future.
+Original excerpt (p. 8 About this consultation para. 1 and 2; p. 18 Certifying for safety; p. 33 student-facing generative AI tools; p. 49 Legislative need; joined by " … "):
+This consultation sets out DfE’s proposal to establish a product certification scheme to assure the safety of EdTech used in schools and other education settings in England. … Subject to the outcome of this consultation, a minimum of 18 months would be needed to establish the product certification scheme, before products could be certified, followed by a transition period to allow adoption by suppliers and education settings. … Certification would not make a wider assessment of a product’s overall quality or educational effectiveness. The exception to this is where effectiveness is directly relevant to safety, that is, the product’s lack of efficacy could put children at risk of harm. … Student-facing generative AI products would be assessed against the following eight standards from the generative AI: product safety standards: … Under these proposals, a product certification scheme is technically non-mandatory. While a clear expectation would be included within statutory guidance, DfE does not have specific powers to require education settings to use certified EdTech products or to require EdTech suppliers to obtain safety certification for their products.

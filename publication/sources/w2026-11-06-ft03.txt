@@ -1,0 +1,39 @@
+Computers & Education (Elsevier) | 2026-11-10 | Synergizing Mind and Machine: Unlocking the Potential of Generative AI With Metacognitive Scaffolding to Optimize Upper Elementary Student Learning | https://doi.org/10.1016/j.compedu.2026.105792 | Full text: publisher Journal Pre-proof PDF (44 pp., SHA-256 fb93c10637edf5147e5c546add989bb35784c49c872363e7194bc2106cd4df20; cover: Received 5 July 2025, Revised 4 November 2026, Accepted 8 November 2026; "This is a PDF of an article that has undergone enhancements after acceptance … not yet the definitive Version of Record"); automated access to ScienceDirect returned HTTP 403 and was not bypassed; read 2026-11-18 | First-disclosed date 2026-11-10: ScienceDirect article page "Available online 10 November 2026" (same as daily item D20261112-01)
+Computers & Education, article CAE 105792 (Journal Pre-proof) | Authors: Miao Yue, Morris Siu-yung Jong, Wenjiao Wang (The Chinese University of Hong Kong) | Ethics: Survey and Behavioural Research Ethics Committee, CUHK (SBRE-22-0158)
+Text normalisation: pdftotext output; the pre-proof watermark letters ("Journal Pre-proof" printed vertically in the margin) removed; line breaks and runs of spaces joined into single spaces; one line-end hyphen restored ("familywise-adjusted"); no other changes.
+Passage (Abstract, sentences 3–4 (PDF p. 3)):
+This quasi-experimental, explanatory sequential mixed-methods study evaluated metacognitive scaffolding (MS) embedded in a GAI-supported learning environment.
+Passage (Abstract (PDF p. 3)):
+The study was conducted at a public elementary school in coastal southern China with 101 Grade 5–6 students (ages 10–12) enrolled in a 13-week extracurricular AI course.
+Passage (3.1.2 Participants and context):
+Students were matched on school-recorded academic performance and assigned to one of three conditions: MS-GAI (N = 35; 15 girls and 20 boys), GAI (N = 33; 12 girls and 21 boys), or SE (N = 33; 13 girls and 20 boys).
+Passage (3.1.2):
+The only differences were the inquiry technology (GAI vs. SE) and, between the two GAI conditions, the presence of MS. The same AI education specialist delivered all three conditions using
+Passage (3.1.4 Experimental conditions):
+The MS-GAI and GAI conditions used iFlytek Spark, a conversational GAI system powered by a large language model (LLM) (Wu et al., 2024), to explore lesson topics and inform their project designs.
+Passage (3.1.4):
+The SE condition conducted a web-based inquiry using Baidu.
+Passage (3.1.5 Metacognitive prompts design):
+we designed four metacognitive prompts that corresponded to the four stages of goal setting, strategic planning, self-monitoring, and self-evaluation.
+Passage (3.3.1 Measures):
+To address RQ1, AI literacy was assessed before and after the intervention across six outcomes: knowledge, skills, ethics, positive attitudes, negative attitudes, and motivation.
+Passage (3.3.2):
+The corpus contained 779 interaction rounds, each defined as a sustained exchange on one topic and involving back-and-forth turns between a student and the GAI tool.
+Passage (3.3.4):
+The dataset comprised students’ written responses to the metacognitive prompts and transcripts from seven focus-group interviews involving all 35 students in the MS-GAI condition
+Passage (Abstract):
+Results show that, after adjustment for baseline AI literacy and metacognitive capacity, MS-GAI students demonstrated higher AI knowledge and ethics than students in both comparison conditions. No condition effect meeting the familywise-adjusted criterion was found for AI skills or motivation. Students in the unscaffolded GAI condition also reported less positive and more negative attitudes toward AI than those in the other conditions.
+Passage (Abstract):
+Exploratory round-level comparisons indicated that MS-GAI was associated with more reflective and synergistic interactions in the later instructional phases.
+Passage (4.2 / 5.2):
+Grounded theory analysis yielded the ITRS framework, which characterizes four modes of learner–GAI interaction: improvised, tactical, reflective, and synergistic.
+Passage (6. Limitations and future directions):
+The matched quasi-experimental intervention involved 101 students from a single public school in southern coastal China, so the results should be treated as context-specific rather than population-level or randomized causal estimates.
+Passage (6.):
+The ITRS framework was developed from the tasks and supports used here; its ordering and coding criteria therefore require external validation, including tests of classification stability across coders, tasks, age groups, and cultural settings.
+Passage (6.):
+The integrated MS did not allow the contributions of individual prompt types, timing, sequence, or dosage to be isolated.
+Passage (6.):
+Because one teacher taught all conditions, the study could not examine variation associated with teacher practices or implementation. The qualitative account drew on worksheets and focus groups from MS-GAI only and therefore did not provide a parallel comparison with GAI or SE. Outcomes were assessed immediately after
+Original excerpt (Abstract; 3.1.2 Participants and context; 6 Limitations and future directions; joined by " … "):
+This quasi-experimental, explanatory sequential mixed-methods study evaluated metacognitive scaffolding (MS) embedded in a GAI-supported learning environment. … The study was conducted at a public elementary school in coastal southern China with 101 Grade 5–6 students (ages 10–12) enrolled in a 13-week extracurricular AI course. … Results show that, after adjustment for baseline AI literacy and metacognitive capacity, MS-GAI students demonstrated higher AI knowledge and ethics than students in both comparison conditions. No condition effect meeting the familywise-adjusted criterion was found for AI skills or motivation. Students in the unscaffolded GAI condition also reported less positive and more negative attitudes toward AI than those in the other conditions. … Exploratory round-level comparisons indicated that MS-GAI was associated with more reflective and synergistic interactions in the later instructional phases. … The matched quasi-experimental intervention involved 101 students from a single public school in southern coastal China, so the results should be treated as context-specific rather than population-level or randomized causal estimates.
