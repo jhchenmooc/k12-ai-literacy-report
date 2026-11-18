@@ -1,0 +1,49 @@
+Frontiers in Education | 2026-11-06 | Toward calibrated AI readiness in K–12 school-based practice: the roles of AI-related epistemic vigilance capacity and governance clarity | https://doi.org/10.3389/feduc.2026.1946896 | Full text: publisher article page https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2026.1946896/full (DOI redirect; HTTP 200, text/html, SHA-256 331bf399a54574a3283209fedf9da58a65ec9069b2f2696981f22eee47527a9d), read 2026-11-18 UTC; HTML tags removed, text from Abstract to Statements | First-disclosed date 2026-11-06: article page "Front. Educ., 06 November 2026" (same as daily item D20261107-03)
+Frontiers in Education, Volume 11 - 2026, ORIGINAL RESEARCH article, Sec. Digital Education | Author: Ziheng Song (Dartmouth College, Hanover, NH, United States) | Open access
+Text normalisation: HTML tags removed; runs of spaces and line breaks joined into single spaces; table cells as extracted (no separators between cells); no other changes.
+Passage (Abstract, sentence 2):
+This two-phase study examined calibrated AI readiness, defined as self-reported readiness to verify AI outputs, recognize ethical boundaries, and retain responsibility for AI-assisted professional decisions.
+Passage (3.2.1 Participants and recruitment):
+Participants were practicing school psychologists and related school-based professionals, including supervisors, school counselors, teachers and special education professionals working in K-12 settings.
+Passage (3.2.1):
+Participants were recruited using publicly available online school district directories.
+Passage (3.2.1):
+Survey data were collected between April and May 2026. The final Phase 1 analytic sample included 425 respondents.
+Passage (Table 2):
+Phase 2 pilot (N = 25)Professional roleSchool psychologist1560.0
+Passage (Table 2):
+School counselor1040.0
+Passage (3.2.2 Measures):
+Therefore, I developed all the scales used in this study
+Passage (3.2.2.1):
+They included verification orientation (3 items), ethical boundary clarity (3 items), and accountability ownership (3 items).
+Passage (3.1 Research design):
+Phase 2 used a single-group pretest–posttest pilot training design to examine feasibility, descriptive change, and the relationship between changes in self-reported calibrated AI readiness and scenario-based responsible AI reasoning.
+Passage (3.3.3):
+The program included four weekly sessions, with each session designed to take approximately 1 h. Training materials were hosted on Moodle, sessions were delivered through Zoom
+Passage (3.3.6):
+Two coders independently coded all 25 participants’ scenario responses using the 13-indicator rubric.
+Passage (5 Discussion):
+In Phase 1, AI-related epistemic vigilance capacity and governance clarity were positively associated with self-reported calibrated AI readiness, whereas autonomous regulatory motivation was not a significant direct predictor.
+Passage (5 Discussion):
+Phase 2 showed descriptive increases in self-reported readiness following a one-month pilot training program, while scenario-based assessments provided separate evidence of applied responsible AI reasoning. However, self-reported changes and scenario-based reasoning were not significantly associated.
+Passage (Abstract):
+Scenario-based responses showed evidence of verification, privacy protection, contextual evaluation, and human accountability, although performance varied across specific indicators.
+Passage (Abstract, last sentence):
+Because Phase 1 was cross-sectional and Phase 2 lacked a comparison group, the results do not establish causal effects.
+Passage (5.5 Limitations):
+First, Phase 1 employed a cross-sectional correlational design, preventing causal conclusions about the relationships among epistemic vigilance capacity, autonomous regulatory motivation, governance clarity, and calibrated AI readiness.
+Passage (5.5):
+Consequently, selection and nonresponse biases may limit the generalizability of the findings, particularly if professionals with greater interest in AI were more likely to participate.
+Passage (5.5):
+Second, the measures were developed specifically for this study and received preliminary expert feedback but did not undergo formal content-validity assessment or cognitive interviewing.
+Passage (5.5):
+Accordingly, self-reported calibrated AI readiness should not be interpreted as demonstrated professional competence.
+Passage (5.5):
+Third, Phase 2 involved only 25 participants and used a single-group pretest–posttest design without a comparison group. The descriptive increases in readiness therefore cannot be attributed causally to the training. High baseline scores, ceiling effects, repeated measurement, and possible response-shift effects may have influenced the observed patterns.
+Passage (5.5):
+the 13-indicator reasoning index was exploratory and had not undergone independent validation.
+Passage (Ethics statement):
+The studies involving humans were approved by Committee for the Protection of Human Subjects (CPHS), Dartmouth College, Hanover, New Hampshire, USA.
+Original excerpt (Abstract sentence 2; 3.2.1 Participants and recruitment; 5 Discussion para. 1; Abstract last sentence; joined by " … "):
+This two-phase study examined calibrated AI readiness, defined as self-reported readiness to verify AI outputs, recognize ethical boundaries, and retain responsibility for AI-assisted professional decisions. … Participants were practicing school psychologists and related school-based professionals, including supervisors, school counselors, teachers and special education professionals working in K-12 settings. … In Phase 1, AI-related epistemic vigilance capacity and governance clarity were positively associated with self-reported calibrated AI readiness, whereas autonomous regulatory motivation was not a significant direct predictor. … Phase 2 showed descriptive increases in self-reported readiness following a one-month pilot training program, while scenario-based assessments provided separate evidence of applied responsible AI reasoning. However, self-reported changes and scenario-based reasoning were not significantly associated. … Because Phase 1 was cross-sectional and Phase 2 lacked a comparison group, the results do not establish causal effects.

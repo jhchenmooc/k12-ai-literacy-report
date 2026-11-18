@@ -1,0 +1,69 @@
+西班牙國家教育科技與師資培育研究所（INTEF） | 2026-11-10 | Orientaciones para la integración de la inteligencia artificial en los centros educativos | https://intef.es/Noticias/orientaciones-integracion-ia/ | Read 2026-11-18 UTC: publication link on the INTEF news page https://run.gob.es/dra30357 redirected to the Spanish Ministry of Education publications catalogue page https://www.libreria.educacion.gob.es/libro/orientaciones-para-la-integracion-de-la-inteligencia-artificial-en-los-centros-educativos_187189/ (HTTP 200; catalogue lists Editorial INTEF, 61 pages, NIPO on PDF, "Fecha publicación 03-11-2026", "Descarga gratuita"); full text: free-download PDF https://www.libreria.educacion.gob.es/ebook/187011/free_download/ (HTTP 200, application/pdf, 61 pp., SHA-256 8619ba5c56e3f50a5e0786a273943c8ac53fd03a020c9a93c31af12e33266a53; credits page (PDF p. 2) "Noviembre 2026", NIPO 164-26-104-0, licence CC BY-SA 4.0) | First-disclosed date 2026-11-10: INTEF news page date (datePublished 2026-11-10), same as daily item D20261112-11; the catalogue date 03-11-2026 is a catalogue field, no earlier public announcement was found
+Ministerio de Educación, Formación Profesional y Deportes — Dirección General de Evaluación y Cooperación Territorial — Instituto Nacional de Tecnologías Educativas y de Formación del Profesorado (INTEF) | Guidance (orientaciones, recomendaciones) | Page numbers are the printed page numbers in the footer
+Text normalisation: pdftotext output; line breaks and runs of spaces joined into single spaces; bullet glyphs dropped; no other changes.
+Passage (credits page (PDF p. 2)):
+Noviembre 2026
+Passage (1 Introducción, para. 3 (p. 4)):
+Este documento pretende contribuir al proceso de integración de la IA en los centros educativos a partir de tres ejes complementarios:
+Passage (1 Introducción, three axes (p. 4)):
+Regulación: comprende las normas, orientaciones y legislación que promueven un uso seguro y ético de la IA y que garantizan los derechos de las personas.
+Passage (1 Introducción, three axes (p. 4)):
+Alfabetización: se refiere al desarrollo de conocimientos, capacidades y actitudes que permiten comprender, utilizar y valorar críticamente la IA.
+Passage (1 Introducción, three axes (p. 4)):
+Colaboración: promueve la participación coordinada y el intercambio de experiencias de los distintos miembros de la comunidad educativa.
+Passage (1 Introducción (p. 5)):
+Es recomendable que cada centro educativo elabore un plan de integración de la IA que establezca principios comunes, responsabilidades, límites de uso, actuaciones formativas, medidas de seguimiento e indicadores de evaluación. Este plan deberá partir de un diagnóstico inicial y realista del contexto del centro, de forma que las actuaciones propuestas sean viables y puedan revisarse periódicamente.
+Passage (1 Introducción, last para. (p. 5)):
+Los siguientes capítulos tienen carácter orientativo y deben asumirse como recomendaciones, siempre sujetas a la regulación establecida por la Administración educativa competente.
+Passage (3 Principios fundamentales (p. 9)):
+IA al servicio de la persona y de los fines educativos.
+Passage (3 Principios fundamentales (p. 9)):
+Supervisión humana y responsabilidad profesional.
+Passage (3 Principios fundamentales (p. 9)):
+Uso ético y responsable.
+Passage (3 Principios fundamentales (p. 10)):
+Prevención del sedentarismo cognitivo y desarrollo del pensamiento crítico.
+Passage (3 Principios fundamentales (p. 10)):
+Protección de datos, privacidad y seguridad.
+Passage (3 Principios fundamentales (p. 10)):
+Equidad e inclusión.
+Passage (3 Principios fundamentales (p. 10)):
+Transparencia, trazabilidad y comprensión.
+Passage (3 Principios fundamentales (p. 10)):
+Sostenibilidad y bienestar social.
+Passage (3 Principios fundamentales (p. 10)):
+Gobernanza, responsabilidad y rendición de cuentas.
+Passage (3 Principios fundamentales (p. 11)):
+Fiabilidad técnica.
+Passage (5 Organización del proceso, Grupo de coordinación (p. 17)):
+Se recomienda constituir un grupo de trabajo, de coordinación o equipo impulsor de la IA dentro del propio centro.
+Passage (5 Organización del proceso, Fases de trabajo (p. 18)):
+1. Constitución del grupo de trabajo o comisión de coordinación.
+Passage (5 Fases (p. 18)):
+2. Análisis de la situación de partida.
+Passage (5 Fases (p. 18)):
+3. Revisión de la normativa y de la regulación vigente.
+Passage (5 Fases (p. 18)):
+4. Establecimiento de objetivos.
+Passage (5 Fases (p. 18)):
+5. Diseño de líneas de actuación.
+Passage (5 Fases (p. 18)):
+6. Implementación progresiva.
+Passage (5 Fases (p. 18)):
+7. Seguimiento, evaluación y revisión.
+Passage (Índice, 8 Líneas de actuación (PDF p. 3)):
+8.1. Impulsar la formación del profesorado
+Passage (Índice (PDF p. 3)):
+8.2. Supervisar el uso educativo de herramientas de IA
+Passage (Índice (PDF p. 3)):
+8.3. Elaborar y compartir propuestas de aula
+Passage (Índice (PDF p. 3)):
+8.4. Integrar la IA en procesos administrativos y de gestión
+Passage (Índice (PDF p. 3)):
+8.5. Informar y colaborar con las familias
+Passage (Índice (PDF p. 3)):
+8.6. Elaborar y difundir guías de uso responsable
+Passage (Índice (PDF p. 3)):
+Anexo: Plan para la integración de la IA en un centro educativo. Ejemplo orientativo
+Original excerpt (1 Introducción (pp. 4–5); 5 Organización del proceso (p. 17); joined by " … "):
+Este documento pretende contribuir al proceso de integración de la IA en los centros educativos a partir de tres ejes complementarios: … Alfabetización: se refiere al desarrollo de conocimientos, capacidades y actitudes que permiten comprender, utilizar y valorar críticamente la IA. … Es recomendable que cada centro educativo elabore un plan de integración de la IA que establezca principios comunes, responsabilidades, límites de uso, actuaciones formativas, medidas de seguimiento e indicadores de evaluación. Este plan deberá partir de un diagnóstico inicial y realista del contexto del centro, de forma que las actuaciones propuestas sean viables y puedan revisarse periódicamente. … Los siguientes capítulos tienen carácter orientativo y deben asumirse como recomendaciones, siempre sujetas a la regulación establecida por la Administración educativa competente. … Se recomienda constituir un grupo de trabajo, de coordinación o equipo impulsor de la IA dentro del propio centro.
