@@ -51,5 +51,56 @@
    "在AI工具選用方面，亦可參考韓國重視教育適切性、學生年齡及個人資料保護的相關原則，兼顧科技應用、學習品質與學生安全。"
   ],
   "attributed_summary": "教育部表示，為掌握國際 AI 教育與數位學習發展趨勢，由資科司、AI 人才方舟計畫相關團隊及地方政府教育局（處）代表組成考察團，於 11 月 1 日至 6 日赴韓國首爾及大邱進行中小學 AI 教育暨數位學習考察，參訪教育行政機構、師資培育大學、中小學及教育科技業者；並表示在 AI 工具選用方面，可參考韓國重視教育適切性、學生年齡及個人資料保護的相關原則。"
+ },
+ {
+  "claim_id": "D20261118-02",
+  "candidate_id": "W2026-11-13-A16",
+  "kind": "research",
+  "claim_text": "來源機構：Interactive Learning Environments（Taylor & Francis）；資料標題：Exploring characteristics of primary school students’ behaviors and interaction qualities in human-GenAI collaborative creative problem-solving activities；來源刊登日：2026-11-17。作者摘要報告：研究探討 25 名 4–6 年級學生在人與生成式 AI 協作創意問題解決中的歷程，以描述統計、滯後序列分析與認知網絡分析檢視學生的行為特徵、行為序列與互動品質；作者報告學生在構想產生與解答驗證階段行為較多，呈現由生成式 AI 支持的任務導向行為模式。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "V2",
+  "daily_fact_kind": "research_abstract_attributed_summary",
+  "source_document_type": "peer_reviewed_article",
+  "source_title": "Exploring characteristics of primary school students’ behaviors and interaction qualities in human-GenAI collaborative creative problem-solving activities",
+  "title_zh": "探究小學生在人與生成式 AI 協作創意問題解決活動中的行為與互動品質特徵",
+  "source_organization": "Interactive Learning Environments（Taylor & Francis）",
+  "source_url": "https://doi.org/10.1080/10494820.2026.2762378",
+  "evidence_source_url": "https://doi.org/10.1080/10494820.2026.2762378",
+  "source_locator": "出版社文章頁截圖（管理者 2026-11-18 提供；自動讀取回 Cloudflare 驗證頁）：Published online: 17 Nov 2026；摘要歸屬：Abstract 第 4、5、6 句",
+  "source_type": "research_publication",
+  "checked_at": "2026-11-18",
+  "publication_date": "2026-11-17",
+  "first_disclosed_on": "2026-11-17",
+  "evidence_path": "publication/sources/d2026-11-18-a02-ile-page.txt",
+  "evidence_sha256": "d561a689b75ad0ada991bbceaf7763114e9a94918cf8ad1db032897130f22007",
+  "original_excerpt": "This study investigated the CPS processes of 25 students in Grades 4-6. … Specifically, descriptive statistics and lag sequential analysis were used to examine students' behavioral characteristics and sequences, respectively, while epistemic network analysis was employed to investigate interaction qualities. … The findings indicated that primary school students exhibited more behaviors in the idea generation and solution validation stages, reflecting a task-oriented behavioral pattern supported by GenAI.",
+  "interpretation_note": "轉述作者摘要的研究對象、分析方法與作者描述的行為特徵；不同表現組的行為序列與互動品質比較及作者結論不寫入。",
+  "scope_limitation": "同儕審查期刊論文（Interactive Learning Environments，監測清單 J40）；25 名 4–6 年級學生的歷程分析，摘要未寫國別；不同表現組的比較結果不寫入。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "decision": "publish",
+  "ai_crosscheck_record": "監測清單 J40；第一輪 2026-11-18 子代理以監測期刊 ISSN 查詢列出（T&F Cloudflare，未繞過；Crossref 與 OpenAlex 無摘要，當日列瀏覽器清單）；管理者 2026-11-18 提供出版社文章頁截圖（Published online: 17 Nov 2026），本 session 讀截圖摘要，擇第 4、5、6、8 句撰寫中文摘要與中文譯名；第二輪 2026-11-18 由隔離子代理逐句對照截圖，判定需修改：摘要含不同表現組的比較，依建議刪去第 8 句、摘要只寫行為特徵，範圍說明與分類理由同步改寫（S-BAS 改對應「調整與AI協作的適應力」），修正後一致。同一模型，非獨立審閱。",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "S-BAS",
+   "S-LRN"
+  ],
+  "ai_lit_note": "小學生與生成式 AI 協作解題時的行為與互動品質，研究重點在學生與 AI 互動的行為，依準則判 A，對應 S-BAS「調整與AI協作的適應力」、S-LRN「應用AI工具強化領域學習」",
+  "audience": "k12",
+  "summary_evidence_spans": [
+   "This study investigated the CPS processes of 25 students in Grades 4-6.",
+   "Specifically, descriptive statistics and lag sequential analysis were used to examine students' behavioral characteristics and sequences, respectively, while epistemic network analysis was employed to investigate interaction qualities.",
+   "The findings indicated that primary school students exhibited more behaviors in the idea generation and solution validation stages, reflecting a task-oriented behavioral pattern supported by GenAI."
+  ],
+  "attributed_summary": "研究探討 25 名 4–6 年級學生在人與生成式 AI 協作創意問題解決中的歷程，以描述統計、滯後序列分析與認知網絡分析檢視學生的行為特徵、行為序列與互動品質；作者報告學生在構想產生與解答驗證階段行為較多，呈現由生成式 AI 支持的任務導向行為模式。"
  }
 ]
