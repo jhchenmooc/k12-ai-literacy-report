@@ -1892,6 +1892,7 @@
 | KB-2026-0581 — [ChatGPT oder menschliche Tutor*innen? Wahrgenommene Vertrauenswürdigkeit und Unterstützungsqualität beim mathematischen Modellieren](https://doi.org/10.21240/merz/2026.6.06) | journal_article | 2026-11-16 | bibliographic_checked |
 | KB-2026-0582 — [AI-Based Technology Use and Life Satisfaction Among Adolescents: The Mediating Role of Digital Risk Exposure and the Moderating Role of AI Literacy](https://doi.org/10.1177/01650254261500063) | journal_article | 2026-11-13 | bibliographic_checked |
 | KB-2026-0583 — [Trending use of Generative Artificial Intelligence (GenAI) tools in K–12 school settings](https://doi.org/10.1080/1475939x.2026.2739390) | journal_article | 2026-10-08 | bibliographic_checked |
+| KB-2026-0585 — [Prolonged participation AI-based mindfulness school programme in primary education: Implications for AI practices, schools and developers](https://doi.org/10.1016/j.learninstruc.2026.102481) | journal_article | 2026-10-03 | discovered_unverified |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
