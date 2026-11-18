@@ -1,9 +1,9 @@
 Computers & Education (Elsevier) | 2026-11-10 | Synergizing Mind and Machine: Unlocking the Potential of Generative AI With Metacognitive Scaffolding to Optimize Upper Elementary Student Learning | https://doi.org/10.1016/j.compedu.2026.105792 | Full text: publisher Journal Pre-proof PDF (44 pp., SHA-256 fb93c10637edf5147e5c546add989bb35784c49c872363e7194bc2106cd4df20; cover: Received 5 July 2025, Revised 4 November 2026, Accepted 8 November 2026; "This is a PDF of an article that has undergone enhancements after acceptance … not yet the definitive Version of Record"); automated access to ScienceDirect returned HTTP 403 and was not bypassed; read 2026-11-18 | First-disclosed date 2026-11-10: ScienceDirect article page "Available online 10 November 2026" (same as daily item D20261112-01)
 Computers & Education, article CAE 105792 (Journal Pre-proof) | Authors: Miao Yue, Morris Siu-yung Jong, Wenjiao Wang (The Chinese University of Hong Kong) | Ethics: Survey and Behavioural Research Ethics Committee, CUHK (SBRE-22-0158)
 Text normalisation: pdftotext output; the pre-proof watermark letters ("Journal Pre-proof" printed vertically in the margin) removed; line breaks and runs of spaces joined into single spaces; one line-end hyphen restored ("familywise-adjusted"); no other changes.
-Passage (Abstract, sentences 3–4 (PDF p. 3)):
+Passage (Abstract, sentence 3 (PDF p. 4)):
 This quasi-experimental, explanatory sequential mixed-methods study evaluated metacognitive scaffolding (MS) embedded in a GAI-supported learning environment.
-Passage (Abstract (PDF p. 3)):
+Passage (3.1.2 Participants and context):
 The study was conducted at a public elementary school in coastal southern China with 101 Grade 5–6 students (ages 10–12) enrolled in a 13-week extracurricular AI course.
 Passage (3.1.2 Participants and context):
 Students were matched on school-recorded academic performance and assigned to one of three conditions: MS-GAI (N = 35; 15 girls and 20 boys), GAI (N = 33; 12 girls and 21 boys), or SE (N = 33; 13 girls and 20 boys).

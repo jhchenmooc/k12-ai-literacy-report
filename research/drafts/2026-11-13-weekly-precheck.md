@@ -252,3 +252,17 @@ R2 逐字原文（快照 `d2026-11-12-a13-educsci-pdf.txt` 首行標題的冒號
   - 第二輪對照由同一 session 重讀全文逐句核對，並以程式確認摘錄逐字（W4 為影像轉錄，無法程式比對）；本 session 無隔離子代理，未做隔離對照，合併前建議補做。
   - W2 首發日：西班牙教育部出版品目錄頁列「Fecha publicación 03-11-2026」，PDF 建立於 10-29、封面印 2026 年 11 月；未找到 11-10 前的公開發布紀錄，首發日沿用每日短訊所據 INTEF 新聞頁 11-10，已記入 interpretation_note。
   - W4 摘錄由圖像 PDF 轉錄，已以 110 dpi 影像逐字複核限制段與職涯階段段。
+
+### 第二輪隔離對照（2026-11-18）
+
+隔離子代理（未參與撰稿）逐項對照原文全文：W1 重新下載諮詢 PDF 與 GOV.UK Content API；W2 重新下載出版品目錄 PDF；W3 讀私人 repo 所存 pre-proof PDF；W4 讀私人 repo 所存圖像 PDF，以 pdftoppm 轉影像逐字對照；W5 重新讀取 Frontiers 文章頁；TC1、TC3 重新下載 pads 原檔（雜湊皆與快照所記相同）。快照摘錄以 python3 -I 比對全文（W4 以影像比對），全部逐字相符。
+
+- **W1**：校內自建工具免認證一句補足原文範圍：teacher, college, or school-created “agents”, custom AI tools, or wrappers, used only within that education setting →「教師、學院或學校自建、只在該教育場所使用的「代理」、自訂 AI 工具或封裝工具」（原稿漏學院與封裝工具，education setting 寫成「該校」）。其餘無誤。
+- **W2**：(1)「Noviembre 2026」印在版權頁（PDF 第 2 頁），封面只有標題，「封面印」改「版權頁印」（claim_text、source_locator、快照書目行與位置標示）；(2) 目次在 PDF 第 3 頁，「Índice (p. 2)」改正；(3) 快照 Original excerpt 標示刪去未摘錄的「3 Principios fundamentales (p. 9)」。
+- **W3**：claim_text 無修正。快照位置標示兩處：摘要在 PDF 第 4 頁、首段為摘要第 3 句；「The study was conducted at a public elementary school…」出自 3.1.2，原標 Abstract，改正。
+- **W4**：無修正（影像逐字對照摘要、文獻回顧末段、方法兩段、討論、結論限制段）。
+- **W5**：not a significant direct predictor、not significantly associated 原譯「未成為直接預測因子」「未見關聯」，改為「未成為顯著的直接預測因子」「未見顯著關聯」（不引數值）。
+- **臺灣對照 TC1、TC3**：無修正（位置、核定字號與摘錄逐字相符）。
+- **對照說明、導讀**：文字無修正；tn30、ov32、ov33 依據快照隨 W1、W2、W5 claim_text 修正同步更新並重算雜湊。
+- **反思標記**：W11 caution_excerpt 101 字元，逐字見於快照與韓國教育部網站現存附件 hwpx（附件檔序號已與快照所記不同，內容相同），位置「首段首句」正確，譯文省略部長姓名、caution_partial 正確；W19 標題副標摘錄與譯文忠實。無修正。
+- **W2 首發日專查**：出版品目錄頁「Fecha publicación 03-11-2026」；PDF 建立 2026-10-29、修改 10-30，伺服器 Last-Modified 2026-10-30；INTEF 新聞頁 datePublished 2026-11-10；媒體（El Diario de Madrid 2026-11-12）稱 11-13 於 SIMO EDUCACIÓN 簡報。目錄號碼依序編列但「Fecha publicación」與上架順序不一致（187188 為 10-21、187189 為 11-03、187190 為 10-30、187191 起為 11-10），且同系列 186945 目錄日期 2026-05-04 晚於 INTEF 2025-06 上傳的 PDF，此欄應為編目或出版資料日期，不能證明 11-03 已公開；Wayback Machine 連線被代理中斷，無法查存檔。另 INTEF Aula en Abierto 課程內有內容相近的線上書（文字改寫，非同一文件，日期不明）。未找到 11-10 前的公開發布紀錄，每日短訊與週報期別未改，交管理者判斷。

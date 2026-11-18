@@ -30,11 +30,11 @@
     "evidence_path": "publication/sources/w2026-11-06-ft01.txt",
     "evidence_sha256": "3b2d8954317217c76ff8de685309d950a214305860425ed025b6c4d6a170d81a",
     "original_excerpt": "This consultation sets out DfE’s proposal to establish a product certification scheme to assure the safety of EdTech used in schools and other education settings in England. … Subject to the outcome of this consultation, a minimum of 18 months would be needed to establish the product certification scheme, before products could be certified, followed by a transition period to allow adoption by suppliers and education settings. … Certification would not make a wider assessment of a product’s overall quality or educational effectiveness. The exception to this is where effectiveness is directly relevant to safety, that is, the product’s lack of efficacy could put children at risk of harm. … Student-facing generative AI products would be assessed against the following eight standards from the generative AI: product safety standards: … Under these proposals, a product certification scheme is technically non-mandatory. While a clear expectation would be included within statutory guidance, DfE does not have specific powers to require education settings to use certified EdTech products or to require EdTech suppliers to obtain safety certification for their products.",
-    "claim_text": "來源機構：英國教育部（Department for Education）；資料標題：Introducing an EdTech and AI product safety certification scheme；來源刊登日：2026-11-10。內容：英國教育部就一項產品認證制度公開諮詢，目的在確保英格蘭學校與其他教育場所使用的教育科技與 AI 產品安全；諮詢自 2026 年 11 月 10 日起，至 2027 年 2 月 4 日截止，諮詢結果與英國教育部的回應預定 2027 年春季公布。文件表示，視諮詢結果，建立認證制度至少需 18 個月，之後才能認證產品，並另有讓業者與教育場所採用的過渡期；認證只評估安全，不另評估產品整體品質或教學成效，唯成效不足會使兒童受害時除外。擬納入的產品分四類：過濾產品、對兒童資料進行高風險處理的教育科技、面向學生的生成式 AI 工具、面向學生的個人化學習工具；風險較低的產品不納入；教師或學校自建、只在該校使用的 AI 代理或自訂工具擬免認證。面向學生的生成式 AI 產品擬依〈生成式 AI：產品安全標準〉中的八項標準評估：過濾、監控與通報、設計與測試、治理、認知發展、情緒與社會發展、心理健康、操弄。認證擬由取得英國認證機構（UKAS）認可的符合性評鑑機構辦理，英國教育部擬公開登錄通過認證的產品，供教育場所選用。文件寫明在此提案下，認證制度在技術上並非法定義務，英國教育部目前沒有要求學校使用或業者取得認證的特定權限，並就未來是否需要立法徵詢意見。說明：本文件為公開諮詢，內容尚未定案，最終制度以英國教育部日後公布者為準。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
+    "claim_text": "來源機構：英國教育部（Department for Education）；資料標題：Introducing an EdTech and AI product safety certification scheme；來源刊登日：2026-11-10。內容：英國教育部就一項產品認證制度公開諮詢，目的在確保英格蘭學校與其他教育場所使用的教育科技與 AI 產品安全；諮詢自 2026 年 11 月 10 日起，至 2027 年 2 月 4 日截止，諮詢結果與英國教育部的回應預定 2027 年春季公布。文件表示，視諮詢結果，建立認證制度至少需 18 個月，之後才能認證產品，並另有讓業者與教育場所採用的過渡期；認證只評估安全，不另評估產品整體品質或教學成效，唯成效不足會使兒童受害時除外。擬納入的產品分四類：過濾產品、對兒童資料進行高風險處理的教育科技、面向學生的生成式 AI 工具、面向學生的個人化學習工具；風險較低的產品不納入；教師、學院或學校自建、只在該教育場所使用的「代理」、自訂 AI 工具或封裝工具擬免認證。面向學生的生成式 AI 產品擬依〈生成式 AI：產品安全標準〉中的八項標準評估：過濾、監控與通報、設計與測試、治理、認知發展、情緒與社會發展、心理健康、操弄。認證擬由取得英國認證機構（UKAS）認可的符合性評鑑機構辦理，英國教育部擬公開登錄通過認證的產品，供教育場所選用。文件寫明在此提案下，認證制度在技術上並非法定義務，英國教育部目前沒有要求學校使用或業者取得認證的特定權限，並就未來是否需要立法徵詢意見。說明：本文件為公開諮詢，內容尚未定案，最終制度以英國教育部日後公布者為準。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
     "source_locator": "全文：英國教育部諮詢文件 PDF（consult.education.gov.uk，2026-11-18 讀取，HTTP 200，53 頁，SHA-256 363cbbc0…45e0；頁碼為文件印刷頁碼）與 GOV.UK Content API（first_published_at 2026-11-10T10:00:04Z、closing_date 2027-02-04）：諮詢起訖—封面、Issue date（p. 6）；回應公布時程—The response（p. 7）；目的、18 個月與過渡期—About this consultation（p. 8）；只評估安全—Certifying for safety（p. 18）；四類產品、排除項目、校內自建工具免認證—Scope（pp. 23–27）；八項標準—The minimum safety criteria（pp. 33–34）；UKAS 與符合性評鑑機構、公開登錄—A product certification scheme in practice（pp. 39–40）；非法定義務與立法徵詢—Legislative need（pp. 49–50）。首發日沿用每日短訊 D20261111-01。",
     "interpretation_note": "僅轉述諮詢文件所述提案：目的、時程、只評估安全的範圍、四類產品與排除原則、校內自建工具免認證、面向學生生成式 AI 產品的八項標準名稱、認證辦理方式與公開登錄、非法定義務與立法徵詢；均以「文件表示／擬／寫明」歸屬，未寫成已實施。未轉述：過濾產品的逐項技術要求、高風險資料處理的法遵條件、個人化學習工具的修訂標準、費用與複審、合規稽核、業者專章、各題問卷內容、部長序言；八項標準只列名稱，未逐項轉述內容（第 5 項原文為 cognitive deskilling 等）。「非法定義務」對應原文 technically non-mandatory 與「DfE does not have specific powers to require」。",
     "scope_limitation": "英國教育部公開諮詢文件，適用英格蘭，內容尚未定案；所述時程、範圍與標準皆為提案，最終制度以諮詢後公布者為準。認證只涉及產品安全，不代表產品教學成效或品質；文件寫明目前不具法定義務。",
-    "ai_crosscheck_record": "週報精選（2026-11-06 期，管理者 2026-11-18「照建議」）。第一輪 2026-11-18 編輯 session 讀全文撰稿（見 source_locator），建快照 w2026-11-06-ft01.txt，各段摘錄與 original_excerpt 均為快照原文；第二輪 2026-11-18 由同一編輯 session 重讀全文逐項對照 claim_text 各句（本 session 無隔離子代理可用，未做隔離對照），並以 python3 -I 程式確認快照各段摘錄出現於全文抽取文字（僅合併換行與空白）；同一模型，非獨立審閱；建議合併前另以隔離子代理補做第二輪。",
+    "ai_crosscheck_record": "週報精選（2026-11-06 期，管理者 2026-11-18「照建議」）。第一輪撰寫（同 session 自核）：2026-11-18 編輯 session 讀全文撰稿（見 source_locator），建快照 w2026-11-06-ft01.txt，並由同一 session 重讀全文逐句自核、以 python3 -I 確認摘錄逐字。第二輪隔離子代理逐項對照原文（2026-11-18）：重新下載諮詢文件 PDF（consult.education.gov.uk，HTTP 200，SHA-256 與快照所記相同）並讀 GOV.UK Content API（opening 2026-11-10、closing 2027-02-04），以 python3 -I 比對快照 23 段摘錄全部逐字相符，逐頁確認印刷頁碼（pp. 6–8、18、23–24、27、33–34、39–40、49–50）；修正 1 項：校內自建工具免認證一句，原文為 teacher, college, or school-created “agents”, custom AI tools, or wrappers, used only within that education setting，改為「教師、學院或學校自建、只在該教育場所使用的「代理」、自訂 AI 工具或封裝工具」（原稿漏學院與封裝工具，並把 education setting 寫成「該校」）。其餘數字、日期、八項標準名稱、UKAS、公開登錄與非法定義務均與原文一致；ai_lit_dims 與 D20261111-01 一致。修正後一致。同一模型，非獨立審閱。",
     "ai_lit_class": "A",
     "ai_lit_dims": [
       "T-BAS",
@@ -76,13 +76,13 @@
     "publication_date": "2026-11-10",
     "first_disclosed_on": "2026-11-10",
     "evidence_path": "publication/sources/w2026-11-06-ft02.txt",
-    "evidence_sha256": "ad7f4335a5e03625a58b72a28984d35c34920ca173ddca39e7d2b528ad63adef",
+    "evidence_sha256": "ee5d47951c74af7ed142abd2f8abc8a397aca4d7151ffa681e7d116aeb85407d",
     "original_excerpt": "Este documento pretende contribuir al proceso de integración de la IA en los centros educativos a partir de tres ejes complementarios: … Alfabetización: se refiere al desarrollo de conocimientos, capacidades y actitudes que permiten comprender, utilizar y valorar críticamente la IA. … Es recomendable que cada centro educativo elabore un plan de integración de la IA que establezca principios comunes, responsabilidades, límites de uso, actuaciones formativas, medidas de seguimiento e indicadores de evaluación. Este plan deberá partir de un diagnóstico inicial y realista del contexto del centro, de forma que las actuaciones propuestas sean viables y puedan revisarse periódicamente. … Los siguientes capítulos tienen carácter orientativo y deben asumirse como recomendaciones, siempre sujetas a la regulación establecida por la Administración educativa competente. … Se recomienda constituir un grupo de trabajo, de coordinación o equipo impulsor de la IA dentro del propio centro.",
-    "claim_text": "來源機構：西班牙國家教育科技與師資培育研究所（INTEF）；資料標題：Orientaciones para la integración de la inteligencia artificial en los centros educativos；來源刊登日：2026-11-10。內容：西班牙國家教育科技與師資培育研究所（INTEF）發布 61 頁的學校整合 AI 指引（封面印 2026 年 11 月），以規範、素養、協作三軸支持學校規劃納入 AI；素養指發展能理解、使用並批判評價 AI 的知識、能力與態度。指引表示，宜由各校訂定 AI 整合計畫，列出共同原則、責任、使用限制、培訓行動、追蹤措施與評估指標，並以學校現況的初步診斷為起點、定期檢討。指引列出十項基本原則，包括 AI 服務於人與教育目的、人類監督與教師的專業責任、倫理與負責任使用、預防認知惰性並發展批判思考、資料保護與隱私安全、公平與包容、透明與可追溯、治理與問責等。組織方面，指引提出在校內成立 AI 工作或協調小組，並依七個階段推進：成立小組、分析現況、檢視規範、設定目標、設計行動方針、逐步實施、追蹤評估與修訂。行動方針有六項：推動教師培訓、監督 AI 工具的教育用途、製作與分享課堂方案、把 AI 納入行政與管理流程、向家庭說明並合作、製作與推廣負責任使用指南；附錄另有一所學校 AI 整合計畫的參考範例。說明：指引寫明各章屬參考性質，應視為建議，並一律遵循主管教育行政機關的規定。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
-    "source_locator": "全文：西班牙教育部出版品目錄免費下載 PDF（2026-11-18 讀取，HTTP 200，61 頁，SHA-256 8619ba5c…6a53；封面印 Noviembre 2026；頁碼為頁尾印刷頁碼）：三軸與素養定義—1 Introducción（p. 4）；各校訂定整合計畫、參考性質—1 Introducción（p. 5）；十項原則—3 Principios fundamentales（pp. 9–11）；協調小組與七階段—5 Organización del proceso（pp. 17–18）；六項行動方針與附錄—Índice（p. 2）與 8 Líneas de actuación（p. 24 起）。首發日沿用每日短訊 D20261112-11 所據 INTEF 新聞頁日期（2026-11-10）。",
+    "claim_text": "來源機構：西班牙國家教育科技與師資培育研究所（INTEF）；資料標題：Orientaciones para la integración de la inteligencia artificial en los centros educativos；來源刊登日：2026-11-10。內容：西班牙國家教育科技與師資培育研究所（INTEF）發布 61 頁的學校整合 AI 指引（版權頁印 2026 年 11 月），以規範、素養、協作三軸支持學校規劃納入 AI；素養指發展能理解、使用並批判評價 AI 的知識、能力與態度。指引表示，宜由各校訂定 AI 整合計畫，列出共同原則、責任、使用限制、培訓行動、追蹤措施與評估指標，並以學校現況的初步診斷為起點、定期檢討。指引列出十項基本原則，包括 AI 服務於人與教育目的、人類監督與教師的專業責任、倫理與負責任使用、預防認知惰性並發展批判思考、資料保護與隱私安全、公平與包容、透明與可追溯、治理與問責等。組織方面，指引提出在校內成立 AI 工作或協調小組，並依七個階段推進：成立小組、分析現況、檢視規範、設定目標、設計行動方針、逐步實施、追蹤評估與修訂。行動方針有六項：推動教師培訓、監督 AI 工具的教育用途、製作與分享課堂方案、把 AI 納入行政與管理流程、向家庭說明並合作、製作與推廣負責任使用指南；附錄另有一所學校 AI 整合計畫的參考範例。說明：指引寫明各章屬參考性質，應視為建議，並一律遵循主管教育行政機關的規定。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
+    "source_locator": "全文：西班牙教育部出版品目錄免費下載 PDF（2026-11-18 讀取，HTTP 200，61 頁，SHA-256 8619ba5c…6a53；版權頁（PDF 第 2 頁）印 Noviembre 2026；頁碼為頁尾印刷頁碼）：三軸與素養定義—1 Introducción（p. 4）；各校訂定整合計畫、參考性質—1 Introducción（p. 5）；十項原則—3 Principios fundamentales（pp. 9–11）；協調小組與七階段—5 Organización del proceso（pp. 17–18）；六項行動方針與附錄—Índice（PDF 第 3 頁）與 8 Líneas de actuación（p. 24 起）。首發日沿用每日短訊 D20261112-11 所據 INTEF 新聞頁日期（2026-11-10）。",
     "interpretation_note": "僅轉述指引所列三軸、素養定義、建議訂定的計畫內容、十項原則（列出其中八項名稱，另兩項為永續與社會福祉、技術可靠性）、協調小組與七階段、六項行動方針與附錄範例，以及指引自述的參考性質；「宜由各校訂定」對應原文 Es recomendable。「認知惰性」譯自 sedentarismo cognitivo。未轉述：歐盟 AI 法等規範整理、倫理與教學架構、現況診斷工具、目標範例、各行動方針細項、追蹤評估指標與參考文獻。目錄頁所列出版日期 03-11-2026 早於新聞頁日期，本刊未找到 11-10 前的公開發布紀錄，首發日沿用每日短訊。",
     "scope_limitation": "西班牙中央層級機構發布的建議性指引，不具拘束力，須遵循各自治區主管教育行政機關的規定；指引提供規劃程序與範例，不代表各校實施情形。",
-    "ai_crosscheck_record": "週報精選（2026-11-06 期，管理者 2026-11-18「照建議」）。第一輪 2026-11-18 編輯 session 讀全文撰稿（見 source_locator），建快照 w2026-11-06-ft02.txt，各段摘錄與 original_excerpt 均為快照原文；第二輪 2026-11-18 由同一編輯 session 重讀全文逐項對照 claim_text 各句（本 session 無隔離子代理可用，未做隔離對照），並以 python3 -I 程式確認快照各段摘錄出現於全文抽取文字（僅合併換行與空白）；同一模型，非獨立審閱；建議合併前另以隔離子代理補做第二輪。",
+    "ai_crosscheck_record": "週報精選（2026-11-06 期，管理者 2026-11-18「照建議」）。第一輪撰寫（同 session 自核）：2026-11-18 編輯 session 讀全文撰稿（見 source_locator），建快照 w2026-11-06-ft02.txt，並由同一 session 重讀全文逐句自核、以 python3 -I 確認摘錄逐字。第二輪隔離子代理逐項對照原文（2026-11-18）：重新下載出版品目錄免費 PDF（HTTP 200，61 頁，SHA-256 與快照所記相同），以 python3 -I 比對快照摘錄全部逐字相符，並以頁面影像核對版面；修正 3 項：(1)「Noviembre 2026」印在版權頁（PDF 第 2 頁），封面只有標題，claim_text「封面印 2026 年 11 月」改「版權頁印」，source_locator 與快照書目行、位置標示同步更正；(2) 目次在 PDF 第 3 頁（無頁碼），source_locator 與快照「Índice (p. 2)」改為 PDF 第 3 頁；(3) 快照 Original excerpt 標示列有「3 Principios fundamentales (p. 9)」，但 original_excerpt 未含該章文字，刪去。三軸、素養定義、計畫內容、十項原則（含「人類監督與教師的專業責任」，原文 responsabilidad profesional del personal docente）、七階段、六項行動方針、附錄與參考性質均與原文一致；ai_lit_dims 與 D20261112-11 一致。首發日另查（目錄 Fecha publicación 03-11-2026、PDF 伺服器 Last-Modified 2026-10-30、INTEF 新聞頁 datePublished 2026-11-10），未找到 11-10 前的公開發布紀錄，沿用 11-10，交管理者判斷。修正後一致。同一模型，非獨立審閱。",
     "ai_lit_class": "A",
     "ai_lit_dims": [
       "T-BAS",
@@ -125,13 +125,13 @@
     "publication_date": "2026-11-10",
     "first_disclosed_on": "2026-11-10",
     "evidence_path": "publication/sources/w2026-11-06-ft03.txt",
-    "evidence_sha256": "8d45ac89e04bc7cdc1e34972f9d30d4ff8f81f93fd12d6ba70eb8bc5079cf74c",
+    "evidence_sha256": "1d5f21558848da4011373b24ced463176f0e0cae296cb3a21aa9afcf4edb5ddb",
     "original_excerpt": "This quasi-experimental, explanatory sequential mixed-methods study evaluated metacognitive scaffolding (MS) embedded in a GAI-supported learning environment. … The study was conducted at a public elementary school in coastal southern China with 101 Grade 5–6 students (ages 10–12) enrolled in a 13-week extracurricular AI course. … Results show that, after adjustment for baseline AI literacy and metacognitive capacity, MS-GAI students demonstrated higher AI knowledge and ethics than students in both comparison conditions. No condition effect meeting the familywise-adjusted criterion was found for AI skills or motivation. Students in the unscaffolded GAI condition also reported less positive and more negative attitudes toward AI than those in the other conditions. … Exploratory round-level comparisons indicated that MS-GAI was associated with more reflective and synergistic interactions in the later instructional phases. … The matched quasi-experimental intervention involved 101 students from a single public school in southern coastal China, so the results should be treated as context-specific rather than population-level or randomized causal estimates.",
     "claim_text": "來源機構：Computers & Education（Elsevier）；資料標題：Synergizing Mind and Machine: Unlocking the Potential of Generative AI With Metacognitive Scaffolding to Optimize Upper Elementary Student Learning；來源刊登日：2026-11-10。樣本：作者報告研究在中國華南沿海一所公立小學進行，對象為參加 13 週課外 AI 課程的 101 名 5–6 年級學生（10–12 歲）；學生依校方學業成績紀錄配對後分為三組：有後設認知鷹架的生成式 AI 組 35 人、無鷹架的生成式 AI 組 33 人、傳統搜尋引擎組 33 人。設計：作者稱採準實驗、解釋性序列混合方法設計。三組內容、順序與授課時數相同，由同一位 AI 教育專家授課，差異只在探究工具（生成式 AI 組用 iFlytek Spark，搜尋引擎組用百度）與是否提供鷹架；鷹架是學習單上的四個提示，依序對應設定目標、策略規劃、自我監控與自我評估。AI 素養以知識、技能、倫理、正向態度、負向態度與學習動機六項於課程前後施測，並以前測與後設認知能力為共變量比較三組；另錄下兩個生成式 AI 組學生與 AI 的 779 回合互動，以紮根理論編碼，並以學習單與 7 場焦點團體訪談分析鷹架組 35 名學生如何使用提示。作者所述發現：作者報告，調整基線 AI 素養與後設認知能力後，鷹架組的 AI 知識與倫理分數高於另兩組，AI 技能與學習動機的組別差異未達多重比較校正後的標準；無鷹架的生成式 AI 組對 AI 的態度較不正向、較多負向。互動分析歸納出即興、戰術、反思、協同四種互動模式，作者稱屬探索性的回合層級比較顯示，鷹架組在後期教學階段有較多反思與協同互動。限制：作者自述樣本僅來自中國華南沿海一所公立學校，結果應視為特定情境，而非母群層級或隨機分派的因果估計；互動模式架構需外部驗證；整合式鷹架無法區分個別提示的作用；三組由同一位教師授課；質性資料只來自鷹架組；成果只在課程結束後立即測量。說明：所據為 Journal Pre-proof 版本，正式版內容可能變動。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
     "source_locator": "全文：出版者 Journal Pre-proof PDF（44 頁，SHA-256 fb93c106…df20；ScienceDirect 自動讀取回 403，未繞過）：設計—Abstract 與 3.1 Research design；樣本、配對與分組、同一授課者—3.1.2 Participants and context；工具（iFlytek Spark、百度）—3.1.4；四個提示—3.1.5；六項 AI 素養測量與共變量—3.3.1；779 回合互動與紮根理論—3.3.2；焦點團體 7 場—3.3.4；組別比較方向—Abstract 與 7 Conclusion；四種互動模式與探索性比較—Abstract、4.2、5.2；限制—6 Limitations and future directions。首發日沿用每日短訊 D20261112-01。",
     "interpretation_note": "介入研究（準實驗）：「作者所述發現」只照引作者摘要與結論的比較方向並以「作者報告／作者稱」歸屬；依規則未引用前後測平均數、F 值、p 值、效果量、信度係數、互動模式百分比與殘差，也不寫成效或因果推論。「未達多重比較校正後的標準」對應原文 No condition effect meeting the familywise-adjusted criterion。作者以 demonstrate the value 描述研究意涵，本則未轉述。未轉述：文獻回顧、課程各單元內容、實施忠實度百分比、學生引語、四項設計原則與教學代理人設計意涵。",
     "scope_limitation": "單一學校 101 名小學 5–6 年級學生的準實驗研究（配對分組，非隨機分派），所據為 Journal Pre-proof 版本；組別比較為作者報告的方向，本刊未引用數值，不代表其他學校、年級或工具的情形，也不作成效推論。",
-    "ai_crosscheck_record": "週報精選（2026-11-06 期，管理者 2026-11-18「照建議」）。第一輪 2026-11-18 編輯 session 讀全文撰稿（見 source_locator），建快照 w2026-11-06-ft03.txt，各段摘錄與 original_excerpt 均為快照原文；第二輪 2026-11-18 由同一編輯 session 重讀全文逐項對照 claim_text 各句（本 session 無隔離子代理可用，未做隔離對照），並以 python3 -I 程式確認快照各段摘錄出現於全文抽取文字（僅合併換行與空白）；同一模型，非獨立審閱；建議合併前另以隔離子代理補做第二輪。",
+    "ai_crosscheck_record": "週報精選（2026-11-06 期，管理者 2026-11-18「照建議」）。第一輪撰寫（同 session 自核）：2026-11-18 編輯 session 讀全文撰稿（見 source_locator），建快照 w2026-11-06-ft03.txt，並由同一 session 重讀全文逐句自核、以 python3 -I 確認摘錄逐字。第二輪隔離子代理逐項對照原文（2026-11-18）：讀私人 repo 所存 Journal Pre-proof PDF（SHA-256 fb93c106…df20，與快照所記相同），以 python3 -I 比對快照摘錄（去除浮水印字母後）全部逐字相符；claim_text 樣本、分組人數、工具、四個提示、六項測量與共變量、779 回合、7 場焦點團體、發現方向與限制均與原文一致，未引用數值；ai_lit_dims 與 D20261112-01 一致。修正 2 項（只涉快照位置標示）：摘要位於 PDF 第 4 頁（非第 3 頁），首段摘錄為摘要第 3 句（非第 3–4 句）；「The study was conducted at a public elementary school…」出自 3.1.2 Participants and context，快照原標「Abstract」，改正。claim_text 無修正。修正後一致。同一模型，非獨立審閱。",
     "ai_lit_class": "A",
     "ai_lit_dims": [
       "S-BAS",
@@ -178,7 +178,7 @@
     "source_locator": "全文：出版社文章頁（開放取用；以瀏覽器存成的圖像 PDF，62 頁，SHA-256 913891ca…4353；自動讀取回 Cloudflare 驗證頁，未繞過；摘錄由頁面影像轉錄）：調查目的與 515 份—Abstract；探索性、不檢驗假設—2 Literature review 末段；問卷 44 題、五區塊、UTAUT 與 TPACK、五位專家、39 人預試—3 Methodology 第 1 段；便利取樣與回應率—3 Methodology 第 2 段；SPSS 27 與描述統計—3 Methodology 第 2 段；使用情形、看法、挑戰與學習需求—Abstract；非正式管道、職涯階段與城鄉差異—5 Discussion；謹慎解讀—5 Discussion 末段；限制—6 Conclusion 限制段。首發日沿用每日短訊 D20261112-07。",
     "interpretation_note": "調查研究（非介入），只轉述作者自陳的樣本與招募、問卷設計與分析方法、作者摘要與討論所述的描述性發現（含職涯階段與城鄉差異的方向），以及作者自述限制，均以「作者報告／作者稱／作者自述」歸屬。未引用 Cronbach's α、各題百分比、平均數、t 值與 p 值（如受過正式培訓者自評知識較高的檢定），也未轉述作者對差異成因的推測（likely reflecting）與對學校、決策者的建議。表 1、表 2 在頁面上僅為連結，未讀取，人口統計細項未寫入。",
     "scope_limitation": "越南中學教師自陳的便利取樣調查（515 人），無回應率，樣本可能偏向對生成式 AI 有興趣的教師；所述為使用情形與看法，不代表實際課堂做法，也不涉及對學生學習的影響。",
-    "ai_crosscheck_record": "週報精選（2026-11-06 期，管理者 2026-11-18「照建議」）。第一輪 2026-11-18 編輯 session 讀全文撰稿（見 source_locator），建快照 w2026-11-06-ft04.txt，各段摘錄與 original_excerpt 均為快照原文；第二輪 2026-11-18 由同一編輯 session 重讀全文逐項對照 claim_text 各句（本 session 無隔離子代理可用，未做隔離對照），並以 python3 -I 程式確認快照各段摘錄出現於全文抽取文字（僅合併換行與空白）；同一模型，非獨立審閱；建議合併前另以隔離子代理補做第二輪。",
+    "ai_crosscheck_record": "週報精選（2026-11-06 期，管理者 2026-11-18「照建議」）。第一輪撰寫（同 session 自核）：2026-11-18 編輯 session 讀全文撰稿（見 source_locator），建快照 w2026-11-06-ft04.txt，並由同一 session 重讀全文逐句自核、以 python3 -I 確認摘錄逐字。第二輪隔離子代理逐項對照原文（2026-11-18）：讀私人 repo 所存文章頁圖像 PDF（62 頁，SHA-256 913891ca…4353，與快照所記相同），以 pdftoppm 轉成頁面影像逐字對照快照摘錄（摘要、文獻回顧末段、方法兩段、討論、結論限制段），全部相符；UTAUT 與 TPACK 為問卷題目依據（The questions were informed by two conceptual frameworks）、五位專家、39 人預試、SPSS 27、515 份、便利取樣與回應率、非正式管道、職涯階段與城鄉差異（討論段 greater interest in GenAI training）與「謹慎解讀」均與原文一致；ai_lit_dims 與 D20261112-07 一致。無修正。同一模型，非獨立審閱。",
     "ai_lit_class": "A",
     "ai_lit_dims": [
       "T-TEA",
@@ -221,11 +221,11 @@
     "evidence_path": "publication/sources/w2026-11-06-ft05.txt",
     "evidence_sha256": "ec119432b3a2d932aeb3dcc81125928b2ad894d011f70f2270f915a8df3dbc7a",
     "original_excerpt": "This two-phase study examined calibrated AI readiness, defined as self-reported readiness to verify AI outputs, recognize ethical boundaries, and retain responsibility for AI-assisted professional decisions. … Participants were practicing school psychologists and related school-based professionals, including supervisors, school counselors, teachers and special education professionals working in K-12 settings. … In Phase 1, AI-related epistemic vigilance capacity and governance clarity were positively associated with self-reported calibrated AI readiness, whereas autonomous regulatory motivation was not a significant direct predictor. … Phase 2 showed descriptive increases in self-reported readiness following a one-month pilot training program, while scenario-based assessments provided separate evidence of applied responsible AI reasoning. However, self-reported changes and scenario-based reasoning were not significantly associated. … Because Phase 1 was cross-sectional and Phase 2 lacked a comparison group, the results do not establish causal effects.",
-    "claim_text": "來源機構：Frontiers in Education；資料標題：Toward calibrated AI readiness in K–12 school-based practice: the roles of AI-related epistemic vigilance capacity and governance clarity；來源刊登日：2026-11-06。樣本：作者報告第一階段為 425 名在 K-12 場域執業的學校心理師及相關學校專業人員（含督導、學校輔導人員、教師與特殊教育專業人員），經公開的學區網站名錄以電子郵件邀請、自願參加，2026 年 4 至 5 月填答；第二階段為 25 人，學校心理師 15 人、學校輔導人員 10 人。研究經美國達特茅斯學院人類受試者保護委員會核准，作者未寫明受試者所在地區。設計：第一階段為橫斷面問卷，以作者自編量表測「經校準的 AI 準備度」（查證取向、倫理界線清晰度、責任歸屬各 3 題）與 AI 相關知識警覺能力、自主調節動機、治理明確度，以結構方程模型分析；第二階段為單組前後測試行培訓，一個月內四次每週約 1 小時的線上課程（Moodle 與 Zoom），蒐集前後測自陳與四次情境任務的開放式回答，由兩位編碼者以 13 項指標編碼。作者所述發現：作者報告第一階段知識警覺能力與治理明確度都與自陳的經校準 AI 準備度呈正相關，自主調節動機未成為直接預測因子。第二階段為無比較組的試行，作者報告自陳準備度在描述上增加，情境回答呈現查證、隱私保護、情境評估與人類責任等推理，但各指標表現不一；自陳變化與情境推理之間未見關聯。作者寫明，因第一階段為橫斷面、第二階段無比較組，結果不能確立效應。限制：作者自述第一階段為橫斷面相關設計，不能就各變項關係作因果結論；自願參加可能有選擇與未回應偏誤；量表為本研究自編，未經正式內容效度檢驗或認知訪談；自陳準備度不應解讀為實際專業能力；第二階段僅 25 人且無比較組，描述上的增加不能歸因於培訓，基線偏高、天花板效應與重複施測等也可能影響；情境推理指標屬探索性、未經獨立驗證。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
+    "claim_text": "來源機構：Frontiers in Education；資料標題：Toward calibrated AI readiness in K–12 school-based practice: the roles of AI-related epistemic vigilance capacity and governance clarity；來源刊登日：2026-11-06。樣本：作者報告第一階段為 425 名在 K-12 場域執業的學校心理師及相關學校專業人員（含督導、學校輔導人員、教師與特殊教育專業人員），經公開的學區網站名錄以電子郵件邀請、自願參加，2026 年 4 至 5 月填答；第二階段為 25 人，學校心理師 15 人、學校輔導人員 10 人。研究經美國達特茅斯學院人類受試者保護委員會核准，作者未寫明受試者所在地區。設計：第一階段為橫斷面問卷，以作者自編量表測「經校準的 AI 準備度」（查證取向、倫理界線清晰度、責任歸屬各 3 題）與 AI 相關知識警覺能力、自主調節動機、治理明確度，以結構方程模型分析；第二階段為單組前後測試行培訓，一個月內四次每週約 1 小時的線上課程（Moodle 與 Zoom），蒐集前後測自陳與四次情境任務的開放式回答，由兩位編碼者以 13 項指標編碼。作者所述發現：作者報告第一階段知識警覺能力與治理明確度都與自陳的經校準 AI 準備度呈正相關，自主調節動機未成為顯著的直接預測因子。第二階段為無比較組的試行，作者報告自陳準備度在描述上增加，情境回答呈現查證、隱私保護、情境評估與人類責任等推理，但各指標表現不一；自陳變化與情境推理之間未見顯著關聯。作者寫明，因第一階段為橫斷面、第二階段無比較組，結果不能確立效應。限制：作者自述第一階段為橫斷面相關設計，不能就各變項關係作因果結論；自願參加可能有選擇與未回應偏誤；量表為本研究自編，未經正式內容效度檢驗或認知訪談；自陳準備度不應解讀為實際專業能力；第二階段僅 25 人且無比較組，描述上的增加不能歸因於培訓，基線偏高、天花板效應與重複施測等也可能影響；情境推理指標屬探索性、未經獨立驗證。（AI 輔助整理，未經真人逐則審稿；請參閱原文。）",
     "source_locator": "全文：出版社文章頁（frontiersin.org，2026-11-18 讀取，HTTP 200，SHA-256 331bf399…527a9d）：準備度定義—Abstract；第一階段對象、招募、填答期間與 425 人—3.2.1；第二階段職別人數—Table 2；自編量表與三構面—3.2.2、3.2.2.1；兩階段設計—3.1；培訓形式—3.3.3；兩位編碼者 13 項指標—3.3.6；發現方向—5 Discussion 首段與 Abstract；不能確立效應—Abstract 末句；限制—5.5 Limitations；倫理審查—Ethics statement。首發日沿用每日短訊 D20261107-03。",
     "interpretation_note": "第一階段為橫斷面相關研究，只寫作者所述的關聯方向，未引用標準化路徑係數、p 值、平均數、標準差、模型適配與信度數值；第二階段為無比較組的試行介入，只照作者原話寫「描述上增加」並以「作者報告」歸屬，依規則未引用前後測平均數（4.20、4.84）、改變人數、Spearman ρ 與編碼一致性。「結果不能確立效應」沿用每日短訊譯法（原文 the results do not establish causal effects），避開閘門高風險字串；限制中的 preventing causal conclusions 譯「不能就各變項關係作因果結論」。作者在 5.4 對學區與專業組織的建議、未來研究方向與作者的生成式 AI 使用聲明未轉述。",
     "scope_limitation": "第一階段為橫斷面自陳問卷（425 名學校專業人員），只呈現關聯；第二階段為 25 人無比較組的一個月試行培訓，描述上的變化不能歸因於培訓。量表為作者自編，自陳準備度不等於實際專業能力；作者未寫明受試者所在地區。",
-    "ai_crosscheck_record": "週報精選（2026-11-06 期，管理者 2026-11-18「照建議」）。第一輪 2026-11-18 編輯 session 讀全文撰稿（見 source_locator），建快照 w2026-11-06-ft05.txt，各段摘錄與 original_excerpt 均為快照原文；第二輪 2026-11-18 由同一編輯 session 重讀全文逐項對照 claim_text 各句（本 session 無隔離子代理可用，未做隔離對照），並以 python3 -I 程式確認快照各段摘錄出現於全文抽取文字（僅合併換行與空白）；同一模型，非獨立審閱；建議合併前另以隔離子代理補做第二輪。",
+    "ai_crosscheck_record": "週報精選（2026-11-06 期，管理者 2026-11-18「照建議」）。第一輪撰寫（同 session 自核）：2026-11-18 編輯 session 讀全文撰稿（見 source_locator），建快照 w2026-11-06-ft05.txt，並由同一 session 重讀全文逐句自核、以 python3 -I 確認摘錄逐字。第二輪隔離子代理逐項對照原文（2026-11-18）：重新讀取出版社文章頁（HTTP 200），以 python3 -I 比對快照 23 段摘錄全部相符（Table 2 兩段只差表格儲存格分隔空白）；樣本、招募（district websites 邀請信）、填答期間、職別人數（Table 2）、自編量表三構面、培訓形式、13 項指標、倫理審查與限制均與原文一致；ai_lit_dims 與 D20261107-03 一致。修正 2 項：原文 not a significant direct predictor 與 not significantly associated 原稿譯「未成為直接預測因子」「未見關聯」，略去 significant 會讀成完全無關，改為「未成為顯著的直接預測因子」「未見顯著關聯」（未引用任何數值）。修正後一致。同一模型，非獨立審閱。",
     "ai_lit_class": "A",
     "ai_lit_dims": [
       "T-ETH",
@@ -1454,7 +1454,7 @@
     "related_claim_ids": [
       "W20261106-02"
     ],
-    "ai_crosscheck_record": "臺灣對照 TC1（管理者 2026-11-18「照建議」）。第一輪 2026-11-18 編輯 session 自教育部 pads 原網址重新下載 PDF（HTTP 200，SHA-256 54cf1d11…aa54，與 2026-10-30、11-01 下載檔相同），擇前言、第六點第 2 段第 2 句與第七點第 4 段撰稿並建快照；第二輪 2026-11-18 由同一編輯 session 重讀全文逐項對照 claim_text 各句（本 session 無隔離子代理可用，未做隔離對照），並以 python3 -I 程式確認快照各段摘錄出現於PDF 抽取文字（去除空白後比對）；同一模型，非獨立審閱；建議合併前另以隔離子代理補做第二輪。"
+    "ai_crosscheck_record": "臺灣對照 TC1（管理者 2026-11-18「照建議」）。第一輪撰寫（同 session 自核）：2026-11-18 編輯 session 自教育部 pads 原網址下載 PDF（SHA-256 54cf1d11…aa54），擇前言、第六點第 2 段第 2 句與第七點第 4 段撰稿並建快照，同 session 逐句自核。第二輪隔離子代理逐項對照原文（2026-11-18）：重新下載原檔（HTTP 200，SHA-256 相同），以 python3 -I 比對快照各段（去空白）全部逐字相符，逐頁確認位置（前言 PDF 第 1 頁、第六點第 2 段第 2 句與第七點第 4 段分在 PDF 第 3、4 頁）與 115 年 2 月 11 日臺教資（一）字第 1152700391 號函核定字樣；無修正。同一模型，非獨立審閱。"
   },
   {
     "claim_class": "descriptive",
@@ -1501,7 +1501,7 @@
     "related_claim_ids": [
       "W20261106-04"
     ],
-    "ai_crosscheck_record": "臺灣對照 TC3（管理者 2026-11-18「照建議」；TC2 KB-2024-0391 未找到中央機關原始發布頁，依定案改用 TC3）。第一輪 2026-11-18 編輯 session 自教育部 pads 原網址下載 PDF（HTTP 200，188 頁，SHA-256 0ed2fb27…eb30），擇寫作回饋代理人例與班級 AI 使用公約例撰稿並建快照；第二輪 2026-11-18 由同一編輯 session 重讀全文逐項對照 claim_text 各句（本 session 無隔離子代理可用，未做隔離對照），並以 python3 -I 程式確認快照各段摘錄出現於PDF 抽取文字（去除空白後比對）；同一模型，非獨立審閱；建議合併前另以隔離子代理補做第二輪。"
+    "ai_crosscheck_record": "臺灣對照 TC3（管理者 2026-11-18「照建議」；TC2 KB-2024-0391 未找到中央機關原始發布頁，依定案改用 TC3）。第一輪撰寫（同 session 自核）：2026-11-18 編輯 session 自教育部 pads 原網址下載 PDF（188 頁，SHA-256 0ed2fb27…eb30），擇寫作回饋代理人例與班級 AI 使用公約例撰稿並建快照，同 session 逐句自核。第二輪隔離子代理逐項對照原文（2026-11-18）：重新下載原檔（HTTP 200，SHA-256 相同），以 python3 -I 比對快照兩段（去空白）全部逐字相符，確認分在 PDF 第 42、47 頁；日期依據（115 年 9 月 10 日函，學校轉知公告）沿用 W20261009-30，未另查；無修正。同一模型，非獨立審閱。"
   },
   {
     "claim_class": "descriptive",
@@ -1538,7 +1538,7 @@
     "source_title": "臺灣對照說明",
     "source_locator": "本期被引用項目：W20261106-02、W20261106-28",
     "evidence_path": "publication/sources/w2026-11-06-tn30.txt",
-    "evidence_sha256": "0ec19f42b967f4fc11ce4d9dcfdd402e0fc1d98fb796e36c3578f162519a240d",
+    "evidence_sha256": "368444fb4bd423d3edceb65f0f5bc9693ac874c5e6a665a8b18d80e694b5ac87",
     "original_excerpt": "W20261106-02：來源機構：西班牙國家教育科技與師資培育研究所（INTEF）；資料標題：Orientaciones para la integración de la inteligencia artificial en los c",
     "interpretation_note": "本刊分析：只並列本期國際項目與臺灣文件的已刊文字，不含評價、成效或建議，未經真人審閱。",
     "scope_limitation": "僅並列本期收錄項目與所列臺灣文件，不代表兩地政策的全貌。",
@@ -1547,7 +1547,7 @@
       "T-BAS"
     ],
     "ai_lit_note": "並列西班牙指引的學校整合計畫與注意事項所列的學校使用規範，對應 T-ETH「健全校園AI使用規範」、T-BAS「參與AI校園治理部署與決策」。",
-    "ai_crosscheck_record": "第一輪 2026-11-18 編輯 session 依出刊前檢查草稿撰寫並依實際編號調整；第二輪 2026-11-18 同一 session 逐事實對照所引項目已刊 claim_text（本 session 無隔離子代理可用，未做隔離對照），以閘門 WEEKLY_OVERVIEW_BANNED／WEEKLY_TW_NOTE_BANNED、ADVICE_PATTERN 自查通過。同一模型，非獨立審閱。",
+    "ai_crosscheck_record": "第一輪撰寫（同 session 自核）：2026-11-18 編輯 session 依出刊前檢查草稿撰寫並依實際編號調整，同 session 逐事實對照所引項目已刊 claim_text，閘門 WEEKLY_OVERVIEW_BANNED／WEEKLY_TW_NOTE_BANNED、ADVICE_PATTERN 自查通過。第二輪隔離子代理逐項對照原文（2026-11-18）：逐句對照所引項目 claim_text 與其原文，日期（INTEF 11-10、注意事項 2.1 版 2026-02-11 核定）、機構、文件名與引述均一致，句長 ≤150 字、只並列事實；本句無修正；依據快照 tn30 隨 W20261106-02 claim_text 修正（封面→版權頁）同步更新並重算雜湊。修正後一致。同一模型，非獨立審閱。",
     "region": "tw"
   },
   {
@@ -1593,7 +1593,7 @@
       "T-TEA"
     ],
     "ai_lit_note": "並列越南教師調查所述生成式 AI 的寫作教學用途與指引所舉寫作回饋代理人例，對應 T-TEA「評估AI工具輔助教學的適用性」。",
-    "ai_crosscheck_record": "第一輪 2026-11-18 編輯 session 依出刊前檢查草稿撰寫並依實際編號調整；第二輪 2026-11-18 同一 session 逐事實對照所引項目已刊 claim_text（本 session 無隔離子代理可用，未做隔離對照），以閘門 WEEKLY_OVERVIEW_BANNED／WEEKLY_TW_NOTE_BANNED、ADVICE_PATTERN 自查通過。同一模型，非獨立審閱。",
+    "ai_crosscheck_record": "第一輪撰寫（同 session 自核）：2026-11-18 編輯 session 依出刊前檢查草稿撰寫並依實際編號調整，同 session 逐事實對照所引項目已刊 claim_text，閘門 WEEKLY_OVERVIEW_BANNED／WEEKLY_TW_NOTE_BANNED、ADVICE_PATTERN 自查通過。第二輪隔離子代理逐項對照原文（2026-11-18）：逐句對照所引項目 claim_text 與其原文，515 名教師、規劃與示範而非回饋或評量（原文 rather than）、寫作回饋代理人例均一致，句長 ≤150 字、只並列事實；無修正。同一模型，非獨立審閱。",
     "region": "tw"
   },
   {
@@ -1632,7 +1632,7 @@
     "source_title": "本週導讀",
     "source_locator": "本期被引用項目：W20261106-01、W20261106-02、W20261106-11",
     "evidence_path": "publication/sources/w2026-11-06-ov32.txt",
-    "evidence_sha256": "5385dd1d25e17f678500886e9b9ab4bf07126c1bb190b074d735bda9a8e72eca",
+    "evidence_sha256": "de47f11789ffe80d4abcb31c481ecfb1ecde8a502e26fc09c90409344f8d581e",
     "original_excerpt": "W20261106-01：來源機構：英國教育部（Department for Education）；資料標題：Introducing an EdTech and AI product safety certification scheme；",
     "interpretation_note": "本刊分析：只依本期被引用項目的已刊文字做歸類，不含成效、因果、趨勢或建議，未經真人審閱。",
     "scope_limitation": "僅概括本期收錄的項目，不代表該主題的全部研究或政策。",
@@ -1641,7 +1641,7 @@
       "T-ETH"
     ],
     "ai_lit_note": "本刊導讀句，依所引用項目的 AI 素養範圍（皆為 A）歸類，對應 T-BAS「參與AI校園治理部署與決策」、T-ETH「健全校園AI使用規範」。",
-    "ai_crosscheck_record": "第一輪 2026-11-18 編輯 session 依出刊前檢查草稿撰寫並依實際編號調整；第二輪 2026-11-18 同一 session 逐事實對照所引項目已刊 claim_text（本 session 無隔離子代理可用，未做隔離對照），以閘門 WEEKLY_OVERVIEW_BANNED／WEEKLY_TW_NOTE_BANNED、ADVICE_PATTERN 自查通過。同一模型，非獨立審閱。"
+    "ai_crosscheck_record": "第一輪撰寫（同 session 自核）：2026-11-18 編輯 session 依出刊前檢查草稿撰寫並依實際編號調整，同 session 逐事實對照所引項目已刊 claim_text，閘門 WEEKLY_OVERVIEW_BANNED／WEEKLY_TW_NOTE_BANNED、ADVICE_PATTERN 自查通過。第二輪隔離子代理逐項對照原文（2026-11-18）：逐句對照所引項目 claim_text 與其原文，英國諮詢、INTEF 指引與韓國全面調查三事實均見於所引項目；本句無修正；依據快照 ov32 隨 W20261106-01、-02 claim_text 修正同步更新並重算雜湊。修正後一致。同一模型，非獨立審閱。"
   },
   {
     "claim_class": "descriptive",
@@ -1680,7 +1680,7 @@
     "source_title": "本週導讀",
     "source_locator": "本期被引用項目：W20261106-07、W20261106-04、W20261106-05、W20261106-10",
     "evidence_path": "publication/sources/w2026-11-06-ov33.txt",
-    "evidence_sha256": "2486db12be1f55bdcdee0251a23cb49f34dab170dfeb64614d5798281d64063e",
+    "evidence_sha256": "f956ec38bcc164e9fb83cad137f7c6b056f3dc645e6f7a90d68533cee25e1b7d",
     "original_excerpt": "W20261106-07：來源機構：Educational Technology Research and Development（Springer）；資料標題：Development and validation of a framewo",
     "interpretation_note": "本刊分析：只依本期被引用項目的已刊文字做歸類，不含成效、因果、趨勢或建議，未經真人審閱。",
     "scope_limitation": "僅概括本期收錄的項目，不代表該主題的全部研究或政策。",
@@ -1689,7 +1689,7 @@
       "T-BAS"
     ],
     "ai_lit_note": "本刊導讀句，依所引用項目的 AI 素養範圍（皆為 A）歸類，對應 T-TEA「評估AI工具輔助教學的適用性」、T-BAS「參與AI校園治理部署與決策」。",
-    "ai_crosscheck_record": "第一輪 2026-11-18 編輯 session 依出刊前檢查草稿撰寫並依實際編號調整；第二輪 2026-11-18 同一 session 逐事實對照所引項目已刊 claim_text（本 session 無隔離子代理可用，未做隔離對照），以閘門 WEEKLY_OVERVIEW_BANNED／WEEKLY_TW_NOTE_BANNED、ADVICE_PATTERN 自查通過。同一模型，非獨立審閱。"
+    "ai_crosscheck_record": "第一輪撰寫（同 session 自核）：2026-11-18 編輯 session 依出刊前檢查草稿撰寫並依實際編號調整，同 session 逐事實對照所引項目已刊 claim_text，閘門 WEEKLY_OVERVIEW_BANNED／WEEKLY_TW_NOTE_BANNED、ADVICE_PATTERN 自查通過。第二輪隔離子代理逐項對照原文（2026-11-18）：逐句對照所引項目 claim_text 與其原文，四項研究對象均見於所引項目（W10 中小學行政人員依每日快照所記高中、小學、國中層級）；本句無修正；依據快照 ov33 隨 W20261106-05 claim_text 修正同步更新並重算雜湊。修正後一致。同一模型，非獨立審閱。"
   },
   {
     "claim_class": "descriptive",
@@ -1737,6 +1737,6 @@
       "S-ETH"
     ],
     "ai_lit_note": "本刊導讀句，依所引用項目的 AI 素養範圍（皆為 A）歸類，對應 S-BAS「理解AI運作原理與限制」、S-ETH「具備對AI的批判思考」。",
-    "ai_crosscheck_record": "第一輪 2026-11-18 編輯 session 依出刊前檢查草稿撰寫並依實際編號調整；第二輪 2026-11-18 同一 session 逐事實對照所引項目已刊 claim_text（本 session 無隔離子代理可用，未做隔離對照），以閘門 WEEKLY_OVERVIEW_BANNED／WEEKLY_TW_NOTE_BANNED、ADVICE_PATTERN 自查通過。同一模型，非獨立審閱。"
+    "ai_crosscheck_record": "第一輪撰寫（同 session 自核）：2026-11-18 編輯 session 依出刊前檢查草稿撰寫並依實際編號調整，同 session 逐事實對照所引項目已刊 claim_text，閘門 WEEKLY_OVERVIEW_BANNED／WEEKLY_TW_NOTE_BANNED、ADVICE_PATTERN 自查通過。第二輪隔離子代理逐項對照原文（2026-11-18）：逐句對照所引項目 claim_text 與其原文，四項研究對象均見於所引項目；無修正。同一模型，非獨立審閱。"
   }
 ]
