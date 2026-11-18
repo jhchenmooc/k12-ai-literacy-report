@@ -7,7 +7,7 @@
 > - **結果：1 則（臺灣）。** D20261118-01 教育部〈深化臺韓AI教育與數位學習交流〉（官方摘要型，A 邊界）。國際 0 則。
 >   - 知識庫：KB-2026-0578（候選 W2026-11-13-A15）。
 >   - 第二輪：隔離子代理逐句對照原頁，判定需修改（分類理由「應考量」改回原文「可參考」），已修正；摘要補「進行中小學 AI 教育暨數位學習考察」。同一模型，非獨立審閱。
-> - **補登處理中：** 英國教育部 post-16 資格科目內容諮詢（AI 寫入各科學習目標；science、health and care 11-11 首發為 E5a 漏收，enterprise and professional services 11-17 首發），本 session 正在讀諮詢 PDF、建快照與兩輪對照；合格者今日以補登方式加入本期（revised_on 與 corrections.json），不合格者另記。
+> - **英國教育部 post-16 資格科目內容諮詢（不發，轉月報背景；請管理者決定）：** 三批諮詢（science、health and care 11-11 首發，為 E5a 漏收；enterprise and professional services 11-17 首發）共 14 份科目內容草案，本 session 逐份計數：每份 AI 出現 5–21 處（約 5,000–14,500 字），內容為各科學習目標中的 AI 用途、限制、查核與個資保護；三份諮詢總覽文件只在說明回應處理時提到 AI。AI 是職業資格科目內容中的一小部分，主體不是 AI 素養，比照 11-18 Milburn 報告（AI 只是一節，C）不發每日短訊，轉月報背景（英國 16–19 歲職業資格草案把 AI 查核與限制寫進各科學習目標）。若管理者認為應發，enterprise 一批首發 11-17，可發至 11-24；science、health and care 兩批 11-11 首發，今日為 7 天最後一天，過了就只能轉月報。
 
 ## 國際
 
@@ -39,7 +39,7 @@
 
 | 來源 | 狀態 | 結果 |
 |---|---|---|
-| GOV.UK DfE | 200 | 11-17 新 11 件；post-16 enterprise and professional services 諮詢見上「補登處理中」；KCSIE 修訂與其餘新聞稿無 AI |
+| GOV.UK DfE | 200 | 11-17 新 11 件；post-16 enterprise and professional services 諮詢見上（不發，轉月報背景）；KCSIE 修訂與其餘新聞稿無 AI |
 | GOV.UK Ofqual、Ofsted | 200 | Ofqual 無新項目；Ofsted 1 件（Area SEND）無 AI |
 | GOV.UK 全站 AI × education | 200 | DWP 委託的 Milburn 獨立報告（11-17）：對象為 NEET 青年，AI 只是其中一節，C |
 | Federal Register | ED 篩選、ED × AI、public inspection 200；11-17 期 API 與「AI literacy」403（讀取失敗，未繞過）；govinfo 11-12～11-17 目錄 200 | ED × AI 只有 2026-23155（11-13 已判 C）；目錄標題未見 AI；11-18 期尚未上架 |
@@ -53,7 +53,7 @@
 
 **邊界，不發：** GOV.UK〈Key stage 2 tests: access arrangements〉2027 版（11-11）：只規定無法關閉 AI 功能的輔具不得用於考試，屬考試規則，C。Ofqual V Level 監管諮詢（11-12）：已讀部分無 AI，C。
 
-- **E5a：** 英國教育部 post-16 science、health and care 兩批諮詢（11-11）為漏收：11-12 只讀 GOV.UK 頁面、未讀 consult.education.gov.uk 上的科目內容 PDF；今日補讀，見上「補登處理中」。之後 DfE 諮詢一律讀 consult 網站 PDF。Federal Register「AI literacy」全站詞查詢仍讀取失敗，只能寫「目錄未見」。
+- **E5a：** 英國教育部 post-16 science、health and care 兩批諮詢（11-11）為漏收：11-12 只讀 GOV.UK 頁面、未讀 consult.education.gov.uk 上的科目內容 PDF；今日補讀，判不發、轉月報背景（見上）。之後 DfE 諮詢一律讀 consult 網站 PDF。Federal Register「AI literacy」全站詞查詢仍讀取失敗，只能寫「目錄未見」。
 
 ## 臺灣
 
@@ -73,6 +73,7 @@
 
 ## 需要管理者處理
 
+- **英國教育部 post-16 諮詢：** 本 session 判不發、轉月報背景（理由見上）；如要發，請在本 session 說明。
 - **待你在本 session「確認」（沿用 11-17）：** 清單外觀察是否單篇例外（merz 兩篇、J Chem Educ 6c01329、J Educ Sci、JCT、IJEM）；Education Sciences 1953 是否收；今日新增觀察 arXiv 2611.21306、IICFE 5.24.01。
 - **ISSN 回溯（沿用 11-17）：** 10-10～10-17 原 29 刊是否回溯；8 筆無摘要是否列瀏覽器清單；10 月月報 3 筆可能漏收轉編輯 session。
 - **補查（明日）：** Federal Register「AI literacy」與 11-18 期；MEXT mext_00751、00752；香港 11-18；DfE 其餘三批 post-16 諮詢（construction、engineering and manufacturing、sport and leisure，預定 11 月下旬）；KICE 研究板（基準 3948）；ILE 2762378、CAEAI 100695、IJER 103160 摘要；資訊月論壇新聞。
