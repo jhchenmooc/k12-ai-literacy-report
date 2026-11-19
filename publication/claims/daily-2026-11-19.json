@@ -156,5 +156,57 @@
    "Dabei müssen die individuellen Kompetenzen der Lernenden messbar und zurechenbar bleiben."
   ],
   "attributed_summary": "德國各邦教育首長會議（BMK）與德國聯邦教育主管部會提出「職業學校協約」十項行動建議，表示職業學校應有目的地運用 AI 的潛力，發展創新教學構想與符合時代的考試；建議以適性數位學習環境與 AI（例如個人學習導師）支持個別學習，並使學校考試形式對應職場的數位需求、明確允許與 AI 互動，同時學習者的個人能力仍須可衡量、可歸屬。"
+ },
+ {
+  "claim_id": "D20261119-04",
+  "candidate_id": "W2026-11-13-A23",
+  "kind": "research",
+  "claim_text": "來源機構：International Journal of Science and Mathematics Education（Springer）；資料標題：Generative AI-Enhanced STEM-Education: Investigating Teachers’ Experiences from Implementation in Primary School Settings；來源刊登日：2026-11-18。作者摘要報告：先導研究探討以結構化教師專業發展模式，將生成式 AI 融入瑞典小學 STEM 教育；11 位教師參加為期六個月的專業發展課程，含工作坊、協作討論與課堂實施，資料主要為工作坊討論錄音，輔以介入後問卷；作者報告教師提到節省時間、差異化教學與創意等機會，也提到數學錯誤、時間估計不切實際及須依情境調整等挑戰。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "V2",
+  "daily_fact_kind": "research_abstract_attributed_summary",
+  "source_document_type": "peer_reviewed_article",
+  "source_title": "Generative AI-Enhanced STEM-Education: Investigating Teachers’ Experiences from Implementation in Primary School Settings",
+  "title_zh": "生成式 AI 強化的 STEM 教育：探討教師在小學場域實施的經驗",
+  "source_organization": "International Journal of Science and Mathematics Education（Springer）",
+  "source_url": "https://doi.org/10.1007/s10763-026-10747-y",
+  "evidence_source_url": "https://doi.org/10.1007/s10763-026-10747-y",
+  "source_locator": "出版社文章頁（link.springer.com，2026-11-19 讀取 200）：Published: 18 November 2026；摘要歸屬：Abstract 第 1、3、4、7 句",
+  "source_type": "research_publication",
+  "checked_at": "2026-11-19",
+  "publication_date": "2026-11-18",
+  "first_disclosed_on": "2026-11-18",
+  "evidence_path": "publication/sources/d2026-11-19-a04-ijsme.txt",
+  "evidence_sha256": "33aee2a1814381ce6b9ea680c440c8fcb4e75607d19faf0b0bdfe332710c9f0a",
+  "original_excerpt": "This pilot study explores the integration of Generative Artificial Intelligence (GenAI) into primary STEM education in Sweden through a structured Teacher Professional Development (TPD) model. … Eleven teachers participated in a six-month TPD programme comprising workshops, collaborative discussions, and classroom implementations. … The empirical material consisted primarily of audio-recorded workshop discussions, which were transcribed and analysed, supplemented by a post-intervention questionnaire. … Teachers reported opportunities for timesaving, differentiated instruction, and enhanced creativity, alongside challenges related to mathematical inaccuracies, unrealistic time estimates, and the need for contextual adaptation.",
+  "interpretation_note": "轉述作者摘要的研究目的、參與者、課程組成、資料來源與教師自述的機會和挑戰；專業發展模式帶來的成長屬介入成效，不寫入；作者結論與未來研究建議不寫入。",
+  "scope_limitation": "同儕審查期刊論文（International Journal of Science and Mathematics Education，不在監測清單；管理者 2026-11-19 確認單篇例外收錄）；瑞典 11 位小學教師的先導研究，以工作坊討論錄音為主、輔以介入後問卷，屬單組質性先導研究（全體參與者皆受介入）；機會與挑戰為教師自述。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "decision": "publish",
+  "ai_crosscheck_record": "清單外，管理者 2026-11-19 確認單篇例外收錄；第一輪 2026-11-19 子代理以 Crossref 關鍵詞查詢列出並讀 Springer 文章頁（200；Published: 18 November 2026）；本 session 擇摘要第 1、3、4、7 句撰寫中文摘要與中文譯名，第 8 句成長屬介入成效不寫入；第二輪 2026-11-19 由隔離子代理逐句對照文章頁，判定通過，依建議範圍說明改寫資料來源與研究設計、書目行日期改為轉述。同一模型，非獨立審閱。",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-TEA",
+   "T-PD"
+  ],
+  "ai_lit_note": "小學教師透過專業發展課程將生成式 AI 融入 STEM 教學（生成式 AI 教學培訓依準則判 A），對應 T-TEA「設計AI與教學法整合的策略」、T-PD「參與社群共學反思AI時代教師角色」",
+  "audience": "k12",
+  "summary_evidence_spans": [
+   "This pilot study explores the integration of Generative Artificial Intelligence (GenAI) into primary STEM education in Sweden through a structured Teacher Professional Development (TPD) model.",
+   "Eleven teachers participated in a six-month TPD programme comprising workshops, collaborative discussions, and classroom implementations.",
+   "The empirical material consisted primarily of audio-recorded workshop discussions, which were transcribed and analysed, supplemented by a post-intervention questionnaire.",
+   "Teachers reported opportunities for timesaving, differentiated instruction, and enhanced creativity, alongside challenges related to mathematical inaccuracies, unrealistic time estimates, and the need for contextual adaptation."
+  ],
+  "attributed_summary": "先導研究探討以結構化教師專業發展模式，將生成式 AI 融入瑞典小學 STEM 教育；11 位教師參加為期六個月的專業發展課程，含工作坊、協作討論與課堂實施，資料主要為工作坊討論錄音，輔以介入後問卷；作者報告教師提到節省時間、差異化教學與創意等機會，也提到數學錯誤、時間估計不切實際及須依情境調整等挑戰。"
  }
 ]
