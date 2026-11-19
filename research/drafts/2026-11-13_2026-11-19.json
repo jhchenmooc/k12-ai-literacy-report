@@ -831,6 +831,41 @@
       "doi": "10.3390/educsci16111982",
       "screening_note": "Verified 2026-11-19 for daily brief 2026-11-19 (supplement r3).",
       "verification_completed_on": "2026-11-19"
+    },
+    {
+      "candidate_id": "W2026-11-13-A25",
+      "category": "research",
+      "source_url": "https://doi.org/10.1080/17482798.2026.2764275",
+      "source_title": "Using without understanding: AI literacy and trust in large language models among elementary school children in Germany",
+      "source_organization": "Journal of Children and Media（Taylor & Francis）",
+      "source_publication_date": "2026-11-18",
+      "source_locator": "出版社文章頁列印（管理者 2026-11-19 提供；自動讀取回 403；句序依管理者同日於對話中提供的頁面截圖，列印本有一行被頁首遮蔽）：Published online: 18 Nov 2026；摘要歸屬：Abstract 第 3 句後段、第 4、6、8 句",
+      "discovered_on": "2026-11-19",
+      "discovery_batch_id": "2026-11-19-daily-r4",
+      "first_disclosed_on": "2026-11-18",
+      "source_updates": [],
+      "original_excerpt": "children aged 8-10 years participated in semi-structured interviews combined with an interaction task using a customized LLM. … Children used the system competently, yet their conceptual understanding remained fragmented. … Their reasoning was frequently anthropomorphic, reinforced by social cues such as natural language use and emojis. … Children explained the system’s errors through human fallibility, but most considered algorithmic bias impossible, treating prejudice as a uniquely human trait.",
+      "source_checked": true,
+      "claim_text": "來源機構：Journal of Children and Media（Taylor & Francis）；資料標題：Using without understanding: AI literacy and trust in large language models among elementary school children in Germany；來源刊登日：2026-11-18。作者摘要報告：研究以半結構訪談結合使用客製化大型語言模型的互動任務，探討德國 8 至 10 歲小學兒童的 AI 素養與對大型語言模型的信任；作者報告兒童能熟練使用系統，但概念理解零散；其推理常帶擬人化，並受自然語言與表情符號等社交線索強化；兒童以人會犯錯解釋系統錯誤，但多數認為演算法不可能有偏誤。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Journal of Children and Media，不在監測清單；管理者 2026-11-19 確認單篇例外收錄）；德國小學兒童的質性訪談與互動任務研究，樣本小，描述性發現不代表一般情形。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "清單外，管理者 2026-11-19 確認單篇例外收錄（「這篇很好，要收」）；第一輪 2026-11-19 子代理以 Crossref 列出（T&F 403，未繞過）；管理者 2026-11-19 先於對話中提供頁面截圖（未成檔），後提供文章頁列印 PDF（Published online: 18 Nov 2026）；本 session 擇摘要第 3 句後段與第 4、6、8 句撰寫中文摘要與中文譯名，作者建議不寫入；第二輪 2026-11-19 由隔離子代理逐句對照列印 PDF，四條摘錄逐字可見，判定需修改：列印本一行被遮，句序號無法由列印本確認，依建議在書目行與出處註明句序依管理者截圖；其餘通過。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS",
+        "S-ETH"
+      ],
+      "ai_lit_note": "小學兒童對大型語言模型的理解、擬人化推理與對演算法偏誤的看法，屬 AI 素養（A），對應 S-BAS「理解AI運作原理與限制」、S-ETH「具備對AI的批判思考」",
+      "audience": "k12",
+      "doi": "10.1080/17482798.2026.2764275",
+      "screening_note": "Verified 2026-11-19 for daily brief 2026-11-19 (supplement r4).",
+      "verification_completed_on": "2026-11-19"
     }
   ],
   "search_runs": [
@@ -1084,6 +1119,22 @@
         {
           "group": "manager-supplied",
           "query": "Manager-supplied publisher PDF 2026-11-19 (Education Sciences 10.3390/educsci16111982)",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-19-daily-r4",
+      "searched_on": "2026-11-19",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "manager-confirmed",
+          "query": "Manager 2026-11-19 confirmed single-item exception and supplied article page print: Journal of Children and Media 10.1080/17482798.2026.2764275",
           "status": "ok"
         }
       ],
