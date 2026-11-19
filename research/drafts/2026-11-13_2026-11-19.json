@@ -661,6 +661,73 @@
       "doi": "10.1177/01650254261500063",
       "screening_note": "Verified 2026-11-18 for daily brief 2026-11-18 (supplement r2).",
       "verification_completed_on": "2026-11-18"
+    },
+    {
+      "candidate_id": "W2026-11-13-A20",
+      "category": "news_policy",
+      "source_url": "https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=756D89596000305F",
+      "source_title": "中小學AI教學實踐計畫期中成果發表會登場 分享生成式AI融入教學的實務經驗",
+      "source_organization": "教育部",
+      "source_publication_date": "2026-11-18",
+      "source_locator": "教育部即時新聞（2026-11-19 讀取 200）：上版日期 115-11-18，RSS 時間 2026-11-18 11:30（臺灣時間）；摘要歸屬：新聞第 1、2 段（第 4 段案例另錄於摘錄）",
+      "discovered_on": "2026-11-19",
+      "discovery_batch_id": "2026-11-19-daily-1",
+      "first_disclosed_on": "2026-11-18",
+      "source_updates": [],
+      "original_excerpt": "教育部「中小學人工智慧(AI)教學實踐計畫」期中成果發表暨分享會，於115年11月18日在集思仁杭會議中心舉行。 … 本計畫配合行政院「AI新十大建設推動方案」，規劃建立生成式AI融入中小學教學之教學實踐驗證機制，透過教師增能、教學實驗、案例擴散及成效評估，形成AI教學實踐模式、教師人才庫及示範學校網絡，並透過「AI教學實踐觀測中心」掌握實際推動情形，持續蒐集相關數據，作為本部後續深化暨推廣AI教育政策之參考，115學年度計83所中小學、400位教師、逾1萬6,000名學生參與。 … 從國小數學詩創作、AI生成內容查證，到國中科學實驗模擬、3D動畫教學，以及高中個人化英語學習、AI Agent專題教學等，老師們透過人機共創與跨領域應用，培養學生表達、思辨及資訊判讀能力。",
+      "source_checked": true,
+      "claim_text": "來源機構：教育部；資料標題：中小學AI教學實踐計畫期中成果發表會登場 分享生成式AI融入教學的實務經驗；來源刊登日：2026-11-18。官方文件表示：教育部表示，「中小學人工智慧(AI)教學實踐計畫」於 11 月 18 日舉行期中成果發表暨分享會；計畫配合行政院「AI新十大建設推動方案」，規劃建立生成式 AI 融入中小學教學的實踐驗證機制，透過教師增能、教學實驗、案例擴散及成效評估推動，115 學年度有 83 所中小學、400 位教師、逾 1 萬 6,000 名學生參與。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "臺灣中央教育主管機關的計畫期中成果活動新聞，對象為中小學教師與學生；參與人數為計畫參與規模，非成效；新聞未載成效評估結果。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-19 子代理讀教育部即時新聞與資科司 RSS 列出；本 session 讀原頁，擇新聞第 1、2 段撰寫中文摘要，第 4 段案例另錄於摘錄，講座、展區與期許不寫入；第二輪 2026-11-19 由隔離子代理逐句對照原頁，判定需修改：摘要原把「規劃建立」寫成已建立，依建議恢復「規劃建立」並調整句構，修正後一致；判 A 依準則生成式 AI 教學培訓一律判 A。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-TEA"
+      ],
+      "ai_lit_note": "中央推動的生成式 AI 融入中小學教學實踐計畫，以教師增能與教學實驗為主（生成式 AI 教學培訓依準則判 A），對應 T-TEA「設計AI與教學法整合的策略」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-11-19 for daily brief 2026-11-19.",
+      "verification_completed_on": "2026-11-19"
+    },
+    {
+      "candidate_id": "W2026-11-13-A21",
+      "category": "news_policy",
+      "source_url": "https://www.gov.uk/government/publications/ai-in-coursework-resources-for-schools/lesson-plan-ai-and-your-coursework-accessible--2",
+      "source_title": "Lesson plan: AI and your coursework (accessible)",
+      "source_organization": "英國資格與考試監管署（Ofqual）",
+      "source_publication_date": "2026-11-18",
+      "source_locator": "GOV.UK Content API（2026-11-19 讀取 200）：first_published_at 2026-11-18T09:30:03Z；母頁「AI in coursework: resources for schools」（2026-03-09 首發）11-18 更新說明新增教案、海報、集會簡報與家長通訊稿並撤下 3 月版教案；摘要歸屬：教案的年級、主題欄與學習目標第 1、2 項",
+      "discovered_on": "2026-11-19",
+      "discovery_batch_id": "2026-11-19-daily-1",
+      "first_disclosed_on": "2026-11-18",
+      "source_updates": [],
+      "original_excerpt": "Year 10 to 13, students undertaking GCSE or A Level coursework (non-exam assessment) … The risks of using AI in coursework and the value of building the underlying skills and knowledge yourself … know that using AI to produce any part of their coursework puts their whole qualification at risk, not just the coursework mark … understand that even if AI use isn’t detected, it still costs them the understanding that coursework is meant to build",
+      "source_checked": true,
+      "claim_text": "來源機構：英國資格與考試監管署（Ofqual）；資料標題：Lesson plan: AI and your coursework (accessible)；來源刊登日：2026-11-18。官方文件表示：英國資格與考試監管署（Ofqual）發布教案，對象為進行 GCSE 或 A Level 課程作業（非考試評量）的 10 至 13 年級學生，主題是在課程作業中使用 AI 的風險，以及自己建立基礎技能與知識的價值；學習目標包括知道以 AI 產出作業任何部分會使整個資格面臨風險，以及即使未被發現，仍會失去課程作業要培養的理解。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "英國考試監管機構提供學校使用的課堂資源，立場在防止課程作業中不當使用 AI 並保留學習，非 AI 能力培養框架；適用範圍為英格蘭；母頁 3 月已首發，本則為 11-18 新增的教案；同日致考試機構信與局長演講不在本則範圍。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-19 子代理以 GOV.UK Content API 列出 Ofqual 新項目並讀教案與母頁（first_published_at 2026-11-18T09:30:03Z）；本 session 擇教案年級、主題欄與學習目標第 1、2 項撰寫中文摘要與中文譯名，海外研究引述與腳本不寫入；第二輪 2026-11-19 由隔離子代理逐字對照 Content API 存檔，判定通過，依建議範圍說明補「適用範圍為英格蘭」。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-ETH",
+        "S-LRN"
+      ],
+      "ai_lit_note": "對 10 至 13 年級學生說明課程作業中使用 AI 的風險與學術誠信，屬 AI 素養（A），對應 S-ETH「正用AI符合學術誠信」、S-LRN「理解AI輔助學習的角色功能」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-11-19 for daily brief 2026-11-19.",
+      "verification_completed_on": "2026-11-19"
     }
   ],
   "search_runs": [
@@ -840,6 +907,37 @@
       ],
       "discovered": 3,
       "added": 3,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-19-daily-1",
+      "searched_on": "2026-11-19",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-11-18,until-created-date:2026-11-19,type:journal-article, six query.bibliographic sets, proceedings-article set, watchlist-ISSN sets (J01-J53, all ISSNs); pedagogical AI agent sets on Crossref, OpenAlex (from_publication_date) and arXiv; arXiv API three sets with submittedDate range and cs.CY/cs.HC new listings; alphaXiv; re-checks of CAEAI 100695, IJER 103160, EED 2762493 and arXiv 2611.21306; publisher pages one try each (Springer 200; MDPI, T&F, ScienceDirect 403, not bypassed)",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK DfE/Ofqual/Ofsted Content API and AI cross-search, Federal Register (ED filter, ED x AI, 'AI literacy', 11-18 and 11-19 issues 200; public inspection returned HTTP 403 IP block, not bypassed), govinfo 11-18 table of contents, MEXT, China MOE, HK info.gov.hk 11-18, MOE Korea (107692, 107693, 107697), KICE press and research board, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (115-11-18 issue), Executive Yuan news RSS, NSTC RSS, MODA press releases page 1; Thursday: MOE law database, NAER news, NSTC AI Basic Act page, OpenAlex TW institutions, JRES, BER, Contemporary Educational Research Quarterly",
+          "status": "ok"
+        },
+        {
+          "group": "thursday-trial-sources",
+          "query": "Twelve weekly sources per policy-monitoring-sources.md (KMK, Education International, Spain MEFP, INTEF, Udir, UVM, SEP, MIM, Brookings edtech, CRPE, AFT, UNESCO AI and education page)",
+          "status": "ok"
+        }
+      ],
+      "discovered": 2,
+      "added": 2,
       "duplicates": 0
     }
   ],

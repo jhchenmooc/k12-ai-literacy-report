@@ -12,6 +12,7 @@
 | 2026-10-20（頁面所印「20 Ottobre 2026」；article:published_time 同日；由 MIM 2026-10-26 第 286 期電子報連結） | INVALSI 國家教育與培訓系統評量研究院（IT），院長 Roberto Ricci 社論，與研究員 Paolo Barabanti 對談 | commentary | L'Intelligenza Artificiale per una scuola inclusiva: la formazione docente verso una nuova pedagogia | https://www.invalsi.it/ai-inclusione-formazione-insegnanti/ | 內文第 5～8 段（引 TALIS 2024） | 2026-10-29 記入；以機會為主，開頭只泛稱「talvolta preoccupazioni」；TALIS 數字選錄前須對照 OECD 原表；INVALSI 不在週四監測來源清單 |
 | 2026-10-29（頁面 datePublished 2026-10-29T14:20:10+00:00） | Brookings（US），主持人 Abby McCloskey，來賓 Jonathan Haidt | commentary（podcast 附逐字稿） | Parenting in an AI revolution | https://www.brookings.edu/articles/parenting-in-an-ai-revolution/ | 頁首重點第 2、3 條 | 2026-11-05 記入；對象為家長；以風險為主，未並陳機會；podcast 談話，選錄時須標明發言人 |
 | 2026-11-05（頁面所印 published 5 November 2026，updated 9 November 2026） | Education International（INTL），未具名；報導 11-02 EI 與 OECD Andreas Schleicher 網路研討會 | news | OECD data explains the need to invest in teachers and equity | https://www.ei-ie.org/en/item/33227:oecd-data-explains-the-need-to-invest-in-teachers-and-equity | 「AI makes teachers more important, not less」節第 2、3 句 | 2026-11-12 記入；AI 只是其中一節；以風險為主、部分並陳；「students who use AI do worse」一句選錄前須對照 PISA 2025 原始資料；發言人為 Schleicher（轉述） |
+| 2026-11-12（article:published_time 2026-11-12T04:16Z；列表標 November 11, 2026，頁面只印 November 2026） | CRPE（US），Lisa Chu、Tia Clinton、Shira Haderlein | brief | Putting AI Into Practice: Lessons from Educator-Led Pilots in California | https://crpe.org/putting-ai-into-practice-lessons-from-educator-led-pilots-in-california/ | 摘要第 2 段末句；Key findings 第 2、3 項（PDF 未讀）；機會與風險並陳 | 候選（2026-11-19 週四讀取） |
 
 2026-10-22 記入各則的逐字摘錄（原文，選錄時須經第二輪對照與譯文確認）：
 
@@ -30,3 +31,8 @@
 2026-11-05 記入的逐字摘錄（原文，選錄時須經第二輪對照與譯文確認）：
 
 - Brookings 2026-10-29（頁首重點第 2、3 條）："AI introduces new risks for children’s learning and relationships, from outsourcing thinking to children forming attachments to chatbots." 另條："Protecting children requires both digital guardrails and more freedom offline. This includes age limits on AI, age limits on social media, phone bans in schools, computer-free elementary schools and potentially even middle schools, devices kept in common areas in the home, and more opportunities for independent play."
+
+
+2026-11-19 記入的逐字摘錄（原文，選錄時須經第二輪對照與譯文確認）：
+
+- CRPE 2026-11-12（摘要第 2 段末句）："Their experiences suggest that early AI implementation may produce better judgment and clearer uses for the technology before measurable improvements in practice." Key findings 第 2 項："Students questioned AI's reliability and its effects on creativity, critical thinking, and the environment." 第 3 項："Educators reported that opportunities to use and question AI helped students recognize its strengths and limitations, consider appropriate uses, and identify overreliance."
