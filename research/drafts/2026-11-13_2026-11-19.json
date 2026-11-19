@@ -728,6 +728,40 @@
       "audience": "k12",
       "screening_note": "Verified 2026-11-19 for daily brief 2026-11-19.",
       "verification_completed_on": "2026-11-19"
+    },
+    {
+      "candidate_id": "W2026-11-13-A22",
+      "category": "news_policy",
+      "source_url": "https://www.kmk.org/aktuelles/pressearchiv/mitteilung/berufliche-schulen-sollen-zu-innovationstreibern-fuer-digitales-und-ki-gestuetztes-lernen-werden.html",
+      "source_title": "Berufliche Schulen sollen zu Innovationstreibern für digitales und KI-gestütztes Lernen werden",
+      "source_organization": "Bildungsministerkonferenz der KMK（德國各邦教育部長會議）",
+      "source_publication_date": "2026-11-16",
+      "source_locator": "德國 KMK 新聞稿頁（2026-11-19 讀取 200）：頁面日期 16.11.2026；建議文件 PDF 同日上架（未引用）；摘要歸屬：第 1 段第 1、2 句，第 4 段第 2 句，第 6 段第 1、2 句",
+      "discovered_on": "2026-11-19",
+      "discovery_batch_id": "2026-11-19-daily-r1",
+      "first_disclosed_on": "2026-11-16",
+      "source_updates": [],
+      "original_excerpt": "Berufliche Schulen sollen die Potenziale Künstlicher Intelligenz (KI) gezielt für die Entwicklung innovativer Unterrichtskonzepte und zeitgemäße Prüfungen nutzen. … Die Bildungsministerkonferenz (BMK) und das Bundesbildungsministerium stellen dazu zehn Handlungsempfehlungen des Paktes für berufliche Schulen vor. … Zur individuellen Förderung setzen sie auf adaptive digitale Lernumgebungen und KI, etwa als persönlichen Lerntutor. … Die Paktpartner empfehlen, schulische Prüfungsformate an den digitalen Anforderungen der Arbeitswelt auszurichten und die Interaktion mit KI ausdrücklich zuzulassen. … Dabei müssen die individuellen Kompetenzen der Lernenden messbar und zurechenbar bleiben.",
+      "source_checked": true,
+      "claim_text": "來源機構：Bildungsministerkonferenz der KMK（德國各邦教育部長會議）；資料標題：Berufliche Schulen sollen zu Innovationstreibern für digitales und KI-gestütztes Lernen werden；來源刊登日：2026-11-16。官方文件表示：德國各邦教育首長會議（BMK）與德國聯邦教育主管部會提出「職業學校協約」十項行動建議，表示職業學校應有目的地運用 AI 的潛力，發展創新教學構想與符合時代的考試；建議以適性數位學習環境與 AI（例如個人學習導師）支持個別學習，並使學校考試形式對應職場的數位需求、明確允許與 AI 互動，同時學習者的個人能力仍須可衡量、可歸屬。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "德國各邦教育首長會議與德國聯邦教育主管部會的協約建議（非法規），對象為職業學校（berufliche Schulen；以中等職業教育為主，亦含部分中學後進修學校）的學生與教師；建議將由協約夥伴落實，考試形式調整以試點計畫（Modellprojekte）試行。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-19 週四來源子代理讀 KMK 新聞稿頁（200；頁面日期 16.11.2026）與建議文件 PDF（Last-Modified 2026-11-16，檔內建立日 2026-10-06 為製作日）；本 session 擇新聞稿第 1 段第 1、2 句、第 4 段第 2 句、第 6 段第 1、2 句撰寫中文摘要與中文譯名；第二輪 2026-11-19 由隔離子代理逐句對照新聞稿，判定需修改，依建議範圍說明「須」改「將」、Modellprojekte 改譯「試點計畫」，修正後一致；另為符合閘門冠國名規則，機關名改寫為「德國各邦教育首長會議」「德國聯邦教育主管部會」（沿用 D20261022 譯法）。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-ETH",
+        "T-TEA"
+      ],
+      "ai_lit_note": "職業學校以 AI 支持個別學習並在考試中允許與 AI 互動、同時確保能力可歸屬，屬 AI 素養政策（A），對應 S-ETH「落實AI使用規範與責任」、T-TEA「設計AI與教學法整合的策略」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-11-19 for daily brief 2026-11-19 (supplement r1).",
+      "verification_completed_on": "2026-11-19"
     }
   ],
   "search_runs": [
@@ -938,6 +972,22 @@
       ],
       "discovered": 2,
       "added": 2,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-19-daily-r1",
+      "searched_on": "2026-11-19",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "thursday-trial-sources",
+          "query": "KMK press releases (weekly Thursday source), press release 16.11.2026 and recommendations PDF",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ],

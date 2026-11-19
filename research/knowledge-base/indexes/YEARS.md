@@ -1895,6 +1895,7 @@
 | KB-2026-0585 — [Prolonged participation AI-based mindfulness school programme in primary education: Implications for AI practices, schools and developers](https://doi.org/10.1016/j.learninstruc.2026.102481) | journal_article | 2026-10-03 | discovered_unverified |
 | KB-2026-0586 — [中小學AI教學實踐計畫期中成果發表會登場 分享生成式AI融入教學的實務經驗](https://www.edu.tw/News_Content.aspx?n=9E7AC85F1954DDA8&s=756D89596000305F) | government_announcement | 2026-11-18 | bibliographic_checked |
 | KB-2026-0587 — [Lesson plan: AI and your coursework (accessible)](https://www.gov.uk/government/publications/ai-in-coursework-resources-for-schools/lesson-plan-ai-and-your-coursework-accessible--2) | official_guidance | 2026-11-18 | bibliographic_checked |
+| KB-2026-0588 — [Berufliche Schulen sollen zu Innovationstreibern für digitales und KI-gestütztes Lernen werden](https://www.kmk.org/aktuelles/pressearchiv/mitteilung/berufliche-schulen-sollen-zu-innovationstreibern-fuer-digitales-und-ki-gestuetztes-lernen-werden.html) | official_guidance | 2026-11-16 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
