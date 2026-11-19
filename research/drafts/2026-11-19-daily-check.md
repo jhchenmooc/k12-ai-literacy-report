@@ -1,4 +1,4 @@
-# 每日短訊查核紀錄：2026-11-19（2 則）
+# 每日短訊查核紀錄：2026-11-19（2 則；r1 補登後 3 則）
 
 > 每日短訊例行作業，由排程觸發，在每日短訊專用 session 執行。今天週四。
 > - **檢索：** 由同一 session 的四個子代理分頭執行（國際研究、國際政策每日來源、臺灣中央來源含週四加查、週四保留試行來源 12 個）；判讀由本 session 複核。子代理只查一次、不迴圈等待。
@@ -101,7 +101,7 @@
 | 美國 AFT 新聞稿 | 200 | 11/10/26 | 沒有新項目 | — | 0 |
 | UNESCO AI 與教育專頁 | 無頭（內容已載入，無 HTTP 碼） | 活動頁 2026-11-17 | 1 | 1 | 每日候選 1（待決，見下） |
 
-- **每日候選（補登處理中）：** 德國 KMK〈Berufliche Schulen sollen zu Innovationstreibern für digitales und KI-gestütztes Lernen werden〉（2026-11-16）與建議文件〈Handlungsempfehlungen zweiter Arbeitszyklus〉：職業學校以 KI 發展教學與考試、學生的數位自主與對 KI 的批判反思；A，對象為職業學校學生與教師（中等職業教育屬 K-12；berufliche Schulen 含少數中學後 Fachschule，於範圍限制註明）。本 session 重讀原頁、建快照並兩輪對照後，今日以補登加入本期。
+- **每日候選 → D20261119-03（r1 補登，KB-2026-0588）：** 德國 KMK〈Berufliche Schulen sollen zu Innovationstreibern für digitales und KI-gestütztes Lernen werden〉（2026-11-16）與建議文件〈Handlungsempfehlungen zweiter Arbeitszyklus〉：職業學校以 KI 發展教學與考試、學生的數位自主與對 KI 的批判反思；A，對象為職業學校學生與教師（中等職業教育屬 K-12；berufliche Schulen 含少數中學後 Fachschule，於範圍限制註明）。本 session 重讀原頁、建快照；第二輪由隔離子代理逐句對照，判定需修改（範圍說明「須」改「將」、Modellprojekte 改譯「試點計畫」），修正後一致，今日以補登加入本期（revised_on 與 corrections.json）。
 - **每日候選（待管理者決定）：** UNESCO 聖地牙哥辦事處〈Online workshop 'Teachers, dive into AI!'〉（頁面 datePublished 2026-11-17）：對象為拉丁美洲與加勒比中小學教師的 AI 線上工作坊，A（T-BAS、T-ETH）；屬活動公告，合辦者 CodeAI、屬「Hour of AI 2026」，活動於 11-19 19:00 UTC 舉行。本 session 暫不發，請管理者決定。
 - **反思候選：** CRPE〈Putting AI Into Practice: Lessons from Educator-Led Pilots in California〉（2026-11-12），已記入 reflection-pool.md。
 - **線索（未讀、未判）：** MIM 電子報 289 期的 INDIRE 網路研討會〈Educazione al digitale〉（INDIRE 頁 11-05，窗口外）與 INVALSI〈Oltre lo schermo: che cosa dicono i primi dati INVALSI sulle competenze digitali〉；KMK Pakt 專頁確認建議書是否更早公開。
