@@ -1897,6 +1897,7 @@
 | KB-2026-0587 — [Lesson plan: AI and your coursework (accessible)](https://www.gov.uk/government/publications/ai-in-coursework-resources-for-schools/lesson-plan-ai-and-your-coursework-accessible--2) | official_guidance | 2026-11-18 | bibliographic_checked |
 | KB-2026-0588 — [Berufliche Schulen sollen zu Innovationstreibern für digitales und KI-gestütztes Lernen werden](https://www.kmk.org/aktuelles/pressearchiv/mitteilung/berufliche-schulen-sollen-zu-innovationstreibern-fuer-digitales-und-ki-gestuetztes-lernen-werden.html) | official_guidance | 2026-11-16 | bibliographic_checked |
 | KB-2026-0589 — [Generative AI-Enhanced STEM-Education: Investigating Teachers’ Experiences from Implementation in Primary School Settings](https://doi.org/10.1007/s10763-026-10747-y) | journal_article | 2026-11-18 | bibliographic_checked |
+| KB-2026-0590 — [Perceived Benefits and Reported Uses of Generative AI for Accessibility: An Exploratory Survey of Minnesota Educators](https://doi.org/10.3390/educsci16111982) | journal_article | 2026-11-18 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
