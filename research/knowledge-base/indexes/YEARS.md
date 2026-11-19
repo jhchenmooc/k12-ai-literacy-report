@@ -1899,6 +1899,7 @@
 | KB-2026-0589 — [Generative AI-Enhanced STEM-Education: Investigating Teachers’ Experiences from Implementation in Primary School Settings](https://doi.org/10.1007/s10763-026-10747-y) | journal_article | 2026-11-18 | bibliographic_checked |
 | KB-2026-0590 — [Perceived Benefits and Reported Uses of Generative AI for Accessibility: An Exploratory Survey of Minnesota Educators](https://doi.org/10.3390/educsci16111982) | journal_article | 2026-11-18 | bibliographic_checked |
 | KB-2026-0591 — [Using without understanding: AI literacy and trust in large language models among elementary school children in Germany](https://doi.org/10.1080/17482798.2026.2764275) | journal_article | 2026-11-18 | bibliographic_checked |
+| KB-2026-0592 — [Structured, teacher-mediated ChatGPT integration for primary learners with a dyscalculia-consistent profile: Mathematics-explanatory writing and session-to-session associations](https://doi.org/10.1016/j.ijer.2026.103160) | journal_article | 2026-11-17 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
