@@ -259,5 +259,57 @@
    "Most respondents were PK-12 educators (68.3%) and women (69.3%), roughly a third worked in rural settings (33.8%), and half held a master’s degree (49.1%)."
   ],
   "attributed_summary": "研究以探索性次級分析，使用明尼蘇達州 293 名學前至高中與高教教育工作者的調查資料，比較認同「生成式 AI 可提升多元學習者無障礙」與報告用 AI 為身心障礙學生提升無障礙的情形；作者說明兩題範圍與對象不同，比較只描述回應比例；開放題回應較常描述一般差異化與語言支持，而非針對身心障礙的使用。"
+ },
+ {
+  "claim_id": "D20261119-06",
+  "candidate_id": "W2026-11-13-A25",
+  "kind": "research",
+  "claim_text": "來源機構：Journal of Children and Media（Taylor & Francis）；資料標題：Using without understanding: AI literacy and trust in large language models among elementary school children in Germany；來源刊登日：2026-11-18。作者摘要報告：研究以半結構訪談結合使用客製化大型語言模型的互動任務，探討德國 8 至 10 歲小學兒童的 AI 素養與對大型語言模型的信任；作者報告兒童能熟練使用系統，但概念理解零散；其推理常帶擬人化，並受自然語言與表情符號等社交線索強化；兒童以人會犯錯解釋系統錯誤，但多數認為演算法不可能有偏誤。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "V2",
+  "daily_fact_kind": "research_abstract_attributed_summary",
+  "source_document_type": "peer_reviewed_article",
+  "source_title": "Using without understanding: AI literacy and trust in large language models among elementary school children in Germany",
+  "title_zh": "會用但不懂：德國小學兒童的 AI 素養與對大型語言模型的信任",
+  "source_organization": "Journal of Children and Media（Taylor & Francis）",
+  "source_url": "https://doi.org/10.1080/17482798.2026.2764275",
+  "evidence_source_url": "https://doi.org/10.1080/17482798.2026.2764275",
+  "source_locator": "出版社文章頁列印（管理者 2026-11-19 提供；自動讀取回 403；句序依管理者同日於對話中提供的頁面截圖，列印本有一行被頁首遮蔽）：Published online: 18 Nov 2026；摘要歸屬：Abstract 第 3 句後段、第 4、6、8 句",
+  "source_type": "research_publication",
+  "checked_at": "2026-11-19",
+  "publication_date": "2026-11-18",
+  "first_disclosed_on": "2026-11-18",
+  "evidence_path": "publication/sources/d2026-11-19-a06-jcm-page.txt",
+  "evidence_sha256": "3efb1373f6a21115705e5ffdb47a2c26263e2923d24d27444b7baa8595c42c61",
+  "original_excerpt": "children aged 8-10 years participated in semi-structured interviews combined with an interaction task using a customized LLM. … Children used the system competently, yet their conceptual understanding remained fragmented. … Their reasoning was frequently anthropomorphic, reinforced by social cues such as natural language use and emojis. … Children explained the system’s errors through human fallibility, but most considered algorithmic bias impossible, treating prejudice as a uniquely human trait.",
+  "interpretation_note": "轉述作者摘要的研究方法、對象年齡與作者描述的兒童使用、理解、推理及對偏誤的看法；信任各面向的細節與作者對 AI 素養教育的建議不寫入。",
+  "scope_limitation": "同儕審查期刊論文（Journal of Children and Media，不在監測清單；管理者 2026-11-19 確認單篇例外收錄）；德國小學兒童的質性訪談與互動任務研究，樣本小，描述性發現不代表一般情形。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "decision": "publish",
+  "ai_crosscheck_record": "清單外，管理者 2026-11-19 確認單篇例外收錄（「這篇很好，要收」）；第一輪 2026-11-19 子代理以 Crossref 列出（T&F 403，未繞過）；管理者 2026-11-19 先於對話中提供頁面截圖（未成檔），後提供文章頁列印 PDF（Published online: 18 Nov 2026）；本 session 擇摘要第 3 句後段與第 4、6、8 句撰寫中文摘要與中文譯名，作者建議不寫入；第二輪 2026-11-19 由隔離子代理逐句對照列印 PDF，四條摘錄逐字可見，判定需修改：列印本一行被遮，句序號無法由列印本確認，依建議在書目行與出處註明句序依管理者截圖；其餘通過。同一模型，非獨立審閱。",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "S-BAS",
+   "S-ETH"
+  ],
+  "ai_lit_note": "小學兒童對大型語言模型的理解、擬人化推理與對演算法偏誤的看法，屬 AI 素養（A），對應 S-BAS「理解AI運作原理與限制」、S-ETH「具備對AI的批判思考」",
+  "audience": "k12",
+  "summary_evidence_spans": [
+   "children aged 8-10 years participated in semi-structured interviews combined with an interaction task using a customized LLM.",
+   "Children used the system competently, yet their conceptual understanding remained fragmented.",
+   "Their reasoning was frequently anthropomorphic, reinforced by social cues such as natural language use and emojis.",
+   "Children explained the system’s errors through human fallibility, but most considered algorithmic bias impossible, treating prejudice as a uniquely human trait."
+  ],
+  "attributed_summary": "研究以半結構訪談結合使用客製化大型語言模型的互動任務，探討德國 8 至 10 歲小學兒童的 AI 素養與對大型語言模型的信任；作者報告兒童能熟練使用系統，但概念理解零散；其推理常帶擬人化，並受自然語言與表情符號等社交線索強化；兒童以人會犯錯解釋系統錯誤，但多數認為演算法不可能有偏誤。"
  }
 ]
