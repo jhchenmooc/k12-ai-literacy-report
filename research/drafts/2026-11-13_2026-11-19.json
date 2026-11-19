@@ -866,6 +866,40 @@
       "doi": "10.1080/17482798.2026.2764275",
       "screening_note": "Verified 2026-11-19 for daily brief 2026-11-19 (supplement r4).",
       "verification_completed_on": "2026-11-19"
+    },
+    {
+      "candidate_id": "W2026-11-13-A26",
+      "category": "research",
+      "source_url": "https://doi.org/10.1016/j.ijer.2026.103160",
+      "source_title": "Structured, teacher-mediated ChatGPT integration for primary learners with a dyscalculia-consistent profile: Mathematics-explanatory writing and session-to-session associations",
+      "source_organization": "International Journal of Educational Research（Elsevier）",
+      "source_publication_date": "2026-11-17",
+      "source_locator": "出版者 PDF（管理者 2026-11-19 提供；ScienceDirect 回 403）：Available online 17 November 2026；摘要歸屬：Abstract 第 1、2 句",
+      "discovered_on": "2026-11-19",
+      "discovery_batch_id": "2026-11-19-daily-r5",
+      "first_disclosed_on": "2026-11-17",
+      "source_updates": [],
+      "original_excerpt": "This study evaluated a structured, teacher-mediated ChatGPT integration package for primary learners with a dyscalculia-consistent profile during mathematics-explanatory writing. … Participants were 120 students in Grades 3–5, individually randomized within school and grade strata to structured integration or comparison (60 per condition) across 24 scheduled instructional sessions conducted between February 18 and June 22, 2026.",
+      "source_checked": true,
+      "claim_text": "來源機構：International Journal of Educational Research（Elsevier）；資料標題：Structured, teacher-mediated ChatGPT integration for primary learners with a dyscalculia-consistent profile: Mathematics-explanatory writing and session-to-session associations；來源刊登日：2026-11-17。作者摘要報告：研究評估一套由教師中介的結構化 ChatGPT 整合教學方案，對象為具計算障礙特徵的小學生，任務為數學解釋寫作；120 名 3 至 5 年級學生在學校與年級分層內個別隨機分派至結構化整合組或對照組（各 60 人），於 2026 年 2 月 18 日至 6 月 22 日進行 24 次排定的教學課程。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（International Journal of Educational Research，不在監測清單；管理者 2026-11-19 確認單篇例外收錄）；隨機分派介入研究，作者單位為沙烏地阿拉伯塔布克大學，摘要未寫施測國別；成效結果不寫入。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "清單外，管理者 2026-11-19 確認單篇例外收錄（「收」）；第一輪 2026-11-18 子代理以 Crossref 列出（ScienceDirect 403，未繞過；Crossref 無線上日與摘要，列瀏覽器清單）；管理者 2026-11-19 提供出版者 PDF（Available online 17 November 2026），本 session 擇摘要第 1、2 句撰寫中文摘要與中文譯名，介入成效不寫入；第二輪 2026-11-19 由隔離子代理逐句對照 PDF，判定通過。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN"
+      ],
+      "ai_lit_note": "具計算障礙特徵的小學生在教師中介下以 ChatGPT 支援數學解釋寫作，AI 作為學習工具，屬 AI 賦能學習（B），對應 S-LRN「應用AI工具強化領域學習」",
+      "audience": "k12",
+      "doi": "10.1016/j.ijer.2026.103160",
+      "screening_note": "Verified 2026-11-19 for daily brief 2026-11-19 (supplement r5).",
+      "verification_completed_on": "2026-11-19"
     }
   ],
   "search_runs": [
@@ -1135,6 +1169,22 @@
         {
           "group": "manager-confirmed",
           "query": "Manager 2026-11-19 confirmed single-item exception and supplied article page print: Journal of Children and Media 10.1080/17482798.2026.2764275",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-19-daily-r5",
+      "searched_on": "2026-11-19",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "manager-confirmed",
+          "query": "Manager 2026-11-19 confirmed single-item exception and supplied publisher PDF: IJER 10.1016/j.ijer.2026.103160",
           "status": "ok"
         }
       ],
