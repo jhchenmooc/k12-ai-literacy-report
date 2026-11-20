@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "period": {
+    "start": "2026-11-20",
+    "end": "2026-11-26"
+  },
+  "status": "draft_pending_source_verification",
+  "notice": "Planning worksheet only. NOT registered in publication/issues.json, NOT certified or published.",
+  "editorial_rules": {
+    "target_items": "3–5, fewer when evidence is insufficient",
+    "high_risk": "hold",
+    "source_required": true
+  },
+  "items": [
+    {
+      "candidate_id": "W2026-11-20-A01",
+      "category": "research",
+      "source_url": "https://doi.org/10.3389/feduc.2026.1999678",
+      "source_title": "Didactic orchestration integrating artificial intelligence tools to develop creative thinking skills in students",
+      "source_organization": "Frontiers in Education（Frontiers）",
+      "source_publication_date": "2026-11-19",
+      "source_locator": "出版社文章頁（frontiersin.org，2026-11-20 讀取 200）：Published 19 November 2026（citation_online_date 10/23 為接受日，不採用）；摘要歸屬：Introduction 第 1 句、Methods 第 1 句、Discussion 第 2、3 句",
+      "discovered_on": "2026-11-20",
+      "discovery_batch_id": "2026-11-20-daily-1",
+      "first_disclosed_on": "2026-11-19",
+      "source_updates": [],
+      "original_excerpt": "This study examined changes in students' self-reported creativity-related behaviors following an educational intervention combining artificial intelligence (AI) tools and the DRAE instructional model (Diagnosis, Recreation, Application, and Estimation). … A one-group preexperimental pretest-posttest questionnaire design was complemented by semi-structured interviews and direct-observation records. … However, retrospective record linkage, limitations in cross-instrument correspondence, self-report measurement, and the absence of a comparison group restrict causal interpretation. … The findings do not establish an independent causal effect of AI or validate the DRAE model.",
+      "source_checked": true,
+      "claim_text": "來源機構：Frontiers in Education（Frontiers）；資料標題：Didactic orchestration integrating artificial intelligence tools to develop creative thinking skills in students；來源刊登日：2026-11-19。作者摘要報告：研究探討結合 AI 工具與 DRAE 教學模式的教育介入後，學生自陳的創造力相關行為變化，採單組前後測問卷設計，輔以半結構訪談與直接觀察紀錄；作者說明回溯式紀錄串連、測量工具間對應的限制、自陳測量與缺乏對照組限制了推論，研究結果不足以確立 AI 的獨立作用，也未驗證 DRAE 模式。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Frontiers in Education，監測清單 J29）；表 1 學段為小學 15.2%、中學 80.4%、技術 4.0%，依多數標 K-12；單組前後測、自陳測量、無對照組，介入成效不寫入。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "監測清單 J29；第一輪 2026-11-20 子代理以監測期刊 ISSN 查詢列出並讀出版社頁（200；Published 19 November 2026；表 1 小學 15.2%、中學 80.4%）；本 session 擇 Introduction 第 1 句、Methods 第 1 句、Discussion 第 2、3 句撰寫中文摘要與中文譯名，分數、檢定值與效果量不寫入；第二輪 2026-11-20 由隔離子代理逐句對照出版社頁，判定通過，依建議「工具間」改為「測量工具間」、「效果」改「作用」、書目行補齊表 1 類別。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN"
+      ],
+      "ai_lit_note": "學生在多學科活動中使用 AI 工具（解題工具與 ChatGPT）的教學介入，AI 作為學習工具，屬 AI 賦能學習（B），對應 S-LRN「應用AI工具強化領域學習」",
+      "audience": "k12",
+      "doi": "10.3389/feduc.2026.1999678",
+      "screening_note": "Verified 2026-11-20 for daily brief 2026-11-20.",
+      "verification_completed_on": "2026-11-20"
+    },
+    {
+      "candidate_id": "W2026-11-20-A02",
+      "category": "research",
+      "source_url": "https://doi.org/10.3390/bs16112202",
+      "source_title": "Socioeconomic Status and AI Use for Schoolwork in Relation to Adolescents’ School Belonging and Loneliness in Four Chinese Regions",
+      "source_organization": "Behavioral Sciences（MDPI）",
+      "source_publication_date": "2026-11-19",
+      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：MDPI 回 403）：2026-11-19；Crossref 摘要句（出版者存入，未讀出版社頁）",
+      "discovered_on": "2026-11-20",
+      "discovery_batch_id": "2026-11-20-daily-1",
+      "first_disclosed_on": "2026-11-19",
+      "source_updates": [],
+      "original_excerpt": "This study used cross-sectional PISA data from adolescents in four Chinese regions.",
+      "source_checked": true,
+      "claim_text": "來源機構：Behavioral Sciences（MDPI）；資料標題：Socioeconomic Status and AI Use for Schoolwork in Relation to Adolescents’ School Belonging and Loneliness in Four Chinese Regions；來源刊登日：2026-11-19。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "同儕審查期刊論文（Behavioral Sciences，監測清單 J52）；Crossref 摘要所述為中國四個地區青少年 PISA 資料的橫斷面迴歸分析，課業 AI 使用頻率為預測變項之一；本則只為書目事實。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "監測清單 J52；第一輪 2026-11-20 子代理以監測期刊 ISSN 查詢列出（MDPI 403，未繞過；OpenAlex 尚未收錄）；本 session 讀 Crossref 紀錄（published-online 2026-11-19）並取出版者存入的摘要第 3 句；第二輪 2026-11-20 由隔離子代理對照 Crossref 紀錄，判定通過，判 B 屬邊界；依建議知識庫主題不標生成式 AI。只發書目。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN"
+      ],
+      "ai_lit_note": "青少年在課業中使用 AI 的頻率與學校經驗的關聯，AI 作為學習工具，屬 AI 賦能學習（B；依篇名與 Crossref 摘要判讀，邊界案例），對應 S-LRN「理解AI輔助學習的角色功能」",
+      "audience": "k12",
+      "doi": "10.3390/bs16112202",
+      "screening_note": "Verified 2026-11-20 for daily brief 2026-11-20.",
+      "verification_completed_on": "2026-11-20"
+    }
+  ],
+  "search_runs": [
+    {
+      "batch_id": "2026-11-20-daily-1",
+      "searched_on": "2026-11-20",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-11-19,until-created-date:2026-11-20,type:journal-article, six query.bibliographic sets, proceedings-article set, watchlist-ISSN sets (J01-J53, all ISSNs); pedagogical AI agent sets on Crossref, OpenAlex (from_publication_date) and arXiv; arXiv API three sets with submittedDate range and cs.CY/cs.HC new listings; alphaXiv; re-check of SEE 101707 and arXiv 2611.21306; publisher pages one try each (Frontiers 200; MDPI, ScienceDirect 403, not bypassed)",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK DfE/Ofqual/Ofsted Content API and AI cross-search, Federal Register (ED filter, ED x AI, 'AI literacy', 11-19 issue and public inspection 200), MEXT (mext_00751, 00752 text read), China MOE, HK info.gov.hk 11-19, MOE Korea (107703), KICE press and research board, KERIS, UNESCO newsroom, Eurydice; E5a seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (115-11-19 issue), Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 2,
+      "added": 2,
+      "duplicates": 0
+    }
+  ],
+  "item_template": {
+    "candidate_id": "",
+    "category": "news_policy_or_research",
+    "source_url": "",
+    "source_title": "",
+    "source_publication_date": "",
+    "source_locator": "",
+    "original_excerpt": "",
+    "source_checked": false,
+    "claim_text": "",
+    "claim_class": "bibliographic_or_descriptive_or_high_impact",
+    "risk_tier": "low_or_medium_or_high",
+    "scope_limitation": "",
+    "translation_reviewed": false,
+    "conflict_unresolved": null,
+    "decision": "hold",
+    "ai_crosscheck_status": "not_started",
+    "ai_crosscheck_passes": 0,
+    "ai_crosscheck_record": ""
+  }
+}

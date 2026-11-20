@@ -1912,6 +1912,8 @@
 | KB-2026-0602 — [The influence of artificial intelligence on students’ academic performance through career aspiration emotional intelligence and psychological well being among secondary school students in Awi Zone](https://doi.org/10.1007/s44217-026-02183-5) | journal_article | 2026-10-05 | bibliographic_checked |
 | KB-2026-0603 — [GenAI-supported interactive learning and Chinese language arts (Yuwen) engagement: the mediating role of grit in an explanatory mixed-methods study](https://doi.org/10.1080/10494820.2026.2749408) | journal_article | 2026-10-16 | bibliographic_checked |
 | KB-2026-0604 — [Zero-shot prompting with GenAI for EFL cloze text generation: a mixed-methods evaluation for language assessment in China](https://doi.org/10.1007/s10639-026-14163-1) | journal_article | 2026-10-02 | bibliographic_checked |
+| KB-2026-0605 — [Didactic orchestration integrating artificial intelligence tools to develop creative thinking skills in students](https://doi.org/10.3389/feduc.2026.1999678) | journal_article | 2026-11-19 | bibliographic_checked |
+| KB-2026-0606 — [Socioeconomic Status and AI Use for Schoolwork in Relation to Adolescents’ School Belonging and Loneliness in Four Chinese Regions](https://doi.org/10.3390/bs16112202) | journal_article | 2026-11-19 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
