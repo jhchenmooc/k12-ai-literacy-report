@@ -304,3 +304,21 @@ R3（建議由管理者決定）：
 - **05 的 ai_crosscheck_record**：「週報精選（2026-11-13 期，管理者 2026-11-20 改為 5 則精選，加列本則；原列其他短訊）。第一輪撰寫（同 session 自核）：2026-11-20 編輯 session 讀出版者 PDF 全文撰稿（見 source_locator），建快照 w2026-11-13-ft05.txt，以 python3 -I 比對快照 27 段摘錄與 PDF 文字（依快照所記斷行規則）全部逐字相符，逐頁確認位置；未引效果量、檢定數值或問卷百分比；ai_lit_dims 與首發日沿用每日短訊 D20261119-04。第二輪待隔離子代理對照。同一模型，非獨立審閱。」`ai_crosscheck_passes` 依閘門 medium 風險要求填 2、`ai_crosscheck_status` concordant，比照本期前 4 則第一輪的做法；第二輪隔離對照完成後改寫紀錄。導讀 32、33 的紀錄另加重新編號說明，也標第二輪待對照。
 - **閘門修正**：無。`render-site --write`、`validate-publication`、`node --test`、`validate-knowledge-base`、`public-site --build` 首次執行即通過。撰稿時預先避開 validate-claims 的高風險字串（證明、提升、因果效果、「所有…教師…」等）。
 - **請第二輪留意**：（1）問卷填答 10 人（表 5 標題 n = 10），參與者 11 人，claim 照寫；（2）「原文未述對照組」是依設計（全體 11 人都參加課程）判斷，原文沒有明說；（3）「大學所在的瑞典中部地區」原文 the region where the university is situated in central Sweden，作者單位為 Karlstad University，claim 未寫校名；（4）作者所述發現是否應收入 RQ2 的發展描述（目前依草稿第一節四欄計畫不寫）。
+
+### 精選 05 第二輪隔離對照（2026-11-20）
+
+隔離子代理（未參與 05 撰稿）讀私人 repo 所存 IJSME 出版者 PDF（19 頁，SHA-256 與快照所記相同），以 pdftotext 抽字逐項對照，表 5 標題與討論段落分段以 pdftoppm 影像確認。
+
+- **核對無誤**：11 人（女 8、男 3）、年資 2–35 年、四至六年級（10–12 歲）、部分同校；瑞典中部大學所在地區；六個月、四次大學工作坊、每次 2.5–3 小時、兩位作者帶領；數學（分數）→科學→整合；Braun 與 Clarke 六階段主題分析；RCM 與 Digital Promise AI 素養框架；14 題自編問卷、10 人填答（表 5 n = 10）、只作描述性三角檢證；四個主題名稱；機會與挑戰；數學錯誤與科學備課；自行設計教材；限制六項與保留語。ai_lit_dims（T-TEA、T-PD）、ai_lit_note、首發日 2026-11-18、title_zh 與 D20261119-04 相同。無本刊評價或對臺灣的建議；未寫介入成效（摘要第 8 句、討論與研究問題二的成長敘述、表 4、表 5 百分比）。
+- **修正**：
+  1. 「原文未述對照組」：原文沒有談對照組，前例（2026-11-01、11-08 兩次修正）都把全文未寫的「無對照組」「原文未述對照組…」刪除，避免隱含對設計的評價。claim_text 刪此句（設計欄已照原文寫先導、設計取向研究與 11 人參加課程）；scope_limitation 刪「單組」「全體參與者皆受專業發展介入，原文未述對照組」，改為「自願參加專業發展課程與研究」「作者定位為設計取向的先導研究」；interpretation_note 開頭「單組質性先導研究，含專業發展介入」改為「質性為主的先導研究，11 位參與教師都參加專業發展課程」。
+  2. cross-cutting themes 原文為 across subject areas, schools, and time points，「四個跨科目主題」改為「四個跨越科目、學校與時間點的主題」。
+  3. 主題 3 譯名「撰寫提示是轉化教學意圖的實務」改為「撰寫提示是轉化性的教學實務」（依 Theme 3 首句 a translational pedagogical practice；「教學意圖」只見於表 3）。
+  4. In several cases「有些情況下」改為「在幾個案例中」。
+  5. direct student outcomes「學生的直接學習結果」改為「學生的直接結果」。
+  6. 快照位置標示：「However, changes in PCK cannot be observed directly.」在 Discussion 第 5 段（原記第 4 段）；「While teachers demonstrated…」在第 8 段（原記第 7 段），影像確認。
+  7. claim_text 有、快照未摘的四項事實補摘錄：RCM 為理解學科教學知識的框架（Theoretical Frameworks，第 5 頁）、邀請經區域網絡發送（第 7 頁）、問卷於最後一次工作坊結束時發放（第 10 頁）、主題 3 首句（第 12 頁）。快照由 27 段增為 31 段，original_excerpt、source_locator 更新，evidence_sha256 重算。
+- **快照斷行**：31 段以 python3 -I 比對 pdftotext 預設輸出（行尾斷字已接回，再把 openended、crosscutting 還原為 open-ended、cross-cutting，兩詞原文他處同拼法）全部逐字相符；另以 `-raw` 輸出套用快照所記規則（行尾連字號接小寫字母者去掉）比對，除表 5 標題外全部相符。表 5 標題原始模式為「(n= 10)」、預設模式為「(n = 10)」，影像為 n=10 加細空白；快照依所記「pdftotext output」取預設模式，與其他各段一致，不改。前節「表 5 標題以 pdftotext 原始模式比對」的說法與實際不符，應為預設模式。行尾連字號落在摘錄內的 70 餘處都是斷字，只有 audio-recorded、AI-generated 是原有連字號且已正確保留。
+- **撰稿者疑問**：（1）問卷 10 人、參與者 11 人，照寫無誤；（2）「原文未述對照組」判定不忠實於原文用語，已刪（見修正 1）；（3）「大學所在的瑞典中部地區」照原文，未寫校名，妥當；（4）研究問題二的發展描述（Results「How the TPD Model Supported…」、表 4、討論對 RQ2 的段落）是課程期間的成長敘述，屬單組介入成效，依本期四欄計畫與管理者「介入成效不寫」不寫入，interpretation_note 已載明未轉述，維持。
+- **重新編號**：以程式核對：ID 01–33 連續不重複；精選 01–05、其他短訊 06–23、臺灣本週動態 24–26、臺灣對照 27–28、對照說明 29–30、導讀 31–33；每則 weekly_source_claim 與上節編號表 22 組一致，其他短訊與臺灣本週動態的 claim_text、首發日、source_url、kind、source_document_type、title_zh、ai_lit_dims 與每日短訊相同；R1 在 02（warning）、R2 在 12（risk_research，D20261117-06），他則無標記；taiwan_sample 在 11；導讀與對照說明 supporting_claim_ids、source_locator、依據快照內編號一致，快照各行等於所引項目現行 claim_text；臺灣對照 related_claim_ids 27→02、28→03。`git merge origin/main` 無新提交；首次公開在 11-13～11-19 而未列入任何週報的每日短訊 0 則。
+- **導讀 32、33**：各句四項事實見於所引項目；32 依據快照 ov32 中 05 一行換為修正後 claim_text，重算雜湊，文字不改；33 無修正。兩則 ai_crosscheck_record 補第二輪紀錄。
