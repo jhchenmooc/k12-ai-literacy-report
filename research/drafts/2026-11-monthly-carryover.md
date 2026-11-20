@@ -9,7 +9,7 @@
 | 序 | 出處 | DOI | 內容 | 判讀 | 首次公開 | 知識庫 | 狀態 |
 |---|---|---|---|---|---|---|---|
 | 1 | J45 Technology, Pedagogy and Education | 10.1080/1475939x.2026.2739390 | 澳洲「AI & ChatGPT for Australian School Leaders and Teachers」臉書社群兩年貼文，K-12 教師與學校領導的 AI 工具使用趨勢（混合方法，KDD 架構） | B（T-TEA），k12，AU | 2026-10-08（Crossref published-online） | KB-2026-0583 | 收 |
-| 2 | J10 Computers in Human Behavior | 10.1016/j.chb.2026.109219 | 加、美、英 K-6 教育者（兩項研究各 101 人）評估提及與不提及生成式 AI 的教學 App | A（T-TEA、T-BAS），k12 | **待核**：Crossref 無 published-online（issued 2027-02，第 187 卷；Crossref 建立日 2026-10-14）；需 ScienceDirect 文章頁「Available online」日期 | KB-2026-0584（首發日未核，discovered_unverified） | 首發日在 09-30～10-31 才收 |
+| 2 | J10 Computers in Human Behavior | 10.1016/j.chb.2026.109219 | 加、美、英 K-6 教育者（兩項研究各 101 人）評估提及與不提及生成式 AI 的教學 App | A（T-TEA、T-BAS），k12 | 2026-10-14（出版者 PDF Available online；管理者 2026-11-20 提供，私人 repo from-literature-session/oct-gap-1120/） | KB-2026-0584 | 收 |
 | 3 | J22 Assessment in Education | 10.1080/0969594x.2026.2738711 | 新加坡 3 所公立中學 29 名 13–14 歲學生，以情境判斷測驗搭配放聲思考訪談，比較對教師、同儕、科技／AI 回饋的情緒調節策略；AI 回饋占情境三分之一，作者結論指出學生處理 AI 回饋幾乎只看資訊面（準確度、有用程度） | B（S-LRN）邊界；質性小樣本、假設情境（管理者 2026-11-20 提供全文，文獻 session 判讀；原依摘要初判 C） | 2026-10-10（Crossref published-online） | KB-2026-0611 | 收 |
 | 4 | J15 Learning and Instruction | 10.1016/j.learninstruc.2026.102481 | 土耳其鄉村小學 AI 輔助正念課程，準實驗（實驗組 91 人、對照組 54 人、教師 16 人）；ChatGPT、Gemini 由師資生用於備課與探究引導，學生不使用 AI | B（T-TEA）邊界：使用 AI 的是師資生，學生不直接與 AI 互動，課程成效是正念而非 AI 素養；依文獻 session 判讀（管理者提供 PDF） | 2026-10-03（Available online，依文獻 session 讀管理者提供 PDF；Crossref 無 published-online，issued 2027-02） | KB-2026-0585（discovered_unverified：PDF 尚未存入私人 repo，編輯 session 未親見） | 收；介入研究，月報只寫設計，不寫成效 |
 
@@ -55,9 +55,15 @@
 
 不收：Education Sciences 16101631（高中教師僅 18%，屬高教）、IJ STEM Education 00652-9（大學二年級生）。
 
-### 待定
+### 第四批（2026-11-20；管理者提供全文，存私人 repo `from-literature-session/oct-gap-1120/`，文獻 session 判讀，編輯 session 核對首發日）
 
-- 文獻 session 2026-11-20 轉知：10 月號補遺待判全部結案（該 session 計「共收 6 篇、不收 7 篇」）。待判 12 篇（含邊界與缺摘要；文獻 session 2026-11-20 已判 4 篇：收 A7、A8，不收 Education Sciences 16101631 與 IJ STEM Education 00652-9），其餘 8 篇判讀後再補。
+| 序 | 出處 | DOI | 內容 | 判讀 | 首次公開 | 知識庫 |
+|---|---|---|---|---|---|---|
+| A9 | J01 Computers & Education | 10.1016/j.compedu.2026.105764 | 以 TALIS 2024 國中教師資料，分析專業發展的內容與形式如何預測 AI 融入教學（跨國） | A（T-PD、T-TEA） | 2026-10-10（出版者 PDF Available online） | KB-2026-0612 |
+| B7 | J01 Computers & Education | 10.1016/j.compedu.2026.105763 | 概念論文：把生成式 AI 放進中小學線上學習者投入支持框架（ACE） | B（S-LRN） | 2026-10-03（出版者 PDF Available online） | KB-2026-0613 |
+| A10 | J06 JCAL | 10.1002/jcal.70344 | 以色列 7–9 年級 272 人辨識社群媒體視覺假訊息，作者指出 AI 生成圖片最難辨識 | A（S-ETH）邊界 | 2026-10-01（Crossref published-online） | KB-2026-0614 |
+
+第二批待判 12 篇結案（文獻 session 2026-11-20）：收 5 篇（A7、A8、A9、B7、A10），不收 7 篇（Education Sciences 16101631、IJ STEM Education 00652-9、Computers & Education 105768、Education Sciences 16101641、ILE 2743759、HSSC 09289、JCAL 70357；理由見私人 repo README）。連同第一批 J22，10 月號補遺待判全部結案。
 
 ## 撰寫注意（第二批）
 
