@@ -1,0 +1,55 @@
+Journal of Children and Media (Taylor & Francis) | 2026-11-18 | Using without understanding: AI literacy and trust in large language models among elementary school children in Germany | https://doi.org/10.1080/17482798.2026.2764275 | Full text: publisher article page (open access) printed to an image PDF (90 pp., text on PDF pp. 28–62, no text layer; SHA-256 5f92715c75740441035f3af7f915f8a92b5f124fb5a400b449d5f23b25b48b9f); automated requests to the publisher returned HTTP 403 and were not bypassed; read 2026-11-20 | "Received 19 Jan 2026, Accepted 16 Oct 2026, Published online: 18 Nov 2026" (same as daily item D20261119-06)
+Journal of Children and Media, Research Article, Open access; authors Antonia Rosada, Nicole Krämer (University of Duisburg-Essen)
+Text normalisation: passages transcribed from the page images (rendered at 110 dpi) and re-read against the images; line breaks joined; italics not marked; lines partly hidden by the printed page header are not quoted. Page numbers are PDF pages.
+Passage (Abstract (PDF p. 29; line before masked)):
+children aged 8-10 years participated in semi-structured interviews combined with an interaction task using a customized LLM. Children used the system competently, yet their conceptual understanding remained fragmented.
+Passage (Abstract (PDF p. 29)):
+Their reasoning was frequently anthropomorphic, reinforced by social cues such as natural language use and emojis.
+Passage (Abstract (PDF p. 29)):
+Children explained the system’s errors through human fallibility, but most considered algorithmic bias impossible, treating prejudice as a uniquely human trait.
+Passage (Design and procedure, paragraph 1 (PDF p. 37)):
+Semi-structured interviews were used to explore children’s thoughts and experiences with AI, providing direct engagement and rich, first-hand data.
+Passage (Design and procedure, paragraph 1 (PDF p. 37)):
+For this purpose, a customized version of ChatGPT (model GPT-4, OpenAI) was created.
+Passage (Design and procedure, paragraph 1 (PDF p. 37)):
+The system was additionally assigned the human name Lana, an intentional design decision to make it accessible to the children and to foster a natural interaction, analogous to commercial conversational systems children encounter in everyday life.
+Passage (Design and procedure, paragraph 1 (PDF p. 37)):
+The guide consisted of 55 mainly open-ended questions.
+Passage (Design and procedure, paragraph 2 (PDF p. 37)):
+Additionally, the interview guide included eight closed-ended items answered on a 5-point scale
+Passage (Design and procedure, paragraph 3 (PDF p. 38)):
+Data collection took place between February and June 2025. All sessions were conducted individually in a familiar school room to ensure a comfortable learning environment. With informed consent from participants and their legal guardians, all sessions were audio-recorded. Sessions lasted 34 minutes on average (range 21–59 minutes).
+Passage (Design and procedure, paragraph 3 (PDF p. 38)):
+children completed a short research task in which they investigated how an animal of their choice lives during winter (see Figure 1).
+Passage (Design and procedure, paragraph 3 (PDF p. 38)):
+To ensure accessibility, children dictated their prompts aloud while the researcher typed.
+Passage (Design and procedure, paragraph 3 (PDF p. 38)):
+The study was preregistered on the Open Science Framework (OSF; https://doi.org/10.17605/OSF.IO/RVSYZ), where supplementary materials are also available
+Passage (Sample, paragraph 1 (PDF p. 39)):
+Thirty children aged 8–10 years (M = 9.03, SD = 0.77) participated in the study.
+Passage (Sample, paragraph 2 (PDF p. 39)):
+Participants were recruited in collaboration with an elementary school in an urban area in western Germany. The school provides regular computer instruction, but AI was not part of the curriculum, so children’s prior experience with AI stemmed from outside of school. The final sample included 15 girls and 15 boys from four third- and fourth-grade classes.
+Passage (Data analysis (PDF p. 40; first visible line after a masked line)):
+were analyzed using structured qualitative content analysis according to Mayring (2015).
+Passage (Data analysis (PDF p. 40)):
+Quantitative items from the interviews (5-point Likert scales) were evaluated descriptively to complement the qualitative findings.
+Passage (Results, Abstraction as a barrier to risk perception (PDF p. 42)):
+Most children (n = 23) were aware that the LLM could produce incorrect information.
+Passage (Results, Abstraction as a barrier to risk perception (PDF p. 43)):
+In sharp contrast to their awareness of the other risks, most children (n = 24) could not imagine that the LLM might be biased.
+Passage (Results, Perceived intentionality as a heuristic for trust calibration (PDF p. 44)):
+Perceived benevolence was highest across all dimensions.
+Passage (Results, Perceived intentionality as a heuristic for trust calibration (PDF p. 44)):
+Trust in integrity showed the greatest variation.
+Passage (Results, Perceived intentionality as a heuristic for trust calibration (PDF p. 44)):
+trust in truthfulness was high, whereas trust in confidentiality was substantially lower.
+Passage (Limitations and future work, paragraph 1 (PDF p. 49; first visible line after the page header)):
+and structure of reasoning within the sample studied rather than population-level distributions. Quantitative studies with larger, more diverse samples are needed to examine how the patterns identified here are distributed among children in this age
+Passage (Limitations and future work, paragraph 2 (PDF p. 49)):
+Because no data on the children’s ethnocultural or socioeconomic backgrounds were collected, the findings cannot contextualize differential access to AI-related experiences and adult guidance.
+Passage (Limitations and future work, paragraph 3 (PDF p. 49)):
+Although the interview guide was piloted and no signs of fatigue were observed, an influence of interview length on individual responses cannot be ruled out. In addition, the single information-seeking task foregrounded the system’s informational ability, so judgments of benevolence and integrity may be context-dependent and should be examined across varied interaction scenarios.
+Passage (Limitations and future work, paragraph 4 (PDF p. 49)):
+A further limitation concerns the design of the study system. The LLM was deliberately given a human name to foster a natural interaction. This choice may have contributed to the anthropomorphic responses observed, and, within the present design, its specific effect cannot be isolated from that of other social cues, such as natural language use and emojis.
+Original excerpt (passages above in order, joined by " … "):
+children aged 8-10 years participated in semi-structured interviews combined with an interaction task using a customized LLM. Children used the system competently, yet their conceptual understanding remained fragmented. … Their reasoning was frequently anthropomorphic, reinforced by social cues such as natural language use and emojis. … Children explained the system’s errors through human fallibility, but most considered algorithmic bias impossible, treating prejudice as a uniquely human trait. … Semi-structured interviews were used to explore children’s thoughts and experiences with AI, providing direct engagement and rich, first-hand data. … For this purpose, a customized version of ChatGPT (model GPT-4, OpenAI) was created. … The system was additionally assigned the human name Lana, an intentional design decision to make it accessible to the children and to foster a natural interaction, analogous to commercial conversational systems children encounter in everyday life. … The guide consisted of 55 mainly open-ended questions. … Additionally, the interview guide included eight closed-ended items answered on a 5-point scale … Data collection took place between February and June 2025. All sessions were conducted individually in a familiar school room to ensure a comfortable learning environment. With informed consent from participants and their legal guardians, all sessions were audio-recorded. Sessions lasted 34 minutes on average (range 21–59 minutes). … children completed a short research task in which they investigated how an animal of their choice lives during winter (see Figure 1). … To ensure accessibility, children dictated their prompts aloud while the researcher typed. … The study was preregistered on the Open Science Framework (OSF; https://doi.org/10.17605/OSF.IO/RVSYZ), where supplementary materials are also available … Thirty children aged 8–10 years (M = 9.03, SD = 0.77) participated in the study. … Participants were recruited in collaboration with an elementary school in an urban area in western Germany. The school provides regular computer instruction, but AI was not part of the curriculum, so children’s prior experience with AI stemmed from outside of school. The final sample included 15 girls and 15 boys from four third- and fourth-grade classes. … were analyzed using structured qualitative content analysis according to Mayring (2015). … Quantitative items from the interviews (5-point Likert scales) were evaluated descriptively to complement the qualitative findings. … Most children (n = 23) were aware that the LLM could produce incorrect information. … In sharp contrast to their awareness of the other risks, most children (n = 24) could not imagine that the LLM might be biased. … Perceived benevolence was highest across all dimensions. … Trust in integrity showed the greatest variation. … trust in truthfulness was high, whereas trust in confidentiality was substantially lower. … and structure of reasoning within the sample studied rather than population-level distributions. Quantitative studies with larger, more diverse samples are needed to examine how the patterns identified here are distributed among children in this age … Because no data on the children’s ethnocultural or socioeconomic backgrounds were collected, the findings cannot contextualize differential access to AI-related experiences and adult guidance. … Although the interview guide was piloted and no signs of fatigue were observed, an influence of interview length on individual responses cannot be ruled out. In addition, the single information-seeking task foregrounded the system’s informational ability, so judgments of benevolence and integrity may be context-dependent and should be examined across varied interaction scenarios. … A further limitation concerns the design of the study system. The LLM was deliberately given a human name to foster a natural interaction. This choice may have contributed to the anthropomorphic responses observed, and, within the present design, its specific effect cannot be isolated from that of other social cues, such as natural language use and emojis.
