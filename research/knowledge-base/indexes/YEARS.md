@@ -1916,6 +1916,8 @@
 | KB-2026-0606 — [Socioeconomic Status and AI Use for Schoolwork in Relation to Adolescents’ School Belonging and Loneliness in Four Chinese Regions](https://doi.org/10.3390/bs16112202) | journal_article | 2026-11-19 | bibliographic_checked |
 | KB-2026-0607 — [This study examines the factors associated with Chinese secondary school teachers’ intentions to teach artificial intelligence using structural equation modeling and machine learning](https://doi.org/10.1186/s40359-026-05791-w) | journal_article | 2026-11-19 | bibliographic_checked |
 | KB-2026-0608 — [Examining Educators’ Interpretations of Cognitive Engagement in AI-Supported Instruction](https://doi.org/10.1177/01626434261509962) | journal_article | 2026-11-19 | bibliographic_checked |
+| KB-2026-0609 — [Phonetic research as an innovative model of interdisciplinary STEAM education: from acoustic analysis to teaching practice](https://doi.org/10.3389/feduc.2026.1913880) | journal_article | 2026-10-07 | bibliographic_checked |
+| KB-2026-0610 — [Digital moral agency in school ethics curricula: from responsible use to epistemic and socio-technical judgement](https://doi.org/10.3389/feduc.2026.1996379) | journal_article | 2026-10-14 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
