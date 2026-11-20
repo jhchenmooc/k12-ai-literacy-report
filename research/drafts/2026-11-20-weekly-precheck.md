@@ -273,3 +273,18 @@ R3（建議由管理者決定）：
 - **閘門修正**：`validate-publication` 首次執行即通過，本輪無閘門修正。撰稿時預先避開：W1 不寫「強制」，verbindlich 譯「具約束力」並註明是建議中擬建立的框架；W4 precludes causal inference 譯「不能作因果推論」，未用「因果效果」；導讀與對照說明避開「建議」「較少」「臺灣」（導讀）等禁字，以程式比對 WEEKLY_OVERVIEW_BANNED、WEEKLY_TW_NOTE_BANNED、ADVICE_PATTERN 無命中。
 - **兩輪對照**：每則 `ai_crosscheck_record` 寫「第一輪撰寫」與「第二輪待隔離子代理對照」。閘門要求 medium 風險 `ai_crosscheck_passes` 為 2，照上期做法先填 2，並在紀錄寫明第二輪將由未參與撰稿的隔離子代理覆核原文後更新；其他短訊與臺灣本週動態沿用每日短訊（已有兩輪紀錄）。
 - **不確定之處**：W3 摘錄由影像轉錄，無法程式比對，請第二輪以影像逐字複核；W3 摘要第 5 句（隱私較謹慎）與限制第 1 段前半被頁首遮蔽，未轉述。W1「十項」以 PDF 中 10 個「Handlungsempfehlung:」段核對。W4 空缺待管理者決定。
+
+### 第二輪隔離對照（2026-11-20）
+
+隔離子代理（未參與撰稿）逐項對照原文：W1 重新讀取 KMK 新聞稿頁與建議文件 PDF（雜湊與快照所記相同）；W2 與 Ofqual 演講重新讀取 GOV.UK Content API；W3 讀私人 repo 所存圖像 PDF，以 pdftoppm 轉 100 dpi 影像逐字對照；W4 讀私人 repo 所存出版者 PDF；TC1、TC2 自 pads 原網址重新下載（雜湊皆與快照所記相同）。快照摘錄以 python3 -I 比對原文（W3 以影像比對），全部逐字相符，位置標示無誤。
+
+- **W1**：能力框架一條原文 kritische Reflexion digitaler, insbesondere KI-gesteuerter Arbeits- und Geschäftsprozesse，原稿「對 AI 驅動的工作與業務流程的批判反思」漏「數位」，改為「對數位、尤其是 AI 驅動的工作與業務流程的批判反思」。其餘（十項建議、11-16 提出、09-29 決議、11-12 同意、試點計畫、裝置與 AI 取用、基礎設施、認證與審查機制）無誤。「以中等職業教育為主，亦含部分中學後進修學校」是對 berufliche Schulen 的背景說明，原文未述，沿用每日短訊 D20261119-03 的範圍說明，未改，請管理者留意。
+- **W2**：無修正。母頁更新說明另撤下 3 月版高階主管簡報包，claim_text 只寫撤下教案，屬省略，未改。
+- **W3**：claim_text 無修正（影像逐字對照摘要、方法、樣本、分析、結果三段、限制四段）。scope_limitation「便利招募」原文未述，改為「經與該校合作招募」。摘要隱私一句與限制第 1 段開頭確被頁首遮蔽；因遮蔽行數無法確定，「摘要第 5 句」的句序無法核對，不影響內容。
+- **W4**：無修正。
+- **W23 Ofqual 演講**：原文 using AI to try to cut corners，「以 AI 在課程作業中走捷徑」改為「以 AI 試圖在課程作業中走捷徑」。「（演講，非政策）」標示、宣導活動與設計修改提案兩項事實無誤；Schools and Academies Show 2026 見於 Content API description。
+- **臺灣對照 TC1、TC2**：無修正（條款、頁碼、核定日與字號、封面年月與摘錄逐字相符）。
+- **對照說明 29、30**：無修正（124、111 字，只並列事實）。
+- **導讀**：31、32 文字無修正；33 原稿把精選外的 W15 寫成「青少年 AI 科技使用與數位風險暴露及 AI 素養的關聯」，漏了結果變項生活滿意度，改為「青少年 AI 科技使用與生活滿意度的關聯（含數位風險暴露與 AI 素養的角色）」（114 字）。ov31 依據快照隨 W1、W23 claim_text 修正同步更新並重算雜湊；tn29、tn30、ov32、ov33 所引項目 claim_text 未變，不需更新。
+- **反思標記**：R1 W02 caution_excerpt 106 字元，逐字見於快照與 Content API 本文。位置判斷：教案 HTML 的第一個內容區塊是四列表格（Subject、Year group、Duration、Topic/ focus），之後才是 Learning objectives；摘錄在這個開頭區塊內，「首段（教案開頭表格的 Topic/ focus 欄）」符合「標題／摘要／首段」規則，括號也如實說明是表格欄位而非段落，判定妥當，維持。譯文忠實，原文與譯文皆無義務、因果字詞；無句末標點，caution_partial 正確。R2 W11 標題摘錄 105 字元，逐字見於每日短訊快照首行，譯文沿用 title_zh，無修正（ai_crosscheck_record 沿用每日短訊，比照上期 W19 未改）。
+- 受審各則 `ai_crosscheck_record` 已改寫為「第一輪撰寫（同 session 自核）」加「第二輪隔離子代理逐項對照原文（2026-11-20）」與修正項目，passes 維持 2，結論 concordant。
