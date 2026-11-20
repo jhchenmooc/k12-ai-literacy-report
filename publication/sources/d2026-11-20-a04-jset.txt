@@ -1,0 +1,4 @@
+Journal of Special Education Technology (Sage) | 2026-11-19 | Examining Educators’ Interpretations of Cognitive Engagement in AI-Supported Instruction | https://doi.org/10.1177/01626434261509962 | Crossref works record read 2026-11-20; publisher page returned HTTP 403 to automated requests (not bypassed); first-disclosure date per Crossref published-online; bibliographic facts only
+Crossref: published-online 2026-11-19; record created 2026-11-19; Journal of Special Education Technology (ISSN 0162-6434, 2381-3121); authors Seung, Basham, Joo
+Crossref abstract sentence 3 (from the publisher-deposited Crossref abstract; not read from the publisher page):
+A total of 104 educators evaluated four vignette-based scenarios and rated each across all ISAR dimensions.
