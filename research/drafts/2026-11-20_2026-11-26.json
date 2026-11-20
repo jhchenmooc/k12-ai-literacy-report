@@ -79,6 +79,74 @@
       "doi": "10.3390/bs16112202",
       "screening_note": "Verified 2026-11-20 for daily brief 2026-11-20.",
       "verification_completed_on": "2026-11-20"
+    },
+    {
+      "candidate_id": "W2026-11-20-A03",
+      "category": "research",
+      "source_url": "https://doi.org/10.1186/s40359-026-05791-w",
+      "source_title": "This study examines the factors associated with Chinese secondary school teachers’ intentions to teach artificial intelligence using structural equation modeling and machine learning",
+      "source_organization": "BMC Psychology（Springer Nature）",
+      "source_publication_date": "2026-11-19",
+      "source_locator": "出版社文章頁（link.springer.com，2026-11-20 讀取 200）：Published: 19 November 2026；摘要歸屬：Abstract 第 3、4、5 句",
+      "discovered_on": "2026-11-20",
+      "discovery_batch_id": "2026-11-20-daily-r1",
+      "first_disclosed_on": "2026-11-19",
+      "source_updates": [],
+      "original_excerpt": "In response to this research gap, the present study expands the Theory of Planned Behavior (TPB) by integrating AI literacy, facilitating conditions and AI anxiety, thereby developing a more integrative motivational framework for investigating teachers’ intentions to teach AI. … Using cross-sectional survey data from 218 secondary school information technology teachers, covariance-based structural equation modeling was employed to test the hypothesized relationships. … Machine learning classification analyses were additionally conducted to examine the predictive performance of the theoretically relevant variables.",
+      "source_checked": true,
+      "claim_text": "來源機構：BMC Psychology（Springer Nature）；資料標題：This study examines the factors associated with Chinese secondary school teachers’ intentions to teach artificial intelligence using structural equation modeling and machine learning；來源刊登日：2026-11-19。作者摘要報告：研究擴展計畫行為理論，納入 AI 素養、促進條件與 AI 焦慮，建構探討教師教授 AI 意願的動機架構；以 218 名中學資訊科技教師的橫斷面調查資料進行共變數結構方程模型分析，並另以機器學習分類分析檢視相關變項的預測表現。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（BMC Psychology，不在監測清單；管理者 2026-11-20 確認單篇例外收錄）；218 名中學資訊科技教師的橫斷面問卷研究，摘要未寫國別（依篇名為中國）；相關分析。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "清單外，管理者 2026-11-20 確認單篇例外收錄；第一輪 2026-11-20 子代理以 Crossref 列出（無摘要）；本 session 讀 Springer 文章頁（200；Published: 19 November 2026），擇摘要第 3、4、5 句撰寫中文摘要與中文譯名，解釋變異量與路徑結果不寫入；第二輪 2026-11-20 由隔離子代理逐句對照文章頁，判定需修改：文章類型更正為 Research、補對象欄、維度只留 T-PD、說明用語修正，修正後一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-PD"
+      ],
+      "ai_lit_note": "中學資訊科技教師教授 AI 的意願及其與 AI 素養、AI 焦慮的關聯，屬教師 AI 素養（A），對應 T-PD「評估教師AI素養以規劃專業增能」（AI 素養為研究變項；作者結論指向專業發展）",
+      "audience": "k12",
+      "doi": "10.1186/s40359-026-05791-w",
+      "screening_note": "Verified 2026-11-20 for daily brief 2026-11-20 (supplement r1).",
+      "verification_completed_on": "2026-11-20"
+    },
+    {
+      "candidate_id": "W2026-11-20-A04",
+      "category": "research",
+      "source_url": "https://doi.org/10.1177/01626434261509962",
+      "source_title": "Examining Educators’ Interpretations of Cognitive Engagement in AI-Supported Instruction",
+      "source_organization": "Journal of Special Education Technology（Sage）",
+      "source_publication_date": "2026-11-19",
+      "source_locator": "首發日依 Crossref published-online（出版社頁讀取失敗：Sage 回 403）：2026-11-19；Crossref 摘要第 3 句（出版者存入，未讀出版社頁）",
+      "discovered_on": "2026-11-20",
+      "discovery_batch_id": "2026-11-20-daily-r1",
+      "first_disclosed_on": "2026-11-19",
+      "source_updates": [],
+      "original_excerpt": "A total of 104 educators evaluated four vignette-based scenarios and rated each across all ISAR dimensions.",
+      "source_checked": true,
+      "claim_text": "來源機構：Journal of Special Education Technology（Sage）；資料標題：Examining Educators’ Interpretations of Cognitive Engagement in AI-Supported Instruction；來源刊登日：2026-11-19。",
+      "claim_class": "bibliographic",
+      "risk_tier": "low",
+      "scope_limitation": "同儕審查期刊論文（Journal of Special Education Technology，不在監測清單，非 J37；管理者 2026-11-20 確認單篇例外收錄）；Crossref 摘要所述為 104 名教育工作者以 ISAR 模型評估四個 AI 輔助教學情境，學段未限定，屬其他教育關係人（知識庫依先例標一般學段）；本則只為書目事實。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "清單外（非監測清單 J37），管理者 2026-11-20 確認單篇例外收錄；第一輪 2026-11-20 子代理以 Crossref 列出（Sage 403，未繞過）；本 session 讀 Crossref 紀錄（published-online 2026-11-19）並取出版者存入的摘要第 3 句；第二輪 2026-11-20 由隔離子代理對照 Crossref 紀錄，判定需修改：補摘要句序號、範圍說明註記學段標示，修正後一致。只發書目。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-TEA"
+      ],
+      "ai_lit_note": "對象為其他教育關係人：教育工作者對 AI 輔助教學情境中學生認知投入的判斷，屬教師 AI 素養（A；依篇名與 Crossref 摘要判讀），對應 T-TEA「評估AI工具輔助教學的適用性」",
+      "audience": "other_stakeholders",
+      "doi": "10.1177/01626434261509962",
+      "screening_note": "Verified 2026-11-20 for daily brief 2026-11-20 (supplement r1).",
+      "verification_completed_on": "2026-11-20"
     }
   ],
   "search_runs": [
@@ -101,6 +169,22 @@
         {
           "group": "taiwan-central",
           "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (115-11-19 issue), Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 2,
+      "added": 2,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-20-daily-r1",
+      "searched_on": "2026-11-20",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "manager-confirmed",
+          "query": "Manager 2026-11-20 confirmed single-item exceptions: BMC Psychology 10.1186/s40359-026-05791-w (Springer page read), Journal of Special Education Technology 10.1177/01626434261509962 (Crossref)",
           "status": "ok"
         }
       ],
