@@ -1,0 +1,41 @@
+Education Sciences (MDPI) | 2026-11-16 | Development and Initial Validation of the GenAI Stress Scale for Chinese K-12 Teachers (T-GenAISS) | https://doi.org/10.3390/educsci16111959 | Full text: publisher PDF (31 pp., SHA-256 175aa9ec2ac0b96bcbd591fab558978c74f2d0e9b4a6d806800851e459547c4f; automated requests returned HTTP 403, not bypassed); read 2026-11-20 | "Received: 6 October 2026 Revised: 9 November 2026 Accepted: 11 November 2026 Published: 16 November 2026" (same as daily item D20261117-07)
+Educ. Sci. 2026, 16, 1959; authors Guoqing Zhao, Lili Li, Zixin Fang (Beijing Normal University), Taotao Long (Central China Normal University)
+Text normalisation: pdftotext output; line-end hyphens before a lowercase letter rejoined, line breaks joined into single spaces; no other changes ("GenAIenhanced" as extracted). Page numbers are PDF pages ("n of 31").
+Passage (Abstract, sentence 3 (PDF p. 1)):
+This study reports the development and initial validation of a GenAI stress scale tailored to Chinese K-12 teachers (T-GenAISS).
+Passage (Abstract, sentence 5 (PDF p. 1)):
+Exploratory analysis on a randomly split half of 612 teachers (174 pre-service and 438 in-service) affiliated with an Alliance of Thinking Schools professional learning community (n = 306) suggested seven dimensions: Privacy Violation, Job Replacement, Professional Development, Against Ethics, Lack of Transparency, Technological Dependence, and Bias Behavior.
+Passage (3.1 Research Context and Participants, sentences 1–2 (PDF p. 4)):
+Data were collected from the Alliance of Thinking Schools (ATS) (Long et al., 2021; Zhao et al., 2019, 2023), a professional learning community on teaching thinking for K-12 teachers in China, from March 2025 to June 2025. Since 2023, GenAI tools and GenAIenhanced teaching of thinking were included in the ATS teacher training.
+Passage (3.1, sentences 3–5 (PDF p. 4)):
+Purposive sampling was used. An online questionnaire including the consent form and questionnaire link was sent to potential participants, who were ATS members and had participated in the AI training, via WeChat group. A total of 661 teachers completed the questionnaire anonymously and voluntarily.
+Passage (3.1, sentences 6–7 (PDF p. 4)):
+Forty-nine responses were eliminated for a response time of less than 90 s or more than 900 s. In total, 612 valid responses were retained, yielding a valid response rate of 92.6%.
+Passage (3.1, sample features (PDF p. 5)):
+The sample is therefore best described as ATS-affiliated pre-service and in-service teachers rather than as a representative sample of Chinese K-12 teachers.
+Passage (3.2 Instrument Development (PDF p. 6)):
+The second part comprised 65 items measuring teachers’ GenAI stress.
+Passage (Abstract, sentence 7 (PDF p. 1)):
+Confirmatory factor analysis on the other half (n = 306) yielded a mixed pattern
+Passage (5. Discussion, paragraph 1 (PDF p. 20)):
+The evidence is therefore described throughout as initial rather than as establishing a validated measure, and the substantive findings reported with the instrument are correspondingly provisional.
+Passage (5. Discussion (PDF p. 21)):
+The finding that Lack of Transparency Stress is the most salient concern
+Passage (5. Discussion (PDF p. 22)):
+indicates that respondents endorsed statements about occupational displacement less strongly than statements about the other six dimensions.
+Passage (7. Limitations and Future Work (PDF p. 23)):
+the confirmatory model required eight post hoc residual covariances and was evaluated on the same data that motivated them, so the reported fit is optimistic and independent replication in a new sample is needed before the structure can be regarded as confirmed
+Passage (7. Limitations and Future Work (PDF p. 23)):
+the Job Replacement dimension fell below the AVE criterion (AVE = 0.462)
+Passage (7. Limitations and Future Work (PDF p. 23)):
+Technological Dependence rests on two items, which limits content breadth and makes the factor weakly identified; content validity was established through formative expert review without computation of I-CVI or S-CVI; and the instrument was translated into Chinese without blind back-translation
+Passage (7. Limitations and Future Work (PDF p. 23)):
+the sample consisted of ATS-affiliated pre-service and in-service teachers who had received GenAI training, which restricts generalizability to Chinese K-12 teachers at large and plausibly biases mean levels
+Passage (7. Limitations and Future Work (PDF p. 23)):
+the analyses were cross-sectional and self-reported, which precludes causal inference and may introduce method variance
+Passage (7. Limitations and Future Work (PDF p. 23)):
+no external criterion variables were measured
+Passage (7. Limitations and Future Work (PDF p. 23)):
+the present data were collected before agentic tools became widely adopted
+Original excerpt (passages above in order, joined by " … "):
+This study reports the development and initial validation of a GenAI stress scale tailored to Chinese K-12 teachers (T-GenAISS). … Exploratory analysis on a randomly split half of 612 teachers (174 pre-service and 438 in-service) affiliated with an Alliance of Thinking Schools professional learning community (n = 306) suggested seven dimensions: Privacy Violation, Job Replacement, Professional Development, Against Ethics, Lack of Transparency, Technological Dependence, and Bias Behavior. … Data were collected from the Alliance of Thinking Schools (ATS) (Long et al., 2021; Zhao et al., 2019, 2023), a professional learning community on teaching thinking for K-12 teachers in China, from March 2025 to June 2025. Since 2023, GenAI tools and GenAIenhanced teaching of thinking were included in the ATS teacher training. … Purposive sampling was used. An online questionnaire including the consent form and questionnaire link was sent to potential participants, who were ATS members and had participated in the AI training, via WeChat group. A total of 661 teachers completed the questionnaire anonymously and voluntarily. … Forty-nine responses were eliminated for a response time of less than 90 s or more than 900 s. In total, 612 valid responses were retained, yielding a valid response rate of 92.6%. … The sample is therefore best described as ATS-affiliated pre-service and in-service teachers rather than as a representative sample of Chinese K-12 teachers. … The second part comprised 65 items measuring teachers’ GenAI stress. … Confirmatory factor analysis on the other half (n = 306) yielded a mixed pattern … The evidence is therefore described throughout as initial rather than as establishing a validated measure, and the substantive findings reported with the instrument are correspondingly provisional. … The finding that Lack of Transparency Stress is the most salient concern … indicates that respondents endorsed statements about occupational displacement less strongly than statements about the other six dimensions. … the confirmatory model required eight post hoc residual covariances and was evaluated on the same data that motivated them, so the reported fit is optimistic and independent replication in a new sample is needed before the structure can be regarded as confirmed … the Job Replacement dimension fell below the AVE criterion (AVE = 0.462) … Technological Dependence rests on two items, which limits content breadth and makes the factor weakly identified; content validity was established through formative expert review without computation of I-CVI or S-CVI; and the instrument was translated into Chinese without blind back-translation … the sample consisted of ATS-affiliated pre-service and in-service teachers who had received GenAI training, which restricts generalizability to Chinese K-12 teachers at large and plausibly biases mean levels … the analyses were cross-sectional and self-reported, which precludes causal inference and may introduce method variance … no external criterion variables were measured … the present data were collected before agentic tools became widely adopted

@@ -1,0 +1,10 @@
+Ofqual (UK, England) | 2026-11-18 | Behind the grades: how can you trust your outcomes? | https://www.gov.uk/government/speeches/behind-the-grades-how-can-you-trust-your-outcomes | GOV.UK Content API read 2026-11-20 (HTTP 200); document_type speech; first_published_at 2026-11-18T13:05:56+00:00; delivered_on 2026-11-18T11:55:00+00:00; location NEC, Birmingham; speech_type_explanation: Transcript of the speech, exactly as it was delivered; description: A speech by Sir Ian Bauckham, Chief Regulator at Ofqual, delivered to the Schools and Academies Show 2026.; the title in the API ends with a narrow no-break space, dropped here
+Text normalisation: HTML body tags removed, one paragraph per passage; no other changes. The polling percentages quoted in the speech are not used.
+Passage (speech, AI section):
+So that’s why Ofqual is today launching an important communications campaign to schools and colleges, teachers and students right across England.
+Passage (speech, AI section, next sentence):
+To remind everyone that using AI to try to cut corners in coursework or gain higher marks that are not really deserved will not be tolerated.
+Passage (speech, AI section, after the Teacher Tapp polling):
+So we will therefore soon bring forward proposals for design changes to how the most vulnerable qualifications are assessed.
+Original excerpt (passages above in order, joined by " … "):
+So that’s why Ofqual is today launching an important communications campaign to schools and colleges, teachers and students right across England. … To remind everyone that using AI to try to cut corners in coursework or gain higher marks that are not really deserved will not be tolerated. … So we will therefore soon bring forward proposals for design changes to how the most vulnerable qualifications are assessed.

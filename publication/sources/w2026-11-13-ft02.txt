@@ -1,0 +1,36 @@
+Ofqual (UK, England) | 2026-11-18 | Lesson plan: AI and your coursework (accessible) | https://www.gov.uk/government/publications/ai-in-coursework-resources-for-schools/lesson-plan-ai-and-your-coursework-accessible--2 | Full text: GOV.UK Content API read 2026-11-20 (HTTP 200): html_publication, first_published_at 2026-11-18T09:30:03+00:00; national_applicability England only; parent page "AI in coursework: resources for schools" (guidance, first published 2026-03-09T09:30:00Z; change note 2026-11-18: "Updated to add a poster, an assembly presentation, a lesson plan for teachers, and a newsletter messaging pack for schools. Updated to remove a lesson plan and senior leadership briefing pack published in March 2026.")
+Text normalisation: HTML body tags removed, one table cell, list item or paragraph per passage; no other changes. The lesson plan opens with a four-row table (Subject, Year group, Duration, Topic/ focus) before the Learning objectives.
+Passage (lesson plan opening table: Subject):
+PSHE/ tutor time, or subject lesson with a non-exam assessment component
+Passage (opening table: Year group):
+Year 10 to 13, students undertaking GCSE or A Level coursework (non-exam assessment)
+Passage (opening table: Duration):
+50 minutes, adaptable to a form period or subject lesson
+Passage (opening table: Topic/ focus):
+The risks of using AI in coursework and the value of building the underlying skills and knowledge yourself
+Passage (Learning objectives 1):
+know that using AI to produce any part of their coursework puts their whole qualification at risk, not just the coursework mark
+Passage (Learning objectives 2):
+understand that even if AI use isn’t detected, it still costs them the understanding that coursework is meant to build
+Passage (Learning objectives 3):
+be able to explain why a grade only has value if it reflects what they can actually do
+Passage (Learning objectives 4):
+know what to do if they’re tempted to use AI, or have already used it, before submission
+Passage (Lesson outline 1, question to students):
+Ask students: “What do you think you’d actually lose if you used AI to do your coursework for you?”
+Passage (Lesson outline 2, The double risk):
+Using AI to do coursework is risky in two ways:
+Passage (Lesson outline 2, Talking about pushback):
+Students often raise the same handful of arguments.
+Passage (Lesson outline 3, key takeaway 3):
+if you’re stuck or unsure how to approach something, talk to your teacher, that’s what they’re there for
+Passage (Lesson outline 3, key takeaway 4):
+if you’ve already used AI in your coursework, speak to your teacher now. It’s easier before submission than a malpractice investigation afterwards
+Passage (Lesson outline 4, heading):
+4. Possible activity - Can you trust the information? (20 minutes)
+Passage (Lesson outline 4, Teacher notes):
+The key learning point is that information can appear convincing even when it contains errors.
+Passage (Lesson outline 2, Why it matters, point 2, sentence 3):
+This research was conducted overseas and in a different education system, so it isn’t a direct prediction for any individual student, but the pattern it describes, a quiet build-up of lost understanding, is the same risk this lesson is asking students to think about.
+Original excerpt (passages above in order, joined by " … "):
+PSHE/ tutor time, or subject lesson with a non-exam assessment component … Year 10 to 13, students undertaking GCSE or A Level coursework (non-exam assessment) … 50 minutes, adaptable to a form period or subject lesson … The risks of using AI in coursework and the value of building the underlying skills and knowledge yourself … know that using AI to produce any part of their coursework puts their whole qualification at risk, not just the coursework mark … understand that even if AI use isn’t detected, it still costs them the understanding that coursework is meant to build … be able to explain why a grade only has value if it reflects what they can actually do … know what to do if they’re tempted to use AI, or have already used it, before submission … Ask students: “What do you think you’d actually lose if you used AI to do your coursework for you?” … Using AI to do coursework is risky in two ways: … Students often raise the same handful of arguments. … if you’re stuck or unsure how to approach something, talk to your teacher, that’s what they’re there for … if you’ve already used AI in your coursework, speak to your teacher now. It’s easier before submission than a malpractice investigation afterwards … 4. Possible activity - Can you trust the information? (20 minutes) … The key learning point is that information can appear convincing even when it contains errors. … This research was conducted overseas and in a different education system, so it isn’t a direct prediction for any individual student, but the pattern it describes, a quiet build-up of lost understanding, is the same risk this lesson is asking students to think about.
