@@ -181,6 +181,41 @@
       "audience": "k12",
       "screening_note": "Verified 2026-11-21 for daily brief 2026-11-21.",
       "verification_completed_on": "2026-11-21"
+    },
+    {
+      "candidate_id": "W2026-11-20-A06",
+      "category": "research",
+      "source_url": "https://doi.org/10.3389/fpsyg.2026.1973288",
+      "source_title": "AI leadership readiness profiles and competence gaps among school leaders during digital transformation: a comparative study of China and Kazakhstan",
+      "source_organization": "Frontiers in Psychology（Frontiers）",
+      "source_publication_date": "2026-11-20",
+      "source_locator": "出版社文章頁（frontiersin.org，2026-11-21 讀取 200）：Published 20 November 2026（citation_online_date 10/30 為接受日，不採用）；摘要歸屬：Introduction 第 2 句、Methods 第 1 句、Discussion 第 1、3 句",
+      "discovered_on": "2026-11-21",
+      "discovery_batch_id": "2026-11-21-daily-r1",
+      "first_disclosed_on": "2026-11-20",
+      "source_updates": [],
+      "original_excerpt": "This cross-national study examined AI leadership readiness in China and Kazakhstan, focusing on scenario understanding, instructional value, risk concern, digital leadership self-efficacy, organizational support, leadership support for adoption, implementation readiness, and competence gaps. … We analyzed a cross-national quantitative survey of 763 school leaders (China n = 389; Kazakhstan n = 374) using reliability analysis, measurement invariance testing, latent profile analysis, standardized recursive path modeling, and importance–competence gap analysis. … Positive instructional appraisals frequently coexisted with moderate school-level preparation. … Ethics and risk governance, teacher development, and content quality audit emerged as the leading priorities for professional learning.",
+      "source_checked": true,
+      "claim_text": "來源機構：Frontiers in Psychology（Frontiers）；資料標題：AI leadership readiness profiles and competence gaps among school leaders during digital transformation: a comparative study of China and Kazakhstan；來源刊登日：2026-11-20。作者摘要報告：研究探討中國與哈薩克學校領導者的 AI 領導準備度，涵蓋情境理解、教學價值、風險關切、數位領導自我效能、組織支持、領導層對導入的支持、實施準備度與能力落差；以 763 名學校領導者（中國 389、哈薩克 374）的跨國問卷進行分析；作者指出，正面的教學評價常與中等的學校層級準備並存，倫理與風險治理、教師發展與內容品質稽核是專業學習的優先項目。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Frontiers in Psychology，不在監測清單；管理者 2026-11-21 確認單篇例外收錄）；中國與哈薩克 763 名中小學學校領導者（校長或副校長、職能行政人員、學科或年級主管、教學或教研主管）的橫斷面自陳問卷，表 1 學段小學 31.2%、國中 35.0%、高中 33.8%；開放網絡招募，無抽樣框。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "清單外，管理者 2026-11-21 確認單篇例外收錄；第一輪 2026-11-21 子代理以 Crossref 關鍵詞查詢列出；本 session 讀出版社文章頁（200；Published 20 November 2026；表 1 學段小學、國中、高中各約三分之一），擇 Introduction 第 2 句、Methods 第 1 句、Discussion 第 1、3 句撰寫中文摘要與中文譯名，統計值與跨國差異不寫入；第二輪 2026-11-21 由隔離子代理逐句對照出版社頁，判定需修改，依建議書目行第二作者補全為 Kozhamkulova Nazgul Seifullinqyzy、「領導支持」改「領導層對導入的支持」、解讀說明與摘要對齊、領導角色譯名調整，修正後一致。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-BAS",
+        "T-PD"
+      ],
+      "ai_lit_note": "對象為其他教育關係人：中小學學校領導者在學校 AI 導入中的準備度與專業學習需求，屬 AI 素養（A），對應 T-BAS「參與AI校園治理部署與決策」、T-PD「評估教師AI素養以規劃專業增能」",
+      "audience": "other_stakeholders",
+      "doi": "10.3389/fpsyg.2026.1973288",
+      "screening_note": "Verified 2026-11-21 for daily brief 2026-11-21 (supplement).",
+      "verification_completed_on": "2026-11-21"
     }
   ],
   "search_runs": [
@@ -245,6 +280,22 @@
         {
           "group": "taiwan-central",
           "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data, Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-21-daily-r1",
+      "searched_on": "2026-11-21",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "manager-supplied",
+          "query": "Publisher article page read 2026-11-21 (Frontiers in Psychology 10.3389/fpsyg.2026.1973288, HTTP 200); off-list single-item exception confirmed by the manager 2026-11-21",
           "status": "ok"
         }
       ],
