@@ -147,6 +147,40 @@
       "doi": "10.1177/01626434261509962",
       "screening_note": "Verified 2026-11-20 for daily brief 2026-11-20 (supplement r1).",
       "verification_completed_on": "2026-11-20"
+    },
+    {
+      "candidate_id": "W2026-11-20-A05",
+      "category": "news_policy",
+      "source_url": "https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107729&lev=0&m=020402&s=moe",
+      "source_title": "MS·Google·AWS와 손잡고 교사의 인공지능(AI)·융합교육 역량을 키운다",
+      "source_organization": "韓國教育部",
+      "source_publication_date": "2026-11-20",
+      "source_locator": "韓國教育部 보도자료頁（2026-11-21 讀取 200）：單篇頁日期 2026-11-20，附件 hwpx「배포 2026. 11. 20.(금) 08:00」；摘要歸屬：本文第 1 至 4 段（各段單句）",
+      "discovered_on": "2026-11-21",
+      "discovery_batch_id": "2026-11-21-daily-1",
+      "first_disclosed_on": "2026-11-20",
+      "source_updates": [],
+      "original_excerpt": "교육부(장관 최교진)와 한국과학창의재단(이사장 정우성)은 11월 21일(토)부터 12월 5일(토)까지 마이크로소프트(MS)·구글(Google)·아마존웹서비스(AWS) 사옥에서 「인공지능(AI)·융합교육 교사연구회 역량강화 공동연수」를 개최한다. … 이번 공동연수는 세계적인 기업의 인공지능(AI) 기술을 학교 수업과 연계하여, ‘인공지능(AI)·융합교육 교사연구회’ 참여 교사가 인공지능(AI) 수업 설계·운영 역량을 강화할 수 있도록 지원하기 위해 마련되었다. … 참가 대상은 2026년 인공지능(AI)·융합교육 교사연구회 소속 교사 중 참가 희망자와 시도교육청의 인공지능(AI)·융합교육 담당자 등 약 240명이다. … 교사들은 기업별 사옥을 방문해 현직 인공지능(AI) 전문가들과 함께 첨단 인공지능(AI) 도구를 활용해 보고, 교실 수업에 적용할 수 있는 교수학습 자료를 제작하는 등 실습형 과정에 참여한다.",
+      "source_checked": true,
+      "claim_text": "來源機構：韓國教育部；資料標題：MS·Google·AWS와 손잡고 교사의 인공지능(AI)·융합교육 역량을 키운다；來源刊登日：2026-11-20。官方文件表示：韓國教育部與韓國科學創意財團於 11 月 21 日至 12 月 5 日在微軟、Google、AWS 大樓舉辦 AI・融合教育教師研究會能力強化聯合研習，結合企業 AI 技術支持教師強化 AI 教學設計與運作能力；對象為 2026 年研究會中有意參加的教師及各市、道教育主管單位承辦人等約 240 人，教師將與現職 AI 專家試用先進 AI 工具並製作課堂教材。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "韓國中央教育主管機關的新聞稿（研習活動公告），對象為「AI・融合教育教師研究會」所屬中小學教師與地方教育主管單位承辦人員，非全體教師；研習於微軟、Google、AWS 公司據點進行，課程使用各公司平台，附件所列（草案，註明可能變更）Google 場次另含該公司教育者認證考試說明；研習尚未完成，成效未知。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "第一輪 2026-11-21 國際政策子代理讀韓國教育部 보도자료頁（200；單篇頁日期 2026-11-20）與附件 hwpx（배포 2026. 11. 20. 08:00）；本 session 擇本文第 1 至 4 段（各段單句）撰寫中文摘要與中文譯名；第二輪 2026-11-21 由隔離子代理逐句對照 hwpx 原文，判定需修改，依建議「課程設計與實施」改「教學設計與運作」，因字數限制目的句改寫為「結合企業 AI 技術」、補「2026 年」「現職」「先進」「試用」、譯名改「攜手」「培養」、範圍說明註明附件為草案；「시도교육청」依閘門冠國名規則譯為「各市、道教育主管單位」。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-PD",
+        "T-TEA"
+      ],
+      "ai_lit_note": "教師生成式 AI 與 AI 工具的實作研習，依 2026-10-09 教師生成式 AI 教學培訓規則屬教師 AI 素養（A），對應 T-PD「評估教師AI素養以規劃專業增能」、T-TEA「設計AI與教學法整合的策略」",
+      "audience": "k12",
+      "screening_note": "Verified 2026-11-21 for daily brief 2026-11-21.",
+      "verification_completed_on": "2026-11-21"
     }
   ],
   "search_runs": [
@@ -190,6 +224,32 @@
       ],
       "discovered": 2,
       "added": 2,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-21-daily-1",
+      "searched_on": "2026-11-21",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-11-20,until-created-date:2026-11-21,type:journal-article, six query.bibliographic sets, proceedings-article set, watchlist-ISSN sets (J01-J53, all ISSNs); pedagogical AI agent sets on Crossref, OpenAlex and arXiv; arXiv API three sets with submittedDate range and cs.CY/cs.HC new listings; alphaXiv; publisher pages one try each (ScienceDirect 403 for stueduc 101707 and compedu 105802, not bypassed)",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK DfE/Ofqual/Ofsted Content API and AI cross-search, Federal Register (ED filter, ED x AI, 'AI literacy'), MEXT (mext_00753 page read), China MOE, HK info.gov.hk 11-20 and 11-21, MOE Korea (107729 hwpx read; 107732, 107745), KICE press and research board, KERIS, UNESCO newsroom, Eurydice; seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data, Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ],
