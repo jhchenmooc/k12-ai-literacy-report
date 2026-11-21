@@ -103,5 +103,55 @@
    "Ethics and risk governance, teacher development, and content quality audit emerged as the leading priorities for professional learning."
   ],
   "attributed_summary": "研究探討中國與哈薩克學校領導者的 AI 領導準備度，涵蓋情境理解、教學價值、風險關切、數位領導自我效能、組織支持、領導層對導入的支持、實施準備度與能力落差；以 763 名學校領導者（中國 389、哈薩克 374）的跨國問卷進行分析；作者指出，正面的教學評價常與中等的學校層級準備並存，倫理與風險治理、教師發展與內容品質稽核是專業學習的優先項目。"
+ },
+ {
+  "claim_id": "D20261121-03",
+  "candidate_id": "W2026-11-20-A07",
+  "kind": "research",
+  "claim_text": "來源機構：Early Education and Development（Taylor & Francis）；資料標題：Understanding Early Childhood Educators’ Acceptance of AI: Integrating AI Literacy into Technology Acceptance Model 3 and Theory of Planned Behavior；來源刊登日：2026-11-16。作者摘要報告：研究整合科技接受模式 3（TAM3）與計畫行為理論（TPB）的部分構念並納入 AI 素養，建構並檢驗解釋幼教工作者使用 AI 行為意圖的模型；以偏最小平方結構方程模型分析 1,696 名中國幼教工作者的問卷資料，模型可解釋行為意圖 89.2% 的變異；作者表示此模型為理解中國幼教工作者在工作中採用 AI 的意圖提供框架。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "V2",
+  "daily_fact_kind": "research_abstract_attributed_summary",
+  "source_document_type": "peer_reviewed_article",
+  "source_title": "Understanding Early Childhood Educators’ Acceptance of AI: Integrating AI Literacy into Technology Acceptance Model 3 and Theory of Planned Behavior",
+  "title_zh": "理解幼教工作者對 AI 的接受度：將 AI 素養整合進科技接受模式 3 與計畫行為理論",
+  "source_organization": "Early Education and Development（Taylor & Francis）",
+  "source_url": "https://doi.org/10.1080/10409289.2026.2762493",
+  "evidence_source_url": "https://doi.org/10.1080/10409289.2026.2762493",
+  "source_locator": "出版者 PDF（管理者 2026-11-21 提供；自動讀取回 403）：Published online: 16 Nov 2026；摘要歸屬：Abstract 第 1、2、6 句（已去除 PDF 邊欄行號）",
+  "source_type": "research_publication",
+  "checked_at": "2026-11-21",
+  "publication_date": "2026-11-16",
+  "first_disclosed_on": "2026-11-16",
+  "evidence_path": "publication/sources/d2026-11-21-a03-eed.txt",
+  "evidence_sha256": "880aeed1c25748b27e278f5ca83f8ccb70a15a2286b819a08744c93ed6450019",
+  "original_excerpt": "This study develops and tests an integrated model that draws on selected constructs from the Technology Acceptance Model 3 (TAM3) and the Theory of Planned Behavior (TPB) and incorporates artificial intelligence (AI) literacy to explain early childhood education (ECE) educators’ behavioral intention to use AI. … Using partial least squares structural equation modeling to analyze survey data from 1,696 Chinese ECE educators (97.9% female), who were recruited primarily from the public sector, the integrated model accounted for 89.2% of the variance in behavioral intention. … Theoretically, the integrated model offers a coherent framework for understanding Chinese ECE educators’ intentions to adopt AI at work.",
+  "interpretation_note": "轉述作者摘要的研究目的、理論架構、樣本、分析方法、模型解釋量與作者對模型用途的說明；各因子的效果大小與方向、AI 焦慮的結果與實務建議不寫入，不寫因果。",
+  "scope_limitation": "同儕審查期刊論文（Early Education and Development，不在監測清單；管理者 2026-11-21 確認單篇例外收錄）；中國大陸幼教工作者的橫斷面自陳問卷，便利與滾雪球抽樣，作者說明樣本不具全國代表性；全文未寫服務幼兒年齡，依 95.2% 任職公立幼教機構推論以 3–6 歲幼兒園為主（推論，非原文所載）。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "decision": "publish",
+  "ai_crosscheck_record": "清單外，管理者 2026-11-21 在本 session 確認單篇例外收錄（文獻 session 先轉知）；第一輪 2026-11-18 子代理以 Crossref 列出（T&F 403，未繞過）；管理者 2026-11-21 提供出版者 PDF（Published online: 16 Nov 2026；存私人 repo），本 session 擇摘要第 1、2、6 句撰寫中文摘要與中文譯名，因子效果不寫入；第二輪 2026-11-21 由隔離子代理逐句對照 PDF，判定通過；學段依 2026-11-12 學前年齡規則標 k12（學前）。同一模型，非獨立審閱。",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-TEA"
+  ],
+  "ai_lit_note": "幼教工作者的 AI 素養與使用 AI 的行為意圖，屬教師 AI 素養（A；邊界案例），對應 T-TEA「整合AI與教學法」",
+  "audience": "k12",
+  "summary_evidence_spans": [
+   "This study develops and tests an integrated model that draws on selected constructs from the Technology Acceptance Model 3 (TAM3) and the Theory of Planned Behavior (TPB) and incorporates artificial intelligence (AI) literacy to explain early childhood education (ECE) educators’ behavioral intention to use AI.",
+   "Using partial least squares structural equation modeling to analyze survey data from 1,696 Chinese ECE educators (97.9% female), who were recruited primarily from the public sector, the integrated model accounted for 89.2% of the variance in behavioral intention.",
+   "Theoretically, the integrated model offers a coherent framework for understanding Chinese ECE educators’ intentions to adopt AI at work."
+  ],
+  "attributed_summary": "研究整合科技接受模式 3（TAM3）與計畫行為理論（TPB）的部分構念並納入 AI 素養，建構並檢驗解釋幼教工作者使用 AI 行為意圖的模型；以偏最小平方結構方程模型分析 1,696 名中國幼教工作者的問卷資料，模型可解釋行為意圖 89.2% 的變異；作者表示此模型為理解中國幼教工作者在工作中採用 AI 的意圖提供框架。"
  }
 ]
