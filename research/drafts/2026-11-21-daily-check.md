@@ -81,3 +81,14 @@
 | 3 | https://doi.org/10.1016/j.stueduc.2026.101707 （J23；生成式 AI 時代的學生評量判斷；無摘要、無線上日） | ScienceDirect 頁 Available online 日期與摘要截圖（確認學段） | 依截圖日期，最遲 11-25 |
 | 4 | https://doi.org/10.1080/10409289.2026.2762493 （清單外 EED） | 全文或方法節截圖（確認是否為 3–6 歲學前教師；若要收） | 11-23 |
 | 5 | https://doi.org/10.1016/j.compedu.2026.105802 （J01；鷹架式 AI 代理的呈現順序；無摘要；本期新列） | ScienceDirect 頁 Available online 日期與摘要截圖（確認學段） | 11-27 |
+
+## 補登（r1，2026-11-21）
+
+管理者 2026-11-21 在本 session 回覆「Frontiers in Psychology 1973288 收」，並提供 JSET 文章頁截圖與四份出版者 PDF（Studies in Educational Evaluation 101707、Computers & Education 105802、Behavioral Sciences 2202、Early Education and Development 2762493；存私人 repo）。
+- **D20261121-02（KB-2026-0616，補登）：** Frontiers in Psychology `10.3389/fpsyg.2026.1973288`（清單外，單篇例外）。出版社頁 200，Published 20 November 2026（citation_online_date 10/30 為接受日，不採用）；中國與哈薩克 763 名中小學學校領導者的橫斷面問卷，表 1 學段小學 31.2%、國中 35.0%、高中 33.8%；作者摘要型，A（T-BAS、T-PD），對象為其他教育關係人。第二輪需修改（第二作者全名、「領導層對導入的支持」、解讀說明與摘要對齊），已修正。
+- **待另案（需管理者「合併」）：** Behavioral Sciences 2202（D20261120-02）與 JSET 1509962（D20261120-04）已備妥作者摘要型升級，第二輪都通過；但兩則已列入已出刊的週報 2026-11-13_11-19（W20261113-20、-22），週報行文字須與每日一致，升級會改動已出刊週報頁，不屬每日自動合併範圍，另開 PR。
+- **不收：**
+  - Studies in Educational Evaluation `10.1016/j.stueduc.2026.101707`（Available online 18 November 2026）：作者自述為 conceptual study，提出歸因與評量判斷對應原則，無實證資料、未限定學段；比照理論文先例（Education Sciences 1953、Frontiers in Education 2043389）不發。
+  - Computers & Education `10.1016/j.compedu.2026.105802`（Available online 19 November 2026）：192 名高教參與者（18–29 歲）的隨機對照實驗，非 K-12，不收。
+  - Early Education and Development `10.1080/10409289.2026.2762493`（Published online 16 Nov 2026）：1,696 名中國幼教工作者，全文只寫「ECE centers」，未寫服務幼兒年齡，無法確認為 3–6 歲學前教師；清單外，依學前年齡規則不收，列觀察。
+- 瀏覽器清單 1–5 項都已處理完畢。

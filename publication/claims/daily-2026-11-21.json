@@ -51,5 +51,57 @@
    "교사들은 기업별 사옥을 방문해 현직 인공지능(AI) 전문가들과 함께 첨단 인공지능(AI) 도구를 활용해 보고, 교실 수업에 적용할 수 있는 교수학습 자료를 제작하는 등 실습형 과정에 참여한다."
   ],
   "attributed_summary": "韓國教育部與韓國科學創意財團於 11 月 21 日至 12 月 5 日在微軟、Google、AWS 大樓舉辦 AI・融合教育教師研究會能力強化聯合研習，結合企業 AI 技術支持教師強化 AI 教學設計與運作能力；對象為 2026 年研究會中有意參加的教師及各市、道教育主管單位承辦人等約 240 人，教師將與現職 AI 專家試用先進 AI 工具並製作課堂教材。"
+ },
+ {
+  "claim_id": "D20261121-02",
+  "candidate_id": "W2026-11-20-A06",
+  "kind": "research",
+  "claim_text": "來源機構：Frontiers in Psychology（Frontiers）；資料標題：AI leadership readiness profiles and competence gaps among school leaders during digital transformation: a comparative study of China and Kazakhstan；來源刊登日：2026-11-20。作者摘要報告：研究探討中國與哈薩克學校領導者的 AI 領導準備度，涵蓋情境理解、教學價值、風險關切、數位領導自我效能、組織支持、領導層對導入的支持、實施準備度與能力落差；以 763 名學校領導者（中國 389、哈薩克 374）的跨國問卷進行分析；作者指出，正面的教學評價常與中等的學校層級準備並存，倫理與風險治理、教師發展與內容品質稽核是專業學習的優先項目。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+  "claim_class": "descriptive",
+  "risk_tier": "medium",
+  "level": "V2",
+  "daily_fact_kind": "research_abstract_attributed_summary",
+  "source_document_type": "peer_reviewed_article",
+  "source_title": "AI leadership readiness profiles and competence gaps among school leaders during digital transformation: a comparative study of China and Kazakhstan",
+  "title_zh": "數位轉型中學校領導者的 AI 領導準備度剖面與能力落差：中國與哈薩克比較研究",
+  "source_organization": "Frontiers in Psychology（Frontiers）",
+  "source_url": "https://doi.org/10.3389/fpsyg.2026.1973288",
+  "evidence_source_url": "https://doi.org/10.3389/fpsyg.2026.1973288",
+  "source_locator": "出版社文章頁（frontiersin.org，2026-11-21 讀取 200）：Published 20 November 2026（citation_online_date 10/30 為接受日，不採用）；摘要歸屬：Introduction 第 2 句、Methods 第 1 句、Discussion 第 1、3 句",
+  "source_type": "research_publication",
+  "checked_at": "2026-11-21",
+  "publication_date": "2026-11-20",
+  "first_disclosed_on": "2026-11-20",
+  "evidence_path": "publication/sources/d2026-11-21-a02-fpsyg.txt",
+  "evidence_sha256": "1f1a0ec3f016e98fe083f5dd0ccde44f3c10cc051c07a289fe2fdcd562fb77b4",
+  "original_excerpt": "This cross-national study examined AI leadership readiness in China and Kazakhstan, focusing on scenario understanding, instructional value, risk concern, digital leadership self-efficacy, organizational support, leadership support for adoption, implementation readiness, and competence gaps. … We analyzed a cross-national quantitative survey of 763 school leaders (China n = 389; Kazakhstan n = 374) using reliability analysis, measurement invariance testing, latent profile analysis, standardized recursive path modeling, and importance–competence gap analysis. … Positive instructional appraisals frequently coexisted with moderate school-level preparation. … Ethics and risk governance, teacher development, and content quality audit emerged as the leading priorities for professional learning.",
+  "interpretation_note": "轉述作者摘要的研究焦點、樣本、作者對準備度的描述與專業學習優先項目；信度、跨國分數差異、剖面組成、路徑係數與落差值不寫入，不寫因果。",
+  "scope_limitation": "同儕審查期刊論文（Frontiers in Psychology，不在監測清單；管理者 2026-11-21 確認單篇例外收錄）；中國與哈薩克 763 名中小學學校領導者（校長或副校長、職能行政人員、學科或年級主管、教學或教研主管）的橫斷面自陳問卷，表 1 學段小學 31.2%、國中 35.0%、高中 33.8%；開放網絡招募，無抽樣框。",
+  "assertion_type": "direct_statement",
+  "translation_reviewed": true,
+  "source_checked": true,
+  "scope_checked": true,
+  "outcome_checked": false,
+  "independent_review": false,
+  "conflict_unresolved": false,
+  "contradiction_type": "none",
+  "ai_crosscheck_status": "concordant",
+  "ai_crosscheck_passes": 2,
+  "decision": "publish",
+  "ai_crosscheck_record": "清單外，管理者 2026-11-21 確認單篇例外收錄；第一輪 2026-11-21 子代理以 Crossref 關鍵詞查詢列出；本 session 讀出版社文章頁（200；Published 20 November 2026；表 1 學段小學、國中、高中各約三分之一），擇 Introduction 第 2 句、Methods 第 1 句、Discussion 第 1、3 句撰寫中文摘要與中文譯名，統計值與跨國差異不寫入；第二輪 2026-11-21 由隔離子代理逐句對照出版社頁，判定需修改，依建議書目行第二作者補全為 Kozhamkulova Nazgul Seifullinqyzy、「領導支持」改「領導層對導入的支持」、解讀說明與摘要對齊、領導角色譯名調整，修正後一致。同一模型，非獨立審閱。",
+  "ai_lit_class": "A",
+  "ai_lit_dims": [
+   "T-BAS",
+   "T-PD"
+  ],
+  "ai_lit_note": "對象為其他教育關係人：中小學學校領導者在學校 AI 導入中的準備度與專業學習需求，屬 AI 素養（A），對應 T-BAS「參與AI校園治理部署與決策」、T-PD「評估教師AI素養以規劃專業增能」",
+  "audience": "other_stakeholders",
+  "summary_evidence_spans": [
+   "This cross-national study examined AI leadership readiness in China and Kazakhstan, focusing on scenario understanding, instructional value, risk concern, digital leadership self-efficacy, organizational support, leadership support for adoption, implementation readiness, and competence gaps.",
+   "We analyzed a cross-national quantitative survey of 763 school leaders (China n = 389; Kazakhstan n = 374) using reliability analysis, measurement invariance testing, latent profile analysis, standardized recursive path modeling, and importance–competence gap analysis.",
+   "Positive instructional appraisals frequently coexisted with moderate school-level preparation.",
+   "Ethics and risk governance, teacher development, and content quality audit emerged as the leading priorities for professional learning."
+  ],
+  "attributed_summary": "研究探討中國與哈薩克學校領導者的 AI 領導準備度，涵蓋情境理解、教學價值、風險關切、數位領導自我效能、組織支持、領導層對導入的支持、實施準備度與能力落差；以 763 名學校領導者（中國 389、哈薩克 374）的跨國問卷進行分析；作者指出，正面的教學評價常與中等的學校層級準備並存，倫理與風險治理、教師發展與內容品質稽核是專業學習的優先項目。"
  }
 ]
