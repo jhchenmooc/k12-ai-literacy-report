@@ -11,7 +11,7 @@
       "path": "daily/2026-11-20/index.html",
       "claims_file": "publication/claims/daily-2026-11-20.json",
       "publication_mode": "ai_low_risk_source_facts",
-      "revised_on": "2026-11-20"
+      "revised_on": "2026-11-21"
     },
     {
       "path": "daily/2026-11-19/index.html",
@@ -245,7 +245,8 @@
     },
     {
       "path": "weekly/2026-11-13_11-19/index.html",
-      "claims_file": "publication/claims/weekly-2026-11-13_11-19.json"
+      "claims_file": "publication/claims/weekly-2026-11-13_11-19.json",
+      "revised_on": "2026-11-21"
     },
     {
       "path": "monthly/2026-10/index.html",
