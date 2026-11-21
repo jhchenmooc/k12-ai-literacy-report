@@ -1923,6 +1923,7 @@
 | KB-2026-0612 — [Designing a pipeline linking professional development to AI-supported instructional practice](https://doi.org/10.1016/j.compedu.2026.105764) | journal_article | 2026-10-10 | bibliographic_checked |
 | KB-2026-0613 — [Online learner engagement and academic support in the age of generative AI](https://doi.org/10.1016/j.compedu.2026.105763) | journal_article | 2026-10-03 | bibliographic_checked |
 | KB-2026-0614 — [Which Evaluation Strategies Help Students Spot Visual Misinformation on Social Media?](https://doi.org/10.1002/jcal.70344) | journal_article | 2026-10-01 | bibliographic_checked |
+| KB-2026-0615 — [MS·Google·AWS와 손잡고 교사의 인공지능(AI)·융합교육 역량을 키운다](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107729&lev=0&m=020402&s=moe) | government_announcement | 2026-11-20 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown
