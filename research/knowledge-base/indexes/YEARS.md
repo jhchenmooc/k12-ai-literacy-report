@@ -1928,6 +1928,7 @@
 | KB-2026-0617 — [Understanding Early Childhood Educators’ Acceptance of AI: Integrating AI Literacy into Technology Acceptance Model 3 and Theory of Planned Behavior](https://doi.org/10.1080/10409289.2026.2762493) | journal_article | 2026-11-16 | bibliographic_checked |
 | KB-2026-0618 — [Learner–AI cognitive collaboration for creativity: a divergence–convergence model in elementary project-based learning](https://doi.org/10.1007/s12564-026-10155-5) | journal_article | 2026-11-21 | bibliographic_checked |
 | KB-2026-0619 — [Artificial Intelligence through the Eyes of Primary Education Students: Analysis of Gender, Educational Cycle, Rural–Urban Differences, and Frequency of Use](https://doi.org/10.46328/ijte.9309) | journal_article | 2026-11-20 | bibliographic_checked |
+| KB-2026-0620 — [Teacher Agency in the Integration of Pedagogical AI Agents: Insights from Teacher Experiences in Taiwan](https://doi.org/10.1016/j.tate.2026.105913) | journal_article | 2026-11-21 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

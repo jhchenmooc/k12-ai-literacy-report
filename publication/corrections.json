@@ -3,6 +3,16 @@
   "note": "更正與改版紀錄（第二次三刊聯合評審 E3e，管理者 2026-10-17）。每筆列出舊說法、新說法、日期與原因；頁面 corrections/index.html 由 research/render-site.js 依本檔產生。",
   "entries": [
     {
+      "id": "daily-2026-11-22-r1",
+      "date": "2026-11-22",
+      "path": "daily/2026-11-22/",
+      "target": "每日短訊 2026-11-22",
+      "type": "補登",
+      "old": "2 則（國際研究）；Teaching and Teacher Education 10.1016/j.tate.2026.105913 因出版社頁讀取失敗、無摘要與首發日而未發布。",
+      "new": "補登 D20261122-03（臺灣 8 名跨學段語文教師整合教學 AI 代理的能動性，質性研究）。",
+      "reason": "管理者 2026-11-22 提供出版者 PDF（Available online 21 November 2026）並確認單篇例外收錄（中小學教師占一半）；首次公開在本期前 7 天內。"
+    },
+    {
       "id": "daily-2026-11-21-r2",
       "date": "2026-11-21",
       "path": "daily/2026-11-21/",

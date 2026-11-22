@@ -318,6 +318,41 @@
       "doi": "10.46328/ijte.9309",
       "screening_note": "Verified 2026-11-22 for daily brief 2026-11-22.",
       "verification_completed_on": "2026-11-22"
+    },
+    {
+      "candidate_id": "W2026-11-20-A10",
+      "category": "research",
+      "source_url": "https://doi.org/10.1016/j.tate.2026.105913",
+      "source_title": "Teacher Agency in the Integration of Pedagogical AI Agents: Insights from Teacher Experiences in Taiwan",
+      "source_organization": "Teaching and Teacher Education（Elsevier）",
+      "source_publication_date": "2026-11-21",
+      "source_locator": "出版者 PDF（管理者 2026-11-22 提供；自動讀取回 403）：Available online 21 November 2026；摘要歸屬：Abstract 第 2、3、5 句",
+      "discovered_on": "2026-11-22",
+      "discovery_batch_id": "2026-11-22-daily-r1",
+      "first_disclosed_on": "2026-11-21",
+      "source_updates": [],
+      "original_excerpt": "This study addresses this gap by investigating eight Chinese and English language teachers working in elementary, high school, and university contexts in Taiwan. … Participants reflected on their experiences in AI-mediated professional learning workshops and collaborative discussions, providing insights into their teaching processes and professional growth. … These agents functioned as reflective mirrors that surfaced pedagogical assumptions, expanded teachers’ pedagogical design repertoires, and supported adaptive personalization.",
+      "source_checked": true,
+      "claim_text": "來源機構：Teaching and Teacher Education（Elsevier）；資料標題：Teacher Agency in the Integration of Pedagogical AI Agents: Insights from Teacher Experiences in Taiwan；來源刊登日：2026-11-21。作者摘要報告：研究探討臺灣 8 名在小學、高中與大學任教的中文與英文教師，由參與者反思其參加 AI 中介的專業學習工作坊與協作討論的經驗，了解其教學歷程與專業成長；作者描述，教學 AI 代理如同反思之鏡，使教學假設浮現、擴展教師的教學設計策略庫，並支持適性個人化。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Teaching and Teacher Education，監測清單 J20）；8 名臺灣語文教師的質性訪談，表 1 教學階段大學 4、高中 2、小學 2，中小學未過半，管理者 2026-11-22 確認單篇例外收錄，對象標為其他教育關係人；質性小樣本，作者描述不代表臺灣教師整體。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "監測清單 J20；中小學未過半，管理者 2026-11-22 在本 session 確認「TATE 收」（單篇例外）；第一輪 2026-11-22 子代理以監測期刊 ISSN 查詢列出（ScienceDirect 403，未繞過）；管理者 2026-11-22 提供出版者 PDF（Available online 21 November 2026；存私人 repo），本 session 擇摘要第 2、3、5 句撰寫中文摘要與中文譯名；第二輪 2026-11-22 由隔離子代理逐句對照 PDF，判定通過，依建議「教學設計方式」改為「教學設計策略庫」、書目行補「primarily」；知識庫學段依先例標一般學段（中小學占一半）。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "T-PD",
+        "T-TEA"
+      ],
+      "ai_lit_note": "對象為其他教育關係人：跨學段語文教師參加教學 AI 代理專業學習工作坊後的教學設計與專業成長經驗，屬教師 AI 素養（A），對應 T-PD「參與社群共學反思AI時代教師角色」、T-TEA「創新AI教學與設計學習體驗」",
+      "audience": "other_stakeholders",
+      "doi": "10.1016/j.tate.2026.105913",
+      "screening_note": "Verified 2026-11-22 for daily brief 2026-11-22 (supplement).",
+      "verification_completed_on": "2026-11-22"
     }
   ],
   "search_runs": [
@@ -445,6 +480,22 @@
       ],
       "discovered": 2,
       "added": 2,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-22-daily-r1",
+      "searched_on": "2026-11-22",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "manager-supplied",
+          "query": "Manager-supplied publisher PDF 2026-11-22 (Teaching and Teacher Education 10.1016/j.tate.2026.105913); single-item exception (K-12 teachers half of sample) confirmed by the manager 2026-11-22",
+          "status": "ok"
+        }
+      ],
+      "discovered": 1,
+      "added": 1,
       "duplicates": 0
     }
   ],
