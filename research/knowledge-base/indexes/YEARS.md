@@ -1926,6 +1926,8 @@
 | KB-2026-0615 — [MS·Google·AWS와 손잡고 교사의 인공지능(AI)·융합교육 역량을 키운다](https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&boardSeq=107729&lev=0&m=020402&s=moe) | government_announcement | 2026-11-20 | bibliographic_checked |
 | KB-2026-0616 — [AI leadership readiness profiles and competence gaps among school leaders during digital transformation: a comparative study of China and Kazakhstan](https://doi.org/10.3389/fpsyg.2026.1973288) | journal_article | 2026-11-20 | bibliographic_checked |
 | KB-2026-0617 — [Understanding Early Childhood Educators’ Acceptance of AI: Integrating AI Literacy into Technology Acceptance Model 3 and Theory of Planned Behavior](https://doi.org/10.1080/10409289.2026.2762493) | journal_article | 2026-11-16 | bibliographic_checked |
+| KB-2026-0618 — [Learner–AI cognitive collaboration for creativity: a divergence–convergence model in elementary project-based learning](https://doi.org/10.1007/s12564-026-10155-5) | journal_article | 2026-11-21 | bibliographic_checked |
+| KB-2026-0619 — [Artificial Intelligence through the Eyes of Primary Education Students: Analysis of Gender, Educational Cycle, Rural–Urban Differences, and Frequency of Use](https://doi.org/10.46328/ijte.9309) | journal_article | 2026-11-20 | bibliographic_checked |
 | KB-2027-0001 — [Does school-based AI education narrow readiness gaps? The role of prior agency-related learning](https://doi.org/10.1016/j.compedu.2026.105745) | journal_article | 2026-08-28 | discovered_unverified |
 
 ## unknown｜unknown

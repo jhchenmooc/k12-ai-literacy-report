@@ -250,6 +250,74 @@
       "doi": "10.1080/10409289.2026.2762493",
       "screening_note": "Verified 2026-11-21 for daily brief 2026-11-21 (supplement).",
       "verification_completed_on": "2026-11-21"
+    },
+    {
+      "candidate_id": "W2026-11-20-A08",
+      "category": "research",
+      "source_url": "https://doi.org/10.1007/s12564-026-10155-5",
+      "source_title": "Learner–AI cognitive collaboration for creativity: a divergence–convergence model in elementary project-based learning",
+      "source_organization": "Asia Pacific Education Review（Springer）",
+      "source_publication_date": "2026-11-21",
+      "source_locator": "出版社文章頁（link.springer.com，2026-11-22 讀取 200）：Published: 21 November 2026；摘要歸屬：Abstract 第 2、4、5 句",
+      "discovered_on": "2026-11-22",
+      "discovery_batch_id": "2026-11-22-daily-1",
+      "first_disclosed_on": "2026-11-21",
+      "source_updates": [],
+      "original_excerpt": "This design and development study developed principles for learner–AI collaboration (LAC) and an instructional model for elementary project-based learning, and examined how the principles operated in the classroom. … The principles were organized into a four-stage divergence–convergence instructional model that specifies the roles of learners, AI, and teachers. … The classroom study involved 36 sixth-grade students, with 18 in the LAC-based instructional condition and 18 in the control condition.",
+      "source_checked": true,
+      "claim_text": "來源機構：Asia Pacific Education Review（Springer）；資料標題：Learner–AI cognitive collaboration for creativity: a divergence–convergence model in elementary project-based learning；來源刊登日：2026-11-21。作者摘要報告：研究為設計與發展研究，為小學專題式學習發展學習者與 AI 協作（LAC）的原則與教學模式，並檢視這些原則在課堂中如何運作；原則組成四階段的發散—聚斂教學模式，界定學習者、AI 與教師的角色；課堂研究有 36 名六年級學生，LAC 教學組與對照組各 18 人。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（Asia Pacific Education Review，不在監測清單；管理者 2026-11-22 確認單篇例外收錄）；課堂研究為 36 名小學六年級學生、兩組各 18 人的小樣本比較；摘要未寫國別，第一作者任職韓國公州的小學（知識庫國別依此標註）；介入成效不寫入。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "清單外，管理者 2026-11-22 確認單篇例外收錄；第一輪 2026-11-22 子代理以 Crossref 關鍵詞查詢列出並讀 Springer 頁（200；Published: 21 November 2026）；本 session 擇摘要第 2、4、5 句撰寫中文摘要與中文譯名，組間差異與產出變化不寫入；第二輪 2026-11-22 由隔離子代理逐句對照出版社頁，判定通過，依建議中文譯名改為「促進創造力的學習者—AI 認知協作」。同一模型，非獨立審閱。",
+      "ai_lit_class": "B",
+      "ai_lit_dims": [
+        "S-LRN"
+      ],
+      "ai_lit_note": "小學生在專題式學習中與生成式 AI 協作進行創意活動，AI 作為學習工具，屬 AI 賦能學習（B），對應 S-LRN「應用AI工具強化領域學習」",
+      "audience": "k12",
+      "doi": "10.1007/s12564-026-10155-5",
+      "screening_note": "Verified 2026-11-22 for daily brief 2026-11-22.",
+      "verification_completed_on": "2026-11-22"
+    },
+    {
+      "candidate_id": "W2026-11-20-A09",
+      "category": "research",
+      "source_url": "https://doi.org/10.46328/ijte.9309",
+      "source_title": "Artificial Intelligence through the Eyes of Primary Education Students: Analysis of Gender, Educational Cycle, Rural–Urban Differences, and Frequency of Use",
+      "source_organization": "International Journal of Technology in Education（ISTES）",
+      "source_publication_date": "2026-11-20",
+      "source_locator": "期刊文章頁（ijte.net，2026-11-22 讀取 200）：Published 2026-11-20（In Press）；摘要歸屬：Abstract 第 1、2、3、5 句",
+      "discovered_on": "2026-11-22",
+      "discovery_batch_id": "2026-11-22-daily-1",
+      "first_disclosed_on": "2026-11-20",
+      "source_updates": [],
+      "original_excerpt": "Owing to the scarcity of empirical data regarding how Primary Education students perceive Artificial Intelligence (AI), this research examined variations based on gender, educational cycle, attendance at the participating rural or urban schools, and usage habits. … The participant group included 391 students from the second and third cycles (Grades 3 to 6). … Data collection involved a 22-item instrument adapted from Chai et al. (2021), focusing on five distinct areas: self-efficacy, readiness, social benefit, literacy, and future intent. … The findings revealed overall positive attitudes, without notable gender-based disparities.",
+      "source_checked": true,
+      "claim_text": "來源機構：International Journal of Technology in Education（ISTES）；資料標題：Artificial Intelligence through the Eyes of Primary Education Students: Analysis of Gender, Educational Cycle, Rural–Urban Differences, and Frequency of Use；來源刊登日：2026-11-20。作者摘要報告：研究因小學生如何看待 AI 的實證資料稀少，檢視其看法是否因性別、教育階段、就讀參與研究的鄉村或城市學校及使用習慣而不同；參與者為第二、三階段（三至六年級）391 名學生，以改編自 Chai 等人（2021）的 22 題量表蒐集資料，涵蓋自我效能、準備度、社會效益、素養與未來意圖；作者報告學生整體態度正面，未見明顯性別差異。（AI 輔助摘要，未經真人逐則審稿；請參閱原文。）",
+      "claim_class": "descriptive",
+      "risk_tier": "medium",
+      "scope_limitation": "同儕審查期刊論文（International Journal of Technology in Education，不在監測清單；管理者 2026-11-22 確認單篇例外收錄）；391 名三至六年級學生的自陳問卷；摘要未寫國別，作者任職西班牙大學（知識庫國別依此標註）；城鄉比較限參與研究的學校，非全國代表。",
+      "translation_reviewed": true,
+      "conflict_unresolved": false,
+      "decision": "publish",
+      "ai_crosscheck_status": "concordant",
+      "ai_crosscheck_passes": 2,
+      "ai_crosscheck_record": "清單外，管理者 2026-11-22 確認單篇例外收錄；第一輪 2026-11-22 子代理以 Crossref 關鍵詞查詢列出並讀期刊頁（200；Published 2026-11-20）；本 session 擇摘要第 1、2、3、5 句撰寫中文摘要與中文譯名，關聯細節不寫入；第二輪 2026-11-22 由隔離子代理逐句對照期刊頁，判定通過，依建議面向內涵改為「覺察AI的世界並產生好奇心」（量表測知覺與態度）。同一模型，非獨立審閱。",
+      "ai_lit_class": "A",
+      "ai_lit_dims": [
+        "S-BAS"
+      ],
+      "ai_lit_note": "小學生對 AI 的自我效能、準備度、社會效益、素養與未來意圖等知覺，屬學生 AI 素養（A），對應 S-BAS「覺察AI的世界並產生好奇心」",
+      "audience": "k12",
+      "doi": "10.46328/ijte.9309",
+      "screening_note": "Verified 2026-11-22 for daily brief 2026-11-22.",
+      "verification_completed_on": "2026-11-22"
     }
   ],
   "search_runs": [
@@ -351,6 +419,32 @@
       ],
       "discovered": 1,
       "added": 1,
+      "duplicates": 0
+    },
+    {
+      "batch_id": "2026-11-22-daily-1",
+      "searched_on": "2026-11-22",
+      "lookback_days": 7,
+      "lookback_days_target": 30,
+      "sources": [
+        {
+          "group": "research-doi",
+          "query": "Crossref filter=from-created-date:2026-11-21,until-created-date:2026-11-22,type:journal-article, six query.bibliographic sets, proceedings-article set, watchlist-ISSN sets (J01-J53, all ISSNs); pedagogical AI agent sets on Crossref, OpenAlex and arXiv; arXiv API three sets and cs.CY/cs.HC new listings; alphaXiv; publisher pages one try each (Springer 200, ISTES 200, ScienceDirect 403 for tate 105913 and caeo 100436, not bypassed); off-list items APER 10155 and IJTE 9309 included as single-item exceptions confirmed by the manager 2026-11-22",
+          "status": "ok"
+        },
+        {
+          "group": "official-policy",
+          "query": "GOV.UK DfE/Ofqual/Ofsted Content API and AI cross-search, DfE consultations, Federal Register (ED filter, ED x AI, 'AI literacy', 11-23 issue, public inspection), MEXT (mext_00753 text not yet uploaded), China MOE, HK info.gov.hk 11-21 and 11-22, MOE Korea (107742), KICE press and research board, KERIS, UNESCO newsroom, Eurydice; seven-day look-back",
+          "status": "ok"
+        },
+        {
+          "group": "taiwan-central",
+          "query": "MOE RSS, ED2700/ED2600/ED2800 RSS, K12EA news, Executive Yuan gazette open data (115-11-20 issue), Executive Yuan news RSS, NSTC RSS, MODA press releases page 1",
+          "status": "ok"
+        }
+      ],
+      "discovered": 2,
+      "added": 2,
       "duplicates": 0
     }
   ],

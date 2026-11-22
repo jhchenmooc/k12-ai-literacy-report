@@ -1,11 +1,13 @@
-# 每日短訊查核紀錄：2026-11-22（0 則）
+# 每日短訊查核紀錄：2026-11-22（2 則）
 
 > 每日短訊例行作業，由排程觸發，在每日短訊專用 session 執行。今天週日，候選池沿用 2026-11-20_2026-11-26。
 > - **檢索：** 三個子代理分頭執行（國際研究、國際政策、臺灣中央來源）；判讀由本 session 複核。只查一次。
 > - **查詢時間：** 2026-11-22T00:24Z–00:40Z（UTC）。
 > - **請求紀錄：** 都沒帶 email 或 mailto；沒換 User-Agent；沒用無頭瀏覽器。ScienceDirect 出版社頁回 403，未繞過。
-> - **結果：0 則。** 國際研究、國際政策、臺灣都沒有可直接發布的合格項目；兩篇清單外研究待管理者決定單篇例外。
-> - **GitHub 寫入受阻：** 本 session 自 2026-11-21 06:4x 起 git 推送與 GitHub API 建分支都回 403（讀取正常），本紀錄與 11-21 r2（EED 2762493 補登）先在本機提交，待權限恢復後推送。
+> - **結果：2 則，都是國際研究（清單外單篇例外）。** 管理者 2026-11-22 在本 session 回覆「破例收錄」，D20261122-01 Asia Pacific Education Review 10155（B，S-LRN）、D20261122-02 International Journal of Technology in Education 9309（A，S-BAS）。國際政策 0 則；臺灣 0 則。
+>   - 知識庫：KB-2026-0618、0619（候選 W2026-11-20-A08、A09）。
+>   - 第二輪：隔離子代理逐句對照原文頁，兩則通過；依建議 APER 中文譯名改為「促進創造力的學習者—AI 認知協作」、IJTE 面向內涵改為「覺察AI的世界並產生好奇心」。同一模型，非獨立審閱。
+> - **GitHub 寫入曾受阻：** 2026-11-21 下午至 11-22 上午 git 推送與 GitHub API 都回 403（讀取正常）；11-22 管理者處理後恢復，11-21 r2（EED 2762493 補登）已以 PR #494 合併。
 
 ## 國際
 
@@ -23,9 +25,9 @@
 **接近合格（監測清單內）：**
 - Teaching and Teacher Education `10.1016/j.tate.2026.105913`（J20）〈Teacher Agency in the Integration of Pedagogical AI Agents: Insights from Teacher Experiences in Taiwan〉：ScienceDirect 403；Crossref 無摘要、無 published-online（只有 issued 2027-02）；OpenAlex 404。首發日與對象學段都不明，連書目型也不能發，列瀏覽器清單。
 
-**清單外觀察（待管理者決定單篇例外）：**
-- Asia Pacific Education Review `10.1007/s12564-026-10155-5`〈Learner–AI cognitive collaboration for creativity: a divergence–convergence model in elementary project-based learning〉：Springer 頁 200，First online 2026-11-21；36 名六年級學生的準實驗，B（S-LRN）；介入研究，摘要只寫設計。
-- International Journal of Technology in Education `10.46328/ijte.9309`〈Artificial Intelligence through the Eyes of Primary Education Students: Analysis of Gender, Educational Cycle, Rural–Urban Differences, and Frequency of Use〉：期刊頁 200，Published 2026-11-20；西班牙 391 名三至六年級學生的橫斷調查，A（S-BAS）。
+**收錄（清單外，管理者 2026-11-22 確認單篇例外）：**
+- **D20261122-01** Asia Pacific Education Review `10.1007/s12564-026-10155-5`〈Learner–AI cognitive collaboration for creativity: a divergence–convergence model in elementary project-based learning〉：Springer 頁 200，First online 2026-11-21；36 名六年級學生的設計與發展研究（含兩組各 18 人的課堂比較），B（S-LRN）；摘要第 2、4、5 句，介入成效不寫入；摘要未寫國別，第一作者任職韓國小學。
+- **D20261122-02** International Journal of Technology in Education `10.46328/ijte.9309`〈Artificial Intelligence through the Eyes of Primary Education Students: Analysis of Gender, Educational Cycle, Rural–Urban Differences, and Frequency of Use〉：期刊頁 200，Published 2026-11-20；391 名三至六年級學生的問卷研究（作者任職西班牙大學），A（S-BAS）；摘要第 1、2、3、5 句，關聯細節不寫入。
 - 其餘清單外不建議收：IJEMST 8665（首發日只有 Crossref）、JSET 1509965（學段不明、AI 為實務者製作教材）、ETAIC 2026 ACM ICPS 多篇（無摘要、會議不在清單）、Language Teaching Research 1503731、Sage Open 1511655（學段不明）、低能見度期刊。
 
 **不收：** 監測清單內 IJTDE 10149（無 AI）、ILE 2764524（職前）、CAEAI 100694、JECR 1511181、HSSC 09677、TOCE 3864452、Sci Rep 77089、Discover Education 02436（高教）、Discover Education 02455（C）；CAEO 100436、CHBR 101457 無摘要列觀察；SEE 101705 篇名看為架構文，比照 101707 傾向不發。
@@ -64,8 +66,6 @@
 
 ## 需要管理者處理
 
-- **GitHub 寫入權限：** 本 session git 推送與 GitHub API 都回 403；請重新連結 GitHub（claude.ai/connect-github）並確認 Claude GitHub App 仍安裝在兩個 repo。
-- **單篇例外待定：** Asia Pacific Education Review 10155、International Journal of Technology in Education 9309。
 - **觀察：** MEXT mext_00753 文字版；arXiv 2611.21306 等 WiPSCE 論文集。
 
 ## 請管理者用瀏覽器處理（2026-11-22）
